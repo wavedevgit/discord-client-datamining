@@ -1,4 +1,4 @@
-import { rmdir } from 'fs/promises';
+import { rm } from 'fs/promises';
 
 import getChunksByCode from '../ast/getChunks.js';
 import { Build } from '../types.js';
@@ -13,7 +13,7 @@ export default async function getChunks(build: Build): Promise<void> {
     for (const [moduleId, path] of Object.entries(build.modules.js)) {
         const code = await readFile(`./build/assets/${path}.js`, false);
         await saveChunks(await getChunksByCode(code, moduleId, path + '.js'));
-        await rmdir('./build/assets/' + path + '.js');
+        await rm('./build/assets/' + path + '.js');
     }
     const chunkStart = build.webjs.indexOf('var __webpack_modules__=');
     const chunkEnd = build.webjs.indexOf(',__webpack_module_cache__={};');
