@@ -1,0 +1,108 @@
+/** Chunk was on 12970 **/
+/** chunk id: 104849, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => I
+});
+var r = n(627968),
+    l = n(64700),
+    i = n(311907),
+    a = n(397927),
+    o = n(442433),
+    u = n(847767),
+    c = n(358367),
+    s = n(212245),
+    d = n(793574),
+    A = n(688810),
+    b = n(50268),
+    O = n(346247),
+    f = n(504049),
+    g = n(696451),
+    y = n(977997),
+    p = n(291247),
+    E = n(239211),
+    m = n(399476),
+    j = n(301541),
+    v = n(252726),
+    _ = n(103629),
+    h = n(521819),
+    S = n(243949),
+    M = n(180798),
+    P = n(652215),
+    C = n(985018);
+let I = (0, c.A)((0, u.A)(function(e) {
+    var t;
+    let {
+        user: n,
+        guildId: u,
+        channelId: c,
+        context: P,
+        onSelect: I,
+        moderationAlertId: D,
+        analyticsLocation: T,
+        analyticsLocations: x,
+        onCloseContextMenu: w,
+        showTransferOwnershipItem: N
+    } = e, {
+        analyticsLocations: G
+    } = (0, A.Ay)(d.A.CONTEXT_MENU), R = (0, s.p)(), U = null != (t = null == x ? void 0 : x[0]) ? t : G[0], B = (0, f.$9)(u, {
+        location: U,
+        targetUserId: n.id
+    }), L = (0, i.bG)([y.A], () => {
+        var e;
+        return null != (e = y.A.getUserVoiceChannelId(u, n.id)) ? e : void 0
+    }, [u, n.id]), k = l.useCallback(() => {
+        B(f.Nj.COPY_ID)
+    }, [B]), V = (0, i.bG)([g.Ay], () => g.Ay.isMember(u, n.id), [u, n.id]), F = (0, S.A)({
+        userId: n.id,
+        guildId: u,
+        sourceAnalyticsLocations: x
+    }), H = (0, j.A)(n.id, P), K = (0, O.A)({
+        guildId: u,
+        userId: n.id,
+        analyticsLocation: null != T ? T : R.location,
+        analyticsLocations: [U],
+        context: P
+    }), Y = (0, E.A)({
+        user: n,
+        guildId: u,
+        location: U,
+        channelId: c
+    }), W = (0, m.A)({
+        user: n,
+        guildId: u,
+        location: U,
+        channelId: c
+    }), X = (0, p.A)(n, u, null != c ? c : L, U), Z = (0, _.A)(c, D), $ = (0, h.A)(n, u), q = (0, M.A)(n.id, u, !1, U), z = (0, b.A)({
+        id: n.id,
+        label: C.intl.string(C.t["/AXYnE"]),
+        onSuccess: k
+    }), Q = (0, v.A)(n, u), J = !!(null == n ? void 0 : n.isNonUserBot());
+    return (0, r.jsxs)(a.W1t, {
+        "data-menu-mixed": !0,
+        navId: "user-context",
+        onClose: () => {
+            (0, o.Z_)(), null == w || w()
+        },
+        "aria-label": C.intl.string(C.t.liqwPJ),
+        onSelect: I,
+        children: [!J && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsxs)(a.rXV, {
+                children: [F, H]
+            }), (0, r.jsxs)(a.rXV, {
+                children: [K, W, Y]
+            }), V && (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(a.rXV, {
+                    children: X
+                }), (0, r.jsxs)(a.rXV, {
+                    children: [q, Q]
+                })]
+            }), null != D ? Z : null, N && null != $ ? (0, r.jsx)(a.rXV, {
+                children: $
+            }) : null]
+        }), (0, r.jsx)(a.rXV, {
+            children: z
+        })]
+    })
+}, {
+    object: P.ZSU.CONTEXT_MENU
+}), [d.A.CONTEXT_MENU, d.A.GUILD_MODERATION_USER_MENU])

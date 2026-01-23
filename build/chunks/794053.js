@@ -1,0 +1,21 @@
+/** Chunk was on 21738 **/
+/** chunk id: 794053, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    iE: "wrapper__42d45",
+    Qx: "wrapperWithOldDiscoveryHeader__42d45",
+    FG: "contentWrapper__42d45",
+    B3: "contentWrapperLoading__42d45",
+    Qs: "content__42d45",
+    km: "heroImageBackground__42d45",
+    Np: "backgroundOverlay__42d45",
+    c8: "heroImage__42d45",
+    Sl: "image__42d45",
+    UE: "heroImageBlurred__42d45",
+    nd: "heroImageBlurredA__42d45",
+    gv: "heroImageBlurredB__42d45",
+    yp: "contentBody__42d45",
+    wm: "logo__42d45",
+    DD: "title__42d45",
+    VA: "subtitle__42d45",
+    yu: "sponsoredTag__42d45"
+}

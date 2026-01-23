@@ -1,0 +1,17 @@
+/** Chunk was on 13492 **/
+/** chunk id: 72007, original params: e,n,t (module,exports,require) **/
+e.exports = {
+    kL: "container__2af41",
+    M4: "activityCard__2af41",
+    l_: "contentInventoryContainer__2af41",
+    v4: "contentInventoryHeader__2af41",
+    nM: "row__2af41",
+    DJ: "inviteFriendsButton__2af41",
+    my: "avatar__2af41",
+    zH: "details__2af41",
+    Yn: "usernameWrapper__2af41",
+    Xh: "username__2af41",
+    nB: "inviteButtons__2af41",
+    Ok: "liveIndicator__2af41",
+    cV: "badgesContainer__2af41"
+}

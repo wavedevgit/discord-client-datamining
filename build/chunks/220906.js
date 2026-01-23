@@ -1,0 +1,19 @@
+/** Chunk was on 47841 **/
+/** chunk id: 220906, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    Vu: "settingsHeader__4b8d8",
+    KD: "bannedUser__4b8d8",
+    pX: "bannedUserAvatar__4b8d8",
+    Xh: "username__4b8d8",
+    h_: "description__4b8d8",
+    p$: "emptyState__4b8d8",
+    u1: "spinner__4b8d8",
+    Qs: "content__4b8d8",
+    z3: "error__4b8d8",
+    kL: "container__4b8d8",
+    gs: "scrollerContainer__4b8d8",
+    IA: "bansSearchContainer__4b8d8",
+    JU: "searchButton__4b8d8",
+    JV: "paginationInput__4b8d8"
+}

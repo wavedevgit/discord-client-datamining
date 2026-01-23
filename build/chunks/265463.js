@@ -1,0 +1,35 @@
+/** Chunk was on 46875 **/
+/** chunk id: 265463, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    fo: () => s,
+    uW: () => a,
+    vr: () => c,
+    z0: () => o
+}), n(733351);
+var l = n(753738),
+    r = n(985018);
+
+function i(e, t) {
+    return {
+        type: e,
+        message: null != t ? t : null
+    }
+}
+
+function a() {
+    return i(0, r.intl.string(r.t["71wuR0"]))
+}
+
+function s() {
+    return i(0, r.intl.string(r.t["w/BT3G"]))
+}
+
+function o(e, t) {
+    return i(1, (0, l.cw)(e, null == t ? void 0 : t.id))
+}
+
+function c(e, t) {
+    var n;
+    return null == e || 0 === e.type && null != t.content && t.content.trim().length > 0 || 2 === e.type && null != t.tags && t.tags.length > 0 ? null : null != (n = e.message) ? n : null
+}

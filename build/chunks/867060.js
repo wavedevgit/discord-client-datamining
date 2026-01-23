@@ -1,0 +1,13 @@
+/** Chunk was on 97492 **/
+/** chunk id: 867060, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => i
+});
+var r = n(64700),
+    l = n(397927);
+
+function i(e) {
+    r.useEffect(() => {
+        null != e && (0, l.showToast)((0, l.createToast)(e, l.ToastType.FAILURE))
+    }, [e])
+}

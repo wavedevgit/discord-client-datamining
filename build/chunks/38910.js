@@ -1,0 +1,32 @@
+/** Chunk was on 75052 **/
+/** chunk id: 38910, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => s
+});
+var r = n(562465),
+    i = n(73153),
+    o = n(652215);
+let s = {
+    async fetch() {
+        try {
+            let e = await r.Bo.get({
+                url: o.Rsh.FRIEND_SUGGESTIONS,
+                rejectWithError: !0
+            });
+            i.h.dispatch({
+                type: "LOAD_FRIEND_SUGGESTIONS_SUCCESS",
+                suggestions: e.body
+            })
+        } catch (e) {
+            i.h.dispatch({
+                type: "LOAD_FRIEND_SUGGESTIONS_FAILURE"
+            })
+        }
+    },
+    ignore(e) {
+        r.Bo.del({
+            url: o.Rsh.FRIEND_SUGGESTION(e),
+            rejectWithError: !0
+        })
+    }
+}

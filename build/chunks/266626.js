@@ -1,0 +1,20 @@
+/** Chunk was on 97492 **/
+/** chunk id: 266626, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    s: () => r
+});
+let r = (0, n(945810).mj)({
+    name: "2026-01-haven-client",
+    kind: "user",
+    defaultConfig: {
+        enabled: !1
+    },
+    variations: {
+        0: {
+            enabled: !1
+        },
+        1: {
+            enabled: !0
+        }
+    }
+})

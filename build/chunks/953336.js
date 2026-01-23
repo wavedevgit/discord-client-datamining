@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 953336, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => o
+/** Chunk was on 28979 **/
+/** chunk id: 953336, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    A: () => u
 });
-var r = n(627968);
-n(64700);
-var i = n(990078),
-    a = n(611371),
-    s = n(985018);
-let o = () => (0, r.jsx)(i.m, {
+var n = i(627968);
+i(64700);
+var l = i(990078),
+    s = i(611371),
+    r = i(985018);
+let u = () => (0, n.jsx)(l.m, {
     asContainer: !0,
-    text: s.intl.string(s.t["/fgfWh"]),
-    children: (0, r.jsx)(a.A, {})
+    text: r.intl.string(r.t["/fgfWh"]),
+    children: (0, n.jsx)(s.A, {})
 })

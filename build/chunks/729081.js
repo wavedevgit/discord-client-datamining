@@ -1,0 +1,126 @@
+/** Chunk was on 97492 **/
+/** chunk id: 729081, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => C
+}), n(896048), n(638769);
+var r = n(627968),
+    l = n(64700),
+    i = n(735438),
+    s = n(835245),
+    a = n(158954),
+    o = n(311907),
+    c = n(587895),
+    u = n(568598),
+    d = n(313961),
+    p = n(246356),
+    h = n(290863),
+    f = n(954571),
+    g = n(403362),
+    m = n(871123),
+    b = n(79871),
+    A = n(592356),
+    y = n(398025),
+    _ = n(188275),
+    O = n(652215),
+    j = n(806931),
+    v = n(985018),
+    x = n(877409);
+let E = "vc-gifting-".concat((0, s.A)());
+
+function C(e) {
+    var t;
+    let {
+        isHovered: n,
+        closePopout: s,
+        onMouseEnter: C,
+        onMouseLeave: S,
+        channel: I
+    } = e;
+    l.useEffect(() => {
+        n || s()
+    }, [s, n]);
+    let N = (0, o.bG)([c.A], () => c.A.getApplication(_.XR)),
+        [T] = (0, o.bG)([d.A], () => null != I.id ? [d.A.getParticipants(I.id), d.A.getParticipantsVersion(I.id)] : [
+            [], 0
+        ], [I.id], u.hS),
+        P = (0, o.yK)([h.A], () => {
+            let e = new Set;
+            for (let n of T)
+                if ((0, j.Xw)(n) || (0, j.Ay)(n))
+                    for (let r of h.A.getActivities(n.user.id)) {
+                        var t;
+                        if (r.application_id === (null == N ? void 0 : N.id) || (null == N || null == (t = N.linkedGames) ? void 0 : t.some(e => e.id === r.application_id)) === !0) {
+                            e.add(n.user.id);
+                            break
+                        }
+                    }
+            return Array.from(e).sort()
+        }, [T, N]),
+        w = l.useMemo(() => {
+            let e = T.map(e => (0, j.Xw)(e) || (0, j.Ay)(e) ? e.user.id : null).filter(g.Vq);
+            return (0, i.uniq)([...P, ...e])
+        }, [T, P]),
+        {
+            state: R,
+            recommendations: D,
+            skuIdToUserIdsReasons: M
+        } = (0, A.A)({
+            guildId: (0, m.zf)(),
+            applicationId: _.XR,
+            numWishlistItems: A.o,
+            userIds: w,
+            location: "Social Layer Gifting Mini Shelf",
+            includeWishlists: !0
+        }),
+        L = l.useMemo(() => {
+            let e = new Set(w);
+            return D.map(t => {
+                var n, l;
+                let i = null != (n = null == (l = M[t.skuId]) ? void 0 : l.filter(t => t.reason === b.G.WISHLIST && e.has(t.userId)).map(e => e.userId).filter(g.Vq)) ? n : [];
+                return (0, r.jsx)(y.A, {
+                    variant: i.length > 0 ? y.$.WISHLIST : y.$.POPULAR,
+                    wishlistItem: t,
+                    userIdsForRecommendation: i,
+                    userIdsForGifting: w,
+                    guildId: I.guild_id,
+                    channelId: I.id,
+                    contextContainerClassName: x.RL
+                }, t.skuId)
+            })
+        }, [I.guild_id, I.id, D, M, w]);
+    return l.useEffect(() => {
+        0 !== D.length && f.default.track(O.HAw.COMMERCE_SHOP_VC_GIFT_BUTTON_VIEWED, {
+            guild_id: I.guild_id,
+            channel_id: I.id,
+            sku_ids: D.map(e => e.skuId)
+        })
+    }, [I.id, I.guild_id, D]), (0, r.jsx)(p.A, {
+        children: (0, r.jsx)(a.lGe, {
+            "aria-labelledby": E,
+            modal: !1,
+            children: (0, r.jsxs)("div", {
+                className: x.kL,
+                onMouseEnter: C,
+                onMouseLeave: S,
+                children: [(0, r.jsx)(a.DZT, {
+                    className: x.DD,
+                    variant: "text-lg/bold",
+                    color: "text-strong",
+                    children: v.intl.string(v.t.xLP3bi)
+                }), (0, r.jsx)(a.EYj, {
+                    className: x.VA,
+                    variant: "text-sm/medium",
+                    color: "text-subtle",
+                    children: v.intl.format(v.t["+SqhBF"], {
+                        applicationName: null != (t = null == N ? void 0 : N.name) ? t : v.intl.string(v.t["/1hhto"])
+                    })
+                }), (0, r.jsx)("div", {
+                    className: x.Xb,
+                    children: "loading" === R || 0 === D.length ? (0, r.jsx)(a.y$y, {
+                        className: x.Lq
+                    }) : L
+                })]
+            })
+        })
+    })
+}

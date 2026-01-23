@@ -1,0 +1,6 @@
+/** Chunk was on 21738 **/
+/** chunk id: 34352, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    k: "container_a592e1",
+    T: "dragRegion_a592e1"
+}

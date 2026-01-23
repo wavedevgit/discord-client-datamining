@@ -1,0 +1,45 @@
+/** Chunk was on 36054 **/
+/** chunk id: 334165, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => d
+});
+var a, l = n(311907),
+    r = n(73153);
+
+function i(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+let s = {
+        lastSeenInfos: {}
+    },
+    o = s;
+class c extends(a = l.Ay.PersistedStore) {
+    initialize(e) {
+        o = null != e ? e : s
+    }
+    getState() {
+        return o
+    }
+    getGuildLastSeenInfo(e) {
+        var t;
+        return null != (t = o.lastSeenInfos[e]) ? t : null
+    }
+}
+i(c, "displayName", "GuildTagChangedCoachmarkStore"), i(c, "persistKey", "GuildTagChangedCoachmarkStore");
+let d = new c(r.h, {
+    GUILD_TAG_CHANGED_COACHMARK_SEEN: function(e) {
+        let {
+            guildId: t,
+            lastSeenInfo: n
+        } = e;
+        o.lastSeenInfos[t] = n
+    },
+    LOGOUT: function() {
+        o = s
+    }
+})

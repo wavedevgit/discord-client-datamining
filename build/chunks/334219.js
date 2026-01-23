@@ -1,0 +1,38 @@
+/** Chunk was on 28979 **/
+/** chunk id: 334219, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    z: () => g
+});
+var n = i(627968),
+    l = i(311907),
+    s = i(3137),
+    r = i(454292),
+    u = i(419954),
+    a = i(780964),
+    o = i(358776),
+    T = i(74695),
+    A = i(531525),
+    d = i(985018),
+    S = i(625587);
+let E = (0, u.t_)(a.X.POGGERMODE_PANEL, {
+        usePredicate: () => !(0, o.dk)("LegacyPoggermodePanel"),
+        useTitle: () => d.intl.string(d.t.AtCukI),
+        StronglyDiscouragedCustomComponent: r.A,
+        buildLayout: () => []
+    }),
+    _ = (0, u.t_)(a.X.POGGERMODE_PANEL, {
+        usePredicate: () => (0, o.dk)("PoggermodePanel"),
+        useTitle: () => d.intl.string(d.t.AtCukI),
+        buildLayout: () => [T.c]
+    }),
+    g = (0, u.i4)(a.X.POGGERMODE_SIDEBAR_ITEM, {
+        useTitle: () => d.intl.string(d.t.AtCukI),
+        getLegacySearchKey: () => (0, o.WJ)("PoggermodePanel") ? void 0 : A.H.POGGERMODE,
+        icon: () => (0, n.jsx)("img", {
+            alt: "",
+            src: i(724405),
+            className: S.$
+        }),
+        usePredicate: () => (0, l.bG)([s.A], () => s.A.settingsVisible),
+        buildLayout: () => (0, o.WJ)("PoggermodePanel") ? [_] : [E]
+    })

@@ -1,0 +1,8 @@
+/** Chunk was on 97492 **/
+/** chunk id: 305711, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    WG: "recentClipsPopout__20c92",
+    wx: "header__20c92",
+    Yt: "thumbnailStackContainer__20c92",
+    NC: "buttonsContainer__20c92"
+}

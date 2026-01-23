@@ -1,0 +1,21 @@
+/** Chunk was on 28636 **/
+/** chunk id: 979590, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => i
+});
+var r = n(627968);
+n(64700);
+var l = n(735396);
+
+function i(e) {
+    let {
+        children: t
+    } = e;
+    return (0, r.jsx)("section", {
+        className: l.J,
+        children: (0, r.jsx)("div", {
+            className: l.Q,
+            children: t
+        })
+    })
+}

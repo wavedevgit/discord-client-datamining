@@ -1,0 +1,55 @@
+.confirmationContainer_f473af {
+    margin-top: 56px
+}
+
+.confirmationHeader_f473af {
+    color: var(--text-default);
+    margin-bottom: 8px;
+    text-align: center
+}
+
+.confirmationHeader_f473af strong {
+    color: var(--text-strong)
+}
+
+.confirmationSubtitle_f473af {
+    text-align: center
+}
+
+.buttonContainer_f473af {
+    display: grid;
+    gap: 8px;
+    padding-top: 24px;
+    width: 100%
+}
+
+.guildPickerContainer__99854:not(:last-child) {
+    margin-bottom: 8px;
+    padding-top: 16px
+}
+
+.guildPickerDescription__99854 {
+    margin-bottom: 8px
+}
+
+.breadcrumbs__99854:after {
+    border-bottom: 1px solid var(--border-subtle);
+    content: "";
+    display: block;
+    margin-top: 16px;
+    padding-bottom: 0
+}
+
+.userSubscriptionDetailsContainer__99854 {
+    padding-top: 16px
+}
+
+.guildNameContainer__99854 {
+    background-color: var(--background-mod-normal);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px
+}
+
+/*# sourceMappingURL=5f3c1b63fa77ac85.css.map*/

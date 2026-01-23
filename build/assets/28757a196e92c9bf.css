@@ -1,0 +1,30 @@
+.headerIcons_f5cf99 {
+    align-items: center
+}
+
+.ellipseGroup_f5cf99,
+.headerIcons_f5cf99 {
+    display: flex;
+    justify-content: space-between
+}
+
+.ellipseGroup_f5cf99 {
+    margin: 0 8px
+}
+
+.ellipse_f5cf99 {
+    background-color: var(--channel-icon);
+    border-radius: 50%;
+    height: 4px;
+    margin: 0 2px;
+    opacity: .1;
+    width: 4px
+}
+
+.avatar_f5cf99 {
+    border: 1px solid var(--border-muted);
+    height: 48px;
+    width: 48px
+}
+
+/*# sourceMappingURL=28757a196e92c9bf.css.map*/

@@ -1,0 +1,22 @@
+/** Chunk was on 85426 **/
+/** chunk id: 863876, original params: e,t,l (module,exports,require) **/
+e.exports = {
+    AS: "item__87d05",
+    Xt: "currentItem__87d05",
+    tv: "itemImage__87d05",
+    NP: "currentImage__87d05 itemImage__87d05",
+    AU: "itemImageWrapper__87d05",
+    Yw: "paginationItem__87d05",
+    Pr: "storePaginationImg__87d05",
+    sM: "selectedStorePaginationItem__87d05",
+    N7: "unselectedStorePaginationItem__87d05",
+    X$: "pagination__87d05",
+    HY: "carouselButtonsContainer__87d05",
+    UE: "arrow__87d05",
+    h_: "arrowHovered__87d05",
+    XG: "scroller__87d05",
+    Ki: "video__87d05",
+    yf: "mediaPlayer__87d05",
+    tN: "videoWrapper__87d05",
+    Dk: "carousel__87d05"
+}

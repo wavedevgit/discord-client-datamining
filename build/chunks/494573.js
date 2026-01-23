@@ -1,0 +1,307 @@
+/** Chunk was on 59275 **/
+/** chunk id: 494573, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => y
+}), n(896048);
+var r = n(627968),
+    l = n(64700),
+    s = n(503698),
+    a = n.n(s),
+    i = n(3666),
+    o = n(397927),
+    c = n(770178),
+    u = n(955572),
+    d = n(775602),
+    g = n(742589),
+    f = n(421773),
+    m = n(397309),
+    p = n(190294),
+    _ = n(758836),
+    b = n(985018),
+    h = n(78716),
+    E = n(525037);
+
+function v(e) {
+    for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
+        })
+    }
+    return e
+}
+
+function C(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+        }
+        return n
+    })(Object(t)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e
+}
+
+function A(e) {
+    let {
+        tab: t,
+        label: n,
+        selected: l,
+        handleTransition: s,
+        hasSubmenu: i,
+        showNewBadge: c
+    } = e;
+    return i ? (0, r.jsx)(x, {
+        tab: t,
+        label: n,
+        selected: l,
+        handleTransition: s
+    }) : (0, r.jsxs)(g.A.Title, {
+        onClick: () => s(t),
+        wrapperClassName: E.Vn,
+        className: a()(E.Mf, {
+            [E.wH]: l
+        }),
+        children: [n, c && (0, r.jsx)(o.LpS, {
+            text: b.intl.string(b.t.y2b7CA),
+            className: h.Ad
+        })]
+    })
+}
+
+function x(e) {
+    let {
+        tab: t,
+        label: n,
+        selected: s,
+        handleTransition: i
+    } = e, c = l.useRef(null), p = l.useRef(!1), {
+        isHovered: _,
+        setIsHovered: b,
+        onMouseEnter: h,
+        onMouseLeave: A,
+        cancelTimers: x
+    } = (0, f.A)(100, 100), S = e => {
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), x(), b(!0), p.current = d.A.keyboardModeEnabled)
+    }, O = l.useCallback(() => {
+        p.current = d.A.keyboardModeEnabled, h()
+    }, [h]);
+    return (0, r.jsx)("div", {
+        className: E.iV,
+        onMouseEnter: O,
+        onMouseLeave: A,
+        children: (0, r.jsx)(o.YNO, {
+            targetElementRef: c,
+            shouldShow: _,
+            position: "bottom",
+            align: "left",
+            onRequestOpen: () => {
+                x(), b(!0), p.current = d.A.keyboardModeEnabled
+            },
+            onRequestClose: () => {
+                var e;
+                p.current && !d.A.keyboardModeEnabled && (0, u.uS)(), b(!1), null == (e = c.current) || e.focus()
+            },
+            renderPopout: e => {
+                let {
+                    closePopout: t
+                } = e;
+                return (0, r.jsx)("div", {
+                    onMouseEnter: h,
+                    onMouseLeave: A,
+                    children: (0, r.jsx)(m.A, {
+                        handleTransition: i,
+                        onClose: t
+                    })
+                })
+            },
+            children: (e, l) => {
+                let {
+                    isShown: u
+                } = l, d = u ? o.tN5 : o.abt;
+                return (0, r.jsx)(g.A.Title, C(v({}, e), {
+                    ref: c,
+                    onClick: () => i(t),
+                    onKeyDown: S,
+                    wrapperClassName: E.Vn,
+                    className: a()(E.Mf, {
+                        [E.wH]: s
+                    }),
+                    children: (0, r.jsxs)("span", {
+                        className: E.hP,
+                        children: [n, (0, r.jsx)(d, {
+                            size: "sm",
+                            color: "currentColor"
+                        })]
+                    })
+                }))
+            }
+        })
+    })
+}
+
+function S(e) {
+    let {
+        onTabSelect: t,
+        tabs: n,
+        selectedTab: s,
+        selected: i,
+        showOrbRentalNewBadge: c
+    } = e, m = l.useRef(null), _ = l.useRef(!1), {
+        isHovered: h,
+        setIsHovered: A,
+        onMouseEnter: x,
+        onMouseLeave: S,
+        cancelTimers: O
+    } = (0, f.A)(100, 100), y = e => {
+        ("Enter" === e.key || " " === e.key) && (e.preventDefault(), O(), A(!0), _.current = d.A.keyboardModeEnabled)
+    }, j = l.useCallback(() => {
+        _.current = d.A.keyboardModeEnabled, x()
+    }, [x]);
+    return (0, r.jsx)("div", {
+        className: E.iV,
+        onMouseEnter: j,
+        onMouseLeave: S,
+        children: (0, r.jsx)(o.YNO, {
+            targetElementRef: m,
+            shouldShow: h,
+            position: "bottom",
+            align: "left",
+            onRequestOpen: () => {
+                O(), A(!0), _.current = d.A.keyboardModeEnabled
+            },
+            onRequestClose: () => {
+                var e;
+                _.current && !d.A.keyboardModeEnabled && (0, u.uS)(), A(!1), null == (e = m.current) || e.focus()
+            },
+            renderPopout: e => {
+                let {
+                    closePopout: l
+                } = e;
+                return (0, r.jsx)("div", {
+                    onMouseEnter: x,
+                    onMouseLeave: S,
+                    children: (0, r.jsx)(p.A, {
+                        selectedTab: s,
+                        onClose: l,
+                        tabs: n,
+                        onTabSelect: t,
+                        showOrbRentalNewBadge: c
+                    })
+                })
+            },
+            children: (e, t) => {
+                let {
+                    isShown: n
+                } = t, l = n ? o.tN5 : o.abt;
+                return (0, r.jsx)(g.A.Title, C(v({}, e), {
+                    ref: m,
+                    onKeyDown: y,
+                    wrapperClassName: E.Vn,
+                    className: a()(E.Mf, E.OS, {
+                        [E.wH]: i
+                    }),
+                    "aria-label": b.intl.string(b.t["UKOtz+"]),
+                    children: (0, r.jsxs)("span", {
+                        className: E.hP,
+                        children: [b.intl.string(b.t["UKOtz+"]), (0, r.jsx)(l, {
+                            size: "xs"
+                        })]
+                    })
+                }))
+            }
+        })
+    })
+}
+
+function O(e, t, n) {
+    var r;
+    return e === n || null != (r = t.hasSubmenu) && r && (0, _.dF)(n) && e === _.G2.CATALOG
+}
+
+function y(e) {
+    let {
+        className: t,
+        selectedTab: n,
+        tabs: s,
+        onTabSelect: o,
+        showOrbRentalNewBadge: u
+    } = e, [d, g] = l.useState(0), f = l.useRef(d), {
+        lastVisibleIndex: m,
+        onItemLayout: p,
+        overflowItemsRef: b
+    } = (0, i.Wv)({
+        items: s,
+        itemGapPx: 24,
+        maxLines: 1,
+        containerWidth: d
+    }), h = l.useMemo(() => s.slice(0, m + 1), [m, s]), v = l.useMemo(() => s.slice(m + 1), [m, s]), C = l.useRef(null), x = l.useCallback(e => {
+        let t = e.contentRect.width;
+        null != t && f.current !== t && (g(t), f.current = t)
+    }, []);
+    (0, c.g)(C, x);
+    let y = 0 !== d,
+        j = v.some(e => O(e.tab, e, n));
+    return (0, r.jsxs)("div", {
+        className: a()(E.kL, t),
+        ref: C,
+        children: [(0, r.jsxs)("div", {
+            className: E.Kk,
+            children: [s.map((e, t) => {
+                var l;
+                return (0, r.jsx)(i.Ae, {
+                    index: t,
+                    onItemLayout: p,
+                    children: (0, r.jsx)(A, {
+                        tab: e.tab,
+                        label: e.label,
+                        selected: O(e.tab, e, n),
+                        handleTransition: o,
+                        hasSubmenu: null != (l = e.hasSubmenu) && l,
+                        showNewBadge: e.tab === _.G2.ORBS && u
+                    })
+                }, e.tab)
+            }), (0, r.jsx)("div", {
+                ref: b,
+                children: (0, r.jsx)(S, {
+                    tabs: v,
+                    onTabSelect: o,
+                    selectedTab: n,
+                    selected: j,
+                    showOrbRentalNewBadge: u
+                })
+            })]
+        }), y && (0, r.jsxs)("div", {
+            className: E.vR,
+            children: [h.map(e => {
+                var t;
+                return (0, r.jsx)(A, {
+                    tab: e.tab,
+                    label: e.label,
+                    selected: O(e.tab, e, n),
+                    handleTransition: o,
+                    hasSubmenu: null != (t = e.hasSubmenu) && t,
+                    showNewBadge: e.tab === _.G2.ORBS && u
+                }, e.tab)
+            }), 0 !== v.length ? (0, r.jsx)(S, {
+                tabs: v,
+                onTabSelect: o,
+                selectedTab: n,
+                selected: j,
+                showOrbRentalNewBadge: u
+            }) : null]
+        })]
+    })
+}

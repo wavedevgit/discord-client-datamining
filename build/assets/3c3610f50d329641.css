@@ -1,0 +1,24 @@
+.body_e1372c {
+    line-height: 20px
+}
+
+.errorBlock_e1372c {
+    margin-bottom: 16px
+}
+
+.cancelText_e1372c {
+    color: var(--text-feedback-critical)
+}
+
+.cancelText_e1372c,
+.radioOption_e1372c {
+    display: flex
+}
+
+.confettiCanvas__6c43c {
+    height: 100%;
+    position: absolute;
+    width: 100%
+}
+
+/*# sourceMappingURL=3c3610f50d329641.css.map*/

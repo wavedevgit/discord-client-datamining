@@ -1,0 +1,8 @@
+/** Chunk was on 35511 **/
+/** chunk id: 606265, original params: e,t,n (module,exports,require) **/
+"use strict";
+n(941369);
+var r = n(452162).Object;
+e.exports = function(e, t) {
+    return r.create(e, t)
+}

@@ -1,0 +1,10 @@
+/** Chunk was on 35511 **/
+/** chunk id: 77850, original params: e,t,n (module,exports,require) **/
+"use strict";
+var r = n(715804),
+    a = n(728484),
+    o = Array.prototype;
+e.exports = function(e) {
+    var t = e.flat;
+    return e === o || r(o, e) && t === o.flat ? a : t
+}

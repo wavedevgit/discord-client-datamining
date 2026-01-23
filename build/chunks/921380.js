@@ -1,0 +1,7 @@
+/** Chunk was on 13530 **/
+/** chunk id: 921380, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    U5: "inviteInfo__29497",
+    $f: "guildIcon__29497",
+    YS: "guildNameContainer__29497"
+}

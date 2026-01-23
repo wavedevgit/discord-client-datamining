@@ -1,0 +1,7 @@
+/** Chunk was on 97492 **/
+/** chunk id: 787750, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    z: "summary__3af26",
+    $U: "speakers__3af26",
+    my: "avatar__3af26"
+}

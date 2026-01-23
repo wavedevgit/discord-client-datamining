@@ -1,0 +1,18 @@
+/** Chunk was on 97492 **/
+/** chunk id: 684205, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    kL: "container__664ff",
+    X_: "chatOpen__664ff",
+    N1: "headerContainer__664ff",
+    hQ: "contentContainer__664ff",
+    UD: "buttonContainer__664ff",
+    Vu: "listTitle__664ff",
+    fn: "participantRowContainer__664ff",
+    $u: "participantMemberContainer__664ff",
+    kH: "participantTextContainer__664ff",
+    RB: "participantAvatar__664ff",
+    F8: "participantName__664ff",
+    y7: "emptyStateContainer__664ff",
+    vo: "emptyStateTitle__664ff",
+    XG: "emptyStateBody__664ff"
+}

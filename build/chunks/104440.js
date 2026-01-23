@@ -1,0 +1,149 @@
+/** Chunk was on 21738 **/
+/** chunk id: 104440, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => I
+}), n(896048);
+var r = n(627968),
+    i = n(64700),
+    l = n(665260),
+    a = n(311907),
+    s = n(397927),
+    o = n(59636),
+    c = n(235986),
+    u = n(253932),
+    d = n(742077),
+    p = n(954571),
+    h = n(144914),
+    g = n(765258),
+    f = n(192771),
+    m = n(652215),
+    A = n(985018),
+    _ = n(231566);
+
+function b(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+
+function E(e) {
+    for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+            b(e, t, n[t])
+        })
+    }
+    return e
+}
+
+function O(e) {
+    let {
+        applicationViewItems: t,
+        restoreApplication: n
+    } = e;
+    if (0 === t.length) return null;
+    let i = t.map(e => {
+        let t = e.libraryApplication.getDistributor();
+        return (0, r.jsxs)("div", {
+            className: _.Kp,
+            children: [(0, r.jsxs)(c.A, {
+                direction: c.A.Direction.VERTICAL,
+                className: _.Hm,
+                children: [(0, r.jsx)("div", {
+                    className: _.SX,
+                    children: e.libraryApplication.getBranchedName(e.application)
+                }), null != t ? (0, r.jsx)("div", {
+                    className: _.ME,
+                    children: m.gG4[t]
+                }) : null]
+            }), (0, r.jsx)(s.DUT, {
+                className: _.P5,
+                onClick: () => n(e.libraryApplication),
+                children: (0, r.jsx)(s.PGe, {
+                    size: "md",
+                    color: "currentColor",
+                    className: _.q_
+                })
+            })]
+        }, e.key)
+    });
+    return (0, r.jsxs)("div", {
+        className: _.z0,
+        children: [(0, r.jsx)(s.Heading, {
+            variant: "heading-md/semibold",
+            className: _.Z9,
+            children: A.intl.string(A.t["5PJtrH"])
+        }), i]
+    })
+}
+class y extends i.PureComponent {
+    handleToggleShortcutDesktop(e) {
+        u.uB.updateSetting(e)
+    }
+    handleToggleShortcutStartMenu(e) {
+        u.Pf.updateSetting(e)
+    }
+    trackRestoreApplication(e, t) {
+        p.default.track(m.HAw.APPLICATION_SETTINGS_UPDATED, E({
+            hidden_enabled: t
+        }, e.getAnalyticsData()))
+    }
+    renderBody() {
+        let {
+            hiddenLibraryApplicationViewItems: e,
+            installShortcutDesktop: t,
+            installShortcutStartMenu: n
+        } = this.props;
+        return (0, r.jsxs)("div", {
+            className: _.rf,
+            children: [(0, h.S)() ? (0, r.jsxs)(s.BJc, {
+                gap: 16,
+                children: [(0, r.jsx)(s.dOG, {
+                    label: A.intl.string(A.t["9ID+Kh"]),
+                    description: A.intl.string(A.t.vT61N0),
+                    checked: t,
+                    onChange: this.handleToggleShortcutDesktop
+                }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(s.dOG, {
+                    label: A.intl.string(A.t.vNpUMz),
+                    description: A.intl.string(A.t.cpYp0H),
+                    checked: n,
+                    onChange: this.handleToggleShortcutStartMenu
+                }), (0, r.jsx)(s.cGx, {}), (0, r.jsx)(f.A, {})]
+            }) : null, (0, r.jsx)(O, {
+                restoreApplication: this.handleRestoreHiddenLibraryApplication,
+                applicationViewItems: e
+            })]
+        })
+    }
+    render() {
+        return (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(g.A, {
+                currentRoute: m.BVt.APPLICATION_LIBRARY_SETTINGS
+            }), (0, r.jsx)(s.ArX, {
+                className: _.XG,
+                children: this.renderBody()
+            })]
+        })
+    }
+    constructor(...e) {
+        super(...e), b(this, "handleRestoreHiddenLibraryApplication", e => {
+            let t = l.PQ(e.getFlags(), m.hM6.HIDDEN);
+            o.V(e.id, e.branchId, t), this.trackRestoreApplication(e, l.Lt(t, m.hM6.HIDDEN))
+        })
+    }
+}
+
+function I() {
+    let e = {
+        installShortcutDesktop: u.uB.useSetting(),
+        installShortcutStartMenu: u.Pf.useSetting(),
+        hiddenLibraryApplicationViewItems: (0, a.bG)([d.A], () => d.A.hiddenLibraryApplicationViewItems)
+    };
+    return (0, r.jsx)(y, E({}, e))
+}

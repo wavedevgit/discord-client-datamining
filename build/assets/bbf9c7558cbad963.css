@@ -1,0 +1,18 @@
+.imageContainer_c63727 {
+    align-items: center;
+    background-color: var(--background-base-low);
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    padding: 30px
+}
+
+.image_c63727 {
+    border-radius: var(--radius-sm);
+    height: 160px;
+    object-fit: contain;
+    rotate: 5deg;
+    width: 120px
+}
+
+/*# sourceMappingURL=bbf9c7558cbad963.css.map*/

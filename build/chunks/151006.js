@@ -1,0 +1,43 @@
+/** Chunk was on 31658 **/
+/** chunk id: 151006, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    default: () => d
+});
+var i = n(627968),
+    a = n(64700),
+    l = n(397927),
+    o = n(442433),
+    s = n(486503),
+    c = n(253932),
+    u = n(957565),
+    r = n(985018);
+
+function d(e) {
+    let {
+        imageUrl: t,
+        onSelect: n
+    } = e, d = c.Q_.useSetting(), {
+        tidaWebformEnabled: p
+    } = s.A.useExperiment({
+        location: "GuildEventImageContextMenu"
+    }, {
+        autoTrackExposure: !1
+    }), x = a.useCallback(() => {
+        (0, u.C)(t)
+    }, [t]);
+    return u.p5 && d && p ? (0, i.jsx)(l.W1t, {
+        "data-menu-all-icons": !0,
+        navId: "guild-event-image-context",
+        onClose: o.Z_,
+        onSelect: n,
+        "aria-label": r.intl.string(r.t.Zow2V5),
+        children: (0, i.jsx)(l.rXV, {
+            children: (0, i.jsx)(l.Drp, {
+                id: "copy-image-link",
+                label: r.intl.string(r.t["8xHmxo"]),
+                action: x,
+                icon: l.qYV
+            })
+        })
+    }) : null
+}

@@ -1,0 +1,7 @@
+/** Chunk was on 38663 **/
+/** chunk id: 828151, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    XG: "scroller__28fdc",
+    D$: "friendsLoadingItem__28fdc",
+    Y7: "guildsLoadingItem__28fdc"
+}

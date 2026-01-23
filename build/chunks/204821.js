@@ -1,0 +1,11 @@
+/** Chunk was on 36054 **/
+/** chunk id: 204821, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    p: () => a
+});
+let a = {
+    bottom: 40,
+    left: 32,
+    right: 32,
+    top: 32
+}

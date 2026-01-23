@@ -1,0 +1,9 @@
+/** Chunk was on 15050 **/
+/** chunk id: 150211, original params: e,a,_ (module,exports,require) **/
+e.exports = {
+    kL: "container__07aeb",
+    Do: "animationOverlay__07aeb",
+    yf: "trickAnimation__07aeb",
+    vu: "treatAnimation__07aeb",
+    I3: "lottieAnimation__07aeb"
+}

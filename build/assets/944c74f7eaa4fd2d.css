@@ -1,0 +1,43 @@
+.root_ae5adc {
+    text-align: center
+}
+
+.header_ae5adc {
+    padding: 0 80px
+}
+
+.content_ae5adc {
+    margin-bottom: 24px
+}
+
+.footer_ae5adc {
+    justify-content: space-between
+}
+
+.artContainer_ae5adc {
+    align-items: flex-end;
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    margin: -60px auto 32px;
+    width: 200px
+}
+
+.art_ae5adc {
+    height: 100%;
+    width: 100%
+}
+
+.buttonContent_ae5adc {
+    align-items: center;
+    display: flex
+}
+
+.buttonIcon_ae5adc {
+    height: 16px;
+    width: 16px;
+    -webkit-margin-end: 4px;
+    margin-inline-end: 4px
+}
+
+/*# sourceMappingURL=944c74f7eaa4fd2d.css.map*/
