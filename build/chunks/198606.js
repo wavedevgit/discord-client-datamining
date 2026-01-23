@@ -1,0 +1,12 @@
+/** Chunk was on web.js **/
+/** chunk id: 198606, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    jv: "categoryList_a1e0e0",
+    HZ: "expressionPickerCategoryList_a1e0e0",
+    L1: "category_a1e0e0",
+    Yl: "categoryIcon_a1e0e0 category_a1e0e0",
+    wH: "selected_a1e0e0",
+    xi: "categoryIconIcon_a1e0e0",
+    xe: "defaultsShortcut_a1e0e0"
+}

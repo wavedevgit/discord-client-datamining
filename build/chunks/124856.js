@@ -1,0 +1,24 @@
+/** Chunk was on web.js **/
+/** chunk id: 124856, original params: e,t,n (module,exports,require) **/
+"use strict";
+
+function r(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+n.d(t, {
+    A: () => i
+}), n(228524);
+class i {
+    constructor(e, t, n) {
+        r(this, "name", void 0), r(this, "description", void 0), r(this, "getFeatureValue", void 0), this.name = e, this.description = n, this.getFeatureValue = t, Object.defineProperty(this, "getFeatureValue", {
+            value: t,
+            configurable: !1,
+            writable: !1
+        })
+    }
+}

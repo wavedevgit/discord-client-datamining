@@ -1,0 +1,11 @@
+/** Chunk was on web.js **/
+/** chunk id: 439776, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => i
+});
+var r = n(619881);
+
+function i(e) {
+    return ["table", "td", "th"].indexOf((0, r.A)(e)) >= 0
+}

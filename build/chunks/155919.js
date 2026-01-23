@@ -1,0 +1,20 @@
+/** Chunk was on web.js **/
+/** chunk id: 155919, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    mG: "noDrag__74acd",
+    kL: "container__74acd",
+    Nr: "card__74acd",
+    qr: "footer__74acd",
+    DD: "title__74acd noDrag__74acd",
+    LY: "asset__74acd noDrag__74acd",
+    M1: "stats__74acd",
+    dJ: "stat__74acd",
+    iY: "statImage__74acd noDrag__74acd",
+    KA: "statText__74acd",
+    lO: "cta__74acd",
+    Ic: "ctaText__74acd",
+    hC: "powerContainer__74acd",
+    JA: "powerText__74acd",
+    TO: "powerBar__74acd"
+}

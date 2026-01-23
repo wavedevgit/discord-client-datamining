@@ -1,0 +1,11 @@
+/** Chunk was on web.js **/
+/** chunk id: 449838, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    MP: "confirmImage__0f8ce",
+    LA: "transferConfirmImage__0f8ce",
+    pS: "quantitySelectorBody__0f8ce",
+    TH: "quantitySelectorDescription__0f8ce",
+    g9: "quantitySelectorWrapper__0f8ce",
+    v$: "quantitySelectorLabel__0f8ce"
+}

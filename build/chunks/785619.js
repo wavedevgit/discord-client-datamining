@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 785619, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    Hc: "baseContainer__67013",
+    Nr: "card__67013",
+    Ki: "video__67013",
+    aZ: "betaBadge__67013",
+    L$: "progressContainer__67013",
+    zK: "bannerImageContainer__67013",
+    _e: "bannerImage__67013",
+    FS: "textContainer__67013",
+    R_: "heading__67013",
+    WT: "actionButtonContainer__67013",
+    fB: "totalLifetimeRewardsContainer__67013",
+    mR: "stackedGradientOverlay__67013",
+    G3: "bodyText__67013"
+}

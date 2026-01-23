@@ -1,0 +1,17 @@
+/** Chunk was on web.js **/
+/** chunk id: 384377, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    XA: () => a,
+    fu: () => i
+});
+let r = (0, n(353640).v)(e => ({
+        toastType: null,
+        showToast: t => e({
+            toastType: t
+        })
+    })),
+    i = () => r(e => e.toastType),
+    a = e => {
+        r.getState().showToast(e)
+    }

@@ -1,0 +1,9 @@
+/** Chunk was on web.js **/
+/** chunk id: 878562, original params: e,t,n (module,exports,require) **/
+"use strict";
+var r = n(428427),
+    i = "​",
+    a = "᠎";
+e.exports = function() {
+    return String.prototype.trim && i.trim() === i && a.trim() === a && ("_" + a).trim() === "_" + a && (a + "_").trim() === a + "_" ? String.prototype.trim : r
+}

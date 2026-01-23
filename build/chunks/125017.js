@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 125017, original params: e,t,n (module,exports,require) **/
+"use strict";
+
+function r(e) {
+    if (null == e || null == e.party || null == e.party.size || e.party.size.length < 2) return {
+        partySize: -1,
+        maxPartySize: -1
+    };
+    let [t, n] = e.party.size;
+    return {
+        partySize: t,
+        maxPartySize: n
+    }
+}
+n.d(t, {
+    _: () => r
+}), n(896048)

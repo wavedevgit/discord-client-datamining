@@ -1,0 +1,324 @@
+/** Chunk was on web.js **/
+/** chunk id: 563380, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => R
+}), n(228524);
+var r = n(627968),
+    i = n(503698),
+    a = n.n(i),
+    s = n(284009),
+    o = n.n(s),
+    l = n(158954),
+    c = n(311907),
+    u = n(827734),
+    d = n(397927),
+    f = n(824552),
+    p = n(975807),
+    _ = n(933958),
+    h = n(869003),
+    m = n(793574),
+    g = n(688810),
+    E = n(429913),
+    y = n(793943),
+    b = n(134861),
+    O = n(147964),
+    v = n(362490),
+    A = n(271469),
+    I = n(985018),
+    S = n(410758);
+
+function T(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+
+function C(e) {
+    for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+            T(e, t, n[t])
+        })
+    }
+    return e
+}
+
+function N(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        t && (r = r.filter(function(t) {
+            return Object.getOwnPropertyDescriptor(e, t).enumerable
+        })), n.push.apply(n, r)
+    }
+    return n
+}
+
+function w(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e
+}
+
+function R() {
+    let e = (0, E.h)(O.A.testModeApplicationId),
+        {
+            analyticsLocations: t
+        } = (0, g.Ay)(m.A.SDK_DEBUG_TOOLS),
+        {
+            canStartAuthorization: n,
+            hasAlreadyLinked: i,
+            startAuthorization: s,
+            chosenFlow: u,
+            connectionApp: p,
+            debug: {
+                isSubscribedToAuthorizeRequest: T,
+                oauth2Token: C,
+                hasConnectionEntrypointUrl: N,
+                validFlows: w
+            }
+        } = (0, v.RD)(e, {
+            debug: !0
+        }),
+        R = (0, c.bG)([b.A], () => null != e && b.A.isConnected(e.id)),
+        x = (0, c.bG)([_.Ay], () => _.Ay.getSelfEmbeddedActivities()),
+        L = "authorization_debug",
+        j = [{
+            id: "authorization_debug",
+            name: I.intl.string(A.default.vR0zs6)
+        }],
+        M = () => (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)("div", {
+                className: S.wx,
+                children: (0, r.jsx)("div", {
+                    className: S.if,
+                    children: (0, r.jsx)(l.DZT, {
+                        variant: "heading-lg/extrabold",
+                        children: I.intl.format(A.default.KoK4J9, {
+                            appName: ""
+                        })
+                    })
+                })
+            }), (0, r.jsx)("div", {
+                className: S.rf,
+                children: (0, r.jsx)(l.y$y, {
+                    className: S.u1
+                })
+            })]
+        }),
+        k = () => (o()(null != e, "Application should be defined when rendering the test mode panel"), (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsxs)("div", {
+                className: S.wx,
+                children: [(0, r.jsx)("div", {
+                    className: S.if,
+                    children: (0, r.jsx)(l.DZT, {
+                        variant: "heading-lg/extrabold",
+                        children: I.intl.format(A.default.KoK4J9, {
+                            appName: e.name
+                        })
+                    })
+                }), (0, r.jsx)(l.K0, {
+                    variant: "icon-only",
+                    icon: l.UlM,
+                    "aria-label": "Close",
+                    onClick: () => (0, y.Jp)()
+                })]
+            }), (0, r.jsxs)("div", {
+                className: S.rf,
+                children: [(0, r.jsx)(d.VQ0, {
+                    className: S.$H,
+                    selectedItem: L,
+                    onItemSelect: () => {},
+                    orientation: "horizontal",
+                    type: "top",
+                    look: "brand",
+                    children: j.map(e => (0, r.jsx)(d.VQ0.Item, {
+                        className: a()(S.Mf, {
+                            [S.wH]: e.id === L
+                        }),
+                        id: e.id,
+                        "aria-label": e.name,
+                        children: e.name
+                    }, e.id))
+                }), (0, r.jsx)(l.EYj, {
+                    variant: "text-md/medium",
+                    color: "text-subtle",
+                    children: I.intl.string(A.default["no+FQS"])
+                }), (0, r.jsx)(P, {
+                    overallStatus: T ? 0 : R ? 3 : 1,
+                    name: I.intl.string(A.default.AGLx00),
+                    steps: [{
+                        status: R ? 2 : 4,
+                        text: I.intl.string(A.default.kxF9br),
+                        description: R ? null : I.intl.string(A.default.PFxxJa),
+                        learnMoreLink: R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    }, {
+                        status: T ? 2 : R ? 3 : 4,
+                        text: I.intl.string(A.default.S94dzs),
+                        description: T || !R ? null : I.intl.string(A.default.aTULMB),
+                        learnMoreLink: T || !R ? null : "https://discord.com/developers/docs/discord-social-sdk/how-to/debug-log"
+                    }],
+                    isChosen: u === v._M.RPC
+                }), (0, r.jsx)(P, {
+                    overallStatus: +!N,
+                    name: I.intl.string(A.default.K3ObrU),
+                    steps: [{
+                        status: N ? 2 : 4,
+                        text: I.intl.string(A.default["8a7IrV"]),
+                        description: N ? I.intl.formatToPlainString(A.default["9iLeL2"], {
+                            url: null == p ? void 0 : p.connectionEntrypointUrl
+                        }) : null
+                    }],
+                    isChosen: u === v._M.WEB
+                })]
+            }), (0, r.jsxs)("div", {
+                className: S.qr,
+                children: [(0, r.jsx)(D, {
+                    status: +!i,
+                    text: I.intl.string(I.t["Vu/zmQ"])
+                }), 0 === w.length && (0, r.jsx)(l.EYj, {
+                    style: {
+                        minWidth: 0,
+                        overflow: "hidden"
+                    },
+                    variant: "text-md/medium",
+                    children: I.intl.string(A.default.eg0mNa)
+                }), (0, r.jsx)(l.$nd, {
+                    variant: "secondary",
+                    disabled: !n || i,
+                    onClick: () => s({
+                        analyticsLocations: t
+                    }),
+                    text: I.intl.string(A.default.w0pN4R),
+                    fullWidth: !0
+                }), null != C && (0, r.jsx)(l.$nd, {
+                    variant: "secondary",
+                    onClick: () => {
+                        f.A.delete(C.id);
+                        let t = x.get(e.id);
+                        null != t && h.A.leaveActivity({
+                            location: t.location,
+                            applicationId: e.id,
+                            showFeedback: !1
+                        })
+                    },
+                    text: I.intl.string(A.default.tkIymA),
+                    fullWidth: !0
+                })]
+            })]
+        }));
+    return (0, r.jsx)("div", {
+        "data-app-right-panel": !0,
+        className: S.nE,
+        children: (0, r.jsx)(l.Fmo, {
+            children: null != e ? k() : M()
+        })
+    })
+}
+
+function P(e) {
+    let {
+        overallStatus: t,
+        name: n,
+        steps: i,
+        isChosen: a
+    } = e;
+    return (0, r.jsxs)("div", {
+        className: S.Wk,
+        children: [(0, r.jsx)(D, {
+            status: t,
+            text: n
+        }), i.map((e, t) => (0, r.jsx)(x, C({}, e), t)), a && (0, r.jsx)("div", {
+            className: S.MH,
+            children: (0, r.jsx)(l.EYj, {
+                variant: "text-sm/medium",
+                color: "text-subtle",
+                children: I.intl.string(A.default.OEkrCx)
+            })
+        })]
+    })
+}
+
+function D(e) {
+    let {
+        text: t,
+        status: n
+    } = e;
+    return (0, r.jsxs)("div", {
+        className: S.Km,
+        children: [(0, r.jsx)(l.EYj, {
+            variant: "text-md/semibold",
+            color: "text-subtle",
+            children: t
+        }), (0, r.jsx)(L, {
+            status: n
+        })]
+    })
+}
+
+function x(e) {
+    let {
+        status: t,
+        text: n,
+        description: i,
+        learnMoreLink: a
+    } = e;
+    return (0, r.jsxs)("div", {
+        className: S.jf,
+        children: [(0, r.jsx)(L, {
+            status: t
+        }), (0, r.jsxs)("div", {
+            className: S.bc,
+            children: [(0, r.jsx)(l.EYj, {
+                variant: "text-md/medium",
+                children: n
+            }), null != i && (0, r.jsx)(l.EYj, {
+                variant: "text-sm/medium",
+                color: "text-subtle",
+                children: i
+            }), null != a && (0, r.jsx)(l.QWc, {
+                textVariant: "text-sm/medium",
+                text: I.intl.string(I.t.hvVgAZ),
+                onClick: () => (0, p.A)(a)
+            })]
+        })]
+    })
+}
+
+function L(e) {
+    let {
+        status: t
+    } = e, n = {
+        size: "sm",
+        className: S.I8
+    };
+    switch (t) {
+        case 0:
+            return (0, r.jsx)(l.yr3, w(C({}, n), {
+                color: u.A.colors.ICON_FEEDBACK_POSITIVE
+            }));
+        case 1:
+            return (0, r.jsx)(l.aXh, w(C({}, n), {
+                color: u.A.colors.ICON_FEEDBACK_CRITICAL
+            }));
+        case 2:
+            return (0, r.jsx)(l.Uzd, w(C({}, n), {
+                color: u.A.colors.ICON_FEEDBACK_POSITIVE
+            }));
+        case 3:
+            return (0, r.jsx)(l.id, w(C({}, n), {
+                color: u.A.colors.ICON_FEEDBACK_WARNING
+            }));
+        case 4:
+            return (0, r.jsx)(l.PGe, w(C({}, n), {
+                color: u.A.colors.ICON_FEEDBACK_CRITICAL
+            }))
+    }
+}

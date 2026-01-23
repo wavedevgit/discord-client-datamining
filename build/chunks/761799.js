@@ -1,0 +1,26 @@
+/** Chunk was on web.js **/
+/** chunk id: 761799, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    A: () => r
+});
+let r = {
+    USE_FILE: !0,
+    USE_JFIF: !0,
+    USE_PNG_FILE: !0,
+    USE_EXIF: !0,
+    USE_IPTC: !0,
+    USE_XMP: !0,
+    USE_ICC: !0,
+    USE_MPF: !0,
+    USE_PHOTOSHOP: !0,
+    USE_THUMBNAIL: !0,
+    USE_TIFF: !0,
+    USE_JPEG: !0,
+    USE_PNG: !0,
+    USE_HEIC: !0,
+    USE_AVIF: !0,
+    USE_WEBP: !0,
+    USE_GIF: !0,
+    USE_MAKER_NOTES: !0
+}

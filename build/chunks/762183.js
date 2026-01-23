@@ -1,0 +1,12 @@
+/** Chunk was on web.js **/
+/** chunk id: 762183, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    K: () => i
+});
+var r = n(253932);
+let i = () => {
+    let e = r.Zt.useSetting(),
+        t = r.n6.useSetting();
+    return null != t ? t : !!e || e
+}

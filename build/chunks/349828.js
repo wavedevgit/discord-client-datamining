@@ -1,0 +1,16 @@
+/** Chunk was on web.js **/
+/** chunk id: 349828, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    V: () => i,
+    _: () => a
+});
+var r = n(860689);
+let i = "373",
+    a = (0, r.tJ)({
+        id: i,
+        name: "Favorites",
+        description: "The place for all your favorite channels!",
+        joinedAt: new Date,
+        maxMembers: 5e5
+    })

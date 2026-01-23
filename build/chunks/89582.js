@@ -1,0 +1,8 @@
+/** Chunk was on web.js **/
+/** chunk id: 89582, original params: e,t,n (module,exports,require) **/
+var r = n(37609);
+e.exports = function(e) {
+    var t = r(e),
+        n = t % 1;
+    return t == t ? n ? t - n : t : 0
+}

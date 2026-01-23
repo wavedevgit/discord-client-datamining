@@ -1,0 +1,63 @@
+/** Chunk was on web.js **/
+/** chunk id: 415441, original params: e,t,n (module,exports,require) **/
+"use strict";
+n.d(t, {
+    N: () => p
+});
+var r = n(627968),
+    i = n(64700),
+    a = n(503698),
+    s = n.n(a),
+    o = n(311907),
+    l = n(775602),
+    c = n(607470),
+    u = n(579473),
+    d = n(985018),
+    f = n(545965);
+
+function p(e) {
+    var t, n, a;
+    let {
+        showVideo: p,
+        imageAsset: _,
+        videoAsset: h,
+        imageSize: m,
+        onLoadComplete: g,
+        assetRef: E
+    } = e, y = (0, o.bG)([l.A], () => l.A.useReducedMotion), b = null == _ || _.asset.isAnimated ? null : _.asset.url, O = null != h && h.asset.isAnimated ? h.asset.url : null, v = null == m ? void 0 : m.width, A = null == m ? void 0 : m.height, I = i.useMemo(() => {
+        let e = null != v && null != A ? (0, u.Yt)(v, A) : null;
+        return null != b ? (0, u.UX)(b, {
+            format: "webp",
+            width: null == e ? void 0 : e.width,
+            height: null == e ? void 0 : e.height
+        }) : null != O ? (0, u.WV)(O, null != e ? e : void 0) : null
+    }, [b, O, v, A]);
+    if (null == I) return null;
+    let S = !y && null != h && null != O && p;
+    return (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)("img", {
+            alt: null != (t = null == _ ? void 0 : _.alt) ? t : d.intl.string(d.t.P84bAD),
+            className: null != (n = null == _ ? void 0 : _.className) ? n : f.Sl,
+            src: I,
+            onLoad: g,
+            ref: S ? void 0 : E
+        }), S && p && (0, r.jsx)(c.A, {
+            autoPlay: !0,
+            loop: !0,
+            muted: !0,
+            preload: "auto",
+            poster: I,
+            playsInline: !0,
+            className: s()(h.className, f.Ki, {
+                [f.R]: !p
+            }),
+            controls: !1,
+            onProgress: g,
+            ref: E,
+            children: (0, r.jsx)("source", {
+                src: h.asset.url,
+                type: null != (a = h.asset.mimetype) ? a : void 0
+            })
+        })]
+    })
+}

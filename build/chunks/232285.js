@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 232285, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    kL: "container__3849c",
+    hQ: "contentContainer__3849c",
+    VW: "containerWithOfferCountdown__3849c",
+    rf: "body__3849c",
+    s8: "marketingPageTextContainer__3849c",
+    iQ: "descriptionContainer__3849c",
+    UJ: "twoButtonContainer__3849c",
+    es: "singleButtonContainer__3849c",
+    XN: "offerPillContainer__3849c",
+    Qn: "affinitiesContainer__3849c",
+    eZ: "referrerAttributionContainer__3849c",
+    wx: "header__3849c",
+    IZ: "heroOfferCountdown__3849c"
+}

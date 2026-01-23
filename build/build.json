@@ -1,0 +1,11 @@
+{
+    "builtAt": 1769193952702,
+    "buildNumber": 488721,
+    "versionHash": "ce98d9412f411efcf5d8ea93bd131ab392999f8f",
+    "entryChunk": "329563",
+    "modules": {
+        "js": {},
+        "css": {}
+    },
+    "dependencyGraph": {}
+}

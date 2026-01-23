@@ -1,0 +1,18 @@
+/** Chunk was on web.js **/
+/** chunk id: 680028, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    kL: "container_b5010b",
+    eq: "eventName_b5010b",
+    h_: "description_b5010b",
+    FD: "descriptionWithThumbnail_b5010b",
+    jH: "spacer_b5010b",
+    T_: "rsvpCount_b5010b",
+    pO: "rsvpIcon_b5010b",
+    xL: "creator_b5010b",
+    kj: "eventInfoStatusContainer_b5010b",
+    II: "statusContainer_b5010b",
+    dT: "withThumbnail_b5010b",
+    iT: "thumbnailContainer_b5010b",
+    xn: "thumbnail_b5010b"
+}

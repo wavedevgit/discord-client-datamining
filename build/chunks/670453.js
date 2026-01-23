@@ -1,0 +1,6 @@
+/** Chunk was on web.js **/
+/** chunk id: 670453, original params: e (module,exports,require) **/
+e.exports = function(e, t) {
+    for (var n = -1, r = Array(e); ++n < e;) r[n] = t(n);
+    return r
+}

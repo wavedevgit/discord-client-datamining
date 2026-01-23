@@ -1,0 +1,20 @@
+/** Chunk was on web.js **/
+/** chunk id: 300937, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    yu: "metadata__857bf",
+    kP: "libraryLink__857bf",
+    dy: "libraryIcon__857bf",
+    oK: "invalidPoop__857bf",
+    ok: "invalidPoopHorizontal__857bf",
+    El: "legacySeasonalGiftEmbedWrapper__857bf",
+    gB: "customGiftEmbedWrapper__857bf",
+    by: "giftEmbedWrapperHorizontal__857bf",
+    gc: "legacySeasonalGiftEmbedBox__857bf",
+    Ei: "legacySeasonalGiftEmbedBoxHorizontal__857bf",
+    ww: "customGiftEmbedBox__857bf",
+    wy: "customGiftEmbedBoxHorizontal__857bf",
+    nr: "headerIcon__857bf",
+    mp: "collectiblesEmbedWrapper__857bf",
+    UQ: "collectiblesAcceptButton__857bf"
+}

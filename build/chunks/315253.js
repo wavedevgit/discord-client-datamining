@@ -1,0 +1,16 @@
+/** Chunk was on web.js **/
+/** chunk id: 315253, original params: e,t,n (module,exports,require) **/
+"use strict";
+e.exports = {
+    _I: "pictureInPicture__6341f",
+    cB: "dragging__6341f",
+    GE: "pictureInPictureWindow__6341f",
+    Vq: "borderRadius__6341f",
+    R: "hidden__6341f",
+    Di: "resizeHandle__6341f",
+    En: "resizeHandleTopRight__6341f",
+    rG: "resizeHandleTopLeft__6341f",
+    Ue: "resizeHandleBottomRight__6341f",
+    j$: "resizeHandleBottomLeft__6341f",
+    ah: "belowSidebar__6341f"
+}
