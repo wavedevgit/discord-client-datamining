@@ -20,7 +20,7 @@ async function main() {
         async () => {
             // temp disable
             // eslint-disable-next-line no-constant-condition
-            if (false) await downloadAllFiles(build);
+            await downloadAllFiles(build);
         },
         tasks,
     );
