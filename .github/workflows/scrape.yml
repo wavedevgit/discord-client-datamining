@@ -22,10 +22,14 @@ jobs:
                   node-version: '24.x'
             - run: npm init -y
             - name: Run script
-              run: |
-                  npm i && npm run build && npm run start
-                  npx js-beautify "build/chunks/*.js" -r
-                  npx js-beautify "build/assets/*.css" -r
+            - run: |
+                  npm i
+                  npm run build
+                  npm run start
+                  # Beautify JS using all CPU cores
+                  find build/chunks -name '*.js' | xargs -P $(nproc) -I {} npx js-beautify "{}" -r
+                  # Beautify CSS using all CPU cores
+                  find build/assets -name '*.css' | xargs -P $(nproc) -I {} npx js-beautify "{}" -r
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

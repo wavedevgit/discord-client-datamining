@@ -9,12 +9,24 @@ export interface Build {
     webjs?: string;
     builtAt: number;
     buildNumber: number;
-    modules: { js: Record<string, string>; css: Record<string, string> };
+
+    /**
+     * Build version hash
+     */
     versionHash: string;
     /**
      * Entry chunk id (first chunk loaded and exported on __webpack_exports variable)
      */
     entryChunk: string;
+    /**
+     * Modules mappings (module id -> hash, path = [hash].js or [hash].css)
+     */
+    modules: { js: Record<string, string>; css: Record<string, string> };
+    /**
+     * Css files classes names (module id -> classes list)
+     */
+    classes: Record<string, string[]>;
+
     /**
      * Dependency graph
      */

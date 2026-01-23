@@ -1,6 +1,7 @@
 import downloadAllFiles from './tasks/download-all-files.js';
 import downloadWebjs from './tasks/download-webjs.js';
 import getChunks from './tasks/getChunks.js';
+import getClassesNames from './tasks/getClassesNames.js';
 import { Build } from './types.js';
 import { convertMillisHumanReadable, perf, writeFile } from './utils/index.js';
 
@@ -27,6 +28,13 @@ async function main() {
         'get chunks contents',
         async () => {
             await getChunks(build);
+        },
+        tasks,
+    );
+    await perf<void>(
+        'get classes names from css files',
+        async () => {
+            await getClassesNames(build);
         },
         tasks,
     );
