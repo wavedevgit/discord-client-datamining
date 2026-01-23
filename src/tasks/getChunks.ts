@@ -20,7 +20,7 @@ export default async function getChunks(build: Build): Promise<void> {
     await saveChunks(
         await getChunksByCode(
             // use this trick to make web.js use jsonp style
-            `'use strict';(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([['web'], ${build.webjs.slice(chunkStart, chunkEnd)},]);`,
+            `'use strict';(this.webpackChunkdiscord_app = this.webpackChunkdiscord_app || []).push([['web'], ${build.webjs.slice(chunkStart, chunkEnd).replace('var __webpack_modules__=', '').replace(',__webpack_module_cache__={};', '')},]);`,
             'web.js',
             'web.js',
         ),
