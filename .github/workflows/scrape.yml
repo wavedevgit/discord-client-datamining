@@ -24,9 +24,8 @@ jobs:
             - name: Run script
               run: |
                   npm i -g dprint && npm i && npm run build && npm run start
-                  dprint config add g-plane/malva
+                  dprint cache clear || true
                   dprint config add typescript
-                  dprint fmt ./build/assets/*.css
                   dprint fmt ./build/chunks/*.js
             - name: set email
               run: |
