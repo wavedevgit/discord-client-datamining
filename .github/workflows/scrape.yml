@@ -1,0 +1,39 @@
+name: Scrape discord
+
+on:
+    workflow_dispatch:
+
+jobs:
+    build:
+        permissions:
+            contents: write
+            packages: write
+            pull-requests: write
+            issues: write
+            statuses: write
+            deployments: write
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '24.x'
+            - run: npm init -y
+            - name: Run script
+              run: |
+                  npm i -g dprint && npm i && npm run build && npm run start
+                  dprint config add g-plane/malva
+                  dprint config add typescript
+                  dprint fmt ./build/assets/*.css
+                  dprint f mt ./build/chunks/*.js
+            - name: set email
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+            - name: commit
+              run: |
+                  git add --all >> /dev/null
+                  git commit -am "✨New build" >> /dev/null
+                  git push >> /dev/null

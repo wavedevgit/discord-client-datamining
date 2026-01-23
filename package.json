@@ -1,0 +1,32 @@
+{
+    "main": "dist/index.js",
+    "type": "module",
+    "scripts": {
+        "lint": "tsc",
+        "build": "tsc",
+        "start": "node dist/index.js",
+        "prod": "node scripts/run.js --sync cleanup lint build start",
+        "dev:lint": "tsc --watch --preserveWatchOutput",
+        "dev:start": "node --watch dist/index.js",
+        "dev:build": "tsc --watch",
+        "prepare": "husky"
+    },
+    "devDependencies": {
+        "@types/node": "^20.10.6",
+        "@typescript-eslint/eslint-plugin": "^6.16.0",
+        "dprint": "^0.51.1",
+        "esbuild": "^0.23.1",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.1.2",
+        "eslint-plugin-simple-import-sort": "^10.0.0",
+        "eslint-plugin-unused-imports": "^3.0.0",
+        "husky": "^9.1.5"
+    },
+    "dependencies": {
+        "acorn": "^8.15.0",
+        "acorn-walk": "^8.3.4",
+        "chalk": "^5.6.2",
+        "dprint-plugin-typescript": "^0.20.4",
+        "meriyah": "^7.0.0"
+    }
+}

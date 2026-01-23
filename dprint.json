@@ -1,0 +1,12 @@
+{
+    "lineWidth": 80,
+    "typescript": {
+        "quoteStyle": "preferSingle",
+        "binaryExpression.operatorPosition": "sameLine"
+    },
+    "excludes": ["*.json", "src/*", ".github/*", "node_modules/*", "dist/*"],
+    "plugins": [
+        "https://plugins.dprint.dev/typescript-0.95.13.wasm",
+        "https://plugins.dprint.dev/g-plane/malva-v0.15.2.wasm"
+    ]
+}
