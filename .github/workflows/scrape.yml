@@ -23,10 +23,9 @@ jobs:
             - run: npm init -y
             - name: Run script
               run: |
-                  npm i -g dprint && npm i && npm run build && npm run start
-                  dprint cache clear || true
-                  dprint config add typescript
-                  dprint fmt ./build/chunks/*.js
+                  npm i && npm run build && npm run start
+                  npx js-beautify "build/chunks/*.js" -r
+                  npx js-beautify "build/assets/*.css" -r
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
