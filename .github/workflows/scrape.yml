@@ -27,7 +27,7 @@ jobs:
                   dprint config add g-plane/malva
                   dprint config add typescript
                   dprint fmt ./build/assets/*.css
-                  dprint f mt ./build/chunks/*.js
+                  dprint fmt ./build/chunks/*.js
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
