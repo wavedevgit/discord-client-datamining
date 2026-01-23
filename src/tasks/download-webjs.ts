@@ -16,6 +16,7 @@ export default async function downloadWebjs(): Promise<Build> {
         webjs: await getText(asset(html.match(/web\.[a-f0-9]{16}\.js/)[0])),
         entryChunk: '',
         modules: { js: {}, css: {} },
+        classes: {},
         dependencyGraph: {},
     };
 }
