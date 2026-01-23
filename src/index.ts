@@ -18,8 +18,6 @@ async function main() {
     await perf<void>(
         'downloading js files & css files',
         async () => {
-            // temp disable
-            // eslint-disable-next-line no-constant-condition
             await downloadAllFiles(build);
         },
         tasks,
