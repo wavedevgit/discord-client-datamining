@@ -9,7 +9,7 @@ n.d(t, {
 }), n(896048);
 var r = n(64700),
     i = n(131346),
-    l = n(744818),
+    l = n(522437),
     s = n(545059);
 let o = "FRIEND_USER",
     a = "FRIEND_GROUP";
