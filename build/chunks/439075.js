@@ -1,114 +1,115 @@
 /** Chunk was on 36054 **/
 /** chunk id: 439075, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => _
 }), n(896048);
 var a = n(627968),
     l = n(64700),
     r = n(503698),
     i = n.n(r),
-    s = n(216456),
-    o = n(341915),
-    c = n(890687),
-    d = n(792620),
-    u = n(73473),
-    m = n(545986),
-    p = n(203879),
-    h = n(321503),
-    x = n(56853),
-    g = n(515038),
-    f = n(652215),
-    b = n(348655);
+    s = n(341915),
+    o = n(890687),
+    c = n(18437),
+    d = n(590202),
+    u = n(792620),
+    m = n(73473),
+    p = n(545986),
+    h = n(203879),
+    x = n(321503),
+    g = n(56853),
+    f = n(515038),
+    b = n(652215),
+    v = n(348655);
 
-function v(e) {
+function j(e) {
     var t, n;
     let {
         quest: r,
-        className: o,
-        questContent: u,
-        contentPosition: v,
-        rowIndex: j,
-        impressionRef: _,
-        sourceQuestContent: y
-    } = e, [A, C] = l.useState(!1), [S, O] = l.useState([]), T = (0, c.aC)(r), E = l.useMemo(() => (0, d.vv)(r), [r]), N = (0, s.u0)(), w = l.useCallback(() => {
-        C(!0), N({
+        className: s,
+        questContent: m,
+        contentPosition: j,
+        rowIndex: _,
+        impressionRef: y,
+        sourceQuestContent: A
+    } = e, [C, S] = l.useState(!1), [O, T] = l.useState([]), E = (0, o.aC)(r), N = l.useMemo(() => (0, u.vv)(r), [r]), w = (0, c.u0)(), I = l.useCallback(() => {
+        S(!0), w({
             questId: r.id,
-            event: f.HAw.QUEST_HOVER,
+            event: b.HAw.QUEST_HOVER,
             properties: {
-                content_id: u,
-                content_name: (0, s.jO)(u),
-                content_position: v
+                content_id: m,
+                content_name: (0, d.jO)(m),
+                content_position: j
             },
-            sourceQuestContent: y
-        }), E && (0, m.l9)()
-    }, [N, r.id, u, E, y, v]), I = l.useCallback(() => {
-        C(!1), N({
+            sourceQuestContent: A
+        }), N && (0, p.l9)()
+    }, [w, r.id, m, N, A, j]), k = l.useCallback(() => {
+        S(!1), w({
             questId: r.id,
-            event: f.HAw.QUEST_HOVER_OFF,
+            event: b.HAw.QUEST_HOVER_OFF,
             properties: {
-                content_id: u,
-                content_name: (0, s.jO)(u),
-                content_position: v
+                content_id: m,
+                content_name: (0, d.jO)(m),
+                content_position: j
             },
-            sourceQuestContent: y
+            sourceQuestContent: A
         })
-    }, [N, r.id, u, y, v]), k = l.useContext(h.X), {
-        visibilityElementRef: P,
-        almostVisibleInViewport: R
+    }, [w, r.id, m, A, j]), P = l.useContext(x.X), {
+        visibilityElementRef: R,
+        almostVisibleInViewport: D
     } = function(e) {
         let [t, n] = l.useState(!1), a = l.useCallback(e => {
             e.isIntersecting && n(!0)
         }, []);
         return {
-            visibilityElementRef: (0, p.B)(a, {
+            visibilityElementRef: (0, h.B)(a, {
                 root: null != e ? e : null,
                 threshold: 0,
                 rootMargin: "900px 0px 900px 0px"
             }, !0),
             almostVisibleInViewport: t
         }
-    }(null != (t = null == k || null == (n = k.current) ? void 0 : n.getScrollerNode()) ? t : null);
+    }(null != (t = null == P || null == (n = P.current) ? void 0 : n.getScrollerNode()) ? t : null);
     return (0, a.jsxs)("div", {
         id: "quest-tile-".concat(r.id),
         ref: e => {
-            _.current = e, P.current = e
+            y.current = e, R.current = e
         },
-        className: i()(b.k, o),
-        onMouseEnter: w,
-        onMouseLeave: I,
-        onFocus: w,
-        onBlur: I,
-        children: [(0, a.jsx)(x.A, {
+        className: i()(v.k, s),
+        onMouseEnter: I,
+        onMouseLeave: k,
+        onFocus: I,
+        onBlur: k,
+        children: [(0, a.jsx)(g.A, {
             quest: r,
-            isHovering: A,
-            errorHints: S,
-            warningHints: T,
-            isVisibleInViewport: R,
-            sourceQuestContent: y
-        }), (0, a.jsx)(g.A, {
+            isHovering: C,
+            errorHints: O,
+            warningHints: E,
+            isVisibleInViewport: D,
+            sourceQuestContent: A
+        }), (0, a.jsx)(f.A, {
             quest: r,
-            questContent: u,
-            isHovering: A,
-            contentPosition: v,
-            rowIndex: j,
-            onReceiveErrorHints: O,
-            isVisibleInViewport: R,
-            sourceQuestContent: y
+            questContent: m,
+            isHovering: C,
+            contentPosition: j,
+            rowIndex: _,
+            onReceiveErrorHints: T,
+            isVisibleInViewport: D,
+            sourceQuestContent: A
         })]
     })
 }
 
-function j(e) {
-    return (0, a.jsx)(u.R, {
+function _(e) {
+    return (0, a.jsx)(m.R, {
         questOrQuests: e.quest,
         questContent: e.questContent,
         questContentPosition: e.contentPosition,
         questContentRowIndex: e.rowIndex,
-        trackGuildAndChannelMetadata: e.questContent === o.uF.QUESTS_EMBED,
+        trackGuildAndChannelMetadata: e.questContent === s.uF.QUESTS_EMBED,
         sourceQuestContent: e.sourceQuestContent,
         children: t => {
             var n, l;
-            return (0, a.jsx)(v, (n = function(e) {
+            return (0, a.jsx)(j, (n = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         a = Object.keys(n);

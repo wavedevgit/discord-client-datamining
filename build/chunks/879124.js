@@ -1,0 +1,23 @@
+/** Chunk was on 97492 **/
+/** chunk id: 879124, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => i,
+    T: () => l
+});
+var r = n(73153);
+
+function l(e) {
+    r.h.dispatch({
+        type: "VOICE_CATEGORY_EXPAND",
+        guildId: e,
+        expand: !0
+    })
+}
+
+function i(e) {
+    r.h.dispatch({
+        type: "VOICE_CATEGORY_COLLAPSE",
+        guildId: e,
+        expand: !1
+    })
+}

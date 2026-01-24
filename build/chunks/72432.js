@@ -2,7 +2,7 @@
 /** chunk id: 72432, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => N
+    A: () => R
 }), n(896048);
 var r = n(141931),
     i = n(401843),
@@ -62,18 +62,24 @@ function S(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
+let T = new Set(["356943187589201930"]);
 
-function T(e) {
+function C(e) {
     return e.hasOwnProperty("pid")
 }
 
-function C(e) {
+function N(e) {
+    let t = e.id;
+    return null != t && T.has(t)
+}
+
+function w(e) {
     var t;
-    if (T(e)) return {
+    if (C(e)) return {
         pid: e.pid
     };
     let n = (0, y.A)(void 0, e, a.Ay.getRunningGames()),
-        i = !(0, _.isWindows)() || null == n || (null == e ? void 0 : e.id.startsWith(r.fS.CAMERA)),
+        i = !(0, _.isWindows)() || null == n || N(n) || (null == e ? void 0 : e.id.startsWith(r.fS.CAMERA)),
         s = null != n ? n.pid : null;
     return i || null == s ? (null == s && (null == (t = e.id) ? void 0 : t.startsWith("prepicked:")) && (s = E.Ay.getLastPickedContentPID()), {
         sourceId: e.id,
@@ -84,14 +90,14 @@ function C(e) {
         pid: s
     }
 }
-async function N(e, t) {
-    var n, _, E, y, v, I, T, N;
-    let w = p.default.getCurrentUser(),
+async function R(e, t) {
+    var n, _, E, y, v, I, T, C;
+    let N = p.default.getCurrentUser(),
         R = f.A.getVoiceChannelId(),
         P = c.A.getChannel(R),
         D = null == P ? void 0 : P.getGuildId(),
         x = null == (T = u.A.getGuild(D)) ? void 0 : T.premiumTier;
-    if (null == w || null == P || null == R) return [!1, "no user or channel"];
+    if (null == N || null == P || null == R) return [!1, "no user or channel"];
     let L = null;
     if (null == (L = "number" == typeof e ? a.Ay.getGameForPID(e) : e)) return [!1, "no source"];
     if (!d.A.getUseSystemScreensharePicker() && !await s.A.hasPermission(O.iL.SCREEN_RECORDING, {
@@ -109,18 +115,18 @@ async function N(e, t) {
     });
     G !== b.jQ.PRESET_AUTO || V || (G = b.jQ.PRESET_VIDEO);
     let F = G === b.jQ.PRESET_AUTO ? b.jQ.PRESET_VIDEO : G,
-        [B, H] = null != (_ = (0, g.A)(F, w, x)) ? _ : [],
+        [B, H] = null != (_ = (0, g.A)(F, N, x)) ? _ : [],
         Y = null != (E = null != B ? B : null == t ? void 0 : t.resolution) ? E : M,
         W = null != (y = null != H ? H : null == t ? void 0 : t.fps) ? y : k,
         K = null != (v = null == t ? void 0 : t.previewDisabled) ? v : o.uh.getSetting(),
         z = null != (I = null == t ? void 0 : t.soundshareEnabled) ? I : U;
-    return (0, m.A)(F, Y, W, w, x, P) || (G = b.jQ.PRESET_VIDEO, Y = b.on.RESOLUTION_720, W = b.kn.FPS_30), (0, i.Xd)({
+    return (0, m.A)(F, Y, W, N, x, P) || (G = b.jQ.PRESET_VIDEO, Y = b.on.RESOLUTION_720, W = b.kn.FPS_30), (0, i.Xd)({
         preset: G,
         resolution: Y,
         frameRate: W,
         soundshareEnabled: z
-    }), (0, i.XI)(D, R, S(A({}, C(L)), {
-        audioSourceId: (null == (N = L.id) ? void 0 : N.startsWith(r.fS.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
+    }), (0, i.XI)(D, R, S(A({}, w(L)), {
+        audioSourceId: (null == (C = L.id) ? void 0 : C.startsWith(r.fS.CAMERA)) ? null == t ? void 0 : t.audioSourceId : void 0,
         sound: z,
         previewDisabled: K,
         goLiveModalDurationMs: null == t ? void 0 : t.goLiveModalDurationMs,

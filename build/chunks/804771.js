@@ -1,0 +1,6 @@
+/** Chunk was on 31748 **/
+/** chunk id: 804771, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    _: "voiceChannelEffectEmojiContainer__66db8",
+    F: "voiceChannelEffectEmoji__66db8"
+}

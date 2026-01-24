@@ -1,0 +1,8 @@
+/** Chunk was on 36054 **/
+/** chunk id: 957196, original params: e,t,n (module,exports,require) **/
+e.exports = {
+    KE: "panelContainer_fe44d5",
+    Th: "candidatesTable_fe44d5",
+    uI: "candidatesTableContainer_fe44d5",
+    pq: "info_fe44d5"
+}

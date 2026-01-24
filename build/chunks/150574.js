@@ -18,10 +18,10 @@ var r = n(627968),
     f = n(607470),
     m = n(287809),
     A = n(954571),
-    _ = n(216456),
-    b = n(341915),
-    E = n(890687),
-    O = n(579473),
+    _ = n(341915),
+    b = n(890687),
+    E = n(579473),
+    O = n(590202),
     y = n(734736),
     I = n(247455),
     v = n(57718),
@@ -35,7 +35,7 @@ let T = (0, i.memo)(function(e) {
     } = e, [w, L] = (0, i.useState)(!1), [R, D] = (0, i.useState)(24), [M, k] = (0, i.useState)(!1), U = (0, i.useRef)(null), G = (0, i.useRef)(null), V = (0, i.useRef)(null), B = (0, c.bG)([m.default], () => m.default.getCurrentUser()), {
         ref: H,
         height: F = 0
-    } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, E.S5)(null == (l = P.userStatus) ? void 0 : l.claimedAt, {
+    } = (0, p.Ay)(), Y = (0, h.Ay)(), K = (0, b.S5)(null == (l = P.userStatus) ? void 0 : l.claimedAt, {
         month: "numeric",
         day: "numeric"
     }), W = null != (t = null == (T = P.userStatus) ? void 0 : T.claimedTier) ? t : 0, q = P.config.rewards[W], z = (null == q ? void 0 : q.type) === o.l.FRACTIONAL_PREMIUM, Q = (null == q ? void 0 : q.type) === o.l.COLLECTIBLE, X = (null == q ? void 0 : q.type) === o.l.VIRTUAL_CURRENCY, Z = null == q || null == (x = q.collectibleProduct) || null == (j = x.items) ? void 0 : j[0], J = (null == Z ? void 0 : Z.type) === s.R.AVATAR_DECORATION ? Z : null;
@@ -51,9 +51,9 @@ let T = (0, i.memo)(function(e) {
     });
     let $ = (0, u.Mw)(Y),
         ee = (0, i.useMemo)(() => null != P.config.cosponsorMetadata, [P]),
-        et = (0, i.useMemo)(() => (0, O.tW)(P, O.fY.REWARD), [P]),
+        et = (0, i.useMemo)(() => (0, E.tW)(P, E.fY.REWARD), [P]),
         en = w ? F + 8 : 0,
-        er = (0, _.fF)(b.uF.TROPHY_CASE_CARD),
+        er = (0, O.fF)(_.uF.TROPHY_CASE_CARD),
         {
             content_position: ei,
             row_index: el

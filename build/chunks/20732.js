@@ -1,78 +1,79 @@
 /** Chunk was on 36054 **/
 /** chunk id: 20732, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    S: () => d
+    S: () => u
 });
 var a = n(64700),
     l = n(731738),
     r = n(831062),
-    i = n(216456),
-    s = n(260364),
-    o = n(341915),
-    c = n(652215);
+    i = n(260364),
+    s = n(341915),
+    o = n(561844),
+    c = n(590202),
+    d = n(652215);
 
-function d(e) {
+function u(e) {
     let {
         quest: t,
         hasAssetsError: n,
-        isEligibleForQuests: d,
-        isQuestBarVisible: u,
-        isVisibilityAnimationAtRest: m,
-        isLoadingAssets: p,
-        currentQuestVisibleReason: h,
-        shouldShowQuestBar: x,
-        isQuestEnrollmentBlocked: g,
-        impressionRef: f
+        isEligibleForQuests: u,
+        isQuestBarVisible: m,
+        isVisibilityAnimationAtRest: p,
+        isLoadingAssets: h,
+        currentQuestVisibleReason: x,
+        shouldShowQuestBar: g,
+        isQuestEnrollmentBlocked: f,
+        impressionRef: b
     } = e;
     a.useEffect(() => {
         if (n) {
             var e;
-            (0, i.av)({
+            (0, o.av)({
                 questId: t.id,
-                event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
                 properties: {
-                    content_id: o.uF.QUEST_BAR,
-                    content_name: (0, i.jO)(o.uF.QUEST_BAR),
+                    content_id: s.uF.QUEST_BAR,
+                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
                     reason: "asset_loading_error",
-                    impression_id: null == (e = f.current) ? void 0 : e.getId()
+                    impression_id: null == (e = b.current) ? void 0 : e.getId()
                 },
-                sourceQuestContent: o.uF.QUEST_BAR_V2
+                sourceQuestContent: s.uF.QUEST_BAR_V2
             }), r.A.increment({
                 name: l.K.QUEST_CONTENT_RENDERING_FAILURE,
                 tags: ["quest_id:".concat(t.id), "reason:asset_loading_error"]
             })
         }
-    }, [n, f, t.id]), a.useEffect(() => {
-        if (!d) {
+    }, [n, b, t.id]), a.useEffect(() => {
+        if (!u) {
             var e;
-            (0, i.av)({
+            (0, o.av)({
                 questId: t.id,
-                event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
                 properties: {
-                    content_id: o.uF.QUEST_BAR,
-                    content_name: (0, i.jO)(o.uF.QUEST_BAR),
+                    content_id: s.uF.QUEST_BAR,
+                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
                     reason: "not_eligible_for_quest",
-                    impression_id: null == (e = f.current) ? void 0 : e.getId()
+                    impression_id: null == (e = b.current) ? void 0 : e.getId()
                 },
-                sourceQuestContent: o.uF.QUEST_BAR_V2
+                sourceQuestContent: s.uF.QUEST_BAR_V2
             })
         }
-    }, [d, f, t.id]), a.useEffect(() => {
-        if (!u && m && !p) {
+    }, [u, b, t.id]), a.useEffect(() => {
+        if (!m && p && !h) {
             var e;
-            (0, i.av)({
+            (0, o.av)({
                 questId: t.id,
-                event: c.HAw.QUEST_CONTENT_RENDERING_FAILURE,
+                event: d.HAw.QUEST_CONTENT_RENDERING_FAILURE,
                 properties: {
-                    content_id: o.uF.QUEST_BAR,
-                    content_name: (0, i.jO)(o.uF.QUEST_BAR),
-                    reason: h,
-                    impression_id: null == (e = f.current) ? void 0 : e.getId()
+                    content_id: s.uF.QUEST_BAR,
+                    content_name: (0, c.jO)(s.uF.QUEST_BAR),
+                    reason: x,
+                    impression_id: null == (e = b.current) ? void 0 : e.getId()
                 },
-                sourceQuestContent: o.uF.QUEST_BAR_V2
+                sourceQuestContent: s.uF.QUEST_BAR_V2
             })
         }
-    }, [u, m, p, t.id, h, f]), a.useEffect(() => {
-        (!x || g) && s.A.clearTracking(), u && m && !p && !n && d && s.A.stopTracking(t.id)
-    }, [x, g, u, m, p, n, d, t.id])
+    }, [m, p, h, t.id, x, b]), a.useEffect(() => {
+        (!g || f) && i.A.clearTracking(), m && p && !h && !n && u && i.A.stopTracking(t.id)
+    }, [g, f, m, p, h, n, u, t.id])
 }

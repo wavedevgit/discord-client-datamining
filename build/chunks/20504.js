@@ -89,6 +89,7 @@ class _ extends(r = a.PureComponent) {
                     }), p)
                 },
                 children: (0, i.jsx)(c.A, {
+                    className: d.YZ,
                     sliderClassName: a,
                     type: c.A.Types.VOLUME,
                     value: m / h,

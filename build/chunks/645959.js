@@ -2,7 +2,7 @@
 /** chunk id: 645959, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => k
 }), n(896048), n(321073);
 var r, i = n(989349),
     a = n.n(i),
@@ -12,15 +12,16 @@ var r, i = n(989349),
     c = n(695870),
     u = n(380335),
     d = n(157550),
-    f = n(95701),
-    p = n(734057),
-    _ = n(71393),
-    h = n(222823),
-    m = n(543465),
-    g = n(287809),
-    E = n(661191);
+    f = n(493507),
+    p = n(95701),
+    _ = n(734057),
+    h = n(71393),
+    m = n(222823),
+    g = n(543465),
+    E = n(287809),
+    y = n(661191);
 
-function y(e, t, n) {
+function b(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -28,103 +29,114 @@ function y(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let b = e => {
+let O = e => {
         let {
-            lastMessageId: t
+            lastMessageId: t,
+            nudgeTimestamp: n
         } = e;
-        return -E.default.extractTimestamp(t)
+        return null != n ? -n : -y.default.extractTimestamp(t)
     },
-    O = e => {
+    v = e => {
         let {
             isRequest: t,
             isFavorite: n
         } = e;
         return t ? [] : [n ? "FAVORITE" : "DEFAULT"]
     },
-    v = new o.J(O, b);
+    A = new o.J(v, O);
 
-function A() {
-    v.clear()
+function I() {
+    A.clear()
 }
 
-function I(e) {
+function S(e) {
     var t, n;
-    let r = null != (t = null != (n = h.Ay.lastMessageId(e.id)) ? n : e.lastMessageId) ? t : e.id,
+    let r = null != (t = null != (n = m.Ay.lastMessageId(e.id)) ? n : e.lastMessageId) ? t : e.id,
         i = e.isMessageRequestTimestamp;
     if (null != i) {
         let e = a()(i).valueOf(),
-            t = E.default.fromTimestamp(e);
-        return E.default.compare(r, t) > 0 ? r : t
+            t = y.default.fromTimestamp(e);
+        return y.default.compare(r, t) > 0 ? r : t
     }
     return r
 }
 
-function S(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(e);
+function T(e) {
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : S(e);
     return {
         channelId: e.id,
         lastMessageId: t,
         isFavorite: !1,
-        isRequest: u.A.isMessageRequest(e.id) || d.A.isSpam(e.id)
+        isRequest: u.A.isMessageRequest(e.id) || d.A.isSpam(e.id),
+        nudgeTimestamp: f.A.getNudgeTimestamp(e.id)
     }
 }
 
-function T() {
-    v.clear(), Object.values(p.A.getMutablePrivateChannels()).forEach(e => {
-        v.set(e.id, S(e))
+function C() {
+    A.clear(), Object.values(_.A.getMutablePrivateChannels()).forEach(e => {
+        A.set(e.id, T(e))
     })
-}
-
-function C(e) {
-    let {
-        channel: t
-    } = e;
-    if (!(0, f.Gw)(t.type) || t.id === c.E) return !1;
-    v.set(t.id, S(t))
 }
 
 function N(e) {
     let {
-        channels: t
+        channel: t
     } = e;
-    t.forEach(e => {
-        ((0, f.Gw)(e.type) || v.has(e.id)) && v.set(e.id, S(e))
-    })
+    if (!(0, p.Gw)(t.type) || t.id === c.E) return !1;
+    A.set(t.id, T(t))
 }
 
 function w(e) {
     let {
-        channel: t
+        channels: t
     } = e;
-    return v.delete(t.id)
+    t.forEach(e => {
+        ((0, p.Gw)(e.type) || A.has(e.id)) && A.set(e.id, T(e))
+    })
 }
 
 function R(e) {
     let {
-        channelId: t,
-        message: n
+        channel: t
     } = e;
-    if (!v.has(t)) return !1;
-    let r = p.A.getChannel(t);
-    return null != r && v.set(t, S(r, n.id))
+    return A.delete(t.id)
 }
 
 function P(e) {
-    let t = e.guild.id;
-    return v.delete(t)
+    let {
+        channelId: t,
+        message: n
+    } = e;
+    if (!A.has(t)) return !1;
+    let r = _.A.getChannel(t);
+    return null != r && A.set(t, T(r, n.id))
 }
 
-function D() {
-    let e = p.A.getMutablePrivateChannels();
-    for (let t in e) v.set(t, S(e[t]))
+function D(e) {
+    let {
+        channelId: t
+    } = e;
+    if (!A.has(t)) return !1;
+    let n = _.A.getChannel(t);
+    return null != n && A.set(t, T(n))
 }
-let x = (() => {
+
+function x(e) {
+    let t = e.guild.id;
+    return A.delete(t)
+}
+
+function L() {
+    let e = _.A.getMutablePrivateChannels();
+    for (let t in e) A.set(t, T(e[t]))
+}
+let j = (() => {
     let e = [],
         t = [],
         n = [];
     return () => {
-        let r = v.values("FAVORITE"),
-            i = v.values("DEFAULT");
+        let r = A.values("FAVORITE"),
+            i = A.values("DEFAULT");
         return (e !== r || t !== i) && (n = [], r.forEach(e => {
             let {
                 channelId: t
@@ -138,19 +150,19 @@ let x = (() => {
         }), t = i), n
     }
 })();
-class L extends(r = s.Ay.Store) {
+class M extends(r = s.Ay.Store) {
     initialize() {
-        this.waitFor(p.A, _.A, u.A, h.Ay, d.A, m.Ay, g.default), this.syncWith([m.Ay, u.A], T)
+        this.waitFor(_.A, h.A, u.A, m.Ay, d.A, g.Ay, E.default, f.A), this.syncWith([g.Ay, u.A], C)
     }
     getPrivateChannelIds() {
-        return x()
+        return j()
     }
     getSortedChannels() {
-        return [v.values("FAVORITE"), v.values("DEFAULT")]
+        return [A.values("FAVORITE"), A.values("DEFAULT")]
     }
     serializeForOverlay() {
         let e = {};
-        return v.values().forEach(t => {
+        return A.values().forEach(t => {
             let {
                 channelId: n,
                 lastMessageId: r
@@ -159,17 +171,18 @@ class L extends(r = s.Ay.Store) {
         }), e
     }
 }
-y(L, "displayName", "PrivateChannelSortStore");
-let j = new L(l.h, {
-    CONNECTION_OPEN: T,
-    CONNECTION_OPEN_SUPPLEMENTAL: T,
-    OVERLAY_INITIALIZE: T,
-    CACHE_LOADED: D,
-    CACHE_LOADED_LAZY: D,
-    CHANNEL_UPDATES: N,
-    CHANNEL_CREATE: C,
-    CHANNEL_DELETE: w,
-    MESSAGE_CREATE: R,
-    GUILD_CREATE: P,
-    LOGOUT: A
+b(M, "displayName", "PrivateChannelSortStore");
+let k = new M(l.h, {
+    CONNECTION_OPEN: C,
+    CONNECTION_OPEN_SUPPLEMENTAL: C,
+    OVERLAY_INITIALIZE: C,
+    CACHE_LOADED: L,
+    CACHE_LOADED_LAZY: L,
+    CHANNEL_UPDATES: w,
+    CHANNEL_CREATE: N,
+    CHANNEL_DELETE: R,
+    MESSAGE_CREATE: P,
+    REPLY_NUDGE_SET: D,
+    GUILD_CREATE: x,
+    LOGOUT: I
 })

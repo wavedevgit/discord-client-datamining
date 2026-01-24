@@ -1,21 +1,22 @@
 /** Chunk was on 67299 **/
 /** chunk id: 645627, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    HJ: () => c,
-    Ln: () => l
+    HJ: () => d,
+    Ln: () => c
 }), n(896048);
 var r = n(64700),
     a = n(975807),
     i = n(829219),
-    s = n(216456),
-    o = n(341915);
+    s = n(341915),
+    o = n(18437),
+    l = n(590202);
 
-function l(e) {
+function c(e) {
     let {
         isClaimingReward: t,
         isFetchingRewardCode: n,
         questContent: a,
-        quest: s,
+        quest: o,
         rewardCode: l,
         preview: c
     } = e, [d, u] = r.useState(!1), [m, f] = r.useState(!1), p = r.useCallback(async (e, t, n) => {
@@ -33,8 +34,8 @@ function l(e) {
     }, []);
     return r.useEffect(() => {
         var e, r;
-        !0 === c || null != l || d || t || m || n || (u(!1), (null == (e = s.userStatus) ? void 0 : e.claimedAt) == null ? p(s.id, o.pY.CROSS_PLATFORM, a) : (null == (r = s.userStatus) ? void 0 : r.claimedAt) != null && C(s.id))
-    }, [p, C, d, t, m, n, a, s, l, c]), {
+        !0 === c || null != l || d || t || m || n || (u(!1), (null == (e = o.userStatus) ? void 0 : e.claimedAt) == null ? p(o.id, s.pY.CROSS_PLATFORM, a) : (null == (r = o.userStatus) ? void 0 : r.claimedAt) != null && C(o.id))
+    }, [p, C, d, t, m, n, a, o, l, c]), {
         claimCode: p,
         fetchCode: C,
         hasError: d,
@@ -42,27 +43,27 @@ function l(e) {
     }
 }
 
-function c(e) {
+function d(e) {
     let {
         quest: t,
         redemptionLink: n,
         questContent: i,
-        questContentPosition: o,
-        sourceQuestContent: l
-    } = e, c = (0, s.Ut)();
+        questContentPosition: s,
+        sourceQuestContent: c
+    } = e, d = (0, o.Ut)();
     return r.useCallback(() => {
-        null != n && (c({
+        null != n && (d({
             questId: t.id,
             questContent: i,
-            questContentCTA: s.Cy.REDEEM_REWARD,
-            questContentPosition: o,
-            sourceQuestContent: l
-        }), c({
+            questContentCTA: l.Cy.REDEEM_REWARD,
+            questContentPosition: s,
+            sourceQuestContent: c
+        }), d({
             questId: t.id,
             questContent: i,
-            questContentCTA: s.Cy.VISIT_REDEMPTION_LINK,
-            questContentPosition: o,
-            sourceQuestContent: l
+            questContentCTA: l.Cy.VISIT_REDEMPTION_LINK,
+            questContentPosition: s,
+            sourceQuestContent: c
         }), (0, a.A)(n))
-    }, [t.id, i, o, l, c, n])
+    }, [t.id, i, s, c, d, n])
 }

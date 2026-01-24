@@ -10,11 +10,11 @@ var a = n(627968),
     s = n(397927),
     o = n(793574),
     c = n(979286),
-    d = n(216456),
-    u = n(906822),
-    m = n(341915),
-    p = n(714510),
-    h = n(890687),
+    d = n(341915),
+    u = n(714510),
+    m = n(890687),
+    p = n(590202),
+    h = n(971649),
     x = n(651892),
     g = n(901406),
     f = n(92246),
@@ -72,10 +72,10 @@ function w(e) {
         fullWidth: !0,
         onClick: () => {
             var e;
-            let a = (null == (e = t.userStatus) ? void 0 : e.enrolledAt) == null ? d.Cy.ACCEPT_QUEST : d.Cy.WATCH_VIDEO;
+            let a = (null == (e = t.userStatus) ? void 0 : e.enrolledAt) == null ? p.Cy.ACCEPT_QUEST : p.Cy.WATCH_VIDEO;
             (0, y.d5)({
                 quest: t,
-                questContent: m.uF.QUEST_BAR_V2,
+                questContent: d.uF.QUEST_BAR_V2,
                 sourceQuestContent: n,
                 sourceQuestContentCTA: a
             })
@@ -88,13 +88,13 @@ let I = e => {
         let {
             quest: t,
             sourceQuestContent: n
-        } = e, l = (0, u.go)(), i = (0, x.wr)(t);
+        } = e, l = (0, h.go)(), i = (0, x.wr)(t);
         return (0, a.jsx)(r.$nd, {
             size: "sm",
             fullWidth: !0,
             onClick: () => (0, g.pu)(t, {
-                content: m.uF.QUEST_BAR_V2,
-                ctaContent: d.Cy.OPEN_GAME_LINK,
+                content: d.uF.QUEST_BAR_V2,
+                ctaContent: p.Cy.OPEN_GAME_LINK,
                 impressionId: l,
                 sourceQuestContent: n
             }),
@@ -106,14 +106,14 @@ let I = e => {
         let {
             quest: n,
             sourceQuestContent: l
-        } = e, i = null == (t = (0, u.vU)()) ? void 0 : t.getId();
+        } = e, i = null == (t = (0, h.vU)()) ? void 0 : t.getId();
         return (0, a.jsx)(r.$nd, {
             fullWidth: !0,
             onClick: () => (0, g.se)({
                 quest: n
             }, {
-                content: m.uF.QUEST_BAR_V2,
-                ctaContent: d.Cy.CONNECT_CONSOLE,
+                content: d.uF.QUEST_BAR_V2,
+                ctaContent: p.Cy.CONNECT_CONSOLE,
                 impressionId: i,
                 sourceQuestContent: l
             }),
@@ -124,11 +124,11 @@ let I = e => {
     P = e => {
         let {
             quest: t
-        } = e, n = (0, p.NA)({
+        } = e, n = (0, u.NA)({
             quest: t
         }), {
             launchInGameActivity: l
-        } = (0, h.zW)(t);
+        } = (0, m.zW)(t);
         return (0, v.vA)(t) ? (0, a.jsx)(r.$nd, {
             fullWidth: !0,
             variant: "primary",
@@ -169,8 +169,8 @@ let I = e => {
         let {
             quest: n,
             ctaLabel: s,
-            onClick: d,
-            questContent: u = m.uF.QUEST_BAR_V2,
+            onClick: u,
+            questContent: m = d.uF.QUEST_BAR_V2,
             sourceQuestContent: p
         } = e, h = function(e, t) {
             if (null == e) return {};
@@ -190,16 +190,16 @@ let I = e => {
             return r
         }(e, ["quest", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]), x = (0, _.ix)({
             quest: n,
-            questContent: u,
+            questContent: m,
             sourceQuestContent: p
         }), g = l.useCallback(e => {
             var t;
-            null == d || d(e), (0, f.ks)(n.config) && (null == (t = n.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.Cz)({
+            null == u || u(e), (0, f.ks)(n.config) && (null == (t = n.userStatus) ? void 0 : t.claimedAt) != null ? (0, c.Cz)({
                 tab: S.G2.ORBS,
                 analyticsLocations: [],
                 analyticsSource: o.A.QUEST_HOME_PAGE
             }) : x()
-        }, [d, n.config, null == (t = n.userStatus) ? void 0 : t.claimedAt, x]);
+        }, [u, n.config, null == (t = n.userStatus) ? void 0 : t.claimedAt, x]);
         return (0, a.jsx)(r.$nd, N(E({
             fullWidth: !0,
             onClick: g,
@@ -218,32 +218,32 @@ let I = e => {
             activeScreen: o,
             popoutTargetElementRef: c
         } = e, {
-            quest: d,
-            onGameSheetOpen: u,
+            quest: u,
+            onGameSheetOpen: m,
             onGameSheetClose: p,
             taskDetails: h
-        } = l.useContext(C.T), x = (null == (t = d.userStatus) ? void 0 : t.completedAt) != null, g = (0, b.vv)(d), f = o !== m.X0.SELECT && !i && !s, j = null;
+        } = l.useContext(C.T), x = (null == (t = u.userStatus) ? void 0 : t.completedAt) != null, g = (0, b.vv)(u), f = o !== d.X0.SELECT && !i && !s, j = null;
         return x ? j = (0, a.jsx)(D, {
-            quest: d,
+            quest: u,
             sourceQuestContent: n
         }) : g ? j = (0, a.jsx)(w, {
-            quest: d,
+            quest: u,
             sourceQuestContent: n,
             taskDetails: h
-        }) : (0, v.vA)(d) ? j = (0, a.jsx)(P, {
-            quest: d
-        }) : o === m.X0.CONSOLE && r ? j = (0, a.jsx)(k, {
-            quest: d,
+        }) : (0, v.vA)(u) ? j = (0, a.jsx)(P, {
+            quest: u
+        }) : o === d.X0.CONSOLE && r ? j = (0, a.jsx)(k, {
+            quest: u,
             sourceQuestContent: n
-        }) : f && (0, v.ui)(d) ? j = (0, a.jsx)(R, {
-            quest: d,
+        }) : f && (0, v.ui)(u) ? j = (0, a.jsx)(R, {
+            quest: u,
             sourceQuestContent: n,
             taskDetails: h,
             popoutTargetElementRef: c,
-            onGameSheetOpened: u,
+            onGameSheetOpened: m,
             onGameSheetClosed: p
         }) : f && (j = (0, a.jsx)(I, {
-            quest: d,
+            quest: u,
             sourceQuestContent: n
         })), null == j ? null : (0, a.jsx)("div", {
             className: T.lO,

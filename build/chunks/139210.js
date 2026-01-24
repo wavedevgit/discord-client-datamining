@@ -9,9 +9,9 @@ var a = n(627968),
     i = n.n(r),
     s = n(108531),
     o = n(397927),
-    c = n(216456),
-    d = n(906822),
-    u = n(341915),
+    c = n(341915),
+    d = n(590202),
+    u = n(971649),
     m = n(901406),
     p = n(270045),
     h = n(57718),
@@ -23,7 +23,7 @@ var a = n(627968),
     j = n(116224);
 let _ = (0, s.animated)(h.Ay),
     y = () => {
-        let e = (0, d.go)(),
+        let e = (0, u.go)(),
             {
                 expansionSpring: t
             } = l.useContext(g.PW),
@@ -37,17 +37,17 @@ let _ = (0, s.animated)(h.Ay),
             } = l.useContext(f.T),
             S = l.useCallback(() => {
                 (0, x.Zc)(C, {
-                    content: u.uF.QUEST_BAR_V2,
-                    ctaContent: c.Cy.OPEN_DISCLOSURE,
-                    sourceQuestContent: u.uF.QUEST_BAR_V2
+                    content: c.uF.QUEST_BAR_V2,
+                    ctaContent: d.Cy.OPEN_DISCLOSURE,
+                    sourceQuestContent: c.uF.QUEST_BAR_V2
                 })
             }, [C]),
             O = l.useCallback(() => {
                 (0, m.pu)(C, {
-                    content: u.uF.QUEST_BAR_V2,
-                    ctaContent: c.Cy.OPEN_GAME_LINK,
+                    content: c.uF.QUEST_BAR_V2,
+                    ctaContent: d.Cy.OPEN_GAME_LINK,
                     impressionId: e,
-                    sourceQuestContent: u.uF.QUEST_BAR_V2
+                    sourceQuestContent: c.uF.QUEST_BAR_V2
                 })
             }, [e, C]),
             T = y && A,
@@ -114,11 +114,11 @@ let _ = (0, s.animated)(h.Ay),
                     onOpen: n,
                     onClose: r,
                     onSelect: h,
-                    questContent: u.uF.QUEST_BAR_V2,
+                    questContent: c.uF.QUEST_BAR_V2,
                     quest: C,
                     shouldShowDisclosure: !0,
                     showShareLink: !0,
-                    sourceQuestContent: u.uF.QUEST_BAR_V2,
+                    sourceQuestContent: c.uF.QUEST_BAR_V2,
                     children: e => {
                         var t, n;
                         return (0, a.jsx)(o.DUT, (t = function(e) {

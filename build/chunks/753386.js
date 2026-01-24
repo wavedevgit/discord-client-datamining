@@ -14,9 +14,9 @@ n.d(t, {
 var r = n(412703),
     i = n(544180),
     a = n(829219),
-    s = n(216456),
-    o = n(859703),
-    l = n(405670),
+    s = n(859703),
+    o = n(405670),
+    l = n(561844),
     c = n(710969),
     u = n(792620),
     d = n(652215),
@@ -55,12 +55,12 @@ function y(e) {
         questId: r,
         sourceQuestContent: a,
         videoSessionId: c
-    } = e, u = l.Ay.getState().getVideoProgress(r);
+    } = e, u = o.Ay.getState().getVideoProgress(r);
     if (null == u) return;
-    let f = o.A.getQuest(r);
+    let f = s.A.getQuest(r);
     null != f && (null == (t = f.userStatus) ? void 0 : t.enrolledAt) != null && (null == (n = f.userStatus) ? void 0 : n.completedAt) == null && p(f, u.maxTimestampSec);
     let _ = g(u.maxTimestampSec, u.duration);
-    (0, s.av)({
+    (0, l.av)({
         questId: r,
         event: d.HAw.QUEST_VIDEO_PROGRESSED,
         properties: {
@@ -69,7 +69,7 @@ function y(e) {
             video_session_id: c
         },
         sourceQuestContent: a
-    }), (0, s.av)({
+    }), (0, l.av)({
         questId: r,
         event: d.HAw.QUEST_VIDEO_MODAL_CLOSED,
         properties: {

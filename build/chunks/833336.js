@@ -1,0 +1,213 @@
+/** Chunk was on web.js **/
+/** chunk id: 833336, original params: e,t,n (module,exports,require) **/
+"use strict";
+let r, i, a, s, o, l, c, u, d, f, p, _;
+n.d(t, {
+    A: () => H
+});
+var h, m = n(575593),
+    g = n(311907),
+    E = n(73153),
+    y = n(652215);
+
+function b(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+let O = y.XlH.CLOSED,
+    v = {};
+
+function A(e) {
+    p = e.guild, O = y.XlH.OPEN, v = {}, _ = e.source
+}
+
+function I() {
+    O = y.XlH.CLOSED, v = {}, _ = void 0
+}
+
+function S() {
+    O = y.XlH.SUBMITTING, v = {}
+}
+
+function T(e) {
+    p = e.guild, v = {}
+}
+
+function C(e) {
+    var t;
+    if (O !== y.XlH.SUBMITTING) return !1;
+    O = y.XlH.OPEN, v = null != (t = e.errors) ? t : {}
+}
+
+function N(e) {
+    O = y.XlH.OPEN, v = e.errors
+}
+
+function w(e) {
+    let {
+        avatar: t
+    } = e;
+    r = t
+}
+
+function R(e) {
+    let {
+        item: t
+    } = e;
+    t.type === m.R.AVATAR_DECORATION ? i = t.value : t.type === m.R.PROFILE_EFFECT ? s = t.value : t.type === m.R.NAMEPLATE && (a = t.value)
+}
+
+function P(e) {
+    let {
+        banner: t
+    } = e;
+    o = t
+}
+
+function D(e) {
+    let {
+        bio: t
+    } = e;
+    l = t
+}
+
+function x(e) {
+    let {
+        pronouns: t
+    } = e;
+    c = t
+}
+
+function L(e) {
+    let {
+        nickname: t
+    } = e;
+    u = t
+}
+
+function j(e) {
+    let {
+        themeColors: t
+    } = e;
+    d = t
+}
+
+function M(e) {
+    let {
+        displayNameStyles: t
+    } = e;
+    f = t
+}
+
+function k() {
+    U(), G(), v = {}, O = y.XlH.OPEN
+}
+
+function U() {
+    r = void 0, u = void 0, i = void 0, a = void 0, f = void 0
+}
+
+function G() {
+    o = void 0, l = void 0, c = void 0, d = void 0, s = void 0
+}
+
+function V() {
+    v = {}
+}
+
+function F() {
+    k(), I()
+}
+class B extends(h = g.Ay.Store) {
+    getFormState() {
+        return O
+    }
+    getErrors() {
+        return v
+    }
+    showNotice() {
+        return void 0 !== r || void 0 !== i || void 0 !== s || void 0 !== o || void 0 !== l || void 0 !== c || void 0 !== u || void 0 !== d || void 0 !== a || void 0 !== f
+    }
+    getIsSubmitDisabled() {
+        return void 0 !== l && l.length > y.NA2
+    }
+    getPendingAvatar() {
+        return r
+    }
+    getPendingAvatarDecoration() {
+        return i
+    }
+    getPendingProfileEffect() {
+        return s
+    }
+    getPendingBanner() {
+        return o
+    }
+    getPendingBio() {
+        return l
+    }
+    getPendingNickname() {
+        return u
+    }
+    getPendingPronouns() {
+        return c
+    }
+    getPendingAccentColor() {
+        return u
+    }
+    getPendingThemeColors() {
+        return d
+    }
+    getPendingNameplate() {
+        return a
+    }
+    getPendingDisplayNameStyles() {
+        return f
+    }
+    getAllPending() {
+        return {
+            pendingAvatar: r,
+            pendingAvatarDecoration: i,
+            pendingProfileEffect: s,
+            pendingBanner: o,
+            pendingBio: l,
+            pendingPronouns: c,
+            pendingNickname: u,
+            pendingThemeColors: d,
+            pendingNameplate: a,
+            pendingDisplayNameStyles: f
+        }
+    }
+    getGuild() {
+        return p
+    }
+    getSource() {
+        return _
+    }
+}
+b(B, "displayName", "GuildIdentitySettingsStore");
+let H = new B(E.h, {
+    GUILD_IDENTITY_SETTINGS_INIT: A,
+    GUILD_IDENTITY_SETTINGS_RESET_AND_CLOSE_FORM: F,
+    GUILD_IDENTITY_SETTINGS_SET_GUILD: T,
+    GUILD_IDENTITY_SETTINGS_SUBMIT: S,
+    GUILD_IDENTITY_SETTINGS_SUBMIT_FAILURE: C,
+    USER_PROFILE_UPDATE_FAILURE: N,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_AVATAR: w,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_COLLECTIBLES_ITEM: R,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_DISPLAY_NAME_STYLES: M,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_BANNER: P,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_BIO: D,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_PRONOUNS: x,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_NICKNAME: L,
+    GUILD_IDENTITY_SETTINGS_SET_PENDING_THEME_COLORS: j,
+    GUILD_IDENTITY_SETTINGS_RESET_PENDING_MEMBER_CHANGES: U,
+    GUILD_IDENTITY_SETTINGS_RESET_PENDING_PROFILE_CHANGES: G,
+    GUILD_IDENTITY_SETTINGS_RESET_ALL_PENDING: k,
+    GUILD_IDENTITY_SETTINGS_SUBMIT_SUCCESS: k,
+    GUILD_IDENTITY_SETTINGS_CLEAR_ERRORS: V
+})

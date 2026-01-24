@@ -28,8 +28,10 @@ let l = {
                 showSubtext: h,
                 showDisabledItems: m,
                 showColoredItems: g,
-                dangerItemColor: E
-            } = e, [y, b] = i.useState(!0), [O, v] = i.useState(!1), [A, I] = i.useState("text"), [S, T] = i.useState("cozy"), [C, N] = i.useState(!0), w = e => (0, r.jsxs)(s.W1t, {
+                showLoading: E,
+                showTrailingIndicator: y,
+                dangerItemColor: b
+            } = e, [O, v] = i.useState(!0), [A, I] = i.useState(!1), [S, T] = i.useState("text"), [C, N] = i.useState("cozy"), [w, R] = i.useState(!0), P = e => (0, r.jsxs)(s.W1t, {
                 navId: "menu-story",
                 "aria-label": "Story Menu",
                 variant: t,
@@ -47,14 +49,14 @@ let l = {
                     label: "Pin Message",
                     icon: p ? s.tsw : void 0,
                     subtext: h ? "Pin this message to the channel" : void 0,
-                    hint: (0, r.jsx)(s.y$y, {
-                        type: s.y$y.Type.PULSING_ELLIPSIS
-                    }),
+                    badge: "beta",
+                    loading: E,
                     action: () => {}
                 }), (0, r.jsx)(s.Drp, {
                     id: "copy",
                     label: "Copy Message Link",
                     icon: p ? s.TdU : void 0,
+                    badge: "new",
                     action: () => {}
                 }), m && (0, r.jsx)(s.Drp, {
                     id: "disabled",
@@ -67,7 +69,10 @@ let l = {
                         id: "brand-item",
                         label: "Brand Item",
                         color: "brand",
-                        icon: p ? s.Zes : void 0,
+                        trailingIndicator: y ? {
+                            type: "icon",
+                            icon: s.I9m
+                        } : void 0,
                         action: () => {}
                     }), (0, r.jsx)(s.Drp, {
                         id: "premium-item",
@@ -105,20 +110,20 @@ let l = {
                     children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.sLh, {
                         id: "notifications",
                         label: "Enable Notifications Enable Notifications Enable Notifications",
-                        checked: y,
-                        action: () => b(!y)
+                        checked: O,
+                        action: () => v(!O)
                     }), (0, r.jsx)(s.sLh, {
                         id: "mute",
                         label: "Mute Channel",
-                        checked: O,
-                        action: () => v(!O)
+                        checked: A,
+                        action: () => I(!A)
                     })]
                 }), d && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.fPC, {
                         id: "switch-notifications",
                         label: "Push Notifications",
-                        checked: y,
-                        action: () => b(!y)
+                        checked: O,
+                        action: () => v(!O)
                     })]
                 }), u && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
@@ -127,14 +132,14 @@ let l = {
                             id: "radio-text",
                             group: "channel-type",
                             label: "Text Channel Text Channel Text Channel Text Channel Text Channel Text Channel ",
-                            checked: "text" === A,
-                            action: () => I("text")
+                            checked: "text" === S,
+                            action: () => T("text")
                         }), (0, r.jsx)(s.iDA, {
                             id: "radio-voice",
                             group: "channel-type",
                             label: "Voice Channel",
-                            checked: "voice" === A,
-                            action: () => I("voice")
+                            checked: "voice" === S,
+                            action: () => T("voice")
                         })]
                     }), (0, r.jsx)(s.bXX, {}), (0, r.jsxs)(s.rXV, {
                         label: "View Mode",
@@ -142,14 +147,14 @@ let l = {
                             id: "radio-cozy",
                             group: "view-mode",
                             label: "Cozy",
-                            checked: "cozy" === S,
-                            action: () => T("cozy")
+                            checked: "cozy" === C,
+                            action: () => N("cozy")
                         }), (0, r.jsx)(s.iDA, {
                             id: "radio-compact",
                             group: "view-mode",
                             label: "Compact",
-                            checked: "compact" === S,
-                            action: () => T("compact")
+                            checked: "compact" === C,
+                            action: () => N("compact")
                         })]
                     })]
                 }), l && (0, r.jsxs)(r.Fragment, {
@@ -172,30 +177,30 @@ let l = {
                 }), (0, r.jsx)(s.bXX, {}), (0, r.jsx)(s.Drp, {
                     id: "delete",
                     label: "Delete Message",
-                    color: E,
+                    color: b,
                     icon: p ? s.ucK : void 0,
                     action: () => {}
                 })]
-            }), R = i.useRef(null);
+            }), D = i.useRef(null);
             return (0, r.jsxs)("div", {
                 className: o.k,
-                children: [!C && (0, r.jsx)(a.$nd, {
+                children: [!w && (0, r.jsx)(a.$nd, {
                     text: "Open Menu",
-                    onClick: () => N(!0)
+                    onClick: () => R(!0)
                 }), (0, r.jsx)(s.YNO, {
                     renderPopout: e => {
                         let {
                             closePopout: t
                         } = e;
-                        return w(t)
+                        return P(t)
                     },
                     position: "bottom",
                     align: "center",
                     shouldShow: !0,
-                    targetElementRef: R,
-                    onRequestClose: () => N(!1),
+                    targetElementRef: D,
+                    onRequestClose: () => R(!1),
                     children: () => (0, r.jsx)("div", {
-                        ref: R,
+                        ref: D,
                         style: {
                             width: 1,
                             height: 1,
@@ -273,6 +278,16 @@ let l = {
                 type: "boolean",
                 label: "Show Colored Items",
                 defaultValue: !0
+            },
+            showLoading: {
+                type: "boolean",
+                label: "Show Loading",
+                defaultValue: !1
+            },
+            showTrailingIndicator: {
+                type: "boolean",
+                label: "Show Trailing Indicator",
+                defaultValue: !1
             },
             dangerItemColor: {
                 type: "select",

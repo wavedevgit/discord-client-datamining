@@ -35,8 +35,8 @@ var n = i(627968),
     V = i(985018),
     f = i(895431),
     h = i(458017),
-    M = i(120499),
-    X = i(684399),
+    X = i(120499),
+    M = i(684399),
     U = i(446115);
 let Y = () => {
         let t = (0, o.q)((0, A.Ay)()),
@@ -63,7 +63,7 @@ let Y = () => {
                             }), (0, n.jsx)("div", {
                                 className: h.zN
                             }), (0, n.jsx)("img", {
-                                src: t ? X : M,
+                                src: t ? M : X,
                                 alt: "Cloudflare",
                                 width: 103,
                                 height: 15

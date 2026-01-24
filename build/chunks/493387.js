@@ -161,9 +161,8 @@ function j(e) {
             user: i,
             voiceState: s,
             speaking: o,
-            voiceDb: c = -1 / 0,
-            latched: u,
-            ringing: p
+            latched: c,
+            ringing: u
         } = e;
         return (0, r.jsx)(O, {
             className: m.Wp,
@@ -180,9 +179,8 @@ function j(e) {
                     muted: null != (t = null == s ? void 0 : s.isVoiceMuted()) && t,
                     deafen: null != (n = null == s ? void 0 : s.isVoiceDeafened()) && n,
                     speaking: o,
-                    voiceDb: c,
-                    latched: u,
-                    ringing: p
+                    latched: c,
+                    ringing: u
                 }, e.id)
             })
         }, i.id)

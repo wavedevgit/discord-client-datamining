@@ -14,8 +14,8 @@ var a = t(627968),
     u = t(10088),
     h = t(976860),
     m = t(829219),
-    o = t(216456),
-    g = t(341915),
+    o = t(341915),
+    g = t(561844),
     x = t(545986),
     N = t(654487),
     p = t(652215),
@@ -42,11 +42,11 @@ function f(e) {
         }, [t, e]), s
     }(l);
     r.useEffect(() => {
-        T || (null == t ? ((0, o.av)({
+        T || (null == t ? ((0, g.av)({
             questId: l,
             event: p.HAw.QUEST_SHARE_LINK_DEEP_LINKED_INTO_DESKTOP_CLIENT,
             properties: {},
-            sourceQuestContent: g.uF.QUEST_HOME_DESKTOP
+            sourceQuestContent: o.uF.QUEST_HOME_DESKTOP
         }), _.A.openNativeAppModal("quests", p.e$_.DEEP_LINK, {
             type: E.XK.QUEST_HOME,
             params: {
