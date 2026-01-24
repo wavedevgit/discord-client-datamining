@@ -35,5 +35,5 @@ jobs:
             - name: commit
               run: |
                   git add --all >> /dev/null
-                  git commit -am "✨New build" >> /dev/null
+                  git commit -am "✨New build $(node getBuildInfo.js)" >> /dev/null
                   git push >> /dev/null
