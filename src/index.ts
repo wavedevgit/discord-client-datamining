@@ -3,6 +3,8 @@ import downloadWebjs from './tasks/download-webjs.js';
 import getChunks from './tasks/getChunks.js';
 import getClassesNames from './tasks/getClassesNames.js';
 import getDepGraph from './tasks/getDepGraph.js';
+import getEndpoints from './tasks/getEndpoints.js';
+import getIntlStrings from './tasks/getIntlStrings.js';
 import { Build } from './types.js';
 import { convertMillisHumanReadable, perf, writeFile } from './utils/index.js';
 
@@ -32,6 +34,23 @@ async function main() {
         },
         tasks,
     );
+
+    await perf<void>(
+        'get en-us intl strings',
+        async () => {
+            await getIntlStrings(build);
+        },
+        tasks,
+    );
+
+    await perf<void>(
+        'get endpoints',
+        async () => {
+            await getEndpoints(build);
+        },
+        tasks,
+    );
+
     await perf<void>(
         'get classes names from css files',
         async () => {
@@ -40,6 +59,10 @@ async function main() {
         tasks,
     );
 
+    build.entryChunk = build.webjs.match(
+        /__webpack_exports__=__webpack_require__\((?<entryChunk>\d+)\)/,
+    ).groups?.entryChunk;
+
     await perf<void>(
         'generate dependency graph',
         async () => {
@@ -47,10 +70,6 @@ async function main() {
         },
         tasks,
     );
-
-    build.entryChunk = build.webjs.match(
-        /__webpack_exports__=__webpack_require__\((?<entryChunk>\d+)\)/,
-    ).groups?.entryChunk;
 
     delete build.webjs;
     await writeFile('./build/build.json', build);

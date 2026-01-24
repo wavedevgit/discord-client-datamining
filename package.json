@@ -5,6 +5,7 @@
         "lint": "tsc",
         "build": "tsc",
         "start": "node dist/index.js",
+        "scrape": "npm run build && npm run start && npx js-beautify 'build/chunks/*.js' -r && npx js-beautify 'build/assets/*.css' -r",
         "prod": "node scripts/run.js --sync cleanup lint build start",
         "dev:lint": "tsc --watch --preserveWatchOutput",
         "dev:start": "node --watch dist/index.js",

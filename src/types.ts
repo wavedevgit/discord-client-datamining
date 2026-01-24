@@ -26,6 +26,15 @@ export interface Build {
      * Css files classes names (module id -> classes list)
      */
     classes: Record<string, string[]>;
+    /**
+     * Intl strings (only for en-US)
+     */
+    intl: Record<string, string>;
+
+    /**
+     * Endpoints
+     */
+    endpoints: Record<string, string>;
 
     /**
      * Dependency graph

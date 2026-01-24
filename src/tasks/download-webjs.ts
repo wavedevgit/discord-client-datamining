@@ -17,6 +17,8 @@ export default async function downloadWebjs(): Promise<Build> {
         entryChunk: '',
         modules: { js: {}, css: {} },
         classes: {},
+        intl: {},
+        endpoints: {},
         dependencyGraph: {},
     };
 }
