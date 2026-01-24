@@ -1,6 +1,0 @@
-/** Chunk was on 38985 **/
-/** chunk id: 794174, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    U: () => r
-}), n(896048);
-var l, r = ((l = {}).MESSAGE = "message", l.FORUM_POST = "forum_post", l.MESSAGE_BUNDLE = "message_bundle", l.CONVERSATION = "conversation", l)

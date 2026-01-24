@@ -1,7 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 993767, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(860511),
-    i = n(339626),
-    a = r.WeakMap;
-e.exports = i(a) && /native code/.test(String(a))

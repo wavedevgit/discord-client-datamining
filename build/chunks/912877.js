@@ -1,8 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 912877, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = "u" > typeof Symbol && Symbol,
-    i = n(640847);
-e.exports = function() {
-    return "function" == typeof r && "function" == typeof Symbol && "symbol" == typeof r("foo") && "symbol" == typeof Symbol("bar") && i()
-}

@@ -1,5 +1,0 @@
-/** Chunk was on 58652 **/
-/** chunk id: 888791, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    N: "headerContainer_bdedd9"
-}
