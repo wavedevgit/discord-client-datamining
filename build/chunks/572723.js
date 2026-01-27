@@ -15,8 +15,8 @@ var i = n(627968),
     m = n(817363),
     v = n(565150),
     p = n(521502),
-    f = n(851023),
-    h = n(349688),
+    h = n(851023),
+    f = n(349688),
     x = n(914905),
     g = n(101555),
     b = n(386976),
@@ -69,7 +69,7 @@ function A(e) {
                 return "Linux"
         }
         return ""
-    }((0, O.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ev] = r.useState(!1), [ep, ef] = r.useState(!1), [eh, ex] = r.useState(!1), [eg, eb] = r.useState(null);
+    }((0, O.getOS)())), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(""), [em, ev] = r.useState(!1), [ep, eh] = r.useState(!1), [ef, ex] = r.useState(!1), [eg, eb] = r.useState(null);
     r.useEffect(() => {
         let e = Math.random().toString(16).slice(2);
         s.Bo.get({
@@ -79,8 +79,8 @@ function A(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "6eff3fdf0ae393bbff154a13ddeaa41501577b91" !== e.body.hash) {
-                let e = new Date("1769546963399"),
+            if (null != e.body && "1983491cabdd7cbce94a49fa8bcde0c94da0aa8d" !== e.body.hash) {
+                let e = new Date("1769547635648"),
                     t = new Date,
                     n = (0, w.Tf)(t, e);
                 n.hours > 6 && eb(n.hours)
@@ -114,7 +114,7 @@ function A(e) {
         var e, t;
         if (ex(!1), "" === M || "" === z || null == W) return void ev(!0);
         let r = null == G || null == (t = G.features) ? void 0 : t.find(e => (0, S.wY)(e) === J);
-        ef(!0), ev(!1);
+        eh(!0), ev(!1);
         let l = (0, k.B)(U.map(e => {
                 let {
                     item: t
@@ -140,7 +140,7 @@ function A(e) {
             } : {
                 overridePlatformInformation: Q
             }, l).catch(() => ex(!0));
-        ef(!1), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), D(), (0, d.mMO)(async () => {
+        eh(!1), null != a && a.ok ? (ej && window.open(a.body.permalink_url, "_blank"), D(), (0, d.mMO)(async () => {
             let {
                 default: e
             } = await n.e("71256").then(n.bind(n, 369323));
@@ -415,12 +415,12 @@ function A(e) {
                             className: C.oh,
                             children: [(0, i.jsxs)("div", {
                                 children: [(0, i.jsx)(x.J, {
-                                    size: h.L.SMALL,
+                                    size: f.L.SMALL,
                                     upload: e
                                 }), (0, i.jsx)("div", {
                                     className: C.eA,
                                     children: (0, i.jsx)(g.Ay, {
-                                        children: (0, i.jsx)(f.A, {
+                                        children: (0, i.jsx)(h.A, {
                                             tooltip: E.intl.string(E.t.vN7REz),
                                             onClick: () => {
                                                 var t;
@@ -441,7 +441,7 @@ function A(e) {
                             })]
                         }, e.id))
                     })
-                }) : null, eh ? (0, i.jsx)(d.Text, {
+                }) : null, ef ? (0, i.jsx)(d.Text, {
                     color: "text-feedback-critical",
                     variant: "text-sm/normal",
                     children: "Something went wrong, try again!"
