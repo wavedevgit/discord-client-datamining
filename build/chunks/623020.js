@@ -13,9 +13,9 @@ var r = n(627968),
     c = n(608805),
     u = n(666468),
     d = n(810498),
-    f = n(494230),
-    p = n(369280),
-    _ = n(658679),
+    f = n(367921),
+    p = n(494230),
+    _ = n(369280),
     h = n(45938),
     m = n(927578),
     g = n(937008),
@@ -74,8 +74,8 @@ function U() {
         purchaseType: c,
         invoicePreview: u,
         inReverseTrial: d,
-        isEligibleForTrial: f,
-        userTrialOffer: p
+        isEligibleForTrial: p,
+        userTrialOffer: _
     } = (0, E.P5)(), {
         isGift: h
     } = (0, g.Pv)(), y = (0, C.W)(r, n), b = i.useMemo(() => {
@@ -84,7 +84,7 @@ function U() {
             if ((0, m.z4)(o.id)) return P.DA
         }
         return []
-    }, [o]), O = i.useMemo(() => c === D.VV.ONE_TIME ? null == s && null != n || null != l : null == u || !h && null != y && c === D.VV.SUBSCRIPTION && f && !y.canRedeemTrial(), [c, s, n, l, u, h, y, f]), v = (0, m.J$)(a.paymentSourceId), A = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, _.R)({
+    }, [o]), O = i.useMemo(() => c === D.VV.ONE_TIME ? null == s && null != n || null != l : null == u || !h && null != y && c === D.VV.SUBSCRIPTION && p && !y.canRedeemTrial(), [c, s, n, l, u, h, y, p]), v = (0, m.J$)(a.paymentSourceId), A = c === D.VV.SUBSCRIPTION && null == o ? L.intl.string(L.t.YScQSF) : (0, f.R)({
         purchaseType: c,
         plan: o,
         premiumSubscription: e,
@@ -97,18 +97,18 @@ function U() {
     });
     return {
         paymentSource: y,
-        isEligibleForTrial: f,
+        isEligibleForTrial: p,
         planGroup: b,
         disablePurchase: O,
         buttonText: A,
-        userTrialOffer: p
+        userTrialOffer: _
     }
 }
 
 function G(e) {
     var t, n;
     let a, {
-            handleStepChange: _,
+            handleStepChange: f,
             trialId: m,
             trialFooterMessageOverride: C,
             reviewWarningMessage: M,
@@ -183,13 +183,13 @@ function G(e) {
         })
     }, [ee]);
     let ek = i.useCallback((e, t, n) => {
-            Z(e), null != t && ep(t), null != n && e_(n), _(y.pn.CONFIRM, {
+            Z(e), null != t && ep(t), null != n && e_(n), f(y.pn.CONFIRM, {
                 fulfillment: {
                     subscription: e,
                     entitlements: t
                 }
             })
-        }, [_, Z, ep, e_]),
+        }, [f, Z, ep, e_]),
         eU = null != en && P.Er.has(en.id) && null != ew && !(0, u.j2)(ew) ? Error(L.intl.string(L.t["2ik8ih"])) : null,
         eG = i.useRef(null),
         [eF, eV] = i.useState(null),
@@ -206,9 +206,9 @@ function G(e) {
         ez = ev && ef === D.VV.ONE_TIME,
         eq = ez || (eK ? eW && eu : eu),
         eZ = (0, d.px)(en, ev, eS),
-        eQ = i.useCallback(() => eK ? void _(y.pn.SKU_SELECT) : ey ? void _(y.pn.ADD_PAYMENT_STEPS) : eZ ? void _(y.pn.SELECT_FREE_SKU) : ez ? _(y.pn.GIFT_CUSTOMIZATION) : _(y.pn.PLAN_SELECT), [_, eK, ez, eZ, ey]),
+        eQ = i.useCallback(() => eK ? void f(y.pn.SKU_SELECT) : ey ? void f(y.pn.ADD_PAYMENT_STEPS) : eZ ? void f(y.pn.SELECT_FREE_SKU) : ez ? f(y.pn.GIFT_CUSTOMIZATION) : f(y.pn.PLAN_SELECT), [f, eK, ez, eZ, ey]),
         eX = () => {
-            _(y.pn.ADD_PAYMENT_STEPS)
+            f(y.pn.ADD_PAYMENT_STEPS)
         },
         eJ = eD;
     eE && (eJ = !0);
@@ -217,7 +217,7 @@ function G(e) {
         hasLegalTermsFlash: eC,
         legalTermsNodeRef: eG,
         onPaymentSourceChange: e => ea(null != e ? e.id : null),
-        handlePaymentSourceAdd: () => _(y.pn.ADD_PAYMENT_STEPS)
+        handlePaymentSourceAdd: () => f(y.pn.ADD_PAYMENT_STEPS)
     });
     else if (null == q || em || ev) {
         o()(null != en, "Expected plan to be selected");
@@ -229,7 +229,7 @@ function G(e) {
             priceOptions: $,
             currencies: X,
             onCurrencyChange: e => ei(e),
-            handlePaymentSourceAdd: () => _(y.pn.ADD_PAYMENT_STEPS),
+            handlePaymentSourceAdd: () => f(y.pn.ADD_PAYMENT_STEPS),
             setHasAcceptedTerms: ed,
             legalTermsNodeRef: eG,
             hasLegalTermsFlash: eC,
@@ -242,8 +242,8 @@ function G(e) {
             isDiscount: eH,
             handleClose: K
         };
-        a = z ? (0, r.jsx)(S._, j({}, e)) : (0, r.jsx)(f.A, j({}, e))
-    } else o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(p.A, {
+        a = z ? (0, r.jsx)(S._, j({}, e)) : (0, r.jsx)(p.A, j({}, e))
+    } else o()(null != en, "Expected plan to be selected"), a = (0, r.jsx)(_.A, {
         premiumSubscription: q,
         paymentSources: J,
         priceOptions: $,
