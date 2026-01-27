@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 155286, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => E,
+    A: () => x,
     e: () => y
 });
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
-    l = n(311907),
+    i = n.n(a),
+    s = n(158954),
+    o = n(311907),
     c = n(397927),
     u = n(775602),
     d = n(998304),
-    f = n(854987),
-    p = n(40333),
-    _ = n(398225),
+    m = n(854987),
+    f = n(40333),
+    p = n(398225),
     h = n(532294),
-    m = n(79020);
+    b = n(79020);
 let g = {
     [h.P7.WELCOME]: "Entry",
     [h.P7.MESSAGES]: "Messages",
@@ -31,14 +30,14 @@ let g = {
     [h.P7.END]: "Entry"
 };
 
-function E(e) {
+function x(e) {
     let {
         slide: t,
         className: n
-    } = e, a = i.useContext(f.P), _ = (0, p.A)((0, c.rdh)(a.primaryColor).hex()), h = (0, d.j5)(_), E = (0, l.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, a = l.useContext(m.P), p = (0, f.A)((0, c.rdh)(a.primaryColor).hex()), h = (0, d.j5)(p), x = (0, o.bG)([u.A], () => u.A.useReducedMotion);
     return (0, r.jsx)("div", {
-        className: s()(m.k, n),
-        children: (0, r.jsx)(o.UR3, {
+        className: i()(b.k, n),
+        children: (0, r.jsx)(s.UR3, {
             artboard: g[t],
             dataBinding: {
                 iconColor: {
@@ -47,7 +46,7 @@ function E(e) {
                     b: h.b,
                     a: 255 * h.a
                 },
-                reducedMotion: E
+                reducedMotion: x
             },
             fit: "layout",
             withReducedMotion: "short-loop"
@@ -59,10 +58,10 @@ function y(e) {
     let {
         slide: t,
         className: n
-    } = e, i = (0, _.vy)();
-    return (0, r.jsx)(_.vw, {
-        spring: i,
-        children: (0, r.jsx)(E, {
+    } = e, l = (0, p.vy)();
+    return (0, r.jsx)(p.vw, {
+        spring: l,
+        children: (0, r.jsx)(x, {
             slide: t,
             className: n
         })

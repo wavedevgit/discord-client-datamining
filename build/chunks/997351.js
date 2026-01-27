@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(544028),
+    o = n(397927),
+    s = n(544028),
     l = n(967198),
     c = n(287809),
     u = n(255438),
@@ -67,7 +67,7 @@ function A(e) {
     let {
         onClose: t,
         handleLearnMore: n
-    } = e, y = O(e, ["onClose", "handleLearnMore"]), v = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = (0, a.bG)([o.A], () => o.A.theme), I = (0, a.bG)([l.A], () => l.A.getGuildId()), S = A === m.NJ8.LIGHT ? "light" : "dark", T = (0, r.jsx)("img", {
+    } = e, y = O(e, ["onClose", "handleLearnMore"]), v = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = (0, a.bG)([s.A], () => s.A.theme), I = (0, a.bG)([l.A], () => l.A.getGuildId()), S = A === m.NJ8.LIGHT ? "light" : "dark", T = (0, r.jsx)("img", {
         className: E.Qw,
         alt: "File Upload Nitro Perk",
         src: "https://cdn.discordapp.com/assets/premium/roadblocks/file_upload_".concat(S, "_v2.png")
@@ -83,7 +83,7 @@ function A(e) {
         }
     }), w = (0, r.jsx)("div", {
         className: E.rf,
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(o.Text, {
             variant: "text-sm/medium",
             children: N
         })

@@ -4,14 +4,14 @@
 n.d(t, {
     Lj: () => f,
     VS: () => c,
-    ds: () => o,
+    ds: () => s,
     sE: () => u,
     t4: () => l
 });
 var r = n(600975),
     i = n(335934),
     a = n(688151);
-let s = (0, r.C)({
+let o = (0, r.C)({
         kind: "user",
         id: "2024-03_content_inventory_memberlist_and_ranker",
         label: "Enables the memberlist content feed",
@@ -33,7 +33,7 @@ let s = (0, r.C)({
             }
         }]
     }),
-    o = (0, r.C)({
+    s = (0, r.C)({
         kind: "user",
         id: "2025-04_hotwheels_holdout_the_sequel",
         label: "Tracking a holdout hashed to member list experiment for data readouts",
@@ -69,7 +69,7 @@ let s = (0, r.C)({
 function c(e) {
     let {
         enabled: t
-    } = s.getCurrentConfig({
+    } = o.getCurrentConfig({
         location: e
     }, {
         autoTrackExposure: !0
@@ -81,7 +81,7 @@ function u(e) {
     let {
         enabled: t,
         impressionCappingEnabled: n
-    } = s.getCurrentConfig({
+    } = o.getCurrentConfig({
         location: e
     }, {
         autoTrackExposure: !1

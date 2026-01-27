@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 457404, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     e: () => u
@@ -15,7 +15,7 @@ let c = e => {
             closePopout: n
         } = e;
         return (0, r.jsx)(s.W1t, {
-            "data-menu-all-icons": !0,
+            "data-menu-migrated": !0,
             navId: "notification-actions",
             onClose: n,
             onSelect: n,
@@ -24,6 +24,10 @@ let c = e => {
                 id: "delete",
                 label: o.intl.string(o.t.oyYWHE),
                 icon: s.ucK,
+                leadingAccessory: {
+                    type: "icon",
+                    icon: s.ucK
+                },
                 action: async () => {
                     await (0, a.VP)(t)
                 }

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(435371),
-    s = n(732955),
-    o = n(344731),
+    o = n(732955),
+    s = n(344731),
     l = n(576705),
     c = n(203982),
     u = n(184761),
@@ -18,14 +18,14 @@ var i = n(311907),
     p = n(652215),
     _ = n(985018),
     h = n(111314);
-let m = [d.oU.NORMAL, d.oU.SIDEBAR, d.oU.CREATE_FORUM_POST];
+let m = [d.oU.NORMAL, d.oU.SIDEBAR];
 
 function g(e) {
     let {
         disabled: t,
         channel: n,
         inputType: d
-    } = e, g = (0, u.p)(o.T);
+    } = e, g = (0, u.p)(s.T);
     return (0, i.bG)([l.A], () => n.isPrivate() || l.A.can(p.xBc.ATTACH_FILES, n) && l.A.can(p.xBc.SEND_MESSAGES, n)) && m.includes(d) ? (0, r.jsx)(a.m_, {
         shouldShow: !t && null != g,
         keyboardShortcut: g,
@@ -40,7 +40,7 @@ function g(e) {
                     channelId: n.id
                 })
             },
-            children: (0, r.jsx)(s.xfq, {
+            children: (0, r.jsx)(o.xfq, {
                 size: "refresh_sm",
                 color: "currentColor"
             })

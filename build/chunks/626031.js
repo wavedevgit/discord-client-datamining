@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(397927),
     c = n(475743),
     u = n(626584),
@@ -66,7 +66,7 @@ let y = new u.A("BalanceCounter"),
         var t, n;
         let {
             value: a,
-            onSetDigitCount: s,
+            onSetDigitCount: o,
             onValueChange: c,
             onValueReached: u,
             targetTotalCounterTime: d = 3e3
@@ -104,7 +104,7 @@ let y = new u.A("BalanceCounter"),
                 },
                 delay: A,
                 onStart: () => {
-                    s(O(E))
+                    o(O(E))
                 },
                 onRest: () => {
                     if (_(p + 1), u(), !b && null !== m.current && null !== h.current) {
@@ -114,11 +114,11 @@ let y = new u.A("BalanceCounter"),
                             delta: g - h.current
                         })
                     }
-                    s(O(g)), h.current = g
+                    o(O(g)), h.current = g
                 }
             }),
             S = O(Math.max(null != a ? a : 0, I.get()));
-        return (0, r.jsx)(o.animated.div, {
+        return (0, r.jsx)(s.animated.div, {
             style: {
                 width: "calc(".concat(S, "ch)")
             },
@@ -130,10 +130,10 @@ let y = new u.A("BalanceCounter"),
         let {
             value: n,
             className: a
-        } = e, o = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
+        } = e, s = g(e, ["value", "className"]), u = null === n, [d, f] = (0, i.useState)(null), p = (0, i.useMemo)(() => O(n), [n]), h = null != (t = (0, c.A)(p)) ? t : 0, E = (0, i.useMemo)(() => v(h, p, d), [h, p, d]), y = "".concat(u ? 0 : E, "ch");
         return (0, r.jsx)(l.Text, {
             variant: "text-md/semibold",
-            className: s()(_.S, u ? void 0 : _.r, a),
+            className: o()(_.S, u ? void 0 : _.r, a),
             style: {
                 width: y,
                 opacity: u ? "0" : 1
@@ -143,6 +143,6 @@ let y = new u.A("BalanceCounter"),
                     e !== d && f(e)
                 },
                 value: n
-            }, o))
+            }, s))
         })
     }

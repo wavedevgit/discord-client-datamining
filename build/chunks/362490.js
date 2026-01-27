@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(64700),
     i = n(868714),
     a = n(975807),
-    s = n(474951),
-    o = n(954571),
+    o = n(474951),
+    s = n(954571),
     l = n(307600),
     c = n(312083),
     u = n(975460),
@@ -24,7 +24,7 @@ var h = function(e) {
 let m = ["rpc", "web"];
 
 function g(e) {
-    var t, n, i, a, s, o;
+    var t, n, i, a, o, s;
     let l = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
         {
             debug: c = !1
@@ -46,16 +46,16 @@ function g(e) {
         connectionApp: f,
         chosenFlow: null != (n = null == _ ? void 0 : _.type) ? n : null,
         debug: c ? {
-            isSubscribedToAuthorizeRequest: null != (i = null == p || null == (s = p.context) ? void 0 : s.isSubscribedToAuthorizeRequest) && i,
+            isSubscribedToAuthorizeRequest: null != (i = null == p || null == (o = p.context) ? void 0 : o.isSubscribedToAuthorizeRequest) && i,
             oauth2Token: m,
             hasConnectionEntrypointUrl: (null == f ? void 0 : f.connectionEntrypointUrl) != null,
-            validFlows: null != (a = null == p || null == (o = p.availableFlows) ? void 0 : o.map(e => e.type)) ? a : []
+            validFlows: null != (a = null == p || null == (s = p.availableFlows) ? void 0 : s.map(e => e.type)) ? a : []
         } : void 0
     }
 }
 
 function E(e) {
-    return s.A.listenIsSubscribed(e)
+    return o.A.listenIsSubscribed(e)
 }
 
 function y(e, t) {
@@ -63,7 +63,7 @@ function y(e, t) {
     let u = (0, i.A)(null != (n = null == t ? void 0 : t.allowedFlows) ? n : m),
         d = (0, f.A)(E, r.useCallback(() => e.map(e => ({
             application: e,
-            isSubscribedToAuthorizeRequest: s.A.isSubscribed(e.id, _)
+            isSubscribedToAuthorizeRequest: o.A.isSubscribed(e.id, _)
         })), [e]));
     return r.useMemo(() => d.map(e => {
         let t = [];
@@ -74,7 +74,7 @@ function y(e, t) {
                     let r = c.A.getConfig({
                         location: "useStartAuthorize"
                     }).enabled;
-                    s.A.dispatchToSubscriptions(_, t => t.socket.application.id === e.application.id, {}), null == (n = t.onConfirm) || n.call(t), r && o.default.track(p.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
+                    o.A.dispatchToSubscriptions(_, t => t.socket.application.id === e.application.id, {}), null == (n = t.onConfirm) || n.call(t), r && s.default.track(p.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
                         location_stack: t.analyticsLocations,
                         application_id: e.application.id,
                         flow_type: "rpc"
@@ -94,7 +94,7 @@ function y(e, t) {
                             var e;
                             (0, a.A)(n), null == t || null == (e = t.onConfirm) || e.call(t)
                         }
-                    }), r && o.default.track(p.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
+                    }), r && s.default.track(p.HAw.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, {
                         location_stack: t.analyticsLocations,
                         application_id: e.application.id,
                         flow_type: "web"

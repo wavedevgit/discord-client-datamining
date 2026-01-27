@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(939249),
-    s = n(250614);
+    o = n(250614);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -51,7 +51,7 @@ let d = e => {
     let {
         tag: t = "div",
         children: n,
-        className: o,
+        className: s,
         style: c,
         focusProps: d,
         onClick: f,
@@ -72,7 +72,7 @@ let d = e => {
     } = e, C = i.useRef(null), N = null != S ? S : C;
     return (0, r.jsxs)(t, {
         ref: N,
-        className: o,
+        className: s,
         style: c,
         onClick: f,
         onMouseEnter: p,
@@ -86,7 +86,7 @@ let d = e => {
             focusProps: l({
                 ringTarget: N
             }, d),
-            className: s.K,
+            className: o.K,
             "aria-label": A,
             "aria-describedby": I,
             onClick: e => {

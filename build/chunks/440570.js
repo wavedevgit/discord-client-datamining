@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(158954),
-    o = n(788868),
+    o = n(158954),
+    s = n(788868),
     l = n(985018),
     c = n(465052);
 
@@ -81,16 +81,16 @@ function m(e) {
         } = e,
         h = _(e, ["premiumType", "size", "className", "tag"]);
     switch (n) {
-        case o.PremiumTypes.TIER_0:
+        case s.PremiumTypes.TIER_0:
             t = l.intl.string(l.t["t9uG/o"]);
             break;
-        case o.PremiumTypes.TIER_1:
+        case s.PremiumTypes.TIER_1:
             t = l.intl.string(l.t.FSOz78);
             break;
-        case o.PremiumTypes.TIER_2:
+        case s.PremiumTypes.TIER_2:
             t = l.intl.string(l.t.lG6a5x)
     }
-    return (0, r.jsx)(s.EYj, p(d({
+    return (0, r.jsx)(o.EYj, p(d({
         tag: f,
         variant: "display-".concat(i),
         className: a()(u, c.Q)

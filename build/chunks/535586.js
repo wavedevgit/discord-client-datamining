@@ -8,14 +8,14 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(696451),
-    s = n(543465),
-    o = n(287809);
+    o = n(543465),
+    s = n(287809);
 
 function l(e, t) {
     var n;
-    let r = null == (n = o.default.getCurrentUser()) ? void 0 : n.id,
-        l = s.Ay.isSuppressEveryoneEnabled(t),
-        c = s.Ay.isSuppressRolesEnabled(t),
+    let r = null == (n = s.default.getCurrentUser()) ? void 0 : n.id,
+        l = o.Ay.isSuppressEveryoneEnabled(t),
+        c = o.Ay.isSuppressRolesEnabled(t),
         u = null != e.mentions && e.mentions.some(e => e.id === r),
         d = null == t || null == r ? null : a.Ay.getMember(t, r),
         f = null != e.mention_roles && null != d && null != d.roles && e.mention_roles.some(e => d.roles.includes(e));
@@ -55,7 +55,7 @@ function E(e) {
 }
 class y extends r.Ay.Store {
     initialize() {
-        this.waitFor(a.Ay, s.Ay, o.default)
+        this.waitFor(a.Ay, o.Ay, s.default)
     }
     getGlobalStats() {
         let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);

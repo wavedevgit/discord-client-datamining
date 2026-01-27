@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(652896),
     i = n(616356),
     a = n(961350),
-    s = n(162605),
-    o = n(487329),
+    o = n(162605),
+    s = n(487329),
     l = n(601900),
     c = n(548370);
 
@@ -37,11 +37,11 @@ let f = 10,
     p = {
         getActiveErrors: () => (0, c.D$)() ? i.A.getAllActiveStreams().reduce((e, t) => {
             var n;
-            let i = null == (n = s.A.getRTCConnection((0, r._z)(t))) ? void 0 : n.getMediaEngineConnectionId();
+            let i = null == (n = o.A.getRTCConnection((0, r._z)(t))) ? void 0 : n.getMediaEngineConnectionId();
             if (null == i || t.ownerId === a.default.getId()) return e;
             let u = (0, c.xA)(i, t.ownerId);
             return null == u || (100 * u.short.packetLossRate > f || 100 * u.long.packetLossRate > f) && e.push(d({
-                type: o.iy.STREAM_VIEW_HIGH_PACKET_LOSS
+                type: s.iy.STREAM_VIEW_HIGH_PACKET_LOSS
             }, (0, l.id)((0, r._z)(t)))), e
         }, []) : null,
         makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)

@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 664654, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     J: () => c,
-    Z: () => l
+    Z: () => o
 });
 var r = n(64700),
     i = n(311907),
-    a = n(803306),
-    s = n(287809),
-    o = n(851746);
-let l = 3;
+    l = n(803306),
+    a = n(287809),
+    s = n(851746);
+let o = 3;
 
 function c() {
-    let e = (0, i.yK)([o.A], () => o.A.getSentUserIds()),
-        t = (0, i.yK)([s.default], () => e.map(e => s.default.getUser(e)).filter(e => null != e));
+    let e = (0, i.yK)([s.A], () => s.A.getSentUserIds()),
+        t = (0, i.yK)([a.default], () => e.map(e => a.default.getUser(e)).filter(e => null != e));
     return r.useEffect(() => {
         e.forEach(e => {
-            (0, a.wz)(e)
+            (0, l.wz)(e)
         })
     }, [e]), {
         referralSentUsers: t,
-        hasSentAllReferrals: e.length === l,
-        refreshAt: (0, i.bG)([o.A], () => o.A.getRefreshAt())
+        hasSentAllReferrals: e.length === o,
+        refreshAt: (0, i.bG)([s.A], () => s.A.getRefreshAt())
     }
 }

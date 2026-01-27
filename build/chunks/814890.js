@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(835245),
     i = n(317097),
     a = n(155718),
-    s = n(626584),
-    o = n(337591),
+    o = n(626584),
+    s = n(337591),
     l = n(731068),
     c = n(486020),
     u = n(403362),
@@ -23,7 +23,7 @@ var r = n(835245),
     f = n(489414),
     p = n(630446),
     _ = n(985018);
-let h = new s.A("InteractionComponentUtils"),
+let h = new o.A("InteractionComponentUtils"),
     m = (e, t) => ({
         id: e.id,
         name: e.name,
@@ -36,7 +36,7 @@ let h = new s.A("InteractionComponentUtils"),
     }),
     g = e => (null == e ? void 0 : e.errorCode) === 429 ? _.intl.string(_.t.fitPBS) : _.intl.string(_.t.VCsUJu),
     E = (e, t, n) => {
-        let r = (null == e ? void 0 : e.data.interactionType) === a.G4.MESSAGE_COMPONENT && (null == e ? void 0 : e.state) === o.m.FAILED ? e.data.componentId : null;
+        let r = (null == e ? void 0 : e.data.interactionType) === a.G4.MESSAGE_COMPONENT && (null == e ? void 0 : e.state) === s.m.FAILED ? e.data.componentId : null;
         if (null != (null != r ? A(n, r) : null)) {
             var i;
             return null != (i = null == t ? void 0 : t.interactionError) ? i : g(e)
@@ -188,7 +188,7 @@ function w(e) {
 }
 
 function R(e, t) {
-    var n, r, s, o, c, p, _, g, E, y, O, v;
+    var n, r, o, s, c, p, _, g, E, y, O, v;
     if (!b(e.type)) return null;
 
     function A(e, n) {
@@ -236,11 +236,11 @@ function R(e, t) {
             };
         case a.I5.USER_SELECT:
             return {
-                type: a.I5.USER_SELECT, id: P(t), customId: e.custom_id, disabled: e.disabled, required: null != (s = e.required) && s, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+                type: a.I5.USER_SELECT, id: P(t), customId: e.custom_id, disabled: e.disabled, required: null != (o = e.required) && o, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
             };
         case a.I5.ROLE_SELECT:
             return {
-                type: a.I5.ROLE_SELECT, id: P(t), customId: e.custom_id, disabled: e.disabled, required: null != (o = e.required) && o, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
+                type: a.I5.ROLE_SELECT, id: P(t), customId: e.custom_id, disabled: e.disabled, required: null != (s = e.required) && s, placeholder: e.placeholder, minValues: e.min_values, maxValues: e.max_values, defaultValues: e.default_values
             };
         case a.I5.MENTIONABLE_SELECT:
             return {

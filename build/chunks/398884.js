@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 398884, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Sn: () => o
+    Sn: () => s
 }), n(311907), n(450510);
 var r = n(71393),
     i = n(287809),
-    a = n(927578),
-    s = n(652215);
+    l = n(927578),
+    a = n(652215);
 
-function o() {
-    let e = r.A.getGuildCount() >= s.qlD,
-        t = a.Ay.canUseIncreasedGuildCap(i.default.getCurrentUser());
+function s() {
+    let e = r.A.getGuildCount() >= a.qlD,
+        t = l.Ay.canUseIncreasedGuildCap(i.default.getCurrentUser());
     return e && !t
 }

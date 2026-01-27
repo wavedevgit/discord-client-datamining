@@ -6,8 +6,8 @@ n.d(t, {
 }), n(65821);
 var r, i = n(311907),
     a = n(73153),
-    s = n(158032),
-    o = n(830382),
+    o = n(158032),
+    s = n(830382),
     l = n(136857),
     c = n(739508),
     u = n(71532),
@@ -71,7 +71,7 @@ function O(e) {
         var r;
         let e = null;
         (null == (r = t.metadata) ? void 0 : r.billing_error_code) === l.tG.BILLING_INSUFFICIENT_FUNDS && (e = l.tG.BILLING_INSUFFICIENT_FUNDS), m = new l.Ay(f.intl.string(f.t.khEaRI), e)
-    } else m = null, a.h.wait(s.ET), a.h.wait(o.T3)
+    } else m = null, a.h.wait(o.ET), a.h.wait(s.T3)
 }
 class v extends(r = i.Ay.Store) {
     get isAwaitingAuthentication() {

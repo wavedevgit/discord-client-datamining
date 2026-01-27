@@ -9,7 +9,7 @@ var r = n(572808),
     i = n(588703),
     a = n(985018);
 
-function s(e) {
+function o(e) {
     return {
         userId: e.user_id,
         position: e.position,
@@ -17,7 +17,7 @@ function s(e) {
     }
 }
 
-function o(e) {
+function s(e) {
     return {
         id: e.id,
         claimedBy: e.claimed_by
@@ -27,8 +27,8 @@ function o(e) {
 function l(e) {
     return {
         roomId: e.room_id,
-        participants: e.participants.map(s),
-        seats: e.seats.map(o)
+        participants: e.participants.map(o),
+        seats: e.seats.map(s)
     }
 }
 

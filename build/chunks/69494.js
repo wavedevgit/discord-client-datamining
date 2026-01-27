@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(156312),
+    o = n(397927),
+    s = n(156312),
     l = n(166532),
     c = n(329268);
 
@@ -22,7 +22,7 @@ function u(e) {
         breadcrumbs: u,
         startedPaymentFlowWithPaymentSourcesRef: d,
         enablePremiumBrandRefresh: f
-    } = (0, o.P5)();
+    } = (0, s.P5)();
     if (f || null == u || 0 === u.length) return null;
     let p = u.flatMap(e => {
         let t = e.useBreadcrumbLabel(n);
@@ -37,7 +37,7 @@ function u(e) {
         return !n || n && (t || r)
     }), (0, r.jsx)("div", {
         className: a()("breadcrumb", c.i, t),
-        children: (0, r.jsx)(s.BIu, {
+        children: (0, r.jsx)(o.BIu, {
             activeId: i,
             breadcrumbs: p
         })

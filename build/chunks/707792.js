@@ -1,7 +1,7 @@
 /** Chunk was on 88974 **/
 /** chunk id: 707792, original params: t,n,i (module,exports,require) **/
 i.d(n, {
-    A: () => s
+    A: () => o
 });
 var e = i(627968);
 i(64700);
@@ -10,7 +10,7 @@ var r = i(397927),
     a = i(406704),
     d = i(985018);
 
-function s(t) {
+function o(t) {
     let n = (0, a.H_)(t),
         i = t.isLockedThread();
     if (!(!n || t.isModeratorReportChannel())) return i ? (0, e.jsx)(r.Drp, {

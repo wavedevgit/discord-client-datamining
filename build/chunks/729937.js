@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(981616),
-    s = n(290863),
-    o = n(652215);
+    o = n(290863),
+    s = n(652215);
 
 function l(e, t) {
     i.h.dispatch({
@@ -35,13 +35,13 @@ function c(e, t) {
 async function u(e, t) {
     let n = e.metadata;
     if (null != n && Object.keys(n).length > 0) return n;
-    let a = s.A.getActivityMetadata(t);
+    let a = o.A.getActivityMetadata(t);
     if (null != a) return a;
     if (null == e.session_id) throw Error("null/undefined session_id");
     let {
         body: l
     } = await r.Bo.get({
-        url: o.Rsh.USER_ACTIVITY_METADATA(t, e.session_id, e.application_id),
+        url: s.Rsh.USER_ACTIVITY_METADATA(t, e.session_id, e.application_id),
         oldFormErrors: !0,
         rejectWithError: !1
     });

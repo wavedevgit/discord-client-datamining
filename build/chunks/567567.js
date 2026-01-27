@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 567567, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     MT: "tryItOutSection__9d295",
     th: "tryItOutLayout__9d295",

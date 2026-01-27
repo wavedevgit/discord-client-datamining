@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 636658, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    S: () => l
+    S: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(341915),
-    a = n(665816),
-    s = n(654487),
-    o = n(985018);
+    l = n(665816),
+    a = n(654487),
+    s = n(985018);
 
-function l(e) {
+function o(e) {
     let {
         questId: t
     } = e;
-    return (0, r.jsx)(a.i, {
+    return (0, r.jsx)(l.i, {
         questId: t,
-        fallbackReason: s.eA.NOT_SHAREABLE_QUEST,
-        bodyText: o.intl.string(o.t.Rw9rwW),
+        fallbackReason: a.eA.NOT_SHAREABLE_QUEST,
+        bodyText: s.intl.string(s.t.Rw9rwW),
         questContent: i.uF.NOT_SHAREABLE_QUEST_EMBED
     })
 }

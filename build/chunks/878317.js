@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(970278),
     a = n(961350),
-    s = n(734057),
-    o = n(661191),
+    o = n(734057),
+    s = n(661191),
     l = n(767581);
 
 function c(e, t, n) {
@@ -41,11 +41,11 @@ class u extends r.A {
                 channelId: t
             } = e;
             if (null == t) return;
-            let n = s.A.getChannel(t);
+            let n = o.A.getChannel(t);
             null != n && n.isForumLikeChannel() && (this.readStateSnapshots = {}, this.processForumChannel(n.guild_id, t))
         }), c(this, "processForumChannel", (e, t) => {
             let n = i.A.getThreadsForParent(e, t);
-            o.default.keys(n).forEach(e => {
+            s.default.keys(n).forEach(e => {
                 let t = (0, l.yg)(e);
                 null != t && (this.readStateSnapshots[e] = t)
             })

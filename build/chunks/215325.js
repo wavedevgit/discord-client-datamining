@@ -2,12 +2,12 @@
 /** chunk id: 215325, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(322811),
     i = n(355418),
     a = n(658809);
-class s extends i.c {
+class o extends i.c {
     innerPattern() {
         return /(?:esta\s*)?(manha|manhã|tarde|meia-noite|meio-dia|noite)(?=\W|$)/i
     }
@@ -26,8 +26,8 @@ class s extends i.c {
                 i.imply("meridiem", r.FF.AM), i.imply("hour", 6);
                 break;
             case "meia-noite":
-                let s = new Date(n.getTime());
-                s.setDate(s.getDate() + 1), (0, a.Pl)(i, s), (0, a.A4)(i, s), i.imply("hour", 0), i.imply("minute", 0), i.imply("second", 0);
+                let o = new Date(n.getTime());
+                o.setDate(o.getDate() + 1), (0, a.Pl)(i, o), (0, a.A4)(i, o), i.imply("hour", 0), i.imply("minute", 0), i.imply("second", 0);
                 break;
             case "meio-dia":
                 i.imply("meridiem", r.FF.AM), i.imply("hour", 12)

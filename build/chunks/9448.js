@@ -5,7 +5,7 @@ n.d(t, {
     WN: () => a,
     dy: () => c,
     k5: () => l,
-    oF: () => o
+    oF: () => s
 });
 var r = n(734057),
     i = n(988794);
@@ -16,23 +16,23 @@ function a(e) {
         channel_id: a
     } = e;
     if (n in i.om && null != a) {
-        var s;
-        t = null != (s = r.A.getChannel(e.channel_id)) ? s : void 0
+        var o;
+        t = null != (o = r.A.getChannel(e.channel_id)) ? o : void 0
     }
     return t
 }
 
-function s(e, t) {
+function o(e, t) {
     let n = null;
     return e === i.Ps.EXTERNAL && null != t && "location" in t && (n = t.location), n
 }
 
-function o(e) {
+function s(e) {
     let {
         entity_type: t,
         entity_metadata: n
     } = e;
-    return s(t, n)
+    return o(t, n)
 }
 
 function l(e) {
@@ -40,7 +40,7 @@ function l(e) {
         entityType: t,
         entityMetadata: n
     } = e;
-    return s(t, n)
+    return o(t, n)
 }
 
 function c(e) {

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(155718),
     c = n(283047),
     u = n(933958),
@@ -105,7 +105,7 @@ function S() {
         recentUses: e.recentUses.map(Number).filter(e => e > 0)
     })), y.pendingUsages)
 }
-class T extends(r = s.Ay.PersistedStore) {
+class T extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         null != e && (y = e), this.waitFor(u.Ay, d.A), this.syncWith([d.A], S)
     }
@@ -127,7 +127,7 @@ class T extends(r = s.Ay.PersistedStore) {
     }
 }
 _(T, "displayName", "ApplicationFrecencyStore"), _(T, "persistKey", "ApplicationFrecency");
-let C = new T(o.h, {
+let C = new T(s.h, {
     APPLICATION_COMMAND_USED: v,
     EMBEDDED_ACTIVITY_OPEN: A,
     USER_SETTINGS_PROTO_UPDATE: O

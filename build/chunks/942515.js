@@ -1,34 +1,33 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 942515, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(827343),
+    l = n(827343),
     s = n(195043),
-    o = n(502060),
-    l = n(772927),
+    a = n(502060),
+    o = n(772927),
     c = n(593942),
-    u = n(991793),
-    d = n(531525),
-    f = n(985018);
+    d = n(991793),
+    u = n(531525),
+    _ = n(985018);
 
 function p() {
-    return (0, r.jsxs)(o.A, {
-        webSetting: d.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
-        children: [(0, r.jsx)(l.A, {
-            children: (0, r.jsx)(u.Ay, {})
+    return (0, r.jsxs)(a.A, {
+        webSetting: u.H.VOICE_AND_VIDEO_ADVANCED_DEBUGGING,
+        children: [(0, r.jsx)(o.A, {
+            children: (0, r.jsx)(d.Ay, {})
         }), (0, r.jsx)(s.x, {
-            setting: d.H.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS,
+            setting: u.H.VOICE_AND_VIDEO_RESET_VOICE_SETTINGS,
             children: (0, r.jsx)(i.Button, {
                 variant: "critical-secondary",
                 size: "sm",
-                text: f.intl.string(f.t["4iKQ/3"]),
+                text: _.intl.string(_.t["4iKQ/3"]),
                 onClick: () => {
-                    (0, c.A)(f.intl.string(f.t["4iKQ/3"]), f.intl.string(f.t.sQ42iT), a.A.reset)
+                    (0, c.A)(_.intl.string(_.t["4iKQ/3"]), _.intl.string(_.t.sQ42iT), l.A.reset)
                 }
             })
         })]

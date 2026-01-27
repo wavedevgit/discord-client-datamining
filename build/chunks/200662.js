@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Eu: () => a,
-    UZ: () => s,
+    UZ: () => o,
     p6: () => i
 }), n(446912), n(896048);
 var r = n(155718);
@@ -16,7 +16,7 @@ function a(e, t) {
     return "".concat(e, ":").concat(t)
 }
 
-function s(e) {
+function o(e) {
     return Object.fromEntries(e.map(e => [a(e.id, e.type), e]))
 }
 n(392054)

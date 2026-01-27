@@ -7,25 +7,25 @@ n.d(t, {
 var r = n(364242),
     i = n(147426),
     a = n(476858),
-    s = n(972409);
-let o = 1,
+    o = n(972409);
+let s = 1,
     l = 2,
     c = 3,
     u = 4;
-class d extends s.w {
+class d extends o.w {
     innerPatternString(e) {
         return `(?:з|із)?\\s*(${i.lT})(?:\\s{0,3}(?:по|-|–|до)?\\s{0,3}(${i.lT}))?(?:-|\\/|\\s{0,3}(?:of)?\\s{0,3})(${(0,a.uJ)(i.eB)})(?:(?:-|\\/|,?\\s{0,3})(${i.fp}(?![^\\s]\\d)))?`
     }
     innerExtract(e, t) {
         let n = e.createParsingResult(t.index, t[0]),
             a = i.eB[t[c].toLowerCase()],
-            s = (0, i.k8)(t[o]);
-        if (s > 31) return t.index = t.index + t[o].length, null;
-        if (n.start.assign("month", a), n.start.assign("day", s), t[u]) {
+            o = (0, i.k8)(t[s]);
+        if (o > 31) return t.index = t.index + t[s].length, null;
+        if (n.start.assign("month", a), n.start.assign("day", o), t[u]) {
             let e = (0, i.jp)(t[u]);
             n.start.assign("year", e)
         } else {
-            let t = (0, r.Y)(e.reference.instant, s, a);
+            let t = (0, r.Y)(e.reference.instant, o, a);
             n.start.imply("year", t)
         }
         if (t[l]) {

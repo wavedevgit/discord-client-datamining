@@ -10,19 +10,19 @@ n.d(t, {
 var r = n(214958),
     i = n.n(r),
     a = n(118356),
-    s = n(396574);
-let o = new a.Vy("LibDaveManager"),
+    o = n(396574);
+let s = new a.Vy("LibDaveManager"),
     l = null,
     c = null,
     u = null,
     d = {
         onRuntimeInitialized: () => {
-            o.info("DAVE loaded")
+            s.info("DAVE loaded")
         }
     };
 
 function f() {
-    return ("Firefox" !== i().name || !(s.It < 142)) && s.PF && "function" == typeof RTCRtpSender && ("transform" in RTCRtpSender.prototype || "createEncodedStreams" in RTCRtpSender.prototype)
+    return ("Firefox" !== i().name || !(o.It < 142)) && o.PF && o.zU
 }
 
 function p() {
@@ -36,12 +36,12 @@ function _() {
                 DaveModuleFactory: r
             } = n;
             r(d).then(t => {
-                o.info("Successfully initialized DAVE"), c = t, e(t)
+                s.info("Successfully initialized DAVE"), c = t, e(t)
             }).catch(e => {
-                o.error("Failed to initialize DAVE", e), t(e)
+                s.error("Failed to initialize DAVE", e), t(e)
             })
         }).catch(e => {
-            o.error("Failed to load DAVE module", e), t(e)
+            s.error("Failed to load DAVE module", e), t(e)
         })
     })
 }

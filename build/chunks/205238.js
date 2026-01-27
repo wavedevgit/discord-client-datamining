@@ -2,24 +2,24 @@
 /** chunk id: 205238, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(559374),
     i = n(688899),
     a = n(421336),
-    s = n(190792);
+    o = n(190792);
 
-function o(e, t) {
+function s(e, t) {
     var n = (0, r.A)(e),
-        o = (0, i.A)(e),
+        s = (0, i.A)(e),
         l = n.visualViewport,
-        c = o.clientWidth,
-        u = o.clientHeight,
+        c = s.clientWidth,
+        u = s.clientHeight,
         d = 0,
         f = 0;
     if (l) {
         c = l.width, u = l.height;
-        var p = (0, s.A)();
+        var p = (0, o.A)();
         (p || !p && "fixed" === t) && (d = l.offsetLeft, f = l.offsetTop)
     }
     return {

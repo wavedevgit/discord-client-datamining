@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(688810),
-    o = n(706752),
+    o = n(688810),
+    s = n(706752),
     l = n(985925),
     c = n(997509),
     u = n(267102),
@@ -32,13 +32,13 @@ function b(e) {
         appContext: v
     } = e, {
         newestAnalyticsLocation: A
-    } = (0, s.Ay)(), I = (0, u.aL)(), S = (0, i.bG)([p.default], () => p.default.getId() === (null == t ? void 0 : t.id)), T = (0, l.q)(null != n ? n : null), C = (0, i.bG)([_.A], () => null != b ? b : _.A.getChannelId(n, !0), [b, n]);
+    } = (0, o.Ay)(), I = (0, u.aL)(), S = (0, i.bG)([p.default], () => p.default.getId() === (null == t ? void 0 : t.id)), T = (0, l.q)(null != n ? n : null), C = (0, i.bG)([_.A], () => null != b ? b : _.A.getChannelId(n, !0), [b, n]);
     return null == n || !T || S ? null : (0, r.jsx)(h.br, {
         action: "PRESS_MOD_VIEW",
         icon: a.quN,
         tooltipText: y.intl.string(y.t.kj3tz2),
         onClick: () => {
-            c.A.close(), null != C && (0, f.iN)(C), (0, d.A)(v), I.dispatch(m.jej.POPOUT_CLOSE), (0, o.z)(n, t.id, null != C ? C : g.VV.MEMBER_SAFETY, {
+            c.A.close(), null != C && (0, f.iN)(C), (0, d.A)(v), I.dispatch(m.jej.POPOUT_CLOSE), (0, s.z)(n, t.id, null != C ? C : g.VV.MEMBER_SAFETY, {
                 modViewPanel: E.g.INFO,
                 sourceLocation: A
             }), null == O || O()

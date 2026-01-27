@@ -1,7 +1,7 @@
 /** Chunk was on 67096 **/
 /** chunk id: 464990, original params: e,A,t (module,exports,require) **/
 t.d(A, {
-    R: () => o,
+    R: () => s,
     Z: () => i
 }), t(65821);
 var r = t(627968),
@@ -15,7 +15,7 @@ function i() {
     return e
 }
 
-function o(e) {
+function s(e) {
     let {
         children: A,
         guildId: t

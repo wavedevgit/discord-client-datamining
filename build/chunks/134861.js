@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153);
+    o = n(311907),
+    s = n(73153);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -68,7 +68,7 @@ function _(e) {
     } = e;
     u = c({}, t)
 }
-class h extends(r = s.Ay.Store) {
+class h extends(r = o.Ay.Store) {
     isConnected(e) {
         return null != u[e]
     }
@@ -83,7 +83,7 @@ class h extends(r = s.Ay.Store) {
     }
 }
 l(h, "displayName", "ConnectedAppsStore");
-let m = new h(o.h, {
+let m = new h(s.h, {
     OVERLAY_INITIALIZE: _,
     RPC_APP_CONNECTED: d,
     RPC_APP_AUTHENTICATED: f,

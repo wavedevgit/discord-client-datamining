@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(688810),
-    s = n(702211),
-    o = n(915614),
+    o = n(702211),
+    s = n(915614),
     l = n(385612),
     c = n(339984),
     u = n(996988),
@@ -29,7 +29,7 @@ function p(e) {
         onUpsellClick: y
     } = e, {
         newestAnalyticsLocation: b
-    } = (0, a.Ay)(), O = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = O ? i.R2l : i.tvc, A = (0, s.b)(O), I = () => {
+    } = (0, a.Ay)(), O = _ || (null == n ? void 0 : n.canUsePremiumProfileCustomization) || !1, v = O ? i.R2l : i.tvc, A = (0, o.b)(O), I = () => {
         if (!O && !A) {
             null == y || y();
             return
@@ -40,7 +40,7 @@ function p(e) {
             isTryItOut: g
         })
     };
-    return (0, r.jsx)(o.A, {
+    return (0, r.jsx)(s.A, {
         user: t,
         displayProfile: n,
         guildId: p,

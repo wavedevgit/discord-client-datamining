@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 198168, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    N: () => o
+    N: () => a
 });
 var r = n(837057),
     i = n(310419),
-    a = n(967198),
+    l = n(967198),
     s = n(488995);
-let o = {
+let a = {
     binds: ["mod+ctrl+a"],
     comboKeysBindGlobal: !0,
     action() {
         var e;
-        let t = null != (e = a.A.getGuildId()) ? e : void 0;
+        let t = null != (e = l.A.getGuildId()) ? e : void 0;
         (0, r.transitionToGlobalDiscovery)({
             tab: s.GlobalDiscoveryTab.APPS,
             newSessionState: {

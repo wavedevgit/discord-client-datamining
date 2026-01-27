@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(22007),
     a = n(14509),
-    s = n(276041),
-    o = n(652215);
+    o = n(276041),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -23,7 +23,7 @@ class c extends r.A {
         let {
             channel: t
         } = e;
-        (0, a.TT)(t) && (await (0, a.ml)(s.$), (0, i.A)(o.BVt.CHANNEL(null, t.id)))
+        (0, a.TT)(t) && (await (0, a.ml)(o.$), (0, i.A)(s.BVt.CHANNEL(null, t.id)))
     }
     constructor(...e) {
         super(...e), l(this, "actions", {

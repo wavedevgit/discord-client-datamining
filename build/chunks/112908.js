@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(162605),
     i = n(403362),
     a = n(487329),
-    s = n(601900),
-    o = n(652215);
+    o = n(601900),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -32,8 +32,8 @@ function c(e) {
     return e
 }
 let u = {
-    getActiveErrors: () => r.A.getAllActiveStreamKeys().map(e => r.A.getQuality(e) === o.bFR.BAD ? c({
+    getActiveErrors: () => r.A.getAllActiveStreamKeys().map(e => r.A.getQuality(e) === s.bFR.BAD ? c({
         type: a.iy.STREAM_BAD_NETWORK_QUALITY
-    }, (0, s.id)(e)) : null).filter(i.Vq),
+    }, (0, o.id)(e)) : null).filter(i.Vq),
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

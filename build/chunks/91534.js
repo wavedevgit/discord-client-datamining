@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 91534, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(577092),
     p = n(255438),
     f = n(473145),
-    b = n(975571),
-    h = n(555337),
+    h = n(975571),
+    b = n(555337),
     x = n(652215);
 n(823894);
 var j = n(985018),
@@ -83,7 +83,7 @@ let O = {
         }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             children: j.intl.format(j.t.UBj0aX, {
-                articleUrl: b.A.getArticleURL(x.MVz.STICKERS_UPLOAD)
+                articleUrl: h.A.getArticleURL(x.MVz.STICKERS_UPLOAD)
             })
         })]
     }),
@@ -117,7 +117,7 @@ let O = {
         }))
     },
     E = () => {
-        let e = (0, i.bG)([h.A], () => h.A.getGuild()),
+        let e = (0, i.bG)([b.A], () => b.A.getGuild()),
             t = (0, i.bG)([g.A], () => {
                 var t;
                 return null != e && null != (t = g.A.getStickersByGuildId(e.id)) ? t : []

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(34045),
     i = n(562465),
     a = n(73153),
-    s = n(274184),
-    o = n(728458),
+    o = n(274184),
+    s = n(728458),
     l = n(668131),
     c = n(797632),
     u = n(880652),
@@ -42,7 +42,7 @@ function f(e, t, n) {
 }
 
 function p(e) {
-    return !!s.Ay.shouldAllowSurveyAction() && r.M[e] >= 100 * Math.random()
+    return !!o.Ay.shouldAllowSurveyAction() && r.M[e] >= 100 * Math.random()
 }
 async function _(e, t) {
     if (!p(e)) return;
@@ -77,7 +77,7 @@ let h = {
                 surveyDetails: t
             }), t
         } catch (e) {
-            return o.A.captureException(e), null
+            return s.A.captureException(e), null
         }
     },
     submitSurveyResponse: async function(e, t) {
@@ -97,7 +97,7 @@ let h = {
                 })).body.responseId
             }
         } catch (e) {
-            return o.A.captureException(e), {
+            return s.A.captureException(e), {
                 responseId: "null"
             }
         }

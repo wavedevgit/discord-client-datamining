@@ -2,7 +2,7 @@
 /** chunk id: 590878, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    d: () => s,
+    d: () => o,
     p: () => a
 });
 var r = n(369543);
@@ -18,7 +18,7 @@ function i(e, t, n) {
 var a = function(e) {
     return e.STREAM = "stream", e.PAUSE = "pause", e.STOP = "stop", e
 }({});
-class s {
+class o {
     onStreamBegin(e, t, n) {
         let i = (0, r.M)(e, t);
         this.sound = n, null == i || null == i.windowHandle ? this.callback({

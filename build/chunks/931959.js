@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(283047),
     c = n(617617),
     u = n(927813),
@@ -100,7 +100,7 @@ function I(e) {
     if (t !== f.oD.FRECENCY_AND_FAVORITES_SETTINGS || !n) return !1;
     g.pendingUsages = []
 }
-class S extends(r = s.Ay.PersistedStore) {
+class S extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(d.A, c.A), null != e && (g = e), this.syncWith([d.A], v), this.syncWith([c.A], A)
     }
@@ -115,7 +115,7 @@ class S extends(r = s.Ay.PersistedStore) {
     }
 }
 p(S, "displayName", "StickersPersistedStore"), p(S, "persistKey", "StickersPersistedStoreV2");
-let T = new S(o.h, {
+let T = new S(s.h, {
     STICKER_TRACK_USAGE: O,
     USER_SETTINGS_PROTO_UPDATE: I
 })

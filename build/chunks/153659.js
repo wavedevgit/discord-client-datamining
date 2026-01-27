@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(827734),
     a = n(996682),
-    s = n(27989);
+    o = n(27989);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -71,12 +71,12 @@ function f(e, t) {
 let p = e => {
     var t, n;
     let {
-        size: o = "md",
+        size: s = "md",
         width: c,
         height: f,
         color: p = i.A.colors.ICON_OVERLAY_LIGHT,
         colorClass: _ = ""
-    } = e, h = d(e, ["size", "width", "height", "color", "colorClass"]), m = (0, s.J)(o), g = null != (t = null == m ? void 0 : m.width) ? t : c, E = null != (n = null == m ? void 0 : m.height) ? n : f;
+    } = e, h = d(e, ["size", "width", "height", "color", "colorClass"]), m = (0, o.J)(s), g = null != (t = null == m ? void 0 : m.width) ? t : c, E = null != (n = null == m ? void 0 : m.height) ? n : f;
     return (0, r.jsxs)("svg", u(l({}, (0, a.A)(h)), {
         xmlns: "http://www.w3.org/2000/svg",
         width: g,

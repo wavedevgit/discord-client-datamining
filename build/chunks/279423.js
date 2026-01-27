@@ -1,28 +1,27 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 279423, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968),
     i = n(158954),
-    a = n(964486),
+    l = n(964486),
     s = n(933297),
-    o = n(471675);
+    a = n(471675);
 
-function l(e) {
+function o(e) {
     let {
         notice: t
     } = e, {
         noticeType: n,
         useText: s
-    } = t, o = s();
-    return (0, a.Ay)(() => {
+    } = t, a = s();
+    return (0, l.Ay)(() => {
         var e;
         null == (e = t.trackView) || e.call(t)
     }), (0, r.jsx)(i.wx6, {
         type: n,
-        children: o
+        children: a
     })
 }
 
@@ -35,13 +34,13 @@ function c(e) {
     return (0, r.jsx)(n, {})
 }
 
-function u(e) {
+function d(e) {
     let {
         notice: t
     } = e;
     switch (t.type) {
         case s.W.INLINE_NOTICE:
-            return (0, r.jsx)(l, {
+            return (0, r.jsx)(o, {
                 notice: t
             });
         case s.W.STRONGLY_DISCOURAGED_CUSTOM:
@@ -51,13 +50,13 @@ function u(e) {
     }
 }
 
-function d(e) {
+function u(e) {
     let {
         notice: t
     } = e;
     return (0, r.jsx)("div", {
-        className: o.l,
-        children: (0, r.jsx)(u, {
+        className: a.l,
+        children: (0, r.jsx)(d, {
             notice: t
         })
     })

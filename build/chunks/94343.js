@@ -2,13 +2,13 @@
 /** chunk id: 94343, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(64700),
     i = n(311907),
     a = n(775602);
 
-function s(e, t) {
+function o(e, t) {
     let n = (0, i.bG)([a.A], () => a.A.useReducedMotion);
     r.useEffect(() => {
         if (!t) return;

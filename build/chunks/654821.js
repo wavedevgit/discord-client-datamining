@@ -2,8 +2,8 @@
 /** chunk id: 654821, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    hasDomParent: () => s,
-    isDOMRangeCollapsed: () => o,
+    hasDomParent: () => o,
+    isDOMRangeCollapsed: () => s,
     normalizeDOMPoint: () => l
 }), n(65821), n(896048);
 var r = n(253018);
@@ -26,24 +26,24 @@ let a = !1;
     r.rL.toSlateRange = (e, t, n) => {
         let {
             exactMatch: a,
-            suppressThrow: s
+            suppressThrow: o
         } = n, {
             anchorNode: l,
             anchorOffset: c,
             focusNode: u,
             focusOffset: d
-        } = i(t), f = o(l, c, u, d);
+        } = i(t), f = s(l, c, u, d);
         if (null == l || null == u || null == c || null == d) {
-            if (s) return null;
+            if (o) return null;
             throw Error("Cannot resolve a Slate range from DOM range")
         }
         let p = r.rL.toSlatePoint(e, [l, c], {
                 exactMatch: a,
-                suppressThrow: s
+                suppressThrow: o
             }),
             _ = f ? p : r.rL.toSlatePoint(e, [u, d], {
                 exactMatch: a,
-                suppressThrow: s
+                suppressThrow: o
             });
         return null != p && null != _ ? {
             anchor: p,
@@ -55,9 +55,9 @@ let a = !1;
         let {
             exactMatch: i,
             suppressThrow: a,
-            direction: s = "forward"
+            direction: o = "forward"
         } = r;
-        i || (n = l(n, s));
+        i || (n = l(n, o));
         try {
             return e(t, n, {
                 exactMatch: !0,
@@ -70,7 +70,7 @@ let a = !1;
     }, a = !0
 }
 
-function s(e, t) {
+function o(e, t) {
     if (null == t) return !1;
     for (; null != e;) {
         if (e === t) return !0;
@@ -79,7 +79,7 @@ function s(e, t) {
     return !1
 }
 
-function o(e, t, n, r) {
+function s(e, t, n, r) {
     return e === n && t === r
 }
 
@@ -97,15 +97,15 @@ function l(e, t) {
 function c(e, t, n) {
     let {
         childNodes: r
-    } = e, i = r[t], a = t, s = !1, o = !1;
+    } = e, i = r[t], a = t, o = !1, s = !1;
     for (;
-        (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!s || !o);) {
+        (u(i) || d(i) && 0 === i.childNodes.length || d(i) && "false" === i.getAttribute("contenteditable")) && (!o || !s);) {
         if (a >= r.length) {
-            s = !0, a = t - 1, n = "backward";
+            o = !0, a = t - 1, n = "backward";
             continue
         }
         if (a < 0) {
-            o = !0, a = t + 1, n = "forward";
+            s = !0, a = t + 1, n = "forward";
             continue
         }
         i = r[a], t = a, a += "forward" === n ? 1 : -1

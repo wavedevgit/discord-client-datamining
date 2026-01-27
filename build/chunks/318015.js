@@ -3,8 +3,8 @@
 "use strict";
 n.d(t, {
     AL: () => i.A,
-    RK: () => s,
-    sK: () => o
+    RK: () => o,
+    sK: () => s
 });
 var r = n(600975),
     i = n(766005);
@@ -33,13 +33,13 @@ let a = (0, r.C)({
     }]
 });
 
-function s(e) {
+function o(e) {
     return a.getCurrentConfig({
         location: e
     }).enableObfuscation
 }
 
-function o(e) {
+function s(e) {
     return a.useExperiment({
         location: e
     }).enableObfuscation

@@ -2,7 +2,7 @@
 /** chunk id: 969628, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    t: () => s
+    t: () => o
 });
 var r = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ let a = {
         SparklesIcon: i.BZI,
         ClockIcon: i.O4
     },
-    s = {
+    o = {
         title: "Badge",
         stories: [{
             name: "Badge",
@@ -23,14 +23,14 @@ let a = {
                 let {
                     type: t,
                     customText: n,
-                    variant: s,
-                    iconName: o
+                    variant: o,
+                    iconName: s
                 } = e, l = "custom" === t && null != n && "" !== n ? {
                     text: n
-                } : t, c = null != o && "" !== o && "none" !== o ? a[o] : void 0;
+                } : t, c = null != s && "" !== s && "none" !== s ? a[s] : void 0;
                 return (0, r.jsx)(i.Exy, {
                     type: l,
-                    variant: s,
+                    variant: o,
                     icon: c
                 })
             },

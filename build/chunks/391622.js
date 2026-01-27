@@ -2,13 +2,13 @@
 /** chunk id: 391622, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    e: () => o
+    e: () => s
 });
 var r = n(627968),
     i = n(397927),
     a = n(324861),
-    s = n(749226);
-let o = {
+    o = n(749226);
+let s = {
     title: "Orb Onboarding",
     stories: [{
         name: "Orb Onboarding Reset",
@@ -18,7 +18,7 @@ let o = {
                 resetOnboardingExperience: e
             } = (0, a.A)();
             return (0, r.jsxs)("div", {
-                className: s.YG,
+                className: o.YG,
                 children: [(0, r.jsx)(i.Text, {
                     variant: "text-md/normal",
                     color: "text-feedback-info",

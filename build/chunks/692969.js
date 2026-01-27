@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(858177),
     a = n(227309),
-    s = n(847521),
-    o = n(60465),
+    o = n(847521),
+    s = n(60465),
     l = n(611656);
 
 function c(e, t, n) {
@@ -55,11 +55,11 @@ function p(e) {
         onOpened: t
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, {
         applicationId: n
-    } = e, c = (0, i.O)(n), d = r.useMemo(() => null == c ? n : (0, s.bB)(c) ? a.a7 : n, [c, n]), p = (0, l.Ay)(f(u({}, e), {
+    } = e, c = (0, i.O)(n), d = r.useMemo(() => null == c ? n : (0, o.bB)(c) ? a.a7 : n, [c, n]), p = (0, l.Ay)(f(u({}, e), {
         applicationId: d
     }));
     return p.shouldOpenGameProfile && null != d ? n => {
-        n.stopPropagation(), n.preventDefault(), o.A.openGameProfileModal(f(u({}, e), {
+        n.stopPropagation(), n.preventDefault(), s.A.openGameProfileModal(f(u({}, e), {
             applicationId: d,
             gameProfileModalChecks: p
         })), null == t || t()

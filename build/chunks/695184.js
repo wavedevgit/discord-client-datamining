@@ -7,8 +7,8 @@ n.d(t, {
 }), n(321073), n(896048);
 var i = n(635377),
     a = n.n(i),
-    s = n(686956),
-    o = n(71393),
+    o = n(686956),
+    s = n(71393),
     l = n(287809),
     c = n(927813),
     u = n(427262),
@@ -23,16 +23,16 @@ function p(e, t, n) {
             i = e => {
                 r.push(e.id)
             };
-        if (null == e) r.push(...o.A.getGuildIds());
+        if (null == e) r.push(...s.A.getGuildIds());
         else if (Array.isArray(e)) e.forEach(e => {
-            let t = o.A.getGuild(e);
+            let t = s.A.getGuild(e);
             null != t && i(t)
         });
         else {
-            let t = o.A.getGuild(e);
+            let t = s.A.getGuild(e);
             null != t && i(t)
         }
-        r.length > 0 && s.A.requestMembers(r, t.toLocaleLowerCase(), n)
+        r.length > 0 && o.A.requestMembers(r, t.toLocaleLowerCase(), n)
     }, 200)
 }
 

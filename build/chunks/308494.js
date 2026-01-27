@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 308494, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     s: () => s
 });
 var r = n(265422),
     i = n(383501),
-    a = n(652215);
+    l = n(652215);
 let s = {
     binds: ["mod+shift+alt+v"],
     comboKeysBindGlobal: !0,
@@ -14,6 +13,6 @@ let s = {
         e.preventDefault(), e.stopPropagation();
         let t = i.A.getGuildId(),
             n = i.A.getChannelId();
-        return null != n && (0, r.i)(null != t ? t : a.ME, n), !1
+        return null != n && (0, r.i)(null != t ? t : l.ME, n), !1
     }
 }

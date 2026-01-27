@@ -2,12 +2,12 @@
 /** chunk id: 301518, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => s
+    S: () => o
 });
 var r = n(224771),
     i = n(624210),
     a = n(224949);
-async function s(e) {
+async function o(e) {
     let {
         checkoutSucceeded: t
     } = e;

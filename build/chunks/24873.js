@@ -2,15 +2,15 @@
 /** chunk id: 24873, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    N9: () => o,
+    N9: () => s,
     jL: () => c,
     jU: () => l
 }), n(801541);
 var r = n(889137),
     i = n(652215),
     a = n(790782),
-    s = n(985018),
-    o = function(e) {
+    o = n(985018),
+    s = function(e) {
         return e.ALL_MESSAGES = "all_messages", e.MENTIONS = "mentions", e.NOTHING = "nothing", e.CUSTOM = "custom", e
     }({});
 
@@ -19,5 +19,5 @@ function l(e, t) {
 }
 
 function c(e) {
-    return (0, r.YW)(e).with("all_messages", () => s.intl.string(s.t.hZrr6k)).with("mentions", () => s.intl.string(s.t.y59NJm)).with("nothing", () => s.intl.string(s.t["pGn/bJ"])).with("custom", () => s.intl.string(s.t["32yow9"])).exhaustive()
+    return (0, r.YW)(e).with("all_messages", () => o.intl.string(o.t.hZrr6k)).with("mentions", () => o.intl.string(o.t.y59NJm)).with("nothing", () => o.intl.string(o.t["pGn/bJ"])).with("custom", () => o.intl.string(o.t["32yow9"])).exhaustive()
 }

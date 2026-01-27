@@ -16,8 +16,8 @@ n.d(t, {
 var r = n(957565),
     i = n(723702),
     a = n(341915),
-    s = n(561844),
-    o = n(261331),
+    o = n(561844),
+    s = n(261331),
     l = n(654487),
     c = n(985018);
 
@@ -107,7 +107,7 @@ function g(e) {
     return e.ctaConfig.link
 }
 let E = (e, t) => {
-    (0, s.Y5)({
+    (0, o.Y5)({
         questId: e,
         questContent: t.content,
         questContentCTA: t.ctaContent,
@@ -127,5 +127,5 @@ let b = e => {
         playerState: n,
         pauseReason: r
     } = e;
-    return t ? n === o.Q6.PAUSED && r === a.Yg.LOST_FOCUS ? c.intl.string(c.t["U7Xrb+"]) : null : (0, i.isWeb)() ? c.intl.string(c.t["E1du/q"]) : c.intl.string(c.t["rStN/7"])
+    return t ? n === s.Q6.PAUSED && r === a.Yg.LOST_FOCUS ? c.intl.string(c.t["U7Xrb+"]) : null : (0, i.isWeb)() ? c.intl.string(c.t["E1du/q"]) : c.intl.string(c.t["rStN/7"])
 }

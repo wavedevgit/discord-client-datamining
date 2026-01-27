@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(408018),
-    o = n(451909),
+    o = n(408018),
+    s = n(451909),
     l = n(253932),
     c = n(320501);
 
@@ -58,12 +58,12 @@ function m(e) {
         messageId: n,
         content: r,
         source: i
-    } = e, a = l.D_.getSetting(), c = o.Ay.unparse(r, t);
+    } = e, a = l.D_.getSetting(), c = s.Ay.unparse(r, t);
     _[t] = {
         channelId: t,
         messageId: n,
         textValue: c,
-        richValue: (0, s.x7)(a ? c : r)
+        richValue: (0, o.x7)(a ? c : r)
     }, h[t] = i
 }
 

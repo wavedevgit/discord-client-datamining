@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 967196, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(311907),
-    o = n(732955),
-    l = n(775602),
+    a = n(732955),
+    o = n(775602),
     c = n(371476),
-    u = n(103733),
-    d = n(982237),
-    f = n(985018),
+    d = n(103733),
+    u = n(982237),
+    _ = n(985018),
     p = n(764694);
-let _ = e => {
+let m = e => {
     let {
         className: t,
         onBackClick: n
-    } = e, i = (0, s.bG)([l.A], () => l.A.useReducedMotion), {
-        visibilityPercentageRef: _,
-        visibilityPercentage: h
-    } = (0, u.U)(!i);
+    } = e, i = (0, s.bG)([o.A], () => o.A.useReducedMotion), {
+        visibilityPercentageRef: m,
+        visibilityPercentage: g
+    } = (0, d.U)(!i);
     return (0, r.jsxs)("div", {
-        className: a()(p.kL, t),
+        className: l()(p.kL, t),
         "data-testid": "all-perks-hero-header",
-        ref: _,
+        ref: m,
         children: [(0, r.jsx)("div", {
             className: p.FY,
-            children: (0, r.jsx)(o.$nd, {
+            children: (0, r.jsx)(a.$nd, {
                 onClick: n,
-                text: f.intl.string(f.t["13/7kX"]),
+                text: _.intl.string(_.t["13/7kX"]),
                 variant: "overlay-secondary"
             })
         }), (0, r.jsx)("div", {
             className: p.Qs,
             children: (0, r.jsxs)("div", {
                 className: p.N1,
-                children: [(0, r.jsx)(d.A, {
-                    containerVisibilityPercentage: h,
+                children: [(0, r.jsx)(u.A, {
+                    containerVisibilityPercentage: g,
                     isMotionReduced: i
                 }), (0, r.jsx)(c.A, {
-                    children: f.intl.string(f.t["hqjDX/"])
+                    children: _.intl.string(_.t["hqjDX/"])
                 })]
             })
         })]

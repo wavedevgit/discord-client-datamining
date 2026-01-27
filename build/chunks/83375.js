@@ -1,31 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 83375, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => c
 });
-var r, i = n(311907),
+var r, i, l = n(311907),
     a = n(73153);
-
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let o = !1;
-
-function l(e) {
-    o = !0
-}
-class c extends(r = i.Ay.Store) {
+let s = !1;
+class o extends(i = l.Ay.Store) {
     get blockedByProxy() {
-        return o
+        return s
     }
-}
-s(c, "displayName", "ProxyBlockStore");
-let u = new c(a.h, {
-    PROXY_BLOCKED_REQUEST: l
+}(r = "displayName") in o ? Object.defineProperty(o, r, {
+    value: "ProxyBlockStore",
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+}) : o[r] = "ProxyBlockStore";
+let c = new o(a.h, {
+    PROXY_BLOCKED_REQUEST: function(e) {
+        s = !0
+    }
 })

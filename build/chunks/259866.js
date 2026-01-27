@@ -1,9 +1,9 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 259866, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
     Mj: () => f,
-    mU: () => b,
+    mU: () => h,
     tB: () => p
 }), n(896048);
 var r = n(627968),
@@ -29,7 +29,7 @@ function f(e) {
     return !!t && n.length >= g.Kd
 }
 
-function b(e) {
+function h(e) {
     let {
         guildId: t,
         className: n

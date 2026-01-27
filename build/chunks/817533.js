@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 817533, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(775602),
-    s = n(463469);
+    l = n(775602),
+    a = n(463469);
 
-function o(e) {
+function s(e) {
     let {
         guildId: t,
         user: n,
-        className: o
-    } = e, l = (0, i.bG)([a.A], () => !a.A.useReducedMotion), c = n.getAvatarURL(t, 56, l), u = (0, r.jsx)("foreignObject", {
+        className: s
+    } = e, o = (0, i.bG)([l.A], () => !l.A.useReducedMotion), c = n.getAvatarURL(t, 56, o), u = (0, r.jsx)("foreignObject", {
         x: "30",
         y: "68",
         width: "56",
@@ -23,19 +22,19 @@ function o(e) {
         transform: "skewX(12)",
         children: (0, r.jsx)("img", {
             src: c,
-            className: s.dj,
+            className: a.dj,
             alt: ""
         })
     });
     return (0, r.jsx)("div", {
-        className: o,
+        className: s,
         children: (0, r.jsxs)("svg", {
             width: "128",
             height: "200",
             viewBox: "0 0 128 200",
             fill: "none",
             xmlns: "http://www.w3.org/2000/svg",
-            className: s.JW,
+            className: a.JW,
             children: [(0, r.jsx)("path", {
                 fillRule: "evenodd",
                 clipRule: "evenodd",

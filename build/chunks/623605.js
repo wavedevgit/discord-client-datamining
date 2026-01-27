@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(954571),
-    s = n(646363),
-    o = n(652215);
+    o = n(646363),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -37,8 +37,8 @@ function u(e) {
     let {
         onConfirm: t
     } = e;
-    a.default.track(o.HAw.OPEN_MODAL, {
-        type: s.C
+    a.default.track(s.HAw.OPEN_MODAL, {
+        type: o.C
     }), (0, i.mMO)(async () => {
         let {
             default: e

@@ -1,4 +1,4 @@
-/** Chunk was on 38663 **/
+/** Chunk was on 94682 **/
 /** chunk id: 19333, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => v
@@ -158,7 +158,7 @@ let _ = e => {
                     closePopout: t
                 } = e;
                 return (0, r.jsx)(c.W1t, {
-                    "data-menu-mixed": !0,
+                    "data-menu-migrated": !0,
                     navId: "user-profile-widget-context-menu",
                     onClose: () => {
                         (0, u.Z_)(), t()
@@ -172,7 +172,11 @@ let _ = e => {
                             label: O.intl.string(O.t.Mm07Yc),
                             action: s,
                             color: "danger",
-                            icon: c.ucK
+                            icon: c.ucK,
+                            leadingAccessory: {
+                                type: "icon",
+                                icon: c.ucK
+                            }
                         })]
                     })
                 })

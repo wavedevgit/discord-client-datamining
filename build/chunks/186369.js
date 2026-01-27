@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     S: () => a,
-    b: () => s
+    b: () => o
 });
 var r = n(600975),
     i = n(688151);
@@ -33,7 +33,7 @@ let a = (0, r.C)({
     }]
 });
 
-function s(e, t) {
+function o(e, t) {
     return a.useExperiment({
         guildId: e,
         location: t

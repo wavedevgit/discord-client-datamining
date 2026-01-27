@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(102609),
-    s = n(49463),
-    o = n(688151);
+    o = n(49463),
+    s = n(688151);
 
 function l(e) {
     for (let t of e) {
-        let e = s.A.getUserExperimentDescriptor(t);
+        let e = o.A.getUserExperimentDescriptor(t);
         if (null != e) return [t, e]
     }
     return null
@@ -39,26 +39,26 @@ function u(e, t) {
 let d = {
     getFirstEligibleUserExperiment: l,
     isInExperimentBucket: function(e, t) {
-        return s.A.getUserExperimentBucket(e) === t
+        return o.A.getUserExperimentBucket(e) === t
     },
     experimentDescriptorEquals: function(e, t) {
         if (null == e && null == t || e === t) return !0;
         if (null == e && null != t || null != e && null == t) return !1;
         if (null != e && null != t) {
             if (e.type !== t.type || e.bucket !== t.bucket || e.revision !== t.revision) return !1;
-            if (e.type === o.Vh.USER && t.type === o.Vh.USER) return i().isEqual(e.context, t.context)
+            if (e.type === s.Vh.USER && t.type === s.Vh.USER) return i().isEqual(e.context, t.context)
         }
         return !0
     },
     trackExposureToFirstEligibleUserExperiment: c,
     getExperimentBucketName: function(e) {
         let t;
-        return e === o.RE.CONTROL ? "Control" : e === o.RE.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
+        return e === s.RE.CONTROL ? "Control" : e === s.RE.NOT_ELIGIBLE ? "Not Eligible" : "Treatment ".concat(e)
     },
     getRecentExperimentBuckets: function(e, t) {
         return Object.entries(e).reduce((e, n) => {
             let [r, i] = n;
-            return u(r, t) && i > o.RE.CONTROL && (e[r] = i), e
+            return u(r, t) && i > s.RE.CONTROL && (e[r] = i), e
         }, {})
     }
 }

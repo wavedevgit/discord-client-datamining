@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,33 +15,33 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = [];
+let s = [];
 
 function l(e) {
     let {
         component: t
     } = e;
-    if (o.indexOf(t) >= 0) return !1;
-    o = [...o, t]
+    if (s.indexOf(t) >= 0) return !1;
+    s = [...s, t]
 }
 
 function c() {
-    if (0 === o.length) return !1;
-    o = o.slice(0, -1)
+    if (0 === s.length) return !1;
+    s = s.slice(0, -1)
 }
 
 function u() {
-    o = []
+    s = []
 }
 class d extends(r = i.Ay.Store) {
     hasLayers() {
-        return o.length > 0
+        return s.length > 0
     }
     getLayers() {
-        return o
+        return s
     }
 }
-s(d, "displayName", "LayerStore");
+o(d, "displayName", "LayerStore");
 let f = new d(a.h, {
     LAYER_PUSH: l,
     LAYER_POP: c,

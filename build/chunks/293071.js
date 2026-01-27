@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 293071, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => d
+    default: () => c
 }), n(896048);
 var l = n(627968);
 n(64700);
@@ -11,7 +11,7 @@ var i = n(215530),
     o = n(417021),
     a = n(239606);
 
-function c(e) {
+function d(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             l = Object.keys(n);
@@ -30,7 +30,7 @@ function c(e) {
     return e
 }
 
-function d(e) {
+function c(e) {
     let {
         hideRestrictedProfile: t
     } = e, n = function(e, t) {
@@ -50,9 +50,9 @@ function d(e) {
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) l = n[i], !(t.indexOf(l) >= 0) && Object.prototype.propertyIsEnumerable.call(e, l) && (r[l] = e[l]);
         return r
     }(e, ["hideRestrictedProfile"]), {
-        user: d
-    } = n, [u, p] = (0, i.A)(d.id);
-    return u && !t ? (0, l.jsx)(o.A, c({
+        user: c
+    } = n, [u, p] = (0, i.A)(c.id);
+    return u && !t ? (0, l.jsx)(o.A, d({
         onHide: p
-    }, n)) : d.isNonUserBot() ? (0, l.jsx)(s.A, c({}, n)) : d.bot ? (0, l.jsx)(r.A, c({}, n)) : (0, l.jsx)(a.A, c({}, n))
+    }, n)) : c.isNonUserBot() ? (0, l.jsx)(s.A, d({}, n)) : c.bot ? (0, l.jsx)(r.A, d({}, n)) : (0, l.jsx)(a.A, d({}, n))
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 995360, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Iu: "partnerBranding__83420",
     _Y: "partnerBrandingGameTile__83420",

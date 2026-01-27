@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 811336, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     P0: "iconWrapper__9f20a",
     Kk: "icon__9f20a",

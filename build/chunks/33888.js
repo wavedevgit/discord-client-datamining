@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 33888, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(486020),
     p = n(835517),
     f = n(997509),
-    b = n(652215),
-    h = n(282435),
+    h = n(652215),
+    b = n(282435),
     x = n(985018),
     j = n(168938);
 
@@ -118,7 +118,7 @@ function v(e) {
         profile: n,
         onCustomBannerChange: l,
         canManageGuild: u
-    } = e, m = (0, a.bG)([g.A], () => g.A.getGuild(n.id)), p = null != (t = null == m ? void 0 : m.features.has(b.GuildFeatures.DISCOVERABLE)) && t, v = n.id, y = i.useCallback(e => () => {
+    } = e, m = (0, a.bG)([g.A], () => g.A.getGuild(n.id)), p = null != (t = null == m ? void 0 : m.features.has(h.GuildFeatures.DISCOVERABLE)) && t, v = n.id, y = i.useCallback(e => () => {
         f.A.updateGuildProfile(v, {
             brandColorPrimary: e,
             customBanner: null
@@ -133,7 +133,7 @@ function v(e) {
                 canManageGuild: u,
                 handleClick: y(null),
                 hasCustomBanner: p && null != n.customBanner
-            }), h.aA.map(e => {
+            }), b.aA.map(e => {
                 let {
                     name: t,
                     color: n

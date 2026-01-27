@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(460890),
-    s = n(834730),
-    o = n(568385),
+    o = n(834730),
+    s = n(568385),
     l = n(27192);
 
 function c(e, t, n) {
@@ -53,8 +53,8 @@ function f(e, t) {
 
 function p(e) {
     var t, n;
-    let s = i.useContext(a.VO);
-    return (null == s || null == (n = s.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(o.J, u({}, e)) : (0, r.jsx)(_, u({}, e))
+    let o = i.useContext(a.VO);
+    return (null == o || null == (n = o.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.J, u({}, e)) : (0, r.jsx)(_, u({}, e))
 }
 
 function _(e) {
@@ -62,7 +62,7 @@ function _(e) {
         label: t,
         checked: n,
         onChange: a,
-        labelType: o = "primary",
+        labelType: s = "primary",
         description: c,
         leadingIcon: d
     } = e, p = null != t && "" !== t ? (0, r.jsxs)("div", {
@@ -77,12 +77,12 @@ function _(e) {
                 color: "currentColor",
                 "aria-hidden": !0,
                 focusable: !1
-            }), (0, r.jsx)(s.E, {
+            }), (0, r.jsx)(o.E, {
                 variant: "text-md/normal",
-                color: "primary" === o ? "text-strong" : "text-subtle",
+                color: "primary" === s ? "text-strong" : "text-subtle",
                 children: t
             })]
-        }), null != c && "" !== c && (0, r.jsx)(s.E, {
+        }), null != c && "" !== c && (0, r.jsx)(o.E, {
             variant: "text-sm/normal",
             color: "text-subtle",
             style: {

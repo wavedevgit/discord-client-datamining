@@ -4,9 +4,9 @@
 n.d(t, {
     M_: () => d,
     P7: () => _,
-    TQ: () => o,
+    TQ: () => s,
     Xn: () => p,
-    Yl: () => s,
+    Yl: () => o,
     bN: () => l,
     c4: () => c,
     f7: () => a,
@@ -16,8 +16,8 @@ n.d(t, {
 var r = n(788868),
     i = n(818348);
 let a = 3,
-    s = "(max-width: 485px)",
-    o = "(max-height: 450px)";
+    o = "(max-width: 485px)",
+    s = "(max-height: 450px)";
 var l = function(e) {
         return e[e.CHANNEL = 1] = "CHANNEL", e[e.INTANGIBLE = 2] = "INTANGIBLE", e
     }({}),

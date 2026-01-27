@@ -8,14 +8,14 @@ var r = t(627968),
     l = t(503698),
     a = t.n(l),
     i = t(397927),
-    o = t(626584),
-    s = t(961895),
+    s = t(626584),
+    o = t(961895),
     d = t(23658),
     u = t(985018),
     c = t(893221),
     g = t(162253);
 
-function p(e, A, t) {
+function f(e, A, t) {
     return A in e ? Object.defineProperty(e, A, {
         value: t,
         enumerable: !0,
@@ -23,7 +23,7 @@ function p(e, A, t) {
         writable: !0
     }) : e[A] = t, e
 }
-let f = new o.A("UploadArea");
+let p = new s.A("UploadArea");
 
 function m() {
     return (0, r.jsxs)("div", {
@@ -74,7 +74,7 @@ class v extends n.Component {
                     className: c.bgScale
                 }), (0, r.jsxs)("div", {
                     className: c.inner,
-                    children: [(0, r.jsx)(s.A, {
+                    children: [(0, r.jsx)(o.A, {
                         icons: t
                     }), (0, r.jsx)("div", {
                         className: c.title,
@@ -91,18 +91,18 @@ class v extends n.Component {
     }
     constructor(...e) {
         var A;
-        super(...e), A = this, p(this, "state", {
+        super(...e), A = this, f(this, "state", {
             isDragging: !1,
             isOverZone: !1
-        }), p(this, "dragOverTimeout", null), p(this, "elementDOMRef", n.createRef()), p(this, "isAllDropFiles", e => {
+        }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", n.createRef()), f(this, "isAllDropFiles", e => {
             for (let t = 0; t < e.length; t++) try {
                 var A;
                 let r = null != (A = e[t].webkitGetAsEntry()) ? A : e[t].getAsEntry();
-                if (null == r) return f.warn("Dropped item is null or undefined"), !1;
+                if (null == r) return p.warn("Dropped item is null or undefined"), !1;
                 if (!r.isFile) return !1
             } catch (e) {}
             return !0
-        }), p(this, "preventUnwantedDrop", function(e) {
+        }), f(this, "preventUnwantedDrop", function(e) {
             let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
                 r = e.dataTransfer;
             if (null == r) return !0;
@@ -114,7 +114,7 @@ class v extends n.Component {
                 title: u.intl.string(u.t.azO1Pe),
                 help: u.intl.string(u.t["Koklr/"])
             })), !1)
-        }), p(this, "handleDragOver", e => {
+        }), f(this, "handleDragOver", e => {
             var A, t, r;
             if (!this.preventUnwantedDrop(e)) return !1;
             let n = e.dataTransfer;
@@ -132,23 +132,23 @@ class v extends n.Component {
                     }), null == (e = (A = this.props).onDragClear) || e.call(A)
                 }, 1e3)
             }
-        }), p(this, "handleDragOverZone", () => {
+        }), f(this, "handleDragOverZone", () => {
             this.setState({
                 isOverZone: !0
             })
-        }), p(this, "handleDragLeaveZone", () => {
+        }), f(this, "handleDragLeaveZone", () => {
             this.setState({
                 isOverZone: !1
             })
-        }), p(this, "handleDragLeave", e => {
+        }), f(this, "handleDragLeave", e => {
             this.state.isDragging && (e.stopPropagation(), e.preventDefault(), this.clearDragging())
-        }), p(this, "clearDragging", () => {
+        }), f(this, "clearDragging", () => {
             var e, A;
             this.setState({
                 isDragging: !1,
                 isOverZone: !1
             }), null == (e = (A = this.props).onDragClear) || e.call(A)
-        }), p(this, "handleDrop", e => {
+        }), f(this, "handleDrop", e => {
             if (!this.preventUnwantedDrop(e, !0)) return !1;
             let A = e.dataTransfer;
             if (null == A) return !0;

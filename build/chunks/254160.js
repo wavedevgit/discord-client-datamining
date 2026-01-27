@@ -2,7 +2,7 @@
 /** chunk id: 254160, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    f: () => s
+    f: () => o
 });
 var r = n(887924);
 let i = new(n(626584)).A("codedLinkQueue"),
@@ -12,7 +12,7 @@ let i = new(n(626584)).A("codedLinkQueue"),
         interval: 2e3
     });
 
-function s(e) {
+function o(e) {
     a.add(e)
 }
 a.on("add", () => {

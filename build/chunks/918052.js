@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -42,13 +42,13 @@ function u() {
 }
 class d extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        c = o({}, l(), null != e ? e : {})
+        c = s({}, l(), null != e ? e : {})
     }
     getState() {
         return c
     }
 }
-s(d, "displayName", "ActivityShelfStore"), s(d, "persistKey", "ActivityShelfStore");
+o(d, "displayName", "ActivityShelfStore"), o(d, "persistKey", "ActivityShelfStore");
 let f = new d(a.h, {
     LOGOUT: u
 })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(379197),
     i = n(554146),
     a = n(933681),
-    s = n(155718),
-    o = n(933958),
+    o = n(155718),
+    s = n(933958),
     l = n(476370),
     c = n(457421),
     u = n(514190),
@@ -27,8 +27,8 @@ function p(e) {
             return (0, d.p)();
         case i.M.ACTIVITIES_VOICE_LAUNCHER_BADGE:
             return (0, l.C)({
-                storeState: o.Ay.getState(),
-                surface: s.YI.VOICE_LAUNCHER
+                storeState: s.Ay.getState(),
+                surface: o.YI.VOICE_LAUNCHER
             });
         case i.M.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK:
             return 0;

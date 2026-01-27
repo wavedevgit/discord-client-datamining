@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(990078),
     c = n(397927),
     u = n(442433),
@@ -65,7 +65,7 @@ let S = function(e) {
     let {
         gameId: t,
         channelId: a
-    } = e, O = i.useRef(null), A = (0, o.bG)([h.A], () => h.A.getDetectableGame(t)), S = (0, o.bG)([_.A], () => _.A.getChannel(a)), T = null != S ? S.getGuildId() : null, C = null != A ? e => {
+    } = e, O = i.useRef(null), A = (0, s.bG)([h.A], () => h.A.getDetectableGame(t)), S = (0, s.bG)([_.A], () => _.A.getChannel(a)), T = null != S ? S.getGuildId() : null, C = null != A ? e => {
         (0, u.L3)(e, async () => {
             let {
                 default: e
@@ -77,7 +77,7 @@ let S = function(e) {
         })
     } : void 0, N = null != A ? (0, r.jsx)("img", {
         alt: "",
-        className: s()(b.Kk, b.FP),
+        className: o()(b.Kk, b.FP),
         src: m.Ay.getApplicationIconURL({
             id: A.id,
             icon: A.icon,

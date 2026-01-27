@@ -2,12 +2,12 @@
 /** chunk id: 475500, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(998493),
     i = n(374372),
     a = n(355418);
-class s extends a.c {
+class o extends a.c {
     innerPattern() {
         return RegExp(`(?:in|f\xfcr|w\xe4hrend)\\s*(${r.Pl})(?=\\W|$)`, "i")
     }

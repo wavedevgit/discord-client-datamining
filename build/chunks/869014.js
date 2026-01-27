@@ -2,13 +2,13 @@
 /** chunk id: 869014, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(896048);
 var r = n(439372),
     i = n(626584),
     a = n(87001),
-    s = n(531685),
-    o = n(365971),
+    o = n(531685),
+    s = n(365971),
     l = n(777334),
     c = n(41984),
     u = n(589051),
@@ -61,8 +61,8 @@ let b = null,
             if (!v) return b = "MainWindowFocused", m(e);
             if (!y(!0)) return b = "NoOverlayRendering", m(e);
             let n = null !== f.A.getFocusedRunningGame(),
-                r = s.A.isFocused((0, o.Q2)(t));
-            if (s.A.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
+                r = o.A.isFocused((0, s.Q2)(t));
+            if (o.A.isFocused() && h.error("Main window is reported as focused when it should not be!"), n || r) {
                 b = n ? "OverlayGameFocused" : "OverlayWindowFocused";
                 let r = t.requestAnimationFrame(t => {
                     S(r), e(t)
@@ -76,7 +76,7 @@ let b = null,
     };
 
 function w() {
-    return !s.A.isFocused() || !s.A.isVisible()
+    return !o.A.isFocused() || !o.A.isVisible()
 }
 
 function R() {
@@ -137,4 +137,4 @@ class D extends r.A {
         })
     }
 }
-let x = new D
+let L = new D

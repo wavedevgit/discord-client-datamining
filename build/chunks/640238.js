@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(862482),
+    o = n.n(a),
+    s = n(862482),
     l = n(725570),
     c = n(397927),
     u = n(818284);
@@ -50,7 +50,7 @@ function p(e) {
             bodyClassName: y,
             transitionState: b,
             loading: O = !1,
-            confirmButtonColor: v = o.$n.Colors.RED,
+            confirmButtonColor: v = s.$n.Colors.RED,
             focusCancel: A = !1,
             impression: I
         } = e,
@@ -60,24 +60,24 @@ function p(e) {
             var e;
             return null == (e = S.current) ? void 0 : e.focus()
         }, 0)
-    }, [A]), i.useLayoutEffect(() => () => null == E ? void 0 : E()), null != p && (t = (0, r.jsx)(o.$n, {
+    }, [A]), i.useLayoutEffect(() => () => null == E ? void 0 : E()), null != p && (t = (0, r.jsx)(s.$n, {
         "data-migration-pending": !0,
         type: "button",
-        look: o.$n.Looks.FILLED,
-        color: o.$n.Colors.PRIMARY,
+        look: s.$n.Looks.FILLED,
+        color: s.$n.Colors.PRIMARY,
         className: u.x,
-        size: o.$n.Sizes.MEDIUM,
+        size: s.$n.Sizes.MEDIUM,
         disabled: O,
         onClick: () => {
             null == m || m(), g()
         },
         autoFocus: A,
         children: p
-    })), null != f && (n = (0, r.jsx)(o.$n, {
+    })), null != f && (n = (0, r.jsx)(s.$n, {
         "data-migration-pending": !0,
         buttonRef: S,
         type: "submit",
-        size: o.$n.Sizes.MEDIUM,
+        size: s.$n.Sizes.MEDIUM,
         color: v,
         submitting: O,
         onClick: async () => {
@@ -104,7 +104,7 @@ function p(e) {
             })
         }) : null, (0, r.jsx)(l.$m, {
             "data-migration-pending": !0,
-            className: s()(u.Q, y),
+            className: o()(u.Q, y),
             children: d
         }), (0, r.jsxs)(l.jl, {
             "data-migration-pending": !0,

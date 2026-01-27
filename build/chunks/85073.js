@@ -2,13 +2,13 @@
 /** chunk id: 85073, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    t: () => o
+    t: () => s
 });
 var r = n(424918),
     i = n(651162),
     a = n(624711);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,11 +16,11 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o {
+class s {
     static fromServer(e) {
-        return new o(e)
+        return new s(e)
     }
     constructor(e) {
-        s(this, "subblocks", void 0), this.type = i.g.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.u.CATEGORY ? a.j.fromServer(e) : e)
+        o(this, "subblocks", void 0), this.type = i.g.FEATURED, this.subblocks = e.subblocks.map(e => e.type === r.u.CATEGORY ? a.j.fromServer(e) : e)
     }
 }

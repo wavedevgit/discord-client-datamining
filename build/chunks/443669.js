@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 443669, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     D6: "soundButtonSettingContainer__84bad",
     Zg: "emoji__84bad",

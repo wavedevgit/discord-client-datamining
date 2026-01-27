@@ -2,12 +2,12 @@
 /** chunk id: 312006, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => M
+    Ay: () => j
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(734057),
     c = n(696451),
     u = n(317525),
@@ -126,11 +126,11 @@ function D(e) {
     return C(e.guildId)
 }
 
-function x() {
+function L() {
     y = {}
 }
 
-function L(e) {
+function x(e) {
     let {
         guild: t
     } = e;
@@ -139,7 +139,7 @@ function L(e) {
         (null == n || n.guild_id === t.id) && delete y[e]
     }
 }
-class j extends(r = s.Ay.Store) {
+class M extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.Ay, l.A, d.A, f.default, p.A, u.A)
     }
@@ -165,15 +165,15 @@ class j extends(r = s.Ay.Store) {
         return I(e, t, i)
     }
 }
-E(j, "displayName", "StageChannelRoleStore");
-let M = new j(o.h, {
+E(M, "displayName", "StageChannelRoleStore");
+let j = new M(s.h, {
     CHANNEL_UPDATES: N,
-    CONNECTION_OPEN: x,
+    CONNECTION_OPEN: L,
     GUILD_MEMBER_REMOVE: R,
     GUILD_MEMBER_UPDATE: R,
     GUILD_ROLE_UPDATE: w,
     PASSIVE_UPDATE_V2: D,
     VOICE_STATE_UPDATES: P,
-    GUILD_CREATE: L,
-    GUILD_DELETE: L
+    GUILD_CREATE: x,
+    GUILD_DELETE: x
 })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(960488),
     i = n(562465),
     a = n(73153),
-    s = n(695870),
-    o = n(142120),
+    o = n(695870),
+    s = n(142120),
     l = n(463347),
     c = n(95701),
     u = n(734057),
@@ -28,7 +28,7 @@ function m() {
 }
 
 function g(e) {
-    if (null == e || e === s.E || (0, p.jq)(e) || null != u.A.getChannel(e) || (m(), !o.A.isConnected())) return Promise.resolve();
+    if (null == e || e === o.E || (0, p.jq)(e) || null != u.A.getChannel(e) || (m(), !s.A.isConnected())) return Promise.resolve();
     let t = _[e];
     if (null != t)
         if ("LOADING" === t.type) return t.promise;

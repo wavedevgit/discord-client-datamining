@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(284009),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(50268),
     c = n(486503),
     u = n(950191),
@@ -40,23 +40,23 @@ function m(e) {
         (0, p.C)(t.id), null == a || a()
     }, [t.id, a]), v = i.useCallback(() => {
         let e = f.Ay.getUserAvatarURL(t, !0, _.XAf);
-        s()(null != e, "cannot copy null avatar URL"), (0, p.C)(e), null == a || a()
+        o()(null != e, "cannot copy null avatar URL"), (0, p.C)(e), null == a || a()
     }, [t, a]), A = i.useCallback(() => {
-        s()(null != b, "cannot copy null banner URL"), (0, p.C)(b), null == a || a()
+        o()(null != b, "cannot copy null banner URL"), (0, p.C)(b), null == a || a()
     }, [b, a]);
-    return !__OVERLAY__ && g && p.p5 && null != t.id ? E ? (0, r.jsxs)(o.Drp, {
+    return !__OVERLAY__ && g && p.p5 && null != t.id ? E ? (0, r.jsxs)(s.Drp, {
         id: "copy-user-info",
         label: h.intl.string(h.t.QvQeLv),
-        children: [(0, r.jsx)(o.Drp, {
+        children: [(0, r.jsx)(s.Drp, {
             id: "copy-user-id",
             label: h.intl.string(h.t["/AXYnE"]),
             action: O,
-            icon: o.L9S
-        }), null != t.avatar && (0, r.jsx)(o.Drp, {
+            icon: s.L9S
+        }), null != t.avatar && (0, r.jsx)(s.Drp, {
             id: "copy-user-avatar-link",
             label: h.intl.string(h.t.gERDvM),
             action: v
-        }), null != b && (0, r.jsx)(o.Drp, {
+        }), null != b && (0, r.jsx)(s.Drp, {
             id: "copy-user-banner-link",
             label: h.intl.string(h.t.hsNv0R),
             action: A

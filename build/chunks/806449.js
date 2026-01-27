@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 806449, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     nw: "outerContainer__74dc6",
     fu: "outerContainerGiftInventory__74dc6",

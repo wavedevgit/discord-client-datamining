@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(580630),
     c = n(381247),
     u = n(361728);
@@ -27,7 +27,7 @@ function d(e) {
         defaultExpanded: _,
         isDisabled: a.length <= 0,
         onExpandedChange: m,
-        collapsedContent: (0, r.jsx)(o.Text, {
+        collapsedContent: (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             color: "text-subtle",
             children: y
@@ -38,13 +38,13 @@ function d(e) {
                 label: n,
                 amount: i,
                 icon: a,
-                tooltip: s
-            } = e, o = (0, l.$g)(i, p), u = (0, l.CE)(o, d, f);
+                tooltip: o
+            } = e, s = (0, l.$g)(i, p), u = (0, l.CE)(s, d, f);
             return (0, r.jsx)(c.i, {
                 label: n,
                 value: u,
                 icon: a,
-                tooltip: s
+                tooltip: o
             }, t)
         }), (0, r.jsx)("div", {
             className: u.m
@@ -55,7 +55,7 @@ function d(e) {
         })]
     });
     return (0, r.jsx)("div", {
-        className: s()({
+        className: o()({
             [u.k]: h
         }),
         children: b

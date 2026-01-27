@@ -16,16 +16,16 @@ var i = r(503698),
     p = r(634654),
     f = r(652215),
     C = r(985018),
-    b = r(587106);
+    j = r(587106);
 
-function j(e) {
+function b(e) {
     let {
         pills: t
     } = e;
     return (0, n.jsx)("div", {
-        className: b.nM,
+        className: j.nM,
         children: t.map(e => (0, n.jsx)("div", {
-            className: b.Io,
+            className: j.Io,
             children: (0, n.jsx)(s.Text, {
                 variant: "text-sm/normal",
                 children: e
@@ -47,19 +47,19 @@ function O(e) {
     ];
     return (0, n.jsx)("div", {
         className: o()({
-            [b.no]: i
+            [j.no]: i
         }),
         children: (0, n.jsxs)("div", {
-            className: b.kL,
+            className: j.kL,
             children: [(0, n.jsxs)("div", {
-                className: b.Qs,
+                className: j.Qs,
                 children: [(0, n.jsx)("div", {
-                    className: b.V_,
-                    children: O.map((e, t) => (0, n.jsx)(j, {
+                    className: j.V_,
+                    children: O.map((e, t) => (0, n.jsx)(b, {
                         pills: e
                     }, "pill-row-".concat(t)))
                 }), (0, n.jsxs)("div", {
-                    className: b.mv,
+                    className: j.mv,
                     children: [(0, n.jsx)(s.Text, {
                         variant: "text-lg/medium",
                         color: "text-strong",
@@ -104,15 +104,15 @@ function O(e) {
                     })]
                 })]
             }), (0, n.jsxs)("div", {
-                className: b.SN,
+                className: j.SN,
                 children: [(0, n.jsx)("img", {
                     src: (0, a.n)("server_products/storefront/preview-mural.png"),
                     alt: "",
-                    className: b.$G
+                    className: j.$G
                 }), (0, n.jsx)("img", {
                     src: (0, a.n)("server_products/storefront/preview-mural-reduced.png"),
                     alt: "",
-                    className: b.rp
+                    className: j.rp
                 })]
             })]
         })

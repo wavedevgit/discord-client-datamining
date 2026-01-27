@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(436857),
+    o = n(311907),
+    s = n(436857),
     l = n(212245),
     c = n(849269),
     u = n(869003),
@@ -74,7 +74,7 @@ let T = function(e, t) {
         enableBuildOverrides: !1,
         enableEmojiClick: !1
     })]), ["commandMention", "customEmoji", "em", "emoji", "emoticon", "highlight", "inlineCode", "looseEm", "s", "strong", "text", "timestamp", "u", "spoiler"]),
-    N = o.aV(C);
+    N = s.aV(C);
 
 function w(e) {
     let {
@@ -82,7 +82,7 @@ function w(e) {
         application: n,
         location: i,
         sectionName: a,
-        commandName: o,
+        commandName: s,
         autoDismissOnClick: _ = !0,
         launchingComponentId: h,
         submitting: m = !1,
@@ -92,7 +92,7 @@ function w(e) {
         context: t,
         applicationId: n.id,
         fetchesApplication: g
-    }), C = (0, O.G)(T), N = (0, s.bG)([y.A], () => y.A.entrypoint()), w = r.useMemo(() => {
+    }), C = (0, O.G)(T), N = (0, o.bG)([y.A], () => y.A.entrypoint()), w = r.useMemo(() => {
         var e, r, i;
         if ("channel" !== t.type) return null != (e = null == (r = n.bot) ? void 0 : r.id) ? e : null == (i = (0, f.Sx)(t, n.id).descriptor) ? void 0 : i.botId
     }, [t, n.id, n.bot]), R = (0, c.wK)({
@@ -119,7 +119,7 @@ function w(e) {
         source: N,
         fetchesApplication: g,
         onConfirmActivityLaunchChecksAlertOpen: I
-    }), P = "primary", D = null != o ? o : A.intl.string(A.t.zKX8Nu);
+    }), P = "primary", D = null != s ? s : A.intl.string(A.t.zKX8Nu);
     return C === c.o6.JOIN ? (P = "active", D = A.intl.string(A.t.d9PsMj)) : C !== c.o6.LEAVE || m || (P = "critical-primary", D = A.intl.string(A.t["Hi1/aQ"])), {
         onActivityItemSelected: R,
         activityAction: C,

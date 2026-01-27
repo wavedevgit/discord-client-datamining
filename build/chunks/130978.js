@@ -2,7 +2,7 @@
 /** chunk id: 130978, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => s,
+    $: () => o,
     w: () => a
 });
 var r = n(503278),
@@ -18,7 +18,7 @@ function a(e, t) {
     return n
 }
 
-function s(e, t) {
+function o(e, t) {
     let {
         enabled: n
     } = r.l.getCurrentConfig({

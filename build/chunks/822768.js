@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n(607470),
-    o = n(860923),
+    o = n(607470),
+    s = n(860923),
     l = n(126418);
 let c = 1e4,
     u = 5e3,
@@ -18,7 +18,7 @@ let c = 1e4,
     _ = [-15, 15],
     h = () => {
         let e = i.useRef(null),
-            t = (0, o.A)(),
+            t = (0, s.A)(),
             [n, h] = i.useState(!1),
             [m, g] = i.useState([0, 0]),
             [E, y] = i.useState(.5),
@@ -38,7 +38,7 @@ let c = 1e4,
                     window.clearTimeout(t)
                 }
             }
-        }, [n]), (0, r.jsx)(s.A, {
+        }, [n]), (0, r.jsx)(o.A, {
             ref: e,
             className: l.d,
             style: {

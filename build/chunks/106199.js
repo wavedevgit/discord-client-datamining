@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 106199, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     kb: "left_caab99",
     pG: "right_caab99",

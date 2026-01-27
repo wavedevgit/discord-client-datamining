@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 396276, original params: e (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 396276, original params: t (module,exports,require) **/
 "use strict";
-var t = RegExp("\r", "g");
-e.exports = function(e) {
-    return e.replace(t, "")
+var e = RegExp("\r", "g");
+t.exports = function(t) {
+    return t.replace(e, "")
 }

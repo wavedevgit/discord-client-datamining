@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(397927),
     c = n(765671),
     u = n(342860);
@@ -28,7 +28,7 @@ function f(e) {
         height: A = 0
     } = (0, c.Ay)(), I = (0, l.zhh)({
         height: y ? O + A : A,
-        config: o.config.stiff,
+        config: s.config.stiff,
         onRest: () => E(!0)
     }, h ? "animate-never" : "respect-motion-settings"), S = i.useCallback(() => {
         _(!p)
@@ -39,17 +39,17 @@ function f(e) {
         }, d);
         return () => clearTimeout(e)
     }, []), (0, r.jsx)("div", {
-        className: s()(u.uR, {
+        className: o()(u.uR, {
             [u.$M]: y
         }, n),
-        children: (0, r.jsxs)(o.animated.div, {
-            className: s()(u.N0, {
+        children: (0, r.jsxs)(s.animated.div, {
+            className: o()(u.N0, {
                 [u.Mm]: y && g
             }),
             style: I,
             children: [(0, r.jsx)("div", {
                 ref: v,
-                className: s()(u.wx, {
+                className: o()(u.wx, {
                     [u.$M]: y
                 }),
                 children: t({

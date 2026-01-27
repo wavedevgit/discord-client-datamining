@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(803082),
     a = n(339241),
-    s = n(96441),
-    o = n(8321),
+    o = n(96441),
+    s = n(8321),
     l = n(757260);
 
 function c(e, t, n) {
@@ -32,7 +32,7 @@ function c(e, t, n) {
             ...e,
             isInvalid: u
         }, t, n);
-    (0, s.X)(e, c, n);
+    (0, o.X)(e, c, n);
     let {
         isIndeterminate: y,
         isRequired: b,
@@ -43,7 +43,7 @@ function c(e, t, n) {
     });
     let {
         pressProps: v
-    } = (0, o.d)({
+    } = (0, s.d)({
         isDisabled: g || E,
         onPress() {
             let {

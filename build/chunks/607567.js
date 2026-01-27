@@ -8,8 +8,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(713402),
+    o = n(311907),
+    s = n(713402),
     l = n(73153),
     c = n(427157),
     u = n(961350),
@@ -91,24 +91,24 @@ function N(e, t, n) {
 function w(e, t, n, r) {
     var i;
     let a = p.default.getUser(n),
-        s = null == a;
+        o = null == a;
     null == a && (a = new c.A({
         id: n,
         username: "...",
         discriminator: n.slice(-5, -1)
     }));
     let {
-        member: o,
+        member: s,
         comparator: l
     } = N(t, a, e), u = {
         voiceState: e,
         user: a,
-        member: o,
+        member: s,
         comparator: l,
-        nick: null == o ? void 0 : o.nick,
+        nick: null == s ? void 0 : s.nick,
         connectedOn: null != (i = null == r ? void 0 : r.connectedOn) ? i : Date.now()
     };
-    return s && (u._isPlaceholder = !0), u
+    return o && (u._isPlaceholder = !0), u
 }
 class R {
     updateVoiceState(e) {
@@ -121,11 +121,11 @@ class R {
             else if (n.voiceState !== t) {
                 var i;
                 let a = S(this.guildId, r),
-                    s = null != (i = null == a ? void 0 : a.nick) ? i : m.Ay.getName(r);
+                    o = null != (i = null == a ? void 0 : a.nick) ? i : m.Ay.getName(r);
                 return this._voiceStates.set(e, O(y({}, n), {
                     member: a,
-                    comparator: C(t, s),
-                    nick: s,
+                    comparator: C(t, o),
+                    nick: o,
                     voiceState: t
                 })), !0
             }
@@ -182,7 +182,7 @@ class R {
         }
     }
     constructor(e) {
-        E(this, "guildId", void 0), E(this, "_pending", new Set), E(this, "_voiceStates", new o.J(e => {
+        E(this, "guildId", void 0), E(this, "_pending", new Set), E(this, "_voiceStates", new s.J(e => {
             let {
                 voiceState: {
                     channelId: t
@@ -203,10 +203,10 @@ function P() {
 }
 
 function D() {
-    V()
+    F()
 }
 
-function x(e) {
+function L(e) {
     let {
         voiceStates: t
     } = e;
@@ -219,25 +219,25 @@ function x(e) {
     }, !1)
 }
 
-function L(e) {
+function x(e) {
     var t, n;
     let r = !1,
         i = new Set(null == (t = A[e.guildId]) ? void 0 : t.getUserIds()),
         a = new Set(null == (n = e.voiceStates) ? void 0 : n.map(e => e.userId)),
-        s = new Set(e.removedVoiceStateUsers);
+        o = new Set(e.removedVoiceStateUsers);
     for (let t of new Set([...i, ...a])) r = I(e.guildId).updateVoiceState(t) || r;
-    for (let t of i) s.has(t) || (r = I(e.guildId).updateMember(t) || r);
+    for (let t of i) o.has(t) || (r = I(e.guildId).updateMember(t) || r);
     return r
 }
 
-function j(e) {
+function M(e) {
     let {
         guildId: t
     } = e, n = u.default.getId();
     return null != n && I(null != t ? t : g.ME).updateVoiceState(n)
 }
 
-function M() {
+function j() {
     return a().reduce(A, (e, t) => t.updateUsers() || e, !1)
 }
 
@@ -263,7 +263,7 @@ function G(e) {
     delete A[t.id]
 }
 
-function V() {
+function F() {
     A = {};
     let e = _.A.getAllVoiceStates();
     h.default.keys(e).forEach(t => {
@@ -272,9 +272,9 @@ function V() {
         })
     })
 }
-class F extends(r = s.Ay.Store) {
+class V extends(r = o.Ay.Store) {
     initialize() {
-        V(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], M)
+        F(), this.waitFor(u.default, d.A, f.Ay, p.default, _.A), this.syncWith([p.default], j)
     }
     getVoiceStates(e) {
         return I(null != e ? e : g.ME).getVoiceStates()
@@ -300,14 +300,14 @@ class F extends(r = s.Ay.Store) {
         return I(null != e ? e : g.ME).getVersion()
     }
 }
-E(F, "displayName", "SortedVoiceStateStore");
-let B = new F(l.h, {
+E(V, "displayName", "SortedVoiceStateStore");
+let B = new V(l.h, {
     CONNECTION_OPEN: P,
     OVERLAY_INITIALIZE: D,
-    VOICE_CHANNEL_SELECT: j,
-    VOICE_STATE_UPDATES: x,
+    VOICE_CHANNEL_SELECT: M,
+    VOICE_STATE_UPDATES: L,
     GUILD_MEMBER_UPDATE: k,
     GUILD_CREATE: U,
     GUILD_DELETE: G,
-    PASSIVE_UPDATE_V2: L
+    PASSIVE_UPDATE_V2: x
 })

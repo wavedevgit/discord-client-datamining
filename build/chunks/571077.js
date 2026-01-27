@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(658575),
-    o = n(123791),
+    o = n(658575),
+    s = n(123791),
     l = n(622543),
     c = n(993401),
     u = n(985018);
@@ -61,7 +61,7 @@ function h(e) {
         user: t,
         onClick: n
     } = e, i = p(e, ["user", "onClick"]);
-    return (0, o.C)(t.id), (0, r.jsx)(c.FD, f({
+    return (0, s.C)(t.id), (0, r.jsx)(c.FD, f({
         action: "PRESS_APP_STOREFRONT",
         icon: a.U1X,
         text: u.intl.string(u.t.V7j5aZ),
@@ -73,18 +73,18 @@ function h(e) {
 function m(e) {
     var t;
     let {
-        user: o,
+        user: s,
         guildId: c
     } = e, u = p(e, ["user", "guildId"]), d = (0, i.bG)([l.A], () => {
         var e;
-        return null == (e = l.A.getUserProfile(o.id)) ? void 0 : e.application
-    }), _ = (0, s.G)(null != (t = null == d ? void 0 : d.id) ? t : "");
+        return null == (e = l.A.getUserProfile(s.id)) ? void 0 : e.application
+    }), _ = (0, o.G)(null != (t = null == d ? void 0 : d.id) ? t : "");
     if (null == d || !_) return null;
     let m = () => {
         (0, a.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("33563"), n.e("80212")]).then(n.bind(n, 719847));
+            } = await Promise.all([n.e("13088"), n.e("33563"), n.e("92201")]).then(n.bind(n, 719847));
             return t => (0, r.jsx)(e, f({
                 appId: d.id,
                 guildId: c
@@ -92,7 +92,7 @@ function m(e) {
         })
     };
     return (0, r.jsx)(h, f({
-        user: o,
+        user: s,
         guildId: c,
         onClick: m
     }, u))

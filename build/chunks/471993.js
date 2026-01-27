@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(401843),
-    s = n(874124),
-    o = n(734057),
+    o = n(874124),
+    s = n(734057),
     l = n(71393),
     c = n(430452),
     u = n(287809),
@@ -59,15 +59,15 @@ function g(e, t, p) {
     if (d.isPlatformEmbedded)(0, i.mMO)(async () => {
         let {
             default: e
-        } = await Promise.all([n.e("96811"), n.e("14476")]).then(n.bind(n, 648230));
+        } = await Promise.all([n.e("96811"), n.e("2780")]).then(n.bind(n, 648230));
         return t => (0, r.jsx)(e, m(_({}, t), {
             analyticsLocations: p
         }))
     });
     else {
         var h;
-        let n = o.A.getChannel(t),
-            r = (0, s.A)(f.jQ.PRESET_CUSTOM, f.on.RESOLUTION_1080, f.kn.FPS_30, u.default.getCurrentUser(), null == (h = l.A.getGuild(e)) ? void 0 : h.premiumTier, n) ? {
+        let n = s.A.getChannel(t),
+            r = (0, o.A)(f.jQ.PRESET_CUSTOM, f.on.RESOLUTION_1080, f.kn.FPS_30, u.default.getCurrentUser(), null == (h = l.A.getGuild(e)) ? void 0 : h.premiumTier, n) ? {
                 width: 1920,
                 height: 1080
             } : {

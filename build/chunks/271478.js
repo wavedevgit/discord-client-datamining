@@ -2,19 +2,19 @@
 /** chunk id: 271478, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    g: () => o
+    g: () => s
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(100392),
-    s = n(102609);
+    o = n(102609);
 
-function o(e) {
+function s(e) {
     let {
         label: t,
         description: n,
-        experiment: o,
+        experiment: s,
         experimentId: l,
         overrideInfo: c
     } = e;
@@ -23,8 +23,8 @@ function o(e) {
         description: n,
         value: null != c ? c.variantId : void 0,
         clearable: null != c,
-        options: (0, a.hp)(o),
-        onSelectionChange: e => (0, s.t$)(o.system, l, e),
+        options: (0, a.hp)(s),
+        onSelectionChange: e => (0, o.t$)(s.system, l, e),
         selectionMode: "single",
         fullWidth: !0
     })

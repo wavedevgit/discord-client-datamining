@@ -4,8 +4,8 @@
 var r = n(860511),
     i = n(446474),
     a = n(739305),
-    s = n(503199),
-    o = n(777718),
+    o = n(503199),
+    s = n(777718),
     l = n(250594),
     c = n(503628),
     u = r.RangeError,
@@ -27,11 +27,11 @@ var r = n(860511),
     });
 h("set", function(e) {
     _(this);
-    var t = o(arguments.length > 1 ? arguments[1] : void 0, 1),
+    var t = s(arguments.length > 1 ? arguments[1] : void 0, 1),
         n = l(e);
     if (m) return i(p, this, n, t);
     var r = this.length,
-        a = s(n),
+        a = o(n),
         c = 0;
     if (a + t > r) throw new u("Wrong length");
     for (; c < a;) this[t + c] = n[c++]

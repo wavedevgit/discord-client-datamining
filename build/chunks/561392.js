@@ -3,18 +3,18 @@
 "use strict";
 n.d(t, {
     D: () => i.DL,
-    u: () => o
+    u: () => s
 }), n(896048);
 var r = n(64700),
     i = n(862019),
     a = n(879821),
-    s = n(193439);
+    o = n(193439);
 
-function o(e) {
+function s(e) {
     let {
         defaultOpen: t,
         offset: n = 4,
-        placement: o,
+        placement: s,
         matchReferenceWidth: l = !0,
         setHeight: c,
         setWidth: u,
@@ -39,7 +39,7 @@ function o(e) {
         open: f,
         onOpenChange: p,
         transform: d,
-        middleware: [null == o ? (0, a.RK)() : void 0, (0, a.Ej)({
+        middleware: [null == s ? (0, a.RK)() : void 0, (0, a.Ej)({
             apply(e) {
                 let {
                     rects: t,
@@ -55,8 +55,8 @@ function o(e) {
                 })
             }
         }), (0, a.UU)(), (0, a.cY)(n), (0, a.BN)()],
-        whileElementsMounted: s.ll,
-        placement: o,
+        whileElementsMounted: o.ll,
+        placement: s,
         strategy: "fixed"
     }), b = (0, i.s9)(y, {
         bubbles: {

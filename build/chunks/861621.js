@@ -1,7 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 861621, original params: e,t,n (module,exports,require) **/
-"use strict";
-
 function r(e, t, n) {
     let r = new Set(t.bundledSkuIds);
     return n.filter(t => t.id !== e && r.has(t.skuId))

@@ -10,8 +10,8 @@ var r = n(627968);
 n(64700);
 var i = n(386181),
     a = n(825913),
-    s = n(650682),
-    o = n(397927),
+    o = n(650682),
+    s = n(397927),
     l = n(507773);
 
 function c(e, t, n) {
@@ -88,14 +88,14 @@ function m(e) {
         children: t
     } = e, n = p(e, ["children"]), {
         isDisabled: i
-    } = (0, a.CC)(s.k, "trigger");
-    return (0, r.jsx)(o.vN3, {
-        children: (0, r.jsx)(s.$, {
+    } = (0, a.CC)(o.k, "trigger");
+    return (0, r.jsx)(s.vN3, {
+        children: (0, r.jsx)(o.$, {
             slot: "trigger",
             className: l.hZ,
-            children: (0, r.jsxs)(o.Text, f(u({}, n), {
+            children: (0, r.jsxs)(s.Text, f(u({}, n), {
                 className: l.aQ,
-                children: [t, !i && (0, r.jsx)(o.abt, {
+                children: [t, !i && (0, r.jsx)(s.abt, {
                     size: "xs",
                     color: "currentColor",
                     className: l.ai

@@ -1,36 +1,33 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 877923, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => g
 });
 var r = n(627968),
     i = n(64700),
-    a = n(417597),
-    s = n(451988),
-    o = n(397927),
-    l = n(775602),
+    l = n(417597),
+    a = n(451988),
+    s = n(397927),
+    o = n(775602),
     c = n(21161),
     u = n(67414),
     d = n(147036),
-    f = n(888675),
-    p = n(652215),
-    _ = n(731875);
-let h = 6,
-    m = 1e3;
+    p = n(888675),
+    m = n(652215),
+    f = n(731875);
 
 function g(e) {
     let {
         giftIntentType: t,
         recipientUser: n,
         channel: g
-    } = e, E = (0, a.bG)([l.A], () => l.A.useReducedMotion), y = i.useRef(null), {
+    } = e, h = (0, l.bG)([o.A], () => o.A.useReducedMotion), _ = i.useRef(null), {
         createMultipleConfettiAt: b
-    } = i.useContext(c.x), O = i.useCallback(e => ({
+    } = i.useContext(c.x), A = i.useCallback(e => ({
         size: {
             type: "static-random",
-            minValue: e.confettiSize - h,
-            maxValue: e.confettiSize + h
+            minValue: e.confettiSize - 6,
+            maxValue: e.confettiSize + 6
         },
         velocity: {
             type: "static-random",
@@ -46,30 +43,30 @@ function g(e) {
     }), []);
     return i.useEffect(() => {
         var e;
-        if (E) return;
-        let t = null == (e = y.current) ? void 0 : e.getBoundingClientRect();
+        if (h) return;
+        let t = null == (e = _.current) ? void 0 : e.getBoundingClientRect();
         if (null == t) return;
-        let n = O({
+        let n = A({
                 confettiSize: 8
             }),
-            r = new s.J_(m, () => {
+            r = new a.J_(1e3, () => {
                 b(t.left + t.width / 2, t.top + t.height / 2, n, 60)
             });
         return r.delay(), () => {
             r.cancel()
         }
-    }, [b, y, E, O]), (0, r.jsx)(f.A, {
-        contentClassName: _.o9,
-        iconContainerClassName: _.zc,
-        iconNode: (0, r.jsx)(o.XFE, {
-            colorClass: _.Kk
+    }, [b, _, h, A]), (0, r.jsx)(p.A, {
+        contentClassName: f.o9,
+        iconContainerClassName: f.zc,
+        iconNode: (0, r.jsx)(s.XFE, {
+            colorClass: f.Kk
         }),
         children: (0, r.jsx)(u.A, {
-            innerRef: y,
+            innerRef: _,
             giftIntentType: t,
             recipientUser: n,
             analyticsPage: (0, d.DJ)(g),
-            analyticsSection: p.JJy.CHANNEL
+            analyticsSection: m.JJy.CHANNEL
         })
     })
 }

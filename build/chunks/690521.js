@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(836039),
     i = n(770335),
     a = n(492494),
-    s = n(95701),
-    o = n(576705),
+    o = n(95701),
+    s = n(576705),
     l = n(287809),
     c = n(486020),
     u = n(300703),
@@ -42,10 +42,10 @@ function O(e) {
     } = e;
     if (!y(t)) return null;
     if (c === _.b_.GUILD_PROFILE) return _.Am.DISALLOW_CUSTOM;
-    let d = null != n && (0, s.ke)(n.type),
-        h = null != n && (0, s.ay)(n.type),
+    let d = null != n && (0, o.ke)(n.type),
+        h = null != n && (0, o.ay)(n.type),
         m = b(t, i),
-        g = o.A.can(p.xBc.USE_EXTERNAL_EMOJIS, n);
+        g = s.A.can(p.xBc.USE_EXTERNAL_EMOJIS, n);
     if (c === _.b_.COMMUNITY_CONTENT) return m && null != t.guildId && t.available ? null : _.Am.DISALLOW_EXTERNAL;
     if (!(0, _.Re)(c) && !b(t, i) && !u || (d || h) && !m && !g) return _.Am.DISALLOW_EXTERNAL;
     if (null != t.id && !t.available) return _.Am.GUILD_SUBSCRIPTION_UNAVAILABLE;
@@ -72,7 +72,7 @@ let v = {
             channel: n,
             guildId: r,
             intention: i
-        } = e, a = new Set, s = [], o = 0, l = !1;
+        } = e, a = new Set, o = [], s = 0, l = !1;
         for (let e of t) {
             let t = O({
                 emoji: e,
@@ -81,15 +81,15 @@ let v = {
                 intention: i
             });
             if (null == t) {
-                s.push(e);
+                o.push(e);
                 continue
             }
-            E.has(t) || s.push(e), g.has(t) && (null != e.id && a.add(e.id), m.has(t) && (l || t !== _.Am.PREMIUM_LOCKED || (l = !0), o++))
+            E.has(t) || o.push(e), g.has(t) && (null != e.id && a.add(e.id), m.has(t) && (l || t !== _.Am.PREMIUM_LOCKED || (l = !0), s++))
         }
         return {
             emojisDisabled: a,
-            emojisUnfiltered: s,
-            emojisPremiumLockedCount: o,
+            emojisUnfiltered: o,
+            emojisPremiumLockedCount: s,
             emojiNitroLocked: l
         }
     },
@@ -107,7 +107,7 @@ let v = {
             channel: n,
             guildId: r,
             intention: i
-        } = e, a = !1, s = 0;
+        } = e, a = !1, o = 0;
         for (let e of t) {
             let t = O({
                 emoji: e,
@@ -115,9 +115,9 @@ let v = {
                 intention: i,
                 guildId: r
             });
-            t === _.Am.PREMIUM_LOCKED ? (a = !0, s++) : t === _.Am.GUILD_SUBSCRIPTION_UNAVAILABLE && s++
+            t === _.Am.PREMIUM_LOCKED ? (a = !0, o++) : t === _.Am.GUILD_SUBSCRIPTION_UNAVAILABLE && o++
         }
-        return a && s === t.length
+        return a && o === t.length
     },
     isEmojiFilteredOrLocked(e) {
         return this.isEmojiFiltered(e) || this.isEmojiPremiumLocked(e)

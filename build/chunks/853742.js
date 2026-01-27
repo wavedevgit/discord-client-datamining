@@ -2,11 +2,11 @@
 /** chunk id: 853742, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Bd: () => L,
+    Bd: () => x,
     Cd: () => R,
     El: () => U,
     Lj: () => T,
-    Md: () => M,
+    Md: () => j,
     Ml: () => w,
     OG: () => B,
     Q_: () => G,
@@ -16,23 +16,23 @@ n.d(t, {
     _4: () => I,
     _Z: () => N,
     ad: () => P,
-    bh: () => x,
+    bh: () => L,
     hT: () => b,
     jC: () => D,
-    jh: () => j,
+    jh: () => M,
     jr: () => v,
     pO: () => C,
     py: () => S,
-    rH: () => V,
+    rH: () => F,
     ri: () => k,
     sB: () => A,
-    zd: () => F
+    zd: () => V
 }), n(733351);
 var r = n(58149),
     i = n(332456),
     a = n(237774),
-    s = n(734057),
-    o = n(31717),
+    o = n(734057),
+    s = n(31717),
     l = n(954571),
     c = n(723702),
     u = n(969043),
@@ -85,7 +85,7 @@ function E(e) {
         channelId: n,
         sessionId: i,
         postIds: a,
-        additionalTimes: s
+        additionalTimes: o
     } = e;
     r.Ay.trackWithMetadata(p.HAw.FORUM_CHANNEL_SEEN_BATCH, g(h({}, (0, f.fO)({
         channelId: n,
@@ -94,7 +94,7 @@ function E(e) {
         guild_id: t,
         channel_id: n,
         post_ids: a,
-        additional_seen_time_millis: s
+        additional_seen_time_millis: o
     }))
 }
 
@@ -132,8 +132,8 @@ function O(e) {
         channelId: n,
         tagId: i,
         filterTagIds: a,
-        added: s,
-        location: o
+        added: o,
+        location: s
     } = e;
     r.Ay.trackWithMetadata(p.HAw.FORUM_CHANNEL_TAG_FILTER_CLICKED, g(h({}, (0, f.fO)({
         channelId: n
@@ -142,8 +142,8 @@ function O(e) {
         channel_id: n,
         tag_id: i,
         filter_tag_ids: a,
-        added: s,
-        location: o
+        added: o,
+        location: s
     }))
 }
 
@@ -178,11 +178,11 @@ function I(e) {
     let {
         guildId: l,
         channelId: c
-    } = e, u = s.A.getChannel(c);
+    } = e, u = o.A.getChannel(c);
     if (null == u) return;
-    let d = o.A.getThreadSettings(c),
+    let d = s.A.getThreadSettings(c),
         _ = null == (t = u.template) ? void 0 : t.trim(),
-        m = o.A.getDraft(c, o.C.FirstThreadMessage),
+        m = s.A.getDraft(c, s.C.FirstThreadMessage),
         E = null == m || 0 === m.length || (null == m ? void 0 : m.trim()) === _,
         y = (null == d ? void 0 : d.appliedTags) == null || (null == d || null == (n = d.appliedTags) ? void 0 : n.size) === 0,
         b = (null == d ? void 0 : d.name) == null || (null == d || null == (a = d.name) || null == (i = a.trim()) ? void 0 : i.length) === 0;
@@ -246,10 +246,10 @@ function N(e) {
         channelId: n,
         numArchivedThreads: i,
         hasMoreThreads: a,
-        filterTagIds: o,
+        filterTagIds: s,
         sortOrder: c
     } = e;
-    l.default.track(p.HAw.FORUM_CHANNEL_MORE_POSTS_LOADED, g(h({}, (0, r.H$)(t), (0, r.dI)(s.A.getChannel(n)), (0, f.fO)({
+    l.default.track(p.HAw.FORUM_CHANNEL_MORE_POSTS_LOADED, g(h({}, (0, r.H$)(t), (0, r.dI)(o.A.getChannel(n)), (0, f.fO)({
         channelId: n
     })), {
         guild_id: t,
@@ -257,7 +257,7 @@ function N(e) {
         num_archived_threads: i,
         num_active_threads: (0, f.io)(t, n),
         has_more_threads: a,
-        filter_tag_ids: o,
+        filter_tag_ids: s,
         sort_order: c
     }))
 }
@@ -322,7 +322,7 @@ function D(e) {
     })
 }
 
-function x(e) {
+function L(e) {
     let {
         onboardingCTA: t
     } = e;
@@ -331,7 +331,7 @@ function x(e) {
     })
 }
 
-function L(e) {
+function x(e) {
     let {
         forumDemoId: t
     } = e;
@@ -340,7 +340,7 @@ function L(e) {
     })
 }
 
-function j(e) {
+function M(e) {
     let {
         added: t
     } = e;
@@ -349,7 +349,7 @@ function j(e) {
     })
 }
 
-function M(e) {
+function j(e) {
     let {
         readGuideCta: t
     } = e;
@@ -375,7 +375,7 @@ function G() {
     r.Ay.trackWithMetadata(p.HAw.FORUM_CHANNEL_ENABLE_PREVIEW_CLICKED)
 }
 
-function V(e) {
+function F(e) {
     r.Ay.trackWithMetadata(p.HAw.CHANNEL_OPENED, g(h({}, (0, r.H$)(e.guild_id), (0, r.dI)(e), (0, i.C)(e, !0), (0, r.qL)(e.id)), {
         channel_view: "Split View",
         platform: (0, c.getPlatform)()
@@ -384,7 +384,7 @@ function V(e) {
     })
 }
 
-function F() {
+function V() {
     r.Ay.trackWithMetadata(p.HAw.OPEN_MODAL, {
         type: "Forum Channel Upsell Modal",
         location: {
@@ -398,7 +398,7 @@ function B(e) {
         guildId: t,
         channelId: n
     } = e;
-    r.Ay.trackWithMetadata(p.HAw.THREAD_CREATION_STARTED, g(h({}, (0, i.C)(s.A.getChannel(n))), {
+    r.Ay.trackWithMetadata(p.HAw.THREAD_CREATION_STARTED, g(h({}, (0, i.C)(o.A.getChannel(n))), {
         channel_id: n,
         guild_id: t
     }))

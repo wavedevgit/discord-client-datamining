@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 319805, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -19,7 +19,7 @@ var i = n(397927),
     p = n(985018),
     f = n(636997);
 
-function b(e) {
+function h(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
     return e
 }
 
-function h(e, t) {
+function b(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ let x = function(e) {
         analyticsLocations: O
     } = (0, s.Ay)(), v = t.features.has(g.GuildFeatures.ROLE_ICONS), y = e => {
         v || ((0, l.zV)(g.HAw.PREMIUM_GUILD_PROMOTION_OPENED, {
-            location: h(b({}, e), {
+            location: b(h({}, e), {
                 section: g.JJy.CUSTOM_ROLE_ICONS_TOOLTIP
             }),
             guild_id: null == t ? void 0 : t.id,
@@ -99,7 +99,7 @@ let x = function(e) {
             className: f.Mw,
             children: [(0, r.jsx)("div", {
                 className: f.i1,
-                children: null != _ ? (0, r.jsx)(d.A, h(b({}, _), {
+                children: null != _ ? (0, r.jsx)(d.A, b(h({}, _), {
                     className: f.s1,
                     enableTooltip: !1
                 })) : (0, r.jsx)(i.XGR, {
@@ -114,7 +114,7 @@ let x = function(e) {
                     let {
                         default: e
                     } = await n.e("64939").then(n.bind(n, 836774));
-                    return n => (0, r.jsx)(e, h(b({}, n), {
+                    return n => (0, r.jsx)(e, b(h({}, n), {
                         guildId: t.id,
                         onUploadIcon: e => (0, u.n3)(j.id, e, null),
                         onSelectUnicodeEmoji: e => (0, u.n3)(j.id, null, e)

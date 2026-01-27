@@ -2,13 +2,13 @@
 /** chunk id: 14400, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 }), n(896048);
 var r = n(64700),
     i = n(253932),
     a = n(824744);
 
-function s() {
+function o() {
     let [e, t] = r.useState(i.HO.getSetting());
     return {
         volume: e,

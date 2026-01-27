@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 743790, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    $: () => u
+    $: () => d
 });
 var r = n(627968),
     i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(573435),
-    l = n(260509),
+    a = n(573435),
+    o = n(260509),
     c = n(369752);
 
-function u(e) {
+function d(e) {
     let {
         guild: t,
         size: n
-    } = e, i = (0, l.Iv)(t, n, !1, !0), u = (0, l.Rb)(t);
-    return (0, r.jsx)(o.Ay, {
+    } = e, i = (0, o.Iv)(t, n, !1, !0), d = (0, o.Rb)(t);
+    return (0, r.jsx)(a.Ay, {
         className: c.zc,
-        mask: o.Ay.Masks.SQUIRCLE,
+        mask: a.Ay.Masks.SQUIRCLE,
         width: n,
         height: n,
         children: null != i ? (0, r.jsx)("img", {
@@ -30,12 +29,12 @@ function u(e) {
         }) : (0, r.jsx)("div", {
             className: c.FS,
             children: (0, r.jsx)(s.Text, {
-                className: a()({
+                className: l()({
                     [c.ri]: 20 === n
                 }),
                 color: "text-subtle",
                 variant: "text-md/semibold",
-                children: u
+                children: d
             })
         })
     })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(652896),
-    s = n(383501),
-    o = n(652215);
+    o = n(383501),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -80,12 +80,12 @@ function E(e) {
         message: a,
         optimistic: l
     } = e;
-    if (r !== s.A.getChannelId()) return !1;
+    if (r !== o.A.getChannelId()) return !1;
     if (l) {
         let e = null == i || null == (n = i.activityAction) ? void 0 : n.targetUserId;
         return null != e && (f[a.id] = e, !1)
     }
-    if (null == a.nonce || (null == (t = a.activity) ? void 0 : t.type) !== o.xL.STREAM_REQUEST) return !1;
+    if (null == a.nonce || (null == (t = a.activity) ? void 0 : t.type) !== s.xL.STREAM_REQUEST) return !1;
     let u = f[a.nonce];
     if (null == u) return !1;
     delete f[a.nonce], p = d(c({}, p), {
@@ -104,9 +104,9 @@ function y(e) {
 }
 
 function b() {
-    if (s.A.getWasMoved()) {
-        if (s.A.getChannelId() === _) return !1;
-        _ = s.A.getChannelId(), h()
+    if (o.A.getWasMoved()) {
+        if (o.A.getChannelId() === _) return !1;
+        _ = o.A.getChannelId(), h()
     } else {
         if (null == _) return !1;
         _ = null
@@ -114,7 +114,7 @@ function b() {
 }
 class O extends r.Ay.Store {
     initialize() {
-        this.waitFor(s.A)
+        this.waitFor(o.A)
     }
     getPendingRequestForUser(e) {
         return p[e]

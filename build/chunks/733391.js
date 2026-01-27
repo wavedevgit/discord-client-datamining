@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(927813),
-    s = n(871123),
-    o = n(832163),
+    o = n(871123),
+    s = n(832163),
     l = n(652215);
 
 function c(e, t, n) {
@@ -64,7 +64,7 @@ async function g(e) {
             eager: n = !1,
             forceFetch: a = !1
         } = t,
-        c = o.A.getStorefrontData(e),
+        c = s.A.getStorefrontData(e),
         u = (null == c ? void 0 : c.state) === "loading",
         d = (null == c ? void 0 : c.state) === "error" && (null == c ? void 0 : c.fetchedAt) != null && Date.now() - c.fetchedAt < _,
         f = (null == c ? void 0 : c.state) === "fetched" && (null == c ? void 0 : c.fetchedAt) != null && Date.now() - c.fetchedAt < h;
@@ -82,7 +82,7 @@ async function g(e) {
         i.h.dispatch({
             type: "SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS",
             guildId: e,
-            storefront: (0, s.sq)(t.body)
+            storefront: (0, o.sq)(t.body)
         }), i.h.dispatch({
             type: "STORE_LISTINGS_FETCH_SUCCESS",
             storeListings: null != (p = t.body.store_listings) ? p : []
@@ -109,7 +109,7 @@ async function E(e, t) {
         i.h.dispatch({
             type: "SOCIAL_LAYER_STOREFRONT_PARTIAL_LOAD_SUCCESS",
             guildId: e,
-            storefront: (0, s.sq)({
+            storefront: (0, o.sq)({
                 application_id: n.body.store_listing.sku.application_id,
                 title: "",
                 logo_asset_id: void 0,
@@ -146,7 +146,7 @@ async function b(e) {
         includeWishlists: c = !1
     } = e;
     if (0 === n.length) return;
-    let d = o.A.recommendationsByApplicationsAndUsers(t, n);
+    let d = s.A.recommendationsByApplicationsAndUsers(t, n);
     if (null == d || "error" !== d.state && "loading" !== d.state && ("success" !== d.state || !(d.data.numItemsRequested >= a))) try {
         i.h.dispatch({
             type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_START",
@@ -162,13 +162,13 @@ async function b(e) {
                     include_wishlists: c
                 }
             }),
-            o = (0, s.ty)(e.body);
+            s = (0, o.ty)(e.body);
         return i.h.dispatch(f(u({
             type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_SUCCESS"
-        }, o), {
+        }, s), {
             userIds: n,
             numItemsRequested: a
-        })), o
+        })), s
     } catch (e) {
         return i.h.dispatch({
             type: "SOCIAL_LAYER_STOREFRONT_RECOMMENDATIONS_FETCH_FAILURE",

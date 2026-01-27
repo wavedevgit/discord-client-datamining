@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(478437),
     a = n(311907),
-    s = n(73153),
-    o = n(142120);
+    o = n(73153),
+    s = n(142120);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -41,15 +41,15 @@ function _(e) {
 }
 class h extends(r = a.Ay.Store) {
     initialize() {
-        this.waitFor(o.A)
+        this.waitFor(s.A)
     }
     getChannelStatus(e) {
         var t;
-        if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), o.A.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? void 0 : t[e.id]
+        if (null != e && null != e.guild_id && e.type === i.r.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), s.A.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? void 0 : t[e.id]
     }
 }
 l(h, "displayName", "ChannelStatusStore");
-let m = new h(s.h, {
+let m = new h(o.h, {
     GUILD_CREATE: f,
     GUILD_DELETE: f,
     CONNECTION_RESUMED: d,

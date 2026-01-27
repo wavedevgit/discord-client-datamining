@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 831806, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(299824),
     p = n(997509),
     f = n(529942),
-    b = n(209700),
-    h = n(976860),
+    h = n(209700),
+    b = n(976860),
     x = n(260509),
     j = n(317525),
     _ = n(71393),
@@ -51,11 +51,11 @@ function P(e) {
             [e.id]: e
         };
         (0, f.Tk)(w.id, {
-            type: b._.SERVER_SHOP,
+            type: h._.SERVER_SHOP,
             roles: t,
             initialTab: "guild_products",
             returnToSection: S.BEX.GUILD_PRODUCTS
-        }), (0, h.pX)(S.BVt.CHANNEL(w.id, I.VV.GUILD_SHOP))
+        }), (0, b.pX)(S.BVt.CHANNEL(w.id, I.VV.GUILD_SHOP))
     }, [w]);
     if (!P || G) return (0, r.jsx)(o.y$y, {});
     if (null == w) return null;

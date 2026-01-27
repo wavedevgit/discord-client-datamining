@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(947320),
-    s = n(873298),
-    o = n(506774),
+    o = n(873298),
+    s = n(506774),
     l = n(439372),
     c = n(108713),
     u = n(643501),
@@ -88,75 +88,75 @@ function N(e) {
 }
 
 function w(e) {
-    return s.oP.create({
+    return o.oP.create({
         muted: !1,
         volume: T(e)
     })
 }
 
 function R() {
-    o.w.get(S(f.default.getId())) || g.wc.updateAsync("audioContextSettings", e => {
+    s.w.get(S(f.default.getId())) || g.wc.updateAsync("audioContextSettings", e => {
         let t = !1;
         for (let [n, r] of Object.entries(p.A.getState().settingsByContext)) {
             let i = (0, m.o)(n);
             if (null == i) continue;
             let a = e[i],
-                s = String(Date.now()),
-                o = {};
-            for (let [e, t] of Object.entries(r.localMutes)) o[e] = {
+                o = String(Date.now()),
+                s = {};
+            for (let [e, t] of Object.entries(r.localMutes)) s[e] = {
                 muted: t,
                 volume: T(n),
-                modifiedAt: s,
+                modifiedAt: o,
                 soundboardMuted: !1
             };
-            for (let [e, t] of Object.entries(r.localVolumes)) o[e] = v(b({
+            for (let [e, t] of Object.entries(r.localVolumes)) s[e] = v(b({
                 muted: !1,
-                modifiedAt: s
-            }, o[e]), {
+                modifiedAt: o
+            }, s[e]), {
                 volume: (0, m.z)(t, n)
             });
             let l = Object.keys(a).length;
-            for (let [e, [n, r]] of Object.entries(o).entries()) {
+            for (let [e, [n, r]] of Object.entries(s).entries()) {
                 if (A - l - (e + 1) <= 0) break;
                 null == a[n] && (t = !0, a[n] = r)
             }
         }
-        return o.w.set(S(f.default.getId()), !0), t
+        return s.w.set(S(f.default.getId()), !0), t
     }, g.Sb.AUTOMATED)
 }
 
 function P(e, t, n, r) {
     var i;
     let a = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
-        s = (0, m.o)(n);
-    if (null == s) return !1;
-    let o = e[s];
-    return o[t] = null != (i = o[t]) ? i : w(n), r(o[t]), o[t].modifiedAt = String(Date.now()), a && C(o, t, n), N(o), !0
+        o = (0, m.o)(n);
+    if (null == o) return !1;
+    let s = e[o];
+    return s[t] = null != (i = s[t]) ? i : w(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && C(s, t, n), N(s), !0
 }
 
 function D() {
     R()
 }
-let x = i().debounce(() => {
+let L = i().debounce(() => {
     U()
 }, I);
 
-function L(e, t, n) {
+function x(e, t, n) {
     (0, h.gq)(e, t, {
         volume: n
-    }), x()
-}
-
-function j(e, t, n) {
-    (0, h.gq)(e, t, {
-        muted: n
-    }), x.cancel(), U()
+    }), L()
 }
 
 function M(e, t, n) {
     (0, h.gq)(e, t, {
+        muted: n
+    }), L.cancel(), U()
+}
+
+function j(e, t, n) {
+    (0, h.gq)(e, t, {
         soundboardMuted: n
-    }), x.cancel(), U()
+    }), L.cancel(), U()
 }
 let k = i().debounce(c.VR, 500, {
     maxWait: 500
@@ -185,15 +185,7 @@ function G(e) {
     null != i && k(i, n, t, {
         muted: p.A.isLocalMute(n, t),
         volume: r
-    }), L(t, n, r)
-}
-
-function V(e) {
-    let {
-        context: t,
-        userId: n
-    } = e;
-    n !== f.default.getId() && j(t, n, p.A.isLocalMute(n, t))
+    }), x(t, n, r)
 }
 
 function F(e) {
@@ -201,7 +193,15 @@ function F(e) {
         context: t,
         userId: n
     } = e;
-    n !== f.default.getId() && M(t, n, d.A.isLocalSoundboardMuted(n))
+    n !== f.default.getId() && M(t, n, p.A.isLocalMute(n, t))
+}
+
+function V(e) {
+    let {
+        context: t,
+        userId: n
+    } = e;
+    n !== f.default.getId() && j(t, n, d.A.isLocalSoundboardMuted(n))
 }
 
 function B(e) {
@@ -215,8 +215,8 @@ class H extends l.A {
         super(...e), y(this, "actions", {
             POST_CONNECTION_OPEN: D,
             AUDIO_SET_LOCAL_VOLUME: G,
-            AUDIO_TOGGLE_LOCAL_MUTE: V,
-            AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: F,
+            AUDIO_TOGGLE_LOCAL_MUTE: F,
+            AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: V,
             MEDIA_ENGINE_RESET_SETTINGS: B
         })
     }

@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 493781, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    G: () => b
+    G: () => h
 });
 var r = n(627968),
     i = n(64700),
@@ -18,14 +18,14 @@ var r = n(627968),
     p = n(985018),
     f = n(662413);
 
-function b(e) {
+function h(e) {
     let {
         activeType: t,
         onTypePicked: n,
         guild: l
-    } = e, b = l.features.has(m.GuildFeatures.COMMUNITY), h = (0, a.bG)([d.A], () => d.A.can(m.xBc.ADMINISTRATOR, l)), x = i.useMemo(() => {
-        let e = t === g.J.DISCOVERABLE && !h,
-            n = b && (t === g.J.DISCOVERABLE || h);
+    } = e, h = l.features.has(m.GuildFeatures.COMMUNITY), b = (0, a.bG)([d.A], () => d.A.can(m.xBc.ADMINISTRATOR, l)), x = i.useMemo(() => {
+        let e = t === g.J.DISCOVERABLE && !b,
+            n = h && (t === g.J.DISCOVERABLE || b);
         return [{
             id: g.J.INVITE,
             title: p.intl.string(p.t["HQVS/L"]),
@@ -46,9 +46,9 @@ function b(e) {
             body: p.intl.string(p.t.pqQylS),
             icon: c.L_e,
             enabled: n,
-            ineligibleText: b ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
+            ineligibleText: h ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
         }]
-    }, [t, b, h]);
+    }, [t, h, b]);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(c.Heading, {
             color: "text-strong",

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 185316, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     X1: "guildsList__7db08",
     im: "infoDot__7db08",

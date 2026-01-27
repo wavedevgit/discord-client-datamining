@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 590089, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     U: () => c
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(158954),
-    o = n(397927),
-    l = n(411809);
+    a = n(397927),
+    o = n(411809);
 
 function c(e) {
     let {
@@ -18,38 +17,38 @@ function c(e) {
         leadingElement: n,
         primaryTrailingElement: i,
         secondaryTrailingElement: c,
-        title: u,
-        description: d,
-        onClick: f,
+        title: d,
+        description: u,
+        onClick: _,
         ref: p,
-        style: _
+        style: m
     } = e;
-    return (0, r.jsxs)(o.DUT, {
-        className: a()(l.EA, {
-            [l.vk]: null != f
+    return (0, r.jsxs)(a.DUT, {
+        className: l()(o.EA, {
+            [o.vk]: null != _
         }),
-        onClick: f,
+        onClick: _,
         innerRef: p,
-        style: _,
+        style: m,
         children: [null != n && (0, r.jsx)("div", {
-            className: l._y,
+            className: o._y,
             children: n
         }), (0, r.jsxs)("div", {
-            className: l.jw,
+            className: o.jw,
             children: [(0, r.jsx)("div", {
-                className: l.eg,
+                className: o.eg,
                 children: (0, r.jsx)(s.DZT, {
                     variant: "heading-md/medium",
                     color: t,
-                    children: u
+                    children: d
                 })
-            }), null != d && (0, r.jsx)(s.EYj, {
+            }), null != u && (0, r.jsx)(s.EYj, {
                 variant: "text-sm/normal",
                 color: "text-subtle",
-                children: d
+                children: u
             })]
         }), (null != i || null != c) && (0, r.jsxs)("div", {
-            className: l.fW,
+            className: o.fW,
             children: [i, c]
         })]
     })

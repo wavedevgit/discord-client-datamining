@@ -2,13 +2,13 @@
 /** chunk id: 507019, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(157559),
     i = n(49229),
     a = n(985018);
 
-function s(e) {
+function o(e) {
     let t = () => {
         i.A.clearPendingRelationships()
     };

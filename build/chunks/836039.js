@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     EM: () => d,
-    Y5: () => o,
+    Y5: () => s,
     a1: () => c,
     mk: () => u,
     tE: () => l
@@ -11,9 +11,9 @@ n.d(t, {
 var r = n(636194),
     i = n(71393),
     a = n(867164),
-    s = n(652215);
+    o = n(652215);
 
-function o(e) {
+function s(e) {
     return null != e && e.includes(a.t.NEW_PURCHASES_DISABLED)
 }
 
@@ -23,7 +23,7 @@ function l(e) {
     let n = r.A.getMonetizationRestrictionsFetchState(e),
         a = r.A.getMonetizationRestrictions(e),
         l = i.A.getGuild(e);
-    return n === r.e.FETCHED ? o(a) : null == (t = null == l ? void 0 : l.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
+    return n === r.e.FETCHED ? s(a) : null == (t = null == l ? void 0 : l.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function c(e) {
@@ -35,8 +35,8 @@ function u(e) {
     if (null == e) return !1;
     let n = r.A.getMonetizationRestrictionsFetchState(e),
         a = r.A.getMonetizationRestrictions(e),
-        o = i.A.getGuild(e);
-    return n === r.e.FETCHED ? c(a) : null == (t = null == o ? void 0 : o.features.has(s.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
+        s = i.A.getGuild(e);
+    return n === r.e.FETCHED ? c(a) : null == (t = null == s ? void 0 : s.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function d(e) {

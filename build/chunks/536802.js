@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073);
 var r, i = n(284009),
     a = n.n(i),
-    s = n(311907),
-    o = n(506774),
+    o = n(311907),
+    s = n(506774),
     l = n(73153);
 
 function c(e, t, n) {
@@ -48,7 +48,7 @@ function f(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class p extends(r = s.Ay.Store) {
+class p extends(r = o.Ay.Store) {
     static clearAll() {
         p.allStores.forEach(e => e.clear())
     }
@@ -56,13 +56,13 @@ class p extends(r = s.Ay.Store) {
         return "".concat(this.getClass().displayName, "-snapshot")
     }
     clear() {
-        o.w.remove(this.persistKey)
+        s.w.remove(this.persistKey)
     }
     save() {
-        o.w.set(this.persistKey, this.takeSnapshot())
+        s.w.set(this.persistKey, this.takeSnapshot())
     }
     readSnapshot(e) {
-        let t = o.w.get(this.persistKey);
+        let t = s.w.get(this.persistKey);
         return null == t || t.version !== e ? null : t.data
     }
     getClass() {

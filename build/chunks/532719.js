@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 532719, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 }), n(228524);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(284009),
-    s = n.n(a),
-    o = n(397927),
-    l = n(155718),
+    i = n.n(a),
+    s = n(397927),
+    o = n(155718),
     c = n(207963);
 
 function u(e) {
@@ -18,23 +17,23 @@ function u(e) {
         type: n,
         default: a
     } = e, u = (0, c.jc)();
-    s()(null != u, "CheckboxActionComponent must be rendered inside a ComponentStateContext");
+    i()(null != u, "CheckboxActionComponent must be rendered inside a ComponentStateContext");
     let {
         state: d,
-        executeStateUpdate: f
+        executeStateUpdate: m
     } = u.useComponentState(e, null != a ? {
         type: n,
         value: a
-    } : void 0), p = i.useMemo(() => (null == d ? void 0 : d.type) === n && d.value, [d, n]), _ = e => {
-        f({
-            type: n,
-            value: e
-        })
-    }, h = null == (t = u.getParents(e)) ? void 0 : t[0], m = (null == h ? void 0 : h.type) === l.I5.LABEL ? h : void 0;
-    return s()(null != m, "CheckboxActionComponent must be a child of a Label component"), (0, r.jsx)(o.Checkbox, {
-        label: m.label,
-        description: m.description,
-        checked: p,
-        onChange: _
+    } : void 0), f = l.useMemo(() => (null == d ? void 0 : d.type) === n && d.value, [d, n]), p = null == (t = u.getParents(e)) ? void 0 : t[0], h = (null == p ? void 0 : p.type) === o.I5.LABEL ? p : void 0;
+    return i()(null != h, "CheckboxActionComponent must be a child of a Label component"), (0, r.jsx)(s.Checkbox, {
+        label: h.label,
+        description: h.description,
+        checked: f,
+        onChange: e => {
+            m({
+                type: n,
+                value: e
+            })
+        }
     })
 }

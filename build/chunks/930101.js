@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(835245),
+    o = n.n(a),
+    s = n(835245),
     l = n(435371),
     c = n(397927),
     u = n(565645),
@@ -67,7 +67,7 @@ let S = e => {
         let {
             node: n,
             tooltipPosition: a = h.Uk.position,
-            enableClick: o = !0,
+            enableClick: s = !0,
             channelId: d,
             messageId: f
         } = e, p = i.useRef(null), m = null == (t = n.originalMatch) ? void 0 : t[0], [g, E] = i.useState(!1), O = e => (0, r.jsx)(u.A, {
@@ -83,13 +83,13 @@ let S = e => {
             return (0, r.jsx)(l.un, I(v({
                 asset: O("jumbo"),
                 title: null != (t = n.name) ? t : "",
-                body: o ? y.intl.string(y.t["515vjG"]) : "",
+                body: s ? y.intl.string(y.t["515vjG"]) : "",
                 ariaHidden: !0
             }, h.Uk), {
                 position: a,
                 shouldShow: !g,
                 onTooltipShow: () => {
-                    o && C({
+                    s && C({
                         emojiNode: n,
                         isCustomEmoji: !1
                     })
@@ -101,15 +101,15 @@ let S = e => {
                         var n;
                         E(!0), null == e || null == (n = e.onClick) || n.call(e, t)
                     },
-                    className: s()(b.qq, {
-                        [b._Y]: o,
+                    className: o()(b.qq, {
+                        [b._Y]: s,
                         [b.gp]: n.jumboable
                     }),
                     children: O()
                 }))
             }))
         };
-        if (!o) return A();
+        if (!s) return A();
         let S = e => (0, r.jsx)(_.MV, I(v({}, e), {
             node: n
         }));
@@ -143,7 +143,7 @@ let S = e => {
             isInteracting: n,
             channelId: E,
             messageId: O
-        }), x = (0, o.A)(), L = e => (0, r.jsx)(l.un, I(v({
+        }), L = (0, s.A)(), x = e => (0, r.jsx)(l.un, I(v({
             asset: D("jumbo"),
             title: t.name,
             body: d ? y.intl.string(y.t["515vjG"]) : "",
@@ -155,7 +155,7 @@ let S = e => {
                 N(!0), d && (C({
                     emojiNode: t,
                     isCustomEmoji: !0,
-                    nonce: x
+                    nonce: L
                 }), (0, f.K)(g.Vl.CustomEmojiTooltipShown))
             },
             children: (0, r.jsx)(c.DUT, I(v({}, e), {
@@ -170,38 +170,38 @@ let S = e => {
                 } : void 0,
                 onMouseLeave: () => {
                     T && (p.default.track(m.HAw.CLOSE_POPOUT, {
-                        nonce: x
+                        nonce: L
                     }), N(!1))
                 },
                 tag: "span",
-                className: s()(b.qq, {
+                className: o()(b.qq, {
                     [b._Y]: d,
                     [b.gp]: t.jumboable
                 }),
                 children: D()
             }))
         }));
-        if (!d) return L();
-        let j = e => (0, r.jsx)(_.iP, I(v({}, e), {
+        if (!d) return x();
+        let M = e => (0, r.jsx)(_.iP, I(v({}, e), {
             node: t,
             refreshPositionKey: () => S(String(Date.now())),
-            nonce: x
+            nonce: L
         }));
         return (0, r.jsx)(c.YNO, {
             animation: c.YNO.Animation.FADE,
             align: "center",
             onRequestClose: () => {
                 p.default.track(m.HAw.CLOSE_POPOUT, {
-                    nonce: x
+                    nonce: L
                 }), N(!1), R(!1)
             },
             autoInvert: !0,
             nudgeAlignIntoViewport: !0,
             position: "right",
-            renderPopout: j,
+            renderPopout: M,
             positionKey: A,
             targetElementRef: P,
-            children: L
+            children: x
         })
     },
     C = e => {

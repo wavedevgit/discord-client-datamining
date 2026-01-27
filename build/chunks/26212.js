@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 26212, original params: e,t,n (module,exports,require) **/
-"use strict";
+/** Chunk was on 96126 **/
+/** chunk id: 26212, original params: e,r,a (module,exports,require) **/
 e.exports = {
     K: "trialHeader__784e4",
     q: "price__784e4"

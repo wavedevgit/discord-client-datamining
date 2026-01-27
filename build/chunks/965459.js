@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(652896),
     i = n(616356),
     a = n(877717),
-    s = n(487329),
-    o = n(601900),
+    o = n(487329),
+    s = n(601900),
     l = n(652215);
 
 function c(e, t, n) {
@@ -36,8 +36,8 @@ let d = {
     getActiveErrors: () => {
         let e = i.A.getCurrentUserActiveStream();
         return null != e && null != a.A.getHookError(l.LU7.SOUND) ? [u({
-            type: s.iy.STREAM_SOUNDSHARE_FAILED
-        }, (0, o.id)((0, r._z)(e)))] : void 0
+            type: o.iy.STREAM_SOUNDSHARE_FAILED
+        }, (0, s.id)((0, r._z)(e)))] : void 0
     },
     makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
 }

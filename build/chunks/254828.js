@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(311907),
     a = n(397927),
-    s = n(253932),
-    o = n(994500),
+    o = n(253932),
+    s = n(994500),
     l = n(985018);
 
 function c(e) {
@@ -16,9 +16,9 @@ function c(e) {
         userId: t,
         onClick: n
     } = e;
-    if (!(0, i.bG)([o.A], () => o.A.isIgnored(t))) return null;
+    if (!(0, i.bG)([s.A], () => s.A.isIgnored(t))) return null;
     let c = () => {
-        s.j0.updateSetting(!0), n()
+        o.j0.updateSetting(!0), n()
     };
     return (0, r.jsx)(a.QWc, {
         onClick: c,

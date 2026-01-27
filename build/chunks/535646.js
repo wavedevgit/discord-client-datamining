@@ -1,28 +1,27 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 535646, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
-    a = n(311907),
+    l = n(311907),
     s = n(397927),
-    o = n(775602),
-    l = n(201805),
+    a = n(775602),
+    o = n(201805),
     c = n(461797),
-    u = n(985018),
-    d = n(428208);
+    d = n(985018),
+    u = n(428208);
 
-function f(e) {
+function _(e) {
     let {
         preset: t,
         onShuffle: n
-    } = e, f = (0, a.bG)([o.A], () => o.A.useReducedMotion), p = (0, l.Xf)({
-        useReducedMotion: f
+    } = e, _ = (0, l.bG)([a.A], () => a.A.useReducedMotion), p = (0, o.Xf)({
+        useReducedMotion: _
     }), {
-        name: _,
-        header: h
+        name: m,
+        header: g
     } = i.useMemo(() => {
         let e = (0, c.Wt)(t);
         return {
@@ -31,30 +30,30 @@ function f(e) {
         }
     }, [t]);
     return (0, r.jsxs)("div", {
-        className: d.kL,
+        className: u.kL,
         children: [(0, r.jsx)(s.DUT, {
             onClick: () => {
                 n(), p.startAnimation(!1)
             },
-            className: d.x6,
-            "aria-label": u.intl.string(u.t["44yJxh"]),
+            className: u.x6,
+            "aria-label": d.intl.string(d.t["44yJxh"]),
             children: p.render()
         }), (0, r.jsxs)(s.DUT, {
             onClick: () => {
                 n(), p.startAnimation(!1)
             },
-            "aria-label": "".concat(_, ": ").concat(u.intl.string(u.t["44yJxh"])),
-            className: d.Lt,
+            "aria-label": "".concat(m, ": ").concat(d.intl.string(d.t["44yJxh"])),
+            className: u.Lt,
             children: [(0, r.jsx)("img", {
                 alt: "",
                 "aria-hidden": !0,
-                src: h,
-                className: d.L_
+                src: g,
+                className: u.L_
             }), (0, r.jsx)(s.Text, {
-                className: d._e,
+                className: u._e,
                 variant: "text-sm/bold",
                 color: "always-white",
-                children: _
+                children: m
             })]
         })]
     })

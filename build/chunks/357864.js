@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 357864, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(158954),
-    a = n(985018),
-    s = n(303166),
-    o = n(638718);
+var s = n(158954),
+    l = n(985018),
+    r = n(303166),
+    a = n(638718);
 
-function l() {
-    return (0, r.jsxs)("div", {
-        className: s.k,
-        children: [(0, r.jsx)("img", {
-            className: s.N,
-            src: o,
+function o() {
+    return (0, i.jsxs)("div", {
+        className: r.k,
+        children: [(0, i.jsx)("img", {
+            className: r.N,
+            src: a,
             alt: ""
-        }), (0, r.jsx)(i.EYj, {
+        }), (0, i.jsx)(s.EYj, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: a.intl.string(a.t.H217fV)
+            children: l.intl.string(l.t.H217fV)
         })]
     })
 }

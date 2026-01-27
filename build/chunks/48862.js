@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(990078),
     c = n(397927),
     u = n(793574),
@@ -58,7 +58,7 @@ function v(e) {
     let {
         className: t,
         iconOnly: n
-    } = e, a = (0, o.bG)([_.A, p.A], () => {
+    } = e, a = (0, s.bG)([_.A, p.A], () => {
         let e = p.A.getChannel(_.A.getChannelId());
         return (null == e ? void 0 : e.isPrivate()) ? m.liQ.DM_CHANNEL : m.liQ.GUILD_CHANNEL
     }), {
@@ -75,7 +75,7 @@ function v(e) {
         })
     }, [a, y]);
     let b = () => (0, r.jsxs)("div", {
-            className: s()(E.zr, t),
+            className: o()(E.zr, t),
             children: [(0, r.jsx)(c.tvc, {
                 size: "md",
                 className: E.M2,

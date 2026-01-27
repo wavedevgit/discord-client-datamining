@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(608299),
     c = n(817363),
     u = n(565150),
@@ -82,11 +82,11 @@ function y(e) {
         keyboardModeEnabled: a,
         draftType: d.C.SlashCommand,
         label: (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsxs)(o.Text, {
+            children: [(0, r.jsxs)(s.Text, {
                 tag: "span",
                 variant: "text-md/normal",
                 children: [n.displayName, ": "]
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(s.Text, {
                 tag: "span",
                 variant: "text-md/normal",
                 color: "text-brand",
@@ -99,17 +99,17 @@ function y(e) {
         channelId: t,
         keyboardModeEnabled: a,
         onKeyDown: I,
-        className: s()(g.xd, {
+        className: o()(g.xd, {
             [g.LB]: b
         }),
         draftType: d.C.SlashCommand,
         ref: A,
         children: [(0, r.jsx)("span", {
-            className: s()(g.fS, {
+            className: o()(g.fS, {
                 [g.Vg]: b
             }),
             children: n.displayName
-        }), (0, r.jsx)(o.DUT, {
+        }), (0, r.jsx)(s.DUT, {
             className: g.uN,
             onClick: () => {
                 var e;
@@ -121,7 +121,7 @@ function y(e) {
                     src: E,
                     className: g.H9,
                     alt: ""
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(s.Text, {
                     className: g.L,
                     variant: "text-sm/normal",
                     children: m.intl.string(m.t.IJyOUf)

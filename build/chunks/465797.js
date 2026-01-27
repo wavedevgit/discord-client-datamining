@@ -5,7 +5,7 @@ let r, i, a;
 n.d(t, {
     A: () => I
 }), n(896048);
-var s, o = n(311907),
+var o, s = n(311907),
     l = n(73153),
     c = n(54827),
     u = n(15285),
@@ -68,13 +68,13 @@ function O(e) {
         applicationId: t,
         branchId: n,
         next: a,
-        remote: s
-    } = e, o = (0, f.gW)(t, n);
-    r[o] = {
+        remote: o
+    } = e, s = (0, f.gW)(t, n);
+    r[s] = {
         type: h.VX0.CONFLICT,
         next: a,
-        remote: s
-    }, i.delete(o)
+        remote: o
+    }, i.delete(s)
 }
 
 function v(e) {
@@ -86,7 +86,7 @@ function v(e) {
         type: h.VX0.ERROR
     }, i.delete(a)
 }
-class A extends(s = o.Ay.Store) {
+class A extends(o = s.Ay.Store) {
     initialize() {
         this.waitFor(d.A, u.Ay), p.isPlatformEmbedded && _.T(), r = {}, i = new Set, a = []
     }

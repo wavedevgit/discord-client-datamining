@@ -2,27 +2,27 @@
 /** chunk id: 814550, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    f: () => s,
+    f: () => o,
     u: () => l
 }), n(896048);
 var r = n(64700),
     i = n(735438),
     a = n(860923),
-    s = function(e) {
+    o = function(e) {
         return e.IDLE = "idle", e.HEAD_TURN = "headTurn", e.HEAD_TURN_BACK = "headTurnBack", e.TALKING = "talking", e
     }({});
-let o = {
+let s = {
         idle: ["headTurnBack", "talking"],
         headTurn: ["idle", "talking"],
         headTurnBack: ["headTurn"],
         talking: ["idle", "headTurnBack"]
     },
     l = e => {
-        let [t, n] = r.useState("idle"), [s, l] = r.useState(), c = (0, a.A)(), u = r.useMemo(() => null == c ? void 0 : c.characters[e], [c, e]), d = r.useCallback(() => {
-            if (null == u) return s;
+        let [t, n] = r.useState("idle"), [o, l] = r.useState(), c = (0, a.A)(), u = r.useMemo(() => null == c ? void 0 : c.characters[e], [c, e]), d = r.useCallback(() => {
+            if (null == u) return o;
             let e = u[t];
             return (0, i.sample)(e)
-        }, [s, u, t]);
+        }, [o, u, t]);
         r.useEffect(() => {
             l(d())
         }, [c, e, d]), r.useEffect(() => {
@@ -36,11 +36,11 @@ let o = {
                 for (; !n && r < e;) r += 1;
                 return i
             },
-            p = e => e === t ? t : o[e].includes(t) ? (n(e), e) : t;
+            p = e => e === t ? t : s[e].includes(t) ? (n(e), e) : t;
         return {
             animationState: t,
             updateAnimationState: p,
-            asset: s,
+            asset: o,
             setAsset: l,
             sampleAsset: d,
             findAnimationTree: f,

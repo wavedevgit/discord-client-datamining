@@ -2,19 +2,19 @@
 /** chunk id: 849352, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    i: () => o
+    i: () => s
 });
 var r = n(853590),
     i = n(515702),
     a = n(7521),
-    s = n(64700);
+    o = n(64700);
 
-function o(e) {
+function s(e) {
     e = (0, a.k)(null != e ? e : {}, l);
     let {
         locale: t
     } = (0, r.Y)();
-    return (0, s.useMemo)(() => new(0, i.p)(t, e), [t, e])
+    return (0, o.useMemo)(() => new(0, i.p)(t, e), [t, e])
 }
 
 function l(e, t) {

@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,8 +15,8 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = [],
-    l = o,
+let s = [],
+    l = s,
     c = e => {
         d(e.shopHome.userDiscounts)
     },
@@ -24,7 +24,7 @@ let o = [],
         d(e.categories.userDiscounts)
     },
     d = e => {
-        l = null != e && e.length > 0 ? e : o
+        l = null != e && e.length > 0 ? e : s
     },
     f = e => {
         let t = e.appliedUserDiscounts;
@@ -41,7 +41,7 @@ let o = [],
         }
     },
     _ = () => {
-        l = o
+        l = s
     };
 class h extends(r = i.Ay.Store) {
     getUserDiscounts() {
@@ -51,7 +51,7 @@ class h extends(r = i.Ay.Store) {
         return l.find(t => t.discountId === e)
     }
 }
-s(h, "displayName", "CollectiblesUserDiscountStore");
+o(h, "displayName", "CollectiblesUserDiscountStore");
 let m = new h(a.h, {
     COLLECTIBLES_SHOP_HOME_FETCH_SUCCESS: c,
     COLLECTIBLES_CATEGORIES_FETCH_SUCCESS: u,

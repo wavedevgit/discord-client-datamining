@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(683329),
     c = n(336389);
 
@@ -35,12 +35,12 @@ function u(e) {
             accessory: u
         })
     })), (0, r.jsxs)("div", {
-        className: s()(c.uN, l.uK, {
+        className: o()(c.uN, l.uK, {
             [c.MO]: f
         }),
         onClick: n,
         "aria-hidden": i,
-        children: [p, (0, r.jsx)(o.EYj, {
+        children: [p, (0, r.jsx)(s.EYj, {
             variant: "text-md/normal",
             color: "currentColor",
             lineClamp: 1,
@@ -60,12 +60,12 @@ function d(e) {
     } = e;
     if (null == t) return null;
     if (i.isValidElement(t)) return (0, r.jsx)("div", {
-        className: s()({
+        className: o()({
             [l.MG]: n
         }),
         children: t
     });
-    if ("string" == typeof t) return (0, r.jsx)(o.EYj, {
+    if ("string" == typeof t) return (0, r.jsx)(s.EYj, {
         variant: "text-sm/normal",
         color: "text-subtle",
         children: t
@@ -82,7 +82,7 @@ function d(e) {
         src: t.src,
         className: l.CD
     });
-    if ("object" == typeof t && "type" in t && "badge" === t.type) return (0, r.jsx)(o.Exy, {
+    if ("object" == typeof t && "type" in t && "badge" === t.type) return (0, r.jsx)(s.Exy, {
         type: t.badgeType
     });
     let a = t;

@@ -4,10 +4,10 @@
 n.d(t, {
     $U: () => W,
     Cp: () => S,
-    D$: () => x,
-    I5: () => F,
-    Nc: () => L,
-    Os: () => V,
+    D$: () => L,
+    I5: () => V,
+    Nc: () => x,
+    Os: () => F,
     P7: () => P,
     Qu: () => N,
     Ry: () => T,
@@ -22,15 +22,15 @@ n.d(t, {
     kN: () => B,
     sN: () => G,
     tO: () => k,
-    yA: () => M,
+    yA: () => j,
     yS: () => D
 }), n(264879), n(65821), n(896048), n(638769);
 var r = n(735438),
     i = n.n(r);
 n(989349);
 var a = n(336934),
-    s = n(923408),
-    o = n(864310),
+    o = n(923408),
+    s = n(864310),
     l = n(434564),
     c = n(71393),
     u = n(287809),
@@ -63,7 +63,7 @@ let O = [_.TVA.NONE, _.TVA.TIER_1, _.TVA.TIER_2, _.TVA.TIER_3],
     v = O.slice().reverse(),
     A = e => {
         var t;
-        return e === _.TVA.NONE ? _.TVA.TIER_1 : null == (t = j.find(t => t.tier === e)) ? void 0 : t.nextTier
+        return e === _.TVA.NONE ? _.TVA.TIER_1 : null == (t = M.find(t => t.tier === e)) ? void 0 : t.nextTier
     },
     I = (e, t) => null != t && t.features.has(_.GuildFeatures.MORE_STICKERS) && e === _.TVA.TIER_3 ? a.K.MAX_STICKER_SLOTS : m.d8[e],
     S = e => m.nk[e],
@@ -119,26 +119,26 @@ function D(e, t) {
     return null == t || null != e && e >= t
 }
 
-function x(e) {
+function L(e) {
     return i().values(e).filter(e => e.isAvailable())
 }
 
-function L(e) {
+function x(e) {
     let {
         fractionalState: t
     } = e, n = f.A.getPremiumTypeSubscription(), r = u.default.getCurrentUser();
-    d.A.hasFetched || d.A.isFetching || (0, s.CD)();
-    let i = x(d.A.boostSlots),
+    d.A.hasFetched || d.A.isFetching || (0, o.CD)();
+    let i = L(d.A.boostSlots),
         a = null == n ? void 0 : n.isPausedOrPausePending,
-        o = i.length > 0;
-    if (a && t === m.xc.NONE && !o) return E.intl.string(E.t.mOWsF1);
+        s = i.length > 0;
+    if (a && t === m.xc.NONE && !s) return E.intl.string(E.t.mOWsF1);
     if (null == r ? void 0 : r.isPremiumGroupMember()) return E.intl.formatToPlainString(y.default["5xN/C1"], {
         premiumGroupProductName: (0, g.DP)()
     });
     let {
         numAvailableGuildBoostSlots: l,
         numCanceledGuildBoostSlots: c
-    } = Object.values(d.A.boostSlots).reduce((e, t) => (F(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
+    } = Object.values(d.A.boostSlots).reduce((e, t) => (V(t) && e.numCanceledGuildBoostSlots++, t.isAvailable() && e.numAvailableGuildBoostSlots++, e), {
         numAvailableGuildBoostSlots: 0,
         numCanceledGuildBoostSlots: 0
     });
@@ -150,7 +150,7 @@ function L(e) {
     let h = p.bx(n.renewalMutations.additionalPlans);
     return p.bx(n.additionalPlans) > h ? E.intl.string(E.t.x25mZR) : E.intl.string(E.t["W/bb8f"])
 }
-let j = [{
+let M = [{
     tier: _.TVA.TIER_3,
     amount: _.M2T[_.TVA.TIER_3],
     nextTier: null
@@ -164,14 +164,14 @@ let j = [{
     nextTier: _.TVA.TIER_2
 }];
 
-function M(e, t) {
+function j(e, t) {
     let n = S(t),
         r = O.indexOf(t);
     if (-1 === r) return 0;
     let i = O[r - 1],
         a = null != i ? I(i) : 0,
-        s = I(t);
-    return Math.max(0, n - e.slice(a, s).length)
+        o = I(t);
+    return Math.max(0, n - e.slice(a, o).length)
 }
 
 function k(e, t, n) {
@@ -190,12 +190,12 @@ function G(e) {
     return Math.max(e.features.has(_.GuildFeatures.MORE_EMOJI) ? h.EQ : h.Xn, r)
 }
 
-function V(e, t) {
-    let n = (0, o.Z)(e.id).available;
+function F(e, t) {
+    let n = (0, s.Z)(e.id).available;
     return Math.max(0, _.M2T[t] - n)
 }
 
-function F(e) {
+function V(e) {
     var t;
     return (null == (t = e.subscription) ? void 0 : t.status) === _.Dmq.CANCELED || e.canceled
 }
@@ -222,10 +222,10 @@ function W(e) {
         r = H(t),
         i = _.M2T[n],
         a = (t - i) / (_.M2T[r] - i),
-        s = Y[n],
-        o = Y[r];
+        o = Y[n],
+        s = Y[r];
     return {
-        fillFactor: n === _.TVA.TIER_3 ? 1 : a * (o - s) + s,
+        fillFactor: n === _.TVA.TIER_3 ? 1 : a * (s - o) + o,
         totalAvailableBoostsCount: t
     }
 }

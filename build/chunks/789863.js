@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 789863, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Wi: "descriptionWrapper__43963",
     Sv: "subText__43963",

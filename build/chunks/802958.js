@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(95701),
     c = n(734057);
 
@@ -164,7 +164,7 @@ function R(e) {
     if (null == t) return !1;
     null != e.memberIdsPreview && (t.memberIdsPreview = e.memberIdsPreview), t.memberCount = e.memberCount
 }
-class P extends(r = s.Ay.Store) {
+class P extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.A)
     }
@@ -181,7 +181,7 @@ class P extends(r = s.Ay.Store) {
     }
 }
 u(P, "displayName", "ThreadMembersStore");
-let D = new P(o.h, {
+let D = new P(s.h, {
     CONNECTION_OPEN: E,
     OVERLAY_INITIALIZE: y,
     GUILD_CREATE: b,

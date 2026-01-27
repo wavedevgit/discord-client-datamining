@@ -1,33 +1,33 @@
 /** Chunk was on 35934 **/
-/** chunk id: 25997, original params: t,i,n (module,exports,require) **/
-n.d(i, {
-    default: () => c
+/** chunk id: 25997, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => s
 });
-var a = n(627968);
+var i = n(627968);
 n(64700);
-var r = n(158954),
-    s = n(956793),
-    e = n(849736),
-    l = n(985018);
-let c = t => {
+var l = n(158954),
+    r = n(956793),
+    a = n(849736),
+    o = n(985018);
+let s = t => {
     let {
-        channel: i,
+        channel: e,
         transitionState: n,
-        onClose: c
+        onClose: s
     } = t;
-    return (0, a.jsx)(r.Modal, {
+    return (0, i.jsx)(l.Modal, {
         transitionState: n,
-        title: l.intl.string(l.t.xrYNBI),
-        subtitle: l.intl.string(l.t.TP1D8l),
-        onClose: c,
+        title: o.intl.string(o.t.xrYNBI),
+        subtitle: o.intl.string(o.t.TP1D8l),
+        onClose: s,
         actions: [{
-            text: l.intl.string(l.t["ETE/oC"]),
-            onClick: c,
+            text: o.intl.string(o.t["ETE/oC"]),
+            onClick: s,
             variant: "secondary"
         }, {
-            text: l.intl.string(l.t.saZaRb),
+            text: o.intl.string(o.t.saZaRb),
             onClick: () => {
-                (0, e.OE)(i), s.default.disconnect(), c()
+                (0, a.OE)(e), r.default.disconnect(), s()
             },
             variant: "critical-primary"
         }]

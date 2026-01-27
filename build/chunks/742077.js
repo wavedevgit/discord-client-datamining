@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(638769), n(264879);
 var r, i = n(91871),
     a = n.n(i),
-    s = n(735438),
-    o = n.n(s),
+    o = n(735438),
+    s = n.n(o),
     l = n(989349),
     c = n.n(l),
     u = n(311907),
@@ -34,7 +34,7 @@ var r, i = n(91871),
     P = n(227841),
     D = n(652215);
 
-function x(e, t, n) {
+function L(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -42,9 +42,9 @@ function x(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let L = 5,
-    j = c()().subtract(1, "week"),
-    M = [],
+let x = 5,
+    M = c()().subtract(1, "week"),
+    j = [],
     k = "",
     U = !1;
 
@@ -54,10 +54,10 @@ function G(e, t) {
     })
 }
 
-function V(e, t) {
-    return null != e && c()(e.createdAt).isAfter(j) && 0 === t
+function F(e, t) {
+    return null != e && c()(e.createdAt).isAfter(M) && 0 === t
 }
-let F = {
+let V = {
         [D.DpB.NAME]: G,
         [D.DpB.PLATFORM]: (e, t, n) => {
             let r = e.libraryApplication.getDistributor(),
@@ -71,7 +71,7 @@ let F = {
     H = (0, S.L_)(e => e.filter(e => null != e.libraryApplication && v.A.isLaunchable(e.libraryApplication.id, e.libraryApplication.branchId))),
     Y = (0, S.L_)((e, t) => e.filter(e => a()(t.toLowerCase(), e.application.name.toLowerCase()))),
     W = (0, S.L_)((e, t, n, r) => {
-        let i = F[t];
+        let i = V[t];
         if (null == i) return e;
         let a = [...e].sort(i);
         return n === D.tSW.DESCENDING ? a.reverse() : a
@@ -96,14 +96,14 @@ function Z(e, t, n, r, i) {
     if (!i && t.has(e.id)) return null;
     let a = f.A.getApplication(e.id);
     if (null == a) return null;
-    let s = z(a, n);
+    let o = z(a, n);
     return (t.add(e.id), (0, C.XZ)(e) || v.A.isInstalled(e.id, e.branchId)) ? {
         key: "".concat(e.id, "-").concat(e.branchId),
         application: a,
         libraryApplication: e,
-        lastPlayed: s,
+        lastPlayed: o,
         supportsCloudSync: null != e && v.A.supportsCloudSync(e.id, e.branchId),
-        isNew: V(e, s),
+        isNew: F(e, o),
         isLaunching: _.A.launchingGames.has(e.id),
         isRunning: r.has(e.id),
         isLaunchable: (0, R.A)({
@@ -120,7 +120,7 @@ function Z(e, t, n, r, i) {
     } : null
 }
 
-function X(e, t, n, r) {
+function Q(e, t, n, r) {
     let i = null != e ? f.A.getApplication(e) : null;
     if (null == i || null == e || t.has(e)) return null;
     let a = z(i, n);
@@ -147,7 +147,7 @@ function X(e, t, n, r) {
     }
 }
 
-function Q() {
+function X() {
     let e = new Set(p.Ay.getRunningVerifiedApplicationIds()),
         t = {},
         n = new Set,
@@ -156,24 +156,24 @@ function Q() {
             return null != n ? (t[n.id] = e.lastFocused * I.A.Millis.SECOND, n.id) : null
         }),
         i = Object.values(E.A.getAllLibraryApplications()).map(r => Z(r, n, t, e, !0)).filter(T.Vq),
-        a = [...r.map(r => X(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
-    return U = null != g.A.lastFetched && E.A.fetched, !o().isEqual(a, M) && (M = a, N.isPlatformEmbedded && w.Ay.setSystemTrayApplications(H(M).map(e => e.application).slice(0, L)), !0)
+        a = [...r.map(r => Q(r, n, t, e)).filter(T.Vq), ...i].sort((e, t) => e.lastPlayed === t.lastPlayed ? 0 : e.lastPlayed > t.lastPlayed ? -1 : 1);
+    return U = null != g.A.lastFetched && E.A.fetched, !s().isEqual(a, j) && (j = a, N.isPlatformEmbedded && w.Ay.setSystemTrayApplications(H(j).map(e => e.application).slice(0, x)), !0)
 }
 class J extends(r = u.Ay.Store) {
     initialize() {
-        this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], Q, 200), this.syncWith([O.A, h.default], () => !0)
+        this.syncWith([f.A, g.A, _.A, p.Ay, v.A, A.A, E.A, b.A, y.A, m.A], X, 200), this.syncWith([O.A, h.default], () => !0)
     }
     get applicationFilterQuery() {
         return k
     }
     get applicationViewItems() {
-        return M
+        return j
     }
     get launchableApplicationViewItems() {
-        return H(M)
+        return H(j)
     }
     get libraryApplicationViewItems() {
-        return B(M)
+        return B(j)
     }
     get filteredLibraryApplicationViewItems() {
         return Y(this.libraryApplicationViewItems, k)
@@ -182,13 +182,13 @@ class J extends(r = u.Ay.Store) {
         return W(this.filteredLibraryApplicationViewItems, O.A.sortKey, O.A.sortDirection, h.default.locale)
     }
     get hiddenLibraryApplicationViewItems() {
-        return K(M)
+        return K(j)
     }
     get hasFetchedApplications() {
         return U
     }
 }
-x(J, "displayName", "ApplicationViewStore");
+L(J, "displayName", "ApplicationViewStore");
 let $ = new J(d.h, {
     LIBRARY_APPLICATION_FILTER_UPDATE: q
 })

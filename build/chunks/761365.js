@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(359701),
-    s = n(550111),
-    o = n(488189);
+    o = n(550111),
+    s = n(488189);
 let l = i.memo(function(e) {
     let {
         user: t,
@@ -17,9 +17,9 @@ let l = i.memo(function(e) {
         size: l = "default"
     } = e, c = "small" === l ? 62 : 94, u = "small" === l ? 72 : 110;
     return (0, r.jsx)("div", {
-        className: o.Dz,
+        className: s.Dz,
         children: (0, r.jsxs)("div", {
-            className: o.ur,
+            className: s.ur,
             children: [(0, r.jsx)(a._, {
                 showStatus: !0,
                 width: c,
@@ -30,10 +30,10 @@ let l = i.memo(function(e) {
                 width: u,
                 opacity: .85,
                 size: l
-            }), (0, r.jsx)(s.A, {
+            }), (0, r.jsx)(o.A, {
                 user: t,
                 nameplate: n,
-                className: o.tZ,
+                className: s.tZ,
                 isHighlighted: i,
                 showPlaceholderUser: !i,
                 showStatus: !0,

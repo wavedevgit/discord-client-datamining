@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(391973),
     i = n(439372),
     a = n(626584),
-    s = n(555528),
-    o = n(41984),
+    o = n(555528),
+    s = n(41984),
     l = n(589051),
     c = n(652215);
 
@@ -25,7 +25,7 @@ let d = new a.A("OverlayWidgetPinManager"),
     p = 288e5,
     _ = !1,
     h = new Set([c.uss.GO_LIVE]),
-    m = new Set([o.AR.WAITING_FOR_POPOUT_OPEN, o.AR.WAITING_FOR_REACT_INITIALIZATION, o.AR.WAITING_FOR_PID_FOCUS, o.AR.WAITING_FOR_SUCCESSFUL_SHOW]),
+    m = new Set([s.AR.WAITING_FOR_POPOUT_OPEN, s.AR.WAITING_FOR_REACT_INITIALIZATION, s.AR.WAITING_FOR_PID_FOCUS, s.AR.WAITING_FOR_SUCCESSFUL_SHOW]),
     g = e => {
         let t = f[e];
         return null == t || Date.now() - t < p
@@ -49,9 +49,9 @@ class b extends i.A {
                     for (let e of Object.keys(f)) {
                         var i, a;
                         if (g(e)) continue;
-                        let t = s.A.getWidget(e);
+                        let t = o.A.getWidget(e);
                         if (null == t || !h.has(t.type)) continue;
-                        let n = null != (i = null == (a = s.A.getWidgetDefaultSettings(t.type)) ? void 0 : a.pinned) ? i : _;
+                        let n = null != (i = null == (a = o.A.getWidgetDefaultSettings(t.type)) ? void 0 : a.pinned) ? i : _;
                         t.pinned !== n && (d.verbose("Widget ".concat(t.type, " is ").concat(t.pinned ? "pinned" : "unpinned", ", toggling to ").concat(n ? "pinned" : "unpinned")), (0, r.v0)(e), y(e))
                     }
             },
@@ -63,7 +63,7 @@ class b extends i.A {
                     enabled: r
                 } = (0, l.Fg)("OverlayWidgetPinManager");
                 if (!r) return;
-                let i = s.A.getWidget(t);
+                let i = o.A.getWidget(t);
                 null != i && h.has(i.type) && null != n && (n ? E(t) : y(t))
             }
         })

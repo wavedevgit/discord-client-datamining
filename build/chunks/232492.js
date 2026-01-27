@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(311907),
     i = n(963027),
     a = n(262763),
-    s = n(976860),
-    o = n(734057),
+    o = n(976860),
+    s = n(734057),
     l = n(977997),
     c = n(721592),
     u = n(652215);
 
 function d(e, t) {
-    let n = (0, r.bG)([o.A], () => o.A.getChannel(t)),
+    let n = (0, r.bG)([s.A], () => s.A.getChannel(t)),
         {
             needSubscriptionToAccess: d
         } = (0, c.A)(null == n ? void 0 : n.id);
@@ -27,7 +27,7 @@ function d(e, t) {
                 connected: l.A.isInChannel(n.id),
                 needSubscriptionToAccess: !1,
                 routeDirectlyToChannel: !0
-            }) : (0, s.pX)(u.BVt.CHANNEL(e, n.id))
+            }) : (0, o.pX)(u.BVt.CHANNEL(e, n.id))
         },
         ariaLabel: (0, i.Ay)({
             channel: n

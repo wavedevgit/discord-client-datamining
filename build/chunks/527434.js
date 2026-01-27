@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(580424),
-    s = n(760751),
-    o = n(248465),
+    o = n(760751),
+    s = n(248465),
     l = n(634788),
     c = n(374803);
 n(827669);
@@ -23,11 +23,11 @@ function f(e) {
 }
 let p = {
     autocompleteInputElementType: "gameMentionInput",
-    stores: [s.A],
+    stores: [o.A],
     matches: (e, t, n, r, i) => !0,
     queryResults: (e, t, n) => ({
         results: {
-            games: o.Ay.queryGames(n).slice(0, 10)
+            games: s.Ay.queryGames(n).slice(0, 10)
         }
     }),
     renderResults(e) {
@@ -36,12 +36,12 @@ let p = {
                 games: t
             },
             selectedIndex: n,
-            query: s,
-            onHover: o,
+            query: o,
+            onHover: s,
             onClick: c
         } = e, d = t.map((e, t) => (0, r.jsx)(a.Ay.Game, {
             onClick: c,
-            onHover: o,
+            onHover: s,
             selected: n === t,
             index: t,
             game: e
@@ -50,7 +50,7 @@ let p = {
             children: [(0, l.wZ)({
                 titleWithQuery: f,
                 titleWithoutQuery: p,
-                query: s,
+                query: o,
                 getQuery: e => "".concat("@").concat(e)
             }), d]
         }, "mentions")

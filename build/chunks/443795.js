@@ -8,16 +8,16 @@ n.d(t, {
 var r = n(573648),
     i = n(611010);
 let a = "spotify",
-    s = r.A.get(a);
-class o extends i.Ay {
+    o = r.A.get(a);
+class s extends i.Ay {
     getIconURL(e) {
-        return s.icon.lightPNG
+        return o.icon.lightPNG
     }
     getWhiteIconURL() {
-        return s.icon.whitePNG
+        return o.icon.whitePNG
     }
     constructor() {
-        super({}), this.id = a, this.name = s.name
+        super({}), this.id = a, this.name = o.name
     }
 }
-let l = new o
+let l = new s

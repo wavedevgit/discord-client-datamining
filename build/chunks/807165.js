@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 807165, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -18,8 +18,8 @@ var r = n(627968),
     m = n(403362),
     p = n(997509),
     f = n(555337),
-    b = n(636042),
-    h = n(396816),
+    h = n(636042),
+    b = n(396816),
     x = n(856644),
     j = n(206774),
     _ = n(763582),
@@ -33,18 +33,18 @@ function A(e) {
 let E = () => {
     let {
         guild: e
-    } = (0, a.cf)([f.A], () => f.A.getProps()), t = (0, a.bG)([h.A], () => h.A.formState), n = (0, a.bG)([h.A], () => h.A.errorMessage);
+    } = (0, a.cf)([f.A], () => f.A.getProps()), t = (0, a.bG)([b.A], () => b.A.formState), n = (0, a.bG)([b.A], () => b.A.errorMessage);
     return (0, r.jsx)(o.A, {
         errorMessage: n,
         onSave: () => {
             if (null == e) return;
             let {
                 id: t
-            } = e, n = h.A.editedRoleIds.map(e => h.A.getRole(e)).filter(m.Vq), r = h.A.getSortDeltas(), i = null, l = null;
-            h.A.hasRoleConfigurationChanges && (l = h.A.editedRoleIdsForConfigurations, i = h.A.getEditedRoleConnectionConfigurationsMap()), (0, b.JY)(t, n, r, l, i)
+            } = e, n = b.A.editedRoleIds.map(e => b.A.getRole(e)).filter(m.Vq), r = b.A.getSortDeltas(), i = null, l = null;
+            b.A.hasRoleConfigurationChanges && (l = b.A.editedRoleIdsForConfigurations, i = b.A.getEditedRoleConnectionConfigurationsMap()), (0, h.JY)(t, n, r, l, i)
         },
         submitting: t === y.XlH.SUBMITTING,
-        onReset: b.Ts
+        onReset: h.Ts
     })
 };
 
@@ -54,19 +54,19 @@ function N(e) {
     } = e, {
         guild: n,
         roles: l
-    } = (0, a.cf)([h.A], () => ({
-        guild: h.A.guild,
-        roles: h.A.roles
+    } = (0, a.cf)([b.A], () => ({
+        guild: b.A.guild,
+        roles: b.A.roles
     }), []);
     s()(null != n, "Guild cannot be null here");
     let o = i.useMemo(() => l.find(e => (0, u.Oy)(e)), [l]);
     s()(null != o, "Guild must have an everyone role");
     let m = i.useMemo(() => l.filter(e => !(0, u.Oy)(e)), [l]),
         p = (0, a.bG)([f.A], () => f.A.getSelectedRoleId()),
-        [b, y] = i.useState(m.length > 0);
+        [h, y] = i.useState(m.length > 0);
     i.useEffect(() => {
-        y(b || m.length > 0)
-    }, [b, m.length]), (0, d.Ay)(() => {
+        y(h || m.length > 0)
+    }, [h, m.length]), (0, d.Ay)(() => {
         let e = g.A.getMemberCount(n.id);
         null != e && e <= x.gz && c.A.requestMembers(n.id, "", 0, !1)
     });
@@ -78,7 +78,7 @@ function N(e) {
         setEditRoleId: A,
         selectedSection: E,
         setSelectedSection: N
-    }) : b ? (0, r.jsx)(O.A, {
+    }) : h ? (0, r.jsx)(O.A, {
         setEditRoleId: A,
         guild: n,
         everyoneRole: o,

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(803664),
+    o = n(397927),
+    s = n(803664),
     l = n(509302),
     c = n(460597),
     u = n(994500),
@@ -23,14 +23,14 @@ function h(e) {
         user: t,
         analyticsLocation: n
     } = e, r = (0, a.bG)([u.A], () => u.A.getRelationshipType(t.id) === p.eA$.PENDING_OUTGOING), {
-        trackUserProfileAction: s
-    } = (0, f.NJ)(), _ = (0, o.A)({
+        trackUserProfileAction: o
+    } = (0, f.NJ)(), _ = (0, s.A)({
         user: t,
         location: n,
-        onFriendRemove: () => s({
+        onFriendRemove: () => o({
             action: "REMOVE_FRIEND"
         }),
-        onFriendRequestSent: () => s({
+        onFriendRequestSent: () => o({
             action: "SEND_FRIEND_REQUEST"
         })
     }), h = (0, l.A)({
@@ -47,14 +47,14 @@ function m(e) {
         children: n,
         targetElementRef: i
     } = e;
-    return (0, r.jsx)(s.YNO, {
+    return (0, r.jsx)(o.YNO, {
         targetElementRef: i,
         renderPopout: e => {
             let {
                 closePopout: n
             } = e;
-            return (0, r.jsx)(s.W1t, {
-                "data-menu-migration-ready": !0,
+            return (0, r.jsx)(o.W1t, {
+                "data-menu-migrated-auto": !0,
                 navId: "user-profile-friend-request-buttons",
                 onSelect: void 0,
                 onClose: n,

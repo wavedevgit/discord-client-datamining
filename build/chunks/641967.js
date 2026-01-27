@@ -2,7 +2,7 @@
 /** chunk id: 641967, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 }), n(896048), n(747238);
 var r = n(600975);
 let i = "bandwidth_estimation",
@@ -65,7 +65,7 @@ let i = "bandwidth_estimation",
             }
         }]
     }),
-    s = {
+    o = {
         getConfig(e, t) {
             let n = a.getCurrentConfig({
                 location: "e1c55b_1"

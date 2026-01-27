@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(938796);
 var r, i = n(665260),
     a = n(311907),
-    s = n(73153),
-    o = n(317525),
+    o = n(73153),
+    s = n(317525),
     l = n(71393),
     c = n(583613),
     u = n(661191),
@@ -91,12 +91,12 @@ function v(e) {
     if (null == n || null == E[n]) return !1;
     let a = E[n];
     if (null == a || a.type !== d._.NEW_MEMBER) return !1;
-    let s = null != (t = a.optInChannels) ? t : new Set;
+    let o = null != (t = a.optInChannels) ? t : new Set;
     return u.default.keys(r).forEach(e => {
         var t;
         let n = r[e];
-        i.Lt(null != (t = n.flags) ? t : 0, p.vv.OPT_IN_ENABLED) ? s.add(e) : s.delete(e)
-    }), a.optInChannels = s, !0
+        i.Lt(null != (t = n.flags) ? t : 0, p.vv.OPT_IN_ENABLED) ? o.add(e) : o.delete(e)
+    }), a.optInChannels = o, !0
 }
 
 function A(e) {
@@ -108,10 +108,10 @@ function A(e) {
         removedOptionIds: a
     } = e;
     if (null == n || null == E[n]) return !1;
-    let s = E[n];
-    if (null == s || s.type !== d._.NEW_MEMBER) return !1;
-    let o = null != (t = s.onboardingResponses) ? t : new Set;
-    return null != a && a.length > 0 && a.forEach(e => o.delete(e)), i ? o.add(r) : o.delete(r), s.onboardingResponses = o, !0
+    let o = E[n];
+    if (null == o || o.type !== d._.NEW_MEMBER) return !1;
+    let s = null != (t = o.onboardingResponses) ? t : new Set;
+    return null != a && a.length > 0 && a.forEach(e => s.delete(e)), i ? s.add(r) : s.delete(r), o.onboardingResponses = s, !0
 }
 
 function I(e) {
@@ -123,13 +123,13 @@ function I(e) {
     if (null == t) return !1;
     let i = E[t];
     return null != i && (null != n && (i.roles = n.reduce((e, n) => {
-        let r = o.A.getRole(t, n);
+        let r = s.A.getRole(t, n);
         return null != r && (e[n] = r), e
     }, {})), null != r && i.type === d._.NEW_MEMBER && (i.memberOptions.flags = r), !0)
 }
 class S extends(r = a.Ay.Store) {
     initialize() {
-        this.waitFor(l.A, o.A)
+        this.waitFor(l.A, s.A)
     }
     hasViewingRoles() {
         return !(0, c.DJ)(E)
@@ -201,7 +201,7 @@ class S extends(r = a.Ay.Store) {
     }
 }
 _(S, "displayName", "ImpersonateStore");
-let T = new S(s.h, {
+let T = new S(o.h, {
     IMPERSONATE_UPDATE: y,
     IMPERSONATE_STOP: b,
     GUILD_ROLE_DELETE: O,

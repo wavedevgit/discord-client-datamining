@@ -1,53 +1,52 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 250627, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    BB: () => m,
-    Qi: () => p,
-    az: () => h,
-    bb: () => f,
-    fZ: () => _
+    BB: () => h,
+    Qi: () => m,
+    az: () => g,
+    bb: () => p,
+    fZ: () => f
 }), n(896048);
 var r = n(64700),
     i = n(311907);
 n(608461);
-var a = n(142120),
-    s = n(164956),
-    o = n(576705),
-    l = n(967198),
+var l = n(142120),
+    a = n(164956),
+    s = n(576705),
+    o = n(967198),
     c = n(912702),
     u = n(871109),
     d = n(652215);
-let f = e => {
+let p = e => {
         let t = (0, i.bG)([u.A], () => null != e ? u.A.getGuildProductsForGuildFetchState(e) : u.e.FETCHED, [e]),
-            n = (0, i.bG)([a.A], () => a.A.isConnected()),
-            [s, o] = r.useState(!0);
+            n = (0, i.bG)([l.A], () => l.A.isConnected()),
+            [a, s] = r.useState(!0);
         return r.useEffect(() => {
-            s && (t === u.e.NOT_FETCHED || t === u.e.FETCHED && u.A.isGuildProductsCacheExpired(e)) && n && c.GI(e), o(!n)
-        }, [e, n, t, s]), {
-            listingsLoaded: t === u.e.FETCHED && !s
+            a && (t === u.e.NOT_FETCHED || t === u.e.FETCHED && u.A.isGuildProductsCacheExpired(e)) && n && c.GI(e), s(!n)
+        }, [e, n, t, a]), {
+            listingsLoaded: t === u.e.FETCHED && !a
         }
     },
-    p = function(e, t) {
+    m = function(e, t) {
         let {
             requireCurrentGuild: n
         } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
             requireCurrentGuild: !0
-        }, s = (0, i.bG)([a.A], () => a.A.isConnected()), o = (0, i.bG)([l.A], () => l.A.getGuildId());
+        }, a = (0, i.bG)([l.A], () => l.A.isConnected()), s = (0, i.bG)([o.A], () => o.A.getGuildId());
         return r.useEffect(() => {
             let r = u.A.getGuildProductFetchState(t);
-            if ((!n || o === e) && s && r === u.e.NOT_FETCHED) try {
+            if ((!n || s === e) && a && r === u.e.NOT_FETCHED) try {
                 c.py(e, t)
             } catch (e) {}
-        }, [e, t, s, o, n]), (0, i.bG)([u.A], () => u.A.getGuildProduct(t))
+        }, [e, t, a, s, n]), (0, i.bG)([u.A], () => u.A.getGuildProduct(t))
     },
-    _ = function(e) {
+    f = function(e) {
         let {
             publishedOnly: t
         } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-        return (0, i.bG)([u.A, s.A], () => u.A.getGuildProductsForGuild(e, {
-            publishedOnly: null != t ? t : !s.A.isViewingServerShop(e)
+        return (0, i.bG)([u.A, a.A], () => u.A.getGuildProductsForGuild(e, {
+            publishedOnly: null != t ? t : !a.A.isViewingServerShop(e)
         }))
     },
-    h = e => (0, i.bG)([u.A], () => null == e ? void 0 : u.A.getGuildProduct(e)),
-    m = e => (0, i.bG)([o.A], () => null != e && o.A.can(d.xBc.ADMINISTRATOR, e))
+    g = e => (0, i.bG)([u.A], () => null == e ? void 0 : u.A.getGuildProduct(e)),
+    h = e => (0, i.bG)([s.A], () => null != e && s.A.can(d.xBc.ADMINISTRATOR, e))

@@ -1,11 +1,9 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 837367, original params: e,t,n (module,exports,require) **/
-"use strict";
-
 function r(e) {
     let t, n = !1;
     return function() {
-        for (var r = arguments.length, i = Array(r), a = 0; a < r; a++) i[a] = arguments[a];
+        for (var r = arguments.length, i = Array(r), l = 0; l < r; l++) i[l] = arguments[l];
         return n || (n = !0, t = e(...i)), t
     }
 }

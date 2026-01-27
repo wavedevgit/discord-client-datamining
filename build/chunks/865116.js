@@ -3,12 +3,12 @@
 "use strict";
 n.d(t, {
     Ay: () => f,
-    xW: () => o
+    xW: () => s
 }), n(896048);
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-var o = function(e) {
+var s = function(e) {
     return e[e.MESSAGING = 0] = "MESSAGING", e[e.OVERLAYS = 1] = "OVERLAYS", e[e.PREMIUM = 2] = "PREMIUM", e[e.REPORTING = 3] = "REPORTING", e[e.APP_COLLECTIONS = 4] = "APP_COLLECTIONS", e[e.SHOP = 5] = "SHOP", e[e.LIBDISCORE = 6] = "LIBDISCORE", e
 }({});
 let l = {
@@ -129,7 +129,7 @@ class d extends(r = i.Ay.DeviceSettingsStore) {
         })
     }
 }
-s(d, "displayName", "DevToolsDevSettingsStore"), s(d, "persistKey", "DevToolsDevSettingsStore");
+o(d, "displayName", "DevToolsDevSettingsStore"), o(d, "persistKey", "DevToolsDevSettingsStore");
 let f = new d(a.h, {
     DEV_TOOLS_DEV_SETTING_SET: u
 })

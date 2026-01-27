@@ -2,18 +2,18 @@
 /** chunk id: 902527, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(110259),
     i = n(139286),
     a = n(989837),
-    s = n(520117);
+    o = n(520117);
 
-function o(e) {
+function s(e) {
     let {
         sectionName: t,
         numItems: n,
-        numVisibleItems: o
+        numVisibleItems: s
     } = e, l = () => {
         (0, i.x)({
             type: r.ImpressionTypes.VIEW,
@@ -21,13 +21,13 @@ function o(e) {
             properties: {
                 section_name: t,
                 num_items: n,
-                num_visible_items: o,
+                num_visible_items: s,
                 source: a.A.entrypoint()
             }
         })
     }, c = 1;
     return {
-        trackSectionImpressionRef: (0, s.A)({
+        trackSectionImpressionRef: (0, o.A)({
             onVisible: l,
             threshold: c
         })

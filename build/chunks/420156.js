@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 420156, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     In: "outerButton__5a6cf",
     LG: "innerButton__5a6cf",

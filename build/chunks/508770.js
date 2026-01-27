@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(503698),
     a = n.n(i),
-    s = n(460890),
-    o = n(834730),
+    o = n(460890),
+    s = n(834730),
     l = n(769796);
 let c = (e, t) => {
     switch (e) {
@@ -39,8 +39,8 @@ function d(e) {
         icon: i
     } = e, {
         i18n: u
-    } = (0, s.G9)();
-    return (0, r.jsxs)(o.E, {
+    } = (0, o.G9)();
+    return (0, r.jsxs)(s.E, {
         variant: "eyebrow",
         className: a()(l.badge, l[n]),
         children: [null != i && (0, r.jsx)(i, {

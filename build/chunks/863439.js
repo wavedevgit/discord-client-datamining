@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92414 **/
 /** chunk id: 863439, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => o,
-    z: () => l
+    z: () => a
 });
 var r = n(417597),
     i = n(253932),
-    a = n(576705),
+    l = n(576705),
     s = n(652215);
 
 function o(e, t) {
@@ -22,7 +21,7 @@ function o(e, t) {
     }
 }
 
-function l(e) {
-    let t = (0, r.bG)([a.A], () => a.A.can(s.xBc.MANAGE_MESSAGES, e));
+function a(e) {
+    let t = (0, r.bG)([l.A], () => l.A.can(s.xBc.MANAGE_MESSAGES, e));
     return !o(i.gs.useSetting(), t)
 }

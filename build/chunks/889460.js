@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(308528),
+    o = n(397927),
+    s = n(308528),
     l = n(846293),
     c = n(843472),
     u = n(855687),
@@ -65,7 +65,7 @@ let I = "max_uses",
     T = "context_menu";
 
 function C(e, t) {
-    o.A.ensurePrivateChannel(e).then(e => {
+    s.A.ensurePrivateChannel(e).then(e => {
         null != d.A.getChannel(e) && c.A.sendInvite(e, t, T, {
             source: E.PE1.GUILD_CONTEXT_MENU
         })
@@ -76,7 +76,7 @@ function N(e) {
     let {
         user: t,
         guildId: n,
-        onAction: o
+        onAction: s
     } = e, c = (0, a.bG)([g.default], () => g.default.getCurrentUser(), []), d = (0, a.yK)([m.Ay, p.A, _.A], () => {
         let e = m.Ay.getFlattenedGuildIds(),
             t = [];
@@ -98,18 +98,18 @@ function N(e) {
             }, S).then(e => C(t, e.code))
         }
     }
-    return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.A.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(s.Drp, {
+    return (null == c ? void 0 : c.id) === t.id || t.bot || 0 === d.length || h.A.isBlockedOrIgnored(t.id) ? null : (0, r.jsx)(o.Drp, {
         id: "invite-to-server",
         label: y.intl.string(y.t.Sd8Ixw),
-        children: d.map(e => b[e.id] ? (0, r.jsx)(s.Drp, {
+        children: d.map(e => b[e.id] ? (0, r.jsx)(o.Drp, {
             id: e.id,
             disabled: !0,
             label: y.intl.string(y.t.PuLLzP)
-        }, e.id) : (0, r.jsx)(s.Drp, {
+        }, e.id) : (0, r.jsx)(o.Drp, {
             id: e.id,
             label: e.name,
             action: () => {
-                null == o || o(), T(e, t.id)
+                null == s || s(), T(e, t.id)
             }
         }, e.id))
     })

@@ -6,17 +6,17 @@ n.d(t, {
     Gg: () => c,
     b1: () => d,
     cV: () => l,
-    nh: () => s
+    nh: () => o
 });
 var r = n(2242),
     i = n(788868),
     a = n(985018);
 
-function s(e) {
+function o(e) {
     return "roles" in e ? "emoji-".concat(e.id) : "".concat(e.ref_type, "-").concat(e.emoji_id, "-").concat(e.name, "-").concat(e.ref_id)
 }
 
-function o(e) {
+function s(e) {
     switch (e) {
         case i.WT.DAY:
             return a.t["3rUmPQ"];
@@ -32,7 +32,7 @@ function l(e) {
         interval: t,
         interval_count: n
     } = e;
-    return a.intl.format(o(t), {
+    return a.intl.format(s(t), {
         count: n
     })
 }

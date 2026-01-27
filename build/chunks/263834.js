@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 263834, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    L: () => a
+    L: () => l
 });
-var r = n(73153),
-    i = n(865116);
+var i = n(73153),
+    s = n(865116);
 
-function a(e, t) {
-    let n = "boolean" == typeof t ? t : !i.Ay.get(e);
-    r.h.dispatch({
+function l(e, t) {
+    let n = "boolean" == typeof t ? t : !s.Ay.get(e);
+    i.h.dispatch({
         type: "DEV_TOOLS_DEV_SETTING_SET",
         toggle: e,
         value: n

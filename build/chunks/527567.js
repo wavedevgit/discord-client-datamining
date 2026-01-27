@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 527567, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -11,12 +10,12 @@ var r = n(627968),
     a = n(854378),
     o = n(210714),
     c = n(985018),
-    u = n(473169);
+    d = n(473169);
 
-function d(e) {
+function u(e) {
     let {
         location: t
-    } = e, [d, h] = i.useState("submitting");
+    } = e, [u, h] = i.useState("submitting");
     return (i.useEffect(() => {
         (0, o.d)("authorize_payment");
         let e = (0, l.A)(t);
@@ -27,28 +26,28 @@ function d(e) {
                 h("failed")
             }
         })()
-    }, [t]), "failed" === d) ? (0, r.jsxs)(a.Ay, {
+    }, [t]), "failed" === u) ? (0, r.jsxs)(a.Ay, {
         children: [(0, r.jsx)("img", {
             alt: "",
             src: n(678985),
-            className: u.SX
+            className: d.SX
         }), (0, r.jsx)(a.hE, {
-            className: u.QB,
+            className: d.QB,
             children: c.intl.string(c.t.GHRpue)
         }), (0, r.jsx)(a.tK, {
-            className: u.C2,
+            className: d.C2,
             children: c.intl.string(c.t["1nO55v"])
         })]
-    }) : "succeeded" === d ? (0, r.jsxs)(a.Ay, {
+    }) : "succeeded" === u ? (0, r.jsxs)(a.Ay, {
         children: [(0, r.jsx)("img", {
             alt: "",
             src: n(586430),
-            className: u.SX
+            className: d.SX
         }), (0, r.jsx)(a.hE, {
-            className: u.QB,
+            className: d.QB,
             children: c.intl.string(c.t.ihHX53)
         }), (0, r.jsx)(a.tK, {
-            className: u.C2,
+            className: d.C2,
             children: c.intl.string(c.t["pGPCv+"])
         })]
     }) : (0, r.jsxs)(a.Ay, {

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(306173),
     i = n(279234),
     a = n(626584),
-    s = n(954571),
-    o = n(548965),
+    o = n(954571),
+    s = n(548965),
     l = n(652215);
 let c = new a.A("libdiscore"),
     u = !1;
@@ -27,10 +27,10 @@ async function d() {
 
 function f() {
     let e = [];
-    o.ML.forEach(t => {
+    s.ML.forEach(t => {
         let n = t.getEnabledFeatureName();
         null != n && e.push(n)
-    }), s.default.track(l.HAw.LIBDISCORE_LOADED, {
+    }), o.default.track(l.HAw.LIBDISCORE_LOADED, {
         success: !0,
         experimental_features: e
     })
@@ -45,7 +45,7 @@ function p(e) {
 function _(e) {
     c.error("Failed to execute smoke test:", e);
     let t = p(e);
-    s.default.track(l.HAw.LIBDISCORE_LOADED, {
+    o.default.track(l.HAw.LIBDISCORE_LOADED, {
         success: !1,
         error: t
     })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(56121),
-    s = n(927813),
-    o = n(562153),
+    o = n(927813),
+    s = n(562153),
     l = n(939341),
     c = n(583846),
     u = n(821988),
@@ -26,10 +26,10 @@ function y(e) {
 }
 let b = (e, t, n, r) => {
         let i = y(r),
-            a = o.Ay.getName(t.guild_id, t.id, n),
-            s = e.extra.game_name;
+            a = s.Ay.getName(t.guild_id, t.id, n),
+            o = e.extra.game_name;
         return E.intl.formatToMarkdownString(i, {
-            gameName: s,
+            gameName: o,
             userName: a
         }).replaceAll("*", "")
     },
@@ -42,7 +42,7 @@ let b = (e, t, n, r) => {
             channel: t,
             entry: n,
             disableGameProfileLinks: a,
-            onReaction: o,
+            onReaction: s,
             onVoiceChannelPreview: y
         } = e, {
             largeImage: v
@@ -62,7 +62,7 @@ let b = (e, t, n, r) => {
                 avatarSrcs: [A.getAvatarURL(null == t ? void 0 : t.guild_id, 128)],
                 description: b(n, t, A, w),
                 timestamp: E.intl.formatToPlainString(E.t.YL7UE3, {
-                    hours: Math.round(N / s.A.Seconds.HOUR)
+                    hours: Math.round(N / o.A.Seconds.HOUR)
                 }),
                 colors: [T, C],
                 channelId: e
@@ -90,7 +90,7 @@ let b = (e, t, n, r) => {
                 disableGameProfileLinks: a
             }), (0, r.jsx)(h.Eh, {
                 children: (0, r.jsx)(h.fD, {
-                    onReaction: o,
+                    onReaction: s,
                     onVoiceChannelPreview: y,
                     user: A,
                     channel: t,

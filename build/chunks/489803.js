@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(524799),
-    s = n(652215);
-let o = 20;
+    o = n(652215);
+let s = 20;
 
 function l(e) {
     let {
@@ -24,7 +24,7 @@ function l(e) {
     let l = async e => {
         try {
             let t = await r.Bo.get({
-                url: s.Rsh.APPLICATIONS_GAMES_SUPPLEMENTAL,
+                url: o.Rsh.APPLICATIONS_GAMES_SUPPLEMENTAL,
                 query: {
                     application_ids: e
                 },
@@ -42,5 +42,5 @@ function l(e) {
             })
         }
     };
-    for (; n.length > 0;) l(n.splice(0, o))
+    for (; n.length > 0;) l(n.splice(0, s))
 }

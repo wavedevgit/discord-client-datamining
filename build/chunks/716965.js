@@ -14,16 +14,16 @@ n.d(t, {
 var r = n(323125),
     i = n(562465),
     a = n(830215),
-    s = n(734057),
-    o = n(309010),
+    o = n(734057),
+    s = n(309010),
     l = n(652215);
 let c = "10000",
     u = "10000";
 
 function d() {
     var e, t, n;
-    let r = o.A.getChannelId(),
-        i = s.A.getBasicChannel(r);
+    let r = s.A.getChannelId(),
+        i = o.A.getBasicChannel(r);
     return {
         guild_id: null != (e = null == i ? void 0 : i.guild_id) ? e : c,
         channel_id: null != (t = null == i ? void 0 : i.id) ? t : u,
@@ -47,8 +47,8 @@ async function p(e) {
         clientId: n,
         scopes: r,
         responseType: a,
-        redirectUri: s,
-        codeChallenge: o,
+        redirectUri: o,
+        codeChallenge: s,
         codeChallengeMethod: c,
         state: u,
         permissions: f,
@@ -63,8 +63,8 @@ async function p(e) {
         query: {
             client_id: n,
             response_type: a,
-            redirect_uri: s,
-            code_challenge: o,
+            redirect_uri: o,
+            code_challenge: s,
             code_challenge_method: c,
             scope: r.join(" "),
             state: u,
@@ -92,8 +92,8 @@ async function _(e) {
         scopes: n,
         responseType: r,
         redirectUri: a,
-        codeChallenge: s,
-        codeChallengeMethod: o,
+        codeChallenge: o,
+        codeChallengeMethod: s,
         state: c,
         integrationType: u,
         nonce: d,
@@ -105,8 +105,8 @@ async function _(e) {
             client_id: t,
             response_type: r,
             redirect_uri: a,
-            code_challenge: s,
-            code_challenge_method: o,
+            code_challenge: o,
+            code_challenge_method: s,
             scope: n.join(" "),
             state: c,
             integration_type: u,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(815706),
     a = n(592598),
-    s = n(672396),
-    o = n(652215);
+    o = n(672396),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -32,7 +32,7 @@ class f extends r.A {
         super(...e), l(this, "handleOverlayMounted", e => {
             c = Date.now()
         }), l(this, "handleNotificationEvent", e => {
-            if (e.action !== s.uj.Viewed) return;
+            if (e.action !== o.uj.Viewed) return;
             let t = Date.now(),
                 n = e.notificationType;
             d = {
@@ -46,14 +46,14 @@ class f extends r.A {
                 disabled: r
             } = e;
             if (!t) return;
-            let s = Date.now(),
-                l = null != c ? s - c : null,
+            let o = Date.now(),
+                l = null != c ? o - c : null,
                 f = null,
                 p = null;
             for (let [e, t] of u.entries()) {
                 let r = a.A.getDisabledSettingByNotificationType(e);
                 if (null != r && r === n) {
-                    let n = s - t;
+                    let n = o - t;
                     (null == f || n < f) && (f = n, p = {
                         notificationType: e,
                         timestamp: t
@@ -61,7 +61,7 @@ class f extends r.A {
                 }
             }
             let _ = null != d && null != p && d.notificationType === p.notificationType && d.timestamp === p.timestamp;
-            (0, i.z)(o.HAw.OVERLAY_NOTIFICATION_SETTING_UPDATED, {
+            (0, i.z)(s.HAw.OVERLAY_NOTIFICATION_SETTING_UPDATED, {
                 setting: n,
                 disabled: r,
                 time_since_last_seen_overlay: l,

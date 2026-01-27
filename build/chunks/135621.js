@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(311907),
     i = n(287809),
     a = n(927578),
-    s = n(652215);
+    o = n(652215);
 
-function o(e) {
-    return a.Ay.canUseIncreasedMessageLength(e.getCurrentUser()) ? s.CS1 : s.uvi
+function s(e) {
+    return a.Ay.canUseIncreasedMessageLength(e.getCurrentUser()) ? o.CS1 : o.uvi
 }
 
 function l() {
-    return (0, r.bG)([i.default], () => o(i.default))
+    return (0, r.bG)([i.default], () => s(i.default))
 }

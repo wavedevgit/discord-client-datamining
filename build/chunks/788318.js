@@ -5,8 +5,8 @@ let r, i;
 n.d(t, {
     A: () => A
 }), n(896048);
-var a, s = n(735438),
-    o = n.n(s),
+var a, o = n(735438),
+    s = n.n(o),
     l = n(311907),
     c = n(73153),
     u = n(313961),
@@ -30,7 +30,7 @@ function E() {
     let e, t = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
     if (null == r) e = null;
     else {
-        var n, a, s, l, c;
+        var n, a, o, l, c;
         null != (e = u.A.getSelectedParticipantId(r)) && u.A.isParticipantPoppedOut(r, e) && (e = null);
         let t = f.A.getLastActiveStream(),
             g = null != e ? u.A.getParticipant(r, e) : null;
@@ -40,21 +40,23 @@ function E() {
         }
         if (null == e) {
             let t = p.default.getId(),
-                n = o()(u.A.getVideoParticipants(r)).filter(e => e.type === m.lp.USER && e.user.id !== t && !_.A.isLocalVideoDisabled(e.user.id) && !u.A.isParticipantPoppedOut(r, e.id)),
+                n = s()(u.A.getVideoParticipants(r)).filter(e => e.type === m.lp.USER && e.user.id !== t && !_.A.isLocalVideoDisabled(e.user.id) && !u.A.isParticipantPoppedOut(r, e.id)),
                 a = n.map(e => e.user.id),
                 d = Date.now();
-            null == (e = null == (s = n.map(e => [e.user.id, h.A.getSpeakingDuration(e.user.id, d)]).filter(e => {
+            null == (e = null == (o = n.map(e => [e.user.id, h.A.getSpeakingDuration(e.user.id, d)]).filter(e => {
                 let [t, n] = e;
                 return 0 !== n
             }).maxBy(e => {
                 let [t, n] = e;
                 return -n
-            })) ? void 0 : s[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? void 0 : l.id)
+            })) ? void 0 : o[0]) && (e = null != i && a.has(i) ? i : null == (c = n.first()) || null == (l = c.user) ? void 0 : l.id)
         }
     }
     i !== e && (i = e, t && v.emitChange())
 }
-let y = o().debounce(E, 300);
+let y = s().throttle(E, 300, {
+    trailing: !0
+});
 
 function b() {
     return y(), !1

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(761799),
     i = n(409437),
     a = n(706208),
-    s = n(234291),
-    o = n(423661),
+    o = n(234291),
+    s = n(423661),
     l = n(356826),
     c = n(793600),
     u = n(195386),
@@ -21,8 +21,8 @@ let p = {
 function _(e, t) {
     if (r.A.USE_TIFF && i.A.isTiffFile(e)) return h(i.A.findTiffOffsets(), "tiff", "TIFF");
     if (r.A.USE_JPEG && a.A.isJpegFile(e)) return h(a.A.findJpegOffsets(e), "jpeg", "JPEG");
-    if (r.A.USE_PNG && s.Ay.isPngFile(e)) return h(s.Ay.findPngOffsets(e, t), "png", "PNG");
-    if (r.A.USE_HEIC && o.A.isHeicFile(e)) return h(o.A.findHeicOffsets(e), "heic", "HEIC");
+    if (r.A.USE_PNG && o.Ay.isPngFile(e)) return h(o.Ay.findPngOffsets(e, t), "png", "PNG");
+    if (r.A.USE_HEIC && s.A.isHeicFile(e)) return h(s.A.findHeicOffsets(e), "heic", "HEIC");
     if (r.A.USE_AVIF && l.A.isAvifFile(e)) return h(l.A.findAvifOffsets(e), "avif", "AVIF");
     if (r.A.USE_WEBP && c.A.isWebpFile(e)) return h(c.A.findOffsets(e), "webp", "WebP");
     if (r.A.USE_GIF && u.A.isGifFile(e)) return h(u.A.findOffsets(e), "gif", "GIF");

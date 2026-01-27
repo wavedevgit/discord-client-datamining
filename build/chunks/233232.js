@@ -2,7 +2,7 @@
 /** chunk id: 233232, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    J: () => s
+    J: () => o
 });
 var r = n(250105),
     i = n(128319);
@@ -19,7 +19,7 @@ let a = (0, r.Ay)({
     }
 });
 
-function s(e) {
+function o(e) {
     let {
         location: t,
         disable: n = !1

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(793574),
     c = n(688810),
     u = n(422936),
@@ -43,7 +43,7 @@ let v = () => (0, h.U)(!1),
             T = (null == I || null == (n = I.subscription_trial) ? void 0 : n.sku_id) === E.pe.TIER_0,
             C = null != I || null != S;
         return (0, r.jsxs)("div", {
-            className: s()(b.VL, {
+            className: o()(b.VL, {
                 [b.Hz]: C
             }),
             children: [C ? (0, r.jsx)(f.Ay, {
@@ -63,12 +63,12 @@ let v = () => (0, h.U)(!1),
                     className: b.Tn,
                     src: O,
                     alt: y.intl.string(y.t.do7AoM)
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(s.Text, {
                     className: b.ex,
                     color: "text-strong",
                     variant: "text-lg/semibold",
                     children: y.intl.string(y.t.jJG1pl)
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(s.Text, {
                     className: b.GR,
                     variant: "text-md/normal",
                     children: y.intl.format(y.t.jt7JX6, {
@@ -78,10 +78,10 @@ let v = () => (0, h.U)(!1),
             }), !C && (0, r.jsx)(m.A, {
                 analyticsSection: g.JJy.EXPRESSION_PICKER,
                 buttonText: C ? T ? y.intl.string(y.t.hz78hE) : y.intl.string(y.t["Gd/XHF"]) : void 0
-            }), (0, r.jsx)(o.DUT, {
+            }), (0, r.jsx)(s.DUT, {
                 className: b.kz,
                 onClick: v,
-                children: (0, r.jsx)(o.PGe, {
+                children: (0, r.jsx)(s.PGe, {
                     size: "md",
                     color: "currentColor"
                 })

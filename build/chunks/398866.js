@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(337126),
+    o = n.n(a),
+    s = n(337126),
     l = n(835245),
     c = n(440454),
     u = n(544028),
@@ -64,19 +64,19 @@ function v(e) {
         url: t,
         className: n,
         style: a,
-        onLoad: s,
+        onLoad: o,
         shouldRefocus: g,
         queryParams: E,
         allowPopups: b = !1,
         referrerPolicy: v = "origin"
-    } = e, A = (0, f.xi)({}), I = (0, o.useMemoOne)(() => (0, l.A)(), [t]), S = i.useRef(null), T = (0, p.A)(S, g, null == A ? window : A), C = O(y({}, E), {
+    } = e, A = (0, f.xi)({}), I = (0, s.useMemoOne)(() => (0, l.A)(), [t]), S = i.useRef(null), T = (0, p.A)(S, g, null == A ? window : A), C = O(y({}, E), {
         frame_id: I,
         platform: h.vu.DESKTOP
     }), [N, w] = i.useState(!1), R = u.A.theme, P = y({}, a);
 
     function D(e) {
         var n;
-        null == s || s(e.target), S.current = e.target, T(!0), null == (n = e.target.contentWindow) || n.postMessage([c.A.HELLO, C], null != t ? t : "")
+        null == o || o(e.target), S.current = e.target, T(!0), null == (n = e.target.contentWindow) || n.postMessage([c.A.HELLO, C], null != t ? t : "")
     }
     return R === m.NJ8.LIGHT ? P.colorScheme = "light" : P.colorScheme = "dark", i.useEffect(() => (d._.dispatch(m.jej.IFRAME_MOUNT, {
         id: I
@@ -110,17 +110,17 @@ function v(e) {
 function A(e) {
     let {
         onLoad: t
-    } = e, [n, a] = i.useState(!1), o = i.useCallback(e => {
+    } = e, [n, a] = i.useState(!1), s = i.useCallback(e => {
         a(!0), null == t || t(e)
     }, [t]);
     return (0, r.jsxs)("div", {
         className: g.Qf,
         children: [!n && (0, r.jsx)("div", {
-            className: s()(g.Qf, g.SL)
+            className: o()(g.Qf, g.SL)
         }), (0, r.jsx)("div", {
-            className: s()(g.Qf, n ? void 0 : g.Ar),
+            className: o()(g.Qf, n ? void 0 : g.Ar),
             children: (0, r.jsx)(v, O(y({}, e), {
-                onLoad: o
+                onLoad: s
             }))
         })]
     })

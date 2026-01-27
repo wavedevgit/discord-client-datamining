@@ -6,9 +6,9 @@ n.d(t, {
     y: () => b
 });
 var i, a = n(627968),
-    s = n(64700),
-    o = n(503698),
-    l = n.n(o),
+    o = n(64700),
+    s = n(503698),
+    l = n.n(s),
     c = n(745262),
     u = n(158954),
     d = n(829681);
@@ -73,7 +73,7 @@ function g(e, t) {
 }
 let E = "\n  visibility:hidden;\n  overflow:hidden;\n  position:absolute;\n  z-index:-1000;\n  top:0;\n  right:0;\n",
     y = ["letter-spacing", "line-height", "padding-top", "padding-bottom", "font-family", "font-weight", "font-size", "text-transform", "width", "padding-left", "padding-right", "border-width", "box-sizing"];
-class b extends(i = s.PureComponent) {
+class b extends(i = o.PureComponent) {
     componentDidMount() {
         var e, t;
         null == (e = (t = this.props).onResize) || e.call(t, void 0), Promise.resolve().then(() => this.calculateSize())
@@ -100,14 +100,14 @@ class b extends(i = s.PureComponent) {
         });
         null == r && null != document.body && (r = document.createElement("textarea"), document.body.appendChild(r));
         let {
-            paddingSize: s,
-            borderSize: o,
+            paddingSize: o,
+            borderSize: s,
             boxSizing: l,
             sizingStyle: c
         } = this.calculateNodeStyling(t);
         r.setAttribute("style", c + ";" + E), r.value = a, null != i ? r.setAttribute("rows", "".concat(i)) : r.removeAttribute("rows");
         let u = r.scrollHeight;
-        "border-box" === l ? u += o : "content-box" === l && (u -= s), this.setState({
+        "border-box" === l ? u += s : "content-box" === l && (u -= o), this.setState({
             height: u
         })
     }
@@ -162,12 +162,12 @@ class b extends(i = s.PureComponent) {
             } = e,
             i = m(e, ["style", "className", "onResize"]);
         delete i.fontWidthEstimate;
-        let s = p({}, this.state, t);
+        let o = p({}, this.state, t);
         return (0, a.jsx)(u.vN3, {
             children: (0, a.jsx)("textarea", h(p({}, i), {
                 className: l()(n, d.kw),
                 ref: this.handleSetRef,
-                style: s,
+                style: o,
                 onChange: this.handleChange
             }))
         })

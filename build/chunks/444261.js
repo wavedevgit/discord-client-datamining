@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(439372),
-    s = n(919577),
-    o = n(961350),
+    o = n(919577),
+    s = n(961350),
     l = n(734057);
 
 function c(e, t, n) {
@@ -40,9 +40,9 @@ class u extends a.A {
             channelId: i,
             message: a
         } = e, c = l.A.getChannel(i);
-        if ((null == (n = a.author) ? void 0 : n.id) !== o.default.getId() || !(null == c ? void 0 : c.isActiveThread())) return;
+        if ((null == (n = a.author) ? void 0 : n.id) !== s.default.getId() || !(null == c ? void 0 : c.isActiveThread())) return;
         let u = new Date(null != (t = null == (r = c.threadMetadata) ? void 0 : r.archiveTimestamp) ? t : 0).getTime();
-        Date.now() - u < 5e3 && s.A.resort(c.parent_id)
+        Date.now() - u < 5e3 && o.A.resort(c.parent_id)
     }
     handleGuildDelete(e) {
         let {

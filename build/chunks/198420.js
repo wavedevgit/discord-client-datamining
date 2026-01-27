@@ -2,7 +2,7 @@
 /** chunk id: 198420, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c: () => s,
+    c: () => o,
     h: () => a
 });
 var r = n(858662),
@@ -13,7 +13,7 @@ function a(e, t) {
     return n.loadDataTransfer(t), n
 }
 
-function s(e) {
+function o(e) {
     if (!e) return null;
     var t = Array.prototype.slice.call(e.types || []);
     return Object.keys(r.l).filter(function(e) {

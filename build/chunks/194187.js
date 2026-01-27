@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(47167),
+    o = n(397927),
+    s = n(47167),
     l = n(126904),
     c = n(10862),
     u = n(200041),
@@ -26,7 +26,7 @@ function p(e) {
         hideTooltip: h = !1,
         canTruncate: m = !0,
         showChannelName: g = !1
-    } = e, E = (0, s.S31)(s.clD.ONLINE), y = (0, o.Ay)(t), b = t.isDM() || t.isGroupDM(), {
+    } = e, E = (0, o.S31)(o.clD.ONLINE), y = (0, s.Ay)(t), b = t.isDM() || t.isGroupDM(), {
         enableTopNavButton: O
     } = (0, l.tR)({
         location: "VoiceActivityStatusWithCombinedTooltip"

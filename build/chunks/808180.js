@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(972347),
     i = n(451988),
     a = n(73153),
-    s = n(626584),
-    o = n(784113),
+    o = n(626584),
+    s = n(784113),
     l = n(927813),
     c = n(399307);
 
@@ -36,11 +36,11 @@ class f extends r.A {
         this.incomingVideoEnabled = e, t && (this.logger.info("Incoming video enabled changed, incomingVideoEnabled = ".concat(this.incomingVideoEnabled)), this.lastEnabledChange = performance.now(), this.emit("incoming-video-enabled-changed", this.incomingVideoEnabled))
     }
     constructor() {
-        super(), u(this, "disableVideoTimer", new i.Ep), u(this, "discordVisible", !0), u(this, "incomingVideoEnabled", !0), u(this, "lastEnabledChange", performance.now()), u(this, "logger", new s.A("WindowVisibilityVideoManager")), u(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * l.A.Millis.SECOND), u(this, "update", () => {
+        super(), u(this, "disableVideoTimer", new i.Ep), u(this, "discordVisible", !0), u(this, "incomingVideoEnabled", !0), u(this, "lastEnabledChange", performance.now()), u(this, "logger", new o.A("WindowVisibilityVideoManager")), u(this, "HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS", 30 * l.A.Millis.SECOND), u(this, "update", () => {
             this.discordVisible !== (0, c.A)() && (this.discordVisible = (0, c.A)(), this.emit("window-visibility-changed", this.discordVisible), this.discordVisible ? (this.disableVideoTimer.stop(), this.setIncomingVideoEnabled(!0)) : this.disableVideoTimer.start(this.HIDDEN_WINDOW_DISABLE_VIDEO_DURATION_MS, () => {
                 this.setIncomingVideoEnabled(!1)
             }))
-        }), a.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.update), a.h.subscribe("APP_STATE_UPDATE", this.update), o.A.addOnPipModeChangedListener(this.update)
+        }), a.h.subscribe("WINDOW_VISIBILITY_CHANGE", this.update), a.h.subscribe("APP_STATE_UPDATE", this.update), s.A.addOnPipModeChangedListener(this.update)
     }
 }
 let p = new f

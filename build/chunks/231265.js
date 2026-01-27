@@ -1,36 +1,35 @@
-/** Chunk was on web.js **/
-/** chunk id: 231265, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    C: () => l,
+/** Chunk was on 2292 **/
+/** chunk id: 231265, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    C: () => o,
     _: () => c
 });
-var r = n(40185),
-    i = n(478097),
-    a = n(196042),
-    s = n(412260),
-    o = n(985018);
-async function l() {
-    let e = s.A.bogoPromotion,
+var n = r(40185),
+    i = r(478097),
+    l = r(196042),
+    a = r(412260),
+    s = r(985018);
+async function o() {
+    let e = a.A.bogoPromotion,
         t = null != e && new Date(e.endDate).valueOf() >= Date.now() && new Date(e.startDate).valueOf() <= Date.now(),
-        n = await (0, r.nq)(),
+        r = await (0, n.nq)(),
         {
-            enabled: o
-        } = a.oy.getCurrentConfig({
+            enabled: s
+        } = l.oy.getCurrentConfig({
             location: "153d31_6"
         }, {
             autoTrackExposure: !1
         }),
         {
-            enabled: l
+            enabled: o
         } = i.A.getCurrentConfig({
             location: "153d31_7"
         }, {
-            autoTrackExposure: t && o && n
+            autoTrackExposure: t && s && r
         });
-    return t && l && o && n
+    return t && o && s && r
 }
 
 function c() {
-    return o.intl.string(o.t.iQTfWx)
+    return s.intl.string(s.t.iQTfWx)
 }

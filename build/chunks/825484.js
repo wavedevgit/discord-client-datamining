@@ -2,18 +2,18 @@
 /** chunk id: 825484, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    e: () => o
+    e: () => s
 });
 var r = n(627968),
     i = n(64700),
     a = n(331322),
-    s = n(977067);
+    o = n(977067);
 
-function o(e) {
+function s(e) {
     let {
         size: t = "md",
         direction: n = "horizontal",
-        justify: o,
+        justify: s,
         align: l,
         padding: c,
         className: u,
@@ -28,13 +28,13 @@ function o(e) {
     return (0, r.jsx)(a.B, {
         direction: n,
         gap: 8,
-        justify: o,
+        justify: s,
         align: l,
         wrap: f,
         padding: c,
         className: u,
         fullWidth: !!_ || p,
-        children: (0, r.jsx)(s.Z.Provider, {
+        children: (0, r.jsx)(o.Z.Provider, {
             value: h,
             children: d
         })

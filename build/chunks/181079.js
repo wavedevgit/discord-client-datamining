@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(873298),
-    s = n(73153),
-    o = n(617617),
+    o = n(73153),
+    s = n(617617),
     l = n(95701),
     c = n(652215);
 
@@ -35,8 +35,8 @@ function p(e) {
 
 function _() {
     var e, t, n;
-    f = null != (e = null == (t = o.A.settings.favorites) ? void 0 : t.muted) && e, d = {};
-    let r = null == (n = o.A.settings.favorites) ? void 0 : n.favoriteChannels;
+    f = null != (e = null == (t = s.A.settings.favorites) ? void 0 : t.muted) && e, d = {};
+    let r = null == (n = s.A.settings.favorites) ? void 0 : n.favoriteChannels;
     if (null == r) return !1;
     for (let e in r) {
         let t = r[e];
@@ -51,7 +51,7 @@ function _() {
 }
 class h extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A), _(), this.syncWith([o.A], _)
+        this.waitFor(s.A), _(), this.syncWith([s.A], _)
     }
     getFavoriteChannels() {
         return d
@@ -75,4 +75,4 @@ class h extends(r = i.Ay.Store) {
     }
 }
 u(h, "displayName", "FavoriteStore");
-let m = new h(s.h, {})
+let m = new h(o.h, {})

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 112266, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Jv: "centeringContainer__0d97c",
     gn: "titleContainer__0d97c centeringContainer__0d97c",

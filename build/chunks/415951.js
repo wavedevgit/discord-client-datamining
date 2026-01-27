@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(192308),
     a = n(954571),
-    s = n(408213),
-    o = n(890620),
+    o = n(408213),
+    s = n(890620),
     l = n(260197),
     c = n(652215);
 
@@ -67,7 +67,7 @@ let _ = () => {
             if (__OVERLAY__) return;
             h(e);
             let c = async t => {
-                await s.Ay.submitVerificationForm(e, t)
+                await o.Ay.submitVerificationForm(e, t)
             };
             (0, i.openModalLazy)(async () => {
                 let {
@@ -80,7 +80,7 @@ let _ = () => {
                     onClose: async function() {
                         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
                         if (!e)
-                            if (o.YN.getState().hasUnsubmittedChanges) return void(0, o.C7)(!0);
+                            if (s.YN.getState().hasUnsubmittedChanges) return void(0, s.C7)(!0);
                             else _();
                         await n.onClose()
                     }
@@ -88,7 +88,7 @@ let _ = () => {
             }, {
                 modalKey: l.LC,
                 onCloseRequest: () => {
-                    _(), o.YN.getState().hasUnsubmittedChanges ? (0, o.C7)(!0) : (0, i.closeModal)(l.LC)
+                    _(), s.YN.getState().hasUnsubmittedChanges ? (0, s.C7)(!0) : (0, i.closeModal)(l.LC)
                 },
                 onCloseCallback: t
             })

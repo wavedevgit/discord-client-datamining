@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 377148, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Gv: "backButton__6fa7b",
     Gq: "teenSelector__6fa7b",

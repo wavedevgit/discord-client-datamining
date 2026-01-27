@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(617617);
+    o = n(617617);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -19,7 +19,7 @@ function o(e, t, n) {
 let l = new Set;
 
 function c() {
-    let e = s.A.getGuildFolders();
+    let e = o.A.getGuildFolders();
     if (null == e) return !1;
     let t = !1;
     for (let n of l) e.some(e => e.folderId === n) || ((l = new Set(l)).delete(n), t = !0);
@@ -47,7 +47,7 @@ function f() {
 }
 class p extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        null != e && (l = new Set(e.expandedFolders)), this.waitFor(s.A)
+        null != e && (l = new Set(e.expandedFolders)), this.waitFor(o.A)
     }
     getState() {
         return {
@@ -61,7 +61,7 @@ class p extends(r = i.Ay.PersistedStore) {
         return l.has(e)
     }
 }
-o(p, "displayName", "ExpandedGuildFolderStore"), o(p, "persistKey", "ExpandedGuildFolderStore");
+s(p, "displayName", "ExpandedGuildFolderStore"), s(p, "persistKey", "ExpandedGuildFolderStore");
 let _ = new p(a.h, {
     TOGGLE_GUILD_FOLDER_EXPAND: u,
     SET_GUILD_FOLDER_EXPANDED: d,

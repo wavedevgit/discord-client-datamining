@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(3026),
-    o = n(397927),
+    o = n(3026),
+    s = n(397927),
     l = n(140547),
     c = n(886019),
     u = n(559405),
@@ -61,13 +61,13 @@ function h(e) {
             let e = null != C && !O && !w;
             return v || e ? (0, r.jsxs)(r.Fragment, {
                 children: [R, P]
-            }) : (0, r.jsxs)(s.A, {
+            }) : (0, r.jsxs)(o.A, {
                 delay: 150,
                 tooltipClassName: h,
                 children: [R, P]
             })
         };
-    return (0, r.jsx)(o.Text, {
+    return (0, r.jsx)(s.Text, {
         variant: "text-".concat(y, "/medium"),
         color: "none",
         className: a()(p.ps, n),

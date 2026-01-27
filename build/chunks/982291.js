@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(166532),
-    s = n(735305),
-    o = n(295405);
+    o = n(735305),
+    s = n(295405);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -54,7 +54,7 @@ let f = e => {
             returnStep: n = a.pn.REVIEW,
             returnStepIfNoPaymentSources: r
         } = e;
-        if (0 === Object.keys(o.A.paymentSources).length) {
+        if (0 === Object.keys(s.A.paymentSources).length) {
             if (null != r) return void t.handleStepChange(r);
             t.handleClose()
         } else t.handleStepChange(n, {
@@ -65,13 +65,13 @@ let f = e => {
         let {
             returnStep: t = a.pn.REVIEW,
             returnStepIfNoPaymentSources: n,
-            paymentModalStepProps: o
+            paymentModalStepProps: s
         } = e, l = i.useCallback(() => f({
             returnStep: t,
             returnStepIfNoPaymentSources: n,
-            paymentModalStepProps: o
-        }), [t, n, o]);
-        return (0, r.jsx)(s.x, d(c({}, o), {
+            paymentModalStepProps: s
+        }), [t, n, s]);
+        return (0, r.jsx)(o.x, d(c({}, s), {
             onReturn: l
         }))
     }

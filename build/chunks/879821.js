@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(193439),
     i = n(64700),
     a = n(340287),
-    s = function() {},
-    o = "u" > typeof document ? i.useLayoutEffect : s;
+    o = function() {},
+    s = "u" > typeof document ? i.useLayoutEffect : o;
 
 function l(e, t) {
     let n, r, i;
@@ -52,7 +52,7 @@ function u(e, t) {
 
 function d(e) {
     let t = i.useRef(e);
-    return o(() => {
+    return s(() => {
         t.current = e
     }), t
 }
@@ -62,7 +62,7 @@ function f(e) {
     let {
         placement: t = "bottom",
         strategy: n = "absolute",
-        middleware: s = [],
+        middleware: o = [],
         platform: f,
         elements: {
             reference: p,
@@ -78,67 +78,67 @@ function f(e) {
         placement: t,
         middlewareData: {},
         isPositioned: !1
-    }), [b, O] = i.useState(s);
-    l(b, s) || O(s);
+    }), [b, O] = i.useState(o);
+    l(b, o) || O(o);
     let [v, A] = i.useState(null), [I, S] = i.useState(null), T = i.useCallback(e => {
         e !== R.current && (R.current = e, A(e))
     }, []), C = i.useCallback(e => {
         e !== P.current && (P.current = e, S(e))
-    }, []), N = p || v, w = _ || I, R = i.useRef(null), P = i.useRef(null), D = i.useRef(E), x = null != m, L = d(m), j = d(f), M = d(g), k = i.useCallback(() => {
+    }, []), N = p || v, w = _ || I, R = i.useRef(null), P = i.useRef(null), D = i.useRef(E), L = null != m, x = d(m), M = d(f), j = d(g), k = i.useCallback(() => {
         if (!R.current || !P.current) return;
         let e = {
             placement: t,
             strategy: n,
             middleware: b
         };
-        j.current && (e.platform = j.current), (0, r.rD)(R.current, P.current, e).then(e => {
+        M.current && (e.platform = M.current), (0, r.rD)(R.current, P.current, e).then(e => {
             let t = {
                 ...e,
-                isPositioned: !1 !== M.current
+                isPositioned: !1 !== j.current
             };
             U.current && !l(D.current, t) && (D.current = t, a.flushSync(() => {
                 y(t)
             }))
         })
-    }, [b, t, n, j, M]);
-    o(() => {
+    }, [b, t, n, M, j]);
+    s(() => {
         !1 === g && D.current.isPositioned && (D.current.isPositioned = !1, y(e => ({
             ...e,
             isPositioned: !1
         })))
     }, [g]);
     let U = i.useRef(!1);
-    o(() => (U.current = !0, () => {
+    s(() => (U.current = !0, () => {
         U.current = !1
-    }), []), o(() => {
+    }), []), s(() => {
         if (N && (R.current = N), w && (P.current = w), N && w) {
-            if (L.current) return L.current(N, w, k);
+            if (x.current) return x.current(N, w, k);
             k()
         }
-    }, [N, w, k, L, x]);
+    }, [N, w, k, x, L]);
     let G = i.useMemo(() => ({
             reference: R,
             floating: P,
             setReference: T,
             setFloating: C
         }), [T, C]),
-        V = i.useMemo(() => ({
+        F = i.useMemo(() => ({
             reference: N,
             floating: w
         }), [N, w]),
-        F = i.useMemo(() => {
+        V = i.useMemo(() => {
             let e = {
                 position: n,
                 left: 0,
                 top: 0
             };
-            if (!V.floating) return e;
-            let t = u(V.floating, E.x),
-                r = u(V.floating, E.y);
+            if (!F.floating) return e;
+            let t = u(F.floating, E.x),
+                r = u(F.floating, E.y);
             return h ? {
                 ...e,
                 transform: "translate(" + t + "px, " + r + "px)",
-                ...c(V.floating) >= 1.5 && {
+                ...c(F.floating) >= 1.5 && {
                     willChange: "transform"
                 }
             } : {
@@ -146,14 +146,14 @@ function f(e) {
                 left: t,
                 top: r
             }
-        }, [n, h, V.floating, E.x, E.y]);
+        }, [n, h, F.floating, E.x, E.y]);
     return i.useMemo(() => ({
         ...E,
         update: k,
         refs: G,
-        elements: V,
-        floatingStyles: F
-    }), [E, k, G, V, F])
+        elements: F,
+        floatingStyles: V
+    }), [E, k, G, F, V])
 }
 let p = (e, t) => ({
         ...(0, r.cY)(e),

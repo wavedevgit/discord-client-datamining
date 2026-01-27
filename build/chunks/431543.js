@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 431543, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     E2: "attributionBannerContainerRebranded_afe9b4",
     hA: "attributionBannerContentApplicationHomeRebranded_afe9b4",

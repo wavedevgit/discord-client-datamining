@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 785619, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Hc: "baseContainer__67013",
     Nr: "card__67013",

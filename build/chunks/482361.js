@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(607399),
     a = n(311907),
-    s = n(73153),
-    o = n(142120),
+    o = n(73153),
+    s = n(142120),
     l = n(253595);
 
 function c(e, t, n) {
@@ -104,7 +104,7 @@ function T(e) {
 }
 class C extends(r = a.Ay.Store) {
     initialize() {
-        y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(o.A)
+        y(), this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(s.A)
     }
     shouldShow(e) {
         return !(!g || h || T(e)) && (m[e] || !1)
@@ -124,7 +124,7 @@ class C extends(r = a.Ay.Store) {
     }
 }
 c(C, "displayName", "TutorialIndicatorStore");
-let N = new C(s.h, {
+let N = new C(o.h, {
     CONNECTION_OPEN: I,
     CONNECTION_CLOSED: S,
     TUTORIAL_INDICATOR_DISMISS: b,

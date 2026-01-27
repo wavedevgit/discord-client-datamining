@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 966394, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(997509),
     p = n(875331),
     f = n(652215),
-    b = n(985018);
-let h = "NO_CHANNEL",
+    h = n(985018);
+let b = "NO_CHANNEL",
     x = l.kg(f.xBc.VIEW_CHANNEL, f.xBc.CREATE_INSTANT_INVITE);
 
 function j(e) {
@@ -52,11 +52,11 @@ function j(e) {
         });
         return e.unshift({
             id: "no-instant-invite",
-            value: h,
-            label: b.intl.string(b.t.u197b7)
+            value: b,
+            label: h.intl.string(h.t.u197b7)
         }), e
     }, [O, l, j]), y = i.useCallback(e => {
-        _ ? (0, p.E)(l, f, e !== h ? e : null) : m.A.updateEmbed(l, f, e !== h ? e : null)
+        _ ? (0, p.E)(l, f, e !== b ? e : null) : m.A.updateEmbed(l, f, e !== b ? e : null)
     }, [l, f, _]);
     return (0, r.jsx)(a.l6P, {
         label: t,

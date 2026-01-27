@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(410323),
     a = n(514575),
-    s = n(581390),
-    o = n(412405),
+    o = n(581390),
+    s = n(412405),
     l = n(342579),
     c = n(633228),
     u = Array,
@@ -15,6 +15,6 @@ r({
     proto: !0
 }, {
     toSorted: function(e) {
-        return void 0 !== e && a(e), d(o(u, s(this)), e)
+        return void 0 !== e && a(e), d(s(u, o(this)), e)
     }
 }), c("toSorted")

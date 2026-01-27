@@ -2,13 +2,13 @@
 /** chunk id: 822775, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => O
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(474397),
+    o = n(397927),
+    s = n(474397),
     l = n(206835),
     c = n(961350),
     u = n(71393),
@@ -16,10 +16,9 @@ var r = n(627968),
     f = n(958805),
     p = n(61881),
     _ = n(993401),
-    h = n(985018),
-    m = n(78219);
+    h = n(985018);
 
-function g(e, t, n) {
+function m(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -28,32 +27,32 @@ function g(e, t, n) {
     }) : e[t] = n, e
 }
 
-function E(e) {
+function g(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            g(e, t, n[t])
+            m(e, t, n[t])
         })
     }
     return e
 }
 
-function y(e, t) {
+function E(e, t) {
     if (null == e) return {};
     var n, r, i, a = {};
     if ("u" > typeof Reflect && Reflect.ownKeys) {
         for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
         return a
     }
-    if (a = b(e, t), Object.getOwnPropertySymbols)
+    if (a = y(e, t), Object.getOwnPropertySymbols)
         for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
     return a
 }
 
-function b(e, t) {
+function y(e, t) {
     if (null == e) return {};
     var n, r, i = {},
         a = Object.getOwnPropertyNames(e);
@@ -61,58 +60,57 @@ function b(e, t) {
     return i
 }
 
-function O(e) {
+function b(e) {
     let {
         user: t,
         guildId: n,
-        fullWidth: g,
-        appContext: b,
-        onClose: O
-    } = e, v = (0, a.bG)([c.default], () => c.default.getId() === t.id), A = (0, a.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), I = (0, a.bG)([p.A], () => p.A.hasUnsavedChanges()), S = (0, l.A)({
-        guild: A
-    }), T = (0, l.A)({}), {
-        trackUserProfileAction: C
-    } = (0, d.NJ)(), N = i.useRef(null);
-    return v ? null == A ? (0, r.jsx)(_.FD, {
+        fullWidth: m,
+        appContext: y,
+        onClose: b
+    } = e, O = (0, a.bG)([c.default], () => c.default.getId() === t.id), v = (0, a.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), A = (0, a.bG)([p.A], () => p.A.hasUnsavedChanges()), I = (0, l.A)({
+        guild: v
+    }), S = (0, l.A)({}), {
+        trackUserProfileAction: T
+    } = (0, d.NJ)(), C = i.useRef(null);
+    return O ? null == v ? (0, r.jsx)(_.FD, {
         action: "EDIT_PROFILE",
         text: h.intl.string(h.t.s5vZlQ),
-        icon: s.R2l,
+        icon: o.R2l,
         autoFocus: !0,
-        fullWidth: g,
+        fullWidth: m,
         variant: "primary",
         onClick: () => {
-            I ? f.A.notifyUnsavedWidgets() : (null == O || O(), T(), (0, o.A)(b))
+            A ? f.A.notifyUnsavedWidgets() : (null == b || b(), S(), (0, s.A)(y))
         }
-    }) : (0, r.jsx)(s.YNO, {
-        targetElementRef: N,
+    }) : (0, r.jsx)(o.YNO, {
+        targetElementRef: C,
         renderPopout: e => {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsxs)(s.W1t, {
-                "data-menu-migration-ready": !0,
-                className: m.P,
+            return (0, r.jsxs)(o.W1t, {
+                "data-menu-needs-review": !0,
                 onSelect: void 0,
                 navId: "edit-profile-popout",
                 onClose: t,
                 "aria-label": h.intl.string(h.t.AXIHpV),
-                children: [(0, r.jsx)(s.Drp, {
+                children: [(0, r.jsx)(o.Drp, {
                     id: "edit-server-profile",
                     label: h.intl.string(h.t["PKQB/H"]),
                     subtext: h.intl.string(h.t.VYHWKJ),
                     action: () => {
-                        C({
+                        T({
                             action: "EDIT_GUILD_PROFILE"
-                        }), null == O || O(), S(), (0, o.A)(b)
+                        }), null == b || b(), I(), (0, s.A)(y)
                     }
-                }), (0, r.jsx)(s.Drp, {
+                }), (0, r.jsx)(o.Drp, {
                     id: "edit-main-profile",
                     label: h.intl.string(h.t.HmFaFB),
                     subtext: h.intl.string(h.t["+EERMk"]),
                     action: () => {
-                        C({
+                        T({
                             action: "EDIT_PROFILE"
-                        }), null == O || O(), T(), (0, o.A)(b)
+                        }), null == b || b(), S(), (0, s.A)(y)
                     }
                 })]
             })
@@ -120,16 +118,16 @@ function O(e) {
         children: e => {
             let {
                 onClick: t
-            } = e, n = y(e, ["onClick"]);
-            return (0, r.jsx)(_.FD, E({
-                buttonRef: N,
+            } = e, n = E(e, ["onClick"]);
+            return (0, r.jsx)(_.FD, g({
+                buttonRef: C,
                 text: h.intl.string(h.t.s5vZlQ),
-                icon: s.R2l,
+                icon: o.R2l,
                 autoFocus: !0,
-                fullWidth: g,
+                fullWidth: m,
                 variant: "primary",
                 onClick: () => {
-                    I ? f.A.notifyUnsavedWidgets() : null == t || t()
+                    A ? f.A.notifyUnsavedWidgets() : null == t || t()
                 }
             }, n))
         }

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(652896),
     c = n(502075);
 
@@ -72,16 +72,16 @@ function O(e) {
             selfStream: a
         } = t;
         if (a) return e;
-        let s = (0, l._z)({
+        let o = (0, l._z)({
             streamType: null != r ? c.U4.GUILD : c.U4.CALL,
             guildId: r,
             channelId: i,
             ownerId: n
         });
-        return delete _[s], delete h[s], !0
+        return delete _[o], delete h[o], !0
     }, !1)
 }
-class v extends(r = s.Ay.Store) {
+class v extends(r = o.Ay.Store) {
     getPreviewURL(e, t, n) {
         let r = _[(0, l._z)({
             streamType: null != e ? c.U4.GUILD : c.U4.CALL,
@@ -100,9 +100,9 @@ class v extends(r = s.Ay.Store) {
                 ownerId: n
             }),
             a = _[i],
-            s = null != (r = h[i]) ? r : 0,
-            o = null != a && Date.now() > a.expires;
-        return (null == a && s < p || o) && !m.has(i)
+            o = null != (r = h[i]) ? r : 0,
+            s = null != a && Date.now() > a.expires;
+        return (null == a && o < p || s) && !m.has(i)
     }
     getPreviewURLForStreamKey(e) {
         let {
@@ -123,7 +123,7 @@ class v extends(r = s.Ay.Store) {
     }
 }
 u(v, "displayName", "ApplicationStreamPreviewStore");
-let A = new v(o.h, {
+let A = new v(s.h, {
     CONNECTION_OPEN: g,
     LOGOUT: g,
     STREAM_PREVIEW_FETCH_START: b,

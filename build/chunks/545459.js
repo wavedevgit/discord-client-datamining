@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Py: () => a,
-    Yw: () => s,
+    Yw: () => o,
     _r: () => i
 });
 var r = n(73153);
@@ -20,6 +20,6 @@ function a() {
     })
 }
 
-function s() {
+function o() {
     window.location.reload()
 }

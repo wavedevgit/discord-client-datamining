@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(397927),
     c = n(802514);
 
@@ -57,7 +57,7 @@ function _(e) {
         tooltip: m,
         tooltipAriaLabel: g
     } = e, E = i.useCallback(e => a(t, e), [a, t]), y = () => (0, r.jsx)(l.DUT, {
-        className: s()(d(u), _, {
+        className: o()(d(u), _, {
             [f(u)]: n,
             [c.r9]: h
         }),
@@ -65,7 +65,7 @@ function _(e) {
         "aria-label": null != m ? g : void 0,
         onClick: h ? void 0 : E,
         children: (0, r.jsxs)(l.Text, {
-            className: s()(c.JU, p(u)),
+            className: o()(c.JU, p(u)),
             variant: "text-sm/medium",
             color: "none",
             children: [null != t.icon ? (0, r.jsx)(t.icon, {
@@ -73,7 +73,7 @@ function _(e) {
             }) : null, t.name]
         })
     });
-    return null == m ? y() : (0, r.jsx)(o.m, {
+    return null == m ? y() : (0, r.jsx)(s.m, {
         shouldShow: !h,
         __unsupportedReactNodeAsText: m,
         children: y()
@@ -85,7 +85,7 @@ function h(e) {
         options: t,
         value: n,
         onChange: a,
-        look: o = "tab",
+        look: s = "tab",
         className: l,
         optionClassName: d,
         disabled: f = !1
@@ -95,16 +95,16 @@ function h(e) {
         return (0, r.jsx)(_, {
             selected: i,
             option: e,
-            look: o,
+            look: s,
             onClick: a,
             disabled: f,
-            className: s()(d, e.className),
+            className: o()(d, e.className),
             tooltip: e.tooltip,
             tooltipAriaLabel: e.tooltipAriaLabel
         }, null != (t = e.key) ? t : String(e.value))
-    }, [n, o, a, d, f]);
+    }, [n, s, a, d, f]);
     return (0, r.jsx)("div", {
-        className: s()(u(o), l, {
+        className: o()(u(s), l, {
             [c.ii]: f
         }),
         children: t.map(p)

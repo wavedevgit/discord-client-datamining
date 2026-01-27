@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r, i = n(635377),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153);
+    o = n(311907),
+    s = n(73153);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -88,20 +88,20 @@ function E(e) {
         similarApplications: r,
         loadId: i,
         page: a,
-        totalPages: s
-    } = e, o = _({
+        totalPages: o
+    } = e, s = _({
         applicationId: t,
         guildId: n,
         page: a
     });
-    h.set(o, {
+    h.set(s, {
         lastFetchTimeMs: Date.now(),
         applications: r,
         loadId: i,
         page: a,
-        totalPages: s
+        totalPages: o
     }), m = d(c({}, m), {
-        [o]: 2
+        [s]: 2
     })
 }
 
@@ -119,7 +119,7 @@ function y(e) {
         [i]: 3
     })
 }
-class b extends(r = s.Ay.Store) {
+class b extends(r = o.Ay.Store) {
     getSimilarApplications(e) {
         let {
             applicationId: t,
@@ -148,7 +148,7 @@ class b extends(r = s.Ay.Store) {
     }
 }
 l(b, "displayName", "ApplicationDirectorySimilarApplicationsStore");
-let O = new b(o.h, {
+let O = new b(s.h, {
     APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS: g,
     APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_SUCCESS: E,
     APPLICATION_DIRECTORY_FETCH_SIMILAR_APPLICATIONS_FAILURE: y

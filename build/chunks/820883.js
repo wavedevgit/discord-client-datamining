@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(676279),
     i = n(251786),
     a = n(705194),
-    s = n(513653),
-    o = n(761388),
+    o = n(513653),
+    s = n(761388),
     l = n(180391),
     c = n(427902),
     u = n(594641),
@@ -38,7 +38,7 @@ function R() {
     return e ? w : i
 }
 let P = {
-    DEFAULT_AVATARS: [s, o, l, c, u, d],
+    DEFAULT_AVATARS: [o, s, l, c, u, d],
     DEFAULT_PROVISIONAL_AVATARS: [A, I, S, T, C, N],
     DEFAULT_GROUP_DM_AVATARS: [f, p, _, h, m, g, E, y],
     BOT_AVATARS: {

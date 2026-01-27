@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     d: () => a,
-    w: () => s
+    w: () => o
 });
 var r = n(355418),
     i = n(147426);
@@ -18,7 +18,7 @@ class a extends r.c {
         return !1
     }
 }
-class s extends a {
+class o extends a {
     innerPattern(e) {
         return RegExp(`${this.innerPatternString(e)}${i.pW.rightBoundary}`, i.pW.flags)
     }

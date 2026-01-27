@@ -2,14 +2,14 @@
 /** chunk id: 894010, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    G: () => o,
-    b: () => s
+    G: () => s,
+    b: () => o
 });
 var r = n(562465),
     i = n(73153),
     a = n(652215);
 
-function s(e, t) {
+function o(e, t) {
     r.Bo.patch({
         url: a.Rsh.GAME_NOTIFICATION_SETTING_UPDATE(e),
         body: {
@@ -26,7 +26,7 @@ function s(e, t) {
         })
     })
 }
-async function o() {
+async function s() {
     await r.Bo.get({
         url: a.Rsh.GAME_NOTIFICATION_SETTINGS,
         rejectWithError: !0

@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(311907),
     i = n(734057),
     a = n(71393),
-    s = n(576705),
-    o = n(287809),
+    o = n(576705),
+    s = n(287809),
     l = n(977997),
     c = n(147036),
     u = n(170148),
@@ -25,8 +25,8 @@ function _(e) {
     let {
         userId: i,
         activity: a,
-        application: s,
-        channelId: o,
+        application: o,
+        channelId: s,
         currentUser: l,
         isActivitiesEnabledForCurrentPlatform: u,
         ChannelStore: p,
@@ -35,12 +35,12 @@ function _(e) {
         GuildStore: m
     } = e;
     if (null == i) return 8;
-    if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == s || null == (t = s.embeddedActivityConfig) ? void 0 : t.requires_age_gate) === !0) return 7;
+    if ((null == l ? void 0 : l.nsfwAllowed) === !1 && (null == o || null == (t = o.embeddedActivityConfig) ? void 0 : t.requires_age_gate) === !0) return 7;
     if (!u) return 5;
-    if (!(0, d.A)(null == s || null == (n = s.embeddedActivityConfig) ? void 0 : n.supported_platforms)) return 6;
-    let g = null != o ? o : null == (r = _.getVoiceStateForSession(i, null == a ? void 0 : a.session_id)) ? void 0 : r.channelId;
+    if (!(0, d.A)(null == o || null == (n = o.embeddedActivityConfig) ? void 0 : n.supported_platforms)) return 6;
+    let g = null != s ? s : null == (r = _.getVoiceStateForSession(i, null == a ? void 0 : a.session_id)) ? void 0 : r.channelId;
     if (null == g) return 4;
-    let E = p.getChannel(o);
+    let E = p.getChannel(s);
     if (null == E) return 4;
     if (!E.isPrivate()) {
         let e = E.getGuildId();
@@ -65,8 +65,8 @@ function h(e) {
         activity: n,
         channelId: c,
         application: d
-    } = e, f = (0, u.z)(), p = (0, r.bG)([o.default], () => o.default.getCurrentUser());
-    return (0, r.bG)([i.A, l.A, s.A, a.A], () => _({
+    } = e, f = (0, u.z)(), p = (0, r.bG)([s.default], () => s.default.getCurrentUser());
+    return (0, r.bG)([i.A, l.A, o.A, a.A], () => _({
         userId: t,
         activity: n,
         application: d,
@@ -75,7 +75,7 @@ function h(e) {
         isActivitiesEnabledForCurrentPlatform: f,
         ChannelStore: i.A,
         VoiceStateStore: l.A,
-        PermissionStore: s.A,
+        PermissionStore: o.A,
         GuildStore: a.A
     }), [n, d, c, p, f, t])
 }

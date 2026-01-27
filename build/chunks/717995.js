@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(508382),
     c = n(158954),
     u = n(502939),
@@ -41,7 +41,7 @@ function y(e) {
         isRichTooltip: R
     } = (0, p.w6)(), P = (0, u.D)("Tooltip"), D = i.useMemo(() => ("left" === A || "right" === A ? E : g).includes(I) ? I : "center", [A, I]);
     if (!n) return null;
-    let x = e => {
+    let L = e => {
         var t, n, i, a;
         let {
             position: l,
@@ -52,7 +52,7 @@ function y(e) {
             customOffset: "custom" === p ? m : void 0
         }, E = (0, r.jsxs)("div", {
             id: O,
-            className: s()(h.YL, {
+            className: o()(h.YL, {
                 [h.mj]: R
             }),
             role: "tooltip",
@@ -68,7 +68,7 @@ function y(e) {
                 }) : v
             })]
         });
-        return N ? (0, r.jsx)(o.animated.div, {
+        return N ? (0, r.jsx)(s.animated.div, {
             style: N,
             children: E
         }) : E
@@ -88,7 +88,7 @@ function y(e) {
                     placement: n,
                     shift: r
                 } = e, i = -(null != (t = null == r ? void 0 : r.x) ? t : 0);
-                return x({
+                return L({
                     position: (0, l.$Y)(n),
                     nudge: i
                 })
@@ -96,7 +96,7 @@ function y(e) {
             children: () => null
         })
     }
-    let L = (0, r.jsx)(d.QCO, {
+    let x = (0, r.jsx)(d.QCO, {
         targetRef: null != b ? b : a,
         position: A,
         align: D,
@@ -104,10 +104,10 @@ function y(e) {
         positionKey: w,
         autoInvert: !0,
         nudgeAlignIntoViewport: !0,
-        children: x
+        children: L
     });
     return null != C ? (0, r.jsx)(c.Wdr, {
         layerContext: C,
-        children: L
-    }) : L
+        children: x
+    }) : x
 }

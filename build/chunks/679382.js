@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(61090),
     a = n(311907),
-    s = n(73153),
-    o = n(723176),
+    o = n(73153),
+    s = n(723176),
     l = n(154049),
     c = n(351697),
     u = n(184989),
@@ -26,11 +26,11 @@ function _(e, t, n) {
 let h = 2,
     m = async () => {
         if (0 !== h) return;
-        let e = o.A.database();
+        let e = s.A.database();
         if (null == e) return;
         h = 2;
         let t = await (0, l.ES)("StickerStore.loadSavedGuildStickers", () => i.A.timeAsync("\uD83D\uDCBE", "loadSavedGuildStickers", () => c.A.getAsync(e)));
-        null != t && s.h.dispatch({
+        null != t && o.h.dispatch({
             type: "CACHED_STICKERS_LOADED",
             stickers: t
         })
@@ -98,7 +98,7 @@ class O extends(r = a.Ay.Store) {
     }
 }
 _(O, "displayName", "StickersStore");
-let v = new O(s.h, {
+let v = new O(o.h, {
     BACKGROUND_SYNC: E,
     CONNECTION_OPEN: g,
     GUILD_CREATE: y,

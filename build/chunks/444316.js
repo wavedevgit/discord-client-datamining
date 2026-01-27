@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 444316, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
@@ -13,18 +12,18 @@ var i = n(417597),
     o = n(985018),
     c = n(36522);
 
-function u(e) {
+function d(e) {
     let {
         friendMemberIds: t
     } = e, n = (0, i.yK)([a.default], () => t.slice(0, 3).map(e => a.default.getUser(e)).filter(e => null != e));
     if (0 === n.length) return null;
-    let u = n[0],
-        d = {
+    let d = n[0],
+        u = {
             count: t.length - 1,
-            username: u.username,
+            username: d.username,
             username2: 2 === t.length && n.length >= 2 ? n[1].username : ""
         },
-        h = o.intl.format(o.t["5NHEPu"], d);
+        h = o.intl.format(o.t["5NHEPu"], u);
     return (0, r.jsxs)("div", {
         className: c.kL,
         children: [(0, r.jsx)("div", {

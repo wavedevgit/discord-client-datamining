@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(73153),
-    s = n(963307),
-    o = n(734057),
+    o = n(963307),
+    s = n(734057),
     l = n(71393),
     c = n(531685),
     u = n(954571),
@@ -40,20 +40,20 @@ function I(e) {
         requestId: N,
         entries: w,
         impressionCappedEntryIds: R
-    } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), x = (0, i.bG)([o.A], () => o.A.getChannel(I)), L = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), j = (0, p.T)(L), M = null != j && j && (null == x ? void 0 : x.isForumChannel()) === !1, [k, U, G, V] = r.useMemo(() => {
+    } = (0, h.A)(I), P = (0, i.bG)([f.A], () => f.A.hidden), D = (0, i.bG)([c.A], () => c.A.isFocused()), L = (0, i.bG)([s.A], () => s.A.getChannel(I)), x = (0, i.bG)([l.A], () => l.A.getGuild(S), [S]), M = (0, p.T)(x), j = null != M && M && (null == L ? void 0 : L.isForumChannel()) === !1, [k, U, G, F] = r.useMemo(() => {
         let e;
-        if (null == w || 0 === w.length || null == N || !M) return [t, n, v];
+        if (null == w || 0 === w.length || null == N || !j) return [t, n, v];
         let r = O,
             i = T ? w.length : r,
             a = w.slice(0, i);
         e = P ? [{
-            type: s.S9.HIDDEN_CONTENT_INVENTORY
+            type: o.S9.HIDDEN_CONTENT_INVENTORY
         }] : a.map(e => ({
-            type: s.S9.CONTENT_INVENTORY,
+            type: o.S9.CONTENT_INVENTORY,
             entry: e,
             requestId: N
         }));
-        let o = () => {
+        let s = () => {
                 C(e => {
                     let t = !e;
                     return u.default.track(y.HAw.MEMBERLIST_CONTENT_FEED_TOGGLED, {
@@ -65,12 +65,12 @@ function I(e) {
             },
             l = {
                 id: E.C,
-                type: s.S9.CONTENT_INVENTORY_GROUP,
+                type: o.S9.CONTENT_INVENTORY_GROUP,
                 key: E.C,
                 count: e.length,
                 index: n.length,
                 title: b.intl.string(b.t["6gwSFY"]),
-                onToggleExpand: o,
+                onToggleExpand: s,
                 expanded: T,
                 expandedCount: w.length,
                 feedHeight: e.map(m.h9).reduce((e, t) => e + t, 0)
@@ -79,26 +79,26 @@ function I(e) {
             [l, ...t],
             [...n, l, ...e], Math.random(), e
         ]
-    }, [I, w, T, t, S, N, n, v, P, M]), F = r.useRef(0), B = r.useRef(w), H = r.useRef(void 0), Y = r.useRef({
+    }, [I, w, T, t, S, N, n, v, P, j]), V = r.useRef(0), B = r.useRef(w), H = r.useRef(void 0), Y = r.useRef({
         impressionCappedEntryIds: R
     }), W = r.useCallback(e => {
         var t;
         let n = Math.floor(e / m.bG),
-            r = Math.min(null != (t = null == V ? void 0 : V.length) ? t : 0, n);
-        F.current = Math.max(F.current, r)
-    }, [V]);
+            r = Math.min(null != (t = null == F ? void 0 : F.length) ? t : 0, n);
+        V.current = Math.max(V.current, r)
+    }, [F]);
     return r.useEffect(() => {
         B.current = w
     }, [w]), r.useEffect(() => {
         Y.current = {
             impressionCappedEntryIds: R
         }
-    }, [R]), r.useEffect(() => (F.current = 0, H.current = Date.now(), () => {
+    }, [R]), r.useEffect(() => (V.current = 0, H.current = Date.now(), () => {
         var e, t;
         if (null == N || null == H.current || Date.now() - H.current < A) return;
         let n = null != (e = null == (t = B.current) ? void 0 : t.map(e => e.id)) ? e : [],
-            r = n.slice(0, F.current);
-        !P && D && M && ((0, _.D)(y.HAw.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
+            r = n.slice(0, V.current);
+        !P && D && j && ((0, _.D)(y.HAw.RANKING_ITEMS_SEEN_MUST_BE_SAMPLED, {
             request_id: N,
             first_shown_at: H.current,
             item_ids: r,
@@ -111,7 +111,7 @@ function I(e) {
             type: "CONTENT_INVENTORY_TRACK_ITEM_IMPRESSIONS",
             itemIds: r
         }))
-    }), [N, I, S, P, D, M]), {
+    }), [N, I, S, P, D, j]), {
         groups: k,
         rows: U,
         version: G,

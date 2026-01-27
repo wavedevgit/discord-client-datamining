@@ -1,81 +1,80 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 78837, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    f: () => m
+    f: () => A
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(735438),
-    l = n(386181),
+    l = n(503698),
+    s = n.n(l),
+    a = n(735438),
+    o = n(386181),
     c = n(650682),
-    u = n(934551),
-    d = n(827734),
-    f = n(397927),
+    d = n(934551),
+    u = n(827734),
+    _ = n(397927),
     p = n(770178),
-    _ = n(590089),
-    h = n(747625);
+    m = n(590089),
+    g = n(747625);
 
-function m(e) {
+function A(e) {
     let {
         title: t,
         collapsedSubtitle: n,
-        isExpanded: a,
-        onExpandedChange: m,
-        onExpandedChangeComplete: g,
-        children: E,
-        animate: y = !0
-    } = e, b = i.useRef(null), [O, v] = i.useState(null), A = i.useRef(a), I = i.useRef(!1);
+        isExpanded: l,
+        onExpandedChange: A,
+        onExpandedChangeComplete: f,
+        children: h,
+        animate: b = !0
+    } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), I = i.useRef(!1);
     i.useEffect(() => {
-        A.current !== a && (I.current = !0, A.current = a)
-    }, [a]);
-    let S = i.useCallback(e => {
-            null != e.target && I.current && (I.current = !1, null == g || g(a))
-        }, [a, g]),
-        T = i.useMemo(() => (0, o.debounce)(S, 50), [S]),
-        C = (0, p.w)(T, [], {
-            enabled: null != g
+        C.current !== l && (I.current = !0, C.current = l)
+    }, [l]);
+    let T = i.useCallback(e => {
+            null != e.target && I.current && (I.current = !1, null == f || f(l))
+        }, [l, f]),
+        S = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
+        j = (0, p.w)(S, [], {
+            enabled: null != f
         }),
-        N = a && null != O;
+        v = l && null != x;
     return i.useLayoutEffect(() => {
-        null != b.current && null == O && v(b.current.clientHeight)
-    }, [O]), (0, r.jsxs)(l.EN, {
-        ref: C,
-        isExpanded: a,
-        onExpandedChange: m,
-        children: [(0, r.jsx)(_.U, {
-            ref: b,
-            style: null != O ? {
-                minHeight: O
+        null != E.current && null == x && O(E.current.clientHeight)
+    }, [x]), (0, r.jsxs)(o.EN, {
+        ref: j,
+        isExpanded: l,
+        onExpandedChange: A,
+        children: [(0, r.jsx)(m.U, {
+            ref: E,
+            style: null != x ? {
+                minHeight: x
             } : void 0,
             title: t,
-            description: N ? void 0 : n,
-            secondaryTrailingElement: (0, r.jsx)(f.vN3, {
+            description: v ? void 0 : n,
+            secondaryTrailingElement: (0, r.jsx)(_.vN3, {
                 children: (0, r.jsx)(c.$, {
                     slot: "trigger",
-                    className: h.bW,
-                    children: (0, r.jsx)(u.ChevronLargeUpIcon, {
-                        className: s()(h.Kk, {
-                            [h.kX]: !a
+                    className: g.bW,
+                    children: (0, r.jsx)(d.ChevronLargeUpIcon, {
+                        className: s()(g.Kk, {
+                            [g.kX]: !l
                         }),
-                        color: d.A.colors.ICON_LINK
+                        color: u.A.colors.ICON_LINK
                     })
                 })
             }),
-            onClick: () => m(!a),
+            onClick: () => A(!l),
             headingColor: "text-link"
-        }), (0, r.jsx)(l.kS, {
-            className: s()(h.nd, {
-                [h.t5]: !y
+        }), (0, r.jsx)(o.kS, {
+            className: s()(g.nd, {
+                [g.t5]: !b
             }),
-            children: (0, r.jsx)(f.BJc, {
+            children: (0, r.jsx)(_.BJc, {
                 gap: 16,
                 padding: {
                     top: 16
                 },
-                children: E
+                children: h
             })
         })]
     })

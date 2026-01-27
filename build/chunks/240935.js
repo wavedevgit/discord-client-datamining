@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 3911 **/
 /** chunk id: 240935, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
-var r, i = n(311907),
-    a = n(73153),
-    s = n(734057),
+var i, s = n(311907),
+    r = n(73153),
+    l = n(734057),
     o = n(309010),
-    l = n(543465);
+    a = n(543465);
 
-function c(e, t, n) {
+function d(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,45 +18,36 @@ function c(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let u = 50,
-    d = {},
-    f = {},
-    p = {};
+let u = {},
+    c = {},
+    h = {};
 
-function _() {
+function g() {
     let e = o.A.getChannelId();
     if (null == e) return;
-    let t = s.A.getChannel(e);
+    let t = l.A.getChannel(e);
     if (null == t || null == t.guild_id) return;
     let n = t.guild_id;
-    if (null == p[e] && (p[e] = 0), t.isThread() || l.Ay.isOptInEnabled(n) && !l.Ay.isChannelOrParentOptedIn(n, t.id)) {
-        delete p[e], null != d[n] && d[n].delete(e);
+    if (null == h[e] && (h[e] = 0), t.isThread() || a.Ay.isOptInEnabled(n) && !a.Ay.isChannelOrParentOptedIn(n, t.id)) {
+        delete h[e], null != u[n] && u[n].delete(e);
         return
     }
-    return (p[e]++, null == d[n] && (d[n] = new Set), l.Ay.isFavorite(n, e)) ? void d[n].delete(e) : (null == f[n] || !f[n].has(e)) && p[e] > u ? (d[n].add(e), !0) : void 0
+    return (h[e]++, null == u[n] && (u[n] = new Set), a.Ay.isFavorite(n, e)) ? void u[n].delete(e) : (null == c[n] || !c[n].has(e)) && h[e] > 50 ? (u[n].add(e), !0) : void 0
 }
-
-function h(e) {
-    let {
-        guildId: t,
-        channelId: n
-    } = e;
-    return null == f[t] && (f[t] = new Set), f[t].add(n), d[t].delete(n), !0
-}
-class m extends(r = i.Ay.PersistedStore) {
+class p extends(i = s.Ay.PersistedStore) {
     initialize(e) {
         var t, n;
-        if (this.waitFor(s.A, o.A, l.Ay), this.syncWith([o.A], _), null == e) return;
+        if (this.waitFor(l.A, o.A, a.Ay), this.syncWith([o.A], g), null == e) return;
         let {
-            suggestedChannels: r,
-            dismissedSuggestions: i,
-            channelOpensByChannelId: a
+            suggestedChannels: i,
+            dismissedSuggestions: s,
+            channelOpensByChannelId: r
         } = e;
-        if (null != r)
-            for (let e in r) t = new Set(r[e]), d[e] = void 0 !== t ? t : new Set;
         if (null != i)
-            for (let e in i) n = new Set(i[e]), f[e] = void 0 !== n ? n : new Set;
-        p = null != a ? a : {}
+            for (let e in i) t = new Set(i[e]), u[e] = void 0 !== t ? t : new Set;
+        if (null != s)
+            for (let e in s) n = new Set(s[e]), c[e] = void 0 !== n ? n : new Set;
+        h = null != r ? r : {}
     }
     getSuggestedChannelId(e) {
         return null
@@ -69,7 +60,13 @@ class m extends(r = i.Ay.PersistedStore) {
         }
     }
 }
-c(m, "displayName", "FavoritesSuggestionStore"), c(m, "persistKey", "FavoritesSuggestionStore");
-let g = new m(a.h, {
-    DISMISS_FAVORITE_SUGGESTION: h
+d(p, "displayName", "FavoritesSuggestionStore"), d(p, "persistKey", "FavoritesSuggestionStore");
+let f = new p(r.h, {
+    DISMISS_FAVORITE_SUGGESTION: function(e) {
+        let {
+            guildId: t,
+            channelId: n
+        } = e;
+        return null == c[t] && (c[t] = new Set), c[t].add(n), u[t].delete(n), !0
+    }
 })

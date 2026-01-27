@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(635377),
-    s = n.n(a);
+    o = n.n(a);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -40,7 +40,7 @@ class f {
     }
     _get(e) {
         var t;
-        return null != (t = this._subscriptions[e]) ? t : new(s())({
+        return null != (t = this._subscriptions[e]) ? t : new(o())({
             max: d
         })
     }
@@ -52,6 +52,6 @@ class f {
         return !i().isEqual(r.get(t), n) && (r.set(t, n), this._subscriptions[e] = r, this._onChange(e, u(r)), !0)
     }
     constructor(e) {
-        o(this, "_subscriptions", {}), o(this, "_onChange", void 0), this._onChange = e
+        s(this, "_subscriptions", {}), s(this, "_onChange", void 0), this._onChange = e
     }
 }

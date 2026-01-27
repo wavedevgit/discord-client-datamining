@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(3026),
     a = n(397927),
-    s = n(939496),
-    o = n(996988),
+    o = n(939496),
+    s = n(996988),
     l = n(380297);
 
 function c(e, t, n) {
@@ -79,9 +79,9 @@ function h(e) {
         component: c
     } = e, d = p(e, ["text", "onClick", "component"]), {
         themeType: _
-    } = (0, s.E)(), h = "string" == typeof t ? t.trim() : t;
+    } = (0, o.E)(), h = "string" == typeof t ? t.trim() : t;
     if (null == h || "" === h) return null;
-    let m = () => _ === o.d.MODAL || _ === o.d.MODAL_V2 ? (0, r.jsx)(c, f(u({
+    let m = () => _ === s.d.MODAL || _ === s.d.MODAL_V2 ? (0, r.jsx)(c, f(u({
         color: "text-default"
     }, d), {
         children: h

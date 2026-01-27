@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(297413),
     c = n(342296),
     u = n(89839);
@@ -101,22 +101,22 @@ function g(e) {
             let {
                 onClick: i
             } = e, a = h(e, ["onClick"]);
-            return (0, r.jsxs)(o.DUT, _(f({}, a), {
+            return (0, r.jsxs)(s.DUT, _(f({}, a), {
                 innerRef: A,
-                className: s()(u.DV, p, {
+                className: o()(u.DV, p, {
                     [u.YR]: g
                 }),
                 onContextMenu: b,
                 onClick: e => {
                     i(e), null == y || y(e)
                 },
-                children: [(0, r.jsx)(o.euF, {
-                    src: t.getAvatarURL(n, (0, o.FT9)(o._3J.SIZE_24)),
+                children: [(0, r.jsx)(s.euF, {
+                    src: t.getAvatarURL(n, (0, s.FT9)(s._3J.SIZE_24)),
                     className: u.my,
                     "aria-label": t.username,
-                    size: o._3J.SIZE_24
-                }), (0, r.jsx)(o.Text, {
-                    className: s()(u.Ft, m),
+                    size: s._3J.SIZE_24
+                }), (0, r.jsx)(s.Text, {
+                    className: o()(u.Ft, m),
                     variant: "text-sm/normal",
                     children: (0, r.jsx)(l.A, {
                         user: t,

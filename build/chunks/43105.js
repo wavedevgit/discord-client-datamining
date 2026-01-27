@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(964892),
     c = n(208756),
     u = n(135564),
@@ -119,10 +119,10 @@ function b(e) {
                 onClick: R,
                 variant: null != v ? "color-mix" : void 0
             }), null != m && (0, r.jsx)("div", {
-                className: s()(p.graphic, {
+                className: o()(p.graphic, {
                     [p["graphic--".concat(y)]]: null != y
                 }),
-                children: (0, r.jsx)(o.vYh, g(h({}, m), {
+                children: (0, r.jsx)(s.vYh, g(h({}, m), {
                     aspectRatio: null != (t = m.aspectRatio) ? t : "sm" === y ? "2/1" : "16/9"
                 }))
             }), (0, r.jsx)(f.D, {

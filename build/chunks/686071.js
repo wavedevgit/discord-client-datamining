@@ -2,12 +2,12 @@
 /** chunk id: 686071, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => s
+    E: () => o
 }), n(228524), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(158954);
-let s = {
+let o = {
     title: "CheckboxGroup",
     stories: [{
         id: "checkboxgroup",
@@ -16,42 +16,42 @@ let s = {
             let {
                 disabled: t,
                 optionCount: n,
-                label: s,
-                optionLabel: o,
+                label: o,
+                optionLabel: s,
                 description: l,
                 showIcons: c,
                 withMixedDisabledOptions: u
             } = e, [d, f] = i.useState(["option1"]), p = i.useMemo(() => [{
-                label: null != o ? "".concat(o, " 1") : "Option 1",
+                label: null != s ? "".concat(s, " 1") : "Option 1",
                 value: "option1",
                 description: null == l || "" === l ? void 0 : l,
                 leadingIcon: c ? a.mir : void 0,
                 disabled: !u && void 0
             }, {
-                label: null != o ? "".concat(o, " 2") : "Option 2",
+                label: null != s ? "".concat(s, " 2") : "Option 2",
                 value: "option2",
                 description: null == l || "" === l ? void 0 : l,
                 leadingIcon: c ? a.mir : void 0,
                 disabled: !!u || void 0
             }, {
-                label: null != o ? "".concat(o, " 3") : "Option 3",
+                label: null != s ? "".concat(s, " 3") : "Option 3",
                 value: "option3",
                 description: null == l || "" === l ? void 0 : l,
                 leadingIcon: c ? a.mir : void 0,
                 disabled: !u && void 0
             }, {
-                label: null != o ? "".concat(o, " 4") : "Option 4",
+                label: null != s ? "".concat(s, " 4") : "Option 4",
                 value: "option4",
                 description: null == l || "" === l ? void 0 : l,
                 leadingIcon: c ? a.mir : void 0,
                 disabled: !!u || void 0
             }, {
-                label: null != o ? "".concat(o, " 5") : "Option 5",
+                label: null != s ? "".concat(s, " 5") : "Option 5",
                 value: "option5",
                 description: null == l || "" === l ? void 0 : l,
                 leadingIcon: c ? a.mir : void 0,
                 disabled: !u && void 0
-            }].slice(0, Math.max(1, Math.min(5, n))), [n, o, l, c, u]), _ = i.useCallback(e => {
+            }].slice(0, Math.max(1, Math.min(5, n))), [n, s, l, c, u]), _ = i.useCallback(e => {
                 f(e)
             }, []), h = i.useCallback(() => {
                 f(p.map(e => e.value))
@@ -65,7 +65,7 @@ let s = {
                 gap: "md",
                 children: [(0, r.jsx)(a.$QX, {
                     selectedValues: d,
-                    label: s,
+                    label: o,
                     onChange: _,
                     options: p,
                     disabled: t

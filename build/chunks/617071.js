@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 617071, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
@@ -29,14 +29,14 @@ let u = e => {
         })
     }, [u]);
     if (0 === u.length) return null;
-    let x = c.intl.formatToPlainString(c.t.HqyWeO, {
+    let _ = c.intl.formatToPlainString(c.t.HqyWeO, {
         count: u.length,
         parent1: u[0].username,
         parent2: null == (t = u[1]) ? void 0 : t.username,
         parent3: null == (n = u[2]) ? void 0 : n.username
     });
     return (0, l.jsx)(d.PQ, {
-        title: x,
+        title: _,
         description: c.intl.string(c.t["5l/hlt"]),
         buttonText: m ? c.intl.string(c.t.ntuuk7) : c.intl.string(c.t["sYdX/H"]),
         buttonDisabled: m,

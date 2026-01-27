@@ -3,8 +3,8 @@
 "use strict";
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(397927),
     c = n(900729);
 
@@ -108,12 +108,12 @@ class g extends(r = a.PureComponent) {
                 children: n,
                 tag: r,
                 size: a,
-                fullscreenOnMobile: s
+                fullscreenOnMobile: o
             } = e,
             l = _(e, ["className", "children", "tag", "size", "fullscreenOnMobile"]);
         return (0, i.jsx)(r, p(d({
-            className: o()(c.yl, t, a, {
-                [c.z]: s
+            className: s()(c.yl, t, a, {
+                [c.z]: o
             })
         }, l), {
             children: this.renderChildren()

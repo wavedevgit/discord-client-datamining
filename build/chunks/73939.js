@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(64700),
     a = n(480960);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -166,11 +166,11 @@ class p extends(r = i.Component) {
                 key: t
             }))
         }
-        let a = o({}, this.props);
+        let a = s({}, this.props);
         return Object.keys(p.defaultProps).forEach(e => delete a[e]), i.createElement(t, a, r)
     }
     constructor(e) {
-        super(e), s(this, "_currentlyTransitioningKeys", void 0), s(this, "_keysToEnter", void 0), s(this, "_keysToLeave", void 0), s(this, "_isMounted", void 0), s(this, "_keyChildMapping", {}), s(this, "addChildRef", (e, t) => {
+        super(e), o(this, "_currentlyTransitioningKeys", void 0), o(this, "_keysToEnter", void 0), o(this, "_keysToLeave", void 0), o(this, "_isMounted", void 0), o(this, "_keyChildMapping", {}), o(this, "addChildRef", (e, t) => {
             this._keyChildMapping[e] = t
         }), this.state = {
             children: (0, a.p)(e.children),
@@ -178,7 +178,7 @@ class p extends(r = i.Component) {
         }, this._currentlyTransitioningKeys = new Set, this._keysToEnter = [], this._keysToLeave = [], this._isMounted = !1
     }
 }
-s(p, "defaultProps", {
+o(p, "defaultProps", {
     component: "span",
     transitionAppear: !0,
     transitionLeave: !0,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(541806),
     i = n(765379),
     a = n(672979),
-    s = n(409626),
-    o = n(692969),
+    o = n(409626),
+    s = n(692969),
     l = n(934173),
     c = n(534465),
     u = n(695311);
@@ -44,9 +44,9 @@ function p(e) {
         application: _,
         entry: h,
         onClose: m
-    } = e, g = (0, o.A)(f({
+    } = e, g = (0, s.A)(f({
         location: t,
-        source: s.Ob.UserProfile,
+        source: o.Ob.UserProfile,
         trackEntryPointImpression: !0
     }, (0, c.UE)({
         user: n,

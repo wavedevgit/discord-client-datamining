@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(311907),
-    s = n(118356),
-    o = n(73153),
+    o = n(118356),
+    s = n(73153),
     l = n(867051),
     c = n(403362),
     u = n(747465);
@@ -21,7 +21,7 @@ function d(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let f = new s.Vy("KvStore"),
+let f = new o.Vy("KvStore"),
     p = Object.prototype.hasOwnProperty,
     _ = Symbol("version");
 class h extends a.il {
@@ -124,13 +124,13 @@ class h extends a.il {
             };
             for (const i in e) {
                 const a = e[i],
-                    s = e => {
+                    o = e => {
                         if (t = !1, a(e, r), !t) return !1
                     };
-                n[i] = s
+                n[i] = o
             }
         }
-        super(o.h, n), d(this, "shadowState", null), d(this, "mode", void 0), d(this, "state", {
+        super(s.h, n), d(this, "shadowState", null), d(this, "mode", void 0), d(this, "state", {
             derived: {
                 length: 0,
                 memoized: {}

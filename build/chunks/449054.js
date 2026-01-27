@@ -16,8 +16,8 @@ n.d(t, {
 var r = n(686956),
     i = n(22007),
     a = n(857071),
-    s = n(976860),
-    o = n(345942),
+    o = n(976860),
+    s = n(345942),
     l = n(498642),
     c = n(71393),
     u = n(954571),
@@ -70,14 +70,14 @@ async function m(e, t) {
             loadId: f,
             shouldNavigate: _ = !0
         } = n,
-        m = (0, s.JK)(),
+        m = (0, o.JK)(),
         g = c.A.getGuild(e),
         E = {
             state: {
                 analyticsSource: t
             }
         };
-    null != g && null != g.joinedAt ? _ && (null == a ? (0, o.u)(e, E) : (0, i.A)(d.BVt.CHANNEL(e, a, n.messageId), h(p({}, E), {
+    null != g && null != g.joinedAt ? _ && (null == a ? (0, s.u)(e, E) : (0, i.A)(d.BVt.CHANNEL(e, a, n.messageId), h(p({}, E), {
         navigationReplace: !0,
         openChannel: !0
     }))) : (await r.A.joinGuild(e, {
@@ -183,18 +183,18 @@ function I(e) {
         query: r,
         guildResults: i,
         analyticsContext: a,
-        categoryId: s,
-        isTagSearch: o
+        categoryId: o,
+        isTagSearch: s
     } = e;
     u.default.track(d.HAw.SEARCH_RESULT_VIEWED, {
-        search_type: o ? d.I4_.GUILD_DISCOVERY_TAG : d.I4_.GUILD_DISCOVERY,
+        search_type: s ? d.I4_.GUILD_DISCOVERY_TAG : d.I4_.GUILD_DISCOVERY,
         load_id: t,
         search_id: n,
         total_results: void 0 !== i ? i.length : null,
         guild_ids: void 0 !== i ? i.map(e => e.id) : null,
         query: r,
         location: a.location,
-        category_id: s
+        category_id: o
     })
 }
 

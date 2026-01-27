@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(503698),
     i = n.n(r),
     a = n(559949),
-    s = n(676279),
-    o = n(913563),
+    o = n(676279),
+    s = n(913563),
     l = n(824994),
     c = n(464998);
 let u = {
@@ -26,7 +26,7 @@ let u = {
 function d(e) {
     var t;
     return {
-        name: (0, o.A)(e),
+        name: (0, s.A)(e),
         className: null != (t = u[e]) ? t : ""
     }
 }
@@ -40,6 +40,6 @@ function f(e) {
         }) || null == t) return "";
     let n = d(t.fontId);
     return "" === n.className ? "" : i()(c.zt, n.className, {
-        [c.VM]: (0, s.nr)()
+        [c.VM]: (0, o.nr)()
     })
 }

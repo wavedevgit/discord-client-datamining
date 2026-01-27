@@ -2,7 +2,7 @@
 /** chunk id: 751446, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(896048);
 var r = n(439372),
     i = n(291823);
@@ -15,7 +15,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends r.A {
+class o extends r.A {
     constructor(...e) {
         super(...e), a(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
@@ -24,4 +24,4 @@ class s extends r.A {
         })
     }
 }
-let o = new s
+let s = new o

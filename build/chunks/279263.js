@@ -15,26 +15,26 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = "Note";
-class o extends i.f {
+let o = "Note";
+class s extends i.f {
     getNote(e) {
         return this.get(e)
     }
 }
-a(o, "displayName", "NoteStore");
-let l = new o({
+a(s, "displayName", "NoteStore");
+let l = new s({
     CONNECTION_OPEN: (e, t) => t.reset(),
     OVERLAY_INITIALIZE: (e, t) => t.reset(),
     USER_NOTE_UPDATE: (e, t) => {
-        t.set(e.id, (0, r.yE)(s, {
+        t.set(e.id, (0, r.yE)(o, {
             loading: !1,
             note: e.note
         }))
     },
     USER_NOTE_LOAD_START: (e, t) => {
-        t.set(e.userId, (0, r.yE)(s, {
+        t.set(e.userId, (0, r.yE)(o, {
             loading: !0,
             note: null
         }))
     }
-}, "libdiscore")
+})

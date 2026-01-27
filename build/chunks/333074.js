@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 84704 **/
 /** chunk id: 333074, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    E: () => s
+    E: () => i
 }), n(896048), n(114821), n(339614);
-var r = n(64700),
-    i = n(96337),
+var l = n(64700),
+    s = n(96337),
     a = n(518977);
 
-function s() {
-    return r.useMemo(() => {
-        let e = new Map(i.A.flatMap(e => {
+function i() {
+    return l.useMemo(() => {
+        let e = new Map(s.A.flatMap(e => {
                 let {
                     alpha2: t,
                     phoneCountryCodes: n
-                } = e, r = (0, a.Gw)(t);
+                } = e, l = (0, a.Gw)(t);
                 return n.map(e => ["".concat(t, "-").concat(e), {
                     code: e,
                     alpha2: t,
-                    name: r
+                    name: l
                 }])
             })),
             t = Array.from(e.entries()).map(e => {
                 let [t, {
                     name: n,
-                    alpha2: r
+                    alpha2: l
                 }] = e;
                 return {
                     value: t,
                     label: n,
-                    alpha2: r
+                    alpha2: l
                 }
             });
         return {

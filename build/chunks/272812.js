@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(41038);
+    o = n.n(a),
+    s = n(41038);
 let l = i.forwardRef(function(e, t) {
     let {
         children: n,
@@ -18,8 +18,8 @@ let l = i.forwardRef(function(e, t) {
         participantUserId: c
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(i, o.V, {
-            [o.E]: l
+        className: o()(i, s.V, {
+            [s.E]: l
         }),
         style: a,
         ref: t,

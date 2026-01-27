@@ -7,7 +7,7 @@ n.d(t, {
     UT: () => c.U,
     bG: () => u.bG,
     cf: () => u.cf,
-    il: () => o.i,
+    il: () => s.i,
     mk: () => i.m,
     ru: () => r.r,
     yK: () => u.yK
@@ -15,24 +15,24 @@ n.d(t, {
 var r = n(968441),
     i = n(260472),
     a = n(390225),
-    s = n(197245),
-    o = n(22468),
+    o = n(197245),
+    s = n(22468),
     l = n(575675),
     c = n(986192),
     u = n(417597);
 
 function d() {
-    o.i.initialize()
+    s.i.initialize()
 }
 let f = {
     Emitter: a.A,
-    Store: o.i,
-    PersistedStore: s.dP,
-    DeviceSettingsStore: s.lt,
-    OfflineCacheStore: s.J5,
+    Store: s.i,
+    PersistedStore: o.dP,
+    DeviceSettingsStore: o.lt,
+    OfflineCacheStore: o.J5,
     connectStores: l.A,
     initialize: d,
     get initialized() {
-        return o.i.initialized
+        return s.i.initialized
     }
 }

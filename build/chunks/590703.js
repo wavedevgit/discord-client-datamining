@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(64700),
     i = n(503698),
     a = n.n(i),
-    s = n(735438),
-    o = n(311907),
+    o = n(735438),
+    s = n(311907),
     l = n(544028),
     c = n(617617),
     u = n(467135),
@@ -18,7 +18,7 @@ var r = n(64700),
     f = n(153469);
 let p = "data-client-themes",
     _ = () => {
-        let e = (0, o.bG)([d.A], () => d.A.gradientPreset);
+        let e = (0, s.bG)([d.A], () => d.A.gradientPreset);
         return r.useMemo(() => {
             if (null == e) return null;
             let t = d.A.getLinearGradient();
@@ -27,20 +27,20 @@ let p = "data-client-themes",
     };
 
 function h() {
-    let e = (0, o.bG)([l.A], () => l.A.theme),
+    let e = (0, s.bG)([l.A], () => l.A.theme),
         {
             colors: t,
             chassisMixAmount: n,
             gradientAngle: i,
             setAll: a
         } = (0, u.ko)(),
-        d = (0, o.bG)([c.A], () => {
+        d = (0, s.bG)([c.A], () => {
             var e, t;
             return null == (t = c.A.settings.appearance) || null == (e = t.clientThemeSettings) ? void 0 : e.customUserThemeSettings
         }),
         p = r.useRef(void 0);
     return r.useEffect(() => {
-        if (!(0, s.isEqual)(d, p.current)) {
+        if (!(0, o.isEqual)(d, p.current)) {
             var e, t, n;
             p.current = d, a({
                 colors: null != (e = null == d ? void 0 : d.colors) ? e : [],

@@ -9,8 +9,8 @@ var i = n(397927),
     r = n(688810),
     a = n(612630),
     o = n(657331),
-    d = n(961350),
-    s = n(351906),
+    s = n(961350),
+    d = n(351906),
     u = n(652215),
     c = n(518477),
     A = n(985018);
@@ -25,13 +25,13 @@ function b(e) {
         id: f
     } = t, {
         loading: m,
-        note: O
-    } = (0, a.A)(f), p = !m && null != O && O.length > 0, y = g === u.BRT.POPOUT || g === u.BRT.OVERLAY, {
-        analyticsLocations: E
+        note: p
+    } = (0, a.A)(f), O = !m && null != p && p.length > 0, y = g === u.BRT.POPOUT || g === u.BRT.OVERLAY, {
+        analyticsLocations: v
     } = (0, r.Ay)();
-    return f === d.default.getId() || s.A.hidePersonalInformation || y ? null : (0, l.jsx)(i.Drp, {
+    return f === s.default.getId() || d.A.hidePersonalInformation || y ? null : (0, l.jsx)(i.Drp, {
         id: "note",
-        label: m ? A.intl.string(A.t["WLKx/9"]) : p ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
+        label: m ? A.intl.string(A.t["WLKx/9"]) : O ? A.intl.string(A.t.sHHsOM) : A.intl.string(A.t.Dglxrf),
         subtext: A.intl.string(A.t.r1BOdd),
         action: () => {
             (0, o.openUserProfileModal)({
@@ -40,7 +40,7 @@ function b(e) {
                 scrollTarget: c.bk.NOTE,
                 guildId: n,
                 channelId: b,
-                sourceAnalyticsLocations: E,
+                sourceAnalyticsLocations: v,
                 appContext: g
             })
         }

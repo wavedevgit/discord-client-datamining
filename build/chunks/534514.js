@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(834730),
+    o = n.n(a),
+    s = n(834730),
     l = n(707554),
     c = n(163964);
 
@@ -58,11 +58,11 @@ let _ = i.forwardRef(function(e, t) {
         variant: a,
         className: u
     } = n, p = f(n, ["variant", "className"]), [_] = i, h = (0, l.$)(), m = "h".concat(Math.min(h, 6));
-    return (0, r.jsx)(o.E, d({
+    return (0, r.jsx)(s.E, d({
         ref: _,
         variant: a,
         tag: m,
-        className: s()(c.f, u)
+        className: o()(c.f, u)
     }, h > 6 ? {
         "data-excessive-heading-level": h
     } : {}, p))

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(954571),
-    s = n(177773),
-    o = n(652215);
+    o = n(177773),
+    s = n(652215);
 let l = new Map;
 
 function c(e) {
@@ -20,12 +20,12 @@ function c(e) {
         code: e
     });
     let n = r.Bo.get({
-        url: o.Rsh.UNRESOLVED_GUILD_TEMPLATE(e),
+        url: s.Rsh.UNRESOLVED_GUILD_TEMPLATE(e),
         oldFormErrors: !0,
         rejectWithError: !0
     }).then(t => {
         let n = t.body;
-        return a.default.track(o.HAw.GUILD_TEMPLATE_RESOLVED, {
+        return a.default.track(s.HAw.GUILD_TEMPLATE_RESOLVED, {
             resolved: !0,
             guild_template_code: e,
             guild_template_name: n.name,
@@ -36,10 +36,10 @@ function c(e) {
             guildTemplate: n,
             code: e
         }), {
-            guildTemplate: (0, s.A)(n),
+            guildTemplate: (0, o.A)(n),
             code: e
         }
-    }, () => (a.default.track(o.HAw.GUILD_TEMPLATE_RESOLVED, {
+    }, () => (a.default.track(s.HAw.GUILD_TEMPLATE_RESOLVED, {
         resolved: !1,
         guild_template_code: e
     }), i.h.dispatch({
@@ -56,7 +56,7 @@ function c(e) {
 let u = {
     resolveGuildTemplate: c,
     loadTemplatesForGuild: e => r.Bo.get({
-        url: o.Rsh.GUILD_TEMPLATES(e),
+        url: s.Rsh.GUILD_TEMPLATES(e),
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(e => (i.h.dispatch({
@@ -64,7 +64,7 @@ let u = {
         guildTemplates: e.body
     }), e)),
     createGuildTemplate: (e, t, n) => r.Bo.post({
-        url: o.Rsh.GUILD_TEMPLATES(e),
+        url: s.Rsh.GUILD_TEMPLATES(e),
         body: {
             name: t,
             description: n
@@ -79,7 +79,7 @@ let u = {
         })
     }),
     syncGuildTemplate: (e, t) => r.Bo.put({
-        url: o.Rsh.GUILD_TEMPLATE(e, t),
+        url: s.Rsh.GUILD_TEMPLATE(e, t),
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(e => {
@@ -90,7 +90,7 @@ let u = {
         })
     }),
     updateGuildTemplate: (e, t, n, a) => r.Bo.patch({
-        url: o.Rsh.GUILD_TEMPLATE(e, t),
+        url: s.Rsh.GUILD_TEMPLATE(e, t),
         body: {
             name: n,
             description: a
@@ -105,7 +105,7 @@ let u = {
         })
     }),
     deleteGuildTemplate: (e, t) => r.Bo.del({
-        url: o.Rsh.GUILD_TEMPLATE(e, t),
+        url: s.Rsh.GUILD_TEMPLATE(e, t),
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(() => {

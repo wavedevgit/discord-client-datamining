@@ -4,16 +4,16 @@
 n.r(t), n.d(t, {
     DISCORD_EPOCH: () => a.ZY,
     SnowflakeSequence: () => a.gg,
-    default: () => o
+    default: () => s
 });
 var r = n(735438),
     i = n.n(r),
     a = n(363270);
 
-function s(e) {
+function o(e) {
     return e
 }
-let o = {
+let s = {
     age: function(e) {
         return a.KW(e)
     },
@@ -51,13 +51,13 @@ let o = {
         return a.Nl(e)
     },
     castChannelIdAsMessageId: function(e) {
-        return s(e)
+        return o(e)
     },
     castMessageIdAsChannelId: function(e) {
-        return s(e)
+        return o(e)
     },
     castGuildIdAsEveryoneGuildRoleId: function(e) {
-        return s(e)
+        return o(e)
     },
-    cast: s
+    cast: o
 }

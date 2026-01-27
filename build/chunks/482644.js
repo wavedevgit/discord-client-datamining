@@ -8,9 +8,9 @@ n.r(t), n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(280230),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(280230),
+    l = n.n(s),
     c = n(397927),
     u = n(398590),
     d = n(46054),
@@ -79,9 +79,9 @@ let T = e => {
             children: n,
             className: r = null,
             styleSheet: a = {}
-        } = e, o = (0, c.$Il)(), l = parseInt(t, 10), u = o + (isNaN(l) ? 1 : l) - 1;
+        } = e, s = (0, c.$Il)(), l = parseInt(t, 10), u = s + (isNaN(l) ? 1 : l) - 1;
         return i.createElement("h".concat(u), {
-            className: s()(...S(a, r))
+            className: o()(...S(a, r))
         }, n)
     },
     C = null != d.A ? d.A.defaultRules : null,
@@ -90,14 +90,14 @@ let T = e => {
             parse(e, t, n) {
                 let r, i = e[2],
                     a = i.startsWith("https://discordapp.com/nitro") || i.startsWith("https://discord.com/nitro"),
-                    s = i.startsWith("/activities");
+                    o = i.startsWith("/activities");
                 return r = a ? e => {
                     I(), (0, _.openUserSettings)(p.X.NITRO_PANEL, {
                         section: m.nc_.PREMIUM
                     }), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, {
                         cta_type: "nitro"
                     }), (0, c.OoC)(g.lb), e.preventDefault()
-                } : s ? e => {
+                } : o ? e => {
                     (0, f.pX)(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({}, h.default.getCampaignParams(i))), (0, u.bz)(), (0, c.OoC)(g.lb), e.preventDefault()
                 } : () => {
                     n && "function" == typeof n.onLinkClick && n.onLinkClick(i), n.changeLog.track(m.HAw.CHANGE_LOG_CTA_CLICKED, y({

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(793574),
+    o = n(397927),
+    s = n(793574),
     l = n(688810),
     c = n(994500),
     u = n(562153),
@@ -60,35 +60,35 @@ function I(e) {
         disableAutoFocus: R = !1,
         onClickContainer: P
     } = e, D = (0, a.bG)([c.A], () => c.A.isBlocked(t.id)), {
-        analyticsLocations: x
-    } = (0, l.Ay)([...w, D ? o.A.BLOCKED_PROFILE_POPOUT : o.A.IGNORED_PROFILE_POPOUT]), L = (0, d.pb)({
+        analyticsLocations: L
+    } = (0, l.Ay)([...w, D ? s.A.BLOCKED_PROFILE_POPOUT : s.A.IGNORED_PROFILE_POPOUT]), x = (0, d.pb)({
         layout: "POPOUT",
         userId: t.id,
         guildId: n,
         channelId: I,
         messageId: S,
         roleId: T
-    }), j = i.useRef(null), M = (0, p.Ay)(t.id, n);
+    }), M = i.useRef(null), j = (0, p.Ay)(t.id, n);
     i.useEffect(() => {
-        null == v || v(null == j ? void 0 : j.current)
-    }, [j, v]);
+        null == v || v(null == M ? void 0 : M.current)
+    }, [M, v]);
     let k = D ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-        U = R ? "div" : s.lGe;
+        U = R ? "div" : o.lGe;
     return (0, r.jsx)(l.f5, {
-        value: x,
+        value: L,
         children: (0, r.jsx)(d.of, {
-            value: L,
+            value: x,
             openedAt: C,
-            fetchStartedAt: null == M ? void 0 : M.fetchStartedAt,
-            fetchEndedAt: null == M ? void 0 : M.fetchEndedAt,
-            isLoaded: null == M ? void 0 : M.isLoaded,
+            fetchStartedAt: null == j ? void 0 : j.fetchStartedAt,
+            fetchEndedAt: null == j ? void 0 : j.fetchEndedAt,
+            isLoaded: null == j ? void 0 : j.isLoaded,
             children: (0, r.jsx)(U, {
-                ref: j,
+                ref: M,
                 "aria-label": t.username,
                 onClick: P,
                 children: (0, r.jsx)(h.A, {
                     user: t,
-                    displayProfile: M,
+                    displayProfile: j,
                     themeType: E.d.POPOUT,
                     children: (0, r.jsxs)("div", {
                         className: b.kL,
@@ -104,32 +104,32 @@ function I(e) {
                                 children: [(0, r.jsx)(_.A, {
                                     user: t,
                                     guildId: n
-                                }), (0, r.jsx)(s.Heading, {
+                                }), (0, r.jsx)(o.Heading, {
                                     variant: "heading-lg/bold",
                                     children: y.intl.string(y.t.b33pLD)
-                                }), (0, r.jsx)(s.Text, {
+                                }), (0, r.jsx)(o.Text, {
                                     variant: "text-sm/medium",
                                     children: y.intl.format(D ? y.t["8F+WNz"] : y.t["/cZp5s"], {
                                         username: u.Ay.getName(n, I, t)
                                     })
                                 })]
-                            }), (0, r.jsxs)(s.BJc, {
+                            }), (0, r.jsxs)(o.BJc, {
                                 align: "center",
                                 children: [(0, r.jsx)(g.A, {
                                     isBlocked: D,
                                     onClick: () => {
                                         N(), (0, f.Wn)(A({
                                             action: k,
-                                            analyticsLocations: x
-                                        }, L))
+                                            analyticsLocations: L
+                                        }, x))
                                     }
                                 }), (0, r.jsx)(m.A, {
                                     userId: t.id,
                                     onClick: () => {
                                         N(), (0, f.Wn)(A({
                                             action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                                            analyticsLocations: x
-                                        }, L))
+                                            analyticsLocations: L
+                                        }, x))
                                     }
                                 })]
                             })]

@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 818952, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => r
+/** Chunk was on 40215 **/
+/** chunk id: 818952, original params: r,E,a (module,exports,require) **/
+a.d(E, {
+    A: () => _
 });
-let r = "https://cdn.discordapp.com/assets/content/d6edacbdf55ab0dcfe31b314adacb43d2fc04830f49d995d1f8b48fb46549104.png"
+let _ = "https://cdn.discordapp.com/assets/content/d6edacbdf55ab0dcfe31b314adacb43d2fc04830f49d995d1f8b48fb46549104.png"

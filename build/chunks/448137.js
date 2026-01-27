@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(110259),
     i = n(311907),
     a = n(139286),
-    s = n(989837),
-    o = n(520117);
+    o = n(989837),
+    s = n(520117);
 
 function l(e) {
     let {
@@ -16,7 +16,7 @@ function l(e) {
         commandId: n,
         searchResultsPosition: l,
         query: c
-    } = e, u = (0, i.bG)([s.A], () => s.A.entrypoint()), d = () => {
+    } = e, u = (0, i.bG)([o.A], () => o.A.entrypoint()), d = () => {
         (0, a.x)({
             type: r.ImpressionTypes.VIEW,
             name: r.ImpressionNames.APP_LAUNCHER_SEARCH_RESULTS_ITEM,
@@ -30,7 +30,7 @@ function l(e) {
         })
     }, f = 1;
     return {
-        trackSearchResultsItemImpressionRef: (0, o.A)({
+        trackSearchResultsItemImpressionRef: (0, s.A)({
             onVisible: d,
             threshold: f
         })

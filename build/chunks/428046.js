@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(746280),
     i = n(90727),
     a = n(391898),
-    s = function(e, t) {
+    o = function(e, t) {
         return -1 !== e.indexOf(t)
     },
-    o = function(e) {
+    s = function(e) {
         return e.toString()
     },
     l = function(e, t, n) {
@@ -18,14 +18,14 @@ var r = n(746280),
     };
 let c = function() {
     function e(e, t, n, i) {
-        if (void 0 === t && (t = o), void 0 === n && (n = r.A), void 0 === i && (i = l), this.text = [], this.language = n || r.A, this.gettext = t, this.dateFormatter = i, this.rrule = e, this.options = e.options, this.origOptions = e.origOptions, this.origOptions.bymonthday) {
-            var s = [].concat(this.options.bymonthday),
+        if (void 0 === t && (t = s), void 0 === n && (n = r.A), void 0 === i && (i = l), this.text = [], this.language = n || r.A, this.gettext = t, this.dateFormatter = i, this.rrule = e, this.options = e.options, this.origOptions = e.origOptions, this.origOptions.bymonthday) {
+            var o = [].concat(this.options.bymonthday),
                 c = [].concat(this.options.bynmonthday);
-            s.sort(function(e, t) {
+            o.sort(function(e, t) {
                 return e - t
             }), c.sort(function(e, t) {
                 return t - e
-            }), this.bymonthday = s.concat(c), this.bymonthday.length || (this.bymonthday = null)
+            }), this.bymonthday = o.concat(c), this.bymonthday.length || (this.bymonthday = null)
         }
         if ((0, a.Wo)(this.origOptions.byweekday)) {
             var u = (0, a.cy)(this.origOptions.byweekday) ? this.origOptions.byweekday : [this.origOptions.byweekday],
@@ -50,8 +50,8 @@ let c = function() {
         var n = !0;
         if (!(t.options.freq in e.IMPLEMENTED) || t.origOptions.until && t.origOptions.count) return !1;
         for (var r in t.origOptions) {
-            if (s(["dtstart", "wkst", "freq"], r)) return !0;
-            if (!s(e.IMPLEMENTED[t.options.freq], r)) return !1
+            if (o(["dtstart", "wkst", "freq"], r)) return !0;
+            if (!o(e.IMPLEMENTED[t.options.freq], r)) return !1
         }
         return n
     }, e.prototype.isFullyConvertible = function() {
@@ -129,16 +129,16 @@ let c = function() {
     }, e.prototype.list = function(e, t, n, r) {
         var i = this;
         void 0 === r && (r = ","), (0, a.cy)(e) || (e = [e]);
-        var s = function(e, t, n) {
+        var o = function(e, t, n) {
             for (var r = "", i = 0; i < e.length; i++) 0 !== i && (i === e.length - 1 ? r += " " + n + " " : r += t + " "), r += e[i];
             return r
         };
         t = t || function(e) {
             return e.toString()
         };
-        var o = function(e) {
+        var s = function(e) {
             return t && t.call(i, e)
         };
-        return n ? s(e.map(o), r, n) : e.map(o).join(r + " ")
+        return n ? o(e.map(s), r, n) : e.map(s).join(r + " ")
     }, e
 }()

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(797637),
     c = n(311016),
     u = n(692051),
@@ -29,14 +29,14 @@ function h(e) {
         userId: y
     } = e, b = (0, d.GV)(), O = i.useMemo(() => (0, c.A)(y) ? (0, r.jsx)(l.A, {}) : null == t || "" === t ? null : (0, f.parseBioReact)(t), [y, t]);
     return null == O ? null : (0, r.jsxs)("section", {
-        className: s()(n, _.PT),
+        className: o()(n, _.PT),
         "aria-labelledby": b,
-        children: [(0, r.jsx)(o.AC4, {
-            children: (0, r.jsx)(o.H, {
+        children: [(0, r.jsx)(s.AC4, {
+            children: (0, r.jsx)(s.H, {
                 id: b,
                 children: p.intl.string(p.t.jGoPJT)
             })
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             lineClamp: g ? m : void 0,
             color: void 0 !== E ? E : void 0,

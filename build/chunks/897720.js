@@ -5,8 +5,8 @@ n.d(t, {
     IV: () => c,
     In: () => a,
     ZO: () => l,
-    cv: () => o,
-    dO: () => s,
+    cv: () => s,
+    dO: () => o,
     zb: () => i
 });
 var r = n(652215),
@@ -17,11 +17,11 @@ var r = n(652215),
         return e[e.NORMAL = 0] = "NORMAL", e[e.HIGH = 1] = "HIGH", e[e.URGENT = 2] = "URGENT", e
     }({});
 
-function s(e) {
+function o(e) {
     return (null == e ? void 0 : e.type) === r.uss.GO_LIVE
 }
 
-function o(e) {
+function s(e) {
     return e.type === r.uss.VIDEO
 }
 

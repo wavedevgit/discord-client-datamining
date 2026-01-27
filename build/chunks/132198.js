@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(503698),
     a = n.n(i),
-    s = n(305003),
-    o = n(679970),
+    o = n(305003),
+    s = n(679970),
     l = n(758836),
     c = n(587301),
     u = n(743102),
@@ -35,7 +35,7 @@ let f = {
                     animationState: t = "on",
                     className: n
                 } = e;
-                return (0, r.jsx)(o.A, {
+                return (0, r.jsx)(s.A, {
                     animationState: t,
                     className: a()(c.o, n)
                 })
@@ -43,8 +43,8 @@ let f = {
         }
     },
     p = () => ({
-        id: s.A.ORB_PROFILE_BADGE,
-        icon: s.A.ORB_PROFILE_BADGE,
+        id: o.A.ORB_PROFILE_BADGE,
+        icon: o.A.ORB_PROFILE_BADGE,
         iconSrc: d.A,
         description: "",
         isPreviewMode: !0

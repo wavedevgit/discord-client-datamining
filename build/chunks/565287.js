@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 565287, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     Kz: () => v,
     rP: () => x
@@ -11,14 +10,14 @@ var r, i = n(627968),
     a = n(397927),
     o = n(830215),
     c = n(803306),
-    u = n(49463),
-    d = n(17372),
+    d = n(49463),
+    u = n(17372),
     h = n(369053),
     p = n(961350),
     g = n(974783),
-    m = n(795101),
+    _ = n(795101),
     f = n(309829),
-    _ = n(136643);
+    m = n(136643);
 
 function A(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -44,49 +43,49 @@ let E = e => {
         let {
             transitionState: t,
             onClose: n
-        } = e, [r, x] = s.useState(!0), [v, j] = s.useState([]), [y, b] = s.useState("selection"), S = (0, l.bG)([p.default], () => p.default.isAuthenticated()), I = (0, l.bG)([u.A], () => u.A.hasLoadedExperiments), N = s.useCallback(() => {
+        } = e, [r, x] = s.useState(!0), [v, b] = s.useState([]), [y, j] = s.useState("selection"), I = (0, l.bG)([p.default], () => p.default.isAuthenticated()), O = (0, l.bG)([d.A], () => d.A.hasLoadedExperiments), S = s.useCallback(() => {
             (0, h.OY)().then(e => {
                 let {
                     body: {
                         capabilities: t
                     }
                 } = e;
-                x(!1), j(t)
+                x(!1), b(t)
             }).catch(() => {
-                x(!1), j([])
+                x(!1), b([])
             })
         }, []);
         s.useEffect(() => {
-            S ? (x(!0), c.rQ({
+            I ? (x(!0), c.rQ({
                 withAnalyticsToken: !0
-            }).then(() => N()).catch(() => x(!1))) : N()
-        }, [S, N]), s.useEffect(() => {
+            }).then(() => S()).catch(() => x(!1))) : S()
+        }, [I, S]), s.useEffect(() => {
             (async () => {
-                I || (await o.A.getLocationMetadata(), o.A.getExperiments())
+                O || (await o.A.getLocationMetadata(), o.A.getExperiments())
             })()
-        }, [I]);
-        let O = v.filter(e => e !== d.tY.MEDIA_TAKEDOWN),
-            C = v.includes(d.tY.MEDIA_TAKEDOWN),
-            T = O.length > 0,
+        }, [O]);
+        let N = v.filter(e => e !== u.tY.MEDIA_TAKEDOWN),
+            C = v.includes(u.tY.MEDIA_TAKEDOWN),
+            T = N.length > 0,
             R = T && C;
         s.useEffect(() => {
-            !r && I && !R && (T ? b("dsa") : C && b("tida"))
-        }, [r, I, R, T, C]), s.useEffect(() => {
-            r || !I || T || C || n()
-        }, [r, I, T, C, n]);
+            !r && O && !R && (T ? j("dsa") : C && j("tida"))
+        }, [r, O, R, T, C]), s.useEffect(() => {
+            r || !O || T || C || n()
+        }, [r, O, T, C, n]);
         let w = s.useCallback(e => {
-                b(e)
+                j(e)
             }, []),
             P = s.useCallback(() => {
-                b("selection")
+                j("selection")
             }, []),
-            L = s.useCallback(() => {
+            k = s.useCallback(() => {
                 (0, a.mMO)(() => Promise.resolve(e => (0, i.jsx)(E, A({}, e))), {
                     dismissable: !1
                 })
             }, []),
-            k = s.useCallback(e => null != e ? (0, i.jsx)(a.jlY, {
-                className: _.q,
+            L = s.useCallback(e => null != e ? (0, i.jsx)(a.jlY, {
+                className: m.q,
                 "data-migration-pending": !0,
                 children: e
             }) : null, []);
@@ -95,9 +94,9 @@ let E = e => {
             parentComponent: "UnauthenticatedReportForm",
             "data-migration-pending": !0,
             children: (0, i.jsx)(a.$mQ, {
-                className: _.k,
+                className: m.k,
                 "data-migration-pending": !0,
-                children: r || !I ? (0, i.jsx)(a.BJc, {
+                children: r || !O ? (0, i.jsx)(a.BJc, {
                     gap: 16,
                     align: "center",
                     justify: "center",
@@ -111,7 +110,7 @@ let E = e => {
                     centered: !1,
                     children: [(0, i.jsx)(a.q7S, {
                         id: "selection",
-                        children: (0, i.jsx)(m.u, {
+                        children: (0, i.jsx)(_.u, {
                             onNavigate: w
                         })
                     }), (0, i.jsx)(a.q7S, {
@@ -119,19 +118,19 @@ let E = e => {
                         children: (0, i.jsx)(g.c, {
                             showBackButton: R,
                             onBack: R ? P : void 0,
-                            dsaCapabilities: O,
-                            renderFooter: k,
+                            dsaCapabilities: N,
+                            renderFooter: L,
                             onClose: n,
-                            onReopen: L
+                            onReopen: k
                         })
                     }), (0, i.jsx)(a.q7S, {
                         id: "tida",
                         children: (0, i.jsx)(f.K, {
                             showBackButton: R,
                             onBack: R ? P : void 0,
-                            renderFooter: k,
+                            renderFooter: L,
                             onClose: n,
-                            onReopen: L
+                            onReopen: k
                         })
                     })]
                 })

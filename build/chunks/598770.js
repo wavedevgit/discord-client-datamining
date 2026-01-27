@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(989349),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(661191);
 
 function c(e, t, n) {
@@ -93,7 +93,7 @@ function y() {
 function b() {
     _ = p, y()
 }
-class O extends(r = s.Ay.PersistedStore) {
+class O extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         _ = null != e ? e : p
     }
@@ -128,7 +128,7 @@ c(O, "displayName", "NewlyAddedEmojiStore"), c(O, "persistKey", "NewlyAddedEmoji
         lastSeenNewlyAddedEmojiIds: n
     }
 }]);
-let v = new O(o.h, {
+let v = new O(s.h, {
     LOGOUT: m,
     NEWLY_ADDED_EMOJI_SEEN_ACKNOWLEDGED: g,
     NEWLY_ADDED_EMOJI_SEEN_PENDING: E,

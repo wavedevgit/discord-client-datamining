@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 94682 **/
 /** chunk id: 483496, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     T: "markdownContainer__48344"
 }

@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 112469, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Tx: () => o,
-    q9: () => l
+    Tx: () => a,
+    q9: () => o
 });
 var r = n(311907),
     i = n(71393),
-    a = n(612025),
+    l = n(612025),
     s = n(652215);
-let o = () => (0, a.xk)().selectedGuildId,
-    l = () => {
+let a = () => (0, l.xk)().selectedGuildId,
+    o = () => {
         var e;
-        let t = o(),
+        let t = a(),
             n = (0, r.bG)([i.A], () => i.A.getGuild(t));
         return null != (e = null == n ? void 0 : n.features.has(s.GuildFeatures.HUB)) && e
     }

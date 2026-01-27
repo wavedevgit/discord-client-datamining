@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(284009),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(365971);
 
 function c(e, t, n) {
@@ -71,7 +71,7 @@ function m(e) {
         height: n,
         isElementFullscreen: r,
         focused: i,
-        visible: s
+        visible: o
     } = e;
     return _.set(e.windowId, {
         windowSize: {
@@ -80,7 +80,7 @@ function m(e) {
         },
         isElementFullscreen: r,
         focused: i,
-        visible: s
+        visible: o
     }), i && (p = e.windowId), !0
 }
 
@@ -118,7 +118,7 @@ function b(e) {
 function O(e) {
     return _.delete(e.windowId), p === e.windowId && (p = null), !0
 }
-class v extends(r = s.Ay.Store) {
+class v extends(r = o.Ay.Store) {
     isFocused() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : (0, l.Xg)();
         return h(e).focused
@@ -149,7 +149,7 @@ class v extends(r = s.Ay.Store) {
     }
 }
 c(v, "displayName", "WindowStore");
-let A = new v(o.h, {
+let A = new v(s.h, {
     WINDOW_INIT: m,
     WINDOW_FULLSCREEN_CHANGE: g,
     WINDOW_FOCUS: E,

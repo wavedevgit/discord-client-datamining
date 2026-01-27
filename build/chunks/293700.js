@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(136857),
-    o = n(142120);
+    o = n(136857),
+    s = n(142120);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -28,8 +28,8 @@ let u = 0,
 function p(e) {
     let {
         error: t
-    } = e, n = t instanceof s.Ay ? t : new s.Ay(t);
-    o.A.isConnected() && n.code === s.Ay.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
+    } = e, n = t instanceof o.Ay ? t : new o.Ay(t);
+    s.A.isConnected() && n.code === o.Ay.ErrorCodes.PURCHASE_TOKEN_AUTHORIZATION_REQUIRED && (u = 1)
 }
 
 function _(e) {
@@ -41,7 +41,7 @@ function h() {
 }
 class m extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A)
+        this.waitFor(s.A)
     }
     get purchaseTokenAuthState() {
         return u

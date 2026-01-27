@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(397927),
     i = n(51758),
     a = n(696451),
-    s = n(71393),
-    o = n(287809),
+    o = n(71393),
+    s = n(287809),
     l = n(148719),
     c = n(746080),
     u = n(652215),
@@ -75,8 +75,8 @@ function p(e, t) {
             textFocused: h = !1
         } = n;
     if (null == e) return null;
-    null == t && (t = s.A.getGuild(e.getGuildId()));
-    let m = (0, i.V)(null == t ? void 0 : t.id, [s.A, o.default, a.Ay]);
+    null == t && (t = o.A.getGuild(e.getGuildId()));
+    let m = (0, i.V)(null == t ? void 0 : t.id, [o.A, s.default, a.Ay]);
     if (e.isModeratorReportChannel()) return r.iFK;
     if ((null == e ? void 0 : e.id) === (null == t ? void 0 : t.rulesChannelId)) return r.B8Q;
     let g = e.isNSFW();

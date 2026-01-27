@@ -4,8 +4,8 @@
 var r = n(221015),
     i = n(446474),
     a = n(250594),
-    s = n(254818),
-    o = n(151860),
+    o = n(254818),
+    s = n(151860),
     l = n(43452),
     c = n(503199),
     u = n(41575),
@@ -21,8 +21,8 @@ e.exports = function(e) {
     v && (O = r(O, b > 2 ? arguments[2] : void 0));
     var A = f(E),
         I = 0;
-    if (A && !(this === p && o(A)))
-        for (n = y ? new this : [], m = (h = d(E, A)).next; !(_ = i(m, h)).done; I++) g = v ? s(h, O, [_.value, I], !0) : _.value, u(n, I, g);
+    if (A && !(this === p && s(A)))
+        for (n = y ? new this : [], m = (h = d(E, A)).next; !(_ = i(m, h)).done; I++) g = v ? o(h, O, [_.value, I], !0) : _.value, u(n, I, g);
     else
         for (t = c(E), n = y ? new this(t) : p(t); t > I; I++) g = v ? O(E[I], I) : E[I], u(n, I, g);
     return n.length = I, n

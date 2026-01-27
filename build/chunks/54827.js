@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(73153),
     i = n(626584),
     a = n(986120),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -20,7 +20,7 @@ function o(e, t, n) {
 let l = new i.A("CloudSync");
 class c {
     constructor(e) {
-        o(this, "message", void 0), this.message = e
+        s(this, "message", void 0), this.message = e
     }
 }
 async function u(e, t) {
@@ -31,14 +31,14 @@ async function u(e, t) {
         branchId: t
     });
     try {
-        if ((n = await a.E(e, t, i)).type === s.R_U.CONFLICT) throw r.h.dispatch({
+        if ((n = await a.E(e, t, i)).type === o.R_U.CONFLICT) throw r.h.dispatch({
             type: "GAME_CLOUD_SYNC_CONFLICT",
             applicationId: e,
             branchId: t,
             next: n.next,
             remote: n.remote
         }), new c("Conflict in cloud sync.");
-        (n.type === s.R_U.PULL || n.type === s.R_U.PUSH) && l.info("Sync complete", n)
+        (n.type === o.R_U.PULL || n.type === o.R_U.PUSH) && l.info("Sync complete", n)
     } catch (n) {
         if (n instanceof c) throw n;
         throw r.h.dispatch({

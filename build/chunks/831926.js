@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(587993),
     i = n(305511),
     a = n(282179),
-    s = n(628227);
-class o {
+    o = n(628227);
+class s {
     constructor(e, t) {
         let n, r;
         n = e || new a.H, r = t || new a.H, this._stack = [{
@@ -51,9 +51,9 @@ class o {
 }
 
 function l() {
-    let e = (0, s.E)(),
-        t = (0, s.S)(e);
-    return t.stack = t.stack || new o((0, i.r)(), (0, i.q)())
+    let e = (0, o.E)(),
+        t = (0, o.S)(e);
+    return t.stack = t.stack || new s((0, i.r)(), (0, i.q)())
 }
 
 function c(e) {

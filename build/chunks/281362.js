@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(157559),
     i = n(627363),
     a = n(192552),
-    s = n(611010),
-    o = n(734057),
+    o = n(611010),
+    s = n(734057),
     l = n(71393),
     c = n(576705),
     u = n(287809),
@@ -76,7 +76,7 @@ async function E(e) {
     } = e, O = f.Ay.getEmbeddedActivitiesForChannel(t).find(e => e.applicationId === n && (null == r || e.launchId === r)), v = a;
     if (null == v) {
         let e = await i.Ay.fetchApplication(n);
-        v = s.Ay.createFromServer(e)
+        v = o.Ay.createFromServer(e)
     }
     if (null == O || null == v) return;
     let A = u.default.getCurrentUser();
@@ -98,7 +98,7 @@ async function E(e) {
             channelId: t,
             currentUser: A,
             isActivitiesEnabledForCurrentPlatform: (0, _.A)(),
-            ChannelStore: o.A,
+            ChannelStore: s.A,
             VoiceStateStore: d.A,
             PermissionStore: c.A,
             GuildStore: l.A

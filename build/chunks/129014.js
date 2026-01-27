@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(143236),
     i = n(481613),
     a = n.n(i),
-    s = n(488428),
-    o = n(835245),
+    o = n(488428),
+    s = n(835245),
     l = n(562465),
     c = n(636401),
     u = n(652215);
@@ -18,7 +18,7 @@ function f(e, t) {
     if (null == e || null == t) throw Error("cmd and name required");
     return "".concat(e, ":").concat(t)
 }
-let p = s.parse(location.search.slice(1)),
+let p = o.parse(location.search.slice(1)),
     _ = parseInt(null != p.rpc && "" !== p.rpc ? p.rpc : u.xEi, 10),
     h = null;
 class m extends r.EventEmitter {
@@ -67,10 +67,10 @@ class m extends r.EventEmitter {
                     }
                     return void this.emit(f(n, r), a)
                 }
-                let s = null;
-                r === u.ZE4.ERROR && (s = new c.A({
+                let o = null;
+                r === u.ZE4.ERROR && (o = new c.A({
                     errorCode: a.code
-                }, a.message), a = null), this.emit(f(n, i), s, a)
+                }, a.message), a = null), this.emit(f(n, i), o, a)
             }, h.onclose = h.onerror = e => this.disconnect(e))
         }
     }
@@ -97,14 +97,14 @@ class m extends r.EventEmitter {
                 }), this.connect();
                 return
             }
-            let a = (0, o.A)(),
-                s = JSON.stringify({
+            let a = (0, s.A)(),
+                o = JSON.stringify({
                     cmd: e,
                     args: t,
                     evt: n,
                     nonce: a
                 });
-            this.once(f(e, a), (e, t) => null != e ? i(e) : r(t)), null == h || h.send(s)
+            this.once(f(e, a), (e, t) => null != e ? i(e) : r(t)), null == h || h.send(o)
         })
     }
     requestOnce(e, t, n) {
@@ -114,7 +114,7 @@ class m extends r.EventEmitter {
                 cmd: e,
                 args: t,
                 evt: n,
-                nonce: (0, o.A)()
+                nonce: (0, s.A)()
             },
             rejectWithError: !1
         }).then(e => {
@@ -136,7 +136,7 @@ class m extends r.EventEmitter {
                 cmd: e,
                 args: t,
                 evt: n,
-                nonce: (0, o.A)()
+                nonce: (0, s.A)()
             })),
             i = encodeURIComponent("".concat(location.protocol, "//").concat(location.host).concat(location.pathname, "?done=true"));
         return window.open("http://127.0.0.1:".concat(this.port, "/rpc?v=").concat(u.dL4, "&payload=").concat(r, "&callback=").concat(i), "_self"), new Promise(() => null)

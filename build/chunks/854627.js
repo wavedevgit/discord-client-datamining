@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(397927),
-    s = n(954921),
-    o = n(278539),
+    o = n(954921),
+    s = n(278539),
     l = n(287809),
     c = n(62199);
 
@@ -36,11 +36,11 @@ function u(e) {
         avatarPlaceholderSrc: y,
         avatarDecorationSrc: b,
         eventHandlers: O
-    } = (0, o.A)({
+    } = (0, s.A)({
         user: h,
         guildId: n,
         avatarDecorationOverride: p,
-        size: (0, s.Te)(u),
+        size: (0, o.Te)(u),
         onlyAnimateOnHoverOrFocus: f
     });
     return {

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(830215),
-    s = n(439372),
-    o = n(287809),
+    o = n(439372),
+    s = n(287809),
     l = n(954571),
     c = n(536194),
     u = n(715314),
@@ -55,15 +55,15 @@ function m(e, t) {
     }), e
 }
 let g = "LOGIN_REQUIRED_ACTIONS_MODAL_KEY";
-class E extends s.A {
+class E extends o.A {
     handleConnectionOpen() {
-        let e = o.default.getCurrentUser();
+        let e = s.default.getCurrentUser();
         if (null == e || c.P.isDisallowPopupsSet()) return;
         let t = u.A.requiredActionsIncludes(e.id, [d.Kby.UPDATE_PASSWORD]);
         u.A.wasLoginAttemptedInSession(e.id) && t ? (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.resolve().then(n.bind(n, 739693));
+            } = await n.e("10302").then(n.bind(n, 739693));
             return function(t) {
                 let n = async () => {
                     await t.onClose(), a.A.logout("login_required_account_manager", d.BVt.LOGIN)

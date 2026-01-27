@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 998643, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.r(t), n.d(t, {
     default: () => eT
 }), n(747238), n(896048);
@@ -11,32 +10,32 @@ var r = n(627968),
     a = n(607399),
     o = n(470562),
     c = n(311907),
-    u = n(73153),
-    d = n(830215),
+    d = n(73153),
+    u = n(830215),
     h = n(869038),
     p = n(846293),
     g = n(526423),
-    m = n(745399),
+    _ = n(745399),
     f = n(549711),
-    _ = n(829691),
+    m = n(829691),
     A = n(212640),
     x = n(409934),
     E = n(7936),
     v = n(49463),
-    j = n(122906),
+    b = n(122906),
     y = n(121623),
-    b = n(850381),
-    S = n(21599),
-    I = n(614986),
-    N = n(957622),
-    O = n(463347),
+    j = n(850381),
+    I = n(21599),
+    O = n(614986),
+    S = n(957622),
+    N = n(463347),
     C = n(210714),
     T = n(565287),
     R = n(961350),
     w = n(30793),
     P = n(299091),
-    L = n(954571),
-    k = n(139675),
+    k = n(954571),
+    L = n(139675),
     D = n(612181),
     B = n(486020),
     U = n(952072),
@@ -47,12 +46,12 @@ var r = n(627968),
     W = n(126912),
     H = n(216894),
     K = n(170159),
-    Q = n(187035),
-    z = n(565505),
+    z = n(187035),
+    Q = n(565505),
     q = n(111549),
     Y = n(129851),
-    X = n(459893),
-    J = n(883257),
+    J = n(459893),
+    X = n(883257),
     Z = n(229),
     $ = n(466133),
     ee = n(163050),
@@ -98,26 +97,26 @@ function ea(e, t) {
 }
 n(426620), c.Ay.initialize();
 let eo = (0, G.A)(Y.A),
-    ec = (0, G.A)(X.A),
-    eu = (0, G.A)(q.A),
-    ed = (0, G.A)(Q.A),
+    ec = (0, G.A)(J.A),
+    ed = (0, G.A)(q.A),
+    eu = (0, G.A)(z.A),
     eh = (0, G.A)(K.A),
-    ep = (0, G.A)(I.A),
+    ep = (0, G.A)(O.A),
     eg = (0, G.A)(Z.A),
-    em = (0, G.A)(et.A),
+    e_ = (0, G.A)(et.A),
     ef = (0, G.A)(F.A),
-    e_ = (0, G.A)(en.A),
+    em = (0, G.A)(en.A),
     eA = (0, G.A)(E.A),
     ex = (0, G.A)(ee.A),
     eE = (0, G.A)(W.A),
     ev = (0, G.A)(x.A),
-    ej = (0, G.A)(b.A),
+    eb = (0, G.A)(j.A),
     ey = (0, G.A)(V.A),
-    eb = (0, G.A)(H.A),
-    eS = (0, G.A)(J.A),
-    eI = (0, G.A)($.A),
-    eN = (0, G.A)(m.A),
-    eO = (0, G.A)(N.A);
+    ej = (0, G.A)(H.A),
+    eI = (0, G.A)(X.A),
+    eO = (0, G.A)($.A),
+    eS = (0, G.A)(_.A),
+    eN = (0, G.A)(S.A);
 class eC extends i.PureComponent {
     static getDerivedStateFromProps(e, t) {
         var n;
@@ -135,7 +134,7 @@ class eC extends i.PureComponent {
                 guild: e,
                 target_application: t
             } = r;
-            null != t ? null != l && (c = (0, k.uD)(t.id, l, 1024)) : null != e && "string" == typeof e.splash && (c = B.Ay.getGuildSplashURL({
+            null != t ? null != l && (c = (0, L.uD)(t.id, l, 1024)) : null != e && "string" == typeof e.splash && (c = B.Ay.getGuildSplashURL({
                 id: e.id,
                 splash: e.splash
             }))
@@ -151,8 +150,8 @@ class eC extends i.PureComponent {
             hasLoadedExperiments: t,
             isAuthenticated: n
         } = this.props;
-        null != e && (!t && n && d.A.getExperiments(!0), L.default.track(er.HAw.INVITE_OPENED, {
-            invite_code: (0, S.m0)(e),
+        null != e && (!t && n && u.A.getExperiments(!0), k.default.track(er.HAw.INVITE_OPENED, {
+            invite_code: (0, I.m0)(e),
             load_time: U.A.getTimeSinceNavigationStart()
         }, {
             flush: !0
@@ -173,7 +172,7 @@ class eC extends i.PureComponent {
             let {
                 target_application: t
             } = e;
-            null != t && (0, k.RG)(t.id, ["embedded_splash"]).then(e => {
+            null != t && (0, L.RG)(t.id, ["embedded_splash"]).then(e => {
                 let [t] = e;
                 return this.setState({
                     backgroundId: t
@@ -189,13 +188,13 @@ class eC extends i.PureComponent {
         let {
             invite: t
         } = await p.Ay.resolveInvite(e, er.S3d.INVITE);
-        null != t && ((0, _.v)(t), null != t.type && ei.uR.has(t.type) && p.Ay.openNativeAppModal(e))
+        null != t && ((0, m.v)(t), null != t.type && ei.uR.has(t.type) && p.Ay.openNativeAppModal(e))
     }
     resolveGuildTemplate() {
         let {
             guildTemplateCode: e
         } = this.props;
-        null != e && (L.default.track(er.HAw.GUILD_TEMPLATE_OPENED, {
+        null != e && (k.default.track(er.HAw.GUILD_TEMPLATE_OPENED, {
             guild_template_code: e,
             load_time: U.A.getTimeSinceNavigationStart()
         }, {
@@ -207,7 +206,7 @@ class eC extends i.PureComponent {
             giftCode: e
         } = this.props;
         null != e && h.A.resolveGiftCode(e, !0, !0).then(t => {
-            null != t && null == t.giftCode.promotion && u.h.wait(() => h.A.openNativeGiftCodeModal(e))
+            null != t && null == t.giftCode.promotion && d.h.wait(() => h.A.openNativeGiftCodeModal(e))
         })
     }
     render() {
@@ -226,7 +225,7 @@ class eC extends i.PureComponent {
                 }))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.LOGIN_ONE_TIME,
-                render: e => (0, r.jsx)(eO, el({}, e))
+                render: e => (0, r.jsx)(eN, el({}, e))
             }), (0, r.jsx)(f.A, {
                 impressionName: l.ImpressionNames.USER_LOGIN,
                 path: er.BVt.LOGIN,
@@ -259,11 +258,11 @@ class eC extends i.PureComponent {
                         },
                         location: i,
                         transitionTo: s
-                    } = e, l = (0, S.fB)(t, i.search);
+                    } = e, l = (0, I.fB)(t, i.search);
                     return a.Fr || a.v1 ? (0, r.jsx)(ep, {
                         inviteKey: l,
                         transitionTo: s
-                    }, l) : (0, r.jsx)(eu, {
+                    }, l) : (0, r.jsx)(ed, {
                         inviteKey: l,
                         location: i,
                         transitionTo: s,
@@ -283,9 +282,9 @@ class eC extends i.PureComponent {
                         location: i,
                         transitionTo: s
                     } = e;
-                    return a.Fr || a.v1 ? (0, r.jsx)(z.A, {
+                    return a.Fr || a.v1 ? (0, r.jsx)(Q.A, {
                         code: t
-                    }, t) : (0, r.jsx)(ed, {
+                    }, t) : (0, r.jsx)(eu, {
                         code: t,
                         location: i,
                         transitionTo: s,
@@ -294,10 +293,10 @@ class eC extends i.PureComponent {
                 }
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.VERIFY,
-                render: e => (0, r.jsx)(e_, el({}, e))
+                render: e => (0, r.jsx)(em, el({}, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.VERIFY_HUB_EMAIL,
-                render: e => (0, r.jsx)(ej, el({}, e))
+                render: e => (0, r.jsx)(eb, el({}, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.VERIFY_REQUEST,
                 render: e => (0, r.jsx)(eA, el({}, e))
@@ -309,7 +308,7 @@ class eC extends i.PureComponent {
                 render: e => (0, r.jsx)(ev, el({}, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.AUTHORIZE_IP,
-                render: e => (0, r.jsx)(em, el({}, e))
+                render: e => (0, r.jsx)(e_, el({}, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.REJECT_IP,
                 render: e => (0, r.jsx)(ex, el({
@@ -330,12 +329,12 @@ class eC extends i.PureComponent {
                 }, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.PICK_GUILD_SETTINGS(":section?", ":subsection?"),
-                render: e => (0, r.jsx)(eS, el({}, e))
+                render: e => (0, r.jsx)(eI, el({}, e))
             }), (0, r.jsx)(f.A, {
-                path: er.BVt.CHANNELS_GAME_SHOP(O.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
-                render: e => (0, r.jsx)(eb, el({}, e))
+                path: er.BVt.CHANNELS_GAME_SHOP(N.pv.guildId(), ":pageIndex", ":skuId", ":slug?"),
+                render: e => (0, r.jsx)(ej, el({}, e))
             }), (0, r.jsx)(f.A, {
-                path: er.BVt.CHANNEL(O.pv.guildId(), O.pv.channelId({
+                path: er.BVt.CHANNEL(N.pv.guildId(), N.pv.channelId({
                     optional: !0
                 }), ":messageId?"),
                 render: e => (0, r.jsx)(ey, el({}, e))
@@ -344,10 +343,10 @@ class eC extends i.PureComponent {
                 render: () => (0, r.jsx)(T.Kz, {})
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.REPORT_SECOND_LOOK,
-                render: e => (0, r.jsx)(eI, el({}, e))
+                render: e => (0, r.jsx)(eO, el({}, e))
             }), (0, r.jsx)(f.A, {
                 path: er.BVt.ACCOUNT_REVERT(":token"),
-                render: e => (0, r.jsx)(eN, el({}, e))
+                render: e => (0, r.jsx)(eS, el({}, e))
             })]
         })
     }
@@ -359,12 +358,12 @@ class eC extends i.PureComponent {
         })
     }
 }
-let eT = c.Ay.connectStores([R.default, P.A, w.A, v.A, j.A], e => {
+let eT = c.Ay.connectStores([R.default, P.A, w.A, v.A, b.A], e => {
     var t, n, r;
     let {
         match: i,
         location: s
-    } = e, l = null == i || null == (t = i.params) ? void 0 : t.inviteCode, a = null != l ? (0, S.fB)(l, s.search) : void 0, o = null == i || null == (n = i.params) ? void 0 : n.giftCode, c = null == i || null == (r = i.params) ? void 0 : r.guildTemplateCode;
+    } = e, l = null == i || null == (t = i.params) ? void 0 : t.inviteCode, a = null != l ? (0, I.fB)(l, s.search) : void 0, o = null == i || null == (n = i.params) ? void 0 : n.giftCode, c = null == i || null == (r = i.params) ? void 0 : r.guildTemplateCode;
     return {
         inviteKey: a,
         isAuthenticated: R.default.isAuthenticated(),
@@ -372,7 +371,7 @@ let eT = c.Ay.connectStores([R.default, P.A, w.A, v.A, j.A], e => {
         guildTemplateCode: c,
         gift: null != o ? w.A.get(o) : null,
         invite: null != a ? P.A.getInvite(a) : null,
-        guildTemplate: null != c ? j.A.getGuildTemplate(c) : null,
+        guildTemplate: null != c ? b.A.getGuildTemplate(c) : null,
         hasLoadedExperiments: v.A.hasLoadedExperiments
     }
 })(eC)

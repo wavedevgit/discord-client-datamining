@@ -2,7 +2,7 @@
 /** chunk id: 621158, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    H: () => s
+    H: () => o
 });
 var r = n(241827),
     i = n(790637);
@@ -123,6 +123,6 @@ class a {
     }
 }
 
-function s(e, t, n, r) {
+function o(e, t, n, r) {
     return (0, i.Nf)() ? new a(e, t, n, r) : e.createTreeWalker(t, n, r)
 }

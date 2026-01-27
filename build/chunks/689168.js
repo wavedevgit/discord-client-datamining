@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(451988),
-    s = n(73153),
-    o = n(375492),
+    o = n(73153),
+    s = n(375492),
     l = n(461213),
     c = n(652215);
 
@@ -49,7 +49,7 @@ function m(e) {
 function g(e, t, n) {
     null != p[e] && p[e].stop();
     let r = new a.Ep;
-    r.start(n, () => s.h.dispatch({
+    r.start(n, () => o.h.dispatch({
         type: "ACTIVITY_LAUNCH_FAIL",
         applicationId: e,
         activityType: t
@@ -60,17 +60,17 @@ function E(e, t, n) {
     var r, i;
     let {
         applicationId: a,
-        remotePartyId: s
+        remotePartyId: o
     } = n;
     if (e === c.eAD.COMPLETE) {
         null == (i = f[a]) || delete i[t], null != p[a] && (p[a].stop(), delete p[a]);
         return
     }
-    let o = null != (r = f[a]) ? r : {};
-    o[t] = {
+    let s = null != (r = f[a]) ? r : {};
+    s[t] = {
         state: e,
-        remotePartyId: s
-    }, f[a] = o, __OVERLAY__ || e !== c.eAD.FAILED ? e === c.eAD.LOADING && null != s && g(a, t, h) : g(a, t, _)
+        remotePartyId: o
+    }, f[a] = s, __OVERLAY__ || e !== c.eAD.FAILED ? e === c.eAD.LOADING && null != o && g(a, t, h) : g(a, t, _)
 }
 
 function y(e) {
@@ -104,8 +104,8 @@ function O() {
         let {
             applicationId: i,
             remotePartyId: a
-        } = e, s = o.A.getApplicationActivity(i), u = l.A.getApplicationActivity(i);
-        ((null == s || null == (n = s.party) ? void 0 : n.id) === a || (null == u || null == (r = u.party) ? void 0 : r.id) === a) && (E(c.eAD.COMPLETE, c.xL.JOIN, {
+        } = e, o = s.A.getApplicationActivity(i), u = l.A.getApplicationActivity(i);
+        ((null == o || null == (n = o.party) ? void 0 : n.id) === a || (null == u || null == (r = u.party) ? void 0 : r.id) === a) && (E(c.eAD.COMPLETE, c.xL.JOIN, {
             applicationId: i,
             remotePartyId: a
         }), t = !0)
@@ -113,7 +113,7 @@ function O() {
 }
 class v extends(r = i.Ay.Store) {
     initialize() {
-        this.syncWith([o.A, l.A], O)
+        this.syncWith([s.A, l.A], O)
     }
     getState(e, t) {
         var n;
@@ -125,7 +125,7 @@ class v extends(r = i.Ay.Store) {
     }
 }
 u(v, "displayName", "ActivityLauncherStore");
-let A = new v(s.h, {
+let A = new v(o.h, {
     OVERLAY_INITIALIZE: y,
     ACTIVITY_JOIN_LOADING: e => E(c.eAD.LOADING, c.xL.JOIN, e),
     ACTIVITY_JOIN_FAILED: e => E(c.eAD.FAILED, c.xL.JOIN, e),

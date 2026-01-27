@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(322925),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(322925),
+    l = n.n(s),
     c = n(827734),
     u = n(845188),
     d = n(60639);
@@ -76,7 +76,7 @@ let E = Object.fromEntries(Object.keys(c.A.colors).map(e => [l()(e), e])),
     y = i.forwardRef(function(e, t) {
         let n, [i, ...a] = [e, t],
             {
-                variant: o,
+                variant: s,
                 tag: l = "div",
                 selectable: f = !1,
                 className: _,
@@ -112,14 +112,14 @@ let E = Object.fromEntries(Object.keys(c.A.colors).map(e => [l()(e), e])),
         }, T, v.style);
         return (0, r.jsx)(I, h(p({
             ref: A,
-            className: s()({
+            className: o()({
                 [u.fT]: void 0 === y,
                 [u.rb]: f,
                 [u.w9]: b,
                 [d.fontScaling]: O
-            }, S, d[o], _)
+            }, S, d[s], _)
         }, v), {
             style: Object.values(N).filter(Boolean).length > 0 ? N : void 0,
-            "data-text-variant": o
+            "data-text-variant": s
         }))
     })

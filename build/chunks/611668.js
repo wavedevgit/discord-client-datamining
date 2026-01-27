@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 611668, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 611668, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(64700),
-    i = n(550835);
-e.exports = (0, n(116740).Map)({
+var n = r(64700),
+    i = r(550835);
+t.exports = (0, r(116740).Map)({
     "header-one": {
         element: "h1"
     },
@@ -30,13 +30,13 @@ e.exports = (0, n(116740).Map)({
     },
     "unordered-list-item": {
         element: "li",
-        wrapper: r.createElement("ul", {
+        wrapper: n.createElement("ul", {
             className: i("public/DraftStyleDefault/ul")
         })
     },
     "ordered-list-item": {
         element: "li",
-        wrapper: r.createElement("ol", {
+        wrapper: n.createElement("ol", {
             className: i("public/DraftStyleDefault/ol")
         })
     },
@@ -48,7 +48,7 @@ e.exports = (0, n(116740).Map)({
     },
     "code-block": {
         element: "pre",
-        wrapper: r.createElement("pre", {
+        wrapper: n.createElement("pre", {
             className: i("public/DraftStyleDefault/pre")
         })
     },

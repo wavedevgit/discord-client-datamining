@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(35033),
     a = n(73153),
-    s = n(626584),
-    o = n(961350),
+    o = n(626584),
+    s = n(961350),
     l = n(652309);
 
 function c(e, t, n) {
@@ -19,11 +19,11 @@ function c(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let u = new s.A("DatabaseManager"),
+let u = new o.A("DatabaseManager"),
     d = !1;
 class f extends r.Ay.Store {
     initialize() {
-        this.waitFor(o.default), this.carefullySpeculativelyOpen(l.F()), this.handleAuthenticationStoreChanged(), o.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
+        this.waitFor(s.default), this.carefullySpeculativelyOpen(l.F()), this.handleAuthenticationStoreChanged(), s.default.addChangeListener(() => this.handleAuthenticationStoreChanged())
     }
     databaseName(e) {
         return _(e)
@@ -58,13 +58,13 @@ class f extends r.Ay.Store {
         e.preventWritingCachesAgainThisSession && (this.preventWritingCachesAgainThisSession = !0), this.replaceDisableAllDatabases("DatabaseManager (".concat(e.reason, ")"))
     }
     handleConnectionOpen() {
-        let e = o.default.getId(),
+        let e = s.default.getId(),
             t = this.databases.get(e),
             n = null == t ? void 0 : t.state();
         null == t && n !== i.z9.Open && this.remove(e), this.carefullyOpenDatabase(e)
     }
     handleAuthenticationStoreChanged() {
-        let e = o.default.getId(),
+        let e = s.default.getId(),
             t = this.activeUserId;
         if (e !== t) {
             let n = this.databases.get(t);

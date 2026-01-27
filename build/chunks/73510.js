@@ -7,10 +7,10 @@ n.d(t, {
     Ik: () => l,
     NH: () => a,
     Ob: () => u,
-    Ss: () => o,
+    Ss: () => s,
     YC: () => _,
     iW: () => f,
-    oW: () => s,
+    oW: () => o,
     tE: () => m,
     uA: () => p,
     v4: () => d
@@ -18,14 +18,14 @@ n.d(t, {
 var r = n(155718),
     i = n(985018);
 let a = "True",
-    s = "False",
-    o = [{
+    o = "False",
+    s = [{
         name: a,
         displayName: a,
         value: "true"
     }, {
-        name: s,
-        displayName: s,
+        name: o,
+        displayName: o,
         value: "false"
     }];
 var l = function(e) {

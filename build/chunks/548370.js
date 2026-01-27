@@ -2,21 +2,21 @@
 /** chunk id: 548370, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D$: () => o,
+    D$: () => s,
     s1: () => p,
     xA: () => l
 });
 var r = n(808180),
     i = n(624694);
 let a = 10 * n(927813).A.Millis.SECOND,
-    s = 15;
+    o = 15;
 
-function o() {
+function s() {
     return r.X.isIncomingVideoEnabled() && performance.now() - r.X.lastIncomingVideoEnabledChangeTime() > a
 }
 
 function l(e, t) {
-    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s,
+    let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o,
         r = i.A.getAccumulatedPerformanceStats(e, t, "short"),
         a = i.A.getAccumulatedPerformanceStats(e, t, "long");
     return null == r || null == a || r.numDatapoints < n || a.numDatapoints < n ? null : {

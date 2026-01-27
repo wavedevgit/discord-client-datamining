@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(717125),
     i = n(41200),
     a = n(496767),
-    s = n(134413),
-    o = n(713125),
+    o = n(134413),
+    s = n(713125),
     l = n(473529),
     c = n(960253),
     u = n(154325),
@@ -48,11 +48,11 @@ async function v(e) {
         case O.VV.CHANNEL_BROWSER:
             return null != v && v.features.has(b.GuildFeatures.COMMUNITY);
         case O.VV.GUILD_ONBOARDING:
-            return o.Ay.shouldShowOnboarding(t);
+            return s.Ay.shouldShowOnboarding(t);
         case O.VV.CUSTOMIZE_COMMUNITY:
             return null != v && v.features.has(b.GuildFeatures.COMMUNITY);
         case O.VV.MEMBER_SAFETY:
-            return (0, s.Ml)(t);
+            return (0, o.Ml)(t);
         case O.VV.GUILD_BOOSTS:
             return !0;
         case O.VV.REPORT_TO_MOD:

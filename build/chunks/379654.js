@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(688810),
-    s = n(850046),
-    o = n(183555),
+    o = n(850046),
+    s = n(183555),
     l = n(633075),
     c = n(289173),
     u = n(80330),
-    d = n(274900),
+    d = n(139730),
     f = n(783256),
     p = n(518477),
     _ = n(985018);
@@ -44,34 +44,34 @@ function g(e) {
         user: t,
         widgets: n = [],
         onOpenUserProfileModal: h
-    } = e, g = i.useMemo(() => n.filter(e => e instanceof l.R), [n]), {
-        analyticsLocations: E
+    } = e, g = i.useMemo(() => n.filter(e => e instanceof l.R), [n]), E = i.useMemo(() => g.map(e => e.applicationId), [g]), {
+        analyticsLocations: y
     } = (0, a.Ay)(), {
-        trackUserProfileAction: y
-    } = (0, o.NJ)(), b = (0, s.A)(t.id, g), O = i.useCallback(() => {
+        trackUserProfileAction: b
+    } = (0, s.NJ)(), O = (0, o.A)(t.id, E), v = i.useCallback(() => {
         null == h || h({
             tabSection: p.RP.WIDGETS
         })
-    }, [h]), v = i.useCallback(e => {
+    }, [h]), A = i.useCallback(e => {
         let t = !1,
             i = [];
-        for (let a of n) a instanceof l.R ? null != b[a.applicationId] && i.push((0, r.jsx)(d.A, m({
-            previewData: b[a.applicationId],
-            onClick: O
+        for (let a of n) a instanceof l.R ? null != O[a.applicationId] && i.push((0, r.jsx)(d.A, m({
+            previewData: O[a.applicationId],
+            onClick: v
         }, e), "application-widget-".concat(a.applicationId))) : a instanceof c.Yy && !t && (i.push((0, r.jsx)(f.A, m({
             widgets: n,
-            onClick: O
+            onClick: v
         }, e), "collection-breadcrumb")), t = !0);
         return i
-    }, [b, O, n]);
+    }, [O, v, n]);
     return 0 === n.length ? null : (0, r.jsx)(u.A, {
-        renderCards: v,
+        renderCards: A,
         heading: _.intl.string(_.t.Y55Tua),
         onExpand: () => {
-            y({
+            b({
                 action: "PRESS_SHOW_MORE_WIDGETS",
-                analyticsLocations: E
-            }), O()
+                analyticsLocations: y
+            }), v()
         }
     })
 }

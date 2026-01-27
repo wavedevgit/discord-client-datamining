@@ -2,24 +2,24 @@
 /** chunk id: 683834, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(499702),
     i = n(140851),
     a = n(528346),
-    s = n(559751);
+    o = n(559751);
 
-function o(e, t) {
+function s(e, t) {
     void 0 === t && (t = {});
     var n = t,
-        o = n.placement,
+        s = n.placement,
         l = n.boundary,
         c = n.rootBoundary,
         u = n.padding,
         d = n.flipVariations,
         f = n.allowedAutoPlacements,
         p = void 0 === f ? i.DD : f,
-        _ = (0, r.A)(o),
+        _ = (0, r.A)(s),
         h = _ ? d ? i.Ol : i.Ol.filter(function(e) {
             return (0, r.A)(e) === _
         }) : i.OM,
@@ -33,7 +33,7 @@ function o(e, t) {
             boundary: l,
             rootBoundary: c,
             padding: u
-        })[(0, s.A)(n)], t
+        })[(0, o.A)(n)], t
     }, {});
     return Object.keys(g).sort(function(e, t) {
         return g[e] - g[t]

@@ -6,8 +6,8 @@ n.d(t, {
     A: () => v
 });
 var i, a = n(735438),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(506774),
     c = n(73153),
     u = n(652215);
@@ -25,7 +25,7 @@ let f = "GameLibraryViewStore",
     _ = u.tSW.ASCENDING,
     h = u.DpB.LAST_PLAYED,
     m = !1,
-    g = s().debounce(() => {
+    g = o().debounce(() => {
         m = !1, O.emitChange()
     }, p);
 
@@ -47,7 +47,7 @@ function y(e) {
         sortKey: h
     })
 }
-class b extends(i = o.Ay.Store) {
+class b extends(i = s.Ay.Store) {
     initialize() {
         var e;
         let t = null != (e = l.w.get(f)) ? e : {};

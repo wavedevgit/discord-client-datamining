@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     A: () => l,
-    F: () => o
+    F: () => s
 });
 var r = n(575593),
     i = n(149807);
@@ -17,7 +17,7 @@ function a(e, t, n) {
     }) : e[t] = n, e
 }
 
-function s(e) {
+function o(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -29,10 +29,10 @@ function s(e) {
     }
     return e
 }
-let o = e => e instanceof l;
+let s = e => e instanceof l;
 class l extends i.A {
     static fromServer(e) {
-        return new l(s({}, super.fromServer(e), e))
+        return new l(o({}, super.fromServer(e), e))
     }
     constructor(e) {
         super(e), a(this, "asset", void 0), a(this, "label", void 0), a(this, "palette", void 0), this.type = r.R.NAMEPLATE, this.asset = e.asset, this.label = e.label, this.palette = e.palette

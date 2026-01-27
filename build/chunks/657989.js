@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 657989, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     perksContainer: "perksContainer_b62c4e",
     perksTitle: "perksTitle_b62c4e",
     perksTitleStackedCards: "perksTitleStackedCards_b62c4e",
@@ -40,5 +39,4 @@ var r = {
     customButton: "customButton_b62c4e",
     cover: "cover_b62c4e",
     hidden: "hidden_b62c4e"
-};
-n.r(e.exports = r)
+})

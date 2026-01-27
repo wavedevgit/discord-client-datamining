@@ -3,13 +3,13 @@
 "use strict";
 n.d(t, {
     Ay: () => l,
-    Fq: () => s,
-    qe: () => o
+    Fq: () => o,
+    qe: () => s
 });
 var r = n(600975),
     i = n(945810),
     a = n(688151);
-let s = (0, i.mj)({
+let o = (0, i.mj)({
         name: "2025-10-seasonal-gifting-2025",
         kind: "user",
         defaultConfig: {
@@ -24,7 +24,7 @@ let s = (0, i.mj)({
             }
         }
     }),
-    o = (0, r.C)({
+    s = (0, r.C)({
         id: "2025-11_seasonal_gifting_2025_reminder",
         label: "Seasonal Gifting 2025 Reminder",
         kind: "user",
@@ -40,4 +40,4 @@ let s = (0, i.mj)({
             }
         }]
     }),
-    l = s
+    l = o

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(397927),
     a = n(954571),
-    s = n(188275),
-    o = n(652215);
+    o = n(188275),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -67,8 +67,8 @@ let f = "social-layer-storefront-item-claimed-successfully-modal",
         }, {
             modalKey: f,
             onCloseCallback: () => {
-                a.default.track(o.HAw.SLAYER_STOREFRONT_MODAL_CLOSED, {
-                    type: s.e2,
+                a.default.track(s.HAw.SLAYER_STOREFRONT_MODAL_CLOSED, {
+                    type: o.e2,
                     sku_id: t.id,
                     application_id: l.id,
                     location_stack: null != u ? u : []

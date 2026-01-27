@@ -2,7 +2,7 @@
 /** chunk id: 913563, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(559949),
     i = n(927961);
@@ -17,7 +17,7 @@ let a = {
     [r.x.ZILLA_SLAB]: i.default.KMR8rT
 };
 
-function s(e) {
+function o(e) {
     var t;
     return null != (t = a[e]) ? t : i.default.ZEL6mz
 }

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(224640),
     a = n(696208),
-    s = n(430993),
-    o = n(20742);
+    o = n(430993),
+    s = n(20742);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -85,13 +85,13 @@ function _(e) {
     return (0, r.jsxs)(i.d, d(c({}, E), {
         size: t,
         paddingSize: "lg",
-        children: [(0, r.jsx)(o.V6, {
+        children: [(0, r.jsx)(s.V6, {
             gradientColor: n,
             graphic: l,
             badge: u,
             title: p,
             subtitle: _
-        }), (0, r.jsx)(s.c, {
+        }), (0, r.jsx)(o.c, {
             children: g
         }), (0, r.jsx)(a.H, {
             leading: h,

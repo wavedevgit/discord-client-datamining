@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 740075, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 }), n(457529), n(733351);
 var r = n(64700),
     i = n(842209);
 
-function a(e, t) {
+function l(e, t) {
     let n = r.useRef(null),
-        a = r.useCallback((e, t) => {
-            var r, i, a;
-            e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (r = null == (a = n.current) || null == (i = a.textContent) ? void 0 : i.trim()) ? r : "")
+        l = r.useCallback((e, t) => {
+            var r, i, l;
+            e.preventDefault(), e.clipboardData.setData("application/x-discord-interaction-data", JSON.stringify(t)), e.clipboardData.setData("text/plain", null != (r = null == (l = n.current) || null == (i = l.textContent) ? void 0 : i.trim()) ? r : "")
         }, []);
     return i.D3({
         channel: e,
         type: "channel"
     }, t), {
-        onCopy: a,
+        onCopy: l,
         copyRef: n
     }
 }

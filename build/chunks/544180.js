@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(209489),
-    o = n(652215);
+    o = n(209489),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -17,17 +17,17 @@ function l(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let c = o.wY_.UNKNOWN,
-    u = o.NKC.UNKNOWN,
+let c = s.wY_.UNKNOWN,
+    u = s.NKC.UNKNOWN,
     d = null;
 
 function f(e) {
     var t;
-    c = null != e.type ? e.type : o.wY_.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : o.NKC.UNKNOWN, d = e.serviceProvider, _.emitChange()
+    c = null != e.type ? e.type : s.wY_.UNKNOWN, u = null != (t = e.effectiveSpeed) ? t : s.NKC.UNKNOWN, d = e.serviceProvider, _.emitChange()
 }
 class p extends(r = i.Ay.Store) {
     initialize() {
-        s.A.getNetworkInformation().then(f), s.A.addChangeCallback(f)
+        o.A.getNetworkInformation().then(f), o.A.addChangeCallback(f)
     }
     getType() {
         return c

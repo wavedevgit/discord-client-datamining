@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 33666, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var r = n(311907),
     i = n(695515);
 
-function a() {
+function l() {
     return (0, r.bG)([i.A], () => i.A.getAgeGroup())
 }

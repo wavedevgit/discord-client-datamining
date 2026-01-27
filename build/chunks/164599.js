@@ -1,86 +1,85 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 164599, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => b
+    A: () => E
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(421380),
-    l = n(397927),
+    l = n(503698),
+    s = n.n(l),
+    a = n(421380),
+    o = n(397927),
     c = n(688810),
-    u = n(309635),
-    d = n(954571),
-    f = n(927578),
+    d = n(309635),
+    u = n(954571),
+    _ = n(927578),
     p = n(919395),
-    _ = n(128450),
-    h = n(212168),
-    m = n(652215),
-    g = n(788868),
-    E = n(985018),
-    y = n(97671);
+    m = n(128450),
+    g = n(212168),
+    A = n(652215),
+    f = n(788868),
+    h = n(985018),
+    b = n(97671);
 
-function b(e) {
+function E(e) {
     let {
         user: t,
         guild: n,
-        initialSelectedEffect: a,
-        className: b,
-        sectionTitle: O,
-        forcedDivider: v = !1,
-        withTutorial: A = !1,
+        initialSelectedEffect: l,
+        className: E,
+        sectionTitle: x,
+        forcedDivider: O = !1,
+        withTutorial: C = !1,
         showBorder: I = !1
     } = e, {
-        analyticsLocations: S
-    } = (0, c.Ay)(), T = f.Ay.canUsePremiumProfileCustomization(t), C = (0, p.N2)({
+        analyticsLocations: T
+    } = (0, c.Ay)(), S = _.Ay.canUsePremiumProfileCustomization(t), j = (0, p.N2)({
         user: t,
         guildId: null == n ? void 0 : n.id
     }), {
-        pendingProfileEffect: N,
-        errors: w
-    } = (0, p.nZ)(null == n ? void 0 : n.id), R = void 0 === N ? null != C : null != N, P = () => {
-        (0, u.W)({
-            analyticsLocations: S,
-            guild: n,
-            initialSelectedEffect: a
-        })
-    }, D = () => {
-        (0, p.mZ)(null, null == n ? void 0 : n.id)
-    };
+        pendingProfileEffect: v,
+        errors: N
+    } = (0, p.nZ)(null == n ? void 0 : n.id);
     i.useEffect(() => {
-        T && d.default.track(m.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: g.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: S
+        S && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: f.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+            location_stack: T
         })
-    }, [T, S]);
-    let x = A ? l.wLn : o.$n;
-    return (0, r.jsx)(_.A, {
-        forcedDivider: v,
-        borderType: h.i.PREMIUM,
+    }, [S, T]);
+    let y = C ? o.wLn : a.$n;
+    return (0, r.jsx)(m.A, {
+        forcedDivider: O,
+        borderType: g.i.PREMIUM,
         hasBackground: !0,
-        title: O,
+        title: x,
         showBorder: I,
-        errors: w,
-        className: b,
+        errors: N,
+        className: E,
         children: (0, r.jsxs)("div", {
-            className: y.NC,
-            children: [(0, r.jsx)(x, {
-                size: o.$n.Sizes.SMALL,
-                onClick: P,
+            className: b.NC,
+            children: [(0, r.jsx)(y, {
+                size: a.$n.Sizes.SMALL,
+                onClick: () => {
+                    (0, d.W)({
+                        analyticsLocations: T,
+                        guild: n,
+                        initialSelectedEffect: l
+                    })
+                },
                 className: s()({
-                    [y.yj]: A
+                    [b.yj]: C
                 }),
-                children: E.intl.string(E.t["/dRfCf"])
-            }), R && (0, r.jsx)("div", {
+                children: h.intl.string(h.t["/dRfCf"])
+            }), (void 0 === v ? null != j : null != v) && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: y.DT,
-                children: (0, r.jsx)(l.Button, {
+                className: b.DT,
+                children: (0, r.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != n ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
-                    onClick: D
+                    text: null != n ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.uMuafO),
+                    onClick: () => {
+                        (0, p.mZ)(null, null == n ? void 0 : n.id)
+                    }
                 })
             })]
         })

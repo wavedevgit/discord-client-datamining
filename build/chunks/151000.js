@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 151000, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     ob: "backgroundIconOptionIcon__53965",
     to: "backgroundOptions__53965",

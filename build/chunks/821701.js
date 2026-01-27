@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
-/** chunk id: 821701, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 92818 **/
+/** chunk id: 821701, original params: e,t,r (module,exports,require) **/
+r.d(t, {
     A: () => s
-}), n(896048);
-var r = n(417597),
-    i = n(590180),
-    a = n(4227);
+}), r(896048);
+var n = r(417597),
+    l = r(590180),
+    i = r(4227);
 let s = e => {
-    let [t, n] = (0, r.yK)([i.A], () => [i.A.getCategoryForProduct(e), i.A.getProduct(e)]);
+    let [t, r] = (0, n.yK)([l.A], () => [l.A.getCategoryForProduct(e), l.A.getProduct(e)]);
     return {
         category: t,
-        product: n,
-        purchase: (0, r.bG)([a.A], () => a.A.getPurchase(e))
+        product: r,
+        purchase: (0, n.bG)([i.A], () => i.A.getPurchase(e))
     }
 }

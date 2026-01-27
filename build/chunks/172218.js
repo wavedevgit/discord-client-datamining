@@ -2,33 +2,33 @@
 /** chunk id: 172218, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => o,
+    B: () => s,
     K: () => u
 }), n(896048);
 var r = n(64700),
     i = n(66455),
     a = n(206692);
-let s = {};
+let o = {};
 
-function o(e, t) {
+function s(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
-        o = (0, r.useRef)(null),
-        l = (0, i.A)(null != t ? t : s),
+        s = (0, r.useRef)(null),
+        l = (0, i.A)(null != t ? t : o),
         c = (0, r.useRef)(null);
     return (0, r.useLayoutEffect)(() => {
         if (!n) return;
         null == c.current && (c.current = (0, a.e)(l.current));
-        let t = o.current,
+        let t = s.current,
             r = c.current;
         null != t && null != r && (0, a.wB)(r, t, e)
     }, [n, e, l]), (0, r.useEffect)(() => {
         if (!n) return;
-        let e = o.current,
+        let e = s.current,
             t = c.current;
         if (null != e && null != t) return () => {
             (0, a.$v)(t, e)
         }
-    }, [n, t]), o
+    }, [n, t]), s
 }
 let l = new Map([
     [1, {
@@ -49,6 +49,6 @@ function u(e) {
         a = (0, i.A)(t => {
             e(t.isIntersecting)
         }),
-        s = (0, r.useMemo)(() => c(t), [t]);
-    return o(a.current, s, n)
+        o = (0, r.useMemo)(() => c(t), [t]);
+    return s(a.current, o, n)
 }

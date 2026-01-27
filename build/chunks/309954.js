@@ -2,22 +2,22 @@
 /** chunk id: 309954, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    W: () => o
+    W: () => s
 });
 var r = n(64700),
     i = n(311907),
     a = n(786953),
-    s = n(505274);
+    o = n(505274);
 
-function o() {
+function s() {
     let {
         balance: e,
         isFetching: t,
         error: n
-    } = (0, i.cf)([s.A], () => ({
-        balance: s.A.balance,
-        isFetching: s.A.isFetchingBalance,
-        error: s.A.fetchBalanceError
+    } = (0, i.cf)([o.A], () => ({
+        balance: o.A.balance,
+        isFetching: o.A.isFetchingBalance,
+        error: o.A.fetchBalanceError
     }));
     return (0, r.useEffect)(() => {
         null !== e || null !== n || t || (0, a.Bf)()

@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(947399),
     i = n(687567),
     a = n(756055),
-    s = 0,
-    o = function() {
-        return !!s
+    o = 0,
+    s = function() {
+        return !!o
     },
     l = 12,
     c = {
@@ -35,7 +35,7 @@ var r = n(947399),
                 try {
                     n = (0, r.e)()
                 } finally {
-                    if (d = !1, !o()) return;
+                    if (d = !1, !s()) return;
                     n ? t.run(60) : e ? t.run(e - 1) : t.start()
                 }
             }))
@@ -60,5 +60,5 @@ var r = n(947399),
         }, e
     }()),
     p = function(e) {
-        !s && e > 0 && f.start(), (s += e) || f.stop()
+        !o && e > 0 && f.start(), (o += e) || f.stop()
     }

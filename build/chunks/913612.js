@@ -2,20 +2,20 @@
 /** chunk id: 913612, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    C: () => o,
+    C: () => s,
     K: () => l
 });
 var r = n(64700),
     i = n(506774),
     a = n(942405);
-let s = "systemServiceAutoInstall";
+let o = "systemServiceAutoInstall";
 
-function o() {
-    i.w.set(s, !0)
+function s() {
+    i.w.set(o, !0)
 }
 
 function l() {
     r.useEffect(() => {
-        null == i.w.get(s) && (o(), (0, a.sL)("first-start", !1))
+        null == i.w.get(o) && (s(), (0, a.sL)("first-start", !1))
     }, [])
 }

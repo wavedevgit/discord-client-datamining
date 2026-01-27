@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(49229),
-    o = n(994500),
+    o = n(49229),
+    s = n(994500),
     l = n(287809),
     c = n(652215),
     u = n(985018);
@@ -71,16 +71,15 @@ function h(e) {
     }, [b]), {
         isIgnored: v,
         isBlocked: A
-    } = (0, i.cf)([o.A], () => ({
-        isIgnored: o.A.isIgnored(b),
-        isBlocked: o.A.isBlocked(b)
+    } = (0, i.cf)([s.A], () => ({
+        isIgnored: s.A.isIgnored(b),
+        isBlocked: s.A.isBlocked(b)
     }), [b]);
     return O || A ? null : (0, r.jsx)(a.Drp, {
         id: "ignore",
-        color: "default",
         label: v ? u.intl.string(u.t["8wXU9B"]) : u.intl.string(u.t.ytCpKs),
         action: v ? () => {
-            null == g || g(), s.A.unignoreUser(b, null != E ? E : "use-ignore-user-item-web", null != p ? p : void 0)
+            null == g || g(), o.A.unignoreUser(b, null != E ? E : "use-ignore-user-item-web", null != p ? p : void 0)
         } : () => {
             (0, a.mMO)(async () => {
                 let {

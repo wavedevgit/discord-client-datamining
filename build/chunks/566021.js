@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(110259),
     a = n(397927),
-    s = n(688810),
-    o = n(139286),
+    o = n(688810),
+    s = n(139286),
     l = n(359549),
     c = n(985018);
 
@@ -18,11 +18,11 @@ function u(e) {
         analyticsLocation: n
     } = e, {
         analyticsLocations: u
-    } = (0, s.Ay)(n), d = (0, l.A)({
+    } = (0, o.Ay)(n), d = (0, l.A)({
         application: t,
         analyticsLocations: u
     });
-    (0, o.A)({
+    (0, s.A)({
         name: i.ImpressionNames.CLOUD_PLAY_CTA,
         type: i.ImpressionTypes.VIEW,
         properties: {

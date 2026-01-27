@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(308528),
-    s = n(367513),
-    o = n(584682),
+    o = n(367513),
+    s = n(584682),
     l = n(734057),
     c = n(976860),
     u = n(652215);
@@ -40,15 +40,15 @@ function f(e) {
 function p(e, t) {
     let n = l.A.getChannel(e);
     if (null == n) return;
-    let r = (0, o.j)(n);
+    let r = (0, s.j)(n);
     a.A.preload(n.guild_id, n.id), (0, c.pX)(u.BVt.CHANNEL(r, n.id), f({
         openChannel: !0
-    }, t)), (null == t ? void 0 : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && s.A.updateChatOpen(n.id, !0)
+    }, t)), (null == t ? void 0 : t.openTextInVoiceIfVoiceChannel) && n.isGuildVocal() && o.A.updateChatOpen(n.id, !0)
 }
 
 function _(e, t) {
     i()(null != e.parent_id, "Thread must have a parent ID.");
-    let n = (0, o.j)(e);
+    let n = (0, s.j)(e);
     (0, c.pX)(u.BVt.CHANNEL(n, e.id), f({
         openChannel: !0
     }, t))
@@ -57,7 +57,7 @@ function _(e, t) {
 function h(e, t, n) {
     let r = l.A.getChannel(e);
     if (null == r) return;
-    let i = (0, o.j)(r);
+    let i = (0, s.j)(r);
     (0, c.pX)(u.BVt.CHANNEL(i, r.id, t), f({
         openChannel: !0
     }, n))

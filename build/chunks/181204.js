@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 181204, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Qm: "recorderContainer__2636e " + n(131731).kL,
     Qz: "containerDisabled__2636e " + n(131731).r9,

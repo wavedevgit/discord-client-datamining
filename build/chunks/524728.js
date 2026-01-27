@@ -1,7 +1,7 @@
 /** Chunk was on 90948 **/
 /** chunk id: 524728, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => f
 }), n(896048);
 var i = n(627968),
     r = n(64700),
@@ -36,14 +36,14 @@ function m(e) {
     })
 }
 
-function x(e) {
+function f(e) {
     let {
         quest: t,
         sourceQuestContent: n,
         transitionState: a,
         onClose: c,
-        rewardContent: x,
-        isRewardContentLoading: f,
+        rewardContent: f,
+        isRewardContentLoading: x,
         rewardContentHasError: _,
         location: g
     } = e, v = l.uF.REWARD_MODAL, [h, j] = r.useState(!0);
@@ -51,7 +51,7 @@ function x(e) {
         onClose: c,
         transitionState: a
     });
-    let p = f || h;
+    let p = x || h;
     return (0, i.jsx)(o.R, {
         questOrQuests: t,
         questContent: v,
@@ -80,7 +80,7 @@ function x(e) {
                         className: u.jE,
                         children: [(0, i.jsx)("div", {
                             className: u._H,
-                            children: x
+                            children: f
                         }), (0, i.jsx)("div", {
                             className: u.xK,
                             children: (0, i.jsx)(d.A, {

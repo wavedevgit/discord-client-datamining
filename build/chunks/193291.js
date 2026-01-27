@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 193291, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Nr: "card__5cea9",
     wx: "header__5cea9",

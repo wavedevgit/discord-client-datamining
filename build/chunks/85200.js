@@ -1,45 +1,44 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 85200, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => h
+    A: () => g
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(311907),
+    l = n(311907),
     s = n(625841),
-    o = n(74848),
-    l = n(430452),
+    a = n(74848),
+    o = n(430452),
     c = n(723702),
-    u = n(801264),
-    d = n(731854),
-    f = n(985018),
+    d = n(801264),
+    u = n(731854),
+    _ = n(985018),
     p = n(637462);
-let _ = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
+let m = c.isWindows() ? ["BTHENUM", "BTHHFENUM"] : [];
 
-function h() {
+function g() {
     var e, t;
     let {
         canSetInputDevice: n,
         canSetOutputDevice: c
-    } = (0, a.cf)([l.A], () => ({
-        canSetInputDevice: l.A.supports(d.O5.AUDIO_INPUT_DEVICE),
-        canSetOutputDevice: l.A.supports(d.O5.AUDIO_OUTPUT_DEVICE)
-    })), h = (0, o.x5)(d.oh.AUDIO_INPUT), m = (0, o.x5)(d.oh.AUDIO_OUTPUT), [g, E] = (0, o.tR)(d.oh.AUDIO_INPUT, {
+    } = (0, l.cf)([o.A], () => ({
+        canSetInputDevice: o.A.supports(u.O5.AUDIO_INPUT_DEVICE),
+        canSetOutputDevice: o.A.supports(u.O5.AUDIO_OUTPUT_DEVICE)
+    })), g = (0, a.x5)(u.oh.AUDIO_INPUT), A = (0, a.x5)(u.oh.AUDIO_OUTPUT), [f, h] = (0, a.tR)(u.oh.AUDIO_INPUT, {
         location: "UserSettingsDevices"
-    }), [y, b] = (0, o.tR)(d.oh.AUDIO_OUTPUT, {
+    }), [b, E] = (0, a.tR)(u.oh.AUDIO_OUTPUT, {
         location: "UserSettingsDevices"
-    }), O = g.concat(E), v = y.concat(b), A = i.useMemo(() => {
-        let e = _.some(e => {
+    }), x = f.concat(h), O = b.concat(E), C = i.useMemo(() => {
+        let e = m.some(e => {
                 var t;
-                return null == h || null == (t = h.hardwareId) ? void 0 : t.startsWith(e)
+                return null == g || null == (t = g.hardwareId) ? void 0 : t.startsWith(e)
             }),
-            t = _.some(e => {
+            t = m.some(e => {
                 var t;
-                return null == m || null == (t = m.hardwareId) ? void 0 : t.startsWith(e)
+                return null == A || null == (t = A.hardwareId) ? void 0 : t.startsWith(e)
             });
-        return e && t && (null == h ? void 0 : h.containerId) != null && h.containerId === (null == m ? void 0 : m.containerId)
-    }, [h, m]), I = O[0], S = v[0], T = null != (e = null == I ? void 0 : I.disabled) ? e : !n, C = null != (t = null == S ? void 0 : S.disabled) ? t : !c;
+        return e && t && (null == g ? void 0 : g.containerId) != null && g.containerId === (null == A ? void 0 : A.containerId)
+    }, [g, A]), I = x[0], T = O[0], S = null != (e = null == I ? void 0 : I.disabled) ? e : !n, j = null != (t = null == T ? void 0 : T.disabled) ? t : !c;
     return (0, r.jsxs)("div", {
         className: p.y0,
         children: [(0, r.jsxs)("div", {
@@ -47,25 +46,25 @@ function h() {
             children: [(0, r.jsx)("div", {
                 className: p.fi,
                 children: (0, r.jsx)(s.U, {
-                    label: f.intl.string(f.t.hHMYbb),
-                    deviceType: d.oh.AUDIO_INPUT,
+                    label: _.intl.string(_.t.hHMYbb),
+                    deviceType: u.oh.AUDIO_INPUT,
                     location: "UserSettingsDevices",
                     hideDeviceTypeIcon: !0,
-                    isDisabled: T
+                    isDisabled: S
                 })
             }), (0, r.jsx)("div", {
                 className: p.fi,
                 children: (0, r.jsx)(s.U, {
-                    label: f.intl.string(f.t.dl18zb),
-                    deviceType: d.oh.AUDIO_OUTPUT,
+                    label: _.intl.string(_.t.dl18zb),
+                    deviceType: u.oh.AUDIO_OUTPUT,
                     location: "UserSettingsDevices",
                     hideDeviceTypeIcon: !0,
-                    isDisabled: C
+                    isDisabled: j
                 })
             })]
-        }), A && (0, r.jsx)(u.A, {
-            look: u.k.WARNING,
-            children: f.intl.string(f.t.Ioz3gx)
+        }), C && (0, r.jsx)(d.A, {
+            look: d.k.WARNING,
+            children: _.intl.string(_.t.Ioz3gx)
         })]
     })
 }

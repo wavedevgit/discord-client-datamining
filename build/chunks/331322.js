@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(855036),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(855036),
+    l = n.n(s),
     c = n(927556);
 
 function u(e, t, n) {
@@ -73,7 +73,7 @@ function h(e, t) {
 let m = i.forwardRef(function(e, t) {
         let [n, ...i] = [e, t], {
             as: a = "div",
-            gap: o = 8,
+            gap: s = 8,
             direction: l = "vertical",
             align: u = "stretch",
             justify: f = "start",
@@ -91,9 +91,9 @@ let m = i.forwardRef(function(e, t) {
             "data-direction": l,
             "data-wrap": h,
             "data-full-width": y,
-            className: s()(c.t, O),
+            className: o()(c.t, O),
             style: d(p(d({}, b), {
-                gap: g(o)
+                gap: g(s)
             }), E(m))
         }, A), {
             children: v

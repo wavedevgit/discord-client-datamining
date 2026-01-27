@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(108531),
     a = n(421380),
-    s = n(397927),
-    o = n(263063),
+    o = n(397927),
+    s = n(263063),
     l = n(721923),
     c = n(652215),
     u = n(12373);
@@ -18,7 +18,7 @@ let d = function(e) {
         closeLayer: t,
         guild: n,
         isVisible: d
-    } = e, f = (0, s.zhh)({
+    } = e, f = (0, o.zhh)({
         transform: d ? "translateY(-100%)" : "translateY(0%)",
         config: {
             tension: 120,
@@ -32,11 +32,11 @@ let d = function(e) {
             className: u.iJ,
             children: [(0, r.jsxs)("div", {
                 className: u.OA,
-                children: [(0, r.jsx)(o.A, {
+                children: [(0, r.jsx)(s.A, {
                     className: u.$f,
                     guild: n,
-                    size: o.A.Sizes.SMALL
-                }), (0, r.jsx)(s.Text, {
+                    size: s.A.Sizes.SMALL
+                }), (0, r.jsx)(o.Text, {
                     className: u.J5,
                     variant: "text-md/semibold",
                     children: n.name

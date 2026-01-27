@@ -4,8 +4,8 @@
 var r = n(741623),
     i = n(315646),
     a = n(363364),
-    s = n(12161),
-    o = n(158056) || s || a;
+    o = n(12161),
+    s = n(158056) || o || a;
 e.exports = function() {
     var e, t = {
         assert: function(e) {
@@ -21,7 +21,7 @@ e.exports = function() {
             return !!e && e.has(t)
         },
         set: function(t, n) {
-            e || (e = o()), e.set(t, n)
+            e || (e = s()), e.set(t, n)
         }
     };
     return t

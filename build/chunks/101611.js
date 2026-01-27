@@ -9,16 +9,16 @@ n.d(t, {
 var r = n(665260),
     i = n(417597),
     a = n(696451),
-    s = n(701785),
-    o = n(65995),
+    o = n(701785),
+    s = n(65995),
     l = n(978165),
     c = n(340837);
 
 function u(e, t) {
     var n;
     let r = (0, l.A)(e),
-        a = (0, i.bG)([s.h], () => s.h.getNewMemberActions(e), [e]),
-        c = (0, i.bG)([o.A], () => o.A.getCompletedActions(e));
+        a = (0, i.bG)([o.h], () => o.h.getNewMemberActions(e), [e]),
+        c = (0, i.bG)([s.A], () => s.A.getCompletedActions(e));
     if (!r) return {};
     let u = null != (n = null == a ? void 0 : a.findIndex(e => e.channelId === t.id)) ? n : 0,
         d = u >= 0 && null != a ? a[u] : null,
@@ -30,8 +30,8 @@ function u(e, t) {
 }
 
 function d(e, t) {
-    let n = (0, i.bG)([s.h], () => s.h.getNewMemberActions(e)),
-        r = (0, i.bG)([o.A], () => o.A.getCompletedActions(e));
+    let n = (0, i.bG)([o.h], () => o.h.getNewMemberActions(e)),
+        r = (0, i.bG)([s.A], () => s.A.getCompletedActions(e));
     return null == n ? void 0 : n.find(e => (null == r ? void 0 : r[e.channelId]) !== !0 && e.channelId !== t)
 }
 

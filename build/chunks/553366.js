@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(401843),
     i = n(439372),
     a = n(616356),
-    s = n(320501),
-    o = n(661191),
+    o = n(320501),
+    s = n(661191),
     l = n(680724),
     c = n(25528),
     u = n(820672),
@@ -32,8 +32,8 @@ class p extends i.A {
             if (null == e.channelId || !0 !== e.selfStream) continue;
             let t = l.A.getPendingRequestForUser(e.userId);
             if (null == t) continue;
-            let f = s.A.getMessage(e.channelId, t);
-            if ((null == f || null == (n = f.activity) ? void 0 : n.type) !== d.xL.STREAM_REQUEST || (null == (i = f.application) ? void 0 : i.id) == null || o.default.extractTimestamp(t) < Date.now() - u.M || null == (0, c.n)(e.userId, e.guildId).find(e => {
+            let f = o.A.getMessage(e.channelId, t);
+            if ((null == f || null == (n = f.activity) ? void 0 : n.type) !== d.xL.STREAM_REQUEST || (null == (i = f.application) ? void 0 : i.id) == null || s.default.extractTimestamp(t) < Date.now() - u.M || null == (0, c.n)(e.userId, e.guildId).find(e => {
                     var t;
                     return (null == (t = f.application) ? void 0 : t.id) != null && e.application_id === f.application.id
                 })) continue;

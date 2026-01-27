@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(607399),
     i = n(136722),
     a = n(200330),
-    s = n(954571),
-    o = n(307600),
+    o = n(954571),
+    s = n(307600),
     l = n(652215);
 
 function c(e) {
@@ -25,19 +25,19 @@ function c(e) {
         oauth2Callback: h
     } = e;
     if (null != n) {
-        s.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
+        o.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: t,
             guild_id: d,
             auth_type: "custom_url",
             source: _,
             device_platform: r.Fr ? "mobile_web" : "desktop_web"
-        }), (0, o.h)({
+        }), (0, s.h)({
             href: n
         });
         return
     }
     if (null != u && Object.values(u).some(e => (null == e ? void 0 : e.oauth2_install_params) != null || (null == e ? void 0 : e.oauth2InstallParams) != null)) {
-        s.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
+        o.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
             application_id: t,
             guild_id: d,
             auth_type: "in_app",
@@ -52,7 +52,7 @@ function c(e) {
         });
         return
     }
-    null != c && (s.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
+    null != c && (o.default.track(l.HAw.APPLICATION_ADD_TO_SERVER_CLICKED, {
         application_id: t,
         guild_id: d,
         auth_type: "in_app",

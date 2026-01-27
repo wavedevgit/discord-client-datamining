@@ -2,22 +2,22 @@
 /** chunk id: 405018, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o,
+    A: () => s,
     M: () => l
 });
 var r = n(311907),
     i = n(71393),
     a = n(607567),
-    s = n(652215);
+    o = n(652215);
 
-function o(e) {
+function s(e) {
     return (0, r.cf)([a.Ay, i.A], () => {
         let t = a.Ay.countVoiceStatesForChannel(e.id),
             n = i.A.getGuild(e.getGuildId());
         return null == n ? {
             reachedLimit: !1,
             limit: -1
-        } : e.type === s.rbe.GUILD_STAGE_VOICE ? {
+        } : e.type === o.rbe.GUILD_STAGE_VOICE ? {
             reachedLimit: t > n.maxStageVideoChannelUsers,
             limit: n.maxStageVideoChannelUsers
         } : {
@@ -33,7 +33,7 @@ function l(e) {
     return null == n ? {
         reachedLimit: !1,
         limit: -1
-    } : e.type === s.rbe.GUILD_STAGE_VOICE ? {
+    } : e.type === o.rbe.GUILD_STAGE_VOICE ? {
         reachedLimit: t > n.maxStageVideoChannelUsers,
         limit: n.maxStageVideoChannelUsers
     } : {

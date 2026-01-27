@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048), n(65821);
 var r, i = n(64700),
     a = n(835245),
-    s = n(313271);
+    o = n(313271);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -51,7 +51,7 @@ class d extends(r = i.Component) {
         return i.Children.only(this.props.children)
     }
     constructor(e) {
-        super(e), o(this, "elementId", void 0), o(this, "isVisible", !1);
+        super(e), s(this, "elementId", void 0), s(this, "isVisible", !1);
         const {
             root: t,
             rootMargin: n,
@@ -59,14 +59,14 @@ class d extends(r = i.Component) {
         } = e;
         t ? c.has(t) ? this.elementId = c.get(t) || "" : c.set(t, (0, a.A)()) : this.elementId = l;
         const i = this.getVisibilityObserverId();
-        u.has(i) || u.set(i, new s.j({
+        u.has(i) || u.set(i, new o.j({
             root: t,
             rootMargin: n,
             threshold: r
         }))
     }
 }
-o(d, "defaultProps", {
+s(d, "defaultProps", {
     active: !0,
     children: i.createElement("span"),
     root: null,

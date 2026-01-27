@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(732955),
-    s = n(397927),
-    o = n(701273),
+    o = n(397927),
+    s = n(701273),
     l = n(71393),
     c = n(602461),
     u = n(985018),
@@ -25,14 +25,14 @@ let f = e => {
     });
     return (0, r.jsxs)("div", {
         className: d.RP,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
             className: d.RS,
             variant: "heading-lg/extrabold",
             children: u.intl.format(u.t.I5dYFs, {
                 serverName: null == p ? void 0 : p.name,
                 tierName: n.name
             })
-        }), !_.isEmpty() && (0, r.jsx)(s.Text, {
+        }), !_.isEmpty() && (0, r.jsx)(o.Text, {
             className: d.sT,
             variant: "text-sm/normal",
             color: "text-default",
@@ -45,7 +45,7 @@ let f = e => {
                 variant: "primary",
                 text: u.intl.string(u.t.WWvswD),
                 fullWidth: !0,
-                onClick: () => (0, o.A)("role_sub_mweb_success_modal")
+                onClick: () => (0, s.A)("role_sub_mweb_success_modal")
             }), (0, r.jsx)(a.$nd, {
                 variant: "secondary",
                 text: u.intl.string(u.t.y84Dhr),

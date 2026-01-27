@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 717965, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => ey
@@ -29,7 +29,7 @@ var r = n(627968),
     C = n(931991),
     S = n(151476),
     I = n(405018),
-    N = n(927258),
+    N = n(704877),
     T = n(173660),
     P = n(105225),
     w = n(579153),
@@ -180,7 +180,7 @@ function ef(e) {
             } = e;
             return (0, r.jsx)(M.A, {
                 children: (0, r.jsx)(a.W1t, {
-                    "data-menu-all-icons": !0,
+                    "data-menu-migrated": !0,
                     navId: "exit-options",
                     "aria-label": eo.intl.string(eo.t["3Uj+2p"]),
                     onClose: l,
@@ -193,7 +193,11 @@ function ef(e) {
                         color: "danger",
                         action: () => (0, W.$q)(t, s),
                         label: eo.intl.string(eo.t["Fmx5y/"]),
-                        icon: a.aXh
+                        icon: a.aXh,
+                        leadingAccessory: {
+                            type: "icon",
+                            icon: a.aXh
+                        }
                     })
                 })
             })

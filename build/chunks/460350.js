@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(157559),
     a = n(884384),
-    s = n(101392),
-    o = n(287809),
+    o = n(101392),
+    s = n(287809),
     l = n(954571),
     c = n(565579),
     u = n(927578),
@@ -33,7 +33,7 @@ function _(e) {
     var t;
     let {
         openWarningPopout: n,
-        type: o,
+        type: s,
         content: l,
         stickers: u,
         uploads: _,
@@ -43,7 +43,7 @@ function _(e) {
         userCanUsePremiumMessageLength: E,
         resolve: y
     } = e;
-    if (0 === l.length && !(null == (t = o.submit) ? void 0 : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void y({
+    if (0 === l.length && !(null == (t = s.submit) ? void 0 : t.allowEmptyMessage) && (null == u || 0 === u.length) && (null == _ || 0 === _.length)) return void y({
         valid: !1,
         failureReason: d.X8x.EMPTY_MESSAGE
     });
@@ -61,7 +61,7 @@ function _(e) {
         return
     }
     if (null != h) {
-        if (null != h.getGuildId() && g && s.A.getSlowmodeCooldownGuess(h.id) > 0) return void y({
+        if (null != h.getGuildId() && g && o.A.getSlowmodeCooldownGuess(h.id) > 0) return void y({
             valid: !1,
             failureReason: d.X8x.SLOWMODE_COOLDOWN
         });
@@ -111,17 +111,17 @@ function h(e) {
         content: r,
         stickers: i,
         uploads: a,
-        channel: s,
+        channel: o,
         restrictMentions: l = !0,
         respectCooldown: c = !0
-    } = e, d = u.Ay.canUseIncreasedMessageLength(o.default.getCurrentUser());
+    } = e, d = u.Ay.canUseIncreasedMessageLength(s.default.getCurrentUser());
     return new Promise(e => _({
         openWarningPopout: t,
         type: n,
         content: r,
         stickers: i,
         uploads: a,
-        channel: s,
+        channel: o,
         restrictMentions: l,
         respectCooldown: c,
         userCanUsePremiumMessageLength: d,

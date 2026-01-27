@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 461678, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => h
@@ -26,7 +26,7 @@ function h(e) {
         includeGuildMute: b
     } = e, A = (0, a.b)(t), y = (0, o.A0)(t), _ = (0, l.bG)([p.A], () => p.A.getGuild(t.guild_id)), O = (0, c.A)(_), j = (0, u.os)("ChannelNotificationSettingsPopoutMenu") && d.B4.has(t.type);
     return (0, r.jsxs)(i.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-migrated": !0,
         navId: f,
         onClose: n,
         "aria-label": g,

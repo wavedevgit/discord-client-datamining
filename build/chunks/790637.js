@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     D5: () => a,
-    Nf: () => s
+    Nf: () => o
 });
 let r = !1,
     i = !1;
@@ -12,6 +12,6 @@ function a() {
     return r
 }
 
-function s() {
+function o() {
     return i
 }

@@ -7,9 +7,9 @@ n.d(t, {
     Zs: () => h
 }), n(896048), n(747238), n(812715);
 var a = n(424899),
-    s = n.n(a),
-    o = n(280230),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(280230),
+    l = n.n(s),
     c = n(473598),
     u = n(906049);
 
@@ -45,7 +45,7 @@ class f {
         return [t, r]
     }
     constructor(e, t, n) {
-        d(this, "message", void 0), d(this, "hasMarkdown", void 0), d(this, "intlMessage", void 0), this.message = n ? e : e.replace(u.jx, ""), this.hasMarkdown = n, this.intlMessage = new(s())(this.message, t)
+        d(this, "message", void 0), d(this, "hasMarkdown", void 0), d(this, "intlMessage", void 0), this.message = n ? e : e.replace(u.jx, ""), this.hasMarkdown = n, this.intlMessage = new(o())(this.message, t)
     }
 }
 

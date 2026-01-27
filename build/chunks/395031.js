@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 395031, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ys: () => o
-}), n(747238);
-var r = n(64700),
-    i = n(311907),
-    a = n(508675);
-let s = /^<(a?):(\w+):(\d+)>/;
+/** Chunk was on 94857 **/
+/** chunk id: 395031, original params: e,s,t (module,exports,require) **/
+t.d(s, {
+    Ys: () => r
+}), t(747238);
+var n = t(64700),
+    l = t(311907),
+    a = t(508675);
+let i = /^<(a?):(\w+):(\d+)>/;
 
-function o(e) {
-    let t = r.useMemo(() => {
-        var t;
-        return null == (t = s.exec(e)) ? void 0 : t[3]
+function r(e) {
+    let s = n.useMemo(() => {
+        var s;
+        return null == (s = i.exec(e)) ? void 0 : s[3]
     }, [e]);
-    return (0, i.bG)([a.Ay], () => null == t ? null : a.Ay.getCustomEmojiById(t))
+    return (0, l.bG)([a.Ay], () => null == s ? null : a.Ay.getCustomEmojiById(s))
 }

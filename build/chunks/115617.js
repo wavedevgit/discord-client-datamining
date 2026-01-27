@@ -1,23 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 115617, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => a
 }), n(747238);
 var r = n(627968),
     i = n(64700),
-    a = n(641324),
+    l = n(641324),
     s = n(68713);
-
-function o(e) {
+let a = i.memo(function(e) {
     let {
         node: t
     } = e;
     return (0, r.jsx)("div", {
         className: s.l,
-        children: t.layout.map(e => (0, r.jsx)(a.A, {
+        children: t.layout.map(e => (0, r.jsx)(l.A, {
             node: e
         }, e.key))
     })
-}
-let l = i.memo(o)
+})

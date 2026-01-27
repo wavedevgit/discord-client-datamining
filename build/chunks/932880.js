@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(206471),
     a = n(397927),
-    s = n(860606);
+    o = n(860606);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -50,9 +50,9 @@ function u(e, t) {
 
 function d(e) {
     return (0, r.jsx)(a.ArX, {
-        className: s.H,
+        className: o.H,
         children: Object.values(i.O).map(t => (0, r.jsxs)(a.ZpM, {
-            className: s.N,
+            className: o.N,
             children: [(0, r.jsx)(a.Text, u(l({}, e), {
                 variant: t,
                 children: e.children

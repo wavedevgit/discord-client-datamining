@@ -12,15 +12,15 @@ try {
 }
 if (i && r) {
     var a = {},
-        s = {};
-    i(s, "length", {
+        o = {};
+    i(o, "length", {
         "[[Get]]": function() {
             throw a
         },
         "[[Enumerable]]": !0
     }), e.exports = function(e) {
         try {
-            r(e, s)
+            r(e, o)
         } catch (e) {
             return e === a
         }

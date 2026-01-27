@@ -10,8 +10,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(765379),
-    s = n(471107),
-    o = n(506326),
+    o = n(471107),
+    s = n(506326),
     l = n(693879),
     c = n(583846),
     u = n(53257),
@@ -28,12 +28,12 @@ function p(e) {
         activity: p
     } = e, _ = null != (t = null == (a = p.timestamps) ? void 0 : a.start) ? t : p.created_at, {
         now: h
-    } = (0, s.G)();
+    } = (0, o.G)();
     if (null == _ || (0, u.A)(p)) return null;
     let m = null == (c = p.timestamps) ? void 0 : c.end,
         g = null != (n = null == (d = p.timestamps) ? void 0 : d.isCountDown) && n,
         E = f(p, g && null != m && m > h);
-    return (0, r.jsxs)(o.er, {
+    return (0, r.jsxs)(s.er, {
         children: [(0, r.jsx)(E, {
             size: "xxs",
             color: i.LU0.colors.TEXT_FEEDBACK_POSITIVE
@@ -55,7 +55,7 @@ function _(e) {
     } = e;
     if ((0, a.A)(t) || null == t.party) return null;
     let n = (0, c.gF)(t.state, t.party);
-    return null == n ? null : (0, r.jsx)(o.fM, {
+    return null == n ? null : (0, r.jsx)(s.fM, {
         Icon: i.nFg,
         text: n
     })
@@ -66,7 +66,7 @@ function h(e) {
     let {
         activity: n
     } = e, a = (0, c.kR)(null == (t = n.assets) ? void 0 : t.large_text);
-    return null == a ? null : (0, r.jsx)(o.fM, {
+    return null == a ? null : (0, r.jsx)(s.fM, {
         Icon: i.Kck,
         text: a
     })

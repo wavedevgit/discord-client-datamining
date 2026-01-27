@@ -2,20 +2,20 @@
 /** chunk id: 696459, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(562465),
     i = n(73153),
     a = n(29599),
-    s = n(652215);
-let o = {
+    o = n(652215);
+let s = {
     search(e, t) {
         null == a.A.getResults(e, t) && (i.h.dispatch({
             type: "INTEGRATION_QUERY",
             integration: e,
             query: t
         }), r.Bo.get({
-            url: s.Rsh.INTEGRATION_SEARCH("tenor"),
+            url: o.Rsh.INTEGRATION_SEARCH("tenor"),
             query: {
                 q: t
             },

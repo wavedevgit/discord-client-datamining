@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 264140, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => ts
@@ -849,12 +849,12 @@ let ti = (0, _.A)(tl),
         (0, C.A)({
             onTransition: void 0
         }), l.useEffect(() => {
-            var e, t, n;
-            let r = (0, eg.JK)();
-            if ((null == r || null == (e = r.location) ? void 0 : e.state) === e5.J2) {
+            var e, t, n, r;
+            let l = (0, eg.JK)();
+            if ((null == l || null == (t = l.location) || null == (e = t.state) ? void 0 : e.stageInviteKey) === e5.J2) {
                 let {
                     channelId: e
-                } = null != (t = (0, eu.vu)(null == r || null == (n = r.location) ? void 0 : n.pathname)) ? t : {};
+                } = null != (n = (0, eu.vu)(null == l || null == (r = l.location) ? void 0 : r.pathname)) ? n : {};
                 null != e && s(e)
             }
         }, []);

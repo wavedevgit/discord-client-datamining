@@ -5,9 +5,9 @@ n.d(t, {
     Y: () => E
 }), n(896048);
 var r, i, a = n(627968),
-    s = n(64700),
-    o = n(503698),
-    l = n.n(o),
+    o = n(64700),
+    s = n(503698),
+    l = n.n(s),
     c = n(615300),
     u = n(158954),
     d = n(73939),
@@ -51,7 +51,7 @@ function m(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class g extends(r = s.PureComponent) {
+class g extends(r = o.PureComponent) {
     componentDidMount() {
         if (null != this._measureRef.current) {
             let {
@@ -165,14 +165,14 @@ class g extends(r = s.PureComponent) {
             animationProgress: r,
             animationState: i,
             baseHeight: a,
-            targetHeight: s
-        } = this.state, o = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
+            targetHeight: o
+        } = this.state, s = null != (e = this.props.sideMargin) ? e : 0, l = null != (t = this.props.verticalMargin) ? t : 0, u = 1 === i, d = 0 === i;
         return m(_({}, {
             overflow: d || u ? "hidden" : "visible",
             position: u ? "absolute" : void 0,
             top: u ? l : void 0,
-            left: u ? o : void 0,
-            right: u ? o : void 0,
+            left: u ? s : void 0,
+            right: u ? s : void 0,
             bottom: u ? l : void 0
         }, this.getMotionAnimation()), {
             opacity: r.interpolate({
@@ -183,7 +183,7 @@ class g extends(r = s.PureComponent) {
             }),
             height: d ? r.interpolate({
                 inputRange: [0, 1],
-                outputRange: [a, s],
+                outputRange: [a, o],
                 extrapolate: "clamp",
                 easing: c.A.Easing.inOut(c.A.Easing.ease)
             }) : n ? "100%" : "auto"
@@ -224,13 +224,13 @@ class g extends(r = s.PureComponent) {
             targetHeight: 0,
             baseHeight: 0,
             animationState: null
-        }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", s.createRef())
+        }), p(this, "direction", this.props.getDirection()), p(this, "_measureRef", o.createRef())
     }
 }
 p(g, "contextType", u.CZY), p(g, "defaultProps", {
     duration: 300
 });
-class E extends(i = s.Component) {
+class E extends(i = o.Component) {
     componentDidMount() {
         this.setPrevSteps()
     }
@@ -251,8 +251,8 @@ class E extends(i = s.Component) {
             className: n,
             innerClassName: r,
             animatedNodeClassName: i,
-            staticClassName: s,
-            sideMargin: o,
+            staticClassName: o,
+            sideMargin: s,
             verticalMargin: c,
             children: u,
             fillParent: p,
@@ -263,14 +263,14 @@ class E extends(i = s.Component) {
             className: l()(f.NK, n),
             children: (0, a.jsx)(g, {
                 fillParent: p,
-                sideMargin: o,
+                sideMargin: s,
                 animationMotionType: null != _ ? _ : "slide",
                 verticalMargin: c,
                 getDirection: this.getDirection,
                 getBaseHeight: this.getBaseHeight,
                 className: r,
                 animatedNodeClassName: i,
-                staticClassName: s,
+                staticClassName: o,
                 setHeight: this.setHeight,
                 children: u
             }, null != e ? e : "".concat(t))

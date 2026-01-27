@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(235986),
     c = n(967626);
 class u extends i.PureComponent {
@@ -20,7 +20,7 @@ class u extends i.PureComponent {
             className: i
         } = this.props;
         return (0, r.jsx)("div", {
-            className: s()(c.iE, i),
+            className: o()(c.iE, i),
             children: (0, r.jsxs)(l.A, {
                 className: c.Bo,
                 direction: l.A.Direction.VERTICAL,
@@ -32,7 +32,7 @@ class u extends i.PureComponent {
                 }), (0, r.jsxs)(l.A.Child, {
                     grow: 0,
                     className: c.Qq,
-                    children: [(0, r.jsx)(o.H, {
+                    children: [(0, r.jsx)(s.H, {
                         className: c.DD,
                         children: t
                     }), null != e ? (0, r.jsx)("div", {

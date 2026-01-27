@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(775602),
     u = n(22423);
 
 function d() {
-    let e = (0, o.bG)([c.A], () => c.A.useReducedMotion),
+    let e = (0, s.bG)([c.A], () => c.A.useReducedMotion),
         {
             styleLarge: t,
             styleSmall: n
@@ -27,7 +27,7 @@ function d() {
             }
         }), []);
     return (0, r.jsxs)("div", {
-        className: s()(u.kL, {
+        className: o()(u.kL, {
             [u.cb]: e
         }),
         children: [(0, r.jsx)("div", {

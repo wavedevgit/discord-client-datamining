@@ -6,8 +6,8 @@ r.d(t, {
 var n = r(627968);
 r(64700);
 var o = r(311907),
-    i = r(397927),
-    l = r(997509),
+    l = r(397927),
+    i = r(997509),
     c = r(931991),
     a = r(71393),
     u = r(652215),
@@ -19,11 +19,11 @@ function b(e, t) {
             canCreateExpressions: b,
             canManageAllExpressions: p
         } = (0, c.nr)(r);
-    return null != e && b && p ? (0, n.jsx)(i.Drp, {
+    return null != e && b && p ? (0, n.jsx)(l.Drp, {
         id: s.intl.string(s.t["154/bL"]),
         label: s.intl.string(s.t["154/bL"]),
         action: () => {
-            l.A.open(e, u.BEX.SOUNDBOARD), null == t || t()
+            i.A.open(e, u.BEX.SOUNDBOARD), null == t || t()
         }
     }) : null
 }

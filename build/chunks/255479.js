@@ -2,12 +2,12 @@
 /** chunk id: 255479, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => s
+    S: () => o
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(158954);
-let s = {
+let o = {
     title: "TabBar",
     stories: [{
         id: "tabbar",
@@ -16,9 +16,9 @@ let s = {
             let {
                 look: t,
                 type: n,
-                tabCount: s
-            } = e, [o, l] = i.useState("tab1"), c = Array.from({
-                length: s
+                tabCount: o
+            } = e, [s, l] = i.useState("tab1"), c = Array.from({
+                length: o
             }, (e, t) => ({
                 id: "tab".concat(t + 1),
                 name: "Tab ".concat(t + 1)
@@ -26,7 +26,7 @@ let s = {
             return (0, r.jsx)(a.VQ0, {
                 type: n,
                 look: t,
-                selectedItem: o,
+                selectedItem: s,
                 onItemSelect: l,
                 children: c.map(e => (0, r.jsx)(a.VQ0.Item, {
                     id: e.id,

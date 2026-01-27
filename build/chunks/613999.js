@@ -10,9 +10,9 @@ n.d(t, {
 var r = n(543531),
     i = n(407689),
     a = n(853742),
-    s = n(759735);
+    o = n(759735);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -39,17 +39,17 @@ function d(e) {
         channelId: n,
         sessionId: r,
         trackedFeedItems: i,
-        isForcedFlush: s
-    } = e, o = [], l = [];
+        isForcedFlush: o
+    } = e, s = [], l = [];
     for (let e of Object.keys(i)) {
-        let t = i[e].computeSeenTimeDestructive(s);
-        t > 0 && (o.push(e), l.push(t))
+        let t = i[e].computeSeenTimeDestructive(o);
+        t > 0 && (s.push(e), l.push(t))
     }
-    0 !== o.length && (0, a.Z_)({
+    0 !== s.length && (0, a.Z_)({
         guildId: t,
         channelId: n,
         sessionId: r,
-        postIds: o,
+        postIds: s,
         additionalTimes: l
     })
 }
@@ -64,7 +64,7 @@ class f extends i.id {
             windowId: n,
             isPaused: r,
             id: l(t)
-        }), o(this, "guildId", void 0), o(this, "channelId", void 0), o(this, "sessionId", void 0), o(this, "createFlushSeenItemsFunction", e => {
+        }), s(this, "guildId", void 0), s(this, "channelId", void 0), s(this, "sessionId", void 0), s(this, "createFlushSeenItemsFunction", e => {
             let t = this.trackedFeedItems,
                 n = this.channelId,
                 r = {
@@ -75,6 +75,6 @@ class f extends i.id {
                     isForcedFlush: null != e
                 };
             return () => d(r)
-        }), this.guildId = e, this.channelId = t, this.sessionId = (0, s.cr)(t)
+        }), this.guildId = e, this.channelId = t, this.sessionId = (0, o.cr)(t)
     }
 }

@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 639555, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96430 **/
+/** chunk id: 639555, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     Rv: () => i
 });
 let r = (0, n(600975).C)({
@@ -20,13 +19,13 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function i(t) {
     let {
-        location: t
-    } = e, {
+        location: e
+    } = t, {
         enabled: n
     } = r.useExperiment({
-        location: t
+        location: e
     }, {
         autoTrackExposure: !1
     });

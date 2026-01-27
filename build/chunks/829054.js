@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 829054, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     l3: "slideAnimator_f8824b",
     hw: "hideButton_f8824b",

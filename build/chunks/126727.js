@@ -1,91 +1,87 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 126727, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => d
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(397927),
-    s = n(155718),
-    o = n(207963),
-    l = n(969508),
+    i = n(155718),
+    s = n(207963),
+    o = n(969508),
     c = n(717820);
 
-function u(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function d(e) {
+function u(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            u(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
 }
 
-function f(e) {
+function d(e) {
     let t, {
             type: n,
-            style: u,
-            label: f,
-            placeholder: p,
-            minLength: _,
+            style: d,
+            label: m,
+            placeholder: f,
+            minLength: p,
             maxLength: h,
-            required: m,
+            required: b,
             value: g
         } = e,
-        [E, y] = i.useState(null != g ? g : ""),
+        [x, y] = l.useState(null != g ? g : ""),
         {
-            state: b,
-            executeStateUpdate: O,
-            error: v
-        } = (0, o.At)(e, null != g ? {
+            state: v,
+            executeStateUpdate: j,
+            error: C
+        } = (0, s.At)(e, null != g ? {
             type: n,
             value: g
         } : void 0),
-        A = (0, l.FG)(e.id);
-    i.useEffect(() => {
-        (null == b ? void 0 : b.type) === n && y(b.value)
-    }, [n, b]);
-    let I = {
-        value: E,
-        placeholder: p,
-        minLength: _,
+        _ = (0, o.FG)(e.id);
+    l.useEffect(() => {
+        (null == v ? void 0 : v.type) === n && y(v.value)
+    }, [n, v]);
+    let A = {
+        value: x,
+        placeholder: f,
+        minLength: p,
         maxLength: h,
-        required: m,
+        required: b,
         onChange: e => {
-            y(e), O({
+            y(e), j({
                 type: n,
                 value: e
             })
         },
-        autoFocus: A
+        autoFocus: _
     };
-    switch (u) {
-        case s.qz.SMALL:
-            t = (0, r.jsx)(a.ksK, d({}, I));
+    switch (d) {
+        case i.qz.SMALL:
+            t = (0, r.jsx)(a.ksK, u({}, A));
             break;
-        case s.qz.PARAGRAPH:
-            t = (0, r.jsx)(a.fs1, d({
+        case i.qz.PARAGRAPH:
+            t = (0, r.jsx)(a.fs1, u({
                 autosize: !0
-            }, I))
+            }, A))
     }
-    return null != f ? (0, r.jsx)(a.eIh, {
-        title: f,
-        required: m,
+    return null != m ? (0, r.jsx)(a.eIh, {
+        title: m,
+        required: b,
         className: c.k,
-        error: v,
+        error: C,
         children: t
     }) : t
 }

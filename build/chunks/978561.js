@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(258363),
     i = n(392054),
     a = n(609136),
-    s = n(73510),
-    o = n(985018);
+    o = n(73510),
+    s = n(985018);
 
 function l(e) {
     let {
@@ -23,7 +23,7 @@ function l(e) {
     }, "content").trim() : "", p = t.required, _ = "" === f;
     if (null == n) return p ? {
         success: !1,
-        error: o.intl.string(o.t.JZJQL2)
+        error: s.intl.string(s.t.JZJQL2)
     } : {
         success: !0
     };
@@ -31,15 +31,15 @@ function l(e) {
         success: !0
     } : p ? {
         success: !1,
-        error: o.intl.string(o.t.JZJQL2)
+        error: s.intl.string(s.t.JZJQL2)
     } : {
         success: !1,
-        error: (0, s.tE)(t)
+        error: (0, o.tE)(t)
     };
     let h = n.length > 1 ? {
             type: "text",
             text: f
         } : n[0],
         m = a.A[t.type](h, t, c, l, d);
-    return m.success || null != m.error || (m.error = (0, s.tE)(t)), m
+    return m.success || null != m.error || (m.error = (0, o.tE)(t)), m
 }

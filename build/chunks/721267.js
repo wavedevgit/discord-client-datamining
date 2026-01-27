@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 721267, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Lt: "select_b2fe93",
     ar: "selectItemRow_b2fe93",

@@ -2,13 +2,13 @@
 /** chunk id: 341335, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(427262),
     i = n(272984),
     a = n(985018);
 
-function s(e, t, n) {
+function o(e, t, n) {
     switch (t) {
         case i.Qp.USER_ACTIVITY_PLAY:
             if (e.isCurrentUser) return a.intl.string(a.t.ZpDeUC);

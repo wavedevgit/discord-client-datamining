@@ -11,13 +11,13 @@ n.d(t, {
 var r = n(729937),
     i = n(573648),
     a = n(15285),
-    s = n(927813),
-    o = n(107750),
+    o = n(927813),
+    s = n(107750),
     l = n(210528),
     c = n(655116),
     u = n(272984),
     d = n(652215);
-let f = 30 * s.A.Millis.SECOND;
+let f = 30 * o.A.Millis.SECOND;
 
 function p(e) {
     return null != e.getActiveSocketAndDevice() || l.A.isProtocolRegistered()
@@ -33,7 +33,7 @@ function _() {
             socket: e,
             device: n
         } = t[0];
-        return (0, o.VR)(e.accountId, n.id), Promise.resolve({
+        return (0, s.VR)(e.accountId, n.id), Promise.resolve({
             socket: e,
             device: n
         })
@@ -48,7 +48,7 @@ function _() {
                         device: a
                     }
                     of c.A.getPlayableComputerDevices()) null == t.find(e => e.device.id === a.id) && (clearTimeout(r), c.A.removeChangeListener(i), setImmediate(() => {
-                    (0, o.VR)(n.accountId, a.id), e({
+                    (0, s.VR)(n.accountId, a.id), e({
                         socket: n,
                         device: a
                     })
@@ -73,7 +73,7 @@ function m() {
     let {
         socket: t
     } = e;
-    return t.isPremium ? Promise.resolve() : (0, o.E$)(t.accountId, t.accessToken).then(() => {
+    return t.isPremium ? Promise.resolve() : (0, s.E$)(t.accountId, t.accessToken).then(() => {
         if (!t.isPremium) return Promise.reject(Error("spotify account is not premium"))
     })
 }

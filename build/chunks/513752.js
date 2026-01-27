@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(58149),
     a = n(329551),
-    s = n(912630),
-    o = n(965162),
+    o = n(912630),
+    s = n(965162),
     l = n(734057),
     c = n(430452),
     u = n(383501),
@@ -73,17 +73,17 @@ let g = (e, t) => {
         return {
             video_device_name: null == (e = c.A.getVideoDevices()[c.A.getVideoDeviceId()]) ? void 0 : e.name,
             video_hardware_scaling_enabled: c.A.getHardwareEncoding(),
-            video_effect_type: (0, o.wC)(t),
-            video_effect_detail: (0, o._V)(t)
+            video_effect_type: (0, s.wC)(t),
+            video_effect_detail: (0, s._V)(t)
         }
     };
 
 function y(e, t, n, i) {
     let a = d.A.getVoiceChannelId(),
-        o = l.A.getChannel(a);
-    if (null == t && null != a && null != o) {
-        let t = g(o, i);
-        if (e(), s.A.hasUsedBackgroundInCall) {
+        s = l.A.getChannel(a);
+    if (null == t && null != a && null != s) {
+        let t = g(s, i);
+        if (e(), o.A.hasUsedBackgroundInCall) {
             let e = _({}, t, E());
             r.h.dispatch({
                 type: "VIDEO_BACKGROUND_SHOW_FEEDBACK",

@@ -2,7 +2,7 @@
 /** chunk id: 563173, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(315069);
 
@@ -29,4 +29,4 @@ class a extends r.A {
         super(), i(this, "id", void 0), i(this, "guildId", void 0), i(this, "userId", void 0), i(this, "user", void 0), i(this, "ended", void 0), i(this, "endsAt", void 0), this.id = e.id, this.guildId = e.guildId, this.userId = e.userId, this.user = e.user, this.ended = e.ended, this.endsAt = null != e.endsAt ? e.endsAt : null
     }
 }
-let s = a
+let o = a

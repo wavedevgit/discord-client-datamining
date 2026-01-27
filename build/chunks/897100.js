@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 897100, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => a
+/** Chunk was on 13088 **/
+/** chunk id: 897100, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => i
 });
-var r = n(417597),
-    i = n(961350);
+var l = n(417597),
+    r = n(961350);
 
-function a() {
-    return (0, r.bG)([i.default], () => i.default.isAuthenticated())
+function i() {
+    return (0, l.bG)([r.default], () => r.default.isAuthenticated())
 }

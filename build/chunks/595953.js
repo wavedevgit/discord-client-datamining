@@ -1,74 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 595953, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => I
+    A: () => E
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(311907),
+    l = n(311907),
     s = n(827734),
-    o = n(397927),
-    l = n(565645),
+    a = n(397927),
+    o = n(565645),
     c = n(287809),
-    u = n(927578),
-    d = n(536432),
-    f = n(792348),
+    d = n(927578),
+    u = n(536432),
+    _ = n(792348),
     p = n(674168),
-    _ = n(989799),
-    h = n(69217),
-    m = n(985018),
-    g = n(443669);
+    m = n(989799),
+    g = n(69217),
+    A = n(985018),
+    f = n(443669);
 
-function E(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function y(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            E(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function b(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function O(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : b(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function v(e) {
+function h(e) {
     let {
         onSelect: t
-    } = e, [n, s] = i.useState(!1), l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), d = u.Ay.canUseCustomCallSounds(l), f = i.useRef(null);
+    } = e, [n, s] = i.useState(!1), o = (0, l.bG)([c.default], () => c.default.getCurrentUser()), u = d.Ay.canUseCustomCallSounds(o), _ = i.useRef(null);
 
-    function E(e) {
-        d && (s(!1), null == t || t(e))
+    function h(e) {
+        u && (s(!1), null == t || t(e))
     }
-    return (0, r.jsx)(o.YNO, {
-        targetElementRef: f,
+    return (0, r.jsx)(a.YNO, {
+        targetElementRef: _,
         shouldShow: n,
         position: "left",
         onRequestClose: () => s(!1),
@@ -76,103 +36,128 @@ function v(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsx)(o.lGe, {
-                children: (0, r.jsx)(_.A, {
+            return (0, r.jsx)(a.lGe, {
+                children: (0, r.jsx)(m.A, {
                     suppressPlaySound: !0,
                     shouldShowUpsell: !1,
                     guildId: null,
                     channel: null,
                     onClose: t,
-                    onSelect: E,
-                    gridNotice: d ? null : (0, r.jsx)(p.m, {}),
+                    onSelect: h,
+                    gridNotice: u ? null : (0, r.jsx)(p.m, {}),
                     analyticsSource: "call sounds edit setting"
                 })
             })
         },
-        children: e => (0, r.jsx)(h.dT, O(y({}, e), {
-            ref: f,
-            onClick: () => {
-                s(!n)
-            },
-            text: m.intl.string(m.t.uOe0Az),
-            children: (0, r.jsx)(o.R2l, {
-                size: "md",
-                color: "currentColor",
-                className: g.Wo
-            })
-        }))
+        children: e => {
+            var t, i;
+            return (0, r.jsx)(g.dT, (t = function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                        r = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                        return Object.getOwnPropertyDescriptor(n, e).enumerable
+                    }))), r.forEach(function(t) {
+                        var r;
+                        r = n[t], t in e ? Object.defineProperty(e, t, {
+                            value: r,
+                            enumerable: !0,
+                            configurable: !0,
+                            writable: !0
+                        }) : e[t] = r
+                    })
+                }
+                return e
+            }({}, e), i = i = {
+                ref: _,
+                onClick: () => {
+                    s(!n)
+                },
+                text: A.intl.string(A.t.uOe0Az),
+                children: (0, r.jsx)(a.R2l, {
+                    size: "md",
+                    color: "currentColor",
+                    className: f.Wo
+                })
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+                var n = Object.keys(e);
+                if (Object.getOwnPropertySymbols) {
+                    var r = Object.getOwnPropertySymbols(e);
+                    n.push.apply(n, r)
+                }
+                return n
+            })(Object(i)).forEach(function(e) {
+                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
+            }), t))
+        }
     })
 }
 
-function A(e) {
+function b(e) {
     let {
         sound: t
     } = e, {
         previewSound: n
-    } = (0, f.A)(t, null), i = 0 === (0, d.wH)() ? m.intl.string(m.t.OASXjt) : m.intl.formatToPlainString(m.t["/8fYO5"], {
+    } = (0, _.A)(t, null), i = 0 === (0, u.wH)() ? A.intl.string(A.t.OASXjt) : A.intl.formatToPlainString(A.t["/8fYO5"], {
         emojiName: t.emojiName,
         soundName: t.name
     });
-    return (0, r.jsx)(h.dT, {
+    return (0, r.jsx)(g.dT, {
         onClick: n,
         text: i,
-        children: (0, r.jsx)(o.HKD, {
+        children: (0, r.jsx)(a.HKD, {
             size: "md",
             color: "currentColor",
-            className: g.wg
+            className: f.wg
         })
     })
 }
 
-function I(e) {
+function E(e) {
     let {
         sound: t,
         isGlobal: n,
         onSelect: i
-    } = e, a = null != t, c = null == t ? void 0 : t.emojiId, u = null == t ? void 0 : t.emojiName, d = a && (null != u || null != c), f = e => (0, r.jsx)(o.Text, {
-        variant: "text-xs/medium",
-        color: "text-default",
-        tag: "span",
-        children: e
-    });
-
-    function p() {
-        return null == t ? m.intl.string(m.t.PoWNfe) : n ? m.intl.format(m.t.B6HU6O, {
-            soundName: t.name,
-            subtextHook: f
-        }) : t.name
-    }
+    } = e, l = null != t, c = null == t ? void 0 : t.emojiId, d = null == t ? void 0 : t.emojiName, u = l && (null != d || null != c);
     return (0, r.jsxs)("div", {
-        className: g.D6,
+        className: f.D6,
         children: [(0, r.jsxs)("div", {
-            className: g.kL,
-            children: [d && (0, r.jsx)(l.A, {
+            className: f.kL,
+            children: [u && (0, r.jsx)(o.A, {
                 emojiId: c,
-                emojiName: u,
-                className: g.Zg
-            }), (0, r.jsx)(o.Text, {
+                emojiName: d,
+                className: f.Zg
+            }), (0, r.jsx)(a.Text, {
                 variant: "text-xs/medium",
                 color: "text-strong",
-                className: g.dj,
-                children: p()
-            }), a ? (0, r.jsx)(A, {
+                className: f.dj,
+                children: null == t ? A.intl.string(A.t.PoWNfe) : n ? A.intl.format(A.t.B6HU6O, {
+                    soundName: t.name,
+                    subtextHook: e => (0, r.jsx)(a.Text, {
+                        variant: "text-xs/medium",
+                        color: "text-default",
+                        tag: "span",
+                        children: e
+                    })
+                }) : t.name
+            }), l ? (0, r.jsx)(b, {
                 sound: t
-            }) : (0, r.jsx)(o.HKD, {
+            }) : (0, r.jsx)(a.HKD, {
                 size: "md",
                 color: "currentColor",
-                className: g.Gk
+                className: f.Gk
             })]
         }), (0, r.jsxs)("div", {
-            className: g.kL,
-            children: [(0, r.jsx)(v, {
+            className: f.kL,
+            children: [(0, r.jsx)(h, {
                 onSelect: i
-            }), a && !n && (0, r.jsx)(h.dT, {
+            }), l && !n && (0, r.jsx)(g.dT, {
                 onClick: () => i(null),
-                text: m.intl.string(m.t.jmtcGA),
-                children: (0, r.jsx)(o.ucK, {
+                text: A.intl.string(A.t.jmtcGA),
+                children: (0, r.jsx)(a.ucK, {
                     size: "md",
                     color: s.A.unsafe_rawColors.RED_400.css,
-                    className: g.Wo
+                    className: f.Wo
                 })
             })]
         })]

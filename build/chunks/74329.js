@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(652896),
-    o = n(834757),
+    o = n(652896),
+    s = n(834757),
     l = n(961350),
     c = n(162605),
     u = n(985018);
@@ -38,10 +38,10 @@ function f(e) {
 
 function p(e, t, d) {
     var p;
-    let _ = (0, o.AO)(e),
+    let _ = (0, s.AO)(e),
         h = (0, i.bG)([l.default], () => l.default.getId());
     if (null == e) return null;
-    let m = (0, s._z)(e),
+    let m = (0, o._z)(e),
         g = null != (p = c.A.getVideoStats(m)) ? p : {},
         E = f({
             media_session_id: c.A.getMediaSessionId(m),
@@ -67,6 +67,10 @@ function p(e, t, d) {
         color: "danger",
         label: u.intl.string(u.t.sdnCxV),
         action: y,
-        icon: a.EpV
+        icon: a.EpV,
+        leadingAccessory: {
+            type: "icon",
+            icon: a.EpV
+        }
     })
 }

@@ -8,15 +8,15 @@ n.d(t, {
 var r = n(960488),
     i = n(47312),
     a = n(64700),
-    s = n(830845);
+    o = n(830845);
 n(655972);
-var o = n(1139),
+var s = n(1139),
     l = n(299146),
     c = n(258635),
     u = function(e) {
         function t() {
             for (var t, n = arguments.length, r = Array(n), i = 0; i < n; i++) r[i] = arguments[i];
-            return (t = e.call.apply(e, [this].concat(r)) || this).history = (0, s.zR)(t.props), t
+            return (t = e.call.apply(e, [this].concat(r)) || this).history = (0, o.zR)(t.props), t
         }
         return (0, i.A)(t, e), t.prototype.render = function() {
             return a.createElement(r.Ix, {
@@ -30,7 +30,7 @@ var d = function(e, t) {
         return "function" == typeof e ? e(t) : e
     },
     f = function(e, t) {
-        return "string" == typeof e ? (0, s.yJ)(e, null, null, t) : e
+        return "string" == typeof e ? (0, o.yJ)(e, null, null, t) : e
     },
     p = function(e) {
         return e
@@ -45,9 +45,9 @@ var m = _(function(e, t) {
         var n = e.innerRef,
             r = e.navigate,
             i = e.onClick,
-            s = (0, l.A)(e, ["innerRef", "navigate", "onClick"]),
-            c = s.target,
-            u = (0, o.A)({}, s, {
+            o = (0, l.A)(e, ["innerRef", "navigate", "onClick"]),
+            c = o.target,
+            u = (0, s.A)({}, o, {
                 onClick: function(e) {
                     try {
                         i && i(e)
@@ -62,7 +62,7 @@ var m = _(function(e, t) {
     g = _(function(e, t) {
         var n = e.component,
             i = void 0 === n ? m : n,
-            s = e.replace,
+            o = e.replace,
             u = e.to,
             h = e.innerRef,
             g = (0, l.A)(e, ["component", "replace", "to", "innerRef"]);
@@ -71,11 +71,11 @@ var m = _(function(e, t) {
             var n = e.history,
                 r = f(d(u, e.location), e.location),
                 l = r ? n.createHref(r) : "",
-                m = (0, o.A)({}, g, {
+                m = (0, s.A)({}, g, {
                     href: l,
                     navigate: function() {
                         var t = d(u, e.location);
-                        (s ? n.replace : n.push)(t)
+                        (o ? n.replace : n.push)(t)
                     }
                 });
             return p !== _ ? m.ref = t || h : m.innerRef = h, a.createElement(i, m)
@@ -95,8 +95,8 @@ function b() {
 void 0 === y && (y = E), y(function(e, t) {
     var n = e["aria-current"],
         i = void 0 === n ? "page" : n,
-        s = e.activeClassName,
-        u = void 0 === s ? "active" : s,
+        o = e.activeClassName,
+        u = void 0 === o ? "active" : o,
         p = e.activeStyle,
         _ = e.className,
         h = e.exact,
@@ -111,8 +111,8 @@ void 0 === y && (y = E), y(function(e, t) {
     return a.createElement(r.XZ.Consumer, null, function(e) {
         e || (0, c.A)(!1);
         var n = O || e.location,
-            s = f(d(S, n), n),
-            l = s.pathname,
+            o = f(d(S, n), n),
+            l = o.pathname,
             N = l && l.replace(/([.+*?=^!:${}()[\]|/\\])/g, "\\$1"),
             w = N ? (0, r.B6)(n.pathname, {
                 path: N,
@@ -122,13 +122,13 @@ void 0 === y && (y = E), y(function(e, t) {
             }) : null,
             R = !!(m ? m(w, n) : w),
             P = R ? b(_, u) : _,
-            D = R ? (0, o.A)({}, I, {}, p) : I,
-            x = (0, o.A)({
+            D = R ? (0, s.A)({}, I, {}, p) : I,
+            L = (0, s.A)({
                 "aria-current": R && i || null,
                 className: P,
                 style: D,
-                to: s
+                to: o
             }, C);
-        return E !== y ? x.ref = t || T : x.innerRef = T, a.createElement(g, x)
+        return E !== y ? L.ref = t || T : L.innerRef = T, a.createElement(g, L)
     })
 })

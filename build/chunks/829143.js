@@ -6,7 +6,7 @@ n.d(t, {
     E9: () => d,
     Pl: () => g,
     d2: () => E,
-    eB: () => s,
+    eB: () => o,
     zL: () => b
 });
 var r = n(476858),
@@ -34,7 +34,7 @@ let a = {
         lör: 6,
         lö: 6
     },
-    s = {
+    o = {
         januari: 1,
         jan: 1,
         "jan.": 1,
@@ -71,7 +71,7 @@ let a = {
         dec: 12,
         "dec.": 12
     },
-    o = {
+    s = {
         första: 1,
         andra: 2,
         tredje: 3,
@@ -187,7 +187,7 @@ function f(e, t) {
     e[c[t[2].toLowerCase()]] = n
 }
 let p = `(?:${(0,r.uJ)(l)}|\\d+)`;
-(0, r.uJ)(o), (0, r.uJ)(c);
+(0, r.uJ)(s), (0, r.uJ)(c);
 let _ = `(${p})\\s{0,5}(${(0,r.uJ)(c)})\\s{0,5}`,
     h = RegExp(_, "i"),
     m = `(${p})\\s{0,5}(${(0,r.uJ)(u)})\\s{0,5}`,

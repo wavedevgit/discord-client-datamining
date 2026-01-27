@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 193477, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(399056),
     p = n(914191),
     f = n(803064),
-    b = n(435732),
-    h = n(429526),
+    h = n(435732),
+    b = n(429526),
     x = n(758023),
     j = n(985018),
     _ = n(659233),
@@ -120,9 +120,9 @@ function E(e) {
                 })]
             }), (0, r.jsxs)("div", {
                 className: _.uW,
-                children: [(0, r.jsx)(h.A, {
+                children: [(0, r.jsx)(b.A, {
                     guildId: t.id
-                }), (0, r.jsx)(b.A, {
+                }), (0, r.jsx)(h.A, {
                     guildId: t.id
                 })]
             }), (0, r.jsx)("div", {

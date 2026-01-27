@@ -8,7 +8,7 @@ var r = n(735438),
     i = n.n(r),
     a = n(451988);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o {
+class s {
     acknowledge(e) {
         this._unacknowledgedRequests.delete(e), this._pendingRequests.delete(e)
     }
@@ -37,7 +37,7 @@ class o {
         this._pendingRequests.add(e)
     }
     constructor(e, t) {
-        s(this, "_guildId", void 0), s(this, "_pendingRequests", new Set), s(this, "_sentRequests", new Set), s(this, "_unacknowledgedRequests", new Set), s(this, "_guildMemberExists", void 0), this._guildId = e, this._guildMemberExists = n => t(e, n)
+        o(this, "_guildId", void 0), o(this, "_pendingRequests", new Set), o(this, "_sentRequests", new Set), o(this, "_unacknowledgedRequests", new Set), o(this, "_guildMemberExists", void 0), this._guildId = e, this._guildMemberExists = n => t(e, n)
     }
 }
 class l {
@@ -58,7 +58,7 @@ class l {
     }
     _getGuildState(e) {
         let t = this._guildStates[e];
-        return null == t && (t = this._guildStates[e] = new o(e, this._guildMemberExists)), t
+        return null == t && (t = this._guildStates[e] = new s(e, this._guildMemberExists)), t
     }
     getDebugState(e) {
         let t = [],
@@ -73,6 +73,6 @@ class l {
         }
     }
     constructor(e, t) {
-        s(this, "_onChange", void 0), s(this, "_guildMemberExists", void 0), s(this, "_guildStates", {}), s(this, "_flush", new a.J_(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
+        o(this, "_onChange", void 0), o(this, "_guildMemberExists", void 0), o(this, "_guildStates", {}), o(this, "_flush", new a.J_(0, () => this.flushRequests())), this._guildMemberExists = e, this._onChange = t
     }
 }

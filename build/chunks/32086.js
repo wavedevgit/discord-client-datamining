@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 32086, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row__89d80",
     yF: "divider__89d80",

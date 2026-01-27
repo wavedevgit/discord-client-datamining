@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(224507),
     i = n(371926),
     a = n(332761),
-    s = n(132716),
-    o = n(803082),
+    o = n(132716),
+    s = n(803082),
     l = n(790637),
     c = n(853590);
 let u = {
@@ -48,11 +48,11 @@ function f(e, t, n) {
             }
         }
     }
-    let N = (0, s.HI)(f.props),
+    let N = (0, o.HI)(f.props),
         w = h.hasAction ? N : {};
     return {
         rowProps: {
-            ...(0, o.v)(_, g, w),
+            ...(0, s.v)(_, g, w),
             "aria-labelledby": (0, r.VJ)(t, f.key)
         },
         ...h

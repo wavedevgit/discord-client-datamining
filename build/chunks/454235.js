@@ -5,7 +5,7 @@ n.d(t, {
     Av: () => _,
     Os: () => f,
     PS: () => d,
-    TT: () => o,
+    TT: () => s,
     d1: () => u,
     kv: () => c,
     nL: () => h,
@@ -15,14 +15,14 @@ var r = n(77729),
     i = n(9858),
     a = n(723702);
 
-function s() {
+function o() {
     return (null === r.A || void 0 === r.A ? void 0 : r.A.spellCheck) != null
 }
 
-function o() {
-    return (0, a.isDesktop)() && s()
+function s() {
+    return (0, a.isDesktop)() && o()
 }
-let l = o() ? (0, i.J)() : null;
+let l = s() ? (0, i.J)() : null;
 async function c(e) {
     let t = await l;
     null != t && (t.enabled = e)
@@ -52,7 +52,7 @@ async function _(e) {
 }
 
 function h(e) {
-    if (!s()) return () => {};
+    if (!o()) return () => {};
     let t = r.A.spellCheck.on("spellcheck-result", e);
     return null != t ? t : () => {}
 }

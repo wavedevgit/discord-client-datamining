@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Ay: () => i,
-    l0: () => s,
+    l0: () => o,
     u5: () => a
 });
 var r = n(64700);
@@ -18,7 +18,7 @@ function a(e) {
     r.useLayoutEffect(() => t.current(), [])
 }
 
-function s(e) {
+function o(e) {
     let t = r.useRef(e);
     r.useEffect(() => {
         t.current = e

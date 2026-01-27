@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(87955),
     i = n(735438),
     a = n.n(i),
-    s = n(621466),
-    o = n(77729),
+    o = n(621466),
+    s = n(77729),
     l = n(626584),
     c = n(773669),
     u = n(403362),
@@ -25,7 +25,7 @@ function p(e, t, n) {
 }
 let _ = 250,
     h = new l.A("Spellchecker"),
-    m = null === o.A || void 0 === o.A ? void 0 : o.A.spellCheck;
+    m = null === s.A || void 0 === s.A ? void 0 : s.A.spellCheck;
 
 function g(e) {
     var t;
@@ -105,7 +105,7 @@ function b(e) {
 }
 
 function O(e) {
-    return null == e ? null : (0, s.vq)(e, HTMLInputElement) || (0, s.vq)(e, HTMLTextAreaElement) ? e.value : (0, s.vq)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
+    return null == e ? null : (0, o.vq)(e, HTMLInputElement) || (0, o.vq)(e, HTMLTextAreaElement) ? e.value : (0, o.vq)(e) && e.hasAttribute("contenteditable") ? e.textContent : void 0
 }
 async function v() {
     var e;

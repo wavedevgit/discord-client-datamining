@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(440745),
     i = n.n(r),
     a = n(317097),
-    s = n(315069);
+    o = n(315069);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -72,23 +72,23 @@ let p = e => null == e ? e : {
     buttonColors: e.button_colors.map(e => i()((0, a.Hl)(e))),
     confettiColors: e.confetti_colors.map(e => i()((0, a.Hl)(e)))
 };
-class _ extends s.A {
+class _ extends o.A {
     static fromServer(e) {
         let {
             store_listing_id: t,
             sku_id: n,
             unpublished_at: r,
             styles: i
-        } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "styles"]), s = null != r ? new Date(r) : null;
+        } = e, a = d(e, ["store_listing_id", "sku_id", "unpublished_at", "styles"]), o = null != r ? new Date(r) : null;
         return new _(u(l({}, a), {
             storeListingId: t,
             skuId: n,
-            unpublishedAt: s,
+            unpublishedAt: o,
             styles: p(i)
         }))
     }
     constructor(e) {
         var t;
-        super(), o(this, "storeListingId", void 0), o(this, "skuId", void 0), o(this, "name", void 0), o(this, "summary", void 0), o(this, "unpublishedAt", void 0), o(this, "styles", void 0), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = null == (t = e.summary) ? void 0 : t.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
+        super(), s(this, "storeListingId", void 0), s(this, "skuId", void 0), s(this, "name", void 0), s(this, "summary", void 0), s(this, "unpublishedAt", void 0), s(this, "styles", void 0), this.storeListingId = e.storeListingId, this.skuId = e.skuId, this.name = e.name, this.summary = null == (t = e.summary) ? void 0 : t.trim(), this.unpublishedAt = e.unpublishedAt, this.styles = e.styles
     }
 }

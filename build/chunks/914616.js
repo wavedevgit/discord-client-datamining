@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n(562465),
     a = n(793574),
-    s = n(508675),
-    o = n(807348),
+    o = n(508675),
+    s = n(807348),
     l = n(542675),
     c = n(309010),
     u = n(319191),
@@ -32,7 +32,7 @@ function h(e) {
 function m(e, t, n) {
     var r;
     let {
-        abortController: s,
+        abortController: o,
         onRequestProgress: c
     } = h(e), _ = null != (r = u.A.getState().animationType) ? r : f.B.BASIC, m = {
         animation_type: _,
@@ -41,17 +41,17 @@ function m(e, t, n) {
     i.Bo.post({
         url: p.Rsh.CUSTOM_CALL_SOUNDS(e),
         body: m,
-        signal: s.signal,
+        signal: o.signal,
         onRequestProgress: c,
         rejectWithError: !0
     }).then(p.FXj, () => {
-        if (s.signal.aborted) return
-    }), (0, l.A)([a.A.CHANNEL_CALL], n, t, o.ib.ENTRY)
+        if (o.signal.aborted) return
+    }), (0, l.A)([a.A.CHANNEL_CALL], n, t, s.ib.ENTRY)
 }
 
 function g(e, t, n, r, a) {
     var c;
-    let u = null != t.emojiId ? s.Ay.getCustomEmojiById(t.emojiId) : null,
+    let u = null != t.emojiId ? o.Ay.getCustomEmojiById(t.emojiId) : null,
         {
             abortController: d,
             onRequestProgress: f
@@ -69,5 +69,5 @@ function g(e, t, n, r, a) {
         rejectWithError: !0
     }).then(p.FXj, () => {
         if (d.signal.aborted) return
-    }), (0, l.A)(null != r ? r : [], n, t, o.ib.DEFAULT, a)
+    }), (0, l.A)(null != r ? r : [], n, t, s.ib.DEFAULT, a)
 }

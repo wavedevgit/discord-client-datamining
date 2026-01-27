@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(143236),
     i = n(277738),
     a = n(256398),
-    s = n(201327),
-    o = n(731854),
+    o = n(201327),
+    s = n(731854),
     l = n(818348);
 
 function c(e, t, n) {
@@ -22,7 +22,7 @@ function c(e, t, n) {
 let u = new a.A;
 class d extends r.EventEmitter {
     destroy() {
-        null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, s.it)(this.streamId), this.destroyed = !0
+        null != this.stream && (u.release(this.stream), this.stream = null), null != this.streamId && (0, o.it)(this.streamId), this.destroyed = !0
     }
     getStreamId() {
         return this.streamId
@@ -31,7 +31,7 @@ class d extends r.EventEmitter {
         if (this.sourceId === e) return this.stream;
         this.sourceId = e, null != this.stream && (u.release(this.stream), this.stream = null);
         let t = await (0, i.DT)();
-        if (this.sourceId === o.qe) return this.setStream(new MediaStream);
+        if (this.sourceId === s.qe) return this.setStream(new MediaStream);
         let n = {
             width: 1280
         };
@@ -60,9 +60,9 @@ class d extends r.EventEmitter {
         }
     }
     setStream(e) {
-        return null != this.streamId && ((0, s.it)(this.streamId), this.streamId = null), this.stream = e, e.onaddtrack = e => this.emit("add-video-track", e), e.getVideoTracks().length > 0 && (this.streamId = (0, s.ju)(e)), this.emit("stream", e), this.emit("video", this.getStreamId()), e
+        return null != this.streamId && ((0, o.it)(this.streamId), this.streamId = null), this.stream = e, e.onaddtrack = e => this.emit("add-video-track", e), e.getVideoTracks().length > 0 && (this.streamId = (0, o.ju)(e)), this.emit("stream", e), this.emit("video", this.getStreamId()), e
     }
     constructor(...e) {
-        super(...e), c(this, "stream", new MediaStream), c(this, "sourceId", o.qe), c(this, "streamId", null), c(this, "destroyed", !1)
+        super(...e), c(this, "stream", new MediaStream), c(this, "sourceId", s.qe), c(this, "streamId", null), c(this, "destroyed", !1)
     }
 }

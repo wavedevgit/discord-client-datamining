@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n(451988),
-    o = n(397927),
+    o = n(451988),
+    s = n(397927),
     l = n(954571),
     c = n(957565),
     u = n(927813),
@@ -87,39 +87,39 @@ function A(e) {
         "aria-label": p,
         delay: h = O,
         dataMeticulousIgnore: E
-    } = e, [A, I] = i.useState(0), [S, T] = i.useState(!1), [C, N] = i.useState(!1), [w] = i.useState(() => new s.Ep), [R] = i.useState(() => new s.Ep);
+    } = e, [A, I] = i.useState(0), [S, T] = i.useState(!1), [C, N] = i.useState(!1), [w] = i.useState(() => new o.Ep), [R] = i.useState(() => new o.Ep);
     if (i.useEffect(() => () => {
             w.stop(), R.stop()
         }, [w, R]), !c.p5) return (0, r.jsx)(r.Fragment, {
         children: u({})
     });
     let P = A >= v.length - 1,
-        D = P ? o.oMw.RED : o.oMw.GREEN,
-        x = S ? D : o.oMw.PRIMARY,
-        L = () => {
+        D = P ? s.oMw.RED : s.oMw.GREEN,
+        L = S ? D : s.oMw.PRIMARY,
+        x = () => {
             var e;
             if (!S) return t;
             let n = (0, a.clamp)(A - 1, 0, v.length - 1),
                 i = null != (e = v[n]) ? e : v[0];
-            return (0, r.jsx)(o.bfh, {
+            return (0, r.jsx)(s.bfh, {
                 isShaking: P,
                 children: i()
             })
         },
-        j = (e, t) => {
+        M = (e, t) => {
             !C && S && t.phase === d.lLE.LEAVE && T(!1)
         },
-        M = () => {
+        j = () => {
             null == f || f(), (0, c.C)(n), l.default.track(d.HAw.TEXT_COPIED), C || I(A + 1), N(!0), T(!0), w.start(y, () => N(!1)), R.start(b, () => I(0))
         };
-    return (0, r.jsx)(o.STz, {
-        text: L(),
+    return (0, r.jsx)(s.STz, {
+        text: x(),
         delay: h,
         "aria-label": p,
         dataMeticulousIgnore: E,
-        color: x,
+        color: L,
         forceOpen: C,
-        onAnimationRest: j,
+        onAnimationRest: M,
         children: e => {
             let {
                 onClick: t,
@@ -127,7 +127,7 @@ function A(e) {
             } = e;
             return u(m(_({}, g(e, ["onClick", "onMouseEnter"])), {
                 onClick: () => {
-                    null == t || t(), M()
+                    null == t || t(), j()
                 },
                 onMouseEnter: () => {
                     if (!S) {

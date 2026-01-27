@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(306173),
     i = n(52133),
     a = n(439372),
-    s = n(945810),
-    o = n(217222),
+    o = n(945810),
+    s = n(217222),
     l = n(548965);
 
 function c(e, t, n) {
@@ -29,7 +29,7 @@ function d() {
 }
 
 function f(e) {
-    return (0, s.mj)({
+    return (0, o.mj)({
         kind: "user",
         name: e.id,
         defaultConfig: {
@@ -57,7 +57,7 @@ class _ extends a.A {
     }
     _terminate() {}
     constructor(...e) {
-        super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(o.A, d))
+        super(...e), c(this, "actions", {}), c(this, "stores", new Map().set(s.A, d))
     }
 }
 let h = new _

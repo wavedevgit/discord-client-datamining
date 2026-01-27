@@ -19,8 +19,8 @@ var l = n(627968),
     A = n(696451),
     h = n(287809),
     _ = n(954571),
-    j = n(927578),
-    y = n(35950),
+    y = n(927578),
+    j = n(35950),
     v = n(272104),
     b = n(652215),
     f = n(788868),
@@ -55,7 +55,7 @@ function E(e) {
     }), {
         product: D,
         purchase: R
-    } = (0, d.A)(null == U ? void 0 : U.skuId), H = null != R ? (0, u.gA)(R) : (0, u.G0)(D), G = j.Ay.canUseCollectibles(_), z = void 0 === S ? (null == U ? void 0 : U.skuId) === (null == k ? void 0 : k.skuId) : (null == U ? void 0 : U.skuId) === (null == S ? void 0 : S.skuId), F = (0, r.useCallback)(e => {
+    } = (0, d.A)(null == U ? void 0 : U.skuId), H = null != R ? (0, u.gA)(R) : (0, u.G0)(D), G = y.Ay.canUseCollectibles(_), F = void 0 === S ? (null == U ? void 0 : U.skuId) === (null == k ? void 0 : k.skuId) : (null == U ? void 0 : U.skuId) === (null == S ? void 0 : S.skuId), z = (0, r.useCallback)(e => {
         P(), (0, c.Cz)({
             analyticsLocations: w,
             analyticsSource: a.A.EDIT_NAMEPLATE_MODAL,
@@ -84,8 +84,8 @@ function E(e) {
                 selectedNameplate: U,
                 guildId: T,
                 onSelect: L,
-                onOpenShop: F
-            }), (0, l.jsx)(y.A, {
+                onOpenShop: z
+            }), (0, l.jsx)(j.A, {
                 user: _,
                 guildId: T,
                 nameplate: M
@@ -99,16 +99,16 @@ function E(e) {
                 onClick: () => {
                     (0, g.pX)(U, T), P()
                 },
-                disabled: z
+                disabled: F
             }) : null == R && (G || !H) ? (0, l.jsx)(s.Button, {
                 variant: "primary",
-                onClick: () => F(null == D ? void 0 : D.skuId),
+                onClick: () => z(null == D ? void 0 : D.skuId),
                 text: O.intl.string(O.t.fYfGgK)
             }) : (0, l.jsx)(x.A, {
                 subscriptionTier: f.pe.TIER_2,
                 showGradient: !G,
                 textOptions: {
-                    textOverride: j.Ay.isPremium(_) ? O.intl.string(O.t.KXLX7l) : G ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
+                    textOverride: y.Ay.isPremium(_) ? O.intl.string(O.t.KXLX7l) : G ? O.intl.string(O.t.mr4K7D) : O.intl.string(O.t.pj0XBN)
                 }
             }), !G && H ? (0, l.jsx)(m.A, {
                 itemType: null != (t = null == R ? void 0 : R.type) ? t : null == D ? void 0 : D.type,
@@ -134,9 +134,9 @@ function w(e) {
     } = (0, o.Ay)(n, a.A.EDIT_NAMEPLATE_MODAL), {
         categories: g,
         purchases: A,
-        isFetchingCategories: j,
-        isFetchingPurchases: y
-    } = (0, p.Ay)(), v = j || y && 0 === A.size;
+        isFetchingCategories: y,
+        isFetchingPurchases: j
+    } = (0, p.Ay)(), v = y || j && 0 === A.size;
     return ((0, r.useEffect)(() => {
         _.default.track(b.HAw.OPEN_MODAL, {
             type: b.JJy.NAMEPLATE_CUSTOMIZATION,

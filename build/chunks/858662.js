@@ -2,12 +2,12 @@
 /** chunk id: 858662, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => o
+    l: () => s
 });
 var r, i = n(41010),
     a = n(653587);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-var o = (s(r = {}, i.FILE, {
+var s = (o(r = {}, i.FILE, {
     exposeProperties: {
         files: function(e) {
             return Array.prototype.slice.call(e.files)
@@ -25,21 +25,21 @@ var o = (s(r = {}, i.FILE, {
         }
     },
     matchesTypes: ["Files"]
-}), s(r, i.HTML, {
+}), o(r, i.HTML, {
     exposeProperties: {
         html: function(e, t) {
             return (0, a.W)(e, t, "")
         }
     },
     matchesTypes: ["Html", "text/html"]
-}), s(r, i.URL, {
+}), o(r, i.URL, {
     exposeProperties: {
         urls: function(e, t) {
             return (0, a.W)(e, t, "").split("\n")
         }
     },
     matchesTypes: ["Url", "text/uri-list"]
-}), s(r, i.TEXT, {
+}), o(r, i.TEXT, {
     exposeProperties: {
         text: function(e, t) {
             return (0, a.W)(e, t, "")

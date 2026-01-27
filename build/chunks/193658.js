@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(252452),
-    s = n(775602),
-    o = n(628965),
+    o = n(775602),
+    s = n(628965),
     l = n(355097),
     c = n(652215);
 
@@ -46,8 +46,8 @@ let f = Object.freeze({
     }),
     p = function(e, t, n) {
         let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : 0,
-            c = (0, i.bG)([s.A], () => s.A.useReducedMotion),
-            u = (0, i.bG)([o.A], () => o.A.getScrollPosition());
+            c = (0, i.bG)([o.A], () => o.A.useReducedMotion),
+            u = (0, i.bG)([s.A], () => s.A.getScrollPosition());
         (0, r.useEffect)(() => {
             let r = e.current;
             null != r && t === u && setTimeout(() => {

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(451988),
+    o = n(311907),
+    s = n(451988),
     l = n(627363),
     c = n(587895);
 
@@ -44,7 +44,7 @@ class p {
         })
     }
     constructor() {
-        u(this, "_lastFetchedAttempted", new Map), u(this, "_pending", new Set), u(this, "_flushHandler", new o.J_(32, () => this._flush()))
+        u(this, "_lastFetchedAttempted", new Map), u(this, "_pending", new Set), u(this, "_flushHandler", new s.J_(32, () => this._flush()))
     }
 }
 let _ = new p;
@@ -56,5 +56,5 @@ function h(e) {
 }
 
 function m(e) {
-    return h(e), (0, s.bG)([c.A], () => null != e && "" !== e ? c.A.getApplication(e) : null, [e])
+    return h(e), (0, o.bG)([c.A], () => null != e && "" !== e ? c.A.getApplication(e) : null, [e])
 }

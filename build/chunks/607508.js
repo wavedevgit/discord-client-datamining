@@ -8,14 +8,14 @@ n.d(t, {
 var r = n(665260),
     i = n(311907),
     a = n(734057),
-    s = n(543465),
-    o = n(152007),
+    o = n(543465),
+    s = n(152007),
     l = n(37411),
     c = n(652215);
 
 function u(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o.A,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.Ay,
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.A,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.Ay,
         i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : a.A,
         u = t.flags(e.id);
     if (null == u) return l.CP.NO_MESSAGES;
@@ -29,5 +29,5 @@ function u(e) {
 }
 
 function d(e) {
-    return (0, i.bG)([o.A, s.Ay, a.A], () => u(e), [e])
+    return (0, i.bG)([s.A, o.Ay, a.A], () => u(e), [e])
 }

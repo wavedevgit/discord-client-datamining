@@ -24,14 +24,14 @@ var r = n(53635),
         arguments: !0,
         arity: !0
     },
-    s = {
+    o = {
         $$typeof: !0,
         render: !0,
         defaultProps: !0,
         displayName: !0,
         propTypes: !0
     },
-    o = {
+    s = {
         $$typeof: !0,
         compare: !0,
         defaultProps: !0,
@@ -42,9 +42,9 @@ var r = n(53635),
     l = {};
 
 function c(e) {
-    return r.isMemo(e) ? o : l[e.$$typeof] || i
+    return r.isMemo(e) ? s : l[e.$$typeof] || i
 }
-l[r.ForwardRef] = s, l[r.Memo] = o;
+l[r.ForwardRef] = o, l[r.Memo] = s;
 var u = Object.defineProperty,
     d = Object.getOwnPropertyNames,
     f = Object.getOwnPropertySymbols,
@@ -60,9 +60,9 @@ function m(e, t, n) {
         }
         var i = d(t);
         f && (i = i.concat(f(t)));
-        for (var s = c(e), o = c(t), l = 0; l < i.length; ++l) {
+        for (var o = c(e), s = c(t), l = 0; l < i.length; ++l) {
             var g = i[l];
-            if (!a[g] && !(n && n[g]) && !(o && o[g]) && !(s && s[g])) {
+            if (!a[g] && !(n && n[g]) && !(s && s[g]) && !(o && o[g])) {
                 var E = p(t, g);
                 try {
                     u(e, g, E)

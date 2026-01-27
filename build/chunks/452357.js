@@ -1,82 +1,76 @@
-/** Chunk was on web.js **/
-/** chunk id: 452357, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 90406 **/
+/** chunk id: 452357, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => g,
     S: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(284009),
-    s = n.n(a),
+    l = n(284009),
+    a = n.n(l),
     o = n(158954),
-    l = n(311907),
-    c = n(139033),
-    u = n(397927),
+    s = n(311907),
+    u = n(139033),
+    c = n(397927),
     d = n(830215),
     f = n(287809),
-    p = n(985018);
+    b = n(985018);
 
-function _(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function h(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            _(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function m(e) {
+function m(t) {
     return d.A.verifyResend().then(() => {
-        (0, c.A)({
-            title: p.intl.string(p.t.LykQYk),
-            subtitle: p.intl.format(p.t.azKEPy, {
-                email: e.email
+        (0, u.A)({
+            title: b.intl.string(b.t.LykQYk),
+            subtitle: b.intl.format(b.t.azKEPy, {
+                email: t.email
             })
         })
-    }).catch(e => {
+    }).catch(t => {
         let {
-            body: t
-        } = e, n = p.intl.string(p.t.XcrQN5);
-        null != t && t.email && (n = t.email), (0, u.qfG)(e => (0, r.jsx)(o.Modal, h({
+            body: e
+        } = t, n = b.intl.string(b.t.XcrQN5);
+        null != e && e.email && (n = e.email), (0, c.qfG)(t => (0, r.jsx)(o.Modal, function(t) {
+            for (var e = 1; e < arguments.length; e++) {
+                var n = null != arguments[e] ? arguments[e] : {},
+                    r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+                    return Object.getOwnPropertyDescriptor(n, t).enumerable
+                }))), r.forEach(function(e) {
+                    var r;
+                    r = n[e], e in t ? Object.defineProperty(t, e, {
+                        value: r,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : t[e] = r
+                })
+            }
+            return t
+        }({
             actions: [{
                 variant: "primary",
-                text: p.intl.string(p.t.BddRzS),
-                onClick: e.onClose
+                text: b.intl.string(b.t.BddRzS),
+                onClick: t.onClose
             }],
-            title: p.intl.string(p.t.VbTh0E),
+            title: b.intl.string(b.t.VbTh0E),
             subtitle: n
-        }, e)))
+        }, t)))
     })
 }
 
-function g(e) {
+function g(t) {
     let {
-        size: t,
+        size: e,
         variant: n
-    } = e, a = (0, l.bG)([f.default], () => f.default.getCurrentUser());
-    s()(null != a, "ResendEmailVerificationButton: currentUser cannot be undefined");
-    let [o, c] = i.useState(!1), d = i.useCallback(() => {
-        c(!0), m(a).then(() => c(!1))
-    }, [a]);
-    return (0, r.jsx)(u.Button, {
-        size: t,
+    } = t, l = (0, s.bG)([f.default], () => f.default.getCurrentUser());
+    a()(null != l, "ResendEmailVerificationButton: currentUser cannot be undefined");
+    let [o, u] = i.useState(!1), d = i.useCallback(() => {
+        u(!0), m(l).then(() => u(!1))
+    }, [l]);
+    return (0, r.jsx)(c.Button, {
+        size: e,
         variant: n,
         onClick: d,
-        text: p.intl.string(p.t.lm1UKt),
+        text: b.intl.string(b.t.lm1UKt),
         disabled: o
     })
 }

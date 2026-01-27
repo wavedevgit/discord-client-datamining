@@ -6,8 +6,8 @@ n.d(t, {
     A: () => w
 }), n(896048), n(747238), n(812715);
 var i, a = n(311907),
-    s = n(73153),
-    o = n(77729),
+    o = n(73153),
+    s = n(77729),
     l = n(723702),
     c = n(194871),
     u = n(985018);
@@ -51,7 +51,7 @@ function _(e, t) {
     }), e
 }
 let h = {},
-    m = (0, l.isWindows)() ? "".concat(o.A.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
+    m = (0, l.isWindows)() ? "".concat(s.A.process.env.LOCALAPPDATA, "\\DiscordGames") : (0, l.isMac)() ? "/Applications/DiscordGames" : "/tmp";
 
 function g(e, t) {
     var n;
@@ -178,11 +178,11 @@ class N extends(i = a.Ay.PersistedStore) {
     }
     getLabelFromPath(e) {
         var t, n;
-        return e === m ? u.intl.string(u.t.VdDrjm) : null != (t = null != (n = o.A.fileManager.basename(e)) ? n : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) ? t : "?"
+        return e === m ? u.intl.string(u.t.VdDrjm) : null != (t = null != (n = s.A.fileManager.basename(e)) ? n : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(-1)[0]) ? t : "?"
     }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");
-let w = new N(s.h, {
+let w = new N(o.h, {
     DISPATCH_APPLICATION_INSTALL: O,
     DISPATCH_APPLICATION_UNINSTALL: A,
     DISPATCH_APPLICATION_CANCEL: v,

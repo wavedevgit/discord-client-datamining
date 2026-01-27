@@ -7,9 +7,9 @@ n.r(t), n.d(t, {
 var r = n(28728),
     i = n(735438),
     a = n.n(i),
-    s = n(319888);
-r.A.registerLanguage("ansi", s.A);
-let o = /(<script\/?\\?>)|(html\\?`)/g,
+    o = n(319888);
+r.A.registerLanguage("ansi", o.A);
+let s = /(<script\/?\\?>)|(html\\?`)/g,
     l = new Set(["html", "xml", "javascript", "typescript", "handlebars"]),
     c = /^[a-z0-9_+\-.#]+$/,
     u = r.A.listLanguages(),
@@ -56,7 +56,7 @@ function h(e, t) {
     let r = f(t);
     if (null != r && l.has(r)) {
         var i;
-        let t = e.replace(/\s*/g, "").match(o);
+        let t = e.replace(/\s*/g, "").match(s);
         if ((null != (i = null == t ? void 0 : t.length) ? i : 0) > 10) return !1
     }
     return !0

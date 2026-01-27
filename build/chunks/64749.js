@@ -17,8 +17,8 @@ var r = n(627968),
     C = n(47167),
     m = n(713654),
     p = n(915089),
-    b = n(201275),
-    f = n(967144),
+    f = n(201275),
+    b = n(967144),
     j = n(657048),
     g = n(963307),
     h = n(734057),
@@ -115,11 +115,11 @@ let E = l.memo(function(e) {
     } = e, {
         id: a,
         name: s
-    } = n.record, d = (0, b.$7)({
+    } = n.record, d = (0, f.$7)({
         guildId: l,
         roleId: a,
         size: 16
-    }), C = (0, c.bG)([x.A], () => x.A.getRole(l, a)), m = s.includes(g.QP) ? "" : "@", p = (0, u.rdh)(u.LU0.unsafe_rawColors.PRIMARY_300).hsl(), h = null != (t = null == C ? void 0 : C.colorString) ? t : p, y = (0, f.X_)(l, C, null == C ? void 0 : C.colorStrings);
+    }), C = (0, c.bG)([x.A], () => x.A.getRole(l, a)), m = s.includes(g.QP) ? "" : "@", p = (0, u.rdh)(u.LU0.unsafe_rawColors.PRIMARY_300).hsl(), h = null != (t = null == C ? void 0 : C.colorString) ? t : p, y = (0, b.X_)(l, C, null == C ? void 0 : C.colorStrings);
     return (0, r.jsxs)("div", {
         className: o()(_.xZ, _.ex, i),
         children: [(0, r.jsx)(u.WYI, {
@@ -182,8 +182,8 @@ function T(e) {
         selectedRoleIds: C = new Set,
         onChange: m,
         placeholder: p,
-        helperText: b,
-        className: f
+        helperText: f,
+        className: b
     } = e, j = (0, c.bG)([x.A], () => x.A.getRolesSnapshot(t)), g = l.useMemo(() => (function(e, t, n) {
         if (null == e) return {};
         let r = {};
@@ -269,7 +269,7 @@ function T(e) {
             })
         }), [g, y, t]);
     return (0, r.jsxs)("div", {
-        className: o()(_.MT, f),
+        className: o()(_.MT, b),
         children: [(0, r.jsxs)("div", {
             className: _.M6,
             children: [(0, r.jsx)(d.A, {
@@ -365,11 +365,11 @@ function T(e) {
                     innerAriaOrientation: "vertical"
                 })
             })]
-        }), null != b && (0, r.jsx)(u.Text, {
+        }), null != f && (0, r.jsx)(u.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             className: _.cy,
-            children: b
+            children: f
         })]
     })
 }

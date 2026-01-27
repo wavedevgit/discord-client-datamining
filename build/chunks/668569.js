@@ -79,7 +79,7 @@ let C = (0, a.A)((0, o.A)(function(e) {
         label: U.intl.string(U.t["/AXYnE"])
     }), Q = (0, A.A)(t), $ = t.isNonUserBot();
     return (0, r.jsxs)(i.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-needs-review": !0,
         navId: "user-context",
         onClose: l.Z_,
         "aria-label": U.intl.string(U.t.liqwPJ),

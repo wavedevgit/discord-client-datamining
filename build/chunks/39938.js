@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,14 +15,14 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = !1,
+let s = !1,
     l = !1;
 
 function c(e) {
     let {
         muted: t
     } = e;
-    o = t, l = !1
+    s = t, l = !1
 }
 
 function u(e) {
@@ -37,19 +37,19 @@ function d() {
 }
 class f extends(r = i.Ay.DeviceSettingsStore) {
     initialize(e) {
-        null != e && (o = e)
+        null != e && (s = e)
     }
     isMuted() {
-        return o
+        return s
     }
     shouldPlay() {
         return l
     }
     getUserAgnosticState() {
-        return o
+        return s
     }
 }
-s(f, "displayName", "StageMusicStore"), s(f, "persistKey", "StageMusicStore");
+o(f, "displayName", "StageMusicStore"), o(f, "persistKey", "StageMusicStore");
 let p = new f(a.h, {
     STAGE_MUSIC_MUTE: c,
     STAGE_MUSIC_PLAY: u,

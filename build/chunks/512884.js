@@ -2,21 +2,21 @@
 /** chunk id: 512884, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(29583),
     i = n(918494),
     a = n(683706),
-    s = n(618027);
+    o = n(618027);
 
-function o(e, t) {
-    (0, s.A)(2, arguments);
+function s(e, t) {
+    (0, o.A)(2, arguments);
     var n = (0, r.default)(e),
-        o = (0, r.default)(t),
-        l = (0, a.A)(n, o),
-        c = Math.abs((0, i.default)(n, o));
-    n.setFullYear(1584), o.setFullYear(1584);
-    var u = (0, a.A)(n, o) === -l,
+        s = (0, r.default)(t),
+        l = (0, a.A)(n, s),
+        c = Math.abs((0, i.default)(n, s));
+    n.setFullYear(1584), s.setFullYear(1584);
+    var u = (0, a.A)(n, s) === -l,
         d = l * (c - Number(u));
     return 0 === d ? 0 : d
 }

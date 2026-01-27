@@ -16,22 +16,22 @@ function a(e) {
         ref: t,
         onDrag: n,
         onDragStart: a,
-        onDragEnd: s
-    } = e, [o, l] = r.useState(!1);
+        onDragEnd: o
+    } = e, [s, l] = r.useState(!1);
     return r.useEffect(() => {
-        if (o) return window.addEventListener("mouseup", e), window.addEventListener("mousemove", r), () => {
+        if (s) return window.addEventListener("mouseup", e), window.addEventListener("mousemove", r), () => {
             window.removeEventListener("mouseup", e), window.removeEventListener("mousemove", r)
         };
 
         function e() {
-            null == s || s(), l(!1)
+            null == o || o(), l(!1)
         }
 
         function r(e) {
             let r = t.current;
             null != r && (null == n || n(i(r, e)))
         }
-    }, [t, o, s, n]), [o, r.useCallback(e => {
+    }, [t, s, o, n]), [s, r.useCallback(e => {
         e.preventDefault();
         let r = t.current;
         null != r && (l(!0), null == a || a(), null == n || n(i(r, e)))

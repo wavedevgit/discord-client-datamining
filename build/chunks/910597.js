@@ -1,43 +1,42 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 910597, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968),
     i = n(311907),
-    a = n(397927),
+    l = n(397927),
     s = n(827343),
-    o = n(195043),
-    l = n(430452),
+    a = n(195043),
+    o = n(430452),
     c = n(531525),
-    u = n(985018);
+    d = n(985018);
 
-function d() {
+function u() {
     let {
         attenuation: e,
         attenuateWhileSpeakingSelf: t,
         attenuateWhileSpeakingOthers: n
-    } = (0, i.cf)([l.A], () => ({
-        attenuation: l.A.getAttenuation(),
-        attenuateWhileSpeakingSelf: l.A.getAttenuateWhileSpeakingSelf(),
-        attenuateWhileSpeakingOthers: l.A.getAttenuateWhileSpeakingOthers()
+    } = (0, i.cf)([o.A], () => ({
+        attenuation: o.A.getAttenuation(),
+        attenuateWhileSpeakingSelf: o.A.getAttenuateWhileSpeakingSelf(),
+        attenuateWhileSpeakingOthers: o.A.getAttenuateWhileSpeakingOthers()
     }));
-    return (0, r.jsxs)(o.x, {
+    return (0, r.jsxs)(a.x, {
         setting: c.H.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
-        children: [(0, r.jsx)(a.Apm, {
-            label: u.intl.string(u.t.oSdBvW),
-            description: u.intl.string(u.t["0A/8Rt"]),
+        children: [(0, r.jsx)(l.Apm, {
+            label: d.intl.string(d.t.oSdBvW),
+            description: d.intl.string(d.t["0A/8Rt"]),
             initialValue: e,
             onValueChange: e => {
                 s.A.setAttenuation(e, t, n)
             }
-        }), (0, r.jsx)(a.dOG, {
-            label: u.intl.string(u.t["9dHxRY"]),
+        }), (0, r.jsx)(l.dOG, {
+            label: d.intl.string(d.t["9dHxRY"]),
             checked: t,
             onChange: t => s.A.setAttenuation(e, t, n)
-        }), (0, r.jsx)(a.dOG, {
-            label: u.intl.string(u.t.SMt0Gr),
+        }), (0, r.jsx)(l.dOG, {
+            label: d.intl.string(d.t.SMt0Gr),
             checked: n,
             onChange: n => s.A.setAttenuation(e, t, n)
         })]

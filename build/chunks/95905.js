@@ -4,9 +4,9 @@
 n.d(t, {
     A: () => s
 });
-var l = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(397927),
+var l = n(397927),
     i = n(763754),
     a = n(447215);
 let s = e => {
@@ -22,7 +22,7 @@ let s = e => {
         messageId: null == s ? void 0 : s.id,
         stopPropagation: !0
     })(null != d ? d : void 0)(u, c.id);
-    return (0, l.jsx)(r.Text, {
+    return (0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         children: m
     })

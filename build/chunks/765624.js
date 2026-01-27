@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 765624, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -11,8 +10,8 @@ var r = n(627968),
     a = n(615300),
     o = n(607399),
     c = n(319060),
-    u = n(397927),
-    d = n(240248),
+    d = n(397927),
+    u = n(240248),
     h = n(299198);
 
 function p(e, t, n) {
@@ -36,12 +35,12 @@ function g(e) {
     }
     return e
 }
-let m = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let _ = (0, u.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
     f = {
         friction: 10,
         tension: 130
     },
-    _ = function(e) {
+    m = function(e) {
         return class extends i.Component {
             componentDidMount() {
                 o.Fr || (window.addEventListener("resize", this.handleResizeDebounced), this.handleResize())
@@ -84,7 +83,7 @@ let m = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
             render() {
                 return (0, r.jsx)("div", {
                     className: h.i,
-                    children: (0, r.jsx)(u.CZY.Consumer, {
+                    children: (0, r.jsx)(d.CZY.Consumer, {
                         children: t => {
                             let {
                                 reducedMotion: n
@@ -102,7 +101,7 @@ let m = (0, d.xI)(c.A.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
                 super(...e), p(this, "timeout", void 0), p(this, "anim", new a.A.Value(0)), p(this, "state", {
                     shouldAnimate: !o.Fr
                 }), p(this, "handleResize", () => {
-                    let e = window.innerWidth > m;
+                    let e = window.innerWidth > _;
                     !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
                         shouldAnimate: e
                     })

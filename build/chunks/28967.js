@@ -3,7 +3,7 @@
 "use strict";
 let r;
 n.d(t, {
-    n: () => o
+    n: () => s
 }), n(457529);
 var i = n(973117);
 try {
@@ -21,7 +21,7 @@ function a() {
         return !1
     }
 }
-class s {
+class o {
     get(e, t) {
         let n = r.getItem(e);
         if (null != n) try {
@@ -41,4 +41,4 @@ class s {
         r.clear()
     }
 }
-let o = a() ? new s : new i.J
+let s = a() ? new o : new i.J

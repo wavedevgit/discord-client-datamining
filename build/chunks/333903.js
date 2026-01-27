@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(625557),
     i = n(723906),
     a = n(290424),
-    s = n(803082),
-    o = n(406985),
+    o = n(803082),
+    s = n(406985),
     l = n(227510),
     c = n(510281),
     u = n(869125);
@@ -50,7 +50,7 @@ function d(e, t, n) {
         keyboardNavigationBehavior: g,
         shouldSelectOnPressUp: y
     });
-    let v = (0, o.m)({
+    let v = (0, s.m)({
             selectionManager: t.selectionManager,
             hasItemActions: !!_
         }),
@@ -60,7 +60,7 @@ function d(e, t, n) {
         I = (0, a.$)(e, {
             labelable: !0
         }),
-        S = (0, s.v)(I, {
+        S = (0, o.v)(I, {
             role: "grid",
             id: O,
             "aria-multiselectable": "multiple" === t.selectionManager.selectionMode ? "true" : void 0

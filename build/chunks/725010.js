@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 725010, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     s: () => s
 });
 var r = n(64700),
     i = n(193658);
-let a = {
+let l = {
     block: "center"
 };
 
 function s(e) {
     let t = r.useRef(null);
-    return (0, i.A)(t, e, a, 400), t
+    return (0, i.A)(t, e, l, 400), t
 }

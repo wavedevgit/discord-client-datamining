@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(73153),
     i = n(863005),
     a = n(95701),
-    s = n(734057),
-    o = n(769765),
+    o = n(734057),
+    s = n(769765),
     l = n(287809),
     c = n(661191),
     u = n(652215);
@@ -38,9 +38,9 @@ function d(e, t) {
 function f(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-        l = s.A.getChannel(e);
+        l = o.A.getChannel(e);
     if (null == l || null == l.guild_id) return;
-    let c = o.A.getCategories(l.guild_id);
+    let c = s.A.getCategories(l.guild_id);
     if (null == c[e]) return;
     let u = c[e].filter(e => {
             let {

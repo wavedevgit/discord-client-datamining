@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(235986),
     c = n(634105);
 
@@ -44,13 +44,13 @@ class h extends(r = a.PureComponent) {
             children: n,
             iconSize: r,
             className: a,
-            iconClassName: s
+            iconClassName: o
         } = this.props;
         return (0, i.jsxs)(l.A, {
-            className: o()(c.N4, p[t], a),
+            className: s()(c.N4, p[t], a),
             align: l.A.Align.CENTER,
             children: [(0, i.jsx)(e, {
-                className: o()(c.Kk, _[r], s),
+                className: s()(c.Kk, _[r], o),
                 color: "currentColor"
             }), (0, i.jsx)("div", {
                 children: n

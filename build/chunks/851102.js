@@ -2,12 +2,12 @@
 /** chunk id: 851102, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(501459),
     i = n(1673);
 let a = RegExp("(?:\\(|\\（)(?<weekday>" + Object.keys(r.tS).join("|") + ")(?:\\)|\\）)", "i");
-class s {
+class o {
     pattern() {
         return a
     }

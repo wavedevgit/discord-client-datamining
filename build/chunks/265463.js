@@ -7,8 +7,8 @@ n.d(t, {
     vr: () => c,
     z0: () => o
 }), n(733351);
-var l = n(753738),
-    r = n(985018);
+var r = n(753738),
+    l = n(985018);
 
 function i(e, t) {
     return {
@@ -18,15 +18,15 @@ function i(e, t) {
 }
 
 function a() {
-    return i(0, r.intl.string(r.t["71wuR0"]))
+    return i(0, l.intl.string(l.t["71wuR0"]))
 }
 
 function s() {
-    return i(0, r.intl.string(r.t["w/BT3G"]))
+    return i(0, l.intl.string(l.t["w/BT3G"]))
 }
 
 function o(e, t) {
-    return i(1, (0, l.cw)(e, null == t ? void 0 : t.id))
+    return i(1, (0, r.cw)(e, null == t ? void 0 : t.id))
 }
 
 function c(e, t) {

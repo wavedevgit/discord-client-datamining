@@ -1,28 +1,27 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 160321, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968),
     i = n(417597),
-    a = n(775602),
+    l = n(775602),
     s = n(676279),
-    o = n(307973),
-    l = n(596513),
+    a = n(307973),
+    o = n(596513),
     c = n(120901);
-let u = e => {
+let d = e => {
     let {
         containerVisibilityPercentage: t
-    } = e, n = (0, i.bG)([a.A], () => a.A.useReducedMotion), u = (0, s.TM)();
+    } = e, n = (0, i.bG)([l.A], () => l.A.useReducedMotion), d = (0, s.TM)();
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(l.A, {
-            supportHEVCAlpha: u,
+        children: [(0, r.jsx)(o.A, {
+            supportHEVCAlpha: d,
             isMotionReduced: n,
             containerVisibilityPercentage: t,
             containerClassName: c.wG,
             assetClassName: c.lu
-        }), (0, r.jsx)(o.A, {
+        }), (0, r.jsx)(a.A, {
             isMotionReduced: n,
             containerVisibilityPercentage: t,
             boltContainerClassName: c.nJ,

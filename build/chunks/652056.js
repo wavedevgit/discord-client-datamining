@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 652056, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -17,17 +17,17 @@ var r = n(627968),
     m = n(386784),
     p = n(963175),
     f = n(985018),
-    b = n(691814);
+    h = n(691814);
 
-function h(e) {
+function b(e) {
     var t;
     let {
         onDeleteEditState: l
     } = e, {
-        editStateId: h,
+        editStateId: b,
         guildId: x,
         groupListingId: j
-    } = (0, g.O)(), _ = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(h)), O = null == _ ? void 0 : _.id, v = (0, m.A)(x), y = i.useMemo(() => {
+    } = (0, g.O)(), _ = (0, a.bG)([u.A], () => u.A.getSubscriptionListing(b)), O = null == _ ? void 0 : _.id, v = (0, m.A)(x), y = i.useMemo(() => {
         var e;
         return null != v && null != _ && (null != (e = v[_.role_id]) ? e : 0)
     }, [v, _]), A = 0 === y, E = null == O, N = null != (t = null == _ ? void 0 : _.archived) && t, {
@@ -59,7 +59,7 @@ function h(e) {
                     gap: 16,
                     children: [!A && (0, r.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        className: b.$,
+                        className: h.$,
                         children: f.intl.formatToPlainString(f.t.ABeonY, {
                             listingMemberCount: y
                         })

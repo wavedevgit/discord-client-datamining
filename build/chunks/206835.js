@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(159001),
     a = n(780964),
-    s = n(652215),
-    o = n(355097);
+    o = n(652215),
+    s = n(355097);
 
 function l() {
     let {
@@ -24,8 +24,8 @@ function l() {
                 openUserSettings: t
             } = n(840065);
             t(a.X.PROFILE_PANEL, {
-                section: s.nc_.PROFILE_CUSTOMIZATION,
-                subsection: null != e ? o.Eq.GUILD : o.Eq.USER_PROFILE,
+                section: o.nc_.PROFILE_CUSTOMIZATION,
+                subsection: null != e ? s.Eq.GUILD : s.Eq.USER_PROFILE,
                 analyticsLocation: l,
                 analyticsLocations: c
             })

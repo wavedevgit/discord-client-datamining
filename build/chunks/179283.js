@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(115703),
     c = n(438842),
     u = n(879472),
@@ -48,8 +48,8 @@ function _(e) {
         key: "trait-".concat(t)
     }, e)).filter(e => e.label.length > 0), [t]), m = t.description.length > 0;
     return m || a.length > 0 || h.length > 0 ? (0, r.jsxs)("div", {
-        className: s()(d.rf, n),
-        children: [m ? (0, r.jsx)(o.Text, {
+        className: o()(d.rf, n),
+        children: [m ? (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "text-subtle",
             children: t.description

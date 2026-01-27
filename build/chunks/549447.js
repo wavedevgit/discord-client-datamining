@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 549447, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     container: "container_f48ee4",
     fadeInFromTop: "fadeInFromTop_f48ee4",
     containerBackground: "containerBackground_f48ee4",
@@ -18,5 +17,4 @@ var r = {
     topOfPageGradient: "topOfPageGradient_f48ee4",
     topOfPageGradientWithCountdown: "topOfPageGradientWithCountdown_f48ee4",
     bottomOfPageGradient: "bottomOfPageGradient_f48ee4"
-};
-n.r(e.exports = r)
+})

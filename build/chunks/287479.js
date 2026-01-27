@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 287479, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -15,11 +15,11 @@ var r, i, l = n(311907),
     m = n(352821),
     p = n(132514),
     f = n(655943),
-    b = n(400812),
-    h = n(72533),
+    h = n(400812),
+    b = n(72533),
     x = n(652215);
 let j = new Set,
-    _ = b.Hy.LANDING,
+    _ = h.Hy.LANDING,
     O = null;
 
 function v(e) {
@@ -27,7 +27,7 @@ function v(e) {
         subsection: t
     } = e;
     if (c.A.getGuildId() === O) return !1;
-    _ = t === x.nd0.SERVER_GUIDE ? b.Hy.HOME_SETTINGS : b.Hy.LANDING, O = c.A.getGuildId()
+    _ = t === x.nd0.SERVER_GUIDE ? h.Hy.HOME_SETTINGS : h.Hy.LANDING, O = c.A.getGuildId()
 }
 class y extends(r = l.Ay.Store) {
     initialize() {
@@ -42,31 +42,31 @@ class y extends(r = l.Ay.Store) {
     hasChanges() {
         if (null == O) return !1;
         let e = a.A.isAdvancedMode(O);
-        if (_ === b.Hy.DEFAULT_CHANNELS)
+        if (_ === h.Hy.DEFAULT_CHANNELS)
             if (e) return g.A.hasChanges() || f.A.hasChanges();
             else return g.A.hasChanges();
-        return _ === b.Hy.CUSTOMIZATION_QUESTIONS ? f.A.hasChanges() || m.A.hasChanges() : _ === b.Hy.HOME_SETTINGS ? p.A.hasChanges() : _ === b.Hy.CONNECTIONS && m.A.hasChanges()
+        return _ === h.Hy.CUSTOMIZATION_QUESTIONS ? f.A.hasChanges() || m.A.hasChanges() : _ === h.Hy.HOME_SETTINGS ? p.A.hasChanges() : _ === h.Hy.CONNECTIONS && m.A.hasChanges()
     }
     hasConfiguredAnythingForCurrentStep() {
         if (null == O) return !1;
-        if (_ === b.Hy.SAFETY_CHECK) return !0;
-        if (_ === b.Hy.DEFAULT_CHANNELS) return g.A.editedDefaultChannelIds.size > 0;
-        if (_ === b.Hy.CUSTOMIZATION_QUESTIONS) return f.A.editedOnboardingPrompts.length > 0 || m.A.getEditedConnections().length > 0;
-        if (_ === b.Hy.HOME_SETTINGS) return !(0, o.jJ)(p.A.getSettings());
-        if (_ === b.Hy.CONNECTIONS) return m.A.getEditedConnections().length > 0;
+        if (_ === h.Hy.SAFETY_CHECK) return !0;
+        if (_ === h.Hy.DEFAULT_CHANNELS) return g.A.editedDefaultChannelIds.size > 0;
+        if (_ === h.Hy.CUSTOMIZATION_QUESTIONS) return f.A.editedOnboardingPrompts.length > 0 || m.A.getEditedConnections().length > 0;
+        if (_ === h.Hy.HOME_SETTINGS) return !(0, o.jJ)(p.A.getSettings());
+        if (_ === h.Hy.CONNECTIONS) return m.A.getEditedConnections().length > 0;
         return !1
     }
     hasErrors() {
-        return _ === b.Hy.CUSTOMIZATION_QUESTIONS && null != f.A.errors.find(e => null != e)
+        return _ === h.Hy.CUSTOMIZATION_QUESTIONS && null != f.A.errors.find(e => null != e)
     }
     showNotice() {
         if (null == O) return !1;
-        if ((0, h.o)(O)) return this.hasChanges();
+        if ((0, b.o)(O)) return this.hasChanges();
         let e = d.A.getCurrentPage();
-        return (_ !== b.Hy.SAFETY_CHECK || e === u.C.OVERVIEW) && null != _ && _ !== b.Hy.LANDING
+        return (_ !== h.Hy.SAFETY_CHECK || e === u.C.OVERVIEW) && null != _ && _ !== h.Hy.LANDING
     }
     canCloseEarly() {
-        return null == O || !this.hasErrors() && (!(0, h.o)(O) || !this.hasChanges())
+        return null == O || !this.hasErrors() && (!(0, b.o)(O) || !this.hasChanges())
     }
 }(i = "displayName") in y ? Object.defineProperty(y, i, {
     value: "GuildSettingsOnboardingStore",

@@ -1,76 +1,75 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 645789, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(311907),
+    l = n(311907),
     s = n(36525),
-    o = n(631670),
-    l = n(933725),
+    a = n(631670),
+    o = n(933725),
     c = n(587600),
-    u = n(207803),
-    d = n(624826),
-    f = n(752319),
+    d = n(207803),
+    u = n(624826),
+    _ = n(752319),
     p = n(253932),
-    _ = n(354694),
-    h = n(592074),
-    m = n(985018);
+    m = n(354694),
+    g = n(592074),
+    A = n(985018);
 
-function g() {
-    let e = (0, a.bG)([f.A], () => f.A.getIsSubmitDisabled()),
-        t = (0, a.bG)([f.A], () => f.A.getErrors()),
-        [n, g] = i.useState(!1),
-        E = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? m.intl.string(m.t["84MExs"]) : null, [t]),
-        y = i.useCallback(async () => {
+function f() {
+    let e = (0, l.bG)([_.A], () => _.A.getIsSubmitDisabled()),
+        t = (0, l.bG)([_.A], () => _.A.getErrors()),
+        [n, f] = i.useState(!1),
+        h = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? A.intl.string(A.t["84MExs"]) : null, [t]),
+        b = i.useCallback(async () => {
             var e, t, n, r, i;
-            g(!0);
-            let a = f.A.getAllPending(),
-                s = (0, c.Sk)(a),
-                m = (0, c.yX)(a),
-                E = (0, c.yg)(a),
-                y = !0;
+            f(!0);
+            let l = _.A.getAllPending(),
+                s = (0, c.Sk)(l),
+                A = (0, c.yX)(l),
+                h = (0, c.yg)(l),
+                b = !0;
             if (Object.keys(s).length > 0) {
-                let r = await (0, o.yu)(s);
-                if (y = y && null != (e = null == r ? void 0 : r.ok) && e, null == r ? void 0 : r.ok) {
+                let r = await (0, a.yu)(s);
+                if (b = b && null != (e = null == r ? void 0 : r.ok) && e, null == r ? void 0 : r.ok) {
                     let e = r.body;
-                    void 0 !== a.pendingAvatar && (0, d.t)({
+                    void 0 !== l.pendingAvatar && (0, u.t)({
                         avatarHash: e.avatar,
                         avatarId: s.avatarId,
-                        avatarAssetOrigin: null == (n = a.pendingAvatar) ? void 0 : n.assetOrigin
-                    }), (0, o.pZ)()
-                } else(null == r || null == (t = r.body) ? void 0 : t.username) != null && (0, h.E)()
+                        avatarAssetOrigin: null == (n = l.pendingAvatar) ? void 0 : n.assetOrigin
+                    }), (0, a.pZ)()
+                } else(null == r || null == (t = r.body) ? void 0 : t.username) != null && (0, g.E)()
             }
-            if (Object.keys(m).length > 0) {
-                let e = await (0, u.gi)(m);
-                y = y && null != (r = null == e ? void 0 : e.ok) && r, (null == e ? void 0 : e.ok) ? (0, u.RE)() : (0, _.m)()
+            if (Object.keys(A).length > 0) {
+                let e = await (0, d.gi)(A);
+                b = b && null != (r = null == e ? void 0 : e.ok) && r, (null == e ? void 0 : e.ok) ? (0, d.RE)() : (0, m.m)()
             }
-            if (void 0 !== a.pendingLegacyUsernameDisabled) try {
-                await p.m$.updateSetting(a.pendingLegacyUsernameDisabled), (0, o._e)()
+            if (void 0 !== l.pendingLegacyUsernameDisabled) try {
+                await p.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
             } catch (e) {
-                (0, _.m)(), y = !1
+                (0, m.m)(), b = !1
             }
-            if (Object.keys(E).length > 0) {
+            if (Object.keys(h).length > 0) {
                 let {
                     primaryGuildId: e
-                } = E;
+                } = h;
                 if (void 0 !== e) {
-                    let t = await (0, l.m)(e, null !== e);
-                    y = y && null != (i = null == t ? void 0 : t.ok) && i, (null == t ? void 0 : t.ok) ? (0, o.fw)() : (0, _.m)()
+                    let t = await (0, o.m)(e, null !== e);
+                    b = b && null != (i = null == t ? void 0 : t.ok) && i, (null == t ? void 0 : t.ok) ? (0, a.fw)() : (0, m.m)()
                 }
             }
-            y && (0, o.x8)(), g(!1)
+            b && (0, a.x8)(), f(!1)
         }, []),
-        b = i.useCallback(() => {
-            (0, o.IM)()
+        E = i.useCallback(() => {
+            (0, a.IM)()
         }, []);
     return (0, r.jsx)(s.A, {
         submitting: n,
-        onSave: y,
-        onReset: b,
+        onSave: b,
+        onReset: E,
         disabled: e,
-        errorMessage: null != E ? E : void 0
+        errorMessage: null != h ? h : void 0
     })
 }

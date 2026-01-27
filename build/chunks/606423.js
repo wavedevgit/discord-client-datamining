@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(284009),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(311907),
     c = n(397927),
     u = n(576622),
@@ -45,14 +45,14 @@ let v = e => {
             planId: A
         } = (0, g.X)(), I = (0, l.bG)([d.default], () => {
             let e = d.default.getCurrentUser();
-            return s()(null != e, "ProfileItem: currentUser cannot be undefined"), e
+            return o()(null != e, "ProfileItem: currentUser cannot be undefined"), e
         });
         i.useEffect(() => {
             (0, u.A)(I.id, I.getAvatarURL(null, 80))
         }, [I]);
         let S = (0, p.A)(),
             T = "US" === S.ipCountryCode && "CA" === S.ipSubdivisionCode;
-        if (O) return (0, r.jsx)(o.Modal, {
+        if (O) return (0, r.jsx)(s.Modal, {
             transitionState: e,
             title: "",
             actions: [],
@@ -79,7 +79,7 @@ let v = e => {
             text: T ? b.intl.string(b.t.PfnxqD) : b.intl.string(b.t["3PatSz"]),
             onClick: () => a(m.g.CONFIRM),
             variant: "primary"
-        }), (0, r.jsx)(o.Modal, {
+        }), (0, r.jsx)(s.Modal, {
             transitionState: e,
             title: N,
             subtitle: w,

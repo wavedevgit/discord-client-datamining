@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(442433),
     i = n(439372),
     a = n(267102),
-    s = n(712687),
-    o = n(203982),
+    o = n(712687),
+    s = n(203982),
     l = n(652215);
 
 function c(e, t, n) {
@@ -23,9 +23,9 @@ class u extends i.A {
     constructor(...e) {
         super(...e), c(this, "actions", {
             OVERLAY_SET_INPUT_LOCKED: () => {
-                null != s.A.getContextMenu() && (0, r.Z_)();
+                null != o.A.getContextMenu() && (0, r.Z_)();
                 let e = (0, a.rH)();
-                null != e && e.windowDispatch.dispatch(l.jej.POPOUT_CLOSE), o._.dispatch(l.jej.MODAL_CLOSE)
+                null != e && e.windowDispatch.dispatch(l.jej.POPOUT_CLOSE), s._.dispatch(l.jej.MODAL_CLOSE)
             }
         })
     }

@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 246356, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var r = n(64700),
     i = n(447404);
 
-function a(e) {
+function l(e) {
     let {
         children: t
     } = e, {
         preventIdle: n,
-        allowIdle: a
+        allowIdle: l
     } = (0, i.o)("popup");
-    return r.useEffect(() => (n(), () => a()), [a, n]), t
+    return r.useEffect(() => (n(), () => l()), [l, n]), t
 }

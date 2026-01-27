@@ -2,7 +2,7 @@
 /** chunk id: 46802, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    J: () => o
+    J: () => s
 });
 var r = n(297987);
 let i = "u" > typeof Element && "checkVisibility" in Element.prototype;
@@ -26,12 +26,12 @@ function a(e) {
     return a
 }
 
-function s(e, t) {
+function o(e, t) {
     return !e.hasAttribute("hidden") && !e.hasAttribute("data-react-aria-prevent-focus") && ("DETAILS" !== e.nodeName || !t || "SUMMARY" === t.nodeName || e.hasAttribute("open"))
 }
 
-function o(e, t) {
+function s(e, t) {
     return i ? e.checkVisibility({
         visibilityProperty: !0
-    }) && !e.closest("[data-react-aria-prevent-focus]") : "#comment" !== e.nodeName && a(e) && s(e, t) && (!e.parentElement || o(e.parentElement, e))
+    }) && !e.closest("[data-react-aria-prevent-focus]") : "#comment" !== e.nodeName && a(e) && o(e, t) && (!e.parentElement || s(e.parentElement, e))
 }

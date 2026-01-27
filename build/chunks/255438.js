@@ -9,17 +9,17 @@ n.d(t, {
 var r = n(985018);
 let i = 1024,
     a = 1024,
-    s = 1024,
-    o = {
+    o = 1024,
+    s = {
         useKibibytes: !1,
         showDecimalForGB: !0,
         useSpace: !0
     };
 
 function l(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o,
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
         n = t.useKibibytes ? a : 1e3,
-        i = t.useKibibytes ? s : 1e3,
+        i = t.useKibibytes ? o : 1e3,
         l = Math.ceil(e / n);
     if (l < i) return t.useSpace ? r.intl.formatToPlainString(r.t.cS889N, {
         size: l
@@ -35,11 +35,11 @@ function l(e) {
 }
 
 function c(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o,
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s,
         n = t.useKibibytes ? i : 1e3,
-        s = t.useKibibytes ? a : 1e3,
+        o = t.useKibibytes ? a : 1e3,
         c = e / n;
-    return c / s >= 1 ? l(c, t) : t.useSpace ? r.intl.formatToPlainString(r.t.bTzRR6, {
+    return c / o >= 1 ? l(c, t) : t.useSpace ? r.intl.formatToPlainString(r.t.bTzRR6, {
         size: Math.ceil(c)
     }) : r.intl.formatToPlainString(r.t.kEk9pr, {
         size: Math.ceil(c)

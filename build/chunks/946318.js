@@ -2,12 +2,12 @@
 /** chunk id: 946318, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(355418),
     i = n(11947);
 let a = RegExp("(?<prefix>上|下|这)(?:个)?(?:星期|礼拜|周)(?<weekday>" + Object.keys(i.tS).join("|") + ")");
-class s extends r.c {
+class o extends r.c {
     innerPattern() {
         return a
     }
@@ -16,15 +16,15 @@ class s extends r.c {
             r = t.groups.weekday,
             a = i.tS[r];
         if (void 0 === a) return null;
-        let s = null,
-            o = t.groups.prefix;
-        "上" == o ? s = "last" : "下" == o ? s = "next" : "这" == o && (s = "this");
+        let o = null,
+            s = t.groups.prefix;
+        "上" == s ? o = "last" : "下" == s ? o = "next" : "这" == s && (o = "this");
         let l = new Date(e.refDate.getTime()),
             c = !1,
             u = l.getDay();
-        if ("last" == s || "past" == s) l.setDate(l.getDate() + (a - 7 - u)), c = !0;
-        else if ("next" == s) l.setDate(l.getDate() + (a + 7 - u)), c = !0;
-        else if ("this" == s) l.setDate(l.getDate() + (a - u));
+        if ("last" == o || "past" == o) l.setDate(l.getDate() + (a - 7 - u)), c = !0;
+        else if ("next" == o) l.setDate(l.getDate() + (a + 7 - u)), c = !0;
+        else if ("this" == o) l.setDate(l.getDate() + (a - u));
         else {
             let e = a - u;
             Math.abs(e - 7) < Math.abs(e) && (e -= 7), Math.abs(e + 7) < Math.abs(e) && (e += 7), l.setDate(l.getDate() + e)

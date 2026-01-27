@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 946974, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    P: () => r
+/** Chunk was on 98186 **/
+/** chunk id: 946974, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    P: () => i
 });
-let r = "KEYBOARD_SHORTCUT_MODAL_KEY"
+let i = "KEYBOARD_SHORTCUT_MODAL_KEY"

@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(562465),
     i = n(582754),
     a = n(157559),
-    s = n(198982),
-    o = n(652215),
+    o = n(198982),
+    s = n(652215),
     l = n(985018);
 
 function c(e) {
-    let t = new s.LG(e).getAnyErrorMessage();
+    let t = new o.LG(e).getAnyErrorMessage();
     a.A.show({
         title: l.intl.string(l.t["328j/I"]),
         body: null != t ? t : l.intl.string(l.t.fEptJP)
@@ -27,7 +27,7 @@ function u(e) {
         type: a
     } = e;
     return r.Bo.put({
-        url: o.Rsh.USER_GAME_RELATIONSHIP(t, n),
+        url: s.Rsh.USER_GAME_RELATIONSHIP(t, n),
         body: {
             type: a
         },
@@ -45,7 +45,7 @@ async function d(e) {
     } = e;
     try {
         await r.Bo.del({
-            url: o.Rsh.USER_GAME_RELATIONSHIP(t, n),
+            url: s.Rsh.USER_GAME_RELATIONSHIP(t, n),
             oldFormErrors: !0,
             rejectWithError: !1
         }), i()
@@ -75,7 +75,7 @@ let f = {
         return u({
             userId: t,
             applicationId: n,
-            type: o.eA$.FRIEND,
+            type: s.eA$.FRIEND,
             onSuccess: () => {
                 i.OR.announce(l.intl.string(l.t.taJiuc))
             }

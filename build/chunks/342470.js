@@ -3,11 +3,11 @@
 "use strict";
 n.r(t), n.d(t, {
     Chrono: () => i.u,
-    Meridiem: () => s.FF,
+    Meridiem: () => o.FF,
     ParsingComponents: () => a.BP,
     ParsingResult: () => a.s4,
     ReferenceWithTimezone: () => a.b5,
-    Weekday: () => s.Bw,
+    Weekday: () => o.Bw,
     casual: () => p,
     createCasualConfiguration: () => g,
     createConfiguration: () => E,
@@ -18,8 +18,8 @@ n.r(t), n.d(t, {
 var r = n(125659),
     i = n(880683),
     a = n(374372),
-    s = n(322811),
-    o = n(774188),
+    o = n(322811),
+    s = n(774188),
     l = n(368324),
     c = n(600107),
     u = n(573047),
@@ -43,7 +43,7 @@ function g(e = !0) {
 
 function E(e = !0, t = !0) {
     return (0, r.i)({
-        parsers: [new l.A, new o.A(t), new u.A, new c.A, new d.A],
+        parsers: [new l.A, new s.A(t), new u.A, new c.A, new d.A],
         refiners: []
     }, e)
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(827734);
 
 function i(e, t) {
-    var n, i, a, s, o;
-    return null != (n = null == (s = (o = r.A.colors.BACKGROUND_SURFACE_HIGH).resolve) || null == (a = s.call(o, {
+    var n, i, a, o, s;
+    return null != (n = null == (o = (s = r.A.colors.BACKGROUND_SURFACE_HIGH).resolve) || null == (a = o.call(s, {
         theme: e,
         saturation: t
     })) || null == (i = a.hex) ? void 0 : i.call(a)) ? n : "#000"

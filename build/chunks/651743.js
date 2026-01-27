@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = new Set,
+let s = new Set,
     l = {};
 
 function c(e) {
@@ -30,18 +30,18 @@ function u(e) {
     let {
         applicationId: t
     } = e;
-    o.add(t)
+    s.add(t)
 }
 
 function d(e) {
     let {
         applicationId: t
     } = e;
-    o.delete(t)
+    s.delete(t)
 }
 class f extends(r = i.Ay.Store) {
     get launchingGames() {
-        return o
+        return s
     }
     get launchableGames() {
         return l
@@ -53,7 +53,7 @@ class f extends(r = i.Ay.Store) {
         }), !1)
     }
 }
-s(f, "displayName", "LaunchableGameStore");
+o(f, "displayName", "LaunchableGameStore");
 let p = new f(a.h, {
     GAME_LAUNCHABLE_UPDATE: c,
     GAME_CLOUD_SYNC_START: u,

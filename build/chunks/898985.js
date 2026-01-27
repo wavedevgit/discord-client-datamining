@@ -7,16 +7,16 @@ n.d(t, {
 var r = n(64700),
     i = n(508425),
     a = n(559949),
-    s = n(430571),
-    o = n(927961),
+    o = n(430571),
+    s = n(927961),
     l = n(985018);
 let c = {
-        [i.z.SOLID]: o.default.OpWJ3f,
-        [i.z.GRADIENT]: o.default["i9e/u1"],
-        [i.z.GLOW]: o.default["Ra3/93"],
-        [i.z.NEON]: o.default.x68b1F,
-        [i.z.TOON]: o.default.otpeeM,
-        [i.z.POP]: o.default.cjQOKb
+        [i.z.SOLID]: s.default.OpWJ3f,
+        [i.z.GRADIENT]: s.default["i9e/u1"],
+        [i.z.GLOW]: s.default["Ra3/93"],
+        [i.z.NEON]: s.default.x68b1F,
+        [i.z.TOON]: s.default.otpeeM,
+        [i.z.POP]: s.default.cjQOKb
     },
     u = {
         [i.z.SOLID]: 3,
@@ -28,11 +28,11 @@ let c = {
     };
 
 function d(e) {
-    let t = (0, s.A)(e);
+    let t = (0, o.A)(e);
     return r.useMemo(() => {
         var n, r;
         return {
-            name: l.intl.string(null != (n = c[e]) ? n : o.default.OpWJ3f),
+            name: l.intl.string(null != (n = c[e]) ? n : s.default.OpWJ3f),
             defaultColors: t,
             previewStyles: {
                 fontId: a.x.DEFAULT,

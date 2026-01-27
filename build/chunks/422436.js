@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 52139 **/
 /** chunk id: 422436, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     mG: "inline__6c706",
     sC: "hiddenMosaicItem__6c706",

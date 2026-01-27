@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(367513),
     a = n(951001),
-    s = n(398590),
-    o = n(976860),
+    o = n(398590),
+    s = n(976860),
     l = n(652215);
 
 function c(e) {
@@ -18,8 +18,8 @@ function c(e) {
         } = t;
     return r.useCallback(() => {
         var t;
-        (0, s.bz)();
+        (0, o.bz)();
         let r = null != (t = e.getGuildId()) ? t : l.ME;
-        (0, o.uh)(r, e.id), a.A.channelListScrollTo(r, e.id), null != n && i.A.selectParticipant(e.id, n)
+        (0, s.uh)(r, e.id), a.A.channelListScrollTo(r, e.id), null != n && i.A.selectParticipant(e.id, n)
     }, [e, n])
 }

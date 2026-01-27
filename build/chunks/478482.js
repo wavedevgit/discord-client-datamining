@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 478482, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     dt: "upsellFooter__5e07c",
     YW: "upsellFooterIcon__5e07c",

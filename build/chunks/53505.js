@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(481613),
     i = n.n(r),
     a = n(49485),
-    s = n(961350),
-    o = n(652215);
+    o = n(961350),
+    s = n(652215);
 let l = "Ubuntu",
     c = "Debian",
     u = "Fedora",
@@ -28,7 +28,7 @@ function E(e) {
         n = arguments.length > 2 ? arguments[2] : void 0,
         r = t ? "/ptb" : "",
         i = null != n ? "&format=".concat(n) : "";
-    return "".concat(o.AMi.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
+    return "".concat(s.AMi.DESKTOP).concat(r, "?platform=").concat(e).concat(i)
 }
 
 function y() {
@@ -59,14 +59,14 @@ function v(e, t, n) {
         case "iOS":
             return (0, a.Ay)(null != r ? r : "https://itunes.apple.com/us/app/discord-chat-for-games/id985746746", {
                 utmSource: e,
-                fingerprint: s.default.getFingerprint(),
+                fingerprint: o.default.getFingerprint(),
                 attemptId: (0, a.I_)()
             });
         case "Android":
             return (0, a.Ay)(null != r ? r : "https://play.google.com/store/apps/details", {
                 utmSource: e,
                 id: "com.discord",
-                fingerprint: s.default.getFingerprint(),
+                fingerprint: o.default.getFingerprint(),
                 attemptId: (0, a.I_)()
             });
         default:

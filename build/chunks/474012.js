@@ -2,10 +2,11 @@
 /** chunk id: 474012, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => o
-}), n(321073);
+    K: () => s
+}), n(321073), n(896048), n(228524);
 var r = n(575593),
     i = n(898461),
     a = n(837015),
-    s = n(203632);
-let o = e => null == e ? [] : e.reduce((e, t) => (t.type === r.R.AVATAR_DECORATION && e.push(i.A.fromServer(t)), t.type === r.R.PROFILE_EFFECT && e.push(s.A.fromServer(t)), t.type === r.R.NAMEPLATE && e.push(a.A.fromServer(t)), e), [])
+    o = n(203632);
+n(652215);
+let s = e => null == e ? [] : e.reduce((e, t) => (t.type === r.R.AVATAR_DECORATION && e.push(i.A.fromServer(t)), t.type === r.R.PROFILE_EFFECT && e.push(o.A.fromServer(t)), t.type === r.R.NAMEPLATE && e.push(a.A.fromServer(t)), e), [])

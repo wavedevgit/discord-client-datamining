@@ -1,7 +1,7 @@
 /** Chunk was on 99063 **/
 /** chunk id: 639735, original params: e,t,a (module,exports,require) **/
 a.d(t, {
-    A: () => M
+    A: () => _
 });
 var n, i, c = a(311907),
     o = a(73153);
@@ -29,7 +29,7 @@ class d extends(i = c.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : d[n] = "PurchasedItemsFestivityStore";
-let M = new d(o.h, {
+let _ = new d(o.h, {
     LOGOUT: function() {
         s = {
             canPlayWowMoment: !1,

@@ -2,13 +2,13 @@
 /** chunk id: 399263, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(747238), n(896048), n(142703);
 var r, i = n(311907),
     a = n(73153),
-    s = n(320501);
+    o = n(320501);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,7 +24,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -78,18 +78,18 @@ function v(e) {
         channelId: r,
         file: i,
         uploader: a,
-        message: s
+        message: o
     } = e;
     if (a._aborted || a._errored) return;
-    let o = null != (t = f[r]) ? t : d;
-    if (p[i.id] = a, f[r] = [...o, i], null == s) return;
-    _[i.id] = s;
+    let s = null != (t = f[r]) ? t : d;
+    if (p[i.id] = a, f[r] = [...s, i], null == o) return;
+    _[i.id] = o;
     let {
         items: c
     } = i;
-    null != c && (h[s.id] = u(l({}, i), {
+    null != c && (h[o.id] = u(l({}, i), {
         items: c
-    })), null != (n = s.nonce) || s.id
+    })), null != (n = o.nonce) || o.id
 }
 
 function A(e) {
@@ -173,7 +173,7 @@ function P(e) {
 }
 class D extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(s.A)
+        this.waitFor(o.A)
     }
     getFiles(e) {
         var t;
@@ -189,8 +189,8 @@ class D extends(r = i.Ay.Store) {
         if (null != e) return m[e]
     }
 }
-o(D, "displayName", "UploadStore");
-let x = new D(a.h, {
+s(D, "displayName", "UploadStore");
+let L = new D(a.h, {
     CONNECTION_OPEN: b,
     LOGOUT: O,
     UPLOAD_START: v,

@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(136722),
     i = n(317525),
     a = n(71393),
-    s = n(652215);
-let o = [s.rbe.GUILD_TEXT, s.rbe.GUILD_VOICE, s.rbe.GUILD_ANNOUNCEMENT, s.rbe.GUILD_FORUM, s.rbe.PUBLIC_THREAD, s.rbe.PRIVATE_THREAD],
-    l = r.kg(s.xBc.VIEW_CHANNEL, s.xBc.SEND_MESSAGES);
+    o = n(652215);
+let s = [o.rbe.GUILD_TEXT, o.rbe.GUILD_VOICE, o.rbe.GUILD_ANNOUNCEMENT, o.rbe.GUILD_FORUM, o.rbe.PUBLIC_THREAD, o.rbe.PRIVATE_THREAD],
+    l = r.kg(o.xBc.VIEW_CHANNEL, o.xBc.SEND_MESSAGES);
 
 function c(e) {
-    if (null == e || !o.includes(e.type)) return [];
+    if (null == e || !s.includes(e.type)) return [];
     let t = a.A.getGuild(e.guild_id);
     return null == t ? [] : Object.values(e.permissionOverwrites).filter(e => {
         var n, a;

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(825913),
     i = n(564004),
     a = n(967158),
-    s = n(498430),
-    o = n(803082),
+    o = n(498430),
+    s = n(803082),
     l = n(64700);
 let c = (0, l.createContext)({}),
     u = e => {
@@ -30,7 +30,7 @@ let c = (0, l.createContext)({}),
             isFocused: d,
             isFocusVisible: f,
             focusProps: p
-        } = (0, s.o)({
+        } = (0, o.o)({
             isTextInput: !0,
             autoFocus: e.autoFocus
         }), _ = !!e["aria-invalid"] && "false" !== e["aria-invalid"], h = (0, r.Sl)({
@@ -45,7 +45,7 @@ let c = (0, l.createContext)({}),
             defaultClassName: "react-aria-Input"
         });
         return l.createElement("input", {
-            ...(0, o.v)(u(e), p, n),
+            ...(0, s.v)(u(e), p, n),
             ...h,
             ref: t,
             "data-focused": d || void 0,

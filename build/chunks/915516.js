@@ -1,67 +1,77 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 915516, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Fu: () => c,
-    GZ: () => l,
-    __: () => d,
-    rn: () => u
+    Fu: () => E,
+    GZ: () => u,
+    __: () => _,
+    rn: () => d
 }), n(65821);
 var r = n(496431),
     i = n(773669),
+    l = n(975571),
+    o = n(927578),
     a = n(788868),
-    s = n(985018);
-let o = 1e3;
+    s = n(652215),
+    c = n(985018);
 
-function l(e, t) {
+function u(e, t, n, r) {
     switch (e) {
         case a.pe.TIER_0:
-            return t.days > 0 ? s.intl.formatToPlainString(s.t.sP5OqC, {
+            return t.days > 0 ? c.intl.formatToPlainString(c.t.sP5OqC, {
                 days: t.days
-            }) : t.hours > 0 ? s.intl.formatToPlainString(s.t["7Lhfu7"], {
+            }) : t.hours > 0 ? c.intl.formatToPlainString(c.t["7Lhfu7"], {
                 hours: t.hours
-            }) : s.intl.formatToPlainString(s.t.coDiS0, {
+            }) : c.intl.formatToPlainString(c.t.coDiS0, {
                 minutes: Math.max(t.minutes, 1)
             });
         case a.pe.TIER_2:
-            return t.days > 0 ? s.intl.formatToPlainString(s.t["4prs5b"], {
-                days: t.days
-            }) : t.hours > 0 ? s.intl.formatToPlainString(s.t.OD5nIR, {
-                hours: t.hours
-            }) : s.intl.formatToPlainString(s.t.rvyXjD, {
-                minutes: Math.max(t.minutes, 1)
+            return t.days > 0 ? c.intl.formatToPlainString(c.t.GPqVWT, {
+                days: t.days,
+                trialPeriod: n,
+                termsUrl: r
+            }) : t.hours > 0 ? c.intl.formatToPlainString(c.t.WFMtg1, {
+                hours: t.hours,
+                trialPeriod: n,
+                termsUrl: r
+            }) : c.intl.formatToPlainString(c.t.SxXB42, {
+                minutes: Math.max(t.minutes, 1),
+                trialPeriod: n,
+                termsUrl: r
             });
         default:
             throw Error("Unsupported subscription tier: ".concat(e))
     }
 }
-let c = e => {
-    var t;
-    let n = e.expires_at,
-        i = (0, r.A)(null != n ? Date.parse(n) : 0, o),
-        a = null == e || null == (t = e.subscription_trial) ? void 0 : t.sku_id;
-    return null == n || null == a ? null : l(a, i)
+let E = e => {
+    var t, n, i;
+    let c = e.expires_at,
+        E = (0, r.A)(null != c ? Date.parse(c) : 0, 1e3),
+        d = null == e || null == (t = e.subscription_trial) ? void 0 : t.sku_id;
+    return null == c || null == d ? null : u(d, E, (0, o.re)({
+        intervalType: null == (n = e.subscription_trial) ? void 0 : n.interval,
+        intervalCount: null == (i = e.subscription_trial) ? void 0 : i.interval_count
+    }), l.A.getArticleURL(e.trial_id === a.yo ? s.MVz.NITRO_TRIAL_FOR_ALL : s.MVz.PREMIUM_TRIAL))
 };
 
-function u(e, t) {
+function d(e, t) {
     let n = new Intl.NumberFormat(i.default.locale, {
         style: "percent",
         minimumFractionDigits: 0,
         maximumFractionDigits: 0
     }).format(t / 100);
-    return e.days > 0 ? s.intl.formatToPlainString(s.t["7mw8CZ"], {
+    return e.days > 0 ? c.intl.formatToPlainString(c.t["7mw8CZ"], {
         days: e.days,
         discountPercentage: n
-    }) : e.hours > 0 ? s.intl.formatToPlainString(s.t["0hYT6o"], {
+    }) : e.hours > 0 ? c.intl.formatToPlainString(c.t["0hYT6o"], {
         hours: e.hours,
         discountPercentage: n
-    }) : s.intl.formatToPlainString(s.t["2rh7rw"], {
+    }) : c.intl.formatToPlainString(c.t["2rh7rw"], {
         minutes: Math.max(e.minutes, 1),
         discountPercentage: n
     })
 }
-let d = e => {
+let _ = e => {
     let t = e.expires_at,
-        n = (0, r.A)(null != t ? Date.parse(t) : 0, o);
-    return null == t ? null : u(n, Number(e.discount.amount))
+        n = (0, r.A)(null != t ? Date.parse(t) : 0, 1e3);
+    return null == t ? null : d(n, Number(e.discount.amount))
 }

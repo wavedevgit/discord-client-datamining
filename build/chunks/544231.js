@@ -7,20 +7,20 @@ n.d(t, {
     XR: () => d,
     bg: () => u,
     v2: () => l,
-    xi: () => o
+    xi: () => s
 });
 var r = n(562465),
     i = n(73153),
     a = n(349435),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t) {
+function s(e, t) {
     return i.h.dispatch({
         type: "DISMISS_CHANNEL_SAFETY_WARNINGS",
         channelId: e,
         warningIds: t
     }), r.Bo.post({
-        url: s.Rsh.CHANNEL_SAFETY_WARNINGS_ACK(e),
+        url: o.Rsh.CHANNEL_SAFETY_WARNINGS_ACK(e),
         body: {
             warning_ids: t
         },
@@ -54,14 +54,14 @@ function u(e) {
 
 function d(e) {
     return r.Bo.post({
-        url: s.Rsh.SAFETY_WARNING_FALSE_POSITIVE(e),
+        url: o.Rsh.SAFETY_WARNING_FALSE_POSITIVE(e),
         rejectWithError: !1
     })
 }
 
 function f(e) {
     return r.Bo.post({
-        url: s.Rsh.ADD_SAFETY_WARNING(e),
+        url: o.Rsh.ADD_SAFETY_WARNING(e),
         body: {
             safety_warning_type: a._j.STRANGER_DANGER
         },

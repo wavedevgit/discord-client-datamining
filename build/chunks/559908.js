@@ -2,13 +2,13 @@
 /** chunk id: 559908, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => M,
+    Ay: () => j,
     gN: () => D
 }), n(896048);
 var r, i = n(311907),
     a = n(713402),
-    s = n(451988),
-    o = n(73153),
+    o = n(451988),
+    s = n(73153),
     l = n(961350),
     c = n(309010),
     u = n(203982),
@@ -123,15 +123,15 @@ let T = new a.J(function(e) {
     };
 
 function N(e) {
-    var t, n, r, i, a, o;
+    var t, n, r, i, a, s;
     let l = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
         c = I.get(C(e)),
         u = E(m({}, c, e), {
             value: null != (t = null != (n = e.value) ? n : null == c ? void 0 : c.value) ? t : 0,
             multiplier: Math.min(null != (r = null != (i = e.multiplier) ? i : null == c ? void 0 : c.multiplier) ? r : 1, O),
-            decayInterval: null != (a = null == c ? void 0 : c.decayInterval) ? a : new s.IX
+            decayInterval: null != (a = null == c ? void 0 : c.decayInterval) ? a : new o.IX
         });
-    I.set(C(e), u), l && (null == (o = u.decayInterval) || o.start(v, () => {
+    I.set(C(e), u), l && (null == (s = u.decayInterval) || s.start(v, () => {
         let e = I.get(C(u));
         if (null != e) {
             let n = u.multiplier !== e.multiplier && u.value !== e.value;
@@ -140,10 +140,10 @@ function N(e) {
                 null == (t = e.decayInterval) || t.stop(), e.value <= 0 && (N(E(m({}, e), {
                     value: 0,
                     multiplier: 1
-                })), j.emitChange())
+                })), M.emitChange())
             } else N(E(m({}, e), {
                 value: e.value - 1
-            })), j.emitChange()
+            })), M.emitChange()
         }
     }))
 }
@@ -172,24 +172,24 @@ function D(e, t, n, r) {
     return !(e !== t || null == n || r.has(n)) && (r.add(n), !0)
 }
 
-function x(e) {
+function L(e) {
     var t, n;
     let {
         channelId: r,
         message: {
             mentions: i,
             author: a,
-            nonce: s
+            nonce: o
         }
     } = e;
     if (!d.A.isEnabled()) return !1;
-    let o = l.default.getId();
-    if (!D(null == a ? void 0 : a.id, o, s, A)) return !1;
+    let s = l.default.getId();
+    if (!D(null == a ? void 0 : a.id, s, o, A)) return !1;
     let c = I.get(C({
         userId: null != (t = null == a ? void 0 : a.id) ? t : "???",
         channelId: r
     }));
-    if (d.A.screenshakeEnabled && d.A.screenshakeEnabledLocations[p.uD.MENTION] && null != i && null != i.find(e => e.id === o)) {
+    if (d.A.screenshakeEnabled && d.A.screenshakeEnabledLocations[p.uD.MENTION] && null != i && null != i.find(e => e.id === s)) {
         let e = null != c ? null != (n = (0, f.U$)(c, p.fZ.LEVEL_4)) ? n : .001 : 4 * Math.random();
         return u._.dispatch(_.jej.SHAKE_APP, {
             duration: 1e3,
@@ -198,7 +198,7 @@ function x(e) {
     }
     return !1
 }
-class L extends(r = i.Ay.Store) {
+class x extends(r = i.Ay.Store) {
     initialize() {
         this.waitFor(l.default, d.A, c.A)
     }
@@ -233,10 +233,10 @@ class L extends(r = i.Ay.Store) {
         return null != i ? (0, f.U$)(i, r) * n : 0
     }
 }
-h(L, "displayName", "PoggermodeStore");
-let j = new L(o.h, {
+h(x, "displayName", "PoggermodeStore");
+let M = new x(s.h, {
         POGGERMODE_UPDATE_COMBO: R,
         POGGERMODE_UPDATE_MESSAGE_COMBO: P,
-        MESSAGE_CREATE: x
+        MESSAGE_CREATE: L
     }),
-    M = j
+    j = M

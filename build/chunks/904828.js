@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 904828, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    yv: () => a,
+    yv: () => l,
     yx: () => i
 });
 var r = n(270887);
@@ -11,7 +10,7 @@ let i = {
         comboKeysBindGlobal: !0,
         action: e => (e.preventDefault(), e.stopPropagation(), (0, r.A)(), !1)
     },
-    a = {
+    l = {
         binds: ["mod+alt+up", "mod+shift+[", "ctrl+shift+tab"],
         comboKeysBindGlobal: !0,
         action: e => (e.preventDefault(), e.stopPropagation(), (0, r.A)(-1), !1)

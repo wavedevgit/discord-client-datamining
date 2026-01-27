@@ -1,65 +1,64 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 709634, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => O
+    A: () => v
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(989349),
-    l = n.n(o),
+    l = n(503698),
+    a = n.n(l),
+    s = n(989349),
+    o = n.n(s),
     c = n(397927),
     u = n(763754),
     d = n(449859),
-    f = n(943815),
-    p = n(447215),
-    _ = n(287809),
-    h = n(405269),
-    m = n(641131),
-    g = n(985018),
-    E = n(197172),
-    y = n(679740),
-    b = n(513653);
-let O = e => {
+    p = n(943815),
+    m = n(447215),
+    f = n(287809),
+    g = n(405269),
+    h = n(641131),
+    _ = n(985018),
+    b = n(197172),
+    A = n(679740),
+    y = n(513653);
+let v = e => {
     let {
         reportingUserId: t,
         guildId: n,
-        compact: a,
-        channel: o,
-        messageId: O,
-        reportedTimestamp: v
-    } = e, A = _.default.getUser(t), I = i.useMemo(() => a ? (0, f.A)((0, h.i$)(l()(), "LT")) : null, [a]), S = (0, p.P)({
-        user: A,
-        channelId: o.id,
+        compact: l,
+        channel: s,
+        messageId: v,
+        reportedTimestamp: x
+    } = e, O = f.default.getUser(t), E = i.useMemo(() => l ? (0, p.A)((0, g.i$)(o()(), "LT")) : null, [l]), j = (0, m.P)({
+        user: O,
+        channelId: s.id,
         guildId: n,
-        messageId: O
-    })((0, u.m2)(A, o)), T = null != A ? A.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : b, C = null != A ? g.intl.format(m.default["+zqXZs"], {
-        username: A.username,
-        onUserClick: S
-    }) : g.intl.string(m.default.xpRjfS);
+        messageId: v
+    })((0, u.m2)(O, s)), C = null != O ? O.getAvatarURL(n, (0, c.FT9)(c._3J.SIZE_16)) : y, I = null != O ? _.intl.format(h.default["+zqXZs"], {
+        username: O.username,
+        onUserClick: j
+    }) : _.intl.string(h.default.xpRjfS);
     return (0, r.jsxs)("div", {
-        className: s()(y.NB, y.JZ, I),
+        className: a()(A.NB, A.JZ, E),
         children: [(0, r.jsx)(c.euF, {
-            src: T,
+            src: C,
             size: c._3J.SIZE_16,
-            className: E.my,
+            className: b.my,
             "aria-label": ""
         }), (0, r.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
-            className: E.Xh,
-            children: C
+            className: b.Xh,
+            children: I
         }), (0, r.jsxs)(c.Text, {
             variant: "text-sm/medium",
             color: "text-subtle",
             children: [(0, r.jsx)("span", {
-                className: E.Ek,
+                className: b.Ek,
                 children: "•"
             }), (0, r.jsx)(d.A, {
-                timestamp: v,
-                className: E.vE
+                timestamp: x,
+                className: b.vE
             })]
         })]
     })

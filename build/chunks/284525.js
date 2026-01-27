@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(990078),
     a = n(397927),
-    s = n(594262);
+    o = n(594262);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -56,15 +56,15 @@ function d(e) {
     let {
         activity: t,
         embeddedActivity: n,
-        user: o,
+        user: s,
         onAction: u,
         location: d,
         variant: f = "secondary",
         size: p = "sm"
-    } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]), h = (0, s.l)({
+    } = e, _ = c(e, ["activity", "embeddedActivity", "user", "onAction", "location", "variant", "size"]), h = (0, o.l)({
         activity: null != t ? t : void 0,
         embeddedActivity: n,
-        user: o,
+        user: s,
         onGameJoin: u,
         location: d
     });

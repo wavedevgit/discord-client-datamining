@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(12543),
     i = n(384623),
     a = n(564804),
-    s = n(327922);
+    o = n(327922);
 
-function o(e) {
-    return (o = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
+function s(e) {
+    return (s = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {
         return typeof e
     } : function(e) {
         return e && "function" == typeof Symbol && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
@@ -58,7 +58,7 @@ function p(e) {
 }
 
 function _(e, t) {
-    return t && ("object" === o(t) || "function" == typeof t) ? t : h(e)
+    return t && ("object" === s(t) || "function" == typeof t) ? t : h(e)
 }
 
 function h(e) {
@@ -128,13 +128,13 @@ var y = function(e) {
     }, {
         key: "set",
         value: function(e, t, n, r) {
-            var o = (0, a.A)(e, r);
+            var s = (0, a.A)(e, r);
             if (n.isTwoDigitYear) {
-                var l = (0, i.qB)(n.year, o);
-                return e.setUTCFullYear(l, 0, r.firstWeekContainsDate), e.setUTCHours(0, 0, 0, 0), (0, s.A)(e, r)
+                var l = (0, i.qB)(n.year, s);
+                return e.setUTCFullYear(l, 0, r.firstWeekContainsDate), e.setUTCHours(0, 0, 0, 0), (0, o.A)(e, r)
             }
             var c = "era" in t && 1 !== t.era ? 1 - n.year : n.year;
-            return e.setUTCFullYear(c, 0, r.firstWeekContainsDate), e.setUTCHours(0, 0, 0, 0), (0, s.A)(e, r)
+            return e.setUTCFullYear(c, 0, r.firstWeekContainsDate), e.setUTCHours(0, 0, 0, 0), (0, o.A)(e, r)
         }
     }]), n
 }(r.i)

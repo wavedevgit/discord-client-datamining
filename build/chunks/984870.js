@@ -1,77 +1,74 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 984870, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    T: () => v
+    T: () => P
 });
 var r = n(627968),
     i = n(64700),
-    a = n(311907),
-    s = n(554146),
-    o = n(397927),
-    l = n(728364),
+    l = n(311907),
+    o = n(554146),
+    a = n(397927),
+    s = n(728364),
     c = n(264779),
     u = n(597758),
-    d = n(780964),
-    f = n(840065),
-    p = n(287809),
-    _ = n(954571),
-    h = n(927578),
-    m = n(379848),
-    g = n(49999),
-    E = n(652215),
-    y = n(788868),
-    b = n(985018),
-    O = n(210320);
-let v = e => {
+    E = n(780964),
+    d = n(840065),
+    _ = n(287809),
+    A = n(954571),
+    T = n(927578),
+    I = n(379848),
+    O = n(49999),
+    N = n(652215),
+    p = n(788868),
+    R = n(985018),
+    S = n(210320);
+let P = e => {
     let {
         dismissibleContent: t
-    } = e, n = (0, c.Cp)(), v = (0, a.bG)([p.default], () => h.Ay.isPremiumExactly(p.default.getCurrentUser(), y.PremiumTypes.TIER_2)), {
-        enabled: A
-    } = l.m.useExperiment({
+    } = e, n = (0, c.Cp)(), P = (0, l.bG)([_.default], () => T.Ay.isPremiumExactly(_.default.getCurrentUser(), p.PremiumTypes.TIER_2)), {
+        enabled: y
+    } = s.m.useExperiment({
         location: "OutboundPromotionNotice"
     }, {
         autoTrackExposure: !1,
-        disable: v
-    }), I = i.useCallback(() => {
-        _.default.track(E.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, f.openUserSettings)(d.X.GIFT_PANEL, {
-            section: E.nc_.INVENTORY
+        disable: P
+    }), f = i.useCallback(() => {
+        A.default.track(N.HAw.OUTBOUND_PROMOTION_NOTICE_CLICKED), (0, d.openUserSettings)(E.X.GIFT_PANEL, {
+            section: N.nc_.INVENTORY
         }), u.Ay.dismissOutboundPromotionNotice()
     }, []);
-    if (null == n) return null;
-    let S = e => (0, r.jsxs)(o.$Td, {
-        color: o.Hv$.PREMIUM_TIER_2,
-        children: [(0, r.jsx)(o.PMB, {
-            noticeType: E.kqX.OUTBOUND_PROMOTION,
-            onClick: () => {
-                u.Ay.dismissOutboundPromotionNotice(), null !== e && e(g.i.USER_DISMISS)
-            }
-        }), (0, r.jsx)(o.tvc, {
-            size: "md",
-            color: "currentColor",
-            className: O.P
-        }), A ? b.intl.string(b.t["5JMiOo"]) : b.intl.string(b.t["Pzh+G2"]), (0, r.jsx)(o.Z_L, {
-            noticeType: E.kqX.OUTBOUND_PROMOTION,
-            onClick: () => {
-                I(), null !== e && e(g.i.TAKE_ACTION)
-            },
-            children: b.intl.string(b.t.jVcuVY)
-        })]
-    });
-    return (0, r.jsx)(m.YS, {
+    return null == n ? null : (0, r.jsx)(I.YS, {
         contentType: t,
         newSnowflakeId: n,
         timeRecurringConfig: {
             cooldownDurationMs: 0
         },
-        groupName: g.m.NOTICE_BAR,
+        groupName: O.m.NOTICE_BAR,
         bypassAutoDismiss: !0,
         children: e => {
             let {
                 visibleContent: t,
                 markAsDismissed: n
             } = e;
-            if (t === s.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return S(n)
+            if (t === o.M.THIRD_PARTY_OUTBOUND_PROMO_NAGBAR) return (0, r.jsxs)(a.$Td, {
+                color: a.Hv$.PREMIUM_TIER_2,
+                children: [(0, r.jsx)(a.PMB, {
+                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+                    onClick: () => {
+                        u.Ay.dismissOutboundPromotionNotice(), null !== n && n(O.i.USER_DISMISS)
+                    }
+                }), (0, r.jsx)(a.tvc, {
+                    size: "md",
+                    color: "currentColor",
+                    className: S.P
+                }), y ? R.intl.string(R.t["5JMiOo"]) : R.intl.string(R.t["Pzh+G2"]), (0, r.jsx)(a.Z_L, {
+                    noticeType: N.kqX.OUTBOUND_PROMOTION,
+                    onClick: () => {
+                        f(), null !== n && n(O.i.TAKE_ACTION)
+                    },
+                    children: R.intl.string(R.t.jVcuVY)
+                })]
+            })
         }
     })
 }

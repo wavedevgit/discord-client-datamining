@@ -2,10 +2,10 @@
 /** chunk id: 587600, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    C5: () => s,
+    C5: () => o,
     Sk: () => a,
     yX: () => i,
-    yg: () => o
+    yg: () => s
 }), n(228524);
 var r = n(392107);
 
@@ -29,7 +29,7 @@ function a(e) {
     return void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), void 0 !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function s(e) {
+function o(e) {
     let t = {};
     if (void 0 !== e.pendingAvatar) {
         let {
@@ -44,7 +44,7 @@ function s(e) {
     return void 0 !== e.pendingAvatarDecoration && (t.avatarDecoration = e.pendingAvatarDecoration), void 0 !== e.pendingNameplate && (t.nameplate = e.pendingNameplate), void 0 !== e.pendingDisplayNameStyles && (t.displayNameStyles = e.pendingDisplayNameStyles), t
 }
 
-function o(e) {
+function s(e) {
     let t = {};
     return void 0 !== e.pendingPrimaryGuildId && (t.primaryGuildId = e.pendingPrimaryGuildId), t
 }

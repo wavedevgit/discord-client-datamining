@@ -5,21 +5,21 @@ n.d(t, {
     B6: () => N,
     Ix: () => m,
     W5: () => k,
-    W6: () => L,
+    W6: () => x,
     XZ: () => h,
     dO: () => P,
-    g: () => M,
+    g: () => j,
     qh: () => w,
     rd: () => A,
     y: () => D,
-    zy: () => j
+    zy: () => M
 });
 var r = n(47312),
     i = n(64700);
 n(655972);
 var a = n(830845),
-    s = n(777211),
-    o = n(258635),
+    o = n(777211),
+    s = n(258635),
     l = n(1139),
     c = n(353719),
     u = n.n(c);
@@ -28,11 +28,11 @@ var d = n(299146),
     f = n(833871),
     p = n.n(f),
     _ = function(e) {
-        var t = (0, s.A)();
+        var t = (0, o.A)();
         return t.displayName = e, t
     }("Router-History"),
     h = function(e) {
-        var t = (0, s.A)();
+        var t = (0, o.A)();
         return t.displayName = e, t
     }("Router"),
     m = function(e) {
@@ -110,12 +110,12 @@ function A(e) {
     var t = e.computedMatch,
         n = e.to,
         r = e.push,
-        s = void 0 !== r && r;
+        o = void 0 !== r && r;
     return i.createElement(h.Consumer, null, function(e) {
-        e || (0, o.A)(!1);
+        e || (0, s.A)(!1);
         var r = e.history,
             c = e.staticContext,
-            u = s ? r.push : r.replace,
+            u = o ? r.push : r.replace,
             d = (0, a.yJ)(t ? "string" == typeof n ? v(n, t.params) : (0, l.A)({}, n, {
                 pathname: v(n.pathname, t.params)
             }) : n);
@@ -157,8 +157,8 @@ function N(e, t) {
         r = n.path,
         i = n.exact,
         a = void 0 !== i && i,
-        s = n.strict,
-        o = void 0 !== s && s,
+        o = n.strict,
+        s = void 0 !== o && o,
         l = n.sensitive,
         c = void 0 !== l && l;
     return [].concat(r).reduce(function(t, n) {
@@ -166,11 +166,11 @@ function N(e, t) {
         if (t) return t;
         var r = C(n, {
                 end: a,
-                strict: o,
+                strict: s,
                 sensitive: c
             }),
             i = r.regexp,
-            s = r.keys,
+            o = r.keys,
             l = i.exec(e);
         if (!l) return null;
         var u = l[0],
@@ -180,7 +180,7 @@ function N(e, t) {
             path: n,
             url: "/" === n && "" === u ? "/" : u,
             isExact: f,
-            params: s.reduce(function(e, t, n) {
+            params: o.reduce(function(e, t, n) {
                 return e[t.name] = d[n], e
             }, {})
         }
@@ -193,17 +193,17 @@ var w = function(e) {
     return (0, r.A)(t, e), t.prototype.render = function() {
         var e = this;
         return i.createElement(h.Consumer, null, function(t) {
-            t || (0, o.A)(!1);
+            t || (0, s.A)(!1);
             var n = e.props.location || t.location,
                 r = e.props.computedMatch ? e.props.computedMatch : e.props.path ? N(n.pathname, e.props) : t.match,
                 a = (0, l.A)({}, t, {
                     location: n,
                     match: r
                 }),
-                s = e.props,
-                c = s.children,
-                u = s.component,
-                d = s.render;
+                o = e.props,
+                c = o.children,
+                u = o.component,
+                d = o.render;
             return Array.isArray(c) && 0 === c.length && (c = null), i.createElement(h.Provider, {
                 value: a
             }, a.match ? c ? "function" == typeof c ? c(a) : c : u ? i.createElement(u, a) : d ? d(a) : null : "function" == typeof c ? c(a) : null)
@@ -222,14 +222,14 @@ var P = function(e) {
     return (0, r.A)(t, e), t.prototype.render = function() {
         var e = this;
         return i.createElement(h.Consumer, null, function(t) {
-            t || (0, o.A)(!1);
+            t || (0, s.A)(!1);
             var n, r, a = e.props.location || t.location;
             return i.Children.forEach(e.props.children, function(e) {
                 if (null == r && i.isValidElement(e)) {
                     n = e;
-                    var s = e.props.path || e.props.from;
-                    r = s ? N(a.pathname, (0, l.A)({}, e.props, {
-                        path: s
+                    var o = e.props.path || e.props.from;
+                    r = o ? N(a.pathname, (0, l.A)({}, e.props, {
+                        path: o
                     })) : t.match
                 }
             }), r ? i.cloneElement(n, {
@@ -246,30 +246,30 @@ function D(e) {
             var n = t.wrappedComponentRef,
                 r = (0, d.A)(t, ["wrappedComponentRef"]);
             return i.createElement(h.Consumer, null, function(t) {
-                return t || (0, o.A)(!1), i.createElement(e, (0, l.A)({}, r, t, {
+                return t || (0, s.A)(!1), i.createElement(e, (0, l.A)({}, r, t, {
                     ref: n
                 }))
             })
         };
     return n.displayName = t, n.WrappedComponent = e, p()(n, e)
 }
-var x = i.useContext;
+var L = i.useContext;
 
-function L() {
-    return x(_)
-}
-
-function j() {
-    return x(h).location
+function x() {
+    return L(_)
 }
 
 function M() {
-    var e = x(h).match;
+    return L(h).location
+}
+
+function j() {
+    var e = L(h).match;
     return e ? e.params : {}
 }
 
 function k(e) {
-    var t = j(),
-        n = x(h).match;
+    var t = M(),
+        n = L(h).match;
     return e ? N(t.pathname, e) : n
 }

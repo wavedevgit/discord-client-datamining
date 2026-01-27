@@ -29,8 +29,8 @@ n.d(t, {
 var r = n(73153),
     i = n(817281),
     a = n(954571),
-    s = n(775602),
-    o = n(652215),
+    o = n(775602),
+    s = n(652215),
     l = n(815968),
     c = n(823894);
 
@@ -59,7 +59,7 @@ function f(e) {
 function p() {
     r.h.dispatch({
         type: "ACCESSIBILITY_KEYBOARD_MODE_ENABLE"
-    }), a.default.track(o.HAw.KEYBOARD_MODE_TOGGLED, {
+    }), a.default.track(s.HAw.KEYBOARD_MODE_TOGGLED, {
         enabled: !0
     })
 }
@@ -67,7 +67,7 @@ function p() {
 function _() {
     r.h.dispatch({
         type: "ACCESSIBILITY_KEYBOARD_MODE_DISABLE"
-    }), a.default.track(o.HAw.KEYBOARD_MODE_TOGGLED, {
+    }), a.default.track(s.HAw.KEYBOARD_MODE_TOGGLED, {
         enabled: !1
     })
 }
@@ -105,12 +105,12 @@ function y(e) {
 }
 
 function b(e) {
-    let t = s.A.useReducedMotion;
+    let t = o.A.useReducedMotion;
     r.h.dispatch({
         type: "ACCESSIBILITY_SET_PREFERS_REDUCED_MOTION",
         prefersReducedMotion: e
     });
-    let n = s.A.useReducedMotion;
+    let n = o.A.useReducedMotion;
     !t && n ? i.Ay.applySettingsOverride({
         gifAutoPlay: {
             value: !1,
@@ -166,7 +166,7 @@ function T(e) {
     r.h.dispatch({
         type: "ACCESSIBILITY_SET_ROLE_STYLE",
         roleStyle: e
-    }), a.default.track(o.HAw.ROLE_STYLE_SETTING_UPDATED, {
+    }), a.default.track(s.HAw.ROLE_STYLE_SETTING_UPDATED, {
         role_style: e
     })
 }

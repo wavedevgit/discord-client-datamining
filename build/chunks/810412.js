@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(64700),
     i = n(77729),
     a = n(760751),
-    s = n(383501),
-    o = n(954571),
+    o = n(383501),
+    s = n(954571),
     l = n(41984),
     c = n(652215),
     u = function(e) {
@@ -34,14 +34,14 @@ function d(e) {
     }
 }
 async function f(e, t, r) {
-    var s, u, f, p, _, h;
+    var o, u, f, p, _, h;
     let m = null != r ? a.A.getDetectableGame(r) : null,
         {
             default: g
         } = n(833551),
-        E = null != (s = null == g ? void 0 : g.getMostRecentOverlayRenderMethod()) ? s : void 0,
+        E = null != (o = null == g ? void 0 : g.getMostRecentOverlayRenderMethod()) ? o : void 0,
         y = null != E ? l.Ue[E] : void 0;
-    __OVERLAY__ && (y = l.Ue[l.Ue.Hook]), o.default.track(c.HAw.OVERLAY_TOGGLED, {
+    __OVERLAY__ && (y = l.Ue[l.Ue.Hook]), s.default.track(c.HAw.OVERLAY_TOGGLED, {
         enabled: e,
         setting_type: d(t),
         client_setting_type: t,
@@ -77,13 +77,13 @@ function _(e, t) {
         liveUserIds: u,
         contentInventoryIds: d
     } = t;
-    ((null != (n = null == l ? void 0 : l.length) ? n : 0) !== 0 || (null != (r = null == u ? void 0 : u.length) ? r : 0) !== 0 || (null != (i = null == d ? void 0 : d.length) ? i : 0) !== 0) && o.default.track(c.HAw.WIDGET_CONTENT_SHOWN, {
+    ((null != (n = null == l ? void 0 : l.length) ? n : 0) !== 0 || (null != (r = null == u ? void 0 : u.length) ? r : 0) !== 0 || (null != (i = null == d ? void 0 : d.length) ? i : 0) !== 0) && s.default.track(c.HAw.WIDGET_CONTENT_SHOWN, {
         overlay_locked: a,
         widget_type: e,
         shown_user_ids: l,
         live_user_ids: u,
         content_inventory_ids: d,
-        media_session_id: s.A.getMediaSessionId()
+        media_session_id: o.A.getMediaSessionId()
     })
 }
 
@@ -92,7 +92,7 @@ function h(e, t) {
         pinned: n,
         opacity: r
     } = t;
-    o.default.track(c.HAw.WIDGET_SETTING_UPDATED, {
+    s.default.track(c.HAw.WIDGET_SETTING_UPDATED, {
         widget_type: e,
         pinned: n,
         opacity: r
@@ -112,12 +112,12 @@ function E(e, t) {
         userId: i,
         secondaryValue: a
     } = t;
-    o.default.track(c.HAw.WIDGET_INTERACTED, {
+    s.default.track(c.HAw.WIDGET_INTERACTED, {
         widget_type: e,
         interaction_type: n,
         interaction_value: r,
         interaction_secondary_value: a,
         target_user_id: i,
-        media_session_id: s.A.getMediaSessionId()
+        media_session_id: o.A.getMediaSessionId()
     })
 }

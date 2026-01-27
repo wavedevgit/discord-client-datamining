@@ -7,24 +7,24 @@ n.d(t, {
 var r = n(64700),
     i = n(440745),
     a = n.n(i),
-    s = n(317097),
-    o = n(311907),
+    o = n(317097),
+    s = n(311907),
     l = n(775602);
 let c = e => {
-    let t = (0, o.bG)([l.A], () => l.A.desaturateUserColors ? l.A.saturation : 1);
+    let t = (0, s.bG)([l.A], () => l.A.desaturateUserColors ? l.A.saturation : 1);
     return (0, r.useMemo)(() => {
         let {
             h: n,
             s: r,
             l: i
-        } = a()((0, s.Hl)(e)).toHsl(), o = a()({
+        } = a()((0, o.Hl)(e)).toHsl(), s = a()({
             h: n,
             s: r * t,
             l: i
         });
         return {
-            hex: o.toHexString(),
-            hsl: o.toHslString()
+            hex: s.toHexString(),
+            hsl: s.toHslString()
         }
     }, [e, t])
 }

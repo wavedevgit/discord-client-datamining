@@ -3,13 +3,13 @@
 "use strict";
 n.d(t, {
     Ay: () => p,
-    LD: () => s.LD
+    LD: () => o.LD
 }), n(896048);
 var r = n(735438),
     i = n.n(r),
     a = n(451988),
-    s = n(36124),
-    o = n(125385),
+    o = n(36124),
+    s = n(125385),
     l = n(818307),
     c = n(652215);
 
@@ -121,9 +121,9 @@ class p {
         !f(e) || t.has(e) || (t.add(e), this._enqueue(e, n))
     }
     constructor(e) {
-        u(this, "_members", new o.A((e, t) => this._enqueue(e, {
+        u(this, "_members", new s.A((e, t) => this._enqueue(e, {
             members: t
-        }))), u(this, "_channels", new s.Ay((e, t) => this._enqueue(e, {
+        }))), u(this, "_channels", new o.Ay((e, t) => this._enqueue(e, {
             channels: t
         }))), u(this, "_threadMemberLists", new l.A((e, t) => this._enqueue(e, {
             thread_member_lists: t

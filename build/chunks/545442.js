@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(36075),
     c = n(707616);
 
@@ -40,7 +40,7 @@ function f(e) {
     let {
         color: n,
         colors: a,
-        className: o,
+        className: s,
         background: u = !0,
         hoverOverride: d
     } = e, [f, p] = i.useState(!1), _ = null != (t = null == a ? void 0 : a.primaryColor) ? t : n, {
@@ -50,7 +50,7 @@ function f(e) {
         animatedGradientId: E
     } = (0, l.RM)(_, null == a ? void 0 : a.secondaryColor, null == a ? void 0 : a.tertiaryColor);
     return null == _ ? null : (0, r.jsxs)("svg", {
-        className: s()(c.JW, o),
+        className: o()(c.JW, s),
         viewBox: "0 0 20 20",
         fill: "none",
         onMouseEnter: () => {
@@ -120,7 +120,7 @@ function p(e) {
         name: i,
         tooltip: a = !0
     } = e;
-    return null == t && null == n ? null : a ? (0, r.jsx)(o.m, {
+    return null == t && null == n ? null : a ? (0, r.jsx)(s.m, {
         __unsupportedReactNodeAsText: i,
         children: (0, r.jsx)("span", {
             "aria-hidden": !0,
@@ -136,7 +136,7 @@ function _(e) {
         className: i
     } = e, {
         gradientStyle: a,
-        gradientClassname: o
+        gradientClassname: s
     } = (0, l.v5)({
         colorStrings: n,
         roleStyle: "dot"
@@ -147,8 +147,8 @@ function _(e) {
             backgroundColor: null != t ? t : void 0
         });
     return (0, r.jsx)("span", {
-        className: s()(c.Ni, i, {
-            [o]: u
+        className: o()(c.Ni, i, {
+            [s]: u
         }),
         style: f
     })

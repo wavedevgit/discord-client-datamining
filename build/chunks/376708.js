@@ -15,9 +15,9 @@ n.d(t, {
 var r = n(811602),
     i = n(282108),
     a = n(927492),
-    s = n(969043);
+    o = n(969043);
 n(134413);
-var o = n(203389),
+var s = n(203389),
     l = n(734057),
     c = n(71393),
     u = n(320501);
@@ -58,11 +58,11 @@ function y(e) {
 }
 
 function b(e) {
-    if (null == e || !(0, o.L)() || !h(e)) return !0;
+    if (null == e || !(0, s.L)() || !h(e)) return !0;
     let {
         loaded: t,
         firstMessage: n
-    } = s.A.getMessage(e);
+    } = o.A.getMessage(e);
     return !t || null == n || !(0, i.y5)(n, r.LO.EXPLICIT)
 }
 
@@ -78,7 +78,7 @@ function A(e, t) {
     var n, r, i;
     let a = l.A.getChannel(e);
     if (null == a || !a.isModeratorReportChannel()) return !1;
-    let s = u.A.getMessages(e).first();
-    return (null == s || null == (i = s.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? void 0 : n.reported_user_id) === t
+    let o = u.A.getMessages(e).first();
+    return (null == o || null == (i = o.messageSnapshots) || null == (r = i[0]) || null == (n = r.moderatorReport) ? void 0 : n.reported_user_id) === t
 }
 n(953660)

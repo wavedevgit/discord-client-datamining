@@ -1,318 +1,276 @@
-/** Chunk was on web.js **/
-/** chunk id: 30793, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => X
-}), n(896048);
-var r, i = n(989349),
-    a = n.n(i),
-    s = n(311907),
-    o = n(451988),
-    l = n(73153),
-    c = n(869038),
-    u = n(7133),
-    d = n(45938),
-    f = n(652215);
+/** Chunk was on 37372 **/
+/** chunk id: 30793, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => x
+}), r(896048);
+var n, l, i = r(989349),
+    o = r.n(i),
+    s = r(311907),
+    a = r(451988),
+    c = r(73153),
+    u = r(869038),
+    d = r(7133),
+    E = r(45938),
+    f = r(652215);
+let p = {},
+    _ = new Map,
+    O = [],
+    h = [],
+    S = [],
+    g = new Set,
+    y = {},
+    C = {},
+    b = new Set;
 
-function p(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-let _ = 0x7fffffff,
-    h = {},
-    m = new Map,
-    g = [],
-    E = [],
-    y = [],
-    b = new Set,
-    O = {},
-    v = {},
-    A = new Set;
-
-function I(e) {
-    let t = u.A.createFromServer(e),
-        n = t.code;
-    if (m.has(n)) m.set(n, m.get(n).merge(t));
-    else if (m.set(n, t), null != t.expiresAt) {
-        let e = new o.Ep;
-        h[n] = e, S(n)
+function m(e) {
+    let t = d.A.createFromServer(e),
+        r = t.code;
+    if (_.has(r)) _.set(r, _.get(r).merge(t));
+    else if (_.set(r, t), null != t.expiresAt) {
+        let e = new a.Ep;
+        p[r] = e,
+            function e(t) {
+                let r = _.get(t);
+                if (null == r || null == r.expiresAt) return;
+                let n = r.expiresAt.valueOf() - o()().valueOf();
+                if (n <= 0) _.delete(t), delete p[t], T.emitChange();
+                else {
+                    let r = p[t];
+                    if (null == r) return;
+                    r.start(Math.min(0x7fffffff, n), () => e(t))
+                }
+            }(r)
     }
 }
 
-function S(e) {
-    let t = m.get(e);
-    if (null == t || null == t.expiresAt) return;
-    let n = t.expiresAt.valueOf() - a()().valueOf();
-    if (n <= 0) m.delete(e), delete h[e], Z.emitChange();
-    else {
-        let t = h[e];
-        if (null == t) return;
-        t.start(Math.min(_, n), () => S(e))
-    }
-}
-
-function T(e) {
+function A(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    if (t && !A.has(e.channel_id)) return !1;
-    let n = (0, d.pF)(e) ? (0, d.e7)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, d.e7)(e.content);
-    return 0 !== n.length && (n.forEach(e => {
-        g.includes(e) || y.includes(e) || (w({
+    if (t && !b.has(e.channel_id)) return !1;
+    let r = (0, E.pF)(e) ? (0, E.e7)((null == e ? void 0 : e.embeds) != null ? null == e ? void 0 : e.embeds[0].url : void 0) : (0, E.e7)(e.content);
+    return 0 !== r.length && (r.forEach(e => {
+        O.includes(e) || S.includes(e) || (R({
             code: e
-        }), l.h.wait(() => c.A.resolveGiftCode(e, !1, !0).catch(f.FXj)))
+        }), c.h.wait(() => u.A.resolveGiftCode(e, !1, !0).catch(f.FXj)))
     }), !1)
-}
-
-function C() {
-    return A.clear(), !1
-}
-
-function N(e) {
-    let {
-        channelId: t
-    } = e;
-    return null != t && A.add(t), !1
-}
-
-function w(e) {
-    let {
-        code: t
-    } = e;
-    g.includes(t) || (g = [...g, t])
 }
 
 function R(e) {
     let {
-        giftCode: t
-    } = e;
-    return g = g.filter(e => e !== t.code), y.includes(t.code) || (y = [...y, t.code]), I(t)
-}
-
-function P(e) {
-    let {
         code: t
     } = e;
-    g = g.filter(e => e !== t), y.includes(t) || (y = [...y, t])
+    O.includes(t) || (O = [...O, t])
 }
 
-function D(e) {
+function I(e) {
     let {
-        code: t
+        message: t
     } = e;
-    m.delete(t);
-    let n = h[t];
-    null != n && (n.stop(), delete h[t]), y.includes(t) || (y = [...y, t])
-}
-
-function x(e) {
-    let {
-        code: t
-    } = e;
-    E.includes(t) || (E = [...E, t])
-}
-
-function L(e) {
-    let {
-        giftCode: t
-    } = e;
-    I(t)
+    return A(t, !0)
 }
 
 function j(e) {
     let {
-        uses: t,
-        code: n
-    } = e, r = m.get(n);
-    null != r && m.set(n, r.set("uses", Math.max(r.uses, t)))
-}
-
-function M(e) {
-    let {
-        skuId: t,
-        subscriptionPlanId: n
-    } = e;
-    b.add((0, d.Kx)(t, n))
-}
-
-function k(e) {
-    let {
-        skuId: t,
-        subscriptionPlanId: n
-    } = e;
-    b.delete((0, d.Kx)(t, n))
-}
-
-function U(e) {
-    let {
-        giftCodes: t,
-        skuId: n,
-        subscriptionPlanId: r
-    } = e;
-    t.forEach(I);
-    let i = (0, d.Kx)(n, r);
-    O[i] = Date.now(), b.delete(i)
-}
-
-function G(e) {
-    let {
-        code: t
-    } = e;
-    E = E.filter(e => e !== t);
-    let n = m.get(t);
-    null != n && m.set(t, n.merge({
-        redeemed: !0,
-        uses: n.uses + 1
-    }))
-}
-
-function V(e) {
-    let {
-        code: t,
-        error: n
-    } = e;
-    E = E.filter(e => e !== t);
-    let r = m.get(t);
-    if (v[t] = n, null != r) switch (n.code) {
-        case f.t02.UNKNOWN_GIFT_CODE:
-            m.set(t, r.set("revoked", !0));
-            break;
-        case f.t02.INVALID_GIFT_REDEMPTION_EXHAUSTED:
-            m.set(t, r.set("uses", r.maxUses))
-    }
-}
-
-function F(e) {
-    let {
-        message: t
-    } = e;
-    return T(t, !0)
-}
-
-function B(e) {
-    let {
         channelId: t,
-        messages: n
+        messages: r
     } = e;
-    A.add(t), n.forEach(e => T(e, !0))
+    b.add(t), r.forEach(e => A(e, !0))
 }
 
-function H(e) {
-    let {
-        messages: t
-    } = e;
-    t.forEach(e => T(e))
-}
-
-function Y(e) {
-    let {
-        pins: t
-    } = e;
-    t.forEach(e => {
-        let {
-            message: t
-        } = e;
-        return T(t)
-    })
-}
-
-function W(e) {
-    let {
-        data: t
-    } = e;
-    t.forEach(e => {
-        let {
-            messages: t
-        } = e;
-        t.forEach(e => {
-            e.forEach(e => T(e))
-        })
-    })
-}
-
-function K(e) {
+function D(e) {
     let {
         firstMessages: t
     } = e;
     if (null == t) return !1;
-    null == t || t.forEach(e => T(e))
+    null == t || t.forEach(e => A(e))
 }
-
-function z(e) {
-    let {
-        threads: t
-    } = e;
-    Object.values(t).map(e => {
-        let {
-            first_message: t
-        } = e;
-        return null != t && T(t)
-    })
-}
-class q extends(r = s.Ay.Store) {
+class v extends(n = s.Ay.Store) {
     get(e) {
-        let t = m.get(e);
+        let t = _.get(e);
         return null == t || t.isExpired() ? null : t
     }
     getError(e) {
-        return null != e ? v[e] : null
+        return null != e ? C[e] : null
     }
-    getForGifterSKUAndPlan(e, t, n) {
-        return Array.from(m.values()).filter(r => r.userId === e && r.skuId === t && (null == n || r.subscriptionPlanId === n) && !r.isExpired())
+    getForGifterSKUAndPlan(e, t, r) {
+        return Array.from(_.values()).filter(n => n.userId === e && n.skuId === t && (null == r || n.subscriptionPlanId === r) && !n.isExpired())
     }
     getIsResolving(e) {
-        return g.includes(e)
+        return O.includes(e)
     }
     getIsResolved(e) {
-        return y.includes(e)
+        return S.includes(e)
     }
     getIsAccepting(e) {
-        return E.includes(e)
+        return h.includes(e)
     }
     getUserGiftCodesFetchingForSKUAndPlan(e, t) {
-        return b.has((0, d.Kx)(e, t))
+        return g.has((0, E.Kx)(e, t))
     }
     getUserGiftCodesLoadedAtForSKUAndPlan(e, t) {
-        return O[(0, d.Kx)(e, t)]
+        return y[(0, E.Kx)(e, t)]
     }
     getResolvingCodes() {
-        return g
+        return O
     }
     getResolvedCodes() {
-        return y
+        return S
     }
     getAcceptingCodes() {
-        return E
+        return h
     }
-}
-p(q, "displayName", "GiftCodeStore");
-let Z = new q(l.h, {
-        CONNECTION_OPEN: C,
-        CHANNEL_SELECT: N,
-        GIFT_CODE_RESOLVE: w,
-        GIFT_CODE_RESOLVE_SUCCESS: R,
-        GIFT_CODE_RESOLVE_FAILURE: P,
-        GIFT_CODE_REDEEM: x,
-        GIFT_CODE_REDEEM_SUCCESS: G,
-        GIFT_CODE_REDEEM_FAILURE: V,
-        GIFT_CODE_REVOKE_SUCCESS: D,
-        GIFT_CODE_CREATE_SUCCESS: L,
-        GIFT_CODES_FETCH: M,
-        GIFT_CODES_FETCH_SUCCESS: U,
-        GIFT_CODES_FETCH_FAILURE: k,
-        MESSAGE_CREATE: F,
-        MESSAGE_UPDATE: F,
-        LOCAL_MESSAGES_LOADED: B,
-        LOAD_MESSAGES_SUCCESS: B,
-        LOAD_MESSAGES_AROUND_SUCCESS: B,
-        LOAD_RECENT_MENTIONS_SUCCESS: H,
-        LOAD_PINNED_MESSAGES_SUCCESS: Y,
-        SEARCH_MESSAGES_SUCCESS: W,
-        GIFT_CODE_UPDATE: j,
-        LOAD_THREADS_SUCCESS: K,
-        LOAD_ARCHIVED_THREADS_SUCCESS: K,
-        LOAD_FORUM_POSTS: z
+}(l = "displayName") in v ? Object.defineProperty(v, l, {
+    value: "GiftCodeStore",
+    enumerable: !0,
+    configurable: !0,
+    writable: !0
+}) : v[l] = "GiftCodeStore";
+let T = new v(c.h, {
+        CONNECTION_OPEN: function() {
+            return b.clear(), !1
+        },
+        CHANNEL_SELECT: function(e) {
+            let {
+                channelId: t
+            } = e;
+            return null != t && b.add(t), !1
+        },
+        GIFT_CODE_RESOLVE: R,
+        GIFT_CODE_RESOLVE_SUCCESS: function(e) {
+            let {
+                giftCode: t
+            } = e;
+            return O = O.filter(e => e !== t.code), S.includes(t.code) || (S = [...S, t.code]), m(t)
+        },
+        GIFT_CODE_RESOLVE_FAILURE: function(e) {
+            let {
+                code: t
+            } = e;
+            O = O.filter(e => e !== t), S.includes(t) || (S = [...S, t])
+        },
+        GIFT_CODE_REDEEM: function(e) {
+            let {
+                code: t
+            } = e;
+            h.includes(t) || (h = [...h, t])
+        },
+        GIFT_CODE_REDEEM_SUCCESS: function(e) {
+            let {
+                code: t
+            } = e;
+            h = h.filter(e => e !== t);
+            let r = _.get(t);
+            null != r && _.set(t, r.merge({
+                redeemed: !0,
+                uses: r.uses + 1
+            }))
+        },
+        GIFT_CODE_REDEEM_FAILURE: function(e) {
+            let {
+                code: t,
+                error: r
+            } = e;
+            h = h.filter(e => e !== t);
+            let n = _.get(t);
+            if (C[t] = r, null != n) switch (r.code) {
+                case f.t02.UNKNOWN_GIFT_CODE:
+                    _.set(t, n.set("revoked", !0));
+                    break;
+                case f.t02.INVALID_GIFT_REDEMPTION_EXHAUSTED:
+                    _.set(t, n.set("uses", n.maxUses))
+            }
+        },
+        GIFT_CODE_REVOKE_SUCCESS: function(e) {
+            let {
+                code: t
+            } = e;
+            _.delete(t);
+            let r = p[t];
+            null != r && (r.stop(), delete p[t]), S.includes(t) || (S = [...S, t])
+        },
+        GIFT_CODE_CREATE_SUCCESS: function(e) {
+            let {
+                giftCode: t
+            } = e;
+            m(t)
+        },
+        GIFT_CODES_FETCH: function(e) {
+            let {
+                skuId: t,
+                subscriptionPlanId: r
+            } = e;
+            g.add((0, E.Kx)(t, r))
+        },
+        GIFT_CODES_FETCH_SUCCESS: function(e) {
+            let {
+                giftCodes: t,
+                skuId: r,
+                subscriptionPlanId: n
+            } = e;
+            t.forEach(m);
+            let l = (0, E.Kx)(r, n);
+            y[l] = Date.now(), g.delete(l)
+        },
+        GIFT_CODES_FETCH_FAILURE: function(e) {
+            let {
+                skuId: t,
+                subscriptionPlanId: r
+            } = e;
+            g.delete((0, E.Kx)(t, r))
+        },
+        MESSAGE_CREATE: I,
+        MESSAGE_UPDATE: I,
+        LOCAL_MESSAGES_LOADED: j,
+        LOAD_MESSAGES_SUCCESS: j,
+        LOAD_MESSAGES_AROUND_SUCCESS: j,
+        LOAD_RECENT_MENTIONS_SUCCESS: function(e) {
+            let {
+                messages: t
+            } = e;
+            t.forEach(e => A(e))
+        },
+        LOAD_PINNED_MESSAGES_SUCCESS: function(e) {
+            let {
+                pins: t
+            } = e;
+            t.forEach(e => {
+                let {
+                    message: t
+                } = e;
+                return A(t)
+            })
+        },
+        SEARCH_MESSAGES_SUCCESS: function(e) {
+            let {
+                data: t
+            } = e;
+            t.forEach(e => {
+                let {
+                    messages: t
+                } = e;
+                t.forEach(e => {
+                    e.forEach(e => A(e))
+                })
+            })
+        },
+        GIFT_CODE_UPDATE: function(e) {
+            let {
+                uses: t,
+                code: r
+            } = e, n = _.get(r);
+            null != n && _.set(r, n.set("uses", Math.max(n.uses, t)))
+        },
+        LOAD_THREADS_SUCCESS: D,
+        LOAD_ARCHIVED_THREADS_SUCCESS: D,
+        LOAD_FORUM_POSTS: function(e) {
+            let {
+                threads: t
+            } = e;
+            Object.values(t).map(e => {
+                let {
+                    first_message: t
+                } = e;
+                return null != t && A(t)
+            })
+        }
     }),
-    X = Z
+    x = T

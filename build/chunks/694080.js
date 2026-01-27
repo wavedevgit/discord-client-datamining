@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(562465),
     i = n(554146),
     a = n(73153),
-    s = n(826673),
-    o = n(594061),
+    o = n(826673),
+    s = n(594061),
     l = n(954571),
     c = n(723702),
     u = n(728458),
@@ -80,7 +80,7 @@ async function h(e) {
                     }
                 }, f)), e
             }
-            return null == v && (0, s.k8)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, o.xB)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.h.dispatch({
+            return null == v && (0, o.k8)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING) && (0, s.xB)(i.M.NAGBAR_NOTICE_PREMIUM_TIER_TWO_TRIAL_ENDING), a.h.dispatch({
                 type: "BILLING_USER_OFFER_FETCH_SUCCESS",
                 userTrialOffer: v,
                 userDiscount: A,

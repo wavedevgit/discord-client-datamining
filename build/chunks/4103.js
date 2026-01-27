@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(451988),
-    s = n(775602),
-    o = n(21161);
+    o = n(775602),
+    s = n(21161);
 let l = 4,
     c = 4,
     u = 2,
@@ -18,9 +18,9 @@ let l = 4,
 function p(e) {
     let {
         enabled: t
-    } = e, n = (0, i.bG)([s.A], () => s.A.useReducedMotion), p = r.useRef(null), _ = r.useRef(0), {
+    } = e, n = (0, i.bG)([o.A], () => o.A.useReducedMotion), p = r.useRef(null), _ = r.useRef(0), {
         createMultipleConfettiAt: h
-    } = r.useContext(o.x), m = r.useMemo(() => ({
+    } = r.useContext(s.x), m = r.useMemo(() => ({
         size: {
             type: "static-random",
             minValue: c - u,

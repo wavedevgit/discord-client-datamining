@@ -2,7 +2,7 @@
 /** chunk id: 401562, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => o
+    B: () => s
 }), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162), n(228524), n(896048);
 var r = n(115943),
     i = n.n(r);
@@ -15,13 +15,13 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = n(39416);
-class o {
+let o = n(39416);
+class s {
     static create(e) {
         let t = null;
         try {
             let n = i().decode(e);
-            t = new o(n, e)
+            t = new s(n, e)
         } catch (e) {}
         return t
     }
@@ -39,7 +39,7 @@ class o {
         return 3 === this.img.ctype && this.img.depth <= 8
     }
     async hasSrgbIccProfile() {
-        let e = await s.load(this.originalBuffer, {
+        let e = await o.load(this.originalBuffer, {
             async: !0,
             expanded: !0,
             includeUnknown: !0

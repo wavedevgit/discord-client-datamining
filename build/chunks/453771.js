@@ -16,8 +16,8 @@ n.d(t, {
 var r = n(796873),
     i = n.n(r),
     a = n(735438),
-    s = n.n(a),
-    o = n(71393),
+    o = n.n(a),
+    s = n(71393),
     l = n(287809),
     c = n(255438),
     u = n(927578),
@@ -87,7 +87,7 @@ function y(e) {
 function b(e, t) {
     var n;
     e = null != (n = null == e ? void 0 : e.toLowerCase()) ? n : "";
-    let r = s().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
+    let r = o().find(E, n => null != n.reType && null != t ? n.reType.test(t) : null != n.reName && "" !== e && n.reName.test(e));
     return null != r ? r.klass : "unknown"
 }
 
@@ -99,7 +99,7 @@ function v(e) {
     let t = l.default.getCurrentUser(),
         n = u.Ay.getUserMaxFileSize(t);
     if (null == e) return n;
-    let r = o.A.getGuild(e);
+    let r = s.A.getGuild(e);
     return Math.max(null != r ? f.TG[r.premiumTier].limits.fileSize : d.TbF, n)
 }
 

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(311907),
     a = n(73153),
-    s = n(546885),
-    o = n(734057),
+    o = n(546885),
+    s = n(734057),
     l = n(696451);
 
 function c(e, t, n) {
@@ -18,7 +18,7 @@ function c(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let u = new s.A(l.Ay.isMember, (e, t) => {
+let u = new o.A(l.Ay.isMember, (e, t) => {
     a.h.dispatch({
         type: "GUILD_MEMBERS_REQUEST",
         guildIds: [e],
@@ -62,7 +62,7 @@ function m(e) {
     let {
         channelId: t,
         messages: n
-    } = e, r = o.A.getChannel(t);
+    } = e, r = s.A.getChannel(t);
     return null != r && null != r.guild_id && h(r.guild_id, n)
 }
 
@@ -70,7 +70,7 @@ function g(e) {
     let {
         pins: t,
         channelId: n
-    } = e, r = o.A.getChannel(n);
+    } = e, r = s.A.getChannel(n);
     return null != r && null != r.guild_id && h(r.guild_id, t.map(e => {
         let {
             message: t
@@ -99,7 +99,7 @@ function E(e) {
 }
 class y extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A, l.Ay)
+        this.waitFor(s.A, l.Ay)
     }
     requestMember(e, t) {
         _(e, t)

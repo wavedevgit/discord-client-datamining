@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(765325),
     i = n(787709),
     a = n(142922),
-    s = n(248759),
-    o = n(929959),
+    o = n(248759),
+    s = n(929959),
     l = n(879452),
     c = n(260043),
     u = n(236230),
@@ -25,9 +25,9 @@ function f(e) {
         case "coptic":
             return new(0, i.pG);
         case "hebrew":
-            return new(0, s.Y);
+            return new(0, o.Y);
         case "indian":
-            return new(0, o.a);
+            return new(0, s.a);
         case "islamic-civil":
             return new(0, l.Yk);
         case "islamic-tbla":

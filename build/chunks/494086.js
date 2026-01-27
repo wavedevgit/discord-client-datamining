@@ -1,34 +1,33 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 494086, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(763754),
-    a = n(888675),
-    s = n(985018);
+    l = n(888675),
+    a = n(985018);
 
-function o(e) {
+function s(e) {
     let {
         message: t,
-        otherUsername: o,
-        usernameHook: l,
+        otherUsername: s,
+        usernameHook: o,
         otherUsernameHook: c,
         compact: u
     } = e, {
         nick: d
-    } = (0, i.Ay)(t), f = l(), p = c(), _ = s.intl.format(s.t.MMN2Jq, {
+    } = (0, i.Ay)(t), p = o(), m = c(), f = a.intl.format(a.t.MMN2Jq, {
         username: d,
-        usernameHook: f,
-        otherUsername: o,
-        otherUsernameHook: p
+        usernameHook: p,
+        otherUsername: s,
+        otherUsernameHook: m
     });
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         icon: n(394803),
         timestamp: t.timestamp,
         compact: u,
-        children: _
+        children: f
     })
 }

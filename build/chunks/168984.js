@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(812745),
+    o = n(397927),
+    s = n(812745),
     l = n(825755),
     c = n(682449),
     u = n(490581),
@@ -26,23 +26,23 @@ class p extends i.PureComponent {
         } = this.props, a = this.props.adyenPaymentData, l = null != (e = null == a || null == (t = a.paymentMethod) ? void 0 : t.cashtag) ? e : "", c = null != a && "" !== l;
         return (0, r.jsxs)("div", {
             className: n,
-            children: [(0, r.jsx)(o.Ay, {
-                type: o.Ay.Types.CASH_APP,
-                size: o.y3.MEDIUM,
+            children: [(0, r.jsx)(s.Ay, {
+                type: s.Ay.Types.CASH_APP,
+                size: s.y3.MEDIUM,
                 className: f.K
             }), c ? (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(s.Heading, {
+                children: [(0, r.jsx)(o.Heading, {
                     variant: l.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
                     className: f.y,
                     children: d.intl.format(d.t["ze/1yE"], {
                         cashtag: l
                     })
-                }), (0, r.jsx)(s.Text, {
+                }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
                     className: f.y,
                     children: d.intl.string(d.t.VPOx7N)
                 })]
-            }) : (0, r.jsx)(s.Text, {
+            }) : (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 className: f.y,
                 children: null == i ? d.intl.string(d.t["CgVe/w"]) : d.intl.string(d.t["1MqcjI"])

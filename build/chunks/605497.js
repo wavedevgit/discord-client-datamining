@@ -7,20 +7,20 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(643501),
-    o = n(780885);
+    o = n(643501),
+    s = n(780885);
 
 function l(e) {
     let {
         body: t,
         dismissCallback: n,
         errorCodeMessage: l
-    } = e, c = (0, a.bG)([s.default], () => s.default.getRemoteSessionId());
+    } = e, c = (0, a.bG)([o.default], () => o.default.getRemoteSessionId());
     return (i.useEffect(() => {
         null != c && n()
     }, [c, n]), null == l) ? t : (0, r.jsxs)(r.Fragment, {
         children: [t, (0, r.jsx)("div", {
-            className: o.F,
+            className: s.F,
             children: l
         })]
     })

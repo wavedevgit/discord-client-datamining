@@ -8,7 +8,7 @@ var r = n(481613),
     i = n.n(r),
     a = n(72290);
 
-function s(e, t) {
+function o(e, t) {
     if (!e.startsWith("discord:")) return location.href = e, a.nextTick(() => t(!0));
     let {
         body: n
@@ -27,7 +27,7 @@ function s(e, t) {
     }, 1e3)
 }
 
-function o(e, t) {
+function s(e, t) {
     let n = !1;
 
     function r() {
@@ -48,6 +48,6 @@ function c(e, t) {
 let u = {
     launch: function() {
         var e, t;
-        return (null == (e = i().os) ? void 0 : e.family) === "Android" || (null == (t = i().os) ? void 0 : t.family) === "iOS" ? c : "Gecko" === i().layout ? s : null != i().ua && -1 !== i().ua.indexOf("Valve Steam GameOverlay") ? l : o
+        return (null == (e = i().os) ? void 0 : e.family) === "Android" || (null == (t = i().os) ? void 0 : t.family) === "iOS" ? c : "Gecko" === i().layout ? o : null != i().ua && -1 !== i().ua.indexOf("Valve Steam GameOverlay") ? l : s
     }()
 }

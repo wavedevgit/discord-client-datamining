@@ -2,7 +2,7 @@
 /** chunk id: 855522, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(664294),
     i = n(484838);
@@ -15,4 +15,4 @@ let a = new i.Ay({
 a.addListener("locale", e => {
     document.cookie = "locale=".concat(e, ";path=/")
 });
-let s = a
+let o = a

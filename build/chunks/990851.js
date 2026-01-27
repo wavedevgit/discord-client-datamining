@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(439372),
     i = n(15285),
     a = n(760751),
-    s = n(667269);
+    o = n(667269);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,12 +22,12 @@ function l(e) {
     var t, n;
     let {
         game: r
-    } = e, o = i.Ay.isDetectionEnabled(r), l = null != (t = r.id) ? t : null == (n = a.A.getGameByName(r.name)) ? void 0 : n.id;
-    null != l && (0, s.J)(l, o)
+    } = e, s = i.Ay.isDetectionEnabled(r), l = null != (t = r.id) ? t : null == (n = a.A.getGameByName(r.name)) ? void 0 : n.id;
+    null != l && (0, o.J)(l, s)
 }
 class c extends r.A {
     constructor(...e) {
-        super(...e), o(this, "actions", {
+        super(...e), s(this, "actions", {
             RUNNING_GAME_TOGGLE_DETECTION: l,
             RUNNING_GAME_DELETE_ENTRY: l
         })

@@ -1,6 +1,6 @@
 /** Chunk was on 98126 **/
-/** chunk id: 894069, original params: n,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 894069, original params: t,n,i (module,exports,require) **/
+i.d(n, {
     A: () => c
 });
 var r = i(627968);
@@ -11,12 +11,12 @@ var s = i(397927),
     l = i(746080),
     o = i(985018);
 
-function c(n) {
+function c(t) {
     return (0, r.jsx)(s.Drp, {
         id: "role-subscription-copy-link",
         label: o.intl.string(o.t.WqhZss),
         action: () => {
-            (0, a.C)((0, e.n)(n, l.VV.ROLE_SUBSCRIPTIONS))
+            (0, a.C)((0, e.n)(t, l.VV.ROLE_SUBSCRIPTIONS))
         }
     })
 }

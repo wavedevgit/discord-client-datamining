@@ -7,13 +7,13 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(734057),
-    s = n(543465);
-let o = null;
+    o = n(543465);
+let s = null;
 
 function l(e) {
     let t = (0, i.bG)([a.A], () => a.A.getPrivateChannelsVersion()),
         n = (0, i.bG)([a.A], () => a.A.getMutableDMsByUserIds(), [t]),
-        l = (0, i.bG)([s.Ay], () => s.Ay.getMutedChannels(o)),
+        l = (0, i.bG)([o.Ay], () => o.Ay.getMutedChannels(s)),
         c = r.useMemo(() => {
             let e = new Set;
             for (let t in n) {

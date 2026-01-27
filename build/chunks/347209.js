@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(439372),
     i = n(967198),
     a = n(17591),
-    s = n(307731);
+    o = n(307731);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,13 +22,13 @@ class l extends r.A {
         let {
             interaction: t
         } = e;
-        if ([s.Vl.EmojiButtonMouseEntered].includes(t)) {
+        if ([o.Vl.EmojiButtonMouseEntered].includes(t)) {
             let e = i.A.getGuildId();
             (0, a.V)(e)
         }
     }
     constructor(...e) {
-        super(...e), o(this, "actions", {
+        super(...e), s(this, "actions", {
             EMOJI_INTERACTION_INITIATED: this.handleInteraction
         })
     }

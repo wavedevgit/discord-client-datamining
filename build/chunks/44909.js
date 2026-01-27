@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 44909, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => s
 });
 var r = n(627968),
     i = n(397927),
-    a = n(244242);
+    l = n(244242);
 
 function s(e) {
     let {
@@ -14,18 +13,18 @@ function s(e) {
     } = e, {
         useValue: n,
         setValue: s,
-        useTitle: o,
-        useSubtitle: l,
+        useTitle: a,
+        useSubtitle: o,
         useOptions: c,
-        useBadge: u
-    } = t, d = o(), f = null == l ? void 0 : l(), p = n(), _ = c(), h = null == u ? void 0 : u();
-    return (0, r.jsx)(a.L, {
+        useBadge: d
+    } = t, u = a(), _ = null == o ? void 0 : o(), p = n(), m = c(), g = null == d ? void 0 : d();
+    return (0, r.jsx)(l.L, {
         children: (0, r.jsx)(i.z6M, {
-            label: d,
-            description: f,
-            options: _,
+            label: u,
+            description: _,
+            options: m,
             value: p,
-            badge: h,
+            badge: g,
             onChange: e => s(e)
         })
     })

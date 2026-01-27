@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(71393),
-    o = n(967198),
+    o = n(71393),
+    s = n(967198),
     l = n(985018),
     c = n(849096);
 let u = () => (0, r.jsx)(r.Fragment, {
@@ -21,7 +21,7 @@ let u = () => (0, r.jsx)(r.Fragment, {
         })
     }),
     d = () => {
-        let e = (0, i.bG)([s.A, o.A], () => s.A.getGuild(o.A.getGuildId()), []),
+        let e = (0, i.bG)([o.A, s.A], () => o.A.getGuild(s.A.getGuildId()), []),
             t = null == e ? void 0 : e.name;
         return (0, r.jsx)(r.Fragment, {
             children: l.intl.format(l.t.oQuG3K, {

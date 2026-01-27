@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(775602),
     u = n(57625),
@@ -89,23 +89,23 @@ let N = i.memo(function(e) {
             onPlay: R,
             onPause: P,
             onError: D,
-            playbackCacheKey: x
+            playbackCacheKey: L
         } = e,
-        L = i.useRef(null),
-        j = i.useMemo(() => null != x ? d.Ay.getPlaybackPosition(x) : 0, [x]),
-        M = (0, o.bG)([d.Ay], () => d.Ay.getPlaybackRate(d.k0.VOICE_MESSAGE)),
-        [k, U] = i.useState(j > 0),
-        [G, V] = i.useState(j),
-        [F, B] = i.useState(b),
+        x = i.useRef(null),
+        M = i.useMemo(() => null != L ? d.Ay.getPlaybackPosition(L) : 0, [L]),
+        j = (0, s.bG)([d.Ay], () => d.Ay.getPlaybackRate(d.k0.VOICE_MESSAGE)),
+        [k, U] = i.useState(M > 0),
+        [G, F] = i.useState(M),
+        [V, B] = i.useState(b),
         [H, Y] = i.useState(!1),
         [W, K] = i.useState(!1),
         [z, q] = i.useState(!1),
-        [Z, X] = i.useState(!1),
-        [Q, J] = i.useState("none"),
+        [Z, Q] = i.useState(!1),
+        [X, J] = i.useState("none"),
         [$, ee] = i.useState(() => "function" == typeof a ? a() : a),
         et = i.useRef(void 0),
         en = i.useCallback(() => {
-            K(e => !e), X(!0)
+            K(e => !e), Q(!0)
         }, []),
         er = i.useCallback(() => {
             J("metadata")
@@ -115,22 +115,22 @@ let N = i.memo(function(e) {
             isNaN(t) || B(t)
         }, []),
         ea = i.useCallback(e => {
-            null != b && null != x && (0, u.d)(x, e, b)
-        }, [x, b]),
-        es = i.useCallback(() => {
+            null != b && null != L && (0, u.d)(L, e, b)
+        }, [L, b]),
+        eo = i.useCallback(() => {
             K(!1), null == et.current && (et.current = setTimeout(() => {
-                U(!1), X(!1), et.current = void 0
+                U(!1), Q(!1), et.current = void 0
             }, 500))
         }, []),
-        eo = i.useCallback(() => {
-            z || (ea(0), es())
-        }, [es, z, ea]),
+        es = i.useCallback(() => {
+            z || (ea(0), eo())
+        }, [eo, z, ea]),
         el = i.useCallback(e => {
-            let t = L.current;
-            null != t && (V(e), t.currentTime = e, U(!0))
+            let t = x.current;
+            null != t && (F(e), t.currentTime = e, U(!0))
         }, []),
         ec = i.useCallback(() => {
-            let e = L.current;
+            let e = x.current;
             if (null == e) return;
             let t = e.error;
             null == D || D(t)
@@ -146,12 +146,12 @@ let N = i.memo(function(e) {
             q(!0)
         }, []),
         ep = i.useCallback(() => {
-            q(!1), G === F && es(), ea(G)
-        }, [G, F, es, ea]),
+            q(!1), G === V && eo(), ea(G)
+        }, [G, V, eo, ea]),
         e_ = i.useCallback(e => {
-            let t = L.current;
-            null == F || null == t || (el(e * F), clearTimeout(et.current), et.current = void 0)
-        }, [F, el]);
+            let t = x.current;
+            null == V || null == t || (el(e * V), clearTimeout(et.current), et.current = void 0)
+        }, [V, el]);
     i.useEffect(() => {
         !k && W && U(!0)
     }, [W, k]);
@@ -166,12 +166,12 @@ let N = i.memo(function(e) {
     i.useEffect(() => {
         eg.current = em
     }), i.useEffect(() => {
-        j > 0 && el(j)
-    }, [j, el]), i.useEffect(() => {
+        M > 0 && el(M)
+    }, [M, el]), i.useEffect(() => {
         let e;
         return W && !z && (e = setInterval(() => {
             var e, t;
-            ea(null != (e = null == (t = L.current) ? void 0 : t.currentTime) ? e : 0)
+            ea(null != (e = null == (t = x.current) ? void 0 : t.currentTime) ? e : 0)
         }, m.A.Millis.SECOND)), () => {
             null != e && clearInterval(e)
         }
@@ -185,60 +185,60 @@ let N = i.memo(function(e) {
         if (e || W)
             if (W) {
                 var i, a;
-                eh.current = performance.now(), null == r || r(!1, t, (null != (i = null == (a = L.current) ? void 0 : a.duration) ? i : 0) * m.A.Millis.SECOND)
+                eh.current = performance.now(), null == r || r(!1, t, (null != (i = null == (a = x.current) ? void 0 : a.duration) ? i : 0) * m.A.Millis.SECOND)
             } else {
                 let e = performance.now(),
                     r = eh.current,
                     i = null != r ? (e - r) / 1e3 : 0;
                 null == n || n(t, i), ea(t), eh.current = null
             }
-    }, [W, n, F, ea]), T(L, W, V), C(n, W, K);
+    }, [W, n, V, ea]), T(x, W, F), C(n, W, K);
     let eE = W ? l.E$n : l.udU,
         ey = W ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
         eb = O.intl.formatToPlainString(O.t.LgCPMt, {
-            playbackRate: M
+            playbackRate: j
         }),
-        eO = "".concat(M.toString().replace(/^0/, ""), "X");
+        eO = "".concat(j.toString().replace(/^0/, ""), "X");
     t = "Safari" === platform.name ? (0, r.jsx)(i.Suspense, {
         children: (0, r.jsx)(A, {
-            ref: L,
+            ref: x,
             className: v.Zn,
             src: n,
-            preload: Q,
+            preload: X,
             playing: W && !z,
-            onEnded: eo,
+            onEnded: es,
             onLoadedMetadata: ei,
             onError: ec,
             muted: H,
             volume: $,
-            playbackRate: M
+            playbackRate: j
         })
     }) : (0, r.jsx)(f.A, {
-        ref: L,
+        ref: x,
         className: v.Zn,
         controls: !1,
-        preload: Q,
-        onEnded: eo,
+        preload: X,
+        onEnded: es,
         onLoadedMetadata: ei,
         onError: ec,
         muted: H,
         volume: $,
-        playbackRate: M,
+        playbackRate: j,
         playing: W && !z,
         children: (0, r.jsx)("source", {
             src: n
         })
     });
-    let ev = (0, o.bG)([c.A], () => c.A.useReducedMotion);
+    let ev = (0, s.bG)([c.A], () => c.A.useReducedMotion);
     return (0, r.jsxs)("div", {
-        className: s()(v.kL, {
+        className: o()(v.kL, {
             [v.he]: W
         }),
         onMouseEnter: er,
         children: [(0, r.jsx)("div", {
             className: v.Kl,
             children: (0, r.jsx)("div", {
-                className: s()(v.fq, {
+                className: o()(v.fq, {
                     [v.VN]: ev
                 })
             })
@@ -255,7 +255,7 @@ let N = i.memo(function(e) {
             className: v.ou,
             waveform: y,
             currentTime: G,
-            duration: null != F ? F : 1,
+            duration: null != V ? V : 1,
             playing: W,
             played: k,
             onDrag: e_,
@@ -264,10 +264,10 @@ let N = i.memo(function(e) {
         }), (0, r.jsx)(S, {
             played: k,
             currentTime: G,
-            duration: F
+            duration: V
         }), (0, r.jsx)(l.DUT, {
             className: v.LJ,
-            onClick: () => I(M),
+            onClick: () => I(j),
             "aria-label": eb,
             children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/semibold",

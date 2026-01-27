@@ -40,10 +40,10 @@ Object.defineProperty(t, "reactFormatter", {
         return a.DEFAULT_REACT_RICH_TEXT_ELEMENTS
     }
 });
-var s = n(860500);
+var o = n(860500);
 Object.defineProperty(t, "stringFormatter", {
     enumerable: !0,
     get: function() {
-        return s.stringFormatter
+        return o.stringFormatter
     }
 })

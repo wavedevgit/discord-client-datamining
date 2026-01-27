@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 424019, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Lq: "loading__9ed46",
     G3: "bodyText__9ed46",

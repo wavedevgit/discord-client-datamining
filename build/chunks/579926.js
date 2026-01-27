@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(792976),
     i = n(341251),
     a = n(322010),
-    s = n(210296),
-    o = n(8222),
+    o = n(210296),
+    s = n(8222),
     l = n(199577),
     c = n(942548),
     u = n(29782),
@@ -30,13 +30,13 @@ var r = n(792976),
 class T {
     createCasualConfiguration(e = !1) {
         let t = this.createConfiguration(!1, e);
-        return t.parsers.push(new h.A), t.parsers.push(new m.A), t.parsers.push(new s.A), t.parsers.push(new E.A), t.parsers.push(new b.A), t.refiners.push(new S.A), t
+        return t.parsers.push(new h.A), t.parsers.push(new m.A), t.parsers.push(new o.A), t.parsers.push(new E.A), t.parsers.push(new b.A), t.refiners.push(new S.A), t
     }
     createConfiguration(e = !0, t = !1) {
         let n = (0, _.i)({
             parsers: [new y.A(t), new r.A(e), new i.A, new a.A(t), new g.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
             refiners: [new p.A]
         }, e);
-        return n.parsers.unshift(new o.A(e)), n.refiners.unshift(new v.A), n.refiners.unshift(new O.A), n.refiners.unshift(new A.A), n.refiners.push(new p.A), n.refiners.push(new I.A), n.refiners.push(new f.A), n
+        return n.parsers.unshift(new s.A(e)), n.refiners.unshift(new v.A), n.refiners.unshift(new O.A), n.refiners.unshift(new A.A), n.refiners.push(new p.A), n.refiners.push(new I.A), n.refiners.push(new f.A), n
     }
 }

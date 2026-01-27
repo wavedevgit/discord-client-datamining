@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(158954),
     a = n(783420),
-    s = n(204413),
-    o = n(818415),
+    o = n(204413),
+    s = n(818415),
     l = n(788868),
     c = n(985018);
 
@@ -83,10 +83,10 @@ let m = e => {
     } = e, E = _(e, ["gradientColor", "title", "subtitle", "onClose", "onSecondaryClick", "videoSrc", "loopAt"]), {
         subscribeButtonProps: y,
         subscriptionTier: b
-    } = (0, s.$)({
+    } = (0, o.$)({
         subscriptionTier: l.pe.TIER_2,
         defaultTextOverride: c.intl.string(c.t.pj0XBN)
-    }), O = (0, o.A)(l.pe.TIER_2);
+    }), O = (0, s.A)(l.pe.TIER_2);
     return (0, r.jsx)(a.A, {
         subscriptionTier: b,
         children: e => {

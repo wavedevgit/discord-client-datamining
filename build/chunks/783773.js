@@ -8,9 +8,9 @@ try {
 } catch (e) {
     if (!e || "object" != typeof e || !("code" in e) || "ERR_PROTO_ACCESS" !== e.code) throw e
 }
-var s = !!r && a && a(Object.prototype, "__proto__"),
-    o = Object,
-    l = o.getPrototypeOf;
-e.exports = s && "function" == typeof s.get ? i([s.get]) : "function" == typeof l && function(e) {
-    return l(null == e ? e : o(e))
+var o = !!r && a && a(Object.prototype, "__proto__"),
+    s = Object,
+    l = s.getPrototypeOf;
+e.exports = o && "function" == typeof o.get ? i([o.get]) : "function" == typeof l && function(e) {
+    return l(null == e ? e : s(e))
 }

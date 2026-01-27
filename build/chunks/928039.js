@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 928039, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(64700),
     i = n(884362),
-    a = n(311907),
-    s = n(775602);
+    l = n(311907),
+    o = n(775602);
 
-function o(e, t, n) {
-    let o = (0, a.bG)([s.A], () => s.A.keyboardModeEnabled),
-        l = r.useCallback(e => {
+function a(e, t, n) {
+    let a = (0, l.bG)([o.A], () => o.A.keyboardModeEnabled),
+        s = r.useCallback(e => {
             let n = document.querySelector(e),
                 r = t.current;
             null != n && null != r && (n.focus(), r.scrollIntoViewNode({
@@ -37,8 +36,8 @@ function o(e, t, n) {
         }), [t]);
     return (0, i.Ay)({
         id: e,
-        isEnabled: o,
-        setFocus: l,
+        isEnabled: a,
+        setFocus: s,
         scrollToStart: c,
         scrollToEnd: u,
         orientation: null == n ? void 0 : n.orientation

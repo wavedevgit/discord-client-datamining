@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(884362),
     a = n(741918),
-    s = n(267102),
-    o = n(374803);
+    o = n(267102),
+    s = n(374803);
 
 function l(e) {
     var t, n, l;
@@ -19,7 +19,7 @@ function l(e) {
         onFocus: f
     } = e, {
         renderWindow: p
-    } = r.useContext(s.Ay), _ = (e, t) => {
+    } = r.useContext(o.Ay), _ = (e, t) => {
         let n = p.document.querySelector(e);
         if (null != n) {
             var r;
@@ -32,7 +32,7 @@ function l(e) {
         var r;
         if (null == (r = u.current) || r.scrollToTop(), e && null != d.query) {
             let e = d.query.typeInfo.focusMode,
-                r = e !== o.e.MANUAL && (e !== o.e.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
+                r = e !== s.e.MANUAL && (e !== s.e.AUTO_WHEN_FILTERED || 0 !== d.query.queryText.length);
             d.isVisible && (!0 !== t || !1 !== r) && !0 !== n ? (g.setFocus("0"), null == f || f(0)) : (g.setFocus(null), null == f || f(null))
         }
     }, m = e => {

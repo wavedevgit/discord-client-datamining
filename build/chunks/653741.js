@@ -11,7 +11,7 @@ function r(e, t, n) {
     }) : e[t] = n, e
 }
 n.d(t, {
-    wN: () => s
+    wN: () => o
 });
 class i {
     isFeatureTeenByDefault(e) {
@@ -37,7 +37,7 @@ class a {
         r(this, "gatedFeatures", void 0), this.gatedFeatures = e
     }
 }
-class s {
+class o {
     isFeatureAgeGated(e) {
         return this.ageVerification.isFeatureAgeGated(e)
     }
@@ -51,7 +51,7 @@ class s {
         return this.settings.hasTeenDefaults()
     }
     static fromConnectionOpen(e) {
-        return new s(new i(e.teen_by_default_settings), new a(e.age_gated_features))
+        return new o(new i(e.teen_by_default_settings), new a(e.age_gated_features))
     }
     constructor(e, t) {
         r(this, "settings", void 0), r(this, "ageVerification", void 0), this.settings = e, this.ageVerification = t

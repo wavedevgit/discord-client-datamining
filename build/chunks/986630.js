@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(696444),
     i = n(474012),
     a = n(935816),
-    s = n(931772),
-    o = n(758836),
+    o = n(931772),
+    s = n(758836),
     l = n(652215);
 
 function c(e, t, n) {
@@ -70,12 +70,12 @@ function _(e, t) {
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
     return i
 }
-class h extends s.A {
+class h extends o.A {
     static fromServer(e) {
         let {
             type: t,
             premium_type: n,
-            category_sku_id: s,
+            category_sku_id: o,
             prices: c,
             bundled_products: d,
             variants: _
@@ -83,8 +83,8 @@ class h extends s.A {
         return new h(f(u({}, super.fromServer(g)), {
             type: t,
             premiumType: n === l.oA2 ? null : n,
-            categorySkuId: s,
-            isCategoryReward: o.MS.some(e => {
+            categorySkuId: o,
+            isCategoryReward: s.MS.some(e => {
                 let {
                     rewardSkuId: t
                 } = e;

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(956793),
-    s = n(134047),
-    o = n(643501),
+    o = n(134047),
+    s = n(643501),
     l = n(976860),
     c = n(158160),
     u = n(741812),
@@ -64,14 +64,14 @@ let A = {
             bypassGuildIdCheck: C = !1
         } = e;
         t.isThread() && (await f.A.unarchiveThreadIfNecessary(t.id), d.A.hasJoined(t.id) || await f.A.joinThread(t, "Join Voice"));
-        let N = o.default.getRemoteSessionId(),
+        let N = s.default.getRemoteSessionId(),
             w = h.A.getVoiceStateForSession(p.default.getId(), N),
             R = (null == w ? void 0 : w.channelId) === t.id || _.A.getChannelId() === h.A.getCurrentClientVoiceChannelId(t.guild_id),
             P = u.A.getBlockedUsersForVoiceChannel(t.id),
             D = u.A.getIgnoredUsersForVoiceChannel(t.id),
             {
-                autoNavigateChannel: x
-            } = s.M.getConfig({
+                autoNavigateChannel: L
+            } = o.M.getConfig({
                 location: "handleVoiceChannelSelect"
             });
         return ((0, c.oE)(new Set([...P, ...D])) && (T = !0), T || A || l || !(P.size > 0) && !(D.size > 0)) ? !S && !A && (0, g.H)(t) ? new Promise(e => {
@@ -91,21 +91,21 @@ let A = {
                     }))
                 }, n))
             })
-        }) : (A || l || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (l || R || b || I || x) && v(t, C), !0) : new Promise(e => {
+        }) : (A || l || a.default.selectVoiceChannel(t.id), !__OVERLAY__ && (l || R || b || I || L) && v(t, C), !0) : new Promise(e => {
             (0, i.mMO)(async () => {
                 let {
                     default: i
-                } = await n.e("32498").then(n.bind(n, 525828));
+                } = await Promise.all([n.e("83792"), n.e("41688")]).then(n.bind(n, 525828));
                 return n => {
                     let {
                         onClose: a,
-                        transitionState: s
+                        transitionState: o
                     } = n;
                     return (0, r.jsx)(i, {
                         channelId: t.id,
                         blockedUserIds: P,
                         ignoredUserIds: D,
-                        transitionState: s,
+                        transitionState: o,
                         onClose: a,
                         onJoin: () => e(this.handleVoiceConnect({
                             channel: t,

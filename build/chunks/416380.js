@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(803805),
-    s = n(439372),
-    o = n(26909),
+    o = n(439372),
+    s = n(26909),
     l = n(630248),
     c = n(508675),
     u = n(163956),
@@ -33,7 +33,7 @@ let b = 10 + Math.random() * (10 * p.A.Millis.SECOND),
     O = 2 * p.A.Millis.HOUR + Math.floor(Math.random() * (10 * p.A.Millis.MINUTE)),
     v = null,
     A = !1;
-class I extends s.A {
+class I extends o.A {
     _initialize() {
         _.bW.beforeSendCallbacks.push({
             hasChanges: () => !1,
@@ -56,9 +56,9 @@ class I extends s.A {
                 !u.A.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (i().isEmpty(u.A.playedSoundHistory) || (e.playedSoundFrecency = a.kc.create(), e.playedSoundFrecency.playedSounds = (0, m.Mr)(u.A.playedSoundHistory, 100)))
             }
         }), _.bW.beforeSendCallbacks.push({
-            hasChanges: () => o.Ay.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
+            hasChanges: () => s.Ay.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
             processProto: e => {
-                !o.Ay.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = a.Zc.create(), e.applicationCommandFrecency.applicationCommands = (0, m.Mr)(o.Ay.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
+                !s.Ay.hasPendingUsage() || h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (e.applicationCommandFrecency = a.Zc.create(), e.applicationCommandFrecency.applicationCommands = (0, m.Mr)(s.Ay.getCommandFrecencyWithoutLoadingLatest().usageHistory, 500))
             }
         }), _.bW.beforeSendCallbacks.push({
             hasChanges: () => l.A.hasPendingUsage() && h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS),
@@ -94,7 +94,7 @@ function C() {
     A && (clearTimeout(v), v = null, N(!1))
 }
 async function N(e) {
-    w(O, !1), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || o.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
+    w(O, !1), !h.A.hasLoaded(g.oD.FRECENCY_AND_FAVORITES_SETTINGS) && (d.A.hasPendingUsage() || c.Ay.hasPendingUsage() || s.Ay.hasPendingUsage() || l.A.hasPendingUsage() || f.A.hasPendingUsage() && !e) && ((0, _.cE)(), await _.bW.loadIfNecessary()), i().forEach(_.Df, e => {
         e.markDirtyIfHasPendingChange()
     })
 }

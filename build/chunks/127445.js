@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(671325),
     a = n(562465),
-    s = n(397927),
-    o = n(954571),
+    o = n(397927),
+    s = n(954571),
     l = n(676279),
     c = n(652215),
     u = n(339747),
@@ -24,7 +24,7 @@ let m = e => {
                 modalGlowIdle: void 0,
                 modalGlowExit: void 0
             }),
-            [s, m] = (0, r.useState)(!1),
+            [o, m] = (0, r.useState)(!1),
             [g, E] = (0, r.useState)(!1),
             [y, b] = (0, r.useState)(!1),
             O = (0, r.useRef)(!0);
@@ -37,7 +37,7 @@ let m = e => {
                     b(!0), E(!1), m(!1);
                     try {
                         let e = Date.now(),
-                            [n, r, s] = await Promise.all([a.Bo.get({
+                            [n, r, o] = await Promise.all([a.Bo.get({
                                 url: t ? u.A : d.A,
                                 binary: !0,
                                 rejectWithError: !0
@@ -53,8 +53,8 @@ let m = e => {
                         O.current && (i({
                             modalGlowEntry: window.URL.createObjectURL(n.body),
                             modalGlowExit: window.URL.createObjectURL(r.body),
-                            modalGlowIdle: window.URL.createObjectURL(s.body)
-                        }), m(!0), o.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
+                            modalGlowIdle: window.URL.createObjectURL(o.body)
+                        }), m(!0), s.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCH_SUCCESS, {
                             load_duration_ms: Date.now() - e
                         }))
                     } catch (e) {
@@ -70,14 +70,14 @@ let m = e => {
             null != n.modalGlowEntry && window.URL.revokeObjectURL(n.modalGlowEntry), null != n.modalGlowIdle && window.URL.revokeObjectURL(n.modalGlowIdle), null != n.modalGlowExit && window.URL.revokeObjectURL(n.modalGlowExit)
         }, [n.modalGlowEntry, n.modalGlowIdle, n.modalGlowExit]), {
             mediaUrls: n,
-            isSuccess: s,
+            isSuccess: o,
             isFailure: g,
             isLoading: y
         }
     },
     g = e => {
         (0, r.useEffect)(() => {
-            e && o.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCHING)
+            e && s.default.track(c.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_PREFETCHING)
         }, [e]);
         let {
             mediaUrls: t,
@@ -85,10 +85,10 @@ let m = e => {
             isLoading: a
         } = m(e), {
             status: l
-        } = (0, s.CEU)(e ? i.A : null);
+        } = (0, o.CEU)(e ? i.A : null);
         return {
             mediaUrls: t,
-            isSuccess: n && l === s.BWP.Loaded,
-            isLoading: a || l === s.BWP.Loading
+            isSuccess: n && l === o.BWP.Loaded,
+            isLoading: a || l === o.BWP.Loading
         }
     }

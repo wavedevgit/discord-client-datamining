@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(311907),
-    o = n(435371),
+    o = n(311907),
+    s = n(435371),
     l = n(397927),
     c = n(401843),
     u = n(315606),
@@ -32,7 +32,7 @@ function y(e) {
         defaultWatchMultipleStreams: O
     } = (0, u.W)({
         location: "StreamHidden"
-    }), v = (0, s.bG)([d.A, f.default], () => d.A.getAllActiveStreams().some(e => {
+    }), v = (0, o.bG)([d.A, f.default], () => d.A.getAllActiveStreams().some(e => {
         let {
             ownerId: t
         } = e;
@@ -60,7 +60,7 @@ function y(e) {
                     })
                 }), v && !O ? (0, r.jsx)("div", {
                     className: a()(h.lO, h.EU),
-                    children: (0, r.jsx)(o.m_, {
+                    children: (0, r.jsx)(s.m_, {
                         text: _.intl.string(_.t.wCrzut),
                         children: (0, r.jsx)(l.K0, {
                             variant: "secondary",

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 305053, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(157559),
     p = n(826673),
     f = n(367727),
-    b = n(937161),
-    h = n(576705),
+    h = n(937161),
+    b = n(576705),
     x = n(405269),
     j = n(997509),
     _ = n(652215),
@@ -40,7 +40,7 @@ function A(e) {
     let n = !(0, f.cN)(g.M.GUILD_JOINT_PERMISSION_MIGRATION_NOTIFICATION, t.id) || !t.features.has(_.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) || !t.features.has(_.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE),
         {
             enabled: l
-        } = b.A.useExperiment({
+        } = h.A.useExperiment({
             guildId: t.id,
             location: "PermissionMigrationInfoBox"
         }),
@@ -145,7 +145,7 @@ function A(e) {
 function E(e) {
     let {
         guild: t
-    } = e, n = (0, u.bG)([h.A], () => h.A.can(_.xBc.ADMINISTRATOR, t)), l = t.features.has(_.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), s = t.features.has(_.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = i.useState(!0), [c, g] = i.useState(!0);
+    } = e, n = (0, u.bG)([b.A], () => b.A.can(_.xBc.ADMINISTRATOR, t)), l = t.features.has(_.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE), s = t.features.has(_.GuildFeatures.BYPASS_SLOWMODE_PERMISSION_MIGRATION_COMPLETE), [a, o] = i.useState(!0), [c, g] = i.useState(!0);
     return n ? (0, r.jsxs)("form", {
         className: y.Zd,
         children: [(0, r.jsxs)("fieldset", {

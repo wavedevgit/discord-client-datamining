@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(732955),
     a = n(397927),
-    s = n(928658),
-    o = n(632738),
+    o = n(928658),
+    s = n(632738),
     l = n(627363),
     c = n(587895),
     u = n(985018);
@@ -99,18 +99,18 @@ function y(e, t) {
             actions: []
         }, e), {
             children: (0, r.jsxs)(a.BJc, {
-                children: [(0, r.jsx)(o.PQ, {
+                children: [(0, r.jsx)(s.PQ, {
                     variant: "clickable",
                     title: u.intl.string(u.t.eyEkG1),
                     description: u.intl.string(u.t.ptItsj),
-                    onButtonPress: () => (0, s.NW)(t.user, t.guildId, n, t.appContext)
-                }), (0, r.jsx)(o.PQ, {
+                    onButtonPress: () => (0, o.NW)(t.user, t.guildId, n, t.appContext)
+                }), (0, r.jsx)(s.PQ, {
                     variant: "clickable",
                     title: u.intl.string(u.t.atP0yX),
                     description: u.intl.string(u.t.UGg603),
                     onButtonPress: () => {
                         var e;
-                        (0, s.r3)({
+                        (0, o.r3)({
                             application: d,
                             entrypoint: null != (e = t.entrypoint) ? e : "user_profile",
                             contextualGuildId: t.guildId,

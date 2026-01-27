@@ -2,12 +2,12 @@
 /** chunk id: 410109, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    R: () => s
+    R: () => o
 });
 var r = n(110259),
     i = n(499785),
     a = n(652215);
-let s = async function(e) {
+let o = async function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = {
             registration_id: e

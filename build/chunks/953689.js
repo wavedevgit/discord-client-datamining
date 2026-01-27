@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(284009),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(284009),
+    l = n.n(s),
     c = n(311907),
     u = n(397927),
     d = n(293066),
@@ -58,7 +58,7 @@ class y extends i.Component {
             applicationName: t,
             hasPreviouslyAcceptedEULA: i,
             forceShow: a,
-            disabled: o,
+            disabled: s,
             className: c,
             finePrint: d,
             showPricingLink: g,
@@ -83,7 +83,7 @@ class y extends i.Component {
                 onChange: e => this.setState({
                     hasAcceptedEULA: e
                 }),
-                disabled: o,
+                disabled: s,
                 label: h.intl.format(h.t.IodJKT, {
                     applicationName: t,
                     onClick: t => {
@@ -98,7 +98,7 @@ class y extends i.Component {
                     }
                 })
             }) : null, null == d ? null : (0, r.jsx)("div", {
-                className: s()(m.aO, I),
+                className: o()(m.aO, I),
                 children: d
             }), y ? (0, r.jsxs)("div", {
                 className: c,
@@ -107,7 +107,7 @@ class y extends i.Component {
                     onChange: e => this.setState({
                         hasAcceptedWithdrawalWaiver: e
                     }),
-                    disabled: o,
+                    disabled: s,
                     label: h.intl.string(h.t["DFCVN+"])
                 }), (0, r.jsx)("div", {
                     className: m.aO,

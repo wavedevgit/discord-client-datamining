@@ -7,7 +7,7 @@ n.d(t, {
     Oy: () => d,
     RJ: () => a,
     al: () => l,
-    cZ: () => o,
+    cZ: () => s,
     wu: () => i
 }), n(747238), n(64700);
 let r = ["gif", "webp", "png", "apng"];
@@ -21,11 +21,11 @@ function a(e) {
     return null != t && r.includes(t)
 }
 
-function s(e) {
+function o(e) {
     return !!i(e) && null != e.src && a(e.src)
 }
 
-function o(e) {
+function s(e) {
     return "type" in e && "video" === e.type && "string" == typeof e.src
 }
 
@@ -42,5 +42,5 @@ function u(e) {
 }
 
 function d(e) {
-    return null != e && (s(e) || o(e) || l(e) || c(e))
+    return null != e && (o(e) || s(e) || l(e) || c(e))
 }

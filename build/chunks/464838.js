@@ -1,7 +1,7 @@
 /** Chunk was on 18108 **/
 /** chunk id: 464838, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    A: () => m
+    A: () => A
 });
 var r = n(627968);
 n(64700);
@@ -9,45 +9,45 @@ var i = n(492917),
     s = n(397927),
     a = n(311907),
     l = n(287809),
-    c = n(427262),
-    o = n(665909),
+    o = n(427262),
+    c = n(665909),
     d = n(237170),
     u = n(12105),
-    _ = n(985018),
-    x = n(286965);
+    E = n(985018),
+    _ = n(286965);
 
-function m(t) {
+function A(t) {
     let {
         senderId: e,
         trackAnalyticsEvent: n,
-        onNavigate: m
+        onNavigate: A
     } = t, h = (0, a.bG)([l.default], () => {
         let t = l.default.getUser(e);
-        return c.Ay.getName(t)
+        return o.Ay.getName(t)
     });
     return (0, r.jsx)(u.A, {
-        header: _.intl.string(_.t.sSMgC6),
-        description: _.intl.formatToPlainString(_.t.q2QrTY, {
+        header: E.intl.string(E.t.sSMgC6),
+        description: E.intl.formatToPlainString(E.t.q2QrTY, {
             username: h
         }),
         heroImage: (0, r.jsx)(i.$wK, {
-            alt: _.intl.string(_.t["3QhxXJ"])
+            alt: E.intl.string(E.t["3QhxXJ"])
         }),
         children: (0, r.jsxs)("div", {
-            className: x.UD,
+            className: _.UD,
             children: [(0, r.jsx)(s.Button, {
-                text: _.intl.string(_.t["+o4Q7e"]),
+                text: E.intl.string(E.t["+o4Q7e"]),
                 variant: "primary",
                 fullWidth: !0,
                 onClick: () => {
-                    m(d.G.TAKE_ACTION), n(o.Wm.USER_TAKEOVER_MODAL_TAKE_ACTION)
+                    A(d.G.TAKE_ACTION), n(c.Wm.USER_TAKEOVER_MODAL_TAKE_ACTION)
                 }
             }), (0, r.jsx)(s.Button, {
-                text: _.intl.string(_.t.xLkGzP),
+                text: E.intl.string(E.t.xLkGzP),
                 variant: "secondary",
                 fullWidth: !0,
                 onClick: () => {
-                    m(d.G.SAFETY_TIPS), n(o.Wm.USER_TAKEOVER_MODAL_SAFETY_TIPS)
+                    A(d.G.SAFETY_TIPS), n(c.Wm.USER_TAKEOVER_MODAL_SAFETY_TIPS)
                 }
             })]
         })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 31010, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     T: "tag_c6d624"
 }

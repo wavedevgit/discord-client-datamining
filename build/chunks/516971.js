@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(658122);
+    o = n(658122);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -75,16 +75,16 @@ function p(e) {
     } = e, {
         type: n,
         icon: i,
-        color: o = "currentColor",
+        color: s = "currentColor",
         className: c
     } = t, f = d(t, ["type", "icon", "color", "className"]);
     return (0, r.jsx)("div", {
-        className: s.iconContainer,
+        className: o.iconContainer,
         children: (0, r.jsx)(i, u(l({
             "aria-hidden": !0,
-            color: o
+            color: s
         }, f), {
-            className: a()(s.icon, c)
+            className: a()(o.icon, c)
         }))
     })
 }

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 246097, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    K: () => o
+    K: () => s
 });
 var r = n(311907),
     i = n(346835),
-    a = n(257269),
-    s = n(652215);
-let o = (0, r.UT)(i.A, {
-    getQueryId: s.fic.CUSTOM_ACTIVITY_LINK,
+    l = n(257269),
+    a = n(652215);
+let s = (0, r.UT)(i.A, {
+    getQueryId: a.fic.CUSTOM_ACTIVITY_LINK,
     get: (e, t) => null == e || null == t ? null : i.A.getOne(e, t),
-    load: (e, t) => (0, a.Py)(e, t)
+    load: (e, t) => (0, l.Py)(e, t)
 })

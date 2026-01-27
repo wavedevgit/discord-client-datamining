@@ -5,8 +5,8 @@ let r, i;
 n.d(t, {
     A: () => O
 });
-var a, s = n(311907),
-    o = n(506774),
+var a, o = n(311907),
+    s = n(506774),
     l = n(73153),
     c = n(734057),
     u = n(71393);
@@ -43,11 +43,11 @@ function y(e) {
     let {
         forever: t
     } = e;
-    _ = !0, t && (h = !0, o.w.set(f, h))
+    _ = !0, t && (h = !0, s.w.set(f, h))
 }
-class b extends(a = s.Ay.Store) {
+class b extends(a = o.Ay.Store) {
     initialize() {
-        this.waitFor(c.A, u.A), h = o.w.get(f) || h
+        this.waitFor(c.A, u.A), h = s.w.get(f) || h
     }
     isAFKChannel() {
         let e = c.A.getChannel(i);

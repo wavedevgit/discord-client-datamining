@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 43629 **/
 /** chunk id: 493507, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => b
+    A: () => f
 }), n(896048);
-var r, i = n(311907),
-    a = n(73153),
-    s = n(961350),
-    o = n(927813),
-    l = n(469679);
+var i, r = n(311907),
+    s = n(73153),
+    l = n(961350),
+    a = n(927813),
+    o = n(469679);
 
-function c(e, t, n) {
+function u(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,84 +17,68 @@ function c(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let u = 3 * o.A.Millis.DAY,
-    d = {};
-
-function f() {
-    return l.T.getConfig({
-        location: "ReplyNudgeStore"
-    }).enabled
-}
-
-function p(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now(),
-        n = {};
-    for (let [r, i] of Object.entries(e)) null != i && t - i < u && (n[r] = i);
-    return n
-}
-
-function _(e) {
-    let {
-        channelId: t,
-        timestamp: n
-    } = e;
-    if (t in d) return !1;
-    d[t] = n
-}
-
-function h(e) {
-    let {
-        message: t
-    } = e;
-    if (!(t.channel_id in d)) return !1;
-    delete d[t.channel_id]
-}
-
-function m(e) {
-    let {
-        channelId: t,
-        userId: n
-    } = e;
-    if (n !== s.default.getId() || !(t in d)) return !1;
-    delete d[t]
-}
-
-function g(e) {
-    let {
-        channel: {
-            id: t
-        }
-    } = e;
-    if (!(t in d)) return !1;
-    delete d[t]
-}
-
-function E() {
-    d = {}
-}
-class y extends(r = i.Ay.PersistedStore) {
+let d = 3 * a.A.Millis.DAY,
+    c = {};
+class A extends(i = r.Ay.PersistedStore) {
     initialize(e) {
         var t;
-        d = p(null != (t = null == e ? void 0 : e.nudgedChannels) ? t : {}), this.waitFor(s.default)
+        c = function(e) {
+            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now(),
+                n = {};
+            for (let [i, r] of Object.entries(e)) null != r && t - r < d && (n[i] = r);
+            return n
+        }(null != (t = null == e ? void 0 : e.nudgedChannels) ? t : {}), this.waitFor(l.default)
     }
     getState() {
         return {
-            nudgedChannels: d
+            nudgedChannels: c
         }
     }
     getNudgeTimestamp(e) {
         var t;
-        return f() && null != (t = d[e]) ? t : null
+        return o.T.getConfig({
+            location: "ReplyNudgeStore"
+        }).enabled && null != (t = c[e]) ? t : null
     }
     isChannelNudged(e) {
         return null != this.getNudgeTimestamp(e)
     }
 }
-c(y, "displayName", "ReplyNudgeStore"), c(y, "persistKey", "ReplyNudgeStore");
-let b = new y(a.h, {
-    REPLY_NUDGE_SET: _,
-    MESSAGE_CREATE: h,
-    MESSAGE_REACTION_ADD: m,
-    CHANNEL_DELETE: g,
-    LOGOUT: E
+u(A, "displayName", "ReplyNudgeStore"), u(A, "persistKey", "ReplyNudgeStore");
+let f = new A(s.h, {
+    REPLY_NUDGE_SET: function(e) {
+        let {
+            channelId: t,
+            timestamp: n
+        } = e;
+        if (t in c) return !1;
+        c[t] = n
+    },
+    MESSAGE_CREATE: function(e) {
+        let {
+            message: t
+        } = e;
+        if (!(t.channel_id in c)) return !1;
+        delete c[t.channel_id]
+    },
+    MESSAGE_REACTION_ADD: function(e) {
+        let {
+            channelId: t,
+            userId: n
+        } = e;
+        if (n !== l.default.getId() || !(t in c)) return !1;
+        delete c[t]
+    },
+    CHANNEL_DELETE: function(e) {
+        let {
+            channel: {
+                id: t
+            }
+        } = e;
+        if (!(t in c)) return !1;
+        delete c[t]
+    },
+    LOGOUT: function() {
+        c = {}
+    }
 })

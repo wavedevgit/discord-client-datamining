@@ -2,42 +2,86 @@
 /** chunk id: 322789, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => O,
-    n: () => y
+    A: () => w,
+    n: () => C
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(696292),
-    s = n(554146),
-    o = n(397927),
+    o = n(554146),
+    s = n(397927),
     l = n(359549),
     c = n(627363),
     u = n(379848),
     d = n(753845),
-    f = n(939341),
-    p = n(263577),
-    _ = n(506326),
-    h = n(868065),
-    m = n(985018),
-    g = n(22589),
-    E = n(332225);
-let y = [_.iq, _.Zc, _.Xy, _.$X, _.tR, _.K7, _.fg, _.sp, _.MK],
-    b = e => {
+    f = n(657331),
+    p = n(964195),
+    _ = n(939341),
+    h = n(263577),
+    m = n(506326),
+    g = n(868065),
+    E = n(424994),
+    y = n(518477),
+    b = n(985018),
+    O = n(22589),
+    v = n(332225);
+
+function A(e, t, n) {
+    return t in e ? Object.defineProperty(e, t, {
+        value: n,
+        enumerable: !0,
+        configurable: !0,
+        writable: !0
+    }) : e[t] = n, e
+}
+
+function I(e) {
+    for (var t = 1; t < arguments.length; t++) {
+        var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+        }))), r.forEach(function(t) {
+            A(e, t, n[t])
+        })
+    }
+    return e
+}
+
+function S(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+        var r = Object.getOwnPropertySymbols(e);
+        t && (r = r.filter(function(t) {
+            return Object.getOwnPropertyDescriptor(e, t).enumerable
+        })), n.push.apply(n, r)
+    }
+    return n
+}
+
+function T(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+    }), e
+}
+let C = [m.iq, m.Zc, m.Xy, m.$X, m.tR, m.K7, m.fg, m.sp, m.MK],
+    N = e => {
         let {
             entry: t,
             channel: n,
             selected: i,
-            hovered: b,
-            isFirstApplicationOccurrence: O
+            hovered: A,
+            isFirstApplicationOccurrence: S,
+            trackRankingItemInteraction: N
         } = e, {
-            largeImage: v
-        } = (0, f.nO)({
+            largeImage: w
+        } = (0, _.nO)({
             entry: t,
             showCoverImage: !1
         }), {
-            data: A
-        } = (0, c.YY)(t.extra.application_id), I = (0, l.J)(A) && O, S = I ? [s.M.CLOUD_PLAY_NEW_BADGE] : [], [T] = (0, u.kn)(S);
-        return (0, r.jsxs)(h.Zp, {
+            data: R
+        } = (0, c.YY)(t.extra.application_id), P = (0, l.J)(R) && S, D = P ? [o.M.CLOUD_PLAY_NEW_BADGE] : [], [L] = (0, u.kn)(D);
+        return (0, r.jsxs)(g.Zp, {
             selected: i,
             usesCardRows: !0,
             children: [(0, r.jsx)(d.A, {
@@ -45,50 +89,58 @@ let y = [_.iq, _.Zc, _.Xy, _.$X, _.tR, _.K7, _.fg, _.sp, _.MK],
                 questContent: a.u.MEMBERS_LIST_CARD,
                 children: e => {
                     var i;
-                    return (0, r.jsxs)(h.dM, {
+                    return (0, r.jsxs)(g.dM, {
                         ref: e,
-                        children: [(0, r.jsxs)(h.UA, {
-                            children: [(0, r.jsx)(h.Hp, {
+                        children: [(0, r.jsxs)(g.UA, {
+                            children: [(0, r.jsx)(g.Hp, {
                                 entry: t,
                                 channelId: n.id,
                                 guildId: n.guild_id
-                            }), (0, r.jsx)(h.ZB, {
+                            }), (0, r.jsx)(g.ZB, {
                                 children: t.extra.game_name
-                            }), (0, r.jsx)(_.mG, {
-                                location: _.N5.CARD,
-                                children: y.map((e, n) => (0, r.jsx)(e, {
+                            }), (0, r.jsx)(m.mG, {
+                                location: m.N5.CARD,
+                                children: C.map((e, n) => (0, r.jsx)(e, {
                                     entry: t,
-                                    hovered: b
+                                    hovered: A
                                 }, n))
                             })]
-                        }), (0, r.jsx)(p.V, {
-                            alt: null != (i = null == v ? void 0 : v.text) ? i : null == v ? void 0 : v.alt,
-                            src: null == v ? void 0 : v.src,
+                        }), (0, r.jsx)(h.V, {
+                            alt: null != (i = null == w ? void 0 : w.text) ? i : null == w ? void 0 : w.alt,
+                            src: null == w ? void 0 : w.src,
                             size: 48,
-                            className: E.xn,
-                            showTooltip: (null == v ? void 0 : v.text) != null
+                            className: v.xn,
+                            showTooltip: (null == w ? void 0 : w.text) != null
                         })]
                     })
                 }
-            }), I && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(h.ik, {}), (0, r.jsxs)(h.dM, {
-                    className: g.D,
+            }), P && (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(g.ik, {}), (0, r.jsxs)(g.dM, {
+                    className: O.DK,
                     children: [(0, r.jsxs)("div", {
-                        className: g.t,
-                        children: [(0, r.jsx)(o.hpF, {
-                            color: o.LU0.colors.ICON_SUBTLE,
+                        className: O.tJ,
+                        children: [(0, r.jsx)(s.hpF, {
+                            color: s.LU0.colors.ICON_SUBTLE,
                             size: "xxs"
-                        }), (0, r.jsx)(o.Text, {
+                        }), (0, r.jsx)(s.Text, {
                             variant: "text-xs/normal",
                             color: "text-subtle",
-                            children: m.intl.string(m.t["5HiF2i"])
+                            children: b.intl.string(b.t["5HiF2i"])
                         })]
-                    }), T === s.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(o.LpS, {
-                        text: m.intl.string(m.t.y2b7CA),
-                        color: o.LU0.colors.BACKGROUND_BRAND.css
+                    }), L === o.M.CLOUD_PLAY_NEW_BADGE && (0, r.jsx)(s.LpS, {
+                        text: b.intl.string(b.t.y2b7CA),
+                        color: s.LU0.colors.BACKGROUND_BRAND.css
                     })]
                 })]
-            })]
+            }), "applicationWidgetPreview" in t && null != t.applicationWidgetPreview && (0, r.jsx)(p.F, T(I({}, t.applicationWidgetPreview), {
+                className: O.AB,
+                onClickViewMore: () => {
+                    N(E.PA.APPLICATION_WIDGET_PREVIEW_VIEW_MORE), (0, f.openUserProfileModal)({
+                        userId: t.author_id,
+                        tabSection: y.RP.WIDGETS
+                    })
+                }
+            }))]
         })
     },
-    O = i.memo(b)
+    w = i.memo(N)

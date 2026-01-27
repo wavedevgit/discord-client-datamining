@@ -2,15 +2,15 @@
 /** chunk id: 320061, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(710133),
-    s = n(985018);
+    o = n(985018);
 
-function o(e) {
+function s(e) {
     let {
         analyticsSection: t,
         buttonText: n
@@ -18,7 +18,7 @@ function o(e) {
     return (0, r.jsx)(i.Button, {
         variant: "expressive",
         icon: i.tvc,
-        text: null != n ? n : s.intl.string(s.t["8Sh5fg"]),
+        text: null != n ? n : o.intl.string(o.t["8Sh5fg"]),
         onClick: () => (0, a.A)({
             section: t
         })

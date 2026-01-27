@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(696986),
-    o = n(397927),
+    o = n(696986),
+    s = n(397927),
     l = n(435582),
     c = n(283488),
     u = n(264322),
@@ -35,32 +35,32 @@ function S(e) {
         sectionName: c
     } = e, A = "channel" === n.type ? n.channel : void 0, S = (0, a.bG)([f.A], () => f.A.entrypoint()), C = null != (t = (0, d.h)(l.id === y.Ik.BUILT_IN ? null : l.id)) ? t : l, N = (0, _.Ag)(C) ? T : E.A, w = i.useRef(null), [R, P] = i.useState(!1), {
         iconURL: D,
-        name: x
+        name: L
     } = i.useMemo(() => (0, _.X2)(C, {
         fakeAppIconURL: v,
         size: I
-    }), [C]), L = (0, u.A4)(!0, !0), j = (0, u.ON)(null == A ? void 0 : A.guild_id, !0), M = i.useMemo(() => (0, u.Sx)(n, C.id), [L, j, n, C.id]), k = !M.isGuildInstalled && !M.isUserInstalled;
+    }), [C]), x = (0, u.A4)(!0, !0), M = (0, u.ON)(null == A ? void 0 : A.guild_id, !0), j = i.useMemo(() => (0, u.Sx)(n, C.id), [x, M, n, C.id]), k = !j.isGuildInstalled && !j.isUserInstalled;
     return i.useEffect(() => {
         k && u.Ay.queryInstallOnDemandApp(C.id, null == A ? void 0 : A.id)
-    }, [C.id, null == A ? void 0 : A.id, k]), (0, r.jsxs)(o.d_W, {
+    }, [C.id, null == A ? void 0 : A.id, k]), (0, r.jsxs)(s.d_W, {
         className: O.k,
         fade: !0,
         ref: w,
         role: "region",
         "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
-            applicationName: x
+            applicationName: L
         }),
         children: [(0, r.jsx)(g.A, {
             application: C,
             context: n,
-            name: x,
+            name: L,
             iconURL: D,
             scrollerRef: w,
             sectionName: c
         }), null != D && (0, r.jsx)(h.A, {
             src: D,
             className: O.Z
-        }), (0, r.jsx)(s.A, {
+        }), (0, r.jsx)(o.A, {
             size: 54
         }), (0, r.jsx)(N, {
             context: n,
@@ -83,16 +83,16 @@ function T(e) {
         application: n,
         sectionName: i,
         hasCommands: a
-    } = e, s = (0, c.A)({
+    } = e, o = (0, c.A)({
         applicationId: n.id,
         size: A,
         names: ["embedded_cover"],
         format: "webp"
-    }), o = (0, _.Cx)(n), u = null != o && null != o.activity_preview_video_asset_id ? (0, l.A)(n.id, o.activity_preview_video_asset_id) : null;
+    }), s = (0, _.Cx)(n), u = null != s && null != s.activity_preview_video_asset_id ? (0, l.A)(n.id, s.activity_preview_video_asset_id) : null;
     return (0, r.jsx)(E.A, {
         context: t,
         application: n,
-        imageCoverUrl: s.url,
+        imageCoverUrl: o.url,
         videoUrl: u,
         sectionName: i,
         hasCommands: a

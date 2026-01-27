@@ -8,8 +8,8 @@ n.r(t), n.d(t, {
 }), n(747238), n(812715);
 var i = n(280230),
     a = n.n(i),
-    s = n(873879),
-    o = n(683412),
+    o = n(873879),
+    s = n(683412),
     l = n(704726),
     c = n(46054);
 
@@ -67,11 +67,11 @@ let A = e => {
         } = e;
         return (e, n, r) => {
             let i = O.exec(e[1]),
-                s = e[1].replace(O, "");
-            return t && (s = s.toUpperCase()), {
+                o = e[1].replace(O, "");
+            return t && (o = o.toUpperCase()), {
                 className: null != i ? i[1] : null,
                 level: "=" === e[2] ? 1 : 2,
-                content: a().parseInline(n, s, r)
+                content: a().parseInline(n, o, r)
             }
         }
     },
@@ -113,8 +113,8 @@ let A = e => {
     T = e => p(d({}, I(e)), {
         newline: d({}, a().defaultRules.newline),
         text: l.Ay,
-        list: s.A,
-        subtext: o.A
+        list: o.A,
+        subtext: s.A
     });
 
 function C(e) {

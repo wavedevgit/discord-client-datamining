@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(554352),
     a = n(418034),
-    s = n(542362),
-    o = function() {},
+    o = n(542362),
+    s = function() {},
     l = function() {
         return Promise.resolve(null)
     },
@@ -49,7 +49,7 @@ function u(e) {
                 }])
             }
         }, [n, d, h, p, A]),
-        T = (0, s.E)(_ || E, b, S),
+        T = (0, o.E)(_ || E, b, S),
         C = T.state,
         N = T.styles,
         w = T.forceUpdate,
@@ -65,7 +65,7 @@ function u(e) {
                     style: N.arrow,
                     ref: I
                 },
-                forceUpdate: w || o,
+                forceUpdate: w || s,
                 update: R || l
             }
         }, [O, I, n, C, N, R, w]);

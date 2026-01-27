@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(156898),
-    o = n(67480),
+    o = n(156898),
+    s = n(67480),
     l = n(328968);
 
 function c(e, t, n) {
@@ -24,7 +24,7 @@ let u = new Map,
 var f = function(e) {
     return e[e.NONE = 0] = "NONE", e[e.FETCHING = 1] = "FETCHING", e[e.FETCHED = 2] = "FETCHED", e[e.FAILED = 3] = "FAILED", e
 }({});
-let p = new s.A({
+let p = new o.A({
     subscriptions: [],
     otps: []
 });
@@ -34,7 +34,7 @@ function _(e) {
         applicationId: t,
         layout: n
     } = e;
-    u.set(t, s.A.createFromServer(n)), d.delete(t)
+    u.set(t, o.A.createFromServer(n)), d.delete(t)
 }
 
 function h(e) {
@@ -52,7 +52,7 @@ function m(e) {
 }
 class g extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A, l.A)
+        this.waitFor(s.A, l.A)
     }
     hasStorefront(e) {
         return u.has(e)

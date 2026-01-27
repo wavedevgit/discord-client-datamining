@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 675654, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(351906),
     p = n(794967),
     f = n(555337),
-    b = n(875331),
-    h = n(545055),
+    h = n(875331),
+    b = n(545055),
     x = n(966394),
     j = n(985018),
     _ = n(93100);
@@ -45,14 +45,14 @@ function O(e) {
             embedEnabled: t,
             embedChannelId: n
         }
-    }), N = i.useMemo(() => (0, h.k)(t), [t]), S = i.useMemo(() => (0, h.Z)(t), [t]), [I, T] = i.useState(!1), C = null != c && l.i.VISIBLE.has(c.visibility), P = !v && !C && !A;
+    }), N = i.useMemo(() => (0, b.k)(t), [t]), S = i.useMemo(() => (0, b.Z)(t), [t]), [I, T] = i.useState(!1), C = null != c && l.i.VISIBLE.has(c.visibility), P = !v && !C && !A;
     i.useEffect(() => {
         y || (0, p.D)(t)
     }, [y, t]), i.useEffect(() => {
         m()
     }, [t, m]);
     let w = i.useCallback(async e => {
-        T(!0), await (0, b.E)(t, e, E), T(!1)
+        T(!0), await (0, h.E)(t, e, E), T(!1)
     }, [E, t]);
     return y ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.dOG, {

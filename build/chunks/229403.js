@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(493405),
+    o = n(397927),
+    s = n(493405),
     l = n(812745),
     c = n(70142),
     u = n(825755),
@@ -16,14 +16,14 @@ var r = n(627968),
     f = n(666491);
 class p extends i.PureComponent {
     componentDidMount() {
-        null != this.props.venmoClient && o.fB()
+        null != this.props.venmoClient && s.fB()
     }
     componentDidUpdate(e) {
-        null == e.venmoClient && null != this.props.venmoClient && o.fB()
+        null == e.venmoClient && null != this.props.venmoClient && s.fB()
     }
     componentWillUnmount() {
-        o._b().then(() => {
-            null != c.A.getClient() && o.DD()
+        s._b().then(() => {
+            null != c.A.getClient() && s.DD()
         })
     }
     render() {
@@ -39,18 +39,18 @@ class p extends i.PureComponent {
                 size: l.y3.MEDIUM,
                 className: f.Z
             }), i ? (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(s.Heading, {
+                children: [(0, r.jsx)(o.Heading, {
                     variant: e.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
                     className: f.y,
                     children: d.intl.format(d.t.DowIre, {
                         venmoUsername: e
                     })
-                }), (0, r.jsx)(s.Text, {
+                }), (0, r.jsx)(o.Text, {
                     variant: "text-md/medium",
                     className: f.y,
                     children: d.intl.string(d.t.kmEvnR)
                 })]
-            }) : (0, r.jsx)(s.Text, {
+            }) : (0, r.jsx)(o.Text, {
                 variant: "text-md/medium",
                 className: f.y,
                 children: null == n ? d.intl.string(d.t["2ouZDU"]) : d.intl.string(d.t.mIL6Jb)

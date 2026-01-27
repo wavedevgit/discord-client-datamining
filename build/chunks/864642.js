@@ -18,8 +18,8 @@ n.r(t), n.d(t, {
 var r = n(701153),
     i = n(272081),
     a = n(355497),
-    s = n(267118),
-    o = n(60538),
+    o = n(267118),
+    s = n(60538),
     l = n(515875),
     c = n(781309),
     u = n(880683),
@@ -47,7 +47,7 @@ function O() {
 
 function v(e = !0) {
     let t = (0, h.i)({
-        parsers: [new r.A, new s.A, new _.A, new o.A, new l.A],
+        parsers: [new r.A, new o.A, new _.A, new s.A, new l.A],
         refiners: [new p.A, new c.A, new i.A]
     }, e);
     return t.refiners = t.refiners.filter(e => !(e instanceof m.A)), t

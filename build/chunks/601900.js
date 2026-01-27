@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(205693),
     i = n(652896),
     a = n(430452),
-    s = n(383501),
-    o = n(309010),
+    o = n(383501),
+    s = n(309010),
     l = n(162605);
 
 function c(e, t, n) {
@@ -36,11 +36,11 @@ function u(e) {
 
 function d() {
     var e;
-    let t = o.A.getVoiceChannelId();
+    let t = s.A.getVoiceChannelId();
     return u({
         channelId: null != t ? t : void 0,
-        mediaSessionId: null != (e = s.A.getMediaSessionId()) ? e : void 0,
-        rtcConnectionId: s.A.getRTCConnectionId(),
+        mediaSessionId: null != (e = o.A.getMediaSessionId()) ? e : void 0,
+        rtcConnectionId: o.A.getRTCConnectionId(),
         mediaContext: r.x.DEFAULT
     }, p())
 }
@@ -50,11 +50,11 @@ function f(e) {
     let {
         channelId: n,
         ownerId: a
-    } = (0, i.Iy)(e), s = l.A.getRTCConnection(e);
+    } = (0, i.Iy)(e), o = l.A.getRTCConnection(e);
     return u({
         channelId: n,
-        mediaSessionId: null != (t = null == s ? void 0 : s.getMediaSessionId()) ? t : void 0,
-        rtcConnectionId: null == s ? void 0 : s.getRTCConnectionId(),
+        mediaSessionId: null != (t = null == o ? void 0 : o.getMediaSessionId()) ? t : void 0,
+        rtcConnectionId: null == o ? void 0 : o.getRTCConnectionId(),
         mediaContext: r.x.STREAM,
         streamKey: e,
         userId: a

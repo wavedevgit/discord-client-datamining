@@ -1,37 +1,36 @@
-/** Chunk was on web.js **/
+/** Chunk was on 52081 **/
 /** chunk id: 4274, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    g: () => l,
+    g: () => s,
     s: () => c
 });
 var r = n(287809),
-    i = n(975571),
-    a = n(927578),
-    s = n(652215),
-    o = n(985018);
+    l = n(975571),
+    i = n(927578),
+    o = n(652215),
+    a = n(985018);
 
-function l(e) {
+function s(e) {
     switch (e) {
-        case s.t02.TOO_MANY_USER_GUILDS:
+        case o.t02.TOO_MANY_USER_GUILDS:
             let t = r.default.getCurrentUser(),
-                n = a.Ay.canUseIncreasedGuildCap(t) || (null == t ? void 0 : t.isStaff()) ? s.cZu : s.qlD;
+                n = i.Ay.canUseIncreasedGuildCap(t) || (null == t ? void 0 : t.isStaff()) ? o.cZu : o.qlD;
             return {
-                title: o.intl.formatToPlainString(o.t["ttJ/hj"], {
+                title: a.intl.formatToPlainString(a.t["ttJ/hj"], {
                     quantity: n
-                }), description: o.intl.string(o.t.iLyuDO)
+                }), description: a.intl.string(a.t.iLyuDO)
             };
-        case s.t02.GUILD_AT_CAPACITY:
+        case o.t02.GUILD_AT_CAPACITY:
             return {
-                title: o.intl.string(o.t.ZZlox4), description: o.intl.string(o.t.ZUEGFn)
+                title: a.intl.string(a.t.ZZlox4), description: a.intl.string(a.t.ZUEGFn)
             };
-        case s.t02.GUILD_JOIN_INVITE_LIMITED_ACCESS:
+        case o.t02.GUILD_JOIN_INVITE_LIMITED_ACCESS:
             return {
-                title: o.intl.string(o.t.kJwpBW), description: o.intl.string(o.t.ZUEGFn)
+                title: a.intl.string(a.t.kJwpBW), description: a.intl.string(a.t.ZUEGFn)
             };
-        case s.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED:
+        case o.t02.USER_GUILD_JOIN_LARGE_GUILD_UNDERAGE_DISALLOWED:
             return {
-                title: o.intl.string(o.t["u/xsK9"]), description: o.intl.string(o.t.SxY4IW)
+                title: a.intl.string(a.t["u/xsK9"]), description: a.intl.string(a.t.SxY4IW)
             };
         default:
             return null
@@ -40,19 +39,19 @@ function l(e) {
 
 function c(e) {
     switch (e) {
-        case s.t02.TOO_MANY_USER_GUILDS:
-            return o.intl.string(o.t.iLyuDO);
-        case s.t02.GUILD_AT_CAPACITY:
-            return o.intl.string(o.t.M6unNJ);
-        case s.t02.INVALID_COUNTRY_CODE:
-            return o.intl.string(o.t.sRJGR1);
-        case s.t02.INVALID_CANNOT_FRIEND_SELF:
-            return o.intl.string(o.t["mY2R+F"]);
-        case s.t02.INVITES_DISABLED:
-            return o.intl.format(o.t.RXSeLl, {
-                articleLink: i.A.getArticleURL(s.MVz.INVITE_DISABLED)
+        case o.t02.TOO_MANY_USER_GUILDS:
+            return a.intl.string(a.t.iLyuDO);
+        case o.t02.GUILD_AT_CAPACITY:
+            return a.intl.string(a.t.M6unNJ);
+        case o.t02.INVALID_COUNTRY_CODE:
+            return a.intl.string(a.t.sRJGR1);
+        case o.t02.INVALID_CANNOT_FRIEND_SELF:
+            return a.intl.string(a.t["mY2R+F"]);
+        case o.t02.INVITES_DISABLED:
+            return a.intl.format(a.t.RXSeLl, {
+                articleLink: l.A.getArticleURL(o.MVz.INVITE_DISABLED)
             });
         default:
-            return o.intl.string(o.t.dDZRdy)
+            return a.intl.string(a.t.dDZRdy)
     }
 }

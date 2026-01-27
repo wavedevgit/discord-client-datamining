@@ -2,9 +2,9 @@
 /** chunk id: 126904, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c6: () => o,
+    c6: () => s,
     q: () => a,
-    tR: () => s
+    tR: () => o
 });
 var r = n(600975),
     i = n(688151);
@@ -34,7 +34,7 @@ let a = (0, r.C)({
     }]
 });
 
-function s(e) {
+function o(e) {
     let {
         location: t
     } = e;
@@ -45,7 +45,7 @@ function s(e) {
     })
 }
 
-function o(e) {
+function s(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
     return a.getCurrentConfig({
         location: e

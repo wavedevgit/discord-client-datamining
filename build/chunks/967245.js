@@ -3,9 +3,9 @@
 "use strict";
 n.d(t, {
     i$: () => i,
-    wm: () => s,
+    wm: () => o,
     xQ: () => a,
-    yz: () => o
+    yz: () => s
 });
 var r = n(600975);
 let i = (0, r.C)({
@@ -38,7 +38,7 @@ let i = (0, r.C)({
             }
         }]
     }),
-    s = (0, r.C)({
+    o = (0, r.C)({
         kind: "user",
         id: "2023-01_creator_monetization_nag_activate_users",
         label: "Creator Monetization Nag Activate Users",
@@ -53,7 +53,7 @@ let i = (0, r.C)({
             }
         }]
     }),
-    o = (0, r.C)({
+    s = (0, r.C)({
         kind: "guild",
         id: "2025-08_move_role_subscriptions_onboarding_from_server_settings_",
         label: "Move Role Subscriptions Onboarding From Server Settings",

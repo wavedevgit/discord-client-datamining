@@ -1,7 +1,7 @@
 /** Chunk was on web.js **/
 /** chunk id: 736260, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r, i, a, s, o, l = n(860511),
+var r, i, a, o, s, l = n(860511),
     c = n(745730),
     u = n(221015),
     d = n(314144).set,
@@ -26,8 +26,8 @@ if (!O) {
             }
             e && e.enter()
         };
-    p || m || h || !g || !E ? !_ && b && b.resolve ? ((s = b.resolve(void 0)).constructor = b, o = u(s.then, s), r = function() {
-        o(A)
+    p || m || h || !g || !E ? !_ && b && b.resolve ? ((o = b.resolve(void 0)).constructor = b, s = u(o.then, o), r = function() {
+        s(A)
     }) : m ? r = function() {
         y.nextTick(A)
     } : (d = u(d, l), r = function() {

@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(665260),
     i = n(155718),
     a = n(77350),
-    s = n(998218),
-    o = n(652215);
+    o = n(998218),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -89,9 +89,9 @@ function h(e) {
 function m(e) {
     var t, n;
     let a = 0;
-    (0, r.Lt)(null != (t = e.flags) ? t : 0, o.sbO.CONTAINS_EXPLICIT_MEDIA) && (a |= 1);
-    let s = 0;
-    return (0, r.Lt)(null != (n = e.flags) ? n : 0, o.sbO.IS_ANIMATED) && (s |= 1), {
+    (0, r.Lt)(null != (t = e.flags) ? t : 0, s.sbO.CONTAINS_EXPLICIT_MEDIA) && (a |= 1);
+    let o = 0;
+    return (0, r.Lt)(null != (n = e.flags) ? n : 0, s.sbO.IS_ANIMATED) && (o |= 1), {
         url: e.url,
         proxyUrl: e.proxy_url,
         height: e.height,
@@ -105,12 +105,12 @@ function m(e) {
             version: e.content_scan_version,
             flags: a
         },
-        flags: s
+        flags: o
     }
 }
 
 function g(e) {
-    return (0, a.tT)(e.contentType) ? "IMAGE" : (0, a.XB)(e.contentType) && null != e.proxyUrl && null != s.A.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
+    return (0, a.tT)(e.contentType) ? "IMAGE" : (0, a.XB)(e.contentType) && null != e.proxyUrl && null != o.A.toURLSafe(e.proxyUrl) ? "VIDEO" : "INVALID"
 }
 
 function E(e) {

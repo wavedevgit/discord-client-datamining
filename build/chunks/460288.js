@@ -4,9 +4,9 @@
 n.d(t, {
     I: () => l,
     Vf: () => a,
-    We: () => s,
+    We: () => o,
     c0: () => i,
-    mg: () => o
+    mg: () => s
 }), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
 let r = 8;
 
@@ -28,7 +28,7 @@ function a(e, t) {
     return e[n] |= a, e
 }
 
-function s(e, t) {
+function o(e, t) {
     if (i(e, t)) {
         let n = Math.floor(t / r),
             i = 1 << t % r;
@@ -37,7 +37,7 @@ function s(e, t) {
     return e
 }
 
-function o(e) {
+function s(e) {
     return e instanceof Uint8Array
 }
 

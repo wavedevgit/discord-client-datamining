@@ -6,13 +6,13 @@ Object.defineProperty(t, "__esModule", {
 }), t.stringSimilarity = void 0, t.stringSimilarity = function(e, t, n, r) {
     if (void 0 === n && (n = 2), void 0 === r && (r = !1), r || (e = e.toLowerCase(), t = t.toLowerCase()), e.length < n || t.length < n) return 0;
     for (var i = new Map, a = 0; a < e.length - (n - 1); a++) {
-        var s = e.substr(a, n);
-        i.set(s, i.has(s) ? i.get(s) + 1 : 1)
+        var o = e.substr(a, n);
+        i.set(o, i.has(o) ? i.get(o) + 1 : 1)
     }
-    for (var o = 0, l = 0; l < t.length - (n - 1); l++) {
+    for (var s = 0, l = 0; l < t.length - (n - 1); l++) {
         var c = t.substr(l, n),
             u = i.has(c) ? i.get(c) : 0;
-        u > 0 && (i.set(c, u - 1), o++)
+        u > 0 && (i.set(c, u - 1), s++)
     }
-    return 2 * o / (e.length + t.length - (n - 1) * 2)
+    return 2 * s / (e.length + t.length - (n - 1) * 2)
 }, t.default = t.stringSimilarity

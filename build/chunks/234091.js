@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(793574),
     u = n(688810),
@@ -36,7 +36,7 @@ function S(e) {
     (0, h.XQ)();
     let {
         analyticsLocations: C
-    } = (0, u.Ay)(c.A.EMPTY_STATE), N = (0, o.yK)([m.A], () => y.vX.map(e => m.A.getStickerById(e)));
+    } = (0, u.Ay)(c.A.EMPTY_STATE), N = (0, s.yK)([m.A], () => y.vX.map(e => m.A.getStickerById(e)));
     i.useEffect(() => {
         _.default.track(b.HAw.PREMIUM_UPSELL_VIEWED, {
             type: O.e.EMPTY_STICKER_PICKER_UPSELL,
@@ -51,7 +51,7 @@ function S(e) {
         P = null != w || null != R,
         D = (null == w || null == (n = w.subscription_trial) ? void 0 : n.sku_id) === O.pe.TIER_0;
     return (0, r.jsxs)("div", {
-        className: s()(A.p$, S, {
+        className: o()(A.p$, S, {
             [A.Hz]: P
         }),
         children: [P ? (0, r.jsx)(p.Ay, {

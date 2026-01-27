@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(999886);
+    o = n(999886);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -27,7 +27,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -53,7 +53,7 @@ let d = {};
 
 function f() {
     var e, t;
-    return null != (e = null == (t = (0, s.k)().favoriteGifs) ? void 0 : t.gifs) ? e : d
+    return null != (e = null == (t = (0, o.k)().favoriteGifs) ? void 0 : t.gifs) ? e : d
 }
 
 function p(e) {

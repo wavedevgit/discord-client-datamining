@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n(506774),
     a = n(439372),
-    s = n(450510),
-    o = n(891540),
+    o = n(450510),
+    s = n(891540),
     l = n(868974),
     c = n(253932),
     u = n(383501),
@@ -63,20 +63,20 @@ let E = 200,
     b = {
         [p.MW.VOICE]: g(h({}, y), {
             group: p.h0.AV,
-            hotspot: s._2.VOICE_CALL_FEEDBACK,
+            hotspot: o._2.VOICE_CALL_FEEDBACK,
             storageKey: "lastVoiceFeedback",
             feedbackType: p.MW.VOICE,
             eligibilityChecks: [T]
         }),
         [p.MW.STREAM]: g(h({}, y), {
             group: p.h0.AV,
-            hotspot: s._2.REPORT_PROBLEM_POST_STREAM,
+            hotspot: o._2.REPORT_PROBLEM_POST_STREAM,
             storageKey: "lastStreamFeedback",
             feedbackType: p.MW.STREAM
         }),
         [p.MW.VIDEO_BACKGROUND]: g(h({}, y), {
             group: p.h0.AV,
-            hotspot: s._2.VIDEO_BACKGROUND_FEEDBACK,
+            hotspot: o._2.VIDEO_BACKGROUND_FEEDBACK,
             storageKey: "lastVideoBackgroundFeedback",
             feedbackType: p.MW.VIDEO_BACKGROUND
         }),
@@ -84,7 +84,7 @@ let E = 200,
             cooldown: 0,
             chance: .5,
             group: p.h0.AV,
-            hotspot: s._2.POST_ACTIVITY_FEEDBACK,
+            hotspot: o._2.POST_ACTIVITY_FEEDBACK,
             storageKey: "lastActivityFeedback",
             feedbackType: p.MW.ACTIVITY
         },
@@ -92,7 +92,7 @@ let E = 200,
             cooldown: 1728e5,
             chance: .5,
             group: p.h0.SAFETY,
-            hotspot: s._2.IN_APP_REPORTS_FEEDBACK,
+            hotspot: o._2.IN_APP_REPORTS_FEEDBACK,
             storageKey: "inAppReportsFeedback",
             feedbackType: p.MW.IN_APP_REPORTS
         },
@@ -100,20 +100,20 @@ let E = 200,
             cooldown: 0,
             chance: 1,
             group: p.h0.SAFETY,
-            hotspot: s._2.BLOCK_USER_FEEDBACK,
+            hotspot: o._2.BLOCK_USER_FEEDBACK,
             storageKey: "blockUser",
             feedbackType: p.MW.BLOCK_USER
         },
         [p.MW.VOICE_FILTER]: g(h({}, y), {
             group: p.h0.AV,
-            hotspot: s._2.VOICE_FILTER_FEEDBACK,
+            hotspot: o._2.VOICE_FILTER_FEEDBACK,
             storageKey: "lastVoiceFilterFeedback",
             feedbackType: p.MW.VOICE_FILTER,
             eligibilityChecks: [T]
         }),
         [p.MW.SEARCH_RESULTS]: g(h({}, y), {
             group: p.h0.SEARCH,
-            hotspot: s._2.SEARCH_RESULTS_FEEDBACK,
+            hotspot: o._2.SEARCH_RESULTS_FEEDBACK,
             storageKey: "searchResultsFeedback",
             feedbackType: p.MW.SEARCH_RESULTS,
             eligibilityChecks: [C]
@@ -122,7 +122,7 @@ let E = 200,
             cooldown: 0,
             chance: 1,
             group: p.h0.SAFETY,
-            hotspot: s._2.AGE_VERIFICATION_FEEDBACK,
+            hotspot: o._2.AGE_VERIFICATION_FEEDBACK,
             storageKey: "ageVerificationFeedback",
             feedbackType: p.MW.AGE_VERIFICATION
         }
@@ -139,15 +139,15 @@ function O(e) {
     if (r) return !0;
     let i = null != (t = d.A.getFeedbackConfig(e)) ? t : b[e],
         a = [A, v, S],
-        s = null != (n = i.eligibilityChecks) ? n : [];
-    return a.every(e => e(i)) && s.every(e => e(i))
+        o = null != (n = i.eligibilityChecks) ? n : [];
+    return a.every(e => e(i)) && o.every(e => e(i))
 }
 
 function v(e) {
     var t;
     let n = null == (t = c.Yt.getSetting()[e.feedbackType]) ? void 0 : t.optOutExpiryTime,
         r = null != n && !Number.isNaN(n) && Date.now() < n,
-        i = !o.A.hasHotspot(e.hotspot);
+        i = !s.A.hasHotspot(e.hotspot);
     return i && !r && c.Yt.updateSetting(t => g(h({}, t), {
         [e.feedbackType]: g(h({}, t[e.feedbackType]), {
             optOutExpiryTime: p.fs
@@ -160,13 +160,13 @@ function A(e) {
 }
 
 function I(e, t) {
-    var n, a, s;
-    let o, l = null == (a = c.Yt.getSetting()[t.feedbackType]) ? void 0 : a.lastImpressionTime;
-    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (o = null != (s = i.w.get(t.storageKey)) ? s : void 0) || Number.isNaN(o) || c.Yt.updateSetting(e => g(h({}, e), {
+    var n, a, o;
+    let s, l = null == (a = c.Yt.getSetting()[t.feedbackType]) ? void 0 : a.lastImpressionTime;
+    return (null == l || Number.isNaN(l)) && null != t.storageKey && (null == (s = null != (o = i.w.get(t.storageKey)) ? o : void 0) || Number.isNaN(s) || c.Yt.updateSetting(e => g(h({}, e), {
         [t.feedbackType]: g(h({}, e[t.feedbackType]), {
-            lastImpressionTime: o
+            lastImpressionTime: s
         })
-    }))), (null != (n = (0, r.max)([l, o])) ? n : 0) + e.cooldown < Date.now()
+    }))), (null != (n = (0, r.max)([l, s])) ? n : 0) + e.cooldown < Date.now()
 }
 
 function S(e) {

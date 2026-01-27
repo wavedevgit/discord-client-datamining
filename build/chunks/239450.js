@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 239450, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(264879);
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(610145);
+    l = n.n(i),
+    a = n(610145);
 
-function o(e) {
+function s(e) {
     let {
         thumbnails: t,
         variant: n = "gallery",
@@ -19,29 +18,29 @@ function o(e) {
     if ("stacked" === n) {
         let e = Math.min(t.length, 2);
         return (0, r.jsx)("div", {
-            className: a()(s.qH, i, {
-                [s.qK]: 1 === e,
-                [s.xs]: 2 === e
+            className: l()(a.qH, i, {
+                [a.qK]: 1 === e,
+                [a.xs]: 2 === e
             }),
             children: t.slice(0, 2).map((e, t) => (0, r.jsx)("img", {
                 alt: "Clip preview",
-                className: s.M3,
+                className: a.M3,
                 src: e,
                 "data-index": t
             }, "".concat(e, "-").concat(t)))
         })
     }
-    let o = Math.min(t.length, 4);
+    let s = Math.min(t.length, 4);
     return (0, r.jsx)("div", {
-        className: a()(s.bF, i, {
-            [s.tK]: 1 === o,
-            [s.y0]: 2 === o,
-            [s.rm]: 3 === o,
-            [s.E1]: o >= 4
+        className: l()(a.bF, i, {
+            [a.tK]: 1 === s,
+            [a.y0]: 2 === s,
+            [a.rm]: 3 === s,
+            [a.E1]: s >= 4
         }),
         children: t.slice(0, 4).map((e, t) => (0, r.jsx)("img", {
             alt: "Clip preview",
-            className: s.N3,
+            className: a.N3,
             src: e,
             "data-index": t
         }, "".concat(e, "-").concat(t))).reverse()

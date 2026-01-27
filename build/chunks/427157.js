@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(136722),
     i = n(665260),
     a = n(988506),
-    s = n(315069),
-    o = n(507698),
+    o = n(315069),
+    s = n(507698),
     l = n(945096),
     c = n(47537),
     u = n(369496),
@@ -57,7 +57,7 @@ function b(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class O extends s.A {
+class O extends o.A {
     get createdAt() {
         return new Date(_.default.extractTimestamp(this.id))
     }
@@ -200,7 +200,7 @@ class O extends s.A {
         return this.avatarDecorationData
     }
     set avatarDecoration(e) {
-        this.avatarDecorationData = (0, o.Xq)(e)
+        this.avatarDecorationData = (0, s.Xq)(e)
     }
     get nameplate() {
         var e;
@@ -211,10 +211,10 @@ class O extends s.A {
         return null != (e = null == (t = this.premiumState) ? void 0 : t.premiumSubscriptionGroupRole) ? e : a.qT.UNSPECIFIED
     }
     constructor(e) {
-        var t, n, i, a, s, o, u, f, p, _, m, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, x, L, j, M, k, U, G, V;
+        var t, n, i, a, o, s, u, f, p, _, m, E, y, b, O, v, A, I, S, T, C, N, w, R, P, D, L, x, M, j, k, U, G, F;
         super(), g(this, "id", void 0), g(this, "username", void 0), g(this, "discriminator", void 0), g(this, "avatar", void 0), g(this, "avatarDecorationData", void 0), g(this, "banner", void 0), g(this, "email", void 0), g(this, "verified", void 0), g(this, "bot", void 0), g(this, "system", void 0), g(this, "mfaEnabled", void 0), g(this, "mobile", void 0), g(this, "desktop", void 0), g(this, "premiumType", void 0), g(this, "flags", void 0), g(this, "publicFlags", void 0), g(this, "purchasedFlags", void 0), g(this, "premiumUsageFlags", void 0), g(this, "phone", void 0), g(this, "nsfwAllowed", void 0), g(this, "ageVerificationStatus", void 0), g(this, "guildMemberAvatars", void 0), g(this, "hasBouncedEmail", void 0), g(this, "personalConnectionId", void 0), g(this, "globalName", void 0), g(this, "primaryGuild", void 0), g(this, "collectibles", void 0), g(this, "displayNameStyles", void 0), g(this, "premiumState", void 0), g(this, "hasFlag", e => !1), g(this, "isStaff", () => !1), g(this, "isStaffPersonal", () => !1), g(this, "hasAnyStaffLevel", () => !1);
-        const F = null != (t = e.premium_type) ? t : e.premiumType;
-        this.id = e.id, this.username = null != (n = e.username) ? n : "", this.discriminator = null != (i = e.discriminator) ? i : h.h3J, this.avatar = null != (a = e.avatar) ? a : null, this.avatarDecoration = null != (s = e.avatar_decoration_data) ? s : e.avatarDecorationData, this.email = null != (o = e.email) ? o : null, this.verified = null != (u = e.verified) && u, this.bot = null != (f = e.bot) && f, this.system = null != (p = e.system) && p, this.mfaEnabled = null != (_ = null != (m = e.mfa_enabled) ? m : e.mfaEnabled) && _, this.mobile = null != (E = e.mobile) && E, this.desktop = null != (y = e.desktop) && y, this.premiumType = F === h.oA2 ? null : F, this.flags = null != (b = e.flags) ? b : 0, this.publicFlags = null != (O = null != (v = e.public_flags) ? v : e.publicFlags) ? O : 0, this.purchasedFlags = null != (A = null != (I = e.purchased_flags) ? I : e.purchasedFlags) ? A : 0, this.premiumUsageFlags = null != (S = null != (T = e.premium_usage_flags) ? T : e.premiumUsageFlags) ? S : 0, this.phone = null != (C = e.phone) ? C : null, this.nsfwAllowed = null != (N = e.nsfw_allowed) ? N : e.nsfwAllowed, this.ageVerificationStatus = null != (w = e.age_verification_status) ? w : e.ageVerificationStatus, this.guildMemberAvatars = null != (R = e.guildMemberAvatars) ? R : {}, this.hasBouncedEmail = null != (P = null != (D = e.has_bounced_email) ? D : e.hasBouncedEmail) && P, this.personalConnectionId = null != (x = null != (L = e.personal_connection_id) ? L : e.personalConnectionId) ? x : null, this.globalName = null != (j = e.global_name) ? j : e.globalName, this.banner = e.banner, this.primaryGuild = (0, c.j)(null != (M = null != (k = e.primary_guild) ? k : e.primaryGuild) ? M : null), this.collectibles = e.collectibles, this.displayNameStyles = null != (U = e.displayNameStyles) ? U : (0, l.mT)(e.display_name_styles), this.premiumState = null != (G = e.premiumState) ? G : (0, d.f)(e.premium_state), Object.defineProperties(this, {
+        const V = null != (t = e.premium_type) ? t : e.premiumType;
+        this.id = e.id, this.username = null != (n = e.username) ? n : "", this.discriminator = null != (i = e.discriminator) ? i : h.h3J, this.avatar = null != (a = e.avatar) ? a : null, this.avatarDecoration = null != (o = e.avatar_decoration_data) ? o : e.avatarDecorationData, this.email = null != (s = e.email) ? s : null, this.verified = null != (u = e.verified) && u, this.bot = null != (f = e.bot) && f, this.system = null != (p = e.system) && p, this.mfaEnabled = null != (_ = null != (m = e.mfa_enabled) ? m : e.mfaEnabled) && _, this.mobile = null != (E = e.mobile) && E, this.desktop = null != (y = e.desktop) && y, this.premiumType = V === h.oA2 ? null : V, this.flags = null != (b = e.flags) ? b : 0, this.publicFlags = null != (O = null != (v = e.public_flags) ? v : e.publicFlags) ? O : 0, this.purchasedFlags = null != (A = null != (I = e.purchased_flags) ? I : e.purchasedFlags) ? A : 0, this.premiumUsageFlags = null != (S = null != (T = e.premium_usage_flags) ? T : e.premiumUsageFlags) ? S : 0, this.phone = null != (C = e.phone) ? C : null, this.nsfwAllowed = null != (N = e.nsfw_allowed) ? N : e.nsfwAllowed, this.ageVerificationStatus = null != (w = e.age_verification_status) ? w : e.ageVerificationStatus, this.guildMemberAvatars = null != (R = e.guildMemberAvatars) ? R : {}, this.hasBouncedEmail = null != (P = null != (D = e.has_bounced_email) ? D : e.hasBouncedEmail) && P, this.personalConnectionId = null != (L = null != (x = e.personal_connection_id) ? x : e.personalConnectionId) ? L : null, this.globalName = null != (M = e.global_name) ? M : e.globalName, this.banner = e.banner, this.primaryGuild = (0, c.j)(null != (j = null != (k = e.primary_guild) ? k : e.primaryGuild) ? j : null), this.collectibles = e.collectibles, this.displayNameStyles = null != (U = e.displayNameStyles) ? U : (0, l.mT)(e.display_name_styles), this.premiumState = null != (G = e.premiumState) ? G : (0, d.f)(e.premium_state), Object.defineProperties(this, {
             hasFlag: {
                 writable: !1,
                 configurable: !1,
@@ -245,7 +245,7 @@ class O extends s.A {
                 enumerable: !1,
                 value: () => this.hasFlag(h.nhx.STAFF) || this.hasFlag(h.nhx.COLLABORATOR) || this.hasFlag(h.nhx.RESTRICTED_COLLABORATOR)
             }
-        }), (null == (V = this.globalName) ? void 0 : V.length) === 0 && (this.globalName = null)
+        }), (null == (F = this.globalName) ? void 0 : F.length) === 0 && (this.globalName = null)
     }
 }
 new O({

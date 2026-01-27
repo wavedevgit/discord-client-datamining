@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(960488),
     i = n(839214),
     a = n(976860),
-    s = n(212534),
-    o = n(767599),
+    o = n(212534),
+    s = n(767599),
     l = n(435220),
     c = n(652215),
     u = function(e) {
@@ -64,7 +64,7 @@ function h() {
             n = e.get("q");
         null != n && "" !== n && (t.query = n);
         let r = Number(e.get("category_id"));
-        Number.isInteger(r) && r !== o.lj && (t.categoryId = r.toString());
+        Number.isInteger(r) && r !== s.lj && (t.categoryId = r.toString());
         let i = Number(e.get("page"));
         return null != i && i > 1 && (t.page = i), t
     }
@@ -89,7 +89,7 @@ function h() {
             skuId: m
         } = null != (t = null == p ? void 0 : p.params) ? t : {};
     if (null != p && null != _) {
-        let e = null == (n = s.A.getApplication(_)) ? void 0 : n.name;
+        let e = null == (n = o.A.getApplication(_)) ? void 0 : n.name;
         return {
             type: "application",
             applicationId: _,

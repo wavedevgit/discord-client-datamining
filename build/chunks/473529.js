@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(417597),
     i = n(961973),
     a = n(164956),
-    s = n(734057),
-    o = n(71393),
+    o = n(734057),
+    s = n(71393),
     l = n(701785),
     c = n(707167),
     u = n(978165),
@@ -33,15 +33,15 @@ function _(e, t) {
 
 function h(e) {
     let t = (0, u.A)(e);
-    return (0, r.bG)([s.A, o.A, a.A], () => {
+    return (0, r.bG)([o.A, s.A, a.A], () => {
         if (__OVERLAY__ || e === d.ME || e === d.YYv) return !1;
-        let n = o.A.getGuild(e);
-        return !!(null == n ? void 0 : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.A.isFullServerPreview(e) ? p(n) : (0, i.rs)(e) ? t || _(e, s.A) : !!(0, c.A)(n) && (t || _(e, s.A)))
+        let n = s.A.getGuild(e);
+        return !!(null == n ? void 0 : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.A.isFullServerPreview(e) ? p(n) : (0, i.rs)(e) ? t || _(e, o.A) : !!(0, c.A)(n) && (t || _(e, o.A)))
     }, [e, t])
 }
 
 function m(e) {
-    let t = o.A.getGuild(e),
+    let t = s.A.getGuild(e),
         n = a.A.isFullServerPreview(e);
     if (null == t || __OVERLAY__ || e === d.ME || e === d.YYv) return !1;
     if (n) return p(t);

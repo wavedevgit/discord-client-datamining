@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 377337, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -53,18 +53,18 @@ function f(e) {
         }, e))
     })
 }
-let b = [];
+let h = [];
 
-function h(e) {
+function b(e) {
     var t;
     let {
         profile: n,
         canManageGuild: l
-    } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : b, m = i.useCallback(e => {
+    } = e, o = n.id, d = null != (t = null == n ? void 0 : n.gameApplicationIds) ? t : h, m = i.useCallback(e => {
         c.A.updateGuildProfile(o, {
             gameApplicationIds: e
         })
-    }, [o]), h = i.useCallback(e => {
+    }, [o]), b = i.useCallback(e => {
         let t = d.filter(t => t !== e);
         c.A.updateGuildProfile(o, {
             gameApplicationIds: t
@@ -79,7 +79,7 @@ function h(e) {
             disabled: !l
         }), (0, r.jsx)(f, {
             gameApplicationIds: j,
-            onRemoveGame: h,
+            onRemoveGame: b,
             disabled: !l
         }), (0, r.jsx)(u.A, {
             guildId: o,

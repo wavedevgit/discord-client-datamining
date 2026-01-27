@@ -8,10 +8,10 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(198982),
-    s = n(626584),
-    o = n(728458),
+    o = n(626584),
+    s = n(728458),
     l = n(652215);
-let c = new s.A("VirtualCurrencyActionCreators");
+let c = new o.A("VirtualCurrencyActionCreators");
 async function u() {
     i.h.wait(() => {
         i.h.dispatch({
@@ -40,7 +40,7 @@ async function d(e) {
     let {
         skuId: t,
         loadId: n,
-        onRedeemStart: s,
+        onRedeemStart: o,
         onRedeemSucceed: d,
         onRedeemFail: f,
         shouldRefetchBalance: p = !0,
@@ -51,7 +51,7 @@ async function d(e) {
             type: "VIRTUAL_CURRENCY_REDEEM_START",
             skuId: t
         })
-    }), null == s || s();
+    }), null == o || o();
     try {
         let e = {
                 checkout_session_id: n,
@@ -65,7 +65,7 @@ async function d(e) {
         if (null == a || !Array.isArray(a)) {
             let e = "Could not read entitlements from Virtual Currency redemption response. Response: ",
                 t = Error(e, a);
-            throw c.error(e, a), o.A.captureException(t, {
+            throw c.error(e, a), s.A.captureException(t, {
                 tags: {
                     app_context: "virtual_currency"
                 }

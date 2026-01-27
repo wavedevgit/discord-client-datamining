@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(506774),
     a = n(73153),
-    s = n(439372),
-    o = n(380610),
+    o = n(439372),
+    s = n(380610),
     l = n(626584),
     c = n(927813),
     u = n(723702),
@@ -28,7 +28,7 @@ let _ = +c.A.Millis.HOUR,
     m = +c.A.Millis.DAY,
     g = i.w.get("lastNonRequiredUpdateShown", Date.now()),
     E = new l.A("AutoUpdateManager");
-class y extends s.A {
+class y extends o.A {
     _initialize() {
         u.isPlatformEmbedded && (f.Ay.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), f.Ay.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), f.Ay.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(!0)), f.Ay.on("UPDATE_ERROR", this._handleUpdateError), f.Ay.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(!0)), f.Ay.on("UPDATE_MANUALLY", this._handleUpdateManually))
     }
@@ -41,9 +41,8 @@ class y extends s.A {
     isNewUpdater() {
         return "win32" === (0, u.getPlatformName)()
     }
-    async handlePostConnectionOpen() {
-        let e = !0;
-        this.isNewUpdater() && e !== await f.Ay.getOptionalUpdates() && await f.Ay.setOptionalUpdates(e), this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
+    handlePostConnectionOpen() {
+        this.checkForUpdates(), clearInterval(this._checkInterval), this._checkInterval = setInterval(this.checkForUpdates, _)
     }
     async _requestNewUpdaterBootstrap() {
         let e;
@@ -90,8 +89,8 @@ class y extends s.A {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(e => {
-                if (null == e.body || "691743dfcf866f194ae886f3dd995e1337fb1de2" === e.body.hash) return this._handleUpdateNotAvailable();
-                if (e.body.required || (0, o.kK)()) return this._handleUpdateDownloaded(!1);
+                if (null == e.body || "36f1003be65f1a83cabcbdac1569ebbaa657fe9c" === e.body.hash) return this._handleUpdateNotAvailable();
+                if (e.body.required || (0, s.kK)()) return this._handleUpdateDownloaded(!1);
                 let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
                 if (Date.now() - g > t) return i.w.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)
             }, () => this._handleUpdateError())

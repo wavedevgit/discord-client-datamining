@@ -2,13 +2,13 @@
 /** chunk id: 87952, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 }), n(896048);
 var r = n(64700),
     i = n(739508),
     a = n(71532);
 
-function s() {
+function o() {
     let [e, t] = r.useState(null);
     return r.useEffect(() => {
         (0, a.Cv)().then(e => t(e)).catch(e => {

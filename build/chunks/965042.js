@@ -8,12 +8,12 @@ n.r(t), n.d(t, {
 var r = n(398590),
     i = n(186111),
     a = n(287809),
-    s = n(944771),
-    o = n(3258),
+    o = n(944771),
+    s = n(3258),
     l = n(652215);
 
 function c(e) {
-    for (let t of s.componentPlaygroundConfigs) {
+    for (let t of o.componentPlaygroundConfigs) {
         let n = t.collections.find(t => t.id.toLowerCase() === e.toLowerCase());
         if (null != n) return n.id
     }
@@ -21,7 +21,7 @@ function c(e) {
 }
 
 function u(e, t) {
-    for (let n of s.componentPlaygroundConfigs) {
+    for (let n of o.componentPlaygroundConfigs) {
         let r = n.collections.find(t => t.id.toLowerCase() === e.toLowerCase());
         if (null != r)
             for (let e of r.groups) {
@@ -35,10 +35,10 @@ function u(e, t) {
 function d(e, t) {
     let n = a.default.getCurrentUser();
     if (!(null == n ? void 0 : n.isStaff()) && !(null == n ? void 0 : n.isStaffPersonal())) return !1;
-    let s = null != e ? c(e) : null,
-        d = null != s && null != t ? u(s, t) : null;
-    return o.PlaygroundStore.setState({
-        selectedCollection: s,
+    let o = null != e ? c(e) : null,
+        d = null != o && null != t ? u(o, t) : null;
+    return s.PlaygroundStore.setState({
+        selectedCollection: o,
         selectedStory: d
     }), i.A.getLayers().includes(l.zgK.COMPONENT_PLAYGROUND) || (0, r.id)(l.zgK.COMPONENT_PLAYGROUND), !0
 }

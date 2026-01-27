@@ -3,19 +3,19 @@
 "use strict";
 n.d(t, {
     A: () => p,
-    C: () => o
+    C: () => s
 });
 var r = n(472501),
     i = n(773669),
     a = n(723702),
-    s = n(652215);
-let o = "https://".concat(s.XlF),
-    l = "https://".concat(s.hCb),
+    o = n(652215);
+let s = "https://".concat(o.XlF),
+    l = "https://".concat(o.hCb),
     c = "https://creator-support.discord.com",
     u = "https://support-apps.discord.com";
 
 function d(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : o;
+    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s;
     return t + e
 }
 
@@ -26,7 +26,7 @@ let p = {
     getArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e)),
     getDevArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), l),
     getCreatorSupportArticleURL: e => d("/hc/".concat(f(), "/articles/").concat(e), c),
-    getTwitterURL: () => (0, r.A)(s.Pq7.TWITTER),
+    getTwitterURL: () => (0, r.A)(o.Pq7.TWITTER),
     getCommunityURL: () => d("/hc/".concat(f())),
     getSubmitRequestURL(e) {
         let t = d("/hc/".concat(f(), "/requests/new?platform=").concat(encodeURIComponent((0, a.getPlatformName)())));

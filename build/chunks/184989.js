@@ -2,7 +2,7 @@
 /** chunk id: 184989, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(896048);
 var r = n(311907),
     i = n(73153);
@@ -15,7 +15,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends r.Ay.Store {
+class o extends r.Ay.Store {
     allGuildIds() {
         return this.guildIds
     }
@@ -47,4 +47,4 @@ class s extends r.Ay.Store {
         }, i.A.Early), a(this, "guildIds", new Set)
     }
 }
-let o = new s
+let s = new o

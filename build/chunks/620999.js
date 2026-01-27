@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 620999, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     r: () => c,
-    t: () => l
+    t: () => o
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(610084);
+    l = n(503698),
+    a = n.n(l),
+    s = n(610084);
 
-function l() {
+function o() {
     let [e] = i.useState(() => Math.floor(1600 * Math.random()) / 1e3);
     return (0, r.jsx)("div", {
-        className: s()(o.Vl, o.Yf),
+        className: a()(s.Vl, s.Yf),
         style: {
             animationDelay: "".concat(e, "s")
         }
@@ -24,7 +23,7 @@ function l() {
 function c() {
     let [e] = i.useState(() => Math.floor(60 * Math.random()) + 20);
     return (0, r.jsx)("div", {
-        className: o.RC,
+        className: s.RC,
         style: {
             width: "".concat(e, "%")
         }

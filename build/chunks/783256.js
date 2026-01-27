@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(544420),
     u = n(429913),
@@ -27,7 +27,7 @@ let v = 4;
 
 function A(e) {
     let t = (0, u.A)(e.map(e => e.applicationId));
-    return (0, o.cf)([d.A], () => Object.fromEntries(t.filter(p.Vq).map(e => [e.id, d.A.getGameByApplication(e)]).filter(e => {
+    return (0, s.cf)([d.A], () => Object.fromEntries(t.filter(p.Vq).map(e => [e.id, d.A.getGameByApplication(e)]).filter(e => {
         let [t, n] = e;
         return null != n
     })))
@@ -46,7 +46,7 @@ function I(e) {
             var t;
             return null == (t = I[e.applicationId]) ? void 0 : t.id
         }
-    }).filter(p.Vq).flat())], [t, I]), C = (0, o.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, w] = (0, i.useState)([]), {
+    }).filter(p.Vq).flat())], [t, I]), C = (0, s.bG)([d.A], () => d.A.canFetchDetectableGames()), [N, w] = (0, i.useState)([]), {
         themeType: R
     } = (0, E.E)(), P = R === y.d.SIDEBAR, D = (0, i.useRef)(!1);
     return (0, i.useEffect)(() => {
@@ -73,7 +73,7 @@ function I(e) {
         },
         className: O.QF,
         children: (0, r.jsxs)(g.A.Overlay, {
-            className: s()(O.WH, a),
+            className: o()(O.WH, a),
             children: [(0, r.jsx)(l.Text, {
                 variant: P ? "text-sm/medium" : "text-xs/medium",
                 children: b.intl.string(b.t.JjiwFx)
@@ -100,7 +100,7 @@ function S(e) {
     return (0, r.jsxs)("div", {
         className: O.Kk,
         children: [(0, r.jsx)("img", {
-            className: s()({
+            className: o()({
                 [O.um]: i
             }),
             src: t,

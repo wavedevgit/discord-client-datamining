@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(990078),
     c = n(397927),
     u = n(101555),
@@ -82,7 +82,7 @@ function S(e) {
         targetRef: O,
         onAction: v,
         renderMoreButtonPopout: S
-    } = e, T = i.useRef(null), C = (0, o.bG)([d.default], () => d.default.getId() === t.id), N = (0, f.A)(t.id), {
+    } = e, T = i.useRef(null), C = (0, s.bG)([d.default], () => d.default.getId() === t.id), N = (0, f.A)(t.id), {
         onInteraction: w,
         onInteractionPopoutTargetRefChange: R
     } = (0, p.Pq)();
@@ -114,7 +114,7 @@ function S(e) {
             })
         };
     return (0, r.jsxs)(u.Ay, {
-        className: s()(m.oO, {
+        className: o()(m.oO, {
             [m.RK]: a,
             [m.lu]: g,
             [m.U7]: n === _.dS.STATUS,

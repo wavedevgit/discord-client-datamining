@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(214958),
     i = n.n(r),
     a = n(118356),
-    s = n(205693),
-    o = n(909131),
+    o = n(205693),
+    s = n(909131),
     l = n(659468),
     c = n(405163),
     u = n(506643),
@@ -29,15 +29,15 @@ function h(e, t, n) {
 function m(e) {
     return e.split("-")[0]
 }
-class g extends o.A {
+class g extends s.A {
     destroy() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
         super.destroy(e), this.pc.close()
     }
     setCodecs(e, t, n) {
         var r, i, a;
-        let s;
-        (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (s = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == s ? void 0 : s.payloadType) ? r : 0, s = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == s ? void 0 : s.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (a = null == s ? void 0 : s.rtxPayloadType) ? a : 0, this.pc.negotiationNeeded())
+        let o;
+        (this.fpc.audioCodec !== e || this.fpc.videoCodec !== t) && (o = this.codecs.find(t => t.name === e), this.fpc.audioCodec = e, this.fpc.audioPayloadType = null != (r = null == o ? void 0 : o.payloadType) ? r : 0, o = this.codecs.find(e => e.name === t), this.fpc.videoCodec = t, this.fpc.videoPayloadType = null != (i = null == o ? void 0 : o.payloadType) ? i : 0, this.fpc.rtxPayloadType = null != (a = null == o ? void 0 : o.rtxPayloadType) ? a : 0, this.pc.negotiationNeeded())
     }
     setStream(e) {
         this.fpc.direction = null != e ? d.HO.SENDRECV : d.HO.SENDONLY, this.pc.setStream(null != e ? e : null)
@@ -71,7 +71,7 @@ class g extends o.A {
         }), t.direction = null != this.input.stream ? d.HO.SENDRECV : d.HO.SENDONLY, this.fpc = t;
         const n = new u.A(this.voiceBitrate);
         n.on("addtrack", (e, t) => this.createOutput(m(e), t)), n.on("removetrack", (e, t) => this.destroyOutput(m(e), t)), n.once("connected", () => {
-            this.input.reset(), this.setConnectionState(p.$I.CONNECTED), this.on(s.yq.Stats, this.handleStats), this.input.on(c.T.VoiceActivity, this.handleVoiceActivity)
+            this.input.reset(), this.setConnectionState(p.$I.CONNECTED), this.on(o.yq.Stats, this.handleStats), this.input.on(c.T.VoiceActivity, this.handleVoiceActivity)
         }), n.on("connecting", () => this.setConnectionState(p.$I.DTLS_CONNECTING)), n.on("checking", () => this.setConnectionState(p.$I.ICE_CHECKING)), n.on("failed", () => this.setConnectionState(p.$I.NO_ROUTE)), n.on("disconnected", () => this.setConnectionState(p.$I.DISCONNECTED)), n.on("closed", () => this.setConnectionState(p.$I.DISCONNECTED)), n.on("offer", e => {
             let {
                 sdp: n
@@ -79,17 +79,17 @@ class g extends o.A {
                 outboundStreams: r,
                 codecs: i,
                 audioSSRC: a,
-                videoSSRC: o,
+                videoSSRC: s,
                 rtxSSRC: l
             } = (0, d.$k)(n, !1);
             this.codecs = i;
             let c = (0, d.v5)(n);
-            t.outboundStreams = r, this.audioSSRC = a, t.extensions = c, this.videoStreamParameters[0].ssrc === o && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = o, this.videoStreamParameters[0].rtxSsrc = l, this.emit(s.yq.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = !0)
+            t.outboundStreams = r, this.audioSSRC = a, t.extensions = c, this.videoStreamParameters[0].ssrc === s && this.videoStreamParameters[0].rtxSsrc === l && this.videoReady || (this.videoStreamParameters[0].ssrc = s, this.videoStreamParameters[0].rtxSsrc = l, this.emit(o.yq.Video, this.userId, this.input.getVideoStreamId(), this.audioSSRC, this.videoStreamParameters[0].ssrc, this.videoStreamParameters[0].rtxSsrc, this.videoStreamParameters), this.videoReady = !0)
         }), n.once("offer", e => {
             let {
                 sdp: t
             } = e;
-            this.emit(s.yq.Connected, "webrtc", (0, d.An)(t, !1))
+            this.emit(o.yq.Connected, "webrtc", (0, d.An)(t, !1))
         }), null != this.input.stream ? n.setStream(this.input.stream) : n.negotiationNeeded(), this.pc = n
     }
 }

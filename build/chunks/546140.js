@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 546140, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    L: () => l
+/** Chunk was on 96430 **/
+/** chunk id: 546140, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    L: () => u
 });
 var r = n(311907),
     i = n(617617),
     a = n(287809),
-    s = n(840387),
+    l = n(840387),
     o = n(639555);
-let l = () => {
-    let e = a.default.getCurrentUser(),
-        t = (0, r.bG)([i.A], () => {
-            var e, t, n;
-            return null == (e = null == (n = i.A.settings.privacy) || null == (t = n.inappropriateConversationWarnings) ? void 0 : t.value) || e
+let u = () => {
+    let t = a.default.getCurrentUser(),
+        e = (0, r.bG)([i.A], () => {
+            var t, e, n;
+            return null == (t = null == (n = i.A.settings.privacy) || null == (e = n.inappropriateConversationWarnings) ? void 0 : e.value) || t
         }),
-        n = (0, s.Z)(),
-        l = (0, o.Rv)({
+        n = (0, l.Z)(),
+        u = (0, o.Rv)({
             location: "useSafetyAlertsSettingOrDefault"
         });
-    return !!n && !!l || (n || (null == e ? void 0 : e.isStaff()) === !0) && t
+    return !!n && !!u || (n || (null == t ? void 0 : t.isStaff()) === !0) && e
 }

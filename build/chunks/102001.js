@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(212245),
     u = n(58149),
@@ -34,7 +34,7 @@ let v = e => {
         location: I
     } = (0, c.p)(), {
         analyticsLocations: S
-    } = (0, d.Ay)(), T = (0, o.bG)([m.A], () => m.A.getGuild(n)), {
+    } = (0, d.Ay)(), T = (0, s.bG)([m.A], () => m.A.getGuild(n)), {
         canManageAllExpressions: C
     } = (0, h.nr)(T), N = null != T && 0 === (0, g.aG)(T.premiumTier) && !T.features.has(E.GuildFeatures.MORE_STICKERS);
     if (i.useEffect(() => {
@@ -56,7 +56,7 @@ let v = e => {
             })
         };
         return (0, r.jsxs)("div", {
-            className: s()(O.UX, t),
+            className: o()(O.UX, t),
             children: [(0, r.jsx)(l.vRF, {
                 size: "md",
                 color: "currentColor",
@@ -79,7 +79,7 @@ let v = e => {
             (0, f.v8)(), _.A.open(n, E.BEX.STICKERS, I)
         };
         return (0, r.jsxs)("div", {
-            className: s()(O.UX, t),
+            className: o()(O.UX, t),
             children: [(0, r.jsx)(l.tEP, {
                 size: "custom",
                 color: "currentColor",

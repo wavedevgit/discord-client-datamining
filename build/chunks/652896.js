@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Iy: () => a,
-    _z: () => s,
+    _z: () => o,
     wL: () => i
 }), n(747238), n(896048), n(65821);
 var r = n(502075);
@@ -38,7 +38,7 @@ function a(e) {
     }
 }
 
-function s(e) {
+function o(e) {
     let {
         streamType: t,
         guildId: n,

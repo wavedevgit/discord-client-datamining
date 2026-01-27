@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n(835245),
-    o = n(311907),
+    o = n(835245),
+    s = n(311907),
     l = n(775602),
     c = n(667050),
     u = n(407781),
@@ -33,7 +33,7 @@ let m = i.forwardRef(function(e, t) {
     let {
         sound: n,
         containerDimensions: h
-    } = e, m = (0, o.bG)([d.default], () => d.default.getCurrentUser()), g = (0, o.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _, O = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, v = i.useCallback(() => {
+    } = e, m = (0, s.bG)([d.default], () => d.default.getCurrentUser()), g = (0, s.bG)([l.A], () => l.A.useReducedMotion), [E, y] = i.useState([]), b = E.length < _, O = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, v = i.useCallback(() => {
         if (!g && b && O && null != m) {
             var e;
             let t = (0, c.Br)({
@@ -43,10 +43,10 @@ let m = i.forwardRef(function(e, t) {
                 }),
                 r = null != n.emojiId,
                 i = f.B.PREMIUM,
-                o = (0, a.random)(c.Bf[i].length, !1),
+                s = (0, a.random)(c.Bf[i].length, !1),
                 l = {
-                    id: (0, s.A)(),
-                    animationId: o,
+                    id: (0, o.A)(),
+                    animationId: s,
                     animationType: i,
                     shouldResize: r,
                     url: t,

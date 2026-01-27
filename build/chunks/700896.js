@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 700896, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     r: "finePrintWithOverheadSeparator_df7724",
     a: "finePrint_df7724"

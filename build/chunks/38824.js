@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 38824, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     UA: "profileCustomizationSection__44061",
     yt: "baseLayout__44061",

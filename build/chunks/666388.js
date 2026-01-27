@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(734057),
-    o = n(309010),
+    o = n(734057),
+    s = n(309010),
     l = n(351906),
     c = n(562153),
     u = n(622543),
@@ -40,10 +40,10 @@ function C(e) {
         onOpenProfile: R,
         channelId: P,
         onClose: D
-    } = e, x = c.Ay.getName(null == N ? void 0 : N.id, P, t), L = (0, i.bG)([u.A], () => {
+    } = e, L = c.Ay.getName(null == N ? void 0 : N.id, P, t), x = (0, i.bG)([u.A], () => {
         var e;
         return null == (e = u.A.getUserProfile(t.id)) ? void 0 : e.application
-    }), j = (0, i.bG)([s.A, o.A], () => s.A.getChannel(o.A.getChannelId())), M = (0, i.bG)([l.A], () => l.A.hidePersonalInformation);
+    }), M = (0, i.bG)([o.A, s.A], () => o.A.getChannel(s.A.getChannelId())), j = (0, i.bG)([l.A], () => l.A.hidePersonalInformation);
     return (0, r.jsxs)(a.HOs, {
         fade: !0,
         className: T.rf,
@@ -53,14 +53,14 @@ function C(e) {
             user: t,
             guildId: null == N ? void 0 : N.id,
             onOpenProfile: R,
-            nickname: x,
+            nickname: L,
             pronouns: null == C ? void 0 : C.pronouns,
             tags: (0, r.jsx)(f.A, {
                 displayProfile: C,
                 themeType: A.d.POPOUT,
                 onClose: D
             }),
-            nicknameIcons: M ? null : (0, r.jsx)(y.A, {
+            nicknameIcons: j ? null : (0, r.jsx)(y.A, {
                 userId: t.id,
                 isVisible: w,
                 onOpenProfile: R
@@ -84,7 +84,7 @@ function C(e) {
         }), (0, r.jsx)(b.A, {
             user: t,
             bio: null == C ? void 0 : C.bio,
-            hidePersonalInformation: M,
+            hidePersonalInformation: j,
             onClose: D
         }), (0, r.jsx)(h.A, {
             user: t,
@@ -92,10 +92,10 @@ function C(e) {
             guildId: null == N ? void 0 : N.id,
             onOpenUserProfileModal: R,
             onClose: D
-        }), (null == L ? void 0 : L.popularApplicationCommandIds) != null && null != j && (0, r.jsx)(d.A, {
-            applicationId: L.id,
-            commandIds: L.popularApplicationCommandIds,
-            channel: j,
+        }), (null == x ? void 0 : x.popularApplicationCommandIds) != null && null != M && (0, r.jsx)(d.A, {
+            applicationId: x.id,
+            commandIds: x.popularApplicationCommandIds,
+            channel: M,
             guildId: null == N ? void 0 : N.id,
             onClick: D
         }), null != N && (0, r.jsx)(_.A, {

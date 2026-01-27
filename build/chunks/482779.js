@@ -3,8 +3,8 @@
 "use strict";
 var r, i = n(101968),
     a = n(252268),
-    s = n(143320),
-    o = n(239586),
+    o = n(143320),
+    s = n(239586),
     l = n(469520),
     c = n(447280),
     u = n(583178),
@@ -32,10 +32,10 @@ var r, i = n(101968),
             r = new ActiveXObject("htmlfile")
         } catch (e) {}
         b = "u" > typeof document ? document.domain && r ? E(r) : y() : E(r);
-        for (var e = s.length; e--;) delete b[p][s[e]];
+        for (var e = o.length; e--;) delete b[p][o[e]];
         return b()
     };
-o[h] = !0, e.exports = Object.create || function(e, t) {
+s[h] = !0, e.exports = Object.create || function(e, t) {
     var n;
     return null !== e ? (m[p] = i(e), n = new m, m[p] = null, n[h] = e) : n = b(), void 0 === t ? n : a.f(n, t)
 }

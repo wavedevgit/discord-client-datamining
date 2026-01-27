@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 636395, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => r
 });

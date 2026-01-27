@@ -2,7 +2,7 @@
 /** chunk id: 62447, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s,
+    A: () => o,
     t: () => a
 }), n(938796);
 var r = n(64700),
@@ -12,6 +12,6 @@ function a(e) {
     return (null == e ? void 0 : e.flags) != null && i.zy(i.iu(e.flags), i.jB(33))
 }
 
-function s(e) {
+function o(e) {
     return r.useMemo(() => a(e), [e])
 }

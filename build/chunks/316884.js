@@ -3,27 +3,27 @@
 "use strict";
 n.d(t, {
     A: () => l,
-    b: () => o
+    b: () => s
 });
 var r = n(417597),
     i = n(508675),
     a = n(307731);
-let s = [];
+let o = [];
 
-function o(e) {
+function s(e) {
     let {
         emojiStoreInstance: t = i.Ay,
         guildId: n,
         pickerIntention: r
     } = e;
     return {
-        topEmojis: r !== a.b_.REACTION ? t.getTopEmoji(n) : s,
-        newlyAddedEmojis: r !== a.b_.REACTION ? t.getNewlyAddedEmoji(n) : s
+        topEmojis: r !== a.b_.REACTION ? t.getTopEmoji(n) : o,
+        newlyAddedEmojis: r !== a.b_.REACTION ? t.getNewlyAddedEmoji(n) : o
     }
 }
 
 function l(e, t) {
-    return (0, r.cf)([i.Ay], () => o({
+    return (0, r.cf)([i.Ay], () => s({
         emojiStoreInstance: i.Ay,
         guildId: e,
         pickerIntention: t

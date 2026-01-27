@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(400492),
     a = n(312671),
-    s = n(470710),
-    o = n(734057),
+    o = n(470710),
+    s = n(734057),
     l = n(803224),
     c = n(309010),
     u = n(351906),
@@ -63,7 +63,7 @@ let v = (0, i.aN)("call_calling", a.A.getSoundpack());
 var A = new WeakMap;
 class I extends r.A {
     _initialize() {
-        this.stores = new Map().set(s.A, this.handleRingUpdate).set(l.A, this.handleRingUpdate).set(u.A, this.handleRingUpdate).set(d.A, this.handleRingUpdate).set(p.A, this.handleChannelRTCStoreChange).set(a.A, this.handleSoundpackUpdate)
+        this.stores = new Map().set(o.A, this.handleRingUpdate).set(l.A, this.handleRingUpdate).set(u.A, this.handleRingUpdate).set(d.A, this.handleRingUpdate).set(p.A, this.handleChannelRTCStoreChange).set(a.A, this.handleSoundpackUpdate)
     }
     constructor(...e) {
         super(...e), y(this, A, {
@@ -81,8 +81,8 @@ class I extends r.A {
         }), O(this, "handleRingUpdate", () => {
             var e, t;
             let n = c.A.getVoiceChannelId(),
-                r = null != (e = null == (t = o.A.getChannel(n)) ? void 0 : t.guild_id) ? e : null,
-                i = s.A.getCalls().some(e => e.ringing.length > 0 && d.A.getCurrentClientVoiceChannelId(null) === e.channelId);
+                r = null != (e = null == (t = s.A.getChannel(n)) ? void 0 : t.guild_id) ? e : null,
+                i = o.A.getCalls().some(e => e.ringing.length > 0 && d.A.getCurrentClientVoiceChannelId(null) === e.channelId);
             this._handleRing(i || E(this, A).size > 0, r)
         }), O(this, "handleGuildRingStart", e => {
             let {

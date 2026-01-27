@@ -4,15 +4,15 @@
 var r = n(319135),
     i = n(879618),
     a = n(142896),
-    s = n(906046),
-    o = n(267768),
+    o = n(906046),
+    s = n(267768),
     l = n(428495),
-    c = s("Object.prototype.toString"),
+    c = o("Object.prototype.toString"),
     u = n(581070)(),
     d = "u" < typeof globalThis ? n.g : globalThis,
     f = i(),
-    p = s("String.prototype.slice"),
-    _ = s("Array.prototype.indexOf", !0) || function(e, t) {
+    p = o("String.prototype.slice"),
+    _ = o("Array.prototype.indexOf", !0) || function(e, t) {
         for (var n = 0; n < e.length; n += 1)
             if (e[n] === t) return n;
         return -1
@@ -20,12 +20,12 @@ var r = n(319135),
     h = {
         __proto__: null
     };
-u && o && l ? r(f, function(e) {
+u && s && l ? r(f, function(e) {
     var t = new d[e];
     if (Symbol.toStringTag in t && l) {
         var n = l(t),
-            r = o(n, Symbol.toStringTag);
-        !r && n && (r = o(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
+            r = s(n, Symbol.toStringTag);
+        !r && n && (r = s(l(n), Symbol.toStringTag)), h["$" + e] = a(r.get)
     }
 }) : r(f, function(e) {
     var t = new d[e],
@@ -54,5 +54,5 @@ e.exports = function(e) {
         var t = p(c(e), 8, -1);
         return _(f, t) > -1 ? t : "Object" === t && g(e)
     }
-    return o ? m(e) : null
+    return s ? m(e) : null
 }

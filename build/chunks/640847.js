@@ -14,8 +14,8 @@ e.exports = function() {
     var a = Object.getOwnPropertySymbols(e);
     if (1 !== a.length || a[0] !== t || !Object.prototype.propertyIsEnumerable.call(e, t)) return !1;
     if ("function" == typeof Object.getOwnPropertyDescriptor) {
-        var s = Object.getOwnPropertyDescriptor(e, t);
-        if (s.value !== r || !0 !== s.enumerable) return !1
+        var o = Object.getOwnPropertyDescriptor(e, t);
+        if (o.value !== r || !0 !== o.enumerable) return !1
     }
     return !0
 }

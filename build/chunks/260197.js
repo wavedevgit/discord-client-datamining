@@ -10,16 +10,16 @@ n.d(t, {
     cs: () => d,
     mk: () => p,
     nQ: () => f,
-    pc: () => o,
-    yN: () => s,
+    pc: () => s,
+    yN: () => o,
     yR: () => u
 }), n(896048);
 var r = n(513461);
 r.rX.VERIFICATION, r.rX.TERMS;
 let i = new Set([r.rX.MULTIPLE_CHOICE, r.rX.TEXT_INPUT, r.rX.PARAGRAPH]),
     a = 5,
-    s = 16,
-    o = 300,
+    o = 16,
+    s = 300,
     l = 300,
     c = 8,
     u = 150,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(665260),
     i = n(173618),
     a = n(274372),
-    s = n(915618),
-    o = n(572164),
+    o = n(915618),
+    s = n(572164),
     l = n(15285),
     c = n(670470),
     u = n(253932),
@@ -38,9 +38,9 @@ class g extends i.A {
         let i = 0,
             f = u.Q$.getSetting();
         i = (0, r.lA)(i, h.Ajs.ALLOW_VOICE_RECORDING, f);
-        let _ = (0, s.A)(p.A),
-            m = (0, o.TD)() && ((null == (e = d.A.getCurrentUserActiveStream()) ? void 0 : e.state) === h.XYD.ACTIVE || (null == (t = d.A.getCurrentUserActiveStream()) ? void 0 : t.state) === h.XYD.PAUSED),
-            g = (0, o.Ao)() && (null == (n = l.Ay.getVisibleGame()) ? void 0 : n.windowHandle) != null;
+        let _ = (0, o.A)(p.A),
+            m = (0, s.TD)() && ((null == (e = d.A.getCurrentUserActiveStream()) ? void 0 : e.state) === h.XYD.ACTIVE || (null == (t = d.A.getCurrentUserActiveStream()) ? void 0 : t.state) === h.XYD.PAUSED),
+            g = (0, s.Ao)() && (null == (n = l.Ay.getVisibleGame()) ? void 0 : n.windowHandle) != null;
         i = (0, r.lA)(i, h.Ajs.CLIPS_ENABLED, m || g);
         let {
             enableViewerClipping: E
@@ -91,19 +91,19 @@ class g extends i.A {
             channelId: r,
             selfMute: i,
             selfDeaf: a,
-            selfVideo: s,
-            preferredRegion: o,
+            selfVideo: o,
+            preferredRegion: s,
             preferredRegions: l,
             videoStreamParameters: c,
             flags: u = 0
         } = e;
-        s && (null == (t = f.A.getChannel(r)) ? void 0 : t.type) === h.rbe.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
+        o && (null == (t = f.A.getChannel(r)) ? void 0 : t.type) === h.rbe.GUILD_STAGE_VOICE ? this.socket.voiceStateUpdate({
             guildId: n,
             channelId: r,
             selfMute: i,
             selfDeaf: a,
-            selfVideo: s,
-            preferredRegion: o,
+            selfVideo: o,
+            preferredRegion: s,
             preferredRegions: l,
             videoStreamParameters: c,
             flags: u
@@ -112,8 +112,8 @@ class g extends i.A {
             channelId: r,
             selfMute: i,
             selfDeaf: a,
-            selfVideo: s,
-            preferredRegion: o,
+            selfVideo: o,
+            preferredRegion: s,
             preferredRegions: l,
             flags: u
         })

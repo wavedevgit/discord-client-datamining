@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(838677),
     i = n(486020),
     a = n(998304),
-    s = n(515718),
-    o = n(791059);
+    o = n(515718),
+    s = n(791059);
 let l = new Set(["™", "™️", "\xa9", "\xa9️", "\xae", "\xae️"]);
 
 function c(e) {
@@ -43,8 +43,8 @@ async function f(e) {
         size: 32,
         animated: !1
     }) : c(r);
-    let o = await (0, s.S4)(t);
-    return null == o ? void 0 : o.map(e => {
+    let s = await (0, o.S4)(t);
+    return null == s ? void 0 : s.map(e => {
         let [t, n, r] = e;
         return (0, a.Ob)(t, n, r)
     })
@@ -58,7 +58,7 @@ function p(e) {
     } = e
 }
 let _ = {
-    getURL: o.A.makeMemoizer(c),
+    getURL: s.A.makeMemoizer(c),
     filterUnsupportedEmojis: u,
     applyPlatformToThemedEmojiColorPalette: d,
     getEmojiColors: f,

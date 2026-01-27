@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(717421),
     a = n(844222),
-    s = n(815390);
-let o = {
+    o = n(815390);
+let s = {
         mass: 1,
         tension: 1e3,
         friction: 48
@@ -19,10 +19,10 @@ let o = {
         tension: 1200,
         friction: 80
     },
-    c = o;
+    c = s;
 
 function u(e, t) {
-    let n = e === s.i.ENTERING || e === s.i.ENTERED,
+    let n = e === o.i.ENTERING || e === o.i.ENTERED,
         {
             reducedMotion: c
         } = r.useContext(a.C),
@@ -30,7 +30,7 @@ function u(e, t) {
     return (0, i.z)({
         opacity: +!!n,
         transform: u,
-        config: n ? o : l,
+        config: n ? s : l,
         delay: 64 * !!n
     }, "animate-always")
 }

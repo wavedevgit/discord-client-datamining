@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 771935, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -18,8 +18,8 @@ var i = n(158954),
     m = n(423418),
     p = n(989860),
     f = n(652215),
-    b = n(985018),
-    h = n(632275);
+    h = n(985018),
+    b = n(632275);
 
 function x() {
     let {
@@ -34,27 +34,27 @@ function x() {
     return null == t ? null : (0, r.jsx)(a.f5, {
         value: e,
         children: (0, r.jsxs)("main", {
-            className: h.k,
+            className: b.k,
             children: [(0, r.jsx)(i.DZT, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: b.intl.string(b.t.UKgg5N)
+                children: h.intl.string(h.t.UKgg5N)
             }), (0, r.jsx)(p.I, {
                 canManageGuild: x,
                 premiumProgressBarEnabled: t.premiumProgressBarEnabled
             }), (0, r.jsx)("div", {
-                className: h.y
+                className: b.y
             }), (0, r.jsx)(u.l, {
                 guild: t,
                 canManageGuild: x
             }), (0, r.jsx)("div", {
-                className: h.y
+                className: b.y
             }), j ? (0, r.jsxs)(r.Fragment, {
                 children: [n && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(m.u, {
                         guild: t
                     }), (0, r.jsx)("div", {
-                        className: h.y
+                        className: b.y
                     })]
                 }), (0, r.jsx)(g.I, {
                     guild: t,
@@ -66,7 +66,7 @@ function x() {
                     canManageGuild: x
                 }), n && (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)("div", {
-                        className: h.y
+                        className: b.y
                     }), (0, r.jsx)(m.u, {
                         guild: t
                     })]

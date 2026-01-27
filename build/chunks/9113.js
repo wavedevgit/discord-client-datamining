@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 9113, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var r = n(64700),
     i = n(256311);
 
-function a(e) {
+function l(e) {
     r.useEffect(() => {
         if (null != e) return i.A.lockChangeLog(e), () => {
             i.A.unlockChangeLog(e)

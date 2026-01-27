@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a);
+    o = n.n(a);
 n(216160);
-var o = n(675100),
+var s = n(675100),
     l = n(182592),
     c = n(347064),
     u = n(306499);
@@ -32,7 +32,7 @@ let d = e => {
             }
         }
     }, [d]), null == t) ? null : (0, r.jsxs)("div", {
-        className: s()(c.i1, {
+        className: o()(c.i1, {
             [c.qy]: d,
             [c.pE]: !a
         }),
@@ -46,7 +46,7 @@ let d = e => {
             skuId: t,
             useThumbnail: !0,
             autoPlay: d,
-            restartMethod: o.H.FromStart,
+            restartMethod: s.H.FromStart,
             resetOnHover: !0,
             isHovering: n,
             useOpacityOnHover: !1,

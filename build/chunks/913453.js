@@ -7,13 +7,13 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n(311907),
-    s = n(919796),
-    o = n(21119),
+    o = n(919796),
+    s = n(21119),
     l = n(711014),
     c = n(622543);
 
 function u(e) {
-    let [t, n, u, d, f] = (0, a.yK)([c.A], () => [c.A.getMutualFriendsCount(e.id), c.A.getMutualFriends(e.id), c.A.getMutualGuilds(e.id), c.A.isFetchingProfile(e.id), c.A.isFetchingFriends(e.id)]), p = (0, a.bG)([o.A], () => o.A.getUserAffinitiesMap()), _ = (0, a.bG)([l.Ay], () => l.Ay.getFlattenedGuildIds()), h = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
+    let [t, n, u, d, f] = (0, a.yK)([c.A], () => [c.A.getMutualFriendsCount(e.id), c.A.getMutualFriends(e.id), c.A.getMutualGuilds(e.id), c.A.isFetchingProfile(e.id), c.A.isFetchingFriends(e.id)]), p = (0, a.bG)([s.A], () => s.A.getUserAffinitiesMap()), _ = (0, a.bG)([l.Ay], () => l.Ay.getFlattenedGuildIds()), h = (0, r.useMemo)(() => null == n || n.length < 2 ? n : (0, i.sortBy)(n, e => {
         var t, n;
         let {
             user: r
@@ -29,7 +29,7 @@ function u(e) {
             } = t;
             return null != (n = e[r.id]) ? n : _.length
         })
-    }, [u, _]), g = (0, s.A)(t), E = (0, s.A)(h), y = (0, s.A)(m);
+    }, [u, _]), g = (0, o.A)(t), E = (0, o.A)(h), y = (0, o.A)(m);
     return {
         mutualFriendsCount: null != t ? t : g,
         mutualFriends: null != h ? h : E,

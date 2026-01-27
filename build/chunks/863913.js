@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 863913, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b,
+    A: () => h,
     f: () => m
 });
 var r, i = n(627968),
@@ -79,7 +79,7 @@ class f extends l.PureComponent {
         super(e), u(this, "_animated", void 0), this._animated = new o.A.Value(-1 * e.direction)
     }
 }
-let b = e => {
+let h = e => {
     let {
         children: t,
         step: n,

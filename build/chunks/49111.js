@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 49111, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    LK: () => a,
-    _9: () => i
+    LK: () => l,
+    _9: () => s
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     name: "2025-12-server-trending-notification",
     kind: "user",
     defaultConfig: {
@@ -21,14 +20,14 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function i(e) {
-    return r.useConfig({
+function s(e) {
+    return i.useConfig({
         location: e
     })
 }
 
-function a(e) {
-    return r.getConfig({
+function l(e) {
+    return i.getConfig({
         location: e
     }).showSettingsToggle
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(385612),
-    s = n(101058),
-    o = n(696451),
+    o = n(101058),
+    s = n(696451),
     l = n(352413),
     c = n(45837);
 
@@ -28,12 +28,12 @@ function u(e) {
         pendingAvatar: g
     } = (0, l.A)({
         guildId: null === n ? void 0 : n
-    }), E = d && null != t ? (0, s.V7)({
+    }), E = d && null != t ? (0, o.V7)({
         userId: t.id,
         image: g,
         canAnimate: m,
         size: u
-    }) : void 0, y = void 0 !== p ? p : E, b = (0, i.bG)([o.Ay], () => null != n && null != t ? o.Ay.getMember(n, t.id) : null);
+    }) : void 0, y = void 0 !== p ? p : E, b = (0, i.bG)([s.Ay], () => null != n && null != t ? s.Ay.getMember(n, t.id) : null);
     return {
         avatarSrc: r.useMemo(() => null != t ? (0, a.sv)(y, b, t, {
             canAnimate: m,

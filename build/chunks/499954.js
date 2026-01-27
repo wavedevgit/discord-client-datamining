@@ -2,13 +2,13 @@
 /** chunk id: 499954, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(729426),
     i = n(321034),
     a = n(687658);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o {
+class s {
     getStats() {
         let e = this.cpuHistogram.getReport(),
             t = this.memoryHistogram.getReport(),
@@ -86,6 +86,6 @@ class o {
         }
     }
     constructor() {
-        s(this, "cpuHistogram", new a.d), s(this, "memoryHistogram", new a.d), s(this, "startCPU", i.A.getCumulativeCPUUsage()), s(this, "lastCPU", this.startCPU), s(this, "lastBattery", null)
+        o(this, "cpuHistogram", new a.d), o(this, "memoryHistogram", new a.d), o(this, "startCPU", i.A.getCumulativeCPUUsage()), o(this, "lastCPU", this.startCPU), o(this, "lastBattery", null)
     }
 }

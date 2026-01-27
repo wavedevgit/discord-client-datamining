@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(572808),
+    o = n.n(a),
+    s = n(572808),
     l = n(9045),
     c = n(944766),
     u = n(489990);
@@ -49,13 +49,13 @@ let p = 1080,
         } = i.useMemo(() => {
             let e = f({}, n.position);
             if (g) {
-                let t = o.dG[m.id - 1];
+                let t = s.dG[m.id - 1];
                 null != t && (e.x = t.x + t.player.x, e.y = t.y + t.player.y - b.height)
             }
             return e
         }, [n.position, m, g, b]);
         return (0, r.jsx)("div", {
-            className: s()(u.Wp, {
+            className: o()(u.Wp, {
                 [u.lv]: E
             }),
             style: {

@@ -2,13 +2,13 @@
 /** chunk id: 282956, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(73153),
     i = n(997509),
     a = n(542580),
-    s = n(824953);
-let o = {
+    o = n(824953);
+let s = {
     init() {
         r.h.dispatch({
             type: "INTEGRATION_SETTINGS_INIT"
@@ -107,7 +107,7 @@ let o = {
         try {
             r.h.dispatch({
                 type: "INTEGRATION_SETTINGS_SUBMITTING"
-            }), await s.A.update(e, t.id, t), r.h.dispatch({
+            }), await o.A.update(e, t.id, t), r.h.dispatch({
                 type: "INTEGRATION_SETTINGS_SAVE_SUCCESS"
             })
         } catch (e) {

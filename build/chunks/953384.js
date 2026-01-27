@@ -6,8 +6,8 @@ n.d(t, {
     A: () => v
 }), n(896048);
 var i, a = n(311907),
-    s = n(73153),
-    o = n(194862),
+    o = n(73153),
+    s = n(194862),
     l = n(611010),
     c = n(927813),
     u = n(723702);
@@ -21,7 +21,7 @@ function d(e, t, n) {
     }) : e[t] = n, e
 }
 let f = c.A.Millis.DAY,
-    p = new o.A,
+    p = new s.A,
     _ = "",
     h = null,
     m = !1;
@@ -94,7 +94,7 @@ class O extends(i = a.Ay.PersistedStore) {
     }
 }
 d(O, "displayName", "NonGameStore"), d(O, "persistKey", "NonGameStore");
-let v = new O(s.h, {
+let v = new O(o.h, {
     NON_GAMES_DATABASE_FETCH: E,
     NON_GAMES_DATABASE_FETCH_FAIL: y,
     NON_GAMES_DATABASE_UPDATE: b

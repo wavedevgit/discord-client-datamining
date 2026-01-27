@@ -2,13 +2,13 @@
 /** chunk id: 384481, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(747238);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(90644),
     c = n(793574),
     u = n(688810),
@@ -70,31 +70,31 @@ function D(e, t) {
     }), e
 }
 
-function x(e) {
+function L(e) {
     let {
         user: t,
         currentUser: n,
         activity: a,
         className: w,
         onClose: P
-    } = e, x = (0, _.GV)(), L = (0, _.GV)(), {
-        themeType: j
-    } = (0, y.E)(), M = (0, p.A)({
+    } = e, L = (0, _.GV)(), x = (0, _.GV)(), {
+        themeType: M
+    } = (0, y.E)(), j = (0, p.A)({
         activity: a,
         user: t
     }), k = (0, E.A)(a), U = null != k.text && "" !== k.text, {
         largeImage: G
     } = (0, d.XN)(a), {
-        analyticsLocations: V
-    } = (0, u.Ay)(c.A.USER_PROFILE_LIVE_ACTIVITY_CARD), F = (0, m.A)({
+        analyticsLocations: F
+    } = (0, u.Ay)(c.A.USER_PROFILE_LIVE_ACTIVITY_CARD), V = (0, m.A)({
         display: "live",
         user: t,
         activity: a,
-        entry: M,
-        analyticsLocations: V
+        entry: j,
+        analyticsLocations: F
     }), B = (0, g.A)({
         userId: t.id,
-        onAction: F
+        onAction: V
     });
     if (!(0, l.A)(a)) return null;
     let H = () => {
@@ -106,10 +106,10 @@ function x(e) {
             }) : (0, r.jsx)(A.A, {
                 variant: "text-xs/normal",
                 text: l.map((e, n) => (0, r.jsxs)(i.Fragment, {
-                    children: [(0, r.jsx)(o.DUT, {
-                        className: s()(N.sd, N.mG),
+                    children: [(0, r.jsx)(s.DUT, {
+                        className: o()(N.sd, N.mG),
                         onClick: e => {
-                            e.stopPropagation(), F({
+                            e.stopPropagation(), V({
                                 action: "OPEN_SPOTIFY_ARTIST"
                             }), (0, h.mN)(a, t.id, n)
                         },
@@ -137,25 +137,25 @@ function x(e) {
             children: (0, r.jsx)(S.A, {
                 user: t,
                 activity: a,
-                onAction: F
+                onAction: V
             })
         });
     return (0, r.jsx)(u.f5, {
-        value: V,
+        value: F,
         children: (0, r.jsxs)(O.A, {
             ref: B,
-            className: s()(N.Nr, w),
-            onAction: F,
+            className: o()(N.Nr, w),
+            onAction: V,
             onClose: P,
-            "aria-labelledby": U ? "".concat(L, " ").concat(x) : x,
+            "aria-labelledby": U ? "".concat(x, " ").concat(L) : L,
             children: [(0, r.jsx)(v.A, D(R({
-                textId: L
+                textId: x
             }, k), {
                 contextMenu: (0, r.jsx)(T.A, {
                     display: "live",
                     user: t,
                     activity: a,
-                    entry: M,
+                    entry: j,
                     onClose: P
                 })
             })), (0, r.jsx)("div", {
@@ -164,10 +164,10 @@ function x(e) {
                     className: N.Qs,
                     children: [(0, r.jsx)(f.d, {
                         image: G,
-                        size: j === C.d.MODAL_V2 ? f.w.SIZE_100 : f.w.SIZE_60,
+                        size: M === C.d.MODAL_V2 ? f.w.SIZE_100 : f.w.SIZE_60,
                         className: N.mM,
                         onClick: e => {
-                            e.stopPropagation(), F({
+                            e.stopPropagation(), V({
                                 action: "OPEN_SPOTIFY_ALBUM"
                             }), (0, h.QX)(a, t.id)
                         }
@@ -178,20 +178,20 @@ function x(e) {
                                 variant: "heading-sm/semibold",
                                 text: a.details,
                                 onClick: () => {
-                                    F({
+                                    V({
                                         action: "OPEN_SPOTIFY_TRACK"
                                     }), (0, h.Mp)(a)
                                 },
-                                id: x
+                                id: L
                             }), H()]
                         }), (0, r.jsx)(b.A, {
                             user: t,
                             activity: a,
                             className: N.jp
-                        }), Y(), j === C.d.MODAL_V2 && W()]
-                    }), j === C.d.MODAL && W()]
+                        }), Y(), M === C.d.MODAL_V2 && W()]
+                    }), M === C.d.MODAL && W()]
                 })
-            }), j !== C.d.MODAL && j !== C.d.MODAL_V2 && W()]
+            }), M !== C.d.MODAL && M !== C.d.MODAL_V2 && W()]
         })
     })
 }

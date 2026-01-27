@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 66283, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     container: "container_c880e8",
     containerBackground: "containerBackground_c880e8",
     responsiveContainer: "responsiveContainer_c880e8",
@@ -16,5 +15,4 @@ var r = {
     scroller: "scroller_c880e8",
     heroHeaderSideGradient: "heroHeaderSideGradient_c880e8",
     heroHeaderBackgroundStars: "heroHeaderBackgroundStars_c880e8"
-};
-n.r(e.exports = r)
+})

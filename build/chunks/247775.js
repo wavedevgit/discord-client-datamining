@@ -15,8 +15,8 @@ n.r(t), n.d(t, {
     showToken: () => C
 }), n(896048);
 var a = n(506774),
-    s = n(818348);
-let o = "dQw4w9WgXcQ:",
+    o = n(818348);
+let s = "dQw4w9WgXcQ:",
     l = "__analytics__";
 
 function c(e) {
@@ -36,18 +36,18 @@ let f = !1,
 
 function g() {
     if (h) {
-        a.w.remove(s.il), a.w.remove(s.zy);
+        a.w.remove(o.il), a.w.remove(o.zy);
         return
     }
-    null != i ? a.w.set(s.il, i) : a.w.remove(s.il), a.w.set(s.zy, _)
+    null != i ? a.w.set(o.il, i) : a.w.remove(o.il), a.w.set(o.zy, _)
 }
 
 function E(e) {
     return null == e || 0 === e.length ? {
         decryptedToken: null,
         wasEncrypted: !1
-    } : (null == u ? void 0 : u.isEncryptionAvailable()) && e.startsWith(o) ? {
-        decryptedToken: u.decryptString(e.substring(o.length)),
+    } : (null == u ? void 0 : u.isEncryptionAvailable()) && e.startsWith(s) ? {
+        decryptedToken: u.decryptString(e.substring(s.length)),
         wasEncrypted: !0
     } : {
         decryptedToken: e,
@@ -56,12 +56,12 @@ function E(e) {
 }
 
 function y(e) {
-    return (null == u ? void 0 : u.isEncryptionAvailable()) && !e.startsWith(o) ? "".concat(o).concat(u.encryptString(e)) : e
+    return (null == u ? void 0 : u.isEncryptionAvailable()) && !e.startsWith(s) ? "".concat(s).concat(u.encryptString(e)) : e
 }
 
 function b() {
     if (m) return;
-    i = a.w.get(s.il), _ = a.w.get(s.zy) || {};
+    i = a.w.get(o.il), _ = a.w.get(o.zy) || {};
     let {
         decryptedToken: e,
         wasEncrypted: t

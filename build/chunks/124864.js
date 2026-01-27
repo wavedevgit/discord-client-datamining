@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(890167),
     i = n(643479),
     a = n(801765),
-    s = n(105423);
-let o = 8,
+    o = n(105423);
+let s = 8,
     l = 10,
     c = {
         K3_III: 78420
@@ -26,9 +26,9 @@ let o = 8,
     };
 
 function f(e, t, n, c) {
-    let u = r.A.getByteOrder(e, t + n + o),
+    let u = r.A.getByteOrder(e, t + n + s),
         d = t + n,
-        f = (0, a.y)(e, s.SI, d, d + l, u, c, !0);
+        f = (0, a.y)(e, o.SI, d, d + l, u, c, !0);
     return p(f) && (f = (0, i.dP)({}, f, _(e, d + f.LevelInfo.__offset, u)), delete f.LevelInfo), f
 }
 
@@ -44,15 +44,15 @@ function _(e, t, n) {
         value: a,
         description: h(a)
     };
-    let s = e.getInt16(t + u.ROLL_ANGLE, n === r.A.LITTLE_ENDIAN);
+    let o = e.getInt16(t + u.ROLL_ANGLE, n === r.A.LITTLE_ENDIAN);
     i.RollAngle = {
-        value: s,
-        description: m(s)
-    };
-    let o = e.getInt16(t + u.PITCH_ANGLE, n === r.A.LITTLE_ENDIAN);
-    return i.PitchAngle = {
         value: o,
-        description: g(o)
+        description: m(o)
+    };
+    let s = e.getInt16(t + u.PITCH_ANGLE, n === r.A.LITTLE_ENDIAN);
+    return i.PitchAngle = {
+        value: s,
+        description: g(s)
     }, i
 }
 

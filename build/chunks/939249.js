@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(531142),
-    o = n(426333),
+    o = n(531142),
+    s = n(426333),
     l = n(650583);
 
 function c(e, t, n) {
@@ -76,8 +76,8 @@ class h extends(r = a.Component) {
                 focusProps: n,
                 innerRef: r,
                 onClick: i,
-                role: s,
-                tabIndex: o,
+                role: o,
+                tabIndex: s,
                 ignoreKeyPress: l
             } = e,
             c = p(e, ["tag", "focusProps", "innerRef", "onClick", "role", "tabIndex", "ignoreKeyPress"]);
@@ -92,8 +92,8 @@ class h extends(r = a.Component) {
                 onClick: n,
                 className: r,
                 children: i,
-                focusProps: s,
-                innerRef: o,
+                focusProps: o,
+                innerRef: s,
                 ignoreKeyPress: l
             } = e,
             c = p(e, ["tag", "onClick", "className", "children", "focusProps", "innerRef", "ignoreKeyPress"]);
@@ -108,7 +108,7 @@ class h extends(r = a.Component) {
         }, c), i)
     }
     render() {
-        return this.context ? this.renderNonInteractive() : (0, i.jsx)(o.vN, f(u({}, this.props.focusProps), {
+        return this.context ? this.renderNonInteractive() : (0, i.jsx)(s.vN, f(u({}, this.props.focusProps), {
             children: this.renderInner()
         }))
     }
@@ -130,7 +130,7 @@ class h extends(r = a.Component) {
         })
     }
 }
-c(h, "contextType", s.g), c(h, "defaultProps", {
+c(h, "contextType", o.g), c(h, "defaultProps", {
     tag: "div",
     role: "button",
     tabIndex: 0

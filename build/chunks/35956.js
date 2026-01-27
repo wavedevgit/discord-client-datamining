@@ -4,12 +4,12 @@
 var r = n(257943),
     i = n(410323),
     a = n(485155),
-    s = URLSearchParams.prototype,
-    o = i(s.forEach);
-!r || "size" in s || a(s, "size", {
+    o = URLSearchParams.prototype,
+    s = i(o.forEach);
+!r || "size" in o || a(o, "size", {
     get: function() {
         var e = 0;
-        return o(this, function() {
+        return s(this, function() {
             e++
         }), e
     },

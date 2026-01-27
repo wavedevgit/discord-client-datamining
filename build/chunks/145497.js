@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(573435),
     c = n(531685),
     u = n(486020),
@@ -29,7 +29,7 @@ function p(e) {
         height: n,
         className: i,
         children: (0, r.jsx)("div", {
-            className: s()(f.O, f.q),
+            className: o()(f.O, f.q),
             children: a
         })
     })
@@ -44,7 +44,7 @@ function _(e) {
         className: p,
         acronymClassName: _,
         animate: h
-    } = e, m = (0, o.bG)([c.A], () => c.A.isFocused()), g = (0, u.V0)(i) ? i : u.Ay.getGuildIconURL({
+    } = e, m = (0, s.bG)([c.A], () => c.A.isFocused()), g = (0, u.V0)(i) ? i : u.Ay.getGuildIconURL({
         id: t,
         icon: i,
         size: a,
@@ -58,7 +58,7 @@ function _(e) {
             height: a,
             className: p,
             children: (0, r.jsx)("div", {
-                className: s()(f.O, f.q, _),
+                className: o()(f.O, f.q, _),
                 children: e
             })
         })

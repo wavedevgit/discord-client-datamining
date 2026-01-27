@@ -13,14 +13,14 @@ function r(e, t, n) {
 n.d(t, {
     Ay: () => c,
     EL: () => u,
-    Vd: () => s,
+    Vd: () => o,
     tx: () => a
 }), n(747238), n(812715), n(896048), n(321073), n(667532), n(65821);
 let i = e => "__section__".concat(e),
     a = e => "__section_header__".concat(e),
-    s = e => parseInt(e.replace(/^__section__/, ""), 10);
+    o = e => parseInt(e.replace(/^__section__/, ""), 10);
 
-function o(e) {
+function s(e) {
     return e.reduce((e, t, n) => t < e[0] ? [t, n] : e, [e[0], 0])
 }
 let l = () => 0;
@@ -51,8 +51,8 @@ class c {
             itemGutter: r = this.itemGutter,
             removeEdgeItemGutters: i = this.removeEdgeItemGutters,
             getItemKey: a = this.getItemKey,
-            getItemHeight: s = this.getItemHeight,
-            getSectionHeight: o = this.getSectionHeight,
+            getItemHeight: o = this.getItemHeight,
+            getSectionHeight: s = this.getSectionHeight,
             bufferWidth: l = this.bufferWidth,
             padding: c = this.padding,
             paddingVertical: u = this.paddingVertical,
@@ -61,7 +61,7 @@ class c {
             sectionGutter: p = this.sectionGutter,
             dir: _ = this.dir
         } = e;
-        (this.sections !== t || this.columns !== n || this.itemGutter !== r || this.removeEdgeItemGutters !== i || this.getItemKey !== a || this.getSectionHeight !== o || this.getItemHeight !== s || this.bufferWidth !== l || this.padding !== c || this.paddingVertical !== u || this.paddingHorizontal !== d || this.marginLeft !== f || this.sectionGutter !== p || this.dir !== _) && (this.needsFullCompute = !0, this.sections = t, this.columns = n, this.itemGutter = r, this.getItemKey = a, this.getSectionHeight = o, this.getItemHeight = s, this.bufferWidth = l, this.padding = c, this.paddingVertical = u, this.paddingHorizontal = d, this.marginLeft = f, this.sectionGutter = p, this.dir = _)
+        (this.sections !== t || this.columns !== n || this.itemGutter !== r || this.removeEdgeItemGutters !== i || this.getItemKey !== a || this.getSectionHeight !== s || this.getItemHeight !== o || this.bufferWidth !== l || this.padding !== c || this.paddingVertical !== u || this.paddingHorizontal !== d || this.marginLeft !== f || this.sectionGutter !== p || this.dir !== _) && (this.needsFullCompute = !0, this.sections = t, this.columns = n, this.itemGutter = r, this.getItemKey = a, this.getSectionHeight = s, this.getItemHeight = o, this.bufferWidth = l, this.padding = c, this.paddingVertical = u, this.paddingHorizontal = d, this.marginLeft = f, this.sectionGutter = p, this.dir = _)
     }
     computeFullCoords() {
         var e, t;
@@ -69,7 +69,7 @@ class c {
         let {
             columns: n,
             getItemKey: r,
-            getItemHeight: s,
+            getItemHeight: o,
             itemGutter: l,
             getSectionHeight: c,
             bufferWidth: u,
@@ -101,9 +101,9 @@ class c {
                     u++;
                     continue
                 }
-                let [n, i] = o(this.columnHeights);
+                let [n, i] = s(this.columnHeights);
                 i < this.lastColumnIndex && this.currentRow++, this.lastColumnIndex = i;
-                let a = s(E, u, this.columnWidth),
+                let a = o(E, u, this.columnWidth),
                     c = {
                         position: "absolute",
                         [f]: this.columnWidth * i + l * (i + 1) - l + h,
@@ -143,9 +143,9 @@ class c {
         this.visibleSections = {};
         let a = 0;
         for (; a < this.sections.length;) {
-            let s = this.sections[a],
-                o = i(a),
-                l = r[o];
+            let o = this.sections[a],
+                s = i(a),
+                l = r[s];
             if (null == l) {
                 a++;
                 continue
@@ -160,18 +160,18 @@ class c {
             }
             let d = 0,
                 f = 1;
-            for (u < t && u > e && (d = s - 1, f = -1), this.visibleSections[o] = []; d >= 0 && d < s;) {
+            for (u < t && u > e && (d = o - 1, f = -1), this.visibleSections[s] = []; d >= 0 && d < o;) {
                 let i = n(a, d),
-                    s = null != i ? r[i] : null;
-                if (null == i || null == s) {
+                    o = null != i ? r[i] : null;
+                if (null == i || null == o) {
                     d += f;
                     continue
                 }
                 let {
                     top: l,
                     height: u
-                } = s;
-                l + c > e - u && l + c < t && (-1 === f ? this.visibleSections[o].unshift([i, a, d]) : this.visibleSections[o].push([i, a, d])), d += f
+                } = o;
+                l + c > e - u && l + c < t && (-1 === f ? this.visibleSections[s].unshift([i, a, d]) : this.visibleSections[s].push([i, a, d])), d += f
             }
             if (c < e && u > t) break;
             a++

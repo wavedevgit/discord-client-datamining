@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(313961),
     i = n(652896),
     a = n(616356),
-    s = n(162605),
-    o = n(927813),
+    o = n(162605),
+    s = n(927813),
     l = n(650338),
     c = n(487329),
     u = n(601900),
@@ -36,21 +36,21 @@ function _(e) {
     }
     return e
 }
-let h = 20 * o.A.Millis.SECOND,
+let h = 20 * s.A.Millis.SECOND,
     m = {
         getActiveErrors: () => {
             let e = a.A.getCurrentUserActiveStream();
             if (null == e || e.state === f.XYD.PAUSED || 0 === a.A.getViewerIds(e).length) return null;
             let t = (0, i._z)(e),
-                n = s.A.getRTCConnection(t);
+                n = o.A.getRTCConnection(t);
             if (null == n) return null;
-            let o = n.getMediaEngineConnectionId();
-            if (null == o) return null;
-            let p = s.A.getLastNonZeroRemoteVideoSinkWantsTime(t);
+            let s = n.getMediaEngineConnectionId();
+            if (null == s) return null;
+            let p = o.A.getLastNonZeroRemoteVideoSinkWantsTime(t);
             if (null != p && performance.now() - p < h || !n.hasActiveRemoteWants()) return null;
             let m = r.A.getParticipant(e.channelId, (0, i._z)(e));
             if (null == m) return null;
-            let g = (0, d.xA)(o, e.ownerId);
+            let g = (0, d.xA)(s, e.ownerId);
             if (null == g) return null;
             let E = (0, l.wz)(m);
             return null == E ? null : g.short.frameRate < (0, d.s1)(E.maxFrameRate) || g.long.frameRate < (0, d.s1)(E.maxFrameRate) ? [_({

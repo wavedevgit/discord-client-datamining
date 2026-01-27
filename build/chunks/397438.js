@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(506774),
-    s = n(73153),
-    o = n(617617);
+    o = n(73153),
+    s = n(617617);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -35,11 +35,11 @@ let u = {},
 
 function f() {
     var e, t, n, r, i, a;
-    let s = o.A.settings;
+    let o = s.A.settings;
     return {
-        gifAutoPlay: null == (t = s.textAndImages) || null == (e = t.gifAutoPlay) ? void 0 : e.value,
-        animateEmoji: null == (r = s.textAndImages) || null == (n = r.animateEmoji) ? void 0 : n.value,
-        animateStickers: null == (a = s.textAndImages) || null == (i = a.animateStickers) ? void 0 : i.value
+        gifAutoPlay: null == (t = o.textAndImages) || null == (e = t.gifAutoPlay) ? void 0 : e.value,
+        animateEmoji: null == (r = o.textAndImages) || null == (n = r.animateEmoji) ? void 0 : n.value,
+        animateStickers: null == (a = o.textAndImages) || null == (i = a.animateStickers) ? void 0 : i.value
     }
 }
 
@@ -80,7 +80,7 @@ function E() {
 }
 class y extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        u = null != e ? e : {}, this.syncWith([o.A], p)
+        u = null != e ? e : {}, this.syncWith([s.A], p)
     }
     getState() {
         return u
@@ -98,7 +98,7 @@ l(y, "displayName", "UserSettingsOverridesStore"), l(y, "persistKey", "UserSetti
     let t = null != (e = a.w.get("UserSettingsStoreOverrides")) ? e : {};
     return a.w.remove("UserSettingsStoreOverrides"), t
 }]);
-let b = new y(s.h, {
+let b = new y(o.h, {
     USER_SETTINGS_PROTO_UPDATE: E,
     USER_SETTINGS_OVERRIDE_APPLY: m,
     USER_SETTINGS_OVERRIDE_CLEAR: g,

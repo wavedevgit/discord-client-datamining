@@ -1,87 +1,88 @@
-/** Chunk was on 35894 **/
-/** chunk id: 779662, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => b
+/** Chunk was on 73091 **/
+/** chunk id: 779662, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    default: () => E
 });
-var r = n(627968),
-    l = n(64700),
-    i = n(33851),
-    o = n.n(i),
-    a = n(417597),
-    s = n(397927),
-    c = n(70738),
-    u = n(266047),
-    d = n(221950),
-    C = n(652215),
-    m = n(985018);
-let p = [c.mF.ORDER_BY_GUILD_JOINED_AT_DESC, c.mF.ORDER_BY_GUILD_JOINED_AT_ASC, c.mF.ORDER_BY_USER_ID_DESC, c.mF.ORDER_BY_USER_ID_ASC];
+var n = r(627968),
+    c = r(64700),
+    l = r(33851),
+    a = r.n(l),
+    o = r(417597),
+    s = r(397927),
+    i = r(70738),
+    _ = r(266047),
+    u = r(221950),
+    b = r(652215),
+    O = r(985018);
+let D = [i.mF.ORDER_BY_GUILD_JOINED_AT_DESC, i.mF.ORDER_BY_GUILD_JOINED_AT_ASC, i.mF.ORDER_BY_USER_ID_DESC, i.mF.ORDER_BY_USER_ID_ASC];
 
-function b(e) {
+function E(e) {
     let {
         guildId: t,
-        onClose: n
-    } = e, i = (0, a.bG)([u.A], () => u.A.getSearchStateByGuildId(t), [t], o()), b = l.useCallback(e => {
-        var n, r;
-        (0, d.Ld)(t, (n = function(e) {
+        onClose: r
+    } = e, l = (0, o.bG)([_.A], () => _.A.getSearchStateByGuildId(t), [t], a()), E = c.useCallback(e => {
+        var r, n;
+        (0, u.Ld)(t, (r = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-                var n = null != arguments[t] ? arguments[t] : {},
-                    r = Object.keys(n);
-                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                }))), r.forEach(function(t) {
-                    var r;
-                    r = n[t], t in e ? Object.defineProperty(e, t, {
-                        value: r,
+                var r = null != arguments[t] ? arguments[t] : {},
+                    n = Object.keys(r);
+                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(r, e).enumerable
+                }))), n.forEach(function(t) {
+                    var n;
+                    n = r[t], t in e ? Object.defineProperty(e, t, {
+                        value: n,
                         enumerable: !0,
                         configurable: !0,
                         writable: !0
-                    }) : e[t] = r
+                    }) : e[t] = n
                 })
             }
             return e
-        }({}, i), r = r = {
+        }({}, l), n = n = {
             selectedSort: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-            var n = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var r = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-                var r = Object.getOwnPropertySymbols(e);
-                n.push.apply(n, r)
+                var n = Object.getOwnPropertySymbols(e);
+                r.push.apply(r, n)
             }
-            return n
-        })(Object(r)).forEach(function(e) {
-            Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
-        }), n))
-    }, [t, i]);
-    return (0, r.jsx)(s.W1t, {
-        "data-menu-migration-ready": !0,
+            return r
+        })(Object(n)).forEach(function(e) {
+            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(n, e))
+        }), r))
+    }, [t, l]);
+    return (0, n.jsx)(s.W1t, {
+        "data-menu-migrated": !0,
         navId: "members-table-sort-menu",
         onClose: () => {
-            null == n || n()
+            null == r || r()
         },
-        "aria-label": m.intl.string(m.t["u/7Rdc"]),
-        onSelect: C.tEg,
-        children: (0, r.jsx)(s.rXV, {
-            children: p.map(e => {
+        "aria-label": O.intl.string(O.t["u/7Rdc"]),
+        onSelect: b.tEg,
+        children: (0, n.jsx)(s.rXV, {
+            children: D.map(e => {
                 var t;
-                return (0, r.jsx)(s.iDA, {
+                let r = function(e) {
+                    switch (e) {
+                        case i.mF.ORDER_BY_GUILD_JOINED_AT_DESC:
+                            return O.intl.string(O.t.V7zCwB);
+                        case i.mF.ORDER_BY_GUILD_JOINED_AT_ASC:
+                            return O.intl.string(O.t.l2Zaet);
+                        case i.mF.ORDER_BY_USER_ID_DESC:
+                            return O.intl.string(O.t.xMA6RG);
+                        case i.mF.ORDER_BY_USER_ID_ASC:
+                            return O.intl.string(O.t.bUKkZx);
+                        default:
+                            return null
+                    }
+                }(e);
+                return null != r && (0, n.jsx)(s.iDA, {
                     id: "members-table-sort-".concat(e),
-                    label: function(e) {
-                        switch (e) {
-                            case c.mF.ORDER_BY_GUILD_JOINED_AT_DESC:
-                                return m.intl.string(m.t.V7zCwB);
-                            case c.mF.ORDER_BY_GUILD_JOINED_AT_ASC:
-                                return m.intl.string(m.t.l2Zaet);
-                            case c.mF.ORDER_BY_USER_ID_DESC:
-                                return m.intl.string(m.t.xMA6RG);
-                            case c.mF.ORDER_BY_USER_ID_ASC:
-                                return m.intl.string(m.t.bUKkZx);
-                            default:
-                                return null
-                        }
-                    }(e),
-                    checked: (t = i.selectedSort) === c.mF.ORDER_BY_UNSPECIFIED || null == t ? e === c.mF.ORDER_BY_GUILD_JOINED_AT_DESC : e === t,
+                    label: r,
+                    checked: (t = l.selectedSort) === i.mF.ORDER_BY_UNSPECIFIED || null == t ? e === i.mF.ORDER_BY_GUILD_JOINED_AT_DESC : e === t,
                     disabled: !1,
-                    action: () => b(e),
+                    action: () => E(e),
                     group: "members-table-sort"
                 }, "members-table-sort-".concat(e))
             })

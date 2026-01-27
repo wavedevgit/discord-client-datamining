@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(492462),
     i = n(976860),
     a = n(568065),
-    s = n(652215),
-    o = n(746080);
+    o = n(652215),
+    s = n(746080);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -55,7 +55,7 @@ function f(e, t, n) {
             [a.G0]: n
         })
     } : void 0;
-    (0, i.pX)(s.BVt.CHANNEL(e, o.VV.GUILD_BOOSTS), d(c({}, l), {
+    (0, i.pX)(o.BVt.CHANNEL(e, s.VV.GUILD_BOOSTS), d(c({}, l), {
         source: t
     }))
 }

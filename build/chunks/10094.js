@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 10094, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    O: () => a,
+    O: () => l,
     Y: () => s
 });
 var r = n(73153),
     i = n(287809);
-let a = (e, t) => {
+let l = (e, t) => {
         r.h.dispatch({
             type: "SET_PREMIUM_TYPE_OVERRIDE",
             premiumType: e

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(665260),
     a = n(397927),
-    s = n(439372),
-    o = n(164956),
+    o = n(439372),
+    s = n(164956),
     l = n(961350),
     c = n(734057),
     u = n(696451),
@@ -60,7 +60,7 @@ function v(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class A extends s.A {
+class A extends o.A {
     constructor(...e) {
         super(...e), y(this, "onboardingCompleteGuilds", new Set), y(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -75,13 +75,13 @@ class A extends s.A {
         }), y(this, "handleGuildMemberUpdate", e => {
             let {
                 flags: t,
-                user: s,
-                guildId: o
+                user: o,
+                guildId: s
             } = e;
-            if (s.id === l.default.getId() && !this.onboardingCompleteGuilds.has(o) && (0, i.Lt)(null != t ? t : 0, E.D.COMPLETED_HOME_ACTIONS)) {
+            if (o.id === l.default.getId() && !this.onboardingCompleteGuilds.has(s) && (0, i.Lt)(null != t ? t : 0, E.D.COMPLETED_HOME_ACTIONS)) {
                 var c, u;
-                this.onboardingCompleteGuilds.add(o);
-                let e = null != (c = null == (u = p.h.getNewMemberActions(o)) ? void 0 : u.length) ? c : 0;
+                this.onboardingCompleteGuilds.add(s);
+                let e = null != (c = null == (u = p.h.getNewMemberActions(s)) ? void 0 : u.length) ? c : 0;
                 if (0 === e) return;
                 (0, a.mMO)(async () => {
                     let {
@@ -134,7 +134,7 @@ class A extends s.A {
             (null == r ? void 0 : r[t]) !== !0 && null != i && i.actionType === _.NewMemberActionTypes.CHAT && (0, f.eC)(e, t)
         }), y(this, "_getOrLoadOnboardingMemberActions", async e => {
             let t = (0, m.K)(e),
-                n = o.A.isFullServerPreview(e);
+                n = s.A.isFullServerPreview(e);
             if (!t && !n) return {};
             let r = u.Ay.getSelfMember(e);
             if (null == r || !(0, g.j)(e)) return {};

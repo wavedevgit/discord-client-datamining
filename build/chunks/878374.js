@@ -5,8 +5,8 @@ n.d(t, {
     a: () => h
 });
 var r, i, a = n(73153),
-    s = n(365971),
-    o = n(318093),
+    o = n(365971),
+    s = n(318093),
     l = n(936674),
     c = n(354382);
 
@@ -32,7 +32,7 @@ let d = null != (r = window.requestIdleCallback) ? r : e => {
 function p(e) {
     return null == e ? new c.oS(c.vr, !0) : new c.oS(e.timeRemaining(), e.didTimeout)
 }
-class _ extends o.f {
+class _ extends s.f {
     _queueIdleCallback() {
         if (!this._enableRequestIdleCallback || this._criticalWorkScheduled) return this._processWorkCallback();
         this.telemetry.time(l.YE.TIME_TO_FIRE_IDLE_CALLBACK), this._scheduleRequestIdleCallback(e => {
@@ -78,7 +78,7 @@ class _ extends o.f {
                 visible: t,
                 windowId: n
             } = e;
-            n === (0, s.Xg)() && this._trackAppBackgrounded(!t)
+            n === (0, o.Xg)() && this._trackAppBackgrounded(!t)
         })
     }
 }

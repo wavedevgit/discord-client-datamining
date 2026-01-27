@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(312138),
-    s = n(315710),
-    o = n(426333),
+    o = n(315710),
+    s = n(426333),
     l = n(707554),
     c = n(460890);
 
@@ -91,7 +91,7 @@ function g(e) {
             "aria-modal": !0,
             children: (0, r.jsx)(l.F, {
                 forceLevel: 1,
-                children: (0, r.jsx)(o.xp, {
+                children: (0, r.jsx)(s.xp, {
                     containerRef: n,
                     children: t
                 })
@@ -123,11 +123,11 @@ function y(e) {
         ref: t,
         returnRef: n,
         modal: a = !0,
-        setDialogRef: o,
+        setDialogRef: s,
         trackingProps: l
     } = e, u = _(e, ["ref", "returnRef", "modal", "setDialogRef", "trackingProps"]), f = i.useRef(null);
-    i.useImperativeHandle(t, () => f.current), i.useEffect(() => (null == o || o(f.current), () => {
-        null == o || o(null)
+    i.useImperativeHandle(t, () => f.current), i.useEffect(() => (null == s || s(f.current), () => {
+        null == s || s(null)
     }), []);
     let {
         trackImpression: h
@@ -143,7 +143,7 @@ function y(e) {
                 disableTrack: l.disableTrack
             })
         }
-    }, [h, l]), (0, s.t)(f, {
+    }, [h, l]), (0, o.t)(f, {
         returnRef: n,
         disable: !a
     });

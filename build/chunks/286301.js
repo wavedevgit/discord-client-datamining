@@ -4,7 +4,7 @@
 var r;
 Object.defineProperty(t, "__esModule", {
     value: !0
-}), t.astFormatter = t.RichTextNodeType = void 0, t.formatToAst = o;
+}), t.astFormatter = t.RichTextNodeType = void 0, t.formatToAst = s;
 let i = n(941242);
 ! function(e) {
     e.Text = "text", e.Strong = "strong", e.Emphasis = "em", e.Strikethrough = "s", e.Code = "inlineCode", e.Link = "link", e.Paragraph = "paragraph"
@@ -36,7 +36,7 @@ let a = {
         content: e
     })
 };
-class s extends i.FormatBuilder {
+class o extends i.FormatBuilder {
     constructor() {
         super(...arguments), this.result = []
     }
@@ -60,13 +60,13 @@ class s extends i.FormatBuilder {
     }
 }
 
-function o(e, t) {
+function s(e, t) {
     return "string" == typeof e ? [{
         type: r.Text,
         content: e
-    }] : this.bindFormatValues(s, e, t)
+    }] : this.bindFormatValues(o, e, t)
 }
 t.astFormatter = {
-    format: o,
-    builder: s
+    format: s,
+    builder: o
 }

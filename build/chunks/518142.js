@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 518142, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(189213),
+    l = n(189213),
     s = n(397927),
-    o = n(98207),
-    l = n(985018),
+    a = n(98207),
+    o = n(985018),
     c = n(876692);
 
-function u(e, t, n) {
+function d(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -20,7 +19,7 @@ function u(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class d extends i.PureComponent {
+class u extends i.PureComponent {
     render() {
         let {
             transitionState: e
@@ -28,23 +27,23 @@ class d extends i.PureComponent {
             code: t,
             errorMessage: n,
             retrySuccess: i
-        } = this.state, o = i ? (0, r.jsx)(s.ZpM, {
+        } = this.state, a = i ? (0, r.jsx)(s.ZpM, {
             type: s.ZpM.Types.SUCCESS,
             className: c.Nr,
             children: (0, r.jsx)(s.Text, {
                 variant: "text-md/normal",
-                children: l.intl.string(l.t.j4qu8n)
+                children: o.intl.string(o.t.j4qu8n)
             })
         }) : null;
-        return (0, r.jsx)(a.Modal, {
-            title: l.intl.string(l.t["mGppp/"]),
+        return (0, r.jsx)(l.Modal, {
+            title: o.intl.string(o.t["mGppp/"]),
             actions: [{
-                text: l.intl.string(l.t["ETE/oC"]),
+                text: o.intl.string(o.t["ETE/oC"]),
                 onClick: this.props.onClose,
                 variant: "secondary",
                 disabled: this.state.isLoading
             }, {
-                text: l.intl.string(l.t.piW6YS),
+                text: o.intl.string(o.t.piW6YS),
                 type: "submit",
                 disabled: this.state.isLoading || 0 === t.length,
                 onClick: this.handleSubmit
@@ -58,10 +57,10 @@ class d extends i.PureComponent {
                     color: "text-default",
                     variant: "text-md/normal",
                     className: c.YK,
-                    children: l.intl.string(l.t["37S9yU"])
-                }), o, (0, r.jsx)(s.ksK, {
+                    children: o.intl.string(o.t["37S9yU"])
+                }), a, (0, r.jsx)(s.ksK, {
                     inputRef: this.setRef,
-                    label: l.intl.string(l.t.TjGb4Q),
+                    label: o.intl.string(o.t.TjGb4Q),
                     onChange: this.handleCodeChange,
                     maxLength: 8,
                     value: t,
@@ -73,7 +72,7 @@ class d extends i.PureComponent {
                     children: (0, r.jsx)(s.DUT, {
                         onClick: this.handleRetry,
                         children: (0, r.jsx)(s.MzZ, {
-                            children: l.intl.string(l.t.PZgmxv)
+                            children: o.intl.string(o.t.PZgmxv)
                         })
                     })
                 })]
@@ -81,23 +80,23 @@ class d extends i.PureComponent {
         })
     }
     constructor(...e) {
-        super(...e), u(this, "_input", void 0), u(this, "state", {
+        super(...e), d(this, "_input", void 0), d(this, "state", {
             code: "",
             errorMessage: "",
             retrySuccess: !1,
             isLoading: !1
-        }), u(this, "setRef", e => {
+        }), d(this, "setRef", e => {
             this._input = e
-        }), u(this, "handleRetry", async () => {
-            await o.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
+        }), d(this, "handleRetry", async () => {
+            await a.A.sendMFABackupCodesVerificationKeyEmail(this.props.password), this.setState({
                 retrySuccess: !0
             })
-        }), u(this, "handleSubmit", async e => {
+        }), d(this, "handleSubmit", async e => {
             e.preventDefault(), this.setState({
                 isLoading: !0
             });
             try {
-                await o.A.confirmViewBackupCodes(this.state.code, !1), this.props.onClose()
+                await a.A.confirmViewBackupCodes(this.state.code, !1), this.props.onClose()
             } catch (e) {
                 if (null == e.body) return;
                 e.body.message && this.setState({
@@ -108,7 +107,7 @@ class d extends i.PureComponent {
                     isLoading: !1
                 })
             }
-        }), u(this, "handleCodeChange", e => {
+        }), d(this, "handleCodeChange", e => {
             this.setState({
                 code: e
             })

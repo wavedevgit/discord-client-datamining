@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(155718),
-    s = n(58149),
-    o = n(842209),
+    o = n(58149),
+    s = n(842209),
     l = n(990474),
     c = n(954571),
     u = n(183555),
@@ -53,7 +53,7 @@ function g(e) {
         type: "channel"
     }), [g]), {
         commands: O
-    } = o.DP(b, t, n), v = i.useMemo(() => null == O ? void 0 : O.filter(e => {
+    } = s.DP(b, t, n), v = i.useMemo(() => null == O ? void 0 : O.filter(e => {
         let {
             nsfw: t,
             options: n
@@ -73,7 +73,7 @@ function g(e) {
             application_id: t,
             command_id: e,
             guild_id: h
-        }, (0, s.Ou)(g.id)))
+        }, (0, o.Ou)(g.id)))
     };
     return (0, r.jsx)(d.A, {
         heading: p.intl.string(p.t["0hKkS+"]),

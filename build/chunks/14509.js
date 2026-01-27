@@ -9,13 +9,13 @@ n.d(t, {
 var r = n(71393),
     i = n(967198),
     a = n(276041);
-let s = 3e3,
-    o = 36e5;
+let o = 3e3,
+    s = 36e5;
 
 function l() {
     let {
         guildStore: e
-    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = null != e ? e : r.A, n = t.getGuild(a.$), i = (null == n ? void 0 : n.joinedAt) instanceof Date && Date.now() - n.joinedAt.getTime() <= o;
+    } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, t = null != e ? e : r.A, n = t.getGuild(a.$), i = (null == n ? void 0 : n.joinedAt) instanceof Date && Date.now() - n.joinedAt.getTime() <= s;
     return 1 === t.getGuildCount() && i
 }
 
@@ -27,12 +27,12 @@ function u(e) {
     return new Promise((t, n) => {
         if (i.A.getGuildId() === e) return void t();
         let r = setTimeout(() => {
-                o(), n()
-            }, s),
+                s(), n()
+            }, o),
             a = () => {
-                i.A.getGuildId() === e && (o(), t())
+                i.A.getGuildId() === e && (s(), t())
             },
-            o = () => {
+            s = () => {
                 i.A.removeChangeListener(a), clearTimeout(r)
             };
         i.A.addChangeListener(a)

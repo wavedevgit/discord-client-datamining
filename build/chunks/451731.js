@@ -2,21 +2,21 @@
 /** chunk id: 451731, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l2: () => o,
+    l2: () => s,
     mz: () => c,
     uV: () => l
 }), n(638769);
 var r = n(562465),
     i = n(73153),
     a = n(463347),
-    s = n(652215);
+    o = n(652215);
 
-function o(e) {
+function s(e) {
     (0, a.tZ)(e) || (i.h.dispatch({
         type: "TOP_EMOJIS_FETCH",
         guildId: e
     }), r.Bo.get({
-        url: s.Rsh.TOP_EMOJIS_FOR_GUILD(e),
+        url: o.Rsh.TOP_EMOJIS_FOR_GUILD(e),
         oldFormErrors: !0,
         rejectWithError: !0
     }).then(t => i.h.dispatch({

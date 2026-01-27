@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(253018),
-    o = n(562650);
+    o = n(253018),
+    s = n(562650);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -67,17 +67,17 @@ let p = e => {
         element: t,
         attributes: n,
         children: i
-    } = e, l = (0, s.f7)(), u = (0, s.zL)(), f = a()(o.S0, o.xP, o.FF, {
-        [o.t$]: u && l,
-        [o.$2]: t.error
+    } = e, l = (0, o.f7)(), u = (0, o.zL)(), f = a()(s.S0, s.xP, s.FF, {
+        [s.t$]: u && l,
+        [s.$2]: t.error
     }), p = (0, r.jsx)("span", {
-        className: o._K,
+        className: s._K,
         children: i
     });
     return (0, r.jsxs)("span", d(c({}, n), {
         className: f,
         children: [(0, r.jsxs)("span", {
-            className: o.gA,
+            className: s.gA,
             contentEditable: !1,
             children: ["@time", "​"]
         }), p, (0, r.jsx)("span", {

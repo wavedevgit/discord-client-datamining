@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(64700),
     i = n(835245),
     a = n(345353),
-    s = n(69114),
-    o = n(723702),
+    o = n(69114),
+    s = n(723702),
     l = n(859703),
     c = n(710969),
     u = n(561844),
@@ -84,12 +84,12 @@ function y() {
             e({
                 questId: n,
                 event: p.HAw.QUEST_CONTENT_CLICKED,
-                properties: g(h({}, (0, d.fF)(r, f, _), (0, s.A)()), {
+                properties: g(h({}, (0, d.fF)(r, f, _), (0, o.A)()), {
                     cta_name: u,
                     quest_status: null != y ? (0, d.NI)(y) : null,
                     click_id: (0, i.A)(),
-                    apple_advertising_id: null != t && (0, o.isIOS)() ? t.advertisingId : null,
-                    android_advertising_id: null != t && (0, o.isAndroid)() ? t.advertisingId : null,
+                    apple_advertising_id: null != t && (0, s.isIOS)() ? t.advertisingId : null,
+                    android_advertising_id: null != t && (0, s.isAndroid)() ? t.advertisingId : null,
                     metadata_raw: null != b ? b : null,
                     metadata_sealed: null != O ? O : null,
                     traffic_metadata_raw: null != v ? v : null,

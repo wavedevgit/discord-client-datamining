@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(868903),
-    s = n(15626),
-    o = n(778328),
+    o = n(15626),
+    s = n(778328),
     l = n(46751);
 
 function c(e, t, n) {
@@ -60,7 +60,7 @@ function p(e) {
         items: _,
         onRemove: h,
         children: m
-    } = e, [g, E] = i.useState(() => new Set), y = i.useContext(s._);
+    } = e, [g, E] = i.useState(() => new Set), y = i.useContext(o._);
     return (0, r.jsxs)(a.CR, {
         "aria-label": n,
         id: null == y ? void 0 : y.controlId,
@@ -75,7 +75,7 @@ function p(e) {
         children: [(0, r.jsx)(a.LY, {
             ref: t,
             className: l.Tw,
-            children: _.map(e => (0, i.createElement)(o.v, f(u({}, e), {
+            children: _.map(e => (0, i.createElement)(s.v, f(u({}, e), {
                 key: e.id,
                 layout: p,
                 accessibilityHint: e.accessibilityHint

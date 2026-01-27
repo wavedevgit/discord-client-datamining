@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 574868, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(397927),
+    l = n(397927),
     s = n(817281),
-    o = n(195043),
-    l = n(964404),
+    a = n(195043),
+    o = n(964404),
     c = n(698723),
-    u = n(531525),
-    d = n(985018);
+    d = n(531525),
+    u = n(985018);
 
-function f() {
-    let e = (0, i.bG)([l.Ay], () => l.Ay.disableVoiceChannelChangeAlert);
-    return (0, r.jsx)(o.x, {
-        setting: u.H.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
-        children: (0, r.jsx)(a.dOG, {
-            label: d.intl.string(d.t.e7LIiY),
-            description: d.intl.string(d.t.YCCMkJ),
+function _() {
+    let e = (0, i.bG)([o.Ay], () => o.Ay.disableVoiceChannelChangeAlert);
+    return (0, r.jsx)(a.x, {
+        setting: d.H.VOICE_AND_VIDEO_SWITCH_CHANNEL_ALERT,
+        children: (0, r.jsx)(l.dOG, {
+            label: u.intl.string(u.t.e7LIiY),
+            description: u.intl.string(u.t.YCCMkJ),
             checked: !e,
             onChange: t => {
                 (0, c.A)("switch_channel_warning_enabled", t, !e), s.Ay.updatedUnsyncedSettings({

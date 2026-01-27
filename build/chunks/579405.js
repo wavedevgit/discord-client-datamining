@@ -4,12 +4,12 @@
 var r = n(439619)("%Array.prototype%"),
     i = n(333654),
     a = n(870064),
-    s = n(741623),
-    o = n(358073),
+    o = n(741623),
+    s = n(358073),
     l = n(568898),
     c = n(528574);
 e.exports = function(e) {
-    if (!o(e) || e < 0) throw new s("Assertion failed: `length` must be an integer Number >= 0");
+    if (!s(e) || e < 0) throw new o("Assertion failed: `length` must be an integer Number >= 0");
     if (e > l) throw new i("length is greater than (2**32 - 1)");
     var t = arguments.length > 1 ? arguments[1] : r,
         n = [];

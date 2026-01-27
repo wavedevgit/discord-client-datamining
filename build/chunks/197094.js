@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     B: () => a,
-    b: () => s
+    b: () => o
 });
 var r = n(562465),
     i = n(73153);
@@ -15,7 +15,7 @@ function a(e) {
     })
 }
 
-function s(e, t) {
+function o(e, t) {
     i.h.dispatch({
         type: "RTC_LATENCY_TEST_COMPLETE",
         latencyRankedRegions: e,

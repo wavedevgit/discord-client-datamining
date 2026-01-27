@@ -1,11 +1,11 @@
-/** Chunk was on 83006 **/
+/** Chunk was on 15646 **/
 /** chunk id: 137508, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    t: () => b
+    t: () => p
 }), r(896048);
 var n = r(627968),
-    a = r(64700),
-    l = r(311907),
+    l = r(64700),
+    a = r(311907),
     o = r(465532),
     s = r(355622),
     i = r(408018),
@@ -13,29 +13,29 @@ var n = r(627968),
     u = r(31717),
     d = r(457417),
     f = r(985018),
-    p = r(316582);
-let b = () => {
+    b = r(316582);
+let p = () => {
     let {
         message: e,
         channel: t,
         updateMessageText: r
-    } = (0, d.Vw)(), b = (0, l.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, h] = a.useState(() => (0, i.ur)(b)), {
+    } = (0, d.Vw)(), p = (0, a.bG)([u.A], () => u.A.getDraft(e.channel_id, u.C.ChannelMessage)), [g, _] = l.useState(() => (0, i.ur)(p)), {
         textValue: y,
-        richValue: O
+        richValue: h
     } = g;
-    (0, a.useEffect)(() => {
+    (0, l.useEffect)(() => {
         r(y)
     }, [r, y]);
-    let _ = a.useCallback((t, r, n) => {
-            h({
+    let m = l.useCallback((t, r, n) => {
+            _({
                 textValue: r,
                 richValue: n
             }), o.A.saveDraft(e.channel_id, r, u.C.ChannelMessage)
         }, [e]),
-        [m, j] = a.useState(!1),
-        w = a.useCallback(() => j(!0), []),
-        C = a.useCallback(() => j(!1), []);
-    (0, a.useEffect)(() => () => {
+        [O, w] = l.useState(!1),
+        j = l.useCallback(() => w(!0), []),
+        C = l.useCallback(() => w(!1), []);
+    (0, l.useEffect)(() => () => {
         o.A.clearDraft(e.channel_id, u.C.ChannelMessage)
     }, [e]);
     let v = async () => ({
@@ -43,16 +43,16 @@ let b = () => {
         shouldRefocus: !1
     });
     return (0, n.jsx)(c.Ay, {
-        innerClassName: p.O,
-        onChange: _,
+        innerClassName: b.O,
+        onChange: m,
         placeholder: f.intl.string(f.t.ZroO3G),
         channel: t,
         textValue: y,
-        richValue: O,
+        richValue: h,
         type: s.oU.SHARE_CUSTOM_CLIENT_THEME_INPUT,
         onBlur: C,
-        onFocus: w,
-        focused: m,
+        onFocus: j,
+        focused: O,
         onSubmit: v,
         parentModalKey: d.dJ,
         autoCompletePosition: "bottom",

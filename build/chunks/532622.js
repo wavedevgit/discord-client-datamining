@@ -8,12 +8,12 @@ n.d(t, {
 var r = n(311907),
     i = n(576705),
     a = n(488926),
-    s = n(818348);
-let o = [s.xB.SET_VOICE_CHANNEL_STATUS, s.xB.CONNECT, s.xB.VIEW_CHANNEL],
-    l = [s.xB.SET_VOICE_CHANNEL_STATUS];
+    o = n(818348);
+let s = [o.xB.SET_VOICE_CHANNEL_STATUS, o.xB.CONNECT, o.xB.VIEW_CHANNEL],
+    l = [o.xB.SET_VOICE_CHANNEL_STATUS];
 
 function c(e, t, n, r) {
-    return (n ? l : o).every(n => null == r ? t.can(n, e) : a.$3({
+    return (n ? l : s).every(n => null == r ? t.can(n, e) : a.$3({
         permission: n,
         user: r,
         context: e

@@ -2,8 +2,8 @@
 /** chunk id: 663583, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    KU: () => o,
-    rm: () => s
+    KU: () => s,
+    rm: () => o
 });
 var r = n(924251),
     i = n(628227);
@@ -13,11 +13,11 @@ function a() {
     return (0, r.h)(e).getCurrentScope()
 }
 
-function s() {
+function o() {
     let e = (0, i.E)();
     return (0, r.h)(e).getIsolationScope()
 }
 
-function o() {
+function s() {
     return a().getClient()
 }

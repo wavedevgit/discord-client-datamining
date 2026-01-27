@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(158954),
-    s = n(939538),
-    o = n(305866),
+    o = n(939538),
+    s = n(305866),
     l = n(265872),
     c = n(397927),
     u = n(821584);
@@ -87,8 +87,8 @@ function E(e) {
         let {
             closePopout: i
         } = e;
-        return (0, r.jsx)(o.l, {
-            children: (0, r.jsx)(s.CalendarPicker, {
+        return (0, r.jsx)(s.l, {
+            children: (0, r.jsx)(o.CalendarPicker, {
                 minDate: p,
                 maxDate: m,
                 value: t,

@@ -8,19 +8,19 @@ var r = n(1139),
     i = n(299146),
     a = n(47312);
 n(655972);
-var s = n(427778),
-    o = n(946651),
+var o = n(427778),
+    s = n(946651),
     l = n(64700),
     c = n(660856),
     u = n(80292),
     d = function(e, t) {
         return e && t && t.split(" ").forEach(function(t) {
-            return (0, s.A)(e, t)
+            return (0, o.A)(e, t)
         })
     },
     f = function(e, t) {
         return e && t && t.split(" ").forEach(function(t) {
-            return (0, o.A)(e, t)
+            return (0, s.A)(e, t)
         })
     },
     p = function(e) {
@@ -61,12 +61,12 @@ var s = n(427778),
                     r = "string" == typeof n,
                     i = r && n ? n + "-" : "",
                     a = r ? "" + i + e : n[e],
-                    s = r ? a + "-active" : n[e + "Active"],
-                    o = r ? a + "-done" : n[e + "Done"];
+                    o = r ? a + "-active" : n[e + "Active"],
+                    s = r ? a + "-done" : n[e + "Done"];
                 return {
                     baseClassName: a,
-                    activeClassName: s,
-                    doneClassName: o
+                    activeClassName: o,
+                    doneClassName: s
                 }
             }, t
         }(0, a.A)(t, e);

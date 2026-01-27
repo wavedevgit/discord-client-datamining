@@ -3,11 +3,11 @@
 n.d(t, {
     A: () => d
 });
-var r, l = n(311907),
-    i = n(73153),
-    o = n(381941);
+var r, i = n(311907),
+    l = n(73153),
+    a = n(381941);
 
-function a(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,43 +16,43 @@ function a(e, t, n) {
     }) : e[t] = n, e
 }
 let c = {};
-class s extends(r = l.Ay.Store) {
+class s extends(r = i.Ay.Store) {
     getOptions(e) {
         return c[e]
     }
 }
-a(s, "displayName", "SendMessageOptionsStore");
-let d = new s(i.h, {
+o(s, "displayName", "SendMessageOptionsStore");
+let d = new s(l.h, {
     MESSAGE_CREATE: function(e) {
         let {
             message: t,
             sendMessageOptions: n
         } = e;
         if (null != n) {
-            var r, l, i;
-            c[t.id] = (l = function(e) {
+            var r, i, l;
+            c[t.id] = (i = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
                     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                         return Object.getOwnPropertyDescriptor(n, e).enumerable
                     }))), r.forEach(function(t) {
-                        a(e, t, n[t])
+                        o(e, t, n[t])
                     })
                 }
                 return e
-            }({}, n), i = i = {
-                location: null != (r = n.location) ? r : o.Hx.OTHER
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
+            }({}, n), l = l = {
+                location: null != (r = n.location) ? r : a.Hx.OTHER
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var r = Object.getOwnPropertySymbols(e);
                     n.push.apply(n, r)
                 }
                 return n
-            })(Object(i)).forEach(function(e) {
-                Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(i, e))
-            }), l)
+            })(Object(l)).forEach(function(e) {
+                Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+            }), i)
         }
         null != t.nonce && t.nonce in c && delete c[t.nonce]
     }

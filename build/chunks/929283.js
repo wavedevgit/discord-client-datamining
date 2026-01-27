@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(575593),
-    o = n(397927),
+    o = n(575593),
+    s = n(397927),
     l = n(954921),
     c = n(278539),
     u = n(837921),
@@ -54,13 +54,13 @@ function m(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let g = u.Ay.getEnableHardwareAcceleration() ? o.JsQ : o.euF,
+let g = u.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF,
     E = e => {
         let {
             item: t,
             user: n,
             isHighlighted: i = !1,
-            avatarSize: u = o._3J.SIZE_152,
+            avatarSize: u = s._3J.SIZE_152,
             avatarPlaceholderSrc: p,
             className: h
         } = e, E = (0, l.Te)(u), {
@@ -69,7 +69,7 @@ let g = u.Ay.getEnableHardwareAcceleration() ? o.JsQ : o.euF,
             avatarPlaceholderSrc: O
         } = (0, c.A)({
             user: n,
-            avatarDecorationOverride: (null == t ? void 0 : t.type) === s.R.AVATAR_DECORATION ? t : void 0,
+            avatarDecorationOverride: (null == t ? void 0 : t.type) === o.R.AVATAR_DECORATION ? t : void 0,
             size: E,
             onlyAnimateOnHoverOrFocus: !i
         }), v = d.intl.formatToPlainString(d.t.Do2lxE, {

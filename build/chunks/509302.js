@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(922590),
     a = n(607272),
-    s = n(433880),
-    o = n(985018);
+    o = n(433880),
+    s = n(985018);
 
 function l(e) {
     let {
@@ -20,11 +20,11 @@ function l(e) {
             location: "Context Menu"
         })
     }, [t.id]);
-    return (0, s.A)({
+    return (0, o.A)({
         user: t,
         gameRelationships: n,
         menuItemId: "add-game-friend",
-        label: o.intl.string(o.t.X76oLM),
+        label: s.intl.string(s.t.X76oLM),
         onClick: l
     })
 }

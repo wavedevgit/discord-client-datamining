@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(311907),
     a = n(73153),
-    s = n(141468);
+    o = n(141468);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -28,11 +28,11 @@ function u(e) {
     if (null == n) return !1;
     let i = !1,
         a = [...null != (t = c.get(n)) ? t : []],
-        o = new Set(a);
+        s = new Set(a);
     return r.forEach(e => {
         e.messages.forEach(e => {
-            let [t] = e, n = (0, s.rh)(t);
-            !o.has(n.author.id) && o.size < l && (o.add(n.author.id), a.push(n.author.id), i = !0)
+            let [t] = e, n = (0, o.rh)(t);
+            !s.has(n.author.id) && s.size < l && (s.add(n.author.id), a.push(n.author.id), i = !0)
         })
     }), i && c.set(n, a), i
 }
@@ -47,7 +47,7 @@ class p extends(r = i.Ay.Store) {
         return null != (t = c.get(e)) ? t : f
     }
 }
-o(p, "displayName", "SearchRecentMessageStore");
+s(p, "displayName", "SearchRecentMessageStore");
 let _ = new p(a.h, {
     SEARCH_MESSAGES_SUCCESS: u,
     SEARCH_RECENT_MESSAGES_CLEAR: d,

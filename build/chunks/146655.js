@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n(311907),
-    s = n(87664),
-    o = n(517164),
+    o = n(87664),
+    s = n(517164),
     l = n(20805),
     c = n(83971),
     u = n(583846),
@@ -27,7 +27,7 @@ function b(e) {
         recentActivityTabEnabled: t
     } = (0, m.s)({
         location: "useUserProfileActivity"
-    }), n = (0, a.bG)([f.default], () => f.default.getId() === e), b = (0, s.A)(e), O = (0, a.bG)([_.A], () => _.A.getActivities(e)), v = (0, a.bG)([o.A], () => n || t ? o.A.getUserOutbox(e) : void 0), A = (0, a.bG)([h.A], () => h.A.getVoiceStateForUser(e)), I = (0, a.bG)([p.A], () => p.A.getChannel(null == A ? void 0 : A.channelId)), S = (0, d.v)("UserProfileActivity", I), T = (0, r.useMemo)(() => O.filter(e => {
+    }), n = (0, a.bG)([f.default], () => f.default.getId() === e), b = (0, o.A)(e), O = (0, a.bG)([_.A], () => _.A.getActivities(e)), v = (0, a.bG)([s.A], () => n || t ? s.A.getUserOutbox(e) : void 0), A = (0, a.bG)([h.A], () => h.A.getVoiceStateForUser(e)), I = (0, a.bG)([p.A], () => p.A.getChannel(null == A ? void 0 : A.channelId)), S = (0, d.v)("UserProfileActivity", I), T = (0, r.useMemo)(() => O.filter(e => {
         let {
             type: t
         } = e;

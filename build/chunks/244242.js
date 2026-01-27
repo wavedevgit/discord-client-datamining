@@ -1,17 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 244242, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    L: () => a
+    L: () => l
 });
 var r = n(627968),
     i = n(397927);
 
-function a(e) {
+function l(e) {
     let {
         children: t
     } = e;
     return (0, r.jsx)(i.BJc, {
+        gap: 0,
         padding: {
             left: 12,
             right: 12,

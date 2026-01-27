@@ -14,7 +14,7 @@ var n = i(934551),
 let A = (0, l.t_)(s.X.ADVANCED_PANEL, {
         useTitle: () => T.intl.string(T.t["8/udY0"]),
         usePredicate: () => !(0, r.dk)("LegacyAdvancedPanel"),
-        StronglyDiscouragedCustomComponent: u.Ay,
+        StronglyDiscouragedCustomComponent: u.A,
         buildLayout: () => []
     }),
     d = (0, l.t_)(s.X.ADVANCED_PANEL, {

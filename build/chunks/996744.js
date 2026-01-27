@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(311907),
     i = n(600975),
     a = n(734057),
-    s = n(309010),
-    o = n(723702);
+    o = n(309010),
+    s = n(723702);
 let l = new Set(["943265993613008967"]),
     c = (0, i.C)({
         kind: "user",
@@ -49,7 +49,7 @@ let l = new Set(["943265993613008967"]),
             }
         }]
     }),
-    u = () => (0, o.isWindows)() || (0, o.isMac)();
+    u = () => (0, s.isWindows)() || (0, s.isMac)();
 
 function d(e) {
     let {
@@ -73,11 +73,11 @@ function f(e) {
         autoTrackExposure: n
     } = e, {
         enabled: i,
-        isTester: o
+        isTester: s
     } = c.useExperiment({
         location: t
     }, {
         autoTrackExposure: n
-    }), d = (0, r.bG)([s.A, a.A], () => a.A.getChannel(s.A.getVoiceChannelId())), f = !o || null != d && l.has(d.guild_id);
+    }), d = (0, r.bG)([o.A, a.A], () => a.A.getChannel(o.A.getVoiceChannelId())), f = !s || null != d && l.has(d.guild_id);
     return !__OVERLAY__ && i && u() && f
 }

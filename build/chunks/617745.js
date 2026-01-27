@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(384904),
-    o = n(73825),
+    o = n(384904),
+    s = n(73825),
     l = n(235986),
     c = n(683433),
     u = n(36167),
@@ -52,7 +52,7 @@ let y = 1e3,
         return i.useEffect(() => {
             let e = setTimeout(() => {
                 var e;
-                w || (R(!0), (0, s.Ze)(C.loadId), (0, u.my)({
+                w || (R(!0), (0, o.Ze)(C.loadId), (0, u.my)({
                     planId: null != (e = null == b ? void 0 : b.id) ? e : m.gD.PREMIUM_MONTH_TIER_2,
                     isGift: N,
                     loadId: C.loadId,
@@ -61,7 +61,7 @@ let y = 1e3,
             }, y);
             return () => clearTimeout(e)
         }, [b, N, C, c, R, w, t]), i.useEffect(() => {
-            null !== S && (m.oz.includes(S) && ((0, o.ur)(S), (0, s.hP)()), v(S)), null !== T && O(T), I === C.loadId && A === _.k.DONE && l()
+            null !== S && (m.oz.includes(S) && ((0, s.ur)(S), (0, o.hP)()), v(S)), null !== T && O(T), I === C.loadId && A === _.k.DONE && l()
         }, [v, O, A, I, S, T, C, l]), (0, r.jsxs)("div", {
             className: E.r,
             children: [(0, r.jsx)(a.Heading, {

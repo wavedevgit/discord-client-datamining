@@ -3,7 +3,7 @@
 "use strict";
 n.r(t), n.d(t, {
     getKrispModel: () => i,
-    setKrispModelOverride: () => s,
+    setKrispModelOverride: () => o,
     setKrispSuppressionLevel: () => a
 });
 var r = n(77729);
@@ -23,7 +23,7 @@ function a(e) {
     } catch (e) {}
 }
 
-function s(e) {
+function o(e) {
     try {
         r.A.nativeModules.requireModule("discord_krisp").setNcModel(e)
     } catch (e) {}

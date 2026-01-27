@@ -2,12 +2,12 @@
 /** chunk id: 824552, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(562465),
     i = n(73153),
     a = n(652215);
-let s = {
+let o = {
     fetch() {
         i.h.dispatch({
             type: "USER_AUTHORIZED_APPS_REQUEST"

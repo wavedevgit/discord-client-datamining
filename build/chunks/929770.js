@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 929770, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 7803 **/
+/** chunk id: 929770, original params: t,e,s (module,exports,require) **/
+s.d(e, {
     b: () => a
 });
-var r = n(311907),
-    i = n(207913);
-let a = () => (0, r.bG)([i.A], () => i.A.getFetchError())
+var i = s(311907),
+    n = s(207913);
+let a = () => (0, i.bG)([n.A], () => n.A.getFetchError())

@@ -3,15 +3,15 @@
 "use strict";
 n.d(t, {
     AZ: () => C,
-    Ay: () => x,
+    Ay: () => L,
     Qn: () => w,
     cR: () => R
 }), n(321073), n(896048);
 var r = n(284009),
     i = n.n(r),
     a = n(562465),
-    s = n(155718),
-    o = n(58149),
+    o = n(155718),
+    s = n(58149),
     l = n(626584),
     c = n(865116),
     u = n(322683),
@@ -128,7 +128,7 @@ class D extends m.A {
     }
     startQueueMetricTimers(e) {
         let t = P.map(e => setTimeout(() => {
-            (0, o.zV)(y.HAw.SEND_MESSAGE_QUEUED, {
+            (0, s.zV)(y.HAw.SEND_MESSAGE_QUEUED, {
                 queued_duration_ms: e
             })
         }, e));
@@ -155,11 +155,11 @@ class D extends m.A {
         let {
             channelId: r,
             analyticsLocation: i
-        } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
-            location: o
+        } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.A)()) ? n : i, l = null != s ? {
+            location: s
         } : void 0, f = (0, u.O)(), _ = v({
             mobile_network_type: p.A.getType()
-        }, s, null != f && {
+        }, o, null != f && {
             signal_strength: f
         });
         if (c.Ay.get("send_fail_100")) {
@@ -193,11 +193,11 @@ class D extends m.A {
         let {
             channelId: r,
             analyticsLocation: i
-        } = e, s = S(e, ["channelId", "analyticsLocation"]), o = null != (n = (0, d.A)()) ? n : i, l = null != o ? {
-            location: o
+        } = e, o = S(e, ["channelId", "analyticsLocation"]), s = null != (n = (0, d.A)()) ? n : i, l = null != s ? {
+            location: s
         } : void 0, f = (0, u.O)(), _ = v({
             mobile_network_type: p.A.getType()
-        }, s, null != f && {
+        }, o, null != f && {
             signal_strength: f
         });
         if (c.Ay.get("send_fail_100")) {
@@ -230,7 +230,7 @@ class D extends m.A {
         let {
             applicationId: n,
             guildId: r,
-            channelId: o,
+            channelId: s,
             data: l,
             nonce: c,
             attachments: u,
@@ -239,10 +239,10 @@ class D extends m.A {
             sectionName: _,
             source: m
         } = e, b = {
-            type: s.G4.APPLICATION_COMMAND,
+            type: o.G4.APPLICATION_COMMAND,
             application_id: n,
             guild_id: r,
-            channel_id: o,
+            channel_id: s,
             session_id: f.default.getSessionId(),
             data: l,
             nonce: c,
@@ -271,21 +271,21 @@ class D extends m.A {
         super(new l.A("MessageQueue")), O(this, "maxSize", void 0), O(this, "requests", void 0), O(this, "analyticsTimeouts", void 0), O(this, "handleEdit", void 0), this.maxSize = e, this.requests = new Map, this.analyticsTimeouts = new Map, this.handleEdit = (e, t) => {
             let [n, ...r] = [e, t], {
                 channelId: i,
-                messageId: s,
-                isCrossposted: o
-            } = n, l = S(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(s, c), f = {
-                url: y.Rsh.MESSAGE(i, s),
+                messageId: o,
+                isCrossposted: s
+            } = n, l = S(n, ["channelId", "messageId", "isCrossposted"]), [c] = r, u = new AbortController, d = this.createResponseHandler(o, c), f = {
+                url: y.Rsh.MESSAGE(i, o),
                 body: l,
                 retries: 1,
                 oldFormErrors: !0,
                 signal: u.signal,
                 rejectWithError: !0,
                 onRequestCreated: () => {
-                    this.requests.set(s, u)
+                    this.requests.set(o, u)
                 }
             };
-            o && (f.failImmediatelyWhenRateLimited = !0), a.Bo.patch(f, d)
+            s && (f.failImmediatelyWhenRateLimited = !0), a.Bo.patch(f, d)
         }
     }
 }
-let x = new D
+let L = new D

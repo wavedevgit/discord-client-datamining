@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(311907),
     c = n(349288),
     u = n(473193),
@@ -102,16 +102,16 @@ function O(e) {
         colorStrings: c,
         roleStyle: "username",
         animateGradient: E || v || (null == O ? void 0 : O.animate)
-    }), x = (0, f.CR)(n), L = {
-        className: s()(_.UU, g, b, {
+    }), L = (0, f.CR)(n), x = {
+        className: o()(_.UU, g, b, {
             [_.Xh]: T,
             [P]: w
         }),
-        children: x
-    }, j = {
-        className: s()(_.lD, D, b),
+        children: L
+    }, M = {
+        className: o()(_.lD, D, b),
         children: n
-    }, M = C ? (0, r.jsx)(p.W, {
+    }, j = C ? (0, r.jsx)(p.W, {
         color: a,
         colors: N ? c : null,
         name: l,
@@ -119,27 +119,27 @@ function O(e) {
         hoverOverride: E || v || (null == O ? void 0 : O.animate)
     }) : null;
     return (0, r.jsxs)("span", {
-        className: s()(h, _.kL),
+        className: o()(h, _.kL),
         onMouseEnter: I,
         onMouseLeave: S,
-        children: ["left" === d && M, (0, r.jsxs)("span", {
+        children: ["left" === d && j, (0, r.jsxs)("span", {
             className: _.VW,
             style: m({
                 color: T && !N && null != a ? a : void 0
             }, w ? R : {}),
-            children: [null != y ? (0, r.jsx)(o.EYj, m({
+            children: [null != y ? (0, r.jsx)(s.EYj, m({
                 tag: "span",
                 color: "currentColor",
                 variant: y
-            }, L)) : (0, r.jsx)("span", m({}, L)), w && (null != y ? (0, r.jsx)(o.EYj, m({
+            }, x)) : (0, r.jsx)("span", m({}, x)), w && (null != y ? (0, r.jsx)(s.EYj, m({
                 tag: "span",
                 color: "currentColor",
                 "aria-hidden": !0,
                 variant: y
-            }, j)) : (0, r.jsx)("span", m({
+            }, M)) : (0, r.jsx)("span", m({
                 "aria-hidden": !0
-            }, j)))]
-        }), "right" === d && M]
+            }, M)))]
+        }), "right" === d && j]
     })
 }
 
@@ -149,8 +149,8 @@ function v(e) {
         colorString: n,
         roleName: i,
         dotAlignment: a,
-        className: s,
-        colorStrings: o,
+        className: o,
+        colorStrings: s,
         animateRoleGradient: u,
         ref: f
     } = e, p = y(e, ["name", "colorString", "roleName", "dotAlignment", "className", "colorStrings", "animateRoleGradient", "ref"]), _ = (0, l.bG)([d.A], () => d.A.roleStyle), h = "username" === _, g = (0, r.jsx)(O, {
@@ -159,8 +159,8 @@ function v(e) {
         colorString: n,
         roleName: i,
         dotAlignment: a,
-        className: s,
-        colorStrings: o,
+        className: o,
+        colorStrings: s,
         animateRoleGradient: u
     }), b = h && null != n ? {
         color: n

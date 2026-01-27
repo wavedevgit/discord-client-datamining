@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(860923),
     c = n(816790);
 let u = 5500,
@@ -24,12 +24,12 @@ let u = 5500,
             skipNewUserEducation: h = !1,
             shadowPosition: m
         } = e, g = (0, l.A)(), E = i.useMemo(() => null == g ? void 0 : g.seats[p], [g, p]), y = i.useMemo(() => null == E ? void 0 : E.seat, [E]), b = i.useMemo(() => null == E ? void 0 : E.shadow, [E]);
-        return (0, r.jsx)(o.DUT, {
+        return (0, r.jsx)(s.DUT, {
             "aria-label": "claim seat",
             onClick: null != _ ? e => {
                 e.preventDefault(), e.stopPropagation(), _(t)
             } : void 0,
-            className: s()(c.am, {
+            className: o()(c.am, {
                 [c.Sf]: null != n
             }),
             style: {
@@ -38,7 +38,7 @@ let u = 5500,
             children: (0, r.jsxs)("div", {
                 className: c.LU,
                 children: [null != b && null != m && (0, r.jsx)("img", {
-                    className: s()(c.Sl, c.r7),
+                    className: o()(c.Sl, c.r7),
                     style: {
                         transform: "translate(".concat(m.x, "px, ").concat(m.y, "px)")
                     },
@@ -46,7 +46,7 @@ let u = 5500,
                     alt: ""
                 }), null != y && (0, r.jsx)("img", {
                     onDragStart: e => e.preventDefault(),
-                    className: s()(c.Sl, {
+                    className: o()(c.Sl, {
                         [c.Sf]: null != n,
                         [c.cb]: h
                     }),

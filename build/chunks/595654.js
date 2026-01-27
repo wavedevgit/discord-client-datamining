@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 595654, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Zz: "paymentBanner_e335a7",
     Sh: "paymentBannerIcon_e335a7",

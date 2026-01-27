@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(640631),
-    s = n(626584),
-    o = n(734057),
+    o = n(626584),
+    s = n(734057),
     l = n(320501),
     c = n(595766);
 
@@ -21,10 +21,10 @@ function u(e, t, n) {
     }) : e[t] = n, e
 }
 let d = -1 / 0,
-    f = new s.A("MessagePreviewStore");
+    f = new o.A("MessagePreviewStore");
 class p extends r.Ay.Store {
     initialize() {
-        this.waitFor(o.A, l.A)
+        this.waitFor(s.A, l.A)
     }
     isLatest(e, t) {
         var n;
@@ -86,12 +86,12 @@ class p extends r.Ay.Store {
     }
     handleLoadMessagesSuccess(e) {
         var t, n;
-        let r = o.A.getBasicChannel(e.channelId);
+        let r = s.A.getBasicChannel(e.channelId);
         if (null == r) return !1;
         (0, a.D)(e.messages), e.isAfter || e.isBefore || e.hasMoreAfter ? this.data(r.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, this.generation) : this.data(r.guild_id).put(e.channelId, null != (t = e.messages[0]) ? t : null, this.generation)
     }
     handleLocalMessagesLoaded(e) {
-        let t = o.A.getBasicChannel(e.channelId);
+        let t = s.A.getBasicChannel(e.channelId);
         if (null != t) {
             var n;
             (0, a.D)(e.messages), this.data(t.guild_id).putNew(e.channelId, null != (n = e.messages[0]) ? n : null, d)

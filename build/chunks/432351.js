@@ -8,7 +8,7 @@ var r = n(972347),
     i = n(205693),
     a = n(731854);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,7 +17,7 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     return null
 }
 
@@ -178,6 +178,6 @@ class c extends r.A {
     }
     setNoiseCancellationEnableStats(e) {}
     constructor(...e) {
-        super(...e), s(this, "Video", o), s(this, "Camera", l)
+        super(...e), o(this, "Video", s), o(this, "Camera", l)
     }
 }

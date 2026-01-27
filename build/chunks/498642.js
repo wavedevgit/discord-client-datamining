@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -41,7 +41,7 @@ function u(e) {
 }
 
 function d(e) {
-    l = o({}, e.guildMemberCounts)
+    l = s({}, e.guildMemberCounts)
 }
 
 function f(e) {
@@ -98,7 +98,7 @@ class g extends(r = i.Ay.Store) {
         return null != e ? c[e] : null
     }
 }
-s(g, "displayName", "GuildMemberCountStore");
+o(g, "displayName", "GuildMemberCountStore");
 let E = new g(a.h, {
     CONNECTION_OPEN: u,
     OVERLAY_INITIALIZE: d,

@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 943775, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => i
+/** Chunk was on 13088 **/
+/** chunk id: 943775, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => r
 });
-var r = n(998218);
+var l = n(998218);
 
-function i(e, t) {
-    let n = e.getIconSource(t);
+function r(t, e) {
+    let n = t.getIconSource(e);
     if (null != n && "number" != typeof n) {
-        let e;
-        if (Array.isArray(n) ? n.length > 0 && (e = n[0].uri) : e = n.uri, null != e) {
-            var i;
-            return null != (i = r.A.toURLSafe(e)) ? i : void 0
+        let t;
+        if (Array.isArray(n) ? n.length > 0 && (t = n[0].uri) : t = n.uri, null != t) {
+            var r;
+            return null != (r = l.A.toURLSafe(t)) ? r : void 0
         }
     }
 }

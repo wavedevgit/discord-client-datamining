@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(492462),
     i = n(179771),
     a = n(136722),
-    s = n(734057),
-    o = n(967198),
+    o = n(734057),
+    s = n(967198),
     l = n(488926),
     c = n(647053),
     u = n(652215);
@@ -33,7 +33,7 @@ function p(e) {
         p = a.iu(null != d.permissions && "" !== d.permissions ? d.permissions : "0")
     } catch (e) {}
     let _ = d.channel_id,
-        h = f(null != (t = null != (n = d.guild_id) ? n : null == (u = s.A.getChannel(_)) ? void 0 : u.guild_id) ? t : o.A.getGuildId());
+        h = f(null != (t = null != (n = d.guild_id) ? n : null == (u = o.A.getChannel(_)) ? void 0 : u.guild_id) ? t : s.A.getGuildId());
     return {
         clientId: null != (i = d.client_id) ? i : "",
         scopes: (null != (c = d.scope) ? c : "").replace(/\+/g, " ").split(" ").filter(e => e.length > 0),

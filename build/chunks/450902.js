@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(825913),
     i = n(521767),
     a = n(491850),
-    s = n(853590),
-    o = n(974111),
+    o = n(853590),
+    s = n(974111),
     l = n(839256),
     c = n(498430),
     u = n(967158),
@@ -39,14 +39,14 @@ let g = (0, m.createContext)(null),
             slot: e.slot
         }, t, g), {
             locale: c
-        } = (0, s.Y)(), u = (0, p.F)({
+        } = (0, o.Y)(), u = (0, p.F)({
             ...n,
             locale: c,
             createCalendar: f.d
         }), d = (0, m.useRef)(null), {
             fieldProps: _,
             inputProps: h
-        } = (0, o.cJ)({
+        } = (0, s.cJ)({
             ...n,
             inputRef: d
         }, u, l);
@@ -70,7 +70,7 @@ let g = (0, m.createContext)(null),
         let {
             className: n,
             children: r
-        } = e, s = (0, m.useContext)(E), o = (0, m.useContext)(y), l = null != s ? s : o;
+        } = e, o = (0, m.useContext)(E), s = (0, m.useContext)(y), l = null != o ? o : s;
         return m.createElement(m.Fragment, null, m.createElement(i.Y, {
             ...e,
             ref: t,
@@ -89,11 +89,11 @@ let g = (0, m.createContext)(null),
     }, n) {
         let i = (0, m.useContext)(E),
             a = (0, m.useContext)(y),
-            s = null != i ? i : a,
-            o = (0, _.U)(n),
+            o = null != i ? i : a,
+            s = (0, _.U)(n),
             {
                 segmentProps: f
-            } = (0, l.V)(e, s, o),
+            } = (0, l.V)(e, o, s),
             {
                 focusProps: p,
                 isFocused: g,
@@ -104,15 +104,15 @@ let g = (0, m.createContext)(null),
                 isHovered: v
             } = (0, u.M)({
                 ...t,
-                isDisabled: s.isDisabled || "literal" === e.type
+                isDisabled: o.isDisabled || "literal" === e.type
             }),
             A = (0, r.Sl)({
                 ...t,
                 values: {
                     ...e,
-                    isReadOnly: s.isReadOnly,
-                    isInvalid: s.isInvalid,
-                    isDisabled: s.isDisabled,
+                    isReadOnly: o.isReadOnly,
+                    isInvalid: o.isInvalid,
+                    isDisabled: o.isDisabled,
                     isHovered: v,
                     isFocused: g,
                     isFocusVisible: b
@@ -126,11 +126,11 @@ let g = (0, m.createContext)(null),
             }), f, p, O),
             ...A,
             style: f.style,
-            ref: o,
+            ref: s,
             "data-placeholder": e.isPlaceholder || void 0,
-            "data-invalid": s.isInvalid || void 0,
-            "data-readonly": s.isReadOnly || void 0,
-            "data-disabled": s.isDisabled || void 0,
+            "data-invalid": o.isInvalid || void 0,
+            "data-readonly": o.isReadOnly || void 0,
+            "data-disabled": o.isDisabled || void 0,
             "data-type": e.type,
             "data-hovered": v || void 0,
             "data-focused": g || void 0,

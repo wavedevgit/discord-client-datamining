@@ -2,7 +2,7 @@
 /** chunk id: 960076, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 }), n(747238);
 var r = n(360469),
     i = n(652215);
@@ -11,6 +11,6 @@ function a(e) {
     return e.type === i.$pd.STREAMING && null != e.url && r.yz.test(e.url)
 }
 
-function s(e) {
+function o(e) {
     return null != e && (Array.isArray(e) ? e.some(a) : a(e))
 }

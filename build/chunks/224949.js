@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends(r = i.Ay.Store) {
+class s extends(r = i.Ay.Store) {
     get isCreatingOrder() {
         return this._isCreatingOrder
     }
@@ -79,8 +79,8 @@ class o extends(r = i.Ay.Store) {
             ORDER_UPDATE_FAIL: e => this.handleOrderUpdateFail(e),
             ORDER_DISCARD_SUCCESS: e => this.handleOrderDiscardSuccess(e),
             PAYMENT_MODAL_OPEN: e => this.handlePaymentModalOpen(e)
-        }), s(this, "_isCreatingOrder", !1), s(this, "_isUpdatingOrder", !1), s(this, "_order", null)
+        }), o(this, "_isCreatingOrder", !1), o(this, "_isUpdatingOrder", !1), o(this, "_order", null)
     }
 }
-s(o, "displayName", "OrderStore");
-let l = new o
+o(s, "displayName", "OrderStore");
+let l = new s

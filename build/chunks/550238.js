@@ -8,13 +8,13 @@ n.d(t, {
 var r = n(607399),
     i = n(887555),
     a = n(652215);
-let s = [a.hes.CARD, a.hes.PAYPAL],
-    o = new Set(["DE", "BG", "CZ", "DK", "HU", "RO", "SE", "CH", "SI", "IE", "LV", "MT", "FR", "SK", "FI", "GR", "PT", "LU", "LT", "CY", "NO", "NL", "ES", "BE", "AT", "IT"]),
+let o = [a.hes.CARD, a.hes.PAYPAL],
+    s = new Set(["DE", "BG", "CZ", "DK", "HU", "RO", "SE", "CH", "SI", "IE", "LV", "MT", "FR", "SK", "FI", "GR", "PT", "LU", "LT", "CY", "NO", "NL", "ES", "BE", "AT", "IT"]),
     l = new Map([
         [a.hes.SOFORT, new Set([])],
         [a.hes.PRZELEWY24, new Set(["ALL", "PL"])],
         [a.hes.GIROPAY, new Set(["ALL", "DE"])],
-        [a.hes.PAYSAFE_CARD, new Set(["ALL", ...o])],
+        [a.hes.PAYSAFE_CARD, new Set(["ALL", ...s])],
         [a.hes.GCASH, new Set(["ALL", "PH"])],
         [a.hes.GRABPAY_MY, new Set(["ALL", "MY"])],
         [a.hes.MOMO_WALLET, new Set(["ALL", "VN"])],
@@ -36,7 +36,7 @@ function d(e) {
         ipCountryCode: t,
         location: n
     } = e, {
-        enabledPaymentTypes: o,
+        enabledPaymentTypes: s,
         forceCountryCode: u,
         validCountryCodes: d
     } = i.Ay.getCurrentConfig({
@@ -48,11 +48,11 @@ function d(e) {
     let p = new Set,
         _ = [];
     return l.forEach((e, t) => {
-        o.includes(t) && (e.has(f) ? p.add(t) : _.push(t))
+        s.includes(t) && (e.has(f) ? p.add(t) : _.push(t))
     }), c.forEach((e, t) => {
         e.has(f) && p.add(t)
     }), (r.KY || r.Ct) && (p.delete(a.hes.VENMO), _ = _.filter(e => e !== a.hes.VENMO)), {
-        countryPaymentMethods: [...s, ...Array.from(p)],
+        countryPaymentMethods: [...o, ...Array.from(p)],
         remainingPaymentMethods: _
     }
 }

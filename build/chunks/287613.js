@@ -1,6 +1,8 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 287613, original params: e,t,n (module,exports,require) **/
-"use strict";
+n.d(t, {
+    A: () => r
+});
 
 function r(e) {
     let {
@@ -9,6 +11,3 @@ function r(e) {
     } = e;
     return t > -1 && n > -1
 }
-n.d(t, {
-    A: () => r
-})

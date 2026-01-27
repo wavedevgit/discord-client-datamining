@@ -1,4 +1,4 @@
-/** Chunk was on 36054 **/
+/** Chunk was on 65298 **/
 /** chunk id: 986294, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => P
@@ -40,7 +40,7 @@ let I = [{
         } = e;
         return (0, a.jsx)(p.Text, {
             variant: "text-md/semibold",
-            children: c.I[t]
+            children: c.ContentInventoryEntryType[t]
         })
     }
 }, {

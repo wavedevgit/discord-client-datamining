@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(925847),
     i = n(954571),
     a = n(927578),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -45,7 +45,7 @@ function c(e) {
 
 function u(e, t, n) {
     let a = null != n ? n : (0, r.A)();
-    i.default.track(s.HAw.PREMIUM_RESUBSCRIBE_COMPLETED, l({
+    i.default.track(o.HAw.PREMIUM_RESUBSCRIBE_COMPLETED, l({
         location_stack: t,
         load_id: a
     }, c(e)))

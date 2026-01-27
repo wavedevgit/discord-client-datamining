@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(192308),
     a = n(732955),
-    s = n(523527),
-    o = n(170887),
+    o = n(523527),
+    s = n(170887),
     l = n(997351),
     c = n(218252),
     u = n(976860),
@@ -48,10 +48,10 @@ function m(e) {
         transitionState: _,
         fileSize: h,
         onClose: m
-    } = e, g = (0, o.A)({
+    } = e, g = (0, s.A)({
         location: "UploadError"
     }), E = () => {
-        (0, s.A)(), m(), d.default.track(f.HAw.PREMIUM_PROMOTION_OPENED, {
+        (0, o.A)(), m(), d.default.track(f.HAw.PREMIUM_PROMOTION_OPENED, {
             location_section: f.JJy.FILE_UPLOAD_UPSELL_MODAL,
             location_object: f.ZSU.NAVIGATION_LINK
         }), (0, u.pX)(f.BVt.APPLICATION_STORE)

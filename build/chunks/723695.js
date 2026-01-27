@@ -2,13 +2,13 @@
 /** chunk id: 723695, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(896048), n(228524);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(10716),
     u = n(631628),
@@ -55,7 +55,7 @@ function R(e) {
 let P = 2,
     D = 2e3;
 
-function x(e) {
+function L(e) {
     let {
         context: t,
         application: n,
@@ -66,7 +66,7 @@ function x(e) {
     } = e, p = i.useMemo(() => {
         var e;
         return null != (e = (0, b.u8)(n)) ? e : ""
-    }, [n]), _ = (0, o.bG)([c.A], () => c.A.inDevModeForApplication(n.id)), {
+    }, [n]), _ = (0, s.bG)([c.A], () => c.A.inDevModeForApplication(n.id)), {
         isSlideReady: h
     } = (0, O.uM)(), [g, E] = i.useState(!1);
     i.useEffect(() => {
@@ -79,7 +79,7 @@ function x(e) {
             children: [y ? (0, r.jsxs)("div", {
                 className: C.j,
                 children: [g ? (0, r.jsx)(m.A, {
-                    className: s()(C.l3, C.Ki),
+                    className: o()(C.l3, C.Ki),
                     loop: !0,
                     muted: !0,
                     autoPlay: !0,
@@ -92,9 +92,9 @@ function x(e) {
                 })]
             }) : null, (0, r.jsxs)("div", {
                 className: y ? C.iw : C.bH,
-                children: [(0, r.jsx)(j, {
+                children: [(0, r.jsx)(M, {
                     application: n
-                }), (0, r.jsx)(M, {
+                }), (0, r.jsx)(j, {
                     application: n
                 }), p.length > 0 ? (0, r.jsx)(G, {
                     description: p
@@ -112,13 +112,13 @@ function x(e) {
                     hasCommands: f
                 })]
             })]
-        }), (0, r.jsx)(L, {
+        }), (0, r.jsx)(x, {
             application: n
         })]
     })
 }
 
-function L(e) {
+function x(e) {
     let {
         application: t
     } = e, n = (0, b.K4)(t), i = (0, b.ME)(t);
@@ -148,7 +148,7 @@ function L(e) {
     }) : null
 }
 
-function j(e) {
+function M(e) {
     var t;
     let {
         application: n
@@ -170,7 +170,7 @@ function j(e) {
     })
 }
 
-function M(e) {
+function j(e) {
     let {
         application: t
     } = e, n = i.useMemo(() => {
@@ -217,8 +217,8 @@ function U(e) {
     let {
         context: n,
         application: a,
-        sectionName: s,
-        hasCommands: o,
+        sectionName: o,
+        hasCommands: s,
         isDeveloperOfThisApp: c
     } = e, u = (0, _.E0)(n, a.id), d = (0, h.h)(a.id), m = null == d || null == (t = d.bot) ? void 0 : t.id, g = (0, p.A)({
         context: n,
@@ -243,14 +243,14 @@ function U(e) {
         children: [(0, r.jsx)(A.A, {
             context: n,
             application: a,
-            sectionName: s,
+            sectionName: o,
             primaryEntryPointCommand: u
         }), g && null != m ? (0, r.jsx)(I.A, {
             botUserId: m,
             applicationId: a.id,
             analyticsLocations: E
         }) : null]
-    }) : c && !o && (0, b.Ag)(a) ? (0, r.jsx)(l.po8, {
+    }) : c && !s && (0, b.Ag)(a) ? (0, r.jsx)(l.po8, {
         className: C.ai,
         messageType: l.YCn.WARNING,
         children: T.intl.format(T.t["s/3hjE"], {})
@@ -262,12 +262,12 @@ function G(e) {
         description: t
     } = e, [n, a] = i.useState(!0);
     i.useLayoutEffect(() => a(!1), []);
-    let s = i.useMemo(() => (0, g.parseBioReact)(t), [t]),
+    let o = i.useMemo(() => (0, g.parseBioReact)(t), [t]),
         {
-            ref: o,
+            ref: s,
             lineHeight: c,
             lineCount: u
-        } = V(),
+        } = F(),
         d = i.useMemo(() => {
             if (null == c || null == u) return {
                 key: 0
@@ -294,14 +294,14 @@ function G(e) {
             className: C.ZT,
             onTransitionEnd: _,
             children: (0, r.jsx)(l.Text, {
-                ref: o,
+                ref: s,
                 className: N.PT,
                 variant: "text-sm/medium",
                 lineClamp: h ? void 0 : P,
                 style: {
                     maxHeight: h ? void 0 : d.minHeightOverride
                 },
-                children: s
+                children: o
             })
         }), null != u && u > P ? (0, r.jsxs)(l.DUT, {
             className: C.lP,
@@ -321,7 +321,7 @@ function G(e) {
     })
 }
 
-function V() {
+function F() {
     let e = i.useRef(null),
         [t, n] = i.useState(null),
         [r, a] = i.useState(null);

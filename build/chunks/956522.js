@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(726293),
-    o = n(60809),
+    o = n(726293),
+    s = n(60809),
     l = n(985018);
 
 function c(e, t, n) {
@@ -57,10 +57,10 @@ function p(e) {
         } = e,
         d = i.useRef(null);
     switch (n) {
-        case o.Ug.POPULAR:
+        case s.Ug.POPULAR:
             t = l.intl.string(l.t.SzxiqK);
             break;
-        case o.Ug.ALPHABETICAL:
+        case s.Ug.ALPHABETICAL:
             t = l.intl.string(l.t.m8xsti)
     }
     return (0, r.jsx)(a.YNO, {
@@ -69,7 +69,7 @@ function p(e) {
             let {
                 closePopout: t
             } = e;
-            return (0, r.jsx)(s.A, {
+            return (0, r.jsx)(o.A, {
                 sortOrder: n,
                 onSortOptionClick: c,
                 closePopout: t

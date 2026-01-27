@@ -1,0 +1,145 @@
+.container__1ce5d {
+    position: relative
+}
+
+.circularImage__1ce5d {
+    border-radius: 50%
+}
+
+.dots__1ce5d {
+    margin-top: .2px
+}
+
+.icon__2894c {
+    display: block;
+    flex: 0 0 auto;
+    height: 20px;
+    width: 20px
+}
+
+.iconWithGuildIcon__2894c {
+    background: var(--background-mod-strong);
+    border-radius: var(--radius-round);
+    color: var(--text-subtle);
+    height: 12px;
+    -webkit-margin-start: 12px;
+    margin-inline-start: 12px;
+    margin-top: -15px;
+    overflow: visible;
+    padding: 4px;
+    position: relative;
+    width: 12px
+}
+
+.channelGuildIcon__2894c {
+    border-radius: var(--radius-sm)
+}
+
+.acronym__2894c {
+    align-items: center;
+    background-color: var(--background-mod-strong);
+    color: var(--text-default);
+    display: flex;
+    font-weight: var(--font-weight-medium);
+    justify-content: center;
+    line-height: 1.2em;
+    white-space: nowrap
+}
+
+.destinationRow__62280 {
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 -8px;
+    min-height: 48px;
+    padding: 0 8px
+}
+
+.destinationRow__62280.disabled__62280 {
+    cursor: not-allowed
+}
+
+.destinationRow__62280:not(.disabled__62280):hover {
+    background-color: var(--interactive-background-hover)
+}
+
+.identity__62280 {
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: 1;
+    gap: 12px
+}
+
+.identity__62280,
+.labels__62280 {
+    display: flex;
+    overflow: hidden
+}
+
+.labels__62280 {
+    flex-direction: column;
+    margin: 4px 0
+}
+
+.threadSubLabel__62280 {
+    align-items: center;
+    display: flex
+}
+
+.subLabelIcon__62280 {
+    height: 12px;
+    width: 12px;
+    -webkit-margin-end: 2px;
+    margin-inline-end: 2px
+}
+
+.subLabelSeparator__62280 {
+    margin: 0 4px
+}
+
+.disabled__62280 .iconWrapper__62280 {
+    opacity: 50%
+}
+
+.checkbox__62280 {
+    flex: 0;
+    -webkit-margin-start: 16px;
+    margin-inline-start: 16px
+}
+
+.warningIcon__62280 {
+    color: var(--text-feedback-warning)
+}
+
+.noResults__62280 {
+    margin: 16px 24px;
+    text-align: center
+}
+
+.noResultsImg__62280 {
+    width: 200px
+}
+
+.messageInput__62280 {
+    max-height: 88px;
+    -webkit-padding-start: 16px;
+    padding-inline-start: 16px;
+    --custom-channel-textarea-text-area-height: 38px
+}
+
+.slowmodeWarning__62280 {
+    margin-top: 12px
+}
+
+.rowContainer__4dfe0 {
+    margin-inline: 0
+}
+
+.messageInput__8ff3e {
+    max-height: 88px
+}
+
+/*# sourceMappingURL=35d94fe033671d0c.css.map*/

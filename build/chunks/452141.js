@@ -1,52 +1,51 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 452141, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968);
 n(64700);
 var i = n(417597),
-    a = n(397927),
+    l = n(397927),
     s = n(287809),
-    o = n(294433),
-    l = n(834981),
+    a = n(294433),
+    o = n(834981),
     c = n(551378),
-    u = n(343906),
-    d = n(113065),
-    f = n(966735),
+    d = n(343906),
+    u = n(113065),
+    _ = n(966735),
     p = n(483706),
-    _ = n(842130),
-    h = n(985018),
-    m = n(121277);
-let g = () => {
-    let e = (0, l.vx)().length > 0,
+    m = n(842130),
+    g = n(985018),
+    A = n(121277);
+let f = () => {
+    let e = (0, o.vx)().length > 0,
         t = (0, i.bG)([s.default], () => s.default.getCurrentUser()),
-        n = (0, o.y)(h.intl.string(_.default["5RZ8Tq"]), h.intl.string(_.default.bmhCnL)),
-        g = (0, o.y)(h.intl.string(_.default.XKnFFq), h.intl.string(_.default["68zfxD"])),
-        E = (0, o.y)(h.intl.string(_.default["Rm/6a0"]), h.intl.string(_.default["1xPTwE"]));
+        n = (0, a.y)(g.intl.string(m.default["5RZ8Tq"]), g.intl.string(m.default.bmhCnL)),
+        f = (0, a.y)(g.intl.string(m.default.XKnFFq), g.intl.string(m.default["68zfxD"])),
+        h = (0, a.y)(g.intl.string(m.default["Rm/6a0"]), g.intl.string(m.default["1xPTwE"]));
     return void 0 === t ? null : (0, r.jsxs)("div", {
-        className: m.kL,
+        className: A.kL,
         children: [e ? null : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-                className: m.vK,
+                className: A.vK,
                 children: (0, r.jsx)(c.A, {})
             }), (0, r.jsxs)("div", {
-                className: m.yk,
-                children: [(0, r.jsx)(f.A, {
-                    icon: a.MBj,
-                    header: h.intl.string(_.default["001l3m"]),
+                className: A.yk,
+                children: [(0, r.jsx)(_.A, {
+                    icon: l.MBj,
+                    header: g.intl.string(m.default["001l3m"]),
                     description: n
-                }), (0, r.jsx)(f.A, {
-                    icon: a.bMW,
-                    header: h.intl.string(_.default.yipAeP),
-                    description: g
-                }), (0, r.jsx)(f.A, {
-                    icon: a.yVk,
-                    header: h.intl.string(_.default.hhOuMe),
-                    description: E
+                }), (0, r.jsx)(_.A, {
+                    icon: l.bMW,
+                    header: g.intl.string(m.default.yipAeP),
+                    description: f
+                }), (0, r.jsx)(_.A, {
+                    icon: l.yVk,
+                    header: g.intl.string(m.default.hhOuMe),
+                    description: h
                 })]
             })]
-        }), e ? (0, r.jsx)(u.A, {}) : (0, r.jsx)(d.A, {}), (0, r.jsx)(p.p, {})]
+        }), e ? (0, r.jsx)(d.A, {}) : (0, r.jsx)(u.A, {}), (0, r.jsx)(p.p, {})]
     })
 }

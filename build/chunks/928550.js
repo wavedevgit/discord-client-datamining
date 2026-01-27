@@ -8,18 +8,18 @@ n.d(t, {
 var r = n(311907),
     i = n(627363),
     a = n(651743),
-    s = n(134861),
-    o = n(760751),
+    o = n(134861),
+    s = n(760751),
     l = n(189081),
     c = n(194871),
     u = n(144914);
 
 function d(e) {
-    return (0, r.bG)([l.A, a.A, c.A, s.A], () => null != e && (0, u.A)({
+    return (0, r.bG)([l.A, a.A, c.A, o.A], () => null != e && (0, u.A)({
         LibraryApplicationStore: l.A,
         LaunchableGameStore: a.A,
         DispatchApplicationStore: c.A,
-        ConnectedAppsStore: s.A,
+        ConnectedAppsStore: o.A,
         applicationId: e
     }), [e])
 }
@@ -27,9 +27,9 @@ function d(e) {
 function f(e) {
     let {
         data: t
-    } = (0, i.YY)(e), n = (0, r.bG)([o.A], () => {
+    } = (0, i.YY)(e), n = (0, r.bG)([s.A], () => {
         var e;
-        return null != t ? null != (e = o.A.getOfficialGame(t)) ? e : o.A.getGameByApplication(t) : null
-    }, [t]), a = d(e), s = d(null == n ? void 0 : n.id);
-    return null != n && s ? n.id : a && null != e ? e : null
+        return null != t ? null != (e = s.A.getOfficialGame(t)) ? e : s.A.getGameByApplication(t) : null
+    }, [t]), a = d(e), o = d(null == n ? void 0 : n.id);
+    return null != n && o ? n.id : a && null != e ? e : null
 }

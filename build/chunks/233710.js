@@ -7,9 +7,9 @@ n.d(t, {
     OX: () => a,
     __: () => c,
     bX: () => d,
-    is: () => s,
+    is: () => o,
     lQ: () => i,
-    n4: () => o
+    n4: () => s
 });
 var r = n(476575),
     i = function() {},
@@ -20,7 +20,7 @@ var r = n(476575),
             configurable: !0
         })
     },
-    s = {
+    o = {
         arr: Array.isArray,
         obj: function(e) {
             return !!e && "Object" === e.constructor.name
@@ -39,9 +39,9 @@ var r = n(476575),
         }
     };
 
-function o(e, t) {
-    if (s.arr(e)) {
-        if (!s.arr(t) || e.length !== t.length) return !1;
+function s(e, t) {
+    if (o.arr(e)) {
+        if (!o.arr(t) || e.length !== t.length) return !1;
         for (var n = 0; n < e.length; n++)
             if (e[n] !== t[n]) return !1;
         return !0
@@ -49,15 +49,15 @@ function o(e, t) {
     return e === t
 }
 var l = function(e) {
-        return s.str(e) && ("#" == e[0] || /\d/.test(e) || !!(r.colorNames && r.colorNames[e]))
+        return o.str(e) && ("#" == e[0] || /\d/.test(e) || !!(r.colorNames && r.colorNames[e]))
     },
     c = function(e, t, n) {
-        s.fun(e.forEach) ? e.forEach(t, n) : Object.keys(e).forEach(function(r) {
+        o.fun(e.forEach) ? e.forEach(t, n) : Object.keys(e).forEach(function(r) {
             return t.call(n, e[r], r)
         })
     },
     u = function(e) {
-        return s.und(e) ? [] : s.arr(e) ? e : [e]
+        return o.und(e) ? [] : o.arr(e) ? e : [e]
     };
 
 function d(e, t) {

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(205693),
     i = n(827343),
     a = n(439372),
-    s = n(626584),
-    o = n(430452),
+    o = n(626584),
+    s = n(430452),
     l = n(383501),
     c = n(723702),
     u = n(842772),
@@ -23,7 +23,7 @@ function f(e, t, n) {
     }) : e[t] = n, e
 }
 let p = "c6_BVC",
-    _ = new s.A("KrispBVCDeviceManager"),
+    _ = new o.A("KrispBVCDeviceManager"),
     h = [],
     m = [],
     g = {
@@ -35,29 +35,29 @@ for (let e of g.allow_list) "name" in e && h.push(e.name.toLowerCase());
 
 function E() {
     var e;
-    if (!(0, c.isMac)() && !(0, c.isWindows)() || !o.A.getKrispModels().includes(p)) return;
-    let t = o.A.getInputDeviceId(),
-        n = o.A.getInputDevices()[t],
+    if (!(0, c.isMac)() && !(0, c.isWindows)() || !s.A.getKrispModels().includes(p)) return;
+    let t = s.A.getInputDeviceId(),
+        n = s.A.getInputDevices()[t],
         r = null != l.A.getChannelId();
     if (null == n) return;
     let a = null == (e = l.A.getRTCConnection()) ? void 0 : e.getInputDeviceSampleRate(),
-        s = u._.getCurrentConfig({
+        o = u._.getCurrentConfig({
             location: "KrispBVCDeviceManager"
         }, {
             autoTrackExposure: !1
         }).allowBVC;
     if (null != a && a < 16e3) {
-        o.A.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.A.setKrispModelOverride(""));
+        s.A.getKrispModelOverride() && (_.info("BVC model doesn't support <16kHz sample rate, disabling BVC."), i.A.setKrispModelOverride(""));
         return
     }
     let d = n.name.toLowerCase();
     if (m.some(e => d.includes(e))) {
-        o.A.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.A.setKrispModelOverride(""));
+        s.A.getKrispModelOverride() && (_.info("BVC not compatible with device, disabling BVC."), i.A.setKrispModelOverride(""));
         return
     }
     h.some(e => d.includes(e)) ? (r && u._.trackExposure({
         location: "KrispBVCDeviceManager"
-    }), s) ? o.A.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.A.setKrispModelOverride(p)) : i.A.setKrispModelOverride("") : o.A.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.A.setKrispModelOverride(""))
+    }), o) ? s.A.getKrispModelOverride() !== p && (_.info("BVC compatible with device, enabling BVC."), i.A.setKrispModelOverride(p)) : i.A.setKrispModelOverride("") : s.A.getKrispModelOverride() && (_.info("Unknown BVC compatibility with device, disabling BVC."), i.A.setKrispModelOverride(""))
 }
 class y extends a.A {
     constructor(...e) {

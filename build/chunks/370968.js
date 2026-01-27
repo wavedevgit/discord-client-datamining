@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(311907),
-    o = n(397927),
+    o = n(311907),
+    s = n(397927),
     l = n(775602),
     c = n(607470),
     u = n(422936),
@@ -27,17 +27,17 @@ function b(e) {
     var t, n;
     let {
         onDismiss: i
-    } = e, b = (0, s.bG)([l.A], () => l.A.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.V)(), A = (0, u.O)(), I = (null == v ? void 0 : v.subscription_trial) != null || null != A, S = {
+    } = e, b = (0, o.bG)([l.A], () => l.A.useReducedMotion), O = m.intl.string(m.t.eikz43), v = (0, d.V)(), A = (0, u.O)(), I = (null == v ? void 0 : v.subscription_trial) != null || null != A, S = {
         object: _.ZSU.BUTTON_CTA,
         section: _.JJy.SUPER_REACTION_PICKER
     };
     return (0, r.jsxs)("div", {
         className: g.iE,
-        children: [(0, r.jsx)(o.DUT, {
+        children: [(0, r.jsx)(s.DUT, {
             onClick: i,
             className: g.b,
             "aria-label": m.intl.string(m.t.WAI6xu),
-            children: (0, r.jsx)(o.PGe, {
+            children: (0, r.jsx)(s.PGe, {
                 size: "md",
                 color: "currentColor"
             })
@@ -66,18 +66,18 @@ function b(e) {
             }) : (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsxs)("div", {
                     className: g.wx,
-                    children: [(0, r.jsx)(o.tvc, {
+                    children: [(0, r.jsx)(s.tvc, {
                         size: "custom",
                         color: "currentColor",
                         className: g.ax,
                         width: y,
                         height: y
-                    }), (0, r.jsx)(o.Heading, {
+                    }), (0, r.jsx)(s.Heading, {
                         className: g.TK,
                         variant: "heading-xl/bold",
                         children: m.intl.string(m.t.Wfl5zp)
                     })]
-                }), (0, r.jsx)(o.Text, {
+                }), (0, r.jsx)(s.Text, {
                     className: g.Fb,
                     variant: "text-md/normal",
                     children: O

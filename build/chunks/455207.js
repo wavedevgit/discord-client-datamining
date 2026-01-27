@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(58149),
     i = n(943667),
     a = n(954571),
-    s = n(124759),
-    o = n(652215),
+    o = n(124759),
+    s = n(652215),
     l = n(375577);
 
 function c(e, t, n) {
@@ -36,15 +36,15 @@ function u(e) {
 }
 
 function d(e) {
-    return (0, i.A)(e) && e.messageReference.guild_id === s.Vi || null != e.author && e.author.id === s.hs
+    return (0, i.A)(e) && e.messageReference.guild_id === o.Vi || null != e.author && e.author.id === o.hs
 }
 
 function f() {
     return l
 }
 let p = e => {
-    a.default.track(o.HAw.USER_FLOW_TRANSITION, u({
-        flow_type: s.bK,
+    a.default.track(s.HAw.USER_FLOW_TRANSITION, u({
+        flow_type: o.bK,
         from_step: e.fromStep,
         to_step: e.toStep
     }, (0, r.H$)(e.guildId)))

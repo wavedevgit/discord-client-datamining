@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(954571),
-    s = n(927813),
-    o = n(403362),
+    o = n(927813),
+    s = n(403362),
     l = n(652215);
 let c = 5e3,
     u = 3,
@@ -17,7 +17,7 @@ let c = 5e3,
     f = 1001,
     p = 1002;
 async function _(e, t) {
-    let n, o = performance.now(),
+    let n, s = performance.now(),
         _ = 0,
         m = [];
     switch (e.type) {
@@ -58,7 +58,7 @@ async function _(e, t) {
             });
             return
         }
-        return 429 === n.status ? (m.push(429), g(n.body.retry_after * s.A.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), y({
+        return 429 === n.status ? (m.push(429), g(n.body.retry_after * o.A.Millis.SECOND)) : (m.push(null != (r = n.status) ? r : d), y({
             error: !0
         }), i.h.dispatch({
             type: "APPLICATION_COMMAND_INDEX_FETCH_FAILURE",
@@ -67,9 +67,9 @@ async function _(e, t) {
     }), y = r => {
         let {
             error: i
-        } = r, s = performance.now() - o;
+        } = r, o = performance.now() - s;
         a.default.track(l.HAw.APPLICATION_COMMAND_PERFORMANCE, {
-            duration_ms: s,
+            duration_ms: o,
             error: i,
             aborted: t.signal.aborted,
             include_applications: !0,
@@ -96,7 +96,7 @@ function h(e) {
         case "application":
             return e.applicationId;
         default:
-            (0, o.xb)(e)
+            (0, s.xb)(e)
     }
 }
 

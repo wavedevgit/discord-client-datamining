@@ -4,7 +4,7 @@
 n.d(t, {
     KM: () => i,
     OR: () => a,
-    tB: () => s
+    tB: () => o
 });
 var r = n(73153);
 
@@ -24,7 +24,7 @@ function a(e) {
     })
 }
 
-function s() {
+function o() {
     r.h.dispatch({
         type: "VOICE_FILTER_PREFETCH"
     })

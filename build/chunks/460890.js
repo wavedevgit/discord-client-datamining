@@ -4,13 +4,13 @@
 n.d(t, {
     G9: () => l,
     GE: () => u,
-    VO: () => o,
+    VO: () => s,
     y6: () => c
 });
 var r = n(627968),
     i = n(64700),
     a = n(853590);
-let s = {
+let o = {
         i18n: {
             CANCEL: "Cancel",
             BACK: "Back",
@@ -63,11 +63,11 @@ let s = {
         isWindowFocused: void 0,
         dynamicGraphicComponents: void 0
     },
-    o = i.createContext(s);
+    s = i.createContext(o);
 
 function l() {
-    let e = i.useContext(o);
-    return e === s && console.warn("useManaContext must be used within a ManaContext.Provider"), e
+    let e = i.useContext(s);
+    return e === o && console.warn("useManaContext must be used within a ManaContext.Provider"), e
 }
 
 function c(e) {
@@ -80,7 +80,7 @@ function u(e) {
         children: t,
         value: n
     } = e;
-    return (0, r.jsx)(o.Provider, {
+    return (0, r.jsx)(s.Provider, {
         value: n,
         children: (0, r.jsx)(a.C, {
             locale: n.locale,

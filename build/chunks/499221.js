@@ -4,11 +4,11 @@
 var r = n(353841),
     i = n(788409)(),
     a = n(741623),
-    s = {
+    o = {
         assert: function(e, t) {
             if (!e || "object" != typeof e && "function" != typeof e) throw new a("`O` is not an object");
             if ("string" != typeof t) throw new a("`slot` must be a string");
-            if (i.assert(e), !s.has(e, t)) throw new a("`" + t + "` is not present on `O`")
+            if (i.assert(e), !o.has(e, t)) throw new a("`" + t + "` is not present on `O`")
         },
         get: function(e, t) {
             if (!e || "object" != typeof e && "function" != typeof e) throw new a("`O` is not an object");
@@ -29,4 +29,4 @@ var r = n(353841),
             r || (r = {}, i.set(e, r)), r["$" + t] = n
         }
     };
-Object.freeze && Object.freeze(s), e.exports = s
+Object.freeze && Object.freeze(o), e.exports = o

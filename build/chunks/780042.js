@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(311907),
     c = n(554146),
     u = n(459192),
@@ -32,7 +32,7 @@ function O(e) {
         checked: t,
         onClick: n,
         id: a = "burst-reaction-toggle-button"
-    } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(!1), [N, w] = (0, d.zhh)(() => ({})), R = (0, o.animated)(d.it9);
+    } = e, O = (0, l.bG)([f.A], () => f.A.useReducedMotion), v = _.default.getCurrentUser(), A = null == v || (0, h.TW)(v) ? [c.M.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP] : [], [I, S] = (0, p.kn)(A), [T, C] = i.useState(!1), [N, w] = (0, d.zhh)(() => ({})), R = (0, s.animated)(d.it9);
 
     function P() {
         w({
@@ -50,10 +50,10 @@ function O(e) {
         e && (S(m.i.DISMISS), setTimeout(() => C(e), 200))
     }, [I, S]);
     let D = T ? g.intl.string(g.t["Osi/uy"]) : t ? g.intl.string(g.t["5cRA/b"]) : g.intl.string(g.t.buV4av),
-        x = T ? g.intl.string(g.t.ORK94p) : void 0;
+        L = T ? g.intl.string(g.t.ORK94p) : void 0;
     return (0, r.jsx)(u.u, {
         position: "top",
-        title: x,
+        title: L,
         body: D,
         asset: (0, r.jsx)(d.tvc, {
             size: "md",
@@ -71,7 +71,7 @@ function O(e) {
                 type: "checkbox"
             }), (0, r.jsxs)("label", {
                 htmlFor: a,
-                className: s()(E.Pf, {
+                className: o()(E.Pf, {
                     [E.wM]: t
                 }),
                 children: [(0, r.jsx)(R, {

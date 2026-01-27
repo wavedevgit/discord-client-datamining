@@ -15,14 +15,14 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = !1;
-class o extends r.A {
+let o = !1;
+class s extends r.A {
     setVerifyTimezone() {
-        s = !0
+        o = !0
     }
     ensureTimezoneUpdated() {
-        if (!s) return;
-        s = !1;
+        if (!o) return;
+        o = !1;
         let e = new Date().getTimezoneOffset();
         i.JI.getSetting() !== e && setImmediate(() => i.JI.updateSetting(e))
     }
@@ -36,4 +36,4 @@ class o extends r.A {
         })
     }
 }
-let l = new o
+let l = new s

@@ -1,6 +1,6 @@
 /** Chunk was on 98126 **/
-/** chunk id: 650730, original params: n,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 650730, original params: t,n,i (module,exports,require) **/
+i.d(n, {
     default: () => c
 });
 var r = i(627968);
@@ -11,13 +11,13 @@ var s = i(397927),
     l = i(964853),
     o = i(985018);
 
-function c(n) {
+function c(t) {
     let {
-        guild: t,
+        guild: n,
         onSelect: i
-    } = n, c = (0, l.A)(t), d = (0, a.A)(t.id);
+    } = t, c = (0, l.A)(n), d = (0, a.A)(n.id);
     return (0, r.jsx)(s.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-migrated-auto": !0,
         navId: "role-subscription-context",
         "aria-label": o.intl.string(o.t.g3KvYF),
         onClose: e.Z_,

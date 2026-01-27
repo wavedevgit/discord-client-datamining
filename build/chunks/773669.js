@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(11057),
-    o = n(77729),
+    o = n(11057),
+    s = n(77729),
     l = n(617617),
     c = n(985018);
 
@@ -21,8 +21,8 @@ function u(e, t, n) {
 }
 async function d() {
     var e;
-    if ((null === o.A || void 0 === o.A || null == (e = o.A.app) ? void 0 : e.getPreferredSystemLanguages) != null) {
-        let e = await o.A.app.getPreferredSystemLanguages().then(e => e[0]);
+    if ((null === s.A || void 0 === s.A || null == (e = s.A.app) ? void 0 : e.getPreferredSystemLanguages) != null) {
+        let e = await s.A.app.getPreferredSystemLanguages().then(e => e[0]);
         if (null != e && "" !== e) return e
     }
     return c.systemLocale
@@ -33,18 +33,18 @@ let f = c.intl.currentLocale,
 function _() {
     var e, t;
     let n = null == (t = l.A.settings.localization) || null == (e = t.locale) ? void 0 : e.value;
-    return null != n && "" !== n && n !== f && (f = n, (0, s.Av)(f), !0)
+    return null != n && "" !== n && n !== f && (f = n, (0, o.Av)(f), !0)
 }
 
 function h(e) {
-    f = e.locale, (0, s.Av)(f)
+    f = e.locale, (0, o.Av)(f)
 }
 d().then(e => {
     p = e
 });
 class m extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(l.A), _(), (0, s.Av)(f)
+        this.waitFor(l.A), _(), (0, o.Av)(f)
     }
     get locale() {
         return f

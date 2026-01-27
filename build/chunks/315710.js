@@ -9,7 +9,7 @@ var r = n(64700),
     i = n(668447),
     a = n(844222);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,14 +18,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -51,8 +51,8 @@ function c(e, t) {
 function u(e) {
     var t;
     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-        s = r.useContext(a.C),
-        l = null != (t = n.keyboardModeEnabled) ? t : s.keyboardModeEnabled,
+        o = r.useContext(a.C),
+        l = null != (t = n.keyboardModeEnabled) ? t : o.keyboardModeEnabled,
         u = r.useRef(!1);
     u.current = !l || !0 === n.disable;
     let d = r.useMemo(() => {
@@ -61,7 +61,7 @@ function u(e) {
         }, [n.attachTo, e]),
         f = r.useRef(null),
         p = n.disable ? f : e;
-    return (0, i.Ay)(p, c(o({}, n), {
+    return (0, i.Ay)(p, c(s({}, n), {
         disableReturnRef: u,
         attachTo: d
     }))

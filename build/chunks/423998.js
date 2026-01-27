@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(110259),
-    s = n(311907),
-    o = n(397927),
+    o = n(311907),
+    s = n(397927),
     l = n(730134),
     c = n(139286),
     u = n(287809),
@@ -22,7 +22,7 @@ var r = n(627968),
 function g(e) {
     let {
         profileUserId: t
-    } = e, n = (0, s.bG)([u.default], () => u.default.getUser(t), [t]), g = (0, s.bG)([u.default], () => u.default.getCurrentUser()), E = (0, s.bG)([f.Ay], () => f.Ay.getFriendAnniversaryYears(t), [t]);
+    } = e, n = (0, o.bG)([u.default], () => u.default.getUser(t), [t]), g = (0, o.bG)([u.default], () => u.default.getCurrentUser()), E = (0, o.bG)([f.Ay], () => f.Ay.getFriendAnniversaryYears(t), [t]);
     return i.useEffect(() => {
         (0, c.x)({
             name: a.ImpressionNames.GIFT_INTENT_USER_PROFILE_POPOUT,
@@ -35,14 +35,14 @@ function g(e) {
         className: m.kL,
         children: [(0, r.jsx)("div", {
             className: m.b,
-            children: (0, r.jsx)(o.K0, {
-                icon: o.PGe,
+            children: (0, r.jsx)(s.K0, {
+                icon: s.PGe,
                 size: "sm",
                 variant: "icon-only",
                 "aria-label": h.intl.string(h.t.cpT0Cq),
                 onClick: () => (0, d.CK)(t)
             })
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
             variant: "text-sm/semibold",
             color: "text-strong",
             children: h.intl.string(h.t.icDVNb)
@@ -55,7 +55,7 @@ function g(e) {
                 className: m.GM,
                 size: _._3.SIZE_16,
                 user: g
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 color: "text-strong",
                 children: h.intl.formatToPlainString(h.t.PpG27s, {

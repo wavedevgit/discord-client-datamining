@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 138175, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    b: () => l
+    b: () => o
 }), n(896048);
 var r = n(64700),
     i = n(311907),
-    a = n(354138),
-    s = n(212534),
-    o = n(611010);
+    l = n(354138),
+    a = n(212534),
+    s = n(611010);
 
-function l(e) {
+function o(e) {
     let {
         id: t,
         isDiscoverable: n
-    } = e, [l, c, u] = (0, i.yK)([s.A], () => [s.A.getApplication(t), s.A.isInvalidApplication(t), s.A.getApplicationFetchState(t)], [t]);
+    } = e, [o, c, u] = (0, i.yK)([a.A], () => [a.A.getApplication(t), a.A.isInvalidApplication(t), a.A.getApplicationFetchState(t)], [t]);
     return r.useEffect(() => {
-        !1 === n || c || u === s.e.FETCHED || u === s.e.FETCHING || (0, a.eP)(t)
-    }, [t, u, n, c]), r.useMemo(() => null != l ? e.mergeFromApplicationUpdate(o.Ay.createFromServer(l)) : e, [e, l])
+        !1 === n || c || u === a.e.FETCHED || u === a.e.FETCHING || (0, l.eP)(t)
+    }, [t, u, n, c]), r.useMemo(() => null != o ? e.mergeFromApplicationUpdate(s.Ay.createFromServer(o)) : e, [e, o])
 }

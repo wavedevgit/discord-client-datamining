@@ -15,13 +15,13 @@ function a(e, t, n) {
     return t.includes(n) ? r = t.filter(e => e.id !== n.id) : "multiple" === e ? r.push(n) : r = [n], r
 }
 
-function s() {
+function o() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : "listbox",
         t = arguments.length > 1 ? arguments[1] : void 0;
     return "".concat(e, "-option-").concat(t)
 }
 n.d(t, {
-    ZN: () => s,
+    ZN: () => o,
     fI: () => i,
     qH: () => a
 }), n(457529), n(896048), n(321073)

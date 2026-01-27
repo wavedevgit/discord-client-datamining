@@ -15,8 +15,8 @@ var r = n(627968),
     C = n(990078),
     m = n(397927),
     p = n(966327),
-    b = n(396583),
-    f = n(688810),
+    f = n(396583),
+    b = n(688810),
     j = n(576470),
     g = n(229527),
     h = n(316031),
@@ -180,23 +180,23 @@ let K = l.memo(function(e) {
         })
     });
 
-function J(e) {
+function W(e) {
     return {
         short: null == e ? null : (0, V.hL)(e, V.wN.JOINED_AT),
         long: new Date(null != e ? e : 0).toLocaleDateString(z.intl.currentLocale, V.wp)
     }
 }
 
-function W(e) {
+function J(e) {
     let {
         member: t,
         showLongDate: n,
         isSortedBy: i
     } = e, [o, a] = l.useState(null);
     l.useEffect(() => {
-        a(J(t.joinedAtTimestamp))
-    }, [t.joinedAtTimestamp]), (0, b.A)(() => {
-        a(J(t.joinedAtTimestamp))
+        a(W(t.joinedAtTimestamp))
+    }, [t.joinedAtTimestamp]), (0, f.A)(() => {
+        a(W(t.joinedAtTimestamp))
     }, 1e4);
     let s = i ? "text-brand" : "text-default";
     return (null == o ? void 0 : o.short) == null ? null : n ? (0, r.jsx)("div", {
@@ -257,8 +257,8 @@ let $ = l.memo(function(e) {
             onOpenModerationMenu: s,
             onOpenMemberView: d,
             compact: p,
-            hasModViewPanelAccess: b
-        } = e, f = (0, u.bG)([A.A, w.A], () => A.A.can(B.xBc.MANAGE_GUILD, w.A.getGuild(t.guildId)), [t.guildId]), {
+            hasModViewPanelAccess: f
+        } = e, b = (0, u.bG)([A.A, w.A], () => A.A.can(B.xBc.MANAGE_GUILD, w.A.getGuild(t.guildId)), [t.guildId]), {
             selectedUserIds: j,
             addUsers: g,
             removeUser: h
@@ -294,7 +294,7 @@ let $ = l.memo(function(e) {
                 className: o()(Y.qp, {
                     [Y.oE]: p
                 }),
-                children: (0, r.jsx)(W, {
+                children: (0, r.jsx)(J, {
                     showLongDate: a,
                     member: t,
                     isSortedBy: _
@@ -308,7 +308,7 @@ let $ = l.memo(function(e) {
                     member: t,
                     isSortedBy: H
                 })
-            }), f && (0, r.jsx)("td", {
+            }), b && (0, r.jsx)("td", {
                 className: o()(Y.qp, {
                     [Y.oE]: p
                 }),
@@ -339,11 +339,11 @@ let $ = l.memo(function(e) {
                     className: Y.$E,
                     children: [(0, r.jsx)(C.m, {
                         asContainer: !0,
-                        text: b ? z.intl.string(z.t.nHfkf4) : z.intl.string(z.t.uTre2y),
+                        text: f ? z.intl.string(z.t.nHfkf4) : z.intl.string(z.t.uTre2y),
                         children: (0, r.jsx)(m.DUT, {
                             onClick: d,
                             className: Y.x6,
-                            children: b ? (0, r.jsx)(N.A, {
+                            children: f ? (0, r.jsx)(N.A, {
                                 width: et,
                                 height: et
                             }) : (0, r.jsx)(m.nys, {
@@ -384,7 +384,7 @@ let $ = l.memo(function(e) {
             compact: m = !1
         } = e, {
             analyticsLocations: p
-        } = (0, f.Ay)(), b = (0, u.bG)([H.Ay], () => H.Ay.getGuildSidebarState(n), [n]), j = (null == b ? void 0 : b.details.userId) === t, g = (0, u.bG)([I.A], () => I.A.getEnhancedMember(n, t), [n, t]), h = (0, U.YH)(g), O = (0, u.bG)([S.default], () => S.default.getUser(t), [t]), v = (0, y.q)(n), _ = (0, U.UY)(null != g ? g : void 0), w = l.useCallback(e => {
+        } = (0, b.Ay)(), f = (0, u.bG)([H.Ay], () => H.Ay.getGuildSidebarState(n), [n]), j = (null == f ? void 0 : f.details.userId) === t, g = (0, u.bG)([I.A], () => I.A.getEnhancedMember(n, t), [n, t]), h = (0, U.YH)(g), O = (0, u.bG)([S.default], () => S.default.getUser(t), [t]), v = (0, y.q)(n), _ = (0, U.UY)(null != g ? g : void 0), w = l.useCallback(e => {
             e.stopPropagation(), e.preventDefault(), _(e)
         }, [_]), A = l.useCallback(e => {
             e.stopPropagation(), e.preventDefault(), null != g && (0, U.Ko)(g, p)

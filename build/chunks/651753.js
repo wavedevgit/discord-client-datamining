@@ -7,8 +7,8 @@ n.d(t, {
 });
 var r, i = n(635377),
     a = n.n(i),
-    s = n(994369),
-    o = n(311907),
+    o = n(994369),
+    s = n(311907),
     l = n(73153);
 
 function c(e, t, n) {
@@ -61,14 +61,14 @@ function h(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: o,
+        integrationType: s,
         minUserInstallCommandCount: l,
         excludeAppsWithCustomInstallUrl: c,
         excludeNonEmbeddedApps: u,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
-        source: f = s.V.APP_DIRECTORY
+        source: f = o.V.APP_DIRECTORY
     } = e;
-    return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(r, " pageSize:").concat(i, " categoryId:").concat(a, " integrationType:").concat(o, " minUserInstallCommandCount:").concat(l, " excludeAppsWithCustomInstallUrl:").concat(c, " excludeNonEmbeddedApps:").concat(u, " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:").concat(d, " source:").concat(f)
+    return "query:'".concat(t, "' guildId:").concat(n, " page:").concat(r, " pageSize:").concat(i, " categoryId:").concat(a, " integrationType:").concat(s, " minUserInstallCommandCount:").concat(l, " excludeAppsWithCustomInstallUrl:").concat(c, " excludeNonEmbeddedApps:").concat(u, " excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand:").concat(d, " source:").concat(f)
 }
 let m = new(a())({
         max: p
@@ -82,8 +82,8 @@ function E(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: s,
-        minUserInstallCommandCount: o,
+        integrationType: o,
+        minUserInstallCommandCount: s,
         excludeAppsWithCustomInstallUrl: l,
         excludeNonEmbeddedApps: c,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
@@ -94,8 +94,8 @@ function E(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: s,
-        minUserInstallCommandCount: o,
+        integrationType: o,
+        minUserInstallCommandCount: s,
         excludeAppsWithCustomInstallUrl: l,
         excludeNonEmbeddedApps: c,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
@@ -113,8 +113,8 @@ function y(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        result: s,
-        integrationType: o,
+        result: o,
+        integrationType: s,
         minUserInstallCommandCount: l,
         excludeAppsWithCustomInstallUrl: c,
         excludeNonEmbeddedApps: d,
@@ -126,7 +126,7 @@ function y(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: o,
+        integrationType: s,
         minUserInstallCommandCount: l,
         excludeAppsWithCustomInstallUrl: c,
         excludeNonEmbeddedApps: d,
@@ -135,7 +135,7 @@ function y(e) {
     });
     m.set(E, u({
         lastFetchTimeMs: Date.now()
-    }, s)), g = f(u({}, g), {
+    }, o)), g = f(u({}, g), {
         [E]: 1
     })
 }
@@ -147,8 +147,8 @@ function b(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: s,
-        minUserInstallCommandCount: o,
+        integrationType: o,
+        minUserInstallCommandCount: s,
         excludeAppsWithCustomInstallUrl: l,
         excludeNonEmbeddedApps: c,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
@@ -159,8 +159,8 @@ function b(e) {
         page: r,
         pageSize: i,
         categoryId: a,
-        integrationType: s,
-        minUserInstallCommandCount: o,
+        integrationType: o,
+        minUserInstallCommandCount: s,
         excludeAppsWithCustomInstallUrl: l,
         excludeNonEmbeddedApps: c,
         excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: d,
@@ -170,7 +170,7 @@ function b(e) {
         [_]: 2
     })
 }
-class O extends(r = o.Ay.Store) {
+class O extends(r = s.Ay.Store) {
     getSearchResults(e) {
         let {
             query: t,
@@ -178,8 +178,8 @@ class O extends(r = o.Ay.Store) {
             page: r,
             pageSize: i,
             categoryId: a,
-            integrationType: s,
-            minUserInstallCommandCount: o,
+            integrationType: o,
+            minUserInstallCommandCount: s,
             excludeAppsWithCustomInstallUrl: l,
             excludeNonEmbeddedApps: c,
             excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
@@ -190,8 +190,8 @@ class O extends(r = o.Ay.Store) {
             page: r,
             pageSize: i,
             categoryId: a,
-            integrationType: s,
-            minUserInstallCommandCount: o,
+            integrationType: o,
+            minUserInstallCommandCount: s,
             excludeAppsWithCustomInstallUrl: l,
             excludeNonEmbeddedApps: c,
             excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
@@ -206,8 +206,8 @@ class O extends(r = o.Ay.Store) {
             page: r,
             pageSize: i,
             categoryId: a,
-            integrationType: s,
-            minUserInstallCommandCount: o,
+            integrationType: o,
+            minUserInstallCommandCount: s,
             excludeAppsWithCustomInstallUrl: l,
             excludeNonEmbeddedApps: c,
             excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,
@@ -219,8 +219,8 @@ class O extends(r = o.Ay.Store) {
             page: r,
             pageSize: i,
             categoryId: a,
-            integrationType: s,
-            minUserInstallCommandCount: o,
+            integrationType: o,
+            minUserInstallCommandCount: s,
             excludeAppsWithCustomInstallUrl: l,
             excludeNonEmbeddedApps: c,
             excludeEmbeddedAppsWithoutPrimaryEntryPointAppCommand: u,

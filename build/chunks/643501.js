@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(528767),
-    o = n(977997);
+    o = n(528767),
+    s = n(977997);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ function O(e) {
 let v = Object.freeze({});
 class A extends(r = i.Ay.DeviceSettingsStore) {
     initialize(e) {
-        null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(s.A, o.A)
+        null != e && (p = e.lastSelectedDeviceByPlatform), this.waitFor(o.A, s.A)
     }
     getUserAgnosticState() {
         return {

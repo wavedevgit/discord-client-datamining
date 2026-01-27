@@ -1,111 +1,123 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 745299, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => v
+    A: () => y
 }), n(65821);
 var r = n(627968);
 n(64700);
 var i = n(110259),
-    a = n(397927),
-    s = n(496431),
-    o = n(793574),
-    l = n(688810),
+    l = n(397927),
+    o = n(496431),
+    a = n(793574),
+    s = n(688810),
     c = n(139286),
     u = n(532794),
-    d = n(804412),
-    f = n(234419),
-    p = n(635995),
-    _ = n(915516),
-    h = n(788868),
-    m = n(652215),
-    g = n(985018),
-    E = n(237082);
+    E = n(954571),
+    d = n(975571),
+    _ = n(927578),
+    A = n(804412),
+    T = n(234419),
+    I = n(635995),
+    O = n(915516),
+    N = n(788868),
+    p = n(652215),
+    R = n(985018),
+    S = n(237082);
 
-function y(e) {
+function P(e) {
     switch (e) {
-        case h.pe.TIER_0:
-            return o.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
-        case h.pe.TIER_2:
-            return o.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
+        case N.pe.TIER_0:
+            return R.intl.string(R.t.mCG023);
+        case N.pe.TIER_2:
+            return R.intl.string(R.t.J61px0);
         default:
             throw Error("Unsupported subscription tier: ".concat(e))
     }
 }
-
-function b(e) {
-    switch (e) {
-        case h.pe.TIER_0:
-            return a.Hv$.PREMIUM_TIER_0;
-        case h.pe.TIER_2:
-            return a.Hv$.PREMIUM_TIER_2;
-        default:
-            throw Error("Unsupported subscription tier: ".concat(e))
-    }
-}
-
-function O(e) {
-    switch (e) {
-        case h.pe.TIER_0:
-            return g.intl.string(g.t.mCG023);
-        case h.pe.TIER_2:
-            return g.intl.string(g.t["7590Pe"]);
-        default:
-            throw Error("Unsupported subscription tier: ".concat(e))
-    }
-}
-let v = function(e) {
-    var t;
+let y = function(e) {
+    var t, n, R;
     let {
-        dismissCurrentNotice: n,
-        subscriptionTier: o
+        dismissCurrentNotice: y,
+        subscriptionTier: f
     } = e, {
-        analyticsLocations: g
-    } = (0, l.Ay)(y(o)), v = (0, f.V)(), A = (0, s.A)(null != v && null != v.expires_at ? Date.parse(v.expires_at) : 0), {
-        variant: I,
-        showNagbar: S
-    } = (0, d.Ay)("PremiumTrialEndingNotice"), T = null == v || (null == (t = v.subscription_trial) ? void 0 : t.sku_id) !== o || null == v.expires_at || Object.values(A).every(e => 0 === e) || v.trial_id !== h.Dw && !S;
+        analyticsLocations: C
+    } = (0, s.Ay)(function(e) {
+        switch (e) {
+            case N.pe.TIER_0:
+                return a.A.PREMIUM_TIER_0_TRIAL_ENDING_NOTICE;
+            case N.pe.TIER_2:
+                return a.A.PREMIUM_TIER_2_TRIAL_ENDING_NOTICE;
+            default:
+                throw Error("Unsupported subscription tier: ".concat(e))
+        }
+    }(f)), m = (0, T.V)(), D = (0, o.A)(null != m && null != m.expires_at ? Date.parse(m.expires_at) : 0), {
+        variant: g,
+        showNagbar: h
+    } = (0, A.Ay)("PremiumTrialEndingNotice"), b = null == m || (null == (t = m.subscription_trial) ? void 0 : t.sku_id) !== f || null == m.expires_at || Object.values(D).every(e => 0 === e) || m.trial_id !== N.Dw && !h;
     if ((0, c.A)({
             type: i.ImpressionTypes.VIEW,
             name: i.ImpressionNames.TRIAL_NOTICE,
             properties: {
-                trial_id: null == v ? void 0 : v.trial_id
+                trial_id: null == m ? void 0 : m.trial_id
             }
         }, {
-            disableTrack: T
-        }), T) return null;
-    let C = () => {
-        (0, u.A)({
-            trialId: v.trial_id,
-            subscriptionTier: o,
-            analyticsLocations: g,
-            analyticsObject: {
-                page: m.liQ.IN_APP,
-                section: m.JJy.NOTIFICATION_BAR,
-                object: m.ZSU.BUTTON_CTA
-            }
-        })
-    };
-    return I === d.CJ.NAGBAR_REFRESH && (null == v ? void 0 : v.trial_id) !== h.Dw ? (0, r.jsxs)(p.T0, {
-        onClick: n,
-        children: [(0, r.jsx)(p.In, {
-            children: (0, _.GZ)(o, A)
-        }), (0, r.jsx)(p.fY, {
-            onClick: C,
-            text: O(o)
+            disableTrack: b
+        }), b) return null;
+    let U = f === N.pe.TIER_2 ? p.kqX.PREMIUM_TIER_2_TRIAL_ENDING : p.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
+        M = () => {
+            (0, u.A)({
+                trialId: m.trial_id,
+                subscriptionTier: f,
+                analyticsLocations: C,
+                analyticsObject: {
+                    page: p.liQ.IN_APP,
+                    section: p.JJy.NOTIFICATION_BAR,
+                    object: p.ZSU.BUTTON_CTA
+                }
+            }), E.default.track(p.HAw.APP_NOTICE_PRIMARY_CTA_OPENED, {
+                notice_type: U,
+                trial_id: m.trial_id
+            })
+        },
+        j = (0, _.re)({
+            intervalType: null == (n = m.subscription_trial) ? void 0 : n.interval,
+            intervalCount: null == (R = m.subscription_trial) ? void 0 : R.interval_count
+        }),
+        k = d.A.getArticleURL(m.trial_id === N.yo ? p.MVz.NITRO_TRIAL_FOR_ALL : p.MVz.PREMIUM_TRIAL);
+    return g === A.CJ.NAGBAR_REFRESH && (null == m ? void 0 : m.trial_id) !== N.Dw ? (0, r.jsxs)(I.T0, {
+        onClick: () => {
+            y(), E.default.track(p.HAw.APP_NOTICE_CLOSED, {
+                notice_type: U,
+                trial_id: m.trial_id
+            })
+        },
+        children: [(0, r.jsx)(I.In, {
+            children: (0, O.GZ)(f, D, j, k)
+        }), (0, r.jsx)(I.fY, {
+            onClick: M,
+            text: P(f)
         })]
-    }) : (0, r.jsxs)(a.$Td, {
-        color: b(o),
-        children: [(0, r.jsx)(a.PMB, {
-            noticeType: o === h.pe.TIER_2 ? m.kqX.PREMIUM_TIER_2_TRIAL_ENDING : m.kqX.PREMIUM_TIER_0_TRIAL_ENDING,
-            onClick: n
-        }), (0, r.jsx)(a.tvc, {
+    }) : (0, r.jsxs)(l.$Td, {
+        color: function(e) {
+            switch (e) {
+                case N.pe.TIER_0:
+                    return l.Hv$.PREMIUM_TIER_0;
+                case N.pe.TIER_2:
+                    return l.Hv$.PREMIUM_TIER_2;
+                default:
+                    throw Error("Unsupported subscription tier: ".concat(e))
+            }
+        }(f),
+        children: [(0, r.jsx)(l.PMB, {
+            noticeType: U,
+            onClick: y
+        }), (0, r.jsx)(l.tvc, {
             size: "md",
             color: "currentColor",
-            className: E.PC
-        }), (0, _.GZ)(o, A), (0, r.jsx)(a.zr9, {
-            onClick: C,
-            children: O(o)
+            className: S.PC
+        }), (0, O.GZ)(f, D, j, k), (0, r.jsx)(l.zr9, {
+            onClick: M,
+            children: P(f)
         })]
     })
 }

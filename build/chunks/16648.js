@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(439372),
-    s = n(461213),
-    o = n(927813),
+    o = n(461213),
+    s = n(927813),
     l = n(728458),
     c = n(527776),
     u = n(31369),
@@ -23,8 +23,8 @@ function p(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let _ = 5 * o.A.Millis.MINUTE,
-    h = .5 * o.A.Millis.MINUTE;
+let _ = 5 * s.A.Millis.MINUTE,
+    h = .5 * s.A.Millis.MINUTE;
 
 function m() {
     return c.A.getCurrentConfig({
@@ -71,8 +71,8 @@ class b extends a.A {
             CONNECTION_INTERRUPTED: () => this.clear(),
             SELF_PRESENCE_STORE_UPDATE: () => this.start()
         }), p(this, "start", () => {
-            m() && u.A.isCooldownElapsed() && null == this.timerId && y(s.A.getStatus()) && (this.timerId = setTimeout(() => {
-                this.timerId = null, !y(s.A.getStatus()) || u.A.isCooldownElapsed() && E()
+            m() && u.A.isCooldownElapsed() && null == this.timerId && y(o.A.getStatus()) && (this.timerId = setTimeout(() => {
+                this.timerId = null, !y(o.A.getStatus()) || u.A.isCooldownElapsed() && E()
             }, g()))
         }), p(this, "clear", () => {
             null != this.timerId && (clearTimeout(this.timerId), this.timerId = null)

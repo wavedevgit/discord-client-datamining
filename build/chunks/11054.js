@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(284009),
-    s = n.n(a),
-    o = n(732955),
+    o = n.n(a),
+    s = n(732955),
     l = n(397927),
     c = n(688810),
     u = n(937008),
@@ -36,9 +36,9 @@ function b(e) {
         isGift: A,
         giftRecipient: I
     } = (0, u.Pv)();
-    s()(null != O, "Expected selectedSkuId"), s()(null != v, "Expected application");
+    o()(null != O, "Expected selectedSkuId"), o()(null != v, "Expected application");
     let S = b[O];
-    return (s()(null != S, "Expected sku"), i.useEffect(() => {
+    return (o()(null != S, "Expected sku"), i.useEffect(() => {
         A || ((0, m.j)(), n(), (0, h.n)({
             sku: S,
             application: v,
@@ -62,7 +62,7 @@ function b(e) {
                     itemName: S.name,
                     giftRecipient: null != (t = null == I ? void 0 : I.username) ? t : "your recipient"
                 })
-            }), (0, r.jsx)(o.$nd, {
+            }), (0, r.jsx)(s.$nd, {
                 onClick: n,
                 text: E.intl.string(E.t.cpT0Cq),
                 fullWidth: !0

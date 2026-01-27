@@ -9,12 +9,12 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(319317),
-    s = n(371794),
-    o = n(652215);
+    o = n(371794),
+    s = n(652215);
 async function l() {
     try {
-        let e = await (0, s.aP)({
-            url: o.Rsh.LIBRARY,
+        let e = await (0, o.aP)({
+            url: s.Rsh.LIBRARY,
             oldFormErrors: !0,
             rejectWithError: !1
         }, !1);
@@ -33,7 +33,7 @@ async function c(e) {
     let t = e.primarySkuId;
     if (null == t) return;
     let n = (await r.Bo.get({
-        url: o.Rsh.APPLICATION_BRANCH_LIST(e.id),
+        url: s.Rsh.APPLICATION_BRANCH_LIST(e.id),
         oldFormErrors: !0,
         rejectWithError: !1
     }).then(e => e.body)).map(n => a.A.createForTestMode({

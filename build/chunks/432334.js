@@ -1,30 +1,29 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 432334, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(202160);
-let o = function(e) {
+let a = function(e) {
     let {
         className: t,
         imageClassName: i,
-        boostInCooldown: o,
-        useReducedMotion: l
+        boostInCooldown: a,
+        useReducedMotion: o
     } = e;
     return (0, r.jsx)("div", {
-        className: a()(s.h4, t, {
-            [s.K2]: o
+        className: l()(s.h4, t, {
+            [s.K2]: a
         }),
         children: (0, r.jsx)("img", {
-            className: a()(s.Sl, i, {
-                [s.x8]: o
+            className: l()(s.Sl, i, {
+                [s.x8]: a
             }),
-            src: o ? n(88331) : l ? n(960954) : n(524779),
+            src: a ? n(88331) : o ? n(960954) : n(524779),
             alt: ""
         })
     })

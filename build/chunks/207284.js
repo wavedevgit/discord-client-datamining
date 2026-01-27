@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(644508),
-    o = n(824832),
+    o = n(644508),
+    s = n(824832),
     l = n(652215),
     c = n(985018),
     u = n(428042);
@@ -21,7 +21,7 @@ function d(e) {
         null == (e = n.current) || e.activateUploadDialogue()
     }, E = i.useCallback(async (e, n, r) => {
         var i;
-        h(!0), await (0, s.f)({
+        h(!0), await (0, o.f)({
             userImage: {
                 data: e,
                 file: n,
@@ -42,7 +42,7 @@ function d(e) {
             disabled: m
         }), (0, r.jsx)("div", {
             className: u.F,
-            children: (0, r.jsx)(o.Ay, {
+            children: (0, r.jsx)(s.Ay, {
                 ref: n,
                 onChange: E,
                 setLoading: p,

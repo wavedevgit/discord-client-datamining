@@ -9,7 +9,7 @@ n(64700);
 var i = n(996682),
     a = n(27989);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,14 +18,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -70,11 +70,11 @@ function d(e, t) {
 let f = e => {
     var t, n;
     let {
-        size: s = "md",
+        size: o = "md",
         width: l,
         height: d
-    } = e, f = u(e, ["size", "width", "height"]), p = (0, a.J)(s), _ = null != (t = null == p ? void 0 : p.width) ? t : l, h = null != (n = null == p ? void 0 : p.height) ? n : d;
-    return (0, r.jsxs)("svg", c(o({}, (0, i.A)(f)), {
+    } = e, f = u(e, ["size", "width", "height"]), p = (0, a.J)(o), _ = null != (t = null == p ? void 0 : p.width) ? t : l, h = null != (n = null == p ? void 0 : p.height) ? n : d;
+    return (0, r.jsxs)("svg", c(s({}, (0, i.A)(f)), {
         xmlns: "http://www.w3.org/2000/svg",
         width: _,
         height: h,

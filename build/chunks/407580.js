@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(626584),
-    s = n(69114),
-    o = n(322683),
+    o = n(69114),
+    s = n(322683),
     l = n(734057),
     c = n(498642),
     u = n(544180),
@@ -65,8 +65,8 @@ function y(e) {
     if (Math.random() > .1) return;
     let n = null == e.apiResponseTimestamp ? null : e.apiResponseTimestamp - e.initialSendTimestamp,
         r = null == e.gatewaySeenTimestamp ? null : e.gatewaySeenTimestamp - e.initialSendTimestamp,
-        i = (0, o.O)();
-    d.default.track(f.HAw.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, s.A)()), {
+        i = (0, s.O)();
+    d.default.track(f.HAw.SEND_MESSAGE_ROUNDTRIP, _(m(_({}, (0, o.A)()), {
         api_latency_ms: n,
         gateway_latency_ms: r,
         channel_id: t.id,
@@ -93,14 +93,14 @@ class O extends r.Ay.Store {
     }
     recordMessageSendAttempt(e, t) {
         var n, r, i, a;
-        let s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
-            o = (null != (n = null == (i = s.attachments) ? void 0 : i.length) ? n : 0) + (null != (r = null == (a = s.attachmentsToUpload) ? void 0 : a.length) ? r : 0),
+        let o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {},
+            s = (null != (n = null == (i = o.attachments) ? void 0 : i.length) ? n : 0) + (null != (r = null == (a = o.attachmentsToUpload) ? void 0 : a.length) ? r : 0),
             l = {
                 initialSendTimestamp: Date.now(),
                 apiResponseTimestamp: null,
                 gatewaySeenTimestamp: null,
                 channelId: e,
-                attachmentCount: o
+                attachmentCount: s
             };
         this.pendingMessages.set(t, l), setTimeout(() => {
             let e = this.pendingMessages.get(t);

@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(506774),
+    o = n(311907),
+    s = n(506774),
     l = n(73153),
     c = n(652215);
 
@@ -77,7 +77,7 @@ function h(e) {
 function m() {
     _ = {}
 }
-class g extends(r = s.Ay.PersistedStore) {
+class g extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         _ = null != e ? e : {}
     }
@@ -99,9 +99,9 @@ class g extends(r = s.Ay.PersistedStore) {
 }
 u(g, "displayName", "SelectivelySyncedUserSettingsStore"), u(g, "persistKey", "SelectivelySyncedUserSettingsStore"), u(g, "migrations", [() => {
     var e, t;
-    let n = null != (e = o.w.get("UserSettingsSync")) ? e : {},
-        r = null != (t = o.w.get("UserSettingsStore")) ? t : {};
-    o.w.remove("UserSettingsSync");
+    let n = null != (e = s.w.get("UserSettingsSync")) ? e : {},
+        r = null != (t = s.w.get("UserSettingsStore")) ? t : {};
+    s.w.remove("UserSettingsSync");
     let i = {};
     return !1 === n[c.nc_.TEXT] && (i.text = {
         shouldSync: !1,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(230109),
     c = n(397927),
     u = n(688810),
@@ -29,7 +29,7 @@ let A = function(e) {
         closeLayer: t,
         guild: n,
         onCtaVisibilityChange: a
-    } = e, A = i.useRef(null), I = (0, o.bG)([h.default], () => h.default.getCurrentUser()), S = (0, o.bG)([m.A], () => m.A.boostSlots), T = null == I ? void 0 : I.isPremiumGroupMember(), {
+    } = e, A = i.useRef(null), I = (0, s.bG)([h.default], () => h.default.getCurrentUser()), S = (0, s.bG)([m.A], () => m.A.boostSlots), T = null == I ? void 0 : I.isPremiumGroupMember(), {
         analyticsLocations: C
     } = (0, u.Ay)(), [N, w] = i.useState(!1), R = i.useMemo(() => Object.keys(S).filter(e => {
         let t = S[e];
@@ -49,7 +49,7 @@ let A = function(e) {
         }), w(!1)
     }
 
-    function x() {
+    function L() {
         (0, f.A)({
             initialPlanId: null,
             subscriptionTier: b.pe.TIER_2,
@@ -64,7 +64,7 @@ let A = function(e) {
         })
     }
 
-    function L() {
+    function x() {
         (0, f.A)({
             initialPlanId: null,
             subscriptionTier: b.pe.TIER_2,
@@ -99,7 +99,7 @@ let A = function(e) {
                     className: v.SJ,
                     children: [(0, r.jsx)(c._Jp, {
                         color: P > 0 ? c.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK_REFRESH : "currentColor",
-                        className: s()(v.Me, {
+                        className: o()(v.Me, {
                             [v.S3]: P > 0
                         })
                     }), (0, r.jsx)(c.Text, {
@@ -148,12 +148,12 @@ let A = function(e) {
                     size: "md",
                     icon: c.okO,
                     text: O.intl.string(O.t["8MYSQw"]),
-                    onClick: L
+                    onClick: x
                 }) : (0, r.jsx)(c.Button, {
                     variant: "secondary",
                     size: "md",
                     text: O.intl.string(O.t.Q43TvC),
-                    onClick: x,
+                    onClick: L,
                     disabled: T
                 })]
             })]

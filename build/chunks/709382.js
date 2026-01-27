@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(607470),
-    o = n(572808),
+    o = n(607470),
+    s = n(572808),
     l = n(860923),
     c = n(149505),
     u = n(577632),
@@ -73,7 +73,7 @@ let m = {
                 src: v.backgrounds.river.static,
                 alt: "",
                 draggable: !1
-            }), g && (0, r.jsx)(s.A, {
+            }), g && (0, r.jsx)(o.A, {
                 className: p.Ki,
                 style: {
                     transform: "translate(779px, 1009px)"
@@ -87,7 +87,7 @@ let m = {
                 src: v.backgrounds.camp.static,
                 alt: "",
                 draggable: !1
-            }), o.dG.map(e => {
+            }), s.dG.map(e => {
                 var n;
                 return (0, r.jsx)(d.A, h({
                     occupant: null == (n = t[e.id - 1]) ? void 0 : n.claimedBy,
@@ -103,7 +103,7 @@ let m = {
                 enableAnimations: E
             }, e.userId)), g && (0, r.jsxs)("div", {
                 className: a()(p.cA, p.ey),
-                children: [(0, r.jsx)(s.A, {
+                children: [(0, r.jsx)(o.A, {
                     className: p.Ki,
                     style: {
                         transform: "translate(1014px, 773px)"
@@ -112,13 +112,13 @@ let m = {
                     autoPlay: !0,
                     controls: !1,
                     loop: !0
-                }), (0, r.jsx)(s.A, {
+                }), (0, r.jsx)(o.A, {
                     className: p.Ki,
                     src: v.ambience.fireflies.animated,
                     autoPlay: !0,
                     controls: !1,
                     loop: !0
-                }), (0, r.jsx)(s.A, {
+                }), (0, r.jsx)(o.A, {
                     className: p.Ki,
                     style: {
                         transform: "translate(0, 1216px)"

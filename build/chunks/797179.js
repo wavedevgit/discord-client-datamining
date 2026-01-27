@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(997509),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -50,10 +50,10 @@ function u(e, t) {
 }
 
 function d(e) {
-    a.A.open(e, s.BEX.SOUNDBOARD), (0, i.mMO)(async () => {
+    a.A.open(e, o.BEX.SOUNDBOARD), (0, i.mMO)(async () => {
         let {
             default: t
-        } = await Promise.all([n.e("40556"), n.e("61274")]).then(n.bind(n, 6503));
+        } = await Promise.all([n.e("40556"), n.e("74152")]).then(n.bind(n, 6503));
         return n => (0, r.jsx)(t, u(l({}, n), {
             guildId: e
         }))

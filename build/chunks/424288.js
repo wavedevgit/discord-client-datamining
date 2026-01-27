@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 424288, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     pG: "welcomeCard_d74b42",
     _X: "welcomeCardText_d74b42",

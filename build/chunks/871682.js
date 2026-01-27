@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(615300),
     c = n(397927),
     u = n(796032);
@@ -92,7 +92,7 @@ class m extends(r = a.Component) {
             children: t
         } = this.props;
         return (0, i.jsx)(l.A.div, {
-            className: o()(e, u.a),
+            className: s()(e, u.a),
             style: this.getAnimatedStyle(),
             children: t
         })

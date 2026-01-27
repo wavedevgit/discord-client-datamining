@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(287809),
-    o = n(939341),
+    o = n(287809),
+    s = n(939341),
     l = n(574520),
     c = n(263577),
     u = n(506326),
@@ -20,14 +20,14 @@ let p = [u.R_];
 
 function _(e) {
     var t, n, r, i;
-    let o = (0, a.bG)([l.A], () => l.A.getMatchingActivity(e)),
-        c = (0, a.bG)([s.default], () => s.default.getUser(e.author_id));
-    if (null == o || null == c) return {};
+    let s = (0, a.bG)([l.A], () => l.A.getMatchingActivity(e)),
+        c = (0, a.bG)([o.default], () => o.default.getUser(e.author_id));
+    if (null == s || null == c) return {};
     let u = e.extra.entries[0],
-        d = null != (t = null != (n = o.state) ? n : null == (i = u.media.artists[0]) ? void 0 : i.name) ? t : u.media.title,
-        f = null != (r = o.details) ? r : u.media.title;
+        d = null != (t = null != (n = s.state) ? n : null == (i = u.media.artists[0]) ? void 0 : i.name) ? t : u.media.title,
+        f = null != (r = s.details) ? r : u.media.title;
     return {
-        activity: o,
+        activity: s,
         artist: d,
         currentEntry: u,
         title: f,
@@ -42,14 +42,14 @@ function h(e) {
         selected: i,
         hovered: a
     } = e, {
-        activity: s,
+        activity: o,
         artist: l
     } = _(t), {
         largeImage: h
-    } = (0, o.nO)({
+    } = (0, s.nO)({
         entry: t
     });
-    return null == s ? (0, r.jsx)(d.eG, {}) : (0, r.jsxs)(d.Zp, {
+    return null == o ? (0, r.jsx)(d.eG, {}) : (0, r.jsxs)(d.Zp, {
         selected: i,
         children: [(0, r.jsxs)(d.UA, {
             children: [(0, r.jsx)(d.Hp, {

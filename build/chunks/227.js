@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(607470),
+    o = n.n(a),
+    s = n(607470),
     l = n(12228),
     c = n(763673),
     u = n(967054),
@@ -20,13 +20,13 @@ function p(e) {
         nameplate: t,
         hovered: n,
         selected: a,
-        content: o,
+        content: s,
         placement: c
-    } = e, p = (0, u._)(o, t, n, a, c), h = (0, l.i)(n, a), m = i.useRef(null == t);
+    } = e, p = (0, u._)(s, t, n, a, c), h = (0, l.i)(n, a), m = i.useRef(null == t);
     return (i.useEffect(() => {
         m.current || null != t || (m.current = !0)
     }, [t]), null == t) ? null : (0, r.jsx)("div", {
-        className: s()(f.kL, {
+        className: o()(f.kL, {
             [f.qG]: m.current,
             [f.WB]: c === d.u.ACCOUNT
         }),
@@ -36,7 +36,7 @@ function p(e) {
         "aria-hidden": !0,
         children: (0, r.jsx)(_, {
             nameplate: t,
-            className: s()(f._8, {
+            className: o()(f._8, {
                 [f.PT]: n,
                 [f.wH]: a,
                 [f.ct]: c === d.u.ACCOUNT,
@@ -59,20 +59,20 @@ function _(e) {
         className: n,
         style: i,
         animate: a,
-        loop: s
+        loop: o
     } = e, {
-        staticAsset: o,
+        staticAsset: s,
         animatedAsset: l
     } = (0, c.r)(t), u = !(null == l ? void 0 : l.endsWith(".webm"));
-    return null == o || null == l ? null : u ? (0, r.jsx)(m, {
-        asset: a ? l : o,
+    return null == s || null == l ? null : u ? (0, r.jsx)(m, {
+        asset: a ? l : s,
         className: n,
         style: i
     }) : (0, r.jsx)(h, {
         animatedAsset: l,
-        staticAsset: o,
+        staticAsset: s,
         animate: a,
-        loop: s,
+        loop: o,
         style: i,
         className: n
     })
@@ -83,21 +83,21 @@ function h(e) {
         staticAsset: t,
         animatedAsset: n,
         animate: a,
-        loop: s,
+        loop: o,
         className: l,
         style: c
     } = e, u = i.useRef(null);
     return i.useEffect(() => {
-        null != u.current && (a || s ? u.current.play() : u.current.pause())
-    }, [a, s]), (0, r.jsx)("div", {
+        null != u.current && (a || o ? u.current.play() : u.current.pause())
+    }, [a, o]), (0, r.jsx)("div", {
         className: f.j,
         style: c,
-        children: (0, r.jsx)(o.A, {
+        children: (0, r.jsx)(s.A, {
             src: n,
             poster: t,
             ref: u,
             playsInline: !0,
-            loop: s,
+            loop: o,
             controls: !1,
             className: l,
             tabIndex: -1

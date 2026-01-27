@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(439372),
     i = n(734057),
     a = n(383501),
-    s = n(994500),
-    o = n(927813),
+    o = n(994500),
+    s = n(927813),
     l = n(549022);
 n(741812);
 var c = n(522419),
@@ -24,9 +24,9 @@ function d(e, t, n) {
     }) : e[t] = n, e
 }
 n(100544);
-let f = 3 * o.A.Millis.DAY,
-    p = 2 * o.A.Millis.DAY,
-    _ = +o.A.Millis.HOUR;
+let f = 3 * s.A.Millis.DAY,
+    p = 2 * s.A.Millis.DAY,
+    _ = +s.A.Millis.HOUR;
 
 function h(e) {
     let {
@@ -35,8 +35,8 @@ function h(e) {
     if (null == t) return;
     let n = i.A.getChannel(t);
     if (null != n && n.isGroupDM()) {
-        let e = n.recipients.filter(e => s.A.isBlocked(e)),
-            r = n.recipients.filter(e => s.A.isIgnored(e));
+        let e = n.recipients.filter(e => o.A.isBlocked(e)),
+            r = n.recipients.filter(e => o.A.isIgnored(e));
         (e.length > 0 || r.length > 0) && !n.blockedUserWarningDismissed && !b(t) && (0, c.y)({
             channelId: t,
             blockedUserIds: e,

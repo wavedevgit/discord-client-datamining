@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(854284),
+    o = n.n(a),
+    s = n(854284),
     l = n(311907),
     c = n(775602),
     u = n(940622),
@@ -61,15 +61,15 @@ let O = e => {
             accessibilityLabel: N
         } = _, w = y ? 500 : .1, [R, P] = i.useState(-w), {
             stop: D,
-            reset: x,
-            ticking: L
+            reset: L,
+            ticking: x
         } = (0, p.A)(e => {
             P(t => t + e)
-        }), j = i.useRef(w);
+        }), M = i.useRef(w);
         i.useEffect(() => {
-            j.current = w
+            M.current = w
         }), i.useEffect(() => {
-            P(-j.current), A((0, h.u)(_.effects))
+            P(-M.current), A((0, h.u)(_.effects))
         }, [_]), i.useEffect(() => {
             let e = 0,
                 t = 1 / 0;
@@ -78,12 +78,12 @@ let O = e => {
                 r > e && (e = r), n.loop && n.start < t && (t = n.start)
             }), S(t), C(e)
         }, [C, v]);
-        let [M, k] = i.useState(!1);
+        let [j, k] = i.useState(!1);
         return i.useEffect(() => {
-            !0 === u || l || (D(), P(0)), !l && M && L.current && (D(), P(0)), a && l && !L.current && (x(), _.animationType === o.l.ANIMATION_TYPE_PERSISTENT ? P(d === f.H.FromStart ? 0 : I) : P(0))
-        }, [l, M, I, a, D, x, L, _.animationType, u, d]), (0, r.jsx)("div", {
+            !0 === u || l || (D(), P(0)), !l && j && x.current && (D(), P(0)), a && l && !x.current && (L(), _.animationType === s.l.ANIMATION_TYPE_PERSISTENT ? P(d === f.H.FromStart ? 0 : I) : P(0))
+        }, [l, j, I, a, D, L, x, _.animationType, u, d]), (0, r.jsx)("div", {
             ref: O,
-            className: s()(E.yC, {
+            className: o()(E.yC, {
                 [E.yo]: l && c
             }),
             "aria-label": N,
@@ -91,8 +91,8 @@ let O = e => {
             children: (0, r.jsx)("div", {
                 className: g ? E.qb : E.vW,
                 children: v.map((e, i) => {
-                    if (!L.current && _.animationType === o.l.ANIMATION_TYPE_PERSISTENT && null != _.staticFrameSrc && 0 === i && !0 === u) {
-                        var a, s, l, c;
+                    if (!x.current && _.animationType === s.l.ANIMATION_TYPE_PERSISTENT && null != _.staticFrameSrc && 0 === i && !0 === u) {
+                        var a, o, l, c;
                         let {
                             staticFrameSrc: n
                         } = _;
@@ -100,7 +100,7 @@ let O = e => {
                             className: E.QZ,
                             style: {
                                 top: null != (a = null == (l = e.position) ? void 0 : l.y) ? a : 0 - t,
-                                left: null != (s = null == (c = e.position) ? void 0 : c.x) ? s : 0
+                                left: null != (o = null == (c = e.position) ? void 0 : c.x) ? o : 0
                             },
                             src: n,
                             alt: "",
@@ -110,9 +110,9 @@ let O = e => {
                     return (0, r.jsx)(m.A, {
                         layerConfig: e,
                         animationType: _.animationType,
-                        ticking: L.current,
+                        ticking: x.current,
                         time: R,
-                        hasPlayedThrough: M,
+                        hasPlayedThrough: j,
                         setHasPlayedThrough: k,
                         maxLoops: n,
                         loopEnd: T,
@@ -129,7 +129,7 @@ let O = e => {
             useThumbnail: n,
             bannerAdjustment: i = 0,
             noBorderRadius: a,
-            isHovering: o = !1,
+            isHovering: s = !1,
             useOpacityOnHover: l = !0
         } = e, {
             reducedMotionSrc: c,
@@ -137,15 +137,15 @@ let O = e => {
             accessibilityLabel: d
         } = t;
         return (0, r.jsx)("div", {
-            className: s()(E.yC, {
-                [E.yo]: o && l
+            className: o()(E.yC, {
+                [E.yo]: s && l
             }),
             "aria-label": d,
             role: "img",
             children: (0, r.jsx)("div", {
                 className: a ? E.qb : E.vW,
                 children: (0, r.jsx)("img", {
-                    src: n && !o ? u : c,
+                    src: n && !s ? u : c,
                     className: E.QZ,
                     style: {
                         top: 0 - i
@@ -161,18 +161,18 @@ let O = e => {
             n = (0, l.bG)([c.A], () => c.A.useReducedMotion),
             i = (0, _.V)(e.skuId),
             a = (0, u.C)(null == i ? void 0 : i.config),
-            s = (0, h.b)(null == i ? void 0 : i.config),
-            f = null != a ? a : s,
+            o = (0, h.b)(null == i ? void 0 : i.config),
+            f = null != a ? a : o,
             {
                 autoPlay: p = !0,
                 isHovering: m
             } = e,
-            E = !!(!t && e.shopPreview || !t && (null == i ? void 0 : i.config.animationType) === o.l.ANIMATION_TYPE_PERSISTENT || n || !1 === p && !1 === m),
+            E = !!(!t && e.shopPreview || !t && (null == i ? void 0 : i.config.animationType) === s.l.ANIMATION_TYPE_PERSISTENT || n || !1 === p && !1 === m),
             {
                 loaded: y,
                 layerData: A
             } = (0, g.A)(i, !1 === E);
-        return null != i && null != f && (t || e.shopPreview || i.config.animationType !== o.l.ANIMATION_TYPE_INTERMITTENT) ? E ? (0, r.jsx)(v, {
+        return null != i && null != f && (t || e.shopPreview || i.config.animationType !== s.l.ANIMATION_TYPE_INTERMITTENT) ? E ? (0, r.jsx)(v, {
             useThumbnail: e.useThumbnail,
             config: f,
             bannerAdjustment: e.bannerAdjustment,

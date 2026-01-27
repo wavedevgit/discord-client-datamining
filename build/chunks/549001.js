@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(448761),
     i = n(843472),
     a = n(439372),
-    s = n(961350),
-    o = n(734057),
+    o = n(961350),
+    s = n(734057),
     l = n(320501),
     c = n(576705),
     u = n(309010),
@@ -37,7 +37,7 @@ class m extends a.A {
                 suppress: a,
                 requestToSpeakTimestamp: h
             } = e;
-            if (u.A.getVoiceChannelId() === t && a && null != t && n !== s.default.getId() && c.A.can(f.QY, o.A.getChannel(t)))
+            if (u.A.getVoiceChannelId() === t && a && null != t && n !== o.default.getId() && c.A.can(f.QY, s.A.getChannel(t)))
                 if (null != h) {
                     let e = d.default.getUser(n);
                     null != e && (0, p.p)(t, e, h)

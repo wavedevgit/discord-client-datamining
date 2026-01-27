@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 151199, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    y: () => l
+    y: () => o
 });
 var r = n(914430),
     i = n(924985),
-    a = n(808728),
+    l = n(808728),
     s = n(967198),
-    o = n(652215);
-let l = {
+    a = n(652215);
+let o = {
     binds: ["mod+shift+a"],
     comboKeysBindGlobal: !0,
     action() {
         let e = s.A.getGuildId();
-        return null != e && (a.Ay.getChannels(e)[o.rbe.GUILD_CATEGORY].some(e => {
+        return null != e && (l.Ay.getChannels(e)[a.rbe.GUILD_CATEGORY].some(e => {
             let {
                 channel: t
             } = e;

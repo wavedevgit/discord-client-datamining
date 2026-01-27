@@ -6,8 +6,8 @@ n.d(t, {
     A: () => d
 });
 var i, a = n(311907),
-    s = n(73153),
-    o = n(194486);
+    o = n(73153),
+    s = n(194486);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -18,12 +18,12 @@ function l(e, t, n) {
     }) : e[t] = n, e
 }
 let c = () => {
-    r = r === o.B.BASIC ? o.B.PREMIUM : o.B.BASIC
+    r = r === s.B.BASIC ? s.B.PREMIUM : s.B.BASIC
 };
 class u extends(i = a.Ay.PersistedStore) {
     initialize(e) {
         var t;
-        r = null != (t = null == e ? void 0 : e.animationType) ? t : o.B.PREMIUM
+        r = null != (t = null == e ? void 0 : e.animationType) ? t : s.B.PREMIUM
     }
     getState() {
         return {
@@ -32,6 +32,6 @@ class u extends(i = a.Ay.PersistedStore) {
     }
 }
 l(u, "displayName", "VoiceChannelEffectsPersistedStore"), l(u, "persistKey", "VoiceChannelEffectsPersistedStore");
-let d = new u(s.h, {
+let d = new u(o.h, {
     VOICE_CHANNEL_EFFECT_TOGGLE_ANIMATION_TYPE: c
 })

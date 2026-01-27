@@ -1,52 +1,52 @@
-/** Chunk was on 42944 **/
-/** chunk id: 624160, original params: e,a,n (module,exports,require) **/
-n.d(a, {
-    A: () => h
+/** Chunk was on 21738 **/
+/** chunk id: 624160, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => E
 });
-var t = n(627968),
-    l = n(64700),
-    i = n(503698),
-    r = n.n(i),
+var r = n(627968),
+    i = n(64700),
+    l = n(503698),
+    a = n.n(l),
     s = n(540185),
     o = n(397927),
     c = n(587895),
-    d = n(403362),
-    u = n(635344),
-    m = n(735321),
-    p = n(384377),
-    f = n(492280),
-    v = n(939899),
-    x = n(518477),
-    g = n(985018),
-    A = n(369134);
-let j = {
+    u = n(403362),
+    d = n(635344),
+    p = n(735321),
+    h = n(384377),
+    g = n(492280),
+    f = n(939899),
+    m = n(518477),
+    A = n(985018),
+    _ = n(369134);
+let b = {
     [s.x.FAVORITE_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: u.n.LEAGUE_OF_LEGENDS
+            applicationId: d.n.LEAGUE_OF_LEGENDS
         }),
-        getAriaLabel: () => g.intl.string(g.t.xJtdIm)
+        getAriaLabel: () => A.intl.string(A.t.xJtdIm)
     },
     [s.x.CURRENT_GAMES]: {
         placeholder: () => ({
             variant: "details",
-            applicationId: u.n.VALORANT
+            applicationId: d.n.VALORANT
         }),
-        getAriaLabel: () => g.intl.string(g.t.Ae8tRi)
+        getAriaLabel: () => A.intl.string(A.t.Ae8tRi)
     },
     [s.x.PLAYED_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [u.n.PEAK, u.n.BATTLEFIELD_6, u.n.REPO, u.n.BALDURS_GATE_3]
+            applicationIds: [d.n.PEAK, d.n.BATTLEFIELD_6, d.n.REPO, d.n.BALDURS_GATE_3]
         }),
-        getAriaLabel: () => g.intl.string(g.t["pBR+4j"])
+        getAriaLabel: () => A.intl.string(A.t["pBR+4j"])
     },
     [s.x.WANT_TO_PLAY_GAMES]: {
         placeholder: () => ({
             variant: "grid",
-            applicationIds: [u.n.MARVEL_RIVALS, u.n.WORLD_OF_WARCRAFT, u.n.RUST, u.n.SILKSONG]
+            applicationIds: [d.n.MARVEL_RIVALS, d.n.WORLD_OF_WARCRAFT, d.n.RUST, d.n.SILKSONG]
         }),
-        getAriaLabel: () => g.intl.string(g.t.NtoBi1)
+        getAriaLabel: () => A.intl.string(A.t.NtoBi1)
     },
     [s.x.APPLICATION]: {
         placeholder: e => ({
@@ -54,108 +54,108 @@ let j = {
             applicationId: e.applicationId
         }),
         icon: e => {
-            var a;
-            return null == (a = c.A.getApplication(e.applicationId)) ? void 0 : a.getIconURL(16)
+            var t;
+            return null == (t = c.A.getApplication(e.applicationId)) ? void 0 : t.getIconURL(16)
         },
         getAriaLabel: e => {
-            var a, n;
-            return g.intl.formatToPlainString(g.t.KfGahB, {
-                applicationName: null != (a = null == (n = c.A.getApplication(e.applicationId)) ? void 0 : n.name) ? a : ""
+            var t, n;
+            return A.intl.formatToPlainString(A.t.KfGahB, {
+                applicationName: null != (t = null == (n = c.A.getApplication(e.applicationId)) ? void 0 : n.name) ? t : ""
             })
         }
     }
 };
 
-function h(e) {
-    let a, {
+function E(e) {
+    let t, {
             widget: n,
-            onAddWidget: i,
+            onAddWidget: l,
             size: s = "default",
             loading: c = !1,
-            trackUserProfileEditAction: u
+            trackUserProfileEditAction: d
         } = e,
         {
-            placeholder: g,
-            getAriaLabel: h,
-            icon: I
-        } = j[n.type],
-        N = "small" === s,
-        b = l.useCallback(() => {
-            c || ((0, m.Y5)(n), u(function(e) {
-                for (var a = 1; a < arguments.length; a++) {
-                    var n = null != arguments[a] ? arguments[a] : {},
-                        t = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            placeholder: A,
+            getAriaLabel: E,
+            icon: O
+        } = b[n.type],
+        y = "small" === s,
+        I = i.useCallback(() => {
+            c || ((0, p.Y5)(n), d(function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var n = null != arguments[t] ? arguments[t] : {},
+                        r = Object.keys(n);
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                         return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), t.forEach(function(a) {
-                        var t;
-                        t = n[a], a in e ? Object.defineProperty(e, a, {
-                            value: t,
+                    }))), r.forEach(function(t) {
+                        var r;
+                        r = n[t], t in e ? Object.defineProperty(e, t, {
+                            value: r,
                             enumerable: !0,
                             configurable: !0,
                             writable: !0
-                        }) : e[a] = t
+                        }) : e[t] = r
                     })
                 }
                 return e
             }({
                 action: "WIDGET_ADDED"
-            }, n.getProfileEditAnalyticsOptions())), (0, p.XA)(x.jM.WIDGET_ADDED), null == i || i())
-        }, [c, n, u, i]),
-        E = null == I ? void 0 : I(n);
-    return (0, t.jsxs)("div", {
-        className: A.LG,
-        children: [(0, t.jsxs)(o.DUT, {
-            className: r()(A.PH, N && A.PG, c && A.Lq),
-            onClick: b,
-            "aria-label": h(n),
+            }, n.getProfileEditAnalyticsOptions())), (0, h.XA)(m.jM.WIDGET_ADDED), null == l || l())
+        }, [c, n, d, l]),
+        v = null == O ? void 0 : O(n);
+    return (0, r.jsxs)("div", {
+        className: _.LG,
+        children: [(0, r.jsxs)(o.DUT, {
+            className: a()(_.PH, y && _.PG, c && _.Lq),
+            onClick: I,
+            "aria-label": E(n),
             "aria-busy": c,
             children: [(() => {
-                let e = g(n);
+                let e = A(n);
                 switch (e.variant) {
                     case "details":
-                        return (0, t.jsx)(f.E, {
-                            className: A.xR,
+                        return (0, r.jsx)(g.E, {
+                            className: _.xR,
                             applicationId: e.applicationId,
                             size: s
                         });
                     case "grid":
-                        return (0, t.jsx)(f.l, {
-                            className: A.xR,
+                        return (0, r.jsx)(g.l, {
+                            className: _.xR,
                             applicationIds: e.applicationIds,
                             size: s
                         });
                     case "application-widget":
-                        return (0, t.jsx)(v.A, {
+                        return (0, r.jsx)(f.A, {
                             applicationId: e.applicationId,
                             size: s
                         });
                     default:
-                        return (0, d.xb)(e)
+                        return (0, u.xb)(e)
                 }
-            })(), (0, t.jsxs)("div", {
-                className: A.Lw,
-                children: [(0, t.jsx)(o.U1e, {
+            })(), (0, r.jsxs)("div", {
+                className: _.Lw,
+                children: [(0, r.jsx)(o.U1e, {
                     size: "md",
                     color: "currentColor",
-                    className: A.c9
-                }), (0, t.jsxs)("div", {
-                    className: A.DD,
-                    children: [(0, t.jsx)(o.Text, {
+                    className: _.c9
+                }), (0, r.jsxs)("div", {
+                    className: _.DD,
+                    children: [(0, r.jsx)(o.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: (0, m.L)(n)
-                    }), null != E ? (0, t.jsx)("img", {
-                        src: E,
+                        children: (0, p.L)(n)
+                    }), null != v ? (0, r.jsx)("img", {
+                        src: v,
                         alt: "",
                         width: 16,
                         height: 16,
-                        className: A.Kk
+                        className: _.Kk
                     }) : null]
                 })]
             })]
-        }), "application-widget" === (a = g(n)).variant ? (0, t.jsx)(v.R, {
-            applicationId: a.applicationId,
+        }), "application-widget" === (t = A(n)).variant ? (0, r.jsx)(f.R, {
+            applicationId: t.applicationId,
             size: s
         }) : null]
     })

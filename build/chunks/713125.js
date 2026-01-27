@@ -8,9 +8,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -82,7 +82,7 @@ function y() {
 }
 class b extends(r = i.Ay.Store) {
     shouldShowOnboarding(e) {
-        return e !== s.ME && e !== s.YYv && !!c(u[e])
+        return e !== o.ME && e !== o.YYv && !!c(u[e])
     }
     getOnboardingStatus(e) {
         return u[e]
@@ -95,7 +95,7 @@ class b extends(r = i.Ay.Store) {
         return null != (t = d[e]) ? t : "cover"
     }
 }
-o(b, "displayName", "GuildOnboardingStore");
+s(b, "displayName", "GuildOnboardingStore");
 let O = new b(a.h, {
     LOGOUT: f,
     GUILD_DELETE: g,

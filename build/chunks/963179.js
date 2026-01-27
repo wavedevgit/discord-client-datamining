@@ -1,63 +1,62 @@
-/** Chunk was on web.js **/
-/** chunk id: 963179, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.r(t), n.d(t, {
-    ItemDetailsModal: () => g
-}), n(228524), n(733351);
-var r = n(627968);
-n(64700);
-var i = n(423090),
-    a = n(311907),
-    s = n(397927),
-    o = n(67480),
-    l = n(328968),
-    c = n(371794),
-    u = n(998218),
-    d = n(56754),
-    f = n(550732),
-    p = n(376374),
-    _ = n(86889),
-    h = n(652215),
-    m = n(985018);
+/** Chunk was on 70104 **/
+/** chunk id: 963179, original params: t,e,r (module,exports,require) **/
+r.r(e), r.d(e, {
+    ItemDetailsModal: () => j
+}), r(228524), r(733351);
+var n = r(627968);
+r(64700);
+var l = r(423090),
+    s = r(311907),
+    i = r(397927),
+    a = r(67480),
+    o = r(328968),
+    c = r(371794),
+    d = r(998218),
+    u = r(56754),
+    x = r(550732),
+    p = r(376374),
+    m = r(86889),
+    v = r(652215),
+    _ = r(985018);
 
-function g(e) {
-    var t, n, g, E;
+function j(t) {
+    var e, r, j, f;
     let {
-        onClose: y,
-        transitionState: b,
-        skuId: O,
-        appId: v,
-        onHeaderTitleClick: A
-    } = e, I = (0, a.bG)([l.A], () => l.A.getForSKU(O), [O]), S = (0, a.bG)([o.A], () => o.A.get(O), [O]), T = (0, d.L)(O);
-    if (null == S) return null;
-    let C = null != (t = S.name) ? t : "",
-        N = null != (n = null == I || null == (E = I.description) ? void 0 : E.trim()) ? n : void 0,
-        w = (null == I ? void 0 : I.headerBackground) != null && null != (g = u.A.toURLSafe((0, c.YE)(v, I.headerBackground, 256))) ? g : void 0,
-        R = S.type === h.Puh.DURABLE && T,
-        P = S.type === h.Puh.DURABLE ? R ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : void 0,
+        onClose: g,
+        transitionState: h,
+        skuId: y,
+        appId: E,
+        onHeaderTitleClick: b
+    } = t, A = (0, s.bG)([o.A], () => o.A.getForSKU(y), [y]), I = (0, s.bG)([a.A], () => a.A.get(y), [y]), O = (0, u.L)(y);
+    if (null == I) return null;
+    let S = null != (e = I.name) ? e : "",
+        T = null != (r = null == A || null == (f = A.description) ? void 0 : f.trim()) ? r : void 0,
+        R = (null == A ? void 0 : A.headerBackground) != null && null != (j = d.A.toURLSafe((0, c.YE)(E, A.headerBackground, 256))) ? j : void 0,
+        N = I.type === v.Puh.DURABLE && O,
+        P = I.type === v.Puh.DURABLE ? N ? _.intl.string(_.t.bm82mm) : _.intl.string(_.t["6gprwf"]) : void 0,
         {
-            price: D
-        } = S;
-    return null == D ? null : (0, r.jsx)(f.C, {
-        appId: v,
-        skuId: S.id,
-        transitionState: b,
-        onHeaderTitleClick: null != A ? A : y,
-        onClose: y,
-        footer: (0, r.jsx)(p.$P, {
-            appId: v,
-            sku: S
+            price: k
+        } = I;
+    return null == k ? null : (0, n.jsx)(x.C, {
+        appId: E,
+        skuId: I.id,
+        transitionState: h,
+        onHeaderTitleClick: null != b ? b : g,
+        onClose: g,
+        footer: (0, n.jsx)(p.$P, {
+            appId: E,
+            sku: I
         }),
-        children: (0, r.jsx)(_.D, {
-            appId: v,
-            skuId: S.id,
-            title: C,
-            description: N,
-            imgSrc: w,
-            tag: null != P ? (0, r.jsx)(i.v, {
+        children: (0, n.jsx)(m.D, {
+            appId: E,
+            skuId: I.id,
+            title: S,
+            description: T,
+            imgSrc: R,
+            tag: null != P ? (0, n.jsx)(l.v, {
                 text: P
             }) : void 0,
-            FallbackIcon: s.qyI
+            FallbackIcon: i.qyI
         })
     })
 }

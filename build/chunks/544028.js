@@ -2,12 +2,12 @@
 /** chunk id: 544028, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => M
+    A: () => j
 });
 var r, i = n(311907),
     a = n(582754),
-    s = n(73153),
-    o = n(775602),
+    o = n(73153),
+    s = n(775602),
     l = n(677313),
     c = n(403528),
     u = n(997579),
@@ -71,7 +71,7 @@ function T() {
 }
 class C extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        (null == e ? void 0 : e.theme) != null && (b = 1, A = e.theme, (0, u.A)(A), null != e.preferences && (O = e.preferences), (0, a.Mw)(A) && (O[_.Fc.DARK] = A)), this.waitFor(f.Ay, d.A, p.A, o.A)
+        (null == e ? void 0 : e.theme) != null && (b = 1, A = e.theme, (0, u.A)(A), null != e.preferences && (O = e.preferences), (0, a.Mw)(A) && (O[_.Fc.DARK] = A)), this.waitFor(f.Ay, d.A, p.A, s.A)
     }
     getState() {
         return {
@@ -116,15 +116,15 @@ function D(e) {
     return O = g({}, O, e.preferences), T()
 }
 
-function x(e) {
+function L(e) {
     return I = e.theme, T()
 }
 
-function L() {
+function x() {
     return I = null, T()
 }
 
-function j() {
+function M() {
     return T()
 }
 m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migrations", [e => {
@@ -133,7 +133,7 @@ m(C, "displayName", "ThemeStore"), m(C, "persistKey", "ThemeStore"), m(C, "migra
         theme: t
     })
 }, e => e]);
-let M = new C(s.h, {
+let j = new C(o.h, {
     CACHE_LOADED: T,
     CONNECTION_OPEN: N,
     LOGOUT: R,
@@ -145,7 +145,7 @@ let M = new C(s.h, {
     SYSTEM_THEME_CHANGE: P,
     ACCESSIBILITY_DARK_SIDEBAR_TOGGLE: w,
     UPDATE_THEME_PREFERENCES: D,
-    SET_THEME_OVERRIDE: x,
-    CLEAR_THEME_OVERRIDE: L,
-    REFRESH_THEME: j
+    SET_THEME_OVERRIDE: L,
+    CLEAR_THEME_OVERRIDE: x,
+    REFRESH_THEME: M
 })

@@ -2,13 +2,14 @@
 /** chunk id: 201718, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    P: () => u
+    A: () => u,
+    P: () => d
 });
 var r = n(311907),
     i = n(562465),
     a = n(73153),
-    s = n(728458),
-    o = n(339580),
+    o = n(728458),
+    s = n(339580),
     l = n(652215);
 let c = {
         async fetchUserApplicationIdentitiesWithProfiles(e, t) {
@@ -34,12 +35,13 @@ let c = {
                 throw a.h.dispatch({
                     type: "USER_APPLICATION_IDENTITY_FETCH_USER_FAILURE",
                     userId: e
-                }), s.A.captureException(t), t
+                }), o.A.captureException(t), t
             }
         }
     },
-    u = (0, r.UT)(o.A, {
+    u = c,
+    d = (0, r.UT)(s.A, {
         getQueryId: l.fic.USER_APPLICATION_IDENTITIES,
-        get: e => o.A.getUserIdentities(e),
+        get: e => s.A.getUserIdentities(e),
         load: e => c.fetchUserApplicationIdentitiesWithProfiles(e)
     })

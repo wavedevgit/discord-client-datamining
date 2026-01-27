@@ -41,7 +41,7 @@ function a(e) {
     return e
 }
 
-function s(e, t) {
+function o(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -52,8 +52,8 @@ function s(e, t) {
     return n
 }
 
-function o(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
+function s(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : o(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
@@ -64,7 +64,7 @@ let c = 1024;
 var u = function(e) {
     return e.AV = "AV", e.SOCIAL = "SOCIAL", e.SEARCH = "SEARCH", e.SAFETY = "SAFETY", e
 }({});
-let d = [r.iL.VIDEO_BACKGROUND, r.iL.STREAM, r.iL.ACTIVITY, r.iL.VOICE_FILTER, r.iL.VOICE, r.iL.IN_APP_REPORTS, r.iL.BLOCK_USER, r.iL.SEARCH_RESULTS, r.iL.AGE_VERIFICATION].reduce((e, t, n) => o(a({}, e), {
+let d = [r.iL.VIDEO_BACKGROUND, r.iL.STREAM, r.iL.ACTIVITY, r.iL.VOICE_FILTER, r.iL.VOICE, r.iL.IN_APP_REPORTS, r.iL.BLOCK_USER, r.iL.SEARCH_RESULTS, r.iL.AGE_VERIFICATION].reduce((e, t, n) => s(a({}, e), {
         [t]: n
     }), {}),
     f = ["bad", "neutral", "good"],

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(990078),
-    s = n(397927),
-    o = n(849269),
+    o = n(397927),
+    s = n(849269),
     l = n(392054),
     c = n(207371),
     u = n(954571),
@@ -40,39 +40,39 @@ function b(e) {
         context: t,
         launchingComponentId: v,
         onSubmissionComplete: A
-    }), [C, N] = i.useState(!1), w = (0, o.Hq)({
+    }), [C, N] = i.useState(!1), w = (0, s.Hq)({
         applicationId: n.id,
         context: t
     }), R = i.useMemo(() => (0, h.kF)(O.displayName), [O.displayName]), {
         onActivityItemSelected: P,
         buttonVariant: D,
-        buttonText: x
+        buttonText: L
     } = (0, g.dn)({
         context: t,
         application: n,
         location: l.Oh.APP_LAUNCHER_APPLICATION_VIEW,
         sectionName: b,
         commandName: R,
-        autoDismissOnClick: w === o.o6.LEAVE || (0, c.x)(n),
+        autoDismissOnClick: w === s.o6.LEAVE || (0, c.x)(n),
         launchingComponentId: v,
         submitting: null != T ? T : S,
         onConfirmActivityLaunchChecksAlertOpen: I
     }), {
-        disabled: L,
-        reason: j
+        disabled: x,
+        reason: M
     } = (0, _.A)({
         context: t,
         application: n,
         activityAction: w
     });
     return (0, r.jsx)(a.m, {
-        shouldShow: null != j,
-        __unsupportedReactNodeAsText: j,
-        children: (0, r.jsx)(s.Button, {
+        shouldShow: null != M,
+        __unsupportedReactNodeAsText: M,
+        children: (0, r.jsx)(o.Button, {
             type: "submit",
             size: "md",
             variant: D,
-            disabled: L,
+            disabled: x,
             loading: C,
             onClick: () => {
                 N(!0), P(), u.default.track(E.HAw.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
@@ -81,10 +81,10 @@ function b(e) {
                 })
             },
             "aria-label": y.intl.formatToPlainString(y.t["XjP/R+"], {
-                buttonText: x,
+                buttonText: L,
                 applicationName: n.name
             }),
-            text: x
+            text: L
         })
     })
 }

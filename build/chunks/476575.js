@@ -6,7 +6,7 @@ n.r(t), n.d(t, {
     batchedUpdates: () => f,
     colorNames: () => c,
     createStringInterpolator: () => r,
-    frameLoop: () => o,
+    frameLoop: () => s,
     now: () => l,
     requestAnimationFrame: () => d,
     skipAnimation: () => u,
@@ -14,8 +14,8 @@ n.r(t), n.d(t, {
     willAdvance: () => p
 });
 var r, i, a = n(360276),
-    s = n(233710),
-    o = new a.c,
+    o = n(233710),
+    s = new a.c,
     l = function() {
         return performance.now()
     },
@@ -27,20 +27,20 @@ var r, i, a = n(360276),
     f = function(e) {
         return e()
     },
-    p = s.lQ,
+    p = o.lQ,
     _ = function(e) {
         var t;
         return i = (t = Object.assign({
             to: i,
             now: l,
-            frameLoop: o,
+            frameLoop: s,
             colorNames: c,
             skipAnimation: u,
             createStringInterpolator: r,
             requestAnimationFrame: d,
             batchedUpdates: f,
             willAdvance: p
-        }, h(e))).to, l = t.now, o = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
+        }, h(e))).to, l = t.now, s = t.frameLoop, c = t.colorNames, u = t.skipAnimation, r = t.createStringInterpolator, d = t.requestAnimationFrame, f = t.batchedUpdates, p = t.willAdvance, t
     };
 
 function h(e) {

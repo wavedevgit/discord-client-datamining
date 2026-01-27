@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(990078),
-    o = n(397927),
+    o = n(990078),
+    s = n(397927),
     l = n(746775);
 
 function c(e) {
@@ -24,10 +24,10 @@ function c(e) {
         width: 20,
         height: 20
     });
-    return (0, r.jsx)(s.m, {
+    return (0, r.jsx)(o.m, {
         text: i,
         position: "bottom",
-        children: (0, r.jsx)(o.sqX, {
+        children: (0, r.jsx)(s.sqX, {
             onClick: e => {
                 t(e)
             },

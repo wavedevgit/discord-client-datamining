@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(506774),
     i = n(73153),
     a = n(272355),
-    s = n(961350),
-    o = n(309010),
+    o = n(961350),
+    s = n(309010),
     l = n(525002),
     c = n(312006),
     u = n(516607);
@@ -34,8 +34,8 @@ class f extends a.A {
                 voiceStates: t
             } = e;
             t.forEach(e => {
-                if (null == e.channelId || e.userId !== s.default.getId() || (this.terminate(), r.w.get(u.zh, !1))) return;
-                let t = o.A.getVoiceChannelId();
+                if (null == e.channelId || e.userId !== o.default.getId() || (this.terminate(), r.w.get(u.zh, !1))) return;
+                let t = s.A.getVoiceChannelId();
                 null == t || e.channelId === t && c.Ay.isAudienceMember(e.userId, t) && (r.w.set(u.zh, !0), l.H(t))
             })
         })

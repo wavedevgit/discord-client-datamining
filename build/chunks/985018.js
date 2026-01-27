@@ -15,8 +15,8 @@ n.r(t), n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(932433),
-    s = n(280230),
-    o = n.n(s),
+    o = n(280230),
+    s = n.n(o),
     l = n(356422),
     c = n(226536),
     u = n(526617);
@@ -87,11 +87,11 @@ let m = h("en-US"),
             }, t),
             $link: (e, t, r) => {
                 let [a] = r, {
-                    Anchor: s
+                    Anchor: o
                 } = n(349288), l = {};
                 switch (typeof a) {
                     case "string":
-                        l.href = o().sanitizeUrl(a);
+                        l.href = s().sanitizeUrl(a);
                         break;
                     case "function":
                     default:
@@ -102,7 +102,7 @@ let m = h("en-US"),
                         if (null == a) break;
                         l.onClick = null != (c = a.onClick) ? c : a, l.onContextMenu = a.onContextMenu
                 }
-                return (0, i.createElement)(s, _(f({}, l), {
+                return (0, i.createElement)(o, _(f({}, l), {
                     key: t
                 }), e)
             }

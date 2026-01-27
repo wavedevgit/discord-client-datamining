@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(201275),
     u = n(141468),
@@ -66,7 +66,7 @@ function v(e) {
         theme: a,
         content: E = m.intl.string(m.t["6OSasb"]),
         className: b
-    } = e, v = (0, o.bG)([p.default], () => p.default.getCurrentUser()), A = _.Ay.useName(t, null, v), I = (0, c.ox)(n), S = i.useMemo(() => (0, u.rh)(O(y({}, (0, d.Ay)({
+    } = e, v = (0, s.bG)([p.default], () => p.default.getCurrentUser()), A = _.Ay.useName(t, null, v), I = (0, c.ox)(n), S = i.useMemo(() => (0, u.rh)(O(y({}, (0, d.Ay)({
         channelId: "0",
         content: E,
         tts: void 0,
@@ -85,7 +85,7 @@ function v(e) {
     return (0, r.jsx)(l.NPJ, {
         theme: a,
         children: e => (0, r.jsx)("div", {
-            className: s()(e, g.k, b),
+            className: o()(e, g.k, b),
             children: (0, r.jsx)(f.A, {
                 hideTimestamp: !0,
                 author: T,

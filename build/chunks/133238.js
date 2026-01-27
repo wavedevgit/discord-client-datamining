@@ -1,8 +1,8 @@
-/** Chunk was on 98865 **/
+/** Chunk was on 86901 **/
 /** chunk id: 133238, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     m: () => v,
-    y: () => g
+    y: () => h
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -10,20 +10,20 @@ var i = n(735438),
     l = n.n(i),
     a = n(311907),
     o = n(397927),
-    s = n(808728),
-    c = n(181079),
+    c = n(808728),
+    s = n(181079),
     u = n(422258),
     d = n(93055),
     f = n(616075),
     A = n(652215),
-    b = n(985018);
+    p = n(985018);
 
-function p(e, t) {
-    return e.type === A.rbe.GROUP_DM ? t ? b.intl.string(b.t["0BWmSM"]) : b.intl.string(b.t.uuVTOK) : e.type === A.rbe.DM ? t ? b.intl.string(b.t["2wfKGo"]) : b.intl.string(b.t.wPbAse) : t ? b.intl.string(b.t.Bou7lT) : b.intl.string(b.t["4wcdE/"])
+function b(e, t) {
+    return e.type === A.rbe.GROUP_DM ? t ? p.intl.string(p.t["0BWmSM"]) : p.intl.string(p.t.uuVTOK) : e.type === A.rbe.DM ? t ? p.intl.string(p.t["2wfKGo"]) : p.intl.string(p.t.wPbAse) : t ? p.intl.string(p.t.Bou7lT) : p.intl.string(p.t["4wcdE/"])
 }
 
 function v(e) {
-    let t = (0, a.bG)([s.Ay], () => s.Ay.getChannels(A.YYv))[A.rbe.GUILD_CATEGORY],
+    let t = (0, a.bG)([c.Ay], () => c.Ay.getChannels(A.YYv))[A.rbe.GUILD_CATEGORY],
         {
             isFavoritesPerk: n
         } = (0, f.l)("58e21a_1"),
@@ -32,28 +32,28 @@ function v(e) {
         } = (0, d.CJ)();
     if (!(0, d.pe)(e)) return null;
     let [
-        [c], b
+        [s], p
     ] = l().partition(t, e => "null" === e.channel.id);
 
     function v(t) {
         i(), (0, u.Jz)(e.id, t)
     }
-    return 0 === b.length ? (0, r.jsx)(o.Drp, {
+    return 0 === p.length ? (0, r.jsx)(o.Drp, {
         id: "favorite-channel",
-        label: p(e, !1),
+        label: b(e, !1),
         action: () => v(null)
     }) : (0, r.jsxs)(o.Drp, {
         id: "favorite-channel",
-        label: p(e, !1),
+        label: b(e, !1),
         action: () => v(null),
         children: [n && (0, r.jsx)(o.rXV, {
             children: (0, r.jsx)(o.Drp, {
-                id: "favorite-".concat(c.channel.id),
-                label: c.channel.name,
-                action: () => v("null" === c.channel.id ? null : c.channel.id)
-            }, c.channel.id)
+                id: "favorite-".concat(s.channel.id),
+                label: s.channel.name,
+                action: () => v("null" === s.channel.id ? null : s.channel.id)
+            }, s.channel.id)
         }), (0, r.jsx)(o.rXV, {
-            children: b.map(e => (0, r.jsx)(o.Drp, {
+            children: p.map(e => (0, r.jsx)(o.Drp, {
                 id: "favorite-".concat(e.channel.id),
                 label: e.channel.name,
                 action: () => v(e.channel.id)
@@ -62,11 +62,11 @@ function v(e) {
     })
 }
 
-function g(e) {
-    let t = (0, a.bG)([c.A], () => c.A.isFavorite(e.id));
+function h(e) {
+    let t = (0, a.bG)([s.A], () => s.A.isFavorite(e.id));
     return __OVERLAY__ || !t ? null : (0, r.jsx)(o.Drp, {
         id: "favorite-channel",
-        label: p(e, !0),
+        label: b(e, !0),
         color: "danger",
         action: () => e.type === A.rbe.GUILD_CATEGORY ? (0, o.mMO)(async () => {
             let {

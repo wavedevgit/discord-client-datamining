@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     C8: () => u,
-    G1: () => o,
+    G1: () => s,
     N$: () => r.Key,
     Nu: () => f,
     RX: () => h,
@@ -11,7 +11,7 @@ n.d(t, {
     Yy: () => l,
     dh: () => _,
     g$: () => p,
-    mi: () => s,
+    mi: () => o,
     zY: () => c
 }), n(896048);
 var r = n(16336);
@@ -37,8 +37,8 @@ function a(e) {
     }
     return e
 }
-let s = r.Key.F6,
-    o = new Map([
+let o = r.Key.F6,
+    s = new Map([
         [r.Key.F6, "f6"],
         [r.Key.Tab, "tab"],
         [r.Key.ArrowDown, "down"],

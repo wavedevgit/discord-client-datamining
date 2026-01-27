@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(73153),
     u = n(497685),
@@ -143,8 +143,8 @@ class w extends i.PureComponent {
             resultQuery: n,
             query: i,
             favorites: a,
-            searchOffset: s,
-            searchLimit: o,
+            searchOffset: o,
+            searchLimit: s,
             searchTotalResults: l,
             suggestions: c,
             hideFavorites: u
@@ -162,8 +162,8 @@ class w extends i.PureComponent {
             resultType: d,
             resultQuery: n,
             query: i,
-            searchOffset: s,
-            searchLimit: o,
+            searchOffset: o,
+            searchLimit: s,
             searchTotalResults: l,
             suggestions: c,
             onSelectSuggestion: this.handleSelectSuggestion,
@@ -179,11 +179,11 @@ class w extends i.PureComponent {
             id: b.ni,
             role: "tabpanel",
             "aria-labelledby": b.g9,
-            className: s()(A.kL, e),
+            className: o()(A.kL, e),
             onClick: N,
             ref: t,
             children: [(0, r.jsx)("div", {
-                className: s()(A.wx, this.props.headerClassName),
+                className: o()(A.wx, this.props.headerClassName),
                 children: this.renderHeader()
             }), (0, r.jsx)("div", {
                 className: A.Qs,
@@ -242,9 +242,9 @@ let R = i.forwardRef((e, t) => {
     let {
         query: n,
         resultQuery: a,
-        resultItems: s,
+        resultItems: o,
         suggestions: l
-    } = (0, o.cf)([p.A], () => ({
+    } = (0, s.cf)([p.A], () => ({
         query: p.A.getQuery(),
         resultQuery: p.A.getResultQuery(),
         resultItems: p.A.getResultItems(),
@@ -254,7 +254,7 @@ let R = i.forwardRef((e, t) => {
         forwardedRef: t,
         query: u,
         resultQuery: a,
-        resultItems: s,
+        resultItems: o,
         suggestions: l,
         favorites: d,
         searchOffset: 0,

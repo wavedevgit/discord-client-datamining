@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 266847, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     lm: "guildShopEmbed__86fa6",
     dc: "spinnerContainer__86fa6",

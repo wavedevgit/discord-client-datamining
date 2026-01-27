@@ -4,7 +4,7 @@
 n.d(t, {
     Ay: () => i,
     X3: () => a,
-    n2: () => s
+    n2: () => o
 }), n(896048);
 var r = n(136722);
 
@@ -24,7 +24,7 @@ function a(e) {
     for (let [t, n] of e) i(n)
 }
 
-function s(e) {
+function o(e) {
     let {
         permissionOverwrites_: t
     } = e;

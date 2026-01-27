@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(584682),
     i = n(376708),
     a = n(976860),
-    s = n(345942),
-    o = n(734057),
+    o = n(345942),
+    s = n(734057),
     l = n(376943),
     c = n(150129),
     u = n(9588),
@@ -55,7 +55,7 @@ function h(e, t) {
 
 function m(e) {
     if (null == e.channelId) return e;
-    let t = o.A.getChannel(e.channelId);
+    let t = s.A.getChannel(e.channelId);
     if (null == t) return e;
     let n = (0, r.j)(t);
     return h(p({}, e), {
@@ -69,5 +69,5 @@ async function g(e, t) {
     });
     if (null == n) return void(0, a.pX)(e, t);
     let r = m(n);
-    null == r.channelId ? (0, s.u)(r.guildId) : (0, i.C$)(r.channelId) && (0, i.C$)(r.threadId) ? null != r.threadId ? (0, a.pX)(d.BVt.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, a.pX)(d.BVt.CHANNEL(r.guildId, r.channelId, r.messageId), t) : (0, u.E)()
+    null == r.channelId ? (0, o.u)(r.guildId) : (0, i.C$)(r.channelId) && (0, i.C$)(r.threadId) ? null != r.threadId ? (0, a.pX)(d.BVt.CHANNEL_THREAD_VIEW(r.guildId, r.channelId, r.threadId, r.messageId), t) : (0, a.pX)(d.BVt.CHANNEL(r.guildId, r.channelId, r.messageId), t) : (0, u.E)()
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(23974),
     i = n(260509),
     a = n(860689),
-    s = n(661191),
-    o = n(961350),
+    o = n(661191),
+    s = n(961350),
     l = n(652215),
     c = n(349828);
 
@@ -40,7 +40,7 @@ class f extends r.f {
     constructor(...e) {
         super(...e), u(this, "getGuild", e => {
             if (null != e) return e === l.YYv ? c._ : this.get(e)
-        }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => s.default.keys(e)))
+        }), u(this, "getGuilds", this.memoized(e => d({}, e))), u(this, "getGuildsArray", this.memoized(e => Object.values(e))), u(this, "getGuildIds", this.memoized(e => o.default.keys(e)))
     }
 }
 u(f, "displayName", "GuildStore");
@@ -117,9 +117,9 @@ let p = new f({
             guildId: n,
             joinedAt: r,
             user: a
-        } = e, s = o.default.getId(), l = t.get(n);
-        if (s !== a.id || null == l) return;
+        } = e, o = s.default.getId(), l = t.get(n);
+        if (o !== a.id || null == l) return;
         let c = "string" == typeof r ? new Date(r) : r;
         c !== l.joinedAt && null != c && t.set(n, (0, i.kn)(l, c))
     }
-}, "libdiscore")
+})

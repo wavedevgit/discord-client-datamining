@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(439372),
     a = n(961350),
-    s = n(131319),
-    o = n(734057),
+    o = n(131319),
+    s = n(734057),
     l = n(309010),
     c = n(117549),
     u = n(652215);
@@ -24,9 +24,9 @@ function d(e, t, n) {
 
 function f() {
     let e = l.A.getVoiceChannelId(),
-        t = s.A.bitrate;
+        t = o.A.bitrate;
     if (null == e) return;
-    let n = o.A.getChannel(e);
+    let n = s.A.getChannel(e);
     null == n || t !== n.bitrate && r.h.dispatch({
         type: "SET_CHANNEL_BITRATE",
         bitrate: n.bitrate
@@ -38,7 +38,7 @@ function p() {
     let t = l.A.getVoiceChannelId(),
         n = c.A.mode;
     if (null == t) return;
-    let i = o.A.getChannel(t);
+    let i = s.A.getChannel(t);
     if (null == i) return;
     let a = null != (e = i.videoQualityMode) ? e : u.K3c.AUTO;
     n !== a && r.h.dispatch({

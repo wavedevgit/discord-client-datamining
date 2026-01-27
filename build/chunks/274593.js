@@ -2,13 +2,13 @@
 /** chunk id: 274593, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(255438),
     i = n(613057),
     a = n(985018);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o {
+class s {
     get displayMessage() {
         if (null == this.code) return a.intl.string(a.t["5NMPSS"]);
         let {
@@ -26,14 +26,14 @@ class o {
             case i.Hi.DISK_LOW:
                 let {
                     available: t, required: n
-                } = this.context, s = (0, r.Xq)(t, {
+                } = this.context, o = (0, r.Xq)(t, {
                     useKibibytes: !0
-                }), o = (0, r.Xq)(n, {
+                }), s = (0, r.Xq)(n, {
                     useKibibytes: !0
                 });
                 return a.intl.formatToPlainString(a.t["2DR5dl"], {
-                    required: o,
-                    available: s
+                    required: s,
+                    available: o
                 });
             case i.Hi.POST_INSTALL_FAILED:
                 let {
@@ -75,6 +75,6 @@ class o {
         }
     }
     constructor(e) {
-        s(this, "raw", void 0), s(this, "context", void 0), s(this, "code", void 0), s(this, "uuid", void 0), s(this, "applicationId", void 0), s(this, "branchId", void 0), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
+        o(this, "raw", void 0), o(this, "context", void 0), o(this, "code", void 0), o(this, "uuid", void 0), o(this, "applicationId", void 0), o(this, "branchId", void 0), this.raw = e, null != e.code && (this.code = e.code), null != e.uuid && (this.uuid = e.uuid), null != e.application_id && (this.applicationId = e.application_id), null != e.branch_id && (this.branchId = e.branch_id), null != e.context ? this.context = e.context : this.context = {}
     }
 }

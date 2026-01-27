@@ -3,15 +3,15 @@
 var r = n(646344),
     i = n(714163),
     a = n(681447),
-    s = "Expected a function",
-    o = Math.max,
+    o = "Expected a function",
+    s = Math.max,
     l = Math.min;
 e.exports = function(e, t, n) {
     var c, u, d, f, p, _, h = 0,
         m = !1,
         g = !1,
         E = !0;
-    if ("function" != typeof e) throw TypeError(s);
+    if ("function" != typeof e) throw TypeError(o);
 
     function y(t) {
         var n = c,
@@ -59,7 +59,7 @@ e.exports = function(e, t, n) {
         }
         return void 0 === p && (p = setTimeout(A, t)), f
     }
-    return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? o(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), T.cancel = function() {
+    return t = a(t) || 0, r(n) && (m = !!n.leading, d = (g = "maxWait" in n) ? s(a(n.maxWait) || 0, t) : d, E = "trailing" in n ? !!n.trailing : E), T.cancel = function() {
         void 0 !== p && clearTimeout(p), h = 0, c = _ = u = p = void 0
     }, T.flush = S, T
 }

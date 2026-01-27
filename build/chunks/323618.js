@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(934551),
+    o = n.n(a),
+    s = n(934551),
     l = n(311907),
     c = n(554146),
     u = n(827734),
@@ -79,23 +79,23 @@ function v(e) {
         return e.length > 1 && (n = "linear-gradient(".concat(t, "deg, ").concat(e.join(", "), ")")), {
             background: "var(--background-gradient), ".concat(n)
         }
-    }, [C, a, N]), D = R ? u.A.unsafe_rawColors.WHITE.css : void 0, x = i.useCallback(() => {
+    }, [C, a, N]), D = R ? u.A.unsafe_rawColors.WHITE.css : void 0, L = i.useCallback(() => {
         v && A(), null == n || n()
     }, [v, A, n]);
     return (0, r.jsxs)("div", {
         className: b.fC,
         children: [(0, r.jsxs)(m.S4, {
-            onSelect: t ? void 0 : x,
+            onSelect: t ? void 0 : L,
             isSelected: !1,
             showSelectionCircle: w,
             name: y.intl.string(E.default.KSBBpC),
-            className: s()(b.kL, R && T, t && b.r9),
+            className: o()(b.kL, R && T, t && b.r9),
             showBadge: !1,
             showLockedBadge: !1,
             style: P,
             children: [!I && !R && (0, r.jsx)(O, {}), (0, r.jsx)("div", {
                 className: b.JU
-            }), (0, r.jsx)(o.PaintPaletteIcon, {
+            }), (0, r.jsx)(s.PaintPaletteIcon, {
                 color: D,
                 className: b.vL
             })]

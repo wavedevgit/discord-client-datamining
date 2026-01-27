@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
-/** chunk id: 438732, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => a
+/** Chunk was on 76850 **/
+/** chunk id: 438732, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => o
 });
-var r = n(311907),
-    i = n(695515);
+var n = r(311907),
+    i = r(695515);
 
-function a() {
-    return "adult" === (0, r.bG)([i.A], () => i.A.getAgeGroup())
+function o() {
+    return "adult" === (0, n.bG)([i.A], () => i.A.getAgeGroup())
 }

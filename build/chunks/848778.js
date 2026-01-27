@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(446474),
     a = n(514575),
-    s = n(560062),
-    o = n(742388),
+    o = n(560062),
+    s = n(742388),
     l = n(2871);
 r({
     target: "Promise",
@@ -14,29 +14,29 @@ r({
 }, {
     allSettled: function(e) {
         var t = this,
-            n = s.f(t),
+            n = o.f(t),
             r = n.resolve,
             c = n.reject,
-            u = o(function() {
+            u = s(function() {
                 var n = a(t.resolve),
-                    s = [],
-                    o = 0,
+                    o = [],
+                    s = 0,
                     c = 1;
                 l(e, function(e) {
-                    var a = o++,
+                    var a = s++,
                         l = !1;
                     c++, i(n, t, e).then(function(e) {
-                        !l && (l = !0, s[a] = {
+                        !l && (l = !0, o[a] = {
                             status: "fulfilled",
                             value: e
-                        }, --c || r(s))
+                        }, --c || r(o))
                     }, function(e) {
-                        !l && (l = !0, s[a] = {
+                        !l && (l = !0, o[a] = {
                             status: "rejected",
                             reason: e
-                        }, --c || r(s))
+                        }, --c || r(o))
                     })
-                }), --c || r(s)
+                }), --c || r(o)
             });
         return u.error && c(u.value), n.promise
     }

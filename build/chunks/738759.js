@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 738759, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => p
@@ -10,8 +10,8 @@ var i = n(397927),
     s = n(345942),
     o = n(183555),
     a = n(913453),
-    c = n(51943),
-    d = n(985018),
+    d = n(51943),
+    c = n(985018),
     u = n(781425);
 
 function p(e) {
@@ -21,21 +21,21 @@ function p(e) {
     } = e, {
         trackUserProfileAction: p
     } = (0, o.NJ)(), {
-        mutualGuilds: m,
-        isFetching: f
+        mutualGuilds: f,
+        isFetching: m
     } = (0, a.A)(t);
     return (0, l.jsx)(i.IpV, {
         className: u.DK,
         fade: !0,
-        children: null == m && f ? (0, l.jsx)("div", {
+        children: null == f && m ? (0, l.jsx)("div", {
             className: u.Ie,
             children: (0, l.jsx)(i.y$y, {})
-        }) : (null != m || f) && (null == m ? void 0 : m.length) !== 0 ? null == m ? void 0 : m.map(e => {
+        }) : (null != f || m) && (null == f ? void 0 : f.length) !== 0 ? null == f ? void 0 : f.map(e => {
             let {
                 guild: i,
                 nick: o
             } = e;
-            return (0, l.jsx)(c.A, {
+            return (0, l.jsx)(d.A, {
                 user: t,
                 guild: i,
                 nick: o,
@@ -52,7 +52,7 @@ function p(e) {
                 className: u.vC
             }), (0, l.jsx)("div", {
                 className: u.BI,
-                children: d.intl.string(d.t.zjVh8h)
+                children: c.intl.string(c.t.zjVh8h)
             })]
         })
     })

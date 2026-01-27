@@ -3,10 +3,10 @@
 var r = n(124639),
     i = n(436815),
     a = Object.prototype,
-    s = a.hasOwnProperty,
-    o = a.propertyIsEnumerable;
+    o = a.hasOwnProperty,
+    s = a.propertyIsEnumerable;
 e.exports = r(function() {
     return arguments
 }()) ? r : function(e) {
-    return i(e) && s.call(e, "callee") && !o.call(e, "callee")
+    return i(e) && o.call(e, "callee") && !s.call(e, "callee")
 }

@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(350972),
     i = n(985018),
     a = n(564355),
-    s = n(5201),
-    o = n(943184),
+    o = n(5201),
+    s = n(943184),
     l = n(899194),
     c = n(926468),
     u = n(764447),
@@ -36,7 +36,7 @@ let N = 60;
 function w() {
     return {
         id: r.LW.DEFAULT,
-        iconSource: s,
+        iconSource: o,
         name: i.intl.string(i.t.ANxkLy),
         isPremium: !1
     }
@@ -100,7 +100,7 @@ function R() {
         name: i.intl.string(i.t["ta/5RB"])
     }, {
         id: r.Ic.BEANIE,
-        iconSource: o,
+        iconSource: s,
         isPremium: !0,
         name: i.intl.string(i.t.IoLViw)
     }, {

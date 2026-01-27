@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(582754),
     a = n(73153),
-    s = n(315982),
-    o = n(395484),
+    o = n(315982),
+    s = n(395484),
     l = n(700241),
     c = n(662502),
     u = n(30076),
@@ -71,7 +71,7 @@ function A(e, t, n) {
                     body: E.intl.string(E.t.GHOBdx),
                     confirmText: E.intl.string(E.t.HbTSE6),
                     onConfirm: () => {
-                        s.R()
+                        o.R()
                     }
                 });
                 break
@@ -98,12 +98,12 @@ let I = {
                 context: n,
                 captchaPayload: i,
                 errorUxConfig: a = 0
-            } = e, [s, o] = t.split("#");
+            } = e, [o, s] = t.split("#");
             return r.Bo.post({
                 url: m.Rsh.USER_RELATIONSHIPS(),
                 body: b({
-                    username: s,
-                    discriminator: parseInt(o)
+                    username: o,
+                    discriminator: parseInt(s)
                 }, i),
                 context: n,
                 oldFormErrors: !0,
@@ -117,16 +117,16 @@ let I = {
                 userId: n,
                 context: i,
                 type: a,
-                fromFriendSuggestion: s,
-                confirmStrangerRequest: o,
+                fromFriendSuggestion: o,
+                confirmStrangerRequest: s,
                 captchaPayload: l
             } = e, c = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 0, u = d.default.getUser(n);
             return r.Bo.put({
                 url: m.Rsh.USER_RELATIONSHIP(n),
                 body: b({
                     type: a,
-                    from_friend_suggestion: s,
-                    confirm_stranger_request: o
+                    from_friend_suggestion: o,
+                    confirm_stranger_request: s
                 }, l),
                 context: i,
                 oldFormErrors: !0,
@@ -199,7 +199,7 @@ let I = {
             }))
         },
         confirmClearPendingRelationships(e) {
-            (0, o.A)(e)
+            (0, s.A)(e)
         },
         clearPendingRelationships: () => r.Bo.del({
             url: m.Rsh.USER_RELATIONSHIPS(),

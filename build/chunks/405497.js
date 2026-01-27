@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 405497, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96430 **/
+/** chunk id: 405497, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     DB: () => r.D,
     _x: () => i._,
     uo: () => a.u

@@ -23,9 +23,9 @@ var n = l(627968),
     _ = l(427157),
     A = l(71393),
     p = l(661191),
-    S = l(427262),
-    T = l(652215),
-    E = l(743981),
+    T = l(427262),
+    E = l(652215),
+    S = l(743981),
     y = l(985018),
     O = l(971517),
     N = l(186891);
@@ -41,7 +41,7 @@ function I(e) {
         className: s()(O.hP, {
             [O.r9]: i
         }),
-        onClick: i ? T.tEg : r,
+        onClick: i ? E.tEg : r,
         "aria-label": l,
         children: [(0, n.jsx)(t, {
             size: "custom",
@@ -97,7 +97,7 @@ function R(e) {
                         primaryGuild: null == t ? void 0 : t.primaryGuild,
                         userId: null == t ? void 0 : t.id,
                         contextGuildId: l,
-                        badgeSize: E.Sl.SIZE_16,
+                        badgeSize: S.Sl.SIZE_16,
                         textVariant: "heading-md/semibold",
                         className: N.Dz,
                         containerClassName: N.UL
@@ -108,7 +108,7 @@ function R(e) {
                     children: (0, n.jsx)(d.Text, {
                         variant: "text-md/medium",
                         color: "text-default",
-                        children: S.Ay.getUserTag(t)
+                        children: T.Ay.getUserTag(t)
                     })
                 })]
             })]

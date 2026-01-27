@@ -1,53 +1,52 @@
-/** Chunk was on web.js **/
-/** chunk id: 210742, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => b
+/** Chunk was on 7803 **/
+/** chunk id: 210742, original params: t,e,s (module,exports,require) **/
+s.d(e, {
+    A: () => p
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(731738),
-    s = n(397927),
-    o = n(964486),
-    l = n(831062),
-    c = n(954571),
-    u = n(308645),
-    d = n(335891),
-    f = n(929770),
-    p = n(259960),
-    _ = n(257110),
-    h = n(366141),
-    m = n(224010),
-    g = n(652215),
-    E = n(985018),
-    y = n(589896);
+var i = s(627968),
+    n = s(64700),
+    a = s(731738),
+    l = s(397927),
+    r = s(964486),
+    c = s(831062),
+    o = s(954571),
+    d = s(308645),
+    u = s(335891),
+    m = s(929770),
+    x = s(259960),
+    h = s(257110),
+    g = s(366141),
+    j = s(224010),
+    v = s(652215),
+    N = s(985018),
+    f = s(589896);
 
-function b() {
-    let e = (0, _.A)(),
-        t = (0, p.v)(),
-        n = (0, d.K)(),
-        b = (0, f.b)();
-    (0, o.Ay)(() => {
-        u.Yn()
+function p() {
+    let t = (0, h.A)(),
+        e = (0, x.v)(),
+        s = (0, u.K)(),
+        p = (0, m.b)();
+    (0, r.Ay)(() => {
+        d.Yn()
     });
-    let O = i.useRef(n);
-    return (i.useEffect(() => {
-        O.current = n
-    }), i.useEffect(() => {
-        t && (c.default.track(g.HAw.SAFETY_HUB_VIEWED, {
-            account_standing: O.current.state
-        }), l.A.increment({
+    let E = n.useRef(s);
+    return (n.useEffect(() => {
+        E.current = s
+    }), n.useEffect(() => {
+        e && (o.default.track(v.HAw.SAFETY_HUB_VIEWED, {
+            account_standing: E.current.state
+        }), c.A.increment({
             name: a.K.SAFETY_HUB_VIEW
         }))
-    }, [t]), e) ? (0, r.jsx)(s.y$y, {}) : null != b ? (0, r.jsxs)(s.$Td, {
-        color: s.Hv$.DANGER,
-        className: y.aL,
-        children: [E.intl.string(E.t.TDRvqs), (0, r.jsx)(s.zr9, {
-            onClick: () => u.Yn(),
-            children: E.intl.string(E.t.R1AN4F)
+    }, [e]), t) ? (0, i.jsx)(l.y$y, {}) : null != p ? (0, i.jsxs)(l.$Td, {
+        color: l.Hv$.DANGER,
+        className: f.aL,
+        children: [N.intl.string(N.t.TDRvqs), (0, i.jsx)(l.zr9, {
+            onClick: () => d.Yn(),
+            children: N.intl.string(N.t.R1AN4F)
         })]
-    }) : (0, r.jsxs)("div", {
-        className: y.kL,
-        children: [(0, r.jsx)(h.A, {}), (0, r.jsx)(m.q, {})]
+    }) : (0, i.jsxs)("div", {
+        className: f.kL,
+        children: [(0, i.jsx)(g.A, {}), (0, i.jsx)(j.q, {})]
     })
 }

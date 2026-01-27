@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 840387, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96430 **/
+/** chunk id: 840387, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     Z: () => a
 });
 var r = n(311907),
@@ -9,7 +8,7 @@ var r = n(311907),
 
 function a() {
     return !1 === (0, r.bG)([i.default], () => {
-        var e;
-        return null == (e = i.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
+        var t;
+        return null == (t = i.default.getCurrentUser()) ? void 0 : t.nsfwAllowed
     })
 }

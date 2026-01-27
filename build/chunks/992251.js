@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(460890),
-    s = n(834730),
-    o = n(406743);
+    o = n(834730),
+    s = n(406743);
 
 function l(e) {
     let {
@@ -17,10 +17,10 @@ function l(e) {
         i18n: n
     } = i.useContext(a.VO);
     return (0, r.jsx)("div", {
-        className: o.p,
-        children: (0, r.jsx)(s.E, {
+        className: s.p,
+        children: (0, r.jsx)(o.E, {
             variant: "text-md/medium",
-            className: o.q,
+            className: s.q,
             children: null != t ? t : n.LISTBOX_EMPTY_STATE
         })
     })

@@ -2,9 +2,9 @@
 /** chunk id: 267378, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => o,
+    a: () => s,
     ex: () => a,
-    f1: () => s
+    f1: () => o
 });
 var r = n(600975),
     i = n(945810);
@@ -25,7 +25,7 @@ let a = (0, r.C)({
             }
         }]
     }),
-    s = (0, r.C)({
+    o = (0, r.C)({
         kind: "user",
         id: "2025-06_dave_for_browser",
         label: "Allowing testing DAVE protocol for browser",
@@ -60,7 +60,7 @@ let a = (0, r.C)({
             }
         }]
     }),
-    o = (0, i.mj)({
+    s = (0, i.mj)({
         kind: "user",
         name: "2025-11-dave-opt-in",
         defaultConfig: {

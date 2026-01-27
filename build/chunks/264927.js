@@ -4,15 +4,15 @@
 n.d(t, {
     Z7: () => c,
     l2: () => l,
-    l6: () => s,
+    l6: () => o,
     lW: () => a,
-    oz: () => o
+    oz: () => s
 });
 var r = n(915089),
     i = n(985018);
 let a = (0, r.Ld)(),
-    s = (0, r.Ld)(),
     o = (0, r.Ld)(),
+    s = (0, r.Ld)(),
     l = (0, r.Ld)();
 
 function c() {
@@ -20,10 +20,10 @@ function c() {
         id: a,
         text: ","
     }, {
-        id: s,
+        id: o,
         text: ","
     }, {
-        id: o,
+        id: s,
         text: i.intl.string(i.t.gHp0C4)
     }, {
         id: l,

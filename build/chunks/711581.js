@@ -1,27 +1,28 @@
 /** Chunk was on 58127 **/
-/** chunk id: 711581, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** chunk id: 711581, original params: t,e,s (module,exports,require) **/
+"use strict";
+s.d(e, {
     NG: () => a,
     Np: () => r,
     QZ: () => i
 });
-var l = n(73153);
+var n = s(73153);
 
 function r() {
-    l.h.dispatch({
+    n.h.dispatch({
         type: "SPELLCHECK_TOGGLE"
     })
 }
 
 function a(t) {
-    l.h.dispatch({
+    n.h.dispatch({
         type: "SPELLCHECK_LEARN_WORD",
         word: t
     })
 }
 
 function i(t) {
-    l.h.dispatch({
+    n.h.dispatch({
         type: "SPELLCHECK_UNLEARN_WORD",
         word: t
     })

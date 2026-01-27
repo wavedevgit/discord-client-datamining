@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(158954),
     a = n(389723),
-    s = n(332661),
-    o = n(700713),
+    o = n(332661),
+    s = n(700713),
     l = n(526008);
 
 function c(e, t, n) {
@@ -95,7 +95,7 @@ function h(e) {
         getFloatingProps: N,
         getReferenceProps: w,
         transitionStyles: R
-    } = (0, o.G)();
+    } = (0, s.G)();
     return (0, r.jsxs)(a.iS, f(u({}, d), {
         isCollapsible: !0,
         isOpen: I,
@@ -120,7 +120,7 @@ function h(e) {
             style: u({}, C, R)
         }, N()), {
             children: (0, r.jsx)(a.X2, {
-                renderListItem: e => (0, r.jsx)(s.c, u({}, e)),
+                renderListItem: e => (0, r.jsx)(o.c, u({}, e)),
                 maxVisibleItems: c
             })
         }))]

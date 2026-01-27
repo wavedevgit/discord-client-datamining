@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 751775, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    R: () => l
+    R: () => i
 });
 let r = (0, n(600975).C)({
     kind: "user",
@@ -19,7 +19,7 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function l(e) {
+function i(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
     return r.useExperiment({
         location: e

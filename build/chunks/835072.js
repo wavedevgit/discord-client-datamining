@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(934551),
     a = n(765379),
-    s = n(126904),
-    o = n(82149),
+    o = n(126904),
+    s = n(82149),
     l = n(412242),
     c = n(566903),
     u = n(864436),
@@ -17,7 +17,7 @@ var i = n(934551),
     f = n(652215);
 let p = function(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
-    return (0, o.Cy)(e) ? i.StageIcon : (0, a.A)(e) ? t ? i.GameControllerIcon : i.AppsIcon : e.type === f.$pd.PLAYING ? i.GameControllerIcon : e.type === f.$pd.LISTENING ? i.MusicIcon : e.type === f.$pd.WATCHING || e.type === f.$pd.STREAMING ? i.TvIcon : e.type === f.$pd.COMPETING ? i.GameControllerIcon : null
+    return (0, s.Cy)(e) ? i.StageIcon : (0, a.A)(e) ? t ? i.GameControllerIcon : i.AppsIcon : e.type === f.$pd.PLAYING ? i.GameControllerIcon : e.type === f.$pd.LISTENING ? i.MusicIcon : e.type === f.$pd.WATCHING || e.type === f.$pd.STREAMING ? i.TvIcon : e.type === f.$pd.COMPETING ? i.GameControllerIcon : null
 };
 
 function _(e) {
@@ -26,7 +26,7 @@ function _(e) {
         textVariant: n,
         textClassName: i,
         iconClassName: a,
-        hideIcon: o = !1,
+        hideIcon: s = !1,
         hideText: f = !1,
         hideTooltip: _ = !1,
         canTruncate: h = !0
@@ -36,12 +36,12 @@ function _(e) {
         location: "PresenceActivityStatusWithCombinedTooltip"
     }), {
         enableTopNavButton: g
-    } = (0, s.tR)({
+    } = (0, o.tR)({
         location: "PresenceActivityStatusWithCombinedTooltip"
     }), {
         text: E,
         tooltip: y
-    } = (0, c.A)(t, m || g), b = p(t), O = null != b && !o;
+    } = (0, c.A)(t, m || g), b = p(t), O = null != b && !s;
     return (0, r.jsx)(d.A, {
         icon: O ? (0, r.jsx)(u.A, {
             icon: b,

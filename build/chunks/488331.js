@@ -1,50 +1,49 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 488331, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => p
 }), n(896048);
 var r = n(627968);
 n(64700);
 var i = n(793574),
-    a = n(688810),
-    s = n(735991),
-    o = n(485724),
-    l = n(429913),
+    l = n(688810),
+    a = n(735991),
+    s = n(485724),
+    o = n(429913),
     c = n(246097),
     u = n(96440),
     d = n(768349);
 
-function f(e) {
+function p(e) {
     let {
         applicationId: t,
         customId: n,
-        referrerId: f,
-        linkId: p,
-        message: _
+        referrerId: p,
+        linkId: m,
+        message: f
     } = e, {
-        analyticsLocations: h
-    } = (0, a.Ay)(i.A.ACTIVITY_BOOKMARK), [m] = (0, l.A)([t]), g = null != m && (0, s.Ag)(m), {
-        data: E,
-        error: y
-    } = (0, c.K)(null == m ? void 0 : m.id, p);
-    return null == m || !1 === g ? null : null != p && null == y && null != E ? (0, r.jsx)(a.f5, {
-        value: h,
+        analyticsLocations: g
+    } = (0, l.Ay)(i.A.ACTIVITY_BOOKMARK), [h] = (0, o.A)([t]), _ = null != h && (0, a.Ag)(h), {
+        data: b,
+        error: A
+    } = (0, c.K)(null == h ? void 0 : h.id, m);
+    return null == h || !1 === _ ? null : null != m && null == A && null != b ? (0, r.jsx)(l.f5, {
+        value: g,
         children: (0, r.jsx)(u.W, {
-            application: m,
+            application: h,
             customId: n,
-            customLink: E,
-            referrerId: f,
-            message: _
+            customLink: b,
+            referrerId: p,
+            message: f
         })
-    }) : (0, r.jsx)(a.f5, {
-        value: h,
-        children: (0, r.jsx)(o.W, {
-            app: m,
+    }) : (0, r.jsx)(l.f5, {
+        value: g,
+        children: (0, r.jsx)(s.W, {
+            app: h,
             linkType: d.J.ACTIVITY,
             activityCustomId: n,
-            activityReferrerId: f,
-            message: _
+            activityReferrerId: p,
+            message: f
         })
     })
 }

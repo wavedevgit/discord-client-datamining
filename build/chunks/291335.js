@@ -1,7 +1,7 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 291335, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v
+    A: () => b
 });
 var l = n(627968);
 n(64700);
@@ -10,40 +10,40 @@ var i = n(503698),
     s = n(311907),
     o = n(397927),
     a = n(730134),
-    c = n(169869),
-    d = n(837057),
+    d = n(169869),
+    c = n(837057),
     u = n(310419),
     p = n(773669),
-    m = n(427157),
-    f = n(967198),
+    f = n(427157),
+    m = n(967198),
     A = n(183555),
     x = n(488995),
-    j = n(985018),
-    h = n(882119);
+    g = n(985018),
+    j = n(882119);
 
-function g(e) {
+function h(e) {
     let {
         applicationRoleConnection: t,
         locale: n,
         onApplicationClicked: i,
         selectedGuildId: r
-    } = e, s = (0, c.VW)(t, n);
+    } = e, s = (0, d.VW)(t, n);
     return (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)("div", {
-            className: h.k_,
+            className: j.k_,
             children: null != t.application.bot ? (0, l.jsx)(a.A, {
-                user: new m.A(t.application.bot),
+                user: new f.A(t.application.bot),
                 size: o._3J.SIZE_16
             }) : (0, l.jsx)(o._7Z, {
                 color: "currentColor",
                 size: "sm"
             })
         }), (0, l.jsxs)("div", {
-            className: h.Hd,
+            className: j.Hd,
             children: [(0, l.jsxs)(o.DUT, {
-                className: h.OB,
+                className: j.OB,
                 onClick: () => {
-                    null == i || i(), (0, d.transitionToGlobalDiscovery)({
+                    null == i || i(), (0, c.transitionToGlobalDiscovery)({
                         tab: x.GlobalDiscoveryTab.APPS,
                         applicationId: t.application.id,
                         newSessionState: {
@@ -65,32 +65,32 @@ function g(e) {
                 }) : null, (0, l.jsx)(o.Text, {
                     variant: "text-xxs/normal",
                     color: "text-default",
-                    className: h.nk,
-                    children: j.intl.format(j.t.zIT9YA, {
+                    className: j.nk,
+                    children: g.intl.format(g.t.zIT9YA, {
                         applicationHook: () => t.application.name
                     })
                 })]
             }), null != s && s.length > 0 ? (0, l.jsx)("div", {
-                className: h.yu,
+                className: j.yu,
                 children: s
             }) : null]
         })]
     })
 }
 
-function v(e) {
+function b(e) {
     let {
         applicationRoleConnections: t,
         className: n,
         onClose: i
     } = e, {
         trackUserProfileAction: o
-    } = (0, A.NJ)(), a = (0, s.bG)([p.default], () => p.default.locale), c = (0, s.bG)([f.A], () => f.A.getGuildId());
+    } = (0, A.NJ)(), a = (0, s.bG)([p.default], () => p.default.locale), d = (0, s.bG)([m.A], () => m.A.getGuildId());
     return 0 === t.length ? null : (0, l.jsx)("ul", {
-        className: r()(h.kL, n),
+        className: r()(j.kL, n),
         children: t.map((e, t) => (0, l.jsx)("li", {
-            className: h.FI,
-            children: (0, l.jsx)(g, {
+            className: j.FI,
+            children: (0, l.jsx)(h, {
                 applicationRoleConnection: e,
                 locale: a,
                 onApplicationClicked: () => {
@@ -98,7 +98,7 @@ function v(e) {
                         action: "PRESS_APP_CONNECTION"
                     }), i()
                 },
-                selectedGuildId: null != c ? c : void 0
+                selectedGuildId: null != d ? d : void 0
             })
         }, "".concat(t, "-").concat(e.application.id)))
     })

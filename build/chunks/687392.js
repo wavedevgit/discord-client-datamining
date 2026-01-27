@@ -1,22 +1,22 @@
 /** Chunk was on 77759 **/
-/** chunk id: 687392, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => u
+/** chunk id: 687392, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => c
 });
-var n = r(627968);
-r(64700);
-var o = r(397927),
-    c = r(398590),
-    i = r(997509),
-    a = r(652215),
-    l = r(985018);
+var r = n(627968);
+n(64700);
+var i = n(397927),
+    l = n(398590),
+    a = n(997509),
+    u = n(652215),
+    o = n(985018);
 
-function u(e, t) {
-    return t === a.BRT.POPOUT ? null : (0, n.jsx)(o.Drp, {
+function c(e, t) {
+    return t === u.BRT.POPOUT ? null : (0, r.jsx)(i.Drp, {
         id: "nav-server-settings",
-        label: l.intl.string(l.t["154/bL"]),
+        label: o.intl.string(o.t["154/bL"]),
         action: () => {
-            (0, c.jH)(), i.A.open(e, a.BEX.MODERATION)
+            (0, l.jH)(), a.A.open(e, u.BEX.MODERATION)
         }
     })
 }

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(611010),
-    s = n(427157),
-    o = n(652215);
+    o = n(427157),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function d(e, t) {
 }
 async function f(e) {
     let t = (await r.Bo.get({
-        url: o.Rsh.GUILD_INTEGRATIONS(e),
+        url: s.Rsh.GUILD_INTEGRATIONS(e),
         query: {
             include_applications: !0,
             include_role_connections_metadata: !0
@@ -60,7 +60,7 @@ async function f(e) {
         rejectWithError: !1
     })).body.map(e => d(c({}, e), {
         application: "application" in e && null != e.application ? a.kJ.createFromServer(e.application) : void 0,
-        user: "user" in e && null != e.user ? new s.A(e.user) : void 0
+        user: "user" in e && null != e.user ? new o.A(e.user) : void 0
     }));
     return i.h.dispatch({
         type: "GUILD_SETTINGS_LOADED_INTEGRATIONS",
@@ -71,7 +71,7 @@ async function f(e) {
 
 function p(e) {
     return r.Bo.get({
-        url: o.Rsh.GUILD_WIDGET(e),
+        url: s.Rsh.GUILD_WIDGET(e),
         oldFormErrors: !0,
         rejectWithError: !0
     }).then(e => {

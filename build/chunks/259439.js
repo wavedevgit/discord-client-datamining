@@ -5,8 +5,8 @@ n.d(t, {
     A: () => O
 }), n(896048), n(747238), n(812715);
 var r, i, a = n(311907),
-    s = n(506774),
-    o = n(73153),
+    o = n(506774),
+    s = n(73153),
     l = n(998218),
     c = n(155078),
     u = n(272984);
@@ -48,7 +48,7 @@ function E(e) {
         url: t
     } = e;
     if (m(t)) return !1;
-    p.add((0, c.E)(t)), s.w.set(f, {
+    p.add((0, c.E)(t)), o.w.set(f, {
         trustedDomains: p,
         trustedProtocols: _
     })
@@ -59,7 +59,7 @@ function y(e) {
         url: t
     } = e;
     if (g(t)) return !1;
-    _.add((0, c.J)(t)), s.w.set(f, {
+    _.add((0, c.J)(t)), o.w.set(f, {
         trustedDomains: p,
         trustedProtocols: _
     })
@@ -67,7 +67,7 @@ function y(e) {
 class b extends(i = a.Ay.Store) {
     initialize() {
         var e;
-        let t = null != (e = s.w.get(f)) ? e : {};
+        let t = null != (e = o.w.get(f)) ? e : {};
         if (Array.isArray(t)) p = new Set(null != t ? Array.from(t) : null), _ = new Set;
         else {
             let {
@@ -85,7 +85,7 @@ class b extends(i = a.Ay.Store) {
     }
 }
 d(b, "displayName", "MaskedLinkStore");
-let O = new b(o.h, {
+let O = new b(s.h, {
     MASKED_LINK_ADD_TRUSTED_DOMAIN: E,
     MASKED_LINK_ADD_TRUSTED_PROTOCOL: y
 })

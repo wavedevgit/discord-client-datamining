@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(877413),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(877413),
+    l = n.n(s),
     c = n(52133),
     u = n(693198),
     d = n(860227),
@@ -30,7 +30,7 @@ function E(e) {
     let {
         className: n,
         message: a,
-        children: o,
+        children: s,
         content: c,
         onUpdate: _,
         contentRef: E,
@@ -38,14 +38,14 @@ function E(e) {
     } = e, b = a.state === p.cmJ.SEND_FAILED, O = a.state === p.cmJ.SENDING, v = a.isCommandType(), A = null == (t = a.editedTimestamp) ? void 0 : t.toString(), I = i.useRef(!1);
     i.useLayoutEffect(() => {
         I.current ? null != _ && _() : I.current = !0
-    }, [_, a.content, c, A, o]);
+    }, [_, a.content, c, A, s]);
     let S = u._.useConfig({
         location: "MessageContent"
     }).alignMessagesStart;
     return (0, r.jsxs)("div", {
         id: (0, d.CJ)(a),
         ref: E,
-        className: s()(n, m.PT, {
+        className: o()(n, m.PT, {
             [h.BK]: !0,
             [h.Tn]: O && !v,
             [h.Dk]: S,
@@ -53,7 +53,7 @@ function E(e) {
             [h.Ix]: b,
             [h.w3]: a.isUnsupported
         }),
-        children: [null != o ? o : g(a, c), (0, r.jsx)(f.A, {
+        children: [null != s ? s : g(a, c), (0, r.jsx)(f.A, {
             message: a,
             compact: y,
             location: f.O.WITH_CONTENT

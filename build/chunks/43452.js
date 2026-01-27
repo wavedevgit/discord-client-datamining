@@ -4,11 +4,11 @@
 var r = n(410323),
     i = n(503628),
     a = n(339626),
-    s = n(324988),
-    o = n(230606),
+    o = n(324988),
+    s = n(230606),
     l = n(997159),
     c = function() {},
-    u = o("Reflect", "construct"),
+    u = s("Reflect", "construct"),
     d = /^\s*(?:class|function)\b/,
     f = r(d.exec),
     p = !d.test(c),
@@ -22,7 +22,7 @@ var r = n(410323),
     },
     h = function(e) {
         if (!a(e)) return !1;
-        switch (s(e)) {
+        switch (o(e)) {
             case "AsyncFunction":
             case "GeneratorFunction":
             case "AsyncGeneratorFunction":

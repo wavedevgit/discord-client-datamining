@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(397927),
     c = n(497685),
     u = n(996566),
@@ -43,11 +43,11 @@ let h = i.memo(function(e) {
             format: g
         }), d._.dispatch(f.jej.FAVORITE_GIF))
     };
-    return (0, r.jsx)(o.m, {
+    return (0, r.jsx)(s.m, {
         text: v,
         children: (0, r.jsx)(l.sqX, {
             "aria-label": v,
-            className: s()(E, _.jj, {
+            className: o()(E, _.jj, {
                 [_.wH]: O,
                 [_.TV]: y
             }),

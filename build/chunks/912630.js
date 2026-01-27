@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(205693),
-    s = n(73153),
-    o = n(617617),
+    o = n(73153),
+    s = n(617617),
     l = n(430452),
     c = n(309010),
     u = n(287809),
@@ -83,7 +83,7 @@ function A(e) {
     var t;
     let n = u.default.getCurrentUser();
     if (null == n) return !1;
-    let r = null != e ? e : (0, d.Hk)(null == (t = o.A.settings.voiceAndVideo) ? void 0 : t.videoBackgroundFilterDesktop, n.id);
+    let r = null != e ? e : (0, d.Hk)(null == (t = s.A.settings.voiceAndVideo) ? void 0 : t.videoBackgroundFilterDesktop, n.id);
     return null != c.A.getVoiceChannelId() && l.A.isVideoEnabled() && null != r
 }
 
@@ -110,7 +110,7 @@ function C() {
 }
 class N extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(l.A, c.A, o.A, u.default), this.syncWith([c.A, l.A], T)
+        this.waitFor(l.A, c.A, s.A, u.default), this.syncWith([c.A, l.A], T)
     }
     get videoFilterAssets() {
         return y
@@ -123,7 +123,7 @@ class N extends(r = i.Ay.Store) {
     }
 }
 f(N, "displayName", "VideoBackgroundStore");
-let w = new N(s.h, {
+let w = new N(o.h, {
     VIDEO_FILTER_ASSETS_FETCH_SUCCESS: b,
     VIDEO_FILTER_ASSET_UPLOAD_SUCCESS: O,
     VIDEO_FILTER_ASSET_DELETE_SUCCESS: v,

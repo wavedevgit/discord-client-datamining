@@ -9,7 +9,7 @@ n.d(t, {
     gm: () => I,
     nr: () => A
 });
-var r, i, a, s, o, l, c = n(481613),
+var r, i, a, o, s, l, c = n(481613),
     u = n.n(c);
 let d = (null != (r = u().name) ? r : "unknown").toLowerCase(),
     f = "chrome" === d.toLowerCase() ? parseInt(null != (i = u().version) ? i : "", 10) : -1;
@@ -22,12 +22,12 @@ let _ = "electron" === d.toLowerCase() ? parseInt(null != (a = u().version) ? a 
 function h() {
     return _
 }
-let m = "firefox" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : -1;
+let m = "firefox" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : -1;
 
 function g() {
     return m
 }
-let E = "edge" === d.toLowerCase() ? parseInt(null != (o = u().version) ? o : "", 10) : -1;
+let E = "edge" === d.toLowerCase() ? parseInt(null != (s = u().version) ? s : "", 10) : -1;
 
 function y() {
     return E

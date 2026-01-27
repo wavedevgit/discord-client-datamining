@@ -1,28 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 3911 **/
 /** chunk id: 710144, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => l
 });
-var r = n(627968),
-    i = n(64700);
-let a = e => t => {
+var i = n(627968),
+    s = n(64700);
+let r = e => t => {
     null == t || t.stopPropagation(), e()
 };
 
-function s(e) {
+function l(e) {
     let {
         onClick: t,
         className: n,
-        children: s
-    } = e, o = i.useRef(null);
-    return (0, r.jsx)("div", {
+        children: l
+    } = e, o = s.useRef(null);
+    return (0, i.jsx)("div", {
         onClick: t,
         ref: o,
         className: n,
-        children: s({
+        children: l({
             areaRef: o,
-            handleStopPropagation: a
+            handleStopPropagation: r
         })
     })
 }

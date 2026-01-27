@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(960488),
+    o = n.n(a),
+    s = n(960488),
     l = n(397927),
     c = n(240248),
     u = n(796151);
@@ -79,7 +79,7 @@ function E(e) {
 }
 
 function y(e, t) {
-    return s()({
+    return o()({
         [u.AN]: !0,
         [u.CW]: "always" === e,
         [u._W]: "on-hover" === e && t
@@ -99,7 +99,7 @@ let b = e => {
             selected: I = !1
         } = e,
         S = h(e, ["backgroundStyle", "children", "icon", "name", "ariaLabel", "className", "style", "to", "onClick", "selected"]),
-        T = (0, o.W6)();
+        T = (0, s.W6)();
     null == p && null != m && (n = E(t = (0, c.oN)(m)));
     let C = i.useCallback(e => {
             if (null == v);
@@ -116,7 +116,7 @@ let b = e => {
         N = (0, l.rdh)(l.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, r.jsxs)(l.DUT, _(f({}, S), {
         onClick: C,
-        className: s()(b, u.iE, {
+        className: o()(b, u.iE, {
             [u.wH]: I
         }),
         style: _(f({}, O), {
@@ -128,7 +128,7 @@ let b = e => {
         children: [(0, r.jsx)(l.AC4, {
             children: null != g && "" !== g ? g : null != m ? m : ""
         }), null != t ? (0, r.jsx)("div", {
-            className: s()(y(a, !1), u.q9),
+            className: o()(y(a, !1), u.q9),
             "aria-hidden": !0,
             children: t
         }) : null, null != p ? (0, r.jsx)("img", {

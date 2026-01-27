@@ -2,7 +2,7 @@
 /** chunk id: 374400, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Z: () => s
+    Z: () => o
 }), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
 var r = n(492462),
     i = n(998218);
@@ -15,7 +15,7 @@ let a = e => {
             return null
         }
     },
-    s = e => {
+    o = e => {
         let t = (0, r.parse)(e);
         return {
             desktop: a(t.desktop_link),

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 683912, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     c: "searchbar__45744",
     p_: "list__45744",

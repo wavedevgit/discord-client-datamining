@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(732955),
-    s = n(448362),
-    o = n(749226);
+    o = n(448362),
+    s = n(749226);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -79,12 +79,12 @@ let _ = {
             type: "select",
             options: [{
                 label: "Default",
-                value: s.k7.DEFAULT
+                value: o.k7.DEFAULT
             }, {
                 label: "Selected",
-                value: s.k7.SELECTED
+                value: o.k7.SELECTED
             }],
-            defaultValue: s.k7.DEFAULT
+            defaultValue: o.k7.DEFAULT
         },
         showNotificationBadge: {
             label: "Show Notification Badge",
@@ -115,10 +115,10 @@ let _ = {
                 return (0, i.useEffect)(() => {
                     null == u && null != l.balance && p(l.balance)
                 }, [l.balance, u]), (0, r.jsxs)("div", {
-                    className: o.YG,
-                    children: [(0, r.jsx)(s.Gy, d(c({}, l), {
+                    className: s.YG,
+                    children: [(0, r.jsx)(o.Gy, d(c({}, l), {
                         balance: t ? null : u,
-                        className: n ? o.jG : void 0
+                        className: n ? s.jG : void 0
                     })), (0, r.jsx)(a.$nd, {
                         onClick: () => p(l.balance),
                         text: "Update Balance"
@@ -143,10 +143,10 @@ let _ = {
                 return (0, i.useEffect)(() => {
                     p(l.balance)
                 }, [l.balance]), (0, r.jsxs)("div", {
-                    className: o.YG,
-                    children: [(0, r.jsx)(s.Gy, d(c({}, l), {
+                    className: s.YG,
+                    children: [(0, r.jsx)(o.Gy, d(c({}, l), {
                         balance: u,
-                        className: n ? o.jG : void 0
+                        className: n ? s.jG : void 0
                     })), (0, r.jsx)(a.$nd, {
                         onClick: () => {
                             p(null), setTimeout(() => {

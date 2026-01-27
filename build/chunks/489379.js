@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(765379),
     a = n(714114),
-    s = n(290863),
-    o = n(977997);
+    o = n(290863),
+    s = n(977997);
 
 function l(e) {
     let {
@@ -24,11 +24,11 @@ function l(e) {
     return {
         voiceState: l,
         voiceChannel: c,
-        voiceActivity: (0, r.bG)([s.A, o.A], () => {
+        voiceActivity: (0, r.bG)([o.A, s.A], () => {
             if (null == t || null == u) return;
-            let e = s.A.findActivity(t, e => {
+            let e = o.A.findActivity(t, e => {
                 if (!(0, i.A)(e)) return !1;
-                let n = o.A.getVoiceStateForSession(t, e.session_id);
+                let n = s.A.getVoiceStateForSession(t, e.session_id);
                 return (null == n ? void 0 : n.channelId) === u
             });
             return null != e ? e : void 0

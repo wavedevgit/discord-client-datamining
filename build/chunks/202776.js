@@ -2,14 +2,14 @@
 /** chunk id: 202776, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s,
-    u: () => o
+    A: () => o,
+    u: () => s
 });
 var r = n(311907),
     i = n(164956),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     return (0, r.bG)([i.A], () => {
         if ((null == e ? void 0 : e.id) == null) return !1;
         let t = i.A.isFullServerPreview(e.id),
@@ -18,7 +18,7 @@ function s(e) {
     }) || (null == e ? void 0 : e.features.has(a.GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS))
 }
 
-function o(e) {
+function s(e) {
     if (null == e) return !1;
     let t = i.A.isFullServerPreview(e.id),
         n = i.A.isOnboardingEnabled(e.id);

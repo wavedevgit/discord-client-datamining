@@ -2,12 +2,12 @@
 /** chunk id: 261439, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    a: () => s
+    a: () => o
 });
 var r = n(627968),
     i = n(158954),
     a = n(67098);
-let s = {
+let o = {
     title: "HelpMessage",
     stories: [{
         name: "HelpMessage",

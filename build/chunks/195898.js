@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(503698),
     a = n.n(i),
-    s = n(317097),
-    o = n(311907),
+    o = n(317097),
+    s = n(311907),
     l = n(397927),
     c = n(775602),
     u = n(345815),
@@ -61,11 +61,11 @@ function b(e) {
         primaryColor: i,
         secondaryColor: _,
         forceUserTheme: h = !1
-    } = e, [b, O] = (0, o.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), v = (0, p.k)(t), A = O || h ? null == v ? void 0 : v.overlaySyncedWithUserTheme : null == v ? void 0 : v.overlay;
+    } = e, [b, O] = (0, s.yK)([c.A], () => [c.A.desaturateUserColors, c.A.syncProfileThemeWithUserTheme]), v = (0, p.k)(t), A = O || h ? null == v ? void 0 : v.overlaySyncedWithUserTheme : null == v ? void 0 : v.overlay;
     return {
         profileThemeStyle: (0, r.useMemo)(() => {
             if (null == i || null == _ || null == v || null == A) return y;
-            let e = (e, t) => (0, s.$k)(e, b, null, t);
+            let e = (e, t) => (0, o.$k)(e, b, null, t);
             return m({
                 "--profile-gradient-primary-color": e(i),
                 "--profile-gradient-secondary-color": e(_),

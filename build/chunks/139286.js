@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(812729),
     a = n.n(i),
-    s = n(296489),
-    o = n.n(s),
+    o = n(296489),
+    s = n.n(o),
     l = n(110259),
     c = n(73153),
     u = n(964486),
@@ -70,19 +70,19 @@ function v(e) {
         {
             name: i,
             type: a,
-            properties: s
+            properties: o
         } = e;
     if (e.type === l.ImpressionTypes.MODAL && null == e.name && (0, m.uJ)().some(e => {
             var t;
             return null == (t = e._stackContext) ? void 0 : t.isSlide
         })) return;
     (0, m.Vm)(e);
-    let o = null != (t = null == s ? void 0 : s.guild_id) ? t : p.A.getGuildId(),
-        c = null != (n = null == s ? void 0 : s.channel_id) ? n : f.A.getChannelId(o),
+    let s = null != (t = null == o ? void 0 : o.guild_id) ? t : p.A.getGuildId(),
+        c = null != (n = null == o ? void 0 : o.channel_id) ? n : f.A.getChannelId(s),
         u = (0, _.expandEventProperties)(E({
             impression_type: a,
             location: (0, m.g$)()
-        }, (0, h.H$)(o), (0, h.dI)(d.A.getChannel(c)), s));
+        }, (0, h.H$)(s), (0, h.dI)(d.A.getChannel(c)), o));
     r ? (0, m.eE)(null, null) : (null != i && null != a && ((0, _.debugLogEvent)(i, u), O(i, u)), (0, m.eE)(i, u))
 }
 
@@ -93,14 +93,14 @@ function A(e) {
         },
         n = arguments.length > 2 ? arguments[2] : void 0,
         i = r.useRef(void 0),
-        s = r.useRef(void 0),
+        o = r.useRef(void 0),
         l = () => {
             let r = !a()(i.current, e);
             r && (i.current = e);
-            let l = !a()(s.current, n);
-            if (l && (s.current = n), !r && !l) return;
+            let l = !a()(o.current, n);
+            if (l && (o.current = n), !r && !l) return;
             let c = b(E({}, e), {
-                sequenceId: o()("impression_")
+                sequenceId: s()("impression_")
             });
             return v(c, t.disableTrack), () => {
                 null != c && (0, m.u5)(c)

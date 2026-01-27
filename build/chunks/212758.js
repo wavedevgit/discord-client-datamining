@@ -1,60 +1,60 @@
-/** Chunk was on 39679 **/
-/** chunk id: 212758, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** Chunk was on 83792 **/
+/** chunk id: 212758, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => _
 });
-var s = n(627968),
-    i = n(64700),
-    r = n(503698),
-    a = n.n(r),
-    o = n(158954),
-    l = n(397927),
-    d = n(922529),
-    _ = n(89300),
-    u = n(117816);
+var n = r(627968),
+    a = r(64700),
+    s = r(503698),
+    l = r.n(s),
+    i = r(158954),
+    o = r(397927),
+    A = r(922529),
+    c = r(89300),
+    u = r(117816);
 
-function c(e) {
+function _(e) {
     let {
         headerText: t,
-        descriptionText: n,
-        infoRows: r,
-        onDismissAndStay: c,
-        onDismissAndLeave: m,
-        leaveButtonText: g,
-        stayButtonText: f,
-        transitionState: x,
-        impression: N
+        descriptionText: r,
+        infoRows: s,
+        onDismissAndStay: _,
+        onDismissAndLeave: I,
+        leaveButtonText: f,
+        stayButtonText: E,
+        transitionState: p,
+        impression: h
     } = e;
-    return (0, s.jsx)(o.ExpressiveModal, {
-        transitionState: x,
-        onClose: () => (c(), Promise.resolve()),
+    return (0, n.jsx)(i.ExpressiveModal, {
+        transitionState: p,
+        onClose: () => (_(), Promise.resolve()),
         trackingProps: {
-            impression: N
+            impression: h
         },
         graphic: {
             type: "image",
             src: u.A
         },
         title: t,
-        subtitle: null != n ? n : void 0,
+        subtitle: null != r ? r : void 0,
         actions: [{
-            text: f,
-            onClick: c,
+            text: E,
+            onClick: _,
             variant: "secondary"
         }, {
-            text: g,
-            onClick: m
+            text: f,
+            onClick: I
         }],
-        children: (0, s.jsx)("div", {
-            className: _.Cu,
-            children: r.map((e, t) => (0, s.jsxs)(i.Fragment, {
-                children: [(0, s.jsxs)("div", {
-                    className: a()(_.lj, e.className),
-                    children: [e.icon, (0, s.jsx)(l.Text, {
+        children: (0, n.jsx)("div", {
+            className: c.Cu,
+            children: s.map((e, t) => (0, n.jsxs)(a.Fragment, {
+                children: [(0, n.jsxs)("div", {
+                    className: l()(c.lj, e.className),
+                    children: [e.icon, (0, n.jsx)(o.Text, {
                         variant: "text-md/medium",
                         children: e.text
                     })]
-                }), t < r.length - 1 && (0, s.jsx)(d.A, {})]
+                }), t < s.length - 1 && (0, n.jsx)(A.A, {})]
             }, t))
         })
     })

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 41727 **/
 /** chunk id: 558001, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    N: () => a
+    N: () => i
 });
 var r = n(954571),
-    i = n(652215);
-let a = (e, t) => {
-    r.default.track(i.HAw.SAFETY_SETTINGS_NOTICE_ACTION, {
+    l = n(652215);
+let i = (e, t) => {
+    r.default.track(l.HAw.SAFETY_SETTINGS_NOTICE_ACTION, {
         notice_type: e,
         action: t
     })

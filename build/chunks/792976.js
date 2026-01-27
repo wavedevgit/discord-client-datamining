@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(360345),
     i = n(374372),
     a = n(355418);
-let s = RegExp(`(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
-    o = RegExp(`(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
+let o = RegExp(`(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
+    s = RegExp(`(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
     l = RegExp(`(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(${r.d2})(?=\\W|$)`, "i");
 class c extends a.c {
     strictMode;
@@ -16,7 +16,7 @@ class c extends a.c {
         super(), this.strictMode = e
     }
     innerPattern(e) {
-        return this.strictMode ? l : e.option.forwardDate ? s : o
+        return this.strictMode ? l : e.option.forwardDate ? o : s
     }
     innerExtract(e, t) {
         if (t[0].match(/^for\s*the\s*\w+/)) return null;

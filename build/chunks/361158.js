@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(296489),
-    s = n.n(a),
-    o = n(89229),
+    o = n.n(a),
+    s = n(89229),
     l = n(307343),
     c = n(353640),
     u = n(121894),
@@ -120,7 +120,7 @@ function C() {
         item: e,
         nodeRef: i.createRef()
     }));
-    return (0, r.jsx)(o.A, {
+    return (0, r.jsx)(s.A, {
         children: a.map(e => {
             let {
                 item: i,
@@ -157,11 +157,11 @@ function N(e) {
             disableAnimation: i = !1,
             showAppUnderLayer: a = !1
         } = t,
-        o = null != n ? n : s()();
+        s = null != n ? n : o()();
     return (0, u.r)(() => {
         A.setState(t => ({
             fullScreenLayers: [...t.fullScreenLayers, {
-                key: o,
+                key: s,
                 transitionState: 1,
                 LayerComponent: null != r ? r : h.Ay,
                 render: e,
@@ -171,7 +171,7 @@ function N(e) {
                 }
             }]
         }))
-    }), o
+    }), s
 }
 
 function w(e) {

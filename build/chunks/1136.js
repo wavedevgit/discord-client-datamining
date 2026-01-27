@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(353640),
     i = n(731738),
     a = n(121894),
-    s = n(831062);
+    o = n(831062);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -27,7 +27,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -73,7 +73,7 @@ function p(e) {
 
 function _() {
     let e = !0;
-    for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) s.A.distribution({
+    for (let [t, n] of Object.entries(d.getState().captchaServeVolume)) o.A.distribution({
         name: i.K.CAPTCHA_SERVE_VOLUME_DISTRIBUTION,
         tags: ["user_flow:".concat(t)]
     }, n, e);

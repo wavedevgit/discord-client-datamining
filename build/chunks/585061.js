@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(582754),
     a = n(397927),
-    s = n(736653),
-    o = n(854627),
+    o = n(736653),
+    s = n(854627),
     l = n(427262),
     c = n(236834),
     u = n(243809),
@@ -44,12 +44,12 @@ let g = () => {
         {
             avatarSrc: t,
             eventHandlers: n
-        } = (0, o.A)({
+        } = (0, s.A)({
             userId: null == e ? void 0 : e.id,
             size: f._3.SIZE_32,
             animateOnHover: !0
         }),
-        h = (0, s.DP)(),
+        h = (0, o.DP)(),
         g = (0, i.qB)(h),
         E = l.Ay.getName(e),
         y = g ? u.A : d.A;

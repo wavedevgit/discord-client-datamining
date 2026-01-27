@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(696444),
     i = n(474012),
     a = n(935816),
-    s = n(986630),
-    o = n(758836),
+    o = n(986630),
+    s = n(758836),
     l = n(652215);
 
 function c(e, t, n) {
@@ -64,7 +64,7 @@ class f {
             skuId: n,
             premiumType: d === l.oA2 ? null : d,
             categorySkuId: p,
-            isCategoryReward: o.MS.some(e => {
+            isCategoryReward: s.MS.some(e => {
                 let {
                     rewardSkuId: t
                 } = e;
@@ -73,7 +73,7 @@ class f {
             prices: (0, a.m)(_),
             items: (0, i.K)(I.items),
             bundledProducts: null == h ? void 0 : h.map(r.A.fromServer),
-            variants: null == m ? void 0 : m.map(s.x.fromServer),
+            variants: null == m ? void 0 : m.map(o.x.fromServer),
             googleSkuIds: I.google_sku_ids,
             eligibleOffers: I.eligible_offers,
             baseVariantName: g,

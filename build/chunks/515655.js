@@ -4,8 +4,8 @@
 var r = n(257943),
     i = n(503628),
     a = n(101968),
-    s = n(862784),
-    o = Error.prototype.toString;
+    o = n(862784),
+    s = Error.prototype.toString;
 e.exports = i(function() {
     if (r) {
         var e = Object.create(Object.defineProperty({}, "name", {
@@ -13,15 +13,15 @@ e.exports = i(function() {
                 return this === e
             }
         }));
-        if ("true" !== o.call(e)) return !0
+        if ("true" !== s.call(e)) return !0
     }
-    return "2: 1" !== o.call({
+    return "2: 1" !== s.call({
         message: 1,
         name: 2
-    }) || "Error" !== o.call({})
+    }) || "Error" !== s.call({})
 }) ? function() {
     var e = a(this),
-        t = s(e.name, "Error"),
-        n = s(e.message);
+        t = o(e.name, "Error"),
+        n = o(e.message);
     return t ? n ? t + ": " + n : t : n
-} : o
+} : s

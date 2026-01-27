@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 533350, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -18,8 +18,8 @@ var i = n(158954),
     m = n(580403),
     p = n(242849),
     f = n(158352),
-    b = n(668133),
-    h = n(675654),
+    h = n(668133),
+    b = n(675654),
     x = n(652215),
     j = n(985018),
     _ = n(574436);
@@ -50,7 +50,7 @@ let O = function() {
                 }), (0, r.jsx)("div", {
                     className: _.yF
                 })]
-            }), (0, r.jsx)(b.h, {
+            }), (0, r.jsx)(h.h, {
                 canManageGuild: n,
                 guild: t
             }), void 0 !== O && (0, r.jsxs)(r.Fragment, {
@@ -75,7 +75,7 @@ let O = function() {
             }), !0 === n && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("div", {
                     className: _.yF
-                }), (0, r.jsx)(h.E, {
+                }), (0, r.jsx)(b.E, {
                     guildId: t.id
                 })]
             })]

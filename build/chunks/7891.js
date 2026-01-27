@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 7891, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(416052),
     p = n(975807),
     f = n(58149),
-    b = n(465932),
-    h = n(555337),
+    h = n(465932),
+    b = n(555337),
     x = n(954571),
     j = n(300233),
     _ = n(599941),
@@ -34,7 +34,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             guild: l,
             canEnable: a
         } = e, c = (0, _.Tq)(l.id), {
-            loading: h,
+            loading: b,
             updateSubscriptionsSettings: j
         } = (0, _.KE)(), [S, I] = i.useState(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), [T, C] = i.useState(null != (t = null == c ? void 0 : c.store_page_primary_color) ? t : N), [P, w] = i.useState(null == c ? void 0 : c.store_page_trailer_url), R = null == P || null != P.match(E), [D, G] = i.useState(null != (n = null == c ? void 0 : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? void 0 : c.store_page_slug).current, k = S !== l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE) || (null == c ? void 0 : c.store_page_primary_color) == null && T !== N || (null == c ? void 0 : c.store_page_primary_color) != null && T !== (null == c ? void 0 : c.store_page_primary_color) || P !== (null == c ? void 0 : c.store_page_trailer_url) || null != D && D !== (null == c ? void 0 : c.store_page_show_subscriber_count), M = async () => {
             o()(null != c, "Settings must be defined");
@@ -61,7 +61,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             }, (0, f.H$)(l.id))))
         }, U = O.X7G.ROLE_SUBSCRIPTION_STORE_PAGE(L), B = null != P && P === (null == c ? void 0 : c.store_page_trailer_url), {
             shouldRestrictUpdatingCreatorMonetizationSettings: F
-        } = (0, b.nq)(l.id), H = F || !R, V = !S && !a;
+        } = (0, h.nq)(l.id), H = F || !R, V = !S && !a;
         return (0, r.jsxs)(g.BJc, {
             gap: 24,
             children: [(0, r.jsx)(g.Heading, {
@@ -146,7 +146,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
                 className: y.se,
                 children: k && (0, r.jsx)(g.FQk, {
                     children: (0, r.jsx)(u.A, {
-                        submitting: h,
+                        submitting: b,
                         onReset: () => {
                             var e, t;
                             I(l.features.has(O.GuildFeatures.CREATOR_STORE_PAGE)), C(null != (e = null == c ? void 0 : c.store_page_primary_color) ? e : N), w(null == c ? void 0 : c.store_page_trailer_url), G(null != (t = null == c ? void 0 : c.store_page_show_subscriber_count) && t)
@@ -160,7 +160,7 @@ let A = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     };
 
 function I() {
-    let e = (0, c.bG)([h.A], () => h.A.getGuild()),
+    let e = (0, c.bG)([b.A], () => b.A.getGuild()),
         t = (0, j.X)(),
         n = (0, _.uP)(null == e ? void 0 : e.id).some(e => e.published);
     return null != e && t ? (0, r.jsx)(S, {
@@ -170,7 +170,7 @@ function I() {
 }
 
 function T() {
-    let e = (0, c.bG)([h.A], () => h.A.getGuild());
+    let e = (0, c.bG)([b.A], () => b.A.getGuild());
     return (0, r.jsx)(j.H, {
         guildId: null == e ? void 0 : e.id,
         refetchOnMount: !0,

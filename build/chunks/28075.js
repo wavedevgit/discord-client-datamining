@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(736666);
+    o = n(736666);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -36,16 +36,16 @@ function u(e) {
         state: t
     } = e;
     switch (t) {
-        case s.R.LOADING:
+        case o.R.LOADING:
             l.lastInitAttemptMayHaveCrashed = !0;
             break;
-        case s.R.LOADED:
-        case s.R.FAILED:
-        case s.R.UNSUPPORTED:
+        case o.R.LOADED:
+        case o.R.FAILED:
+        case o.R.UNSUPPORTED:
             l.lastInitAttemptMayHaveCrashed = !1
     }
 }
-o(c, "displayName", "VoiceFilterPersistedStore"), o(c, "persistKey", "VoiceFilterPersistedStore");
+s(c, "displayName", "VoiceFilterPersistedStore"), s(c, "persistKey", "VoiceFilterPersistedStore");
 let d = new c(a.h, {
     VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE: u
 })

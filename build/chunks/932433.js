@@ -26,23 +26,23 @@ Object.defineProperty(t, "makeDataFormatters", {
         return a.makeDataFormatters
     }
 });
-var s = n(112600);
+var o = n(112600);
 Object.defineProperty(t, "dataFormatterCache", {
     enumerable: !0,
     get: function() {
-        return s.dataFormatterCache
+        return o.dataFormatterCache
     }
 });
-var o = n(941242);
+var s = n(941242);
 Object.defineProperty(t, "FormatBuilder", {
     enumerable: !0,
     get: function() {
-        return o.FormatBuilder
+        return s.FormatBuilder
     }
 }), Object.defineProperty(t, "bindFormatValues", {
     enumerable: !0,
     get: function() {
-        return o.bindFormatValues
+        return s.bindFormatValues
     }
 }), i(n(903749), t);
 var l = n(915025);

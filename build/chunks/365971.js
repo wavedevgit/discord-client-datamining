@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Q2: () => i,
-    Xg: () => s,
+    Xg: () => o,
     rw: () => a
 });
 var r = n(735438);
@@ -17,6 +17,6 @@ function a(e) {
     return e.__DISCORD_WINDOW_ID = t, t
 }
 
-function s() {
+function o() {
     return i(window)
 }

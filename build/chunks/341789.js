@@ -1,9 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 341789, original params: e (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 341789, original params: t (module,exports,require) **/
 "use strict";
-var t = "[.,+*?$|#{}()'\\^\\-\\[\\]\\\\\\/!@%\"~=<>_:;・、。〈-】〔-〟：-？！-／［-｀｛-･⸮؟٪-٬؛،؍﴾﴿᠁।၊။‐-‧‰-⁞\xa1-\xb1\xb4-\xb8\xba\xbb\xbf]";
-e.exports = {
+t.exports = {
     getPunctuation: function() {
-        return t
+        return "[.,+*?$|#{}()'\\^\\-\\[\\]\\\\\\/!@%\"~=<>_:;・、。〈-】〔-〟：-？！-／［-｀｛-･⸮؟٪-٬؛،؍﴾﴿᠁।၊။‐-‧‰-⁞\xa1-\xb1\xb4-\xb8\xba\xbb\xbf]"
     }
 }

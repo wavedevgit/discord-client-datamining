@@ -6,20 +6,20 @@ var r = n(72290);
     if (!e.setImmediate) {
         var n, i = 1,
             a = {},
-            s = !1,
-            o = e.document,
+            o = !1,
+            s = e.document,
             l = Object.getPrototypeOf && Object.getPrototypeOf(e);
-        l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? h() : e.MessageChannel ? m() : o && "onreadystatechange" in o.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
+        l = l && l.setTimeout ? l : e, "[object process]" === ({}).toString.call(e.process) ? p() : _() ? h() : e.MessageChannel ? m() : s && "onreadystatechange" in s.createElement("script") ? g() : E(), l.setImmediate = c, l.clearImmediate = u
     }
 
     function c(e) {
         "function" != typeof e && (e = Function("" + e));
         for (var t = Array(arguments.length - 1), r = 0; r < t.length; r++) t[r] = arguments[r + 1];
-        var s = {
+        var o = {
             callback: e,
             args: t
         };
-        return a[i] = s, n(i), i++
+        return a[i] = o, n(i), i++
     }
 
     function u(e) {
@@ -48,15 +48,15 @@ var r = n(72290);
     }
 
     function f(e) {
-        if (s) setTimeout(f, 0, e);
+        if (o) setTimeout(f, 0, e);
         else {
             var t = a[e];
             if (t) {
-                s = !0;
+                o = !0;
                 try {
                     d(t)
                 } finally {
-                    u(e), s = !1
+                    u(e), o = !1
                 }
             }
         }
@@ -100,9 +100,9 @@ var r = n(72290);
     }
 
     function g() {
-        var e = o.documentElement;
+        var e = s.documentElement;
         n = function(t) {
-            var n = o.createElement("script");
+            var n = s.createElement("script");
             n.onreadystatechange = function() {
                 f(t), n.onreadystatechange = null, e.removeChild(n), n = null
             }, e.appendChild(n)

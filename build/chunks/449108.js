@@ -2,7 +2,7 @@
 /** chunk id: 449108, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(562465),
     i = n(985018);
@@ -14,4 +14,4 @@ class a extends r.$F {
         null != r && (null == (n = r[0]) ? void 0 : n.code) === "BINARY_TYPE_MAX_SIZE" && (this.message = i.intl.string(i.t.mrlScX))
     }
 }
-let s = a
+let o = a

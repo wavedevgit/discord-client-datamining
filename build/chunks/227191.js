@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 227191, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     p9: "cardDescriptionTenureReward__1f069",
     LV: "descriptionCTATenureReward__1f069",

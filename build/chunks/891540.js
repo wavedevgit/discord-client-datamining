@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(536194);
+    o = n(536194);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -57,7 +57,7 @@ class _ extends(r = i.Ay.PersistedStore) {
     hasHotspot(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = !t && c[e];
-        return !s.P.isDisallowPopupsSet() && (n || !l.has(e))
+        return !o.P.isDisallowPopupsSet() && (n || !l.has(e))
     }
     hasHiddenHotspot(e) {
         return l.has(e)
@@ -72,7 +72,7 @@ class _ extends(r = i.Ay.PersistedStore) {
         }
     }
 }
-o(_, "displayName", "HotspotStore"), o(_, "persistKey", "hotspots"), o(_, "migrations", [e => ({
+s(_, "displayName", "HotspotStore"), s(_, "persistKey", "hotspots"), s(_, "migrations", [e => ({
     hiddenHotspots: null != e ? e : [],
     hotspotOverrides: {}
 })]);

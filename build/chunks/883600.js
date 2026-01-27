@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(506774),
-    s = n(73153),
-    o = n(773669),
+    o = n(73153),
+    s = n(773669),
     l = n(253932),
     c = n(617617),
     u = n(559868);
@@ -97,7 +97,7 @@ function N() {
 }
 class w extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.default, c.A), this.syncWith([o.default], () => !0), this.syncWith([c.A], N);
+        this.waitFor(s.default, c.A), this.syncWith([s.default], () => !0), this.syncWith([c.A], N);
         let e = a.w.get(g);
         if (null != e) try {
             y = new Date(e)
@@ -144,7 +144,7 @@ class w extends(r = i.Ay.Store) {
     }
 }
 d(w, "displayName", "ChangelogStore");
-let R = new w(s.h, {
+let R = new w(o.h, {
     CHANGE_LOG_LOCK: O,
     CHANGE_LOG_UNLOCK: v,
     CHANGE_LOG_SET_CONFIG: A,

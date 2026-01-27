@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(942381),
+    o = n.n(a),
+    s = n(942381),
     l = n(541952),
     c = n(435371),
     u = n(568765),
@@ -63,7 +63,7 @@ function O(e, t) {
         disabled: n,
         type: a,
         channel: g
-    } = e, [y, O, v, A] = (0, d.RQ)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], o.x), I = !1, S = y === _.kx.STICKER && A === a && v === g.id, T = !1, C = i.useCallback(() => {
+    } = e, [y, O, v, A] = (0, d.RQ)(e => [e.activeView, e.pickerId, e.activeChannelId, e.activeViewType], s.x), I = !1, S = y === _.kx.STICKER && A === a && v === g.id, T = !1, C = i.useCallback(() => {
         (0, d.r$)(_.kx.STICKER, a, g.id)
     }, [a, g.id]), {
         Component: N,
@@ -71,14 +71,14 @@ function O(e, t) {
         play: R
     } = (0, l.g)(), P = (0, f.p)(u.w);
     return n ? null : (0, r.jsx)("div", {
-        className: s()(_.VQ, m.UD),
+        className: o()(_.VQ, m.UD),
         ref: t,
         children: (0, r.jsx)(c.m_, {
             shouldShow: null != P,
             text: h.intl.string(h.t.oOJ7KU),
             keyboardShortcut: P,
             children: (0, r.jsx)(p.A, b(E({
-                className: s()(m.x6, m.KE)
+                className: o()(m.x6, m.KE)
             }, w), {
                 onClick: () => {
                     C(), R()

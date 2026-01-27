@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(956518),
-    o = n(165610),
+    o = n(956518),
+    s = n(165610),
     l = n(5867);
 
 function c(e, t, n) {
@@ -65,12 +65,12 @@ function y(e) {
     let {
         applicationId: t,
         proxyTicket: n
-    } = e, r = (0, s.Ay)(t);
+    } = e, r = (0, o.Ay)(t);
     null == r ? _.delete(t) : (_.delete(t), p = {
         applicationId: t,
         url: r,
         connectedSince: Date.now(),
-        layoutMode: o.y.FOCUSED,
+        layoutMode: s.y.FOCUSED,
         activityPanelMode: l.Gd.PANEL,
         proxyTicket: n
     })

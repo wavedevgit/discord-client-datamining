@@ -14,9 +14,9 @@ var r = n(477394);
 n(206626);
 var i = n(227309),
     a = n(652215),
-    s = n(985018);
+    o = n(985018);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -32,7 +32,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -85,9 +85,9 @@ function h(e) {
     if (!_(e)) return e;
     let t = r.a.getConfig({
         location: "transformRobloxSubgameNames"
-    }).alternativeTitle ? s.t.HjVwG3 : s.t.G6BGdx;
+    }).alternativeTitle ? o.t.HjVwG3 : o.t.G6BGdx;
     return u(l({}, e), {
-        name: s.intl.formatToPlainString(t, {
+        name: o.intl.formatToPlainString(t, {
             subgameName: e.name
         })
     })

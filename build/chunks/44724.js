@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(846293),
     i = n(976860),
     a = n(71393),
-    s = n(449054),
-    o = n(733391),
+    o = n(449054),
+    s = n(733391),
     l = n(652215);
 
 function c(e) {
@@ -22,7 +22,7 @@ function c(e) {
         var i;
         t = null == (i = n.guild) ? void 0 : i.id
     }
-    null != t && (0, o.Rw)(t, {
+    null != t && (0, s.Rw)(t, {
         eager: !0,
         forceFetch: r
     })
@@ -31,7 +31,7 @@ async function u(e) {
     let {
         guildId: t,
         invite: n,
-        pageIndex: o,
+        pageIndex: s,
         skuId: c,
         slug: u
     } = e, d = null;
@@ -41,7 +41,7 @@ async function u(e) {
     }
     if (null == t) return;
     let _ = a.A.getGuild(t);
-    (null == _ ? void 0 : _.joinedAt) == null && (null == d || d.has(l.GuildFeatures.PREVIEW_ENABLED) ? await (0, s.Z2)(t, {}, {
+    (null == _ ? void 0 : _.joinedAt) == null && (null == d || d.has(l.GuildFeatures.PREVIEW_ENABLED) ? await (0, o.Z2)(t, {}, {
         shouldNavigate: !1
     }) : null != n && await r.Ay.acceptInvite({
         inviteKey: n.code,
@@ -49,5 +49,5 @@ async function u(e) {
             location: "game_shop"
         },
         skipOnboarding: !0
-    })), (0, i.pX)(l.BVt.CHANNELS_GAME_SHOP(t, o, c, u))
+    })), (0, i.pX)(l.BVt.CHANNELS_GAME_SHOP(t, s, c, u))
 }

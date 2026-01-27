@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 915488, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    a: () => o
+    a: () => s
 });
 var r = n(850992),
     i = n(203982),
-    a = n(652215),
-    s = n(698279);
+    l = n(652215),
+    a = n(698279);
 
-function o(e) {
+function s(e) {
     let {
         stickerPack: t,
         stickerPickerCategories: n
     } = e;
-    i._.dispatchToLastSubscribed(a.jej.OPEN_EXPRESSION_PICKER, {
-        activeView: s.kx.STICKER
+    i._.dispatchToLastSubscribed(l.jej.OPEN_EXPRESSION_PICKER, {
+        activeView: a.kx.STICKER
     });
-    let o = n.findIndex(e => e.id === t.id); - 1 !== o && r.bM.setActiveCategoryIndex(o)
+    let s = n.findIndex(e => e.id === t.id); - 1 !== s && r.bM.setActiveCategoryIndex(s)
 }

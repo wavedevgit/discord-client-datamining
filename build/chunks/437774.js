@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(102876),
-    s = n(906547),
-    o = n(985018),
+    o = n(906547),
+    s = n(985018),
     l = n(764152);
 
 function c(e, t, n) {
@@ -83,14 +83,14 @@ function m(e) {
         userId: t,
         variant: n = "text-xs/normal",
         color: a = "text-default"
-    } = e, o = p(e, ["userId", "variant", "color"]), l = (0, s.P)({
+    } = e, s = p(e, ["userId", "variant", "color"]), l = (0, o.P)({
         userId: t,
         renderApplicationName: h
     });
     return (0, r.jsx)(i.Text, f(u({
         variant: n,
         color: a
-    }, o), {
+    }, s), {
         children: l
     }))
 }
@@ -106,7 +106,7 @@ function g(e) {
             children: [(0, r.jsx)(i.Heading, {
                 variant: "text-md/semibold",
                 color: "text-default",
-                children: o.intl.string(o.t.Iyka0U)
+                children: s.intl.string(s.t.Iyka0U)
             }), (0, r.jsx)(i.EpV, {
                 size: "xs",
                 className: l.Kk

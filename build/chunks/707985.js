@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 7034 **/
 /** chunk id: 707985, original params: e,t,n (module,exports,require) **/
-"use strict";
+n.d(t, {
+    A: () => i
+});
 
-function r(e) {
+function i(e) {
     let {
         channel: t,
         canChat: n,
-        renderReactions: r,
-        canAddNewReactions: i,
-        isLurking: a,
-        isGuest: s,
-        communicationDisabled: o,
-        isActiveChannelOrUnarchivableThread: l,
-        isAutomodQuarantined: c
-    } = e, u = t.isPrivate(), d = t.isSystemDM(), f = (!0 === i || u) && !d && l, p = (n || u) && l, _ = a || s || !p || !0 === o || !0 === c;
+        renderReactions: i,
+        canAddNewReactions: l,
+        isLurking: r,
+        isGuest: o,
+        communicationDisabled: a,
+        isActiveChannelOrUnarchivableThread: s,
+        isAutomodQuarantined: u
+    } = e, c = t.isPrivate(), d = t.isSystemDM(), p = (n || c) && s;
     return {
-        disableReactionReads: !r,
-        disableReactionCreates: a || s || !p || !f,
-        disableReactionUpdates: _
+        disableReactionReads: !i,
+        disableReactionCreates: r || o || !p || !((!0 === l || c) && !d && s),
+        disableReactionUpdates: r || o || !p || !0 === a || !0 === u
     }
 }
-n.d(t, {
-    A: () => r
-})

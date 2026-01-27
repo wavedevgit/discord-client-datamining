@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 11297, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     zr: "root_cbfae2",
     Qw: "titleText_cbfae2",

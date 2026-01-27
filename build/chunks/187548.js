@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(367513),
     i = n(401843),
     a = n(439372),
-    s = n(313961),
-    o = n(652896),
+    o = n(313961),
+    s = n(652896),
     l = n(616356),
     c = n(309010),
     u = n(945041),
@@ -44,12 +44,12 @@ class p extends a.A {
                 forceFocus: !0
             });
             if (null == t && null != a) {
-                let e = s.A.getSelectedParticipant(n),
-                    t = (null == e ? void 0 : e.type) === d.lp.STREAM && (null == e ? void 0 : e.id) === (0, o._z)(a);
-                if ((0, i.vN)((0, o._z)(a), !1, !0), !t) return;
+                let e = o.A.getSelectedParticipant(n),
+                    t = (null == e ? void 0 : e.type) === d.lp.STREAM && (null == e ? void 0 : e.id) === (0, s._z)(a);
+                if ((0, i.vN)((0, s._z)(a), !1, !0), !t) return;
                 let c = l.A.getAllActiveStreamsForChannel(n).find(e => e.ownerId !== a.ownerId);
                 if (null == c) return;
-                r.A.selectParticipant(n, (0, o._z)(c))
+                r.A.selectParticipant(n, (0, s._z)(c))
             }
         })
     }

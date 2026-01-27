@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(688810),
     u = n(532622),
@@ -33,7 +33,7 @@ function v(e) {
         themeType: v
     } = (0, m.E)(), {
         analyticsLocations: A
-    } = (0, c.Ay)(), I = (0, _.b)(t), S = (0, u.Ay)(t, !0), T = (0, o.bG)([f.A], () => f.A.getChannelStatus(t)), C = i.useMemo(() => null == T || "" === T ? null : p.A.parseVoiceChannelStatus(T, !0, {
+    } = (0, c.Ay)(), I = (0, _.b)(t), S = (0, u.Ay)(t, !0), T = (0, s.bG)([f.A], () => f.A.getChannelStatus(t)), C = i.useMemo(() => null == T || "" === T ? null : p.A.parseVoiceChannelStatus(T, !0, {
         channelId: t.id
     }), [T, t.id]);
     i.useEffect(() => {
@@ -62,7 +62,7 @@ function v(e) {
         }), (0, r.jsx)(l.R2l, {
             color: "currentColor",
             size: "xxs",
-            className: s()(O.rD, null != C ? O.R : void 0),
+            className: o()(O.rD, null != C ? O.R : void 0),
             "aria-label": b.intl.string(b.t.bt75uw)
         })]
     }) : null != C ? (0, r.jsx)(g.A, {

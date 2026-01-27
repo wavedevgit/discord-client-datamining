@@ -2,17 +2,17 @@
 /** chunk id: 242133, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    g: () => o
+    g: () => s
 }), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
 var r = n(626584),
     i = n(723702),
     a = n(837921),
-    s = n(158719);
+    o = n(158719);
 
-function o() {
+function s() {
     if (i.isPlatformEmbedded) {
         let e;
-        if ("json" !== (0, s.oT)()) {
+        if ("json" !== (0, o.oT)()) {
             try {
                 e = a.Ay.requireModule("discord_erlpack")
             } catch (t) {

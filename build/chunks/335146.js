@@ -2,15 +2,15 @@
 /** chunk id: 335146, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => o
+    V: () => s
 });
 var r = n(181981),
     i = n(250015),
     a = n(685518),
-    s = function(e) {
+    o = function(e) {
         return !(0, a.XJ)(e) && !(0, a.td)(e) && "inline" === getComputedStyle(e).display
     },
-    o = function() {
+    s = function() {
         function e(e, t) {
             this.target = e, this.observedBox = t || r.U.CONTENT_BOX, this.lastReportedSize = {
                 inlineSize: 0,
@@ -19,6 +19,6 @@ var r = n(181981),
         }
         return e.prototype.isActive = function() {
             var e = (0, i.Px)(this.target, this.observedBox);
-            return s(this.target) && (this.lastReportedSize = e), this.lastReportedSize.inlineSize !== e.inlineSize || this.lastReportedSize.blockSize !== e.blockSize
+            return o(this.target) && (this.lastReportedSize = e), this.lastReportedSize.inlineSize !== e.inlineSize || this.lastReportedSize.blockSize !== e.blockSize
         }, e
     }()

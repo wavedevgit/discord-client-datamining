@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153);
+    o = n(311907),
+    s = n(73153);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ function g(e) {
     }
     f = n
 }
-class E extends(r = s.Ay.Store) {
+class E extends(r = o.Ay.Store) {
     getApplicationAssetFetchState(e) {
         var t;
         return null != (t = f[e]) ? t : 0
@@ -115,7 +115,7 @@ class E extends(r = s.Ay.Store) {
     }
 }
 l(E, "displayName", "ApplicationAssetsStore");
-let y = new E(o.h, {
+let y = new E(s.h, {
     APPLICATION_ASSETS_FETCH: _,
     APPLICATION_ASSETS_FETCH_SUCCESS: h,
     APPLICATION_ASSETS_UPDATE: m,

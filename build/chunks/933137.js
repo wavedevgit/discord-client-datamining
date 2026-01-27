@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 933137, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(523386),
     p = n(818191),
     f = n(564864),
-    b = n(915417),
-    h = n(147988),
+    h = n(915417),
+    b = n(147988),
     x = n(366846),
     j = n(306846),
     _ = n(493781),
@@ -44,11 +44,11 @@ function E(e) {
                 rules: t.termRules
             });
         case O.J.APPLY:
-            return (0, r.jsx)(b.g, {
+            return (0, r.jsx)(h.g, {
                 pendingFields: t.pendingVerificationFields
             });
         case O.J.DISCOVERABLE:
-            return (0, r.jsx)(h.t, {
+            return (0, r.jsx)(b.t, {
                 fetchDiscoveryData: l,
                 settingsView: t.settingsView,
                 requireTerms: t.requireTerms,

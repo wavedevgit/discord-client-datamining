@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(650682),
     i = n(825913),
     a = n(257537),
-    s = n(841680),
-    o = n(290424),
+    o = n(841680),
+    s = n(290424),
     l = n(803082),
     c = n(64700);
 let u = (0, c.createContext)(null),
@@ -21,7 +21,7 @@ let u = (0, c.createContext)(null),
         let {
             dialogProps: f,
             titleProps: p
-        } = (0, s.s)({
+        } = (0, o.s)({
             ...e,
             "aria-labelledby": n
         }, t), _ = (0, c.useContext)(d);
@@ -35,7 +35,7 @@ let u = (0, c.createContext)(null),
                     close: (null == _ ? void 0 : _.close) || (() => {})
                 }
             }),
-            m = (0, o.$)(e, {
+            m = (0, s.$)(e, {
                 global: !0
             });
         return c.createElement("section", {

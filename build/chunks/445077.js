@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(529942),
-    s = n(164956),
-    o = n(652215);
+    o = n(164956),
+    s = n(652215);
 
 function l(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-    return s.A.isFullServerPreview(e) ? void(0, a.Z$)(e, {
+    return o.A.isFullServerPreview(e) ? void(0, a.Z$)(e, {
         memberOptions: t
     }) : (i.h.dispatch({
         type: "GUILD_MEMBER_UPDATE_LOCAL",
@@ -20,7 +20,7 @@ function l(e, t) {
         roles: t.roles,
         flags: t.flags
     }), r.Bo.patch({
-        url: o.Rsh.SET_GUILD_MEMBER(e),
+        url: s.Rsh.SET_GUILD_MEMBER(e),
         body: t,
         oldFormErrors: !!n || void 0,
         rejectWithError: !1

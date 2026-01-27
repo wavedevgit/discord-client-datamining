@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(735438),
-    o = n.n(s),
+    o = n(735438),
+    s = n.n(o),
     l = n(775602);
 
 function c(e, t, n) {
@@ -56,8 +56,8 @@ class u extends(r = a.Component) {
             if (!t) return;
             let n = this.ref.current;
             if (this.shouldRenderFrame && null != n) {
-                let t = o().random(-e, e, !0),
-                    r = o().random(-e, e, !0);
+                let t = s().random(-e, e, !0),
+                    r = s().random(-e, e, !0);
                 n.style.transform = l.A.useReducedMotion ? "" : "translate3d(".concat(t, "px,").concat(r, "px,0px)")
             }
             this.shouldRenderFrame = !this.shouldRenderFrame, this.animationFrame = requestAnimationFrame(this.animate)

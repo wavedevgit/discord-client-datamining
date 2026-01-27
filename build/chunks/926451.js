@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 926451, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 }), n(896048);
 var r, i = n(627968),
     s = n(64700),
@@ -11,15 +10,15 @@ var r, i = n(627968),
     o = n(397927);
 let c = null != (r = window.ResizeObserver) ? r : l.t;
 
-function u(e) {
+function d(e) {
     let {
         show: t,
         children: n,
         top: r = 0,
         bottom: l = 0
     } = e, {
-        ref: u,
-        height: d
+        ref: d,
+        height: u
     } = (() => {
         let e = s.useRef(null),
             [t, n] = s.useState(0),
@@ -38,7 +37,7 @@ function u(e) {
             marginTop: "0px"
         },
         to: {
-            height: t ? d : 0,
+            height: t ? u : 0,
             paddingBottom: t ? "".concat(l, "px") : "0px",
             marginTop: t ? "".concat(r, "px") : "0px"
         },
@@ -69,7 +68,7 @@ function u(e) {
             style: {
                 opacity: p.opacity
             },
-            ref: u,
+            ref: d,
             children: n
         })
     })

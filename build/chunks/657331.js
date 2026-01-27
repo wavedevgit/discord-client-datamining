@@ -8,14 +8,14 @@ n.r(t), n.d(t, {
 var r = n(397927),
     i = n(73153),
     a = n(803306),
-    s = n(993327),
-    o = n(626584),
+    o = n(993327),
+    s = n(626584),
     l = n(961350),
     c = n(287809),
     u = n(840907),
     d = n(576622);
 let f = (0, r.FT9)(r._3J.SIZE_120),
-    p = new o.A("UserProfileModalActionCreators"),
+    p = new s.A("UserProfileModalActionCreators"),
     _ = async e => {
         let t = l.default.getId() === e,
             {
@@ -24,7 +24,7 @@ let f = (0, r.FT9)(r._3J.SIZE_120),
                 location: "UserProfileModalActionCreators"
             });
         if (n || t) try {
-            await (0, s.A)(e)
+            await (0, o.A)(e)
         } catch (t) {
             p.log("Failed to fetch content inventory outbox for ".concat(e, ":"), t)
         }
@@ -34,8 +34,8 @@ async function h(e) {
         userId: t,
         guildId: n,
         channelId: r,
-        messageId: s,
-        roleId: o,
+        messageId: o,
+        roleId: s,
         sessionId: l,
         joinRequestId: u,
         tabSection: p,
@@ -66,8 +66,8 @@ async function h(e) {
         userId: t,
         guildId: null != n ? n : void 0,
         channelId: null != r ? r : void 0,
-        messageId: null != s ? s : void 0,
-        roleId: null != o ? o : void 0,
+        messageId: null != o ? o : void 0,
+        roleId: null != s ? s : void 0,
         sessionId: null != l ? l : void 0,
         openedAt: Date.now(),
         customStatusPrompt: b,

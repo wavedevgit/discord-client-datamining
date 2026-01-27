@@ -23,7 +23,7 @@ try {
     null != window.localStorage && null != a && (window[a] = window.localStorage), delete window.localStorage
 } catch (e) {}
 
-function s() {
+function o() {
     let e = "test";
     try {
         return r.setItem(e, e), r.removeItem(e), !0
@@ -31,7 +31,7 @@ function s() {
         return !1
     }
 }
-class o {
+class s {
     get(e, t) {
         let n = r.getItem(e);
         if (null != n) try {
@@ -98,4 +98,4 @@ class l {
         i(this, "storage", void 0), this.storage = {}
     }
 }
-let c = s() ? new o : new l
+let c = o() ? new s : new l

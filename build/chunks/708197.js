@@ -11,17 +11,17 @@ n(793574), n(734057);
 var i = n(309010),
     a = n(967198);
 n(287809);
-var s = n(954571),
-    o = n(435738);
+var o = n(954571),
+    s = n(435738);
 n(701884);
 var l = n(652215);
 let c = () => {
     r.h.dispatch({
         type: "CONTENT_INVENTORY_TOGGLE_FEED_HIDDEN"
-    }), s.default.track(l.HAw.MEMBERLIST_CONTENT_FEED_HIDDEN, {
+    }), o.default.track(l.HAw.MEMBERLIST_CONTENT_FEED_HIDDEN, {
         channel_id: i.A.getChannelId(),
         guild_id: a.A.getGuildId(),
-        hidden: o.A.hidden
+        hidden: s.A.hidden
     })
 };
 

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(397927),
     i = n(527518),
     a = n(270727),
-    s = n(473106),
-    o = n(423396),
+    o = n(473106),
+    s = n(423396),
     l = n(647047),
     c = n(987274),
     u = n(931433),
@@ -26,7 +26,7 @@ let m = ["Revenue Storybook", "Revenue Playground"],
         collections: [{
             id: "payments",
             name: "Payments",
-            groups: [s._, _.Y, p.Wo, l.n, o.Gu, f.O],
+            groups: [o._, _.Y, p.Wo, l.n, s.Gu, f.O],
             tags: m,
             IconComponent: r.d2Y
         }, {

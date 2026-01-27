@@ -2,14 +2,14 @@
 /** chunk id: 332761, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    s: () => s
+    s: () => o
 });
 var r = n(966209),
     i = n(260431),
     a = n(404108);
 
-function s(e, t, n) {
-    var s, o;
+function o(e, t, n) {
+    var o, s;
     let {
         node: l,
         isVirtualized: c,
@@ -30,7 +30,7 @@ function s(e, t, n) {
         ref: n,
         isVirtualized: c,
         shouldSelectOnPressUp: p || u,
-        onAction: _ || (null == l || null == (s = l.props) ? void 0 : s.onAction) ? (0, i.c)(null == l || null == (o = l.props) ? void 0 : o.onAction, _) : void 0,
+        onAction: _ || (null == l || null == (o = l.props) ? void 0 : o.onAction) ? (0, i.c)(null == l || null == (s = l.props) ? void 0 : s.onAction, _) : void 0,
         isDisabled: 0 === t.collection.size
     }), g = t.selectionManager.isSelected(l.key), E = {
         role: "row",

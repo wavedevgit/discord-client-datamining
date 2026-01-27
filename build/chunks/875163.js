@@ -2,13 +2,13 @@
 /** chunk id: 875163, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => M
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(837381),
+    o = n.n(a),
+    s = n(837381),
     l = n(311907),
     c = n(397927),
     u = n(811024),
@@ -87,27 +87,27 @@ function w(e, t) {
 let R = 490,
     P = 490,
     D = 245,
-    x = 200,
-    L = 120,
-    j = i.forwardRef(function(e, t) {
-        var n, a, I, T, w, j, M, k, U;
+    L = 200,
+    x = 120,
+    M = i.forwardRef(function(e, t) {
+        var n, a, I, T, w, M, j, k, U;
         let {
             channel: G,
-            type: V,
-            editorHeight: F,
+            type: F,
+            editorHeight: V,
             onVisibilityChange: B,
             editorScrollerRef: H,
             barsHeight: Y
         } = e, W = (0, h.GV)(), K = (0, l.bG)([E.A], () => {
             var e;
             return null != (e = E.A.getGuild(G.guild_id)) ? e : null
-        }, [G.guild_id]), z = i.useRef(null), [q, Z, X] = (0, O.A)(C(S({}, e), {
+        }, [G.guild_id]), z = i.useRef(null), [q, Z, Q] = (0, O.A)(C(S({}, e), {
             guild: K
-        }), t, z), Q = (null == (I = V.autocomplete) ? void 0 : I.forceChatLayer) ? g.Ay : m.Ay, J = (0, p.aI)(q.selectedIndex);
+        }), t, z), X = (null == (I = F.autocomplete) ? void 0 : I.forceChatLayer) ? g.Ay : m.Ay, J = (0, p.aI)(q.selectedIndex);
         (0, _.gf)(W, q.isVisible, J);
         let $ = (0, b.l)({
-                editorHeight: F,
-                type: V,
+                editorHeight: V,
+                type: F,
                 state: q
             }),
             ee = (0, l.bG)([d.Ay], () => {
@@ -139,18 +139,18 @@ let R = 490,
                 [A.Wi]: (null == (w = q.query) ? void 0 : w.type) === y.DB.MENTION_SUGGESTIONS
             },
             ei = R;
-        null != $ && (ei = (null == (M = V.autocomplete) ? void 0 : M.small) ? x : (null == (k = q.query) ? void 0 : k.type) === y.DB.EMOJIS_AND_STICKERS ? P : D);
-        let ea = Math.max(F, null != (a = null == H || null == (j = H.current) ? void 0 : j.clientHeight) ? a : 0),
-            es = Math.min(.5 * window.innerHeight, ea);
-        ei = Math.min(window.innerHeight - L - es - (null != Y ? Y : 0), ei);
-        let eo = (0, r.jsx)(p.Ay, {
+        null != $ && (ei = (null == (j = F.autocomplete) ? void 0 : j.small) ? L : (null == (k = q.query) ? void 0 : k.type) === y.DB.EMOJIS_AND_STICKERS ? P : D);
+        let ea = Math.max(V, null != (a = null == H || null == (M = H.current) ? void 0 : M.clientHeight) ? a : 0),
+            eo = Math.min(.5 * window.innerHeight, ea);
+        ei = Math.min(window.innerHeight - x - eo - (null != Y ? Y : 0), ei);
+        let es = (0, r.jsx)(p.Ay, {
             id: W,
-            className: s()(A.nx, er),
+            className: o()(A.nx, er),
             innerClassName: A.Fv,
             onMouseDown: e => e.preventDefault(),
-            children: (0, r.jsx)(o.hD, {
-                navigator: X,
-                children: (0, r.jsx)(o.PR, {
+            children: (0, r.jsx)(s.hD, {
+                navigator: Q,
+                children: (0, r.jsx)(s.PR, {
                     children: e => {
                         let {
                             ref: t
@@ -176,7 +176,7 @@ let R = 490,
                 })
             })
         });
-        return null != $ ? (0, r.jsx)(Q, {
+        return null != $ ? (0, r.jsx)(X, {
             children: (0, r.jsx)(c.QCO, {
                 targetRef: e.targetRef,
                 overrideTargetRect: $,
@@ -186,7 +186,7 @@ let R = 490,
                 spacing: 8,
                 autoInvert: !0,
                 nudgeAlignIntoViewport: !0,
-                children: () => eo
+                children: () => es
             })
-        }) : eo
+        }) : es
     })

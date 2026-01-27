@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(825913),
     i = n(357710),
     a = n(587771),
-    s = n(290424),
-    o = n(803082),
+    o = n(290424),
+    s = n(803082),
     l = n(64700),
     c = n(551208);
 let u = (0, l.createContext)({}),
@@ -28,11 +28,11 @@ let u = (0, l.createContext)({}),
                 },
                 defaultClassName: "react-aria-ToggleButtonGroup"
             }),
-            _ = (0, s.$)(e, {
+            _ = (0, o.$)(e, {
                 global: !0
             });
         return l.createElement("div", {
-            ...(0, o.v)(_, p, f),
+            ...(0, s.v)(_, p, f),
             ref: t,
             slot: e.slot || void 0,
             "data-orientation": e.orientation || "horizontal",

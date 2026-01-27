@@ -7,11 +7,11 @@ n.d(t, {
 });
 var r, i = n(723702);
 let a = !1,
-    s = null,
     o = null,
+    s = null,
     l = null,
     c = null;
 
 function u() {
-    return a ? o : (0, i.isAndroid)() ? s : l
+    return a ? s : (0, i.isAndroid)() ? o : l
 }

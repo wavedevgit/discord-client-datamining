@@ -4,11 +4,11 @@
 var r = n(221015),
     i = n(93714),
     a = n(250594),
-    s = n(503199),
-    o = function(e) {
+    o = n(503199),
+    s = function(e) {
         var t = 1 === e;
-        return function(n, o, l) {
-            for (var c, u = a(n), d = i(u), f = s(d), p = r(o, l); f-- > 0;)
+        return function(n, s, l) {
+            for (var c, u = a(n), d = i(u), f = o(d), p = r(s, l); f-- > 0;)
                 if (p(c = d[f], f, u)) switch (e) {
                     case 0:
                         return c;
@@ -19,6 +19,6 @@ var r = n(221015),
         }
     };
 e.exports = {
-    findLast: o(0),
-    findLastIndex: o(1)
+    findLast: s(0),
+    findLastIndex: s(1)
 }

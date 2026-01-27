@@ -7,8 +7,8 @@ n.d(t, {
     KM: () => a,
     L7: () => d,
     Mq: () => u,
-    RP: () => s,
-    bk: () => o,
+    RP: () => o,
+    bk: () => s,
     d6: () => l,
     dS: () => f,
     jM: () => _,
@@ -17,10 +17,10 @@ n.d(t, {
 var r = n(652215);
 let i = 300,
     a = "user-profile-popout";
-var s = function(e) {
+var o = function(e) {
         return e.FEATURED = "FEATURED", e.USER_INFO = "USER_INFO", e.BOT_INFO = "BOT_INFO", e.ACTIVITY = "ACTIVITY", e.MUTUALS = "MUTUALS", e.MUTUAL_GUILDS = "MUTUAL_GUILDS", e.MUTUAL_FRIENDS = "MUTUAL_FRIENDS", e.BOT_DATA_ACCESS = "BOT_DATA_ACCESS", e.WIDGETS = "WIDGETS", e.WISHLIST = "WISHLIST", e
     }({}),
-    o = function(e) {
+    s = function(e) {
         return e.ROLES = "ROLES", e.CONNECTIONS = "CONNECTIONS", e.APPS = "APPS", e.NOTE = "NOTE", e.RECENT_ACTIVITY = "RECENT_ACTIVITY", e
     }({}),
     l = function(e) {

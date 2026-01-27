@@ -1,125 +1,124 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 961997, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    k: () => O,
-    o: () => b
+    k: () => v,
+    o: () => y
 }), n(228524);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(508602),
-    l = n(158954),
+    l = n(503698),
+    a = n.n(l),
+    s = n(508602),
+    o = n(158954),
     c = n(630054),
     u = n(607470),
     d = n(77350),
-    f = n(110168),
-    p = n(390248),
-    _ = n(961440),
-    h = n(985018),
-    m = n(954141);
-let g = e => {
+    p = n(110168),
+    m = n(390248),
+    f = n(961440),
+    g = n(985018),
+    h = n(954141);
+let _ = e => {
         let {
             attachment: t
         } = e, {
             url: n,
             description: i
         } = t;
-        return null == n ? null : (0, r.jsx)(y, {
+        return null == n ? null : (0, r.jsx)(A, {
             url: n,
             description: i
         })
     },
-    E = e => {
+    b = e => {
         var t, n, i;
         let {
-            embed: a
+            embed: l
         } = e;
-        if (!_.Tj.has(a.type)) return null;
-        let s = void 0 !== a.video && a.type !== o.A.GIFV ? a.video.url : null != (t = null == (n = a.thumbnail) ? void 0 : n.url) ? t : null == (i = a.image) ? void 0 : i.url;
-        return null == s ? null : (0, r.jsx)(y, {
-            url: s
+        if (!f.Tj.has(l.type)) return null;
+        let a = void 0 !== l.video && l.type !== s.A.GIFV ? l.video.url : null != (t = null == (n = l.thumbnail) ? void 0 : n.url) ? t : null == (i = l.image) ? void 0 : i.url;
+        return null == a ? null : (0, r.jsx)(A, {
+            url: a
         })
     },
-    y = e => {
+    A = e => {
         let {
             url: t,
             description: n
         } = e, i = (0, d.r1)(t);
         return (0, r.jsx)("div", {
-            className: m.il,
+            className: h.il,
             children: i ? (0, r.jsx)(u.A, {
-                className: s()(m.Ki, m.$_),
+                className: a()(h.Ki, h.$_),
                 controls: !0,
                 src: t
             }) : (0, r.jsx)("img", {
-                className: s()(m.Sl, m.$_),
+                className: a()(h.Sl, h.$_),
                 src: t,
                 alt: n
             })
         })
     };
 
-function b(e) {
-    c.A.pop(), (0, f.r)({
+function y(e) {
+    c.A.pop(), (0, p.r)({
         id: "explicit-media-false-positive-modal",
-        text: h.intl.string(h.t.gFsTKu)
+        text: g.intl.string(g.t.gFsTKu)
     }), e()
 }
 
-function O(e) {
+function v(e) {
     let {
         channelId: t,
         messageId: n,
-        isReportFalsePositiveLoading: a,
-        analyticsContext: s,
-        attachmentPreview: o,
+        isReportFalsePositiveLoading: l,
+        analyticsContext: a,
+        attachmentPreview: s,
         embedPreview: c,
         onConfirmPress: u,
         transitionState: d,
-        onClose: f
-    } = e, _ = i.useCallback(() => {
-        (0, p.hv)({
-            action: p.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
+        onClose: p
+    } = e, f = i.useCallback(() => {
+        (0, m.hv)({
+            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CANCEL,
             channelId: t,
             messageId: n,
-            context: s
-        }), f()
-    }, [t, n, s, f]), m = i.useCallback(() => {
-        null == u || u(), (0, p.hv)({
-            action: p.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
+            context: a
+        }), p()
+    }, [t, n, a, p]), h = i.useCallback(() => {
+        null == u || u(), (0, m.hv)({
+            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_CLICK_CONFIRM,
             channelId: t,
             messageId: n,
-            context: s
+            context: a
         })
-    }, [t, n, s, u]);
+    }, [t, n, a, u]);
     return i.useEffect(() => {
-        (0, p.hv)({
-            action: p.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
+        (0, m.hv)({
+            action: m.rY.EXPLICIT_MEDIA_FALSE_POSITIVE_VIEWED,
             channelId: t,
             messageId: n,
-            context: s
+            context: a
         })
-    }, [t, n, s]), (0, r.jsxs)(l.Modal, {
+    }, [t, n, a]), (0, r.jsxs)(o.Modal, {
         transitionState: d,
-        onClose: f,
-        title: h.intl.string(h.t.TPpVkI),
-        subtitle: h.intl.string(h.t["z4du/I"]),
+        onClose: p,
+        title: g.intl.string(g.t.TPpVkI),
+        subtitle: g.intl.string(g.t["z4du/I"]),
         actions: [{
-            text: h.intl.string(h.t["ETE/oC"]),
-            onClick: _,
+            text: g.intl.string(g.t["ETE/oC"]),
+            onClick: f,
             variant: "secondary",
-            disabled: a
+            disabled: l
         }, {
-            text: h.intl.string(h.t["cY+Oob"]),
-            onClick: m,
-            loading: a,
-            disabled: a
+            text: g.intl.string(g.t["cY+Oob"]),
+            onClick: h,
+            loading: l,
+            disabled: l
         }],
-        children: [null != o && (0, r.jsx)(g, {
-            attachment: o
-        }), null != c && (0, r.jsx)(E, {
+        children: [null != s && (0, r.jsx)(_, {
+            attachment: s
+        }), null != c && (0, r.jsx)(b, {
             embed: c
         })]
     })

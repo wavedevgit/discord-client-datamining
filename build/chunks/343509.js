@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(439372),
     a = n(927813),
-    s = n(966597),
-    o = n(85109);
+    o = n(966597),
+    s = n(85109);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -23,7 +23,7 @@ let c = null;
 function u(e) {
     let {
         enabled: t
-    } = s.A.getCurrentConfig({
+    } = o.A.getCurrentConfig({
         location: "MessageRemindersNotificationManager"
     }, {
         autoTrackExposure: !1
@@ -38,14 +38,14 @@ function d() {
     var e;
     let {
         enabled: t
-    } = s.A.getCurrentConfig({
+    } = o.A.getCurrentConfig({
         location: "MessageRemindersNotificationManager"
     }, {
         autoTrackExposure: !1
     });
     if (!t) return;
     null != c && clearTimeout(c);
-    let n = o.A.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
+    let n = s.A.getMessageReminders().find(e => null != e.saveData.dueAt && e.saveData.dueAt > new Date);
     if ((null == n || null == (e = n.saveData) ? void 0 : e.dueAt) == null) {
         c = null;
         return

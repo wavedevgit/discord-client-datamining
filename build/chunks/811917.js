@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(835245),
     i = n(451988),
     a = n(439372),
-    s = n(847521),
-    o = n(760751),
+    o = n(847521),
+    s = n(760751),
     l = n(383501),
     c = n(954571),
     u = n(927813),
@@ -27,7 +27,7 @@ function _(e, t, n) {
 let h = 5 * u.A.Millis.MINUTE;
 
 function m(e) {
-    return e.distributor === p.d3x.ROBLOX ? (0, s.hD)(e) : null
+    return e.distributor === p.d3x.ROBLOX ? (0, o.hD)(e) : null
 }
 
 function g(e) {
@@ -52,13 +52,13 @@ class E extends a.A {
         let a = e.runningGame,
             u = performance.now(),
             _ = t ? 0 : Math.round(u - e.lastHeartbeatTime),
-            h = null != (r = a.id) ? r : null == (i = o.A.getGameByName(a.name)) ? void 0 : i.id;
+            h = null != (r = a.id) ? r : null == (i = s.A.getGameByName(a.name)) ? void 0 : i.id;
         c.default.track(p.HAw.RUNNING_GAME_HEARTBEAT, {
             game_id: h,
             game_name: a.name,
             game_distributor: a.distributor,
             game_distributor_game_id: a.sku,
-            game_metadata: (0, s.MT)(a),
+            game_metadata: (0, o.MT)(a),
             game_executable: (0, d.Ic)(a.exePath),
             game_detection_enabled: (0, f.Xr)(a),
             initial_heartbeat: t,

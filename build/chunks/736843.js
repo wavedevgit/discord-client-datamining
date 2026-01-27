@@ -2,8 +2,8 @@
 /** chunk id: 736843, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Mz: () => s,
-    jP: () => o
+    Mz: () => o,
+    jP: () => s
 }), n(896048);
 var r = n(64700),
     i = n(786300);
@@ -12,8 +12,8 @@ let a = (() => {
         let [e] = (0, i.A)();
         return e
     })(),
-    s = () => a,
-    o = () => {
+    o = () => a,
+    s = () => {
         let e = a;
         return (0, r.useContext)(e)
     }

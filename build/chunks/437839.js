@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(545428),
     c = n(985018),
     u = n(27551);
@@ -27,7 +27,7 @@ function d(e) {
                 className: u.UD,
                 children: (0, r.jsx)(l.A, {
                     className: u.x6,
-                    childClassName: s()(u.Z4, {
+                    childClassName: o()(u.Z4, {
                         [u.r9]: n,
                         [u.xb]: !n
                     }),
@@ -36,7 +36,7 @@ function d(e) {
                     isActive: !1,
                     noHover: n,
                     "aria-label": c.intl.string(c.t.oeb1vg),
-                    children: (0, r.jsx)(o.lX7, {
+                    children: (0, r.jsx)(s.lX7, {
                         size: "xs",
                         color: "currentColor",
                         className: u.AO

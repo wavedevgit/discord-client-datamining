@@ -1,94 +1,87 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 980545, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => A
+    A: () => E
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(835245),
-    l = n(582754),
+    l = n(503698),
+    s = n.n(l),
+    a = n(835245),
+    o = n(582754),
     c = n(397927),
-    u = n(736653),
-    d = n(12901),
-    f = n(954571),
+    d = n(736653),
+    u = n(12901),
+    _ = n(954571),
     p = n(341915),
-    _ = n(590202),
-    h = n(545986),
-    m = n(652215),
-    g = n(985018),
-    E = n(608821),
-    y = n(641701);
+    m = n(590202),
+    g = n(545986),
+    A = n(652215),
+    f = n(985018),
+    h = n(608821),
+    b = n(641701);
 
-function b(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function O(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            b(e, t, n[t])
-        })
-    }
-    return e
-}
-let v = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
-
-function A(e) {
+function E(e) {
     let {
         inOldSettings: t = !1
-    } = e, n = (0, l.Mw)((0, u.Ay)()), a = i.useMemo(() => ({
-        backgroundImage: "url(".concat(v, ")")
-    }), []), b = i.useCallback(() => {
-        (0, d.default)(), (0, h.navigateToQuestHome)({
+    } = e, n = (0, o.Mw)((0, d.Ay)()), l = i.useMemo(() => ({
+        backgroundImage: "url(".concat("https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png", ")")
+    }), []), E = i.useCallback(() => {
+        (0, u.default)(), (0, g.navigateToQuestHome)({
             fromContent: p.uF.QUEST_HOME_MOVE_CALLOUT
-        }), f.default.track(m.HAw.QUEST_CONTENT_CLICKED, O({
-            cta_name: _.Cy.VIEW_QUESTS,
-            click_id: (0, o.A)(),
+        }), _.default.track(A.HAw.QUEST_CONTENT_CLICKED, function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : e[t] = r
+                })
+            }
+            return e
+        }({
+            cta_name: m.Cy.VIEW_QUESTS,
+            click_id: (0, a.A)(),
             is_targeted: !1
-        }, (0, _.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
+        }, (0, m.fF)(p.uF.QUEST_HOME_MOVE_CALLOUT)))
     }, []);
     return (0, r.jsx)("div", {
-        className: s()(E.kL, {
-            [E.Zd]: t
+        className: s()(h.kL, {
+            [h.Zd]: t
         }),
-        style: a,
+        style: l,
         children: (0, r.jsxs)(c.BJc, {
-            className: E.FS,
+            className: h.FS,
             justify: "space-between",
             children: [(0, r.jsxs)(c.BJc, {
                 gap: 4,
                 children: [(0, r.jsxs)("div", {
-                    className: E.N1,
+                    className: h.N1,
                     children: [(0, r.jsx)("img", {
                         alt: "",
-                        src: y,
-                        className: E.Kk
+                        src: b,
+                        className: h.Kk
                     }), (0, r.jsx)(c.Heading, {
                         variant: "heading-lg/bold",
                         color: "always-white",
-                        children: g.intl.string(g.t.z8YP2A)
+                        children: f.intl.string(f.t.z8YP2A)
                     })]
                 }), (0, r.jsx)(c.Text, {
                     variant: "text-md/medium",
                     color: "text-subtle",
-                    children: g.intl.string(g.t.HdKh65)
+                    children: f.intl.string(f.t.HdKh65)
                 })]
             }), (0, r.jsx)(c.Button, {
                 variant: n ? "primary" : "overlay-primary",
-                text: g.intl.string(g.t.GURBQl),
-                onClick: b
+                text: f.intl.string(f.t.GURBQl),
+                onClick: E
             })]
         })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 91042 **/
 /** chunk id: 29293, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => d
+    A: () => s
 }), n(896048);
 var l = n(627968);
 n(64700);
@@ -10,11 +10,11 @@ var i = n(311907),
     a = n(994500),
     o = n(985018);
 
-function d(e) {
+function s(e) {
     let {
         user: t,
-        onAction: d,
-        appContext: s
+        onAction: s,
+        appContext: d
     } = e, u = t.id, [c, A] = (0, i.yK)([a.A], () => {
         var e;
         return [a.A.isFriend(u), null != (e = a.A.getNickname(u)) ? e : null]
@@ -25,7 +25,7 @@ function d(e) {
         id: null == A ? "add-friend-nickname" : "edit-friend-nickname",
         label: b,
         action: () => {
-            null == d || d(), (0, r.mMO)(async () => {
+            null == s || s(), (0, r.mMO)(async () => {
                 let {
                     default: e
                 } = await n.e("59139").then(n.bind(n, 609422));
@@ -51,7 +51,7 @@ function d(e) {
                     nickname: A
                 }, n))
             }, {
-                contextKey: null != s ? (0, r.TId)(s) : void 0
+                contextKey: null != d ? (0, r.TId)(d) : void 0
             })
         }
     })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(70298),
     i = n(973522),
     a = n(15285),
-    s = n(971778),
-    o = n(321034);
+    o = n(971778),
+    s = n(321034);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -35,14 +35,14 @@ function c(e) {
 function u() {
     let e = {};
     {
-        let T = o.A.getMemoryUsageElectronRenderer();
+        let T = s.A.getMemoryUsageElectronRenderer();
         null != T && (e.client_heartbeat_renderer_memory = T);
-        let C = o.A.getMemoryUsageElectronRendererUsedHeapSize();
+        let C = s.A.getMemoryUsageElectronRendererUsedHeapSize();
         null != C && (e.client_heartbeat_renderer_memory_used_heap = C);
-        let N = o.A.getMemoryUsageElectronProcessTypeDetails();
+        let N = s.A.getMemoryUsageElectronProcessTypeDetails();
         if (null != N) {
-            var t, n, r, i, a, s, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S;
-            e.electron_process_memory_private = [null != (t = null == (_ = N.unknown) ? void 0 : _.wss_priv_kb) ? t : -1, null != (n = null == (h = N.main) ? void 0 : h.wss_priv_kb) ? n : -1, null != (r = null == (m = N.renderer) ? void 0 : m.wss_priv_kb) ? r : -1, null != (i = null == (g = N.gpu) ? void 0 : g.wss_priv_kb) ? i : -1, null != (a = null == (E = N.crashpad) ? void 0 : E.wss_priv_kb) ? a : -1, null != (s = null == (y = N.utility) ? void 0 : y.wss_priv_kb) ? s : -1], e.electron_process_memory_private_and_shared = [null != (l = null == (b = N.unknown) ? void 0 : b.wss_kb) ? l : -1, null != (c = null == (O = N.main) ? void 0 : O.wss_kb) ? c : -1, null != (u = null == (v = N.renderer) ? void 0 : v.wss_kb) ? u : -1, null != (d = null == (A = N.gpu) ? void 0 : A.wss_kb) ? d : -1, null != (f = null == (I = N.crashpad) ? void 0 : I.wss_kb) ? f : -1, null != (p = null == (S = N.utility) ? void 0 : S.wss_kb) ? p : -1]
+            var t, n, r, i, a, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S;
+            e.electron_process_memory_private = [null != (t = null == (_ = N.unknown) ? void 0 : _.wss_priv_kb) ? t : -1, null != (n = null == (h = N.main) ? void 0 : h.wss_priv_kb) ? n : -1, null != (r = null == (m = N.renderer) ? void 0 : m.wss_priv_kb) ? r : -1, null != (i = null == (g = N.gpu) ? void 0 : g.wss_priv_kb) ? i : -1, null != (a = null == (E = N.crashpad) ? void 0 : E.wss_priv_kb) ? a : -1, null != (o = null == (y = N.utility) ? void 0 : y.wss_priv_kb) ? o : -1], e.electron_process_memory_private_and_shared = [null != (l = null == (b = N.unknown) ? void 0 : b.wss_kb) ? l : -1, null != (c = null == (O = N.main) ? void 0 : O.wss_kb) ? c : -1, null != (u = null == (v = N.renderer) ? void 0 : v.wss_kb) ? u : -1, null != (d = null == (A = N.gpu) ? void 0 : A.wss_kb) ? d : -1, null != (f = null == (I = N.crashpad) ? void 0 : I.wss_kb) ? f : -1, null != (p = null == (S = N.utility) ? void 0 : S.wss_kb) ? p : -1]
         }
     }
     return e
@@ -52,7 +52,7 @@ function d() {
     let e = {};
     {
         let t = a.Ay.getCurrentGameForAnalytics();
-        null != t && (e.client_heartbeat_current_game_id = t.id, e.client_heartbeat_current_game_name = t.name, e.client_heartbeat_current_game_executable = (0, i.Ic)(t.exePath), e.client_heartbeat_current_game_distributor = t.distributor, e.uses_client_mods = (0, r.b)()), s.A.isNativeModuleLoaded() && (e.voice_filters_native_module_loaded = !0)
+        null != t && (e.client_heartbeat_current_game_id = t.id, e.client_heartbeat_current_game_name = t.name, e.client_heartbeat_current_game_executable = (0, i.Ic)(t.exePath), e.client_heartbeat_current_game_distributor = t.distributor, e.uses_client_mods = (0, r.b)()), o.A.isNativeModuleLoaded() && (e.voice_filters_native_module_loaded = !0)
     }
     return e
 }

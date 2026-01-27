@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 199326, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Qs: "content__2cbe8",
     w_: "guildCard__2cbe8",

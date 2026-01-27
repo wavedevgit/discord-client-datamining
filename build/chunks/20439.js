@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(594061),
-    s = n(967198),
-    o = n(927813),
+    o = n(967198),
+    s = n(927813),
     l = n(661191),
     c = n(541689),
     u = n(256787),
@@ -58,9 +58,9 @@ function O(e, t, n) {
 }
 
 function v(e) {
-    let t = (0, i.bG)([s.A], () => s.A.getGuildId()),
+    let t = (0, i.bG)([o.A], () => o.A.getGuildId()),
         n = (0, d.JZ)(e, {
-            cooldownDurationMs: o.A.Millis.WEEK,
+            cooldownDurationMs: s.A.Millis.WEEK,
             guildId: t
         }),
         a = (0, r.useCallback)(() => {

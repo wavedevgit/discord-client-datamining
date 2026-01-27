@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 23901, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    F: () => o
+    F: () => a
 });
 var r = n(419954),
     i = n(780964),
-    a = n(417385),
+    l = n(417385),
     s = n(687837);
-let o = (0, r.zZ)(i.X.LANGUAGE_AND_TIME_CATEGORY, {
-    buildLayout: () => [a.p, s.H]
+let a = (0, r.zZ)(i.X.LANGUAGE_AND_TIME_CATEGORY, {
+    buildLayout: () => [l.p, s.H]
 })

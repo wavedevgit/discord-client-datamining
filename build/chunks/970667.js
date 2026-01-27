@@ -6,14 +6,14 @@ n.d(t, {
 });
 var r = n(643479);
 let i = {
-        isXMLFile: o,
+        isXMLFile: s,
         findOffsets: l
     },
     a = 0,
-    s = "<?xpacket begin";
+    o = "<?xpacket begin";
 
-function o(e) {
-    return !!e && (0, r.hT)(e, a, s.length) === s
+function s(e) {
+    return !!e && (0, r.hT)(e, a, o.length) === o
 }
 
 function l(e) {

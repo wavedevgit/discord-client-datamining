@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(635377),
     i = n.n(r),
     a = n(439372),
-    s = n(954571),
-    o = n(652215);
+    o = n(954571),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ var _ = function(e) {
 
 function h(e) {
     if ("announcement" === e.type) return {
-        event: o.HAw.ANNOUNCEMENT_MESSAGE_VIEWED,
+        event: s.HAw.ANNOUNCEMENT_MESSAGE_VIEWED,
         properties: {
             message_id: e.messageId,
             channel_id: e.channelId,
@@ -40,7 +40,7 @@ function h(e) {
         }
     };
     if ("app_embed" === e.type) return {
-        event: o.HAw.APP_EMBED_VIEWED,
+        event: s.HAw.APP_EMBED_VIEWED,
         properties: {
             application_id: e.applicationId,
             link_type: e.linkType,
@@ -86,7 +86,7 @@ class m extends a.A {
     drainBuffer() {
         for (let e of this.batchBuffer) {
             let t = h(e);
-            s.default.track(t.event, t.properties)
+            o.default.track(t.event, t.properties)
         }
         this.batchBuffer = [], null != this.batchTimerId && (clearTimeout(this.batchTimerId), this.batchTimerId = null)
     }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(460890),
-    s = n(189213),
-    o = n(696208);
+    o = n(189213),
+    s = n(696208);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function f(e) {
     let [v, A] = i.useState(void 0), I = e => {
         A(e)
     };
-    return (0, r.jsx)(s.Modal, c({
+    return (0, r.jsx)(o.Modal, c({
         actions: [{
             text: null != n ? n : g,
             variant: "secondary",
@@ -94,7 +94,7 @@ function f(e) {
             disabled: y,
             loading: y
         }],
-        actionBarInput: null != l ? (0, r.jsx)(o.e, c({}, l)) : void 0,
+        actionBarInput: null != l ? (0, r.jsx)(s.e, c({}, l)) : void 0,
         role: "alertdialog",
         notice: null != v ? {
             message: v,

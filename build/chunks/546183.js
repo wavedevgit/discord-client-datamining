@@ -7,8 +7,8 @@ n.r(t), n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(311907),
     a = n(73153),
-    s = n(734057),
-    o = n(134861),
+    o = n(734057),
+    s = n(134861),
     l = n(320501);
 
 function c(e, t, n) {
@@ -96,7 +96,7 @@ function O(e) {
 }
 class v extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(s.A, o.A, l.A)
+        this.waitFor(o.A, s.A, l.A)
     }
     getNewestTokenForApplication(e) {
         var t;

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 927989, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 });
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
-    l = n(854987),
+    i = n.n(a),
+    s = n(397927),
+    o = n(854987),
     c = n(960849);
 
 function u(e) {
@@ -17,9 +16,9 @@ function u(e) {
         children: t,
         useTopRightClipPath: n = !1,
         innerClassName: a
-    } = e, u = i.useContext(l.P), d = (0, o.rdh)(u.primaryColor).hex();
+    } = e, u = l.useContext(o.P), d = (0, s.rdh)(u.primaryColor).hex();
     return (0, r.jsxs)("div", {
-        className: s()(n ? c.hp : c.kL),
+        className: i()(n ? c.hp : c.kL),
         children: [(0, r.jsx)("div", {
             className: c.an,
             style: {
@@ -41,7 +40,7 @@ function u(e) {
                 backgroundColor: d
             }
         }), (0, r.jsx)("div", {
-            className: s()(c.T5, a),
+            className: i()(c.T5, a),
             style: {
                 borderColor: d
             },

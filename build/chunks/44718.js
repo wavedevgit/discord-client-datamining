@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(624694),
     i = n(430452),
     a = n(383501),
-    s = n(927813),
-    o = n(487329),
+    o = n(927813),
+    s = n(487329),
     l = n(601900);
 
 function c(e, t, n) {
@@ -33,15 +33,15 @@ function u(e) {
     return e
 }
 let d = 30,
-    f = 10 * s.A.Millis.SECOND,
+    f = 10 * o.A.Millis.SECOND,
     p = 30,
     _ = {
         getActiveErrors: () => {
-            var e, t, n, s, c, _;
+            var e, t, n, o, c, _;
             if ((null != (e = null == (n = a.A.getRTCConnection()) ? void 0 : n.getDurationSeconds()) ? e : 0) < d || performance.now() - i.A.getLastAudioInputDeviceChangeTimestamp() < f) return;
-            let h = null != (t = null == (c = r.A.getConnectionStats(null == (_ = a.A.getRTCConnection()) ? void 0 : _.getMediaEngineConnectionId())) || null == (s = c.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : s.sampleRateMismatchPercent) ? t : 0;
+            let h = null != (t = null == (c = r.A.getConnectionStats(null == (_ = a.A.getRTCConnection()) ? void 0 : _.getMediaEngineConnectionId())) || null == (o = c.stats.rtp.outbound.find(e => "audio" === e.type)) ? void 0 : o.sampleRateMismatchPercent) ? t : 0;
             if (Math.abs(h) > p) return [u({
-                type: o.iy.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
+                type: s.iy.AUDIO_CAPTURE_SAMPLE_RATE_MISMATCH,
                 audioCaptureSampleRateMismatchPercent: h
             }, (0, l.jY)())]
         },

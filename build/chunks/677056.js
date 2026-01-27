@@ -2,20 +2,20 @@
 /** chunk id: 677056, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(635917),
     a = n(985018);
 
-function s(e) {
+function o(e) {
     let {
         id: t,
         width: n = i.Kl
-    } = e, s = (0, i.gG)(t);
-    return null == s ? null : (0, r.jsx)("img", {
-        src: s.iconSource,
+    } = e, o = (0, i.gG)(t);
+    return null == o ? null : (0, r.jsx)("img", {
+        src: o.iconSource,
         width: n,
         alt: a.intl.string(a.t.N4YDao),
         draggable: !1

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(506774),
     a = n(73153),
-    s = n(624826),
-    o = n(398590),
+    o = n(624826),
+    s = n(398590),
     l = n(652215),
     c = n(516780);
 
@@ -44,7 +44,7 @@ let f = {
             type: "USER_SETTINGS_MODAL_OPEN",
             section: e,
             subsection: t
-        }, n)), (0, o.id)(l.zgK.USER_SETTINGS)
+        }, n)), (0, s.id)(l.zgK.USER_SETTINGS)
     },
     close() {
         a.h.dispatch({
@@ -94,7 +94,7 @@ let f = {
         });
         let {
             username: n,
-            email: o,
+            email: s,
             emailToken: u,
             password: d,
             avatar: f,
@@ -104,7 +104,7 @@ let f = {
             close: h
         } = t, m = {
             username: n,
-            email: o,
+            email: s,
             email_token: u,
             password: d,
             avatar: f,
@@ -128,7 +128,7 @@ let f = {
             }), a.h.dispatch({
                 type: "CURRENT_USER_UPDATE",
                 user: t
-            }), void 0 !== f && (0, s.t)({
+            }), void 0 !== f && (0, o.t)({
                 avatarHash: t.avatar
             }), null != p && a.h.dispatch({
                 type: "USER_PASSWORD_UPDATE",

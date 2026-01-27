@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 979811, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__28e94",
     Lt: "select__28e94",

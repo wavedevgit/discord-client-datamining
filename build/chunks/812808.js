@@ -3,20 +3,20 @@
 "use strict";
 n.d(t, {
     B: () => l,
-    G: () => o
+    G: () => s
 });
 var r = n(311907),
     i = n(153488),
     a = n(531685);
 n(595);
-var s = n(652215);
+var o = n(652215);
 
-function o() {
-    return c((0, r.bG)([a.A], () => a.A.windowSize().width), (0, r.bG)([i.A], () => i.A.hasConsented(s.YAq.PERSONALIZATION)))
+function s() {
+    return c((0, r.bG)([a.A], () => a.A.windowSize().width), (0, r.bG)([i.A], () => i.A.hasConsented(o.YAq.PERSONALIZATION)))
 }
 
 function l() {
-    return c(a.A.windowSize().width, i.A.hasConsented(s.YAq.PERSONALIZATION))
+    return c(a.A.windowSize().width, i.A.hasConsented(o.YAq.PERSONALIZATION))
 }
 
 function c(e, t) {

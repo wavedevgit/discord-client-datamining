@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(321073), n(228524);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(157559),
     c = n(743445),
     u = n(972711),
@@ -53,16 +53,16 @@ let O = e => {
         channelId: n,
         draftType: r,
         allowOptimization: i
-    } = e, s = [...g(n, r)];
-    s.length + t.length > f.XgB && r !== d.C.SlashCommand && r !== d.C.ApplicationLauncherCommand ? l.A.show({
+    } = e, o = [...g(n, r)];
+    o.length + t.length > f.XgB && r !== d.C.SlashCommand && r !== d.C.ApplicationLauncherCommand ? l.A.show({
         title: p.intl.string(p.t.wOr6hB),
         body: p.intl.formatToPlainString(p.t["qqyp/e"], {
             limit: f.XgB
         })
     }) : (a().forEach(t, e => {
-        let t = new c.bK(e, n, s.length, i);
-        t.upload(), s.push(t)
-    }), y(n, r, s))
+        let t = new c.bK(e, n, o.length, i);
+        t.upload(), o.push(t)
+    }), y(n, r, o))
 };
 
 function v(e) {
@@ -96,10 +96,10 @@ function I(e) {
         filename: r,
         description: i,
         spoiler: a,
-        thumbnail: s,
-        draftType: o
-    } = e, l = [...g(t, o)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== a && (e.spoiler = a), void 0 !== i && (e.description = i), void 0 !== s && (e.isThumbnail = s)), e));
-    y(t, o, l)
+        thumbnail: o,
+        draftType: s
+    } = e, l = [...g(t, s)].map(e => (e.id === n && (void 0 !== r && (e.filename = r), void 0 !== a && (e.spoiler = a), void 0 !== i && (e.description = i), void 0 !== o && (e.isThumbnail = o)), e));
+    y(t, s, l)
 }
 
 function S(e) {
@@ -109,8 +109,8 @@ function S(e) {
         file: r,
         draftType: i,
         allowOptimization: a
-    } = e, s = [...g(t, i)].filter(e => e.id !== n), o = new c.bK(r, t, void 0, a);
-    o.upload(), s.push(o), y(t, i, s)
+    } = e, o = [...g(t, i)].filter(e => e.id !== n), s = new c.bK(r, t, void 0, a);
+    s.upload(), o.push(s), y(t, i, o)
 }
 
 function T(e) {
@@ -136,7 +136,7 @@ function N(e) {
     } = e;
     y(t, d.C.FirstThreadMessage, [])
 }
-class w extends(r = s.Ay.Store) {
+class w extends(r = o.Ay.Store) {
     getFirstUpload(e, t) {
         let n = g(e, t);
         return n.length > 0 ? n[0] : null
@@ -160,7 +160,7 @@ class w extends(r = s.Ay.Store) {
     }
 }
 _(w, "displayName", "UploadAttachmentStore");
-let R = new w(o.h, {
+let R = new w(s.h, {
     UPLOAD_ATTACHMENT_POP_FILE: b,
     UPLOAD_ATTACHMENT_ADD_FILES: O,
     UPLOAD_ATTACHMENT_UPDATE_FILE: I,

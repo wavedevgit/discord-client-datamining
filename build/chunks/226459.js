@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n(439372),
     a = n(706341),
-    s = n(320697),
-    o = n(849077);
+    o = n(320697),
+    s = n(849077);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -23,15 +23,15 @@ class u extends i.A {
     preloadInbox() {
         a.A.loadMoreInbox({
             preload: !0,
-            loadingTrigger: o.VA.AUTO_LOAD
+            loadingTrigger: s.VA.AUTO_LOAD
         })
     }
     _terminate() {
         this.throttledPreloadInbox.cancel()
     }
     constructor() {
-        super(), l(this, "throttledPreloadInbox", void 0), l(this, "stores", new Map().set(s.A, () => {
-            s.A.hasPreloaded || s.A.canLoadMore({
+        super(), l(this, "throttledPreloadInbox", void 0), l(this, "stores", new Map().set(o.A, () => {
+            o.A.hasPreloaded || o.A.canLoadMore({
                 preload: !0
             }) && this.throttledPreloadInbox()
         })), this.throttledPreloadInbox = (0, r.throttle)(this.preloadInbox, c)

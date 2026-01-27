@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(260509),
-    o = n(696451),
+    o = n(260509),
+    s = n(696451),
     l = n(71393),
     c = n(287809),
     u = n(652215);
@@ -88,8 +88,8 @@ function O(e) {
         guildId: n,
         joinedAt: r,
         user: i
-    } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? void 0 : t.id), s = null == r;
-    return !!a && !s && !!f.includes(n) && (m(n), _ = null, !0)
+    } = e, a = i.id === (null == (t = c.default.getCurrentUser()) ? void 0 : t.id), o = null == r;
+    return !!a && !o && !!f.includes(n) && (m(n), _ = null, !0)
 }
 
 function v(e) {
@@ -115,11 +115,11 @@ function I(e) {
 }
 
 function S() {
-    f = l.A.getGuildsArray().filter(e => (0, s.DG)(e)).map(e => e.id)
+    f = l.A.getGuildsArray().filter(e => (0, o.DG)(e)).map(e => e.id)
 }
 class T extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.Ay, l.A, c.default)
+        this.waitFor(s.Ay, l.A, c.default)
     }
     lurkingGuildIds() {
         return f
@@ -130,8 +130,8 @@ class T extends(r = i.Ay.Store) {
     isLurking(e) {
         let t = l.A.getGuild(e);
         if (null == t) return !1;
-        let n = o.Ay.isCurrentUserGuest(e),
-            r = (0, s.DG)(t);
+        let n = s.Ay.isCurrentUserGuest(e),
+            r = (0, o.DG)(t);
         return !!(!n && r)
     }
     getLurkingSource() {

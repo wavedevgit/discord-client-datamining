@@ -2,14 +2,14 @@
 /** chunk id: 837921, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => X,
+    Ay: () => Q,
     UB: () => z,
-    _0: () => V,
+    _0: () => F,
     dv: () => W,
     kw: () => Y
 }), n(896048), n(747238), n(812715), n(65821), n(457529), n(321073);
-var r, i, a, s, o = n(284009),
-    l = n.n(o),
+var r, i, a, o, s = n(284009),
+    l = n.n(s),
     c = n(279194),
     u = n(562465),
     d = n(118356),
@@ -68,25 +68,25 @@ let A = window.DiscordNative,
     w = null,
     R = null,
     P = {};
-null != A && (N = A.remoteApp.getVersion().split(".").map(e => parseInt(e)), R = null == (r = (i = A.remoteApp).getModuleVersions) ? void 0 : r.call(i), w = null == (a = (s = A.remoteApp).getBuildNumber) ? void 0 : a.call(s));
+null != A && (N = A.remoteApp.getVersion().split(".").map(e => parseInt(e)), R = null == (r = (i = A.remoteApp).getModuleVersions) ? void 0 : r.call(i), w = null == (a = (o = A.remoteApp).getBuildNumber) ? void 0 : a.call(o));
 let D = new Set(["discord_erlpack", "discord_game_utils", "discord_rpc", "discord_spellcheck", "discord_utils", "discord_voice"]),
-    x = !1,
-    L = "lastImageSaveDirectory",
-    j = /[<>:"/\\|?*@]/g,
-    M = /(\.[a-zA-Z0-9]+):[^.]*$/,
+    L = !1,
+    x = "lastImageSaveDirectory",
+    M = /[<>:"/\\|?*@]/g,
+    j = /(\.[a-zA-Z0-9]+):[^.]*$/,
     k = /(\.[a-zA-Z0-9]+)%3A.+$/,
     U = /[^a-zA-Z0-9]/g,
     G = /\.[^.]*$/;
-var V = function(e) {
+var F = function(e) {
     return e.SAVED = "saved", e.CANCELED = "canceled", e.ERRORED = "errored", e
 }({});
 
-function F(e) {
+function V(e) {
     try {
         let t = decodeURIComponent(e);
-        return (t = (t = t.replace(M, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(j, "_")
+        return (t = (t = t.replace(j, "$1")).replace(/(.+)@([a-zA-Z0-9]+)$/, "$1.$2")).replace(M, "_")
     } catch (t) {
-        return e.replace(k, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(j, "_")
+        return e.replace(k, "$1").replace(/(.+)%40([a-zA-Z0-9]+)$/, "$1.$2").replace(M, "_")
     }
 }
 async function B(e) {
@@ -111,7 +111,7 @@ var Y = function(e) {
     }({});
 
 function K(e) {
-    var t, n, r, i, a, s, o, l, c;
+    var t, n, r, i, a, o, s, l, c;
     return {
         id: P[null != (t = e.id) ? t : ""],
         nativeProcessObserverId: parseInt(null != (n = e.id) ? n : "", 10),
@@ -128,9 +128,9 @@ function K(e) {
         distributor: e.distributor,
         sku: e.sku,
         pid: e.pid,
-        pidPath: null != (s = e.pidPath) ? s : [],
+        pidPath: null != (o = e.pidPath) ? o : [],
         gameMetadata: e.gameMetadata,
-        windowHandle: null != (o = e.windowHandle) ? o : null,
+        windowHandle: null != (s = e.windowHandle) ? s : null,
         fullscreenType: null != (l = e.fullscreenType) ? l : p.aI.UNKNOWN,
         isLauncher: null != (c = e.isLauncher) && c
     }
@@ -143,10 +143,10 @@ function z(e, t) {
         if ("jpeg" === e) return "jpg";
         if (null != e) return e
     }
-    let s = m.A.toURLSafe(e);
-    if (null == s) return;
-    let o = null == (i = s.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? void 0 : n.toLowerCase();
-    return null != o && o.length <= C ? o : void 0
+    let o = m.A.toURLSafe(e);
+    if (null == o) return;
+    let s = null == (i = o.pathname) || null == (r = i.split(".")) || null == (n = r.pop()) ? void 0 : n.toLowerCase();
+    return null != s && s.length <= C ? s : void 0
 }
 
 function q(e) {
@@ -240,12 +240,12 @@ let Z = {
         getVoiceEngine() {
             if (__OVERLAY__) throw Error("cannot require discord_voice in overlay");
             let e = this.requireModule("discord_voice");
-            return x || (0, d.si)((t, n, r) => {
+            return L || (0, d.si)((t, n, r) => {
                 e.consoleLog(n, "[".concat(t, "] ").concat(r))
-            }), x = !0, e
+            }), L = !0, e
         },
         getDiscordUtils() {
-            if (!x) try {
+            if (!L) try {
                 this.getVoiceEngine()
             } catch (e) {}
             return this.requireModule("discord_utils")
@@ -336,12 +336,12 @@ let Z = {
         },
         async saveImage(e, t, n) {
             var r, i, a;
-            let s, o;
+            let o, s;
             l()(h.isPlatformEmbedded, "Save image method called outside native app");
             let c = m.A.toURLSafe(e);
             if (null == c) return "errored";
             let u = null != (r = c.pathname.split("/").pop()) ? r : "unknown";
-            u = F(u);
+            u = V(u);
             let d = c.searchParams.get("format");
             if (null != d) {
                 let e = d.replace(U, "").toLowerCase();
@@ -355,17 +355,17 @@ let Z = {
             }
             let p = await H(e),
                 _ = E.from(p),
-                g = f.w.get(L);
+                g = f.w.get(x);
             if ("string" != typeof g && (g = void 0), "function" == typeof A.fileManager.saveWithDialog2) {
-                if (null == (s = await A.fileManager.saveWithDialog2(_, u, null != g ? g : void 0))) return "errored";
-                if (s.canceledByUser) return "canceled";
-                o = s.directory
+                if (null == (o = await A.fileManager.saveWithDialog2(_, u, null != g ? g : void 0))) return "errored";
+                if (o.canceledByUser) return "canceled";
+                s = o.directory
             } else try {
-                o = await A.fileManager.saveWithDialog(_, u, null != g ? g : void 0)
+                s = await A.fileManager.saveWithDialog(_, u, null != g ? g : void 0)
             } catch (e) {
                 return "errored"
             }
-            return null == o || "" === o ? "errored" : (f.w.set(L, o), "saved")
+            return null == s || "" === s ? "errored" : (f.w.set(x, s), "saved")
         },
         async saveFile(e, t) {
             var n;
@@ -373,11 +373,11 @@ let Z = {
             let r = m.A.toURLSafe(e);
             if (null == r) return null;
             let i = null != (n = null != t ? t : r.pathname.split("/").pop()) ? n : "unknown";
-            null == t && (i = F(i));
+            null == t && (i = V(i));
             let a = await B(e),
-                s = E.from(a),
-                o = await A.fileManager.saveWithDialog(s, i, void 0);
-            return null == o ? null : o
+                o = E.from(a),
+                s = await A.fileManager.saveWithDialog(o, i, void 0);
+            return null == s ? null : s
         },
         async downloadVoiceFilterFile(e, t, n) {
             l()(h.isPlatformEmbedded, "Download voice filter file method called outside native app");
@@ -520,10 +520,6 @@ let Z = {
         setSetting(e, t) {
             var n, r;
             null == (n = (r = A.gpuSettings).setSetting) || n.call(r, e, t)
-        },
-        getOptionalUpdates: async () => await A.settings.get("OPTIN_OPTIONAL_UPDATES", !1),
-        async setOptionalUpdates(e) {
-            await A.settings.set("OPTIN_OPTIONAL_UPDATES", e)
         },
         async getOpenOnStart() {
             var e, t, n;
@@ -668,8 +664,8 @@ let Z = {
             let {
                 method: i,
                 maxBps: a,
-                token: s,
-                chunkInterval: o,
+                token: o,
+                chunkInterval: s,
                 contentType: l
             } = b({
                 maxBps: 8e3,
@@ -677,7 +673,7 @@ let Z = {
                 contentType: "application/json"
             }, n), c = t;
             "application/json" === l && (c = JSON.stringify(t));
-            let d = o / 1e3 * a,
+            let d = s / 1e3 * a,
                 f = Math.ceil(c.length / d),
                 p = Array(f);
             for (let e = 0; e < f; e++) {
@@ -687,9 +683,9 @@ let Z = {
             return new Promise((e, t) => {
                 null != A.http && A.http.makeChunkedRequest(r, p, {
                     method: i,
-                    chunkInterval: o,
+                    chunkInterval: s,
                     contentType: l,
-                    token: s
+                    token: o
                 }, (n, r) => null != n ? t(n) : r.status >= 400 ? t(Error(r.body)) : void e(r))
             })
         },
@@ -849,10 +845,10 @@ let Z = {
             var n, r, i;
             let a = [...null != N ? N : [0, 0, 0]];
             a.push(null != (n = null == (i = this.moduleVersions) ? void 0 : i[e]) ? n : 0);
-            let s = null != (r = t[this.releaseChannel]) ? r : t.stable;
+            let o = null != (r = t[this.releaseChannel]) ? r : t.stable;
             for (let [e, t] of a.entries())
-                if (t > s[e]) break;
-                else if (t < s[e]) return !1;
+                if (t > o[e]) break;
+                else if (t < o[e]) return !1;
             return !0
         },
         fetchRiotGamesLiveClientData(e) {
@@ -872,4 +868,4 @@ let Z = {
             q("DISCORD_APP_ASYNC_INDEX_TSX_LOADED")
         }
     },
-    X = Z
+    Q = Z

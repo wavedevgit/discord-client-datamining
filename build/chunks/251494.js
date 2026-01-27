@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 251494, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     X: () => s
 });
 var r = n(775602),
     i = n(203982),
-    a = n(652215);
+    l = n(652215);
 let s = {
     binds: ["return"],
     action() {
-        if (!r.A.keyboardModeEnabled && i._.hasSubscribers(a.jej.MODAL_SUBMIT)) return i._.dispatch(a.jej.MODAL_SUBMIT), !1
+        if (!r.A.keyboardModeEnabled && i._.hasSubscribers(l.jej.MODAL_SUBMIT)) return i._.dispatch(l.jej.MODAL_SUBMIT), !1
     }
 }

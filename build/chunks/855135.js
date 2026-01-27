@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 855135, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+/** Chunk was on 96126 **/
+/** chunk id: 855135, original params: e,r,a (module,exports,require) **/
+a.r(e.exports = {
     premiumCards: "premiumCards__6df1a",
     premiumCardHover: "premiumCardHover__6df1a",
     tier2ApplicationHomeSubheader: "tier2ApplicationHomeSubheader__6df1a",
@@ -35,5 +34,4 @@ var r = {
     cardTitle: "cardTitle__6df1a",
     betaPill: "betaPill__6df1a",
     cardHeader: "cardHeader__6df1a"
-};
-n.r(e.exports = r)
+})

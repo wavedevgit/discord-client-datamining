@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(205693),
     a = n(827343),
-    s = n(37965),
-    o = n(487329),
+    o = n(37965),
+    s = n(487329),
     l = n(975571),
     c = n(200749),
     u = n(652215),
@@ -23,10 +23,10 @@ function p(e) {
         avError: _,
         selected: h = !1,
         noArt: m = !1
-    } = e, g = null == (t = (0, o.B1)(_)) ? void 0 : t.errorCode;
+    } = e, g = null == (t = (0, s.B1)(_)) ? void 0 : t.errorCode;
 
     function E() {
-        (0, s.W)(i.x.DEFAULT, n), a.A.setDisableLocalVideo(n, u.bb8.DISABLED, i.x.DEFAULT, !1), setTimeout(() => {
+        (0, o.W)(i.x.DEFAULT, n), a.A.setDisableLocalVideo(n, u.bb8.DISABLED, i.x.DEFAULT, !1), setTimeout(() => {
             a.A.setDisableLocalVideo(n, u.bb8.MANUAL_ENABLED, i.x.DEFAULT, !1)
         }, 1e3)
     }

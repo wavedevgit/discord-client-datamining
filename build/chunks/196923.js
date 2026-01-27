@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n.n(a),
-    o = n(330140),
+    o = n.n(a),
+    s = n(330140),
     l = n(311907),
     c = n(397927),
     u = n(933958),
@@ -70,7 +70,7 @@ let I = {
     };
 
 function T() {
-    return 500 !== s().random(1, 1e3) ? "call_ringing" : s().sample(["call_ringing_beat", "call_ringing_snow_halation"])
+    return 500 !== o().random(1, 1e3) ? "call_ringing" : o().sample(["call_ringing_beat", "call_ringing_snow_halation"])
 }
 
 function C() {
@@ -83,12 +83,12 @@ function C() {
         t = (0, l.bG)([g.A], () => g.A.hasIncomingCalls()),
         n = (0, l.bG)([_.A], () => _.A.isSoundDisabled("call_ringing")),
         a = (0, l.bG)([m.A], () => m.A.disableSounds),
-        s = (0, l.bG)([p.A], () => p.A.getSoundpack()),
+        o = (0, l.bG)([p.A], () => p.A.getSoundpack()),
         b = i.useRef(!1),
-        v = (0, o.A)(() => {
+        v = (0, s.A)(() => {
             let e = "call_ringing";
-            return s === y.i.CLASSIC ? (0, f.Qh)(T(), e) : (0, f.aN)("call_ringing", s)
-        }, [s]);
+            return o === y.i.CLASSIC ? (0, f.Qh)(T(), e) : (0, f.aN)("call_ringing", o)
+        }, [o]);
     return i.useEffect(() => () => {
         v.stop()
     }, [v]), i.useEffect(() => {

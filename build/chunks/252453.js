@@ -8,11 +8,11 @@ var r = n(627968);
 n(64700);
 var i = n(708418),
     a = n(747243),
-    s = n(582754),
-    o = n(425763),
+    o = n(582754),
+    s = n(425763),
     l = n(647245);
 let c = (0, a.eV)("keydown", e => !!(0, l.fR)(e) && (e.preventDefault(), !0)),
-    u = (0, a.eV)("mousedown", e => -1 === e.type.indexOf("touch") && -1 !== e.type.indexOf("mouse") && ((0, o.ef)(!1), !0)),
+    u = (0, a.eV)("mousedown", e => -1 === e.type.indexOf("touch") && -1 !== e.type.indexOf("mouse") && ((0, s.ef)(!1), !0)),
     d = {
         backends: [{
             id: "html5",
@@ -26,8 +26,8 @@ let c = (0, a.eV)("keydown", e => !!(0, l.fR)(e) && (e.preventDefault(), !0)),
                 document
             },
             options: {
-                onDndModeChanged: o.ef,
-                announcer: s.OR
+                onDndModeChanged: s.ef,
+                announcer: o.OR
             },
             preview: !0,
             transition: c

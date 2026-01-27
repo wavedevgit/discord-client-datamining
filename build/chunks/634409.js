@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(311016),
     c = n(915089),
     u = n(713517),
@@ -60,28 +60,28 @@ function D(e) {
         user: n,
         guildId: R,
         channelId: D,
-        messageId: x,
-        roleId: L,
-        openedAt: j,
-        setPopoutRef: M,
+        messageId: L,
+        roleId: x,
+        openedAt: M,
+        setPopoutRef: j,
         closePopout: k,
         disableUserProfileLink: U = __OVERLAY__,
         newAnalyticsLocations: G = [],
-        disableAutoFocus: V = !1,
-        onClickContainer: F
+        disableAutoFocus: F = !1,
+        onClickContainer: V
     } = e, B = (0, m.Ay)(n.id, R), H = (0, d.aL)(), {
         analyticsLocations: Y
-    } = (0, o.Ay)([...G, s.A.USER_PROFILE_POPOUT]), W = (0, _.pb)({
+    } = (0, s.Ay)([...G, o.A.USER_PROFILE_POPOUT]), W = (0, _.pb)({
         layout: "POPOUT",
         userId: n.id,
         guildId: R,
         channelId: D,
-        messageId: x,
-        roleId: L
+        messageId: L,
+        roleId: x
     }), K = i.useRef(null), z = (0, u.M)(K);
     i.useEffect(() => {
-        null == M || M(null == K ? void 0 : K.current)
-    }, [K, M]);
+        null == j || j(null == K ? void 0 : K.current)
+    }, [K, j]);
     let q = () => {
             null == k || k(), H.dispatch(T.jej.POPOUT_CLOSE), (0, g.openUserProfileModal)(P({
                 sourceAnalyticsLocations: Y,
@@ -89,7 +89,7 @@ function D(e) {
             }, W))
         },
         Z = !U && (0, l.A)(n.id),
-        X = () => Z ? (0, r.jsx)(a.Drp, {
+        Q = () => Z ? (0, r.jsx)(a.Drp, {
             id: "view-profile",
             label: N.intl.string(N.t["+Xp3hq"]),
             action: () => {
@@ -99,21 +99,21 @@ function D(e) {
                 }, W))
             }
         }) : null,
-        Q = V ? "div" : a.lGe,
+        X = F ? "div" : a.lGe,
         J = (0, c.GV)(),
         $ = p.Ay.useName(R, D, n);
-    return (0, r.jsx)(o.f5, {
+    return (0, r.jsx)(s.f5, {
         value: Y,
         children: (0, r.jsx)(_.of, {
             value: W,
-            openedAt: j,
+            openedAt: M,
             fetchStartedAt: null == B ? void 0 : B.fetchStartedAt,
             fetchEndedAt: null == B ? void 0 : B.fetchEndedAt,
             isLoaded: null == B ? void 0 : B.isLoaded,
-            children: (0, r.jsxs)(Q, {
+            children: (0, r.jsxs)(X, {
                 ref: K,
                 "aria-labelledby": J,
-                onClick: F,
+                onClick: V,
                 children: [(0, r.jsx)(a.AC4, {
                     children: (0, r.jsx)(a.H, {
                         id: J,
@@ -128,7 +128,7 @@ function D(e) {
                     children: [(0, r.jsx)(S.A, {
                         children: (0, r.jsx)(I.A, {
                             user: n,
-                            viewProfileItem: X()
+                            viewProfileItem: Q()
                         })
                     }), (0, r.jsxs)("div", {
                         className: w.wx,

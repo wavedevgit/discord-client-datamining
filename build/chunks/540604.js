@@ -2,15 +2,15 @@
 /** chunk id: 540604, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(985410),
     a = n(379326),
-    s = n(269385);
+    o = n(269385);
 
-function o() {
+function s() {
     return (0, r.jsx)("div", {
         className: i.k,
         children: (0, r.jsxs)("svg", {
@@ -138,7 +138,7 @@ function o() {
                         y: "0",
                         height: "44",
                         width: "44",
-                        href: s
+                        href: o
                     })
                 })]
             })]

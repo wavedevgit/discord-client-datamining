@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 719718, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    $: () => c,
-    A: () => T
+    $: () => u,
+    A: () => x
 });
-var r, i = n(311907),
-    a = n(73153),
+var r, l, a = n(311907),
+    i = n(73153),
     s = n(532294);
 
 function o(e, t, n) {
@@ -18,7 +17,7 @@ function o(e, t, n) {
     }) : e[t] = n, e
 }
 
-function l(e) {
+function c(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -30,11 +29,9 @@ function l(e) {
     }
     return e
 }
-var c = function(e) {
-    return e[e.INIT = 0] = "INIT", e[e.FETCHING = 1] = "FETCHING", e[e.SUCCESS = 2] = "SUCCESS", e[e.ERROR = 3] = "ERROR", e
-}({});
-let u = {},
-    d = 0,
+var u = ((r = {})[r.INIT = 0] = "INIT", r[r.FETCHING = 1] = "FETCHING", r[r.SUCCESS = 2] = "SUCCESS", r[r.ERROR = 3] = "ERROR", r);
+let d = {},
+    m = 0,
     f = !1,
     p = {
         volume: 1,
@@ -42,85 +39,67 @@ let u = {},
         highestSlideSeen: s.P7.WELCOME,
         hasSeenRewatchPopover: !1
     },
-    _ = l({}, p);
+    h = c({}, p);
 
-function h() {
-    u = {}, d = 0, f = !1
+function b() {
+    d = {}, m = 0, f = !1
 }
-
-function m() {
-    h(), _ = l({}, p)
-}
-
-function g() {
-    d = 1
-}
-
-function E(e) {
-    u = e.data, d = 2
-}
-
-function y() {
-    d = 3
-}
-
-function b(e) {
-    _.volume = e.volume
-}
-
-function O() {
-    _.isMuted = !_.isMuted
-}
-
-function v(e) {
-    _.highestSlideSeen = e.slide
-}
-
-function A() {
-    f = !0
-}
-
-function I() {
-    _.hasSeenRewatchPopover = !0
-}
-class S extends(r = i.Ay.PersistedStore) {
+class g extends(l = a.Ay.PersistedStore) {
     getState() {
-        return _
+        return h
     }
     initialize(e) {
-        h(), null != e && (_ = l({}, _, e))
+        b(), null != e && (h = c({}, h, e))
     }
     getCheckpointData() {
-        return u
-    }
-    getFetchState() {
         return d
     }
+    getFetchState() {
+        return m
+    }
     get volume() {
-        return _.volume
+        return h.volume
     }
     get isMuted() {
-        return _.isMuted
+        return h.isMuted
     }
     get highestSlideSeen() {
-        return _.highestSlideSeen
+        return h.highestSlideSeen
     }
     get hasSeenRewatchPopover() {
-        return _.hasSeenRewatchPopover
+        return h.hasSeenRewatchPopover
     }
     get hasOpenedCheckpointThisSession() {
         return f
     }
 }
-o(S, "displayName", "CheckpointStore"), o(S, "persistKey", "CheckpointStore");
-let T = new S(a.h, {
-    CHECKPOINT_FETCH_START: g,
-    CHECKPOINT_FETCH_SUCCESS: E,
-    CHECKPOINT_FETCH_FAILED: y,
-    CHECKPOINT_SET_VOLUME: b,
-    CHECKPOINT_TOGGLE_MUTE: O,
-    CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: v,
-    CHECKPOINT_AFTER_CLOSED: A,
-    CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: I,
-    LOGOUT: m
+o(g, "displayName", "CheckpointStore"), o(g, "persistKey", "CheckpointStore");
+let x = new g(i.h, {
+    CHECKPOINT_FETCH_START: function() {
+        m = 1
+    },
+    CHECKPOINT_FETCH_SUCCESS: function(e) {
+        d = e.data, m = 2
+    },
+    CHECKPOINT_FETCH_FAILED: function() {
+        m = 3
+    },
+    CHECKPOINT_SET_VOLUME: function(e) {
+        h.volume = e.volume
+    },
+    CHECKPOINT_TOGGLE_MUTE: function() {
+        h.isMuted = !h.isMuted
+    },
+    CHECKPOINT_SET_HIGHEST_SLIDE_SEEN: function(e) {
+        h.highestSlideSeen = e.slide
+    },
+    CHECKPOINT_AFTER_CLOSED: function() {
+        f = !0
+    },
+    CHECKPOINT_SET_HAS_SEEN_REWATCH_POPOVER: function() {
+        h.hasSeenRewatchPopover = !0
+    },
+    LOGOUT: function() {
+        b(), h = c({}, p)
+    }
 })

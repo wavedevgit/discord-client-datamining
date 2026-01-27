@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(575593),
     a = n(674658),
-    s = n(628856),
-    o = n(226540),
+    o = n(628856),
+    s = n(226540),
     l = n(227),
     c = n(486020);
 let u = e => {
@@ -39,10 +39,10 @@ let u = e => {
         })
     }
     if (f.type === i.R.NAMEPLATE) {
-        let e = (0, s.D)(f);
+        let e = (0, o.D)(f);
         return (0, r.jsx)(l.A, {
             nameplate: e,
-            placement: o.u.PREVIEW
+            placement: s.u.PREVIEW
         })
     }
     return null

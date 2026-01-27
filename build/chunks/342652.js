@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(491533),
     i = n(583954),
     a = n(816334),
-    s = n(365170),
-    o = n(241678);
+    o = n(365170),
+    s = n(241678);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -40,11 +40,11 @@ let u = (e, t, n) => c({
     }),
     d = (e, t) => {
         let n = [{
-            iconPath: o.qV,
+            iconPath: s.qV,
             text: e
         }];
         return null != t && n.push({
-            iconPath: o.Uy,
+            iconPath: s.Uy,
             text: t
         }), n
     },
@@ -104,7 +104,7 @@ let u = (e, t, n) => c({
                 h: 32
             }, 50), e.setFont({
                 size: 16,
-                family: o.mw,
+                family: s.mw,
                 weight: 500,
                 truncate: i.Kq.Wrap
             }), e.drawText(c, {
@@ -114,7 +114,7 @@ let u = (e, t, n) => c({
                 w: 260
             }, !0);
             let a = d(f, p);
-            (0, s.$)({
+            (0, o.$)({
                 canvas: e,
                 badges: a,
                 startPosition: 120,

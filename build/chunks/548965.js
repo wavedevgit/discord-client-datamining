@@ -2,15 +2,12 @@
 /** chunk id: 548965, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    ML: () => l,
-    aL: () => h,
-    iQ: () => m,
-    ys: () => _
+    ML: () => s,
+    iQ: () => f
 }), n(228524), n(321073), n(896048);
 var r = n(284009),
     i = n.n(r),
-    a = n(306173),
-    s = n(723426);
+    a = n(306173);
 
 function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -20,15 +17,15 @@ function o(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let l = [],
-    c = Symbol("unknown");
-class u {
+let s = [],
+    l = Symbol("unknown");
+class c {
     getEnabledFeatureName() {
         let e = this.getCachedConfig();
         return void 0 === e || e.treatmentId <= 0 ? null : "".concat(this.id, ":").concat(e.treatmentId)
     }
     getCachedConfig() {
-        return this.cachedConfig === c && ((0, a.xd)() ? this.cachedConfig = (0, a.Ih)().getConfig(this.id) : this.cachedConfig = void 0), this.cachedConfig
+        return this.cachedConfig === l && ((0, a.xd)() ? this.cachedConfig = (0, a.Ih)().getConfig(this.id) : this.cachedConfig = void 0), this.cachedConfig
     }
     setExperiment(e) {
         this.inner = e
@@ -41,10 +38,10 @@ class u {
         })
     }
     constructor(e, t) {
-        o(this, "id", void 0), o(this, "inner", void 0), o(this, "cachedConfig", void 0), this.id = e, this.inner = null, this.cachedConfig = c, l.push(this)
+        o(this, "id", void 0), o(this, "inner", void 0), o(this, "cachedConfig", void 0), this.id = e, this.inner = null, this.cachedConfig = l, s.push(this)
     }
 }
-class d extends u {
+class u extends c {
     getLabel() {
         return this.label
     }
@@ -63,43 +60,7 @@ class d extends u {
         super(e), o(this, "label", void 0), this.label = t
     }
 }
-class f extends u {
-    getCachedBridgedStoreMode() {
-        let e = this.getCachedConfig(),
-            t = (() => {
-                var t;
-                switch (null != (t = null == e ? void 0 : e.treatmentId) ? t : -1) {
-                    case 1:
-                        return "typescript-libdiscore-dual-read";
-                    case 2:
-                        return "libdiscore";
-                    default:
-                        return "typescript"
-                }
-            })();
-        return (0, s.E)(t)
-    }
-    getEnabledFeatureName() {
-        let e = this.getCachedBridgedStoreMode();
-        return "typescript" === e ? null : "".concat(this.type, "Store[").concat(this.storeName, ",").concat(e, "]")
-    }
-    getLabel() {
-        return "libdiscore '".concat(this.storeName, "' Migration")
-    }
-    getTreatments() {
-        return [{
-            treatmentId: 0
-        }, {
-            treatmentId: 1
-        }, {
-            treatmentId: 2
-        }]
-    }
-    constructor(e, t, n, r) {
-        super(e, r), o(this, "storeName", void 0), o(this, "type", void 0), this.storeName = t, this.type = n
-    }
-}
-class p extends u {
+class d extends c {
     getLabel() {
         return "libdiscore Telemetry"
     }
@@ -138,7 +99,5 @@ class p extends u {
         super(...e), o(this, "MAX_EMISSIONS_PER_APP_LAUNCH", 5), o(this, "emissionsCount", 0)
     }
 }
-let _ = new f("2025-09-libdiscore-rawguildemojistore", "RawGuildEmojiStore", "Kkv"),
-    h = new f("2025-10-libdiscore-guildstickersstore", "GuildStickersStore", "Kkv");
-new p("2025-09-libdiscore-telemetry");
-let m = new d("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")
+new d("2025-09-libdiscore-telemetry");
+let f = new u("2025-11-defer-load-late-lazy-cache", "Allow react to render before lazy cache is loaded")

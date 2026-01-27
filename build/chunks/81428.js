@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(653741);
+    o = n(653741);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -19,7 +19,7 @@ function o(e, t, n) {
 let l = null;
 
 function c(e) {
-    l = null != e.regionalFeatureConfig ? s.wN.fromConnectionOpen(e.regionalFeatureConfig) : null
+    l = null != e.regionalFeatureConfig ? o.wN.fromConnectionOpen(e.regionalFeatureConfig) : null
 }
 class u extends(r = i.Ay.Store) {
     getRegionalFeatureConfig() {
@@ -42,7 +42,7 @@ class u extends(r = i.Ay.Store) {
         return null != (e = null == l ? void 0 : l.hasTeenDefaults()) && e
     }
 }
-o(u, "displayName", "RegionalFeatureConfigStore");
+s(u, "displayName", "RegionalFeatureConfigStore");
 let d = new u(a.h, {
     CONNECTION_OPEN: c
 })

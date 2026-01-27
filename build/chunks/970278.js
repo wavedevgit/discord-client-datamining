@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(95701),
     c = n(734057),
     u = n(661191);
@@ -157,7 +157,7 @@ function w(e) {
     h[t.guild_id] = f({}, h[t.guild_id]), delete h[t.guild_id][t.id]
 }
 let R = {};
-class P extends(r = s.Ay.Store) {
+class P extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.A)
     }
@@ -185,7 +185,7 @@ class P extends(r = s.Ay.Store) {
     }
 }
 d(P, "displayName", "ActiveThreadsStore");
-let D = new P(o.h, {
+let D = new P(s.h, {
     CONNECTION_OPEN: O,
     OVERLAY_INITIALIZE: v,
     GUILD_CREATE: A,

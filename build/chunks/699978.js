@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 699978, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    k: () => o
+    k: () => a
 }), n(896048);
 var r = n(735438),
     i = n.n(r),
-    a = n(311907),
+    l = n(311907),
     s = n(787392);
 
-function o(e) {
-    return (0, a.yK)([s.A], () => i()(s.A.getUserVerifiedKeys(e)).entries().map(e => {
+function a(e) {
+    return (0, l.yK)([s.A], () => i()(s.A.getUserVerifiedKeys(e)).entries().map(e => {
         let [t, n] = e;
         return {
             verifiedKey: t,

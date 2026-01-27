@@ -2,22 +2,22 @@
 /** chunk id: 676608, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => s,
+    Ay: () => o,
     aF: () => l,
-    jV: () => o
+    jV: () => s
 });
 var r = n(311907),
     i = n(71393),
     a = n(652215);
 
-function s(e, t) {
+function o(e, t) {
     return (0, r.bG)([i.A], () => {
         let t = i.A.getGuild(e);
         return null != t && t.features.has(a.GuildFeatures.ENHANCED_ROLE_COLORS)
     })
 }
 
-function o(e, t) {
+function s(e, t) {
     return (0, r.bG)([i.A], () => {
         let t = i.A.getGuild(e);
         return null != t && t.features.has(a.GuildFeatures.ENHANCED_ROLE_COLORS)

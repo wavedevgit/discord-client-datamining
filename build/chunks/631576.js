@@ -9,16 +9,16 @@ n.d(t, {
     oI: () => T,
     p9: () => N,
     sl: () => C,
-    uK: () => x,
-    vr: () => L,
+    uK: () => L,
+    vr: () => x,
     x5: () => P,
     zk: () => A
 }), n(65821), n(228524), n(321073);
 var r = n(735438),
     i = n.n(r),
     a = n(562465),
-    s = n(73153),
-    o = n(157559),
+    o = n(73153),
+    s = n(157559),
     l = n(142120),
     c = n(773669),
     u = n(594061),
@@ -76,7 +76,7 @@ let A = async (e, t) => {
         url: m.Rsh.STICKER_PACK(e),
         rejectWithError: !1
     });
-    return s.h.dispatch({
+    return o.h.dispatch({
         type: "STICKER_PACK_FETCH_SUCCESS",
         packId: e,
         pack: n,
@@ -87,8 +87,8 @@ let A = async (e, t) => {
         locale: e = c.default.locale
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
     if (_.A.isFetchingStickerPacks || _.A.hasLoadedStickerPacks) return;
-    s.h.wait(() => {
-        s.h.dispatch({
+    o.h.wait(() => {
+        o.h.dispatch({
             type: "STICKER_PACKS_FETCH_START"
         })
     });
@@ -103,7 +103,7 @@ let A = async (e, t) => {
         },
         rejectWithError: !1
     });
-    s.h.dispatch({
+    o.h.dispatch({
         type: "STICKER_PACKS_FETCH_SUCCESS",
         packs: t
     })
@@ -114,11 +114,11 @@ let A = async (e, t) => {
         url: m.Rsh.STICKER(e),
         rejectWithError: !1
     });
-    if ((0, h.Xw)(t)) s.h.dispatch({
+    if ((0, h.Xw)(t)) o.h.dispatch({
         type: "GUILD_STICKER_FETCH_SUCCESS",
         sticker: t
     });
-    else if ((0, h.FD)(t)) s.h.dispatch({
+    else if ((0, h.FD)(t)) o.h.dispatch({
         type: "PACK_STICKER_FETCH_SUCCESS",
         sticker: t
     });
@@ -131,7 +131,7 @@ let A = async (e, t) => {
         rejectWithError: !1,
         signal: t
     });
-    s.h.dispatch({
+    o.h.dispatch({
         type: "GUILD_STICKERS_FETCH_SUCCESS",
         guildId: e,
         stickers: n.map(e => null != e.user ? v(b({}, e), {
@@ -171,7 +171,7 @@ let A = async (e, t) => {
         }] : void 0,
         rejectWithError: !1
     });
-    return s.h.dispatch({
+    return o.h.dispatch({
         type: "GUILD_STICKERS_CREATE_SUCCESS",
         guildId: n,
         sticker: v(b({}, r.body), {
@@ -185,7 +185,7 @@ let A = async (e, t) => {
 })).body;
 
 function R(e, t, n) {
-    s.h.dispatch({
+    o.h.dispatch({
         type: "ADD_STICKER_PREVIEW",
         channelId: e,
         sticker: t,
@@ -194,7 +194,7 @@ function R(e, t, n) {
 }
 
 function P(e, t) {
-    s.h.dispatch({
+    o.h.dispatch({
         type: "CLEAR_STICKER_PREVIEW",
         channelId: e,
         draftType: t
@@ -205,8 +205,8 @@ function D(e) {
     return d.A.totalUnavailableGuilds > 0 || !l.A.isConnected() ? e : e.filter(e => null != _.A.getStickerById(e))
 }
 
-function x(e) {
-    u.bW.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= 250) ? (o.A.show({
+function L(e) {
+    u.bW.updateAsync("favoriteStickers", t => (t.stickerIds = D(t.stickerIds), i().size(t.stickerIds) >= 250) ? (s.A.show({
         title: E.intl.string(E.t["+XYXtZ"]),
         body: E.intl.formatToPlainString(E.t.JaIyFi, {
             count: 250
@@ -214,7 +214,7 @@ function x(e) {
     }), !1) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), g.Sb.INFREQUENT_USER_ACTION)
 }
 
-function L(e) {
+function x(e) {
     u.bW.updateAsync("favoriteStickers", t => {
         t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = D(t.stickerIds)
     }, g.Sb.INFREQUENT_USER_ACTION)

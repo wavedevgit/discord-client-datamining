@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(854284),
-    s = n(676279),
-    o = n(728458),
+    o = n(676279),
+    s = n(728458),
     l = n(216160),
     c = n(446770);
 let u = e => {
@@ -24,7 +24,7 @@ let u = e => {
         loopEnd: O,
         bannerAdjustment: v,
         imageData: A
-    } = e, I = !0, S = 0, T = (0, s.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == A ? void 0 : A.src) != null, [C, N] = i.useState("reset"), w = i.useRef(null != (t = null == A ? void 0 : A.src) ? t : _.src), [R, P] = i.useState(null != (n = null == A ? void 0 : A.src) ? n : _.src);
+    } = e, I = !0, S = 0, T = (0, o.gm)() && null != _.loopDelay && _.loopDelay > 0 && (null == A ? void 0 : A.src) != null, [C, N] = i.useState("reset"), w = i.useRef(null != (t = null == A ? void 0 : A.src) ? t : _.src), [R, P] = i.useState(null != (n = null == A ? void 0 : A.src) ? n : _.src);
     i.useEffect(() => {
         if (!T || "layer" === C) return;
         let e = new AbortController;
@@ -39,7 +39,7 @@ let u = e => {
                 t !== (null == A ? void 0 : A.src) && URL.revokeObjectURL(t), w.current = URL.createObjectURL(r), P(() => w.current)
             } catch (e) {
                 if ("AbortError" === e.name) return null;
-                o.A.captureException(e)
+                s.A.captureException(e)
             }
         })(), () => {
             e.abort()
@@ -48,7 +48,7 @@ let u = e => {
         w.current !== (null == A ? void 0 : A.src) && URL.revokeObjectURL(w.current)
     }, []);
     let D = e => {
-        (0, s.gm)() && e !== C && N(e)
+        (0, o.gm)() && e !== C && N(e)
     };
     if (m || (I = !1), g < _.start && (I = !1), !_.loop && g > _.duration + _.start && (I = !1), h === a.l.ANIMATION_TYPE_PERSISTENT && !E && null != b && g >= O && y(!0), _.loop && void 0 !== _.loopDelay && _.loopDelay > 0) {
         let e = _.duration + _.loopDelay;

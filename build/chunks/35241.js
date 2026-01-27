@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(50268),
     c = n(183555),
     u = n(993401),
@@ -44,7 +44,7 @@ function _(e) {
         trackUserProfileAction: _
     } = (0, c.NJ)(), {
         analyticsLocations: h
-    } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), m = [
+    } = (0, s.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), m = [
         [n],
         [(0, l.A)({
             id: t.id,

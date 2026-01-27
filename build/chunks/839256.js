@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(974111),
     i = n(294819),
     a = n(376472),
-    s = n(99478),
-    o = n(408713),
+    o = n(99478),
+    s = n(408713),
     l = n(400606),
     c = n(150047),
     u = n(248215),
@@ -42,18 +42,18 @@ function O(e, t, n) {
             month: "long",
             timeZone: P.timeZone
         }),
-        x = (0, E.i)({
+        L = (0, E.i)({
             hour: "numeric",
             hour12: P.hour12,
             timeZone: P.timeZone
         });
-    if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (R = x.format(t.dateValue));
+    if ("month" !== e.type || e.isPlaceholder) "hour" !== e.type || e.isPlaceholder || (R = L.format(t.dateValue));
     else {
         let e = D.format(t.dateValue);
         R = e !== R ? `${R} \u{2013} ${e}` : e
     }
     let {
-        spinButtonProps: L
+        spinButtonProps: x
     } = (0, b.y)({
         value: e.value,
         textValue: R,
@@ -80,20 +80,20 @@ function O(e, t, n) {
         onDecrementToMin: () => {
             O.current = "", void 0 !== e.minValue && t.setSegment(e.type, e.minValue)
         }
-    }), j = (0, m.useMemo)(() => new(0, h.d)(A, {
+    }), M = (0, m.useMemo)(() => new(0, h.d)(A, {
         maximumFractionDigits: 0
-    }), [A]), M = () => {
-        if (e.text === e.placeholder && w.focusPrevious(), !j.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
+    }), [A]), j = () => {
+        if (e.text === e.placeholder && w.focusPrevious(), !M.isValidPartialNumber(e.text) || t.isReadOnly || e.isPlaceholder) "dayPeriod" === e.type && t.clearSegment(e.type);
         else {
             let n = e.text.slice(0, -1),
-                r = j.parse(n);
+                r = M.parse(n);
             0 === (n = 0 === r ? "" : n).length || 0 === r ? t.clearSegment(e.type) : t.setSegment(e.type, r), O.current = n
         }
     }, k = e => {
-        if ("a" === e.key && ((0, o.cX)() ? e.metaKey : e.ctrlKey) && e.preventDefault(), !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) switch (e.key) {
+        if ("a" === e.key && ((0, s.cX)() ? e.metaKey : e.ctrlKey) && e.preventDefault(), !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey) switch (e.key) {
             case "Backspace":
             case "Delete":
-                e.preventDefault(), e.stopPropagation(), M()
+                e.preventDefault(), e.stopPropagation(), j()
         }
     }, {
         startsWith: U
@@ -102,10 +102,10 @@ function O(e, t, n) {
     }), G = (0, E.i)({
         hour: "numeric",
         hour12: !0
-    }), V = (0, m.useMemo)(() => {
+    }), F = (0, m.useMemo)(() => {
         let e = new Date;
         return e.setHours(0), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
-    }, [G]), F = (0, m.useMemo)(() => {
+    }, [G]), V = (0, m.useMemo)(() => {
         let e = new Date;
         return e.setHours(12), G.formatToParts(e).find(e => "dayPeriod" === e.type).value
     }, [G]), B = (0, E.i)({
@@ -114,7 +114,7 @@ function O(e, t, n) {
         timeZone: "UTC"
     }), H = (0, m.useMemo)(() => {
         if ("era" !== e.type) return [];
-        let n = (0, a.yP)(new(0, s.ng)(1, 1, 1), t.calendar),
+        let n = (0, a.yP)(new(0, o.ng)(1, 1, 1), t.calendar),
             r = t.calendar.getEras().map(e => {
                 let t = n.set({
                     year: 1,
@@ -136,8 +136,8 @@ function O(e, t, n) {
         let r = O.current + n;
         switch (e.type) {
             case "dayPeriod":
-                if (U(V, n)) t.setSegment("dayPeriod", 0);
-                else if (U(F, n)) t.setSegment("dayPeriod", 12);
+                if (U(F, n)) t.setSegment("dayPeriod", 0);
+                else if (U(V, n)) t.setSegment("dayPeriod", 12);
                 else break;
                 w.focusNext();
                 break;
@@ -152,23 +152,23 @@ function O(e, t, n) {
             case "second":
             case "month":
             case "year": {
-                if (!j.isValidPartialNumber(r)) return;
-                let i = j.parse(r),
+                if (!M.isValidPartialNumber(r)) return;
+                let i = M.parse(r),
                     a = i,
-                    s = 0 === e.minValue;
+                    o = 0 === e.minValue;
                 if ("hour" === e.type && t.dateFormatter.resolvedOptions().hour12) {
                     switch (t.dateFormatter.resolvedOptions().hourCycle) {
                         case "h11":
-                            i > 11 && (a = j.parse(n));
+                            i > 11 && (a = M.parse(n));
                             break;
                         case "h12":
-                            s = !1, i > 12 && (a = j.parse(n))
+                            o = !1, i > 12 && (a = M.parse(n))
                     }
                     void 0 !== e.value && e.value >= 12 && i > 1 && (i += 12)
-                } else void 0 !== e.maxValue && i > e.maxValue && (a = j.parse(n));
+                } else void 0 !== e.maxValue && i > e.maxValue && (a = M.parse(n));
                 if (isNaN(i)) return;
-                let o = 0 !== a || s;
-                o && t.setSegment(e.type, a), void 0 !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", o && w.focusNext()) : O.current = r
+                let s = 0 !== a || o;
+                s && t.setSegment(e.type, a), void 0 !== e.maxValue && (Number(i + "0") > e.maxValue || r.length >= String(e.maxValue).length) ? (O.current = "", s && w.focusNext()) : O.current = r
             }
         }
     }, W = () => {
@@ -188,7 +188,7 @@ function O(e, t, n) {
         if (n.current) switch (r.preventDefault(), r.inputType) {
             case "deleteContentBackward":
             case "deleteContentForward":
-                j.isValidPartialNumber(e.text) && !t.isReadOnly && M();
+                M.isValidPartialNumber(e.text) && !t.isReadOnly && j();
                 break;
             case "insertCompositionText":
                 z.current = n.current.textContent, n.current.textContent = n.current.textContent;
@@ -201,14 +201,14 @@ function O(e, t, n) {
             inputType: t,
             data: r
         } = e;
-        "insertCompositionText" === t && (n.current && (n.current.textContent = z.current), null != r && (U(V, r) || U(F, r)) && Y(r))
+        "insertCompositionText" === t && (n.current && (n.current.textContent = z.current), null != r && (U(F, r) || U(V, r)) && Y(r))
     }), (0, d.N)(() => {
         let e = n.current;
         return () => {
             document.activeElement === e && (w.focusPrevious() || w.focusNext())
         }
     }, [n, w]);
-    let q = (0, o.un)() || "timeZoneName" === e.type ? {
+    let q = (0, s.un)() || "timeZoneName" === e.type ? {
         role: "textbox",
         "aria-valuemax": null,
         "aria-valuemin": null,
@@ -217,10 +217,10 @@ function O(e, t, n) {
     } : {};
     e === (0, m.useMemo)(() => t.segments.find(e => e.isEditable), [t.segments]) || t.isInvalid || (N = void 0);
     let Z = (0, f.Bi)(),
-        X = !t.isDisabled && !t.isReadOnly && e.isEditable,
-        Q = "literal" === e.type ? "" : S.of(e.type),
+        Q = !t.isDisabled && !t.isReadOnly && e.isEditable,
+        X = "literal" === e.type ? "" : S.of(e.type),
         J = (0, p.b)({
-            "aria-label": `${Q}${T?`, ${T}`:""}${C?", ":""}`,
+            "aria-label": `${X}${T?`, ${T}`:""}${C?", ":""}`,
             "aria-labelledby": C
         });
     if ("literal" === e.type) return {
@@ -237,19 +237,19 @@ function O(e, t, n) {
         ("numeric" === t || "2-digit" === t) && ($.direction = "ltr")
     }
     return {
-        segmentProps: (0, _.v)(L, J, {
+        segmentProps: (0, _.v)(x, J, {
             id: Z,
             ...q,
             "aria-invalid": t.isInvalid ? "true" : void 0,
             "aria-describedby": N,
             "aria-readonly": t.isReadOnly || !e.isEditable ? "true" : void 0,
             "data-placeholder": e.isPlaceholder || void 0,
-            contentEditable: X,
-            suppressContentEditableWarning: X,
-            spellCheck: X ? "false" : void 0,
-            autoCorrect: X ? "off" : void 0,
-            [parseInt(m.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: X ? "next" : void 0,
-            inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !X ? void 0 : "numeric",
+            contentEditable: Q,
+            suppressContentEditableWarning: Q,
+            spellCheck: Q ? "false" : void 0,
+            autoCorrect: Q ? "off" : void 0,
+            [parseInt(m.version, 10) >= 17 ? "enterKeyHint" : "enterkeyhint"]: Q ? "next" : void 0,
+            inputMode: t.isDisabled || "dayPeriod" === e.type || "era" === e.type || !Q ? void 0 : "numeric",
             tabIndex: t.isDisabled ? void 0 : 0,
             onKeyDown: k,
             onFocus: W,

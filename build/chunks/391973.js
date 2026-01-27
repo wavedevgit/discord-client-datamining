@@ -4,7 +4,7 @@
 n.d(t, {
     IC: () => p,
     Ju: () => l,
-    Vz: () => o,
+    Vz: () => s,
     cC: () => m,
     dH: () => d,
     jn: () => _,
@@ -17,10 +17,10 @@ n.d(t, {
 var r = n(73153),
     i = n(810412),
     a = n(555528),
-    s = n(9302);
+    o = n(9302);
 
-function o(e, t, n) {
-    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.OVERLAY_DEFAULT_RESOLUTION;
+function s(e, t, n) {
+    let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.OVERLAY_DEFAULT_RESOLUTION;
     r.h.dispatch({
         type: "LAYOUT_CREATE",
         layoutId: e,
@@ -36,8 +36,8 @@ function l(e) {
         anchor: n,
         size: i,
         minSize: a,
-        defaultSize: s,
-        opacity: o
+        defaultSize: o,
+        opacity: s
     } = e;
     r.h.dispatch({
         type: "LAYOUT_UPDATE_WIDGET",
@@ -45,8 +45,8 @@ function l(e) {
         anchor: n,
         size: i,
         minSize: a,
-        defaultSize: s,
-        opacity: o
+        defaultSize: o,
+        opacity: s
     })
 }
 
@@ -61,16 +61,16 @@ function u(e) {
     let {
         forcedPinnedState: t,
         shouldTrack: n = !0
-    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, s = r.h.dispatch({
+    } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, o = r.h.dispatch({
         type: "LAYOUT_SET_PINNED",
         widgetId: e,
         pinned: t
     });
-    if (!n) return s;
-    let o = a.A.getWidget(e);
-    return null == o || (0, i.xp)(o.type, {
-        pinned: null != t ? t : !o.pinned
-    }), s
+    if (!n) return o;
+    let s = a.A.getWidget(e);
+    return null == s || (0, i.xp)(s.type, {
+        pinned: null != t ? t : !s.pinned
+    }), o
 }
 
 function d(e) {

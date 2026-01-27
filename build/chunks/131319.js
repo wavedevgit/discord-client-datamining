@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,17 +15,17 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = n(731854).PR;
+let s = n(731854).PR;
 
 function l(e) {
-    o = e.bitrate
+    s = e.bitrate
 }
 class c extends(r = i.Ay.Store) {
     get bitrate() {
-        return o
+        return s
     }
 }
-s(c, "displayName", "BitRateStore");
+o(c, "displayName", "BitRateStore");
 let u = new c(a.h, {
     SET_CHANNEL_BITRATE: l
 })

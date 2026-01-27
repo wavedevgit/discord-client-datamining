@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(15285),
     a = n(287809),
-    s = n(977997),
-    o = n(572164),
+    o = n(977997),
+    s = n(572164),
     l = n(399925),
     c = n(450948);
 
@@ -45,12 +45,12 @@ class d extends r.A {
     isUserInVoiceChannel() {
         let e = a.default.getCurrentUser();
         if (null == e) return !1;
-        let t = s.A.getVoiceStateForUser(e.id);
+        let t = o.A.getVoiceStateForUser(e.id);
         return (null == t ? void 0 : t.channelId) != null
     }
     async updateActiveHandlers() {
         this.ensureInitialized();
-        let e = (0, o.TD)(),
+        let e = (0, s.TD)(),
             t = i.Ay.getRunningGames(),
             n = this.isUserInVoiceChannel();
         if (!e) return void await this.stopAllHandlers();

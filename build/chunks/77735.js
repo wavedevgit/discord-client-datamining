@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 77735, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    _: () => a,
-    d: () => s
+    _: () => l,
+    d: () => r
 });
-var r = n(509381);
-let i = [r.my.VOICE_ISOLATION, r.my.STUDIO, r.my.CUSTOM];
+var i = n(509381);
+let s = [i.my.VOICE_ISOLATION, i.my.STUDIO, i.my.CUSTOM];
 
-function a(e) {
+function l(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: i
+        enabledInputProfiles: s
     }
 }
 
-function s(e) {
+function r(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: i
+        enabledInputProfiles: s
     }
 }

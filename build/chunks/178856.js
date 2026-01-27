@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 178856, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(391526);
+    l = n(391526);
 let s = e => {
     let {
         label: t,
@@ -16,20 +15,20 @@ let s = e => {
     } = e;
     return (0, r.jsx)(i.DUT, {
         onClick: s ? void 0 : n,
-        className: a.x6,
+        className: l.x6,
         children: (0, r.jsxs)("div", {
-            className: a.hQ,
+            className: l.hQ,
             children: [s ? (0, r.jsx)(i.y$y, {
                 type: i.y$y.Type.PULSING_ELLIPSIS,
-                className: a.__invalid_spinner
+                className: l.__invalid_spinner
             }) : (0, r.jsx)(i.Text, {
                 variant: "text-md/medium",
-                className: a.Pf,
+                className: l.Pf,
                 children: t
             }), (0, r.jsx)(i.abt, {
                 size: "md",
                 color: "currentColor",
-                className: a.UE
+                className: l.UE
             })]
         })
     })

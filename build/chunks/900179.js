@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(915089),
     c = n(94343),
     u = n(716804),
@@ -28,24 +28,24 @@ function f(e) {
     } = e, E = (0, l.GV)(), y = i.useRef(null), b = (0, u.g)(), O = null != _ && b === _;
     return (0, c.A)(y, O), (0, r.jsxs)("section", {
         ref: O ? y : void 0,
-        className: s()(d.uW, p),
+        className: o()(d.uW, p),
         "aria-labelledby": null != n ? E : void 0,
         children: [null != n && (0, r.jsxs)("div", {
             className: d.so,
             children: [(0, r.jsxs)("div", {
                 className: d.wx,
-                children: [(0, r.jsx)(o.Heading, {
+                children: [(0, r.jsx)(s.Heading, {
                     variant: m,
                     color: g,
                     className: h,
                     id: E,
                     children: n
                 }), a]
-            }), null != f && (0, r.jsx)(o.Text, {
+            }), null != f && (0, r.jsx)(s.Text, {
                 variant: "text-xs/normal",
                 children: f
             })]
-        }), (0, r.jsx)(o.Fmo, {
+        }), (0, r.jsx)(s.Fmo, {
             children: t
         })]
     })

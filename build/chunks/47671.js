@@ -3,10 +3,10 @@
 "use strict";
 let r, i;
 n.d(t, {
-    A: () => M
+    A: () => j
 }), n(896048);
-var a, s = n(311907),
-    o = n(554146),
+var a, o = n(311907),
+    s = n(554146),
     l = n(73153),
     c = n(826673),
     u = n(284016),
@@ -62,7 +62,7 @@ let S = !0,
             channelId: t,
             guildId: n
         } = e, r = E.default.getCurrentUser();
-        if (null == t || null == n || (0, c.k8)(o.M.CLIENT_THEMES_COACHMARK) || !(0, b.G2)(r)) return;
+        if (null == t || null == n || (0, c.k8)(s.M.CLIENT_THEMES_COACHMARK) || !(0, b.G2)(r)) return;
         let i = g.A.getChannel(t);
         null != i && (0, m.ke)(i.type) && (T = !0)
     };
@@ -75,7 +75,7 @@ let D = () => {
         if (e === S) return !1;
         S = e
     },
-    x = () => {
+    L = () => {
         if (!u.A.shouldSync("appearance")) return !1;
         let e = _.eh.getSetting().backgroundGradientPresetId;
         if (null == e) {
@@ -87,7 +87,7 @@ let D = () => {
             r = t
         }
     },
-    L = () => {
+    x = () => {
         if (!u.A.shouldSync("appearance")) return !1;
         let e = _.eh.getSetting().backgroundGradientPresetId;
         if (p.Ay.useSystemTheme === A.Q_.ON && null != e && (0, d.k7)(A.Q_.OFF), null == e) {
@@ -98,9 +98,9 @@ let D = () => {
             n = (null == r ? void 0 : r.id) === (null == t ? void 0 : t.id);
         null == t || n || (r = t)
     };
-class j extends(a = s.Ay.PersistedStore) {
+class M extends(a = o.Ay.PersistedStore) {
     initialize(e) {
-        null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? v.ag[e.gradientPresetId] : void 0), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], x)
+        null != e && (r = (null == e ? void 0 : e.gradientPresetId) != null ? v.ag[e.gradientPresetId] : void 0), this.waitFor(g.A, u.A, f.A, p.Ay, h.A, E.default), this.syncWith([E.default], D), this.syncWith([u.A], L)
     }
     getState() {
         return S ? {} : {
@@ -131,18 +131,18 @@ class j extends(a = s.Ay.PersistedStore) {
         }])
     }
 }
-I(j, "displayName", "ClientThemesBackgroundStore"), I(j, "persistKey", "ClientThemesBackgroundStore");
-let M = new j(l.h, {
+I(M, "displayName", "ClientThemesBackgroundStore"), I(M, "persistKey", "ClientThemesBackgroundStore");
+let j = new M(l.h, {
     UPDATE_BACKGROUND_GRADIENT_PRESET: C,
     UPDATE_MOBILE_PENDING_THEME_INDEX: N,
     RESET_PREVIEW_CLIENT_THEME: w,
     CLIENT_THEMES_EDITOR_CLOSE: P,
     CHANNEL_SELECT: R,
     LOGOUT: P,
-    CACHE_LOADED: L,
-    CONNECTION_OPEN: L,
-    OVERLAY_INITIALIZE: L,
-    SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: L,
-    UNSYNCED_USER_SETTINGS_UPDATE: L,
-    USER_SETTINGS_PROTO_UPDATE: L
+    CACHE_LOADED: x,
+    CONNECTION_OPEN: x,
+    OVERLAY_INITIALIZE: x,
+    SELECTIVELY_SYNCED_USER_SETTINGS_UPDATE: x,
+    UNSYNCED_USER_SETTINGS_UPDATE: x,
+    USER_SETTINGS_PROTO_UPDATE: x
 })

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 663244, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Ui: "cardContainer__3cf14",
     C8: "cardInnerContainer__3cf14",

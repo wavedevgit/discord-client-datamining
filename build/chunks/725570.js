@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(64700),
     i = n(296489),
     a = n.n(i),
-    s = n(964486),
-    o = n(192308),
+    o = n(964486),
+    s = n(192308),
     l = n(638495),
     c = n(935462);
 
@@ -22,12 +22,12 @@ function u(e) {
         onCloseRequest: n,
         onCloseCallback: i
     } = e, [c] = r.useState(() => a()()), u = (0, l.k)();
-    (0, s.u5)(() => ((0, o.openModal)(t, {
+    (0, o.u5)(() => ((0, s.openModal)(t, {
         modalKey: c,
         onCloseRequest: n,
         onCloseCallback: i
     }, u), () => {
-        (0, o.closeModal)(c, u)
+        (0, s.closeModal)(c, u)
     }));
     let d = r.useRef(!0),
         f = {
@@ -44,6 +44,6 @@ function u(e) {
             modalKey: r,
             onCloseCallback: i
         } = p.current;
-        d.current || (0, o.updateModal)(r, t, n, i, e), d.current = !1
+        d.current || (0, s.updateModal)(r, t, n, i, e), d.current = !1
     }, [t, n]), null
 }

@@ -1,8 +1,8 @@
 /** Chunk was on web.js **/
 /** chunk id: 739305, original params: e,t,n (module,exports,require) **/
 "use strict";
-var r, i, a, s = n(593858),
-    o = n(257943),
+var r, i, a, o = n(593858),
+    s = n(257943),
     l = n(860511),
     c = n(339626),
     u = n(598349),
@@ -28,10 +28,10 @@ var r, i, a, s = n(593858),
     R = T && E(T),
     P = Object.prototype,
     D = l.TypeError,
-    x = b("toStringTag"),
-    L = O("TYPED_ARRAY_TAG"),
-    j = "TypedArrayConstructor",
-    M = s && !!y && "Opera" !== f(l.opera),
+    L = b("toStringTag"),
+    x = O("TYPED_ARRAY_TAG"),
+    M = "TypedArrayConstructor",
+    j = o && !!y && "Opera" !== f(l.opera),
     k = !1,
     U = {
         Int8Array: 1,
@@ -48,16 +48,16 @@ var r, i, a, s = n(593858),
         BigInt64Array: 8,
         BigUint64Array: 8
     },
-    V = function(e) {
+    F = function(e) {
         if (!u(e)) return !1;
         var t = f(e);
         return "DataView" === t || d(U, t) || d(G, t)
     },
-    F = function(e) {
+    V = function(e) {
         var t = E(e);
         if (u(t)) {
             var n = I(t);
-            return n && d(n, j) ? n[j] : F(t)
+            return n && d(n, M) ? n[M] : V(t)
         }
     },
     B = function(e) {
@@ -74,7 +74,7 @@ var r, i, a, s = n(593858),
         throw new D(p(e) + " is not a typed array constructor")
     },
     W = function(e, t, n, r) {
-        if (o) {
+        if (s) {
             if (n)
                 for (var i in U) {
                     var a = l[i];
@@ -85,12 +85,12 @@ var r, i, a, s = n(593858),
                             a.prototype[e] = t
                         } catch (e) {}
                     }
-                }(!R[e] || n) && h(R, e, n ? t : M && T[e] || t, r)
+                }(!R[e] || n) && h(R, e, n ? t : j && T[e] || t, r)
         }
     },
     K = function(e, t, n) {
         var r, i;
-        if (o) {
+        if (s) {
             if (y) {
                 if (n) {
                     for (r in U)
@@ -100,36 +100,36 @@ var r, i, a, s = n(593858),
                 }
                 if (w[e] && !n) return;
                 try {
-                    return h(w, e, n ? t : M && w[e] || t)
+                    return h(w, e, n ? t : j && w[e] || t)
                 } catch (e) {}
             }
             for (r in U)(i = l[r]) && (!i[e] || n) && h(i, e, t)
         }
     };
-for (r in U)(a = (i = l[r]) && i.prototype) ? A(a)[j] = i : M = !1;
-for (r in G)(a = (i = l[r]) && i.prototype) && (A(a)[j] = i);
-if ((!M || !c(w) || w === Function.prototype) && (w = function() {
+for (r in U)(a = (i = l[r]) && i.prototype) ? A(a)[M] = i : j = !1;
+for (r in G)(a = (i = l[r]) && i.prototype) && (A(a)[M] = i);
+if ((!j || !c(w) || w === Function.prototype) && (w = function() {
         throw new D("Incorrect invocation")
-    }, M))
+    }, j))
     for (r in U) l[r] && y(l[r], w);
-if ((!M || !R || R === P) && (R = w.prototype, M))
+if ((!j || !R || R === P) && (R = w.prototype, j))
     for (r in U) l[r] && y(l[r].prototype, R);
-if (M && E(N) !== R && y(N, R), o && !d(R, x))
-    for (r in k = !0, m(R, x, {
+if (j && E(N) !== R && y(N, R), s && !d(R, L))
+    for (r in k = !0, m(R, L, {
             configurable: !0,
             get: function() {
-                return u(this) ? this[L] : void 0
+                return u(this) ? this[x] : void 0
             }
-        }), U) l[r] && _(l[r], L, r);
+        }), U) l[r] && _(l[r], x, r);
 e.exports = {
-    NATIVE_ARRAY_BUFFER_VIEWS: M,
-    TYPED_ARRAY_TAG: k && L,
+    NATIVE_ARRAY_BUFFER_VIEWS: j,
+    TYPED_ARRAY_TAG: k && x,
     aTypedArray: H,
     aTypedArrayConstructor: Y,
     exportTypedArrayMethod: W,
     exportTypedArrayStaticMethod: K,
-    getTypedArrayConstructor: F,
-    isView: V,
+    getTypedArrayConstructor: V,
+    isView: F,
     isTypedArray: B,
     TypedArray: w,
     TypedArrayPrototype: R

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(77729),
     a = n(626584),
-    s = n(616356),
-    o = n(777334),
+    o = n(616356),
+    s = n(777334),
     l = n(41984),
     c = n(392164);
 
@@ -35,7 +35,7 @@ class f extends r.A {
                 if (this.enabled === this.shouldEnable) return;
                 null === i.A || void 0 === i.A || null == (e = (t = i.A.window).setWindowContentProtection) || e.call(t, c.f, this.shouldEnable), this.enabled = this.shouldEnable
             } catch (e) {
-                d.error("Error setting content protection:", e), (0, o.pj)(e, l.Ue.OutOfProcess)
+                d.error("Error setting content protection:", e), (0, s.pj)(e, l.Ue.OutOfProcess)
             }
         }), u(this, "actions", {
             STREAM_START: e => {
@@ -46,7 +46,7 @@ class f extends r.A {
                 this.setContentProtection(r)
             },
             STREAM_STOP: () => {
-                null == s.A.getCurrentUserActiveStream() && this.setContentProtection(!1)
+                null == o.A.getCurrentUserActiveStream() && this.setContentProtection(!1)
             }
         })
     }

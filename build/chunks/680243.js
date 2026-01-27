@@ -6,8 +6,8 @@ n.d(t, {
 }), n(65821);
 var r, i = n(311907),
     a = n(118356),
-    s = n(73153),
-    o = n(49463),
+    o = n(73153),
+    s = n(49463),
     l = n(9302),
     c = n(211753),
     u = n(682763),
@@ -79,7 +79,7 @@ function C() {
 }
 class N extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A)
+        this.waitFor(s.A)
     }
     get isModuleLoading() {
         return null != b
@@ -104,7 +104,7 @@ class N extends(r = i.Ay.Store) {
     }
 }
 p(N, "displayName", "Overlay-v3-Native-Module-Store");
-let w = new N(s.h, __OVERLAY__ || !f.OX ? {} : {
+let w = new N(o.h, __OVERLAY__ || !f.OX ? {} : {
         CONNECTION_OPEN: C,
         EXPERIMENT_OVERRIDE_BUCKET: A,
         OVERLAY_SET_ENABLED: I,

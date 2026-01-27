@@ -1,40 +1,39 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 901125, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(780964),
-    l = n(840065),
+    a = n(780964),
+    o = n(840065),
     c = n(975571),
-    u = n(927578),
-    d = n(526292),
-    f = n(788868),
+    d = n(927578),
+    u = n(526292),
+    _ = n(788868),
     p = n(652215),
-    _ = n(985018),
-    h = n(158793);
-let m = e => {
+    m = n(985018),
+    g = n(158793);
+let A = e => {
     let t, n, {
             premiumSubscription: i,
-            className: m,
-            textColor: g
+            className: A,
+            textColor: f
         } = e,
-        E = (0, d.ar)();
+        h = (0, u.ar)();
     if (null == i) return null;
-    let y = null != i ? u.Ay.getPremiumPlanItem(i) : null;
-    if (u.Ay.isBoostOnlySubscription(i) ? t = _.intl.string(_.t.Uj0md3) : null != y && (t = u.Ay.getTierDisplayNameByPlanId(y.planId)), null == t) return null;
-    let b = () => (0, l.openUserSettings)(o.X.SUBSCRIPTIONS_PANEL, {
+    let b = null != i ? d.Ay.getPremiumPlanItem(i) : null;
+    if (d.Ay.isBoostOnlySubscription(i) ? t = m.intl.string(m.t.Uj0md3) : null != b && (t = d.Ay.getTierDisplayNameByPlanId(b.planId)), null == t) return null;
+    let E = () => (0, o.openUserSettings)(a.X.SUBSCRIPTIONS_PANEL, {
             section: p.nc_.SUBSCRIPTIONS
         }),
-        O = (null != y ? u.Ay.getSkuIdForPlan(y.planId) : null) === f.pe.TIER_1;
-    return n = null != g ? g : E ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
-        className: a()(h.kL, m, {
-            [h.He]: E
+        x = (null != b ? d.Ay.getSkuIdForPlan(b.planId) : null) === _.pe.TIER_1;
+    return n = null != f ? f : h ? "always-white" : "text-default", (0, r.jsxs)(s.ZpM, {
+        className: l()(g.kL, A, {
+            [g.He]: h
         }),
         type: s.ZpM.Types.CUSTOM,
         children: [(0, r.jsx)(s.EpV, {
@@ -42,18 +41,18 @@ let m = e => {
             width: 20,
             height: 20,
             color: "currentColor",
-            className: a()(h.Kk, {
-                [h.Pt]: E
+            className: l()(g.Kk, {
+                [g.Pt]: h
             })
         }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: n,
-            children: O ? _.intl.format(_.t["tYuv+T"], {
+            children: x ? m.intl.format(m.t["tYuv+T"], {
                 helpdeskArticle: c.A.getArticleURL(p.MVz.PREMIUM_DETAILS),
-                onSubscriptionsClick: b
-            }) : _.intl.format(_.t.xHRgU2, {
+                onSubscriptionsClick: E
+            }) : m.intl.format(m.t.xHRgU2, {
                 subscriptionName: t,
-                onSubscriptionsClick: b
+                onSubscriptionsClick: E
             })
         })]
     })

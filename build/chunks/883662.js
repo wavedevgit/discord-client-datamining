@@ -1,99 +1,99 @@
-/** Chunk was on 65076 **/
-/** chunk id: 883662, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => b
-}), r(896048);
-var n = r(627968),
-    l = r(64700),
-    o = r(311907),
-    a = r(521489),
-    i = r(397927),
-    c = r(775602),
-    s = r(531685),
-    u = r(203982),
-    y = r(418829),
-    f = r(652215);
+/** Chunk was on 51901 **/
+/** chunk id: 883662, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => f
+}), n(896048);
+var r = n(627968),
+    o = n(64700),
+    a = n(311907),
+    l = n(521489),
+    i = n(397927),
+    c = n(775602),
+    s = n(531685),
+    u = n(203982),
+    d = n(418829),
+    b = n(652215);
 
-function b(e) {
-    var t, r;
+function f(e) {
+    var t, n;
     let {
-        partialRoot: b,
-        target: d,
-        defaultTarget: p,
-        onPanelChange: g,
-        sidebarFooter: O,
-        emptyState: j,
-        searchQuery: m,
-        onSearchChange: h
-    } = e, v = function(e, t) {
+        partialRoot: f,
+        target: p,
+        defaultTarget: _,
+        onPanelChange: y,
+        sidebarFooter: m,
+        emptyState: g,
+        searchQuery: h,
+        onSearchChange: O
+    } = e, j = function(e, t) {
         if (null == e) return {};
-        var r, n, l, o = {};
+        var n, r, o, a = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-            return o
+            for (o = 0, n = Reflect.ownKeys(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+            return a
         }
-        if (o = function(e, t) {
+        if (a = function(e, t) {
                 if (null == e) return {};
-                var r, n, l = {},
-                    o = Object.getOwnPropertyNames(e);
-                for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
-                return l
+                var n, r, o = {},
+                    a = Object.getOwnPropertyNames(e);
+                for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
+                return o
             }(e, t), Object.getOwnPropertySymbols)
-            for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n]);
-        return o
-    }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [x, S] = l.useState(!1), [P, _] = l.useState(1.4), w = l.useRef(null), C = (0, o.bG)([c.A], () => c.A.useReducedMotion), A = (0, o.bG)([s.A], () => s.A.isFocused());
-    return l.useEffect(() => {
+            for (o = 0, n = Object.getOwnPropertySymbols(e); o < n.length; o++) r = n[o], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
+        return a
+    }(e, ["partialRoot", "target", "defaultTarget", "onPanelChange", "sidebarFooter", "emptyState", "searchQuery", "onSearchChange"]), [v, x] = o.useState(!1), [S, C] = o.useState(1.4), P = o.useRef(null), w = (0, a.bG)([c.A], () => c.A.useReducedMotion), A = (0, a.bG)([s.A], () => s.A.isFocused());
+    return o.useEffect(() => {
         let e = e => {
             let {
                 intensity: t,
-                duration: r
+                duration: n
             } = e;
-            !C && A && (S(!0), _(null != t ? t : 1.4), clearTimeout(w.current), w.current = setTimeout(() => S(!1), null != r ? r : 1e3))
+            !w && A && (x(!0), C(null != t ? t : 1.4), clearTimeout(P.current), P.current = setTimeout(() => x(!1), null != n ? n : 1e3))
         };
-        return u._.subscribe(f.jej.SHAKE_SETTINGS_MODAL, e), () => {
-            u._.unsubscribe(f.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(w.current)
+        return u._.subscribe(b.jej.SHAKE_SETTINGS_MODAL, e), () => {
+            u._.unsubscribe(b.jej.SHAKE_SETTINGS_MODAL, e), clearTimeout(P.current)
         }
-    }, [C, A]), (0, n.jsx)(i.bfh, {
-        isShaking: x,
-        intensity: P,
-        children: (0, n.jsx)(a.N, (t = function(e) {
+    }, [w, A]), (0, r.jsx)(i.bfh, {
+        isShaking: v,
+        intensity: S,
+        children: (0, r.jsx)(l.N, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
-                var r = null != arguments[t] ? arguments[t] : {},
-                    n = Object.keys(r);
-                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(r, e).enumerable
-                }))), n.forEach(function(t) {
-                    var n;
-                    n = r[t], t in e ? Object.defineProperty(e, t, {
-                        value: n,
+                var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
                         enumerable: !0,
                         configurable: !0,
                         writable: !0
-                    }) : e[t] = n
+                    }) : e[t] = r
                 })
             }
             return e
-        }({}, v), r = r = {
-            children: (0, n.jsx)(y.A, {
-                onClose: v.onClose,
-                partialRoot: b,
-                target: d,
-                defaultTarget: p,
-                onPanelChange: g,
-                emptyState: j,
-                sidebarFooter: O,
-                searchQuery: m,
-                onSearchChange: h
+        }({}, j), n = n = {
+            children: (0, r.jsx)(d.A, {
+                onClose: j.onClose,
+                partialRoot: f,
+                target: p,
+                defaultTarget: _,
+                onPanelChange: y,
+                emptyState: g,
+                sidebarFooter: m,
+                searchQuery: h,
+                onSearchChange: O
             })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-            var r = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-                var n = Object.getOwnPropertySymbols(e);
-                r.push.apply(r, n)
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
             }
-            return r
-        })(Object(r)).forEach(function(e) {
-            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+            return n
+        })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
     })
 }

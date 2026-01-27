@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(989349),
     i = n.n(r),
     a = n(665260),
-    s = n(315069),
-    o = n(835095),
+    o = n(315069),
+    s = n(835095),
     l = n(832946),
     c = n(788868);
 
@@ -25,7 +25,7 @@ let d = Object.freeze({
     EXISTING_PREMIUM_SUBSCRIPTION_DISALLOWED: 2,
     NOT_SELF_REDEEMABLE: 4
 });
-class f extends s.A {
+class f extends o.A {
     static createFromServer(e) {
         return new f({
             userId: null != e.user ? e.user.id : null,
@@ -49,7 +49,7 @@ class f extends s.A {
                 intervalCount: e.subscription_trial.interval_count,
                 skuId: e.subscription_trial.sku_id
             } : null,
-            promotion: null != e.promotion ? o.A.createFromServer(e.promotion) : null
+            promotion: null != e.promotion ? s.A.createFromServer(e.promotion) : null
         })
     }
     isExpired() {

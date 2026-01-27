@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(49229),
+    o = n(397927),
+    s = n(49229),
     l = n(327166),
     c = n(994500),
     u = n(287809),
@@ -54,7 +54,7 @@ function _(e) {
     if (y || b) return null;
 
     function T() {
-        (0, s.mMO)(async () => {
+        (0, o.mMO)(async () => {
             let {
                 ConfirmModal: e
             } = await Promise.resolve().then(n.bind(n, 158954));
@@ -68,24 +68,24 @@ function _(e) {
                 confirmText: d.intl.string(d.t.cvSt1J),
                 cancelText: d.intl.string(d.t["ETE/oC"]),
                 onConfirm: () => {
-                    o.A.removeFriend(g, {
+                    s.A.removeFriend(g, {
                         location: f
                     }), S(!1), null == h || h()
                 }
             }, t))
         }, {
-            contextKey: null != m ? (0, s.TId)(m) : void 0
+            contextKey: null != m ? (0, o.TId)(m) : void 0
         })
     }
-    return v ? (0, r.jsx)(s.Drp, {
+    return v ? (0, r.jsx)(o.Drp, {
         id: "remove-friend",
         label: d.intl.string(d.t.cvSt1J),
         action: T
-    }) : (0, r.jsx)(s.Drp, {
+    }) : (0, r.jsx)(o.Drp, {
         id: "add-friend",
         label: I ? d.intl.string(d.t.xMH6vD) : O,
         action: () => {
-            I || (o.A.addRelationship({
+            I || (s.A.addRelationship({
                 userId: g,
                 context: {
                     location: f

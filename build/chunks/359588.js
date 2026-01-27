@@ -1,74 +1,68 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 359588, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => E
+    A: () => h
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(735438),
-    s = n.n(a),
-    o = n(311907),
-    l = n(397927),
+    i = n.n(a),
+    s = n(311907),
+    o = n(397927),
     c = n(775602),
     u = n(998304),
     d = n(854987),
-    f = n(40333),
-    p = n(745174);
+    m = n(40333),
+    f = n(745174);
 
-function _(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function h(e) {
+function p(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            _(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
 }
-let m = 500,
-    g = 32;
 
-function E(e) {
+function h(e) {
     let {
         start: t = 0,
         end: n,
         alignment: a = "left"
-    } = e, _ = (0, i.useRef)(Date.now()), E = (0, i.useRef)(0), y = (0, i.useContext)(d.P), b = (0, l.rdh)(y.primaryColor).hex(), O = (0, f.A)(b), v = (0, u.j5)(O), [A, I] = (0, i.useState)(t), S = (0, o.bG)([c.A], () => c.A.useReducedMotion);
-    (0, i.useEffect)(() => {
-        let e = s().throttle(() => {
-            let r = Math.min((Date.now() - _.current) / m, 1);
-            I(Math.round((n - t) * r + t)), r < 1 && (E.current = requestAnimationFrame(e))
-        }, g);
-        return E.current = requestAnimationFrame(e), () => {
-            cancelAnimationFrame(E.current), e.cancel()
+    } = e, h = (0, l.useRef)(Date.now()), b = (0, l.useRef)(0), g = (0, l.useContext)(d.P), x = (0, o.rdh)(g.primaryColor).hex(), y = (0, m.A)(x), v = (0, u.j5)(y), [j, C] = (0, l.useState)(t), _ = (0, s.bG)([c.A], () => c.A.useReducedMotion);
+    (0, l.useEffect)(() => {
+        let e = i().throttle(() => {
+            let r = Math.min((Date.now() - h.current) / 500, 1);
+            C(Math.round((n - t) * r + t)), r < 1 && (b.current = requestAnimationFrame(e))
+        }, 32);
+        return b.current = requestAnimationFrame(e), () => {
+            cancelAnimationFrame(b.current), e.cancel()
         }
-    }, [t, n, I]);
-    let T = {
-        className: p.l,
+    }, [t, n, C]);
+    let A = {
+        className: f.l,
         dataBinding: {
-            DisplayValue: A,
+            DisplayValue: j,
             TextColor: {
                 r: v.r,
                 g: v.g,
                 b: v.b,
                 a: 255 * v.a
             },
-            reducedMotion: S
+            reducedMotion: _
         },
         fit: "layout",
         withReducedMotion: "play"
     };
-    return "left" === a ? (0, r.jsx)(l.wWi, h({}, T)) : (0, r.jsx)(l.mfv, h({}, T))
+    return "left" === a ? (0, r.jsx)(o.wWi, p({}, A)) : (0, r.jsx)(o.mfv, p({}, A))
 }

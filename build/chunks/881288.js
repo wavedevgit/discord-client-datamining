@@ -2,13 +2,13 @@
 /** chunk id: 881288, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(311907),
     i = n(317525),
     a = n(599941);
 
-function s(e, t) {
+function o(e, t) {
     let n = (0, a.dB)(t);
     return (0, r.bG)([i.A], () => null != e && null != n ? i.A.getRole(e, n.role_id) : void 0)
 }

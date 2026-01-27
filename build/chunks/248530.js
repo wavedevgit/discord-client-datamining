@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(575087),
-    o = n.n(s),
+    o = n(575087),
+    s = n.n(o),
     l = n(827734),
     c = n(500804);
 
@@ -43,21 +43,21 @@ function p(e) {
         className: t,
         percents: n,
         size: i = "small",
-        foregroundColors: s = [l.A.unsafe_rawColors.BRAND_500.css],
+        foregroundColors: o = [l.A.unsafe_rawColors.BRAND_500.css],
         backgroundColor: u = "var(--interactive-background-active)",
         animate: f = !0
-    } = e, p = o()(null != n ? n : [], s).map((e, t) => {
-        let n, [s, o] = e;
-        return n = Array.isArray(o) ? {
-            background: "linear-gradient(to right, ".concat(o[0], ", ").concat(o[1], ")")
+    } = e, p = s()(null != n ? n : [], o).map((e, t) => {
+        let n, [o, s] = e;
+        return n = Array.isArray(s) ? {
+            background: "linear-gradient(to right, ".concat(s[0], ", ").concat(s[1], ")")
         } : {
-            backgroundColor: o
+            backgroundColor: s
         }, (0, r.jsx)("div", {
             className: a()(c.progressBar, c[i], {
                 [c.animating]: f
             }),
             style: d({
-                transform: "translate3d(".concat(Math.min(Math.max(0, null != s ? s : 0), 100) - 100, "%, 0, 0)")
+                transform: "translate3d(".concat(Math.min(Math.max(0, null != o ? o : 0), 100) - 100, "%, 0, 0)")
             }, n)
         }, t)
     }).reverse();

@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(355418),
     i = n(322811),
     a = n(658809);
-let s = 1,
-    o = 2;
+let o = 1,
+    s = 2;
 class l extends r.c {
     innerPattern(e) {
         return /(gisteren|morgen|van)(ochtend|middag|namiddag|avond|nacht)(?=\W|$)/i
     }
     innerExtract(e, t) {
-        let n = t[s].toLowerCase(),
-            r = t[o].toLowerCase(),
+        let n = t[o].toLowerCase(),
+            r = t[s].toLowerCase(),
             l = e.createParsingComponents(),
             c = e.refDate;
         switch (n) {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 246930, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     bo: "guildContainer__5dba5",
     $g: "guildInfoContainer__5dba5",

@@ -1,4 +1,4 @@
-/** Chunk was on 36054 **/
+/** Chunk was on 65298 **/
 /** chunk id: 423648, original params: e,t,n (module,exports,require) **/
 e.exports = {
     jC: "popoutContainer_ce8328",
@@ -13,14 +13,7 @@ e.exports = {
     iA: "menuItemIcon_ce8328",
     ap: "submenuIconWrapper_ce8328",
     wE: "submenuPaddingContainer_ce8328",
-    YS: "statusPickerModal_ce8328",
     hQ: "statusPickerModalMenu_ce8328",
-    Oq: "statusItem_ce8328",
-    pn: "expiringStatusMenuItem_ce8328",
-    h5: "status_ce8328",
-    Kk: "icon_ce8328",
-    h_: "description_ce8328",
     BK: "themeContainer_ce8328",
-    Xh: "username_ce8328",
-    K3: "focusModeTitle_ce8328"
+    Xh: "username_ce8328"
 }

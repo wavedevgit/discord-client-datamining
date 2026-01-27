@@ -7,19 +7,19 @@ n.d(t, {
 var r = n(835245),
     i = n(562465),
     a = n(998218),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
-    let o = new URL(a.A.makeUrl(s.BVt.BILLING_LOGIN_HANDOFF, !1)),
+function s(e, t, n) {
+    let s = new URL(a.A.makeUrl(o.BVt.BILLING_LOGIN_HANDOFF, !1)),
         l = (0, r.A)();
-    return o.searchParams.append("handoff_key", l), o.searchParams.append("redirect_to", e), i.Bo.post({
-        url: s.Rsh.HANDOFF,
+    return s.searchParams.append("handoff_key", l), s.searchParams.append("redirect_to", e), i.Bo.post({
+        url: o.Rsh.HANDOFF,
         body: {
             key: l
         },
         oldFormErrors: !0,
         rejectWithError: !1
-    }).then(e => t(e, o), t => n(t, e))
+    }).then(e => t(e, s), t => n(t, e))
 }
 
 function l(e, t, n) {
@@ -31,7 +31,7 @@ function l(e, t, n) {
         deepLinkType: c,
         usePresetOffer: u
     } = e;
-    return o(s.BVt.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, a, l, c, u), t, n)
+    return s(o.BVt.BILLING_STANDALONE_CHECKOUT_PAGE(r, i, a, l, c, u), t, n)
 }
 
 function c(e, t) {

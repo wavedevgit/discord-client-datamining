@@ -1,33 +1,32 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 882072, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(529200),
-    s = n(961350),
-    o = n(4274),
-    l = n(985018);
+    l = n(529200),
+    a = n(961350),
+    s = n(4274),
+    o = n(985018);
 
 function c(e) {
     var t, n;
     let {
         author: c,
         inviteError: u
-    } = e, d = (0, i.bG)([s.default], () => s.default.getId()) === c.id ? l.intl.string(l.t.C89OLE) : l.intl.string(l.t.YVub5y), f = (0, o.g)(null == u ? void 0 : u.code);
-    return (0, r.jsxs)(a.A, {
-        children: [(0, r.jsx)(a.A.Header, {
+    } = e, d = (0, i.bG)([a.default], () => a.default.getId()) === c.id ? o.intl.string(o.t.C89OLE) : o.intl.string(o.t.YVub5y), p = (0, s.g)(null == u ? void 0 : u.code);
+    return (0, r.jsxs)(l.A, {
+        children: [(0, r.jsx)(l.A.Header, {
             text: d
-        }), (0, r.jsxs)(a.A.Body, {
-            children: [(0, r.jsx)(a.A.Icon, {
+        }), (0, r.jsxs)(l.A.Body, {
+            children: [(0, r.jsx)(l.A.Icon, {
                 expired: !0
-            }), (0, r.jsx)(a.A.Info, {
+            }), (0, r.jsx)(l.A.Info, {
                 expired: !0,
-                title: null != (t = null == f ? void 0 : f.title) ? t : l.intl.string(l.t["Jhx/ud"]),
-                children: null != (n = null == f ? void 0 : f.description) ? n : null == u ? void 0 : u.message
+                title: null != (t = null == p ? void 0 : p.title) ? t : o.intl.string(o.t["Jhx/ud"]),
+                children: null != (n = null == p ? void 0 : p.description) ? n : null == u ? void 0 : u.message
             })]
         })]
     })

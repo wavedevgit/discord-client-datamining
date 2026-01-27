@@ -1,9 +1,9 @@
 /** Chunk was on 56795 **/
-/** chunk id: 348639, original params: e,t,i (module,exports,require) **/
-i.d(t, {
-    A: () => n
+/** chunk id: 348639, original params: e,t,s (module,exports,require) **/
+s.d(t, {
+    A: () => i
 });
-let n = (0, i(600975).C)({
+let i = (0, s(600975).C)({
     kind: "user",
     id: "2021-10_runtime_accessibility_system",
     label: "Runtime Accessibility System",

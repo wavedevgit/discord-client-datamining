@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 154297, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    C: () => a
+    C: () => l
 });
 var r = n(652215),
     i = n(985018);
 
-function a(e) {
+function l(e) {
     switch (e) {
         case r.yTV.DESKTOP:
             return i.intl.string(i.t.aqN8U9);

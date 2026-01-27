@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(311907),
     i = n(517164),
     a = n(20805),
-    s = n(15285),
-    o = n(622543),
+    o = n(15285),
+    s = n(622543),
     l = n(290863);
 
 function c(e) {
@@ -31,9 +31,9 @@ function u(e) {
         userIds: t,
         guildIdsWithGameStores: n
     } = e;
-    return (0, r.bG)([o.A], () => {
+    return (0, r.bG)([s.A], () => {
         for (let e of t) {
-            let t = o.A.getMutualGuilds(e);
+            let t = s.A.getMutualGuilds(e);
             if (null != t) {
                 for (let e of t)
                     if (n.has(e.guild.id)) return !0
@@ -60,12 +60,12 @@ function f(e) {
     let {
         gameIds: t
     } = e;
-    return (0, r.bG)([s.Ay], () => s.Ay.getGamesSeen(!1, !1).some(e => null != e.id && t.has(e.id)), [t])
+    return (0, r.bG)([o.Ay], () => o.Ay.getGamesSeen(!1, !1).some(e => null != e.id && t.has(e.id)), [t])
 }
 
 function p(e) {
     let {
         gameIds: t
     } = e;
-    return (0, r.bG)([s.Ay], () => s.Ay.getRunningGames().some(e => null != e.id && t.has(e.id) && s.Ay.isDetectionEnabled(e)), [t])
+    return (0, r.bG)([o.Ay], () => o.Ay.getRunningGames().some(e => null != e.id && t.has(e.id) && o.Ay.isDetectionEnabled(e)), [t])
 }

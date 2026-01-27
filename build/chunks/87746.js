@@ -1,7 +1,7 @@
 /** Chunk was on 39778 **/
 /** chunk id: 87746, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Q: () => u
+    Q: () => c
 });
 var r = n(627968);
 n(64700);
@@ -12,7 +12,7 @@ var i = n(311907),
     s = n(287809),
     d = n(985018);
 
-function u(e) {
+function c(e) {
     let t = (0, i.bG)([s.default], () => s.default.getCurrentUser()),
         n = (0, o.l)(e.id);
     return (null == t ? void 0 : t.isStaff()) === !0 && e.isDM() && null == n ? (0, r.jsx)(l.Drp, {

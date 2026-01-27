@@ -2,24 +2,24 @@
 /** chunk id: 36310, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    R: () => o
+    R: () => s
 });
 var r = n(198768),
     i = n(492313),
     a = n(64700);
 
-function s(e, t) {
+function o(e, t) {
     if (e.size !== t.size) return !1;
     for (let n of e)
         if (!t.has(n)) return !1;
     return !0
 }
 
-function o(e) {
+function s(e) {
     let {
         selectionMode: t = "none",
         disallowEmptySelection: n = !1,
-        allowDuplicateSelectionEvents: o,
+        allowDuplicateSelectionEvents: s,
         selectionBehavior: c = "toggle",
         disabledBehavior: u = "all"
     } = e, d = (0, a.useRef)(!1), [, f] = (0, a.useState)(!1), p = (0, a.useRef)(null), _ = (0, a.useRef)(null), [, h] = (0, a.useState)(null), m = (0, a.useMemo)(() => l(e.selectedKeys), [e.selectedKeys]), g = (0, a.useMemo)(() => l(e.defaultSelectedKeys, new(0, r.L)), [e.defaultSelectedKeys]), [E, y] = (0, i.P)(m, g, e.onSelectionChange), b = (0, a.useMemo)(() => e.disabledKeys ? new Set(e.disabledKeys) : new Set, [e.disabledKeys]), [O, v] = (0, a.useState)(c);
@@ -49,7 +49,7 @@ function o(e) {
         },
         selectedKeys: E,
         setSelectedKeys(e) {
-            (o || !s(e, E)) && y(e)
+            (s || !o(e, E)) && y(e)
         },
         disabledKeys: b,
         disabledBehavior: u

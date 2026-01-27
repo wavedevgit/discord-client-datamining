@@ -6,11 +6,11 @@ e.exports = function(e) {
         r = t.concat(/[a-zA-Z_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]*/, n),
         i = t.concat(/(\\?[A-Z][a-z0-9_\x7f-\xff]+|\\?[A-Z]+(?=[A-Z][a-z0-9_\x7f-\xff])){1,}/, n),
         a = t.concat(/[A-Z]+/, n),
-        s = {
+        o = {
             scope: "variable",
             match: "\\$+" + r
         },
-        o = {
+        s = {
             scope: "meta",
             variants: [{
                 begin: /<\?php/,
@@ -136,7 +136,7 @@ e.exports = function(e) {
             begin: /\(/,
             end: /\)/,
             keywords: y,
-            contains: [I, s, A, e.C_BLOCK_COMMENT_MODE, _, h, O]
+            contains: [I, o, A, e.C_BLOCK_COMMENT_MODE, _, h, O]
         },
         T = {
             relevance: 0,
@@ -194,10 +194,10 @@ e.exports = function(e) {
                     endsParent: !0
                 }]
             }
-        }, o, {
+        }, s, {
             scope: "variable.language",
             match: /\$this\b/
-        }, s, T, A, {
+        }, o, T, A, {
             match: [/const/, /\s/, r],
             scope: {
                 1: "keyword",
@@ -222,7 +222,7 @@ e.exports = function(e) {
                 excludeBegin: !0,
                 excludeEnd: !0,
                 keywords: y,
-                contains: ["self", N, s, A, e.C_BLOCK_COMMENT_MODE, _, h]
+                contains: ["self", N, o, A, e.C_BLOCK_COMMENT_MODE, _, h]
             }]
         }, {
             scope: "class",

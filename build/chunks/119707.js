@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(186306),
     i = n(35277),
     a = n(711371);
-let s = ["applicationCommand"],
-    o = ["gameMentionInput", "timestampMentionInput"];
+let o = ["applicationCommand"],
+    s = ["gameMentionInput", "timestampMentionInput"];
 
 function l(e) {
     let {
@@ -35,5 +35,5 @@ function c(e) {
     var t;
     let n = a.VW.getCurrentBlock(e),
         r = a.VW.getCurrentInline(e);
-    return null != n && !s.includes(n[0].type) && !o.includes(null == r || null == (t = r[0]) ? void 0 : t.type)
+    return null != n && !o.includes(n[0].type) && !s.includes(null == r || null == (t = r[0]) ? void 0 : t.type)
 }

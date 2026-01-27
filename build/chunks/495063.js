@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 495063, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -15,8 +15,8 @@ var r, i, l = n(627968),
     m = n(971630),
     p = n(942117),
     f = n(487552),
-    b = n(311237),
-    h = n(105917),
+    h = n(311237),
+    b = n(105917),
     x = n(242564),
     j = n(476719),
     _ = n(311750),
@@ -60,7 +60,7 @@ function E(e) {
         payoutStatus: r,
         ppgDeferralReasons: i,
         periodEndDate: s
-    } = (0, h.Rs)(t), a = null != s ? d()(s).add(15, "days").toISOString() : void 0, o = (0, m.T4)(a, "MMM D");
+    } = (0, b.Rs)(t), a = null != s ? d()(s).add(15, "days").toISOString() : void 0, o = (0, m.T4)(a, "MMM D");
     switch (n) {
         case _.U1.OPEN:
             return (0, l.jsxs)(l.Fragment, {
@@ -87,7 +87,7 @@ function E(e) {
                 })]
             });
             return (0, l.jsxs)(l.Fragment, {
-                children: [O.intl.string(O.t.OtZ5kz), (0, l.jsx)(b.A, {
+                children: [O.intl.string(O.t.OtZ5kz), (0, l.jsx)(h.A, {
                     className: v.tK
                 })]
             })

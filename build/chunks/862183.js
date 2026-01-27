@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(442433),
-    o = n(611010),
+    o = n(442433),
+    s = n(611010),
     l = n(735991),
     c = n(297486),
     u = n(346446),
@@ -49,8 +49,8 @@ function g(e) {
         searchResultsPosition: y
     } = e, b = i.useCallback(e => {
         if ((0, l.$B)(h)) {
-            let t = h instanceof o.Ay ? h : o.Ay.createFromServer(h);
-            (0, s.jA)(e, e => (0, r.jsx)(u.A, m({
+            let t = h instanceof s.Ay ? h : s.Ay.createFromServer(h);
+            (0, o.jA)(e, e => (0, r.jsx)(u.A, m({
                 application: t
             }, e)))
         }

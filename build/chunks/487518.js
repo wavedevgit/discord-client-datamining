@@ -16,9 +16,9 @@ var r, l = n(627968),
     C = n(282054),
     m = n(652215),
     p = n(985018),
-    b = n(309852);
+    f = n(309852);
 
-function f(e) {
+function b(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -131,7 +131,7 @@ function O(e) {
         null == o && null == r && O(0, null), S(!1)
     }, [r, o, O]);
     return (0, l.jsx)(d.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-needs-migration": !0,
         navId: "member-safety-guild-member-".concat(g, "-menu"),
         onClose: y,
         "aria-label": p.intl.string(p.t.k9m8Rg),
@@ -141,8 +141,8 @@ function O(e) {
                 children: [(0, l.jsx)(d.Drp, {
                     id: "back",
                     action: R,
-                    render: e => (0, l.jsxs)("span", j(f({}, e), {
-                        className: b.W6,
+                    render: e => (0, l.jsxs)("span", j(b({}, e), {
+                        className: f.W6,
                         children: [(0, l.jsx)(d.n2b, {
                             size: "custom",
                             color: "currentColor",
@@ -158,11 +158,11 @@ function O(e) {
                     id: "after-date-menu-item",
                     label: p.intl.string(p.t.RDqVOD),
                     subtext: t,
-                    subMenuClassName: b.aD,
+                    subMenuClassName: f.aD,
                     children: (0, l.jsx)(d.Drp, {
                         id: "after-date-picker",
-                        render: e => (0, l.jsx)(x, j(f({}, e), {
-                            calendarClassName: b.BJ,
+                        render: e => (0, l.jsx)(x, j(b({}, e), {
+                            calendarClassName: f.BJ,
                             value: u && null != r ? c()(r) : void 0,
                             onSelect: L,
                             maxDate: c()().local(),
@@ -173,11 +173,11 @@ function O(e) {
                     id: "before-date-menu-item",
                     label: p.intl.string(p.t.jF54hQ),
                     subtext: n,
-                    subMenuClassName: b.aD,
+                    subMenuClassName: f.aD,
                     children: (0, l.jsx)(d.Drp, {
                         id: "before-date-picker",
-                        render: e => (0, l.jsx)(x, j(f({}, e), {
-                            calendarClassName: b.BJ,
+                        render: e => (0, l.jsx)(x, j(b({}, e), {
+                            calendarClassName: f.BJ,
                             value: u && null != o ? c()(o) : void 0,
                             onSelect: P,
                             maxDate: c()().local(),
@@ -203,27 +203,27 @@ function O(e) {
                     id: "guild-member-".concat(g, "-custom-option}"),
                     action: N,
                     render: e => (0, l.jsxs)("div", {
-                        className: a()(b.Dh, {
-                            [b.in]: e.isFocused
+                        className: a()(f.Dh, {
+                            [f.in]: e.isFocused
                         }),
                         children: [(0, l.jsxs)("div", {
-                            className: b.jA,
+                            className: f.jA,
                             children: [(0, l.jsx)(d.Text, {
-                                className: a()(b.ty, {
-                                    [b.in]: e.isFocused
+                                className: a()(f.ty, {
+                                    [f.in]: e.isFocused
                                 }),
                                 variant: "text-sm/medium",
                                 children: p.intl.string(p.t.BTfN6g)
                             }), null != D && (0, l.jsx)(d.Text, {
-                                className: a()(b.ty, {
-                                    [b.in]: e.isFocused
+                                className: a()(f.ty, {
+                                    [f.in]: e.isFocused
                                 }),
                                 color: "text-muted",
                                 variant: "text-xxs/medium",
                                 children: D
                             })]
                         }), 7 === s ? (0, l.jsx)(C.A, {
-                            foreground: b.QE,
+                            foreground: f.QE,
                             width: 18,
                             height: 18
                         }) : (0, l.jsx)(d._BQ, {
@@ -231,8 +231,8 @@ function O(e) {
                             color: "currentColor",
                             width: 16,
                             height: 16,
-                            className: a()(b.ty, {
-                                [b.in]: e.isFocused
+                            className: a()(f.ty, {
+                                [f.in]: e.isFocused
                             })
                         })]
                     })

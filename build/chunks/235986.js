@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(538640),
+    o = n.n(a),
+    s = n(538640),
     l = n(20976);
 
 function c(e, t, n) {
@@ -71,8 +71,8 @@ function _(e, t) {
 }
 let h = {
         VERTICAL: l.Vd,
-        HORIZONTAL: o.xM,
-        HORIZONTAL_REVERSE: o.XB
+        HORIZONTAL: s.xM,
+        HORIZONTAL_REVERSE: s.XB
     },
     m = {
         START: l.LF,
@@ -112,7 +112,7 @@ let h = {
                 flexGrow: _,
                 flexBasis: y
             }, b),
-            className: s()(o.Uu, i, a, l, c, n)
+            className: o()(s.Uu, i, a, l, c, n)
         }, O), {
             children: t
         }))
@@ -127,7 +127,7 @@ y.Child = e => {
         style: d,
         wrap: _ = !1
     } = e, h = p(e, ["children", "className", "shrink", "grow", "basis", "style", "wrap"]), m = u({
-        className: n = null != n ? n : o.Gu,
+        className: n = null != n ? n : s.Gu,
         style: u({
             flexGrow: l,
             flexShrink: a,
@@ -136,7 +136,7 @@ y.Child = e => {
     }, h);
     if (!_ && "string" != typeof t && 1 === i.Children.count(t)) {
         let e = i.Children.only(t);
-        return m.style = u({}, m.style, e.props.style), m.className = s()(e.props.className, n), i.cloneElement(e, m)
+        return m.style = u({}, m.style, e.props.style), m.className = o()(e.props.className, n), i.cloneElement(e, m)
     }
     return (0, r.jsx)("div", f(u({}, m), {
         children: t

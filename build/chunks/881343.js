@@ -2,28 +2,28 @@
 /** chunk id: 881343, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(891694),
-    s = n(10879);
+    o = n(10879);
 
-function o(e) {
+function s(e) {
     let {
         imageBackground: t,
         applicationName: n,
-        imageClassName: o,
+        imageClassName: s,
         imageNotFoundClassName: l
     } = e, [c, u] = i.useState(!1);
     return "not-found" === t.state || c ? (0, r.jsx)("div", {
         className: l,
         children: (0, r.jsx)(a.A, {
-            className: s.i
+            className: o.i
         })
     }) : "loading" === t.state ? null : (0, r.jsx)("img", {
         alt: n,
-        className: o,
+        className: s,
         src: t.url,
         onError: () => u(!0)
     })

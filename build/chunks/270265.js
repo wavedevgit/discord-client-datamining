@@ -2,23 +2,23 @@
 /** chunk id: 270265, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    o: () => s
+    o: () => o
 });
 var r = n(253018),
     i = n(35277),
     a = n(711371);
-let s = (e, t) => {
+let o = (e, t) => {
     let {
         addMark: n,
-        removeMark: s,
-        deleteBackward: o,
+        removeMark: o,
+        deleteBackward: s,
         deleteForward: l,
         setFragmentData: c,
         insertData: u,
         insertFragmentData: d,
         insertTextData: f
     } = e;
-    return (e = (0, r.o$)(e)).addMark = n, e.removeMark = s, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = f, e.deleteBackward = n => {
+    return (e = (0, r.o$)(e)).addMark = n, e.removeMark = o, e.setFragmentData = c, e.insertData = u, e.insertFragmentData = d, e.insertTextData = f, e.deleteBackward = n => {
         if ("line" === n && !t) {
             let t = a.ZF.toPoint(e.selection);
             if (null != t) {
@@ -42,7 +42,7 @@ let s = (e, t) => {
                 }
             }
         }
-        o(n)
+        s(n)
     }, e.deleteForward = n => {
         if ("line" === n && !t) {
             let t = a.ZF.toPoint(e.selection);

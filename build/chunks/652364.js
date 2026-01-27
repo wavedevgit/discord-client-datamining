@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(508675),
     a = n(734057),
-    s = n(486020),
-    o = n(690521),
+    o = n(486020),
+    s = n(690521),
     l = n(746080),
     c = n(732139);
 
@@ -43,18 +43,18 @@ function p(e) {
         n = e.defaultReactionEmoji;
     if ((null == n ? void 0 : n.emojiId) != null) {
         var r, a;
-        t.push(s.Ay.getEmojiURL({
+        t.push(o.Ay.getEmojiURL({
             id: n.emojiId,
             animated: null != (r = null == (a = i.Ay.getUsableCustomEmojiById(n.emojiId)) ? void 0 : a.animated) && r,
             size: c.Ec.reaction
         }))
-    } else(null == n ? void 0 : n.emojiName) != null && t.push(o.Ay.getURL(n.emojiName));
+    } else(null == n ? void 0 : n.emojiName) != null && t.push(s.Ay.getURL(n.emojiName));
     return e.availableTags.forEach(e => {
-        null != e.emojiId ? t.push(s.Ay.getEmojiURL({
+        null != e.emojiId ? t.push(o.Ay.getEmojiURL({
             id: e.emojiId,
             animated: !1,
             size: c.Ec.reaction
-        })) : null != e.emojiName && t.push(o.Ay.getURL(e.emojiName))
+        })) : null != e.emojiName && t.push(s.Ay.getURL(e.emojiName))
     }), t
 }
 class _ extends r.A {

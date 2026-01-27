@@ -2,12 +2,12 @@
 /** chunk id: 225960, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(322811),
     i = n(985971),
     a = n(989479);
-class s extends i.B {
+class o extends i.B {
     constructor(e) {
         super(e)
     }

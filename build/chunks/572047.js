@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(192308),
     a = n(990078),
-    s = n(732955),
-    o = n(397927),
+    o = n(732955),
+    s = n(397927),
     l = n(457417),
     c = n(520650),
     u = n(985018);
@@ -39,7 +39,7 @@ let p = () => {
         (0, i.openModalLazy)(async () => {
             let {
                 CustomThemesShareModalWrapper: e
-            } = await Promise.all([n.e("96758"), n.e("83006")]).then(n.bind(n, 277978));
+            } = await Promise.all([n.e("96758"), n.e("15646")]).then(n.bind(n, 277978));
             return t => (0, r.jsx)(e, f({}, t))
         }, {
             modalKey: l.dJ
@@ -47,9 +47,9 @@ let p = () => {
     },
     _ = () => (0, r.jsx)(a.m, {
         text: u.intl.string(u.t.RDE0Sc),
-        children: (0, r.jsx)(s.K0, {
+        children: (0, r.jsx)(o.K0, {
             "aria-label": u.intl.string(c.default.zgFs8C),
-            icon: o.liv,
+            icon: s.liv,
             variant: "icon-only",
             onClick: () => {
                 p()

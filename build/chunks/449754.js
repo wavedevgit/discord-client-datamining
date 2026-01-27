@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(982520),
     i = n.n(r),
     a = n(439372),
-    s = n(400492);
+    o = n(400492);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -20,7 +20,7 @@ function o(e, t, n) {
 let l = 100,
     c = .5,
     u = 500,
-    d = (0, s.Qh)("vibing_wumpus", "vibing_wumpus", 0),
+    d = (0, o.Qh)("vibing_wumpus", "vibing_wumpus", 0),
     f = 0,
     p = 0,
     _ = null;
@@ -59,7 +59,7 @@ function b() {
 }
 class O extends a.A {
     constructor(...e) {
-        super(...e), o(this, "actions", {
+        super(...e), s(this, "actions", {
             VIBING_WUMPUS_PLAY_MUSIC: g,
             VIBING_WUMPUS_STOP_MUSIC: y,
             VIBING_WUMPUS_PAUSE_MUSIC: E

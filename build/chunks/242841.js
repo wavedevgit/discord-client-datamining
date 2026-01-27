@@ -5,15 +5,15 @@ n(249759)();
 var r = n(120858),
     i = n(325473),
     a = n(136411),
-    s = n(225314),
-    o = n(439619),
+    o = n(225314),
+    s = n(439619),
     l = n(142896),
-    c = l(o("%Promise.all%")),
-    u = l(o("%Promise.reject%"));
+    c = l(s("%Promise.all%")),
+    u = l(s("%Promise.reject%"));
 e.exports = function(e) {
     var t = this;
     if ("Object" !== i(t)) throw TypeError("`this` value must be an object");
-    return c(t, s(a(e), function(e) {
+    return c(t, o(a(e), function(e) {
         var n = function(e) {
                 return {
                     status: "fulfilled",

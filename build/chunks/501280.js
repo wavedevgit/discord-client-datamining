@@ -2,7 +2,7 @@
 /** chunk id: 501280, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s,
+    A: () => o,
     h: () => i
 });
 var r = n(627968);
@@ -15,6 +15,6 @@ function a() {
     })
 }
 
-function s() {
+function o() {
     return (0, r.jsx)(a, {})
 }

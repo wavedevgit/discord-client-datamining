@@ -2,16 +2,16 @@
 /** chunk id: 112378, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => o
+    V: () => s
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(298063),
-    s = n(658122);
+    o = n(658122);
 
-function o(e) {
+function s(e) {
     let t = i.useRef(null),
-        [n, o] = i.useState(null),
+        [n, s] = i.useState(null),
         l = (0, a.Y)("MenuLabel");
     return (i.useLayoutEffect(() => {
         if (l && null != t.current) {
@@ -19,14 +19,14 @@ function o(e) {
                 scrollWidth: e,
                 clientWidth: n
             } = t.current;
-            e > n ? o(e - n) : o(null)
+            e > n ? s(e - n) : s(null)
         }
     }, [l, e.children]), l) ? (0, r.jsx)("div", {
-        className: s.marqueeContainer,
+        className: o.marqueeContainer,
         "data-overflow": null != n ? "" : void 0,
         children: (0, r.jsx)("span", {
             ref: t,
-            className: s.marqueeText,
+            className: o.marqueeText,
             style: null != n ? {
                 "--custom-marquee-overflow": "".concat(n, "px")
             } : void 0,

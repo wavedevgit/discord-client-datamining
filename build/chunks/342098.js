@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(284009),
     a = n.n(i),
-    s = n(835245),
-    o = n(397927),
+    o = n(835245),
+    s = n(397927),
     l = n(339048),
     c = n(391048),
     u = n(636099),
@@ -78,13 +78,13 @@ function v(e) {
         showBenefitsFirst: S,
         onComplete: T,
         forcesTransitionToGuild: C
-    } = e, N = (0, s.A)(), w = !1;
-    (0, o.mMO)(async () => {
+    } = e, N = (0, o.A)(), w = !1;
+    (0, s.mMO)(async () => {
         let {
             PaymentContextProvider: e
-        } = await Promise.resolve().then(n.bind(n, 156312)), s = (await n.e("72752").then(n.bind(n, 97491))).default, {
-            getApplicationPaymentSteps: o
-        } = await n.e("50243").then(n.bind(n, 107854)), c = o({
+        } = await Promise.resolve().then(n.bind(n, 156312)), o = (await n.e("50371").then(n.bind(n, 97491))).default, {
+            getApplicationPaymentSteps: s
+        } = await n.e("50243").then(n.bind(n, 107854)), c = s({
             guildId: v,
             showBenefitsFirst: S
         });
@@ -96,7 +96,7 @@ function v(e) {
             skuIDs: [b],
             children: (0, r.jsx)(m.Qt, {
                 children: (0, r.jsx)(h.dX, {
-                    children: (0, r.jsx)(s, O(y({}, n), {
+                    children: (0, r.jsx)(o, O(y({}, n), {
                         initialPlanId: t,
                         skuId: b,
                         analyticsLocations: d,
@@ -141,8 +141,8 @@ async function I(e) {
         applicationId: n,
         skuId: r,
         initialPlanId: i,
-        analyticsLocationObject: s,
-        analyticsLocations: o,
+        analyticsLocationObject: o,
+        analyticsLocations: s,
         renderHeader: l
     } = e, c = p.A.get(r), u = f.A.getForSKU(r);
     a()(null != c, "Failed to find SKU");
@@ -151,8 +151,8 @@ async function I(e) {
     let h = {
         initialPlanId: null != i ? i : null == (t = u[0]) ? void 0 : t.id,
         activeSubscription: null,
-        analyticsLocations: o,
-        analyticsLocationObject: s,
+        analyticsLocations: s,
+        analyticsLocationObject: o,
         analyticsSubscriptionType: g.rzx.APPLICATION,
         renderHeader: l,
         planGroup: [],

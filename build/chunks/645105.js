@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 645105, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(53594),
     p = n(268749),
     f = n(878701),
-    b = n(542210),
-    h = n(780679),
+    h = n(542210),
+    b = n(780679),
     x = n(411335),
     j = n(985018),
     _ = n(985681);
@@ -59,7 +59,7 @@ function y(e) {
     let {
         rule: t,
         triggerType: n
-    } = e, l = i.useMemo(() => null == t ? (0, m.J6)(n).map(e => (0, r.jsx)(b.A, {
+    } = e, l = i.useMemo(() => null == t ? (0, m.J6)(n).map(e => (0, r.jsx)(h.A, {
         actionType: e,
         triggerType: n
     }, e)) : (0, m.J6)(n).reduce((e, i) => {
@@ -70,7 +70,7 @@ function y(e) {
             } = e;
             return i === t
         });
-        return null == s || e.push((0, r.jsx)(b.A, {
+        return null == s || e.push((0, r.jsx)(h.A, {
             actionType: i,
             action: s,
             triggerType: null != (l = null == t ? void 0 : t.triggerType) ? l : n
@@ -127,7 +127,7 @@ function N(e) {
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
             className: _.XG,
-            children: (0, r.jsx)(h.A, {
+            children: (0, r.jsx)(b.A, {
                 rule: n,
                 onChangeRule: i
             })
@@ -173,15 +173,15 @@ function I(e) {
         isLoading: d,
         saveRule: m
     } = (0, p.S)(), {
-        updateRule: b
-    } = (0, g.wP)(t.guildId), [h, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
+        updateRule: h
+    } = (0, g.wP)(t.guildId), [b, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
         if (!d) {
             let e = v(O({}, t), {
-                enabled: !h
+                enabled: !b
             });
-            x(!h);
+            x(!b);
             let n = await m(e, []);
-            null != n && (b(n), x(n.enabled))
+            null != n && (h(n), x(n.enabled))
         }
     }, 300);
     if (null == c) return null;
@@ -225,7 +225,7 @@ function I(e) {
             className: _.Ik,
             children: [(0, r.jsx)(a.dOG, {
                 onChange: N,
-                checked: null != h && h
+                checked: null != b && b
             }), !n && (0, r.jsx)(s.m, {
                 text: j.intl.string(j.t["UKOtz+"]),
                 position: "top",

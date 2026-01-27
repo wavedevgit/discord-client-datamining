@@ -2,13 +2,13 @@
 /** chunk id: 373122, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(989479),
     i = n(374372),
     a = n(241738),
-    s = n(632434);
-class o extends a.w {
+    o = n(632434);
+class s extends a.w {
     innerPatternString(e) {
         return `(эти|последние|прошлые|следующие|после|спустя|через|\\+|-)\\s*(${r.Pl})`
     }
@@ -19,7 +19,7 @@ class o extends a.w {
             case "последние":
             case "прошлые":
             case "-":
-                a = (0, s.x4)(a)
+                a = (0, o.x4)(a)
         }
         return i.BP.createRelativeFromReference(e.reference, a)
     }

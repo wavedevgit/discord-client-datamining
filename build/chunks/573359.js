@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,13 +15,13 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = {
+let s = {
     isDisplayingWowMomentConfirmation: !1,
     isAnimated: !1
 };
 
 function l() {
-    o = {
+    s = {
         isDisplayingWowMomentConfirmation: !1,
         isAnimated: !1
     }
@@ -36,20 +36,20 @@ function u(e) {
         value: t,
         isAnimated: n
     } = e;
-    o.isDisplayingWowMomentConfirmation = t, o.isAnimated = n
+    s.isDisplayingWowMomentConfirmation = t, s.isAnimated = n
 }
 class d extends(r = i.Ay.Store) {
     getState() {
-        return o
+        return s
     }
     get isDisplayingWowMomentConfirmation() {
-        return o.isDisplayingWowMomentConfirmation
+        return s.isDisplayingWowMomentConfirmation
     }
     get isAnimated() {
-        return o.isAnimated
+        return s.isAnimated
     }
 }
-s(d, "displayName", "WowMomentConfirmationStore");
+o(d, "displayName", "WowMomentConfirmationStore");
 let f = new d(a.h, {
     LOGOUT: c,
     WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION: u

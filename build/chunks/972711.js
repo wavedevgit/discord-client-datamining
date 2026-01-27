@@ -11,12 +11,12 @@ n.d(t, {
 var r = n(562465),
     i = n(306173),
     a = n(509929),
-    s = n(565150);
-let o = 50;
+    o = n(565150);
+let s = 50;
 
 function l(e, t) {
     if (t.id === e.uri || null != t.id && t.id === e.id) return !0;
-    if (t.item.platform === s.xz.REACT_NATIVE) {
+    if (t.item.platform === o.xz.REACT_NATIVE) {
         let {
             item: r
         } = t, {
@@ -44,16 +44,16 @@ class u {
 }
 
 function d(e) {
-    return e.platform === s.xz.REACT_NATIVE && null != e.uri && (0, a.a$)(e.uri) && (0, i.xd)()
+    return e.platform === o.xz.REACT_NATIVE && null != e.uri && (0, a.a$)(e.uri) && (0, i.xd)()
 }
 class f {
     doUpload(e, t) {
         var n, r, a;
-        let s, l = (0, i.uU)();
+        let o, l = (0, i.uU)();
         if (null == l) throw Error("Libdiscore client is not available");
-        if ((null == (n = e.body) ? void 0 : n.uri) !== void 0 && "string" == typeof e.body.uri && (s = e.body.uri.startsWith("file://") ? e.body.uri.slice(7) : e.body.uri), void 0 === s || "" === s) throw Error("No file path found in request body");
+        if ((null == (n = e.body) ? void 0 : n.uri) !== void 0 && "string" == typeof e.body.uri && (o = e.body.uri.startsWith("file://") ? e.body.uri.slice(7) : e.body.uri), void 0 === o || "" === o) throw Error("No file path found in request body");
         let c = {
-                path: s,
+                path: o,
                 byteRangeStart: null == t || null == (r = t.fileByteRange) ? void 0 : r.start,
                 byteRangeEnd: null == t || null == (a = t.fileByteRange) ? void 0 : a.end
             },
@@ -64,7 +64,7 @@ class f {
             });
         return new Promise((t, n) => {
             let r = () => {
-                var i, a, s, c;
+                var i, a, o, c;
                 if (null == (i = e.signal) ? void 0 : i.aborted) {
                     n(Error("Request cancelled")), l.cancelHttpRequest(u);
                     return
@@ -72,7 +72,7 @@ class f {
                 let d = l.getHttpRequestStatus(u);
                 if ((null == d ? void 0 : d.status) === "success") t({
                     status: null == (a = d.response) ? void 0 : a.status,
-                    headers: null == (s = d.response) ? void 0 : s.headers,
+                    headers: null == (o = d.response) ? void 0 : o.headers,
                     text: null == (c = d.response) ? void 0 : c.body
                 });
                 else if ((null == d ? void 0 : d.status) === "error") n(Error(d.error));
@@ -84,7 +84,7 @@ class f {
                         };
                         e.onRequestProgress(t)
                     }
-                    setTimeout(r, o)
+                    setTimeout(r, s)
                 } else n(Error("Unknown upload status"))
             };
             r()

@@ -4,11 +4,11 @@
 n.d(t, {
     $8: () => P,
     NI: () => w,
-    Q9: () => M,
-    ST: () => F,
-    Sr: () => V,
-    Wv: () => L,
-    YU: () => j,
+    Q9: () => j,
+    ST: () => V,
+    Sr: () => F,
+    Wv: () => x,
+    YU: () => M,
     b8: () => k,
     dZ: () => G,
     i2: () => N,
@@ -17,14 +17,14 @@ n.d(t, {
     nn: () => U,
     p9: () => C,
     uE: () => D,
-    uN: () => x,
+    uN: () => L,
     yM: () => R
 }), n(896048), n(747238);
 var r = n(64700),
     i = n(311907),
     a = n(73153),
-    s = n(155718),
-    o = n(475743),
+    o = n(155718),
+    s = n(475743),
     l = n(662502),
     c = n(393033),
     u = n(105428),
@@ -47,63 +47,63 @@ let I = new Set([h.q1.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, h.q1.START_STAGE_PR
 
 function C() {
     let e = p.default.getCurrentUser();
-    return (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.VERIFIED_ADULT
+    return (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.VERIFIED_ADULT
 }
 
 function N() {
     let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-    return (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.VERIFIED_ADULT
+    return (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.VERIFIED_ADULT
 }
 
 function w() {
     let e = p.default.getCurrentUser();
-    return (null == e ? void 0 : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
+    return (null == e ? void 0 : e.ageVerificationStatus) === o.Tk.VERIFIED_TEEN
 }
 
 function R() {
     let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-    return (null == e ? void 0 : e.ageVerificationStatus) === s.Tk.VERIFIED_TEEN
+    return (null == e ? void 0 : e.ageVerificationStatus) === o.Tk.VERIFIED_TEEN
 }
 
 function P() {
     let e = p.default.getCurrentUser();
-    return (null == e ? void 0 : e.ageVerificationStatus) === s.Tk.VERIFIED_ADULT
+    return (null == e ? void 0 : e.ageVerificationStatus) === o.Tk.VERIFIED_ADULT
 }
 
 function D() {
     let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-    return (null == e ? void 0 : e.ageVerificationStatus) === s.Tk.VERIFIED_ADULT
+    return (null == e ? void 0 : e.ageVerificationStatus) === o.Tk.VERIFIED_ADULT
 }
-var x = function(e) {
+var L = function(e) {
         return e.CTAS = "ctas", e.CONTENT_TYPE = "content_type", e
     }({}),
-    L = function(e) {
+    x = function(e) {
         return e.VERIFIED_ADULT = "verified_adult", e.VERIFIED_TEEN = "verified_teen", e.ERROR = "error", e
     }({});
 
-function j(e, t) {
+function M(e, t) {
     let n = f.A.getMessage(e, t);
     if (null == n || null == n.embeds || 0 === n.embeds.length || null == n.embeds[0].fields || n.embeds[0].type !== y.Auw.AGE_VERIFICATION_SYSTEM_NOTIFICATION) return !1;
     let r = n.embeds[0].fields.find(e => "ctas" === e.rawName);
     return null == r ? void 0 : r.rawValue.split(",").includes("retry")
 }
 
-function M() {
+function j() {
     let e = p.default.getCurrentUser();
-    return (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.CLIENT_ONLY_PENDING
+    return (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.CLIENT_ONLY_PENDING
 }
 
 function k() {
     let e = (0, i.bG)([p.default], () => p.default.getCurrentUser());
-    return (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== s.Tk.CLIENT_ONLY_PENDING
+    return (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.UNVERIFIED && (null == e ? void 0 : e.ageVerificationStatus) !== o.Tk.CLIENT_ONLY_PENDING
 }
 
 function U(e) {
     let {
         onComplete: t,
         entryPoint: n,
-        isRetry: s = !1,
-        visibleContent: o = null,
+        isRetry: o = !1,
+        visibleContent: s = null,
         shouldShowExpressiveModal: d = !1,
         classificationId: f = null
     } = e, [h, m] = r.useState(!1), E = (0, i.bG)([p.default], () => p.default.getCurrentUser()), {
@@ -112,11 +112,11 @@ function U(e) {
         a.h.dispatch({
             type: "CLOSE_AGE_VERIFICATION_MODAL",
             status: y
-        }), s || b || u.A.maybeOpenAgeVerificationUserFeedback({
+        }), o || b || u.A.maybeOpenAgeVerificationUserFeedback({
             location: "age_verification_intro_screen",
-            visibleContent: o
+            visibleContent: s
         })
-    }, [y, s, o, b]), A = r.useCallback(async e => {
+    }, [y, o, s, b]), A = r.useCallback(async e => {
         m(!0);
         try {
             a.h.dispatch({
@@ -153,21 +153,21 @@ function G(e) {
             var e;
             return null == (e = p.default.getCurrentUser()) ? void 0 : e.ageVerificationStatus
         }),
-        n = (0, o.A)(t),
+        n = (0, s.A)(t),
         a = (0, i.bG)([d.default], () => null != d.default.getSuspendedUserToken()),
-        s = (0, i.bG)([d.default], () => d.default.isAuthenticated()),
+        o = (0, i.bG)([d.default], () => d.default.isAuthenticated()),
         l = null != n && null != t && n !== t,
-        c = !a && !s;
+        c = !a && !o;
     r.useEffect(() => {
         (l || c) && e()
     }, [e, l, c])
 }
 
-function V(e) {
+function F(e) {
     return null != e && E.zn.has(e)
 }
 
-function F(e) {
+function V(e) {
     return I.has(e) ? A.intl.string(A.t.lSWVTM) : (0, m.H)(A.intl.string(A.t.JHNunj), A.intl.string(A.t.xYXsr6))
 }
 

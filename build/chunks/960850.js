@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(311907),
     i = n(937161),
     a = n(576705),
-    s = n(101392),
-    o = n(403362),
+    o = n(101392),
+    s = n(403362),
     l = n(652215);
 
 function c(e, t, n) {
@@ -19,12 +19,12 @@ function c(e, t, n) {
             location: "canBypassSlowmodeHelper"
         }).enabled) return !1;
     switch (t) {
-        case s.R.SendMessage:
+        case o.R.SendMessage:
             return n.can(l.xBc.MANAGE_CHANNELS, e) || n.can(l.xBc.MANAGE_MESSAGES, e);
-        case s.R.CreateThread:
+        case o.R.CreateThread:
             return n.can(l.xBc.MANAGE_THREADS, e);
         default:
-            (0, o.xb)(t)
+            (0, s.xb)(t)
     }
 }
 

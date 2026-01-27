@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 415295, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     $: () => u,
     S: () => c
@@ -8,47 +7,47 @@ n.d(t, {
 var r = n(627968);
 n(64700);
 var i = n(827734),
-    a = n(397927),
-    s = n(985018),
-    o = n(530611);
+    l = n(397927),
+    a = n(985018),
+    s = n(530611);
 
-function l(e) {
+function o(e) {
     let {
         label: t,
         backgroundColor: n = i.A.colors.CONTROL_SECONDARY_BACKGROUND_DEFAULT.css,
-        icon: s,
-        iconColor: l
+        icon: a,
+        iconColor: o
     } = e;
     return (0, r.jsxs)("div", {
-        className: o.q,
+        className: s.q,
         style: {
             backgroundColor: n
         },
-        children: [(0, r.jsx)(a.Text, {
+        children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "always-white",
-            className: o.__invalid_badgeText,
+            className: s.__invalid_badgeText,
             children: t
-        }), (0, r.jsx)(s, {
-            className: o.r,
-            color: null != l ? l : "currentColor",
+        }), (0, r.jsx)(a, {
+            className: s.r,
+            color: null != o ? o : "currentColor",
             "aria-hidden": !0
         })]
     })
 }
 
 function c() {
-    return (0, r.jsx)(l, {
-        label: s.intl.string(s.t["I+02Gs"]),
+    return (0, r.jsx)(o, {
+        label: a.intl.string(a.t["I+02Gs"]),
         backgroundColor: "#207B8D",
-        icon: a.BZI
+        icon: l.BZI
     })
 }
 
 function u() {
-    return (0, r.jsx)(l, {
-        label: s.intl.string(s.t.TgsPaP),
-        icon: a.R2l,
+    return (0, r.jsx)(o, {
+        label: a.intl.string(a.t.TgsPaP),
+        icon: l.R2l,
         iconColor: i.A.unsafe_rawColors.PRIMARY_330.css
     })
 }

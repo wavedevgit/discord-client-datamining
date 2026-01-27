@@ -9,8 +9,8 @@ var i = n(397927),
     l = n(442433),
     a = n(820284),
     c = n(358367),
-    s = n(793574),
-    o = n(50268),
+    o = n(793574),
+    s = n(50268),
     u = n(301541),
     d = n(243949),
     b = n(652215),
@@ -20,26 +20,26 @@ let p = (0, c.A)(function(e) {
         user: t,
         analyticsContext: n,
         onSelect: c
-    } = e, s = (0, d.A)({
+    } = e, o = (0, d.A)({
         userId: t.id
-    }), p = (0, o.A)({
+    }), p = (0, s.A)({
         id: t.id,
         label: f.intl.string(f.t["/AXYnE"])
-    }), O = (0, u.A)(t.id), j = t.isNonUserBot();
+    }), A = (0, u.A)(t.id), O = t.isNonUserBot();
     return (0, r.jsx)(a.A, {
         context: n,
         object: b.ZSU.CONTEXT_MENU,
         children: (0, r.jsxs)(i.W1t, {
-            "data-menu-mixed": !0,
+            "data-menu-migrated": !0,
             navId: "user-context",
             onClose: l.Z_,
             "aria-label": f.intl.string(f.t.liqwPJ),
             onSelect: c,
             children: [(0, r.jsxs)(i.rXV, {
-                children: [!j && s, !j && O]
+                children: [!O && o, !O && A]
             }), (0, r.jsx)(i.rXV, {
                 children: p
             })]
         })
     })
-}, [s.A.CONTEXT_MENU, s.A.BANNED_USER_MENU])
+}, [o.A.CONTEXT_MENU, o.A.BANNED_USER_MENU])

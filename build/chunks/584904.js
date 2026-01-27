@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(688810),
     c = n(183555),
     u = n(657331),
@@ -98,13 +98,13 @@ let A = i.forwardRef(function(e, t) {
         "aria-labelledby": S,
         children: (0, r.jsx)(d.A.Overlay, b(E({
             ref: C,
-            className: s()(m.Nr, g)
+            className: o()(m.Nr, g)
         }, T), {
             children: a
         }))
     }) : (0, r.jsx)("article", {
         "aria-labelledby": S,
-        children: (0, r.jsx)(o.sqX, {
+        children: (0, r.jsx)(s.sqX, {
             className: m.OV,
             "aria-label": h.intl.string(h.t.pD1L1u),
             focusProps: {
@@ -121,7 +121,7 @@ let A = i.forwardRef(function(e, t) {
             },
             children: (0, r.jsx)(d.A.Overlay, b(E({
                 ref: C,
-                className: s()(m.Nr, g)
+                className: o()(m.Nr, g)
             }, T), {
                 children: a
             }))

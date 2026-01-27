@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(685908),
     i = n(497387),
     a = n.n(i),
-    s = n(94809),
-    o = n.n(s),
+    o = n(94809),
+    s = n.n(o),
     l = n(505737),
     c = n.n(l);
 
@@ -101,15 +101,15 @@ function O(e) {
 }
 
 function v(e, t, n) {
-    return void 0 !== t && void 0 != n ? o()(t, n) : e
+    return void 0 !== t && void 0 != n ? s()(t, n) : e
 }
 
 function A(e, t) {
     let n, {
             toValueMin: i,
             toValueMax: a,
-            tension: s = 0,
-            friction: o = 0,
+            tension: o = 0,
+            friction: s = 0,
             loop: l,
             reverse: c,
             invert: u,
@@ -125,8 +125,8 @@ function A(e, t) {
         I = v(t.toValue, i, a),
         S = r[h](e, p(d({}, y), {
             toValue: I,
-            tension: s,
-            friction: o,
+            tension: o,
+            friction: s,
             duration: O
         })),
         T = S;
@@ -134,8 +134,8 @@ function A(e, t) {
         let i = v(t.duration, g, E);
         n = r[h](e, p(d({}, y), {
             toValue: c ? b : -I,
-            tension: s,
-            friction: o,
+            tension: o,
+            friction: s,
             duration: i
         })), T = r.sequence([S, n])
     }

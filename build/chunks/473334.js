@@ -3,8 +3,8 @@
 var r = n(50613),
     i = n(742904),
     a = n(416412),
-    s = n(822339),
-    o = n(109665),
+    o = n(822339),
+    s = n(109665),
     l = n(514035),
     c = 1,
     u = 2,
@@ -39,14 +39,14 @@ e.exports = function(e, t, n, r, v, I, S) {
         case E:
             return e == t + "";
         case _:
-            var T = o;
+            var T = s;
         case g:
             var C = r & c;
             if (T || (T = l), e.size != t.size && !C) break;
             var N = S.get(e);
             if (N) return N == t;
             r |= u, S.set(e, t);
-            var w = s(T(e), T(t), r, v, I, S);
+            var w = o(T(e), T(t), r, v, I, S);
             return S.delete(e), w;
         case y:
             if (A) return A.call(e) == A.call(t)

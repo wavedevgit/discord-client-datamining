@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 131929, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m,
+    A: () => _,
     s: () => g
 }), n(228524);
 var r = n(627968);
@@ -13,8 +12,8 @@ var i = n(397927),
     a = n(557582),
     o = n(167630),
     c = n(860689),
-    u = n(949155),
-    d = n(985018),
+    d = n(949155),
+    u = n(985018),
     h = n(979533);
 
 function p(e) {
@@ -46,7 +45,7 @@ function p(e) {
             children: (0, r.jsx)(i.Button, {
                 variant: "active",
                 size: "md",
-                text: d.intl.string(d.t.riu2R5),
+                text: u.intl.string(u.t.riu2R5),
                 onClick: l,
                 loading: c,
                 fullWidth: !0
@@ -67,7 +66,7 @@ function g(e) {
         children: [(0, r.jsx)(i.Heading, {
             className: h.s7,
             variant: "text-sm/medium",
-            children: d.intl.string(d.t.Eabu1z)
+            children: u.intl.string(u.t.Eabu1z)
         }), (0, r.jsxs)("div", {
             className: h.bo,
             children: [(0, r.jsx)(s.A, {
@@ -86,7 +85,7 @@ function g(e) {
                         className: h.n2,
                         tooltipPosition: "left"
                     })]
-                }), (0, r.jsx)(u.IK, {
+                }), (0, r.jsx)(d.IK, {
                     invite: n,
                     textClassName: h.kS,
                     className: h.pe
@@ -103,7 +102,7 @@ function g(e) {
     })
 }
 
-function m(e) {
+function _(e) {
     let {
         invite: t,
         channel: n,

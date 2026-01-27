@@ -1,79 +1,78 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 749795, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => h
+    A: () => g
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(397927),
-    o = n(709066),
-    l = n(763754),
+    l = n.n(i),
+    a = n(397927),
+    s = n(709066),
+    o = n(763754),
     c = n(643204),
     u = n(809115),
     d = n(888675),
-    f = n(705751),
-    p = n(985018),
-    _ = n(234054);
+    p = n(705751),
+    m = n(985018),
+    f = n(234054);
 
-function h(e) {
+function g(e) {
     let {
         message: t,
         compact: n,
         usernameHook: i
-    } = e, h = (0, l.Ay)(t), m = i(h), {
-        avatarSrc: g,
+    } = e, g = (0, o.Ay)(t), h = i(g), {
+        avatarSrc: _,
         eventHandlers: {
-            onMouseEnter: E,
-            onMouseLeave: y
+            onMouseEnter: b,
+            onMouseLeave: A
         }
     } = (0, u.a)(!0);
     return (0, r.jsx)("div", {
-        onMouseEnter: E,
-        onMouseLeave: y,
+        onMouseEnter: b,
+        onMouseLeave: A,
         children: (0, r.jsx)(d.A, {
-            className: a()(_.rs, {
-                [_.oE]: n
+            className: l()(f.rs, {
+                [f.oE]: n
             }),
             iconNode: n ? null : (0, r.jsx)(u.l, {
-                src: g
+                src: _
             }),
-            iconContainerClassName: _.zc,
+            iconContainerClassName: f.zc,
             compact: n,
             children: (0, r.jsxs)("div", {
-                className: a()(_.Qs, {
-                    [_.oE]: n
+                className: l()(f.Qs, {
+                    [f.oE]: n
                 }),
                 children: [(0, r.jsx)(c.ix, {
                     message: t,
-                    messageClassname: _.he,
-                    className: a()(_.QV, _.he, {
-                        [_.oE]: n
+                    messageClassname: f.he,
+                    className: l()(f.QV, f.he, {
+                        [f.oE]: n
                     }),
                     username: (0, r.jsxs)("div", {
-                        className: _.he,
-                        children: [(0, r.jsx)(s.Text, {
+                        className: f.he,
+                        children: [(0, r.jsx)(a.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: _.Xh,
-                            children: p.intl.string(p.t.hG1StD)
-                        }), (0, r.jsx)(o.A, {
-                            type: f.nu.SYSTEM_DM,
-                            className: _.Al
+                            className: f.Xh,
+                            children: m.intl.string(m.t.hG1StD)
+                        }), (0, r.jsx)(s.A, {
+                            type: p.nu.SYSTEM_DM,
+                            className: f.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
                 }), (0, r.jsx)("div", {
-                    className: a()(_.__invalid_messageContent, {
-                        [_.oE]: n
+                    className: l()(f.__invalid_messageContent, {
+                        [f.oE]: n
                     }),
-                    children: p.intl.format(p.t.qntXNQ, {
-                        username: h.nick,
-                        usernameHook: m
+                    children: m.intl.format(m.t.qntXNQ, {
+                        username: g.nick,
+                        usernameHook: h
                     })
                 })]
             })

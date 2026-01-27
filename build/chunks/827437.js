@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(315246),
     c = n(92240),
     u = n(679492),
@@ -29,7 +29,7 @@ function p(e) {
         targetElementRef: b
     } = e, [O, v] = i.useState(!1), {
         analyticsLocations: A
-    } = (0, o.Ay)(s.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.A)({
+    } = (0, s.Ay)(o.A.USER_PROFILE_ACTIVITY_CONTEXT_MENU), I = (0, c.A)({
         display: m,
         user: p,
         activity: _,
@@ -62,7 +62,7 @@ function p(e) {
             return (0, r.jsx)("div", {
                 onClick: e => e.stopPropagation(),
                 children: (0, r.jsx)(a.W1t, {
-                    "data-menu-migration-ready": !0,
+                    "data-menu-migrated-auto": !0,
                     navId: l.n,
                     onClose: () => {
                         t(), v(!1)

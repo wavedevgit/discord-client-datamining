@@ -1,40 +1,39 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 578598, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    D: () => o
+    D: () => a
 }), n(896048), n(492834);
 var r = n(627968),
     i = n(64700),
-    a = n(397927),
+    l = n(397927),
     s = n(244242);
 
-function o(e) {
+function a(e) {
     let {
         node: t
     } = e, {
         useLabel: n,
-        useTitle: o,
-        useSubtitle: l,
+        useTitle: a,
+        useSubtitle: o,
         useVariant: c,
-        useDisabled: u,
-        onClick: d
-    } = t, [f, p] = i.useState(!1), _ = i.useCallback(() => {
-        let e = d();
+        useDisabled: d,
+        onClick: u
+    } = t, [_, p] = i.useState(!1), m = i.useCallback(() => {
+        let e = u();
         e instanceof Promise && (p(!0), e.finally(() => p(!1)))
-    }, [d]), h = o(), m = null == l ? void 0 : l(), g = n(), E = null == c ? void 0 : c(), y = null == u ? void 0 : u();
+    }, [u]), g = a(), A = null == o ? void 0 : o(), f = n(), h = null == c ? void 0 : c(), b = null == d ? void 0 : d();
     return (0, r.jsx)(s.L, {
-        children: (0, r.jsx)(a.D0$, {
-            label: h,
-            description: m,
-            disabled: y,
+        children: (0, r.jsx)(l.D0$, {
+            label: g,
+            description: A,
+            disabled: b,
             layout: "horizontal",
-            children: (0, r.jsx)(a.Button, {
-                onClick: _,
-                text: g,
-                variant: E,
-                disabled: y,
-                loading: f
+            children: (0, r.jsx)(l.Button, {
+                onClick: m,
+                text: f,
+                variant: h,
+                disabled: b,
+                loading: _
             })
         })
     })

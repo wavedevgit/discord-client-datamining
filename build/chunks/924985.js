@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(403362),
-    o = n(734057),
+    o = n(403362),
+    s = n(734057),
     l = n(919638),
     c = n(808728),
     u = n(652215);
@@ -56,9 +56,9 @@ function E(e) {
 function y(e) {
     let {
         userGuildSettings: t
-    } = e, n = new Set(t.map(e => e.guild_id).filter(s.Vq));
+    } = e, n = new Set(t.map(e => e.guild_id).filter(o.Vq));
     for (let e in f) {
-        let t = o.A.getChannel(e);
+        let t = s.A.getChannel(e);
         null != t && null != t.guild_id && n.has(t.guild_id) && delete f[t.id]
     }
     for (let e of t)
@@ -99,7 +99,7 @@ function v(e) {
 }
 class A extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        this.waitFor(o.A, l.A, c.Ay), this.removeChangeListener(_), this.addChangeListener(_), f = null != e ? e : {}
+        this.waitFor(s.A, l.A, c.Ay), this.removeChangeListener(_), this.addChangeListener(_), f = null != e ? e : {}
     }
     getState() {
         return f

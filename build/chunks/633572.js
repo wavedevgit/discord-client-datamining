@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(404036),
-    o = n(4103),
+    o = n(404036),
+    s = n(4103),
     l = n(652215),
     c = n(985018);
 
@@ -20,10 +20,10 @@ function u(e) {
     } = e, {
         giftButtonRef: d,
         handleMouseEnter: f
-    } = (0, o.A)({
+    } = (0, s.A)({
         enabled: u
     }), p = i.useCallback(() => {
-        (0, s.A)({
+        (0, o.A)({
             giftRecipient: t,
             analyticsLocations: n,
             analyticsObject: {

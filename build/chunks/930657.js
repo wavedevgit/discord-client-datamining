@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 930657, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(306444),
     p = n(922975),
     f = n(996507),
-    b = n(963175),
-    h = n(652215),
+    h = n(963175),
+    b = n(652215),
     x = n(985018),
     j = n(844089);
 
@@ -39,7 +39,7 @@ function _(e) {
         return null != (e = null == t ? void 0 : t.map(e => ({
             id: e.toString(),
             value: e,
-            label: (0, d.$g)(e, h.Yri.USD)
+            label: (0, d.$g)(e, b.Yri.USD)
         }))) ? e : []
     }, [t]);
 
@@ -50,7 +50,7 @@ function _(e) {
         G = (0, a.GV)(),
         L = (0, a.GV)(),
         k = (0, a.GV)();
-    return (0, r.jsx)(b.A, {
+    return (0, r.jsx)(h.A, {
         title: x.intl.string(x.t["iHU43+"]),
         intiallyExpanded: !0,
         children: (0, r.jsxs)(s.BJc, {

@@ -1,39 +1,39 @@
-/** Chunk was on 97492 **/
-/** chunk id: 390897, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** Chunk was on 92682 **/
+/** chunk id: 390897, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     default: () => d,
     f: () => u
 }), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(158954),
-    s = n(506774),
-    a = n(397927),
-    o = n(641131),
+var a = n(627968),
+    i = n(64700),
+    s = n(158954),
+    l = n(506774),
+    o = n(397927),
+    r = n(641131),
     c = n(985018);
 let u = "report_to_mod_dont_show_resolve_confirm";
 
-function d(e) {
+function d(t) {
     let {
-        transitionState: t,
+        transitionState: e,
         onClose: n,
         handleResolveFlag: d
-    } = e, [p, h] = l.useState(!1);
-    return (0, r.jsx)(i.Modal, {
-        transitionState: t,
+    } = t, [p, h] = i.useState(!1);
+    return (0, a.jsx)(s.Modal, {
+        transitionState: e,
         onClose: n,
-        title: c.intl.string(o.default["8R4euh"]),
-        subtitle: c.intl.string(o.default.xgOraS),
+        title: c.intl.string(r.default["8R4euh"]),
+        subtitle: c.intl.string(r.default.xgOraS),
         actions: [{
-            text: c.intl.string(o.default.ctefO2),
+            text: c.intl.string(r.default.ctefO2),
             onClick: () => {
-                p && s.w.set(u, !0), n(), d()
+                p && l.w.set(u, !0), n(), d()
             }
         }],
-        actionBarInput: (0, r.jsx)(a.Checkbox, {
+        actionBarInput: (0, a.jsx)(o.Checkbox, {
             checked: p,
-            onChange: e => h(e),
-            label: c.intl.string(o.default["3puq5c"]),
+            onChange: t => h(t),
+            label: c.intl.string(r.default["3puq5c"]),
             labelType: "secondary"
         })
     })

@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -23,7 +23,7 @@ function c() {
 }
 
 function u() {
-    delete l[s.LU7.SOUND]
+    delete l[o.LU7.SOUND]
 }
 
 function d(e) {
@@ -31,7 +31,7 @@ function d(e) {
         errorMessage: t,
         errorCode: n
     } = e;
-    l[s.LU7.SOUND] = {
+    l[o.LU7.SOUND] = {
         errorMessage: t,
         errorCode: n
     }
@@ -41,7 +41,7 @@ class f extends(r = i.Ay.Store) {
         return l[e]
     }
 }
-o(f, "displayName", "HookErrorStore");
+s(f, "displayName", "HookErrorStore");
 let p = new f(a.h, {
     MEDIA_ENGINE_SET_GO_LIVE_SOURCE: c,
     MEDIA_ENGINE_SOUNDSHARE_TRANSMITTING: u,

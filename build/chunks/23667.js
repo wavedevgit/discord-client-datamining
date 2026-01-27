@@ -2,7 +2,7 @@
 /** chunk id: 23667, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(177068),
     i = n(409037);
@@ -18,4 +18,4 @@ class a extends i.c {
         return this.set(t, a), a
     }
 }
-let s = new a
+let o = new a

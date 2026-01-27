@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(330741),
     i = n(969628),
     a = n(973107),
-    s = n(624575),
-    o = n(362124),
+    o = n(624575),
+    s = n(362124),
     l = n(686071),
     c = n(874783),
     u = n(414319),
@@ -26,6 +26,6 @@ let O = {
     collections: [{
         id: "mana",
         name: "Mana",
-        groups: [E.d, i.t, a.Q, s.i, o.h, l.E, c.g, _.C, m.M, f.t, d.Y, h.S, p.t, y.V, g.f, u.s, b.V]
+        groups: [E.d, i.t, a.Q, o.i, s.h, l.E, c.g, _.C, m.M, f.t, d.Y, h.S, p.t, y.V, g.f, u.s, b.V]
     }, r.v]
 }

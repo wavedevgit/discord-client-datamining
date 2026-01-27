@@ -2,19 +2,19 @@
 /** chunk id: 658675, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    P: () => o
+    P: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(460890),
     a = n(568385),
-    s = n(27192);
+    o = n(27192);
 
-function o(e) {
+function s(e) {
     let {
         checked: t,
         disabled: n,
-        size: o
+        size: s
     } = e;
     return (0, i.y6)("CheckboxIndicator") ? (0, r.jsx)(a.J, {
         checked: t,
@@ -22,9 +22,9 @@ function o(e) {
         displayOnly: !0,
         usageVariant: "indicator",
         "aria-hidden": !0
-    }) : (0, r.jsx)(s.Lc, {
+    }) : (0, r.jsx)(o.Lc, {
         value: t,
         disabled: n,
-        size: null != o ? o : 20
+        size: null != s ? s : 20
     })
 }

@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(158954),
-    s = n(989395);
+    o = n(989395);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -74,15 +74,15 @@ let p = i.createContext({
     _ = i.forwardRef(function(e, t) {
         let {
             children: n,
-            impressionType: o,
+            impressionType: s,
             impression: c,
             disableTrack: f,
             returnRef: _
         } = e, h = d(e, ["children", "impressionType", "impression", "disableTrack", "returnRef"]), m = i.useRef(null), g = i.useRef(null), [E, y] = i.useState(!1), b = E ? g : m;
         (0, a.tjt)(b, {
             returnRef: _
-        }), i.useContext(s.A)({
-            type: o,
+        }), i.useContext(o.A)({
+            type: s,
             name: null == c ? void 0 : c.impressionName,
             properties: null == c ? void 0 : c.impressionProperties
         }, {

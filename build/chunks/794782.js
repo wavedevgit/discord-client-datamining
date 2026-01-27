@@ -6,14 +6,14 @@ n.d(t, {
     Sn: () => c,
     UZ: () => _,
     hQ: () => p,
-    lc: () => o
+    lc: () => s
 }), n(228524);
 var r = n(961350),
     i = n(9448),
     a = n(974930),
-    s = n(988794);
+    o = n(988794);
 
-function o(e) {
+function s(e) {
     return !!(null == e ? void 0 : e.id)
 }
 
@@ -78,7 +78,7 @@ function p(e, t, n) {
     let {
         name: i,
         description: a,
-        privacyLevel: o,
+        privacyLevel: s,
         channelId: c,
         scheduledStartTime: d,
         scheduledEndTime: f,
@@ -89,10 +89,10 @@ function p(e, t, n) {
         eventExceptions: g
     } = e;
     return {
-        id: null != n ? n : s.tq,
+        id: null != n ? n : o.tq,
         name: i,
         description: null != a ? a : null,
-        privacy_level: o,
+        privacy_level: s,
         scheduled_start_time: d,
         scheduled_end_time: f,
         entity_type: p,
@@ -101,20 +101,20 @@ function p(e, t, n) {
         channel_id: c,
         guild_id: t,
         creator_id: r.default.getId(),
-        status: s.XG.SCHEDULED,
+        status: o.XG.SCHEDULED,
         recurrence_rule: l(m),
         guild_scheduled_event_exceptions: u(g)
     }
 }
 
 function _(e, t) {
-    var n, r, o, l, u, p, _;
+    var n, r, s, l, u, p, _;
     let h = {
         name: null != (n = null == e ? void 0 : e.name) ? n : "",
-        privacyLevel: null != (r = null == e ? void 0 : e.privacy_level) ? r : s.dD.GUILD_ONLY,
-        description: null != (o = null == e ? void 0 : e.description) ? o : "",
+        privacyLevel: null != (r = null == e ? void 0 : e.privacy_level) ? r : o.dD.GUILD_ONLY,
+        description: null != (s = null == e ? void 0 : e.description) ? s : "",
         scheduledStartTime: null != (l = null == e ? void 0 : e.scheduled_start_time) ? l : (0, a.jd)().toISOString(),
-        entityType: null != (u = null == e ? void 0 : e.entity_type) ? u : s.Ps.NONE,
+        entityType: null != (u = null == e ? void 0 : e.entity_type) ? u : o.Ps.NONE,
         entityMetadata: null != (p = null == e ? void 0 : e.entity_metadata) ? p : void 0,
         channelId: null == e ? void 0 : e.channel_id,
         creatorId: null == e ? void 0 : e.creator_id,
@@ -123,11 +123,11 @@ function _(e, t) {
         recurrenceRule: c(null == e ? void 0 : e.recurrence_rule),
         eventExceptions: d(null != (_ = null == e ? void 0 : e.guild_scheduled_event_exceptions) ? _ : [])
     };
-    if (f(e) && (null == e ? void 0 : e.entity_type) === s.Ps.EXTERNAL) {
+    if (f(e) && (null == e ? void 0 : e.entity_type) === o.Ps.EXTERNAL) {
         let t = (0, i.oF)(e);
         null != t && (h.entityMetadata = {
             location: t
         })
-    } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = s.Ps.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = s.Ps.VOICE));
+    } else null == h.channelId && null != t && (h.channelId = t.id, t.isGuildStageVoice() ? h.entityType = o.Ps.STAGE_INSTANCE : t.isGuildVoice() && (h.entityType = o.Ps.VOICE));
     return h
 }

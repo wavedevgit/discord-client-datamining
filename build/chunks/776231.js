@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(635377),
-    s = n.n(a),
-    o = n(488428),
+    o = n.n(a),
+    s = n(488428),
     l = n(158390),
     c = n(515718),
     u = n(209489),
@@ -43,7 +43,7 @@ let m = 5,
     g = /\.webp($|\?|#)/i,
     E = /\.avif($|\?|#)/i,
     y = [16, 20, 22, 24, 28, 32, 40, 44, 48, 56, 60, 64, 80, 96, 100, 128, 160, 240, 256, 300, 320, 480, 512, 600, 640, 1024, 1280, 1536, 2048, 3072, 4096],
-    b = new(s())({
+    b = new(o())({
         max: 1e3
     });
 
@@ -128,7 +128,7 @@ function T(e) {
 
 function C(e) {
     let [t, n] = e.split("?");
-    return [t, o.parse(n)]
+    return [t, s.parse(n)]
 }
 
 function N(e) {
@@ -137,7 +137,7 @@ function N(e) {
         sourceWidth: n,
         sourceHeight: r,
         targetWidth: a,
-        targetHeight: s,
+        targetHeight: o,
         format: l = null,
         quality: u = null,
         animated: f = !1,
@@ -148,11 +148,11 @@ function N(e) {
     null != l && (m.format = l), null != u && (m.quality = u), f && _ && (g.test(t) || E.test(t)) && (m.animated = !0), E.test(t) && (m.format = "webp");
     let y = (0, c.Uj)({
         width: a,
-        height: s,
+        height: o,
         maxWidth: p.uJv,
         maxHeight: p.uJv
     });
-    return a = y.width, s = y.height, (a !== n || s !== r) && (m.width = 0 | a, m.height = 0 | s), i().isEmpty(m) || (h += "?" + o.stringify(m)), h
+    return a = y.width, o = y.height, (a !== n || o !== r) && (m.width = 0 | a, m.height = 0 | o), i().isEmpty(m) || (h += "?" + s.stringify(m)), h
 }
 
 function w(e) {
@@ -162,13 +162,13 @@ function w(e) {
         height: r,
         maxWidth: i,
         maxHeight: a,
-        ratio: s = 1,
-        format: o = null,
+        ratio: o = 1,
+        format: s = null,
         quality: l = null,
         animated: c = !1,
         srcIsAnimated: u = !1
     } = e, d = n, p = r;
-    s < 1 && (d = Math.round(n * s), p = Math.round(r * s)), null != i && (d = Math.min(d, i)), null != a && (p = Math.min(p, a));
+    o < 1 && (d = Math.round(n * o), p = Math.round(r * o)), null != i && (d = Math.min(d, i)), null != a && (p = Math.min(p, a));
     let _ = (0, f.A)();
     return N({
         src: t,
@@ -176,7 +176,7 @@ function w(e) {
         sourceHeight: r,
         targetWidth: d *= _,
         targetHeight: p *= _,
-        format: o,
+        format: s,
         quality: l,
         animated: c,
         srcIsAnimated: u

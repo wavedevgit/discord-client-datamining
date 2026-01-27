@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(397927),
     a = n(531685),
-    s = n(723702),
-    o = n(837921),
+    o = n(723702),
+    s = n(837921),
     l = n(267102),
     c = n(652215);
 
@@ -71,6 +71,6 @@ function h() {
         n = null != e ? e : (0, l.zd)();
     if (n !== c.BRT.APP && null != n) {
         if (a.A.isFocused()) return;
-        t ? s.isPlatformEmbedded ? o.Ay.focus() : window.focus() : _(e)
+        t ? o.isPlatformEmbedded ? s.Ay.focus() : window.focus() : _(e)
     }
 }

@@ -15,8 +15,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(461771),
-    s = n(741918),
-    o = n(602034);
+    o = n(741918),
+    s = n(602034);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ let f = {
     p = {
         id: "NO_LIST",
         onKeyDown() {},
-        orientation: s.Gl.VERTICAL,
+        orientation: o.Gl.VERTICAL,
         ref: i.createRef(),
         tabIndex: -1
     },
@@ -77,13 +77,13 @@ function m() {
 function g(e) {
     let [t, n] = i.useState(-1), {
         id: r,
-        setFocus: s
-    } = m(), l = i.useCallback(() => s(e), [e, s]);
+        setFocus: o
+    } = m(), l = i.useCallback(() => o(e), [e, o]);
     return i.useLayoutEffect(() => (0, a.e)(r, (t, r) => {
         n(r && t === e ? 0 : -1)
     }), [e, r]), {
         role: "listitem",
-        [o.eM]: (0, o.t$)(r, e),
+        [s.eM]: (0, s.t$)(r, e),
         tabIndex: t,
         onFocus: l
     }
@@ -120,7 +120,7 @@ function O() {
     return {
         role: "list",
         tabIndex: r,
-        [o.KE]: e,
+        [s.KE]: e,
         onKeyDown: t,
         ref: n,
         "aria-orientation": a
@@ -141,7 +141,7 @@ function v(e) {
         role: "list",
         onKeyDown: n,
         ref: r,
-        [o.KE]: t,
+        [s.KE]: t,
         tabIndex: i,
         "aria-orientation": a
     }
@@ -160,23 +160,23 @@ function I(e) {
         navigator: n
     } = e, {
         id: a,
-        setFocus: s,
+        setFocus: o,
         containerProps: {
-            onKeyDown: o,
+            onKeyDown: s,
             ref: l,
             tabIndex: c
         },
         orientation: u
     } = n, d = i.useMemo(() => ({
         id: a,
-        setFocus: s
-    }), [a, s]), f = i.useMemo(() => ({
-        onKeyDown: o,
+        setFocus: o
+    }), [a, o]), f = i.useMemo(() => ({
+        onKeyDown: s,
         orientation: u,
         ref: l,
         id: a,
         tabIndex: c
-    }), [o, u, l, a, c]);
+    }), [s, u, l, a, c]);
     return (0, r.jsxs)(h.Provider, {
         value: f,
         children: [(0, r.jsx)(_.Provider, {

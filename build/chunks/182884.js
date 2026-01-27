@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 182884, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(641324),
+    l = n(641324),
     s = n(985018),
-    o = n(462250);
+    a = n(462250);
 
-function l(e) {
+function o(e) {
     let {
         node: t
     } = e;
@@ -23,9 +22,9 @@ function l(e) {
         children: [(0, r.jsx)(i.Heading, {
             variant: "heading-md/semibold",
             color: "text-muted",
-            className: o.D,
+            className: a.D,
             children: s.intl.string(s.t.rPREPG)
-        }), t.layout.map(e => (0, r.jsx)(a.A, {
+        }), t.layout.map(e => (0, r.jsx)(l.A, {
             node: e
         }, e.key))]
     })

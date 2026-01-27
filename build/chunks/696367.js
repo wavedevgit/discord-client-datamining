@@ -5,12 +5,12 @@ var r = n(72290),
     i = n(626800),
     a = n(171463);
 if (n(912877)() || n(640847)()) {
-    var s = Symbol.iterator;
+    var o = Symbol.iterator;
     e.exports = function(e) {
-        return null != e && void 0 !== e[s] ? e[s]() : i(e) ? Array.prototype[s].call(e) : void 0
+        return null != e && void 0 !== e[o] ? e[o]() : i(e) ? Array.prototype[o].call(e) : void 0
     }
 } else {
-    var o = n(425344),
+    var s = n(425344),
         l = n(400696),
         c = n(439619),
         u = c("%Map%", !0),
@@ -39,7 +39,7 @@ if (n(912877)() || n(640847)()) {
             }
         },
         E = function(e, t) {
-            if (o(e) || i(e)) return g(e);
+            if (s(e) || i(e)) return g(e);
             if (l(e)) {
                 var n = 0;
                 return {

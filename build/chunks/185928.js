@@ -2,22 +2,22 @@
 /** chunk id: 185928, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Fc: () => s,
+    Fc: () => o,
     Q_: () => a,
     dP: () => l,
     nD: () => c,
-    qj: () => o
+    qj: () => s
 });
 var r = n(873298),
     i = n(652215),
     a = function(e) {
         return e[e.UNSET = 0] = "UNSET", e[e.OFF = 1] = "OFF", e[e.ON = 2] = "ON", e
     }({}),
-    s = function(e) {
+    o = function(e) {
         return e.DARK = "dark", e.LIGHT = "light", e.NO_PREFERENCE = "unknown", e
     }({});
 i.NJ8.DARKER, i.NJ8.LIGHT, i.NJ8.DARKER, i.NJ8.DARK, i.NJ8.LIGHT, i.NJ8.DARK;
-let o = {
+let s = {
     dark: i.NJ8.DARKER,
     light: i.NJ8.LIGHT,
     unknown: i.NJ8.DARKER

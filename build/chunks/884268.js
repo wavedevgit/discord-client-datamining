@@ -16,16 +16,16 @@ e.exports = function(e) {
                 end: /"/
             }]
         },
-        s = {
+        o = {
             scope: "number",
             match: /\d+/
         },
-        o = {
+        s = {
             begin: /\(/,
             end: /\)/,
             excludeBegin: !0,
             excludeEnd: !0,
-            contains: [a, s]
+            contains: [a, o]
         },
         l = {
             beginKeywords: n.join(" "),
@@ -33,7 +33,7 @@ e.exports = function(e) {
                 name: n
             },
             relevance: 0,
-            contains: [o]
+            contains: [s]
         },
         c = {
             match: /\|(?=[A-Za-z_]+:?)/,
@@ -56,7 +56,7 @@ e.exports = function(e) {
             begin: [/\{%/, /\s*/, t.either(...e)],
             end: /%\}/,
             keywords: "in",
-            contains: [c, l, a, s]
+            contains: [c, l, a, o]
         }),
         d = /[a-z_]+/,
         f = u(i, {
@@ -74,7 +74,7 @@ e.exports = function(e) {
             className: "template-variable",
             begin: /\{\{/,
             end: /\}\}/,
-            contains: ["self", c, l, a, s]
+            contains: ["self", c, l, a, o]
         }]
     }
 }

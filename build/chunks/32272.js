@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(508382),
-    s = n(158954),
-    o = n(868249);
+    o = n(158954),
+    s = n(868249);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -74,8 +74,8 @@ let f = {
                 portal: p,
                 blockPointerEvents: _,
                 renderLayer: () => (0, r.jsx)("div", {
-                    className: o.q,
-                    children: (0, r.jsx)(s.EYj, {
+                    className: s.q,
+                    children: (0, r.jsx)(o.EYj, {
                         variant: "text-sm/medium",
                         children: "FloatingLayer Content"
                     })
@@ -85,7 +85,7 @@ let f = {
                         ref: t,
                         props: n
                     } = e;
-                    return (0, r.jsx)(s.$nd, d(c({
+                    return (0, r.jsx)(o.$nd, d(c({
                         variant: "primary",
                         text: "Target Element",
                         onClick: () => m(!h)

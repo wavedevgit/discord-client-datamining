@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     k5: () => a,
-    lV: () => s,
+    lV: () => o,
     qK: () => i
 });
 let r = (0, n(600975).C)({
@@ -68,7 +68,7 @@ function a(e) {
     }).darkerGuildListBackground
 }
 
-function s(e) {
+function o(e) {
     return r.useExperiment({
         location: e
     }).distinctBorders

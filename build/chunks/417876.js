@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(960488),
     a = n(311907),
-    s = n(49463),
-    o = n(961350),
+    o = n(49463),
+    s = n(961350),
     l = n(652215);
 let c = e => {
         let {
@@ -22,10 +22,10 @@ let c = e => {
             to: l.BVt.DEFAULT_LOGGED_OUT
         }) : null
     },
-    u = a.Ay.connectStores([s.A, o.default], () => {
-        let e = o.default.getToken();
+    u = a.Ay.connectStores([o.A, s.default], () => {
+        let e = s.default.getToken();
         return {
             token: e,
-            hasLoadedExperiments: null != e || s.A.hasLoadedExperiments
+            hasLoadedExperiments: null != e || o.A.hasLoadedExperiments
         }
     })(c)

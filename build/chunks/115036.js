@@ -5,7 +5,7 @@ let r, i, a;
 n.d(t, {
     A: () => w
 });
-var s, o = n(835245),
+var o, s = n(835245),
     l = n(311907),
     c = n(506774),
     u = n(451988),
@@ -42,7 +42,7 @@ function A(e) {
 
 function I(e) {
     if (null != i) return !1;
-    i = (0, o.A)(), b.start(e.timeout, () => (0, f.mZ)()), O()
+    i = (0, s.A)(), b.start(e.timeout, () => (0, f.mZ)()), O()
 }
 
 function S(e) {
@@ -62,7 +62,7 @@ function T(e) {
 function C() {
     v()
 }
-class N extends(s = l.Ay.Store) {
+class N extends(o = l.Ay.Store) {
     initialize() {
         !1 !== c.w.get(E) && (y = h.isPlatformEmbedded && "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL)
     }

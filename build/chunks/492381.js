@@ -7,24 +7,24 @@ n.d(t, {
 var r = n(683958),
     i = n(476858),
     a = n(355418),
-    s = n(1673);
-let o = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(este|esta|passado|pr[o\xf3]ximo)\\s*)?(${(0,i.uJ)(r.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(este|esta|passado|pr[\xf3o]ximo)\\s*semana)?(?=\\W|\\d|$)`, "i"),
+    o = n(1673);
+let s = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(este|esta|passado|pr[o\xf3]ximo)\\s*)?(${(0,i.uJ)(r.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(este|esta|passado|pr[\xf3o]ximo)\\s*semana)?(?=\\W|\\d|$)`, "i"),
     l = 1,
     c = 2,
     u = 3;
 class d extends a.c {
     innerPattern() {
-        return o
+        return s
     }
     innerExtract(e, t) {
         let n = t[c].toLowerCase(),
             i = r.CV[n];
         if (void 0 === i) return null;
         let a = t[l],
-            o = t[u],
-            d = a || o || "";
+            s = t[u],
+            d = a || s || "";
         d = d.toLowerCase();
         let f = null;
-        return "passado" == d ? f = "this" : "pr\xf3ximo" == d || "proximo" == d ? f = "next" : "este" == d && (f = "this"), (0, s.Y5)(e.reference, i, f)
+        return "passado" == d ? f = "this" : "pr\xf3ximo" == d || "proximo" == d ? f = "next" : "este" == d && (f = "this"), (0, o.Y5)(e.reference, i, f)
     }
 }

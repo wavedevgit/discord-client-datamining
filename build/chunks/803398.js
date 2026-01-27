@@ -1,39 +1,38 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 803398, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => g
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(311907),
-    s = n(397927),
-    o = n(77468),
-    l = n(974544),
+var i = n(627968),
+    s = n(64700),
+    l = n(311907),
+    r = n(397927),
+    a = n(77468),
+    o = n(974544),
     c = n(736653),
-    u = n(351906),
-    d = n(985018);
-let f = () => {
-    let e = (0, a.bG)([u.A], () => u.A.hidePersonalInformation),
+    d = n(351906),
+    u = n(985018);
+let g = () => {
+    let e = (0, l.bG)([d.A], () => d.A.hidePersonalInformation),
         t = (0, c.Ay)();
-    return (i.useEffect(() => {
-        o.A.fetch()
-    }, []), e) ? (0, r.jsx)(l.A, {}) : (0, r.jsxs)(s.BJc, {
+    return (s.useEffect(() => {
+        a.A.fetch()
+    }, []), e) ? (0, i.jsx)(o.A, {}) : (0, i.jsxs)(r.BJc, {
         gap: 16,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, i.jsx)(r.Heading, {
             variant: "heading-lg/semibold",
             color: "text-strong",
-            children: d.intl.string(d.t["Ig/XFa"])
-        }), (0, r.jsxs)(s.ppr, {
+            children: u.intl.string(u.t["Ig/XFa"])
+        }), (0, i.jsxs)(r.ppr, {
             theme: t,
-            children: [(0, r.jsx)(s.G8R, {
+            children: [(0, i.jsx)(r.G8R, {
                 darkSrc: n(289142),
                 lightSrc: n(796614),
                 width: 230,
                 height: 220
-            }), (0, r.jsx)(s.SGT, {
-                note: d.intl.string(d.t.WenGZ2),
-                children: d.intl.string(d.t.aoLS84)
+            }), (0, i.jsx)(r.SGT, {
+                note: u.intl.string(u.t.WenGZ2),
+                children: u.intl.string(u.t.aoLS84)
             })]
         })]
     })

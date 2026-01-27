@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = 0,
+let s = 0,
     l = {};
 
 function c(e) {
@@ -25,7 +25,7 @@ function c(e) {
 }
 
 function u(e) {
-    l[e.guildId] = e.guildInfo, o++
+    l[e.guildId] = e.guildInfo, s++
 }
 
 function d(e) {
@@ -46,10 +46,10 @@ class f extends(r = i.Ay.Store) {
         return l[e]
     }
     getVersion() {
-        return o
+        return s
     }
 }
-s(f, "displayName", "BasicGuildStore");
+o(f, "displayName", "BasicGuildStore");
 let p = new f(a.h, {
     BASIC_GUILD_FETCH: c,
     BASIC_GUILD_FETCH_SUCCESS: u,

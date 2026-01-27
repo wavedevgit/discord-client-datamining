@@ -2,13 +2,13 @@
 /** chunk id: 981883, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => s
+    V: () => o
 });
 var r = n(426983),
     i = n(176128),
     a = n(985018);
 
-function s(e, t) {
+function o(e, t) {
     let n = t === i.qo.PUBLIC ? a.intl.string(a.t.op2cJ6) : t === i.qo.APPLY_TO_JOIN ? a.intl.string(a.t.YwZfbt) : a.intl.string(a.t.TME4LJ);
     switch (e) {
         case r._.STAFF:

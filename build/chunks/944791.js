@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 41727 **/
 /** chunk id: 944791, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    I: () => i
+    I: () => l
 });
 var r = n(73153);
 
-function i(e) {
+function l(e) {
     r.h.dispatch({
         type: "APP_VIEW_SET_HOME_LINK",
         link: e

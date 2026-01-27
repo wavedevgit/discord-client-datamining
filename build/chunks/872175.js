@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 872175, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     nd: "panel__6131a",
     XG: "scroller__6131a",

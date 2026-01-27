@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     DynamicGraphicComponent: () => i,
-    Q: () => s,
+    Q: () => o,
     m: () => a
 });
 var r = n(64700),
@@ -21,7 +21,7 @@ let a = {
         7: () => n.e("58407").then(n.bind(n, 939034)),
         8: () => n.e("823").then(n.bind(n, 713290))
     },
-    s = {
+    o = {
         0: r.lazy(a[0]),
         1: r.lazy(a[1]),
         2: r.lazy(a[2]),

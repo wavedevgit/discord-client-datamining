@@ -4,9 +4,9 @@ n.d(t, {
     m: () => f,
     p: () => p
 }), n(938796);
-var l = n(64700),
+var r = n(64700),
     i = n(665260),
-    r = n(311907),
+    l = n(311907),
     o = n(717125),
     a = n(734057),
     s = n(71393),
@@ -25,14 +25,14 @@ function p(e) {
 }
 
 function f(e) {
-    let t = (0, r.bG)([s.A, o.A, a.A], () => {
-        var t, n, l;
+    let t = (0, l.bG)([s.A, o.A, a.A], () => {
+        var t, n, r;
         if (null == e) return !0;
         let i = null == (t = a.A.getChannel(e.channel_id)) ? void 0 : t.guild_id;
         if (null != i && (null == (n = s.A.getGuild(i)) ? void 0 : n.features.has(c.GuildFeatures.FORWARDING_DISABLED))) return !0;
-        let r = null != i && o.A.isChannelOrThreadParentGated(i, e.channel_id),
-            u = null != e && (null == (l = a.A.getChannel(e.channel_id)) ? void 0 : l.isModeratorReportChannel());
-        return r || u
+        let l = null != i && o.A.isChannelOrThreadParentGated(i, e.channel_id),
+            u = null != e && (null == (r = a.A.getChannel(e.channel_id)) ? void 0 : r.isModeratorReportChannel());
+        return l || u
     });
-    return l.useMemo(() => !t && null != e && d(e), [t, e])
+    return r.useMemo(() => !t && null != e && d(e), [t, e])
 }

@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 558533, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
-    a = n(694080),
+    l = n(694080),
     s = n(422936),
-    o = n(234419),
-    l = n(727949),
+    a = n(234419),
+    o = n(727949),
     c = n(600487),
-    u = n(166913),
-    d = n(788868);
-let f = e => {
+    d = n(166913),
+    u = n(788868);
+let _ = e => {
     let {
         entrypoint: t
-    } = e, n = (0, o.V)(), f = (0, s.O)(), p = (0, l.NF)({
+    } = e, n = (0, a.V)(), _ = (0, s.O)(), p = (0, o.NF)({
         trialOffer: n
-    }), _ = (0, l.Tp)();
+    }), m = (0, o.Tp)();
     return (i.useEffect(() => {
-        !0 === p && (0, l.QG)(), !0 === _ && (0, l.ne)(), (null != n || null != f) && (0, a.u1)(n, f)
-    }, [n, f, p, _]), t === d.Mf.UserSettings) ? (0, r.jsx)(u.A, {}) : t === d.Mf.ApplicationStoreHome ? (0, r.jsx)(c.A, {}) : null
+        !0 === p && (0, o.QG)(), !0 === m && (0, o.ne)(), (null != n || null != _) && (0, l.u1)(n, _)
+    }, [n, _, p, m]), t === u.Mf.UserSettings) ? (0, r.jsx)(d.A, {}) : t === u.Mf.ApplicationStoreHome ? (0, r.jsx)(c.A, {}) : null
 }

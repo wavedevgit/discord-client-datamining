@@ -1,81 +1,81 @@
-/** Chunk was on 65076 **/
-/** chunk id: 162396, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    A: () => g
+/** Chunk was on 51901 **/
+/** chunk id: 162396, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => y
 });
-var n = r(627968),
-    l = r(64700),
-    o = r(503698),
-    a = r.n(o),
-    i = r(397927),
-    c = r(975807),
-    s = r(212031),
-    u = r(975571),
-    y = r(809465),
-    f = r(652215),
-    b = r(985018),
-    d = r(535790);
+var r = n(627968),
+    o = n(64700),
+    a = n(503698),
+    l = n.n(a),
+    i = n(397927),
+    c = n(975807),
+    s = n(212031),
+    u = n(975571),
+    d = n(809465),
+    b = n(652215),
+    f = n(985018),
+    p = n(535790);
 
-function p(e) {
+function _(e) {
     let {
         onClose: t
     } = e;
-    return (0, n.jsx)(i.W1t, {
-        "data-menu-migration-ready": !0,
+    return (0, r.jsx)(i.W1t, {
+        "data-menu-migrated-auto": !0,
         navId: "settings-footer-more-menu",
         onClose: t,
         onSelect: () => {},
         "aria-label": "More options",
-        children: (0, n.jsxs)(i.rXV, {
-            children: [(0, n.jsx)(i.Drp, {
+        children: (0, r.jsxs)(i.rXV, {
+            children: [(0, r.jsx)(i.Drp, {
                 id: "changelog",
-                label: b.intl.string(b.t.LRmNAl),
+                label: f.intl.string(f.t.LRmNAl),
                 action: () => (0, s.j)(!0)
-            }), (0, n.jsx)(i.Drp, {
+            }), (0, r.jsx)(i.Drp, {
                 id: "acknowledgements",
-                label: b.intl.string(b.t["0nUKy3"]),
-                action: () => (0, c.A)(f.X7G.ACKNOWLEDGEMENTS)
-            }), (0, n.jsx)(i.Drp, {
+                label: f.intl.string(f.t["0nUKy3"]),
+                action: () => (0, c.A)(b.X7G.ACKNOWLEDGEMENTS)
+            }), (0, r.jsx)(i.Drp, {
                 id: "support",
-                label: b.intl.string(b.t["Yl/Riu"]),
+                label: f.intl.string(f.t["Yl/Riu"]),
                 action: () => (0, c.A)(u.C)
             })]
         })
     })
 }
 
-function g() {
-    let e = l.useRef(null);
-    return (0, n.jsxs)("div", {
-        children: [(0, n.jsx)(y.A, {
+function y() {
+    let e = o.useRef(null);
+    return (0, r.jsxs)("div", {
+        children: [(0, r.jsx)(d.A, {
             compact: !0
-        }), (0, n.jsxs)("div", {
-            className: d.yJ,
-            children: [(0, n.jsx)(i.MzZ, {
-                href: f.X7G.PRIVACY,
-                children: (0, n.jsx)(i.Text, {
+        }), (0, r.jsxs)("div", {
+            className: p.yJ,
+            children: [(0, r.jsx)(i.MzZ, {
+                href: b.X7G.PRIVACY,
+                children: (0, r.jsx)(i.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: b.intl.string(b.t["Knf/f/"])
+                    children: f.intl.string(f.t["Knf/f/"])
                 })
-            }), (0, n.jsx)("span", {
-                className: d.xE,
+            }), (0, r.jsx)("span", {
+                className: p.xE,
                 "aria-hidden": "true",
                 children: "•"
-            }), (0, n.jsx)(i.MzZ, {
-                href: f.X7G.TERMS,
-                children: (0, n.jsx)(i.Text, {
+            }), (0, r.jsx)(i.MzZ, {
+                href: b.X7G.TERMS,
+                children: (0, r.jsx)(i.Text, {
                     tag: "span",
                     variant: "text-xxs/normal",
                     color: "currentColor",
-                    children: b.intl.string(b.t.uFSTGq)
+                    children: f.intl.string(f.t.uFSTGq)
                 })
-            }), (0, n.jsx)("span", {
-                className: d.xE,
+            }), (0, r.jsx)("span", {
+                className: p.xE,
                 "aria-hidden": "true",
                 children: "•"
-            }), (0, n.jsx)(i.YNO, {
+            }), (0, r.jsx)(i.YNO, {
                 targetElementRef: e,
                 position: "top",
                 align: "center",
@@ -85,51 +85,51 @@ function g() {
                     let {
                         closePopout: t
                     } = e;
-                    return (0, n.jsx)(p, {
+                    return (0, r.jsx)(_, {
                         onClose: t
                     })
                 },
-                children: (t, r) => {
-                    var l, o;
-                    return (0, n.jsx)(i.MzZ, (l = function(e) {
+                children: (t, n) => {
+                    var o, a;
+                    return (0, r.jsx)(i.MzZ, (o = function(e) {
                         for (var t = 1; t < arguments.length; t++) {
-                            var r = null != arguments[t] ? arguments[t] : {},
-                                n = Object.keys(r);
-                            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-                                return Object.getOwnPropertyDescriptor(r, e).enumerable
-                            }))), n.forEach(function(t) {
-                                var n;
-                                n = r[t], t in e ? Object.defineProperty(e, t, {
-                                    value: n,
+                            var n = null != arguments[t] ? arguments[t] : {},
+                                r = Object.keys(n);
+                            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                                return Object.getOwnPropertyDescriptor(n, e).enumerable
+                            }))), r.forEach(function(t) {
+                                var r;
+                                r = n[t], t in e ? Object.defineProperty(e, t, {
+                                    value: r,
                                     enumerable: !0,
                                     configurable: !0,
                                     writable: !0
-                                }) : e[t] = n
+                                }) : e[t] = r
                             })
                         }
                         return e
-                    }({}, t), o = o = {
+                    }({}, t), a = a = {
                         ref: e,
                         useDefaultUnderlineStyles: !1,
-                        className: a()(d.Mj, {
-                            [d.vu]: r.isShown
+                        className: l()(p.Mj, {
+                            [p.vu]: n.isShown
                         }),
-                        children: (0, n.jsx)(i.Text, {
+                        children: (0, r.jsx)(i.Text, {
                             tag: "span",
                             variant: "text-xxs/normal",
                             color: "currentColor",
-                            children: b.intl.string(b.t["UKOtz+"])
+                            children: f.intl.string(f.t["UKOtz+"])
                         })
-                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-                        var r = Object.keys(e);
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
+                        var n = Object.keys(e);
                         if (Object.getOwnPropertySymbols) {
-                            var n = Object.getOwnPropertySymbols(e);
-                            r.push.apply(r, n)
+                            var r = Object.getOwnPropertySymbols(e);
+                            n.push.apply(n, r)
                         }
-                        return r
-                    })(Object(o)).forEach(function(e) {
-                        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-                    }), l))
+                        return n
+                    })(Object(a)).forEach(function(e) {
+                        Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(a, e))
+                    }), o))
                 }
             })]
         })]

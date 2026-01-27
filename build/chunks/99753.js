@@ -6,8 +6,8 @@ n.d(t, {
     A: () => O
 }), n(896048);
 var i, a = n(311907),
-    s = n(73153),
-    o = n(83971);
+    o = n(73153),
+    s = n(83971);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -95,11 +95,11 @@ class b extends(i = a.Ay.Store) {
         } = e, i = this.getFeed(r);
         if (null == i || null == t) return;
         let a = i.entries.reduce((e, t) => t.content.author_id === n ? [...e, t.content] : [...e], []);
-        return (0, o.nU)(a, t)
+        return (0, s.nU)(a, t)
     }
 }
 l(b, "displayName", "ContentInventoryStore");
-let O = new b(s.h, {
+let O = new b(o.h, {
     CONNECTION_OPEN: m,
     CONTENT_INVENTORY_SET_FEED: _,
     CONTENT_INVENTORY_SET_FEED_STATE: h,

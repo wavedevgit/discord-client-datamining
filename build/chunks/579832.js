@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92750 **/
 /** chunk id: 579832, original params: e,t,n (module,exports,require) **/
-var r = {
+var s = {
     "./bg.png": "365627",
     "./cs.png": "408100",
     "./da.png": "903723",
@@ -34,17 +34,17 @@ var r = {
     "./zh-TW.png": "23880"
 };
 
-function i(e) {
+function r(e) {
     return n(a(e))
 }
 
 function a(e) {
-    if (!n.o(r, e)) {
+    if (!n.o(s, e)) {
         var t = Error("Cannot find module '" + e + "'");
         throw t.code = "MODULE_NOT_FOUND", t
     }
-    return r[e]
+    return s[e]
 }
-i.keys = function() {
-    return Object.keys(r)
-}, i.resolve = a, e.exports = i, i.id = 579832
+r.keys = function() {
+    return Object.keys(s)
+}, r.resolve = a, e.exports = r, r.id = 579832

@@ -1,21 +1,20 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 502395, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(397927),
+    l = n(397927),
     s = n(827343),
-    o = n(688810),
-    l = n(195043),
+    a = n(688810),
+    o = n(195043),
     c = n(430452),
-    u = n(531525),
-    d = n(985018);
+    d = n(531525),
+    u = n(985018);
 
-function f() {
+function _() {
     let {
         sidechainEnabled: e,
         sidechainStrength: t
@@ -24,18 +23,18 @@ function f() {
         sidechainStrength: c.A.getSidechainCompressionStrength()
     })), {
         analyticsLocations: n
-    } = (0, o.Ay)();
-    return (0, r.jsxs)(l.x, {
-        setting: u.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
-        children: [(0, r.jsx)(a.dOG, {
-            label: d.intl.string(d.t["/jwMtn"]),
-            description: d.intl.string(d.t.zlA23F),
+    } = (0, a.Ay)();
+    return (0, r.jsxs)(o.x, {
+        setting: d.H.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
+        children: [(0, r.jsx)(l.dOG, {
+            label: u.intl.string(u.t["/jwMtn"]),
+            description: u.intl.string(u.t.zlA23F),
             checked: e,
             onChange: e => s.A.setSidechainCompression(e, {
                 analyticsLocations: n
             })
-        }), (0, r.jsx)(a.Apm, {
-            label: d.intl.string(d.t.fhEzfj),
+        }), (0, r.jsx)(l.Apm, {
+            label: u.intl.string(u.t.fhEzfj),
             initialValue: t,
             minValue: 1,
             onValueChange: e => s.A.setSidechainCompressionStrength(e, {

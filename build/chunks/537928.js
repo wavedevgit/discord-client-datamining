@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(194267),
-    s = n(72011);
+    o = n(72011);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -53,7 +53,7 @@ function d(e) {
     let {
         quest: t,
         sourceQuestContent: n,
-        applications: o,
+        applications: s,
         popoutTargetElementRef: c,
         onGameSheetOpened: d,
         onGameSheetClosed: f
@@ -61,7 +61,7 @@ function d(e) {
     return e => (0, r.jsx)(a.A, {
         quest: t,
         sourceQuestContent: n,
-        applications: null != o ? o : [],
+        applications: null != s ? s : [],
         targetElementRef: c,
         onGameSheetOpened: d,
         onGameSheetClosed: f,
@@ -74,7 +74,7 @@ function d(e) {
             children: (0, r.jsx)(i.Text, {
                 variant: "text-xs/normal",
                 color: "text-link",
-                className: s.s3,
+                className: o.s3,
                 children: e
             })
         }))

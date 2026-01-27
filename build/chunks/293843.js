@@ -1,48 +1,43 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 293843, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => j
+    A: () => w
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
-    l = n(299619),
+    i = n.n(a),
+    s = n(108531),
+    o = n(299619),
     c = n(311907),
     u = n(397927),
     d = n(975807),
-    f = n(775602),
-    p = n(975571),
-    _ = n(854987),
+    m = n(775602),
+    f = n(975571),
+    p = n(854987),
     h = n(719718),
-    m = n(612082),
+    b = n(612082),
     g = n(46192),
-    E = n(155286),
+    x = n(155286),
     y = n(573138),
-    b = n(877272),
-    O = n(184047),
-    v = n(476648),
-    A = n(532294),
-    I = n(652215),
-    S = n(622865),
-    T = n(985018),
-    C = n(822563),
+    v = n(877272),
+    j = n(184047),
+    C = n(476648),
+    _ = n(532294),
+    A = n(652215),
+    O = n(622865),
+    E = n(985018),
+    S = n(822563),
     N = n(447515),
-    w = n(844636);
-let R = 2.8,
-    P = 2,
-    D = 1e3,
-    x = 500,
-    L = 1e3 + v.f;
+    I = n(844636);
+let P = 1e3 + C.f;
 
-function j(e) {
+function w(e) {
     let {
         onNextStep: t
-    } = e, n = (0, c.bG)([h.A], () => h.A.getFetchState() === h.$.ERROR || null == h.A.getCheckpointData().messages), [a, j] = i.useState(!0), M = i.useRef(null), k = i.useContext(_.P), U = (0, u.rdh)(k.primaryColor).hex(), G = (0, c.bG)([f.A], () => f.A.useReducedMotion), V = i.useCallback(e => {
-        e.currentTarget.currentTime >= R && j(!1)
-    }, []), F = (0, u.zhh)({
+    } = e, n = (0, c.bG)([h.A], () => h.A.getFetchState() === h.$.ERROR || null == h.A.getCheckpointData().messages), [a, w] = l.useState(!0), T = l.useRef(null), R = l.useContext(p.P), L = (0, u.rdh)(R.primaryColor).hex(), D = (0, c.bG)([m.A], () => m.A.useReducedMotion), k = l.useCallback(e => {
+        e.currentTarget.currentTime >= 2.8 && w(!1)
+    }, []), M = (0, u.zhh)({
         from: {
             opacity: 0
         },
@@ -50,8 +45,8 @@ function j(e) {
             opacity: 1
         },
         pause: a,
-        delay: L
-    }), B = (0, u.zhh)({
+        delay: P
+    }), H = (0, u.zhh)({
         from: {
             opacity: 0
         },
@@ -60,143 +55,143 @@ function j(e) {
         },
         pause: a
     });
-    i.useEffect(() => {
-        null != M.current && (M.current.playbackRate = P)
-    }, []), i.useEffect(() => {
-        if (G) {
-            null != M.current && (M.current.currentTime = .2);
+    l.useEffect(() => {
+        null != T.current && (T.current.playbackRate = 2)
+    }, []), l.useEffect(() => {
+        if (D) {
+            null != T.current && (T.current.currentTime = .2);
             let e = setTimeout(() => {
-                j(!1)
-            }, D);
+                w(!1)
+            }, 1e3);
             return () => clearTimeout(e)
         }
-    }, [G]);
-    let H = () => {
-        (0, d.A)(p.A.getArticleURL(I.MVz.CHECKPOINT))
+    }, [D]);
+    let U = () => {
+        (0, d.A)(f.A.getArticleURL(A.MVz.CHECKPOINT))
     };
     return n ? (0, r.jsxs)(y.A, {
-        className: C.Ur,
-        children: [(0, r.jsx)(l.A, {
-            autoPlay: !G,
+        className: S.Ur,
+        children: [(0, r.jsx)(o.A, {
+            autoPlay: !D,
             muted: !0,
             playsInline: !0,
             loop: !0,
-            className: C.CT,
+            className: S.CT,
             children: (0, r.jsx)("source", {
-                src: w.A,
+                src: I.A,
                 type: "video/webm"
             })
-        }), (0, r.jsx)(b.A, {
+        }), (0, r.jsx)(v.A, {
             variant: "display-lg",
-            className: C.Vy,
-            children: T.intl.string(S.default.kimsIr)
-        }), (0, r.jsx)(b.A, {
+            className: S.Vy,
+            children: E.intl.string(O.default.kimsIr)
+        }), (0, r.jsx)(v.A, {
             variant: "heading-xl/medium",
-            className: C.VA,
-            children: T.intl.format(S.default.GNHD4i, {
+            className: S.VA,
+            children: E.intl.format(O.default.GNHD4i, {
                 learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
-                    onClick: H,
-                    className: C.C2,
-                    children: (0, r.jsx)(b.A, {
+                    onClick: U,
+                    className: S.C2,
+                    children: (0, r.jsx)(v.A, {
                         variant: "heading-xl/medium",
-                        className: C.nf,
+                        className: S.nf,
                         children: e
                     })
                 }, t)
             })
-        }), (0, r.jsx)(b.A, {
+        }), (0, r.jsx)(v.A, {
             variant: "text-lg/medium",
-            children: T.intl.string(S.default["xLI+Hj"])
+            children: E.intl.string(O.default["xLI+Hj"])
         }), (0, r.jsx)(g.A, {
-            className: C.Hk,
+            className: S.Hk,
             textSize: 20
         })]
     }) : (0, r.jsxs)(y.A, {
-        className: C.Qs,
+        className: S.Qs,
         noPadding: !0,
-        children: [!a && (0, r.jsx)(b.A, {
+        children: [!a && (0, r.jsx)(v.A, {
             variant: "text-lg/medium",
-            className: C.ed,
-            children: T.intl.format(S.default["1jPMeG"], {
+            className: S.ed,
+            children: E.intl.format(O.default["1jPMeG"], {
                 learnMoreHook: (e, t) => (0, r.jsx)(u.DUT, {
-                    onClick: H,
-                    className: C.C2,
-                    children: (0, r.jsx)(b.A, {
+                    onClick: U,
+                    className: S.C2,
+                    children: (0, r.jsx)(v.A, {
                         variant: "text-lg/medium",
-                        className: C.nf,
+                        className: S.nf,
                         children: e
                     })
                 }, t)
             })
-        }), !a && (0, r.jsx)(b.A, {
+        }), !a && (0, r.jsx)(v.A, {
             variant: "text-md/medium",
-            className: C.al,
-            children: T.intl.format(S.default.g476ZL, {
+            className: S.al,
+            children: E.intl.format(O.default.g476ZL, {
                 name: "Exyl"
             })
-        }), a ? null : (0, r.jsx)(o.animated.div, {
-            style: B,
-            children: (0, r.jsx)(l.A, {
-                autoPlay: !G,
+        }), a ? null : (0, r.jsx)(s.animated.div, {
+            style: H,
+            children: (0, r.jsx)(o.A, {
+                autoPlay: !D,
                 muted: !0,
                 playsInline: !0,
                 loop: !0,
-                className: C.RS,
+                className: S.RS,
                 children: (0, r.jsx)("source", {
-                    src: w.A,
+                    src: I.A,
                     type: "video/webm"
                 })
             })
-        }), (0, r.jsx)(l.A, {
-            ref: M,
-            autoPlay: !G,
+        }), (0, r.jsx)(o.A, {
+            ref: T,
+            autoPlay: !D,
             muted: !0,
             playsInline: !0,
-            className: s()(C.GW, {
-                [C.e8]: !a
+            className: i()(S.GW, {
+                [S.e8]: !a
             }),
-            onTimeUpdate: a ? V : void 0,
+            onTimeUpdate: a ? k : void 0,
             children: (0, r.jsx)("source", {
                 src: N.A,
                 type: "video/webm"
             })
         }), a ? null : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(v.A, {
+            children: [(0, r.jsx)(C.A, {
                 variant: "display-lg",
-                className: C.DD,
-                textClassName: C.Qq,
-                text: T.intl.string(S.default["CdU/PF"]),
-                delay: x
-            }), (0, r.jsx)(v.A, {
+                className: S.DD,
+                textClassName: S.Qq,
+                text: E.intl.string(O.default["CdU/PF"]),
+                delay: 500
+            }), (0, r.jsx)(C.A, {
                 variant: "text-lg/medium",
-                className: C.cz,
-                textClassName: C.Qq,
-                text: T.intl.string(S.default["M/LvW0"]),
-                delay: x + v.f
+                className: S.cz,
+                textClassName: S.Qq,
+                text: E.intl.string(O.default["M/LvW0"]),
+                delay: 500 + C.f
             })]
         }), a ? null : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsxs)(o.animated.div, {
-                style: F,
-                children: [(0, r.jsx)(E.A, {
-                    className: C.CB,
-                    slide: A.P7.WELCOME
-                }), (0, r.jsxs)(m.A, {
-                    contentClassName: C.a0,
+            children: [(0, r.jsxs)(s.animated.div, {
+                style: M,
+                children: [(0, r.jsx)(x.A, {
+                    className: S.CB,
+                    slide: _.P7.WELCOME
+                }), (0, r.jsxs)(b.A, {
+                    contentClassName: S.a0,
                     onClick: t,
-                    "aria-label": T.intl.string(T.t.I0v0Qv),
+                    "aria-label": E.intl.string(E.t.I0v0Qv),
                     muteSound: !0,
                     children: [(0, r.jsx)(u.udU, {
-                        colorClass: C.d7,
-                        color: U,
+                        colorClass: S.d7,
+                        color: L,
                         size: "md"
-                    }), T.intl.string(T.t.I0v0Qv)]
+                    }), E.intl.string(E.t.I0v0Qv)]
                 })]
-            }), (0, r.jsx)(o.animated.div, {
-                style: B,
-                children: (0, r.jsx)(O.A, {
-                    className: C.Lv,
+            }), (0, r.jsx)(s.animated.div, {
+                style: H,
+                children: (0, r.jsx)(j.A, {
+                    className: S.Lv,
                     style: {
-                        color: U
+                        color: L
                     }
                 })
             })]

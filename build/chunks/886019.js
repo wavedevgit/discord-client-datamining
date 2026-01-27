@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(492917),
     i = n(358957),
     a = n(708455),
-    s = n(652215),
-    o = n(985018),
+    o = n(652215),
+    s = n(985018),
     l = n(628580),
     c = n(610263);
 
@@ -54,57 +54,57 @@ function p(e, t) {
 }
 let _ = () => ({
         [a.Kk.BRB]: {
-            title: o.intl.string(o.t.fFTJTI),
+            title: s.intl.string(s.t.fFTJTI),
             icon: c
         },
         [a.Kk.CHILLING]: {
-            title: o.intl.string(o.t.vybY9c),
+            title: s.intl.string(s.t.vybY9c),
             icon: r.uPL
         },
         [a.Kk.GAMING]: {
-            title: o.intl.string(o.t.wvWdTV),
+            title: s.intl.string(s.t.wvWdTV),
             icon: r.Zbm
         },
         [a.Kk.WATCHING]: {
-            title: o.intl.string(o.t.s8xFaG),
+            title: s.intl.string(s.t.s8xFaG),
             icon: l
         },
         [a.Kk.FOCUSING]: {
-            title: o.intl.string(o.t.D5eCTx),
+            title: s.intl.string(s.t.D5eCTx),
             icon: r.IDW
         }
     }),
     h = () => ({
         [a.Kk.BRB]: {
-            title: o.intl.string(o.t.fFTJTI),
+            title: s.intl.string(s.t.fFTJTI),
             emoji: {
                 id: void 0,
                 name: "\uD83E\uDDFB"
             }
         },
         [a.Kk.CHILLING]: {
-            title: o.intl.string(o.t.vybY9c),
+            title: s.intl.string(s.t.vybY9c),
             emoji: {
                 id: void 0,
                 name: "\uD83C\uDF68"
             }
         },
         [a.Kk.GAMING]: {
-            title: o.intl.string(o.t.wvWdTV),
+            title: s.intl.string(s.t.wvWdTV),
             emoji: {
                 id: void 0,
                 name: "⚔️"
             }
         },
         [a.Kk.WATCHING]: {
-            title: o.intl.string(o.t.s8xFaG),
+            title: s.intl.string(s.t.s8xFaG),
             emoji: {
                 id: void 0,
                 name: "\uD83C\uDF7F"
             }
         },
         [a.Kk.FOCUSING]: {
-            title: o.intl.string(o.t.D5eCTx),
+            title: s.intl.string(s.t.D5eCTx),
             emoji: {
                 id: void 0,
                 name: "\uD83E\uDDE0"
@@ -113,7 +113,7 @@ let _ = () => ({
     }),
     m = () => p(d({}, h()), {
         [a.Kk.CHILLING]: {
-            title: o.intl.string(o.t.IeolFa),
+            title: s.intl.string(s.t.IeolFa),
             emoji: {
                 id: void 0,
                 name: "\uD83D\uDCAD"
@@ -133,15 +133,15 @@ let _ = () => ({
     },
     E = function(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "twemoji";
-        if ((null == t ? void 0 : t.type) !== s.$pd.HANG_STATUS || (null == t ? void 0 : t.state) == null) return null;
+        if ((null == t ? void 0 : t.type) !== o.$pd.HANG_STATUS || (null == t ? void 0 : t.state) == null) return null;
         let r = (0, i.e)(e, t.state),
-            o = r[0];
-        if (o === a.Kk.CUSTOM) return null;
+            s = r[0];
+        if (s === a.Kk.CUSTOM) return null;
         let l = g(r.length > 1 ? r[1] : n);
-        return o in l ? l[o] : null
+        return s in l ? l[s] : null
     },
     y = function(e, t) {
         var n;
         let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "twemoji";
-        return (null == t ? void 0 : t.type) !== s.$pd.HANG_STATUS || (null == t ? void 0 : t.state) == null ? null : (0, i.e)(e, t.state)[0] === a.Kk.CUSTOM ? null == t ? void 0 : t.details : null == (n = E(e, t, r)) ? void 0 : n.title
+        return (null == t ? void 0 : t.type) !== o.$pd.HANG_STATUS || (null == t ? void 0 : t.state) == null ? null : (0, i.e)(e, t.state)[0] === a.Kk.CUSTOM ? null == t ? void 0 : t.details : null == (n = E(e, t, r)) ? void 0 : n.title
     }

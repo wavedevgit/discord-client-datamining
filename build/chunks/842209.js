@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(71393),
-    s = n(403362),
-    o = n(827785),
+    o = n(403362),
+    s = n(827785),
     l = n(264322),
     c = n(210978),
     u = n(392054),
@@ -63,14 +63,14 @@ function g(e, t) {
 }
 
 function E(e, t, n) {
-    var r, i, a, s;
+    var r, i, a, o;
     if (null == t) return {
         application: void 0,
         command: void 0
     };
-    let o = l.Ay.getUserState(),
+    let s = l.Ay.getUserState(),
         c = l.Ay.getContextState(e),
-        u = Object.values(null != (r = null == (a = o.result) ? void 0 : a.sections) ? r : {}).concat(Object.values(null != (i = null == (s = c.result) ? void 0 : s.sections) ? i : {}));
+        u = Object.values(null != (r = null == (a = s.result) ? void 0 : a.sections) ? r : {}).concat(Object.values(null != (i = null == (o = c.result) ? void 0 : o.sections) ? i : {}));
     if (null != n) {
         let e = u.find(e => {
             var t;
@@ -113,11 +113,11 @@ function y(e, t) {
 }
 
 function b(e, t, n) {
-    var r, i, a, s, o, c, u, d;
+    var r, i, a, o, s, c, u, d;
     let f = l.Ay.getUserState(),
         p = l.Ay.getContextState(e),
         _ = l.Ay.getApplicationState(n),
-        h = null != (r = null != (i = null == (s = f.result) || null == (a = s.sections) ? void 0 : a[n]) ? i : null == (c = p.result) || null == (o = c.sections) ? void 0 : o[n]) ? r : null == (d = _.result) || null == (u = d.sections) ? void 0 : u[n];
+        h = null != (r = null != (i = null == (o = f.result) || null == (a = o.sections) ? void 0 : a[n]) ? i : null == (c = p.result) || null == (s = c.sections) ? void 0 : s[n]) ? r : null == (d = _.result) || null == (u = d.sections) ? void 0 : u[n];
     return null == h ? void 0 : h.descriptor
 }
 
@@ -145,19 +145,19 @@ function A(e) {
     let {
         context: t,
         filters: n,
-        options: s,
+        options: o,
         allowFetch: c
     } = e, u = "channel" === t.type ? t.channel.guild_id : null, d = (0, i.bG)([a.A], () => a.A.getGuild(u), [u]), {
         descriptors: _,
         commands: m,
         sectionedCommands: E,
         loading: y
-    } = (0, l.XC)(t, d, n, g(h({}, s), {
+    } = (0, l.XC)(t, d, n, g(h({}, o), {
         allowFetch: c
     })), [b, O] = r.useState(null), v = r.useMemo(() => {
         var e;
-        return N(null != (e = s.placeholderCount) ? e : 0, n.commandTypes[0])
-    }, [n.commandTypes, s.placeholderCount]);
+        return N(null != (e = o.placeholderCount) ? e : 0, n.commandTypes[0])
+    }, [n.commandTypes, o.placeholderCount]);
     return r.useMemo(() => {
         let e = {
             loading: y,
@@ -184,7 +184,7 @@ function A(e) {
                 data: [...t.data, ...v]
             }, ...E.slice(1)];
             else {
-                let t = o.gZ[f.Ik.BUILT_IN];
+                let t = s.gZ[f.Ik.BUILT_IN];
                 e.activeSections = [t], e.commandsByActiveSection = [{
                     section: t,
                     data: v
@@ -201,11 +201,11 @@ function I(e, t, n) {
     let {
         descriptors: i,
         commands: a,
-        loading: s
-    } = l.Ay.query(e, t, n), c = N(s && null != (r = n.placeholderCount) ? r : 0, t.commandTypes[0]);
+        loading: o
+    } = l.Ay.query(e, t, n), c = N(o && null != (r = n.placeholderCount) ? r : 0, t.commandTypes[0]);
     return {
-        commands: s ? [...a, ...c] : a,
-        sections: s && 0 === i.length ? [o.gZ[f.Ik.BUILT_IN]] : i
+        commands: o ? [...a, ...c] : a,
+        sections: o && 0 === i.length ? [s.gZ[f.Ik.BUILT_IN]] : i
     }
 }
 
@@ -214,12 +214,12 @@ function S(e, t) {
         i = (0, l.SD)(e, !0, !0);
     return r.useMemo(() => {
         if (null != t) {
-            var e, r, a, s;
-            for (let o of Object.values(null != (e = null == (a = n.result) ? void 0 : a.sections) ? e : {}).concat(Object.values(null != (r = null == (s = i.result) ? void 0 : s.sections) ? r : {}))) {
-                let e = o.commands[t];
+            var e, r, a, o;
+            for (let s of Object.values(null != (e = null == (a = n.result) ? void 0 : a.sections) ? e : {}).concat(Object.values(null != (r = null == (o = i.result) ? void 0 : o.sections) ? r : {}))) {
+                let e = s.commands[t];
                 if (null != e) return {
                     command: e,
-                    application: o.descriptor.application
+                    application: s.descriptor.application
                 }
             }
         }
@@ -234,8 +234,8 @@ function T(e, t, n) {
     let i = (0, l.A4)(!0, !0),
         a = (0, l.SD)(e, !0, !0);
     return r.useMemo(() => {
-        var e, r, o, l, c, u;
-        let f = null != (e = null == (l = i.result) || null == (o = l.sections) ? void 0 : o[t]) ? e : null == (c = a.result) ? void 0 : c.sections[t],
+        var e, r, s, l, c, u;
+        let f = null != (e = null == (l = i.result) || null == (s = l.sections) ? void 0 : s[t]) ? e : null == (c = a.result) ? void 0 : c.sections[t],
             p = Object.values(null != (r = null == f ? void 0 : f.commands) ? r : {}).map(e => null == e.rootCommand ? e : (0, d.Oe)({
                 rootCommand: e.rootCommand,
                 command: e.rootCommand,
@@ -243,7 +243,7 @@ function T(e, t, n) {
             })).reduce((e, t) => (e[t.id] = t, e), {});
         return {
             application: null == f || null == (u = f.descriptor) ? void 0 : u.application,
-            commands: n.map(e => p[e]).filter(s.Vq)
+            commands: n.map(e => p[e]).filter(o.Vq)
         }
     }, [null == i ? void 0 : i.result, null == a ? void 0 : a.result, t, n])
 }

@@ -9,14 +9,14 @@ n.d(t, {
 var r = n(311907),
     i = n(52133),
     a = n(290863),
-    s = n(652215);
+    o = n(652215);
 
-function o(e) {
-    return e.type === s.$pd.PLAYING
+function s(e) {
+    return e.type === o.$pd.PLAYING
 }
 
 function l(e, t) {
-    return t.findActivity(e, o)
+    return t.findActivity(e, s)
 }
 
 function c(e, t) {

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(573648),
-    o = n(541806),
+    o = n(573648),
+    s = n(541806),
     l = n(261020),
     c = n(83971),
     u = n(780964),
@@ -26,11 +26,11 @@ function h(e) {
         onAction: m,
         onClose: g
     } = e, E = (0, i.bG)([f.A], () => null != f.A.getAccount(null, p.fg2.CRUNCHYROLL));
-    if (!(0, o.A)(t) && !(0, c.CU)(n)) return null;
+    if (!(0, s.A)(t) && !(0, c.CU)(n)) return null;
     if (!E) return (0, r.jsx)(a.Drp, {
         id: "connect-crunchyroll",
         label: _.intl.formatToPlainString(_.t.XWSHTb, {
-            platform: s.A.get(p.fg2.CRUNCHYROLL).name
+            platform: o.A.get(p.fg2.CRUNCHYROLL).name
         }),
         action: () => {
             null == m || m({

@@ -3,18 +3,18 @@
 "use strict";
 n.d(t, {
     V: () => l,
-    e: () => o
+    e: () => s
 });
 var r = n(852015),
     i = n(82180),
     a = n(679314);
-let s = {
+let o = {
     readUnknownField: !0,
     readerFactory: e => new l(e)
 };
 
-function o(e) {
-    return e ? Object.assign(Object.assign({}, s), e) : s
+function s(e) {
+    return e ? Object.assign(Object.assign({}, o), e) : o
 }
 class l {
     constructor(e, t) {

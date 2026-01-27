@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(896048);
 var r, i = n(812729),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153);
+    o = n(311907),
+    s = n(73153);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ function d() {
     }
     return !a()(e, u) && (u = e, !0)
 }
-class f extends(r = s.Ay.Store) {
+class f extends(r = o.Ay.Store) {
     initialize() {
         this.syncWith(c, d)
     }
@@ -37,4 +37,4 @@ class f extends(r = s.Ay.Store) {
     }
 }
 l(f, "displayName", "FirstPartyRichPresenceStore");
-let p = new f(o.h)
+let p = new f(s.h)

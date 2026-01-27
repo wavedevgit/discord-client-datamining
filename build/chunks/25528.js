@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(665260),
     a = n(311907),
-    s = n(961350),
-    o = n(290863),
+    o = n(961350),
+    s = n(290863),
     l = n(461213),
     c = n(652215);
 let u = new Set([c.yTV.XBOX, c.yTV.PS4, c.yTV.PS5]);
@@ -22,10 +22,10 @@ function d(e) {
 }
 
 function f(e, t) {
-    return d(s.default.getId() === e ? l.A.getActivities() : o.A.getActivities(e, t))
+    return d(o.default.getId() === e ? l.A.getActivities() : s.A.getActivities(e, t))
 }
 
 function p(e, t) {
-    let n = (0, a.bG)([l.A, o.A, s.default], () => s.default.getId() === e ? l.A.getActivities() : o.A.getActivities(e, t));
+    let n = (0, a.bG)([l.A, s.A, o.default], () => o.default.getId() === e ? l.A.getActivities() : s.A.getActivities(e, t));
     return r.useMemo(() => d(n), [n])
 }

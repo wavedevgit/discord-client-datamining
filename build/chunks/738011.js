@@ -1,7 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 738011, original params: e,t,n (module,exports,require) **/
-"use strict";
-
 function r(e) {
     return e instanceof DOMException && "NotAllowedError" === e.name
 }

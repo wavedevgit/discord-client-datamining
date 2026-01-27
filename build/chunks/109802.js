@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(421380),
     c = n(397927),
     u = n(235986),
@@ -40,12 +40,12 @@ class m extends(r = a.PureComponent) {
             value: n,
             mode: r,
             autoFocus: a,
-            spellCheck: s,
+            spellCheck: o,
             inputClassName: l,
             placeholder: c
         } = this.props, u = null == (t = this.context) ? void 0 : t.titleId;
         return (0, i.jsx)("input", {
-            className: o()((0, d.t)(p, "input", r), l, {
+            className: s()((0, d.t)(p, "input", r), l, {
                 [p.inputHidden]: e
             }),
             ref: this.inputRef,
@@ -55,7 +55,7 @@ class m extends(r = a.PureComponent) {
             readOnly: !0,
             "aria-labelledby": u,
             autoFocus: a,
-            spellCheck: s,
+            spellCheck: o,
             placeholder: c
         })
     }
@@ -65,7 +65,7 @@ class m extends(r = a.PureComponent) {
                 mode: n,
                 hideMessage: r,
                 className: a,
-                buttonLook: s,
+                buttonLook: o,
                 supportsCopy: _,
                 disabled: m
             } = this.props,
@@ -84,7 +84,7 @@ class m extends(r = a.PureComponent) {
             focusTarget: this.inputRef,
             ringTarget: this.containerRef,
             children: (0, i.jsx)("div", {
-                className: o()((0, d.t)(p, "copyInput", n), a),
+                className: s()((0, d.t)(p, "copyInput", n), a),
                 ref: this.containerRef,
                 children: (0, i.jsxs)(u.A, {
                     className: p.layout,
@@ -106,7 +106,7 @@ class m extends(r = a.PureComponent) {
                             onClick: this.handleButtonClick,
                             size: l.lO.MIN,
                             color: e,
-                            look: s,
+                            look: o,
                             disabled: m,
                             children: t
                         })

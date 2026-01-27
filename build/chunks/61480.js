@@ -2,19 +2,19 @@
 /** chunk id: 61480, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => o
+    l: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(825638);
-let s = () => (0, r.jsx)("div", {
+let o = () => (0, r.jsx)("div", {
         style: {
             background: "rgba(255, 255, 255, 0.6)",
             height: 120
         }
     }),
-    o = {
+    s = {
         title: "Section",
         stories: [{
             name: "Section",
@@ -36,7 +36,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         }), (0, r.jsx)("div", {
                             style: {
@@ -45,7 +45,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         }), (0, r.jsx)("div", {
                             style: {
@@ -54,7 +54,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         }), (0, r.jsx)("div", {
                             style: {
@@ -63,7 +63,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         }), (0, r.jsx)("div", {
                             style: {
@@ -72,7 +72,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         }), (0, r.jsx)("div", {
                             style: {
@@ -81,7 +81,7 @@ let s = () => (0, r.jsx)("div", {
                             children: (0, r.jsx)(a.A, {
                                 verticalMargin: t,
                                 padding: n,
-                                children: (0, r.jsx)(s, {})
+                                children: (0, r.jsx)(o, {})
                             })
                         })]
                     })]

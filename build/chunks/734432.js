@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(439372),
     a = n(626584),
-    s = n(616356),
-    o = n(309010),
+    o = n(616356),
+    s = n(309010),
     l = n(977997),
     c = n(487329),
     u = n(374473),
@@ -63,9 +63,9 @@ class b extends i.A {
     updateActiveErrors() {
         var e, t;
         if (__OVERLAY__) return;
-        let n = null != (e = o.A.getVoiceChannelId()) ? e : null,
+        let n = null != (e = s.A.getVoiceChannelId()) ? e : null,
             i = null != n && null != (t = l.A.getVoiceStateForChannel(n)) ? t : null,
-            a = s.A.getAllActiveStreams(),
+            a = o.A.getAllActiveStreams(),
             u = new Map;
         for (let e of Object.values(f.J)) {
             let t = e.getActiveErrors({

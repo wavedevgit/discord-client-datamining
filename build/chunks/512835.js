@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(674966),
     a = n(312006),
-    s = n(105530),
-    o = n(288737),
+    o = n(105530),
+    s = n(288737),
     l = n(961350),
     c = n(734057),
     u = n(430452),
@@ -39,7 +39,7 @@ function E(e, t) {
 }
 
 function y(e) {
-    return (0, s.eY)(e) === s.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
+    return (0, o.eY)(e) === o.zF.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK
 }
 class b extends r.A {
     handleVoiceChannelSelect(e) {
@@ -62,7 +62,7 @@ class b extends r.A {
                     m = n, g();
                     return
                 }
-                y(new o.A(e)) && (m = n, g())
+                y(new s.A(e)) && (m = n, g())
             }
         })
     }

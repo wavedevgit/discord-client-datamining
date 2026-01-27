@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(732955),
+    o = n.n(a),
+    s = n(732955),
     l = n(397927),
     c = n(626584),
     u = n(812745),
@@ -136,7 +136,7 @@ class S extends i.Component {
             iconType: t,
             buttonText: n
         } = e, i = O(e, ["iconType", "buttonText"]);
-        return (0, r.jsx)(o.$nd, b({
+        return (0, r.jsx)(s.$nd, b({
             fullWidth: !0,
             onClick: this.attemptPaymentRequest,
             text: n,
@@ -318,7 +318,7 @@ class C extends S {
             children: [(0, r.jsx)(u.Ay, {
                 type: u.Ay.Types.APPLE,
                 size: u.y3.MEDIUM,
-                className: s()(E.rS, E.X6)
+                className: o()(E.rS, E.X6)
             }), (0, r.jsx)(l.Text, {
                 variant: "text-md/medium",
                 className: E.yW,

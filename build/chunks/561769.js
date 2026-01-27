@@ -13,8 +13,8 @@ n.d(t, {
 var r = n(64700),
     i = n(575593),
     a = n(417597),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(954571),
     c = n(590180),
     u = n(161918),
@@ -59,7 +59,7 @@ let O = (e, t, n) => r => {
             p = null == l ? void 0 : l.tab,
             {
                 analyticsLocations: _
-            } = (0, o.Ay)(s.A.COLLECTIBLES_SHOP_CARD),
+            } = (0, s.Ay)(o.A.COLLECTIBLES_SHOP_CARD),
             h = (0, a.bG)([c.A], () => c.A.getCategoryForProduct(e.skuId)),
             m = r.useRef(null);
         return r.useCallback(t => r => {

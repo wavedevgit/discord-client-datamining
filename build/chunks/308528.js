@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(582754),
     a = n(73153),
-    s = n(883600),
-    o = n(343328),
+    o = n(883600),
+    s = n(343328),
     l = n(568185),
     c = n(250953),
     u = n(700241),
@@ -69,13 +69,13 @@ let T = {
             joinCall: n = !1,
             joinCallVideo: i = !1,
             location: a,
-            onBeforeTransition: s,
-            navigateToChannel: o = !0
+            onBeforeTransition: o,
+            navigateToChannel: s = !0
         } = e, l = this._getRecipients(t), c = e => {
             n && E.A.call(e.id, i, !0, e.isDM() ? e.getRecipientId() : null)
         };
         if (1 === l.length) {
-            let [e] = l, t = this._openCachedDMChannel(e, s, o);
+            let [e] = l, t = this._openCachedDMChannel(e, o, s);
             if (null != t) return c(t), Promise.resolve(t.id)
         }
         try {
@@ -91,8 +91,8 @@ let T = {
                 retries: 3,
                 rejectWithError: !1
             });
-            if (o) {
-                null == s || s();
+            if (s) {
+                null == o || o();
                 let t = this._openPrivateChannel(e.body);
                 c(t)
             }
@@ -154,8 +154,8 @@ let T = {
     closePrivateChannel(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
-        return (0, o.A)(e) && m.default.track(b.HAw.CHANGE_LOG_DM_REMOVED, {
-            last_changelog_id: s.A.latestChangelogId(),
+        return (0, s.A)(e) && m.default.track(b.HAw.CHANGE_LOG_DM_REMOVED, {
+            last_changelog_id: o.A.latestChangelogId(),
             unread_count: h.Ay.getUnreadCount(e)
         }), a.h.dispatch({
             type: "CHANNEL_DELETE",
@@ -267,33 +267,33 @@ let T = {
             m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, a), {
                 status: "success"
             }));
-            let s = null == i ? void 0 : i.getGuildId();
-            return null == s || (null == i ? void 0 : i.isThread()) || l.A.checkGuildTemplateDirty(s), n
+            let o = null == i ? void 0 : i.getGuildId();
+            return null == o || (null == i ? void 0 : i.isThread()) || l.A.checkGuildTemplateDirty(o), n
         } catch (e) {
-            var s, o;
+            var o, s;
             throw m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, a), {
                 status: "failed",
-                is_rate_limited: (null == e || null == (s = e.body) ? void 0 : s.retry_after) != null,
-                error_message: null == e || null == (o = e.body) ? void 0 : o.message
+                is_rate_limited: (null == e || null == (o = e.body) ? void 0 : o.retry_after) != null,
+                error_message: null == e || null == (s = e.body) ? void 0 : s.message
             })), e
         }
     },
     async updateChannel(e, t, n) {
         let i = "icon" in t,
             a = _.A.getChannel(e),
-            s = t.icon,
-            o = {
+            o = t.icon,
+            s = {
                 channel_id: e,
                 channel_type: null == a ? void 0 : a.type,
                 old_icon_set: (null == a ? void 0 : a.icon) != null,
-                new_icon_set: null != s,
+                new_icon_set: null != o,
                 location: n
             };
-        i && m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, o), {
+        i && m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, s), {
             status: "initiated"
         }));
         try {
-            let s = await r.Bo.patch({
+            let o = await r.Bo.patch({
                     context: {
                         location: n
                     },
@@ -303,13 +303,13 @@ let T = {
                     rejectWithError: !0
                 }),
                 c = null == a ? void 0 : a.getGuildId();
-            return null == c || (null == a ? void 0 : a.isThread()) || l.A.checkGuildTemplateDirty(c), i && m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, o), {
+            return null == c || (null == a ? void 0 : a.isThread()) || l.A.checkGuildTemplateDirty(c), i && m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, s), {
                 status: "success"
-            })), s
+            })), o
         } catch (e) {
             if (i) {
                 var c, u;
-                m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, o), {
+                m.default.track(b.HAw.CHANNEL_ICON_EDIT_PROGRESSED, S(A({}, s), {
                     status: "failed",
                     is_rate_limited: (null == e || null == (c = e.body) ? void 0 : c.retry_after) != null,
                     error_message: null == e || null == (u = e.body) ? void 0 : u.message
@@ -348,13 +348,13 @@ let T = {
             permission_overwrites: []
         };
         null != n && (a.parent_id = n), null != i && (a.topic = i);
-        let s = await r.Bo.post({
+        let o = await r.Bo.post({
             url: b.Rsh.GUILD_CHANNELS(e),
             body: a,
             oldFormErrors: !0,
             rejectWithError: !1
         });
-        return l.A.checkGuildTemplateDirty(e), s
+        return l.A.checkGuildTemplateDirty(e), o
     },
     fetchChannel: async e => (await r.Bo.get({
         url: b.Rsh.CHANNEL(e),

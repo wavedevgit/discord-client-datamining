@@ -1,52 +1,74 @@
-/** Chunk was on web.js **/
-/** chunk id: 298305, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => _
+/** Chunk was on 2292 **/
+/** chunk id: 298305, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => x
 });
-var r = n(627968);
-n(64700);
-var i = n(311907),
-    a = n(397927),
-    s = n(775602),
-    o = n(920064),
-    l = n(287809),
-    c = n(504721),
-    u = n(513653),
-    d = n(180391);
-let f = 1.5,
-    p = .321;
+var n = r(627968);
+r(64700);
+var i = r(311907),
+    l = r(397927),
+    a = r(775602),
+    s = r(920064),
+    o = r(674658),
+    c = r(898461),
+    u = r(287809),
+    d = r(504721),
+    m = r(513653),
+    p = r(180391);
 
-function _(e) {
+function g(e) {
+    let {
+        skuId: t,
+        size: r,
+        src: d,
+        className: m
+    } = e, p = (0, i.bG)([u.default], () => u.default.getCurrentUser()), g = (0, i.bG)([a.A], () => a.A.useReducedMotion), {
+        product: x,
+        isFetching: C
+    } = (0, o.q)(t);
+    if (C || null == x) return (0, n.jsx)(l.y$y, {
+        type: l.tVU.PULSING_ELLIPSIS
+    });
+    let f = x.items[0];
+    if (null == f || !(0, c.T)(f)) return null;
+    let T = (0, s.A)(f.asset, r, !g);
+    return (0, n.jsx)(l.JsQ, {
+        "aria-label": null == p ? void 0 : p.username,
+        size: r,
+        className: m,
+        src: null != d ? d : null == p ? void 0 : p.getAvatarURL(void 0, (0, l.FT9)(r), !g),
+        avatarDecoration: T
+    })
+}
+
+function x(e) {
     let {
         maxRewardImageSrc: t,
-        claimableRewards: n,
-        size: _,
-        imageScaling: h = f
-    } = e, m = (0, i.bG)([l.default], () => l.default.getCurrentUser()), g = (0, i.bG)([s.A], () => s.A.useReducedMotion), E = (0, a.FT9)(_), y = {
-        height: E * h
-    };
-    return n.length > 0 ? (0, r.jsx)("img", {
+        claimableRewards: r,
+        size: s,
+        imageScaling: o = 1.5
+    } = e, c = (0, i.bG)([u.default], () => u.default.getCurrentUser()), x = (0, i.bG)([a.A], () => a.A.useReducedMotion), C = (0, l.FT9)(s);
+    return r.length > 0 ? (0, n.jsx)("img", {
         alt: "",
         src: t,
-        style: y
-    }) : (0, r.jsxs)("div", {
-        className: c.kL,
-        children: [(1 === n.length || 2 === n.length) && (0, r.jsx)(a.JsQ, {
-            "aria-label": null == m ? void 0 : m.username,
-            size: _,
-            className: c.M8,
-            src: 1 === n.length ? null == m ? void 0 : m.getAvatarURL(void 0, (0, a.FT9)(_), !g) : d,
-            avatarDecoration: (0, o.A)(n[0].assetId, _, !g)
-        }), 2 === n.length && (0, r.jsx)("div", {
+        style: {
+            height: C * o
+        }
+    }) : (0, n.jsxs)("div", {
+        className: d.kL,
+        children: [(1 === r.length || 2 === r.length) && (0, n.jsx)(g, {
+            skuId: r[0],
+            size: s,
+            className: d.M8,
+            src: 1 === r.length ? null == c ? void 0 : c.getAvatarURL(void 0, (0, l.FT9)(s), !x) : p
+        }), 2 === r.length && (0, n.jsx)("div", {
             style: {
-                marginRight: -Math.round(E * p)
+                marginRight: -Math.round(.321 * C)
             },
-            children: (0, r.jsx)(a.JsQ, {
-                "aria-label": null == m ? void 0 : m.username,
-                size: _,
-                src: u,
-                avatarDecoration: (0, o.A)(n[1].assetId, _, !g)
+            children: (0, n.jsx)(g, {
+                skuId: r[1],
+                size: s,
+                src: m
             })
         })]
     })

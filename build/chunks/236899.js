@@ -3,11 +3,11 @@
 "use strict";
 let r;
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(896048), n(747238), n(812715), n(638769);
 var i, a = n(311907),
-    s = n(73153),
-    o = n(49463),
+    o = n(73153),
+    s = n(49463),
     l = n(215619),
     c = n(968011),
     u = n(369487);
@@ -84,7 +84,7 @@ function S() {
 }
 
 function T() {
-    return !!o.A.hasLoadedExperiments && u.R.getCurrentConfig({
+    return !!s.A.hasLoadedExperiments && u.R.getCurrentConfig({
         location: "WordFrequencyStore"
     }, {
         autoTrackExposure: !1
@@ -113,7 +113,7 @@ let w = e => {
     };
 class P extends(i = a.Ay.PersistedStore) {
     initialize(e) {
-        if (this.waitFor(o.A), null != e) {
+        if (this.waitFor(s.A), null != e) {
             var t;
             if (e.wordSketchData) try {
                 e.wordSketchData && (r = l.M.fromJSON(e.wordSketchData))
@@ -146,9 +146,9 @@ class P extends(i = a.Ay.PersistedStore) {
     }
 }
 d(P, "displayName", "WordFrequencyStore"), d(P, "persistKey", "WordFrequencyStore");
-let D = new P(s.h, {
+let D = new P(o.h, {
         LOAD_MESSAGES_SUCCESS: w,
         MESSAGE_CREATE: R,
         DEV_TOOLS_WORD_FREQUENCY_RESET: C
     }),
-    x = D
+    L = D

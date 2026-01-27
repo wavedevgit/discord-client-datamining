@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(964892),
+    o = n.n(a),
+    s = n(964892),
     l = n(208756),
     c = n(135564),
     u = n(916845),
@@ -119,20 +119,20 @@ function b(e) {
     i.useEffect(() => {
         null != v && D(v)
     }, [v]);
-    let x = i.useMemo(() => {
+    let L = i.useMemo(() => {
             var e;
             return {
                 align: null != (e = null == A ? void 0 : A.align) ? e : "center",
                 customOffset: null == A ? void 0 : A.customOffset
             }
         }, [A]),
-        L = i.useCallback(() => {
+        x = i.useCallback(() => {
             null == O || O()
         }, [O]),
-        j = i.useCallback(e => {
+        M = i.useCallback(e => {
             null == O || O(e)
         }, [O]),
-        M = i.useCallback(e => {
+        j = i.useCallback(e => {
             D(e)
         }, []),
         k = T ? f.caretHoverable : void 0,
@@ -141,10 +141,10 @@ function b(e) {
             shouldShow: R.shouldShow,
             hasVideo: R.hasVideo,
             position: P,
-            caretConfig: x,
-            onRequestClose: L,
+            caretConfig: L,
+            onRequestClose: x,
             gradientColor: b,
-            onPositionChange: M,
+            onPositionChange: j,
             onNudgeChange: w,
             scrollBehavior: I,
             modal: C,
@@ -157,14 +157,14 @@ function b(e) {
         } : {
             alignmentStrategy: "trigger-center"
         });
-    return (0, r.jsx)(o.x, m(_({}, U), {
+    return (0, r.jsx)(s.x, m(_({}, U), {
         children: (0, r.jsxs)("div", {
             "data-mana-component": "popover",
             children: [S && (0, r.jsx)(u.q, {
-                onClick: j,
+                onClick: M,
                 variant: null != b ? "color-mix" : void 0
             }), null != p && (0, r.jsx)("div", {
-                className: s()(f.graphic, {
+                className: o()(f.graphic, {
                     [f["graphic--".concat(h)]]: null != h
                 }),
                 children: (0, r.jsx)(d.vYh, m(_({}, p), {
@@ -176,7 +176,7 @@ function b(e) {
             }), null != E && E.length > 0 ? (0, r.jsx)(l.Z, {
                 actions: E,
                 className: f.actionBar
-            }) : null, null != x && (0, r.jsx)(c.F, {
+            }) : null, null != L && (0, r.jsx)(c.F, {
                 className: k
             })]
         })

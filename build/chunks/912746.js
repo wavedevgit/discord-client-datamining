@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 912746, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(888675),
-    s = n(985018),
-    o = n(557724);
+    l = n(888675),
+    a = n(985018),
+    s = n(557724);
 
-function l(e) {
+function o(e) {
     let {
         message: t,
         compact: n
     } = e;
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         iconNode: (0, r.jsx)(i.ysw, {
             size: "md",
             color: "currentColor",
-            className: o.K
+            className: s.K
         }),
         timestamp: t.timestamp,
         compact: n,
-        children: s.intl.string(s.t.OCs36J)
+        children: a.intl.string(a.t.OCs36J)
     })
 }

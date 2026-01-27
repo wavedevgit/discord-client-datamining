@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 653277, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 653277, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(812415);
-e.exports = function(e, t) {
-    e._latestEditorState.getSelection().isCollapsed() ? t.preventDefault() : e.setClipboard(r(e._latestEditorState))
+var n = r(812415);
+t.exports = function(t, e) {
+    t._latestEditorState.getSelection().isCollapsed() ? e.preventDefault() : t.setClipboard(n(t._latestEditorState))
 }

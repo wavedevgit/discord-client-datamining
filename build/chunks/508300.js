@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(860511),
     a = n(230606),
-    s = n(231977),
-    o = n(4940).f,
+    o = n(231977),
+    s = n(4940).f,
     l = n(210140),
     c = n(61132),
     u = n(486724),
@@ -24,7 +24,7 @@ var r = n(557939),
             n = d(e < 2 ? void 0 : arguments[1], "Error"),
             r = new E(t, n),
             i = new g(t);
-        return i.name = m, o(r, "stack", s(1, p(i.stack, 1))), u(r, this, y), r
+        return i.name = m, s(r, "stack", o(1, p(i.stack, 1))), u(r, this, y), r
     },
     b = y.prototype = E.prototype,
     O = "stack" in new g(m),
@@ -42,10 +42,10 @@ r({
 var T = a(m),
     C = T.prototype;
 if (C.constructor !== T) {
-    for (var N in h || o(C, "constructor", s(1, T)), f)
+    for (var N in h || s(C, "constructor", o(1, T)), f)
         if (l(f, N)) {
             var w = f[N],
                 R = w.s;
-            l(T, R) || o(T, R, s(6, w.c))
+            l(T, R) || s(T, R, o(6, w.c))
         }
 }

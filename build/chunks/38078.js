@@ -2,18 +2,18 @@
 /** chunk id: 38078, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(147426),
     i = n(374372),
     a = n(355418);
-let s = `(?:(?:приблизно|орієнтовно)\\s*(?:~\\s*)?)?(${r.Pl})${r.pW.rightBoundary}`;
-class o extends a.c {
+let o = `(?:(?:приблизно|орієнтовно)\\s*(?:~\\s*)?)?(${r.Pl})${r.pW.rightBoundary}`;
+class s extends a.c {
     patternLeftBoundary() {
         return r.pW.leftBoundary
     }
     innerPattern(e) {
-        return e.option.forwardDate ? RegExp(s, "i") : RegExp(`(?:протягом|на протязі|протягом|упродовж|впродовж)\\s*${s}`, r.pW.flags)
+        return e.option.forwardDate ? RegExp(o, "i") : RegExp(`(?:протягом|на протязі|протягом|упродовж|впродовж)\\s*${o}`, r.pW.flags)
     }
     innerExtract(e, t) {
         let n = (0, r.E9)(t[1]);

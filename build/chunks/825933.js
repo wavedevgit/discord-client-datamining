@@ -3,7 +3,7 @@
 var r = n(220350),
     i = 1,
     a = Object.prototype.hasOwnProperty;
-e.exports = function(e, t, n, s, o, l) {
+e.exports = function(e, t, n, o, s, l) {
     var c = n & i,
         u = r(e),
         d = u.length;
@@ -20,8 +20,8 @@ e.exports = function(e, t, n, s, o, l) {
     for (var g = c; ++f < d;) {
         var E = e[p = u[f]],
             y = t[p];
-        if (s) var b = c ? s(y, E, p, t, e, l) : s(E, y, p, e, t, l);
-        if (!(void 0 === b ? E === y || o(E, y, n, s, l) : b)) {
+        if (o) var b = c ? o(y, E, p, t, e, l) : o(E, y, p, e, t, l);
+        if (!(void 0 === b ? E === y || s(E, y, n, o, l) : b)) {
             m = !1;
             break
         }

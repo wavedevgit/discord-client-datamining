@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(311907),
     i = n(506774),
     a = n(401843),
-    s = n(250105),
-    o = n(217222),
+    o = n(250105),
+    s = n(217222),
     l = n(128319),
     c = n(929921),
     u = n(753070);
@@ -60,7 +60,7 @@ let h = {
     },
     m = "GoLiveAutoQualityMigrationVersion",
     g = 1,
-    E = (0, s.Ay)({
+    E = (0, o.Ay)({
         name: "2025-10-go-live-auto-quality",
         kind: "user",
         defaultConfig: h,
@@ -95,7 +95,7 @@ function b(e) {
     let {
         location: t
     } = e;
-    return (0, r.bG)([o.A], () => y({
+    return (0, r.bG)([s.A], () => y({
         location: t
     }))
 }

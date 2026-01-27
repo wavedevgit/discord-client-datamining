@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(846293),
-    o = n(415951),
+    o = n(846293),
+    s = n(415951),
     l = n(849841),
     c = n(976860),
     u = n(345942),
@@ -23,8 +23,8 @@ function m(e) {
     let {
         guildId: t,
         ctaType: n,
-        submitting: s,
-        onGoToGuild: o,
+        submitting: o,
+        onGoToGuild: s,
         onAcceptInvite: u,
         onStartApplication: f,
         onComplete: m
@@ -41,7 +41,7 @@ function m(e) {
         switch (n) {
             case p.SP.IS_MEMBER:
                 return {
-                    text: h.intl.string(h.t.IRoQXr), onClick: o
+                    text: h.intl.string(h.t.IRoQXr), onClick: s
                 };
             case p.SP.ADOPT_TAG:
                 return {
@@ -72,7 +72,7 @@ function m(e) {
                     text: null, onClick: null
                 }
         }
-    }, [n, b, O, u, o, f, y]), I = i.useCallback(async e => {
+    }, [n, b, O, u, s, f, y]), I = i.useCallback(async e => {
         e.stopPropagation(), E(!0);
         try {
             await (null == A ? void 0 : A())
@@ -85,7 +85,7 @@ function m(e) {
         size: "sm",
         text: v,
         fullWidth: !0,
-        loading: g || s,
+        loading: g || o,
         onClick: I
     })
 }
@@ -99,14 +99,14 @@ function g(e) {
         validInviteKey: l,
         ctaType: c
     } = (0, p.Ay)(t), d = i.useCallback(() => (0, u.u)(a), [a]), _ = i.useCallback(() => {
-        null != l && s.Ay.acceptInvite({
+        null != l && o.Ay.acceptInvite({
             inviteKey: l,
             context: {
                 location: "guild_profile"
             }
         })
     }, [l]), h = i.useCallback(() => {
-        t.visibility !== f.n.PUBLIC_WITH_RECRUITMENT && null != l ? _() : o.A.openMemberVerificationModal(a, void 0, l)
+        t.visibility !== f.n.PUBLIC_WITH_RECRUITMENT && null != l ? _() : s.A.openMemberVerificationModal(a, void 0, l)
     }, [_, a, t.visibility, l]);
     return null == c ? null : (0, r.jsx)(m, {
         guildId: a,

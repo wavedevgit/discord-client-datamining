@@ -10,7 +10,7 @@ var r = n(926675),
     i = n(540185),
     a = n(735321);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,10 +18,10 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = [i.x.CURRENT_GAMES, i.x.FAVORITE_GAMES, i.x.WANT_TO_PLAY_GAMES, i.x.PLAYED_GAMES];
+let s = [i.x.CURRENT_GAMES, i.x.FAVORITE_GAMES, i.x.WANT_TO_PLAY_GAMES, i.x.PLAYED_GAMES];
 
 function l(e) {
-    return o.includes(e)
+    return s.includes(e)
 }
 
 function c(e) {
@@ -69,6 +69,6 @@ class u {
         type: t,
         games: n
     }) {
-        s(this, "id", void 0), s(this, "type", void 0), s(this, "games", void 0), this.id = e, this.type = t, this.games = n
+        o(this, "id", void 0), o(this, "type", void 0), o(this, "games", void 0), this.id = e, this.type = t, this.games = n
     }
 }

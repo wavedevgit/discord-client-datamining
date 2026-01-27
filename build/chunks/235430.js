@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(105330),
-    o = n(961350),
+    o = n(105330),
+    s = n(961350),
     l = n(559908),
     c = n(620141),
     u = n(224964),
@@ -45,9 +45,9 @@ function g(e) {
         editorHeight: r,
         textValue: c,
         channelId: d
-    } = e, p = i.useRef(c), _ = (0, s.l)({
+    } = e, p = i.useRef(c), _ = (0, o.l)({
         editorHeight: r
-    }), g = (0, u.A)(), E = (0, a.bG)([l.Ay, o.default], () => l.Ay.isComboing(o.default.getId(), d)), y = null != (t = null == _ ? void 0 : _.left) ? t : 0, b = (null != (n = null == _ ? void 0 : _.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
+    }), g = (0, u.A)(), E = (0, a.bG)([l.Ay, s.default], () => l.Ay.isComboing(s.default.getId(), d)), y = null != (t = null == _ ? void 0 : _.left) ? t : 0, b = (null != (n = null == _ ? void 0 : _.top) ? n : 0) - h, O = 0 === c.length, v = i.useMemo(() => Math.random() < m, [O]);
     return i.useEffect(() => {
         0 !== c.length && c !== p.current && E && (g.fire(y, b, v ? {
             sprite: f.dR

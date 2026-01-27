@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 982237, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => s
 });
 var r = n(627968),
     i = n(307973),
-    a = n(605061);
+    l = n(605061);
 let s = e => {
     let {
         isMotionReduced: t,
@@ -15,10 +14,10 @@ let s = e => {
     return (0, r.jsx)(i.A, {
         isMotionReduced: t,
         containerVisibilityPercentage: n,
-        hammerContainerClassName: a.Gj,
-        keyContainerClassName: a.FV,
-        hammerAssetClassName: a.Wv,
-        keyAssetClassName: a.rs,
+        hammerContainerClassName: l.Gj,
+        keyContainerClassName: l.FV,
+        hammerAssetClassName: l.Wv,
+        keyAssetClassName: l.rs,
         animationSpeedScale: 2
     })
 }

@@ -1,15 +1,15 @@
-/** Chunk was on web.js **/
-/** chunk id: 762710, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 762710, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(797686);
-e.exports = function(e, t) {
-    var n = [];
-    return e.findEntityRanges(function(e) {
-        return e.getEntity() === t
-    }, function(e, t) {
-        n.push({
-            start: e,
-            end: t
+var n = r(797686);
+t.exports = function(t, e) {
+    var r = [];
+    return t.findEntityRanges(function(t) {
+        return t.getEntity() === e
+    }, function(t, e) {
+        r.push({
+            start: t,
+            end: e
         })
-    }), n.length || r(!1), n
+    }), r.length || n(!1), r
 }

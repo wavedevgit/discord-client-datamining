@@ -12,16 +12,16 @@ function r(e, t, n) {
 }
 n.d(t, {
     LG: () => u,
-    MS: () => s,
+    MS: () => o,
     bG: () => i
 }), n(896048), n(65821);
 let i = 50035,
     a = "__root_errors";
-var s = function(e) {
+var o = function(e) {
     return e.HCAPTCHA = "hcaptcha", e.RECAPTCHA = "recaptcha", e.RECAPTCHA_ENTERPRISE = "recaptcha_enterprise", e
 }({});
 
-function o(e) {
+function s(e) {
     return e.map(e => ({
         code: "UNKNOWN",
         message: e
@@ -32,11 +32,11 @@ function l(e) {
     let t = {};
     for (let [n, r] of Object.entries(e)) {
         if ("_misc" === n) {
-            t._errors = o(r);
+            t._errors = s(r);
             continue
         }
         let e = {};
-        e._errors = o(r), t[n] = e
+        e._errors = s(r), t[n] = e
     }
     return t
 }
@@ -115,11 +115,11 @@ class u extends Error {
         const {
             message: i,
             code: a,
-            retryAfter: s,
-            errors: o,
+            retryAfter: o,
+            errors: s,
             status: l,
             captchaFields: u
         } = c(e, t);
-        super(null != i ? i : n), r(this, "code", void 0), r(this, "retryAfter", void 0), r(this, "errors", void 0), r(this, "status", void 0), r(this, "captchaFields", void 0), this.code = null != a ? a : -1, this.retryAfter = s, this.errors = o, this.status = l, this.captchaFields = null != u ? u : {}, this.cause = e
+        super(null != i ? i : n), r(this, "code", void 0), r(this, "retryAfter", void 0), r(this, "errors", void 0), r(this, "status", void 0), r(this, "captchaFields", void 0), this.code = null != a ? a : -1, this.retryAfter = o, this.errors = s, this.status = l, this.captchaFields = null != u ? u : {}, this.cause = e
     }
 }

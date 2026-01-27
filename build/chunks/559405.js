@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(934551),
     a = n(319354),
-    s = n(51183),
-    o = n(886019),
+    o = n(51183),
+    s = n(886019),
     l = n(358957),
     c = n(708455);
 let u = new Set([i.MagicDoorIcon.name, i.GameControllerIcon.name, i.EmbedIcon.name, i.ObjectIcon.name]),
@@ -26,10 +26,10 @@ let u = new Set([i.MagicDoorIcon.name, i.GameControllerIcon.name, i.EmbedIcon.na
             animate: p = !0,
             fallbackVariant: _ = "twemoji",
             userId: h
-        } = e, m = (0, l.e)(h, null == a ? void 0 : a.state), g = (0, o.vt)(h, a, _);
+        } = e, m = (0, l.e)(h, null == a ? void 0 : a.state), g = (0, s.vt)(h, a, _);
         if ((m[0] === c.Kk.CUSTOM || (null == g ? void 0 : g.emoji) != null) && null != a) {
             let e = null != (t = null == g ? void 0 : g.emoji) ? t : a.emoji;
-            return null != e ? (0, r.jsx)(s.A, {
+            return null != e ? (0, r.jsx)(o.A, {
                 emoji: e,
                 className: i,
                 hideTooltip: !0,

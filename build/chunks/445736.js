@@ -2,13 +2,13 @@
 /** chunk id: 445736, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Wo: () => j
+    Wo: () => M
 }), n(896048);
 var r = n(627968),
     i = n(342393),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(942340),
     c = n(211528),
     u = n(626584),
@@ -76,7 +76,7 @@ let v = new u.A("PaymentElement.web.stories"),
             elementsAppearanceOptions: e
         } = (0, l.E)();
         return (0, r.jsxs)("div", {
-            children: [(0, r.jsx)(o.Heading, {
+            children: [(0, r.jsx)(s.Heading, {
                 variant: "heading-lg/semibold",
                 className: g.tm,
                 children: "Default Options"
@@ -132,7 +132,7 @@ let v = new u.A("PaymentElement.web.stories"),
                 style: {
                     marginBottom: 16
                 },
-                children: (0, r.jsx)(o.wx6, {
+                children: (0, r.jsx)(s.wx6, {
                     type: "info",
                     children: "If you don't see the Payment Element components, that means you must be added to the correct experiment to see this story. Reach out to a Payments Engineer to get access."
                 })
@@ -141,7 +141,7 @@ let v = new u.A("PaymentElement.web.stories"),
                 children: [(0, r.jsx)(_.p, {
                     stepConfigs: [C(E)],
                     children: (0, r.jsx)("div", {
-                        className: s()(m.o6, {
+                        className: o()(m.o6, {
                             [m.X1]: "joined-payment-address-elements" === E
                         }),
                         children: (0, r.jsxs)(i.Elements, {
@@ -183,7 +183,7 @@ let v = new u.A("PaymentElement.web.stories"),
     D = e => (0, r.jsx)(w, O(y({}, e), {
         storyType: "stripe-address-element"
     })),
-    x = {
+    L = {
         theme: {
             label: "Theme",
             type: "select",
@@ -214,23 +214,23 @@ let v = new u.A("PaymentElement.web.stories"),
             defaultValue: "#00000014"
         }
     },
-    L = {
+    x = {
         name: "Joined Payment + Address",
         id: "joined-payment-address-elements",
         component: R,
-        controls: y({}, x)
+        controls: y({}, L)
     },
-    j = {
+    M = {
         title: "Payment Elements",
         stories: [{
             name: "Stripe Payment Element",
             id: "stripe-payment-element",
             component: P,
-            controls: y({}, x)
+            controls: y({}, L)
         }, {
             name: "Stripe Address Element",
             id: "stripe-address-element",
             component: D,
-            controls: y({}, x)
-        }, L]
+            controls: y({}, L)
+        }, x]
     }

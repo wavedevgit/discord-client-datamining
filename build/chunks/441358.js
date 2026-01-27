@@ -1,7 +1,7 @@
 /** Chunk was on 35894 **/
 /** chunk id: 441358, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => D
+    default: () => D
 }), n(896048), n(733351);
 var r = n(627968),
     l = n(64700),
@@ -15,8 +15,8 @@ var r = n(627968),
     C = n(397927),
     m = n(71393),
     p = n(351906),
-    b = n(509402),
-    f = n(282054),
+    f = n(509402),
+    b = n(282054),
     j = n(266047),
     g = n(221950),
     h = n(11541),
@@ -110,7 +110,7 @@ function S(e) {
                     width: t
                 });
             case h.UP.MANUAL_MEMBER_VERIFICATION:
-                return (0, r.jsx)(b.A, {
+                return (0, r.jsx)(f.A, {
                     className: v.Kk,
                     height: t,
                     width: t
@@ -147,7 +147,7 @@ function D(e) {
         onClose: i
     } = e, a = (0, d.bG)([j.A], () => j.A.getSearchStateByGuildId(n), [n], u()), {
         inviteCodes: c
-    } = (0, x.N)(n), b = (0, d.bG)([m.A], () => m.A.getGuild(n)), D = null != (t = null == b ? void 0 : b.vanityURLCode) ? t : null, [N, L] = l.useState(!1), {
+    } = (0, x.N)(n), f = (0, d.bG)([m.A], () => m.A.getGuild(n)), D = null != (t = null == f ? void 0 : f.vanityURLCode) ? t : null, [N, L] = l.useState(!1), {
         selectedSourceInviteCode: P,
         selectedJoinSourceType: R
     } = a, V = null != R && R !== h.UP.UNSPECIFIED, E = (0, d.bG)([p.A], () => p.A.hideInstantInvites, []);
@@ -185,7 +185,7 @@ function D(e) {
             }), M(e)
         }, [n, M]);
     return (0, r.jsx)(C.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-needs-migration": !0,
         navId: "members-table-join-method-menu",
         onClose: () => {
             i()
@@ -212,7 +212,7 @@ function D(e) {
                 }))
             }), A.map(e => (0, r.jsx)(C.iDA, {
                 id: "join-source-type-option-".concat(e),
-                label: t => (0, r.jsx)(S, w(H({}, t), {
+                void_label: t => (0, r.jsx)(S, w(H({}, t), {
                     type: e,
                     vanityUrl: D,
                     text: (0, h.CI)(e, D, E)
@@ -240,7 +240,7 @@ function D(e) {
                 group: "join-source-type-options"
             }, "join-source-type-option-all"), c.map(e => (0, r.jsx)(C.iDA, {
                 id: "join-source-type-option-".concat(e),
-                label: t => (0, r.jsx)(S, w(H({}, t), {
+                void_label: t => (0, r.jsx)(S, w(H({}, t), {
                     type: h.UP.INVITE,
                     vanityUrl: D,
                     text: e
@@ -271,7 +271,7 @@ function D(e) {
                                 vanityUrl: D
                             }))
                         }) : null]
-                    }), V ? (0, r.jsx)(f.A, {
+                    }), V ? (0, r.jsx)(b.A, {
                         background: v.__invalid_radio,
                         foreground: v.QE,
                         width: 16,

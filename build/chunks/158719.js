@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     UR: () => i.U,
-    _D: () => s,
+    _D: () => o,
     oT: () => i.o
 });
 var r = n(945810),
@@ -21,7 +21,7 @@ let a = (0, r.mj)({
     }
 });
 
-function s(e) {
+function o(e) {
     return a.useConfig({
         location: e
     }).enableDesktopJSONGatewayEncoding

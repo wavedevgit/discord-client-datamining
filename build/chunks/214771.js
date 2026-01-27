@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(937724),
-    s = n(626584),
-    o = n(967198),
+    o = n(626584),
+    s = n(967198),
     l = n(927813),
     c = n(723176);
 
@@ -20,7 +20,7 @@ function u(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let d = new s.A("NonGuildVersions");
+let d = new o.A("NonGuildVersions");
 class f {
     async getCommittedVersions() {
         try {
@@ -44,10 +44,10 @@ class f {
                 CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
                 BACKGROUND_SYNC: (e, t) => this.handleConnectionOpen(e, t)
             }), !(0, a.O)()) return;
-        o.A.addChangeListener(i().throttle(() => {
+        s.A.addChangeListener(i().throttle(() => {
             var e;
             null == (e = c.A.database()) || e.transaction(e => {
-                let t = o.A.getGuildId();
+                let t = s.A.getGuildId();
                 null == t || isNaN(Number(t)) ? c.A.nonGuildVersionsTransaction(e).delete("initial_guild_id") : c.A.nonGuildVersionsTransaction(e).put({
                     id: "initial_guild_id",
                     versionString: t

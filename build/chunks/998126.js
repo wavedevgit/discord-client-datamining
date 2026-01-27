@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 998126, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var i = n(502060),
-    a = n(85845),
+    l = n(85845),
     s = n(531525);
 
-function o() {
+function a() {
     return (0, r.jsx)(i.A, {
         webSetting: s.H.VOICE_AND_VIDEO_SOUNDS,
-        children: (0, r.jsx)(a.A, {})
+        children: (0, r.jsx)(l.A, {})
     })
 }

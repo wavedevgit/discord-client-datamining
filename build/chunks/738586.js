@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(607399),
     i = n(499979),
     a = n(626584),
-    s = n(264644),
-    o = n(927813),
+    o = n(264644),
+    s = n(927813),
     l = n(652215);
 
 function c(e, t, n) {
@@ -35,7 +35,7 @@ class _ {
     updateFps(e, t, n) {
         if (!this.disabled && !this.streamDisabledUsers.has(e)) {
             let r = this.calculateFps(e, t, n);
-            if (p && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.bb8.DISABLED, (0, s.A)(e, l.bb8.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.bb8.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.bb8.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, s.A)(e, l.bb8.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = void 0, this.tryReenableQueue()))
+            if (p && this.logger.info("frames=".concat(t, ", timestamp=").concat(n, " fps=").concat(r)), !(r < 0) && Number.isFinite(r)) this.perUserFpsWindow[e].push(r), this.perUserFpsWindow[e].length < this.windowLength || (this.perUserFpsWindow[e].length > this.windowLength && this.perUserFpsWindow[e].shift(), this.perUserFpsWindow[e].filter(e => e < this.fpsThreshold).length >= this.fpsWindowBorderlineCount ? (this.logger.info("".concat(e, ": detected poor network quality, turning off video")), this.streamDisabledUsers.add(e), this.currentVideoAutoToggleState[e] = l.bb8.DISABLED, (0, o.A)(e, l.bb8.DISABLED), this.startReenableBackoffTimer(e)) : this.currentVideoAutoToggleState[e] === l.bb8.AUTO_PROBING && (this.currentVideoAutoToggleState[e] = l.bb8.AUTO_ENABLED, this.logger.info("acceptable conditions reached, will reset and send a AUTO_ENABLED for user ".concat(e)), (0, o.A)(e, l.bb8.AUTO_ENABLED)), this.probingUserId === e && (this.probingUserId = void 0, this.tryReenableQueue()))
         }
     }
     startReenableBackoffTimer(e) {
@@ -49,7 +49,7 @@ class _ {
             lastBackoffTime: (0, i.tB)(),
             expBackoffFactor: n
         };
-        let r = n * this.backoffTimeSec * o.A.Millis.SECOND;
+        let r = n * this.backoffTimeSec * s.A.Millis.SECOND;
         this.logger.info("starting backoff timer with time = ".concat(r, " milliseconds")), this.timeoutIdCache[e] = setTimeout(() => {
             this.queueReenable(e)
         }, r)
@@ -62,7 +62,7 @@ class _ {
             for (let e = this.enableQueue.shift(); null != e && !this.reenableVideo(e););
     }
     reenableVideo(e) {
-        return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.tB)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = l.bb8.AUTO_PROBING, this.probingUserId = e, (0, s.A)(e, l.bb8.AUTO_PROBING), !0)
+        return e in this.perUserFpsWindow && (this.logger.info("reenableVideo called for user ".concat(e, " - time = ").concat((0, i.tB)())), this.stateCleanupBeforeEnable(e), this.currentVideoAutoToggleState[e] = l.bb8.AUTO_PROBING, this.probingUserId = e, (0, o.A)(e, l.bb8.AUTO_PROBING), !0)
     }
     elapsedSeconds(e, t) {
         return (e - t) / 1e3

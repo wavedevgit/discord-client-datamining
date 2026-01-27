@@ -2,35 +2,35 @@
 /** chunk id: 96441, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    X: () => o
+    X: () => s
 });
 var r = n(885714),
     i = n(64700),
     a = n(3388),
-    s = n(959462);
+    o = n(959462);
 
-function o(e, t, n) {
+function s(e, t, n) {
     let {
-        validationBehavior: o,
+        validationBehavior: s,
         focus: l
     } = e;
     (0, a.N)(() => {
-        if ("native" === o && (null == n ? void 0 : n.current) && !n.current.disabled) {
+        if ("native" === s && (null == n ? void 0 : n.current) && !n.current.disabled) {
             let e = t.realtimeValidation.isInvalid ? t.realtimeValidation.validationErrors.join(" ") || "Invalid value." : "";
             n.current.setCustomValidity(e), n.current.hasAttribute("title") || (n.current.title = ""), t.realtimeValidation.isInvalid || t.updateValidation(c(n.current))
         }
     });
     let d = (0, i.useRef)(!1),
-        f = (0, s.J)(() => {
+        f = (0, o.J)(() => {
             d.current || t.resetValidation()
         }),
-        p = (0, s.J)(e => {
+        p = (0, o.J)(e => {
             var i, a;
             t.displayValidation.isInvalid || t.commitValidation();
-            let s = null == n || null == (i = n.current) ? void 0 : i.form;
-            !e.defaultPrevented && n && s && u(s) === n.current && (l ? l() : null == (a = n.current) || a.focus(), (0, r.Cl)("keyboard")), e.preventDefault()
+            let o = null == n || null == (i = n.current) ? void 0 : i.form;
+            !e.defaultPrevented && n && o && u(o) === n.current && (l ? l() : null == (a = n.current) || a.focus(), (0, r.Cl)("keyboard")), e.preventDefault()
         }),
-        _ = (0, s.J)(() => {
+        _ = (0, o.J)(() => {
             t.commitValidation()
         });
     (0, i.useEffect)(() => {
@@ -43,7 +43,7 @@ function o(e, t, n) {
         }), e.addEventListener("invalid", p), e.addEventListener("change", _), null == t || t.addEventListener("reset", f), () => {
             e.removeEventListener("invalid", p), e.removeEventListener("change", _), null == t || t.removeEventListener("reset", f), t && (t.reset = r)
         }
-    }, [n, p, _, f, o])
+    }, [n, p, _, f, s])
 }
 
 function l(e) {

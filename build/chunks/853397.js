@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(239211),
     c = n(34245),
     u = n(399476),
@@ -73,7 +73,7 @@ function O(e) {
     } = (0, p.NJ)(), {
         analyticsLocations: v,
         newestAnalyticsLocation: A
-    } = (0, o.Ay)(s.A.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : void 0, S = {
+    } = (0, s.Ay)(o.A.USER_PROFILE_OVERFLOW_MENU), I = null != O && O.showGuildProfile ? n : void 0, S = {
         action: h.pt.PRESS_OPTIONS,
         icon: a.jNK,
         tooltipText: m.intl.string(m.t["UKOtz+"]),
@@ -152,7 +152,7 @@ function O(e) {
             })
         })]
     ];
-    return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(o.f5, {
+    return N.every(e => e.every(e => null == e)) ? null : (0, r.jsx)(s.f5, {
         value: v,
         children: (0, r.jsx)(a.YNO, {
             targetElementRef: g,

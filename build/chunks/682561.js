@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(65821), n(896048), n(457529), n(667532), n(747238);
 var r, i = n(837385),
     a = n.n(i),
-    s = n(415955),
-    o = n.n(s),
+    o = n(415955),
+    s = n.n(o),
     l = n(214958),
     c = n.n(l),
     u = n(118356),
@@ -41,9 +41,9 @@ class I extends f.A {
         super.destroy(e), "closed" !== this.signalingState && this.pc.close()
     }
     setCodecs(e, t, n) {
-        var r, i, a, s;
-        let o;
-        (this.audioCodec !== e || this.videoCodec !== t) && (o = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null != (r = null == o ? void 0 : o.payloadType) ? r : 0, o = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null != (i = null == o ? void 0 : o.payloadType) ? i : 0, this.rtxPayloadType = null != (a = null == o ? void 0 : o.rtxPayloadType) ? a : 0, null == (s = this.daveSessionManager) || s.updateLocalUserCodecs(e, t), this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
+        var r, i, a, o;
+        let s;
+        (this.audioCodec !== e || this.videoCodec !== t) && (s = this.codecs.find(t => t.name === e), this.audioCodec = e, this.audioPayloadType = null != (r = null == s ? void 0 : s.payloadType) ? r : 0, s = this.codecs.find(e => e.name === t), this.videoCodec = t, this.videoPayloadType = null != (i = null == s ? void 0 : s.payloadType) ? i : 0, this.rtxPayloadType = null != (a = null == s ? void 0 : s.rtxPayloadType) ? a : 0, null == (o = this.daveSessionManager) || o.updateLocalUserCodecs(e, t), this.logger.info("Renegotiating: Codecs changed"), this.handleNegotiationNeeded())
     }
     setStream(e) {
         let t = "closed" === this.iceConnectionState;
@@ -53,10 +53,10 @@ class I extends f.A {
         var r, i, a;
         if (null == (i = this.daveSessionManager) || i.createUser(e), 0 === t) return void this.logger.warn("Attempting to create user ".concat(e, " with 0 audio SSRC"));
         this.logger.info("Creating user: ".concat(e, " with audio SSRC: ").concat(t, " and video SSRCs: ").concat(null != (r = null == n ? void 0 : n.join(",")) ? r : 0));
-        let s = !1,
-            o = this.users.get(e);
-        if (null == o && (o = {}), o.audioSSRC !== t) {
-            o.audioSSRC = t, s = !0, this.unassignedStreams.audio.push({
+        let o = !1,
+            s = this.users.get(e);
+        if (null == s && (s = {}), s.audioSSRC !== t) {
+            s.audioSSRC = t, o = !0, this.unassignedStreams.audio.push({
                 cname: e,
                 ssrc: t
             });
@@ -64,11 +64,11 @@ class I extends f.A {
                 r = b + this.unassignedStreams.audio.length - n;
             this.addTransceivers("audio", "recvonly", r)
         }
-        if (this.videoSupported && void 0 !== n && (!v || void 0 === o.videoSSRC)) {
+        if (this.videoSupported && void 0 !== n && (!v || void 0 === s.videoSSRC)) {
             let t = null != n && n.length > 0 ? n[0] : 0;
             if (t > 0) {
-                if (o.videoSSRC !== t) {
-                    o.videoSSRC = t, s = !0, this.unassignedStreams.video.push({
+                if (s.videoSSRC !== t) {
+                    s.videoSSRC = t, o = !0, this.unassignedStreams.video.push({
                         cname: e,
                         ssrc: t
                     });
@@ -76,10 +76,10 @@ class I extends f.A {
                         r = O + this.unassignedStreams.video.length - n;
                     this.addTransceivers("video", "recvonly", r)
                 }
-            } else null != o.videoSSRC && (o.videoSSRC = void 0, s = !0)
+            } else null != s.videoSSRC && (s.videoSSRC = void 0, o = !0)
         }
-        if (s) {
-            this.users.set(e, o), t > 0 && this.userIdsBySsrc.set(t, e);
+        if (o) {
+            this.users.set(e, s), t > 0 && this.userIdsBySsrc.set(t, e);
             let r = null != n && n.length > 0 ? n[0] : 0;
             r > 0 && this.userIdsBySsrc.set(r, e), null == (a = this.daveSessionManager) || a.updateSsrcs(e, t, null != n ? n : []), this.logger.info("Renegotiating: User joined"), this.handleNegotiationNeeded()
         }
@@ -235,30 +235,30 @@ class I extends f.A {
                 codecs: r,
                 audioSSRC: i,
                 videoSSRC: a,
-                rtxSSRC: s
+                rtxSSRC: o
             } = (0, m.$k)(t, this.experimentFlags.has(g.fd.BROWSER_HEVC)),
-            o = (0, m.v5)(t);
+            s = (0, m.v5)(t);
         return {
             sdp: t,
             outboundStreams: n,
             codecs: r,
             audioSSRC: i,
             videoSSRC: a,
-            rtxSSRC: s,
-            extensions: o
+            rtxSSRC: o,
+            extensions: s
         }
     }
     addTransceivers(e, t, n, r) {
         let i = this.pc,
             a = i.getTransceivers().length;
-        for (let o = a; o < a + n; o++) {
-            var s;
+        for (let s = a; s < a + n; s++) {
+            var o;
             let n = {
                 direction: t
             };
             "video" === e && null != r && (n.streams = [r]);
             let a = i.addTransceiver(e, n);
-            null == (s = this.daveSessionManager) || s.setupEncodedTransformsForTransceiver(a), this.inactiveTransceivers[e].push(o.toString())
+            null == (o = this.daveSessionManager) || o.setupEncodedTransformsForTransceiver(a), this.inactiveTransceivers[e].push(s.toString())
         }
     }
     buildSSRCsFromOutboundStreams(e, t, n, r) {
@@ -267,26 +267,26 @@ class I extends f.A {
                 let {
                     mid: i,
                     type: a,
-                    direction: s
+                    direction: o
                 } = e;
                 i = String(i);
-                let o = this.assignedStreams.get(i);
-                if (null != o) {
-                    let e = r.get(o.cname),
+                let s = this.assignedStreams.get(i);
+                if (null != s) {
+                    let e = r.get(s.cname),
                         t = "audio" === a ? null == e ? void 0 : e.audioSSRC : null == e ? void 0 : e.videoSSRC;
-                    o.ssrc !== t && (this.logger.info("Deleting inactive stream for user with mid: ".concat(i, ", type: ").concat(a, ", ssrc: ").concat(o.ssrc)), o = void 0, this.assignedStreams.delete(i))
+                    s.ssrc !== t && (this.logger.info("Deleting inactive stream for user with mid: ".concat(i, ", type: ").concat(a, ", ssrc: ").concat(s.ssrc)), s = void 0, this.assignedStreams.delete(i))
                 }
                 let l = "audio" === a ? t : n,
                     c = this.inactiveTransceivers[a],
                     u = c.indexOf(i);
-                return null == o && l.length > 0 && -1 !== u && (o = l.pop(), c.splice(u, 1), this.assignedStreams.set(i, o)), null == o && (o = {
+                return null == s && l.length > 0 && -1 !== u && (s = l.pop(), c.splice(u, 1), this.assignedStreams.set(i, s)), null == s && (s = {
                     ssrc: -1,
                     cname: ""
                 }), {
-                    ssrc: o.ssrc,
-                    cname: o.cname,
+                    ssrc: s.ssrc,
+                    cname: s.cname,
                     type: a,
-                    direction: (0, m.u6)(s),
+                    direction: (0, m.u6)(o),
                     mid: i
                 }
             }),
@@ -296,14 +296,14 @@ class I extends f.A {
     }
     generateSDPAnswer(e, t, n, r) {
         var i, a;
-        let s = this.audioCodec,
-            o = this.audioPayloadType,
+        let o = this.audioCodec,
+            s = this.audioPayloadType,
             l = this.videoCodec,
             c = this.videoPayloadType,
             u = this.videoSupported && (null == (a = this.videoTransceiver) || null == (i = a.sender) ? void 0 : i.track) != null,
             d = this.rtxPayloadType,
             f = this.sdp;
-        if (null == s || null == o || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(s, ", audioPayloadType: ").concat(null == o ? "null" : o, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
+        if (null == o || null == s || null == l || null == c || null == d || null == f) throw Error("Invalid payload: audioCodec: ".concat(o, ", audioPayloadType: ").concat(null == s ? "null" : s, ", videoCodec: ").concat(l, ", videoCodecPayloadType: ").concat(null == c ? "null" : c, ", rtxPayloadType: ").concat(null == d ? "null" : d, ", sdp: ").concat(null == f ? "null" : f));
         let {
             ssrcs: p,
             remainingAudioStreams: _,
@@ -315,8 +315,8 @@ class I extends f.A {
             answer: (0, m.AK)({
                 type: "answer",
                 baseSDP: f,
-                audioCodec: s,
-                audioPayloadType: o,
+                audioCodec: o,
+                audioPayloadType: s,
                 audioBitRate: this.voiceBitrate,
                 videoCodec: l,
                 videoPayloadType: c,
@@ -333,15 +333,15 @@ class I extends f.A {
         let i = this.pc,
             {
                 answer: a,
-                remainingAudioStreams: s,
-                remainingVideoStreams: o
+                remainingAudioStreams: o,
+                remainingVideoStreams: s
             } = this.generateSDPAnswer(e, t, n, r);
         try {
             await i.setRemoteDescription(a)
         } catch (e) {
             this.logger.warn("Failed to set remote answer: ".concat(e, ", type: ").concat(a.type)), this.emit(d.yq.SdpError, "setRemoteDescription", e.message, a.type)
         }
-        this.unassignedStreams.audio.unshift(...s), this.unassignedStreams.video.unshift(...o), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = !0, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = !1, this.negotiationNeeded && this.handleNegotiationNeeded()
+        this.unassignedStreams.audio.unshift(...o), this.unassignedStreams.video.unshift(...s), (this.unassignedStreams.audio.length > 0 || this.unassignedStreams.video.length > 0) && (this.negotiationNeeded = !0, this.logger.info("Renegotiating: Streams left unassigned after negotiation - renegotiate")), this.negotiating = !1, this.negotiationNeeded && this.handleNegotiationNeeded()
     }
     setConnected() {
         this.input.reset(), this.setConnectionState(g.$I.CONNECTED), this.on(d.yq.Stats, this.handleStats), this.input.on(_.T.VoiceActivity, this.handleVoiceActivity)
@@ -355,14 +355,14 @@ class I extends f.A {
         this.negotiating = !0, this.negotiationNeeded = !1;
         let t = a()(this.unassignedStreams.audio),
             n = a()(this.unassignedStreams.video),
-            r = o()(this.users);
+            r = s()(this.users);
         this.unassignedStreams.audio = [], this.unassignedStreams.video = [];
         let i = this.pc,
-            s = await i.createOffer(this.makeOfferAnswerOptions());
+            o = await i.createOffer(this.makeOfferAnswerOptions());
         try {
-            await i.setLocalDescription(s)
+            await i.setLocalDescription(o)
         } catch (e) {
-            this.logger.warn("Failed to set local offer: ".concat(e, ", type: ").concat(s.type, ", sdp: ").concat(s.sdp)), this.emit(d.yq.SdpError, "setLocalDescription", e.message, s.type)
+            this.logger.warn("Failed to set local offer: ".concat(e, ", type: ").concat(o.type, ", sdp: ").concat(o.sdp)), this.emit(d.yq.SdpError, "setLocalDescription", e.message, o.type)
         }
         let {
             sdp: l,
@@ -428,11 +428,11 @@ class I extends f.A {
             let t = e.streams[0].id,
                 n = e.track;
             if (!/^default/.test(n.id)) {
-                var r, i, a, s;
-                let [e, o] = t.split("-");
+                var r, i, a, o;
+                let [e, s] = t.split("-");
                 this.trackUserIds[n.id] = e;
                 let l = this.users.get(e);
-                if ((null == l || null == (i = l.videoSSRC) || null == (r = i.toString) ? void 0 : r.call(i)) !== o && (null == l || null == (s = l.audioSSRC) || null == (a = s.toString) ? void 0 : a.call(s)) !== o) return void this.logger.info("Got stale ssrc ".concat(o, " for ").concat(n.kind, " track, user ID ").concat(e));
+                if ((null == l || null == (i = l.videoSSRC) || null == (r = i.toString) ? void 0 : r.call(i)) !== s && (null == l || null == (o = l.audioSSRC) || null == (a = o.toString) ? void 0 : a.call(o)) !== s) return void this.logger.info("Got stale ssrc ".concat(s, " for ").concat(n.kind, " track, user ID ").concat(e));
                 this.createOutput(e, n), n.onunmute = () => this.createOutput(e, n), n.onmute = () => {
                     var t;
                     (null == (t = this.users.get(e)) ? void 0 : t.videoSSRC) == null && this.destroyOutput(e, n)

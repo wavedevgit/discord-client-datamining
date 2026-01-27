@@ -3,8 +3,8 @@
 "use strict";
 n.d(t, {
     Br: () => a,
-    I2: () => s,
-    Ms: () => o,
+    I2: () => o,
+    Ms: () => s,
     Oy: () => i
 }), n(896048);
 var r = n(41984);
@@ -29,7 +29,7 @@ function a(e) {
     }
 }
 
-function s() {
+function o() {
     return {
         popoutOpened: !1,
         windowHandleSentToNative: !1,
@@ -42,4 +42,4 @@ function s() {
         errorMessage: null
     }
 }
-let o = new Set([r.AR.WAITING_FOR_POPOUT_OPEN, r.AR.WAITING_FOR_REACT_INITIALIZATION, r.AR.WAITING_FOR_PID_FOCUS, r.AR.WAITING_FOR_SUCCESSFUL_SHOW])
+let s = new Set([r.AR.WAITING_FOR_POPOUT_OPEN, r.AR.WAITING_FOR_REACT_INITIALIZATION, r.AR.WAITING_FOR_PID_FOCUS, r.AR.WAITING_FOR_SUCCESSFUL_SHOW])

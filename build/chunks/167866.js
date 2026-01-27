@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(793574),
     i = n(58149),
     a = n(954571),
-    s = n(486974),
-    o = n(652215);
+    o = n(486974),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -37,8 +37,8 @@ function u(e, t, n) {
         u = c({
             guild_id: e,
             target_user_id: t,
-            subpanel_name: s.n[n],
+            subpanel_name: o.n[n],
             location: l
         }, (0, i.H$)(e));
-    return a.default.track(o.HAw.GUILD_MOD_VIEW_OPENED, u)
+    return a.default.track(s.HAw.GUILD_MOD_VIEW_OPENED, u)
 }

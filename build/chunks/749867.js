@@ -7,20 +7,20 @@ n.d(t, {
 var r = n(989479),
     i = n(476858),
     a = n(1673),
-    s = n(241738);
-let o = 1,
+    o = n(241738);
+let s = 1,
     l = 2,
     c = 3;
-class u extends s.w {
+class u extends o.w {
     innerPatternString(e) {
         return `(?:(?:,|\\(|（)\\s*)?(?:в\\s*?)?(?:(эту|этот|прошлый|прошлую|следующий|следующую|следующего)\\s*)?(${(0,i.uJ)(r.CV)})(?:\\s*(?:,|\\)|）))?(?:\\s*на\\s*(этой|прошлой|следующей)\\s*неделе)?`
     }
     innerExtract(e, t) {
         let n = t[l].toLowerCase(),
             i = r.CV[n],
-            s = t[o],
+            o = t[s],
             u = t[c],
-            d = s || u;
+            d = o || u;
         d = (d = d || "").toLowerCase();
         let f = null;
         return "прошлый" == d || "прошлую" == d || "прошлой" == d ? f = "last" : "следующий" == d || "следующую" == d || "следующей" == d || "следующего" == d ? f = "next" : ("этот" == d || "эту" == d || "этой" == d) && (f = "this"), (0, a.Y5)(e.reference, i, f)

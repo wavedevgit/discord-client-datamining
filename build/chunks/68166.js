@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(397927),
-    s = n(267102),
-    o = n(186111),
+    o = n(267102),
+    s = n(186111),
     l = n(712687),
     c = n(652215);
 
@@ -22,9 +22,9 @@ function u(e) {
 function d() {
     let e = (0, a.red)(e => u(e)),
         t = (0, i.bG)([l.A], () => l.A.isOpen()),
-        n = (0, i.bG)([o.A], () => o.A.hasLayers()),
+        n = (0, i.bG)([s.A], () => s.A.hasLayers()),
         [d, f] = r.useState(!1),
-        p = (0, s.aL)();
+        p = (0, o.aL)();
     return r.useEffect(() => {
         function e() {
             f(!0)

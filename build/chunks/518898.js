@@ -2,7 +2,7 @@
 /** chunk id: 518898, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968),
     i = n(64700);
@@ -17,12 +17,12 @@ function a(e) {
     }
 }
 
-function s(e) {
+function o(e) {
     let {
         paddingFix: t = !0,
         orientation: n = "vertical",
-        dir: s,
-        className: o,
+        dir: o,
+        className: s,
         scrollerRef: l,
         specs: c
     } = e, u = (0, i.useRef)(null);
@@ -37,7 +37,7 @@ function s(e) {
         r.style.paddingTop = "", r.style.paddingBottom = "", r.style.paddingLeft = "", r.style.paddingRight = "";
         let a = i.getComputedStyle(r);
         if ("vertical" === n) {
-            if ("rtl" === s) {
+            if ("rtl" === o) {
                 let e = parseInt(a.getPropertyValue("padding-left"), 10);
                 r.style.paddingLeft = "".concat(Math.max(0, e - c.width), "px"), r.style.paddingRight = ""
             } else {
@@ -56,7 +56,7 @@ function s(e) {
             } = u;
             null != t && (t.style.width = a.getPropertyValue("padding-left"))
         }
-    }, [n, s, o, l, t, c]), (0, i.useMemo)(() => "auto" !== n ? (0, r.jsx)("div", {
+    }, [n, o, s, l, t, c]), (0, i.useMemo)(() => "auto" !== n ? (0, r.jsx)("div", {
         "aria-hidden": !0,
         style: a(n),
         ref: u

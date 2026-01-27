@@ -2,29 +2,29 @@
 /** chunk id: 265565, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(985018),
-    s = n(643850);
+    o = n(643850);
 
-function o(e) {
+function s(e) {
     let {
         name: t,
         onRetry: n
-    } = e, o = null != t ? t : a.intl.string(a.t["11pdXZ"]);
+    } = e, s = null != t ? t : a.intl.string(a.t["11pdXZ"]);
     return (0, r.jsx)("div", {
-        className: s.kL,
+        className: o.kL,
         children: (0, r.jsxs)("div", {
-            className: s.wR,
+            className: o.wR,
             children: [(0, r.jsx)(i.Heading, {
                 variant: "heading-lg/medium",
                 color: "text-strong",
-                children: o
+                children: s
             }), (0, r.jsxs)(i.DUT, {
-                className: s.z3,
+                className: o.z3,
                 onClick: n,
                 children: [(0, r.jsx)(i.EpV, {
                     size: "sm",

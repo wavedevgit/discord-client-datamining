@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 857182, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var r = n(562465),
     i = n(73153),
-    a = n(652215);
-let s = {
+    l = n(652215);
+let a = {
     createChannelFollower: (e, t) => r.Bo.post({
-        url: a.Rsh.CHANNEL_FOLLOWERS(t),
+        url: l.Rsh.CHANNEL_FOLLOWERS(t),
         body: {
             webhook_channel_id: e
         },
@@ -22,7 +21,7 @@ let s = {
         });
         try {
             let t = await r.Bo.get({
-                url: a.Rsh.CHANNEL_FOLLOWER_STATS(e),
+                url: l.Rsh.CHANNEL_FOLLOWER_STATS(e),
                 body: {
                     channel_id: e
                 },

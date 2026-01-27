@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(439372),
     a = n(927813),
-    s = n(996744),
-    o = n(971778),
+    o = n(996744),
+    s = n(971778),
     l = n(342887);
 
 function c(e, t, n) {
@@ -21,7 +21,7 @@ function c(e, t, n) {
 }
 
 function u() {
-    return (0, s.Lb)({
+    return (0, o.Lb)({
         location: "VoiceFiltersCatalogManager",
         autoTrackExposure: !1
     })
@@ -40,7 +40,7 @@ class d extends i.A {
     }
     _scheduleNextRollover() {
         clearTimeout(this.rolloverTimeout);
-        let e = o.A.getLimitedTimeVoices();
+        let e = s.A.getLimitedTimeVoices();
         if (null == e) return;
         let t = new Date(e.current_set_end).getTime() - new Date().getTime(),
             n = new Date(e.next_set_end).getTime() - new Date().getTime();

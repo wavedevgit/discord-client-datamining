@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(224771),
-    s = n(624210),
-    o = n(573582),
+    o = n(624210),
+    s = n(573582),
     l = n(224949),
     c = n(818348);
 
@@ -29,7 +29,7 @@ function p(e, t) {
     let n = (0, i.bG)([l.A], () => l.A.currentOrder),
         d = (0, i.bG)([l.A], () => l.A.currentOrderId),
         p = (0, i.bG)([l.A], () => l.A.isCreatingOrder),
-        _ = o.A.useExperiment({
+        _ = s.A.useExperiment({
             location: "payment_modal"
         }).enabled,
         h = (0, r.useRef)(null),
@@ -47,7 +47,7 @@ function p(e, t) {
                 h.current = d, m.current = e;
                 return
             }
-            u(r) && (await (0, s.iY)({
+            u(r) && (await (0, o.iY)({
                 orderId: d,
                 updates: t
             }), h.current = d, m.current = e)
@@ -64,7 +64,7 @@ function p(e, t) {
         if (E.current || !_ || p || g.current || null == e || !f(t)) return;
         g.current = !0;
         let r = t.paymentGateway === c.kM.VIRTUAL_CURRENCY;
-        (0, s.fS)({
+        (0, o.fS)({
             skuId: e,
             paymentSourceId: r ? void 0 : null != (n = t.paymentSourceId) ? n : void 0,
             paymentGateway: t.paymentGateway,

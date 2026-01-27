@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(868903),
     a = n(650682),
-    s = n(827734),
-    o = n(789645),
+    o = n(827734),
+    s = n(789645),
     l = n(834730),
     c = n(444806),
     u = n(46751);
@@ -97,9 +97,9 @@ function g(e) {
                     children: t
                 }), i && (0, r.jsx)(a.$, {
                     slot: "remove",
-                    children: (0, r.jsx)(o.P, {
+                    children: (0, r.jsx)(s.P, {
                         size: "inline" === n ? "xs" : "sm",
-                        color: s.A.colors.ICON_DEFAULT
+                        color: o.A.colors.ICON_DEFAULT
                     })
                 })]
             })

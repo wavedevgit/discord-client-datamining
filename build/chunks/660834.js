@@ -1,10 +1,10 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 660834, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
     Ay: () => x,
-    N8: () => b,
-    Q$: () => h
+    N8: () => h,
+    Q$: () => b
 });
 var r = n(627968);
 n(64700);
@@ -27,12 +27,12 @@ function f(e) {
     return t || n
 }
 
-function b() {
+function h() {
     let e = u.A.getProps().guild;
     null != e && (f(e) ? (d.A.close(), (0, o.aZ)(e.id)) : d.A.open(e.id, g.BEX.MEMBERS))
 }
 
-function h() {
+function b() {
     let e = f((0, l.bG)([u.A], () => u.A.getProps().guild, []));
     return (0, r.jsxs)("div", {
         className: p.q,

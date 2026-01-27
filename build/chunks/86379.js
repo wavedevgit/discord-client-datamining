@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     A: () => l,
-    H: () => o
+    H: () => s
 });
 var r = n(600975),
     i = n(477421);
@@ -22,7 +22,7 @@ let a = (0, r.C)({
             }
         }]
     }),
-    s = (0, r.C)({
+    o = (0, r.C)({
         kind: "user",
         id: "2022-03_block_russian_purchases_desktop",
         label: "Block purchases based on country (desktop specific flags)",
@@ -38,7 +38,7 @@ let a = (0, r.C)({
         }]
     });
 
-function o() {
+function s() {
     let {
         paymentsBlocked: e
     } = a.useExperiment({
@@ -47,7 +47,7 @@ function o() {
         autoTrackExposure: !1
     }), {
         checkPaymentSource: t
-    } = s.useExperiment({
+    } = o.useExperiment({
         location: "c519a9_2"
     }, {
         autoTrackExposure: !1

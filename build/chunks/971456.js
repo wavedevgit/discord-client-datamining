@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(295405),
     a = n(937008),
-    s = n(166532),
-    o = n(735305);
+    o = n(166532),
+    s = n(735305);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -50,7 +50,7 @@ function d(e, t) {
     }), e
 }
 let f = {
-        key: s.pn.ADD_PAYMENT_STEPS,
+        key: o.pn.ADD_PAYMENT_STEPS,
         renderStep: e => (0, r.jsx)(_, c({}, e)),
         options: {
             renderHeader: !0
@@ -58,10 +58,10 @@ let f = {
     },
     p = (e, t) => {
         if (0 === Object.keys(i.A.paymentSources).length) {
-            if (t) return void e.handleStepChange(s.pn.GIFT_CUSTOMIZATION);
+            if (t) return void e.handleStepChange(o.pn.GIFT_CUSTOMIZATION);
             e.handleClose()
-        } else e.handleStepChange(s.pn.REVIEW, {
-            trackedFromStep: s.pn.ADD_PAYMENT_STEPS
+        } else e.handleStepChange(o.pn.REVIEW, {
+            trackedFromStep: o.pn.ADD_PAYMENT_STEPS
         })
     };
 
@@ -69,8 +69,8 @@ function _(e) {
     let {
         isGift: t
     } = (0, a.Pv)();
-    return (0, r.jsx)(o.x, d(c({}, e), {
-        breadcrumbSteps: [s.pn.ADD_PAYMENT_STEPS, s.pn.REVIEW, s.pn.CONFIRM],
+    return (0, r.jsx)(s.x, d(c({}, e), {
+        breadcrumbSteps: [o.pn.ADD_PAYMENT_STEPS, o.pn.REVIEW, o.pn.CONFIRM],
         onReturn: () => p(e, t)
     }))
 }

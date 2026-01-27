@@ -8,7 +8,7 @@ var r = n(652215);
 let i = [],
     a = !1;
 
-function s() {
+function o() {
     let e = window.navigator.connection;
     return null == e ? {
         type: r.wY_.UNKNOWN,
@@ -19,7 +19,7 @@ function s() {
     }
 }
 
-function o() {
+function s() {
     if (!0 === a) return;
     let e = window.navigator.connection;
     null != e && (a = !0, e.addEventListener("change", c))
@@ -32,12 +32,12 @@ function l() {
 }
 
 function c() {
-    let e = s();
+    let e = o();
     i.forEach(t => t(e))
 }
 
 function u(e) {
-    i.push(e), o()
+    i.push(e), s()
 }
 
 function d(e) {
@@ -62,7 +62,7 @@ let f = {
     removeChangeCallback(e) {
         d(e)
     },
-    getNetworkInformation: () => Promise.resolve(s()),
+    getNetworkInformation: () => Promise.resolve(o()),
     isOnline() {
         let e = navigator.onLine;
         return void 0 === e || e

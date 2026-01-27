@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 722274, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(465794),
+    l = n(465794),
     s = n(795269),
-    o = n(652215),
-    l = n(985018),
+    a = n(652215),
+    o = n(985018),
     c = n(82652),
-    u = n(888283);
-let d = () => {
+    d = n(888283);
+let u = () => {
     let e = {
-        section: o.JJy.REVERSE_TRIAL_BANNER
+        section: a.JJy.REVERSE_TRIAL_BANNER
     };
     return (0, r.jsxs)("div", {
         className: c.vK,
         children: [(0, r.jsx)(s.R, {
-            text: l.intl.string(l.t.qYKftX),
+            text: o.intl.string(o.t.qYKftX),
             className: c.Io
         }), (0, r.jsx)("img", {
-            src: u,
+            src: d,
             width: 64,
             height: 64,
             alt: "",
@@ -33,11 +32,11 @@ let d = () => {
             children: (0, r.jsx)(i.Text, {
                 color: "text-subtle",
                 variant: "text-sm/normal",
-                children: l.intl.format(l.t.uu1WAa, {
+                children: o.intl.format(o.t.uu1WAa, {
                     weeks: 1
                 })
             })
-        }), (0, r.jsx)(a.A, {
+        }), (0, r.jsx)(l.A, {
             premiumModalAnalyticsLocation: e,
             showGradient: !0,
             className: c.aA,

@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 754513, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => b
 }), n(896048), n(228524);
 var r = n(627968),
     i = n(64700),
@@ -18,7 +18,7 @@ var r = n(627968),
     p = n(256893);
 let f = o.A.getArticleURL(g.MVz.GUILD_AUTOMOD_REGEX);
 
-function b(e) {
+function h(e) {
     let {
         hasErrors: t,
         text: n,
@@ -42,7 +42,7 @@ function b(e) {
     })
 }
 
-function h(e) {
+function b(e) {
     var t, n;
     let {
         rule: l,
@@ -50,7 +50,7 @@ function h(e) {
         className: o
     } = e, {
         patterns: g,
-        valueError: h,
+        valueError: b,
         errors: x,
         validatePatternsChanged: j,
         validateEditingValueChanged: _
@@ -87,17 +87,17 @@ function h(e) {
             onChangeNewTagValue: A,
             tagErrors: v,
             maxTags: u.qm
-        }), (0, r.jsx)(b, {
+        }), (0, r.jsx)(h, {
             text: m.intl.format(m.t["PGC/AJ"], {
                 helpArticle: f
             }),
-            hasErrors: x.length > 0 || null != h,
+            hasErrors: x.length > 0 || null != b,
             errorText: null != (t = null == (n = x.find(e => {
                 let {
                     pattern: t
                 } = e;
                 return t === d.B
-            })) ? void 0 : n.message) ? t : null == h ? void 0 : h.message
+            })) ? void 0 : n.message) ? t : null == b ? void 0 : b.message
         })]
     })
 }

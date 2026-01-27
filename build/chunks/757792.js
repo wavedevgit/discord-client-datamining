@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(417597),
     i = n(554146),
     a = n(961350),
-    s = n(927813),
-    o = n(661191),
+    o = n(927813),
+    s = n(661191),
     l = n(199773);
 let c = {
         [i.M.MJ_NEW_USER_CHAT_BAR]: 0,
@@ -45,7 +45,7 @@ let c = {
         [i.M.NITRO_DROP_REWARD]: 0,
         [i.M.QUEST_HOME_ENTRYPOINT_ONBOARDING]: 0
     },
-    u = s.A.Millis.DAY;
+    u = o.A.Millis.DAY;
 
 function d(e) {
     let {
@@ -64,5 +64,5 @@ function f(e) {
 
 function p(e, t) {
     var n;
-    return null != e && o.default.age(e) >= (null != (n = c[t]) ? n : u)
+    return null != e && s.default.age(e) >= (null != (n = c[t]) ? n : u)
 }

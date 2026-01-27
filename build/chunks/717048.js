@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(486020),
+    o = n.n(a),
+    s = n(486020),
     l = n(985018),
     c = n(921010);
 
@@ -21,7 +21,7 @@ function u(e) {
         botIconFirst: d,
         fallbackAvatar: f,
         rendersPlaceholder: p = !1
-    } = e, _ = i.useMemo(() => null != t ? o.Ay.getApplicationIconURL({
+    } = e, _ = i.useMemo(() => null != t ? s.Ay.getApplicationIconURL({
         id: t.id,
         icon: t.icon,
         bot: t.bot,
@@ -30,9 +30,9 @@ function u(e) {
         fallbackAvatar: f
     }) : n, [t, n, u, d, f]);
     return null == _ ? p ? (0, r.jsx)("div", {
-        className: s()(c.K, c.q, a)
+        className: o()(c.K, c.q, a)
     }) : null : (0, r.jsx)("img", {
-        className: s()(c.K, a),
+        className: o()(c.K, a),
         alt: l.intl.string(l.t.X4IxWL),
         src: _,
         "aria-hidden": !0,

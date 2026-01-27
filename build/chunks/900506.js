@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 900506, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     eS: "notDetected_cc46f0",
     FB: "nowPlaying_cc46f0",

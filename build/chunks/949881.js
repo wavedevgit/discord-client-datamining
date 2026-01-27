@@ -9,7 +9,7 @@ var a = n(397927),
     o = n(442433),
     c = n(818348);
 let i = e => (0, r.jsx)(a.W1t, {
-    "data-menu-migration-ready": !0,
+    "data-menu-migrated": !0,
     onClose: o.Z_,
     navId: "staff-only-entry-debug",
     "aria-label": "staff only content inventory debug",
@@ -42,6 +42,10 @@ let i = e => (0, r.jsx)(a.W1t, {
                 }({}, n, e))
             })
         },
-        icon: a.PXj
+        icon: a.PXj,
+        leadingAccessory: {
+            type: "icon",
+            icon: a.PXj
+        }
     })
 })

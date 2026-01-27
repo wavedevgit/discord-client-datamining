@@ -16,12 +16,12 @@ n.d(t, {
     cN: () => c,
     eJ: () => O,
     lA: () => I,
-    nI: () => s,
+    nI: () => o,
     ny: () => g,
     pj: () => E,
     pr: () => b,
     wL: () => _,
-    yZ: () => o,
+    yZ: () => s,
     yi: () => A
 });
 var r = n(577718),
@@ -29,8 +29,8 @@ var r = n(577718),
         return e.AVATAR = "AVATAR", e.BANNER = "BANNER", e.GUILD_BANNER = "GUILD_BANNER", e.VIDEO_BACKGROUND = "VIDEO_BACKGROUND", e.SCHEDULED_EVENT_IMAGE = "SCHEDULED_EVENT_IMAGE", e.HOME_HEADER = "HOME_HEADER", e.AVATAR_DECORATION = "AVATAR_DECORATION", e.GUILD_ICON = "GUILD_ICON", e
     }({});
 let a = 432,
-    s = 2400,
-    o = 848,
+    o = 2400,
+    s = 848,
     l = 2400,
     c = 1350,
     u = 2400,

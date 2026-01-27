@@ -9,8 +9,8 @@ n.d(t, {
 });
 var i = n(626584),
     a = n(312671),
-    s = n(458640),
-    o = n(351906),
+    o = n(458640),
+    s = n(351906),
     l = n(257645);
 r = n(946261).WebAudioSound;
 let c = new i.A("SoundUtils");
@@ -19,7 +19,7 @@ function u(e, t) {
     var n;
     let r = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1,
         i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.a.DEFAULT;
-    return d(null != (n = (0, s.A)(t)[e]) ? n : e, e, r, i)
+    return d(null != (n = (0, o.A)(t)[e]) ? n : e, e, r, i)
 }
 
 function d(e, t) {
@@ -34,8 +34,8 @@ function f(e) {
         r = arguments.length > 2 ? arguments[2] : void 0,
         i = arguments.length > 3 ? arguments[3] : void 0,
         u = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : l.a.DEFAULT;
-    if (o.A.disableSounds) return;
-    let f = (0, s.A)(null != i ? i : a.A.getSoundpack());
+    if (s.A.disableSounds) return;
+    let f = (0, o.A)(null != i ? i : a.A.getSoundpack());
     null == f && c.log("Unable to find sound for pack name: ".concat(i));
     let p = d(null != (t = f[e]) ? t : e, e, n, u);
     return null != r ? p.playWithListener().then(e => {

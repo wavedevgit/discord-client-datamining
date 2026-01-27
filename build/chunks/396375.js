@@ -1,88 +1,80 @@
-/** Chunk was on web.js **/
+/** Chunk was on 77641 **/
 /** chunk id: 396375, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => h
+    A: () => m
 });
 var r = n(627968);
 n(64700);
-var i = n(582754),
-    a = n(421380),
-    s = n(736653),
-    o = n(234419),
-    l = n(465794),
+var a = n(582754),
+    i = n(421380),
+    l = n(736653),
+    s = n(234419),
+    o = n(465794),
     c = n(145310),
-    u = n(275403);
+    d = n(275403);
 
-function d(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function f(e) {
+function u(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            d(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
 }
-
-function p(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = _(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function _(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let h = e => {
+let m = e => {
     let {
         textOptions: t,
         subscriptionTier: n,
-        hasActivePromotion: d = !1,
+        hasActivePromotion: m = !1,
         isPersistentCTA: _ = !1,
-        useShorterCTA: h = !1,
-        showGradient: m,
-        confirmationFooter: g,
-        color: E
-    } = e, y = p(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]), b = (0, s.Ay)(), {
-        buttonText: O,
+        useShorterCTA: E = !1,
+        showGradient: p,
+        confirmationFooter: x,
+        color: N
+    } = e, T = function(e, t) {
+        if (null == e) return {};
+        var n, r, a, i = {};
+        if ("u" > typeof Reflect && Reflect.ownKeys) {
+            for (a = 0, n = Reflect.ownKeys(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+            return i
+        }
+        if (i = function(e, t) {
+                if (null == e) return {};
+                var n, r, a = {},
+                    i = Object.getOwnPropertyNames(e);
+                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n]);
+                return a
+            }(e, t), Object.getOwnPropertySymbols)
+            for (a = 0, n = Object.getOwnPropertySymbols(e); a < n.length; a++) r = n[a], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+        return i
+    }(e, ["textOptions", "subscriptionTier", "hasActivePromotion", "isPersistentCTA", "useShorterCTA", "showGradient", "confirmationFooter", "color"]), g = (0, l.Ay)(), {
+        buttonText: b,
         marketingSubscriptionTierSkuId: v
     } = (0, c.s)({
-        hasActivePromotion: d,
+        hasActivePromotion: m,
         subscriptionTier: n,
-        useShorterCTA: h,
+        useShorterCTA: E,
         isPersistentCTA: _
-    }), A = (0, o.V)(), I = null == A ? void 0 : A.subscription_trial, S = null != I && v === I.sku_id, T = null != E ? E : (0, i.Mw)(b) ? a.XD.BRAND_INVERTED : a.XD.BRAND;
-    return (0, r.jsx)(l.A, f({
-        color: T,
-        textOptions: f({
-            textOverride: O,
-            textClassName: S ? u.A : void 0
+    }), j = (0, s.V)(), O = null == j ? void 0 : j.subscription_trial, f = null != O && v === O.sku_id, h = null != N ? N : (0, a.Mw)(g) ? i.XD.BRAND_INVERTED : i.XD.BRAND;
+    return (0, r.jsx)(o.A, u({
+        color: h,
+        textOptions: u({
+            textOverride: b,
+            textClassName: f ? d.A : void 0
         }, t),
         onlyShineOnHover: !0,
         subscriptionTier: v,
-        showGradient: m,
-        confirmationFooter: g
-    }, y))
+        showGradient: p,
+        confirmationFooter: x
+    }, T))
 }

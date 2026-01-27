@@ -3,8 +3,8 @@
 var r = n(782017),
     i = n(566709),
     a = n(823453),
-    s = n(842932),
-    o = n(488165),
+    o = n(842932),
+    s = n(488165),
     l = "[object Boolean]",
     c = "[object Date]",
     u = "[object Map]",
@@ -43,7 +43,7 @@ e.exports = function(e, t, n) {
         case I:
         case S:
         case T:
-            return o(e, n);
+            return s(e, n);
         case u:
             return new C;
         case d:
@@ -54,6 +54,6 @@ e.exports = function(e, t, n) {
         case p:
             return new C;
         case h:
-            return s(e)
+            return o(e)
     }
 }

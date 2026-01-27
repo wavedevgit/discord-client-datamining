@@ -2,13 +2,13 @@
 /** chunk id: 430571, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(64700),
     i = n(508425),
     a = n(397927);
 
-function s(e) {
+function o(e) {
     let t = (0, a.rdh)(a.LU0.colors.TEXT_DEFAULT).int();
     return r.useMemo(() => {
         switch (e) {

@@ -1,22 +1,21 @@
-/** Chunk was on web.js **/
+/** Chunk was on 48330 **/
 /** chunk id: 850183, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var i = n(503698),
-    a = n.n(i),
+var r = n(503698),
+    i = n.n(r),
     s = n(695035);
 
-function o(e) {
+function a(e) {
     let {
         source: t,
         className: n
     } = e;
-    return null == t ? null : (0, r.jsx)("div", {
-        className: a()(s.k, n),
+    return null == t ? null : (0, l.jsx)("div", {
+        className: i()(s.k, n),
         style: {
             backgroundImage: "url(".concat(t, ")")
         },

@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 479715, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    AQ: () => a,
-    ZA: () => i
+    AQ: () => l,
+    ZA: () => s
 });
-let r = (0, n(945810).mj)({
+let i = (0, n(945810).mj)({
     kind: "user",
     name: "2026-01-profile-updates-notification",
     defaultConfig: {
@@ -24,14 +23,14 @@ let r = (0, n(945810).mj)({
     }
 });
 
-function i(e) {
-    return r.useConfig({
+function s(e) {
+    return i.useConfig({
         location: e
     })
 }
 
-function a(e) {
-    return r.getConfig({
+function l(e) {
+    return i.getConfig({
         location: e
     }).showSettingsToggle
 }

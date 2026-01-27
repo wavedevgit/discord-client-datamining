@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(582754),
-    o = n(937773),
+    o = n(582754),
+    s = n(937773),
     l = n(544028),
     c = n(403362),
     u = n(427262),
@@ -31,11 +31,11 @@ let O = e => {
     } = e, a = ":".concat(t.name, ":");
     switch (r) {
         case h.dS.ACTIVITY:
-            let s = y.intl.formatToPlainString(y.t.EUFEJt, {
+            let o = y.intl.formatToPlainString(y.t.EUFEJt, {
                     username: n
                 }),
-                o = "\n> ".concat(i);
-            return null != i ? "".concat(p.c5).concat(s, "*").concat(o, "\n").concat(a) : "".concat(p.c5).concat(s, "*\n").concat(a);
+                s = "\n> ".concat(i);
+            return null != i ? "".concat(p.c5).concat(o, "*").concat(s, "\n").concat(a) : "".concat(p.c5).concat(o, "*\n").concat(a);
         case h.dS.AVATAR:
             let l = y.intl.formatToPlainString(y.t.E6H15q, {
                 username: n
@@ -67,7 +67,7 @@ function v(e) {
         setInteractionToast: T
     } = (0, f.Pq)(), {
         theme: C
-    } = (0, _.E)(), N = (0, a.bG)([l.A], () => l.A.theme), w = (0, s.Mw)(N) ? !(0, s.Mw)(C) : (0, s.Mw)(C), R = i.useRef(null);
+    } = (0, _.E)(), N = (0, a.bG)([l.A], () => l.A.theme), w = (0, o.Mw)(N) ? !(0, o.Mw)(C) : (0, o.Mw)(C), R = i.useRef(null);
     i.useEffect(() => {
         null == v || v(null == R ? void 0 : R.current)
     }, [R, v]), i.useEffect(() => {
@@ -106,7 +106,7 @@ function v(e) {
         } catch (e) {}
         T(h.AQ.REACT)
     };
-    return (0, r.jsx)(o.A, {
+    return (0, r.jsx)(s.A, {
         headerClassName: w ? b.X : void 0,
         guildId: null != n ? n : void 0,
         closePopout: g.tE,

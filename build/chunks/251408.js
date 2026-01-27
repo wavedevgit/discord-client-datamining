@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(58149),
     a = n(627363),
-    s = n(587895),
-    o = n(140547),
+    o = n(587895),
+    s = n(140547),
     l = n(961350),
     c = n(734057),
     u = n(309010),
@@ -36,7 +36,7 @@ async function g(e) {
     let t = c.A.getChannel(e),
         {
             enableHangStatus: n
-        } = (0, o.ko)({
+        } = (0, s.ko)({
             guildId: null == t ? void 0 : t.guild_id,
             location: "GameActivityManager"
         });
@@ -45,7 +45,7 @@ async function g(e) {
     if (0 === r.length) return;
     let a = h([...r]);
     await m([...a]);
-    let u = s.A.getApplication(a[0]);
+    let u = o.A.getApplication(a[0]);
     null != u && i.Ay.trackWithMetadata(p.HAw.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_SET, {
         channel_id: e,
         guild_id: t.guild_id,

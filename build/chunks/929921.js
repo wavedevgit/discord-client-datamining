@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(753070),
-    o = n(731854);
+    o = n(753070),
+    s = n(731854);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -17,16 +17,16 @@ function l(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let c = s.jQ.PRESET_VIDEO,
-    u = s.on.RESOLUTION_720,
-    d = s.kn.FPS_30,
+let c = o.jQ.PRESET_VIDEO,
+    u = o.on.RESOLUTION_720,
+    d = o.kn.FPS_30,
     f = !0;
 
 function p(e) {
     let {
         settings: t
     } = e;
-    if ((null == t ? void 0 : t.context) !== o.x.STREAM || (null == t ? void 0 : t.qualityOptions) == null) return !1;
+    if ((null == t ? void 0 : t.context) !== s.x.STREAM || (null == t ? void 0 : t.qualityOptions) == null) return !1;
     let n = !1;
     return c !== t.qualityOptions.preset && (c = t.qualityOptions.preset, n = !0), u !== t.qualityOptions.resolution && (u = t.qualityOptions.resolution, n = !0), d !== t.qualityOptions.frameRate && (d = t.qualityOptions.frameRate, n = !0), n
 }
@@ -44,7 +44,7 @@ class h extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         if (null != e) {
             var t, n;
-            c = null != (t = e.preset) ? t : s.jQ.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
+            c = null != (t = e.preset) ? t : o.jQ.PRESET_VIDEO, u = e.resolution, d = e.fps, f = null == (n = e.soundshareEnabled) || n
         }
     }
     getState() {

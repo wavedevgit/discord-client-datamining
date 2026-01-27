@@ -2,13 +2,13 @@
 /** chunk id: 171593, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 }), n(896048), n(321073);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(837381),
+    o = n.n(a),
+    s = n(837381),
     l = n(741918),
     c = n(311907),
     u = n(73153),
@@ -94,8 +94,8 @@ function P(e) {
         smallAttachments: I = !1
     } = e, T = (0, c.bG)([p.A], () => p.A.keyboardModeEnabled), w = (0, _.A)("attachments", l.Gl.HORIZONTAL), P = (0, c.bG)([m.A], () => m.A.getUploads(t, n.drafts.type)), {
         isApplicationCommand: D,
-        commandOptions: x,
-        commandOptionStates: L
+        commandOptions: L,
+        commandOptionStates: x
     } = (0, c.cf)([h.A], () => {
         let e = h.A.getActiveCommand(t);
         if (null == e) return {
@@ -109,13 +109,13 @@ function P(e) {
             commandOptions: e.options,
             commandOptionStates: n
         }
-    }), j = i.useMemo(() => {
+    }), M = i.useMemo(() => {
         var e;
-        return null != (e = null == x ? void 0 : x.filter(e => {
+        return null != (e = null == L ? void 0 : L.filter(e => {
             var t;
-            return e.type === f.n4.ATTACHMENT && (null == L || null == (t = L[e.name]) ? void 0 : t.hasValue)
+            return e.type === f.n4.ATTACHMENT && (null == x || null == (t = x[e.name]) ? void 0 : t.hasValue)
         })) ? e : []
-    }, [x, L]), [M, k] = i.useState([]);
+    }, [L, x]), [j, k] = i.useState([]);
     i.useEffect(() => {
         let e = () => {
             d.A.clearAll(t, n.drafts.type)
@@ -131,18 +131,18 @@ function P(e) {
     });
     let G = {
             isApplicationCommand: D,
-            previousUploadOptions: M,
-            uploadOptions: j
+            previousUploadOptions: j,
+            uploadOptions: M
         },
-        V = i.useRef(G);
+        F = i.useRef(G);
     i.useEffect(() => {
-        V.current = G
+        F.current = G
     }), i.useEffect(() => {
         let {
             isApplicationCommand: e,
             previousUploadOptions: r,
             uploadOptions: i
-        } = V.current;
+        } = F.current;
         if (e) {
             let e = [];
             r.forEach(t => {
@@ -151,11 +151,11 @@ function P(e) {
                 d.A.remove(t, e.name, n.drafts.type)
             }), k(i)
         }
-    }, [t, j.length, n]);
-    let F = P.filter(e => e.filename !== a);
-    return !D && 0 === F.length || D && 0 === j.length ? null : (0, r.jsx)(o.hD, {
+    }, [t, M.length, n]);
+    let V = P.filter(e => e.filename !== a);
+    return !D && 0 === V.length || D && 0 === M.length ? null : (0, r.jsx)(s.hD, {
         navigator: w,
-        children: (0, r.jsx)(o.PR, {
+        children: (0, r.jsx)(s.PR, {
             children: e => {
                 let {
                     ref: i
@@ -163,12 +163,12 @@ function P(e) {
                 return (0, r.jsx)("ul", C(S({
                     ref: i
                 }, a), {
-                    className: s()(v.I, A.KK),
-                    children: D ? j.map(e => (0, r.jsx)(y.A, {
+                    className: o()(v.I, A.KK),
+                    children: D ? M.map(e => (0, r.jsx)(y.A, {
                         channelId: t,
                         keyboardModeEnabled: T,
                         option: e
-                    }, e.name)) : F.map(e => (0, r.jsx)(b.A, {
+                    }, e.name)) : V.map(e => (0, r.jsx)(b.A, {
                         channelId: t,
                         draftType: n.drafts.type,
                         upload: e,
@@ -188,13 +188,13 @@ function D(e) {
         type: n,
         canAttachFiles: i,
         ignoreFile: a,
-        smallAttachments: s = !1
+        smallAttachments: o = !1
     } = e;
     return i ? (0, r.jsx)(P, {
         channelId: t,
         type: n,
         ignoreFile: a,
-        smallAttachments: s
+        smallAttachments: o
     }) : null
 }
-let x = i.memo(D)
+let L = i.memo(D)

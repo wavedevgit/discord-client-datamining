@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(723702),
     i = n(170148),
     a = n(550151),
-    s = n(833349),
-    o = n(652215);
+    o = n(833349),
+    s = n(652215);
 
 function l(e) {
     let {
@@ -39,18 +39,18 @@ function l(e) {
         PermissionStore: E,
         GuildStore: p
     }) === a.Gy.CAN_JOIN;
-    if (d && null == c && !(0, s.A)(n, o.jUm.CONTEXTLESS) || !(0, r.platformSupportsActivityJoin)() && !d) return !1;
-    if ((0, s.A)(n, o.jUm.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
-    if ((0, s.A)(n, o.jUm.PARTY_PRIVACY_VOICE_CHANNEL)) {
+    if (d && null == c && !(0, o.A)(n, s.jUm.CONTEXTLESS) || !(0, r.platformSupportsActivityJoin)() && !d) return !1;
+    if ((0, o.A)(n, s.jUm.PARTY_PRIVACY_FRIENDS) && h.isFriend(t.id)) return !0;
+    if ((0, o.A)(n, s.jUm.PARTY_PRIVACY_VOICE_CHANNEL)) {
         let e = f.getChannel(m.getVoiceChannelId());
         if (null == e || !g.isInChannel(e.id, t.id)) return !1;
         switch (e.type) {
-            case o.rbe.DM:
-            case o.rbe.GROUP_DM:
+            case s.rbe.DM:
+            case s.rbe.GROUP_DM:
                 return !0
         }
         let n = p.getGuild(e.getGuildId());
-        if (null == n || n.features.has(o.GuildFeatures.COMMUNITY)) return !1;
+        if (null == n || n.features.has(s.GuildFeatures.COMMUNITY)) return !1;
         let r = _.getMemberCount(n.id);
         return null != r && r < 100
     }

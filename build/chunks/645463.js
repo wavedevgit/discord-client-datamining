@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(243949),
     i = n(939496),
     a = n(667201),
-    s = n(754495),
-    o = n(534465),
+    o = n(754495),
+    s = n(534465),
     l = n(939075),
     c = n(106890),
     u = n(552468),
@@ -29,5 +29,5 @@ function _(e) {
             action: "PRESS_VIEW_ALL_ACTIVITY_MENU_ITEM"
         })
     });
-    return [n === f.d.POPOUT ? _ : null, (0, c.A)(e), (0, o.Ay)(e), (0, o.gA)(e), (0, u.A)(e), (0, l.A)(e), (0, a.A)(e), (0, s.s)(e)].filter(e => null != e)
+    return [n === f.d.POPOUT ? _ : null, (0, c.A)(e), (0, s.Ay)(e), (0, s.gA)(e), (0, u.A)(e), (0, l.A)(e), (0, a.A)(e), (0, o.s)(e)].filter(e => null != e)
 }

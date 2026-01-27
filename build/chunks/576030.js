@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(158954),
     a = n(311907),
-    s = n(587895),
-    o = n(721932),
+    o = n(587895),
+    s = n(721932),
     l = n(360469);
 
 function c(e) {
@@ -35,7 +35,7 @@ function u(e) {
 function d(e) {
     let {
         wishlistItem: t
-    } = e, n = (0, a.bG)([s.A], () => (0, o.$)(t) ? s.A.getApplication(t.sku.applicationId) : void 0);
+    } = e, n = (0, a.bG)([o.A], () => (0, s.$)(t) ? o.A.getApplication(t.sku.applicationId) : void 0);
     return (0, r.jsx)(u, {
         application: n
     })

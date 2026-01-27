@@ -7,19 +7,19 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(429913),
-    s = n(989837),
-    o = n(485878);
+    o = n(989837),
+    s = n(485878);
 
 function l() {
-    let e = (0, i.bG)([s.A], () => s.A.initialState(), []),
+    let e = (0, i.bG)([o.A], () => o.A.initialState(), []),
         t = (0, a.h)(null == e ? void 0 : e.applicationId);
     return r.useMemo(() => {
         if (null == e) return;
         let n = [{
-            type: o.Wy.HOME
+            type: s.Wy.HOME
         }];
         return null != e.applicationId && null != t && n.push({
-            type: o.Wy.APPLICATION,
+            type: s.Wy.APPLICATION,
             application: t
         }), n
     }, [e, t])

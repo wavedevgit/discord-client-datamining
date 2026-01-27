@@ -2,7 +2,7 @@
 /** chunk id: 378006, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    f: () => s,
+    f: () => o,
     r: () => a
 });
 var r = n(630610);
@@ -12,6 +12,6 @@ function a(e, t) {
     t ? (0, r.my)(e, i, t) : delete e[i]
 }
 
-function s(e) {
+function o(e) {
     return e[i]
 }

@@ -9,12 +9,12 @@ n.d(t, {
 var r = n(353640),
     i = n(121894),
     a = n(203982),
-    s = n(652215);
-let o = Object.freeze({
+    o = n(652215);
+let s = Object.freeze({
         hasUnsubmittedChanges: !1,
         shouldShowWarning: !1
     }),
-    l = (0, r.v)(e => o),
+    l = (0, r.v)(e => s),
     c = e => {
         (0, i.r)(() => l.setState({
             hasUnsubmittedChanges: e
@@ -23,5 +23,5 @@ let o = Object.freeze({
     u = e => {
         (0, i.r)(() => l.setState({
             shouldShowWarning: e
-        })), e && a._.dispatch(s.jej.EMPHASIZE_NOTICE)
+        })), e && a._.dispatch(o.jej.EMPHASIZE_NOTICE)
     }

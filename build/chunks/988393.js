@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(108531),
-    s = n(397927),
-    o = n(857250),
+    o = n(397927),
+    s = n(857250),
     l = n(691540),
     c = n(97483),
     u = n(17069);
@@ -122,7 +122,7 @@ function g(e) {
             var e, t;
             return m[null != (e = null == _ || null == (t = _.options) ? void 0 : t.position) ? e : h.current]
         }, [_]),
-        y = (0, s.pnh)(_, f({
+        y = (0, o.pnh)(_, f({
             keys: e => {
                 var t;
                 return null != (t = null == e ? void 0 : e.id) ? t : ""
@@ -136,7 +136,7 @@ function g(e) {
         className: E.styles,
         children: y((e, t) => null == t ? null : (0, r.jsx)(a.animated.div, {
             style: e,
-            children: (0, r.jsx)(o.y, f({}, t))
+            children: (0, r.jsx)(s.y, f({}, t))
         }, t.id))
     })
 }

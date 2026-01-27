@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
-/** chunk id: 809092, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    W: () => i,
-    j: () => a
+/** Chunk was on 98186 **/
+/** chunk id: 809092, original params: t,e,a (module,exports,require) **/
+a.d(e, {
+    W: () => s,
+    j: () => n
 });
-var r = n(73153);
+var i = a(73153);
 
-function i() {
-    r.h.dispatch({
+function s() {
+    i.h.dispatch({
         type: "SHOW_KEYBOARD_SHORTCUTS"
     })
 }
 
-function a() {
-    r.h.dispatch({
+function n() {
+    i.h.dispatch({
         type: "HIDE_KEYBOARD_SHORTCUTS"
     })
 }

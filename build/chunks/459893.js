@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 459893, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => A
 }), n(896048), n(747238), n(492834);
@@ -11,14 +10,14 @@ var r = n(627968),
     a = n(311907),
     o = n(830215),
     c = n(6981),
-    u = n(964486),
-    d = n(351671),
+    d = n(964486),
+    u = n(351671),
     h = n(463347),
     p = n(976860),
     g = n(961350),
-    m = n(129851),
+    _ = n(129851),
     f = n(652215),
-    _ = n(746080);
+    m = n(746080);
 
 function A(e) {
     var t, n;
@@ -26,7 +25,7 @@ function A(e) {
             var n, r;
             let i; + ((null == (i = (0, l.B6)(t, {
                 path: f.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
-            })) || null == (n = i.params) ? void 0 : n.channelId) !== _.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : p.pX)(t) : p.bG(t)
+            })) || null == (n = i.params) ? void 0 : n.channelId) !== m.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : p.pX)(t) : p.bG(t)
         }, [e.transitionTo]),
         {
             isAuthenticated: x,
@@ -37,11 +36,11 @@ function A(e) {
         })),
         {
             location: v,
-            redirectTo: j
+            redirectTo: b
         } = e,
-        [y, b] = i.useState(x);
+        [y, j] = i.useState(x);
 
-    function S(e) {
+    function I(e) {
         let {
             handoffKey: t,
             handoffToken: n,
@@ -51,30 +50,30 @@ function A(e) {
             handoffKey: t,
             handoffToken: n,
             handoffSource: r
-        }), b(!1)
+        }), j(!1)
     }
-    return ((0, u.Ay)(() => {
+    return ((0, d.Ay)(() => {
         if (null != v) {
             let {
                 handoff_key: e,
                 handoff_token: t
             } = (0, s.parse)(v.search);
             if (null != e && null != t) {
-                let n = null != j ? (0, d.Q)(j) : void 0;
+                let n = null != b ? (0, u.Q)(b) : void 0;
                 y ? o.A.logout("handoff", null).finally(() => {
-                    S({
+                    I({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : S({
+                }) : I({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n
                 })
             }
         }
-    }), y || E === f.aUe.LOGGING_IN) ? (0, r.jsx)(m.Z, {}) : (0, r.jsx)(m.A, (t = function(e) {
+    }), y || E === f.aUe.LOGGING_IN) ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(_.A, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

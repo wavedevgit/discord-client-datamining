@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 573138, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
-    l = n(854987),
+    i = n.n(a),
+    s = n(397927),
+    o = n(854987),
     c = n(398225),
     u = n(256024);
 
@@ -19,18 +18,18 @@ function d(e) {
         noPadding: n = !1,
         centered: a = !0,
         verticalFlow: d = !1,
-        className: f
-    } = e, p = i.useContext(l.P), _ = (0, o.rdh)(p.primaryColor).hex(), h = (0, c.HL)();
+        className: m
+    } = e, f = l.useContext(o.P), p = (0, s.rdh)(f.primaryColor).hex(), h = (0, c.HL)();
     return (0, r.jsx)(c.gy.Provider, {
         value: h,
         children: (0, r.jsx)("div", {
-            className: s()(u.kL, {
+            className: i()(u.kL, {
                 [u.pK]: !n,
                 [u.g7]: a,
                 [u.W5]: d
-            }, f),
+            }, m),
             style: {
-                color: _
+                color: p
             },
             children: t
         })

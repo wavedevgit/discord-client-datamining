@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(582754),
+    o = n.n(a),
+    s = n(582754),
     l = n(397927),
     c = n(736653),
     u = n(550111),
@@ -29,9 +29,9 @@ let E = i.memo(function(e) {
         firstProfileEffect: E,
         firstAvatarDecoration: y,
         firstNameplate: b
-    } = (0, f.f5)(t), O = (0, p.br)(y), v = (0, c.Ay)(), A = (0, o.qB)(v), I = null != b && null != y && null != E, S = I ? l._3J.SIZE_72 : l._3J.SIZE_80, T = A ? g : m;
+    } = (0, f.f5)(t), O = (0, p.br)(y), v = (0, c.Ay)(), A = (0, s.qB)(v), I = null != b && null != y && null != E, S = I ? l._3J.SIZE_72 : l._3J.SIZE_80, T = A ? g : m;
     return (0, r.jsxs)("div", {
-        className: s()(h.kL, {
+        className: o()(h.kL, {
             [h.ib]: !I,
             [h.c$]: I
         }),

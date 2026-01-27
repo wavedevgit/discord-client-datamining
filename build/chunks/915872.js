@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(616356),
-    s = n(961350),
-    o = n(383501),
+    o = n(961350),
+    s = n(383501),
     l = n(310323),
     c = n(571044),
     u = n(338771);
@@ -53,9 +53,9 @@ class p extends l.A {
             userId: t,
             sessionId: n
         } = e;
-        if (t !== s.default.getId() || n !== s.default.getSessionId()) return;
+        if (t !== o.default.getId() || n !== o.default.getSessionId()) return;
         let r = a.A.getAllActiveStreams(),
-            i = o.A.getChannelId();
+            i = s.A.getChannelId();
         r.forEach(e => {
             e.channelId !== i && (0, u.A)(e, !1)
         })

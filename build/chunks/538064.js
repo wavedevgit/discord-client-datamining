@@ -2,10 +2,10 @@
 /** chunk id: 538064, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ft: () => o,
+    Ft: () => s,
     Jt: () => a,
     eY: () => l,
-    pf: () => s
+    pf: () => o
 });
 var r = n(73153),
     i = n(265059);
@@ -17,13 +17,13 @@ function a(e) {
     })
 }
 
-function s() {
+function o() {
     a({
         displayTools: !i.A.displayTools
     })
 }
 
-function o(e) {
+function s(e) {
     a({
         displayTools: !0,
         lastOpenTabId: e

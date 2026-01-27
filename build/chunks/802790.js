@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 802790, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 }), n(896048);
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(397927),
+    l = n(397927),
     s = n(775602),
-    o = n(235986),
-    l = n(899343),
+    a = n(235986),
+    o = n(899343),
     c = n(796012),
-    u = n(752472);
+    d = n(752472);
 
-function d(e) {
+function u(e) {
     let {
         purchaseState: t,
         currentStep: n,
-        onClose: d
-    } = e, [f, p] = (0, l.f)({
+        onClose: u
+    } = e, [_, p] = (0, o.f)({
         purchaseState: t,
         currentStep: n,
         initialScene: c.V1.Scenes.ENTRY,
         purchaseScene: c.V1.Scenes.STARS,
         errorScene: c.V1.Scenes.ERROR,
         successScene: c.V1.Scenes.SUCCESS
-    }), _ = (0, i.bG)([s.A], () => s.A.useReducedMotion);
-    return (0, r.jsxs)(a.rQ0, {
+    }), m = (0, i.bG)([s.A], () => s.A.useReducedMotion);
+    return (0, r.jsxs)(l.rQ0, {
         "data-migration-pending": !0,
-        align: o.A.Align.START,
-        className: u.wx,
+        align: a.A.Align.START,
+        className: d.wx,
         separator: !1,
         children: [(0, r.jsx)(c.V1, {
-            className: u.lY,
-            nextScene: f,
+            className: d.lY,
+            nextScene: _,
             onScenePlay: e => p(c.V1.getNextScene(e)),
             pauseWhileUnfocused: !1,
-            pause: _
+            pause: m
         }), (0, r.jsx)("div", {
-            className: u.qd
-        }), (0, r.jsx)(a.s_y, {
+            className: d.qd
+        }), (0, r.jsx)(l.s_y, {
             "data-migration-pending": !0,
-            onClick: d,
-            className: u.b
+            onClick: u,
+            className: d.b
         })]
     })
 }

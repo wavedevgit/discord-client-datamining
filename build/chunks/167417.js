@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(974213),
-    s = n(568385),
-    o = n(150934),
+    o = n(568385),
+    s = n(150934),
     l = n(452027),
     c = n(460890),
     u = n(2441);
@@ -93,7 +93,7 @@ function g(e) {
             onChange: O,
             "data-mana-component": "checkbox-group",
             isDisabled: g,
-            children: p.map(e => (0, r.jsx)(s.J, {
+            children: p.map(e => (0, r.jsx)(o.J, {
                 disabled: g || e.disabled,
                 checked: m.includes(e.value),
                 label: e.label,
@@ -105,7 +105,7 @@ function g(e) {
             className: u.O,
             children: p.map(e => (0, r.jsx)("div", {
                 className: u.I,
-                children: (0, r.jsx)(o.K, {
+                children: (0, r.jsx)(s.K, {
                     disabled: g || e.disabled,
                     checked: m.includes(e.value),
                     label: e.label,

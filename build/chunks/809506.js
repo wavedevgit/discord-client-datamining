@@ -8,14 +8,14 @@ var r = t(627968),
     l = t(503698),
     a = t.n(l),
     i = t(835245),
-    o = t(397927),
-    s = t(408018),
+    s = t(397927),
+    o = t(408018),
     d = t(133343),
     u = t(95701),
     c = t(31717),
     g = t(652215),
-    p = t(985018),
-    f = t(502512),
+    f = t(985018),
+    p = t(502512),
     m = t(648359);
 let v = (0, i.A)(),
     h = (0, u.createChannelRecord)({
@@ -23,7 +23,7 @@ let v = (0, i.A)(),
         type: g.rbe.DM
     });
 
-function q() {
+function b() {
     return new Promise(e => {
         e({
             shouldClear: !1,
@@ -32,7 +32,7 @@ function q() {
     })
 }
 
-function b(e) {
+function q(e) {
     var A;
     let {
         hasError: t,
@@ -61,12 +61,12 @@ function C(e) {
         showCharacterCount: j = !1,
         placeholder: U,
         required: V,
-        value: O,
-        enableThemedBackground: x = !1,
+        value: x,
+        enableThemedBackground: O = !1,
         parentModalKey: y,
         label: P,
         errorMessage: K
-    } = e, N = (0, o.xW1)(), [I, F] = n.useState(() => (0, s.x7)(O)), T = n.useRef(!0 === u), X = null != t ? t : null == N ? void 0 : N.titleId, W = null != (A = null == N ? void 0 : N.errorId) ? A : v;
+    } = e, N = (0, s.xW1)(), [I, F] = n.useState(() => (0, o.x7)(x)), T = n.useRef(!0 === u), X = null != t ? t : null == N ? void 0 : N.titleId, W = null != (A = null == N ? void 0 : N.errorId) ? A : v;
 
     function Q(e, A, t) {
         m(A), F(t)
@@ -92,7 +92,7 @@ function C(e) {
             disableEnterToSubmit: !0
         }
     }), [u]);
-    return (0, r.jsx)(o.D0$, {
+    return (0, r.jsx)(s.D0$, {
         label: P,
         errorMessage: K,
         id: i,
@@ -105,14 +105,14 @@ function C(e) {
                 "aria-labelledby": X,
                 "aria-errormessage": null == e ? void 0 : e.errorMessageId,
                 "aria-invalid": (null == e ? void 0 : e.errorMessageId) != null,
-                className: f.T,
-                innerClassName: a()(l, f.n),
+                className: p.T,
+                innerClassName: a()(l, p.n),
                 maxCharacterCount: g,
                 onChange: Q,
                 placeholder: U,
                 required: V,
                 channel: h,
-                textValue: O,
+                textValue: x,
                 richValue: I,
                 type: S,
                 onBlur: () => {
@@ -122,17 +122,17 @@ function C(e) {
                     T.current = !0
                 },
                 focused: T.current,
-                onSubmit: null != C ? C : q,
-                disableThemedBackground: !x,
+                onSubmit: null != C ? C : b,
+                disableThemedBackground: !O,
                 parentModalKey: y,
                 emojiPickerCloseOnModalOuterClick: !0,
-                children: [!0 === j && (0, r.jsx)(b, {
-                    hasError: null != N.error || null != g && O.length > g,
-                    text: O,
+                children: [!0 === j && (0, r.jsx)(q, {
+                    hasError: null != N.error || null != g && x.length > g,
+                    text: x,
                     maxLength: g
-                }), null != g && (0, r.jsx)(o.AC4, {
+                }), null != g && (0, r.jsx)(s.AC4, {
                     id: v,
-                    children: p.intl.format(p.t["+DFxLc"], {
+                    children: f.intl.format(f.t["+DFxLc"], {
                         maxLength: g
                     })
                 })]

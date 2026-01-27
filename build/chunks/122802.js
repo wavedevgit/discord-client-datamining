@@ -196,7 +196,7 @@ function L(e) {
                                     currentTarget: e,
                                     target: e
                                 }, () => (0, i.jsx)(d.W1t, {
-                                    "data-menu-migration-ready": !0,
+                                    "data-menu-migrated-auto": !0,
                                     navId: "ChannelNotificationCustomSettingsItems",
                                     "aria-label": G.intl.string(G.t.kMdneQ),
                                     onClose: () => {},

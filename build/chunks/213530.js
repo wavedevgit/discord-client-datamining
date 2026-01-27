@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(503698),
     a = n.n(i),
-    s = n(311907),
-    o = n(582754),
+    o = n(311907),
+    s = n(582754),
     l = n(607470),
     c = n(544028),
     u = n(515648);
@@ -16,7 +16,7 @@ let d = e => {
     let {
         className: t,
         options: n
-    } = e, i = (0, s.bG)([c.A], () => (0, o.Mw)(c.A.theme));
+    } = e, i = (0, o.bG)([c.A], () => (0, s.Mw)(c.A.theme));
     return null == n ? null : null != n ? n.animated ? (0, r.jsx)(l.A, {
         src: n.getSrc(i),
         className: a()(u.O, t),

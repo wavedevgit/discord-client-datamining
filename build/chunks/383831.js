@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(869003),
-    s = n(688810),
-    o = n(384059),
+    o = n(688810),
+    s = n(384059),
     l = n(709562),
     c = n(985018);
 
@@ -79,8 +79,8 @@ function m(e) {
         centerButton: u = !1
     } = e, f = _(e, ["location", "applicationId", "centerButton"]), {
         parentAnalyticsLocation: h
-    } = (0, s.Ay)(), m = u ? l.l : l.A, g = () => {
-        (0, o.X)(h, o.O.LEAVE_ACTIVITY), a.A.leaveActivity({
+    } = (0, o.Ay)(), m = u ? l.l : l.A, g = () => {
+        (0, s.X)(h, s.O.LEAVE_ACTIVITY), a.A.leaveActivity({
             location: t,
             applicationId: n,
             showFeedback: !0

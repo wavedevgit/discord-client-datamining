@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(187322),
+    o = n.n(a),
+    s = n(187322),
     l = n(842867);
 
 function c(e, t, n) {
@@ -94,14 +94,14 @@ function h(e, t) {
             ref: e => {
                 "function" == typeof I ? I(e) : null != I && (I.current = e), S.current = e
             },
-            className: s()(m, {
+            className: o()(m, {
                 [e]: !0,
                 [t]: b
             }),
             style: (0, l.Ze)(v, E),
             dir: g
         }, A), {
-            children: (0, r.jsxs)(o.xp, {
+            children: (0, r.jsxs)(s.xp, {
                 containerRef: S,
                 children: [h, T]
             })

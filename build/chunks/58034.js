@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(873298),
-    s = n(973654),
-    o = n(964404),
+    o = n(973654),
+    s = n(964404),
     l = n(617617),
     c = n(954571),
     u = n(823459),
@@ -19,12 +19,12 @@ var r = n(64700),
     _ = n(185928);
 let h = () => {
         let e = (0, i.bG)([d.A], () => d.A.gradientPreset),
-            t = (0, i.bG)([o.Ay], () => o.Ay.useSystemTheme === _.Q_.ON),
+            t = (0, i.bG)([s.Ay], () => s.Ay.useSystemTheme === _.Q_.ON),
             [n, a] = (0, r.useState)(t);
         return (0, r.useEffect)(() => {
             null == e && a(t)
         }, [e, t]), (0, r.useCallback)(() => {
-            null == e || ((0, u.S8)(), n && (0, s.k7)(_.Q_.ON))
+            null == e || ((0, u.S8)(), n && (0, o.k7)(_.Q_.ON))
         }, [e, n])
     },
     m = () => {

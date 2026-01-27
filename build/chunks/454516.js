@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 454516, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(962125),
     p = n(859126),
     f = n(287809),
-    b = n(996439),
-    h = n(997509),
+    h = n(996439),
+    b = n(997509),
     x = n(555337),
     j = n(203498),
     _ = n(660496),
@@ -159,24 +159,24 @@ function T(e) {
         guildId: t,
         storedSearchQuery: n
     } = e, [l, s] = i.useState(null != n ? n : ""), [a, c] = i.useState(!1), u = i.useCallback(() => {
-        h.A.setSection(O.BEX.SAFETY), (0, j.K)(_.C.DM_AND_SPAM_PROTECTION)
+        b.A.setSection(O.BEX.SAFETY), (0, j.K)(_.C.DM_AND_SPAM_PROTECTION)
     }, []), g = i.useCallback(e => {
-        s(e), 0 === e.trim().length && h.A.setSearchQuery(e)
+        s(e), 0 === e.trim().length && b.A.setSearchQuery(e)
     }, []), m = i.useCallback(() => {
-        s(""), h.A.setSearchQuery("")
+        s(""), b.A.setSearchQuery("")
     }, []), f = i.useCallback(async () => {
         if (0 === l.trim().length) {
-            h.A.setSearchQuery(l), c(!1);
+            b.A.setSearchQuery(l), c(!1);
             return
         }
         if (!a) try {
             c(!0);
             let [e, n] = (0, p.H)(l), r = e[0];
-            h.A.setSearchQuery(l), await d.A.searchGuildBans(t, r, n), c(!1)
+            b.A.setSearchQuery(l), await d.A.searchGuildBans(t, r, n), c(!1)
         } catch (e) {
             c(!1)
         }
-    }, [t, a, l]), b = i.useCallback(e => {
+    }, [t, a, l]), h = i.useCallback(e => {
         "Enter" === e.key && (e.preventDefault(), e.stopPropagation(), f())
     }, [f]);
     return (0, r.jsxs)("div", {
@@ -199,7 +199,7 @@ function T(e) {
                 placeholder: v.intl.string(v.t.MiqUmf),
                 "aria-label": v.intl.string(v.t.MiqUmf),
                 onChange: g,
-                onKeyDown: b,
+                onKeyDown: h,
                 onClear: m
             }), (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
@@ -221,7 +221,7 @@ function C() {
     let {
         guild: c,
         searchQuery: m
-    } = (0, a.bG)([x.A], () => x.A.getProps(), [], l.isEqual), h = null != m && m.trim().length > 0, j = (0, u.A)(h), _ = h !== j, [A] = (0, a.bG)([x.A], () => x.A.getBans(), [], b.D), S = null != (e = null == A ? void 0 : A.size) ? e : 0, C = (0, g.Ay)(), P = null != (t = null == c ? void 0 : c.id) ? t : O.dJq, w = i.useRef(null), R = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
+    } = (0, a.bG)([x.A], () => x.A.getProps(), [], l.isEqual), b = null != m && m.trim().length > 0, j = (0, u.A)(b), _ = b !== j, [A] = (0, a.bG)([x.A], () => x.A.getBans(), [], h.D), S = null != (e = null == A ? void 0 : A.size) ? e : 0, C = (0, g.Ay)(), P = null != (t = null == c ? void 0 : c.id) ? t : O.dJq, w = i.useRef(null), R = i.useCallback(e => null == e || 0 === e.length ? e => null != e : t => {
         if (null == t || 0 === e.trim().length) return !1;
         let [
             [n], r
@@ -250,10 +250,10 @@ function C() {
         H = i.useMemo(() => s().chunk(G, U.pageSize), [U.pageSize, G]),
         V = i.useCallback(e => {
             var t, n, r;
-            null == (t = w.current) || t.scrollToSectionTop(0), (e + 1) * U.pageSize > G.length && k && !h && (K.current = null != (n = null == (r = G[G.length - 1]) ? void 0 : r.id) ? n : null, F(K.current)), (null != H[e - 1] || k) && B(t => N(E({}, t), {
+            null == (t = w.current) || t.scrollToSectionTop(0), (e + 1) * U.pageSize > G.length && k && !b && (K.current = null != (n = null == (r = G[G.length - 1]) ? void 0 : r.id) ? n : null, F(K.current)), (null != H[e - 1] || k) && B(t => N(E({}, t), {
                 currentPage: e
             }))
-        }, [U.pageSize, G, k, H, F, h]),
+        }, [U.pageSize, G, k, H, F, b]),
         K = i.useRef(null);
     i.useEffect(() => {
         F(K.current)

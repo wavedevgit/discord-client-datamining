@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048), n(747238), n(321073);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(283047),
     c = n(617617);
 n(73510);
@@ -105,7 +105,7 @@ function v() {
         recentUses: e.recentUses.map(Number).filter(e => e > 0)
     })), m.pendingUsages)
 }
-class A extends(r = s.Ay.PersistedStore) {
+class A extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         null != e && (m = e), this.syncWith([c.A], v)
     }
@@ -127,7 +127,7 @@ class A extends(r = s.Ay.PersistedStore) {
     }
 }
 f(A, "displayName", "ApplicationCommandFrecencyStore"), f(A, "persistKey", "ApplicationCommandFrecencyV2");
-let I = new A(o.h, {
+let I = new A(s.h, {
     APPLICATION_COMMAND_USED: O,
     USER_SETTINGS_PROTO_UPDATE: b
 })

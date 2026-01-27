@@ -1,72 +1,71 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 699352, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => s,
-    J: () => o
+    A: () => a,
+    J: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(21878),
-    a = n(756369);
+    l = n(756369);
 
-function s(e) {
+function a(e) {
     let {
         channelMessageProps: {
             message: t,
             channel: n,
-            compact: s = !1
+            compact: a = !1
         },
-        hasSpoilerEmbeds: o,
-        hasBailedAst: l,
+        hasSpoilerEmbeds: s,
+        hasBailedAst: o,
         handleContextMenu: c,
         isInteracting: u,
         isAutomodBlockedMessage: d,
-        isMessageSnapshot: f,
-        renderThreadAccessory: p,
-        renderSuppressEmbeds: _,
-        renderReactions: h,
-        forceAddReactions: m,
-        disableComponentInteractivity: g,
-        className: E
+        isMessageSnapshot: p,
+        renderThreadAccessory: m,
+        renderSuppressEmbeds: f,
+        renderReactions: g,
+        forceAddReactions: h,
+        disableComponentInteractivity: _,
+        className: b
     } = e;
     return d ? null : (0, r.jsx)(i.A, {
         message: t,
-        children: (0, r.jsx)(a.Ay, {
-            className: E,
+        children: (0, r.jsx)(l.Ay, {
+            className: b,
             isInteracting: u,
             message: t,
             channel: n,
-            compact: s,
-            hasSpoilerEmbeds: o,
-            hasBailedAst: l,
-            isMessageSnapshot: f,
+            compact: a,
+            hasSpoilerEmbeds: s,
+            hasBailedAst: o,
+            isMessageSnapshot: p,
             onMediaItemContextMenu: c,
-            renderThreadAccessory: p,
-            disableComponentInteractivity: g,
-            renderSuppressEmbeds: _,
-            forceAddReactions: m,
-            renderReactions: h
+            renderThreadAccessory: m,
+            disableComponentInteractivity: _,
+            renderSuppressEmbeds: f,
+            forceAddReactions: h,
+            renderReactions: g
         })
     })
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     let {
         message: i,
-        channel: s,
-        compact: o = !1,
-        renderThreadAccessory: l,
+        channel: a,
+        compact: s = !1,
+        renderThreadAccessory: o,
         disableReactionCreates: c,
         disableReactionUpdates: u
     } = e;
-    return (0, r.jsx)(a.OC, {
+    return (0, r.jsx)(l.OC, {
         message: i,
-        channel: s,
-        compact: o,
+        channel: a,
+        compact: s,
         hasSpoilerEmbeds: t,
         hasBailedAst: n,
-        renderThreadAccessory: l,
+        renderThreadAccessory: o,
         disableReactionCreates: c,
         disableReactionUpdates: u
     })

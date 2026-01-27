@@ -10,8 +10,8 @@ var r = n(562465);
 n(73153);
 var i = n(626584),
     a = n(739508),
-    s = n(652215);
-let o = new i.A("OrderActionCreators");
+    o = n(652215);
+let s = new i.A("OrderActionCreators");
 var l = function(e) {
         return e[e.UNSPECIFIED = 0] = "UNSPECIFIED", e[e.DRAFT = 1] = "DRAFT", e[e.SIGNED = 2] = "SIGNED", e[e.DISCARDED = 3] = "DISCARDED", e[e.SIGNING_IN_PROGRESS = 4] = "SIGNING_IN_PROGRESS", e
     }({}),
@@ -21,11 +21,11 @@ var l = function(e) {
 async function u(e) {
     try {
         return (await r.Bo.get({
-            url: s.Rsh.ORDER_GET(e),
+            url: o.Rsh.ORDER_GET(e),
             rejectWithError: !0
         })).body || null
     } catch (t) {
-        return o.error("failed to fetch order", {
+        return s.error("failed to fetch order", {
             error: t,
             orderId: e
         }), (0, a.pM)(t, {

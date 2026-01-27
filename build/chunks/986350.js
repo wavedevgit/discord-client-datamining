@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 986350, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(29352),
-    s = n(652215),
-    o = n(985018),
-    l = n(144365);
+    l = n(29352),
+    a = n(652215),
+    s = n(985018),
+    o = n(144365);
 
 function c(e) {
     var t;
@@ -19,31 +18,31 @@ function c(e) {
             onDeleteMessage: u,
             children: d
         } = e,
-        f = null == (t = c.interactionMetadata) ? void 0 : t.ephemerality_reason,
-        p = () => u(c, !0);
-    if (null != f) {
-        let e = (0, a.R)(f);
+        p = null == (t = c.interactionMetadata) ? void 0 : t.ephemerality_reason,
+        m = () => u(c, !0);
+    if (null != p) {
+        let e = (0, l.R)(p);
         n = (0, r.jsx)("div", {
-            className: l.rd,
-            children: o.intl.format(o.t.wx1tLQ, {
-                handleDelete: p,
+            className: o.rd,
+            children: s.intl.format(s.t.wx1tLQ, {
+                handleDelete: m,
                 reason: e
             })
         })
-    } else n = c.type === s.lAJ.STAGE_RAISE_HAND ? o.intl.format(o.t["qDAX++"], {
-        handleDelete: p
-    }) : o.intl.format(o.t.uX3ecL, {
+    } else n = c.type === a.lAJ.STAGE_RAISE_HAND ? s.intl.format(s.t["qDAX++"], {
+        handleDelete: m
+    }) : s.intl.format(s.t.uX3ecL, {
         count: 1,
         countMessages: 1,
-        handleDelete: p
+        handleDelete: m
     });
     return (0, r.jsxs)("div", {
-        className: l.XO,
+        className: o.XO,
         onClick: e => e.stopPropagation(),
         children: [(0, r.jsx)(i.bMW, {
             size: "xs",
             color: "currentColor",
-            className: l.Kk
+            className: o.Kk
         }), n, d]
     })
 }

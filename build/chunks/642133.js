@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = 12e4,
+let s = 12e4,
     l = {},
     c = {};
 
@@ -87,10 +87,10 @@ class g extends(r = i.Ay.Store) {
     shouldFetch(e) {
         if (null == e) return !1;
         let t = c[e];
-        return null == t || Date.now() - t > o
+        return null == t || Date.now() - t > s
     }
 }
-s(g, "displayName", "GuildRoleMemberCountStore");
+o(g, "displayName", "GuildRoleMemberCountStore");
 let E = new g(a.h, {
     GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS: u,
     GUILD_ROLE_MEMBER_COUNT_UPDATE: d,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(827734),
     c = n(717421),
     u = n(603392),
@@ -90,18 +90,18 @@ function N(e, t, n, i) {
     let a = e.to({
             output: [t, n]
         }),
-        s = i ? [v, v, T, T] : [v, I, I, T],
+        o = i ? [v, v, T, T] : [v, I, I, T],
         l = i ? [A, A, C, C] : [A, S, S, C];
     return (0, r.jsxs)("svg", {
         viewBox: "0 0 20 20",
         fill: "none",
-        children: [(0, r.jsx)(o.animated.path, {
+        children: [(0, r.jsx)(s.animated.path, {
             fill: a,
             d: e.to({
                 range: [0, .3, .7, 1],
-                output: s
+                output: o
             })
-        }), (0, r.jsx)(o.animated.path, {
+        }), (0, r.jsx)(s.animated.path, {
             fill: a,
             d: e.to({
                 range: [0, .3, .7, 1],
@@ -149,9 +149,9 @@ function w(e) {
         children: e => (0, r.jsx)(f.vN, E(m({}, h), {
             within: !0,
             offset: -2,
-            children: (0, r.jsxs)(o.animated.div, {
+            children: (0, r.jsxs)(s.animated.div, {
                 "data-toggleable-component": "switch",
-                className: s()(_.kL, {
+                className: o()(_.kL, {
                     [_.KD]: n,
                     [_.r9]: a
                 }),
@@ -163,7 +163,7 @@ function w(e) {
                         output: [T, C]
                     })
                 },
-                children: [(0, r.jsxs)(o.animated.svg, {
+                children: [(0, r.jsxs)(s.animated.svg, {
                     className: _.aw,
                     viewBox: "0 0 28 20",
                     preserveAspectRatio: "xMinYMid meet",
@@ -174,7 +174,7 @@ function w(e) {
                         })
                     },
                     "aria-hidden": !0,
-                    children: [(0, r.jsx)(o.animated.rect, {
+                    children: [(0, r.jsx)(s.animated.rect, {
                         fill: "white",
                         x: w.to({
                             range: [0, .3, .7, 1],

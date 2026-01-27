@@ -15,8 +15,8 @@ n.d(t, {
 var r = n(412703),
     i = n(73153),
     a = n(975807),
-    s = n(882997),
-    o = n(780964),
+    o = n(882997),
+    s = n(780964),
     l = n(203982),
     c = n(723702),
     u = n(561844),
@@ -71,7 +71,7 @@ function b(e, t) {
         sourceQuestContent: t.sourceQuestContent,
         questContentCTA: t.ctaContent,
         impressionId: t.impressionId
-    }), (0, s.A)({
+    }), (0, o.A)({
         platformType: n,
         location: t.ctaContent
     })
@@ -105,7 +105,7 @@ function I() {
         let {
             openUserSettings: e
         } = n(840065);
-        e(o.X.CONNECTIONS_PANEL, {
+        e(s.X.CONNECTIONS_PANEL, {
             section: _.nc_.CONNECTIONS
         })
     }
@@ -139,12 +139,12 @@ function T(e, t) {
         sourceQuestContent: t.sourceQuestContent
     });
     let r = g(n);
-    if (1 === r.length) return (0, s.A)({
+    if (1 === r.length) return (0, o.A)({
         platformType: r.at(0)
     });
     i.h.dispatch({
         type: "CONNECTIONS_GRID_MODAL_SHOW",
-        onComplete: e => (0, s.A)({
+        onComplete: e => (0, o.A)({
             platformType: e
         }),
         includedPlatformTypes: new Set(r)

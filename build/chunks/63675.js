@@ -1,96 +1,95 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 63675, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => E
+    A: () => h
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(33851),
-    o = n.n(s),
-    l = n(827734),
+    a = n.n(s),
+    o = n(827734),
     c = n(397927),
-    u = n(654107),
-    d = n(950191),
-    f = n(101928),
+    d = n(654107),
+    u = n(950191),
+    _ = n(101928),
     p = n(927578),
-    _ = n(911180),
-    h = n(128450),
-    m = n(985018),
-    g = n(114403);
+    m = n(911180),
+    g = n(128450),
+    A = n(985018),
+    f = n(114403);
 
-function E(e) {
+function h(e) {
     let {
         user: t,
         pendingAvatarSrc: n,
         pendingColors: i,
         onThemeColorsChange: s,
-        preventDisabled: E,
-        guildId: y,
-        className: b,
-        showPremiumIcon: O = !0,
-        showResetThemeButton: v = !1,
-        forcedDivider: A
-    } = e, I = (0, d.Ay)(t.id, y), {
-        primaryColor: S,
-        secondaryColor: T
-    } = (0, f.A)({
+        preventDisabled: h,
+        guildId: b,
+        className: E,
+        showPremiumIcon: x = !0,
+        showResetThemeButton: O = !1,
+        forcedDivider: C
+    } = e, I = (0, u.Ay)(t.id, b), {
+        primaryColor: T,
+        secondaryColor: S
+    } = (0, _.A)({
         user: t,
         displayProfile: I,
         pendingThemeColors: i,
         isPreview: !0
-    }), C = p.Ay.canUsePremiumProfileCustomization(t), N = null != n ? n : t.getAvatarURL(y, 80), w = (0, c.rdh)(l.A.unsafe_rawColors.PRIMARY_530).hex(), R = (0, u.rh)(N, w, !1);
-    if (null == S || null == T) return null;
+    }), j = p.Ay.canUsePremiumProfileCustomization(t), v = null != n ? n : t.getAvatarURL(b, 80), N = (0, c.rdh)(o.A.unsafe_rawColors.PRIMARY_530).hex(), y = (0, d.rh)(v, N, !1);
+    if (null == T || null == S) return null;
     let P = e => {
-        s(o()(e, null == I ? void 0 : I.themeColors) ? void 0 : e)
+        s(a()(e, null == I ? void 0 : I.themeColors) ? void 0 : e)
     };
-    return (0, r.jsx)(h.A, {
-        title: m.intl.string(m.t.DMeO2X),
-        disabled: !C && !E,
-        className: a()(g.__invalid_profileThemesSection, b),
-        showPremiumIcon: O,
-        forcedDivider: A,
+    return (0, r.jsx)(g.A, {
+        title: A.intl.string(A.t.DMeO2X),
+        disabled: !j && !h,
+        className: l()(f.__invalid_profileThemesSection, E),
+        showPremiumIcon: x,
+        forcedDivider: C,
         children: (0, r.jsxs)("div", {
-            className: g.hd,
+            className: f.hd,
             children: [(0, r.jsx)("div", {
-                className: g.YX,
-                children: (0, r.jsx)(_.A, {
-                    onChange: e => P([e, T]),
-                    color: S,
-                    suggestedColors: R,
+                className: f.YX,
+                children: (0, r.jsx)(m.A, {
+                    onChange: e => P([e, S]),
+                    color: T,
+                    suggestedColors: y,
                     showEyeDropper: !0,
                     label: (0, r.jsx)(c.Text, {
-                        className: g.yz,
+                        className: f.yz,
                         color: "text-default",
                         variant: "text-xs/normal",
                         "aria-hidden": !0,
-                        children: m.intl.string(m.t.C3KTQk)
+                        children: A.intl.string(A.t.C3KTQk)
                     })
                 })
             }), (0, r.jsx)("div", {
-                className: g.YX,
-                children: (0, r.jsx)(_.A, {
-                    onChange: e => P([S, e]),
-                    color: T,
-                    suggestedColors: R,
+                className: f.YX,
+                children: (0, r.jsx)(m.A, {
+                    onChange: e => P([T, e]),
+                    color: S,
+                    suggestedColors: y,
                     showEyeDropper: !0,
                     label: (0, r.jsx)(c.Text, {
-                        className: g.yz,
+                        className: f.yz,
                         color: "text-default",
                         variant: "text-xs/normal",
                         "aria-hidden": !0,
-                        children: m.intl.string(m.t["8elvy6"])
+                        children: A.intl.string(A.t["8elvy6"])
                     })
                 })
-            }), v && null != y && (0, r.jsx)("div", {
+            }), O && null != b && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: g.WA,
+                className: f.WA,
                 children: (0, r.jsx)(c.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: m.intl.string(m.t["L+GmoR"]),
+                    text: A.intl.string(A.t["L+GmoR"]),
                     onClick: () => P([null, null])
                 })
             })]

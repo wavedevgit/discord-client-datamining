@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(900283),
+    o = n.n(a),
+    s = n(900283),
     l = n(563014),
     c = n(397927),
     u = n(885621),
@@ -57,45 +57,56 @@ function m(e) {
     let {
         color: t = "default",
         label: n,
-        checked: a,
-        disabled: f = !1,
-        isFocused: _,
-        menuItemProps: m,
-        action: g,
-        className: E
+        subtext: a,
+        subtextLineClamp: f,
+        checked: _,
+        disabled: m = !1,
+        isFocused: g,
+        menuItemProps: E,
+        action: y,
+        className: b
     } = e, {
-        onInteraction: y
-    } = i.useContext(o.x), b = i.useRef(null), O = i.useId();
+        onInteraction: O
+    } = i.useContext(s.x), v = i.useRef(null), A = i.useId();
     i.useEffect(() => {
-        _ && (0, l.Y)(b)
-    }, [_]);
-    let v = i.useCallback(e => {
-        g(e), null == y || y({
-            type: o.Q.SWITCH
+        g && (0, l.Y)(v)
+    }, [g]);
+    let I = i.useCallback(e => {
+        y(e), null == O || O({
+            type: s.Q.SWITCH
         })
-    }, [g, y]);
+    }, [y, O]);
     return (0, r.jsxs)("div", h(p({
-        ref: b,
-        className: s()(d.item, d.switchItem, d.hideInteraction, u.jV[t], E, {
-            [d.disabled]: f
+        ref: v,
+        className: o()(d.item, d.switchItem, d.hideInteraction, u.jV[t], b, {
+            [d.disabled]: m
         }),
-        "aria-checked": a,
-        "aria-disabled": f
-    }, m), {
+        "aria-checked": _,
+        "aria-disabled": m
+    }, E), {
         children: [null != n ? (0, r.jsx)("div", {
             className: d.labelContainer,
-            children: (0, r.jsx)("label", {
-                htmlFor: O,
+            children: (0, r.jsxs)("div", {
                 className: d.label,
-                children: n
+                children: [(0, r.jsx)("label", {
+                    htmlFor: A,
+                    children: n
+                }), null != a && (0, r.jsx)(c.Text, {
+                    variant: "text-xs/normal",
+                    className: o()(d.subtext, {
+                        [d.subtextLineClamp]: null != f
+                    }),
+                    lineClamp: f,
+                    children: a
+                })]
             })
         }) : null, (0, r.jsx)("div", {
             className: d.switchContainer,
             children: (0, r.jsx)(c.dOG, {
-                id: O,
-                checked: a,
-                onChange: v,
-                disabled: f
+                id: A,
+                checked: _,
+                onChange: I,
+                disabled: m
             })
         })]
     }))

@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(64700),
     i = n(429913),
     a = n(403362);
-let s = 5;
+let o = 5;
 
-function o(e) {
+function s(e) {
     return (t, n) => {
-        var r, i, a, s;
-        let o = null != (r = null == (a = e[t.id]) ? void 0 : a.score) ? r : 0,
-            l = null != (i = null == (s = e[n.id]) ? void 0 : s.score) ? i : 0;
-        return o !== l ? l - o : 0
+        var r, i, a, o;
+        let s = null != (r = null == (a = e[t.id]) ? void 0 : a.score) ? r : 0,
+            l = null != (i = null == (o = e[n.id]) ? void 0 : o.score) ? i : 0;
+        return s !== l ? l - s : 0
     }
 }
 
@@ -27,16 +27,16 @@ function c(e) {
     let t = e.gameActivity,
         n = l(e),
         i = r.useMemo(() => {
-            let e = o(t);
+            let e = s(t);
             return n.sort(e), n
         }, [n, t]),
-        a = r.useMemo(() => i.slice(0, s), [i]);
+        a = r.useMemo(() => i.slice(0, o), [i]);
     return {
         gamesToDisplay: a,
         lastGameToDisplay: r.useMemo(() => {
             var e;
-            return null != (e = i[s]) ? e : null
+            return null != (e = i[o]) ? e : null
         }, [i]),
-        remainingGames: r.useMemo(() => i.slice(s), [i])
+        remainingGames: r.useMemo(() => i.slice(o), [i])
     }
 }

@@ -8,13 +8,13 @@ var r = n(959462),
     i = n(64700);
 
 function a(e, t, n, a) {
-    let s = (0, r.J)(n),
-        o = null == n;
+    let o = (0, r.J)(n),
+        s = null == n;
     (0, i.useEffect)(() => {
-        if (o || !e.current) return;
+        if (s || !e.current) return;
         let n = e.current;
-        return n.addEventListener(t, s, a), () => {
-            n.removeEventListener(t, s, a)
+        return n.addEventListener(t, o, a), () => {
+            n.removeEventListener(t, o, a)
         }
-    }, [e, t, a, o, s])
+    }, [e, t, a, s, o])
 }

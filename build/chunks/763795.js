@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(235986),
+    o = n(397927),
+    s = n(235986),
     l = n(224016),
     c = n(217392),
     u = n(336378),
@@ -44,12 +44,12 @@ let b = e => {
         let {
             isTier0: t,
             discountAmount: n
-        } = e, i = (0, h.V)(), o = null != i && i.trial_id === m.Dw, l = g.intl.string(g.t.IBYG5U);
+        } = e, i = (0, h.V)(), s = null != i && i.trial_id === m.Dw, l = g.intl.string(g.t.IBYG5U);
         return void 0 !== n ? l = g.intl.formatToPlainString(g.t.iiLbvu, {
             percent: n
-        }) : o && (l = g.intl.string(g.t.gtNqJQ)), (0, r.jsx)("div", {
+        }) : s && (l = g.intl.string(g.t.gtNqJQ)), (0, r.jsx)("div", {
             className: E.TX,
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(o.Text, {
                 variant: "text-xs/bold",
                 className: a()(E.El, {
                     [E.LD]: t
@@ -85,9 +85,9 @@ let b = e => {
             }, I),
             children: [(S || T) && (0, r.jsx)(d.A, {
                 className: E.N8
-            }), g(), (0, r.jsxs)(o.A, {
-                align: o.A.Align.START,
-                justify: o.A.Justify.BETWEEN,
+            }), g(), (0, r.jsxs)(s.A, {
+                align: s.A.Align.START,
+                justify: s.A.Justify.BETWEEN,
                 className: E.LI,
                 children: [(0, r.jsxs)("div", {
                     children: [(0, r.jsx)(n, {
@@ -98,7 +98,7 @@ let b = e => {
                         isTier0: A === m.PremiumTypes.TIER_0,
                         discountAmount: T ? w : void 0
                     })]
-                }), !i && (0, r.jsx)(s.s_y, {
+                }), !i && (0, r.jsx)(o.s_y, {
                     "data-migration-pending": !0,
                     hideOnFullscreen: f,
                     onClick: O,

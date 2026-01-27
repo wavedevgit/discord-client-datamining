@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(459127);
+    o = n(397927),
+    s = n(459127);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -85,9 +85,9 @@ function g(e) {
         children: l,
         style: u
     } = e, p = f(e, ["type", "className", "disabled", "children", "style"]), g = h;
-    return i && (g = m), (0, r.jsx)(s.Text, d(c({
+    return i && (g = m), (0, r.jsx)(o.Text, d(c({
         variant: "text-sm/normal",
-        className: a()(o[t], n, o[g]),
+        className: a()(s[t], n, s[g]),
         style: u
     }, p), {
         children: l

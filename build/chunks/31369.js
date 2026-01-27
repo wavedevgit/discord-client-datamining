@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = n(927813).A.Millis.HOUR,
+let s = n(927813).A.Millis.HOUR,
     l = {
         lastReportedAtMs: null
     },
@@ -33,13 +33,13 @@ class d extends(r = i.Ay.PersistedStore) {
         c = null != e ? e : l
     }
     isCooldownElapsed() {
-        return null == c.lastReportedAtMs || Date.now() - c.lastReportedAtMs >= o
+        return null == c.lastReportedAtMs || Date.now() - c.lastReportedAtMs >= s
     }
     getState() {
         return c
     }
 }
-s(d, "displayName", "FriendOnlineTimerStore"), s(d, "persistKey", "FriendOnlineTimerStore");
+o(d, "displayName", "FriendOnlineTimerStore"), o(d, "persistKey", "FriendOnlineTimerStore");
 let f = new d(a.h, {
     FRIEND_ONLINE_TIMER_REPORTED: u
 })

@@ -2,13 +2,13 @@
 /** chunk id: 425059, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(65821);
 var r = n(743445),
     i = n(407876),
     a = n(358579),
-    s = n(381941);
-class o extends i.A {
+    o = n(381941);
+class s extends i.A {
     async uploadFiles(e) {
         super.upload(e);
         let t = new Promise((e, t) => {
@@ -32,7 +32,7 @@ class o extends i.A {
                 t = null == e ? void 0 : e.error,
                 n = a instanceof Error ? a.message : String(a),
                 i = {
-                    type: s.ty.ERROR_SOURCE_UNKNOWN,
+                    type: o.ty.ERROR_SOURCE_UNKNOWN,
                     msg: n
                 };
             throw this._handleError({

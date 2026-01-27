@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(56121),
-    s = n(939341),
-    o = n(263577),
+    o = n(939341),
+    s = n(263577),
     l = n(583846),
     c = n(506326),
     u = n(868065),
@@ -29,7 +29,7 @@ let h = e => {
             selected: i
         } = e, {
             largeImage: a
-        } = (0, s.nO)({
+        } = (0, o.nO)({
             entry: t,
             showCoverImage: !1
         }), p = (0, l.TQ)(t);
@@ -48,7 +48,7 @@ let h = e => {
                         entry: t
                     }, n))
                 })]
-            }), (0, r.jsx)(o.V, {
+            }), (0, r.jsx)(s.V, {
                 src: null == a ? void 0 : a.src,
                 size: 48,
                 className: d.xn,

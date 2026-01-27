@@ -5,7 +5,7 @@ let r, i, a;
 n.d(t, {
     A: () => T
 }), n(896048), n(142703);
-var s, o = n(311907),
+var o, s = n(311907),
     l = n(73153),
     c = n(284016),
     u = n(253932),
@@ -78,7 +78,7 @@ function I(e) {
     } = e;
     r = t
 }
-class S extends(s = o.Ay.PersistedStore) {
+class S extends(o = s.Ay.PersistedStore) {
     initialize(e) {
         r = (m = _({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(f.A, c.A, d.A), this.syncWith([d.A, c.A], () => !0), f.A.whenInitialized(() => {
             E = !0

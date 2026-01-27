@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(577718),
     i = n(897513),
     a = n(985018),
-    s = n(467725),
-    o = n(397593),
+    o = n(467725),
+    s = n(397593),
     l = n(148758),
     c = n(689533),
     u = n(436244),
@@ -38,14 +38,14 @@ let _ = () => ({
     },
     [r.ZQ.OPTION_7]: {
         id: r.ZQ.OPTION_7,
-        source: s.A,
+        source: o.A,
         name: a.intl.string(a.t["PM+DU1"]),
         isVideo: !0,
         hotspotLocation: i._.ANIMATED_VIDEO_BG_CAPERNITE_DAY_NEW
     },
     [r.ZQ.OPTION_8]: {
         id: r.ZQ.OPTION_8,
-        source: o.A,
+        source: s.A,
         name: a.intl.string(a.t["3zoBh1"]),
         isVideo: !0,
         hotspotLocation: i._.ANIMATED_VIDEO_BG_CAPERNITE_NIGHT_NEW

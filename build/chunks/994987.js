@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 994987, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968),
     i = n(417597),
-    a = n(435371),
+    l = n(435371),
     s = n(397927),
-    o = n(287809),
-    l = n(923531),
+    a = n(287809),
+    o = n(923531),
     c = n(283900),
-    u = n(478311);
-let d = e => {
+    d = n(478311);
+let u = e => {
     let {
         userId: t,
         dmsSent: n,
-        callCount: d
-    } = e, f = (0, i.bG)([o.default], () => o.default.getUser(t));
-    return void 0 === f ? null : (0, r.jsx)(a.un, {
-        title: f.username,
-        body: (0, l.fq)(n, d),
+        callCount: u
+    } = e, _ = (0, i.bG)([a.default], () => a.default.getUser(t));
+    return void 0 === _ ? null : (0, r.jsx)(l.un, {
+        title: _.username,
+        body: (0, o.fq)(n, u),
         asContainer: !0,
         children: (0, r.jsx)("div", {
-            className: u.k,
+            className: d.k,
             children: (0, r.jsx)(c.H, {
-                user: f,
+                user: _,
                 avatarSize: s._3J.SIZE_40
             })
         })

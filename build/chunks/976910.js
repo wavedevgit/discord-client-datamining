@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(155718);
+    o = n(155718);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -45,7 +45,7 @@ function h(e) {
     let {
         credential: t
     } = e;
-    if (t.type !== s.Wq.WEBAUTHN || void 0 !== c.find(e => e.id === t.id)) return !1;
+    if (t.type !== o.Wq.WEBAUTHN || void 0 !== c.find(e => e.id === t.id)) return !1;
     c = [...c, t]
 }
 
@@ -53,7 +53,7 @@ function m(e) {
     let {
         credential: t
     } = e;
-    if (t.type !== s.Wq.WEBAUTHN) return !1;
+    if (t.type !== o.Wq.WEBAUTHN) return !1;
     c = c.map(e => e.id === t.id ? t : e)
 }
 
@@ -61,7 +61,7 @@ function g(e) {
     let {
         credential: t
     } = e;
-    if (t.type !== s.Wq.WEBAUTHN) return !1;
+    if (t.type !== o.Wq.WEBAUTHN) return !1;
     c = c.filter(e => e.id !== t.id)
 }
 class E extends(r = i.Ay.Store) {
@@ -78,7 +78,7 @@ class E extends(r = i.Ay.Store) {
         return u
     }
 }
-o(E, "displayName", "WebAuthnStore");
+s(E, "displayName", "WebAuthnStore");
 let y = new E(a.h, {
     LOGOUT: d,
     MFA_WEBAUTHN_CREDENTIALS_LOADED: _,

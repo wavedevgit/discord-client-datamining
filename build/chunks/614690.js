@@ -1,43 +1,40 @@
-/** Chunk was on web.js **/
-/** chunk id: 614690, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    ys: () => l,
-    zZ: () => c
-}), n(321073), n(747238);
-var r = n(851671);
-n(988665);
-var i = n(822382),
-    a = n(771650);
-n(504531), n(652215);
-let s = {
-    [a.v1.FILTER]: r.d,
-    [a.v1.ANSWER]: r.F
+/** Chunk was on 52199 **/
+/** chunk id: 614690, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    ys: () => i,
+    zZ: () => o
+}), r(321073), r(747238);
+var n = r(851671);
+r(988665);
+var l = r(822382),
+    s = r(771650);
+r(504531), r(652215);
+let a = {
+    [s.v1.FILTER]: n.d,
+    [s.v1.ANSWER]: n.F
 };
 
-function o(e, t, n, r) {
-    t.findEntityRanges(t => {
-        let n = t.getEntity();
-        return null !== n && e.getEntity(n).getType() === r
-    }, n)
-}
-
-function l() {
+function i() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         t = [];
-    return Object.keys(e).forEach(n => {
-        let r = e[n];
+    return Object.keys(e).forEach(r => {
+        let n = e[r];
         t.push({
-            strategy: (e, t, r) => o(r, e, t, n),
-            component: s[r.componentType]
+            strategy: (e, t, n) => {
+                e.findEntityRanges(e => {
+                    let t = e.getEntity();
+                    return null !== t && n.getEntity(t).getType() === r
+                }, t)
+            },
+            component: a[n.componentType]
         })
     }), t
 }
 
-function c(e, t) {
+function o(e, t) {
     let {
-        focusOffset: n,
-        anchorOffset: r
+        focusOffset: r,
+        anchorOffset: n
     } = t.getSelection();
-    return (0, i.zZ)(e, n, r)
+    return (0, l.zZ)(e, r, n)
 }

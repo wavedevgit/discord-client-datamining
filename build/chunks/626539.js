@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(157559),
     i = n(723702),
     a = n(837921),
-    s = n(325639),
-    o = n(765682);
+    o = n(325639),
+    s = n(765682);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -18,7 +18,7 @@ function l(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class c extends s.V {
+class c extends o.V {
     requestPermissionCore(e, t) {
         var n;
         return this.asyncify(this.platformAlwaysPermits || null == (n = this.nativeUtils) ? void 0 : n.nativePermssionRequestAuthorization, e, t)
@@ -30,7 +30,7 @@ class c extends s.V {
     asyncify(e, t, n) {
         let r = c.requestTypeLookup[t];
         if (void 0 === r) return Promise.resolve(!0);
-        let i = () => null == e ? Promise.resolve(o.F5.AUTHORIZED) : new Promise((t, n) => e(t, r));
+        let i = () => null == e ? Promise.resolve(s.F5.AUTHORIZED) : new Promise((t, n) => e(t, r));
         return this.requestAuthorization(t, i, n)
     }
     openSettings(e) {
@@ -48,14 +48,14 @@ class c extends s.V {
             body: n,
             onConfirm: i,
             cancelText: a,
-            confirmText: s
+            confirmText: o
         } = e;
         r.A.show({
             title: t,
             body: n,
             onConfirm: i,
             cancelText: a,
-            confirmText: s
+            confirmText: o
         })
     }
     constructor(...e) {
@@ -63,10 +63,10 @@ class c extends s.V {
     }
 }
 l(c, "requestTypeLookup", {
-    [o.iL.CAMERA]: a.kw.Camera,
-    [o.iL.AUDIO]: a.kw.Microphone,
-    [o.iL.PHOTOS]: a.kw.Photo,
-    [o.iL.INPUT_MONITORING]: a.kw.InputMonitoring,
-    [o.iL.SCREEN_RECORDING]: a.kw.ScreenRecording
+    [s.iL.CAMERA]: a.kw.Camera,
+    [s.iL.AUDIO]: a.kw.Microphone,
+    [s.iL.PHOTOS]: a.kw.Photo,
+    [s.iL.INPUT_MONITORING]: a.kw.InputMonitoring,
+    [s.iL.SCREEN_RECORDING]: a.kw.ScreenRecording
 });
 let u = new c

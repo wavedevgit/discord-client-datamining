@@ -5,7 +5,7 @@ n(65821);
 var r = n(823598),
     i = n(626584),
     a = n(723702),
-    s = n(837921);
+    o = n(837921);
 (0, r.WQ)({
     supported() {
         try {
@@ -20,10 +20,10 @@ var r = n(823598),
         }
         return !1
     },
-    supportsFeature: e => s.Ay.supportsFeature(e),
+    supportsFeature: e => o.Ay.supportsFeature(e),
     setProcessPriority(e) {
-        s.Ay.getDiscordUtils().setProcessPriority(e)
+        o.Ay.getDiscordUtils().setProcessPriority(e)
     },
-    getVoiceEngine: () => s.Ay.getVoiceEngine(),
-    getVoiceFilters: () => s.Ay.getVoiceFilters()
+    getVoiceEngine: () => o.Ay.getVoiceEngine(),
+    getVoiceFilters: () => o.Ay.getVoiceFilters()
 })

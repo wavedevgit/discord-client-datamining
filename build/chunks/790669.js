@@ -10,9 +10,9 @@ var r = n(906046),
             return !1
         }
     },
-    s = r("Object.prototype.toString"),
-    o = "[object Date]",
+    o = r("Object.prototype.toString"),
+    s = "[object Date]",
     l = n(581070)();
 e.exports = function(e) {
-    return "object" == typeof e && null !== e && (l ? a(e) : s(e) === o)
+    return "object" == typeof e && null !== e && (l ? a(e) : o(e) === s)
 }

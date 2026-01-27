@@ -2,14 +2,14 @@
 /** chunk id: 742714, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    b: () => s
+    b: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(298063),
     a = n(658122);
 
-function s() {
+function o() {
     let e = (0, i.Y)("MenuSeparator");
     return (0, r.jsx)("div", {
         role: "separator",

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(734057),
     i = n(711014),
     a = n(447508),
-    s = n(27548),
-    o = n(552618),
+    o = n(27548),
+    s = n(552618),
     l = n(652215);
 
 function c(e, t) {
@@ -18,7 +18,7 @@ function c(e, t) {
     for (let t of i.Ay.getGuildFolders())
         for (let i of t.guildIds)
             for (let t of Object.values(r.A.getMutableBasicGuildChannelsForGuild(i)))
-                if (u(t) && (0, o.c)(t) && !(0, s.qA)(t) && d(i, t, n), n.totalLength >= l) return f(n, e);
+                if (u(t) && (0, s.c)(t) && !(0, o.qA)(t) && d(i, t, n), n.totalLength >= l) return f(n, e);
     return f(n, e)
 }
 

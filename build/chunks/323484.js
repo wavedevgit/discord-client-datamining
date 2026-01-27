@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(870383),
     i = n(734057),
     a = n(287809),
-    s = n(562153),
-    o = n(427262),
+    o = n(562153),
+    s = n(427262),
     l = n(835002),
     c = n(985018),
     u = n(641131);
@@ -17,7 +17,7 @@ function d(e, t, n) {
     var d;
     let f = a.default.getUser(t),
         p = i.A.getChannel(n),
-        _ = null != (d = s.Ay.getName(null == p ? void 0 : p.guild_id, null == p ? void 0 : p.id, f)) ? d : o.Ay.getGlobalName(f);
+        _ = null != (d = o.Ay.getName(null == p ? void 0 : p.guild_id, null == p ? void 0 : p.id, f)) ? d : s.Ay.getGlobalName(f);
     switch (e) {
         case l.OB.IGNORE_SUCCESS:
             return c.intl.formatToPlainString(c.t["+joqrP"], {

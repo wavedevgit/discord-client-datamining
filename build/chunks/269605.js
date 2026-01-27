@@ -17,11 +17,11 @@ function a(e, t) {
     }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t && a(e.prototype, t), n && a(e, n), e
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -31,9 +31,9 @@ function o(e, t, n) {
 }
 var l = function() {
     function e(t) {
-        i(this, e), o(this, "entered", []), o(this, "isNodeInDocument", void 0), this.isNodeInDocument = t
+        i(this, e), s(this, "entered", []), s(this, "isNodeInDocument", void 0), this.isNodeInDocument = t
     }
-    return s(e, [{
+    return o(e, [{
         key: "enter",
         value: function(e) {
             var t = this,

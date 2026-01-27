@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 739929, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 });
 var r = n(64700),
     i = n(417597),
@@ -18,10 +18,10 @@ var r = n(64700),
     p = n(652215),
     f = n(985018);
 
-function b(e) {
+function h(e) {
     let t, n = (0, c.ME)(e),
-        b = null == e ? void 0 : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
-        h = null == e ? void 0 : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE),
+        h = null == e ? void 0 : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
+        b = null == e ? void 0 : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE),
         x = (0, i.bG)([a.default], () => {
             let t = a.default.getCurrentUser();
             return null != e && (0, s.bM)(e, t)
@@ -51,7 +51,7 @@ function b(e) {
         R = f.intl.format(f.t.aJUdOi, {
             faqUrl: o.A.getArticleURL(p.MVz.CREATOR_FAQ)
         });
-    S && C ? t = !0 === b ? f.intl.format(f.t["0o1Q+t"], {
+    S && C ? t = !0 === h ? f.intl.format(f.t["0o1Q+t"], {
         communityGuidelineUrl: p.X7G.GUIDELINES
     }) : f.intl.format(f.t.b6h59n, {
         communityGuidelineUrl: p.X7G.GUIDELINES
@@ -59,8 +59,8 @@ function b(e) {
         requestCooldownDuration: I,
         creatorRevenuePolicyUrl: o.A.getArticleURL(p.MVz.CREATOR_POLICY)
     }));
-    let D = n && x && !1 === h,
-        G = n && !1 === b,
+    let D = n && x && !1 === b,
+        G = n && !1 === h,
         L = (0, m.r)(),
         k = S && w && x ? f.intl.format(f.t.wbVIUB, {}) : void 0;
     return r.useEffect(() => {

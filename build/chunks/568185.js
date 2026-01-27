@@ -2,15 +2,15 @@
 /** chunk id: 568185, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(73153),
     i = n(576705),
     a = n(292572),
-    s = n(652215);
-let o = {
+    o = n(652215);
+let s = {
     async checkGuildTemplateDirty(e) {
-        if (!i.A.canWithPartialContext(s.xBc.MANAGE_GUILD, {
+        if (!i.A.canWithPartialContext(o.xBc.MANAGE_GUILD, {
                 guildId: e
             })) return;
         let t = await a.A.loadTemplatesForGuild(e);

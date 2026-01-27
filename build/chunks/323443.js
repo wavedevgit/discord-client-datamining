@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(686956),
     i = n(956793),
     a = n(401843),
-    s = n(389234),
-    o = n(854492),
+    o = n(389234),
+    s = n(854492),
     l = n(616356),
     c = n(734057),
     u = n(71393),
@@ -31,7 +31,7 @@ function E(e, t) {
     return new Promise(async i => {
         let a = c.A.getChannel(t);
         if (null != a) return y(a, n), i(a);
-        await (0, o.A)([e]), await r.A.joinGuild(e, {
+        await (0, s.A)([e]), await r.A.joinGuild(e, {
             lurker: !0
         }), u.A.addConditionalChangeListener(() => {
             let e = c.A.getChannel(t);
@@ -55,7 +55,7 @@ function b(e) {
         n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
         r = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
         i = f.A.getVoiceChannelId();
-    !r && i !== e.id && (0, s.H)(e) && p.E9(e, () => b(e, t, n, !0)) || y(e, t) && O(e, i)
+    !r && i !== e.id && (0, o.H)(e) && p.E9(e, () => b(e, t, n, !0)) || y(e, t) && O(e, i)
 }
 
 function O(e, t) {

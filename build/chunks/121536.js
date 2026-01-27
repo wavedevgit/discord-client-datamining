@@ -4,9 +4,9 @@
 var r = n(105712),
     i = n(860511),
     a = n(88388),
-    s = "__core-js_shared__",
-    o = e.exports = i[s] || a(s, {});
-(o.versions || (o.versions = [])).push({
+    o = "__core-js_shared__",
+    s = e.exports = i[o] || a(o, {});
+(s.versions || (s.versions = [])).push({
     version: "3.41.0",
     mode: r ? "pure" : "global",
     copyright: "\xa9 2014-2025 Denis Pushkarev (zloirock.ru)",

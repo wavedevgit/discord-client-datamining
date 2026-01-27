@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(106778),
-    s = n(21161),
-    o = n(531301),
+    o = n(21161),
+    s = n(531301),
     l = n(267102),
     c = n(129185),
     u = n(652215);
@@ -105,16 +105,16 @@ let h = 1e3 / 60,
         }
     },
     E = ["#FFFFFF"],
-    y = [n(426560), ...(0, o.A)(["snowflake"])];
+    y = [n(426560), ...(0, s.A)(["snowflake"])];
 
 function b(e) {
     let {
         children: t
-    } = e, [n, o] = i.useState(!1), d = (0, l.Us)(), [p, b] = i.useState(null), {
+    } = e, [n, s] = i.useState(!1), d = (0, l.Us)(), [p, b] = i.useState(null), {
         confettiCanvas: O
-    } = i.useContext(s.x), v = (0, a.f9)(O, p), A = i.useMemo(() => ({
-        triggerAnimation: () => o(!0),
-        untriggerAnimation: () => o(!1)
+    } = i.useContext(o.x), v = (0, a.f9)(O, p), A = i.useMemo(() => ({
+        triggerAnimation: () => s(!0),
+        untriggerAnimation: () => s(!1)
     }), []), I = i.useCallback(() => {
         let e = null == O ? void 0 : O.getCanvas();
         if (null == e) return;

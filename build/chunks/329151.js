@@ -1,28 +1,27 @@
-/** Chunk was on web.js **/
+/** Chunk was on 21425 **/
 /** chunk id: 329151, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(452626),
-    a = n(833349),
-    s = n(90644),
-    o = n(652215);
+    l = n(833349),
+    a = n(90644),
+    s = n(652215);
 
-function l(e) {
+function o(e) {
     let {
         activity: t,
         user: n,
-        source: l,
+        source: o,
         onAction: c
     } = e;
-    return null != t && (0, a.A)(t, o.jUm.PLAY) && (0, s.A)(t) ? (0, r.jsx)(i.A, {
+    return null != t && (0, l.A)(t, s.jUm.PLAY) && (0, a.A)(t) ? (0, r.jsx)(i.A, {
         fullWidth: !0,
         activity: t,
         user: n,
-        source: l,
+        source: o,
         onAction: c
     }) : null
 }

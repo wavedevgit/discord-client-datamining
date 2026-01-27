@@ -15,8 +15,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(827734),
-    o = n(668016);
+    o = n(827734),
+    s = n(668016);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -77,9 +77,9 @@ function p(e, t) {
     return i
 }
 let _ = {
-    ROUND: o.rS,
-    ROUND_LEFT: o.Q2,
-    ROUND_RIGHT: o.Hg,
+    ROUND: s.rS,
+    ROUND_LEFT: s.Q2,
+    ROUND_RIGHT: s.Hg,
     SQUARE: ""
 };
 
@@ -93,7 +93,7 @@ function m(e) {
 let g = e => {
         let {
             count: t,
-            color: n = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+            color: n = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
             disableColor: i = !1,
             shape: l = _.ROUND,
             className: u,
@@ -101,7 +101,7 @@ let g = e => {
             renderBadgeCount: g = m
         } = e, E = f(e, ["count", "color", "disableColor", "shape", "className", "style", "renderBadgeCount"]);
         return (0, r.jsx)("div", d(c({
-            className: a()(u, o.Do, l),
+            className: a()(u, s.Do, l),
             style: c({
                 backgroundColor: i ? void 0 : n,
                 width: h(t)
@@ -114,13 +114,13 @@ let g = e => {
         let {
             text: t,
             className: n,
-            color: i = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+            color: i = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
             shape: l = _.ROUND,
             disableColor: u = !1,
             style: p
         } = e, h = f(e, ["text", "className", "color", "shape", "disableColor", "style"]);
         return (0, r.jsx)("div", d(c({
-            className: a()(n, o.U1, l),
+            className: a()(n, s.U1, l),
             style: c({
                 backgroundColor: u ? void 0 : i
             }, p)
@@ -134,7 +134,7 @@ let g = e => {
             className: n
         } = e, i = f(e, ["text", "className"]);
         return (0, r.jsx)(E, c({
-            className: a()(o.BE, n),
+            className: a()(s.BE, n),
             text: t
         }, i))
     },
@@ -142,18 +142,18 @@ let g = e => {
         let {
             icon: t,
             className: n,
-            color: i = s.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
+            color: i = o.A.colors.BADGE_NOTIFICATION_BACKGROUND.css,
             shape: l = _.ROUND,
             disableColor: u = !1,
             style: d
         } = e;
         return (0, r.jsx)("div", {
-            className: a()(n, o.u3, l),
+            className: a()(n, s.u3, l),
             style: c({
                 backgroundColor: u ? void 0 : i
             }, d),
             children: (0, r.jsx)(t, {
-                className: o.Kk,
+                className: s.Kk,
                 color: "currentColor"
             })
         })
@@ -161,13 +161,13 @@ let g = e => {
     O = e => {
         let {
             className: t,
-            color: n = s.A.colors.INTERACTIVE_TEXT_ACTIVE.css,
+            color: n = o.A.colors.INTERACTIVE_TEXT_ACTIVE.css,
             shape: i = _.ROUND,
             disableColor: l = !1,
             style: u
         } = e, d = f(e, ["className", "color", "shape", "disableColor", "style"]);
         return (0, r.jsx)("div", c({
-            className: a()(t, o.Ky, i),
+            className: a()(t, s.Ky, i),
             style: c({
                 backgroundColor: l ? void 0 : n
             }, u)

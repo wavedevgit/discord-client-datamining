@@ -3,12 +3,12 @@
 "use strict";
 Object.defineProperty(t, "__esModule", {
     value: !0
-}), t.reactFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = void 0, t.formatReact = o, t.makeReactFormatter = l;
+}), t.reactFormatter = t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = void 0, t.formatReact = s, t.makeReactFormatter = l;
 let r = n(64700),
     i = n(941242),
     a = r.createElement;
 
-function s(e) {
+function o(e) {
     return class extends i.FormatBuilder {
         constructor() {
             super(...arguments), this._nodeKey = 0, this.result = []
@@ -28,14 +28,14 @@ function s(e) {
     }
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     return "string" == typeof e ? e : this.bindFormatValues(n, e, t)
 }
 
 function l(e) {
     return {
-        format: o,
-        builder: s(e)
+        format: s,
+        builder: o(e)
     }
 }
 t.DEFAULT_REACT_RICH_TEXT_ELEMENTS = {

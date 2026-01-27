@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 639797, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper__33f0b",
     PJ: "introAnimation__33f0b",

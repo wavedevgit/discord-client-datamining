@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(562465),
+    o = n(311907),
+    s = n(562465),
     l = n(73153),
     c = n(734057),
     u = n(309010),
@@ -122,7 +122,7 @@ function T(e) {
             regionUpdated: !1
         }, null != E[t]) {
         let e = E[t];
-        delete E[t], 1 !== e.indexOf("all") && (e = null), o.Bo.post({
+        delete E[t], 1 !== e.indexOf("all") && (e = null), s.Bo.post({
             url: f.Rsh.CALL_RING(t),
             body: {
                 recipients: e
@@ -148,12 +148,12 @@ function N(e) {
         messageId: n,
         region: r,
         ringing: i
-    } = e, a = g[t], s = null != a && (a.regionUpdated || a.region !== r);
+    } = e, a = g[t], o = null != a && (a.regionUpdated || a.region !== r);
     g[t] = m(_({}, g[t]), {
         messageId: n,
         region: r,
         ringing: i,
-        regionUpdated: s
+        regionUpdated: o
     })
 }
 
@@ -180,7 +180,7 @@ function R(e) {
     } = e;
     null == t && (E = {})
 }
-class P extends(r = s.Ay.Store) {
+class P extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.A, u.A, d.A)
     }

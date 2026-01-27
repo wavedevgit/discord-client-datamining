@@ -17,15 +17,15 @@ n.d(t, {
     gR: () => f,
     nr: () => c,
     tZ: () => h,
-    uo: () => o,
+    uo: () => s,
     vF: () => N,
     yV: () => D
 });
 var r, i = n(84157),
     a = n(64700),
-    s = n(111975);
+    o = n(111975);
 
-function o() {
+function s() {
     let e = navigator.userAgentData;
     return null != e && e.platform ? e.platform : navigator.platform
 }
@@ -139,7 +139,7 @@ let T = () => ({
 });
 
 function C(e, t) {
-    let n = (0, s.Kr)(e, T()),
+    let n = (0, o.Kr)(e, T()),
         r = n.length;
     if (0 === r) return;
     let i = d(m(e)),
@@ -162,7 +162,7 @@ function R(e, t) {
 }
 
 function P(e) {
-    (0, s.Kr)(e, T()).forEach(e => {
+    (0, o.Kr)(e, T()).forEach(e => {
         e.dataset.tabindex = e.getAttribute("tabindex") || "", e.setAttribute("tabindex", "-1")
     })
 }

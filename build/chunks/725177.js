@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(780964),
     i = n(840065),
     a = n(857266),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -34,11 +34,11 @@ function l(e) {
 function c(e) {
     switch (e) {
         case a.J.MY_GAMES:
-            return [r.X.REGISTERED_GAMES_PANEL, s.nc_.REGISTERED_GAMES];
+            return [r.X.REGISTERED_GAMES_PANEL, o.nc_.REGISTERED_GAMES];
         case a.J.OVERLAY:
-            return [r.X.OVERLAY_PANEL, s.nc_.OVERLAY];
+            return [r.X.OVERLAY_PANEL, o.nc_.OVERLAY];
         case a.J.ACTIVITY_PRIVACY:
-            return [r.X.ACTIVITY_PRIVACY_PANEL, s.nc_.ACTIVITY_PRIVACY]
+            return [r.X.ACTIVITY_PRIVACY_PANEL, o.nc_.ACTIVITY_PRIVACY]
     }
 }
 

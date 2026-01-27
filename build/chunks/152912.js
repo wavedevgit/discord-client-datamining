@@ -2,7 +2,7 @@
 /** chunk id: 152912, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    r: () => s
+    r: () => o
 });
 var r, i = [],
     a = function() {
@@ -10,16 +10,16 @@ var r, i = [],
             return e()
         })
     },
-    s = function(e) {
+    o = function(e) {
         if (!r) {
             var t = 0,
                 n = document.createTextNode(""),
-                s = {
+                o = {
                     characterData: !0
                 };
             new MutationObserver(function() {
                 return a()
-            }).observe(n, s), r = function() {
+            }).observe(n, o), r = function() {
                 n.textContent = "" + (t ? t-- : t++)
             }
         }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(280230),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(793574),
     c = n(688810),
     u = n(307600);
@@ -85,8 +85,8 @@ let g = 1,
             analyticsLocations: b
         } = (0, c.Ay)(l.A.MASKED_LINK), O = i.useCallback(t => (0, u.h)(e, t, b), [b, e]), v = i.useCallback(e => {
             e.button === g && O(e)
-        }, [O]), A = s().sanitizeUrl(d);
-        return (0, r.jsx)(o.MzZ, _(f({}, y), {
+        }, [O]), A = o().sanitizeUrl(d);
+        return (0, r.jsx)(s.MzZ, _(f({}, y), {
             title: a,
             target: "_blank",
             rel: "noreferrer noopener",

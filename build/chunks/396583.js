@@ -2,13 +2,13 @@
 /** chunk id: 396583, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(64700),
     i = n(284009),
     a = n.n(i);
 
-function s(e, t) {
+function o(e, t) {
     let n = (0, r.useRef)(e),
         i = (0, r.useRef)(null);
     (0, r.useEffect)(() => {

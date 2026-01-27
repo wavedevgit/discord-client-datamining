@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 696616, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var i = n(93857),
-    a = n(871930),
+    l = n(871930),
     s = n(578746),
-    o = n(975571),
-    l = n(500470),
+    a = n(975571),
+    o = n(500470),
     c = n(652215),
-    u = n(842130),
-    d = n(985018);
+    d = n(842130),
+    u = n(985018);
 
-function f() {
+function _() {
     var e;
-    let t = null != (e = (0, l.k)()) ? e : void 0,
+    let t = null != (e = (0, o.k)()) ? e : void 0,
         n = i.kf.useControlledSetting(t);
-    return (0, r.jsx)(a.h, {
+    return (0, r.jsx)(l.h, {
         children: (0, r.jsx)(s.Ay, {
-            title: d.intl.string(u.default.ZhaNu8),
-            note: d.intl.format(u.default.cnCK6b, {
-                helpdeskArticle: o.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
+            title: u.intl.string(d.default.ZhaNu8),
+            note: u.intl.format(d.default.cnCK6b, {
+                helpdeskArticle: a.A.getArticleURL(c.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
             value: !n,
             onChange: e => i.kf.updateControlledSetting(t, !e)

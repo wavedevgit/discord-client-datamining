@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = null,
+let s = null,
     l = !1;
 
 function c(e) {
@@ -24,7 +24,7 @@ function c(e) {
         total: n,
         name: r
     } = e;
-    o = {
+    s = {
         progress: t,
         total: n,
         name: r
@@ -32,7 +32,7 @@ function c(e) {
 }
 
 function u() {
-    o = null, l = !1
+    s = null, l = !1
 }
 
 function d() {
@@ -40,13 +40,13 @@ function d() {
 }
 class f extends(r = i.Ay.Store) {
     getLastProgress() {
-        return o
+        return s
     }
     isRunning() {
         return l
     }
 }
-s(f, "displayName", "DispatchApplicationLaunchSetupStore");
+o(f, "displayName", "DispatchApplicationLaunchSetupStore");
 let p = new f(a.h, {
     DISPATCH_APPLICATION_LAUNCH_SETUP_START: d,
     DISPATCH_APPLICATION_INSTALL_SCRIPTS_PROGRESS_UPDATE: c,

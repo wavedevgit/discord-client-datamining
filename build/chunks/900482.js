@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(535736),
     i = n(63044),
     a = n(734057),
-    s = n(453771),
-    o = n(292348),
+    o = n(453771),
+    s = n(292348),
     l = n(652215);
 class c {
     getCreateAttachmentURL(e) {
@@ -20,13 +20,13 @@ class c {
     }
     getMaxFileSize(e) {
         let t = a.A.getBasicChannel(e);
-        return s.o2(null == t ? void 0 : t.guild_id)
+        return o.o2(null == t ? void 0 : t.guild_id)
     }
     getMaxAttachmentsCount() {
         return l.XgB
     }
     getMaxTotalAttachmentSize() {
-        return o.eM
+        return s.eM
     }
     get shouldReactNativeCompressUploads() {
         return !0

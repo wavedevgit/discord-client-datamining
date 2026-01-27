@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(732955),
     c = n(397927),
     u = n(775602),
@@ -22,7 +22,7 @@ var r = n(627968),
     E = n(268920),
     y = n(633217);
 let b = () => {
-        let e = (0, o.bG)([u.A], () => u.A.useReducedMotion);
+        let e = (0, s.bG)([u.A], () => u.A.useReducedMotion);
         return (0, r.jsx)("div", {
             className: m.s,
             children: e ? (0, r.jsx)("img", {
@@ -49,7 +49,7 @@ let b = () => {
             ctaText: t,
             ctaOnClick: n,
             analyticsPage: a,
-            linkPreText: o = h.intl.string(h.t["5qZv9E"]),
+            linkPreText: s = h.intl.string(h.t["5qZv9E"]),
             linkText: u = h.intl.string(h.t.XRdyjz)
         } = e, d = i.useCallback(() => {
             null != a && (0, p.Y)({
@@ -59,7 +59,7 @@ let b = () => {
             })
         }, [a]);
         return (0, r.jsxs)("div", {
-            className: s()(m.kL, g.O),
+            className: o()(m.kL, g.O),
             children: [(0, r.jsx)(b, {}), (0, r.jsx)(l.$nd, {
                 text: t,
                 variant: "primary",
@@ -68,10 +68,10 @@ let b = () => {
                 fullWidth: !0
             }), (0, r.jsxs)("div", {
                 className: m.kx,
-                children: [void 0 !== o && (0, r.jsxs)(c.Text, {
+                children: [void 0 !== s && (0, r.jsxs)(c.Text, {
                     variant: "text-xs/normal",
                     className: m.D5,
-                    children: [o, "\xa0"]
+                    children: [s, "\xa0"]
                 }), (0, r.jsx)(c.MzZ, {
                     target: "_blank",
                     rel: "author",

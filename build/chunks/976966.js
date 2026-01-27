@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 976966, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -252,7 +252,7 @@ function P(e) {
                     closePopout: t
                 } = e;
                 return (0, r.jsx)(u.W1t, {
-                    "data-menu-migration-ready": !0,
+                    "data-menu-migrated-auto": !0,
                     navId: "search-settings-cog",
                     onClose: t,
                     "aria-label": O.intl.string(O.t.fb59v0),
@@ -327,7 +327,7 @@ function w(e) {
                 closePopout: n
             } = e;
             return (0, r.jsx)(u.W1t, {
-                "data-menu-migration-ready": !0,
+                "data-menu-migrated-auto": !0,
                 navId: "search-result-sort-menu",
                 onClose: n,
                 "aria-label": O.intl.string(O.t.utp2hS),

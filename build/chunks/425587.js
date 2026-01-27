@@ -1,16 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 3911 **/
 /** chunk id: 425587, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => a
+    A: () => r
 });
-var r = n(562465),
-    i = n(652215);
-let a = {
+var i = n(562465),
+    s = n(652215);
+let r = {
     fetchTeams() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-        return r.Bo.get({
-            url: i.Rsh.TEAMS,
+        return i.Bo.get({
+            url: s.Rsh.TEAMS,
             query: {
                 include_payout_account_status: e
             },

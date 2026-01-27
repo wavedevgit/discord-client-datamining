@@ -9,7 +9,7 @@ function r(e) {
 }
 
 function i(e) {
-    let [t, i, a, s, o] = e;
+    let [t, i, a, o, s] = e;
     for (let e in a) r(a[e]), a[e] = {
         value: a[e]
     };
@@ -17,13 +17,13 @@ function i(e) {
         type: t,
         value: i,
         options: a,
-        offset: s,
-        pluralType: o
+        offset: o,
+        pluralType: s
     } : {
         type: t,
         value: i,
         options: a,
-        offset: s
+        offset: o
     }
 }
 
@@ -63,12 +63,12 @@ function a(e) {
     }
 }
 
-function s(e) {
+function o(e) {
     return "string" == typeof e ? a(e) : "string" == typeof e[0] ? (r(e), e) : 0 === e.length ? e : Array.isArray(e[0]) ? (r(e), e) : a(e)
 }
 
-function o(e) {
-    if (Array.isArray(e)) return e.map(e => o(e));
+function s(e) {
+    if (Array.isArray(e)) return e.map(e => s(e));
     switch (e.type) {
         case n.Literal:
             return e.value;
@@ -80,18 +80,18 @@ function o(e) {
             return [e.type, e.value, e.style];
         case n.Select: {
             let t = {};
-            for (let [n, r] of Object.entries(e.options)) t[n] = o(r.value);
+            for (let [n, r] of Object.entries(e.options)) t[n] = s(r.value);
             return [e.type, e.value, t]
         }
         case n.Plural: {
             let t = {};
-            for (let [n, r] of Object.entries(e.options)) t[n] = o(r.value);
+            for (let [n, r] of Object.entries(e.options)) t[n] = s(r.value);
             return [e.type, e.value, t, e.offset, e.pluralType]
         }
         case n.Pound:
             return [e.type];
         case n.Tag:
-            return [e.type, e.value, o(e.children), o(e.control)]
+            return [e.type, e.value, s(e.children), s(e.control)]
     }
 }
 
@@ -100,7 +100,7 @@ function l(e) {
 }
 Object.defineProperty(t, "__esModule", {
         value: !0
-    }), t.FORMAT_JS_POUND = t.FormatJsNodeType = void 0, t.hydrateFormatJsAst = s, t.compressFormatJsToAst = o, t.isCompressedAst = l,
+    }), t.FORMAT_JS_POUND = t.FormatJsNodeType = void 0, t.hydrateFormatJsAst = o, t.compressFormatJsToAst = s, t.isCompressedAst = l,
     function(e) {
         e[e.Literal = 0] = "Literal", e[e.Argument = 1] = "Argument", e[e.Number = 2] = "Number", e[e.Date = 3] = "Date", e[e.Time = 4] = "Time", e[e.Select = 5] = "Select", e[e.Plural = 6] = "Plural", e[e.Pound = 7] = "Pound", e[e.Tag = 8] = "Tag"
     }(n || (t.FormatJsNodeType = n = {})), t.FORMAT_JS_POUND = Object.freeze({

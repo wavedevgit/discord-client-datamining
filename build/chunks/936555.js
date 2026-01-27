@@ -2,20 +2,20 @@
 /** chunk id: 936555, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o,
-    w: () => s
+    A: () => s,
+    w: () => o
 });
 var r = n(311907),
     i = n(71393),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     return !e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE) || e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL))
 }
 
-function o(e) {
+function s(e) {
     return (0, r.bG)([i.A], () => {
         let t = i.A.getGuild(e);
-        return null != t && s(t)
+        return null != t && o(t)
     })
 }

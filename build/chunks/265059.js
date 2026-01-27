@@ -7,9 +7,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(540999);
+    o = n(540999);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -44,11 +44,11 @@ let c = 460,
     };
 
 function d(e) {
-    s.A.isDeveloper && (u = l({}, u, e.settings))
+    o.A.isDeveloper && (u = l({}, u, e.settings))
 }
 class f extends(r = i.Ay.DeviceSettingsStore) {
     initialize(e) {
-        u = null != e ? e : u, a.h.actionLogger.persist = s.A.isDeveloper
+        u = null != e ? e : u, a.h.actionLogger.persist = o.A.isDeveloper
     }
     getUserAgnosticState() {
         return u
@@ -61,10 +61,10 @@ class f extends(r = i.Ay.DeviceSettingsStore) {
         return null != (e = u.lastOpenTabId) ? e : null
     }
     get displayTools() {
-        return s.A.isDeveloper && u.displayTools
+        return o.A.isDeveloper && u.displayTools
     }
     get showDevWidget() {
-        return s.A.isDeveloper && u.showDevWidget
+        return o.A.isDeveloper && u.showDevWidget
     }
     get devWidgetPosition() {
         return u.devWidgetPosition
@@ -73,7 +73,7 @@ class f extends(r = i.Ay.DeviceSettingsStore) {
         return u.sortedScreenKeys
     }
 }
-o(f, "displayName", "DevToolsSettingsStore"), o(f, "persistKey", "DevToolsSettingsStore");
+s(f, "displayName", "DevToolsSettingsStore"), s(f, "persistKey", "DevToolsSettingsStore");
 let p = new f(a.h, {
     DEV_TOOLS_SETTINGS_UPDATE: d
 })

@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 552049, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    U5: () => a,
+    U5: () => l,
     fz: () => s
 });
 var r = n(203982),
     i = n(652215);
-let a = {
+let l = {
         binds: ["pageup"],
         comboKeysBindGlobal: !0,
         action: () => (r._.dispatchToLastSubscribed(i.jej.SCROLL_PAGE_UP), !1)

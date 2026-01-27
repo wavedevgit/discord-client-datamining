@@ -1,32 +1,32 @@
 /** Chunk was on 34078 **/
 /** chunk id: 933924, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    a: () => d
+    a: () => h
 }), r(801460), r(508300), r(650828), r(457529);
 var n = r(430370),
     s = r(73153),
     i = r(830215),
-    a = r(77729),
-    l = r(954571),
+    l = r(77729),
+    a = r(954571),
     o = r(464477),
     c = r(917136),
     u = r(652215);
-async function d(e) {
+async function h(e) {
     let {
         abortController: t,
         loginSource: r,
-        giftCodeSKUId: d
+        giftCodeSKUId: h
     } = e;
     try {
-        if (null == a.A && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable) {
+        if (null == l.A && null != window.PublicKeyCredential && null != PublicKeyCredential.isConditionalMediationAvailable) {
             let e;
             if (!await PublicKeyCredential.isConditionalMediationAvailable()) return;
             let {
-                challenge: a,
-                ticket: h
+                challenge: l,
+                ticket: d
             } = await (0, c.Ud)();
             try {
-                let r = (0, n.d5)(JSON.parse(a));
+                let r = (0, n.d5)(JSON.parse(l));
                 r.signal = t.signal, e = await (0, n.Jt)(r)
             } catch (e) {
                 if (!(e instanceof DOMException)) throw e;
@@ -41,16 +41,16 @@ async function d(e) {
             }
             s.h.dispatch({
                 type: "PASSWORDLESS_START"
-            }), l.default.track(u.HAw.LOGIN_ATTEMPTED, {
+            }), a.default.track(u.HAw.LOGIN_ATTEMPTED, {
                 source: u.mdB.PASSWORDLESS_CONDITIONAL_UI,
                 login_method: "passwordless",
                 login_source: r,
-                gift_code_sku_id: d
+                gift_code_sku_id: h
             }), await i.A.loginWebAuthn({
-                ticket: h,
+                ticket: d,
                 credential: JSON.stringify(e),
                 source: r,
-                giftCodeSKUId: d
+                giftCodeSKUId: h
             })
         }
     } catch (e) {}

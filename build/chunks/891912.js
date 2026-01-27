@@ -9,9 +9,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(91871),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(91871),
+    l = n.n(s),
     c = n(284009),
     u = n.n(c),
     d = n(353640),
@@ -36,15 +36,15 @@ var r = n(627968),
     R = n(713804),
     P = n(647053),
     D = n(611010),
-    x = n(546183),
-    L = n(734057),
-    j = n(309010),
-    M = n(543465),
+    L = n(546183),
+    x = n(734057),
+    M = n(309010),
+    j = n(543465),
     k = n(486020),
     U = n(307600),
     G = n(477427),
-    V = n(661191),
-    F = n(773669),
+    F = n(661191),
+    V = n(773669),
     B = n(544028),
     H = n(780964),
     Y = n(594061),
@@ -53,8 +53,8 @@ var r = n(627968),
     z = n(801264),
     q = n(790174),
     Z = n(669253),
-    X = n(840065),
-    Q = n(652215),
+    Q = n(840065),
+    X = n(652215),
     J = n(406535),
     $ = n(985018),
     ee = n(259878),
@@ -94,12 +94,12 @@ function ea(e, t) {
     return n
 }
 
-function es(e, t) {
+function eo(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ea(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let eo = h.Ay.connectStores([B.A], () => ({
+let es = h.Ay.connectStores([B.A], () => ({
     theme: B.A.theme
 }))(E.ppr);
 
@@ -109,7 +109,7 @@ function el(e) {
         text: n
     } = e;
     return (0, r.jsxs)("div", {
-        className: s()(ee.GC, t),
+        className: o()(ee.GC, t),
         children: [(0, r.jsx)(E.mir, {
             size: "md",
             color: "currentColor",
@@ -163,7 +163,7 @@ let ec = e => {
                     applicationName: e.name
                 })
             })]
-        })), (0, E.qfG)(e => (0, r.jsx)(_.Modal, es(ei({
+        })), (0, E.qfG)(e => (0, r.jsx)(_.Modal, eo(ei({
             title: n,
             subtitle: i,
             actions: [{
@@ -239,27 +239,27 @@ let ec = e => {
         let {
             scopes: t,
             application: a,
-            selectedChannelId: o,
+            selectedChannelId: s,
             selectedGuildId: l,
             onDelete: c,
             disclosures: d,
             locale: _,
             id: m
-        } = e, y = a.id, v = i.useMemo(() => D.Ay.createFromServer(a), [a]), A = (0, p.Lt)(v.flags, Q.gfo.EMBEDDED), C = (0, h.bG)([W.A], () => {
+        } = e, y = a.id, v = i.useMemo(() => D.Ay.createFromServer(a), [a]), A = (0, p.Lt)(v.flags, X.gfo.EMBEDDED), C = (0, h.bG)([W.A], () => {
             var e, t, n, r;
             return null == (r = W.A.settings.applications) || null == (n = r.appSettings) || null == (t = n[y]) || null == (e = t.appDmSettings) ? void 0 : e.allowMobilePush
-        }, [y]), x = S.v.useExperiment({
+        }, [y]), L = S.v.useExperiment({
             location: "oauth2_authorize"
-        }), j = a.bot, U = (0, h.bG)([L.A], () => L.A.getDMFromUserId(null == j ? void 0 : j.id)), {
-            appDMChannelMuteConfig: F,
+        }), M = a.bot, U = (0, h.bG)([x.A], () => x.A.getDMFromUserId(null == M ? void 0 : M.id)), {
+            appDMChannelMuteConfig: V,
             dmChannelMuted: B
-        } = (0, h.cf)([M.Ay], () => null == U ? {
+        } = (0, h.cf)([j.Ay], () => null == U ? {
             appDMChannelMuteConfig: null,
             dmChannelMuted: !1
         } : {
-            appDMChannelMuteConfig: M.Ay.getChannelMuteConfig(null, U),
-            dmChannelMuted: M.Ay.isChannelMuted(null, U)
-        }), [z, q] = i.useState(!1), [er, ea] = i.useState(!1), es = () => {
+            appDMChannelMuteConfig: j.Ay.getChannelMuteConfig(null, U),
+            dmChannelMuted: j.Ay.isChannelMuted(null, U)
+        }), [z, q] = i.useState(!1), [er, ea] = i.useState(!1), eo = () => {
             let e = [];
             for (let n of t) e.push(...(0, P.rY)(n, t)), n === f.F.APPLICATIONS_COMMANDS && e.push($.intl.string($.t.Ls2XRq));
             if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(E.Nt8, {
@@ -312,7 +312,7 @@ let ec = e => {
                         }), !er && (0, r.jsx)(E.Text, {
                             variant: "text-sm/normal",
                             color: "text-subtle",
-                            className: s()(ee.vo, ee.k8),
+                            className: o()(ee.vo, ee.k8),
                             children: $.intl.format($.t.nZOS8j, {
                                 numPermissions: e.length
                             })
@@ -320,7 +320,7 @@ let ec = e => {
                     })
                 }
             })
-        }, eo = i.useMemo(() => {
+        }, es = i.useMemo(() => {
             if (null != a.description && "" !== a.description) return (0, r.jsx)(E.Text, {
                 className: et.PT,
                 variant: "text-sm/normal",
@@ -335,7 +335,7 @@ let ec = e => {
                 isExpanded: z,
                 collapsibleContent: (0, r.jsxs)("div", {
                     className: ee.vo,
-                    children: [e && eo, t && (0, r.jsx)(ed, {
+                    children: [e && es, t && (0, r.jsx)(ed, {
                         application: a,
                         isVisible: z
                     })]
@@ -376,14 +376,14 @@ let ec = e => {
                         alt: ""
                     })
                 }) : null,
-                n = new Date(V.default.extractTimestamp(m)).toLocaleDateString(_);
+                n = new Date(F.default.extractTimestamp(m)).toLocaleDateString(_);
             return (0, r.jsxs)("div", {
                 className: ee.ie,
                 children: [t, (0, r.jsxs)("div", {
                     className: ee.gC,
                     children: [(0, r.jsx)(E.Heading, {
                         variant: "heading-md/semibold",
-                        className: s()(ee.TK, en.Q5),
+                        className: o()(ee.TK, en.Q5),
                         children: a.name
                     }), (0, r.jsx)(E.Text, {
                         variant: "text-sm/normal",
@@ -395,7 +395,7 @@ let ec = e => {
                 }), (0, r.jsx)(Z.A, {
                     appRecord: v,
                     selectedGuildId: l,
-                    selectedChannelId: o
+                    selectedChannelId: s
                 })]
             })
         }, e_ = e => {
@@ -407,15 +407,15 @@ let ec = e => {
                         allowMobilePush: e
                     })
                 })
-            }, Y.Sb.INFREQUENT_USER_ACTION), I.Ay.trackWithMetadata(Q.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+            }, Y.Sb.INFREQUENT_USER_ACTION), I.Ay.trackWithMetadata(X.HAw.NOTIFICATION_SETTINGS_UPDATED, {
                 update_type: J.Y.AUTHORIZED_APP_DM_PUSH_NOTIFICATION,
                 application_id: a.id,
                 label: e ? G.fd.Unmuted : G.fd.Muted
             })
         }, eh = i.useCallback(async () => {
-            u()(null != j, "dm channel mute setting requires having a bot user");
+            u()(null != M, "dm channel mute setting requires having a bot user");
             let e = U;
-            null == e && (e = await b.A.ensurePrivateChannel(j.id)), B ? O.A.updateAppDMOverrideSettings(null, e, a.id, {
+            null == e && (e = await b.A.ensurePrivateChannel(M.id)), B ? O.A.updateAppDMOverrideSettings(null, e, a.id, {
                 muted: !1
             }, G.fd.Unmuted) : (0, E.mMO)(async () => {
                 let {
@@ -426,7 +426,7 @@ let ec = e => {
                     applicationId: a.id
                 }, n))
             })
-        }, [U, j, B, a.id]), em = () => x.enabled ? (0, r.jsxs)("div", {
+        }, [U, M, B, a.id]), em = () => L.enabled ? (0, r.jsxs)("div", {
             className: ee.LS,
             children: [(0, r.jsx)(E.Heading, {
                 variant: "heading-sm/medium",
@@ -435,10 +435,10 @@ let ec = e => {
                 children: $.intl.string($.t.NaZyYC)
             }), (0, r.jsxs)(E.BJc, {
                 gap: 20,
-                children: [null != j ? (0, r.jsx)(E.dOG, {
+                children: [null != M ? (0, r.jsx)(E.dOG, {
                     label: $.intl.string($.t.NkwaBs),
-                    description: (null == F ? void 0 : F.end_time) != null ? $.intl.format($.t.j7h4AJ, {
-                        endTime: new Date(F.end_time).toLocaleString($.intl.currentLocale, {
+                    description: (null == V ? void 0 : V.end_time) != null ? $.intl.format($.t.j7h4AJ, {
+                        endTime: new Date(V.end_time).toLocaleString($.intl.currentLocale, {
                             month: "numeric",
                             day: "numeric",
                             hour: "numeric",
@@ -447,7 +447,7 @@ let ec = e => {
                     }) : void 0,
                     checked: B,
                     onChange: eh
-                }) : null, A && x.enabled ? (0, r.jsx)(E.dOG, {
+                }) : null, A && L.enabled ? (0, r.jsx)(E.dOG, {
                     label: $.intl.string($.t["Pkw//o"]),
                     description: $.intl.string($.t.hw1nKf),
                     checked: C,
@@ -466,8 +466,8 @@ let ec = e => {
                 className: ee.UW,
                 text: $.intl.format($.t.jUhnwb, {
                     applicationName: a.name,
-                    onConnectionPress: () => (0, X.openUserSettings)(H.X.CONNECTIONS_PANEL, {
-                        section: Q.nc_.CONNECTIONS
+                    onConnectionPress: () => (0, Q.openUserSettings)(H.X.CONNECTIONS_PANEL, {
+                        section: X.nc_.CONNECTIONS
                     })
                 })
             }) : null, (0, r.jsx)("div", {
@@ -486,7 +486,7 @@ let ec = e => {
                 component: ep(),
                 children: (0, r.jsxs)("div", {
                     className: ee.TD,
-                    children: [ef(), es(), em(), ey()]
+                    children: [ef(), eo(), em(), ey()]
                 })
             })
         })
@@ -498,10 +498,10 @@ let ec = e => {
         let {
             fetchState: e,
             appAuthTokens: t
-        } = (0, h.cf)([x.default], () => ({
-            fetchState: x.default.getFetchState(),
-            appAuthTokens: x.default.getNewestTokensForNonChildrenApplications()
-        })), n = (0, h.bG)([F.default], () => F.default.locale), a = (0, h.bG)([v.Ay], () => v.Ay.getSelfEmbeddedActivities()), s = (0, h.bG)([L.A, j.A], () => L.A.getChannel(j.A.getChannelId())), o = null == s ? void 0 : s.getGuildId(), c = e => {
+        } = (0, h.cf)([L.default], () => ({
+            fetchState: L.default.getFetchState(),
+            appAuthTokens: L.default.getNewestTokensForNonChildrenApplications()
+        })), n = (0, h.bG)([V.default], () => V.default.locale), a = (0, h.bG)([v.Ay], () => v.Ay.getSelfEmbeddedActivities()), o = (0, h.bG)([x.A, M.A], () => x.A.getChannel(M.A.getChannelId())), s = null == o ? void 0 : o.getGuildId(), c = e => {
             let {
                 id: t,
                 application: n
@@ -528,7 +528,7 @@ let ec = e => {
                 placeholder: $.intl.string($.t["5prvKe"]),
                 "aria-label": $.intl.string($.t["5prvKe"])
             })
-        }), m = (e, t) => (0, r.jsx)(eo, {
+        }), m = (e, t) => (0, r.jsx)(es, {
             className: ee.__invalid_marginTop20,
             children: (0, r.jsx)(E.SGT, {
                 note: e,
@@ -537,7 +537,7 @@ let ec = e => {
         }), g = i.useMemo(() => {
             let e = u.trim().toLowerCase();
             return "" === e || null == t ? t : t.length < 100 ? t.filter(t => l()(e, t.application.name.toLowerCase())) : t.filter(t => t.application.name.toLowerCase().includes(e))
-        }, [t, u]), b = () => null == t || null == g || e !== x.FetchState.FETCHED ? (0, r.jsx)(E.y$y, {
+        }, [t, u]), b = () => null == t || null == g || e !== L.FetchState.FETCHED ? (0, r.jsx)(E.y$y, {
             className: en.QX,
             type: E.y$y.Type.SPINNING_CIRCLE
         }) : 0 === t.length ? m($.intl.string($.t.CpPv5l), $.intl.string($.t["E+SM6T"])) : 0 === g.length ? (0, r.jsxs)(r.Fragment, {
@@ -546,8 +546,8 @@ let ec = e => {
             children: [_(), g.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(ef, ei({
                 locale: n,
                 onDelete: () => c(e),
-                selectedChannelId: null == s ? void 0 : s.id,
-                selectedGuildId: null != o ? o : void 0
+                selectedChannelId: null == o ? void 0 : o.id,
+                selectedGuildId: null != s ? s : void 0
             }, e), e.id))]
         });
         return (0, r.jsx)(E.Fmo, {

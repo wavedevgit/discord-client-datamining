@@ -2,7 +2,7 @@
 /** chunk id: 818307, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(896048);
 var r = n(635377),
     i = n.n(r);
@@ -15,8 +15,8 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = 3;
-class o {
+let o = 3;
+class s {
     reset() {
         this._subscriptions = {}
     }
@@ -32,7 +32,7 @@ class o {
     _get(e) {
         var t;
         return null != (t = this._subscriptions[e]) ? t : new(i())({
-            max: s,
+            max: o,
             updateAgeOnGet: !0
         })
     }

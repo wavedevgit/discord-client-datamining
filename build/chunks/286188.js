@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(108531),
-    s = n(158954),
-    o = n(311907),
+    o = n(158954),
+    s = n(311907),
     l = n(397927),
     c = n(736653),
     u = n(775602),
@@ -60,7 +60,7 @@ function y(e) {
     let {
         powerup: t
     } = e;
-    return (0, r.jsx)(s.EYj, {
+    return (0, r.jsx)(o.EYj, {
         tag: "span",
         variant: "text-md/semibold",
         className: _.Zt,
@@ -72,7 +72,7 @@ function b(e) {
     let {
         guildId: t,
         onButtonClick: n
-    } = e, h = (0, d.A)(t), g = (0, c.Ay)(), b = (0, l.qB1)(g), O = (0, o.bG)([u.A], () => u.A.useReducedMotion), [v, A] = i.useState(O), [I, S] = (0, l.zhh)(() => ({
+    } = e, h = (0, d.A)(t), g = (0, c.Ay)(), b = (0, l.qB1)(g), O = (0, s.bG)([u.A], () => u.A.useReducedMotion), [v, A] = i.useState(O), [I, S] = (0, l.zhh)(() => ({
         scale: O ? 1 : .8,
         config: {
             tension: 500,
@@ -122,12 +122,12 @@ function b(e) {
         style: E(m({}, I), {
             opacity: +!!v
         }),
-        children: [(0, r.jsx)(s.EYj, {
+        children: [(0, r.jsx)(o.EYj, {
             tag: "span",
             variant: "text-md/semibold",
             className: _.h_,
             children: T
-        }), (0, r.jsx)(s.$nd, {
+        }), (0, r.jsx)(o.$nd, {
             variant: b ? "primary" : "overlay-primary",
             size: "sm",
             text: f.intl.string(p.default.E5V5KK),

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 563111, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     me: "separator_ae2544",
     FA: "infoTitle_ae2544",

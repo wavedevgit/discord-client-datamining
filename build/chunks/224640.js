@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(110259),
     c = n(113325),
     u = n(426333),
@@ -97,12 +97,12 @@ function b(e) {
                     forceLevel: 1,
                     children: (0, r.jsxs)("div", {
                         ref: P,
-                        className: s()(h.outerContainer, {
+                        className: o()(h.outerContainer, {
                             [h.fullScreenOnMobile]: E
                         }),
-                        children: [S, (0, r.jsx)(o.animated.div, {
+                        children: [S, (0, r.jsx)(s.animated.div, {
                             "data-mana-component": "modal",
-                            className: s()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
+                            className: o()(h.container, h["size-".concat(_)], h["padding-size-".concat(m)]),
                             style: R,
                             children: C
                         })]

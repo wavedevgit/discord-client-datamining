@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(321733),
     i = n(294292),
     a = n(522311),
-    s = n(441870);
+    o = n(441870);
 
-function o(e, t) {
+function s(e, t) {
     if (!(e instanceof t)) throw TypeError("Cannot call a class as a function")
 }
 
@@ -25,7 +25,7 @@ function c(e, t, n) {
 }
 var u = function() {
     function e(t, n) {
-        o(this, e), this.store = t, this.registry = n
+        s(this, e), this.store = t, this.registry = n
     }
     return c(e, [{
         key: "subscribeToStateChange",
@@ -37,16 +37,16 @@ var u = function() {
                 i = n.handlerIds;
             (0, r.V)("function" == typeof e, "listener must be a function."), (0, r.V)(void 0 === i || Array.isArray(i), "handlerIds, when specified, must be an array of strings.");
             var a = this.store.getState().stateId,
-                o = function() {
+                s = function() {
                     var n = t.store.getState(),
                         r = n.stateId;
                     try {
-                        r !== a && (r !== a + 1 || (0, s.Dk)(n.dirtyHandlerIds, i)) && e()
+                        r !== a && (r !== a + 1 || (0, o.Dk)(n.dirtyHandlerIds, i)) && e()
                     } finally {
                         a = r
                     }
                 };
-            return this.store.subscribe(o)
+            return this.store.subscribe(s)
         }
     }, {
         key: "subscribeToOffsetChange",
@@ -101,10 +101,10 @@ var u = function() {
             var r = this.registry.getTargetType(e),
                 a = this.getItemType();
             if (a && !(0, i.k)(r, a)) return !1;
-            var s = this.getTargetIds();
-            if (!s.length) return !1;
-            var o = s.indexOf(e);
-            return n ? o === s.length - 1 : o > -1
+            var o = this.getTargetIds();
+            if (!o.length) return !1;
+            var s = o.indexOf(e);
+            return n ? s === o.length - 1 : s > -1
         }
     }, {
         key: "getItemType",

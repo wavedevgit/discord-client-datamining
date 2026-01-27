@@ -8,11 +8,11 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(939341),
-    s = n(263577),
-    o = n(506326),
+    o = n(263577),
+    s = n(506326),
     l = n(868065),
     c = n(332225);
-let u = [o.zi, o.Rq],
+let u = [s.zi, s.Rq],
     d = e => {
         let {
             entry: t,
@@ -32,13 +32,13 @@ let u = [o.zi, o.Rq],
                     guildId: n.guild_id
                 }), (0, r.jsx)(l.ZB, {
                     children: t.extra.media_title
-                }), (0, r.jsx)(o.mG, {
-                    location: o.N5.CARD,
+                }), (0, r.jsx)(s.mG, {
+                    location: s.N5.CARD,
                     children: u.map((e, n) => (0, r.jsx)(e, {
                         entry: t
                     }, n))
                 })]
-            }), (0, r.jsx)(s.V, {
+            }), (0, r.jsx)(o.V, {
                 src: null == d ? void 0 : d.src,
                 size: 48,
                 className: c.xn,

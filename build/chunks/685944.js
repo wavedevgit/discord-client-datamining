@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(607399),
+    o = n.n(a),
+    s = n(607399),
     l = n(311907),
     c = n(397927),
     u = n(241524),
@@ -57,7 +57,7 @@ function v(e) {
         isOrbCheckout: a
     } = e, l = (0, u.A)(m.T), {
         footerNode: d
-    } = (0, _.P5)(), f = (0, p.nr)() && !o.Fr, y = null != d ? d.offsetWidth : void 0, b = i.useMemo(() => f && null != y && (t === h.pn.ADD_PAYMENT_STEPS || a) ? y : void 0, [f, y, t, a]);
+    } = (0, _.P5)(), f = (0, p.nr)() && !s.Fr, y = null != d ? d.offsetWidth : void 0, b = i.useMemo(() => f && null != y && (t === h.pn.ADD_PAYMENT_STEPS || a) ? y : void 0, [f, y, t, a]);
     if (t === h.pn.BENEFITS || t === h.pn.CONFIRM) return null;
     let v = null != b ? {
             width: b + 2
@@ -74,7 +74,7 @@ function v(e) {
             "data-accessibility": "desaturate",
             style: A,
             children: a ? (0, r.jsx)(O, {
-                className: s()(g.F0, g.WL)
+                className: o()(g.F0, g.WL)
             }) : (0, r.jsx)("img", {
                 src: E,
                 alt: "",

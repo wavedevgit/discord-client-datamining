@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048), n(228524);
 var r, i = n(311907),
     a = n(73153),
-    s = n(9994),
-    o = n(652215);
+    o = n(9994),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -177,7 +177,7 @@ function A(e) {
     } = t;
     if (null == n) return;
     let r = p.get(n.id),
-        i = (0, s.wr)(n);
+        i = (0, o.wr)(n);
     null == r ? p.set(n.id, d(c({}, _), {
         profile: i,
         lastSyncTimestamp: Date.now(),
@@ -193,7 +193,7 @@ function I(e) {
     let {
         channel: t
     } = e;
-    t.type === o.rbe.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
+    t.type === s.rbe.GUILD_ANNOUNCEMENT && null != t.guild_id && p.delete(t.guild_id)
 }
 
 function S(e) {
@@ -210,14 +210,14 @@ function T(e) {
         guild: i
     } = e, a = p.get(i.id);
     if (null == a || null == a.profile) return !1;
-    let s = d(c({}, a.profile), {
+    let o = d(c({}, a.profile), {
         name: i.name,
         icon: null != (t = i.icon) ? t : null,
         description: null != (n = i.description) ? n : "",
         customBanner: null != (r = i.discovery_splash) ? r : null
     });
     p.set(i.id, d(c({}, a), {
-        profile: s
+        profile: o
     }))
 }
 class C extends(r = i.Ay.Store) {

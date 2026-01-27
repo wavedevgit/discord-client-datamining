@@ -2,16 +2,16 @@
 /** chunk id: 284054, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    s: () => o
+    s: () => s
 });
 var r = n(803082),
     i = n(290424),
     a = n(8321),
-    s = n(946020);
+    o = n(946020);
 
-function o(e, t) {
+function s(e, t) {
     let n, {
-        elementType: o = "button",
+        elementType: s = "button",
         isDisabled: l,
         onPress: c,
         onPressStart: u,
@@ -26,7 +26,7 @@ function o(e, t) {
         rel: y,
         type: b = "button"
     } = e;
-    n = "button" === o ? {
+    n = "button" === s ? {
         type: b,
         disabled: l,
         form: e.form,
@@ -39,12 +39,12 @@ function o(e, t) {
         value: e.value
     } : {
         role: "button",
-        href: "a" !== o || l ? void 0 : g,
-        target: "a" === o ? E : void 0,
-        type: "input" === o ? b : void 0,
-        disabled: "input" === o ? l : void 0,
-        "aria-disabled": l && "input" !== o ? l : void 0,
-        rel: "a" === o ? y : void 0
+        href: "a" !== s || l ? void 0 : g,
+        target: "a" === s ? E : void 0,
+        type: "input" === s ? b : void 0,
+        disabled: "input" === s ? l : void 0,
+        "aria-disabled": l && "input" !== s ? l : void 0,
+        rel: "a" === s ? y : void 0
     };
     let {
         pressProps: O,
@@ -61,7 +61,7 @@ function o(e, t) {
         ref: t
     }), {
         focusableProps: A
-    } = (0, s.Wc)(e, t);
+    } = (0, o.Wc)(e, t);
     h && (A.tabIndex = l ? -1 : A.tabIndex);
     let I = (0, r.v)(A, O, (0, i.$)(e, {
         labelable: !0

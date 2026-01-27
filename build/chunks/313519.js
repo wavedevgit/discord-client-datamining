@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(788413),
     a = n(212245),
-    s = n(60587),
-    o = n(887695);
+    o = n(60587),
+    s = n(887695);
 let l = e => {
     let {
         columnCounts: t,
@@ -21,7 +21,7 @@ let l = e => {
     } = e, p = (0, a.p)(), _ = r.useCallback(e => {
         f(e, p)
     }, [f, p]), h = r.useCallback((e, t) => {
-        d(e, t, s.t.GRID_NAVIGATOR_EVENT)
+        d(e, t, o.t.GRID_NAVIGATOR_EVENT)
     }, [d]), {
         gridDispatch: m,
         getItemProps: g,
@@ -29,7 +29,7 @@ let l = e => {
         gridContainerProps: y,
         handleGridContainerKeyDown: b,
         isUsingKeyboardNavigation: O
-    } = (0, o.Ff)({
+    } = (0, s.Ff)({
         columnCounts: t,
         gridNavigatorId: u,
         itemGrid: n,
@@ -44,7 +44,7 @@ let l = e => {
             rowIndex: n,
             source: r
         } = e;
-        r !== s.t.GRID_NAVIGATOR_EVENT && m({
+        r !== o.t.GRID_NAVIGATOR_EVENT && m({
             type: i.n.SET_FOCUSED_POSITION,
             x: t,
             y: n

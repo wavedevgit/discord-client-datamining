@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(342494),
-    o = n(217838),
+    o = n(342494),
+    s = n(217838),
     l = n(972687),
     c = n(89608);
 
@@ -94,7 +94,7 @@ let m = {
                     alignItems: "center",
                     minHeight: "400px"
                 },
-                children: [(0, r.jsx)(s.AM, p(d({}, E), {
+                children: [(0, r.jsx)(o.AM, p(d({}, E), {
                     position: g,
                     size: m,
                     align: h,
@@ -104,7 +104,7 @@ let m = {
                     onRequestClose: () => b(!1),
                     graphic: t ? {
                         type: "image",
-                        src: "sm" === m ? l.A : o.A
+                        src: "sm" === m ? l.A : s.A
                     } : void 0,
                     caretConfig: {
                         align: u
@@ -277,11 +277,11 @@ let m = {
         component: function(e) {
             let {
                 showActions: t
-            } = e, n = _(e, ["showActions"]), [o, l] = i.useState(!1), c = i.useRef(null);
+            } = e, n = _(e, ["showActions"]), [s, l] = i.useState(!1), c = i.useRef(null);
             return (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(s.HZ, p(d({}, n), {
+                children: [(0, r.jsx)(o.HZ, p(d({}, n), {
                     targetElementRef: c,
-                    shouldShow: o,
+                    shouldShow: s,
                     onRequestClose: () => l(!1),
                     title: "Video Popover Demo",
                     body: "Click the video to view it in the media viewer!",
@@ -295,7 +295,7 @@ let m = {
                     variant: "primary",
                     text: "Show Video Popover",
                     buttonRef: c,
-                    onClick: () => l(!o)
+                    onClick: () => l(!s)
                 })]
             })
         },
@@ -317,7 +317,7 @@ let m = {
                 title: "Welcome to the Feature!",
                 body: "This is the first step of our multi-step introduction.",
                 asset: (0, r.jsx)("img", {
-                    src: o.A,
+                    src: s.A,
                     alt: "Step 1"
                 }),
                 badge: "new",
@@ -340,7 +340,7 @@ let m = {
                 title: "Get Started!",
                 body: "You're all set to begin using this awesome feature.",
                 asset: (0, r.jsx)("img", {
-                    src: o.A,
+                    src: s.A,
                     alt: "Step 3"
                 }),
                 action: {
@@ -355,7 +355,7 @@ let m = {
                 }
             }];
             return (0, r.jsxs)("div", {
-                children: [(0, r.jsx)(s.pu, p(d({}, n), {
+                children: [(0, r.jsx)(o.pu, p(d({}, n), {
                     targetElementRef: f,
                     shouldShow: l,
                     onRequestClose: () => u(!1),

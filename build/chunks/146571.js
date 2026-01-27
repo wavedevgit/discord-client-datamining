@@ -6,13 +6,13 @@ r.d(t, {
 var n = r(627968),
     s = r(64700),
     i = r(503698),
-    a = r.n(i),
-    l = r(421380),
+    l = r.n(i),
+    a = r(421380),
     o = r(397927),
     c = r(915089),
     u = r(628387),
-    d = r(920768),
-    h = r(291255),
+    h = r(920768),
+    d = r(291255),
     p = r(713545);
 
 function f(e) {
@@ -21,8 +21,8 @@ function f(e) {
         countryCode: r,
         forceMode: i,
         label: f,
-        error: y,
-        className: m,
+        error: m,
+        className: y,
         required: g,
         value: O,
         setRef: b,
@@ -30,29 +30,29 @@ function f(e) {
         autoFocus: w,
         maxLength: C,
         spellCheck: S,
-        autoComplete: v,
-        autoCapitalize: A,
+        autoComplete: A,
+        autoCapitalize: v,
         autoCorrect: E,
         onChange: x,
         inputClassName: P
     } = e, N = (0, c.GV)(), [k, T] = s.useState(!1), _ = (0, u.Vl)(i, O);
     return (0, n.jsx)("div", {
-        className: null != m ? m : void 0,
+        className: null != y ? y : void 0,
         children: (0, n.jsx)(o.D0$, {
             label: f,
-            errorMessage: y,
+            errorMessage: m,
             required: g,
             id: N,
             children: (0, n.jsxs)("div", {
-                className: a()(p.hF, h.hF, P, {
-                    [p.z3]: null != y,
+                className: l()(p.hF, d.hF, P, {
+                    [p.z3]: null != m,
                     [p.in]: k
                 }),
-                children: [(0, n.jsx)(d.A, {
+                children: [(0, n.jsx)(h.A, {
                     show: _,
                     alpha2: t,
                     countryCode: r
-                }), (0, n.jsx)(l.ob, {
+                }), (0, n.jsx)(a.ob, {
                     id: N,
                     name: "email",
                     type: i === u.Pd.EMAIL ? "email" : "text",
@@ -65,14 +65,14 @@ function f(e) {
                         let t = (0, u.Vl)(i, e) ? r : "";
                         x(e, t)
                     },
-                    autoComplete: v,
-                    autoCapitalize: A,
+                    autoComplete: A,
+                    autoCapitalize: v,
                     autoCorrect: E,
                     autoFocus: w,
                     maxLength: C,
                     spellCheck: S,
-                    className: h.I6,
-                    inputClassName: h.LF,
+                    className: d.I6,
+                    inputClassName: d.LF,
                     onFocus: () => T(!0),
                     onBlur: () => T(!1)
                 })]

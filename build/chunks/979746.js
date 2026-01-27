@@ -2,7 +2,7 @@
 /** chunk id: 979746, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(385987),
     i = {
@@ -17,13 +17,13 @@ var r = n(385987),
         medium: "h:mm:ss a",
         short: "h:mm a"
     },
-    s = {
+    o = {
         full: "{{date}} 'at' {{time}}",
         long: "{{date}} 'at' {{time}}",
         medium: "{{date}}, {{time}}",
         short: "{{date}}, {{time}}"
     };
-let o = {
+let s = {
     date: (0, r.A)({
         formats: i,
         defaultWidth: "full"
@@ -33,7 +33,7 @@ let o = {
         defaultWidth: "full"
     }),
     dateTime: (0, r.A)({
-        formats: s,
+        formats: o,
         defaultWidth: "full"
     })
 }

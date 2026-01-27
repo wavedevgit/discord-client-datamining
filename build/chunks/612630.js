@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(562465),
-    s = n(73153),
-    o = n(279263),
+    o = n(73153),
+    s = n(279263),
     l = n(652215);
 
 function c(e) {
-    let t = (0, i.bG)([o.A], () => o.A.getNote(e));
+    let t = (0, i.bG)([s.A], () => s.A.getNote(e));
     return r.useEffect(() => {
         null == t && u(e)
     }, [t, e]), null != t ? t : {
@@ -21,7 +21,7 @@ function c(e) {
     }
 }
 async function u(e) {
-    s.h.dispatch({
+    o.h.dispatch({
         type: "USER_NOTE_LOAD_START",
         userId: e
     });
@@ -34,13 +34,13 @@ async function u(e) {
             rejectWithError: !0
         });
         if (t.note_user_id !== e) throw Error("Invalid response from server");
-        s.h.dispatch({
+        o.h.dispatch({
             type: "USER_NOTE_UPDATE",
             id: e,
             note: t.note
         })
     } catch (t) {
-        s.h.dispatch({
+        o.h.dispatch({
             type: "USER_NOTE_UPDATE",
             id: e
         })

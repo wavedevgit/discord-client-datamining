@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(688810),
     c = n(183555),
     u = n(657331),
@@ -79,7 +79,7 @@ let E = 57.75,
         return _ || null == a || "" === a ? null : (0, r.jsxs)("div", {
             children: [(0, r.jsx)("div", {
                 ref: T,
-                className: s()(p.mA, A && p.Em),
+                className: o()(p.mA, A && p.Em),
                 onBlur: N,
                 children: (0, r.jsx)(d.A, {
                     userBio: a,
@@ -88,7 +88,7 @@ let E = 57.75,
                 })
             }), (O || A) && (0, r.jsx)("div", {
                 className: p.HV,
-                children: (0, r.jsx)(o.QWc, {
+                children: (0, r.jsx)(s.QWc, {
                     textVariant: "text-xs/normal",
                     size: "sm",
                     variant: "secondary",

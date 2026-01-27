@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(582754),
     c = n(397927),
     u = n(736653),
@@ -34,7 +34,7 @@ function p(e) {
         style: {
             maxWidth: y
         },
-        className: s()(f.f, p)
+        className: o()(f.f, p)
     });
     let S = "height" === a ? {
         maxWidth: y,
@@ -43,13 +43,13 @@ function p(e) {
         maxWidth: y,
         minHeight: y
     };
-    return (0, r.jsx)(o.m, {
+    return (0, r.jsx)(s.m, {
         "aria-label": _,
         __unsupportedReactNodeAsText: _,
         shouldShow: g,
         children: (0, r.jsx)("img", {
             style: S,
-            className: s()(f.f, p),
+            className: o()(f.f, p),
             src: b && null != h ? h : t,
             "aria-hidden": m,
             alt: null != _ ? _ : m ? void 0 : d.intl.string(d.t["2B/phM"]),

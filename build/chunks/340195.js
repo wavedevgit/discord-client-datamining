@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(736653),
-    o = n(775602),
+    o = n(736653),
+    s = n(775602),
     l = n(607470),
     c = n(200430),
     u = n(154057),
@@ -20,7 +20,7 @@ var i = n(311907),
 function _(e) {
     let {
         className: t
-    } = e, n = (0, i.bG)([o.A], () => o.A.useReducedMotion), _ = (0, s.Ay)(), h = (0, a.qB1)(_);
+    } = e, n = (0, i.bG)([s.A], () => s.A.useReducedMotion), _ = (0, o.Ay)(), h = (0, a.qB1)(_);
     if (n) {
         let e = h ? f.A : u.A;
         return (0, r.jsxs)("div", {

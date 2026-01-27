@@ -3,10 +3,10 @@
 "use strict";
 let r, i;
 n.r(t), n.d(t, {
-    default: () => Q
+    default: () => X
 }), n(321073), n(896048);
-var a, s = n(735438),
-    o = n.n(s),
+var a, o = n(735438),
+    s = n.n(o),
     l = n(311907),
     c = n(73153),
     u = n(824953),
@@ -86,11 +86,11 @@ function R(e) {
 function P() {
     r = null, g = [], E = [], y = null, b = null, O = null, I = _.XlH.CLOSED, T = !1
 }
-let D = o().debounce(() => {
-    T && (null != b ? o().isEqual(b, z(b.id)) && (T = !1) : null != O && o().isEqual(O, q(O.id)) && (T = !1), T || X.emitChange())
+let D = s().debounce(() => {
+    T && (null != b ? s().isEqual(b, z(b.id)) && (T = !1) : null != O && s().isEqual(O, q(O.id)) && (T = !1), T || Q.emitChange())
 }, 500);
 
-function x(e) {
+function L(e) {
     let {
         settings: t
     } = e;
@@ -98,7 +98,7 @@ function x(e) {
     b = m({}, b), null != t.enableEmoticons && b.enable_emoticons !== t.enableEmoticons && (b.enable_emoticons = t.enableEmoticons, T = !0), null != t.expireBehavior && b.expire_behavior !== t.expireBehavior && (b.expire_behavior = t.expireBehavior, T = !0), null != t.expireGracePeriod && b.expire_grace_period !== t.expireGracePeriod && (b.expire_grace_period = t.expireGracePeriod, T = !0), T && D()
 }
 
-function L(e) {
+function x(e) {
     let {
         settings: t
     } = e;
@@ -106,11 +106,11 @@ function L(e) {
     O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, T = !0), void 0 !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, T = !0), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, T = !0), T && D()
 }
 
-function j() {
+function M() {
     I = _.XlH.SUBMITTING, S = {}
 }
 
-function M(e) {
+function j(e) {
     var t;
     if (I !== _.XlH.SUBMITTING) return !1;
     I = _.XlH.OPEN, S = null != (t = e.errors) ? t : {}
@@ -185,7 +185,7 @@ function G(e) {
     y = t, b = null, O = null, S = {}, T = !0
 }
 
-function V(e) {
+function F(e) {
     let {
         commandId: t
     } = e;
@@ -193,7 +193,7 @@ function V(e) {
     y = null, S = {}, T = !1
 }
 
-function F(e) {
+function V(e) {
     let {
         integrationId: t
     } = e, n = z(t);
@@ -300,24 +300,24 @@ class Z extends(a = l.Ay.Store) {
     }
 }
 h(Z, "displayName", "GuildSettingsIntegrationsStore");
-let X = new Z(c.h, __OVERLAY__ ? {} : {
+let Q = new Z(c.h, __OVERLAY__ ? {} : {
         INTEGRATION_SETTINGS_INIT: W,
         INTEGRATION_SETTINGS_SAVE_SUCCESS: K,
         GUILD_SETTINGS_INIT: N,
         GUILD_SETTINGS_SET_SECTION: N,
         INTEGRATION_SETTINGS_SET_SECTION: w,
         INTEGRATION_SETTINGS_START_EDITING_COMMAND: G,
-        INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: V,
-        INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: F,
+        INTEGRATION_SETTINGS_STOP_EDITING_COMMAND: F,
+        INTEGRATION_SETTINGS_START_EDITING_INTEGRATION: V,
         INTEGRATION_SETTINGS_STOP_EDITING_INTEGRATION: B,
-        INTEGRATION_SETTINGS_UPDATE_INTEGRATION: x,
-        INTEGRATION_SETTINGS_UPDATE_WEBHOOK: L,
+        INTEGRATION_SETTINGS_UPDATE_INTEGRATION: L,
+        INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
         INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: H,
         INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: Y,
         GUILD_SETTINGS_CLOSE: P,
         GUILD_SETTINGS_LOADED_INTEGRATIONS: k,
         WEBHOOKS_UPDATE: U,
-        INTEGRATION_SETTINGS_SUBMITTING: j,
-        INTEGRATION_SETTINGS_SAVE_FAILURE: M
+        INTEGRATION_SETTINGS_SUBMITTING: M,
+        INTEGRATION_SETTINGS_SAVE_FAILURE: j
     }),
-    Q = X
+    X = Q

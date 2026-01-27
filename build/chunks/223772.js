@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 223772, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     NC: "buttonsContainer__89253",
     DT: "removeButton__89253",

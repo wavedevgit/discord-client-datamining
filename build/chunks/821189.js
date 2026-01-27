@@ -2,15 +2,15 @@
 /** chunk id: 821189, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o,
-    f: () => s
+    A: () => s,
+    f: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(976114);
 
-function s(e) {
+function o(e) {
     let {
         currencies: t,
         className: n,
@@ -21,12 +21,12 @@ function s(e) {
         children: i
     })
 }
-let o = function(e) {
+let s = function(e) {
     let {
         label: t,
         currencies: n,
-        onChange: s,
-        selectedCurrency: o,
+        onChange: o,
+        selectedCurrency: s,
         disabled: l = !1
     } = e;
     if (n.length < 2) return null;
@@ -36,12 +36,12 @@ let o = function(e) {
             label: "".concat(e.toUpperCase(), " - ").concat((0, a.Q)(e))
         })),
         u = e => {
-            null != e && s(e)
+            null != e && o(e)
         };
     return (0, r.jsx)(i.l6P, {
         selectionMode: "single",
         label: t,
-        value: o,
+        value: s,
         options: c,
         onSelectionChange: u,
         disabled: l

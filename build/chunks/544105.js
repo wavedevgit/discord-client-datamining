@@ -2,22 +2,22 @@
 /** chunk id: 544105, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    EY: () => s,
+    EY: () => o,
     Gp: () => a,
     K8: () => f,
     NL: () => l,
     f$: () => u,
     hv: () => d,
     hw: () => c,
-    sS: () => o,
+    sS: () => s,
     v_: () => p,
     yM: () => _
 }), n(896048), n(680155), n(323874), n(14289), n(35956);
 var r = n(179771),
     i = n(652215);
 let a = "xbox://communitylinking/donut/audio",
-    s = "https://www.xbox.com/en-US/apps/xbox-app-for-mobile",
-    o = [r.F.VOICE, r.F.DM_CHANNELS_READ, r.F.GUILDS, r.F.GUILDS_MEMBERS_READ, r.F.IDENTIFY, r.F.CONNECTIONS, r.F.ACTIVITIES_READ],
+    o = "https://www.xbox.com/en-US/apps/xbox-app-for-mobile",
+    s = [r.F.VOICE, r.F.DM_CHANNELS_READ, r.F.GUILDS, r.F.GUILDS_MEMBERS_READ, r.F.IDENTIFY, r.F.CONNECTIONS, r.F.ACTIVITIES_READ],
     l = [r.F.VOICE, r.F.DM_CHANNELS_READ, r.F.GUILDS, r.F.GUILDS_MEMBERS_READ, r.F.IDENTIFY, r.F.CONNECTIONS],
     c = e => {
         let {
@@ -26,17 +26,17 @@ let a = "xbox://communitylinking/donut/audio",
             guildName: r,
             channelId: i,
             muted: a,
-            deafened: s,
-            nonce: o
+            deafened: o,
+            nonce: s
         } = e, l = {
             channelid: i,
             guildid: t,
             channelname: n,
             guildname: r,
             muted: String(a),
-            deafened: String(s)
+            deafened: String(o)
         };
-        return null != o && (l.nonce = o), new URLSearchParams(l)
+        return null != s && (l.nonce = s), new URLSearchParams(l)
     };
 var u = function(e) {
     return e.PLAYSTATION = "playstation", e.XBOX = "xbox", e

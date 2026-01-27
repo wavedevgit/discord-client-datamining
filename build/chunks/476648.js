@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 476648, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u,
     f: () => c
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(877272),
-    l = n(834450);
+    i = n.n(a),
+    s = n(877272),
+    o = n(834450);
 let c = 400;
 
 function u(e) {
@@ -20,25 +19,25 @@ function u(e) {
         text: a,
         variant: u,
         delay: d
-    } = e, f = (0, i.useRef)(0), p = (0, i.useRef)(0), [_, h] = (0, i.useState)("");
-    return (0, i.useEffect)(() => {
+    } = e, m = (0, l.useRef)(0), f = (0, l.useRef)(0), [p, h] = (0, l.useState)("");
+    return (0, l.useEffect)(() => {
         let e = () => {
-            let t = Date.now() - f.current,
+            let t = Date.now() - m.current,
                 n = Math.max(Math.min(t / c, 1), 0);
-            h(a.substring(0, Math.floor(n * a.length))), t < c && (p.current = window.requestAnimationFrame(e))
+            h(a.substring(0, Math.floor(n * a.length))), t < c && (f.current = window.requestAnimationFrame(e))
         };
-        return f.current = Date.now() + (null != d ? d : 0), p.current = window.requestAnimationFrame(e), () => cancelAnimationFrame(p.current)
+        return m.current = Date.now() + (null != d ? d : 0), f.current = window.requestAnimationFrame(e), () => cancelAnimationFrame(f.current)
     }, [d, a]), (0, r.jsxs)("div", {
-        className: s()(t, l.kL),
-        children: [(0, r.jsx)(o.A, {
+        className: i()(t, o.kL),
+        children: [(0, r.jsx)(s.A, {
             "aria-hidden": !0,
-            className: s()(l.CZ, n),
+            className: i()(o.CZ, n),
             variant: u,
             children: a
-        }), (0, r.jsx)(o.A, {
-            className: s()(l.Hi, n),
+        }), (0, r.jsx)(s.A, {
+            className: i()(o.Hi, n),
             variant: u,
-            children: _
+            children: p
         })]
     })
 }

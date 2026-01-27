@@ -2,14 +2,14 @@
 /** chunk id: 927057, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    x: () => s
+    x: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(281077);
 
-function s(e) {
+function o(e) {
     let {
         onClick: t
     } = e;

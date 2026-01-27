@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(20805),
-    o = n(261020),
+    o = n(20805),
+    s = n(261020),
     l = n(83971),
     c = n(655116),
     u = n(780964),
@@ -46,14 +46,14 @@ function m(e) {
         }
     });
     if (b) return null;
-    let v = (0, s.Tq)(m) ? null == (t = m.extra.entries[0]) ? void 0 : t.media : m.extra.media;
+    let v = (0, o.Tq)(m) ? null == (t = m.extra.entries[0]) ? void 0 : t.media : m.extra.media;
     return null == v ? null : (0, r.jsx)(a.Drp, {
         id: "play-on-spotify",
         label: h.intl.string(h.t.rRffNz),
         action: () => {
             null == E || E({
                 action: "PRESS_PLAY_ON_SPOTIFY_MENU_ITEM"
-            }), (0, o.n)(_.M0.TRACK, v.external_id)
+            }), (0, s.n)(_.M0.TRACK, v.external_id)
         }
     })
 }

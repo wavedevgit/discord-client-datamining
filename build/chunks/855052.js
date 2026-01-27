@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(315069),
     i = n(611010),
     a = n(520606),
-    s = n(872472),
-    o = n(721932),
+    o = n(872472),
+    s = n(721932),
     l = n(652215);
 
 function c(e, t, n) {
@@ -78,9 +78,9 @@ class h extends r.A {
         } = e, d = p(e, ["user_id", "wishlist_items"]), _ = c.map(e => {
             switch (e.sku_product_line) {
                 case l.EZt.COLLECTIBLES:
-                    return s.A.fromServer(e);
-                case l.EZt.SOCIAL_LAYER_GAME_ITEM:
                     return o.A.fromServer(e);
+                case l.EZt.SOCIAL_LAYER_GAME_ITEM:
+                    return s.A.fromServer(e);
                 default:
                     return a.A.fromServer(e)
             }

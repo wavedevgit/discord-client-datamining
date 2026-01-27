@@ -1,37 +1,37 @@
-/** Chunk was on 94073 **/
+/** Chunk was on 87916 **/
 /** chunk id: 721127, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
 });
-var r = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(503698),
-    o = n.n(a),
-    i = n(397927),
-    l = n(404374),
-    s = n(468099);
+var i = n(503698),
+    l = n.n(i),
+    r = n(397927),
+    s = n(404374),
+    o = n(468099);
 
 function c(e) {
     let {
         text: t,
         className: n,
-        button: a,
+        button: i,
         reducedRightPadding: c = !1
     } = e;
-    return (0, r.jsxs)("div", {
-        className: o()(c ? s.wp : s.Ug, n),
-        children: [(0, r.jsxs)("div", {
-            className: s.g9,
-            children: [(0, r.jsx)(i.tvc, {
+    return (0, a.jsxs)("div", {
+        className: l()(c ? o.wp : o.Ug, n),
+        children: [(0, a.jsxs)("div", {
+            className: o.g9,
+            children: [(0, a.jsx)(r.tvc, {
                 size: "md",
-                className: s.Kk,
-                color: l.k0.PREMIUM_TIER_2
-            }), (0, r.jsx)(i.Text, {
-                className: s.Qq,
+                className: o.Kk,
+                color: s.k0.PREMIUM_TIER_2
+            }), (0, a.jsx)(r.Text, {
+                className: o.Qq,
                 variant: "text-md/normal",
                 color: "text-strong",
                 children: t
             })]
-        }), a]
+        }), i]
     })
 }

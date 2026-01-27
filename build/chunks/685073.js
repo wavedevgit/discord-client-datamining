@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(311907),
     i = n(229527),
     a = n(696451),
-    s = n(71393),
-    o = n(287809),
+    o = n(71393),
+    s = n(287809),
     l = n(743981),
     c = n(652215);
 
@@ -47,17 +47,17 @@ function p(e) {
 
 function _(e) {
     var t, n, i, a;
-    let o = (0, r.bG)([s.A], () => s.A.getGuild(e), [e]);
-    return null == e ? e : null == o ? o : {
-        identityGuildId: o.id,
+    let s = (0, r.bG)([o.A], () => o.A.getGuild(e), [e]);
+    return null == e ? e : null == s ? s : {
+        identityGuildId: s.id,
         identityEnabled: !0,
-        tag: null != (t = null == (i = o.profile) ? void 0 : i.tag) ? t : void 0,
-        badge: null != (n = null == (a = o.profile) ? void 0 : a.badge) ? n : void 0
+        tag: null != (t = null == (i = s.profile) ? void 0 : i.tag) ? t : void 0,
+        badge: null != (n = null == (a = s.profile) ? void 0 : a.badge) ? n : void 0
     }
 }
 
 function h(e, t, n) {
-    let s = (0, r.bG)([o.default], () => o.default.getUser(e), [e]),
+    let o = (0, r.bG)([s.default], () => s.default.getUser(e), [e]),
         l = (0, r.bG)([a.Ay], () => {
             if (null == t || null == e) return null;
             let n = a.Ay.getMember(t, e);
@@ -66,6 +66,6 @@ function h(e, t, n) {
         {
             tag: c,
             guildId: u
-        } = p(void 0 !== n ? n : null == s ? void 0 : s.primaryGuild);
+        } = p(void 0 !== n ? n : null == o ? void 0 : o.primaryGuild);
     return null != u && null != c && !l
 }

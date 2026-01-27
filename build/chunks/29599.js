@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -43,7 +43,7 @@ function d(e) {
     l[t][n] = {
         loading: !1,
         results: r.map(e => ({
-            type: s.Z86[t].type,
+            type: o.Z86[t].type,
             meta: e
         }))
     }, c = {
@@ -69,7 +69,7 @@ class p extends(r = i.Ay.Store) {
         return c
     }
 }
-o(p, "displayName", "IntegrationQueryStore");
+s(p, "displayName", "IntegrationQueryStore");
 let _ = new p(a.h, {
     INTEGRATION_QUERY: u,
     INTEGRATION_QUERY_SUCCESS: d,

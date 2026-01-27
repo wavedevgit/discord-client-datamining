@@ -1,7 +1,7 @@
 /** Chunk was on 67096 **/
 /** chunk id: 262828, original params: e,A,t (module,exports,require) **/
 t.d(A, {
-    A: () => o
+    A: () => s
 }), t(896048);
 var r = t(64700),
     n = t(311907),
@@ -9,14 +9,14 @@ var r = t(64700),
     a = t(627363),
     i = t(587895);
 
-function o(e, A) {
+function s(e, A) {
     let t = (0, n.bG)([i.A], () => i.A.getGuildApplication(e, A)),
-        [o, s] = r.useState(null == t),
+        [s, o] = r.useState(null == t),
         [d, u] = r.useState(),
         [c, g] = r.useState(!1),
-        p = r.useCallback(async () => {
+        f = r.useCallback(async () => {
             if (null == t && null != e) {
-                g(!0), s(!0);
+                g(!0), o(!0);
                 try {
                     await a.Ay.getApplicationsForGuild(e, {
                         type: A,
@@ -25,15 +25,15 @@ function o(e, A) {
                 } catch (e) {
                     u(new l.LG(e))
                 } finally {
-                    s(!1)
+                    o(!1)
                 }
             }
         }, [t, A, e]);
     return r.useEffect(() => {
-        c || p()
-    }, [c, p]), {
+        c || f()
+    }, [c, f]), {
         application: t,
         error: d,
-        loading: o
+        loading: s
     }
 }

@@ -4,7 +4,7 @@
 n.d(t, {
     L8: () => a,
     Wy: () => i,
-    uM: () => s
+    uM: () => o
 });
 var r = n(64700),
     i = function(e) {
@@ -21,6 +21,6 @@ let a = r.createContext({
     setSlideReady: () => {}
 });
 
-function s() {
+function o() {
     return r.useContext(a)
 }

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 875871, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Gg: "guildInviteContainer__083ae",
     vk: "clickable__083ae",

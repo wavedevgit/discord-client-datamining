@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 175284, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(386849),
     p = n(826673),
     f = n(801264),
-    b = n(576705),
-    h = n(405269),
+    h = n(576705),
+    b = n(405269),
     x = n(975571),
     j = n(997509),
     _ = n(50249),
@@ -87,13 +87,13 @@ function T(e) {
             forceTrack: !0
         })
     }, [t]);
-    let n = (0, h.i$)(o()(y.X30), "LL"),
+    let n = (0, b.i$)(o()(y.X30), "LL"),
         l = t.features.has(y.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE) ? (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             children: N.intl.format(N.t.Vg2oTN, {
                 breakingChangeDate: n
             })
-        }) : b.A.can(E.xB.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
+        }) : h.A.can(E.xB.ADMINISTRATOR, t) ? (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             children: N.intl.format(N.t.HYM8OE, {
                 onClickMigrate: () => {

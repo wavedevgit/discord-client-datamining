@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 183924, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 }), n(228524);
 var r = n(627968);
 n(64700);
-var i = n(397927),
+var l = n(397927),
     a = n(155718),
-    s = n(207963),
-    o = n(518774);
+    i = n(207963),
+    s = n(518774);
 
-function l(e) {
+function o(e) {
     let {
         label: t,
         description: n,
-        component: l,
+        component: o,
         renderComponent: c
-    } = e, u = (0, s.bO)(l);
-    return l.type === a.I5.CHECKBOX ? c(l, "label-child") : (0, r.jsxs)(i.eIh, {
+    } = e, u = (0, i.bO)(o);
+    return o.type === a.I5.CHECKBOX ? c(o, "label-child") : (0, r.jsxs)(l.eIh, {
         title: t,
-        required: l.required,
+        required: o.required,
         error: u,
-        children: [null != n && (0, r.jsx)(i.ayl, {
-            type: i.tiu.DESCRIPTION,
-            className: o.h,
+        children: [null != n && (0, r.jsx)(l.ayl, {
+            type: l.tiu.DESCRIPTION,
+            className: s.h,
             children: n
-        }), c(l, "label-child")]
+        }), c(o, "label-child")]
     })
 }

@@ -8,13 +8,13 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(954571),
-    s = n(559868),
-    o = n(652215),
+    o = n(559868),
+    s = n(652215),
     l = n(985018);
 let c = () => {
-    a.default.track(o.HAw.CHANGE_LOG_CTA_CLICKED, {
+    a.default.track(s.HAw.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "profile_bio",
-        target: s.Do
+        target: o.Do
     })
 };
 
@@ -28,7 +28,7 @@ function u() {
                     onClick: c,
                     target: "_blank",
                     rel: "noreferrer noopener",
-                    href: s.Do,
+                    href: o.Do,
                     children: e
                 }, t)
             })

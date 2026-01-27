@@ -2,7 +2,7 @@
 /** chunk id: 797164, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(896048);
 var r = n(306173),
     i = n(439372);
@@ -15,7 +15,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends i.A {
+class o extends i.A {
     _initialize() {
         if ((0, r.xd)()) {
             let e = "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT, "/bad-hash-delta");
@@ -27,4 +27,4 @@ class s extends i.A {
         super(...e), a(this, "intervalID", void 0)
     }
 }
-let o = new s
+let s = new o

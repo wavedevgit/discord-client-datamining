@@ -6,6 +6,6 @@ n.d(t, {
 });
 let r = {
     canUseInstallationId: function() {
-        return !1
+        return !0
     }
 }

@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(374994),
-    s = n(998218),
-    o = n(652215);
+    o = n(998218),
+    s = n(652215);
 let l = [{
-        type: o.fg2.TWITCH,
+        type: s.fg2.TWITCH,
         name: "Twitch",
         color: (0, a.dE)("TWITCH"),
         icon: {
@@ -30,7 +30,7 @@ let l = [{
         },
         domains: ["twitch.tv", "twitch.com"]
     }, {
-        type: o.fg2.YOUTUBE,
+        type: s.fg2.YOUTUBE,
         name: "YouTube",
         color: (0, a.dE)("YOUTUBE"),
         icon: {
@@ -50,7 +50,7 @@ let l = [{
         },
         domains: ["youtube.com", "youtu.be"]
     }, {
-        type: o.fg2.BATTLENET,
+        type: s.fg2.BATTLENET,
         name: "Battle.net",
         color: (0, a.dE)("BATTLENET"),
         icon: {
@@ -63,7 +63,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.BLUESKY,
+        type: s.fg2.BLUESKY,
         name: "Bluesky",
         icon: {
             lightPNG: n(419075),
@@ -83,7 +83,7 @@ let l = [{
         isFederated: !0,
         hasMetadata: !0
     }, {
-        type: o.fg2.BUNGIE,
+        type: s.fg2.BUNGIE,
         name: "Bungie.net",
         color: (0, a.dE)("BUNGIE"),
         icon: {
@@ -96,7 +96,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.SKYPE,
+        type: s.fg2.SKYPE,
         name: "Skype",
         color: (0, a.dE)("SKYPE"),
         icon: {
@@ -115,7 +115,7 @@ let l = [{
             return "skype:".concat(encodeURIComponent(t), "?userinfo")
         }
     }, {
-        type: o.fg2.LEAGUE_OF_LEGENDS,
+        type: s.fg2.LEAGUE_OF_LEGENDS,
         name: "League of Legends",
         color: (0, a.dE)("LOL"),
         icon: {
@@ -128,7 +128,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.STEAM,
+        type: s.fg2.STEAM,
         name: "Steam",
         color: (0, a.dE)("STEAM"),
         icon: {
@@ -148,7 +148,7 @@ let l = [{
         },
         hasMetadata: !0
     }, {
-        type: o.fg2.REDDIT,
+        type: s.fg2.REDDIT,
         name: "Reddit",
         color: (0, a.dE)("REDDIT"),
         icon: {
@@ -169,7 +169,7 @@ let l = [{
         },
         hasMetadata: !0
     }, {
-        type: o.fg2.FACEBOOK,
+        type: s.fg2.FACEBOOK,
         name: "Facebook",
         color: (0, a.dE)("FACEBOOK"),
         icon: {
@@ -183,7 +183,7 @@ let l = [{
         domains: ["facebook.com"],
         enabled: !0
     }, {
-        type: o.fg2.TWITTER_LEGACY,
+        type: s.fg2.TWITTER_LEGACY,
         name: "Twitter",
         color: (0, a.dE)("TWITTER"),
         icon: {
@@ -204,7 +204,7 @@ let l = [{
         domains: ["twitter.com"],
         hasMetadata: !0
     }, {
-        type: o.fg2.TWITTER,
+        type: s.fg2.TWITTER,
         name: "X",
         color: (0, a.dE)("TWITTER"),
         icon: {
@@ -225,7 +225,7 @@ let l = [{
         domains: ["x.com"],
         hasMetadata: !0
     }, {
-        type: o.fg2.SPOTIFY,
+        type: s.fg2.SPOTIFY,
         name: "Spotify",
         color: (0, a.dE)("SPOTIFY"),
         icon: {
@@ -244,7 +244,7 @@ let l = [{
             return "https://open.spotify.com/user/".concat(encodeURIComponent(t))
         }
     }, {
-        type: o.fg2.XBOX,
+        type: s.fg2.XBOX,
         name: "Xbox",
         color: (0, a.dE)("XBOX"),
         icon: {
@@ -258,7 +258,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.SAMSUNG,
+        type: s.fg2.SAMSUNG,
         name: "Samsung Galaxy",
         color: (0, a.dE)("SAMSUNG"),
         icon: {
@@ -271,7 +271,7 @@ let l = [{
         },
         enabled: !1
     }, {
-        type: o.fg2.GITHUB,
+        type: s.fg2.GITHUB,
         name: "GitHub",
         color: (0, a.dE)("GITHUB"),
         icon: {
@@ -291,7 +291,7 @@ let l = [{
         },
         domains: ["github.com"]
     }, {
-        type: o.fg2.PLAYSTATION,
+        type: s.fg2.PLAYSTATION,
         name: "PlayStation Network",
         color: (0, a.dE)("PLAYSTATION"),
         icon: {
@@ -304,7 +304,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.PLAYSTATION_STAGING,
+        type: s.fg2.PLAYSTATION_STAGING,
         name: "PlayStation Network (Staging)",
         color: (0, a.dE)("PLAYSTATION"),
         icon: {
@@ -317,7 +317,7 @@ let l = [{
         },
         enabled: !1
     }, {
-        type: o.fg2.EPIC_GAMES,
+        type: s.fg2.EPIC_GAMES,
         name: "Epic Games",
         icon: {
             lightPNG: n(350794),
@@ -329,7 +329,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.RIOT_GAMES,
+        type: s.fg2.RIOT_GAMES,
         name: "Riot Games",
         icon: {
             lightPNG: n(625906),
@@ -341,7 +341,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.ROBLOX,
+        type: s.fg2.ROBLOX,
         name: "Roblox",
         icon: {
             lightPNG: n(685701),
@@ -359,7 +359,7 @@ let l = [{
             return "https://roblox.com/users/".concat(encodeURIComponent(t), "/profile")
         }
     }, {
-        type: o.fg2.PAYPAL,
+        type: s.fg2.PAYPAL,
         name: "PayPal",
         icon: {
             lightPNG: n(365083),
@@ -372,7 +372,7 @@ let l = [{
         enabled: !0,
         hasMetadata: !0
     }, {
-        type: o.fg2.EBAY,
+        type: s.fg2.EBAY,
         name: "eBay",
         icon: {
             lightPNG: n(139673),
@@ -391,7 +391,7 @@ let l = [{
             return "https://www.ebay.com/usr/".concat(encodeURIComponent(t))
         }
     }, {
-        type: o.fg2.TIKTOK,
+        type: s.fg2.TIKTOK,
         name: "TikTok",
         icon: {
             lightPNG: n(996319),
@@ -411,7 +411,7 @@ let l = [{
             return "https://www.tiktok.com/@".concat(encodeURIComponent(t))
         }
     }, {
-        type: o.fg2.INSTAGRAM,
+        type: s.fg2.INSTAGRAM,
         name: "Instagram",
         icon: {
             lightPNG: n(833070),
@@ -430,7 +430,7 @@ let l = [{
             return "https://www.instagram.com/".concat(encodeURIComponent(t))
         }
     }, {
-        type: o.fg2.MASTODON,
+        type: s.fg2.MASTODON,
         name: "Mastodon",
         icon: {
             lightPNG: n(947839),
@@ -450,7 +450,7 @@ let l = [{
         isFederated: !0,
         hasMetadata: !0
     }, {
-        type: o.fg2.CRUNCHYROLL,
+        type: s.fg2.CRUNCHYROLL,
         name: "Crunchyroll",
         color: (0, a.dE)("CRUNCHYROLL"),
         icon: {
@@ -463,7 +463,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.DOMAIN,
+        type: s.fg2.DOMAIN,
         name: "Domain",
         icon: {
             lightPNG: n(647951),
@@ -481,7 +481,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.AMAZON_MUSIC,
+        type: s.fg2.AMAZON_MUSIC,
         name: "Amazon Music",
         icon: {
             lightPNG: n(922946),
@@ -493,7 +493,7 @@ let l = [{
         },
         enabled: !0
     }, {
-        type: o.fg2.META_QUEST_OR_HORIZON,
+        type: s.fg2.META_QUEST_OR_HORIZON,
         name: "Meta Quest",
         icon: {
             lightPNG: n(218003),
@@ -519,7 +519,7 @@ let d = {
         return null != (t = c[e]) ? t : null
     },
     getByUrl(e) {
-        let t = s.A.toURLSafe(e);
+        let t = o.A.toURLSafe(e);
         if (null == t) return;
         let n = t.hostname;
         return u[n.startsWith("www.") ? n.slice(4) : n]

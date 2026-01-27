@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(82495),
+    o = n.n(a),
+    s = n(82495),
     l = n(84483),
     c = n(938396),
     u = n(318346),
@@ -44,16 +44,16 @@ let E = {
                 sectionType: h.JJy.ORBS_BALANCE_MENU,
                 ctaObject: h.ZSU.OPEN_ORB_BALANCE_MENU_FROM_PILL
             }), T(e ? f.k.SELECTED : f.k.DEFAULT), N(e)
-        }, [C, y]), x = i.useCallback(() => {
+        }, [C, y]), L = i.useCallback(() => {
             C && D()
-        }, [C, D]), L = (0, o.A)(null, x), j = i.useMemo(() => (0, r.jsx)(p.b, {
+        }, [C, D]), x = (0, s.A)(null, L), M = i.useMemo(() => (0, r.jsx)(p.b, {
             analyticsPage: y,
             ctaText: n,
             ctaOnClick: () => {
                 D(), a()
             },
             linkText: b
-        }), [y, n, b, D, a]), M = i.useMemo(() => (0, r.jsx)(c.A, {
+        }), [y, n, b, D, a]), j = i.useMemo(() => (0, r.jsx)(c.A, {
             targetElementRef: P,
             shouldShow: C,
             onRequestClose: D,
@@ -63,7 +63,7 @@ let E = {
             }
         }), [C, D, n, a]);
         return (0, r.jsxs)("div", {
-            className: s()(g.kL, v, {
+            className: o()(g.kL, v, {
                 [g.R]: w,
                 [g.RK]: !w
             }),
@@ -76,13 +76,13 @@ let E = {
                 },
                 onClick: D,
                 showNotificationBadge: t
-            }), I ? M : C && (0, r.jsx)("div", {
-                className: s()(g.Ui, O, {
+            }), I ? j : C && (0, r.jsx)("div", {
+                className: o()(g.Ui, O, {
                     [g.R]: w,
                     [g.RK]: !w
                 }),
-                ref: L,
-                children: j
+                ref: x,
+                children: M
             })]
         })
     };

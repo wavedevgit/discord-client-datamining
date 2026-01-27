@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(64700),
     i = n(198982),
     a = n(626584),
-    s = n(739508),
-    o = n(566980),
+    o = n(739508),
+    s = n(566980),
     l = n(985018);
 let c = new a.A("PaymentSteps");
 var u = function(e) {
@@ -56,7 +56,7 @@ function p(e) {
 
 function _(e) {
     if (null != e) {
-        if (!(e instanceof i.Ey)) throw c.error(e), (0, s.pM)(e), Error("Unexpected error type");
+        if (!(e instanceof i.Ey)) throw c.error(e), (0, o.pM)(e), Error("Unexpected error type");
         if (e.hasCardError()) return "credit_card_information";
         if (e.hasAddressError()) return "address"
     }
@@ -65,6 +65,6 @@ function _(e) {
 
 function h(e, t, n) {
     r.useEffect(() => {
-        null != e && "review" !== e && t !== o.h.WAITING && t !== o.h.COMPLETED && n(o.h.WAITING)
+        null != e && "review" !== e && t !== s.h.WAITING && t !== s.h.COMPLETED && n(s.h.WAITING)
     }, [e, t, n])
 }

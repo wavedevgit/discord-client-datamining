@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(397927),
     i = n(73153),
     a = n(574172),
-    s = n(869146),
-    o = n(625180),
+    o = n(869146),
+    s = n(625180),
     l = n(367348),
     c = n(91242),
     u = n(165610),
@@ -27,10 +27,10 @@ let _ = !1,
     h = !1;
 class m extends l.A {
     _initialize() {
-        super._initialize(), s.A.addChangeListener(this.handlePopoutWindowUpdate), i.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+        super._initialize(), o.A.addChangeListener(this.handlePopoutWindowUpdate), i.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
     }
     _terminate() {
-        super._terminate(), s.A.removeChangeListener(this.handlePopoutWindowUpdate), i.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+        super._terminate(), o.A.removeChangeListener(this.handlePopoutWindowUpdate), i.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
     }
     showRPCDisconnectErrorUI(e) {
         let {
@@ -45,7 +45,7 @@ class m extends l.A {
         let {
             applicationId: t
         } = e;
-        o.A.stopFrame({
+        s.A.stopFrame({
             applicationId: t
         })
     }
@@ -57,10 +57,10 @@ class m extends l.A {
             t === d.MLl.ACTIVITY_POPOUT && (h = !1)
         }), p(this, "handlePopoutWindowUpdate", () => {
             let e = _,
-                t = s.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT);
+                t = o.A.getWindowOpen(d.MLl.ACTIVITY_POPOUT);
             if (e && !t && !h) {
                 let e = c.A.getConnectedFrame();
-                null != e && o.A.stopFrame({
+                null != e && s.A.stopFrame({
                     applicationId: e.applicationId
                 })
             }
@@ -68,7 +68,7 @@ class m extends l.A {
         }), p(this, "popInFrame", () => {
             h = !0, a.close(d.MLl.ACTIVITY_POPOUT);
             let e = c.A.getConnectedFrame();
-            null != e && o.A.updateFrameLayoutMode({
+            null != e && s.A.updateFrameLayoutMode({
                 applicationId: e.applicationId,
                 layoutMode: u.y.FOCUSED
             })

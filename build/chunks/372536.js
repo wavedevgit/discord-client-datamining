@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 372536, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
@@ -18,7 +18,7 @@ let u = e => {
         (0, i.mMO)(async () => {
             let {
                 default: e
-            } = await Promise.all([n.e("43600"), n.e("65202")]).then(n.bind(n, 234355));
+            } = await Promise.all([n.e("43600"), n.e("42821")]).then(n.bind(n, 234355));
             return n => {
                 var l, i;
                 return (0, r.jsx)(e, (l = function(e) {

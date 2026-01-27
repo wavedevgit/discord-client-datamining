@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(961350),
     a = n(287809),
-    s = n(917136),
-    o = n(976910),
+    o = n(917136),
+    s = n(976910),
     l = n(652215);
 
 function c(e, t, n) {
@@ -23,11 +23,11 @@ let u = !1;
 class d extends r.A {
     handlePossibleCredentialFetch() {
         if (!(u || __OVERLAY__) && i.default.getLoginStatus() === l.aUe.NONE) {
-            if (o.A.hasFetchedCredentials()) {
+            if (s.A.hasFetchedCredentials()) {
                 u = !0;
                 return
             }
-            void 0 !== a.default.getCurrentUser() && (u = !0, (0, s.JQ)())
+            void 0 !== a.default.getCurrentUser() && (u = !0, (0, o.JQ)())
         }
     }
     handleLogout() {
@@ -38,7 +38,7 @@ class d extends r.A {
             POST_CONNECTION_OPEN: this.handlePossibleCredentialFetch,
             LOGIN_RESET: this.handleLogout,
             LOGOUT: this.handleLogout
-        }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(a.default, this.handlePossibleCredentialFetch).set(o.A, this.handlePossibleCredentialFetch))
+        }), c(this, "stores", new Map().set(i.default, this.handlePossibleCredentialFetch).set(a.default, this.handlePossibleCredentialFetch).set(s.A, this.handlePossibleCredentialFetch))
     }
 }
 let f = new d

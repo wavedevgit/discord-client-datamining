@@ -7,8 +7,8 @@ Object.defineProperty(t, "__esModule", {
 let r = n(817762),
     i = n(639371),
     a = n(536168),
-    s = n(868791),
-    o = n(775356),
+    o = n(868791),
+    s = n(775356),
     l = n(501778),
     c = n(636102);
 t.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK = ["m4v", "flv", "mp4", "mkv", "webm", "avif", "heic"];
@@ -55,12 +55,12 @@ class u {
                 r = !0,
                 i = n.offset || 0,
                 a = (null == n ? void 0 : n.skippedBytes) ? n.sequence.length + n.skippedBytes.length : n.sequence.length;
-            for (let s = 0; s < a; s++) {
-                if (n.skippedBytes && n.skippedBytes.includes(s)) {
+            for (let o = 0; o < a; o++) {
+                if (n.skippedBytes && n.skippedBytes.includes(o)) {
                     t++;
                     continue
                 }
-                if (e[i + s] !== n.sequence[s - t]) {
+                if (e[i + o] !== n.sequence[o - t]) {
                     r = !1;
                     break
                 }
@@ -76,4 +76,4 @@ class u {
         return !1
     }
 }
-t.FileTypes = u, u.AAC = i.AudioTypes.AAC, u.AMR = i.AudioTypes.AMR, u.FLAC = i.AudioTypes.FLAC, u.M4A = i.AudioTypes.M4A, u.MP3 = i.AudioTypes.MP3, u.WAV = i.AudioTypes.WAV, u.AVIF = o.ImageTypes.AVIF, u.BMP = o.ImageTypes.BMP, u.BPG = o.ImageTypes.BPG, u.CR2 = o.ImageTypes.CR2, u.EXR = o.ImageTypes.EXR, u.GIF = o.ImageTypes.GIF, u.ICO = o.ImageTypes.ICO, u.JPEG = o.ImageTypes.JPEG, u.PBM = o.ImageTypes.PBM, u.PGM = o.ImageTypes.PGM, u.PNG = o.ImageTypes.PNG, u.PPM = o.ImageTypes.PPM, u.PSD = o.ImageTypes.PSD, u.WEBP = o.ImageTypes.WEBP, u.HEIC = o.ImageTypes.HEIC, u.AVI = l.VideoTypes.AVI, u.FLV = l.VideoTypes.FLV, u.M4V = l.VideoTypes.M4V, u.MKV = l.VideoTypes.MKV, u.MOV = l.VideoTypes.MOV, u.MP4 = l.VideoTypes.MP4, u.OGG = l.VideoTypes.OGG, u.SWF = l.VideoTypes.SWF, u.WEBM = l.VideoTypes.WEBM, u._7Z = a.CompressedTypes._7Z, u.LZH = a.CompressedTypes.LZH, u.RAR = a.CompressedTypes.RAR, u.ZIP = a.CompressedTypes.ZIP, u.BLEND = s.OtherTypes.BLEND, u.DOC = s.OtherTypes.DOC, u.ELF = s.OtherTypes.ELF, u.EXE = s.OtherTypes.EXE, u.INDD = s.OtherTypes.INDD, u.MACHO = s.OtherTypes.MACHO, u.ORC = s.OtherTypes.ORC, u.PARQUET = s.OtherTypes.PARQUET, u.PCAP = s.OtherTypes.PCAP, u.PDF = s.OtherTypes.PDF, u.PS = s.OtherTypes.PS, u.RTF = s.OtherTypes.RTF, u.SQLITE = s.OtherTypes.SQLITE, u.STL = s.OtherTypes.STL, u.TTF = s.OtherTypes.TTF
+t.FileTypes = u, u.AAC = i.AudioTypes.AAC, u.AMR = i.AudioTypes.AMR, u.FLAC = i.AudioTypes.FLAC, u.M4A = i.AudioTypes.M4A, u.MP3 = i.AudioTypes.MP3, u.WAV = i.AudioTypes.WAV, u.AVIF = s.ImageTypes.AVIF, u.BMP = s.ImageTypes.BMP, u.BPG = s.ImageTypes.BPG, u.CR2 = s.ImageTypes.CR2, u.EXR = s.ImageTypes.EXR, u.GIF = s.ImageTypes.GIF, u.ICO = s.ImageTypes.ICO, u.JPEG = s.ImageTypes.JPEG, u.PBM = s.ImageTypes.PBM, u.PGM = s.ImageTypes.PGM, u.PNG = s.ImageTypes.PNG, u.PPM = s.ImageTypes.PPM, u.PSD = s.ImageTypes.PSD, u.WEBP = s.ImageTypes.WEBP, u.HEIC = s.ImageTypes.HEIC, u.AVI = l.VideoTypes.AVI, u.FLV = l.VideoTypes.FLV, u.M4V = l.VideoTypes.M4V, u.MKV = l.VideoTypes.MKV, u.MOV = l.VideoTypes.MOV, u.MP4 = l.VideoTypes.MP4, u.OGG = l.VideoTypes.OGG, u.SWF = l.VideoTypes.SWF, u.WEBM = l.VideoTypes.WEBM, u._7Z = a.CompressedTypes._7Z, u.LZH = a.CompressedTypes.LZH, u.RAR = a.CompressedTypes.RAR, u.ZIP = a.CompressedTypes.ZIP, u.BLEND = o.OtherTypes.BLEND, u.DOC = o.OtherTypes.DOC, u.ELF = o.OtherTypes.ELF, u.EXE = o.OtherTypes.EXE, u.INDD = o.OtherTypes.INDD, u.MACHO = o.OtherTypes.MACHO, u.ORC = o.OtherTypes.ORC, u.PARQUET = o.OtherTypes.PARQUET, u.PCAP = o.OtherTypes.PCAP, u.PDF = o.OtherTypes.PDF, u.PS = o.OtherTypes.PS, u.RTF = o.OtherTypes.RTF, u.SQLITE = o.OtherTypes.SQLITE, u.STL = o.OtherTypes.STL, u.TTF = o.OtherTypes.TTF

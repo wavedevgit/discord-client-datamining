@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(949296);
+    o = n(397927),
+    s = n(949296);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -81,21 +81,21 @@ function _(e) {
             errorId: h
         } = e,
         m = f(e, ["tag", "children", "className", "disabled", "required", "error", "errorId"]);
-    return t = "legend" === n ? n : s.H, (0, r.jsxs)(t, d(c({
-        className: a()(o[n], "h5" !== n ? o.defaultColor : null, l, {
-            [o["defaultMargin".concat(n)]]: null == l,
-            [o.disabled]: u,
-            [o.error]: null != _
+    return t = "legend" === n ? n : o.H, (0, r.jsxs)(t, d(c({
+        className: a()(s[n], "h5" !== n ? s.defaultColor : null, l, {
+            [s["defaultMargin".concat(n)]]: null == l,
+            [s.disabled]: u,
+            [s.error]: null != _
         })
     }, m), {
         children: [i, p && null == _ ? (0, r.jsx)("span", {
-            className: o.required,
+            className: s.required,
             children: "*"
         }) : null, null != _ ? (0, r.jsxs)("span", {
             id: h,
-            className: o.errorMessage,
+            className: s.errorMessage,
             children: [null != i ? (0, r.jsx)("span", {
-                className: o.errorSeparator,
+                className: s.errorSeparator,
                 children: "-"
             }) : null, _]
         }) : null]

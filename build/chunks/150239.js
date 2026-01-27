@@ -18,8 +18,8 @@ n.r(t), n.d(t, {
 var r = n(38078),
     i = n(265865),
     a = n(917726),
-    s = n(628574),
-    o = n(52456),
+    o = n(628574),
+    s = n(52456),
     l = n(270816),
     c = n(374962),
     u = n(125659),
@@ -43,7 +43,7 @@ function A() {
 
 function I(e) {
     return (0, u.i)({
-        parsers: [new b.A, new E.A(!0), new r.A, new i.A, new p.A, new s.A(e), new o.A],
+        parsers: [new b.A, new E.A(!0), new r.A, new i.A, new p.A, new o.A(e), new s.A],
         refiners: [new c.A, new l.A]
     }, e)
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(110259),
     a = n(435371),
-    s = n(397927),
-    o = n(359549),
+    o = n(397927),
+    s = n(359549),
     l = n(139286),
     c = n(939496),
     u = n(993401),
@@ -23,7 +23,7 @@ function p(e) {
         onClose: _
     } = e, {
         themeType: h
-    } = (0, c.E)(), m = (0, o.A)({
+    } = (0, c.E)(), m = (0, s.A)({
         application: t,
         analyticsLocations: n
     });
@@ -39,7 +39,7 @@ function p(e) {
         text: f.intl.string(f.t.JVwWva),
         position: "top",
         children: (0, r.jsx)(u.FD, {
-            icon: s.hpF,
+            icon: o.hpF,
             text: f.intl.string(f.t["jaYS/h"]),
             size: "sm",
             onClick: e => {

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(990078),
-    o = n(397927),
+    o = n(990078),
+    s = n(397927),
     l = n(688810),
     c = n(808247),
     u = n(384377),
@@ -32,16 +32,16 @@ function _(e) {
             (0, u.XA)(d.jM.SOMETHING_WENT_WRONG)
         }
     };
-    return (0, r.jsx)(s.m, {
+    return (0, r.jsx)(o.m, {
         text: f.intl.string(f.t.jTW016),
-        children: (0, r.jsx)(o.DUT, {
+        children: (0, r.jsx)(s.DUT, {
             onClick: m,
             "aria-label": f.intl.string(f.t.jTW016),
             className: a()(_, p.v),
-            children: (0, r.jsx)(o.ucK, {
+            children: (0, r.jsx)(s.ucK, {
                 size: i,
                 className: p.K,
-                color: o.LU0.colors.ICON_FEEDBACK_CRITICAL
+                color: s.LU0.colors.ICON_FEEDBACK_CRITICAL
             })
         })
     })

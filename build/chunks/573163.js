@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 573163, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => S
+    A: () => x
 }), n(896048), n(321073);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(73939),
-    l = n(397927),
+    l = n(503698),
+    a = n.n(l),
+    s = n(73939),
+    o = n(397927),
     c = n(505527),
     u = n(960538),
     d = n(860227),
-    f = n(644249),
-    p = n(260821),
-    _ = n(985018),
-    h = n(233080),
-    m = n(710504);
+    p = n(866630),
+    m = n(260821),
+    f = n(985018),
+    g = n(233080),
+    h = n(710504);
 
-function g(e, t, n) {
+function _(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -28,43 +27,33 @@ function g(e, t, n) {
     }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            g(e, t, n[t])
+            _(e, t, n[t])
         })
     }
     return e
 }
 
-function y(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function A(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+        }
+        return n
+    })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let O = (e, t) => null == e && null == t || e === t,
-    v = (e, t) => e.findIndex(e => O(e.emoji.id, null == t ? void 0 : t.id) && O(e.emoji.name, null == t ? void 0 : t.name)),
-    A = (e, t) => {
-        if (null == t) return e;
-        let n = v(e, t);
-        return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
-    };
-class I extends i.PureComponent {
+let y = (e, t) => null == e && null == t || e === t;
+class v extends i.PureComponent {
     static getDerivedStateFromProps(e, t) {
         let n = e.message.reactions.length;
         return 0 === t.reactionsCount && n > 0 ? {
@@ -80,27 +69,27 @@ class I extends i.PureComponent {
             disableReactionCreates: t,
             disableReactionUpdates: n,
             isLurking: i,
-            isGuest: a,
+            isGuest: l,
             isPendingMember: c,
-            isForumToolbar: g,
-            channel: E,
-            className: y,
-            forceAddReactions: b,
-            reactionClassName: O,
-            useChatFontScaling: v,
-            forceHideReactionCreates: A,
-            remainingReactions: I,
-            combinedReactions: S,
-            visibleReactionsCount: T
+            isForumToolbar: _,
+            channel: b,
+            className: A,
+            forceAddReactions: y,
+            reactionClassName: v,
+            useChatFontScaling: x,
+            forceHideReactionCreates: O,
+            remainingReactions: E,
+            combinedReactions: j,
+            visibleReactionsCount: C
         } = this.props, {
-            disableTransitionAppear: C
-        } = this.state, N = v ? m : h, w = T > 0;
-        if (!w && !b) return null;
-        let R = b || w;
-        return (0, r.jsxs)(o.F, {
+            disableTransitionAppear: I
+        } = this.state, S = x ? h : g, T = C > 0;
+        if (!T && !y) return null;
+        let N = y || T;
+        return (0, r.jsxs)(s.F, {
             component: "div",
-            className: s()(N.reactions, y),
-            transitionAppear: !C,
+            className: a()(S.reactions, A),
+            transitionAppear: !I,
             role: "group",
             transitionLeave: !1,
             id: (0, d.JH)(e),
@@ -110,77 +99,81 @@ class I extends i.PureComponent {
             onMouseLeave: () => this.setState({
                 isHovered: !1
             }),
-            children: [(0, r.jsx)(f.A, {
-                reactions: S,
+            children: [(0, r.jsx)(p.A, {
+                reactions: j,
                 message: e,
                 readOnly: n,
                 isLurking: i,
-                isGuest: a,
+                isGuest: l,
                 isPendingMember: c,
-                isForumToolbar: g,
-                useChatFontScaling: v,
-                className: O
-            }), I > 0 && (0, r.jsx)(l.DUT, {
+                isForumToolbar: _,
+                useChatFontScaling: x,
+                className: v
+            }), E > 0 && (0, r.jsx)(o.DUT, {
                 onClick: t => {
-                    t.stopPropagation(), (0, p.$l)(E, e)
+                    t.stopPropagation(), (0, m.$l)(b, e)
                 },
-                className: s()(N.reaction, O, N.remainingReactions),
-                "aria-label": _.intl.string(_.t.lfIHs4),
-                children: (0, r.jsxs)(l.Text, {
-                    className: N.reactionInner,
+                className: a()(S.reaction, v, S.remainingReactions),
+                "aria-label": f.intl.string(f.t.lfIHs4),
+                children: (0, r.jsxs)(o.Text, {
+                    className: S.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", I]
+                    children: ["+", E]
                 })
-            }), !t && !A && (0, r.jsx)(u.t, {
-                tabIndex: R || this.state.isHovered ? 0 : -1,
+            }), !t && !O && (0, r.jsx)(u.t, {
+                tabIndex: N || this.state.isHovered ? 0 : -1,
                 message: e,
-                channel: E,
-                useChatFontScaling: v,
+                channel: b,
+                useChatFontScaling: x,
                 isHovered: this.state.isHovered,
-                className: s()({
-                    [N.forceShow]: R
+                className: a()({
+                    [S.forceShow]: N
                 })
             })]
         })
     }
     constructor(...e) {
-        super(...e), g(this, "state", {
+        super(...e), _(this, "state", {
             disableTransitionAppear: !0,
             reactionsCount: this.props.message.reactions.length,
             isHovered: !1
         })
     }
 }
-let S = e => {
+let x = e => {
     let {
         message: t,
         maxReactions: n,
-        hoistReaction: a
+        hoistReaction: l
     } = e, {
-        combinedReactions: s,
-        remainingReactions: o,
-        visibleReactionsCount: l
+        combinedReactions: a,
+        remainingReactions: s,
+        visibleReactionsCount: o
     } = i.useMemo(() => {
         let e = [],
-            r = A(t.reactions, a),
+            r = ((e, t) => {
+                if (null == t) return e;
+                let n = e.findIndex(e => y(e.emoji.id, null == t ? void 0 : t.id) && y(e.emoji.name, null == t ? void 0 : t.name));
+                return n < 0 ? e : [e[n], ...e.slice(0, n), ...e.slice(n + 1)]
+            })(t.reactions, l),
             i = null != n && n < r.length ? r.slice(0, n) : r,
-            s = r.length - i.length,
-            o = r.length;
+            a = r.length - i.length,
+            s = r.length;
         return i.forEach(t => {
-            t.burst_count > 0 && e.push(b(E({}, t), {
+            t.burst_count > 0 && e.push(A(b({}, t), {
                 type: c.v.BURST
-            })), t.count > 0 && e.push(b(E({}, t), {
+            })), t.count > 0 && e.push(A(b({}, t), {
                 type: c.v.NORMAL
-            })), null != t.me_vote && --o
+            })), null != t.me_vote && --s
         }), {
             combinedReactions: e,
-            visibleReactionsCount: o,
-            remainingReactions: s
+            visibleReactionsCount: s,
+            remainingReactions: a
         }
-    }, [a, n, t.reactions]);
-    return (0, r.jsx)(I, b(E({}, e), {
-        visibleReactionsCount: l,
-        combinedReactions: s,
-        remainingReactions: o
+    }, [l, n, t.reactions]);
+    return (0, r.jsx)(v, A(b({}, e), {
+        visibleReactionsCount: o,
+        combinedReactions: a,
+        remainingReactions: s
     }))
 }

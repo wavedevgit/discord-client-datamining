@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(554146),
     c = n(421380),
     u = n(397927),
@@ -55,9 +55,9 @@ function P(e) {
         onInteraction: i
     } = e, {
         analyticsLocations: a,
-        newestAnalyticsLocation: s
+        newestAnalyticsLocation: o
     } = (0, d.Ay)(), {
-        trackUserProfileAction: o
+        trackUserProfileAction: s
     } = (0, b.NJ)();
     return (0, r.jsxs)("div", {
         className: w.JO,
@@ -75,7 +75,7 @@ function P(e) {
                 }
             }) : (0, r.jsx)(g.A, {
                 onClick: () => {
-                    o({
+                    s({
                         action: A.pt.GET_PREMIUM
                     }), null == i || i()
                 },
@@ -105,7 +105,7 @@ function P(e) {
                 onClick: () => {
                     (0, f.Cz)({
                         analyticsLocations: a,
-                        analyticsSource: s
+                        analyticsSource: o
                     }), null == i || i()
                 }
             })
@@ -120,7 +120,7 @@ function D(e) {
         className: a
     } = e, c = (0, p.GV)(), {
         themeType: d
-    } = (0, O.E)(), f = d === C.d.MODAL, g = (0, h.JZ)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, o.bG)([y.A], () => y.A.getGuildId());
+    } = (0, O.E)(), f = d === C.d.MODAL, g = (0, h.JZ)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), E = (0, s.bG)([y.A], () => y.A.getGuildId());
     if (i.useEffect(() => {
             if (!g) return (0, m.Vh)(l.M.USER_PROFILE_PREMIUM_AND_SHOP_ENTRY_POINTS), () => {
                 (0, _.pd)({
@@ -148,10 +148,10 @@ function D(e) {
             tiny: f
         });
     return f ? (0, r.jsx)("aside", {
-        className: s()(w.Zj, a),
+        className: o()(w.Zj, a),
         "aria-labelledby": c,
         children: (0, r.jsxs)("div", {
-            className: s()(w.xw, w.xq),
+            className: o()(w.xw, w.xq),
             children: [b, (0, r.jsxs)("div", {
                 className: w.A_,
                 children: [(0, r.jsx)("div", {
@@ -162,10 +162,10 @@ function D(e) {
             })]
         })
     }) : (0, r.jsx)("aside", {
-        className: s()(w.Zj, a),
+        className: o()(w.Zj, a),
         "aria-labelledby": c,
         children: (0, r.jsxs)("div", {
-            className: s()(w.xw, w.K1),
+            className: o()(w.xw, w.K1),
             children: [(0, r.jsxs)("div", {
                 className: w.$P,
                 children: [b, (0, r.jsx)("div", {

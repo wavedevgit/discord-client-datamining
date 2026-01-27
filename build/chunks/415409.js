@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(735438),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(735438),
+    l = n.n(s),
     c = n(607399),
     u = n(465532),
     d = n(608299),
@@ -55,7 +55,7 @@ function D(e) {
     return e
 }
 
-function x(e, t) {
+function L(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -66,16 +66,16 @@ function x(e, t) {
     return n
 }
 
-function L(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : x(Object(t)).forEach(function(n) {
+function x(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : L(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
 new m.A("ChannelEditor.tsx");
-let j = function() {
+let M = function() {
         for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n]
     },
-    M = 1e3;
+    j = 1e3;
 class k extends i.Component {
     _getEditorWindow() {
         var e, t, n, r, i;
@@ -87,7 +87,7 @@ class k extends i.Component {
         return this._cachedEditorWindow
     }
     componentDidMount() {
-        this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), M)
+        this.props.focused && requestAnimationFrame(() => this.focus()), document.addEventListener("selectionchange", this.handleSelectionChange), window.addEventListener("beforeunload", this.handleBeforeUnload), this._initTimeoutId = setTimeout(() => void this._getEditorWindow(), j)
     }
     componentDidUpdate(e) {
         if (this.fixFocus(e), this.props.useSlate !== e.useSlate) {
@@ -208,7 +208,7 @@ class k extends i.Component {
         return e && !n ? r ? "" : w.intl.string(w.t.IYKTTc) : t
     }
     render() {
-        var e, t, n, i, a, o;
+        var e, t, n, i, a, s;
         let {
             textValue: l,
             richValue: u,
@@ -226,28 +226,28 @@ class k extends i.Component {
             canOnlyUseTextCommands: C,
             className: w,
             id: P,
-            required: x,
-            maxCharacterCount: j,
-            allowNewLines: M,
+            required: L,
+            maxCharacterCount: M,
+            allowNewLines: j,
             isEditorIdle: k,
             currentAutocompleteType: U,
             "aria-describedby": G,
-            "aria-labelledby": V,
-            accessibilityLabel: F,
+            "aria-labelledby": F,
+            accessibilityLabel: V,
             showValueWhenDisabled: B
         } = this.props, {
             submitting: H,
             popup: Y
         } = this.state, W = {
             channel: g,
-            className: s()(w, R.Tg, {
+            className: o()(w, R.Tg, {
                 [R.w5]: b,
                 [R.Rr]: d || H
             }),
             id: P,
             placeholder: this.getPlaceholder(),
-            required: x,
-            accessibilityLabel: F,
+            required: L,
+            accessibilityLabel: V,
             disabled: d || !1,
             submitting: H,
             isEdit: y === O.oU.EDIT,
@@ -259,12 +259,12 @@ class k extends i.Component {
             moveSelection: this.handleMoveSelection,
             maybeShowAutocomplete: this.maybeShowAutocomplete,
             hideAutocomplete: this.hideAutocomplete,
-            allowNewLines: M,
+            allowNewLines: j,
             onChange: f,
             onResize: _,
             onKeyDown: p,
             onSubmit: h,
-            textAreaPaddingClassName: s()({
+            textAreaPaddingClassName: o()({
                 [R.H$]: y === O.oU.CREATE_FORUM_POST,
                 [R.g_]: y === O.oU.CUSTOM_GIFT,
                 [R.Yg]: y === O.oU.USER_PROFILE,
@@ -280,19 +280,19 @@ class k extends i.Component {
             "aria-haspopup": "listbox",
             "aria-expanded": null !== Y.id || void 0,
             "aria-activedescendant": null != (i = Y.activeDescendant) ? i : void 0,
-            "aria-invalid": l.length > j,
+            "aria-invalid": l.length > M,
             "aria-describedby": G,
-            "aria-labelledby": V,
+            "aria-labelledby": F,
             "aria-autocomplete": "list"
-        }, K = b ? (0, r.jsx)(T.A, L(D({
+        }, K = b ? (0, r.jsx)(T.A, x(D({
             ref: this.ref
         }, W), {
             type: y,
             value: d && !B ? (0, v.x7)("") : u,
-            canUseCommands: null == (o = y.commands) ? void 0 : o.enabled,
+            canUseCommands: null == (s = y.commands) ? void 0 : s.enabled,
             canOnlyUseTextCommands: C,
             onSubmitFailure: m
-        })) : (0, r.jsx)(S.A, L(D({
+        })) : (0, r.jsx)(S.A, x(D({
             ref: this.ref
         }, W), {
             value: d && !B ? "" : l
@@ -381,8 +381,8 @@ class k extends i.Component {
             let i = null == (r = e.target) || null == (n = r.ownerDocument) ? void 0 : n.defaultView,
                 {
                     channel: a,
-                    canPasteFiles: s,
-                    uploadPromptCharacterCount: o,
+                    canPasteFiles: o,
+                    uploadPromptCharacterCount: s,
                     promptToUpload: l,
                     maxCharacterCount: c,
                     type: u
@@ -391,7 +391,7 @@ class k extends i.Component {
                 E = (0, I.W7)(),
                 y = null != (t = null != m ? m : E) ? t : a,
                 b = (0, I.qH)(i, this._getEditorWindow()) ? a : y;
-            if (null == l || !b.isPrivate() && !s || b.isPrivate() && b.isManaged()) return !1;
+            if (null == l || !b.isPrivate() && !o || b.isPrivate() && b.isManaged()) return !1;
             let O = e => {
                     var t, n;
                     let r = h.A.getActiveCommand(b.id);
@@ -401,8 +401,8 @@ class k extends i.Component {
                     });
                     let i = null != (t = u.drafts.commandType) ? t : u.drafts.type,
                         a = null,
-                        s = h.A.getActiveOption(b.id);
-                    null != (a = (null == s ? void 0 : s.type) === p.n4.ATTACHMENT ? s : null == (n = r.options) ? void 0 : n.find(e => {
+                        o = h.A.getActiveOption(b.id);
+                    null != (a = (null == o ? void 0 : o.type) === p.n4.ATTACHMENT ? o : null == (n = r.options) ? void 0 : n.find(e => {
                         if (e.type === p.n4.ATTACHMENT) return null == g.A.getUpload(b.id, e.name, i)
                     })) && d.A.setFile({
                         channelId: b.id,
@@ -415,12 +415,12 @@ class k extends i.Component {
                         }
                     })
                 },
-                v = null != o ? o : c,
+                v = null != s ? s : c,
                 {
                     files: A,
                     errors: S
                 } = U(e.clipboardData, u.uploadLongMessages ? v : null);
-            return (j("onPaste", [...e.clipboardData.items].map(e => {
+            return (M("onPaste", [...e.clipboardData.items].map(e => {
                 if ("file" !== e.kind) return {
                     kind: e.kind,
                     type: e.type
@@ -458,8 +458,8 @@ class k extends i.Component {
 }
 
 function U(e, t) {
-    var n, r, i, a, s;
-    let o = [],
+    var n, r, i, a, o;
+    let s = [],
         l = [],
         c = null,
         u = null,
@@ -474,18 +474,18 @@ function U(e, t) {
                 });
                 continue
             }
-            let s = t.getAsFile();
-            if (null == s) continue;
-            null != s.path && s.path.length > 0 ? o.push(s) : l.push(s)
+            let o = t.getAsFile();
+            if (null == o) continue;
+            null != o.path && o.path.length > 0 ? s.push(o) : l.push(o)
         } else "string" === t.kind && ("text/plain" === t.type && null == c ? c = t : "text/html" === t.type && null == u && (u = t));
-    if (o.length > 0) return {
-        files: o,
+    if (s.length > 0) return {
+        files: s,
         errors: d
     };
     if (l.length > 0) {
         if (1 === l.length && "image/png" === l[0].type && null != u) {
             let t = l[0],
-                n = null != (s = G(e.getData(u.type))) ? s : t.name;
+                n = null != (o = G(e.getData(u.type))) ? o : t.name;
             return {
                 files: [(0, y.VE)(t, n, t.type)],
                 errors: d

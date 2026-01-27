@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(827343),
+    o = n(397927),
+    s = n(827343),
     l = n(212245),
     c = n(874124),
     u = n(929921),
@@ -62,7 +62,7 @@ function A(e, t) {
 }
 
 function I(e, t) {
-    (0, s.mMO)(async () => {
+    (0, o.mMO)(async () => {
         let {
             default: e
         } = await n.e("18630").then(n.bind(n, 826789));
@@ -70,7 +70,7 @@ function I(e, t) {
             analyticsSource: t
         }))
     }, {
-        contextKey: e === m.BRT.POPOUT ? s.KX8 : s.SYi
+        contextKey: e === m.BRT.POPOUT ? o.KX8 : o.SYi
     })
 }
 
@@ -102,7 +102,7 @@ function S(e, t) {
                 } : null != T.cameraSource && (e.cameraSettings = {
                     videoDeviceGuid: T.cameraSource.videoDeviceGuid,
                     audioDeviceGuid: T.cameraSource.audioDeviceGuid
-                }), o.A.setGoLiveSource(e)
+                }), s.A.setGoLiveSource(e)
             }
         } else I(t, A(O({}, w), {
             object: m.ZSU.RADIO_ITEM,
@@ -111,39 +111,43 @@ function S(e, t) {
     }, [t, w, S, T]);
     if (null == e) return null;
     let D = n === g.jQ.PRESET_DOCUMENTS ? g.kn.FPS_30 : v,
-        x = g.ce.map(e => {
+        L = g.ce.map(e => {
             let {
                 value: t,
-                label: n
-            } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, R);
-            return (0, r.jsx)(s.iDA, {
+                label: n,
+                subtext: i
+            } = e, a = (0, c.A)(g.jQ.PRESET_CUSTOM, b, t, C, N, R);
+            return (0, r.jsx)(o.iDA, {
                 group: "stream-settings-fps",
                 id: "stream-settings-fps-".concat(t),
                 label: n,
+                subtext: i,
                 checked: t === v,
-                action: () => P(i, b, t, m.AnalyticsObjectTypes.RESOLUTION)
+                action: () => P(a, b, t, m.AnalyticsObjectTypes.RESOLUTION)
             }, "stream-settings-fps-".concat(t))
         }),
-        L = g.Jk.map(e => {
+        x = g.Jk.map(e => {
             let {
                 value: t,
-                label: n
-            } = e, i = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, R);
-            return (0, r.jsx)(s.iDA, {
+                label: n,
+                subtext: i
+            } = e, a = (0, c.A)(g.jQ.PRESET_CUSTOM, t, D, C, N, R);
+            return (0, r.jsx)(o.iDA, {
                 group: "stream-settings-resolution",
                 id: "stream-settings-resolution-".concat(t),
                 label: n,
+                subtext: i,
                 checked: t === b,
-                action: () => P(i, t, D, m.AnalyticsObjectTypes.RESOLUTION)
+                action: () => P(a, t, D, m.AnalyticsObjectTypes.RESOLUTION)
             }, "stream-settings-resolution-".concat(t))
         });
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(s.rXV, {
+        children: [(0, r.jsx)(o.rXV, {
             label: y.intl.string(y.t.SkkeIt),
-            children: x
-        }), (0, r.jsx)(s.rXV, {
-            label: y.intl.string(y.t.rHyPXg),
             children: L
+        }), (0, r.jsx)(o.rXV, {
+            label: y.intl.string(y.t.rHyPXg),
+            children: x
         })]
     })
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(8321),
     i = n(114099),
     a = n(297987),
-    s = n(401705),
-    o = n(807177),
+    o = n(401705),
+    s = n(807177),
     l = n(803082),
     c = n(64700);
 let u = 500;
@@ -35,7 +35,7 @@ function d(e) {
                 }), h.current = setTimeout(() => {
                     e.target.dispatchEvent(new PointerEvent("pointercancel", {
                         bubbles: !0
-                    })), (0, a.TW)(e.target).activeElement !== e.target && (0, s.e)(e.target), f && f({
+                    })), (0, a.TW)(e.target).activeElement !== e.target && (0, o.e)(e.target), f && f({
                         ...e,
                         type: "longpress"
                     }), h.current = void 0
@@ -60,7 +60,7 @@ function d(e) {
                 type: "longpressend"
             })
         }
-    }), y = (0, o.I)(f && !t ? _ : void 0);
+    }), y = (0, s.I)(f && !t ? _ : void 0);
     return {
         longPressProps: (0, l.v)(E, y)
     }

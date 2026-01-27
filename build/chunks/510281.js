@@ -2,19 +2,19 @@
 /** chunk id: 510281, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => s
+    $: () => o
 });
 var r = n(13163),
     i = n(3388),
     a = n(64700);
 
-function s(e, t) {
+function o(e, t) {
     let n = null == t ? void 0 : t.isDisabled,
-        [s, o] = (0, a.useState)(!1);
+        [o, s] = (0, a.useState)(!1);
     return (0, i.N)(() => {
         if ((null == e ? void 0 : e.current) && !n) {
             let t = () => {
-                e.current && o(!!(0, r.N$)(e.current, {
+                e.current && s(!!(0, r.N$)(e.current, {
                     tabbable: !0
                 }).nextNode())
             };
@@ -29,5 +29,5 @@ function s(e, t) {
                 n.disconnect()
             }
         }
-    }), !n && s
+    }), !n && o
 }

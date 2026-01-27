@@ -1,34 +1,33 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 295843, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => L,
-    k: () => j
+    A: () => P,
+    k: () => w
 }), n(896048), n(65821);
 var r, i = n(627968),
-    a = n(64700),
-    s = n(758879),
-    o = n(311907),
-    l = n(421380),
+    l = n(64700),
+    a = n(758879),
+    s = n(311907),
+    o = n(421380),
     c = n(800342),
     u = n(820284),
     d = n(73861),
-    f = n(740916),
-    p = n(918085),
-    _ = n(863574),
-    h = n(707606),
-    m = n(456412),
-    g = n(587895),
-    E = n(189081),
-    y = n(286805),
-    b = n(67480),
-    O = n(328968),
-    v = n(371794),
-    A = n(652215),
-    I = n(985018),
-    S = n(187663);
+    p = n(740916),
+    m = n(918085),
+    f = n(863574),
+    g = n(707606),
+    h = n(456412),
+    _ = n(587895),
+    b = n(189081),
+    A = n(286805),
+    y = n(67480),
+    v = n(328968),
+    x = n(371794),
+    O = n(652215),
+    E = n(985018),
+    j = n(187663);
 
-function T(e, t, n) {
+function C(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -36,48 +35,39 @@ function T(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-
-function C(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            T(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function N(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function w(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : N(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-class R extends(r = a.Component) {
+class I extends(r = l.Component) {
     get analyticsLocation() {
+        var e, t;
         let {
             analyticsContext: {
-                location: e
+                location: n
             },
-            analyticsSection: t
+            analyticsSection: r
         } = this.props;
-        return w(C({}, e), {
-            section: null != t ? t : A.JJy.APPLICATION_EMBED,
-            object: A.ZSU.CARD
-        })
+        return e = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                    C(e, t, n[t])
+                })
+            }
+            return e
+        }({}, n), t = t = {
+            section: null != r ? r : O.JJy.APPLICATION_EMBED,
+            object: O.ZSU.CARD
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+            }
+            return n
+        })(Object(t)).forEach(function(n) {
+            Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+        }), e
     }
     componentDidMount() {
         let {
@@ -88,12 +78,12 @@ class R extends(r = a.Component) {
         (null == e || null == n) && (0, c.QB)(t)
     }
     renderViewInStoreButton() {
-        return (0, i.jsx)(l.$n.Link, {
+        return (0, i.jsx)(o.$n.Link, {
             to: this.getStoreListingLocation(),
-            className: S.h,
-            color: l.$n.Colors.GREEN,
-            size: l.$n.Sizes.SMALL,
-            children: I.intl.string(I.t["W+NB90"])
+            className: j.h,
+            color: o.$n.Colors.GREEN,
+            size: o.$n.Sizes.SMALL,
+            children: E.intl.string(E.t["W+NB90"])
         })
     }
     render() {
@@ -102,16 +92,16 @@ class R extends(r = a.Component) {
             storeListing: t,
             width: n,
             fetchFailed: r,
-            renderFallback: a
-        } = this.props, o = n > _.Tm;
-        return null == e || null == t ? r ? a() : (0, i.jsx)(_.Wb, {
-            isHorizontal: o
-        }) : e.productLine === A.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
-            section: A.JJy.APPLICATION_EMBED,
+            renderFallback: l
+        } = this.props, s = n > f.Tm;
+        return null == e || null == t ? r ? l() : (0, i.jsx)(f.Wb, {
+            isHorizontal: s
+        }) : e.productLine === O.EZt.COLLECTIBLES ? (0, i.jsx)(u.A, {
+            section: O.JJy.APPLICATION_EMBED,
             children: this.renderApplicationTile(e, t)
         }) : (0, i.jsx)(u.A, {
-            section: A.JJy.APPLICATION_EMBED,
-            children: (0, i.jsx)(s.N_, {
+            section: O.JJy.APPLICATION_EMBED,
+            children: (0, i.jsx)(a.N_, {
                 onClick: this.handleLinkClick,
                 to: this.getStoreListingLocation(),
                 onMouseEnter: this.handleMouseEnter,
@@ -121,86 +111,86 @@ class R extends(r = a.Component) {
         })
     }
     constructor(...e) {
-        super(...e), T(this, "state", {
+        super(...e), C(this, "state", {
             playing: !1,
             muted: !0
-        }), T(this, "handleToggleMute", () => {
+        }), C(this, "handleToggleMute", () => {
             this.setState({
                 muted: !this.state.muted
             })
-        }), T(this, "handleMouseEnter", () => {
+        }), C(this, "handleMouseEnter", () => {
             this.setState({
                 playing: !0
             })
-        }), T(this, "handleMouseLeave", () => {
+        }), C(this, "handleMouseLeave", () => {
             this.setState({
                 playing: !1
             })
-        }), T(this, "getStoreListingLocation", () => {
+        }), C(this, "getStoreListingLocation", () => {
             let {
                 sku: e
             } = this.props;
             if (null == e) throw Error("Should not be link to ApplicationStoreListing without SKU");
-            return (0, v.vy)(e.id, {
+            return (0, x.vy)(e.id, {
                 slug: e.slug,
                 analyticsSource: this.analyticsLocation
             })
-        }), T(this, "handleActionButtonClick", e => e.preventDefault()), T(this, "handleBuyButtonClick", e => e.preventDefault()), T(this, "handleLinkClick", e => {
+        }), C(this, "handleActionButtonClick", e => e.preventDefault()), C(this, "handleBuyButtonClick", e => e.preventDefault()), C(this, "handleLinkClick", e => {
             let {
                 onEmbedClick: t
             } = this.props;
             null != t && t(e)
-        }), T(this, "renderApplicationTile", (e, t) => {
+        }), C(this, "renderApplicationTile", (e, t) => {
             let {
                 inLibrary: n,
                 width: r,
-                renderCustomTitle: a,
-                renderCustomTagline: s,
-                renderCustomMedia: o
+                renderCustomTitle: l,
+                renderCustomTagline: a,
+                renderCustomMedia: s
             } = this.props, {
-                playing: l,
+                playing: o,
                 muted: c
-            } = this.state, u = r > _.Tm;
-            return (0, i.jsx)(p.A, {
+            } = this.state, u = r > f.Tm;
+            return (0, i.jsx)(m.A, {
                 sku: e,
                 storeListing: t,
-                playing: l,
+                playing: o,
                 muted: c,
                 inLibrary: n,
                 onToggleMute: this.handleToggleMute,
                 renderCustomActions: () => this.renderActions(e),
-                renderCustomTitle: a,
-                renderCustomTagline: s,
-                renderCustomMedia: o,
+                renderCustomTitle: l,
+                renderCustomTagline: a,
+                renderCustomMedia: s,
                 isHorizontal: u,
                 isEmbed: !0
             })
-        }), T(this, "renderActions", e => {
+        }), C(this, "renderActions", e => {
             let {
                 inLibrary: t,
                 application: n,
                 skuId: r,
-                libraryApplication: a,
-                renderCustomActions: s
+                libraryApplication: l,
+                renderCustomActions: a
             } = this.props;
-            if (null != s) return (0, i.jsx)("div", {
-                className: S.i,
-                children: s()
+            if (null != a) return (0, i.jsx)("div", {
+                className: j.i,
+                children: a()
             });
             if (null == n) return null;
-            let o = null != n && n.primarySkuId === r,
-                l = null != a && a.hasFlag(A.hM6.HIDDEN);
+            let s = null != n && n.primarySkuId === r,
+                o = null != l && l.hasFlag(O.hM6.HIDDEN);
             return (0, i.jsxs)("div", {
-                className: S.i,
-                children: [!o || l ? this.renderViewInStoreButton() : (0, i.jsx)(d.A, {
+                className: j.i,
+                children: [!s || o ? this.renderViewInStoreButton() : (0, i.jsx)(d.A, {
                     application: n,
                     disabledVariant: "primary",
                     size: "sm",
-                    className: S.h,
-                    source: A.ThZ.MESSAGE_EMBED,
+                    className: j.h,
+                    source: O.ThZ.MESSAGE_EMBED,
                     onClick: this.handleActionButtonClick
-                }), t && !l || e.premium ? null : (0, i.jsx)(f.A, {
-                    type: f.A.Types.EMBED,
+                }), t && !o || e.premium ? null : (0, i.jsx)(p.A, {
+                    type: p.A.Types.EMBED,
                     sku: e,
                     inLibrary: !1
                 })]
@@ -208,24 +198,24 @@ class R extends(r = a.Component) {
         })
     }
 }
-T(R, "defaultProps", {
-    renderFallback: A.tEg
+C(I, "defaultProps", {
+    renderFallback: O.tEg
 });
-let P = [b.A, y.A, E.A, O.A];
+let S = [y.A, A.A, b.A, v.A];
 
-function D(e) {
+function T(e) {
     let {
         skuId: t
-    } = e, n = b.A.get(t), r = null != n ? g.A.getApplication(n.applicationId) : null;
+    } = e, n = y.A.get(t), r = null != n ? _.A.getApplication(n.applicationId) : null;
     return {
         sku: n,
         application: r,
-        fetchFailed: b.A.didFetchingSkuFail(t),
-        inLibrary: null != n && E.A.hasApplication(n.applicationId, n.applicationId, !0),
-        storeListing: null != n ? O.A.getForSKU(n.id) : null,
-        libraryApplication: null != n ? E.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
+        fetchFailed: y.A.didFetchingSkuFail(t),
+        inLibrary: null != n && b.A.hasApplication(n.applicationId, n.applicationId, !0),
+        storeListing: null != n ? v.A.getForSKU(n.id) : null,
+        libraryApplication: null != n ? b.A.getLibraryApplication(n.applicationId, n.applicationId, !0) : null
     }
 }
-let x = (0, m.A)((0, h.A)(R)),
-    L = o.Ay.connectStores(P, D)(x),
-    j = (0, h.A)(o.Ay.connectStores(P, D)(R))
+let N = (0, h.A)((0, g.A)(I)),
+    P = s.Ay.connectStores(S, T)(N),
+    w = (0, g.A)(s.Ay.connectStores(S, T)(I))

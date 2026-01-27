@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(9842),
-    s = n(427157),
-    o = n(287809),
+    o = n(427157),
+    s = n(287809),
     l = n(195880),
     c = n(652215);
 
@@ -21,7 +21,7 @@ function u(e) {
         avatar: r,
         discriminator: i,
         bot: a,
-        globalName: s
+        globalName: o
     } = e;
     return {
         id: t,
@@ -29,7 +29,7 @@ function u(e) {
         avatar: r,
         discriminator: i,
         bot: a,
-        global_name: s
+        global_name: o
     }
 }
 
@@ -54,7 +54,7 @@ function d(e) {
         let e = a.A.getMessageByReference(f);
         (null == e ? void 0 : e.state) === a.a.LOADED && v.push(u(e.message.author))
     }
-    return null == _ && (_ = o.default.getCurrentUser()), _ instanceof s.A && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
+    return null == _ && (_ = s.default.getCurrentUser()), _ instanceof o.A && (_ = u(_)), i()(null != _, "createMessage: author cannot be undefined"), {
         id: null != m ? m : (0, l.m)(),
         type: d,
         content: n,

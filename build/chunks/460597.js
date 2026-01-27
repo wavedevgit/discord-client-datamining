@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(64700),
     i = n(314116),
     a = n(922590),
-    s = n(607272),
-    o = n(427262),
+    o = n(607272),
+    s = n(427262),
     l = n(433880),
     c = n(985018);
 
 function u(e) {
     let {
         user: t
-    } = e, n = (0, a.f1)(t.id), u = o.Ay.useName(t), d = r.useCallback(e => {
+    } = e, n = (0, a.f1)(t.id), u = s.Ay.useName(t), d = r.useCallback(e => {
         let {
             id: n,
             name: r
@@ -29,7 +29,7 @@ function u(e) {
                 gameName: r
             }),
             confirmText: c.intl.string(c.t["cY+Oob"]),
-            onConfirm: () => s.A.removeFriend({
+            onConfirm: () => o.A.removeFriend({
                 userId: t.id,
                 applicationId: n,
                 location: "Context Menu"

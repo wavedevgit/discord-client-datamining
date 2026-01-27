@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 776038, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    a: () => a
+    a: () => l
 });
 var r = n(406935),
     i = n(594061);
-let a = e => i.wc.updateAsync("privacy", t => {
+let l = e => i.wc.updateAsync("privacy", t => {
     t.inappropriateConversationWarnings = r._t.create({
         value: e
     })

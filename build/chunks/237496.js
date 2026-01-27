@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(555444),
-    o = n(961350),
+    o = n(555444),
+    s = n(961350),
     l = n(734057),
     c = n(430452),
     u = n(576705),
@@ -37,9 +37,9 @@ function y() {
     if (null == t) e = !0;
     else {
         let r = l.A.getChannel(t),
-            i = f.A.getVoiceState(null == r ? void 0 : r.getGuildId(), o.default.getId());
+            i = f.A.getVoiceState(null == r ? void 0 : r.getGuildId(), s.default.getId());
         n = c.A.getMode() === p.TBI.VOICE_ACTIVITY;
-        let a = (0, s.H)({
+        let a = (0, o.H)({
             location: "doPTT",
             autoTrackExposure: !1
         }).enableLatching && c.A.getModeOptions().pttLatchingEnabled;
@@ -63,7 +63,7 @@ function b(e) {
         let {
             userId: t
         } = e;
-        return t === o.default.getId() && y()
+        return t === s.default.getId() && y()
     })
 }
 
@@ -76,7 +76,7 @@ function v() {
 }
 class A extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.default, l.A, c.A, u.A, d.A, f.A)
+        this.waitFor(s.default, l.A, c.A, u.A, d.A, f.A)
     }
     shouldShowWarning() {
         return !g

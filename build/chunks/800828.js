@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(896048);
 var r, i = n(311907),
     a = n(713402),
-    s = n(73153),
-    o = n(994500),
+    o = n(73153),
+    s = n(994500),
     l = n(652215);
 
 function c(e, t, n) {
@@ -54,7 +54,7 @@ function b() {
         if (i === l.eA$.FRIEND) n += 1;
         else if (i === l.eA$.PENDING_OUTGOING) t += 1;
         else if (i === l.eA$.PENDING_INCOMING) {
-            if (o.A.isSpam(a) || o.A.isIgnored(a)) return;
+            if (s.A.isSpam(a) || s.A.isIgnored(a)) return;
             e += 1
         }
     }), g = e, E = t, y = n
@@ -94,7 +94,7 @@ function T(e) {
 }
 class C extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A)
+        this.waitFor(s.A)
     }
     getPendingIncomingCount() {
         return g
@@ -131,7 +131,7 @@ class C extends(r = i.Ay.Store) {
     }
 }
 c(C, "displayName", "GameRelationshipStore");
-let N = new C(s.h, {
+let N = new C(o.h, {
     CONNECTION_OPEN: I,
     GAME_RELATIONSHIP_ADD: S,
     GAME_RELATIONSHIP_REMOVE: T,

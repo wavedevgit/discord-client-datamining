@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(965957),
     a = n(312671),
-    s = n(458640),
-    o = n(223567),
+    o = n(458640),
+    s = n(223567),
     l = n(552122),
     c = n(768612),
     u = n(235079);
@@ -32,13 +32,13 @@ class f extends r.A {
     updateSoundpack() {
         let e = a.A.getSoundpack(),
             t = a.A.getLastSoundpackExperimentId(),
-            n = o.A.experiment.definition.id,
+            n = s.A.experiment.definition.id,
             r = l.A.isEligible();
-        r || null == t && e === u.i.CLASSIC ? r && null != o.A.soundpack && n !== t && e !== o.A.soundpack && (0, i.p)(o.A.soundpack, n) : (0, i.p)(u.i.CLASSIC, null)
+        r || null == t && e === u.i.CLASSIC ? r && null != s.A.soundpack && n !== t && e !== s.A.soundpack && (0, i.p)(s.A.soundpack, n) : (0, i.p)(u.i.CLASSIC, null)
     }
     updateRingtone() {
         if (l.A.isEligible()) {
-            let e = (0, s.A)(a.A.getSoundpack());
+            let e = (0, o.A)(a.A.getSoundpack());
             null != e.call_ringing && (0, c.n)("call_ringing", e.call_ringing + ".mp3")
         } else(0, c.n)("call_ringing", "call_ringing.mp3")
     }

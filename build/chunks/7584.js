@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(838677),
-    s = n(690521),
-    o = n(770335);
+    o = n(690521),
+    s = n(770335);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ class T {
     }
     get url() {
         let e = this.defaultDiversityChild;
-        return null != e ? s.Ay.getURL(e.surrogates) : s.Ay.getURL(this.surrogates)
+        return null != e ? o.Ay.getURL(e.surrogates) : o.Ay.getURL(this.surrogates)
     }
     get name() {
         if (this.hasDiversity && null != c) {
@@ -105,7 +105,7 @@ class T {
         i().each(this.names, e)
     }
     constructor(e) {
-        if (l(this, "emojiObject", void 0), l(this, "type", void 0), l(this, "uniqueName", void 0), l(this, "surrogates", void 0), l(this, "diversityChildren", void 0), l(this, "originalName", void 0), l(this, "id", void 0), l(this, "guildId", void 0), l(this, "index", void 0), l(this, "useSpriteSheet", void 0), this.emojiObject = e, this.type = o.i.UNICODE, this.uniqueName = e.names[0], this.surrogates = e.surrogates, this.useSpriteSheet = null != e.spriteIndex, this.index = e.spriteIndex, this.diversityChildren = {}, null != e.diversityChildren)
+        if (l(this, "emojiObject", void 0), l(this, "type", void 0), l(this, "uniqueName", void 0), l(this, "surrogates", void 0), l(this, "diversityChildren", void 0), l(this, "originalName", void 0), l(this, "id", void 0), l(this, "guildId", void 0), l(this, "index", void 0), l(this, "useSpriteSheet", void 0), this.emojiObject = e, this.type = s.i.UNICODE, this.uniqueName = e.names[0], this.surrogates = e.surrogates, this.useSpriteSheet = null != e.spriteIndex, this.index = e.spriteIndex, this.diversityChildren = {}, null != e.diversityChildren)
             for (const t of e.diversityChildren) {
                 const e = E[t];
                 if (null != e.diversity) {
@@ -144,22 +144,22 @@ function D(e) {
     let t = I(e);
     return null != t ? C(t) : null
 }
-let x = new Map;
+let L = new Map;
 
-function L(e) {
-    let t = x.get(e);
+function x(e) {
+    let t = L.get(e);
     if (null == t) {
         let n = y[e];
-        t = s.Ay.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), x.set(e, t)
+        t = o.Ay.filterUnsupportedEmojis(E.slice(n[0], n[1])).map(C), L.set(e, t)
     }
     return t
 }
 
-function j(e) {
+function M(e) {
     return m.test(e)
 }
 
-function M(e) {
+function j(e) {
     return e.replace(p, (e, t) => Y(t, e))
 }
 
@@ -177,11 +177,11 @@ function k(e) {
 }
 let U = String.fromCodePoint(917631),
     G = String.fromCodePoint(127988),
-    V = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
+    F = RegExp("^[\\u{E0061}-\\u{E007A}]$", "u");
 
-function F(e, t) {
+function V(e, t) {
     var n;
-    if (!0 !== t && !j(e)) return [{
+    if (!0 !== t && !M(e)) return [{
         type: "text",
         text: e
     }];
@@ -192,7 +192,7 @@ function F(e, t) {
         let t = a[e];
         if (null != r && "" !== r)
             if (t === U) t = r + t, r = "";
-            else if (V.test(t)) {
+            else if (F.test(t)) {
             r += t;
             continue
         } else i.push(k(r)), r = "";
@@ -214,12 +214,12 @@ function F(e, t) {
 }
 
 function B(e) {
-    return F(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
+    return V(e).map(e => "text" === e.type ? e.text : e.emojiName).join("")
 }
 
 function H(e) {
-    if (!j(e)) return null;
-    let t = F(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
+    if (!M(e)) return null;
+    let t = V(e, !0).map(e => "text" === e.type ? e.text : e.emojiName).join("");
     return t === e ? null : t
 }
 
@@ -245,11 +245,11 @@ let z = {
     setDefaultDiversitySurrogate: w,
     getCategories: P,
     getByName: D,
-    getByCategory: L,
-    contentHasUnicodeOrEmoji: j,
-    translateInlineEmojiToSurrogates: M,
+    getByCategory: x,
+    contentHasUnicodeOrEmoji: M,
+    translateInlineEmojiToSurrogates: j,
     maybeTranslateSurrogatesToInlineEmoji: H,
-    findInlineEmojisFromSurrogates: F,
+    findInlineEmojisFromSurrogates: V,
     translateSurrogatesToInlineEmoji: B,
     convertNameToSurrogate: Y,
     convertSurrogateToName: W,

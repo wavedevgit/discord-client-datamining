@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(998218);
+    o = n(998218);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -47,8 +47,8 @@ function _(e) {
             name: n,
             summary: i,
             websites: a,
-            themes: s,
-            genres: o,
+            themes: o,
+            genres: s,
             platforms: c,
             artwork_urls: u,
             screenshot_urls: d,
@@ -65,8 +65,8 @@ function _(e) {
             summary: i,
             summaryLocalized: h,
             websites: a,
-            themes: s,
-            genres: o,
+            themes: o,
+            genres: s,
             platforms: c,
             artwork: u,
             screenshots: d,
@@ -118,7 +118,7 @@ class m extends(r = i.Ay.Store) {
         let r = null == (n = l.get(e)) ? void 0 : n.coverImageUrl;
         if (null == r) return null;
         if (null == t) return r;
-        let i = s.A.toURLSafe(r);
+        let i = o.A.toURLSafe(r);
         return null == i ? r : (i.searchParams.set("size", t.size.toString()), i.toString())
     }
     noDataAvailable(e) {
@@ -131,7 +131,7 @@ class m extends(r = i.Ay.Store) {
         return l.size
     }
 }
-o(m, "displayName", "DetectableGameSupplementalStore");
+s(m, "displayName", "DetectableGameSupplementalStore");
 let g = new m(a.h, {
     LOGOUT: f,
     DETECTABLE_GAME_SUPPLEMENTAL_FETCH: p,

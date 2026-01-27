@@ -4,14 +4,14 @@
 n.d(t, {
     C1: () => l,
     S7: () => c,
-    Sw: () => s,
-    tU: () => o
+    Sw: () => o,
+    tU: () => s
 });
 var r = n(562465),
     i = n(73153),
     a = n(652215);
 
-function s(e, t, n, r) {
+function o(e, t, n, r) {
     i.h.dispatch({
         type: "QUEUE_INTERACTION_COMPONENT_STATE",
         messageId: e,
@@ -21,13 +21,13 @@ function s(e, t, n, r) {
     })
 }
 
-function o(e, t) {
+function s(e, t) {
     let {
         data: n,
         messageId: r,
         preflight: a,
-        onCreate: s,
-        onSuccess: o,
+        onCreate: o,
+        onSuccess: s,
         onFailure: l
     } = t;
     i.h.dispatch({
@@ -36,8 +36,8 @@ function o(e, t) {
         nonce: e,
         messageId: r,
         preflight: a,
-        onCreate: s,
-        onSuccess: o,
+        onCreate: o,
+        onSuccess: s,
         onFailure: l
     })
 }

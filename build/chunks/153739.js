@@ -1,18 +1,17 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 153739, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     F7: () => c,
-    tl: () => u,
-    y3: () => l
+    tl: () => d,
+    y3: () => o
 });
 var r = n(417597),
     i = n(287809),
-    a = n(842144),
+    l = n(842144),
     s = n(695515),
-    o = n(438732);
-let l = () => {
-        let e = (0, o.A)();
+    a = n(438732);
+let o = () => {
+        let e = (0, a.A)();
         return (0, r.bG)([s.A, i.default], () => {
             if (!0 !== e) return i.default.getCurrentUser();
             let t = s.A.getSelectedTeenId();
@@ -23,14 +22,14 @@ let l = () => {
         let t = i.default.getUser(e);
         if (null != t) return t
     }),
-    u = () => {
+    d = () => {
         let e = s.A.getSelectedTeenId(),
             {
                 hasLoadedSettings: t,
                 isLoading: n
-            } = (0, r.cf)([a.A], () => ({
-                hasLoadedSettings: null != e && a.A.hasSettingsForUser(e),
-                isLoading: a.A.isLoading
+            } = (0, r.cf)([l.A], () => ({
+                hasLoadedSettings: null != e && l.A.hasSettingsForUser(e),
+                isLoading: l.A.isLoading
             }));
         return null !== e && !t && !n
     }

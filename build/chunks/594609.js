@@ -1,60 +1,56 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 594609, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    h: () => f
+    h: () => E
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(158954),
-    s = n(397927),
-    o = n(827343),
-    l = n(985018);
+    l = n(158954),
+    o = n(397927),
+    a = n(827343),
+    s = n(985018);
 
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function u(e) {
+function c(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            c(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
 }
 
-function d(e) {
+function u(e) {
     let [t, n] = i.useState(!1);
-    return (0, r.jsx)(a.Modal, u({
+    return (0, r.jsx)(l.Modal, c({
         size: "md",
-        title: l.intl.string(l.t["zQ1+Jw"]),
-        subtitle: l.intl.string(l.t.K1gWXn),
+        title: s.intl.string(s.t["zQ1+Jw"]),
+        subtitle: s.intl.string(s.t.K1gWXn),
         actions: [{
-            text: l.intl.string(l.t.BddRzS),
+            text: s.intl.string(s.t.BddRzS),
             onClick: () => {
-                t && o.A.setSilenceWarning(!1), e.onClose()
+                t && a.A.setSilenceWarning(!1), e.onClose()
             },
             variant: "primary"
         }],
-        actionBarInput: (0, r.jsx)(a.Sc0, {
+        actionBarInput: (0, r.jsx)(l.Sc0, {
             checked: t,
             onChange: e => n(e),
-            label: l.intl.string(l.t.XAiAgD),
+            label: s.intl.string(s.t.XAiAgD),
             labelType: "secondary"
         })
     }, e))
 }
 
-function f() {
-    (0, s.qfG)(e => (0, r.jsx)(d, u({}, e)))
+function E() {
+    (0, o.qfG)(e => (0, r.jsx)(u, c({}, e)))
 }

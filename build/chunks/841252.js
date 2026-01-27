@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(224850),
     c = n(778712),
     u = n(985018),
@@ -29,13 +29,13 @@ function f(e) {
         size: c._3.SIZE_20
     }, e.id));
     return (0, r.jsxs)("div", {
-        className: s()(d.kL, n),
+        className: o()(d.kL, n),
         children: [(0, r.jsx)("div", {
             className: d.zc,
             children: p
         }), (0, r.jsx)("div", {
             className: d.FS,
-            children: (0, r.jsx)(o.EYj, {
+            children: (0, r.jsx)(s.EYj, {
                 variant: "text-sm/medium",
                 children: f
             })

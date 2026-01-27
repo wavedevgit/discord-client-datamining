@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(621466),
     a = n(311907),
-    s = n(192308),
-    o = n(397927),
+    o = n(192308),
+    s = n(397927),
     l = n(775121),
     c = n(955572),
     u = n(775602),
@@ -19,7 +19,7 @@ var r = n(64700),
 
 function h(e) {
     let t = e.ctrlKey || e.altKey || e.metaKey;
-    e.key !== _.N$.Tab || t || __OVERLAY__ || (0, s.hasAnyModalOpen)() || d.A.maybeShowKeyboardNavigationExplainerModal()
+    e.key !== _.N$.Tab || t || __OVERLAY__ || (0, o.hasAnyModalOpen)() || d.A.maybeShowKeyboardNavigationExplainerModal()
 }
 
 function m(e) {
@@ -43,8 +43,8 @@ function g(e, t) {
     var n, r;
     let a = (0, i.Cw)(null == (r = (0, i.BF)(e)) ? void 0 : r.activeElement);
     if (a && e.key !== _.N$.Tab || e.ctrlKey || e.altKey || e.metaKey || e.key !== _.N$.Tab && e.shiftKey) return;
-    let s = m(e);
-    null == s || f.Ay.hasExactKeybind(s) || l.A.hasBind(null != (n = p.Qd(s[0])) ? n : "") || ((0, c.uS)(), a && !t && e.preventDefault())
+    let o = m(e);
+    null == o || f.Ay.hasExactKeybind(o) || l.A.hasBind(null != (n = p.Qd(o[0])) ? n : "") || ((0, c.uS)(), a && !t && e.preventDefault())
 }
 
 function E() {
@@ -52,7 +52,7 @@ function E() {
 }
 let y = function(e, t) {
     let n = (0, a.bG)([u.A], () => u.A.keyboardModeEnabled);
-    (0, o.OpQ)(n);
+    (0, s.OpQ)(n);
     let i = (0, r.useCallback)(e => {
         g(e, t)
     }, [t]);

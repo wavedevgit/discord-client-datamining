@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(311907),
     a = n(73153),
-    s = n(198982),
-    o = n(324580);
+    o = n(198982),
+    s = n(324580);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -51,14 +51,14 @@ let f = new Map,
     p = new Map;
 
 function _(e) {
-    return [o.I9, e.query, o.OR, e.categoryId, o.O3, e.languageCode].join("-")
+    return [s.I9, e.query, s.OR, e.categoryId, s.O3, e.languageCode].join("-")
 }
 class h {
     handleSearchStart() {
         this.error = null, this.isFetching = !0
     }
     handleSearchFailure(e) {
-        this.isFetching = !1, this.isInitialFetchComplete = !0, this.error = new s.LG(e)
+        this.isFetching = !1, this.isInitialFetchComplete = !0, this.error = new o.LG(e)
     }
     handleSearchSuccess(e) {
         let {

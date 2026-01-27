@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(469036);
+    o = n(469036);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -23,7 +23,7 @@ function c(e) {
         applicationId: t,
         link: n
     } = e;
-    null == l[t] && (l[t] = Object.create(null)), l[t][n.link_id] = new s.A(n)
+    null == l[t] && (l[t] = Object.create(null)), l[t][n.link_id] = new o.A(n)
 }
 
 function u() {
@@ -34,7 +34,7 @@ class d extends(r = i.Ay.Store) {
         if (null != l[e]) return l[e][t]
     }
 }
-o(d, "displayName", "CustomActivityLinksStore");
+s(d, "displayName", "CustomActivityLinksStore");
 let f = new d(a.h, {
     CUSTOM_ACTIVITY_LINK_FETCH_SUCCESS: c,
     LOGOUT: u

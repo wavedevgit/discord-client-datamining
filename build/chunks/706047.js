@@ -1,38 +1,37 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 706047, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var r = n(627968);
 n(64700);
 var i = n(284009),
-    a = n.n(i),
+    l = n.n(i),
     s = n(311907),
-    o = n(397927),
-    l = n(965957),
+    a = n(397927),
+    o = n(965957),
     c = n(312671),
-    u = n(552122),
-    d = n(235079),
-    f = n(985018);
+    d = n(552122),
+    u = n(235079),
+    _ = n(985018);
 
 function p() {
     let e = (0, s.bG)([c.A], () => c.A.getSoundpack()),
-        t = u.A.useHolidaySoundpack();
-    a()(null != t, "should not render this without a holiday soundpack");
+        t = d.A.useHolidaySoundpack();
+    l()(null != t, "should not render this without a holiday soundpack");
     let n = [{
         id: "default",
-        value: d.i.CLASSIC,
-        label: f.intl.string(f.t.p3Hg5W)
+        value: u.i.CLASSIC,
+        label: _.intl.string(_.t.p3Hg5W)
     }, {
         id: "holiday",
         value: t.soundpack,
-        label: f.intl.string(t.soundpackLabel)
+        label: _.intl.string(t.soundpackLabel)
     }];
-    return (0, r.jsx)(o.l6P, {
+    return (0, r.jsx)(a.l6P, {
         selectionMode: "single",
-        label: f.intl.string(f.t.fgSHf8),
-        onSelectionChange: l.p,
+        label: _.intl.string(_.t.fgSHf8),
+        onSelectionChange: o.p,
         value: e,
         options: n,
         maxOptionsVisible: n.length

@@ -8,14 +8,14 @@ var r = t(627968),
     l = t(284009),
     a = t.n(l),
     i = t(317097),
-    o = t(397927),
-    s = t(915089),
+    s = t(397927),
+    o = t(915089),
     d = t(411342),
     u = t(652215),
     c = t(985018),
     g = t(228580);
 
-function p(e) {
+function f(e) {
     for (var A = 1; A < arguments.length; A++) {
         var t = null != arguments[A] ? arguments[A] : {},
             r = Object.keys(t);
@@ -34,7 +34,7 @@ function p(e) {
     return e
 }
 
-function f(e, A) {
+function p(e, A) {
     return A = null != A ? A : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(A)) : (function(e, A) {
         var t = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -46,24 +46,24 @@ function f(e, A) {
         Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(A, t))
     }), e
 }
-let m = (0, s.Ld)();
+let m = (0, o.Ld)();
 
 function v(e) {
     let {
         newRoleParams: A,
         setNewRoleParams: t
     } = e, l = n.useRef(null), {
-        name: s,
+        name: o,
         color: v
-    } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
+    } = A, h = e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
         color: e
     })));
     return (0, r.jsxs)("div", {
         className: g.CJ,
-        children: [(0, r.jsx)(o.ksK, {
+        children: [(0, r.jsx)(s.ksK, {
             autoFocus: !0,
-            value: s,
-            onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), f(p({}, A), {
+            value: o,
+            onChange: e => t(A => (a()(null != A, "newRoleParams should be defined"), p(f({}, A), {
                 name: e
             }))),
             id: m,
@@ -71,19 +71,19 @@ function v(e) {
             maxLength: u.fHV
         }), (0, r.jsxs)("div", {
             className: g.P4,
-            children: [(0, r.jsx)(o.AC4, {
+            children: [(0, r.jsx)(s.AC4, {
                 children: c.intl.format(c.t["Vlq/pH"], {
                     color: (0, i.Hl)(v)
                 })
-            }), (0, r.jsx)(o.YNO, {
+            }), (0, r.jsx)(s.YNO, {
                 targetElementRef: l,
-                renderPopout: e => (0, r.jsx)(o.VNw, f(p({}, e), {
+                renderPopout: e => (0, r.jsx)(s.VNw, p(f({}, e), {
                     value: v,
                     onChange: h
                 })),
-                children: e => (0, r.jsx)(o.K0, f(p({}, e), {
+                children: e => (0, r.jsx)(s.K0, p(f({}, e), {
                     variant: "secondary",
-                    icon: o.dDg,
+                    icon: s.dDg,
                     buttonRef: l,
                     "aria-label": c.intl.string(c.t.QLgdlS)
                 }))

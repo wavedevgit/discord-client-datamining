@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 802937, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     f8: "fractionalPremiumAccountCredit__94f72",
     xF: "premiumSubscriptionAccountCredit__94f72",

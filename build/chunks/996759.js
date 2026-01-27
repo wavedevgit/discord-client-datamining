@@ -2,13 +2,13 @@
 /** chunk id: 996759, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => s
+    V: () => o
 });
 var r = n(562465),
     i = n(73153),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     return i.h.dispatch({
         type: "APPLICATION_STORE_DIRECTORY_LAYOUT_FETCHING",
         applicationId: e

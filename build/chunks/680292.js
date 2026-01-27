@@ -3,11 +3,11 @@
 var r = n(916511),
     i = n(987307),
     a = n(326583),
-    s = n(255159);
+    o = n(255159);
 
-function o(t) {
+function s(t) {
     var n = "function" == typeof Map ? new Map : void 0;
-    return e.exports = o = function(e) {
+    return e.exports = s = function(e) {
         if (null === e || !a(e)) return e;
         if ("function" != typeof e) throw TypeError("Super expression must either be null or a function");
         if (void 0 !== n) {
@@ -16,7 +16,7 @@ function o(t) {
         }
 
         function t() {
-            return s(e, arguments, r(this).constructor)
+            return o(e, arguments, r(this).constructor)
         }
         return t.prototype = Object.create(e.prototype, {
             constructor: {
@@ -26,6 +26,6 @@ function o(t) {
                 configurable: !0
             }
         }), i(t, e)
-    }, e.exports.__esModule = !0, e.exports.default = e.exports, o(t)
+    }, e.exports.__esModule = !0, e.exports.default = e.exports, s(t)
 }
-e.exports = o, e.exports.__esModule = !0, e.exports.default = e.exports
+e.exports = s, e.exports.__esModule = !0, e.exports.default = e.exports

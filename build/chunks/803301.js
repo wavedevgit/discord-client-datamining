@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(652215),
-    o = n(731854);
+    o = n(652215),
+    s = n(731854);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -60,18 +60,18 @@ function g(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : null,
         r = _[e];
     if (null == r) return;
-    let i = r[null != t ? t : s.eGj];
+    let i = r[null != t ? t : o.eGj];
     if (null != i) {
-        for (let t of Object.values(o.x))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
-        _[e][null != t ? t : s.eGj] = i
+        for (let t of Object.values(s.x))(n === t || null == n) && (delete i[t], delete h[m(null != n ? n : t, e)]);
+        _[e][null != t ? t : o.eGj] = i
     }
 }
 
 function E(e, t, n, r) {
     var i;
     e in _ || (_[e] = {});
-    let a = null != (i = _[e][null != t ? t : s.eGj]) ? i : {};
-    _[e][null != t ? t : s.eGj] = d(c({}, a), {
+    let a = null != (i = _[e][null != t ? t : o.eGj]) ? i : {};
+    _[e][null != t ? t : o.eGj] = d(c({}, a), {
         [r]: {
             streamId: n
         }
@@ -114,14 +114,14 @@ function v(e) {
             userId: r,
             sessionId: i,
             channelId: a,
-            guildId: o
+            guildId: s
         } = t;
         if (null == a && r === f)
             if (i !== p) return e;
             else _ = {}, h = {};
         else {
-            if (null != a || (null == (n = _[r]) ? void 0 : n[null != o ? o : s.eGj]) == null) return e;
-            g(r, o)
+            if (null != a || (null == (n = _[r]) ? void 0 : n[null != s ? s : o.eGj]) == null) return e;
+            g(r, s)
         }
         return !0
     }, !1)
@@ -153,13 +153,13 @@ function I(e) {
 class S extends(r = i.Ay.Store) {
     getStreamId(e, t) {
         var n, r, i;
-        let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.x.DEFAULT;
-        return null == (i = _[e]) || null == (r = i[null != t ? t : s.eGj]) || null == (n = r[a]) ? void 0 : n.streamId
+        let a = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.x.DEFAULT;
+        return null == (i = _[e]) || null == (r = i[null != t ? t : o.eGj]) || null == (n = r[a]) ? void 0 : n.streamId
     }
     getUserStreamData(e, t) {
         var n, r;
-        let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.x.DEFAULT;
-        return null == (r = _[e]) || null == (n = r[null != t ? t : s.eGj]) ? void 0 : n[i]
+        let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.x.DEFAULT;
+        return null == (r = _[e]) || null == (n = r[null != t ? t : o.eGj]) ? void 0 : n[i]
     }
     getTimedoutVideos() {
         return h

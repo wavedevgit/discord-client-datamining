@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(158954),
-    s = n(732955),
-    o = n(985018),
+    o = n(732955),
+    s = n(985018),
     l = n(248789);
 
 function c(e, t, n) {
@@ -36,14 +36,14 @@ function u(e) {
 function d(e) {
     let {
         onClick: t,
-        "aria-label": n = o.intl.string(o.t.cpT0Cq),
+        "aria-label": n = s.intl.string(s.t.cpT0Cq),
         variant: c
     } = e, {
         firstFocusableItemProps: d
     } = i.useContext(a.MVj);
     return (0, r.jsx)("div", {
         className: l.closeButton,
-        children: (0, r.jsx)(s.JnF, u({
+        children: (0, r.jsx)(o.JnF, u({
             size: "sm",
             "aria-label": n,
             onClick: t,

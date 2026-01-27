@@ -14,8 +14,8 @@ var r = n(562465),
 n(843472);
 var a = n(427157);
 n(309010);
-var s = n(728458),
-    o = n(652215);
+var o = n(728458),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -58,10 +58,10 @@ async function h(e, t, n) {
     });
     if (_.has(i)) return _.get(i);
     let {
-        users: s,
+        users: o,
         next_index: l
     } = (await r.Bo.post({
-        url: o.Rsh.GET_REFERRAL_ELIGIBLE_USERS,
+        url: s.Rsh.GET_REFERRAL_ELIGIBLE_USERS,
         body: {
             index: e,
             limit: null != n ? n : c,
@@ -70,7 +70,7 @@ async function h(e, t, n) {
         oldFormErrors: !0,
         rejectWithError: !1
     })).body, u = {
-        users: s.map(e => new a.A(e)),
+        users: o.map(e => new a.A(e)),
         nextIndex: l
     };
     return _.set(i, u), u
@@ -78,23 +78,23 @@ async function h(e, t, n) {
 let m = () => (i.h.dispatch({
     type: "BILLING_REFERRALS_REMAINING_FETCH_START"
 }), r.Bo.get({
-    url: o.Rsh.GET_REFERRALS_REMAINING,
+    url: s.Rsh.GET_REFERRALS_REMAINING,
     oldFormErrors: !0,
     rejectWithError: !1
 }).then(e => {
     var t, n, r, a;
-    let s = new Map;
+    let o = new Map;
     if (null != e.body && null != e.body.recipient_status)
         for (let t in e.body.recipient_status) {
             let n = e.body.recipient_status[t];
-            s.set(t, n)
+            o.set(t, n)
         }
     i.h.dispatch({
         type: "BILLING_REFERRALS_REMAINING_FETCH_SUCCESS",
         referrals_remaining: null != e.body && null != e.body.referrals_remaining ? e.body.referrals_remaining : 0,
         sent_user_ids: null != e.body && null != e.body.sent_user_ids ? e.body.sent_user_ids : [],
         refresh_at: null != (t = null == (r = e.body) ? void 0 : r.refresh_at) ? t : null,
-        recipient_status: s,
+        recipient_status: o,
         has_eligible_friends: null != (n = null == (a = e.body) ? void 0 : a.has_eligible_friends) && n
     })
 }, e => {
@@ -108,13 +108,13 @@ async function g(e) {
     for (let i of e) try {
         var a;
         let e = null != (a = (await r.Bo.post({
-            url: o.Rsh.CREATE_REFERRAL(i),
+            url: s.Rsh.CREATE_REFERRAL(i),
             oldFormErrors: !0,
             rejectWithError: !0
         })).body) ? a : null;
         null != e && t.push(e), n.set(i, 1)
     } catch (e) {
-        s.A.captureException(e), n.set(i, 2)
+        o.A.captureException(e), n.set(i, 2)
     }
     return i.h.dispatch({
         type: "CREATE_REFERRALS_SUCCESS",
@@ -125,7 +125,7 @@ async function E(e) {
     try {
         var t;
         let n = null != (t = (await r.Bo.get({
-            url: o.Rsh.REFERRAL_OFFER_ID_RESOLVE(e),
+            url: s.Rsh.REFERRAL_OFFER_ID_RESOLVE(e),
             oldFormErrors: !0,
             rejectWithError: !1
         })).body) ? t : null;

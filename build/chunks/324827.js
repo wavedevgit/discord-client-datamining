@@ -8,7 +8,7 @@ var r = n(626584),
     i = n(723176),
     a = n(194188);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = new r.A("KvCacheVersion");
+let s = new r.A("KvCacheVersion");
 class l {
     async okAsync(e) {
         let t = await i.A.cache(e).get(a.WL);
@@ -30,7 +30,7 @@ class l {
         if (null == e) return !1;
         let t = await e.get(a.pE),
             n = null == t ? void 0 : t.version;
-        return n === a.NI || (o.info("KVStore version mismatch: ".concat(n, " vs ").concat(a.NI)), !1)
+        return n === a.NI || (s.info("KVStore version mismatch: ".concat(n, " vs ").concat(a.NI)), !1)
     }
     handleClear() {
         this.hasSuccessfullyConnected = !1
@@ -47,7 +47,7 @@ class l {
         this.hasSuccessfullyConnected = !1
     }
     constructor() {
-        s(this, "hasSuccessfullyConnected", !1), s(this, "actions", {
+        o(this, "hasSuccessfullyConnected", !1), o(this, "actions", {
             BACKGROUND_SYNC: (e, t) => this.handleWrite(t),
             CONNECTION_OPEN: () => this.handleConnectionOpen(),
             WRITE_CACHES: (e, t) => this.handleWrite(t)

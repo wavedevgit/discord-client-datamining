@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(833291),
     i = n(376943),
     a = n(71393),
-    s = n(486020),
-    o = n(562153),
+    o = n(486020),
+    s = n(562153),
     l = n(304162),
     c = n(652215),
     u = n(381941),
@@ -32,9 +32,9 @@ function p(e) {
     let b = (0, l.et)(c.thumbnail),
         O = !y && c.has_media_attachment,
         v = y ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
-        A = null != g ? o.Ay.getName(c.guild_id, c.channel_id, g) : void 0,
+        A = null != g ? s.Ay.getName(c.guild_id, c.channel_id, g) : void 0,
         I = null == g ? void 0 : g.getAvatarURL(null == p ? void 0 : p.id, f);
-    (null == I || E !== c.guild_id) && (I = s.Ay.getGuildIconURL({
+    (null == I || E !== c.guild_id) && (I = o.Ay.getGuildIconURL({
         id: c.guild_id,
         icon: c.guild_icon,
         size: f,

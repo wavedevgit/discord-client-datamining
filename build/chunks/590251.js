@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(332099);
 
 function c(e, t, n) {
@@ -33,7 +33,7 @@ class f extends(r = a.Component) {
             colorOverride: n,
             background: r,
             ringColorOverrideClassName: a
-        } = this.props, s = Math.min(Math.max(t, 0), 100), c = (d - e) / 2, u = c * Math.PI * 2;
+        } = this.props, o = Math.min(Math.max(t, 0), 100), c = (d - e) / 2, u = c * Math.PI * 2;
         return (0, i.jsxs)("svg", {
             viewBox: "0 0 ".concat(d, " ").concat(d),
             className: l.n1,
@@ -43,7 +43,7 @@ class f extends(r = a.Component) {
                 cy: d / 2,
                 r: d / 2
             }), (0, i.jsx)("circle", {
-                className: o()(l.rh, r),
+                className: s()(l.rh, r),
                 cx: d / 2,
                 cy: d / 2,
                 r: (d - 2 * e) / 2
@@ -58,7 +58,7 @@ class f extends(r = a.Component) {
                 stroke: null != n ? n : "currentColor",
                 style: {
                     strokeDasharray: u,
-                    strokeDashoffset: (1 - s / 100) * u
+                    strokeDashoffset: (1 - o / 100) * u
                 }
             })]
         })
@@ -69,9 +69,9 @@ class f extends(r = a.Component) {
             children: t
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: o()(l.G3, e),
+            className: s()(l.G3, e),
             children: [this.renderCircle(), null != t ? (0, i.jsx)("div", {
-                className: o()(l.Bd, this.props.overlayClassName),
+                className: s()(l.Bd, this.props.overlayClassName),
                 children: t
             }) : null]
         })

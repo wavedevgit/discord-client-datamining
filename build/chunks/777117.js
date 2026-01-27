@@ -1,69 +1,66 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 777117, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(311907),
-    a = n(397927),
-    s = n(252452),
-    o = n(628965),
-    l = n(513664),
+var s = n(311907),
+    l = n(397927),
+    r = n(252452),
+    a = n(628965),
+    o = n(513664),
     c = n(768908),
-    u = n(790076),
-    d = n(523418),
-    f = n(857266),
-    p = n(652215),
-    _ = n(985018),
-    h = n(461225);
+    d = n(790076),
+    u = n(523418),
+    g = n(857266),
+    h = n(652215),
+    x = n(985018),
+    p = n(461225);
 
-function m() {
-    let e = (0, d.b)(),
-        t = (0, i.bG)([o.A], () => o.A.getSubsection()),
-        n = null != t && e.some(e => e.id === t) ? t : e[0].id,
-        m = e => {
-            s.A.setSection(p.nc_.GAMES, e)
-        },
-        g = () => {
-            switch (n) {
-                case f.J.OVERLAY:
-                    return (0, r.jsx)(u.Ay, {});
-                case f.J.ACTIVITY_PRIVACY:
-                    return (0, r.jsx)(l.Ay, {});
-                case f.J.MY_GAMES:
-                default:
-                    return (0, r.jsx)(c.Ay, {
-                        className: h.rf,
-                        showHeader: !1
-                    })
-            }
-        };
-    return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(a.Heading, {
-            className: h.R_,
+function A() {
+    let e = (0, u.b)(),
+        t = (0, s.bG)([a.A], () => a.A.getSubsection()),
+        n = null != t && e.some(e => e.id === t) ? t : e[0].id;
+    return (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(l.Heading, {
+            className: p.R_,
             variant: "heading-xl/semibold",
-            children: _.intl.string(_.t.URyqtP)
-        }), (0, r.jsx)(a.VQ0, {
-            className: h.$H,
+            children: x.intl.string(x.t.URyqtP)
+        }), (0, i.jsx)(l.VQ0, {
+            className: p.$H,
             selectedItem: n,
-            onItemSelect: m,
+            onItemSelect: e => {
+                r.A.setSection(h.nc_.GAMES, e)
+            },
             orientation: "horizontal",
             type: "top",
             look: "brand",
-            children: e.map(e => (0, r.jsxs)(a.VQ0.Item, {
-                className: h.Mf,
+            children: e.map(e => (0, i.jsxs)(l.VQ0.Item, {
+                className: p.Mf,
                 id: e.id,
                 "aria-label": e.title,
-                children: [(0, r.jsx)(e.icon, {
-                    className: h.Ll,
+                children: [(0, i.jsx)(e.icon, {
+                    className: p.Ll,
                     color: "currentColor"
-                }), (0, r.jsx)("div", {
-                    className: h.cq,
+                }), (0, i.jsx)("div", {
+                    className: p.cq,
                     children: e.title
                 })]
             }, e.id))
-        }), g()]
+        }), (() => {
+            switch (n) {
+                case g.J.OVERLAY:
+                    return (0, i.jsx)(d.Ay, {});
+                case g.J.ACTIVITY_PRIVACY:
+                    return (0, i.jsx)(o.Ay, {});
+                case g.J.MY_GAMES:
+                default:
+                    return (0, i.jsx)(c.Ay, {
+                        className: p.rf,
+                        showHeader: !1
+                    })
+            }
+        })()]
     })
 }

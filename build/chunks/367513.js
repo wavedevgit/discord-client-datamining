@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(58149),
     a = n(134047),
-    s = n(734057),
-    o = n(954571),
+    o = n(734057),
+    s = n(954571),
     l = n(203982),
     c = n(652215);
 
@@ -62,7 +62,7 @@ let f = {
     },
     updateLayout(e, t) {
         let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : c.BRT.APP;
-        o.default.track(c.HAw.VIDEO_LAYOUT_TOGGLED, d({
+        s.default.track(c.HAw.VIDEO_LAYOUT_TOGGLED, d({
             video_layout: t
         }, (0, i.QS)(e))), r.h.dispatch({
             type: "CHANNEL_RTC_UPDATE_LAYOUT",
@@ -120,10 +120,10 @@ let f = {
                 location: "ChannelCall"
             }).collectAnalytics) {
             var i;
-            o.default.track(c.HAw.TEXT_IN_VOICE_CLOSED, {
+            s.default.track(c.HAw.TEXT_IN_VOICE_CLOSED, {
                 reason: n,
                 channel_id: e,
-                guild_id: null == (i = s.A.getChannel(e)) ? void 0 : i.getGuildId()
+                guild_id: null == (i = o.A.getChannel(e)) ? void 0 : i.getGuildId()
             })
         }
     },

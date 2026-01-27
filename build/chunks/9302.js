@@ -21,8 +21,8 @@ n.r(t), n.d(t, {
 }), n(896048), n(680155), n(323874), n(14289), n(35956), n(747238);
 var i = n(719129),
     a = n(996308),
-    s = n(723702),
-    o = n(837921),
+    o = n(723702),
+    s = n(837921),
     l = n(652215),
     c = n(672396);
 let u = 2,
@@ -68,7 +68,7 @@ function O(e) {
 }
 
 function v(e) {
-    return !s.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
+    return !o.isPlatformEmbedded || e.width >= f.width && e.height >= f.height
 }
 
 function A(e) {
@@ -80,6 +80,6 @@ function I() {
 }
 
 function S() {
-    let e = (0, s.isWindows)() && "arm64" === o.Ay.architecture;
+    let e = (0, o.isWindows)() && "arm64" === s.Ay.architecture;
     return c.OX && !e && !(0, i.Zi)()
 }

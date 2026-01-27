@@ -43,8 +43,8 @@ var r = t(627968),
     W = t(104171),
     z = t(47294),
     G = t(246323),
-    M = t(365995),
-    K = t(16961),
+    K = t(365995),
+    M = t(16961),
     F = t(652215),
     V = t(985018),
     H = t(936106);
@@ -103,7 +103,7 @@ function $(e) {
             popoutWindowAlwaysOnTop: n,
             handleStayOnTop: t
         }),
-        e_ = (0, K.G)(),
+        e_ = (0, M.G)(),
         {
             rootNode: es,
             popoutWindow: ed,
@@ -113,7 +113,7 @@ function $(e) {
                 popoutWindow: e,
                 currentDocument: n,
                 rootNode: t
-            } = (0, M.A)(), [r, a] = o.useState(!1), i = o.useCallback(() => {
+            } = (0, K.A)(), [r, a] = o.useState(!1), i = o.useCallback(() => {
                 null == t || r && (a(!1), (0, E.sP)(t, n))
             }, [t, n, r]), l = o.useCallback(() => {
                 null != t && (r ? i() : (a(!0), (0, E.tl)(t)))

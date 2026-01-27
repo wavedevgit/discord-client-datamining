@@ -7,8 +7,8 @@ n.d(t, {
 }), n(228524), n(896048), n(65821);
 var r, i = n(627968),
     a = n(64700),
-    s = n(985623),
-    o = n.n(s),
+    o = n(985623),
+    s = n.n(o),
     l = n(296489),
     c = n.n(l),
     u = n(340287),
@@ -74,10 +74,10 @@ class C extends(r = a.Component) {
         e.shouldShow, this.props.shouldShow;
         let n = this.shouldShowPopout(this.props, this.state);
         if ((this.shouldShowPopout(e, t) !== n || t.isLoading !== this.state.isLoading || e.ignoreModalClicks !== this.props.ignoreModalClicks) && (n ? this.setupShowPopout() : this.unsubscribe()), this.props.scrollBehavior !== e.scrollBehavior) {
-            var r, i, a, s;
+            var r, i, a, o;
             let e = this.getDomElement();
             if (null == e) return;
-            null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, !0), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, !0), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, !0) : "sticky" === this.props.scrollBehavior && (null == (s = e.ownerDocument) || s.addEventListener("scroll", this.handleStickyScroll, !0))
+            null == (r = e.ownerDocument) || r.removeEventListener("scroll", this.handleScroll, !0), null == (i = e.ownerDocument) || i.removeEventListener("scroll", this.handleStickyScroll, !0), "close" === this.props.scrollBehavior ? null == (a = e.ownerDocument) || a.addEventListener("scroll", this.handleScroll, !0) : "sticky" === this.props.scrollBehavior && (null == (o = e.ownerDocument) || o.addEventListener("scroll", this.handleStickyScroll, !0))
         }
     }
     getDomElement() {
@@ -137,8 +137,8 @@ class C extends(r = a.Component) {
             nudgeAlignIntoViewport: n,
             useRawTargetDimensions: r,
             spacing: a,
-            offset: s,
-            autoInvert: o,
+            offset: o,
+            autoInvert: s,
             fixed: l,
             positionKey: c,
             disablePointerEvents: u,
@@ -162,8 +162,8 @@ class C extends(r = a.Component) {
                 nudgeAlignIntoViewport: n,
                 useRawTargetDimensions: r,
                 spacing: a,
-                offset: s,
-                autoInvert: o,
+                offset: o,
+                autoInvert: s,
                 fixed: l,
                 positionKey: null != c ? c : String(_),
                 disablePointerEvents: u,
@@ -281,7 +281,7 @@ class C extends(r = a.Component) {
             (null == t ? void 0 : t.contains(this.domElementRef.current)) && this.close(void 0, "system:scroll")
         }), O(this, "handleEscapeClose", e => {
             this.close(e, "user:escape")
-        }), O(this, "handleStickyScroll", o()(() => {
+        }), O(this, "handleStickyScroll", s()(() => {
             requestAnimationFrame(() => {
                 let e = this.popoutRef.current;
                 if (null != e && this.shouldShowPopout(this.props, this.state)) {
@@ -300,9 +300,9 @@ O(C, "defaultProps", {
     closeOnClickOutside: !0
 }), O(C, "contextType", m.Ay);
 let N = e => {
-    var t, n, r, i, a, s;
-    let o = e.getBoundingClientRect(),
+    var t, n, r, i, a, o;
+    let s = e.getBoundingClientRect(),
         l = null != (t = null == (i = e.ownerDocument) || null == (r = i.defaultView) ? void 0 : r.innerHeight) ? t : 0,
-        c = null != (n = null == (s = e.ownerDocument) || null == (a = s.defaultView) ? void 0 : a.innerWidth) ? n : 0;
-    return o.top < l && o.bottom > 0 && o.left < c && o.right > 0
+        c = null != (n = null == (o = e.ownerDocument) || null == (a = o.defaultView) ? void 0 : a.innerWidth) ? n : 0;
+    return s.top < l && s.bottom > 0 && s.left < c && s.right > 0
 }

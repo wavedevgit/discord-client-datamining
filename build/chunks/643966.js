@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 643966, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     c: "buttonWithProgress__61462",
     qB: "progress__61462",

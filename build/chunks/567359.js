@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(333903),
     i = n(290424),
     a = n(803082),
-    s = n(138026),
-    o = n(64700),
+    o = n(138026),
+    s = n(64700),
     l = n(447432),
     c = n(744493),
     u = n(853590);
@@ -18,7 +18,7 @@ let d = new WeakMap;
 function f(e, t, n) {
     let {
         direction: f
-    } = (0, u.Y)(), p = e.keyboardDelegate || new(0, s.n)({
+    } = (0, u.Y)(), p = e.keyboardDelegate || new(0, o.n)({
         collection: t.collection,
         ref: n,
         orientation: "horizontal",
@@ -42,12 +42,12 @@ function f(e, t, n) {
         shouldFocusWrap: !0,
         linkBehavior: "override",
         keyboardNavigationBehavior: "tab"
-    }, t, n), [y, b] = (0, o.useState)(!1), {
+    }, t, n), [y, b] = (0, s.useState)(!1), {
         focusWithinProps: O
     } = (0, c.R)({
         onFocusWithinChange: b
-    }), v = (0, i.$)(e), A = (0, o.useRef)(t.collection.size);
-    return (0, o.useEffect)(() => {
+    }), v = (0, i.$)(e), A = (0, s.useRef)(t.collection.size);
+    return (0, s.useEffect)(() => {
         n.current && A.current > 0 && 0 === t.collection.size && y && n.current.focus(), A.current = t.collection.size
     }, [t.collection.size, y, n]), d.set(t, {
         onRemove: e.onRemove

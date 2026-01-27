@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(314116),
-    s = n(308528),
-    o = n(843472),
+    o = n(308528),
+    s = n(843472),
     l = n(155718),
     c = n(47167),
     u = n(994500),
@@ -101,9 +101,9 @@ let g = [...i()(_.Z86).values().map(e => ({
             _ = null != (n = null == (r = e.find(e => "silent" === e.name)) ? void 0 : r.value) && n;
         async function m() {
             if (null != i) try {
-                await s.A.closePrivateChannel(i.id, void 0, _)
+                await o.A.closePrivateChannel(i.id, void 0, _)
             } catch (e) {
-                o.A.sendBotMessage(i.id, h.intl.string(h.t["YOsuT/"]))
+                s.A.sendBotMessage(i.id, h.intl.string(h.t["YOsuT/"]))
             }
         }
         i.isManaged() && (f = h.intl.formatToPlainString(h.t.hVGjEW, {

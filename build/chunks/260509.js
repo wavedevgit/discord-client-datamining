@@ -17,8 +17,8 @@ n.d(t, {
 var r = n(867051),
     i = n(329972),
     a = n(486020),
-    s = n(661191),
-    o = n(240248),
+    o = n(661191),
+    s = n(240248),
     l = n(652215);
 let c = "Guild",
     u = new Set([l.ftr.EXPLICIT, l.ftr.AGE_RESTRICTED]),
@@ -74,7 +74,7 @@ function f(e, t) {
 }
 
 function p(e) {
-    return (0, o.oN)(e.name)
+    return (0, s.oN)(e.name)
 }
 
 function _(e, t) {
@@ -91,7 +91,7 @@ function m(e) {
 }
 
 function g(e) {
-    return s.default.castGuildIdAsEveryoneGuildRoleId(e.id)
+    return o.default.castGuildIdAsEveryoneGuildRoleId(e.id)
 }
 
 function E(e, t) {

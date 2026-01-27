@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(687123),
     i = n(508602),
     a = n(843472),
-    s = n(155718),
-    o = n(439372),
+    o = n(155718),
+    s = n(439372),
     l = n(128265),
     c = n(626584),
     u = n(473503),
@@ -38,10 +38,10 @@ function I(e) {
     var t, n, r;
     let {
         channelId: a,
-        message: s
-    } = e, o = h.A.getMessage(a, s.id);
-    if ((null == o || null == (n = o.embeds) || null == (t = n[0]) ? void 0 : t.type) === i.A.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
-        let e = null == (r = o.embeds[0].fields) ? void 0 : r.find(e => e.rawName === y.uN.CONTENT_TYPE);
+        message: o
+    } = e, s = h.A.getMessage(a, o.id);
+    if ((null == s || null == (n = s.embeds) || null == (t = n[0]) ? void 0 : t.type) === i.A.AGE_VERIFICATION_SYSTEM_NOTIFICATION) {
+        let e = null == (r = s.embeds[0].fields) ? void 0 : r.find(e => e.rawName === y.uN.CONTENT_TYPE);
         (null == e ? void 0 : e.rawValue) === y.Wv.ERROR ? (f.A.showFailedToast(O.OB.TIGGER_PAWTECT_ERROR), (0, E.Vh)(E.oQ.ERROR)) : (null == e ? void 0 : e.rawValue) === y.Wv.VERIFIED_ADULT ? (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_ADULT)) : (null == e ? void 0 : e.rawValue) === y.Wv.VERIFIED_TEEN && (f.A.showSuccessToast(O.OB.TIGGER_PAWTECT_VERIFIED), (0, E.Vh)(E.oQ.VERIFIED_TEEN))
     }
 }
@@ -57,7 +57,7 @@ function T(e) {
     let t = _.A.getChannel(e);
     ((null == t ? void 0 : t.type) === b.rbe.GUILD_FORUM || (null == t ? void 0 : t.type) === b.rbe.GUILD_MEDIA) && (0, u.kB)(t)
 }
-class C extends o.A {
+class C extends s.A {
     constructor(...e) {
         super(...e), v(this, "_previousAgeVerificationStatus", null), v(this, "handlePostConnectionOpen", () => {
             var e, t;
@@ -66,7 +66,7 @@ class C extends o.A {
             var t;
             let {
                 user: n
-            } = e, i = null != (t = (0, g.transformUser)(n).ageVerificationStatus) ? t : null, a = this._previousAgeVerificationStatus !== i && i === s.Tk.VERIFIED_ADULT, o = (0, p.o)("age-verification-manager"), c = a && ((0, d.d6)(r.t.AGE_GATED_SPACES) || o);
+            } = e, i = null != (t = (0, g.transformUser)(n).ageVerificationStatus) ? t : null, a = this._previousAgeVerificationStatus !== i && i === o.Tk.VERIFIED_ADULT, s = (0, p.o)("age-verification-manager"), c = a && ((0, d.d6)(r.t.AGE_GATED_SPACES) || s);
             try {
                 if (c) {
                     let e = m.A.getChannelId(),

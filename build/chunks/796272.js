@@ -2,7 +2,7 @@
 /** chunk id: 796272, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    getForceSdrEmojisStickersConfig: () => s
+    getForceSdrEmojisStickersConfig: () => o
 });
 var r = n(945810),
     i = n(332628);
@@ -22,7 +22,7 @@ let a = (0, r.mj)({
     }
 });
 
-function s(e) {
+function o(e) {
     let {
         location: t
     } = e, {

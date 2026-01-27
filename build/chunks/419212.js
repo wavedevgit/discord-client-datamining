@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(198982);
+    o = n(198982);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -35,14 +35,14 @@ function p(e) {
     let {
         message: t
     } = e;
-    l = new s.Ey(t)
+    l = new o.Ey(t)
 }
 
 function _(e) {
     let {
         message: t
     } = e;
-    l = new s.Ey(t)
+    l = new o.Ey(t)
 }
 
 function h() {
@@ -76,7 +76,7 @@ class b extends(r = i.Ay.Store) {
         return e === u ? c : null
     }
 }
-o(b, "displayName", "PremiumPaymentModalStore");
+s(b, "displayName", "PremiumPaymentModalStore");
 let O = new b(a.h, {
     PREMIUM_PAYMENT_SUBSCRIBE_FAIL: d,
     PREMIUM_PAYMENT_UPDATE_FAIL: d,

@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var a = n(397927),
-    l = n(780964),
+var l = n(397927),
+    a = n(780964),
     r = n(840065),
     o = n(257110),
     s = n(706069),
@@ -20,27 +20,27 @@ let p = e => {
         classificationId: p,
         source: m
     } = e, h = (0, o.A)(), f = () => {
-        n(), (0, r.openUserSettings)(l.X.ACCOUNT_PANEL, {
+        n(), (0, r.openUserSettings)(a.X.ACCOUNT_PANEL, {
             section: c.nc_.ACCOUNT,
             subsection: d.H.PRIVACY_AND_SAFETY_STANDING
         })
     };
-    return (0, i.jsxs)(a.EOs, {
+    return (0, i.jsxs)(l.EOs, {
         className: u.CR,
         transitionState: t,
         parentComponent: "ClassificationDetailModal",
         "data-migration-pending": !0,
         children: [(0, i.jsx)("div", {
             className: u.Hc,
-            children: (0, i.jsx)(a.s_y, {
+            children: (0, i.jsx)(l.s_y, {
                 "data-migration-pending": !0,
                 className: u.g8,
                 onClick: n
             })
-        }), (0, i.jsx)(a.$mQ, {
+        }), (0, i.jsx)(l.$mQ, {
             "data-migration-pending": !0,
             className: u.jE,
-            children: h ? (0, i.jsx)(a.y$y, {}) : (0, i.jsx)(s.A, {
+            children: h ? (0, i.jsx)(l.y$y, {}) : (0, i.jsx)(s.A, {
                 classificationId: p,
                 source: m,
                 onError: f,

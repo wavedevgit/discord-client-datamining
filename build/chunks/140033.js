@@ -27,8 +27,8 @@ var r = n(627968),
     S = n(500897),
     N = n(225180),
     A = n(117265),
-    I = n(365003),
-    C = n(680127),
+    C = n(365003),
+    I = n(680127),
     E = n(858192),
     T = n(49999),
     P = n(294726),
@@ -120,7 +120,7 @@ function U(e) {
 function B(e) {
     let {
         instance: t
-    } = e, n = (0, I.A)(t.providerType, t.gameServerPanelUrl);
+    } = e, n = (0, C.A)(t.providerType, t.gameServerPanelUrl);
     return (0, r.jsx)(u.Button, {
         fullWidth: !0,
         text: w.intl.string(P.default.bBkeMs),
@@ -137,12 +137,12 @@ function W(e) {
     let {
         guildId: t,
         instance: n
-    } = e, i = (0, A.A)(n), [p, M] = (0, f.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, o.bG)([_.A], () => _.A.getDetectableGame(n.gameId)), F = (0, I.A)(n.providerType, n.gameServerPanelUrl), q = a.useCallback(() => {
+    } = e, i = (0, A.A)(n), [p, M] = (0, f.kn)([c.M.GAME_SERVER_HOSTING_PORTKEY_TOS]), W = p !== c.M.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, o.bG)([_.A], () => _.A.getDetectableGame(n.gameId)), F = (0, C.A)(n.providerType, n.gameServerPanelUrl), q = a.useCallback(() => {
         var e;
-        (0, b.Ai)(t, n.gameId, null != (e = null == V ? void 0 : V.name) ? e : "", n.id), W || null == n.providerType ? (0, C.A)(t, n) : (0, E.A)({
+        (0, b.Ai)(t, n.gameId, null != (e = null == V ? void 0 : V.name) ? e : "", n.id), W || null == n.providerType ? (0, I.A)(t, n) : (0, E.A)({
             provider: n.providerType,
             onAccept: () => {
-                M(T.i.TAKE_ACTION), (0, C.A)(t, n)
+                M(T.i.TAKE_ACTION), (0, I.A)(t, n)
             }
         })
     }, [n, W, M, t, null == V ? void 0 : V.name]), {

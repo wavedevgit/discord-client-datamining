@@ -2,7 +2,7 @@
 /** chunk id: 997630, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => s,
+    E: () => o,
     a: () => a
 });
 var r = n(73153),
@@ -16,7 +16,7 @@ function a(e) {
     })
 }
 
-function s() {
+function o() {
     var e, t;
     null == (t = i.A.getMediaEngine()) || null == (e = t.releaseNativeDesktopVideoSourcePickerStream) || e.call(t), r.h.dispatch({
         type: "NATIVE_SCREEN_SHARE_PICKER_RELEASE"

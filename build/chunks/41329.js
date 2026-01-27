@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(990078),
     c = n(397927),
     u = n(557158),
@@ -35,20 +35,20 @@ function E(e) {
         optionStates: n,
         onOptionClick: a
     } = e, {
-        requiredOptions: s,
-        setOptionalOptions: o,
+        requiredOptions: o,
+        setOptionalOptions: s,
         unsetOptionalOptions: u
     } = i.useMemo(() => {
         var e, r, i, a;
-        let s = null != (e = null == (i = t.options) ? void 0 : i.filter(e => e.required)) ? e : [],
-            o = null != (r = null == (a = t.options) ? void 0 : a.filter(e => !e.required)) ? r : [];
+        let o = null != (e = null == (i = t.options) ? void 0 : i.filter(e => e.required)) ? e : [],
+            s = null != (r = null == (a = t.options) ? void 0 : a.filter(e => !e.required)) ? r : [];
         return {
-            requiredOptions: s,
-            setOptionalOptions: o.filter(e => {
+            requiredOptions: o,
+            setOptionalOptions: s.filter(e => {
                 var t;
                 return null == n || null == (t = n[e.name]) ? void 0 : t.hasValue
             }),
-            unsetOptionalOptions: o.filter(e => {
+            unsetOptionalOptions: s.filter(e => {
                 var t;
                 return !(null == n || null == (t = n[e.name]) ? void 0 : t.hasValue)
             })
@@ -59,12 +59,12 @@ function E(e) {
             variant: "text-sm/normal",
             children: e.displayName
         }, e.name))
-    }), f = s.map(e => g(e, null == n ? void 0 : n[e.name], a)), p = o.length > 0 ? (0, r.jsxs)(r.Fragment, {
+    }), f = o.map(e => g(e, null == n ? void 0 : n[e.name], a)), p = s.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.Heading, {
             className: h.Ki,
             variant: "heading-deprecated-12/semibold",
             children: _.intl.string(_.t["5C107K"])
-        }), o.map(e => g(e, null == n ? void 0 : n[e.name], a))]
+        }), s.map(e => g(e, null == n ? void 0 : n[e.name], a))]
     }) : null, E = u.length > 0 ? (0, r.jsx)(l.m, {
         __unsupportedReactNodeAsText: d,
         "aria-label": !1,
@@ -73,7 +73,7 @@ function E(e) {
             className: h.kP,
             color: "text-muted",
             variant: "text-sm/normal",
-            children: 0 === o.length ? _.intl.formatToPlainString(_.t["0mI72g"], {
+            children: 0 === s.length ? _.intl.formatToPlainString(_.t["0mI72g"], {
                 count: u.length
             }) : _.intl.formatToPlainString(_.t.BP8N0K, {
                 count: u.length
@@ -108,14 +108,14 @@ function y(e) {
         I = null != f ? null == y ? void 0 : y[f] : null;
     l = null != I && (null == (n = I.lastValidationResult) ? void 0 : n.success) === !1 ? null != (a = I.lastValidationResult.error) ? a : "" : null;
     let S = g && null != O ? (0, p.Rg)(O) : null,
-        T = (0, o.bG)([d.Ay], () => {
+        T = (0, s.bG)([d.Ay], () => {
             if (null != _.guild_id && (null == O ? void 0 : O.botId) != null) {
                 var e;
                 return null == (e = d.Ay.getMember(_.guild_id, O.botId)) ? void 0 : e.nick
             }
         });
     return (0, r.jsxs)("div", {
-        className: s()(h.iE, v ? null : h.r9),
+        className: o()(h.iE, v ? null : h.r9),
         children: [null != S ? (0, r.jsx)(S, {
             className: h.Sl,
             channel: _,
@@ -135,7 +135,7 @@ function y(e) {
                     onOptionClick: b
                 }) : null]
             }), (0, r.jsx)(u.Nd, {
-                className: s()(h.h_, null != l ? h.z3 : null),
+                className: o()(h.h_, null != l ? h.z3 : null),
                 children: null != (t = null != l ? l : null == A ? void 0 : A.displayDescription) ? t : c.displayDescription
             })]
         }), (0, r.jsx)(u.Aq, {

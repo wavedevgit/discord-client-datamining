@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(405139),
-    o = n(156312),
+    o = n(405139),
+    s = n(156312),
     l = n(19311),
     c = n(869177),
     u = n(252561),
@@ -52,13 +52,13 @@ function _(e) {
                 type: a.tVU.PULSING_ELLIPSIS
             })
         };
-    return e.renderStepBody ? (0, r.jsx)(c.V, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(s.Mv, p({}, n, e)) : (0, r.jsx)(s.dP, p({}, n, e))
+    return e.renderStepBody ? (0, r.jsx)(c.V, p({}, n, e)) : "applePay" === e.paymentRequestWallet ? (0, r.jsx)(o.Mv, p({}, n, e)) : (0, r.jsx)(o.dP, p({}, n, e))
 }
 
 function h(e) {
     let {
         paymentRequestWallet: t
-    } = e, n = i.useRef(null), [a, s] = i.useState(!1), o = () => {
+    } = e, n = i.useRef(null), [a, o] = i.useState(!1), s = () => {
         null != n.current && n.current.show()
     };
     return (0, r.jsx)(u.e_, {
@@ -66,7 +66,7 @@ function h(e) {
             primaryCTA: l.A.CTAType.CONTINUE,
             primaryText: d.intl.string("applePay" === t ? d.t.WoXvJL : d.t.wnVVr0),
             primaryDisabled: !a,
-            onPrimary: () => o(),
+            onPrimary: () => s(),
             onBack: () => {}
         }),
         children: (0, r.jsx)(_, {
@@ -74,7 +74,7 @@ function h(e) {
             renderStepBody: !0,
             paymentRequestWallet: t,
             paymentRequestRef: n,
-            onValidPaymentRequest: () => s(!0)
+            onValidPaymentRequest: () => o(!0)
         })
     })
 }
@@ -84,7 +84,7 @@ let m = {
         let {
             paymentRequestWallet: t
         } = e;
-        return (0, r.jsx)(o.PaymentContextProvider, {
+        return (0, r.jsx)(s.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,

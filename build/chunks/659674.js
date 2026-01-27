@@ -5,7 +5,7 @@ n.d(t, {
     G8: () => R,
     NV: () => C,
     V: () => w,
-    ax: () => x,
+    ax: () => L,
     ds: () => P,
     fK: () => I,
     fS: () => D,
@@ -15,8 +15,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(989349),
-    s = n.n(a),
-    o = n(317097),
+    o = n.n(a),
+    s = n(317097),
     l = n(665260),
     c = n(661191),
     u = n(652215),
@@ -52,8 +52,8 @@ function A(e) {
         width: r,
         height: i,
         placeholder: a,
-        placeholder_version: s,
-        description: o,
+        placeholder_version: o,
+        description: s,
         flags: c,
         content_type: d
     } = e;
@@ -63,8 +63,8 @@ function A(e) {
         width: r,
         height: i,
         placeholder: a,
-        placeholderVersion: s,
-        description: o,
+        placeholderVersion: o,
+        description: s,
         srcIsAnimated: (0, l.Lt)(null != c ? c : 0, u.qNw.IS_ANIMATED),
         flags: null != c ? c : 0,
         contentType: null != d ? d : void 0
@@ -94,7 +94,7 @@ function I(e, t, n) {
         }), null != n.provider && null != n.provider.name && (r.provider = {
             name: n.provider.name,
             url: n.provider.url
-        }), null != n.timestamp && (r.timestamp = s()(new Date(n.timestamp))), null != n.color && (r.color = (0, o.$k)(n.color, !0)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
+        }), null != n.timestamp && (r.timestamp = o()(new Date(n.timestamp))), null != n.color && (r.color = (0, s.$k)(n.color, !0)), null != n.thumbnail && O(n.thumbnail)) switch (r.type) {
         case u.Auw.ARTICLE:
         case u.Auw.IMAGE:
             r.image = A(n.thumbnail);
@@ -188,6 +188,6 @@ function D(e, t) {
     return e.isPrivate() ? !e.isManaged() : t.can(u.xBc.EMBED_LINKS, e)
 }
 
-function x(e) {
+function L(e) {
     return "" !== e.content || e.messageSnapshots.some(e => "" !== e.message.content || e.message.attachments.length > 0)
 }

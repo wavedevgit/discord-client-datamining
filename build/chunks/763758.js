@@ -8,7 +8,7 @@ var r = n(627968),
     i = n(64700),
     a = n(397927);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends i.PureComponent {
+class s extends i.PureComponent {
     render() {
         let {
             text: e,
@@ -32,7 +32,7 @@ class o extends i.PureComponent {
         })
     }
     constructor(...e) {
-        super(...e), s(this, "handleClick", () => {
+        super(...e), o(this, "handleClick", () => {
             let {
                 onClick: e,
                 index: t
@@ -46,7 +46,7 @@ class l extends i.PureComponent {
         let e = this.props.artists.split("; ");
         if (!this.props.canOpen) return e.join(", ");
         let t = e.length - 1;
-        return e.map((e, n) => (0, r.jsx)(o, {
+        return e.map((e, n) => (0, r.jsx)(s, {
             text: e,
             index: n,
             lastItem: n === t,
@@ -55,7 +55,7 @@ class l extends i.PureComponent {
         }, "spotify-artist-".concat(n)))
     }
     constructor(...e) {
-        super(...e), s(this, "handleOpenSpotifyArtist", e => {
+        super(...e), o(this, "handleOpenSpotifyArtist", e => {
             let {
                 onOpenSpotifyArtist: t
             } = this.props;

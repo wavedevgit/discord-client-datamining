@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(397927),
     c = n(235986),
     u = n(31582);
@@ -37,14 +37,14 @@ class _ extends(r = a.Component) {
             doNotAnimate: a
         } = this.props;
         return "2" === e ? (0, i.jsxs)("div", {
-            className: o()(u.ce, u.jO, n),
+            className: s()(u.ce, u.jO, n),
             children: [(0, i.jsxs)(c.A, {
                 children: [(0, i.jsx)("div", {
-                    className: o()(u.RH, p[t], u.hC)
+                    className: s()(u.RH, p[t], u.hC)
                 }), (0, i.jsx)("div", {
-                    className: o()(u.RH, p[t], u.hC)
+                    className: s()(u.RH, p[t], u.hC)
                 }), (0, i.jsx)("div", {
-                    className: o()(u.RH, p[t])
+                    className: s()(u.RH, p[t])
                 })]
             }), (0, i.jsx)(c.A, {
                 grow: 1,
@@ -54,12 +54,12 @@ class _ extends(r = a.Component) {
                 }
             })]
         }) : (0, i.jsxs)(c.A, {
-            className: o()(u.qf, !a && u.lN, n),
+            className: s()(u.qf, !a && u.lN, n),
             children: [(0, i.jsx)("div", {
-                className: o()(u.RH, p[t], r)
+                className: s()(u.RH, p[t], r)
             }), (0, i.jsx)(c.A, {
                 grow: 1,
-                className: o()(u.gM, r),
+                className: s()(u.gM, r),
                 style: {
                     maxWidth: this.placeholderMaxWidth
                 }

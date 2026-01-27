@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(650682),
     i = n(241634),
     a = n(825913),
-    s = n(129844),
-    o = n(447509),
+    o = n(129844),
+    s = n(447509),
     l = n(257537),
     c = n(123375),
     u = n(357710),
@@ -29,7 +29,7 @@ var r = n(650682),
 let A = (0, v.createContext)(null),
     I = (0, v.createContext)(null),
     S = (0, v.forwardRef)(function(e, t) {
-        return [e, t] = (0, a.JT)(e, t, A), v.createElement(o.DN.Provider, {
+        return [e, t] = (0, a.JT)(e, t, A), v.createElement(s.DN.Provider, {
             value: null
         }, v.createElement(m.GQ, {
             content: e.children
@@ -81,7 +81,7 @@ function T({
         style: e.style
     }, v.createElement(a.Kq, {
         values: [
-            [s.I, {
+            [o.I, {
                 ...C,
                 elementType: "span",
                 ref: m
@@ -90,7 +90,7 @@ function T({
                 ...T,
                 ref: i
             }],
-            [o.DN, b],
+            [s.DN, b],
             [d.h, {
                 slots: {
                     description: N,
@@ -101,7 +101,7 @@ function T({
     }, e.children))
 }
 let C = (0, v.forwardRef)(function(e, t) {
-    return (0, v.useContext)(o.DN) ? v.createElement(N, {
+    return (0, v.useContext)(s.DN) ? v.createElement(N, {
         props: e,
         forwardedRef: t
     }) : v.createElement(m.pM, e)
@@ -111,11 +111,11 @@ function N({
     props: e,
     forwardedRef: t
 }) {
-    let n = (0, v.useContext)(o.DN),
+    let n = (0, v.useContext)(s.DN),
         {
             CollectionRoot: r
         } = (0, v.useContext)(i.zL),
-        [s, l] = (0, a.JT)({}, t, I),
+        [o, l] = (0, a.JT)({}, t, I),
         {
             focusProps: c,
             isFocused: d,
@@ -138,7 +138,7 @@ function N({
             global: !0
         });
     return v.createElement("div", {
-        ...(0, y.v)(g, h, s, c),
+        ...(0, y.v)(g, h, o, c),
         ref: l,
         "data-empty": 0 === n.collection.size || void 0,
         "data-focused": d || void 0,
@@ -149,7 +149,7 @@ function N({
     })))
 }
 let w = (0, m.KU)(g._B, (e, t, n) => {
-    let s = (0, v.useContext)(o.DN),
+    let o = (0, v.useContext)(s.DN),
         l = (0, b.U)(t),
         {
             focusProps: u,
@@ -164,7 +164,7 @@ let w = (0, m.KU)(g._B, (e, t, n) => {
             ...O
         } = (0, _.O)({
             item: n
-        }, s, l),
+        }, o, l),
         {
             hoverProps: A,
             isHovered: I
@@ -183,8 +183,8 @@ let w = (0, m.KU)(g._B, (e, t, n) => {
                 ...O,
                 isFocusVisible: d,
                 isHovered: I,
-                selectionMode: s.selectionManager.selectionMode,
-                selectionBehavior: s.selectionManager.selectionBehavior
+                selectionMode: o.selectionManager.selectionMode,
+                selectionBehavior: o.selectionManager.selectionBehavior
             }
         });
     (0, v.useEffect)(() => {
@@ -203,7 +203,7 @@ let w = (0, m.KU)(g._B, (e, t, n) => {
         "data-focus-visible": d || void 0,
         "data-pressed": O.isPressed || void 0,
         "data-allows-removing": O.allowsRemoving || void 0,
-        "data-selection-mode": "none" === s.selectionManager.selectionMode ? void 0 : s.selectionManager.selectionMode
+        "data-selection-mode": "none" === o.selectionManager.selectionMode ? void 0 : o.selectionManager.selectionMode
     }, v.createElement("div", {
         ...m,
         style: {

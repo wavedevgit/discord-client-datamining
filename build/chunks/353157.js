@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(575593),
     a = n(397927),
-    s = n(929283),
-    o = n(550111),
+    o = n(929283),
+    s = n(550111),
     l = n(331402),
     c = n(242640),
     u = n(752276);
@@ -36,7 +36,7 @@ function p(e) {
         case i.R.AVATAR_DECORATION:
             return (0, r.jsx)("div", {
                 className: u._P,
-                children: (0, r.jsx)(s.i, {
+                children: (0, r.jsx)(o.i, {
                     item: h,
                     user: n,
                     isHighlighted: p,
@@ -48,7 +48,7 @@ function p(e) {
                 className: u.M4,
                 children: [(0, r.jsx)("div", {
                     className: u.Qt,
-                    children: (0, r.jsx)(o.A, {
+                    children: (0, r.jsx)(s.A, {
                         user: n,
                         nameplate: h,
                         isHighlighted: p,
@@ -60,7 +60,7 @@ function p(e) {
                 }), (0, r.jsx)("div", {
                     className: u.BM,
                     "aria-hidden": !0,
-                    children: (0, r.jsx)(o.A, {
+                    children: (0, r.jsx)(s.A, {
                         user: n,
                         nameplate: h,
                         isHighlighted: p,

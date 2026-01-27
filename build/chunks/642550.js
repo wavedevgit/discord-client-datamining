@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(942381),
-    s = n(602034),
-    o = n(397927),
+    o = n(602034),
+    s = n(397927),
     l = n(850992),
     c = n(151271),
     u = n(256449),
@@ -44,7 +44,7 @@ let _ = i.forwardRef(function(e, t) {
         }
     }, [y]), (0, r.jsx)("div", {
         className: p.i,
-        children: (0, r.jsx)(o.IWV, {
+        children: (0, r.jsx)(s.IWV, {
             autoFocus: m,
             disabled: !m,
             query: E,
@@ -57,7 +57,7 @@ let _ = i.forwardRef(function(e, t) {
                 "aria-haspopup": "grid",
                 "aria-controls": d.lq,
                 "aria-expanded": !0,
-                "aria-activedescendant": (0, s.Aq)(d.lq, O.columnIndex, O.rowIndex)
+                "aria-activedescendant": (0, o.Aq)(d.lq, O.columnIndex, O.rowIndex)
             }
         })
     })

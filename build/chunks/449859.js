@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(405269),
     c = n(355938),
     u = n(943815),
@@ -75,13 +75,13 @@ let E = i.memo(function(e) {
             timeFormatted: S
         }) : S, [O, S]);
         return (0, r.jsx)("span", {
-            className: s()(n, C, {
+            className: o()(n, C, {
                 [f.vE]: !0,
                 [f.ET]: h,
                 [f.YQ]: E,
                 [f.CC]: m
             }),
-            children: null == v ? (0, r.jsx)(o.m, {
+            children: null == v ? (0, r.jsx)(s.m, {
                 asContainer: !0,
                 __unsupportedReactNodeAsText: (0, l.i$)(I, "LLLL"),
                 "aria-label": N,
@@ -113,12 +113,12 @@ let E = i.memo(function(e) {
             timeFormatted: n,
             children: i,
             compact: a,
-            timestamp: s,
-            id: o
+            timestamp: o,
+            id: s
         } = e;
         return (0, r.jsx)("time", m(_({}, t), {
-            id: o,
-            dateTime: s.toISOString(),
+            id: s,
+            dateTime: o.toISOString(),
             children: null != i ? i : (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("i", {
                     className: f.me,

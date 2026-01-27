@@ -2,7 +2,7 @@
 /** chunk id: 769054, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    h: () => s
+    h: () => o
 });
 var r = n(949355),
     i = n(102609);
@@ -13,6 +13,6 @@ let a = {
     type: r.FZ.OVERRIDE
 };
 
-function s(e) {
+function o(e) {
     return e.system !== i.l5.APEX ? e.variants : [a].concat(e.variants)
 }

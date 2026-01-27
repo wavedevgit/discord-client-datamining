@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     bm: () => a,
-    yG: () => s
+    yG: () => o
 });
 let r = {
         emitDefaultValues: !1,
@@ -19,6 +19,6 @@ function a(e) {
     return e ? Object.assign(Object.assign({}, i), e) : i
 }
 
-function s(e) {
+function o(e) {
     return e ? Object.assign(Object.assign({}, r), e) : r
 }

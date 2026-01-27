@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(392054),
     c = n(500049),
     u = n(933840),
@@ -36,14 +36,14 @@ function h(e) {
             className: _.wx,
             children: [(0, r.jsx)(f.A, {
                 className: _.Gv
-            }), (0, r.jsx)(o.Heading, {
+            }), (0, r.jsx)(s.Heading, {
                 variant: "heading-md/medium",
                 color: "text-strong",
                 children: a
             })]
-        }), (0, r.jsx)(o.HOs, {
+        }), (0, r.jsx)(s.HOs, {
             children: (0, r.jsx)("div", {
-                className: s()({
+                className: o()({
                     [_.wf]: h !== d.r0.ROW,
                     [_.Ge]: h === d.r0.ROW
                 }),
@@ -51,7 +51,7 @@ function h(e) {
                     let {
                         application: i,
                         installOnDemand: a,
-                        showsPromoted: s
+                        showsPromoted: o
                     } = e;
                     return (0, r.jsx)(b, {
                         context: t,
@@ -63,7 +63,7 @@ function h(e) {
                         installOnDemand: a,
                         isOneClickCTA: y,
                         sectionOverallPosition: E,
-                        showsPromoted: s
+                        showsPromoted: o
                     }, i.id)
                 })
             })

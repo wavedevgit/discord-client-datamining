@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(357758),
     a = n(311907),
-    s = n(73153);
+    o = n(73153);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -57,7 +57,7 @@ function f(e) {
             t.push(e), c.set(n.type, t)
         }
 }
-o(d, "displayName", "AVErrorStore");
-let p = new d(s.h, {
+s(d, "displayName", "AVErrorStore");
+let p = new d(o.h, {
     ACTIVE_AV_ERRORS_CHANGED: f
 })

@@ -4,7 +4,7 @@
 n.d(t, {
     CH: () => a,
     H5: () => i,
-    NQ: () => s
+    NQ: () => o
 });
 var r = n(64700),
     i = function(e) {
@@ -23,7 +23,7 @@ var r = n(64700),
             }
     };
 
-function s(e) {
+function o(e) {
     var t = (0, r.useRef)(void 0);
     return (0, r.useEffect)(function() {
         t.current = e

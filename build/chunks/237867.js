@@ -10,8 +10,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(724609),
-    s = n(580630),
-    o = n(500345),
+    o = n(580630),
+    s = n(500345),
     l = n(922975),
     c = n(380203),
     u = n(985018),
@@ -55,13 +55,13 @@ let _ = e => {
             variant: "heading-xl/semibold",
             className: d.Us,
             tag: "div",
-            children: (0, s.$g)(g.price, g.currency)
+            children: (0, o.$g)(g.price, g.currency)
         }), (0, r.jsx)(i.Text, {
             variant: "text-xs/normal",
             color: "interactive-text-default",
             className: d.gV,
             children: u.intl.format(u.t.isLGyX, {
-                period: (0, o.cV)({
+                period: (0, s.cV)({
                     interval: g.interval,
                     interval_count: g.interval_count
                 })

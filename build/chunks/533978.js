@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 533978, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => x
@@ -142,8 +142,8 @@ function x(e) {
             disabled: L,
             onContextMenu: W,
             onClick: z,
-            onMouseEnter: () => {
-                H(), T()
+            onMouseEnter: e => {
+                T(), "focus" !== e.type && H()
             },
             onMouseLeave: () => {
                 null == E && (K(), P())

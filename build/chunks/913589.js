@@ -2,7 +2,7 @@
 /** chunk id: 913589, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(284009),
     i = n.n(r);
@@ -15,7 +15,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s {
+class o {
     setExporter(e) {
         this.exporter = e
     }

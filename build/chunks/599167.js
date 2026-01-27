@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 599167, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(380682),
     p = n(994870),
     f = n(400281),
-    b = n(652215),
-    h = n(705751),
+    h = n(652215),
+    b = n(705751),
     x = n(280215);
 
 function j() {
@@ -26,13 +26,13 @@ function j() {
         {
             application: n,
             loading: j
-        } = (0, o.A)(null == t ? void 0 : t.id, h.S7.GUILD_ROLE_SUBSCRIPTIONS),
+        } = (0, o.A)(null == t ? void 0 : t.id, b.S7.GUILD_ROLE_SUBSCRIPTIONS),
         _ = i.useRef(null),
         O = (0, u.A)(null != t ? t : void 0);
     i.useEffect(() => {
         null != t && (0, g.aV)(t) && (0, c.Dr)(s.M.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
     }, [t]);
-    let v = (null == t ? void 0 : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.features.has(b.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
+    let v = (null == t ? void 0 : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE)) === !1 && (null == t ? void 0 : t.features.has(h.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === !1;
     return e = null == t || j ? (0, r.jsx)(a.y$y, {}) : null != O ? (0, r.jsx)(p.A, {
         guild: t,
         config: O

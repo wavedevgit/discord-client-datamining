@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(141468),
     i = n(383233),
     a = n(222823),
-    s = n(661191);
+    o = n(661191);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -90,19 +90,19 @@ class d {
         let n = e.channel_id,
             a = this.messages.get(n);
         if ((null == a || null == (t = a.message) ? void 0 : t.id) !== e.id) return;
-        let s = a.message instanceof i.Ay ? (0, r.IU)(a.message, e) : (0, r.SP)(a.message, e);
+        let o = a.message instanceof i.Ay ? (0, r.IU)(a.message, e) : (0, r.SP)(a.message, e);
         this.messages.set(n, u(l({}, a), {
-            message: s
+            message: o
         }))
     }
     delete(e) {
         this.messages.delete(e)
     }
     constructor() {
-        o(this, "localNeeded", !0), o(this, "messages", new Map)
+        s(this, "localNeeded", !0), s(this, "messages", new Map)
     }
 }
 
 function f(e, t) {
-    return null == t || s.default.compare(e, t) > 0
+    return null == t || o.default.compare(e, t) > 0
 }

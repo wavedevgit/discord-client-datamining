@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(575593),
-    s = n(635358),
-    o = n(990078),
+    o = n(635358),
+    s = n(990078),
     l = n(397927),
     c = n(688810),
     u = n(44120),
@@ -49,7 +49,7 @@ let E = e => {
             giftingOrigin: m.vQ.SHOP_PAGE,
             analyticsLocations: A,
             returnRef: y,
-            variantsReturnStyle: s.g.VARIANTS_GROUP,
+            variantsReturnStyle: o.g.VARIANTS_GROUP,
             onClose: null != b ? e => {
                 e && b()
             } : void 0
@@ -61,7 +61,7 @@ let E = e => {
         onClick: C,
         text: g.intl.string(g.t.gmnzqM),
         fullWidth: !0
-    }) : (0, r.jsx)(o.m, {
+    }) : (0, r.jsx)(s.m, {
         text: g.intl.string(g.t["JCFN/y"]),
         delay: O,
         children: (0, r.jsx)(l.K0, {

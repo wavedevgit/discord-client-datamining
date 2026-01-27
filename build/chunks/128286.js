@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(709562),
+    o = n(397927),
+    s = n(709562),
     l = n(985018),
     c = n(932752);
 
@@ -61,10 +61,10 @@ function _(e) {
         onClosePopout: n,
         onOpenPopout: i
     } = e, u = f(e, ["popoutOpen", "onClosePopout", "onOpenPopout"]), p = t ? l.intl.string(l.t["7Dwcnj"]) : l.intl.string(l.t.JzWezz);
-    return (0, r.jsx)(o.A, d({
+    return (0, r.jsx)(s.A, d({
         label: p,
         onClick: t ? n : i,
-        iconComponent: s.tfB,
+        iconComponent: o.tfB,
         iconClassName: a()({
             [c.r]: t
         })

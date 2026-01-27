@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(73392),
     c = n(291594),
     u = n(959);
@@ -70,9 +70,9 @@ function h(e) {
         onPopoutClosed: p,
         children: e => (0, r.jsx)(c.A, _(f({}, e), {
             tag: "span",
-            children: (0, r.jsx)(o.EYj, {
+            children: (0, r.jsx)(s.EYj, {
                 ref: g,
-                className: h ? s()(d, E) : d,
+                className: h ? o()(d, E) : d,
                 variant: "text-sm/semibold",
                 color: "text-strong",
                 lineClamp: 1,

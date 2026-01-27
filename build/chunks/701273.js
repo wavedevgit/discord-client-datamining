@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(481613),
     i = n.n(r),
     a = n(400253),
-    s = n(49485),
-    o = n(80703),
+    o = n(49485),
+    s = n(80703),
     l = n(803306),
     c = n(976860),
     u = n(961350),
@@ -21,11 +21,11 @@ async function h(e) {
     let r = null == (t = i().os) ? void 0 : t.family;
     if ("Android" === r || "iOS" === r) {
         let t = null != (n = u.default.getFingerprint()) ? n : u.default.getId(),
-            r = (0, s.I_)();
+            r = (0, o.I_)();
         if (null == t && u.default.isAuthenticated()) try {
             await (0, l.rQ)(), t = u.default.getId()
         } catch (e) {}
-        return (0, s.Ay)((0, a.BH)(), {
+        return (0, o.Ay)((0, a.BH)(), {
             utmSource: e,
             fingerprint: t,
             attemptId: r
@@ -35,9 +35,9 @@ async function h(e) {
 }
 async function m(e) {
     let t = await h(e),
-        n = (0, s.X7)(t);
+        n = (0, o.X7)(t);
     null != n && f.default.track(_.HAw.DEEP_LINK_CLICKED, {
-        fingerprint: (0, o.v)(n.fingerprint),
+        fingerprint: (0, s.v)(n.fingerprint),
         attempt_id: n.attemptId,
         source: n.utmSource
     }), p.A.launch(t, e => {

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(907961);
 
 function c(e, t, n) {
@@ -65,8 +65,8 @@ class d extends(r = a.PureComponent) {
         let {
             children: n,
             mirror: r,
-            paused: s,
-            component: o
+            paused: o,
+            component: s
         } = this.props;
         if (null == e) {
             if (null == n) return null;
@@ -77,8 +77,8 @@ class d extends(r = a.PureComponent) {
                 }
             }, e.props))
         }
-        return (0, i.jsx)(o, {
-            paused: s,
+        return (0, i.jsx)(s, {
+            paused: o,
             className: l.$_,
             streamId: e,
             onReady: t ? null : this.handleReady
@@ -90,7 +90,7 @@ class d extends(r = a.PureComponent) {
             className: t
         } = this.props;
         return (0, i.jsxs)("div", {
-            className: o()(l.Ki, t, {
+            className: s()(l.Ki, t, {
                 [l.e7]: e
             }),
             onDoubleClick: this.handleDoubleClick,

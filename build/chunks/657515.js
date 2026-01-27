@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(575593),
     i = n(517950),
     a = n(793574),
-    s = n(810498),
-    o = n(652215),
+    o = n(810498),
+    s = n(652215),
     l = n(985018),
     c = n(490111),
     u = n(910026),
@@ -48,7 +48,7 @@ let m = {
     },
     O = {
         rewards: [m, g, E],
-        rewardAssetIdMap: (0, s.t8)([m, g, E]),
+        rewardAssetIdMap: (0, o.t8)([m, g, E]),
         chatGiftIcon: {
             trinketsAnimation: {
                 getAnimationData: () => n.e("51463").then(n.bind(n, 347066)).then(e => {
@@ -69,13 +69,13 @@ let m = {
             description: () => l.intl.string(l.t["Wp+i/e"]),
             cta: () => l.intl.string(l.t.RzWDqY),
             analyticsLocation: a.A.GIFTING_PROMOTION_COACHMARK,
-            analyticsPage: o.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            analyticsPage: s.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         reminderNagbar: {
             description: () => l.intl.string(l.t.veQg0t),
             cta: () => l.intl.string(l.t.RzWDqY),
             analyticsLocation: a.A.SEASONAL_GIFTING_REMINDER_NAGBAR,
-            analyticsPage: o.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            analyticsPage: s.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         reminderNotice: {
             getImageUrl: (e, t) => t ? u.A : c.A,
@@ -83,7 +83,7 @@ let m = {
             description: () => l.intl.string(l.t["cE/UX7"]),
             cta: () => l.intl.string(l.t.RzWDqY),
             analyticsLocation: a.A.GIFTING_PROMOTION_COACHMARK,
-            analyticsPage: o.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
+            analyticsPage: s.liQ.PREMUIM_UPSELL_GIFTING_PROMOTION
         },
         planSelection: {
             heading: () => l.intl.string(l.t.OEtqpm),

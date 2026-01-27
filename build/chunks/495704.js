@@ -2,7 +2,7 @@
 /** chunk id: 495704, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    V: () => s
+    V: () => o
 });
 var r = n(945810);
 
@@ -32,7 +32,7 @@ function a(e) {
         }
     })
 }
-class s {
+class o {
     isEligibleForEditProfileUpsell() {
         return null != this.editProfileLinkedDc && null != this.editProfileUnlinkedDc
     }

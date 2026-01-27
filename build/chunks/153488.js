@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,14 +16,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -37,21 +37,21 @@ function f(e) {
     let {
         consents: t
     } = e;
-    null != t && (u = o({}, u, t), c = !0)
+    null != t && (u = s({}, u, t), c = !0)
 }
 
 function p(e) {
     let {
         consents: t
     } = e;
-    u = o({}, t), l = !0
+    u = s({}, t), l = !0
 }
 
 function _(e) {
     let {
         consents: t
     } = e;
-    u = o({}, t), l = !0
+    u = s({}, t), l = !0
 }
 
 function h(e) {
@@ -78,7 +78,7 @@ class g extends(r = i.Ay.Store) {
         return d
     }
 }
-s(g, "displayName", "ConsentStore");
+o(g, "displayName", "ConsentStore");
 let E = new g(a.h, {
     CONNECTION_OPEN: f,
     OVERLAY_INITIALIZE: p,

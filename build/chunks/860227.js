@@ -2,24 +2,24 @@
 /** chunk id: 860227, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    CJ: () => s,
+    CJ: () => o,
     JH: () => u,
     XL: () => d,
     ZD: () => p,
     d$: () => l,
     fF: () => f,
-    nS: () => o,
+    nS: () => s,
     xl: () => c
 }), n(733351);
 var r = n(264927),
     i = n(143413),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     return "message-content-".concat(e.id)
 }
 
-function o(e) {
+function s(e) {
     return "message-reply-context-".concat(e.id)
 }
 
@@ -55,11 +55,11 @@ function f(e, t, n) {
         v = !O && (null == n ? void 0 : n.hasTimestamp) !== !1,
         A = !O,
         I = l(e, t),
-        S = o(e),
+        S = s(e),
         T = u ? S : I,
         C = A ? "".concat(T, " ").concat(r.lW) : "";
     if (b) {
-        let t = s(e);
+        let t = o(e);
         C += " ".concat(t)
     }
     if (E) {

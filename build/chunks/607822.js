@@ -1,26 +1,25 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 607822, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(400641),
+    l = n(400641),
     s = n(140536);
-let o = e => {
+let a = e => {
     let {
         header: t,
         displayType: n
-    } = e, o = (0, a.Gn)(n) > 0 ? "text-brand" : "text-muted", l = (0, a.Ju)(n);
+    } = e, a = (0, l.Gn)(n), o = (0, l.Ju)(n);
     return (0, r.jsxs)("div", {
         className: s.hJ,
         children: [(0, r.jsx)(i.Heading, {
             variant: "heading-xxl/medium",
-            color: o,
+            color: a > 0 ? "text-brand" : "text-muted",
             children: (0, r.jsx)(i.Fmo, {
-                children: l
+                children: o
             })
         }), (0, r.jsx)(i.Text, {
             variant: "text-sm/semibold",

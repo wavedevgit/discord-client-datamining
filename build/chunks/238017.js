@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(827734),
+    o = n.n(a),
+    s = n(827734),
     l = n(397927),
     c = n(937773),
     u = n(170887),
@@ -28,7 +28,7 @@ function g(e) {
         emojiConfetti: n
     } = e, [a, d] = i.useState(!1), f = i.useRef(null), g = (0, u.A)({
         location: "GiftEmoji"
-    }), E = s()(_.Qq, g && _.Ow), y = e => (0, r.jsxs)("div", {
+    }), E = o()(_.Qq, g && _.Ow), y = e => (0, r.jsxs)("div", {
         className: _.ZC,
         children: [(0, r.jsxs)("div", {
             className: _.Ry,
@@ -75,14 +75,14 @@ function g(e) {
             })
         },
         children: () => (0, r.jsx)(l.DUT, {
-            className: s()(_.kL, g && _.Ow),
+            className: o()(_.kL, g && _.Ow),
             onClick: () => d(!0),
             innerRef: f,
             children: (null == n ? void 0 : n.name) == null ? (0, r.jsxs)("div", {
                 className: _.hQ,
                 children: [(0, r.jsx)(l.nm2, {
                     size: "custom",
-                    color: g ? o.A.colors.ICON_STRONG : o.A.colors.WHITE,
+                    color: g ? s.A.colors.ICON_STRONG : s.A.colors.WHITE,
                     className: _.mI,
                     width: 14,
                     height: 14

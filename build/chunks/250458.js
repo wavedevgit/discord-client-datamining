@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(256311),
     a = n(439372),
-    s = n(773669),
-    o = n(661191),
+    o = n(773669),
+    s = n(661191),
     l = n(883600),
     c = n(446023),
     u = n(212031);
@@ -47,8 +47,8 @@ class p extends a.A {
                     }), null == a || !0 !== t[a].show_on_startup) return;
                 let d = l.A.lastSeenChangelogId(),
                     p = l.A.lastSeenChangelogDate();
-                if (null != d && 0 >= o.default.compare(a, d)) return;
-                let _ = await i.A.fetchChangelog(a, s.default.locale);
+                if (null != d && 0 >= s.default.compare(a, d)) return;
+                let _ = await i.A.fetchChangelog(a, o.default.locale);
                 if (null == _) return;
                 if (null == p || null == l.A.lastSeenChangelogDate()) return void i.A.markChangelogAsSeen(a, _.date);
                 if (l.A.isLocked()) return;

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(311907),
     c = n(697744),
     u = n(435371),
@@ -89,14 +89,14 @@ let I = i.forwardRef(function(e, t) {
             color: "currentColor"
         });
     return (0, r.jsx)("div", {
-        className: s()(y.UD, g.KG),
+        className: o()(y.UD, g.KG),
         ref: t,
         children: (0, r.jsx)(u.m_, {
             text: E.intl.string(E.t.dHDxOF),
             shouldShow: b,
-            children: (0, r.jsx)(o.DUT, A(O({
+            children: (0, r.jsx)(s.DUT, A(O({
                 tabIndex: 0,
-                className: s()(y.x6, {
+                className: o()(y.x6, {
                     [y.rK]: v
                 }),
                 onClick: N,

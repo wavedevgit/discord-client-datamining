@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(166532),
-    o = n(69494),
+    o = n(166532),
+    s = n(69494),
     l = n(482132),
     c = n(516248),
     u = n(866485),
@@ -42,7 +42,7 @@ let h = e => (0, r.jsx)(m, _({}, e)),
             unifiedStepProps: t
         } = e, {
             isStepLoading: n,
-            reviewBodyContent: s,
+            reviewBodyContent: o,
             reviewBodyLegalContent: u,
             errorMessage: p,
             warningMessage: h,
@@ -58,7 +58,7 @@ let h = e => (0, r.jsx)(m, _({}, e)),
                 type: a.y$y.Type.WANDERING_CUBES
             })
         }) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.A, {}), (0, r.jsxs)(l.dZ, {
+            children: [(0, r.jsx)(s.A, {}), (0, r.jsxs)(l.dZ, {
                 children: [(0, r.jsxs)(a.BJc, {
                     direction: "vertical",
                     gap: 8,
@@ -69,7 +69,7 @@ let h = e => (0, r.jsx)(m, _({}, e)),
                     }) : null]
                 }), (0, r.jsxs)("div", {
                     className: f.D,
-                    children: [s, u]
+                    children: [o, u]
                 })]
             }), (0, r.jsx)(l.UX, {
                 children: (0, r.jsx)(d.cy, {
@@ -80,7 +80,7 @@ let h = e => (0, r.jsx)(m, _({}, e)),
         })
     },
     g = (0, u.R)({
-        step: s.pn.REVIEW,
+        step: o.pn.REVIEW,
         renderStep: h,
         DirectStepComponent: m
     })

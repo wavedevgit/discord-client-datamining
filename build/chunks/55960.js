@@ -2,12 +2,12 @@
 /** chunk id: 55960, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    g: () => o
+    g: () => s
 });
 var r = n(64700),
     i = n(688807),
     a = n(73289);
-let s = e => {
+let o = e => {
         let t = "translate(".concat(e.x.toFixed(1), "px, ").concat(e.y.toFixed(1), "px)");
         return {
             pointerEvents: "none",
@@ -18,7 +18,7 @@ let s = e => {
             WebkitTransform: t
         }
     },
-    o = () => {
+    s = () => {
         let e = (0, r.useRef)(null),
             t = (0, i.V)(t => ({
                 currentOffset: (0, a.D)(t, e),
@@ -31,7 +31,7 @@ let s = e => {
             display: !0,
             itemType: t.itemType,
             item: t.item,
-            style: s(t.currentOffset),
+            style: o(t.currentOffset),
             monitor: t.monitor,
             ref: e
         } : {

@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(73153),
     i = n(58149),
     a = n(976860),
-    s = n(734057),
-    o = n(808728),
+    o = n(734057),
+    s = n(808728),
     l = n(696451),
     c = n(317525),
     u = n(576705),
@@ -98,21 +98,21 @@ function I(e) {
 
 function S(e) {
     let t = d.A.getChannelId(e),
-        n = s.A.getChannel(t);
+        n = o.A.getChannel(t);
     if (!(null != t && (0, g.jq)(t)) && !u.A.can(m.xBc.VIEW_CHANNEL, n)) {
-        let t = o.Ay.getDefaultChannel(e);
+        let t = s.Ay.getDefaultChannel(e);
         null != t && (0, a.pX)(m.BVt.CHANNEL(e, t.id))
     }
 }
 
 function T(e, t) {
-    let n = [...o.Ay.getSelectableChannelIds(e), ...o.Ay.getVocalChannelIds(e)],
+    let n = [...s.Ay.getSelectableChannelIds(e), ...s.Ay.getVocalChannelIds(e)],
         r = Array.from(t);
-    o.Ay.addConditionalChangeListener(() => {
+    s.Ay.addConditionalChangeListener(() => {
         let t = l.Ay.getSelfMember(e);
         if (null == t) return !1;
         if (r.some(e => !t.roles.includes(e))) return !0;
-        let i = [...o.Ay.getSelectableChannelIds(e), ...o.Ay.getVocalChannelIds(e)].filter(e => !n.includes(e));
+        let i = [...s.Ay.getSelectableChannelIds(e), ...s.Ay.getVocalChannelIds(e)].filter(e => !n.includes(e));
         return i.length > 0 && C(e, i, []), !1
     })
 }

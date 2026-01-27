@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(317097),
     i = n(311907),
     a = n(374994),
-    s = n(582754),
-    o = n(736653),
+    o = n(582754),
+    s = n(736653),
     l = n(775602),
     c = n(654107),
     u = n(543699),
@@ -23,7 +23,7 @@ function f(e) {
         pendingAvatarSrc: m,
         isPreview: g,
         forceUserTheme: E
-    } = e, y = (0, o.Ay)(), b = (0, i.bG)([l.A], () => l.A.syncProfileThemeWithUserTheme), O = null != m ? m : null == p ? void 0 : p.getAvatarURL(null == _ ? void 0 : _.guildId, 80), v = (0, a.nt)("PRIMARY_530", {
+    } = e, y = (0, s.Ay)(), b = (0, i.bG)([l.A], () => l.A.syncProfileThemeWithUserTheme), O = null != m ? m : null == p ? void 0 : p.getAvatarURL(null == _ ? void 0 : _.guildId, 80), v = (0, a.nt)("PRIMARY_530", {
         saturation: 1
     }), [A, I] = (0, c.rh)(O, v, !1);
     if (!(null == _ ? void 0 : _.canEditThemes) && !g) return {
@@ -35,7 +35,7 @@ function f(e) {
         T = null != (t = null == S ? void 0 : S[0]) ? t : (0, r.LX)(A),
         C = null != (n = null == S ? void 0 : S[1]) ? n : (0, r.LX)(I),
         N = b || E ? y : null != (f = (0, u.tM)(T)) ? f : y;
-    return N === d.NJ8.DARK && (0, s.Mw)(y) ? N = y : N === d.NJ8.DARK && (0, s.qB)(y) && (N = d.NJ8.DARKER), {
+    return N === d.NJ8.DARK && (0, o.Mw)(y) ? N = y : N === d.NJ8.DARK && (0, o.qB)(y) && (N = d.NJ8.DARKER), {
         theme: N,
         primaryColor: T,
         secondaryColor: C

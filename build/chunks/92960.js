@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(367513),
     i = n(843472),
     a = n(334738),
-    s = n(313961),
-    o = n(267102),
+    o = n(313961),
+    s = n(267102),
     l = n(118517),
     c = n(853145),
     u = n(138298),
@@ -35,7 +35,7 @@ let T = {
         if (I._.hasSubscribers(S.jej.CALL_DECLINE)) return I._.dispatch(S.jej.CALL_DECLINE), !1;
         if (v.A.close()) return !1;
         if (I._.hasSubscribers(S.jej.MEDIA_MODAL_CLOSE)) return I._.dispatch(S.jej.MEDIA_MODAL_CLOSE), !1;
-        let t = (0, o.wp)(e);
+        let t = (0, s.wp)(e);
         if (null == t ? void 0 : t.hasSubscribers(S.jej.POPOUT_CLOSE)) return t.dispatch(S.jej.POPOUT_CLOSE), !1;
         if (I._.hasSubscribers(S.jej.CLOSE_GIF_PICKER)) return I._.dispatch(S.jej.CLOSE_GIF_PICKER), !1;
         if (I._.hasSubscribers(S.jej.MODAL_CLOSE)) return I._.dispatch(S.jej.MODAL_CLOSE), !1;
@@ -50,7 +50,7 @@ let T = {
         if (null != i && (null == l ? void 0 : l.type) === d.PE.CREATE_THREAD) return u.A.closeChannelSidebar(i), !1;
         let f = N(i),
             p = N(c);
-        return null == i || f || p || null == l ? null != i && !f && s.A.getChatOpen(i) ? r.A.updateChatOpen(i, !1, "esc keybind") : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), !1
+        return null == i || f || p || null == l ? null != i && !f && o.A.getChatOpen(i) ? r.A.updateChatOpen(i, !1, "esc keybind") : I._.dispatch(S.jej.SCROLLTO_PRESENT) : u.A.closeChannelSidebar(i), !1
     }
 };
 

@@ -9,15 +9,15 @@ n.d(t, {
     Yn: () => l,
     _g: () => p,
     rO: () => f,
-    s2: () => o,
+    s2: () => s,
     tp: () => d
 }), n(801541), n(896048), n(228524);
 var r = n(889137),
     i = n(440703),
     a = n(341915),
-    s = n(229695);
+    o = n(229695);
 
-function o(e) {
+function s(e) {
     try {
         return (0, r.YW)(e.config).with({
             config_version: 2
@@ -31,7 +31,7 @@ function o(e) {
 function l(e) {
     return (0, r.YW)(e).with({
         config_version: 2
-    }, e => (0, s.k)(e)).exhaustive()
+    }, e => (0, o.k)(e)).exhaustive()
 }
 
 function c(e) {
@@ -135,7 +135,7 @@ function h(e) {
             secondary: e.colors.secondary
         },
         rewards: e.rewards.map(_),
-        cosponsorMetadata: (0, s.j)(e.cosponsor_metadata)
+        cosponsorMetadata: (0, o.j)(e.cosponsor_metadata)
     }
 }
 
@@ -235,7 +235,8 @@ function I(e) {
 function S(e) {
     if (1 !== e.version || !(a.gh.QUEST_HOME_BANNER in e.placements)) return null;
     let t = e.placements[a.gh.QUEST_HOME_BANNER];
-    return null == t ? null : {
+    if (null == t) return null;
+    let n = {
         placementType: a.gh.QUEST_HOME_BANNER,
         campaignId: t.campaign_id,
         labelTitle: t.label_title,
@@ -246,5 +247,6 @@ function S(e) {
         ctaQuests: t.cta_quests.map(I),
         startsAt: t.starts_at,
         expiresAt: t.expires_at
-    }
+    };
+    return null != t.asset_hero_video && (n.assetHeroVideo = v(t.asset_hero_video)), n
 }

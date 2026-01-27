@@ -2,12 +2,12 @@
 /** chunk id: 620695, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(322811),
     i = n(355418),
     a = n(658809);
-class s extends i.c {
+class o extends i.c {
     innerPattern(e) {
         return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i
     }
@@ -15,7 +15,7 @@ class s extends i.c {
         let n = e.refDate,
             r = t[2].toLowerCase(),
             i = e.createParsingComponents();
-        return (0, a.A4)(i, n), s.extractTimeComponents(i, r)
+        return (0, a.A4)(i, n), o.extractTimeComponents(i, r)
     }
     static extractTimeComponents(e, t) {
         switch (t) {

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(835245),
     a = n(397927),
-    s = n(391048),
-    o = n(636099),
+    o = n(391048),
+    s = n(636099),
     l = n(954571),
     c = n(652215);
 
@@ -117,7 +117,7 @@ function m(e) {
                 sku_id: u,
                 application_id: t,
                 location_stack: m
-            }), (0, s.ET)(), (0, o.z)(), null == f || f(b)
+            }), (0, o.ET)(), (0, s.z)(), null == f || f(b)
         },
         onCloseRequest: c.tEg
     })

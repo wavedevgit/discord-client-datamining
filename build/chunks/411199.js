@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(247775),
     i = n(73153),
     a = n(272355),
-    s = n(723702);
+    o = n(723702);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,8 +25,8 @@ class l extends a.A {
         i.h.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen)
     }
     constructor(...e) {
-        super(...e), o(this, "handleConnectionOpen", e => {
-            ((0, s.isWindows)() || (0, s.isMac)()) && r.encryptAndStoreTokens()
+        super(...e), s(this, "handleConnectionOpen", e => {
+            ((0, o.isWindows)() || (0, o.isMac)()) && r.encryptAndStoreTokens()
         })
     }
 }

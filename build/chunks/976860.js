@@ -17,8 +17,8 @@ n.d(t, {
     sY: () => R,
     uh: () => b
 }), n(321073), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(747238), n(457529), n(812715);
-var s = n(830845),
-    o = n(626584),
+var o = n(830845),
+    s = n(626584),
     l = n(203982),
     c = n(824865),
     u = n(652215);
@@ -44,9 +44,9 @@ function f(e) {
     }
     return e
 }
-let p = new o.A("Routing/Utils"),
+let p = new s.A("Routing/Utils"),
     _ = [u.dSh.DEVELOPER_PORTAL];
-r = __OVERLAY__ ? (0, s.sC)() : (0, s.zR)();
+r = __OVERLAY__ ? (0, o.sC)() : (0, o.zR)();
 let h = !1,
     m = r.listen((e, t) => {
         "REPLACE" !== t && (h = !0, m())
@@ -69,10 +69,9 @@ function E(e, t) {
 function y(e, t) {
     if (E(e, "assign")) return;
     p.log("transitionTo - Transitioning to ".concat(e));
-    let n = null == t ? void 0 : t.source;
-    null == t || delete t.source;
-    let s = null == t ? void 0 : t.sourceLocationStack;
-    if (null == t || delete t.sourceLocationStack, null == t) r.push(e);
+    let n = null == t ? void 0 : t.source,
+        o = null == t ? void 0 : t.sourceLocationStack;
+    if (null == t) r.push(e);
     else {
         let n = new URL(e, "https:".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT));
         r.push(f({
@@ -81,7 +80,7 @@ function y(e, t) {
             hash: n.hash
         }, t))
     }
-    i = n, a = s
+    i = n, a = o
 }
 
 function b(e, t, n, r) {

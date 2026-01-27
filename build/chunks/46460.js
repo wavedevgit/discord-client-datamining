@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(272355),
     i = n(954571),
     a = n(723702),
-    s = n(837921),
-    o = n(777009),
+    o = n(837921),
+    s = n(777009),
     l = n(652215);
 
 function c(e, t, n) {
@@ -21,13 +21,13 @@ function c(e, t, n) {
 }
 class u extends r.A {
     _initialize() {
-        a.isPlatformEmbedded && (s.Ay.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), s.Ay.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), s.Ay.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
+        a.isPlatformEmbedded && (o.Ay.on("UPDATE_DOWNLOADED", () => this.processModuleEvents()), o.Ay.on("MODULE_INSTALLED", (e, t, n) => this.processModuleEvents()), o.Ay.on("UPDATER_HISTORY_RESPONSE", (e, t) => {
             this._handleHistoryResponse(t)
         }), this.processModuleEvents())
     }
     _terminate() {}
     processModuleEvents() {
-        s.Ay.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
+        o.Ay.send("UPDATER_HISTORY_QUERY_AND_TRUNCATE")
     }
     _handleHistoryResponse(e) {
         if (null == e) return;
@@ -37,7 +37,7 @@ class u extends r.A {
         }), this._tracker.submissionReady() && (i.default.track(l.HAw.APP_MODULES_UPDATED, this._tracker.getStats()), this._tracker.reset())
     }
     constructor(...e) {
-        super(...e), c(this, "_tracker", new o.A)
+        super(...e), c(this, "_tracker", new s.A)
     }
 }
 let d = new u

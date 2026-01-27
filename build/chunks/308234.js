@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 308234, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(397927),
-    l = n(415350),
+    l = n(503698),
+    a = n.n(l),
+    s = n(397927),
+    o = n(415350),
     c = n(366468),
     u = n(206314);
 
@@ -17,22 +16,22 @@ function d(e) {
     let {
         color: t,
         className: n,
-        variant: a,
+        variant: l,
         text: d,
-        lineClamp: f
-    } = e, p = (0, o.$Il)(), _ = i.useMemo(() => null == d ? null : (0, l.A)(d, !0, {
-        allowHeading: null == f,
-        allowList: null == f,
-        initialHeaderLevel: p
-    }), [d, f, p]);
-    return (0, r.jsx)(o.Text, {
-        className: s()(n, u.PT, {
-            [c.E]: null != f && f > 1,
-            [c.D]: 1 === f
+        lineClamp: p
+    } = e, m = (0, s.$Il)(), f = i.useMemo(() => null == d ? null : (0, o.A)(d, !0, {
+        allowHeading: null == p,
+        allowList: null == p,
+        initialHeaderLevel: m
+    }), [d, p, m]);
+    return (0, r.jsx)(s.Text, {
+        className: a()(n, u.PT, {
+            [c.E]: null != p && p > 1,
+            [c.D]: 1 === p
         }),
         color: t,
-        variant: a,
-        lineClamp: f,
-        children: _
+        variant: l,
+        lineClamp: p,
+        children: f
     })
 }

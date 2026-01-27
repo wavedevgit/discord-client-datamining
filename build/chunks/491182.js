@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(473193),
     c = n(397927),
     u = n(824994),
@@ -100,25 +100,25 @@ let O = function(e) {
         hasThread: R,
         isSystemMessage: P,
         hasReply: D,
-        author: x,
-        onMouseEnter: L,
-        onMouseLeave: j
-    } = e, M = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, o.bG)([p.A], () => (null == x ? void 0 : x.guildId) == null || (null == x ? void 0 : x.colorRoleId) == null ? null : p.A.getRole(x.guildId, x.colorRoleId)), U = (0, f.jV)(null == x ? void 0 : x.guildId, k) && (0, d.kz)(x), [G, V] = i.useState(!1), F = i.useCallback(e => {
-        V(!0), null == L || L(e)
-    }, [L]), B = i.useCallback(e => {
-        V(!1), null == j || j(e)
-    }, [j]), H = (0, u.W)({
+        author: L,
+        onMouseEnter: x,
+        onMouseLeave: M
+    } = e, j = y(e, ["className", "compact", "contentOnly", "zalgo", "preview", "disableInteraction", "childrenRepliedMessage", "childrenExecutedCommand", "childrenHeader", "childrenSystemMessage", "childrenButtons", "childrenMessageContent", "childrenAccessories", "messageRef", "focusProps", "hasThread", "isSystemMessage", "hasReply", "author", "onMouseEnter", "onMouseLeave"]), k = (0, s.bG)([p.A], () => (null == L ? void 0 : L.guildId) == null || (null == L ? void 0 : L.colorRoleId) == null ? null : p.A.getRole(L.guildId, L.colorRoleId)), U = (0, f.jV)(null == L ? void 0 : L.guildId, k) && (0, d.kz)(L), [G, F] = i.useState(!1), V = i.useCallback(e => {
+        F(!0), null == x || x(e)
+    }, [x]), B = i.useCallback(e => {
+        F(!1), null == M || M(e)
+    }, [M]), H = (0, u.W)({
         location: "BaseMessage"
     }), Y = (0, r.jsx)(l.C.Provider, {
         value: {
             animate: G,
-            setAnimate: V
+            setAnimate: F
         },
         children: (0, r.jsx)(c.vN3, E(m({}, w), {
             children: (0, r.jsxs)("div", E(m({
-                className: s()(t, {
+                className: o()(t, {
                     [_.D7]: U,
-                    [_.e8]: H && (null == x ? void 0 : x.displayNameStyles) != null && (null == x ? void 0 : x.guildId) == null,
+                    [_.e8]: H && (null == L ? void 0 : L.displayNameStyles) != null && (null == L ? void 0 : L.guildId) == null,
                     [_.iE]: !0,
                     [_.kl]: a,
                     [_.oE]: n,
@@ -130,9 +130,9 @@ let O = function(e) {
                     [_.h8]: D
                 }),
                 ref: N
-            }, M), {
+            }, j), {
                 role: "article",
-                onMouseEnter: F,
+                onMouseEnter: V,
                 onMouseLeave: B,
                 children: [O, v, (0, r.jsxs)("div", {
                     className: _.PG,

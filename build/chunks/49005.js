@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(436857),
-    s = n(9578),
-    o = n(380610),
+    o = n(9578),
+    s = n(380610),
     l = n(348056),
     c = n(307600),
     u = n(637557);
@@ -17,7 +17,7 @@ let d = 1024;
 function f(e) {
     return {
         react(t, n, f) {
-            if (e.enableBuildOverrides && (0, o.vS)(t.target)) return (0, r.jsx)(i.Fragment, {
+            if (e.enableBuildOverrides && (0, s.vS)(t.target)) return (0, r.jsx)(i.Fragment, {
                 children: (0, r.jsx)(l.A, {
                     url: t.target
                 }, t.target)
@@ -38,7 +38,7 @@ function f(e) {
             return f.noStyleAndInteraction ? (0, r.jsx)("span", {
                 title: _,
                 children: p
-            }, f.key) : (0, r.jsx)(s.A, {
+            }, f.key) : (0, r.jsx)(o.A, {
                 title: _,
                 href: t.target,
                 trusted: h,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(827734),
+    o = n.n(a),
+    s = n(827734),
     l = n(273611);
 
 function c(e, t, n) {
@@ -42,7 +42,7 @@ function p(e) {
             className: n,
             percent: a,
             size: c = "small",
-            foregroundColor: d = o.A.unsafe_rawColors.BRAND_500.css,
+            foregroundColor: d = s.A.unsafe_rawColors.BRAND_500.css,
             backgroundColor: p = "var(--interactive-background-active)",
             foregroundGradientColor: _,
             animate: h = !0
@@ -53,12 +53,12 @@ function p(e) {
     } : {
         backgroundColor: d
     }, (0, r.jsx)("div", {
-        className: s()(n, l.progress, l[c]),
+        className: o()(n, l.progress, l[c]),
         style: {
             backgroundColor: p
         },
         children: m !== f && "number" == typeof m ? (0, r.jsx)("div", {
-            className: s()(l.progressBar, l[c], {
+            className: o()(l.progressBar, l[c], {
                 [l.animating]: h
             }),
             style: u({
@@ -66,12 +66,12 @@ function p(e) {
             }, t)
         }) : (0, r.jsxs)(i.Fragment, {
             children: [(0, r.jsx)("div", {
-                className: s()(l.indeterminateBar1, l[c], {
+                className: o()(l.indeterminateBar1, l[c], {
                     [l.animating]: h
                 }),
                 style: t
             }), (0, r.jsx)("div", {
-                className: s()(l.indeterminateBar2, l[c], {
+                className: o()(l.indeterminateBar2, l[c], {
                     [l.animating]: h
                 }),
                 style: t

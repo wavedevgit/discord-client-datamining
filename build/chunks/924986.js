@@ -3,8 +3,8 @@
 var r = n(544664),
     i = n(446928),
     a = n(412184),
-    s = n(314220),
-    o = n(383972),
+    o = n(314220),
+    s = n(383972),
     l = n(762760),
     c = 200;
 e.exports = function(e, t, n) {
@@ -16,9 +16,9 @@ e.exports = function(e, t, n) {
         h = _;
     if (n) p = !1, d = a;
     else if (f >= c) {
-        var m = t ? null : o(e);
+        var m = t ? null : s(e);
         if (m) return l(m);
-        p = !1, d = s, h = new r
+        p = !1, d = o, h = new r
     } else h = t ? [] : _;
     n: for (; ++u < f;) {
         var g = e[u],

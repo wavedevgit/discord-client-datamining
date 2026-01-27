@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(317097),
     a = n(311907),
-    s = n(827734),
-    o = n(990078),
+    o = n(827734),
+    s = n(990078),
     l = n(397927),
     c = n(775602),
     u = n(496885),
@@ -25,10 +25,10 @@ function f(e) {
             tooltipText: m
         } = e,
         [g, E] = (0, a.yK)([c.A], () => [c.A.desaturateUserColors, c.A.saturation]),
-        y = (0, l.rdh)(s.A.unsafe_rawColors.PRIMARY_300).hex(),
+        y = (0, l.rdh)(o.A.unsafe_rawColors.PRIMARY_300).hex(),
         b = (0, i.LX)(null != n ? n : y),
         O = (0, i.$k)(b, !1, g ? E : null);
-    return t = null != p ? p : .3 > (0, i.OK)(b) ? s.A.unsafe_rawColors.PRIMARY_630.css : s.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(o.m, {
+    return t = null != p ? p : .3 > (0, i.OK)(b) ? o.A.unsafe_rawColors.PRIMARY_630.css : o.A.unsafe_rawColors.WHITE.css, (0, r.jsx)(s.m, {
         text: null != m ? m : d.intl.string(d.t.T3PvV4),
         children: (0, r.jsx)(u.A, {
             className: _,

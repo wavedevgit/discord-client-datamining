@@ -5,6 +5,6 @@ var r = n(339626),
     i = n(598349),
     a = n(458680);
 e.exports = function(e, t, n) {
-    var s, o;
-    return a && r(s = t.constructor) && s !== n && i(o = s.prototype) && o !== n.prototype && a(e, o), e
+    var o, s;
+    return a && r(o = t.constructor) && o !== n && i(s = o.prototype) && s !== n.prototype && a(e, s), e
 }

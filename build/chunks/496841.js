@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(956793),
-    o = n(688810),
+    o = n(956793),
+    s = n(688810),
     l = n(384059),
     c = n(203982),
     u = n(709562),
@@ -81,8 +81,8 @@ function y(e) {
         onCallJoined: p
     } = e, h = g(e, ["channel", "centerButton", "onCallJoined"]), {
         parentAnalyticsLocation: E
-    } = (0, o.Ay)(), y = n ? u.l : u.A, b = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
-        null == p || p(), (0, l.X)(E, l.O.JOIN_CALL), s.default.selectVoiceChannel(t.id)
+    } = (0, s.Ay)(), y = n ? u.l : u.A, b = t.isManaged() || !t.isPrivate() ? f.intl.string(f.t.S0W8Z5) : f.intl.string(f.t["0D/6Rz"]), O = i.useCallback(() => {
+        null == p || p(), (0, l.X)(E, l.O.JOIN_CALL), o.default.selectVoiceChannel(t.id)
     }, [t.id, p, E]);
     return i.useEffect(() => (c._.subscribe(d.jej.CALL_ACCEPT, O), () => {
         c._.unsubscribe(d.jej.CALL_ACCEPT, O)

@@ -2,8 +2,8 @@
 /** chunk id: 175650, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    LD: () => o,
-    ok: () => s,
+    LD: () => s,
+    ok: () => o,
     rh: () => a
 });
 var r = n(600975),
@@ -55,7 +55,7 @@ let a = (0, r.C)({
         }
     }]
 });
-let s = (0, r.C)({
+let o = (0, r.C)({
         kind: "guild",
         id: "2023-03_server_subscriptions_tier_templates",
         label: "Server Subscriptions Tier Templates",
@@ -86,7 +86,7 @@ let s = (0, r.C)({
             }
         }]
     }),
-    o = (0, r.C)({
+    s = (0, r.C)({
         kind: "user",
         id: "2023-04_server_subscriptions_tier_templates_user",
         label: "Server Subscriptions Tier Templates",

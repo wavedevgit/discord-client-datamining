@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 234721, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(786180),
     p = n(250527),
     f = n(997509),
-    b = n(555337),
-    h = n(310345),
+    h = n(555337),
+    b = n(310345),
     x = n(306846),
     j = n(894222),
     _ = n(716610),
@@ -62,7 +62,7 @@ function N(e) {
     var t;
     let {
         pendingState: l,
-        dirtyState: b,
+        dirtyState: h,
         originalGuild: x,
         settingsGuild: N,
         settingsMetadata: S,
@@ -119,7 +119,7 @@ function N(e) {
                         features: e
                     })
                 }
-                b.verificationDirty && await B(t, r, e)
+                h.verificationDirty && await B(t, r, e)
             })
         } else if (l.joinType === j.J.APPLY) {
             let {
@@ -133,7 +133,7 @@ function N(e) {
                         features: e
                     })
                 }
-                b.verificationDirty && await U([...t], !0, e), b.profileDirty && null != I && await (0, p._C)(N.id, {
+                h.verificationDirty && await U([...t], !0, e), h.profileDirty && null != I && await (0, p._C)(N.id, {
                     visibility: I.visibility
                 })
             })
@@ -143,8 +143,8 @@ function N(e) {
                 termRules: n = []
             } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
             k(async () => {
-                if (b.verificationDirty && await B(t, r, e), b.guildDirty) {
-                    (0, h.dl)(N, x);
+                if (h.verificationDirty && await B(t, r, e), h.guildDirty) {
+                    (0, b.dl)(N, x);
                     let e = new Set(N.features);
                     e.add(O.GuildFeatures.DISCOVERABLE), e.delete(O.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
                         features: e,
@@ -162,7 +162,7 @@ function N(e) {
                 }
             })
         }
-    }, [l, k, N, b, M, B, I, U, x, S]), H = i.useCallback(() => (e => {
+    }, [l, k, N, h, M, B, I, U, x, S]), H = i.useCallback(() => (e => {
         if (l.joinType === j.J.INVITE || l.joinType === j.J.DISCOVERABLE) {
             let {
                 requireTerms: e,
@@ -222,13 +222,13 @@ function S() {
         settingsMetadata: i,
         originalGuild: a,
         guildProfile: o
-    } = (0, l.cf)([b.A], () => {
+    } = (0, l.cf)([h.A], () => {
         let {
             guild: e,
             guildMetadata: t,
             originalGuild: n,
             profile: r
-        } = b.A.getProps();
+        } = h.A.getProps();
         return {
             settingsGuild: e,
             settingsMetadata: t,

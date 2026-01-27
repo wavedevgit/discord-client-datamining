@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(499979),
+    o = n(311907),
+    s = n(499979),
     l = n(73153),
     c = n(283047),
     u = n(430452),
@@ -67,11 +67,11 @@ function E(e) {
     if (n !== f.x.DEFAULT) return !1;
     let a = null == (t = d.default.getCurrentUser()) ? void 0 : t.id;
     if (null == a) return !1;
-    let s = r === a ? f.oh.AUDIO_INPUT : f.oh.AUDIO_OUTPUT;
-    if (i === f.ME.NONE && I.isSampling(s)) I.stopSampling(s);
+    let o = r === a ? f.oh.AUDIO_INPUT : f.oh.AUDIO_OUTPUT;
+    if (i === f.ME.NONE && I.isSampling(o)) I.stopSampling(o);
     else {
-        if (i === f.ME.NONE || I.isSampling(s)) return !1;
-        I.startSampling(s)
+        if (i === f.ME.NONE || I.isSampling(o)) return !1;
+        I.startSampling(o)
     }
 }
 
@@ -79,9 +79,9 @@ function y() {
     I.reset()
 }
 let b = {
-        [f.oh.AUDIO_INPUT]: new o.W0,
-        [f.oh.AUDIO_OUTPUT]: new o.W0,
-        [f.oh.VIDEO_INPUT]: new o.W0
+        [f.oh.AUDIO_INPUT]: new s.W0,
+        [f.oh.AUDIO_OUTPUT]: new s.W0,
+        [f.oh.VIDEO_INPUT]: new s.W0
     },
     O = {
         [f.oh.AUDIO_INPUT]: {},
@@ -93,7 +93,7 @@ let b = {
         [f.oh.AUDIO_OUTPUT]: new c.A(h),
         [f.oh.VIDEO_INPUT]: new c.A(h)
     };
-class A extends(r = s.Ay.PersistedStore) {
+class A extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(u.A, d.default), [f.oh.AUDIO_INPUT, f.oh.AUDIO_OUTPUT, f.oh.VIDEO_INPUT].forEach(t => {
             (null == e ? void 0 : e[t]) != null && v[t].overwriteHistory(e[t]), b[t].reset()

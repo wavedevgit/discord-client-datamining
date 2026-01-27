@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 41727 **/
 /** chunk id: 987281, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     V: () => d,
     a: () => u
 }), n(747238), n(733351);
 var r = n(64700),
-    i = n(964486),
-    a = n(839214),
+    l = n(964486),
+    i = n(839214),
     s = n(535762),
-    o = n(152056),
-    l = n(360619),
+    a = n(152056),
+    o = n(360619),
     c = n(531525);
-let u = (0, a.D)(() => ({
+let u = (0, i.D)(() => ({
     searchResults: c.R,
     hasSearchResults: !1
 }));
 
 function d() {
-    let e = o.A.useField("query"),
-        t = (0, l.PH)(),
-        n = r.useRef(new s.A((0, l.NI)(t))),
-        a = r.useCallback(async e => {
+    let e = a.A.useField("query"),
+        t = (0, o.PH)(),
+        n = r.useRef(new s.A((0, o.NI)(t))),
+        i = r.useCallback(async e => {
             let t = await n.current.search(e.trim());
             u.setState({
                 searchResults: t,
@@ -29,9 +28,9 @@ function d() {
             })
         }, []);
     r.useEffect(() => {
-        "" === e || e.length < 2 ? u.resetState() : a(e)
-    }, [e, a]), (0, i.Ay)(() => () => {
-        u.resetState(), o.A.setState({
+        "" === e || e.length < 2 ? u.resetState() : i(e)
+    }, [e, i]), (0, l.Ay)(() => () => {
+        u.resetState(), a.A.setState({
             query: ""
         })
     });

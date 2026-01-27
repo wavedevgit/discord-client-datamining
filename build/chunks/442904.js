@@ -3,7 +3,7 @@
 "use strict";
 Object.defineProperty(t, "__esModule", {
     value: !0
-}), t.markdownFormatter = void 0, t.formatToMarkdownString = s;
+}), t.markdownFormatter = void 0, t.formatToMarkdownString = o;
 let r = n(860500),
     i = {
         $b: e => "**" + e.join("") + "**",
@@ -22,10 +22,10 @@ class a extends r.StringBuilder {
     }
 }
 
-function s(e, t, n = a) {
+function o(e, t, n = a) {
     return "string" == typeof e ? e : this.bindFormatValues(n, e, t)[0]
 }
 t.markdownFormatter = {
-    format: s,
+    format: o,
     builder: a
 }

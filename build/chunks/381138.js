@@ -3,10 +3,10 @@
 var r = n(544664),
     i = n(390453),
     a = n(314220),
-    s = 1,
-    o = 2;
+    o = 1,
+    s = 2;
 e.exports = function(e, t, n, l, c, u) {
-    var d = n & s,
+    var d = n & o,
         f = e.length,
         p = t.length;
     if (f != p && !(d && p > f)) return !1;
@@ -14,7 +14,7 @@ e.exports = function(e, t, n, l, c, u) {
     if (_ && u.get(t)) return _ == t;
     var h = -1,
         m = !0,
-        g = n & o ? new r : void 0;
+        g = n & s ? new r : void 0;
     for (u.set(e, t), u.set(t, e); ++h < f;) {
         var E = e[h],
             y = t[h];

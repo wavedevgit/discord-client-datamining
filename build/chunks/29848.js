@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(582306),
-    s = n(292666),
-    o = n(335310),
+    o = n(292666),
+    s = n(335310),
     l = n(444550),
     c = n(843282),
     u = n(397927);
@@ -55,7 +55,7 @@ let d = [{
                         options: d,
                         placeholder: n,
                         isDisabled: t
-                    }), (0, r.jsx)(s.k, {
+                    }), (0, r.jsx)(o.k, {
                         placeholder: n,
                         disabled: t
                     }), (0, r.jsx)(l.p, {
@@ -68,7 +68,7 @@ let d = [{
                         onSelect: h,
                         value: _,
                         disabled: t
-                    }), (0, r.jsx)(o.c, {
+                    }), (0, r.jsx)(s.c, {
                         onChange: g,
                         value: m,
                         disabled: t

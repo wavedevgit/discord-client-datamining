@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(506774),
+    o = n(311907),
+    s = n(506774),
     l = n(73153),
     c = n(731854);
 
@@ -39,11 +39,11 @@ function g(e) {
         applicationId: t,
         devices: n
     } = e;
-    m(t, n), o.w.set(d, f), _++
+    m(t, n), s.w.set(d, f), _++
 }
-class E extends(r = s.Ay.Store) {
+class E extends(r = o.Ay.Store) {
     initialize() {
-        let e = o.w.get(d);
+        let e = s.w.get(d);
         null != e && a().forEach(e, (e, t) => {
             e.forEach(e => {
                 "audioinput" === e.type && e.hardwareMute && (e.hardwareMute = !1)

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(417597),
     i = n(253932),
     a = n(351906),
-    s = n(287809),
-    o = n(985018);
+    o = n(287809),
+    s = n(985018);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -56,11 +56,11 @@ function _(e, t) {
     var n;
     let l = i.m$.useSetting(),
         u = void 0 !== t ? t : l,
-        f = (0, r.bG)([s.default], () => s.default.getCurrentUser()),
+        f = (0, r.bG)([o.default], () => o.default.getCurrentUser()),
         _ = (0, r.bG)([a.A], () => a.A.hidePersonalInformation);
     if (null == e) return [];
     let h = null != (n = null == e ? void 0 : e.getBadges()) ? n : [];
     return null != f && f.id === e.userId && u && (h = h.filter(e => e.id !== p)), _ && (h = h.map(e => d(c({}, e), {
-        description: e.id === p ? o.intl.string(o.t.Br1ls3) : e.description
+        description: e.id === p ? s.intl.string(s.t.Br1ls3) : e.description
     }))), h
 }

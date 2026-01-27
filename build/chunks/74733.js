@@ -90,9 +90,9 @@ class a {
             else {
                 var i, a;
                 let e = this.state.selectedKeys,
-                    s = null != (i = e.anchorKey) ? i : n;
-                for (let i of (t = new(0, r.L)(e, s, n), this.getKeyRange(s, null != (a = e.currentKey) ? a : n))) t.delete(i);
-                for (let e of this.getKeyRange(n, s)) this.canSelectItem(e) && t.add(e)
+                    o = null != (i = e.anchorKey) ? i : n;
+                for (let i of (t = new(0, r.L)(e, o, n), this.getKeyRange(o, null != (a = e.currentKey) ? a : n))) t.delete(i);
+                for (let e of this.getKeyRange(n, o)) this.canSelectItem(e) && t.add(e)
             }
             this.state.setSelectedKeys(t)
         }
@@ -150,8 +150,8 @@ class a {
                 for (; null != n;) {
                     if (this.canSelectItem(n)) {
                         var r, a;
-                        let s = this.collection.getItem(n);
-                        (null == s ? void 0 : s.type) === "item" && e.push(n), (null == s ? void 0 : s.hasChildNodes) && (this.allowsCellSelection || "item" !== s.type) && t(null != (a = null == (r = (0, i.ue)((0, i.iQ)(s, this.collection))) ? void 0 : r.key) ? a : null)
+                        let o = this.collection.getItem(n);
+                        (null == o ? void 0 : o.type) === "item" && e.push(n), (null == o ? void 0 : o.hasChildNodes) && (this.allowsCellSelection || "item" !== o.type) && t(null != (a = null == (r = (0, i.ue)((0, i.iQ)(o, this.collection))) ? void 0 : r.key) ? a : null)
                     }
                     n = this.collection.getKeyAfter(n)
                 }

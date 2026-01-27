@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(735438),
-    s = n.n(a),
-    o = n(73153),
+    o = n.n(a),
+    s = n(73153),
     l = n(465532),
     c = n(58149),
     u = n(584682),
@@ -33,9 +33,9 @@ var r = n(284009),
 function S(e, t, n) {
     if (!(0, p.C$)(e.id)) return void(0, d.E)();
     f.Uw.dispatch(A.jej.POPOUT_CLOSE);
-    let r = !s().isEmpty(b.A.getVoiceStatesForChannel(e.id));
+    let r = !o().isEmpty(b.A.getVoiceStatesForChannel(e.id));
     if (t || !m.SY.getSetting() || __OVERLAY__ || r) {
-        o.h.dispatch({
+        s.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: e.parent_id
         }), null != n ? (0, h.N9)(e, {
@@ -46,7 +46,7 @@ function S(e, t, n) {
     i()(null != e.parent_id, "all threads must have parents");
     let a = e.getGuildId();
     if (null != a && null != g.Ay.getGuildSidebarState(a)) {
-        o.h.dispatch({
+        s.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: e.parent_id
         }), null != n ? (0, h.N9)(e, {
@@ -74,7 +74,7 @@ function T(e, t, n) {
         l.A.saveDraft(e.id, "", E.C.ChannelMessage), l.A.saveDraft(e.id, t, E.C.FirstThreadMessage)
     }
     setTimeout(() => {
-        o.h.dispatch({
+        s.h.dispatch({
             type: "SIDEBAR_CREATE_THREAD",
             parentChannelId: e.id,
             parentMessageId: null == t ? void 0 : t.id,
@@ -84,21 +84,21 @@ function T(e, t, n) {
 }
 
 function C(e, t) {
-    (0, _.pX)(A.BVt.CHANNEL(e, (0, I.mP)(t) ? I.VV.GUILD_HOME : t)), o.h.dispatch({
+    (0, _.pX)(A.BVt.CHANNEL(e, (0, I.mP)(t) ? I.VV.GUILD_HOME : t)), s.h.dispatch({
         type: "SIDEBAR_CLOSE",
         baseChannelId: t
     })
 }
 
 function N(e) {
-    o.h.dispatch({
+    s.h.dispatch({
         type: "SIDEBAR_CLOSE",
         baseChannelId: e
-    }), o.h.dispatch({
+    }), s.h.dispatch({
         type: "DRAFT_CLEAR",
         channelId: e,
         draftType: E.C.FirstThreadMessage
-    }), o.h.dispatch({
+    }), s.h.dispatch({
         type: "DRAFT_CLEAR",
         channelId: e,
         draftType: E.C.ThreadSettings

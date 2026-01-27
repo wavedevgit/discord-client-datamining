@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 861410, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 }), n(228524);
 var r, i = n(311907),
     l = n(73153),
@@ -62,7 +62,7 @@ class f extends(r = i.Ay.Store) {
     }
 }
 o(f, "displayName", "WelcomeScreenSettingsStore");
-let b = new f(l.h, {
+let h = new f(l.h, {
     WELCOME_SCREEN_FETCH_SUCCESS: p,
     WELCOME_SCREEN_UPDATE: p,
     WELCOME_SCREEN_SETTINGS_RESET: function() {

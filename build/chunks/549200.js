@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 549200, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968),
     i = n(311907),
-    a = n(936388),
+    l = n(936388),
     s = n(714763),
-    o = n(814278),
-    l = n(871930),
+    a = n(814278),
+    o = n(871930),
     c = n(578746),
-    u = n(531525),
-    d = n(985018);
+    d = n(531525),
+    u = n(985018);
 
-function f() {
+function _() {
     let e = (0, i.bG)([s.A], () => s.A.getPersistentCodesEnabled());
-    return (0, r.jsx)(l.h, {
-        setting: u.H.PRIVACY_AND_SAFETY_PERSISTENT_VERIFICATION_CODES,
+    return (0, r.jsx)(o.h, {
+        setting: d.H.PRIVACY_AND_SAFETY_PERSISTENT_VERIFICATION_CODES,
         children: (0, r.jsx)(c.Ay, {
             value: e,
-            onChange: a.A.updatePersistentCodesEnabled,
-            title: d.intl.string(d.t["opi/XK"]),
-            note: d.intl.format(d.t["/T+ZlP"], {
-                helpArticle: (0, o.Lu)()
+            onChange: l.A.updatePersistentCodesEnabled,
+            title: u.intl.string(u.t["opi/XK"]),
+            note: u.intl.format(u.t["/T+ZlP"], {
+                helpArticle: (0, a.Lu)()
             })
         })
     })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(325909),
-    s = n(734057),
-    o = n(994500),
+    o = n(734057),
+    s = n(994500),
     l = n(287809),
     c = n(954571),
     u = n(157559),
@@ -18,18 +18,18 @@ var r = n(562465),
     _ = n(985018);
 let h = {
     call(e, t, n, i, a) {
-        let s = n => {
+        let o = n => {
             f.default.selectVoiceChannel(e, t), n && this.ring(e), null == a || a(e)
         };
         if (null != i) {
-            if (o.A.isBlocked(i)) return;
+            if (s.A.isBlocked(i)) return;
             let t = l.default.getUser(i);
             r.Bo.get({
                 url: p.Rsh.CALL(e),
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(e => {
-                s(n && e.body.ringable)
+                o(n && e.body.ringable)
             }, () => {
                 c.default.track(p.HAw.OPEN_POPOUT, {
                     type: "Not Friend",
@@ -51,13 +51,13 @@ let h = {
                     }
                 })
             })
-        } else s(n)
+        } else o(n)
     },
     ring(e, t, n) {
-        let o = s.A.getChannel(e);
-        if (null == o) return;
-        let l = (0, a.p)(o),
-            c = p.kvI.CALLABLE.has(o.type);
+        let s = o.A.getChannel(e);
+        if (null == s) return;
+        let l = (0, a.p)(s),
+            c = p.kvI.CALLABLE.has(s.type);
         if (l) {
             r.Bo.post({
                 url: p.Rsh.CALL_RING(e),
@@ -67,10 +67,10 @@ let h = {
                 },
                 oldFormErrors: !0,
                 rejectWithError: !0
-            }), o.type === p.rbe.GUILD_VOICE && null != t && i.h.dispatch({
+            }), s.type === p.rbe.GUILD_VOICE && null != t && i.h.dispatch({
                 type: "GUILD_LOCAL_RING_START",
                 ringing: t,
-                guildId: o.guild_id
+                guildId: s.guild_id
             });
             return
         }

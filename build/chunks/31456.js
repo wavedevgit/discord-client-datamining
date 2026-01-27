@@ -8,21 +8,21 @@ var r = n(627968);
 n(64700);
 var i = n(234096),
     a = n(540604),
-    s = n(369790),
-    o = n(244083);
+    o = n(369790),
+    s = n(244083);
 let l = Object.freeze({
         "voice-conversations": {
             popoutPosition: "right",
             highPriority: !0,
-            textAlign: o.YL.CENTER,
+            textAlign: s.YL.CENTER,
             media: () => (0, r.jsx)(a.A, {})
         },
         "writing-messages": {
             popoutPosition: "top",
             highPriority: !0,
-            textAlign: o.YL.CENTER,
+            textAlign: s.YL.CENTER,
             spacing: 10,
-            media: () => (0, r.jsx)(s.A, {})
+            media: () => (0, r.jsx)(o.A, {})
         },
         "direct-messages": {
             popoutPosition: "right"
@@ -33,7 +33,7 @@ let l = Object.freeze({
         },
         "organize-by-topic": {
             popoutPosition: "right",
-            textAlign: o.YL.CENTER,
+            textAlign: s.YL.CENTER,
             spacing: 8,
             media: () => (0, r.jsx)(i.A, {})
         },

@@ -1,8 +1,8 @@
 /** Chunk was on 78870 **/
 /** chunk id: 558060, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => d,
-    R: () => a
+    R: () => a,
+    default: () => d
 }), r(896048);
 var n = r(627968),
     i = r(64700),

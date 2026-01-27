@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(305866),
+    o = n.n(a),
+    s = n(305866),
     l = n(103552),
     c = n(291611);
 
@@ -86,8 +86,8 @@ function m(e) {
     } = e, b = _(e, ["children", "placeholder", "value", "onChange", "onClose", "className", "multiSelect", "emptyStateText", "emptyStateHeader", "onQueryChange"]), O = i.useCallback(e => {
         u(e), m || null == f || f()
     }, [u, f, m]);
-    return (0, r.jsx)(o.l, {
-        className: s()(c.kL, c.XG, h),
+    return (0, r.jsx)(s.l, {
+        className: o()(c.kL, c.XG, h),
         children: (0, r.jsx)(l.G3, p(d({}, b), {
             value: a,
             multiSelect: m,

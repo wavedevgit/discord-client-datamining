@@ -2,7 +2,7 @@
 /** chunk id: 313271, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => s
+    j: () => o
 }), n(896048);
 var r = n(621466);
 
@@ -19,7 +19,7 @@ let a = {
     rootMargin: "0px",
     threshold: .5
 };
-class s {
+class o {
     isVisible(e) {
         return null == this._observer || this._visibleComponents.has(e)
     }

@@ -1,11 +1,11 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 199940, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
     A4: () => _,
     DE: () => v,
     E0: () => I,
-    G$: () => h,
+    G$: () => b,
     J4: () => x,
     Rp: () => j,
     UP: () => C,
@@ -13,7 +13,7 @@ n.d(t, {
     WA: () => S,
     Wh: () => y,
     XD: () => N,
-    hL: () => b,
+    hL: () => h,
     kO: () => D,
     px: () => A,
     sd: () => O,
@@ -34,14 +34,14 @@ var r = n(735438),
     p = n(652215),
     f = n(985018);
 
-function b(e) {
+function h(e) {
     s.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE",
         welcomeMessage: e
     })
 }
 
-function h(e, t) {
+function b(e, t) {
     s.h.dispatch({
         type: "GUILD_SETTINGS_ONBOARDING_ADD_NEW_MEMBER_ACTION",
         action: e,
@@ -222,7 +222,7 @@ function C(e, t) {
     }), n)))
 }
 async function P(e, t) {
-    var n, r, o, u, g, b, h, x, _;
+    var n, r, o, u, g, h, b, x, _;
     s.h.dispatch({
         type: "GUILD_HOME_SETTINGS_UPDATE_START"
     });
@@ -246,8 +246,8 @@ async function P(e, t) {
             }) : j(n))
         }), d.default.track(p.HAw.GUILD_SETTINGS_GUIDE_UPDATED, {
             guild_id: e,
-            welcome_message_author_id: (null != (n = null == a || null == (b = a.welcomeMessage) ? void 0 : b.authorIds) ? n : [])[0],
-            welcome_message_length: null != (r = null == a || null == (x = a.welcomeMessage) || null == (h = x.message) ? void 0 : h.length) ? r : 0,
+            welcome_message_author_id: (null != (n = null == a || null == (h = a.welcomeMessage) ? void 0 : h.authorIds) ? n : [])[0],
+            welcome_message_length: null != (r = null == a || null == (x = a.welcomeMessage) || null == (b = x.message) ? void 0 : b.length) ? r : 0,
             member_action_channel_ids: (null != (o = null == a ? void 0 : a.newMemberActions) ? o : []).map(e => e.channelId),
             member_action_channel_actions: (null != (u = null == a ? void 0 : a.newMemberActions) ? u : []).map(e => e.actionType),
             resource_channel_ids: (null != (g = null == a ? void 0 : a.resourceChannels) ? g : []).map(e => e.channelId),

@@ -1,40 +1,40 @@
-/** Chunk was on 41278 **/
-/** chunk id: 774300, original params: e,n,t (module,exports,require) **/
-t.d(n, {
-    A: () => v,
-    F: () => c
+/** Chunk was on 92779 **/
+/** chunk id: 774300, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => u,
+    F: () => p
 });
-var a, i = t(308528),
-    _ = t(843472),
-    s = t(626584),
-    r = t(734057),
-    o = t(927813),
-    d = t(513391);
-let b = +o.A.Millis.SECOND + 10;
-var c = ((a = {})[a.GROUP_DM = 0] = "GROUP_DM", a[a.USER = 1] = "USER", a[a.CHANNEL = 2] = "CHANNEL", a);
-class l extends d.A {
-    _sendInvite(e, n, t, a, i) {
-        _.A.sendInvite(e.id, n, t, a).then(() => i(null, !0), () => i(null, !1))
+var r, o = n(308528),
+    s = n(843472),
+    i = n(626584),
+    a = n(734057),
+    c = n(927813),
+    l = n(513391);
+let d = +c.A.Millis.SECOND + 10;
+var p = ((r = {})[r.GROUP_DM = 0] = "GROUP_DM", r[r.USER = 1] = "USER", r[r.CHANNEL = 2] = "CHANNEL", r);
+class b extends l.A {
+    _sendInvite(e, t, n, r, o) {
+        s.A.sendInvite(e.id, t, n, r).then(() => o(null, !0), () => o(null, !1))
     }
-    drain(e, n) {
+    drain(e, t) {
         let {
-            location: t,
-            inviteAnalyticsMetadata: a
+            location: n,
+            inviteAnalyticsMetadata: r
         } = e;
         switch (e.type) {
             case 0:
             case 2:
-                this._sendInvite(e.channel, e.inviteKey, t, a, n);
+                this._sendInvite(e.channel, e.inviteKey, n, r, t);
                 break;
             case 1:
-                i.A.ensurePrivateChannel(e.user.id).then(i => {
-                    let _ = r.A.getChannel(i);
-                    null != _ && this._sendInvite(_, e.inviteKey, t, a, n)
-                }, () => n(null, !1))
+                o.A.ensurePrivateChannel(e.user.id).then(o => {
+                    let s = a.A.getChannel(o);
+                    null != s && this._sendInvite(s, e.inviteKey, n, r, t)
+                }, () => t(null, !1))
         }
     }
     constructor() {
-        super(new s.A("InviteQueue"), b)
+        super(new i.A("InviteQueue"), d)
     }
 }
-let v = new l
+let u = new b

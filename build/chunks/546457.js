@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 546457, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 }), n(896048), n(142703);
 var r = n(627968),
     i = n(64700),
@@ -68,7 +68,7 @@ let f = i.forwardRef(function(e, t) {
     })
 });
 
-function b(e) {
+function h(e) {
     var t;
     let {
         initialValue: n,
@@ -76,8 +76,8 @@ function b(e) {
         onChangeNewTagValue: c,
         tagErrors: u = {},
         placeholder: p,
-        className: b,
-        maxTags: h
+        className: h,
+        maxTags: b
     } = e, x = i.useRef(null), j = i.useRef(null), _ = i.useRef(null), O = (0, g.M)(n), {
         handlePasteEvent: v,
         handleInputChange: y,
@@ -129,7 +129,7 @@ function b(e) {
             } else T(e, !0), M(!0)
         }, [I, T, D, R]);
     return (0, r.jsxs)("div", {
-        className: s()(m.rs, b),
+        className: s()(m.rs, h),
         ref: j,
         tabIndex: 0,
         onKeyUp: E,
@@ -158,11 +158,11 @@ function b(e) {
                 placeholder: 0 === R.length ? p : void 0,
                 value: w
             })]
-        }), null != h && (0, r.jsxs)(a.Text, {
+        }), null != b && (0, r.jsxs)(a.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
             className: m.MH,
-            children: [null != (t = null == R ? void 0 : R.length) ? t : 0, "/", h]
+            children: [null != (t = null == R ? void 0 : R.length) ? t : 0, "/", b]
         })]
     })
 }

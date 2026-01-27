@@ -1,8 +1,8 @@
 /** Chunk was on 21738 **/
 /** chunk id: 65513, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => T,
-    s: () => j
+    A: () => x,
+    s: () => P
 }), n(896048), n(747238), n(812715);
 var r = n(627968),
     i = n(64700),
@@ -19,15 +19,17 @@ var r = n(627968),
     f = n(954571),
     m = n(859703),
     A = n(341915),
-    _ = n(590202),
-    b = n(545986),
-    E = n(654487),
-    O = n(652215),
-    y = n(818348),
-    I = n(985018),
-    v = n(794053);
+    _ = n(579473),
+    b = n(590202),
+    E = n(415441),
+    O = n(545986),
+    y = n(654487),
+    I = n(652215),
+    v = n(818348),
+    S = n(985018),
+    C = n(794053);
 
-function S(e) {
+function N(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -46,7 +48,7 @@ function S(e) {
     return e
 }
 
-function C(e, t) {
+function T(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -59,67 +61,99 @@ function C(e, t) {
     }), e
 }
 
-function N(e) {
+function j(e) {
     let {
-        asset: t
+        assetImage: t,
+        assetVideo: n
     } = e;
-    if ("image" === t.assetType) return (0, r.jsxs)("div", {
-        className: v.km,
+    return null == n ? (0, r.jsxs)("div", {
+        className: C.Tv,
         children: [(0, r.jsx)("div", {
-            className: v.Np
+            className: C.Np
         }), (0, r.jsx)("div", {
-            className: v.c8,
+            className: C.LO,
             children: (0, r.jsx)("img", {
-                className: v.Sl,
+                className: C.LY,
                 src: t.url,
                 alt: t.altText
             })
         }), (0, r.jsx)("div", {
-            className: a()(v.c8, v.UE, v.gv),
+            className: a()(C.LO, C.jx, C.hw),
             children: (0, r.jsx)("img", {
-                className: v.Sl,
+                className: C.LY,
                 src: t.url,
                 alt: ""
             })
         }), (0, r.jsx)("div", {
-            className: a()(v.c8, v.UE, v.nd),
+            className: a()(C.LO, C.jx, C.Co),
             children: (0, r.jsx)("img", {
-                className: v.Sl,
+                className: C.LY,
                 src: t.url,
                 alt: ""
+            })
+        })]
+    }) : (0, r.jsxs)("div", {
+        className: C.Tv,
+        children: [(0, r.jsx)("div", {
+            className: C.Np
+        }), (0, r.jsx)("div", {
+            className: C.LO,
+            children: (0, r.jsx)(E.N, {
+                showImage: !1,
+                showVideo: !0,
+                imageAsset: {
+                    alt: n.altText,
+                    className: C.LY,
+                    asset: {
+                        url: t.url,
+                        mimetype: (0, _.vm)(t.url),
+                        isAnimated: !1
+                    },
+                    assetId: t.url
+                },
+                videoAsset: {
+                    alt: n.altText,
+                    className: C.LY,
+                    asset: {
+                        url: n.url,
+                        mimetype: (0, _.vm)(n.url),
+                        isAnimated: !0
+                    },
+                    assetId: n.url
+                }
             })
         })]
     })
 }
 
-function T(e) {
+function x(e) {
     let {
         config: t,
         onQuestCtaClick: n
-    } = e, l = (0, s.zy)(), T = (0, s.W6)(), {
-        enabled: j
+    } = e, l = (0, s.zy)(), _ = (0, s.W6)(), {
+        enabled: E
     } = (0, g.Z)({
-        location: E.rE.QUEST_HOME_DESKTOP
+        location: y.rE.QUEST_HOME_DESKTOP
     }), x = (0, p.Ay)(), [P, w] = i.useState("display-lg"), L = i.useCallback(e => {
         e.contentRect.width < 500 ? w("display-md") : w("display-lg")
     }, []), R = (0, d.w)(L, [], {
         fireOnMount: !0
     }), D = (0, c.bG)([m.A], () => m.A.quests);
     return i.useEffect(() => {
-        f.default.track(O.HAw.QUEST_CONTENT_VIEWED, C(S({}, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)), {
+        f.default.track(I.HAw.QUEST_CONTENT_VIEWED, T(N({}, (0, b.fF)(A.uF.QUEST_HOME_TAKEOVER)), {
             quest_id: t.campaignId,
             is_targeted: !1
         }))
     }, [t.campaignId]), (0, r.jsx)("div", {
-        className: a()(v.iE, {
-            "theme-dark": x === y.NJ.LIGHT,
-            [v.Qx]: !j
+        className: a()(C.iE, {
+            "theme-dark": x === v.NJ.LIGHT,
+            [C.Qx]: !E
         }),
         ref: R,
         children: (0, r.jsxs)("div", {
-            className: v.FG,
+            className: C.FG,
             children: [(0, r.jsxs)(u.BJc, {
-                className: v.Qs,
+                className: C.Qs,
                 direction: "vertical",
                 justify: "space-between",
                 children: [(0, r.jsxs)(u.BJc, {
@@ -129,56 +163,56 @@ function T(e) {
                     children: [(0, r.jsx)("img", {
                         src: t.assetSponsorImage.url,
                         alt: t.assetSponsorImage.altText,
-                        className: v.wm
+                        className: C.wm
                     }), (0, r.jsx)(u.Text, {
                         color: "text-strong",
                         variant: "text-sm/normal",
-                        className: v.yu,
-                        children: I.intl.string(I.t.OJjFi5)
+                        className: C.yu,
+                        children: S.intl.string(S.t.OJjFi5)
                     })]
                 }), (0, r.jsxs)(u.BJc, {
-                    className: v.yp,
+                    className: C.yp,
                     gap: 16,
                     children: [(0, r.jsxs)(u.BJc, {
                         gap: 8,
                         children: [(0, r.jsx)(u.Heading, {
                             color: "text-strong",
                             variant: P,
-                            className: v.DD,
+                            className: C.DD,
                             children: t.labelTitle
                         }), (0, r.jsx)(u.Text, {
                             color: "text-strong",
                             variant: "text-md/normal",
-                            className: v.VA,
+                            className: C.VA,
                             children: t.labelSubtitle
                         })]
                     }), (0, r.jsxs)(u.ButtonGroup, {
                         children: [(0, r.jsx)(u.Button, {
                             onClick: () => {
-                                (0, h.A)(t.ctaSponsorUrl.url), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
+                                (0, h.A)(t.ctaSponsorUrl.url), f.default.track(I.HAw.QUEST_CONTENT_CLICKED, N({
                                     quest_id: t.campaignId,
-                                    cta_name: _.Cy.OPEN_GAME_LINK,
+                                    cta_name: b.Cy.OPEN_GAME_LINK,
                                     click_id: (0, o.A)(),
                                     is_targeted: !1
-                                }, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)))
+                                }, (0, b.fF)(A.uF.QUEST_HOME_TAKEOVER)))
                             },
                             size: "md",
                             text: t.ctaSponsorUrl.title,
                             variant: "overlay-primary"
                         }), t.ctaQuests.map((e, i) => D.has(e.questId) ? (0, r.jsx)(u.Button, {
                             onClick: () => {
-                                T.replace(C(S({}, l), {
+                                _.replace(T(N({}, l), {
                                     hash: void 0
                                 })), null == n || n(), window.requestIdleCallback(() => {
-                                    (0, b.navigateToQuestHome)({
+                                    (0, O.navigateToQuestHome)({
                                         questId: e.questId
                                     })
-                                }), f.default.track(O.HAw.QUEST_CONTENT_CLICKED, S({
+                                }), f.default.track(I.HAw.QUEST_CONTENT_CLICKED, N({
                                     quest_id: t.campaignId,
-                                    cta_name: _.Cy.VIEW_QUESTS,
+                                    cta_name: b.Cy.VIEW_QUESTS,
                                     click_id: (0, o.A)(),
                                     is_targeted: !1
-                                }, (0, _.fF)(A.uF.QUEST_HOME_TAKEOVER)))
+                                }, (0, b.fF)(A.uF.QUEST_HOME_TAKEOVER)))
                             },
                             size: "md",
                             text: e.title,
@@ -186,16 +220,17 @@ function T(e) {
                         }, i) : null)]
                     })]
                 })]
-            }), (0, r.jsx)(N, {
-                asset: t.assetHeroImage
+            }), (0, r.jsx)(j, {
+                assetImage: t.assetHeroImage,
+                assetVideo: t.assetHeroVideo
             })]
         })
     })
 }
 
-function j() {
+function P() {
     return (0, r.jsx)("div", {
-        className: a()(v.iE, v.FG, v.B3),
+        className: a()(C.iE, C.FG, C.B3),
         children: (0, r.jsx)(u.y$y, {})
     })
 }

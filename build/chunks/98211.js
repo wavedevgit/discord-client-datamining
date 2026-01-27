@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(724609),
-    s = n(580630),
-    o = n(500345),
+    o = n(580630),
+    s = n(500345),
     l = n(922975),
     c = n(380203),
     u = n(237867),
@@ -35,8 +35,8 @@ let p = e => {
                 children: [!n && (0, r.jsx)(a.k, {}), (0, r.jsxs)(i.Text, {
                     variant: "text-xs/normal",
                     className: f.Us,
-                    children: [(0, s.$g)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
-                        period: (0, o.cV)({
+                    children: [(0, o.$g)(E.price, E.currency), " ", d.intl.format(d.t.isLGyX, {
+                        period: (0, s.cV)({
                             interval: E.interval,
                             interval_count: E.interval_count
                         })

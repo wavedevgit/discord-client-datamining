@@ -3,14 +3,14 @@
 "use strict";
 n.d(t, {
     J: () => a,
-    P: () => s
+    P: () => o
 });
 var r = n(600975),
     i = n(688151),
     a = function(e) {
         return e[e.NONE = 0] = "NONE", e[e.POPULAR = 1] = "POPULAR", e[e.RECENT = 2] = "RECENT", e
     }({});
-let s = (0, r.C)({
+let o = (0, r.C)({
     kind: "user",
     id: "2024-10_shop_skus_in_gift_flow",
     label: "Gift Collectibles in DM",

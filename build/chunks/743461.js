@@ -1,7 +1,7 @@
 /** Chunk was on 35270 **/
 /** chunk id: 743461, original params: t,e,n (module,exports,require) **/
 n.d(e, {
-    default: () => O
+    default: () => T
 });
 var r = n(627968),
     i = n(64700),
@@ -12,34 +12,34 @@ var r = n(627968),
     s = n(847599),
     _ = n(620715),
     I = n(870383),
-    c = n(36149),
-    u = n(945276),
+    u = n(36149),
+    c = n(945276),
     A = n(780964),
     d = n(358776),
     C = n(840065),
     L = n(975571),
     R = n(390248),
-    M = n(652215),
-    T = n(355097),
+    f = n(652215),
+    M = n(355097),
     g = n(985018);
-let O = t => {
+let T = t => {
     let {
         channelId: e,
-        messageId: O,
-        transitionState: f,
-        onClose: P
-    } = t, h = (0, u.A)(), p = (0, c.yM)(), v = (0, R._R)(), {
+        messageId: T,
+        transitionState: O,
+        onClose: v
+    } = t, P = (0, c.A)(), h = (0, u.yM)(), p = (0, R._R)(), {
         enabled: N
     } = _.Y.useConfig({
         location: "ExplicitMediaLearnMoreModal"
-    }), S = (0, I.W)(g.intl.string(g.t.KPGVWl), g.intl.string(g.t["9KiIz6"])), b = i.useMemo(() => p && v, [p, v]), D = i.useCallback(t => {
+    }), S = (0, I.W)(g.intl.string(g.t.KPGVWl), g.intl.string(g.t["9KiIz6"])), b = i.useMemo(() => h && p, [h, p]), D = i.useCallback(t => {
         (0, R.hv)({
             action: t,
             channelId: e,
-            messageId: O
+            messageId: T
         })
-    }, [e, O]), m = i.useCallback(() => {
-        P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.mMO)(async () => {
+    }, [e, T]), m = i.useCallback(() => {
+        v(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.mMO)(async () => {
             let {
                 default: t
             } = await n(652442);
@@ -62,30 +62,30 @@ let O = t => {
                 return t
             }({
                 channelId: e,
-                messageId: O
+                messageId: T
             }, n))
         })
-    }, [e, O, P, D]);
+    }, [e, T, v, D]);
     return i.useEffect(() => {
         (0, R.hv)({
             action: R.rY.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
             channelId: e,
-            messageId: O
+            messageId: T
         })
-    }, [e, O]), (0, r.jsx)(l.Modal, {
+    }, [e, T]), (0, r.jsx)(l.Modal, {
         title: g.intl.string(g.t.sGW77l),
         subtitle: function() {
             if (b) return g.intl.format(N ? g.t.KEPOlE : g.t["1L0huf"], {
                 handleOnHelpUrlHook: () => {
-                    E.A.openUrl(L.A.getArticleURL(M.MVz.TIGGER_PAWTECT_LEARN_MORE)), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
+                    E.A.openUrl(L.A.getArticleURL(f.MVz.TIGGER_PAWTECT_LEARN_MORE)), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
                 }
             });
             let t = g.intl.string(g.t.RUw0ZC),
                 e = g.intl.string(g.t["E/oQYL"]);
-            return h ? t : e
+            return P ? t : e
         }(),
         actions: [function() {
-            if (!v && !b) return {
+            if (!p && !b) return {
                 text: g.intl.string(g.t.ZH7P2h),
                 onClick: m,
                 variant: "secondary"
@@ -93,27 +93,27 @@ let O = t => {
         }(), b ? {
             text: S,
             onClick: function() {
-                P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), E.A.showAgeVerificationGetStartedModal({
+                v(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), E.A.showAgeVerificationGetStartedModal({
                     entryPoint: s.q1.SENSITIVE_MEDIA_LEARN_MORE
                 })
             }
-        } : h ? {
+        } : P ? {
             text: g.intl.string(g.t["9D+zGX"]),
             onClick: function() {
                 D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS);
                 let t = (0, d.WJ)("ExplicitMediaLearnMoreModal");
                 (0, C.openUserSettings)(t ? A.X.CONTENT_AND_SOCIAL_CONTENT_FILTERS_SETTING : A.X.CONTENT_AND_SOCIAL_PANEL, {
-                    section: M.nc_.CONTENT_AND_SOCIAL,
-                    scrollPosition: t ? void 0 : T.d1.EXPLICIT_MEDIA_REDACTION_V2
-                }), P()
+                    section: f.nc_.CONTENT_AND_SOCIAL,
+                    scrollPosition: t ? void 0 : M.d1.EXPLICIT_MEDIA_REDACTION_V2
+                }), v()
             }
         } : {
             text: g.intl.string(g.t.hvVgAZ),
             onClick: () => {
-                (0, a.A)(L.A.getArticleURL(M.MVz.EXPLICIT_MEDIA_REDACTION))
+                (0, a.A)(L.A.getArticleURL(f.MVz.EXPLICIT_MEDIA_REDACTION))
             }
         }].filter(t => void 0 !== t),
-        onClose: () => (P(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS), Promise.resolve()),
-        transitionState: f
+        onClose: () => (v(), D(R.rY.EXPLICIT_MEDIA_LEARN_MORE_CLICK_DISMISS), Promise.resolve()),
+        transitionState: O
     })
 }

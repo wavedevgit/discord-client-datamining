@@ -20,9 +20,9 @@ Object.defineProperty(t, "__esModule", {
     value: !0
 }), t.validateFileType = void 0;
 let a = n(835986),
-    s = n(817762);
+    o = n(817762);
 
-function o(e) {
+function s(e) {
     return e.some(e => "MP4" === e) ? ["M4V"] : e.some(e => "AAC" === e) ? ["M4A"] : []
 }
 i(n(524016), t), i(n(330821), t), i(n(549195), t), i(n(650624), t), i(n(212749), t), t.validateFileType = function(e, t, n) {
@@ -37,7 +37,7 @@ i(n(524016), t), i(n(330821), t), i(n(549195), t), i(n(650624), t), i(n(212749),
     }
     if (n && Object.prototype.hasOwnProperty.call(n, "chunkSize") && (null != (r = null == n ? void 0 : n.chunkSize) ? r : 0) <= 0) throw RangeError("chunkSize must be bigger than zero");
     if (!n || !(null == n ? void 0 : n.excludeSimilarTypes)) {
-        let e = o(i);
+        let e = s(i);
         e.length > 0 && (i = i.concat(e))
     }
     let l = [],
@@ -46,7 +46,7 @@ i(n(524016), t), i(n(330821), t), i(n(549195), t), i(n(650624), t), i(n(212749),
         let t = a.FileTypes.getSignaturesByName(e);
         l = l.concat(t), a.FILE_TYPES_REQUIRED_ADDITIONAL_CHECK.includes(e.toLowerCase()) && c.push(a.FileTypes.getInfoByName(e))
     }
-    let u = (0, s.getFileChunk)(e, (null == n ? void 0 : n.chunkSize) || 64),
+    let u = (0, o.getFileChunk)(e, (null == n ? void 0 : n.chunkSize) || 64),
         d = a.FileTypes.detectSignature(u, l);
     if (!d) return !1;
     if (c.length > 0) {

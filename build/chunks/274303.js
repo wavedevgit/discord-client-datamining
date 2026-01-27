@@ -6,8 +6,8 @@ n.d(t, {
     A: () => N,
     U: () => h
 }), n(321073);
-var a, s = n(247775),
-    o = n(311907),
+var a, o = n(247775),
+    s = n(311907),
     l = n(73153),
     c = n(111613),
     u = n(50502);
@@ -99,7 +99,7 @@ function b(e) {
             id: n
         } = t;
         return n !== e
-    }), s.removeToken(e)
+    }), o.removeToken(e)
 }
 
 function O(e) {
@@ -158,7 +158,7 @@ function T(e) {
         pushSyncToken: null
     }) : e)
 }
-class C extends(a = o.Ay.PersistedStore) {
+class C extends(a = s.Ay.PersistedStore) {
     initialize(e) {
         if (null != e) {
             var t;

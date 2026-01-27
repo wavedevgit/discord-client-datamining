@@ -4,8 +4,8 @@
 var r = n(344815),
     i = n(339626),
     a = n(647055),
-    s = n(380744)("toStringTag"),
-    o = Object,
+    o = n(380744)("toStringTag"),
+    s = Object,
     l = "Arguments" === a(function() {
         return arguments
     }()),
@@ -16,5 +16,5 @@ var r = n(344815),
     };
 e.exports = r ? a : function(e) {
     var t, n, r;
-    return void 0 === e ? "Undefined" : null === e ? "Null" : "string" == typeof(n = c(t = o(e), s)) ? n : l ? a(t) : "Object" === (r = a(t)) && i(t.callee) ? "Arguments" : r
+    return void 0 === e ? "Undefined" : null === e ? "Null" : "string" == typeof(n = c(t = s(e), o)) ? n : l ? a(t) : "Object" === (r = a(t)) && i(t.callee) ? "Arguments" : r
 }

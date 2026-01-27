@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 914280, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     O4: "sideNavContent_dc2e0e",
     kL: "container_dc2e0e",

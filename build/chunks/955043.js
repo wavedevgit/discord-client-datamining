@@ -1,7 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 955043, original params: e (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 955043, original params: t (module,exports,require) **/
 "use strict";
-e.exports = {
+t.exports = {
     BOLD: {
         fontWeight: "bold"
     },

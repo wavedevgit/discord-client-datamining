@@ -2,16 +2,16 @@
 /** chunk id: 310527, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Je: () => s,
+    Je: () => o,
     OH: () => l,
-    fx: () => o,
+    fx: () => s,
     zf: () => c
 });
 var r = n(562465),
     i = n(73153),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     return r.Bo.get({
         url: a.Rsh.GUILD_VANITY_URL(e),
         oldFormErrors: !0,
@@ -33,7 +33,7 @@ function s(e) {
     })
 }
 
-function o() {
+function s() {
     i.h.dispatch({
         type: "GUILD_SETTINGS_VANITY_URL_RESET"
     })

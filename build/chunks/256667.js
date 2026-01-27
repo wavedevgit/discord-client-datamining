@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(734057),
     i = n(430452),
     a = n(383501),
-    s = n(487329),
-    o = n(601900);
+    o = n(487329),
+    s = n(601900);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -38,8 +38,8 @@ let u = {
             voiceState: n
         } = e, l = r.A.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = a.A.getMediaSessionId();
         if (null != l && null != d && !1 === i.A.getInputDetected() && !u && !i.A.isSelfMute()) return [c({
-            type: s.iy.NO_AUDIO_INPUT_DETECTED
-        }, (0, o.jY)())]
+            type: o.iy.NO_AUDIO_INPUT_DETECTED
+        }, (0, s.jY)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId, ":").concat(e.audioInputDeviceName)
 }

@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 964758, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -17,30 +17,30 @@ var r = n(627968),
     m = n(67097),
     p = n(244912),
     f = n(963175),
-    b = n(985018);
+    h = n(985018);
 
-function h() {
+function b() {
     var e;
     let {
         editStateId: t
-    } = (0, u.O)(), [n, l] = g.V_(t), [h, x] = g.hh(t), j = (0, c.dL)(t), {
+    } = (0, u.O)(), [n, l] = g.V_(t), [b, x] = g.hh(t), j = (0, c.dL)(t), {
         options: _
     } = (0, p.A)(null != (e = null == j ? void 0 : j.active_trial) ? e : null), O = (0, m.A)(), v = null != n, y = i.useCallback(e => {
         let t = _.find(e => e.isDefault);
         s()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
     }, [l, _]), A = (0, d.gN)(), E = (0, o.GV)(), N = (0, o.GV)();
     return (0, r.jsxs)(f.A, {
-        title: b.intl.string(b.t["6anton"]),
-        description: b.intl.string(b.t.urVijS),
+        title: h.intl.string(h.t["6anton"]),
+        description: h.intl.string(h.t.urVijS),
         children: [(0, r.jsx)(a.dOG, {
-            label: b.intl.string(b.t["+hTmdb"]),
+            label: h.intl.string(h.t["+hTmdb"]),
             checked: v,
             onChange: e => y(e),
             disabled: A
         }), (0, r.jsx)(a.l6P, {
             selectionMode: "single",
-            label: b.intl.string(b.t.m1KuWd),
-            description: b.intl.string(b.t.NB9NLF),
+            label: h.intl.string(h.t.m1KuWd),
+            description: h.intl.string(h.t.NB9NLF),
             "aria-labelledby": E,
             options: _,
             formatOption: e => {
@@ -54,7 +54,7 @@ function h() {
                     label: n
                 }
             },
-            placeholder: b.intl.string(b.t.WZG1BU),
+            placeholder: h.intl.string(h.t.WZG1BU),
             value: n,
             onSelectionChange: l,
             maxOptionsVisible: 5,
@@ -63,8 +63,8 @@ function h() {
             size: 24
         }), (0, r.jsx)(a.l6P, {
             selectionMode: "single",
-            label: b.intl.string(b.t["/JD9oe"]),
-            description: b.intl.string(b.t.Cg5eBm),
+            label: h.intl.string(h.t["/JD9oe"]),
+            description: h.intl.string(h.t.Cg5eBm),
             "aria-labelledby": N,
             options: O,
             formatOption: e => {
@@ -78,7 +78,7 @@ function h() {
                     label: n
                 }
             },
-            value: h,
+            value: b,
             onSelectionChange: x,
             maxOptionsVisible: 5,
             disabled: !v || A

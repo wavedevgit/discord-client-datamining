@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(313961),
     i = n(652896),
     a = n(616356),
-    s = n(961350),
-    o = n(162605),
+    o = n(961350),
+    s = n(162605),
     l = n(650338),
     c = n(487329),
     u = n(601900),
@@ -39,8 +39,8 @@ function _(e) {
 let h = {
     getActiveErrors: () => (0, d.D$)() ? a.A.getAllActiveStreams().reduce((e, t) => {
         var n;
-        let a = null == (n = o.A.getRTCConnection((0, i._z)(t))) ? void 0 : n.getMediaEngineConnectionId();
-        if (null == a || t.ownerId === s.default.getId() || t.state === f.XYD.PAUSED) return e;
+        let a = null == (n = s.A.getRTCConnection((0, i._z)(t))) ? void 0 : n.getMediaEngineConnectionId();
+        if (null == a || t.ownerId === o.default.getId() || t.state === f.XYD.PAUSED) return e;
         let p = (0, d.xA)(a, t.ownerId);
         if (null == p) return e;
         let h = r.A.getParticipant(t.channelId, (0, i._z)(t));

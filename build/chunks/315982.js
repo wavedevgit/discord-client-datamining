@@ -9,9 +9,9 @@ var r = n(627968);
 n(64700);
 var i = n(192308),
     a = n(204925),
-    s = n(818348);
+    o = n(818348);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -27,7 +27,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -41,7 +41,7 @@ function c(e) {
         return t => (0, r.jsx)(e, l({}, t))
     }, {
         modalKey: a.jc,
-        onCloseRequest: s.tE,
+        onCloseRequest: o.tE,
         onCloseCallback: e
     })
 }
@@ -57,7 +57,7 @@ function u() {
             claimRequired: e
         }, n))
     }, {
-        onCloseRequest: e ? s.tE : null,
+        onCloseRequest: e ? o.tE : null,
         onCloseCallback: t
     })
 }

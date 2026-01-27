@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(752238),
+    o = n.n(a),
+    s = n(752238),
     l = n(433904);
 
 function c(e) {
@@ -17,8 +17,8 @@ function c(e) {
         onChange: n
     } = e, a = "json", c = i.useRef(null), [u, d] = i.useState("");
     i.useEffect(() => {
-        if (null != t && o.default.hasLanguage(a)) {
-            let e = o.default.highlight(a, t, !0);
+        if (null != t && s.default.hasLanguage(a)) {
+            let e = s.default.highlight(a, t, !0);
             null != e ? d(e.value + "\n") : d(t + "\n")
         } else d(t + "\n")
     }, [t, a]);
@@ -40,13 +40,13 @@ function c(e) {
                     let e = t.lastIndexOf("\n", i - 1) + 1,
                         r = t.indexOf("\n", i),
                         a = t.substring(e, -1 === r ? t.length : r),
-                        s = 0;
+                        o = 0;
                     for (let e = 0; e < Math.min(2, a.length); e++)
-                        if (" " === a[e]) s++;
+                        if (" " === a[e]) o++;
                         else break;
-                    s > 0 && (n(t.substring(0, e) + t.substring(e + s)), setTimeout(() => {
+                    o > 0 && (n(t.substring(0, e) + t.substring(e + o)), setTimeout(() => {
                         if (null != c.current) {
-                            let t = Math.max(e, i - s);
+                            let t = Math.max(e, i - o);
                             c.current.selectionStart = c.current.selectionEnd = t
                         }
                     }, 0))
@@ -61,7 +61,7 @@ function c(e) {
             className: l.c5,
             "aria-hidden": "true",
             children: (0, r.jsx)("code", {
-                className: s()("hljs", a),
+                className: o()("hljs", a),
                 dangerouslySetInnerHTML: {
                     __html: null != u ? u : ""
                 }

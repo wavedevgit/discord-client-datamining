@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
-/** chunk id: 974544, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => d
+/** Chunk was on 98797 **/
+/** chunk id: 974544, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => c
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(397927),
+    l = n.n(i),
+    a = n(397927),
     o = n(780964),
-    l = n(840065),
-    c = n(985018),
-    u = n(391870);
+    u = n(840065),
+    s = n(985018),
+    d = n(391870);
 
-function d(e) {
+function c(t) {
     let {
-        disableButton: t
-    } = e, n = () => {
-        !0 !== t && (0, l.openUserSettings)(o.X.STREAMER_MODE_PANEL)
-    };
+        disableButton: e
+    } = t;
     return (0, r.jsxs)("div", {
-        className: u.IG,
+        className: d.IG,
         children: [(0, r.jsx)("div", {
-            className: u.TE
-        }), (0, r.jsx)(s.DUT, {
-            className: a()(u.Ac, {
-                [u.r9]: t
+            className: d.TE
+        }), (0, r.jsx)(a.DUT, {
+            className: l()(d.Ac, {
+                [d.r9]: e
             }),
-            onClick: n,
-            children: c.intl.string(c.t.Br1ls3)
+            onClick: () => {
+                !0 !== e && (0, u.openUserSettings)(o.X.STREAMER_MODE_PANEL)
+            },
+            children: s.intl.string(s.t.Br1ls3)
         })]
     })
 }

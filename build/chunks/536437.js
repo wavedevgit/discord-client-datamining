@@ -2,7 +2,7 @@
 /** chunk id: 536437, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(835245);
 
@@ -21,7 +21,7 @@ function a(e) {
         sessionId: (0, r.A)()
     }
 }
-class s {
+class o {
     getForumChannelSessionId(e) {
         return null == this.session && (this.session = a(e)), this.session.channelId !== e && (this.session = a(e)), this.session.sessionId
     }
@@ -29,4 +29,4 @@ class s {
         i(this, "session", void 0)
     }
 }
-let o = new s
+let s = new o

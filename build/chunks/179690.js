@@ -1,85 +1,73 @@
-/** Chunk was on web.js **/
-/** chunk id: 179690, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ay: () => f,
-    sy: () => d
-}), n(65821);
-var r = n(627968);
-n(64700);
-var i = n(397927),
-    a = n(652215);
+/** Chunk was on 91699 **/
+/** chunk id: 179690, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    Ay: () => s,
+    sy: () => a
+}), r(65821);
+var n = r(627968);
+r(64700);
+var i = r(397927),
+    l = r(652215);
 
-function s(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function o(e) {
+function c(e) {
     for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            s(e, t, n[t])
+        var r = null != arguments[t] ? arguments[t] : {},
+            n = Object.keys(r);
+        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(r, e).enumerable
+        }))), n.forEach(function(t) {
+            var n;
+            n = r[t], t in e ? Object.defineProperty(e, t, {
+                value: n,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = n
         })
     }
     return e
 }
 
-function l(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+function o(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+        var r = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+            var n = Object.getOwnPropertySymbols(e);
+            r.push.apply(r, n)
+        }
+        return r
+    })(Object(t)).forEach(function(r) {
+        Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
     }), e
 }
 
-function u() {
-    return new Promise(e => {
-        (0, i.mMO)(async () => {
-            let {
-                default: t
-            } = await Promise.all([n.e("14882"), n.e("78811")]).then(n.bind(n, 333737));
-            return n => (0, r.jsx)(t, c(o({}, n), {
-                handleEnableMFASuccess: e
-            }))
-        })
-    })
-}
-
-function d() {
+function a() {
     let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
     return new Promise(t => {
         (0, i.mMO)(async () => {
             let {
                 default: t
-            } = await n.e("28429").then(n.bind(n, 549404));
-            return n => (0, r.jsx)(t, c(o({}, n), {
+            } = await r.e("28429").then(r.bind(r, 549404));
+            return r => (0, n.jsx)(t, o(c({}, r), {
                 isTotp: e
             }))
         }, {
             onCloseCallback: t,
-            onCloseRequest: a.FXj
+            onCloseRequest: l.FXj
         })
     })
 }
-let f = {
+let s = {
     enableMFA: async function() {
-        await u(), await d()
+        await new Promise(e => {
+            (0, i.mMO)(async () => {
+                let {
+                    default: t
+                } = await Promise.all([r.e("14882"), r.e("78811")]).then(r.bind(r, 333737));
+                return r => (0, n.jsx)(t, o(c({}, r), {
+                    handleEnableMFASuccess: e
+                }))
+            })
+        }), await a()
     }
 }

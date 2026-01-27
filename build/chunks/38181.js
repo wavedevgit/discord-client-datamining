@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,27 +15,27 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = [],
+let s = [],
     l = null;
 
 function c(e) {
     let {
         categories: t
     } = e;
-    o = t, l = Date.now()
+    s = t, l = Date.now()
 }
 class u extends(r = i.Ay.Store) {
     getLastFetchTimeMs() {
         return l
     }
     getCategories() {
-        return o
+        return s
     }
     getCategory(e) {
-        return o.find(t => t.id === e)
+        return s.find(t => t.id === e)
     }
 }
-s(u, "displayName", "ApplicationDirectoryCategoriesStore");
+o(u, "displayName", "ApplicationDirectoryCategoriesStore");
 let d = new u(a.h, {
     APPLICATION_DIRECTORY_FETCH_CATEGORIES_SUCCESS: c
 })

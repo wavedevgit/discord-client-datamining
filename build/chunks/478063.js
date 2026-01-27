@@ -1,98 +1,39 @@
-/** Chunk was on web.js **/
-/** chunk id: 478063, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => S
+/** Chunk was on 96758 **/
+/** chunk id: 478063, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => y
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(97808),
-    l = n(863610),
-    c = n(397927),
-    u = n(573435);
-n(883392);
-var d = n(657323);
+var n = r(627968),
+    l = r(64700),
+    s = r(503698),
+    i = r.n(s),
+    a = r(97808),
+    u = r(863610),
+    o = r(397927),
+    c = r(573435);
+r(883392);
+var A = r(657323);
+let f = {},
+    h = 1 / 4;
 
-function f(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function p(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            f(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function _(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = h(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function h(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-let m = {};
-
-function g(e, t, n) {
-    let r = c.vCh[e],
-        i = r.size / 1.5,
-        a = +i,
-        s = .5 * i,
-        l = s + a / 2,
-        u = {
-            statusCoords: (0, o.Rb)(r, c.clD.ONLINE, !1, t),
-            frontAvatarSizePx: a,
-            backAvatarSizePx: i,
-            frontAvatarOffsetPx: s,
-            frontAvatarCenter: l
-        };
-    return m[n] = u, u
-}
-let E = 1 / 4;
-
-function y(e) {
+function d(e) {
     let {
         height: t,
-        fillColor: n
+        fillColor: r
     } = e;
-    return (0, r.jsx)("div", {
+    return (0, n.jsx)("div", {
         style: {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
             borderRadius: t / 2,
-            backgroundColor: n,
+            backgroundColor: r,
             height: t,
             width: 2.5 * t
         },
-        children: (0, r.jsx)(l.n, {
-            className: d.r$,
-            dotRadius: t * E
+        children: (0, n.jsx)(u.n, {
+            className: A.r$,
+            dotRadius: t * h
         })
     })
 }
@@ -100,179 +41,211 @@ function y(e) {
 function b(e) {
     let {
         isTyping: t,
-        statusCoords: n,
-        status: i
-    } = e, a = (0, c.S31)(c.clD.ONLINE);
-    return t ? (0, r.jsx)("div", {
+        statusCoords: r,
+        status: l
+    } = e, s = (0, o.S31)(o.clD.ONLINE);
+    return t ? (0, n.jsx)("div", {
         style: {
             position: "absolute",
-            top: n.y,
-            left: n.x
+            top: r.y,
+            left: r.x
         },
-        children: (0, r.jsx)(y, {
-            height: n.height,
-            fillColor: a
+        children: (0, n.jsx)(d, {
+            height: r.height,
+            fillColor: s
         })
-    }) : null != i ? (0, r.jsx)(c.nW6, {
-        size: n.height,
-        status: i,
+    }) : null != l ? (0, n.jsx)(o.nW6, {
+        size: r.height,
+        status: l,
         style: {
             position: "absolute",
-            top: n.y,
-            left: n.x
+            top: r.y,
+            left: r.x
         }
     }) : null
 }
 
-function O(e) {
+function _(e) {
     let {
         src: t,
-        size: n
+        size: r
     } = e;
-    return (0, r.jsx)("img", {
-        className: d.tM,
+    return (0, n.jsx)("img", {
+        className: A.tM,
         src: t,
         alt: "",
-        width: n,
-        height: n
+        width: r,
+        height: r
     })
 }
-let v = {
-    [c._3J.SIZE_16]: {
-        default: u.hW.DIAGONAL_FACEPILE_16,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_16,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_16,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_16
+let p = {
+        [o._3J.SIZE_16]: {
+            default: c.hW.DIAGONAL_FACEPILE_16,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_16,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_16,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_16
+        },
+        [o._3J.SIZE_20]: {
+            default: c.hW.DIAGONAL_FACEPILE_20,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_20,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_20,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_20
+        },
+        [o._3J.SIZE_24]: {
+            default: c.hW.DIAGONAL_FACEPILE_24,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_24,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_24,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_24
+        },
+        [o._3J.SIZE_32]: {
+            default: c.hW.DIAGONAL_FACEPILE_32,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_32,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_32,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_32
+        },
+        [o._3J.SIZE_40]: {
+            default: c.hW.DIAGONAL_FACEPILE_32,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_32,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_32,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_32
+        },
+        [o._3J.SIZE_48]: {
+            default: c.hW.DIAGONAL_FACEPILE_40,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_40,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_40,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_40
+        },
+        [o._3J.SIZE_56]: {
+            default: c.hW.DIAGONAL_FACEPILE_56,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_56,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_56,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_56
+        },
+        [o._3J.SIZE_72]: {
+            default: c.hW.DIAGONAL_FACEPILE_72,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_72,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_72,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_72
+        },
+        [o._3J.SIZE_80]: {
+            default: c.hW.DIAGONAL_FACEPILE_80,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_80,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_80,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_80
+        },
+        [o._3J.SIZE_96]: {
+            default: c.hW.DIAGONAL_FACEPILE_96,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_96,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_96,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_96
+        },
+        [o._3J.SIZE_120]: {
+            default: c.hW.DIAGONAL_FACEPILE_120,
+            typing: c.hW.DIAGONAL_FACEPILE_TYPING_120,
+            status: c.hW.DIAGONAL_FACEPILE_STATUS_120,
+            back: c.hW.DIAGONAL_FACEPILE_BACK_120
+        }
     },
-    [c._3J.SIZE_20]: {
-        default: u.hW.DIAGONAL_FACEPILE_20,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_20,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_20,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_20
-    },
-    [c._3J.SIZE_24]: {
-        default: u.hW.DIAGONAL_FACEPILE_24,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_24,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_24,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_24
-    },
-    [c._3J.SIZE_32]: {
-        default: u.hW.DIAGONAL_FACEPILE_32,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_32,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_32,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_32
-    },
-    [c._3J.SIZE_40]: {
-        default: u.hW.DIAGONAL_FACEPILE_32,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_32,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_32,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_32
-    },
-    [c._3J.SIZE_48]: {
-        default: u.hW.DIAGONAL_FACEPILE_40,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_40,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_40,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_40
-    },
-    [c._3J.SIZE_56]: {
-        default: u.hW.DIAGONAL_FACEPILE_56,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_56,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_56,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_56
-    },
-    [c._3J.SIZE_72]: {
-        default: u.hW.DIAGONAL_FACEPILE_72,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_72,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_72,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_72
-    },
-    [c._3J.SIZE_80]: {
-        default: u.hW.DIAGONAL_FACEPILE_80,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_80,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_80,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_80
-    },
-    [c._3J.SIZE_96]: {
-        default: u.hW.DIAGONAL_FACEPILE_96,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_96,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_96,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_96
-    },
-    [c._3J.SIZE_120]: {
-        default: u.hW.DIAGONAL_FACEPILE_120,
-        typing: u.hW.DIAGONAL_FACEPILE_TYPING_120,
-        status: u.hW.DIAGONAL_FACEPILE_STATUS_120,
-        back: u.hW.DIAGONAL_FACEPILE_BACK_120
-    }
-};
-
-function A(e) {
-    return v[e].back
-}
-
-function I(e, t, n) {
-    return t ? v[n].typing : e ? v[n].status : v[n].default
-}
-let S = function(e) {
-    let {
-        backSrc: t,
-        frontSrc: n,
-        size: a,
-        isTyping: o,
-        status: l,
-        style: f,
-        className: h
-    } = e, E = _(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]), {
-        size: y
-    } = c.vCh[a], {
-        statusCoords: v,
-        frontAvatarOffsetPx: S,
-        frontAvatarSizePx: T,
-        backAvatarSizePx: C
-    } = i.useMemo(() => {
-        var e;
-        let t = "".concat(y, "-").concat(o);
-        return null != (e = m[t]) ? e : g(a, o, t)
-    }, [y, o, a]), N = I(null != l, o, a), w = A(a);
-    return (0, r.jsxs)("div", {
-        style: p({
-            width: y,
-            height: y
-        }, f),
-        "aria-label": E["aria-label"],
-        "aria-hidden": E["aria-hidden"],
-        className: s()(d.kL, h),
-        children: [(0, r.jsxs)(u.Ay, {
-            mask: N,
-            height: y,
-            width: y,
-            children: [(0, r.jsx)(u.Ay, {
-                mask: w,
-                height: y,
-                width: y,
-                children: (0, r.jsx)("img", {
-                    src: t,
-                    alt: "",
-                    width: C,
-                    height: C
-                })
-            }), (0, r.jsx)("div", {
-                style: {
-                    position: "absolute",
-                    top: S,
-                    left: S
-                },
-                children: (0, r.jsx)(O, {
-                    src: n,
-                    size: T,
-                    isTyping: o,
-                    status: l
-                })
+    y = function(e) {
+        var t;
+        let {
+            backSrc: r,
+            frontSrc: s,
+            size: u,
+            isTyping: h,
+            status: d,
+            style: y,
+            className: O
+        } = e, E = function(e, t) {
+            if (null == e) return {};
+            var r, n, l, s = {};
+            if ("u" > typeof Reflect && Reflect.ownKeys) {
+                for (l = 0, r = Reflect.ownKeys(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+                return s
+            }
+            if (s = function(e, t) {
+                    if (null == e) return {};
+                    var r, n, l = {},
+                        s = Object.getOwnPropertyNames(e);
+                    for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
+                    return l
+                }(e, t), Object.getOwnPropertySymbols)
+                for (l = 0, r = Object.getOwnPropertySymbols(e); l < r.length; l++) n = r[l], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
+            return s
+        }(e, ["backSrc", "frontSrc", "size", "isTyping", "status", "style", "className"]), {
+            size: I
+        } = o.vCh[u], {
+            statusCoords: L,
+            frontAvatarOffsetPx: g,
+            frontAvatarSizePx: m,
+            backAvatarSizePx: P
+        } = l.useMemo(() => {
+            var e;
+            let t, r, n, l, s, i = "".concat(I, "-").concat(h);
+            return null != (e = f[i]) ? e : (n = +(r = (t = o.vCh[u]).size / 1.5), l = .5 * r, s = {
+                statusCoords: (0, a.Rb)(t, o.clD.ONLINE, !1, h),
+                frontAvatarSizePx: n,
+                backAvatarSizePx: r,
+                frontAvatarOffsetPx: l,
+                frontAvatarCenter: l + n / 2
+            }, f[i] = s, s)
+        }, [I, h, u]), N = (t = null != d, h ? p[u].typing : t ? p[u].status : p[u].default), j = p[u].back;
+        return (0, n.jsxs)("div", {
+            style: function(e) {
+                for (var t = 1; t < arguments.length; t++) {
+                    var r = null != arguments[t] ? arguments[t] : {},
+                        n = Object.keys(r);
+                    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+                        return Object.getOwnPropertyDescriptor(r, e).enumerable
+                    }))), n.forEach(function(t) {
+                        var n;
+                        n = r[t], t in e ? Object.defineProperty(e, t, {
+                            value: n,
+                            enumerable: !0,
+                            configurable: !0,
+                            writable: !0
+                        }) : e[t] = n
+                    })
+                }
+                return e
+            }({
+                width: I,
+                height: I
+            }, y),
+            "aria-label": E["aria-label"],
+            "aria-hidden": E["aria-hidden"],
+            className: i()(A.kL, O),
+            children: [(0, n.jsxs)(c.Ay, {
+                mask: N,
+                height: I,
+                width: I,
+                children: [(0, n.jsx)(c.Ay, {
+                    mask: j,
+                    height: I,
+                    width: I,
+                    children: (0, n.jsx)("img", {
+                        src: r,
+                        alt: "",
+                        width: P,
+                        height: P
+                    })
+                }), (0, n.jsx)("div", {
+                    style: {
+                        position: "absolute",
+                        top: g,
+                        left: g
+                    },
+                    children: (0, n.jsx)(_, {
+                        src: s,
+                        size: m,
+                        isTyping: h,
+                        status: d
+                    })
+                })]
+            }), (0, n.jsx)(b, {
+                statusCoords: L,
+                status: d,
+                isTyping: h
             })]
-        }), (0, r.jsx)(b, {
-            statusCoords: v,
-            status: l,
-            isTyping: o
-        })]
-    })
-}
+        })
+    }

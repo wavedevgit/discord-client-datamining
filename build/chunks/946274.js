@@ -8,8 +8,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(817363),
-    o = n(693591),
+    o = n(817363),
+    s = n(693591),
     l = n(985018);
 
 function c(e, t, n) {
@@ -40,7 +40,7 @@ function d(e, t) {
 
 function f(e, t, n) {
     d(e, r => {
-        if (e.type === o.a.MP4) return t(r, e);
+        if (e.type === s.a.MP4) return t(r, e);
         let i = new Image;
         i.src = r, i.onload = () => {
             t(r, e)
@@ -64,13 +64,13 @@ class p extends(r = a.PureComponent) {
             className: n,
             tabIndex: r,
             "aria-label": a,
-            filters: o
+            filters: s
         } = this.props;
-        return (0, i.jsx)(s.A, {
+        return (0, i.jsx)(o.A, {
             ref: this._ref,
             onClick: this.props.onClick,
             onChange: this.handleFileChange,
-            filters: null != o ? o : u(),
+            filters: null != s ? s : u(),
             multiple: e,
             disabled: t,
             className: n,

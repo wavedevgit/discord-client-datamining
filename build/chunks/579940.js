@@ -2,26 +2,26 @@
 /** chunk id: 579940, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Y0: () => o,
+    Y0: () => s,
     gf: () => l,
     nQ: () => c
 });
 var r = n(64700),
     i = n(353640),
     a = n(121894);
-let s = Object.freeze({
+let o = Object.freeze({
         id: null,
         activeDescendant: null
     }),
-    o = (0, i.v)(() => s);
+    s = (0, i.v)(() => o);
 
 function l(e, t, n) {
     (0, r.useEffect)(() => {
         (0, a.r)(() => {
-            t ? o.setState({
+            t ? s.setState({
                 id: e,
                 activeDescendant: n
-            }) : o.setState({
+            }) : s.setState({
                 id: null,
                 activeDescendant: null
             })
@@ -30,5 +30,5 @@ function l(e, t, n) {
 }
 
 function c() {
-    (0, a.r)(() => o.setState(() => s))
+    (0, a.r)(() => s.setState(() => o))
 }

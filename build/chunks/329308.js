@@ -3,13 +3,13 @@
 "use strict";
 n.d(t, {
     SV: () => l,
-    t1: () => o
+    t1: () => s
 }), n(65821);
 var r = n(315069),
     i = n(652215),
     a = n(654487);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,11 +17,11 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-var o = function(e) {
+var s = function(e) {
     return e.SHOP = "SHOP", e.SHOP_ORBS_TAB = "SHOP_ORBS_TAB", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.QUEST_ORBS = "QUEST_ORBS", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e.PLAYGROUND = "PLAYGROUND", e
-}(o || {});
+}(s || {});
 class l extends r.A {
-    static fromType(e, t, n, r, s) {
+    static fromType(e, t, n, r, o) {
         switch (e) {
             case "SHOP":
                 return new l({
@@ -55,7 +55,7 @@ class l extends r.A {
                     type: "PLAYGROUND",
                     label: n,
                     collectionId: r,
-                    IconComponent: s
+                    IconComponent: o
                 });
             case "SHOP_ORBS_TAB":
                 return new l({
@@ -72,6 +72,6 @@ class l extends r.A {
         }
     }
     constructor(e) {
-        super(), s(this, "id", void 0), s(this, "path", void 0), s(this, "type", void 0), s(this, "label", void 0), s(this, "collectionId", void 0), s(this, "IconComponent", void 0), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
+        super(), o(this, "id", void 0), o(this, "path", void 0), o(this, "type", void 0), o(this, "label", void 0), o(this, "collectionId", void 0), o(this, "IconComponent", void 0), this.id = null != e.collectionId ? "".concat(e.type, "_").concat(e.collectionId) : e.type, this.path = e.path, this.type = e.type, this.label = e.label, this.collectionId = e.collectionId, this.IconComponent = e.IconComponent
     }
 }

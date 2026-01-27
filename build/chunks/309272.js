@@ -1,39 +1,38 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 309272, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => m
 });
 var r = n(627968);
 n(64700);
 var i = n(632553),
-    a = n(171316),
+    l = n(171316),
     s = n(975571),
-    o = n(253932),
-    l = n(871930),
+    a = n(253932),
+    o = n(871930),
     c = n(578746),
-    u = n(531525),
-    d = n(652215),
-    f = n(985018),
+    d = n(531525),
+    u = n(652215),
+    _ = n(985018),
     p = n(842130);
 
-function _() {
-    let e = o.H1.useSetting(),
-        t = (0, a.uM)(),
-        n = f.t.sJYh5t,
-        _ = f.t.cf9mvV,
-        h = (0, i.g)();
-    return (0, r.jsx)(l.h, {
-        setting: u.H.PRIVACY_DATA_QUESTS_V2,
+function m() {
+    let e = a.H1.useSetting(),
+        t = (0, l.uM)(),
+        n = _.t.sJYh5t,
+        m = _.t.cf9mvV,
+        g = (0, i.g)();
+    return (0, r.jsx)(o.h, {
+        setting: d.H.PRIVACY_DATA_QUESTS_V2,
         children: (0, r.jsx)(c.Ay, {
-            title: f.intl.string(n),
-            note: f.intl.format(_, {
-                helpdeskArticle: s.A.getArticleURL(d.MVz.QUESTS_PRIVACY_CONTROLS)
+            title: _.intl.string(n),
+            note: _.intl.format(m, {
+                helpdeskArticle: s.A.getArticleURL(u.MVz.QUESTS_PRIVACY_CONTROLS)
             }),
             value: !e,
-            onChange: e => o.H1.updateSetting(!e),
-            disabled: h || t,
-            tooltipText: t ? f.intl.string(p.default["6Af/cw"]) : void 0
+            onChange: e => a.H1.updateSetting(!e),
+            disabled: g || t,
+            tooltipText: t ? _.intl.string(p.default["6Af/cw"]) : void 0
         })
     })
 }

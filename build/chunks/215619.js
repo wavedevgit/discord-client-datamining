@@ -24,16 +24,16 @@ function a(e, t, n, r) {
     for (let a = 0; a < t; ++a) r[a] = i(e, n[a])
 }
 
-function s(e) {
+function o(e) {
     return e <= 0 ? 1 : (e--, e |= e >> 1, e |= e >> 2, e |= e >> 4, e |= e >> 8, e |= e >> 16, ++e)
 }
 n.d(t, {
-    M: () => o
+    M: () => s
 }), n(65821), n(927092), n(212978), n(834879), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
-class o {
+class s {
     static createEstimate(e, t) {
         if (e <= 0 || e >= 1 || t <= 0 || t >= 1) throw Error("Epsilon and delta must be between 0 and 1 (exclusive)");
-        return new o(s(Math.ceil(Math.E / e)), Math.ceil(Math.log(1 / t)))
+        return new s(o(Math.ceil(Math.E / e)), Math.ceil(Math.log(1 / t)))
     }
     update(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1;
@@ -79,13 +79,13 @@ class o {
     }
     static fromJSON(e) {
         if (!e || "object" != typeof e || !e.width || !e.depth || !Array.isArray(e.table)) throw Error("Invalid data format for CountMinSketch reconstruction");
-        let t = new o(e.width, e.depth);
+        let t = new s(e.width, e.depth);
         if (t.table.length !== e.table.length) throw Error("Table length mismatch: expected ".concat(t.table.length, ", got ").concat(e.table.length));
         return t.table.set(e.table), t
     }
     constructor(e, t) {
         if (r(this, "width", void 0), r(this, "depth", void 0), r(this, "table", void 0), r(this, "seeds", void 0), r(this, "scratchHashes", void 0), e <= 0 || t <= 0) throw Error("Width and depth must be positive integers");
-        this.width = s(0 | e), this.depth = 0 | t, this.table = new Uint32Array(this.width * this.depth), this.scratchHashes = new Uint32Array(this.depth), this.seeds = Array(this.depth);
+        this.width = o(0 | e), this.depth = 0 | t, this.table = new Uint32Array(this.width * this.depth), this.scratchHashes = new Uint32Array(this.depth), this.seeds = Array(this.depth);
         for (let e = 0; e < this.depth; e++) this.seeds[e] = e
     }
 }

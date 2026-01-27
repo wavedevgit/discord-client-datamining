@@ -1,95 +1,94 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 829963, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => h
+    A: () => g
 }), n(321073);
 var r = n(627968),
     i = n(64700),
-    a = n(397927),
-    s = n(572211),
-    o = n(354287),
-    l = n(693879),
+    l = n(397927),
+    a = n(572211),
+    s = n(354287),
+    o = n(693879),
     c = n(353411),
     u = n(882171),
     d = n(206589),
-    f = n(768349),
-    p = n(985018),
-    _ = n(609653);
+    p = n(768349),
+    m = n(985018),
+    f = n(609653);
 
-function h(e) {
-    var t, n, h, m;
+function g(e) {
+    var t, n, g, h;
     let {
-        application: g,
-        message: E,
-        header: y,
-        presenceActivity: b,
-        hideParty: O,
-        partyStatusElement: v,
-        currentUserPresenceActivity: A,
-        onClickContent: I,
-        onView: S,
-        guildId: T
-    } = e, C = (0, d.w)(A, b), N = (0, c.Gq)(b, E.author, "Invite Embed"), w = i.useMemo(() => {
+        application: _,
+        message: b,
+        header: A,
+        presenceActivity: y,
+        hideParty: v,
+        partyStatusElement: x,
+        currentUserPresenceActivity: O,
+        onClickContent: E,
+        onView: j,
+        guildId: C
+    } = e, I = (0, d.w)(O, y), S = (0, c.Gq)(y, b.author, "Invite Embed"), T = i.useMemo(() => {
         let e = [];
-        if (!C) {
+        if (!I) {
             var t;
             e.push({
-                label: null != (t = N.label) ? t : p.intl.string(p.t.VJlc0S),
-                trackingArea: o.kY.SYNC,
+                label: null != (t = S.label) ? t : m.intl.string(m.t.VJlc0S),
+                trackingArea: s.kY.SYNC,
                 onClick: () => {
-                    N.onClick()
+                    S.onClick()
                 },
-                disabled: N.disabled,
-                disabledReason: N.disabled ? N.tooltip : void 0
+                disabled: S.disabled,
+                disabledReason: S.disabled ? S.tooltip : void 0
             })
         }
         return e
-    }, [C, N]), R = null != b && null != b.details && null != b.state ? p.intl.formatToPlainString(p.t.JCvHtx, {
-        track: b.details,
-        artist: b.state
-    }) : g.name, P = null != (t = null == b || null == (h = b.timestamps) ? void 0 : h.start) ? t : null == b ? void 0 : b.created_at, D = i.useMemo(() => {
+    }, [I, S]), N = null != y && null != y.details && null != y.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
+        track: y.details,
+        artist: y.state
+    }) : _.name, P = null != (t = null == y || null == (g = y.timestamps) ? void 0 : g.start) ? t : null == y ? void 0 : y.created_at, w = i.useMemo(() => {
         var e;
         return null != P ? (0, r.jsxs)("div", {
-            className: _.Ym,
-            children: [(0, r.jsx)(a.T7G, {
+            className: f.Ym,
+            children: [(0, r.jsx)(l.T7G, {
                 size: "xxs",
                 color: "currentColor"
-            }), (0, r.jsx)(l.z, {
+            }), (0, r.jsx)(o.z, {
                 entry: {
                     start: P,
-                    end: null == b || null == (e = b.timestamps) ? void 0 : e.end
+                    end: null == y || null == (e = y.timestamps) ? void 0 : e.end
                 },
                 textColor: "currentColor",
                 textTabularNumbers: !1,
                 textFontCode: !1
             })]
         }) : null
-    }, [P, null == b || null == (m = b.timestamps) ? void 0 : m.end]), x = i.useMemo(() => (0, r.jsxs)("div", {
-        className: _.pq,
-        children: [(0, r.jsx)(a.Text, {
+    }, [P, null == y || null == (h = y.timestamps) ? void 0 : h.end]), R = i.useMemo(() => (0, r.jsxs)("div", {
+        className: f.pq,
+        children: [(0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
-            className: _.dS,
+            className: f.dS,
             color: "none",
             lineClamp: 1,
-            children: D
-        }), O ? null : v]
-    }), [D, O, v]);
-    return (0, r.jsx)(s.h, {
-        header: y,
-        title: R,
-        iconSrc: null != (n = (0, u.A)(b, g.id)) ? n : void 0,
-        info: x,
-        actions: w,
-        onClickContent: I,
+            children: w
+        }), v ? null : x]
+    }), [w, v, x]);
+    return (0, r.jsx)(a.h, {
+        header: A,
+        title: N,
+        iconSrc: null != (n = (0, u.A)(y, _.id)) ? n : void 0,
+        info: R,
+        actions: T,
+        onClickContent: E,
         trackingConfig: {
-            id: g.id,
-            linkType: f.J.RICH_PRESENCE_INVITE,
-            onView: S,
-            referrerId: E.author.id,
-            guildId: T,
-            channelId: E.channel_id,
-            messageId: E.id
+            id: _.id,
+            linkType: p.J.RICH_PRESENCE_INVITE,
+            onView: j,
+            referrerId: b.author.id,
+            guildId: C,
+            channelId: b.channel_id,
+            messageId: b.id
         }
     })
 }

@@ -2,21 +2,21 @@
 /** chunk id: 244553, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    p: () => s
+    p: () => o
 });
 var r = n(321733),
     i = n(294292),
     a = n(317374);
 
-function s(e) {
+function o(e) {
     return function(t) {
         var n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
             r = n.clientOffset;
-        o(t);
+        s(t);
         var i = t.slice(0),
-            s = e.getMonitor(),
+            o = e.getMonitor(),
             d = e.getRegistry();
-        return l(i, s, d), c(i, d, s.getItemType()), u(i, s, d), {
+        return l(i, o, d), c(i, d, o.getItemType()), u(i, o, d), {
             type: a.l6,
             payload: {
                 targetIds: i,
@@ -26,7 +26,7 @@ function s(e) {
     }
 }
 
-function o(e) {
+function s(e) {
     (0, r.V)(Array.isArray(e), "Expected targetIds to be an array.")
 }
 
@@ -35,16 +35,16 @@ function l(e, t, n) {
     for (var i = 0; i < e.length; i++) {
         var a = e[i];
         (0, r.V)(e.lastIndexOf(a) === i, "Expected targetIds to be unique in the passed array.");
-        var s = n.getTarget(a);
-        (0, r.V)(s, "Expected targetIds to be registered.")
+        var o = n.getTarget(a);
+        (0, r.V)(o, "Expected targetIds to be registered.")
     }
 }
 
 function c(e, t, n) {
     for (var r = e.length - 1; r >= 0; r--) {
         var a = e[r],
-            s = t.getTargetType(a);
-        (0, i.k)(s, n) || e.splice(r, 1)
+            o = t.getTargetType(a);
+        (0, i.k)(o, n) || e.splice(r, 1)
     }
 }
 

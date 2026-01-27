@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 54009, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => A
 });
 var r = n(627968);
 n(64700);
 var i = n(417597),
-    a = n(397927),
+    l = n(397927),
     s = n(736653),
-    o = n(775602),
-    l = n(607470),
+    a = n(775602),
+    o = n(607470),
     c = n(676279),
-    u = n(69091),
-    d = n(264996),
-    f = n(837137),
+    d = n(69091),
+    u = n(264996),
+    _ = n(837137),
     p = n(723473),
-    _ = n(728654),
-    h = n(903671);
-let m = e => {
+    m = n(728654),
+    g = n(903671);
+let A = e => {
     let t, {
             className: n
         } = e,
-        m = (0, i.bG)([o.A], () => o.A.useReducedMotion),
-        g = (0, c.TM)(),
-        E = (0, a.qB1)((0, s.Ay)());
-    if (m) {
-        let e = E ? h.A : f.A;
+        A = (0, i.bG)([a.A], () => a.A.useReducedMotion),
+        f = (0, c.TM)(),
+        h = (0, l.qB1)((0, s.Ay)());
+    if (A) {
+        let e = h ? g.A : _.A;
         return (0, r.jsx)("div", {
             className: n,
             children: (0, r.jsx)("img", {
@@ -35,9 +34,9 @@ let m = e => {
             })
         })
     }
-    return t = g ? E ? p.A : u.A : E ? _.A : d.A, (0, r.jsx)("div", {
+    return t = f ? h ? p.A : d.A : h ? m.A : u.A, (0, r.jsx)("div", {
         className: n,
-        children: (0, r.jsx)(l.A, {
+        children: (0, r.jsx)(o.A, {
             muted: !0,
             autoPlay: !0,
             playsInline: !0,

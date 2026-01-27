@@ -10,14 +10,14 @@ n.d(t, {
 var r = n(319060),
     i = n(155718),
     a = n(225098),
-    s = n(652215),
-    o = n(985018);
+    o = n(652215),
+    s = n(985018);
 let l = 0;
 
 function c() {
     return {
         id: l,
-        name: o.intl.string(o.t.E407b7)
+        name: s.intl.string(s.t.E407b7)
     }
 }
 
@@ -45,12 +45,12 @@ function f(e) {
             var t;
             let n = null != (t = e.proxy_url) ? t : e.url;
             return {
-                type: s.geh.IMG, width: 0, height: 0, src: n
+                type: o.geh.IMG, width: 0, height: 0, src: n
             };
         case i.LZ.YOUTUBE:
             let r = d(e.url);
             if (null != r) return {
-                type: s.geh.YOUTUBE_VIDEO,
+                type: o.geh.YOUTUBE_VIDEO,
                 youtubeVideoId: r
             }
     }

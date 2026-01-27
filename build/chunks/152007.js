@@ -2,12 +2,12 @@
 /** chunk id: 152007, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => j
+    A: () => M
 }), n(896048), n(938796);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(544743),
     c = n(95701),
     u = n(961350);
@@ -77,7 +77,7 @@ function b(e) {
 function O(e) {
     let t = h[e];
     m.clearTimer(e), !0 === t.muted ? ((g = new Set(g)).add(e), m.setTimer(e, t.muteConfig, () => {
-        h[e].muted = !1, (g = new Set(g)).delete(e), L.emitChange()
+        h[e].muted = !1, (g = new Set(g)).delete(e), x.emitChange()
     }) && (h[e].muted = !1, (g = new Set(g)).delete(e))) : (g = new Set(g)).delete(e)
 }
 
@@ -210,7 +210,7 @@ function D(e) {
         }, O(e.id), r = !0)
     }), r
 }
-class x extends(r = s.Ay.Store) {
+class L extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(u.default)
     }
@@ -239,8 +239,8 @@ class x extends(r = s.Ay.Store) {
         return g.has(e)
     }
 }
-d(x, "displayName", "JoinedThreadsStore");
-let L = new x(o.h, {
+d(L, "displayName", "JoinedThreadsStore");
+let x = new L(s.h, {
         CONNECTION_OPEN: v,
         OVERLAY_INITIALIZE: A,
         GUILD_CREATE: I,
@@ -256,4 +256,4 @@ let L = new x(o.h, {
         THREAD_MEMBER_LOCAL_UPDATE: P,
         THREAD_MEMBERS_UPDATE: D
     }),
-    j = L
+    M = x

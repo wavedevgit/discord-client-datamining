@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(143236),
     i = n(118356),
     a = n(277738),
-    s = n(256398),
-    o = n(938866),
+    o = n(256398),
+    s = n(938866),
     l = n(956446),
     c = n(731854),
     u = n(818348);
@@ -22,7 +22,7 @@ function d(e, t, n) {
     }) : e[t] = n, e
 }
 let f = new i.Vy("Output"),
-    p = new s.A;
+    p = new o.A;
 class _ extends r.EventEmitter {
     destroy() {
         var e, t, n;
@@ -93,7 +93,7 @@ class _ extends r.EventEmitter {
             });
             if (this.destroyed) throw p.release(e), Error("AudioInput: Already destroyed");
             if (this._noiseCancellation) try {
-                let t = await (0, o.e)();
+                let t = await (0, s.e)();
                 this._audioFilter = await t.createNoiseFilter(this.context), this._audioFilter.addEventListener("ready", e => {
                     var t;
                     null == (t = this._audioFilter) || t.enable()

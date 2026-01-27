@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(835245),
-    s = n(311907),
-    o = n(674658),
+    o = n(311907),
+    s = n(674658),
     l = n(623373),
     c = n(287809),
     u = n(927578),
@@ -33,9 +33,9 @@ let f = (0, i.createContext)({
             analyticsLocations: r,
             onCheckoutSuccess: a,
             rentalDuration: f
-        } = e, p = (0, s.bG)([c.default], () => u.Ay.canUseCollectibles(c.default.getCurrentUser())), {
+        } = e, p = (0, o.bG)([c.default], () => u.Ay.canUseCollectibles(c.default.getCurrentUser())), {
             product: _
-        } = (0, o.q)(t), h = (0, i.useMemo)(() => {
+        } = (0, s.q)(t), h = (0, i.useMemo)(() => {
             if (null == _) return null;
             let e = (0, l.CW)({
                     product: _,
@@ -81,8 +81,8 @@ let f = (0, i.createContext)({
             loadId: n,
             analyticsSourceLocation: i,
             analyticsLocations: a,
-            onCheckoutSuccess: s,
-            rentalDuration: o,
+            onCheckoutSuccess: o,
+            rentalDuration: s,
             children: l
         } = e, {
             orbProductContext: c,
@@ -93,8 +93,8 @@ let f = (0, i.createContext)({
             skuId: t,
             loadId: n,
             analyticsLocations: a,
-            onCheckoutSuccess: s,
-            rentalDuration: o
+            onCheckoutSuccess: o,
+            rentalDuration: s
         });
         return (0, r.jsx)(f.Provider, {
             value: {
@@ -106,7 +106,7 @@ let f = (0, i.createContext)({
                 onRedeemVirtualCurrency: u,
                 isRedeeming: d,
                 orbRedemptionError: _,
-                rentalDuration: o
+                rentalDuration: s
             },
             children: l
         })

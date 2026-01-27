@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 486318, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    N: () => s,
-    e: () => a
+    N: () => a,
+    e: () => l
 });
 var r = n(397927),
     i = n(871123);
 
-function a(e) {
+function l(e) {
     let {
         imageUrl: t,
         backgroundImageUrl: n,
         altText: i,
-        customClassNames: a
+        customClassNames: l
     } = e;
     return {
         type: "dynamic",
@@ -23,13 +22,13 @@ function a(e) {
             imageUrl: t,
             backgroundImageUrl: n,
             altText: i,
-            customClassNames: a
+            customClassNames: l
         }
     }
 }
 
-function s(e) {
-    return a({
+function a(e) {
+    return l({
         imageUrl: (0, i.fq)(e),
         backgroundImageUrl: (0, i.xf)(e),
         altText: e.name

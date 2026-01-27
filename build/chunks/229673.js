@@ -1,59 +1,58 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 229673, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => f
 });
 var r = n(627968);
 n(64700);
 var i = n(934551),
-    a = n(429913),
-    s = n(769015),
-    o = n(975571),
-    l = n(763754),
+    l = n(429913),
+    a = n(769015),
+    s = n(975571),
+    o = n(763754),
     c = n(447215),
     u = n(888675),
     d = n(652215),
-    f = n(985018),
-    p = n(953837);
+    p = n(985018),
+    m = n(953837);
 
-function _(e) {
+function f(e) {
     let {
         message: t,
         channel: n,
-        author: _,
-        compact: h
+        author: f,
+        compact: g
     } = e, {
-        nick: m
-    } = (0, l.d8)(_, n), g = (0, c.P)({
-        user: _,
+        nick: h
+    } = (0, o.d8)(f, n), _ = (0, c.P)({
+        user: f,
         channelId: n.id,
         guildId: void 0,
         messageId: void 0
-    })(), E = (0, a.h)(t.applicationId);
-    if (null == E) return null;
-    let y = f.intl.format(f.t.m7Lwas, {
-        username: m,
-        usernameHook: g,
-        gameName: E.name,
+    })(), b = (0, l.h)(t.applicationId);
+    if (null == b) return null;
+    let A = p.intl.format(p.t.m7Lwas, {
+        username: h,
+        usernameHook: _,
+        gameName: b.name,
         gameIconHook: e => (0, r.jsxs)("span", {
-            className: p.Y_,
-            children: [(0, r.jsx)(s.A, {
-                game: E,
-                size: s.M.XXSMALL,
-                className: p.p4
+            className: m.Y_,
+            children: [(0, r.jsx)(a.A, {
+                game: b,
+                size: a.M.XXSMALL,
+                className: m.p4
             }), " ", e]
         }),
-        helpdeskArticle: o.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
+        helpdeskArticle: s.A.getArticleURL(d.MVz.SOCIAL_LAYER_CONNECTIONS)
     });
     return (0, r.jsx)(u.A, {
         iconNode: (0, r.jsx)(i.GameControllerIcon, {
             size: "sm"
         }),
-        compact: h,
-        contentClassName: p.Qs,
+        compact: g,
+        contentClassName: m.Qs,
         children: (0, r.jsx)("div", {
-            children: y
+            children: A
         })
     })
 }

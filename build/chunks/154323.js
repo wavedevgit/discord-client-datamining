@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = {
+let s = {
         highlight_mana_buttons: "Highlight mana buttons",
         highlight_mana_components: "Highlight mana components",
         highlight_void_toggleables: "Highlight toggleable components (Checkbox, VoidRadioGroup, Switch)",
@@ -46,7 +46,7 @@ class u extends(r = i.Ay.DeviceSettingsStore) {
         }
     }
     initialize(e) {
-        for (var t in o) {
+        for (var t in s) {
             var n, r;
             let i = null != (n = null == e || null == (r = e.toggleStates) ? void 0 : r[t]) && n;
             i && (l[t] = i)
@@ -60,14 +60,14 @@ class u extends(r = i.Ay.DeviceSettingsStore) {
         return l
     }
     allWithDescriptions() {
-        return Object.entries(o).map(e => {
+        return Object.entries(s).map(e => {
             var t;
             let [n, r] = e;
             return [n, null != (t = l[n]) && t, r]
         })
     }
 }
-s(u, "displayName", "DevToolsDesignTogglesStore"), s(u, "persistKey", "DevToolsDesignTogglesStore");
+o(u, "displayName", "DevToolsDesignTogglesStore"), o(u, "persistKey", "DevToolsDesignTogglesStore");
 let d = new u(a.h, {
     DEV_TOOLS_DESIGN_TOGGLE_WEB_SET: c
 })

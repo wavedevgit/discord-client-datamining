@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 414121, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     Ay: () => x,
     Lx: () => A,
@@ -10,8 +9,8 @@ var r, i, s, l = n(627968),
     a = n(64700),
     o = n(503698),
     c = n.n(o),
-    u = n(210905),
-    d = n(264869);
+    d = n(210905),
+    u = n(264869);
 
 function h(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -35,12 +34,12 @@ function p(e) {
     return e
 }
 var g = ((r = {}).SIZE_40 = "SIZE_40", r.SIZE_60 = "SIZE_60", r);
-let m = Object.freeze({
+let _ = Object.freeze({
         SIZE_40: "size-40",
         SIZE_60: "size-60"
     }),
     f = n(906118);
-class _ extends(i = a.PureComponent) {
+class m extends(i = a.PureComponent) {
     render() {
         let e = this.props,
             {
@@ -70,15 +69,15 @@ class _ extends(i = a.PureComponent) {
                 height: r.size,
                 backgroundColor: r.bgColor
             },
-            className: c()(d.qrCodeContainer, t),
-            children: (0, l.jsx)(u.default, p({
+            className: c()(u.qrCodeContainer, t),
+            children: (0, l.jsx)(d.default, p({
                 value: n,
                 level: "M"
             }, r))
         })
     }
 }
-h(_, "defaultProps", {
+h(m, "defaultProps", {
     size: 128,
     bgColor: "#ffffff",
     fgColor: "#000000"
@@ -87,13 +86,13 @@ class A extends(s = a.PureComponent) {
     render() {
         let {
             overlaySize: e
-        } = this.props, t = m[null != e ? e : "SIZE_40"];
+        } = this.props, t = _[null != e ? e : "SIZE_40"];
         return (0, l.jsxs)("div", {
-            className: d.qrCodeOverlayContainer,
-            children: [(0, l.jsx)(_, p({}, this.props)), (0, l.jsx)("div", {
-                className: d.qrCodeOverlay,
+            className: u.qrCodeOverlayContainer,
+            children: [(0, l.jsx)(m, p({}, this.props)), (0, l.jsx)("div", {
+                className: u.qrCodeOverlay,
                 children: (0, l.jsx)("img", {
-                    className: d[t],
+                    className: u[t],
                     src: f,
                     alt: ""
                 })
@@ -106,4 +105,4 @@ h(A, "defaultProps", {
     bgColor: "#ffffff",
     fgColor: "#000000"
 });
-let x = _
+let x = m

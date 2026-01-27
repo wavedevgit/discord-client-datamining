@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n(311907),
-    s = n(73153),
-    o = n(31408);
+    o = n(73153),
+    s = n(31408);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -39,17 +39,17 @@ let u = !1,
         comboSoundsEnabled: !0,
         screenshakeEnabled: !0,
         screenshakeEnabledLocations: {
-            [o.uD.CHAT_INPUT]: !0,
-            [o.uD.VOICE_USER]: !1,
-            [o.uD.MENTION]: !1
+            [s.uD.CHAT_INPUT]: !0,
+            [s.uD.VOICE_USER]: !1,
+            [s.uD.MENTION]: !1
         },
         shakeIntensity: 1,
         confettiEnabled: !0,
         confettiEnabledLocations: {
-            [o.k.CHAT_INPUT]: !0,
-            [o.k.REACTION]: !0,
-            [o.k.MEMBER_USER]: !0,
-            [o.k.CALL_TILE]: !0
+            [s.k.CHAT_INPUT]: !0,
+            [s.k.REACTION]: !0,
+            [s.k.MEMBER_USER]: !0,
+            [s.k.CALL_TILE]: !0
         },
         confettiSize: 16,
         confettiCount: 5,
@@ -104,7 +104,7 @@ class h extends(r = a.Ay.DeviceSettingsStore) {
     }
 }
 l(h, "displayName", "PoggermodeSettingsStore"), l(h, "persistKey", "PoggermodeSettingsStore");
-let m = new h(s.h, {
+let m = new h(o.h, {
     POGGERMODE_SETTINGS_UPDATE: p,
     POGGERMODE_TEMPORARILY_DISABLED: _
 })

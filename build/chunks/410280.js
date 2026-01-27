@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 410280, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container__9a52c",
     gd: "activityRow__9a52c",

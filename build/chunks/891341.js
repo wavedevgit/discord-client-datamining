@@ -2,19 +2,19 @@
 /** chunk id: 891341, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => s
+    l: () => o
 });
 var r = n(64700),
     i = n(55960),
     a = n(434194);
-let s = e => {
+let o = e => {
     let t, n = (0, i.g)();
     if (!n.display) return null;
     let {
-        display: s,
-        ...o
+        display: o,
+        ...s
     } = n;
-    return t = "children" in e ? "function" == typeof e.children ? e.children(o) : e.children : e.generator(o), r.createElement(a.o.Provider, {
-        value: o
+    return t = "children" in e ? "function" == typeof e.children ? e.children(s) : e.children : e.generator(s), r.createElement(a.o.Provider, {
+        value: s
     }, t)
 }

@@ -1,48 +1,47 @@
-/** Chunk was on web.js **/
+/** Chunk was on 51901 **/
 /** chunk id: 567035, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => _
+    A: () => p
 }), n(114821), n(339614), n(896048), n(321073);
 var r = n(735438),
-    i = n.n(r),
+    o = n.n(r),
     a = n(334738),
-    s = n(591552),
-    o = n(863005),
-    l = n(808728),
-    c = n(222823),
+    l = n(591552),
+    i = n(863005),
+    c = n(808728),
+    s = n(222823),
     u = n(954571),
     d = n(661191),
-    f = n(652215),
-    p = n(790782);
+    b = n(652215),
+    f = n(790782);
 
-function _(e, t, n) {
-    let r = i().flatMap(e, e => {
-        let t = l.Ay.getSelectableChannelIds(e),
-            n = [...t, ...l.Ay.getVocalChannelIds(e)],
-            r = o.A.getActiveJoinedThreadsForGuild(e);
+function p(e, t, n) {
+    let r = o().flatMap(e, e => {
+        let t = c.Ay.getSelectableChannelIds(e),
+            n = [...t, ...c.Ay.getVocalChannelIds(e)],
+            r = i.A.getActiveJoinedThreadsForGuild(e);
         for (let e of t) {
-            var i;
-            let t = null != (i = r[e]) ? i : {};
+            var o;
+            let t = null != (o = r[e]) ? o : {};
             for (let e in t) n.push(e)
         }
         return n
     }).map(e => ({
         channelId: e,
-        readStateType: p.P.CHANNEL,
-        messageId: c.Ay.lastMessageId(e)
+        readStateType: f.P.CHANNEL,
+        messageId: s.Ay.lastMessageId(e)
     }));
     return e.forEach(e => {
         r.push({
             channelId: d.default.cast(e),
-            readStateType: p.P.GUILD_EVENT,
-            messageId: c.Ay.lastMessageId(e, p.P.GUILD_EVENT)
+            readStateType: f.P.GUILD_EVENT,
+            messageId: s.Ay.lastMessageId(e, f.P.GUILD_EVENT)
         }), r.push({
             channelId: d.default.cast(e),
-            readStateType: p.P.GUILD_ONBOARDING_QUESTION,
-            messageId: s.A.ackIdForGuild(e)
+            readStateType: f.P.GUILD_ONBOARDING_QUESTION,
+            messageId: l.A.ackIdForGuild(e)
         })
-    }), u.default.track(f.HAw.MARK_AS_READ, {
+    }), u.default.track(b.HAw.MARK_AS_READ, {
         source: t,
         type: "guild"
     }), (0, a.Uq)(r, n)

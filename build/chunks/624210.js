@@ -4,18 +4,18 @@
 n.d(t, {
     Nl: () => u,
     Ub: () => c,
-    fS: () => o,
+    fS: () => s,
     iY: () => l
 }), n(65821);
 var r = n(562465),
     i = n(73153),
     a = n(224771),
-    s = n(652215);
-async function o(e) {
+    o = n(652215);
+async function s(e) {
     let {
         skuId: t,
         paymentSourceId: n,
-        paymentGateway: o,
+        paymentGateway: s,
         loadId: l
     } = e;
     i.h.wait(() => {
@@ -25,7 +25,7 @@ async function o(e) {
     });
     try {
         let e = {};
-        null != n && (e.payment_source_id = n), null != o && (e.payment_gateway = o);
+        null != n && (e.payment_source_id = n), null != s && (e.payment_gateway = s);
         let c = {
                 order_line_items: [{
                     sku_id: t,
@@ -35,7 +35,7 @@ async function o(e) {
                 billing_facet: e
             },
             u = (await r.Bo.post({
-                url: s.Rsh.ORDER_CREATE,
+                url: o.Rsh.ORDER_CREATE,
                 body: c,
                 context: null != l && "" !== l ? {
                     load_id: l
@@ -69,7 +69,7 @@ async function l(e) {
         "paymentSourceId" in n && (e.billing_facet = {
             payment_source_id: n.paymentSourceId
         }), await r.Bo.patch({
-            url: s.Rsh.ORDER_UPDATE(t),
+            url: o.Rsh.ORDER_UPDATE(t),
             body: e,
             rejectWithError: !0
         }), await i.h.dispatch({
@@ -92,7 +92,7 @@ async function c(e) {
         let e = {};
         null != n && (e.expected_revision = n);
         let a = await r.Bo.post({
-            url: s.Rsh.ORDER_SIGN(t),
+            url: o.Rsh.ORDER_SIGN(t),
             body: e,
             context: null != i && "" !== i ? {
                 load_id: i
@@ -108,7 +108,7 @@ async function c(e) {
 async function u(e) {
     try {
         let t = await r.Bo.post({
-            url: s.Rsh.ORDER_DISCARD(e),
+            url: o.Rsh.ORDER_DISCARD(e),
             rejectWithError: !1
         });
         if (null == t.body) throw Error("Invalid discard order response");

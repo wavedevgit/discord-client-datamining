@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(934551),
-    s = n(158954),
-    o = n(732955),
+    o = n(158954),
+    s = n(732955),
     l = n(397927);
 let c = {
     title: "Checkbox",
@@ -29,7 +29,7 @@ let c = {
             }, []), m = i.useCallback(() => {
                 p(e => !e)
             }, []);
-            return (0, r.jsxs)(s.BJc, {
+            return (0, r.jsxs)(o.BJc, {
                 direction: "vertical",
                 gap: "md",
                 children: [(0, r.jsx)(l.Checkbox, {
@@ -41,25 +41,25 @@ let c = {
                     value: "checkbox-value",
                     labelType: u,
                     leadingIcon: d ? a.CircleInformationIcon : void 0
-                }), (0, r.jsxs)(s.EYj, {
+                }), (0, r.jsxs)(o.EYj, {
                     variant: "text-sm/normal",
                     children: ["Current state: ", f ? "Checked" : "Unchecked"]
-                }), (0, r.jsxs)(s.BJc, {
+                }), (0, r.jsxs)(o.BJc, {
                     direction: "horizontal",
                     gap: "sm",
-                    children: [(0, r.jsx)(o.$nd, {
+                    children: [(0, r.jsx)(s.$nd, {
                         variant: "secondary",
                         size: "sm",
                         text: "Check",
                         onClick: _,
                         disabled: c
-                    }), (0, r.jsx)(o.$nd, {
+                    }), (0, r.jsx)(s.$nd, {
                         variant: "secondary",
                         size: "sm",
                         text: "Uncheck",
                         onClick: h,
                         disabled: c
-                    }), (0, r.jsx)(o.$nd, {
+                    }), (0, r.jsx)(s.$nd, {
                         variant: "primary",
                         size: "sm",
                         text: "Toggle",

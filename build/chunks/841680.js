@@ -7,16 +7,16 @@ n.d(t, {
 var r = n(723906),
     i = n(290424),
     a = n(805447),
-    s = n(64700),
-    o = n(925573);
+    o = n(64700),
+    s = n(925573);
 
 function l(e, t) {
     let {
         role: n = "dialog"
     } = e, l = (0, r.X1)();
     l = e["aria-label"] ? void 0 : l;
-    let c = (0, s.useRef)(!1);
-    return (0, s.useEffect)(() => {
+    let c = (0, o.useRef)(!1);
+    return (0, o.useEffect)(() => {
         if (t.current && !t.current.contains(document.activeElement)) {
             (0, a.l)(t.current);
             let e = setTimeout(() => {
@@ -26,7 +26,7 @@ function l(e, t) {
                 clearTimeout(e)
             }
         }
-    }, [t]), (0, o.Se)(), {
+    }, [t]), (0, s.Se)(), {
         dialogProps: {
             ...(0, i.$)(e, {
                 labelable: !0

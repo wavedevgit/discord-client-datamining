@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 399122, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
@@ -10,8 +10,8 @@ var i = n(347805),
     s = n(716804),
     o = n(83013),
     a = n(518477),
-    c = n(985018),
-    d = n(473836);
+    d = n(985018),
+    c = n(473836);
 
 function u(e) {
     let {
@@ -20,11 +20,11 @@ function u(e) {
         trackUserProfileAction: u
     } = (0, r.NJ)();
     return (0, l.jsx)(o.A, {
-        heading: c.intl.string(c.t["mQKv+v"]),
+        heading: d.intl.string(d.t["mQKv+v"]),
         scrollTargetId: a.bk.NOTE,
         children: (0, l.jsx)(i.A, {
             userId: t,
-            className: d.N,
+            className: c.N,
             autoFocus: n === a.bk.NOTE,
             onUpdate: () => u({
                 action: "SET_NOTE"

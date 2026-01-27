@@ -10,7 +10,7 @@ n.d(t, {
     V$: () => c,
     VA: () => E,
     Ve: () => g,
-    XU: () => o,
+    XU: () => s,
     Yw: () => f,
     j5: () => d,
     kR: () => b,
@@ -20,8 +20,8 @@ n.d(t, {
 var r = n(927813),
     i = n(860689),
     a = n(652215),
-    s = n(985018);
-let o = "Notifications Inbox",
+    o = n(985018);
+let s = "Notifications Inbox",
     l = 88,
     c = r.A.Millis.WEEK,
     u = 50,
@@ -30,7 +30,7 @@ let o = "Notifications Inbox",
 function f(e) {
     return (0, i.yF)({
         id: a.gNP,
-        name: "bookmarks" === e ? s.intl.string(s.t["2pAkDA"]) : s.intl.string(s.t.HcoRu0),
+        name: "bookmarks" === e ? o.intl.string(o.t["2pAkDA"]) : o.intl.string(o.t.HcoRu0),
         description: "",
         icon: void 0,
         features: []
@@ -46,10 +46,10 @@ var p = function(e) {
         return e.ALL_MESSAGES_CHANNEL = "ALL_MESSAGES_CHANNEL", e.MENTION = "MENTION", e.BOOKMARK = "BOOKMARK", e
     }({});
 let m = {
-    UNREAD: s.t.sRUdB8,
-    TODAY: s.t.F4jZQs,
-    YESTERDAY: s.t.gnv4pE,
-    OLDER: s.t.exrPZv
+    UNREAD: o.t.sRUdB8,
+    TODAY: o.t.F4jZQs,
+    YESTERDAY: o.t.gnv4pE,
+    OLDER: o.t.exrPZv
 };
 var g = function(e) {
         return e.UNLOADED = "unloaded", e.LOADED = "loaded", e.LOADED_UNREAD = "loadedUnread", e

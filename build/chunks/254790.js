@@ -19,7 +19,7 @@ function u(t) {
         version: u
     } = t;
     return (0, r.jsx)(i.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-migrated-auto": !0,
         navId: "overlay",
         onClose: n.Z_,
         "aria-label": o.intl.string(o.t.tPfVWi),

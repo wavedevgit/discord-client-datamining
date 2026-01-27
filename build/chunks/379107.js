@@ -1,89 +1,81 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 379107, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => I
+    A: () => C
 }), n(228524), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(284009),
-    l = n.n(o),
+    i = n.n(a),
+    s = n(284009),
+    o = n.n(s),
     c = n(843282),
     u = n(565645),
     d = n(155718),
-    f = n(594808),
-    p = n(207963),
-    _ = n(489414),
+    m = n(594808),
+    f = n(207963),
+    p = n(489414),
     h = n(814890),
-    m = n(979811);
+    b = n(979811);
 
-function g(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function E(e) {
+function g(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            g(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
 }
 
-function y(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function b(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function x(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
+        var n = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
+        }
+        return n
+    })(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
 
-function O(e) {
+function y(e) {
     let {
         emoji: t,
         label: n,
-        description: i,
+        description: l,
         isDisabled: a,
-        isOffset: o
-    } = e, l = s()(m._A, {
-        [m.r9]: a,
-        [m.cY]: null == t && o
+        isOffset: s
+    } = e, o = i()(b._A, {
+        [b.r9]: a,
+        [b.cY]: null == t && s
     });
     return (0, r.jsxs)("div", {
-        className: m.uK,
+        className: b.uK,
         children: [null != t ? (0, r.jsx)(u.A, {
-            className: m.Zg,
+            className: b.Zg,
             emojiId: t.id,
             emojiName: t.name,
             animated: t.animated
         }) : null, (0, r.jsxs)("div", {
-            className: l,
+            className: o,
             children: [(0, r.jsx)("strong", {
-                className: m.Pf,
+                className: b.Pf,
                 children: n
-            }), null != i ? (0, r.jsx)("span", {
-                className: m.h_,
-                children: i
+            }), null != l ? (0, r.jsx)("span", {
+                className: b.h_,
+                children: l
             }) : null]
         })]
     })
@@ -95,41 +87,41 @@ function v(e) {
         label: n
     } = e;
     return (0, r.jsx)("div", {
-        className: m.uK,
+        className: b.uK,
         children: (0, r.jsxs)("div", {
-            className: s()(m.Uq, m.u9),
+            className: i()(b.Uq, b.u9),
             children: [null != t ? (0, r.jsx)(u.A, {
-                className: m.Zg,
+                className: b.Zg,
                 src: t.src,
                 emojiId: t.id,
                 emojiName: t.name,
                 animated: t.animated
             }) : null, (0, r.jsx)("span", {
-                className: m.oX,
+                className: b.oX,
                 children: n
             })]
         })
     })
 }
 
-function A(e) {
+function j(e) {
     let {
         options: t
     } = e;
     return (0, r.jsx)("div", {
-        className: m.uK,
+        className: b.uK,
         children: (0, r.jsx)("div", {
-            className: m.Uq,
+            className: b.Uq,
             children: t.map((e, t) => (0, r.jsxs)("div", {
-                className: m.mK,
+                className: b.mK,
                 children: [null != e.emoji ? (0, r.jsx)(u.A, {
-                    className: m.eh,
+                    className: b.eh,
                     src: e.emoji.src,
                     emojiId: e.emoji.id,
                     emojiName: e.emoji.name,
                     animated: e.emoji.animated
                 }) : null, (0, r.jsx)("span", {
-                    className: m.Tc,
+                    className: b.Tc,
                     children: e.label
                 }, e.value)]
             }, t))
@@ -137,81 +129,81 @@ function A(e) {
     })
 }
 
-function I(e) {
+function C(e) {
     let {
         type: t,
         options: n,
         id: a,
-        maxValues: o,
+        maxValues: s,
         minValues: u,
-        disabled: g
-    } = e, y = (0, h.c7)(e), I = i.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), S = (0, p.jc)();
-    l()(null != S, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
+        disabled: C
+    } = e, _ = (0, h.c7)(e), A = l.useMemo(() => n.filter(e => e.default).map(e => e.value), [n]), O = (0, f.jc)();
+    o()(null != O, "StringSelectActionComponent must be rendered inside a ComponentStateContext");
     let {
-        state: T,
-        executeStateUpdate: C,
+        state: E,
+        executeStateUpdate: S,
         visualState: N,
-        isDisabled: w,
-        error: R
-    } = S.useComponentState(e, I.length > 0 ? {
+        isDisabled: I,
+        error: P
+    } = O.useComponentState(e, A.length > 0 ? {
         type: t,
-        values: I
-    } : void 0), P = null != S.modal, D = o > 1, x = N === _.BB.LOADING, [L, j] = i.useState(!1), [M, k] = i.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [U, G] = i.useState(M), V = i.useMemo(() => n.some(e => null != e.emoji), [n]);
-    i.useEffect(() => {
-        if ((null == T ? void 0 : T.type) === d.I5.STRING_SELECT) {
-            let e = new Set(T.values);
-            k(e), G(e)
+        values: A
+    } : void 0), w = null != O.modal, T = s > 1, R = N === p.BB.LOADING, [L, D] = l.useState(!1), [k, M] = l.useState(() => new Set(n.filter(e => e.default).map(e => e.value))), [H, U] = l.useState(k), F = l.useMemo(() => n.some(e => null != e.emoji), [n]);
+    l.useEffect(() => {
+        if ((null == E ? void 0 : E.type) === d.I5.STRING_SELECT) {
+            let e = new Set(E.values);
+            M(e), U(e)
         } else {
-            let e = new Set(I);
-            k(e), G(e)
+            let e = new Set(A);
+            M(e), U(e)
         }
-    }, [a, I, T]);
-    let F = i.useCallback(() => {
-        U !== M && C({
+    }, [a, A, E]);
+    let G = l.useCallback(() => {
+        H !== k && S({
             type: d.I5.STRING_SELECT,
-            values: Array.from(M)
-        }) && G(M)
-    }, [M, U, G, C]);
-    i.useEffect(() => {
-        L || M.size === U.size && Array.from(U).every(e => M.has(e)) || F()
-    }, [L, M, U, F]);
-    let B = c.lS;
-    D ? B = c.M8 : 0 === u && (B = c.$l);
-    let H = (0, c.Ev)({
-        value: M,
-        onChange: e => k(e),
-        onSelectInteraction: B
+            values: Array.from(k)
+        }) && U(k)
+    }, [k, H, U, S]);
+    l.useEffect(() => {
+        L || k.size === H.size && Array.from(H).every(e => k.has(e)) || G()
+    }, [L, k, H, G]);
+    let V = c.lS;
+    T ? V = c.M8 : 0 === u && (V = c.$l);
+    let B = (0, c.Ev)({
+        value: k,
+        onChange: e => M(e),
+        onSelectInteraction: V
     });
-    return (0, r.jsxs)(i.Fragment, {
+    return (0, r.jsxs)(l.Fragment, {
         children: [(0, r.jsx)("div", {
-            className: m.kL,
-            children: (0, r.jsx)(c.Pw, b(E({
-                isProcessing: x,
-                isDisabled: g || N === _.BB.DISABLED || w,
-                className: s()(m.Lt, {
-                    [m.zE]: P
+            className: b.kL,
+            children: (0, r.jsx)(c.Pw, x(g({
+                isProcessing: R,
+                isDisabled: C || N === p.BB.DISABLED || I,
+                className: i()(b.Lt, {
+                    [b.zE]: w
                 }),
-                options: n.map(e => b(E({}, e), {
-                    disabled: D && !M.has(e.value) && M.size === o
+                options: n.map(e => x(g({}, e), {
+                    disabled: T && !k.has(e.value) && k.size === s
                 })),
-                placeholder: y,
-                onClose: () => j(!1),
-                onOpen: () => j(!0),
+                placeholder: _,
+                onClose: () => D(!1),
+                onOpen: () => D(!0),
                 maxVisibleItems: 5,
-                closeOnSelect: !D,
-                optionClassName: m.MT,
-                renderOptionLabel: e => (0, r.jsx)(O, b(E({}, e), {
-                    isDisabled: D && !M.has(e.value) && M.size === o,
-                    isOffset: V
+                closeOnSelect: !T,
+                optionClassName: b.MT,
+                renderOptionLabel: e => (0, r.jsx)(y, x(g({}, e), {
+                    isDisabled: T && !k.has(e.value) && k.size === s,
+                    isOffset: F
                 })),
-                renderOptionValue: e => D ? (0, r.jsx)(A, {
+                renderOptionValue: e => T ? (0, r.jsx)(j, {
                     options: e
-                }) : (0, r.jsx)(v, E({}, e[0]))
-            }, H), {
+                }) : (0, r.jsx)(v, g({}, e[0]))
+            }, B), {
                 "data-migration-pending": !0
             }))
-        }), null == R || P ? null : (0, r.jsx)(f.S0, b(E({}, (0, f.PS)(R)), {
-            className: m.z3
+        }), null == P || w ? null : (0, r.jsx)(m.S0, x(g({}, (0, m.PS)(P)), {
+            className: b.z3
         }))]
     })
 }

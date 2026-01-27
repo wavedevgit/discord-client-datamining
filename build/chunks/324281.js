@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(124651),
     i = n(944010),
     a = n(428673),
-    s = n(779693),
-    o = n(50016),
+    o = n(779693),
+    s = n(50016),
     l = n(556812),
     c = n(65939),
     u = n(144367),
@@ -19,7 +19,7 @@ var r = n(124651),
     h = n(638504);
 class m {
     constructor(e, t, n) {
-        this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.mS), this.options = null != n ? n : {}, this.refTypeCheck = new i.u(this), this.refJsonReader = new a.L(this), this.refJsonWriter = new s.X(this), this.refBinReader = new o.W(this), this.refBinWriter = new l.c(this)
+        this.defaultCheckDepth = 16, this.typeName = e, this.fields = t.map(r.mS), this.options = null != n ? n : {}, this.refTypeCheck = new i.u(this), this.refJsonReader = new a.L(this), this.refJsonWriter = new o.X(this), this.refBinReader = new s.W(this), this.refBinWriter = new l.c(this)
     }
     create(e) {
         let t = (0, c.C)(this);

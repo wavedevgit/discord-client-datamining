@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 37770, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    F: () => l,
+    F: () => s,
     I: () => c
 });
 var r = n(311907),
     i = n(250105),
-    a = n(217222),
-    s = n(128319);
-let o = (0, i.Ay)({
+    l = n(217222),
+    o = n(128319);
+let a = (0, i.Ay)({
     name: "2025-10-windows-mute-detection",
     kind: "user",
     defaultConfig: {
@@ -22,17 +21,17 @@ let o = (0, i.Ay)({
     }
 });
 
-function l(e) {
+function s(e) {
     let {
         location: t
     } = e, {
         isInHoldout: n
-    } = s.p.getCurrentConfig({
+    } = o.p.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0
     });
-    return n ? o.definition.defaultConfig : o.getConfig({
+    return n ? a.definition.defaultConfig : a.getConfig({
         location: t
     })
 }
@@ -41,7 +40,7 @@ function c(e) {
     let {
         location: t
     } = e;
-    return (0, r.bG)([a.A], () => l({
+    return (0, r.bG)([l.A], () => s({
         location: t
     }))
 }

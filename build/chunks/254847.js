@@ -1,66 +1,65 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 254847, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => y,
-    Y: () => g
+    A: () => b,
+    Y: () => f
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(417597),
-    l = n(397927),
+    l = n(503698),
+    s = n.n(l),
+    a = n(417597),
+    o = n(397927),
     c = n(714991),
-    u = n(695515),
-    d = n(397808),
-    f = n(652215),
+    d = n(695515),
+    u = n(397808),
+    _ = n(652215),
     p = n(842130),
-    _ = n(985018),
-    h = n(957415);
-let m = [18, 18, 16, 16, 14, 12, 10];
+    m = n(985018),
+    g = n(957415);
+let A = [18, 18, 16, 16, 14, 12, 10];
 
-function g(e) {
+function f(e) {
     var t;
-    return null != (t = m[e.length - 1]) ? t : m[m.length - 1]
+    return null != (t = A[e.length - 1]) ? t : A[A.length - 1]
 }
-let E = i.memo(e => {
+let h = i.memo(e => {
     let {
         guildId: t,
         className: n,
         customSubtext: i
-    } = e, a = (0, o.bG)([u.A], () => u.A.getGuild(t));
-    if (void 0 === a) return null;
-    let m = a.features.has(f.GuildFeatures.VERIFIED) || a.features.has(f.GuildFeatures.PARTNERED),
+    } = e, l = (0, a.bG)([d.A], () => d.A.getGuild(t));
+    if (void 0 === l) return null;
+    let A = l.features.has(_.GuildFeatures.VERIFIED) || l.features.has(_.GuildFeatures.PARTNERED),
         {
-            name: g
-        } = a;
+            name: f
+        } = l;
     return (0, r.jsxs)("div", {
-        className: s()(h.kL, n),
-        children: [(0, r.jsx)(d.A, {
+        className: s()(g.kL, n),
+        children: [(0, r.jsx)(u.A, {
             guildId: t
         }), (0, r.jsxs)("div", {
-            className: h.$z,
+            className: g.$z,
             children: [(0, r.jsxs)("div", {
-                className: h.wx,
-                children: [m ? (0, r.jsx)(c.A, {
-                    guild: a,
+                className: g.wx,
+                children: [A ? (0, r.jsx)(c.A, {
+                    guild: l,
                     tooltipPosition: "bottom",
-                    tooltipColor: l.STz.Colors.PRIMARY,
-                    className: h.n2
-                }) : null, (0, r.jsx)(l.Text, {
+                    tooltipColor: o.STz.Colors.PRIMARY,
+                    className: g.n2
+                }) : null, (0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: g
+                    children: f
                 })]
-            }), (0, r.jsx)(l.Text, {
+            }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: null != i ? i : void 0 !== a.approximateMemberCount ? _.intl.format(p.default["5JmNgg"], {
-                    members: a.approximateMemberCount
+                children: null != i ? i : void 0 !== l.approximateMemberCount ? m.intl.format(p.default["5JmNgg"], {
+                    members: l.approximateMemberCount
                 }) : null
             })]
         })]
     })
 });
-E.displayName = "FamilyCenterActivityGuildRow";
-let y = E
+h.displayName = "FamilyCenterActivityGuildRow";
+let b = h

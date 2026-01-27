@@ -9,8 +9,8 @@ n.d(t, {
 }), n(747238), n(812715);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(666817);
 
 function c(e, t, n) {
@@ -100,7 +100,7 @@ class p extends(r = a.PureComponent) {
             size: r
         } = this.props;
         return (0, i.jsx)("div", {
-            className: o()(r, l[t], n, {
+            className: s()(r, l[t], n, {
                 [l.flipped]: e
             }),
             children: t

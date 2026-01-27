@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(954571),
-    o = n(765682),
+    o = n(954571),
+    s = n(765682),
     l = n(652215);
 
 function c(e, t, n) {
@@ -30,17 +30,17 @@ class d extends(r = i.Ay.DeviceSettingsStore) {
     }
     hasPermission(e) {
         let t = u.permissionStates[e];
-        return null != t && t === o.hL.ACCEPTED
+        return null != t && t === s.hL.ACCEPTED
     }
     handleSetNativePermission(e) {
         let {
             state: t,
             permissionType: n
         } = e, r = u.permissionStates, i = r[n];
-        r[n] = t, i !== t && s.default.track(l.HAw.PERMISSIONS_ACKED, {
+        r[n] = t, i !== t && o.default.track(l.HAw.PERMISSIONS_ACKED, {
             type: n,
             action: t,
-            previous_action: null != i ? i : o.hL.NONE
+            previous_action: null != i ? i : s.hL.NONE
         })
     }
     constructor() {

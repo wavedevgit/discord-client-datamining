@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 307209, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -18,8 +18,8 @@ var i = n(311907),
     m = n(527678),
     p = n(199940),
     f = n(132514),
-    b = n(107795),
-    h = n(400812),
+    h = n(107795),
+    b = n(400812),
     x = n(259866),
     j = n(960756),
     _ = n(652215),
@@ -68,21 +68,21 @@ function E(e) {
     c.object = n ? _.ZSU.ONBOARDING_EDIT : _.ZSU.ONBOARDING_REVIEW;
     let u = async function() {
         let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-        l ? (await (0, b.gr)(t, !1), g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-            action_taken: h.mj[h.mj.TOGGLE_DISABLED],
+        l ? (await (0, h.gr)(t, !1), g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
+            action_taken: b.mj[b.mj.TOGGLE_DISABLED],
             location: c
-        }))) : (await (0, b.gr)(t, !0), e && (0, p.UP)(t, !0), n ? g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-            action_taken: h.mj[h.mj.TOGGLE_ENABLED],
+        }))) : (await (0, h.gr)(t, !0), e && (0, p.UP)(t, !0), n ? g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
+            action_taken: b.mj[b.mj.TOGGLE_ENABLED],
             location: c
         })) : g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_WIZARD_PROGRESS_CTA_CLICKED, A(y({}, (0, a.H$)(t)), {
-            step: h.Hy[h.Hy.REVIEW],
+            step: b.Hy[b.Hy.REVIEW],
             back: !1,
             skip: !1,
             completed: !0
         })))
     }, f = () => {
         g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-            action_taken: h.mj[h.mj.PREVIEW],
+            action_taken: b.mj[b.mj.PREVIEW],
             location: c
         })), (0, m.X$)(t)
     }, x = (0, r.jsxs)(r.Fragment, {
@@ -90,9 +90,9 @@ function E(e) {
             guildId: t,
             onEdit: () => {
                 g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-                    action_taken: h.mj[h.mj.EDIT_DEFAULT_CHANNELS],
+                    action_taken: b.mj[b.mj.EDIT_DEFAULT_CHANNELS],
                     location: c
-                })), (0, m.e_)(h.Hy.DEFAULT_CHANNELS)
+                })), (0, m.e_)(b.Hy.DEFAULT_CHANNELS)
             },
             disableGoodStatus: n
         }), (0, r.jsx)(d.A, {
@@ -101,9 +101,9 @@ function E(e) {
             guildId: t,
             onEdit: () => {
                 g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-                    action_taken: h.mj[h.mj.EDIT_CONNECTIONS],
+                    action_taken: b.mj[b.mj.EDIT_CONNECTIONS],
                     location: c
-                })), (0, m.e_)(h.Hy.CONNECTIONS)
+                })), (0, m.e_)(b.Hy.CONNECTIONS)
             },
             disableGoodStatus: n
         }), (0, r.jsx)(d.A, {
@@ -112,9 +112,9 @@ function E(e) {
             guildId: t,
             onEdit: () => {
                 g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-                    action_taken: h.mj[h.mj.EDIT_CUSTOMIZATION_QUESTIONS],
+                    action_taken: b.mj[b.mj.EDIT_CUSTOMIZATION_QUESTIONS],
                     location: c
-                })), (0, m.e_)(h.Hy.CUSTOMIZATION_QUESTIONS)
+                })), (0, m.e_)(b.Hy.CUSTOMIZATION_QUESTIONS)
             },
             disableGoodStatus: n
         }), (0, r.jsx)(d.A, {
@@ -123,9 +123,9 @@ function E(e) {
             guildId: t,
             onEdit: () => {
                 g.default.track(_.HAw.GUILD_SETTINGS_ONBOARDING_EDIT_PAGE_CLICKED, A(y({}, (0, a.H$)(t)), {
-                    action_taken: h.mj[h.mj.EDIT_HOME_SETTINGS],
+                    action_taken: b.mj[b.mj.EDIT_HOME_SETTINGS],
                     location: c
-                })), (0, m.e_)(h.Hy.HOME_SETTINGS)
+                })), (0, m.e_)(b.Hy.HOME_SETTINGS)
             },
             disableGoodStatus: n
         })]

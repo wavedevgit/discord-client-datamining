@@ -8,7 +8,7 @@ var r = n(439372),
     i = n(966597),
     a = n(216623);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,7 +17,7 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o() {
+function s() {
     i.A.getCurrentConfig({
         location: "saved_messages_manager"
     }, {
@@ -26,10 +26,10 @@ function o() {
 }
 class l extends r.A {
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen()
-        }), s(this, "handlePostConnectionOpen", () => {
-            o()
+        }), o(this, "handlePostConnectionOpen", () => {
+            s()
         })
     }
 }

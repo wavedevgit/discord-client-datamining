@@ -1,4 +1,4 @@
-/** Chunk was on 2644 **/
+/** Chunk was on 51966 **/
 /** chunk id: 763375, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     default: () => j
@@ -10,10 +10,10 @@ var n = r(627968),
     i = r(9578),
     l = r(688810),
     c = r(429913),
-    u = r(911269),
-    _ = r(451909),
-    p = r(223863),
-    d = r(734057),
+    _ = r(911269),
+    u = r(451909),
+    d = r(223863),
+    p = r(734057),
     f = r(954571),
     b = r(957565),
     m = r(403362),
@@ -101,13 +101,13 @@ function j(e) {
         } = t;
         r(!0);
         try {
-            let t = (await Promise.all(e.map(p.pk))).filter(m.Vq);
+            let t = (await Promise.all(e.map(d.pk))).filter(m.Vq);
             if (0 === t.length) return void r(!1);
             o && x();
             let l = (0, y.Q6)(c, i);
             for (let e of t) {
-                let t = d.A.getChannel(e);
-                null != t && await s.A.sendMessage(t.id, _.Ay.parse(t, l + (null != n ? n : "")), !1, {
+                let t = p.A.getChannel(e);
+                null != t && await s.A.sendMessage(t.id, u.Ay.parse(t, l + (null != n ? n : "")), !1, {
                     location: g.Hx.SOCIAL_LAYER_STOREFRONT
                 })
             }(0, a.showToast)((0, a.createToast)(v.intl.string(v.t.kwmYkt), a.ToastType.SUCCESS))
@@ -130,7 +130,7 @@ function j(e) {
         },
         icon: a.qYV
     }], [c, i, null == k ? void 0 : k.sessionId, I]);
-    return (0, n.jsx)(u.ForwardModal, (t = function(e) {
+    return (0, n.jsx)(_.ForwardModal, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
                 n = Object.keys(r);

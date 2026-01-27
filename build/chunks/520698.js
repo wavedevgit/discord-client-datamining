@@ -2,7 +2,7 @@
 /** chunk id: 520698, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(806931),
     i = n(731854);
@@ -13,6 +13,6 @@ let a = Object.freeze({
     [r.lp.ACTIVITY]: i.x.DEFAULT
 });
 
-function s(e) {
+function o(e) {
     return a[e]
 }

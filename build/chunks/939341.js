@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(573648),
     i = n(541806),
     a = n(141639),
-    s = n(61330),
-    o = n(429913),
+    o = n(61330),
+    s = n(429913),
     l = n(585958),
     c = n(82149),
     u = n(139675),
@@ -52,17 +52,17 @@ function y(e) {
     } = e, {
         activity: i,
         activityApplication: a,
-        fallbackApplication: s
+        fallbackApplication: o
     } = (0, p.A)(n), {
-        largeImage: o,
+        largeImage: s,
         smallImage: c
     } = O(i, a), {
         largeImage: u
-    } = b(i, null != s ? s : a), {
+    } = b(i, null != o ? o : a), {
         coverImageUrl: d
-    } = (0, l.n)(null == (t = null != s ? s : a) ? void 0 : t.id), f = g(n);
-    return null != o ? {
-        largeImage: o,
+    } = (0, l.n)(null == (t = null != o ? o : a) ? void 0 : t.id), f = g(n);
+    return null != s ? {
+        largeImage: s,
         smallImage: c
     } : null != f ? {
         largeImage: f,
@@ -88,11 +88,11 @@ function b(e, t) {
         smallImage: i
     };
     if ((0, c.Cy)(e)) {
-        var o;
+        var s;
         let t = (0, c.UW)(e),
             n = null != t ? d.Ay.getGuildIconURL({
                 id: t.guildId,
-                icon: null == e || null == (o = e.assets) ? void 0 : o.small_image,
+                icon: null == e || null == (s = e.assets) ? void 0 : s.small_image,
                 size: h.iu.SMALL
             }) : void 0;
         return {
@@ -102,7 +102,7 @@ function b(e, t) {
             smallImage: void 0
         }
     }
-    if (null == n && (0, s.A)(e)) return {
+    if (null == n && (0, o.A)(e)) return {
         largeImage: {
             src: r.A.get(_.fg2.XBOX).icon.customPNG,
             alt: m.intl.string(m.t.Nfvo72)
@@ -127,8 +127,8 @@ function b(e, t) {
 }
 
 function O(e, t) {
-    var n, r, a, s, l, c, d, f;
-    let p = (0, o.h)(null == e ? void 0 : e.application_id);
+    var n, r, a, o, l, c, d, f;
+    let p = (0, s.h)(null == e ? void 0 : e.application_id);
     if (null == e) return {
         largeImage: void 0,
         smallImage: void 0
@@ -137,7 +137,7 @@ function O(e, t) {
         m = null != _ ? {
             src: (0, u.uD)(e.application_id, _, [h.iu.LARGE, h.iu.LARGE]),
             text: null == (a = e.assets) || null == (r = a.large_text) ? void 0 : r.trim(),
-            url: null == (s = e.assets) ? void 0 : s.large_url
+            url: null == (o = e.assets) ? void 0 : o.large_url
         } : void 0,
         g = (0, i.A)(e) || null == e || null == (l = e.assets) ? void 0 : l.small_image,
         y = null != g ? {

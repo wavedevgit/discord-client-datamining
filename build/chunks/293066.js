@@ -6,9 +6,9 @@ n.d(t, {
     A: () => h
 }), n(321073);
 var i, a = n(311907),
-    s = n(73153);
+    o = n(73153);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,7 +24,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -76,10 +76,10 @@ class _ extends(i = a.Ay.PersistedStore) {
         return r.hasAcceptedEulaIds.includes(e)
     }
 }
-o(_, "displayName", "ApplicationStoreUserSettingsStore"), o(_, "persistKey", "ApplicationStoreUserSettingsStore"), o(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
+s(_, "displayName", "ApplicationStoreUserSettingsStore"), s(_, "persistKey", "ApplicationStoreUserSettingsStore"), s(_, "migrations", [e => null == e.hasAcceptedEulaIds ? u(l({}, e), {
     hasAcceptedEulaIds: []
 }) : e]);
-let h = new _(s.h, {
+let h = new _(o.h, {
     APPLICATION_STORE_ACCEPT_STORE_TERMS: f,
     APPLICATION_STORE_ACCEPT_EULA: p
 })

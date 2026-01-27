@@ -1,29 +1,29 @@
-/** Chunk was on 94073 **/
+/** Chunk was on 87916 **/
 /** chunk id: 504974, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => l
+    A: () => s
 });
-var r = n(627968);
+var a = n(627968);
 n(64700);
-var a = n(515598),
-    o = n(719335),
-    i = n(339984);
+var i = n(515598),
+    l = n(719335),
+    r = n(339984);
 
-function l(e) {
+function s(e) {
     let {
         type: t,
         analyticsPage: n,
-        analyticsSection: l,
-        isGIF: s,
+        analyticsSection: s,
+        isGIF: o,
         banner: c
     } = e;
-    return [i.HL.BANNER, i.HL.AVATAR].includes(t) && s ? (0, r.jsx)(o.A, {
-        analyticsSection: l,
+    return [r.HL.BANNER, r.HL.AVATAR].includes(t) && o ? (0, a.jsx)(l.A, {
+        analyticsSection: s,
         type: t
-    }) : t === i.HL.GUILD_BANNER ? (0, r.jsx)(a.A, {
-        analyticsSection: l,
+    }) : t === r.HL.GUILD_BANNER ? (0, a.jsx)(i.A, {
+        analyticsSection: s,
         analyticsPage: n,
-        isGIF: s,
+        isGIF: o,
         banner: c
     }) : null
 }

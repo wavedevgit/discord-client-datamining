@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,20 +15,20 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = !1;
+let s = !1;
 
 function l(e) {
     let {
         isRegistered: t
     } = e;
-    o = t
+    s = t
 }
 class c extends(r = i.Ay.Store) {
     isProtocolRegistered() {
-        return o
+        return s
     }
 }
-s(c, "displayName", "SpotifyProtocolStore");
+o(c, "displayName", "SpotifyProtocolStore");
 let u = new c(a.h, {
     SPOTIFY_SET_PROTOCOL_REGISTERED: l
 })

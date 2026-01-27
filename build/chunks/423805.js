@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(827343),
     i = n(439372),
     a = n(49463),
-    s = n(173660),
-    o = n(734057),
+    o = n(173660),
+    s = n(734057),
     l = n(430452),
     c = n(383501),
     u = n(504292),
@@ -33,12 +33,12 @@ function p() {
 function _() {
     if (!p() || !l.A.getVoiceFilterPlaybackEnabled() || !c.A.isConnected() || null == l.A.getActiveVoiceFilter()) return !1;
     let e = c.A.getChannelId(),
-        t = null != e ? o.A.getChannel(e) : null,
+        t = null != e ? s.A.getChannel(e) : null,
         {
             mute: n,
             selfMute: r,
             suppress: i
-        } = (0, s.k)({
+        } = (0, o.k)({
             channel: t
         });
     return !(n || r || i)

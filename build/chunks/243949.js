@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(688810),
-    s = n(267102),
-    o = n(183555),
+    o = n(267102),
+    s = n(183555),
     l = n(657331),
     c = n(652215),
     u = n(985018);
@@ -65,7 +65,7 @@ function h(e) {
         analyticsLocations: h
     } = (0, a.Ay)(), {
         context: m
-    } = (0, o.NJ)(), g = (0, s.aL)(), E = (0, s.Us)();
+    } = (0, s.NJ)(), g = (0, o.aL)(), E = (0, o.Us)();
     return (0, r.jsx)(i.Drp, {
         id: "user-profile",
         label: null != t ? t : u.intl.string(u.t.LYju5J),
@@ -75,6 +75,10 @@ function h(e) {
                 appContext: E
             }, m, _)), g.dispatch(c.jej.POPOUT_CLOSE)
         },
-        icon: d
+        icon: d,
+        leadingAccessory: null != d ? {
+            type: "icon",
+            icon: d
+        } : void 0
     })
 }

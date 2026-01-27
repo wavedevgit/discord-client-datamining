@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(339241),
     i = n(492313),
     a = n(64700);
-let s = Math.round(1e10 * Math.random()),
-    o = 0;
+let o = Math.round(1e10 * Math.random()),
+    s = 0;
 
 function l(e) {
     var t, n;
-    let l = (0, a.useMemo)(() => e.name || `radio-group-${s}-${++o}`, [e.name]),
+    let l = (0, a.useMemo)(() => e.name || `radio-group-${o}-${++s}`, [e.name]),
         [c, u] = (0, i.P)(e.value, null != (t = e.defaultValue) ? t : null, e.onChange),
         [d] = (0, a.useState)(c),
         [f, p] = (0, a.useState)(null),

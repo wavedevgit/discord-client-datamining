@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(532512);
+    o = n.n(a),
+    s = n(532512);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -70,12 +70,12 @@ function p(e, t) {
     return i
 }
 let _ = {
-        PRIMARY: o.Xc,
-        DANGER: o.Wg,
-        WARNING: o.vH,
-        SUCCESS: o.CN,
-        BRAND: o.cX,
-        CUSTOM: o.Nr
+        PRIMARY: s.Xc,
+        DANGER: s.Wg,
+        WARNING: s.vH,
+        SUCCESS: s.CN,
+        BRAND: s.cX,
+        CUSTOM: s.Nr
     },
     h = i.forwardRef((e, t) => {
         let n, [i, ...a] = [e, t],
@@ -88,9 +88,9 @@ let _ = {
             } = i,
             g = f(i, ["children", "editable", "type", "className", "outline"]),
             [E] = a;
-        return m ? n = o.rj : p === _.PRIMARY && u && (n = o.LL), (0, r.jsx)("div", d(c({
+        return m ? n = s.rj : p === _.PRIMARY && u && (n = s.LL), (0, r.jsx)("div", d(c({
             ref: E,
-            className: s()(h, p, n)
+            className: o()(h, p, n)
         }, g), {
             children: l
         }))

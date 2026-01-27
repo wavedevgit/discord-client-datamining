@@ -2,12 +2,12 @@
 /** chunk id: 769765, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => M
+    A: () => j
 }), n(321073), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(999903),
-    o = n(181079),
+    o = n(999903),
+    s = n(181079),
     l = n(961350),
     c = n(734057),
     u = n(808728),
@@ -59,7 +59,7 @@ function b(e) {
             channel: t,
             index: -1
         }), n[t.id] = []
-    }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, s.A)(n._categories, n).forEach(y), h[e] = n, n
+    }), t[u.I6].forEach(r), t[u.vM].forEach(r), (0, o.A)(n._categories, n).forEach(y), h[e] = n, n
 }
 
 function O() {
@@ -160,24 +160,24 @@ function D(e) {
     b(t)
 }
 
-function x() {
+function L() {
     b(f.YYv)
 }
 
-function L(e) {
+function x(e) {
     let t = h[e];
     return null != t ? t : b(e)
 }
-class j extends(r = i.Ay.Store) {
+class M extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(u.Ay, d.A, l.default, c.A, o.A), this.syncWith([o.A], x)
+        this.waitFor(u.Ay, d.A, l.default, c.A, s.A), this.syncWith([s.A], L)
     }
     getCategories(e) {
-        return null != e ? L(e) : E
+        return null != e ? x(e) : E
     }
 }
-p(j, "displayName", "GuildCategoryStore");
-let M = new j(a.h, {
+p(M, "displayName", "GuildCategoryStore");
+let j = new M(a.h, {
     CHANNEL_SELECT: D,
     CONNECTION_OPEN: O,
     OVERLAY_INITIALIZE: O,

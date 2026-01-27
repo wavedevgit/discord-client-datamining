@@ -4,15 +4,15 @@
 var r = n(557939),
     i = n(860511),
     a = n(985848),
-    s = n(43902),
-    o = "WebAssembly",
-    l = i[o],
+    o = n(43902),
+    s = "WebAssembly",
+    l = i[s],
     c = 7 !== Error("e", {
         cause: 7
     }).cause,
     u = function(e, t) {
         var n = {};
-        n[e] = s(e, t, c), r({
+        n[e] = o(e, t, c), r({
             global: !0,
             constructor: !0,
             arity: 1,
@@ -22,8 +22,8 @@ var r = n(557939),
     d = function(e, t) {
         if (l && l[e]) {
             var n = {};
-            n[e] = s(o + "." + e, t, c), r({
-                target: o,
+            n[e] = o(s + "." + e, t, c), r({
+                target: s,
                 stat: !0,
                 constructor: !0,
                 arity: 1,

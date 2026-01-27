@@ -2,7 +2,7 @@
 /** chunk id: 400634, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => s,
+    B: () => o,
     g: () => a
 });
 var r = n(600975),
@@ -24,7 +24,7 @@ let a = (0, r.C)({
     }]
 });
 
-function s(e) {
+function o(e) {
     let {
         autoTrackExposure: t,
         location: n,

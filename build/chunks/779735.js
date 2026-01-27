@@ -1,7 +1,7 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 779735, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => _
+    default: () => x
 }), n(896048), n(321073);
 var l = n(627968),
     r = n(64700),
@@ -15,13 +15,13 @@ var l = n(627968),
     m = n(17372),
     p = n(369053),
     b = n(598131),
-    x = n(652215),
+    _ = n(652215),
     g = n(575119);
-let _ = e => {
+let x = e => {
     let {
         reportType: t,
         menu: n,
-        modalProps: _,
+        modalProps: x,
         onSubmit: h,
         onNavigate: v,
         emailToken: f,
@@ -31,11 +31,11 @@ let _ = e => {
         root_node_id: O,
         success_node_id: S,
         fail_node_id: T
-    } = n, [N, k] = r.useState(O), [w, C] = r.useState(void 0), [P, I] = r.useState(void 0), [E, D] = r.useState([]), [M, R] = r.useState(void 0), [L, G] = r.useState(void 0);
+    } = n, [N, k] = r.useState(O), [w, C] = r.useState(void 0), [I, P] = r.useState(void 0), [E, D] = r.useState([]), [M, R] = r.useState(void 0), [L, G] = r.useState(void 0);
     (0, s.Ay)(() => {
         (0, u.VE)()
     });
-    let B = e => {
+    let U = e => {
             var n, l, r;
             let {
                 destination: a
@@ -43,7 +43,7 @@ let _ = e => {
             if (void 0 === d) return void c.A.increment({
                 name: i.K.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE
             });
-            if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? void 0 : n.type) === "next") return B((l = function(e) {
+            if (d.elements.some(e => "skip" === e.type) && (null == (n = d.button) ? void 0 : n.type) === "next") return U((l = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         l = Object.keys(n);
@@ -72,9 +72,9 @@ let _ = e => {
             })(Object(r)).forEach(function(e) {
                 Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(r, e))
             }), l));
-            if (D([...E, e]), null != d.key && (null == v || v(d.key)), C(void 0), I(void 0), t.name === m.t0.MESSAGE || t.name === m.t0.FIRST_DM) {
+            if (D([...E, e]), null != d.key && (null == v || v(d.key)), C(void 0), P(void 0), t.name === m.t0.MESSAGE || t.name === m.t0.FIRST_DM) {
                 let e = t.record.id;
-                o.Ay.trackWithMetadata(x.HAw.IAR_NAVIGATE, {
+                o.Ay.trackWithMetadata(_.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: d.report_type,
@@ -84,7 +84,7 @@ let _ = e => {
             }
             k(s)
         },
-        U = async e => {
+        B = async e => {
             var l;
             let r = j ? await (0, p.zC)(n, t, [...E, e]) : await (0, p.bo)(n, t, [...E, e], f),
                 i = null == r || null == (l = r.body) ? void 0 : l.report_id;
@@ -97,7 +97,7 @@ let _ = e => {
                 i = null != (e = null == r ? void 0 : r.nodeRef) ? e : O;
             if (t.name === m.t0.MESSAGE || t.name === m.t0.FIRST_DM) {
                 let e = t.record.id;
-                o.Ay.trackWithMetadata(x.HAw.IAR_NAVIGATE, {
+                o.Ay.trackWithMetadata(_.HAw.IAR_NAVIGATE, {
                     message_id: e,
                     content_type: t.name,
                     report_sub_type: y[i].report_type,
@@ -105,7 +105,7 @@ let _ = e => {
                     next_node: y[i].id
                 })
             }
-            C(null == r || null == (n = r.multiSelect) ? void 0 : n.state), I(null == r ? void 0 : r.textInput), k(i), D(l), null == v || v("..")
+            C(null == r || null == (n = r.multiSelect) ? void 0 : n.state), P(null == r ? void 0 : r.textInput), k(i), D(l), null == v || v("..")
         }, V = r.useMemo(() => {
             let e = [],
                 t = [];
@@ -127,7 +127,7 @@ let _ = e => {
         }, [y, O, T, S]);
     return (0, l.jsx)(a.EOs, {
         "data-migration-pending": !0,
-        transitionState: _.transitionState,
+        transitionState: x.transitionState,
         "aria-labelledby": A,
         parentComponent: "InAppReportModal",
         children: (0, l.jsx)(a.tN_, {
@@ -143,14 +143,14 @@ let _ = e => {
                         reportType: t,
                         reportSubType: L,
                         history: E,
-                        onModalClose: _.onClose,
-                        onSelectChild: B,
+                        onModalClose: x.onClose,
+                        onSelectChild: U,
                         onNavigateBack: H,
                         multiSelect: w,
-                        textInput: P,
+                        textInput: I,
                         successNodeId: S,
                         failNodeId: T,
-                        onSubmit: U,
+                        onSubmit: B,
                         reportId: M,
                         nodeMap: y
                     })

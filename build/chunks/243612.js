@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(311907),
     i = n(52133),
     a = n(933958),
-    s = n(415109),
-    o = n(57220),
+    o = n(415109),
+    s = n(57220),
     l = n(587895);
 n(313961);
 var c = n(15285);
@@ -47,12 +47,12 @@ function h() {
     let n = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c.Ay,
         r = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : u.A,
         i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.Ay,
-        o = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.A,
+        s = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : l.A,
         f = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : d.A,
-        p = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : (0, s.Y)(),
+        p = arguments.length > 5 && void 0 !== arguments[5] ? arguments[5] : (0, o.Y)(),
         _ = i.getCurrentEmbeddedActivity(),
         h = null == _ ? void 0 : _.applicationId,
-        m = null == h ? void 0 : o.getApplication(h);
+        m = null == h ? void 0 : s.getApplication(h);
     if (null != _ && null != m && p) return {
         id: _.applicationId,
         altId: void 0,
@@ -69,6 +69,6 @@ function h() {
 }
 
 function m() {
-    let e = (0, o.V)();
+    let e = (0, s.V)();
     return (0, r.bG)([c.Ay, u.A, a.Ay, l.A, d.A], () => h(c.Ay, u.A, a.Ay, l.A, d.A, e), [e], i.A)
 }

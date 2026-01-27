@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(615300),
     c = n(421380),
     u = n(235986),
@@ -95,7 +95,7 @@ class v extends(r = a.PureComponent) {
             } = e,
             a = g(e, ["className", "shineSize", "shinePaused"]);
         return (0, i.jsx)(l.A.div, m(_({}, a), {
-            className: o()(f.dj, t, {
+            className: s()(f.dj, t, {
                 [f.EM]: r
             }),
             children: (0, i.jsx)(u.A, {
@@ -117,24 +117,24 @@ let A = e => {
         children: t,
         className: n,
         disabled: r,
-        submitting: s,
+        submitting: o,
         pauseAnimation: l,
         shineSize: u = "default",
         shinePaused: p,
         buttonShineClassName: h,
         onlyShineOnHover: E
-    } = e, y = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), b = a.useRef(null), O = (0, d.M)(b), A = !r && !s && !0 !== l && (!E || O);
+    } = e, y = g(e, ["children", "className", "disabled", "submitting", "pauseAnimation", "shineSize", "shinePaused", "buttonShineClassName", "onlyShineOnHover"]), b = a.useRef(null), O = (0, d.M)(b), A = !r && !o && !0 !== l && (!E || O);
     return (0, i.jsxs)(c.$n, m(_({
         "data-migration-pending": !0,
         buttonRef: b
     }, y), {
-        className: o()(f.WE, n),
+        className: s()(f.WE, n),
         disabled: r,
-        submitting: s,
+        submitting: o,
         children: [t, A ? (0, i.jsx)(v, {
             "data-migration-pending": !0,
             shinePaused: p,
-            className: o()(f.Qr, E ? f.PK : void 0, h),
+            className: s()(f.Qr, E ? f.PK : void 0, h),
             shineSize: u
         }) : null]
     }))

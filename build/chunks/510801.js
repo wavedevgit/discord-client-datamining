@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(575593),
     i = n(993408),
     a = n(623373),
-    s = n(986630),
-    o = n(931772);
+    o = n(986630),
+    s = n(931772);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -69,14 +69,14 @@ function p(e, t) {
     return i
 }
 let _ = e => e === r.R.VARIANTS_GROUP || e === r.R.EXTERNAL_SKU;
-class h extends o.A {
+class h extends s.A {
     static fromServer(e) {
         let {
             products: t,
             hero_ranking: n,
             hero_logo_display_config: r,
             hero_banner_display_config: a,
-            hero_banner_url: o,
+            hero_banner_url: s,
             hero_banner_animated_url: l,
             hero_rive_url: u,
             hero_logo_url: p,
@@ -91,11 +91,11 @@ class h extends o.A {
         } = e, I = f(e, ["products", "hero_ranking", "hero_logo_display_config", "hero_banner_display_config", "hero_banner_url", "hero_banner_animated_url", "hero_rive_url", "hero_logo_url", "catalog_banner_url", "catalog_banner_animated_url", "catalog_banner_rive_url", "featured_block_url", "logo_url", "pdp_bg_url", "mobile_banner_url", "mobile_bg_url"]);
         return new h(d(c({}, super.fromServer(I)), {
             products: t.reduce((e, t) => {
-                let n = s.A.fromServer(t);
+                let n = o.A.fromServer(t);
                 return (_(n.type) || 0 !== n.items.length) && e.push(n), e
             }, []),
             heroRanking: n,
-            heroBannerUrl: o,
+            heroBannerUrl: s,
             heroBannerAnimatedUrl: l,
             heroRiveUrl: u,
             heroLogoUrl: p,

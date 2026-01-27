@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(909144),
     i = n(314739),
     a = n(64700);
-let s = a.createContext(null);
+let o = a.createContext(null);
 
-function o(e) {
+function s(e) {
     let {
         locale: t,
         children: n
@@ -18,7 +18,7 @@ function o(e) {
         locale: t,
         direction: (0, r.V)(t) ? "rtl" : "ltr"
     }), [t]);
-    return a.createElement(s.Provider, {
+    return a.createElement(o.Provider, {
         value: i
     }, n)
 }
@@ -27,7 +27,7 @@ function l(e) {
     let {
         children: t
     } = e, n = (0, i.D)();
-    return a.createElement(s.Provider, {
+    return a.createElement(o.Provider, {
         value: n
     }, t)
 }
@@ -37,7 +37,7 @@ function c(e) {
         locale: t,
         children: n
     } = e;
-    return t ? a.createElement(o, {
+    return t ? a.createElement(s, {
         locale: t,
         children: n
     }) : a.createElement(l, {
@@ -47,5 +47,5 @@ function c(e) {
 
 function u() {
     let e = (0, i.D)();
-    return (0, a.useContext)(s) || e
+    return (0, a.useContext)(o) || e
 }

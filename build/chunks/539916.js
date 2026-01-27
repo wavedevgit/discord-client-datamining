@@ -4,7 +4,7 @@
 n.d(t, {
     Bu: () => y,
     D1: () => g,
-    Ii: () => j,
+    Ii: () => M,
     Kd: () => E,
     Km: () => I,
     ME: () => O,
@@ -13,26 +13,26 @@ n.d(t, {
     Q_: () => d,
     SA: () => C,
     SD: () => v,
-    Sq: () => x,
+    Sq: () => L,
     Uh: () => w,
     a5: () => T,
     fs: () => _,
     hv: () => R,
     iD: () => p,
     kq: () => u,
-    n4: () => M,
+    n4: () => j,
     pA: () => h,
     qC: () => b,
     sd: () => m,
     tb: () => P,
-    vK: () => L,
+    vK: () => x,
     wZ: () => A
 }), n(228524), n(896048), n(747238), n(321073);
 var r = n(812729),
     i = n.n(r),
     a = n(240248),
-    s = n(652215),
-    o = n(985018);
+    o = n(652215),
+    s = n(985018);
 
 function l(e, t) {
     if (null == e) return {};
@@ -86,14 +86,14 @@ function I(e) {
         {
             id: a
         } = e,
-        s = l(e, ["id"]);
-    return i()(r, s)
+        o = l(e, ["id"]);
+    return i()(r, o)
 }
 
 function S() {
     return {
         id: String(Date.now()),
-        title: o.intl.string(o.t.vY91C9),
+        title: s.intl.string(s.t.vY91C9),
         options: [],
         singleSelect: !1,
         required: !1,
@@ -181,14 +181,14 @@ function w(e) {
 function R(e) {
     return null == e || null == e.id && null == e.name
 }
-let P = new Set([s.fg2.PLAYSTATION_STAGING, s.fg2.CONTACTS, s.fg2.DOMAIN, s.fg2.TWITTER_LEGACY, s.fg2.MASTODON, s.fg2.INSTAGRAM, s.fg2.LEAGUE_OF_LEGENDS, s.fg2.SKYPE]),
-    D = Object.values(s.fg2).filter(e => !P.has(e));
+let P = new Set([o.fg2.PLAYSTATION_STAGING, o.fg2.CONTACTS, o.fg2.DOMAIN, o.fg2.TWITTER_LEGACY, o.fg2.MASTODON, o.fg2.INSTAGRAM, o.fg2.LEAGUE_OF_LEGENDS, o.fg2.SKYPE]),
+    D = Object.values(o.fg2).filter(e => !P.has(e));
 
-function x(e) {
+function L(e) {
     return 0 === e.connection_type ? "app:".concat(e.application_id) : "provider:".concat(e.provider_id)
 }
 
-function L(e) {
+function x(e) {
     let [t, n] = e.split(":");
     return "app" === t && void 0 !== n && "" !== n ? {
         type: 0,
@@ -199,18 +199,18 @@ function L(e) {
     } : null
 }
 
-function j(e) {
+function M(e) {
     let t = [];
     return 0 !== e.connection_type && 1 !== e.connection_type ? t.push("Invalid connection type") : (0 === e.connection_type ? ((0, a.uJ)(e.application_id) && t.push("Application ID is required for application connections"), (0, a.uJ)(e.provider_id) || t.push("Platform ID not allowed for application connections")) : 1 === e.connection_type && ((0, a.uJ)(e.provider_id) ? t.push("Platform ID is required for platform connections") : D.includes(e.provider_id) || t.push("Invalid platform ID"), (0, a.uJ)(e.application_id) || t.push("Application ID not allowed for platform connections")), null != e.description && e.description.length > m && t.push("Description must be ".concat(m, " characters or less"))), t
 }
 
-function M(e) {
+function j(e) {
     let t = [],
         n = new Set;
     for (let [r, i] of e.entries()) {
-        let e = j(i);
+        let e = M(i);
         t.push(...e.map(e => "Connection ".concat(r + 1, ": ").concat(e)));
-        let a = x(i);
+        let a = L(i);
         n.has(a) && t.push("Duplicate connection configuration"), n.add(a)
     }
     return t

@@ -1,47 +1,46 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 654265, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => p
 }), n(896048), n(492834);
 var r = n(64700),
     i = n(311907),
-    a = n(71393),
-    s = n(576705),
-    o = n(661191),
-    l = n(624458),
+    l = n(71393),
+    a = n(576705),
+    s = n(661191),
+    o = n(624458),
     c = n(844944),
     u = n(212455),
     d = n(652215);
 
-function f(e) {
-    let [t, n] = r.useState(!1), [f, p] = r.useState(!1), _ = o.default.cast(e), {
-        joinRequest: h,
-        guild: m
-    } = (0, i.cf)([c.A, u.A, a.A, s.A], () => {
+function p(e) {
+    let [t, n] = r.useState(!1), [p, m] = r.useState(!1), f = s.default.cast(e), {
+        joinRequest: g,
+        guild: h
+    } = (0, i.cf)([c.A, u.A, l.A, a.A], () => {
         var e;
-        let t = c.A.getRequest(_);
+        let t = c.A.getRequest(f);
         if (null == t) return {
             joinRequest: null,
             isModmin: !1,
             guild: null
         };
-        let n = null != (e = a.A.getGuild(t.guildId)) ? e : u.A.getJoinRequestGuild(t.guildId);
+        let n = null != (e = l.A.getGuild(t.guildId)) ? e : u.A.getJoinRequestGuild(t.guildId);
         return {
             joinRequest: t,
-            isModmin: null != n && s.A.can(d.xBc.KICK_MEMBERS, n),
+            isModmin: null != n && a.A.can(d.xBc.KICK_MEMBERS, n),
             guild: n
         }
     });
     return r.useEffect(() => {
-        null != m || f || (p(!0), l.A.fetchRequestToJoinGuilds())
-    }, [m, f]), r.useEffect(() => {
-        null == h && (n(!0), l.A.fetchGuildJoinRequest(_).finally(() => {
+        null != h || p || (m(!0), o.A.fetchRequestToJoinGuilds())
+    }, [h, p]), r.useEffect(() => {
+        null == g && (n(!0), o.A.fetchGuildJoinRequest(f).finally(() => {
             n(!1)
         }))
-    }, [h, _]), {
+    }, [g, f]), {
         loading: t,
-        joinRequest: h,
-        joinRequestGuild: m
+        joinRequest: g,
+        joinRequestGuild: h
     }
 }

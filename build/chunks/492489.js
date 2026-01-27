@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 492489, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     sW: "marginContainer_d4883c",
     Yj: "gradientContainer_d4883c",

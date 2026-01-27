@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(688810),
     i = n(80422),
     a = n(682262),
-    s = n(725177),
-    o = n(857266);
+    o = n(725177),
+    s = n(857266);
 
 function l() {
     let {
@@ -19,7 +19,7 @@ function l() {
         analyticsLocations: t
     } = (0, r.Ay)();
     if ((0, a.Pi)()) return () => {
-        (0, s.A)(e ? o.J.MY_GAMES : o.J.ACTIVITY_PRIVACY, {
+        (0, o.A)(e ? s.J.MY_GAMES : s.J.ACTIVITY_PRIVACY, {
             analyticsLocations: t
         })
     }

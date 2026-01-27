@@ -8,7 +8,7 @@ var r = n(627968),
     i = n(64700),
     a = n(744682);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,14 +17,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -60,15 +60,15 @@ let u = {
     },
     d = e => {
         let t = i.useRef(null),
-            s = i.useRef(e);
-        s.current = e;
+            o = i.useRef(e);
+        o.current = e;
         let l = i.useMemo(() => () => {
                 null != t.current && t.current.play(e)
             }, [e]),
-            d = i.useCallback(e => (0, r.jsx)(a.P, c(o({}, e), {
+            d = i.useCallback(e => (0, r.jsx)(a.P, c(s({}, e), {
                 src: () => n.e("45492").then(n.t.bind(n, 653727, 19)),
                 ref: t,
-                initialAnimation: s.current,
+                initialAnimation: o.current,
                 markers: u
             })), []);
         return {

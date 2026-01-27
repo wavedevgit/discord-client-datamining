@@ -1,78 +1,77 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 586685, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Ay: () => g,
-    SB: () => h,
-    VD: () => _,
-    b0: () => m
+    Ay: () => m,
+    SB: () => p,
+    VD: () => x,
+    b0: () => A
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(820284),
-    a = n(793574),
-    s = n(688810),
-    o = n(459793),
-    l = n(980545),
+var s = n(820284),
+    l = n(793574),
+    r = n(688810),
+    a = n(459793),
+    o = n(980545),
     c = n(195043),
-    u = n(326911),
-    d = n(265729),
-    f = n(531525),
-    p = n(652215);
+    d = n(326911),
+    u = n(265729),
+    g = n(531525),
+    h = n(652215);
 
-function _() {
-    return (0, r.jsx)(i.A, {
-        section: p.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
-        children: (0, r.jsx)(u.A, {})
+function x() {
+    return (0, i.jsx)(s.A, {
+        section: h.JJy.LIBRARY_INVENTORY_CODE_REDEMPTION,
+        children: (0, i.jsx)(d.A, {})
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         inOldSettings: t = !1
     } = e;
-    return (0, r.jsx)(i.A, {
-        section: p.JJy.QUESTS,
-        children: (0, r.jsx)(l.A, {
+    return (0, i.jsx)(s.A, {
+        section: h.JJy.QUESTS,
+        children: (0, i.jsx)(o.A, {
             inOldSettings: t
         })
     })
 }
 
-function m(e) {
+function A(e) {
     let {
         inOldSettings: t = !1
     } = e;
-    return (0, r.jsx)(i.A, {
-        section: p.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
-        children: (0, r.jsx)(d.A, {
+    return (0, i.jsx)(s.A, {
+        section: h.JJy.LIBRARY_INVENTORY_GIFTS_LIST,
+        children: (0, i.jsx)(u.A, {
             inOldSettings: t
         })
     })
 }
 
-function g() {
+function m() {
     let {
         analyticsLocations: e
-    } = (0, s.Ay)(a.A.USER_SETTINGS_GIFT_INVENTORY);
-    return (0, r.jsxs)(s.f5, {
+    } = (0, r.Ay)(l.A.USER_SETTINGS_GIFT_INVENTORY);
+    return (0, i.jsxs)(r.f5, {
         value: e,
-        children: [(0, r.jsx)(c.x, {
-            setting: f.H.GIFT_CODE_REDEMPTION,
-            children: (0, r.jsx)(_, {})
-        }), (0, r.jsx)(c.x, {
-            setting: f.H.GIFT_INVENTORY_QUESTS,
-            children: (0, r.jsx)(h, {
+        children: [(0, i.jsx)(c.x, {
+            setting: g.H.GIFT_CODE_REDEMPTION,
+            children: (0, i.jsx)(x, {})
+        }), (0, i.jsx)(c.x, {
+            setting: g.H.GIFT_INVENTORY_QUESTS,
+            children: (0, i.jsx)(p, {
                 inOldSettings: !0
             })
-        }), (0, r.jsx)(c.x, {
-            setting: f.H.GIFT_INVENTORY_LIST,
-            children: (0, r.jsx)(m, {
+        }), (0, i.jsx)(c.x, {
+            setting: g.H.GIFT_INVENTORY_LIST,
+            children: (0, i.jsx)(A, {
                 inOldSettings: !0
             })
-        }), (0, r.jsx)(c.x, {
-            setting: f.H.GIFT_BLOCKED_PAYMENTS,
-            children: (0, r.jsx)(o.uK, {})
+        }), (0, i.jsx)(c.x, {
+            setting: g.H.GIFT_BLOCKED_PAYMENTS,
+            children: (0, i.jsx)(a.uK, {})
         })]
     })
 }

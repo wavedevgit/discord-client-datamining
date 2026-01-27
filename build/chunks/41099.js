@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 41099, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     iE: "wrapper__70f7f",
     H8: "fullscreenWrapper__70f7f",

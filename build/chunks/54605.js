@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(136722),
     a = n(397927),
-    s = n(652215),
-    o = n(985018),
+    o = n(652215),
+    s = n(985018),
     l = n(80739);
 let c = 5;
 
@@ -19,7 +19,7 @@ function u(e) {
         onGuildChange: u,
         guilds: d,
         disabled: f = !1
-    } = e, p = d.filter(e => i.zy(e.permissions, s.xBc.MANAGE_GUILD)).map(e => ({
+    } = e, p = d.filter(e => i.zy(e.permissions, o.xBc.MANAGE_GUILD)).map(e => ({
         id: e.id,
         value: e.id,
         label: e.name
@@ -27,12 +27,12 @@ function u(e) {
     return (0, r.jsx)("div", {
         className: l.g,
         children: (0, r.jsx)(a.ZiE, {
-            label: o.intl.string(o.t["1DXFFd"]),
-            helperText: o.intl.format(o.t.t9Jm9o, {}),
+            label: s.intl.string(s.t["1DXFFd"]),
+            helperText: s.intl.format(s.t.t9Jm9o, {}),
             errorMessage: t,
             selectionMode: "single",
             maxOptionsVisible: c,
-            placeholder: o.intl.string(o.t.oM4E1A),
+            placeholder: s.intl.string(s.t.oM4E1A),
             options: p,
             onSelectionChange: u,
             disabled: f,

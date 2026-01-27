@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(166532),
-    o = n(231018),
+    o = n(166532),
+    s = n(231018),
     l = n(685944),
     c = n(623020),
     u = n(927578),
@@ -59,33 +59,33 @@ function O(e, t) {
     }), e
 }
 let v = [{
-        key: s.pn.REVIEW,
+        key: o.pn.REVIEW,
         renderStep: e => (0, r.jsx)(c._M, y({}, e)),
         options: {
             useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
         }
     }, {
-        key: s.pn.ADD_PAYMENT_STEPS,
+        key: o.pn.ADD_PAYMENT_STEPS,
         renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: s.pn.REVIEW,
+            originStep: o.pn.REVIEW,
             text: "Add Payment Steps Placeholder"
         })),
         options: {
             useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
         }
     }, {
-        key: s.pn.CONFIRM,
+        key: o.pn.CONFIRM,
         renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: s.pn.REVIEW,
+            originStep: o.pn.REVIEW,
             text: "Confirm Step Placeholder"
         })),
         options: {
             useBreadcrumbLabel: () => m.intl.string(m.t.QBnNHq)
         }
     }, {
-        key: s.pn.PLAN_SELECT,
+        key: o.pn.PLAN_SELECT,
         renderStep: e => (0, r.jsx)(d.eO, O(y({}, e), {
-            originStep: s.pn.REVIEW,
+            originStep: o.pn.REVIEW,
             text: "Plan Select Step Placeholder"
         })),
         options: {
@@ -103,7 +103,7 @@ let v = [{
             hideErrors: i
         } = e, {
             analyticsLocations: a,
-            loadId: s,
+            loadId: o,
             handleClose: c,
             handleComplete: p,
             isFetching: h,
@@ -112,7 +112,7 @@ let v = [{
             skuId: t,
             isGift: n,
             applicationId: _.FYj
-        }), E = (e, t, i) => n ? (0, r.jsx)(o.A, {
+        }), E = (e, t, i) => n ? (0, r.jsx)(s.A, {
             step: i,
             onClose: () => t(!1)
         }) : (0, r.jsx)(l.A, {
@@ -129,7 +129,7 @@ let v = [{
                 skuId: t,
                 isGift: n,
                 hideErrors: i,
-                loadId: s,
+                loadId: o,
                 purchaseType: _.VVm.ONE_TIME,
                 disablePurchases: !0,
                 excludeSubscriptionPlansBySKU: !0,
@@ -145,8 +145,8 @@ let v = [{
             isGift: n,
             hideErrors: a
         } = e, {
-            analyticsLocations: s,
-            loadId: o,
+            analyticsLocations: o,
+            loadId: s,
             handleClose: l,
             handleComplete: c,
             isFetching: p,
@@ -169,13 +169,13 @@ let v = [{
             className: g.Cd,
             children: [(0, r.jsx)(d.dL, {
                 stepConfigs: v,
-                analyticsLocations: s,
+                analyticsLocations: o,
                 applicationId: h.tv,
                 initialPlanId: y,
                 skuId: t,
                 isGift: n,
                 hideErrors: a,
-                loadId: o,
+                loadId: s,
                 purchaseType: _.VVm.SUBSCRIPTION,
                 disablePurchases: !0,
                 onClose: l,

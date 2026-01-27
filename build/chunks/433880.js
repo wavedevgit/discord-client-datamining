@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(429913),
+    o = n(397927),
+    s = n(429913),
     l = n(769015),
     c = n(994500),
     u = n(287809),
@@ -17,7 +17,7 @@ var r = n(627968),
 let p = [];
 
 function _(e, t) {
-    let n = (0, o.A)(e, t);
+    let n = (0, s.A)(e, t);
     return i.useMemo(() => {
         let e = new Map;
         return n.forEach(t => {
@@ -45,7 +45,7 @@ function m(e) {
     let {
         menuItemId: t,
         user: n,
-        label: o,
+        label: s,
         gameRelationships: f,
         onClick: m,
         color: g
@@ -66,10 +66,10 @@ function m(e) {
         let {
             applicationId: e
         } = O[0], n = C.get(e);
-        return null == n ? null : (0, r.jsx)(s.Drp, {
+        return null == n ? null : (0, r.jsx)(o.Drp, {
             color: g,
             id: t,
-            label: o,
+            label: s,
             subtext: (0, r.jsx)(h, {
                 application: n
             }),
@@ -82,19 +82,26 @@ function m(e) {
         let {
             applicationId: t
         } = e, n = C.get(t);
-        null != n && N.push((0, r.jsx)(s.Drp, {
-            id: t,
-            label: n.name,
-            icon: (0, r.jsx)(l.A, {
-                game: n,
-                size: l.M.XXSMALL
-            }),
-            action: () => m(n)
-        }, t))
-    }), 0 === N.length) ? null : (0, r.jsx)(s.Drp, {
+        if (null != n) {
+            let e = n.getIconURL(16);
+            N.push((0, r.jsx)(o.Drp, {
+                id: t,
+                label: n.name,
+                icon: (0, r.jsx)(l.A, {
+                    game: n,
+                    size: l.M.XXSMALL
+                }),
+                leadingAccessory: null != e ? {
+                    type: "image",
+                    src: e
+                } : void 0,
+                action: () => m(n)
+            }, t))
+        }
+    }), 0 === N.length) ? null : (0, r.jsx)(o.Drp, {
         color: g,
         id: t,
-        label: o,
+        label: s,
         onFocus: I,
         children: N
     })

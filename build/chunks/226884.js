@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(964486),
-    s = n(58149),
-    o = n(652176),
+    o = n(58149),
+    s = n(652176),
     l = n(448290),
     c = n(734057),
     u = n(309010),
@@ -31,11 +31,11 @@ let h = function(e) {
             })
         }), null == m) return null;
     let g = () => {
-        s.Ay.trackWithMetadata(f.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
+        o.Ay.trackWithMetadata(f.HAw.NEW_MEMBER_MENTION_CTA_CLICKED, {
             target_user_id: n.author.id
         }), h(), (0, l.C)(n.author, m.id)
     };
-    return (0, r.jsx)(o.Uq, {
+    return (0, r.jsx)(s.Uq, {
         className: _.cc,
         children: (0, r.jsxs)("div", {
             className: _.jC,

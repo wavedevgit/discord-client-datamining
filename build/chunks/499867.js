@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     KU: () => a,
-    Zr: () => o,
+    Zr: () => s,
     eh: () => i
 });
 let r = new Map,
@@ -13,14 +13,14 @@ let r = new Map,
             let a = e;
             if (t) {
                 let i = (null == n ? void 0 : n.equalityFn) || Object.is,
-                    s = e(r.getState());
+                    o = e(r.getState());
                 a = n => {
                     let r = e(n);
-                    if (!i(s, r)) {
-                        let e = s;
-                        t(s = r, e)
+                    if (!i(o, r)) {
+                        let e = o;
+                        t(o = r, e)
                     }
-                }, (null == n ? void 0 : n.fireImmediately) && t(s, s)
+                }, (null == n ? void 0 : n.fireImmediately) && t(o, o)
             }
             return i(a)
         }, e(t, n, r)
@@ -44,12 +44,12 @@ function a(e, t) {
         removeItem: e => n.removeItem(e)
     }
 }
-let s = e => t => {
+let o = e => t => {
         try {
             let n = e(t);
             if (n instanceof Promise) return n;
             return {
-                then: e => s(e)(n),
+                then: e => o(e)(n),
                 catch (e) {
                     return this
                 }
@@ -59,12 +59,12 @@ let s = e => t => {
                 then(e) {
                     return this
                 },
-                catch: t => s(t)(e)
+                catch: t => o(t)(e)
             }
         }
     },
-    o = (e, t) => (n, r, i) => {
-        let o, l = {
+    s = (e, t) => (n, r, i) => {
+        let s, l = {
                 storage: a(() => localStorage),
                 partialize: e => e,
                 version: 0,
@@ -102,7 +102,7 @@ let s = e => t => {
                 return e(null != (t = r()) ? t : h)
             });
             let i = (null == (t = l.onRehydrateStorage) ? void 0 : t.call(l, null != (e = r()) ? e : h)) || void 0;
-            return s(f.getItem.bind(f))(l.name).then(e => {
+            return o(f.getItem.bind(f))(l.name).then(e => {
                 if (e)
                     if ("number" != typeof e.version || e.version === l.version) return [!1, e.state];
                     else {
@@ -115,9 +115,9 @@ let s = e => t => {
             }).then(e => {
                 var t;
                 let [i, a] = e;
-                if (n(o = l.merge(a, null != (t = r()) ? t : h), !0), i) return p()
+                if (n(s = l.merge(a, null != (t = r()) ? t : h), !0), i) return p()
             }).then(() => {
-                null == i || i(o, void 0), o = r(), c = !0, d.forEach(e => e(o))
+                null == i || i(s, void 0), s = r(), c = !0, d.forEach(e => e(s))
             }).catch(e => {
                 null == i || i(void 0, e)
             })
@@ -141,5 +141,5 @@ let s = e => t => {
             onFinishHydration: e => (d.add(e), () => {
                 d.delete(e)
             })
-        }, l.skipHydration || m(), o || h
+        }, l.skipHydration || m(), s || h
     }

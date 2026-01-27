@@ -8,13 +8,13 @@ n.d(t, {
 var r = n(635377),
     i = n.n(r),
     a = n(562465),
-    s = n(73153),
-    o = n(686956),
+    o = n(73153),
+    s = n(686956),
     l = n(642133),
     c = n(652215);
 async function u(e) {
     try {
-        s.h.dispatch({
+        o.h.dispatch({
             type: "GUILD_ROLE_MEMBER_COUNT_FETCH_START",
             guildId: e
         });
@@ -22,13 +22,13 @@ async function u(e) {
             url: c.Rsh.GUILD_ROLE_MEMBER_COUNTS(e),
             rejectWithError: !0
         })).body;
-        s.h.dispatch({
+        o.h.dispatch({
             type: "GUILD_ROLE_MEMBER_COUNT_FETCH_SUCCESS",
             guildId: e,
             roleMemberCount: t
         })
     } catch (t) {
-        s.h.dispatch({
+        o.h.dispatch({
             type: "GUILD_ROLE_MEMBER_COUNT_FETCH_FAILURE",
             guildId: e
         })
@@ -45,7 +45,7 @@ function p(e, t) {
     return a.Bo.get({
         url: c.Rsh.GUILD_ROLE_MEMBER_IDS(e, t),
         rejectWithError: !1
-    }).then(t => (o.A.requestMembersById(e, t.body, !1), t.body.length))
+    }).then(t => (s.A.requestMembersById(e, t.body, !1), t.body.length))
 }
 
 function _(e, t) {

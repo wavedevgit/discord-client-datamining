@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     FK: () => a,
-    PC: () => s
+    PC: () => o
 });
 var r = n(374994),
     i = n(185928);
@@ -24,4 +24,4 @@ function a(e) {
         }), " ").concat(n, "%")
     }).join(", "), ")")
 }
-let s = e => i.dP[e]
+let o = e => i.dP[e]

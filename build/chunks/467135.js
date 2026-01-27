@@ -3,16 +3,16 @@
 "use strict";
 n.d(t, {
     OT: () => a,
-    kJ: () => s,
-    ko: () => o
+    kJ: () => o,
+    ko: () => s
 });
 var r = n(353640),
     i = n(121894);
 let a = "#5865F2",
-    s = 74,
-    o = (0, r.v)((e, t) => ({
+    o = 74,
+    s = (0, r.v)((e, t) => ({
         colors: [],
-        chassisMixAmount: s,
+        chassisMixAmount: o,
         gradientAngle: 0,
         setColors: t => {
             (0, i.r)(() => {

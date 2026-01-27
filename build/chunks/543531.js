@@ -2,7 +2,7 @@
 /** chunk id: 543531, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Xt: () => s,
+    Xt: () => o,
     wR: () => i,
     zK: () => a
 });
@@ -26,7 +26,7 @@ function a(e, t, n) {
     })
 }
 
-function s(e, t) {
+function o(e, t) {
     r.h.dispatch({
         type: "ANALYTICS_FEED_FLUSH",
         id: e,

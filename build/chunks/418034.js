@@ -3,8 +3,8 @@
 "use strict";
 n.d(t, {
     Es: () => l,
-    PW: () => o,
-    cZ: () => s,
+    PW: () => s,
+    cZ: () => o,
     oV: () => a,
     vq: () => i
 });
@@ -18,11 +18,11 @@ var r = n(64700),
             return e.apply(void 0, n)
         }
     },
-    s = function(e, t) {
+    o = function(e, t) {
         if ("function" == typeof e) return a(e, t);
         null != e && (e.current = t)
     },
-    o = function(e) {
+    s = function(e) {
         return e.reduce(function(e, t) {
             var n = t[0],
                 r = t[1];

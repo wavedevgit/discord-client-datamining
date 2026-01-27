@@ -1,9 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 575641, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 575641, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(797686),
-    i = n(537578);
-e.exports = function(e) {
-    var t = e.editorContainer;
-    return t || r(!1), i(t.firstChild) || r(!1), t.firstChild
+var n = r(797686),
+    i = r(537578);
+t.exports = function(t) {
+    var e = t.editorContainer;
+    return e || n(!1), i(e.firstChild) || n(!1), e.firstChild
 }

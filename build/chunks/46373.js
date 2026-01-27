@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 46373, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968),
     i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(158954),
-    o = n(430085);
-let l = e => {
+    a = n(430085);
+let o = e => {
     let {
         className: t
     } = e;
     return (0, r.jsx)(s.cGx, {
-        className: a()(o.y, t)
+        className: l()(a.y, t)
     })
 }

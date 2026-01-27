@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(63239),
     a = n(786558),
-    s = n(799226);
+    o = n(799226);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -74,17 +74,19 @@ let p = {
 
 function _(e) {
     let {
-        artboard: t = "Artboard"
-    } = e, n = d(e, ["artboard"]), {
-        status: o,
-        buffer: c
-    } = (0, s.CE)(i.A), f = (0, s.m2)(i.A);
-    return o === s.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, f ? {
+        artboard: t = "Artboard",
+        stateMachine: n
+    } = e, s = d(e, ["artboard", "stateMachine"]), {
+        status: c,
+        buffer: f
+    } = (0, o.CE)(i.A), _ = (0, o.m2)(i.A);
+    return c === o.BW.Loading ? null : (0, r.jsx)(a.w, l(u(l({}, _ ? {
         key: "override"
     } : {}), {
-        buffer: c,
+        buffer: f,
         artboard: t,
+        stateMachine: n,
         artboardProperties: p
-    }), n))
+    }), s))
 }
 _.riveSrc = i.A

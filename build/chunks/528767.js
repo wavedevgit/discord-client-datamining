@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(961350);
 
 function c(e, t, n) {
@@ -26,7 +26,7 @@ function f(e) {
         d[e.sessionId] = e
     })
 }
-class p extends(r = s.Ay.Store) {
+class p extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(l.default)
     }
@@ -69,7 +69,7 @@ class p extends(r = s.Ay.Store) {
     }
 }
 c(p, "displayName", "SessionsStore");
-let _ = new p(o.h, {
+let _ = new p(s.h, {
     CONNECTION_OPEN: f,
     SESSIONS_REPLACE: f
 })

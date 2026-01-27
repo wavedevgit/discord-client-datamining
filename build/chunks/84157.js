@@ -7,7 +7,7 @@ function r() {
 }
 
 function i(e) {
-    return o(e) ? (e.nodeName || "").toLowerCase() : "#document"
+    return s(e) ? (e.nodeName || "").toLowerCase() : "#document"
 }
 
 function a(e) {
@@ -15,12 +15,12 @@ function a(e) {
     return (null == e || null == (t = e.ownerDocument) ? void 0 : t.defaultView) || window
 }
 
-function s(e) {
+function o(e) {
     var t;
-    return null == (t = (o(e) ? e.ownerDocument : e.document) || window.document) ? void 0 : t.documentElement
+    return null == (t = (s(e) ? e.ownerDocument : e.document) || window.document) ? void 0 : t.documentElement
 }
 
-function o(e) {
+function s(e) {
     return !!r() && (e instanceof Node || e instanceof a(e).Node)
 }
 
@@ -39,14 +39,14 @@ n.d(t, {
     $4: () => C,
     CP: () => T,
     L9: () => S,
-    Ll: () => o,
+    Ll: () => s,
     Lv: () => _,
     Ng: () => u,
     Tc: () => v,
     Tf: () => m,
     ZU: () => f,
     _m: () => R,
-    ep: () => s,
+    ep: () => o,
     eu: () => I,
     gJ: () => O,
     mq: () => i,
@@ -128,7 +128,7 @@ function T(e) {
 
 function C(e) {
     if ("html" === i(e)) return e;
-    let t = e.assignedSlot || e.parentNode || u(e) && e.host || s(e);
+    let t = e.assignedSlot || e.parentNode || u(e) && e.host || o(e);
     return u(t) ? t.host : t
 }
 
@@ -141,11 +141,11 @@ function w(e, t, n) {
     var r;
     void 0 === t && (t = []), void 0 === n && (n = !0);
     let i = N(e),
-        s = i === (null == (r = e.ownerDocument) ? void 0 : r.body),
-        o = a(i);
-    if (s) {
-        let e = R(o);
-        return t.concat(o, o.visualViewport || [], f(i) ? i : [], e && n ? w(e) : [])
+        o = i === (null == (r = e.ownerDocument) ? void 0 : r.body),
+        s = a(i);
+    if (o) {
+        let e = R(s);
+        return t.concat(s, s.visualViewport || [], f(i) ? i : [], e && n ? w(e) : [])
     }
     return t.concat(i, w(i, [], n))
 }

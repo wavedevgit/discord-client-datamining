@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 371476, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968),
     i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(621070);
-let l = e => {
+    a = n(621070);
+let o = e => {
     let {
         className: t,
         color: n = "text-strong",
         responsive: i = !0,
-        children: l
+        children: o
     } = e;
     return (0, r.jsx)(s.Heading, {
-        className: a()(o.w, t, i && o.n),
+        className: l()(a.w, t, i && a.n),
         variant: "display-md",
         color: n,
-        children: l
+        children: o
     })
 }

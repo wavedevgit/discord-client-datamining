@@ -3,23 +3,23 @@
 "use strict";
 n.d(t, {
     BR: () => l,
-    Jr: () => s,
+    Jr: () => o,
     KS: () => c,
     Kv: () => d,
     Li: () => f,
     OX: () => i,
-    Vo: () => o,
+    Vo: () => s,
     ed: () => a,
     uj: () => u
 });
 var r = n(723702);
 let i = r.isPlatformEmbedded && ((0, r.isWindows)() || !1),
     a = !1;
-var s = function(e) {
+var o = function(e) {
     return e[e.WELCOME = 0] = "WELCOME", e[e.NEWS = 1] = "NEWS", e[e.GO_LIVE_VOICE = 2] = "GO_LIVE_VOICE", e[e.GO_LIVE_NON_VOICE = 3] = "GO_LIVE_NON_VOICE", e[e.KEYBIND_INDICATORS = 4] = "KEYBIND_INDICATORS", e[e.CONTENT_INVENTORY = 5] = "CONTENT_INVENTORY", e
 }({});
 
-function o(e) {
+function s(e) {
     switch (e) {
         case "News Nudge":
         case "Welcome Nudge":

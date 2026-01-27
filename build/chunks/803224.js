@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(723702),
-    o = n(652215);
+    o = n(723702),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -31,10 +31,10 @@ function c(e) {
     return e
 }
 let u = {
-        desktopType: s.isPlatformEmbedded ? o.nRU.ALL : o.nRU.NEVER,
+        desktopType: o.isPlatformEmbedded ? s.nRU.ALL : s.nRU.NEVER,
         disableAllSounds: !1,
         disabledSounds: [],
-        ttsType: o.aVn.NEVER,
+        ttsType: s.aVn.NEVER,
         disableUnreadBadge: !1,
         taskbarFlash: !0,
         notifyMessagesInSelectedChannel: !1
@@ -91,10 +91,10 @@ function y(e) {
     let {
         enabled: t
     } = e;
-    t === o.kCE.BLOCKED ? f({
-        desktopType: o.nRU.NEVER
-    }) : t === o.kCE.ENABLED && f({
-        desktopType: o.nRU.ALL
+    t === s.kCE.BLOCKED ? f({
+        desktopType: s.nRU.NEVER
+    }) : t === s.kCE.ENABLED && f({
+        desktopType: s.nRU.ALL
     })
 }
 class b extends(r = i.Ay.DeviceSettingsStore) {
@@ -131,7 +131,7 @@ class b extends(r = i.Ay.DeviceSettingsStore) {
 }
 l(b, "displayName", "NotificationSettingsStore"), l(b, "persistKey", "notifications"), l(b, "migrations", [e => {
     let t = c({}, e);
-    return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || o.aVn.NEVER, null == t.desktopType && (t.desktopType = s.isPlatformEmbedded ? o.nRU.ALL : o.nRU.NEVER), t
+    return t.disabledSounds = t.disabledSounds || [], t.disableUnreadBadge = t.disableUnreadBadge || !1, t.taskbarFlash = null == t.taskbarFlash || t.taskbarFlash, t.ttsType = t.ttsType || s.aVn.NEVER, null == t.desktopType && (t.desktopType = o.isPlatformEmbedded ? s.nRU.ALL : s.nRU.NEVER), t
 }]);
 let O = new b(a.h, {
     NOTIFICATIONS_SET_DESKTOP_TYPE: f,

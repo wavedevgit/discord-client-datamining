@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(665260),
-    s = n(731068),
-    o = n(619517),
+    o = n(731068),
+    s = n(619517),
     l = n(248643),
     c = n(803316),
     u = n(652176),
@@ -82,9 +82,9 @@ function v(e, t) {
 
 function A(e, t) {
     return b(E({}, e), {
-        type: (0, s.FE)(e),
+        type: (0, o.FE)(e),
         original: e.url,
-        srcIsAnimated: (0, a.Lt)(e.flags, s.e5.IS_ANIMATED),
+        srcIsAnimated: (0, a.Lt)(e.flags, o.e5.IS_ANIMATED),
         sourceMetadata: {
             message: t
         }
@@ -101,7 +101,7 @@ function S(e) {
             media: n,
             obscured: i = !1,
             maxWidth: a,
-            maxHeight: s,
+            maxHeight: o,
             onContextMenu: c
         } = e,
         {
@@ -130,7 +130,7 @@ function S(e) {
             width: d,
             height: p,
             maxWidth: a,
-            maxHeight: s,
+            maxHeight: o,
             poster: e,
             naturalWidth: d,
             naturalHeight: p,
@@ -145,12 +145,12 @@ function S(e) {
             disableArrowKeySeek: !0
         }))
     }
-    return "IMAGE" === A && (t = P ? (0, r.jsx)(o.Ay, b(E({}, N), {
+    return "IMAGE" === A && (t = P ? (0, r.jsx)(s.Ay, b(E({}, N), {
         src: R,
         width: d,
         height: p,
         maxWidth: a,
-        maxHeight: s,
+        maxHeight: o,
         useFullWidth: !0,
         shouldLink: !1,
         className: m.$_,
@@ -165,7 +165,7 @@ function S(e) {
         className: m.xx,
         style: {
             maxWidth: a,
-            maxHeight: s
+            maxHeight: o
         }
     })), null != t ? (0, r.jsx)(h.A, {
         children: t

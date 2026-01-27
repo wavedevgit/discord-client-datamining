@@ -11,22 +11,22 @@ let i = {
         current: 0
     },
     a = r.createContext(i),
-    s = r.createContext(!1);
+    o = r.createContext(!1);
 "u" > typeof window && window.document && window.document.createElement;
-let o = new WeakMap;
+let s = new WeakMap;
 
 function l(e = !1) {
     let t = (0, r.useContext)(a),
         n = (0, r.useRef)(null);
     if (null === n.current && !e) {
-        var i, s;
-        let e = null == (s = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) || null == (i = s.ReactCurrentOwner) ? void 0 : i.current;
+        var i, o;
+        let e = null == (o = r.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED) || null == (i = o.ReactCurrentOwner) ? void 0 : i.current;
         if (e) {
-            let n = o.get(e);
-            null == n ? o.set(e, {
+            let n = s.get(e);
+            null == n ? s.set(e, {
                 id: t.current,
                 state: e.memoizedState
-            }) : e.memoizedState !== n.state && (t.current = n.id, o.delete(e))
+            }) : e.memoizedState !== n.state && (t.current = n.id, s.delete(e))
         }
         n.current = ++t.current
     }
@@ -61,5 +61,5 @@ function _(e) {
 }
 
 function h() {
-    return "function" == typeof r.useSyncExternalStore ? r.useSyncExternalStore(_, f, p) : (0, r.useContext)(s)
+    return "function" == typeof r.useSyncExternalStore ? r.useSyncExternalStore(_, f, p) : (0, r.useContext)(o)
 }

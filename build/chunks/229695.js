@@ -2,13 +2,13 @@
 /** chunk id: 229695, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => o,
-    k: () => s
+    j: () => s,
+    k: () => o
 });
 var r = n(326687),
     i = n(506548),
     a = n(3498);
-let s = e => ({
+let o = e => ({
     id: e.id,
     configVersion: 2,
     startsAt: e.starts_at,
@@ -41,12 +41,12 @@ let s = e => ({
     },
     taskConfigV2: (0, a.z)(e.task_config_v2),
     rewardsConfig: (0, i.S)(e.rewards_config),
-    cosponsorMetadata: o(e.cosponsor_metadata),
+    cosponsorMetadata: s(e.cosponsor_metadata),
     sharePolicy: e.share_policy,
     ctaConfig: (0, r.W)(e.cta_config)
 });
 
-function o(e) {
+function s(e) {
     if (null != e) return {
         name: e.name,
         logotype: e.logotype,

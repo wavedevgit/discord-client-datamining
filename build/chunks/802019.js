@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(962125),
+    o = n.n(a),
+    s = n(962125),
     l = n(151271),
     c = n(652215),
     u = n(103551);
@@ -17,17 +17,17 @@ let d = e => {
             activeIndex: t,
             categoryListRef: n,
             getScrollOffsetForIndex: r
-        } = e, a = i.useRef(c.An1), s = i.useRef(t);
+        } = e, a = i.useRef(c.An1), o = i.useRef(t);
         return i.useEffect(() => {
-            null != t && t !== s.current && (a.current !== c.An1 && window.cancelAnimationFrame(a.current), a.current = window.requestAnimationFrame(() => {
+            null != t && t !== o.current && (a.current !== c.An1 && window.cancelAnimationFrame(a.current), a.current = window.requestAnimationFrame(() => {
                 var e;
                 if (null == n.current) return;
-                let i = t > (null != (e = s.current) ? e : -1),
-                    o = null != r ? r(t, i) : 0;
+                let i = t > (null != (e = o.current) ? e : -1),
+                    s = null != r ? r(t, i) : 0;
                 n.current.scrollRowIntoView(t, {
                     animate: !0,
-                    offset: o
-                }), a.current = c.An1, s.current = t
+                    offset: s
+                }), a.current = c.An1, o.current = t
             }))
         }, [t, n, r]), {
             categoryListRef: n
@@ -68,8 +68,8 @@ let d = e => {
             I = i.useCallback(e => y(a[e], e, () => A(e), v === e), [v, a, A, y]),
             S = i.useMemo(() => "function" == typeof g ? e => g(a[e], e) : g, [a, g]);
         return (0, r.jsxs)("div", {
-            className: s()(u.i, p),
-            children: [(0, r.jsx)(o.A, {
+            className: o()(u.i, p),
+            children: [(0, r.jsx)(s.A, {
                 listPadding: _,
                 onScroll: E,
                 ref: t,

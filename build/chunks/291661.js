@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(854627),
-    s = n(837921),
-    o = n(985018);
+    o = n(837921),
+    s = n(985018);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -32,12 +32,12 @@ function c(e) {
     }
     return e
 }
-let u = s.Ay.getEnableHardwareAcceleration() ? i.JsQ : i.euF,
+let u = o.Ay.getEnableHardwareAcceleration() ? i.JsQ : i.euF,
     d = e => {
         let {
             user: t,
             guildId: n,
-            avatarDecorationOverride: s,
+            avatarDecorationOverride: o,
             status: l,
             avatarSize: d = i._3J.SIZE_120,
             "aria-hidden": f = !1,
@@ -53,7 +53,7 @@ let u = s.Ay.getEnableHardwareAcceleration() ? i.JsQ : i.euF,
             guildId: n,
             size: d,
             showPending: !0,
-            avatarDecorationOverride: s,
+            avatarDecorationOverride: o,
             animateOnHover: _
         });
         return (0, r.jsx)(u, c({
@@ -61,7 +61,7 @@ let u = s.Ay.getEnableHardwareAcceleration() ? i.JsQ : i.euF,
             src: g,
             size: d,
             status: l,
-            "aria-label": f ? void 0 : o.intl.string(o.t.lqaIxI),
+            "aria-label": f ? void 0 : s.intl.string(s.t.lqaIxI),
             "aria-hidden": f,
             className: p
         }, E))

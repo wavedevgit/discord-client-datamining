@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(3026),
-    o = n(397927),
+    o = n(3026),
+    s = n(397927),
     l = n(939496),
     c = n(996988),
     u = n(380297);
@@ -29,12 +29,12 @@ function d(e) {
         children: f
     }) : (0, r.jsxs)("div", {
         className: u.wx,
-        children: [(0, r.jsxs)(o.Text, {
+        children: [(0, r.jsxs)(s.Text, {
             className: u.TK,
             variant: p === c.d.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
             color: "text-strong",
             id: n,
-            children: [(0, r.jsx)(s.A, {
+            children: [(0, r.jsx)(o.A, {
                 children: t
             }), null != d && (0, r.jsx)("div", {
                 className: u.tV,

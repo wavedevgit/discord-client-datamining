@@ -8,8 +8,8 @@ n.d(t, {
 });
 var r, i = n(635377),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153);
+    o = n(311907),
+    s = n(73153);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ function b(e) {
     } = e;
     n > .5 && n < .95 * r ? E.positions.set(t, n) : E.positions.del(t)
 }
-class O extends(r = s.Ay.DeviceSettingsStore) {
+class O extends(r = o.Ay.DeviceSettingsStore) {
     initialize(e) {
         let t = null != e ? e : {},
             {
@@ -128,7 +128,7 @@ class O extends(r = s.Ay.DeviceSettingsStore) {
     }
 }
 l(O, "displayName", "MediaPlaybackStore"), l(O, "persistKey", "MediaPlaybackStore");
-let v = new O(o.h, {
+let v = new O(s.h, {
     MEDIA_PLAYBACK_RATE_UPDATE: y,
     MEDIA_PLAYBACK_POSITION_UPDATE: b
 })

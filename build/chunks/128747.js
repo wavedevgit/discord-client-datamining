@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(280230),
-    s = n.n(a),
-    o = n(219065),
+    o = n.n(a),
+    s = n(219065),
     l = n(594061),
     c = n(750808),
     u = n(808728),
@@ -175,9 +175,9 @@ class S {
         let {
             allowSnowflake: i,
             userFilters: a
-        } = this.options, s = I(E.rD.USER, this.options);
+        } = this.options, o = I(E.rD.USER, this.options);
         if ((null == a ? void 0 : a.thread) != null) {
-            let t = o.A.getMemberListSections(a.thread),
+            let t = s.A.getMemberListSections(a.thread),
                 r = [];
             for (let e in t) {
                 let n = t[e];
@@ -193,7 +193,7 @@ class S {
                 query: e,
                 users: r,
                 limit: n,
-                boosters: s,
+                boosters: o,
                 allowSnowflake: i
             });
             return
@@ -202,7 +202,7 @@ class S {
             query: e,
             filters: a,
             blacklist: this._userBlacklist,
-            boosters: s
+            boosters: o
         })
     }
     queryGroupDMs(e, t) {
@@ -228,7 +228,7 @@ class S {
     queryLink(e, t) {
         let n;
         if (!this._include(E.rD.LINK)) return [];
-        let r = s().sanitizeUrl(e);
+        let r = o().sanitizeUrl(e);
         try {
             n = new URL(r)
         } catch (e) {
@@ -237,8 +237,8 @@ class S {
         let {
             pathname: i,
             hostname: a = "",
-            host: o
-        } = n, l = h.A.isDiscordHostname(a) || window.location.host === o;
+            host: s
+        } = n, l = h.A.isDiscordHostname(a) || window.location.host === s;
         return null !== i && l && h.A.isAppRoute(i) ? [{
             type: E.rD.LINK,
             record: c.A.fromPath(i),

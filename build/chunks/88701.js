@@ -3,8 +3,8 @@
 let r = n(177335),
     i = n(601861),
     a = n(800670),
-    s = n(569671),
-    o = n(596641),
+    o = n(569671),
+    s = n(596641),
     l = n(738018);
 e.exports = (e, t, n, c) => {
     switch (t) {
@@ -21,9 +21,9 @@ e.exports = (e, t, n, c) => {
         case ">":
             return a(e, n, c);
         case ">=":
-            return s(e, n, c);
-        case "<":
             return o(e, n, c);
+        case "<":
+            return s(e, n, c);
         case "<=":
             return l(e, n, c);
         default:

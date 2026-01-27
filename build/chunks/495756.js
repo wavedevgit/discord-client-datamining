@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(352505),
-    o = n(894010);
+    o = n(352505),
+    s = n(894010);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -27,9 +27,9 @@ function u(e) {
 }
 
 function d() {
-    s.m.getCurrentConfig({
+    o.m.getCurrentConfig({
         location: "GameMentionSettingsStore"
-    }).enabled && (0, o.G)()
+    }).enabled && (0, s.G)()
 }
 
 function f() {

@@ -6,22 +6,22 @@ n.d(t, {
     D1: () => H,
     Df: () => D,
     Sb: () => O.Sb,
-    TG: () => x,
-    _N: () => F,
+    TG: () => L,
+    _N: () => V,
     bW: () => P,
     cE: () => N,
-    ji: () => L,
+    ji: () => x,
     nT: () => B,
-    o_: () => j,
+    o_: () => M,
     wc: () => R,
-    xB: () => V,
+    xB: () => F,
     xs: () => G
 }), n(65821), n(896048), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162);
 var r = n(284009),
     i = n.n(r),
     a = n(562465),
-    s = n(554146),
-    o = n(803805),
+    o = n(554146),
+    s = n(803805),
     l = n(873298),
     c = n(506774),
     u = n(73153),
@@ -119,10 +119,10 @@ class w {
             partial: !0,
             local: !0
         });
-        let s = null != (n = t.delaySeconds) ? n : 0;
-        if (null != a.timeout && s < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = void 0), null == a.timeout) {
-            let e = s * h.A.Millis.SECOND;
-            t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.A.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = s
+        let o = null != (n = t.delaySeconds) ? n : 0;
+        if (null != a.timeout && o < r.timeoutDelay && !r.rateLimited && (clearTimeout(a.timeout), a.timeout = void 0), null == a.timeout) {
+            let e = o * h.A.Millis.SECOND;
+            t.jitter && (e += Math.floor(Math.random() * Math.min(e, 30 * h.A.Millis.SECOND))), this.logger.log("Scheduling save from markDirty"), a.timeout = setTimeout(this.persistChanges, e), a.timeoutDelay = o
         }
         null != t.cleanup && (a.cleanupFuncs = [...r.cleanupFuncs, ...t.cleanup]), null == r.protoToSave ? a.protoToSave = e : a.protoToSave = (0, b.RK)(this.ProtoClass, r.protoToSave, e), this.dispatchChanges(a)
     }
@@ -171,8 +171,8 @@ class w {
                 let r = g.A[this.type],
                     {
                         proto: i,
-                        isDirty: s,
-                        cleanupFuncs: o
+                        isDirty: o,
+                        cleanupFuncs: s
                     } = (0, b.vI)(n, r);
                 return await u.h.dispatch({
                     type: "USER_SETTINGS_PROTO_UPDATE",
@@ -180,9 +180,9 @@ class w {
                         type: this.type,
                         proto: n
                     },
-                    resetEditInfo: s || e,
+                    resetEditInfo: o || e,
                     local: !1
-                }), s && this.markDirtyFromMigration(i, o), n
+                }), o && this.markDirtyFromMigration(i, s), n
             } catch (e) {
                 throw this.dispatchChanges({
                     loading: !1
@@ -281,30 +281,30 @@ class w {
     }
 }
 let R = new w(l.nT, O.oD.PRELOADED_USER_SETTINGS),
-    P = new w(o.aw, O.oD.FRECENCY_AND_FAVORITES_SETTINGS),
+    P = new w(s.aw, O.oD.FRECENCY_AND_FAVORITES_SETTINGS),
     D = {
         [O.oD.PRELOADED_USER_SETTINGS]: R,
         [O.oD.FRECENCY_AND_FAVORITES_SETTINGS]: P
     };
 
-function x(e, t, n) {
+function L(e, t, n) {
     return R.updateAsync("guilds", n => (0, b.$o)(n, e, t), n)
 }
 
-function L(e, t, n, r) {
-    return x(e, e => (0, b.VB)(e, t, n), r)
+function x(e, t, n, r) {
+    return L(e, e => (0, b.VB)(e, t, n), r)
 }
 
-function j(e) {
-    return M(e), R.updateAsync("userContent", t => {
+function M(e) {
+    return j(e), R.updateAsync("userContent", t => {
         if ((0, m.c0)(t.dismissedContents, e)) return !1;
         t.dismissedContents = (0, m.Vf)(t.dismissedContents, e)
     }, O.Sb.INFREQUENT_USER_ACTION)
 }
 
-function M(e) {
+function j(e) {
     E.A.hasLoaded(O.oD.PRELOADED_USER_SETTINGS) || k(e) || _.default.track(v.HAw.DISMISSIBLE_CONTENT_DISMISSED_BEFORE_CONNECTION_OPEN, {
-        content_type: s.M[e]
+        content_type: o.M[e]
     })
 }
 
@@ -319,19 +319,19 @@ async function U(e, t) {
     }, O.Sb.INFREQUENT_USER_ACTION)
 }
 async function G(e, t, n) {
-    return await x(t, t => {
+    return await L(t, t => {
         t.guildDismissibleContentStates[e] = I({}, t.guildDismissibleContentStates[e], n)
     }, O.Sb.INFREQUENT_USER_ACTION)
 }
 
-function V(e) {
+function F(e) {
     return R.updateAsync("userContent", t => {
         if (!(0, m.c0)(t.dismissedContents, e)) return !1;
         t.dismissedContents = (0, m.We)(t.dismissedContents, e)
     }, O.Sb.INFREQUENT_USER_ACTION)
 }
 
-function F(e) {
+function V(e) {
     return U(e, {
         lastDismissedVersion: 0,
         lastDismissedAtMs: "0",

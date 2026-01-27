@@ -8,7 +8,7 @@ var r = n(627968),
     i = n(64700),
     a = n(511347);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,14 +17,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -50,12 +50,12 @@ function c(e, t) {
     return i
 }
 let u = i.forwardRef(function(e, t) {
-    let [n, ...s] = [e, t], {
+    let [n, ...o] = [e, t], {
         muted: c,
         volume: u,
         playing: d,
         playbackRate: f
-    } = n, p = l(n, ["muted", "volume", "playing", "playbackRate"]), [_] = s, [h, m] = (0, a.A)(_);
+    } = n, p = l(n, ["muted", "volume", "playing", "playbackRate"]), [_] = o, [h, m] = (0, a.A)(_);
     return i.useEffect(() => {
         let e = h.current;
         null == e || void 0 !== c && (e.muted = c)
@@ -68,7 +68,7 @@ let u = i.forwardRef(function(e, t) {
     }, [h, f]), i.useEffect(() => {
         let e = h.current;
         null == e || void 0 !== d && (d ? e.play() : e.pause())
-    }, [h, d]), (0, r.jsx)("audio", o({
+    }, [h, d]), (0, r.jsx)("audio", s({
         ref: m
     }, p))
 })

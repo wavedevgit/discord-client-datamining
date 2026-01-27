@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(709055),
-    s = n(222823),
-    o = n(954571),
+    o = n(222823),
+    s = n(954571),
     l = n(211401),
     c = n(500049),
     u = n(60809),
@@ -47,8 +47,8 @@ function _(e) {
     f && (0, a.A)(d.MLl.CHANNEL_CALL_POPOUT);
     let m = f ? i.KX8 : i.SYi;
     (0, l.k)(c.Se.DISMISSED), (0, l.R)(c.s4.VOICE, void 0, h, "channel" === t.type ? t.channel.id : void 0);
-    let g = "contextless" !== t.type && (s.Ay.hasUnread(t.channel.id) || s.Ay.getMentionCount(t.channel.id) > 0);
-    return o.default.track(d.HAw.VOICE_PANEL_TAB_OPENED, {
+    let g = "contextless" !== t.type && (o.Ay.hasUnread(t.channel.id) || o.Ay.getMentionCount(t.channel.id) > 0);
+    return s.default.track(d.HAw.VOICE_PANEL_TAB_OPENED, {
         tab: "activities",
         location: _,
         source: c.s4.VOICE,

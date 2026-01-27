@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(534205);
+    o = n(534205);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -74,7 +74,7 @@ function p(e) {
         as: t,
         readOnly: n,
         disabled: i,
-        fullWidth: o = !1,
+        fullWidth: s = !1,
         children: c,
         validation: f,
         className: p,
@@ -83,11 +83,11 @@ function p(e) {
     } = e, m = d(e, ["as", "readOnly", "disabled", "fullWidth", "children", "validation", "className", "ref", "containerClassName"]), g = null != t ? t : "div", E = null == f ? void 0 : f.hasError;
     return (0, r.jsx)(g, u(l({
         ref: _,
-        className: a()(s.kL, h),
-        "data-full-width": o
+        className: a()(o.kL, h),
+        "data-full-width": s
     }, m), {
         children: (0, r.jsx)("div", {
-            className: a()(s.iE, p),
+            className: a()(o.iE, p),
             "data-error": E,
             "data-read-only": n,
             "data-disabled": i,

@@ -9,8 +9,8 @@ n.r(t), n.d(t, {
     ParsingResult: () => i.s4,
     ReferenceWithTimezone: () => i.b5,
     Weekday: () => a.Bw,
-    casual: () => o,
-    configuration: () => s,
+    casual: () => s,
+    configuration: () => o,
     parse: () => u,
     parseDate: () => d,
     strict: () => l
@@ -18,15 +18,15 @@ n.r(t), n.d(t, {
 var r = n(880683),
     i = n(374372),
     a = n(322811);
-let s = new(n(579926)).A,
-    o = new r.u(s.createCasualConfiguration(!1)),
-    l = new r.u(s.createConfiguration(!0, !1)),
-    c = new r.u(s.createCasualConfiguration(!0));
+let o = new(n(579926)).A,
+    s = new r.u(o.createCasualConfiguration(!1)),
+    l = new r.u(o.createConfiguration(!0, !1)),
+    c = new r.u(o.createCasualConfiguration(!0));
 
 function u(e, t, n) {
-    return o.parse(e, t, n)
+    return s.parse(e, t, n)
 }
 
 function d(e, t, n) {
-    return o.parseDate(e, t, n)
+    return s.parseDate(e, t, n)
 }

@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(205184),
+    o = n(311907),
+    s = n(205184),
     l = n(994500),
     c = n(287809),
     u = n(661191);
 
 function d(e) {
-    let t = (0, o.s)(e.id),
-        n = (0, s.cf)([c.default, l.A], () => {
+    let t = (0, s.s)(e.id),
+        n = (0, o.cf)([c.default, l.A], () => {
             let e = {};
             for (let n of t.values()) {
                 let t = c.default.getUser(n.author_id),

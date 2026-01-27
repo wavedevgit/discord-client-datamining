@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(421380),
-    o = n(397927),
+    o = n(421380),
+    s = n(397927),
     l = n(73153),
     c = n(915089),
     u = n(450232),
@@ -90,7 +90,7 @@ function T(e) {
     } = e, [S] = (0, a.yK)([p.A], () => [p.A.getCurrentDesktopIcon()]), T = (0, d.dk)("AppIconSelectionGroup"), C = i.useRef(null);
     (0, f.A)(C, m.kq.CUSTOM_APP_ICONS);
     let N = (0, c.GV)(),
-        w = (0, s._u)({
+        w = (0, o._u)({
             orientation: "horizontal",
             labelledBy: N
         }),
@@ -117,7 +117,7 @@ function T(e) {
                         className: E.so,
                         children: [!b && (0, r.jsxs)("div", {
                             className: E.DD,
-                            children: [(0, r.jsx)(o.Heading, {
+                            children: [(0, r.jsx)(s.Heading, {
                                 className: E.Qw,
                                 variant: T ? "heading-xl/normal" : "text-lg/medium",
                                 color: T ? "text-strong" : void 0,
@@ -125,13 +125,13 @@ function T(e) {
                             }), (0, r.jsx)(u.A, {
                                 className: E.PC
                             })]
-                        }), (0, r.jsx)(o.Heading, {
+                        }), (0, r.jsx)(s.Heading, {
                             variant: "text-sm/normal",
                             className: y.W$,
                             children: g.intl.string(g.t.IgENJo)
                         })]
                     }), null == v ? void 0 : v()]
-                }), (0, r.jsx)(o.BJc, {
+                }), (0, r.jsx)(s.BJc, {
                     direction: "horizontal",
                     wrap: !0,
                     gap: 8,

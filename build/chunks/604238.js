@@ -8,13 +8,13 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n(408238),
-    s = n(528226),
-    o = n(889634),
+    o = n(528226),
+    s = n(889634),
     l = n(219561),
     c = n(825638),
     u = n(244190);
 let d = {
-        ContainedHero: s.A,
+        ContainedHero: o.A,
         BasicHero: e => {
             let {
                 bannerSrc: t
@@ -23,7 +23,7 @@ let d = {
         },
         PromotionalHero: () => null,
         InteractiveHScroll: a.A,
-        Grid: o.A,
+        Grid: s.A,
         Section: c.A,
         ShopProductCard: u.A,
         Stack: l.Kp,

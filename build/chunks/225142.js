@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(843472),
-    s = n(56562),
-    o = n(164956),
+    o = n(56562),
+    s = n(164956),
     l = n(378570),
     c = n(734057),
     u = n(954571),
@@ -45,7 +45,7 @@ let m = async e => {
         })
     }
 }, g = async e => {
-    if (!o.A.isFullServerPreview(e)) {
+    if (!s.A.isFullServerPreview(e)) {
         i.h.dispatch({
             type: "GUILD_NEW_MEMBER_ACTIONS_FETCH_START",
             guildId: e
@@ -78,7 +78,7 @@ let m = async e => {
         }), null == t) return;
     let r = c.A.getChannel(t),
         p = f.h.getResourceForChannel(e, t);
-    null == e || o.A.isFullServerPreview(e) || null == r || null == p || u.default.track(h.HAw.SERVER_GUIDE_CHANNEL_SELECTED, {
+    null == e || s.A.isFullServerPreview(e) || null == r || null == p || u.default.track(h.HAw.SERVER_GUIDE_CHANNEL_SELECTED, {
         guild_id: e,
         channel_id: r.id,
         server_guide_channel_type: "resource",
@@ -89,7 +89,7 @@ let m = async e => {
         channelId: t,
         messageId: d.default.castChannelIdAsMessageId(t),
         flash: !1,
-        jumpType: s.US.INSTANT
+        jumpType: o.US.INSTANT
     })
 }, y = (e, t) => {
     i.h.dispatch({
@@ -99,7 +99,7 @@ let m = async e => {
     });
     let n = c.A.getChannel(t),
         r = f.h.getActionForChannel(e, t);
-    null == e || o.A.isFullServerPreview(e) || null == n || null == r || u.default.track(h.HAw.SERVER_GUIDE_CHANNEL_SELECTED, {
+    null == e || s.A.isFullServerPreview(e) || null == n || null == r || u.default.track(h.HAw.SERVER_GUIDE_CHANNEL_SELECTED, {
         guild_id: e,
         channel_id: n.id,
         server_guide_channel_type: "member action",
@@ -110,12 +110,12 @@ let m = async e => {
             type: "COMPLETE_NEW_MEMBER_ACTION",
             guildId: e,
             channelId: t
-        }), o.A.isFullServerPreview(e)) return;
+        }), s.A.isFullServerPreview(e)) return;
     let n = c.A.getChannel(t),
         a = f.h.getActionForChannel(e, t);
     if (null != n && null != a) {
-        var s, l;
-        let t = d.default.keys(null != (s = _.A.getCompletedActions(e)) ? s : {}),
+        var o, l;
+        let t = d.default.keys(null != (o = _.A.getCompletedActions(e)) ? o : {}),
             r = null != (l = f.h.getNewMemberActions(e)) ? l : [];
         u.default.track(h.HAw.SERVER_GUIDE_ACTION_COMPLETED, {
             guild_id: n.guild_id,

@@ -383,8 +383,8 @@ function et(e) {
                             application_id: null != (i = null == (u = e.activity) ? void 0 : u.application_id) ? i : e.game.id,
                             fake_inventory_item: !0
                         },
-                        content_type: s.I.PLAYED_GAME,
-                        author_type: o.t.USER,
+                        content_type: s.ContentInventoryEntryType.PLAYED_GAME,
+                        author_type: o.ContentInventoryAuthorType.USER,
                         participants: e.playingMembers.map(e => e.id),
                         traits: [{
                             type: c.K.IS_LIVE,

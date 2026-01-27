@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(230606),
     a = n(985848),
-    s = n(446474),
-    o = n(410323),
+    o = n(446474),
+    s = n(410323),
     l = n(503628),
     c = n(339626),
     u = n(837082),
@@ -14,11 +14,11 @@ var r = n(557939),
     p = n(812294),
     _ = String,
     h = i("JSON", "stringify"),
-    m = o(/./.exec),
-    g = o("".charAt),
-    E = o("".charCodeAt),
-    y = o("".replace),
-    b = o(1..toString),
+    m = s(/./.exec),
+    g = s("".charAt),
+    E = s("".charCodeAt),
+    y = s("".replace),
+    b = s(1..toString),
     O = /[\uD800-\uDFFF]/g,
     v = /^[\uD800-\uDBFF]$/,
     A = /^[\uDC00-\uDFFF]$/,
@@ -35,7 +35,7 @@ var r = n(557939),
         var n = d(arguments),
             r = f(t);
         if (!(!c(r) && (void 0 === e || u(e)))) return n[1] = function(e, t) {
-            if (c(r) && (t = s(r, this, _(e), t)), !u(t)) return t
+            if (c(r) && (t = o(r, this, _(e), t)), !u(t)) return t
         }, a(h, null, n)
     },
     C = function(e, t, n) {

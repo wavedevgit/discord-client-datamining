@@ -2,18 +2,18 @@
 /** chunk id: 790174, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968),
     i = n(397927),
     a = n(790114);
 
-function s(e) {
+function o(e) {
     let {
         title: t,
         className: n,
-        children: s
-    } = e, o = (0, a.A)() ? void 0 : t;
+        children: o
+    } = e, s = (0, a.A)() ? void 0 : t;
     return (0, r.jsx)("div", {
         className: n,
         children: (0, r.jsxs)(i.BJc, {
@@ -21,8 +21,8 @@ function s(e) {
             children: [(0, r.jsx)(i.Heading, {
                 variant: "heading-lg/semibold",
                 color: "text-strong",
-                children: o
-            }), s]
+                children: s
+            }), o]
         })
     })
 }

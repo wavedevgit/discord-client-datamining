@@ -2,13 +2,13 @@
 /** chunk id: 219935, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    EN: () => o,
+    EN: () => s,
     Ou: () => l,
-    d5: () => s
+    d5: () => o
 });
 var r = n(136722),
     i = n(233993),
     a = n(652215);
-let s = a.xBc.VIEW_CHANNEL,
-    o = r.kg(s, a.xBc.CONNECT),
-    l = r.kg(s, i.QY)
+let o = a.xBc.VIEW_CHANNEL,
+    s = r.kg(o, a.xBc.CONNECT),
+    l = r.kg(o, i.QY)

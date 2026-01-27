@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(74818),
-    s = n(812745),
-    o = n(756366),
+    o = n(812745),
+    s = n(756366),
     l = n(985018),
     c = n(355767);
 
@@ -24,7 +24,7 @@ function u(e) {
     } = e, h = i.useId(), m = i.useMemo(() => {
         let e = u.map(e => {
             let t = e.icon ? (0, r.jsx)("img", {
-                src: (0, s.Nj)(e.icon),
+                src: (0, o.Nj)(e.icon),
                 alt: "",
                 className: c.s
             }) : void 0;
@@ -39,7 +39,7 @@ function u(e) {
         return e.push({
             id: h,
             value: h,
-            label: l.intl.string(o.default.rNF29q),
+            label: l.intl.string(s.default.rNF29q),
             leading: void 0,
             description: void 0
         }), e
@@ -48,7 +48,7 @@ function u(e) {
     }, [f, d, h]);
     return (0, r.jsx)(a.l, {
         label: t,
-        placeholder: l.intl.string(o.default.rNF29q),
+        placeholder: l.intl.string(s.default.rNF29q),
         value: n,
         options: m,
         onSelectionChange: g,

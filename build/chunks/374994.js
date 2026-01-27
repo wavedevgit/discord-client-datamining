@@ -2,10 +2,10 @@
 /** chunk id: 374994, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $D: () => s,
+    $D: () => o,
     dE: () => i,
     nt: () => a,
-    s9: () => o
+    s9: () => s
 });
 var r = n(827734);
 
@@ -17,10 +17,10 @@ function a(e, t) {
     return r.A.unsafe_rawColors[e].resolve(t).hex()
 }
 
-function s() {
+function o() {
     return r.A.themes
 }
 
-function o() {
+function s() {
     return r.A.radii
 }

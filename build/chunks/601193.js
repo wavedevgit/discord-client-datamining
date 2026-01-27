@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 601193, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var r = n(839214);
 let i = Object.freeze({
@@ -11,4 +10,4 @@ let i = Object.freeze({
         entrypoint: null,
         searchBarState: n(488995).GlobalDiscoverySearchBarState.DEFAULT
     }),
-    a = (0, r.D)(() => i)
+    l = (0, r.D)(() => i)

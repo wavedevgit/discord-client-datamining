@@ -1,56 +1,51 @@
-/** Chunk was on web.js **/
+/** Chunk was on 3911 **/
 /** chunk id: 319225, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => u
+    E: () => a
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(158954),
-    a = n(397927),
-    s = n(985018);
+var s = n(158954),
+    r = n(397927),
+    l = n(985018);
 
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function c(e) {
+function o(e) {
     let {
         transitionState: t,
         title: n,
-        body: a,
+        body: r,
         onClose: o
     } = e;
-    return (0, r.jsx)(i.Modal, {
+    return (0, i.jsx)(s.Modal, {
         title: n,
         actions: [{
-            text: s.intl.string(s.t["NX+WJN"]),
+            text: l.intl.string(l.t["NX+WJN"]),
             onClick: o
         }],
         transitionState: t,
         onClose: o,
-        subtitle: a
+        subtitle: r
     })
 }
 
-function u(e) {
-    (0, a.qfG)(t => (0, r.jsx)(c, l({}, t, e)))
+function a(e) {
+    (0, r.qfG)(t => (0, i.jsx)(o, function(e) {
+        for (var t = 1; t < arguments.length; t++) {
+            var n = null != arguments[t] ? arguments[t] : {},
+                i = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), i.forEach(function(t) {
+                var i;
+                i = n[t], t in e ? Object.defineProperty(e, t, {
+                    value: i,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[t] = i
+            })
+        }
+        return e
+    }({}, t, e)))
 }

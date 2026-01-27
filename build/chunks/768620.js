@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(321733),
     i = n(420563),
     a = n(988440),
-    s = n(317374),
-    o = {
-        type: s.KR,
+    o = n(317374),
+    s = {
+        type: o.KR,
         payload: {
             clientOffset: null,
             sourceClientOffset: null
@@ -30,7 +30,7 @@ function l(e) {
             h = e.getRegistry();
         e.dispatch((0, i.P)(l)), c(t, _, h);
         var m = f(t, _);
-        if (null === m) return void e.dispatch(o);
+        if (null === m) return void e.dispatch(s);
         var g = null;
         if (l) {
             if (!p) throw Error("getSourceClientOffset must be defined");
@@ -42,7 +42,7 @@ function l(e) {
             d(E), h.pinSource(m);
             var y = h.getSourceType(m);
             return {
-                type: s.Vw,
+                type: o.Vw,
                 payload: {
                     itemType: y,
                     item: E,

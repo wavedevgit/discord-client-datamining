@@ -8,7 +8,7 @@ var r = n(518977),
     i = n(734057),
     a = n(536802);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = new Set,
+let s = new Set,
     l = new Set,
     c = !1,
     u = null;
@@ -27,7 +27,7 @@ function d(e) {
 
 function f(e) {
     let t = !1;
-    return d(e) && !o.has(e.id) && (o.add(e.id), t = !0), !d(e) && o.has(e.id) && (o.delete(e.id), t = !0), !d(e) && l.has(e.id) && (l.delete(e.id), t = !0), t
+    return d(e) && !s.has(e.id) && (s.add(e.id), t = !0), !d(e) && s.has(e.id) && (s.delete(e.id), t = !0), !d(e) && l.has(e.id) && (l.delete(e.id), t = !0), t
 }
 
 function p(e) {
@@ -36,7 +36,7 @@ function p(e) {
 }
 
 function _(e) {
-    "CONNECTION_OPEN" === e.type && p(e.countryCode), o.clear(), l.clear(), Object.values(i.A.getMutablePrivateChannels()).forEach(e => {
+    "CONNECTION_OPEN" === e.type && p(e.countryCode), s.clear(), l.clear(), Object.values(i.A.getMutablePrivateChannels()).forEach(e => {
         f(e)
     }), c = !0
 }
@@ -66,14 +66,14 @@ function E(e) {
     let {
         channel: t
     } = e;
-    return !!o.has(t.id) && (o.delete(t.id), !0)
+    return !!s.has(t.id) && (s.delete(t.id), !0)
 }
 
 function y(e) {
     let {
         messageRequestChannelIds: t
     } = e;
-    t.forEach(e => o.add(e))
+    t.forEach(e => s.add(e))
 }
 
 function b(e) {
@@ -88,22 +88,22 @@ class O extends a.A {
     }
     loadCache() {
         let e = this.readSnapshot(O.LATEST_SNAPSHOT_VERSION);
-        null != e && (o = new Set(e))
+        null != e && (s = new Set(e))
     }
     takeSnapshot() {
         return {
             version: O.LATEST_SNAPSHOT_VERSION,
-            data: Array.from(o)
+            data: Array.from(s)
         }
     }
     getMessageRequestChannelIds() {
-        return o
+        return s
     }
     getMessageRequestsCount() {
-        return o.size
+        return s.size
     }
     isMessageRequest(e) {
-        return o.has(e)
+        return s.has(e)
     }
     isAcceptedOptimistic(e) {
         return l.has(e)
@@ -128,5 +128,5 @@ class O extends a.A {
         })
     }
 }
-s(O, "displayName", "MessageRequestStore"), s(O, "LATEST_SNAPSHOT_VERSION", 1);
+o(O, "displayName", "MessageRequestStore"), o(O, "LATEST_SNAPSHOT_VERSION", 1);
 let v = new O

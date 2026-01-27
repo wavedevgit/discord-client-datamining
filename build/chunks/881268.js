@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 881268, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    X: () => s
+    X: () => a
 });
 var r = n(562465),
     i = n(198982),
-    a = n(652215);
-let s = async (e, t) => {
+    l = n(652215);
+let a = async (e, t) => {
     try {
         return (await r.Bo.get({
-            url: a.Rsh.PRICE_TIERS,
+            url: l.Rsh.PRICE_TIERS,
             query: {
                 price_tier_type: t,
                 guild_id: e

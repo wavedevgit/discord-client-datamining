@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(732955),
     a = n(397927),
-    s = n(156312),
-    o = n(877062),
+    o = n(156312),
+    s = n(877062),
     l = n(252561);
 let c = {
     name: "Deep Link Test",
@@ -18,11 +18,11 @@ let c = {
         let {
             deepLinkUrl: t
         } = e, n = () => {
-            console.log("Opening deep link... ", t), o.A.launch(t, e => {
+            console.log("Opening deep link... ", t), s.A.launch(t, e => {
                 console.log("onDone response: ", e)
             })
         };
-        return (0, r.jsx)(s.PaymentContextProvider, {
+        return (0, r.jsx)(o.PaymentContextProvider, {
             stepConfigs: [],
             skuIDs: [],
             activeSubscription: null,

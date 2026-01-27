@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(340287),
+    o = n.n(a),
+    s = n(340287),
     l = n(621466),
     c = n(51906),
     u = n(508382),
@@ -68,12 +68,12 @@ let m = e => {
     let {
         layerContext: t,
         className: n
-    } = e, [, a] = i.useContext(t), o = i.useCallback(e => {
+    } = e, [, a] = i.useContext(t), s = i.useCallback(e => {
         a(e)
     }, [a]);
     return (0, r.jsx)("div", {
-        className: s()(_, n),
-        ref: o
+        className: o()(_, n),
+        ref: s
     })
 };
 
@@ -85,7 +85,7 @@ function g(e) {
 
 function E(e, t) {
     let [n] = e;
-    return null == n ? null : o.createPortal(i.Children.only(t), n)
+    return null == n ? null : s.createPortal(i.Children.only(t), n)
 }
 let y = e => {
     let {

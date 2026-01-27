@@ -5,9 +5,9 @@ n.d(t, {
     A: () => N
 }), n(591487), n(727858), n(747238);
 var r, i, a = n(627968),
-    s = n(64700),
-    o = n(503698),
-    l = n.n(o),
+    o = n(64700),
+    s = n(503698),
+    l = n.n(s),
     c = n(280230),
     u = n.n(c),
     d = n(268218),
@@ -152,7 +152,7 @@ let I = O(y({}, u().defaultRules), {
     }),
     S = u().parserFor(I),
     T = u().reactFor(u().ruleOutput(I, "react"));
-class C extends(i = s.PureComponent) {
+class C extends(i = o.PureComponent) {
     render() {
         let {
             className: e,
@@ -160,12 +160,12 @@ class C extends(i = s.PureComponent) {
             state: n,
             parser: r,
             output: i
-        } = this.props, s = i(r("".concat(t, "\n\n"), y({
+        } = this.props, o = i(r("".concat(t, "\n\n"), y({
             inline: !1
         }, n)));
         return (0, a.jsx)("div", {
             className: l()(m.wD, e),
-            children: s
+            children: o
         })
     }
 }

@@ -1,37 +1,36 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 339442, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(757036),
+    l = n(757036),
     s = n(128450),
-    o = n(180020),
-    l = n(652215),
+    a = n(180020),
+    o = n(652215),
     c = n(788868),
-    u = n(985018),
-    d = n(93448);
+    d = n(985018),
+    u = n(93448);
 
-function f(e) {
+function _(e) {
     var t, n;
-    let f = (0, a.L)(c.PremiumTypes.TIER_2);
+    let _ = (0, l.L)(c.PremiumTypes.TIER_2);
     return (0, r.jsxs)(s.A, {
         errors: e.errors,
         disabled: e.disabled,
-        title: u.intl.string(u.t["9AjdkD"]),
+        title: d.intl.string(d.t["9AjdkD"]),
         children: [(0, r.jsx)("div", {
             children: (0, r.jsx)(i.ksK, {
                 placeholder: e.placeholder,
-                maxLength: l.zzC,
+                maxLength: o.zzC,
                 onChange: e.onGlobalNameChange,
                 value: null != (t = null != (n = e.pendingGlobalName) ? n : e.currentGlobalName) ? t : ""
             })
-        }), f && (0, r.jsx)(o.A, {
+        }), _ && (0, r.jsx)(a.A, {
             user: e.user,
-            className: d.F
+            className: u.F
         })]
     })
 }

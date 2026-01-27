@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 752472, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     wx: "header__7e090",
     lY: "animation__7e090",

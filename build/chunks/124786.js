@@ -1,54 +1,51 @@
-/** Chunk was on web.js **/
-/** chunk id: 124786, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => f
-}), n(591487), n(727858), n(747238);
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    s = n(567243),
-    o = n(802571);
-let l = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)"),
-    c = 500,
-    u = 400;
+/** Chunk was on 40396 **/
+/** chunk id: 124786, original params: e,l,t (module,exports,require) **/
+t.d(l, {
+    A: () => d
+}), t(591487), t(727858), t(747238);
+var r = t(627968);
+t(64700);
+var n = t(503698),
+    i = t.n(n),
+    s = t(567243),
+    a = t(802571);
+let o = RegExp("^music\\.amazon\\.(?:com|co\\.uk|de|co\\.jp|es|fr|it|com\\.au|in|ca|com\\.mx|com\\.br)");
 
-function d(e) {
-    let t = null,
-        n = null,
+function u(e) {
+    let l = null,
+        t = null,
         r = null;
     try {
-        t = (r = s.parse(e, !0)).host, n = r.pathname
+        l = (r = s.parse(e, !0)).host, t = r.pathname
     } catch (e) {
         return null
     }
-    return null != r && l.test(null != t ? t : "") && null != n ? r : null
+    return null != r && o.test(null != l ? l : "") && null != t ? r : null
 }
 
-function f(e) {
+function d(e) {
     let {
-        className: t,
+        className: l,
         embed: {
-            url: n,
-            thumbnail: i
+            url: t,
+            thumbnail: n
         }
     } = e;
-    if (null == n || null == i) return null;
-    let s = d(n);
+    if (null == t || null == n) return null;
+    let s = u(t);
     if (null == s) return null;
-    let l = s.query.iframe_url;
-    if (null == l || Array.isArray(l) || null == d(l)) return null;
+    let o = s.query.iframe_url;
+    if (null == o || Array.isArray(o) || null == u(o)) return null;
     let {
-        width: f,
-        height: p
-    } = i, _ = f, h = p;
-    return (f > c || p > u) && (f > p ? (_ = c, h = c * p / f) : (_ = u * f / p, h = u)), (0, r.jsx)("iframe", {
-        className: a()(o.FS, t),
-        src: l,
+        width: d,
+        height: c
+    } = n, h = d, p = c;
+    return (d > 500 || c > 400) && (d > c ? (h = 500, p = 500 * c / d) : (h = 400 * d / c, p = 400)), (0, r.jsx)("iframe", {
+        className: i()(a.FS, l),
+        src: o,
         style: {
-            width: _,
-            height: h
+            width: h,
+            height: p
         },
         frameBorder: 0,
         sandbox: "allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"

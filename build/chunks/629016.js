@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(961350),
     c = n(994500),
     u = n(461213),
@@ -62,10 +62,10 @@ function E(e, t, n) {
 function y(e, t, n, r) {
     let i = n.find(e => null != e.party && e.party.id),
         a = null != i && null != i.party ? i.party.id : null,
-        s = m(t, e);
-    if (null == a || r === d.clD.OFFLINE) return null != s && void g(t, e);
-    if (null != s) {
-        if (s === a) return !1;
+        o = m(t, e);
+    if (null == a || r === d.clD.OFFLINE) return null != o && void g(t, e);
+    if (null != o) {
+        if (o === a) return !1;
         g(t, e)
     }
     E(t, e, a)
@@ -188,7 +188,7 @@ function R(e) {
         null != n && n.add(t.id)
     }
 }
-class P extends(r = s.Ay.Store) {
+class P extends(r = o.Ay.Store) {
     initialize() {
         this.syncWith([u.A], N), this.waitFor(l.default, c.A, u.A)
     }
@@ -203,7 +203,7 @@ class P extends(r = s.Ay.Store) {
     }
 }
 f(P, "displayName", "GamePartyStore");
-let D = new P(o.h, {
+let D = new P(s.h, {
     CONNECTION_OPEN_SUPPLEMENTAL: b,
     OVERLAY_INITIALIZE: O,
     GUILD_CREATE: v,

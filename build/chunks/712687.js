@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(203982),
-    o = n(652215);
+    o = n(203982),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -41,7 +41,7 @@ class p extends(r = i.Ay.Store) {
         return c
     }
     close() {
-        return !!this.isOpen() && (s._.dispatch(o.jej.CONTEXT_MENU_CLOSE), !0)
+        return !!this.isOpen() && (o._.dispatch(s.jej.CONTEXT_MENU_CLOSE), !0)
     }
 }
 l(p, "displayName", "ContextMenuStore");

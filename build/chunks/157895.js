@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 157895, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     boxBackdrop: "boxBackdrop_abac7b",
     bentoBoxesGrid: "bentoBoxesGrid_abac7b",
     referralProgramBackground: "referralProgramBackground_abac7b",
@@ -31,5 +30,4 @@ var r = {
     bentoBoxButtonBrand: "bentoBoxButtonBrand_abac7b",
     badgeContainer: "badgeContainer_abac7b",
     badge: "badge_abac7b"
-};
-n.r(e.exports = r)
+})

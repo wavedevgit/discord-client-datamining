@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 610145, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     bF: "thumbnailStackGallery_c085c7",
     tK: "gallery-height-1_c085c7",

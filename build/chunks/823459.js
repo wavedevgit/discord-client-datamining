@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Py: () => a,
-    S8: () => s,
+    S8: () => o,
     bc: () => i
 });
 var r = n(73153);
@@ -19,7 +19,7 @@ let i = e => {
             presetId: null
         })
     },
-    s = () => {
+    o = () => {
         r.h.dispatch({
             type: "RESET_PREVIEW_CLIENT_THEME"
         })

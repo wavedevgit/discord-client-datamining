@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 611924, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     P: () => s
 }), n(896048);
 var r = n(64700),
     i = n(311907),
-    a = n(49463);
+    l = n(49463);
 
 function s(e) {
-    let [t, n] = (0, i.yK)([a.A], () => [a.A.getAllUserExperimentDescriptors(), a.A.getGuildExperiments()]);
+    let [t, n] = (0, i.yK)([l.A], () => [l.A.getAllUserExperimentDescriptors(), l.A.getGuildExperiments()]);
     r.useEffect(() => {
         e.trigger()
     }, [e, t, n])

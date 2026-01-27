@@ -1,90 +1,89 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 16293, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => N
 });
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
-    l = n(311907),
+    i = n.n(a),
+    s = n(158954),
+    o = n(311907),
     c = n(499979),
     u = n(397927),
     d = n(263063),
-    f = n(71393),
-    p = n(854987),
-    _ = n(719718),
+    m = n(71393),
+    f = n(854987),
+    p = n(719718),
     h = n(57882),
-    m = n(927989),
+    b = n(927989),
     g = n(155286),
-    E = n(573138),
+    x = n(573138),
     y = n(877272),
-    b = n(398225),
-    O = n(532294),
-    v = n(622865),
-    A = n(985018),
-    I = n(308021),
-    S = n(80577);
+    v = n(398225),
+    j = n(532294),
+    C = n(622865),
+    _ = n(985018),
+    A = n(308021),
+    O = n(80577);
 
-function T(e) {
+function E(e) {
     let {
         guild: t,
         checkpointGuild: n,
-        primaryColor: i
-    } = e, a = (0, b.vy)(), {
-        unit: o,
-        duration: l
+        primaryColor: l
+    } = e, a = (0, v.vy)(), {
+        unit: s,
+        duration: o
     } = (0, h.oO)(n.numVoiceMinutes);
-    return (0, r.jsx)(b.vw, {
-        className: s()(S.bo, S.dl),
+    return (0, r.jsx)(v.vw, {
+        className: i()(O.bo, O.dl),
         spring: a,
-        children: (0, r.jsxs)(m.A, {
-            innerClassName: S.lm,
+        children: (0, r.jsxs)(b.A, {
+            innerClassName: O.lm,
             useTopRightClipPath: !0,
             children: [(0, r.jsxs)("div", {
-                className: S.OA,
+                className: O.OA,
                 children: [(0, r.jsx)(d.A, {
                     guild: t,
                     size: d.A.Sizes.LARGER,
-                    className: S.$f
+                    className: O.$f
                 }), (0, r.jsx)(y.A, {
-                    className: S.J5,
+                    className: O.J5,
                     variant: "heading-xl/medium",
                     children: t.name
                 })]
             }), (0, r.jsx)("div", {
-                className: S.Tm,
+                className: O.Tm,
                 style: {
-                    backgroundColor: i
+                    backgroundColor: l
                 },
                 children: (0, r.jsx)(y.A, {
                     variant: "text-lg/normal",
-                    className: I.sH,
+                    className: A.sH,
                     children: "#1"
                 })
             }), (0, r.jsxs)("div", {
-                className: S.dX,
+                className: O.dX,
                 children: [(0, r.jsxs)("div", {
                     children: [(0, r.jsx)(y.A, {
                         variant: "eyebrow",
-                        children: A.intl.string(v.default.wWKySP)
+                        children: _.intl.string(C.default.wWKySP)
                     }), (0, r.jsx)(y.A, {
                         variant: "heading-xxl/normal",
-                        className: I.sH,
+                        className: A.sH,
                         children: n.numMessagesSent
                     })]
                 }), (0, r.jsxs)("div", {
                     children: [(0, r.jsx)(y.A, {
                         variant: "eyebrow",
-                        children: o === c.pJ.HOURS ? A.intl.format(v.default.Xu0QsX, {
-                            numHours: l
-                        }) : A.intl.string(v.default.RmVTph)
+                        children: s === c.pJ.HOURS ? _.intl.format(C.default.Xu0QsX, {
+                            numHours: o
+                        }) : _.intl.string(C.default.RmVTph)
                     }), (0, r.jsx)(y.A, {
                         variant: "heading-xxl/normal",
-                        className: I.sH,
-                        children: l
+                        className: A.sH,
+                        children: o
                     })]
                 })]
             })]
@@ -92,37 +91,37 @@ function T(e) {
     }, t.id)
 }
 
-function C(e) {
+function S(e) {
     let {
         guild: t,
         rank: n,
-        primaryColor: i
-    } = e, a = (0, b.vy)();
-    return (0, r.jsx)(b.vw, {
-        className: S.bo,
+        primaryColor: l
+    } = e, a = (0, v.vy)();
+    return (0, r.jsx)(v.vw, {
+        className: O.bo,
         spring: a,
-        children: (0, r.jsxs)(m.A, {
-            innerClassName: S.oQ,
+        children: (0, r.jsxs)(b.A, {
+            innerClassName: O.oQ,
             useTopRightClipPath: !0,
             children: [(0, r.jsxs)("div", {
-                className: S.OA,
+                className: O.OA,
                 children: [(0, r.jsx)(d.A, {
                     guild: t,
                     size: d.A.Sizes.LARGER,
-                    className: S.$f
+                    className: O.$f
                 }), (0, r.jsx)(y.A, {
-                    className: S.J5,
+                    className: O.J5,
                     variant: "heading-xl/medium",
                     children: t.name
                 })]
             }), (0, r.jsx)("div", {
-                className: S.Tm,
+                className: O.Tm,
                 style: {
-                    backgroundColor: i
+                    backgroundColor: l
                 },
                 children: (0, r.jsxs)(y.A, {
                     variant: "text-lg/normal",
-                    className: I.sH,
+                    className: A.sH,
                     children: ["#", n]
                 })
             })]
@@ -131,7 +130,7 @@ function C(e) {
 }
 
 function N() {
-    let e = (0, i.useContext)(p.P),
+    let e = (0, l.useContext)(f.P),
         t = (0, u.rdh)(e.primaryColor).hex(),
         {
             guilds: {
@@ -139,15 +138,15 @@ function N() {
             } = {
                 guilds: []
             }
-        } = (0, l.bG)([_.A], () => _.A.getCheckpointData()),
-        a = (0, i.useMemo)(() => n.map(e => {
+        } = (0, o.bG)([p.A], () => p.A.getCheckpointData()),
+        a = (0, l.useMemo)(() => n.map(e => {
             let {
                 guild: t,
                 numMessagesSent: n,
                 numVoiceMinutes: r
             } = e;
             return {
-                guild: f.A.getGuild(t.id),
+                guild: m.A.getGuild(t.id),
                 numMessagesSent: n,
                 numVoiceMinutes: r
             }
@@ -157,52 +156,52 @@ function N() {
             } = e;
             return null != t
         }), [n]),
-        s = a.length > 0 ? a[0].guild : null;
-    return (0, r.jsx)(E.A, {
+        i = a.length > 0 ? a[0].guild : null;
+    return (0, r.jsx)(x.A, {
         verticalFlow: !0,
         children: (0, r.jsxs)("div", {
-            className: S.kL,
+            className: O.kL,
             children: [(0, r.jsxs)("div", {
-                className: I.DD,
-                children: [(0, r.jsx)(o.RR9, {
+                className: A.DD,
+                children: [(0, r.jsx)(s.RR9, {
                     size: "refresh_sm",
                     color: t,
-                    colorClass: I.d7
+                    colorClass: A.d7
                 }), (0, r.jsx)(y.A, {
                     variant: "eyebrow",
-                    className: I.UP,
-                    children: A.intl.string(v.default.mAroeJ)
+                    className: A.UP,
+                    children: _.intl.string(C.default.mAroeJ)
                 })]
             }), (0, r.jsxs)("div", {
-                className: S.wx,
+                className: O.wx,
                 children: [(0, r.jsx)(y.A, {
                     variant: "display-lg",
-                    className: S.Vy,
-                    children: A.intl.string(A.t["7hB4kg"])
+                    className: O.Vy,
+                    children: _.intl.string(_.t["7hB4kg"])
                 }), (0, r.jsxs)("div", {
                     children: [(0, r.jsx)(y.A, {
                         variant: "heading-xxl/medium",
-                        className: S.VA,
-                        children: A.intl.string(v.default.Q0EMOP)
+                        className: O.VA,
+                        children: _.intl.string(C.default.Q0EMOP)
                     }), (0, r.jsx)(g.e, {
-                        slide: O.P7.GUILDS
+                        slide: j.P7.GUILDS
                     })]
                 })]
-            }), null != s && (0, r.jsx)(T, {
-                guild: s,
+            }), null != i && (0, r.jsx)(E, {
+                guild: i,
                 checkpointGuild: a[0],
                 primaryColor: t
             }), (0, r.jsx)("div", {
-                className: S.Pl,
+                className: O.Pl,
                 children: a.map((e, n) => {
                     let {
-                        guild: i
+                        guild: l
                     } = e;
-                    return 0 === n ? null : (0, r.jsx)(C, {
-                        guild: i,
+                    return 0 === n ? null : (0, r.jsx)(S, {
+                        guild: l,
                         rank: n + 1,
                         primaryColor: t
-                    }, i.id)
+                    }, l.id)
                 })
             })]
         })

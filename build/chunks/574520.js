@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(6161),
-    o = n(681154),
+    o = n(6161),
+    s = n(681154),
     l = n(311907),
     c = n(73153),
     u = n(290863),
@@ -26,7 +26,7 @@ function m(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let g = new Set([o.I.LISTENED_SESSION]),
+let g = new Set([s.ContentInventoryEntryType.LISTENED_SESSION]),
     E = new Map;
 
 function y(e) {
@@ -34,7 +34,7 @@ function y(e) {
 }
 
 function b(e) {
-    return (0, _.I5)(e) ? null : (0, _.JM)(e) && e.author_type === s.t.USER ? u.A.getActivities(e.author_id).find(t => t.type === h.$pd.PLAYING && (0, f.P)(e) ? (0, p.fp)(e, t) : !!(t.type === h.$pd.LISTENING && (0, f.Tq)(e)) && (0, p.qb)(e, t)) : void 0
+    return (0, _.I5)(e) ? null : (0, _.JM)(e) && e.author_type === o.ContentInventoryAuthorType.USER ? u.A.getActivities(e.author_id).find(t => t.type === h.$pd.PLAYING && (0, f.P)(e) ? (0, p.fp)(e, t) : !!(t.type === h.$pd.LISTENING && (0, f.Tq)(e)) && (0, p.qb)(e, t)) : void 0
 }
 
 function O(e) {

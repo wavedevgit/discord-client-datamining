@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(793574),
     c = n(688810),
     u = n(151271),
@@ -48,12 +48,12 @@ function h(e) {
         v || (0, u.Ri)("")
     }, [v]), (0, r.jsx)(c.f5, {
         value: R,
-        children: (0, r.jsx)(o.lGe, {
-            className: s()(_.Nz, {
+        children: (0, r.jsx)(s.lGe, {
+            className: o()(_.Nz, {
                 [_.Bg]: C,
                 [_.yV]: v
             }),
-            children: C ? (0, r.jsx)(o.y$y, {}) : (0, r.jsx)(p.A, {
+            children: C ? (0, r.jsx)(s.y$y, {}) : (0, r.jsx)(p.A, {
                 guildId: t,
                 channel: n,
                 onClose: h,

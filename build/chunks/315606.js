@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(311907),
     i = n(250105),
     a = n(217222),
-    s = n(128319);
+    o = n(128319);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -67,7 +67,7 @@ function p(e) {
         location: t
     } = e, {
         isInHoldout: n
-    } = s.p.getCurrentConfig({
+    } = o.p.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0

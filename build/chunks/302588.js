@@ -2,7 +2,7 @@
 /** chunk id: 302588, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(682213);
 
@@ -25,7 +25,7 @@ function a(e, t) {
     })
 }
 
-function s(e) {
+function o(e) {
     return !1 === e ? {
         block: "end",
         inline: "nearest"
@@ -34,11 +34,11 @@ function s(e) {
         inline: "nearest"
     }
 }
-let o = function(e, t) {
+let s = function(e, t) {
     var n = e.isConnected || e.ownerDocument.documentElement.contains(e);
     if (i(t) && "function" == typeof t.behavior) return t.behavior(n ? (0, r.A)(e, t) : []);
     if (n) {
-        var o = s(t);
-        return a((0, r.A)(e, o), o.behavior)
+        var s = o(t);
+        return a((0, r.A)(e, s), s.behavior)
     }
 }

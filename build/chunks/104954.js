@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 104954, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    $: () => l,
-    s: () => o
+    $: () => o,
+    s: () => a
 });
 var r = n(562465),
     i = n(73153),
-    a = n(631670),
+    l = n(631670),
     s = n(652215);
 
-function o() {
+function a() {
     return i.h.dispatch({
         type: "LOAD_DATA_HARVEST_TYPE_START"
     }), r.Bo.get({
@@ -30,8 +29,8 @@ function o() {
     })
 }
 
-function l(e) {
-    return (0, a.$I)(e).then(e => (null != e && null != e.body && i.h.dispatch({
+function o(e) {
+    return (0, l.$I)(e).then(e => (null != e && null != e.body && i.h.dispatch({
         type: "UPDATE_DATA_HARVEST_TYPE",
         harvestType: e.body
     }), e))

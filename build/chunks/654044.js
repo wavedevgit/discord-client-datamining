@@ -2,7 +2,7 @@
 /** chunk id: 654044, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(315069),
     i = n(874638);
@@ -15,10 +15,10 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends r.A {
+class o extends r.A {
     static createInvoiceFromServer(e) {
         var t;
-        return new s({
+        return new o({
             id: e.id,
             invoiceItems: null == (t = e.invoice_items) ? void 0 : t.map(i.c),
             total: e.total,

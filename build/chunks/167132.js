@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(451988),
     i = n(843472),
     a = n(956793),
-    s = n(439372),
-    o = n(933958),
+    o = n(439372),
+    s = n(933958),
     l = n(734057),
     c = n(977997),
     u = n(607567),
@@ -29,7 +29,7 @@ function h() {
     let e = c.A.getCurrentClientVoiceChannelId(null);
     if (null == e) return !1;
     let t = l.A.getChannel(e);
-    return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.Ay.countVoiceStatesForChannel(e) > 1) && null == o.Ay.getSelfEmbeddedActivityForChannel(e)
+    return !(null == t || !t.isPrivate() || t.recipients.length > 1 || u.Ay.countVoiceStatesForChannel(e) > 1) && null == s.Ay.getSelfEmbeddedActivityForChannel(e)
 }
 
 function m() {
@@ -39,7 +39,7 @@ function m() {
         number: p
     })), a.default.selectVoiceChannel(null))
 }
-class g extends s.A {
+class g extends o.A {
     constructor(...e) {
         super(...e), f(this, "idleTimeout", new r.Ep), f(this, "handleConnectionClosed", () => {
             this.idleTimeout.stop()

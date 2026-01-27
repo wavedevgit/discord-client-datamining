@@ -2,7 +2,7 @@
 /** chunk id: 912851, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(73153);
 
@@ -27,7 +27,7 @@ function a(e) {
     }
     return e
 }
-let s = {
+let o = {
     show(e, t, n, i, a) {
         r.h.dispatch({
             type: "NOTICE_SHOW",

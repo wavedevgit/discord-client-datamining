@@ -8,8 +8,8 @@ n.d(t, {
 }), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(321073);
 var r, i = n(64700),
     a = n(942381),
-    s = n(265690),
-    o = n(121894),
+    o = n(265690),
+    s = n(121894),
     l = n(506774),
     c = n(397927),
     u = n(14752);
@@ -63,20 +63,20 @@ let h = "__DEBUG_PROFILE_EFFECTS_STORE",
             console.error(e), (0, c.showToast)((0, c.createToast)("This file is too large to save into localstorage. You will be able to view but not persist these changes.", c.ToastType.FAILURE))
         }
     },
-    E = (0, s.h)(e => _(f({}, m), {
-        upsertConfig: t => (0, o.r)(() => {
+    E = (0, o.h)(e => _(f({}, m), {
+        upsertConfig: t => (0, s.r)(() => {
             e(e => {
                 let n = f({}, e);
                 return n.profileEffects[t.skuId] = t, g(n), n
             })
         }),
-        deleteConfig: t => (0, o.r)(() => {
+        deleteConfig: t => (0, s.r)(() => {
             e(e => {
                 let n = f({}, e);
                 return delete n.profileEffects[t], g(n), n
             })
         }),
-        clearAll: () => (0, o.r)(() => {
+        clearAll: () => (0, s.r)(() => {
             e(() => (l.w.remove(h), {
                 profileEffects: {}
             }))

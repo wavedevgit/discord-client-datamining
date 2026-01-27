@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(909144),
     i = n(64700),
     a = n(341221);
-let s = Symbol.for("react-aria.i18n.locale");
+let o = Symbol.for("react-aria.i18n.locale");
 
-function o() {
-    let e = "u" > typeof window && window[s] || "u" > typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
+function s() {
+    let e = "u" > typeof window && window[o] || "u" > typeof navigator && (navigator.language || navigator.userLanguage) || "en-US";
     try {
         Intl.DateTimeFormat.supportedLocalesOf([e])
     } catch {
@@ -21,11 +21,11 @@ function o() {
         direction: (0, r.V)(e) ? "rtl" : "ltr"
     }
 }
-let l = o(),
+let l = s(),
     c = new Set;
 
 function u() {
-    for (let e of (l = o(), c)) e(l)
+    for (let e of (l = s(), c)) e(l)
 }
 
 function d() {

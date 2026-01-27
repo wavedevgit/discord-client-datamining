@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(47167),
-    o = n(734057),
+    o = n(47167),
+    s = n(734057),
     l = n(864436),
     c = n(200041),
     u = n(985018);
@@ -26,7 +26,7 @@ function d(e) {
         hideTooltip: m = !1,
         canTruncate: g = !0,
         showChannelName: E = !1
-    } = e, y = (0, i.bG)([o.A], () => o.A.getChannel(t.channelId)), b = (0, s.Ay)(y), O = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), A = null != b ? "".concat(v, " (").concat(b, ")") : v, I = E ? A : v, S = A;
+    } = e, y = (0, i.bG)([s.A], () => s.A.getChannel(t.channelId)), b = (0, o.Ay)(y), O = (null == n ? void 0 : n.name) === "" ? null : null == n ? void 0 : n.name, v = null != O ? O : u.intl.string(u.t.eXan7B), A = null != b ? "".concat(v, " (").concat(b, ")") : v, I = E ? A : v, S = A;
     return (0, r.jsx)(c.A, {
         icon: _ ? void 0 : (0, r.jsx)(l.A, {
             icon: a.Uk3,

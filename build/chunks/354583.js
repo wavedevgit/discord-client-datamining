@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
-/** chunk id: 354583, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => s
+/** Chunk was on 96430 **/
+/** chunk id: 354583, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => l
 });
 var r = n(311907),
     i = n(734057),
     a = n(309010);
 
-function s() {
+function l() {
     return (0, r.bG)([a.A, i.A], () => {
-        let e = a.A.getVoiceChannelId();
-        if (null != e) {
-            let t = i.A.getChannel(e);
-            if (null == t ? void 0 : t.isGuildStageVoice()) return t
+        let t = a.A.getVoiceChannelId();
+        if (null != t) {
+            let e = i.A.getChannel(t);
+            if (null == e ? void 0 : e.isGuildStageVoice()) return e
         }
         return null
     })

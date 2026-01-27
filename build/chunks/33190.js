@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(284009),
     a = n.n(i),
-    s = n(732955),
-    o = n(397927),
+    o = n(732955),
+    s = n(397927),
     l = n(937008),
     c = n(156312),
     u = n(921925),
@@ -43,16 +43,16 @@ function h(e) {
     return (0, r.jsxs)(f.dZ, {
         children: [(0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {}), (0, r.jsxs)("div", {
             className: _.EL,
-            children: [(0, r.jsx)(o.Heading, {
+            children: [(0, r.jsx)(s.Heading, {
                 variant: "heading-xxl/bold",
                 className: _.RS,
                 children: "Success!"
-            }), (0, r.jsx)(o.Text, {
+            }), (0, r.jsx)(s.Text, {
                 variant: "text-md/normal",
                 children: b
             }), (0, r.jsx)("div", {
                 className: _.yF
-            }), (0, r.jsx)(s.$nd, {
+            }), (0, r.jsx)(o.$nd, {
                 onClick: n,
                 text: p.intl.string(p.t.cpT0Cq),
                 fullWidth: !0

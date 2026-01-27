@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(652896),
     i = n(487329),
     a = n(601900),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -35,7 +35,7 @@ let c = {
         let {
             activeStreams: t
         } = e;
-        return t.filter(e => e.state === s.XYD.RECONNECTING).map(e => l({
+        return t.filter(e => e.state === o.XYD.RECONNECTING).map(e => l({
             type: i.iy.STREAM_RECONNECTING
         }, (0, a.id)((0, r._z)(e))))
     },

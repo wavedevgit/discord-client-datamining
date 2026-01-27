@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(814656),
+    o = n.n(a),
+    s = n(814656),
     l = n(94576);
 
 function c(e, t, n) {
@@ -56,7 +56,7 @@ function f(e) {
         },
         _ = "hidden" !== n && null != t.controls;
     return (0, r.jsxs)("div", {
-        className: s()(l.iW, {
+        className: o()(l.iW, {
             [l.vT]: "bottom" === n,
             [l.Ix]: "right" === n
         }),
@@ -67,11 +67,11 @@ function f(e) {
                 children: p()
             })
         }), _ && null != t.controls && (0, r.jsx)("div", {
-            className: s()(l.ne, {
+            className: o()(l.ne, {
                 [l.WK]: "bottom" === n,
                 [l.BT]: "right" === n
             }),
-            children: (0, r.jsx)(o.i, {
+            children: (0, r.jsx)(s.i, {
                 controls: t.controls,
                 props: c,
                 onPropsChange: f

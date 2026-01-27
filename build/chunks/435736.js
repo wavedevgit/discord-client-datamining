@@ -12,8 +12,8 @@ n.d(t, {
 var r = n(353640),
     i = n(118356),
     a = n(554146),
-    s = n(506774),
-    o = n(97260),
+    o = n(506774),
+    s = n(97260),
     l = n(439372),
     c = n(826673),
     u = n(532624),
@@ -61,14 +61,14 @@ function g(e, t) {
 }
 let E = "overlayKeybindExperimentPreviousKeybindSettings",
     y = new i.Vy("OverlayKeybindExperimentManager"),
-    b = (0, r.v)(() => s.w.get(E, {}));
+    b = (0, r.v)(() => o.w.get(E, {}));
 
 function O() {
     return b.getState()
 }
 
 function v(e) {
-    b.setState(t => h({}, t, e), !0), s.w.set(E, b.getState())
+    b.setState(t => h({}, t, e), !0), o.w.set(E, b.getState())
 }
 let A = () => {
         v({
@@ -109,7 +109,7 @@ class N extends l.A {
         }), _(this, "dispatchSetKeybind", e => {
             if (null == e) return;
             let t = u.Ay.getOverlayKeybind();
-            return o.A.setKeybind(g(h({}, t), {
+            return s.A.setKeybind(g(h({}, t), {
                 shortcut: (0, d.OH)(e)
             }))
         }), _(this, "restoreKeybind", async () => {

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(496885),
-    o = n(313375),
+    o = n(496885),
+    s = n(313375),
     l = n(652215),
     c = n(643849);
 let u = {
@@ -32,10 +32,10 @@ function f(e) {
         iconClassName: i,
         size: l
     } = e;
-    return (0, r.jsx)(s.A, {
+    return (0, r.jsx)(o.A, {
         className: a()(n, u[t]),
         size: l,
-        children: (0, r.jsx)(o.A, {
+        children: (0, r.jsx)(s.A, {
             tier: t,
             color: "currentColor",
             className: a()(i, c.AH, d[t])

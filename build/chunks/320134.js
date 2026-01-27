@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 320134, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => s
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(195043);
+    l = n(195043);
 
 function s(e) {
     let {
         children: t,
         title: n,
         description: s,
-        webSetting: o
+        webSetting: a
     } = e;
-    return (0, r.jsxs)(a.x, {
-        setting: o,
+    return (0, r.jsxs)(l.x, {
+        setting: a,
         children: [(0, r.jsx)(i.nVY, {
             label: n,
             description: s,

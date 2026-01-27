@@ -2,13 +2,13 @@
 /** chunk id: 385771, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(64700),
     i = n(311907),
     a = n(773669);
 
-function s() {
+function o() {
     let e = (0, i.bG)([a.default], () => a.default.locale);
     return r.useMemo(() => new Intl.NumberFormat(e, {
         notation: "compact",

@@ -3,17 +3,17 @@
 "use strict";
 n.d(t, {
     g: () => l,
-    t: () => o
+    t: () => s
 }), n(896048);
 var r = n(64700),
     i = n(587895),
     a = n(223273),
-    s = n(705751);
+    o = n(705751);
 
-function o(e) {
+function s(e) {
     var t;
     if (null == e) return null;
-    if (e.type !== s.S7.GAME) return e;
+    if (e.type !== o.S7.GAME) return e;
     for (let n of null != (t = e.linkedGames) ? t : []) {
         let e = i.A.getApplication(n.id);
         if (null != e && n.type === a.Mh.OFFICIAL) return e
@@ -22,5 +22,5 @@ function o(e) {
 }
 
 function l(e) {
-    return r.useMemo(() => o(e), [e])
+    return r.useMemo(() => s(e), [e])
 }

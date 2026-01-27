@@ -1,76 +1,69 @@
-/** Chunk was on web.js **/
-/** chunk id: 628290, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 628290, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(954055),
-    i = n(595042),
-    a = n(869639),
-    s = n(573750),
-    o = n(611122).notEmptyKey,
-    l = n(587321),
-    c = n(907014),
-    u = n(670200),
-    d = s.isEngine("Gecko"),
-    f = "\n\n";
-
-function p(e, t) {
-    return "deleteContentBackward" === e ? c(t) : t
-}
-e.exports = function(e, t) {
-    void 0 !== e._pendingStateFromBeforeInput && (e.update(e._pendingStateFromBeforeInput), e._pendingStateFromBeforeInput = void 0);
-    var n, s, c, _, h = e.editor.ownerDocument.defaultView.getSelection(),
-        m = h.anchorNode,
-        g = h.isCollapsed;
-    if ((null == m ? void 0 : m.nodeType) === Node.TEXT_NODE || (null == m ? void 0 : m.nodeType) === Node.ELEMENT_NODE) {
-        if (m.nodeType === Node.TEXT_NODE && (null !== m.previousSibling || null !== m.nextSibling)) {
-            var E = m.parentNode;
-            m.nodeValue = E.textContent;
-            for (var y = E.firstChild; null !== y; y = y.nextSibling) y !== m && E.removeChild(y)
+var n = r(954055),
+    i = r(595042),
+    o = r(869639),
+    a = r(573750),
+    s = r(611122).notEmptyKey,
+    u = r(587321),
+    c = r(907014),
+    l = r(670200),
+    f = a.isEngine("Gecko");
+t.exports = function(t, e) {
+    void 0 !== t._pendingStateFromBeforeInput && (t.update(t._pendingStateFromBeforeInput), t._pendingStateFromBeforeInput = void 0);
+    var r = t.editor.ownerDocument.defaultView.getSelection(),
+        a = r.anchorNode,
+        p = r.isCollapsed;
+    if ((null == a ? void 0 : a.nodeType) === Node.TEXT_NODE || (null == a ? void 0 : a.nodeType) === Node.ELEMENT_NODE) {
+        if (a.nodeType === Node.TEXT_NODE && (null !== a.previousSibling || null !== a.nextSibling)) {
+            var h = a.parentNode;
+            a.nodeValue = h.textContent;
+            for (var d = h.firstChild; null !== d; d = d.nextSibling) d !== a && h.removeChild(d)
         }
-        var b = m.textContent,
-            O = e._latestEditorState,
-            v = u(l(m)),
-            A = i.decode(v),
-            I = A.blockKey,
-            S = A.decoratorKey,
-            T = A.leafKey,
-            C = O.getBlockTree(I).getIn([S, "leaves", T]),
-            N = C.start,
-            w = C.end,
-            R = O.getCurrentContent(),
-            P = R.getBlockForKey(I),
-            D = P.getText().slice(N, w);
-        if (b.endsWith(f) && (b = b.slice(0, -1)), b === D) {
-            var x = t.nativeEvent.inputType;
-            if (x) {
-                var L = p(x, O);
-                L !== O && (e.restoreEditorDOM(), e.update(L))
+        var g = a.textContent,
+            y = t._latestEditorState,
+            v = l(u(a)),
+            m = i.decode(v),
+            _ = m.blockKey,
+            b = m.decoratorKey,
+            S = m.leafKey,
+            w = y.getBlockTree(_).getIn([b, "leaves", S]),
+            k = w.start,
+            x = w.end,
+            C = y.getCurrentContent(),
+            E = C.getBlockForKey(_),
+            O = E.getText().slice(k, x);
+        if (g.endsWith("\n\n") && (g = g.slice(0, -1)), g === O) {
+            var D = e.nativeEvent.inputType;
+            if (D) {
+                var K, T, M, A, I = "deleteContentBackward" === D ? c(y) : y;
+                I !== y && (t.restoreEditorDOM(), t.update(I))
             }
             return
         }
-        var j = O.getSelection(),
-            M = j.merge({
-                anchorOffset: N,
-                focusOffset: w,
+        var B = y.getSelection(),
+            L = B.merge({
+                anchorOffset: k,
+                focusOffset: x,
                 isBackward: !1
             }),
-            k = P.getEntityAt(N),
-            U = o(k) ? R.getEntity(k) : null,
-            G = null != U ? U.getMutability() : null,
-            V = "MUTABLE" === G,
-            F = V ? "spellcheck-change" : "apply-entity",
-            B = r.replaceText(R, M, b, P.getInlineStyleAt(N), V ? P.getEntityAt(N) : null);
-        if (d) n = h.anchorOffset, _ = (c = N + Math.min(n, s = h.focusOffset)) + Math.abs(n - s), n = c, s = _;
+            R = E.getEntityAt(k),
+            N = s(R) ? C.getEntity(R) : null,
+            F = "MUTABLE" === (null != N ? N.getMutability() : null),
+            z = n.replaceText(C, L, g, E.getInlineStyleAt(k), F ? E.getEntityAt(k) : null);
+        if (f) A = (M = k + Math.min(K = r.anchorOffset, T = r.focusOffset)) + Math.abs(K - T), K = M, T = A;
         else {
-            var H = b.length - D.length;
-            c = j.getStartOffset(), _ = j.getEndOffset(), n = g ? _ + H : c, s = _ + H
+            var P = g.length - O.length;
+            M = B.getStartOffset(), A = B.getEndOffset(), K = p ? A + P : M, T = A + P
         }
-        var Y = B.merge({
-            selectionBefore: R.getSelectionAfter(),
-            selectionAfter: j.merge({
-                anchorOffset: n,
-                focusOffset: s
+        var j = z.merge({
+            selectionBefore: C.getSelectionAfter(),
+            selectionAfter: B.merge({
+                anchorOffset: K,
+                focusOffset: T
             })
         });
-        e.update(a.push(O, Y, F))
+        t.update(o.push(y, j, F ? "spellcheck-change" : "apply-entity"))
     }
 }

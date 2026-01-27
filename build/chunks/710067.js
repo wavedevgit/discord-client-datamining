@@ -2,12 +2,12 @@
 /** chunk id: 710067, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968),
     i = n(64700),
     a = n(907971);
-let s = i.memo(function(e) {
+let o = i.memo(function(e) {
     let {
         className: t
     } = e;

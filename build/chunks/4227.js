@@ -5,7 +5,7 @@ let r, i, a;
 n.d(t, {
     A: () => A
 }), n(896048);
-var s, o = n(735438),
+var o, s = n(735438),
     l = n(311907),
     c = n(73153);
 
@@ -31,13 +31,13 @@ let d = new Map,
         f = d, p = !1, i = t, _ = !0
     },
     g = e => {
-        0 === e.purchases.length ? f = d : (0, o.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), _ = !0, p = !1, i = void 0
+        0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), _ = !0, p = !1, i = void 0
     },
     E = e => {
         r = e.skuId, a = void 0
     },
     y = e => {
-        null == e.purchases || 0 === e.purchases.length ? f = d : (0, o.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), r = void 0, a = void 0
+        null == e.purchases || 0 === e.purchases.length ? f = d : (0, s.isEqual)([...f.values()], e.purchases) || (f = new Map(e.purchases.map(e => [e.skuId, e]))), r = void 0, a = void 0
     },
     b = e => {
         let {
@@ -49,7 +49,7 @@ let d = new Map,
     O = e => {
         f = d, p = !1, r = void 0, i = void 0, a = void 0, _ = !1
     };
-class v extends(s = l.Ay.Store) {
+class v extends(o = l.Ay.Store) {
     get isFetching() {
         return p
     }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(562465),
     i = n(439372),
     a = n(924985),
-    s = n(734057),
-    o = n(927813),
+    o = n(734057),
+    s = n(927813),
     l = n(652215);
 
 function c(e, t, n) {
@@ -51,7 +51,7 @@ function f(e, t) {
 }
 let p = {},
     _ = 0,
-    h = 15 * o.A.Millis.SECOND;
+    h = 15 * s.A.Millis.SECOND;
 
 function m() {
     p = u({}, a.A.getCollapsedCategories())
@@ -75,7 +75,7 @@ async function y(e) {
         n = a.A.getCollapsedCategories(),
         i = b();
     for (let r in i) {
-        let i = s.A.getChannel(r);
+        let i = o.A.getChannel(r);
         null != i && null != i.guild_id && (i.guild_id in e || (e[i.guild_id] = {}), null == e[i.guild_id].channel_overrides && (e[i.guild_id].channel_overrides = {}), e[i.guild_id].channel_overrides[i.id] = f(u({}, e[i.guild_id].channel_overrides[i.id]), {
             collapsed: i.id in n
         }), t = !0)

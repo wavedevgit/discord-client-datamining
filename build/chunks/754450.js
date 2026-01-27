@@ -2,12 +2,12 @@
 /** chunk id: 754450, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(306173),
     i = n(954571),
     a = n(652215);
-class s {
+class o {
     static isBlockedDomain(e) {
         let t = (0, r.xd)() ? (0, r.tR)(e) : null;
         return "" !== t && null !== t && i.default.track(a.HAw.LINK_SECURITY_CHECK_BLOCKED, {
@@ -15,4 +15,4 @@ class s {
         }), t
     }
 }
-let o = s
+let s = o

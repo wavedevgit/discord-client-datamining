@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(821418),
     i = n(665260),
     a = n(439372),
-    s = n(224536),
-    o = n(610101),
+    o = n(224536),
+    s = n(610101),
     l = n(652215);
 
 function c(e, t, n) {
@@ -25,7 +25,7 @@ function u(e) {
     let {
         guild: a
     } = e.invite, c = null != (t = e.invite.flags) ? t : 0;
-    null != a && (null == a || null == (n = a.features) ? void 0 : n.includes(l.GuildFeatures.HUB)) ? s.A.onOpenHubInvite(e.invite) : !e.invite.new_member || !((0, i.Lt)(c, r.Q.IS_GUEST_INVITE) || (0, i.Lt)(c, r.Q.IS_APPLICATION_BYPASS)) && null != a && (0, o.h)(a) && (0, o.W)(a.id)
+    null != a && (null == a || null == (n = a.features) ? void 0 : n.includes(l.GuildFeatures.HUB)) ? o.A.onOpenHubInvite(e.invite) : !e.invite.new_member || !((0, i.Lt)(c, r.Q.IS_GUEST_INVITE) || (0, i.Lt)(c, r.Q.IS_APPLICATION_BYPASS)) && null != a && (0, s.h)(a) && (0, s.W)(a.id)
 }
 class d extends a.A {
     constructor(...e) {

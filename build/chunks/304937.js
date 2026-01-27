@@ -1,43 +1,42 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 304937, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => p
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(158954),
-    o = n(212555),
-    l = n(428855),
+    l = n.n(i),
+    a = n(158954),
+    s = n(212555),
+    o = n(428855),
     c = n(880652),
     u = n(106181),
     d = n(206314);
 
-function f(e) {
+function p(e) {
     var t;
     let {
         question: n,
         questionId: i,
-        responses: f,
-        onResponseChange: p
-    } = e, _ = (() => {
+        responses: p,
+        onResponseChange: m
+    } = e, f = (() => {
         var e, t;
         switch (n.QuestionType) {
             case c.SQ.TEXT_ENTRY:
-                return (0, r.jsx)(l.A, {
-                    question: n,
-                    questionId: i,
-                    value: null != (e = f[i]) ? e : "",
-                    onValueChange: p
-                });
-            case c.SQ.MULTIPLE_CHOICE:
                 return (0, r.jsx)(o.A, {
                     question: n,
                     questionId: i,
-                    value: null != (t = f[i]) ? t : "",
-                    onValueChange: p
+                    value: null != (e = p[i]) ? e : "",
+                    onValueChange: m
+                });
+            case c.SQ.MULTIPLE_CHOICE:
+                return (0, r.jsx)(s.A, {
+                    question: n,
+                    questionId: i,
+                    value: null != (t = p[i]) ? t : "",
+                    onValueChange: m
                 });
             case c.SQ.DESCRIPTIVE_BLOCK:
                 return (0, r.jsx)("div", {});
@@ -45,9 +44,9 @@ function f(e) {
                 return null
         }
     })();
-    return null == _ ? null : (0, r.jsxs)("div", {
-        className: a()(d.PT, u.k),
-        children: [(0, r.jsx)(s.EYj, {
+    return null == f ? null : (0, r.jsxs)("div", {
+        className: l()(d.PT, u.k),
+        children: [(0, r.jsx)(a.EYj, {
             variant: "text-lg/normal",
             color: "text-strong",
             children: (0, r.jsx)("div", {
@@ -55,6 +54,6 @@ function f(e) {
                     __html: null != (t = n.QuestionText_Unsafe) ? t : ""
                 }
             })
-        }), _]
+        }), f]
     })
 }

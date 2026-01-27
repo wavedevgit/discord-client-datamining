@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(451988),
+    o = n(311907),
+    s = n(451988),
     l = n(544420),
     c = n(524799);
 
@@ -35,7 +35,7 @@ class f {
         })
     }
     constructor() {
-        u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new o.J_(32, () => this._flush()))
+        u(this, "_fetched", new Set), u(this, "_pending", new Set), u(this, "_flushHandler", new s.J_(32, () => this._flush()))
     }
 }
 let p = new f;
@@ -51,7 +51,7 @@ function h(e, t) {
     let n = r.useMemo(() => null != t ? {
         size: t.coverImageSize
     } : void 0, [t]);
-    return (0, s.cf)([c.A], () => null == e ? {
+    return (0, o.cf)([c.A], () => null == e ? {
         isFetching: !1,
         localizedName: void 0,
         themes: void 0,

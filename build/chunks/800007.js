@@ -9,8 +9,8 @@ n.d(t, {
     W5: () => m,
     XF: () => d,
     ZI: () => u,
-    ZN: () => s,
-    by: () => o,
+    ZN: () => o,
+    by: () => s,
     eh: () => _,
     q4: () => p,
     yC: () => h
@@ -20,7 +20,7 @@ var r = n(281445),
     a = function(e) {
         return e.SELECT_GAME = "select-game", e.SERVER_SETTINGS = "server-settings", e
     }({});
-let s = {
+let o = {
         steps: {
             "select-game": {
                 onBack: {
@@ -42,7 +42,7 @@ let s = {
             }
         }
     },
-    o = 24,
+    s = 24,
     l = 680,
     c = 632,
     u = 10,

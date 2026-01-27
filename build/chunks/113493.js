@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 113493, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => i
+    A: () => l
 }), n(896048);
 var r = n(532294);
 
-function i(e) {
+function l(e) {
     if (0 === e.length || 1 === e.length) return [];
     let t = new Set;
     return e.forEach(e => {

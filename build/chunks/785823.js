@@ -4,7 +4,7 @@
 let r;
 n.d(t, {
     Ay: () => H,
-    Bk: () => F,
+    Bk: () => V,
     ER: () => I,
     Oj: () => W,
     ZA: () => r,
@@ -16,8 +16,8 @@ n.d(t, {
 }), n(896048);
 var i = n(64700),
     a = n(856491),
-    s = n(952987),
-    o = n(692942),
+    o = n(952987),
+    s = n(692942),
     l = n(889310),
     c = n(385244),
     u = n(688064),
@@ -94,16 +94,16 @@ function C(e) {
 }
 
 function N(e, t) {
-    var n, r, i, a, s;
-    let [o] = null != (n = e.embeds) ? n : [];
-    if (null != o) {
-        if (C(o)) return null == o || null == (i = o.fields) || null == (r = i.find(e => {
+    var n, r, i, a, o;
+    let [s] = null != (n = e.embeds) ? n : [];
+    if (null != s) {
+        if (C(s)) return null == s || null == (i = s.fields) || null == (r = i.find(e => {
             let {
                 rawName: n
             } = e;
             return n === t
         })) ? void 0 : r.rawValue;
-        if (T(o)) return null == o || null == (s = o.fields) || null == (a = s.find(e => {
+        if (T(s)) return null == s || null == (o = s.fields) || null == (a = o.find(e => {
             let {
                 rawName: n
             } = e;
@@ -133,22 +133,22 @@ function D(e) {
     if (null != t) return t
 }
 
-function x(e) {
+function L(e) {
     let t = N(e, l.G.BLOCK_PROFILE_UPDATE_TYPE);
     if (null != t) return t
 }
 
-function L(e) {
+function x(e) {
     let t = N(e, l.G.QUARANTINE_EVENT);
     if (null != t) return t
 }
 
-function j(e, t, n) {
+function M(e, t, n) {
     switch (t) {
         case d.t.BLOCK_PROFILE_UPDATE:
             return r(e);
         case d.t.QUARANTINE_USER:
-            return s(n);
+            return o(n);
         case d.t.BLOCK_GUEST_JOIN:
             return i()
     }
@@ -168,7 +168,7 @@ function j(e, t, n) {
         return y.intl.string(y.t.MrYeyS)
     }
 
-    function s(e) {
+    function o(e) {
         switch (e) {
             case u.c.MESSAGE_SEND:
                 return y.intl.string(y.t.PmSMMS);
@@ -184,7 +184,7 @@ function j(e, t, n) {
     }
 }
 
-function M(e, t) {
+function j(e, t) {
     var n;
     return t ? null != (n = null == e ? void 0 : e.name) ? n : y.intl.string(y.t.J90oLW) : y.intl.string(y.t["/YzI63"])
 }
@@ -203,22 +203,22 @@ function U(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.FXj,
         r = arguments.length > 3 ? arguments[3] : void 0,
         i = arguments.length > 4 ? arguments[4] : void 0,
-        a = x(e),
+        a = L(e),
         c = D(e),
-        u = L(e),
+        u = x(e),
         d = P(e),
         f = R(e),
         p = N(e, l.G.INTERACTION_CALLBACK_TYPE),
         _ = N(e, l.G.APPLICATION_NAME);
     if (null != d) {
-        let e = j(a, c, u);
+        let e = M(a, c, u);
         if (null != e) return e
     }
     let m = h.A.can(E.xBc.VIEW_CHANNEL, t),
-        g = M(t, m),
+        g = j(t, m),
         b = null != t && m ? n : E.FXj,
         O = k(e, g, n);
-    return null != O ? O : null != _ ? p === o.i.MODAL && null != i ? f !== s.z.BLOCKED ? y.intl.format(y.t["4xL9Sk"], {
+    return null != O ? O : null != _ ? p === s.i.MODAL && null != i ? f !== o.z.BLOCKED ? y.intl.format(y.t["4xL9Sk"], {
         applicationName: _,
         interactionUserHook: i,
         integrationOwnerHook: r
@@ -226,7 +226,7 @@ function U(e, t) {
         applicationName: _,
         interactionUserHook: i,
         integrationOwnerHook: r
-    }) : f !== s.z.BLOCKED ? y.intl.format(y.t.AXQufN, {
+    }) : f !== o.z.BLOCKED ? y.intl.format(y.t.AXQufN, {
         applicationName: _,
         channelName: g,
         channelHook: b,
@@ -236,7 +236,7 @@ function U(e, t) {
         channelName: g,
         channelHook: b,
         integrationOwnerHook: r
-    }) : f !== s.z.BLOCKED ? y.intl.format(y.t.IZg0VQ, {
+    }) : f !== o.z.BLOCKED ? y.intl.format(y.t.IZg0VQ, {
         channelName: g,
         channelHook: b
     }) : y.intl.format(y.t.lOIOSK, {
@@ -260,27 +260,27 @@ function G(e) {
     }
 }
 
-function V(e) {
+function F(e) {
     return null == e ? null : e
 }
 
-function F(e) {
+function V(e) {
     var t;
     let n = N(e, c.E.NOTIFICATION_TYPE),
         r = N(e, c.E.JOIN_ATTEMPTS),
         i = N(e, c.E.RAID_DATETIME),
         a = N(e, c.E.DMS_SENT),
-        s = N(e, c.E.RAID_TYPE),
-        o = N(e, c.E.RESOLVED_REASON),
+        o = N(e, c.E.RAID_TYPE),
+        s = N(e, c.E.RESOLVED_REASON),
         l = N(e, c.E.DECISION_ID),
         u = N(e, c.E.SUSPICIOUS_MENTION_ACTIVITY_UNTIL);
     return {
-        notificationType: null != (t = V(n)) ? t : void 0,
+        notificationType: null != (t = F(n)) ? t : void 0,
         joinAttempts: null != r ? parseInt(r) : void 0,
         raidDatetime: null != i ? new Date(i) : void 0,
         dmsSent: null != a ? parseInt(a) : void 0,
-        raidType: null != s ? s : void 0,
-        resolvedReason: null != o ? o : void 0,
+        raidType: null != o ? o : void 0,
+        resolvedReason: null != s ? s : void 0,
         decisionId: null != l ? l : void 0,
         suspiciousMentionActivityUntil: null != u ? new Date(u) : void 0
     }

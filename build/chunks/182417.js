@@ -1,39 +1,38 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 182417, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Aq: () => _,
+    Aq: () => p,
     Ay: () => h,
-    pt: () => p
+    pt: () => f
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
-    l = n(615300),
+    i = n.n(a),
+    s = n(108531),
+    o = n(615300),
     c = n(397927),
     u = n(475743),
     d = n(532294),
-    f = n(415813);
-let p = {
+    m = n(415813);
+let f = {
         duration: 800,
-        easing: l.A.Easing.bezier(.4, 0, 0, 1)
+        easing: o.A.Easing.bezier(.4, 0, 0, 1)
     },
-    _ = i.createContext(null);
+    p = l.createContext(null);
 
 function h(e) {
     let {
         activeSlide: t,
         children: n,
         className: a,
-        slideClassName: l
-    } = e, h = (0, u.A)(t), m = i.useMemo(() => {
+        slideClassName: o
+    } = e, h = (0, u.A)(t), b = l.useMemo(() => {
         let e = {};
-        return i.Children.forEach(n, t => {
+        return l.Children.forEach(n, t => {
             e[t.props.id] = t.props.children
         }), e
-    }, [...n]), g = t === d.P7.WELCOME && (null == h || h === d.P7.WELCOME), E = (0, c.pnh)(t, {
+    }, [...n]), g = t === d.P7.WELCOME && (null == h || h === d.P7.WELCOME), x = (0, c.pnh)(t, {
         from: g ? {
             transform: "translate3d(0, 0px, 0)",
             opacity: 1,
@@ -57,21 +56,21 @@ function h(e) {
             backgroundScale: 1,
             backgroundY: -400
         },
-        config: p
+        config: f
     });
-    return (0, r.jsx)(_.Provider, {
-        value: E,
+    return (0, r.jsx)(p.Provider, {
+        value: x,
         children: (0, r.jsx)("div", {
             className: a,
-            children: E((e, t, n) => {
+            children: x((e, t, n) => {
                 let {
-                    key: i
+                    key: l
                 } = n;
-                return (0, r.jsx)(o.animated.div, {
-                    className: s()(f.M, l),
+                return (0, r.jsx)(s.animated.div, {
+                    className: i()(m.M, o),
                     style: e,
-                    children: m[t]
-                }, i)
+                    children: b[t]
+                }, l)
             })
         })
     })

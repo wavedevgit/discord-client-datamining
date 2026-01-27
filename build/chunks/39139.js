@@ -4,15 +4,15 @@
 var r = n(581390),
     i = n(633228),
     a = n(70670),
-    s = n(883972),
-    o = n(4940).f,
+    o = n(883972),
+    s = n(4940).f,
     l = n(661495),
     c = n(503902),
     u = n(105712),
     d = n(257943),
     f = "Array Iterator",
-    p = s.set,
-    _ = s.getterFor(f);
+    p = o.set,
+    _ = o.getterFor(f);
 e.exports = l(Array, "Array", function(e, t) {
     p(this, {
         type: f,
@@ -35,7 +35,7 @@ e.exports = l(Array, "Array", function(e, t) {
 }, "values");
 var h = a.Arguments = a.Array;
 if (i("keys"), i("values"), i("entries"), !u && d && "values" !== h.name) try {
-    o(h, "name", {
+    s(h, "name", {
         value: "values"
     })
 } catch (e) {}

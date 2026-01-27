@@ -2,13 +2,13 @@
 /** chunk id: 998218, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => x
 }), n(896048), n(591487), n(727858), n(747238), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956);
 var r = n(477450),
     i = n.n(r),
     a = n(735438),
-    s = n.n(a),
-    o = n(567243),
+    o = n.n(a),
+    s = n(567243),
     l = n(403362),
     c = n(998218),
     u = n(652215);
@@ -75,10 +75,10 @@ function D(e) {
     return !1
 }
 
-function x(e) {
-    return null != e && C(o.parse(e).protocol)
+function L(e) {
+    return null != e && C(s.parse(e).protocol)
 }
-let L = {
+let x = {
     URL_REGEX: v,
     makeUrl: function(e, t) {
         let n = (null != t ? t : (0, l.m6)()) ? window.GLOBAL_ENV.INVITE_HOST : location.host;
@@ -91,30 +91,30 @@ let L = {
     },
     isDiscordProtocol: C,
     isDiscordUrl: D,
-    isDiscordUri: x,
+    isDiscordUri: L,
     isDiscordCdnUrl: function(e) {
-        return null != e && o.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
+        return null != e && s.parse(e).hostname === window.GLOBAL_ENV.CDN_HOST
     },
     isDiscordDirectAssetUrl: N,
     isDiscordProxiedAssetUrl: w,
     isAllowedGifProviderUrl: R,
     isDiscordAssetUrl: P,
-    isDiscordUrlOrUri: e => D(e) || x(e),
+    isDiscordUrlOrUri: e => D(e) || L(e),
     isAppRoute: e => {
         let t = e.toLowerCase();
         return t.startsWith("/channels/") || t.startsWith(u.BVt.APPLICATION_STORE) || t.startsWith(u.BVt.APPLICATION_LIBRARY) || t.startsWith(u.BVt.MESSAGE_REQUESTS) || t.startsWith(u.BVt.FAMILY_CENTER) || t.startsWith(u.BVt.ACTIVITIES) || t.startsWith(u.BVt.COLLECTIBLES_SHOP) || t.startsWith("/feature/boost") || t.startsWith(u.BVt.ACTIVITY)
     },
-    format: e => o.format(e),
-    formatPathWithQuery: (e, t) => o.format({
+    format: e => s.format(e),
+    formatPathWithQuery: (e, t) => s.format({
         pathname: e,
-        query: s().pickBy(t)
+        query: o().pickBy(t)
     }),
-    formatSearch: e => o.format({
-        query: s().pickBy(e)
+    formatSearch: e => s.format({
+        query: o().pickBy(e)
     }),
     safeParseWithQuery(e) {
         try {
-            return o.parse(e, !0)
+            return s.parse(e, !0)
         } catch (e) {
             return null
         }

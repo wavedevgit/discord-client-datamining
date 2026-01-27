@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 236077, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 }), n(896048);
 var r = n(284009),
     i = n.n(r),
-    a = n(963935);
+    l = n(963935);
 
 function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -16,21 +15,21 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o {
+class a {
     register(e) {
         let {
             node: t,
             parentPanelKey: n,
             parentTabKey: r,
             parentCategoryKey: i,
-            parentAccordionKey: a
+            parentAccordionKey: l
         } = e;
         this.map.set(t.key, {
             node: t,
             parentPanelKey: n,
             parentTabKey: r,
             parentCategoryKey: i,
-            parentAccordionKey: a
+            parentAccordionKey: l
         })
     }
     entry(e) {
@@ -48,7 +47,7 @@ class o {
     }
     getPanelOrThrow(e) {
         let t = this.get(e);
-        return i()((null == t ? void 0 : t.type) === a.Z6.PANEL, "[SettingsDirectory] key is not for a panel: ".concat(e)), t
+        return i()((null == t ? void 0 : t.type) === l.Z6.PANEL, "[SettingsDirectory] key is not for a panel: ".concat(e)), t
     }
     constructor() {
         s(this, "map", new Map), s(this, "defaultPanel", void 0)

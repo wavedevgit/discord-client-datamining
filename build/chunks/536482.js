@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 536482, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.r(t), n.d(t, {
     default: () => s,
     messagesLoader: () => i
@@ -40,5 +39,5 @@ let {
     "zh-TW": () => n.e("96631").then(n.t.bind(n, 133450, 19)),
     "en-US": () => n.e("16904").then(n.bind(n, 167163))
 }, "en-US"), {
-    makeMessagesProxy: a
-} = n(932433), s = a(i)
+    makeMessagesProxy: l
+} = n(932433), s = l(i)

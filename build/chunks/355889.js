@@ -2,7 +2,7 @@
 /** chunk id: 355889, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    x: () => s
+    x: () => o
 });
 var r = n(510801),
     i = n(419709);
@@ -15,9 +15,9 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s {
+class o {
     static fromServer(e) {
-        return new s(e)
+        return new o(e)
     }
     constructor(e) {
         var t;

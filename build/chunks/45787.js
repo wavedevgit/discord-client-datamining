@@ -3,9 +3,9 @@
 "use strict";
 n.d(t, {
     Ad: () => i,
-    BT: () => o,
+    BT: () => s,
     CK: () => l,
-    Yd: () => s,
+    Yd: () => o,
     xs: () => a
 });
 var r = n(73153);
@@ -23,14 +23,14 @@ function a(e) {
     })
 }
 
-function s(e) {
+function o(e) {
     r.h.dispatch({
         type: "GIFT_INTENT_FLOW_PURCHASED_GIFT",
         recipientUserId: e
     })
 }
 
-function o() {
+function s() {
     r.h.dispatch({
         type: "GIFT_UNREAD_NOTIFICATION_DISMISS"
     })

@@ -2,7 +2,7 @@
 /** chunk id: 473903, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(77729);
 let i = new(n(626584)).A("IntentsBindings");
@@ -11,7 +11,7 @@ function a() {
     var e;
     return null != (e = null === r.A || void 0 === r.A ? void 0 : r.A.features.supports("intents")) && e
 }
-let s = {
+let o = {
     hasSearch: () => a(),
     hasUserActivity: () => a(),
     clearSearchIndex() {

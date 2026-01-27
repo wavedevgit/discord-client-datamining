@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 630765, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     VH: "preview__5d148",
     QS: "previewMessage__5d148",

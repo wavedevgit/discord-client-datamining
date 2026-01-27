@@ -7,19 +7,19 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(486020),
-    s = n(519443);
-let o = 20,
+    o = n(519443);
+let s = 20,
     l = e => {
         let {
             application: t,
-            iconSize: n = o
+            iconSize: n = s
         } = e, l = i.useMemo(() => a.Ay.getApplicationIconURL({
             id: t.id,
             icon: t.icon,
             size: n
         }), [t, n]);
         return (0, r.jsx)("img", {
-            className: s.I,
+            className: o.I,
             src: l,
             alt: "",
             height: n,

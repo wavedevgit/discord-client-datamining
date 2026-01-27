@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(775602),
     u = n(169909),
@@ -17,7 +17,7 @@ var r = n(627968),
 function f(e) {
     let {
         look: t = u.r0.LARGE_BANNER
-    } = e, n = (0, o.bG)([c.A], () => c.A.useReducedMotion), {
+    } = e, n = (0, s.bG)([c.A], () => c.A.useReducedMotion), {
         styleLarge: a,
         styleSmall: f
     } = i.useMemo(() => ({
@@ -29,22 +29,22 @@ function f(e) {
         }
     }), []);
     return (0, r.jsxs)("div", {
-        className: s()(d.kL, d.NX, {
+        className: o()(d.kL, d.NX, {
             [d.cb]: n,
             [d.uS]: t !== u.r0.ROW,
             [d.qd]: t === u.r0.ROW
         }),
         children: [(0, r.jsx)("div", {
-            className: s()(d._e, {
+            className: o()(d._e, {
                 [d.i2]: t === u.r0.MEDIUM_BANNER,
                 [d.ir]: t === u.r0.LARGE_BANNER
             })
         }), (0, r.jsxs)("div", {
-            className: s()(d.TD, {
+            className: o()(d.TD, {
                 [d.Ne]: t === u.r0.ROW
             }),
             children: [(0, r.jsx)("div", {
-                className: s()(d.Pz, {
+                className: o()(d.Pz, {
                     [d.Lu]: t === u.r0.ROW
                 })
             }), (0, r.jsxs)("div", {

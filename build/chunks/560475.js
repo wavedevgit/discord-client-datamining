@@ -2,8 +2,8 @@
 /** chunk id: 560475, original params: e,t,n (module,exports,require) **/
 var r = n(363477);
 e.exports = function(e, t, n) {
-    for (var i = -1, a = e.criteria, s = t.criteria, o = a.length, l = n.length; ++i < o;) {
-        var c = r(a[i], s[i]);
+    for (var i = -1, a = e.criteria, o = t.criteria, s = a.length, l = n.length; ++i < s;) {
+        var c = r(a[i], o[i]);
         if (c) {
             if (i >= l) return c;
             return c * ("desc" == n[i] ? -1 : 1)

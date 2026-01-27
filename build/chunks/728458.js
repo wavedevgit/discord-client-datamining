@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(668279),
     i = n(761296),
     a = n(723702),
-    s = n(837921);
+    o = n(837921);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -49,9 +49,9 @@ function u(e, t) {
 }
 
 function d() {
-    var e, t, n, r, i, o;
+    var e, t, n, r, i, s;
     let l = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-    a.isPlatformEmbedded && s.Ay.updateCrashReporter({
+    a.isPlatformEmbedded && o.Ay.updateCrashReporter({
         user_id: null != (e = l.id) ? e : "",
         username: null != (t = l.username) ? t : "",
         email: null != (n = l.email) ? n : "",
@@ -59,7 +59,7 @@ function d() {
             user: {
                 id: null != (r = l.id) ? r : "",
                 username: null != (i = l.username) ? i : "",
-                email: null != (o = l.email) ? o : ""
+                email: null != (s = l.email) ? s : ""
             }
         }
     })

@@ -1,86 +1,85 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 810036, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(421380),
-    o = n(397927),
-    l = n(688810),
+    a = n(397927),
+    o = n(688810),
     c = n(170887),
-    u = n(194509),
-    d = n(65470),
-    f = n(985018),
+    d = n(194509),
+    u = n(65470),
+    _ = n(985018),
     p = n(657630),
-    _ = n(547831),
-    h = n(584386),
-    m = n(182645);
-let g = e => {
+    m = n(547831),
+    g = n(584386),
+    A = n(182645);
+let f = e => {
     let {
         className: t,
         location: n,
         analyticsLocation: i
-    } = e, g = (0, c.A)({
+    } = e, f = (0, c.A)({
         location: "GiftNitro"
     }), {
-        analyticsLocations: E
-    } = (0, l.Ay)(n);
-    return g ? (0, r.jsx)(l.f5, {
-        value: E,
-        children: (0, r.jsxs)(o.hLv, {
-            className: a()(_.kL, _.pm, t),
+        analyticsLocations: h
+    } = (0, o.Ay)(n);
+    return f ? (0, r.jsx)(o.f5, {
+        value: h,
+        children: (0, r.jsxs)(a.hLv, {
+            className: l()(m.kL, m.pm, t),
             color: "purple",
             children: [(0, r.jsxs)("div", {
-                className: _.FS,
-                children: [(0, r.jsx)(o.Heading, {
+                className: m.FS,
+                children: [(0, r.jsx)(a.Heading, {
                     variant: "heading-xxl/bold",
-                    className: _.R_,
-                    children: f.intl.string(f.t.Ve9Ge6)
-                }), (0, r.jsx)(o.Text, {
+                    className: m.R_,
+                    children: _.intl.string(_.t.Ve9Ge6)
+                }), (0, r.jsx)(a.Text, {
                     variant: "text-md/medium",
-                    children: f.intl.string(f.t.yQ06u1)
+                    children: _.intl.string(_.t.yQ06u1)
                 }), (0, r.jsx)("div", {
-                    className: _.SB,
-                    children: (0, r.jsx)(d.A, {
-                        buttonTextOverride: f.intl.string(f.t.Ve9Ge6),
+                    className: m.SB,
+                    children: (0, r.jsx)(u.A, {
+                        buttonTextOverride: _.intl.string(_.t.Ve9Ge6),
                         premiumModalAnalyticsLocation: i,
                         variant: "secondary"
                     })
                 })]
             }), (0, r.jsx)("img", {
-                src: m.A,
-                className: _._e,
+                src: A.A,
+                className: m._e,
                 alt: "gift nitro banner"
             })]
         })
-    }) : (0, r.jsx)(l.f5, {
-        value: E,
+    }) : (0, r.jsx)(o.f5, {
+        value: h,
         children: (0, r.jsxs)("div", {
-            className: a()(p.kL, t),
+            className: l()(p.kL, t),
             children: [(0, r.jsxs)("div", {
                 className: p.FS,
-                children: [(0, r.jsx)(o.Heading, {
+                children: [(0, r.jsx)(a.Heading, {
                     variant: "heading-lg/extrabold",
                     className: p.R_,
-                    children: f.intl.string(f.t.Ve9Ge6)
-                }), (0, r.jsx)(o.Text, {
+                    children: _.intl.string(_.t.Ve9Ge6)
+                }), (0, r.jsx)(a.Text, {
                     variant: "text-sm/medium",
-                    children: f.intl.string(f.t.yQ06u1)
-                }), (0, r.jsx)(u.A, {
+                    children: _.intl.string(_.t.yQ06u1)
+                }), (0, r.jsx)(d.A, {
                     className: p.Tp,
                     textOptions: {
-                        textOverride: f.intl.string(f.t.Ve9Ge6),
+                        textOverride: _.intl.string(_.t.Ve9Ge6),
                         textClassName: p.VV
                     },
                     color: s.$n.Colors.CUSTOM,
                     premiumModalAnalyticsLocation: i
                 })]
             }), (0, r.jsx)("img", {
-                src: h,
+                src: g,
                 className: p._e,
                 alt: "gift nitro banner"
             })]

@@ -8,11 +8,11 @@ var r = n(884362),
     i = n(311907),
     a = n(775602);
 
-function s() {
+function o() {
     return Promise.resolve()
 }
 
-function o(e) {
+function s(e) {
     let t = document.querySelector(e);
     null != t && t.focus()
 }
@@ -23,8 +23,8 @@ function l(e, t) {
         id: e,
         isEnabled: n,
         orientation: t,
-        setFocus: o,
-        scrollToStart: s,
-        scrollToEnd: s
+        setFocus: s,
+        scrollToStart: o,
+        scrollToEnd: o
     })
 }

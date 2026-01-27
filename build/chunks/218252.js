@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(311907),
     a = n(967198),
-    s = n(676279),
-    o = n(453771),
+    o = n(676279),
+    s = n(453771),
     l = n(975571),
     c = n(831318),
     u = n(652215),
@@ -61,12 +61,12 @@ let E = 2.1,
     y = e => {
         let {
             handleLearnMore: t
-        } = e, n = m(e, ["handleLearnMore"]), _ = (0, i.bG)([a.A], () => a.A.getGuildId()), g = (0, o.Iu)({
+        } = e, n = m(e, ["handleLearnMore"]), _ = (0, i.bG)([a.A], () => a.A.getGuildId()), g = (0, s.Iu)({
             guildId: _,
             onClick: () => {
                 window.open(l.A.getArticleURL(u.MVz.NITRO_FAQ), "_blank")
             }
-        }), y = (0, s.TM)() ? f.A : p.A;
+        }), y = (0, o.TM)() ? f.A : p.A;
         return (0, r.jsx)(c.A, h({
             gradientColor: "nitro-pink",
             title: d.intl.string(d.t["9C+41g"]),

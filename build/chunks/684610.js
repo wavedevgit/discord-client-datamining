@@ -45,7 +45,7 @@ function v(e) {
                 closePopout: a
             } = e;
             return (0, r.jsx)(i.W1t, {
-                "data-menu-migration-ready": !0,
+                "data-menu-migrated": !0,
                 navId: "game_server-popout-context-menu",
                 onClose: () => {
                     (0, l.Z_)(), a()
@@ -56,6 +56,10 @@ function v(e) {
                     children: [null != v && (0, r.jsx)(i.Drp, {
                         id: "get-support",
                         icon: i.oyn,
+                        leadingAccessory: {
+                            type: "icon",
+                            icon: i.oyn
+                        },
                         label: g.intl.string(f.default.bBkeMs),
                         action: () => {
                             (0, o.h)({
@@ -65,6 +69,10 @@ function v(e) {
                     }), (0, r.jsx)(i.Drp, {
                         id: "settings",
                         icon: i.Zes,
+                        leadingAccessory: {
+                            type: "icon",
+                            icon: i.Zes
+                        },
                         label: g.intl.string(f.default["feUiM/"]),
                         action: () => {
                             (0, u.A)({

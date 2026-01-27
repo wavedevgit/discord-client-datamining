@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 92707, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     gP: "subscription_d970da",
     EF: "subscriptionInfo_d970da",

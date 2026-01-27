@@ -5,8 +5,8 @@ let r, i;
 n.r(t), n.d(t, {
     default: () => eU
 }), n(321073), n(142703), n(65821);
-var a, s = n(247775),
-    o = n(80703),
+var a, o = n(247775),
+    s = n(80703),
     l = n(311907),
     c = n(562465),
     u = n(506774),
@@ -40,15 +40,15 @@ function w(e, t, n) {
 let R = new g.A("AuthenticationStore"),
     P = "fingerprint",
     D = "analytics_installation",
-    x = "user_id_cache",
-    L = null,
-    j = null,
+    L = "user_id_cache",
+    x = null,
     M = null,
+    j = null,
     k = null,
     U = null,
     G = null,
-    V = null,
     F = null,
+    V = null,
     B = C.aUe.NONE,
     H = !1,
     Y = [],
@@ -57,14 +57,14 @@ let R = new g.A("AuthenticationStore"),
     z = null,
     q = !1,
     Z = !1,
-    X = null,
     Q = null,
+    X = null,
     J = !1,
     $ = !1,
     ee = [];
 
 function et(e) {
-    let t = null != s.getToken(),
+    let t = null != o.getToken(),
         n = null != u.w.get(C.ilC);
     R.verbose(e, {
         tokenManagerHasToken: t,
@@ -75,8 +75,8 @@ function et(e) {
 function en() {
     var e;
     let t = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-    if (U = u.w.get(P), V = null != (e = u.w.get(D)) ? e : null, null != X) return X;
-    let n = null != U ? U : s.getToken();
+    if (U = u.w.get(P), F = null != (e = u.w.get(D)) ? e : null, null != Q) return Q;
+    let n = null != U ? U : o.getToken();
     !(0, y.m)() || !t && null != n || S.A.isHandoffAvailable() || er({
         withGuildExperiments: !0
     })
@@ -86,7 +86,7 @@ function er(e) {
     let {
         withGuildExperiments: t
     } = e, n = {}, r = v.default.getSuperPropertiesBase64();
-    null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != V && (n["X-Installation-ID"] = V), X = c.Bo.get({
+    null != r && (n["X-Super-Properties"] = r), null != U && (n["X-Fingerprint"] = U), null != F && (n["X-Installation-ID"] = F), Q = c.Bo.get({
         url: C.Rsh.EXPERIMENTS,
         query: {
             with_guild_experiments: t
@@ -112,9 +112,9 @@ function er(e) {
             fingerprint: t,
             experiments: n,
             guildExperiments: r
-        }), X = null, (0, p.hK)()
+        }), Q = null, (0, p.hK)()
     }, () => {
-        X = null, d.h.dispatch({
+        Q = null, d.h.dispatch({
             type: "EXPERIMENTS_FETCH_FAILURE"
         })
     })
@@ -125,15 +125,15 @@ function ei() {
 }
 
 function ea(e, t) {
-    et("setAuthToken called."), (null == t || t !== L) && s.removeAnalyticsToken(), s.setToken(e, t)
+    et("setAuthToken called."), (null == t || t !== x) && o.removeAnalyticsToken(), o.setToken(e, t)
 }
 
-function es(e) {
-    F = e, s.setAnalyticsToken(e)
+function eo(e) {
+    V = e, o.setAnalyticsToken(e)
 }
 
-function eo() {
-    return et("removeAuthToken called."), s.removeAnalyticsToken(), s.removeToken()
+function es() {
+    return et("removeAuthToken called."), o.removeAnalyticsToken(), o.removeToken()
 }
 
 function el(e) {
@@ -147,7 +147,7 @@ function ec(e) {
     let {
         isMultiAccount: t
     } = e;
-    B = C.aUe.NONE, W = "", K = !1, z = null, i = null, r = null, t || (eh(), eo(), en(!1))
+    B = C.aUe.NONE, W = "", K = !1, z = null, i = null, r = null, t || (eh(), es(), en(!1))
 }
 
 function eu() {
@@ -199,10 +199,10 @@ function em(e) {
         sms: n,
         webauthn: r,
         backup: a,
-        totp: s,
-        loginInstanceId: o
+        totp: o,
+        loginInstanceId: s
     } = e;
-    null != t && (W = t, K = n, z = null != r ? r : null, Z = a, q = s, i = o, eh()), B = C.aUe.MFA_STEP
+    null != t && (W = t, K = n, z = null != r ? r : null, Z = a, q = o, i = s, eh()), B = C.aUe.MFA_STEP
 }
 
 function eg() {
@@ -228,11 +228,11 @@ function eO(e) {
 function ev(e) {
     let t = e.fingerprint;
     null == U ? null != t ? (v.default.track(C.HAw.USER_FINGERPRINT_CHANGED, {
-        old_fingerprint: null != G ? (0, o.d)(G) : null,
-        new_fingerprint: (0, o.d)(t)
+        old_fingerprint: null != G ? (0, s.d)(G) : null,
+        new_fingerprint: (0, s.d)(t)
     }), U = t, G = t, u.w.set(P, U)) : en() : null != t && U !== t && v.default.track(C.HAw.EXTERNAL_FINGERPRINT_DROPPED, {
-        fingerprint: (0, o.d)(U),
-        dropped_fingerprint: (0, o.d)(t)
+        fingerprint: (0, s.d)(U),
+        dropped_fingerprint: (0, s.d)(t)
     })
 }
 
@@ -240,8 +240,8 @@ function eA(e) {
     let {
         installation: t
     } = e;
-    if (null != V && V.length > 0) return !1;
-    V = t, b.A.canUseInstallationId() && u.w.set(D, t)
+    if (null != F && F.length > 0) return !1;
+    F = t, b.A.canUseInstallationId() && u.w.set(D, t)
 }
 
 function eI(e) {
@@ -258,11 +258,11 @@ function eS(e) {
         sessionId: r,
         authSessionIdHash: i,
         analyticsToken: a,
-        auth: s,
-        staticAuthSessionId: o,
+        auth: o,
+        staticAuthSessionId: s,
         apexExperiments: l
     } = e;
-    et("handleConnectionOpen called"), I.A.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, O.A)(n)), j = r, M = i, k = o, es(a), L = n.id, void 0 !== s && (Y = s.authenticator_types), u.w.set(x, n.id), (null == l ? void 0 : l.installation) != null && eA({
+    et("handleConnectionOpen called"), I.A.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, O.A)(n)), M = r, j = i, k = s, eo(a), x = n.id, void 0 !== o && (Y = o.authenticator_types), u.w.set(L, n.id), (null == l ? void 0 : l.installation) != null && eA({
         type: "INSTALLATION_ID",
         installation: l.installation
     })
@@ -276,7 +276,7 @@ function eT(e) {
         analyticsToken: i,
         token: a
     } = e;
-    I.A.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, O.A)(n)), j = r, F = i, ea(a, n.id), null != i && es(i), ei(), L = n.id, u.w.set(x, n.id)
+    I.A.setUser(n.id, n.username, null != (t = n.email) ? t : void 0, (0, O.A)(n)), M = r, V = i, ea(a, n.id), null != i && eo(i), ei(), x = n.id, u.w.set(L, n.id)
 }
 
 function eC(e) {
@@ -288,7 +288,7 @@ function eC(e) {
     if (4004 === t) {
         if (H || r(N.jc) || r(N.Uy)) return void eR();
         v.default.track(C.HAw.APP_USER_DEAUTHENTICATED, {
-            user_id: u.w.get(x)
+            user_id: u.w.get(L)
         }), eP(), setImmediate(() => (0, y.pX)(C.BVt.DEFAULT_LOGGED_OUT))
     }
 }
@@ -305,7 +305,7 @@ function ew(e) {
     let {
         authSessionIdHash: t
     } = e;
-    null != t && (M = t)
+    null != t && (j = t)
 }
 
 function eR() {
@@ -317,54 +317,54 @@ function eR() {
 function eP(e) {
     var t;
     et("handleLogout called.");
-    let n = eo();
+    let n = es();
     null != (t = null == e ? void 0 : e.isSwitchingAccount) && t || (n && ei(), en()), l.Ay.PersistedStore.clearAll({
         omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
         type: (null == e ? void 0 : e.isSwitchingAccount) ? "user-data-only" : "all"
-    }), T.A.clearAll(), m.IU(), I.A.clearUser(), u.w.remove(x), L = null, j = null, B = (null == e ? void 0 : e.isSwitchingAccount) ? C.aUe.LOGGING_IN : C.aUe.NONE, W = "", z = null, K = !1, J = !1, $ = !1, eh()
+    }), T.A.clearAll(), m.IU(), I.A.clearUser(), u.w.remove(L), x = null, M = null, B = (null == e ? void 0 : e.isSwitchingAccount) ? C.aUe.LOGGING_IN : C.aUe.NONE, W = "", z = null, K = !1, J = !1, $ = !1, eh()
 }
 
 function eD() {
     B = C.aUe.FORGOT_PASSWORD
 }
 
-function ex() {
+function eL() {
     B = C.aUe.NONE
 }
 
-function eL(e) {
+function ex(e) {
     let {
         user: t
     } = e;
-    L = t.id, void 0 !== t.authenticator_types && (Y = t.authenticator_types), u.w.set(x, t.id)
+    x = t.id, void 0 !== t.authenticator_types && (Y = t.authenticator_types), u.w.set(L, t.id)
 }
 
-function ej(e) {
+function eM(e) {
     let {
         suspendedUserToken: t
     } = e;
-    J = !1, Q = t, setImmediate(() => (0, y.pX)(C.BVt.ACCOUNT_STANDING))
+    J = !1, X = t, setImmediate(() => (0, y.pX)(C.BVt.ACCOUNT_STANDING))
 }
 
-function eM() {
-    Q = null, B = C.aUe.NONE, eP(), setImmediate(() => (0, y.pX)(C.BVt.DEFAULT_LOGGED_OUT))
+function ej() {
+    X = null, B = C.aUe.NONE, eP(), setImmediate(() => (0, y.pX)(C.BVt.DEFAULT_LOGGED_OUT))
 }
 class ek extends(a = l.Ay.Store) {
     initialize() {
         var e;
-        L = u.w.get(x), V = null != (e = u.w.get(D)) ? e : null, null == s.getToken() && (en(), (null == V || 0 === V.length) && (0, E.Tv)(null)), this.addChangeListener(() => (0, h.f)(L))
+        x = u.w.get(L), F = null != (e = u.w.get(D)) ? e : null, null == o.getToken() && (en(), (null == F || 0 === F.length) && (0, E.Tv)(null)), this.addChangeListener(() => (0, h.f)(x))
     }
     getLoginStatus() {
         return B
     }
     getId() {
-        return L
+        return x
     }
     getSessionId() {
-        return j
+        return M
     }
     getAuthSessionIdHash() {
-        return M
+        return j
     }
     getStaticAuthSessionId() {
         return k
@@ -379,10 +379,10 @@ class ek extends(a = l.Ay.Store) {
         return U
     }
     getInstallationForTracking() {
-        return b.A.canUseInstallationId() ? V : null
+        return b.A.canUseInstallationId() ? F : null
     }
     getAnalyticsToken() {
-        return null != F ? F : s.getAnalyticsToken()
+        return null != V ? V : o.getAnalyticsToken()
     }
     getMFATicket() {
         return W
@@ -404,7 +404,7 @@ class ek extends(a = l.Ay.Store) {
         return !H
     }
     getSuspendedUserToken() {
-        return Q
+        return X
     }
     getIsPasswordlessActive() {
         return J
@@ -430,18 +430,18 @@ let eU = new ek(d.h, {
     LOGIN_PHONE_IP_AUTHORIZATION_REQUIRED: eO,
     LOGIN_RESET: ec,
     LOGIN_STATUS_RESET: eu,
-    LOGIN_SUSPENDED_USER: ej,
+    LOGIN_SUSPENDED_USER: eM,
     LOGOUT: eP,
     FINGERPRINT: ev,
     INSTALLATION_ID: eA,
     REGISTER_SUCCESS: eI,
     FORGOT_PASSWORD_REQUEST: eD,
-    FORGOT_PASSWORD_SENT: ex,
+    FORGOT_PASSWORD_SENT: eL,
     UPDATE_TOKEN: eN,
     EXPERIMENTS_FETCH: er,
-    CURRENT_USER_UPDATE: eL,
+    CURRENT_USER_UPDATE: ex,
     AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eR,
-    CLOSE_SUSPENDED_USER: eM,
+    CLOSE_SUSPENDED_USER: ej,
     PASSWORDLESS_FAILURE: e_,
     PASSWORDLESS_START: ep
 }, d.A.Early)

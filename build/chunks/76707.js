@@ -1,40 +1,39 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 76707, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(296388);
-let l = e => {
-    var t, n, i, l;
+    a = n(296388);
+let o = e => {
+    var t, n, i, o;
     let {
         title: c,
-        shouldShowElement: u,
-        cardVariantStyleInfo: d,
-        description: f,
+        shouldShowElement: d,
+        cardVariantStyleInfo: u,
+        description: _,
         titleClassName: p = "",
-        subtitle: _ = "",
-        subtitleClassName: h
+        subtitle: m = "",
+        subtitleClassName: g
     } = e;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.Heading, {
             variant: "heading-xl/extrabold",
-            className: a()(o.Jf, p),
+            className: l()(a.Jf, p),
             children: c
-        }), "" !== _ && (null == u || u(null == d ? void 0 : d.subtitle)) && (0, r.jsxs)("div", {
-            className: h,
+        }), "" !== m && (null == d || d(null == u ? void 0 : u.subtitle)) && (0, r.jsxs)("div", {
+            className: g,
             children: [(0, r.jsx)(s.Text, {
-                variant: null != (t = null == d || null == (i = d.subtitle) ? void 0 : i.textVariant) ? t : "text-sm/normal",
-                children: _
-            }), null != f && (0, r.jsx)(s.Text, {
-                variant: null != (n = null == d || null == (l = d.description) ? void 0 : l.textVariant) ? n : "text-sm/normal",
+                variant: null != (t = null == u || null == (i = u.subtitle) ? void 0 : i.textVariant) ? t : "text-sm/normal",
+                children: m
+            }), null != _ && (0, r.jsx)(s.Text, {
+                variant: null != (n = null == u || null == (o = u.description) ? void 0 : o.textVariant) ? n : "text-sm/normal",
                 children: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)("br", {}), f]
+                    children: [(0, r.jsx)("br", {}), _]
                 })
             })]
         })]

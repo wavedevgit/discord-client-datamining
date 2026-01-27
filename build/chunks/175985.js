@@ -1,20 +1,20 @@
-/** Chunk was on web.js **/
-/** chunk id: 175985, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 175985, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(869639),
-    i = n(750253),
-    a = n(676286);
-e.exports = function(e, t) {
-    var n = t.currentTarget.ownerDocument;
-    if (!e.props.preserveSelectionOnBlur && a(n) === n.body) {
-        var s = n.defaultView.getSelection(),
-            o = e.editor;
-        1 === s.rangeCount && i(o, s.anchorNode) && i(o, s.focusNode) && s.removeAllRanges()
+var n = r(869639),
+    i = r(750253),
+    o = r(676286);
+t.exports = function(t, e) {
+    var r = e.currentTarget.ownerDocument;
+    if (!t.props.preserveSelectionOnBlur && o(r) === r.body) {
+        var a = r.defaultView.getSelection(),
+            s = t.editor;
+        1 === a.rangeCount && i(s, a.anchorNode) && i(s, a.focusNode) && a.removeAllRanges()
     }
-    var l = e._latestEditorState,
-        c = l.getSelection();
+    var u = t._latestEditorState,
+        c = u.getSelection();
     if (c.getHasFocus()) {
-        var u = c.set("hasFocus", !1);
-        e.props.onBlur && e.props.onBlur(t), e.update(r.acceptSelection(l, u))
+        var l = c.set("hasFocus", !1);
+        t.props.onBlur && t.props.onBlur(e), t.update(n.acceptSelection(u, l))
     }
 }

@@ -78,6 +78,5 @@ let T = (0, r.zD)(a.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
     }),
     _ = (0, r.FW)(a.X.STREAMER_MODE_OPTIONS_LIST, {
         useTitle: () => o.intl.string(o.t.UtW8R6),
-        variant: "separators",
         buildLayout: () => [T, A, d, S, E]
     })

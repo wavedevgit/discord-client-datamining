@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,33 +15,33 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = null;
+let s = null;
 
 function l() {
-    o = null, d.persist()
+    s = null, d.persist()
 }
 
 function c(e) {
     let {
         newUserType: t
     } = e;
-    o = t, d.persist()
+    s = t, d.persist()
 }
 class u extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         var t;
-        o = null != (t = null == e ? void 0 : e.type) ? t : null
+        s = null != (t = null == e ? void 0 : e.type) ? t : null
     }
     getType() {
-        return o
+        return s
     }
     getState() {
         return {
-            type: o
+            type: s
         }
     }
 }
-s(u, "displayName", "NewUserStore"), s(u, "persistKey", "nuf");
+o(u, "displayName", "NewUserStore"), o(u, "persistKey", "nuf");
 let d = new u(a.h, {
         NUF_NEW_USER: c,
         NUF_COMPLETE: l

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 500470, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    k: () => o,
+    k: () => a,
     x: () => s
 });
 var r = n(417597),
     i = n(287809),
-    a = n(695515);
+    l = n(695515);
 let s = () => {
-        let e = (0, r.bG)([a.A], () => a.A.getSelectedTeenId());
+        let e = (0, r.bG)([l.A], () => l.A.getSelectedTeenId());
         return (0, r.bG)([i.default], () => null !== e ? i.default.getUser(e) : void 0)
     },
-    o = () => (0, r.bG)([a.A], () => a.A.getSelectedTeenId())
+    a = () => (0, r.bG)([l.A], () => l.A.getSelectedTeenId())

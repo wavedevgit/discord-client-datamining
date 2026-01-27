@@ -1,7 +1,7 @@
 /** Chunk was on 67096 **/
 /** chunk id: 961895, original params: e,A,t (module,exports,require) **/
 t.d(A, {
-    A: () => o
+    A: () => s
 });
 var r = t(627968);
 t(64700);
@@ -9,7 +9,7 @@ var n = t(503698),
     l = t.n(n),
     a = t(698638),
     i = t(893221);
-let o = function(e) {
+let s = function(e) {
     let {
         icons: A,
         className: t

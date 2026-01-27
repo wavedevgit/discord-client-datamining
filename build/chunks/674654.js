@@ -3,8 +3,8 @@
 var r = n(658261),
     i = n(879088),
     a = n(76494),
-    s = n(41518),
-    o = n(608132),
+    o = n(41518),
+    s = n(608132),
     l = n(138880),
     c = n(115786);
 
@@ -69,9 +69,9 @@ function u() {
             awrap: function(e, t) {
                 return new r(e, t)
             },
-            AsyncIterator: o,
+            AsyncIterator: s,
             async: function(e, t, n, r, i) {
-                return (f(t) ? s : a)(_(e), t, n, r, i)
+                return (f(t) ? o : a)(_(e), t, n, r, i)
             },
             keys: l,
             values: c

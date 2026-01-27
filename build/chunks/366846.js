@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 366846, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D: () => b
+    D: () => h
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -18,22 +18,22 @@ var r = n(627968),
     p = n(985018),
     f = n(82196);
 
-function b(e) {
+function h(e) {
     let {
         requireTerms: t,
         rules: n
-    } = e, l = (0, o.bG)([u.A], () => u.A.getProps().guild), b = null == l ? void 0 : l.id, h = i.useCallback(e => {
-        if (null == b || null == n) return null;
-        g.A.setPendingInviteRules(b, e, [...n])
-    }, [b, n]), x = i.useCallback(e => {
-        if (null == b) return null;
-        g.A.setPendingInviteRules(b, t, e)
-    }, [b, t]);
+    } = e, l = (0, o.bG)([u.A], () => u.A.getProps().guild), h = null == l ? void 0 : l.id, b = i.useCallback(e => {
+        if (null == h || null == n) return null;
+        g.A.setPendingInviteRules(h, e, [...n])
+    }, [h, n]), x = i.useCallback(e => {
+        if (null == h) return null;
+        g.A.setPendingInviteRules(h, t, e)
+    }, [h, t]);
     return null == l ? null : null == n ? (0, r.jsx)(c.y$y, {}) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.dOG, {
             label: p.intl.string(p.t.d21uOr),
             description: p.intl.string(p.t.SzpUBF),
-            onChange: h,
+            onChange: b,
             checked: t
         }), t && (0, r.jsx)(m.o, {
             guildId: l.id

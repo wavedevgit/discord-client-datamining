@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(735438),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(735438),
+    l = n.n(s),
     c = n(158954),
     u = n(73939),
     d = n(626494),
@@ -70,15 +70,15 @@ class S extends i.PureComponent {
             isTopModal: n,
             instant: i,
             dismissable: a
-        } = this.props, o = e({
+        } = this.props, s = e({
             transitionState: i ? g.ip.ENTERED : this.state.transitionState,
             onClose: this.close,
             dismissable: a
         });
         return (0, r.jsx)(t, {
             children: (0, r.jsx)("div", {
-                className: s()(y.qd, !n && y.AD),
-                children: o
+                className: o()(y.qd, !n && y.AD),
+                children: s
             })
         })
     }
@@ -134,10 +134,10 @@ function C(e) {
     for (let i = e.length - 1; i >= 0; i--) {
         var r;
         let a = e[i],
-            s = null == (r = e[i + 1]) ? void 0 : r.stackingBehavior,
-            o = n || "replace" === s;
+            o = null == (r = e[i + 1]) ? void 0 : r.stackingBehavior,
+            s = n || "replace" === o;
         t.unshift(A(O({}, a), {
-            isVisible: !o
+            isVisible: !s
         })), "replaceAll" === a.stackingBehavior && (n = !0)
     }
     return t
@@ -152,9 +152,9 @@ function w() {
     i.useLayoutEffect(() => {
         a.current = t[t.length - 1]
     }, [t]);
-    let s = t.length > 0;
+    let o = t.length > 0;
     i.useLayoutEffect(() => {
-        if (!s) return;
+        if (!o) return;
         let e = () => {
             let e = a.current;
             null != e && null != e.onCloseRequest && !1 !== e.dismissable && e.onCloseRequest()
@@ -162,8 +162,8 @@ function w() {
         return h._.subscribe(E.jej.MODAL_CLOSE, e), () => {
             h._.unsubscribe(E.jej.MODAL_CLOSE, e)
         }
-    }, [s]);
-    let o = i.useCallback(() => {
+    }, [o]);
+    let s = i.useCallback(() => {
             let e = a.current;
             (null == e ? void 0 : e.dismissable) !== !1 && h._.dispatch(E.jej.MODAL_CLOSE)
         }, []),
@@ -176,18 +176,18 @@ function w() {
         children: [I.map((e, n) => {
             var i;
             let a = l().findLast(t, t => t.Layer === e || null == t.Layer && e === f.Ay),
-                s = null != (i = null == a ? void 0 : a.backdropStyle) ? i : c.F2Z.DARK;
-            return (0, c.sC$)(s) ? (0, r.jsx)(e, {
+                o = null != (i = null == a ? void 0 : a.backdropStyle) ? i : c.F2Z.DARK;
+            return (0, c.sC$)(o) ? (0, r.jsx)(e, {
                 children: (0, r.jsx)(c.pkL, {
-                    variant: s === c.F2Z.LIGHTBOX || s === c.F2Z.IMMERSIVE ? "lightbox" : "default",
+                    variant: o === c.F2Z.LIGHTBOX || o === c.F2Z.IMMERSIVE ? "lightbox" : "default",
                     animationVariant: (null == a ? void 0 : a.instant) ? "instant" : "default",
                     isVisible: _[n],
-                    onClick: o
+                    onClick: s
                 })
             }, "layer-".concat(n)) : (0, r.jsx)(d.A, {
                 isVisible: _[n],
-                backdropStyle: s,
-                onClose: o,
+                backdropStyle: o,
+                onClose: s,
                 LayerComponent: e,
                 backdropInstant: null == a ? void 0 : a.instant
             }, "layer-".concat(n))
@@ -195,8 +195,8 @@ function w() {
             let {
                 key: i,
                 Layer: a,
-                render: s,
-                instant: o,
+                render: o,
+                instant: s,
                 isVisible: l,
                 dismissable: c
             } = e;
@@ -205,9 +205,9 @@ function w() {
                 LayerComponent: null != a ? a : f.Ay,
                 isVisible: l,
                 isTopModal: t === n.length - 1,
-                render: s,
+                render: o,
                 closeModal: p,
-                instant: o,
+                instant: s,
                 dismissable: c
             }, i)
         })]

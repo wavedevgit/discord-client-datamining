@@ -7,13 +7,13 @@ var r = n(315646),
         for (var r, i = e; null != (r = i.next); i = r)
             if (r.key === t) return i.next = r.next, n || (r.next = e.next, e.next = r), r
     },
-    s = function(e, t) {
+    o = function(e, t) {
         if (e) {
             var n = a(e, t);
             return n && n.value
         }
     },
-    o = function(e, t, n) {
+    s = function(e, t, n) {
         var r = a(e, t);
         r ? r.value = n : e.next = {
             key: t,
@@ -38,7 +38,7 @@ e.exports = function() {
             return r && n && n === r && (e = void 0), !!r
         },
         get: function(t) {
-            return s(e, t)
+            return o(e, t)
         },
         has: function(t) {
             return l(e, t)
@@ -46,7 +46,7 @@ e.exports = function() {
         set: function(t, n) {
             e || (e = {
                 next: void 0
-            }), o(e, t, n)
+            }), s(e, t, n)
         }
     };
     return t

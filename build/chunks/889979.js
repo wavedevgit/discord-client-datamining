@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(554146),
     i = n(439372),
     a = n(826673),
-    s = n(217222),
-    o = n(15285),
+    o = n(217222),
+    s = n(15285),
     l = n(617617),
     c = n(71393),
     u = n(871123),
@@ -29,12 +29,12 @@ class m extends i.A {
     constructor(...e) {
         super(...e), h(this, "_didAttemptToOpenModal", !1), h(this, "_didConnectionOpen", !1), h(this, "_didUserSettingsProtoLoad", !1), h(this, "_didGamesSeenLoad", !1), h(this, "actions", {
             POST_CONNECTION_OPEN: () => this._handlePostConnectionOpen()
-        }), h(this, "stores", new Map().set(l.A, () => this._handleUserSettingsProtoUpdate()).set(o.Ay, () => this._handleGamesSeenUpdate()).set(s.A, () => this._handleApexExperimentUpdate())), h(this, "_handlePostConnectionOpen", () => {
+        }), h(this, "stores", new Map().set(l.A, () => this._handleUserSettingsProtoUpdate()).set(s.Ay, () => this._handleGamesSeenUpdate()).set(o.A, () => this._handleApexExperimentUpdate())), h(this, "_handlePostConnectionOpen", () => {
             this._didConnectionOpen = !0, this._handleShowAnnouncementModal()
         }), h(this, "_handleUserSettingsProtoUpdate", () => {
             this._didUserSettingsProtoLoad = l.A.hasLoaded(_.oD.PRELOADED_USER_SETTINGS), this._handleShowAnnouncementModal()
         }), h(this, "_handleGamesSeenUpdate", () => {
-            this._didGamesSeenLoad = o.Ay.isGamesSeenLoaded(), this._handleShowAnnouncementModal()
+            this._didGamesSeenLoad = s.Ay.isGamesSeenLoaded(), this._handleShowAnnouncementModal()
         }), h(this, "_handleApexExperimentUpdate", () => {
             this._handleShowAnnouncementModal()
         }), h(this, "_handleShowAnnouncementModal", () => {
@@ -42,7 +42,7 @@ class m extends i.A {
                     location: "social-layer-storefront-announcement-modal"
                 }) && (this._didAttemptToOpenModal = !0, !(0, a.k8)(r.M.GAME_SHOP_ANNOUNCEMENT_MODAL))) {
                 if (null != c.A.getGuild((0, u.zf)())) return void(0, f.B)();
-                for (let e of o.Ay.getGamesSeen(!1, !1))
+                for (let e of s.Ay.getGamesSeen(!1, !1))
                     if (null != e.id && p.sQ.has(e.id)) return void(0, f.B)()
             }
         })

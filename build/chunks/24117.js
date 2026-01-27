@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(723765),
-    s = n(716371),
-    o = n(652215);
+    o = n(716371),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -38,6 +38,6 @@ let u = new a.A(() => (0, i.mMO)(async () => {
     } = await n.e("88077").then(n.bind(n, 187964));
     return t => (0, r.jsx)(e, c({}, t))
 }, {
-    modalKey: s.r,
-    onCloseRequest: o.FXj
+    modalKey: o.r,
+    onCloseRequest: s.FXj
 }))

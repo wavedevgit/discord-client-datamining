@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(834730),
-    o = n(927057),
+    o = n(834730),
+    s = n(927057),
     l = n(151282),
     c = n(985018),
     u = n(745315);
@@ -31,7 +31,7 @@ function d(e) {
             className: u.kL,
             children: (0, r.jsxs)("div", {
                 className: u.g3,
-                children: [(0, r.jsx)(s.E, {
+                children: [(0, r.jsx)(o.E, {
                     color: "text-default",
                     className: a()(u.Qq, u.a3),
                     variant: "text-sm/normal",
@@ -40,7 +40,7 @@ function d(e) {
                     })
                 }), (0, r.jsx)("div", {
                     className: u.o1,
-                    children: (0, r.jsx)(o.x, {
+                    children: (0, r.jsx)(s.x, {
                         onClick: d
                     })
                 })]

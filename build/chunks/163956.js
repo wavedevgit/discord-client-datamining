@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(896048);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(635377),
-    o = n.n(s),
+    o = n(635377),
+    s = n.n(o),
     l = n(311907),
     c = n(73153),
     u = n(283047),
@@ -59,7 +59,7 @@ function v(e, t) {
     }), e
 }
 let A = [],
-    I = new(o())({
+    I = new(s())({
         max: g.E7
     }),
     S = new u.A({
@@ -74,7 +74,7 @@ function T(e) {
         sound: t,
         trigger: n
     } = e;
-    if (!j()) return;
+    if (!M()) return;
     let r = t.soundId.toString();
     n === h.Zm.SOUNDBOARD && w(r)
 }
@@ -85,7 +85,7 @@ function C(e) {
         soundId: n,
         userId: r
     } = e;
-    if (!L()) return;
+    if (!x()) return;
     let i = n.toString();
     r !== (null == (t = f.default.getCurrentUser()) ? void 0 : t.id) && R(i) && N(i)
 }
@@ -115,32 +115,32 @@ function P(e) {
 
 function D() {
     var e;
-    if (!j()) return;
+    if (!M()) return;
     let t = null == (e = d.A.frecencyWithoutFetchingLatest.playedSoundFrecency) ? void 0 : e.playedSounds;
     S.overwriteHistory(P(null != t ? t : {}), A)
 }
 
-function x(e) {
+function L(e) {
     let {
         settings: {
             type: t
         },
         wasSaved: n
     } = e;
-    j() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (A = [])
+    M() && t === E.oD.FRECENCY_AND_FAVORITES_SETTINGS && n && (A = [])
 }
 
-function L() {
+function x() {
     return (0, p._)({
         location: "soundboard_event_store",
         autoTrackExposure: !1
     }).canSeeRecentlyHeard
 }
 
-function j() {
+function M() {
     return (0, m.YK)("soundboard_event_store")
 }
-class M extends(r = l.Ay.PersistedStore) {
+class j extends(r = l.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(_.A, d.A, f.default), (null == e ? void 0 : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? void 0 : e.playedEventsPendingFlush) != null && (A = e.playedEventsPendingFlush), this.syncWith([d.A], D)
     }
@@ -163,9 +163,9 @@ class M extends(r = l.Ay.PersistedStore) {
         return S.frequently
     }
 }
-y(M, "displayName", "SoundboardEventStore"), y(M, "persistKey", "SoundboardEventStore");
-let k = new M(c.h, {
+y(j, "displayName", "SoundboardEventStore"), y(j, "persistKey", "SoundboardEventStore");
+let k = new j(c.h, {
     GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: T,
     GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
-    USER_SETTINGS_PROTO_UPDATE: x
+    USER_SETTINGS_PROTO_UPDATE: L
 })

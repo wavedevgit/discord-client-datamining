@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(54304),
     i = n(607490),
     a = n(970585),
-    s = n(780439),
-    o = n(8041),
+    o = n(780439),
+    s = n(8041),
     l = n(988440);
 
 function c(e, t) {
@@ -47,7 +47,7 @@ function f() {
     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
         t = arguments.length > 1 ? arguments[1] : void 0;
     return {
-        dirtyHandlerIds: (0, s.T)(e.dirtyHandlerIds, {
+        dirtyHandlerIds: (0, o.T)(e.dirtyHandlerIds, {
             type: t.type,
             payload: u(u({}, t.payload), {}, {
                 prevTargetIds: (0, l.Jt)(e, "dragOperation.targetIds", [])
@@ -56,6 +56,6 @@ function f() {
         dragOffset: (0, r.T)(e.dragOffset, t),
         refCount: (0, a.T)(e.refCount, t),
         dragOperation: (0, i.T)(e.dragOperation, t),
-        stateId: (0, o.T)(e.stateId)
+        stateId: (0, s.T)(e.stateId)
     }
 }

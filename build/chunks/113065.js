@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 113065, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(294433),
-    l = n(299628),
+    a = n(294433),
+    o = n(299628),
     c = n(842130),
-    u = n(985018),
-    d = n(121113),
-    f = n(896498);
+    d = n(985018),
+    u = n(121113),
+    _ = n(896498);
 let p = () => {
-    let e = u.intl.string(c.default.tr8Gni),
-        t = (0, o.y)(u.intl.string(c.default["3xKGSE"]), u.intl.string(c.default.XbgrG7));
+    let e = d.intl.string(c.default.tr8Gni),
+        t = (0, a.y)(d.intl.string(c.default["3xKGSE"]), d.intl.string(c.default.XbgrG7));
     return (0, r.jsxs)(s.BJc, {
-        className: a()(d.k, f.a),
+        className: l()(u.k, _.a),
         gap: 24,
         padding: 24,
         children: [(0, r.jsxs)(s.BJc, {
@@ -34,6 +33,6 @@ let p = () => {
                 color: "text-muted",
                 children: t
             })]
-        }), (0, r.jsx)(l.A, {})]
+        }), (0, r.jsx)(o.A, {})]
     })
 }

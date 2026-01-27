@@ -1,75 +1,75 @@
-/** Chunk was on 42944 **/
-/** chunk id: 492280, original params: e,a,n (module,exports,require) **/
-n.d(a, {
-    E: () => u,
-    l: () => m
+/** Chunk was on 21738 **/
+/** chunk id: 492280, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    E: () => d,
+    l: () => p
 });
-var t = n(627968);
+var r = n(627968);
 n(64700);
-var l = n(503698),
-    i = n.n(l),
-    r = n(585958),
+var i = n(503698),
+    l = n.n(i),
+    a = n(585958),
     s = n(788593),
     o = n(461349),
     c = n(640830);
 
-function d(e) {
+function u(e) {
     let {
-        applicationId: a
+        applicationId: t
     } = e, {
         coverImageUrl: n
-    } = (0, r.n)(a);
-    return null != n && "" !== n ? (0, t.jsx)("div", {
-        className: i()(o.PY, c.LH),
-        children: (0, t.jsx)(s.R, {
+    } = (0, a.n)(t);
+    return null != n && "" !== n ? (0, r.jsx)("div", {
+        className: l()(o.PY, c.LH),
+        children: (0, r.jsx)(s.R, {
             imageSrc: n
         })
-    }) : (0, t.jsx)("div", {
-        className: i()(o.mD, c.LH)
+    }) : (0, r.jsx)("div", {
+        className: l()(o.mD, c.LH)
     })
 }
 
-function u(e) {
+function d(e) {
     let {
-        applicationId: a,
+        applicationId: t,
         size: n = "default",
-        className: l
+        className: i
     } = e;
-    return (0, t.jsxs)("div", {
-        className: i()(c.kL, c.Yi, {
+    return (0, r.jsxs)("div", {
+        className: l()(c.kL, c.Yi, {
             [c.PG]: "small" === n,
             [c.$g]: "medium" === n
-        }, l),
+        }, i),
         "aria-hidden": !0,
-        children: [null != a ? (0, t.jsx)(d, {
-            applicationId: a
-        }) : (0, t.jsx)("div", {
+        children: [null != t ? (0, r.jsx)(u, {
+            applicationId: t
+        }) : (0, r.jsx)("div", {
             className: o.mD
-        }), (0, t.jsxs)("div", {
+        }), (0, r.jsxs)("div", {
             className: c.RC,
-            children: [(0, t.jsx)("div", {
+            children: [(0, r.jsx)("div", {
                 className: c.h$
-            }), (0, t.jsx)("div", {
+            }), (0, r.jsx)("div", {
                 className: c.h$
             })]
         })]
     })
 }
 
-function m(e) {
+function p(e) {
     let {
-        applicationIds: a,
+        applicationIds: t,
         size: n = "default",
-        className: l
-    } = e, r = "small" === n ? a.slice(0, 3) : a.slice(0, 4);
-    return (0, t.jsx)("div", {
-        className: i()(c.kL, c.Nu, {
+        className: i
+    } = e, a = "small" === n ? t.slice(0, 3) : t.slice(0, 4);
+    return (0, r.jsx)("div", {
+        className: l()(c.kL, c.Nu, {
             [c.PG]: "small" === n,
             [c.$g]: "medium" === n
-        }, l),
+        }, i),
         "aria-hidden": !0,
-        children: r.map((e, a) => (0, t.jsx)(d, {
+        children: a.map((e, t) => (0, r.jsx)(u, {
             applicationId: e
-        }, a))
+        }, t))
     })
 }

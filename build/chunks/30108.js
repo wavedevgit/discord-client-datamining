@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(311907),
     i = n(439372),
     a = n(400492),
-    s = n(734057),
-    o = n(430452),
+    o = n(734057),
+    s = n(430452),
     l = n(309010),
     c = n(977997),
     u = n(63995),
@@ -29,7 +29,7 @@ function h(e, t, n) {
 }
 let m = e => e / 400,
     g = !1,
-    E = (0, a.Qh)("stage_waiting", "stage_waiting", m(o.A.getOutputVolume()));
+    E = (0, a.Qh)("stage_waiting", "stage_waiting", m(s.A.getOutputVolume()));
 
 function y() {
     let e = l.A.getVoiceChannelId();
@@ -37,13 +37,13 @@ function y() {
         E.stop(), g = !1;
         return
     }
-    let t = s.A.getChannel(e);
-    if (!(null == t ? void 0 : t.isGuildStageVoice()) || o.A.isSelfDeaf()) {
+    let t = o.A.getChannel(e);
+    if (!(null == t ? void 0 : t.isGuildStageVoice()) || s.A.isSelfDeaf()) {
         E.stop(), g = !1;
         return
     }
     if (_.A.shouldPlay()) {
-        E.volume = m(o.A.getOutputVolume()), E.loop(), g = !0;
+        E.volume = m(s.A.getOutputVolume()), E.loop(), g = !0;
         return
     }
     if (p.A.isLive(e)) {
@@ -55,7 +55,7 @@ function y() {
         return
     }
     let n = null != Object.values(c.A.getVoiceStatesForChannel(e)).find(e => !e.suppress && !e.isVoiceMuted());
-    n || g ? n && (E.pause(), g = !1) : (E.volume = m(o.A.getOutputVolume()), E.loop(), g = !0)
+    n || g ? n && (E.pause(), g = !1) : (E.volume = m(s.A.getOutputVolume()), E.loop(), g = !0)
 }
 
 function b(e) {
@@ -77,7 +77,7 @@ class v extends i.A {
             channelId: t
         } = e;
         if (null != t) {
-            let e = s.A.getChannel(t);
+            let e = o.A.getChannel(t);
             (null == e ? void 0 : e.isGuildStageVoice()) ? y(): (E.stop(), g = !1)
         } else E.stop(), g = !1
     }

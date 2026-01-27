@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 320381, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     Cq: () => u,
     If: () => d,
-    Rk: () => l,
+    Rk: () => o,
     wj: () => c
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(888675),
-    s = n(985018),
-    o = n(930037);
+    l = n(888675),
+    a = n(985018),
+    s = n(930037);
 
-function l(e) {
+function o(e) {
     let {
         message: t,
         compact: i,
-        onClick: l
+        onClick: o
     } = e;
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         icon: n(290388),
         timestamp: t.timestamp,
         compact: i,
-        contentClassName: o.B,
-        children: s.intl.format(s.t.bYdG3f, {
-            onClick: l
+        contentClassName: s.B,
+        children: a.intl.format(a.t.bYdG3f, {
+            onClick: o
         })
     })
 }
@@ -36,12 +35,12 @@ function c(e) {
         message: t,
         compact: i
     } = e;
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         icon: n(222548),
         timestamp: t.timestamp,
         compact: i,
-        contentClassName: o.B,
-        children: s.intl.string(s.t.tu6tOR)
+        contentClassName: s.B,
+        children: a.intl.string(a.t.tu6tOR)
     })
 }
 
@@ -50,18 +49,18 @@ function u(e) {
         message: t,
         compact: n
     } = e;
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         iconNode: (0, r.jsx)(i.EpV, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: o.Q
+            className: s.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: o.B,
-        children: s.intl.string(s.t.vzfXql)
+        contentClassName: s.B,
+        children: a.intl.string(a.t.vzfXql)
     })
 }
 
@@ -70,17 +69,17 @@ function d(e) {
         message: t,
         compact: n
     } = e;
-    return (0, r.jsx)(a.A, {
+    return (0, r.jsx)(l.A, {
         iconNode: (0, r.jsx)(i.EpV, {
             size: "custom",
             width: 20,
             height: 20,
             color: "currentColor",
-            className: o.Q
+            className: s.Q
         }),
         timestamp: t.timestamp,
         compact: n,
-        contentClassName: o.B,
-        children: s.intl.string(s.t["/TfvyR"])
+        contentClassName: s.B,
+        children: a.intl.string(a.t["/TfvyR"])
     })
 }

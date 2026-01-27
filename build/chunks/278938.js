@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(934551),
     a = n(311907),
-    s = n(397927),
-    o = n(544028),
+    o = n(397927),
+    s = n(544028),
     l = n(230835),
     c = n(738419),
     u = n(818348),
@@ -19,8 +19,8 @@ var i = n(934551),
 let _ = (e, t) => e === t ? p.H : void 0;
 
 function h() {
-    let e = (0, a.bG)([o.A], () => o.A.theme),
-        t = (0, s.Mwr)(e) ? u.NJ.DARK : u.NJ.LIGHT,
+    let e = (0, a.bG)([s.A], () => s.A.theme),
+        t = (0, o.Mwr)(e) ? u.NJ.DARK : u.NJ.LIGHT,
         n = [{
             name: "",
             value: u.NJ.DARK,
@@ -36,7 +36,7 @@ function h() {
             tooltip: f.intl.string(d.default["5vlJkY"]),
             tooltipAriaLabel: f.intl.string(d.default["5vlJkY"])
         }];
-    return (0, r.jsx)(s.IzF, {
+    return (0, r.jsx)(o.IzF, {
         className: p.t,
         options: n,
         value: t,

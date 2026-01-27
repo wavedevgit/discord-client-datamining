@@ -6,8 +6,8 @@ n.r(t), n.d(t, {
 });
 var r, i = n(55334),
     a = n(85402),
-    s = n(273406),
-    o = n(286815),
+    o = n(273406),
+    s = n(286815),
     l = n(476575),
     c = /[+\-]?(?:0|[1-9]\d*)(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,
     u = /(#(?:[0-9a-f]{2}){2,4}|(#[0-9a-f]{3})|(rgb|hsl)a?\((-?\d+%?[,\s]+){2,3}\s*[\d\.]+%?\))/gi,
@@ -18,7 +18,7 @@ var r, i = n(55334),
     p = function(e) {
         r || (r = l.colorNames ? RegExp("(" + Object.keys(l.colorNames).join("|") + ")", "g") : /^\b$/);
         var t = e.output.map(function(e) {
-                return (0, a.oq)(e).replace(u, o.b).replace(r, o.b)
+                return (0, a.oq)(e).replace(u, s.b).replace(r, s.b)
             }),
             n = t.map(function(e) {
                 return e.match(c).map(Number)
@@ -29,7 +29,7 @@ var r, i = n(55334),
                     return e[t]
                 })
             }).map(function(t) {
-                return (0, s.k)((0, i.Cl)((0, i.Cl)({}, e), {
+                return (0, o.k)((0, i.Cl)((0, i.Cl)({}, e), {
                     output: t
                 }))
             });

@@ -4,8 +4,8 @@
 var r = n(860511),
     i = n(36935),
     a = n(339626),
-    s = n(521351),
-    o = n(997159),
+    o = n(521351),
+    s = n(997159),
     l = n(380744),
     c = n(676528),
     u = n(105712),
@@ -15,8 +15,8 @@ var r = n(860511),
     _ = !1,
     h = a(r.PromiseRejectionEvent);
 e.exports = {
-    CONSTRUCTOR: s("Promise", function() {
-        var e = o(i),
+    CONSTRUCTOR: o("Promise", function() {
+        var e = s(i),
             t = e !== String(i);
         if (!t && 66 === d || u && !(f.catch && f.finally)) return !0;
         if (!d || d < 51 || !/native code/.test(e)) {

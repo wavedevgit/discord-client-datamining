@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 841643, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(311907),
     i = n(71393),
-    a = n(967198),
+    l = n(967198),
     s = n(711014);
-let o = () => {
+let a = () => {
     let e = (0, r.bG)([s.Ay], () => s.Ay.getFlattenedGuildIds()),
-        t = (0, r.bG)([a.A], () => a.A.getGuildId());
+        t = (0, r.bG)([l.A], () => l.A.getGuildId());
     return (0, r.bG)([i.A], () => i.A.getGuild(null != t ? t : e[0]))
 }

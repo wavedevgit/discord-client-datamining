@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(870844),
-    s = n(353640),
-    o = n(574381),
+    o = n(353640),
+    s = n(574381),
     l = n(689194),
     c = n(858013),
     u = n(602450),
@@ -59,8 +59,8 @@ let m = {
         perkAvailableToUser: !1,
         installationStatus: u.Lk.UNKNOWN,
         connectionStatus: u.l7.INITIALIZING,
-        isWeb: (0, o.HZ)(),
-        isSupportedPrivateBrowsingPerkPlatform: (0, o.uF)() || (0, o.cX)(),
+        isWeb: (0, s.HZ)(),
+        isSupportedPrivateBrowsingPerkPlatform: (0, s.uF)() || (0, s.cX)(),
         installTimeout: 6e5
     },
     g = e => (0, a.y)()(t => p(h(p({}, m), {
@@ -126,7 +126,7 @@ let m = {
                 disconnect: async () => await l.A.disconnect(),
                 perkAvailableToUser: e
             })),
-            n = (0, s.P)(t, e => e.setPerkAvailableToUser);
+            n = (0, o.P)(t, e => e.setPerkAvailableToUser);
         return (0, i.useEffect)(() => {
             n(e)
         }, [e, n]), t
@@ -136,5 +136,5 @@ function O(e) {
     let t = (0, i.useContext)(E),
         n = b(),
         r = null != t ? t : n;
-    return null != e ? (0, s.P)(r, e) : (0, s.P)(r)
+    return null != e ? (0, o.P)(r, e) : (0, o.P)(r)
 }

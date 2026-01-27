@@ -1,63 +1,63 @@
-/** Chunk was on 52343 **/
-/** chunk id: 725034, original params: t,i,l (module,exports,require) **/
-l.d(i, {
-    default: () => k
-}), l(896048);
-var n = l(627968),
-    e = l(64700),
-    r = l(158954),
-    a = l(417597),
-    o = l(964486),
-    u = l(793574),
-    s = l(688810),
-    A = l(961350),
-    d = l(696451),
-    _ = l(71393),
-    c = l(954571),
-    f = l(229527),
-    g = l(81400),
-    E = l(411335),
-    N = l(652215),
-    O = l(340837),
-    h = l(985018);
+/** Chunk was on 74724 **/
+/** chunk id: 725034, original params: t,l,n (module,exports,require) **/
+n.d(l, {
+    default: () => M
+}), n(896048);
+var i = n(627968),
+    e = n(64700),
+    u = n(158954),
+    r = n(417597),
+    A = n(964486),
+    a = n(793574),
+    d = n(688810),
+    o = n(961350),
+    f = n(696451),
+    s = n(71393),
+    E = n(954571),
+    _ = n(229527),
+    g = n(81400),
+    c = n(411335),
+    N = n(652215),
+    I = n(340837),
+    O = n(985018);
 
-function k(t) {
-    var i;
+function M(t) {
+    var l;
     let {
-        onClose: l,
-        transitionState: k,
-        guildId: p
-    } = t, M = (0, a.bG)([A.default], () => A.default.getId()), T = (0, a.bG)([d.Ay], () => d.Ay.getMember(p, M), [p, M]), b = (0, a.bG)([_.A], () => _.A.getGuild(p), [p]), C = null != (i = null == b ? void 0 : b.name) ? i : "", D = (0, f.wj)(T), {
-        analyticsLocations: I
-    } = (0, s.Ay)(u.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [P, R] = (0, g.j8)({
-        guildId: p,
-        analyticsLocations: I
-    }), S = D.has(O.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? h.intl.formatToPlainString(h.t.Oh20JS, {
-        guildName: C
-    }) : h.intl.formatToPlainString(h.t["+VAZ/Z"], {
-        guildName: C
+        onClose: n,
+        transitionState: M,
+        guildId: R
+    } = t, T = (0, r.bG)([o.default], () => o.default.getId()), U = (0, r.bG)([f.Ay], () => f.Ay.getMember(R, T), [R, T]), b = (0, r.bG)([s.A], () => s.A.getGuild(R), [R]), D = null != (l = null == b ? void 0 : b.name) ? l : "", G = (0, _.wj)(U), {
+        analyticsLocations: C
+    } = (0, d.Ay)(a.A.AUTOMOD_PROFILE_QUARANTINE_ALERT), [h, k] = (0, g.j8)({
+        guildId: R,
+        analyticsLocations: C
+    }), P = G.has(I.D.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME) ? O.intl.formatToPlainString(O.t.Oh20JS, {
+        guildName: D
+    }) : O.intl.formatToPlainString(O.t["+VAZ/Z"], {
+        guildName: D
     });
-    R || (S = h.intl.formatToPlainString(h.t.tcrtME, {
-        guildName: C
+    k || (P = O.intl.formatToPlainString(O.t.tcrtME, {
+        guildName: D
     }));
-    let U = R ? h.intl.string(h.t.Viksoo) : h.intl.string(h.t.WikgZ1);
-    return ((0, o.Ay)(() => {
-        c.default.track(N.HAw.OPEN_MODAL, {
-            type: E.oN,
-            guild_id: p,
-            other_user_id: M
+    let m = k ? O.intl.string(O.t.Viksoo) : O.intl.string(O.t.WikgZ1);
+    return ((0, A.Ay)(() => {
+        E.default.track(N.HAw.OPEN_MODAL, {
+            type: c.oN,
+            guild_id: R,
+            other_user_id: T
         })
     }), e.useEffect(() => {
-        if (null == b) return void l()
-    }, [b, l]), null == b) ? null : (0, n.jsx)(r.Modal, {
-        transitionState: k,
-        onClose: l,
-        title: h.intl.string(h.t["P+6K9C"]),
-        subtitle: S,
+        if (null == b) return void n()
+    }, [b, n]), null == b) ? null : (0, i.jsx)(u.Modal, {
+        transitionState: M,
+        onClose: n,
+        title: O.intl.string(O.t["P+6K9C"]),
+        subtitle: P,
         actions: [{
-            text: U,
+            text: m,
             onClick: () => {
-                P(), l()
+                h(), n()
             }
         }]
     })

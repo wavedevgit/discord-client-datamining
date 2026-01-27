@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 246109, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(502060),
+    l = n(502060),
     s = n(983806),
-    o = n(218359),
-    l = n(445343),
+    a = n(218359),
+    o = n(445343),
     c = n(696616),
-    u = n(564752),
-    d = n(985018);
-let f = () => (0, r.jsxs)(i.BJc, {
+    d = n(564752),
+    u = n(985018);
+let _ = () => (0, r.jsxs)(i.BJc, {
     gap: 32,
     children: [(0, r.jsx)(s.b, {}), (0, r.jsx)("div", {
-        children: (0, r.jsxs)(a.G, {
-            title: d.intl.string(d.t.SRZyHg),
-            children: [(0, r.jsx)(u.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(l.A, {}), (0, r.jsx)(o.A, {})]
+        children: (0, r.jsxs)(l.G, {
+            title: u.intl.string(u.t.SRZyHg),
+            children: [(0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(o.A, {}), (0, r.jsx)(a.A, {})]
         })
     })]
 })

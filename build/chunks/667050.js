@@ -3,17 +3,17 @@
 "use strict";
 n.d(t, {
     Bf: () => k,
-    Br: () => V,
+    Br: () => F,
     fr: () => B,
-    m4: () => L,
+    m4: () => x,
     oS: () => G,
     tm: () => U
 });
 var r = n(735438),
     i = n.n(r),
     a = n(791454),
-    s = n(54991),
-    o = n(149834),
+    o = n(54991),
+    s = n(149834),
     l = n(372889),
     c = n(764724),
     u = n(535275),
@@ -39,16 +39,16 @@ var r = n(735438),
     R = n(486020),
     P = n(690521),
     D = n(194486),
-    x = n(985018);
-let L = {
+    L = n(985018);
+let x = {
         start: 10,
         end: 15
     },
-    j = [a],
-    M = [s, o, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T],
+    M = [a],
+    j = [o, s, l, c, u, d, f, p, _, h, m, g, E, y, b, O, v, A, I, S, T],
     k = {
-        [D.B.BASIC]: j,
-        [D.B.PREMIUM]: M
+        [D.B.BASIC]: M,
+        [D.B.PREMIUM]: j
     },
     U = i().memoize(e => new Promise(t => {
         let n = new Image;
@@ -71,7 +71,7 @@ let L = {
         return Math.floor(Math.random() * n.length)
     };
 
-function V(e) {
+function F(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 32;
     if (null != e.id) {
         var n;
@@ -86,7 +86,7 @@ function V(e) {
     return null != i ? P.Ay.getURL(i.surrogates) : ""
 }
 
-function F(e, t) {
+function V(e, t) {
     return i()(e).map(e => {
         var n;
         return null != (n = e[t]) ? n : null
@@ -94,22 +94,22 @@ function F(e, t) {
 }
 
 function B(e) {
-    var t, n, r, i, a, s;
+    var t, n, r, i, a, o;
     if (e.length < 1) return "";
-    let o = F(e, "userId"),
-        l = F(e, "emojiName"),
+    let s = V(e, "userId"),
+        l = V(e, "emojiName"),
         c = l.length < 2 ? null != (t = null == l ? void 0 : l[0]) ? t : "" : l.join(", ");
-    return o.length < 1 ? "" : 1 === o.length ? x.intl.formatToPlainString(x.t.yZYxzF, {
-        firstUsername: null == (n = w.default.getUser(o[0])) ? void 0 : n.username,
+    return s.length < 1 ? "" : 1 === s.length ? L.intl.formatToPlainString(L.t.yZYxzF, {
+        firstUsername: null == (n = w.default.getUser(s[0])) ? void 0 : n.username,
         emojiNames: c
-    }) : 2 === o.length ? x.intl.formatToPlainString(x.t["8rmtbd"], {
-        firstUsername: null == (r = w.default.getUser(o[0])) ? void 0 : r.username,
-        secondUsername: null == (i = w.default.getUser(o[1])) ? void 0 : i.username,
+    }) : 2 === s.length ? L.intl.formatToPlainString(L.t["8rmtbd"], {
+        firstUsername: null == (r = w.default.getUser(s[0])) ? void 0 : r.username,
+        secondUsername: null == (i = w.default.getUser(s[1])) ? void 0 : i.username,
         emojiNames: c
-    }) : x.intl.formatToPlainString(x.t["/okjv0"], {
-        firstUsername: null == (a = w.default.getUser(o[0])) ? void 0 : a.username,
-        secondUsername: null == (s = w.default.getUser(o[1])) ? void 0 : s.username,
-        count: o.length - 2,
+    }) : L.intl.formatToPlainString(L.t["/okjv0"], {
+        firstUsername: null == (a = w.default.getUser(s[0])) ? void 0 : a.username,
+        secondUsername: null == (o = w.default.getUser(s[1])) ? void 0 : o.username,
+        count: s.length - 2,
         emojiNames: c
     })
 }

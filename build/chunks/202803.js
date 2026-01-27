@@ -8,8 +8,8 @@ n.d(t, {
     fr: () => y,
     w6: () => O
 }), n(747238), n(896048);
-var r, i, a, s = n(562465),
-    o = n(927813),
+var r, i, a, o = n(562465),
+    s = n(927813),
     l = n(998218),
     c = n(652215);
 let u = e => null == e ? void 0 : e.split(":")[0];
@@ -19,7 +19,7 @@ function d(e) {
 }
 let f = new Set(["/attachments/", "/ephemeral-attachments/"]),
     p = new Set(["/external/"]),
-    _ = +o.A.Millis.HOUR,
+    _ = +s.A.Millis.HOUR,
     h = new Set([window.GLOBAL_ENV.CDN_HOST, null == (i = window.GLOBAL_ENV.MEDIA_PROXY_ENDPOINT) ? void 0 : i.substring(2)].map(u).filter(Boolean)),
     m = new Set((null != (r = null == (a = window.GLOBAL_ENV.IMAGE_PROXY_ENDPOINTS) ? void 0 : a.split(",")) ? r : []).map(e => e.substring(2)).map(u).filter(Boolean)),
     g = !1,
@@ -50,7 +50,7 @@ function O(e) {
 function v(e) {
     let t = e.searchParams.get("ex"),
         n = parseInt(null != t ? t : "", 16);
-    return isNaN(n) ? void 0 : n * o.A.Millis.SECOND
+    return isNaN(n) ? void 0 : n * s.A.Millis.SECOND
 }
 
 function A(e) {
@@ -78,7 +78,7 @@ function C(e) {
     return e.attachments.some(I) || e.embeds.some(T)
 }
 async function N(e) {
-    let t = await s.Bo.post({
+    let t = await o.Bo.post({
         url: c.Rsh.ATTACHMENTS_REFRESH_URLS,
         body: {
             attachment_urls: [e]

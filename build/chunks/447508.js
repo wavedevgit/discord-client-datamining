@@ -2,7 +2,7 @@
 /** chunk id: 447508, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    o: () => s
+    o: () => o
 }), n(896048);
 var r = n(758255),
     i = n(383682);
@@ -15,7 +15,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s {
+class o {
     get totalLength() {
         return this.primary.length + this.extended.length
     }

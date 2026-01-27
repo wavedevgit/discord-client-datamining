@@ -8,10 +8,10 @@ n.d(t, {
 var r = n(825913),
     i = n(967158),
     a = n(498430),
-    s = n(803082),
-    o = n(64700);
-let l = (0, o.createContext)({}),
-    c = (0, o.forwardRef)(function(e, t) {
+    o = n(803082),
+    s = n(64700);
+let l = (0, s.createContext)({}),
+    c = (0, s.forwardRef)(function(e, t) {
         var n, c;
         [e, t] = (0, r.JT)(e, t, l);
         let {
@@ -49,8 +49,8 @@ let l = (0, o.createContext)({}),
             },
             defaultClassName: "react-aria-Group"
         });
-        return o.createElement("div", {
-            ...(0, s.v)(m, O, g),
+        return s.createElement("div", {
+            ...(0, o.v)(m, O, g),
             ...v,
             ref: t,
             role: null != (n = e.role) ? n : "group",

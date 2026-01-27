@@ -2,13 +2,13 @@
 /** chunk id: 827343, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => L
+    A: () => x
 });
 var r = n(111956),
     i = n.n(r),
     a = n(73153),
-    s = n(626584),
-    o = n(400492),
+    o = n(626584),
+    s = n(400492),
     l = n(409826),
     c = n(698723),
     u = n(413339),
@@ -45,10 +45,10 @@ function A(e) {
     }
     return e
 }
-let I = new s.A("AudioActionCreators");
+let I = new o.A("AudioActionCreators");
 
 function S() {
-    (0, o.Ak)("mention3", void 0, void 0, void 0, b.a.VOICE)
+    (0, s.Ak)("mention3", void 0, void 0, void 0, b.a.VOICE)
 }
 
 function T() {
@@ -62,8 +62,8 @@ function C(e, t, n, r) {
         analyticsLocations: a
     } = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {};
     if (t === n) return;
-    let s = h.A.getVoiceChannelId(),
-        o = null != s ? f.A.getChannel(s) : null,
+    let o = h.A.getVoiceChannelId(),
+        s = null != o ? f.A.getChannel(o) : null,
         l = e[t],
         c = e[n],
         u = p.A.getMediaEngine().getAudioSubsystem(),
@@ -75,7 +75,7 @@ function C(e, t, n, r) {
         device_is_certified: d.A.isCertified(n),
         location: i,
         location_stack: a,
-        voice_channel_type: null == o ? void 0 : o.type,
+        voice_channel_type: null == s ? void 0 : s.type,
         audio_subsystem: u,
         audio_layer: _
     })
@@ -99,9 +99,9 @@ let N = i()((e, t, n) => {
         enable: R,
         isNotSupported: P,
         trackToggleSelfMute: D,
-        trackToggleSelfDeaf: x
+        trackToggleSelfDeaf: L
     } = w = n(401124),
-    L = {
+    x = {
         enable: R,
         toggleSelfMute() {
             var e;
@@ -110,11 +110,11 @@ let N = i()((e, t, n) => {
                 syncRemote: n = !0,
                 usedKeybind: r = !1,
                 playSoundEffect: i = !0,
-                location: s
+                location: o
             } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
             return P() ? Promise.resolve() : (D({
                 usedKeybind: r,
-                location: s
+                location: o
             }), i = i && !p.A.hasActiveCallKitCall(), (null == (e = m.default.getCurrentUser()) ? void 0 : e.isStaff()) && I.info("Toggling self mute"), p.A.isEnabled()) ? a.h.dispatch({
                 type: "AUDIO_TOGGLE_SELF_MUTE",
                 context: t,
@@ -146,7 +146,7 @@ let N = i()((e, t, n) => {
                 usedKeybind: n = !1,
                 location: r
             } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-            P() || (x({
+            P() || (L({
                 usedKeybind: n,
                 location: r
             }), a.h.dispatch({
@@ -212,41 +212,41 @@ let N = i()((e, t, n) => {
                 } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
             if (P()) return;
             let i = e !== p.A.getMode(),
-                s = p.A.getModeOptions(n);
+                o = p.A.getModeOptions(n);
             if (a.h.dispatch({
                     type: "AUDIO_SET_MODE",
                     context: n,
                     mode: e,
-                    options: A({}, s, t)
+                    options: A({}, o, t)
                 }), i) {
                 let t = p.A.getMediaEngine().getAudioSubsystem(),
                     n = p.A.getMediaEngine().getAudioLayer(),
                     i = h.A.getVoiceChannelId(),
                     a = null != i ? f.A.getChannel(i) : null,
-                    s = T();
+                    o = T();
                 g.default.track(y.HAw.VOICE_ACTIVATION_MODE_CHANGED, {
                     mode: e,
                     location_stack: r,
                     voice_channel_type: null == a ? void 0 : a.type,
-                    input_device_name: s,
+                    input_device_name: o,
                     audio_subsystem: t,
                     audio_layer: n
                 })
-            } else if (e === y.TBI.VOICE_ACTIVITY && s !== t) {
+            } else if (e === y.TBI.VOICE_ACTIVITY && o !== t) {
                 let e = p.A.getMediaEngine().getAudioSubsystem(),
                     n = p.A.getMediaEngine().getAudioLayer(),
                     i = h.A.getVoiceChannelId(),
                     a = null != i ? f.A.getChannel(i) : null,
-                    o = T();
+                    s = T();
                 g.default.track(y.HAw.VOICE_ACTIVITY_THRESHOLD_CHANGED, {
                     location_stack: r,
                     voice_channel_type: null == a ? void 0 : a.type,
-                    input_device_name: o,
+                    input_device_name: s,
                     audio_subsystem: e,
                     audio_layer: n,
-                    old_threshold: s.threshold,
+                    old_threshold: o.threshold,
                     new_threshold: t.threshold,
-                    old_auto_threshold: s.autoThreshold,
+                    old_auto_threshold: o.autoThreshold,
                     new_auto_threshold: t.autoThreshold
                 })
             }

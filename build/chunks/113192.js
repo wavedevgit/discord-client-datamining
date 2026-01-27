@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(646865),
     a = n(795816),
-    s = n(47294),
-    o = n(688810),
+    o = n(47294),
+    s = n(688810),
     l = n(429913),
     c = n(384059),
     u = n(235986),
@@ -34,8 +34,8 @@ function b(e) {
         idle: I
     } = e, S = (0, l.h)(n), T = (0, d.Us)() === g.BRT.POPOUT, {
         parentAnalyticsLocation: C
-    } = (0, o.Ay)(), N = () => {
-        (0, c.X)(C, c.O.POPOUT, !0), (0, s.A)({
+    } = (0, s.Ay)(), N = () => {
+        (0, c.X)(C, c.O.POPOUT, !0), (0, o.A)({
             onConfirm: async () => {
                 await h.A.refreshProxyTicket({
                     applicationId: n

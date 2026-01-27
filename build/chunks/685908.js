@@ -10,8 +10,8 @@ var r = Object.assign || function(e) {
     },
     i = n(284009),
     a = n(313319),
-    s = n(958554),
-    o = n(410641),
+    o = n(958554),
+    s = n(410641),
     l = n(868671),
     c = n(120685),
     u = n(543881),
@@ -23,14 +23,14 @@ var _ = n(253120),
     h = n(905386),
     m = n(362001),
     g = function(e, t, n) {
-        if (e instanceof o) {
+        if (e instanceof s) {
             var i = r({}, t),
                 a = r({}, t);
-            for (var s in t) {
-                var l = t[s],
+            for (var o in t) {
+                var l = t[o],
                     c = l.x,
                     u = l.y;
-                void 0 !== c && void 0 !== u && (i[s] = c, a[s] = u)
+                void 0 !== c && void 0 !== u && (i[o] = c, a[o] = u)
             }
             return b([n(e.x, i), n(e.y, a)], {
                 stopTogether: !1
@@ -82,14 +82,14 @@ var _ = n(253120),
                         });
                         return
                     }
-                    e.forEach(function(s, o) {
-                        var l = function(s) {
-                            if (r[o] = !0, ++n === e.length) {
-                                n = 0, t && t(s);
+                    e.forEach(function(o, s) {
+                        var l = function(o) {
+                            if (r[s] = !0, ++n === e.length) {
+                                n = 0, t && t(o);
                                 return
-                            }!s.finished && i && a.stop()
+                            }!o.finished && i && a.stop()
                         };
-                        s ? s.start(l) : l({
+                        o ? o.start(l) : l({
                             finished: !0
                         })
                     })
@@ -103,7 +103,7 @@ var _ = n(253120),
         return a
     },
     O = function(e) {
-        return E(new s(0), {
+        return E(new o(0), {
             toValue: 0,
             delay: e,
             duration: 0
@@ -117,21 +117,21 @@ var _ = n(253120),
     A = function(e, t) {
         return function() {
             for (var n = arguments.length, r = Array(n), a = 0; a < n; a++) r[a] = arguments[a];
-            var o = function e(t, n, r) {
+            var s = function e(t, n, r) {
                 if ("number" == typeof n) {
-                    i(t instanceof s, "Bad mapping of type " + typeof t + " for key " + r + ", event value must map to AnimatedValue"), t.setValue(n);
+                    i(t instanceof o, "Bad mapping of type " + typeof t + " for key " + r + ", event value must map to AnimatedValue"), t.setValue(n);
                     return
                 }
                 for (var r in i("object" == typeof t, "Bad mapping of type " + typeof t + " for key " + r), i("object" == typeof n, "Bad event of type " + typeof n + " for key " + r), t) e(t[r], n[r], r)
             };
             e.forEach(function(e, t) {
-                o(e, r[t], "arg" + t)
+                s(e, r[t], "arg" + t)
             }), t && t.listener && t.listener.apply(null, r)
         }
     };
 e.exports = {
-    Value: s,
-    ValueXY: o,
+    Value: o,
+    ValueXY: s,
     decay: function e(t, n) {
         return g(t, n, e) || {
             start: function(e) {

@@ -1,69 +1,67 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 598733, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => y
+    A: () => p
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(311907),
-    l = n(421380),
+    l = n(503698),
+    o = n.n(l),
+    a = n(311907),
+    s = n(421380),
     c = n(397927),
     u = n(686956),
-    d = n(976860),
-    f = n(71393),
-    p = n(967198),
-    _ = n(449054),
-    h = n(652215),
-    m = n(985018),
-    g = n(163677),
-    E = n(1624);
-let y = () => {
-    let e = (0, o.bG)([p.A], () => p.A.getGuildId(), []),
-        t = (0, o.bG)([f.A], () => f.A.getGuild(e), [e]),
-        [n, a] = i.useState(!1);
+    E = n(976860),
+    d = n(71393),
+    _ = n(967198),
+    A = n(449054),
+    T = n(652215),
+    I = n(985018),
+    O = n(163677),
+    N = n(1624);
+let p = () => {
+    let e = (0, a.bG)([_.A], () => _.A.getGuildId(), []),
+        t = (0, a.bG)([d.A], () => d.A.getGuild(e), [e]),
+        [n, l] = i.useState(!1);
     if (null == t) return null;
-    let y = () => {
-            (0, d.JK)().goBack()
-        },
-        b = async () => {
-            a(!0);
-            try {
-                _.cf(t.id), await u.A.joinGuild(t.id, {
-                    source: h.Q4z.NOTICE_BAR
-                })
-            } catch (e) {
-                a(!1)
-            }
-        };
+    let p = async () => {
+        l(!0);
+        try {
+            A.cf(t.id), await u.A.joinGuild(t.id, {
+                source: T.Q4z.NOTICE_BAR
+            })
+        } catch (e) {
+            l(!1)
+        }
+    };
     return (0, r.jsxs)("div", {
-        className: s()(g.lm, E.lm),
-        children: [(0, r.jsxs)(l.$n, {
-            look: l.$n.Looks.OUTLINED,
-            color: l.$n.Colors.WHITE,
-            size: l.$n.Sizes.NONE,
-            className: s()(g.x6, g.aX),
-            innerClassName: g.gb,
-            onClick: y,
+        className: o()(O.lm, N.lm),
+        children: [(0, r.jsxs)(s.$n, {
+            look: s.$n.Looks.OUTLINED,
+            color: s.$n.Colors.WHITE,
+            size: s.$n.Sizes.NONE,
+            className: o()(O.x6, O.aX),
+            innerClassName: O.gb,
+            onClick: () => {
+                (0, E.JK)().goBack()
+            },
             children: [(0, r.jsx)(c.rJJ, {
                 size: "xs",
                 color: "currentColor",
-                className: g.UE
-            }), m.intl.string(m.t["13/7kX"])]
+                className: O.UE
+            }), I.intl.string(I.t["13/7kX"])]
         }), (0, r.jsx)(c.Text, {
-            className: g.wx,
+            className: O.wx,
             variant: "text-sm/normal",
-            children: m.intl.string(m.t["N/y2WE"])
-        }), (0, r.jsx)(l.$n, {
-            className: g.x6,
-            look: l.$n.Looks.OUTLINED,
-            color: l.$n.Colors.WHITE,
-            size: l.$n.Sizes.NONE,
+            children: I.intl.string(I.t["N/y2WE"])
+        }), (0, r.jsx)(s.$n, {
+            className: O.x6,
+            look: s.$n.Looks.OUTLINED,
+            color: s.$n.Colors.WHITE,
+            size: s.$n.Sizes.NONE,
             submitting: n,
-            onClick: b,
-            children: m.intl.format(m.t.uHN7ny, {
+            onClick: p,
+            children: I.intl.format(I.t.uHN7ny, {
                 guild: t.name
             })
         })]

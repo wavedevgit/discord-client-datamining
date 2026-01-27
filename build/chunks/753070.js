@@ -3,24 +3,24 @@
 "use strict";
 n.d(t, {
     AC: () => u,
-    F0: () => o,
+    F0: () => s,
     Jk: () => h,
     ZV: () => f,
     ce: () => m,
     jQ: () => c,
     kn: () => l,
-    on: () => s,
+    on: () => o,
     yw: () => d,
     zr: () => _
 }), n(65821);
 var r = n(652215),
     i = n(788868),
     a = n(985018),
-    s = function(e) {
+    o = function(e) {
         return e[e.RESOLUTION_480 = 480] = "RESOLUTION_480", e[e.RESOLUTION_720 = 720] = "RESOLUTION_720", e[e.RESOLUTION_1080 = 1080] = "RESOLUTION_1080", e[e.RESOLUTION_1440 = 1440] = "RESOLUTION_1440", e[e.RESOLUTION_SOURCE = 0] = "RESOLUTION_SOURCE", e
     }({});
 
-function o(e) {
+function s(e) {
     switch (e) {
         case 480:
             return 480;
@@ -157,11 +157,14 @@ let d = {
         fps: 5
     }];
 
-function p(e, t) {
+function p(e, t, n) {
     return {
         value: e,
         get label() {
-            return null != t ? t() : e
+            return null != t ? t() : String(e)
+        },
+        get subtext() {
+            return null != n ? n() : void 0
         }
     }
 }

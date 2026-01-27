@@ -2,25 +2,25 @@
 /** chunk id: 105330, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    l: () => o
+    l: () => s
 }), n(896048);
 var r = n(64700),
     i = n(267102),
     a = n(374803),
-    s = n(562650);
+    o = n(562650);
 
-function o(e) {
+function s(e) {
     let {
         editorHeight: t,
         type: n,
-        state: o
-    } = e, [l, c] = r.useState(void 0), u = null == o ? void 0 : o.query, d = null == o ? void 0 : o.isVisible, {
+        state: s
+    } = e, [l, c] = r.useState(void 0), u = null == s ? void 0 : s.query, d = null == s ? void 0 : s.isVisible, {
         renderWindow: f
     } = r.useContext(i.Ay), p = r.useCallback(() => {
         var e, t, r, i;
-        if (null != o && (null == u || !d)) return void c(void 0);
+        if (null != s && (null == u || !d)) return void c(void 0);
         if ((null == u ? void 0 : u.type) === a.DB.MENTION_SUGGESTIONS) {
-            let e = f.document.getElementsByClassName(s.Z2)[0];
+            let e = f.document.getElementsByClassName(o.Z2)[0];
             if (null == e) return void c(void 0);
             {
                 let t = e.getBoundingClientRect();
@@ -48,7 +48,7 @@ function o(e) {
         m.setStart(_, h), m.setEnd(_, h);
         let g = m.getBoundingClientRect();
         (null == g ? void 0 : g.height) !== 0 && c(null != g ? g : null)
-    }, [f.document, o, d, u, n]);
+    }, [f.document, s, d, u, n]);
     return r.useEffect(() => (f.document.addEventListener("selectionchange", p), () => f.document.removeEventListener("selectionchange", p)), [f.document, p]), r.useEffect(() => {
         p()
     }, [p, t]), l

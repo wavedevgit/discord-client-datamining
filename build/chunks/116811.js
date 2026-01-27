@@ -2,27 +2,27 @@
 /** chunk id: 116811, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(643479),
     i = n(801765),
     a = n(105423);
-let s = 27,
-    o = {
+let o = 27,
+    s = {
         read: l,
         SHOT_INFO_AUTO_ROTATE: 27
     };
 
-function l(e, t, n, s, o) {
-    let l = (0, i.y)(e, a.lt, t, t + n, s, o);
+function l(e, t, n, o, s) {
+    let l = (0, i.y)(e, a.lt, t, t + n, o, s);
     return l.ShotInfo && (l = (0, r.dP)({}, l, c(l.ShotInfo.value)), delete l.ShotInfo), l
 }
 
 function c(e) {
     let t = {};
-    return void 0 !== e[s] && (t.AutoRotate = {
-        value: e[s],
-        description: u(e[s])
+    return void 0 !== e[o] && (t.AutoRotate = {
+        value: e[o],
+        description: u(e[o])
     }), t
 }
 

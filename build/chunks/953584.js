@@ -16,8 +16,8 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = 10;
-class o extends r.il {
+let o = 10;
+class s extends r.il {
     isVideoStatsEnabled(e) {
         var t;
         return null != (t = this.videoStatsEnabled.get(e)) && t
@@ -31,8 +31,8 @@ class o extends r.il {
             this.videoStatsEnabled.delete(e) && this.emitChange();
             return
         }
-        if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > s) {
-            let e = this.videoStatsEnabled.size - s,
+        if (this.videoStatsEnabled.has(e) && this.videoStatsEnabled.delete(e), this.videoStatsEnabled.set(e, t), this.videoStatsEnabled.size > o) {
+            let e = this.videoStatsEnabled.size - o,
                 t = this.videoStatsEnabled.keys();
             for (let n = 0; n < e; n++) {
                 let e = t.next().value;
@@ -48,7 +48,7 @@ class o extends r.il {
         super(...e), a(this, "videoStatsEnabled", new Map)
     }
 }
-let l = new o(i.h, {}),
+let l = new s(i.h, {}),
     c = l;
 
 function u(e) {

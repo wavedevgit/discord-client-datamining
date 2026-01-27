@@ -10,13 +10,13 @@ n.d(t, {
 var r = n(600975),
     i = n(303622),
     a = n(735729),
-    s = n(688151);
-let o = "hide_icymi_tab",
+    o = n(688151);
+let s = "hide_icymi_tab",
     l = (0, r.C)({
         kind: "user",
         id: "2024-07_icymi",
         label: "In-case-you-missed-it tab",
-        commonTriggerPoint: s.$G.CONNECTION_OPEN_MOBILE,
+        commonTriggerPoint: o.$G.CONNECTION_OPEN_MOBILE,
         defaultConfig: {
             enabled: !1
         },
@@ -31,7 +31,7 @@ let o = "hide_icymi_tab",
 
 function c(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        n = (0, a.A)(o),
+        n = (0, a.A)(s),
         r = l.useExperiment({
             location: e
         }, {
@@ -49,7 +49,7 @@ function c(e) {
 
 function u(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-        n = i.A.get(o),
+        n = i.A.get(s),
         r = l.getCurrentConfig({
             location: e
         }, {

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(835245),
-    s = n(665260),
-    o = n(439372),
+    o = n(665260),
+    s = n(439372),
     l = n(95701),
     c = n(427157),
     u = n(734057),
@@ -39,7 +39,7 @@ function O(e) {
         username: "0" !== e.discriminator ? "".concat(e.username, "#").concat(e.discriminator) : e.username,
         nicknames: {}
     };
-    return null != g.Ay.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = !0), e instanceof c.A ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = s.Lt(null != (t = e.flags) ? t : 0, E.nhx.PROVISIONAL_ACCOUNT) : r.isProvisional = !1, f.A.isFriend(e.id) && (r.isFriend = !0, r.friendNickname = f.A.getNickname(e.id)), e instanceof c.A ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = s.Lt(null != (n = e.flags) ? n : 0, E.nhx.STAFF) : r.isStaff = !1, r
+    return null != g.Ay.getGlobalName(e) && (r.globalName = e.globalName), e.bot && (r.isBot = !0), e instanceof c.A ? r.isProvisional = e.isProvisional : "flags" in e ? r.isProvisional = o.Lt(null != (t = e.flags) ? t : 0, E.nhx.PROVISIONAL_ACCOUNT) : r.isProvisional = !1, f.A.isFriend(e.id) && (r.isFriend = !0, r.friendNickname = f.A.getNickname(e.id)), e instanceof c.A ? r.isStaff = e.isStaff() : "flags" in e ? r.isStaff = o.Lt(null != (n = e.flags) ? n : 0, E.nhx.STAFF) : r.isStaff = !1, r
 }
 
 function v(e, t, n) {
@@ -71,15 +71,15 @@ function S(e) {
     let {
         message: n,
         nicknameContextId: r
-    } = e, i = u.A.getChannel(n.channel_id), a = null != r ? r : (null == i ? void 0 : i.isPrivate()) === !0 ? null == i ? void 0 : i.id : null == i ? void 0 : i.getGuildId(), s = [];
+    } = e, i = u.A.getChannel(n.channel_id), a = null != r ? r : (null == i ? void 0 : i.isPrivate()) === !0 ? null == i ? void 0 : i.id : null == i ? void 0 : i.getGuildId(), o = [];
     if (null != n.author) {
         let e = O(n.author);
-        null != e && (s.push(e), null != a && v(e, a))
+        null != e && (o.push(e), null != a && v(e, a))
     }
     return null == (t = n.mentions) || t.forEach(e => {
         let t = O(e);
-        null != t && (s.push(t), null != a && v(t, a))
-    }), s
+        null != t && (o.push(t), null != a && v(t, a))
+    }), o
 }
 class T {
     setLimit(e) {
@@ -131,7 +131,7 @@ class T {
         }), this._worker = e, this._uuid = (0, a.A)(), this._callback = t, this._limit = n, this._currentQuery = null, this._nextQuery = null, this._subscribed = !1, this.subscribe()
     }
 }
-class C extends o.A {
+class C extends s.A {
     _initialize() {
         this.rebootWebworker()
     }
@@ -244,9 +244,9 @@ class C extends o.A {
                 for (let e in r)
                     for (let t in r[e]) {
                         var i, a;
-                        let s = n[t],
-                            o = null != (i = null == (a = r[e][t]) ? void 0 : a.nick) ? i : g.Ay.getGlobalName(s);
-                        null != s && v(s, e, o)
+                        let o = n[t],
+                            s = null != (i = null == (a = r[e][t]) ? void 0 : a.nick) ? i : g.Ay.getGlobalName(o);
+                        null != o && v(o, e, s)
                     }
                 this.updateUsers(Object.values(n), "connection_open")
             }, 3e3)

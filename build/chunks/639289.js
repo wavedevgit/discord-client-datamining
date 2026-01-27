@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(73153),
     u = n(775602),
@@ -28,7 +28,7 @@ let y = 1e3,
             isConfirmationStep: n,
             isEligibleForWowMoment: a,
             shouldPrefetchWowMoment: y
-        } = e, b = (0, o.bG)([u.A], () => u.A.useReducedMotion), [O, v] = (0, i.useState)("entry"), A = (0, i.useRef)(null), I = (0, i.useRef)(null), S = (0, i.useCallback)(() => {
+        } = e, b = (0, s.bG)([u.A], () => u.A.useReducedMotion), [O, v] = (0, i.useState)("entry"), A = (0, i.useRef)(null), I = (0, i.useRef)(null), S = (0, i.useCallback)(() => {
             if ("entry" === O && (v("idle"), null != A.current)) {
                 var e;
                 null == (e = A.current) || e.play()
@@ -45,19 +45,19 @@ let y = 1e3,
         let {
             mediaUrls: w,
             isSuccess: R
-        } = (0, _.A)(!b && a && C), P = (0, i.useRef)(null), [D, x] = (0, i.useState)(!1), [L, j] = (0, i.useState)(!1), [M, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(!1);
+        } = (0, _.A)(!b && a && C), P = (0, i.useRef)(null), [D, L] = (0, i.useState)(!1), [x, M] = (0, i.useState)(!1), [j, k] = (0, i.useState)("none"), [U, G] = (0, i.useState)(!1);
         if ((0, i.useEffect)(() => {
                 let e;
-                a && n && !U && "none" === M && (b || !R ? (k("static"), b || (G(!0), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = !1) : (k("animated"), j(!0), e = !0), c.h.dispatch({
+                a && n && !U && "none" === j && (b || !R ? (k("static"), b || (G(!0), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_ASSETS_NOT_LOADED_ON_CONFIRMATION)), e = !1) : (k("animated"), M(!0), e = !0), c.h.dispatch({
                     type: "WOW_MOMENT_CONFIRMATION_SET_IS_DISPLAYING_WOW_MOMENT_CONFIRMATION",
                     value: !0,
                     isAnimated: e
                 }), f.default.track(h.HAw.PREMIUM_BRAND_REFRESH_WOW_MOMENT_VIEWED, {
                     wow_moment_type: e ? "animated" : "static"
                 }))
-            }, [b, a, n, R, U, M]), (0, i.useEffect)(() => {
+            }, [b, a, n, R, U, j]), (0, i.useEffect)(() => {
                 function e() {
-                    x(!0), T()
+                    L(!0), T()
                 }
                 return p._.subscribe(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e), () => {
                     p._.unsubscribe(h.jej.WOW_MOMENT_CONFIRMATION_MODAL_CLOSED, e)
@@ -68,7 +68,7 @@ let y = 1e3,
                     value: !1,
                     isAnimated: !1
                 })
-            }, []), "animated" === M) return (0, r.jsxs)("div", {
+            }, []), "animated" === j) return (0, r.jsxs)("div", {
             children: [(0, r.jsxs)("div", {
                 className: m.j,
                 children: [(0, r.jsx)("div", {
@@ -78,7 +78,7 @@ let y = 1e3,
                         muted: !0,
                         autoPlay: !0,
                         onEnded: S,
-                        className: s()(m.Ki, "entry" === O ? m.RK : m.R),
+                        className: o()(m.Ki, "entry" === O ? m.RK : m.R),
                         children: (0, r.jsx)("source", {
                             src: w.modalGlowEntry
                         })
@@ -88,7 +88,7 @@ let y = 1e3,
                     playsInline: !0,
                     muted: !0,
                     loop: !0,
-                    className: s()(m.Ki, "idle" === O ? m.RK : m.R),
+                    className: o()(m.Ki, "idle" === O ? m.RK : m.R),
                     children: (0, r.jsx)("source", {
                         src: w.modalGlowIdle
                     })
@@ -96,7 +96,7 @@ let y = 1e3,
                     ref: I,
                     playsInline: !0,
                     muted: !0,
-                    className: s()(m.Ki, "exit" === O ? m.RK : m.R),
+                    className: o()(m.Ki, "exit" === O ? m.RK : m.R),
                     children: (0, r.jsx)("source", {
                         src: w.modalGlowExit
                     })
@@ -108,7 +108,7 @@ let y = 1e3,
                     ref: P,
                     dataBinding: {
                         ExitTrigger: D,
-                        EntryTrigger: L
+                        EntryTrigger: x
                     },
                     listenOnDocumentBody: !0
                 })
@@ -117,9 +117,9 @@ let y = 1e3,
                 children: t
             })]
         });
-        let V = !D;
-        return "static" === M ? (0, r.jsxs)(r.Fragment, {
-            children: [V && (0, r.jsxs)(r.Fragment, {
+        let F = !D;
+        return "static" === j ? (0, r.jsxs)(r.Fragment, {
+            children: [F && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("img", {
                     src: g.A,
                     alt: "",

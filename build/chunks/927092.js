@@ -4,13 +4,13 @@
 var r = n(557939),
     i = n(860511),
     a = n(607167),
-    s = n(274574),
-    o = "ArrayBuffer",
-    l = a[o];
+    o = n(274574),
+    s = "ArrayBuffer",
+    l = a[s];
 r({
     global: !0,
     constructor: !0,
-    forced: i[o] !== l
+    forced: i[s] !== l
 }, {
     ArrayBuffer: l
-}), s(o)
+}), o(s)

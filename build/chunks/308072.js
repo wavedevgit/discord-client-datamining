@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 308072, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -28,9 +28,9 @@ function g(e) {
     }), f = (0, o.bG)([d.A], () => {
         var e, n;
         return null != (e = null == (n = d.A.getDetectableGame(t)) ? void 0 : n.name) ? e : ""
-    }), b = i.useCallback(() => {
+    }), h = i.useCallback(() => {
         null == l || l(t)
-    }, [t, l]), h = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
+    }, [t, l]), b = i.useMemo(() => m ? null : null == p ? (0, r.jsx)("div", {
         className: u.gP,
         children: (0, r.jsx)(a._7Z, {
             size: "lg"
@@ -48,7 +48,7 @@ function g(e) {
         children: [(0, r.jsxs)(a.DUT, {
             "aria-disabled": g,
             tabIndex: g ? -1 : 0,
-            onClick: g ? void 0 : b,
+            onClick: g ? void 0 : h,
             className: s()(u.a8, {
                 [u.AL]: m,
                 [u.r9]: g
@@ -58,7 +58,7 @@ function g(e) {
                 children: (0, r.jsx)(a.P7L, {
                     checked: n
                 })
-            }), h]
+            }), b]
         }), (0, r.jsx)(a.Text, {
             className: u.mO,
             variant: "text-xs/medium",

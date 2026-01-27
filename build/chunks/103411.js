@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 103411, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    m: () => s
+    m: () => o
 });
 var r = n(311907),
     i = n(851746),
-    a = n(190187);
-let s = function() {
+    l = n(190187);
+let o = function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
-    return (0, a.i)(e), (0, r.bG)([i.A], () => i.A.getIsEligibleToSendReferrals())
+    return (0, l.i)(e), (0, r.bG)([i.A], () => i.A.getIsEligibleToSendReferrals())
 }

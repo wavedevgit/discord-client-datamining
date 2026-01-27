@@ -1,7 +1,7 @@
 /** Chunk was on 32660 **/
 /** chunk id: 772063, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    default: () => p
+    default: () => b
 });
 var n = r(627968);
 r(64700);
@@ -11,25 +11,29 @@ var c = r(311907),
     a = r(576705),
     l = r(957565),
     s = r(652215),
-    b = r(985018);
-let p = function(e) {
+    p = r(985018);
+let b = function(e) {
     var t;
     let {
-        guild: p,
+        guild: b,
         user: u,
         onSelect: d
-    } = e, O = null != (t = null == p ? void 0 : p.id) ? t : s.dJq, y = (0, c.bG)([a.A], () => null != p && a.A.canManageUser(s.xBc.BAN_MEMBERS, u, p), [p, u]);
+    } = e, y = null != (t = null == b ? void 0 : b.id) ? t : s.dJq, O = (0, c.bG)([a.A], () => null != b && a.A.canManageUser(s.xBc.BAN_MEMBERS, u, b), [b, u]);
     return (0, n.jsx)(o.W1t, {
-        "data-menu-all-icons": !0,
+        "data-menu-migrated": !0,
         navId: "member-application-context-menu",
         onClose: i.Z_,
-        "aria-label": b.intl.string(b.t.liqwPJ),
+        "aria-label": p.intl.string(p.t.liqwPJ),
         onSelect: d,
         children: (0, n.jsxs)(o.rXV, {
-            children: [y && (0, n.jsx)(o.Drp, {
+            children: [O && (0, n.jsx)(o.Drp, {
                 id: "ban",
-                label: b.intl.string(b.t["I+Cbum"]),
+                label: p.intl.string(p.t["I+Cbum"]),
                 icon: o.wI0,
+                leadingAccessory: {
+                    type: "icon",
+                    icon: o.wI0
+                },
                 color: "danger",
                 action: () => (0, o.mMO)(async () => {
                     let {
@@ -55,7 +59,7 @@ let p = function(e) {
                             }
                             return e
                         }({}, t), c = c = {
-                            guildId: O,
+                            guildId: y,
                             user: u
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
                             var r = Object.keys(e);
@@ -73,6 +77,10 @@ let p = function(e) {
                 id: "copyUserId",
                 label: "Copy User ID",
                 icon: o.L9S,
+                leadingAccessory: {
+                    type: "icon",
+                    icon: o.L9S
+                },
                 action: () => (0, l.C)(u.id)
             }, "copyUserId")]
         })

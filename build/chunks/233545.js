@@ -7,15 +7,15 @@ n.d(t, {
     YW: () => c,
     _w: () => p,
     c4: () => u,
-    ho: () => o,
+    ho: () => s,
     z0: () => f
 });
 var r = n(73153),
     i = n(77729),
     a = n(698723),
-    s = n(412780);
+    o = n(412780);
 
-function o(e) {
+function s(e) {
     r.h.dispatch({
         type: "RTC_DEBUG_MODAL_OPEN",
         section: e
@@ -44,7 +44,7 @@ function u(e) {
 }
 
 function d(e) {
-    (0, a.A)("connection_replay_log_enabled", e, s.Ay.shouldRecordNextConnection()), r.h.dispatch({
+    (0, a.A)("connection_replay_log_enabled", e, o.Ay.shouldRecordNextConnection()), r.h.dispatch({
         type: "RTC_DEBUG_SET_RECORDING_FLAG",
         value: e
     })

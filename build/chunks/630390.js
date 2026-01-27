@@ -2,12 +2,12 @@
 /** chunk id: 630390, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(311907),
     i = n(574520);
 let a = [];
 
-function s(e) {
+function o(e) {
     return (0, r.yK)([i.A], () => null == e ? a : e.filter(i.A.canRenderContent), [e])
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(975807),
-    o = n(975571),
+    o = n(975807),
+    s = n(975571),
     l = n(500049),
     c = n(902527),
     u = n(652215),
@@ -19,7 +19,7 @@ function p(e) {
     let {
         padding: t = !1
     } = e, n = i.useCallback(() => {
-        (0, s.A)(o.A.getAppsSupportURL(u.MVz.APPS_LEARN_MORE))
+        (0, o.A)(s.A.getAppsSupportURL(u.MVz.APPS_LEARN_MORE))
     }, []), {
         trackSectionImpressionRef: p
     } = (0, c.A)({

@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 976270, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => R
@@ -10,27 +10,27 @@ var i = n(397927),
     s = n(793574),
     o = n(688810),
     a = n(915089),
-    c = n(562153),
-    d = n(183555),
+    d = n(562153),
+    c = n(183555),
     u = n(950191),
     p = n(722868),
-    m = n(716804),
-    f = n(718019),
+    f = n(716804),
+    m = n(718019),
     A = n(31432),
     x = n(915614),
-    j = n(559506),
-    h = n(946356),
-    g = n(810396),
-    v = n(570314),
-    b = n(490752),
+    g = n(559506),
+    j = n(946356),
+    h = n(810396),
+    b = n(570314),
+    v = n(490752),
     I = n(571077),
     y = n(587168),
     _ = n(982985),
     O = n(159218),
     N = n(240783),
     E = n(371843),
-    T = n(518477),
-    P = n(652215),
+    P = n(518477),
+    T = n(652215),
     C = n(996988),
     S = n(985018),
     L = n(763563);
@@ -51,9 +51,9 @@ function R(e) {
         onClose: B,
         sourceAnalyticsLocations: W = [],
         showGuildProfile: K
-    } = e, z = R === P.ME ? void 0 : R, H = (0, u.Ay)(t.id, K ? z : void 0), Y = c.Ay.getName(z, D, t), J = (0, a.GV)(), {
+    } = e, z = R === T.ME ? void 0 : R, H = (0, u.Ay)(t.id, K ? z : void 0), Y = d.Ay.getName(z, D, t), J = (0, a.GV)(), {
         analyticsLocations: X
-    } = (0, o.Ay)([...W, s.A.USER_PROFILE_MODAL]), Z = (0, d.pb)({
+    } = (0, o.Ay)([...W, s.A.USER_PROFILE_MODAL]), Q = (0, c.pb)({
         layout: "MODAL",
         userId: t.id,
         sourceSessionId: G,
@@ -61,7 +61,7 @@ function R(e) {
         channelId: D,
         messageId: w,
         roleId: M
-    }), Q = (0, E.A)(t), $ = (0, p.A)({
+    }), $ = (0, E.A)(t), Z = (0, p.A)({
         user: t,
         guildId: z,
         channelId: D,
@@ -70,13 +70,13 @@ function R(e) {
     });
     return (0, l.jsx)(o.f5, {
         value: X,
-        children: (0, l.jsx)(d.of, {
-            value: Z,
+        children: (0, l.jsx)(c.of, {
+            value: Q,
             openedAt: V,
             fetchStartedAt: null == H ? void 0 : H.fetchStartedAt,
             fetchEndedAt: null == H ? void 0 : H.fetchEndedAt,
             isLoaded: null == H ? void 0 : H.isLoaded,
-            children: (0, l.jsx)(m.N, {
+            children: (0, l.jsx)(f.N, {
                 value: k,
                 children: (0, l.jsx)(i.EOs, {
                     "data-migration-pending": !0,
@@ -94,15 +94,15 @@ function R(e) {
                                 })
                             })
                         }),
-                        children: (0, l.jsxs)(h.A, {
+                        children: (0, l.jsxs)(j.A, {
                             user: t,
                             displayProfile: H,
                             themeType: C.d.MODAL,
                             children: [(0, l.jsx)(y.A, {
-                                children: (0, l.jsx)(b.A, {
+                                children: (0, l.jsx)(v.A, {
                                     user: t,
                                     guildId: z,
-                                    viewProfileItem: $
+                                    viewProfileItem: Z
                                 })
                             }), (0, l.jsxs)("div", {
                                 children: [(0, l.jsx)(x.A, {
@@ -111,7 +111,7 @@ function R(e) {
                                     themeType: C.d.MODAL
                                 }), (0, l.jsxs)("div", {
                                     className: L.El,
-                                    children: [(0, l.jsx)(f.A, {
+                                    children: [(0, l.jsx)(m.A, {
                                         user: t,
                                         displayProfile: H,
                                         guildId: z,
@@ -142,17 +142,17 @@ function R(e) {
                                         }), (0, l.jsx)(I.A, {
                                             user: t,
                                             guildId: z
-                                        }), (0, l.jsx)(v.A, {
+                                        }), (0, l.jsx)(b.A, {
                                             user: t
                                         })]
                                     })]
                                 })]
-                            }), (0, l.jsx)(j.A, {
+                            }), (0, l.jsx)(g.A, {
                                 userId: t.id,
                                 className: L.Fd
                             }), (0, l.jsxs)("div", {
                                 className: L.rf,
-                                children: [(0, l.jsx)(g.A, {
+                                children: [(0, l.jsx)(h.A, {
                                     className: L.Xh,
                                     user: t,
                                     guildId: z,
@@ -169,8 +169,8 @@ function R(e) {
                                     currentUser: n,
                                     displayProfile: H,
                                     guildId: z,
-                                    items: Q,
-                                    initialSection: null != U ? U : T.RP.BOT_INFO,
+                                    items: $,
+                                    initialSection: null != U ? U : P.RP.BOT_INFO,
                                     onClose: B
                                 })]
                             })]

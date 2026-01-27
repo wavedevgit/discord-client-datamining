@@ -8,7 +8,7 @@ var r = n(439372),
     i = n(287809),
     a = n(38050);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,14 +16,14 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends r.A {
+class s extends r.A {
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             HAVEN_DISCONNECT: e => this.handleHavenDisconnect(e)
-        }), s(this, "handleHavenDisconnect", e => {
+        }), o(this, "handleHavenDisconnect", e => {
             let t = i.default.getCurrentUser();
             e.userId === (null == t ? void 0 : t.id) && a.n.getState().resetPlayback()
         })
     }
 }
-let l = new o
+let l = new s

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(572009),
-    o = n(71393),
+    o = n(572009),
+    s = n(71393),
     l = n(287809),
     c = n(688151),
     u = n(115093);
@@ -23,11 +23,11 @@ function d(e, t, n) {
 let f = "production" === u.B.DEVELOPMENT || window.GLOBAL_ENV.RELEASE_CHANNEL === u.B.STAGING;
 
 function p() {
-    f = (0, s.I9)(l.default.getCurrentUser())
+    f = (0, o.I9)(l.default.getCurrentUser())
 }
 class _ extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(l.default, o.A), Object.defineProperties(this, {
+        this.waitFor(l.default, s.A), Object.defineProperties(this, {
             isDeveloper: {
                 configurable: !1,
                 get: () => f,

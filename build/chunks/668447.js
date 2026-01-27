@@ -4,7 +4,7 @@
 n.d(t, {
     Ay: () => f,
     Ut: () => d,
-    rx: () => s
+    rx: () => o
 });
 var r = n(64700),
     i = function() {
@@ -63,12 +63,12 @@ i.prototype.add = function(e, t) {
         return n(t, e.locks)
     })
 };
-var s = new i,
-    o = 0;
+var o = new i,
+    s = 0;
 
 function l(e) {
     (0, r.useEffect)(function() {
-        return s.subscribe(e)
+        return o.subscribe(e)
     }, [e])
 }
 
@@ -85,15 +85,15 @@ function c(e, t) {
 
 function u(e) {
     var t = (0, r.useState)(function() {
-            return e || "lock-" + o++
+            return e || "lock-" + s++
         })[0],
         n = (0, r.useRef)(!1);
     return (0, r.useLayoutEffect)(function() {
-        return s.add(t, function(e) {
+        return o.add(t, function(e) {
                 return n.current = e
             }),
             function() {
-                return s.remove(t)
+                return o.remove(t)
             }
     }, [t]), n
 }
@@ -114,14 +114,14 @@ function f(e, t) {
     void 0 === t && (t = {});
     var n = t.returnRef,
         i = t.disableReturnRef,
-        s = t.attachTo;
-    void 0 === s && (s = document);
-    var o = t.disable,
-        l = s instanceof HTMLElement ? s.ownerDocument : s,
+        o = t.attachTo;
+    void 0 === o && (o = document);
+    var s = t.disable,
+        l = o instanceof HTMLElement ? o.ownerDocument : o,
         d = u();
     (0, r.useEffect)(function() {
-        o && (d.current = !1)
-    }, [o, d]), (0, r.useLayoutEffect)(function() {
+        s && (d.current = !1)
+    }, [s, d]), (0, r.useLayoutEffect)(function() {
         var t = e.current;
 
         function n(t) {
@@ -144,17 +144,17 @@ function f(e, t) {
                 }
             }
         }
-        return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || a(t, l.activeElement, !0), s.addEventListener("focusin", n, {
+        return null == t || null == l.activeElement || t.contains(l.activeElement) || null != t.querySelector("[autofocus]") || a(t, l.activeElement, !0), o.addEventListener("focusin", n, {
                 capture: !0
-            }), s.addEventListener("focusout", r, {
+            }), o.addEventListener("focusout", r, {
                 capture: !0
             }),
             function() {
-                s.removeEventListener("focusin", n, {
+                o.removeEventListener("focusin", n, {
                     capture: !0
-                }), s.removeEventListener("focusout", r, {
+                }), o.removeEventListener("focusout", r, {
                     capture: !0
                 })
             }
-    }, [s, l, e, d]), c(n, i)
+    }, [o, l, e, d]), c(n, i)
 }

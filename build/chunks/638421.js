@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(942381),
     a = n(311907),
-    s = n(11057),
-    o = n(721668),
+    o = n(11057),
+    s = n(721668),
     l = n(773669),
     c = n(985018),
     u = n(230661);
@@ -16,8 +16,8 @@ var r = n(627968),
 function d(e) {
     let {
         children: t
-    } = e, n = (0, a.bG)([l.default], () => l.default.locale), [d, f] = (0, s.hs)(e => [e.isLoading, e.error], i.x);
-    return null != f ? (0, r.jsx)(o.A, {
+    } = e, n = (0, a.bG)([l.default], () => l.default.locale), [d, f] = (0, o.hs)(e => [e.isLoading, e.error], i.x);
+    return null != f ? (0, r.jsx)(s.A, {
         title: c.intl.formatToPlainString(c.t["7basa2"], {
             locale: n
         }),

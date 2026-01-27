@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(418781),
     i = n.n(r),
     a = n(323125),
-    s = n(901123),
-    o = n(746080);
+    o = n(901123),
+    s = n(746080);
 
 function l(e, t) {
     let {
@@ -21,7 +21,7 @@ let c = {
         let {
             name: e = "guildId",
             optional: t = !1
-        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = s.Cr.map(i()).join("|");
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = o.Cr.map(i()).join("|");
         return l(e, "".concat(n, "|\\d+"), {
             optional: t
         })
@@ -30,7 +30,7 @@ let c = {
         let {
             name: e = "channelId",
             optional: t = !1
-        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [...o.qW].map(i()).join("|");
+        } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {}, n = [...s.qW].map(i()).join("|");
         return l(e, "".concat(n, "|\\d+"), {
             optional: t
         })

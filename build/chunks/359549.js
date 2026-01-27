@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(665260),
     a = n(554146),
-    s = n(522305),
-    o = n(735991),
+    o = n(522305),
+    s = n(735991),
     l = n(627363),
     c = n(826673),
     u = n(438652),
@@ -54,7 +54,7 @@ function y(e) {
     return null != e && ((null == e ? void 0 : e.embeddedActivityConfig) == null || !!g({
         countryCode: null == t ? void 0 : t.alpha2,
         activity: e.embeddedActivityConfig
-    })) && (!!m(e) || null != r && null != n && !!(0, o.Ag)(n) && ((null == n ? void 0 : n.embeddedActivityConfig) == null || !!g({
+    })) && (!!m(e) || null != r && null != n && !!(0, s.Ag)(n) && ((null == n ? void 0 : n.embeddedActivityConfig) == null || !!g({
         countryCode: null == t ? void 0 : t.alpha2,
         activity: n.embeddedActivityConfig
     })))
@@ -65,7 +65,7 @@ function b(e) {
         application: t,
         analyticsLocations: n
     } = e, i = y(t), {
-        bot: o
+        bot: s
     } = null != t ? t : {
         bot: null
     }, l = E(t), {
@@ -82,14 +82,14 @@ function b(e) {
                 dismissAction: _.i.TAKE_ACTION
             })
         };
-        return m(t) && null != o ? () => {
+        return m(t) && null != s ? () => {
             e(), d.default.track(p.HAw.CLOUD_PLAY_CTA_CLICKED, {
                 source_application_id: t.id,
                 launching_application_id: t.id,
                 location_stack: n
-            }), (0, s.Q)({
+            }), (0, o.Q)({
                 appId: t.id,
-                botId: o.id,
+                botId: s.id,
                 analyticsLocations: null != n ? n : []
             })
         } : null != f && null != h ? () => {
@@ -97,11 +97,11 @@ function b(e) {
                 source_application_id: t.id,
                 launching_application_id: f,
                 location_stack: n
-            }), (0, s.Q)({
+            }), (0, o.Q)({
                 appId: f,
                 botId: h,
                 analyticsLocations: null != n ? n : []
             })
         } : void 0
-    }, [i, t, o, f, h, n])
+    }, [i, t, s, f, h, n])
 }

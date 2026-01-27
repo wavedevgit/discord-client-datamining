@@ -1,70 +1,60 @@
-/** Chunk was on web.js **/
-/** chunk id: 86889, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    D: () => p
+/** Chunk was on 70104 **/
+/** chunk id: 86889, original params: t,e,r (module,exports,require) **/
+r.d(e, {
+    D: () => c
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(217905),
-    s = n(688810),
-    o = n(954571),
-    l = n(652215);
+var n = r(627968),
+    l = r(64700),
+    s = r(217905),
+    i = r(688810),
+    a = r(954571),
+    o = r(652215);
 
-function c(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function u(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            c(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function d(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = f(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function f(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-
-function p(e) {
+function c(t) {
     let {
-        appId: t,
-        skuId: n
-    } = e, c = d(e, ["appId", "skuId"]), {
-        analyticsLocations: f
-    } = (0, s.Ay)();
-    return i.useEffect(() => {
-        o.default.track(l.HAw.VIEW_PREMIUM_APP_EXPANDED_PRODUCT_CARD, {
-            application_id: t,
-            sku_id: n,
-            location_stack: f
+        appId: e,
+        skuId: r
+    } = t, c = function(t, e) {
+        if (null == t) return {};
+        var r, n, l, s = {};
+        if ("u" > typeof Reflect && Reflect.ownKeys) {
+            for (l = 0, r = Reflect.ownKeys(t); l < r.length; l++) n = r[l], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (s[n] = t[n]);
+            return s
+        }
+        if (s = function(t, e) {
+                if (null == t) return {};
+                var r, n, l = {},
+                    s = Object.getOwnPropertyNames(t);
+                for (n = 0; n < s.length; n++) r = s[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (l[r] = t[r]);
+                return l
+            }(t, e), Object.getOwnPropertySymbols)
+            for (l = 0, r = Object.getOwnPropertySymbols(t); l < r.length; l++) n = r[l], !(e.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(t, n) && (s[n] = t[n]);
+        return s
+    }(t, ["appId", "skuId"]), {
+        analyticsLocations: d
+    } = (0, i.Ay)();
+    return l.useEffect(() => {
+        a.default.track(o.HAw.VIEW_PREMIUM_APP_EXPANDED_PRODUCT_CARD, {
+            application_id: e,
+            sku_id: r,
+            location_stack: d
         })
-    }, [f, t, n]), (0, r.jsx)(a.F, u({}, c))
+    }, [d, e, r]), (0, n.jsx)(s.F, function(t) {
+        for (var e = 1; e < arguments.length; e++) {
+            var r = null != arguments[e] ? arguments[e] : {},
+                n = Object.keys(r);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
+                return Object.getOwnPropertyDescriptor(r, t).enumerable
+            }))), n.forEach(function(e) {
+                var n;
+                n = r[e], e in t ? Object.defineProperty(t, e, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : t[e] = n
+            })
+        }
+        return t
+    }({}, c))
 }

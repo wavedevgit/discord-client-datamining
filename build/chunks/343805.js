@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(652896),
     i = n(616356),
     a = n(162605),
-    s = n(487329),
-    o = n(601900),
+    o = n(487329),
+    s = n(601900),
     l = n(548370);
 
 function c(e, t, n) {
@@ -42,8 +42,8 @@ let d = 10,
             if (null == n) return null;
             let c = (0, l.xA)(n, t.ownerId);
             return null == c ? null : 100 * c.short.packetLossRate > d || 100 * c.long.packetLossRate > d ? [u({
-                type: s.iy.STREAM_SEND_HIGH_PACKET_LOSS
-            }, (0, o.id)((0, r._z)(t)))] : void 0
+                type: o.iy.STREAM_SEND_HIGH_PACKET_LOSS
+            }, (0, s.id)((0, r._z)(t)))] : void 0
         },
         makeErrorContextKey: e => "".concat(e.streamKey, ":").concat(e.mediaSessionId)
     }

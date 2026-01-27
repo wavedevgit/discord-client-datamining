@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(111956),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(111956),
+    l = n.n(s),
     c = n(835245),
     u = n(311907),
     d = n(52133),
@@ -113,7 +113,7 @@ function S(e) {
         observe: t = !0,
         className: n,
         style: a,
-        children: o
+        children: s
     } = e, l = i.useContext(I), c = (0, u.bG)([g.A], () => g.A.hasRenderDebugMode(m.x7.ClickZones)), d = (0, u.bG)([_.default], () => _.default.disableClickableRegions), [{
         refHandler: f,
         setObserve: p
@@ -133,8 +133,8 @@ function S(e) {
     }, [t, p, d]), (0, r.jsx)("div", {
         ref: f,
         style: a,
-        className: s()(n, b.v, c && b.p),
+        className: o()(n, b.v, c && b.p),
         "data-click-zone": !0,
-        children: o
+        children: s
     })
 }

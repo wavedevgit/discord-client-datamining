@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(788868),
     i = n(714206),
     a = n(151818),
-    s = n(153578),
-    o = n(971180),
+    o = n(153578),
+    s = n(971180),
     l = n(104876),
     c = n(803630),
     u = n(797898),
@@ -32,7 +32,7 @@ let b = {
             ambient: p.A
         },
         [r.Ac.PREMIUM_TENURE_6_MONTH]: {
-            standard: o,
+            standard: s,
             ambient: _.A
         },
         [r.Ac.PREMIUM_TENURE_12_MONTH]: {
@@ -44,7 +44,7 @@ let b = {
             ambient: m.A
         },
         [r.Ac.PREMIUM_TENURE_36_MONTH]: {
-            standard: s,
+            standard: o,
             ambient: g.A
         },
         [r.Ac.PREMIUM_TENURE_60_MONTH]: {

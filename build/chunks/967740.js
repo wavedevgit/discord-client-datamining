@@ -1,7 +1,7 @@
 /** Chunk was on 92837 **/
 /** chunk id: 967740, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => c
+    A: () => a
 });
 var n = r(627968);
 r(64700);
@@ -9,16 +9,16 @@ var l = r(201275),
     i = r(657048),
     o = r(63104);
 
-function c(e) {
+function a(e) {
     let {
         guildId: t,
         role: r,
-        size: c,
-        className: a
+        size: a,
+        className: c
     } = e, s = (0, l.$7)({
         guildId: t,
         roleId: r.id,
-        size: c
+        size: a
     });
     return null != s ? (0, n.jsx)(i.A, function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -38,10 +38,10 @@ function c(e) {
         }
         return e
     }({
-        className: a
+        className: c
     }, s)) : (0, n.jsx)(o.A, {
         color: r.colorString,
-        className: a,
-        size: c
+        className: c,
+        size: a
     })
 }

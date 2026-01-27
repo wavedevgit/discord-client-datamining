@@ -2,7 +2,7 @@
 /** chunk id: 513391, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(321073), n(142703), n(667532);
 var r = n(677623),
     i = n.n(r);
@@ -15,8 +15,8 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = new(n(626584)).A("Queue");
-class o {
+let o = new(n(626584)).A("Queue");
+class s {
     enqueue(e, t, n) {
         this.queue.push({
             message: e,
@@ -54,7 +54,7 @@ class o {
             };
         this.logger.log("Draining message from queue LogId:".concat(r, " QueueLength: ").concat(this.queue.length)), this.drain(t, i)
     }
-    constructor(e = s, t = 100) {
+    constructor(e = o, t = 100) {
         a(this, "logger", void 0), a(this, "defaultRetryAfter", void 0), a(this, "queue", void 0), a(this, "timeout", void 0), a(this, "draining", void 0), this.logger = e, this.defaultRetryAfter = t, this.queue = new(i()), this.timeout = null, this.draining = !1
     }
 }

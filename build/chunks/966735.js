@@ -1,16 +1,15 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 966735, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(896498),
-    l = n(714979);
+    a = n(896498),
+    o = n(714979);
 let c = e => {
     let {
         icon: t,
@@ -19,11 +18,11 @@ let c = e => {
         description: c
     } = e;
     return (0, r.jsxs)("div", {
-        className: a()(l.kL, o.a),
+        className: l()(o.kL, a.a),
         children: [(0, r.jsx)("div", {
-            className: l.n1,
+            className: o.n1,
             children: (0, r.jsx)(t, {
-                className: a()(l.Kk, n),
+                className: l()(o.Kk, n),
                 size: "custom",
                 width: 20,
                 height: 20,
@@ -32,7 +31,7 @@ let c = e => {
         }), (0, r.jsxs)("div", {
             children: [(0, r.jsx)(s.Heading, {
                 variant: "heading-md/bold",
-                className: l.wx,
+                className: o.wx,
                 children: (0, r.jsx)(s.Fmo, {
                     children: i
                 })

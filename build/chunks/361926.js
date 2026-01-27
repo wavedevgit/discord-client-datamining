@@ -11,14 +11,14 @@ n.d(t, {
 var r = n(64700),
     i = n(485845),
     a = n(155718),
-    s = n(734057),
-    o = n(577700),
+    o = n(734057),
+    s = n(577700),
     l = n(264322),
     c = n(210978);
 let u = "no primary app command for application",
     d = [a.kc.PRIMARY_ENTRY_POINT];
 async function f(e, t) {
-    let n, r = s.A.getChannel(e);
+    let n, r = o.A.getChannel(e);
     if (null != r && null == (n = p({
             channel: r,
             type: "channel"
@@ -48,13 +48,13 @@ function _(e, t) {
     let {
         commands: n,
         loading: i
-    } = h(e, t), a = n[0], s = null != a;
+    } = h(e, t), a = n[0], o = null != a;
     return r.useEffect(() => {
-        s || i || (0, o.$)({
+        o || i || (0, s.$)({
             type: "application",
             applicationId: t
         })
-    }, [t, s, i]), a
+    }, [t, o, i]), a
 }
 
 function h(e, t) {

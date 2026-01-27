@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(889137),
     a = n(575593),
-    s = n(397927),
-    o = n(954921),
+    o = n(397927),
+    s = n(954921),
     l = n(278539),
     c = n(674658),
     u = n(245068),
@@ -63,7 +63,7 @@ function S(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let T = m.Ay.getEnableHardwareAcceleration() ? s.JsQ : s.euF;
+let T = m.Ay.getEnableHardwareAcceleration() ? o.JsQ : o.euF;
 
 function C(e) {
     let {
@@ -74,7 +74,7 @@ function C(e) {
         avatarPlaceholderSrc: a
     } = (0, l.A)({
         avatarDecorationOverride: t,
-        size: (0, o.Te)(s._3J.SIZE_152)
+        size: (0, s.Te)(o._3J.SIZE_152)
     });
     return (0, r.jsx)("div", {
         className: b.rk,
@@ -82,7 +82,7 @@ function C(e) {
             avatarDecoration: n,
             src: a,
             className: b.my,
-            size: s._3J.SIZE_152,
+            size: o._3J.SIZE_152,
             "aria-label": y.intl.string(y.t.lqaIxI)
         }))
     })
@@ -126,16 +126,16 @@ let R = e => {
     } = e, {
         selectedGiftStyle: n
     } = (0, g.Pv)(), {
-        product: s
-    } = (0, c.q)(null == t ? void 0 : t.id), o = null == s ? void 0 : s.items[0];
-    if ((null == s ? void 0 : s.type) === a.R.BUNDLE) return (0, r.jsx)("div", {
+        product: o
+    } = (0, c.q)(null == t ? void 0 : t.id), s = null == o ? void 0 : o.items[0];
+    if ((null == o ? void 0 : o.type) === a.R.BUNDLE) return (0, r.jsx)("div", {
         className: b.ww,
         children: (0, r.jsx)(u.X, {
-            product: s,
+            product: o,
             isHighlighted: !1
         })
     });
-    let l = (0, i.YW)(o).with({
+    let l = (0, i.YW)(s).with({
         type: a.R.AVATAR_DECORATION
     }, e => (0, r.jsx)(C, {
         avatarDecoration: e

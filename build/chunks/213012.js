@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 213012, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    I: () => s
+    I: () => i
 });
 var r = n(562465),
-    i = n(73153),
+    l = n(73153),
     a = n(652215);
-let s = () => r.Bo.get({
+let i = () => r.Bo.get({
     url: a.Rsh.GUILD_AFFINITIES,
     oldFormErrors: !0,
     rejectWithError: !1
@@ -17,12 +16,12 @@ let s = () => r.Bo.get({
             guild_affinities: t
         }
     } = e;
-    i.h.dispatch({
+    l.h.dispatch({
         type: "LOAD_GUILD_AFFINITIES_SUCCESS",
         guildAffinities: t
     })
 }, () => {
-    i.h.dispatch({
+    l.h.dispatch({
         type: "LOAD_GUILD_AFFINITIES_FAILURE"
     })
 })

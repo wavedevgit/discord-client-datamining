@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(136193),
     i = n(342876),
     a = n(64700),
-    s = n(555578);
-let o = {
+    o = n(555578);
+let s = {
     ascending: "descending",
     descending: "ascending"
 };
@@ -25,7 +25,7 @@ function l(e) {
         showDragButtons: d,
         selectionMode: c,
         columns: []
-    }), [e.children, u, c, d]), p = (0, s.G)(e, (0, a.useCallback)(e => new(0, r.L)(e, null, f), [f]), f), {
+    }), [e.children, u, c, d]), p = (0, o.G)(e, (0, a.useCallback)(e => new(0, r.L)(e, null, f), [f]), f), {
         disabledKeys: _,
         selectionManager: h
     } = (0, i.b)({
@@ -45,7 +45,7 @@ function l(e) {
             var r, i;
             null == (i = e.onSortChange) || i.call(e, {
                 column: t,
-                direction: null != n ? n : (null == (r = e.sortDescriptor) ? void 0 : r.column) === t ? o[e.sortDescriptor.direction] : "ascending"
+                direction: null != n ? n : (null == (r = e.sortDescriptor) ? void 0 : r.column) === t ? s[e.sortDescriptor.direction] : "ascending"
             })
         }
     }

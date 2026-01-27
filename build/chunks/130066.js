@@ -1,77 +1,76 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 130066, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => D
+    A: () => G
 });
-var r = n(627968),
-    i = n(311907),
-    a = n(195043),
-    s = n(628965),
-    o = n(740625),
-    l = n(524738),
+var i = n(627968),
+    s = n(311907),
+    l = n(195043),
+    r = n(628965),
+    a = n(740625),
+    o = n(524738),
     c = n(378631),
-    u = n(962789),
-    d = n(476009),
-    f = n(585052),
-    p = n(831320),
-    _ = n(965563),
-    h = n(320134),
-    m = n(604151),
-    g = n(638130),
-    E = n(389242),
-    y = n(772538),
-    b = n(61610),
-    O = n(751461),
-    v = n(638324),
-    A = n(428854),
-    I = n(531525),
-    S = n(190363),
-    T = n(652215),
-    C = n(985018);
-let N = () => (0, r.jsxs)(h.A, {
-        title: C.intl.string(C.t.xVRG4P),
-        webSetting: I.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
-        children: [(0, r.jsx)(g.f, {}), (0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(c.A, {}), (0, r.jsx)(E.A, {})]
+    d = n(962789),
+    u = n(476009),
+    g = n(585052),
+    h = n(831320),
+    x = n(965563),
+    p = n(320134),
+    A = n(604151),
+    m = n(638130),
+    j = n(389242),
+    b = n(772538),
+    O = n(61610),
+    S = n(751461),
+    E = n(638324),
+    f = n(428854),
+    v = n(531525),
+    T = n(190363),
+    C = n(652215),
+    y = n(985018);
+let N = () => (0, i.jsxs)(p.A, {
+        title: y.intl.string(y.t.xVRG4P),
+        webSetting: v.H.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
+        children: [(0, i.jsx)(m.f, {}), (0, i.jsx)(g.A, {}), (0, i.jsx)(u.A, {}), (0, i.jsx)(c.A, {}), (0, i.jsx)(j.A, {})]
     }),
-    w = () => (0, r.jsxs)(h.A, {
-        title: C.intl.string(C.t["y62Z/d"]),
-        webSetting: I.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
-        children: [(0, r.jsx)(a.x, {
-            setting: I.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
-            children: (0, r.jsx)(_.A, {})
-        }), (0, r.jsx)(O.A, {}), (0, r.jsx)(v.A, {}), (0, r.jsx)(b.A, {}), (0, r.jsx)(y.A, {})]
+    I = () => (0, i.jsxs)(p.A, {
+        title: y.intl.string(y.t["y62Z/d"]),
+        webSetting: v.H.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
+        children: [(0, i.jsx)(l.x, {
+            setting: v.H.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
+            children: (0, i.jsx)(x.A, {})
+        }), (0, i.jsx)(S.A, {}), (0, i.jsx)(E.A, {}), (0, i.jsx)(O.A, {}), (0, i.jsx)(b.A, {})]
     }),
-    R = () => (0, r.jsxs)(h.A, {
-        title: C.intl.string(C.t["1Qn8iV"]),
-        webSetting: I.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
-        children: [(0, r.jsx)(p.A, {}), (0, r.jsx)(m.Ay, {})]
+    _ = () => (0, i.jsxs)(p.A, {
+        title: y.intl.string(y.t["1Qn8iV"]),
+        webSetting: v.H.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
+        children: [(0, i.jsx)(h.A, {}), (0, i.jsx)(A.Ay, {})]
     }),
-    P = () => (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(N, {}), (0, r.jsx)(w, {}), (0, r.jsx)(R, {})]
+    P = () => (0, i.jsxs)(i.Fragment, {
+        children: [(0, i.jsx)(N, {}), (0, i.jsx)(I, {}), (0, i.jsx)(_, {})]
     });
 
-function D() {
-    let e = (0, i.bG)([s.A], () => s.A.getSubsection()),
+function G() {
+    let e = (0, s.bG)([r.A], () => r.A.getSubsection()),
         t = [{
-            title: C.intl.string(C.t["/7xJCF"]),
+            title: y.intl.string(y.t["/7xJCF"]),
             component: P,
-            setting: I.H.CONTENT_SOCIAL_DISCORD_TAB
+            setting: v.H.CONTENT_SOCIAL_DISCORD_TAB
         }, {
-            title: C.intl.string(C.t.YpCiMt),
-            component: u.A,
-            setting: I.H.CONTENT_SOCIAL_CONNECTED_GAMES
+            title: y.intl.string(y.t.YpCiMt),
+            component: d.A,
+            setting: v.H.CONTENT_SOCIAL_CONNECTED_GAMES
         }];
-    return (0, r.jsx)(o.R, {
-        header: C.intl.string(C.t["+o1pDZ"]),
-        notice: (0, r.jsx)(A.A, {
-            page: A.R.CONTENT_AND_SOCIAL
+    return (0, i.jsx)(a.R, {
+        header: y.intl.string(y.t["+o1pDZ"]),
+        notice: (0, i.jsx)(f.A, {
+            page: f.R.CONTENT_AND_SOCIAL
         }),
-        children: (0, r.jsx)(l.A, {
-            parentSetting: I.H.CONTENT_SOCIAL,
-            settingsSection: T.nc_.CONTENT_AND_SOCIAL,
+        children: (0, i.jsx)(o.A, {
+            parentSetting: v.H.CONTENT_SOCIAL,
+            settingsSection: C.nc_.CONTENT_AND_SOCIAL,
             tabs: t,
-            defaultTabIndex: e === S.k ? 1 : void 0
+            defaultTabIndex: e === T.k ? 1 : void 0
         })
     })
 }

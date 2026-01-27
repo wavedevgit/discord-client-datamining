@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(854627),
     u = n(560138),
@@ -46,7 +46,7 @@ function m(e) {
         textColor: a,
         isApplicationHome: c,
         enablePremiumBrandRefresh: _
-    } = e, h = (0, o.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
+    } = e, h = (0, s.bG)([u.A], () => u.A.affinities.slice(0, 3).reverse()), m = h.map((e, t) => (0, r.jsx)(g, {
         affinity: e,
         applyMask: t !== h.length - 1,
         size: _ ? d._3.SIZE_24 : d._3.SIZE_32
@@ -76,7 +76,7 @@ function m(e) {
         })
     }
     return (0, r.jsxs)("div", {
-        className: s()(_ ? p.bD : p.kL, n, {
+        className: o()(_ ? p.bD : p.kL, n, {
             [p.gr]: !_ && c
         }),
         children: [(0, r.jsx)("div", {
@@ -96,18 +96,18 @@ function g(e) {
         size: i
     } = e, {
         avatarSrc: a,
-        eventHandlers: o
+        eventHandlers: s
     } = (0, c.A)({
         userId: null == t ? void 0 : t.id,
         size: i,
         animateOnHover: !0
     });
     return (0, r.jsx)(l.euF, h({
-        className: s()(p.Kk, {
+        className: o()(p.Kk, {
             [p.dK]: n
         }),
         src: a,
         "aria-label": t.username,
         size: i
-    }, o))
+    }, s))
 }

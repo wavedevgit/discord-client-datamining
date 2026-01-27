@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(621466),
     a = n(451988),
-    s = n(775602);
-let o = 0;
+    o = n(775602);
+let s = 0;
 
 function l(e) {
     let {
@@ -33,7 +33,7 @@ function l(e) {
                 let e = h.current;
                 if ((0, i.vq)(e, HTMLElement) && e.offsetWidth >= e.scrollWidth) return
             }
-            let e = null != l ? l : o,
+            let e = null != l ? l : s,
                 t = E.current;
             null != t && t.start(e, () => {
                 g(!0), null == c || c()
@@ -50,7 +50,7 @@ function l(e) {
             null == h.current && (h.current = e.currentTarget), y.current = !1, v()
         }, [v, h]),
         T = r.useCallback(e => {
-            s.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), y.current = !1, v())
+            o.A.keyboardModeEnabled && (null == h.current && (h.current = e.currentTarget), y.current = !1, v())
         }, [v, h]),
         C = r.useCallback(() => {
             var e;

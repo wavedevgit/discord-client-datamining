@@ -1,20 +1,19 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 380098, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 }), n(228524), n(938796);
 var r = n(122817),
     i = n(665260),
-    a = n(315069),
+    l = n(315069),
     s = n(557009),
-    o = n(202613),
-    l = n(731935),
+    a = n(202613),
+    o = n(731935),
     c = n(272207),
-    u = n(652215),
-    d = n(788868);
+    d = n(652215),
+    u = n(788868);
 
-function f(e, t, n) {
+function _(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,10 +21,10 @@ function f(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class p extends a.A {
+class p extends l.A {
     static createFromServer(e) {
-        let t = null != e.payment_source ? o.Ay.createFromServer(e.payment_source) : null,
-            n = null != e.sku ? l.A.createFromServer(e.sku) : null,
+        let t = null != e.payment_source ? a.Ay.createFromServer(e.payment_source) : null,
+            n = null != e.sku ? o.A.createFromServer(e.sku) : null,
             r = null != e.subscription ? c.A.createFromServer(e.subscription) : null;
         return new p({
             id: e.id,
@@ -54,10 +53,10 @@ class p extends a.A {
         })
     }
     get isPurchasedViaApple() {
-        return this.paymentGateway === u.kM_.APPLE
+        return this.paymentGateway === d.kM_.APPLE
     }
     get isPurchasedViaGoogle() {
-        return this.paymentGateway === u.kM_.GOOGLE
+        return this.paymentGateway === d.kM_.GOOGLE
     }
     get isPurchasedExternally() {
         return this.isPurchasedViaApple || this.isPurchasedViaGoogle
@@ -66,33 +65,33 @@ class p extends a.A {
         return null != this.subscription
     }
     get isPremiumSubscription() {
-        return null != this.subscription && d.JM.has(this.subscription.planId)
+        return null != this.subscription && u.JM.has(this.subscription.planId)
     }
     get isPremiumGuildSubscription() {
         return null != this.subscription && null != this.subscription.additionalPlans.find(e => {
             let {
                 planId: t
             } = e;
-            return d.pW.has(t)
+            return u.pW.has(t)
         })
     }
     get isGift() {
         return i.Lt(this.flags, 1)
     }
     get isPremiumGift() {
-        return this.isGift && Object.values(d.pe).includes(this.skuId)
+        return this.isGift && Object.values(u.pe).includes(this.skuId)
     }
     get isGuildProductPurchase() {
-        return null != this.sku && (this.sku.productLine === u.EZt.GUILD_PRODUCT || i.Lt(this.sku.flags, r.d.GUILD_PRODUCT))
+        return null != this.sku && (this.sku.productLine === d.EZt.GUILD_PRODUCT || i.Lt(this.sku.flags, r.d.GUILD_PRODUCT))
     }
     get isSoftDeletedProduct() {
         var e;
         return (null == (e = this.sku) ? void 0 : e.deleted) === !0
     }
     get isCollectible() {
-        return null != this.sku && this.sku.productLine === u.EZt.COLLECTIBLES
+        return null != this.sku && this.sku.productLine === d.EZt.COLLECTIBLES
     }
     constructor(e) {
-        super(), f(this, "id", void 0), f(this, "createdAt", void 0), f(this, "currency", void 0), f(this, "tax", void 0), f(this, "taxInclusive", void 0), f(this, "amount", void 0), f(this, "amountRefunded", void 0), f(this, "status", void 0), f(this, "description", void 0), f(this, "hasInvoiceURL", void 0), f(this, "hasRefundInvoiceURLs", void 0), f(this, "downloadableInvoice", void 0), f(this, "downloadableRefundInvoices", void 0), f(this, "flags", void 0), f(this, "paymentSource", void 0), f(this, "paymentGateway", void 0), f(this, "subscription", void 0), f(this, "skuId", void 0), f(this, "skuPrice", void 0), f(this, "sku", void 0), f(this, "premiumRefundDisqualificationReasons", void 0), f(this, "entitlements", void 0), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements
+        super(), _(this, "id", void 0), _(this, "createdAt", void 0), _(this, "currency", void 0), _(this, "tax", void 0), _(this, "taxInclusive", void 0), _(this, "amount", void 0), _(this, "amountRefunded", void 0), _(this, "status", void 0), _(this, "description", void 0), _(this, "hasInvoiceURL", void 0), _(this, "hasRefundInvoiceURLs", void 0), _(this, "downloadableInvoice", void 0), _(this, "downloadableRefundInvoices", void 0), _(this, "flags", void 0), _(this, "paymentSource", void 0), _(this, "paymentGateway", void 0), _(this, "subscription", void 0), _(this, "skuId", void 0), _(this, "skuPrice", void 0), _(this, "sku", void 0), _(this, "premiumRefundDisqualificationReasons", void 0), _(this, "entitlements", void 0), this.id = e.id, this.amount = e.amount, this.amountRefunded = e.amountRefunded, this.createdAt = e.createdAt, this.currency = e.currency, this.description = e.description, this.paymentSource = e.paymentSource, this.paymentGateway = e.paymentGateway, this.status = e.status, this.tax = e.tax, this.taxInclusive = e.taxInclusive, this.subscription = e.subscription, this.skuId = e.skuId, this.skuPrice = e.skuPrice, this.sku = e.sku, this.flags = e.flags, this.downloadableInvoice = e.downloadableInvoice, this.downloadableRefundInvoices = e.downloadableRefundInvoices, this.hasInvoiceURL = e.hasInvoiceURL, this.hasRefundInvoiceURLs = e.hasRefundInvoiceURLs, this.premiumRefundDisqualificationReasons = e.premiumRefundDisqualificationReasons, this.entitlements = e.entitlements
     }
 }

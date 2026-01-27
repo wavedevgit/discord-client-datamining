@@ -46,11 +46,11 @@ class a {
         r(this, "message", void 0), r(this, "code", void 0), r(this, "retryAfter", void 0), r(this, "fields", void 0), r(this, "error", void 0), r(this, "status", void 0);
         const {
             message: a,
-            code: s,
-            retryAfter: o,
+            code: o,
+            retryAfter: s,
             fields: l,
             status: c
         } = i(e, t);
-        this.message = a || n, this.retryAfter = o, this.code = s || -1, this.fields = l || {}, this.status = c, this.error = Error(a)
+        this.message = a || n, this.retryAfter = s, this.code = o || -1, this.fields = l || {}, this.status = c, this.error = Error(a)
     }
 }

@@ -6,7 +6,7 @@ n.d(t, {
 }), n(896048);
 var r, i, a = n(64700);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     return Math.min(Math.max(Math.floor(e / t), 1), n)
 }
 let l = (0, n(456412).A)((i = class extends(r = a.Component) {
@@ -24,7 +24,7 @@ let l = (0, n(456412).A)((i = class extends(r = a.Component) {
             width: n,
             desiredItemWidth: r,
             maxColumns: i
-        } = e, a = o(n, r, i);
+        } = e, a = s(n, r, i);
         return a !== t.columns ? {
             columns: a
         } : null
@@ -40,10 +40,10 @@ let l = (0, n(456412).A)((i = class extends(r = a.Component) {
         return n(r, e, t)
     }
     constructor(...e) {
-        super(...e), s(this, "state", {
-            columns: o(this.props.width, this.props.desiredItemWidth, this.props.maxColumns)
+        super(...e), o(this, "state", {
+            columns: s(this.props.width, this.props.desiredItemWidth, this.props.maxColumns)
         })
     }
-}, s(i, "defaultProps", {
+}, o(i, "defaultProps", {
     desiredItemWidth: 200
 }), i))

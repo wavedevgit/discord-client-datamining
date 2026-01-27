@@ -7,7 +7,7 @@ var r = n(503628),
         var e = i("a", "y");
         return e.lastIndex = 2, null !== e.exec("abcd")
     }),
-    s = a || r(function() {
+    o = a || r(function() {
         return !i("a", "y").sticky
     });
 e.exports = {
@@ -15,6 +15,6 @@ e.exports = {
         var e = i("^r", "gy");
         return e.lastIndex = 2, null !== e.exec("str")
     }),
-    MISSED_STICKY: s,
+    MISSED_STICKY: o,
     UNSUPPORTED_Y: a
 }

@@ -1,50 +1,49 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 147441, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(397927),
-    l = n(985018),
+    l = n(503698),
+    s = n.n(l),
+    a = n(397927),
+    o = n(985018),
     c = n(997021);
-let u = i.createContext({
+let d = i.createContext({
     isOpen: !1,
     toggleOpen: () => {}
 });
 
-function d(e) {
+function u(e) {
     let {
         children: t
-    } = e, [n, a] = i.useReducer(e => !e, !1), s = i.useMemo(() => ({
+    } = e, [n, l] = i.useReducer(e => !e, !1), s = i.useMemo(() => ({
         isOpen: n,
-        toggleOpen: a
+        toggleOpen: l
     }), [n]);
-    return (0, r.jsx)(u.Provider, {
+    return (0, r.jsx)(d.Provider, {
         value: s,
         children: t(n)
     })
 }
-d.Toggle = function(e) {
+u.Toggle = function(e) {
     let {
         className: t,
         text: n
     } = e, {
-        isOpen: a,
-        toggleOpen: d
-    } = i.useContext(u), f = a ? o.tN5 : o.abt, p = null != n ? n : a ? l.intl.string(l.t.fgq1gs) : l.intl.string(l.t.XJuakA);
-    return (0, r.jsxs)(o.DUT, {
+        isOpen: l,
+        toggleOpen: u
+    } = i.useContext(d), _ = l ? a.tN5 : a.abt, p = null != n ? n : l ? o.intl.string(o.t.fgq1gs) : o.intl.string(o.t.XJuakA);
+    return (0, r.jsxs)(a.DUT, {
         className: s()(c.L, t),
-        onClick: d,
-        children: [(0, r.jsx)(o.Text, {
+        onClick: u,
+        children: [(0, r.jsx)(a.Text, {
             variant: "heading-sm/semibold",
             tag: "div",
             color: "currentColor",
             children: p
-        }), (0, r.jsx)(f, {
+        }), (0, r.jsx)(_, {
             size: "sm",
             color: "currentColor"
         })]

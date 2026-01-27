@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(139033),
     a = n(397927),
-    s = n(975571),
-    o = n(652215),
+    o = n(975571),
+    s = n(652215),
     l = n(985018),
     c = n(641131);
 
@@ -71,7 +71,7 @@ function h() {
     (0, i.A)({
         title: l.intl.string(c.default.odgSTk),
         subtitle: l.intl.format(c.default.EZfHRq, {
-            helpURL: s.A.getArticleURL(o.MVz.NSFW_AGE_GATING)
+            helpURL: o.A.getArticleURL(s.MVz.NSFW_AGE_GATING)
         })
     })
 }

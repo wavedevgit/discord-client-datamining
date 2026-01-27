@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 986177, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     n3: "visibleCanvas_b7ff7d",
     q4: "invisible_b7ff7d",

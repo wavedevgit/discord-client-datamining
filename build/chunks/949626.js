@@ -4,8 +4,8 @@
 var r = n(108591),
     i = n(739305),
     a = i.aTypedArray,
-    s = i.exportTypedArrayMethod,
-    o = i.getTypedArrayConstructor;
-s("toReversed", function() {
-    return r(a(this), o(this))
+    o = i.exportTypedArrayMethod,
+    s = i.getTypedArrayConstructor;
+o("toReversed", function() {
+    return r(a(this), s(this))
 })

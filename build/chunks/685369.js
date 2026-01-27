@@ -2,7 +2,7 @@
 /** chunk id: 685369, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    K: () => o
+    K: () => s
 });
 let r = new Map,
     i = !1;
@@ -18,7 +18,7 @@ try {
         unit: "degree"
     }).resolvedOptions().style
 } catch {}
-let s = {
+let o = {
     degree: {
         narrow: {
             default: "\xb0",
@@ -28,7 +28,7 @@ let s = {
         }
     }
 };
-class o {
+class s {
     format(e) {
         let t = "";
         if (t = i || null == this.options.signDisplay ? this.numberFormatter.format(e) : c(this.numberFormatter, this.options.signDisplay, e), "unit" === this.options.style && !a) {
@@ -39,7 +39,7 @@ class o {
                 locale: i
             } = this.resolvedOptions();
             if (!e) return t;
-            let a = null == (n = s[e]) ? void 0 : n[r];
+            let a = null == (n = o[e]) ? void 0 : n[r];
             t += a[i] || a.default
         }
         return t
@@ -97,16 +97,16 @@ function l(e, t = {}) {
             unitDisplay: n = "short"
         } = t;
         if (!e) throw Error('unit option must be provided with style: "unit"');
-        if (!(null == (i = s[e]) ? void 0 : i[n])) throw Error(`Unsupported unit ${e} with unitDisplay = ${n}`);
+        if (!(null == (i = o[e]) ? void 0 : i[n])) throw Error(`Unsupported unit ${e} with unitDisplay = ${n}`);
         t = {
             ...t,
             style: "decimal"
         }
     }
-    let o = e + (t ? Object.entries(t).sort((e, t) => e[0] < t[0] ? -1 : 1).join() : "");
-    if (r.has(o)) return r.get(o);
+    let s = e + (t ? Object.entries(t).sort((e, t) => e[0] < t[0] ? -1 : 1).join() : "");
+    if (r.has(s)) return r.get(s);
     let c = new Intl.NumberFormat(e, t);
-    return r.set(o, c), c
+    return r.set(s, c), c
 }
 
 function c(e, t, n) {

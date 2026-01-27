@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(331322),
+    o = n.n(a),
+    s = n(331322),
     l = n(834730),
     c = n(64584),
     u = n(182903);
@@ -81,7 +81,7 @@ function g(e) {
         spacing: p
     } = i.useContext(c.c), m = i.useId(), g = null != a && "" !== a;
     return (0, r.jsxs)("fieldset", _(f({}, d), {
-        className: s()(u.lI, d.className),
+        className: o()(u.lI, d.className),
         "aria-describedby": g ? m : void 0,
         children: [null != n ? (0, r.jsx)(l.E, {
             tag: "legend",
@@ -95,7 +95,7 @@ function g(e) {
             className: u.h_,
             id: m,
             children: a
-        }) : null, (0, r.jsx)(o.B, {
+        }) : null, (0, r.jsx)(s.B, {
             direction: "vertical",
             gap: p,
             children: t

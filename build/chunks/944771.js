@@ -10,10 +10,10 @@ var r = n(627968);
 n(64700);
 var i = n(318678),
     a = n(395058),
-    s = n(61003),
-    o = n(890908),
+    o = n(61003),
+    s = n(890908),
     l = n(3258);
-let c = [i.U, o.UO, s.e, a.m];
+let c = [i.U, s.UO, o.e, a.m];
 
 function u() {
     return (0, r.jsx)(l.Playground, {

@@ -26,7 +26,7 @@ e.exports = function(e) {
                 returnEnd: !0
             }
         },
-        s = {
+        o = {
             className: "attribute",
             begin: "\\bid\\s*:",
             starts: {
@@ -35,7 +35,7 @@ e.exports = function(e) {
                 returnEnd: !1
             }
         },
-        o = {
+        s = {
             begin: r + "\\s*:",
             returnBegin: !0,
             contains: [{
@@ -112,7 +112,7 @@ e.exports = function(e) {
         }, {
             begin: "\\." + e.IDENT_RE,
             relevance: 0
-        }, s, o, l],
+        }, o, s, l],
         illegal: /#/
     }
 }

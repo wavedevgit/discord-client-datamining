@@ -1,5 +1,5 @@
-/** Chunk was on 65076 **/
-/** chunk id: 658646, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 51901 **/
+/** chunk id: 658646, original params: e,t,n (module,exports,require) **/
 e.exports = {
     pz: "sidebar__409aa",
     Hw: "mobile__409aa",

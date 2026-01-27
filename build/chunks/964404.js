@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(506774),
+    o = n(311907),
+    s = n(506774),
     l = n(73153);
 n(677313), n(743898);
 var c = n(185928),
@@ -68,10 +68,10 @@ function I() {
 
 function S() {
     var e;
-    let t = s.Ay.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
+    let t = o.Ay.PersistedStore.migrateAndReadStoreState("AccessibilityStore", []).state;
     return null != (e = null == t ? void 0 : t.darkSidebar) && e
 }
-class T extends(r = s.Ay.DeviceSettingsStore) {
+class T extends(r = o.Ay.DeviceSettingsStore) {
     initialize(e) {
         var t, n;
         (y = null != e ? e : {}).darkSidebar = null != (t = y.darkSidebar) ? t : S(), y.hdrDynamicRange = null != (n = y.hdrDynamicRange) ? n : "no-limit"
@@ -191,8 +191,8 @@ class T extends(r = s.Ay.DeviceSettingsStore) {
     }
 }
 p(T, "displayName", "UnsyncedUserSettingsStore"), p(T, "persistKey", "UnsyncedUserSettingsStore"), p(T, "migrations", [() => {
-    let e = o.w.get("UserSettingsStore");
-    return o.w.remove("UserSettingsStore"), a().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
+    let e = s.w.get("UserSettingsStore");
+    return s.w.remove("UserSettingsStore"), a().pick(e, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations")
 }, e => {
     delete e.disableVisualRefresh
 }]);

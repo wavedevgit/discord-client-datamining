@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(517905),
     u = n(544028),
@@ -51,7 +51,7 @@ let y = i.memo(function(e) {
         return null == t ? null : (0, r.jsx)("img", {
             src: t,
             alt: "",
-            className: s()(m.qS, n),
+            className: o()(m.qS, n),
             width: i,
             height: i
         })
@@ -62,7 +62,7 @@ let y = i.memo(function(e) {
             guildTag: n,
             guildBadge: i,
             className: a,
-            textClassName: o,
+            textClassName: s,
             badgeClassName: c,
             onClick: u,
             onMouseEnter: d,
@@ -79,13 +79,13 @@ let y = i.memo(function(e) {
             tabIndex: null == u ? -1 : void 0,
             onClick: u,
             onMouseEnter: d,
-            className: s()(m.nz, O && m.os, null != u && m.vk, a),
+            className: o()(m.nz, O && m.os, null != u && m.vk, a),
             children: (0, r.jsxs)(l.Text, {
                 variant: g,
                 lineClamp: 1,
                 color: E,
                 tag: "span",
-                className: s()(m.Qq, o),
+                className: o()(m.Qq, s),
                 children: [null != i && "string" == typeof i ? (0, r.jsx)(y, {
                     src: (0, f.gC)(t, i, b),
                     size: b,
@@ -111,7 +111,7 @@ let y = i.memo(function(e) {
             inline: v = !0,
             onShowProfile: A,
             onClose: I
-        } = e, S = i.useRef(null), T = (0, o.bG)([d.default], () => d.default.getUser(n), [n]), C = (0, o.bG)([u.A], () => u.A.theme), N = void 0 !== t ? t : null == T ? void 0 : T.primaryGuild, {
+        } = e, S = i.useRef(null), T = (0, s.bG)([d.default], () => d.default.getUser(n), [n]), C = (0, s.bG)([u.A], () => u.A.theme), N = void 0 !== t ? t : null == T ? void 0 : T.primaryGuild, {
             tag: w,
             badge: R,
             guildId: P
@@ -120,7 +120,7 @@ let y = i.memo(function(e) {
             guildId: P,
             guildTag: w,
             guildBadge: R,
-            className: s()(m.Zy, p),
+            className: o()(m.Zy, p),
             textVariant: h,
             textColor: g,
             badgeSize: y,

@@ -2,13 +2,13 @@
 /** chunk id: 256698, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(860028);
-let s = e => {
+let o = e => {
     let {
         size: t
     } = e;

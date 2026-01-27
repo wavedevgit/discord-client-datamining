@@ -1,52 +1,49 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 290794, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Tu: () => u,
-    hd: () => c,
-    y0: () => s,
-    y5: () => o
+    Tu: () => c,
+    hd: () => o,
+    y0: () => a,
+    y5: () => s
 }), n(65821);
 var r = n(627968),
     i = n(64700);
-let a = i.createContext(void 0);
+let l = i.createContext(void 0);
 
-function s() {
-    let e = i.useContext(a);
+function a() {
+    let e = i.useContext(l);
     if (null == e) throw Error("No PollContextProvider found");
     return e
 }
 
-function o(e) {
+function s(e) {
     let {
         children: t,
         message: n,
-        poll: s
-    } = e, o = i.useMemo(() => ({
+        poll: a
+    } = e, s = i.useMemo(() => ({
         message: n,
-        poll: s
-    }), [n, s]);
-    return (0, r.jsx)(a.Provider, {
-        value: o,
+        poll: a
+    }), [n, a]);
+    return (0, r.jsx)(l.Provider, {
+        value: s,
         children: t
     })
 }
 
-function l() {
-    let {
-        poll: e
-    } = s();
-    return e.resources
+function o(e) {
+    return function() {
+        let {
+            poll: e
+        } = a();
+        return e.resources
+    }().styles[e]
 }
 
-function c(e) {
-    return l().styles[e]
-}
-
-function u() {
+function c() {
     let {
         message: e
-    } = s(), t = e.getChannelId();
+    } = a(), t = e.getChannelId();
     return i.useMemo(() => ({
         channelId: t,
         messageId: e.id

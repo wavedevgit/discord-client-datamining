@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(688810),
-    s = n(474397),
-    o = n(780964),
+    o = n(474397),
+    s = n(780964),
     l = n(358776),
     c = n(840065),
     u = n(652215),
@@ -24,13 +24,17 @@ function p(e) {
         id: "video-settings",
         label: f.intl.string(f.t.LKzQSF),
         action: () => {
-            let n = (0, l.qz)("useVideoSettingsItem") ? o.X.CAMERA_CATEGORY : o.X.VOICE_AND_VIDEO_PANEL;
+            let n = (0, l.qz)("useVideoSettingsItem") ? s.X.CAMERA_CATEGORY : s.X.VOICE_AND_VIDEO_PANEL;
             (0, c.openUserSettings)(n, {
                 section: u.nc_.VOICE,
                 subsection: d.Ss,
                 analyticsLocations: t
-            }), (0, s.A)(e, e === u.BRT.POPOUT)
+            }), (0, o.A)(e, e === u.BRT.POPOUT)
         },
-        icon: i.Zes
+        icon: i.Zes,
+        leadingAccessory: {
+            type: "icon",
+            icon: i.Zes
+        }
     })
 }

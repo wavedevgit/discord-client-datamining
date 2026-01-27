@@ -8,21 +8,21 @@ var r = t(627968),
     l = t(503698),
     a = t.n(l),
     i = t(827734),
-    o = t(990078),
-    s = t(397927),
+    s = t(990078),
+    o = t(397927),
     d = t(65593),
     u = t(565150),
     c = t(915089),
     g = t(703007),
-    p = t(464990),
-    f = t(253141),
+    f = t(464990),
+    p = t(253141),
     m = t(698638);
 t(634654);
 var v = t(985018),
     h = t(9040);
-let q = (0, c.Ld)();
+let b = (0, c.Ld)();
 
-function b(e) {
+function q(e) {
     var A;
     let {
         upload: t,
@@ -30,35 +30,35 @@ function b(e) {
         onDeleteAttachment: d
     } = e, u = n.useCallback(() => {
         null == d || d(t.id)
-    }, [d, t.id]), c = l >= 1, g = l < 0, p = c || g, m = null != (A = t.filename) ? A : t.id, q = (0, f.kt)(l);
-    return (0, r.jsx)(o.m, {
+    }, [d, t.id]), c = l >= 1, g = l < 0, f = c || g, m = null != (A = t.filename) ? A : t.id, b = (0, p.kt)(l);
+    return (0, r.jsx)(s.m, {
         asContainer: !0,
-        text: q,
+        text: b,
         children: (0, r.jsxs)("div", {
             className: a()(h.hC, {
                 [h.t]: g,
-                [h.ik]: !p
+                [h.ik]: !f
             }),
-            children: [(0, r.jsx)(s.DF1, {
+            children: [(0, r.jsx)(o.DF1, {
                 size: "xs",
                 color: i.A.colors.ICON_MUTED.css
-            }), (0, r.jsx)(s.hKd, {
+            }), (0, r.jsx)(o.hKd, {
                 size: 10,
                 horizontal: !0
-            }), (0, r.jsx)(s.Text, {
+            }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/normal",
                 children: m
-            }), !p && (0, r.jsx)(s.y$y, {
+            }), !f && (0, r.jsx)(o.y$y, {
                 className: h.eD,
-                type: s.y$y.Type.SPINNING_CIRCLE
-            }), p && null != d && (0, r.jsx)(s.DUT, {
+                type: o.y$y.Type.SPINNING_CIRCLE
+            }), f && null != d && (0, r.jsx)(o.DUT, {
                 onClick: u,
                 "aria-label": v.intl.formatToPlainString(v.t["1o5hyW"], {
                     attachment: m
                 }),
                 "aria-hidden": !1,
                 className: h.G5,
-                children: (0, r.jsx)(s.PGe, {
+                children: (0, r.jsx)(o.PGe, {
                     size: "xxs",
                     color: "currentColor",
                     className: h.__invalid_deleteIcon
@@ -76,9 +76,9 @@ function C(e) {
         canAttachFiles: l,
         canAttachArchives: a,
         addAttachment: i,
-        deleteAttachment: o,
+        deleteAttachment: s,
         fileUploadProgresses: c
-    } = (0, p.Z)(), f = n.useRef(!1);
+    } = (0, f.Z)(), p = n.useRef(!1);
 
     function C(e) {
         try {
@@ -87,11 +87,11 @@ function C(e) {
                 file: A,
                 origin: "unknown:guild_product_attachment"
             });
-            f.current = !0
+            p.current = !0
         } catch (e) {}
     }
     return n.useEffect(() => {
-        f.current && (A(), f.current = !1)
+        p.current && (A(), p.current = !1)
     }, [A]), (0, r.jsxs)("div", {
         className: h.kL,
         children: [(0, r.jsx)(d.A, {
@@ -105,25 +105,25 @@ function C(e) {
             innerClassName: h._3,
             disabled: !l,
             "aria-label": v.intl.string(v.t["23LeCD"]),
-            "aria-describedby": q,
+            "aria-describedby": b,
             multiple: !0,
             onChange: function(e) {
                 null != e.currentTarget.files && C(e.currentTarget.files)
             },
-            children: [(0, r.jsx)(s.kpT, {
+            children: [(0, r.jsx)(o.kpT, {
                 size: "xs",
                 color: "currentColor",
                 className: h.T8,
                 "aria-hidden": !0
-            }), (0, r.jsx)(s.Text, {
+            }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "always-white",
                 children: v.intl.string(v.t["23LeCD"])
             })]
-        }), (0, r.jsx)(s.hKd, {
+        }), (0, r.jsx)(o.hKd, {
             size: 12
-        }), (0, r.jsx)(s.Text, {
-            id: q,
+        }), (0, r.jsx)(o.Text, {
+            id: b,
             color: "text-muted",
             variant: "text-xs/normal",
             children: a ? v.intl.formatToPlainString(v.t.lvU6sr, {
@@ -138,9 +138,9 @@ function C(e) {
                 className: h.$W,
                 "aria-label": v.intl.string(v.t.YZ6cTW),
                 children: t.map(e => (0, r.jsx)("li", {
-                    children: (0, r.jsx)(b, {
+                    children: (0, r.jsx)(q, {
                         upload: e,
-                        onDeleteAttachment: o,
+                        onDeleteAttachment: s,
                         progress: c[e.id]
                     })
                 }, e.id))

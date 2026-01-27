@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,12 +15,12 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = {},
+let s = {},
     l = null,
     c = null;
 
 function u(e, t) {
-    null == t ? e in o && delete o[e] : null != e && (o[e] = t)
+    null == t ? e in s && delete s[e] : null != e && (s[e] = t)
 }
 
 function d(e) {
@@ -60,11 +60,11 @@ function h(e) {
 }
 class m extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        null != e && (o = e)
+        null != e && (s = e)
     }
     requiredActions(e) {
         var t;
-        return null != (t = o[e]) ? t : null
+        return null != (t = s[e]) ? t : null
     }
     requiredActionsIncludes(e, t) {
         let n = this.requiredActions(e);
@@ -74,10 +74,10 @@ class m extends(r = i.Ay.PersistedStore) {
         return l === e
     }
     getState() {
-        return o
+        return s
     }
 }
-s(m, "displayName", "LoginRequiredActionStore"), s(m, "persistKey", "LoginRequiredActionStore");
+o(m, "displayName", "LoginRequiredActionStore"), o(m, "persistKey", "LoginRequiredActionStore");
 let g = new m(a.h, {
     LOGIN_ATTEMPTED: d,
     CONNECTION_OPEN: f,

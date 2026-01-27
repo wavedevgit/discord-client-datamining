@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(732955),
-    o = n(397927),
+    o = n(732955),
+    s = n(397927),
     l = n(827343),
     c = n(386406),
     u = n(237496),
@@ -38,7 +38,7 @@ function _(e) {
 }
 
 function h(e) {
-    return (0, r.jsx)(s.aFV, _({
+    return (0, r.jsx)(o.aFV, _({
         size: "md",
         title: f.intl.string(f.t.NYklhr),
         subtitle: f.intl.string(f.t.EJ26Oh),
@@ -63,9 +63,9 @@ function m() {
         t = i.useRef(null);
 
     function n() {
-        null !== t.current && ((0, o.OoC)(t.current), t.current = null)
+        null !== t.current && ((0, s.OoC)(t.current), t.current = null)
     }
-    return i.useEffect(() => (e ? t.current = (0, o.qfG)(e => (0, r.jsx)(h, _({}, e))) : n(), () => {
+    return i.useEffect(() => (e ? t.current = (0, s.qfG)(e => (0, r.jsx)(h, _({}, e))) : n(), () => {
         n()
     }), [e]), null
 }

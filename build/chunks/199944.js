@@ -8,7 +8,7 @@ var r = n(439372),
     i = n(913612),
     a = n(942405);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends r.A {
+class s extends r.A {
     handlePostConnectionOpen() {
         (0, i.C)(), (0, a.Tn)("startup")
     }
@@ -24,10 +24,10 @@ class o extends r.A {
         (0, a.AV)()
     }
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             POST_CONNECTION_OPEN: this.handlePostConnectionOpen,
             LOGOUT: this.handleLogout
         })
     }
 }
-let l = new o
+let l = new s

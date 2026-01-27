@@ -1,7 +1,7 @@
 /** Chunk was on 78870 **/
 /** chunk id: 324269, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => p
+    default: () => u
 });
 var n = r(627968),
     i = r(64700),
@@ -9,18 +9,17 @@ var n = r(627968),
     l = r(397927),
     s = r(558060),
     c = r(284683),
-    a = r(985018),
-    d = r(425377);
+    a = r(985018);
 
-function u(e) {
+function d(e) {
     let {
         closePopout: t,
         sortOptionContext: r
     } = e, {
         sortOption: o,
         setSortOption: s,
-        onReset: u
-    } = r, p = i.useMemo(() => c.aq.map(e => (0, n.jsx)(l.iDA, {
+        onReset: d
+    } = r, u = i.useMemo(() => c.aq.map(e => (0, n.jsx)(l.iDA, {
         id: "".concat(e),
         group: "sort-by",
         label: (0, c.Ac)(e),
@@ -29,7 +28,7 @@ function u(e) {
     }, e)), [s, o]);
     return (0, n.jsx)("div", {
         children: (0, n.jsxs)(l.W1t, {
-            "data-menu-migration-ready": !0,
+            "data-menu-migrated": !0,
             navId: "sort-and-view",
             "aria-label": a.intl.string(a.t["4jfWTK"]),
             hideScroller: !0,
@@ -37,20 +36,19 @@ function u(e) {
             onSelect: t,
             children: [(0, n.jsx)(l.rXV, {
                 label: a.intl.string(a.t.mBvLev),
-                children: p
+                children: u
             }), (0, n.jsx)(l.rXV, {
                 children: (0, n.jsx)(l.Drp, {
                     id: "reset-all",
-                    className: d.Z,
                     label: a.intl.string(a.t["3b//lO"]),
-                    action: u
+                    action: d
                 })
             })]
         })
     })
 }
 
-function p() {
+function u() {
     let e = (0, s.R)(),
         t = (0, c.Ac)(e.sortOption),
         r = i.useRef(null);
@@ -60,7 +58,7 @@ function p() {
             let {
                 closePopout: r
             } = t;
-            return (0, n.jsx)(u, {
+            return (0, n.jsx)(d, {
                 closePopout: r,
                 sortOptionContext: e
             })

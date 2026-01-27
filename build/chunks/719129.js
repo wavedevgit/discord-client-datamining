@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(73153),
     i = n(386406),
     a = n(56562),
-    s = n(15285),
-    o = n(760751),
+    o = n(15285),
+    s = n(760751),
     l = n(287809),
     c = n(954571),
     u = n(723702),
@@ -96,25 +96,25 @@ function A(e) {
 function I(e, t) {
     return O().then(n => {
         var l;
-        let u = null == (l = s.Ay.getGameForPID(e)) ? void 0 : l.name,
-            d = o.A.getGameByName(u),
+        let u = null == (l = o.Ay.getGameForPID(e)) ? void 0 : l.name,
+            d = s.A.getGameByName(u),
             f = null;
-        return new Promise(o => {
+        return new Promise(s => {
             let l = (e, n) => {
                     c.default.track(p.HAw.HOOK_RESULT, h({
                         game_name: u,
                         game_id: null == d ? null : d.id,
                         success: n,
                         error: e
-                    }, t)), null != f && (clearTimeout(f), f = null), n ? o() : o(e = null != e ? e : "Unknown hook error")
+                    }, t)), null != f && (clearTimeout(f), f = null), n ? s() : s(e = null != e ? e : "Unknown hook error")
                 },
-                _ = s.Ay.getOverlayOptionsForPID(e),
+                _ = o.Ay.getOverlayOptionsForPID(e),
                 m = g(h({}, a.gH, _), {
-                    elevate: s.Ay.shouldElevateProcessForPID(e)
+                    elevate: o.Ay.shouldElevateProcessForPID(e)
                 });
             null == m.allowHook || m.allowHook ? (f = setTimeout(() => {
                 n.cancelAttachToProcess(e), l("Timed out waiting for hook response", !1)
-            }, 12e4), n.attachToProcess(e, m, l), r.h.wait(() => i.A.clearElevatedProcess())) : o("Hook is disabled for this game")
+            }, 12e4), n.attachToProcess(e, m, l), r.h.wait(() => i.A.clearElevatedProcess())) : s("Hook is disabled for this game")
         })
     })
 }

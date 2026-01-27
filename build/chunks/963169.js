@@ -2,50 +2,49 @@
 /** chunk id: 963169, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    MS: () => c,
-    OE: () => u,
-    Qb: () => d
+    MS: () => u,
+    OE: () => f,
+    Qb: () => p
 });
 var r = n(73153),
-    i = n(976860),
-    a = n(954571),
+    i = n(824865),
+    a = n(976860),
+    o = n(954571),
     s = n(545167),
-    o = n(729904),
-    l = n(652215);
+    l = n(729904),
+    c = n(652215);
 
-function c(e, t, n) {
+function u(e, t) {
     r.h.dispatch({
         type: "ROUTE_CHANGED",
-        path: e,
-        key: t,
-        isReplace: n
+        location: e,
+        action: t
+    })
+}
+let d = () => (0, s.J)({
+    location: "NavHistoryActionCreators"
+});
+
+function f(e) {
+    if (!(0, a.TX)()) return;
+    if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
+            nav_direction: -1,
+            nav_trigger: e
+        }), !d()) return void(0, a.aX)();
+    let t = l.A.backDestination;
+    null != t && (0, a.pX)(t.path, {
+        source: i.A.USER_NAVIGATED_BACK
     })
 }
 
-function u(e) {
-    if (!(0, i.TX)()) return;
-    if (a.default.track(l.HAw.APP_BACK_FORWARD_NAVIGATED, {
-            nav_direction: -1,
-            nav_trigger: e
-        }), !(0, s.J)({
-            location: e
-        })) return void(0, i.aX)();
-    let t = o.A.backDestination;
-    null != t && (r.h.dispatch({
-        type: "GO_BACK"
-    }), (0, i.pX)(t.path))
-}
-
-function d(e) {
-    if (!(0, i.TX)()) return;
-    if (a.default.track(l.HAw.APP_BACK_FORWARD_NAVIGATED, {
+function p(e) {
+    if (!(0, a.TX)()) return;
+    if (o.default.track(c.HAw.APP_BACK_FORWARD_NAVIGATED, {
             nav_direction: 1,
             nav_trigger: e
-        }), !(0, s.J)({
-            location: e
-        })) return void(0, i.sY)();
-    let t = o.A.forwardDestination;
-    null != t && (r.h.dispatch({
-        type: "GO_FORWARD"
-    }), (0, i.pX)(t.path))
+        }), !d()) return void(0, a.sY)();
+    let t = l.A.forwardDestination;
+    null != t && (0, a.pX)(t.path, {
+        source: i.A.USER_NAVIGATED_FORWARD
+    })
 }

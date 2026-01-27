@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(429913),
-    o = n(403362),
+    o = n(429913),
+    s = n(403362),
     l = n(648304),
     c = n(437918),
     u = n(985018);
@@ -24,7 +24,7 @@ function f(e) {
             applicationId: t
         } = e;
         return t
-    }) : d, [p, t]), g = (0, s.A)(m, p), E = i.useMemo(() => g.filter(o.Vq), [g]), {
+    }) : d, [p, t]), g = (0, o.A)(m, p), E = i.useMemo(() => g.filter(s.Vq), [g]), {
         tooltipText: y,
         ariaLabel: b
     } = i.useMemo(() => {

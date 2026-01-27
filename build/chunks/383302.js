@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 383302, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    N: () => u
+    N: () => d
 }), n(228524);
 var r = n(627968);
 n(64700);
@@ -12,17 +11,17 @@ var i = n(397927),
     a = n(860689),
     o = n(985018),
     c = n(936528);
-let u = e => {
+let d = e => {
     let {
         guild: t,
         onlineCount: n
     } = e;
     if (null == t) return null;
-    let u = a.DY(t),
+    let d = a.DY(t),
         {
-            name: d,
+            name: u,
             description: h
-        } = u;
+        } = d;
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)(i.Heading, {
             variant: "heading-md/normal",
@@ -36,7 +35,7 @@ let u = e => {
                 width: 40,
                 height: 40,
                 children: (0, r.jsx)(l.A, {
-                    guild: u,
+                    guild: d,
                     size: l.A.Sizes.MEDIUM,
                     active: !0
                 })
@@ -44,7 +43,7 @@ let u = e => {
                 className: c.OA,
                 children: [(0, r.jsx)(i.Heading, {
                     variant: "heading-sm/semibold",
-                    children: d
+                    children: u
                 }), (0, r.jsxs)("div", {
                     className: c.aH,
                     children: [(0, r.jsx)("div", {

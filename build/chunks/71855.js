@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(793322),
     c = n(174768),
     u = n(130412),
@@ -48,27 +48,27 @@ function I(e) {
     let {
         windowKey: t,
         showDivider: n
-    } = e, i = (0, r.jsx)(o.DUT, {
-        className: s()(m.R6, m.d1),
+    } = e, i = (0, r.jsx)(s.DUT, {
+        className: o()(m.R6, m.d1),
         onClick: () => b(t),
         "aria-label": h.intl.string(h.t.ZdNUj2),
         tabIndex: -1,
         children: (0, r.jsx)(u.A, {})
-    }), a = (0, r.jsx)(o.DUT, {
-        className: s()(m.R6, m.T0),
+    }), a = (0, r.jsx)(s.DUT, {
+        className: o()(m.R6, m.T0),
         onClick: () => v(t),
         "aria-label": h.intl.string(h.t.G1u0hK),
         tabIndex: -1,
         children: (0, r.jsx)(d.A, {})
-    }), l = (0, r.jsx)(o.DUT, {
-        className: s()(m.R6, m.T0),
+    }), l = (0, r.jsx)(s.DUT, {
+        className: o()(m.R6, m.T0),
         onClick: () => O(t),
         "aria-label": h.intl.string(h.t.CxOC4U),
         tabIndex: -1,
         children: (0, r.jsx)(f.A, {})
     });
     return (0, r.jsxs)("div", {
-        className: s()(m.kU, {
+        className: o()(m.kU, {
             [m.Fx]: n
         }),
         children: [l, a, i]
@@ -80,11 +80,11 @@ function S(e) {
         leading: t,
         title: n,
         trailing: a,
-        windowKey: o,
+        windowKey: s,
         className: l
-    } = e, c = (0, p.getPlatform)(), u = i.useCallback(() => v(o), [o]), d = c === p.PlatformTypes.WINDOWS || c === p.PlatformTypes.LINUX;
+    } = e, c = (0, p.getPlatform)(), u = i.useCallback(() => v(s), [s]), d = c === p.PlatformTypes.WINDOWS || c === p.PlatformTypes.LINUX;
     return (0, r.jsxs)("div", {
-        className: s()(m.M0, l),
+        className: o()(m.M0, l),
         onDoubleClick: u,
         children: [(0, r.jsx)("div", {
             className: m.R4,
@@ -97,7 +97,7 @@ function S(e) {
             className: m.ZY,
             onDoubleClick: A,
             children: [a, d && (0, r.jsx)(I, {
-                windowKey: o,
+                windowKey: s,
                 showDivider: null != a
             })]
         })]
@@ -109,16 +109,16 @@ function T(e) {
         fixed: t = !1,
         show: n,
         windowKey: a
-    } = e, o = (0, p.getPlatform)(), u = i.useCallback(() => {
+    } = e, s = (0, p.getPlatform)(), u = i.useCallback(() => {
         c.A.isOpen() && (0, l.jD)()
     }, []), d = i.useCallback(() => {
         let e = c.A.getLastShowTimestamp();
         null != e && Date.now() - e < g || v(a)
-    }, [a]), f = o === p.PlatformTypes.WINDOWS;
-    if (o === p.PlatformTypes.WEB) return null;
-    let _ = f || o === p.PlatformTypes.LINUX;
+    }, [a]), f = s === p.PlatformTypes.WINDOWS;
+    if (s === p.PlatformTypes.WEB) return null;
+    let _ = f || s === p.PlatformTypes.LINUX;
     return (0, r.jsx)("div", {
-        className: s()(m.M0, m.bN, {
+        className: o()(m.M0, m.bN, {
             [m.Zu]: t,
             [m.WU]: n
         }),

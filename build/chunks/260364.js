@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(731738),
     i = n(183636),
     a = n(831062),
-    s = n(954571),
-    o = n(652215);
+    o = n(954571),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -28,7 +28,7 @@ class d {
         Math.random() > u || (a.A.distribution({
             name: r.K.QUEST_BAR_RENDER_DELAY,
             tags: ["quest_id:".concat(e), "timeout:".concat(t)]
-        }, n), s.default.track(o.HAw.QUEST_BAR_RENDER_DELAY, {
+        }, n), o.default.track(s.HAw.QUEST_BAR_RENDER_DELAY, {
             quest_id: e,
             timeout: t,
             duration: n

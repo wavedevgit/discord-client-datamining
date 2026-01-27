@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(811024),
     a = n(782091),
-    s = n(847381),
-    o = n(849269),
+    o = n(847381),
+    s = n(849269),
     l = n(611010),
     c = n(576705),
     u = n(723702),
@@ -26,18 +26,18 @@ function p(e) {
         g = (0, a.et)(null == h ? void 0 : h.id),
         E = !1;
     switch (_) {
-        case o.o6.LEAVE:
+        case s.o6.LEAVE:
             E = !1;
             break;
-        case o.o6.START:
+        case s.o6.START:
             null == h ? E = !1 : (null == h ? void 0 : h.isGuildVoice()) ? g !== a.xy.CAN_LAUNCH && (E = !0) : (0, i.pE)(h) || (E = !0);
             break;
-        case o.o6.JOIN:
+        case s.o6.JOIN:
             (null == h ? void 0 : h.isGuildVoice()) ? E = !m: (0, i.pE)(h) || (E = !0)
     }
-    if (_ !== o.o6.LEAVE) {
+    if (_ !== s.o6.LEAVE) {
         let e = p instanceof l.Ay ? p.embeddedActivityConfig : p.embedded_activity_config,
-            n = (0, s.A)((0, u.getOS)());
+            n = (0, o.A)((0, u.getOS)());
         null == e || e.supported_platforms.includes(n) ? (null == h ? void 0 : h.isThread()) && (E = !0, t = f.intl.string(f.t.ddSR3v)) : (E = !1, t = f.intl.string(f.t.z2YTgJ))
     }
     return E && null == t && (t = f.intl.string(f.t.f41E1g)), {

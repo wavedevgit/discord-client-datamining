@@ -4,11 +4,11 @@
 var r = n(380744),
     i = n(482779),
     a = n(4940).f,
-    s = r("unscopables"),
-    o = Array.prototype;
-void 0 === o[s] && a(o, s, {
+    o = r("unscopables"),
+    s = Array.prototype;
+void 0 === s[o] && a(s, o, {
     configurable: !0,
     value: i(null)
 }), e.exports = function(e) {
-    o[s][e] = !0
+    s[o][e] = !0
 }

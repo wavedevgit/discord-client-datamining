@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 395405, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(923408),
     p = n(297413),
     f = n(555337),
-    b = n(645619),
-    h = n(434564),
+    h = n(645619),
+    b = n(434564),
     x = n(199139),
     j = n(636585),
     _ = n(859241),
@@ -251,11 +251,11 @@ class P extends i.Component {
         }, n))
     }
 }
-let w = c.Ay.connectStores([v.A, b.A, f.A, _.A, y.default, O.Ay], () => {
+let w = c.Ay.connectStores([v.A, h.A, f.A, _.A, y.default, O.Ay], () => {
     var e, t;
     let n = f.A.getGuildId(),
         r = null != (e = null == (t = v.A.getGuild(n)) ? void 0 : t.premiumTier) ? e : N.TVA.NONE,
-        i = (0, h.G)(n),
+        i = (0, b.G)(n),
         l = null != n ? _.A.getAppliedGuildBoostsForGuild(n) : null,
         s = o()(null != l ? l : []).uniqBy(e => e.userId),
         a = s.map(e => ({

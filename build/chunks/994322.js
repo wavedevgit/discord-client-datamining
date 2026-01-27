@@ -1,27 +1,26 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 994322, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o,
-    F: () => l
+    A: () => a,
+    F: () => o
 });
-var r = n(311907),
-    i = n(87001),
-    a = n(641376),
-    s = n(652215);
+var i = n(311907),
+    s = n(87001),
+    l = n(641376),
+    r = n(652215);
 
-function o(e) {
+function a(e) {
     let {
         location: t,
         options: n
-    } = e, r = l(), {
-        showKeybindIndicators: i
-    } = a.A.useExperiment({
+    } = e, i = o(), {
+        showKeybindIndicators: s
+    } = l.A.useExperiment({
         location: t
     }, n);
-    return i && r
+    return s && i
 }
 
-function l() {
-    return !(0, r.bG)([i.A], () => i.A.getWindowVisible(s.MLl.ACTIVITY_POPOUT))
+function o() {
+    return !(0, i.bG)([s.A], () => s.A.getWindowVisible(r.MLl.ACTIVITY_POPOUT))
 }

@@ -1,12 +1,12 @@
 /** Chunk was on 95481 **/
 /** chunk id: 22104, original params: t,e,n (module,exports,require) **/
 n.r(e), n.d(e, {
-    default: () => s,
-    messagesLoader: () => r
+    default: () => l,
+    messagesLoader: () => i
 });
 let {
-    createLoader: i
-} = n(932433), r = i({
+    createLoader: r
+} = n(932433), i = r({
     bg: () => n.e("78204").then(n.t.bind(n, 137527, 19)),
     cs: () => n.e("94155").then(n.t.bind(n, 270822, 19)),
     da: () => n.e("14636").then(n.t.bind(n, 970087, 19)),
@@ -39,5 +39,5 @@ let {
     "zh-TW": () => n.e("62311").then(n.t.bind(n, 95578, 19)),
     "en-US": () => n.e("2814").then(n.bind(n, 282285))
 }, "en-US"), {
-    makeMessagesProxy: l
-} = n(932433), s = l(r)
+    makeMessagesProxy: a
+} = n(932433), l = a(i)

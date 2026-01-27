@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(563014),
     c = n(885621),
     u = n(658122);
@@ -72,10 +72,10 @@ function h(e) {
             if (null == m) return !1;
             e.shiftKey && g || E || y(), e.persist(), requestAnimationFrame(() => m(e))
         }, [m, y, g, E]),
-        v = p ? s()(u.item, c.jV[n], {
+        v = p ? o()(u.item, c.jV[n], {
             [u.focused]: a
         }) : u.customItem;
-    return (0, r.jsx)(o.DUT, _(f({
+    return (0, r.jsx)(s.DUT, _(f({
         innerRef: b,
         className: v,
         onClick: d ? void 0 : O,

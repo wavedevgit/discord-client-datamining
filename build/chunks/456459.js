@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(158954),
-    s = n(311907),
-    o = n(775602),
+    o = n(311907),
+    s = n(775602),
     l = n(524246),
     c = n(816252),
     u = n(916974),
@@ -25,7 +25,7 @@ let m = () => {
         confettiCanvas: m,
         churnUserDiscountOffer: g,
         discountedPrice: E
-    } = (0, u.X)(), y = (0, i.useRef)(null), [b, O] = (0, i.useState)(!1), v = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+    } = (0, u.X)(), y = (0, i.useRef)(null), [b, O] = (0, i.useState)(!1), v = (0, o.bG)([s.A], () => s.A.useReducedMotion);
     if ((0, i.useEffect)(() => {
             null !== y.current && null !== E && O(!0)
         }, [y, E]), null === g) return null;

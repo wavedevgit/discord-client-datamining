@@ -2,7 +2,7 @@
 /** chunk id: 767413, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(860407),
     i = n(180944);
@@ -15,12 +15,12 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s {
+class o {
     get prefix() {
         return this.table.prefix
     }
     withoutLogging() {
-        return new s(this.originalPrefix, this.table.tableId, this.table.database, !1)
+        return new o(this.originalPrefix, this.table.tableId, this.table.database, !1)
     }
     get(e, t, n) {
         return this.table.get([e, t, c(n)])
@@ -59,21 +59,21 @@ class s {
         return this.table.delete([e, t, c(n)])
     }
     transaction(e, t) {
-        return this.table.transaction(t => e(new o(t)), t)
+        return this.table.transaction(t => e(new s(t)), t)
     }
     upgradeTransaction(e) {
-        return new o(this.table.upgradeTransaction(e))
+        return new s(this.table.upgradeTransaction(e))
     }
     constructor(e, t, n, r = !0) {
         a(this, "originalPrefix", void 0), a(this, "table", void 0), this.originalPrefix = e, this.table = new i.X([e], t, n, r)
     }
 }
-class o {
+class s {
     static fromTableTransaction(e) {
-        return new o(e)
+        return new s(e)
     }
     static fromDatabaseTransaction(e, t, n) {
-        return new o(new i.l(e, t, n))
+        return new s(new i.l(e, t, n))
     }
     put(e, t, n) {
         let i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : r.hh.Replace;

@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 278616, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    R: () => o,
-    g: () => l
+    R: () => a,
+    g: () => o
 });
 var r = n(417597),
     i = n(617617),
-    a = n(632119),
+    l = n(632119),
     s = n(444802);
-let o = () => {
+let a = () => {
         let e = (0, r.cf)([i.A], () => {
             var e, t;
-            return null != (e = null == (t = i.A.settings.textAndImages) ? void 0 : t.explicitContentSettings) ? e : (0, a.C$)()
+            return null != (e = null == (t = i.A.settings.textAndImages) ? void 0 : t.explicitContentSettings) ? e : (0, l.C$)()
         });
         return {
-            explicitContentGuilds: (0, a.Ys)({
+            explicitContentGuilds: (0, l.Ys)({
                 setting: null == e ? void 0 : e.explicitContentGuilds
             }),
-            explicitContentNonFriendDm: (0, a.Ys)({
+            explicitContentNonFriendDm: (0, l.Ys)({
                 setting: null == e ? void 0 : e.explicitContentNonFriendDm,
                 isDm: !0
             }),
-            explicitContentFriendDm: (0, a.Ys)({
+            explicitContentFriendDm: (0, l.Ys)({
                 setting: null == e ? void 0 : e.explicitContentFriendDm,
                 isDm: !0,
                 isFriend: !0
             })
         }
     },
-    l = () => {
+    o = () => {
         let e = (0, r.cf)([i.A], () => {
             var e, t;
             return null != (e = null == (t = i.A.settings.textAndImages) ? void 0 : t.goreContentSettings) ? e : (0, s.T4)()

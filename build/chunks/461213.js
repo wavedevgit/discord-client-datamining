@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(896048), n(638769), n(938796);
 var r, i = n(812729),
     a = n.n(i),
-    s = n(735438),
-    o = n.n(s),
+    o = n(735438),
+    s = n.n(o),
     l = n(665260),
     c = n(311907),
     u = n(73153),
@@ -41,11 +41,11 @@ let I = !1,
     R = !1,
     P = !0,
     D = Object.freeze([]),
-    x = Object.freeze([]),
-    L = [],
-    j = [];
+    L = Object.freeze([]),
+    x = [],
+    M = [];
 
-function M(e) {
+function j(e) {
     if (0 === e.length) return e;
     let t = [],
         n = [];
@@ -79,11 +79,11 @@ function G(e) {
     }
 }
 
-function V() {
-    P = !0, T = S, F()
+function F() {
+    P = !0, T = S, V()
 }
 
-function F() {
+function V() {
     var e;
     if (C = null != (e = g.A.getIdleSince()) ? e : 0, R = g.A.isAFK(), P) S = T;
     else if (I) S = v.clD.INVISIBLE;
@@ -94,23 +94,23 @@ function F() {
     S === v.clD.ONLINE && C > 0 && (S = v.clD.IDLE);
     let t = !1,
         n = P || S === v.clD.INVISIBLE ? [] : y.A.getActivities().filter(G);
-    a()(N, n) || (N = n, w = M(n), t = !0);
+    a()(N, n) || (N = n, w = j(n), t = !0);
     let r = O.A.getRemoteActivities();
     D !== r && (D = r, t = !0);
     let i = O.A.getHiddenActivities();
-    x !== i && (x = i), t && (j = M(L = o()([...N, ...D.filter(e => e.type !== v.$pd.CUSTOM_STATUS)].sort(b.m)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
+    L !== i && (L = i), t && (M = j(x = s()([...N, ...D.filter(e => e.type !== v.$pd.CUSTOM_STATUS)].sort(b.m)).uniqBy(e => "".concat(e.type, ":").concat(e.application_id, ":").concat(e.name)).value()))
 }
 
 function B(e) {
-    return I = e.invisible, F()
+    return I = e.invisible, V()
 }
 
 function H() {
-    return I = !1, F()
+    return I = !1, V()
 }
 
 function Y() {
-    P = !1, T = v.clD.UNKNOWN, F(), b.A.setCurrentUserOnConnectionOpen(S, L)
+    P = !1, T = v.clD.UNKNOWN, V(), b.A.setCurrentUserOnConnectionOpen(S, x)
 }
 
 function W() {
@@ -118,7 +118,7 @@ function W() {
 }
 class K extends(r = c.Ay.Store) {
     initialize() {
-        this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], F)
+        this.waitFor(m.A, g.A, E.A, y.A, b.A, O.A, f.A, _.A), this.syncWith([y.A], V)
     }
     getLocalPresence() {
         return {
@@ -133,14 +133,14 @@ class K extends(r = c.Ay.Store) {
     }
     getActivities() {
         let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-        return e ? j : w
+        return e ? M : w
     }
     getUnfilteredActivities() {
         let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
-        return e ? L : N
+        return e ? x : N
     }
     getHiddenActivities() {
-        return x
+        return L
     }
     getPrimaryActivity() {
         let e = !(arguments.length > 0) || void 0 === arguments[0] || arguments[0];
@@ -157,25 +157,25 @@ class K extends(r = c.Ay.Store) {
 }
 A(K, "displayName", "SelfPresenceStore");
 let z = new K(u.h, {
-    START_SESSION: F,
+    START_SESSION: V,
     CONNECTION_OPEN: W,
     CONNECTION_OPEN_SUPPLEMENTAL: Y,
     OVERLAY_INITIALIZE: Y,
-    CONNECTION_CLOSED: F,
-    IDLE: F,
-    AFK: F,
-    RUNNING_GAMES_CHANGE: F,
-    STREAMING_UPDATE: F,
-    USER_SETTINGS_PROTO_UPDATE: F,
-    LOCAL_ACTIVITY_UPDATE: F,
-    SPOTIFY_PLAYER_STATE: F,
-    SPOTIFY_PLAYER_PLAY: F,
-    USER_CONNECTIONS_UPDATE: F,
-    SESSIONS_REPLACE: F,
-    RPC_APP_DISCONNECTED: F,
-    LIBRARY_FETCH_SUCCESS: F,
-    LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: F,
-    LOGOUT: V,
+    CONNECTION_CLOSED: V,
+    IDLE: V,
+    AFK: V,
+    RUNNING_GAMES_CHANGE: V,
+    STREAMING_UPDATE: V,
+    USER_SETTINGS_PROTO_UPDATE: V,
+    LOCAL_ACTIVITY_UPDATE: V,
+    SPOTIFY_PLAYER_STATE: V,
+    SPOTIFY_PLAYER_PLAY: V,
+    USER_CONNECTIONS_UPDATE: V,
+    SESSIONS_REPLACE: V,
+    RPC_APP_DISCONNECTED: V,
+    LIBRARY_FETCH_SUCCESS: V,
+    LIBRARY_APPLICATION_FLAGS_UPDATE_SUCCESS: V,
+    LOGOUT: F,
     FORCE_INVISIBLE: B,
     WINDOW_FOCUS: H
 })

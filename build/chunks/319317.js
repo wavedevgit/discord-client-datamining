@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(989349),
     i = n.n(r),
     a = n(665260),
-    s = n(315069),
-    o = n(587895),
+    o = n(315069),
+    s = n(587895),
     l = n(557009),
     c = n(652215);
 
@@ -21,7 +21,7 @@ function u(e, t, n) {
     }) : e[t] = n, e
 }
 let d = "master";
-class f extends s.A {
+class f extends o.A {
     static createFromServer(e) {
         return new f({
             id: e.application.id,
@@ -98,7 +98,7 @@ class f extends s.A {
         return this.sku.id
     }
     getAnalyticsData() {
-        let e = o.A.getApplication(this.id);
+        let e = s.A.getApplication(this.id);
         return {
             application_id: null != e ? e.id : null,
             application_name: null != e ? e.name : null,

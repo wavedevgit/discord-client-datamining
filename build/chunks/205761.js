@@ -7,8 +7,8 @@ n.d(t, {
 }), n(747238), n(321073);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(283047),
     c = n(617617),
     u = n(734057),
@@ -111,7 +111,7 @@ function N() {
 let w = {
     pendingUsages: []
 };
-class R extends(r = s.Ay.PersistedStore) {
+class R extends(r = o.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(u.A, d.A, f.A, p.A, c.A), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && _.Ut1.test(e.key)), w = e), this.syncWith([c.A], N)
     }
@@ -143,7 +143,7 @@ class R extends(r = s.Ay.PersistedStore) {
     }
 }
 m(R, "displayName", "FrecencyStore"), m(R, "persistKey", "FrecencyStore");
-let P = new R(o.h, {
+let P = new R(s.h, {
     CHANNEL_SELECT: T,
     VOICE_CHANNEL_SELECT: T,
     USER_SETTINGS_PROTO_UPDATE: C

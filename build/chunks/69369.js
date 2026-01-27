@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = 6048e5,
+let s = 6048e5,
     l = {
         installedDiscordPrivateBrowsingPerk: !1,
         installedDate: null
@@ -30,14 +30,14 @@ class u extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         if (null != e) {
             let t = Date.now();
-            null != e.installedDate && t - e.installedDate < o && (l.installedDiscordPrivateBrowsingPerk = e.installedDiscordPrivateBrowsingPerk, l.installedDate = e.installedDate)
+            null != e.installedDate && t - e.installedDate < s && (l.installedDiscordPrivateBrowsingPerk = e.installedDiscordPrivateBrowsingPerk, l.installedDate = e.installedDate)
         }
     }
     getState() {
         return l
     }
 }
-s(u, "displayName", "PrivateBrowsingPerkSettingsStore"), s(u, "persistKey", "PrivateBrowsingPerkSettingsStore");
+o(u, "displayName", "PrivateBrowsingPerkSettingsStore"), o(u, "persistKey", "PrivateBrowsingPerkSettingsStore");
 let d = new u(a.h, {
     PRIVATE_BROWSING_PERK_SETTINGS_INSTALL_DISCORD: c
 })

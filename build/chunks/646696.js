@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(183636),
     a = n(927813),
-    s = n(67486),
-    o = n(829219),
+    o = n(67486),
+    s = n(829219),
     l = n(859703),
     c = n(341915),
     u = n(245853),
@@ -34,7 +34,7 @@ class O extends r.A {
     _fetch(e) {
         if (!(0, p.s)({
                 location: _.rE.QUESTS_MANAGER
-            }) || l.A.isFetchingCurrentQuests || (0, s.I)() || ((0, o.N1)(), u.Bw.getConfig({
+            }) || l.A.isFetchingCurrentQuests || (0, o.I)() || ((0, s.N1)(), u.Bw.getConfig({
                 location: _.rE.QUESTS_MANAGER
             }).enabled && "focused" !== i.A.getState())) return;
         let {
@@ -42,7 +42,7 @@ class O extends r.A {
         } = f.A.getConfig({
             location: "QuestFetchManager"
         });
-        t || (0, o.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
+        t || (0, s.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
     }
     constructor(...e) {
         super(...e), h(this, "instantiatedAt", Date.now()), h(this, "initialFetchTimerId", null), h(this, "recurringFetchTimerId", null), h(this, "lastFetchAttemptedAt", 0), h(this, "lastFetchedQuestForLocaleChangeAt", 0), h(this, "handleQuestsFetchCurrentQuestsBegin", () => {

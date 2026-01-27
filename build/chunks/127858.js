@@ -2,20 +2,20 @@
 /** chunk id: 127858, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(355418),
     i = n(658809),
     a = n(996483);
-let s = /(ora|oggi|stasera|questa sera|domani|dmn|ieri\s*sera)(?=\W|$)/i;
-class o extends r.c {
+let o = /(ora|oggi|stasera|questa sera|domani|dmn|ieri\s*sera)(?=\W|$)/i;
+class s extends r.c {
     innerPattern(e) {
-        return s
+        return o
     }
     innerExtract(e, t) {
         let n = e.refDate,
             r = t[0].toLowerCase(),
-            s = e.createParsingComponents();
+            o = e.createParsingComponents();
         switch (r) {
             case "ora":
                 return a.tB(e.reference);
@@ -34,9 +34,9 @@ class o extends r.c {
                     if (n.getHours() > 6) {
                         let e = new Date(n.getTime());
                         e.setDate(e.getDate() - 1), n = e
-                    }(0, i.Pl)(s, n), s.imply("hour", 0)
+                    }(0, i.Pl)(o, n), o.imply("hour", 0)
                 }
         }
-        return s
+        return o
     }
 }

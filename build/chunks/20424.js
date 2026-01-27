@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(633075),
     a = n(289173),
-    s = n(950191),
-    o = n(403362),
+    o = n(950191),
+    s = n(403362),
     l = n(916023),
     c = n(501838),
     u = n(188275);
@@ -18,7 +18,7 @@ function d(e) {
     let {
         displayProfile: t,
         location: n
-    } = e, s = (0, l.kt)({
+    } = e, o = (0, l.kt)({
         location: n
     }), d = r.useMemo(() => (null == t ? void 0 : t.userId) != null ? [t.userId] : [], [t]), f = (0, c.gT)({
         gameIds: u.sQ,
@@ -31,12 +31,12 @@ function d(e) {
         guildIdsWithGameStores: u.tC
     }), h = r.useMemo(() => {
         if ((null == t ? void 0 : t.widgets) == null) return !1;
-        let e = new Set(null == t ? void 0 : t.widgets.map(e => e instanceof a.Yy ? e.games.map(e => e.applicationId) : e instanceof i.R ? e.applicationId : void 0).filter(o.Vq).flat());
+        let e = new Set(null == t ? void 0 : t.widgets.map(e => e instanceof a.Yy ? e.games.map(e => e.applicationId) : e instanceof i.R ? e.applicationId : void 0).filter(s.Vq).flat());
         for (let t of u.sQ)
             if (e.has(t)) return !0;
         return !1
     }, [null == t ? void 0 : t.widgets]);
-    return (null == t ? void 0 : t.application) == null && s && (f || p || _ || h)
+    return (null == t ? void 0 : t.application) == null && o && (f || p || _ || h)
 }
 
 function f(e) {
@@ -45,7 +45,7 @@ function f(e) {
         location: n
     } = e;
     return d({
-        displayProfile: (0, s.Ay)(t),
+        displayProfile: (0, o.Ay)(t),
         location: n
     })
 }

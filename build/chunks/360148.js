@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(651162),
     i = n(510801),
     a = n(419709),
-    s = n(319835),
-    o = n(85073),
+    o = n(319835),
+    s = n(85073),
     l = n(793295),
     c = n(824699),
     u = n(53941),
@@ -35,7 +35,7 @@ class h {
                 case r.g.HERO:
                     return c.B.fromServer(e);
                 case r.g.FEATURED:
-                    return o.t.fromServer(e);
+                    return s.t.fromServer(e);
                 case r.g.FEED:
                     return l.l.fromServer(e);
                 case r.g.WIDE_BANNER:
@@ -43,7 +43,7 @@ class h {
                 case r.g.SHELF:
                     return f.r.fromServer(e);
                 case r.g.COUNTDOWN_TIMER:
-                    return s.z.fromServer(e);
+                    return o.z.fromServer(e);
                 case r.g.IMMERSIVE_BANNER:
                     return u.A.fromServer(e);
                 case r.g.REWARD_HERO:

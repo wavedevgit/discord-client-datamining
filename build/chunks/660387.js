@@ -2,18 +2,18 @@
 /** chunk id: 660387, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    F: () => s
+    F: () => o
 }), n(311907);
 var r = n(812808),
     i = n(943577),
     a = n(954571);
 
-function s() {
+function o() {
     let e = (0, r.B)();
-    return o(i.A.nowPlayingCards, e)
+    return s(i.A.nowPlayingCards, e)
 }
 
-function o(e, t) {
+function s(e, t) {
     let n = e.reduce((e, t) => {
         var n;
         let r = null != (n = t.party.currentActivities.filter(e => null != e.game.name && (0, a.isGameApplicationType)(e.game.type)).map(e => e.game.name)) ? n : [];

@@ -1,8 +1,8 @@
-/** Chunk was on web.js **/
-/** chunk id: 812415, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 812415, original params: t,e,r (module,exports,require) **/
 "use strict";
-var r = n(410475);
-e.exports = function(e) {
-    var t = e.getSelection();
-    return t.isCollapsed() ? null : r(e.getCurrentContent(), t)
+var n = r(410475);
+t.exports = function(t) {
+    var e = t.getSelection();
+    return e.isCollapsed() ? null : n(t.getCurrentContent(), e)
 }

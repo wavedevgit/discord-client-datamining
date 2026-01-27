@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(734057),
     u = n(576705),
@@ -23,13 +23,13 @@ function h(e) {
         noText: n,
         noImage: i,
         previewText: a,
-        className: o
+        className: s
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(_.Hd, o),
+        className: o()(_.Hd, s),
         children: t ? (0, r.jsx)(l.y$y, {}) : (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
-                className: s()(_.js, {
+                className: o()(_.js, {
                     [_.$0]: i
                 })
             }), n ? null : (0, r.jsx)(l.Text, {
@@ -47,8 +47,8 @@ function m(e) {
         stream: t,
         className: n,
         noText: a = !1,
-        noImage: s = !1
-    } = e, l = (0, o.bG)([c.A], () => c.A.getBasicChannel(t.channelId)), m = (0, o.bG)([u.A], () => null != l && u.A.canBasicChannel(f.hVb.CONNECT, l)), {
+        noImage: o = !1
+    } = e, l = (0, s.bG)([c.A], () => c.A.getBasicChannel(t.channelId)), m = (0, s.bG)([u.A], () => null != l && u.A.canBasicChannel(f.hVb.CONNECT, l)), {
         previewUrl: g,
         isLoading: E
     } = (0, d.A)(t.guildId, t.channelId, t.ownerId), y = i.useRef(E ? null : g);
@@ -60,7 +60,7 @@ function m(e) {
         className: n,
         isLoading: E,
         noText: a,
-        noImage: s,
+        noImage: o,
         previewText: m ? void 0 : p.intl.string(p.t.pgUTZC)
     }) : (0, r.jsx)("div", {
         className: n,

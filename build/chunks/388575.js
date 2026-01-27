@@ -8,7 +8,7 @@ var r = n(11057),
     i = n(439372),
     a = n(822382);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends i.A {
+class s extends i.A {
     _initialize() {
         this._unsubscribeIntlLoadingStore = (0, r.I)(a.IY)
     }
@@ -25,10 +25,10 @@ class o extends i.A {
         null == (e = (t = this)._unsubscribeIntlLoadingStore) || e.call(t)
     }
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             USER_SETTINGS_PROTO_UPDATE: a.IY,
             POST_CONNECTION_OPEN: a.IY
-        }), s(this, "_unsubscribeIntlLoadingStore", void 0)
+        }), o(this, "_unsubscribeIntlLoadingStore", void 0)
     }
 }
-let l = new o
+let l = new s

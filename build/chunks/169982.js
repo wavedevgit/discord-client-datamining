@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(481613),
-    s = n.n(a),
-    o = n(422998),
+    o = n.n(a),
+    s = n(422998),
     l = n(311907),
     c = n(838677),
     u = n(397927),
@@ -44,7 +44,7 @@ let A = l.Ay.connectStores([p.A], () => ({
 class I extends i.PureComponent {
     getPlatform() {
         var e;
-        let t = null == (e = s().os) ? void 0 : e.family;
+        let t = null == (e = o().os) ? void 0 : e.family;
         return null != t && /^win/i.test(t) ? m.PlatformTypes.WINDOWS : null != t && /darwin|os x/i.test(t) ? m.PlatformTypes.OSX : m.PlatformTypes.LINUX
     }
     componentDidMount() {
@@ -61,7 +61,7 @@ class I extends i.PureComponent {
             })
         });
         return (0, r.jsxs)(i.Fragment, {
-            children: [(0, r.jsx)(o.mg, {
+            children: [(0, r.jsx)(s.mg, {
                 children: (0, r.jsx)("html", {
                     className: (0, u.mo9)(y.NJ8.DARK)
                 })

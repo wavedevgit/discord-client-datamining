@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 699443, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Gn: () => a,
+    Gn: () => l,
     WF: () => s,
     a1: () => i,
-    s: () => o
+    s: () => a
 });
 var r = n(627968);
 let i = () => (0, r.jsxs)("svg", {
@@ -54,7 +53,7 @@ let i = () => (0, r.jsxs)("svg", {
             })
         })]
     }),
-    a = () => (0, r.jsxs)("svg", {
+    l = () => (0, r.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",
@@ -129,7 +128,7 @@ let i = () => (0, r.jsxs)("svg", {
             })
         })]
     }),
-    o = () => (0, r.jsxs)("svg", {
+    a = () => (0, r.jsxs)("svg", {
         width: "20",
         height: "20",
         viewBox: "0 0 20 20",

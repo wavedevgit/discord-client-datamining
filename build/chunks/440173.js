@@ -24,7 +24,7 @@ function b(e) {
         var e;
         return null == (e = y.current) ? void 0 : e.call(y)
     }, []), (0, n.jsxs)(i.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-migrated-auto": !0,
         navId: "overlay-video-widget-context-menu",
         onClose: l.Z_,
         "aria-label": s.intl.string(s.t.tPfVWi),

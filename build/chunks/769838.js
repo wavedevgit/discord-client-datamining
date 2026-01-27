@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 769838, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => f
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
-    a = n(397927),
+    l = n(397927),
     s = n(688810),
-    o = n(195043),
-    l = n(253932),
+    a = n(195043),
+    o = n(253932),
     c = n(698723),
-    u = n(531525),
-    d = n(985018);
+    d = n(531525),
+    u = n(985018);
 
-function f() {
-    let e = l.uh.useSetting(),
+function _() {
+    let e = o.uh.useSetting(),
         {
             analyticsLocations: t
         } = (0, s.Ay)(),
         n = i.useCallback(e => {
-            (0, c.A)("stream_previews_disabled", e, l.uh.getSetting(), t), l.uh.updateSetting(e)
+            (0, c.A)("stream_previews_disabled", e, o.uh.getSetting(), t), o.uh.updateSetting(e)
         }, [t]);
-    return (0, r.jsx)(o.x, {
-        setting: u.H.VOICE_AND_VIDEO_STREAM_PREVIEWS,
-        children: (0, r.jsx)(a.dOG, {
-            label: d.intl.string(d.t["1CzWUK"]),
-            description: d.intl.string(d.t.jTNPHM),
+    return (0, r.jsx)(a.x, {
+        setting: d.H.VOICE_AND_VIDEO_STREAM_PREVIEWS,
+        children: (0, r.jsx)(l.dOG, {
+            label: u.intl.string(u.t["1CzWUK"]),
+            description: u.intl.string(u.t.jTNPHM),
             checked: e,
             onChange: n
         })

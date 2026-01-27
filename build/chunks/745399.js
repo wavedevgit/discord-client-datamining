@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 745399, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => h
 }), n(747238);
@@ -10,9 +9,9 @@ var r, i = n(627968),
     a = n(854378),
     o = n(976860),
     c = n(210714),
-    u = n(58013);
+    d = n(58013);
 
-function d(e, t, n) {
+function u(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -33,14 +32,14 @@ class h extends(r = s.PureComponent) {
             style: {
                 padding: 0
             },
-            children: (0, i.jsx)(u.A, function(e) {
+            children: (0, i.jsx)(d.A, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         r = Object.keys(n);
                     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                         return Object.getOwnPropertyDescriptor(n, e).enumerable
                     }))), r.forEach(function(t) {
-                        d(e, t, n[t])
+                        u(e, t, n[t])
                     })
                 }
                 return e
@@ -51,7 +50,7 @@ class h extends(r = s.PureComponent) {
         })
     }
 }
-d(h, "defaultProps", {
+u(h, "defaultProps", {
     transitionTo: o.pX,
     replaceWith: o.bG
 })

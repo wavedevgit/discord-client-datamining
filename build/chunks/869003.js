@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(158954),
     a = n(397927),
-    s = n(73153),
-    o = n(87001),
+    o = n(73153),
+    s = n(87001),
     l = n(574172),
     c = n(378570),
     u = n(646865),
@@ -48,10 +48,10 @@ let v = !1,
     A = !1;
 class I extends f.A {
     _initialize() {
-        super._initialize(), o.A.addChangeListener(this.handlePopoutWindowUpdate), s.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+        super._initialize(), s.A.addChangeListener(this.handlePopoutWindowUpdate), o.h.subscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
     }
     _terminate() {
-        super._terminate(), o.A.removeChangeListener(this.handlePopoutWindowUpdate), s.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
+        super._terminate(), s.A.removeChangeListener(this.handlePopoutWindowUpdate), o.h.unsubscribe("POPOUT_WINDOW_OPEN", this.handlePopoutWindowOpen)
     }
     showErrorModal(e) {
         let {
@@ -91,7 +91,7 @@ class I extends f.A {
             showFeedback: r,
             shouldClosePopout: i = !0
         } = e;
-        s.h.wait(() => {
+        o.h.wait(() => {
             (0, d._H)({
                 location: t,
                 applicationId: n,
@@ -131,7 +131,7 @@ class I extends f.A {
             }
         }), b(this, "handlePopoutWindowUpdate", () => {
             let e = v,
-                t = o.A.getWindowOpen(E.MLl.ACTIVITY_POPOUT);
+                t = s.A.getWindowOpen(E.MLl.ACTIVITY_POPOUT);
             if (e && !t && !A) {
                 let e = p.Ay.getCurrentEmbeddedActivity();
                 null != e && this.leaveActivity({

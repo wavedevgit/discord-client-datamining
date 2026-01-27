@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(110259),
     a = n(311907),
-    s = n(139286),
-    o = n(989837),
+    o = n(139286),
+    s = n(989837),
     l = n(520117);
 let c = 1e3;
 
@@ -21,8 +21,8 @@ function u(e) {
         sectionOverallPosition: f,
         promotionalLabel: p,
         numFriendsWhoPlay: _
-    } = e, h = (0, a.bG)([o.A], () => o.A.entrypoint()), m = r.useCallback(() => {
-        (0, s.x)({
+    } = e, h = (0, a.bG)([s.A], () => s.A.entrypoint()), m = r.useCallback(() => {
+        (0, o.x)({
             type: i.ImpressionTypes.VIEW,
             name: i.ImpressionNames.APP_LAUNCHER_ITEM,
             properties: {

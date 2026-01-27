@@ -7,9 +7,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(927813);
+    o = n(927813);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -67,7 +67,7 @@ function h(e) {
         retryAfterSeconds: t
     } = e;
     if (c.fetchState = 3, null != t) {
-        let e = t * s.A.Millis.SECOND;
+        let e = t * o.A.Millis.SECOND;
         c.nextFetchRetryTimeMs = Date.now() + e
     }
 }
@@ -114,7 +114,7 @@ class E extends(r = i.Ay.PersistedStore) {
         return c.fetchState
     }
 }
-o(E, "displayName", "MyGuildApplicationsStore"), o(E, "persistKey", "MyGuildApplicationsStore");
+s(E, "displayName", "MyGuildApplicationsStore"), s(E, "persistKey", "MyGuildApplicationsStore");
 let y = new E(a.h, {
     LOGOUT: u,
     FETCH_INTEGRATION_APPLICATION_IDS_FOR_MY_GUILDS: d,

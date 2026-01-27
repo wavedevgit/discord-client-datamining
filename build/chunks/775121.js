@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(507392),
     i = n.n(r),
     a = n(64460),
-    s = n(626584),
-    o = n(549205),
+    o = n(626584),
+    s = n(549205),
     l = n(954571),
     c = n(723702),
     u = n(652215);
 let d = {},
     f = [],
     p = !1,
-    _ = (0, o.I)(window),
+    _ = (0, s.I)(window),
     h = (0, c.isMac)() || (0, c.isMacWeb)() ? "cmd" : "ctrl",
     m = (0, c.isMac)() || (0, c.isMacWeb)() ? "opt" : "alt",
     g = (0, c.isMac)() || (0, c.isMacWeb)() ? "return" : "enter",
@@ -67,7 +67,7 @@ let S = {
         let t = new Set,
             n = [];
         for (let r of v(e)) t.has(r) && n.push(r), t.add(r);
-        n.length > 0 && new s.A("Keybinds").warn("Duplicate keyboard shortcuts defined:", n)
+        n.length > 0 && new o.A("Keybinds").warn("Duplicate keyboard shortcuts defined:", n)
     },
     setLayout(e) {
         d = e

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(435371),
+    o = n.n(a),
+    s = n(435371),
     l = n(397927),
     c = n(985018),
     u = n(915534);
@@ -30,7 +30,7 @@ let d = i.forwardRef(function(e, t) {
             alt: c.intl.formatToPlainString(c.t["9+YWrE"], {
                 name: d
             }),
-            className: s()(u.U, n, {
+            className: o()(u.U, n, {
                 [u.v]: null != h
             }),
             height: _ ? f : void 0,
@@ -40,7 +40,7 @@ let d = i.forwardRef(function(e, t) {
         return (null != a && (e = (0, r.jsx)("img", {
             ref: t,
             alt: a.allNamesString,
-            className: s()(u.U, n, {
+            className: o()(u.U, n, {
                 [u.v]: null != h
             }),
             height: _ ? f : void 0,
@@ -62,7 +62,7 @@ let d = i.forwardRef(function(e, t) {
             children: e
         })
     };
-    return (0, r.jsx)(o.m_, {
+    return (0, r.jsx)(s.m_, {
         asContainer: !0,
         text: d,
         "aria-label": !1,

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(927578),
     c = n(580630),
     u = n(735164),
@@ -53,7 +53,7 @@ let h = () => {
         intervalType: S,
         intervalCount: T
     } = m, C = (0, c.CE)("".concat(g), S, T);
-    return (0, r.jsxs)(o.Modal, {
+    return (0, r.jsxs)(s.Modal, {
         size: "md",
         transitionState: e,
         title: "".concat(p.intl.format(p.t.LZunzZ, {
@@ -69,7 +69,7 @@ let h = () => {
         onClose: async () => a(),
         children: [(0, r.jsxs)(u.Yx, {
             isPremiumRebrand: !0,
-            className: s()({
+            className: o()({
                 [_.JD]: O
             }),
             children: [(0, r.jsx)(u.Xd, {
@@ -85,7 +85,7 @@ let h = () => {
                 renewalInvoice: n,
                 isUpdate: !0
             })]
-        }), O ? (0, r.jsx)(o.wx6, {
+        }), O ? (0, r.jsx)(s.wx6, {
             type: "critical",
             children: p.intl.string(p.t["5mlOCW"])
         }) : null]

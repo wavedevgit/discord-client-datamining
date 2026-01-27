@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(734057),
-    o = n(320501),
+    o = n(734057),
+    s = n(320501),
     l = n(661191);
 
 function c(e, t, n) {
@@ -119,8 +119,8 @@ function O(e) {
     if (null == e) return !1;
     let t = _[e];
     if (null == t) return !1;
-    let n = o.A.getMessage(e, t.messageId),
-        r = s.A.getChannel(t.channelId);
+    let n = s.A.getMessage(e, t.messageId),
+        r = o.A.getChannel(t.channelId);
     if (null == n || null == r) return !1;
     p[e] = {
         channel: r,
@@ -146,7 +146,7 @@ function A(e) {
 
 function I() {
     l.default.keys(_).forEach(e => {
-        null == s.A.getChannel(e) && delete _[e]
+        null == o.A.getChannel(e) && delete _[e]
     })
 }
 
@@ -165,7 +165,7 @@ class T extends(r = i.Ay.PersistedStore) {
         return u({}, _, e)
     }
     initialize(e) {
-        this.waitFor(o.A, s.A), _ = null != e ? e : {}
+        this.waitFor(s.A, o.A), _ = null != e ? e : {}
     }
     getPendingReply(e) {
         return p[e]

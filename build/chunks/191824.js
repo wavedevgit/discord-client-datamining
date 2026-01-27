@@ -7,11 +7,11 @@ n.d(t, {
 var r = n(615339),
     i = n(374372),
     a = n(355418);
-let s = RegExp(`(?:within|in|for)\\s*(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
-    o = RegExp(`(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i");
+let o = RegExp(`(?:within|in|for)\\s*(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i"),
+    s = RegExp(`(?:(?:pi\xf9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(${r.Pl})(?=\\W|$)`, "i");
 class l extends a.c {
     innerPattern(e) {
-        return e.option.forwardDate ? o : s
+        return e.option.forwardDate ? s : o
     }
     innerExtract(e, t) {
         let n = (0, r.E9)(t[1]);

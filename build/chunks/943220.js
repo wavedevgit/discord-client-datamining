@@ -1,67 +1,53 @@
-/** Chunk was on web.js **/
-/** chunk id: 943220, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => d
+/** Chunk was on 94857 **/
+/** chunk id: 943220, original params: e,s,t (module,exports,require) **/
+t.d(s, {
+    A: () => r
 });
-var r = n(627968);
-n(64700);
-var i = n(763754),
-    a = n(635071),
-    s = n(812299);
+var n = t(627968);
+t(64700);
+var l = t(763754),
+    a = t(635071),
+    i = t(812299);
 
-function o(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function l(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            o(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function c(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function u(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function d(e) {
-    var t, n;
-    let o = (0, i.Ay)(e.message),
-        c = (0, s.y)({
+function r(e) {
+    var s, t, r, o;
+    let c = (0, l.Ay)(e.message),
+        u = (0, i.y)({
             message: e.message,
             channel: e.channel,
-            user: null != (t = null == (n = e.message) ? void 0 : n.author) ? t : e.userOverride,
+            user: null != (s = null == (t = e.message) ? void 0 : t.author) ? s : e.userOverride,
             compact: !!e.compact,
             isRepliedMessage: !!e.isRepliedMessage
         }),
-        d = {};
-    return null != c && (d[a.w.SYSTEM_TAG] = c), (0, r.jsx)(a.A, u(l({}, e), {
-        author: o,
-        decorations: d
-    }))
+        m = {};
+    return null != u && (m[a.w.SYSTEM_TAG] = u), (0, n.jsx)(a.A, (r = function(e) {
+        for (var s = 1; s < arguments.length; s++) {
+            var t = null != arguments[s] ? arguments[s] : {},
+                n = Object.keys(t);
+            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                return Object.getOwnPropertyDescriptor(t, e).enumerable
+            }))), n.forEach(function(s) {
+                var n;
+                n = t[s], s in e ? Object.defineProperty(e, s, {
+                    value: n,
+                    enumerable: !0,
+                    configurable: !0,
+                    writable: !0
+                }) : e[s] = n
+            })
+        }
+        return e
+    }({}, e), o = o = {
+        author: c,
+        decorations: m
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, s) {
+        var t = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+            var n = Object.getOwnPropertySymbols(e);
+            t.push.apply(t, n)
+        }
+        return t
+    })(Object(o)).forEach(function(e) {
+        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(o, e))
+    }), r))
 }

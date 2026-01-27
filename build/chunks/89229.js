@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(299146),
     i = n(1139),
     a = n(527758),
-    s = n(47312);
+    o = n(47312);
 n(655972);
-var o = n(64700),
+var s = n(64700),
     l = n(167782),
     c = n(51813),
     u = Object.values || function(e) {
@@ -34,7 +34,7 @@ var o = n(64700),
                 handleExited: i,
                 firstRender: !0
             }, r
-        }(0, s.A)(t, e);
+        }(0, o.A)(t, e);
         var n = t.prototype;
         return n.componentDidMount = function() {
             this.mounted = !0, this.setState({
@@ -65,13 +65,13 @@ var o = n(64700),
                 n = e.childFactory,
                 i = (0, r.A)(e, ["component", "childFactory"]),
                 a = this.state.contextValue,
-                s = u(this.state.children).map(n);
-            return (delete i.appear, delete i.enter, delete i.exit, null === t) ? o.createElement(l.A.Provider, {
+                o = u(this.state.children).map(n);
+            return (delete i.appear, delete i.enter, delete i.exit, null === t) ? s.createElement(l.A.Provider, {
                 value: a
-            }, s) : o.createElement(l.A.Provider, {
+            }, o) : s.createElement(l.A.Provider, {
                 value: a
-            }, o.createElement(t, i, s))
+            }, s.createElement(t, i, o))
         }, t
-    }(o.Component);
+    }(s.Component);
 f.propTypes = {}, f.defaultProps = d;
 let p = f

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(954571),
-    o = n(500049),
+    o = n(954571),
+    s = n(500049),
     l = n(522305),
     c = n(652215),
     u = n(985018);
@@ -19,9 +19,9 @@ function d(e) {
         applicationId: n,
         analyticsLocations: d
     } = e, [f, p] = i.useState(!1), _ = i.useRef(null), h = i.useCallback(async () => {
-        s.default.track(c.HAw.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
+        o.default.track(c.HAw.APP_DETAIL_PAGE_ENTRY_POINT_COMMAND_BUTTON_CLICKED, {
             application_id: n,
-            button_action: o.F5.OPEN_APP_DM
+            button_action: s.F5.OPEN_APP_DM
         }), p(!0);
         try {
             await (0, l.Q)({

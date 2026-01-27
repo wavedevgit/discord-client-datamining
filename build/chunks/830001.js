@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 830001, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    f: () => m
+    f: () => v
 });
 var n = i(627968),
     l = i(934551),
@@ -40,7 +40,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
         StronglyDiscouragedCustomComponent: S.A,
         buildLayout: () => []
     }),
-    v = (0, E.t_)(O.X.PROFILE_PANEL, {
+    m = (0, E.t_)(O.X.PROFILE_PANEL, {
         usePredicate: () => (0, N.dk)("ProfilePanel"),
         useTitle: () => D.intl.string(D.t["vi7f+q"]),
         notice: {
@@ -52,11 +52,11 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
         }),
         buildLayout: () => [L.I]
     }),
-    m = (0, E.i4)(O.X.PROFILE_SIDEBAR_ITEM, {
+    v = (0, E.i4)(O.X.PROFILE_SIDEBAR_ITEM, {
         useTitle: () => D.intl.string(D.t["vi7f+q"]),
         getLegacySearchKey: () => (0, N.WJ)("ProfilePanel") ? void 0 : b.H.PROFILE_CUSTOMIZATION,
         icon: l.UserIcon,
-        stronglyDiscouragedCustomComponent: () => {
+        StronglyDiscouragedCustomComponent: () => {
             var t;
             let e = (0, s.bG)([I.default], () => I.default.getCurrentUser()),
                 {
@@ -99,5 +99,5 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
             type: _.S.BADGE_NEW,
             getDismissibleContentTypes: C.Jn
         },
-        buildLayout: () => (0, N.WJ)("ProfilePanel") ? [v] : [P]
+        buildLayout: () => (0, N.WJ)("ProfilePanel") ? [m] : [P]
     })

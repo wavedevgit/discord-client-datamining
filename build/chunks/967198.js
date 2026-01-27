@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(960488),
     a = n(311907),
-    s = n(73153),
-    o = n(212455),
+    o = n(73153),
+    s = n(212455),
     l = n(463347),
     c = n(976860),
     u = n(961350),
@@ -29,7 +29,7 @@ let h = -1,
     E = {};
 
 function y() {
-    null != m && null == f.A.getGuild(m) && null == o.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == o.A.getRequest(g) && (g = null), O(m)
+    null != m && null == f.A.getGuild(m) && null == s.A.getRequest(m) && (m = null), null != g && null == f.A.getGuild(g) && null == s.A.getRequest(g) && (g = null), O(m)
 }
 
 function b(e) {
@@ -77,9 +77,9 @@ function T() {
 class C extends(r = a.Ay.PersistedStore) {
     initialize(e) {
         var t, n, r, a;
-        this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.A, f.A, o.A), E = null != (t = null == e ? void 0 : e.selectedGuildTimestampMillis) ? t : {}, m = null != (n = null == e ? void 0 : e.selectedGuildId) ? n : null, g = null != (r = null == e ? void 0 : e.lastSelectedGuildId) ? r : null;
-        let s = d.A.lastNonVoiceRoute,
-            c = (0, i.B6)(s, {
+        this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type), this.waitFor(u.default, d.A, f.A, s.A), E = null != (t = null == e ? void 0 : e.selectedGuildTimestampMillis) ? t : {}, m = null != (n = null == e ? void 0 : e.selectedGuildId) ? n : null, g = null != (r = null == e ? void 0 : e.lastSelectedGuildId) ? r : null;
+        let o = d.A.lastNonVoiceRoute,
+            c = (0, i.B6)(o, {
                 path: p.BVt.CHANNEL(l.pv.guildId())
             });
         null == c || null == (a = c.params) || a.guildId
@@ -102,7 +102,7 @@ class C extends(r = a.Ay.PersistedStore) {
     }
 }
 _(C, "displayName", "SelectedGuildStore"), _(C, "persistKey", "SelectedGuildStore");
-let N = new C(s.h, {
+let N = new C(o.h, {
     CONNECTION_OPEN: y,
     OVERLAY_INITIALIZE: b,
     CHANNEL_SELECT: v,

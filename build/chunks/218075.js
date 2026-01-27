@@ -2,15 +2,15 @@
 /** chunk id: 218075, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    f: () => o,
+    f: () => s,
     j: () => l
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(985018),
-    s = n(39919),
-    o = function(e) {
+    o = n(39919),
+    s = function(e) {
         return e.SELECT_PAYMENT_METHOD = "SELECT_PAYMENT_METHOD", e.ADD_NEW_PAYMENT_METHOD = "ADD_NEW_PAYMENT_METHOD", e
     }({});
 
@@ -27,23 +27,23 @@ function l(e) {
             n = a.intl.string(a.t["6d44F5"])
     }
     return (0, r.jsxs)("div", {
-        className: s.Y4,
+        className: o.Y4,
         children: [(0, r.jsxs)("div", {
-            className: s.NX,
+            className: o.NX,
             children: [(0, r.jsx)(i.k9F, {
                 size: "md",
                 color: "white",
-                className: s.Kk
+                className: o.Kk
             }), (0, r.jsx)(i.k9F, {
                 size: "md",
                 color: "currentColor",
-                className: s.kV
+                className: o.kV
             })]
         }), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
             children: n
         }), (0, r.jsx)("div", {
-            className: s.u
+            className: o.u
         })]
     })
 }

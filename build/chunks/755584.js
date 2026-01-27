@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(110259),
     i = n(933681),
     a = n(73153),
-    s = n(568185),
-    o = n(543465),
+    o = n(568185),
+    s = n(543465),
     l = n(477427),
     c = n(499785),
     u = n(832712),
@@ -57,9 +57,9 @@ let p = {
                 }
             },
             rejectWithError: !1
-        }).then(e => (o.Ay.isOptInEnabled(t) && u.A.updateChannelOverrideSettings(t, e.body.id, {
+        }).then(e => (s.Ay.isOptInEnabled(t) && u.A.updateChannelOverrideSettings(t, e.body.id, {
             flags: f.vv.OPT_IN_ENABLED
-        }, l.fd.OptedIn), s.A.checkGuildTemplateDirty(t), e), e => {
+        }, l.fd.OptedIn), o.A.checkGuildTemplateDirty(t), e), e => {
             throw a.h.dispatch({
                 type: "CREATE_CHANNEL_MODAL_SUBMIT_FAILURE",
                 errors: e.body

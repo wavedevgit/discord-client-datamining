@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 48330 **/
 /** chunk id: 826383, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
-var r = n(64700),
-    i = n(311907),
-    a = n(285059),
+var l = n(64700),
+    r = n(311907),
+    i = n(285059),
     s = n(698441);
 
-function o(e, t, n) {
-    let o = (0, i.bG)([s.Ay], () => s.Ay.getUserCount(t, n));
-    return (0, r.useEffect)(() => {
-        null != e && null != t && a.A.getGuildEventUserCounts(e, t, null != n ? [n] : [])
-    }, [t, e, n]), o
+function a(e, t, n) {
+    let a = (0, r.bG)([s.Ay], () => s.Ay.getUserCount(t, n));
+    return (0, l.useEffect)(() => {
+        null != e && null != t && i.A.getGuildEventUserCounts(e, t, null != n ? [n] : [])
+    }, [t, e, n]), a
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 419707, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -21,8 +21,8 @@ let g = i.memo(function(e) {
         isExpanded: m,
         isStuck: p,
         onExpand: f,
-        disableAnimation: b,
-        disableBackground: h
+        disableAnimation: h,
+        disableBackground: b
     } = e, [x, j] = i.useState(!0), [_, O] = i.useState(!1), {
         ref: v,
         height: y = 0
@@ -66,7 +66,7 @@ let g = i.memo(function(e) {
         onRest: () => {
             O(!0)
         }
-    }, x || b ? "animate-never" : "respect-motion-settings");
+    }, x || h ? "animate-never" : "respect-motion-settings");
     return i.useLayoutEffect(() => {
         O(!1), S(m)
     }, [m]), i.useLayoutEffect(() => {
@@ -77,7 +77,7 @@ let g = i.memo(function(e) {
     }, []), (0, r.jsx)(o.DUT, {
         className: s()(u.Lo, {
             [u.$M]: m,
-            [u._$]: h
+            [u._$]: b
         }),
         children: (0, r.jsxs)(a.animated.div, {
             className: s()(u.N0, {

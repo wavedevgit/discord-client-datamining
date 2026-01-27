@@ -2,14 +2,14 @@
 /** chunk id: 291823, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    J: () => o
+    J: () => s
 });
 var r = n(686956),
     i = n(71393),
     a = n(287809),
-    s = n(248194);
+    o = n(248194);
 
-function o() {
+function s() {
     let e = a.default.getCurrentUser();
-    (null == e ? void 0 : e.isStaff()) && null != i.A.getGuild(s.U) && r.A.requestMembers(s.U, "", 0, !1)
+    (null == e ? void 0 : e.isStaff()) && null != i.A.getGuild(o.U) && r.A.requestMembers(o.U, "", 0, !1)
 }

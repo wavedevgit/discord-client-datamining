@@ -1,11 +1,11 @@
-/** Chunk was on 97492 **/
-/** chunk id: 168447, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    Y: () => i
+/** Chunk was on 96430 **/
+/** chunk id: 168447, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    Y: () => a
 });
 var r = n(311907),
-    l = n(349435);
+    i = n(349435);
 
-function i(e) {
-    return (0, r.bG)([l.Ay], () => l.Ay.getChannelSafetyWarnings(e), [e]).filter(e => e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_1 || e.type === l._j.INAPPROPRIATE_CONVERSATION_TIER_2)
+function a(t) {
+    return (0, r.bG)([i.Ay], () => i.Ay.getChannelSafetyWarnings(t), [t]).filter(t => t.type === i._j.INAPPROPRIATE_CONVERSATION_TIER_1 || t.type === i._j.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

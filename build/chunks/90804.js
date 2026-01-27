@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(717125),
     i = n(262763),
     a = n(721592),
-    s = n(734057),
-    o = n(576705),
+    o = n(734057),
+    s = n(576705),
     l = n(309010),
     c = n(977997);
 let u = 1e4;
@@ -18,13 +18,13 @@ async function f(e) {
         channelId: t,
         timeoutMs: n = u,
         bypassChangeModal: f = !1
-    } = e, p = s.A.getChannel(t);
+    } = e, p = o.A.getChannel(t);
     if (null == p || !await i.A.handleVoiceConnect({
             bypassGuildIdCheck: !0,
             bypassChangeModal: f,
             channel: p,
             connected: c.A.isInChannel(t),
-            needSubscriptionToAccess: (0, a.p)(t, s.A, r.A, o.A).needSubscriptionToAccess
+            needSubscriptionToAccess: (0, a.p)(t, o.A, r.A, s.A).needSubscriptionToAccess
         })) return !1;
     let _ = new Promise((e, r) => {
         let i = setTimeout(() => {

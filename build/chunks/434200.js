@@ -2,15 +2,15 @@
 /** chunk id: 434200, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(64700),
     i = n(311907),
     a = n(882997),
-    s = n(962173);
+    o = n(962173);
 
-function o(e) {
-    let t = (0, i.bG)([s.A], () => s.A.getAccounts().some(t => t.type === e)),
+function s(e) {
+    let t = (0, i.bG)([o.A], () => o.A.getAccounts().some(t => t.type === e)),
         n = r.useCallback(() => {
             if (null == e) return null;
             (0, a.A)({

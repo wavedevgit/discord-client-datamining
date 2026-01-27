@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(835245),
     a = n(397927),
-    s = n(391048),
-    o = n(636099),
+    o = n(391048),
+    s = n(636099),
     l = n(769315),
     c = n(589078),
     u = n(954571),
@@ -76,7 +76,7 @@ function g(e, t) {
             application_id: e.applicationId,
             location_stack: f,
             sku_product_line: e.productLine
-        }), (0, s.ET)(), (0, o.z)()
+        }), (0, o.ET)(), (0, s.z)()
     }, b = () => {
         p = !0
     }, O = {
@@ -101,8 +101,8 @@ let E = e => {
             skuId: r,
             analyticsLocations: i,
             isGift: a,
-            giftRecipient: s,
-            giftingOrigin: o,
+            giftRecipient: o,
+            giftingOrigin: s,
             onCloseCallback: l,
             onComplete: u,
             modalKey: d
@@ -115,8 +115,8 @@ let E = e => {
             onComplete: u,
             giftContextProps: {
                 isGift: a,
-                giftRecipient: s,
-                giftingOrigin: o
+                giftRecipient: o,
+                giftingOrigin: s
             },
             openModalOptions: {
                 modalKey: d,
@@ -128,8 +128,8 @@ let E = e => {
         let {
             loadId: t,
             applicationId: i,
-            skuId: s,
-            analyticsLocations: o,
+            skuId: o,
+            analyticsLocations: s,
             isGift: l,
             giftRecipient: c,
             giftingOrigin: u,
@@ -145,8 +145,8 @@ let E = e => {
             return n => (0, r.jsx)(e, h(p({}, n), {
                 loadId: t,
                 applicationId: i,
-                skuId: s,
-                analyticsLocations: o,
+                skuId: o,
+                analyticsLocations: s,
                 isGift: l,
                 giftRecipient: c,
                 additionalUserIds: d,

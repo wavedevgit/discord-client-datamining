@@ -1,25 +1,25 @@
-/** Chunk was on web.js **/
-/** chunk id: 371068, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 89455 **/
+/** chunk id: 371068, original params: e,n,t (module,exports,require) **/
 "use strict";
-n.d(t, {
-    A: () => l
+t.d(n, {
+    A: () => s
 });
-var r = n(627968);
-n(64700);
-var i = n(503698),
-    a = n.n(i),
-    s = n(155718),
-    o = n(907093);
+var r = t(627968);
+t(64700);
+var i = t(503698),
+    o = t.n(i),
+    a = t(155718),
+    l = t(907093);
 
-function l(e) {
+function s(e) {
     let {
-        divider: t,
-        spacing: n
+        divider: n,
+        spacing: t
     } = e;
     return (0, r.jsx)("div", {
-        className: a()({
-            [o.f]: n === s.C8.LARGE,
-            [o.y]: t
+        className: o()({
+            [l.f]: t === a.C8.LARGE,
+            [l.y]: n
         })
     })
 }

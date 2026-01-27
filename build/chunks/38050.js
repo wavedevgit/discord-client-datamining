@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(353640),
     i = n(499867),
     a = n(998740),
-    s = n(572808);
+    o = n(572808);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -50,7 +50,7 @@ function u(e, t) {
 let d = .2,
     f = (0, r.v)()((0, i.Zr)((e, t) => ({
         songIndex: 0,
-        genre: s.TU.SLEEPY,
+        genre: o.TU.SLEEPY,
         playRadio: !0,
         globalMute: !1,
         volumes: {

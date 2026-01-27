@@ -15,7 +15,7 @@ function a(e, t, n) {
 }
 n(397927), n(823950);
 
-function s(e, t) {
+function o(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);

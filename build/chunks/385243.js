@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(892227),
-    o = n(311907),
+    o = n(892227),
+    s = n(311907),
     l = n(827734),
     c = n(732955),
     u = n(613566),
@@ -33,13 +33,13 @@ let h = {
         } = e, {
             passesProgressBarInvariant: n,
             programReward: i
-        } = (0, o.cf)([d.A], () => ({
+        } = (0, s.cf)([d.A], () => ({
             passesProgressBarInvariant: d.A.passesProgressBarInvariant(f.W.NITRO),
             programReward: d.A.getRewardForProgram(f.W.NITRO)
         }));
         if (!n || null == i) return null;
         let l = i.total_countdown_duration_ms / p.A.Millis.DAY,
-            m = (0, s.default)(new Date(i.next_reward_date), new Date),
+            m = (0, o.default)(new Date(i.next_reward_date), new Date),
             g = i.program_current_state === f.L.PREMIUM_CHURNING,
             E = g ? h.churning.start : h.active.start,
             y = g ? h.churning.end : h.active.end;

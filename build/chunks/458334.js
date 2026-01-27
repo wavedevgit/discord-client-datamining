@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 458334, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -22,21 +22,21 @@ function p(e, t) {
         var i, s, u, p;
         let f;
         if (!t.managed) return null;
-        let b = null == (i = t.tags) ? void 0 : i.bot_id,
-            h = null == (s = t.tags) ? void 0 : s.integration_id,
+        let h = null == (i = t.tags) ? void 0 : i.bot_id,
+            b = null == (s = t.tags) ? void 0 : s.integration_id,
             x = (null == (u = t.tags) ? void 0 : u.premium_subscriber) !== void 0,
             j = (null == (p = t.tags) ? void 0 : p.guild_connections) !== void 0;
-        if (null != b ? f = null == n ? void 0 : n.find(e => {
+        if (null != h ? f = null == n ? void 0 : n.find(e => {
                 var t;
                 let {
                     application: n
                 } = e;
-                return (null == n || null == (t = n.bot) ? void 0 : t.id) === b
-            }) : null != h && (f = null == n ? void 0 : n.find(e => {
+                return (null == n || null == (t = n.bot) ? void 0 : t.id) === h
+            }) : null != b && (f = null == n ? void 0 : n.find(e => {
                 let {
                     id: t
                 } = e;
-                return t === h
+                return t === b
             })), null != f && null != f.application && null != f.name) {
             let e = f.application.id,
                 t = f.name;

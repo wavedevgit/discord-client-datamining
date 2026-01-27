@@ -9,21 +9,21 @@ n.d(t, {
 var r = n(617617),
     i = n(287809),
     a = n(349435),
-    s = n(665909);
+    o = n(665909);
 
-function o(e) {
+function s(e) {
     return a.Ay.getChannelSafetyWarnings(e).filter(e => e.type === a._j.INAPPROPRIATE_CONVERSATION_TIER_1)
 }
 
 function l() {
     var e, t, n, a;
-    let o = (null == (t = i.default.getCurrentUser()) ? void 0 : t.isStaff()) === !0,
+    let s = (null == (t = i.default.getCurrentUser()) ? void 0 : t.isStaff()) === !0,
         l = null == (e = null == (a = r.A.settings.privacy) || null == (n = a.inappropriateConversationWarnings) ? void 0 : n.value) || e;
-    return ((0, s.Wu)() || o) && l
+    return ((0, o.Wu)() || s) && l
 }
 
 function c(e) {
-    let t = o(e);
+    let t = s(e);
     if (t.filter(e => null != e.dismiss_timestamp).length > 0) return null;
     let n = t.filter(e => null == e.dismiss_timestamp);
     return 1 === n.length ? n[0] : null

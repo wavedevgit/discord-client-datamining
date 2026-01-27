@@ -8,10 +8,10 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(635377),
-    s = n.n(a);
+    o = n.n(a);
 n(228785);
-var o = n(280230),
-    l = n.n(o),
+var s = n(280230),
+    l = n.n(s),
     c = n(833291),
     u = n(403362),
     d = n(998218),
@@ -56,7 +56,7 @@ function g(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let E = new(s())({
+let E = new(o())({
     max: 50
 });
 
@@ -161,41 +161,41 @@ function w(e) {
 let R = g(h({}, l().defaultRules.link), {
     match: (e, t, n) => t.allowLinks ? l().defaultRules.link.match(e, t, n) : null,
     parse(e, t, n) {
-        let [r, a, s, o] = e, u = () => ({
+        let [r, a, o, s] = e, u = () => ({
             type: f.D.TEXT,
             content: r
         });
-        if (N(s)) return u();
-        let d = y(s),
+        if (N(o)) return u();
+        let d = y(o),
             p = y(a),
-            _ = y(null != o ? o : ""),
+            _ = y(null != s ? s : ""),
             m = d.whitespaceSanitized,
             E = p.fullySanitized,
             b = _.fullySanitized,
             R = E.trim();
         if (0 === m.trim().length || 0 === R.length) return u();
-        let P = w(l().unescapeUrl(s)),
+        let P = w(l().unescapeUrl(o)),
             D = null == P,
-            x = (0, c.Ay)(a).length > 0 || (0, c.Ay)(o).length > 0;
-        if (D || x) return u();
-        let L = g(h({}, n), {
+            L = (0, c.Ay)(a).length > 0 || (0, c.Ay)(s).length > 0;
+        if (D || L) return u();
+        let x = g(h({}, n), {
                 allowEscape: !1,
                 parseInlineCodeChildContent: !0
             }),
-            j = n.allowEmojiLinks ? v : O,
-            M = [...j, ...A],
+            M = n.allowEmojiLinks ? v : O,
+            j = [...M, ...A],
             k = [...I, ...S],
-            U = T(t(E, L), M, [f.D.EMOJI]),
-            G = T(t(b, L), k);
+            U = T(t(E, x), j, [f.D.EMOJI]),
+            G = T(t(b, x), k);
         if (null == U || null == G || 0 === C(U).trim().length) return u();
-        let V = i().pick(t.rules, j),
-            F = l().parserFor(V)(p.whitespaceSanitized, L),
+        let F = i().pick(t.rules, M),
+            V = l().parserFor(F)(p.whitespaceSanitized, x),
             B = _.whitespaceSanitized,
             {
                 target: H
             } = P;
         return {
-            content: F,
+            content: V,
             target: H,
             title: B
         }

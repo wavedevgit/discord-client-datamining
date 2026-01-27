@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(562465),
-    s = n(73153),
-    o = n(439372),
+    o = n(73153),
+    s = n(439372),
     l = n(723176),
     c = n(626584),
     u = n(142120),
@@ -31,7 +31,7 @@ let E = new c.A("MessagePreviewManager"),
     y = 30,
     b = 1e3,
     O = 5;
-class v extends o.A {
+class v extends s.A {
     addWant(e) {
         var t;
         let n = p.A.getBasicChannel(e);
@@ -45,7 +45,7 @@ class v extends o.A {
             E.verbose("fetching local previews (via: database, guild_id: ".concat(e, ")")), this.localFetching.add(e);
             let n = f.default.getId(),
                 r = await (null == (t = l.A.messages()) ? void 0 : t.getMostRecents(e));
-            null != r && n === f.default.getId() && s.h.dispatch({
+            null != r && n === f.default.getId() && o.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOCALLY_LOADED",
                 guildId: e,
                 messages: r.map(e => {
@@ -74,7 +74,7 @@ class v extends o.A {
                 },
                 rejectWithError: !1
             })).body;
-            s.h.dispatch({
+            o.h.dispatch({
                 type: "MESSAGE_PREVIEWS_LOADED",
                 guildId: null,
                 messages: e

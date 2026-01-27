@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(299619),
-    s = n(311907),
-    o = n(775602);
+    o = n(311907),
+    s = n(775602);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ function d(e, t) {
     }), e
 }
 let f = i.forwardRef((e, t) => {
-    let n = (0, s.bG)([o.A], () => o.A.useReducedMotion);
+    let n = (0, o.bG)([s.A], () => s.A.useReducedMotion);
     return (0, r.jsx)(a.A, d(c({}, e), {
         ref: t,
         useReducedMotion: n

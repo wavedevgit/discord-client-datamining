@@ -2,12 +2,12 @@
 /** chunk id: 662502, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(397927),
     i = n(323484),
     a = n(835002);
-let s = {
+let o = {
     showIgnoreSuccessToast(e, t) {
         (0, r.showToast)((0, r.createToast)((0, i.$)(a.OB.IGNORE_SUCCESS, e, t), r.ToastType.SUCCESS))
     },

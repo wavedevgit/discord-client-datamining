@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 124953, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Ji: "payment_e9cb00",
     J7: "summaryInfo_e9cb00",

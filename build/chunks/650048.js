@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(506774),
-    s = n(73153),
-    o = n(652215);
+    o = n(73153),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -43,14 +43,14 @@ class _ extends(r = i.Ay.PersistedStore) {
         u = null != e ? e : c
     }
     get defaultRoute() {
-        return o.BVt.ME
+        return s.BVt.ME
     }
     get lastNonVoiceRoute() {
         var e;
-        return null != (e = u.lastViewedNonVoicePath) ? e : o.BVt.ME
+        return null != (e = u.lastViewedNonVoicePath) ? e : s.BVt.ME
     }
     get fallbackRoute() {
-        return o.BVt.ME
+        return s.BVt.ME
     }
     getState() {
         return u
@@ -62,7 +62,7 @@ l(_, "displayName", "DefaultRouteStore"), l(_, "persistKey", "DefaultRouteStore"
         lastViewedPath: e
     }
 }]);
-let h = new _(s.h, {
+let h = new _(o.h, {
     SAVE_LAST_ROUTE: f,
     SAVE_LAST_NON_VOICE_ROUTE: p
 })

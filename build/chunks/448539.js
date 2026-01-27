@@ -2,7 +2,7 @@
 /** chunk id: 448539, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(64700),
     i = n(340287);
@@ -10,12 +10,12 @@ let a = Object.freeze({
     box: "border-box"
 });
 
-function s(e) {
+function o(e) {
     let {
         ref: t,
         onUpdate: n,
-        resizeObserver: s,
-        listenerMap: o,
+        resizeObserver: o,
+        listenerMap: s,
         key: l
     } = e;
     (0, r.useLayoutEffect)(() => {
@@ -27,8 +27,8 @@ function s(e) {
             {
                 current: r
             } = t;
-        return null != r && (o.set(r, e), s.observe(r, a)), () => {
-            null != r && (s.unobserve(r), o.delete(r))
+        return null != r && (s.set(r, e), o.observe(r, a)), () => {
+            null != r && (o.unobserve(r), s.delete(r))
         }
-    }, [n, s, t, o, l])
+    }, [n, o, t, s, l])
 }

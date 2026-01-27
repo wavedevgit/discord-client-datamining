@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(250594),
     a = n(503199),
-    s = n(120394),
-    o = n(633228);
+    o = n(120394),
+    s = n(633228);
 r({
     target: "Array",
     proto: !0
@@ -13,8 +13,8 @@ r({
     at: function(e) {
         var t = i(this),
             n = a(t),
-            r = s(e),
-            o = r >= 0 ? r : n + r;
-        return o < 0 || o >= n ? void 0 : t[o]
+            r = o(e),
+            s = r >= 0 ? r : n + r;
+        return s < 0 || s >= n ? void 0 : t[s]
     }
-}), o("at")
+}), s("at")

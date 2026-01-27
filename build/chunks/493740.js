@@ -9,15 +9,15 @@ n.d(t, {
     II: () => w,
     JK: () => _,
     OW: () => y,
-    Pm: () => M,
+    Pm: () => j,
     Qz: () => k,
     RM: () => Y,
     T7: () => S,
-    Uc: () => V,
+    Uc: () => F,
     WQ: () => D,
-    Zc: () => j,
+    Zc: () => M,
     _V: () => C,
-    _w: () => x,
+    _w: () => L,
     aE: () => N,
     cS: () => A,
     gQ: () => p,
@@ -27,15 +27,15 @@ n.d(t, {
     nh: () => b,
     sj: () => R,
     u6: () => G,
-    x: () => L,
+    x: () => x,
     z0: () => E,
     zL: () => T
 }), n(457529);
 var r = n(83790),
     i = n(626584),
     a = n(125584),
-    s = n(124856),
-    o = n(276767),
+    o = n(124856),
+    s = n(276767),
     l = n(594579),
     c = n(788868);
 let u = new i.A("ProductCatalog.tsx");
@@ -45,7 +45,7 @@ function d(e, t) {
     try {
         let n = c.u0[t.premiumType];
         if (null == n) return u.warn("Cannot find the corresponding SKU to the user's premium type ".concat(t.premiumType)), !1;
-        let r = F[n];
+        let r = V[n];
         if (null == r) return u.warn("Cannot find the corresponding product catalog entry to the user's SKU ".concat(n, " and premium type ").concat(t.premiumType)), !1;
         return r.skuFeatures.includes(e)
     } catch (e) {
@@ -54,7 +54,7 @@ function d(e, t) {
     }
     return !1
 }
-class f extends s.A {
+class f extends o.A {
     constructor(e, t) {
         super(e, e => d(this, e), t)
     }
@@ -79,23 +79,23 @@ let p = new f(r.w.ANIMATED_EMOJIS),
     R = new f(r.w.STREAM_HIGH_QUALITY),
     P = new f(r.w.CUSTOM_NOTIFICATION_SOUNDS),
     D = new f("fancyVoiceChannelReactions"),
-    x = new f("installPremiumApplications"),
-    L = new f("redeemPremiumPerks"),
-    j = new f(r.w.VIDEO_FILTER_ASSETS);
-new s.A(r.w.INCREASED_FILE_UPLOAD_SIZE, a.f);
-let M = new f(r.w.INCREASED_GUILD_LIMIT),
+    L = new f("installPremiumApplications"),
+    x = new f("redeemPremiumPerks"),
+    M = new f(r.w.VIDEO_FILTER_ASSETS);
+new o.A(r.w.INCREASED_FILE_UPLOAD_SIZE, a.f);
+let j = new f(r.w.INCREASED_GUILD_LIMIT),
     k = new f(r.w.INCREASED_MESSAGE_LENGTH),
     U = new f("increasedVideoUploadQuality"),
     G = new f("uploadLargeFiles"),
-    V = new f("warpPrivateBrowsing"),
-    F = Object.freeze({
-        [c.pe.TIER_0]: new l.A(c.pe.TIER_0, [p, _, h, v, j, U, G, S]),
+    F = new f("warpPrivateBrowsing"),
+    V = Object.freeze({
+        [c.pe.TIER_0]: new l.A(c.pe.TIER_0, [p, _, h, v, M, U, G, S]),
         [c.pe.TIER_1]: new l.A(c.pe.TIER_1, [p, _, y, b, v, C, w, D, U, G, S]),
-        [c.pe.TIER_2]: new l.A(c.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, x, L, j, M, k, U, G, S, I, P, E, V])
+        [c.pe.TIER_2]: new l.A(c.pe.TIER_2, [p, _, h, m, g, y, b, O, v, A, T, C, N, w, R, D, L, x, M, j, k, U, G, S, I, P, E, F])
     }),
-    B = [C, N, V],
-    H = [V];
+    B = [C, N, F],
+    H = [F];
 
 function Y(e, t, n) {
-    return !((0, o.Z)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && H.includes(e)) && e.getFeatureValue(t)
+    return !((0, s.Z)("canUserUse", t) || null != t && t.isPremiumWithFractionalPremiumOnly() && B.includes(e) || n && H.includes(e)) && e.getFeatureValue(t)
 }

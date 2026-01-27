@@ -16,6 +16,5 @@ var n = i(419954),
     S = i(985018);
 let E = (0, n.FW)(l.X.NOTIFICATION_SELECTION_FIELD_SET, {
     useTitle: () => S.intl.string(S.t.FEVRDV),
-    variant: "separators",
     buildLayout: () => [a.L, d.q, s.Z, r.E, A.N, u.M, o.q, T.q]
 })

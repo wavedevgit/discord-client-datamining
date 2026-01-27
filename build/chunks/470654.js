@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
-/** chunk id: 470654, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => a
+/** Chunk was on 52199 **/
+/** chunk id: 470654, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => s
 });
-var r = n(64700),
-    i = n(216623);
+var n = r(64700),
+    l = r(216623);
 
-function a() {
-    r.useEffect(() => {
-        (0, i.AX)()
+function s() {
+    n.useEffect(() => {
+        (0, l.AX)()
     }, [])
 }

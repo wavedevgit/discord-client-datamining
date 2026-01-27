@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 787226, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     ek: "textPrimary__8e577",
     c1: "textSecondary__8e577",

@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 794905, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(64700),
     i = n(688810),
-    a = n(399925),
-    s = n(74847),
-    o = n(602902);
-let l = e => {
+    l = n(399925),
+    a = n(74847),
+    s = n(602902);
+let o = e => {
     let {
         analyticsLocations: t
     } = (0, i.Ay)();
@@ -18,19 +17,19 @@ let l = e => {
             let {
                 clips: r,
                 onShareComplete: i,
-                messageReference: l
+                messageReference: o
             } = n;
             if (0 === r.length) return;
-            let c = (0, s.t)(e);
-            (0, a.H1)(r.map(e => e.id));
+            let c = (0, a.t)(e);
+            (0, l.H1)(r.map(e => e.id));
             try {
-                await (0, o.K)(r, {
+                await (0, s.K)(r, {
                     channelId: c ? e : void 0,
                     analyticsLocations: t,
-                    messageReference: l
+                    messageReference: o
                 })
             } catch (e) {} finally {
-                (0, a.H1)(null), null == i || i()
+                (0, l.H1)(null), null == i || i()
             }
         }, [e, t])
     }

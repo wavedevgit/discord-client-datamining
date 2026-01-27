@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(889137),
     a = n(311907),
-    s = n(287809),
-    o = n(927578),
+    o = n(287809),
+    s = n(927578),
     l = n(704591),
     c = n(980504),
     u = n(985018),
@@ -19,7 +19,7 @@ var r = n(64700),
 
 function f(e, t, n, d) {
     let f = e.guildId === c.mV,
-        p = (0, a.bG)([s.default], () => o.Ay.canUseSoundboardEverywhere(s.default.getCurrentUser())),
+        p = (0, a.bG)([o.default], () => s.Ay.canUseSoundboardEverywhere(o.default.getCurrentUser())),
         _ = (0, l.tj)({
             location: "useSoundmojiGuildInfoData"
         }),

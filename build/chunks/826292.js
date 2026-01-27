@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 826292, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -19,8 +19,8 @@ var i = n(788373),
     m = n(53656),
     p = n(542580),
     f = n(803378),
-    b = n(652215),
-    h = n(985018);
+    h = n(652215),
+    b = n(985018);
 
 function x(e) {
     let {
@@ -67,11 +67,11 @@ function j() {
     } = (0, l.cf)([g.A], () => ({
         guild: g.A.getGuild(),
         submitting: g.A.isSubmitting()
-    })), c = (0, l.bG)([d.A], () => d.A.can(b.xBc.KICK_MEMBERS, t)), x = !1, j = null;
+    })), c = (0, l.bG)([d.A], () => d.A.can(h.xBc.KICK_MEMBERS, t)), x = !1, j = null;
     return c || (null == (e = m.default.editedIntegration) ? void 0 : e.expire_behavior) !== i.F.KICK || (x = !0, j = (0, r.jsx)(a.Text, {
         color: "text-feedback-critical",
         variant: "text-md/normal",
-        children: h.intl.string(h.t["mrO/ZQ"])
+        children: b.intl.string(b.t["mrO/ZQ"])
     })), (0, r.jsx)(s.A, {
         submitting: n,
         disabled: x,

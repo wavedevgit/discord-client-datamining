@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 571654, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    X: () => o,
-    z: () => s
+    X: () => s,
+    z: () => a
 });
 var r = n(64700),
     i = n(580630),
-    a = n(985018);
+    l = n(985018);
 
-function s(e) {
+function a(e) {
     return r.useMemo(() => {
         if (null == e) return;
         let t = null != e.role_id,
             n = e.attachments_count > 0;
-        return t && n ? a.intl.string(a.t.ih4QMU) : t ? a.intl.string(a.t.o9xphc) : n ? a.intl.string(a.t.DWYJua) : void 0
+        return t && n ? l.intl.string(l.t.ih4QMU) : t ? l.intl.string(l.t.o9xphc) : n ? l.intl.string(l.t.DWYJua) : void 0
     }, [e])
 }
 
-function o(e) {
+function s(e) {
     return r.useMemo(() => {
         if ((null == e ? void 0 : e.price) == null) return;
         let {

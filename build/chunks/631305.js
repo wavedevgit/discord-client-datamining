@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(869146),
-    s = n(709055),
-    o = n(954571),
+    o = n(709055),
+    s = n(954571),
     l = n(652215);
 
 function c(e, t, n) {
@@ -58,19 +58,19 @@ function p(e, t) {
     let c = null != t ? t : "".concat(l.JJy.PREMIUM_GUILD_UPSELL_MODAL);
     null != e.targetBoostedGuildTier && (c += " - Tier ".concat(e.targetBoostedGuildTier));
     let f = () => {
-        o.default.track(l.HAw.MODAL_DISMISSED, {
+        s.default.track(l.HAw.MODAL_DISMISSED, {
             type: c,
             location: e.analyticsSourceLocation
         })
     };
-    o.default.track(l.HAw.OPEN_MODAL, {
+    s.default.track(l.HAw.OPEN_MODAL, {
         type: c,
         location: e.analyticsSourceLocation
     });
     let {
         openInPopoutEnabled: p
     } = e, _ = d(e, ["openInPopoutEnabled"]), h = a.A.getWindowOpen(l.MLl.CHANNEL_CALL_POPOUT) && null != p && p;
-    h && (0, s.A)(l.MLl.CHANNEL_CALL_POPOUT);
+    h && (0, o.A)(l.MLl.CHANNEL_CALL_POPOUT);
     let m = h ? i.KX8 : i.SYi;
     (0, i.mMO)(async () => {
         let {

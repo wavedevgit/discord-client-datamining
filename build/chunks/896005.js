@@ -1,57 +1,50 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 896005, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => p
+    A: () => u
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(397927),
-    l = n(641324),
-    c = n(46373),
-    u = n(112715),
+    l = n(503698),
+    s = n.n(l),
+    a = n(397927),
+    o = n(641324),
+    c = n(112715),
     d = n(702421);
-
-function f(e) {
+let u = i.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        useSubtitle: a,
-        variant: f = "default",
-        layout: p,
+        useSubtitle: l,
+        layout: u,
         initialize: _
-    } = t, h = null == n ? void 0 : n(), m = null == a ? void 0 : a(), g = i.useId(), E = null != h && "" !== h, y = null != m && "" !== m;
-    return (0, u.Z)(_), (0, r.jsxs)("fieldset", {
-        "aria-describedby": y ? g : void 0,
-        children: [E ? (0, r.jsx)(o.Text, {
+    } = t, p = null == n ? void 0 : n(), m = null == l ? void 0 : l(), g = i.useId(), A = null != p && "" !== p, f = null != m && "" !== m;
+    return (0, c.Z)(_), (0, r.jsxs)("fieldset", {
+        "aria-describedby": f ? g : void 0,
+        children: [A ? (0, r.jsx)(a.Text, {
             tag: "legend",
             variant: "text-md/semibold",
             color: "text-strong",
             className: s()(d.DD, {
-                [d.mU]: !y,
-                [d.jS]: !y
+                [d.h0]: f
             }),
-            children: h
-        }) : null, y ? (0, r.jsx)(o.Text, {
+            children: p
+        }) : null, f ? (0, r.jsx)(a.Text, {
             variant: "text-sm/normal",
             color: "text-default",
             id: g,
-            className: s()(d.VA, d.mU, {
-                [d.jS]: !E
-            }),
+            className: d.VA,
             children: m
-        }) : null, (0, r.jsx)(o.BJc, {
+        }) : null, (0, r.jsx)(a.BJc, {
             direction: "vertical",
             gap: 8,
-            children: p.map((e, t) => (0, r.jsxs)(i.Fragment, {
-                children: [(0, r.jsx)(l.A, {
-                    node: e
-                }), "separators" === f && t !== p.length - 1 && (0, r.jsx)(c.A, {})]
+            padding: {
+                top: 16
+            },
+            children: u.map(e => (0, r.jsx)(o.A, {
+                node: e
             }, e.key))
         })]
     })
-}
-let p = i.memo(f)
+})

@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 117056, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -16,10 +16,10 @@ let m = e => {
     let {
         guildId: t,
         reportId: n
-    } = e, [m, p] = r.useState(!1), b = d.A.getGuild(t), x = null != b;
+    } = e, [m, p] = r.useState(!1), b = d.A.getGuild(t), _ = null != b;
     r.useEffect(() => {
-        p(!x)
-    }, [x]);
+        p(!_)
+    }, [_]);
     let g = r.useCallback(() => {
         p(!0), a.Ay.trackWithMetadata(c.HAw.IAR_LEAVE_GUILD_BUTTON_CLICKED, {
             guild_id: t,

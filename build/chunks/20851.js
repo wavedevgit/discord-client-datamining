@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(384231),
+    o = n.n(a),
+    s = n(384231),
     l = n(903369),
     c = n(491182),
     u = n(538355),
@@ -68,7 +68,7 @@ function E(e) {
         previewGuildId: O,
         preview: v,
         author: A
-    } = e, I = null != O ? O : (0, l.U)(n), S = (0, o.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
+    } = e, I = null != O ? O : (0, l.U)(n), S = (0, s.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), {
         content: T
     } = (0, u.A)(n, {
         hideSimpleEmbedContent: y,
@@ -82,7 +82,7 @@ function E(e) {
     })), [e, a, I]);
     return (0, r.jsx)(c.A, {
         compact: _,
-        className: s()(m, {
+        className: o()(m, {
             [p.iU]: !0,
             [p.HJ]: !_,
             [p._A]: E

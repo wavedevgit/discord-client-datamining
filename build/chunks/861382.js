@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(761640),
-    o = n(309010),
+    o = n(761640),
+    s = n(309010),
     l = n(168186);
 
 function c(e, t, n) {
@@ -56,8 +56,8 @@ function _(e) {
         command: r,
         section: i,
         initialValues: a,
-        location: s,
-        triggerSection: o,
+        location: o,
+        triggerSection: s,
         queryLength: c,
         sectionName: u,
         query: d,
@@ -77,8 +77,8 @@ function _(e) {
         }
     }), m.optionStates = g, null != r && (0, l.my)({
         command: r,
-        location: s,
-        triggerSection: o,
+        location: o,
+        triggerSection: s,
         queryLength: c,
         sectionName: u,
         query: d,
@@ -102,7 +102,7 @@ function m(e) {
         changedOptionStates: n
     } = e, r = p(t), i = u({}, r.optionStates);
     for (let [e, t] of Object.entries(n)) {
-        var a, s, o;
+        var a, o, s;
         if (!(e in r.optionStates)) continue;
         if (!(void 0 !== t.hasValue ? t.hasValue : i[e].hasValue)) {
             i[e] = {
@@ -121,8 +121,8 @@ function m(e) {
             isActive: void 0 !== t.isActive ? t.isActive : n.isActive,
             lastValidationResult: void 0 !== t.lastValidationResult ? t.lastValidationResult : n.lastValidationResult,
             optionValue: null != (a = t.optionValue) ? a : n.optionValue,
-            location: null != (s = t.location) ? s : n.location,
-            length: null != (o = t.length) ? o : n.length
+            location: null != (o = t.location) ? o : n.location,
+            length: null != (s = t.length) ? s : n.length
         }, void 0 !== t.isActive && (t.isActive ? (null != r.activeOptionName && r.activeOptionName !== e && (i[r.activeOptionName] = u({}, i[r.activeOptionName]), i[r.activeOptionName].isActive = !1), r.activeOptionName = e) : e === r.activeOptionName && (r.activeOptionName = null))
     }
     return r.optionStates = i, !0
@@ -135,8 +135,8 @@ function g(e) {
         command: r,
         section: i,
         location: a,
-        changedOptionStates: s
-    } = e, o = _({
+        changedOptionStates: o
+    } = e, s = _({
         type: "APPLICATION_COMMAND_SET_ACTIVE_COMMAND",
         channelId: t,
         command: r,
@@ -149,16 +149,16 @@ function g(e) {
     }), c = m({
         type: "APPLICATION_COMMAND_UPDATE_OPTIONS",
         channelId: t,
-        changedOptionStates: s
+        changedOptionStates: o
     });
-    return o || l || c
+    return s || l || c
 }
 class E extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(s.Ay, o.A), s.Ay.addChangeListener(() => {
-            let e = o.A.getChannelId();
+        this.waitFor(o.Ay, s.A), o.Ay.addChangeListener(() => {
+            let e = s.A.getChannelId();
             if (null == e) return d = {}, !0;
-            let t = s.Ay.getCurrentSidebarChannelId(e);
+            let t = o.Ay.getCurrentSidebarChannelId(e);
             if (null != t && t in d) return !1;
             d = e in d ? {
                 [e]: d[e]

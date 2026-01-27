@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 476009, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
 var r = n(627968),
     i = n(546140),
-    a = n(776038),
+    l = n(776038),
     s = n(975571),
-    o = n(871930),
-    l = n(578746),
+    a = n(871930),
+    o = n(578746),
     c = n(355097),
-    u = n(531525),
-    d = n(652215),
-    f = n(985018);
+    d = n(531525),
+    u = n(652215),
+    _ = n(985018);
 
 function p() {
     let e = (0, i.L)();
-    return (0, r.jsx)(o.h, {
-        setting: u.H.PRIVACY_SAFETY_ALERTS_V2,
+    return (0, r.jsx)(a.h, {
+        setting: d.H.PRIVACY_SAFETY_ALERTS_V2,
         scrollPosition: c.d1.DM_SAFETY_ALERTS_V2,
-        children: (0, r.jsx)(l.Ay, {
+        children: (0, r.jsx)(o.Ay, {
             value: e,
-            onChange: a.a,
-            title: f.intl.string(f.t.qFsx5q),
-            note: f.intl.format(f.t.lunaRv, {
-                learnMoreLink: s.A.getArticleURL(d.MVz.SAFETY_ALERTS)
+            onChange: l.a,
+            title: _.intl.string(_.t.qFsx5q),
+            note: _.intl.format(_.t.lunaRv, {
+                learnMoreLink: s.A.getArticleURL(u.MVz.SAFETY_ALERTS)
             })
         })
     })

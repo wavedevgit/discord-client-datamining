@@ -2,7 +2,7 @@
 /** chunk id: 977067, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    C: () => s,
+    C: () => o,
     Z: () => a
 });
 var r = n(64700);
@@ -11,7 +11,7 @@ let i = {
         fullWidth: void 0
     },
     a = r.createContext(i),
-    s = () => {
+    o = () => {
         let e = r.useContext(a);
         return null == e ? i : e
     }

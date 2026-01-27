@@ -1,4 +1,4 @@
-/** Chunk was on 58652 **/
+/** Chunk was on 12236 **/
 /** chunk id: 66535, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => v
@@ -15,14 +15,14 @@ var l = n(627968),
     m = n(448368),
     p = n(538355),
     b = n(253932),
-    x = n(734057),
+    _ = n(734057),
     g = n(838541),
-    _ = n(985018),
+    x = n(985018),
     h = n(205435);
 let v = e => {
     let {
         message: t
-    } = e, n = (0, o.Ay)(t), v = (0, i.bG)([x.A], () => x.A.getChannel(t.channel_id)), f = r.useMemo(() => (0, s.A)(t), [t]), {
+    } = e, n = (0, o.Ay)(t), v = (0, i.bG)([_.A], () => _.A.getChannel(t.channel_id)), f = r.useMemo(() => (0, s.A)(t), [t]), {
         content: j
     } = (0, p.A)(f, {
         hideSimpleEmbedContent: !1
@@ -49,7 +49,7 @@ let v = e => {
         children: [(0, l.jsx)(a.Heading, {
             className: h.wx,
             variant: "heading-sm/semibold",
-            children: _.intl.string(_.t.iouM3a)
+            children: x.intl.string(x.t.iouM3a)
         }), (0, l.jsx)(a.HOs, {
             className: h.PI,
             children: (0, l.jsx)(d.A, {

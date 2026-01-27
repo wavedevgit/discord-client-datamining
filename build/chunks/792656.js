@@ -8,7 +8,7 @@ var r = n(627968),
     i = n(857586),
     a = n(204413);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,14 +17,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -71,7 +71,7 @@ function f(e) {
     let {
         subscriptionTier: t,
         hasActivePromotion: n,
-        useShorterCTA: s,
+        useShorterCTA: o,
         isPersistentCTA: l,
         buttonTextOverride: d,
         defaultTextOverride: f,
@@ -80,7 +80,7 @@ function f(e) {
     } = e, h = u(e, ["subscriptionTier", "hasActivePromotion", "useShorterCTA", "isPersistentCTA", "buttonTextOverride", "defaultTextOverride", "iconOverride", "variantOverride"]), m = {
         subscriptionTier: t,
         hasActivePromotion: n,
-        useShorterCTA: s,
+        useShorterCTA: o,
         isPersistentCTA: l,
         buttonTextOverride: d,
         defaultTextOverride: f,
@@ -90,7 +90,7 @@ function f(e) {
         subscribeButtonProps: g,
         subscriptionTier: E
     } = (0, a.$)(m);
-    return (0, r.jsx)(i.A, c(o({}, h, g), {
+    return (0, r.jsx)(i.A, c(s({}, h, g), {
         subscriptionTier: E
     }))
 }

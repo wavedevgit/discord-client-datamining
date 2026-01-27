@@ -5,21 +5,21 @@ n.d(t, {
     SM: () => d,
     eh: () => c,
     k_: () => u,
-    uX: () => s
+    uX: () => o
 }), n(896048);
 var r = n(661191),
     i = n(380335),
     a = n(157550);
 
-function s(e) {
+function o(e) {
     let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [i.A, a.A];
-    return l(o(e).filter(e => {
+    return l(s(e).filter(e => {
         let [, r] = e;
         return !t.isMessageRequest(r.id) && !n.isSpam(r.id)
     }))
 }
 
-function o(e) {
+function s(e) {
     return r.default.keys(e).map(t => [t, e[t]])
 }
 

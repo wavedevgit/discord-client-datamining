@@ -7,18 +7,18 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(155718),
-    o = n(985018),
+    o = n(155718),
+    s = n(985018),
     l = n(530255);
 
 function c(e) {
     let {
         labelType: t,
         collapsed: n = !1
-    } = e, c = t === s.Hr.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkk"]), u = t === s.Hr.NEW ? l.Ph : l.O5, [d, f] = i.useState(n ? "" : c);
+    } = e, c = t === o.Hr.NEW ? s.intl.string(s.t.y2b7CA) : s.intl.string(s.t["/qdhkk"]), u = t === o.Hr.NEW ? l.Ph : l.O5, [d, f] = i.useState(n ? "" : c);
     return (i.useEffect(() => {
-        n ? f("") : t === s.Hr.NEW ? f(o.intl.string(o.t.y2b7CA)) : t === s.Hr.UPDATED && f(o.intl.string(o.t["/qdhkk"]))
-    }, [n, t]), t === s.Hr.NONE) ? null : (0, r.jsx)(a.LpS, {
+        n ? f("") : t === o.Hr.NEW ? f(s.intl.string(s.t.y2b7CA)) : t === o.Hr.UPDATED && f(s.intl.string(s.t["/qdhkk"]))
+    }, [n, t]), t === o.Hr.NONE) ? null : (0, r.jsx)(a.LpS, {
         className: u,
         disableColor: !0,
         text: (0, r.jsx)("span", {

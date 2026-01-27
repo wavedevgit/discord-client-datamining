@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 164358, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(793998);
+var s = n(793998);
 
-function a() {
-    return (0, r.jsx)(i.p, {})
+function l() {
+    return (0, i.jsx)(s.p, {})
 }

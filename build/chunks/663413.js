@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(422998),
+    o = n.n(a),
+    s = n(422998),
     l = n(960488),
     c = n(311907),
     u = n(49621),
@@ -26,13 +26,13 @@ function y(e) {
         lang: t,
         style: n,
         className: a
-    } = (0, _.xb)(), o = (0, l.zy)(), u = i.useMemo(() => E.has(o.pathname), [o.pathname]);
+    } = (0, _.xb)(), s = (0, l.zy)(), u = i.useMemo(() => E.has(s.pathname), [s.pathname]);
     (0, m.A)(window, u);
     let d = (0, c.bG)([f.A, p.A], () => p.A.getWindowOpen(g.MLl.DEVTOOLS_POPOUT) ? 0 : f.A.sidebarWidth);
     return (0, r.jsx)("html", {
         lang: t,
         style: "".concat(n, " --devtools-sidebar-width: ").concat(d, "px;"),
-        className: s()(a, e, {
+        className: o()(a, e, {
             overlay: __OVERLAY__
         })
     })
@@ -68,11 +68,11 @@ function O(e) {
     });
     let {
         clientThemesClassName: a,
-        clientThemesCSS: s
+        clientThemesCSS: o
     } = (0, d.Ay)(), l = i.createElement("style", {
         [d.Vg]: !0
-    }, s);
-    return (0, r.jsxs)(o.mg, {
+    }, o);
+    return (0, r.jsxs)(s.mg, {
         children: [y(a), b(), l, t]
     })
 }

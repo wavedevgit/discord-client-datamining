@@ -2,18 +2,18 @@
 /** chunk id: 119844, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    d: () => o
+    d: () => s
 });
 var r = n(82180),
     i = n(679314),
     a = n(123789);
-let s = {
+let o = {
     writeUnknownFields: !0,
     writerFactory: () => new l
 };
 
-function o(e) {
-    return e ? Object.assign(Object.assign({}, s), e) : s
+function s(e) {
+    return e ? Object.assign(Object.assign({}, o), e) : o
 }
 class l {
     constructor(e) {
@@ -105,8 +105,8 @@ class l {
         let t = r.h.from(e),
             n = t.hi >> 31,
             a = t.lo << 1 ^ n,
-            s = (t.hi << 1 | t.lo >>> 31) ^ n;
-        return (0, i.cV)(a, s, this.buf), this
+            o = (t.hi << 1 | t.lo >>> 31) ^ n;
+        return (0, i.cV)(a, o, this.buf), this
     }
     uint64(e) {
         let t = r.e.from(e);

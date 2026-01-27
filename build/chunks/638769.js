@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(410323),
     a = n(514575),
-    s = n(250594),
-    o = n(503199),
+    o = n(250594),
+    s = n(503199),
     l = n(762503),
     c = n(304880),
     u = n(503628),
@@ -69,12 +69,12 @@ r({
 }, {
     sort: function(e) {
         void 0 !== e && a(e);
-        var t, n, r = s(this);
+        var t, n, r = o(this);
         if (A) return void 0 === e ? E(r) : E(r, e);
         var i = [],
-            c = o(r);
+            c = s(r);
         for (n = 0; n < c; n++) n in r && y(i, r[n]);
-        for (d(i, I(e)), t = o(i), n = 0; n < t;) r[n] = i[n++];
+        for (d(i, I(e)), t = s(i), n = 0; n < t;) r[n] = i[n++];
         for (; n < c;) l(r, n++);
         return r
     }

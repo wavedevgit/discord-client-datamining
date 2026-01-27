@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(743445),
     i = n(565150),
     a = n(515718),
-    s = n(583954);
-class o {
+    o = n(583954);
+class s {
     toDataUrl(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "png",
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : 1;
@@ -17,23 +17,23 @@ class o {
     async exportCanvas(e, t) {
         let {
             format: n,
-            fileType: o = "png",
+            fileType: s = "png",
             quality: l = 1,
             fileName: c
         } = t;
-        if (n === s.z5.Base64) return this.toDataUrl(e, o, l);
-        if (n === s.z5.Blob) {
-            let t = this.toDataUrl(e, o, l);
+        if (n === o.z5.Base64) return this.toDataUrl(e, s, l);
+        if (n === o.z5.Blob) {
+            let t = this.toDataUrl(e, s, l);
             return (0, a.aU)(t)
         }
-        if (n === s.z5.File) {
-            let t = this.toDataUrl(e, o, l);
+        if (n === o.z5.File) {
+            let t = this.toDataUrl(e, s, l);
             return await (0, a.bX)(t, c, "image/png")
         }
-        if (n === s.z5.CloudUpload) {
+        if (n === o.z5.CloudUpload) {
             let {
                 channelId: n
-            } = t, s = this.toDataUrl(e, o, l), u = await (0, a.bX)(s, c, "image/png");
+            } = t, o = this.toDataUrl(e, s, l), u = await (0, a.bX)(o, c, "image/png");
             return new r.bK({
                 file: u,
                 platform: i.xz.WEB,
@@ -44,4 +44,4 @@ class o {
         throw Error("DiscordCanvas: ".concat(n, " is not a valid export format."))
     }
 }
-let l = o
+let l = s

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 97283 **/
 /** chunk id: 144485, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => u
 }), n(65821);
@@ -8,17 +7,8 @@ var r = n(627968);
 n(64700);
 var i = n(314116),
     a = n(397927),
-    s = n(652215),
-    o = n(985018);
-
-function l(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
+    o = n(652215),
+    l = n(985018);
 
 function c(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -27,7 +17,13 @@ function c(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            l(e, t, n[t])
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
+                enumerable: !0,
+                configurable: !0,
+                writable: !0
+            }) : e[t] = r
         })
     }
     return e
@@ -42,7 +38,7 @@ let u = {
             }, n))
         })
     },
-    openSecureFramesUserVerificationModal: function(e, t, i, o) {
+    openSecureFramesUserVerificationModal: function(e, t, i, l) {
         i() && (0, a.mMO)(async () => {
             let i = (await n.e("16674").then(n.bind(n, 632441))).default;
             return n => (0, r.jsx)(i, c({
@@ -50,14 +46,14 @@ let u = {
                 channelId: t
             }, n))
         }, {
-            contextKey: o === s.BRT.POPOUT ? a.KX8 : a.SYi
+            contextKey: l === o.BRT.POPOUT ? a.KX8 : a.SYi
         })
     },
     openSecureFramesUpdateConfirmation: function(e) {
         let {
             title: t,
             subtitle: n,
-            confirmText: r = o.intl.string(o.t["cY+Oob"]),
+            confirmText: r = l.intl.string(l.t["cY+Oob"]),
             onConfirm: a
         } = e;
         (0, i.A)({

@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 480680, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => U
@@ -186,6 +186,7 @@ function G(e) {
             isUnread: i,
             isSidebar: !0,
             track: !1,
+            autoTriggeredOnInboxOpen: !0,
             viewId: n
         })
     }), (0, h.l0)(() => {

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(599026),
     i = n(440594),
     a = n(541806),
-    s = n(765379),
-    o = n(90644),
+    o = n(765379),
+    s = n(90644),
     l = n(82149),
     c = n(652215),
     u = n(985018);
@@ -19,7 +19,7 @@ function d(e) {
         d = (null == e ? void 0 : e.details) === "" ? null : null == e ? void 0 : e.details,
         f = (null == e ? void 0 : e.state) === "" ? null : null == e ? void 0 : e.state,
         p = (null == e ? void 0 : e.type) === c.$pd.STREAMING && null != d ? d : n;
-    if ((null == e ? void 0 : e.status_display_type) === r.A.NAME && null != n ? p = n : (null == e ? void 0 : e.status_display_type) === r.A.STATE && null != f ? p = f : (null == e ? void 0 : e.status_display_type) === r.A.DETAILS && null != d && (p = d), (0, s.A)(e)) {
+    if ((null == e ? void 0 : e.status_display_type) === r.A.NAME && null != n ? p = n : (null == e ? void 0 : e.status_display_type) === r.A.STATE && null != f ? p = f : (null == e ? void 0 : e.status_display_type) === r.A.DETAILS && null != d && (p = d), (0, o.A)(e)) {
         let e = (0, i.A)(n);
         return {
             text: e,
@@ -32,7 +32,7 @@ function d(e) {
             game: p
         })
     };
-    if ((0, o.A)(e) && t && null != f) {
+    if ((0, s.A)(e) && t && null != f) {
         var _;
         let e = null == (_ = f.split("; ")) ? void 0 : _.join(", ");
         return {

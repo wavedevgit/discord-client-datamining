@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(439372),
     i = n(954571),
     a = n(723702),
-    s = n(837921),
-    o = n(970061),
+    o = n(837921),
+    s = n(970061),
     l = n(652215);
 
 function c(e, t, n) {
@@ -22,8 +22,8 @@ function c(e, t, n) {
 }
 async function u() {
     if (!a.isPlatformEmbedded) return !1;
-    let e = await o.A.hasPermission();
-    return s.Ay.shouldDisplayNotifications() && e
+    let e = await s.A.hasPermission();
+    return o.Ay.shouldDisplayNotifications() && e
 }
 class d extends r.A {
     async handlePostConnectionOpen() {

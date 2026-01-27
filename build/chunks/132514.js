@@ -1,7 +1,7 @@
 /** Chunk was on 98700 **/
 /** chunk id: 132514, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    A: () => b
+    A: () => h
 }), t(896048), t(693327), t(554719), t(680155), t(323874), t(14289), t(35956);
 var l, i = t(735438),
     r = t.n(i),
@@ -59,17 +59,17 @@ function G(e, n) {
     _.newMemberActions[t] = E({}, n), _.newMemberActions = [..._.newMemberActions]
 }
 
-function f(e, n) {
+function T(e, n) {
     if (null == _.resourceChannels) return !1;
     let t = _.resourceChannels.findIndex(n => n.channelId === e);
     if (t < 0) return !1;
     _.resourceChannels[t] = E({}, n), _.resourceChannels = [..._.resourceChannels]
 }
 
-function T() {
+function f() {
     A = !1, _ = r().cloneDeep(Object.assign({}, u.h.getSettings(I)))
 }
-class h extends(l = s.Ay.PersistedStore) {
+class b extends(l = s.Ay.PersistedStore) {
     initialize(e) {
         null != e && (S = e.dismissedSuggestedChannelIdsByGuildId), this.waitFor(a.A, u.h)
     }
@@ -116,8 +116,8 @@ class h extends(l = s.Ay.PersistedStore) {
         if (null != e) return O[e]
     }
 }
-c(h, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(h, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
-let b = new h(o.h, {
+c(b, "displayName", "GuildSettingsOnboardingHomeSettingsStore"), c(b, "persistKey", "GuildSettingsOnboardingHomeSettingsStore");
+let h = new b(o.h, {
     GUILD_SETTINGS_INIT: g,
     GUILD_SETTINGS_SET_SECTION: g,
     GUILD_SETTINGS_ONBOARDING_HOME_SETTINGS_RESET: g,
@@ -127,8 +127,8 @@ let b = new h(o.h, {
     GUILD_HOME_SETTINGS_UPDATE_START: function() {
         A = !0
     },
-    GUILD_HOME_SETTINGS_UPDATE_SUCCESS: T,
-    GUILD_HOME_SETTINGS_UPDATE_FAIL: T,
+    GUILD_HOME_SETTINGS_UPDATE_SUCCESS: f,
+    GUILD_HOME_SETTINGS_UPDATE_FAIL: f,
     GUILD_NEW_MEMBER_ACTION_UPDATE_SUCCESS: function(e) {
         let {
             action: n
@@ -139,7 +139,7 @@ let b = new h(o.h, {
         let {
             resourceChannel: n
         } = e;
-        f(n.channelId, n)
+        T(n.channelId, n)
     },
     GUILD_SETTINGS_ONBOARDING_UPDATE_WELCOME_MESSAGE: function(e) {
         let {
@@ -208,7 +208,7 @@ let b = new h(o.h, {
             channelId: n,
             resourceChannel: t
         } = e;
-        f(n, t)
+        T(n, t)
     },
     GUILD_SETTINGS_ONBOARDING_ADD_RESOURCE_CHANNEL: function(e) {
         var n;

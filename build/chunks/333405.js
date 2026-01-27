@@ -28,7 +28,7 @@ function i(e, t) {
         }
         throw TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.")
     }
-    var s, o = !0,
+    var o, s = !0,
         l = !1;
     return {
         s: function() {
@@ -36,16 +36,16 @@ function i(e, t) {
         },
         n: function() {
             var e = n.next();
-            return o = e.done, e
+            return s = e.done, e
         },
         e: function(e) {
-            l = !0, s = e
+            l = !0, o = e
         },
         f: function() {
             try {
-                o || null == n.return || n.return()
+                s || null == n.return || n.return()
             } finally {
-                if (l) throw s
+                if (l) throw o
             }
         }
     }
@@ -53,20 +53,20 @@ function i(e, t) {
 
 function a(e, t) {
     if (e) {
-        if ("string" == typeof e) return s(e, t);
+        if ("string" == typeof e) return o(e, t);
         var n = Object.prototype.toString.call(e).slice(8, -1);
         if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
-        if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return s(e, t)
+        if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return o(e, t)
     }
 }
 
-function s(e, t) {
+function o(e, t) {
     (null == t || t > e.length) && (t = e.length);
     for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
     return r
 }
 "u" > typeof window ? r = window : "u" < typeof self ? (console.warn("Using browser-only version of superagent in non-browser environment"), r = void 0) : r = self;
-let o = n(882630),
+let s = n(882630),
     l = n(232859),
     c = n(591560),
     u = n(191203),
@@ -125,9 +125,9 @@ function v(e) {
 
 function A(e) {
     let t, n, r, i, a = e.split(/\r?\n/),
-        s = {};
-    for (let e = 0, o = a.length; e < o; ++e) - 1 !== (t = (n = a[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = y(n.slice(t + 1)), s[r] = i);
-    return s
+        o = {};
+    for (let e = 0, s = a.length; e < s; ++e) - 1 !== (t = (n = a[e]).indexOf(":")) && (r = n.slice(0, t).toLowerCase(), i = y(n.slice(t + 1)), o[r] = i);
+    return o
 }
 
 function I(e) {
@@ -181,7 +181,7 @@ E.serializeObject = b, E.parseString = v, E.types = {
         n = e.url,
         r = Error(`cannot ${t} ${n} (${this.status})`);
     return r.status = this.status, r.method = t, r.url = n, r
-}, E.Response = S, o(T.prototype), p(T.prototype, u.prototype), T.prototype.type = function(e) {
+}, E.Response = S, s(T.prototype), p(T.prototype, u.prototype), T.prototype.type = function(e) {
     return this.set("Content-Type", E.types[e] || e), this
 }, T.prototype.accept = function(e) {
     return this.set("Accept", E.types[e] || e), this

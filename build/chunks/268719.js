@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 268719, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(311907),
-    a = n(994500),
-    s = n(301960);
+    l = n(994500),
+    a = n(301960);
 
-function o(e) {
+function s(e) {
     let {
         message: t,
         channel: n,
-        compact: o
-    } = e, l = (0, i.bG)([a.A], () => null != t.interaction && a.A.isBlocked(t.interaction.user.id), [t.interaction]);
-    return (0, r.jsx)(s.A, {
+        compact: s
+    } = e, o = (0, i.bG)([l.A], () => null != t.interaction && l.A.isBlocked(t.interaction.user.id), [t.interaction]);
+    return (0, r.jsx)(a.A, {
         message: t,
         channel: n,
-        compact: o,
-        isInteractionUserBlocked: l
+        compact: s,
+        isInteractionUserBlocked: o
     })
 }
 
-function l(e, t, n) {
-    return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(o, {
+function o(e, t, n) {
+    return null != e.interaction && "" !== e.interaction.displayName ? (0, r.jsx)(s, {
         message: e,
         channel: t,
         compact: n

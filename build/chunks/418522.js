@@ -13,8 +13,8 @@ n.r(t), n.d(t, {
 var r = n(191824),
     i = n(998275),
     a = n(642714),
-    s = n(288888),
-    o = n(210231),
+    o = n(288888),
+    s = n(210231),
     l = n(650073),
     c = n(887572),
     u = n(202262),
@@ -44,12 +44,12 @@ function C(e, t, n) {
 
 function N(e = !1) {
     let t = w(!1, e);
-    return t.parsers.unshift(new h.A), t.parsers.unshift(new m.A), t.parsers.unshift(new s.A), t.parsers.unshift(new E.A), t.parsers.unshift(new O.A), t
+    return t.parsers.unshift(new h.A), t.parsers.unshift(new m.A), t.parsers.unshift(new o.A), t.parsers.unshift(new E.A), t.parsers.unshift(new O.A), t
 }
 
 function w(e = !0, t = !1) {
     return (0, _.i)({
-        parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new o.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
+        parsers: [new b.A(t), new r.A, new i.A, new a.A, new g.A, new s.A, new l.A, new c.A(e), new u.A(e), new d.A(e)],
         refiners: [new v.A, new p.A, new f.A]
     }, e)
 }

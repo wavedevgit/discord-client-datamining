@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(728458);
-let s = {},
-    o = () => ({
+let o = {},
+    s = () => ({
         data: null,
         status: "not_loaded"
     });
 
 function l(e) {
     var t, n, r;
-    return null != (r = (t = s)[n = e]) ? r : t[n] = o()
+    return null != (r = (t = o)[n = e]) ? r : t[n] = s()
 }
 
 function c(e) {
@@ -116,12 +116,12 @@ function O(e) {
         recipientId: r,
         skuId: i
     } = e, a = n(622543).A.getFirstWishlistId(r);
-    null != a && null != s[a] && (null == (t = s[a].data) ? void 0 : t.hasSkuId(i)) && (s[a].updatedAt = void 0)
+    null != a && null != o[a] && (null == (t = o[a].data) ? void 0 : t.hasSkuId(i)) && (o[a].updatedAt = void 0)
 }
 class v extends r.Ay.Store {
     get(e) {
         var t;
-        return null != (t = s[e]) ? t : o()
+        return null != (t = o[e]) ? t : s()
     }
     getWishlist(e) {
         return this.get(e).data

@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(798233);
+    o = n(798233);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -29,13 +29,13 @@ class l extends i.PureComponent {
             children: (0, r.jsx)(a.Text, {
                 color: "text-feedback-critical",
                 variant: "text-md/normal",
-                className: s.cW,
+                className: o.cW,
                 children: "Error rendering component. Check console for more information on the error."
             })
         }) : this.props.children
     }
     constructor(...e) {
-        super(...e), o(this, "state", {
+        super(...e), s(this, "state", {
             error: null,
             info: null
         })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(554146),
     i = n(406935),
     a = n(451988),
-    s = n(439372),
-    o = n(827827),
+    o = n(439372),
+    s = n(827827),
     l = n(970931),
     c = n(253932),
     u = n(594061),
@@ -26,7 +26,7 @@ function p(e, t, n) {
 let _ = new a.Ep,
     h = new a.Ep,
     m = new a.Ep;
-class g extends s.A {
+class g extends o.A {
     constructor(...e) {
         super(...e), p(this, "previousStatus", null), p(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
@@ -51,7 +51,7 @@ class g extends s.A {
             if (null != e && "0" !== e && d.A.getStatus() !== f.clD.ONLINE) {
                 let t = new Date(Number(e)).getTime() - new Date().getTime();
                 t > 0 ? _.start(t, () => {
-                    (0, o.A)({
+                    (0, s.A)({
                         nextStatus: f.clD.ONLINE,
                         analyticsContext: {
                             location: {
@@ -59,7 +59,7 @@ class g extends s.A {
                             }
                         }
                     })
-                }, !0) : ((0, o.A)({
+                }, !0) : ((0, s.A)({
                     nextStatus: f.clD.ONLINE,
                     analyticsContext: {
                         location: {

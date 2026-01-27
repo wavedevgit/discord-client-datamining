@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(158954),
     c = n(397927),
     u = n(263215),
@@ -116,8 +116,8 @@ function y(e) {
             perks: e
         })
     }, [_]);
-    return null == _ || 0 === _.length ? null : (0, r.jsxs)(o.animated.div, {
-        className: s()(p.kL, {
+    return null == _ || 0 === _.length ? null : (0, r.jsxs)(s.animated.div, {
+        className: o()(p.kL, {
             [p.Vz]: n
         }),
         style: g(h({}, b), {
@@ -126,7 +126,7 @@ function y(e) {
         children: [(0, r.jsx)(l.EYj, {
             tag: "span",
             variant: "text-md/semibold",
-            className: s()(p.h_, {
+            className: o()(p.h_, {
                 [p.Qq]: !n,
                 [p.sl]: n
             }),

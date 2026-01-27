@@ -6,8 +6,8 @@ n.d(t, {
     A: () => U
 });
 var i, a = n(111956),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(73153),
     c = n(956793),
     u = n(77729),
@@ -84,7 +84,7 @@ function w() {
 function R(e) {
     d.A.getConfig({
         location: "handlePowerEvent"
-    }).power_events ? j({}) : (e && (r = Date.now()), N())
+    }).power_events ? M({}) : (e && (r = Date.now()), N())
 }
 if (!__OVERLAY__) {
     _.isPlatformEmbedded && (null === u.A || void 0 === u.A ? void 0 : u.A.remotePowerMonitor) != null ? (w(), u.A.remotePowerMonitor.on("resume", () => {
@@ -96,10 +96,10 @@ if (!__OVERLAY__) {
     }), u.A.remotePowerMonitor.on("unlock-screen", () => {
         A = !1, R(!1)
     })) : setInterval(N, 30 * p.A.Millis.SECOND);
-    let e = s()(() => {
+    let e = o()(() => {
         d.A.getConfig({
             location: "handleGenericInput"
-        }).generic_inputs && j({})
+        }).generic_inputs && M({})
     }, 500);
     window.addEventListener("mouseup", e), window.addEventListener("wheel", e), window.addEventListener("keypress", e)
 }
@@ -112,22 +112,22 @@ function D(e) {
     O = e.afk
 }
 
-function x(e) {
+function L(e) {
     let {
         userId: t,
         speakingFlags: n
     } = e;
-    return n !== g.ME.NONE && t === h.default.getId() && j({}), !1
+    return n !== g.ME.NONE && t === h.default.getId() && M({}), !1
 }
 
-function L(e) {
+function x(e) {
     let {
         state: t
     } = e;
     return I = t === m.g6G.BACKGROUND, r = null, y = Date.now(), N(), !1
 }
 
-function j(e) {
+function M(e) {
     let {
         timestamp: t,
         type: n
@@ -138,13 +138,13 @@ function j(e) {
     }) : N(), !1)
 }
 
-function M() {
+function j() {
     if (!d.A.getConfig({
             location: "handleSettingsProtoUpdate"
         }).settings_updates) return !1;
-    j({})
+    M({})
 }
-class k extends(i = o.Ay.Store) {
+class k extends(i = s.Ay.Store) {
     initialize() {
         this.waitFor(h.default)
     }
@@ -168,13 +168,13 @@ E(k, "displayName", "IdleStore");
 let U = new k(l.h, {
     IDLE: P,
     AFK: D,
-    SPEAKING: x,
-    APP_STATE_UPDATE: L,
-    OVERLAY_SET_NOT_IDLE: j,
-    CHANNEL_SELECT: j,
-    VOICE_CHANNEL_SELECT: j,
-    WINDOW_FOCUS: j,
-    OVERLAY_INITIALIZE: j,
-    OVERLAY_SET_INPUT_LOCKED: j,
-    USER_SETTINGS_PROTO_UPDATE: M
+    SPEAKING: L,
+    APP_STATE_UPDATE: x,
+    OVERLAY_SET_NOT_IDLE: M,
+    CHANNEL_SELECT: M,
+    VOICE_CHANNEL_SELECT: M,
+    WINDOW_FOCUS: M,
+    OVERLAY_INITIALIZE: M,
+    OVERLAY_SET_INPUT_LOCKED: M,
+    USER_SETTINGS_PROTO_UPDATE: j
 })

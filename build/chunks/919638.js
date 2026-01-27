@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(626584),
-    o = n(71393);
+    o = n(626584),
+    s = n(71393);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -17,7 +17,7 @@ function l(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let c = new s.A("GuildAvailabilityStore"),
+let c = new o.A("GuildAvailabilityStore"),
     u = new Set;
 
 function d(e) {
@@ -31,7 +31,7 @@ function f(e) {
 
 function p(e) {
     if (u.has(e.guildId)) return !1;
-    let t = o.A.getGuild(e.guildId),
+    let t = s.A.getGuild(e.guildId),
         n = "???";
     null != t && null != t.name && (n = t.name), c.warn("Guild has gone unavailable: ".concat(e.guildId, " (").concat(n, ")")), u.add(e.guildId)
 }
@@ -46,13 +46,13 @@ function h(e) {
 }
 class m extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A)
+        this.waitFor(s.A)
     }
     isUnavailable(e) {
         return null != e && u.has(e)
     }
     get totalGuilds() {
-        return o.A.getGuildCount() + u.size
+        return s.A.getGuildCount() + u.size
     }
     get totalUnavailableGuilds() {
         return u.size

@@ -28,15 +28,15 @@ var n = i(627968),
     D = i(840065),
     p = i(715999),
     P = i(934370),
-    v = i(450987),
-    m = i(623375),
+    m = i(450987),
+    v = i(623375),
     G = i(652215),
     y = i(788868),
     V = i(985018),
     f = i(895431),
     h = i(458017),
-    X = i(120499),
-    M = i(684399),
+    M = i(120499),
+    X = i(684399),
     U = i(446115);
 let Y = () => {
         let t = (0, o.q)((0, A.Ay)()),
@@ -63,7 +63,7 @@ let Y = () => {
                             }), (0, n.jsx)("div", {
                                 className: h.zN
                             }), (0, n.jsx)("img", {
-                                src: t ? M : X,
+                                src: t ? X : M,
                                 alt: "Cloudflare",
                                 width: 103,
                                 height: 15
@@ -86,7 +86,7 @@ let Y = () => {
                         children: (0, n.jsx)(k, {})
                     })]
                 })]
-            }), (0, n.jsx)(m.u, {})]
+            }), (0, n.jsx)(v.u, {})]
         })
     },
     k = () => {
@@ -127,7 +127,7 @@ let Y = () => {
         switch (t) {
             case g.Lk.ERROR:
             case g.Lk.NOT_INSTALLED:
-                return (0, n.jsx)(v.y, {
+                return (0, n.jsx)(m.y, {
                     onClick: () => A.current = !0
                 });
             case g.Lk.INSTALLED:

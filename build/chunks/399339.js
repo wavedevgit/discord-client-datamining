@@ -2,18 +2,18 @@
 /** chunk id: 399339, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    e: () => o
+    e: () => s
 }), n(938796);
 var r = n(627968),
     i = n(64700),
     a = n(38021),
-    s = n(818348);
+    o = n(818348);
 
-function o(e) {
+function s(e) {
     let {
         children: t,
-        theme: n = s.NJ.DARK,
-        primaryColor: o = null,
+        theme: n = o.NJ.DARK,
+        primaryColor: s = null,
         secondaryColor: l = null,
         gradient: c = null,
         flags: u = 0,
@@ -24,7 +24,7 @@ function o(e) {
         reduceAdaptiveTheme: h = !1
     } = e, m = i.useMemo(() => (0, a.dI)({
         theme: n,
-        primaryColor: o,
+        primaryColor: s,
         secondaryColor: l,
         gradient: c,
         flags: u,
@@ -33,7 +33,7 @@ function o(e) {
         density: p,
         disableAdaptiveTheme: _,
         reduceAdaptiveTheme: h
-    }), [n, o, l, c, u, d, f, p, _, h]);
+    }), [n, s, l, c, u, d, f, p, _, h]);
     return (0, r.jsx)(a.Dx.Provider, {
         value: m,
         children: t

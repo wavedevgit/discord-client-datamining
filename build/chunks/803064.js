@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 803064, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(652215),
     p = n(874864),
     f = n(339984),
-    b = n(478644),
-    h = n(985018),
+    h = n(478644),
+    b = n(985018),
     x = n(659233);
 let j = function(e) {
     let {
@@ -29,7 +29,7 @@ let j = function(e) {
         }) : (0, l.mMO)(async () => {
             let {
                 default: l
-            } = await Promise.all([n.e("35929"), n.e("79149"), n.e("74571"), n.e("94073")]).then(n.bind(n, 142630));
+            } = await Promise.all([n.e("79149"), n.e("35929"), n.e("74571"), n.e("1580")]).then(n.bind(n, 142630));
             return n => (0, r.jsx)(l, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -87,9 +87,9 @@ let j = function(e) {
         }) : null,
         disabled: !j,
         onChange: _,
-        hint: h.intl.string(h.t.NyXznh),
+        hint: b.intl.string(b.t.NyXznh),
         enabled: j,
-        maxFileSizeBytes: b.j
+        maxFileSizeBytes: h.j
     });
     return j ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
@@ -97,7 +97,7 @@ let j = function(e) {
             children: [(0, r.jsx)(l.Heading, {
                 className: x.wx,
                 variant: "heading-lg/extrabold",
-                children: h.intl.string(h.t.BBj1nY)
+                children: b.intl.string(b.t.BBj1nY)
             }), (0, r.jsx)(a.A, {
                 className: x.ts,
                 guild: t,
@@ -111,13 +111,13 @@ let j = function(e) {
                 children: [(0, r.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-default",
-                    children: h.intl.string(h.t.Vwintv)
+                    children: b.intl.string(b.t.Vwintv)
                 }), (0, r.jsx)("div", {
                     className: x.au,
                     children: (0, r.jsx)(d.A, {
                         onChange: _,
-                        maxFileSizeBytes: b.j,
-                        text: h.intl.string(h.t.yG2pUi),
+                        maxFileSizeBytes: h.j,
+                        text: b.intl.string(b.t.yG2pUi),
                         size: "md",
                         variant: "primary"
                     })
@@ -132,7 +132,7 @@ let j = function(e) {
             children: [(0, r.jsx)(l.Heading, {
                 className: x.wx,
                 variant: "heading-lg/extrabold",
-                children: h.intl.string(h.t.BBj1nY)
+                children: b.intl.string(b.t.BBj1nY)
             }), (0, r.jsx)(a.A, {
                 className: x.ts,
                 guild: t,
@@ -147,11 +147,11 @@ let j = function(e) {
                     variant: "text-sm/normal",
                     color: "text-default",
                     className: x.tb,
-                    children: h.intl.string(h.t.Vwintv)
+                    children: b.intl.string(b.t.Vwintv)
                 }), (0, r.jsx)(l.Button, {
                     variant: "expressive",
                     icon: l._Jp,
-                    text: h.intl.string(h.t["+7XY31"]),
+                    text: b.intl.string(b.t["+7XY31"]),
                     onClick: O
                 })]
             }), (0, r.jsx)("div", {

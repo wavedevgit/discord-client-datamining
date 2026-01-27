@@ -7,19 +7,19 @@ r = {
 };
 let i = n(20816),
     a = n(978884),
-    s = n(597084),
-    o = () => {},
+    o = n(597084),
+    s = () => {},
     l = new a.TimeoutError;
 class c extends i {
     constructor(e) {
         var t, n, r, i;
-        if (super(), this._intervalCount = 0, this._intervalEnd = 0, this._pendingCount = 0, this._resolveEmpty = o, this._resolveIdle = o, !("number" == typeof(e = Object.assign({
+        if (super(), this._intervalCount = 0, this._intervalEnd = 0, this._pendingCount = 0, this._resolveEmpty = s, this._resolveIdle = s, !("number" == typeof(e = Object.assign({
                 carryoverConcurrencyCount: !1,
                 intervalCap: 1 / 0,
                 interval: 0,
                 concurrency: 1 / 0,
                 autoStart: !0,
-                queueClass: s.default
+                queueClass: o.default
             }, e)).intervalCap && e.intervalCap >= 1)) throw TypeError(`Expected \`intervalCap\` to be a number from 1 and up, got \`${null!=(n=null==(t=e.intervalCap)?void 0:t.toString())?n:""}\` (${typeof e.intervalCap})`);
         if (void 0 === e.interval || !(Number.isFinite(e.interval) && e.interval >= 0)) throw TypeError(`Expected \`interval\` to be a finite number >= 0, got \`${null!=(i=null==(r=e.interval)?void 0:r.toString())?i:""}\` (${typeof e.interval})`);
         this._carryoverConcurrencyCount = e.carryoverConcurrencyCount, this._isIntervalIgnored = e.intervalCap === 1 / 0 || 0 === e.interval, this._intervalCap = e.intervalCap, this._interval = e.interval, this._queue = new e.queueClass, this._queueClass = e.queueClass, this.concurrency = e.concurrency, this._timeout = e.timeout, this._throwOnTimeout = !0 === e.throwOnTimeout, this._isPaused = !1 === e.autoStart
@@ -34,7 +34,7 @@ class c extends i {
         this._pendingCount--, this._tryToStartAnother(), this.emit("next")
     }
     _resolvePromises() {
-        this._resolveEmpty(), this._resolveEmpty = o, 0 === this._pendingCount && (this._resolveIdle(), this._resolveIdle = o, this.emit("idle"))
+        this._resolveEmpty(), this._resolveEmpty = s, 0 === this._pendingCount && (this._resolveIdle(), this._resolveIdle = s, this.emit("idle"))
     }
     _onResumeInterval() {
         this._onInterval(), this._initializeIntervalIfNeeded(), this._timeoutId = void 0

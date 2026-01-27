@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(155718),
-    o = n(58149),
+    o = n(155718),
+    s = n(58149),
     l = n(723702),
     c = n(861382),
     u = n(652215);
@@ -52,17 +52,17 @@ function g(e) {
         channelId: r,
         query: i,
         name: a
-    } = e, s = h(r);
-    if (s.optionNameToLastQuery.get(a) === i) return !1;
-    s.optionNameToLastQuery.set(a, i);
-    let o = null == (t = s.optionNameToAutocompleteQueries.get(a)) ? void 0 : t.get(i);
-    if (null != o) return s.lastErrored = !1, s.optionNameToLastResults.set(a, o), !0;
-    let l = s.optionNameToNonce.get(a);
+    } = e, o = h(r);
+    if (o.optionNameToLastQuery.get(a) === i) return !1;
+    o.optionNameToLastQuery.set(a, i);
+    let s = null == (t = o.optionNameToAutocompleteQueries.get(a)) ? void 0 : t.get(i);
+    if (null != s) return o.lastErrored = !1, o.optionNameToLastResults.set(a, s), !0;
+    let l = o.optionNameToNonce.get(a);
     if (null != l && f.delete(l), f.set(n, {
             channelId: r,
             query: i,
             name: a
-        }), _.set(n, new Date), s.optionNameToNonce.set(a, n), s.lastErrored) return s.lastErrored = !1, !0
+        }), _.set(n, new Date), o.optionNameToNonce.set(a, n), o.lastErrored) return o.lastErrored = !1, !0
 }
 let E = (0, l.isDesktop)();
 
@@ -76,7 +76,7 @@ function y(e) {
     f.delete(a);
     let d = h(l.channelId);
     null == d.optionNameToAutocompleteQueries.get(l.name) && d.optionNameToAutocompleteQueries.set(l.name, new Map);
-    let p = E && (null == (n = c.A.getActiveOption(l.channelId)) ? void 0 : n.type) === s.n4.INTEGER,
+    let p = E && (null == (n = c.A.getActiveOption(l.channelId)) ? void 0 : n.type) === o.n4.INTEGER,
         m = null != (t = null == i ? void 0 : i.map(e => {
             let {
                 value: t,
@@ -91,7 +91,7 @@ function y(e) {
         })) ? t : [],
         g = _.get(a),
         y = null != g ? new Date().getTime() - g.getTime() : 0;
-    return (0, o.zV)(u.HAw.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
+    return (0, s.zV)(u.HAw.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
         duration_ms: y,
         error: !1,
         num_options: m.length
@@ -108,7 +108,7 @@ function b(e) {
     f.delete(t);
     let r = _.get(t),
         i = null != r ? new Date().getTime() - r.getTime() : 0;
-    return (0, o.zV)(u.HAw.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
+    return (0, s.zV)(u.HAw.APPLICATION_COMMAND_OPTION_STRING_AUTOCOMPLETE_PERFORMANCE, {
         duration_ms: i,
         error: !0
     }), _.delete(t), h(n.channelId).lastErrored = !0, !0

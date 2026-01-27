@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(735438),
-    s = n.n(a),
-    o = n(954571),
+    o = n.n(a),
+    s = n(954571),
     l = n(927813),
     c = n(636401),
     u = n(639621),
@@ -28,7 +28,7 @@ let h = "RPC_STORE_WAIT",
     m = [];
 
 function g(e, t) {
-    return s().isEqual(e, s().pick(t, Object.keys(e)))
+    return o().isEqual(e, o().pick(t, Object.keys(e)))
 }
 
 function E(e) {
@@ -71,7 +71,7 @@ class y {
             if (!(0, d.A)(e.authorization.scopes, i.scope)) throw new c.A({
                 errorCode: p.Lw6.INVALID_PERMISSIONS
             }, "Not authenticated or invalid scope");
-            o.default.track(p.HAw.RPC_COMMAND_SENT, {
+            s.default.track(p.HAw.RPC_COMMAND_SENT, {
                 command: r,
                 scope: "object" == typeof i.scope ? JSON.stringify(i.scope) : i.scope,
                 application_id: e.application.id,
@@ -131,7 +131,7 @@ class y {
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : p.e$_.DISPATCH,
             r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : p.Lw6.UNKNOWN_ERROR,
             i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : "Unknown Error";
-        o.default.track(p.HAw.RPC_SERVER_ERROR_CAUGHT, {
+        s.default.track(p.HAw.RPC_SERVER_ERROR_CAUGHT, {
             command: n,
             code: r,
             message: i
@@ -152,7 +152,7 @@ class y {
         return void 0 !== this.subscriptions.find(n => n.socket.application.id === e && n.evt === t)
     }
     getSubscription(e, t, n) {
-        return this.subscriptions.find(r => r.socket === e && r.evt === t && s().isEqual(r.args, n))
+        return this.subscriptions.find(r => r.socket === e && r.evt === t && o().isEqual(r.args, n))
     }
     addSubscription(e, t, n) {
         let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null,
@@ -170,10 +170,10 @@ class y {
         }), this.dispatchIsSubscribedUpdate())
     }
     removeSubscription(e, t, n) {
-        s().remove(this.subscriptions, r => r.socket === e && r.evt === t && s().isEqual(r.args, n)), this.dispatchIsSubscribedUpdate()
+        o().remove(this.subscriptions, r => r.socket === e && r.evt === t && o().isEqual(r.args, n)), this.dispatchIsSubscribedUpdate()
     }
     removeSubscriptions(e) {
-        s().remove(this.subscriptions, t => t.socket === e), this.dispatchIsSubscribedUpdate()
+        o().remove(this.subscriptions, t => t.socket === e), this.dispatchIsSubscribedUpdate()
     }
     dispatchToSubscriptions(e, t, n, r) {
         null != r && "" !== r && E(r) || this.subscriptions.forEach(r => {
@@ -189,19 +189,19 @@ class y {
     storeWait(e, t, n) {
         let r = t();
         if (r || 0 === n) return Promise.resolve(r);
-        let i = s().uniqueId(),
+        let i = o().uniqueId(),
             a = () => this.removeSubscription(e, h, {
                 uniqueId: i
             });
-        return new Promise((r, s) => {
-            let o = setTimeout(() => {
-                a(), s(Error("timeout"))
+        return new Promise((r, o) => {
+            let s = setTimeout(() => {
+                a(), o(Error("timeout"))
             }, n * l.A.Millis.SECOND);
             this.addSubscription(e, h, {
                 uniqueId: i
             }, () => {
                 let e = t();
-                e && (clearTimeout(o), r(e))
+                e && (clearTimeout(s), r(e))
             })
         }).then(e => (a(), e))
     }

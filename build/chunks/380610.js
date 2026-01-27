@@ -15,19 +15,19 @@ n.d(t, {
 var r = n(664294),
     i = n(567243),
     a = n(562465),
-    s = n(723702),
-    o = n(998218),
+    o = n(723702),
+    s = n(998218),
     l = n(986238);
 n(652215);
 let c, u = "/__development/build_overrides",
-    d = (0, s.isAndroid)() ? c.Version.split(" - ")[0] : (0, s.isIOS)() ? c.Version : void 0;
+    d = (0, o.isAndroid)() ? c.Version.split(" - ")[0] : (0, o.isIOS)() ? c.Version : void 0;
 
 function f(e) {
     return "".concat(location.protocol, "//").concat(location.host).concat(e)
 }
 
 function p() {
-    let e = o.A.safeParseWithQuery(f(u));
+    let e = s.A.safeParseWithQuery(f(u));
     return null == e ? Promise.resolve(null) : (e.search = null, d && (e.query.version = d), a.Bo.get({
         url: i.format(e),
         oldFormErrors: !0,
@@ -37,7 +37,7 @@ function p() {
 
 function _(e) {
     if (b(e)) return Promise.resolve(O(e));
-    let t = o.A.safeParseWithQuery(e);
+    let t = s.A.safeParseWithQuery(e);
     return null == t ? Promise.resolve(null) : (t.search = null, t.query.meta = "true", d && (t.query.version = d), t.host = window.location.host, a.Bo.get({
         url: i.format(t),
         oldFormErrors: !0,
@@ -73,7 +73,7 @@ function b(e) {
 function O(e) {
     let t = e.match(y);
     if (null == t || 2 !== t.length) return null;
-    let n = (0, s.getNativePlatform)(),
+    let n = (0, o.getNativePlatform)(),
         r = t[1];
     return {
         targetBuildOverride: {
@@ -95,7 +95,7 @@ function S(e) {
         payload: null,
         url: e
     };
-    let t = o.A.safeParseWithQuery(e);
+    let t = s.A.safeParseWithQuery(e);
     if (null == t || !A.has(t.hostname) || !(v in t.query) || !I.has(t.pathname)) return null;
     for (let e in t.query) e !== v && delete t.query[e];
     return {

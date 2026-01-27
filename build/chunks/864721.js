@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(485845),
-    o = n(179771),
+    o = n(485845),
+    s = n(179771),
     l = n(571356),
     c = n(397927),
     u = n(444927),
@@ -62,7 +62,7 @@ function h(e) {
     if (0 === i.length) return null;
     let b = y(),
         O = g ? f.t.PZpY9c : f.t["1Hz+Sl"],
-        v = h === s.b.USER_INSTALL && l.includes(o.F.APPLICATIONS_COMMANDS);
+        v = h === o.b.USER_INSTALL && l.includes(s.F.APPLICATIONS_COMMANDS);
     return (0, r.jsxs)("div", {
         className: a()(p.Wu, E ? p.bc : void 0),
         children: [(0, r.jsx)(c.Heading, {

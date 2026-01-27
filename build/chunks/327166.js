@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(311907),
     i = n(994500),
     a = n(800828),
-    s = n(652215),
-    o = n(985018);
+    o = n(652215),
+    s = n(985018);
 
 function l(e) {
-    return (0, r.bG)([a.A, i.A], () => i.A.getRelationshipType(e) === s.eA$.PENDING_INCOMING ? o.intl.string(o.t.wPI56w) : a.A.getGameRelationshipsForUser(e).length > 0 ? o.intl.string(o.t.LAcY7m) : o.intl.string(o.t.w5uwoI), [e])
+    return (0, r.bG)([a.A, i.A], () => i.A.getRelationshipType(e) === o.eA$.PENDING_INCOMING ? s.intl.string(s.t.wPI56w) : a.A.getGameRelationshipsForUser(e).length > 0 ? s.intl.string(s.t.LAcY7m) : s.intl.string(s.t.w5uwoI), [e])
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(732955),
     a = n(652165),
-    s = n(749226);
-let o = e => {
+    o = n(749226);
+let s = e => {
         (0, a.B4)({
             skuId: e,
             onCheckoutSuccess: e => {
@@ -34,10 +34,10 @@ let o = e => {
                     skuId: t
                 } = e;
                 return (0, r.jsx)("div", {
-                    className: s.YG,
+                    className: o.YG,
                     children: (0, r.jsx)(i.$nd, {
                         onClick: () => {
-                            o(t)
+                            s(t)
                         },
                         text: "Open Orb Checkout for Custom SKU: ".concat(t)
                     })

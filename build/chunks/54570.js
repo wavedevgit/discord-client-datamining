@@ -1,50 +1,50 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92750 **/
 /** chunk id: 54570, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    AU: () => i,
-    kC: () => s,
+    AU: () => r,
+    kC: () => i,
     kP: () => a,
-    pr: () => o,
-    zU: () => l
+    pr: () => l,
+    zU: () => c
 });
-var r = n(73153);
+var s = n(73153);
 
-function i(e, t, n, i, a) {
-    r.h.dispatch({
+function r(e, t, n, r, a) {
+    s.h.dispatch({
         type: "SPEAK_TEXT",
         text: e,
         interrupt: t,
         maxLength: n,
-        onStart: i,
+        onStart: r,
         onEnd: a
     })
 }
 
 function a(e, t) {
-    r.h.dispatch({
+    s.h.dispatch({
         type: "SPEAK_MESSAGE",
         channel: e,
         message: t
     })
 }
 
-function s(e, t) {
-    r.h.dispatch({
+function i(e, t) {
+    s.h.dispatch({
         type: "SPEAKING_MESSAGE",
         channelId: e,
         messageId: t
     })
 }
 
-function o() {
-    r.h.dispatch({
+function l() {
+    s.h.dispatch({
         type: "STOP_SPEAKING"
     })
 }
 
-function l(e) {
-    r.h.dispatch({
+function c(e) {
+    s.h.dispatch({
         type: "SET_TTS_SPEECH_RATE",
         speechRate: e
     })

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(942381),
+    o = n.n(a),
+    s = n(942381),
     l = n(877991),
     c = n(375499),
     u = n(151271),
@@ -24,7 +24,7 @@ function m(e, t) {
         type: a,
         channelId: m,
         pickerView: g = p.kx.EMOJI
-    } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], o.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
+    } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
         tooltipsWithKeybinds: I,
         expressionsCombinedIntoEmojiButton: S
     } = d.C.useConfig({
@@ -33,7 +33,7 @@ function m(e, t) {
         (0, u.r$)(g, a, m)
     }, [a, g, m]);
     return n ? null : (0, r.jsx)("div", {
-        className: s()(p.VQ, h.UD),
+        className: o()(p.VQ, h.UD),
         ref: t,
         children: (0, r.jsx)(c.A, {
             "aria-label": C,

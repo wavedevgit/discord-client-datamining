@@ -1,20 +1,17 @@
-/** Chunk was on web.js **/
-/** chunk id: 997997, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    C: () => a,
-    K: () => s
+/** Chunk was on 13088 **/
+/** chunk id: 997997, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    C: () => u,
+    K: () => o
 });
-var r = n(954571),
+var l, r = n(954571),
     i = n(652215),
-    a = function(e) {
-        return e.STORE_MODAL = "store_modal", e.DETAILS_MODAL = "details_modal", e.STORE_EMBED = "store_embed", e.SKU_EMBED = "sku_embed", e
-    }({});
+    u = ((l = {}).STORE_MODAL = "store_modal", l.DETAILS_MODAL = "details_modal", l.STORE_EMBED = "store_embed", l.SKU_EMBED = "sku_embed", l);
 
-function s(e, t, n) {
+function o(t, e, n) {
     r.default.track(i.HAw.STOREFRONT_COPY_LINK_CLICKED, {
-        application_id: e,
-        area: t,
+        application_id: t,
+        area: e,
         sku_id: n
     })
 }

@@ -5,20 +5,20 @@ n(747238);
 var r = n(446474),
     i = n(693655),
     a = n(221748),
-    s = n(503628),
-    o = n(380744),
+    o = n(503628),
+    s = n(380744),
     l = n(706938),
-    c = o("species"),
+    c = s("species"),
     u = RegExp.prototype;
 e.exports = function(e, t, n, d) {
-    var f = o(e),
-        p = !s(function() {
+    var f = s(e),
+        p = !o(function() {
             var t = {};
             return t[f] = function() {
                 return 7
             }, 7 !== "" [e](t)
         }),
-        _ = p && !s(function() {
+        _ = p && !o(function() {
             var t = !1,
                 n = /a/;
             return "split" === e && ((n = {}).constructor = {}, n.constructor[c] = function() {
@@ -29,9 +29,9 @@ e.exports = function(e, t, n, d) {
         });
     if (!p || !_ || n) {
         var h = /./ [f],
-            m = t(f, "" [e], function(e, t, n, i, s) {
-                var o = t.exec;
-                return o === a || o === u.exec ? p && !s ? {
+            m = t(f, "" [e], function(e, t, n, i, o) {
+                var s = t.exec;
+                return s === a || s === u.exec ? p && !o ? {
                     done: !0,
                     value: r(h, t, n, i)
                 } : {

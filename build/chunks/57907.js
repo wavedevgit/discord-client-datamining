@@ -9,14 +9,14 @@ var r = i(989349),
     l = i.n(r),
     a = i(311907),
     d = i(397927),
-    s = i(392567),
-    o = i(152007),
+    o = i(392567),
+    s = i(152007),
     u = i(867455),
     c = i(995102),
     h = i(985018);
 
 function A(t) {
-    let [n, i, r] = (0, a.yK)([o.A], () => [o.A.isMuted(t.id), o.A.getMuteConfig(t.id), o.A.hasJoined(t.id)]), A = (0, s.M)(i);
+    let [n, i, r] = (0, a.yK)([s.A], () => [s.A.isMuted(t.id), s.A.getMuteConfig(t.id), s.A.hasJoined(t.id)]), A = (0, o.M)(i);
 
     function g(n) {
         u.A.setNotificationSettings(t, {

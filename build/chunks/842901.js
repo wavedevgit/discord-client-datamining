@@ -1,30 +1,29 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 842901, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    E: () => s,
-    T: () => o
+    E: () => a,
+    T: () => s
 }), n(801541);
 var r = n(889137),
     i = n(966974),
-    a = n(48693);
+    l = n(48693);
 
-function s(e, t) {
-    let n = (0, r.YW)(t).with(i.Z.IMAGE_ONLY_ANSWERS, () => a.EK).otherwise(() => a.fD);
+function a(e, t) {
+    let n = (0, r.YW)(t).with(i.Z.IMAGE_ONLY_ANSWERS, () => l.EK).otherwise(() => l.fD);
     return {
         styles: {
             loserSelected: n,
             normal: n,
             notVoted: n,
             selected: n,
-            voted: a.pq,
-            victorSelected: a.iu,
-            victorNotSelected: a.iu,
+            voted: l.pq,
+            victorSelected: l.iu,
+            victorNotSelected: l.iu,
             normalVote: n
         }
     }
 }
 
-function o(e, t) {
+function s(e, t) {
     return e.getAvatarURL(t, 20, !1)
 }

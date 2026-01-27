@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(353640),
     a = n(158390),
-    s = n(52133),
-    o = n(417597);
+    o = n(52133),
+    s = n(417597);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -45,11 +45,11 @@ function u(e) {
 
 function d(e) {
     let [t, n] = (0, r.useState)(e);
-    return e === t || (0, s.v)(e, t) || n(e), t
+    return e === t || (0, o.v)(e, t) || n(e), t
 }
 
 function f(e, t) {
-    return Array.isArray(e) && Array.isArray(t) ? (0, s.v)(e, t) : Object.is(e, t)
+    return Array.isArray(e) && Array.isArray(t) ? (0, o.v)(e, t) : Object.is(e, t)
 }
 
 function p(e) {
@@ -70,7 +70,7 @@ function g(e, t) {
     let {
         getQueryId: n,
         get: a,
-        load: s,
+        load: o,
         getIsLoading: l,
         getError: c,
         retryConfig: {
@@ -95,18 +95,18 @@ function g(e, t) {
             queryId: n,
             args: r,
             refetch: i = !1,
-            useStoreState: o = O(n)
-        } = e, c = o.getState().backoff, d = null != (t = null == l ? void 0 : l(...r)) ? t : o.getState().isLoading;
+            useStoreState: s = O(n)
+        } = e, c = s.getState().backoff, d = null != (t = null == l ? void 0 : l(...r)) ? t : s.getState().isLoading;
         if (null != n && !d && (i || null == a(...r))) try {
-            o.setState({
+            s.setState({
                 isLoading: !0
-            }), await s(...r), c.succeed(), o.setState({
+            }), await o(...r), c.succeed(), s.setState({
                 error: null,
                 isLoading: !1
             })
         } catch (t) {
             let e = u(t);
-            o.setState({
+            s.setState({
                 error: e,
                 isLoading: !1
             }), y(e) && g > c.fails && await new Promise((e, t) => {
@@ -114,7 +114,7 @@ function g(e, t) {
                     v({
                         queryId: n,
                         args: r,
-                        useStoreState: o,
+                        useStoreState: s,
                         refetch: i
                     }).then(e, t)
                 })
@@ -123,18 +123,18 @@ function g(e, t) {
     }
 
     function A() {
-        for (var t = arguments.length, i = Array(t), s = 0; s < t; s++) i[s] = arguments[s];
+        for (var t = arguments.length, i = Array(t), o = 0; o < t; o++) i[o] = arguments[o];
         let u = d(i),
             p = Array.isArray(e) ? e : [e],
             _ = n(...u),
             h = O(_),
-            m = (0, o.bG)(p, () => null == l ? void 0 : l(...u), [u]),
+            m = (0, s.bG)(p, () => null == l ? void 0 : l(...u), [u]),
             g = h(e => null == l && e.isLoading),
             E = null != m ? m : g,
-            y = (0, o.bG)(p, () => null == c ? void 0 : c(...u), [u]),
+            y = (0, s.bG)(p, () => null == c ? void 0 : c(...u), [u]),
             b = h(e => null == c ? e.error : null),
             A = null != y ? y : b,
-            I = (0, o.bG)(p, () => a(...u), [u], f);
+            I = (0, s.bG)(p, () => a(...u), [u], f);
         return (0, r.useEffect)(() => {
             v({
                 queryId: _,

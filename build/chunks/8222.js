@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(360345),
     i = n(476858),
     a = n(355418);
-let s = RegExp(`([0-9]{4})[-\\.\\/\\s](?:(${(0,i.uJ)(r.eB)})|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)`, "i"),
-    o = 1,
+let o = RegExp(`([0-9]{4})[-\\.\\/\\s](?:(${(0,i.uJ)(r.eB)})|([0-9]{1,2}))[-\\.\\/\\s]([0-9]{1,2})(?=\\W|$)`, "i"),
+    s = 1,
     l = 2,
     c = 3,
     u = 4;
@@ -18,10 +18,10 @@ class d extends a.c {
         super(), this.strictMonthDateOrder = e
     }
     innerPattern() {
-        return s
+        return o
     }
     innerExtract(e, t) {
-        let n = parseInt(t[o]),
+        let n = parseInt(t[s]),
             i = parseInt(t[u]),
             a = t[c] ? parseInt(t[c]) : r.eB[t[l].toLowerCase()];
         if (a < 1 || a > 12) {

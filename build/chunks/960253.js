@@ -9,18 +9,18 @@ n.d(t, {
 var r = n(311907),
     i = n(491026),
     a = n(936555),
-    s = n(465932),
-    o = n(164956),
+    o = n(465932),
+    s = n(164956),
     l = n(71393),
     c = n(217976),
     u = n(652215);
 
 function d(e) {
-    let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.A, o.A], r = t.getGuild(e);
+    let [t, n] = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : [l.A, s.A], r = t.getGuild(e);
     if (null == r) return !1;
     let i = (0, a.w)(r),
-        s = r.features.has(u.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
-    return !!(i && s || n.isViewingServerShop(e))
+        o = r.features.has(u.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+    return !!(i && o || n.isViewingServerShop(e))
 }
 
 function f(e, t) {
@@ -29,10 +29,10 @@ function f(e, t) {
 
 function p(e) {
     let t = (0, c.A)(e),
-        n = (0, r.bG)([l.A, o.A], () => d(e, [l.A, o.A]), [e]),
+        n = (0, r.bG)([l.A, s.A], () => d(e, [l.A, s.A]), [e]),
         {
             shouldHideGuildPurchaseEntryPoints: i
-        } = (0, s.MH)(e);
+        } = (0, o.MH)(e);
     return !i && (n || t)
 }
 

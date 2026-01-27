@@ -1,32 +1,31 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 107005, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Z: () => d
+    Z: () => u
 });
 var r = n(627968),
     i = n(64700),
-    a = n(397927),
+    l = n(397927),
     s = n(379848),
-    o = n(49999),
-    l = n(985018),
+    a = n(49999),
+    o = n(985018),
     c = n(784001);
-let u = e => {
+let d = e => {
         let {
             markAsDismissed: t
         } = e;
-        return i.useEffect(() => t(o.i.UNKNOWN), [t]), (0, r.jsx)(a.LpS, {
+        return i.useEffect(() => t(a.i.UNKNOWN), [t]), (0, r.jsx)(l.LpS, {
             className: c.Ad,
-            text: l.intl.string(l.t.y2b7CA)
+            text: o.intl.string(o.t.y2b7CA)
         })
     },
-    d = e => {
+    u = e => {
         let {
             title: t,
             body: n,
             img: i,
-            newIndicatorDismissibleContent: o,
-            onClick: d
+            newIndicatorDismissibleContent: a,
+            onClick: u
         } = e;
         return (0, r.jsxs)("div", {
             className: c.kL,
@@ -35,27 +34,27 @@ let u = e => {
                 children: [(0, r.jsxs)("div", {
                     className: c.TK,
                     children: [(0, r.jsx)(s.Ay, {
-                        contentTypes: [o],
+                        contentTypes: [a],
                         children: e => {
                             let {
                                 visibleContent: t,
                                 markAsDismissed: n
                             } = e;
-                            return t === o ? (0, r.jsx)(u, {
+                            return t === a ? (0, r.jsx)(d, {
                                 markAsDismissed: n
                             }) : null
                         }
-                    }), (0, r.jsx)(a.Text, {
+                    }), (0, r.jsx)(l.Text, {
                         variant: "text-md/semibold",
                         children: t
                     })]
-                }), (0, r.jsx)(a.Text, {
+                }), (0, r.jsx)(l.Text, {
                     variant: "text-xs/normal",
                     children: n
                 })]
-            }), (0, r.jsx)(a.Button, {
-                text: l.intl.string(l.t.vD60Pv),
-                onClick: d
+            }), (0, r.jsx)(l.Button, {
+                text: o.intl.string(o.t.vD60Pv),
+                onClick: u
             })]
         })
     }

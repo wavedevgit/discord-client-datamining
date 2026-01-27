@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(77468),
-    o = n(573648),
+    o = n(77468),
+    s = n(573648),
     l = n(806374),
     c = n(860689);
 
@@ -58,7 +58,7 @@ let _ = new Set([n(652215).fg2.CONTACTS]),
     b = {},
     O = {},
     v = e => {
-        m = e.filter(e => !_.has(e.type) && o.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = !1
+        m = e.filter(e => !_.has(e.type) && s.A.isSupported(e.type)), g = e.filter(e => _.has(e.type)), h = !1
     };
 
 function A(e) {
@@ -72,7 +72,7 @@ function I(e) {
                 features: []
             }))
         }))
-    })))) : s.A.fetch()
+    })))) : o.A.fetch()
 }
 
 function S(e) {
@@ -101,7 +101,7 @@ function N(e) {
         openid_params: r,
         provider: i
     } = e;
-    s.A.callback(i, {
+    o.A.callback(i, {
         code: t,
         state: n,
         openid_params: r

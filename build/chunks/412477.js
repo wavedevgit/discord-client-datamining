@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 21425 **/
 /** chunk id: 412477, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     g: () => u
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(990078),
-    l = n(397927),
+    l = n(503698),
+    a = n.n(l),
+    s = n(990078),
+    o = n(397927),
     c = n(167509);
 let u = i.memo(function(e) {
     let {
@@ -18,13 +17,13 @@ let u = i.memo(function(e) {
         absolute: i = !1
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(c.TP, i && c.ys),
-        children: (0, r.jsx)(o.m, {
+        className: a()(c.TP, i && c.ys),
+        children: (0, r.jsx)(s.m, {
             text: t,
             children: (0, r.jsx)("div", {
                 children: (0, r.jsx)(n, {
                     size: "md",
-                    color: l.LU0.colors.WHITE,
+                    color: o.LU0.colors.WHITE,
                     className: c.dx
                 })
             })

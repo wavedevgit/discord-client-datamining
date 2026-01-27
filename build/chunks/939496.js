@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(677313),
-    s = n(544028);
-let o = i.createContext({
-    theme: s.A.themePreferenceForSystemTheme((0, a.A)()),
+    o = n(544028);
+let s = i.createContext({
+    theme: o.A.themePreferenceForSystemTheme((0, a.A)()),
     themeType: null,
     primaryColor: null,
     secondaryColor: null,
@@ -22,19 +22,19 @@ function l(e) {
         theme: t,
         themeType: n,
         primaryColor: a,
-        secondaryColor: s,
+        secondaryColor: o,
         userId: l,
         children: c
     } = e, u = i.useMemo(() => ({
         theme: t,
         themeType: n,
         primaryColor: a,
-        secondaryColor: s,
+        secondaryColor: o,
         userId: l
-    }), [t, n, a, s, l]);
-    return (0, r.jsx)(o.Provider, {
+    }), [t, n, a, o, l]);
+    return (0, r.jsx)(s.Provider, {
         value: u,
         children: c
     })
 }
-let c = () => i.useContext(o)
+let c = () => i.useContext(s)

@@ -7,9 +7,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(611010);
+    o = n(611010);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -95,7 +95,7 @@ class y extends(r = i.Ay.Store) {
     getApplicationRecord(e) {
         if (null == e) return;
         let t = f[e];
-        if (null != t) return s.Ay.createFromServer(t)
+        if (null != t) return o.Ay.createFromServer(t)
     }
     getApplications() {
         return f
@@ -119,7 +119,7 @@ class y extends(r = i.Ay.Store) {
         if (null != e) return h[e]
     }
 }
-o(y, "displayName", "ApplicationDirectoryApplicationsStore");
+s(y, "displayName", "ApplicationDirectoryApplicationsStore");
 let b = new y(a.h, {
     APPLICATION_DIRECTORY_FETCH_APPLICATION: m,
     APPLICATION_DIRECTORY_FETCH_APPLICATION_SUCCESS: g,

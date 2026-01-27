@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(735438),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(735438),
+    l = n.n(s),
     c = n(317097),
     u = n(158954),
     d = n(827734),
@@ -76,9 +76,9 @@ class v extends i.PureComponent {
                 className: i,
                 children: a
             } = this.props,
-            o = O(n);
+            s = O(n);
         return t ? e = {
-            color: o,
+            color: s,
             background: null != n ? n : d.A.unsafe_rawColors.BRAND_500.css
         } : null != n && (e = {
             color: n
@@ -87,7 +87,7 @@ class v extends i.PureComponent {
                 left: 4
             },
             children: (0, r.jsxs)(p.A, {
-                className: s()(h.OR, i, {
+                className: o()(h.OR, i, {
                     [h.wH]: t
                 }),
                 onClick: this.handleClick,
@@ -108,7 +108,7 @@ class v extends i.PureComponent {
                     shrink: 0,
                     children: (0, r.jsx)(f.A9s, {
                         size: "md",
-                        color: o
+                        color: s
                     })
                 })]
             })

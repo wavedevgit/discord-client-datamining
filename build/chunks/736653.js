@@ -4,7 +4,7 @@
 n.d(t, {
     Ay: () => l,
     DP: () => a,
-    xv: () => s
+    xv: () => o
 });
 var r = n(582754),
     i = n(652215);
@@ -16,11 +16,11 @@ function a() {
     return e
 }
 
-function s() {
-    return o(a())
+function o() {
+    return s(a())
 }
 
-function o(e) {
+function s(e) {
     switch (e) {
         case i.NJ8.DARK:
             return 0;

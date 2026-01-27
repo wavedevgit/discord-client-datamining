@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(374803),
     i = n(114323),
     a = n(878360),
-    s = n(665774),
-    o = n(527434),
+    o = n(665774),
+    s = n(527434),
     l = n(564253),
     c = n(969900),
     u = n(512780),
@@ -23,7 +23,7 @@ let g = [r.DB.CHOICES, r.DB.GAME, r.DB.GIFS, r.DB.STICKERS, r.DB.COMMAND_OPTIONS
     E = {
         [r.DB.CHANNELS]: l.A,
         [r.DB.COMMANDS]: i.A,
-        [r.DB.COMMAND_OPTIONS]: s.A,
+        [r.DB.COMMAND_OPTIONS]: o.A,
         [r.DB.CHOICES]: a.A,
         [r.DB.EMOJIS_AND_STICKERS]: c.A,
         [r.DB.STICKERS]: h.A,
@@ -32,6 +32,6 @@ let g = [r.DB.CHOICES, r.DB.GAME, r.DB.GIFS, r.DB.STICKERS, r.DB.COMMAND_OPTIONS
         [r.DB.MENTIONS]: f.Ay,
         [r.DB.MENTION_SUGGESTIONS]: p.A,
         [r.DB.REACTIONS]: _.A,
-        [r.DB.GAME]: o.A,
+        [r.DB.GAME]: s.A,
         [r.DB.TIMESTAMPS]: m.A
     }

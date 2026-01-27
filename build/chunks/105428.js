@@ -2,13 +2,13 @@
 /** chunk id: 105428, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(73153),
     i = n(61925),
     a = n(609415),
-    s = n(14594);
-let o = {
+    o = n(14594);
+let s = {
     maybeOpenBlockUserFeedback(e) {
         let {
             location: t
@@ -22,7 +22,7 @@ let o = {
             location: t,
             visibleContent: n
         } = e;
-        !(0, i.fj)(t) || null == n || s.K0.includes(n) && r.h.dispatch({
+        !(0, i.fj)(t) || null == n || o.K0.includes(n) && r.h.dispatch({
             type: "AGE_VERIFICATION_SHOW_FEEDBACK",
             dismissibleContent: n
         })

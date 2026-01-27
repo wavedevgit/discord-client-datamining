@@ -5,7 +5,7 @@ n.d(t, {
     BV: () => l,
     C1: () => b,
     GW: () => E,
-    IJ: () => s,
+    IJ: () => o,
     Oz: () => v,
     Ps: () => f,
     Qi: () => S,
@@ -21,14 +21,14 @@ n.d(t, {
     om: () => m,
     t_: () => a,
     tq: () => c,
-    vj: () => o,
+    vj: () => s,
     w0: () => I
 }), n(896048);
 var r = n(927813),
     i = n(652215);
 let a = 100,
-    s = 1e3,
-    o = 100,
+    o = 1e3,
+    s = 100,
     l = "Guild Events Modal",
     c = "-1";
 var u = function(e) {

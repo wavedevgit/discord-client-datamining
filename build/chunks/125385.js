@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(451988),
-    s = n(626584),
-    o = n(927813),
+    o = n(626584),
+    s = n(927813),
     l = n(661191);
 
 function c(e, t, n) {
@@ -19,7 +19,7 @@ function c(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let u = +o.A.Millis.MINUTE;
+let u = +s.A.Millis.MINUTE;
 class d {
     reset() {
         this._subscriptions = {}, this._unsubscriptions = {}, this._unsubscribe.cancel()
@@ -51,8 +51,8 @@ class d {
     }
     checkForLeaks(e, t) {
         var n, r, i, a;
-        let o = (null != (n = null == (i = this._subscriptions[e]) ? void 0 : i[t]) ? n : 0) - (null != (r = null == (a = this._unsubscriptions[e]) ? void 0 : a[t]) ? r : 0);
-        o > 5 && new s.A("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(o, " subscriptions)"))
+        let s = (null != (n = null == (i = this._subscriptions[e]) ? void 0 : i[t]) ? n : 0) - (null != (r = null == (a = this._unsubscriptions[e]) ? void 0 : a[t]) ? r : 0);
+        s > 5 && new o.A("GuildMemberSubscriptions").warn("GuildMemberSubscriptions.subscribe(...): Potential reference leak! (".concat(s, " subscriptions)"))
     }
     flushUnsubscriptions() {
         i().isEmpty(this._unsubscriptions) || (i().forEach(this._unsubscriptions, (e, t) => {

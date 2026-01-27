@@ -1,24 +1,24 @@
-/** Chunk was on 42944 **/
-/** chunk id: 667049, original params: e,a,n (module,exports,require) **/
-n.d(a, {
+/** Chunk was on 21738 **/
+/** chunk id: 667049, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     A: () => s
 });
-var t = n(311907),
-    l = n(961350),
-    i = n(622543),
-    r = n(61881);
+var r = n(311907),
+    i = n(961350),
+    l = n(622543),
+    a = n(61881);
 
 function s(e) {
-    let a = (0, t.bG)([l.default], () => {
-            let a = l.default.getId();
-            return null != e && a === e
+    let t = (0, r.bG)([i.default], () => {
+            let t = i.default.getId();
+            return null != e && t === e
         }, [e]),
-        n = (0, t.bG)([r.A], () => r.A.getPendingWidgets()),
-        s = (0, t.yK)([i.A], () => {
-            var a;
+        n = (0, r.bG)([a.A], () => a.A.getPendingWidgets()),
+        s = (0, r.yK)([l.A], () => {
+            var t;
             if (null == e) return [];
-            let n = i.A.getUserProfile(e);
-            return null != (a = null == n ? void 0 : n.widgets) ? a : []
+            let n = l.A.getUserProfile(e);
+            return null != (t = null == n ? void 0 : n.widgets) ? t : []
         }, [e]);
-    return a && null !== n ? n : s
+    return t && null !== n ? n : s
 }

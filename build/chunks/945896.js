@@ -1,28 +1,28 @@
 /** Chunk was on 5905 **/
-/** chunk id: 945896, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    default: () => c
+/** chunk id: 945896, original params: t,n,e (module,exports,require) **/
+e.d(n, {
+    default: () => s
 });
-var l = n(627968);
-n(64700);
-var i = n(397927),
-    r = n(442433),
-    a = n(723702),
-    o = n(777933),
-    s = n(985018);
+var l = e(627968);
+e(64700);
+var i = e(397927),
+    r = e(442433),
+    a = e(723702),
+    o = e(777933),
+    c = e(985018);
 
-function c(t) {
+function s(t) {
     let {
-        href: e,
-        textContent: n,
-        onSelect: c
-    } = t, u = (0, o.A)(e, n);
+        href: n,
+        textContent: e,
+        onSelect: s
+    } = t, u = (0, o.A)(n, e);
     return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-mixed-auto": !0,
         navId: "image-context",
         onClose: r.Z_,
-        "aria-label": s.intl.string(s.t.Zow2V5),
-        onSelect: c,
+        "aria-label": c.intl.string(c.t.Zow2V5),
+        onSelect: s,
         children: (0, l.jsx)(i.rXV, {
             children: u
         })

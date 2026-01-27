@@ -1,43 +1,42 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 612082, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => p
+    A: () => f
 });
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(183766),
-    l = n(158954),
+    i = n.n(a),
+    s = n(183766),
+    o = n(158954),
     c = n(397927),
     u = n(854987),
     d = n(181380),
-    f = n(420156);
+    m = n(420156);
 
-function p(e) {
+function f(e) {
     let {
         onClick: t,
         children: n,
         className: a,
-        contentClassName: p,
-        active: _ = !1,
+        contentClassName: f,
+        active: p = !1,
         muteSound: h = !1,
-        disabled: m = !1
-    } = e, g = i.useContext(u.P), E = (0, c.rdh)(g.primaryColor).hex(), y = (0, c.rdh)(g.secondaryColor).hex(), b = (0, d.V)(o.A), O = i.useCallback(() => {
-        m || (h || b(), null == t || t())
-    }, [t, h, b, m]);
-    return (0, r.jsx)(l.DUT, {
-        className: s()(a, f.In, {
-            [f.vu]: _,
-            [f.r9]: m
+        disabled: b = !1
+    } = e, g = l.useContext(u.P), x = (0, c.rdh)(g.primaryColor).hex(), y = (0, c.rdh)(g.secondaryColor).hex(), v = (0, d.V)(s.A), j = l.useCallback(() => {
+        b || (h || v(), null == t || t())
+    }, [t, h, v, b]);
+    return (0, r.jsx)(o.DUT, {
+        className: i()(a, m.In, {
+            [m.vu]: p,
+            [m.r9]: b
         }),
         style: {
-            backgroundColor: E
+            backgroundColor: x
         },
-        onClick: O,
+        onClick: j,
         children: (0, r.jsx)("div", {
-            className: s()(p, f.LG),
+            className: i()(f, m.LG),
             style: {
                 borderColor: y
             },

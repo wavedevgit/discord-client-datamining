@@ -3,8 +3,8 @@
 var r = n(739595),
     i = n(585022),
     a = n(546809),
-    s = n(34524),
-    o = n(538826),
+    o = n(34524),
+    s = n(538826),
     l = n(514119),
     c = n(731214),
     u = "[object Map]",
@@ -16,10 +16,10 @@ var r = n(739595),
     m = c(r),
     g = c(i),
     E = c(a),
-    y = c(s),
-    b = c(o),
+    y = c(o),
+    b = c(s),
     O = l;
-(r && O(new r(new ArrayBuffer(1))) != h || i && O(new i) != u || a && O(a.resolve()) != f || s && O(new s) != p || o && O(new o) != _) && (O = function(e) {
+(r && O(new r(new ArrayBuffer(1))) != h || i && O(new i) != u || a && O(a.resolve()) != f || o && O(new o) != p || s && O(new s) != _) && (O = function(e) {
     var t = l(e),
         n = t == d ? e.constructor : void 0,
         r = n ? c(n) : "";

@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(143236),
     i = n(735438),
     a = n.n(i),
-    s = n(835245),
-    o = n(453771),
+    o = n(835245),
+    s = n(453771),
     l = n(292348);
 
 function c(e, t, n) {
@@ -47,7 +47,7 @@ class p extends r.EventEmitter {
                 overrideType: e.mimeType
             });
             this.filename = n.filename, this.isImage = n.isImage, this.isVideo = n.isVideo, this.mimeType = n.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform
-        } else this.id = null != (n = e.id) ? n : a().uniqueId("upload"), this.classification = o.TX(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
-        this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, s.A)(), this.spoiler = !1, this.description = null
+        } else this.id = null != (n = e.id) ? n : a().uniqueId("upload"), this.classification = s.TX(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
+        this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, o.A)(), this.spoiler = !1, this.description = null
     }
 }

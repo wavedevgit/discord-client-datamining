@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 825772, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => s
+    A: () => a
 });
 var r = n(315069),
     i = n(427157);
 
-function a(e, t, n) {
+function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,9 +14,9 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends r.A {
+class a extends r.A {
     static createFromServer(e) {
-        return new s(e)
+        return new a(e)
     }
     isPrimary() {
         return 1 === this.member_type
@@ -29,6 +28,6 @@ class s extends r.A {
         return 2 === this.member_type && null == this.accepted_at
     }
     constructor(e) {
-        super(), a(this, "user", void 0), a(this, "member_type", void 0), a(this, "accepted_at", void 0), this.user = new i.A(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
+        super(), l(this, "user", void 0), l(this, "member_type", void 0), l(this, "accepted_at", void 0), this.user = new i.A(e.user), this.member_type = e.member_type, this.accepted_at = e.accepted_at
     }
 }

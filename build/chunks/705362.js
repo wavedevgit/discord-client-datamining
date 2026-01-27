@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 705362, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     nM: "row__0624f",
     zE: "inModal__0624f",

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(158954),
     a = n(315949),
-    s = n(599062),
-    o = n(985018);
+    o = n(599062),
+    s = n(985018);
 
 function l(e) {
     let {
@@ -24,11 +24,11 @@ function l(e) {
         transitionState: t,
         onClose: c,
         size: "sm",
-        title: o.intl.string(o.t["p8+qtU"]),
+        title: s.intl.string(s.t["p8+qtU"]),
         actions: [],
-        children: (0, r.jsx)(s.h, {
+        children: (0, r.jsx)(o.h, {
             onRetry: l,
-            errorOrigin: s.A.GIFT_MODAL
+            errorOrigin: o.A.GIFT_MODAL
         })
     })
 }

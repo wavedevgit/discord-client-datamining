@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(734057);
+    o = n(734057);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,7 +24,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -49,7 +49,7 @@ function u(e, t) {
 let d = {};
 
 function f(e) {
-    let t = s.A.getChannel(e);
+    let t = o.A.getChannel(e);
     return null != t && !!t.isForumLikeChannel()
 }
 
@@ -143,7 +143,7 @@ function O() {
 }
 class v extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(s.A)
+        this.waitFor(o.A)
     }
     getSearchQuery(e) {
         let t = d[e];
@@ -163,7 +163,7 @@ class v extends(r = i.Ay.Store) {
         return (null == t ? void 0 : t.results) != null && t.results.length > 0
     }
 }
-o(v, "displayName", "ForumSearchStore");
+s(v, "displayName", "ForumSearchStore");
 let A = new v(a.h, {
     CONNECTION_OPEN: O,
     THREAD_DELETE: y,

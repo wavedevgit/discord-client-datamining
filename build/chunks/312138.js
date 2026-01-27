@@ -9,15 +9,15 @@ n.d(t, {
 var r = n(64700),
     i = n(52724),
     a = n(621466),
-    s = n(650583);
-let o = "data-jump-section",
+    o = n(650583);
+let s = "data-jump-section",
     l = "global",
     c = r.createContext(l);
 
 function u() {
     let e = r.useContext(c);
     return r.useMemo(() => ({
-        [o]: e
+        [s]: e
     }), [e])
 }
 
@@ -27,21 +27,21 @@ function d(e) {
 }
 async function f(e) {
     var t, n, r, c;
-    if (e.key !== s.mi) return;
+    if (e.key !== o.mi) return;
     let u = (0, a.BF)(e);
     if (null == u) return;
     let d = null,
         f = null,
         p = e.target;
     for (; null != p;) {
-        if (p.hasAttribute(o)) {
-            d = p.getAttribute(o), f = p;
+        if (p.hasAttribute(s)) {
+            d = p.getAttribute(s), f = p;
             break
         }
         p = p.parentElement
     }
     let _ = (0, i.C)({
-        getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(o, '="').concat(null != d ? d : l, '"]'))),
+        getFocusableElements: () => Array.from(u.querySelectorAll("[".concat(s, '="').concat(null != d ? d : l, '"]'))),
         getActiveElement: () => u.activeElement
     });
     if ((null == (t = (0, a.BF)(e)) ? void 0 : t.activeElement) == null || null == f) {

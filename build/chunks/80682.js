@@ -8,8 +8,8 @@ var r = n(64700),
     i = n(735438),
     a = n.n(i);
 n(52133);
-var s = n(361610),
-    o = n(728458);
+var o = n(361610),
+    s = n(728458);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -42,14 +42,14 @@ let d = !1;
 
 function f(e, t) {
     r.useEffect(() => (a().forEach(e, (e, n) => {
-        !d && e.length > 50 && (d = !0, o.A.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", {
+        !d && e.length > 50 && (d = !0, s.A.captureMessage("SubscribeGuildMembers called with more than 50 userIds.", {
             extra: {
                 userIdsCount: e.length,
                 guildId: n,
                 reason: t
             }
-        })), (0, s.un)(n, e)
+        })), (0, o.un)(n, e)
     }), () => {
-        a().forEach(e, (e, t) => (0, s.NE)(t, e))
+        a().forEach(e, (e, t) => (0, o.NE)(t, e))
     }), [e, t])
 }

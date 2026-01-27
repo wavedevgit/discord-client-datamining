@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(900283),
-    s = n(397927),
-    o = n(985018);
+    o = n(397927),
+    s = n(985018);
 let l = i.forwardRef(function(e, t) {
     let {
         query: n,
         onChange: l,
         disabled: c = !1,
-        placeholder: u = o.intl.string(o.t["5h0QOP"]),
+        placeholder: u = s.intl.string(s.t["5h0QOP"]),
         "aria-label": d,
         onInteraction: f
     } = e, p = i.useRef(null);
@@ -35,7 +35,7 @@ let l = i.forwardRef(function(e, t) {
         h = () => {
             l(""), null == f || f(a.Q.SEARCH)
         };
-    return (0, r.jsx)(s.IWV, {
+    return (0, r.jsx)(o.IWV, {
         size: "sm",
         disabled: c,
         onChange: _,

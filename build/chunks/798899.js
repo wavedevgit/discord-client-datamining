@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 798899, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => d
 }), n(228524);
 var r = n(627968),
     i = n(64700),
-    a = n(397927),
-    s = n(572211),
-    o = n(443795),
-    l = n(768349),
+    l = n(397927),
+    a = n(572211),
+    s = n(443795),
+    o = n(768349),
     c = n(985018),
     u = n(609653);
 
@@ -18,28 +17,28 @@ function d(e) {
         application: t,
         message: n,
         header: d,
-        onClickContent: f,
-        onView: p,
-        guildId: _
-    } = e, h = i.useMemo(() => (0, r.jsx)(a.Text, {
+        onClickContent: p,
+        onView: m,
+        guildId: f
+    } = e, g = i.useMemo(() => (0, r.jsx)(l.Text, {
         variant: "text-xs/medium",
         className: u.h_,
         color: "none",
         lineClamp: 1,
         children: c.intl.string(c.t["84qx9r"])
     }), []);
-    return (0, r.jsx)(s.h, {
+    return (0, r.jsx)(a.h, {
         header: d,
         title: t.name,
-        iconSrc: o.HT.getWhiteIconURL(),
-        info: h,
-        onClickContent: f,
+        iconSrc: s.HT.getWhiteIconURL(),
+        info: g,
+        onClickContent: p,
         trackingConfig: {
             id: t.id,
-            linkType: l.J.RICH_PRESENCE_INVITE,
-            onView: p,
+            linkType: o.J.RICH_PRESENCE_INVITE,
+            onView: m,
             referrerId: n.author.id,
-            guildId: _,
+            guildId: f,
             channelId: n.channel_id,
             messageId: n.id,
             isDeadEnd: !0

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(990078),
-    o = n(397927),
+    o = n(990078),
+    s = n(397927),
     l = n(705751),
     c = n(985018),
     u = n(931228);
@@ -46,13 +46,13 @@ let d = e => {
     }
     let E = n === l.nu.ORIGINAL_POSTER,
         y = null;
-    d && (y = (0, r.jsx)(s.m, {
+    d && (y = (0, r.jsx)(o.m, {
         text: m,
         align: "center",
         position: "top",
-        children: (0, r.jsx)(o.BNr, {
+        children: (0, r.jsx)(s.BNr, {
             className: u.go,
-            color: o.LU0.colors.WHITE
+            color: s.LU0.colors.WHITE
         })
     }));
     let b = () => (0, r.jsxs)("span", {
@@ -64,7 +64,7 @@ let d = e => {
             children: h
         })]
     });
-    return n === l.nu.ORIGINAL_POSTER ? (0, r.jsx)(s.m, {
+    return n === l.nu.ORIGINAL_POSTER ? (0, r.jsx)(o.m, {
         text: c.intl.string(c.t.uN6Emt),
         position: "top",
         asContainer: !0,

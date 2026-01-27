@@ -2,14 +2,14 @@
 /** chunk id: 482246, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => C
+    A: () => P
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(284009),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(284009),
+    l = n.n(s),
     c = n(575593),
     u = n(311907),
     d = n(397927),
@@ -17,15 +17,19 @@ var r = n(627968),
     p = n(287070),
     _ = n(576622),
     h = n(287809),
-    m = n(674658),
-    g = n(645178),
-    E = n(898461),
-    y = n(203632),
-    b = n(14702),
-    O = n(985018),
-    v = n(245948);
+    m = n(927578),
+    g = n(993408),
+    E = n(674658),
+    y = n(645178),
+    b = n(898461),
+    O = n(203632),
+    v = n(14702),
+    A = n(219103),
+    I = n(525723),
+    S = n(985018),
+    T = n(245948);
 
-function A(e, t, n) {
+function C(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -34,20 +38,20 @@ function A(e, t, n) {
     }) : e[t] = n, e
 }
 
-function I(e) {
+function N(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            A(e, t, n[t])
+            C(e, t, n[t])
         })
     }
     return e
 }
 
-function S(e, t) {
+function w(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -58,110 +62,124 @@ function S(e, t) {
     return n
 }
 
-function T(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function R(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let C = e => {
+let P = e => {
+    var t, n;
     let {
-        skuId: t,
-        isSelected: n,
-        price: a,
-        onSelect: o,
-        shouldDisplayHeader: A = !1,
-        className: S,
-        previewHeaderClassName: C,
-        hideProfilePreview: N = !1
+        skuId: a,
+        isSelected: s,
+        pricePreview: C,
+        onSelect: w,
+        shouldDisplayHeader: P = !1,
+        className: D,
+        previewHeaderClassName: L,
+        hideProfilePreview: x = !1,
+        fallbackPrice: M
     } = e, {
-        product: w
-    } = (0, m.q)(t, !0), {
-        giftRecipient: R,
-        giftRecipientError: P
-    } = (0, f.Pv)(), D = (0, u.bG)([h.default], () => h.default.getCurrentUser()), x = (0, g.o7)(w), L = i.useRef(null);
-    if (null == w) return null;
-    let [j] = w.items;
-    l()(null != j, "Product item should not be empty");
-    let M = () => {
-            if ((null == w ? void 0 : w.type) === c.R.BUNDLE) return null;
-            switch (j.type) {
+        product: j
+    } = (0, E.q)(a, !0), {
+        giftRecipient: k,
+        giftRecipientError: U
+    } = (0, f.Pv)(), G = (0, u.bG)([h.default], () => h.default.getCurrentUser()), F = (0, y.o7)(j), V = i.useRef(null), B = m.Ay.canUseCollectibles(G), H = i.useMemo(() => (0, g.fT)(j, B), [j, B]), Y = (0, I.V_)(j);
+    if (null == j) return null;
+    let [W] = j.items;
+    l()(null != W, "Product item should not be empty");
+    let K = () => {
+            if ((null == j ? void 0 : j.type) === c.R.BUNDLE) return null;
+            switch (W.type) {
                 case c.R.AVATAR_DECORATION:
-                    return O.intl.string(O.t["7v0T9P"]);
+                    return S.intl.string(S.t["7v0T9P"]);
                 case c.R.PROFILE_EFFECT:
-                    return O.intl.string(O.t.wR5wOo);
+                    return S.intl.string(S.t.wR5wOo);
                 case c.R.NAMEPLATE:
-                    return O.intl.string(O.t.x5CoXR);
+                    return S.intl.string(S.t.x5CoXR);
                 default:
                     return null
             }
         },
-        k = null != R && R.id !== (null == D ? void 0 : D.id) && w.type !== c.R.BUNDLE && j.type !== c.R.NAMEPLATE && !N,
-        U = () => {
-            null != t && null != o && o(t)
-        };
+        z = null != k && k.id !== (null == G ? void 0 : G.id) && j.type !== c.R.BUNDLE && W.type !== c.R.NAMEPLATE && !x,
+        q = () => {
+            null != a && null != w && w(a)
+        },
+        Z = null == C || null == (n = C.invoice_items) || null == (t = n[0]) ? void 0 : t.unit_price;
     return (0, r.jsxs)("div", {
-        className: S,
-        children: [A && (0, r.jsx)("div", {
-            className: s()(v.QU, C),
+        className: D,
+        children: [P && (0, r.jsx)("div", {
+            className: o()(T.QU, L),
             children: (0, r.jsx)(d.D0$, {
-                label: O.intl.string(O.t.PpoJzt),
-                children: k && (0, r.jsx)(d.YNO, {
-                    targetElementRef: L,
-                    preload: () => (0, _.A)(R.id, R.getAvatarURL(null, 80)),
-                    renderPopout: e => (0, r.jsx)(p.A, T(I({}, e), {
-                        user: R,
-                        pendingAvatar: R.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
-                        pendingAvatarDecoration: (0, E.T)(j) ? j : null,
-                        pendingProfileEffect: (0, y.C)(j) ? j : null,
+                label: S.intl.string(S.t.PpoJzt),
+                children: z && (0, r.jsx)(d.YNO, {
+                    targetElementRef: V,
+                    preload: () => (0, _.A)(k.id, k.getAvatarURL(null, 80)),
+                    renderPopout: e => (0, r.jsx)(p.A, R(N({}, e), {
+                        user: k,
+                        pendingAvatar: k.getAvatarURL(null, (0, d.FT9)(d._3J.SIZE_80)),
+                        pendingAvatarDecoration: (0, b.T)(W) ? W : null,
+                        pendingProfileEffect: (0, O.C)(W) ? W : null,
                         canUsePremiumCustomization: !0,
                         disabledInputs: !0,
                         hideExampleButton: !0
                     })),
                     align: "center",
                     position: "right",
-                    children: e => (0, r.jsx)(d.DUT, T(I({}, e), {
-                        className: v.Nx,
-                        innerRef: L,
+                    children: e => (0, r.jsx)(d.DUT, R(N({}, e), {
+                        className: T.Nx,
+                        innerRef: V,
                         children: (0, r.jsx)(d.Text, {
                             variant: "text-xs/medium",
                             color: "text-link",
-                            children: O.intl.string(O.t["2GnJQL"])
+                            children: S.intl.string(S.t["2GnJQL"])
                         })
                     }))
-                }, R.id)
+                }, k.id)
             })
         }), (0, r.jsxs)(d.DUT, {
             tag: "div",
-            onClick: U,
-            className: s()(v.i1, {
-                [v.no]: n && null == P,
-                [v.cN]: n && null != P
+            onClick: q,
+            className: o()(T.i1, {
+                [T.no]: s && null == U,
+                [T.cN]: s && null != U
             }),
             children: [(0, r.jsxs)("div", {
-                className: v.Ug,
-                children: [(0, r.jsx)(b.O, {
-                    product: w,
+                className: T.Ug,
+                children: [(0, r.jsx)(v.O, {
+                    product: j,
                     fallbackLabel: null
                 }), (0, r.jsxs)("div", {
-                    className: v.JZ,
+                    className: T.JZ,
                     children: [(0, r.jsx)(d.Text, {
                         variant: "text-md/semibold",
-                        children: x
+                        children: F
                     }), (0, r.jsx)(d.Heading, {
                         variant: "heading-sm/medium",
                         color: "text-default",
-                        children: M()
+                        children: K()
                     })]
-                }), (0, r.jsx)(d.Text, {
+                }), null != C && null != Z ? (0, r.jsx)(A.x, {
+                    price: {
+                        amount: Z.amount,
+                        currency: Z.currency,
+                        taxInclusive: C.tax_inclusive,
+                        tax: C.tax,
+                        exponent: Z.exponent
+                    },
+                    discount: H,
+                    discountOfferAmount: Y,
+                    variant: "text-md/bold"
+                }) : (0, r.jsx)(d.Text, {
                     variant: "text-md/semibold",
-                    children: a
+                    children: M
                 })]
-            }), n && null != P && (0, r.jsx)("div", {
-                className: v.Wh,
+            }), s && null != U && (0, r.jsx)("div", {
+                className: T.Wh,
                 children: (0, r.jsx)(d.Text, {
                     variant: "text-sm/normal",
                     color: "text-feedback-critical",
-                    children: P
+                    children: U
                 })
             })]
         })]

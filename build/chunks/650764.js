@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 650764, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
+/** Chunk was on 96430 **/
+/** chunk id: 650764, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     u: () => i
 });
 var r = n(85526);
 
-function i(e) {
-    return r.fromByteArray(e)
+function i(t) {
+    return r.fromByteArray(t)
 }

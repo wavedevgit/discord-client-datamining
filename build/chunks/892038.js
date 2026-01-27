@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(972347),
-    s = n(451988),
-    o = n(626584),
+    o = n(451988),
+    s = n(626584),
     l = n(94902),
     c = n(961350),
     u = n(927813),
@@ -46,9 +46,9 @@ class b extends a.A {
         let n = t.filter(e => e.active),
             r = this.videoStreams.length !== n.length;
         if (this.audioSSRC = e, this.videoStreams = n, this.videoStreams.length > 1) {
-            var a, s, o, l;
-            let e = null != (a = null == (o = i().minBy(this.videoStreams, e => e.quality)) ? void 0 : o.ssrc) ? a : 0,
-                t = null != (s = null == (l = i().maxBy(this.videoStreams, e => e.quality)) ? void 0 : l.ssrc) ? s : 0;
+            var a, o, s, l;
+            let e = null != (a = null == (s = i().minBy(this.videoStreams, e => e.quality)) ? void 0 : s.ssrc) ? a : 0,
+                t = null != (o = null == (l = i().maxBy(this.videoStreams, e => e.quality)) ? void 0 : l.ssrc) ? o : 0;
             (e !== this.lqSSRC || t !== this.hqSSRC || r) && (this.lqSSRC = e, this.hqSSRC = t, this.reset(), this.update())
         } else r && this.reset(), this.update()
     }
@@ -208,7 +208,7 @@ class b extends a.A {
     constructor(e) {
         super(), _(this, "supportsSeamless", void 0), _(this, "logger", void 0), _(this, "userId", void 0), _(this, "streamId", void 0), _(this, "resolutionWidth", void 0), _(this, "resolutionHeight", void 0), _(this, "zoom", void 0), _(this, "videoStreams", void 0), _(this, "audioSSRC", void 0), _(this, "hqSSRC", void 0), _(this, "lqSSRC", void 0), _(this, "switchState", void 0), _(this, "pendingSSRC", void 0), _(this, "currentSSRC", void 0), _(this, "downgraded", void 0), _(this, "throttleDowngradeChanges", void 0), _(this, "lastDowngradeChangeTime", void 0), _(this, "otherUsers", void 0), _(this, "debugQualityOverride", void 0), _(this, "incomingVideoEnabled", void 0), _(this, "delayedCall", void 0), _(this, "delayedUpdate", void 0), this.supportsSeamless = e, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1, this.videoStreams = [], this.audioSSRC = 0, this.hqSSRC = 0, this.lqSSRC = 0, this.switchState = 0, this.pendingSSRC = -1, this.currentSSRC = -1, this.downgraded = !1, this.throttleDowngradeChanges = !0, this.lastDowngradeChangeTime = void 0, this.otherUsers = new Set, this.debugQualityOverride = p.r8.NO_OVERRIDE, this.incomingVideoEnabled = !0, this.delayedUpdate = () => {
             this.delayedCall.delay()
-        }, this.logger = new o.A("GoLiveQualityManager"), this.delayedCall = new s.J_(g, () => {
+        }, this.logger = new s.A("GoLiveQualityManager"), this.delayedCall = new o.J_(g, () => {
             this.update()
         })
     }

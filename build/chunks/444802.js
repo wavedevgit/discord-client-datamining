@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(64700),
     i = n(923457),
     a = n(873298),
-    s = n(207560),
-    o = n(64313),
+    o = n(207560),
+    s = n(64313),
     l = n(253932),
     c = n(287809),
     u = n(652215);
@@ -46,8 +46,8 @@ let p = e => {
         } = e;
         if (null != t && t !== a.TO.UNSET_EXPLICIT_CONTENT_REDACTION) return t;
         let l = c.default.getCurrentUser(),
-            u = (0, o.o)("resolveExplicitContentSettingWithDefaults");
-        return (0, s.To)(i.p.SENSITIVE_CONTENT) || u ? _({
+            u = (0, s.o)("resolveExplicitContentSettingWithDefaults");
+        return (0, o.To)(i.p.SENSITIVE_CONTENT) || u ? _({
             isDm: n,
             isFriend: r
         }) : (null == l ? void 0 : l.nsfwAllowed) === !1 ? m({

@@ -7,13 +7,13 @@ n.d(t, {
 var r = n(64700),
     i = n(554146),
     a = n(73153),
-    s = n(20439),
-    o = n(890687),
+    o = n(20439),
+    s = n(890687),
     l = n(654487);
 let c = () => {
-    let e = (0, s.A)(i.M.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
-        t = (0, s.A)(i.M.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
-        n = (0, s.A)(i.M.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK),
+    let e = (0, o.A)(i.M.VIRTUAL_CURRENCY_ONBOARDING_ANNOUNCEMENT_MODAL),
+        t = (0, o.A)(i.M.VIRTUAL_CURRENCY_DISCOVERY_ONBOARDING_COACHMARK),
+        n = (0, o.A)(i.M.VIRTUAL_CURRENCY_SHOP_ONBOARDING_COACHMARK),
         c = r.useCallback(() => {
             e.isDismissed && e.handleToggleDismissState(), t.isDismissed && t.handleToggleDismissState(), n.isDismissed && n.handleToggleDismissState(), a.h.dispatch({
                 type: "VIRTUAL_CURRENCY_ONBOARDING_MODAL_RESET"
@@ -21,7 +21,7 @@ let c = () => {
         }, [t, n, e]),
         {
             handleResetStatusClick: u
-        } = (0, o.j$)(l.Fw);
+        } = (0, s.j$)(l.Fw);
     return {
         resetOnboardingExperience: c,
         resetQuestStatus: u

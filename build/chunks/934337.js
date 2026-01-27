@@ -2,9 +2,9 @@
 /** chunk id: 934337, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Bw: () => o,
+    Bw: () => s,
     mZ: () => l,
-    tq: () => s
+    tq: () => o
 });
 var r = n(353640),
     i = n(121894);
@@ -13,10 +13,10 @@ let a = (0, r.v)(() => ({
         checked: !1,
         preChecked: !1
     })),
-    s = e => {
+    o = e => {
         (0, i.r)(() => a.setState(e))
     },
-    o = e => {
+    s = e => {
         (0, i.r)(() => a.setState({
             checked: e
         }))

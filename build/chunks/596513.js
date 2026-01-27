@@ -1,45 +1,44 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 596513, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => c
 });
 var r = n(627968),
     i = n(607470),
-    a = n(608416),
+    l = n(608416),
     s = n(48415),
-    o = n(592151),
-    l = n(844738);
+    a = n(592151),
+    o = n(844738);
 let c = e => {
     let {
         supportHEVCAlpha: t,
         isMotionReduced: n,
         containerVisibilityPercentage: c,
-        containerClassName: u,
-        assetClassName: d
+        containerClassName: d,
+        assetClassName: u
     } = e;
     return n ? (0, r.jsx)("div", {
-        className: u,
+        className: d,
         children: (0, r.jsx)("img", {
-            src: l.A,
+            src: o.A,
             alt: "",
-            className: d
+            className: u
         })
     }) : (0, r.jsx)("div", {
-        className: u,
-        children: (0, r.jsx)(a.Ay, {
+        className: d,
+        children: (0, r.jsx)(l.Ay, {
             scaleAnimationData: {
                 startScale: .9,
                 endScale: 1,
-                duration: a.$G
+                duration: l.$G
             },
             yAxisAnimationData: {
                 range: 20,
-                duration: a.Mp,
-                path: a.aV.SINE
+                duration: l.Mp,
+                path: l.aV.SINE
             },
             parallaxAnimationData: {
-                pathDirection: a.MN.UP,
+                pathDirection: l.MN.UP,
                 range: 200,
                 containerVisibilityPercentage: c,
                 changeOpacity: !1
@@ -48,17 +47,17 @@ let c = e => {
             children: t ? (0, r.jsx)("img", {
                 src: s.A,
                 alt: "",
-                className: d
+                className: u
             }) : (0, r.jsx)(i.A, {
                 muted: !0,
                 autoPlay: !0,
                 playsInline: !0,
                 loop: !0,
-                className: d,
+                className: u,
                 children: (0, r.jsx)("source", {
-                    src: o.A
+                    src: a.A
                 })
-            }, o.A)
+            }, a.A)
         })
     })
 }

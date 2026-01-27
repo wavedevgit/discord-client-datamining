@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(397927),
     c = n(122641),
     u = n(985018),
@@ -44,7 +44,7 @@ class _ extends(r = a.PureComponent) {
             className: n,
             sliderWrapperClassName: r,
             sliderClassName: a,
-            currentWindow: s,
+            currentWindow: o,
             muted: f,
             minValue: _,
             maxValue: h,
@@ -57,7 +57,7 @@ class _ extends(r = a.PureComponent) {
             dragging: O
         } = this.state, v = l.HKD;
         return f || m === _ ? v = l._RO : m < h / 2 && (v = l.S24), (0, i.jsxs)("div", {
-            className: o()(n, d.kL),
+            className: s()(n, d.kL),
             onMouseEnter: () => {
                 clearTimeout(this._hoverTimeout), this.setState({
                     hovered: !0
@@ -75,7 +75,7 @@ class _ extends(r = a.PureComponent) {
             }),
             onKeyDown: this.handleKeyDown,
             children: [(0, i.jsx)("div", {
-                className: o()(d.QS, r, {
+                className: s()(d.QS, r, {
                     [d.OZ]: y || b || O
                 }),
                 onMouseEnter: () => {
@@ -96,7 +96,7 @@ class _ extends(r = a.PureComponent) {
                     onDrag: this.handleValueChange,
                     onDragStart: this.handleDragStart,
                     onDragEnd: this.handleDragEnd,
-                    currentWindow: s,
+                    currentWindow: o,
                     ref: this._mediaBar
                 })
             }), (0, i.jsx)(l.DUT, {

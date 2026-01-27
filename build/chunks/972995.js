@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(485845),
     i = n(58149),
     a = n(200330),
-    s = n(611010),
-    o = n(627363),
+    o = n(611010),
+    s = n(627363),
     l = n(587895),
     c = n(204776),
     u = n(652215);
@@ -29,8 +29,8 @@ async function d(e) {
     });
     let m = l.A.getApplication(f);
     if (null == m) {
-        let e = await (0, o.TA)(f);
-        m = s.Ay.createFromServer(e)
+        let e = await (0, s.TA)(f);
+        m = o.Ay.createFromServer(e)
     }
     let g = r.b.USER_INSTALL,
         E = null == m || null == (d = m.integrationTypesConfig) || null == (n = d[g]) || null == (t = n.oauth2InstallParams) ? void 0 : t.scopes;

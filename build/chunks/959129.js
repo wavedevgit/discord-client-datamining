@@ -7,10 +7,10 @@ n.d(t, {
 var r = n(852015),
     i = n(144367),
     a = n(428420),
-    s = n(324281),
-    o = n(453360),
+    o = n(324281),
+    s = n(453360),
     l = n(414525);
-class c extends s.G {
+class c extends o.G {
     create(e) {
         let t = {
             assetUrl: "",
@@ -27,8 +27,8 @@ class c extends s.G {
     }
     internalBinaryRead(e, t, n, i) {
         let a = null != i ? i : this.create(),
-            s = e.pos + t;
-        for (; e.pos < s;) {
+            o = e.pos + t;
+        for (; e.pos < o;) {
             let [t, i] = e.tag();
             switch (t) {
                 case 1:
@@ -53,22 +53,22 @@ class c extends s.G {
                     a.additionalTerms = e.string();
                     break;
                 case 8:
-                    a.asset = o.i.internalBinaryRead(e, e.uint32(), n, a.asset);
+                    a.asset = s.i.internalBinaryRead(e, e.uint32(), n, a.asset);
                     break;
                 case 9:
-                    a.backgroundAsset = o.i.internalBinaryRead(e, e.uint32(), n, a.backgroundAsset);
+                    a.backgroundAsset = s.i.internalBinaryRead(e, e.uint32(), n, a.backgroundAsset);
                     break;
                 default:
-                    let s = n.readUnknownField;
-                    if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+                    let o = n.readUnknownField;
+                    if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
                     let c = e.skip(i);
-                    !1 !== s && (!0 === s ? r.f$.onRead : s)(this.typeName, a, t, i, c)
+                    !1 !== o && (!0 === o ? r.f$.onRead : o)(this.typeName, a, t, i, c)
             }
         }
         return a
     }
     internalBinaryWrite(e, t, n) {
-        "" !== e.assetUrl && t.tag(1, r.O0.LengthDelimited).string(e.assetUrl), "" !== e.header && t.tag(2, r.O0.LengthDelimited).string(e.header), "" !== e.body && t.tag(3, r.O0.LengthDelimited).string(e.body), "" !== e.backgroundAssetUrl && t.tag(4, r.O0.LengthDelimited).string(e.backgroundAssetUrl), e.gradient && l.H.internalBinaryWrite(e.gradient, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "" !== e.textColor && t.tag(6, r.O0.LengthDelimited).string(e.textColor), "" !== e.additionalTerms && t.tag(7, r.O0.LengthDelimited).string(e.additionalTerms), e.asset && o.i.internalBinaryWrite(e.asset, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.backgroundAsset && o.i.internalBinaryWrite(e.backgroundAsset, t.tag(9, r.O0.LengthDelimited).fork(), n).join();
+        "" !== e.assetUrl && t.tag(1, r.O0.LengthDelimited).string(e.assetUrl), "" !== e.header && t.tag(2, r.O0.LengthDelimited).string(e.header), "" !== e.body && t.tag(3, r.O0.LengthDelimited).string(e.body), "" !== e.backgroundAssetUrl && t.tag(4, r.O0.LengthDelimited).string(e.backgroundAssetUrl), e.gradient && l.H.internalBinaryWrite(e.gradient, t.tag(5, r.O0.LengthDelimited).fork(), n).join(), "" !== e.textColor && t.tag(6, r.O0.LengthDelimited).string(e.textColor), "" !== e.additionalTerms && t.tag(7, r.O0.LengthDelimited).string(e.additionalTerms), e.asset && s.i.internalBinaryWrite(e.asset, t.tag(8, r.O0.LengthDelimited).fork(), n).join(), e.backgroundAsset && s.i.internalBinaryWrite(e.backgroundAsset, t.tag(9, r.O0.LengthDelimited).fork(), n).join();
         let i = n.writeUnknownFields;
         return !1 !== i && (!0 == i ? r.f$.onWrite : i)(this.typeName, e, t), t
     }
@@ -112,12 +112,12 @@ class c extends s.G {
             no: 8,
             name: "asset",
             kind: "message",
-            T: () => o.i
+            T: () => s.i
         }, {
             no: 9,
             name: "background_asset",
             kind: "message",
-            T: () => o.i
+            T: () => s.i
         }])
     }
 }

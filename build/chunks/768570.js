@@ -5,19 +5,19 @@ n.d(t, {
     $H: () => u,
     B7: () => d,
     Q_: () => f,
-    nC: () => s,
+    nC: () => o,
     oi: () => a,
     su: () => c,
     us: () => l,
-    yQ: () => o
+    yQ: () => s
 }), n(896048);
 var r = n(461012),
     i = n(652215),
     a = function(e) {
         return e.KEY_PRESS = "key_press", e.CLICK = "click", e
     }({});
-let s = "SearchStore",
-    o = "SearchHistoryStore_Web",
+let o = "SearchStore",
+    s = "SearchHistoryStore_Web",
     l = {
         sort_by: "timestamp",
         sort_order: "desc"

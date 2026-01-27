@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(574381),
-    o = n(460890),
+    o = n(574381),
+    s = n(460890),
     l = n(359116);
 
 function c(e) {
@@ -37,8 +37,8 @@ function u(e) {
         text: n,
         macText: i,
         label: a,
-        macLabel: o
-    } = e, c = (0, s.cX)() || (0, s.Sn)(), u = c && null != i ? l.systemFont : void 0, d = c && null != o ? o : a, f = c && null != i ? i : null != t ? t : n;
+        macLabel: s
+    } = e, c = (0, o.cX)() || (0, o.Sn)(), u = c && null != i ? l.systemFont : void 0, d = c && null != s ? s : a, f = c && null != i ? i : null != t ? t : n;
     return (0, r.jsx)("span", {
         className: u,
         role: null != d ? "img" : void 0,
@@ -142,16 +142,16 @@ function f(e) {
         shortcut: t,
         dim: n = !1,
         className: i,
-        keyClassName: s
+        keyClassName: o
     } = e, {
         i18n: c
-    } = (0, o.G9)(), u = d(c), f = Array.isArray(t) ? t : t.split("+");
+    } = (0, s.G9)(), u = d(c), f = Array.isArray(t) ? t : t.split("+");
     return (0, r.jsx)("div", {
         className: a()(l.combo, i, {
             [l.dim]: n
         }),
         children: f.map(e => null != u[e] ? u[e]() : e).map((e, t) => (0, r.jsx)("span", {
-            className: a()(l.key, s),
+            className: a()(l.key, o),
             children: e
         }, t))
     })

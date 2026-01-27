@@ -3,11 +3,11 @@
 "use strict";
 let r;
 n.d(t, {
-    A: () => Q
+    A: () => X
 }), n(896048), n(321073), n(65821);
 var i, a = n(812729),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(713402),
     c = n(73153),
     u = n(661191),
@@ -92,13 +92,13 @@ function D(e, t, n) {
     return !(N.size(r) > 0) && (w = Math.max(w, Number(e.id)), R(T(e, t, n)))
 }
 
-function x(e, t, n, r) {
+function L(e, t, n, r) {
     let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : f.QJ.Info,
         a = C(),
-        s = S(a);
+        o = S(a);
     return R({
-        id: s,
-        key: s,
+        id: o,
+        key: o,
         nativeId: null,
         timestamp: a,
         name: e,
@@ -110,11 +110,11 @@ function x(e, t, n, r) {
     })
 }
 
-function L(e) {
+function x(e) {
     return [N.values(e, !0), N.version]
 }
 
-function j() {
+function M() {
     null == y && (y = setInterval(() => {
         var e;
         let t = null != (e = null == m ? void 0 : m.getLastAssociatedPID()) ? e : null;
@@ -125,13 +125,13 @@ function j() {
                 breadcrumbs: n
             } = e;
             for (let e of n) D(e, f.ON.NativeOOP, null != t ? t : d.UNSET_PID);
-            X.emitChange()
+            Q.emitChange()
         })
     }, b))
 }
 
-function M(e) {
-    return e ? j() : U(), !0
+function j(e) {
+    return e ? M() : U(), !0
 }
 
 function k() {
@@ -146,22 +146,22 @@ function G() {
     null != E && (clearInterval(E), E = null)
 }
 
-function V(e) {
+function F(e) {
     let {
         enabled: t,
         mode: n
     } = e;
     t ? g.add(n) : g.delete(n), g = new Set(g)
 }
-let F = 300;
+let V = 300;
 
 function B() {
     null == E && (E = setInterval(() => {
         var e;
         null == m || null == (e = m.getDebuggingState) || e.call(m, e => {
-            s()(r, e) || (r = e, X.emitChange())
+            o()(r, e) || (r = e, Q.emitChange())
         })
-    }, F))
+    }, V))
 }
 
 function H(e) {
@@ -197,16 +197,16 @@ function z(e) {
             logType: a
         }
     } = e;
-    return x(n, null != r ? r : {}, i, t, a), !0
+    return L(n, null != r ? r : {}, i, t, a), !0
 }
 
 function q(e) {
     let {
         enabled: t
     } = e;
-    return M(t), !0
+    return j(t), !0
 }
-class Z extends(i = o.Ay.Store) {
+class Z extends(i = s.Ay.Store) {
     initialize() {
         this.waitFor(p.A)
     }
@@ -220,7 +220,7 @@ class Z extends(i = o.Ay.Store) {
         return g
     }
     getOverlayLoggingBreadcrumbs(e) {
-        return L(e)
+        return x(e)
     }
     isModuleLoggingEnabled() {
         return k()
@@ -230,13 +230,13 @@ class Z extends(i = o.Ay.Store) {
     }
 }
 h(Z, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let X = new Z(c.h, __OVERLAY__ || !_.OX ? {} : {
+let Q = new Z(c.h, __OVERLAY__ || !_.OX ? {} : {
         OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: W,
         OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: K,
         OVERLAY_SET_STATE_DEBUGGING: H,
-        OVERLAY_RENDER_DEBUG_MODE: V,
+        OVERLAY_RENDER_DEBUG_MODE: F,
         OVERLAY_SET_DETAILED_LOGGING: Y,
         OVERLAY_ADD_DEBUG_BREADCRUMB: z,
         OVERLAY_SET_MODULE_LOGGING: q
     }),
-    Q = X
+    X = Q

@@ -8,8 +8,8 @@ function r(e, t) {
     let i = null == e || null == (r = e.ownerDocument) ? void 0 : r.defaultView;
     if (null == i) return console.warn("Unable to determine render window for element", e), !1;
     let a = null != (n = null == t ? void 0 : t.name) ? n : "Element",
-        s = i[a];
-    return null == s ? (console.warn('Unable to find element constructor "'.concat(a, '" in'), i), !1) : e instanceof s
+        o = i[a];
+    return null == o ? (console.warn('Unable to find element constructor "'.concat(a, '" in'), i), !1) : e instanceof o
 }
 
 function i(e) {
@@ -25,16 +25,16 @@ n.d(t, {
     xI: () => i
 }), n(896048), n(747238);
 let a = /input/i,
-    s = /textarea/i,
-    o = new Set(["text", "password", "number", "date", "datetime-local", "time", "week", "month", "email", "search", "tel", "url"]);
+    o = /textarea/i,
+    s = new Set(["text", "password", "number", "date", "datetime-local", "time", "week", "month", "email", "search", "tel", "url"]);
 
 function l(e) {
     if (null == e) return !1;
-    if ("true" === e.getAttribute("contenteditable") || s.test(e.tagName)) return !0;
+    if ("true" === e.getAttribute("contenteditable") || o.test(e.tagName)) return !0;
     if (a.test(e.tagName)) {
         var t;
         let n = null != (t = e.getAttribute("type")) ? t : "text";
-        if (o.has(n)) return !0
+        if (s.has(n)) return !0
     }
     return !1
 }

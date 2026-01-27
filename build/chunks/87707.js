@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 87707, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    B: () => a
+    B: () => l
 }), n(417597), n(71393), n(576705), n(287809);
 var r = n(652215),
     i = n(985018);
 
-function a(e) {
+function l(e) {
     return e.hasAnyStaffLevel() || e.hasFlag(r.nhx.PARTNER) ? i.intl.string(i.t.Sq6Q1u) : null == e.email ? i.intl.string(i.t.LfCBZG) : null
 }

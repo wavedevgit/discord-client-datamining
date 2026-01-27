@@ -7,22 +7,22 @@ var r = n(627968),
     i = n(64700),
     l = n(284009),
     a = n.n(l),
-    s = n(158954),
-    o = n(311907),
+    o = n(158954),
+    s = n(311907),
     u = n(397927),
     c = n(452357),
     d = n(287809),
-    b = n(985018),
-    f = n(143021);
+    f = n(985018),
+    b = n(143021);
 let m = function(t) {
     let {
         onClose: e,
         transitionState: l
-    } = t, m = (0, o.bG)([d.default], () => d.default.getCurrentUser()), [p, g] = i.useState(!1), y = i.useCallback(() => (null == e || e(), Promise.resolve()), [e]), v = i.useCallback(() => {
+    } = t, m = (0, s.bG)([d.default], () => d.default.getCurrentUser()), [g, y] = i.useState(!1), p = i.useCallback(() => (null == e || e(), Promise.resolve()), [e]), v = i.useCallback(() => {
         null == e || e(), (0, u.mMO)(async () => {
             let {
                 default: t
-            } = await n.e("83269").then(n.bind(n, 350116));
+            } = await Promise.all([n.e("83269"), n.e("17726")]).then(n.bind(n, 350116));
             return e => (0, r.jsx)(t, function(t) {
                 for (var e = 1; e < arguments.length; e++) {
                     var n = null != arguments[e] ? arguments[e] : {},
@@ -43,32 +43,32 @@ let m = function(t) {
             }({}, e))
         })
     }, [e]), k = i.useCallback(() => {
-        null == e || e(), a()(null != m, "ResendEmailVerificationButton: currentUser cannot be undefined"), g(!0), (0, c.S)(m).finally(() => g(!1))
-    }, [m, e]), h = i.useMemo(() => (null == m ? void 0 : m.email) == null ? [{
-        text: b.intl.string(b.t.ydw5nX),
+        null == e || e(), a()(null != m, "ResendEmailVerificationButton: currentUser cannot be undefined"), y(!0), (0, c.S)(m).finally(() => y(!1))
+    }, [m, e]), O = i.useMemo(() => (null == m ? void 0 : m.email) == null ? [{
+        text: f.intl.string(f.t.ydw5nX),
         onClick: v,
         variant: "primary"
     }] : [{
-        text: b.intl.string(b.t.Vm8akB),
+        text: f.intl.string(f.t.Vm8akB),
         onClick: v,
         variant: "secondary"
     }, {
-        text: b.intl.string(b.t.lm1UKt),
+        text: f.intl.string(f.t.lm1UKt),
         onClick: k,
         variant: "primary",
-        loading: p
-    }], [m, v, k, p]);
-    return (0, r.jsxs)(s.Modal, {
-        title: b.intl.string(b.t.UZLrY1),
+        loading: g
+    }], [m, v, k, g]);
+    return (0, r.jsxs)(o.Modal, {
+        title: f.intl.string(f.t.UZLrY1),
         transitionState: l,
-        onClose: y,
-        actions: h,
+        onClose: p,
+        actions: O,
         children: [(0, r.jsx)("div", {
-            className: f.p
+            className: b.p
         }), (0, r.jsx)(u.Text, {
             variant: "text-md/normal",
-            className: f.i,
-            children: b.intl.string(b.t["0LgOKH"])
+            className: b.i,
+            children: f.intl.string(f.t["0LgOKH"])
         })]
     })
 }

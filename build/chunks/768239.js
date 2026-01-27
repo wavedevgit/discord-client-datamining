@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(45077),
-    s = n(75375),
-    o = ["children"];
+    o = n(75375),
+    s = ["children"];
 
 function l(e, t) {
     return p(e) || f(e, t) || u(e, t) || c()
@@ -37,17 +37,17 @@ function f(e, t) {
     var n, r, i = null == e ? null : "u" > typeof Symbol && e[Symbol.iterator] || e["@@iterator"];
     if (null != i) {
         var a = [],
-            s = !0,
-            o = !1;
+            o = !0,
+            s = !1;
         try {
-            for (i = i.call(e); !(s = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); s = !0);
+            for (i = i.call(e); !(o = (n = i.next()).done) && (a.push(n.value), !t || a.length !== t); o = !0);
         } catch (e) {
-            o = !0, r = e
+            s = !0, r = e
         } finally {
             try {
-                s || null == i.return || i.return()
+                o || null == i.return || i.return()
             } finally {
-                if (o) throw r
+                if (s) throw r
             }
         }
         return a
@@ -79,7 +79,7 @@ var m = 0,
     g = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"),
     E = (0, i.memo)(function(e) {
         var t = e.children,
-            n = l(y(_(e, o)), 2),
+            n = l(y(_(e, s)), 2),
             a = n[0],
             c = n[1];
         return (0, i.useEffect)(function() {
@@ -90,7 +90,7 @@ var m = 0,
                         0 == --m && (e[g] = null)
                     }
             }
-        }, []), (0, r.jsx)(s.M.Provider, Object.assign({
+        }, []), (0, r.jsx)(o.M.Provider, Object.assign({
             value: a
         }, {
             children: t

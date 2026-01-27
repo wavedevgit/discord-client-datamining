@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(506774),
     i = n(439372),
     a = n(287809),
-    s = n(951122),
-    o = n(542599),
+    o = n(951122),
+    s = n(542599),
     l = n(789622);
 
 function c(e, t, n) {
@@ -27,7 +27,7 @@ function f() {
 }
 
 function p() {
-    if (!s.y1.getCurrentConfig({
+    if (!o.y1.getCurrentConfig({
             location: "b9eb97_1"
         }, {
             autoTrackExposure: !1
@@ -43,7 +43,7 @@ class _ extends i.A {
         super(...e), c(this, "actions", {
             POST_CONNECTION_OPEN: () => this.onPostConnectionOpen()
         }), c(this, "onPostConnectionOpen", () => {
-            p() && (0, o.U)(l.gg.APP_START, !0, !1) && f()
+            p() && (0, s.U)(l.gg.APP_START, !0, !1) && f()
         })
     }
 }

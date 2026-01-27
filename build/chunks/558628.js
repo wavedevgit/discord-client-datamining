@@ -7,8 +7,8 @@ var t = n(627968);
 n(64700);
 var s = n(793574),
     i = n(688810),
-    l = n(20805),
-    r = n(351638),
+    r = n(20805),
+    l = n(351638),
     c = n(388535),
     o = n(8738);
 
@@ -23,14 +23,14 @@ function d(e) {
     } = e, {
         analyticsLocations: j
     } = (0, i.Ay)(s.A.USER_PROFILE_RECENT_ACTIVITY_CARD);
-    return (0, l.$R)(n) ? (0, t.jsx)(i.f5, {
+    return (0, r.$R)(n) ? (0, t.jsx)(i.f5, {
         value: j,
         children: (0, t.jsx)(c.A, {
             entry: n,
             user: a,
             className: d,
             onClose: x,
-            header: (0, t.jsx)(r.A, {
+            header: (0, t.jsx)(l.A, {
                 contextMenu: m ? null : (0, t.jsx)(o.A, {
                     display: "recent",
                     entry: n,

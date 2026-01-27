@@ -2,20 +2,20 @@
 /** chunk id: 74068, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968),
     i = n(64700),
     a = n(453771),
-    s = n(922667);
-class o extends i.PureComponent {
+    o = n(922667);
+class s extends i.PureComponent {
     render() {
         let {
             src: e,
             fileSize: t,
             fileName: n,
             className: i,
-            playable: o,
+            playable: s,
             volume: l,
             renderLinkComponent: c,
             onVolumeChange: u,
@@ -26,14 +26,14 @@ class o extends i.PureComponent {
             mimeType: h,
             onPlay: m
         } = this.props;
-        return (0, r.jsx)(s.Ay, {
+        return (0, r.jsx)(o.Ay, {
             src: e,
             fileName: n,
             fileSize: (0, a.Hb)(t),
             fileSizeBytes: t,
-            type: s.Ay.Types.AUDIO,
+            type: o.Ay.Types.AUDIO,
             className: i,
-            playable: o,
+            playable: s,
             volume: l,
             onMute: _,
             autoMute: p,

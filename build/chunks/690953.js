@@ -1,24 +1,24 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 93952 **/
 /** chunk id: 690953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => p
 });
 var r = n(627968);
 n(64700);
 var l = n(417597),
     i = n(397927),
-    s = n(882997),
+    u = n(882997),
     a = n(731474),
     o = n(383501),
     c = n(977997),
-    u = n(458829),
-    d = n(857253),
-    p = n(694967),
-    h = n(431516),
-    f = n(652215),
-    g = n(985018);
+    d = n(458829),
+    s = n(857253),
+    A = n(694967),
+    f = n(431516),
+    E = n(652215),
+    y = n(985018);
 
-function m(e) {
+function g(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -37,7 +37,7 @@ function m(e) {
     return e
 }
 
-function b(e, t) {
+function O(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -50,50 +50,50 @@ function b(e, t) {
     }), e
 }
 
-function A(e) {
+function p(e) {
     let t = (0, l.bG)([o.A], () => o.A.getChannelId() === e.id),
-        A = (0, d.A)(),
-        y = (null == A ? void 0 : A.channelId) === e.id,
-        _ = (0, a.J)(e) && !e.isPrivate(),
-        O = (0, a.A)(e),
-        j = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && O || _,
-        v = (0, p.A)();
-    return y || 0 !== v.length ? y ? (0, r.jsx)(i.Drp, {
-        label: g.intl.string(g.t.PlwgdU),
+        p = (0, s.A)(),
+        v = (null == p ? void 0 : p.channelId) === e.id,
+        b = (0, a.J)(e) && !e.isPrivate(),
+        h = (0, a.A)(e),
+        N = !(0, l.bG)([c.A], () => c.A.isInChannel(e.id)) && h || b,
+        _ = (0, A.A)();
+    return v || 0 !== _.length ? v ? (0, r.jsx)(i.Drp, {
+        label: y.intl.string(y.t.PlwgdU),
         id: "handoff",
         action: () => {
-            (0, u.x)(A)
+            (0, d.x)(p)
         },
-        icon: (0, h.A)(void 0),
-        disabled: j
-    }) : v.map(l => {
+        icon: (0, f.A)(void 0),
+        disabled: N
+    }) : _.map(l => {
         var a, o;
         return (0, r.jsx)(i.Drp, {
             id: "transfer-".concat(l.type, "-").concat(l.id),
-            label: (a = l.type, o = t, a === f.fg2.XBOX ? o ? g.intl.string(g.t["qVE/VF"]) : g.intl.string(g.t.E8euSk) : a === f.fg2.PLAYSTATION ? o ? g.intl.string(g.t.vzfxmY) : g.intl.string(g.t.QxEYDj) : a === f.fg2.PLAYSTATION_STAGING ? o ? g.intl.string(g.t.BDiXtV) : g.intl.string(g.t["bhdB9+"]) : void 0),
+            label: (a = l.type, o = t, a === E.fg2.XBOX ? o ? y.intl.string(y.t["qVE/VF"]) : y.intl.string(y.t.E8euSk) : a === E.fg2.PLAYSTATION ? o ? y.intl.string(y.t.vzfxmY) : y.intl.string(y.t.QxEYDj) : a === E.fg2.PLAYSTATION_STAGING ? o ? y.intl.string(y.t.BDiXtV) : y.intl.string(y.t["bhdB9+"]) : void 0),
             action: () => {
-                !l.twoWayLink || l.revoked ? (0, s.A)({
+                !l.twoWayLink || l.revoked ? (0, u.A)({
                     platformType: l.type,
                     location: "Console Transfer Item"
-                }) : l.type === f.fg2.XBOX ? (0, i.mMO)(async () => {
+                }) : l.type === E.fg2.XBOX ? (0, i.mMO)(async () => {
                     let {
                         default: t
                     } = await Promise.all([n.e("14882"), n.e("67670")]).then(n.bind(n, 188072));
-                    return n => (0, r.jsx)(t, b(m({}, n), {
+                    return n => (0, r.jsx)(t, O(g({}, n), {
                         channel: e
                     }))
-                }) : (l.type === f.fg2.PLAYSTATION || l.type === f.fg2.PLAYSTATION_STAGING) && (0, i.mMO)(async () => {
+                }) : (l.type === E.fg2.PLAYSTATION || l.type === E.fg2.PLAYSTATION_STAGING) && (0, i.mMO)(async () => {
                     let {
                         default: t
                     } = await n.e("71282").then(n.bind(n, 315337));
-                    return n => (0, r.jsx)(t, b(m({}, n), {
+                    return n => (0, r.jsx)(t, O(g({}, n), {
                         platform: l.type,
                         channel: e
                     }))
                 })
             },
-            icon: (0, h.A)(l.type),
-            disabled: j
+            icon: (0, f.A)(l.type),
+            disabled: N
         }, l.id)
     }) : null
 }

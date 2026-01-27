@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(106778),
-    s = n(311907),
-    o = n(309010),
+    o = n(311907),
+    s = n(309010),
     l = n(21161),
     c = n(851110),
     u = n(469427);
@@ -16,7 +16,7 @@ var r = n(627968),
 function d(e) {
     let {
         children: t
-    } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(!1), g = (0, s.bG)([o.A], () => o.A.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
+    } = e, [n, d] = i.useState(null), [f, p] = i.useState(null), _ = i.useRef(new Set), [h, m] = i.useState(!1), g = (0, o.bG)([s.A], () => s.A.getCurrentlySelectedChannelId()), E = i.useCallback(e => {
         _.current.delete(e), m(_.current.size > 0)
     }, []), y = i.useCallback(e => (_.current.add(e), m(!0), () => E(e)), [E]), b = i.useCallback((e, t) => {
         for (let n of _.current) n(e, t)

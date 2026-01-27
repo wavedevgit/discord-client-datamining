@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(503698),
     a = n.n(i),
-    s = n(990078),
-    o = n(582754),
+    o = n(990078),
+    s = n(582754),
     l = n(397927),
     c = n(736653),
     u = n(88001),
@@ -18,8 +18,8 @@ var r = n(627968),
 let _ = e => {
     let {
         alwaysWhite: t = !1
-    } = e, n = (0, c.DP)(), i = (0, o.qB)(n);
-    return (0, r.jsx)(s.m, {
+    } = e, n = (0, c.DP)(), i = (0, s.qB)(n);
+    return (0, r.jsx)(o.m, {
         text: f.intl.formatToPlainString(d.default["5xN/C1"], {
             premiumGroupProductName: (0, u.DP)()
         }),

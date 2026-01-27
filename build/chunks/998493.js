@@ -6,7 +6,7 @@ n.d(t, {
     E9: () => m,
     EB: () => l,
     Pl: () => h,
-    eB: () => s,
+    eB: () => o,
     fp: () => d,
     nj: () => c,
     zL: () => f,
@@ -30,7 +30,7 @@ let a = {
         samstag: 6,
         sa: 6
     },
-    s = {
+    o = {
         januar: 1,
         jänner: 1,
         janner: 1,
@@ -74,7 +74,7 @@ let a = {
         dez: 12,
         "dez.": 12
     },
-    o = {
+    s = {
         eins: 1,
         eine: 1,
         einem: 1,
@@ -126,11 +126,11 @@ let a = {
         jahren: "year",
         jahres: "year"
     },
-    c = `(?:${(0,r.uJ)(o)}|[0-9]+|[0-9]+\\.[0-9]+|halb?|halbe?|einigen?|wenigen?|mehreren?)`;
+    c = `(?:${(0,r.uJ)(s)}|[0-9]+|[0-9]+\\.[0-9]+|halb?|halbe?|einigen?|wenigen?|mehreren?)`;
 
 function u(e) {
     let t = e.toLowerCase();
-    if (void 0 !== o[t]) return o[t];
+    if (void 0 !== s[t]) return s[t];
     if ("ein" === t || "einer" === t || "einem" === t || "einen" === t || "eine" === t) return 1;
     if (t.match(/wenigen/)) return 2;
     if (t.match(/halb/) || t.match(/halben/)) return .5;

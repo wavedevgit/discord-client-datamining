@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 420009, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(64700),
-    i = n(52133),
+    l = n(52133),
     a = n(803306),
-    s = n(256587),
-    o = n(287809);
+    i = n(256587),
+    s = n(287809);
 
-function l(e) {
+function o(e) {
     let {
         entry: t,
         channel: n
-    } = e, l = r.useRef([]);
+    } = e, o = r.useRef([]);
     return r.useEffect(() => {
-        (0, i.v)(l.current, t.participants) || (l.current = t.participants, t.participants.filter(e => null == o.default.getUser(e)).forEach(e => {
-            null == n.guild_id ? (0, a.wz)(e) : s.A.requestMember(n.guild_id, e)
+        (0, l.v)(o.current, t.participants) || (o.current = t.participants, t.participants.filter(e => null == s.default.getUser(e)).forEach(e => {
+            null == n.guild_id ? (0, a.wz)(e) : i.A.requestMember(n.guild_id, e)
         }))
     }, [t, n.guild_id]), {}
 }

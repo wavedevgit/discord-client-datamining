@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(73153),
     i = n(426620),
     a = n(142120);
-let s = [];
+let o = [];
 
-function o() {
+function s() {
     return null != i.A.getType()
 }
 
 function l() {
-    o() || (s.forEach(e => c(e)), s = [])
+    s() || (o.forEach(e => c(e)), o = [])
 }
 
 function c(e) {
@@ -22,6 +22,6 @@ function c(e) {
 }
 
 function u(e) {
-    a.A.isConnectedOrOverlay() && !o() ? c(e) : s.push(e)
+    a.A.isConnectedOrOverlay() && !s() ? c(e) : o.push(e)
 }
 r.h.subscribe("CONNECTION_OPEN", l), r.h.subscribe("CONNECTION_RESUMED", l), r.h.subscribe("NUF_COMPLETE", l)

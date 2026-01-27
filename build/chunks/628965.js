@@ -2,12 +2,12 @@
 /** chunk id: 628965, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 });
 var r, i = n(311907),
     a = n(73153),
-    s = n(287809),
-    o = n(652215);
+    o = n(287809),
+    s = n(652215);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -30,7 +30,7 @@ function c(e) {
     }
     return e
 }
-let u = o.XlH.CLOSED,
+let u = s.XlH.CLOSED,
     d = null,
     f = {},
     p = {},
@@ -48,10 +48,10 @@ function O(e) {
 
 function v(e) {
     var t, n, r, i;
-    let a = s.default.getCurrentUser();
+    let a = o.default.getCurrentUser();
     if (null == a) return A();
-    d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = o.XlH.OPEN, _ = {}, m = c({}, h = {
-        [o.nc_.ACCOUNT]: {
+    d = null != (t = e.section) ? t : d, null != e.subsection && null != d && (f[d] = e.subsection), null != e.scrollPosition && null != d && (p[d] = e.scrollPosition), g = !!e.openWithoutBackstack, u = s.XlH.OPEN, _ = {}, m = c({}, h = {
+        [s.nc_.ACCOUNT]: {
             userId: a.id,
             username: a.username,
             discriminator: a.discriminator,
@@ -65,7 +65,7 @@ function v(e) {
 }
 
 function A() {
-    u = o.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, y = [], b = null
+    u = s.XlH.CLOSED, h = null, m = null, d = null, f = {}, p = {}, E = null, y = [], b = null
 }
 
 function I(e) {
@@ -92,18 +92,18 @@ function C(e) {
         settings: t
     } = e;
     null == m && (m = {});
-    let n = m[o.nc_.ACCOUNT];
-    m[o.nc_.ACCOUNT] = c({}, n, t)
+    let n = m[s.nc_.ACCOUNT];
+    m[s.nc_.ACCOUNT] = c({}, n, t)
 }
 
 function N() {
-    u = o.XlH.SUBMITTING
+    u = s.XlH.SUBMITTING
 }
 
 function w() {
-    let e = s.default.getCurrentUser();
+    let e = o.default.getCurrentUser();
     R(), null != e && (m = c({}, h = {
-        [o.nc_.ACCOUNT]: {
+        [s.nc_.ACCOUNT]: {
             userId: e.id,
             username: e.username,
             discriminator: e.discriminator,
@@ -117,17 +117,17 @@ function w() {
 }
 
 function R() {
-    u = o.XlH.OPEN, _ = {}
+    u = s.XlH.OPEN, _ = {}
 }
 
 function P(e) {
     var t;
-    if (u !== o.XlH.SUBMITTING) return !1;
-    u = o.XlH.OPEN, d = o.nc_.ACCOUNT, _ = null != (t = e.errors) ? t : {}
+    if (u !== s.XlH.SUBMITTING) return !1;
+    u = s.XlH.OPEN, d = s.nc_.ACCOUNT, _ = null != (t = e.errors) ? t : {}
 }
 class D extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(s.default)
+        this.waitFor(o.default)
     }
     getSection() {
         return d
@@ -148,7 +148,7 @@ class D extends(r = i.Ay.Store) {
         return _
     }
     getSubmitting() {
-        return u === o.XlH.SUBMITTING
+        return u === s.XlH.SUBMITTING
     }
     getSettings() {
         return m
@@ -161,7 +161,7 @@ class D extends(r = i.Ay.Store) {
     }
 }
 l(D, "displayName", "UserSettingsModalStore");
-let x = new D(a.h, {
+let L = new D(a.h, {
     USER_SETTINGS_MODAL_OPEN: O,
     USER_SETTINGS_MODAL_INIT: v,
     USER_SETTINGS_MODAL_CLOSE: A,

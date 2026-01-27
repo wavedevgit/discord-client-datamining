@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(311907),
     a = n(554146),
-    s = n(102119),
-    o = n(563380),
+    o = n(102119),
+    s = n(563380),
     l = n(47671),
     c = n(346734),
     u = n(332408),
@@ -34,10 +34,10 @@ let O = function(e) {
     if (n) return null;
     let P = I === g.HP.CLIENT_THEMES || w,
         D = I === g.HP.APP_ICON,
-        x = I === g.HP.CUSTOM_THEME || R,
-        L = I === g.HP.APPLICATION_TEST_MODE_DEBUG;
-    if (!(P || D || x || L)) return null;
-    let j = () => (0, r.jsxs)(r.Fragment, {
+        L = I === g.HP.CUSTOM_THEME || R,
+        x = I === g.HP.APPLICATION_TEST_MODE_DEBUG;
+    if (!(P || D || L || x)) return null;
+    let M = () => (0, r.jsxs)(r.Fragment, {
         children: [P && (0, r.jsx)(u.A, {
             markAsDismissed: w ? N : () => {
                 (0, f.Dr)(a.M.CLIENT_THEMES_COACHMARK, {
@@ -46,18 +46,18 @@ let O = function(e) {
                 })
             },
             showClientThemesCoachmark: w
-        }), D && (0, r.jsx)(s.A, {
+        }), D && (0, r.jsx)(o.A, {
             isCoachmark: !1,
             markAsDismissed: N
-        }), x && (0, r.jsx)(d.A, {
+        }), L && (0, r.jsx)(d.A, {
             metadata: null != S ? S : {},
             markAsDismissed: N,
             isCoachmark: R,
             isMobile: t
-        }), L && (0, r.jsx)(o.A, {})]
+        }), x && (0, r.jsx)(s.A, {})]
     });
     return t ? (0, r.jsx)("div", {
         className: b.A,
-        children: j()
-    }) : j()
+        children: M()
+    }) : M()
 }

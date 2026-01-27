@@ -4,13 +4,13 @@
 n.d(t, {
     OB: () => c,
     Pf: () => u,
-    Tr: () => o
+    Tr: () => s
 }), n(896048), n(65821);
 var r = n(310784),
     i = n.n(r);
 let a = 3,
-    s = 100,
-    o = {
+    o = 100,
+    s = {
         NonText: 3,
         Text: 4.5,
         HighContrastText: 7
@@ -24,7 +24,7 @@ function l(e) {
 function c(e) {
     var t, n, r;
     let c = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
-        u = null != (t = c.contrastRatio) ? t : o.NonText,
+        u = null != (t = c.contrastRatio) ? t : s.NonText,
         d = null != (n = c.tolerance) ? n : a,
         f = i()(null != (r = c.base) ? r : e),
         p = i()(e),
@@ -33,7 +33,7 @@ function c(e) {
         m = u,
         g = u + d,
         E = i().contrast(f, p),
-        y = s;
+        y = o;
     for (; y-- > 0;) {
         let e = E < m,
             t = E > g;

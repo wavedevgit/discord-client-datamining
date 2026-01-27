@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(439372),
     i = n(734057),
     a = n(473503),
-    s = n(746080);
+    o = n(746080);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,12 +22,12 @@ class l extends r.A {
         let {
             channelId: t
         } = e;
-        if ((0, s.jq)(t)) return;
+        if ((0, o.jq)(t)) return;
         let n = i.A.getChannel(t);
         null != n && n.isForumLikeChannel() && (0, a.kB)(n)
     }
     constructor(...e) {
-        super(...e), o(this, "actions", {
+        super(...e), s(this, "actions", {
             CHANNEL_PRELOAD: this.handleChannelPreload
         })
     }

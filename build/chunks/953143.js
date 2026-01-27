@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(397927),
-    o = n(953727),
+    o = n(397927),
+    s = n(953727),
     l = n(927135),
     c = n(985018),
     u = n(377767);
@@ -55,7 +55,7 @@ function _(e, t) {
 }
 
 function h(e) {
-    return (0, r.jsx)("svg", _(f({}, (0, o.A)(f({}, e))), {
+    return (0, r.jsx)("svg", _(f({}, (0, s.A)(f({}, e))), {
         width: "25",
         height: "48",
         viewBox: "0 0 25 48",
@@ -73,16 +73,16 @@ function m(e) {
         className: t,
         forceUseColorForSparkles: n = !1,
         shouldInheritTextColor: i = !1,
-        shouldInheritBackgroundColor: o = !1
+        shouldInheritBackgroundColor: s = !1
     } = e;
     return (0, r.jsx)(l.A, {
         className: t,
         forceUseColor: n,
-        children: (0, r.jsx)(s.LpS, {
+        children: (0, r.jsx)(o.LpS, {
             disableColor: !0,
             className: a()(u.Tc, {
                 [u.YO]: i,
-                [u.ju]: o
+                [u.ju]: s
             }),
             text: c.intl.string(c.t.y2b7CA)
         })

@@ -4,7 +4,7 @@
 var r = n(19167),
     i = n(598349),
     a = n(321727),
-    s = n(828027);
+    o = n(828027);
 e.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
     var e, t = !1,
         n = {};
@@ -12,6 +12,6 @@ e.exports = Object.setPrototypeOf || ("__proto__" in {} ? function() {
         (e = r(Object.prototype, "__proto__", "set"))(n, []), t = n instanceof Array
     } catch (e) {}
     return function(n, r) {
-        return a(n), s(r), i(n) && (t ? e(n, r) : n.__proto__ = r), n
+        return a(n), o(r), i(n) && (t ? e(n, r) : n.__proto__ = r), n
     }
 }() : void 0)

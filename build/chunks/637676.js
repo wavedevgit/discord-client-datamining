@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 637676, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     e4: "tierComparisonTable__744ff",
     KW: "boosterRecognitionCard__744ff",

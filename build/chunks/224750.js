@@ -3,15 +3,15 @@
 "use strict";
 n.d(t, {
     Yx: () => l,
-    vG: () => o,
+    vG: () => s,
     wI: () => c,
     yW: () => i.mo
 });
 var r = n(562465),
     i = n(257474),
     a = n(652215),
-    s = n(985018);
-async function o(e) {
+    o = n(985018);
+async function s(e) {
     let t = a.Rsh.APPLICATION_DISCLOSURES(e),
         n = await r.Bo.get({
             url: t,
@@ -39,9 +39,9 @@ async function l(e, t) {
 function c(e) {
     switch (e) {
         case i.mo.IP_LOCATION:
-            return s.intl.string(s.t["6wPmjo"]);
+            return o.intl.string(o.t["6wPmjo"]);
         case i.mo.DISPLAYS_ADVERTISEMENTS:
-            return s.intl.string(s.t["/uOMKZ"]);
+            return o.intl.string(o.t["/uOMKZ"]);
         default:
             return null
     }

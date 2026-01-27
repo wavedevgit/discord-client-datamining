@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(835245),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(166532),
     c = n(735305),
     u = n(412463),
@@ -77,7 +77,7 @@ let m = [{
                 useStripeElements: t
             } = e, {
                 analyticsLocations: n
-            } = (0, o.Ay)(s.A.PAYMENT_FLOW_TEST_PAGE), l = i.useMemo(() => (0, a.A)(), []), c = i.useCallback(() => {}, []);
+            } = (0, s.Ay)(o.A.PAYMENT_FLOW_TEST_PAGE), l = i.useMemo(() => (0, a.A)(), []), c = i.useCallback(() => {}, []);
             return (0, r.jsx)(u.dL, {
                 stepConfigs: m,
                 analyticsLocations: n,

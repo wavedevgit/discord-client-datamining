@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(64700),
     i = n(158954),
     a = n(397927),
-    s = n(555115);
+    o = n(555115);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -120,16 +120,16 @@ function h(e) {
     let {
         shouldShow: t,
         caretPosition: n,
-        onExitComplete: o
+        onExitComplete: s
     } = e, {
         reducedMotion: c
     } = r.useContext(i.CZY), f = _(n, c.enabled), {
         config: p
     } = f, h = d(f, ["config"]);
     return (0, a.pnh)(t, u(l({}, h), {
-        config: null != p ? p : (e, n) => t ? s.n : s.t,
+        config: null != p ? p : (e, n) => t ? o.n : o.t,
         onRest: () => {
-            t || null == o || o()
+            t || null == s || s()
         }
     }), "animate-always")
 }

@@ -1,26 +1,26 @@
-/** Chunk was on 97492 **/
-/** chunk id: 770666, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
-}), n(896048);
-var r = n(311907),
-    l = n(931991),
-    i = n(808728),
-    s = n(71393),
-    a = n(576705),
-    o = n(652215);
+/** Chunk was on 93631 **/
+/** chunk id: 770666, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => s
+}), t(896048);
+var a = t(311907),
+    r = t(931991),
+    i = t(808728),
+    l = t(71393),
+    o = t(576705),
+    c = t(652215);
 
-function c(e, t) {
-    return (0, r.bG)([s.A, i.Ay, a.A], () => {
-        let n = s.A.getGuild(e);
-        if (a.A.can(o.xBc.ADMINISTRATOR, n) || a.A.can(o.xBc.CREATE_EVENTS, n)) return !0;
+function s(e, n) {
+    return (0, a.bG)([l.A, i.Ay, o.A], () => {
+        let t = l.A.getGuild(e);
+        if (o.A.can(c.xBc.ADMINISTRATOR, t) || o.A.can(c.xBc.CREATE_EVENTS, t)) return !0;
         for (let {
-                channel: n
+                channel: t
             }
             of i.Ay.getChannels(e)[i.vM])
-            if (null == t || n.type === t) {
-                let [e] = (0, l.p_)(n);
-                if (a.A.can(e, n)) return !0
+            if (null == n || t.type === n) {
+                let [e] = (0, r.p_)(t);
+                if (o.A.can(e, t)) return !0
             } return !1
-    }, [e, t])
+    }, [e, n])
 }

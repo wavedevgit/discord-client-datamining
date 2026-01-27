@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(735438),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(735438),
+    l = n.n(s),
     c = n(158954),
     u = n(311907),
     d = n(52133),
@@ -34,7 +34,7 @@ function I(e) {
         variant: t,
         wishlistItem: n,
         guildId: a,
-        channelId: o,
+        channelId: s,
         userIdsForGifting: v,
         userIdsForRecommendation: I,
         cardSize: S = _.Y.SMALL,
@@ -59,7 +59,7 @@ function I(e) {
             text: "popular" === t ? b.intl.string(b.t["DP0o+u"]) : b.intl.string(b.t["OnWY3/"]),
             position: "top",
             children: (0, r.jsx)("div", {
-                className: s()(O.RL, T),
+                className: o()(O.RL, T),
                 children: "popular" === t || 0 === D.length ? (0, r.jsx)("div", {
                     className: O.fd,
                     children: (0, r.jsx)(c.Y3C, {
@@ -70,7 +70,7 @@ function I(e) {
                 }) : (0, r.jsx)(f.I, {
                     users: D,
                     guildId: null != a ? a : void 0,
-                    channelId: null != o ? o : void 0,
+                    channelId: null != s ? s : void 0,
                     maxUsers: A,
                     size: y._3.SIZE_20
                 })

@@ -6,8 +6,8 @@ n.d(t, {
 }), n(321073), n(864466), n(443073);
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(164956),
     c = n(734057),
     u = n(927813),
@@ -72,9 +72,9 @@ function S(e, t, n) {
         i = [];
     for (let t = 0; t < e.options.length; t++) {
         let a = e.options[t],
-            s = null == n[a.id];
-        s && (r = !0), i.push(E(m({}, a), {
-            isUnseen: s
+            o = null == n[a.id];
+        o && (r = !0), i.push(E(m({}, a), {
+            isUnseen: o
         }))
     }
     return E(m({}, e), {
@@ -95,15 +95,15 @@ function C(e) {
         defaultChannelIds: r,
         enabled: i,
         responses: a,
-        onboardingPromptsSeen: s,
-        onboardingResponsesSeen: o,
+        onboardingPromptsSeen: o,
+        onboardingResponsesSeen: s,
         mode: l,
         belowRequirements: c,
         connections: u
     } = e;
     v = !1;
     let d = p.Ay.getOnboardingStatus(t) === p.$o.READY,
-        _ = T(n, s, o);
+        _ = T(n, o, s);
     y[t] = {
         enabled: i,
         mode: l,
@@ -112,8 +112,8 @@ function C(e) {
         onboardingPrompts: _.filter(e => e.inOnboarding),
         defaultChannelIds: r.filter(e => (0, f.S)(t, e)),
         responses: d ? [] : a,
-        onboardingPromptsSeen: s,
-        onboardingResponsesSeen: o,
+        onboardingPromptsSeen: o,
+        onboardingResponsesSeen: s,
         connections: null != u ? u : []
     }, d || P(t, a), O[t] = Date.now()
 }
@@ -123,11 +123,11 @@ function N() {
 }
 
 function w(e) {
-    var t, n, r, i, a, s, o, l, c;
+    var t, n, r, i, a, o, s, l, c;
     let {
         guildId: u,
         updates: d
-    } = e, f = null != (t = null != (n = d.onboardingPromptsSeen) ? n : null == (o = y[u]) ? void 0 : o.onboardingPromptsSeen) ? t : {}, p = null != (r = null != (i = d.onboardingResponsesSeen) ? i : null == (l = y[u]) ? void 0 : l.onboardingResponsesSeen) ? r : {}, _ = T(null != (a = null != (s = d.prompts) ? s : null == (c = y[u]) ? void 0 : c.prompts) ? a : [], f, p);
+    } = e, f = null != (t = null != (n = d.onboardingPromptsSeen) ? n : null == (s = y[u]) ? void 0 : s.onboardingPromptsSeen) ? t : {}, p = null != (r = null != (i = d.onboardingResponsesSeen) ? i : null == (l = y[u]) ? void 0 : l.onboardingResponsesSeen) ? r : {}, _ = T(null != (a = null != (o = d.prompts) ? o : null == (c = y[u]) ? void 0 : c.prompts) ? a : [], f, p);
     y[u] = E(m({}, y[u], d), {
         prompts: _
     })
@@ -167,16 +167,16 @@ function D(e) {
     P(t, n);
     let a = y[t];
     if (null == a) return !1;
-    let s = T(a.prompts, r, i);
+    let o = T(a.prompts, r, i);
     y[t] = E(m({}, a), {
-        prompts: s,
-        onboardingPrompts: s.filter(e => e.inOnboarding),
+        prompts: o,
+        onboardingPrompts: o.filter(e => e.inOnboarding),
         onboardingPromptsSeen: r,
         onboardingResponsesSeen: i
     })
 }
 
-function x(e) {
+function L(e) {
     let {
         guildId: t,
         channelIds: n
@@ -186,7 +186,7 @@ function x(e) {
     })
 }
 
-function L(e) {
+function x(e) {
     let {
         guildId: t,
         connections: n
@@ -197,7 +197,7 @@ function L(e) {
     })
 }
 
-function j(e) {
+function M(e) {
     let {
         guildId: t,
         mode: n
@@ -205,7 +205,7 @@ function j(e) {
     null != r && (r.mode = n)
 }
 
-function M(e) {
+function j(e) {
     let {
         guild: t
     } = e;
@@ -214,8 +214,8 @@ function M(e) {
 let k = [],
     U = [],
     G = [],
-    V = [];
-class F extends(r = s.Ay.Store) {
+    F = [];
+class V extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(c.A, p.Ay, l.A)
     }
@@ -287,13 +287,13 @@ class F extends(r = s.Ay.Store) {
     }
     getConnections(e) {
         var t, n;
-        return null != (t = null == (n = y[e]) ? void 0 : n.connections) ? t : V
+        return null != (t = null == (n = y[e]) ? void 0 : n.connections) ? t : F
     }
 }
-h(F, "displayName", "GuildOnboardingPromptsStore");
-let B = new F(o.h, {
+h(V, "displayName", "GuildOnboardingPromptsStore");
+let B = new V(s.h, {
     CONNECTION_OPEN: I,
-    GUILD_DELETE: M,
+    GUILD_DELETE: j,
     GUILD_ONBOARDING_PROMPTS_FETCH_START: A,
     GUILD_ONBOARDING_PROMPTS_FETCH_SUCCESS: C,
     GUILD_ONBOARDING_PROMPTS_FETCH_FAILURE: N,
@@ -301,7 +301,7 @@ let B = new F(o.h, {
     GUILD_ONBOARDING_UPDATE_RESPONSES_SUCCESS: D,
     GUILD_ONBOARDING_PROMPTS_LOCAL_UPDATE: w,
     GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_SUCCESS: w,
-    GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: x,
-    GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: L,
-    GUILD_SETTINGS_ONBOARDING_SET_MODE: j
+    GUILD_SETTINGS_DEFAULT_CHANNELS_SAVE_SUCCESS: L,
+    GUILD_SETTINGS_ONBOARDING_CONNECTIONS_SAVE_SUCCESS: x,
+    GUILD_SETTINGS_ONBOARDING_SET_MODE: M
 })

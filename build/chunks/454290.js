@@ -2,7 +2,7 @@
 /** chunk id: 454290, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Q: () => s,
+    Q: () => o,
     f: () => a
 });
 var r = n(64700),
@@ -17,6 +17,6 @@ let a = (0, r.createContext)({
     setZoomed() {}
 });
 
-function s() {
+function o() {
     return (0, r.useContext)(a)
 }

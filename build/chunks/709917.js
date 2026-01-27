@@ -2,13 +2,13 @@
 /** chunk id: 709917, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(496431);
 let i = 6e4,
     a = 12e5;
 
-function s(e) {
+function o(e) {
     return e.minutes > 0 || e.seconds > 0 ? 23 === e.hours ? {
         days: e.days + 1,
         hours: 0,
@@ -22,8 +22,8 @@ function s(e) {
     } : e
 }
 
-function o(e) {
+function s(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = e.clone();
-    return t && (n = n.subtract(a, "milliseconds")), s((0, r.A)(n.toDate(), i))
+    return t && (n = n.subtract(a, "milliseconds")), o((0, r.A)(n.toDate(), i))
 }

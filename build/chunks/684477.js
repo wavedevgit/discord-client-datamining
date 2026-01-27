@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(235986),
-    s = n(156312),
-    o = n(166532),
+    o = n(156312),
+    s = n(166532),
     l = n(482132),
     c = n(866485),
     u = n(981036),
@@ -69,7 +69,7 @@ let g = e => (0, r.jsx)(E, _({}, e)),
             onBackClick: y
         } = n, {
             hasPaymentSources: b
-        } = (0, s.P5)(), O = b ? o.pn.REVIEW : o.pn.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), A = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
+        } = (0, o.P5)(), O = b ? s.pn.REVIEW : s.pn.ADD_PAYMENT_STEPS, v = i.useCallback(() => t(O), [t, O]), A = i.useMemo(() => "custom-step-body" === c ? p() : "two-column" === c ? (0, r.jsxs)("div", {
             className: f.D,
             children: [h(), g()]
         }) : null, [c, p, h, g]), I = i.useMemo(() => m(_({}, E), {
@@ -89,7 +89,7 @@ let g = e => (0, r.jsx)(E, _({}, e)),
         })
     },
     y = (0, c.R)({
-        step: o.pn.GIFT_CUSTOMIZATION,
+        step: s.pn.GIFT_CUSTOMIZATION,
         renderStep: g,
         DirectStepComponent: E
     })

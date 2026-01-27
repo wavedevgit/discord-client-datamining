@@ -44,7 +44,7 @@ e.exports = function(e) {
                 relevance: 0
             }]
         },
-        s = {
+        o = {
             className: "string",
             variants: [{
                 match: /#\d[\d_]*/
@@ -56,7 +56,7 @@ e.exports = function(e) {
                 match: /#%[01][01_]*/
             }]
         },
-        o = {
+        s = {
             begin: e.IDENT_RE + "\\s*=\\s*class\\s*\\(",
             returnBegin: !0,
             contains: [e.TITLE_MODE]
@@ -71,7 +71,7 @@ e.exports = function(e) {
                 begin: /\(/,
                 end: /\)/,
                 keywords: t,
-                contains: [i, s, r].concat(n)
+                contains: [i, o, r].concat(n)
             }, r].concat(n)
         };
     return {
@@ -80,6 +80,6 @@ e.exports = function(e) {
         case_insensitive: !0,
         keywords: t,
         illegal: /"|\$[G-Zg-z]|\/\*|<\/|\|/,
-        contains: [i, s, a, o, l, r].concat(n)
+        contains: [i, o, a, s, l, r].concat(n)
     }
 }

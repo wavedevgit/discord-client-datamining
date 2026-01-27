@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n(629357),
     a = n(374803),
-    s = n(498642),
-    o = n(320501),
+    o = n(498642),
+    s = n(320501),
     l = n(248465),
     c = n(968011),
     u = n(236899);
@@ -67,14 +67,14 @@ function b(e, t, n, r) {
     } = I;
     if (S.length < p || u.A.getMaxWordCount() < h || u.A.isFrequentlyUsedWord(S)) return f;
     let T = (0, l.X3)(i.rD.USER),
-        C = o.A.getMessages(e.id).toArray(),
+        C = s.A.getMessages(e.id).toArray(),
         N = new Set;
     for (let e = 0; e < C.length; e++) {
         let t = C[e];
         T[t.author.id] = (null != (d = T[t.author.id]) ? d : 1) + (C.length - e) / C.length, N.add(t.author.id)
     }
     let w = !1;
-    A && (w = null != e.guild_id && (null != (g = s.A.getMemberCount(e.guild_id)) ? g : 0) > m);
+    A && (w = null != e.guild_id && (null != (g = o.A.getMemberCount(e.guild_id)) ? g : 0) > m);
     let R = l.Ay.queryMentionSuggestionResults({
         query: S,
         channel: e,

@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(735438),
-    o = n.n(s),
+    o = n(735438),
+    s = n.n(o),
     l = n(615300),
     c = n(827734),
     u = n(399374);
@@ -43,7 +43,7 @@ class _ extends a.PureComponent {
     }
     constructor(...e) {
         super(...e), d(this, "state", {
-            backgroundColor: o().sample(p)
+            backgroundColor: s().sample(p)
         })
     }
 }
@@ -101,7 +101,7 @@ class h extends(r = a.Component) {
                 easing: l.A.Easing.linear
             }).start(this.animateSlide)
         });
-        const t = Array(10).fill(null).map(() => o().random(40, 150));
+        const t = Array(10).fill(null).map(() => s().random(40, 150));
         this.state = {
             blocks: t,
             height: 2 * t.reduce((e, t) => e + t + f, f),

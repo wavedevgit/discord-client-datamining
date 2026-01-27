@@ -8,8 +8,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(397927),
     c = n(235986),
     u = n(954571),
@@ -103,23 +103,23 @@ class v extends a.PureComponent {
             isLongText: n,
             title: r,
             body: a,
-            className: s,
+            className: o,
             onClickSkipAll: u
         } = this.props, d = "string" == typeof a ? "p" : "div", _ = "left" === t || n, h = "center" === t || !_;
         return (0, i.jsxs)(l.lGe, {
-            className: o()(p.Sy, s),
+            className: s()(p.Sy, o),
             children: [null != e && (0, i.jsx)(c.A, {
                 className: p.il,
                 justify: _ ? c.A.Justify.START : c.A.Justify.CENTER,
                 children: e()
             }), (0, i.jsx)(l.H, {
-                className: o()({
+                className: s()({
                     [p.Av]: h,
                     [p.gH]: _
                 }),
                 children: r
             }), (0, i.jsx)(d, {
-                className: o()({
+                className: s()({
                     [p.IF]: h,
                     [p.If]: _
                 }),
@@ -162,8 +162,8 @@ class A extends(r = a.PureComponent) {
                 textAlign: n,
                 onComplete: r,
                 onSkipAll: a,
-                isLongText: s,
-                title: o,
+                isLongText: o,
+                title: s,
                 body: c,
                 children: u,
                 spacing: d,
@@ -200,13 +200,13 @@ class A extends(r = a.PureComponent) {
             } = e, {
                 forceTheme: r,
                 isLongText: a,
-                arrowAlignment: s,
+                arrowAlignment: o,
                 renderMedia: c
             } = this.props, u = null != c;
             return (0, i.jsx)(l.NPJ, {
                 theme: r,
                 children: e => (0, i.jsx)(v, g(h({}, this.props), {
-                    className: o()({
+                    className: s()({
                         [p.sQ]: "bottom" === n,
                         [p.eV]: !a && !u,
                         [p.tJ]: !a && u,
@@ -215,8 +215,8 @@ class A extends(r = a.PureComponent) {
                         [p.pG]: "right" === n,
                         [p.Mn]: "top" === n,
                         [p.kb]: "left" === n,
-                        [p.ks]: "top" === s,
-                        [p.Eo]: "middle" === s,
+                        [p.ks]: "top" === o,
+                        [p.Eo]: "middle" === o,
                         "force-theme": null != r
                     }, e),
                     onClickComplete: () => this.onClickComplete(t),

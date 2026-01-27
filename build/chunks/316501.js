@@ -5,16 +5,16 @@ n.d(t, {
     AD: () => D,
     Kh: () => _,
     Pk: () => k,
-    Q_: () => M,
-    Ze: () => x,
+    Q_: () => j,
+    Ze: () => L,
     pF: () => R,
-    sv: () => j
+    sv: () => M
 }), n(896048), n(446912), n(114821), n(339614), n(321073), n(638769);
 var r = n(695497),
     i = n.n(r),
     a = n(506774),
-    s = n(626584),
-    o = n(111162),
+    o = n(626584),
+    s = n(111162),
     l = n(723702),
     c = n(650583);
 
@@ -39,7 +39,7 @@ function d(e) {
     }
     return e
 }
-let f = new s.A("KeyboardLayoutMapUtils"),
+let f = new o.A("KeyboardLayoutMapUtils"),
     p = (0, l.isLinux)() ? c.C8 : (0, l.isMac)() ? c.V8 : (0, l.isWindows)() || __OVERLAY__ ? c.Nu : i().codes,
     _ = new Set([192, 220, 222, 223, 229]),
     h = Object.freeze({
@@ -231,7 +231,7 @@ class T {
     addEvent(e) {
         var t, n;
         let r = v(e);
-        null == this._internalKeyLayoutMap && this._initializeInternalLayoutMap(), this._hasExactMatch(r) || null != r.key && "dead" !== r.key && (null == this.keyMap[r.key] ? this.keyMap[r.key] = r.keyCode : this.keyMap[r.key] !== r.keyCode && o.default.logKeyboardMismatches && f.error("KeyboardMapper - Key code mismatch for key ".concat(r.key, ": ").concat(this.keyMap[r.key], " !== ").concat(r.keyCode)), this.keyCodeMap[r.keyCode] = null != (t = this.keyCodeMap[r.keyCode]) ? t : [], this.keyCodeMap[r.keyCode].push(r), null == (n = this._internalKeyLayoutMap) || n.set(r.code, r.key), this.updateCaches())
+        null == this._internalKeyLayoutMap && this._initializeInternalLayoutMap(), this._hasExactMatch(r) || null != r.key && "dead" !== r.key && (null == this.keyMap[r.key] ? this.keyMap[r.key] = r.keyCode : this.keyMap[r.key] !== r.keyCode && s.default.logKeyboardMismatches && f.error("KeyboardMapper - Key code mismatch for key ".concat(r.key, ": ").concat(this.keyMap[r.key], " !== ").concat(r.keyCode)), this.keyCodeMap[r.keyCode] = null != (t = this.keyCodeMap[r.keyCode]) ? t : [], this.keyCodeMap[r.keyCode].push(r), null == (n = this._internalKeyLayoutMap) || n.set(r.code, r.key), this.updateCaches())
     }
     updateCaches() {
         this._setCachedKeyCodeMapEntries(), this._setCachedKeyMapEntries(), this._setCachedKeyLayoutMapEntries()
@@ -297,23 +297,23 @@ class C extends T {
         if (null != n && null != t) return this.cachedAllEvents.find(e => {
             let i = m(e.key) === r,
                 a = e.keyCode === n,
-                s = e.code === t;
-            return a && i && s
+                o = e.code === t;
+            return a && i && o
         })
     }
     getWeightedPossibleKeyStringMatches(e, t, n) {
         return this.cachedAllEvents.filter(r => {
             let i = m(r.key) === m(e),
                 a = null == n || r.keyCode === n,
-                s = null == t || r.code === t;
-            return a && i && s
+                o = null == t || r.code === t;
+            return a && i && o
         }).sort((r, i) => {
             let a = r => {
                     let i = 0;
                     return m(r.key) === m(e) && (i += .5), null != t && r.code === t && (i += .3), null != n && r.keyCode === n && (i += .2), i
                 },
-                s = a(r);
-            return a(i) - s
+                o = a(r);
+            return a(i) - o
         })
     }
     findKeyboardEventByKey(e, t, n) {
@@ -391,19 +391,19 @@ async function D() {
     await y(), null == (e = P()) || e.reset()
 }
 
-function x() {
+function L() {
     var e, t;
     let n = arguments.length > 0 && void 0 !== arguments[0] && arguments[0];
     return n ? b() : null != (e = null == (t = P()) ? void 0 : t.getLayoutMap()) ? e : b()
 }
 
-function L(e) {
+function x(e) {
     var t, n;
     let r = null != e ? m(e) : void 0;
     if (null != r) return null != (t = null == (n = P()) ? void 0 : n.findCodeFromKeyboardLayoutMap(r)) ? t : void 0
 }
 
-function j(e) {
+function M(e) {
     let t = v(e);
     if (null != t.key) {
         var n, r;
@@ -412,15 +412,15 @@ function j(e) {
     return null
 }
 
-function M(e) {
+function j(e) {
     var t, n, r, i;
     let a = null != e ? m(e) : void 0;
     if (null == a) return null;
-    let s = L(a),
-        o = null != (t = null == (n = P()) ? void 0 : n.findKeyboardEventByKey(a, s)) ? t : null;
-    if (null != o) return o;
+    let o = x(a),
+        s = null != (t = null == (n = P()) ? void 0 : n.findKeyboardEventByKey(a, o)) ? t : null;
+    if (null != s) return s;
     try {
-        let e = null != (r = null == (i = P()) ? void 0 : i.getDefaultKeyboardEventShape(a, void 0, s)) ? r : null;
+        let e = null != (r = null == (i = P()) ? void 0 : i.getDefaultKeyboardEventShape(a, void 0, o)) ? r : null;
         if (null == e) return null;
         let t = new KeyboardEvent("keydown", e);
         return v({

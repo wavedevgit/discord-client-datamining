@@ -2,7 +2,7 @@
 /** chunk id: 967370, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    lM: () => s
+    lM: () => o
 });
 var r = n(945810);
 let i = (0, r.mj)({
@@ -37,7 +37,7 @@ let i = (0, r.mj)({
             }
         }
     }),
-    s = e => {
+    o = e => {
         let t = i.getConfig({
             location: e
         });

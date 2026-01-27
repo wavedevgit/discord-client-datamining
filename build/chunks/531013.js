@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(73153),
     i = n(77729),
     a = n(183636),
-    s = n(626584),
-    o = n(961350),
+    o = n(626584),
+    s = n(961350),
     l = n(954571),
     c = n(209489),
     u = n(723702),
@@ -57,17 +57,17 @@ function E(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let y = new s.A("ConnectionStore"),
+let y = new o.A("ConnectionStore"),
     b = new d.A,
     O = new f.A(b),
     v = new p.A(b);
 b.handleIdentify = () => {
-    let e = o.default.getToken();
+    let e = s.default.getToken();
     if (y.verbose("handleIdentify called", {
             hasToken: null != e
         }), null == e) return null;
     let t = a.A.getState(),
-        n = o.default.getInstallationForTracking();
+        n = s.default.getInstallationForTracking();
     return {
         token: e,
         properties: m(E(m({}, l.default.getSuperProperties()), {

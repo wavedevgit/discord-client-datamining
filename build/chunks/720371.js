@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(64700),
     i = n(354138),
     a = n(927813),
-    s = n(60809);
+    o = n(60809);
 
-function o(e) {
+function s(e) {
     let {
         alphabeticalSortedCommands: t
     } = e;
@@ -50,13 +50,13 @@ function l(e) {
     let {
         sectionId: t,
         commandsByActiveSection: n
-    } = e, [l, c] = r.useState(s.Ug.ALPHABETICAL), u = r.useMemo(() => {
+    } = e, [l, c] = r.useState(o.Ug.ALPHABETICAL), u = r.useMemo(() => {
         var e, r;
         return null != (e = null == (r = n.find(e => e.section.id === t)) ? void 0 : r.data) ? e : []
     }, [n, t]), {
         popularSortedCommands: d,
         canSort: f
-    } = o({
+    } = s({
         alphabeticalSortedCommands: u
     });
     r.useEffect(() => {
@@ -65,14 +65,14 @@ function l(e) {
             dontRefetchMs: a.A.Millis.DAY
         })
     }, [t]), r.useLayoutEffect(() => {
-        f && c(s.Ug.POPULAR)
+        f && c(o.Ug.POPULAR)
     }, [f]);
     let p = u;
     switch (l) {
-        case s.Ug.POPULAR:
+        case o.Ug.POPULAR:
             p = d;
             break;
-        case s.Ug.ALPHABETICAL:
+        case o.Ug.ALPHABETICAL:
             p = u
     }
     return {

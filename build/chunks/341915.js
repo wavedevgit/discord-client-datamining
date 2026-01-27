@@ -6,17 +6,17 @@ n.d(t, {
     Yg: () => c,
     gh: () => u,
     pY: () => r.p,
-    tb: () => s,
+    tb: () => o,
     uF: () => i.u,
     vg: () => d,
-    xv: () => o,
+    xv: () => s,
     yW: () => a.y
 }), n(896048);
 var r = n(773617),
     i = n(696292),
     a = n(663914);
-let s = new Set(Object.values(r.p).filter(e => "number" == typeof e));
-var o = function(e) {
+let o = new Set(Object.values(r.p).filter(e => "number" == typeof e));
+var s = function(e) {
         return e.GENERIC = "generic", e.RATE_LIMITED = "rate_limited", e
     }({}),
     l = function(e) {

@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(879378),
     i = n.n(r),
     a = n(61090),
-    s = n(506774),
-    o = n(22468);
+    o = n(506774),
+    s = n(22468);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -45,7 +45,7 @@ let d = {
         _version: void 0
     },
     f = null;
-class p extends o.i {
+class p extends s.i {
     getClass() {
         return this.constructor
     }
@@ -53,8 +53,8 @@ class p extends o.i {
         return f = e, null == p._clearAllPromise && (p._clearAllPromise = new Promise(t => {
             requestIdleCallback(() => {
                 p.clearPersistQueue(e), p.allPersistKeys.forEach(t => {
-                    p.shouldClear(e, t) && s.w.remove(t)
-                }), o.i.getAll().forEach(t => {
+                    p.shouldClear(e, t) && o.w.remove(t)
+                }), s.i.getAll().forEach(t => {
                     t instanceof p && p.shouldClear(e, t.getClass().persistKey) && (t._isInitialized = !1, t.initializeIfNeeded())
                 }), p._clearAllPromise = null, t()
             }, {
@@ -77,12 +77,12 @@ class p extends o.i {
             let e = {};
             return p.allPersistKeys.forEach(t => {
                 var n;
-                e[t] = (null != (n = s.w.get(t)) ? n : d)._state
+                e[t] = (null != (n = o.w.get(t)) ? n : d)._state
             }), e
         })
     }
     static initializeAll(e) {
-        o.i.getAll().forEach(t => {
+        s.i.getAll().forEach(t => {
             if (t instanceof p) {
                 let n = t.getClass().persistKey;
                 e.hasOwnProperty(n) && t.initializeFromState(e[n])
@@ -93,7 +93,7 @@ class p extends o.i {
         this.initialize(e) && this.asyncPersist(), this._isInitialized ? this.emitChange() : (p.allPersistKeys.add(this.getClass().persistKey), this._isInitialized = !0)
     }
     static destroy() {
-        f = null, o.i.destroy(), p.clearPersistQueue({
+        f = null, s.i.destroy(), p.clearPersistQueue({
             type: "all"
         }), p.allPersistKeys.clear(), p.userAgnosticPersistKeys.clear()
     }
@@ -111,29 +111,29 @@ class p extends o.i {
         }
     }
     static migrateAndReadStoreState(e, t) {
-        if (null != f && p.shouldClear(f, e)) return s.w.remove(e), {
+        if (null != f && p.shouldClear(f, e)) return o.w.remove(e), {
             state: void 0,
             requiresPersist: !1
         };
-        let n = null != p._clearAllPromise ? null : s.w.get(e),
+        let n = null != p._clearAllPromise ? null : o.w.get(e),
             r = null != n ? n : d,
             {
                 _state: i,
                 _version: a
             } = r,
-            o = c(r, ["_state", "_version"]),
+            s = c(r, ["_state", "_version"]),
             l = null == t ? 0 : t.length;
         if (0 !== l && a !== l && null != t) {
             let e = null != a ? a : 0,
                 n = i;
-            for (null == a && (n = o); e < l;) n = (0, t[e])(n), e++;
+            for (null == a && (n = s); e < l;) n = (0, t[e])(n), e++;
             return {
                 state: n,
                 requiresPersist: !0
             }
         }
-        return Object.values(o).length > 0 ? {
-            state: o,
+        return Object.values(s).length > 0 ? {
+            state: s,
             requiresPersist: !0
         } : {
             state: i,
@@ -159,7 +159,7 @@ class p extends o.i {
         let {
             persistKey: e
         } = this.getClass(), t = this.getState(), n = this._version;
-        s.w.set(e, {
+        o.w.set(e, {
             _state: t,
             _version: n
         })
@@ -168,7 +168,7 @@ class p extends o.i {
         let {
             persistKey: e
         } = this.getClass();
-        s.w.remove(e)
+        o.w.remove(e)
     }
     constructor(e, t, n) {
         if (super(e, t, n), l(this, "_version", null == this.getClass().migrations ? 0 : this.getClass().migrations.length), l(this, "callback", e => {

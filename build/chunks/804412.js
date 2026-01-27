@@ -1,15 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 804412, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Ay: () => s,
-    CJ: () => i
+    Ay: () => a,
+    CJ: () => l
 });
-var r = n(250105),
-    i = function(e) {
-        return e.CONTROL = "control", e.NAGBAR_REFRESH = "nagbar-refresh", e.OFFER_BADGE = "offer-badge", e.OFFER_COUNTDOWN = "offer-countdown", e.HERO_COUNTDOWN = "hero-countdown", e
-    }({});
-let a = (0, r.Ay)({
+var r, i = n(250105),
+    l = ((r = {}).CONTROL = "control", r.NAGBAR_REFRESH = "nagbar-refresh", r.OFFER_BADGE = "offer-badge", r.OFFER_COUNTDOWN = "offer-countdown", r.HERO_COUNTDOWN = "hero-countdown", r);
+let o = (0, i.Ay)({
         kind: "user",
         name: "2025-10-offer-reminders-ux-experiment",
         defaultConfig: {
@@ -45,6 +42,6 @@ let a = (0, r.Ay)({
             }
         }
     }),
-    s = e => a.useConfig({
+    a = e => o.useConfig({
         location: e
     })

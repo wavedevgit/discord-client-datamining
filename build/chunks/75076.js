@@ -7,8 +7,8 @@ n.d(t, {
     I: () => c
 });
 var a = n(738586),
-    s = n(954571),
-    o = n(652215);
+    o = n(954571),
+    s = n(652215);
 
 function l(e, t, n) {
     let {
@@ -18,7 +18,7 @@ function l(e, t, n) {
         fpsThreshold: d,
         backoffTimeSec: f
     } = a.V.defaultConfig;
-    s.default.track(o.HAw.VIDEO_TOGGLED, {
+    o.default.track(s.HAw.VIDEO_TOGGLED, {
         video_toggle_reason: t,
         toggled_user_id: e,
         rtc_connection_id: null == r ? void 0 : r(),

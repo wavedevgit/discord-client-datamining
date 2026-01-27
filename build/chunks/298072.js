@@ -8,9 +8,9 @@ n.d(t, {
 var r = n(942381),
     i = n(265690),
     a = n(312852),
-    s = n(623373);
+    o = n(623373);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -58,7 +58,7 @@ let d = (0, i.h)(() => ({
         let t = (0, a.K)(e),
             n = d(t => {
                 var n;
-                return null != e && (0, s.B1)(e) ? null == (n = t.selectionStates.get(e.storeListingId)) ? void 0 : n.selectedVariantIndex : null
+                return null != e && (0, o.B1)(e) ? null == (n = t.selectionStates.get(e.storeListingId)) ? void 0 : n.selectedVariantIndex : null
             });
         return null != n ? Math.max(0, n) : t
     },

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(685073),
-    s = n(31432),
-    o = n(810396),
+    o = n(31432),
+    s = n(810396),
     l = n(442228),
     c = n(192867),
     u = n(696451),
@@ -40,7 +40,7 @@ function h(e) {
         pendingGlobalName: E,
         user: t,
         guildMember: N
-    }), x = (0, a.gS)(I), L = () => {
+    }), L = (0, a.gS)(I), x = () => {
         if (null != N && null !== m && (null != N.avatar || null != m)) return (0, r.jsx)(c.A, {
             user: t,
             nickname: D
@@ -49,16 +49,16 @@ function h(e) {
     return (0, r.jsxs)("div", {
         className: _.rf,
         inert: !0,
-        children: [(0, r.jsx)(o.A, {
+        children: [(0, r.jsx)(s.A, {
             user: t,
             guildId: null == h ? void 0 : h.id,
-            usernameIcon: L(),
+            usernameIcon: x(),
             nickname: D,
             pendingDisplayNameStyles: A,
             pronouns: P,
-            primaryGuild: x,
+            primaryGuild: L,
             isTryItOut: S,
-            tags: (0, r.jsx)(s.A, {
+            tags: (0, r.jsx)(o.A, {
                 displayProfile: n,
                 themeType: p.d.POPOUT,
                 pendingLegacyUsernameDisabled: O,

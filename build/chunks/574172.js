@@ -4,7 +4,7 @@
 n.r(t), n.d(t, {
     addStylesheet: () => f,
     close: () => u,
-    open: () => o,
+    open: () => s,
     openCallTilePopout: () => c,
     openChannelCallPopout: () => l,
     setAlwaysOnTop: () => d
@@ -32,18 +32,18 @@ function a(e) {
     }
     return e
 }
-let s = {
+let o = {
     menubar: !1,
     toolbar: !1,
     location: !1,
     directories: !1
 };
 
-function o(e, t, n) {
+function s(e, t, n) {
     return r.h.dispatch({
         type: "POPOUT_WINDOW_OPEN",
         key: e,
-        features: a({}, s, n),
+        features: a({}, o, n),
         render: t
     })
 }

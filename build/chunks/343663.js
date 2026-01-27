@@ -7,8 +7,8 @@ var r = n(64700),
 function a(e, t) {
     return e === t && (0 !== e || 1 / e == 1 / t) || e != e && t != t
 }
-var s = "function" == typeof Object.is ? Object.is : a,
-    o = i.useSyncExternalStore,
+var o = "function" == typeof Object.is ? Object.is : a,
+    s = i.useSyncExternalStore,
     l = r.useRef,
     c = r.useEffect,
     u = r.useMemo,
@@ -22,20 +22,20 @@ t.useSyncExternalStoreWithSelector = function(e, t, n, r, i) {
         };
         a.current = f
     } else f = a.current;
-    var p = o(e, (a = u(function() {
+    var p = s(e, (a = u(function() {
         function e(e) {
             if (!l) {
                 if (l = !0, a = e, e = r(e), void 0 !== i && f.hasValue) {
                     var t = f.value;
-                    if (i(t, e)) return o = t
+                    if (i(t, e)) return s = t
                 }
-                return o = e
+                return s = e
             }
-            if (t = o, s(a, e)) return t;
+            if (t = s, o(a, e)) return t;
             var n = r(e);
-            return void 0 !== i && i(t, n) ? (a = e, t) : (a = e, o = n)
+            return void 0 !== i && i(t, n) ? (a = e, t) : (a = e, s = n)
         }
-        var a, o, l = !1,
+        var a, s, l = !1,
             c = void 0 === n ? null : n;
         return [function() {
             return e(t())

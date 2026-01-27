@@ -37,14 +37,14 @@ function N(e) {
     }, [t]);
     let N = (0, m.A)(t),
         A = (0, l.bG)([x.A], () => x.A.getStateForGuild(t)),
-        I = a.useMemo(() => (null == A ? void 0 : A.instances) == null ? void 0 : 0 === Object.values(A.instances).length ? null : Object.values(A.instances).map((e, n) => (0, r.jsx)(j.Ay, {
+        C = a.useMemo(() => (null == A ? void 0 : A.instances) == null ? void 0 : 0 === Object.values(A.instances).length ? null : Object.values(A.instances).map((e, n) => (0, r.jsx)(j.Ay, {
             guildId: t,
             instance: e
         }, "".concat(e.gameId, "-").concat(n))), [null == A ? void 0 : A.instances, t]),
-        [C, E] = a.useState(!1);
+        [I, E] = a.useState(!1);
     return a.useEffect(() => {
-        (null == I || I.length > 0) && E(!0)
-    }, [I]), (0, r.jsxs)("div", {
+        (null == C || C.length > 0) && E(!0)
+    }, [C]), (0, r.jsxs)("div", {
         className: S.kL,
         children: [(0, r.jsxs)(c.Ay, {
             className: S.KE,
@@ -80,7 +80,7 @@ function N(e) {
                 }), (0, r.jsx)(s.IpV, {
                     children: (0, r.jsxs)("div", {
                         className: S.Y_,
-                        children: [I, C && (0, r.jsx)(v.A, {
+                        children: [C, I && (0, r.jsx)(v.A, {
                             guildId: t
                         })]
                     })

@@ -8,7 +8,7 @@ var r = n(143236),
     i = n(118356),
     a = n(547830);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,20 +16,20 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = new i.Vy("Flux");
+let s = new i.Vy("Flux");
 class l extends r.EventEmitter {
     log(e, t) {
         let n = new u(e),
             r = (t, r) => {
-                let i, s = {
+                let i, o = {
                         name: t,
                         time: -1
                     },
-                    o = a.FO.now();
+                    s = a.FO.now();
                 try {
                     i = r()
                 } finally {
-                    s.time = a.FO.now() - o, this.persist && n.traces.push(s), this.emit("trace", e.type, t, s.time)
+                    o.time = a.FO.now() - s, this.persist && n.traces.push(o), this.emit("trace", e.type, t, o.time)
                 }
                 return i
             };
@@ -52,15 +52,15 @@ class l extends r.EventEmitter {
                 for (let e of t.traces) i.push([e.name, t.name, e.time]);
         i.sort((e, t) => t[2] - e[2]), i.length > r && (i.length = r);
         let a = 0,
-            s = 0,
+            o = 0,
             l = i.map(t => {
-                let [n, r, i] = t, s = "".concat(n);
-                return null == e && (s += "<".concat(r, ">")), a = Math.max(s.length, a), [s, i]
+                let [n, r, i] = t, o = "".concat(n);
+                return null == e && (o += "<".concat(r, ">")), a = Math.max(o.length, a), [o, i]
             }).map(e => {
                 let [t, n] = e;
-                return s += n, "".concat(t.padEnd(a + 1, " "), " - ").concat(n, "ms")
+                return o += n, "".concat(t.padEnd(a + 1, " "), " - ").concat(n, "ms")
             }).join("\n");
-        return 0 === i.length || i[0][2] < 10 || s < 20 || (o.log("Using Hermes:", void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), o.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), o.log("Total Time: ".concat(s, "ms"))), i
+        return 0 === i.length || i[0][2] < 10 || o < 20 || (s.log("Using Hermes:", void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), s.log("".concat(null != e ? "\n\n=== ".concat(e, " ===") : "", "\n").concat(l, "\n")), s.log("Total Time: ".concat(o, "ms"))), i
     }
     getLastActionMetrics(e) {
         var t;
@@ -70,21 +70,21 @@ class l extends r.EventEmitter {
             for (let t of e.traces) i[t.name] = [t.name, e.name, t.time];
         let a = Object.values(i);
         a.sort((e, t) => t[2] - e[2]), a.length > r && (a.length = r);
-        let s = 0,
+        let o = 0,
             l = 0,
             c = a.map(e => {
                 let [t, n, r] = e;
-                return s = Math.max(t.length, s), [t, r]
+                return o = Math.max(t.length, o), [t, r]
             }).map(e => {
                 let [t, n] = e;
-                return l += n, "".concat(t.padEnd(s + 1, " "), " - ").concat(n, "ms")
+                return l += n, "".concat(t.padEnd(o + 1, " "), " - ").concat(n, "ms")
             }).join("\n");
-        return 0 === a.length || l < 8 || o.log("\nUsing Hermes: ".concat(void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), a
+        return 0 === a.length || l < 8 || s.log("\nUsing Hermes: ".concat(void 0 !== (null == (t = n.g) ? void 0 : t.HermesInternal)), "\n\n=== ".concat(e, " ===\n").concat(c), "\nTotal Time: ".concat(l, "ms\n\n")), a
     }
     constructor({
         persist: e = !1
     } = {}) {
-        super(), s(this, "logs", []), s(this, "persist", void 0), this.persist = e
+        super(), o(this, "logs", []), o(this, "persist", void 0), this.persist = e
     }
 }
 let c = 0;
@@ -102,6 +102,6 @@ class u {
         }
     }
     constructor(e) {
-        s(this, "id", void 0), s(this, "action", void 0), s(this, "createdAt", void 0), s(this, "startTime", 0), s(this, "totalTime", 0), s(this, "traces", []), s(this, "error", void 0), this.id = c++, this.action = e, this.createdAt = new Date
+        o(this, "id", void 0), o(this, "action", void 0), o(this, "createdAt", void 0), o(this, "startTime", 0), o(this, "totalTime", 0), o(this, "traces", []), o(this, "error", void 0), this.id = c++, this.action = e, this.createdAt = new Date
     }
 }

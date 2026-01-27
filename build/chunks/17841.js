@@ -1,6 +1,5 @@
 /** Chunk was on 86142 **/
 /** chunk id: 17841, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     A: () => p
 });
@@ -9,13 +8,13 @@ var r, i, s = n(664294),
     a = n(73153),
     o = n(723702),
     c = n(204925);
-let u = null,
-    d = "underage";
+let d = null,
+    u = "underage";
 class h extends(i = l.Ay.Store) {
     isUnderageAnonymous() {
         if (o.isPlatformEmbedded && 1) {
-            if (null != u && u + c.bm > Date.now()) return !0
-        } else if (1) return null != s.parse(document.cookie)[d];
+            if (null != d && d + c.bm > Date.now()) return !0
+        } else if (1) return null != s.parse(document.cookie)[u];
         return !1
     }
 }(r = "displayName") in h ? Object.defineProperty(h, r, {
@@ -26,9 +25,9 @@ class h extends(i = l.Ay.Store) {
 }) : h[r] = "AgeGateStore";
 let p = new h(a.h, {
     AGE_GATE_PREVENT_UNDERAGE_REGISTRATION: function() {
-        u = Date.now(), document.cookie = "".concat(d, "=1;path=/")
+        d = Date.now(), document.cookie = "".concat(u, "=1;path=/")
     },
     LOGIN_SUCCESS: function() {
-        u = null, document.cookie = "".concat(d, "=1;path=/;max-age=0")
+        d = null, document.cookie = "".concat(u, "=1;path=/;max-age=0")
     }
 })

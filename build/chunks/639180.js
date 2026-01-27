@@ -2,7 +2,7 @@
 /** chunk id: 639180, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(315069);
 
@@ -27,23 +27,23 @@ function a(e) {
     }
     return e
 }
-class s extends r.A {
+class o extends r.A {
     constructor(e) {
         var t, n;
         super(), i(this, "id", void 0), i(this, "layoutId", void 0), i(this, "type", void 0), i(this, "anchor", void 0), i(this, "size", void 0), i(this, "minSize", void 0), i(this, "pinned", void 0), i(this, "showExtrasHintTimestamp", void 0), i(this, "zIndex", void 0), i(this, "opacity", void 0), i(this, "meta", void 0), this.id = e.id || "", this.layoutId = e.layoutId || "", this.type = e.type;
         let {
             top: r,
-            left: s,
-            bottom: o,
+            left: o,
+            bottom: s,
             right: l
         } = null != (t = e.anchor) ? t : {
             top: 0,
             left: 0
         };
-        "number" == typeof o ? r = void 0 : o = void 0, "number" == typeof l ? s = void 0 : l = void 0, this.anchor = {
+        "number" == typeof s ? r = void 0 : s = void 0, "number" == typeof l ? o = void 0 : l = void 0, this.anchor = {
             top: r,
-            left: s,
-            bottom: o,
+            left: o,
+            bottom: s,
             right: l
         }, this.size = a({
             width: 0,

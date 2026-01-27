@@ -1,41 +1,41 @@
-/** Chunk was on 77986 **/
-/** chunk id: 315960, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => u
+/** Chunk was on 74665 **/
+/** chunk id: 315960, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => o
 });
-var l = n(627968),
-    r = n(64700),
-    i = n(397927),
-    s = n(988794),
-    c = n(985018),
-    o = n(45750);
+var l = t(627968),
+    i = t(64700),
+    r = t(397927),
+    d = t(988794),
+    s = t(985018),
+    a = t(45750);
 
-function u(e) {
+function o(e) {
     let {
-        selectedTab: t,
-        onTabSelected: n,
-        userCount: u
-    } = e, a = r.useRef(null);
-    return r.useEffect(() => {
-        var e, t, n;
-        return null == (n = a.current) || null == (t = n.ref) || null == (e = t.blur) ? void 0 : e.call(t)
+        selectedTab: n,
+        onTabSelected: t,
+        userCount: o
+    } = e, c = i.useRef(null);
+    return i.useEffect(() => {
+        var e, n, t;
+        return null == (t = c.current) || null == (n = t.ref) || null == (e = n.blur) ? void 0 : e.call(n)
     }, []), (0, l.jsx)("div", {
-        className: o.kL,
-        children: (0, l.jsxs)(i.VQ0, {
-            className: o.$H,
-            "aria-label": c.intl.string(c.t["+1H47t"]),
-            selectedItem: t,
+        className: a.kL,
+        children: (0, l.jsxs)(r.VQ0, {
+            className: a.$H,
+            "aria-label": s.intl.string(s.t["+1H47t"]),
+            selectedItem: n,
             type: "top",
-            onItemSelect: n,
-            children: [(0, l.jsx)(i.VQ0.Item, {
-                className: o.YU,
-                id: s.al.EVENT_INFO,
-                children: c.intl.string(c.t.iW6Xuo)
-            }), (0, l.jsx)(i.VQ0.Item, {
-                className: o.YU,
-                id: s.al.RSVP_LIST,
-                children: c.intl.formatToPlainString(c.t["ZrTT/N"], {
-                    userCount: u
+            onItemSelect: t,
+            children: [(0, l.jsx)(r.VQ0.Item, {
+                className: a.YU,
+                id: d.al.EVENT_INFO,
+                children: s.intl.string(s.t.iW6Xuo)
+            }), (0, l.jsx)(r.VQ0.Item, {
+                className: a.YU,
+                id: d.al.RSVP_LIST,
+                children: s.intl.formatToPlainString(s.t["ZrTT/N"], {
+                    userCount: o
                 })
             })]
         })

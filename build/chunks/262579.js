@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(709562),
-    o = n(625180),
+    o = n(709562),
+    s = n(625180),
     l = n(985018);
 
 function c(e, t, n) {
@@ -75,10 +75,10 @@ function h(e) {
         applicationId: t,
         centerButton: n = !1
     } = e, c = p(e, ["applicationId", "centerButton"]), d = i.useCallback(() => {
-        o.A.stopFrame({
+        s.A.stopFrame({
             applicationId: t
         })
-    }, [t]), _ = n ? s.l : s.A;
+    }, [t]), _ = n ? o.l : o.A;
     return (0, r.jsx)(_, f(u({}, c), {
         isTrayButton: !1,
         onClick: d,

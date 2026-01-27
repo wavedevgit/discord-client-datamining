@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(532555);
+    o = n(532555);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,7 +24,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -118,8 +118,8 @@ function g(e) {
 
 function E(e, t) {
     return Object.values(t).reduce((e, t) => {
-        var n, r, i, a, s;
-        return e + (null != (n = null == (s = t.sku) || null == (a = s.tenant_metadata) || null == (i = a.guild_monetization) || null == (r = i.game_server) ? void 0 : r.boost_price) ? n : 0)
+        var n, r, i, a, o;
+        return e + (null != (n = null == (o = t.sku) || null == (a = o.tenant_metadata) || null == (i = a.guild_monetization) || null == (r = i.game_server) ? void 0 : r.boost_price) ? n : 0)
     }, 0)
 }
 
@@ -144,7 +144,7 @@ function b(e) {
     d = u(l({}, d), {
         [t]: u(l({}, r), {
             instances: u(l({}, r.instances), {
-                [n.id]: (0, s.A)(n)
+                [n.id]: (0, o.A)(n)
             })
         })
     })
@@ -214,7 +214,7 @@ class S extends(r = i.Ay.Store) {
         return null != e && (null == (t = d[e]) ? void 0 : t.hasFetchedInstances) === !0
     }
 }
-o(S, "displayName", "GameServerStore");
+s(S, "displayName", "GameServerStore");
 let T = new S(a.h, {
     LOGOUT: f,
     GAME_SERVER_FETCH_CATALOG_SUCCESS: _,

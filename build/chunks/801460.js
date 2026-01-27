@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(230606),
     a = n(53132),
-    s = n(503628),
-    o = n(482779),
+    o = n(503628),
+    s = n(482779),
     l = n(231977),
     c = n(4940).f,
     u = n(693655),
@@ -39,7 +39,7 @@ var r = n(557939),
         return f(g, e) && g[e].m ? g[e].c : 0
     },
     D = function() {
-        p(this, x);
+        p(this, L);
         var e = arguments.length,
             t = m(e < 1 ? void 0 : arguments[0]),
             n = m(e < 2 ? void 0 : arguments[1], "Error"),
@@ -54,46 +54,46 @@ var r = n(557939),
             i.name = v, c(this, "stack", l(1, E(i.stack, 1)))
         }
     },
-    x = D.prototype = o(C),
-    L = function(e) {
+    L = D.prototype = s(C),
+    x = function(e) {
         return {
             enumerable: !0,
             configurable: !0,
             get: e
         }
     },
-    j = function(e) {
-        return L(function() {
+    M = function(e) {
+        return x(function() {
             return w(this)[e]
         })
     };
-b && (d(x, "code", j("code")), d(x, "message", j("message")), d(x, "name", j("name"))), c(x, "constructor", l(1, D));
-var M = s(function() {
+b && (d(L, "code", M("code")), d(L, "message", M("message")), d(L, "name", M("name"))), c(L, "constructor", l(1, D));
+var j = o(function() {
         return !(new S instanceof I)
     }),
-    k = M || s(function() {
+    k = j || o(function() {
         return C.toString !== h || "2: 1" !== String(new S(1, 2))
     }),
-    U = M || s(function() {
+    U = j || o(function() {
         return 25 !== new S(1, "DataCloneError").code
     }),
-    G = M || 25 !== S[A] || 25 !== T[A],
-    V = O ? k || U || G : M;
+    G = j || 25 !== S[A] || 25 !== T[A],
+    F = O ? k || U || G : j;
 r({
     global: !0,
     constructor: !0,
-    forced: V
+    forced: F
 }, {
-    DOMException: V ? D : S
+    DOMException: F ? D : S
 });
-var F = i(v),
-    B = F.prototype;
-for (var H in k && (O || S === F) && u(B, "toString", h), U && b && S === F && d(B, "code", L(function() {
+var V = i(v),
+    B = V.prototype;
+for (var H in k && (O || S === V) && u(B, "toString", h), U && b && S === V && d(B, "code", x(function() {
         return P(_(this).name)
     })), g)
     if (f(g, H)) {
         var Y = g[H],
             W = Y.s,
             K = l(6, Y.c);
-        f(F, W) || c(F, W, K), f(B, W) || c(B, W, K)
+        f(V, W) || c(V, W, K), f(B, W) || c(B, W, K)
     }

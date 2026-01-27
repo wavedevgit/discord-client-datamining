@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(486020),
-    o = n(371794),
+    o = n(486020),
+    s = n(371794),
     l = n(544681),
     c = function(e) {
         return e[e.SMALL = 40] = "SMALL", e[e.MEDIUM = 66] = "MEDIUM", e[e.LARGE = 128] = "LARGE", e
@@ -27,7 +27,7 @@ let u = {
             asset: c,
             className: d
         } = e;
-        return t = null != c ? (0, o.YE)(n.id, c, i) : s.Ay.getApplicationIconURL({
+        return t = null != c ? (0, s.YE)(n.id, c, i) : o.Ay.getApplicationIconURL({
             id: n.id,
             icon: n.icon,
             size: i

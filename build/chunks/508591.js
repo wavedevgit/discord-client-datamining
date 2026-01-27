@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(116833),
-    s = n(704640),
-    o = n(149757),
+    o = n(704640),
+    s = n(149757),
     l = n(642481),
     c = n(301679),
     u = n(788868),
@@ -68,7 +68,7 @@ let g = e => {
         actions: A,
         onShow: I,
         estimatedTooltipHeight: S = 300
-    } = e, T = u.VD[t].nameUnformattedNitro, C = f.intl.string(T).toLocaleUpperCase(), N = (0, s.A)(t), w = (0, o.I)(t);
+    } = e, T = u.VD[t].nameUnformattedNitro, C = f.intl.string(T).toLocaleUpperCase(), N = (0, o.A)(t), w = (0, s.I)(t);
     (0, i.useEffect)(() => {
         a.m[a.DynamicGraphicComponent.BADGE_IMAGE_WITH_PROGRESS_CIRCLE](), new Image().src = w
     }, [w]);

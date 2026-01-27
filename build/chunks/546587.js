@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(397927),
     c = n(850992),
     u = n(802019),
@@ -39,10 +39,10 @@ function E(e) {
     }, [a]), S = i.useCallback((e, t) => {
         let i = a[t];
         if (null == i) return;
-        let s = (0, f.Rg)(i),
+        let o = (0, f.Rg)(i),
             c = i.type === d.Hf.BUILT_IN ? m : 0,
             u = h - 2 * c,
-            _ = (0, r.jsx)(s, {
+            _ = (0, r.jsx)(o, {
                 channel: n,
                 section: i,
                 isSelected: null != y ? i.id === y : E === t,
@@ -54,7 +54,7 @@ function E(e) {
             g = i.type !== d.Hf.BUILT_IN && t < a.length - 1 && a[t + 1].type === d.Hf.BUILT_IN;
         return (0, r.jsxs)("div", {
             className: p.uW,
-            children: [(0, r.jsx)(o.m, {
+            children: [(0, r.jsx)(s.m, {
                 text: i.name,
                 position: "right",
                 asContainer: !0,
@@ -71,7 +71,7 @@ function E(e) {
         }, i.id)
     }, [E, n, b, a, y]);
     return 0 === a.length ? null : (0, r.jsx)("div", {
-        className: s()(t, p.iE),
+        className: o()(t, p.iE),
         children: (0, r.jsx)(u.A, {
             categoryListRef: v,
             expressionsListRef: O,

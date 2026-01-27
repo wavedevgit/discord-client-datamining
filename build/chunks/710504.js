@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 710504, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = {
+n.r(e.exports = {
     reactions: "reactions__23977",
     icon: "icon__23977",
     reactionBtn: "reactionBtn__23977",
@@ -20,5 +19,4 @@ var r = {
     premiumIcon: "premiumIcon__23977",
     sparkles: "sparkles__23977",
     burstGlow: "burstGlow__23977"
-};
-n.r(e.exports = r)
+})

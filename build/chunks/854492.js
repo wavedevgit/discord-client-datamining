@@ -8,16 +8,16 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(383501),
-    s = n(403362),
-    o = n(857071),
+    o = n(403362),
+    s = n(857071),
     l = n(652215);
 async function c(e) {
-    let t = o.A.lurkingGuildIds().filter(t => !e.includes(t));
+    let t = s.A.lurkingGuildIds().filter(t => !e.includes(t));
     0 !== t.length && (i.h.dispatch({
         type: "GUILD_STOP_LURKING",
         ignoredGuildIds: e
     }), await Promise.all(t.map(async e => {
-        let t = o.A.getLurkingSource();
+        let t = s.A.getLurkingSource();
         try {
             await r.Bo.del({
                 url: l.Rsh.GUILD_LEAVE(e),
@@ -38,8 +38,8 @@ async function c(e) {
 }
 async function u() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
-        t = o.A.lurkingGuildIds();
+        t = s.A.lurkingGuildIds();
     if (0 === t.length || !(null == e || !t.includes(e))) return;
-    let n = [e, a.A.getGuildId()].filter(s.Vq);
+    let n = [e, a.A.getGuildId()].filter(o.Vq);
     await c(n)
 }

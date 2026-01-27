@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(770178),
     c = n(313961),
     u = n(47167),
@@ -66,14 +66,14 @@ let T = e => {
     let {
         channel: t,
         width: n
-    } = e, a = (0, o.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), v = (0, g.A)(t.id), I = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, w = 1050, [R, P] = i.useState(.65), [D, x] = i.useState({
+    } = e, a = (0, s.bG)([c.A], () => c.A.getFilteredParticipants(t.id)), v = (0, g.A)(t.id), I = i.useMemo(() => (0, u.m1)(t, m.default, h.A), [t]), T = (0, d.A)(t), C = n * (E.i.height / E.i.width), N = 1156, w = 1050, [R, P] = i.useState(.65), [D, L] = i.useState({
         x: 0,
         y: 0
-    }), L = (0, l.w)(e => {
+    }), x = (0, l.w)(e => {
         let {
             contentRect: t
         } = e, n = Math.max(t.width / E.i.width * 1.5, t.height / E.i.height * 1.5), r = t.width / 2 - N * n, i = t.height / 2 - w * n;
-        P(n), x({
+        P(n), L({
             x: r,
             y: i
         })
@@ -90,14 +90,14 @@ let T = e => {
             className: O.a8
         }, e), {
             children: (0, r.jsx)("div", {
-                ref: L,
+                ref: x,
                 className: b.n,
                 style: {
                     width: n,
                     height: C
                 },
                 children: (0, r.jsx)("div", {
-                    className: s()(y.VT, y.rh),
+                    className: o()(y.VT, y.rh),
                     style: {
                         transform: "translate(".concat(D.x, "px, ").concat(D.y, "px) scale(").concat(R, ")")
                     },

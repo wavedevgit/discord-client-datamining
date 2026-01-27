@@ -7,11 +7,11 @@ n.d(t, {
 var r = n(789459),
     i = n(73153),
     a = n(380610),
-    s = n(961350),
-    o = n(954571);
+    o = n(961350),
+    s = n(954571);
 class l extends r.A {
     initialize(e) {
-        this.waitFor(s.default), this.loadStoredState(e, (0, a.DI)())
+        this.waitFor(o.default), this.loadStoredState(e, (0, a.DI)())
     }
     constructor() {
         super(i.h, {
@@ -30,7 +30,7 @@ class l extends r.A {
             LOGOUT: e => this.handleLogout(e.isSwitchingAccount)
         }, i.A.Early), this.track = function() {
             for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
-            return o.default.track(...t)
+            return s.default.track(...t)
         }, this.surface = "discord_app"
     }
 }

@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,18 +15,18 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = null,
+let s = null,
     l = null;
 
 function c(e) {
     let {
         client: t
     } = e;
-    o = t
+    s = t
 }
 
 function u() {
-    o = null
+    s = null
 }
 
 function d(e) {
@@ -37,13 +37,13 @@ function d(e) {
 }
 class f extends(r = i.Ay.Store) {
     get client() {
-        return o
+        return s
     }
     get cashAppPayComponent() {
         return l
     }
 }
-s(f, "displayName", "AdyenStore");
+o(f, "displayName", "AdyenStore");
 let p = new f(a.h, {
     ADYEN_CREATE_CLIENT_SUCCESS: c,
     ADYEN_TEARDOWN_CLIENT: u,

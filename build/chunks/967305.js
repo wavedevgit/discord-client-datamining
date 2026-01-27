@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(397927),
-    s = n(686956),
-    o = n(976860),
+    o = n(686956),
+    s = n(976860),
     l = n(669953),
     c = n(817818),
     u = n(713125),
@@ -34,14 +34,14 @@ async function g(e) {
         isPreview: r = !1
     } = e;
     (0, a.s7G)(), i()(null == _[t], "should not double-join guilds");
-    let l = await (0, s.k)(t);
+    let l = await (0, o.k)(t);
     if (l.features.has(f.GuildFeatures.COMMUNITY)) {
         if (r)(0, c.sy)(t);
         else {
             if (!l.features.has(f.GuildFeatures.GUILD_ONBOARDING)) return;
             await (0, c.h9)(t)
         }
-        u.Ay.shouldShowOnboarding(t) && (await E(t), null != n && (0, o.pX)(f.BVt.CHANNEL(t, n)))
+        u.Ay.shouldShowOnboarding(t) && (await E(t), null != n && (0, s.pX)(f.BVt.CHANNEL(t, n)))
     }
 }
 
@@ -49,7 +49,7 @@ function E(e) {
     return new Promise(t => {
         _[e] = t, (0, d.Y)(e).then(() => {
             h(e), l.A.finishOnboarding(e)
-        }), (0, o.pX)(f.BVt.CHANNEL(e, p.VV.GUILD_ONBOARDING))
+        }), (0, s.pX)(f.BVt.CHANNEL(e, p.VV.GUILD_ONBOARDING))
     })
 }
 

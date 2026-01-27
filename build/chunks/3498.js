@@ -2,13 +2,13 @@
 /** chunk id: 3498, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    z: () => o
+    z: () => s
 }), n(896048), n(228524), n(446912);
 var r = n(412703);
 n(861855);
 var i = n(668824),
     a = n(183112);
-let s = e => {
+let o = e => {
         switch (e.type) {
             case r.n.WATCH_VIDEO:
                 return {
@@ -56,11 +56,11 @@ let s = e => {
                 return null
         }
     },
-    o = e => {
+    s = e => {
         try {
             let t = Object.entries(e.tasks).map(e => {
                 let [t, n] = e;
-                return [t, s(n)]
+                return [t, o(n)]
             }).filter(e => {
                 let [t, n] = e;
                 return null !== n

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(488428),
     i = n(269438),
     a = n(562465),
-    s = n(73153),
-    o = n(439372),
+    o = n(73153),
+    s = n(439372),
     l = n(449054),
     c = n(351022),
     u = n(965660),
@@ -23,7 +23,7 @@ function p(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class _ extends o.A {
+class _ extends s.A {
     constructor(...e) {
         super(...e), p(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
@@ -37,11 +37,11 @@ class _ extends o.A {
             var t;
             if (!this.isFetchEnabled) return void this.queue.add(d.Iq);
             let n = null != (t = null == e ? void 0 : e.forceRefresh) && t,
-                o = c.A.getLastFetchTimestamp({
+                s = c.A.getLastFetchTimestamp({
                     categoryId: d.Iq
                 });
-            if (n || (0, u.M9)(o)) {
-                s.h.dispatch({
+            if (n || (0, u.M9)(s)) {
+                o.h.dispatch({
                     type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
                     categoryId: d.Iq,
                     reset: !0
@@ -58,14 +58,14 @@ class _ extends o.A {
                         }),
                         t = e.body.total,
                         n = e.body.guilds.map(u.MC);
-                    s.h.dispatch({
+                    o.h.dispatch({
                         type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
                         categoryId: d.Iq,
                         guilds: n,
                         total: t
                     })
                 } catch (e) {
-                    s.h.dispatch({
+                    o.h.dispatch({
                         type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
                         categoryId: d.Iq,
                         error: e
@@ -84,7 +84,7 @@ class _ extends o.A {
                 categoryId: t
             });
             if (n || (0, u.M9)(i)) {
-                s.h.dispatch({
+                o.h.dispatch({
                     type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_START",
                     categoryId: t,
                     reset: !0
@@ -100,14 +100,14 @@ class _ extends o.A {
                         }),
                         n = e.body.total,
                         i = e.body.guilds.map(u.MC);
-                    s.h.dispatch({
+                    o.h.dispatch({
                         type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_SUCCESS",
                         categoryId: t,
                         guilds: i,
                         total: n
                     })
                 } catch (e) {
-                    s.h.dispatch({
+                    o.h.dispatch({
                         type: "GLOBAL_DISCOVERY_SERVERS_SEARCH_FAILURE",
                         categoryId: t,
                         error: e

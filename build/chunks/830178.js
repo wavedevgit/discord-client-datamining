@@ -9,7 +9,7 @@ var r = n(627968),
     i = n(64700),
     a = n(121894);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,7 +17,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = 100,
+let s = 100,
     l = .7;
 class c {
     handleVisible(e, t) {
@@ -25,8 +25,8 @@ class c {
         if (this.visibleComponents.has(e.target)) return;
         let i = Math.abs(e.intersectionRect.bottom - Number(null == (n = e.rootBounds) ? void 0 : n.bottom)) < Math.abs(e.intersectionRect.top - Number(null == (r = e.rootBounds) ? void 0 : r.top));
         i ? this.visibleComponents = new Set([e.target, ...this.visibleComponents]) : this.visibleComponents.add(e.target);
-        let a = i || this.animatingComponents.size < o;
-        a ? this.animatingComponents.add(e.target) : this.animatingComponents.delete(e.target), t.updateState(a), a && this.visibleComponents.size > o && this.stopNodeFromAnimating()
+        let a = i || this.animatingComponents.size < s;
+        a ? this.animatingComponents.add(e.target) : this.animatingComponents.delete(e.target), t.updateState(a), a && this.visibleComponents.size > s && this.stopNodeFromAnimating()
     }
     handleNotVisible(e, t) {
         this.visibleComponents.has(e.target) && (t.updateState(!1), this.visibleComponents.delete(e.target), this.animatingComponents.delete(e.target), this.potentiallyAnimateNewNode())
@@ -43,7 +43,7 @@ class c {
         }
     }
     potentiallyAnimateNewNode() {
-        if (this.animatingComponents.size < o && this.visibleComponents.size > this.animatingComponents.size) {
+        if (this.animatingComponents.size < s && this.visibleComponents.size > this.animatingComponents.size) {
             for (let e of this.visibleComponents)
                 if (!this.animatingComponents.has(e)) {
                     let t = this.registeredNodes.get(e);
@@ -70,7 +70,7 @@ class c {
         null == (e = this.observer) || e.disconnect(), this.registeredNodes.clear(), this.visibleComponents.clear()
     }
     constructor(e = !1) {
-        if (s(this, "registeredNodes", new Map), s(this, "visibleComponents", new Set), s(this, "animatingComponents", new Set), s(this, "observer", void 0), e) return;
+        if (o(this, "registeredNodes", new Map), o(this, "visibleComponents", new Set), o(this, "animatingComponents", new Set), o(this, "observer", void 0), e) return;
         this.observer = new window.IntersectionObserver(e => {
             (0, a.r)(() => {
                 e.forEach(e => {

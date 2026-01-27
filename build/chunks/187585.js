@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 187585, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     u1: "spinner__0920e",
     tu: "homeWrapper__0920e",

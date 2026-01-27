@@ -2,7 +2,7 @@
 /** chunk id: 112317, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Bc: () => o,
+    Bc: () => s,
     w6: () => l
 });
 var r = n(627968),
@@ -10,21 +10,21 @@ var r = n(627968),
 let a = {
         isRichTooltip: !1
     },
-    s = i.createContext(a);
+    o = i.createContext(a);
 
-function o(e) {
+function s(e) {
     let {
         children: t,
         isRichTooltip: n = !1
     } = e, a = i.useMemo(() => ({
         isRichTooltip: n
     }), [n]);
-    return (0, r.jsx)(s.Provider, {
+    return (0, r.jsx)(o.Provider, {
         value: a,
         children: t
     })
 }
 
 function l() {
-    return i.useContext(s)
+    return i.useContext(o)
 }

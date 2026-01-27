@@ -7,21 +7,21 @@ n.d(t, {
 var r = n(627968),
     i = n(158954),
     a = n(206418),
-    s = n(224016),
-    o = n(149757),
+    o = n(224016),
+    s = n(149757),
     l = n(985018),
     c = n(916e3);
 let u = e => {
     let {
         profileBadge: t,
         tenureBadge: n
-    } = e, u = (0, o.I)(n.id);
+    } = e, u = (0, s.I)(n.id);
     return (0, r.jsxs)(a.A, {
         assetComponent: (0, r.jsx)("img", {
             src: u,
             alt: ""
         }),
-        tooltipWordmarkComponent: (0, r.jsx)(s.A, {
+        tooltipWordmarkComponent: (0, r.jsx)(o.A, {
             width: 56,
             className: c.R
         }),

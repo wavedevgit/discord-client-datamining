@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 963342, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    j: () => l
+    j: () => o
 });
 var r = n(311907),
     i = n(73825),
-    a = n(97352),
+    l = n(97352),
     s = n(728458),
-    o = n(652215);
-let l = (0, r.UT)(a.A, {
-    getQueryId: o.fic.SUBSCRIPTION_PLANS,
+    a = n(652215);
+let o = (0, r.UT)(l.A, {
+    getQueryId: a.fic.SUBSCRIPTION_PLANS,
     get: e => {
         if (null == e) return null;
-        let t = a.A.getForSKU(e);
+        let t = l.A.getForSKU(e);
         return 0 === t.length ? null : t
     },
     load: e => (null == e && s.A.addBreadcrumb({

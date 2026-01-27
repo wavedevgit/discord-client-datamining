@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(350723),
     i = n(860579),
     a = n(475815),
-    s = n(365971),
-    o = n(158368);
+    o = n(365971),
+    s = n(158368);
 
 function l(e) {
     let t = e.document,
-        n = (0, s.rw)(e);
+        n = (0, o.rw)(e);
 
     function l() {
         (0, r.tV)(e)
@@ -36,18 +36,18 @@ function l(e) {
     }
 
     function _() {
-        (0, o.I_)(n)
+        (0, s.I_)(n)
     }
 
     function h() {
         setTimeout(() => {
-            (0, o.xz)(n)
+            (0, s.xz)(n)
         }, 0)
     }
 
     function m() {
         (0, r.t2)(e)
     }
-    for (let n of ((0, i.wB)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", p), e.addEventListener("visibilitychange", m), o.NC)) t.addEventListener(n, _, !0), t.addEventListener(n, h, !1);
+    for (let n of ((0, i.wB)(c, e.document.body), e.addEventListener("focus", u), e.addEventListener("blur", d), e.addEventListener("unload", p), e.addEventListener("visibilitychange", m), s.NC)) t.addEventListener(n, _, !0), t.addEventListener(n, h, !1);
     (0, a.a3)(t, f), (0, r.Ts)(e)
 }

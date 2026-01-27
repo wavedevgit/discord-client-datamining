@@ -13,13 +13,13 @@ n.d(t, {
 var r = n(975571),
     i = n(935649),
     a = n(847599),
-    s = n(81091),
-    o = n(652215),
+    o = n(81091),
+    s = n(652215),
     l = n(536242),
     c = n(985018);
 let u = new Set([a.q1.NSFW_GUILD]),
     d = e => {
-        let t = (0, s.g)("age_verification_get_started_steps");
+        let t = (0, o.g)("age_verification_get_started_steps");
         return [{
             title: c.intl.string(c.t.HphYKp),
             description: t ? null : c.intl.string(c.t["GCZC+9"])
@@ -30,7 +30,7 @@ let u = new Set([a.q1.NSFW_GUILD]),
             title: c.intl.string(c.t.aVwLfn),
             description: c.intl.format(c.t.n5vd1E, {
                 handleOnHelpUrlHook: () => {
-                    i.A.openUrl(r.A.getArticleURL(o.MVz.TIGGER_PAWTECT_SYSTEM_DMS)), (0, a.St)(e, a.WU.PRIMARY, a._7.SYSTEM_DMS_LEARN_MORE)
+                    i.A.openUrl(r.A.getArticleURL(s.MVz.TIGGER_PAWTECT_SYSTEM_DMS)), (0, a.St)(e, a.WU.PRIMARY, a._7.SYSTEM_DMS_LEARN_MORE)
                 }
             })
         }]

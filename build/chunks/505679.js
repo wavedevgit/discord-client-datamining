@@ -2,18 +2,18 @@
 /** chunk id: 505679, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    j: () => o
+    j: () => s
 });
 var r = n(64700),
     i = n(158954),
     a = n(953992),
-    s = n(397927);
+    o = n(397927);
 
-function o(e) {
+function s(e) {
     let {
         shouldShow: t,
         onExitComplete: n,
-        onAnimationRest: o
+        onAnimationRest: s
     } = e, {
         reducedMotion: l
     } = r.useContext(i.CZY), c = {
@@ -26,14 +26,14 @@ function o(e) {
         scale: 1,
         opacity: 1
     };
-    return (0, s.pnh)(t, {
+    return (0, o.pnh)(t, {
         keys: e => e ? "tooltip" : "empty",
         config: a.p,
         from: l.enabled ? u : c,
         enter: d,
         leave: l.enabled ? u : c,
         onRest: (e, r) => {
-            t || null == n || n(), null == o || o(e, r)
+            t || null == n || n(), null == s || s(e, r)
         }
     }, "animate-always")
 }

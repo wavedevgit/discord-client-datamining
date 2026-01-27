@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(3026),
-    s = n(342952),
-    o = n(990078),
+    o = n(342952),
+    s = n(990078),
     l = n(397927),
     c = n(956793),
     u = n(47167),
@@ -51,7 +51,7 @@ function I(e) {
                     action: "OPEN_VOICE_GUILD"
                 }), null == T || T()
             };
-            return (0, r.jsx)(o.m, {
+            return (0, r.jsx)(s.m, {
                 asContainer: !0,
                 text: n.name,
                 "aria-label": !1,
@@ -63,7 +63,7 @@ function I(e) {
                 })
             })
         },
-        x = () => {
+        L = () => {
             if (!P) return (0, r.jsx)(l.Text, {
                 variant: "text-xs/normal",
                 color: "text-subtle",
@@ -90,7 +90,7 @@ function I(e) {
                 })
             })
         },
-        L = C !== b.d.MODAL && C !== b.d.MODAL_V2 && C !== b.d.SIDEBAR;
+        x = C !== b.d.MODAL && C !== b.d.MODAL_V2 && C !== b.d.SIDEBAR;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(m.A, {
             className: v.Ph
@@ -106,8 +106,8 @@ function I(e) {
                     size: "xxs",
                     color: l.LU0.colors.TEXT_SUBTLE,
                     className: v.Ow
-                }), x()]
-            }), (0, r.jsx)(s.A, {
+                }), L()]
+            }), (0, r.jsx)(o.A, {
                 users: N,
                 guildId: n.id,
                 channelId: I.id,
@@ -121,7 +121,7 @@ function I(e) {
                     })
                 },
                 onUserClick: e => e.stopPropagation(),
-                disableUserPopout: !!L || (e => e === t.id),
+                disableUserPopout: !!x || (e => e === t.id),
                 "aria-label": O.intl.string(O.t["jNqDh/"])
             })]
         })]

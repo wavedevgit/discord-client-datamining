@@ -7,17 +7,17 @@ n.d(t, {
 var r = n(908909),
     i = n(853590),
     a = n(47276),
-    s = n(64700);
+    o = n(64700);
 
-function o(e) {
+function s(e) {
     return e && e.__esModule ? e.default : e
 }
 
 function l() {
     let {
         locale: e
-    } = (0, i.Y)(), t = (0, a.e)(o(r.A), "@react-aria/datepicker");
-    return (0, s.useMemo)(() => {
+    } = (0, i.Y)(), t = (0, a.e)(s(r.A), "@react-aria/datepicker");
+    return (0, o.useMemo)(() => {
         try {
             return new Intl.DisplayNames(e, {
                 type: "dateTimeField"

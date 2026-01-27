@@ -8,18 +8,18 @@ var r = n(99478),
     i = n(142922);
 let a = 1911;
 
-function s(e) {
+function o(e) {
     return "minguo" === e.era ? e.year + a : 1 - e.year + a
 }
 
-function o(e) {
+function s(e) {
     let t = e - a;
     return t > 0 ? ["minguo", t] : ["before_minguo", 1 - t]
 }
 class l extends i.FG {
     fromJulianDay(e) {
         let t = super.fromJulianDay(e),
-            [n, a] = o((0, i.LA)(t.era, t.year));
+            [n, a] = s((0, i.LA)(t.era, t.year));
         return new(0, r.ng)(this, n, a, t.month, t.day)
     }
     toJulianDay(e) {
@@ -29,7 +29,7 @@ class l extends i.FG {
         return ["before_minguo", "minguo"]
     }
     balanceDate(e) {
-        let [t, n] = o(s(e));
+        let [t, n] = s(o(e));
         e.era = t, e.year = n
     }
     isInverseEra(e) {
@@ -47,6 +47,6 @@ class l extends i.FG {
 }
 
 function c(e) {
-    let [t, n] = (0, i.f5)(s(e));
+    let [t, n] = (0, i.f5)(o(e));
     return new(0, r.ng)(t, n, e.month, e.day)
 }

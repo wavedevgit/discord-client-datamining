@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(473318),
     i = n.n(r),
     a = n(128080),
-    s = n.n(a),
-    o = n(904986),
+    o = n.n(a),
+    s = n(904986),
     l = n(205693),
     c = n(405163),
     u = n(228272),
@@ -42,7 +42,7 @@ function m(e) {
 var g = function(e) {
     return e[e.AUDIO_BITRATE = 0] = "AUDIO_BITRATE", e[e.VIDEO_RESOLUTION_SCALE = 1] = "VIDEO_RESOLUTION_SCALE", e[e.VIDEO_BITRATE = 2] = "VIDEO_BITRATE", e[e.VIDEO_FRAMERATE = 3] = "VIDEO_FRAMERATE", e
 }({});
-class E extends o.A {
+class E extends s.A {
     interact() {
         for (let e of (this.interacted = !0, Object.keys(this.outputs))) this.outputs[e].play();
         this.input.resumeAudio()
@@ -116,10 +116,10 @@ class E extends o.A {
             a = e.encodingVideoHeight;
         if (null != i && null != a)
             for (let e of r.getTracks()) {
-                var s, o;
+                var o, s;
                 let t = e.getConstraints(),
-                    n = null == (s = t.width) ? void 0 : s.max,
-                    r = null == (o = t.height) ? void 0 : o.max;
+                    n = null == (o = t.width) ? void 0 : o.max,
+                    r = null == (s = t.height) ? void 0 : s.max;
                 (n !== i || r !== a) && (this.logger.info("BaseWebRTCConnection.updateVideoQuality: old: ".concat(n, " x ").concat(r, ", new: ").concat(i, " x ").concat(a)), t.width = {
                     max: i
                 }, t.height = {
@@ -153,7 +153,7 @@ class E extends o.A {
             for (let t of this.videoStreamParameters) {
                 let r = e.findIndex(e => e.rid === t.rid);
                 if (-1 === r) return void n(Error("Invalid rid"));
-                s()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
+                o()(this.videoStreamParameters[r], e[r]) || (this.videoStreamParameters[r] = m({}, e[r]))
             }
             t()
         })
@@ -235,11 +235,11 @@ class E extends o.A {
         var t;
         super(e.context, e.userId), t = this, h(this, "input", void 0), h(this, "silenced", !1), h(this, "interacted", !1), h(this, "outputVolume", p.Hz), h(this, "sinkId", p.dx), h(this, "lastPingTime", 0), h(this, "outputs", {}), h(this, "webrtcStats", new d.J), h(this, "silenceThreshold", -100), h(this, "canHavePriority", new Set), h(this, "prioritySpeakers", new Set), h(this, "audioContext", void 0), h(this, "setEchoCancellation", e => this.input.setEchoCancellation(e)), h(this, "setNoiseSuppression", e => this.input.setNoiseSuppression(e)), h(this, "setNoiseCancellation", e => this.input.setNoiseCancellation(e)), h(this, "getNoiseCancellation", () => this.input.getNoiseCancellation()), h(this, "setAutomaticGainControl", e => this.input.setAutomaticGainControl(e)), h(this, "setAudioSource", e => this.input.setAudioSource(e)), h(this, "setVideoSource", e => this.input.setVideoSource(e)), h(this, "setDesktopInput", e => {
             if (null != e) {
-                var t, n, r, i, a, s, o;
+                var t, n, r, i, a, o, s;
                 let l = e.stream.getVideoTracks()[0].getConstraints(),
                     c = {
                         width: "number" == typeof l.width ? l.width : null != (t = null == (i = l.width) ? void 0 : i.ideal) ? t : null == (a = l.width) ? void 0 : a.max,
-                        height: "number" == typeof l.height ? l.height : null != (n = null == (s = l.height) ? void 0 : s.ideal) ? n : null == (o = l.height) ? void 0 : o.max
+                        height: "number" == typeof l.height ? l.height : null != (n = null == (o = l.height) ? void 0 : o.ideal) ? n : null == (s = l.height) ? void 0 : s.max
                     },
                     u = (null != (r = null == c ? void 0 : c.height) ? r : 0) > 720 ? p.oL : p.lo;
                 this.videoQualityManager.setGoliveQuality({

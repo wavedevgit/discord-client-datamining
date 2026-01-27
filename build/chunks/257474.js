@@ -7,12 +7,12 @@ n.d(t, {
 var r = n(852015),
     i = n(144367),
     a = n(428420),
-    s = n(324281),
-    o = n(335871),
+    o = n(324281),
+    s = n(335871),
     l = function(e) {
         return e[e.UNSPECIFIED_DISCLOSURE = 0] = "UNSPECIFIED_DISCLOSURE", e[e.IP_LOCATION = 1] = "IP_LOCATION", e[e.DISPLAYS_ADVERTISEMENTS = 2] = "DISPLAYS_ADVERTISEMENTS", e[e.PARTNER_SDK_DATA_SHARING_MESSAGE = 3] = "PARTNER_SDK_DATA_SHARING_MESSAGE", e
     }({});
-class c extends s.G {
+class c extends o.G {
     create(e) {
         let t = {
             metadata: {},
@@ -27,8 +27,8 @@ class c extends s.G {
     }
     internalBinaryRead(e, t, n, i) {
         let a = null != i ? i : this.create(),
-            s = e.pos + t;
-        for (; e.pos < s;) {
+            o = e.pos + t;
+        for (; e.pos < o;) {
             let [t, i] = e.tag();
             switch (t) {
                 case 1:
@@ -44,10 +44,10 @@ class c extends s.G {
                     a.version = e.fixed64().toString();
                     break;
                 default:
-                    let s = n.readUnknownField;
-                    if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-                    let o = e.skip(i);
-                    !1 !== s && (!0 === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+                    let o = n.readUnknownField;
+                    if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+                    let s = e.skip(i);
+                    !1 !== o && (!0 === o ? r.f$.onRead : o)(this.typeName, a, t, i, s)
             }
         }
         return a
@@ -55,7 +55,7 @@ class c extends s.G {
     binaryReadMap1(e, t, n) {
         let r = t.uint32(),
             i = t.pos + r,
-            a, s;
+            a, o;
         for (; t.pos < i;) {
             let [e, n] = t.tag();
             switch (e) {
@@ -63,13 +63,13 @@ class c extends s.G {
                     a = t.string();
                     break;
                 case 2:
-                    s = t.string();
+                    o = t.string();
                     break;
                 default:
                     throw new globalThis.Error("unknown map entry field for field discord_protos.discord_kkv_store_value_models.v1.ApplicationUserRoleConnection.metadata")
             }
         }
-        e[null != a ? a : ""] = null != s ? s : ""
+        e[null != a ? a : ""] = null != o ? o : ""
     }
     internalBinaryWrite(e, t, n) {
         for (let n of Object.keys(e.metadata)) t.tag(1, r.O0.LengthDelimited).fork().tag(1, r.O0.LengthDelimited).string(n).tag(2, r.O0.LengthDelimited).string(e.metadata[n]).join();
@@ -106,7 +106,7 @@ class c extends s.G {
     }
 }
 new c;
-class u extends s.G {
+class u extends o.G {
     create(e) {
         let t = {
             disclosureType: 0
@@ -118,27 +118,27 @@ class u extends s.G {
     }
     internalBinaryRead(e, t, n, i) {
         let a = null != i ? i : this.create(),
-            s = e.pos + t;
-        for (; e.pos < s;) {
+            o = e.pos + t;
+        for (; e.pos < o;) {
             let [t, i] = e.tag();
             switch (t) {
                 case 1:
                     a.disclosureType = e.int32();
                     break;
                 case 2:
-                    a.ackedAt = o.D.internalBinaryRead(e, e.uint32(), n, a.ackedAt);
+                    a.ackedAt = s.D.internalBinaryRead(e, e.uint32(), n, a.ackedAt);
                     break;
                 default:
-                    let s = n.readUnknownField;
-                    if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+                    let o = n.readUnknownField;
+                    if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
                     let l = e.skip(i);
-                    !1 !== s && (!0 === s ? r.f$.onRead : s)(this.typeName, a, t, i, l)
+                    !1 !== o && (!0 === o ? r.f$.onRead : o)(this.typeName, a, t, i, l)
             }
         }
         return a
     }
     internalBinaryWrite(e, t, n) {
-        0 !== e.disclosureType && t.tag(1, r.O0.Varint).int32(e.disclosureType), e.ackedAt && o.D.internalBinaryWrite(e.ackedAt, t.tag(2, r.O0.LengthDelimited).fork(), n).join();
+        0 !== e.disclosureType && t.tag(1, r.O0.Varint).int32(e.disclosureType), e.ackedAt && s.D.internalBinaryWrite(e.ackedAt, t.tag(2, r.O0.LengthDelimited).fork(), n).join();
         let i = n.writeUnknownFields;
         return !1 !== i && (!0 == i ? r.f$.onWrite : i)(this.typeName, e, t), t
     }
@@ -152,12 +152,12 @@ class u extends s.G {
             no: 2,
             name: "acked_at",
             kind: "message",
-            T: () => o.D
+            T: () => s.D
         }])
     }
 }
 let d = new u;
-class f extends s.G {
+class f extends o.G {
     create(e) {
         let t = {
             ackedDisclosures: []
@@ -169,15 +169,15 @@ class f extends s.G {
     }
     internalBinaryRead(e, t, n, i) {
         let a = null != i ? i : this.create(),
-            s = e.pos + t;
-        for (; e.pos < s;) {
+            o = e.pos + t;
+        for (; e.pos < o;) {
             let [t, i] = e.tag();
             if (1 === t) a.ackedDisclosures.push(d.internalBinaryRead(e, e.uint32(), n));
             else {
-                let s = n.readUnknownField;
-                if ("throw" === s) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-                let o = e.skip(i);
-                !1 !== s && (!0 === s ? r.f$.onRead : s)(this.typeName, a, t, i, o)
+                let o = n.readUnknownField;
+                if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+                let s = e.skip(i);
+                !1 !== o && (!0 === o ? r.f$.onRead : o)(this.typeName, a, t, i, s)
             }
         }
         return a

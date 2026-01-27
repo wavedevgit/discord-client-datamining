@@ -1,8 +1,7 @@
 /** Chunk was on 86142 **/
 /** chunk id: 965252, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968);
 n(64700);
@@ -12,7 +11,7 @@ var i = n(397927),
     a = n(652215),
     o = n(985018),
     c = n(193266);
-let u = () => (0, r.jsx)(s.Ay, {
+let d = () => (0, r.jsx)(s.Ay, {
     children: (0, r.jsxs)("div", {
         className: c.hQ,
         children: [(0, r.jsx)(s.hE, {

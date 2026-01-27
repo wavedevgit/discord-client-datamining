@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 425666, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     kL: "container_adb50a",
     El: "coverImageContainer_adb50a",

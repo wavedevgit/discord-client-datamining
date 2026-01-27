@@ -2,20 +2,20 @@
 /** chunk id: 6494, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    n: () => o
+    n: () => s
 });
 var r = n(150047),
     i = n(959462),
     a = n(3388),
-    s = n(64700);
+    o = n(64700);
 
-function o(e, t) {
+function s(e, t) {
     let {
         collection: n,
-        onLoadMore: o,
+        onLoadMore: s,
         scrollOffset: l = 1
-    } = e, c = (0, s.useRef)(null), u = (0, i.J)(e => {
-        for (let t of e) t.isIntersecting && o && o()
+    } = e, c = (0, o.useRef)(null), u = (0, i.J)(e => {
+        for (let t of e) t.isIntersecting && s && s()
     });
     (0, a.N)(() => (t.current && (c.current = new IntersectionObserver(u, {
         root: (0, r.m)(null == t ? void 0 : t.current),

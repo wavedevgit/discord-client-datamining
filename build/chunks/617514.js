@@ -1,43 +1,42 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 617514, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r = n(627968),
     i = n(311907),
-    a = n(554146),
+    l = n(554146),
     s = n(397927),
-    o = n(793574),
-    l = n(379848),
+    a = n(793574),
+    o = n(379848),
     c = n(657331),
-    u = n(961350),
-    d = n(128450),
-    f = n(212168),
+    d = n(961350),
+    u = n(128450),
+    _ = n(212168),
     p = n(49999),
-    _ = n(518477),
-    h = n(985018),
-    m = n(133788);
-let g = () => {
-    let [e, t] = (0, l.kn)([a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === a.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, i.bG)([u.default], () => u.default.getId());
-    return (0, r.jsx)(d.A, {
-        title: h.intl.string(h.t.Jzj9q4),
-        description: h.intl.string(h.t.lfF1Sp),
+    m = n(518477),
+    g = n(985018),
+    A = n(133788);
+let f = () => {
+    let [e, t] = (0, o.kn)([l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = e === l.M.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, f = (0, i.bG)([d.default], () => d.default.getId());
+    return (0, r.jsx)(u.A, {
+        title: g.intl.string(g.t.Jzj9q4),
+        description: g.intl.string(g.t.lfF1Sp),
         titleIcon: n ? (0, r.jsx)(s.LpS, {
-            className: m.A,
-            text: h.intl.string(h.t.y2b7CA)
+            className: A.A,
+            text: g.intl.string(g.t.y2b7CA)
         }) : null,
-        borderType: f.i.LIMITED,
+        borderType: _.i.LIMITED,
         showBorder: n,
         hasBackground: n,
         children: (0, r.jsx)(s.Button, {
-            text: h.intl.string(h.t.Geikwq),
+            text: g.intl.string(g.t.Geikwq),
             onClick: () => {
                 n && t(p.i.TAKE_ACTION), (0, c.openUserProfileModal)({
-                    userId: g,
-                    sourceAnalyticsLocations: [o.A.USER_SETTINGS_USER_PROFILE],
+                    userId: f,
+                    sourceAnalyticsLocations: [a.A.USER_SETTINGS_USER_PROFILE],
                     hideRestrictedProfile: !0,
-                    tabSection: _.RP.WIDGETS
+                    tabSection: m.RP.WIDGETS
                 })
             },
             size: "sm"

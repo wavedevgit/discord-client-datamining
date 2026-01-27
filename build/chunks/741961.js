@@ -6,8 +6,8 @@ n.d(t, {
     A: () => P
 });
 var i, a = n(311907),
-    s = n(562465),
-    o = n(73153),
+    o = n(562465),
+    s = n(73153),
     l = n(695870),
     c = n(927813),
     u = n(961350),
@@ -56,7 +56,7 @@ function O(e) {
         a = .8 * h;
     if (null != r && (null != r.timeout || r.prevSend + a > i)) return !1;
     let c = setTimeout(() => {
-        null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, w(t) > g || s.Bo.post({
+        null == r || r.channelId !== t || n !== u.default.getId() || null == r.timeout || (r.timeout = null, w(t) > g || o.Bo.post({
             url: f.Rsh.TYPING(t),
             oldFormErrors: !0,
             rejectWithError: !0
@@ -65,12 +65,12 @@ function O(e) {
                 var n, r;
                 let i = null != (n = e.body.message_send_cooldown_ms) ? n : 0,
                     a = null != (r = e.body.thread_create_cooldown_ms) ? r : 0;
-                i > 0 && o.h.dispatch({
+                i > 0 && s.h.dispatch({
                     type: "SLOWMODE_SET_COOLDOWN",
                     channelId: t,
                     slowmodeType: d.R.SendMessage,
                     cooldownMs: i
-                }), a > 0 && o.h.dispatch({
+                }), a > 0 && s.h.dispatch({
                     type: "SLOWMODE_SET_COOLDOWN",
                     channelId: t,
                     slowmodeType: d.R.CreateThread,
@@ -106,7 +106,7 @@ function A(e) {
 
 function I(e, t) {
     return setTimeout(() => {
-        o.h.dispatch({
+        s.h.dispatch({
             type: "TYPING_STOP",
             channelId: e,
             userId: t
@@ -166,7 +166,7 @@ class R extends(i = a.Ay.Store) {
     }
 }
 p(R, "displayName", "TypingStore");
-let P = new R(o.h, {
+let P = new R(s.h, {
     TYPING_START: S,
     TYPING_STOP: T,
     TYPING_START_LOCAL: O,

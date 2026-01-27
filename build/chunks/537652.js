@@ -2,31 +2,31 @@
 /** chunk id: 537652, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(106666);
-let o = e => {
+    o = n(106666);
+let s = e => {
     let {
         message: t,
         className: n,
         noResultsImageURL: i,
-        forceLightTheme: o,
+        forceLightTheme: s,
         suggestions: l
     } = e, c = null != i ? {
         backgroundImage: "url(".concat(i, ")")
     } : {};
     return (0, r.jsx)("div", {
         className: a()({
-            [s.VC]: o
+            [o.VC]: s
         }, n),
         children: (0, r.jsxs)("div", {
-            className: s.iE,
+            className: o.iE,
             children: [(0, r.jsx)("div", {
-                className: s.Gg,
+                className: o.Gg,
                 style: c
             }), (0, r.jsx)("div", {
                 children: t

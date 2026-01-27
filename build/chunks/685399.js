@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(429913),
-    s = n(290863),
-    o = n(287809),
+    o = n(290863),
+    s = n(287809),
     l = n(403362),
     c = n(933958),
     u = n(969151);
@@ -75,13 +75,13 @@ function m(e) {
 
 function g(e, t) {
     let n = e.map(e => e.applicationId),
-        s = (0, a.A)(n),
+        o = (0, a.A)(n),
         c = new Set([]);
     for (let t of e)
         for (let e of t.userIds) c.add(e);
-    let u = (0, i.yK)([o.default], () => {
+    let u = (0, i.yK)([s.default], () => {
         let e = [];
-        for (let t of c) e.push(o.default.getUser(t));
+        for (let t of c) e.push(s.default.getUser(t));
         return e
     }, [c]);
     return r.useMemo(() => {
@@ -89,7 +89,7 @@ function g(e, t) {
         return u.forEach(e => {
             null != e && n.set(e.id, e)
         }), e.map((e, r) => {
-            let i = s[r],
+            let i = o[r],
                 a = [];
             if (null != a)
                 for (let r of e.userIds) {
@@ -105,15 +105,15 @@ function g(e, t) {
                 userParticipantAvatarUrls: a
             }
         }).filter(l.Vq)
-    }, [e, s, u, t])
+    }, [e, o, u, t])
 }
 
 function E(e) {
-    return (0, i.bG)([s.A], () => {
+    return (0, i.bG)([o.A], () => {
         let t = new Map;
         return e.forEach(e => {
             var n;
-            let r = s.A.findActivity(null == e ? void 0 : e.embeddedActivity.userIds.values().next().value, t => {
+            let r = o.A.findActivity(null == e ? void 0 : e.embeddedActivity.userIds.values().next().value, t => {
                 var n;
                 return t.application_id === (null == e || null == (n = e.application) ? void 0 : n.id)
             });

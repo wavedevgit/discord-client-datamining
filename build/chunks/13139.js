@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(397927),
     i = n(73153),
     a = n(15285),
-    s = n(616356),
-    o = n(430452),
+    o = n(616356),
+    s = n(430452),
     l = n(431767),
     c = n(366598),
     u = n(647785),
@@ -32,10 +32,10 @@ class E extends c.A {
         })
     }
     applyNativeClipsSettings(e) {
-        if (!(0, f.A)(o.A)) return;
+        if (!(0, f.A)(s.A)) return;
         let t = d.A.getSettings(),
             n = (0, p.TD)(),
-            r = o.A.getMediaEngine();
+            r = s.A.getMediaEngine();
         if (r.setClipBufferLength(n ? t.clipsLength / 1e3 : 0), r.setClipsMaxPendingTasks(u.A.getConfig({
                 location: "applyNativeClipsSettings"
             }).count), r.setClipsBufferSize(l.A.getConfig({
@@ -44,8 +44,8 @@ class E extends c.A {
             let {
                 frameRate: n,
                 resolution: i
-            } = t.clipsQuality, a = i <= 480 ? i / 3 * 4 : i / 9 * 16, s = i;
-            r.setClipsQualitySettings(a, s, n) || null == e || this.fireClipsInitEvent()
+            } = t.clipsQuality, a = i <= 480 ? i / 3 * 4 : i / 9 * 16, o = i;
+            r.setClipsQualitySettings(a, o, n) || null == e || this.fireClipsInitEvent()
         }
     }
     handleClipsInitOnToggleDetection(e) {
@@ -57,7 +57,7 @@ class E extends c.A {
         null == t || (e.added.find(e => e.pid === t.pid) ? setTimeout(() => this.fireClipsInitEvent(), h.dV) : this.fireClipsInitEvent())
     }
     fireClipsInitEvent() {
-        if (!(0, p.TD)() || null != s.A.getCurrentUserActiveStream()) return;
+        if (!(0, p.TD)() || null != o.A.getCurrentUserActiveStream()) return;
         let e = a.Ay.getVisibleGame();
         if ((null == e ? void 0 : e.pid) == null || (null == e ? void 0 : e.windowHandle) == null || null == e.name || "" === e.name) return;
         let t = d.A.getSettings();

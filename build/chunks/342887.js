@@ -3,16 +3,16 @@
 "use strict";
 n.d(t, {
     DF: () => P,
-    HD: () => j,
+    HD: () => M,
     g8: () => R,
-    md: () => M,
-    st: () => L
+    md: () => j,
+    st: () => x
 }), n(896048), n(65821), n(492834);
 var r = n(735438),
     i = n(562465),
     a = n(205693),
-    s = n(933681),
-    o = n(73153),
+    o = n(933681),
+    s = n(73153),
     l = n(626584),
     c = n(430452),
     u = n(954571),
@@ -68,7 +68,7 @@ function I(e, t) {
 let S = new l.A("VoiceFilterActionCreators"),
     T = 1e3,
     C = (0, r.debounce)(() => {
-        o.h.dispatch({
+        s.h.dispatch({
             type: "VOICE_FILTER_LAGGING"
         })
     }, T, {
@@ -85,11 +85,11 @@ function R(e) {
             fileName: i
         } = e,
         a = m.A.getModelState(r),
-        s = w.get(r);
-    if (null != s) return s;
+        o = w.get(r);
+    if (null != o) return o;
     if ((null == a ? void 0 : a.status) === g.u.DOWNLOADED) return Promise.resolve();
     if ((null == a ? void 0 : a.status) === g.u.DOWNLOADING) return Promise.reject(Error("Voice filter model is downloading but not in active downloads map"));
-    o.h.dispatch(v({
+    s.h.dispatch(v({
         type: "VOICE_FILTER_DOWNLOAD_STARTED"
     }, e));
     let l = _.Ay.downloadVoiceFilterFile(n, i, t => {
@@ -97,7 +97,7 @@ function R(e) {
             downloadedBytes: n,
             totalBytes: r
         } = t;
-        o.h.dispatch(I(v({
+        s.h.dispatch(I(v({
             type: "VOICE_FILTER_DOWNLOAD_PROGRESS"
         }, e), {
             downloadedBytes: n,
@@ -114,7 +114,7 @@ function R(e) {
                 reason: null != (a = null == t ? void 0 : t.reason) ? a : null
             })
         }
-        o.h.dispatch(I(v({
+        s.h.dispatch(I(v({
             type: "VOICE_FILTER_FILE_READY"
         }, e), {
             analyticsContext: t
@@ -139,7 +139,7 @@ function R(e) {
                 }
             })
         }
-        o.h.dispatch(I(v({
+        s.h.dispatch(I(v({
             type: "VOICE_FILTER_DOWNLOAD_FAILED"
         }, e), {
             error: t
@@ -151,20 +151,20 @@ function R(e) {
 }
 async function P(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null;
-    await M();
+    await j();
     let n = performance.now();
     try {
         let r = _.Ay.getVoiceFilters();
         S.info("Setting voice filter in native module:", e), await r.setVoiceFilter({
             name: e
-        }), o.h.dispatch({
+        }), s.h.dispatch({
             type: "VOICE_FILTER_APPLIED",
             voiceFilterId: e,
             analyticsContext: t,
             activationDurationMs: performance.now() - n
         })
     } catch (t) {
-        S.error("failed to set voice filter", t), o.h.dispatch({
+        S.error("failed to set voice filter", t), s.h.dispatch({
             type: "VOICE_FILTER_APPLY_FAILED",
             voiceFilterId: e,
             error: t
@@ -185,12 +185,12 @@ async function D(e) {
         }),
         r = n.text,
         a = n.body,
-        s = n.headers["x-discord-catalog-signature"];
+        o = n.headers["x-discord-catalog-signature"];
     if (null == a.models) throw Error("Voice filters catalog response is empty");
-    if (null == s) throw Error("Voice filters catalog signature is missing");
-    return await e.setCatalog(r, s), a
+    if (null == o) throw Error("Voice filters catalog signature is missing");
+    return await e.setCatalog(r, o), a
 }
-async function x(e) {
+async function L(e) {
     if (!_.Ay.canCheckVoiceFilterFilesExist()) return;
     let t = Object.keys(e.models).map(e => ({
             id: e,
@@ -206,16 +206,16 @@ async function x(e) {
         status: t ? g.u.DOWNLOADED : g.u.MISSING
     };
     let i = t.map(e => e.fileName);
-    return (0, s.YV)(i) && await (0, E.a)(i), r
+    return (0, o.YV)(i) && await (0, E.a)(i), r
 }
-async function L() {
+async function x() {
     if (!m.A.isNativeModuleLoaded()) return void S.info("Voice Filter catalog refresh ignored, module not loaded.");
     if (!N) try {
         N = !0;
         let e = _.Ay.getVoiceFilters(),
             t = await D(e),
-            n = null == m.A.getCatalogLastFetchTime() ? await x(t) : void 0;
-        await o.h.dispatch({
+            n = null == m.A.getCatalogLastFetchTime() ? await L(t) : void 0;
+        await s.h.dispatch({
             type: "VOICE_FILTER_CATALOG_FETCH_SUCCESS",
             catalog: t,
             initialModelState: n
@@ -224,7 +224,7 @@ async function L() {
         S.warn("Failed to refresh voice filters catalog: ".concat(e.message)), u.default.track(b.HAw.VOICE_FILTER_ERROR, {
             error_message: "Failed to refresh voice filters catalog",
             cause: (0, d.P)(e)
-        }), p.A.captureException(e), await o.h.dispatch({
+        }), p.A.captureException(e), await s.h.dispatch({
             type: "VOICE_FILTER_CATALOG_FETCH_FAILED"
         })
     } finally {
@@ -232,32 +232,32 @@ async function L() {
     }
 }
 
-function j() {
-    o.h.dispatch({
+function M() {
+    s.h.dispatch({
         type: "VOICE_FILTER_DOWNLOAD_CANCELED"
     })
 }
-async function M() {
+async function j() {
     if (!(m.A.isNativeModuleLoaded() || m.A.isNativeModuleLoading()) && !__OVERLAY__) {
-        if (!(0, f.isWindows)() && !(0, f.isMac)()) return void o.h.dispatch({
+        if (!(0, f.isWindows)() && !(0, f.isMac)()) return void s.h.dispatch({
             type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
             state: g.R.UNSUPPORTED
         });
         try {
-            o.h.dispatch({
+            s.h.dispatch({
                 type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
                 state: g.R.LOADING
             }), await _.Ay.ensureModule("discord_voice_filters");
             let t = _.Ay.getVoiceFilters();
             await t.setupResources(), void 0 !== t.setVoiceFilterLaggingCallback && await t.setVoiceFilterLaggingCallback(C), void 0 !== t.setVoiceFilterReadyCallback && await t.setVoiceFilterReadyCallback(e => {
-                o.h.dispatch({
+                s.h.dispatch({
                     type: "VOICE_FILTER_READY",
                     name: e
                 })
-            }), await o.h.dispatch({
+            }), await s.h.dispatch({
                 type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
                 state: g.R.LOADED
-            }), await L();
+            }), await x();
             let n = c.A.getMostRecentlyRequestedVoiceFilter();
             if (null != n) {
                 var e;
@@ -275,7 +275,7 @@ async function M() {
             S.warn("Failed to load Voice Filters module: ".concat(e.message)), u.default.track(b.HAw.VOICE_FILTER_ERROR, {
                 error_message: "Failed to load Voice Filters module",
                 cause: (0, d.P)(e)
-            }), p.A.captureException(e), o.h.dispatch({
+            }), p.A.captureException(e), s.h.dispatch({
                 type: "VOICE_FILTER_NATIVE_MODULE_STATE_CHANGE",
                 state: g.R.FAILED
             })

@@ -15,7 +15,7 @@ e.exports = function(e) {
             className: "variable",
             begin: "\\$" + r
         },
-        s = {
+        o = {
             className: "string",
             contains: [e.BACKSLASH_ESCAPE, a],
             variants: [{
@@ -29,7 +29,7 @@ e.exports = function(e) {
     return {
         name: "Puppet",
         aliases: ["pp"],
-        contains: [n, a, s, {
+        contains: [n, a, o, {
             beginKeywords: "class",
             end: "\\{|;",
             illegal: /=/,
@@ -55,7 +55,7 @@ e.exports = function(e) {
                 end: /\}/,
                 keywords: t,
                 relevance: 0,
-                contains: [s, n, {
+                contains: [o, n, {
                     begin: "[a-zA-Z_]+\\s*=>",
                     returnBegin: !0,
                     end: "=>",

@@ -1,15 +1,14 @@
 /** Chunk was on 86142 **/
 /** chunk id: 341371, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r, i, s = n(311907),
     l = n(73153);
 let a = !1,
     o = null,
     c = null;
-class u extends(i = s.Ay.Store) {
+class d extends(i = s.Ay.Store) {
     getState() {
         return {
             verifySuccess: a,
@@ -17,13 +16,13 @@ class u extends(i = s.Ay.Store) {
             redirectGuildId: c
         }
     }
-}(r = "displayName") in u ? Object.defineProperty(u, r, {
+}(r = "displayName") in d ? Object.defineProperty(d, r, {
     value: "HubEmailVerificationStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : u[r] = "HubEmailVerificationStore";
-let d = new u(l.h, {
+}) : d[r] = "HubEmailVerificationStore";
+let u = new d(l.h, {
     HUB_VERIFY_EMAIL_SUCCESS: function(e) {
         let {
             guildId: t

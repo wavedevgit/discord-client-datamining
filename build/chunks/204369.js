@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(919395),
     i = n(486020),
     a = n(927578),
-    s = n(289173),
-    o = n(788868);
+    o = n(289173),
+    s = n(788868);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -37,14 +37,14 @@ class u {
     }
     get gameWidgets() {
         var e;
-        return null == (e = this._userProfile.widgets) ? void 0 : e.filter(s.fu)
+        return null == (e = this._userProfile.widgets) ? void 0 : e.filter(o.fu)
     }
     get primaryColor() {
         var e, t;
         return null != (e = null == (t = this.themeColors) ? void 0 : t[0]) ? e : this.accentColor
     }
     get canUsePremiumProfileCustomization() {
-        return a.Ay.isPremiumAtLeast(this.premiumType, o.PremiumTypes.TIER_2)
+        return a.Ay.isPremiumAtLeast(this.premiumType, s.PremiumTypes.TIER_2)
     }
     get canEditThemes() {
         return this.canUsePremiumProfileCustomization

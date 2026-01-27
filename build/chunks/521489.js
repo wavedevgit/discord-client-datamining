@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(110259),
     c = n(158954),
     u = n(397927),
@@ -89,16 +89,16 @@ function E(e) {
                     className: f.nw,
                     children: (0, r.jsx)(u.NPJ, {
                         theme: A,
-                        children: e => (0, r.jsx)(o.animated.div, {
+                        children: e => (0, r.jsx)(s.animated.div, {
                             "data-mana-component": "layer-modal",
-                            className: s()(p.container, f.yl, e),
+                            className: o()(p.container, f.yl, e),
                             style: S,
                             children: (0, r.jsx)("div", {
                                 className: f.jE,
                                 children: (0, r.jsx)(u.NPJ, {
                                     theme: I,
                                     children: e => (0, r.jsx)("div", {
-                                        className: s()(e, f.h_),
+                                        className: o()(e, f.h_),
                                         children: b
                                     })
                                 })

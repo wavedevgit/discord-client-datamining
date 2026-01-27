@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927);
+    o = n.n(a),
+    s = n(397927);
 n(14115);
 var l = n(305003),
     c = n(626031),
@@ -63,25 +63,25 @@ let _ = () => (0, r.jsx)("img", {
         }, [D, C, T]), (0, i.useEffect)(() => {
             N && !D && C(!1)
         }, [D, N]);
-        let x = D || T,
-            L = T ? null : a,
-            [j, M] = (0, i.useState)(null),
+        let L = D || T,
+            x = T ? null : a,
+            [M, j] = (0, i.useState)(null),
             k = (0, i.useRef)(null),
             U = (0, i.useCallback)(() => {
-                k.current = null, M(null)
+                k.current = null, j(null)
             }, []),
             G = (0, i.useCallback)(e => {
-                let t = j === k.current;
-                e > 0 && ("earn" !== j || !t) && M("earn")
-            }, [M, j]),
-            V = {
-                currentAnimationType: j,
+                let t = M === k.current;
+                e > 0 && ("earn" !== M || !t) && j("earn")
+            }, [j, M]),
+            F = {
+                currentAnimationType: M,
                 animationTypeRef: k,
                 onSetAnimationDurationMS: P
             };
-        return (0, r.jsx)(o.DUT, {
-            onClick: x ? void 0 : E,
-            className: s()(d.vk, {
+        return (0, r.jsx)(s.DUT, {
+            onClick: L ? void 0 : E,
+            className: o()(d.vk, {
                 [d.r9]: b
             }),
             id: null != n ? n : h,
@@ -90,20 +90,20 @@ let _ = () => (0, r.jsx)("img", {
                 onMouseEnter: b ? void 0 : () => I(!0),
                 onMouseLeave: b ? void 0 : () => I(!1),
                 ref: t,
-                className: s()(d.kL, S, v, {
-                    [d.En]: x,
+                className: o()(d.kL, S, v, {
+                    [d.En]: L,
                     [d.dA]: O,
                     [d.r9]: b
                 }),
                 children: [(0, r.jsx)("div", {
-                    className: s()(d.hr, x ? d.nr : void 0),
-                    children: (0, r.jsx)(u.Ay, p({}, V))
+                    className: o()(d.hr, L ? d.nr : void 0),
+                    children: (0, r.jsx)(u.Ay, p({}, F))
                 }), (0, r.jsx)(c.A, {
-                    value: L,
+                    value: x,
                     onValueChange: G,
                     onValueReached: U,
                     targetTotalCounterTime: R,
-                    className: x ? d.F : void 0
+                    className: L ? d.F : void 0
                 }), g && (0, r.jsx)(_, {})]
             })
         })

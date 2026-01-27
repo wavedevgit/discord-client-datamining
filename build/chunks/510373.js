@@ -2,14 +2,14 @@
 /** chunk id: 510373, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 }), n(228524);
 var r = n(64700),
     i = n(71526);
 let a = Symbol();
 
-function s(e, t, n) {
-    let s = (0, i.A)(e),
-        o = (0, r.useRef)(a);
-    return o.current === a ? o.current = t : n(o.current, t) || (s.current = e(), o.current = t), s.current
+function o(e, t, n) {
+    let o = (0, i.A)(e),
+        s = (0, r.useRef)(a);
+    return s.current === a ? s.current = t : n(s.current, t) || (o.current = e(), s.current = t), o.current
 }

@@ -4,7 +4,7 @@
 n.d(t, {
     Ay: () => c,
     m1: () => l,
-    n_: () => o
+    n_: () => s
 }), n(896048);
 var r = n(315069),
     i = n(788868);
@@ -17,7 +17,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class s extends r.A {
+class o extends r.A {
     static createFromServer(e) {
         let t = {};
         return null != e.prices && (t = Object.keys(e.prices).reduce((t, n) => {
@@ -26,14 +26,14 @@ class s extends r.A {
             return t[n] = {
                 countryPrices: {
                     countryCode: r.country_prices.country_code,
-                    prices: r.country_prices.prices.map(t => o(t, e.tax_inclusive))
+                    prices: r.country_prices.prices.map(t => s(t, e.tax_inclusive))
                 },
                 paymentSourcePrices: Object.entries(r.payment_source_prices).reduce((t, n) => {
                     let [r, i] = n;
-                    return t[r] = i.map(t => o(t, e.tax_inclusive)), t
+                    return t[r] = i.map(t => s(t, e.tax_inclusive)), t
                 }, {})
             }, t
-        }, {})), new s({
+        }, {})), new o({
             id: e.id,
             name: e.name,
             interval: e.interval,
@@ -87,7 +87,7 @@ class s extends r.A {
     }
 }
 
-function o(e, t) {
+function s(e, t) {
     return {
         amount: e.amount,
         currency: e.currency,
@@ -99,4 +99,4 @@ function o(e, t) {
 function l(e) {
     return [i.gD.NONE_MONTH, i.gD.NONE_3_MONTH, i.gD.NONE_6_MONTH, i.gD.NONE_YEAR].includes(e)
 }
-let c = s
+let c = o

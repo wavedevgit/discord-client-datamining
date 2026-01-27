@@ -4,8 +4,8 @@
 var r = n(221015),
     i = n(446474),
     a = n(101968),
-    s = n(406208),
-    o = n(151860),
+    o = n(406208),
+    s = n(151860),
     l = n(503199),
     c = n(524152),
     u = n(327036),
@@ -32,8 +32,8 @@ e.exports = function(e, t, n) {
     if (S) m = e.iterator;
     else if (T) m = e;
     else {
-        if (!(g = d(e))) throw new p(s(e) + " is not iterable");
-        if (o(g)) {
+        if (!(g = d(e))) throw new p(o(e) + " is not iterable");
+        if (s(g)) {
             for (E = 0, y = l(e); y > E; E++)
                 if ((b = R(e[E])) && c(h, b)) return b;
             return new _(!1)

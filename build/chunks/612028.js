@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 612028, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     lA: "connectionsContainer_c7f964",
     U$: "accountButtonInner_c7f964",

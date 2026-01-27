@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n(73153),
     a = n(378939),
-    s = n(843472),
-    o = n(334738),
+    o = n(843472),
+    s = n(334738),
     l = n(187508),
     c = n(976860),
     u = n(222823),
@@ -82,12 +82,12 @@ function I(e) {
         let e = u.Ay.lastMessageId(i),
             a = null != e && d.default.age(e) > _.V$;
         if (n.length >= b || a) break;
-        let o = s.A.fetchMessages({
+        let s = o.A.fetchMessages({
             channelId: i,
             limit: _.EM,
             feature: _.j5
         });
-        !1 !== o && null != o && n.push(o)
+        !1 !== s && null != s && n.push(s)
     }
     return n
 }
@@ -96,23 +96,23 @@ async function S(e) {
         preload: t = !1
     } = e, n = E(e, ["preload"]), r = Date.now(), a = p.A.getNotifyingChannelIds();
     if (null == a) return;
-    let s = t ? [] : I(a),
-        o = l.Ay.getMentions(),
-        c = null != o && o.length > 0 ? o[o.length - 1].id : null,
+    let o = t ? [] : I(a),
+        s = l.Ay.getMentions(),
+        c = null != s && s.length > 0 ? s[s.length - 1].id : null,
         u = !1;
-    if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (s.push(v(c)), u = !0), 0 === s.length) return void i.h.dispatch({
+    if (!l.Ay.hasMore && l.Ay.hasLoadedEver || l.Ay.loading || (o.push(v(c)), u = !0), 0 === o.length) return void i.h.dispatch({
         type: "NOTIFICATIONS_INBOX_LOAD_MORE_INBOX_SUCCESS",
         preload: t,
         hasMoreToLoad: !1
     });
     try {
         var d;
-        await Promise.all(s);
+        await Promise.all(o);
         let e = {
             timeToLoad: Date.now() - r,
             loadingTrigger: null != (d = n.loadingTrigger) ? d : _.VA.UNKNOWN,
             viewId: n.viewId,
-            channelsFetched: s.length - !!u,
+            channelsFetched: o.length - !!u,
             mentionsFetched: u
         };
         t && (0, f.P3)(e), i.h.dispatch({
@@ -152,7 +152,8 @@ let T = {
             isUnread: r,
             isSidebar: a,
             viewId: l,
-            track: u = !0
+            track: u = !0,
+            autoTriggeredOnInboxOpen: d = !1
         } = e;
         i.h.dispatch({
             type: "NOTIFICATIONS_INBOX_ITEM_CLICK",
@@ -163,12 +164,13 @@ let T = {
             interactionType: f.X8.CLICK,
             message: t,
             viewId: l
-        }), r && o.ack(t.channel_id, {
+        }), r && s.ack(t.channel_id, {
             section: h.JJy.INBOX,
             object: h.ZSU.ACK_MESSAGE_VIEWED,
             objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-        }, !0, void 0, t.id), s.A.trackJump(n.id, t.id, _.XU);
-        let d = a ? h.gNP : n.guild_id;
-        (0, c.pX)(h.BVt.CHANNEL(d, n.id, t.id))
+        }, !0, void 0, t.id), o.A.trackJump(n.id, t.id, _.XU);
+        let p = a ? h.gNP : n.guild_id,
+            m = h.BVt.CHANNEL(p, n.id, t.id);
+        d && a ? (0, c.bG)(m) : (0, c.pX)(m)
     }
 }

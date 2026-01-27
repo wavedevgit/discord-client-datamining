@@ -17,7 +17,7 @@ function a(e, t, n) {
     return t && i(e.prototype, t), n && i(e, n), e
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,11 +26,11 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 n.d(t, {
-    x: () => o
+    x: () => s
 });
-var o = function() {
+var s = function() {
     function e(t) {
-        r(this, e), s(this, "item", void 0), s(this, "config", void 0), this.config = t, this.item = {}, this.initializeExposedProperties()
+        r(this, e), o(this, "item", void 0), o(this, "config", void 0), this.config = t, this.item = {}, this.initializeExposedProperties()
     }
     return a(e, [{
         key: "initializeExposedProperties",

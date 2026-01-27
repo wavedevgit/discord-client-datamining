@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(375499),
-    o = n(937773),
+    o = n(375499),
+    s = n(937773),
     l = n(151271),
     c = n(135261),
     u = n(307731),
@@ -72,7 +72,7 @@ function m(e) {
         let {
             closePopout: t
         } = e;
-        return (0, r.jsx)(o.A, {
+        return (0, r.jsx)(s.A, {
             persistSearch: !0,
             channel: _,
             closePopout: t,
@@ -110,7 +110,7 @@ function m(e) {
                 let {
                     isShown: n
                 } = t;
-                return (0, r.jsx)(s.A, h(p({}, e), {
+                return (0, r.jsx)(o.A, h(p({}, e), {
                     ref: g,
                     active: n,
                     className: d.Z8,

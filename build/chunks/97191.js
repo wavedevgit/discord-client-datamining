@@ -2,7 +2,7 @@
 /** chunk id: 97191, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    c: () => s
+    c: () => o
 }), n(896048), n(638769), n(321073);
 var r = n(52724);
 
@@ -34,7 +34,7 @@ function a(e) {
         y: n
     }
 }
-class s {
+class o {
     disconnect() {
         window.removeEventListener("keydown", this.handleDraggedElementKeyDown, {
             capture: !0
@@ -77,8 +77,8 @@ class s {
             return this.manager.getMonitor().canDropOnTarget(n) && e.push(r), e
         }, [])
     }
-    constructor(e, t, n, a, s) {
-        i(this, "targetNodes", void 0), i(this, "manager", void 0), i(this, "previewer", void 0), i(this, "announcer", void 0), i(this, "currentHoveredNode", void 0), i(this, "focusManager", void 0), i(this, "actions", void 0), i(this, "monitor", void 0), i(this, "handleDraggedElementKeyDown", void 0), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = s, this.handleDraggedElementKeyDown = async e => {
+    constructor(e, t, n, a, o) {
+        i(this, "targetNodes", void 0), i(this, "manager", void 0), i(this, "previewer", void 0), i(this, "announcer", void 0), i(this, "currentHoveredNode", void 0), i(this, "focusManager", void 0), i(this, "actions", void 0), i(this, "monitor", void 0), i(this, "handleDraggedElementKeyDown", void 0), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = o, this.handleDraggedElementKeyDown = async e => {
             switch (e.key) {
                 case "ArrowUp":
                 case "ArrowLeft":

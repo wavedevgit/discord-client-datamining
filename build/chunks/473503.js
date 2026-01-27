@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(311907),
-    s = n(562465),
-    o = n(73153),
+    o = n(562465),
+    s = n(73153),
     l = n(734057),
     c = n(661191),
     u = n(207777),
@@ -132,14 +132,14 @@ async function T(e) {
             body: {
                 threads: i
             }
-        } = await s.Bo.post({
+        } = await o.Bo.post({
             url: f.Rsh.FORUM_POSTS(e),
             body: {
                 thread_ids: t
             },
             rejectWithError: !0
         });
-        o.h.dispatch({
+        s.h.dispatch({
             type: "LOAD_FORUM_POSTS",
             guildId: r,
             threads: i

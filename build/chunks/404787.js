@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(279194),
     a = n(506774),
-    s = n(77729),
-    o = n(954571),
+    o = n(77729),
+    s = n(954571),
     l = n(837921),
     c = n(545459),
     u = n(652215);
@@ -20,9 +20,9 @@ function d(e) {
 
 function f() {
     return r.useEffect(() => {
-        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== a.w.get(i.qx) && l.Ay.supportsFeature(u.BYE.USER_DATA_CACHE) && (c._r(), s.A.userDataCache.getCached().then(e => {
+        window.location.origin === window.GLOBAL_ENV.MIGRATION_DESTINATION_ORIGIN && !0 !== a.w.get(i.qx) && l.Ay.supportsFeature(u.BYE.USER_DATA_CACHE) && (c._r(), o.A.userDataCache.getCached().then(e => {
             if (null == e) {
-                c.Py(), o.default.track(u.HAw.DOMAIN_MIGRATED, {
+                c.Py(), s.default.track(u.HAw.DOMAIN_MIGRATED, {
                     success: !1,
                     has_data: !1
                 }, {
@@ -40,13 +40,13 @@ function f() {
                 try {
                     a.w.set(t, JSON.parse(n))
                 } catch (e) {}
-            })), o.default.track(u.HAw.DOMAIN_MIGRATED, {
+            })), s.default.track(u.HAw.DOMAIN_MIGRATED, {
                 success: !0,
                 current_is_newer: f,
                 has_data: n
             }, {
                 flush: !0
-            }), a.w.set(i.qx, !0), s.A.userDataCache.deleteCache(), c.Yw()
+            }), a.w.set(i.qx, !0), o.A.userDataCache.deleteCache(), c.Yw()
         }))
     }, []), null
 }

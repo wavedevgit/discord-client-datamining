@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 92911, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(442433),
     p = n(565645),
     f = n(964486),
-    b = n(775602),
-    h = n(47167),
+    h = n(775602),
+    b = n(47167),
     x = n(713654),
     j = n(508675),
     _ = n(263063),
@@ -76,7 +76,7 @@ let M = "WELCOME_CHANNEL",
                 guildId: a,
                 welcomeChannel: o,
                 onEdit: f,
-                onChannelReorder: b,
+                onChannelReorder: h,
                 isDropHovered: _,
                 index: O
             } = e,
@@ -85,7 +85,7 @@ let M = "WELCOME_CHANNEL",
             A = (0, u.bG)([j.Ay], () => null != o.emoji_id ? j.Ay.getUsableCustomEmojiById(o.emoji_id) : null),
             S = null != y && I.MJ(P.xBc.VIEW_CHANNEL, y),
             T = null != (t = (0, x.gU)(y)) ? t : g.N$i,
-            C = (0, h.Ay)(y, !1),
+            C = (0, b.Ay)(y, !1),
             R = () => {
                 (0, g.mMO)(async () => {
                     let {
@@ -108,16 +108,16 @@ let M = "WELCOME_CHANNEL",
                     index: O
                 },
                 end: (e, t) => {
-                    null == e || t.didDrop() || b(e.channel, null, !0)
+                    null == e || t.didDrop() || h(e.channel, null, !0)
                 }
             }),
             [, B] = (0, d.H)({
                 accept: M,
                 hover: e => {
-                    b(e.channel, O, !1)
+                    h(e.channel, O, !1)
                 },
                 drop: e => {
-                    b(e.channel, O, !0)
+                    h(e.channel, O, !0)
                 }
             });
         return i.useLayoutEffect(() => (U(B(v)), () => {
@@ -148,7 +148,7 @@ let M = "WELCOME_CHANNEL",
                     return t => (0, r.jsx)(e, k(L({}, t), {
                         guildId: a,
                         welcomeChannel: o,
-                        onChannelReorder: b,
+                        onChannelReorder: h,
                         onShowDeleteModal: R,
                         index: O
                     }))
@@ -186,7 +186,7 @@ let M = "WELCOME_CHANNEL",
         } = e, {
             welcomeSettings: l,
             originalWelcomeSettings: s
-        } = (0, u.bG)([A.A], () => A.A.getSettingsProps()), a = (0, u.bG)([b.A], () => b.A.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(!1), [h, x] = i.useState(!1), {
+        } = (0, u.bG)([A.A], () => A.A.getSettingsProps()), a = (0, u.bG)([h.A], () => h.A.useReducedMotion), [c, d] = i.useState(null), [m, p] = i.useState(!1), [b, x] = i.useState(!1), {
             description: j,
             channels: E,
             enabled: I
@@ -264,7 +264,7 @@ let M = "WELCOME_CHANNEL",
                 onToggle: I || (null == E ? void 0 : E.length) !== 0 ? () => {
                     M(!I)
                 } : void 0,
-                animateStatus: h,
+                animateStatus: b,
                 firstLine: I ? D.intl.string(D.t.JbB7Ql) : D.intl.string(D.t["/bd0Qv"]),
                 secondLine: I ? D.intl.string(D.t.TA1g7z) : D.intl.string(D.t.nc6r1B)
             }), (0, r.jsxs)("div", {

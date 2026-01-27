@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(650682),
     i = n(825913),
     a = n(913711),
-    s = n(498430),
-    o = n(494077),
+    o = n(498430),
+    s = n(494077),
     l = n(723906),
     c = n(290424),
     u = n(803082),
@@ -29,7 +29,7 @@ let p = (0, f.createContext)(null),
             E = (0, l.Bi)();
         d || (d = E);
         let y = n ? n.expandedKeys.has(d) : e.isExpanded,
-            b = (0, o.E)({
+            b = (0, s.E)({
                 ...e,
                 isExpanded: y,
                 onExpandedChange(t) {
@@ -50,7 +50,7 @@ let p = (0, f.createContext)(null),
             {
                 isFocusVisible: S,
                 focusProps: T
-            } = (0, s.o)({
+            } = (0, o.o)({
                 within: !0
             }),
             C = (0, i.Sl)({
@@ -94,11 +94,11 @@ let p = (0, f.createContext)(null),
             role: n = "group"
         } = e, {
             panelProps: a,
-            panelRef: o
+            panelRef: s
         } = (0, f.useContext)(m), {
             isFocusVisible: l,
             focusProps: p
-        } = (0, s.o)({
+        } = (0, o.o)({
             within: !0
         }), _ = (0, i.Sl)({
             ...e,
@@ -111,7 +111,7 @@ let p = (0, f.createContext)(null),
         });
         return f.createElement("div", {
             ...(0, u.v)(h, _, a, p),
-            ref: (0, d.P)(t, o),
+            ref: (0, d.P)(t, s),
             role: n,
             "data-focus-visible-within": l || void 0
         }, f.createElement(i.Kq, {

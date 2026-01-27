@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(522305),
-    s = n(627363),
-    o = n(625180),
+    o = n(627363),
+    s = n(625180),
     l = n(91242),
     c = n(207371),
     u = n(933958),
@@ -23,11 +23,11 @@ function p(e) {
         runAfterLaunchAttempt: _
     } = e, {
         data: h
-    } = (0, s.YY)(t), m = (0, i.bG)([u.Ay], () => u.Ay.getCurrentEmbeddedActivity()), g = (0, i.bG)([l.A], () => l.A.getConnectedFrame()), E = (0, c.e)(h);
+    } = (0, o.YY)(t), m = (0, i.bG)([u.Ay], () => u.Ay.getCurrentEmbeddedActivity()), g = (0, i.bG)([l.A], () => l.A.getConnectedFrame()), E = (0, c.e)(h);
     return r.useCallback(async () => {
         if (null == t || null == h) return;
         let e = null != m && m.applicationId === t;
-        if (null != g && g.applicationId === t) return void o.A.updateFrameLayoutMode({
+        if (null != g && g.applicationId === t) return void s.A.updateFrameLayoutMode({
             applicationId: g.applicationId,
             layoutMode: f.y.FOCUSED
         });
@@ -38,7 +38,7 @@ function p(e) {
         }
         null == p || p();
         try {
-            if (E) await o.A.launchFrame({
+            if (E) await s.A.launchFrame({
                 applicationId: t
             });
             else {

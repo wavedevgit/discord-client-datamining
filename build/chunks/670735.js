@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n.n(a),
-    o = n(258873),
+    o = n.n(a),
+    s = n(258873),
     l = n(622242),
     c = n(731738),
     u = n(70298),
@@ -57,10 +57,10 @@ function T() {
         loading: e
     })
 }
-let C = s().throttle(e => {
+let C = o().throttle(e => {
     m.A.increment({
         name: c.K.APP_CRASHED,
-        tags: ["reason:".concat(o.J.UNHANDLED_JS_ERROR), "level:".concat(l.k.FATAL), "modded_client:".concat(e)]
+        tags: ["reason:".concat(s.J.UNHANDLED_JS_ERROR), "level:".concat(l.k.FATAL), "modded_client:".concat(e)]
     }, !0)
 }, 100, {
     trailing: !1

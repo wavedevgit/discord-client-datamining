@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(311907),
-    s = n(73153),
-    o = n(287809),
+    o = n(73153),
+    s = n(287809),
     l = n(622543);
 let c = null,
     u = null,
@@ -26,7 +26,7 @@ function m(e) {
         widgets: t
     } = e;
     if (c = t, null === u) {
-        let e = o.default.getCurrentUser();
+        let e = s.default.getCurrentUser();
         if (null != e) {
             var n;
             let t = l.A.getUserProfile(e.id);
@@ -75,7 +75,7 @@ function I(e) {
 }
 class S extends a.Ay.Store {
     initialize() {
-        this.waitFor(o.default)
+        this.waitFor(s.default)
     }
     getPendingWidgets() {
         return c
@@ -104,8 +104,8 @@ class S extends a.Ay.Store {
         for (let [e, r] of t) n.has(e) || i.push(r);
         let a = !1;
         for (let t = 0; t < e.length; t++) {
-            var s, o;
-            if ((null == (s = e[t]) ? void 0 : s.id) !== (null == (o = u[t]) ? void 0 : o.id)) {
+            var o, s;
+            if ((null == (o = e[t]) ? void 0 : o.id) !== (null == (s = u[t]) ? void 0 : s.id)) {
                 a = !0;
                 break
             }
@@ -156,7 +156,7 @@ class S extends a.Ay.Store {
         return f
     }
 }
-let T = new S(s.h, {
+let T = new S(o.h, {
     WIDGET_PENDING_SET: m,
     WIDGET_PENDING_SAVE_START: O,
     WIDGET_PENDING_SAVE_SUCCESS: v,

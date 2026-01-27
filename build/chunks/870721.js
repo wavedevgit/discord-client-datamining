@@ -8,35 +8,35 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(303727),
-    s = n(985018),
-    o = n(117333);
+    o = n(985018),
+    s = n(117333);
 
 function l() {
     return (0, r.jsxs)("div", {
-        className: o.kL,
+        className: s.kL,
         children: [(0, r.jsxs)("div", {
-            className: o.zc,
+            className: s.zc,
             children: [(0, r.jsx)("div", {
-                className: o.Kk,
+                className: s.Kk,
                 children: (0, r.jsx)(i.Kck, {
                     size: "custom",
                     color: "currentColor",
-                    className: o.l1,
+                    className: s.l1,
                     width: 28,
                     height: 28
                 })
             }), (0, r.jsx)(a.A, {
-                className: o.uf
+                className: s.uf
             })]
         }), (0, r.jsx)(i.Heading, {
-            className: o.wx,
+            className: s.wx,
             variant: "heading-xl/semibold",
-            children: s.intl.string(s.t.yJHJei)
+            children: o.intl.string(o.t.yJHJei)
         }), (0, r.jsx)(i.Text, {
-            className: o.Qq,
+            className: s.Qq,
             color: "text-default",
             variant: "text-md/normal",
-            children: s.intl.string(s.t.p2dIh6)
+            children: o.intl.string(o.t.p2dIh6)
         })]
     })
 }

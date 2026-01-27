@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(812729),
     a = n.n(i),
-    s = n(311907),
-    o = n(118356),
+    o = n(311907),
+    s = n(118356),
     l = n(73153),
     c = n(87001),
     u = n(9302),
@@ -25,7 +25,7 @@ function m(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let g = new o.Vy("OverlayV3NativeClickZoneStore"),
+let g = new s.Vy("OverlayV3NativeClickZoneStore"),
     E = 3e4,
     y = null,
     b = [],
@@ -103,32 +103,32 @@ function D() {
     0 !== b.length && (O = [...b], b = [], T([], "store_click_zones"))
 }
 
-function x() {
+function L() {
     b.length > 0 || T(b = [...O], "refresh_click_zones")
 }
 
-function L(e, t, n, r) {
+function x(e, t, n, r) {
     let i = c.A.getWindow(h.f);
     if (null == i) return;
     let a = Math.ceil(n * i.innerWidth),
-        s = Math.ceil(r * i.innerHeight),
-        o = new MouseEvent((0, p.Br)(t), {
+        o = Math.ceil(r * i.innerHeight),
+        s = new MouseEvent((0, p.Br)(t), {
             screenX: a,
-            screenY: s,
+            screenY: o,
             clientX: a,
-            clientY: s,
+            clientY: o,
             bubbles: !0,
             view: i
         }),
-        l = i.document.elementFromPoint(a, s);
-    null != l && l.dispatchEvent(o)
-}
-
-function j(e) {
-    return P("crashed"), !0
+        l = i.document.elementFromPoint(a, o);
+    null != l && l.dispatchEvent(s)
 }
 
 function M(e) {
+    return P("crashed"), !0
+}
+
+function j(e) {
     let {
         zones: t
     } = e;
@@ -140,20 +140,20 @@ function k() {
 }
 
 function U() {
-    return null == (y = f.A.getNativeModule()) || !!A || (A = !0, y.setCaptureZoneCallback(L), !0)
+    return null == (y = f.A.getNativeModule()) || !!A || (A = !0, y.setCaptureZoneCallback(x), !0)
 }
 
 function G() {
     return y = null, !0
 }
 
-function V(e) {
+function F(e) {
     let {
         pid: t
     } = e;
-    return 0 === t ? D() : x(), !0
+    return 0 === t ? D() : L(), !0
 }
-class F extends(r = s.Ay.Store) {
+class V extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(f.A, c.A)
     }
@@ -164,12 +164,12 @@ class F extends(r = s.Ay.Store) {
         return O
     }
 }
-m(F, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let B = new F(l.h, __OVERLAY__ || !_.OX ? {} : {
+m(V, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let B = new V(l.h, __OVERLAY__ || !_.OX ? {} : {
     OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
     OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
-    OVERLAY_SET_CLICK_ZONES: M,
-    OVERLAY_FOCUSED: V,
+    OVERLAY_SET_CLICK_ZONES: j,
+    OVERLAY_FOCUSED: F,
     OVERLAY_V3_NATIVE_REFRESH_HOST_WINDOW: k,
-    OVERLAY_CRASHED: j
+    OVERLAY_CRASHED: M
 })

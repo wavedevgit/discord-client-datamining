@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(877413),
     i = n.n(r),
     a = n(284009),
-    s = n.n(a),
-    o = n(186306),
+    o = n.n(a),
+    s = n(186306),
     l = n(339871),
     c = n(35277),
     u = n(711371),
@@ -60,31 +60,31 @@ function _(e) {
                 if (null != e.selection && p(t, {
                         shift: null
                     })) {
-                    let [r, i] = u.ZF.edges(e.selection), a = u.VW.blocks(e).slice(r.path[0], i.path[0] + 1), s = !0;
+                    let [r, i] = u.ZF.edges(e.selection), a = u.VW.blocks(e).slice(r.path[0], i.path[0] + 1), o = !0;
                     for (let [e] of a)
                         if ("line" !== e.type || !(null == (n = e.codeBlockState) ? void 0 : n.isInCodeBlock)) {
-                            s = !1;
+                            o = !1;
                             break
-                        } if (s) {
+                        } if (o) {
                         if (!t.shiftKey && u.ZF.isCollapsed(e.selection)) return c.b.insertText(e, f), !0;
                         let n = !t.shiftKey;
-                        return o.o.withSingleEntry(e, () => {
-                            var t, r, i, s;
-                            let o = null != (t = null == (i = e.selection) ? void 0 : i.anchor) ? t : u.VW.start(e, []),
-                                l = null != (r = null == (s = e.selection) ? void 0 : s.focus) ? r : u.VW.end(e, []);
+                        return s.o.withSingleEntry(e, () => {
+                            var t, r, i, o;
+                            let s = null != (t = null == (i = e.selection) ? void 0 : i.anchor) ? t : u.VW.start(e, []),
+                                l = null != (r = null == (o = e.selection) ? void 0 : o.focus) ? r : u.VW.end(e, []);
                             for (let [t, r] of a) {
                                 let i = t.children[0];
                                 if (!u.l5.isText(i)) continue;
                                 let a = u.PW.child(r, 0),
-                                    s = {
+                                    o = {
                                         path: a,
                                         offset: 0
                                     };
                                 if (n) c.b.insertText(e, f, {
-                                    at: s
-                                }), u.PW.equals(o.path, a) && 0 !== o.offset && (o = {
+                                    at: o
+                                }), u.PW.equals(s.path, a) && 0 !== s.offset && (s = {
                                     path: a,
-                                    offset: o.offset + f.length
+                                    offset: s.offset + f.length
                                 }), u.PW.equals(l.path, a) && 0 !== l.offset && (l = {
                                     path: a,
                                     offset: l.offset + f.length
@@ -96,12 +96,12 @@ function _(e) {
                                     };
                                     c.b.delete(e, {
                                         at: {
-                                            anchor: s,
+                                            anchor: o,
                                             focus: t
                                         }
-                                    }), u.PW.equals(o.path, a) && (o = {
+                                    }), u.PW.equals(s.path, a) && (s = {
                                         path: a,
-                                        offset: Math.max(0, o.offset - f.length)
+                                        offset: Math.max(0, s.offset - f.length)
                                     }), u.PW.equals(l.path, a) && (l = {
                                         path: a,
                                         offset: Math.max(0, l.offset - f.length)
@@ -109,7 +109,7 @@ function _(e) {
                                 }
                             }
                             c.b.select(e, {
-                                anchor: o,
+                                anchor: s,
                                 focus: l
                             })
                         }), !0
@@ -132,9 +132,9 @@ function _(e) {
                         shift: null
                     })) return !1;
                 else return !1;
-                let s = e.children[null != (r = null == (_ = e.selection) || null == (a = _.focus) ? void 0 : a.path[0]) ? r : 0],
-                    o = "rtl" === i()(u.AS.string(s)),
-                    l = t.which === d.Ks6.ARROW_LEFT == !o;
+                let o = e.children[null != (r = null == (_ = e.selection) || null == (a = _.focus) ? void 0 : a.path[0]) ? r : 0],
+                    s = "rtl" === i()(u.AS.string(o)),
+                    l = t.which === d.Ks6.ARROW_LEFT == !s;
                 return c.b.keyboardMove(e, {
                     reverse: l,
                     unit: n,
@@ -182,7 +182,7 @@ function _(e) {
                         ctrl: !0
                     })) && null != e.selection) {
                     let [t, n] = u.ZF.edges(e.selection), [r, i] = u.VW.node(e, [m ? t.path[0] : n.path[0]]);
-                    if (s()(u.VW.isBlock(e, r), "Top-most node of selection is not a block"), m && !u.Kh.isAtStart(t, [r, i]) || !m && !u.Kh.isAtEnd(n, [r, i])) return m ? e.deleteBackward("line") : e.deleteForward("line"), !0
+                    if (o()(u.VW.isBlock(e, r), "Top-most node of selection is not a block"), m && !u.Kh.isAtStart(t, [r, i]) || !m && !u.Kh.isAtEnd(n, [r, i])) return m ? e.deleteBackward("line") : e.deleteForward("line"), !0
                 }
         }
         return !1

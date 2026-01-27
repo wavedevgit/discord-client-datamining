@@ -2,7 +2,7 @@
 /** chunk id: 506548, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    S: () => o
+    S: () => s
 }), n(896048);
 var r = n(440703),
     i = n(341915);
@@ -15,7 +15,7 @@ function a(e) {
     }
     return t
 }
-let s = e => {
+let o = e => {
         switch (e.type) {
             case r.l.REWARD_CODE:
                 return {
@@ -59,9 +59,9 @@ let s = e => {
                 }
         }
     },
-    o = e => ({
+    s = e => ({
         assignmentMethod: e.assignment_method,
-        rewards: e.rewards.map(s),
+        rewards: e.rewards.map(o),
         rewardsExpireAt: e.rewards_expire_at,
         platforms: e.platforms
     })

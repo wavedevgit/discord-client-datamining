@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     $: () => a,
-    O: () => s
+    O: () => o
 });
 var r = n(331250),
     i = n(108146);
@@ -23,7 +23,7 @@ function a(e, t, n) {
     }
 }
 
-function s(e, t, n) {
+function o(e, t, n) {
     let i = {
             isSelected: t.selectedKeys.has(e.id),
             defaultSelected: !1,
@@ -36,8 +36,8 @@ function s(e, t, n) {
         },
         {
             isPressed: a,
-            isSelected: s,
-            isDisabled: o,
+            isSelected: o,
+            isDisabled: s,
             buttonProps: l
         } = (0, r.q)({
             ...e,
@@ -46,8 +46,8 @@ function s(e, t, n) {
         }, i, n);
     return "single" === t.selectionMode && (l.role = "radio", l["aria-checked"] = i.isSelected, delete l["aria-pressed"]), {
         isPressed: a,
-        isSelected: s,
-        isDisabled: o,
+        isSelected: o,
+        isDisabled: s,
         buttonProps: l
     }
 }

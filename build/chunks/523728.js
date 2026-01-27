@@ -1,13 +1,12 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 523728, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => l
 });
 var r = n(652215),
     i = n(985018);
 
-function a(e) {
+function l(e) {
     if (null == e) return null;
     switch (e.type) {
         case r.rbe.GUILD_ANNOUNCEMENT:

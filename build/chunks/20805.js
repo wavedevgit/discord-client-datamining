@@ -6,27 +6,27 @@ n.d(t, {
     Lf: () => f,
     P: () => l,
     Tq: () => c,
-    UQ: () => s,
+    UQ: () => o,
     aj: () => h,
     fe: () => d,
     p6: () => u,
     qQ: () => a,
     yl: () => m,
-    zD: () => o
+    zD: () => s
 });
 var r = n(681154),
     i = n(808380);
 
 function a(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.PLAYED_GAME
-}
-
-function s(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.TOP_GAME
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.PLAYED_GAME
 }
 
 function o(e) {
-    return a(e) || s(e)
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.TOP_GAME
+}
+
+function s(e) {
+    return a(e) || o(e)
 }
 
 function l(e) {
@@ -34,11 +34,11 @@ function l(e) {
 }
 
 function c(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.LISTENED_SESSION
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.LISTENED_SESSION
 }
 
 function u(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.TOP_ARTIST
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.TOP_ARTIST
 }
 
 function d(e) {
@@ -46,15 +46,15 @@ function d(e) {
 }
 
 function f(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.WATCHED_MEDIA
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.WATCHED_MEDIA
 }
 
 function p(e) {
-    return !!o(e) && e.extra.platform === i.Y.XBOX
+    return !!s(e) && e.extra.platform === i.Y.XBOX
 }
 
 function _(e) {
-    return !!o(e) && e.extra.platform === i.Y.PLAYSTATION
+    return !!s(e) && e.extra.platform === i.Y.PLAYSTATION
 }
 
 function h(e) {
@@ -62,9 +62,9 @@ function h(e) {
 }
 
 function m(e) {
-    return (null == e ? void 0 : e.content_type) === r.I.LAUNCHED_ACTIVITY
+    return (null == e ? void 0 : e.content_type) === r.ContentInventoryEntryType.LAUNCHED_ACTIVITY
 }
 
 function g(e) {
-    return o(e) || c(e) || f(e) || l(e)
+    return s(e) || c(e) || f(e) || l(e)
 }

@@ -1,79 +1,104 @@
 /** Chunk was on 2824 **/
-/** chunk id: 877156, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => P
-}), n(896048);
-var r = n(627968),
-    l = n(64700),
-    i = n(575593),
-    s = n(311907),
-    a = n(732955),
-    o = n(397927),
-    u = n(775602),
-    c = n(688810),
-    d = n(920064),
-    p = n(674658),
-    m = n(61750),
-    g = n(235986),
-    f = n(369496),
-    y = n(550111),
-    j = n(552736),
-    b = n(287809),
-    h = n(482132),
-    v = n(758836),
-    O = n(401506);
+/** chunk id: 877156, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => b
+}), t(896048);
+var l = t(627968),
+    r = t(64700),
+    i = t(311907),
+    s = t(732955),
+    a = t(397927),
+    o = t(775602),
+    u = t(688810),
+    c = t(920064),
+    d = t(674658),
+    p = t(898461),
+    m = t(837015),
+    g = t(61750),
+    f = t(235986),
+    j = t(369496),
+    E = t(550111),
+    x = t(552736),
+    h = t(287809),
+    T = t(482132),
+    P = t(758836),
+    S = t(401506);
 
-function P(e) {
+function b(e) {
     let {
-        reward: t,
-        purchase: n,
-        onClose: P
-    } = e, E = (0, s.bG)([b.default], () => b.default.getCurrentUser()), x = (0, s.bG)([u.A], () => u.A.useReducedMotion), {
-        analyticsLocations: S
-    } = (0, c.Ay)(), T = o._3J.SIZE_32, I = (0, d.A)(t.assetId, T, !x), A = (0, j.A)(), k = null == A ? void 0 : A.giftPurchaseConfirmation, {
-        product: C,
-        isFetching: w
-    } = (0, p.q)(n.skuId), _ = t.type === i.R.NAMEPLATE, [M, N] = l.useState(!1), R = l.useMemo(() => {
-        var e, n;
-        return _ && null != t.assetId ? {
-            src: t.assetId,
-            palette: (0, f.H6)(null != (e = t.palette) ? e : "sky"),
-            imgAlt: null == (n = t.a11yLabel) ? void 0 : n.call(t)
-        } : null
-    }, [_, t]);
-    return null == k ? null : (0, r.jsx)(h.UX, {
-        children: (0, r.jsx)(o.jlY, {
-            align: g.A.Align.CENTER,
+        rewardSkuId: n,
+        purchase: t,
+        onClose: b
+    } = e, A = (0, i.bG)([h.default], () => h.default.getCurrentUser()), y = (0, i.bG)([o.A], () => o.A.useReducedMotion), {
+        analyticsLocations: v
+    } = (0, u.Ay)(), I = a._3J.SIZE_32, O = (0, x.A)(), _ = null == O ? void 0 : O.giftPurchaseConfirmation, {
+        product: N,
+        isFetching: C
+    } = (0, d.q)(n), [M, w] = r.useState(!1), R = t.items[0], {
+        isNameplateReward: k,
+        nameplateData: D,
+        rewardDeco: L
+    } = r.useMemo(() => {
+        if (null == R) return {
+            isNameplateReward: !1,
+            nameplateData: null,
+            rewardDeco: void 0
+        };
+        if ((0, m.F)(R)) {
+            var e;
+            return {
+                isNameplateReward: !0,
+                nameplateData: {
+                    src: R.asset,
+                    palette: (0, j.H6)(null != (e = R.palette) ? e : "sky"),
+                    imgAlt: R.label
+                },
+                rewardDeco: void 0
+            }
+        }
+        return (0, p.T)(R) ? {
+            isNameplateReward: !1,
+            nameplateData: null,
+            rewardDeco: (0, c.A)(R.asset, I, !y)
+        } : {
+            isNameplateReward: !1,
+            nameplateData: null,
+            rewardDeco: void 0
+        }
+    }, [R, I, y]);
+    return null == _ ? null : (0, l.jsx)(T.UX, {
+        children: (0, l.jsx)(a.jlY, {
+            align: f.A.Align.CENTER,
             "data-migration-pending": !0,
-            children: (0, r.jsxs)("div", {
-                className: O.W,
-                children: [_ && null != R ? (0, r.jsx)("div", {
-                    className: O.D,
-                    onMouseEnter: () => N(!0),
-                    onMouseLeave: () => N(!1),
-                    children: (0, r.jsx)(y.a, {
-                        user: E,
+            children: (0, l.jsxs)("div", {
+                className: S.W,
+                children: [k && null != D ? (0, l.jsx)("div", {
+                    className: S.D,
+                    onMouseEnter: () => w(!0),
+                    onMouseLeave: () => w(!1),
+                    children: (0, l.jsx)(E.a, {
+                        user: A,
                         nameplate: null,
-                        nameplateData: R,
+                        nameplateData: D,
                         showPlaceholderUser: !0,
                         nameplatePreviewSize: "xsmall",
                         isHighlighted: M
                     })
-                }) : (0, r.jsx)(o.JsQ, {
-                    "aria-label": null == E ? void 0 : E.username,
-                    size: T,
-                    src: null == E ? void 0 : E.getAvatarURL(void 0, (0, o.FT9)(T), !x),
-                    avatarDecoration: I
-                }), (0, r.jsx)(a.$nd, {
+                }) : (0, l.jsx)(a.JsQ, {
+                    "aria-label": null == A ? void 0 : A.username,
+                    size: I,
+                    src: null == A ? void 0 : A.getAvatarURL(void 0, (0, a.FT9)(I), !y),
+                    avatarDecoration: L
+                }), (0, l.jsx)(s.$nd, {
                     variant: "primary",
-                    text: k.collectRewardButtonText(),
-                    loading: w,
+                    text: _.collectRewardButtonText(),
+                    loading: C,
                     onClick: () => {
-                        null != C && (P(), (0, m.A)({
-                            product: C,
+                        null != N && (b(), (0, g.A)({
+                            product: N,
                             shouldShowPromotionalExperience: !0,
-                            analyticsLocations: S,
-                            purchaseType: v.gs.PROMOTIONAL
+                            analyticsLocations: v,
+                            purchaseType: P.gs.PROMOTIONAL
                         }))
                     }
                 })]

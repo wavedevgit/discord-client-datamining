@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(129844),
+    o = n.n(a),
+    s = n(129844),
     l = n(974213),
     c = n(426333),
     u = n(934551),
@@ -40,8 +40,8 @@ function _(e) {
     let P = e => {
             null != a && a(e)
         },
-        D = s()(p.checkboxOption, "string" == typeof S && p[S], "indicator" !== O && p.spacing),
-        x = (0, r.jsxs)(r.Fragment, {
+        D = o()(p.checkboxOption, "string" == typeof S && p[S], "indicator" !== O && p.spacing),
+        L = (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsxs)("div", {
                 className: p.checkboxIndicator,
                 ref: v,
@@ -67,7 +67,7 @@ function _(e) {
                 })]
             }), N && (0, r.jsxs)(d.B, {
                 gap: 4,
-                children: [(0, r.jsxs)(o.J, {
+                children: [(0, r.jsxs)(s.J, {
                     className: p.label,
                     children: [null != R && (0, r.jsx)(R, {
                         className: p.leadingIcon,
@@ -91,7 +91,7 @@ function _(e) {
         className: D,
         "data-selected": t || void 0,
         "data-disabled": _ || void 0,
-        children: x
+        children: L
     }) : (0, r.jsx)(c.vN, {
         focusTarget: A,
         ringTarget: I,
@@ -106,7 +106,7 @@ function _(e) {
             "data-mana-component": "checkbox",
             className: D,
             value: String(y),
-            children: x
+            children: L
         })
     })
 }

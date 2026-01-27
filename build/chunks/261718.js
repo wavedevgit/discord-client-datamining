@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 261718, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => i
+/** Chunk was on 52199 **/
+/** chunk id: 261718, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => l
 });
-let r = (0, n(600975).C)({
+let n = (0, r(600975).C)({
     kind: "user",
     id: "2024-12_participants_panel",
     label: "Participants Panel",
@@ -20,6 +19,6 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
-    return r.useExperiment(e)
+function l(e) {
+    return n.useExperiment(e)
 }

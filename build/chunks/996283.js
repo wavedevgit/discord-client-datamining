@@ -7,8 +7,8 @@ n.d(t, {
 }), n(321073);
 var r, i = n(311907),
     a = n(118356),
-    s = n(73153),
-    o = n(635731),
+    o = n(73153),
+    s = n(635731),
     l = n(41984),
     c = n(127242);
 
@@ -25,7 +25,7 @@ let d = new a.Vy("LegacyOverlayClient"),
     p = 1e4,
     _ = 2e4,
     h = "Heartbeat",
-    m = new o.A(f),
+    m = new s.A(f),
     g = null,
     E = null;
 
@@ -100,7 +100,7 @@ class I extends(r = i.Ay.Store) {
         return m.filter(e => "error" === e.level || "crash" === e.level)
     }
 }
-u(I, "displayName", "OverlayRPCLogStore"), new I(s.h, {
+u(I, "displayName", "OverlayRPCLogStore"), new I(o.h, {
     OVERLAY_RENDER_DEBUG_MODE: v,
     OVERLAY_ADD_LOGS_BATCH: A
 })

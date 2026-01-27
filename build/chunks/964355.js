@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(735438),
-    s = n.n(a),
-    o = n(900283),
+    o = n.n(a),
+    s = n(900283),
     l = n(106236),
     c = n(134971);
 let u = e => "".concat(e.toFixed(0), "%"),
@@ -21,7 +21,7 @@ let u = e => "".concat(e.toFixed(0), "%"),
             onInteraction: p,
             renderValue: _ = u,
             "aria-label": h
-        } = e, m = i.useRef(null), g = i.useMemo(() => s().debounce(() => null == p ? void 0 : p(o.Q.SLIDER), 100), [p]);
+        } = e, m = i.useRef(null), g = i.useMemo(() => o().debounce(() => null == p ? void 0 : p(s.Q.SLIDER), 100), [p]);
         i.useImperativeHandle(t, () => ({
             focus: () => {
                 var e;

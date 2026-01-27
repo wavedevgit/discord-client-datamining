@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(961350),
     i = n(430452),
     a = n(383501),
-    s = n(927813),
-    o = n(487329),
+    o = n(927813),
+    s = n(487329),
     l = n(601900),
     c = n(548370);
 
@@ -34,7 +34,7 @@ function d(e) {
     return e
 }
 let f = 10,
-    p = 20 * s.A.Millis.SECOND,
+    p = 20 * o.A.Millis.SECOND,
     _ = {
         getActiveErrors: () => {
             let e = a.A.getRTCConnection();
@@ -43,9 +43,9 @@ let f = 10,
             if (null == t || !i.A.isVideoEnabled()) return null;
             let n = a.A.getLastNonZeroRemoteVideoSinkWantsTime();
             if (null != n && performance.now() - n < p || !e.hasActiveRemoteWants()) return null;
-            let s = (0, c.xA)(t, r.default.getId());
-            return null == s ? null : s.short.frameRate < f || s.long.frameRate < f ? [d({
-                type: o.iy.CAMERA_SEND_LOW_FPS,
+            let o = (0, c.xA)(t, r.default.getId());
+            return null == o ? null : o.short.frameRate < f || o.long.frameRate < f ? [d({
+                type: s.iy.CAMERA_SEND_LOW_FPS,
                 userId: r.default.getId()
             }, (0, l.jY)())] : void 0
         },

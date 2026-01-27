@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 322092, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(164974);
+    a = n(164974);
 
-function l(e) {
+function o(e) {
     let {
         message: t,
         error: n,
         onClick: i,
-        submitting: l,
+        submitting: o,
         className: c,
-        ctaMessage: u
+        ctaMessage: d
     } = e;
     return (0, r.jsxs)("div", {
-        className: a()(o.kL, c),
+        className: l()(a.kL, c),
         children: [(0, r.jsxs)("div", {
-            className: o.FS,
+            className: a.FS,
             children: [(0, r.jsx)(s.EpV, {
                 size: "custom",
                 width: 20,
                 height: 20,
                 color: "currentColor",
-                className: o.QW
+                className: a.QW
             }), (0, r.jsx)(s.hKd, {
                 size: 10,
                 horizontal: !0
@@ -37,11 +36,11 @@ function l(e) {
                 children: [(0, r.jsx)(s.hKd, {
                     size: 1
                 }), (0, r.jsx)(s.Text, {
-                    className: o.pq,
+                    className: a.pq,
                     variant: "text-sm/normal",
                     children: t
                 }), null != n && (0, r.jsx)(s.Text, {
-                    className: a()(o.pq, o.z3),
+                    className: l()(a.pq, a.z3),
                     variant: "text-sm/normal",
                     children: n
                 })]
@@ -53,8 +52,8 @@ function l(e) {
             variant: "critical-secondary",
             size: "sm",
             onClick: i,
-            text: u,
-            loading: l
+            text: d,
+            loading: o
         })]
     })
 }

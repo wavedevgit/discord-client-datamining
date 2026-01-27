@@ -9,8 +9,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(541806),
-    o = n(765379),
+    o = n(541806),
+    s = n(765379),
     l = n(672979),
     c = n(90644),
     u = n(717306),
@@ -31,7 +31,7 @@ function b(e) {
         activity: t,
         onOpenGameSettings: n
     } = e;
-    return (0, u.A)(t) || (0, c.A)(t) || (0, s.A)(t) ? y : (0, l.A)(t) && !(0, o.A)(t) ? n : null
+    return (0, u.A)(t) || (0, c.A)(t) || (0, o.A)(t) ? y : (0, l.A)(t) && !(0, s.A)(t) ? n : null
 }
 
 function O(e) {
@@ -61,8 +61,8 @@ function A(e) {
     let {
         user: t,
         activity: n,
-        entry: s,
-        onAction: o,
+        entry: o,
+        onAction: s,
         onClose: l,
         appContext: c
     } = e, u = (0, m.A)();
@@ -72,14 +72,14 @@ function A(e) {
         })) return null;
     let d = v({
         activity: n,
-        entry: s,
+        entry: o,
         onOpenGameSettings: u
     });
     return null == d ? null : (0, r.jsx)(a.Drp, {
         id: "manage-privacy",
         label: E.intl.string(E.t.anfNPV),
         action: () => {
-            null == o || o({
+            null == s || s({
                 action: "PRESS_MANAGE_PRIVACY_MENU_ITEM"
             }), d(), (0, f.A)(c), null == l || l()
         }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(436857),
-    s = n(999443),
-    o = n(542664),
+    o = n(999443),
+    s = n(542664),
     l = n(551965);
 
 function c(e, t, n) {
@@ -63,33 +63,33 @@ let m = {
         enableBuildOverrides: !1,
         enableEmojiClick: !0
     },
-    g = h(o.A.RULES, [(0, s.A)({
+    g = h(s.A.RULES, [(0, o.A)({
         enableBuildOverrides: !0
     })]),
-    E = i().omit(h(o.A.RULES, [(0, s.A)(m)]), "paragraph", "newline"),
-    y = h(o.A.CHANNEL_TOPIC_RULES, [(0, s.A)(f(u({}, m), {
+    E = i().omit(h(s.A.RULES, [(0, o.A)(m)]), "paragraph", "newline"),
+    y = h(s.A.CHANNEL_TOPIC_RULES, [(0, o.A)(f(u({}, m), {
         emojiTooltipPosition: "bottom"
     })), {
         codeBlock: {
-            react: o.A.RULES.text.react
+            react: s.A.RULES.text.react
         }
     }]),
-    b = h(o.A.VOICE_CHANNEL_STATUS_RULES, [(0, s.A)(f(u({}, m), {
+    b = h(s.A.VOICE_CHANNEL_STATUS_RULES, [(0, o.A)(f(u({}, m), {
         enableEmojiClick: !1
     }))]),
-    O = h(o.A.EMBED_TITLE_RULES, [(0, s.A)(m)]),
-    v = i().omit(h(o.A.EMBED_TITLE_RULES, [(0, s.A)(m)]), _),
-    A = h(o.A.INLINE_REPLY_RULES, [(0, s.A)(m)]),
-    I = h(o.A.GUILD_VERIFICATION_FORM_RULES, [(0, s.A)(m)]),
-    S = h(o.A.GUILD_EVENT_RULES, [(0, s.A)(m)]),
-    T = h(o.A.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, s.A)(m)]),
-    C = i().omit(h(o.A.RULES, [(0, s.A)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ..._),
+    O = h(s.A.EMBED_TITLE_RULES, [(0, o.A)(m)]),
+    v = i().omit(h(s.A.EMBED_TITLE_RULES, [(0, o.A)(m)]), _),
+    A = h(s.A.INLINE_REPLY_RULES, [(0, o.A)(m)]),
+    I = h(s.A.GUILD_VERIFICATION_FORM_RULES, [(0, o.A)(m)]),
+    S = h(s.A.GUILD_EVENT_RULES, [(0, o.A)(m)]),
+    T = h(s.A.AUTO_MODERATION_SYSTEM_MESSAGE_RULES, [(0, o.A)(m)]),
+    C = i().omit(h(s.A.RULES, [(0, o.A)(m)]), "paragraph", "newline", "strong", "codeBlock", "inlineCode", "u", "list", "heading", "subtext", ..._),
     N = {
-        text: o.A.RULES.text
+        text: s.A.RULES.text
     },
     w = {
         combineAndInjectMentionRule: h,
-        createReactRules: s.A,
+        createReactRules: o.A,
         defaultReactRuleOptions: m,
         defaultRules: g,
         guildEventRules: S,

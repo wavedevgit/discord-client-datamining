@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(360345),
     i = n(374372),
     a = n(355418),
-    s = n(632434);
-let o = RegExp(`(this|last|past|next|after|\\+|-)\\s*(${r.Pl})(?=\\W|$)`, "i"),
+    o = n(632434);
+let s = RegExp(`(this|last|past|next|after|\\+|-)\\s*(${r.Pl})(?=\\W|$)`, "i"),
     l = RegExp(`(this|last|past|next|after|\\+|-)\\s*(${r.d2})(?=\\W|$)`, "i");
 class c extends a.c {
     allowAbbreviations;
@@ -16,7 +16,7 @@ class c extends a.c {
         super(), this.allowAbbreviations = e
     }
     innerPattern() {
-        return this.allowAbbreviations ? o : l
+        return this.allowAbbreviations ? s : l
     }
     innerExtract(e, t) {
         let n = t[1].toLowerCase(),
@@ -26,7 +26,7 @@ class c extends a.c {
             case "last":
             case "past":
             case "-":
-                a = (0, s.x4)(a)
+                a = (0, o.x4)(a)
         }
         return i.BP.createRelativeFromReference(e.reference, a)
     }

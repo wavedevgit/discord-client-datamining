@@ -17,10 +17,10 @@ function i(e, t, n) {
             case "enum":
             case "scalar":
                 let d = "enum" == i.kind ? r.LN.INT32 : i.T;
-                if (!(i.repeat ? o(d, c, u) : s(d, c, u))) return !1;
+                if (!(i.repeat ? s(d, c, u) : o(d, c, u))) return !1;
                 break;
             case "map":
-                if (!("message" == i.V.kind ? l(i.V.T(), a(c), a(u)) : o("enum" == i.V.kind ? r.LN.INT32 : i.V.T, a(c), a(u)))) return !1;
+                if (!("message" == i.V.kind ? l(i.V.T(), a(c), a(u)) : s("enum" == i.V.kind ? r.LN.INT32 : i.V.T, a(c), a(u)))) return !1;
                 break;
             case "message":
                 let f = i.T();
@@ -31,7 +31,7 @@ function i(e, t, n) {
 }
 let a = Object.values;
 
-function s(e, t, n) {
+function o(e, t, n) {
     if (t === n) return !0;
     if (e !== r.LN.BYTES) return !1;
     let i = t,
@@ -42,10 +42,10 @@ function s(e, t, n) {
     return !0
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     if (t.length !== n.length) return !1;
     for (let r = 0; r < t.length; r++)
-        if (!s(e, t[r], n[r])) return !1;
+        if (!o(e, t[r], n[r])) return !1;
     return !0
 }
 

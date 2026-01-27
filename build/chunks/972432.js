@@ -9,8 +9,8 @@ var i = n(311907),
     r = n(397927),
     a = n(827343),
     o = n(430452),
-    d = n(287809),
-    s = n(824744),
+    s = n(287809),
+    d = n(824744),
     u = n(723702),
     c = n(731854),
     A = n(985018);
@@ -20,13 +20,13 @@ function b(e) {
     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x.DEFAULT,
         b = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : void 0,
         g = (0, i.bG)([o.A], () => o.A.getLocalVolume(e, n), [e, n]),
-        f = e === (null == (t = d.default.getCurrentUser()) ? void 0 : t.id),
+        f = e === (null == (t = s.default.getCurrentUser()) ? void 0 : t.id),
         m = n === c.x.STREAM;
     return f ? null : (0, l.jsx)(r.aK1, {
         id: "user-volume",
         label: m ? A.intl.string(A.t.t4JBnI) : A.intl.string(A.t.m7TNdF),
         control: (t, i) => {
-            var o, d;
+            var o, s;
             return (0, l.jsx)(r.i42, (o = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -44,23 +44,23 @@ function b(e) {
                     })
                 }
                 return e
-            }({}, t), d = d = {
+            }({}, t), s = s = {
                 ref: i,
-                value: (0, s.M)(g),
+                value: (0, d.M)(g),
                 maxValue: u.isPlatformEmbedded ? 200 : 100,
                 onChange: t => {
-                    a.A.setLocalVolume(e, (0, s.w)(t), n), null == b || b(t)
+                    a.A.setLocalVolume(e, (0, d.w)(t), n), null == b || b(t)
                 },
                 "aria-label": m ? A.intl.string(A.t.t4JBnI) : A.intl.string(A.t.m7TNdF)
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                     var l = Object.getOwnPropertySymbols(e);
                     n.push.apply(n, l)
                 }
                 return n
-            })(Object(d)).forEach(function(e) {
-                Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(d, e))
+            })(Object(s)).forEach(function(e) {
+                Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(s, e))
             }), o))
         }
     })

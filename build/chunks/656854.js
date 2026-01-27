@@ -4,8 +4,8 @@ n.d(t, {
     G: () => m,
     O: () => f
 }), n(896048);
-var l = n(627968),
-    r = n(64700),
+var r = n(627968),
+    l = n(64700),
     i = n(990078),
     s = n(397927),
     a = n(830215),
@@ -14,8 +14,8 @@ var l = n(627968),
     u = n(712104);
 
 function d() {
-    let [e, t] = r.useState(!1), [n, i] = r.useState(!1), [o, d] = r.useState(!1);
-    r.useEffect(() => {
+    let [e, t] = l.useState(!1), [n, i] = l.useState(!1), [o, d] = l.useState(!1);
+    l.useEffect(() => {
         let e;
         return n && (e = setTimeout(() => {
             i(!1)
@@ -33,12 +33,12 @@ function d() {
             }
         }
     };
-    return n ? (0, l.jsx)(s.Text, {
+    return n ? (0, r.jsx)(s.Text, {
         className: u.$6,
         variant: "text-sm/normal",
         color: "text-feedback-positive",
         children: c.intl.string(c.t.H3Q7U8)
-    }) : (0, l.jsx)(s.Button, {
+    }) : (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         text: o ? c.intl.string(c.t.WnX4J2) : c.intl.string(c.t["13ofGu"]),
@@ -48,16 +48,16 @@ function d() {
 }
 
 function m() {
-    return (0, l.jsx)(o.ZK, {
+    return (0, r.jsx)(o.ZK, {
         className: u.jm,
         icon: s.u6c,
         text: c.intl.string(c.t.c6EUJI),
         footnote: c.intl.string(c.t["jMh+TY"]),
         meetsRequirement: !1,
-        children: (0, l.jsx)(i.m, {
+        children: (0, r.jsx)(i.m, {
             asContainer: !0,
             text: c.intl.string(c.t.mGlP30),
-            children: (0, l.jsx)(s.Button, {
+            children: (0, r.jsx)(s.Button, {
                 variant: "primary",
                 size: "sm",
                 disabled: !0,
@@ -71,12 +71,12 @@ function f(e) {
     let {
         isUserVerified: t
     } = e, n = t ? c.intl.string(c.t.qY1jHN) : c.intl.string(c.t.c6EUJI);
-    return (0, l.jsx)(o.ZK, {
+    return (0, r.jsx)(o.ZK, {
         className: u.jm,
         icon: s.u6c,
         text: n,
         footnote: c.intl.string(c.t["jMh+TY"]),
         meetsRequirement: t,
-        children: (0, l.jsx)(d, {})
+        children: (0, r.jsx)(d, {})
     })
 }

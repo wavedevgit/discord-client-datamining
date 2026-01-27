@@ -2,15 +2,15 @@
 /** chunk id: 709977, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ge: () => o,
+    Ge: () => s,
     OP: () => l,
     Qd: () => c
 }), n(733351);
 var r = n(403362),
     i = n(513461),
     a = n(260197),
-    s = n(652215);
-let o = e => {
+    o = n(652215);
+let s = e => {
     let {
         required: t,
         response: n,
@@ -37,5 +37,5 @@ function l(e) {
 }
 
 function c(e) {
-    return null != e && e.features.has(s.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
+    return null != e && e.features.has(o.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)
 }

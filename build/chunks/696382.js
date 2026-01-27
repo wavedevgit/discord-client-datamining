@@ -3,11 +3,11 @@
 var r = n(292528),
     i = n(461083),
     a = 1,
-    s = 2;
-e.exports = function(e, t, n, o) {
+    o = 2;
+e.exports = function(e, t, n, s) {
     var l = n.length,
         c = l,
-        u = !o;
+        u = !s;
     if (null == e) return !c;
     for (e = Object(e); l--;) {
         var d = n[l];
@@ -21,8 +21,8 @@ e.exports = function(e, t, n, o) {
             if (void 0 === p && !(f in e)) return !1
         } else {
             var h = new r;
-            if (o) var m = o(p, _, f, e, t, h);
-            if (!(void 0 === m ? i(_, p, a | s, o, h) : m)) return !1
+            if (s) var m = s(p, _, f, e, t, h);
+            if (!(void 0 === m ? i(_, p, a | o, s, h) : m)) return !1
         }
     }
     return !0

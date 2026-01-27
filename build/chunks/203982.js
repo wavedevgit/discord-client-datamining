@@ -8,11 +8,11 @@ n.d(t, {
 var r = n(423034),
     i = n(769991),
     a = n(626584),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     var i;
-    let a = null != (i = Object.values(s.zOV).find(t => e.startsWith(t))) ? i : e;
+    let a = null != (i = Object.values(o.zOV).find(t => e.startsWith(t))) ? i : e;
     r.HF({
         type: "ComponentDispatch",
         description: a,
@@ -33,5 +33,5 @@ let l = new a.A("ComponentDispatchUtils"),
                 return l.warn(e, ...n)
             }
         },
-        devtoolsReporter: o
+        devtoolsReporter: s
     })

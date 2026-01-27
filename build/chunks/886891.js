@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(688810),
     c = n(429913),
     u = n(769015),
@@ -52,8 +52,8 @@ function E(e) {
         })
     }, [C, y, I]), R = null != E, P = (0, c.h)(E);
     return R && null == P ? null : (0, r.jsxs)("div", {
-        className: s()(g.kL, b),
-        children: [R ? (0, r.jsx)(o.Text, {
+        className: o()(g.kL, b),
+        children: [R ? (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: m.intl.format(y ? m.t.syHjLL : m.t.V15uUI, {
                 username: A,
@@ -64,19 +64,19 @@ function E(e) {
                 }, null == P ? void 0 : P.id),
                 applicationName: null == P ? void 0 : P.name
             })
-        }) : (0, r.jsx)(o.Text, {
+        }) : (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             children: m.intl.format(m.t.uIomXw, {
                 username: A
             })
         }), (0, r.jsxs)("div", {
             className: g.UD,
-            children: [(0, r.jsx)(o.Button, {
+            children: [(0, r.jsx)(s.Button, {
                 variant: v ? "secondary" : "primary",
                 size: "sm",
                 onClick: N,
                 text: m.intl.string(m.t.Zcibdf)
-            }), (0, r.jsx)(o.Button, {
+            }), (0, r.jsx)(s.Button, {
                 variant: "secondary",
                 size: "sm",
                 onClick: w,

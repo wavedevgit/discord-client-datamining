@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(565645),
     c = n(7584),
     u = n(253932),
@@ -47,11 +47,11 @@ function h(e) {
         tooltipDelay: h = 150
     } = e, m = u.Sf.useSetting(), g = i.useRef(null), E = null != t.id ? ":".concat(t.name, ":") : c.Ay.translateSurrogatesToInlineEmoji(t.name);
     if (null == t.id && d.V.has(t.name)) return (0, r.jsx)("span", {
-        className: s()(f.Zg, n),
+        className: o()(f.Zg, n),
         children: t.name
     });
     let y = {
-        className: s()(f.Zg, n),
+        className: o()(f.Zg, n),
         emojiId: t.id,
         emojiName: t.name,
         autoplay: !0,
@@ -60,7 +60,7 @@ function h(e) {
             g.current = e
         }
     };
-    return p ? (0, r.jsx)(l.A, _({}, y)) : (0, r.jsx)(o.m, {
+    return p ? (0, r.jsx)(l.A, _({}, y)) : (0, r.jsx)(s.m, {
         targetElementRef: g,
         text: E,
         delay: h,

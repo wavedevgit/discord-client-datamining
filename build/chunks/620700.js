@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(380610),
-    s = n(348056),
-    o = n(833291),
+    o = n(348056),
+    s = n(833291),
     l = n(100392),
     c = n(950980),
     u = n(836156);
 let d = i.lazy(() => n.e("67696").then(n.bind(n, 881267)).then(e => ({
         default: e.PlaygroundEmbed
     }))),
-    f = RegExp("^" + o.st.source, o.st.flags);
+    f = RegExp("^" + s.st.source, s.st.flags);
 
 function p(e) {
     return {
@@ -25,30 +25,30 @@ function p(e) {
             type: "devLink"
         }),
         react: (e, t, n) => {
-            let o = e.target[0];
-            return (0, a.h4)(o) ? (0, r.jsxs)(i.Fragment, {
+            let s = e.target[0];
+            return (0, a.h4)(s) ? (0, r.jsxs)(i.Fragment, {
                 children: [(0, r.jsx)("span", {
-                    children: o
-                }), (0, r.jsx)(s.A, {
-                    url: o
-                }, o)]
-            }, n.key) : (0, l.W0)(o) ? (0, r.jsxs)(i.Fragment, {
+                    children: s
+                }), (0, r.jsx)(o.A, {
+                    url: s
+                }, s)]
+            }, n.key) : (0, l.W0)(s) ? (0, r.jsxs)(i.Fragment, {
                 children: [(0, r.jsx)("span", {
-                    children: o
+                    children: s
                 }), (0, r.jsx)(c.Z, {
-                    url: o
+                    url: s
                 })]
-            }, n.key) : (0, u.i)(o) ? (0, r.jsx)(i.Fragment, {
+            }, n.key) : (0, u.i)(s) ? (0, r.jsx)(i.Fragment, {
                 children: (0, r.jsxs)(i.Suspense, {
                     fallback: null,
                     children: [(0, r.jsx)("span", {
-                        children: o
+                        children: s
                     }), (0, r.jsx)(d, {
-                        url: o
+                        url: s
                     })]
                 })
             }, n.key) : (0, r.jsx)("span", {
-                children: o
+                children: s
             }, n.key)
         },
         order: 6

@@ -2,25 +2,25 @@
 /** chunk id: 655053, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    i: () => o
+    i: () => s
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(683071),
-    s = n(22789);
+    o = n(22789);
 
-function o(e) {
+function s(e) {
     let {
         message: t,
         type: n
-    } = e, o = null == t || 0 === t.length || null == n, [l, c] = i.useState(null != n ? n : "info"), [u, d] = i.useState(null != t ? t : "");
+    } = e, s = null == t || 0 === t.length || null == n, [l, c] = i.useState(null != n ? n : "info"), [u, d] = i.useState(null != t ? t : "");
     return i.useEffect(() => {
         null != n && c(n), null != t && d(t)
     }, [n, t]), (0, r.jsx)("div", {
-        className: o ? s.sectionHidden : s.section,
+        className: s ? o.sectionHidden : o.section,
         children: (0, r.jsx)(a.w, {
             type: l,
-            hidden: o,
+            hidden: s,
             children: u
         })
     })

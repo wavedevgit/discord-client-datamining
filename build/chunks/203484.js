@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(226846),
     i = n(159176),
     a = n(948409),
-    s = n(750343),
-    o = n(102957);
+    o = n(750343),
+    s = n(102957);
 let l = {
     title: "Miscellaneous",
-    stories: [i.A, a.F, s.$, r.q, o.r]
+    stories: [i.A, a.F, o.$, r.q, s.r]
 }

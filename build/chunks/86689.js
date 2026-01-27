@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 86689, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     E: () => s
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(871930);
+    l = n(871930);
 
 function s(e) {
     let {
         children: t,
         description: n,
         setting: s,
-        scrollPosition: o
+        scrollPosition: a
     } = e;
-    return (0, r.jsxs)(a.h, {
+    return (0, r.jsxs)(l.h, {
         setting: s,
-        scrollPosition: o,
+        scrollPosition: a,
         children: [(0, r.jsx)(i.BJc, {
             gap: 0,
             children: t

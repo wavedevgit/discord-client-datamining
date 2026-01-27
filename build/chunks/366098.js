@@ -2,22 +2,22 @@
 /** chunk id: 366098, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    D3: () => s,
+    D3: () => o,
     G1: () => l,
     Gc: () => c,
     Iv: () => d,
-    Xk: () => o,
+    Xk: () => s,
     mT: () => u
 });
 var r = n(311907),
     i = n(63995),
     a = n(69407);
 
-function s(e) {
+function o(e) {
     return (0, r.bG)([i.A], () => null != e ? i.A.getParticipantCount(e, a.ip.BLOCKED) : 0, [e])
 }
 
-function o(e) {
+function s(e) {
     return (0, r.bG)([i.A], () => null != e ? i.A.getParticipantCount(e, a.ip.IGNORED) : 0, [e])
 }
 

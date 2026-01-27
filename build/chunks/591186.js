@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(205693),
-    s = n(687658);
+    o = n(687658);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -36,7 +36,7 @@ class c {
         }
     }
     constructor(e) {
-        o(this, "connection", void 0), o(this, "pttQueueLatencyHistogram", void 0), o(this, "sampleStats", void 0), this.connection = e, this.sampleStats = e => {
+        s(this, "connection", void 0), s(this, "pttQueueLatencyHistogram", void 0), s(this, "sampleStats", void 0), this.connection = e, this.sampleStats = e => {
             null != e && i().forEach(e.rtp.outbound, e => {
                 if ("audio" === e.type) {
                     var t;
@@ -46,6 +46,6 @@ class c {
                     }
                 }
             })
-        }, this.pttQueueLatencyHistogram = new s.d
+        }, this.pttQueueLatencyHistogram = new o.d
     }
 }

@@ -23,13 +23,13 @@ n.d(t, {
 var r = n(812729),
     i = n.n(r),
     a = n(600975),
-    s = n(945810),
-    o = n(688151);
+    o = n(945810),
+    s = n(688151);
 let l = (0, a.C)({
     kind: "user",
     id: "2025-06_overlay_raf_manager",
     label: "Overlay RAF Manager",
-    commonTriggerPoint: o.$G.CONNECTION_OPEN,
+    commonTriggerPoint: s.$G.CONNECTION_OPEN,
     defaultConfig: {
         enabled: !1
     },
@@ -54,7 +54,7 @@ let u = (0, a.C)({
     kind: "user",
     id: "2025-06_overlay_render_timeout",
     label: "Overlay Render Timeout",
-    commonTriggerPoint: o.$G.CONNECTION_OPEN,
+    commonTriggerPoint: s.$G.CONNECTION_OPEN,
     defaultConfig: {
         shortTimeout: 8e3,
         longTimeout: 12e3
@@ -95,7 +95,7 @@ let f = (0, a.C)({
     kind: "user",
     id: "2025-07_overlay_default_disable",
     label: "Overlay Default Disable",
-    commonTriggerPoint: o.$G.CONNECTION_OPEN,
+    commonTriggerPoint: s.$G.CONNECTION_OPEN,
     defaultConfig: {
         enabled: !1
     },
@@ -119,7 +119,7 @@ function p(e) {
 var _ = function(e) {
     return e[e.GREEN_BUTTON_WITH_TEXT = 0] = "GREEN_BUTTON_WITH_TEXT", e[e.GRAY_BUTTON_WITH_TEXT = 1] = "GRAY_BUTTON_WITH_TEXT", e[e.SINGLE_ICON_BUTTON = 2] = "SINGLE_ICON_BUTTON", e
 }({});
-let h = (0, s.mj)({
+let h = (0, o.mj)({
     name: "2025-08-overlay-stream-watch-nudge",
     kind: "user",
     defaultConfig: {

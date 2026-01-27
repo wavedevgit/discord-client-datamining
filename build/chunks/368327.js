@@ -1,64 +1,63 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 368327, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => p
+    A: () => f
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
+    l = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(299619),
-    l = n(311907),
+    i = n.n(a),
+    s = n(299619),
+    o = n(311907),
     c = n(775602),
     u = n(771273),
     d = n(182417),
-    f = n(958315);
+    m = n(958315);
 
-function p(e) {
+function f(e) {
     let {
         className: t,
         slide: n,
         videoEntrySrc: a,
-        videoLoopSrc: p
-    } = e, _ = i.useRef(null), h = i.useRef(null), m = (0, l.bG)([c.A], () => c.A.useReducedMotion), [g, E] = i.useState(m), y = i.useContext(u.GD), b = i.useContext(d.Aq), O = i.useCallback(() => {
+        videoLoopSrc: f
+    } = e, p = l.useRef(null), h = l.useRef(null), b = (0, o.bG)([c.A], () => c.A.useReducedMotion), [g, x] = l.useState(b), y = l.useContext(u.GD), v = l.useContext(d.Aq), j = l.useCallback(() => {
         var e, t;
-        E(!0), m || null == (t = h.current) || t.play(), null == (e = _.current) || e.pause()
-    }, [m]), v = i.useCallback(e => {
-        let t = (g ? h : _).current,
+        x(!0), b || null == (t = h.current) || t.play(), null == (e = p.current) || e.pause()
+    }, [b]), C = l.useCallback(e => {
+        let t = (g ? h : p).current,
             r = e.detail.canvas,
-            i = e.detail.context;
+            l = e.detail.context;
         if (null == t || t.readyState < HTMLMediaElement.HAVE_CURRENT_DATA) return;
         let a = t.getBoundingClientRect(),
-            s = r.getBoundingClientRect(),
-            o = r.width / s.width,
-            l = r.height / s.height,
-            c = (a.left - s.left) * o,
-            u = (a.top - s.top) * l,
+            i = r.getBoundingClientRect(),
+            s = r.width / i.width,
+            o = r.height / i.height,
+            c = (a.left - i.left) * s,
+            u = (a.top - i.top) * o,
             d = a.width,
-            f = a.height,
-            p = 0;
-        null == b || b((e, t) => (t === n && (p = Math.max(e.opacity.get(), 0)), null)), i.save(), i.globalCompositeOperation = "screen", i.globalAlpha = p, i.drawImage(t, c, u, d, f), i.restore()
-    }, [g, n, b]);
-    return i.useEffect(() => (y.addEventListener("frameEnd", v), () => y.removeEventListener("frameEnd", v)), [y, v]), (0, r.jsxs)("div", {
-        className: s()(f.iE, t),
-        children: [(0, r.jsx)(o.A, {
-            ref: _,
-            className: f.yt,
+            m = a.height,
+            f = 0;
+        null == v || v((e, t) => (t === n && (f = Math.max(e.opacity.get(), 0)), null)), l.save(), l.globalCompositeOperation = "screen", l.globalAlpha = f, l.drawImage(t, c, u, d, m), l.restore()
+    }, [g, n, v]);
+    return l.useEffect(() => (y.addEventListener("frameEnd", C), () => y.removeEventListener("frameEnd", C)), [y, C]), (0, r.jsxs)("div", {
+        className: i()(m.iE, t),
+        children: [(0, r.jsx)(s.A, {
+            ref: p,
+            className: m.yt,
             style: {
                 opacity: 0
             },
-            autoPlay: !m,
+            autoPlay: !b,
             muted: !0,
             playsInline: !0,
-            onEnded: O,
+            onEnded: j,
             children: (0, r.jsx)("source", {
                 src: a,
                 type: "video/webm"
             })
-        }), (0, r.jsx)(o.A, {
+        }), (0, r.jsx)(s.A, {
             ref: h,
-            className: f.YV,
+            className: m.YV,
             style: {
                 opacity: 0
             },
@@ -66,7 +65,7 @@ function p(e) {
             playsInline: !0,
             loop: !0,
             children: (0, r.jsx)("source", {
-                src: p,
+                src: f,
                 type: "video/webm"
             })
         })]

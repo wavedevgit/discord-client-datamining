@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(964486),
     a = n(58149),
-    s = n(734057),
-    o = n(309010),
+    o = n(734057),
+    s = n(309010),
     l = n(954571),
     c = n(189551),
     u = n(307731),
@@ -47,7 +47,7 @@ let _ = e => {
     } = r.useRef(p({
         guild_id: n,
         emoji_id: t
-    }, (0, a.dI)(s.A.getChannel(o.A.getChannelId(n)))));
+    }, (0, a.dI)(o.A.getChannel(s.A.getChannelId(n)))));
     return (0, i.Ay)(() => {
         var e;
         (0, c.K)(u.Vl.TrackOpenPopoutUsed), h || l.default.track(d.HAw.OPEN_POPOUT, p({

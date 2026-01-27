@@ -2,7 +2,7 @@
 /** chunk id: 474951, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(268218),
     i = n(274794);
@@ -14,4 +14,4 @@ let a = async () => {
         webpackId: 88137
     });
     return e
-}, s = new i.A(a)
+}, o = new i.A(a)

@@ -8,7 +8,7 @@ var r = n(439372),
     i = n(510398),
     a = n(587952);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends r.A {
+class s extends r.A {
     handleVoiceChannelSelect(e) {
         let {
             guildId: t,
@@ -33,11 +33,11 @@ class o extends r.A {
         i.$.trigger()
     }
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             VOICE_CHANNEL_SELECT: this.handleVoiceChannelSelect,
             CALL_CREATE: this.handleCallCreate,
             USER_SETTINGS_MODAL_OPEN: this.handleUserSettingsModalOpen
         })
     }
 }
-let l = new o
+let l = new s

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(573648),
-    s = n(688810),
-    o = n(882997),
+    o = n(688810),
+    s = n(882997),
     l = n(962173),
     c = n(939496),
     u = n(993401),
@@ -24,7 +24,7 @@ function _(e) {
         onAction: _
     } = e, {
         newestAnalyticsLocation: h
-    } = (0, s.Ay)(), {
+    } = (0, o.Ay)(), {
         themeType: m
     } = (0, c.E)(), g = m === f.d.MODAL_V2;
     if ((0, i.bG)([l.A], () => null != l.A.getAccount(null, t))) return null;
@@ -33,7 +33,7 @@ function _(e) {
         let n = t === d.fg2.XBOX;
         null == _ || _({
             action: n ? "PRESS_CONNECT_XBOX_BUTTON" : "PRESS_CONNECT_PLAYSTATION_BUTTON"
-        }), (0, o.A)({
+        }), (0, s.A)({
             platformType: t,
             location: h
         })

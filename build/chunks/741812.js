@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(73153),
     a = n(994500),
-    s = n(977997),
-    o = n(158160);
+    o = n(977997),
+    s = n(158160);
 let l = {},
     c = {},
     u = new Set;
@@ -19,7 +19,7 @@ function d() {
 
 function f() {
     d();
-    let e = s.A.getAllVoiceStates(),
+    let e = o.A.getAllVoiceStates(),
         t = !1;
     for (let n of Object.values(e))
         for (let e of Object.values(n)) null != e.channelId && (t = h(e.channelId, e.userId) || t);
@@ -29,7 +29,7 @@ function f() {
 function p(e) {
     let {
         relationship: t
-    } = e, n = s.A.getVoiceStateForUser(t.id);
+    } = e, n = o.A.getVoiceStateForUser(t.id);
     return null != n && null != n.channelId && h(n.channelId, t.id)
 }
 
@@ -50,15 +50,15 @@ function h(e, t) {
     let n = !1,
         r = !1,
         i = new Set(l[e]),
-        s = a.A.isBlocked(t);
-    s && !i.has(t) ? (i.add(t), r = !0, n = !0) : s || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
+        o = a.A.isBlocked(t);
+    o && !i.has(t) ? (i.add(t), r = !0, n = !0) : o || (n = i.delete(t)), 0 === i.size && n ? delete l[e] : n && (l[e] = i);
     let u = new Set(c[e]),
         d = a.A.isIgnored(t);
-    return d && !u.has(t) ? (u.add(t), r = !0, n = !0) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && o.Ay.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
+    return d && !u.has(t) ? (u.add(t), r = !0, n = !0) : d || (n = u.delete(t)), 0 === u.size && n ? delete c[e] : n && (c[e] = u), r && s.Ay.handleBlockedOrIgnoredUserVoiceChannelJoin(e, t), n
 }
 class m extends r.Ay.Store {
     initialize() {
-        this.waitFor(a.A, s.A)
+        this.waitFor(a.A, o.A)
     }
     getBlockedUsersForVoiceChannel(e) {
         var t;

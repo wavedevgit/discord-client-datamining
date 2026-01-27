@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(155718),
     a = n(594061),
-    s = n(723702),
-    o = n(847381);
+    o = n(723702),
+    s = n(847381);
 
 function l(e) {
     return a.bW.loadIfNecessary(), r.useMemo(() => {
@@ -29,7 +29,7 @@ let c = (e, t) => {
         }
     }), n.map((e, t) => [e, t]).filter(e => {
         var t, n;
-        let [r] = e, a = null == (n = r.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, o.A)((0, s.getOS)())]) ? void 0 : t.label_type;
+        let [r] = e, a = null == (n = r.application.embeddedActivityConfig) || null == (t = n.client_platform_config[(0, s.A)((0, o.getOS)())]) ? void 0 : t.label_type;
         return !!a && (a === i.Hr.NEW || a === i.Hr.UPDATED)
     }).forEach(e => {
         let [t, r] = e, i = null != t.application.embeddedActivityConfig && null != t.application.embeddedActivityConfig.shelf_rank ? t.application.embeddedActivityConfig.shelf_rank - 1 : r;

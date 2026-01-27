@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(908289),
-    s = n(960076),
-    o = n(985018);
+    o = n(960076),
+    s = n(985018);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -60,7 +60,7 @@ function f(e) {
         variant: l = "secondary",
         size: d = "sm"
     } = e, f = u(e, ["activity", "onAction", "variant", "size"]);
-    if (!(0, s.A)(t)) return null;
+    if (!(0, o.A)(t)) return null;
     let p = () => {
         null == n || n();
         let e = (0, a.A)(t);
@@ -69,7 +69,7 @@ function f(e) {
     return (0, r.jsx)(i.Button, c({
         variant: l,
         size: d,
-        text: o.intl.string(o.t.I6JG46),
+        text: s.intl.string(s.t.I6JG46),
         onClick: p,
         fullWidth: !0
     }, f))

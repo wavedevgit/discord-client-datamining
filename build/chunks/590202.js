@@ -3,8 +3,8 @@
 "use strict";
 n.d(t, {
     Cy: () => l,
-    NI: () => s,
-    fF: () => o,
+    NI: () => o,
+    fF: () => s,
     jO: () => a
 });
 var r = n(341915);
@@ -15,12 +15,12 @@ function a(e) {
     return null != (t = i.find(t => r.uF[t] === e)) ? t : ""
 }
 
-function s(e) {
+function o(e) {
     var t, n, r;
     return (null == (t = e.userStatus) ? void 0 : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? void 0 : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? void 0 : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function o(e, t, n) {
+function s(e, t, n) {
     return {
         content_id: e,
         content_name: a(e),

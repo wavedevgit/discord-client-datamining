@@ -7,8 +7,8 @@ n.d(t, {
 }), n(896048), n(321073);
 var r, i = n(635377),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(390248),
     c = n(141468),
     u = n(734057),
@@ -219,7 +219,7 @@ function D(e) {
     return O(t, e => R(n, e))
 }
 
-function x(e) {
+function L(e) {
     let {
         message: t
     } = e;
@@ -229,18 +229,18 @@ function x(e) {
     })
 }
 
-function L() {
+function x() {
     y.clear()
 }
 
-function j(e) {
+function M(e) {
     let {
         firstMessages: t
     } = e;
     return null != t && O(t, e => b(e))
 }
 
-function M(e) {
+function j(e) {
     let {
         threads: t
     } = e;
@@ -251,7 +251,7 @@ function M(e) {
         return null != t && b(t)
     })
 }
-class k extends(r = s.Ay.Store) {
+class k extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(d.A, u.A)
     }
@@ -269,25 +269,25 @@ class k extends(r = s.Ay.Store) {
     }
 }
 p(k, "displayName", "ReferencedMessageStore");
-let U = new k(o.h, {
+let U = new k(s.h, {
     CACHE_LOADED: A,
     LOCAL_MESSAGES_LOADED: v,
     LOAD_MESSAGES_SUCCESS: v,
     LOAD_MESSAGES_AROUND_SUCCESS: v,
     SEARCH_MESSAGES_SUCCESS: I,
     MOD_VIEW_SEARCH_MESSAGES_SUCCESS: I,
-    LOAD_THREADS_SUCCESS: j,
-    LOAD_ARCHIVED_THREADS_SUCCESS: j,
+    LOAD_THREADS_SUCCESS: M,
+    LOAD_ARCHIVED_THREADS_SUCCESS: M,
     MESSAGE_EXPLICIT_CONTENT_SCAN_TIMEOUT: T,
-    LOAD_FORUM_POSTS: M,
+    LOAD_FORUM_POSTS: j,
     MESSAGE_CREATE: S,
     MESSAGE_UPDATE: C,
     MESSAGE_DELETE: P,
     MESSAGE_DELETE_BULK: D,
-    CREATE_PENDING_REPLY: x,
+    CREATE_PENDING_REPLY: L,
     CHANNEL_DELETE: N,
     THREAD_DELETE: N,
     GUILD_DELETE: w,
-    CONNECTION_OPEN: L,
-    LOGOUT: L
+    CONNECTION_OPEN: x,
+    LOGOUT: x
 })

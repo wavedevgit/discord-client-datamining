@@ -1,43 +1,42 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 622413, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 }), n(228524);
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(397927),
-    o = n(233645);
-let l = e => {
+    l = n.n(i),
+    a = n(397927),
+    s = n(233645);
+let o = e => {
     let {
         renderTitle: t,
         renderTagline: n,
         renderActions: i,
-        renderMedia: l,
+        renderMedia: o,
         className: c,
         isHorizontal: u = !1
     } = e;
     return (0, r.jsxs)("div", {
-        className: a()(o.Vs, {
-            [o.ZQ]: u
+        className: l()(s.Vs, {
+            [s.ZQ]: u
         }, c),
         children: [(0, r.jsx)("div", {
-            className: a()(o.$_, {
-                [o.rO]: u
+            className: l()(s.$_, {
+                [s.rO]: u
             }),
-            children: null == l ? void 0 : l()
+            children: null == o ? void 0 : o()
         }), (0, r.jsxs)("div", {
-            className: o.h_,
-            children: [(0, r.jsx)(s.H, {
-                className: o.DD,
+            className: s.h_,
+            children: [(0, r.jsx)(a.H, {
+                className: s.DD,
                 children: null == t ? void 0 : t()
             }), (0, r.jsx)("div", {
-                className: o.dS,
+                className: s.dS,
                 children: null == n ? void 0 : n()
             }), (0, r.jsx)("div", {
-                className: o.o1,
+                className: s.o1,
                 children: null == i ? void 0 : i()
             })]
         })]

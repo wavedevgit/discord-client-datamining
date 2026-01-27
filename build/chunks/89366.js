@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(311907),
     i = n(287809),
     a = n(166403),
-    s = n(816733),
-    o = n(378135),
+    o = n(816733),
+    s = n(378135),
     l = n(788868);
 let c = () => {
     let e = (0, r.bG)([a.A], () => a.A.getPremiumTypeSubscription());
@@ -24,5 +24,5 @@ function u() {
 }
 
 function d() {
-    return l.MB.map(e => s.A.getUserTrialOffer(e)).filter(e => null != e && !(0, o.P)(e)).shift()
+    return l.MB.map(e => o.A.getUserTrialOffer(e)).filter(e => null != e && !(0, s.P)(e)).shift()
 }

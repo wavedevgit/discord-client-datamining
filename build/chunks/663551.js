@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(158954),
+    o = n.n(a),
+    s = n(158954),
     l = n(86968),
     c = n(900283),
     u = n(563014),
@@ -60,46 +60,55 @@ function y(e) {
     let {
         color: t = "default",
         label: n,
-        checked: a,
-        subtext: h,
-        disabled: g,
-        isFocused: y,
-        menuItemProps: b,
-        action: O
+        void_label: a,
+        checked: h,
+        subtext: g,
+        subtextLineClamp: y,
+        disabled: b,
+        isFocused: O,
+        menuItemProps: v,
+        action: A
     } = e, {
-        onInteraction: v
-    } = i.useContext(c.x), A = i.useRef(null);
+        onInteraction: I
+    } = i.useContext(c.x), S = i.useRef(null);
     i.useEffect(() => {
-        y && (0, u.Y)(A)
-    }, [y]);
-    let I = i.useCallback(e => {
-        O(e), null == v || v({
+        O && (0, u.Y)(S)
+    }, [O]);
+    let T = i.useCallback(e => {
+        A(e), null == I || I({
             type: c.Q.RADIO
         })
-    }, [O, v]);
-    return (0, r.jsxs)(o.DUT, E(m({
-        innerRef: A,
-        className: s()(_.item, _.labelContainer, p.jV[t], {
-            [_.disabled]: g,
-            [_.focused]: y
+    }, [A, I]);
+    return (0, r.jsxs)(s.DUT, E(m({
+        innerRef: S,
+        className: o()(_.item, _.labelContainer, p.jV[t], {
+            [_.disabled]: b,
+            [_.focused]: O
         }),
-        onClick: g ? void 0 : I
-    }, b), {
-        "aria-checked": a,
-        "aria-disabled": g,
+        onClick: b ? void 0 : T
+    }, v), {
+        "aria-checked": h,
+        "aria-disabled": b,
         children: [(0, r.jsxs)("div", {
             className: _.label,
             children: [(0, r.jsx)(f.V, {
-                children: (0, l.J)(n, e)
-            }), null != h && (0, r.jsx)("div", {
-                className: _.subtext,
-                children: h
+                children: (0, l.J)(null != a ? a : n, {
+                    isFocused: O,
+                    disabled: b
+                })
+            }), null != g && (0, r.jsx)(s.EYj, {
+                variant: "text-xs/normal",
+                className: o()(_.subtext, {
+                    [_.subtextLineClamp]: null != y
+                }),
+                lineClamp: y,
+                children: g
             })]
         }), (0, r.jsx)("div", {
             className: _.iconContainer,
             children: (0, r.jsx)(d.TN6, {
-                checked: a,
-                disabled: g,
+                checked: h,
+                disabled: b,
                 radioItemIconClassName: _.radioIcon
             })
         })]

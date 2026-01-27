@@ -1,44 +1,43 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 11810 **/
 /** chunk id: 286056, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => c
 });
 var r = n(627968);
 n(64700);
 var i = n(601047),
     l = n(243056),
-    s = n(985018);
-let a = function(e) {
+    o = n(985018);
+let c = function(e) {
     let {
         formField: t,
         index: n,
-        isDragEnabled: a,
-        isDropHovered: o,
-        onDrop: c,
+        isDragEnabled: c,
+        isDropHovered: s,
+        onDrop: a,
         onEdit: d,
         onRemove: u,
-        canRemove: g,
-        actionsLocation: m,
+        canRemove: f,
+        actionsLocation: j,
         fieldStyle: p
     } = e, {
-        label: f,
-        placeholder: b
+        label: b,
+        placeholder: y
     } = t;
     return (0, r.jsx)(l.A, {
         field: t,
         index: n,
-        isDragEnabled: a,
-        isDropHovered: o,
-        onDrop: c,
+        isDragEnabled: c,
+        isDropHovered: s,
+        onDrop: a,
         onEdit: d,
         onRemove: u,
-        title: f,
-        canRemove: g,
-        actionsLocation: m,
+        title: b,
+        canRemove: f,
+        actionsLocation: j,
         fieldStyle: p,
         children: (0, r.jsx)(i.PC, {
-            placeholder: null != b ? b : s.intl.string(s.t["Sqn+Wh"]),
+            placeholder: null != y ? y : o.intl.string(o.t["Sqn+Wh"]),
             disabled: !0
         })
     })

@@ -4,11 +4,11 @@ n.d(e, {
     W: () => s,
     u: () => a
 });
-var i = n(993408),
-    r = n(442759);
+var r = n(993408),
+    i = n(442759);
 
 function l(t) {
-    let e = new r.Ym(t.items);
+    let e = new i.Ym(t.items);
     return {
         firstProfileEffect: e.firstProfileEffect,
         firstAvatarDecoration: e.firstAvatarDecoration,
@@ -20,13 +20,13 @@ function a(t) {
     let {
         firstAvatarDecoration: e,
         firstProfileEffect: n,
-        firstNameplate: i
+        firstNameplate: r
     } = l(t);
-    return null != e && null != n && null == i || null != e && null != n && null != i
+    return null != e && null != n && null == r || null != e && null != n && null != r
 }
 
 function s(t) {
-    if (!(0, i.aw)(t)) return !1;
+    if (!(0, r.aw)(t)) return !1;
     let {
         firstNameplate: e
     } = l(t);

@@ -22,7 +22,7 @@ function a(e, t) {
     return t && ("object" == typeof t || "function" == typeof t) ? t : e
 }
 
-function s(e, t) {
+function o(e, t) {
     if ("function" != typeof t && null !== t) throw TypeError("Super expression must either be null or a function, not " + typeof t);
     e.prototype = Object.create(t && t.prototype, {
         constructor: {
@@ -33,7 +33,7 @@ function s(e, t) {
         }
     }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t)
 }
-var o = n(698380);
+var s = n(698380);
 n(313319);
 var l = n(958554),
     c = n(82322),
@@ -44,7 +44,7 @@ e.exports = function(e) {
         var r = a(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this));
         return r._a = "number" == typeof e ? new l(e) : e, r._b = "number" == typeof n ? new l(n) : n, r._listeners = {}, r
     }
-    return s(t, e), r(t, [{
+    return o(t, e), r(t, [{
         key: "__getValue",
         value: function() {
             return this._a.__getValue() + this._b.__getValue()
@@ -86,4 +86,4 @@ e.exports = function(e) {
             this._a.__removeChild(this), this._b.__removeChild(this)
         }
     }]), t
-}(o)
+}(s)

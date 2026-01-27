@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(73153),
     i = n(555444),
     a = n(430452),
-    s = n(652215),
-    o = n(731854);
+    o = n(652215),
+    s = n(731854);
 
 function l(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
@@ -19,10 +19,10 @@ function l(e) {
         isPriority: t,
         isLatched: n
     });
-    let l = a.A.getMode() === s.TBI.PUSH_TO_TALK,
+    let l = a.A.getMode() === o.TBI.PUSH_TO_TALK,
         c = (0, i.H)({
             location: "doPTT",
             autoTrackExposure: !1
         }).enableLatching && !0 === a.A.getModeOptions().pttLatchingEnabled;
-    a.A.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), o.x.DEFAULT)
+    a.A.getMediaEngine().eachConnection(r => r.setForceAudioInput(e, t, l && c && !n && !e), s.x.DEFAULT)
 }

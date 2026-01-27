@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 914703, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
@@ -21,7 +21,7 @@ function u(e) {
         label: p
     } = e, h = (0, i.A)(t, "Notifications Bell"), f = (0, s.A)(t), g = (0, o.X)(t);
     return (0, r.jsxs)(l.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-migrated-auto": !0,
         navId: d,
         onClose: n,
         "aria-label": p,

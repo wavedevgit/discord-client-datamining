@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(397927),
     c = n(964486),
     u = n(235986),
@@ -68,7 +68,7 @@ function S(e) {
         questId: t,
         survey: n,
         transitionState: a,
-        onClose: s,
+        onClose: o,
         onSubmit: f
     } = e, _ = (0, p.C5)(t), [y, O] = i.useState(0), [S, C] = (0, l.zhh)(() => ({
         from: {
@@ -85,11 +85,11 @@ function S(e) {
     }, R = async e => {
         1 === e && (await C({
             width: "100%"
-        }), s())
+        }), o())
     };
     return (0, c.Ay)(() => {
         null != _ && d.default.track(h.HAw.QUEST_SURVEY_DISPLAYED, N(_, n))
-    }), null == _ && s(), (0, r.jsx)(l.EOs, {
+    }), null == _ && o(), (0, r.jsx)(l.EOs, {
         "data-migration-pending": !0,
         transitionState: a,
         size: l.rIJ.DYNAMIC,
@@ -109,7 +109,7 @@ function S(e) {
                     children: [(0, r.jsx)(l.s_y, {
                         "data-migration-pending": !0,
                         className: g.PV,
-                        onClick: s
+                        onClick: o
                     }), (0, r.jsx)("img", {
                         src: E,
                         alt: "",
@@ -154,8 +154,8 @@ function S(e) {
                         children: [(0, r.jsx)(l.Button, {
                             variant: "primary",
                             text: m.intl.string(m.t.cpT0Cq),
-                            onClick: s
-                        }), (0, r.jsx)(o.animated.div, {
+                            onClick: o
+                        }), (0, r.jsx)(s.animated.div, {
                             className: g.ce,
                             style: S
                         })]
@@ -173,7 +173,7 @@ function T(e) {
         onClick: i
     } = e;
     return (0, r.jsxs)(l.DUT, {
-        className: s()(g.z5, t),
+        className: o()(g.z5, t),
         onClick: () => i(n),
         children: [(0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",

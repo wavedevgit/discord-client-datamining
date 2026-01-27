@@ -4,15 +4,15 @@
 n.d(t, {
     A: () => a
 }), n(896048);
-var l = n(64700),
-    r = n(770178),
+var r = n(64700),
+    l = n(770178),
     i = n(765548);
 let a = () => {
-    let [e, t] = l.useState(400), n = (0, i.A)(e => {
+    let [e, t] = r.useState(400), n = (0, i.A)(e => {
         t(e.target.clientWidth)
     });
     return {
-        containerRef: (0, r.w)(n),
+        containerRef: (0, l.w)(n),
         containerWidth: e
     }
 }

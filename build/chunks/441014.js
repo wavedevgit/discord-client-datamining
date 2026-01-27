@@ -22,12 +22,12 @@ function i(e) {
         n = e.pop();
     if (n !== t) {
         e[0] = n;
-        for (var r = 0, i = e.length, s = i >>> 1; r < s;) {
-            var o = 2 * (r + 1) - 1,
-                l = e[o],
-                c = o + 1,
+        for (var r = 0, i = e.length, o = i >>> 1; r < o;) {
+            var s = 2 * (r + 1) - 1,
+                l = e[s],
+                c = s + 1,
                 u = e[c];
-            if (0 > a(l, n)) c < i && 0 > a(u, l) ? (e[r] = u, e[c] = n, r = c) : (e[r] = l, e[o] = n, r = o);
+            if (0 > a(l, n)) c < i && 0 > a(u, l) ? (e[r] = u, e[c] = n, r = c) : (e[r] = l, e[s] = n, r = s);
             else if (c < i && 0 > a(u, n)) e[r] = u, e[c] = n, r = c;
             else break
         }
@@ -40,9 +40,9 @@ function a(e, t) {
     return 0 !== n ? n : e.id - t.id
 }
 if (t.unstable_now = void 0, "object" == typeof performance && "function" == typeof performance.now) {
-    var s, o = performance;
+    var o, s = performance;
     t.unstable_now = function() {
-        return o.now()
+        return s.now()
     }
 } else {
     var l = Date,
@@ -75,7 +75,7 @@ function v(e) {
 
 function A(e) {
     if (g = !1, v(e), !m)
-        if (null !== r(u)) m = !0, I || (I = !0, s());
+        if (null !== r(u)) m = !0, I || (I = !0, o());
         else {
             var t = r(d);
             null !== t && D(A, t.startTime - e)
@@ -104,10 +104,10 @@ function w() {
                 try {
                     a: {
                         for (v(e), p = r(u); null !== p && !(p.expirationTime > e && N());) {
-                            var o = p.callback;
-                            if ("function" == typeof o) {
+                            var s = p.callback;
+                            if ("function" == typeof s) {
                                 p.callback = null, _ = p.priorityLevel;
-                                var l = o(p.expirationTime <= e);
+                                var l = s(p.expirationTime <= e);
                                 if (e = t.unstable_now(), "function" == typeof l) {
                                     p.callback = l, v(e), n = !0;
                                     break a
@@ -130,20 +130,20 @@ function w() {
             }
         }
         finally {
-            n ? s() : I = !1
+            n ? o() : I = !1
         }
     }
 }
-if ("function" == typeof O) s = function() {
+if ("function" == typeof O) o = function() {
     O(w)
 };
 else if ("u" > typeof MessageChannel) {
     var R = new MessageChannel,
         P = R.port2;
-    R.port1.onmessage = w, s = function() {
+    R.port1.onmessage = w, o = function() {
         P.postMessage(null)
     }
-} else s = function() {
+} else o = function() {
     y(w, 0)
 };
 
@@ -196,8 +196,8 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
         _ = n
     }
 }, t.unstable_scheduleCallback = function(e, i, a) {
-    var o = t.unstable_now();
-    switch (a = "object" == typeof a && null !== a && "number" == typeof(a = a.delay) && 0 < a ? o + a : o, e) {
+    var s = t.unstable_now();
+    switch (a = "object" == typeof a && null !== a && "number" == typeof(a = a.delay) && 0 < a ? s + a : s, e) {
         case 1:
             var l = -1;
             break;
@@ -220,7 +220,7 @@ t.unstable_IdlePriority = 5, t.unstable_ImmediatePriority = 1, t.unstable_LowPri
         startTime: a,
         expirationTime: l,
         sortIndex: -1
-    }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(S), S = -1) : g = !0, D(A, a - o))) : (e.sortIndex = l, n(u, e), m || h || (m = !0, I || (I = !0, s()))), e
+    }, a > s ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(S), S = -1) : g = !0, D(A, a - s))) : (e.sortIndex = l, n(u, e), m || h || (m = !0, I || (I = !0, o()))), e
 }, t.unstable_shouldYield = N, t.unstable_wrapCallback = function(e) {
     var t = _;
     return function() {

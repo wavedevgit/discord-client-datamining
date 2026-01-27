@@ -1,64 +1,63 @@
-/** Chunk was on web.js **/
+/** Chunk was on 84704 **/
 /** chunk id: 615715, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    default: () => _
+    default: () => R
 }), n(896048);
-var r = n(627968),
-    i = n(64700),
+var l = n(627968),
+    s = n(64700),
     a = n(311907),
-    s = n(181658),
+    i = n(181658),
     o = n(557722),
-    l = n(515258),
-    c = n(870570),
-    u = n(287809),
-    d = n(446868),
-    f = n(662758),
-    p = n(985018);
-let _ = i.forwardRef(function(e, t) {
+    r = n(515258),
+    u = n(870570),
+    E = n(287809),
+    c = n(446868),
+    d = n(662758),
+    h = n(985018);
+let R = s.forwardRef(function(e, t) {
     let {
         onAddedPhone: n,
-        onClose: _,
-        transitionState: h,
-        reason: m,
-        layerContext: g
-    } = e, E = (0, a.bG)([u.default], () => u.default.getCurrentUser()), y = (0, a.bG)([c.A], () => c.A.getAction()), [b, O] = i.useState(null), [v, A] = i.useState(null), [I, S] = i.useState(null), [T, C] = i.useState(!1), N = i.useCallback(async e => {
-        C(!0);
+        onClose: R,
+        transitionState: I,
+        reason: p,
+        layerContext: _
+    } = e, f = (0, a.bG)([E.default], () => E.default.getCurrentUser()), g = (0, a.bG)([u.A], () => u.A.getAction()), [C, m] = s.useState(null), [b, A] = s.useState(null), [y, F] = s.useState(null), [v, P] = s.useState(!1), x = s.useCallback(async e => {
+        P(!0);
         try {
-            d.A.isPhoneReverification(E, y) ? await o.A.beginReverifyPhone(e, m) : await o.A.beginAddPhone(e, m), S(null), O(e)
+            c.A.isPhoneReverification(f, g) ? await o.A.beginReverifyPhone(e, p) : await o.A.beginAddPhone(e, p), F(null), m(e)
         } catch (e) {
-            S(new s.A(e))
+            F(new i.A(e))
         }
-        C(!1)
-    }, [E, m, y]), w = i.useCallback(async e => {
-        if (null != b && null != E) {
-            C(!0);
+        P(!1)
+    }, [f, p, g]), V = s.useCallback(async e => {
+        if (null != C && null != f) {
+            P(!0);
             try {
                 let {
                     token: t
-                } = await o.A.verifyPhone(b, e);
-                S(null), A(t)
+                } = await o.A.verifyPhone(C, e);
+                F(null), A(t)
             } catch (e) {
-                S(new s.A(e))
+                F(new i.A(e))
             }
-            C(!1)
+            P(!1)
         }
-    }, [E, b]), R = i.useCallback(async e => {
-        null != v && (d.A.isPhoneReverification(E, y) ? await o.A.reverifyPhone(v, e, m) : await o.A.addPhone(v, e, m), null == n || n(), _())
-    }, [n, _, v, m, E, y]);
-    return null != v ? (0, r.jsx)(f.default, {
-        onClose: _,
-        transitionState: h,
-        title: p.intl.string(p.t.ZtCDc2),
-        handleSubmit: R
-    }) : (0, r.jsx)(l.default, {
-        onClose: _,
-        transitionState: h,
-        error: null == I ? void 0 : I.getAnyErrorMessage(),
-        working: T,
-        validPhone: null != b,
-        onAddPhone: N,
-        onVerifyPhone: w,
-        layerContext: g
+    }, [f, C]), B = s.useCallback(async e => {
+        null != b && (c.A.isPhoneReverification(f, g) ? await o.A.reverifyPhone(b, e, p) : await o.A.addPhone(b, e, p), null == n || n(), R())
+    }, [n, R, b, p, f, g]);
+    return null != b ? (0, l.jsx)(d.default, {
+        onClose: R,
+        transitionState: I,
+        title: h.intl.string(h.t.ZtCDc2),
+        handleSubmit: B
+    }) : (0, l.jsx)(r.default, {
+        onClose: R,
+        transitionState: I,
+        error: null == y ? void 0 : y.getAnyErrorMessage(),
+        working: v,
+        validPhone: null != C,
+        onAddPhone: x,
+        onVerifyPhone: V,
+        layerContext: _
     })
 })

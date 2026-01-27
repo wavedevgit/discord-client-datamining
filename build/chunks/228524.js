@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(257943),
     a = n(860511),
-    s = n(410323),
-    o = n(210140),
+    o = n(410323),
+    s = n(210140),
     l = n(339626),
     c = n(524152),
     u = n(304880),
@@ -22,16 +22,16 @@ if (i && l(p) && (!("description" in _) || void 0 !== p().description)) {
         };
     f(m, p), m.prototype = _, _.constructor = m;
     var g = "Symbol(description detection)" === String(p("description detection")),
-        E = s(_.valueOf),
-        y = s(_.toString),
+        E = o(_.valueOf),
+        y = o(_.toString),
         b = /^Symbol\((.*)\)[^)]+$/,
-        O = s("".replace),
-        v = s("".slice);
+        O = o("".replace),
+        v = o("".slice);
     d(_, "description", {
         configurable: !0,
         get: function() {
             var e = E(this);
-            if (o(h, e)) return "";
+            if (s(h, e)) return "";
             var t = y(e),
                 n = g ? v(t, 7, -1) : O(t, b, "$1");
             return "" === n ? void 0 : n

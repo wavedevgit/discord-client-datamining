@@ -7,18 +7,18 @@ n.d(t, {
 var r = n(587895),
     i = n(337095),
     a = n(611010),
-    s = n(734057),
-    o = n(795816),
+    o = n(734057),
+    s = n(795816),
     l = n(692957);
 async function c(e, t) {
     var n;
     let c = r.A.getApplication(e);
     if (u(c)) return c;
-    let d = null == (n = s.A.getChannel(t)) ? void 0 : n.guild_id,
+    let d = null == (n = o.A.getChannel(t)) ? void 0 : n.guild_id,
         {
             activityConfigs: f,
             applications: p
-        } = await (0, o.LV)({
+        } = await (0, s.LV)({
             guildId: d
         }),
         _ = (0, l.A)({

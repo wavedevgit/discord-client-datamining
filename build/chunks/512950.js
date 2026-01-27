@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(934551),
+    o = n.n(a),
+    s = n(934551),
     l = n(834730),
     c = n(154624),
     u = function(e) {
@@ -20,15 +20,15 @@ function d(e, t) {
     if (null != t) return t;
     switch (e) {
         case "warn":
-            return o.WarningIcon;
+            return s.WarningIcon;
         case "info":
-            return o.CircleInformationIcon;
+            return s.CircleInformationIcon;
         case "danger":
-            return o.CircleErrorIcon;
+            return s.CircleErrorIcon;
         case "positive":
-            return o.CheckmarkLargeIcon;
+            return s.CheckmarkLargeIcon;
         case "preview":
-            return o.ScienceIcon
+            return s.ScienceIcon
     }
 }
 
@@ -62,13 +62,13 @@ function _(e) {
         messageType: n,
         action: i,
         className: a,
-        textColor: o = "text-default",
+        textColor: s = "text-default",
         textVariant: u = "text-sm/medium",
         icon: d,
         hidden: _ = !1
     } = e, h = f(n);
     return (0, r.jsx)("div", {
-        className: s()(c.kL, h, a, {
+        className: o()(c.kL, h, a, {
             [c.R]: _
         }),
         children: (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function _(e) {
                 })
             }), (0, r.jsx)(l.E, {
                 className: c.Qq,
-                color: o,
+                color: s,
                 variant: u,
                 children: t
             }), null != i ? (0, r.jsx)("div", {

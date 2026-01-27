@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 197161, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     Ss: "selectGuild__39466",
     Bq: "selectGuildIcon__39466",

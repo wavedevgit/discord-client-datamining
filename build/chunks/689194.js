@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(65821), n(457529);
 var r, i = n(574381),
     a = n(311907),
-    s = n(73153),
-    o = n(156186),
+    o = n(73153),
+    s = n(156186),
     l = n(967370),
     c = n(954571),
     u = n(728458),
@@ -80,7 +80,7 @@ class y extends(r = a.Ay.Store) {
                     }
                 }), c.default.track(p.HAw.PREMIUM_FEATURE_ERROR, {
                     error_message: e instanceof Error ? e.message : JSON.stringify(e),
-                    error_source: o.q.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
+                    error_source: s.q.PRIVATE_BROWSING_PERK_CONFIGURE_LICENSE
                 }), !t) throw e
         }
     }
@@ -139,4 +139,4 @@ class y extends(r = a.Ay.Store) {
     }
 }
 _(y, "displayName", "WarpClientStore");
-let b = new y(s.h, {})
+let b = new y(o.h, {})

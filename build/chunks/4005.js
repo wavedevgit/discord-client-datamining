@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(158954),
-    s = n(311907),
-    o = n(397927),
+    o = n(311907),
+    s = n(397927),
     l = n(827343),
     c = n(430452),
     u = n(985018);
@@ -35,17 +35,17 @@ function f(e) {
     return e
 }
 let p = () => {
-    let e = (0, s.bG)([c.A], () => c.A.isInteractionRequired(), []),
+    let e = (0, o.bG)([c.A], () => c.A.isInteractionRequired(), []),
         t = i.useRef(null);
 
     function n() {
-        null !== t.current && ((0, o.OoC)(t.current), t.current = null)
+        null !== t.current && ((0, s.OoC)(t.current), t.current = null)
     }
 
     function d() {
         l.A.interact()
     }
-    return i.useEffect(() => (e ? t.current = (0, o.qfG)(e => (0, r.jsx)(a.Modal, f({
+    return i.useEffect(() => (e ? t.current = (0, s.qfG)(e => (0, r.jsx)(a.Modal, f({
         title: u.intl.string(u.t.dLLxC2),
         subtitle: u.intl.string(u.t["64lmtw"]),
         actions: [{

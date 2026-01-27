@@ -8,14 +8,14 @@ let r = n(964558),
     i = n(941242),
     a = n(157014);
 t.DEFAULT_LOCALE = "en-US";
-class s {
+class o {
     constructor({
         initialLocale: e = t.DEFAULT_LOCALE,
         defaultLocale: n = t.DEFAULT_LOCALE,
         formatConfig: i = r.DEFAULT_FORMAT_CONFIG,
-        forceLookupMatcher: s = !1
+        forceLookupMatcher: o = !1
     }) {
-        this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = s, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
+        this.onLocaleChange = e => (this._localeSubscriptions.add(e), () => this._localeSubscriptions.delete(e)), this.currentLocale = e, this.defaultLocale = n, this.formatConfig = i, this._forceLookupMatcher = o, this.data = (0, a.makeDataFormatters)([this.currentLocale, this.defaultLocale], this.formatConfig, this._forceLookupMatcher), this._localeSubscriptions = new Set
     }
     withFormatters(e) {
         for (let [t, n] of Object.entries(e)) this[t] = this.makeFormatFunction(n);
@@ -54,4 +54,4 @@ class s {
         })
     }
 }
-t.IntlManager = s
+t.IntlManager = o

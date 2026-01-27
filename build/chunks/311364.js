@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 311364, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    Y: () => a
+    Y: () => l
 }), n(896048);
 var r = n(627968);
 n(64700);
 var i = n(688810);
 
-function a(e) {
+function l(e) {
     let {
         analyticsLocations: t
     } = (0, i.Ay)(...e.newLocations);

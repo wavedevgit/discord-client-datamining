@@ -10,9 +10,9 @@ n.r(t), n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(635377),
-    s = n.n(a),
-    o = n(280230),
-    l = n.n(o),
+    o = n.n(a),
+    s = n(280230),
+    l = n.n(s),
     c = n(436857),
     u = n(999443),
     d = n(542664);
@@ -22,7 +22,7 @@ let p = (0, f.A)([d.A.PROFILE_BIO_RULES, (0, u.A)({
         enableBuildOverrides: !1,
         mustConfirmExternalLink: !0
     })]),
-    _ = new(s())({
+    _ = new(o())({
         max: 2e3
     }),
     h = c.aV(p),

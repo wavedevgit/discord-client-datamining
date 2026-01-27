@@ -3,20 +3,20 @@
 "use strict";
 n.d(t, {
     A: () => l,
-    t: () => o
+    t: () => s
 });
 var r = n(562465),
     i = n(73153),
     a = n(895944),
-    s = n(652215);
-async function o() {
+    o = n(652215);
+async function s() {
     i.h.dispatch({
         type: "PROGRAM_REWARDS_FETCH"
     });
     try {
         var e;
         let t = null != (e = (await r.Bo.get({
-            url: s.Rsh.PROGRAM_REWARDS,
+            url: o.Rsh.PROGRAM_REWARDS,
             rejectWithError: !0
         })).body.rewards) ? e : [];
         i.h.dispatch({
@@ -30,5 +30,5 @@ async function o() {
     }
 }
 async function l() {
-    a.A.shouldFetch() && await o()
+    a.A.shouldFetch() && await s()
 }

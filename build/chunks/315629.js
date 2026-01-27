@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(352661);
+    o = n(352661);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -74,10 +74,10 @@ function p(e) {
         color: t = "purple",
         offsetBottom: n = 0,
         children: i
-    } = e, o = d(e, ["color", "offsetBottom", "children"]), c = "object" == typeof t && null != t;
-    return (0, r.jsx)("div", u(l({}, o), {
-        className: a()(s.container, c ? void 0 : s[t], o.className),
-        style: u(l({}, o.style, c ? {
+    } = e, s = d(e, ["color", "offsetBottom", "children"]), c = "object" == typeof t && null != t;
+    return (0, r.jsx)("div", u(l({}, s), {
+        className: a()(o.container, c ? void 0 : o[t], s.className),
+        style: u(l({}, s.style, c ? {
             "--custom-gradient-color-start": t.start.css,
             "--custom-gradient-color-end": t.end.css
         } : {}), {

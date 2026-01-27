@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(734057),
     i = n(430452),
     a = n(383501),
-    s = n(487329),
-    o = n(601900);
+    o = n(487329),
+    s = n(601900);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -38,8 +38,8 @@ let u = {
             voiceState: n
         } = e, l = r.A.getChannel(t), u = (null == l ? void 0 : l.isGuildStageVoice()) && (null == n ? void 0 : n.suppress), d = 0 === Object.keys(i.A.getInputDevices()).length, f = a.A.getMediaSessionId();
         if (d && null != l && null != f && !u) return [c({
-            type: s.iy.NO_INPUT_DEVICES
-        }, (0, o.jY)())]
+            type: o.iy.NO_INPUT_DEVICES
+        }, (0, s.jY)())]
     },
     makeErrorContextKey: e => "".concat(e.mediaSessionId)
 }

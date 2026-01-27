@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(812729),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(734057),
     c = n(71393),
     u = n(383501),
@@ -32,12 +32,12 @@ function b(e, t, n) {
 let O = null;
 
 function v() {
-    var e, t, n, r, i, a, s;
-    let o = d.A.getVoiceChannelId();
-    if (null == o) return null;
-    let u = m.A.getStageInstanceByChannel(o);
+    var e, t, n, r, i, a, o;
+    let s = d.A.getVoiceChannelId();
+    if (null == s) return null;
+    let u = m.A.getStageInstanceByChannel(s);
     if (null == u) return null;
-    let b = l.A.getChannel(o);
+    let b = l.A.getChannel(s);
     if (null == b || !f.Ib(y.xBc.VIEW_CHANNEL, b)) return null;
     let v = c.A.getGuild(b.getGuildId());
     if (null == v || !v.features.has(y.GuildFeatures.DISCOVERABLE)) return null;
@@ -46,14 +46,14 @@ function v() {
         S = p.A.getMutableParticipants(b.id, _.ip.SPEAKER),
         T = S.filter(e => e.type === _.wY.STREAM).length,
         C = S.length - T,
-        N = p.A.getParticipantCount(o) - T,
+        N = p.A.getParticipantCount(s) - T,
         w = (null == I || null == (a = I.party) ? void 0 : a.size) != null ? I.party.size[1] : 0;
     return {
         application_id: E.SS,
         name: null != (e = null != (t = u.topic) ? t : b.topic) ? e : b.name,
         type: (0, g.xn)(b.id) ? y.$pd.WATCHING : y.$pd.LISTENING,
         timestamps: {
-            start: null != (n = null == I || null == (s = I.timestamps) ? void 0 : s.start) ? n : new Date().getTime()
+            start: null != (n = null == I || null == (o = I.timestamps) ? void 0 : o.start) ? n : new Date().getTime()
         },
         assets: {
             small_image: null != (r = v.icon) ? r : void 0,
@@ -87,7 +87,7 @@ function S(e) {
     } = e, a = null != (t = null == O || null == (r = O.party) || null == (n = r.size) ? void 0 : n[1]) ? t : 0;
     return i === y.S7L.RTC_CONNECTED && !(a > 0) && A()
 }
-class T extends(r = s.Ay.Store) {
+class T extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(l.A, c.A, u.A, d.A, p.A, m.A)
     }
@@ -96,7 +96,7 @@ class T extends(r = s.Ay.Store) {
     }
 }
 b(T, "displayName", "StageChannelSelfRichPresenceStore");
-let C = new T(o.h, {
+let C = new T(s.h, {
     CONNECTION_OPEN: A,
     STAGE_INSTANCE_CREATE: A,
     STAGE_INSTANCE_UPDATE: A,

@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(398590),
-    s = n(793574),
-    o = n(688810),
+    o = n(793574),
+    s = n(688810),
     l = n(976860),
     c = n(979286),
     u = n(652215),
@@ -20,9 +20,9 @@ let p = e => {
         onClose: t
     } = e, {
         analyticsLocations: n
-    } = (0, o.Ay)(), p = () => {
+    } = (0, s.Ay)(), p = () => {
         t(), (0, l.pX)(u.BVt.COLLECTIBLES_SHOP), (0, c.Cz)({
-            analyticsSource: s.A.PREMIUM_PAYMENT_MODAL,
+            analyticsSource: o.A.PREMIUM_PAYMENT_MODAL,
             analyticsLocations: n
         }), (0, a.jH)()
     };

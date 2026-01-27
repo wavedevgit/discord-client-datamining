@@ -6,8 +6,8 @@ n.d(t, {
 });
 var r, i = n(735438),
     a = n.n(i),
-    s = n(311907),
-    o = n(73153),
+    o = n(311907),
+    s = n(73153),
     l = n(956793),
     c = n(626584),
     u = n(652896),
@@ -42,10 +42,10 @@ let R = window.DiscordNative;
 I.sZ.dispatcher.getDispatchHandler = T.A;
 let P = new c.A("ConnectionStore"),
     D = 100,
-    x = 0,
-    L = null,
-    j = !0,
-    M = null,
+    L = 0,
+    x = null,
+    M = !0,
+    j = null,
     k = null;
 
 function U() {
@@ -56,18 +56,18 @@ function G(e) {
     e.isSwitchingAccount && I.OV.handleAccountSwitch(), P.verbose("Closing socket because of logout"), I.sZ.close()
 }
 
-function V() {
+function F() {
     return P.verbose("session refresh dispatched", {
         isEstablished: I.sZ.isSessionEstablished()
     }), !!I.sZ.isSessionEstablished() && (I.sZ.close(), I.sZ.connect())
 }
-async function F(e) {
-    x = Date.now(), L = e.sessionId, I.OV.handleConnectionOpen();
+async function V(e) {
+    L = Date.now(), x = e.sessionId, I.OV.handleConnectionOpen();
     let t = {},
         n = y.A.getVoiceChannelId();
     if (null != n) {
-        var r, i, a, s, o, c, u, f;
-        if ((null == (o = window) || null == (s = o.performance) || null == (a = s.getEntriesByType) || null == (i = a.call(s, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? void 0 : u.call(f))) ? void 0 : c.rendererCrashReason) == null && j) g.A.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
+        var r, i, a, o, s, c, u, f;
+        if ((null == (s = window) || null == (o = s.performance) || null == (a = o.getEntriesByType) || null == (i = a.call(o, "navigation")) || null == (r = i[0]) ? void 0 : r.type) !== "reload" && (null == (c = await (null == R || null == (f = R.processUtils) || null == (u = f.getLastCrash) ? void 0 : u.call(f))) ? void 0 : c.rendererCrashReason) == null && M) g.A.setLastSessionVoiceChannelId(null != n ? n : null), l.default.selectVoiceChannel(null);
         else {
             let e = h.A.getChannel(n);
             null != e && (t = {
@@ -76,11 +76,11 @@ async function F(e) {
             }, (0, d.CX)(n))
         }
     }
-    I.Xo.update(t, !0), j = !1, k = null
+    I.Xo.update(t, !0), M = !1, k = null
 }
 
 function B() {
-    P.verbose("connection closed dispatched"), x = Date.now()
+    P.verbose("connection closed dispatched"), L = Date.now()
 }
 
 function H() {
@@ -95,7 +95,7 @@ function W(e) {
     return I.Xo.update({
         guildId: e.guildId,
         channelId: e.channelId
-    }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, v.isIOS)() && M === C.g6G.BACKGROUND && (null == e.channelId ? I.sZ.close(!0) : I.sZ.isClosed() && (S.V(!1), I.sZ.connect())), !1
+    }), k = e.lockVoiceStateForResume && null != e.channelId ? e.channelId : null, (0, v.isIOS)() && j === C.g6G.BACKGROUND && (null == e.channelId ? I.sZ.close(!0) : I.sZ.isClosed() && (S.V(!1), I.sZ.connect())), !1
 }
 
 function K() {
@@ -113,7 +113,7 @@ function q(e) {
     } = e;
     return t.reduce((e, t) => {
         if (p.default.getId() !== t.userId) return e;
-        if (t.sessionId === L) {
+        if (t.sessionId === x) {
             if (null != k) return P.verbose("Ignoring voice state for own session due to VSU lock on channel:", k), e;
             I.Xo.setState({
                 guildId: t.guildId,
@@ -137,7 +137,7 @@ function Z(e) {
     })
 }
 
-function X(e) {
+function Q(e) {
     let {
         channelId: t
     } = e;
@@ -150,7 +150,7 @@ function X(e) {
     }
 }
 
-function Q(e) {
+function X(e) {
     let {
         channel: t
     } = e;
@@ -166,7 +166,7 @@ function J(e) {
 }
 
 function $(e) {
-    return (0, v.isIOS)() ? (p.default.isAuthenticated() && (M === C.g6G.INACTIVE && e.state === C.g6G.BACKGROUND && null == I.Xo.channelId ? I.sZ.close(!0) : M === C.g6G.BACKGROUND && e.state === C.g6G.ACTIVE && I.sZ.isClosed() && (S.V(!1), I.sZ.connect())), M = e.state) : e.state === C.g6G.ACTIVE && (S.V(!1), p.default.isAuthenticated() && I.sZ.resetBackoff("App state is active")), !1
+    return (0, v.isIOS)() ? (p.default.isAuthenticated() && (j === C.g6G.INACTIVE && e.state === C.g6G.BACKGROUND && null == I.Xo.channelId ? I.sZ.close(!0) : j === C.g6G.BACKGROUND && e.state === C.g6G.ACTIVE && I.sZ.isClosed() && (S.V(!1), I.sZ.connect())), j = e.state) : e.state === C.g6G.ACTIVE && (S.V(!1), p.default.isAuthenticated() && I.sZ.resetBackoff("App state is active")), !1
 }
 
 function ee() {
@@ -216,7 +216,7 @@ function ea(e) {
     return I.sZ.isSessionEstablished() && I.sZ.callConnect(t), !1
 }
 
-function es(e) {
+function eo(e) {
     let {
         channelIds: t
     } = e;
@@ -225,7 +225,7 @@ function es(e) {
     }), !1
 }
 
-function eo(e) {
+function es(e) {
     let {
         sessionId: t,
         payload: n
@@ -306,7 +306,7 @@ function eE(e) {
     } = e;
     I.sZ.requestSoundboardSounds(t)
 }
-class ey extends(r = s.Ay.Store) {
+class ey extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(p.default, _.A, h.A, m.A, g.A, E.A, y.A, b.A, O.A, f.A), this.syncWith([m.A], ee), this.syncWith([b.A], et)
     }
@@ -323,17 +323,17 @@ class ey extends(r = s.Ay.Store) {
         return I.sZ.isSessionEstablished() || __OVERLAY__
     }
     lastTimeConnectedChanged() {
-        return x
+        return L
     }
 }
 w(ey, "displayName", "GatewayConnectionStore");
-let eb = new ey(o.h, {
+let eb = new ey(s.h, {
     START_SESSION: U,
-    LOGIN_SUCCESS: V,
+    LOGIN_SUCCESS: F,
     LOGOUT: G,
     CLEAR_CACHES: Y,
     CONNECTION_OPEN: e => {
-        F(e)
+        V(e)
     },
     CONNECTION_RESUMED: H,
     CONNECTION_CLOSED: B,
@@ -341,14 +341,14 @@ let eb = new ey(o.h, {
     VOICE_CHANNEL_SELECT: W,
     VOICE_STATE_UPDATES: q,
     GUILD_DELETE: Z,
-    CHANNEL_DELETE: Q,
-    CALL_DELETE: X,
+    CHANNEL_DELETE: X,
+    CALL_DELETE: Q,
     APP_STATE_UPDATE: $,
     GUILD_MEMBERS_REQUEST: en,
     GUILD_SEARCH_RECENT_MEMBERS: er,
     GUILD_SUBSCRIPTIONS_FLUSH: ei,
     CALL_CONNECT: ea,
-    CALL_CONNECT_MULTIPLE: es,
+    CALL_CONNECT_MULTIPLE: eo,
     STREAM_CREATE: K,
     STREAM_START: ed,
     STREAM_WATCH: ep,
@@ -357,7 +357,7 @@ let eb = new ey(o.h, {
     PUSH_NOTIFICATION_CLICK: eh,
     REQUEST_FORUM_UNREADS: em,
     REQUEST_SOUNDBOARD_SOUNDS: eE,
-    REMOTE_COMMAND: eo,
+    REMOTE_COMMAND: es,
     RESET_SOCKET: eg,
     CLIPS_SETTINGS_UPDATE: K,
     RUNNING_GAMES_CHANGE: K,

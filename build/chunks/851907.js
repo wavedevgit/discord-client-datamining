@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(665260),
     i = n(311907),
     a = n(587895),
-    s = n(87001),
-    o = n(646865),
+    o = n(87001),
+    s = n(646865),
     l = n(933958),
     c = n(969151),
     u = n(108959),
@@ -24,8 +24,8 @@ function p(e) {
         channelId: i
     } = e;
     if (null != n && (0, r.Lt)(null != (t = n.flags) ? t : 0, f.gfo.EMBEDDED)) {
-        if (s.A.getWindowOpen(f.MLl.ACTIVITY_POPOUT) && l.Ay.getActivityPanelMode() === d.Gd.ACTIVITY_POPOUT_WINDOW) return f.MLl.ACTIVITY_POPOUT;
-        if (s.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT) && (0, u.A)(i) && !(0, o.f)()) return f.MLl.CHANNEL_CALL_POPOUT
+        if (o.A.getWindowOpen(f.MLl.ACTIVITY_POPOUT) && l.Ay.getActivityPanelMode() === d.Gd.ACTIVITY_POPOUT_WINDOW) return f.MLl.ACTIVITY_POPOUT;
+        if (o.A.getWindowOpen(f.MLl.CHANNEL_CALL_POPOUT) && (0, u.A)(i) && !(0, s.f)()) return f.MLl.CHANNEL_CALL_POPOUT
     }
 }
 
@@ -57,12 +57,12 @@ function m(e) {
     let {
         channelId: t
     } = e;
-    return (0, i.bG)([s.A, l.Ay, a.A], () => {
+    return (0, i.bG)([o.A, l.Ay, a.A], () => {
         let e = _({
             channelId: null != t ? t : l.Ay.getConnectedActivityChannelId(),
             EmbeddedActivitiesStore: l.Ay,
             ApplicationStore: a.A
         });
-        return null != e ? s.A.getWindow(e) : void 0
+        return null != e ? o.A.getWindow(e) : void 0
     })
 }

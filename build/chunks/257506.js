@@ -2,7 +2,7 @@
 /** chunk id: 257506, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(321073), n(896048);
 var r = n(735438),
     i = n.n(r);
@@ -15,11 +15,11 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let s = [];
-class o {
+let o = [];
+class s {
     static create() {
-        let e = new o;
-        return s.push(e), e.record
+        let e = new s;
+        return o.push(e), e.record
     }
     getTotalBytes() {
         return i().sum(Object.values(this.bytes))

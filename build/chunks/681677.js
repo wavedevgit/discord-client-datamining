@@ -1,26 +1,25 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 681677, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(864145),
-    a = n(14400),
+    l = n(14400),
     s = n(420650),
-    o = n(985018);
+    a = n(985018);
 
-function l() {
+function o() {
     let {
         volume: e,
         onVolumeChange: t
-    } = (0, a.A)();
+    } = (0, l.A)();
     return (0, i.X9)({
         location: "UserSettingsSoundmojiVolume"
     }) ? (0, r.jsx)(s.A, {
-        label: o.intl.string(o.t["2JbvKw"]),
-        description: o.intl.string(o.t.INenzY),
+        label: a.intl.string(a.t["2JbvKw"]),
+        description: a.intl.string(a.t.INenzY),
         volume: e,
         onVolumeChange: t
     }) : null

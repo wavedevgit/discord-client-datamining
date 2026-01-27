@@ -3,14 +3,14 @@
 "use strict";
 n.d(t, {
     o: () => l,
-    z: () => o
+    z: () => s
 });
 var r = n(947320),
     i = n(205693),
     a = n(824744),
-    s = n(355097);
+    o = n(355097);
 
-function o(e, t) {
+function s(e, t) {
     let n = t === i.x.STREAM ? r.i.STREAM : r.i.USER;
     return 1 > Math.abs((0, a.M)(n) - (0, a.M)(e)) ? n : e
 }
@@ -18,9 +18,9 @@ function o(e, t) {
 function l(e) {
     switch (e) {
         case i.x.DEFAULT:
-            return s.W.USER;
+            return o.W.USER;
         case i.x.STREAM:
-            return s.W.STREAM;
+            return o.W.STREAM;
         default:
             return
     }

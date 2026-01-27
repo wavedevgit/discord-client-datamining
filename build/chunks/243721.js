@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(844222),
-    s = n(460890),
-    o = n(553270),
+    o = n(460890),
+    s = n(553270),
     l = n(395515);
 
 function c(e, t, n) {
@@ -52,14 +52,14 @@ function f(e, t) {
 
 function p(e) {
     var t, n;
-    let c = i.useContext(s.VO),
+    let c = i.useContext(o.VO),
         d = null == c || null == (n = c.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs"),
         {
             switchIconsEnabled: p
         } = i.useContext(a.C);
     if (d) {
         let t = void 0 !== e.hasIcon ? e.hasIcon : p;
-        return (0, r.jsx)(o.A, f(u({}, e), {
+        return (0, r.jsx)(s.A, f(u({}, e), {
             hasIcon: t
         }))
     }

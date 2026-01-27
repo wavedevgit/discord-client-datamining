@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(460890),
-    s = n(752370),
-    o = n(785007);
+    o = n(752370),
+    s = n(785007);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -63,7 +63,7 @@ function f(e, t) {
 function p(e) {
     var t, n;
     let l = i.useContext(a.VO);
-    if (null == l || null == (n = l.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) return (0, r.jsx)(s.k, u({}, e));
+    if (null == l || null == (n = l.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) return (0, r.jsx)(o.k, u({}, e));
     let {} = e, d = c({}, e), p = e.options.map(e => f(u({}, e), {
         icon: e.leadingIcon,
         desc: e.desc
@@ -72,7 +72,7 @@ function p(e) {
         errorMessage: e.errorMessage,
         onChange: null != e.onChange ? t => e.onChange(t.value) : void 0
     });
-    return (0, r.jsx)(o.$d, u({}, _))
+    return (0, r.jsx)(s.$d, u({}, _))
 }
 
 function _(e) {
@@ -82,10 +82,10 @@ function _(e) {
         checked: c,
         radioItemIconClassName: u
     } = e, d = i.useContext(a.VO);
-    return (null == d || null == (n = d.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(s.g, {
+    return (null == d || null == (n = d.experiments) || null == (t = n.enabledExperiments) ? void 0 : t.includes("mana-toggle-inputs")) ? (0, r.jsx)(o.g, {
         disabled: l,
         isSelected: c
-    }) : (0, r.jsx)(o.nG, {
+    }) : (0, r.jsx)(s.nG, {
         checked: c,
         disabled: l,
         radioItemIconClassName: u

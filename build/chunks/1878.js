@@ -1,52 +1,51 @@
-/** Chunk was on web.js **/
-/** chunk id: 1878, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    K: () => f
+/** Chunk was on 2292 **/
+/** chunk id: 1878, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    K: () => m
 });
-var r = n(627968),
-    i = n(311907),
-    a = n(397927),
-    s = n(775602),
-    o = n(937008),
-    l = n(552736),
-    c = n(810498),
-    u = n(298305),
-    d = n(733724);
+var n = r(627968),
+    i = r(311907),
+    l = r(397927),
+    a = r(775602),
+    s = r(937008),
+    o = r(552736),
+    c = r(810498),
+    u = r(298305),
+    d = r(733724);
 
-function f() {
+function m() {
     var e;
-    let t = (0, i.bG)([s.A], () => s.A.useReducedMotion),
+    let t = (0, i.bG)([a.A], () => a.A.useReducedMotion),
         {
-            claimableRewards: n
-        } = (0, o.Pv)(),
-        f = (0, l.A)(),
-        p = null == f ? void 0 : f.planSelection;
-    if (null == p || null == n || 0 === n.length) return null;
-    let _ = (0, c.gc)(null == (e = p.getBannerImageUrl) ? void 0 : e.call(p)),
-        h = (0, c.K5)(p.gradientConfig, {
+            claimableRewards: r
+        } = (0, s.Pv)(),
+        m = (0, o.A)(),
+        p = null == m ? void 0 : m.planSelection;
+    if (null == p || null == r || 0 === r.length) return null;
+    let g = (0, c.gc)(null == (e = p.getBannerImageUrl) ? void 0 : e.call(p)),
+        x = (0, c.K5)(p.gradientConfig, {
             defaultAngle: 180
         });
-    return (0, r.jsxs)("div", {
+    return (0, n.jsxs)("div", {
         className: d.us,
-        style: null != _ ? _ : h,
-        children: [(0, r.jsxs)("div", {
+        style: null != g ? g : x,
+        children: [(0, n.jsxs)("div", {
             className: d.ZR,
-            children: [(0, r.jsx)(a.Text, {
+            children: [(0, n.jsx)(l.Text, {
                 variant: "text-sm/semibold",
                 color: "always-white",
                 children: p.heading()
-            }), null != p.subheading && (0, r.jsx)(a.Text, {
+            }), null != p.subheading && (0, n.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: "always-white",
-                children: p.subheading(n.length)
+                children: p.subheading(r.length)
             })]
-        }), (0, r.jsx)("div", {
+        }), (0, n.jsx)("div", {
             className: d.my,
-            children: (0, r.jsx)(u.A, {
+            children: (0, n.jsx)(u.A, {
                 maxRewardImageSrc: p.getImageUrl(!0, t),
-                claimableRewards: n,
-                size: a._3J.SIZE_80
+                claimableRewards: r,
+                size: l._3J.SIZE_80
             })
         })]
     })

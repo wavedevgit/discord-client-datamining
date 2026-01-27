@@ -1,17 +1,16 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 314519, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     s: () => s
 });
 var r = n(843472),
     i = n(222823),
-    a = n(309010);
+    l = n(309010);
 let s = {
     binds: ["shift+pageup"],
     comboKeysBindGlobal: !0,
     action() {
-        let e = a.A.getChannelId();
+        let e = l.A.getChannelId();
         if (null != e) {
             let t = i.Ay.ackMessageId(e);
             null != t && i.Ay.getOldestUnreadTimestamp(e) > 0 && r.A.jumpToMessage({

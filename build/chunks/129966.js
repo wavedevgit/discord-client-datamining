@@ -8,7 +8,7 @@ var r = n(118356),
     i = n(689234),
     a = n(72290);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,7 +16,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = 1e6,
+let s = 1e6,
     l = "1" === a.env.KV_STORAGE_LOGGING,
     c = new r.Vy("Runtime");
 class u {
@@ -66,10 +66,10 @@ class u {
                 ok: t.ok,
                 value: t.data,
                 timings: {
-                    queue: t.timings.queueTimeNanoseconds / o,
-                    execution: t.timings.executionTimeNanoseconds / o,
-                    materialization: t.timings.materializationTimeNanoseconds / o,
-                    ccTotal: t.timings.totalTimeNanoseconds / o,
+                    queue: t.timings.queueTimeNanoseconds / s,
+                    execution: t.timings.executionTimeNanoseconds / s,
+                    materialization: t.timings.materializationTimeNanoseconds / s,
+                    ccTotal: t.timings.totalTimeNanoseconds / s,
                     jsTotal: n - e.started
                 }
             };
@@ -87,4 +87,4 @@ class u {
         }), this.addDatabaseStateCallback((e, t) => c.info("".concat(e, " (state: ").concat(t, ")")))), this.initialized = !0)
     }
 }
-s(u, "counter", 0), s(u, "pending", new Map), s(u, "initialized", !1), s(u, "dbStateCallbacks", []), s(u, "completionCallbacks", [])
+o(u, "counter", 0), o(u, "pending", new Map), o(u, "initialized", !1), o(u, "dbStateCallbacks", []), o(u, "completionCallbacks", [])

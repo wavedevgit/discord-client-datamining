@@ -6,8 +6,8 @@ n.d(t, {
     A: () => $,
     M: () => B
 }), n(896048), n(591487), n(727858), n(747238);
-var i, a, s = n(311907),
-    o = n(506774),
+var i, a, o = n(311907),
+    s = n(506774),
     l = n(73153),
     c = n(155718),
     u = n(194862),
@@ -66,20 +66,20 @@ let S = "GameStoreReportedGames",
     N = new u.A,
     w = {},
     R = {},
-    P = null != (i = o.w.get(S)) ? i : {},
+    P = null != (i = s.w.get(S)) ? i : {},
     D = "",
-    x = null,
-    L = !1,
-    j = null,
-    M = !1,
+    L = null,
+    x = !1,
+    M = null,
+    j = !1,
     k = "",
     U = [],
     G = [],
-    V = new Map,
-    F = m.A.Millis.HOUR;
+    F = new Map,
+    V = m.A.Millis.HOUR;
 
 function B(e) {
-    var t, n, r, i, a, s, o, l, c, u;
+    var t, n, r, i, a, o, s, l, c, u;
     return {
         id: e.id,
         name: e.name,
@@ -88,9 +88,9 @@ function B(e) {
         overlayWarn: null != (r = e.overlay_warn) && r,
         overlayCompatibilityHook: null != (i = e.overlay_compatibility_hook) && i,
         hook: null == (a = e.hook) || a,
-        aliases: null != (s = e.aliases) ? s : [],
+        aliases: null != (o = e.aliases) ? o : [],
         supportsOutOfProcessOverlay: _.Ay.supportsOutOfProcessOverlay(e.overlay_methods),
-        themes: null != (o = e.themes) ? o : [],
+        themes: null != (s = e.themes) ? s : [],
         icon: null != (l = e.icon_hash) ? l : void 0,
         thirdPartySkus: null != (c = e.third_party_skus) ? c : [],
         cover_image_hash: null != (u = e.cover_image_hash) ? u : void 0
@@ -135,7 +135,7 @@ function K() {
 }
 
 function z() {
-    r = !1, L = !0
+    r = !1, x = !0
 }
 
 function q(e) {
@@ -144,26 +144,26 @@ function q(e) {
         etag: n
     } = e;
     for (let e of (null != n && D !== n && (N.clear(), w = {}, R = {}, D = n), t)) Y(B(e));
-    r = void 0, x = Date.now(), L = !0
+    r = void 0, L = Date.now(), x = !0
 }
 
 function Z() {
-    M = !0
+    j = !0
 }
 
-function X() {
-    M = !1
+function Q() {
+    j = !1
 }
 
-function Q(e) {
+function X(e) {
     let {
         executables: t,
         patterns: n,
         etag: r
     } = e;
-    null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), M = !1, j = Date.now()
+    null != r && k !== r && (k = r, U = t.map(e => e.toLowerCase()), G = n.map(e => RegExp(e, "i"))), j = !1, M = Date.now()
 }
-class J extends(a = s.Ay.PersistedStore) {
+class J extends(a = o.Ay.PersistedStore) {
     initialize(e) {
         var t;
         null != e && (null != e.detectableGamesEtag && (D = e.detectableGamesEtag), null != e.blocklistEtag && (k = e.blocklistEtag), null != e.blocklistExecutables && (U = e.blocklistExecutables), null != e.blocklistPatterns && (G = e.blocklistPatterns.map(e => RegExp(e, "i"))), null == (t = e.detectableGames) || t.forEach(e => Y(e)))
@@ -226,21 +226,21 @@ class J extends(a = s.Ay.PersistedStore) {
         return k
     }
     get lastFetched() {
-        return x
+        return L
     }
     get hasAttemptedFetch() {
-        return L
+        return x
     }
     get detectableGamesTtl() {
         return C
     }
     canFetchDetectableGames() {
-        return !0 !== r && (null == x || Date.now() >= x + C)
+        return !0 !== r && (null == L || Date.now() >= L + C)
     }
     canFetchExecutableBlocklist() {
         return !!d.n.getConfig({
             location: "GameStore.shouldBlock"
-        }).enabled && !M && (null == j || Date.now() >= j + C)
+        }).enabled && !j && (null == M || Date.now() >= M + C)
     }
     getGameByExecutable(e) {
         return R[e]
@@ -272,9 +272,9 @@ class J extends(a = s.Ay.PersistedStore) {
     maybeTrackBlock(e, t, n) {
         var r, i;
         let a = null != (r = e.exePath.split(/[/\\]/).pop()) ? r : "unknown",
-            s = V.get(a),
-            o = Date.now();
-        (null == s || o - s >= F) && (V.set(a, o), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
+            o = F.get(a),
+            s = Date.now();
+        (null == o || s - o >= V) && (F.set(a, s), h.default.track(y.HAw.GAME_BLOCKLIST_TRIGGERED, {
             block_type: t,
             matched_entry: n,
             game_name: null != (i = e.gameName) ? i : e.origGameName,
@@ -288,7 +288,7 @@ class J extends(a = s.Ay.PersistedStore) {
         return p.tz.getSetting() && !r && !(t || n)
     }
     markGameReported(e) {
-        P[e] = !0, o.w.set(S, P)
+        P[e] = !0, s.w.set(S, P)
     }
 }
 O(J, "displayName", "GameStore"), O(J, "persistKey", "GameStore"), O(J, "migrations", [e => {
@@ -320,6 +320,6 @@ let $ = new J(l.h, {
     GAMES_DATABASE_FETCH_FAIL: z,
     GAMES_DATABASE_UPDATE: q,
     GAMES_BLOCKLIST_FETCH: Z,
-    GAMES_BLOCKLIST_FETCH_FAIL: X,
-    GAMES_BLOCKLIST_UPDATE: Q
+    GAMES_BLOCKLIST_FETCH_FAIL: Q,
+    GAMES_BLOCKLIST_UPDATE: X
 })

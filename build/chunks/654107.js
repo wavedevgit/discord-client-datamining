@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(64700),
     i = n(440745),
     a = n.n(i),
-    s = n(353640),
-    o = n(121894),
+    o = n(353640),
+    s = n(121894),
     l = n(311907),
     c = n(775602),
     u = n(998304),
@@ -56,7 +56,7 @@ function h(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let m = (0, s.v)(() => ({
+let m = (0, o.v)(() => ({
     palette: {},
     fetching: {}
 }));
@@ -69,7 +69,7 @@ async function E(e) {
 }
 async function y(e) {
     if (!m.getState().fetching[e]) {
-        (0, o.r)(() => m.setState(t => ({
+        (0, s.r)(() => m.setState(t => ({
             fetching: h(p({}, t.fetching), {
                 [e]: !0
             })
@@ -77,7 +77,7 @@ async function y(e) {
         try {
             let t = await (0, d.S4)(e),
                 n = (0, u.Q7)(t[0]);
-            (0, o.r)(() => {
+            (0, s.r)(() => {
                 m.setState(r => ({
                     fetching: h(p({}, r.fetching), {
                         [e]: !1
@@ -88,7 +88,7 @@ async function y(e) {
                 }))
             })
         } catch (t) {
-            (0, o.r)(() => m.setState(t => ({
+            (0, s.r)(() => m.setState(t => ({
                 fetching: h(p({}, t.fetching), {
                     [e]: !1
                 })
@@ -110,14 +110,14 @@ function O(e, t) {
 function v(e, t) {
     let n = !(arguments.length > 2) || void 0 === arguments[2] || arguments[2],
         i = m(t => null == e ? void 0 : t.palette[e]),
-        s = (0, l.bG)([c.A], () => n && c.A.desaturateUserColors ? c.A.saturation : 1);
+        o = (0, l.bG)([c.A], () => n && c.A.desaturateUserColors ? c.A.saturation : 1);
     r.useEffect(() => {
         null != e && null == i && y(e)
     }, [e, i]);
-    let o = r.useMemo(() => null == i ? void 0 : i.map(e => {
+    let s = r.useMemo(() => null == i ? void 0 : i.map(e => {
         let [t, n, r] = e, {
             h: i,
-            s: o,
+            s,
             l
         } = a()({
             r: t,
@@ -126,9 +126,9 @@ function v(e, t) {
         }).toHsl();
         return a()({
             h: i,
-            s: o * s,
+            s: s * o,
             l
         }).toHexString()
-    }), [i, s]);
-    return null != o ? o : [t, t]
+    }), [i, o]);
+    return null != s ? s : [t, t]
 }

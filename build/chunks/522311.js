@@ -23,12 +23,12 @@ function a(e) {
     return t && n && a ? i(r(t, a), n) : null
 }
 
-function s(e) {
+function o(e) {
     var t = e.clientOffset,
         n = e.initialClientOffset;
     return t && n ? i(t, n) : null
 }
 n.d(t, {
     kO: () => a,
-    ne: () => s
+    ne: () => o
 })

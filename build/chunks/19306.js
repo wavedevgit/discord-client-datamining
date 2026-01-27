@@ -2,13 +2,13 @@
 /** chunk id: 19306, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    y: () => o
+    y: () => s
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(889634);
-let s = e => {
+let o = e => {
         let {
             color: t
         } = e;
@@ -25,7 +25,7 @@ let s = e => {
             }
         })
     },
-    o = {
+    s = {
         title: "Grid",
         stories: [{
             name: "Grid",
@@ -44,53 +44,53 @@ let s = e => {
                         },
                         children: (0, r.jsxs)(a.A, {
                             columns: t,
-                            children: [(0, r.jsx)(s, {
+                            children: [(0, r.jsx)(o, {
                                 color: "red"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "orange"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "yellow"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "green"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "blue"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "violet"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "red"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "orange"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "yellow"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "green"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "blue"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "violet"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "red"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "orange"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "yellow"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "green"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "blue"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "violet"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "red"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "orange"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "yellow"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "green"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "blue"
-                            }), (0, r.jsx)(s, {
+                            }), (0, r.jsx)(o, {
                                 color: "violet"
                             })]
                         })

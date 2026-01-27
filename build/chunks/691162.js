@@ -4,8 +4,8 @@
 var r = n(757431),
     i = n(567242),
     a = n(933300),
-    s = n(605468),
-    o = n(154613),
+    o = n(605468),
+    s = n(154613),
     l = n(547210),
     c = n(475694),
     u = n(499018),
@@ -22,8 +22,8 @@ e.exports = function(e) {
     arguments.length > 1 && (t = arguments[1]);
     for (var _ = r(n, f), g = 0; g < f;) {
         var E = d(g);
-        if (o(n, E)) {
-            var y = i(e, t, [s(n, E), g, n]);
+        if (s(n, E)) {
+            var y = i(e, t, [o(n, E), g, n]);
             a(_, E, y)
         }
         g += 1

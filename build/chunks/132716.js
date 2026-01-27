@@ -4,38 +4,38 @@
 n.d(t, {
     Fe: () => l,
     HI: () => d,
-    rd: () => o
+    rd: () => s
 });
 var r = n(401705),
     i = n(408713),
     a = n(64700);
-let s = (0, a.createContext)({
+let o = (0, a.createContext)({
     isNative: !0,
     open: u,
     useHref: e => e
 });
 
-function o() {
-    return (0, a.useContext)(s)
+function s() {
+    return (0, a.useContext)(o)
 }
 
 function l(e, t, n = !0) {
-    var a, s;
+    var a, o;
     let {
-        metaKey: o,
+        metaKey: s,
         ctrlKey: c,
         altKey: u,
         shiftKey: d
     } = t;
-    (0, i.gm)() && (null == (s = window.event) || null == (a = s.type) ? void 0 : a.startsWith("key")) && "_blank" === e.target && ((0, i.cX)() ? o = !0 : c = !0);
+    (0, i.gm)() && (null == (o = window.event) || null == (a = o.type) ? void 0 : a.startsWith("key")) && "_blank" === e.target && ((0, i.cX)() ? s = !0 : c = !0);
     let f = (0, i.Tc)() && (0, i.cX)() && !(0, i.bh)() && 1 ? new KeyboardEvent("keydown", {
         keyIdentifier: "Enter",
-        metaKey: o,
+        metaKey: s,
         ctrlKey: c,
         altKey: u,
         shiftKey: d
     }) : new MouseEvent("click", {
-        metaKey: o,
+        metaKey: s,
         ctrlKey: c,
         altKey: u,
         shiftKey: d,
@@ -59,7 +59,7 @@ function u(e, t) {
 
 function d(e) {
     var t;
-    let n = o().useHref(null != (t = e.href) ? t : "");
+    let n = s().useHref(null != (t = e.href) ? t : "");
     return {
         "data-href": e.href ? n : void 0,
         "data-target": e.target,

@@ -1,7 +1,7 @@
-/** Chunk was on 98865 **/
+/** Chunk was on 86901 **/
 /** chunk id: 848977, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => b
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -9,16 +9,16 @@ var i = n(311907),
     l = n(397927),
     a = n(334738),
     o = n(435470),
-    s = n(970278),
-    c = n(152007),
+    c = n(970278),
+    s = n(152007),
     u = n(95701),
     d = n(769765),
     f = n(222823),
     A = n(652215),
-    b = n(985018);
+    p = n(985018);
 
-function p(e) {
-    let t, n, p = (t = (0, o.ed)(e.guild_id, e.id), n = (0, i.bG)([f.Ay, d.A, s.A, c.A], () => {
+function b(e) {
+    let t, n, b = (t = (0, o.ed)(e.guild_id, e.id), n = (0, i.bG)([f.Ay, d.A, c.A, s.A], () => {
         if (e.isForumPost()) return f.Ay.isForumPostUnread(e.id);
         if (e.type !== A.rbe.GUILD_CATEGORY) return f.Ay.hasUnreadOrMentions(e.id);
         {
@@ -31,17 +31,17 @@ function p(e) {
                     return (0, u.Z_)(t.type) && f.Ay.hasUnreadOrMentions(t.id)
                 })) return !0;
             let n = new Set(t[e.id].map(e => e.channel.id)),
-                r = s.A.getThreadsForGuild(e.guild_id);
+                r = c.A.getThreadsForGuild(e.guild_id);
             for (let e in r)
                 if (n.has(e)) {
                     for (let t in r[e])
-                        if (c.A.hasJoined(t) && !c.A.isMuted(t) && f.Ay.hasUnreadOrMentions(t)) return !0
+                        if (s.A.hasJoined(t) && !s.A.isMuted(t) && f.Ay.hasUnreadOrMentions(t)) return !0
                 } return !1
         }
     }, [e]), e.isForumLikeChannel() ? t > 0 : n);
     return (0, r.jsx)(l.Drp, {
         id: "mark-channel-read",
-        label: b.intl.string(b.t.e6RscS),
+        label: p.intl.string(p.t.e6RscS),
         action: function() {
             (0, a.hS)(e, {
                 section: A.JJy.CHANNEL_CONTEXT_MENU,
@@ -49,6 +49,6 @@ function p(e) {
                 objectType: A.AnalyticsObjectTypes.ACK_MANUAL
             })
         },
-        disabled: !p
+        disabled: !b
     })
 }

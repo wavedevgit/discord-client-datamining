@@ -3,8 +3,8 @@
 "use strict";
 var r, i = n(311907),
     a = n(73153),
-    s = n(141468),
-    o = n(734057),
+    o = n(141468),
+    s = n(734057),
     l = n(287809),
     c = n(403362),
     u = n(661191);
@@ -51,14 +51,14 @@ let h = {};
 
 function m(e) {
     var t;
-    let n = o.A.getChannel(null == e ? void 0 : e.channel_id);
+    let n = s.A.getChannel(null == e ? void 0 : e.channel_id);
     if (null == n || !n.isForumPost()) return !1;
     let r = h[n.id];
     return u.default.compare(null == e ? void 0 : e.id, null == r || null == (t = r.message) ? void 0 : t.id) > -1
 }
 
 function g(e, t) {
-    let n = null == t ? null : (0, s.rh)(t);
+    let n = null == t ? null : (0, o.rh)(t);
     return h[e] = {
         loaded: !0,
         message: n
@@ -69,7 +69,7 @@ function E(e, t) {
     let n = b(e),
         r = O(e);
     return null != n && null != r && (h[e] = _(f({}, n), {
-        message: (0, s.IU)(r, t)
+        message: (0, o.IU)(r, t)
     }), !0)
 }
 
@@ -123,7 +123,7 @@ function C(e) {
 }
 class N extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(o.A, l.default)
+        this.waitFor(s.A, l.default)
     }
     getMessageState(e) {
         return e in h || (h[e] = {

@@ -1,35 +1,34 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 273166, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    q: () => l
+    q: () => o
 });
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(252052);
+    l = n(503698),
+    s = n.n(l),
+    a = n(252052);
 
-function l(e) {
+function o(e) {
     let {
         className: t,
         header: n,
-        headerClassName: a,
-        children: l
+        headerClassName: l,
+        children: o
     } = e, c = i.useMemo(() => {
         let e = !1;
-        return i.Children.forEach(l, t => {
+        return i.Children.forEach(o, t => {
             null != t && (e = !0)
         }), e
-    }, [l]);
+    }, [o]);
     return (0, r.jsxs)("div", {
-        className: s()(o.iE, t),
+        className: s()(a.iE, t),
         children: [(0, r.jsx)("div", {
-            className: s()(o.wx, a),
+            className: s()(a.wx, l),
             children: n
         }), c && (0, r.jsx)("div", {
-            className: o.Qs,
-            children: l
+            className: a.Qs,
+            children: o
         })]
     })
 }

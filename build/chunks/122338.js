@@ -1,4 +1,4 @@
-/** Chunk was on 38663 **/
+/** Chunk was on 94682 **/
 /** chunk id: 122338, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => f
@@ -19,7 +19,7 @@ let d = l.memo(function(e) {
         onClose: a
     } = e;
     return (0, r.jsx)(i.W1t, {
-        "data-menu-migration-ready": !0,
+        "data-menu-needs-migration": !0,
         navId: "widget-game-tags",
         "aria-label": c.intl.string(c.t.r6EJOu),
         onClose: a,

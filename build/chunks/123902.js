@@ -1,67 +1,64 @@
-/** Chunk was on web.js **/
+/** Chunk was on 21425 **/
 /** chunk id: 123902, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => g,
-    V: () => _
+    A: () => b,
+    V: () => g
 });
-var r = n(627968),
-    i = n(64700),
+var r, i = n(627968),
+    l = n(64700),
     a = n(503698),
     s = n.n(a),
     o = n(827734),
-    l = n(319060),
-    c = n(765671),
-    u = n(371664),
-    d = n(240248),
+    c = n(319060),
+    u = n(765671),
+    d = n(371664),
+    p = n(240248),
     f = n(477412);
-let p = (0, d.xI)(l.A.GRADIENT_PROGRESS_NOTCH_WIDTH);
-var _ = function(e) {
-    return e.BLACK = "BLACK", e.GRAY = "GRAY", e
-}({});
-let h = {
+let m = (0, p.xI)(c.A.GRADIENT_PROGRESS_NOTCH_WIDTH);
+var g = ((r = {}).BLACK = "BLACK", r.GRAY = "GRAY", r);
+let y = {
     BLACK: f.Ql,
     GRAY: f.wm
 };
 
-function m(e) {
-    return Math.round(e / p) * p
+function _(e) {
+    return Math.round(e / m) * m
 }
 
-function g(e) {
+function b(e) {
     let {
         notchBackground: t,
         progress: n,
-        gradientStart: a = o.A.unsafe_rawColors.YELLOW_260.css,
-        gradientEnd: l = o.A.unsafe_rawColors.GREEN_360.css,
-        className: d,
+        gradientStart: r = o.A.unsafe_rawColors.YELLOW_260.css,
+        gradientEnd: a = o.A.unsafe_rawColors.GREEN_360.css,
+        className: c,
         notchClassName: p,
-        children: _
+        children: m
     } = e, {
         ref: g,
-        width: E
-    } = (0, c.Ay)(), y = i.useMemo(() => null != E ? m(E) : 0, [E]), b = i.useMemo(() => {
-        let e = Math.abs(m(y * (100 - Math.max(0, Math.min(100, n))) / 100) - y);
+        width: b
+    } = (0, u.Ay)(), A = l.useMemo(() => null != b ? _(b) : 0, [b]), h = l.useMemo(() => {
+        let e = Math.abs(_(A * (100 - Math.max(0, Math.min(100, n))) / 100) - A);
         return {
             transform: "translateX(".concat(e, "px)")
         }
-    }, [n, y]), O = i.useMemo(() => ({
-        width: "".concat(y, "px"),
-        background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(a, ", ").concat(l, ")")
-    }), [l, a, n, y]);
-    return (0, r.jsxs)("div", {
+    }, [n, A]), v = l.useMemo(() => ({
+        width: "".concat(A, "px"),
+        background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
+    }), [a, r, n, A]);
+    return (0, i.jsxs)("div", {
         className: f.iE,
         ref: g,
-        children: [(0, r.jsxs)("div", {
-            className: s()(f.kL, d),
-            style: O,
-            children: [(0, r.jsx)("div", {
+        children: [(0, i.jsxs)("div", {
+            className: s()(f.kL, c),
+            style: v,
+            children: [(0, i.jsx)("div", {
                 className: f.qB,
-                style: b
-            }), 0 !== y && (0, r.jsx)(u.A, {
-                width: y,
-                className: s()(f.DR, h[t], p)
+                style: h
+            }), 0 !== A && (0, i.jsx)(d.A, {
+                width: A,
+                className: s()(f.DR, y[t], p)
             })]
-        }), _]
+        }), m]
     })
 }

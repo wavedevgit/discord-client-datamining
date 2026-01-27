@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048), n(938796), n(321073);
 var r, i = n(665260),
     a = n(311907),
-    s = n(73153),
-    o = n(260509),
+    o = n(73153),
+    s = n(260509),
     l = n(661191),
     c = n(696451),
     u = n(317525),
@@ -40,7 +40,7 @@ function y(e) {
     b(e), g.add(e);
     let n = d.A.getGuild(e),
         r = f.default.getCurrentUser();
-    if (null == n || n.verificationLevel === p.PvD.NONE || null == r || (0, o.bM)(n, r) || r.isPhoneVerified()) return;
+    if (null == n || n.verificationLevel === p.PvD.NONE || null == r || (0, s.bM)(n, r) || r.isPhoneVerified()) return;
     let a = c.Ay.getMember(n.id, r.id);
     if (null != a) {
         var l;
@@ -63,7 +63,7 @@ function y(e) {
         I = !1;
     r.isPhoneVerified() || r.isStaff() || (O = n.verificationLevel >= p.PvD.LOW && !r.verified, v = n.verificationLevel >= p.PvD.VERY_HIGH, A = n.verificationLevel >= p.PvD.MEDIUM && h > 0, I = n.verificationLevel >= p.PvD.HIGH && m > 0);
     let S = [];
-    I && S.push(m), A && S.push(h), S.length > 0 && (t = setTimeout(() => s.h.dispatch({
+    I && S.push(m), A && S.push(h), S.length > 0 && (t = setTimeout(() => o.h.dispatch({
         type: "GUILD_VERIFICATION_CHECK",
         guildId: e
     }), Math.max(...S))), E[e] = {
@@ -136,7 +136,7 @@ class N extends(r = a.Ay.Store) {
     }
 }
 h(N, "displayName", "GuildVerificationStore");
-let w = new N(s.h, {
+let w = new N(o.h, {
     CONNECTION_OPEN: O,
     CONNECTION_CLOSED: v,
     CURRENT_USER_UPDATE: T,

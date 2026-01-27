@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(562465),
-    s = n(73153),
-    o = n(922512),
+    o = n(73153),
+    s = n(922512),
     l = n(189081),
     c = n(144914),
     u = n(652215);
@@ -26,15 +26,15 @@ async function f() {
                 },
                 oldFormErrors: !0,
                 rejectWithError: !0
-            })).body.map(o.A.createFromServer)),
+            })).body.map(s.A.createFromServer)),
             n = await Promise.all(e),
             r = i().flatten(n);
-        return s.h.dispatch({
+        return o.h.dispatch({
             type: "APPLICATION_BRANCHES_FETCH_SUCCESS",
             branches: r
         }), r
     } catch (t) {
-        return s.h.dispatch({
+        return o.h.dispatch({
             type: "APPLICATION_BRANCHES_FETCH_FAIL",
             branchIds: e
         }), []
@@ -47,14 +47,14 @@ async function p(e) {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }),
-            n = Array.isArray(t.body) ? t.body.map(o.A.createFromServer) : [];
-        return s.h.dispatch({
+            n = Array.isArray(t.body) ? t.body.map(s.A.createFromServer) : [];
+        return o.h.dispatch({
             type: "OWNED_APPLICATION_BRANCHES_FETCH_SUCCESS",
             applicationId: e,
             branches: n
         }), n
     } catch (t) {
-        return s.h.dispatch({
+        return o.h.dispatch({
             type: "OWNED_APPLICATION_BRANCHES_FETCH_FAIL",
             applicationId: e
         }), []

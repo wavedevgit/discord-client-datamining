@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(397927),
-    s = n(386467);
+    o = n(386467);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -58,11 +58,11 @@ let f = i.memo(function(e) {
     let {
         user: t,
         size: n = a._3J.SIZE_32,
-        animate: o = !1,
+        animate: s = !1,
         "aria-hidden": u = !1
-    } = e, f = c(e, ["user", "size", "animate", "aria-hidden"]), p = i.useContext(s.A);
+    } = e, f = c(e, ["user", "size", "animate", "aria-hidden"]), p = i.useContext(o.A);
     return (0, r.jsx)(a.euF, l({
-        src: d(t, (0, a.FT9)(n), o, p),
+        src: d(t, (0, a.FT9)(n), s, p),
         size: n,
         "aria-label": u ? void 0 : t.username,
         "aria-hidden": u

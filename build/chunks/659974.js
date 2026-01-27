@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(775602),
-    s = n(531685);
-let o = 0,
+    o = n(531685);
+let s = 0,
     l = 2,
     c = 3,
     u = .03,
@@ -39,16 +39,16 @@ function E(e) {
         shouldReduceMotion: O,
         useForcedColors: v,
         isAppFocusedOrOverlayVisible: A
-    } = (0, i.cf)([a.A, s.A, b], () => ({
+    } = (0, i.cf)([a.A, o.A, b], () => ({
         shouldReduceMotion: a.A.useReducedMotion,
         useForcedColors: a.A.useForcedColors,
-        isAppFocusedOrOverlayVisible: s.A.isAppFocused() || null != b.getFocusedPID()
+        isAppFocusedOrOverlayVisible: o.A.isAppFocused() || null != b.getFocusedPID()
     }));
     return r.useMemo(() => {
         let e = {};
         if (d === -1 / 0 && y) return e;
         if (t) {
-            let t = o,
+            let t = s,
                 n = l,
                 r = c;
             d !== -1 / 0 && !O && A && (t = "INSET_ONLY" === _ ? 0 : m(d, g), n = "OUTSET_ONLY" === _ ? 0 : m(d, E), r = "OUTSET_ONLY" === _ ? 0 : n + 1);

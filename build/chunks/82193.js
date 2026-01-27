@@ -2,14 +2,14 @@
 /** chunk id: 82193, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    getDeviceState: () => s,
+    getDeviceState: () => o,
     logger: () => a
 });
 var r = n(626584),
     i = n(817476);
 let a = new r.A("native/DeviceState.tsx");
 
-function s() {
+function o() {
     let {
         fallback: e
     } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {

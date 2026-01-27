@@ -15,8 +15,8 @@ n.d(t, {
 var r = n(562465),
     i = n(451988),
     a = n(73153),
-    s = n(927813),
-    o = n(25171),
+    o = n(927813),
+    s = n(25171),
     l = n(723702),
     c = n(210528),
     u = n(272984),
@@ -70,8 +70,8 @@ function E(e, t, n, r) {
             authorization: "Bearer ".concat(n)
         }
     })).then(e => 202 === e.status ? Promise.reject(e) : e).catch(n => {
-        let s = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
-        return (401 === n.status || s) && a > 0 ? (202 === n.status ? (0, i.BK)(m) : Promise.resolve()).then(() => b(t)).then(n => {
+        let o = !0 !== r.onlyRetryOnAuthorizationErrors && 202 === n.status;
+        return (401 === n.status || o) && a > 0 ? (202 === n.status ? (0, i.BK)(m) : Promise.resolve()).then(() => b(t)).then(n => {
             let {
                 body: {
                     access_token: i
@@ -98,7 +98,7 @@ function b(e) {
             accountId: e
         });
         else if (429 === t.status) {
-            let n = t.headers["retry-after"] * s.A.Millis.SECOND,
+            let n = t.headers["retry-after"] * o.A.Millis.SECOND,
                 r = isNaN(n) || 0 === n ? g : n;
             return (0, i.BK)(r).then(() => b(e))
         }
@@ -147,9 +147,9 @@ function A(e, t) {
 
 function I(e, t, n, r) {
     let i = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : {},
-        s = u.RQ.PLAYER_OPEN(r, n, !1),
+        o = u.RQ.PLAYER_OPEN(r, n, !1),
         {
-            deviceId: o,
+            deviceId: s,
             position: l,
             contextUri: c,
             repeat: d
@@ -157,20 +157,20 @@ function I(e, t, n, r) {
     return y.put(e, t, {
         url: u.RQ.PLAYER_PLAY,
         query: {
-            device_id: o
+            device_id: s
         },
         body: {
             context_uri: null != c ? c : void 0,
-            uris: null == c ? [s] : void 0,
+            uris: null == c ? [o] : void 0,
             offset: null != c ? {
-                uri: s
+                uri: o
             } : void 0,
             position_ms: null != l ? l : 0
         }
     }).then(n => null == d ? n : y.put(e, t, {
         url: u.RQ.PLAYER_REPEAT,
         query: {
-            device_id: o,
+            device_id: s,
             state: d ? "context" : "off"
         }
     })).then(e => (a.h.dispatch({
@@ -189,7 +189,7 @@ function S(e, t) {
 }
 
 function T() {
-    !c.A.isProtocolRegistered() && (0, l.isDesktop)() && o.A.isProtocolRegistered(u.gY).then(e => {
+    !c.A.isProtocolRegistered() && (0, l.isDesktop)() && s.A.isProtocolRegistered(u.gY).then(e => {
         a.h.dispatch({
             type: "SPOTIFY_SET_PROTOCOL_REGISTERED",
             isRegistered: e

@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 984562, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(801264),
     p = n(997509),
     f = n(555337),
-    b = n(342490),
-    h = n(694878),
+    h = n(342490),
+    b = n(694878),
     x = n(989556),
     j = n(712150),
     _ = n(190695),
@@ -59,7 +59,7 @@ let S = function() {
                 badge: G,
                 primaryColor: L,
                 secondaryColor: k
-            }), (0, r.jsx)(h.A, {
+            }), (0, r.jsx)(b.A, {
                 className: N.uW,
                 selectedBadge: G,
                 guildId: I.id
@@ -130,7 +130,7 @@ let S = function() {
                     })]
                 }) : (0, r.jsx)("div", {
                     className: N.vw,
-                    children: (0, r.jsx)(b.u, {
+                    children: (0, r.jsx)(h.u, {
                         onClick: () => {
                             (0, g.A)(I.id, o.A.GUILD_POWERUPS_GUILD_SETTINGS_TAGS), p.A.close()
                         }

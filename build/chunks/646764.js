@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(621466),
+    o = n.n(a),
+    s = n(621466),
     l = n(311907),
     c = n(397927),
     u = n(775602),
@@ -40,7 +40,7 @@ let v = function(e) {
         P = i.useMemo(() => (0, f.tW)(a, f.fY.REWARD_IMAGE), [a]),
         D = i.useCallback(t => {
             var n;
-            (0, o.vq)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), N({
+            (0, s.vq)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), N({
                 questId: a.id,
                 questContent: e.questContent,
                 questContentPosition: e.questContentPosition,
@@ -51,18 +51,18 @@ let v = function(e) {
                 questId: a.id
             }), null == (n = e.onClick) || n.call(e, t)
         }, [N, a.id, e, S]),
-        x = i.useRef(null),
-        L = i.useRef(v),
-        j = (0, h.K9)(a.config);
+        L = i.useRef(null),
+        x = i.useRef(v),
+        M = (0, h.K9)(a.config);
     return i.useEffect(() => {
-        if (null != x.current) {
+        if (null != L.current) {
             if (!R.isAnimated || w) {
-                x.current.currentTime = 0, x.current.pause();
+                L.current.currentTime = 0, L.current.pause();
                 return
             }
-            v && !L.current ? x.current.play() : !v && L.current && (x.current.currentTime = 0, x.current.pause()), L.current = v
+            v && !x.current ? L.current.play() : !v && x.current && (L.current.currentTime = 0, L.current.pause()), x.current = v
         }
-    }, [v, R, w]), t = j ? (0, r.jsx)(m.Sn, {
+    }, [v, R, w]), t = M ? (0, r.jsx)(m.Sn, {
         id: "QuestRewardTile_rewardTileNitro",
         children: e => (0, r.jsx)(E.A, {
             ref: e,
@@ -79,7 +79,7 @@ let v = function(e) {
         videoAsset: {
             asset: R,
             assetId: "QuestRewardTile_rewardTileAnimated",
-            className: s()(O.eB, O.tv)
+            className: o()(O.eB, O.tv)
         },
         onLoadComplete: e.onLoadComplete
     }) : R.isAnimated ? (0, r.jsx)(m.Sn, {
@@ -88,7 +88,7 @@ let v = function(e) {
             var n;
             return (0, r.jsx)(d.A, {
                 ref: e => {
-                    t.current = e, x.current = e
+                    t.current = e, L.current = e
                 },
                 autoPlay: !w && v,
                 loop: !0,
@@ -108,16 +108,16 @@ let v = function(e) {
         children: t => (0, r.jsx)("img", {
             ref: t,
             alt: (0, h.mq)(a.config),
-            className: s()(O.eB, O.Qz),
+            className: o()(O.eB, O.Qz),
             src: R.url,
             onLoad: e.onLoadComplete
         })
     }), null == A ? (0, r.jsx)("div", {
-        className: s()(O.al, n),
+        className: o()(O.al, n),
         style: C,
         children: t
     }) : (0, r.jsxs)(c.DUT, {
-        className: s()(O.a$, O.al, O.Yi, n),
+        className: o()(O.a$, O.al, O.Yi, n),
         onClick: D,
         style: C,
         children: [t, "text" === A && (0, r.jsx)(c.Text, {

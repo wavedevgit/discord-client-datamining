@@ -2,7 +2,7 @@
 /** chunk id: 679804, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(734057);
 
@@ -36,4 +36,4 @@ class a {
         })
     }
 }
-let s = new a
+let o = new a

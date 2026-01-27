@@ -4,8 +4,8 @@
 var r = n(557939),
     i = n(860511),
     a = n(446474),
-    s = n(257943),
-    o = n(273802),
+    o = n(257943),
+    s = n(273802),
     l = n(739305),
     c = n(607167),
     u = n(61132),
@@ -31,15 +31,15 @@ var r = n(557939),
     R = n(485155),
     P = n(4940),
     D = n(873078),
-    x = n(412405),
-    L = n(883972),
-    j = n(486724),
-    M = L.get,
-    k = L.set,
-    U = L.enforce,
+    L = n(412405),
+    x = n(883972),
+    M = n(486724),
+    j = x.get,
+    k = x.set,
+    U = x.enforce,
     G = P.f,
-    V = D.f,
-    F = i.RangeError,
+    F = D.f,
+    V = i.RangeError,
     B = c.ArrayBuffer,
     H = B.prototype,
     Y = c.DataView,
@@ -48,13 +48,13 @@ var r = n(557939),
     z = l.TypedArray,
     q = l.TypedArrayPrototype,
     Z = l.isTypedArray,
-    X = "BYTES_PER_ELEMENT",
-    Q = "Wrong length",
+    Q = "BYTES_PER_ELEMENT",
+    X = "Wrong length",
     J = function(e, t) {
         R(e, t, {
             configurable: !0,
             get: function() {
-                return M(this)[t]
+                return j(this)[t]
             }
         })
     },
@@ -66,12 +66,12 @@ var r = n(557939),
         return Z(e) && !v(t) && t in e && p(+t) && t >= 0
     },
     et = function(e, t) {
-        return ee(e, t = E(t)) ? d(2, e[t]) : V(e, t)
+        return ee(e, t = E(t)) ? d(2, e[t]) : F(e, t)
     },
     en = function(e, t, n) {
         return ee(e, t = E(t)) && O(n) && y(n, "value") && !y(n, "get") && !y(n, "set") && !n.configurable && (!y(n, "writable") || n.writable) && (!y(n, "enumerable") || n.enumerable) ? (e[t] = n.value, e) : G(e, t, n)
     };
-s ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLength"), J(q, "length")), r({
+o ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLength"), J(q, "length")), r({
     target: "Object",
     stat: !0,
     forced: !W
@@ -79,7 +79,7 @@ s ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLen
     getOwnPropertyDescriptor: et,
     defineProperty: en
 }), e.exports = function(e, t, n) {
-    var s = e.match(/\d+/)[0] / 8,
+    var o = e.match(/\d+/)[0] / 8,
         l = e + (n ? "Clamped" : "") + "Array",
         c = "get" + e,
         d = "set" + e,
@@ -88,12 +88,12 @@ s ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLen
         y = E && E.prototype,
         b = {},
         v = function(e, t) {
-            var n = M(e);
-            return n.view[c](t * s + n.byteOffset, !0)
+            var n = j(e);
+            return n.view[c](t * o + n.byteOffset, !0)
         },
         I = function(e, t, r) {
-            var i = M(e);
-            i.view[d](t * s + i.byteOffset, n ? g(r) : r, !0)
+            var i = j(e);
+            i.view[d](t * o + i.byteOffset, n ? g(r) : r, !0)
         },
         R = function(e, t) {
             G(e, t, {
@@ -106,31 +106,31 @@ s ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLen
                 enumerable: !0
             })
         };
-    W ? o && (E = t(function(e, t, n, r) {
-        return u(e, y), j(function() {
-            return O(t) ? $(t) ? void 0 !== r ? new p(t, m(n, s), r) : void 0 !== n ? new p(t, m(n, s)) : new p(t) : Z(t) ? x(E, t) : a(C, E, t) : new p(h(t))
+    W ? s && (E = t(function(e, t, n, r) {
+        return u(e, y), M(function() {
+            return O(t) ? $(t) ? void 0 !== r ? new p(t, m(n, o), r) : void 0 !== n ? new p(t, m(n, o)) : new p(t) : Z(t) ? L(E, t) : a(C, E, t) : new p(h(t))
         }(), e, E)
     }), S && S(E, z), N(T(p), function(e) {
         e in E || f(E, e, p[e])
     }), E.prototype = y) : (E = t(function(e, t, n, r) {
         u(e, y);
-        var i, o, l, c = 0,
+        var i, s, l, c = 0,
             d = 0;
         if (O(t))
             if ($(t)) {
-                i = t, d = m(n, s);
+                i = t, d = m(n, o);
                 var f = t.byteLength;
                 if (void 0 === r) {
-                    if (f % s || (o = f - d) < 0) throw new F(Q)
-                } else if ((o = _(r) * s) + d > f) throw new F(Q);
-                l = o / s
-            } else if (Z(t)) return x(E, t);
+                    if (f % o || (s = f - d) < 0) throw new V(X)
+                } else if ((s = _(r) * o) + d > f) throw new V(X);
+                l = s / o
+            } else if (Z(t)) return L(E, t);
         else return a(C, E, t);
-        else i = new B(o = (l = h(t)) * s);
+        else i = new B(s = (l = h(t)) * o);
         for (k(e, {
                 buffer: i,
                 byteOffset: d,
-                byteLength: o,
+                byteLength: s,
                 length: l,
                 view: new Y(i)
             }); c < l;) R(e, c++)
@@ -141,5 +141,5 @@ s ? (W || (D.f = et, P.f = en, J(q, "buffer"), J(q, "byteOffset"), J(q, "byteLen
         constructor: !0,
         forced: P,
         sham: !W
-    }, b), X in E || f(E, X, s), X in y || f(y, X, s), w(l)
+    }, b), Q in E || f(E, Q, o), Q in y || f(y, Q, o), w(l)
 }) : e.exports = function() {}

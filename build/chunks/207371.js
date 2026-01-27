@@ -8,16 +8,16 @@ n.d(t, {
 var r = n(64700),
     i = n(665260),
     a = n(735991),
-    s = n(216238),
-    o = n(652215);
+    o = n(216238),
+    s = n(652215);
 
 function l(e) {
     var t;
     if (!(0, a.$B)(e)) return !1;
     let n = null != (t = e.flags) ? t : 0,
-        r = (0, i.Lt)(n, o.gfo.EMBEDDED),
-        s = (0, i.Lt)(n, o.gfo.CONTEXTLESS_ACTIVITY);
-    return r && s
+        r = (0, i.Lt)(n, s.gfo.EMBEDDED),
+        o = (0, i.Lt)(n, s.gfo.CONTEXTLESS_ACTIVITY);
+    return r && o
 }
 
 function c(e, t) {
@@ -25,10 +25,10 @@ function c(e, t) {
 }
 
 function u(e) {
-    return c(e, (0, s.oj)("canLaunchFrame"))
+    return c(e, (0, o.oj)("canLaunchFrame"))
 }
 
 function d(e) {
-    let t = (0, s.$N)("canLaunchFrame");
+    let t = (0, o.$N)("canLaunchFrame");
     return r.useMemo(() => c(e, t), [e, t])
 }

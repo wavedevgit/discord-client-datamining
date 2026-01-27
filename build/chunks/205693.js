@@ -2,11 +2,11 @@
 /** chunk id: 205693, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Qo: () => s,
+    Qo: () => o,
     Tr: () => l,
     WI: () => u,
     bg: () => i.b,
-    gO: () => o,
+    gO: () => s,
     hB: () => d,
     x: () => a.x,
     yq: () => r.y
@@ -14,10 +14,10 @@ n.d(t, {
 var r = n(904986),
     i = n(651139),
     a = n(731854),
-    s = function(e) {
+    o = function(e) {
         return e.INPUT_DEVICE = "input_device", e.STREAM = "stream", e
     }({}),
-    o = function(e) {
+    s = function(e) {
         return e.NONE = "", e.BACKGROUND_BLUR = "background_blur", e.BACKGROUND_REPLACEMENT = "background_replacement", e
     }({}),
     l = function(e) {

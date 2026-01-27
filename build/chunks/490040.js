@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(417597),
+    o = n.n(a),
+    s = n(417597),
     l = n(990078),
     c = n(397927),
     u = n(565645),
@@ -48,16 +48,16 @@ function A(e) {
 function I(e) {
     let {
         soundId: t
-    } = e, n = (0, o.bG)([m.A], () => m.A.getSoundById(t)), i = (0, f.tj)({
+    } = e, n = (0, s.bG)([m.A], () => m.A.getSoundById(t)), i = (0, f.tj)({
         location: "SoundboardMentionInline"
     }), {
         isPlaying: a,
-        playSound: s
+        playSound: o
     } = (0, h.A)(n);
     return i ? null == n ? (0, r.jsx)(A, {}) : (0, r.jsx)(S, {
         className: v.wg,
         isPlaying: a,
-        playSound: s,
+        playSound: o,
         sound: n
     }) : null
 }
@@ -68,7 +68,7 @@ function S(e) {
         sound: n,
         playSound: i,
         isPlaying: a
-    } = e, o = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, l = O.intl.formatToPlainString(O.t.tuMUJ2, {
+    } = e, s = (null == n ? void 0 : n.emojiId) != null || (null == n ? void 0 : n.emojiName) != null, l = O.intl.formatToPlainString(O.t.tuMUJ2, {
         emojiName: null == n ? void 0 : n.emojiName,
         soundName: null == n ? void 0 : n.name
     });
@@ -78,10 +78,10 @@ function S(e) {
         "aria-label": l,
         tag: "span",
         onClick: i,
-        className: s()(v.Ls, v.oR, {
+        className: o()(v.Ls, v.oR, {
             [v.he]: !0 === a
         }, t),
-        children: [o && (0, r.jsx)(u.A, {
+        children: [s && (0, r.jsx)(u.A, {
             emojiId: null == n ? void 0 : n.emojiId,
             emojiName: null == n ? void 0 : n.emojiName,
             className: v.JS
@@ -95,12 +95,12 @@ let T = function(e) {
         channelId: t,
         messageId: n,
         soundId: a,
-        messageSounds: s,
+        messageSounds: o,
         jumbo: c = !1
-    } = e, u = y.hH.useSetting(), f = (0, o.bG)([m.A], () => m.A.getSoundById(a), [a]), O = i.useMemo(() => {
+    } = e, u = y.hH.useSetting(), f = (0, s.bG)([m.A], () => m.A.getSoundById(a), [a]), O = i.useMemo(() => {
         var e;
-        return null != (e = (0, p.A)(t, n, a, s)) ? e : f
-    }, [t, n, a, s, f]), I = (0, o.bG)([b.A], () => b.A.getChannel(t)), T = (0, d.X9)({
+        return null != (e = (0, p.A)(t, n, a, o)) ? e : f
+    }, [t, n, a, o, f]), I = (0, s.bG)([b.A], () => b.A.getChannel(t)), T = (0, d.X9)({
         location: "SoundboardMention"
     }), C = i.useRef(null), {
         isPlaying: N,

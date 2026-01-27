@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(147925),
-    s = n(659612),
-    o = n(898612),
+    o = n(659612),
+    s = n(898612),
     l = n(232492),
     c = n(974105);
 
@@ -20,7 +20,7 @@ function u(e) {
         onClick: u
     } = e, d = (0, l.A)(n, t.ref_id), f = () => {
         null == d || d.navigateToChannel(), u()
-    }, p = (0, r.jsx)(s.A, {
+    }, p = (0, r.jsx)(o.A, {
         guildId: n,
         emojiId: t.emoji_id,
         emojiName: t.emoji_name
@@ -39,7 +39,7 @@ function u(e) {
                 variant: "text-md/medium",
                 color: "text-strong",
                 className: c.UU,
-                children: (0, o.A)(t)
+                children: (0, s.A)(t)
             }), (0, r.jsx)(i.Text, {
                 color: "interactive-text-default",
                 variant: "text-sm/normal",

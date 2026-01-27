@@ -5,15 +5,15 @@ n.d(t, {
     $z: () => l,
     EH: () => f,
     WA: () => d,
-    kx: () => o,
+    kx: () => s,
     l9: () => u,
     tf: () => p
 }), n(591487), n(727858), n(747238);
 var r = n(989349),
     i = n.n(r),
     a = n(405269),
-    s = n(927813);
-let o = {
+    o = n(927813);
+let s = {
         t: e => (0, a.i$)(e, "LT"),
         T: e => (0, a.i$)(e, "LTS"),
         d: e => (0, a.i$)(e, "L"),
@@ -37,22 +37,22 @@ let o = {
         }
     },
     l = "f";
-Object.setPrototypeOf(o, null);
-let c = Object.keys(o).join("|"),
+Object.setPrototypeOf(s, null);
+let c = Object.keys(s).join("|"),
     u = new RegExp("^<t:(-?\\d{1,17})(?::(".concat(c, "))?>"));
 
 function d(e) {
     let {
         timestamp: t,
         format: n
-    } = e, r = i()(Number(t) * s.A.Millis.SECOND);
+    } = e, r = i()(Number(t) * o.A.Millis.SECOND);
     if (!r.isValid()) return null;
-    let a = null != n ? o[n] : void 0;
-    return null == a && (a = o[l]), {
+    let a = null != n ? s[n] : void 0;
+    return null == a && (a = s[l]), {
         timestamp: t,
         format: n,
         parsed: r,
-        full: o.F(r),
+        full: s.F(r),
         formatted: a(r)
     }
 }

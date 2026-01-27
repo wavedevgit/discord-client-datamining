@@ -2,20 +2,20 @@
 /** chunk id: 299846, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    u: () => o
+    u: () => s
 });
 var r = n(311907),
     i = n(287809),
     a = n(20805),
-    s = n(327098);
+    o = n(327098);
 
-function o(e) {
-    var t, n, o, l, c;
+function s(e) {
+    var t, n, s, l, c;
     let u = (0, r.bG)([i.default], () => i.default.getUser(e.author_id)),
         {
             activity: d,
             embeddedActivity: f
-        } = (0, s.A)(e);
+        } = (0, o.A)(e);
     if (null == d) return {
         isRich: !1,
         appName: (0, a.zD)(e) ? e.extra.game_name : void 0,
@@ -26,7 +26,7 @@ function o(e) {
         details: void 0,
         party: void 0
     };
-    let p = (null == (n = d.assets) ? void 0 : n.large_image) != null || (null == (o = d.assets) ? void 0 : o.small_image) != null,
+    let p = (null == (n = d.assets) ? void 0 : n.large_image) != null || (null == (s = d.assets) ? void 0 : s.small_image) != null,
         _ = (null == (l = d.assets) ? void 0 : l.large_text) != null || (null == (c = d.assets) ? void 0 : c.small_text) != null,
         h = null != (t = d.name) ? t : "game_name" in e.extra ? e.extra.game_name : void 0,
         m = d.details,

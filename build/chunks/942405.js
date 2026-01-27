@@ -14,8 +14,8 @@ n.d(t, {
 var r = n(311907),
     i = n(397927),
     a = n(73153),
-    s = n(626584),
-    o = n(15285),
+    o = n(626584),
+    s = n(15285),
     l = n(954571),
     c = n(723702),
     u = n(728458),
@@ -23,7 +23,7 @@ var r = n(311907),
     f = n(309576),
     p = n(652215),
     _ = n(985018);
-let h = new s.A("SystemServiceNativeUtils"),
+let h = new o.A("SystemServiceNativeUtils"),
     m = -0x7ff8fb39,
     g = 0;
 
@@ -42,7 +42,7 @@ function b() {
 }
 
 function O() {
-    let e = (0, r.bG)([o.Ay], () => o.Ay.canShowAdminWarning),
+    let e = (0, r.bG)([s.Ay], () => s.Ay.canShowAdminWarning),
         t = b();
     return !!c.isPlatformEmbedded && e && !E() && t
 }

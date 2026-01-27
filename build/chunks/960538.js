@@ -1,31 +1,30 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 960538, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    t: () => C
+    t: () => j
 }), n(938796), n(896048);
 var r = n(627968),
     i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(111956),
-    l = n.n(o),
+    l = n(503698),
+    a = n.n(l),
+    s = n(111956),
+    o = n.n(s),
     c = n(665260),
     u = n(305866),
     d = n(435371),
-    f = n(397927),
-    p = n(189551),
-    _ = n(659859),
-    h = n(649963),
-    m = n(815807),
-    g = n(429433),
-    E = n(652215),
-    y = n(307731),
-    b = n(985018),
-    O = n(233080),
-    v = n(710504);
+    p = n(397927),
+    m = n(189551),
+    f = n(659859),
+    g = n(649963),
+    h = n(815807),
+    _ = n(429433),
+    b = n(652215),
+    A = n(307731),
+    y = n(985018),
+    v = n(233080),
+    x = n(710504);
 
-function A(e, t, n) {
+function O(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -34,114 +33,105 @@ function A(e, t, n) {
     }) : e[t] = n, e
 }
 
-function I(e) {
+function E(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            A(e, t, n[t])
+            O(e, t, n[t])
         })
     }
     return e
 }
-
-function S(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function T(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-class C extends i.Component {
+class j extends i.Component {
     render() {
         let {
             message: e,
             className: t,
             children: n,
             useChatFontScaling: i,
-            tabIndex: a = 0
+            tabIndex: l = 0
         } = this.props, {
-            isReactionPickerActive: o
+            isReactionPickerActive: s
         } = this.state;
-        if (e.state === E.cmJ.SENDING || (0, c.Lt)(e.flags, E.pr7.EPHEMERAL)) return null;
-        let l = i ? v : O,
+        if (e.state === b.cmJ.SENDING || (0, c.Lt)(e.flags, b.pr7.EPHEMERAL)) return null;
+        let o = i ? x : v,
             u = {
                 size: "sm",
                 color: "currentColor",
-                className: l.icon
+                className: o.icon
             };
-        return e.type === E.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, r.jsx)(_._x, {
+        return e.type === b.lAJ.EMOJI_ADDED && 0 === e.reactions.length ? (0, r.jsx)(f._x, {
             message: e,
-            className: s()(l.reactionBtn, t)
-        }) : (0, r.jsx)(f.YNO, {
+            className: a()(o.reactionBtn, t)
+        }) : (0, r.jsx)(p.YNO, {
             targetElementRef: this.ref,
-            shouldShow: o,
+            shouldShow: s,
             onRequestClose: this.handleReactionPickerToggle,
             renderPopout: this.renderReactionPopout,
             position: "right",
             children: (e, i) => {
+                var s, c;
                 let {
-                    isShown: o
+                    isShown: f
                 } = i;
                 return (0, r.jsx)(d.m_, {
                     asContainer: !0,
-                    text: b.intl.string(b.t.lfIHs4),
-                    children: (0, r.jsxs)(f.DUT, T(I({}, e), {
+                    text: y.intl.string(y.t.lfIHs4),
+                    children: (0, r.jsxs)(p.DUT, (s = E({}, e), c = c = {
                         innerRef: this.ref,
-                        tabIndex: a,
+                        tabIndex: l,
                         onClick: e => {
                             this.handleAddReactionClick(e)
                         },
-                        onMouseEnter: () => (0, p.K)(y.Vl.AddReactionPopoutMouseEntered),
-                        onFocus: () => (0, p.K)(y.Vl.AddReactionPopoutFocused),
-                        className: s()(l.reactionBtn, {
-                            [l.active]: o
+                        onMouseEnter: () => (0, m.K)(A.Vl.AddReactionPopoutMouseEntered),
+                        onFocus: () => (0, m.K)(A.Vl.AddReactionPopoutFocused),
+                        className: a()(o.reactionBtn, {
+                            [o.active]: f
                         }, t),
-                        children: [(0, r.jsx)(f.nm2, I({}, u)), n]
-                    }))
+                        children: [(0, r.jsx)(p.nm2, E({}, u)), n]
+                    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(s, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+                        var n = Object.keys(e);
+                        if (Object.getOwnPropertySymbols) {
+                            var r = Object.getOwnPropertySymbols(e);
+                            n.push.apply(n, r)
+                        }
+                        return n
+                    })(Object(c)).forEach(function(e) {
+                        Object.defineProperty(s, e, Object.getOwnPropertyDescriptor(c, e))
+                    }), s))
                 })
             }
         })
     }
     constructor(...e) {
-        super(...e), A(this, "state", {
+        super(...e), O(this, "state", {
             isReactionPickerActive: !1
-        }), A(this, "ref", i.createRef()), A(this, "onAddReaction", (e, t) => {
+        }), O(this, "ref", i.createRef()), O(this, "onAddReaction", (e, t) => {
             if (null == e) return;
             let {
                 channel: n,
                 message: r,
                 isForumToolbar: i
             } = this.props;
-            (0, h.BB)(n.id, r.id, (0, m.jq)(e), i ? h.qN.FORUM_TOOLBAR : h.qN.MESSAGE_INLINE_BUTTON, {
+            (0, g.BB)(n.id, r.id, (0, h.jq)(e), i ? g.qN.FORUM_TOOLBAR : g.qN.MESSAGE_INLINE_BUTTON, {
                 burst: t
             })
-        }), A(this, "handleReactionPickerToggle", () => {
+        }), O(this, "handleReactionPickerToggle", () => {
             this.setState(e => ({
                 isReactionPickerActive: !e.isReactionPickerActive
             }))
-        }), A(this, "handleAddReactionClick", e => {
+        }), O(this, "handleAddReactionClick", e => {
             e.stopPropagation(), this.handleReactionPickerToggle()
-        }), A(this, "renderReactionPopout", e => {
+        }), O(this, "renderReactionPopout", e => {
             let {
                 closePopout: t
             } = e, {
                 channel: n,
                 message: i
-            } = this.props, a = {
-                openPopoutType: "message_reaction_emoji_picker"
-            }, s = (0, r.jsx)(g.C, {
+            } = this.props, l = (0, r.jsx)(_.C, {
                 closePopout: t,
                 channel: n,
                 onSelectEmoji: e => {
@@ -150,9 +140,11 @@ class C extends i.Component {
                         willClose: r,
                         isBurst: i
                     } = e;
-                    this.onAddReaction(n, i), r && (i ? l()(t, 150)() : t())
+                    this.onAddReaction(n, i), r && (i ? o()(t, 150)() : t())
                 },
-                analyticsOverride: a,
+                analyticsOverride: {
+                    openPopoutType: "message_reaction_emoji_picker"
+                },
                 messageId: i.id
             });
             return (0, r.jsx)(u.M.Consumer, {
@@ -160,10 +152,10 @@ class C extends i.Component {
                     let {
                         inDialog: t
                     } = e;
-                    return t ? (0, r.jsx)(f.lGe, {
-                        "aria-label": b.intl.string(b.t["7Xqzdj"]),
-                        children: s
-                    }) : s
+                    return t ? (0, r.jsx)(p.lGe, {
+                        "aria-label": y.intl.string(y.t["7Xqzdj"]),
+                        children: l
+                    }) : l
                 }
             })
         })

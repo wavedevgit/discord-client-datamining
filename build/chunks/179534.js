@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 179534, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(997509),
     p = n(138298),
     f = n(657331),
-    b = n(761640),
-    h = n(71393),
+    h = n(761640),
+    b = n(71393),
     x = n(266047),
     j = n(221950),
     _ = n(735937),
@@ -37,9 +37,9 @@ var r = n(627968),
 function w(e) {
     let {
         guildId: t
-    } = e, n = (0, a.bG)([h.A], () => h.A.getGuild(t)), {
+    } = e, n = (0, a.bG)([b.A], () => b.A.getGuild(t)), {
         analyticsLocations: l
-    } = (0, d.Ay)(c.A.GUILD_SETTINGS_MEMBERS_PAGE), w = (0, u.q)(t), R = (0, a.bG)([b.Ay], () => b.Ay.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
+    } = (0, d.Ay)(c.A.GUILD_SETTINGS_MEMBERS_PAGE), w = (0, u.q)(t), R = (0, a.bG)([h.Ay], () => h.Ay.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
         p.A.closeGuildSidebar(t)
     }, [t]), G = !1 == !!(null == n ? void 0 : n.features.has(I.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, a.bG)([x.A], () => x.A.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
         null != e && (0, f.openUserProfileModal)({

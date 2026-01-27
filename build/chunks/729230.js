@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 729230, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(778300);
-let o = e => {
+let a = e => {
     let {
         lifted: t = !1
     } = e;
@@ -20,7 +19,7 @@ let o = e => {
         fill: "none",
         xmlns: "http://www.w3.org/2000/svg",
         preserveAspectRatio: "none",
-        className: a()(s.zr, {
+        className: l()(s.zr, {
             [s.N]: t
         }),
         children: [(0, r.jsx)("path", {

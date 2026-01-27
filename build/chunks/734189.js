@@ -7,13 +7,13 @@ n.d(t, {
 var r = n(6678),
     i = n(476858),
     a = n(355418),
-    s = n(1673);
-let o = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(?:ce)\\s*)?(${(0,i.uJ)(r.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)`, "i"),
+    o = n(1673);
+let s = RegExp(`(?:(?:\\,|\\(|\\（)\\s*)?(?:(?:ce)\\s*)?(${(0,i.uJ)(r.CV)})(?:\\s*(?:\\,|\\)|\\）))?(?:\\s*(dernier|prochain)\\s*)?(?=\\W|\\d|$)`, "i"),
     l = 1,
     c = 2;
 class u extends a.c {
     innerPattern() {
-        return o
+        return s
     }
     innerExtract(e, t) {
         let n = t[l].toLowerCase(),
@@ -21,7 +21,7 @@ class u extends a.c {
         if (void 0 === i) return null;
         let a = t[c];
         a = (a = a || "").toLowerCase();
-        let o = null;
-        return "dernier" == a ? o = "last" : "prochain" == a && (o = "next"), (0, s.Y5)(e.reference, i, o)
+        let s = null;
+        return "dernier" == a ? s = "last" : "prochain" == a && (s = "next"), (0, o.Y5)(e.reference, i, s)
     }
 }

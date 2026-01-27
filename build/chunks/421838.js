@@ -2,15 +2,15 @@
 /** chunk id: 421838, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Kl: () => o,
+    Kl: () => s,
     LF: () => l,
-    sF: () => s
+    sF: () => o
 });
 var r = n(73153),
     i = n(954571),
     a = n(652215);
 
-function s(e) {
+function o(e) {
     i.default.track(a.HAw.HOTSPOT_HIDDEN, {
         hotspot_location: e
     }), r.h.wait(() => {
@@ -21,7 +21,7 @@ function s(e) {
     })
 }
 
-function o(e, t) {
+function s(e, t) {
     r.h.dispatch({
         type: "HOTSPOT_OVERRIDE_SET",
         location: e,

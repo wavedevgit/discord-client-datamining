@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 767822, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -48,16 +48,16 @@ function f(e, t) {
     }), e
 }
 
-function b(e) {
+function h(e) {
     let {
         guildId: t,
         triggerType: n
-    } = e, b = i.useMemo(() => () => (0, o._I)(t, n), [t, n]), [h] = i.useState(b), [x, j] = i.useState(!1), {
+    } = e, h = i.useMemo(() => () => (0, o._I)(t, n), [t, n]), [b] = i.useState(h), [x, j] = i.useState(!1), {
         editingRule: _,
         createNewEditingRule: O
     } = (0, d.U)(), {
         getDefaultRuleName: v
-    } = c.i$[n], y = !(0, o.wC)(_) && (null == _ ? void 0 : _.triggerType) === n, [A, E] = i.useState(y ? _ : h), N = (0, a.zhh)({
+    } = c.i$[n], y = !(0, o.wC)(_) && (null == _ ? void 0 : _.triggerType) === n, [A, E] = i.useState(y ? _ : b), N = (0, a.zhh)({
         opacity: +!y,
         pointerEvents: y ? "none" : "all",
         config: f(p({}, l.config.stiff), {
@@ -70,10 +70,10 @@ function b(e) {
             clamp: !0
         }),
         onStart: () => {
-            E(y ? _ : h)
+            E(y ? _ : b)
         },
         onRest: () => {
-            E(y ? _ : h), j(y)
+            E(y ? _ : b), j(y)
         }
     });
     return null == _ || y ? (0, r.jsxs)("div", {

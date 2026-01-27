@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 371701, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(781289),
     p = n(555337),
     f = n(250627),
-    b = n(839837),
-    h = n(89791),
+    h = n(839837),
+    b = n(89791),
     x = n(985018);
 
 function j(e) {
@@ -34,7 +34,7 @@ function _(e) {
     var t, n, a;
     let {
         guildId: f
-    } = e, _ = (0, b.A)(f), O = (0, s.GK)(), v = (0, i.bG)([p.A], () => p.A.getGuild());
+    } = e, _ = (0, h.A)(f), O = (0, s.GK)(), v = (0, i.bG)([p.A], () => p.A.getGuild());
     return _.loading || null == v ? (0, r.jsx)(l.y$y, {}) : null == _.application ? (0, r.jsx)(u.A, {
         guild: v
     }) : (0, r.jsxs)(d.A, {
@@ -45,7 +45,7 @@ function _(e) {
             summaryMetricValue: null != (t = _.metrics.paymentsCount) ? t : "-",
             summaryMetricTrend: null != (n = _.metrics.paymentsCountChange) ? n : 0,
             summaryMetricTrendIsPercent: !1,
-            children: (0, r.jsx)(h.A, {
+            children: (0, r.jsx)(b.A, {
                 guildId: f,
                 earningsData: _
             })

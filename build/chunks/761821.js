@@ -18,8 +18,8 @@ n.d(t, {
 var r = n(638504),
     i = n(65412),
     a = n(735438),
-    s = n.n(a),
-    o = n(803805),
+    o = n.n(a),
+    s = n(803805),
     l = n(873298),
     c = n(813827),
     u = n(355097),
@@ -51,7 +51,7 @@ let _ = {
     },
     h = {
         [u.oD.PRELOADED_USER_SETTINGS]: l.nT,
-        [u.oD.FRECENCY_AND_FAVORITES_SETTINGS]: o.aw
+        [u.oD.FRECENCY_AND_FAVORITES_SETTINGS]: s.aw
     };
 
 function m(e, t) {
@@ -112,14 +112,14 @@ function T(e, t) {
         i = !1,
         a = [];
     for (let n of t) {
-        var s, o;
+        var o, s;
         if (n.version <= e.versions.clientVersion) {
-            r && (null == (s = n.cleanup) || s.call(n));
+            r && (null == (o = n.cleanup) || o.call(n));
             continue
         }
         let t = n.run(e);
         if (e.versions.clientVersion = n.version, !1 === t) {
-            null == (o = n.cleanup) || o.call(n);
+            null == (s = n.cleanup) || s.call(n);
             continue
         }
         i = !0, null != n.cleanup && a.push(n.cleanup)
@@ -134,13 +134,13 @@ function T(e, t) {
 function C(e, t) {
     let n = Object.entries(e);
     if (n.length > t)
-        for (n = s().sortBy(n, e => {
+        for (n = o().sortBy(n, e => {
                 let [t, n] = e;
                 return n.recentUses[n.recentUses.length - 1]
             }).reverse(); n.length > t;) n.pop();
     let r = {};
     for (let [e, t] of n) {
-        let n = o.zT.create();
+        let n = s.zT.create();
         n.frecency = t.frecency, n.recentUses = t.recentUses.filter(e => null != e && e > 0).map(String), n.score = Math.round(t.score), n.totalUses = t.totalUses, r[e] = n
     }
     return r

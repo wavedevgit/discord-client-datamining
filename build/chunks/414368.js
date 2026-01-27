@@ -10,8 +10,8 @@ n.d(t, {
     qf: () => o,
     tm: () => u
 });
-var l, r = n(284009),
-    i = n.n(r);
+var r, l = n(284009),
+    i = n.n(l);
 
 function a(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -21,7 +21,7 @@ function a(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-var s = ((l = {})[l.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", l[l.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", l);
+var s = ((r = {})[r.THREE_BY_TWO = 2 / 3] = "THREE_BY_TWO", r[r.SIXTEEN_BY_NINE = 9 / 16] = "SIXTEEN_BY_NINE", r);
 let o = 12;
 class c {
     getWidth(e) {
@@ -34,10 +34,10 @@ class c {
         };
         let t = e / this.maxWidth,
             n = Math.max(Math.floor(t + (e / this.minWidth - t) / 2), 1),
-            l = this.gap * (n - 1);
+            r = this.gap * (n - 1);
         return {
             columns: n,
-            columnWidth: (e - l) / n
+            columnWidth: (e - r) / n
         }
     }
     constructor({
@@ -55,8 +55,8 @@ let d = {
     u = function(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : s.THREE_BY_TWO,
             n = e - 2,
-            l = Math.ceil(n * t);
-        return [n, l]
+            r = Math.ceil(n * t);
+        return [n, r]
     },
     m = 12,
     h = function(e) {

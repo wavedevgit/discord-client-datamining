@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends(r = i.Ay.Store) {
+class s extends(r = i.Ay.Store) {
     getState() {
         return {
             enabled: !1,
@@ -35,5 +35,5 @@ class o extends(r = i.Ay.Store) {
         return !1
     }
 }
-s(o, "displayName", "LowPerformanceModeStore");
-let l = new o(a.h, {})
+o(s, "displayName", "LowPerformanceModeStore");
+let l = new s(a.h, {})

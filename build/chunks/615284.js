@@ -8,8 +8,8 @@ n.d(t, {
 var r, i = n(627968);
 n(64700);
 var a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(397927),
     c = n(73153),
     u = n(927057),
@@ -29,7 +29,7 @@ function g(e, t, n) {
     }) : e[t] = n, e
 }
 let E = new Set;
-class y extends(r = o.Ay.PersistedStore) {
+class y extends(r = s.Ay.PersistedStore) {
     initialize(e) {
         this.waitFor(d.A, f.Ay, p.A, _.default), null != e && (E = new Set(e))
     }
@@ -42,7 +42,7 @@ class y extends(r = o.Ay.PersistedStore) {
 }
 g(y, "displayName", "PTOStore"), g(y, "persistKey", "PTOStore");
 let b = new y(c.h, {}),
-    O = e => (0, o.bG)([f.Ay, _.default, b], () => {
+    O = e => (0, s.bG)([f.Ay, _.default, b], () => {
         let t = _.default.getCurrentUser();
         if (null == t || !t.isStaff() || !e.isDM()) return !1;
         let n = _.default.getUser(e.getRecipientId());
@@ -60,7 +60,7 @@ let b = new y(c.h, {}),
         className: m.eU,
         children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/medium",
-            className: s()(m.Qq, m.Fn),
+            className: o()(m.Qq, m.Fn),
             children: h.intl.string(h.t["2UvR1E"])
         }), (0, i.jsx)("div", {
             className: m.o1,

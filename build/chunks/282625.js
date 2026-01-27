@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 282625, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(442433),
     p = n(974544),
     f = n(928039),
-    b = n(544028),
-    h = n(411153),
+    h = n(544028),
+    b = n(411153),
     x = n(427157),
     j = n(734057),
     _ = n(71393),
@@ -193,9 +193,9 @@ function U(e) {
     i.useEffect(() => {
         p.current = c
     }, [c]);
-    let b = (0, f.A)("audit-log", p);
+    let h = (0, f.A)("audit-log", p);
     return (0, r.jsx)(a.hD, {
-        navigator: b,
+        navigator: h,
         children: (0, r.jsx)(a.PR, {
             children: e => {
                 let {
@@ -368,8 +368,8 @@ class B extends i.PureComponent {
             lastExpandedId: null,
             actionFilterQuery: ""
         }), D(this, "formatActionOption", e => {
-            let t = (0, h.pq)(e.value),
-                n = (0, h.Ag)(e.value);
+            let t = (0, b.pq)(e.value),
+                n = (0, b.Ag)(e.value);
             return {
                 id: e.value,
                 value: e.value,
@@ -524,7 +524,7 @@ class B extends i.PureComponent {
         })
     }
 }
-let F = c.Ay.connectStores([S.A, E.A, _.A, b.A, O.A, v.default], () => {
+let F = c.Ay.connectStores([S.A, E.A, _.A, h.A, O.A, v.default], () => {
     let e = E.A.getGuildId(),
         t = _.A.getGuild(e),
         n = S.A.logs;
@@ -541,7 +541,7 @@ let F = c.Ay.connectStores([S.A, E.A, _.A, b.A, O.A, v.default], () => {
         logs: null != n && null != t ? N.yy(n, t) : [],
         actionFilter: S.A.actionFilter,
         userIdFilter: S.A.userIdFilter,
-        theme: b.A.theme,
+        theme: h.A.theme,
         hide: O.A.enabled
     }
 })(B)

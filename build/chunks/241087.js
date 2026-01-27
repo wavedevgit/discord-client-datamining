@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(528352),
     i = n(374372),
     a = n(355418);
-let s = RegExp("(" + r.Pl + ")(later|na|vanaf nu|voortaan|vooruit|uit)(?=(?:\\W|$))", "i"),
-    o = RegExp("(" + r.Pl + ")(later|vanaf nu)(?=(?:\\W|$))", "i"),
+let o = RegExp("(" + r.Pl + ")(later|na|vanaf nu|voortaan|vooruit|uit)(?=(?:\\W|$))", "i"),
+    s = RegExp("(" + r.Pl + ")(later|vanaf nu)(?=(?:\\W|$))", "i"),
     l = 1;
 class c extends a.c {
     strictMode;
@@ -16,7 +16,7 @@ class c extends a.c {
         super(), this.strictMode = e
     }
     innerPattern() {
-        return this.strictMode ? o : s
+        return this.strictMode ? s : o
     }
     innerExtract(e, t) {
         let n = (0, r.E9)(t[l]);

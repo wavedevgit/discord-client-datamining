@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(735438),
     i = n.n(r),
     a = n(989349),
-    s = n.n(a);
+    o = n.n(a);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -103,22 +103,22 @@ class h {
         return null != t ? t.frecency : null
     }
     compute() {
-        let e = s()(),
+        let e = o()(),
             t = this.calculateMaxTotalUse ? i().maxBy(Object.values(this.usageHistory), e => e.totalUses) : null;
         i().forEach(this.usageHistory, (n, r) => {
             let {
                 totalUses: a,
-                recentUses: o,
+                recentUses: s,
                 frecency: l
             } = n;
             if (-1 !== l) return;
             let c = this.computeBonus(r) / 100;
-            n.score = 0, i().forEach(o, (t, r) => {
+            n.score = 0, i().forEach(s, (t, r) => {
                 if (r >= this.maxSamples) return !1;
-                let i = this.computeWeight(e.diff(s()(t), "days"));
+                let i = this.computeWeight(e.diff(o()(t), "days"));
                 n.score += c * i
             }), n.score > 0 ? (n.recentUses.length > 0 && (n.frecency = this.computeFrecency(a, n.score, {
-                numOfRecentUses: o.length,
+                numOfRecentUses: s.length,
                 maxTotalUse: null == t ? void 0 : t.totalUses
             })), this.usageHistory[r] = n) : delete this.usageHistory[r]
         }), this.frequently = i()(this.usageHistory).map((e, t) => {
@@ -145,10 +145,10 @@ class h {
         calculateMaxTotalUse: r = !1,
         lookupKey: i,
         afterCompute: a,
-        numFrequentlyItems: s = f,
+        numFrequentlyItems: o = f,
         maxSamples: l = d
     }) {
-        o(this, "dirty", void 0), o(this, "_frequently", void 0), o(this, "numFrequentlyItems", void 0), o(this, "maxSamples", void 0), o(this, "computeBonus", void 0), o(this, "computeWeight", void 0), o(this, "computeFrecency", void 0), o(this, "calculateMaxTotalUse", void 0), o(this, "lookupKey", void 0), o(this, "usageHistory", void 0), o(this, "afterCompute", void 0), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = s, this.dirty = !1
+        s(this, "dirty", void 0), s(this, "_frequently", void 0), s(this, "numFrequentlyItems", void 0), s(this, "maxSamples", void 0), s(this, "computeBonus", void 0), s(this, "computeWeight", void 0), s(this, "computeFrecency", void 0), s(this, "calculateMaxTotalUse", void 0), s(this, "lookupKey", void 0), s(this, "usageHistory", void 0), s(this, "afterCompute", void 0), this.computeBonus = e, this.computeWeight = t, this.computeFrecency = n, this.calculateMaxTotalUse = r, this.afterCompute = a, this.lookupKey = i, this.usageHistory = {}, this.frequently = [], this.maxSamples = l, this.numFrequentlyItems = o, this.dirty = !1
     }
 }
 let m = h

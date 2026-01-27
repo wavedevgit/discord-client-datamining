@@ -9,8 +9,8 @@ n.d(t, {
 var r = n(284009),
     i = n.n(r),
     a = n(308528),
-    s = n(843472),
-    o = n(451909),
+    o = n(843472),
+    s = n(451909),
     l = n(734057),
     c = n(45938),
     u = n(381941),
@@ -28,7 +28,7 @@ let f = async (e, t) => {
             return t
         }),
         r = (0, c.Zq)(t);
-    return s.A.sendMessage(n.id, o.Ay.parse(n, r), void 0, {
+    return o.A.sendMessage(n.id, s.Ay.parse(n, r), void 0, {
         isGiftLinkSentOnBehalfOfUser: !0,
         location: u.Hx.GIFTING
     })

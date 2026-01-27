@@ -7,13 +7,13 @@ n.d(t, {
 var r = n(64700),
     i = n(340287),
     a = n(669507),
-    s = n(412700),
-    o = n.n(s),
+    o = n(412700),
+    s = n.n(o),
     l = n(418034),
     c = [],
     u = function(e, t, n) {
         void 0 === n && (n = {});
-        var s = r.useRef(null),
+        var o = r.useRef(null),
             u = {
                 onFirstUpdate: n.onFirstUpdate,
                 placement: n.placement || "bottom",
@@ -67,7 +67,7 @@ var r = n(64700),
                         enabled: !1
                     }])
                 };
-                return o()(s.current, e) ? s.current || e : (s.current = e, e)
+                return s()(o.current, e) ? o.current || e : (o.current = e, e)
             }, [u.onFirstUpdate, u.placement, u.strategy, u.modifiers, _]),
             m = r.useRef();
         return (0, l.Es)(function() {

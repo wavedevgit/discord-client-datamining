@@ -1,11 +1,11 @@
-/** Chunk was on 83006 **/
+/** Chunk was on 15646 **/
 /** chunk id: 199029, original params: e,t,r (module,exports,require) **/
 r.d(t, {
     o: () => c
 }), r(896048);
 var n = r(627968),
-    a = r(64700),
-    l = r(77555),
+    l = r(64700),
+    a = r(77555),
     o = r(151054),
     s = r(457417),
     i = r(848193);
@@ -19,15 +19,15 @@ let c = () => {
         updateSelectShareDestinations: d
     } = (0, s.Vw)(), {
         results: f,
-        updateSearchText: p
+        updateSearchText: b
     } = (0, o.R)({
         selectedDestinations: e,
         includeMissingDMs: !0
     });
-    (0, a.useEffect)(() => {
-        p(r)
-    }, [p, r]);
-    let b = (0, a.useCallback)(t => {
+    (0, l.useEffect)(() => {
+        b(r)
+    }, [b, r]);
+    let p = (0, l.useCallback)(t => {
             let r = e.findIndex(e => {
                 let {
                     type: r,
@@ -43,13 +43,13 @@ let c = () => {
             d([...e, t])
         }, [e, d]),
         g = e.length >= t;
-    return (0, n.jsx)(l.z, {
+    return (0, n.jsx)(a.z, {
         paddingBottom: 16,
         paddingTop: 16,
         rowData: f,
         message: c,
         originChannel: u,
-        handleToggleDestination: b,
+        handleToggleDestination: p,
         selectedDestinations: e,
         disableSelection: g,
         rowClassName: i.q

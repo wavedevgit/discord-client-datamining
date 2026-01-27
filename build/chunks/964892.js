@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(108531),
+    o = n.n(a),
+    s = n(108531),
     l = n(158954),
     c = n(311907),
     u = n(453903),
@@ -94,14 +94,14 @@ function R() {
     if ("center" === e || "custom" === e) return 0;
     let i = "left" === t || "right" === t,
         a = i ? r : null != n ? n : T,
-        s = i ? S : I;
+        o = i ? S : I;
     if (0 === a) return 0;
-    let o = a / 2 - s;
+    let s = a / 2 - o;
     switch (e) {
         case "start":
-            return o;
+            return s;
         case "end":
-            return -o;
+            return -s;
         default:
             return 0
     }
@@ -118,24 +118,24 @@ function P(e) {
         align: v,
         alignmentStrategy: P = "trigger-center",
         caretConfig: D,
-        hasVideo: x = !1,
-        gradientColor: L,
-        gradientOffsetBottom: j = .4,
-        onPositionChange: M,
+        hasVideo: L = !1,
+        gradientColor: x,
+        gradientOffsetBottom: M = .4,
+        onPositionChange: j,
         onNudgeChange: k,
         scrollBehavior: U = "sticky",
         modal: G = !1,
-        returnRef: V,
-        experimental_ignoreModalClicks: F = !0,
+        returnRef: F,
+        experimental_ignoreModalClicks: V = !0,
         closeOnClickOutside: B = !1
     } = e, [H, Y] = i.useState(h), [W, K] = i.useState(y), z = i.useRef(y), q = i.useRef(0), {
         ref: Z,
-        width: X,
-        height: Q
-    } = (0, d.Ay)(), J = (0, c.bG)([f.A], () => f.A.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(M);
+        width: Q,
+        height: X
+    } = (0, d.Ay)(), J = (0, c.bG)([f.A], () => f.A.getLayers()), $ = null != (t = J[J.length - 1]) ? t : "base", ee = i.useRef(j);
     i.useEffect(() => {
-        ee.current = M
-    }, [M]);
+        ee.current = j
+    }, [j]);
     let et = i.useCallback(e => {
             var t;
             null != e && e !== z.current && (z.current = e, K(e), null == (t = ee.current) || t.call(ee, e))
@@ -167,11 +167,11 @@ function P(e) {
             }
             return "center"
         }, [P, v, W]),
-        es = i.useMemo(() => {
+        eo = i.useMemo(() => {
             var e;
-            if ("edge" !== P) return R(null != (e = null == D ? void 0 : D.align) ? e : "center", W, X, Q)
-        }, [P, D, W, X, Q]),
-        eo = i.useMemo(() => ({
+            if ("edge" !== P) return R(null != (e = null == D ? void 0 : D.align) ? e : "center", W, Q, X)
+        }, [P, D, W, Q, X]),
+        es = i.useMemo(() => ({
             position: W,
             caretConfig: null != D ? D : {
                 align: "center"
@@ -188,16 +188,16 @@ function P(e) {
                 let u = (0, r.jsx)(l.lGe, b(E({}, c), {
                     setDialogRef: t,
                     modal: G,
-                    className: s()(null != L ? m.popoverContentWithGradient : m.popover, {
-                        [m["popover--video"]]: x
+                    className: o()(null != x ? m.popoverContentWithGradient : m.popover, {
+                        [m["popover--video"]]: L
                     }),
-                    returnRef: V,
+                    returnRef: F,
                     children: (0, r.jsx)(A.Provider, {
-                        value: eo,
+                        value: es,
                         children: n
                     })
                 }));
-                return (0, r.jsx)(o.animated.div, {
+                return (0, r.jsx)(s.animated.div, {
                     ref: Z,
                     "data-mana-component": "popover",
                     style: b(E({}, e), {
@@ -206,9 +206,9 @@ function P(e) {
                         "--custom-caret-edge-offset-horizontal-nudge": "".concat(a, "px"),
                         "--custom-popover-width": "".concat(T, "px")
                     }),
-                    children: null != L ? (0, r.jsx)(l.hLv, {
-                        offsetBottom: j,
-                        color: L,
+                    children: null != x ? (0, r.jsx)(l.hLv, {
+                        offsetBottom: M,
+                        color: x,
                         className: m.popoverGradientWrapper,
                         children: u
                     }) : u
@@ -222,15 +222,15 @@ function P(e) {
         position: W,
         align: ea,
         spacing: C + N,
-        offset: es,
+        offset: eo,
         layerContext: void 0,
-        positionKey: null != es ? "".concat(W, "-").concat(es) : void 0,
+        positionKey: null != eo ? "".concat(W, "-").concat(eo) : void 0,
         popoutKey: void 0,
         fixed: !1,
         autoInvert: !0,
         nudgeAlignIntoViewport: "top" === W || "bottom" === W,
         closeOnClickOutside: B,
-        ignoreModalClicks: F,
+        ignoreModalClicks: V,
         scrollBehavior: U,
         renderPopout: el,
         children: w

@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(499979),
     i = n(451988),
     a = n(929921),
-    s = n(652215);
+    o = n(652215);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,7 +25,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -78,13 +78,13 @@ class p {
     getStats() {
         let e = {
             num_layout_changes: this._layoutChanges,
-            duration_layout_fullscreen: f(this._layoutBuckets[s.SO9.FULL_SCREEN]),
-            duration_layout_theatre: f(this._layoutBuckets[s.SO9.THEATRE]),
-            duration_layout_pip: f(this._layoutBuckets[s.SO9.PIP]),
-            duration_layout_popout: f(this._layoutBuckets[s.SO9.POPOUT]),
-            duration_layout_portrait: f(this._layoutBuckets[s.SO9.PORTRAIT]),
-            duration_layout_landscape: f(this._layoutBuckets[s.SO9.LANDSCAPE]),
-            duration_layout_minimized: f(this._layoutBuckets[s.SO9.MINIMIZED])
+            duration_layout_fullscreen: f(this._layoutBuckets[o.SO9.FULL_SCREEN]),
+            duration_layout_theatre: f(this._layoutBuckets[o.SO9.THEATRE]),
+            duration_layout_pip: f(this._layoutBuckets[o.SO9.PIP]),
+            duration_layout_popout: f(this._layoutBuckets[o.SO9.POPOUT]),
+            duration_layout_portrait: f(this._layoutBuckets[o.SO9.PORTRAIT]),
+            duration_layout_landscape: f(this._layoutBuckets[o.SO9.LANDSCAPE]),
+            duration_layout_minimized: f(this._layoutBuckets[o.SO9.MINIMIZED])
         };
         return this._isSender ? u(l({}, e), {
             target_fps: this._targetFPS,
@@ -94,9 +94,9 @@ class p {
         }) : e
     }
     constructor(e, t) {
-        o(this, "_statInterval", void 0), o(this, "_isSender", void 0), o(this, "_streamEnd", void 0), o(this, "_targetResolution", 0), o(this, "_targetFPS", 0), o(this, "_streamSettingsChanged", !1), o(this, "_lastLayout", void 0), o(this, "_lastLayoutChanged", 0), o(this, "_layoutChanges", 0), o(this, "_layoutBuckets", void 0), o(this, "_automaticQualityChanges", 0), o(this, "_incrementLayout", (e, t) => {
+        s(this, "_statInterval", void 0), s(this, "_isSender", void 0), s(this, "_streamEnd", void 0), s(this, "_targetResolution", 0), s(this, "_targetFPS", 0), s(this, "_streamSettingsChanged", !1), s(this, "_lastLayout", void 0), s(this, "_lastLayoutChanged", 0), s(this, "_layoutChanges", 0), s(this, "_layoutBuckets", void 0), s(this, "_automaticQualityChanges", 0), s(this, "_incrementLayout", (e, t) => {
             null == this._layoutBuckets[e] && (this._layoutBuckets[e] = 0), this._layoutBuckets[e] += t
-        }), o(this, "_sampleStats", () => {
+        }), s(this, "_sampleStats", () => {
             let {
                 resolution: e,
                 fps: t

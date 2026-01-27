@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     Ay: () => c,
-    Sv: () => o
+    Sv: () => s
 }), n(65821);
 var r = n(64700),
     i = n(143236);
@@ -24,9 +24,9 @@ class a extends i.EventEmitter {
         return !1
     }
 }
-let s = r.createContext(new a),
+let o = r.createContext(new a),
     {
-        Provider: o,
+        Provider: s,
         Consumer: l
-    } = s,
-    c = s
+    } = o,
+    c = o

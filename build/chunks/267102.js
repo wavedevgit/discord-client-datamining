@@ -16,21 +16,21 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(621466),
-    s = n(203982),
-    o = n(365971),
+    o = n(203982),
+    s = n(365971),
     l = n(158368),
     c = n(652215);
-let u = new s.H,
+let u = new o.H,
     d = i.createContext({
         appContext: c.BRT.APP,
         renderWindow: window,
         windowDispatch: u,
-        windowId: (0, o.Xg)()
+        windowId: (0, s.Xg)()
     }),
     f = new Map;
 
 function p(e, t) {
-    let [n, r] = i.useState((0, o.Q2)(t)), a = i.useMemo(() => new s.H, []), l = i.useMemo(() => ({
+    let [n, r] = i.useState((0, s.Q2)(t)), a = i.useMemo(() => new o.H, []), l = i.useMemo(() => ({
         appContext: e,
         renderWindow: t,
         windowDispatch: a,
@@ -39,7 +39,7 @@ function p(e, t) {
     return i.useEffect(() => {
         if (null != n) return;
         let e = setInterval(() => {
-            let n = (0, o.Q2)(t);
+            let n = (0, s.Q2)(t);
             null != n && (r(n), clearInterval(e))
         }, 10);
         return () => clearInterval(e)
@@ -56,7 +56,7 @@ function _(e) {
     var t;
     let n = e.ownerDocument.defaultView;
     if (null == n) return;
-    let r = (0, o.Q2)(n);
+    let r = (0, s.Q2)(n);
     return null == (t = f.get(r)) ? void 0 : t.windowDispatch
 }
 

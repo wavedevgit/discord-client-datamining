@@ -1,48 +1,45 @@
-/** Chunk was on web.js **/
-/** chunk id: 212168, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => u,
-    i: () => l
+/** Chunk was on 82220 **/
+/** chunk id: 212168, original params: e,n,t (module,exports,require) **/
+t.d(n, {
+    A: () => s,
+    i: () => u
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(446958),
-    l = function(e) {
-        return e.PREMIUM = "premium", e.LIMITED = "limited", e
-    }({});
-let c = {
+var r, i = t(627968),
+    l = t(64700),
+    a = t(503698),
+    d = t.n(a),
+    c = t(446958),
+    u = ((r = {}).PREMIUM = "premium", r.LIMITED = "limited", r);
+let o = {
         premium: {
-            border: o.wU,
-            background: o.gI
+            border: c.wU,
+            background: c.gI
         },
         limited: {
-            border: o.rY,
-            background: o.pm
+            border: c.rY,
+            background: c.pm
         }
     },
-    u = i.forwardRef(function(e, t) {
+    s = l.forwardRef(function(e, n) {
         let {
-            children: n,
-            type: i = "premium",
-            isShown: a,
-            hasBackground: l = !1,
+            children: t,
+            type: r = "premium",
+            isShown: l,
+            hasBackground: a = !1,
             className: u,
-            backgroundClassName: d
+            backgroundClassName: s
         } = e;
-        if (!a) return n;
+        if (!l) return t;
         let {
             border: f,
-            background: p
-        } = c[i];
-        return (0, r.jsx)("div", {
-            ref: t,
-            className: s()(f, u),
-            children: (0, r.jsx)("div", {
-                className: s()(l ? p : o.Tp, d),
-                children: n
+            background: h
+        } = o[r];
+        return (0, i.jsx)("div", {
+            ref: n,
+            className: d()(f, u),
+            children: (0, i.jsx)("div", {
+                className: d()(a ? h : c.Tp, s),
+                children: t
             })
         })
     })

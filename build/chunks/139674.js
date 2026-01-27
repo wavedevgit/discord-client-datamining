@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 139674, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     PN: "userSettingsSecurity__2666b",
     Pm: "checkboxGroup__2666b",

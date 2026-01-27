@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(362474),
     i = n(73153),
     a = n(846293),
-    s = n(439372),
-    o = n(961350),
+    o = n(439372),
+    s = n(961350),
     l = n(723702),
     c = n(652215);
 
@@ -22,14 +22,14 @@ function u(e, t, n) {
     }) : e[t] = n, e
 }
 let d = "guestInviteToAccept";
-class f extends s.A {
+class f extends o.A {
     constructor(...e) {
         super(...e), u(this, "actions", {
             POST_CONNECTION_OPEN: () => this.handleConnectionOpen()
         }), u(this, "handleConnectionOpen", async () => {
             if ((0, l.isWeb)()) {
                 let e = r.u.get(d);
-                if (null != e && "string" == typeof e && o.default.isAuthenticated()) {
+                if (null != e && "string" == typeof e && s.default.isAuthenticated()) {
                     let {
                         invite: t
                     } = await a.Ay.resolveInvite(e, "Desktop Modal");

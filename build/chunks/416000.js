@@ -1,6 +1,5 @@
-/** Chunk was on 38663 **/
+/** Chunk was on 94682 **/
 /** chunk id: 416000, original params: e,t,n (module,exports,require) **/
 e.exports = {
-    C: "gameShopLabelContainer__80465",
     I: "applicationIcon__80465"
 }

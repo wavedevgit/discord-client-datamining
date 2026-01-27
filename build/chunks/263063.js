@@ -2,12 +2,12 @@
 /** chunk id: 263063, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => L
 });
 var r, i = n(627968),
     a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+    o = n(503698),
+    s = n.n(o),
     l = n(758879),
     c = n(311907),
     u = n(827734),
@@ -143,7 +143,7 @@ class R extends a.PureComponent {
             {
                 guild: r,
                 className: a,
-                showBadge: s,
+                showBadge: o,
                 active: l,
                 size: c,
                 style: u = {},
@@ -162,17 +162,17 @@ class R extends a.PureComponent {
             } = n,
             P = S(n, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
             D = w[c],
-            x = null != h ? f.DUT : "div",
-            L = (0, m.Rb)(r);
-        return (0, i.jsxs)(x, I(v({
-            className: o()(b.icon, a, (0, y.t)(b, "iconSize", c), {
+            L = null != h ? f.DUT : "div",
+            x = (0, m.Rb)(r);
+        return (0, i.jsxs)(L, I(v({
+            className: s()(b.icon, a, (0, y.t)(b, "iconSize", c), {
                 [null != (e = (0, y.t)(b, "iconActive", c)) ? e : ""]: l,
                 [b.iconInactive]: !l,
                 [b.noIcon]: null == r.icon
             }),
             "aria-hidden": C,
             style: null == r.icon ? v({
-                fontSize: (null != (t = D[L.length]) ? t : D[D.length - 1]) * d
+                fontSize: (null != (t = D[x.length]) ? t : D[D.length - 1]) * d
             }, u) : u,
             onClick: null != g || null == h ? void 0 : h,
             tabIndex: A
@@ -222,10 +222,10 @@ let P = c.Ay.connectStores([g.A], e => {
         iconSrc: r,
         style: i,
         size: a,
-        iconSize: s,
-        lossless: o
+        iconSize: o,
+        lossless: s
     } = e;
-    return null == r && (r = t instanceof _.GO ? t.getIconURL(null != s ? s : N[a], n && g.A.isFocused()) : (0, m.Iv)(t, null != s ? s : N[a], n && g.A.isFocused(), o)), {
+    return null == r && (r = t instanceof _.GO ? t.getIconURL(null != o ? o : N[a], n && g.A.isFocused()) : (0, m.Iv)(t, null != o ? o : N[a], n && g.A.isFocused(), s)), {
         style: I(v({}, i), {
             backgroundImage: (0, E.wU)(r)
         })
@@ -246,4 +246,4 @@ O(D, "Sizes", C), O(D, "defaultProps", {
     badgeStrokeColor: u.A.unsafe_rawColors.WHITE.css,
     animate: !1
 });
-let x = D
+let L = D

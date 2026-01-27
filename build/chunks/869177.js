@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(397927),
     a = n(405139),
-    s = n(985018),
-    o = n(802177);
+    o = n(985018),
+    s = n(802177);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -42,7 +42,7 @@ function u(e) {
             paymentRequestWallet: p
         } = e,
         _ = {
-            paymentLabel: s.intl.string(s.t.ZURqX0),
+            paymentLabel: o.intl.string(o.t.ZURqX0),
             paymentRequestRef: f,
             renderConnectorView: !0,
             onStripePaymentMethodReceived: l,
@@ -57,9 +57,9 @@ function u(e) {
             })
         };
     return t = "applePay" === p ? (0, r.jsx)(a.Mv, c({}, _)) : (0, r.jsx)(a.dP, c({}, _)), (0, r.jsx)("div", {
-        className: o.r,
+        className: s.r,
         children: (0, r.jsx)(i.D0$, {
-            label: s.intl.string(s.t.eQ2bLp),
+            label: o.intl.string(o.t.eQ2bLp),
             children: t
         })
     })

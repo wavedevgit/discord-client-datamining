@@ -1,6 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 225144, original params: e (module,exports,require) **/
+/** Chunk was on 38939 **/
+/** chunk id: 225144, original params: t (module,exports,require) **/
 "use strict";
-e.exports = function(e, t) {
-    e.setMode("drag"), t.preventDefault()
+t.exports = function(t, e) {
+    t.setMode("drag"), e.preventDefault()
 }

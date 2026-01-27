@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(205693),
     i = n(439372),
     a = n(608960),
-    s = n(209932),
-    o = n(961350),
+    o = n(209932),
+    s = n(961350),
     l = n(274372),
     c = n(661978),
     u = n(372684),
@@ -32,7 +32,7 @@ class m extends i.A {
     handleSpeaking(e) {
         if (!(0, d.TD)() || e.context !== r.x.DEFAULT) return;
         let t = l.A.isVoiceRecordingAllowedForUser(e.userId);
-        (e.userId === o.default.getId() || t) && this.process({
+        (e.userId === s.default.getId() || t) && this.process({
             type: u.Gy.SPEAKING,
             speakingFlags: e.speakingFlags,
             userId: e.userId
@@ -41,16 +41,16 @@ class m extends i.A {
     handleSoundboardPlayStart(e) {
         var t, n, r;
         if (!(0, d.TD)()) return;
-        let i = s.A.getSoundById(e.soundId);
+        let i = o.A.getSoundById(e.soundId);
         if (null == i) return;
-        let o = null == (r = a.A.getGuildEmojis(i.guildId)) ? void 0 : r[null != (t = i.emojiId) ? t : ""];
+        let s = null == (r = a.A.getGuildEmojis(i.guildId)) ? void 0 : r[null != (t = i.emojiId) ? t : ""];
         this.process({
             type: u.Gy.SOUNDBOARD,
             playing: !0,
             soundboardId: e.soundId,
-            emojiId: null == o ? void 0 : o.id,
-            emojiAnimated: null == o ? void 0 : o.animated,
-            emojiName: null != (n = null == o ? void 0 : o.name) ? n : i.emojiName,
+            emojiId: null == s ? void 0 : s.id,
+            emojiAnimated: null == s ? void 0 : s.animated,
+            emojiName: null != (n = null == s ? void 0 : s.name) ? n : i.emojiName,
             name: i.name,
             userId: e.userId
         })
@@ -58,7 +58,7 @@ class m extends i.A {
     handleSoundboardPlayEnd(e) {
         var t, n;
         if (!(0, d.TD)()) return;
-        let r = s.A.getSoundById(e.soundId);
+        let r = o.A.getSoundById(e.soundId);
         if (null == r) return;
         let i = null == (n = a.A.getGuildEmojis(r.guildId)) ? void 0 : n[null != (t = r.emojiId) ? t : ""];
         this.process({

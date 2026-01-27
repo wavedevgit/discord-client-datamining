@@ -2,13 +2,13 @@
 /** chunk id: 542535, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => F
+    A: () => V
 }), n(228524);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(990078),
+    o = n.n(a),
+    s = n(990078),
     l = n(397927),
     c = n(352423),
     u = n(793574),
@@ -34,11 +34,11 @@ var r = n(627968),
     R = n(652215),
     P = n(758836),
     D = n(788868),
-    x = n(854232),
-    L = n(985018),
-    j = n(448263);
+    L = n(854232),
+    x = n(985018),
+    M = n(448263);
 
-function M(e, t, n) {
+function j(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -54,7 +54,7 @@ function k(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            M(e, t, n[t])
+            j(e, t, n[t])
         })
     }
     return e
@@ -76,7 +76,7 @@ function G(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let V = e => {
+let F = e => {
     let {
         badge: t,
         tieredTenureBadge: n,
@@ -84,22 +84,22 @@ let V = e => {
     } = e;
     return t.id === y.A.ORB_PROFILE_BADGE ? (0, r.jsx)(b.A, {
         showSubtext: !i && !t.isPreviewMode
-    }) : void 0 !== n && t.id !== x.K ? (0, r.jsx)(_.A, {
+    }) : void 0 !== n && t.id !== L.K ? (0, r.jsx)(_.A, {
         profileBadge: t,
         tenureBadge: n
     }) : t.description
 };
 
-function F(e) {
+function V(e) {
     var t;
     let {
         badges: n,
         className: a,
         badgeClassName: _,
         displayProfile: b,
-        onClose: M,
+        onClose: j,
         shouldOpenBadgeTooltip: U,
-        shouldGlowTenureBadge: F
+        shouldGlowTenureBadge: V
     } = e, B = i.useRef(null), {
         analyticsLocations: H
     } = (0, d.Ay)(u.A.BADGE), {
@@ -107,14 +107,14 @@ function F(e) {
         trackUserProfileAction: W
     } = (0, S.NJ)(), K = O.default.getCurrentUser(), z = (0, A.CC)(null == K ? void 0 : K.premiumType, D.PremiumTypes.TIER_2), q = (0, N.AP)(null != (t = null == K ? void 0 : K.id) ? t : null), Z = (0, C.A)(q).some(e => e.id === y.A.ORB_PROFILE_BADGE);
     return (0, r.jsx)("div", {
-        className: s()(j.k, a),
-        "aria-label": L.intl.string(L.t.VWV0y5),
+        className: o()(M.k, a),
+        "aria-label": x.intl.string(x.t.VWV0y5),
         role: "group",
         children: n.map((e, t) => {
             var n;
             let i = e.id === y.A.ORB_PROFILE_BADGE,
                 a = (0, I.e0)(e.id),
-                d = null != a || e.id === x.K,
+                d = null != a || e.id === L.K,
                 O = (null == b ? void 0 : b.userId) === (null == K ? void 0 : K.id),
                 A = t => {
                     if (W({
@@ -136,7 +136,7 @@ function F(e) {
                             O ? (0, E.pX)(R.BVt.NITRO_HOME) : (0, h.D)({
                                 analyticsLocations: H,
                                 displayProfile: b
-                            }), null == M || M();
+                            }), null == j || j();
                             return
                         }
                         if (O) {
@@ -144,17 +144,17 @@ function F(e) {
                                 analyticsLocations: H
                             }) : null;
                             if (null == n) return;
-                            return null == M || M(), n(t)
+                            return null == j || j(), n(t)
                         }
                         return (0, h.D)({
                             analyticsLocations: H,
                             displayProfile: b
-                        }), void(null == M || M())
+                        }), void(null == j || j())
                     }
                     let n = null != e.link ? (0, c.default)(e.link, {
                         analyticsLocations: H
                     }) : null;
-                    if (null != n) return null == M || M(), n(t)
+                    if (null != n) return null == j || j(), n(t)
                 },
                 S = () => {
                     e.id === C.h && v.default.track(R.HAw.QUEST_CONTENT_VIEWED, G(k({}, (0, g.fF)(m.uF.QUEST_BADGE)), {
@@ -166,24 +166,24 @@ function F(e) {
                         analyticsLocations: H
                     }, Y))
                 },
-                N = void 0 !== a && e.id !== x.K,
+                N = void 0 !== a && e.id !== L.K,
                 D = (0, r.jsx)("img", {
                     alt: " ",
                     "aria-hidden": !0,
                     src: null != (n = e.iconSrc) ? n : (0, w.L7)(e.icon),
-                    className: s()(j.q, _)
+                    className: o()(M.q, _)
                 }),
-                L = {
+                x = {
                     onClick: A,
                     onMouseEnter: S,
                     href: e.link,
                     "aria-label": e.description,
                     style: {
-                        filter: F && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : void 0
+                        filter: V && null != a ? "drop-shadow(0 0 5px ".concat(a.glowColor, ")") : void 0
                     }
                 };
             if (N) {
-                let n = (0, r.jsx)(l.MzZ, G(k({}, L), {
+                let n = (0, r.jsx)(l.MzZ, G(k({}, x), {
                     ref: B,
                     children: D
                 }));
@@ -204,16 +204,16 @@ function F(e) {
                     })
                 }, "".concat(e.id, "-").concat(t))
             }
-            let q = (0, r.jsx)(l.MzZ, G(k({}, L), {
+            let q = (0, r.jsx)(l.MzZ, G(k({}, x), {
                     children: D
                 })),
-                X = V({
+                Q = F({
                     badge: e,
-                    tieredTenureBadge: d && e.id !== x.K ? a : void 0,
+                    tieredTenureBadge: d && e.id !== L.K ? a : void 0,
                     currentUserOwnsOrbBadge: Z
                 });
-            return (0, r.jsx)(o.m, {
-                __unsupportedReactNodeAsText: X,
+            return (0, r.jsx)(s.m, {
+                __unsupportedReactNodeAsText: Q,
                 forceOpen: null != U && U(e.id),
                 delay: w.In,
                 ariaHidden: !0,

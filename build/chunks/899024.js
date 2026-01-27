@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(303527),
     i = n(722023),
     a = /^(\d+)(th|st|nd|rd)?/i,
-    s = /\d+/i,
-    o = {
+    o = /\d+/i,
+    s = {
         narrow: /^(b|a)/i,
         abbreviated: /^(b\.?\s?c\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?)/i,
         wide: /^(before christ|before common era|anno domini|common era)/i
@@ -62,13 +62,13 @@ var r = n(303527),
 let g = {
     ordinalNumber: (0, i.A)({
         matchPattern: a,
-        parsePattern: s,
+        parsePattern: o,
         valueCallback: function(e) {
             return parseInt(e, 10)
         }
     }),
     era: (0, r.A)({
-        matchPatterns: o,
+        matchPatterns: s,
         defaultMatchWidth: "wide",
         parsePatterns: l,
         defaultParseWidth: "any"

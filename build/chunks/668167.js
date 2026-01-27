@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(908909),
     i = n(974111),
     a = n(185288),
-    s = n(13163),
-    o = n(723906),
+    o = n(13163),
+    s = n(723906),
     l = n(807177),
     c = n(290424),
     u = n(803082),
@@ -24,9 +24,9 @@ function g(e) {
 }
 
 function E(e, t, n) {
-    let E = (0, o.Bi)(),
-        y = (0, o.Bi)(),
-        b = (0, o.Bi)(),
+    let E = (0, s.Bi)(),
+        y = (0, s.Bi)(),
+        b = (0, s.Bi)(),
         O = (0, _.o)(g(r.A), "@react-aria/datepicker"),
         {
             isInvalid: v,
@@ -52,13 +52,13 @@ function E(e, t, n) {
         D = t.formatValue(P, {
             month: "long"
         }),
-        x = D ? O.format("selectedDateDescription", {
+        L = D ? O.format("selectedDateDescription", {
             date: D
         }) : "",
-        L = (0, l.I)(x),
-        j = [L["aria-describedby"], T["aria-describedby"]].filter(Boolean).join(" ") || void 0,
-        M = (0, c.$)(e),
-        k = (0, m.useMemo)(() => (0, s.C7)(n), [n]),
+        x = (0, l.I)(L),
+        M = [x["aria-describedby"], T["aria-describedby"]].filter(Boolean).join(" ") || void 0,
+        j = (0, c.$)(e),
+        k = (0, m.useMemo)(() => (0, o.C7)(n), [n]),
         U = (0, m.useRef)(!1),
         {
             focusWithinProps: G
@@ -80,11 +80,11 @@ function E(e, t, n) {
             }
         });
     return {
-        groupProps: (0, u.v)(M, w, T, L, G, {
+        groupProps: (0, u.v)(j, w, T, x, G, {
             role: "group",
             "aria-disabled": e.isDisabled || null,
             "aria-labelledby": R,
-            "aria-describedby": j,
+            "aria-describedby": M,
             onKeyDown(n) {
                 !t.isOpen && e.onKeyDown && e.onKeyDown(n)
             },
@@ -102,7 +102,7 @@ function E(e, t, n) {
             ...T,
             id: b,
             [i.pK]: "presentation",
-            "aria-describedby": j,
+            "aria-describedby": M,
             value: t.value,
             defaultValue: t.defaultValue,
             onChange: t.setValue,
@@ -123,12 +123,12 @@ function E(e, t, n) {
         descriptionProps: C,
         errorMessageProps: N,
         buttonProps: {
-            ...L,
+            ...x,
             id: E,
             "aria-haspopup": "dialog",
             "aria-label": O.format("calendar"),
             "aria-labelledby": `${E} ${R}`,
-            "aria-describedby": j,
+            "aria-describedby": M,
             "aria-expanded": t.isOpen,
             isDisabled: e.isDisabled || e.isReadOnly,
             onPress: () => t.setOpen(!0)

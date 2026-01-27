@@ -9,11 +9,11 @@ var r = n(64700),
     i = n(179637),
     a = n(870844);
 let {
-    useSyncExternalStoreWithSelector: s
-} = i, o = e => e;
+    useSyncExternalStoreWithSelector: o
+} = i, s = e => e;
 
-function l(e, t = o, n) {
-    let i = s(e.subscribe, e.getState, e.getInitialState, t, n);
+function l(e, t = s, n) {
+    let i = o(e.subscribe, e.getState, e.getInitialState, t, n);
     return r.useDebugValue(i), i
 }
 let c = (e, t) => {

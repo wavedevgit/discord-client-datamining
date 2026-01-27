@@ -2,7 +2,7 @@
 /** chunk id: 197111, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(73153);
 
@@ -28,7 +28,7 @@ function a(e) {
     return e
 }
 n(436317);
-let s = {
+let o = {
     openNativeAppModal(e, t) {
         let i = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         r.h.dispatch({

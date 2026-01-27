@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(311907),
     a = n(397927),
-    s = n(869146),
-    o = n(531685),
+    o = n(869146),
+    s = n(531685),
     l = n(475815),
     c = n(709562),
     u = n(985018);
@@ -59,13 +59,13 @@ function _(e, t) {
 function h(e) {
     let {
         enabled: t
-    } = e, n = p(e, ["enabled"]), i = t ? u.intl.string(u.t.Z7MyNB) : u.intl.string(u.t.OIDkcp), s = t ? a.z7w : a.TM1;
+    } = e, n = p(e, ["enabled"]), i = t ? u.intl.string(u.t.Z7MyNB) : u.intl.string(u.t.OIDkcp), o = t ? a.z7w : a.TM1;
     return (0, r.jsx)(c.A, f({
         label: i,
-        iconComponent: s
+        iconComponent: o
     }, n))
 }
-let m = i.Ay.connectStores([o.A, s.A], e => {
+let m = i.Ay.connectStores([s.A, o.A], e => {
     let {
         node: t,
         guestWindow: n

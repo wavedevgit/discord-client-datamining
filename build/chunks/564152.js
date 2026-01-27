@@ -1,29 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 564152, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => a
 });
 var r = n(627968);
 n(64700);
 var i = n(397927),
-    a = n(985018),
+    l = n(985018),
     s = n(87078);
-
-function o(e) {
-    let {
-        hasGuildBoostSlots: t,
-        hasAppliedGuildBoosts: n,
-        hasBoostPerk: r,
-        canAddBoosts: i
-    } = e;
-    return i ? t ? r && !n ? a.intl.format(a.t.s9zQyG, {}) : a.intl.format(a.t.Rb8Jhs, {}) : a.intl.string(a.t["2rh0by"]) : a.intl.format(a.t.Rb8Jhs, {})
-}
-let l = function(e) {
+let a = function(e) {
     let {
         hasGuildBoostSlots: t,
         hasAppliedGuildBoosts: a,
-        hasBoostPerk: l,
+        hasBoostPerk: o,
         canAddBoosts: c
     } = e;
     return (0, r.jsxs)("div", {
@@ -40,9 +29,17 @@ let l = function(e) {
             children: [(0, r.jsx)(i.Heading, {
                 variant: "display-md",
                 className: s.R_,
-                children: o({
+                children: function(e) {
+                    let {
+                        hasGuildBoostSlots: t,
+                        hasAppliedGuildBoosts: n,
+                        hasBoostPerk: r,
+                        canAddBoosts: i
+                    } = e;
+                    return i ? t ? r && !n ? l.intl.format(l.t.s9zQyG, {}) : l.intl.format(l.t.Rb8Jhs, {}) : l.intl.string(l.t["2rh0by"]) : l.intl.format(l.t.Rb8Jhs, {})
+                }({
                     hasGuildBoostSlots: t,
-                    hasBoostPerk: l,
+                    hasBoostPerk: o,
                     hasAppliedGuildBoosts: a,
                     canAddBoosts: c
                 })

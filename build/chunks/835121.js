@@ -1,49 +1,48 @@
-/** Chunk was on web.js **/
-/** chunk id: 835121, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    A: () => i
-}), n(321073), n(896048);
-var r = n(64700);
+/** Chunk was on 52199 **/
+/** chunk id: 835121, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    A: () => l
+}), r(321073), r(896048);
+var n = r(64700);
 
-function i(e) {
+function l(e) {
     let {
         autocompletes: t,
-        mode: n
+        mode: r
     } = e;
-    return r.useCallback(e => {
+    return n.useCallback(e => {
         let {
-            filterFn: r,
-            getAutocompleteRowItem: i,
-            getAutocompleteGroupItem: a
-        } = e, s = 0, o = [], l = [];
+            filterFn: n,
+            getAutocompleteRowItem: l,
+            getAutocompleteGroupItem: s
+        } = e, a = 0, i = [], o = [];
         for (let e of t) {
             let t = [],
                 {
                     group: c,
                     results: u
                 } = e;
-            if (r(e)) {
+            if (n(e)) {
                 for (let e of u) {
-                    let r = i({
+                    let n = l({
                         result: e,
-                        modeType: n.type,
+                        modeType: r.type,
                         group: c
                     });
-                    t.push(r)
+                    t.push(n)
                 }
-                s += u.length;
-                let e = a({
+                a += u.length;
+                let e = s({
                     group: c,
                     rows: t
                 });
-                o.push(e), l.push(...t)
+                i.push(e), o.push(...t)
             }
         }
         return {
-            autocompleteCount: s,
-            autocompleteGroups: o,
-            allAutocompleteRows: l
+            autocompleteCount: a,
+            autocompleteGroups: i,
+            allAutocompleteRows: o
         }
-    }, [t, n.type])
+    }, [t, r.type])
 }

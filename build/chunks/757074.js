@@ -4,8 +4,8 @@
 var r = n(860511),
     i = n(517737),
     a = n(503628),
-    s = n(514575),
-    o = n(953937),
+    o = n(514575),
+    s = n(953937),
     l = n(739305),
     c = n(830368),
     u = n(701160),
@@ -39,5 +39,5 @@ var r = n(860511),
         }
     };
 _("sort", function(e) {
-    return (void 0 !== e && s(e), E) ? m(this, e) : o(p(this), y(e))
+    return (void 0 !== e && o(e), E) ? m(this, e) : s(p(this), y(e))
 }, !E || g)

@@ -3,8 +3,8 @@
 "use strict";
 var r, i = n(906046),
     a = n(581070)(),
-    s = n(353841),
-    o = n(267768);
+    o = n(353841),
+    s = n(267768);
 if (a) {
     var l = i("RegExp.prototype.exec"),
         c = {},
@@ -17,8 +17,8 @@ if (a) {
         };
     "symbol" == typeof Symbol.toPrimitive && (d[Symbol.toPrimitive] = u), r = function(e) {
         if (!e || "object" != typeof e) return !1;
-        var t = o(e, "lastIndex");
-        if (!(t && s(t, "value"))) return !1;
+        var t = s(e, "lastIndex");
+        if (!(t && o(t, "value"))) return !1;
         try {
             l(e, d)
         } catch (e) {

@@ -1,27 +1,27 @@
-/** Chunk was on web.js **/
-/** chunk id: 647901, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 89455 **/
+/** chunk id: 647901, original params: e,n,t (module,exports,require) **/
 "use strict";
-n.d(t, {
+t.d(n, {
     X: () => u,
-    x: () => d
+    x: () => _
 });
-var r = n(627968),
-    i = n(64700),
-    a = n(503698),
-    s = n.n(a),
-    o = n(865513);
-let l = {
+var r = t(627968),
+    i = t(64700),
+    o = t(503698),
+    a = t.n(o),
+    l = t(865513);
+let s = {
         SIZE: {
             default: void 0,
-            reduced: o.k2
+            reduced: l.k2
         },
         COLOR: {
             default: void 0,
-            muted: o.JF
+            muted: l.JF
         },
         WEIGHT: {
             default: void 0,
-            reduced: o.Xj
+            reduced: l.Xj
         }
     },
     c = i.createContext({
@@ -35,24 +35,24 @@ function u() {
     return i.useContext(c)
 }
 
-function d(e) {
+function _(e) {
     let {
-        children: t,
-        size: n,
-        color: a,
-        weight: d
-    } = e, f = u(), p = i.useMemo(() => {
+        children: n,
+        size: t,
+        color: o,
+        weight: _
+    } = e, d = u(), b = i.useMemo(() => {
         let e = {
                 className: void 0,
-                size: null != n ? n : f.size,
-                color: null != a ? a : f.color,
-                weight: null != d ? d : f.weight
+                size: null != t ? t : d.size,
+                color: null != o ? o : d.color,
+                weight: null != _ ? _ : d.weight
             },
-            t = s()(l.SIZE[e.size], l.COLOR[e.color], l.WEIGHT[e.weight]);
-        return "" !== t && (e.className = s()(o.zr, t)), e
-    }, [n, a, d, f]);
+            n = a()(s.SIZE[e.size], s.COLOR[e.color], s.WEIGHT[e.weight]);
+        return "" !== n && (e.className = a()(l.zr, n)), e
+    }, [t, o, _, d]);
     return (0, r.jsx)(c.Provider, {
-        value: p,
-        children: t
+        value: b,
+        children: n
     })
 }

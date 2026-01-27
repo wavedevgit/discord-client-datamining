@@ -13,8 +13,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(397927),
+    o = n.n(a),
+    s = n(397927),
     l = n(580630),
     c = n(985018),
     u = n(600834);
@@ -34,7 +34,7 @@ function p(e) {
             isPremiumRebrand: i
         },
         children: (0, r.jsx)("div", {
-            className: s()(u.tp, {
+            className: o()(u.tp, {
                 [u.u0]: i
             }, n),
             children: t
@@ -46,10 +46,10 @@ function _(e) {
     let {
         children: t
     } = e;
-    return f() ? (0, r.jsx)(o.Heading, {
+    return f() ? (0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "text-strong",
-        className: s()(u.wx, u.u0),
+        className: o()(u.wx, u.u0),
         children: t
     }) : (0, r.jsx)("div", {
         className: u.wx,
@@ -64,19 +64,19 @@ function h(e) {
         className: i
     } = e;
     return f() ? (0, r.jsxs)("div", {
-        className: s()(u.nM, i),
-        children: [(0, r.jsx)(o.Text, {
+        className: o()(u.nM, i),
+        children: [(0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             children: t
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(s.Text, {
             variant: "text-sm/medium",
             color: "currentColor",
             className: u.Uu,
             children: n
         })]
     }) : (0, r.jsxs)("div", {
-        className: s()(u.nM, i),
+        className: o()(u.nM, i),
         children: [(0, r.jsx)("div", {
             className: u.xZ,
             children: t
@@ -93,13 +93,13 @@ function m(e) {
         value: n,
         subscriptionDiscount: i,
         entitlementDiscount: a,
-        originalAmount: s,
+        originalAmount: o,
         interval: d,
         currency: f,
         className: p,
         intervalCount: _,
         inTrialPeriod: m
-    } = e, g = null != i ? Math.floor(i.amount / s * 100) : null, E = (0, l.$g)(s, f);
+    } = e, g = null != i ? Math.floor(i.amount / o * 100) : null, E = (0, l.$g)(o, f);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h, {
             label: t,
@@ -112,7 +112,7 @@ function m(e) {
                 }) : null]
             }),
             className: p
-        }), m && (0, r.jsx)(o.Text, {
+        }), m && (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             className: u.lk,
             children: c.intl.format(c.t.v9QeON, {
@@ -135,7 +135,7 @@ function g(e) {
         negativeMarginBottom: i = !1
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(u.yF, {
+        className: o()(u.yF, {
             [u.hF]: t,
             [u.P_]: n,
             [u.vy]: i
@@ -150,7 +150,7 @@ function E(e) {
         className: i
     } = e;
     return (0, r.jsxs)("div", {
-        className: s()(u.V$, i),
+        className: o()(u.V$, i),
         children: [(0, r.jsx)("div", {
             className: u.j5,
             children: t
@@ -167,7 +167,7 @@ function y(e) {
         className: n
     } = e;
     return (0, r.jsx)("div", {
-        className: s()(u.aO, n),
+        className: o()(u.aO, n),
         children: t
     })
 }

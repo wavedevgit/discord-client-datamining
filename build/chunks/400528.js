@@ -1,13 +1,13 @@
 /** Chunk was on 1636 **/
 /** chunk id: 400528, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(896048), n(446912);
-var r, l = n(311907),
-    i = n(73153),
-    o = n(967198);
+var r, i = n(311907),
+    l = n(73153),
+    a = n(967198);
 
-function a(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -22,15 +22,15 @@ let c = null,
     };
 
 function u() {
-    let e = o.A.getLastSelectedGuildId();
+    let e = a.A.getLastSelectedGuildId();
     e !== c && (s = null, c = null != e ? e : null)
 }
-class f extends(r = l.Ay.PersistedStore) {
+class g extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         null != e && (d.reportedMessages = Object.fromEntries(Object.entries(e.reportedMessages).map(e => {
             let [t, n] = e;
             return [t, new Set(n)]
-        }))), this.syncWith([o.A], u)
+        }))), this.syncWith([a.A], u)
     }
     getState() {
         return d
@@ -47,13 +47,13 @@ class f extends(r = l.Ay.PersistedStore) {
         return null != (n = null == (r = d.reportedMessages[e]) ? void 0 : r.has(t)) && n
     }
 }
-a(f, "displayName", "ReportToModStore"), a(f, "persistKey", "ReportToModStore"), a(f, "migrations", [e => {
+o(g, "displayName", "ReportToModStore"), o(g, "persistKey", "ReportToModStore"), o(g, "migrations", [e => {
     var t;
     return {
         reportedMessages: null != (t = null == e ? void 0 : e.reportedMessages) ? t : {}
     }
 }]);
-let g = new f(i.h, {
+let p = new g(l.h, {
     REPORT_TO_MOD_REPORT_MESSAGE_SUCCESS: function(e) {
         let {
             channelId: t,
@@ -82,14 +82,14 @@ let g = new f(i.h, {
             userIds: r
         } = e;
         if (n !== c) return;
-        let l = new Set(t.map(e => {
+        let i = new Set(t.map(e => {
                 var t;
                 return null == (t = e.user) ? void 0 : t.id
             })),
-            i = Array.from(new Set(null != r ? r : [])).filter(e => !l.has(e));
-        null == s && (s = new Map), l.forEach(e => {
+            l = Array.from(new Set(null != r ? r : [])).filter(e => !i.has(e));
+        null == s && (s = new Map), i.forEach(e => {
             null == s || s.set(e, !0)
-        }), i.forEach(e => {
+        }), l.forEach(e => {
             null == s || s.set(e, !1)
         })
     },

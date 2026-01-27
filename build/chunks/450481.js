@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(64700),
     i = n(575593),
     a = n(631670),
-    s = n(587600),
-    o = n(207803),
+    o = n(587600),
+    s = n(207803),
     l = n(993408),
     c = n(442759),
     u = n(985018);
@@ -29,10 +29,10 @@ let d = 6e3,
                 let e = {};
                 try {
                     if (null != m && (e.avatarDecoration = m), null != g) {
-                        let e = (0, s.yX)({
+                        let e = (0, o.yX)({
                             pendingProfileEffect: g
                         });
-                        await (0, o.gi)(e)
+                        await (0, s.gi)(e)
                     }
                     null != E && (e.nameplate = E), Object.keys(e).length > 0 && await (0, a.yu)(e);
                     {

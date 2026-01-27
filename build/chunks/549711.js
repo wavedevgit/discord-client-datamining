@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(960488),
     a = n(110259),
-    s = n(139286);
+    o = n(139286);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -56,10 +56,10 @@ function d(e) {
     var t;
     let {
         impressionName: n,
-        impressionProperties: o,
+        impressionProperties: s,
         disableTrack: u
-    } = e, d = c(e, ["impressionName", "impressionProperties", "disableTrack"]), f = o;
-    return "function" == typeof f && (f = f(d)), (0, s.A)({
+    } = e, d = c(e, ["impressionName", "impressionProperties", "disableTrack"]), f = s;
+    return "function" == typeof f && (f = f(d)), (0, o.A)({
         type: a.ImpressionTypes.PAGE,
         name: n,
         properties: f

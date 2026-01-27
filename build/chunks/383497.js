@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(344351),
     i = n(665260),
     a = n(73153),
-    s = n(198982),
-    o = n(734057),
+    o = n(198982),
+    s = n(734057),
     l = n(933958),
     c = n(710839),
     u = n(825591),
@@ -25,7 +25,7 @@ async function m(e) {
     } = e;
     try {
         return await (0, p.A)(t, n)
-    } catch (o) {
+    } catch (s) {
         let e = null != i ? r.T.GUILD_CHANNEL : r.T.PRIVATE_CHANNEL;
         a.h.dispatch({
             type: "EMBEDDED_ACTIVITY_LAUNCH_FAIL",
@@ -33,7 +33,7 @@ async function m(e) {
             applicationId: t,
             channelId: null != n ? n : null,
             guildId: null != i ? i : null,
-            error: new s.LG(o),
+            error: new o.LG(s),
             locationKind: e
         })
     }
@@ -47,8 +47,8 @@ async function g(e) {
     return (null == t || !!await new Promise(e => {
         let i = l.Ay.getSelfEmbeddedActivities().get(t.id),
             a = (0, f.H)(null == i ? void 0 : i.location),
-            s = o.A.getChannel(a);
-        null == i || null == s ? e(!0) : (null == r || r(), (0, u.A)(t, s, () => {
+            o = s.A.getChannel(a);
+        null == i || null == o ? e(!0) : (null == r || r(), (0, u.A)(t, o, () => {
             (0, _.A)().leaveActivity({
                 location: i.location,
                 applicationId: t.id,
@@ -66,13 +66,13 @@ async function E(e) {
         onConfirmActivityLaunchChecksAlertOpen: a
     } = e;
     if (null == i.nsfwAllowed) {
-        var s, o, l;
+        var o, s, l;
         let e = null != t ? t : await m({
             applicationId: n,
             channelId: null == r ? void 0 : r.id,
-            guildId: null != (s = null == r ? void 0 : r.getGuildId()) ? s : void 0
+            guildId: null != (o = null == r ? void 0 : r.getGuildId()) ? o : void 0
         });
-        if (null == e || null != (o = null == (l = e.embeddedActivityConfig) ? void 0 : l.requires_age_gate) && o && !await new Promise(t => {
+        if (null == e || null != (s = null == (l = e.embeddedActivityConfig) ? void 0 : l.requires_age_gate) && s && !await new Promise(t => {
                 null == a || a(), (0, c.i)({
                     application: e,
                     channelId: null == r ? void 0 : r.id,
@@ -89,15 +89,15 @@ async function y(e) {
         application: n,
         applicationId: r,
         channel: a,
-        onConfirmActivityLaunchChecksAlertOpen: s
-    } = e, o = null != n ? n : await m({
+        onConfirmActivityLaunchChecksAlertOpen: o
+    } = e, s = null != n ? n : await m({
         applicationId: r,
         channelId: null == a ? void 0 : a.id,
         guildId: null != (t = null == a ? void 0 : a.getGuildId()) ? t : void 0
     });
-    return null != o && (!!((0, i.Lt)(o.flags, h.gfo.EMBEDDED_RELEASED) || o.isVerified || l.Ay.hasActivityEverBeenLaunched(r)) || new Promise(e => {
-        null == s || s(), (0, d.q)({
-            application: o,
+    return null != s && (!!((0, i.Lt)(s.flags, h.gfo.EMBEDDED_RELEASED) || s.isVerified || l.Ay.hasActivityEverBeenLaunched(r)) || new Promise(e => {
+        null == o || o(), (0, d.q)({
+            application: s,
             onConfirm: () => e(!0),
             onCancel: () => e(!1)
         })

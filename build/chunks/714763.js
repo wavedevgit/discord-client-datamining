@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,9 +15,9 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let o = [],
+let s = [],
     l = !1,
-    c = o;
+    c = s;
 
 function u(e) {
     l = e.persistentCodesEnabled
@@ -33,12 +33,12 @@ function d(e) {
 }
 
 function f() {
-    c = o
+    c = s
 }
 class p extends(r = i.Ay.PersistedStore) {
     initialize(e) {
         var t, n;
-        l = null != (t = null == e ? void 0 : e.persistentCodesEnabled) && t, c = null != (n = null == e ? void 0 : e.uploadedKeyVersions) ? n : o
+        l = null != (t = null == e ? void 0 : e.persistentCodesEnabled) && t, c = null != (n = null == e ? void 0 : e.uploadedKeyVersions) ? n : s
     }
     getState() {
         return {
@@ -53,7 +53,7 @@ class p extends(r = i.Ay.PersistedStore) {
         return c
     }
 }
-s(p, "displayName", "SecureFramesPersistedStore"), s(p, "persistKey", "SecureFramesPersistedStore");
+o(p, "displayName", "SecureFramesPersistedStore"), o(p, "persistKey", "SecureFramesPersistedStore");
 let _ = new p(a.h, {
     SECURE_FRAMES_SETTINGS_UPDATE: u,
     SECURE_FRAMES_UPLOADED_KEY_VERSION_ADD: d,

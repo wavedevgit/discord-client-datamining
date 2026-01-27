@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(835245),
     i = n(927813),
     a = n(728458),
-    s = n(604594);
-let o = 12 * i.A.Millis.HOUR,
+    o = n(604594);
+let s = 12 * i.A.Millis.HOUR,
     l = null;
 
 function c() {
@@ -19,7 +19,7 @@ function c() {
         uuid: (0, r.A)(),
         createdAtTimestamp: t,
         lastUsedTimestamp: t,
-        version: s.Ir
+        version: o.Ir
     } : (e && (l.lastUsedTimestamp = t), l)
 }
 
@@ -33,7 +33,7 @@ function d(e) {
         category: "ad",
         message: "future facing timestamp Date.now(): ".concat(t, ", initialized timestamp: ").concat(e.createdAtTimestamp)
     }), !0;
-    let n = t - e.lastUsedTimestamp > s.jj,
-        r = t - e.createdAtTimestamp > o;
+    let n = t - e.lastUsedTimestamp > o.jj,
+        r = t - e.createdAtTimestamp > s;
     return n || r
 }

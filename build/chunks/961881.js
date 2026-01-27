@@ -1,58 +1,58 @@
 /** Chunk was on 56795 **/
-/** chunk id: 961881, original params: e,t,i (module,exports,require) **/
-i.r(t), i.d(t, {
+/** chunk id: 961881, original params: e,t,s (module,exports,require) **/
+s.r(t), s.d(t, {
     default: () => u
-}), i(896048);
-var n = i(627968),
-    r = i(64700),
-    s = i(827734),
-    c = i(397927),
-    l = i(538064),
-    o = i(348639),
-    a = i(972049),
-    d = i(772958);
+}), s(896048);
+var i = s(627968),
+    r = s(64700),
+    n = s(827734),
+    l = s(397927),
+    a = s(538064),
+    c = s(348639),
+    o = s(972049),
+    d = s(772958);
 
 function u() {
-    let [e, t] = r.useState(!1), i = (0, d.vX)(), {
+    let [e, t] = r.useState(!1), s = (0, d.vX)(), {
         reporting: u
-    } = o.A.useExperiment({
+    } = c.A.useExperiment({
         location: "be7a1c_1"
     }, {
         autoTrackExposure: !1
     });
     return (r.useEffect(() => {
-        if (u && e && null != i) return i.forEach(e => {
+        if (u && e && null != s) return s.forEach(e => {
             e.elements.forEach(e => {
-                e.setAttribute(a.nY, "")
+                e.setAttribute(o.nY, "")
             })
         }), () => {
-            i.forEach(e => {
+            s.forEach(e => {
                 e.elements.forEach(e => {
-                    e.removeAttribute(a.nY)
+                    e.removeAttribute(o.nY)
                 })
             })
         }
-    }, [i, u, e]), u && null != i && 0 !== i.length) ? (0, n.jsxs)("div", {
+    }, [s, u, e]), u && null != s && 0 !== s.length) ? (0, i.jsxs)("div", {
         style: {
-            backgroundColor: s.A.colors.BACKGROUND_FEEDBACK_CRITICAL.css,
-            color: s.A.colors.TEXT_FEEDBACK_CRITICAL.css,
+            backgroundColor: n.A.colors.BACKGROUND_FEEDBACK_CRITICAL.css,
+            color: n.A.colors.TEXT_FEEDBACK_CRITICAL.css,
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
             padding: "8px 12px"
         },
-        children: [(0, n.jsx)(c.Text, {
+        children: [(0, i.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-feedback-critical",
             children: "Accessibility compliance issue(s) detected, check in-app DevTools"
-        }), (0, n.jsxs)(c.ButtonGroup, {
+        }), (0, i.jsxs)(l.ButtonGroup, {
             direction: "horizontal",
             size: "sm",
-            children: [(0, n.jsx)(c.Button, {
+            children: [(0, i.jsx)(l.Button, {
                 text: "Open DevTools",
-                onClick: l.pf,
+                onClick: a.pf,
                 variant: "critical-secondary"
-            }), (0, n.jsx)(c.Button, {
+            }), (0, i.jsx)(l.Button, {
                 onClick: () => t(!e),
                 text: "".concat(e ? "Hide" : "Show", " Overlays"),
                 variant: "critical-primary"

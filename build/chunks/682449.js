@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(562465),
     i = n(73153),
     a = n(384904),
-    s = n(887555),
-    o = n(501280),
+    o = n(887555),
+    s = n(501280),
     l = n(739508),
     c = n(490581),
     u = n(652215),
@@ -25,7 +25,7 @@ async function p() {
     try {
         let {
             enabledPaymentTypes: e
-        } = s.Ay.getCurrentConfig({
+        } = o.Ay.getCurrentConfig({
             location: "40c266_2"
         }, {
             autoTrackExposure: !1
@@ -87,7 +87,7 @@ function _(e) {
                 }(0, a.i0)(e.message, n, t)
             }
         }
-    }).mount("#".concat(o.h));
+    }).mount("#".concat(s.h));
     i.h.dispatch({
         type: "ADYEN_CREATE_CASH_APP_PAY_COMPONENT_SUCCESS",
         component: t
@@ -97,7 +97,7 @@ function _(e) {
 function h() {
     var e;
     if (null == c.A.cashAppPayComponent) throw Error("Adyen CashAppPay component must be created before mounting.");
-    null == (e = c.A.cashAppPayComponent) || e.mount("#".concat(o.h))
+    null == (e = c.A.cashAppPayComponent) || e.mount("#".concat(s.h))
 }
 
 function m() {

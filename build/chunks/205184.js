@@ -7,18 +7,18 @@ n.d(t, {
 var r = n(64700),
     i = n(735438),
     a = n.n(i),
-    s = n(681154),
-    o = n(475450),
+    o = n(681154),
+    s = n(475450),
     l = n(661191),
     c = n(424994);
-let u = new Set([s.I.PLAYED_GAME, s.I.LAUNCHED_ACTIVITY]),
+let u = new Set([o.ContentInventoryEntryType.PLAYED_GAME, o.ContentInventoryEntryType.LAUNCHED_ACTIVITY]),
     d = e => u.has(e.content_type);
 
 function f(e) {
-    let t = (0, o.A)({
+    let t = (0, s.A)({
             id: c.X1.GLOBAL_FEED
         }),
-        n = (0, o.A)({
+        n = (0, s.A)({
             id: c.X1.GLOBAL_FEED,
             unrankedEntries: !0
         });

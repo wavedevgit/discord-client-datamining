@@ -2,7 +2,7 @@
 /** chunk id: 788868, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $3: () => eX,
+    $3: () => eQ,
     $I: () => c,
     Ac: () => e9,
     Ae: () => eH,
@@ -17,13 +17,13 @@ n.d(t, {
     DA: () => eB,
     Dw: () => en,
     EG: () => eh,
-    EV: () => F,
+    EV: () => V,
     En: () => T,
     Er: () => A,
     FB: () => Y,
     Ff: () => w,
     G4: () => Z,
-    GI: () => eM,
+    GI: () => ej,
     HF: () => eg,
     Hp: () => J,
     J7: () => et,
@@ -32,8 +32,8 @@ n.d(t, {
     Jo: () => e2,
     KG: () => ep,
     Kq: () => ez,
-    L9: () => V,
-    LE: () => eF,
+    L9: () => F,
+    LE: () => eV,
     M4: () => k,
     MB: () => ec,
     MX: () => er,
@@ -48,15 +48,15 @@ n.d(t, {
     Qz: () => eA,
     T: () => tr,
     T7: () => h,
-    TG: () => eV,
+    TG: () => eF,
     TP: () => eC,
     TU: () => ef,
-    Tt: () => es,
+    Tt: () => eo,
     U1: () => G,
     Uk: () => ea,
     VD: () => tt,
     VY: () => O,
-    Vk: () => o,
+    Vk: () => s,
     WN: () => g,
     WT: () => N,
     Wx: () => e0,
@@ -71,14 +71,14 @@ n.d(t, {
     d8: () => eU,
     e: () => eN,
     eR: () => ev,
-    f3: () => ex,
-    f5: () => eQ,
+    f3: () => eL,
+    f5: () => eX,
     fY: () => $,
     gD: () => y,
     gd: () => ei,
     h7: () => z,
     hd: () => P,
-    k4: () => X,
+    k4: () => Q,
     kW: () => e1,
     l1: () => e6,
     lA: () => ew,
@@ -89,10 +89,10 @@ n.d(t, {
     nk: () => ek,
     np: () => e3,
     o2: () => eZ,
-    oX: () => M,
+    oX: () => j,
     oz: () => m,
     pW: () => v,
-    pX: () => Q,
+    pX: () => X,
     pd: () => eJ,
     pe: () => _,
     ph: () => H,
@@ -114,8 +114,8 @@ n.d(t, {
 var r = n(334279),
     i = n(652215),
     a = n(307731),
-    s = n(985018),
-    o = function(e) {
+    o = n(985018),
+    s = function(e) {
         return e[e.PREMIUM_TRIAL = 0] = "PREMIUM_TRIAL", e[e.PREMIUM_DISCOUNT = 1] = "PREMIUM_DISCOUNT", e
     }({}),
     l = function(e) {
@@ -193,9 +193,9 @@ var N = function(e) {
         return e[e.DAY = 1] = "DAY", e[e.WEEK = 2] = "WEEK", e[e.MONTH = 3] = "MONTH", e[e.YEAR = 4] = "YEAR", e
     }({});
 let R = Object.freeze({
-        3: s.t["t9uG/o"],
-        1: s.t.FSOz78,
-        2: s.t.lG6a5x
+        3: o.t["t9uG/o"],
+        1: o.t.FSOz78,
+        2: o.t.lG6a5x
     }),
     P = Object.freeze({
         "628379151761408000": {
@@ -344,15 +344,15 @@ let R = Object.freeze({
         }
     }),
     D = new Set(["511651880837840896"]),
-    x = 16,
-    L = 8,
-    j = 5,
-    M = 30,
+    L = 16,
+    x = 8,
+    M = 5,
+    j = 30,
     k = 2,
     U = 3,
     G = 28,
-    V = 30,
     F = 30,
+    V = 30,
     B = 7,
     H = 30,
     Y = "775514091874680832",
@@ -361,8 +361,8 @@ let R = Object.freeze({
     z = 3456e5,
     q = 2808e5,
     Z = 14,
-    X = "520373071933079552",
-    Q = "902329034132684800",
+    Q = "520373071933079552",
+    X = "902329034132684800",
     J = "983601860436819968",
     $ = "983601860436819969",
     ee = "984244797441048577",
@@ -371,12 +371,12 @@ let R = Object.freeze({
     er = "1070132870233980928",
     ei = "1267968635301789696",
     ea = "1267969164312576000",
-    es = "1268347360493174784",
-    eo = "1271484512081285191",
+    eo = "1268347360493174784",
+    es = "1271484512081285191",
     el = "1161363847311785984",
-    ec = [X, Q, J, $, ee, et, en, er, ei, ea, es, eo, el],
-    eu = [ei, ea, eo],
-    ed = [ei, eo],
+    ec = [Q, X, J, $, ee, et, en, er, ei, ea, eo, es, el],
+    eu = [ei, ea, es],
+    ed = [ei, es],
     ef = "1150904354090532864",
     ep = "1199128659810582528",
     e_ = "1204865493622587392",
@@ -393,12 +393,12 @@ let R = Object.freeze({
     eS = 8,
     eT = 96,
     eC = Object.freeze({
-        [X]: {
-            id: X,
-            skus: ["521847234246082599"]
-        },
         [Q]: {
             id: Q,
+            skus: ["521847234246082599"]
+        },
+        [X]: {
+            id: X,
             skus: ["521847234246082599"]
         },
         [J]: {
@@ -425,8 +425,8 @@ let R = Object.freeze({
             id: en,
             skus: ["521847234246082599"]
         },
-        [es]: {
-            id: es,
+        [eo]: {
+            id: eo,
             skus: ["521847234246082599"]
         },
         [el]: {
@@ -448,12 +448,12 @@ let eR = Object.freeze({
     }),
     eP = 0x3200000,
     eD = 0x3200000,
-    ex = 524288e3,
-    eL = 0x3200000,
-    ej = 0x6400000,
-    eM = 5,
+    eL = 524288e3,
+    ex = 0x3200000,
+    eM = 0x6400000,
+    ej = 5,
     ek = {
-        [i.TVA.NONE]: eM,
+        [i.TVA.NONE]: ej,
         [i.TVA.TIER_1]: 10,
         [i.TVA.TIER_2]: 15,
         [i.TVA.TIER_3]: 30
@@ -470,7 +470,7 @@ let eR = Object.freeze({
         [i.TVA.TIER_2]: 36,
         [i.TVA.TIER_3]: 48
     },
-    eV = Object.freeze({
+    eF = Object.freeze({
         [i.TVA.NONE]: {
             features: [],
             limits: {
@@ -502,7 +502,7 @@ let eR = Object.freeze({
             limits: {
                 emoji: 150,
                 bitrate: 256e3,
-                fileSize: eL,
+                fileSize: ex,
                 screenShareQualityFramerate: 60,
                 screenShareQualityResolution: "1080p",
                 soundboardSounds: eG[i.TVA.TIER_2],
@@ -515,7 +515,7 @@ let eR = Object.freeze({
             limits: {
                 emoji: 250,
                 bitrate: 384e3,
-                fileSize: ej,
+                fileSize: eM,
                 screenShareQualityFramerate: 60,
                 screenShareQualityResolution: "1080p",
                 soundboardSounds: eG[i.TVA.TIER_3],
@@ -524,7 +524,7 @@ let eR = Object.freeze({
             }
         }
     }),
-    eF = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "1432523012455792640"],
+    eV = ["978380692553465866", "1024422698568122368", "511651871736201216", "511651876987469824", "511651880837840896", "642251038925127690", "944037208325619722", "511651885459963904", "1432523012455792640"],
     eB = ["590665532894740483", "944037355453415424", "944037391444738048", "590665538238152709"];
 var eH = function(e) {
         return e.SOUNDBOARD_PLAY = "soundboard play", e.PROFILE_THEME_COLOR = "profile_theme_color", e.PROFILE_BANNER = "profile_banner", e.ANIMATED_AVATAR = "animated_avatar", e.AVATAR_DECORATION = "avatar_decoration", e.CLIENT_THEME = "client_theme", e.SHARED_CANVAS = "shared_canvas", e.PROFILE_EFFECT = "profile_effect", e.DISPLAY_NAME_STYLES = "display_name_styles", e.PRESET = "preset", e
@@ -533,11 +533,11 @@ var eH = function(e) {
         return e.FREE = "free", e.PREMIUM_STANDARD = "premium-standard", e
     }({});
 let eW = {
-    "1024422698568122368": x,
-    "511651876987469824": x,
-    "511651885459963904": x,
-    "944037208325619722": L,
-    "642251038925127690": j
+    "1024422698568122368": L,
+    "511651876987469824": L,
+    "511651885459963904": L,
+    "944037208325619722": x,
+    "642251038925127690": M
 };
 var eK = function(e) {
     return e.HIGH_STREAMING_QUALITY = "high_streaming_quality", e.MID_STREAMING_QUALITY = "mid_streaming_quality", e
@@ -552,12 +552,12 @@ var eq = function(e) {
     eZ = function(e) {
         return e[e.SNOWGLOBE = 1] = "SNOWGLOBE", e[e.BOX = 2] = "BOX", e[e.CUP = 3] = "CUP", e[e.STANDARD_BOX = 4] = "STANDARD_BOX", e[e.CAKE = 5] = "CAKE", e[e.CHEST = 6] = "CHEST", e[e.COFFEE = 7] = "COFFEE", e[e.SEASONAL_STANDARD_BOX = 8] = "SEASONAL_STANDARD_BOX", e[e.SEASONAL_CAKE = 9] = "SEASONAL_CAKE", e[e.SEASONAL_CHEST = 10] = "SEASONAL_CHEST", e[e.SEASONAL_COFFEE = 11] = "SEASONAL_COFFEE", e[e.NITROWEEN_STANDARD = 12] = "NITROWEEN_STANDARD", e
     }({});
-let eX = Object.freeze({
+let eQ = Object.freeze({
         IS_BLOCKED_IOS: 32,
         IS_OUTBOUND_REDEEMABLE_BY_TRIAL_USERS: 64,
         SUPPRESS_NOTIFICATION: 128
     }),
-    eQ = Object.freeze({
+    eX = Object.freeze({
         3: {
             fileSize: eP
         },
@@ -565,7 +565,7 @@ let eX = Object.freeze({
             fileSize: eD
         },
         2: {
-            fileSize: ex
+            fileSize: eL
         }
     });
 var eJ = function(e) {
@@ -595,64 +595,64 @@ let te = ["premium_tenure_1_month_v2", "premium_tenure_3_month_v2", "premium_ten
     tt = {
         premium_tenure_1_month_v2: {
             id: "premium_tenure_1_month_v2",
-            nameUnformatted: s.t.LR1C0a,
-            nameUnformattedNitro: s.t.tx9Fvw,
+            nameUnformatted: o.t.LR1C0a,
+            nameUnformattedNitro: o.t.tx9Fvw,
             tenureReqNumMonths: 1,
             hasWideArt: !1,
             glowColor: "#b54913"
         },
         premium_tenure_3_month_v2: {
             id: "premium_tenure_3_month_v2",
-            nameUnformatted: s.t["rI1/3H"],
-            nameUnformattedNitro: s.t.xJNb5C,
+            nameUnformatted: o.t["rI1/3H"],
+            nameUnformattedNitro: o.t.xJNb5C,
             tenureReqNumMonths: 3,
             hasWideArt: !1,
             glowColor: "#9e9e9e"
         },
         premium_tenure_6_month_v2: {
             id: "premium_tenure_6_month_v2",
-            nameUnformatted: s.t.VkhVKS,
-            nameUnformattedNitro: s.t["4scBFY"],
+            nameUnformatted: o.t.VkhVKS,
+            nameUnformattedNitro: o.t["4scBFY"],
             tenureReqNumMonths: 6,
             hasWideArt: !1,
             glowColor: "#ffa813"
         },
         premium_tenure_12_month_v2: {
             id: "premium_tenure_12_month_v2",
-            nameUnformatted: s.t.gzUfNS,
-            nameUnformattedNitro: s.t["83Jw2B"],
+            nameUnformatted: o.t.gzUfNS,
+            nameUnformattedNitro: o.t["83Jw2B"],
             tenureReqNumMonths: 12,
             hasWideArt: !1,
             glowColor: "#5eacc2"
         },
         premium_tenure_24_month_v2: {
             id: "premium_tenure_24_month_v2",
-            nameUnformatted: s.t.fuwTPm,
-            nameUnformattedNitro: s.t.vRSCKv,
+            nameUnformatted: o.t.fuwTPm,
+            nameUnformattedNitro: o.t.vRSCKv,
             tenureReqNumMonths: 24,
             hasWideArt: !1,
             glowColor: "#6d5cf2"
         },
         premium_tenure_36_month_v2: {
             id: "premium_tenure_36_month_v2",
-            nameUnformatted: s.t.qNhNk4,
-            nameUnformattedNitro: s.t.mV86tk,
+            nameUnformatted: o.t.qNhNk4,
+            nameUnformattedNitro: o.t.mV86tk,
             tenureReqNumMonths: 36,
             hasWideArt: !1,
             glowColor: "#32c102"
         },
         premium_tenure_60_month_v2: {
             id: "premium_tenure_60_month_v2",
-            nameUnformatted: s.t["wvX+eD"],
-            nameUnformattedNitro: s.t.WcsLxW,
+            nameUnformatted: o.t["wvX+eD"],
+            nameUnformattedNitro: o.t.WcsLxW,
             tenureReqNumMonths: 60,
             hasWideArt: !0,
             glowColor: "#f29cc3"
         },
         premium_tenure_72_month_v2: {
             id: "premium_tenure_72_month_v2",
-            nameUnformatted: s.t["/menIw"],
-            nameUnformattedNitro: s.t["Z/qgMK"],
+            nameUnformatted: o.t["/menIw"],
+            nameUnformattedNitro: o.t["Z/qgMK"],
             tenureReqNumMonths: 72,
             hasWideArt: !0,
             glowColor: "#078292"

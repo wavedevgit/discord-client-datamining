@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(98115),
+    o = n.n(a),
+    s = n(98115),
     l = n(556309);
 
 function c(e, t, n) {
@@ -81,12 +81,12 @@ function h(e) {
         height: n
     }, m = !e.allowFullSizedIcon;
     return (0, r.jsxs)("div", {
-        className: s()(l.jH, a),
+        className: o()(l.jH, a),
         style: h,
-        children: [(0, r.jsx)(o.A, f(u({}, d), {
-            className: s()(c, l.mP)
+        children: [(0, r.jsx)(s.A, f(u({}, d), {
+            className: o()(c, l.mP)
         })), (0, r.jsx)("div", {
-            className: s()(l.sn, {
+            className: o()(l.sn, {
                 [l.Qu]: m
             }),
             children: _

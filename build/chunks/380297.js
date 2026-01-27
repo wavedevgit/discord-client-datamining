@@ -30,5 +30,6 @@ e.exports = {
     CT: "voiceChannelHeading__39ec2",
     Ph: "voiceChannelDivider__39ec2",
     NS: "voiceChannelOverflowCount__39ec2",
-    He: "contextMenu__39ec2"
+    He: "contextMenu__39ec2",
+    AB: "appWidgetPreview__39ec2"
 }

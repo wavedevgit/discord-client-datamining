@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 146104, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968),
-    i = n(361158),
+    l = n(361158),
     a = n(954571),
-    s = n(535855),
-    o = n(652215);
+    i = n(535855),
+    s = n(652215);
 
-function l(e) {
-    a.default.track(o.HAw.CHECKPOINT_STARTED, {
+function o(e) {
+    a.default.track(s.HAw.CHECKPOINT_STARTED, {
         source: e
-    }), (0, i.B8)(e => {
+    }), (0, l.B8)(e => {
         let {
             closeLayer: t
         } = e;
-        return (0, r.jsx)(s.A, {
+        return (0, r.jsx)(i.A, {
             onClose: t
         })
     }, {

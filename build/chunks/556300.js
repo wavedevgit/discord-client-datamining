@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(397927),
     a = n(442433),
-    s = n(956793),
-    o = n(235393),
+    o = n(956793),
+    s = n(235393),
     l = n(376943),
     c = n(22007),
     u = n(332173),
@@ -61,7 +61,7 @@ function O(e, t) {
 }
 async function v(e, t, n) {
     if (null == t) return;
-    if (o.A.trackDiscordLinkClicked({
+    if (s.A.trackDiscordLinkClicked({
             guildId: e,
             channelId: t,
             messageId: n
@@ -76,17 +76,17 @@ async function v(e, t, n) {
         } catch (e) {}
     }
     let r = p.A.getChannel(t);
-    null != r && null == n && (0, f.ay)(r.type) && (0, l.nc)(r) ? s.default.selectVoiceChannel(r.id) : (0, c.A)(g.BVt.CHANNEL(e, t, n))
+    null != r && null == n && (0, f.ay)(r.type) && (0, l.nc)(r) ? o.default.selectVoiceChannel(r.id) : (0, c.A)(g.BVt.CHANNEL(e, t, n))
 }
 
 function A(e) {
     return {
-        react(t, s, o) {
+        react(t, o, s) {
             let l = p.A.getChannel(t.channelId),
-                c = o.noStyleAndInteraction ? void 0 : n => {
+                c = s.noStyleAndInteraction ? void 0 : n => {
                     e.shouldStopPropagation && (null == n || n.stopPropagation()), v(t.guildId, t.channelId, t.messageId), e.shouldCloseDefaultModals && (0, i.s7G)()
                 },
-                f = o.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.tEg : e => {
+                f = s.noStyleAndInteraction || null == t.channelId || null == l && null == t.originalLink ? g.tEg : e => {
                     (0, a.L3)(e, async () => {
                         let {
                             default: e
@@ -107,8 +107,8 @@ function A(e) {
                 onClick: c,
                 onContextMenu: f,
                 className: "channelMention",
-                children: [null != t.inContent ? s(t.inContent, o) : null, null != t.inContent ? (0, r.jsx)(d.A, {}) : null, (0, m.t)(t, s, o)]
-            }, o.key)
+                children: [null != t.inContent ? o(t.inContent, s) : null, null != t.inContent ? (0, r.jsx)(d.A, {}) : null, (0, m.t)(t, o, s)]
+            }, s.key)
         }
     }
 }

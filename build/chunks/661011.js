@@ -2,7 +2,7 @@
 /** chunk id: 661011, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    i: () => s
+    i: () => o
 });
 var r = n(945810),
     i = n(332628);
@@ -27,7 +27,7 @@ let a = (0, r.mj)({
     }
 });
 
-function s(e) {
+function o(e) {
     let {
         location: t
     } = e, {

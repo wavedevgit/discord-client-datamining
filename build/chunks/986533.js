@@ -1,36 +1,35 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 986533, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => m
+    A: () => h
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
-    a = n.n(i),
-    s = n(397927),
-    o = n(709066),
-    l = n(763754),
+    l = n.n(i),
+    a = n(397927),
+    s = n(709066),
+    o = n(763754),
     c = n(643204),
     u = n(809115),
     d = n(888675),
-    f = n(652215),
-    p = n(705751),
-    _ = n(985018),
-    h = n(234054);
+    p = n(652215),
+    m = n(705751),
+    f = n(985018),
+    g = n(234054);
 
-function m(e) {
+function h(e) {
     let {
         message: t,
         compact: n,
         usernameHook: i
-    } = e, m = (0, l.Ay)(t), g = i(m), {
-        avatarSrc: E,
+    } = e, h = (0, o.Ay)(t), _ = i(h), {
+        avatarSrc: b,
         eventHandlers: {
-            onMouseEnter: y,
-            onMouseLeave: b
+            onMouseEnter: A,
+            onMouseLeave: y
         }
-    } = (0, u.a)(!0), O = "" !== t.content ? new Date(t.content).toLocaleString(_.intl.currentLocale, {
+    } = (0, u.a)(!0), v = "" !== t.content ? new Date(t.content).toLocaleString(f.intl.currentLocale, {
         hour: "numeric",
         minute: "2-digit",
         month: "2-digit",
@@ -38,53 +37,53 @@ function m(e) {
         year: "numeric"
     }) : "";
     return (0, r.jsx)("div", {
-        onMouseEnter: y,
-        onMouseLeave: b,
+        onMouseEnter: A,
+        onMouseLeave: y,
         children: (0, r.jsx)(d.A, {
-            className: a()(h.rs, {
-                [h.oE]: n
+            className: l()(g.rs, {
+                [g.oE]: n
             }),
             iconNode: n ? null : (0, r.jsx)(u.l, {
-                src: E
+                src: b
             }),
-            iconContainerClassName: h.zc,
+            iconContainerClassName: g.zc,
             compact: n,
             children: (0, r.jsxs)("div", {
-                className: a()(h.Qs, {
-                    [h.oE]: n
+                className: l()(g.Qs, {
+                    [g.oE]: n
                 }),
                 children: [(0, r.jsx)(c.ix, {
                     message: t,
-                    messageClassname: h.he,
-                    className: a()(h.QV, h.he, {
-                        [h.oE]: n
+                    messageClassname: g.he,
+                    className: l()(g.QV, g.he, {
+                        [g.oE]: n
                     }),
                     username: (0, r.jsxs)("div", {
-                        className: h.he,
-                        children: [(0, r.jsx)(s.Text, {
+                        className: g.he,
+                        children: [(0, r.jsx)(a.Text, {
                             variant: "text-md/normal",
                             color: "text-brand",
                             tag: "span",
-                            className: h.Xh,
-                            children: _.intl.string(_.t.hG1StD)
-                        }), (0, r.jsx)(o.A, {
-                            type: p.nu.SYSTEM_DM,
-                            className: h.Al
+                            className: g.Xh,
+                            children: f.intl.string(f.t.hG1StD)
+                        }), (0, r.jsx)(s.A, {
+                            type: m.nu.SYSTEM_DM,
+                            className: g.Al
                         })]
                     }),
                     compact: n,
                     showTimestamp: !0
                 }), (0, r.jsx)("div", {
-                    className: a()(h.__invalid_messageContent, {
-                        [h.oE]: n
+                    className: l()(g.__invalid_messageContent, {
+                        [g.oE]: n
                     }),
-                    children: t.type === f.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? _.intl.format(_.t["+m8eD7"], {
-                        username: m.nick,
-                        usernameHook: g,
-                        time: O
-                    }) : _.intl.format(_.t["BHeke+"], {
-                        username: m.nick,
-                        usernameHook: g
+                    children: t.type === p.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eD7"], {
+                        username: h.nick,
+                        usernameHook: _,
+                        time: v
+                    }) : f.intl.format(f.t["BHeke+"], {
+                        username: h.nick,
+                        usernameHook: _
                     })
                 })]
             })

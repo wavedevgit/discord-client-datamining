@@ -9,7 +9,7 @@ var r = n(439372),
 n(143770);
 var a = n(837921);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -18,14 +18,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -42,14 +42,14 @@ let d = !1;
 
 function f() {
     let e = {};
-    for (let t of c) u(t.gpus) && (e = o({}, e, t.experiment.getCurrentConfig({
+    for (let t of c) u(t.gpus) && (e = s({}, e, t.experiment.getCurrentConfig({
         location: "updateFlags"
     })));
     a.Ay.setChromiumSwitches(e)
 }
 class p extends r.A {
     constructor(...e) {
-        super(...e), s(this, "actions", {
+        super(...e), o(this, "actions", {
             POST_CONNECTION_OPEN: async () => {
                 try {
                     var e, t, n, r;

@@ -11,8 +11,8 @@ n.d(t, {
 var r = n(311907),
     i = n(469993),
     a = n(465932),
-    s = n(260509),
-    o = n(576705),
+    o = n(260509),
+    s = n(576705),
     l = n(287809),
     c = n(567305),
     u = n(652215),
@@ -27,10 +27,10 @@ function f(e) {
         canManageGuildRoleSubscriptions: r,
         isGuildEligibleForRoleSubscriptions: i,
         isExpeditedMonetizationOnboardingGuild: a,
-        isUserInCreatorMonetizationEligibleCountry: s,
-        shouldRestrictUpdatingRoleSubscriptionSettings: o
+        isUserInCreatorMonetizationEligibleCountry: o,
+        shouldRestrictUpdatingRoleSubscriptionSettings: s
     } = e;
-    return !!r && (!o || !!n) && (!!(t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || !!t.features.has(u.GuildFeatures.COMMUNITY) && (!!i || !!a) && n && s)
+    return !!r && (!s || !!n) && (!!(t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE) || t.features.has(u.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) || !!t.features.has(u.GuildFeatures.COMMUNITY) && (!!i || !!a) && n && o)
 }
 
 function p(e) {
@@ -42,9 +42,9 @@ function p(e) {
         isUserInCreatorMonetizationEligibleCountry: r,
         isMonetizationWaitlistEnabledForGuild: i,
         isGuildEligibleForRoleSubscriptions: a,
-        isExpeditedMonetizationOnboardingGuild: s
+        isExpeditedMonetizationOnboardingGuild: o
     } = e;
-    return n && !r && i ? 1 : n && i && (a || s) && !t.features.has(u.GuildFeatures.COMMUNITY) ? 2 : 0
+    return n && !r && i ? 1 : n && i && (a || o) && !t.features.has(u.GuildFeatures.COMMUNITY) ? 2 : 0
 }
 
 function _(e) {
@@ -54,11 +54,11 @@ function _(e) {
 function h(e) {
     let t = (0, c.HT)(null == e ? void 0 : e.id),
         n = (0, i.ME)(e),
-        o = (0, i.Li)(null == e ? void 0 : e.id),
+        s = (0, i.Li)(null == e ? void 0 : e.id),
         u = m(e),
         d = (0, r.bG)([l.default], () => {
             let t = l.default.getCurrentUser();
-            return null != e && (0, s.bM)(e, t)
+            return null != e && (0, o.bM)(e, t)
         }),
         f = (0, i.oS)(),
         {
@@ -69,7 +69,7 @@ function h(e) {
         isOwner: d,
         canManageGuildRoleSubscriptions: u,
         isGuildEligibleForRoleSubscriptions: t,
-        isMonetizationWaitlistEnabledForGuild: o,
+        isMonetizationWaitlistEnabledForGuild: s,
         isExpeditedMonetizationOnboardingGuild: n,
         isUserInCreatorMonetizationEligibleCountry: f,
         shouldRestrictUpdatingRoleSubscriptionSettings: _
@@ -77,9 +77,9 @@ function h(e) {
 }
 
 function m(e) {
-    return (0, r.bG)([o.A], () => g(e), [e])
+    return (0, r.bG)([s.A], () => g(e), [e])
 }
 
 function g(e) {
-    return null != e && o.A.can(u.xBc.ADMINISTRATOR, e)
+    return null != e && s.A.can(u.xBc.ADMINISTRATOR, e)
 }

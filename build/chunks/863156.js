@@ -1,29 +1,28 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 863156, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968),
     i = n(503698),
-    a = n.n(i),
+    l = n.n(i),
     s = n(397927),
-    o = n(899728),
-    l = n(88001),
+    a = n(899728),
+    o = n(88001),
     c = n(183954);
 
-function u(e) {
+function d(e) {
     let {
         className: t,
         premiumGroupRole: n
-    } = e, i = (0, o.A)(n, !0);
+    } = e, i = (0, a.A)(n, !0);
     if (null == i) return null;
     let {
-        subheaderString: u,
-        bodyString: d
+        subheaderString: d,
+        bodyString: u
     } = i;
     return (0, r.jsxs)("div", {
-        className: a()(c.kL, t),
+        className: l()(c.kL, t),
         children: [(0, r.jsxs)(s.BJc, {
             direction: "horizontal",
             gap: 8,
@@ -32,7 +31,7 @@ function u(e) {
             children: [(0, r.jsx)(s.Heading, {
                 variant: "display-md",
                 className: c.Ss,
-                children: (0, l.DP)()
+                children: (0, o.DP)()
             }), (0, r.jsx)(s.Exy, {
                 type: "beta",
                 variant: "expressive"
@@ -41,11 +40,11 @@ function u(e) {
             variant: "text-md/medium",
             className: c.m_,
             color: "text-default",
-            children: u
+            children: d
         }), (0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "text-default",
-            children: d
+            children: u
         })]
     })
 }

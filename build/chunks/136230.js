@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 136230, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => b
+    A: () => h
 });
 var r = n(627968),
     i = n(64700),
@@ -18,14 +18,14 @@ var r = n(627968),
     p = n(802652);
 let f = (0, g.xI)(a.A.ROLE_ICON_UPLOADER_ICON_SIZE);
 
-function b(e) {
+function h(e) {
     let {
         role: t,
         "aria-label": n = m.intl.string(m.t["MsUY/S"]),
         className: l,
         onClick: a,
         disabled: g = !1
-    } = e, b = i.useRef(null), h = i.useMemo(() => (0, c.ox)(t, f), [t]), x = null != h ? (0, r.jsx)(u.A, function(e) {
+    } = e, h = i.useRef(null), b = i.useMemo(() => (0, c.ox)(t, f), [t]), x = null != b ? (0, r.jsx)(u.A, function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -45,13 +45,13 @@ function b(e) {
     }({
         enableTooltip: !1,
         className: p.Kk
-    }, h)) : (0, r.jsx)(o.XGR, {
+    }, b)) : (0, r.jsx)(o.XGR, {
         size: "md",
         color: "currentColor",
         className: p.Kk
     });
     return (0, r.jsx)(o.vN3, {
-        ringTarget: b,
+        ringTarget: h,
         children: (0, r.jsxs)(o.DUT, {
             "aria-label": n,
             className: s()(p.kL, l, {
@@ -60,10 +60,10 @@ function b(e) {
             onClick: g ? void 0 : a,
             "aria-disabled": g,
             children: [(0, r.jsx)("div", {
-                ref: b,
+                ref: h,
                 className: p.VH,
                 children: x
-            }), null != h ? (0, r.jsx)(d.L, {
+            }), null != b ? (0, r.jsx)(d.L, {
                 className: p.Sl
             }) : null]
         })

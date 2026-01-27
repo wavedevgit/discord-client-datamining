@@ -6,9 +6,9 @@ n.d(t, {
 }), n(896048);
 var r, i = n(627968),
     a = n(64700),
-    s = n(451988);
+    o = n(451988);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,7 +24,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -52,15 +52,15 @@ class u extends(r = a.Component) {
         })
     }
     constructor(...e) {
-        super(...e), o(this, "animationRef", a.createRef()), o(this, "animation", void 0), o(this, "delayTimeout", new s.Ep), o(this, "loadAnimation", async () => {
+        super(...e), s(this, "animationRef", a.createRef()), s(this, "animation", void 0), s(this, "delayTimeout", new o.Ep), s(this, "loadAnimation", async () => {
             var e;
             let {
                 importData: t,
                 loop: r,
                 autoplay: i,
                 delay: a,
-                renderer: s,
-                rendererSettings: o,
+                renderer: o,
+                rendererSettings: s,
                 shouldAnimate: c
             } = this.props;
             null != this.animation && this.animation.destroy();
@@ -75,15 +75,15 @@ class u extends(r = a.Component) {
             };
             this.animation = d.loadAnimation(l({
                 container: this.animationRef.current,
-                renderer: s,
+                renderer: o,
                 loop: r,
                 autoplay: i && null == a && c,
-                rendererSettings: o
+                rendererSettings: s
             }, f)), null != a ? this.delayTimeout.start(a, () => {
                 var e;
                 null == (e = this.animation) || e.play()
             }) : this.playOrPauseAnimation(), null == (e = this.animation) || e.addEventListener("complete", this.handleComplete)
-        }), o(this, "handleComplete", () => {
+        }), s(this, "handleComplete", () => {
             let {
                 onComplete: e
             } = this.props;
@@ -91,10 +91,10 @@ class u extends(r = a.Component) {
         })
     }
 }
-o(u, "defaultProps", {
+s(u, "defaultProps", {
     loop: !0,
     autoplay: !0,
     renderer: "svg",
     shouldAnimate: !0,
     resetOnPlay: !1
-}), o(u, "Renderers", c)
+}), s(u, "Renderers", c)

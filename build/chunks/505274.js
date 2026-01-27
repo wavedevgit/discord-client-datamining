@@ -7,7 +7,7 @@ n.d(t, {
 var r, i = n(311907),
     a = n(73153);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -15,7 +15,7 @@ function s(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class o extends(r = i.Ay.Store) {
+class s extends(r = i.Ay.Store) {
     get redeemError() {
         return this._redeemVirtualCurrencyError
     }
@@ -115,8 +115,8 @@ class o extends(r = i.Ay.Store) {
             VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY: e => {
                 this.setBalancePillOverlay(e.balancePillOverlay)
             }
-        }), s(this, "_entitlements", null), s(this, "_redeemingSkuId", null), s(this, "_isRedeemingVirtualCurrency", !1), s(this, "_redeemVirtualCurrencyError", null), s(this, "_balance", null), s(this, "_fetchBalanceError", null), s(this, "_isFetchingBalance", !1), s(this, "_onboardingModalOpenedPrior", !1), s(this, "_balancePillOverlay", !1)
+        }), o(this, "_entitlements", null), o(this, "_redeemingSkuId", null), o(this, "_isRedeemingVirtualCurrency", !1), o(this, "_redeemVirtualCurrencyError", null), o(this, "_balance", null), o(this, "_fetchBalanceError", null), o(this, "_isFetchingBalance", !1), o(this, "_onboardingModalOpenedPrior", !1), o(this, "_balancePillOverlay", !1)
     }
 }
-s(o, "displayName", "VirtualCurrencyStore");
-let l = new o
+o(s, "displayName", "VirtualCurrencyStore");
+let l = new s

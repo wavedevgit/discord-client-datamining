@@ -1,12 +1,11 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 572566, original params: e,t,n (module,exports,require) **/
-"use strict";
+n.d(t, {
+    Y: () => r
+});
 
 function r(e) {
     return e.toLocaleDateString(void 0, {
         dateStyle: "long"
     })
 }
-n.d(t, {
-    Y: () => r
-})

@@ -1,14 +1,13 @@
-/** Chunk was on web.js **/
+/** Chunk was on 93140 **/
 /** chunk id: 324050, original params: e,t,n (module,exports,require) **/
-"use strict";
 let r;
 n.d(t, {
-    A: () => d
+    A: () => u
 });
-var i, a = n(311907),
-    s = n(73153);
+var i, l = n(311907),
+    o = n(73153);
 
-function o(e, t, n) {
+function a(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -16,19 +15,12 @@ function o(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let l = {
+let s = {
     lastGuildDismissedTime: {}
 };
-
-function c(e) {
-    let {
-        guildId: t
-    } = e;
-    r.lastGuildDismissedTime[t] = Date.now()
-}
-class u extends(i = a.Ay.DeviceSettingsStore) {
+class c extends(i = l.Ay.DeviceSettingsStore) {
     initialize() {
-        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : l;
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s;
         r = e
     }
     getUserAgnosticState() {
@@ -38,7 +30,12 @@ class u extends(i = a.Ay.DeviceSettingsStore) {
         return r.lastGuildDismissedTime[e]
     }
 }
-o(u, "displayName", "ApplicationSubscriptionChannelNoticeStore"), o(u, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let d = new u(s.h, {
-    APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: c
+a(c, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(c, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
+let u = new c(o.h, {
+    APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
+        let {
+            guildId: t
+        } = e;
+        r.lastGuildDismissedTime[t] = Date.now()
+    }
 })

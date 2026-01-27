@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(523527),
     i = n(267102),
     a = n(87001),
-    s = n(574172),
-    o = n(21515),
+    o = n(574172),
+    s = n(21515),
     l = n(652215);
 
 function c(e, t, n) {
@@ -32,7 +32,7 @@ function u(e, t) {
 }
 async function d(e) {
     let t = (0, i.zd)();
-    a.A.getWindowOpen(l.MLl.ACTIVITY_POPOUT) && (0, s.close)(l.MLl.ACTIVITY_POPOUT), await o.launchFrame(e), t === l.BRT.POPOUT && (0, r.A)()
+    a.A.getWindowOpen(l.MLl.ACTIVITY_POPOUT) && (0, o.close)(l.MLl.ACTIVITY_POPOUT), await s.launchFrame(e), t === l.BRT.POPOUT && (0, r.A)()
 }
 let f = function(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : u(Object(t)).forEach(function(n) {
@@ -49,6 +49,6 @@ let f = function(e, t) {
         })
     }
     return e
-}({}, o), {
+}({}, s), {
     launchFrame: d
 })

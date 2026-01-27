@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(65412),
     i = n(638504),
     a = n(287683),
-    s = n(315069);
+    o = n(315069);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -17,7 +17,7 @@ function o(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class l extends s.A {
+class l extends o.A {
     static createFromServer(e) {
         let t = new TextDecoder("utf-8", {
             ignoreBOM: !0
@@ -33,6 +33,6 @@ class l extends s.A {
         })
     }
     constructor(e) {
-        super(), o(this, "id", void 0), o(this, "componentType", void 0), o(this, "properties", void 0), o(this, "promotionId", void 0), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties, this.promotionId = e.promotionId
+        super(), s(this, "id", void 0), s(this, "componentType", void 0), s(this, "properties", void 0), s(this, "promotionId", void 0), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties, this.promotionId = e.promotionId
     }
 }

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(540185),
-    s = n(311907),
-    o = n(289173),
+    o = n(311907),
+    s = n(289173),
     l = n(735321),
     c = n(950191),
     u = n(657331),
@@ -23,11 +23,11 @@ function m(e) {
         applicationId: t,
         onAction: n,
         onClose: m
-    } = e, g = (0, s.bG)([f.default], () => f.default.getId()), E = (0, c.Ay)(g, null), y = (0, s.bG)([p.A], () => p.A.getDetectableGame(t)), b = i.useMemo(() => {
+    } = e, g = (0, o.bG)([f.default], () => f.default.getId()), E = (0, c.Ay)(g, null), y = (0, o.bG)([p.A], () => p.A.getDetectableGame(t)), b = i.useMemo(() => {
         var e;
         return !(null == y || (null == E || null == (e = E.widgets) ? void 0 : e.some(e => {
             var n;
-            return e instanceof o.Yy && e.type === a.x.CURRENT_GAMES && (null == (n = e.games) ? void 0 : n.some(e => e.applicationId === t))
+            return e instanceof s.Yy && e.type === a.x.CURRENT_GAMES && (null == (n = e.games) ? void 0 : n.some(e => e.applicationId === t))
         }))) && (0, l.XX)(y)
     }, [t, null == E ? void 0 : E.widgets, y]), O = i.useCallback(e => {
         e.stopPropagation(), null == n || n({

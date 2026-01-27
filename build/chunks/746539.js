@@ -2,12 +2,12 @@
 /** chunk id: 746539, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    M: () => s
+    M: () => o
 }), n(228524), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(158954);
-let s = {
+let o = {
     title: "Switch",
     stories: [{
         id: "baseSwitch",
@@ -16,14 +16,14 @@ let s = {
             let {
                 disabled: t,
                 hasIcon: n,
-                label: s,
-                description: o,
+                label: o,
+                description: s,
                 required: l,
                 errorMessage: c
             } = e, [u, d] = i.useState(!1);
             return (0, r.jsx)(a.Ad5, {
-                label: s,
-                description: o,
+                label: o,
+                description: s,
                 required: l,
                 errorMessage: c,
                 hasIcon: n,

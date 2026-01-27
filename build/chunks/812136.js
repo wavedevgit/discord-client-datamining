@@ -16,8 +16,8 @@ var i = r(503698),
     p = r(491026),
     f = r(381969),
     C = r(920814),
-    b = r(305015),
-    j = r(131242),
+    j = r(305015),
+    b = r(131242),
     O = r(324269),
     g = r(634654),
     h = r(652215),
@@ -89,7 +89,7 @@ function _(e) {
         switch (e) {
             case C.B.GUILD_PRODUCTS:
                 return (0, n.jsx)(v, {
-                    icon: (0, n.jsx)(b.A, {
+                    icon: (0, n.jsx)(j.A, {
                         width: 20,
                         height: 20
                     }),
@@ -100,7 +100,7 @@ function _(e) {
                 }, e);
             case C.B.GUILD_ROLE_SUBSCRIPTIONS:
                 return (0, n.jsx)(v, {
-                    icon: (0, n.jsx)(j.A, {
+                    icon: (0, n.jsx)(b.A, {
                         width: 20,
                         height: 20
                     }),
@@ -150,7 +150,7 @@ function _(e) {
             children: [(0, n.jsx)("div", {
                 className: m.vR,
                 children: I
-            }), i === C.B.GUILD_PRODUCTS && (0, n.jsx)(O.A, {})]
+            }), i === C.B.GUILD_PRODUCTS && (0, n.jsx)(O.default, {})]
         })]
     })
 }

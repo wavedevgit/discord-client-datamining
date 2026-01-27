@@ -10,8 +10,8 @@ n.d(t, {
 var r = n(485845),
     i = n(665260),
     a = n(315069),
-    s = n(427930),
-    o = n(505527),
+    o = n(427930),
+    s = n(505527),
     l = n(815807),
     c = n(652215);
 
@@ -58,8 +58,8 @@ class _ extends a.A {
         return (0, i.Lt)(this.flags, e)
     }
     constructor(e) {
-        var t, n, r, i, a, s, o, l, d, f, p, _, h;
-        super(), u(this, "type", void 0), u(this, "content", void 0), u(this, "attachments", void 0), u(this, "embeds", void 0), u(this, "timestamp", void 0), u(this, "editedTimestamp", void 0), u(this, "flags", void 0), u(this, "components", void 0), u(this, "codedLinks", void 0), u(this, "stickers", void 0), u(this, "stickerItems", void 0), u(this, "soundboardSounds", void 0), this.type = null != (t = e.type) ? t : c.lAJ.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (s = e.editedTimestamp) ? s : null, this.flags = null != (o = e.flags) ? o : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
+        var t, n, r, i, a, o, s, l, d, f, p, _, h;
+        super(), u(this, "type", void 0), u(this, "content", void 0), u(this, "attachments", void 0), u(this, "embeds", void 0), u(this, "timestamp", void 0), u(this, "editedTimestamp", void 0), u(this, "flags", void 0), u(this, "components", void 0), u(this, "codedLinks", void 0), u(this, "stickers", void 0), u(this, "stickerItems", void 0), u(this, "soundboardSounds", void 0), this.type = null != (t = e.type) ? t : c.lAJ.DEFAULT, this.content = null != (n = e.content) ? n : "", this.attachments = null != (r = e.attachments) ? r : [], this.embeds = null != (i = e.embeds) ? i : [], this.timestamp = null != (a = e.timestamp) ? a : new Date, this.editedTimestamp = null != (o = e.editedTimestamp) ? o : null, this.flags = null != (s = e.flags) ? s : 0, this.components = null != (l = e.components) ? l : [], this.codedLinks = null != (d = e.codedLinks) ? d : [], this.stickers = null != (f = e.stickers) ? f : [], this.stickerItems = null != (p = null != (_ = e.sticker_items) ? _ : e.stickerItems) ? p : [], this.soundboardSounds = null != (h = e.soundboard_sounds) ? h : e.soundboardSounds
     }
 }
 class h extends a.A {
@@ -79,7 +79,7 @@ class m extends _ {
         return this.reactions.find(t => (0, l.i6)(t.emoji, e))
     }
     getContentMessage() {
-        return (0, s.A)(this) ? this.messageSnapshots[0].message : this
+        return (0, o.A)(this) ? this.messageSnapshots[0].message : this
     }
     userHasReactedWithEmoji(e, t) {
         return this.reactions.some(n => {
@@ -89,11 +89,11 @@ class m extends _ {
     addReaction(e) {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : [],
-            r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.v.NORMAL,
+            r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : s.v.NORMAL,
             i = -1,
-            a = this.reactions.map((a, s) => {
+            a = this.reactions.map((a, o) => {
                 if ((0, l.i6)(a.emoji, e))
-                    if (i = s, r === o.v.BURST) {
+                    if (i = o, r === s.v.BURST) {
                         if (t && a.me) return a;
                         let e = t && a.me_burst ? a.burst_count : a.burst_count + 1,
                             r = null != a.burst_colors && a.burst_colors.length > 0 ? a.burst_colors : n;
@@ -105,7 +105,7 @@ class m extends _ {
                             }),
                             burst_colors: r
                         })
-                    } else if (r === o.v.VOTE) {
+                    } else if (r === s.v.VOTE) {
                     var c, u;
                     let e = null != (c = null == (u = a.count_details) ? void 0 : u.vote) ? c : 0,
                         n = t && a.me_vote ? e : e + 1;
@@ -128,7 +128,7 @@ class m extends _ {
                 }
                 return a
             });
-        return -1 === i && (r === o.v.BURST ? a.push({
+        return -1 === i && (r === s.v.BURST ? a.push({
             emoji: e,
             me: !1,
             me_burst: t,
@@ -139,7 +139,7 @@ class m extends _ {
             },
             burst_count: 1,
             burst_colors: n
-        }) : r === o.v.VOTE ? a.push({
+        }) : r === s.v.VOTE ? a.push({
             emoji: e,
             me: !1,
             me_burst: !1,
@@ -178,11 +178,11 @@ class m extends _ {
     removeReaction(e) {
         var t, n, r, i;
         let a = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
-            s = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : o.v.NORMAL,
+            o = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : s.v.NORMAL,
             c = -1,
             u = this.reactions.map((t, n) => {
                 if ((0, l.i6)(t.emoji, e)) {
-                    if (s === o.v.BURST) {
+                    if (o === s.v.BURST) {
                         let e = a && !t.me_burst ? t.burst_count : t.burst_count - 1;
                         t = p(d({}, t), {
                             burst_count: e,
@@ -191,7 +191,7 @@ class m extends _ {
                                 burst: e
                             })
                         })
-                    } else if (s === o.v.VOTE) {
+                    } else if (o === s.v.VOTE) {
                         var r, i;
                         let e = null != (r = null == (i = t.count_details) ? void 0 : i.vote) ? r : 0,
                             n = a && !t.me_vote ? e : e - 1;

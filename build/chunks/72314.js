@@ -6,9 +6,9 @@ n.d(t, {
 });
 var r, i = n(311907),
     a = n(52133),
-    s = n(73153);
+    o = n(73153);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -36,9 +36,9 @@ function f(e) {
         scrollTop: n,
         scrollHeight: r,
         offsetHeight: i
-    } = e, s = l[t];
+    } = e, o = l[t];
     if (null == n || null == r || null == i) {
-        if (null == s) return !1;
+        if (null == o) return !1;
         delete l[t]
     } else {
         let e = {
@@ -47,7 +47,7 @@ function f(e) {
             scrollHeight: r,
             offsetHeight: i
         };
-        if (null != s && (0, a.A)(s, e)) return !1;
+        if (null != o && (0, a.A)(o, e)) return !1;
         l[t] = e
     }
 }
@@ -111,8 +111,8 @@ class g extends(r = i.Ay.Store) {
         return h(e)
     }
 }
-o(g, "displayName", "DimensionStore");
-let E = new g(s.h, {
+s(g, "displayName", "DimensionStore");
+let E = new g(o.h, {
     UPDATE_CHANNEL_DIMENSIONS: f,
     UPDATE_CHANNEL_LIST_DIMENSIONS: m,
     UPDATE_GUILD_LIST_DIMENSIONS: p,

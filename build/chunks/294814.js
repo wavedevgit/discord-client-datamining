@@ -10,8 +10,8 @@ Object.defineProperty(t, "__esModule", {
 });
 var i = n(843455),
     a = r(n(678456)),
-    s = r(n(681334)),
-    o = r(n(42539)),
+    o = r(n(681334)),
+    s = r(n(42539)),
     l = n(476575),
     c = n(64700),
     u = n(131981),
@@ -126,7 +126,7 @@ var i = n(843455),
     O = function(e) {
         function t(t, n) {
             var r;
-            return (r = e.call(this, null) || this).source = void 0, e.prototype.setValue.call(s(r), r._makeAnimated(t, n)), r
+            return (r = e.call(this, null) || this).source = void 0, e.prototype.setValue.call(o(r), r._makeAnimated(t, n)), r
         }
         a(t, e), t.create = function(e, n) {
             return new t(e, n)
@@ -158,7 +158,7 @@ var i = n(843455),
             if (t) {
                 if (n && (y.current = n, t.style)) {
                     var r = n.host.createAnimatedStyle;
-                    t = o(o({}, t), {}, {
+                    t = s(s({}, t), {}, {
                         style: r(t.style)
                     })
                 }
@@ -175,11 +175,11 @@ var i = n(843455),
     A = function(e, t) {
         return c.forwardRef(function(n, r) {
             var a = c.useRef(null),
-                s = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
+                o = !i.is.fun(e) || e.prototype && e.prototype.isReactComponent,
                 l = i.useForceUpdate(),
                 d = new v(function() {
                     var e = a.current;
-                    if (!s || e) {
+                    if (!o || e) {
                         var n = !!e && t.applyAnimatedValues(e, d.getValue(!0));
                         !1 === n && l()
                     }
@@ -197,8 +197,8 @@ var i = n(843455),
                             return e.removeChild(d)
                         })
                     }
-            }), c.createElement(e, o({}, t.getComponentProps(d.getValue()), {
-                ref: s && function(e) {
+            }), c.createElement(e, s({}, t.getComponentProps(d.getValue()), {
+                ref: o && function(e) {
                     a.current = I(r, e)
                 }
             }))
@@ -215,14 +215,14 @@ var S = Symbol.for("AnimatedComponent"),
             a = void 0 === r ? function() {
                 return !1
             } : r,
-            s = n.createAnimatedStyle,
-            o = void 0 === s ? function(e) {
+            o = n.createAnimatedStyle,
+            s = void 0 === o ? function(e) {
                 return new b(e)
-            } : s,
+            } : o,
             l = n.getComponentProps,
             c = {
                 applyAnimatedValues: a,
-                createAnimatedStyle: o,
+                createAnimatedStyle: s,
                 getComponentProps: void 0 === l ? function(e) {
                     return e
                 } : l

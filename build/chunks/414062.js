@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 20941 **/
 /** chunk id: 414062, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
     j: () => u
 });
 var r = n(64700),
-    i = n(284009),
-    a = n.n(i),
-    s = n(155718),
-    o = n(31717),
-    l = n(522602),
+    l = n(284009),
+    a = n.n(l),
+    i = n(155718),
+    s = n(31717),
+    o = n(522602),
     c = n(207963);
 
 function u(e) {
@@ -18,19 +17,19 @@ function u(e) {
     let n = t.channelId;
     a()(null != n, "useFileUploadComponentState must be used inside a channel");
     let {
-        state: i,
+        state: l,
         executeStateUpdate: u,
         error: d
-    } = t.useComponentState(e), f = r.useMemo(() => (null == i ? void 0 : i.type) === s.I5.FILE_UPLOAD ? i.uploadIds : [], [i]), p = l.A.getUploads(n, o.C.InteractionModal), _ = r.useMemo(() => f.map(e => p.find(t => t.id === e)).filter(e => null != e), [f, p]), h = r.useCallback(e => u({
-        type: s.I5.FILE_UPLOAD,
+    } = t.useComponentState(e), m = r.useMemo(() => (null == l ? void 0 : l.type) === i.I5.FILE_UPLOAD ? l.uploadIds : [], [l]), f = o.A.getUploads(n, s.C.InteractionModal), p = r.useMemo(() => m.map(e => f.find(t => t.id === e)).filter(e => null != e), [m, f]), h = r.useCallback(e => u({
+        type: i.I5.FILE_UPLOAD,
         uploadIds: e
     }), [u]);
     return r.useEffect(() => {
-        f.length > _.length && h(f.filter(e => _.some(t => t.id === e)))
-    }, [f, _, h]), {
-        uploadIds: f,
+        m.length > p.length && h(m.filter(e => p.some(t => t.id === e)))
+    }, [m, p, h]), {
+        uploadIds: m,
         setUploadIds: h,
-        currentUploads: _,
+        currentUploads: p,
         error: d
     }
 }

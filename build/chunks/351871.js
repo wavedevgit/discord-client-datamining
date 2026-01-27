@@ -7,9 +7,9 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(201327),
-    s = n(539541);
+    o = n(539541);
 
-function o(e) {
+function s(e) {
     null != e && e.getTracks().forEach(e => e.stop())
 }
 async function l(e) {
@@ -61,7 +61,7 @@ function c(e) {
                     stream: t,
                     streamId: n
                 } = e;
-                o(t), null != n && (0, a.it)(n)
+                s(t), null != n && (0, a.it)(n)
             })
         }
     }, [t, n, c, u]), null == d ? (0, r.jsx)("div", {
@@ -70,7 +70,7 @@ function c(e) {
             width: n,
             height: c
         }
-    }) : (0, r.jsx)(s.A, {
+    }) : (0, r.jsx)(o.A, {
         streamId: d,
         style: {
             width: n,

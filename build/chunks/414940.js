@@ -7,15 +7,15 @@ n.d(t, {
 var r = n(186306),
     i = n(35277),
     a = n(711371),
-    s = n(407315);
-let o = new Set(["line", "blockQuote"]);
+    o = n(407315);
+let s = new Set(["line", "blockQuote"]);
 
 function l(e) {
     let {
         deleteBackward: t,
         deleteFragment: n,
-        insertBreak: s,
-        onChange: o
+        insertBreak: o,
+        onChange: s
     } = e;
     e.deleteBackward = n => {
         let r = a.VW.getCurrentBlock(e);
@@ -30,13 +30,13 @@ function l(e) {
         t(n)
     }, e.deleteFragment = t => {
         if (null != e.selection) {
-            let [s, o] = a.ZF.edges(e.selection), l = [s.path[0]], c = a.VW.node(e, l), u = [o.path[0]], d = a.PW.equals(l, u) ? null : a.VW.node(e, u);
+            let [o, s] = a.ZF.edges(e.selection), l = [o.path[0]], c = a.VW.node(e, l), u = [s.path[0]], d = a.PW.equals(l, u) ? null : a.VW.node(e, u);
             r.o.withSingleEntry(e, () => {
-                (null == c ? void 0 : c[0].type) === "blockQuote" && a.Kh.isAtStart(s, c) && i.b.setNodes(e, {
+                (null == c ? void 0 : c[0].type) === "blockQuote" && a.Kh.isAtStart(o, c) && i.b.setNodes(e, {
                     type: "line"
                 }, {
                     at: l
-                }), (null == d ? void 0 : d[0].type) === "blockQuote" && a.Kh.isAtEnd(o, d) && i.b.setNodes(e, {
+                }), (null == d ? void 0 : d[0].type) === "blockQuote" && a.Kh.isAtEnd(s, d) && i.b.setNodes(e, {
                     type: "line"
                 }, {
                     at: u
@@ -56,7 +56,7 @@ function l(e) {
             });
             return
         }
-        s()
+        o()
     };
     let l = null,
         d = !0;
@@ -64,7 +64,7 @@ function l(e) {
         let t = a.VW.richValue(e);
         (t !== l || e.previewMarkdown !== d) && (r.o.withMergedEntry(e, () => {
             a.VW.withoutNormalizing(e, () => c(e))
-        }), l = t, d = e.previewMarkdown), o()
+        }), l = t, d = e.previewMarkdown), s()
     }, e
 }
 
@@ -72,12 +72,12 @@ function c(e) {
     let t = !1;
     for (let l of a.VW.blocks(e)) {
         let [c, u] = l;
-        if (!o.has(c.type)) continue;
+        if (!s.has(c.type)) continue;
         let d = {
             path: a.PW.child(u, 0),
             offset: 0
         };
-        if ((0, s.W)(e, d)) {
+        if ((0, o.W)(e, d)) {
             "blockQuote" === c.type && (i.b.setNodes(e, {
                 type: "line"
             }, {
@@ -98,17 +98,17 @@ function c(e) {
                 at: u
             }), !t)) {
             var n, r;
-            let s = null != (n = null != (r = null == _ ? void 0 : _[0].length) ? r : null == p ? void 0 : p[0].length) ? n : 0,
-                o = a.PW.child(u, 0);
+            let o = null != (n = null != (r = null == _ ? void 0 : _[0].length) ? r : null == p ? void 0 : p[0].length) ? n : 0,
+                s = a.PW.child(u, 0);
             i.b.delete(e, {
                 at: {
                     anchor: {
-                        path: o,
+                        path: s,
                         offset: 0
                     },
                     focus: {
-                        path: o,
-                        offset: s
+                        path: s,
+                        offset: o
                     }
                 }
             }), t = null != p

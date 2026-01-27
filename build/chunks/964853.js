@@ -1,6 +1,6 @@
 /** Chunk was on 98126 **/
-/** chunk id: 964853, original params: n,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 964853, original params: t,n,i (module,exports,require) **/
+i.d(n, {
     A: () => c
 });
 var r = i(627968);
@@ -11,12 +11,12 @@ var s = i(397927),
     l = i(652215),
     o = i(985018);
 
-function c(n) {
-    return (0, a.EI)(n) ? (0, r.jsx)(s.Drp, {
+function c(t) {
+    return (0, a.EI)(t) ? (0, r.jsx)(s.Drp, {
         id: "role-subscription-settings",
         label: o.intl.string(o.t.jMN5ZG),
         action: () => {
-            e.A.open(n.id, l.BEX.ROLE_SUBSCRIPTIONS)
+            e.A.open(t.id, l.BEX.ROLE_SUBSCRIPTIONS)
         }
     }) : null
 }

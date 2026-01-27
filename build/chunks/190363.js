@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
+/** Chunk was on 82575 **/
 /** chunk id: 190363, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    k: () => r
+    k: () => i
 });
-let r = "CONNECTED_GAMES"
+let i = "CONNECTED_GAMES"

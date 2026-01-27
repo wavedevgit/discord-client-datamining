@@ -6,11 +6,11 @@ e.exports = function(e, t, n, r) {
     if (e === t) return !0;
     if ("object" != typeof e || !e || "object" != typeof t || !t) return !1;
     var a = Object.keys(e),
-        s = Object.keys(t);
-    if (a.length !== s.length) return !1;
-    for (var o = Object.prototype.hasOwnProperty.bind(t), l = 0; l < a.length; l++) {
+        o = Object.keys(t);
+    if (a.length !== o.length) return !1;
+    for (var s = Object.prototype.hasOwnProperty.bind(t), l = 0; l < a.length; l++) {
         var c = a[l];
-        if (!o(c)) return !1;
+        if (!s(c)) return !1;
         var u = e[c],
             d = t[c];
         if (!1 === (i = n ? n.call(r, u, d, c) : void 0) || void 0 === i && u !== d) return !1

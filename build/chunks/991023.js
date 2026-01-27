@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(311907),
+    o = n.n(a),
+    s = n(311907),
     l = n(573435),
     c = n(696451),
     u = n(486020),
@@ -99,22 +99,22 @@ function b(e) {
         N(!0), null == I || I()
     }, [I]), D = i.useCallback(() => {
         N(!1), null == S || S()
-    }, [S]), x = (0, o.bG)([c.Ay], () => {
+    }, [S]), L = (0, s.bG)([c.Ay], () => {
         var e, r, i, a;
         return (null == (r = t.application) || null == (e = r.bot) ? void 0 : e.id) != null ? c.Ay.getMember(n, null == (a = t.application) || null == (i = a.bot) ? void 0 : i.id) : null
-    }), L = i.useMemo(() => {
+    }), x = i.useMemo(() => {
         var e;
         return t.type !== d.Hf.APPLICATION ? p : u.Ay.getApplicationIconURL({
             id: t.id,
             icon: t.icon,
             bot: null == (e = t.application) ? void 0 : e.bot,
             botIconFirst: !0,
-            guildMember: x,
+            guildMember: L,
             size: _
         })
-    }, [t, _, x]);
+    }, [t, _, L]);
     return (0, r.jsx)("div", g(h({}, T), {
-        className: s()(f.iE, y, {
+        className: o()(f.iE, y, {
             [f.rb]: b,
             [f.wH]: b && a
         }),
@@ -134,7 +134,7 @@ function b(e) {
                     width: _,
                     height: m
                 },
-                src: L
+                src: x
             })
         })
     }))

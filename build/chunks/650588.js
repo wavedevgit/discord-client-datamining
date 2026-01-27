@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(503698),
-    s = n.n(a),
-    o = n(827734),
+    o = n.n(a),
+    s = n(827734),
     l = n(397927),
     c = n(170887),
     u = n(807348),
@@ -23,7 +23,7 @@ function h(e) {
         sound: n
     } = e, [a, h] = i.useState(!1), m = i.useRef(null), g = (0, c.A)({
         location: "GiftSoundboard"
-    }), E = s()(p.Qq, g && p.Ow);
+    }), E = o()(p.Qq, g && p.Ow);
 
     function y(e) {
         h(!1), null == t || t(e)
@@ -71,14 +71,14 @@ function h(e) {
             })
         },
         children: () => (0, r.jsx)(l.DUT, {
-            className: s()(p.kL, g && p.Ow),
+            className: o()(p.kL, g && p.Ow),
             onClick: () => h(!0),
             innerRef: m,
             children: null == n ? (0, r.jsxs)("div", {
                 className: p.hQ,
                 children: [(0, r.jsx)(l.JMI, {
                     size: "custom",
-                    color: g ? o.A.colors.ICON_STRONG : o.A.colors.WHITE,
+                    color: g ? s.A.colors.ICON_STRONG : s.A.colors.WHITE,
                     className: p.tc,
                     width: 14,
                     height: 14

@@ -2,12 +2,12 @@
 /** chunk id: 682718, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(73153),
     i = n(31717),
     a = n(399263);
-let s = {
+let o = {
     cancel(e, t) {
         r.h.dispatch({
             type: "UPLOAD_CANCEL_REQUEST",

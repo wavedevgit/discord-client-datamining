@@ -2,13 +2,14 @@
 /** chunk id: 850046, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => E,
+    M: () => g
 }), n(446912);
 var r = n(64700),
     i = n(205338),
     a = n(87075),
-    s = n(429913),
-    o = n(201718),
+    o = n(429913),
+    s = n(201718),
     l = n(207803),
     c = n(403362),
     u = n(789069),
@@ -37,32 +38,34 @@ function p(e) {
 }
 
 function _(e, t, n) {
-    var r, i, a;
-    let s = null == (a = e.profile) || null == (i = a.data) || null == (r = i.dynamic) ? void 0 : r.find(e => e.name === t);
-    return null == s || s.type !== n ? null : s.value
+    var r, i;
+    let a = null == (i = e.data) || null == (r = i.dynamic) ? void 0 : r.find(e => e.name === t);
+    return null == a || a.type !== n ? null : a.value
 }
 let h = {
     [i.A.MARVEL_RIVALS]: e => {
-        var t, n, r, i, a, s, o, l, c, d, f, p;
-        let _ = null == (r = e.profile) || null == (n = r.data) || null == (t = n.primary) ? void 0 : t.season,
-            h = null == (s = e.profile) || null == (a = s.data) || null == (i = a.primary) ? void 0 : i.rank_name,
-            m = (0, u.a)(null == (c = e.profile) || null == (l = c.data) || null == (o = l.primary) ? void 0 : o.rank_image),
-            g = (0, u.a)(null == (p = e.profile) || null == (f = p.data) || null == (d = f.primary) ? void 0 : d.featured_played_character_image);
-        return null == _ || null == h || null == g ? null : {
-            previewText: "".concat(_, ": ").concat(h),
-            previewIcon: m,
-            previewImage: g
+        var t, n, r, i, a, o, s, l;
+        let c = null == (n = e.data) || null == (t = n.primary) ? void 0 : t.season,
+            d = null == (i = e.data) || null == (r = i.primary) ? void 0 : r.rank_name,
+            f = (0, u.a)(null == (o = e.data) || null == (a = o.primary) ? void 0 : a.rank_image),
+            p = (0, u.a)(null == (l = e.data) || null == (s = l.primary) ? void 0 : s.featured_played_character_image);
+        return null == c || null == d || null == p ? null : {
+            previewText: "".concat(c, ": ").concat(d),
+            previewTextShort: d,
+            previewIcon: f,
+            previewImage: p
         }
     },
     [i.A.WUTHERING_WAVES]: (e, t) => {
-        var n, r, i, s;
-        let o = null == (n = e.profile) ? void 0 : n.username,
-            l = _(e, "union_level", a.f.NUMBER),
-            c = (0, u.a)(null == (s = e.profile) || null == (i = s.data) || null == (r = i.primary) ? void 0 : r.featured_played_character_image);
-        return null == o || null == l || null == c ? null : {
-            previewText: "".concat(o, ": Level ").concat(t.format(l)),
+        var n, r;
+        let i = e.username,
+            o = _(e, "union_level", a.f.NUMBER),
+            s = (0, u.a)(null == (r = e.data) || null == (n = r.primary) ? void 0 : n.featured_played_character_image);
+        return null == i || null == o || null == s ? null : {
+            previewText: "".concat(i, ": Level ").concat(t.format(o)),
+            previewTextShort: "Level ".concat(t.format(o)),
             previewIcon: null,
-            previewImage: c
+            previewImage: s
         }
     }
 };
@@ -80,21 +83,26 @@ function m(e, t, n, r) {
     }, a)
 }
 
-function g(e, t) {
-    let n = (0, s.A)(t.map(e => e.applicationId)),
+function g(e, t, n, r) {
+    return m(e, t, n, r)
+}
+
+function E(e, t) {
+    let n = (0, o.A)(t),
         {
             data: i
         } = (0, l.FY)(),
         {
             data: a
-        } = (0, o.P)(e),
+        } = (0, s.P)(e),
         u = (0, d.A)();
     return r.useMemo(() => Object.fromEntries(t.map(e => {
-        let t = null == i ? void 0 : i.find(t => t.applicationId === e.applicationId),
-            r = n.find(t => (null == t ? void 0 : t.id) === e.applicationId),
-            s = null == a ? void 0 : a.find(t => t.application_id === e.applicationId);
-        if (null == t || null == r || null == s) return null;
-        let o = m(t, r, s, u);
-        return null == o ? null : [e.applicationId, o]
+        var t;
+        let r = null == i ? void 0 : i.find(t => t.applicationId === e),
+            o = n.find(t => (null == t ? void 0 : t.id) === e),
+            s = null == a || null == (t = a.find(t => t.application_id === e)) ? void 0 : t.profile;
+        if (null == r || null == o || null == s) return null;
+        let l = m(r, o, s, u);
+        return null == l ? null : [e, l]
     }).filter(c.Vq)), [n, i, a, u, t])
 }

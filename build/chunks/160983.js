@@ -1,4 +1,4 @@
-/** Chunk was on 64228 **/
+/** Chunk was on 63974 **/
 /** chunk id: 160983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -9,12 +9,12 @@ var l = n(777480),
     s = n(622543),
     o = n(570287),
     a = n(646444),
-    c = n(913453),
-    d = n(667049),
+    d = n(913453),
+    c = n(667049),
     u = n(837531),
     p = n(186272),
-    m = n(518477),
-    f = n(985018);
+    f = n(518477),
+    m = n(985018);
 
 function A(e) {
     let {
@@ -23,25 +23,25 @@ function A(e) {
     } = e, {
         mutualFriendsCount: A,
         mutualGuilds: x
-    } = (0, c.A)(t), j = null == x ? void 0 : x.length, h = (0, a.A)(t), g = (0, d.A)(t.id), v = (0, o.A)(t.id), b = [], I = t.id === (null == n ? void 0 : n.id), y = s.A.getFirstWishlistId(t.id), _ = null != y, O = _ ? s.A.getWishlistSettings(t.id, y) : null, N = (_ ? i.A.getWishlistItems(y) : []).length > 0, E = g.length > 0;
-    (I || E) && b.push({
-        text: f.intl.string(f.t.laViwx),
-        section: m.RP.WIDGETS
-    }), b.push({
-        text: f.intl.string(f.t.chq59f),
-        section: m.RP.ACTIVITY
+    } = (0, d.A)(t), g = null == x ? void 0 : x.length, j = (0, a.A)(t), h = (0, c.A)(t.id), b = (0, o.A)(t.id), v = [], I = t.id === (null == n ? void 0 : n.id), y = s.A.getFirstWishlistId(t.id), _ = null != y, O = _ ? s.A.getWishlistSettings(t.id, y) : null, N = (_ ? i.A.getWishlistItems(y) : []).length > 0, E = h.length > 0;
+    (I || E) && v.push({
+        text: m.intl.string(m.t.laViwx),
+        section: f.RP.WIDGETS
+    }), v.push({
+        text: m.intl.string(m.t.chq59f),
+        section: f.RP.ACTIVITY
     });
-    let T = !1 === t.nsfwAllowed,
-        P = r.A.isFriend(t.id),
+    let P = !1 === t.nsfwAllowed,
+        T = r.A.isFriend(t.id),
         C = (null == O ? void 0 : O.visibility) === l.a.PUBLIC;
-    return (I || !I && N && C && v && (!T || T && P)) && b.push({
-        text: f.intl.string(f.t["7lZ31J"]),
-        section: m.RP.WISHLIST
-    }), t.id !== (null == n ? void 0 : n.id) && h && (b.push({
+    return (I || !I && N && C && b && (!P || P && T)) && v.push({
+        text: m.intl.string(m.t["7lZ31J"]),
+        section: f.RP.WISHLIST
+    }), t.id !== (null == n ? void 0 : n.id) && j && (v.push({
         text: (0, u.A)(A),
-        section: m.RP.MUTUAL_FRIENDS
-    }), b.push({
-        text: (0, p.A)(j),
-        section: m.RP.MUTUAL_GUILDS
-    })), b
+        section: f.RP.MUTUAL_FRIENDS
+    }), v.push({
+        text: (0, p.A)(g),
+        section: f.RP.MUTUAL_GUILDS
+    })), v
 }

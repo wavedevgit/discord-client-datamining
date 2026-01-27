@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(706276),
     a = n(808411),
-    s = n(300235),
-    o = n(919470),
+    o = n(300235),
+    s = n(919470),
     l = n(985018);
 let c = {
     title: "Nitro Components",
@@ -25,12 +25,12 @@ let c = {
         controls: {}
     }, {
         name: "Interactive H Scroll",
-        component: s.A,
+        component: o.A,
         id: "interactive-h-scroll",
         controls: {}
     }, {
         name: "Premium Tooltip",
-        component: o.A,
+        component: s.A,
         id: "premium-tooltip",
         controls: {
             title: {

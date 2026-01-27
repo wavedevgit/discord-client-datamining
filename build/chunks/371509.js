@@ -1,15 +1,14 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 371509, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => u
+    A: () => d
 });
 var r = n(627968),
     i = n(64700),
-    a = n(934551),
+    l = n(934551),
     s = n(873298),
-    o = n(397927),
-    l = n(308757);
+    a = n(397927),
+    o = n(308757);
 
 function c(e) {
     let {
@@ -18,28 +17,28 @@ function c(e) {
     } = e, c = i.useMemo(() => {
         switch (t) {
             case s.TO.BLUR:
-                return a.ImageIcon;
+                return l.ImageIcon;
             case s.TO.BLOCK:
-                return a.DenyIcon;
+                return l.DenyIcon;
             case s.TO.SHOW:
-                return a.EyeIcon;
+                return l.EyeIcon;
             default:
                 return null
         }
     }, [t]);
     return (0, r.jsxs)("div", {
-        className: l.q,
+        className: o.q,
         children: [null != c && (0, r.jsx)(c, {
             size: "xs",
             color: "currentColor"
-        }), (0, r.jsx)(o.Text, {
+        }), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-default",
             children: n
         })]
     })
 }
-let u = i.memo(function(e) {
+let d = i.memo(function(e) {
     let {
         option: t
     } = e;

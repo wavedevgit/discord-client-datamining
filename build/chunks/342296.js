@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(311907),
-    s = n(397927),
-    o = n(287809),
+    o = n(397927),
+    s = n(287809),
     l = n(454719),
     c = n(589022),
     u = n(518477),
@@ -73,7 +73,7 @@ function g(e, t) {
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
     return i
 }
-let E = (0, s.FT9)(s._3J.SIZE_80),
+let E = (0, o.FT9)(o._3J.SIZE_80),
     y = {
         onMouseDown: d.tE,
         onClick: d.tE,
@@ -91,7 +91,7 @@ function O(e) {
         children: t,
         user: n,
         currentUser: a,
-        guildId: o,
+        guildId: s,
         channelId: d,
         messageId: f,
         roleId: _,
@@ -106,16 +106,16 @@ function O(e) {
         onClosePopout: T,
         shouldShow: C,
         shouldPreload: N = !0
-    } = e, w = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]), R = i.useRef(void 0), P = i.useCallback(() => null != v ? v() : (0, l.A)(n.id, null != O ? O : n.getAvatarURL(o, E), {
+    } = e, w = m(e, ["children", "user", "currentUser", "guildId", "channelId", "messageId", "roleId", "disableUserProfileLink", "newAnalyticsLocations", "appContext", "avatarUrl", "preload", "renderPopout", "onRequestOpen", "onRequestClose", "onClosePopout", "shouldShow", "shouldPreload"]), R = i.useRef(void 0), P = i.useCallback(() => null != v ? v() : (0, l.A)(n.id, null != O ? O : n.getAvatarURL(s, E), {
         type: "popout",
         withMutualGuilds: n.id !== a.id,
         withMutualFriends: !n.bot && n.id !== a.id,
-        guildId: o,
+        guildId: s,
         channelId: d
-    }), [v, a, n, O, o, d]), D = i.useCallback(e => (R.current = Date.now(), null != A) ? A(e, R.current) : (0, r.jsx)(c.A, h(p({}, e), {
+    }), [v, a, n, O, s, d]), D = i.useCallback(e => (R.current = Date.now(), null != A) ? A(e, R.current) : (0, r.jsx)(c.A, h(p({}, e), {
         user: n,
         currentUser: a,
-        guildId: o,
+        guildId: s,
         channelId: d,
         roleId: _,
         messageId: f,
@@ -126,8 +126,8 @@ function O(e) {
         closePopout: () => {
             e.closePopout(), null == T || T()
         }
-    })), [n, a, A, o, d, _, f, g, y, b, T]);
-    return (0, r.jsx)(s.YNO, h(p({
+    })), [n, a, A, s, d, _, f, g, y, b, T]);
+    return (0, r.jsx)(o.YNO, h(p({
         popoutKey: u.KM,
         shouldShow: C,
         preload: N ? P : void 0,
@@ -144,8 +144,8 @@ function v(e) {
         children: t,
         userId: n,
         user: i
-    } = e, s = m(e, ["children", "userId", "user"]), l = (0, a.bG)([o.default], () => o.default.getCurrentUser()), c = (0, a.bG)([o.default], () => null != i ? i : o.default.getUser(n));
-    return null == c || null == l ? t(y, b) : (0, r.jsx)(O, h(p({}, s), {
+    } = e, o = m(e, ["children", "userId", "user"]), l = (0, a.bG)([s.default], () => s.default.getCurrentUser()), c = (0, a.bG)([s.default], () => null != i ? i : s.default.getUser(n));
+    return null == c || null == l ? t(y, b) : (0, r.jsx)(O, h(p({}, o), {
         user: c,
         currentUser: l,
         children: t

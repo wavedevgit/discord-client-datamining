@@ -10,10 +10,10 @@ var r = n(354328),
 function a(e, t) {
     let n = null == e ? void 0 : e.paymentGateway,
         a = (0, r.A)("shop_disable_cache"),
-        s = (0, r.A)("shop_include_unpublished");
+        o = (0, r.A)("shop_include_unpublished");
     return (0, i.i)({
         noCache: a,
-        includeUnpublished: s,
+        includeUnpublished: o,
         paymentGateway: n,
         includeBundles: !0,
         logPerf: null == e ? void 0 : e.logPerf

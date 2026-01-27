@@ -65,9 +65,9 @@ class a extends i.J {
         let i = this.collection,
             a = null != t ? t : this.getFirstKey();
         if (null == a) return null;
-        let s = i.getItem(a);
-        (null == s ? void 0 : s.type) === "cell" && (a = null != (n = s.parentKey) ? n : null);
-        let o = !1;
+        let o = i.getItem(a);
+        (null == o ? void 0 : o.type) === "cell" && (a = null != (n = o.parentKey) ? n : null);
+        let s = !1;
         for (; null != a;) {
             let n = i.getItem(a);
             if (!n) break;
@@ -80,12 +80,12 @@ class a extends i.J {
                 if (i.rowHeaderColumnKeys.has(r.key) && a.textValue) {
                     let r = a.textValue.slice(0, e.length);
                     if (0 === this.collator.compare(r, e)) {
-                        let e = null != t ? i.getItem(t) : s;
+                        let e = null != t ? i.getItem(t) : o;
                         return (null == e ? void 0 : e.type) === "cell" ? a.key : n.key
                     }
                 }
             }
-            null != (a = this.getKeyBelow(a)) || o || (a = this.getFirstKey(), o = !0)
+            null != (a = this.getKeyBelow(a)) || s || (a = this.getFirstKey(), s = !0)
         }
         return null
     }

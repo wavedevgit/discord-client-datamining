@@ -8,33 +8,33 @@ n.d(t, {
 var r = n(118356),
     i = n(31436);
 let a = null,
-    s = new r.Vy("libdiscore");
+    o = new r.Vy("libdiscore");
 
-function o(e) {
-    s.error(e)
+function s(e) {
+    o.error(e)
 }
 
 function l(e) {
-    s.warn(e)
+    o.warn(e)
 }
 
 function c(e) {
-    s.info(e)
+    o.info(e)
 }
 
 function u(e) {
-    s.verbose(e)
+    o.verbose(e)
 }
 
 function d(e) {
-    s.trace(e)
+    o.trace(e)
 }
 
 function f() {
     return null == a && (a = (async () => {
         await i.Bf();
         let e = i.vZ();
-        e.installLogCallback(o, l, c, u, d), await e.initLibdiscore(), window._libdiscoreInitialized = !0
+        e.installLogCallback(s, l, c, u, d), await e.initLibdiscore(), window._libdiscoreInitialized = !0
     })()), a
 }
 

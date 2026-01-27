@@ -2,11 +2,11 @@
 /** chunk id: 358776, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E7: () => o,
+    E7: () => s,
     WJ: () => u,
     dk: () => c,
     qz: () => l,
-    t0: () => s
+    t0: () => o
 });
 var r = n(945810);
 let i = (0, r.mj)({
@@ -42,10 +42,10 @@ let i = (0, r.mj)({
             }
         }
     }),
-    s = e => i.useConfig({
+    o = e => i.useConfig({
         location: e
     }).showRedesignedNotifications,
-    o = e => i.getConfig({
+    s = e => i.getConfig({
         location: e
     }).showRedesignedNotifications,
     l = e => i.getConfig({

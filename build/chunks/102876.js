@@ -2,13 +2,13 @@
 /** chunk id: 102876, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968),
     i = n(769015),
     a = n(770182);
 
-function s(e) {
+function o(e) {
     let {
         application: t,
         useComma: n = !1

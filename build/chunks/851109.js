@@ -3,20 +3,20 @@
 "use strict";
 n.d(t, {
     GE: () => u,
-    RK: () => s,
+    RK: () => o,
     U5: () => a,
     X8: () => c,
-    yF: () => o
+    yF: () => s
 });
 var r = n(600975),
     i = n(428835),
     a = function(e) {
         return e.POPOUT = "popout", e.SIDEBAR = "sidebar", e.LEGACY = "legacy", e
     }({}),
-    s = function(e) {
+    o = function(e) {
         return e.SERVER_RAIL_TOP = "server-rail-top", e.SERVER_RAIL_BOTTOM = "server-rail-bottom", e.TITLE_BAR_LEFT = "title-bar-left", e
     }({}),
-    o = function(e) {
+    s = function(e) {
         return e.TABS = "tabs", e.DROPDOWN = "dropdown", e
     }({});
 let l = (0, r.C)({

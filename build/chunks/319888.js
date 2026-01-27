@@ -28,22 +28,22 @@ let r = {
         46: "cyan",
         47: "white"
     },
-    s = /\x1B\[(\d+(?:[:;]\d+)*)m/,
-    o = new RegExp("(?=".concat(s.source, ")"));
+    o = /\x1B\[(\d+(?:[:;]\d+)*)m/,
+    s = new RegExp("(?=".concat(o.source, ")"));
 
 function l() {
     let e = {
             className: "ansi-control-sequence",
-            begin: s,
+            begin: o,
             starts: {
-                end: o,
+                end: s,
                 endsParent: !0
             }
         },
         t = [...u("foreground", i, ["38", "39"], !0), ...u("background", a, ["48", "49"], !0), ...u("style", r, [], !1), e];
     return d(t), {
         contains: [{
-            begin: o,
+            begin: s,
             contains: t
         }]
     }
@@ -53,7 +53,7 @@ function c(e, t, n, r) {
     return {
         className: "ansi-".concat(e, "-").concat(t),
         endsParent: !0,
-        begin: o,
+        begin: s,
         "on:begin": (e, t) => {
             let i = e[1].split(";");
             for (let e of (void 0 === t.data.isOn && (t.data.isOn = !1), i)) e === n ? t.data.isOn = !0 : r.includes(e) && (t.data.isOn = !1);

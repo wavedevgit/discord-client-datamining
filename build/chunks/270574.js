@@ -3,21 +3,21 @@
 "use strict";
 n.d(t, {
     A: () => c,
-    v: () => o.nu
+    v: () => s.nu
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
     a = n.n(i),
-    s = n(709066),
-    o = n(705751),
+    o = n(709066),
+    s = n(705751),
     l = n(174616);
 let c = e => {
     let {
         name: t,
         discriminator: n,
         invertBotTagColor: i,
-        nameColor: o,
+        nameColor: s,
         className: c,
         botType: u,
         usernameClass: d,
@@ -33,14 +33,14 @@ let c = e => {
         style: h,
         children: [(0, r.jsxs)("span", {
             className: a()(l.Xh, d),
-            style: null != o ? {
-                color: o
+            style: null != s ? {
+                color: s
             } : void 0,
             children: [g, t]
         }), null != n ? (0, r.jsxs)("span", {
             className: null != f ? f : void 0,
             children: ["#", n]
-        }) : null, null != u ? (0, r.jsx)(s.A, {
+        }) : null, null != u ? (0, r.jsx)(o.A, {
             type: u,
             invertColor: i,
             className: a()(p, l.Od),

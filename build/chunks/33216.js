@@ -1,37 +1,37 @@
 /** Chunk was on 66009 **/
-/** chunk id: 33216, original params: t,i,n (module,exports,require) **/
-n.d(i, {
-    default: () => o
+/** chunk id: 33216, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    default: () => s
 });
-var e = n(627968);
+var i = n(627968);
 n(64700);
-var a = n(158954),
-    l = n(397927),
-    s = n(974875),
-    r = n(985018);
+var l = n(158954),
+    a = n(397927),
+    r = n(974875),
+    o = n(985018);
 
-function o(t) {
+function s(t) {
     let {
-        channelId: i,
+        channelId: e,
         messageId: n,
-        onClose: o,
-        transitionState: d
+        onClose: s,
+        transitionState: c
     } = t;
-    return (0, e.jsx)(a.Modal, {
-        transitionState: d,
-        onClose: o,
-        title: r.intl.string(r.t.B3vFdU),
-        subtitle: r.intl.string(r.t.i4AbAS),
+    return (0, i.jsx)(l.Modal, {
+        transitionState: c,
+        onClose: s,
+        title: o.intl.string(o.t.B3vFdU),
+        subtitle: o.intl.string(o.t.i4AbAS),
         actions: [{
-            text: r.intl.string(r.t.WAI6xu),
-            onClick: o
+            text: o.intl.string(o.t.WAI6xu),
+            onClick: s
         }],
-        children: (0, e.jsx)(l.Text, {
+        children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
             color: "text-default",
-            children: r.intl.format(r.t.Ge0HUi, {
+            children: o.intl.format(o.t.Ge0HUi, {
                 handleFalsePositiveHook: () => {
-                    o(), (0, s.Q)(i, n)
+                    s(), (0, r.Q)(e, n)
                 }
             })
         })

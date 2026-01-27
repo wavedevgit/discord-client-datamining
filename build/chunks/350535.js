@@ -9,14 +9,14 @@ n.d(t, {
     Z0: () => v,
     _$: () => I,
     dI: () => U,
-    pi: () => M,
-    sg: () => V
+    pi: () => j,
+    sg: () => F
 }), n(896048), n(747238), n(812715), n(65821), n(321073), n(733351);
 var r = n(695497),
     i = n.n(r),
     a = n(735438),
-    s = n.n(a),
-    o = n(775121),
+    o = n.n(a),
+    s = n(775121),
     l = n(403362),
     c = n(723702),
     u = n(316501),
@@ -61,12 +61,12 @@ function h(e, t) {
     }), e
 }
 let m = __OVERLAY__ ? d.Nu : (0, c.isLinux)() ? d.C8 : (0, c.isMac)() ? d.V8 : (0, c.isWindows)() ? d.Nu : {},
-    g = s().invert(d.C8);
+    g = o().invert(d.C8);
 g["223"] = "`", Object.freeze(g);
-let E = Object.freeze(s().invert(d.V8)),
-    y = s().invert(d.Nu);
+let E = Object.freeze(o().invert(d.V8)),
+    y = o().invert(d.Nu);
 y["223"] = "`", Object.freeze(y);
-let b = s().invert(null != m ? m : {});
+let b = o().invert(null != m ? m : {});
 
 function O(e) {
     return "+" === e ? "plus" : e
@@ -207,17 +207,17 @@ let R = [
             if (n === e.toUpperCase()) return t.toLowerCase();
         return e
     },
-    x = /shift|meta|ctrl|alt$/;
+    L = /shift|meta|ctrl|alt$/;
 
-function L(e) {
+function x(e) {
     return "meta" === e || "shift" === e || "alt" === e || "ctrl" === e
 }
 
-function j(e) {
+function M(e) {
     return e + "Key"
 }
 
-function M(e) {
+function j(e) {
     let t = {
         keyCode: 0,
         key: "",
@@ -233,7 +233,7 @@ function M(e) {
         if (null == r) return e.push(h(p({}, i), {
             combo: n
         })), e;
-        if (x.test(r) && L(r)) return t[j(r)] = !0, e.map(e => (e[j(r)] = !0, e));
+        if (L.test(r) && x(r)) return t[M(r)] = !0, e.map(e => (e[M(r)] = !0, e));
         {
             let t = C(r, d.g$.BROWSER);
             return null != t && (i.keyCode = t), e.push(i), e
@@ -244,7 +244,7 @@ function M(e) {
 function k(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : I(),
         n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : d.zY.KEYBOARD_KEY;
-    return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, o.A.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
+    return e.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, s.A.modKey).split("+").map(e => e.trim().replace("plus", "+")).reduce((e, r) => {
         let i = C(D(r), t, n);
         return null != i && e.push([n, i, t]), e
     }, [])
@@ -266,11 +266,11 @@ function U(e) {
 function G(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
     return e.length === t.length && e.every((e, r) => {
-        let [i, a, s] = e, [o, l, c] = t[r];
-        return i === o && a === l && (!n || s === c)
+        let [i, a, o] = e, [s, l, c] = t[r];
+        return i === s && a === l && (!n || o === c)
     })
 }
 
-function V(e) {
+function F(e) {
     return null != e && "object" == typeof e && "nativeEvent" in e && 0 === e.nativeEvent.clientX && 0 === e.nativeEvent.clientY
 }

@@ -6,8 +6,8 @@ n.d(t, {
     A: () => w
 }), n(65821), n(896048);
 var i, a = n(311907),
-    s = n(73153),
-    o = n(773669);
+    o = n(73153),
+    s = n(773669);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -83,16 +83,16 @@ function y(e) {
         skusToRecommendationReasons: r,
         userIds: i,
         application: a,
-        numItemsRequested: s
-    } = e, o = f(i);
+        numItemsRequested: o
+    } = e, s = f(i);
     h = d(c({}, h), {
         [a.id]: d(c({}, null != (t = h[a.id]) ? t : {}), {
-            [o]: {
+            [s]: {
                 state: "success",
                 data: {
                     skus: n,
                     skusToRecommendationReasons: r,
-                    numItemsRequested: s
+                    numItemsRequested: o
                 }
             }
         })
@@ -191,12 +191,12 @@ function T(e) {
 }
 
 function C() {
-    if (r === o.default.locale) return !1;
-    r = o.default.locale, p = {}, _ = {}, h = {}
+    if (r === s.default.locale) return !1;
+    r = s.default.locale, p = {}, _ = {}, h = {}
 }
 class N extends(i = a.Ay.Store) {
     initialize() {
-        this.waitFor(o.default), this.syncWith([o.default], C), r = o.default.locale
+        this.waitFor(s.default), this.syncWith([s.default], C), r = s.default.locale
     }
     getStorefrontData(e) {
         return _[e]
@@ -213,7 +213,7 @@ class N extends(i = a.Ay.Store) {
     }
 }
 l(N, "displayName", "SocialLayerStorefrontStore");
-let w = new N(s.h, {
+let w = new N(o.h, {
     LOGOUT: g,
     SOCIAL_LAYER_STOREFRONT_LOAD: O,
     SOCIAL_LAYER_STOREFRONT_LOAD_SUCCESS: v,

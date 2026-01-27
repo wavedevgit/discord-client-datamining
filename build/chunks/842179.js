@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(600975),
     i = n(734057),
     a = n(309010),
-    s = n(287809);
-let o = (0, r.C)({
+    o = n(287809);
+let s = (0, r.C)({
     kind: "guild",
     id: "2025-08_go_live_guild_notification",
     label: "Go live notification guild experiment",
@@ -36,7 +36,7 @@ function l(e) {
         guildId: t,
         location: n
     } = e;
-    return null != t && o.getCurrentConfig({
+    return null != t && s.getCurrentConfig({
         guildId: t,
         location: n
     }).enabled
@@ -45,7 +45,7 @@ function l(e) {
 function c(e, t) {
     let n = e;
     if (null == n) {
-        if (null == s.default.getCurrentUser()) return !1;
+        if (null == o.default.getCurrentUser()) return !1;
         n = a.A.getVoiceChannelId()
     }
     if (null == n) return !1;

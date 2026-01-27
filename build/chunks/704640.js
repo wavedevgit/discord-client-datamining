@@ -2,12 +2,12 @@
 /** chunk id: 704640, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 });
 var r = n(827734),
     i = n(788868);
 let a = i.Ac.PREMIUM_TENURE_1_MONTH,
-    s = {
+    o = {
         [i.Ac.PREMIUM_TENURE_1_MONTH]: {
             start: "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_START",
             end: "EXPRESSIVE_GRADIENT_TENURE_BADGE_BRONZE_END"
@@ -42,9 +42,9 @@ let a = i.Ac.PREMIUM_TENURE_1_MONTH,
         }
     };
 
-function o(e) {
+function s(e) {
     var t;
-    let n = null != (t = s[null != e ? e : a]) ? t : s[a];
+    let n = null != (t = o[null != e ? e : a]) ? t : o[a];
     return {
         type: "custom",
         start: r.A.colors[n.start],

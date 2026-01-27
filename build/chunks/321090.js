@@ -6,8 +6,8 @@ n.d(t, {
 }), n(896048);
 var r, i = n(311907),
     a = n(73153),
-    s = n(77729),
-    o = n(626584),
+    o = n(77729),
+    s = n(626584),
     l = n(837921),
     c = n(41984),
     u = n(680243),
@@ -21,7 +21,7 @@ function f(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-let p = new o.A("OverlayV3NativeGPUBoostManager"),
+let p = new s.A("OverlayV3NativeGPUBoostManager"),
     _ = new Set,
     h = !1,
     m = !1;
@@ -46,7 +46,7 @@ async function O() {
     try {
         let n = b();
         if (h === n || !d.OX) return;
-        let r = await (null === s.A || void 0 === s.A || null == (t = s.A.processUtils) || null == (e = t.getGpuProcessId) ? void 0 : e.call(t));
+        let r = await (null === o.A || void 0 === o.A || null == (t = o.A.processUtils) || null == (e = t.getGpuProcessId) ? void 0 : e.call(t));
         if (null == r) return;
         l.Ay.SetGPUBoostEnabledByPid(r, n) && (h = n), w.emitChange()
     } catch (e) {

@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 847568, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     $H: "tabBar_f8303a",
     Vd: "vertical_f8303a",

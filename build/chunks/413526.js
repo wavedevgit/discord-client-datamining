@@ -1,4 +1,4 @@
-/** Chunk was on 97492 **/
+/** Chunk was on 41727 **/
 /** chunk id: 413526, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Lb: "confettiCanvas__8fcbd",

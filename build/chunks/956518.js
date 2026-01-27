@@ -3,21 +3,21 @@
 "use strict";
 n.d(t, {
     Ay: () => a,
-    sF: () => o
+    sF: () => s
 });
 var r = n(147964),
     i = n(10716);
 
 function a(e) {
-    return o() ? i.A.getState().activityUrlOverride : r.A.inTestModeForEmbeddedApplication(e) ? r.A.testModeOriginURL : s(e)
+    return s() ? i.A.getState().activityUrlOverride : r.A.inTestModeForEmbeddedApplication(e) ? r.A.testModeOriginURL : o(e)
 }
 
-function s(e) {
+function o(e) {
     let t = window.GLOBAL_ENV.ACTIVITY_APPLICATION_HOST;
     return null == t ? null : "https://".concat(e, ".").concat(t)
 }
 
-function o() {
+function s() {
     let e = i.A.getState();
     return e.useActivityUrlOverride && null != e.activityUrlOverride && "" !== e.activityUrlOverride
 }

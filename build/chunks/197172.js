@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 197172, original params: e,t,n (module,exports,require) **/
-"use strict";
 e.exports = {
     my: "avatar__8c0e2",
     Xh: "username__8c0e2",

@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     J: () => l,
-    p: () => o
+    p: () => s
 });
 var r = n(600975),
     i = n(723702);
@@ -41,20 +41,20 @@ let a = (0, r.C)({
     }]
 });
 
-function s() {
+function o() {
     return {
         autoTrackExposure: !0,
         disable: !(0, i.isDesktop)()
     }
 }
 
-function o(e) {
-    return a.useExperiment(e, s())
+function s(e) {
+    return a.useExperiment(e, o())
 }
 
 function l(e) {
     let {
         backForwardButtons: t
-    } = a.getCurrentConfig(e, s());
+    } = a.getCurrentConfig(e, o());
     return t
 }

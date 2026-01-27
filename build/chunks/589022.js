@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     a = n(215530),
-    s = n(697668),
-    o = n(634409),
+    o = n(697668),
+    s = n(634409),
     l = n(650218),
     c = n(39407);
 
@@ -61,9 +61,9 @@ function _(e) {
     return f ? (0, r.jsx)(l.A, p(d({}, e), {
         onHide: _,
         onClickContainer: u
-    })) : t.isNonUserBot() ? (0, r.jsx)(o.A, p(d({}, e), {
+    })) : t.isNonUserBot() ? (0, r.jsx)(s.A, p(d({}, e), {
         onClickContainer: u
-    })) : t.bot ? (0, r.jsx)(s.A, p(d({}, e), {
+    })) : t.bot ? (0, r.jsx)(o.A, p(d({}, e), {
         onClickContainer: u
     })) : (0, r.jsx)(c.A, p(d({}, e), {
         onClickContainer: u

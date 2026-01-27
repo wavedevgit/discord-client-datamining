@@ -10,9 +10,9 @@ var r = n(906046),
             return !1
         }
     },
-    s = r("Object.prototype.toString"),
-    o = "[object String]",
+    o = r("Object.prototype.toString"),
+    s = "[object String]",
     l = n(581070)();
 e.exports = function(e) {
-    return "string" == typeof e || !!e && "object" == typeof e && (l ? a(e) : s(e) === o)
+    return "string" == typeof e || !!e && "object" == typeof e && (l ? a(e) : o(e) === s)
 }

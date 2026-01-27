@@ -2,24 +2,24 @@
 /** chunk id: 899343, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    f: () => s
+    f: () => o
 }), n(896048);
 var r = n(64700),
     i = n(166532),
     a = n(566980);
 
-function s(e) {
+function o(e) {
     let {
         purchaseState: t,
         currentStep: n,
-        initialScene: s,
-        purchaseScene: o,
+        initialScene: o,
+        purchaseScene: s,
         errorScene: l,
         successScene: c
-    } = e, [u, d] = (0, r.useState)(s);
+    } = e, [u, d] = (0, r.useState)(o);
     return (0, r.useEffect)(() => {
-        t === a.h.PURCHASING ? d(o) : t === a.h.FAIL && d(l)
-    }, [t, o, l]), (0, r.useEffect)(() => {
+        t === a.h.PURCHASING ? d(s) : t === a.h.FAIL && d(l)
+    }, [t, s, l]), (0, r.useEffect)(() => {
         n === i.pn.CONFIRM && d(c)
     }, [n, c]), [u, d]
 }

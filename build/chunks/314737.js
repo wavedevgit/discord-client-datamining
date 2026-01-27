@@ -1,8 +1,8 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 314737, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => Q,
+    Ay: () => q,
     Bt: () => J,
     zI: () => Z
 }), n(896048), n(264879);
@@ -19,8 +19,8 @@ var r = n(627968),
     m = n(311907),
     p = n(990078),
     f = n(397927),
-    b = n(157559),
-    h = n(554375),
+    h = n(157559),
+    b = n(554375),
     x = n(971251),
     j = n(615751),
     _ = n(475743),
@@ -67,7 +67,7 @@ function z(e) {
     }
     return e
 }
-let W = d().throttle(h.dZ, 1e3),
+let W = d().throttle(b.dZ, 1e3),
     Y = e => {
         var t, n;
         let {
@@ -146,7 +146,7 @@ let W = d().throttle(h.dZ, 1e3),
                         onBlur: () => {
                             if (g === a.name) return;
                             let e = R.Ay.sanitizeEmojiName(g);
-                            e !== a.name && (0, h.Cp)({
+                            e !== a.name && (0, b.Cp)({
                                 guildId: l,
                                 emojiId: a.id,
                                 name: e
@@ -190,11 +190,11 @@ let W = d().throttle(h.dZ, 1e3),
                         variant: "critical-secondary",
                         icon: f.ucK,
                         onClick: () => {
-                            (0, h.ak)(l, a.id).catch(e => {
+                            (0, b.ak)(l, a.id).catch(e => {
                                 let {
                                     status: t
                                 } = e;
-                                429 === t && b.A.show({
+                                429 === t && h.A.show({
                                     title: H.intl.string(H.t.iufib1),
                                     body: H.intl.string(H.t.Whhv4w)
                                 })
@@ -333,7 +333,7 @@ let W = d().throttle(h.dZ, 1e3),
             })]
         })
     },
-    q = e => {
+    Q = e => {
         let t, n, i, {
                 staticEmojiCount: l,
                 animatedEmojiCount: s,
@@ -361,7 +361,7 @@ let W = d().throttle(h.dZ, 1e3),
             }
         }))
     },
-    Q = () => {
+    q = () => {
         let e = i.useRef(null),
             t = i.useRef(0),
             l = (0, m.bG)([M.A], () => M.A.getGuild()),
@@ -375,8 +375,8 @@ let W = d().throttle(h.dZ, 1e3),
                 revision: k.A.getEmojiRevision(l.id),
                 emojis: k.A.getEmojis(l.id)
             })),
-            b = (0, _.A)(u),
-            [h, x] = i.useState(!1),
+            h = (0, _.A)(u),
+            [b, x] = i.useState(!1),
             [v, S] = i.useState(!1),
             T = i.useRef(null),
             {
@@ -391,16 +391,16 @@ let W = d().throttle(h.dZ, 1e3),
             }),
             [Y, J] = i.useState(null);
         i.useEffect(() => {
-            h && et()
-        }, [h]), i.useEffect(() => {
+            b && et()
+        }, [b]), i.useEffect(() => {
             W(l.id)
         }, [l.id]), i.useEffect(() => {
-            null != b && b < u && W(l.id)
-        }, [u, b, l.id]), i.useEffect(() => {
+            null != h && h < u && W(l.id)
+        }, [u, h, l.id]), i.useEffect(() => {
             if (null != p && null == Y) return void J(p)
         }, [p, Y]);
         let Z = i.useMemo(() => null == Y ? new Set : new Set(d().differenceBy(p, Y, "id").map(e => e.id)), [p, Y]),
-            Q = i.useCallback(function() {
+            q = i.useCallback(function() {
                 let {
                     emoji: e
                 } = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
@@ -484,7 +484,7 @@ let W = d().throttle(h.dZ, 1e3),
                             count: w
                         })
                     })]
-                }), (0, r.jsx)(q, {
+                }), (0, r.jsx)(Q, {
                     guild: l,
                     staticEmojiCount: G,
                     animatedEmojiCount: K
@@ -521,7 +521,7 @@ let W = d().throttle(h.dZ, 1e3),
                     animatedEmoji: F,
                     guild: l,
                     theme: c,
-                    onEdit: e => Q({
+                    onEdit: e => q({
                         emoji: e
                     }),
                     newlyAddedEmojiIds: Z

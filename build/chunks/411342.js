@@ -1,45 +1,44 @@
-/** Chunk was on web.js **/
+/** Chunk was on 92917 **/
 /** chunk id: 411342, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => l
+    A: () => o
 });
 var r = n(627968);
 n(64700);
 var i = n(317097),
-    a = n(397927),
-    s = n(985018),
-    o = n(364271);
+    l = n(397927),
+    a = n(985018),
+    s = n(364271);
 
-function l(e) {
+function o(e) {
     let {
         locked: t,
         role: n,
-        textVariant: l = "text-xs/medium"
-    } = e, c = (0, a.rdh)(a.LU0.colors.INTERACTIVE_TEXT_DEFAULT).hex();
+        textVariant: o = "text-xs/medium"
+    } = e, c = (0, l.rdh)(l.LU0.colors.INTERACTIVE_TEXT_DEFAULT).hex();
     return (0, r.jsx)("div", {
-        className: o.ex,
+        className: s.ex,
         children: (0, r.jsxs)("div", {
-            className: o.b6,
+            className: s.b6,
             children: [(0, r.jsx)("div", {
-                className: o.yY,
+                className: s.yY,
                 style: {
                     backgroundColor: (0, i.Hl)(n.color)
                 }
-            }), (0, r.jsx)(a.hKd, {
+            }), (0, r.jsx)(l.hKd, {
                 size: 8,
                 horizontal: !0
-            }), (0, r.jsxs)(a.Text, {
-                variant: l,
+            }), (0, r.jsxs)(l.Text, {
+                variant: o,
                 color: "text-default",
-                children: [(0, r.jsx)(a.AC4, {
-                    children: s.intl.string(s.t.RnyseL)
+                children: [(0, r.jsx)(l.AC4, {
+                    children: a.intl.string(a.t.RnyseL)
                 }), n.name]
             }), !0 === t && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(a.hKd, {
+                children: [(0, r.jsx)(l.hKd, {
                     size: 8,
                     horizontal: !0
-                }), (0, r.jsx)(a.XAi, {
+                }), (0, r.jsx)(l.XAi, {
                     size: "md",
                     color: c
                 })]

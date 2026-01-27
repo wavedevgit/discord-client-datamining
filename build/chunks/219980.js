@@ -9,8 +9,8 @@ n(64700);
 var i = n(311907),
     a = n(397927);
 n(964486), n(786953);
-var s = n(505274),
-    o = n(448362);
+var o = n(505274),
+    s = n(448362);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -76,11 +76,11 @@ function _(e) {
         pillRef: t
     } = e, n = f(e, ["pillRef"]), {
         balancePillOverlay: l
-    } = (0, i.cf)([s.A], () => ({
-        balancePillOverlay: s.A.balancePillOverlay
-    })), u = (0, r.jsx)(o.Gy, c({
+    } = (0, i.cf)([o.A], () => ({
+        balancePillOverlay: o.A.balancePillOverlay
+    })), u = (0, r.jsx)(s.Gy, c({
         ref: t
-    }, n)), p = (0, r.jsx)(o.Gy, d(c({}, n), {
+    }, n)), p = (0, r.jsx)(s.Gy, d(c({}, n), {
         isInModalOverlay: !0,
         disabled: !0
     })), _ = null != t.current ? t.current.offsetHeight : 36;

@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(406935),
     i = n(157559),
     a = n(827827),
-    s = n(253932),
-    o = n(594061),
+    o = n(253932),
+    s = n(594061),
     l = n(461213),
     c = n(954571),
     u = n(406535),
@@ -17,18 +17,18 @@ var r = n(406935),
     f = n(985018);
 
 function p() {
-    let e = s.NO.useSetting(),
-        t = s.Jr.useSetting();
+    let e = o.NO.useSetting(),
+        t = o.Jr.useSetting();
     return e && ("0" === t || new Date(Number(t)).getTime() - new Date().getTime() > 0)
 }
 
 function _(e, t) {
-    let n = s.NO.getSetting();
-    o.wc.updateAsync("notifications", n => {
+    let n = o.NO.getSetting();
+    s.wc.updateAsync("notifications", n => {
         n.quietMode = r._t.create({
             value: e
         }), n.focusModeExpiresAtMs = e && null != t ? "".concat(Date.now() + t) : "0"
-    }, o.Sb.INFREQUENT_USER_ACTION), c.default.track(d.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+    }, s.Sb.INFREQUENT_USER_ACTION), c.default.track(d.HAw.NOTIFICATION_SETTINGS_UPDATED, {
         update_type: u.Y.ACCOUNT,
         quiet_mode_enabled: e,
         quiet_mode_enabled_old: n

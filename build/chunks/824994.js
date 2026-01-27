@@ -7,14 +7,14 @@ n.d(t, {
 var r = n(64700),
     i = n(311907),
     a = n(775602),
-    s = n(871162),
-    o = n(734045);
+    o = n(871162),
+    s = n(734045);
 
 function l(e) {
     let {
         location: t
-    } = e, n = (0, o._)({
+    } = e, n = (0, s._)({
         location: t
-    }), l = (0, i.bG)([a.A], () => a.A.displayNameStylesEnabled), c = (0, r.useContext)(s.l);
+    }), l = (0, i.bG)([a.A], () => a.A.displayNameStylesEnabled), c = (0, r.useContext)(o.l);
     return n && (l || c.overrideSettings)
 }

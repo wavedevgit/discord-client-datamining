@@ -8,8 +8,8 @@ var r = n(627968);
 n(64700);
 var i = n(377802),
     a = n(956793),
-    s = n(709562),
-    o = n(985018);
+    o = n(709562),
+    s = n(985018);
 
 function l(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -76,9 +76,9 @@ function _(e) {
         onClick: n,
         onMouseEnter: l,
         onMouseLeave: u
-    } = e, p = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]), _ = t ? s.l : s.A, h = () => {
+    } = e, p = f(e, ["centerButton", "onClick", "onMouseEnter", "onMouseLeave"]), _ = t ? o.l : o.A, h = () => {
         null == n || n(), a.default.disconnect()
-    }, m = () => o.intl.string(o.t["6vrfgt"]), {
+    }, m = () => s.intl.string(s.t["6vrfgt"]), {
         Component: g,
         events: E
     } = (0, i.O)();

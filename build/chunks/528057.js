@@ -8,9 +8,9 @@ var r = n(627968);
 n(64700);
 var i = n(416696),
     a = n(709562),
-    s = n(985018);
+    o = n(985018);
 
-function o(e, t, n) {
+function s(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -26,7 +26,7 @@ function l(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            o(e, t, n[t])
+            s(e, t, n[t])
         })
     }
     return e
@@ -53,15 +53,15 @@ function u(e, t) {
 }
 
 function d(e) {
-    return e ? s.intl.string(s.t.S5anIc) : s.intl.string(s.t.q3O3J8)
+    return e ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8)
 }
 
 function f(e) {
     let {
         isSelfStream: t,
         centerButton: n = !1,
-        onMouseEnter: s,
-        onMouseLeave: o
+        onMouseEnter: o,
+        onMouseLeave: s
     } = e, u = c(e, ["isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave"]), f = n ? a.l : a.A, {
         Component: p,
         events: _
@@ -71,10 +71,10 @@ function f(e) {
         isTrayButton: !1,
         iconComponent: p,
         onMouseEnter: e => {
-            null == s || s(e), _.onMouseEnter()
+            null == o || o(e), _.onMouseEnter()
         },
         onMouseLeave: e => {
-            null == o || o(e), _.onMouseLeave()
+            null == s || s(e), _.onMouseLeave()
         }
     }, u))
 }

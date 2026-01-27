@@ -10,7 +10,7 @@ var r = n(311907),
     i = n(73153),
     a = n(734057);
 
-function s(e, t, n) {
+function o(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -19,14 +19,14 @@ function s(e, t, n) {
     }) : e[t] = n, e
 }
 
-function o(e) {
+function s(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            o(e, t, n[t])
         })
     }
     return e
@@ -93,7 +93,7 @@ function O(e) {
         warningId: n,
         feedbackType: r
     } = e, i = _[t];
-    null != i && (_[t] = i.map(e => e.id === n ? c(o({}, e), {
+    null != i && (_[t] = i.map(e => e.id === n ? c(s({}, e), {
         feedback_type: r
     }) : e))
 }
@@ -102,7 +102,7 @@ function v(e) {
     let {
         channelId: t
     } = e, n = _[t];
-    h.delete(t), null != n && (_[t] = n.map(e => c(o({}, e), {
+    h.delete(t), null != n && (_[t] = n.map(e => c(s({}, e), {
         dismiss_timestamp: void 0
     })))
 }
@@ -114,7 +114,7 @@ function A(e) {
     } = e, r = _[t];
     if (null == r) return;
     let i = new Date().toISOString();
-    _[t] = r.map(e => n.includes(e.id) ? c(o({}, e), {
+    _[t] = r.map(e => n.includes(e.id) ? c(s({}, e), {
         dismiss_timestamp: i
     }) : e)
 }

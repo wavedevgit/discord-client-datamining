@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(439372),
     i = n(532622),
     a = n(961350),
-    s = n(734057),
-    o = n(977997),
+    o = n(734057),
+    s = n(977997),
     l = n(69555),
     c = n(140547),
     u = n(242919),
@@ -49,8 +49,8 @@ class h extends r.A {
                 return
             }
             if (!r || t === this.previousVoiceChannelId || (this.previousVoiceChannelId = t, null == n || null == t)) return;
-            let o = s.A.getChannel(t);
-            if (null == o || o.type !== p.rbe.GUILD_VOICE || !(0, i.qC)(o, !0) || null != u.A.getCurrentHangStatus()) return;
+            let s = o.A.getChannel(t);
+            if (null == s || s.type !== p.rbe.GUILD_VOICE || !(0, i.qC)(s, !0) || null != u.A.getCurrentHangStatus()) return;
             let _ = u.A.getCurrentDefaultStatus();
             if (null != _) {
                 if (_.status === f.Kk.CUSTOM && null != _.customHangStatus) {
@@ -58,7 +58,7 @@ class h extends r.A {
                         status: e,
                         emoji: t
                     } = _.customHangStatus;
-                    if (null != t && !(0, d.n)(t, o)) {
+                    if (null != t && !(0, d.n)(t, s)) {
                         a && (0, l.Iq)(f.Kk.CHILLING);
                         return
                     }(0, l.hS)(e, t)
@@ -72,9 +72,9 @@ class h extends r.A {
                 guildId: n
             } = e;
             if (t.id !== a.default.getId()) return;
-            let r = o.A.getCurrentClientVoiceChannelId(n);
+            let r = s.A.getCurrentClientVoiceChannelId(n);
             if (null == r || null == u.A.getCurrentHangStatus()) return;
-            let c = s.A.getChannel(r);
+            let c = o.A.getChannel(r);
             (0, i.qC)(c, !0) || (0, l.eK)()
         }), _(this, "handleDisconnectFromVoiceChannel", () => {
             (0, l.eK)()

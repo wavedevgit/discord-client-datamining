@@ -2,14 +2,13 @@
 /** chunk id: 721932, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    $: () => u,
-    A: () => d
+    $: () => c,
+    A: () => u
 }), n(65821);
 var r = n(731935),
-    i = n(520606),
-    a = n(652215);
+    i = n(520606);
 
-function s(e, t, n) {
+function a(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -25,13 +24,13 @@ function o(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            s(e, t, n[t])
+            a(e, t, n[t])
         })
     }
     return e
 }
 
-function l(e, t) {
+function s(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -42,21 +41,21 @@ function l(e, t) {
     return n
 }
 
-function c(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
+function l(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : s(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let u = e => e instanceof d;
-class d extends i.A {
+let c = e => e instanceof u;
+class u extends i.A {
     static fromServer(e) {
         let t = r.A.createFromServer(e.sku);
         if (null == t) throw Error("SKU not found");
-        return new d(c(o({}, e), {
+        return new u(l(o({}, e), {
             sku: t
         }))
     }
     constructor(e) {
-        super(e), s(this, "sku", void 0), this.skuProductLine = a.EZt.SOCIAL_LAYER_GAME_ITEM, this.sku = e.sku
+        super(e), a(this, "sku", void 0), this.skuProductLine = e.sku.productLine, this.sku = e.sku
     }
 }

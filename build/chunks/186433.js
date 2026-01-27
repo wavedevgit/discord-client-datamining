@@ -2,7 +2,7 @@
 /** chunk id: 186433, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n(896048), n(680155), n(323874), n(14289), n(35956), n(142703);
-var r, i, a, s, o, l = n(627968);
+var r, i, a, o, s, l = n(627968);
 n(140595), n(64700);
 var c = n(507240),
     u = n(284009),
@@ -28,22 +28,22 @@ var c = n(507240),
     R = n(77729),
     P = n(772432),
     D = n(975616),
-    x = n(617590),
-    L = n(111162),
-    j = n(769253),
-    M = n(639723),
+    L = n(617590),
+    x = n(111162),
+    M = n(769253),
+    j = n(639723),
     k = n(626584),
     U = n(927813),
     G = n(316501),
-    V = n(338816);
-L.default.cssDebuggingEnabled && n.e("42592").then(n.t.bind(n, 196995, 19)), (0, G.pF)();
-let F = 5 * U.A.Millis.MINUTE,
+    F = n(338816);
+x.default.cssDebuggingEnabled && n.e("42592").then(n.t.bind(n, 196995, 19)), (0, G.pF)();
+let V = 5 * U.A.Millis.MINUTE,
     B = document.getElementById("app-mount");
-d()(null != B, "Could not find app-mount"), B.className = __OVERLAY__ ? "" : j.l;
+d()(null != B, "Could not find app-mount"), B.className = __OVERLAY__ ? "" : M.l;
 let H = (0, c.createRoot)(B),
     Y = {
         "/oauth2/authorize": I.A,
-        "/one-time": V.A
+        "/one-time": F.A
     };
 
 function W(e, t, n) {
@@ -63,7 +63,7 @@ if (null != R.A) {
         })
     }), v.Ay.appLoaded();
     let e = null == (i = (a = R.A.remoteApp).getVersion) ? void 0 : i.call(a),
-        t = null == (s = (o = R.A.remoteApp).getBuildNumber) ? void 0 : s.call(o),
+        t = null == (o = (s = R.A.remoteApp).getBuildNumber) ? void 0 : o.call(s),
         n = {};
     null != R.A.remoteApp.getModuleVersions && (n = R.A.remoteApp.getModuleVersions()), y.A.setExtra({
         hostVersion: e,
@@ -79,7 +79,7 @@ else if (null != window.require && null == window.DiscordNative) K(f.A.OutdatedC
 else {
     if (document.addEventListener("scroll", e => e.preventDefault()), S.isPlatformEmbedded) {
         window.onbeforeunload = () => v.Ay.beforeUnload(), v.Ay.on("HELP_OPEN", () => window.open(b.A.getCommunityURL()));
-        let e = new w.J_(F, () => v.Ay.purgeMemory());
+        let e = new w.J_(V, () => v.Ay.purgeMemory());
         v.Ay.on("MAIN_WINDOW_BLUR", () => {
             e.delay(), v.Ay.setFocused(!1), (0, C.XC)(window, !1)
         }), v.Ay.on("MAIN_WINDOW_FOCUS", () => {
@@ -88,5 +88,5 @@ else {
             (0, C.R)(window)
         })
     }
-    m.A.initialize(), p.A.initialize(), _.A.init(), E.A.init(), M.A.init(), h.A.initialize(), O.A.initialize(), A.A.initialize(), g.n(), (0, x.wP)(), K(f.A.App)
+    m.A.initialize(), p.A.initialize(), _.A.init(), E.A.init(), j.A.init(), h.A.initialize(), O.A.initialize(), A.A.initialize(), g.n(), (0, L.wP)(), K(f.A.App)
 }

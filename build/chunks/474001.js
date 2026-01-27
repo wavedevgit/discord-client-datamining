@@ -1,4 +1,4 @@
-/** Chunk was on 47841 **/
+/** Chunk was on 39048 **/
 /** chunk id: 474001, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -61,13 +61,13 @@ let f = Object.freeze({
     }
 });
 
-function b(e, t, n, r) {
+function h(e, t, n, r) {
     return u.A.sequence(d().times(t, i => u.A.timing(e, {
         toValue: r(i),
         duration: n / t
     })))
 }
-class h extends(r = s.Component) {
+class b extends(r = s.Component) {
     componentDidMount() {
         this.startAnimation()
     }
@@ -92,7 +92,7 @@ class h extends(r = s.Component) {
         this.resetAnimation(), this.hoverAnimate(f.HOVERING.Y_VALUE)
     }
     createFireAnimation(e, t, n, r) {
-        return b(this.fireScale, e, t, () => d().random(n, r))
+        return h(this.fireScale, e, t, () => d().random(n, r))
     }
     async hoverAnimate(e) {
         var t;
@@ -109,7 +109,7 @@ class h extends(r = s.Component) {
         this.currentAnimation = u.A.parallel([s, l]), await (null == (t = this.currentAnimation) ? void 0 : t.start()), this.hoverAnimate(e * f.HOVERING.Y_VALUE_MODIFIER)
     }
     createShakeAnimation(e, t, n) {
-        return b(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : -1))
+        return h(this.x, e, t, e => d().random(1, n) * (e % 2 == 0 ? 1 : -1))
     }
     async flyAnimate() {
         var e;
@@ -216,5 +216,5 @@ class h extends(r = s.Component) {
         super(...e), m(this, "x", new u.A.Value(0)), m(this, "y", new u.A.Value(0)), m(this, "opacity", new u.A.Value(1)), m(this, "fireScale", new u.A.Value(1)), m(this, "currentAnimation", null), m(this, "isUnmounted", !1)
     }
 }
-m(h, "Stages", p);
-let x = h
+m(b, "Stages", p);
+let x = b

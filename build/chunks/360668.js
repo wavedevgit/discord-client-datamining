@@ -1,44 +1,43 @@
-/** Chunk was on web.js **/
+/** Chunk was on 60667 **/
 /** chunk id: 360668, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => y
+    A: () => b
 });
 var r = n(627968);
 n(64700);
 var i = n(793574),
-    a = n(688810),
+    l = n(688810),
     s = n(430452),
-    o = n(502060),
-    l = n(772927),
+    a = n(502060),
+    o = n(772927),
     c = n(88690),
-    u = n(120897),
-    d = n(449956),
-    f = n(565824),
+    d = n(120897),
+    u = n(449956),
+    _ = n(565824),
     p = n(502395),
-    _ = n(769838),
-    h = n(575684),
-    m = n(531525),
-    g = n(731854),
-    E = n(985018);
+    m = n(769838),
+    g = n(575684),
+    A = n(531525),
+    f = n(731854),
+    h = n(985018);
 
-function y() {
-    let e = s.A.supports(g.O5.SIDECHAIN_COMPRESSION),
+function b() {
+    let e = s.A.supports(f.O5.SIDECHAIN_COMPRESSION),
         {
             analyticsLocations: t
-        } = (0, a.Ay)([i.A.USER_SETTINGS_VIDEO_TAB]);
-    return (0, r.jsxs)(a.f5, {
+        } = (0, l.Ay)([i.A.USER_SETTINGS_VIDEO_TAB]);
+    return (0, r.jsxs)(l.f5, {
         value: t,
-        children: [(0, r.jsxs)(o.A, {
-            webSetting: m.H.VOICE_AND_VIDEO_VIDEO,
-            children: [(0, r.jsxs)(l.A, {
-                children: [(0, r.jsx)(c.A, {}), (0, r.jsx)(u.A, {}), (0, r.jsx)(d.A, {})]
-            }), (0, r.jsx)(h.A, {})]
-        }), (0, r.jsx)(o.A, {
-            title: E.intl.string(E.t.KDdjou),
-            webSetting: m.H.VOICE_AND_VIDEO_VIDEO_STREAMING,
-            children: (0, r.jsxs)(l.A, {
-                children: [(0, r.jsx)(_.A, {}), e && (0, r.jsx)(p.A, {}), (0, r.jsx)(f.A, {})]
+        children: [(0, r.jsxs)(a.A, {
+            webSetting: A.H.VOICE_AND_VIDEO_VIDEO,
+            children: [(0, r.jsxs)(o.A, {
+                children: [(0, r.jsx)(c.A, {}), (0, r.jsx)(d.A, {}), (0, r.jsx)(u.A, {})]
+            }), (0, r.jsx)(g.A, {})]
+        }), (0, r.jsx)(a.A, {
+            title: h.intl.string(h.t.KDdjou),
+            webSetting: A.H.VOICE_AND_VIDEO_VIDEO_STREAMING,
+            children: (0, r.jsxs)(o.A, {
+                children: [(0, r.jsx)(m.A, {}), e && (0, r.jsx)(p.A, {}), (0, r.jsx)(_.A, {})]
             })
         })]
     })

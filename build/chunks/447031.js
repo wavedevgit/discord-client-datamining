@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(587895),
     i = n(734057),
     a = n(309010),
-    s = n(287809),
-    o = n(811024),
+    o = n(287809),
+    s = n(811024),
     l = n(646865),
     c = n(795816),
     u = n(933958),
@@ -42,15 +42,15 @@ async function O(e) {
         w = i.A.getChannel(l),
         R = null == w ? void 0 : w.getGuildId(),
         P = null == R || "" === R,
-        D = s.default.getCurrentUser();
+        D = o.default.getCurrentUser();
     if (null == D) return !1;
     if (null == w || P && !w.isPrivate() || null == l) return Promise.resolve(!1);
-    let x = u.Ay.getCurrentEmbeddedActivity();
-    if ((null == x ? void 0 : x.applicationId) != null && (t = r.A.getApplication(null == x ? void 0 : x.applicationId)), a.A.getVoiceChannelId() === l && null != x && x.applicationId === n && (0, p.H)(x.location) === a.A.getVoiceChannelId()) return (0, E.A)(R, x.location), Promise.resolve(!0);
-    let L = await (0, _.A)(n, l);
+    let L = u.Ay.getCurrentEmbeddedActivity();
+    if ((null == L ? void 0 : L.applicationId) != null && (t = r.A.getApplication(null == L ? void 0 : L.applicationId)), a.A.getVoiceChannelId() === l && null != L && L.applicationId === n && (0, p.H)(L.location) === a.A.getVoiceChannelId()) return (0, E.A)(R, L.location), Promise.resolve(!0);
+    let x = await (0, _.A)(n, l);
     if (!await (0, f.O)({
             applicationId: n,
-            application: L,
+            application: x,
             channel: w,
             currentEmbeddedApplication: t,
             embeddedActivitiesManager: N,
@@ -64,9 +64,9 @@ async function O(e) {
                     channelId: w.id,
                     bypassChangeModal: null != t
                 })) return !1
-        } else if (!(0, o.pE)(w) || !n) return !1
+        } else if (!(0, s.pE)(w) || !n) return !1
     } else if (null == w) return !1;
-    return null != l && (0, d.A)(l), null != x && (0, c.rW)(x.location), await (0, c.su)({
+    return null != l && (0, d.A)(l), null != L && (0, c.rW)(L.location), await (0, c.su)({
         channelId: l,
         applicationId: n,
         isStart: !1,

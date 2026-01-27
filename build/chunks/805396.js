@@ -2,7 +2,7 @@
 /** chunk id: 805396, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => o
+    A: () => s
 }), n(457529), n(65821);
 var r = n(536194);
 let i = (0, n(242133).g)();
@@ -21,6 +21,6 @@ class a {
         return !0
     }
 }
-let s = void 0 !== i ? i : a;
-r.P.isDiscordGatewayPlaintextSet() && (s = a);
-let o = s
+let o = void 0 !== i ? i : a;
+r.P.isDiscordGatewayPlaintextSet() && (o = a);
+let s = o

@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(627968),
     i = n(503698),
     a = n.n(i),
-    s = n(834730),
-    o = n(293994);
+    o = n(834730),
+    s = n(293994);
 let l = {
     blurpleLight: "blurple-light",
     blurpleMedium: "blurple-medium",
@@ -41,9 +41,9 @@ function c(e) {
         text: t,
         variant: n = "grayLight"
     } = e, i = l[n];
-    return (0, r.jsx)(s.E, {
+    return (0, r.jsx)(o.E, {
         variant: "eyebrow",
-        className: a()(o.chip, o[i]),
+        className: a()(s.chip, s[i]),
         children: t
     })
 }
