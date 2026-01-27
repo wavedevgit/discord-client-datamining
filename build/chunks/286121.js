@@ -32,6 +32,7 @@ let l = {
                 showTrailingIndicator: y,
                 dangerItemColor: b
             } = e, [O, v] = i.useState(!0), [A, I] = i.useState(!1), [S, T] = i.useState("text"), [C, N] = i.useState("cozy"), [w, R] = i.useState(!0), P = e => (0, r.jsxs)(o.W1t, {
+                "data-menu-migrated": !0,
                 navId: "menu-story",
                 "aria-label": "Story Menu",
                 variant: t,
@@ -42,12 +43,20 @@ let l = {
                     id: "edit",
                     label: "Edit Message",
                     icon: p ? o.R2l : void 0,
+                    leadingAccessory: p ? {
+                        type: "icon",
+                        icon: o.R2l
+                    } : void 0,
                     shortcut: _ ? "⌘E" : void 0,
                     action: () => {}
                 }), (0, r.jsx)(o.Drp, {
                     id: "pin",
                     label: "Pin Message",
                     icon: p ? o.tsw : void 0,
+                    leadingAccessory: p ? {
+                        type: "icon",
+                        icon: o.tsw
+                    } : void 0,
                     subtext: h ? "Pin this message to the channel" : void 0,
                     badge: "beta",
                     loading: E,
@@ -56,12 +65,20 @@ let l = {
                     id: "copy",
                     label: "Copy Message Link",
                     icon: p ? o.TdU : void 0,
+                    leadingAccessory: p ? {
+                        type: "icon",
+                        icon: o.TdU
+                    } : void 0,
                     badge: "new",
                     action: () => {}
                 }), m && (0, r.jsx)(o.Drp, {
                     id: "disabled",
                     label: "Disabled Item",
                     icon: p ? o.Zes : void 0,
+                    leadingAccessory: p ? {
+                        type: "icon",
+                        icon: o.Zes
+                    } : void 0,
                     disabled: !0,
                     action: () => {}
                 }), g && (0, r.jsxs)(r.Fragment, {
@@ -79,12 +96,20 @@ let l = {
                         label: "Premium Item",
                         color: "premium",
                         icon: p ? o.Zes : void 0,
+                        leadingAccessory: p ? {
+                            type: "icon",
+                            icon: o.Zes
+                        } : void 0,
                         action: () => {}
                     }), (0, r.jsx)(o.Drp, {
                         id: "success-item",
                         label: "Success Item",
                         color: "success",
                         icon: p ? o.Zes : void 0,
+                        leadingAccessory: p ? {
+                            type: "icon",
+                            icon: o.Zes
+                        } : void 0,
                         action: () => {}
                     })]
                 }), f && (0, r.jsxs)(r.Fragment, {
