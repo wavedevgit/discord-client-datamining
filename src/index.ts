@@ -63,8 +63,8 @@ async function main() {
         /__webpack_exports__=__webpack_require__\((?<entryChunk>\d+)\)/,
     ).groups?.entryChunk;
 
-    const DEP_GRAPH_ENABLED = false; 
-    
+    const DEP_GRAPH_ENABLED = false;
+
     await perf<void>(
         'generate dependency graph',
         async () => {
