@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 574454, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => p
 });
@@ -8,12 +9,12 @@ var r, i, s = n(635377),
     a = n(311907),
     o = n(73153),
     c = n(927813);
-let d = {
+let u = {
         taken: null,
         error: void 0,
         rateLimited: !0
     },
-    u = {
+    d = {
         validations: new(l())({
             max: 100,
             maxAge: 6e4
@@ -39,29 +40,29 @@ let d = {
     };
 class h extends(i = a.Ay.Store) {
     isRateLimited() {
-        return null != u.retryAfterTime && Date.now() < u.retryAfterTime
+        return null != d.retryAfterTime && Date.now() < d.retryAfterTime
     }
     validate(e) {
-        let t = u.validations.get(e);
-        return this.isRateLimited() && (null == t || t.rateLimited) ? d : this.isRateLimited() || null == t || !t.rateLimited ? t : void 0
+        let t = d.validations.get(e);
+        return this.isRateLimited() && (null == t || t.rateLimited) ? u : this.isRateLimited() || null == t || !t.rateLimited ? t : void 0
     }
     registrationUsernameSuggestion() {
-        return u.suggestions.registration.suggestion.username
+        return d.suggestions.registration.suggestion.username
     }
     usernameSuggestion() {
-        return u.suggestions.migration.suggestion.username
+        return d.suggestions.migration.suggestion.username
     }
     usernameSuggestionLoading() {
-        return u.suggestions.migration.usernameSuggestionLoading
+        return d.suggestions.migration.usernameSuggestionLoading
     }
     isCurrentUsernameInvalid() {
-        return u.currentUsernameInvalid
+        return d.currentUsernameInvalid
     }
     wasRegistrationSuggestionFetched(e) {
-        return u.suggestions.registration.source === e && u.suggestions.registration.fetched
+        return d.suggestions.registration.source === e && d.suggestions.registration.fetched
     }
     wasSuggestionsFetched() {
-        return u.suggestions.migration.fetched
+        return d.suggestions.migration.fetched
     }
 }(r = "displayName") in h ? Object.defineProperty(h, r, {
     value: "PomeloStore",
@@ -75,7 +76,7 @@ let p = new h(o.h, {
             username: t,
             taken: n
         } = e;
-        u.validations.set(t, {
+        d.validations.set(t, {
             taken: n
         })
     },
@@ -86,23 +87,23 @@ let p = new h(o.h, {
             statusCode: r,
             retryAfter: i
         } = e;
-        429 === r ? u.validations.set(t, {
+        429 === r ? d.validations.set(t, {
             taken: null,
             error: n,
             rateLimited: !0
-        }, (null != i ? i : 7) * c.A.Millis.SECOND) : u.validations.set(t, {
+        }, (null != i ? i : 7) * c.A.Millis.SECOND) : d.validations.set(t, {
             taken: null,
             error: n
-        }), null != i && (u.retryAfterTime = Date.now() + i * c.A.Millis.SECOND)
+        }), null != i && (d.retryAfterTime = Date.now() + i * c.A.Millis.SECOND)
     },
     POMELO_SUGGESTIONS_RESET: function() {
-        u.suggestions.migration = {
+        d.suggestions.migration = {
             suggestion: {
                 username: void 0
             },
             fetched: !1,
             usernameSuggestionLoading: !1
-        }, u.suggestions.registration = {
+        }, d.suggestions.registration = {
             suggestion: {
                 username: void 0
             },
@@ -114,28 +115,28 @@ let p = new h(o.h, {
         let {
             suggestion: t
         } = e;
-        u.suggestions.migration = {
+        d.suggestions.migration = {
             suggestion: t,
             fetched: !0,
             usernameSuggestionLoading: !1
-        }, (null == t ? void 0 : t.invalid_current_username) === !0 && (u.currentUsernameInvalid = !0)
+        }, (null == t ? void 0 : t.invalid_current_username) === !0 && (d.currentUsernameInvalid = !0)
     },
     POMELO_SUGGESTIONS_FETCH: function(e) {
         let {
             usernameSuggestionLoading: t
         } = e;
-        u.suggestions.migration.usernameSuggestionLoading = t
+        d.suggestions.migration.usernameSuggestionLoading = t
     },
     POMELO_REGISTRATION_SUGGESTIONS_SUCCESS: function(e) {
         let {
             suggestion: t,
             source: n
         } = e;
-        u.suggestions.registration = {
+        d.suggestions.registration = {
             suggestion: t,
             source: n,
             fetched: !0
-        }, (null == t ? void 0 : t.username) != null && u.validations.set(t.username, {
+        }, (null == t ? void 0 : t.username) != null && d.validations.set(t.username, {
             taken: !1
         })
     }

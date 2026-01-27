@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 844330, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -11,39 +12,39 @@ var r = n(627968),
     o = n(147925),
     c = n(314516);
 
-function d(e) {
+function u(e) {
     let {
         icon: t,
         title: n,
         subtitle: s,
-        children: d,
-        className: u,
+        children: u,
+        className: d,
         isExpanded: h,
         onExpandedChange: p,
         defaultExpanded: g = !1,
-        onOpen: _,
-        maxHeight: f
-    } = e, [m, A] = i.useState(g), x = i.useRef(null), [E, v] = i.useState(null), b = void 0 !== h, y = b ? h : m;
+        onOpen: f,
+        maxHeight: _
+    } = e, [m, A] = i.useState(g), x = i.useRef(null), [E, v] = i.useState(null), y = void 0 !== h, b = y ? h : m;
     i.useEffect(() => {
-        y && null != x.current && v(x.current.scrollHeight)
-    }, [y, d]);
+        b && null != x.current && v(x.current.scrollHeight)
+    }, [b, u]);
     let j = i.useCallback(() => {
-            let e = !y;
-            b || A(e), null == p || p(e), e && null != _ && _()
-        }, [y, b, p, _]),
-        I = i.useMemo(() => {
-            if (y) {
-                if (null != f) return {
-                    maxHeight: "number" == typeof f ? "".concat(f, "px") : f
+            let e = !b;
+            y || A(e), null == p || p(e), e && null != f && f()
+        }, [b, y, p, f]),
+        O = i.useMemo(() => {
+            if (b) {
+                if (null != _) return {
+                    maxHeight: "number" == typeof _ ? "".concat(_, "px") : _
                 };
                 if (null != E) return {
                     maxHeight: "".concat(E, "px")
                 }
             }
-        }, [f, y, E]);
+        }, [_, b, E]);
     return (0, r.jsxs)("div", {
-        className: l()(c.Yt, u, {
-            [c.Sg]: y
+        className: l()(c.Yt, d, {
+            [c.Sg]: b
         }),
         children: [(0, r.jsxs)(a.DUT, {
             className: c.wx,
@@ -64,7 +65,7 @@ function d(e) {
                 })]
             }), (0, r.jsx)("div", {
                 className: l()(c.OW, {
-                    [c.Sg]: y
+                    [c.Sg]: b
                 }),
                 children: (0, r.jsx)(o.A, {
                     width: 20,
@@ -75,10 +76,10 @@ function d(e) {
         }), (0, r.jsx)("div", {
             ref: x,
             className: l()(c.Qs, {
-                [c.Sg]: y
+                [c.Sg]: b
             }),
-            style: I,
-            children: d
+            style: O,
+            children: u
         })]
     })
 }

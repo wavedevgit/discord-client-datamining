@@ -1,73 +1,73 @@
 /** Chunk was on 44667 **/
-/** chunk id: 620733, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => d
+/** chunk id: 620733, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    A: () => u
 }), n(896048);
 var r, i = n(311907),
     s = n(73153);
 
-function a(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
+function a(t, e, n) {
+    return e in t ? Object.defineProperty(t, e, {
         value: n,
         enumerable: !0,
         configurable: !0,
         writable: !0
-    }) : e[t] = n, e
+    }) : t[e] = n, t
 }
-let l = [];
+let c = [];
 
-function c() {
-    l = []
+function o() {
+    c = []
 }
-class o extends(r = i.Ay.Store) {
+class l extends(r = i.Ay.Store) {
     getSessions() {
-        return l
+        return c
     }
 }
-a(o, "displayName", "AuthSessionsStore");
-let d = new o(s.h, {
-    LOGOUT: c,
-    LOGIN_SUCCESS: c,
-    FETCH_AUTH_SESSIONS_SUCCESS: function(e) {
+a(l, "displayName", "AuthSessionsStore");
+let u = new l(s.h, {
+    LOGOUT: o,
+    LOGIN_SUCCESS: o,
+    FETCH_AUTH_SESSIONS_SUCCESS: function(t) {
         let {
-            sessions: t
-        } = e;
-        l = t.map(e => {
-            var t, n;
-            return t = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                    var n = null != arguments[t] ? arguments[t] : {},
+            sessions: e
+        } = t;
+        c = e.map(t => {
+            var e, n;
+            return e = function(t) {
+                for (var e = 1; e < arguments.length; e++) {
+                    var n = null != arguments[e] ? arguments[e] : {},
                         r = Object.keys(n);
-                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                        return Object.getOwnPropertyDescriptor(n, e).enumerable
-                    }))), r.forEach(function(t) {
-                        a(e, t, n[t])
+                    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(t) {
+                        return Object.getOwnPropertyDescriptor(n, t).enumerable
+                    }))), r.forEach(function(e) {
+                        a(t, e, n[e])
                     })
                 }
-                return e
-            }({}, e), n = n = {
-                approx_last_used_time: new Date(e.approx_last_used_time)
-            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
-                var n = Object.keys(e);
+                return t
+            }({}, t), n = n = {
+                approx_last_used_time: new Date(t.approx_last_used_time)
+            }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {
+                var n = Object.keys(t);
                 if (Object.getOwnPropertySymbols) {
-                    var r = Object.getOwnPropertySymbols(e);
+                    var r = Object.getOwnPropertySymbols(t);
                     n.push.apply(n, r)
                 }
                 return n
-            })(Object(n)).forEach(function(e) {
-                Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-            }), t
+            })(Object(n)).forEach(function(t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+            }), e
         })
     },
-    LOGOUT_AUTH_SESSIONS_SUCCESS: function(e) {
+    LOGOUT_AUTH_SESSIONS_SUCCESS: function(t) {
         let {
-            sessionIdHashes: t
-        } = e, n = [...l], r = !1;
-        for (let e of t) {
-            let t = n.findIndex(t => t.id_hash === e);
-            t >= 0 && (n.splice(t, 1), r = !0)
+            sessionIdHashes: e
+        } = t, n = [...c], r = !1;
+        for (let t of e) {
+            let e = n.findIndex(e => e.id_hash === t);
+            e >= 0 && (n.splice(e, 1), r = !0)
         }
         if (!r) return !1;
-        l = n
+        c = n
     }
 })

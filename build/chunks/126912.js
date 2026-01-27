@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 126912, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => v
 }), n(747238), n(896048);
@@ -9,13 +10,13 @@ var r, i = n(627968),
     a = n(311907),
     o = n(562465),
     c = n(397927),
-    d = n(396681),
-    u = n(854378),
+    u = n(396681),
+    d = n(854378),
     h = n(210714),
     p = n(427157),
     g = n(650048),
-    _ = n(652215),
-    f = n(431144),
+    f = n(652215),
+    _ = n(431144),
     m = n(985018),
     A = n(473169);
 
@@ -30,10 +31,10 @@ function x(e, t, n) {
 a.Ay.initialize();
 class E extends(r = s.PureComponent) {
     componentDidMount() {
-        let e = (0, d.A)(this.props.location),
+        let e = (0, u.A)(this.props.location),
             t = (0, l.parse)(this.props.location.search);
         o.Bo.post({
-            url: _.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
+            url: f.Rsh.DISABLE_EMAIL_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -60,8 +61,8 @@ class E extends(r = s.PureComponent) {
         })), (0, h.d)("disable_email_notifications")
     }
     renderBusy() {
-        return (0, i.jsx)(u.Ay, {
-            children: (0, i.jsx)(u.CK, {})
+        return (0, i.jsx)(d.Ay, {
+            children: (0, i.jsx)(d.CK, {})
         })
     }
     renderCategorySuccess(e, t) {
@@ -71,11 +72,11 @@ class E extends(r = s.PureComponent) {
         } = this.props, s = m.intl.formatToPlainString(m.t.YDAohB, {
             category: t
         });
-        return (0, i.jsxs)(u.Ay, {
-            children: [(0, i.jsx)(u.hE, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d.hE, {
                 className: A.QB,
                 children: m.intl.string(m.t.f6rdLg)
-            }), (0, i.jsx)(u.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: s
             }), (0, i.jsx)("div", {
                 className: A.QX,
@@ -89,7 +90,7 @@ class E extends(r = s.PureComponent) {
                 children: (0, i.jsx)(c.QWc, {
                     text: m.intl.string(m.t.YYTirT),
                     textVariant: "text-sm/normal",
-                    onClick: () => r(_.BVt.SETTINGS("notifications", f.oh))
+                    onClick: () => r(f.BVt.SETTINGS("notifications", _.oh))
                 })
             })]
         })
@@ -103,18 +104,18 @@ class E extends(r = s.PureComponent) {
             category: r
         } = this.state;
         if (null != r) {
-            let e = f.px.find(e => e.category === r);
+            let e = _.px.find(e => e.category === r);
             if (null != e) return this.renderCategorySuccess(r, e.label())
         }
-        return (0, i.jsxs)(u.Ay, {
-            children: [(0, i.jsx)(u.eu, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d.eu, {
                 src: null == n ? void 0 : n.getAvatarURL(void 0, 100),
                 size: c._3J.DEPRECATED_SIZE_100,
                 className: A.SX
-            }), (0, i.jsx)(u.hE, {
+            }), (0, i.jsx)(d.hE, {
                 className: A.QB,
                 children: m.intl.string(m.t["6U6OMQ"])
-            }), (0, i.jsx)(u.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: m.intl.string(m.t["yaDJ4/"])
             }), (0, i.jsx)("div", {
                 className: A.eT,
@@ -131,14 +132,14 @@ class E extends(r = s.PureComponent) {
             defaultRoute: e,
             transitionTo: t
         } = this.props;
-        return (0, i.jsxs)(u.Ay, {
-            children: [(0, i.jsx)(u._V, {
+        return (0, i.jsxs)(d.Ay, {
+            children: [(0, i.jsx)(d._V, {
                 src: n(37772),
                 className: A.SX
-            }), (0, i.jsx)(u.hE, {
+            }), (0, i.jsx)(d.hE, {
                 className: A.QB,
                 children: m.intl.string(m.t.ox9hIS)
-            }), (0, i.jsx)(u.tK, {
+            }), (0, i.jsx)(d.tK, {
                 children: m.intl.string(m.t["/dcuR5"])
             }), (0, i.jsx)("div", {
                 className: A.eT,

@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 32120, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => h
 }), n(747238);
@@ -10,9 +11,9 @@ var r = n(110259),
     a = n(954571),
     o = n(499785),
     c = n(916882),
-    d = n(652215);
+    u = n(652215);
 n(574454);
-var u = n(985018);
+var d = n(985018);
 let h = {
     resetSuggestions: () => s.h.dispatch({
         type: "POMELO_SUGGESTIONS_RESET"
@@ -25,7 +26,7 @@ let h = {
         try {
             var n;
             let r = await i.Bo.get({
-                url: d.Rsh.POMELO_SUGGESTIONS_UNAUTHED,
+                url: u.Rsh.POMELO_SUGGESTIONS_UNAUTHED,
                 query: null == e ? void 0 : {
                     global_name: e
                 },
@@ -50,7 +51,7 @@ let h = {
                 usernameSuggestionLoading: !0
             });
             let n = await i.Bo.get({
-                url: d.Rsh.POMELO_SUGGESTIONS,
+                url: u.Rsh.POMELO_SUGGESTIONS,
                 timeout: e,
                 rejectWithError: !0
             });
@@ -67,11 +68,11 @@ let h = {
         let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "modal",
             i = arguments.length > 2 && void 0 !== arguments[2] && arguments[2],
             c = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
-            h = !1 === /^[A-Za-z0-9_.]*$/.test(e) ? u.intl.string(u.t.z7c4bP) : e.includes("..") ? u.intl.string(u.t["C7G+gr"]) : e.length < 2 || e.length > 32 ? u.intl.formatToPlainString(u.t.IpijXA, {
+            h = !1 === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bP) : e.includes("..") ? d.intl.string(d.t["C7G+gr"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXA, {
                 maxNum: 32,
                 minNum: 2
             }) : void 0;
-        if (null != h) return a.default.track(d.HAw.POMELO_ERRORS, {
+        if (null != h) return a.default.track(u.HAw.POMELO_ERRORS, {
             reason: h,
             username_error: !0,
             location: n,
@@ -83,7 +84,7 @@ let h = {
         });
         try {
             let t = await o.A.post({
-                url: i ? d.Rsh.POMELO_ATTEMPT_UNAUTHED : d.Rsh.POMELO_ATTEMPT,
+                url: i ? u.Rsh.POMELO_ATTEMPT_UNAUTHED : u.Rsh.POMELO_ATTEMPT,
                 body: {
                     username: e
                 },
@@ -95,7 +96,7 @@ let h = {
                 },
                 rejectWithError: !1
             });
-            t.body.taken && a.default.track(d.HAw.POMELO_ERRORS, {
+            t.body.taken && a.default.track(u.HAw.POMELO_ERRORS, {
                 reason: "already_taken",
                 username_error: !0,
                 location: n,
@@ -108,7 +109,7 @@ let h = {
         } catch (o) {
             let r = new l.LG(o),
                 i = null != (t = r.getAnyErrorMessage()) ? t : void 0;
-            a.default.track(d.HAw.POMELO_ERRORS, {
+            a.default.track(u.HAw.POMELO_ERRORS, {
                 reason: i,
                 username_error: !0,
                 location: n,
@@ -126,7 +127,7 @@ let h = {
         let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
             n = await o.A.post({
                 body: e,
-                url: d.Rsh.POMELO_CREATE,
+                url: u.Rsh.POMELO_CREATE,
                 trackedActionData: {
                     event: r.NetworkActionNames.POMELO_CREATE,
                     properties: {

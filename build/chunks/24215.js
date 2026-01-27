@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 24215, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     L: () => A
 });
@@ -10,16 +11,16 @@ var r = n(627968),
     a = n(844330),
     o = n(253932),
     c = n(578746),
-    d = n(954571),
-    u = n(960736),
+    u = n(954571),
+    d = n(960736),
     h = n(652215),
     p = n(985018),
     g = n(190359);
-let _ = () => (0, r.jsx)("div", {
+let f = () => (0, r.jsx)("div", {
     className: g.m
 });
 
-function f(e) {
+function _(e) {
     let {
         label: t,
         children: n
@@ -67,15 +68,15 @@ let A = () => {
             setDmsAllowed: x,
             setShowActivity: E,
             guildId: v,
-            inviteCode: b
-        } = (0, u.lD)(),
-        y = null == (e = l.A.getProps().invite) ? void 0 : e.is_nickname_changeable,
+            inviteCode: y
+        } = (0, d.lD)(),
+        b = null == (e = l.A.getProps().invite) ? void 0 : e.is_nickname_changeable,
         j = i.useCallback(() => {
-            d.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
+            u.default.track(h.HAw.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
                 guild_id: v,
-                invite_code: b
+                invite_code: y
             })
-        }, [v, b]);
+        }, [v, y]);
     return (0, r.jsxs)(a.A, {
         icon: (0, r.jsx)(s.Zes, {
             size: "refresh_sm"
@@ -83,9 +84,9 @@ let A = () => {
         title: p.intl.string(p.t["A5wHQ/"]),
         subtitle: p.intl.string(p.t.UKCSEd),
         onOpen: j,
-        maxHeight: y ? 220 : 130,
-        children: [y && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(f, {
+        maxHeight: b ? 220 : 130,
+        children: [b && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(_, {
                 label: p.intl.string(p.t.me1lRk),
                 children: (0, r.jsx)(s.ksK, {
                     placeholder: p.intl.string(p.t["09Q8yp"]),
@@ -93,12 +94,12 @@ let A = () => {
                     value: n,
                     onChange: A
                 })
-            }), (0, r.jsx)(_, {})]
+            }), (0, r.jsx)(f, {})]
         }), (0, r.jsx)(m, {
             label: p.intl.string(p.t["/2ed37"]),
             checked: c,
             onChange: x
-        }), (0, r.jsx)(_, {}), t && (0, r.jsx)(m, {
+        }), (0, r.jsx)(f, {}), t && (0, r.jsx)(m, {
             label: p.intl.string(p.t.bN4m1G),
             checked: g,
             onChange: E

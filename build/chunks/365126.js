@@ -2,12 +2,12 @@
 /** chunk id: 365126, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g
-}), n(896048), n(457529);
+}), n(896048);
 var r = n(627968),
     l = n(64700),
-    i = n(460648),
-    s = n(562465),
-    a = n(397927),
+    i = n(562465),
+    s = n(397927),
+    a = n(293731),
     o = n(464477),
     d = n(723702),
     c = n(837921),
@@ -26,7 +26,7 @@ function g(e) {
         challenge: x
     } = t.methods.find(e => "webauthn" === e.type), v = async () => {
         j(!0), S(null);
-        let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : (0, i.Jt)(JSON.parse(x)).then(JSON.stringify),
+        let e = d.isPlatformEmbedded && c.Ay.supportsFeature(f.BYE.WEBAUTHN) ? c.Ay.webAuthnAuthenticate(x) : (0, a.J)(x),
             t = async e => {
                 try {
                     await n({
@@ -34,7 +34,7 @@ function g(e) {
                         data: e
                     })
                 } catch (e) {
-                    e instanceof s.oh ? S(h.intl.string(h.t.xSCvBf)) : ((0, o.Os)(e, {}), S(e.message))
+                    e instanceof i.oh ? S(h.intl.string(h.t.xSCvBf)) : ((0, o.Os)(e, {}), S(e.message))
                 }
             };
         try {
@@ -61,7 +61,7 @@ function g(e) {
         }), (0, r.jsx)(u.A.SlideFooter, {
             mfaChallenge: t,
             setSlide: g,
-            trailingButton: (0, r.jsx)(a.Button, {
+            trailingButton: (0, r.jsx)(s.Button, {
                 variant: "primary",
                 text: h.intl.string(h.t.Xr3Eks),
                 loading: b,

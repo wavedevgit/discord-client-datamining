@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 170159, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => k
 }), n(747238), n(896048), n(65821);
@@ -10,23 +11,23 @@ var r = n(627968),
     a = n(311907),
     o = n(397927),
     c = n(73153),
-    d = n(830215),
-    u = n(869038),
+    u = n(830215),
+    d = n(869038),
     h = n(110782),
     p = n(803306),
     g = n(854378),
-    _ = n(10088),
-    f = n(871123),
+    f = n(10088),
+    _ = n(871123),
     m = n(210714),
     A = n(961350),
     x = n(650048),
     E = n(30793),
     v = n(189081),
-    b = n(67480),
-    y = n(45938),
+    y = n(67480),
+    b = n(45938),
     j = n(975571),
-    I = n(427262),
-    O = n(161928),
+    O = n(427262),
+    I = n(161928),
     S = n(129851),
     N = n(229),
     C = n(652215),
@@ -188,7 +189,7 @@ class P extends i.PureComponent {
             giftCodeCode: e.code,
             transitionTo: i,
             children: (0, r.jsxs)(g.Ay, {
-                children: [(0, r.jsx)(O.A, {
+                children: [(0, r.jsx)(I.A, {
                     giftCode: e
                 }), (0, r.jsx)("div", {
                     className: R.eT,
@@ -204,7 +205,7 @@ class P extends i.PureComponent {
                 }) : (0, r.jsx)(g.ME, {
                     className: R.QX,
                     children: T.intl.format(T.t.NYM08s, {
-                        userTag: I.Ay.getUserTag(t),
+                        userTag: O.Ay.getUserTag(t),
                         onLogoutClick: this.handleLogout
                     })
                 })]
@@ -223,9 +224,9 @@ class P extends i.PureComponent {
             location: o
         } = this.props, {
             fetchingUser: c,
-            continueOnWeb: d
+            continueOnWeb: u
         } = this.state;
-        if (e === C.fAW.OPEN && !d) return this.renderAppOpened();
+        if (e === C.fAW.OPEN && !u) return this.renderAppOpened();
         if (e === C.fAW.OPENING) return this.renderSpinner(T.intl.string(T.t["Z+hCVU"]));
         if (l) return this.renderSpinner(T.intl.string(T.t.bhJseN));
         if (null == i) return s ? this.renderExpiredInvite() : this.renderSpinner(T.intl.string(T.t.b3lf1c));
@@ -268,9 +269,9 @@ class P extends i.PureComponent {
             }))
         }), w(this, "handleLogout", () => {
             let e = this.props.match.params.giftCode;
-            d.A.logout("gift_code", C.BVt.GIFT_CODE_LOGIN(e))
+            u.A.logout("gift_code", C.BVt.GIFT_CODE_LOGIN(e))
         }), w(this, "handleResendVerification", () => {
-            d.A.verifyResend(), this.setState({
+            u.A.verifyResend(), this.setState({
                 sentVerification: !0
             })
         }), w(this, "handleAccept", async () => {
@@ -283,7 +284,7 @@ class P extends i.PureComponent {
             try {
                 this.setState({
                     error: null
-                }), await u.A.redeemGiftCode({
+                }), await d.A.redeemGiftCode({
                     code: n
                 }), e(C.BVt.APP)
             } catch (e) {
@@ -295,26 +296,26 @@ class P extends i.PureComponent {
             let {
                 transitionTo: e
             } = this.props, t = this.getCode();
-            u.A.resolveGiftCode(t, !0, !0).then(n => {
+            d.A.resolveGiftCode(t, !0, !0).then(n => {
                 null != n && null != n.giftCode.promotion && e(C.BVt.BILLING_PROMOTION_REDEMPTION(t))
             })
         })
     }
 }
-let k = a.Ay.connectStores([E.A, v.A, A.default, b.A, x.A, _.A], e => {
+let k = a.Ay.connectStores([E.A, v.A, A.default, y.A, x.A, f.A], e => {
         let t = e.match.params.giftCode,
             n = E.A.get(t),
-            r = null != n ? b.A.get(n.skuId) : null;
+            r = null != n ? y.A.get(n.skuId) : null;
         return {
             giftCode: n,
             sku: r,
-            libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? y.YI(n.entitlementBranches, r, v.A) : null,
+            libraryApplication: null != r && (null == n ? void 0 : n.entitlementBranches) != null ? b.YI(n.entitlementBranches, r, v.A) : null,
             authenticated: A.default.isAuthenticated(),
             defaultRoute: x.A.defaultRoute,
             isResolved: E.A.getIsResolved(t),
             isAccepting: E.A.getIsAccepting(t),
             libraryApplicationsFetched: v.A.fetched,
-            nativeAppState: _.A.getState(t)
+            nativeAppState: f.A.getState(t)
         }
     })(P),
     L = e => {
@@ -323,7 +324,7 @@ let k = a.Ay.connectStores([E.A, v.A, A.default, b.A, x.A, _.A], e => {
             children: n,
             giftCodeCode: s,
             transitionTo: l
-        } = e, a = (0, f.bF)(t);
+        } = e, a = (0, _.bF)(t);
         return (i.useEffect(() => {
             null != s && a && l(C.BVt.APP_WITH_GIFT_CODE(s))
         }, [a, s, l]), a) ? (0, r.jsxs)(g.Ay, {

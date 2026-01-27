@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 871210, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     Bj: () => h,
     C4: () => m,
@@ -15,8 +16,8 @@ var r = n(989349),
     a = n(661191),
     o = n(240248),
     c = n(963334),
-    d = n(789622),
-    u = n(985018);
+    u = n(789622),
+    d = n(985018);
 
 function h(e) {
     let t = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1];
@@ -29,22 +30,22 @@ function h(e) {
 }
 
 function p(e) {
-    let t = (0, o.sS)(e.username).replace(d.uA, "").replace(d.SY, ".").toLowerCase();
+    let t = (0, o.sS)(e.username).replace(u.uA, "").replace(u.SY, ".").toLowerCase();
     return "".concat(t).concat(e.discriminator).substring(0, 32)
 }
 let g = ["@", "#", ":"],
-    _ = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
-    f = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
+    f = ["```", "discord", "hypesquad", "system message", "system mesage", "sustem message", "sustem mesage", "clyde"],
+    _ = ["discordtag", "everyone", "here", "discord nitro", "discord", "snowsgiving"];
 
 function m(e) {
     var t;
     let n = e.username.toLowerCase();
-    if ((t = d.RS, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
+    if ((t = u.RS, n.split("").filter(e => !t.includes(e.charCodeAt(0))).join("")).length < 2) return !0;
     for (let e of g)
         if (n.includes(e)) return !0;
-    for (let e of f)
-        if (n === e.toLowerCase()) return !0;
     for (let e of _)
+        if (n === e.toLowerCase()) return !0;
+    for (let e of f)
         if (n.includes(e.toLowerCase())) return !0;
     return !1
 }
@@ -66,7 +67,7 @@ function E(e) {
         rateLimited: !0
     }, () => ({
         type: c.q.RATE_LIMIT,
-        message: u.intl.string(u.t.T15lqn)
+        message: d.intl.string(d.t.T15lqn)
     })).with({
         error: s.P.not(s.P.nullish)
     }, e => {
@@ -81,12 +82,12 @@ function E(e) {
         taken: !1
     }, () => ({
         type: c.q.AVAILABLE,
-        message: u.intl.string(u.t.PgfBSx)
+        message: d.intl.string(d.t.PgfBSx)
     })).with({
         taken: !0
     }, () => ({
         type: c.q.ERROR,
-        message: u.intl.string(u.t.mCrAUb)
+        message: d.intl.string(d.t.mCrAUb)
     })).with({
         error: s.P.nullish
     }, () => ({

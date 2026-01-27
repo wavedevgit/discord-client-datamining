@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 420382, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => A
 }), n(896048);
@@ -10,13 +11,13 @@ var r = n(627968),
     a = n(311907),
     o = n(397927),
     c = n(830215),
-    d = n(964486),
-    u = n(396681),
+    u = n(964486),
+    d = n(396681),
     h = n(854378),
     p = n(976860),
     g = n(210714),
-    _ = n(652215),
-    f = n(985018),
+    f = n(652215),
+    _ = n(985018),
     m = n(473169);
 
 function A(e) {
@@ -27,16 +28,16 @@ function A(e) {
 
     function x() {
         return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(o.Button, {
-            text: f.intl.string(f.t.dKhVQN),
+            text: _.intl.string(_.t.dKhVQN),
             fullWidth: !0,
-            onClick: () => s(_.BVt.LOGIN, {
+            onClick: () => s(f.BVt.LOGIN, {
                 source: "authorizeIPAdress"
             })
         })
     }
-    return ((0, d.Ay)(() => {
+    return ((0, u.Ay)(() => {
         (0, g.d)("authorize_ip");
-        let e = (0, u.A)(t);
+        let e = (0, d.A)(t);
         null == e ? A("failed") : (async () => {
             try {
                 await c.A.authorizeIPAddress(e), A("succeeded")
@@ -51,10 +52,10 @@ function A(e) {
             className: m.SX
         }), (0, r.jsx)(h.hE, {
             className: m.QB,
-            children: f.intl.string(f.t["f/54az"])
+            children: _.intl.string(_.t["f/54az"])
         }), (0, r.jsx)(h.tK, {
             className: m.C2,
-            children: f.intl.string(f.t.i3ehMr)
+            children: _.intl.string(_.t.i3ehMr)
         }), x()]
     }) : "succeeded" === a ? (0, r.jsxs)(h.Ay, {
         children: [(0, r.jsx)("img", {
@@ -63,14 +64,14 @@ function A(e) {
             className: m.SX
         }), (0, r.jsx)(h.hE, {
             className: m.QB,
-            children: f.intl.string(f.t.iG0SlK)
+            children: _.intl.string(_.t.iG0SlK)
         }), (0, r.jsx)(h.tK, {
             className: m.C2,
-            children: f.intl.string(f.t["Elv+qt"])
+            children: _.intl.string(_.t["Elv+qt"])
         }), x()]
     }) : (0, r.jsxs)(h.Ay, {
         children: [(0, r.jsx)(h.CK, {}), (0, r.jsx)(h.hE, {
-            children: f.intl.string(f.t["9exy+V"])
+            children: _.intl.string(_.t["9exy+V"])
         })]
     })
 }

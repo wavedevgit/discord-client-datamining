@@ -1,7 +1,8 @@
 /** Chunk was on 86142 **/
 /** chunk id: 528685, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    A: () => d
+    A: () => u
 });
 var r = n(627968);
 n(64700);
@@ -12,7 +13,7 @@ var i = n(503698),
     o = n(985018),
     c = n(473169);
 
-function d(e) {
+function u(e) {
     let {
         email: t
     } = e;

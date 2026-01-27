@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 340451, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => m
 }), n(896048);
@@ -10,21 +11,21 @@ var r = n(627968),
     a = n(830215),
     o = n(964486),
     c = n(396681),
-    d = n(317940),
-    u = n(701273),
+    u = n(317940),
+    d = n(701273),
     h = n(210714),
     p = n(954571),
     g = n(652215),
-    _ = n(985018);
+    f = n(985018);
 
-function f(e) {
+function _(e) {
     n.g.location.assign(e)
 }
 
 function m(e) {
     let {
         location: t,
-        transitionTo: n = f
+        transitionTo: n = _
     } = e, [s, m] = i.useState("submitting"), A = i.useRef(void 0);
     (0, o.Ay)(() => {
         (0, h.d)("verify_email");
@@ -46,23 +47,23 @@ function m(e) {
         E = i.useCallback(() => {
             p.default.track(g.HAw.VERIFY_ACCOUNT_APP_OPENED, {
                 verifying_user_id: A.current
-            }), (0, u.A)("verify_email")
+            }), (0, d.A)("verify_email")
         }, []);
-    return "failed" === s ? (0, r.jsx)(d.A, {
-        title: _.intl.string(_.t["PCgG3+"]),
-        subtitle: _.intl.string(_.t.tQpeA3),
-        buttonText: _.intl.string(_.t.dKhVQN),
+    return "failed" === s ? (0, r.jsx)(u.A, {
+        title: f.intl.string(f.t["PCgG3+"]),
+        subtitle: f.intl.string(f.t.tQpeA3),
+        buttonText: f.intl.string(f.t.dKhVQN),
         onButtonClick: x
-    }) : "succeeded" === s ? (0, r.jsx)(d.A, {
-        title: _.intl.string(_.t["dAfGb+"]),
-        buttonText: _.intl.string(_.t["uJWIj/"]),
+    }) : "succeeded" === s ? (0, r.jsx)(u.A, {
+        title: f.intl.string(f.t["dAfGb+"]),
+        buttonText: f.intl.string(f.t["uJWIj/"]),
         onButtonClick: E,
         image: (0, r.jsx)(l.bqQ, {
-            alt: _.intl.string(_.t["dAfGb+"])
+            alt: f.intl.string(f.t["dAfGb+"])
         })
-    }) : (0, r.jsx)(d.A, {
-        title: _.intl.string(_.t["0c8+5n"]),
-        subtitle: _.intl.string(_.t.ULTCBE),
+    }) : (0, r.jsx)(u.A, {
+        title: f.intl.string(f.t["0c8+5n"]),
+        subtitle: f.intl.string(f.t.ULTCBE),
         loading: !0
     })
 }

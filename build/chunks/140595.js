@@ -21,8 +21,8 @@ n(98919);
 var E = n(652215);
 n.p = (null != (r = window.GLOBAL_ENV.STATIC_ENDPOINT) ? r : "") + window.GLOBAL_ENV.PUBLIC_PATH, !0 === window.__METICULOUS_ENABLED && n.e("92885").then(n.bind(n, 534164)).then(e => e.init()), (null == (i = window.Meticulous) ? void 0 : i.isRunningAsTest) === !0 && n.e("42160").then(n.bind(n, 588019)).then(e => e.init()), (0, u.Zs)(f.A), (0, s.l)(o, p.A), c.Ay.Emitter.injectBatchEmitChanges(l.r), c.Ay.PersistedStore.disableWrites = __OVERLAY__, c.Ay.initialize(), n.e("65430").then(n.t.bind(n, 306613, 19));
 let y = window.GLOBAL_ENV.RELEASE_CHANNEL,
-    b = "490005",
-    O = "184fedb27d29de3b2d1b914994df4527755a1777";
+    b = "490029",
+    O = "6eff3fdf0ae393bbff154a13ddeaa41501577b91";
 new g.A().log("[BUILD INFO] Release Channel: ".concat(y, ", Build Number: ").concat(b, ", Version Hash: ").concat(O)), a.A.setTags({
     appContext: E.QCW
 }), _.A.initBasic(), h.A.init(), d.oPN.init(), m.Ts()

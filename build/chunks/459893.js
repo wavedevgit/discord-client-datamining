@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 459893, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => A
 }), n(896048), n(747238), n(492834);
@@ -10,13 +11,13 @@ var r = n(627968),
     a = n(311907),
     o = n(830215),
     c = n(6981),
-    d = n(964486),
-    u = n(351671),
+    u = n(964486),
+    d = n(351671),
     h = n(463347),
     p = n(976860),
     g = n(961350),
-    _ = n(129851),
-    f = n(652215),
+    f = n(129851),
+    _ = n(652215),
     m = n(746080);
 
 function A(e) {
@@ -24,7 +25,7 @@ function A(e) {
     let A = i.useCallback(t => {
             var n, r;
             let i; + ((null == (i = (0, l.B6)(t, {
-                path: f.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
+                path: _.BVt.CHANNEL(h.pv.guildId(), h.pv.channelId())
             })) || null == (n = i.params) ? void 0 : n.channelId) !== m.VV.ROLE_SUBSCRIPTIONS) ? (null != (r = e.transitionTo) ? r : p.pX)(t) : p.bG(t)
         }, [e.transitionTo]),
         {
@@ -36,11 +37,11 @@ function A(e) {
         })),
         {
             location: v,
-            redirectTo: b
+            redirectTo: y
         } = e,
-        [y, j] = i.useState(x);
+        [b, j] = i.useState(x);
 
-    function I(e) {
+    function O(e) {
         let {
             handoffKey: t,
             handoffToken: n,
@@ -52,28 +53,28 @@ function A(e) {
             handoffSource: r
         }), j(!1)
     }
-    return ((0, d.Ay)(() => {
+    return ((0, u.Ay)(() => {
         if (null != v) {
             let {
                 handoff_key: e,
                 handoff_token: t
             } = (0, s.parse)(v.search);
             if (null != e && null != t) {
-                let n = null != b ? (0, u.Q)(b) : void 0;
-                y ? o.A.logout("handoff", null).finally(() => {
-                    I({
+                let n = null != y ? (0, d.Q)(y) : void 0;
+                b ? o.A.logout("handoff", null).finally(() => {
+                    O({
                         handoffKey: e,
                         handoffToken: t,
                         handoffSource: n
                     })
-                }) : I({
+                }) : O({
                     handoffKey: e,
                     handoffToken: t,
                     handoffSource: n
                 })
             }
         }
-    }), y || E === f.aUe.LOGGING_IN) ? (0, r.jsx)(_.Z, {}) : (0, r.jsx)(_.A, (t = function(e) {
+    }), b || E === _.aUe.LOGGING_IN) ? (0, r.jsx)(f.Z, {}) : (0, r.jsx)(f.A, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

@@ -1,5 +1,6 @@
 /** Chunk was on 86142 **/
 /** chunk id: 409934, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     A: () => E
 }), n(747238), n(896048);
@@ -9,13 +10,13 @@ var r, i = n(627968),
     a = n(311907),
     o = n(562465),
     c = n(397927),
-    d = n(210714),
-    u = n(650048),
+    u = n(210714),
+    d = n(650048),
     h = n(860689),
     p = n(396681),
     g = n(854378),
-    _ = n(652215),
-    f = n(985018),
+    f = n(652215),
+    _ = n(985018),
     m = n(473169);
 
 function A(e, t, n) {
@@ -32,7 +33,7 @@ class x extends(r = s.PureComponent) {
         let e = (0, p.A)(this.props.location),
             t = (0, l.parse)(this.props.location.search);
         o.Bo.post({
-            url: _.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
+            url: f.Rsh.DISABLE_SERVER_HIGHLIGHT_NOTIFICATIONS,
             body: {
                 token: e,
                 pixel_uuid: t.hash,
@@ -54,7 +55,7 @@ class x extends(r = s.PureComponent) {
         }, () => this.setState({
             success: !1,
             busy: !1
-        })), (0, d.d)("disable_server_highlight_notifications")
+        })), (0, u.d)("disable_server_highlight_notifications")
     }
     renderBusy() {
         return (0, i.jsx)(g.Ay, {
@@ -71,24 +72,24 @@ class x extends(r = s.PureComponent) {
         return (0, i.jsxs)(g.Ay, {
             children: [(0, i.jsx)(g.hE, {
                 className: m.QB,
-                children: f.intl.string(f.t.Z33eiP)
+                children: _.intl.string(_.t.Z33eiP)
             }), (0, i.jsx)(g.tK, {
-                children: f.intl.format(f.t.NRWtfC, {
+                children: _.intl.format(_.t.NRWtfC, {
                     guildName: n.name
                 })
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(c.Button, {
-                    text: f.intl.string(f.t.fIv16B),
+                    text: _.intl.string(_.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
             }), (0, i.jsx)("div", {
                 className: m.Ot,
                 children: (0, i.jsx)(c.QWc, {
-                    text: f.intl.string(f.t["cGmT/J"]),
+                    text: _.intl.string(_.t["cGmT/J"]),
                     onClick: () => {
-                        t(_.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
+                        t(f.BVt.USER_GUILD_NOTIFICATION_SETTINGS(n.id))
                     }
                 })
             })]
@@ -105,13 +106,13 @@ class x extends(r = s.PureComponent) {
                 className: m.SX
             }), (0, i.jsx)(g.hE, {
                 className: m.QB,
-                children: f.intl.string(f.t.ox9hIS)
+                children: _.intl.string(_.t.ox9hIS)
             }), (0, i.jsx)(g.tK, {
-                children: f.intl.string(f.t["/dcuR5"])
+                children: _.intl.string(_.t["/dcuR5"])
             }), (0, i.jsx)("div", {
                 className: m.eT,
                 children: (0, i.jsx)(c.Button, {
-                    text: f.intl.string(f.t.fIv16B),
+                    text: _.intl.string(_.t.fIv16B),
                     fullWidth: !0,
                     onClick: () => t(e)
                 })
@@ -136,6 +137,6 @@ class x extends(r = s.PureComponent) {
 A(x, "defaultProps", {
     transitionTo: e => n.g.location.assign(e)
 });
-let E = a.Ay.connectStores([u.A], () => ({
-    defaultRoute: u.A.defaultRoute
+let E = a.Ay.connectStores([d.A], () => ({
+    defaultRoute: d.A.defaultRoute
 }))(x)

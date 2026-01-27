@@ -1,10 +1,11 @@
 /** Chunk was on 86142 **/
 /** chunk id: 464477, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
     K7: () => h,
     Os: () => m,
-    V3: () => f,
-    cC: () => _,
+    V3: () => _,
+    cC: () => f,
     d4: () => p,
     tn: () => g
 }), n(927092), n(212978), n(201528), n(393431), n(752391), n(532706), n(42231), n(232424), n(757074), n(949626), n(767709), n(65162), n(747238), n(812715), n(733351);
@@ -42,23 +43,23 @@ function c(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let d = null != (r = null == (i = window) ? void 0 : i.crypto) ? r : null == (s = window) ? void 0 : s.msCrypto,
-    u = "Uint8Array" in window,
-    h = null != d && "getRandomValues" in d && u,
-    p = "PublicKeyCredential" in window && u;
+let u = null != (r = null == (i = window) ? void 0 : i.crypto) ? r : null == (s = window) ? void 0 : s.msCrypto,
+    d = "Uint8Array" in window,
+    h = null != u && "getRandomValues" in u && d,
+    p = "PublicKeyCredential" in window && d;
 
 function g() {
     var e;
-    return e = d.getRandomValues(new Uint8Array(20)), l.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
+    return e = u.getRandomValues(new Uint8Array(20)), l.encode(e).toString("utf8").replace(/=/g, "").toLowerCase().replace(/(\w{4})/g, "$1 ").trim()
 }
 
-function _(e) {
+function f(e) {
     return e.replace(/[\s._-]+/g, "").toUpperCase()
 }
 
-function f(e, t) {
+function _(e, t) {
     let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "Discord";
-    return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(_(t), "&issuer=").concat(encodeURIComponent(n))
+    return "otpauth://totp/".concat(encodeURI(n), ":").concat(encodeURI(e), "?secret=").concat(f(t), "&issuer=").concat(encodeURIComponent(n))
 }
 
 function m(e, t) {
