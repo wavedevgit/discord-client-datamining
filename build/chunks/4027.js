@@ -59,7 +59,7 @@ let A = (0, o.A)((0, a.A)(function(e) {
         })
     }) : null;
     return null == t || t.isManaged() ? null : (0, r.jsxs)(i.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated-auto": !0,
         navId: "gdm-context",
         "aria-label": j.intl.string(j.t.Xm41aV),
         onClose: l.Z_,

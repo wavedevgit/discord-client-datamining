@@ -1,16 +1,15 @@
-/** Chunk was on 92750 **/
+/** Chunk was on 33818 **/
 /** chunk id: 718676, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => i
+    A: () => o
 });
-var s = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(397927),
-    a = n(644230);
-let i = () => (0, s.jsx)("div", {
-    className: a._,
-    children: (0, s.jsx)(r.nvX, {
+var l = n(397927),
+    i = n(644230);
+let o = () => (0, r.jsx)("div", {
+    className: i._,
+    children: (0, r.jsx)(l.nvX, {
         dotRadius: 4,
         themed: !0
     })

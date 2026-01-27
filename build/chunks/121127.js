@@ -4,8 +4,8 @@ n.d(t, {
     A: () => h
 });
 var l = n(627968),
-    i = n(64700),
-    r = n(311907),
+    r = n(64700),
+    i = n(311907),
     a = n(397927),
     o = n(73153),
     s = n(706752),
@@ -31,7 +31,7 @@ function h(e) {
         location: j,
         onAction: x,
         appContext: S
-    } = e, M = i.useContext(p.AnalyticsContext), D = (0, u.aL)(), C = (0, r.bG)([m.A], () => null != h ? h : m.A.getChannelId(n, !0), [h, n]), I = (0, r.bG)([f.Ay], () => null == n ? null : f.Ay.getMember(n, t), [n, t]), P = (0, d.q)(n);
+    } = e, M = r.useContext(p.AnalyticsContext), D = (0, u.aL)(), C = (0, i.bG)([m.A], () => null != h ? h : m.A.getChannelId(n, !0), [h, n]), I = (0, i.bG)([f.Ay], () => null == n ? null : f.Ay.getMember(n, t), [n, t]), P = (0, d.q)(n);
     return null != n && null != I && P ? (0, l.jsx)(a.Drp, {
         id: "mod-view",
         label: E.intl.string(E.t.kj3tz2),

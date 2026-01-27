@@ -22,9 +22,9 @@ var i = n(503698),
     m = n(307731),
     O = n(985018),
     v = n(852620);
-let j = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
+let h = ["slight_smile", "frowning", "smile", "stuck_out_tongue", "wink"];
 
-function h(e) {
+function j(e) {
     let {
         emoji: t,
         isFocused: n
@@ -64,7 +64,7 @@ function h(e) {
 function E(e, t) {
     let n = (0, s.D6)(t.guild_id).filter(e => {
         var n;
-        return !(e.useSpriteSheet && j.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.Ay.isEmojiPremiumLocked({
+        return !(e.useSpriteSheet && h.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.Ay.isEmojiPremiumLocked({
             emoji: e,
             channel: t,
             intention: m.b_.REACTION
@@ -83,7 +83,7 @@ function E(e, t) {
                     let {
                         isFocused: t
                     } = e;
-                    return (0, r.jsx)(h, {
+                    return (0, r.jsx)(j, {
                         emoji: n,
                         isFocused: t
                     })

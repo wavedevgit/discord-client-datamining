@@ -16,7 +16,7 @@ function a(e) {
         onClose: s
     } = e;
     return (0, r.jsx)(l.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated-auto": !0,
         navId: "global-discovery-tabs-overflow-menu",
         "aria-label": i.intl.string(i.t.riPnr0),
         hideScroller: !0,
@@ -32,6 +32,10 @@ function a(e) {
                     id: t,
                     label: i,
                     icon: t === n ? l.yr3 : void 0,
+                    leadingAccessory: t === n ? {
+                        type: "icon",
+                        icon: l.yr3
+                    } : void 0,
                     action: () => a(t)
                 }, t)
             })

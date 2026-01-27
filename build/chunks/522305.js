@@ -2,27 +2,32 @@
 /** chunk id: 522305, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Q: () => a
+    Q: () => o
 });
 var r = n(308528),
-    i = n(956549);
-async function a(e) {
+    i = n(956549),
+    a = n(859007);
+async function o(e) {
     let {
         appId: t,
         botId: n,
-        analyticsLocations: a,
-        customId: o,
-        referrerId: s,
-        commandOrigin: l
-    } = e, c = await r.A.openPrivateChannel({
+        analyticsLocations: o,
+        customId: s,
+        referrerId: l,
+        commandOrigin: c
+    } = e;
+    if ((0, a.y)({
+            applicationId: t
+        })) return Promise.resolve(!0);
+    let u = await r.A.openPrivateChannel({
         recipientIds: n
     });
     return await (0, i.A)({
         targetApplicationId: t,
-        channelId: c,
-        analyticsLocations: a,
-        customId: o,
-        referrerId: s,
-        commandOrigin: l
+        channelId: u,
+        analyticsLocations: o,
+        customId: s,
+        referrerId: l,
+        commandOrigin: c
     })
 }

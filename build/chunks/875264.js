@@ -27,9 +27,9 @@ var i = n(627968),
     _ = n(761437),
     N = n(652215),
     w = n(985018),
-    T = n(874090);
+    E = n(874090);
 
-function E(e, t) {
+function T(e, t) {
     switch (e) {
         case N.wLn.APPLICATION:
             var n;
@@ -246,22 +246,22 @@ let C = r.memo(function(e) {
     return (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(p.A, {
             align: p.A.Align.CENTER,
-            className: T.jD,
+            className: E.jD,
             children: t === N.wLn.OVERVIEW ? (0, i.jsx)(o.Heading, {
                 variant: "heading-lg/semibold",
-                children: E(N.wLn.OVERVIEW)
+                children: T(N.wLn.OVERVIEW)
             }) : (0, i.jsx)(o.BIu, {
                 activeId: t.toString(),
                 breadcrumbs: [N.wLn.OVERVIEW, t].map(e => ({
                     id: e.toString(),
-                    label: E(e, q[V])
+                    label: T(e, q[V])
                 })),
                 onBreadcrumbClick: e => {
                     t !== parseInt(e.id) && Y(parseInt(e.id))
                 },
                 renderCustomBreadcrumb: (e, t) => (0, i.jsx)(o.Heading, {
                     variant: "heading-lg/semibold",
-                    className: t ? T.q3 : T.fd,
+                    className: t ? E.q3 : E.fd,
                     children: e.label
                 })
             })

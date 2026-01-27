@@ -31,7 +31,7 @@ let _ = (0, l.A)((0, c.A)(function(e) {
         label: g.intl.string(g.t.gFHI3k)
     }), E = (0, u.A)(n), m = (0, f.A)(n), x = (0, A.Ay)(n), C = (0, h.os)("ReportToModChannelContextMenu");
     return (0, r.jsxs)(i.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated": !0,
         navId: "report-to-mod-channel-context",
         onClose: a.Z_,
         "aria-label": g.intl.string(j.default["zp+z/E"]),

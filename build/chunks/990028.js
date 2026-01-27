@@ -1,7 +1,7 @@
 /** Chunk was on 86901 **/
 /** chunk id: 990028, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => d
 });
 var r = n(627968);
 n(64700);
@@ -11,19 +11,17 @@ var i = n(311907),
     o = n(226698),
     c = n(376708),
     s = n(985018),
-    u = n(641131),
-    d = n(968747);
+    u = n(641131);
 
-function f(e) {
+function d(e) {
     let t = e.isArchivedThread(),
         n = (0, c.uW)(e),
         {
-            firstMessage: f
+            firstMessage: d
         } = (0, i.bG)([a.A], () => a.A.getMessage(e.id), [e.id]);
-    return !n || t || null == f ? null : (0, r.jsx)(l.Drp, {
+    return !n || t || null == d ? null : (0, r.jsx)(l.Drp, {
         id: "resolve-report",
         label: s.intl.string(u.default["8yIKem"]),
-        action: () => o.A.resolveFlag(e.id),
-        className: d.j
+        action: () => o.A.resolveFlag(e.id)
     })
 }

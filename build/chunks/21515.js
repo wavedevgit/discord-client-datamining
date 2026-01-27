@@ -2,20 +2,19 @@
 /** chunk id: 21515, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.r(t), n.d(t, {
-    launchFrame: () => u,
-    refreshProxyTicket: () => _,
-    stopFrame: () => d,
-    updateFrameLayoutMode: () => f,
-    updateFramePanelMode: () => p
+    launchFrame: () => c,
+    refreshProxyTicket: () => p,
+    stopFrame: () => u,
+    updateFrameLayoutMode: () => d,
+    updateFramePanelMode: () => f
 });
 var r = n(73153),
     i = n(795816),
-    a = n(933958),
-    o = n(907645),
-    s = n(574152),
-    l = n(91242),
-    c = n(580954);
-async function u(e) {
+    a = n(907645),
+    o = n(574152),
+    s = n(989451),
+    l = n(448739);
+async function c(e) {
     let {
         applicationId: t
     } = e;
@@ -24,24 +23,15 @@ async function u(e) {
         applicationId: t
     });
     try {
-        let e = await (0, i.D2)(t),
-            n = a.Ay.getCurrentEmbeddedActivity();
-        null != n && (0, s.A)().leaveActivity({
-            location: n.location,
-            applicationId: n.applicationId,
-            showFeedback: !1
-        });
-        let o = l.A.getConnectedFrame();
-        null != o && o.applicationId !== t && (0, c.A)().leaveFrame({
-            applicationId: o.applicationId
-        }), r.h.dispatch({
+        let e = await (0, i.D2)(t);
+        (0, s.a)(), (0, l.Q)(), r.h.dispatch({
             type: "FRAME_LAUNCH",
             applicationId: t,
             proxyTicket: e
         })
     } catch (i) {
-        let e = (0, s.A)(),
-            n = await (0, o.f)(i, t);
+        let e = (0, o.A)(),
+            n = await (0, a.f)(i, t);
         throw e.showLaunchErrorModal(n.message), r.h.dispatch({
             type: "FRAME_LAUNCH_FAIL",
             applicationId: t,
@@ -50,7 +40,7 @@ async function u(e) {
     }
 }
 
-function d(e) {
+function u(e) {
     let {
         applicationId: t
     } = e;
@@ -60,7 +50,7 @@ function d(e) {
     })
 }
 
-function f(e) {
+function d(e) {
     let {
         applicationId: t,
         layoutMode: n
@@ -72,13 +62,13 @@ function f(e) {
     })
 }
 
-function p(e) {
+function f(e) {
     r.h.dispatch({
         type: "FRAME_SET_PANEL_MODE",
         activityPanelMode: e
     })
 }
-async function _(e) {
+async function p(e) {
     let {
         applicationId: t
     } = e;
@@ -95,8 +85,8 @@ async function _(e) {
             proxyTicket: e
         })
     } catch (r) {
-        let e = (0, s.A)(),
-            n = await (0, o.f)(r, t);
+        let e = (0, o.A)(),
+            n = await (0, a.f)(r, t);
         return e.showLaunchErrorModal(n.message), !1
     } finally {
         r.h.dispatch({

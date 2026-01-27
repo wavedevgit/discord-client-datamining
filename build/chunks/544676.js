@@ -17,8 +17,8 @@ var i = n(627968),
     b = n(260509),
     A = n(961350),
     h = n(287809),
-    O = n(346247),
-    y = n(810263),
+    y = n(346247),
+    O = n(810263),
     f = n(911612),
     E = n(664967),
     S = n(834265),
@@ -76,7 +76,7 @@ function w(e) {
         guild: t,
         source: x.PE1.GUILD_CONTEXT_MENU,
         channel: null
-    }), T = (0, L.A)(u), R = (0, _.A)(t), k = (0, j.A)(t), U = (0, m.A)(t), C = (0, O.A)({
+    }), T = (0, L.A)(u), R = (0, _.A)(t), k = (0, j.A)(t), U = (0, m.A)(t), C = (0, y.A)({
         guildId: t.id,
         userId: A.default.getId(),
         analyticsLocation: {
@@ -84,7 +84,7 @@ function w(e) {
             section: x.JJy.CHAT_USERNAME,
             object: x.ZSU.CONTEXT_MENU_ITEM
         }
-    }), V = (0, f.A)(t), B = (0, d.A)(t.id), X = (0, y.A)(t), Y = (0, S.A)(t, {
+    }), V = (0, f.A)(t), B = (0, d.A)(t.id), X = (0, O.A)(t), Y = (0, S.A)(t, {
         section: x.JJy.GUILD_LIST
     }), H = (0, p.A)(t.id), F = (0, N.A)(t.id), W = (0, E.A)(t), J = (0, g.os)("GuildContextMenu"), Q = (0, v.c)(t);
 
@@ -99,7 +99,7 @@ function w(e) {
         })
     }
     return t.features.has(x.GuildFeatures.HUB) ? (0, i.jsxs)(a.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-needs-migration": !0,
         navId: "guild-context",
         onClose: o.Z_,
         "aria-label": D.intl.string(D.t.HpQykc),
@@ -128,7 +128,7 @@ function w(e) {
             children: X
         })]
     }) : (0, i.jsxs)(a.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-needs-migration": !0,
         navId: "guild-context",
         onClose: o.Z_,
         "aria-label": D.intl.string(D.t.HpQykc),

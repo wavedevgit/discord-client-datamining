@@ -1,38 +1,37 @@
-/** Chunk was on 92750 **/
-/** chunk id: 979816, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    XO: () => p,
+/** Chunk was on 59541 **/
+/** chunk id: 979816, original params: t,i,n (module,exports,require) **/
+n.d(i, {
+    XO: () => A,
     hX: () => o,
-    iI: () => u,
-    i_: () => c
+    iI: () => a,
+    i_: () => S
 });
-var s = n(311907),
+var e = n(311907),
     r = n(71393),
-    a = n(576705),
-    i = n(652215);
-let l = function(e) {
-    let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
-        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : a.A,
-        s = t.getGuild(e);
-    return null != s && n.can(i.xBc.MANAGE_GUILD, s)
+    E = n(576705),
+    s = n(652215);
+let l = function(t) {
+    let i = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : r.A,
+        n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : E.A,
+        e = i.getGuild(t);
+    return null != e && n.can(s.xBc.MANAGE_GUILD, e)
 };
 
-function c(e) {
-    return null != e && l(e)
+function S(t) {
+    return null != t && l(t)
 }
 
-function o(e) {
-    return l(e)
+function o(t) {
+    return l(t)
 }
 
-function u(e) {
-    return (0, s.bG)([r.A, a.A], () => l(e, r.A, a.A), [e])
+function a(t) {
+    return (0, e.bG)([r.A, E.A], () => l(t, r.A, E.A), [t])
 }
 
-function p(e) {
-    return (0, s.bG)([r.A], () => {
-        let t = r.A.getGuild(e);
-        return (null == t ? void 0 : t.features.has(i.GuildFeatures.COMMUNITY)) || !1
-    }, [e])
+function A(t) {
+    return (0, e.bG)([r.A], () => {
+        let i = r.A.getGuild(t);
+        return (null == i ? void 0 : i.features.has(s.GuildFeatures.COMMUNITY)) || !1
+    }, [t])
 }

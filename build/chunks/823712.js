@@ -29,7 +29,7 @@ let A = e => {
         onClose: i
     } = e;
     return (0, n.jsx)(d.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated-auto": !0,
         navId: "members-tabs-overflow-menu",
         "aria-label": v.intl.string(v.t.riPnr0),
         hideScroller: !0,
@@ -45,6 +45,10 @@ let A = e => {
                     id: t,
                     label: i,
                     icon: t === l ? d.yr3 : void 0,
+                    leadingAccessory: t === l ? {
+                        type: "icon",
+                        icon: d.yr3
+                    } : void 0,
                     action: () => r(t)
                 }, t)
             })

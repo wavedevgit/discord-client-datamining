@@ -19,7 +19,7 @@ let d = l.memo(function(e) {
         onClose: a
     } = e;
     return (0, r.jsx)(i.W1t, {
-        "data-menu-needs-migration": !0,
+        "data-menu-migrated-auto": !0,
         navId: "widget-game-tags",
         "aria-label": c.intl.string(c.t.r6EJOu),
         onClose: a,

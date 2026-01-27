@@ -1,15 +1,14 @@
-/** Chunk was on 92750 **/
-/** chunk id: 147087, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    b: () => a
+/** Chunk was on 88974 **/
+/** chunk id: 147087, original params: t,n,i (module,exports,require) **/
+i.d(n, {
+    b: () => l
 });
-var s = n(311907),
-    r = n(287809);
+var e = i(311907),
+    r = i(287809);
 
-function a() {
-    return (0, s.bG)([r.default], () => {
-        var e, t;
-        return null != (e = null == (t = r.default.getCurrentUser()) ? void 0 : t.isStaff()) && e
+function l() {
+    return (0, e.bG)([r.default], () => {
+        var t, n;
+        return null != (t = null == (n = r.default.getCurrentUser()) ? void 0 : n.isStaff()) && t
     })
 }

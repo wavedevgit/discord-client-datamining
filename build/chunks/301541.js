@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var i = n(311907),
-    r = n(397927),
+var r = n(311907),
+    i = n(397927),
     a = n(308528),
     o = n(267102),
     s = n(474397),
@@ -16,13 +16,13 @@ var i = n(311907),
 
 function A(e, t, n) {
     let A = (0, o.aL)();
-    return (0, i.bG)([d.default], () => d.default.getId() === e) || t === u.BRT.POPOUT ? null : (0, l.jsx)(r.Drp, {
+    return (0, r.bG)([d.default], () => d.default.getId() === e) || t === u.BRT.POPOUT ? null : (0, l.jsx)(i.Drp, {
         id: "message-user",
         label: c.intl.string(c.t.OAJQlP),
         action: () => {
             (0, s.A)(t, !0), a.A.openPrivateChannel({
                 recipientIds: e
-            }), A.dispatch(u.jej.POPOUT_CLOSE), (0, r.s7G)()
+            }), A.dispatch(u.jej.POPOUT_CLOSE), (0, i.s7G)()
         },
         icon: n,
         leadingAccessory: null != n ? {

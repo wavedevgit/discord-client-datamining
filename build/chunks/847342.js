@@ -1,7 +1,7 @@
 /** Chunk was on 95336 **/
 /** chunk id: 847342, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    default: () => m
+    default: () => g
 });
 var l = t(627968);
 t(64700);
@@ -9,48 +9,48 @@ var i = t(621466),
     r = t(397927),
     s = t(442433),
     c = t(50268),
-    d = t(373963),
-    a = t(777933),
+    a = t(373963),
+    d = t(777933),
     o = t(826308),
-    h = t(345254),
-    u = t(483768),
+    u = t(345254),
+    h = t(483768),
     p = t(20883),
     _ = t(979766),
     f = t(985018);
 
-function m(e) {
+function g(e) {
     var n;
-    let t, m, A, {
-            channel: b,
-            message: g,
+    let t, g, m, {
+            channel: A,
+            message: b,
             target: x,
             attachment: v,
             onSelect: j
         } = e,
         k = x;
-    if (null != v) m = t = v.url;
+    if (null != v) g = t = v.url;
     else
         for (;
-            (0, i.vq)(k);)(0, i.vq)(k, HTMLImageElement) && null != k.src && (m = k.src), (0, i.vq)(k, HTMLAnchorElement) && null != k.href && (t = k.href, A = k.textContent), k = k.parentNode;
+            (0, i.vq)(k);)(0, i.vq)(k, HTMLImageElement) && null != k.src && (g = k.src), (0, i.vq)(k, HTMLAnchorElement) && null != k.href && (t = k.href, m = k.textContent), k = k.parentNode;
     let V = null == (n = document.getSelection()) ? void 0 : n.toString(),
-        C = (0, d.A)(V),
+        C = (0, a.A)(V),
         X = (0, o.A)(V),
-        w = (0, _.A)(g, b),
-        N = (0, p.A)(g, b),
-        q = (0, h.A)(g, b),
-        H = (0, u.A)(g, b),
-        I = (0, a.A)(null != t ? t : m, A),
+        w = (0, _.A)(b, A),
+        N = (0, p.A)(b, A),
+        q = (0, u.A)(b, A),
+        H = (0, h.A)(b, A),
+        I = (0, d.A)(null != t ? t : g, m),
         M = (0, c.A)({
-            id: g.id,
+            id: b.id,
             label: f.intl.string(f.t.zBoHlf),
-            shiftId: "".concat(g.channel_id, "-").concat(g.id)
+            shiftId: "".concat(b.channel_id, "-").concat(b.id)
         }),
         S = (0, c.A)({
-            id: g.author.id,
+            id: b.author.id,
             label: f.intl.string(f.t.Muw4wm)
         });
     return (0, l.jsxs)(r.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated-auto": !0,
         navId: "message",
         onClose: s.Z_,
         "aria-label": f.intl.string(f.t.ChPNkN),

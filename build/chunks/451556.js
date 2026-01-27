@@ -1,4 +1,4 @@
-/** Chunk was on 41727 **/
+/** Chunk was on 77870 **/
 /** chunk id: 451556, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
@@ -25,7 +25,11 @@ function c(e, t) {
                 contextualGuildId: null != c ? c : void 0,
                 contextualChannelId: null == n ? void 0 : n.id
             }),
-            icon: i.iFK
+            icon: i.iFK,
+            leadingAccessory: {
+                type: "icon",
+                icon: i.iFK
+            }
         })
     })
 }

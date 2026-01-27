@@ -107,7 +107,7 @@ let J = (0, a.A)((0, s.A)(function(e) {
         onHeightUpdate: W
     }), eD = (0, E.A)(n, s), eI = n.isNonUserBot(), eP = s.isManaged(), ew = null == (t = s.recipients) ? void 0 : t.includes(n.id);
     return (0, i.jsxs)(l.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated": !0,
         navId: "user-context",
         onClose: o.Z_,
         "aria-label": F.intl.string(F.t.liqwPJ),
@@ -124,10 +124,10 @@ let J = (0, a.A)((0, s.A)(function(e) {
                 children: [!eP && eo, eD]
             }), (0, i.jsx)(l.rXV, {
                 children: z && eu
-            }), (0, i.jsxs)(l.rXV, {
-                children: [X && es, X && ea, X && ed, eC, z && ec, eA, eb, eg, z && ef, z && ep, X && eO]
             }), J && (0, i.jsxs)(l.rXV, {
                 children: [ey, ev, ej]
+            }), (0, i.jsxs)(l.rXV, {
+                children: [X && es, X && ea, X && ed, X && eO, eC, z && ec, eA, eb, eg, z && ef, z && ep]
             })]
         }), (0, i.jsx)(l.rXV, {
             children: em

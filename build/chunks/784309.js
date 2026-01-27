@@ -1,7 +1,7 @@
 /** Chunk was on 21968 **/
 /** chunk id: 784309, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => T
 }), n(747238), n(896048), n(321073);
 var i = n(627968),
     r = n(64700),
@@ -28,7 +28,7 @@ var i = n(627968),
     N = n(985018),
     w = n(416337);
 
-function T(e, t) {
+function E(e, t) {
     return null != t && /^data:/.test(t) ? t : (0, j.ku)({
         id: e.id,
         avatar: t,
@@ -36,19 +36,19 @@ function T(e, t) {
     })
 }
 
-function E(e) {
+function T(e) {
     let {
         id: t,
         webhook: n,
         editedWebhook: l,
         channelOptions: j,
-        isExpanded: E,
+        isExpanded: T,
         isNew: C,
         errors: S,
         onToggleExpand: I
     } = e, [P, k] = r.useState(!1), [R] = r.useState(new o.Ep);
     r.useEffect(() => () => R.stop(), [R]);
-    let L = r.useMemo(() => T(n, n.avatar), [n]),
+    let L = r.useMemo(() => E(n, n.avatar), [n]),
         D = r.useCallback(() => {
             let e = "".concat((0, s.TP)(!1)).concat(_.Rsh.WEBHOOK_INTEGRATION(n.id, n.token));
             (0, O.C)(e)
@@ -97,7 +97,7 @@ function E(e) {
         })
     });
     let U = null;
-    return E && null != l && (U = (0, i.jsxs)("div", {
+    return T && null != l && (U = (0, i.jsxs)("div", {
         className: w.rf,
         children: [(0, i.jsx)(u.cGx, {
             className: w.fV
@@ -115,7 +115,7 @@ function E(e) {
                                 avatar: e
                             })
                         },
-                        makeURL: e => T(n, e),
+                        makeURL: e => E(n, e),
                         imageClassName: w.mr,
                         showIcon: !0
                     }), null != S.avatar && "" !== S.avatar ? (0, i.jsx)(u.Text, {
@@ -206,7 +206,7 @@ function E(e) {
             direction: b.A.Direction.VERTICAL,
             children: [(0, i.jsx)(u.DUT, {
                 className: w.wx,
-                "aria-expanded": E,
+                "aria-expanded": T,
                 onClick: I,
                 children: (0, i.jsxs)(b.A, {
                     align: b.A.Align.CENTER,
@@ -216,7 +216,7 @@ function E(e) {
                         details: G
                     }), (0, i.jsx)(x.A, {
                         className: w.eO,
-                        expanded: E,
+                        expanded: T,
                         "aria-hidden": !0
                     })]
                 })

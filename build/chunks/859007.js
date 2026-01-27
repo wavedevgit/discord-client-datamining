@@ -2,26 +2,17 @@
 /** chunk id: 859007, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    y: () => l
+    y: () => o
 });
 var r = n(587895),
     i = n(625180),
-    a = n(91242),
-    o = n(207371),
-    s = n(580954);
+    a = n(207371);
 
-function l(e) {
+function o(e) {
     let {
-        applicationId: t,
-        leavesCurrentFrame: n = !0
-    } = e, l = r.A.getApplication(t), c = null != l && (0, o.x)(l);
-    if (n) {
-        let e = a.A.getConnectedFrame();
-        null != e && (0, s.A)().leaveFrame({
-            applicationId: e.applicationId
-        })
-    }
-    return !!c && (i.A.launchFrame({
+        applicationId: t
+    } = e, n = r.A.getApplication(t);
+    return !!(null != n && (0, a.x)(n)) && (i.A.launchFrame({
         applicationId: t
     }), !0)
 }

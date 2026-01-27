@@ -5,8 +5,8 @@ n.d(t, {
 });
 var l = n(627968);
 n(64700);
-var i = n(311907),
-    r = n(397927),
+var r = n(311907),
+    i = n(397927),
     a = n(827343),
     o = n(430452),
     s = n(287809),
@@ -19,15 +19,15 @@ function b(e) {
     var t;
     let n = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : c.x.DEFAULT,
         b = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : void 0,
-        g = (0, i.bG)([o.A], () => o.A.getLocalVolume(e, n), [e, n]),
+        g = (0, r.bG)([o.A], () => o.A.getLocalVolume(e, n), [e, n]),
         f = e === (null == (t = s.default.getCurrentUser()) ? void 0 : t.id),
         m = n === c.x.STREAM;
-    return f ? null : (0, l.jsx)(r.aK1, {
+    return f ? null : (0, l.jsx)(i.aK1, {
         id: "user-volume",
         label: m ? A.intl.string(A.t.t4JBnI) : A.intl.string(A.t.m7TNdF),
-        control: (t, i) => {
+        control: (t, r) => {
             var o, s;
-            return (0, l.jsx)(r.i42, (o = function(e) {
+            return (0, l.jsx)(i.i42, (o = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
                         l = Object.keys(n);
@@ -45,7 +45,7 @@ function b(e) {
                 }
                 return e
             }({}, t), s = s = {
-                ref: i,
+                ref: r,
                 value: (0, d.M)(g),
                 maxValue: u.isPlatformEmbedded ? 200 : 100,
                 onChange: t => {

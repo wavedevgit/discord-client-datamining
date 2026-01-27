@@ -24,8 +24,8 @@ var r = n(627968),
     v = n(161918),
     C = n(790297),
     A = n(338769),
-    x = n(841702),
-    S = n(716633),
+    S = n(841702),
+    x = n(716633),
     O = n(621653),
     y = n(983545),
     j = n(365491),
@@ -75,13 +75,13 @@ let G = e => {
             {
                 categories: V,
                 refreshCategories: K
-            } = (0, x.Ay)({
+            } = (0, S.Ay)({
                 logPerf: !0
             }, {
                 sessionId: n,
                 tab: z
             }),
-            W = (0, S.x)(V),
+            W = (0, x.x)(V),
             [Y, q] = l.useState(),
             Z = (0, o.bG)([E.A], () => {
                 var e;

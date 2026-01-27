@@ -218,7 +218,7 @@ let T = new h.A("EmojiStudio"),
                                 closePopout: t
                             } = e;
                             return (0, l.jsx)(o.W1t, {
-                                "data-menu-mixed": !0,
+                                "data-menu-migrated-auto": !0,
                                 navId: "emoji-studio-context-menu",
                                 onClose: t,
                                 onSelect: t,

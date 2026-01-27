@@ -24,8 +24,8 @@ var r = n(627968),
     v = n(998694),
     C = n(438166),
     A = n(652215),
-    x = n(695865);
-let S = {
+    S = n(695865);
+let x = {
     flattenProductVariants: !0
 };
 
@@ -93,14 +93,14 @@ function O(e) {
         }), F((e - 1) * z)
     }, [y, z, F]);
     return (0, r.jsxs)(h.v3.Provider, {
-        value: S,
+        value: x,
         children: [(0, r.jsxs)("div", {
             className: a()({
-                [x.oE]: Y
+                [S.oE]: Y
             }),
             children: [Y && (0, r.jsx)(C.A, {}), (0, r.jsxs)("div", {
-                className: a()(x.ZE, {
-                    [x.Kp]: V
+                className: a()(S.ZE, {
+                    [S.Kp]: V
                 }),
                 ref: G,
                 children: [W && [...Array(z)].map((e, t) => (0, r.jsx)(E.A, {}, t)), !W && H.map((e, t) => null == g.A.getCategory(e.categorySkuId) ? null : (0, r.jsx)(d.R9, {
@@ -114,7 +114,7 @@ function O(e) {
                 }, e.skuId))]
             })]
         }), R > z && (0, r.jsx)("div", {
-            className: x.Ej,
+            className: S.Ej,
             children: (0, r.jsx)("div", {
                 children: (0, r.jsx)(o.mgR, {
                     currentPage: N,

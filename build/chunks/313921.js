@@ -18,8 +18,8 @@ var r = n(627968),
     b = n(576705),
     y = n(723702),
     O = n(837921),
-    w = n(102597),
-    g = n(629788),
+    g = n(102597),
+    w = n(629788),
     v = n(980504),
     m = n(652215),
     h = n(985018);
@@ -85,7 +85,7 @@ let j = (0, d.A)((0, s.A)(function(t) {
             soundId: e
         } = t, n = o.useCallback(async () => {
             try {
-                let t = (0, w.A)(e),
+                let t = (0, g.A)(e),
                     n = await fetch(t),
                     r = await n.blob(),
                     o = function(t) {
@@ -114,12 +114,12 @@ let j = (0, d.A)((0, s.A)(function(t) {
             label: h.intl.string(h.t["/fzLLK"]),
             action: n
         }, "download-soundboard-sound")
-    }(s), S = (0, g.A)(s, d), A = (0, p.A)({
+    }(s), S = (0, w.A)(s, d), A = (0, p.A)({
         id: s.soundId,
         label: h.intl.string(h.t.HJikXp)
     });
     return (0, r.jsx)(c.W1t, {
-        "data-menu-mixed": !0,
+        "data-menu-migrated": !0,
         navId: "sound-button-context",
         onClose: l.Z_,
         "aria-label": h.intl.string(h.t.liqwPJ),

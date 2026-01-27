@@ -1,9 +1,9 @@
 /** Chunk was on 19418 **/
-/** chunk id: 494713, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 494713, original params: e,n,t (module,exports,require) **/
+t.d(n, {
     A: () => i
 });
-let i = (0, n(600975).C)({
+let i = (0, t(600975).C)({
     kind: "user",
     id: "2024-09_friends_in_server",
     label: "Friends in Server",
