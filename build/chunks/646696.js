@@ -8,10 +8,10 @@ var r = n(439372),
     i = n(183636),
     a = n(927813),
     o = n(67486),
-    s = n(829219),
-    l = n(859703),
-    c = n(341915),
-    u = n(245853),
+    s = n(723702),
+    l = n(829219),
+    c = n(859703),
+    u = n(341915),
     d = n(51935),
     f = n(302654),
     p = n(677402),
@@ -34,15 +34,13 @@ class O extends r.A {
     _fetch(e) {
         if (!(0, p.s)({
                 location: _.rE.QUESTS_MANAGER
-            }) || l.A.isFetchingCurrentQuests || (0, o.I)() || ((0, s.N1)(), u.Bw.getConfig({
-                location: _.rE.QUESTS_MANAGER
-            }).enabled && "focused" !== i.A.getState())) return;
+            }) || c.A.isFetchingCurrentQuests || (0, o.I)() || ((0, l.N1)(), (0, s.isMac)() && "focused" !== i.A.getState())) return;
         let {
             enableNewRequestBehavior: t
         } = f.A.getConfig({
             location: "QuestFetchManager"
         });
-        t || (0, s.r8)(c.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
+        t || (0, l.r8)(u.yW.DESKTOP_ACCOUNT_PANEL_AREA, e)
     }
     constructor(...e) {
         super(...e), h(this, "instantiatedAt", Date.now()), h(this, "initialFetchTimerId", null), h(this, "recurringFetchTimerId", null), h(this, "lastFetchAttemptedAt", 0), h(this, "lastFetchedQuestForLocaleChangeAt", 0), h(this, "handleQuestsFetchCurrentQuestsBegin", () => {
@@ -56,10 +54,10 @@ class O extends r.A {
             }, g);
             let t = Math.floor(Math.random() * E);
             this.initialFetchTimerId = window.setTimeout(() => {
-                !(Date.now() - t < l.A.lastFetchedCurrentQuests) && (e || 0 === l.A.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")
+                !(Date.now() - t < c.A.lastFetchedCurrentQuests) && (e || 0 === c.A.lastFetchedCurrentQuests) && this._fetch("post_connect_initial")
             }, t)
         }), h(this, "handleRunningGamesChange", () => {
-            this.instantiatedAt + b > Date.now() || l.A.lastFetchedCurrentQuests + b > Date.now() || this._fetch("running_games")
+            this.instantiatedAt + b > Date.now() || c.A.lastFetchedCurrentQuests + b > Date.now() || this._fetch("running_games")
         }), h(this, "handleUserSettingsProtoUpdate", e => {
             let {
                 partial: t,

@@ -2,18 +2,21 @@
 /** chunk id: 604238, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E: () => d,
-    e: () => f
+    E: () => _,
+    e: () => h
 }), n(896048);
 var r = n(64700),
     i = n(735438),
     a = n(408238),
     o = n(528226),
-    s = n(889634),
-    l = n(219561),
-    c = n(825638),
-    u = n(244190);
-let d = {
+    s = n(304973),
+    l = n(18769),
+    c = n(596395),
+    u = n(245595),
+    d = n(540391),
+    f = n(219561),
+    p = n(244190);
+let _ = {
         ContainedHero: o.A,
         BasicHero: e => {
             let {
@@ -23,19 +26,23 @@ let d = {
         },
         PromotionalHero: () => null,
         InteractiveHScroll: a.A,
-        Grid: s.A,
-        Section: c.A,
-        ShopProductCard: u.A,
-        Stack: l.Kp,
-        Text: l.t,
-        Heading: l.Oo
+        Grid: u.A,
+        Section: d.A,
+        Card: c.A,
+        FeaturedChip: s.A,
+        FeaturedCollection: l.A,
+        FeaturedProduct: () => null,
+        ShopProductCard: p.A,
+        Stack: f.Kp,
+        Text: f.t,
+        Heading: f.Oo
     },
-    f = e => {
+    h = e => {
         let {
             overrides: t
         } = e;
         return r.useMemo(() => {
-            let e = (0, i.cloneDeep)(d);
+            let e = (0, i.cloneDeep)(_);
             if (null != t)
                 for (let [n, r] of Object.entries(t)) null != r && (e[n] = r);
             return e
