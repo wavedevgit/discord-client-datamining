@@ -8,7 +8,6 @@ n.d(t, {
     ME: () => d,
     Sm: () => f,
     Z1: () => o,
-    Zy: () => m,
     oS: () => a
 });
 var r = n(967245),
@@ -93,16 +92,4 @@ function h() {
         autoTrackExposure: !0
     });
     return e
-}
-
-function m(e) {
-    let {
-        hideMonetizatonOnboardingInServerSettings: t
-    } = r.yz.getCurrentConfig({
-        guildId: null != e ? e : i.dJq,
-        location: "e3bb71_12"
-    }, {
-        autoTrackExposure: !1
-    });
-    return t
 }
