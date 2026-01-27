@@ -16,7 +16,7 @@ var n = i(419954),
     S = i(985018);
 let E = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_PERMISSIONS_CATEGORY, {
     useTitle: () => S.intl.string(S.t["y62Z/d"]),
-    useNotice: function() {
+    useInlineNotice: function() {
         let t = (0, u.I)();
         if ((0, r.Tx)() === s.YG) return t
     },

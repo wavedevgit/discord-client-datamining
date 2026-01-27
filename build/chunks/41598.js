@@ -17,7 +17,7 @@ var n = i(419954),
     E = i(985018);
 let _ = (0, n.zZ)(s.X.ACCESSIBILITY_OVERVIEW, {
     useSubnavLabel: () => E.intl.string(E.t.fTNxW7),
-    useNotice: () => ({
+    useInlineNotice: () => ({
         type: l.W.STRONGLY_DISCOURAGED_CUSTOM,
         notice: r.YD
     }),

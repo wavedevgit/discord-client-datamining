@@ -20,7 +20,7 @@ let d = i.memo(function(e) {
         useSubtitle: u,
         layout: _,
         initialize: p,
-        useNotice: m
+        useInlineNotice: m
     } = t, g = null == n ? void 0 : n(), A = null == i ? void 0 : i(), f = null == u ? void 0 : u(), h = null == m ? void 0 : m();
     return (0, a.Z)(p), (0, r.jsxs)(r.Fragment, {
         children: [null != g && (0, r.jsx)(o._, {

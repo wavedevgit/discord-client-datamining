@@ -15,7 +15,7 @@ var n = i(419954),
     d = i(985018);
 let S = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
     useTitle: () => d.intl.string(d.t.xVRG4P),
-    useNotice: function() {
+    useInlineNotice: function() {
         var t;
         let e = (0, r.I)(),
             i = (0, s.aK)(),

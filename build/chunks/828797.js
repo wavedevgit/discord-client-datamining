@@ -20,7 +20,7 @@ var n = i(311907),
     c = i(985018);
 let I = (0, l.zZ)(u.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
     useTitle: () => c.intl.string(c.t.pKSjEj),
-    useNotice: function() {
+    useInlineNotice: function() {
         return (0, n.bG)([r.default], () => {
             var t, e;
             return null != (t = null == (e = r.default.getCurrentUser()) ? void 0 : e.mfaEnabled) && t

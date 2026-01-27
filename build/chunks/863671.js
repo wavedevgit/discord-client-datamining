@@ -21,7 +21,7 @@ let g = (0, u.zZ)(o.X.SESSIONS_CATEGORY, {
         initialize: () => ((0, r.GY)(), () => {
             (0, r.ZQ)()
         }),
-        useNotice: function() {
+        useInlineNotice: function() {
             return n.useMemo(() => ({
                 type: a.W.STRONGLY_DISCOURAGED_CUSTOM,
                 notice: A.jH
