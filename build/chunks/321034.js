@@ -132,6 +132,16 @@ class c extends a.D {
             return null
         }
     }
+    startCPUProfiling(e) {
+        try {
+            return o.Ay.startCPUProfiling(e)
+        } catch (e) {
+            return null
+        }
+    }
+    stopCPUProfiling() {
+        return o.Ay.stopCPUProfiling()
+    }
     enablePAMemoryProfiler(e) {
         try {
             var t;
