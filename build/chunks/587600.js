@@ -6,14 +6,14 @@ n.d(t, {
     Sk: () => a,
     yX: () => i,
     yg: () => s
-}), n(228524);
+}), n(321073), n(228524);
 var r = n(392107);
 
 function i(e) {
     let t = {};
     if (void 0 !== e.pendingBanner && (t.banner = e.pendingBanner), null != e.pendingBio && (t.bio = e.pendingBio), null != e.pendingPronouns && (t.pronouns = e.pendingPronouns), void 0 !== e.pendingAccentColor && (t.accent_color = e.pendingAccentColor), void 0 !== e.pendingThemeColors && (t.theme_colors = e.pendingThemeColors), void 0 !== e.pendingProfileEffect) {
         var n, r;
-        t.profile_effect_sku_id = null != (n = null == (r = e.pendingProfileEffect) ? void 0 : r.skuId) ? n : null
+        t.collectibles_sku_ids = null != (n = t.collectibles_sku_ids) ? n : [], (null == (r = e.pendingProfileEffect) ? void 0 : r.skuId) != null && t.collectibles_sku_ids.push(e.pendingProfileEffect.skuId)
     }
     return t
 }

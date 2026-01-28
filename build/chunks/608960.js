@@ -5,7 +5,7 @@ n.d(t, {
     A: () => c
 }), n(896048);
 var r = n(810531),
-    i = n(952526),
+    i = n(942269),
     a = n(770335);
 
 function o(e, t, n) {
@@ -34,26 +34,28 @@ function s(e, t) {
     };
     return n
 }
-class l extends i.U {
+class l extends i.yW {
+    stateWrapper() {
+        return this.database
+    }
     getGuildEmojis(e) {
-        return this.getNullablePartition(e)
+        return this.database.getNullablePartition(e)
+    }
+    constructor(...e) {
+        super(...e), o(this, "database", this.addKKVDatabase("guild_emojis"))
     }
 }
 o(l, "displayName", "RawGuildEmojiStore");
 let c = new l({
-    LOGOUT: (e, t) => t.reset(),
-    BACKGROUND_SYNC: (e, t) => t.reset(),
+    LOGOUT: (e, t) => t.clear(),
+    BACKGROUND_SYNC: (e, t) => t.clear(),
     CONNECTION_OPEN: (e, t) => {
-        t.reset(t => {
-            for (let n of e.guilds) null != n.emojis.items && (t[n.id] = s(n.id, n.emojis.items))
-        })
+        for (let n of (t.clear(), e.guilds)) null != n.emojis.items && t.setPartition(n.id, s(n.id, n.emojis.items))
     },
     OVERLAY_INITIALIZE: (e, t) => {
-        t.reset(t => {
-            Object.entries(e.emojis).forEach(e => {
-                let [n, r] = e;
-                t[n] = s(n, r)
-            })
+        t.clear(), Object.entries(e.emojis).forEach(e => {
+            let [n, r] = e;
+            t.setPartition(n, s(n, r))
         })
     },
     CACHED_EMOJIS_LOADED: (e, t) => {
