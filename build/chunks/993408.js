@@ -7,7 +7,6 @@ n.d(t, {
     Br: () => v,
     Bs: () => es,
     CE: () => el,
-    Ee: () => ee,
     G0: () => b,
     H1: () => en,
     HF: () => Q,
@@ -26,6 +25,7 @@ n.d(t, {
     hU: () => W,
     l8: () => I,
     oj: () => $,
+    pA: () => ee,
     ps: () => k,
     rr: () => C,
     sz: () => V,
@@ -219,14 +219,19 @@ let b = e => (null == e ? void 0 : e.premiumType) != null,
             paymentSourceId: o,
             selectedSkuId: s,
             skuPricePreviewsById: l,
-            skusById: c,
-            formatPrice: u
-        } = e, d = null != i ? i : null != o && null != s ? null == (t = l[s]) ? void 0 : t[a.B] : null, f = null == d || null == (r = d.invoice_items) || null == (n = r[0]) ? void 0 : n.unit_price, p = null != f ? u(f.amount, f.currency) : void 0;
-        if (null == p && null != s) {
+            skusById: c
+        } = e, u = null != i ? i : null != o && null != s ? null == (t = l[s]) ? void 0 : t[a.B] : null, d = null == u || null == (r = u.invoice_items) || null == (n = r[0]) ? void 0 : n.unit_price, f = null != d ? {
+            amount: d.amount,
+            currency: d.currency
+        } : void 0;
+        if (null == f && null != s) {
             let e = c[s];
-            (null == e ? void 0 : e.price) != null && (p = u(e.price.amount, e.price.currency))
+            (null == e ? void 0 : e.price) != null && (f = {
+                amount: e.price.amount,
+                currency: e.price.currency
+            })
         }
-        return p
+        return f
     },
     et = (h.Yr.KZT, h.Yr.NGN, h.Yr.EGP, (e, t, n) => {
         if (J(e)) return S(e);
