@@ -3,7 +3,7 @@
 "use strict";
 n.d(t, {
     $x: () => l,
-    F2: () => g,
+    F2: () => E,
     G1: () => m,
     P$: () => o,
     PH: () => d,
@@ -12,6 +12,7 @@ n.d(t, {
     e: () => a,
     eg: () => _,
     fG: () => u,
+    oe: () => g,
     pj: () => i,
     ws: () => c,
     yg: () => p,
@@ -35,4 +36,5 @@ var h = function(e) {
     return e.GUILD = "guild", e.CALL = "call", e
 }({});
 let m = r.$.StreamNotificationsGuildMaxSize,
-    g = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"])
+    g = 30,
+    E = new Set(["chrome.exe", "opera.exe", "firefox.exe", "brave.exe", "msedge.exe"])

@@ -24,8 +24,8 @@ var n = r(627968),
     b = r(429432),
     y = r(830012),
     S = r(905552),
-    O = r(688465),
-    A = r(207975),
+    A = r(688465),
+    O = r(207975),
     w = r(502075),
     C = r(765682),
     E = r(191850),
@@ -121,7 +121,7 @@ function M(e) {
         selectedSource: g,
         discordSourceId: S,
         hasPermission: w
-    }] = (0, O.tS)(), {
+    }] = (0, A.tS)(), {
         smarterSourceOrdering: E
     } = (0, b.s)({
         location: "GoLiveSourceGrid"
@@ -130,7 +130,7 @@ function M(e) {
             t = {};
         for (let r of e) null != r.windowHandle && (t[r.windowHandle] = r.exeName);
         return t
-    }), U = (0, d.bG)([m.A], () => m.A.quests), G = (0, A.A)(U, R, r);
+    }), U = (0, d.bG)([m.A], () => m.A.quests), G = (0, O.A)(U, R, r);
     i.useEffect(() => ((0, p.a2)(), p.e0), []);
     let L = i.useMemo(() => E ? [...r].sort((e, t) => T(t, null == G ? void 0 : G.source.id, S, M) - T(e, null == G ? void 0 : G.source.id, S, M)) : r, [G, E, r, S, M]);
     if (j) {
