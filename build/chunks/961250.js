@@ -2,21 +2,23 @@
 /** chunk id: 961250, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => l,
-    t: () => s
+    Ay: () => c,
+    tT: () => l,
+    uM: () => u
 });
 var r = n(562465),
     i = n(73153),
     a = n(895944),
-    o = n(652215);
-async function s() {
+    o = n(26508),
+    s = n(652215);
+async function l() {
     i.h.dispatch({
         type: "PROGRAM_REWARDS_FETCH"
     });
     try {
         var e;
         let t = null != (e = (await r.Bo.get({
-            url: o.Rsh.PROGRAM_REWARDS,
+            url: s.Rsh.PROGRAM_REWARDS,
             rejectWithError: !0
         })).body.rewards) ? e : [];
         i.h.dispatch({
@@ -29,6 +31,9 @@ async function s() {
         })
     }
 }
-async function l() {
-    a.A.shouldFetch() && await s()
+async function c() {
+    a.A.shouldFetch() && await l()
+}
+async function u() {
+    (0, o.T0)("ProgramRewardsActionCreators") && (0, o.mY)() && await l()
 }
