@@ -1,62 +1,62 @@
 /** Chunk was on 87916 **/
 /** chunk id: 515598, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => m
 });
 var a = n(627968);
 n(64700);
 var i = n(311907),
-    l = n(397927),
+    s = n(397927),
     r = n(688810),
-    s = n(503566),
+    l = n(503566),
     o = n(631305),
     c = n(71393),
     d = n(967198),
     u = n(652215),
-    _ = n(874864),
-    A = n(985018),
-    f = n(234518);
+    p = n(874864),
+    _ = n(985018),
+    A = n(234518);
 
-function g(e) {
+function m(e) {
     let {
         analyticsSection: t,
         analyticsPage: n,
-        isGIF: g,
-        banner: m
-    } = e, p = (0, i.bG)([d.A], () => d.A.getGuildId()), x = (0, i.bG)([c.A], () => c.A.getGuild(p)), {
-        analyticsLocations: N
+        isGIF: m,
+        banner: f
+    } = e, g = (0, i.bG)([d.A], () => d.A.getGuildId()), h = (0, i.bG)([c.A], () => c.A.getGuild(g)), {
+        analyticsLocations: x
     } = (0, r.Ay)();
-    return null == x || x.features.has(u.GuildFeatures.ANIMATED_BANNER) || !g && x.features.has(u.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
-        className: f.kL,
-        children: [(0, a.jsx)(l._Jp, {
-            color: l.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
-            className: f.qC
-        }), (0, a.jsx)(l.Text, {
+    return null == h || h.features.has(u.GuildFeatures.ANIMATED_BANNER) || !m && h.features.has(u.GuildFeatures.BANNER) ? null : (0, a.jsxs)("div", {
+        className: A.kL,
+        children: [(0, a.jsx)(s._Jp, {
+            color: s.LU0.unsafe_rawColors.GUILD_BOOSTING_PINK,
+            className: A.qC
+        }), (0, a.jsx)(s.Text, {
             color: "text-strong",
             variant: "text-sm/semibold",
-            children: A.intl.string(A.t["56M7xe"])
+            children: _.intl.string(_.t["56M7xe"])
         }), (0, a.jsx)("div", {
-            className: f.xF,
-            children: (0, a.jsx)(l.QWc, {
-                text: A.intl.string(A.t.WUHdZV),
+            className: A.xF,
+            children: (0, a.jsx)(s.QWc, {
+                text: _.intl.string(_.t.WUHdZV),
                 onClick: () => {
-                    if (null == x) return;
+                    if (null == h) return;
                     let e = {
                         section: t,
                         page: n,
                         object: u.ZSU.UPSELL_HEADER
                     };
-                    null != m ? (0, s._)({
-                        analyticsLocations: N,
+                    null != f ? (0, l._)({
+                        analyticsLocations: x,
                         analyticsLocation: e,
-                        guild: x,
-                        isGIF: g,
-                        banner: m
+                        guild: h,
+                        isGIF: m,
+                        banner: f
                     }) : (0, o.A)({
-                        analyticsLocations: N,
+                        analyticsLocations: x,
                         analyticsSourceLocation: e,
-                        guild: x,
-                        perks: g ? (0, _.Pf)() : (0, _.QR)()
+                        guild: h,
+                        perks: m ? (0, p.Pf)() : (0, p.QR)()
                     })
                 },
                 textVariant: "text-sm/semibold"

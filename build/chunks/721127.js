@@ -6,9 +6,9 @@ n.d(t, {
 var a = n(627968);
 n(64700);
 var i = n(503698),
-    l = n.n(i),
+    s = n.n(i),
     r = n(397927),
-    s = n(404374),
+    l = n(404374),
     o = n(468099);
 
 function c(e) {
@@ -19,13 +19,13 @@ function c(e) {
         reducedRightPadding: c = !1
     } = e;
     return (0, a.jsxs)("div", {
-        className: l()(c ? o.wp : o.Ug, n),
+        className: s()(c ? o.wp : o.Ug, n),
         children: [(0, a.jsxs)("div", {
             className: o.g9,
             children: [(0, a.jsx)(r.tvc, {
                 size: "md",
                 className: o.Kk,
-                color: s.k0.PREMIUM_TIER_2
+                color: l.k0.PREMIUM_TIER_2
             }), (0, a.jsx)(r.Text, {
                 className: o.Qq,
                 variant: "text-md/normal",

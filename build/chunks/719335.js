@@ -1,58 +1,58 @@
 /** Chunk was on 87916 **/
 /** chunk id: 719335, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => N
+    A: () => x
 });
 var a = n(627968),
     i = n(64700),
-    l = n(311907),
+    s = n(311907),
     r = n(421380),
-    s = n(793574),
+    l = n(793574),
     o = n(688810),
     c = n(465794),
     d = n(721127),
     u = n(287809),
-    _ = n(954571),
-    A = n(927578),
-    f = n(652215),
-    g = n(339984),
-    m = n(788868),
-    p = n(985018),
-    x = n(560207);
+    p = n(954571),
+    _ = n(927578),
+    A = n(652215),
+    m = n(339984),
+    f = n(788868),
+    g = n(985018),
+    h = n(560207);
 
-function N(e) {
+function x(e) {
     let {
         analyticsSection: t,
         type: n
-    } = e, N = (0, l.bG)([u.default], () => u.default.getCurrentUser()), b = A.Ay.canUseAnimatedAvatar(N), h = A.Ay.canUsePremiumProfileCustomization(N), y = n === g.HL.BANNER && h || n === g.HL.AVATAR && b, {
-        sourceAnalyticsLocations: E
-    } = (0, o.Ay)(s.A.PREMIUM_PREVIEW_UPSELL_HEADER);
+    } = e, x = (0, s.bG)([u.default], () => u.default.getCurrentUser()), b = _.Ay.canUseAnimatedAvatar(x), N = _.Ay.canUsePremiumProfileCustomization(x), y = n === m.HL.BANNER && N || n === m.HL.AVATAR && b, {
+        sourceAnalyticsLocations: j
+    } = (0, o.Ay)(l.A.PREMIUM_PREVIEW_UPSELL_HEADER);
     if (i.useEffect(() => {
-            y || _.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
+            y || p.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
                 type: t,
-                location_stack: E
+                location_stack: j
             })
-        }, [y, t, E]), y) return null;
-    let R = (0, a.jsx)(c.A, {
-        className: x.__invalid_getNitroLink,
+        }, [y, t, j]), y) return null;
+    let E = (0, a.jsx)(c.A, {
+        className: h.__invalid_getNitroLink,
         size: r.$n.Sizes.SMALL,
         look: r.$n.Looks.LINK,
         color: r.$n.Colors.LINK,
-        subscriptionTier: m.pe.TIER_2,
+        subscriptionTier: f.pe.TIER_2,
         textOptions: {
-            textOverride: p.intl.format(p.t["944tDv"], {})
+            textOverride: g.intl.format(g.t["944tDv"], {})
         },
         showIcon: !1,
         premiumModalAnalyticsLocation: {
             section: t,
-            object: f.ZSU.BUTTON_CTA
+            object: A.ZSU.BUTTON_CTA
         },
         disableShine: !0
     });
     return (0, a.jsx)(d.A, {
         reducedRightPadding: !0,
-        className: x.C,
-        text: p.intl.format(p.t.Og803x, {}),
-        button: R
+        className: h.C,
+        text: g.intl.format(g.t.Og803x, {}),
+        button: E
     })
 }

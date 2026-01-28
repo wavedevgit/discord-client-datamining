@@ -1,49 +1,66 @@
 /** Chunk was on 87916 **/
 /** chunk id: 682503, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    default: () => h
-}), n(896048);
+    default: () => N
+}), n(896048), n(693327), n(554719), n(680155), n(323874), n(14289), n(35956), n(747238);
 var a = n(627968),
     i = n(64700),
-    l = n(503698),
-    r = n.n(l),
-    s = n(732955),
+    s = n(503698),
+    r = n.n(s),
+    l = n(732955),
     o = n(397927),
     c = n(793574),
     d = n(688810),
     u = n(855057),
-    _ = n(702211),
-    A = n(699576),
-    f = n(954571),
-    g = n(504974),
-    m = n(248067),
-    p = n(652215),
-    x = n(339984),
-    N = n(985018),
+    p = n(702211),
+    _ = n(699576),
+    A = n(954571),
+    m = n(504974),
+    f = n(439193),
+    g = n(652215),
+    h = n(339984),
+    x = n(985018),
     b = n(392491);
 
-function h(e) {
+function N(e) {
     let {
         transitionState: t,
-        onClose: l,
-        onComplete: h,
+        onClose: s,
+        onComplete: N,
         uploadType: y,
-        showUpsellHeader: E,
-        analyticsPage: R
-    } = e, [j, v] = i.useState(!1), I = (0, o.k34)(), {
-        analyticsLocations: L,
-        newestAnalyticsLocation: P
+        showUpsellHeader: j,
+        analyticsPage: E
+    } = e, [v, R] = i.useState(!1), L = (0, o.k34)(), {
+        analyticsLocations: I,
+        newestAnalyticsLocation: w
     } = (0, d.Ay)(c.A.GIF_PICKER);
-    async function w(e) {
-        let {
-            gifSrc: t
+    async function P(e) {
+        let t, {
+            gifSrc: i
         } = e;
-        if (null == t || j) return;
-        v(!0);
-        let i = (0, m.g)(t),
-            r = await fetch(i),
-            s = await r.blob();
-        l(), (0, o.mMO)(async () => {
+        if (null == i || v) return;
+        R(!0);
+        let r = (0, f.s)(i),
+            l = await fetch(r),
+            c = await l.blob(),
+            d = "" !== c.type ? c.type : function(e) {
+                var t;
+                switch (null == (t = new URL(e).pathname.split(".").pop()) ? void 0 : t.toLowerCase()) {
+                    case "gif":
+                    default:
+                        return "image/gif";
+                    case "webp":
+                        return "image/webp";
+                    case "png":
+                        return "image/png";
+                    case "jpg":
+                    case "jpeg":
+                        return "image/jpeg"
+                }
+            }(r),
+            u = "jpeg" === (t = d.split("/")[1]) ? ".jpg" : null != t && "" !== t ? ".".concat(t) : ".gif",
+            p = "selected".concat(u);
+        s(), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await Promise.all([n.e("35929"), n.e("74571"), n.e("67449")]).then(n.bind(n, 142630));
@@ -65,58 +82,58 @@ function h(e) {
                 }
                 return e
             }({
-                imageUri: i,
-                file: new File([s], "tenor.gif", {
-                    type: "image/gif"
+                imageUri: r,
+                file: new File([c], p, {
+                    type: d
                 }),
-                onCrop: h,
+                onCrop: N,
                 uploadType: y,
-                showUpsellHeader: E
+                showUpsellHeader: j
             }, t))
         }, {
-            contextKey: I
+            contextKey: L
         })
     }
     i.useEffect(() => {
-        f.default.track(p.HAw.OPEN_MODAL, {
-            type: p.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
-            location_stack: L,
+        A.default.track(g.HAw.OPEN_MODAL, {
+            type: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+            location_stack: I,
             location: {
-                page: R
+                page: E
             }
         })
-    }, [L, R]);
-    let S = y === x.HL.AVATAR || y === x.HL.BANNER,
-        U = (0, _.b)(!S);
+    }, [I, E]);
+    let S = y === h.HL.AVATAR || y === h.HL.BANNER,
+        U = (0, p.b)(!S);
     return (0, a.jsx)(d.f5, {
-        value: L,
-        children: (0, a.jsxs)(s.dWK, {
-            onClose: l,
+        value: I,
+        children: (0, a.jsxs)(l.dWK, {
+            onClose: s,
             transitionState: t,
-            children: [(0, a.jsx)(s.rQ0, {
-                title: N.intl.string(N.t["xsC+/y"])
-            }), E && !U && (0, a.jsx)("div", {
+            children: [(0, a.jsx)(l.rQ0, {
+                title: x.intl.string(x.t["xsC+/y"])
+            }), j && !U && (0, a.jsx)("div", {
                 className: b.It,
-                children: (0, a.jsx)(g.A, {
+                children: (0, a.jsx)(m.A, {
                     type: y,
-                    analyticsPage: R,
-                    analyticsSection: p.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+                    analyticsPage: E,
+                    analyticsSection: g.JJy.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
                     isGIF: !0
                 })
             }), (0, a.jsxs)("div", {
                 className: b.SD,
                 children: [(0, a.jsx)(u.A, {
                     className: r()(b.XC, {
-                        [b.bX]: j
+                        [b.bX]: v
                     }),
-                    onSelectGIF: w,
+                    onSelectGIF: P,
                     headingColor: "text-subtle",
                     hideFavorites: !0
-                }), j && (0, a.jsx)(o.y$y, {
+                }), v && (0, a.jsx)(o.y$y, {
                     className: b.u1
-                }), E && U && (0, a.jsx)(A.A, {
+                }), j && U && (0, a.jsx)(_.A, {
                     uploadType: y,
-                    analyticsSource: P,
+                    analyticsSource: w,
                     showUpsell: !0,
                     className: b.Kt
                 })]
