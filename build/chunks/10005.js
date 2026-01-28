@@ -13,8 +13,8 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [_, p] = r.useState(!1), [m, g] = r.useState(!1), [A, f] = r.useState(!1), [h, b] = r.useState(!1), [E, x] = r.useState(!1), [O, C] = r.useState(!1), I = o || d || _ || m || h || O, T = r.useCallback(async e => {
-        if (!I) {
+    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [_, p] = r.useState(!1), [m, g] = r.useState(!1), [A, f] = r.useState(!1), [h, b] = r.useState(!1), [E, x] = r.useState(!1), [O, C] = r.useState(!1), T = o || d || _ || m || h || O, I = r.useCallback(async e => {
+        if (!T) {
             c(!0);
             try {
                 await (0, l.nt)(e, a.Ef.ACTIVE), null == n || n()
@@ -25,8 +25,8 @@ function o(e) {
                 c(!1)
             }
         }
-    }, [I, t, n]), S = r.useCallback(async e => {
-        if (!I) {
+    }, [T, t, n]), S = r.useCallback(async e => {
+        if (!T) {
             u(!0);
             try {
                 await (0, l.nt)(e, a.Ef.DECLINED), null == n || n()
@@ -37,8 +37,8 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [I, t, n]), j = r.useCallback(async e => {
-        if (!I) {
+    }, [T, t, n]), j = r.useCallback(async e => {
+        if (!T) {
             p(!0);
             try {
                 await (0, l.nt)(e, a.Ef.INACTIVE), null == n || n()
@@ -49,8 +49,8 @@ function o(e) {
                 p(!1)
             }
         }
-    }, [I, t, n]), v = r.useCallback(async e => {
-        if (!I) {
+    }, [T, t, n]), v = r.useCallback(async e => {
+        if (!T) {
             g(!0);
             try {
                 await (0, l.e$)(e), null == n || n()
@@ -61,7 +61,7 @@ function o(e) {
                 g(!1)
             }
         }
-    }, [I, t, n]), N = r.useCallback(async () => {
+    }, [T, t, n]), N = r.useCallback(async () => {
         if (!A) {
             f(!0);
             try {
@@ -87,7 +87,7 @@ function o(e) {
         }
     }, [E, t, n]);
     return {
-        acceptLinkRequest: T,
+        acceptLinkRequest: I,
         declineLinkRequest: S,
         disconnectLinkRequest: j,
         cancelLinkRequest: v,

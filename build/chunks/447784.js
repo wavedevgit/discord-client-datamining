@@ -1,10 +1,10 @@
 /** Chunk was on 2824 **/
 /** chunk id: 447784, original params: e,n,t (module,exports,require) **/
 t.d(n, {
-    k: () => E
+    k: () => j
 });
-var l = t(627968),
-    r = t(64700),
+var r = t(627968),
+    l = t(64700),
     i = t(503698),
     s = t.n(i),
     a = t(575593),
@@ -16,73 +16,73 @@ var l = t(627968),
     m = t(929283),
     g = t(761365),
     f = t(985018),
-    j = t(836314);
-let E = e => {
+    E = t(836314);
+let j = e => {
     var n;
     let t, i, {
-            skuId: E,
+            skuId: j,
             user: x,
             claimed: h,
             onSelect: T,
             selectedSkuId: P
         } = e,
-        S = r.useRef(null),
+        S = l.useRef(null),
         {
-            isHoveringOrFocusing: b
+            isHoveringOrFocusing: A
         } = (0, u.A)(S),
-        A = !h && b,
+        b = !h && A,
         {
             product: y
-        } = (0, c.q)(E);
+        } = (0, c.q)(j);
     if (null == y) return null;
-    let v = y.items[0];
-    return null == v ? null : ((0, d.T)(v) ? (i = a.R.AVATAR_DECORATION, t = (0, l.jsx)(m.i, {
-        item: v,
+    let I = y.items[0];
+    return null == I ? null : ((0, d.T)(I) ? (i = a.R.AVATAR_DECORATION, t = (0, r.jsx)(m.i, {
+        item: I,
         user: x,
-        isHighlighted: A,
+        isHighlighted: b,
         avatarSize: o._3J.SIZE_96
-    })) : (0, p.F)(v) && (i = a.R.NAMEPLATE, t = (0, l.jsx)(g.A, {
-        nameplate: v,
+    })) : (0, p.F)(I) && (i = a.R.NAMEPLATE, t = (0, r.jsx)(g.A, {
+        nameplate: I,
         user: x,
-        isHighlighted: A,
+        isHighlighted: b,
         size: "small"
-    })), (0, l.jsx)(o.vN3, {
-        children: (0, l.jsxs)(o.sqX, {
+    })), (0, r.jsx)(o.vN3, {
+        children: (0, r.jsxs)(o.sqX, {
             ref: S,
             "aria-label": null != (n = y.name) ? n : "",
             onClick: () => {
-                null == E || null == T || h || T(E)
+                null == j || null == T || h || T(j)
             },
-            className: s()(j._x, {
-                [j.Vp]: !h,
-                [j.mr]: A,
-                [j.md]: P === E
+            className: s()(E._x, {
+                [E.Vp]: !h,
+                [E.mr]: b,
+                [E.md]: P === j
             }),
-            children: [(0, l.jsx)("div", {
-                className: s()(j.VH, {
-                    [j._Q]: i === a.R.AVATAR_DECORATION,
-                    [j.M4]: i === a.R.NAMEPLATE
+            children: [(0, r.jsx)("div", {
+                className: s()(E.VH, {
+                    [E._Q]: i === a.R.AVATAR_DECORATION,
+                    [E.M4]: i === a.R.NAMEPLATE
                 }),
-                children: null != t ? (0, l.jsxs)(l.Fragment, {
-                    children: [(0, l.jsx)("div", {
-                        className: s()(j.i1, {
-                            [j.Sf]: h
+                children: null != t ? (0, r.jsxs)(r.Fragment, {
+                    children: [(0, r.jsx)("div", {
+                        className: s()(E.i1, {
+                            [E.Sf]: h
                         }),
                         children: t
-                    }), h && (0, l.jsx)(o.rOg, {
+                    }), h && (0, r.jsx)(o.rOg, {
                         size: "custom",
                         width: 48,
                         height: 48,
                         color: o.LU0.colors.INTERACTIVE_TEXT_ACTIVE,
-                        className: j.j0
+                        className: E.j0
                     })]
                 }) : null
-            }), (0, l.jsxs)("div", {
-                className: j.tZ,
-                children: [(0, l.jsx)(o.Heading, {
+            }), (0, r.jsxs)("div", {
+                className: E.tZ,
+                children: [(0, r.jsx)(o.Heading, {
                     variant: "heading-md/extrabold",
                     children: y.name
-                }), (0, l.jsx)(o.Text, {
+                }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     children: h ? f.intl.string(f.t["6cfuDj"]) : f.intl.string(f.t.QQsaCc)
                 })]

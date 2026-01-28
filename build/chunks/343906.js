@@ -25,8 +25,8 @@ var r = n(627968),
     x = n(153739),
     O = n(834981),
     C = n(607822),
-    I = n(254847),
-    T = n(436805),
+    T = n(254847),
+    I = n(436805),
     S = n(773349),
     j = n(283900),
     v = n(475833),
@@ -105,12 +105,12 @@ function G(e) {
                     subText: t
                 }, n.event_id)
             }
-            if ((0, g.Is)(n)) return (0, r.jsx)(I.A, {
+            if ((0, g.Is)(n)) return (0, r.jsx)(T.A, {
                 guildId: n.entity_id
             }, n.event_id);
             if ((0, g.u7)(n)) {
                 let e = m.A.getPurchaseInfo(n.entity_id);
-                return null == e ? null : (0, r.jsx)(T.A, {
+                return null == e ? null : (0, r.jsx)(I.A, {
                     skuId: e.sku_id,
                     subscriptionPlanId: e.subscription_plan_id,
                     total: e.total,

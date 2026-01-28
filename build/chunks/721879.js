@@ -10,7 +10,7 @@ var n = i(419954),
     u = i(985018),
     a = i(536482);
 let o = (0, n.zZ)(l.X.ACTIVITY_PRIVACY_GAME_JOINING_CATEGORY, {
-    useTitle: () => u.intl.string(a.default["5rYBAQ"]),
+    useTitle: () => u.intl.string(a.default["89YBr5"]),
     buildLayout: () => [s.Q, r.j],
     useSearchTerms: () => [u.intl.string(u.t.VOszPA)]
 })

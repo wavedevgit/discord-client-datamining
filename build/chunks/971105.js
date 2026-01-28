@@ -23,8 +23,8 @@ var r, i = n(627968),
     x = n(97352),
     O = n(166403),
     C = n(927578),
-    I = n(61509),
-    T = n(652215),
+    T = n(61509),
+    I = n(652215),
     S = n(788868),
     j = n(818348),
     v = n(985018),
@@ -120,7 +120,7 @@ function w(e) {
                         className: N.Bd,
                         ref: o,
                         overflow: "auto",
-                        children: A.map((e, t) => (0, i.jsx)(I.A, {
+                        children: A.map((e, t) => (0, i.jsx)(T.A, {
                             className: a()(N.Nj, N.Bd),
                             payment: e,
                             locale: n,
@@ -222,7 +222,7 @@ function U(e) {
         })), [t]),
         a = (0, u.yK)([x.A], () => x.A.getPlanIdsForSkus(Array.from(s))),
         o = l.useCallback(() => a.length === r.size, [a, r]),
-        c = l.useMemo(() => t.filter(e => e.currency !== T.Yri.DISCORD_ORB), [t]);
+        c = l.useMemo(() => t.filter(e => e.currency !== I.Yri.DISCORD_ORB), [t]);
     return l.useEffect(() => {
         o() || p.h.wait(() => {
             s.forEach(e => (0, A.ur)(e, void 0, void 0, !0, void 0))

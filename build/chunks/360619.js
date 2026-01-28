@@ -28,8 +28,8 @@ var r = n(64700),
     x = n(189081),
     O = n(430452),
     C = n(994500),
-    I = n(628965),
-    T = n(287809),
+    T = n(628965),
+    I = n(287809),
     S = n(80422),
     j = n(64313),
     v = n(897358),
@@ -82,7 +82,7 @@ function G() {
     var e, t, n, l;
     let E = (0, p.IO)().length,
         v = (0, _.l)(),
-        D = (0, i.bG)([I.A], () => I.A.getSearchParams()),
+        D = (0, i.bG)([T.A], () => T.A.getSearchParams()),
         w = (0, u.VT)(),
         M = (0, R.b_)(),
         {
@@ -90,7 +90,7 @@ function G() {
         } = S.X.useExperiment({
             location: "settings"
         }),
-        G = null != (e = null == (n = T.default.getCurrentUser()) ? void 0 : n.isStaff()) && e,
+        G = null != (e = null == (n = I.default.getCurrentUser()) ? void 0 : n.isStaff()) && e,
         k = (0, h.Lc)({
             location: "settings"
         }),

@@ -24,8 +24,8 @@ var r = n(627968),
     x = n(884546),
     O = n(287070),
     C = n(158358),
-    I = n(196291),
-    T = n(101058),
+    T = n(196291),
+    I = n(101058),
     S = n(814390),
     j = n(351906),
     v = n(752319),
@@ -101,7 +101,7 @@ function V() {
                 for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
             return l
         }(l, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-        Y = (0, T.V7)({
+        Y = (0, I.V7)({
             userId: t.id,
             image: H
         }),
@@ -148,7 +148,7 @@ function V() {
             active: ee,
             children: (0, r.jsx)("div", {
                 ref: et,
-                children: (0, r.jsx)(I.A, {
+                children: (0, r.jsx)(T.A, {
                     user: t,
                     shouldShow: ee,
                     isVisible: J

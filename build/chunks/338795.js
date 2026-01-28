@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 338795, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    J: () => R
+    J: () => D
 });
 var n = i(934551),
     l = i(98207),
@@ -54,7 +54,7 @@ let N = (0, r.dT)(T.X.ACCOUNT_STANDING_TAB, {
         StronglyDiscouragedCustomComponent: d.A,
         buildLayout: () => []
     }),
-    R = (0, r.i4)(T.X.ACCOUNT_SIDEBAR_ITEM, {
+    D = (0, r.i4)(T.X.ACCOUNT_SIDEBAR_ITEM, {
         useTitle: () => O.intl.string(O.t["JAIM/m"]),
         getLegacySearchKey: () => (0, A.WJ)("AccountPanel") ? void 0 : c.H.ACCOUNT,
         icon: n.UserIcon,

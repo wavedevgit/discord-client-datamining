@@ -1,27 +1,23 @@
 /** Chunk was on 60667 **/
 /** chunk id: 39043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => c
 }), n(896048);
 var r = n(627968),
     i = n(64700),
-    l = n(503698),
-    s = n.n(l),
-    a = n(942381),
-    o = n(894858),
-    c = n(641324),
-    d = n(78837);
-n(465133);
-var u = n(821443);
-let _ = i.memo(function(e) {
+    l = n(942381),
+    s = n(894858),
+    a = n(641324),
+    o = n(78837);
+let c = i.memo(function(e) {
     let {
         node: t
     } = e, {
         useTitle: n,
-        layout: l,
-        useCollapsedSubtitle: _
-    } = t, [p, m] = i.useState(!1), [g, A] = i.useState(!0);
-    i.useEffect(() => o.A.subscribe(e => {
+        layout: c,
+        useCollapsedSubtitle: d
+    } = t, [u, _] = i.useState(!1), [p, m] = i.useState(!0);
+    i.useEffect(() => s.A.subscribe(e => {
         let {
             navTransition: t
         } = e;
@@ -29,9 +25,9 @@ let _ = i.memo(function(e) {
     }, e => {
         if (null == e) return;
         let n = (null == e ? void 0 : e.targetAccordionKey) === t.key;
-        if (n && !p && (m(!0), A(!1)), n && p) {
+        if (n && !u && (_(!0), m(!1)), n && u) {
             var r, i;
-            o.A.setState({
+            s.A.setState({
                 navTransition: (r = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -61,16 +57,16 @@ let _ = i.memo(function(e) {
                 })(Object(i)).forEach(function(e) {
                     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
                 }), r)
-            }), A(!0)
+            }), m(!0)
         }
     }, {
-        equalityFn: a.x,
+        equalityFn: l.x,
         fireImmediately: !0
-    }), [p, t.key]);
-    let f = null == n ? void 0 : n(p),
-        h = null == _ ? void 0 : _(),
-        b = i.useCallback(e => {
-            e && o.A.setState({
+    }), [u, t.key]);
+    let g = null == n ? void 0 : n(u),
+        A = null == d ? void 0 : d(),
+        f = i.useCallback(e => {
+            e && s.A.setState({
                 navTransition: {
                     targetKey: t.key,
                     targetAccordionKey: t.key,
@@ -79,24 +75,15 @@ let _ = i.memo(function(e) {
                 }
             })
         }, [t.key]);
-    return (0, r.jsx)("div", {
-        style: {
-            "--custom-base-setting-wrapper-horizontal-padding": "".concat(12, "px"),
-            "--custom-base-setting-wrapper-vertical-padding": "".concat(8, "px")
-        },
-        className: s()({
-            [u.h]: p
-        }),
-        children: (0, r.jsx)(d.f, {
-            title: f,
-            collapsedSubtitle: h,
-            isExpanded: p,
-            onExpandedChange: m,
-            onExpandedChangeComplete: b,
-            animate: g,
-            children: l.map(e => (0, r.jsx)(c.A, {
-                node: e
-            }, e.key))
-        })
+    return (0, r.jsx)(o.f, {
+        title: g,
+        collapsedSubtitle: A,
+        isExpanded: u,
+        onExpandedChange: _,
+        onExpandedChangeComplete: f,
+        animate: p,
+        children: c.map(e => (0, r.jsx)(a.A, {
+            node: e
+        }, e.key))
     })
 })

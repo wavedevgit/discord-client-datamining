@@ -24,36 +24,36 @@ var n = i(627968),
     C = i(368631),
     L = i(633817),
     b = i(531525),
-    R = i(652215),
-    D = i(985018),
+    D = i(652215),
+    R = i(985018),
     p = i(722125);
 let P = (0, E.t_)(O.X.PROFILE_PANEL, {
         usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => R.intl.string(R.t["vi7f+q"]),
         notice: {
             stores: [A.A, c.A],
             element: d.A
         },
         initialize: () => () => u.h.wait(() => {
-            (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(R.nc_.PROFILE_CUSTOMIZATION)
+            (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(D.nc_.PROFILE_CUSTOMIZATION)
         }),
         StronglyDiscouragedCustomComponent: S.A,
         buildLayout: () => []
     }),
     m = (0, E.t_)(O.X.PROFILE_PANEL, {
         usePredicate: () => (0, N.dk)("ProfilePanel"),
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => R.intl.string(R.t["vi7f+q"]),
         notice: {
             stores: [A.A, c.A],
             element: d.A
         },
         initialize: () => () => u.h.wait(() => {
-            (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(R.nc_.PROFILE_CUSTOMIZATION)
+            (0, T.sy)(), (0, a.F7)(), o.A.clearSubsection(D.nc_.PROFILE_CUSTOMIZATION)
         }),
         buildLayout: () => [L.I]
     }),
     v = (0, E.i4)(O.X.PROFILE_SIDEBAR_ITEM, {
-        useTitle: () => D.intl.string(D.t["vi7f+q"]),
+        useTitle: () => R.intl.string(R.t["vi7f+q"]),
         getLegacySearchKey: () => (0, N.WJ)("ProfilePanel") ? void 0 : b.H.PROFILE_CUSTOMIZATION,
         icon: l.UserIcon,
         StronglyDiscouragedCustomComponent: () => {
@@ -72,7 +72,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
                     src: i,
                     avatarDecoration: u,
                     size: r._3J.SIZE_48,
-                    "aria-label": D.intl.string(D.t.lqaIxI)
+                    "aria-label": R.intl.string(R.t.lqaIxI)
                 }), (0, n.jsxs)("div", {
                     className: p.FS,
                     children: [(0, n.jsx)(r.Text, {
@@ -86,7 +86,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
                             variant: "text-sm/normal",
                             color: "currentColor",
                             lineClamp: 1,
-                            children: D.intl.string(D.t.Ip9nBS)
+                            children: R.intl.string(R.t.Ip9nBS)
                         }), (0, n.jsx)(l.PencilIcon, {
                             size: "xxs",
                             color: "currentColor"

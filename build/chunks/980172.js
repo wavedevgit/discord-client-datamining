@@ -24,8 +24,8 @@ var r = n(627968),
     x = n(81400),
     O = n(557722),
     C = n(951122),
-    I = n(772786),
-    T = n(207560),
+    T = n(772786),
+    I = n(207560),
     S = n(195043),
     j = n(790114),
     v = n(262),
@@ -95,7 +95,7 @@ function ee(e) {
     let {
         className: a,
         user: o
-    } = e, c = i.useRef(null), p = (0, C.Jz)(), m = (0, I.g)(), g = (0, x.EC)(), A = null != (t = null == g || null == (l = g.nick) ? void 0 : l[0]) ? t : null, [f, h] = i.useState(!1);
+    } = e, c = i.useRef(null), p = (0, C.Jz)(), m = (0, T.g)(), g = (0, x.EC)(), A = null != (t = null == g || null == (l = g.nick) ? void 0 : l[0]) ? t : null, [f, h] = i.useState(!1);
     i.useEffect(() => {
         h(null != c.current && c.current.scrollWidth > c.current.clientWidth)
     }, [o.username]);
@@ -502,7 +502,7 @@ function ea() {
             size: _._3J.SIZE_80
         }),
         m = (0, j.A)(),
-        g = (0, T.fk)(),
+        g = (0, I.fk)(),
         A = (0, k.j)("UserSettingsAccountProfileCard");
     return (0, r.jsxs)("div", {
         className: X.DM,

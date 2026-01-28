@@ -24,8 +24,8 @@ var r = n(627968),
     x = n(961350),
     O = n(30793),
     C = n(351906),
-    I = n(97352),
-    T = n(67480),
+    T = n(97352),
+    I = n(67480),
     S = n(147925),
     j = n(957565),
     v = n(45938),
@@ -278,12 +278,12 @@ class L extends i.PureComponent {
         })
     }
 }
-let M = c.Ay.connectStores([T.A, C.A, O.A, g.A, I.A, x.default], e => {
+let M = c.Ay.connectStores([I.A, C.A, O.A, g.A, T.A, x.default], e => {
     let {
         skuId: t,
         subscriptionPlanId: n,
         giftStyle: r
-    } = e, i = T.A.get(t);
+    } = e, i = I.A.get(t);
     if (null == i) throw Error("SKU was unavailable while rendering gift.");
     let l = O.A.getForGifterSKUAndPlan(x.default.getId(), t, n).filter(e => !e.isClaimed).filter(e => e.giftStyle === r);
     return {

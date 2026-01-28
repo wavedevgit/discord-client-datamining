@@ -24,8 +24,8 @@ var r = n(627968),
     x = n(749082),
     O = n(385243),
     C = n(652215),
-    I = n(758836),
-    T = n(901123),
+    T = n(758836),
+    I = n(901123),
     S = n(49370),
     j = n(985018),
     v = n(785619),
@@ -59,7 +59,7 @@ let P = E.A.getArticleURL(C.MVz.ORBS_REWARDS_FAQ),
                         displayTotalLifetimeRewards: null != l, displayProgressBar: !0, actionButton: (0, r.jsx)(c.$nd, {
                             text: j.intl.string(S.default.BxjHiu),
                             variant: t ? "overlay-primary" : "secondary",
-                            onClick: () => (0, f.pX)(T.BV.COLLECTIBLES_SHOP_WITH_TAB(I.G2.ORBS))
+                            onClick: () => (0, f.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(T.G2.ORBS))
                         }), headerText: j.intl.format(S.default.cfE8Oh, {
                             days: Math.max(1, i)
                         }), subheaderText: j.intl.format(S.default["53tWRt"], {
@@ -98,7 +98,7 @@ let P = E.A.getArticleURL(C.MVz.ORBS_REWARDS_FAQ),
                         displayTotalLifetimeRewards: null != l, displayProgressBar: null != i, actionButton: (0, r.jsx)(c.$nd, {
                             text: j.intl.string(S.default["wLAd/+"]),
                             variant: t ? "overlay-primary" : "secondary",
-                            onClick: () => (0, f.pX)(T.BV.COLLECTIBLES_SHOP_WITH_TAB(I.G2.ORBS))
+                            onClick: () => (0, f.pX)(I.BV.COLLECTIBLES_SHOP_WITH_TAB(T.G2.ORBS))
                         }), headerText: j.intl.string(S.default.zF0HnJ), subheaderText: j.intl.format(S.default["5tzNTa"], {
                             helpdeskArticle: P
                         })

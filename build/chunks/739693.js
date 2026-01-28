@@ -21,7 +21,7 @@ function p(e) {
         onSuccess: A,
         onClose: f,
         requirementsUpdated: h
-    } = e, [b, E] = i.useState(""), [x, O] = i.useState(""), [C, I] = i.useState(""), [T, S] = i.useState(null), [j, v] = i.useState(null), N = (0, s.bG)([c.A], () => c.A.getErrors()), y = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
+    } = e, [b, E] = i.useState(""), [x, O] = i.useState(""), [C, T] = i.useState(""), [I, S] = i.useState(null), [j, v] = i.useState(null), N = (0, s.bG)([c.A], () => c.A.getErrors()), y = (0, s.bG)([c.A], () => c.A.getFormState()), P = i.useRef(null);
     async function R(e) {
         e.preventDefault(), (0, o.x8)();
         let t = !1;
@@ -71,7 +71,7 @@ function p(e) {
                     required: !0
                 }), (0, r.jsx)(a.ksK, {
                     label: _.intl.string(_.t["8dM4FO"]),
-                    error: null != (t = null != (n = null == N || null == (m = N.new_password) ? void 0 : m[0]) ? n : T) ? t : void 0,
+                    error: null != (t = null != (n = null == N || null == (m = N.new_password) ? void 0 : m[0]) ? n : I) ? t : void 0,
                     type: "password",
                     value: x,
                     onChange: O,
@@ -82,7 +82,7 @@ function p(e) {
                     error: null != j ? j : void 0,
                     type: "password",
                     value: C,
-                    onChange: I,
+                    onChange: T,
                     autoComplete: "new-password",
                     required: !0
                 })]

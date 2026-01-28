@@ -27,12 +27,12 @@ function a(e) {
         onMarkerRender: h,
         stickToMarkers: b,
         fieldLayout: E
-    } = t, [x] = i.useState(() => a()), O = u(), C = null == _ ? void 0 : _(), I = null == p ? void 0 : p(), T = null == m ? void 0 : m(), S = null == d ? void 0 : d();
+    } = t, [x] = i.useState(() => a()), O = u(), C = null == _ ? void 0 : _(), T = null == p ? void 0 : p(), I = null == m ? void 0 : m(), S = null == d ? void 0 : d();
     return (0, r.jsxs)(s.L, {
         children: [(0, r.jsx)(l.Apm, {
             label: O,
             description: C,
-            disabled: T,
+            disabled: I,
             initialValue: x,
             minValue: o,
             maxValue: c,
@@ -45,10 +45,10 @@ function a(e) {
             onMarkerRender: h,
             stickToMarkers: b,
             layout: E
-        }), null != I && (0, r.jsx)(l.Text, {
+        }), null != T && (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-muted",
-            children: I
+            children: T
         })]
     })
 }

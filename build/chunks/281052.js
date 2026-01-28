@@ -25,8 +25,8 @@ var i = n(284009),
     x = n(101058),
     O = n(622543),
     C = n(696451),
-    I = n(287809),
-    T = n(927578),
+    T = n(287809),
+    I = n(927578),
     S = n(427262),
     j = n(159001),
     v = n(833336),
@@ -41,8 +41,8 @@ function L(e) {
     var t, n, i, L;
     let {
         guild: M
-    } = e, U = (0, s.bG)([I.default], () => {
-        let e = I.default.getCurrentUser();
+    } = e, U = (0, s.bG)([T.default], () => {
+        let e = T.default.getCurrentUser();
         return l()(null != e, "GuildIdentitySettingsPage: user cannot be undefined"), e
     }), G = (0, d.L)(R.PremiumTypes.TIER_2), {
         pendingAvatar: k,
@@ -80,7 +80,7 @@ function L(e) {
     let X = (0, c.EC)(Z.id),
         q = (0, s.bG)([C.Ay], () => null == Z.id ? null : C.Ay.getMember(Z.id, U.id)),
         J = (0, s.bG)([O.A], () => O.A.getGuildMemberProfile(U.id, Z.id)),
-        Q = T.Ay.canUsePremiumProfileCustomization(U),
+        Q = I.Ay.canUsePremiumProfileCustomization(U),
         $ = (0, u.z5)(k, null == q ? void 0 : q.avatar),
         ee = (0, u.Ac)(H, null == J ? void 0 : J.banner),
         et = (0, N.lS)(Y, null == J ? void 0 : J.themeColors),

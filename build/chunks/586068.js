@@ -3,7 +3,7 @@
 n.d(t, {
     KJ: () => v,
     N_: () => P,
-    OS: () => T,
+    OS: () => I,
     Y9: () => y,
     c3: () => S,
     lg: () => N,
@@ -38,7 +38,7 @@ function C(e, t, n) {
         writable: !0
     }) : e[t] = n, e
 }
-class I extends l.PureComponent {
+class T extends l.PureComponent {
     componentDidMount() {
         let {
             focused: e,
@@ -107,7 +107,7 @@ class I extends l.PureComponent {
         })
     }
 }
-class T extends l.Component {
+class I extends l.Component {
     renderIcon() {
         let {
             guild: e
@@ -165,7 +165,7 @@ class T extends l.Component {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
@@ -274,7 +274,7 @@ class S extends(r = l.Component) {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
@@ -357,7 +357,7 @@ class j extends l.Component {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
@@ -453,7 +453,7 @@ class v extends l.Component {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             "aria-label": this.getAccessibilityLabel(),
             onMouseEnter: e,
@@ -496,7 +496,7 @@ class N extends l.Component {
             focused: r,
             id: l
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: l,
             onMouseEnter: e,
             onClick: t,
@@ -557,7 +557,7 @@ class P extends l.Component {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             onMouseEnter: e,
             onClick: t,
@@ -661,7 +661,7 @@ class R extends l.Component {
             score: s,
             id: a
         } = this.props;
-        return (0, i.jsx)(I, {
+        return (0, i.jsx)(T, {
             id: a,
             onMouseEnter: e,
             onClick: t,

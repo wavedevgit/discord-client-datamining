@@ -24,8 +24,8 @@ var r, i = n(627968),
     x = n(272207),
     O = n(71393),
     C = n(97352),
-    I = n(67480),
-    T = n(328968),
+    T = n(67480),
+    I = n(328968),
     S = n(580630),
     j = n(163437),
     v = n(3432),
@@ -86,11 +86,11 @@ function U(e) {
         sku: U,
         isCancelled: W,
         renewalPlan: z
-    } = (0, o.cf)([C.A, I.A, T.A, O.A], () => {
+    } = (0, o.cf)([C.A, T.A, I.A, O.A], () => {
         let e, t = C.A.get(S),
-            n = null != t ? I.A.get(t.skuId) : void 0,
+            n = null != t ? T.A.get(t.skuId) : void 0,
             r = null == n ? void 0 : n.applicationId,
-            i = null != t ? T.A.getForSKU(t.skuId) : null,
+            i = null != t ? I.A.getForSKU(t.skuId) : null,
             l = null != i && (0, j.PJ)(i.skuFlags),
             s = l && null != E ? O.A.getGuild(E) : void 0,
             a = (0, j.Uo)(u, n);
@@ -340,7 +340,7 @@ function B(e) {
         navigateToSwitchPlan: A
     } = e, f = (0, j.Se)(s), {
         analyticsLocations: h
-    } = (0, p.Ay)(), [b, E] = l.useState(!1), O = (0, g.C)(t.id), C = (0, o.bG)([I.A], () => I.A.getParentSKU(r.skuId), [r.skuId]), T = l.useMemo(() => null == C ? [] : (0, y.l)(r.id, C, O.subscriptions), [r.id, O, C]), S = 0 !== T.length, v = async () => {
+    } = (0, p.Ay)(), [b, E] = l.useState(!1), O = (0, g.C)(t.id), C = (0, o.bG)([T.A], () => T.A.getParentSKU(r.skuId), [r.skuId]), I = l.useMemo(() => null == C ? [] : (0, y.l)(r.id, C, O.subscriptions), [r.id, O, C]), S = 0 !== I.length, v = async () => {
         try {
             E(!0);
             let {
@@ -392,7 +392,7 @@ function B(e) {
             onClick: () => {
                 A({
                     currentSubscription: a,
-                    alternativeListings: T,
+                    alternativeListings: I,
                     app: t,
                     subscriptionGroup: C,
                     currentListing: r,

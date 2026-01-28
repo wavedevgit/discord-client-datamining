@@ -24,8 +24,8 @@ var r = n(627968),
     x = n(752319),
     O = n(954571),
     C = n(927578),
-    I = n(884546),
-    T = n(230084),
+    T = n(884546),
+    I = n(230084),
     S = n(180020),
     j = n(212168),
     v = n(730588),
@@ -116,7 +116,7 @@ function M(e) {
             type: j.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, r.jsx)(I.A, {
+            children: [(0, r.jsx)(T.A, {
                 layoutClassName: L.th,
                 profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(s.tvc, {
@@ -161,7 +161,7 @@ function M(e) {
                         showRemoveBannerButton: null != W,
                         onBannerChange: b.xe,
                         showPremiumIcon: !1
-                    }), !V && (0, r.jsx)(T.A, {
+                    }), !V && (0, r.jsx)(I.A, {
                         className: L.fz,
                         isTryItOut: !0,
                         onAvatarChange: b.e$,

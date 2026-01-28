@@ -17,7 +17,7 @@ var n = i(290595),
     E = i(719587),
     _ = i(985018);
 let g = (0, l.zZ)(r.X.DATA_USAGE_CATEGORY, {
-    useTitle: () => _.intl.string(_.t.SRZyHg),
+    useTitle: () => _.intl.string(_.t.bvw42E),
     useInlineNotice: u.I,
     initialize: () => {
         s.A.fetchedConsents || (0, n.Q)()

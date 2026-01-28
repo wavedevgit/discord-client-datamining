@@ -1,7 +1,7 @@
 /** Chunk was on 60667 **/
 /** chunk id: 745317, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I,
+    A: () => T,
     k: () => C
 }), n(896048);
 var r = n(627968),
@@ -38,15 +38,15 @@ function C() {
     }) : null
 }
 
-function I(e) {
+function T(e) {
     let {
         hideDeviceSelector: t = !1,
         hideDeviceHeader: n = !1,
         hideCameraSettingsLink: i = !1,
         onLearnMore: s,
         selectedBackgroundOption: C,
-        onSelectBackgroundOption: I,
-        renderCamera: T,
+        onSelectBackgroundOption: T,
+        renderCamera: I,
         hidePreviewToggle: S = !1,
         onCancelPreview: j
     } = e, {
@@ -56,7 +56,7 @@ function I(e) {
     } = (0, u.x5)(E.oh.VIDEO_INPUT), y = (0, l.bG)([g.A], () => g.A.isVideoAvailable()), P = p.bm.useSetting();
     return (0, r.jsxs)(a.BJc, {
         gap: 20,
-        children: [T(N), g.A.isEnabled() ? null : (0, r.jsx)(a.Text, {
+        children: [I(N), g.A.isEnabled() ? null : (0, r.jsx)(a.Text, {
             className: O.u5,
             color: "interactive-text-default",
             variant: "text-sm/normal",
@@ -94,7 +94,7 @@ function I(e) {
                 className: O.Jp,
                 onLearnMore: s,
                 selectedBackgroundOption: C,
-                onSelectBackgroundOption: I,
+                onSelectBackgroundOption: T,
                 currentDeviceId: N
             })
         })]

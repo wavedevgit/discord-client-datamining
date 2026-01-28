@@ -9,7 +9,7 @@ var n = i(419954),
     r = i(103435),
     u = i(985018);
 let a = (0, n.zZ)(s.X.DATA_REQUEST_CATEGORY, {
-    useTitle: () => u.intl.string(u.t.BG7QsQ),
+    useTitle: () => u.intl.string(u.t.VjDjpb),
     initialize: () => {
         (0, l.s)()
     },

@@ -3,8 +3,8 @@
 t.d(n, {
     _: () => f
 });
-var l = t(627968),
-    r = t(64700),
+var r = t(627968),
+    l = t(64700),
     i = t(877624),
     s = t(311907),
     a = t(397927),
@@ -26,31 +26,31 @@ function f() {
             claimableRewards: t
         } = (0, o.Pv)(),
         f = (0, u.T)(null == n ? void 0 : n.asset),
-        j = (0, u.T)(null == n ? void 0 : n.backgroundAsset),
-        E = null == n ? void 0 : n.gradient,
-        x = null != E && null != E.colors && E.colors.length >= 2 ? (0, d.K5)({
-            gradient: E.colors,
-            angle: null != (e = E.angle) ? e : void 0
+        E = (0, u.T)(null == n ? void 0 : n.backgroundAsset),
+        j = null == n ? void 0 : n.gradient,
+        x = null != j && null != j.colors && j.colors.length >= 2 ? (0, d.K5)({
+            gradient: j.colors,
+            angle: null != (e = j.angle) ? e : void 0
         }, {
             colorStops: [0, 12, 100]
         }) : void 0,
-        h = r.useMemo(() => (0, d.gc)(null != j ? j : void 0), [j]),
-        T = r.useMemo(() => (0, d.x)(h, x, {
+        h = l.useMemo(() => (0, d.gc)(null != E ? E : void 0), [E]),
+        T = l.useMemo(() => (0, d.x)(h, x, {
             backgroundSize: "cover, auto",
             backgroundPosition: "right center, 0% 0%"
         }), [h, x]);
-    return null == n || null == t ? null : (0, l.jsxs)("div", {
+    return null == n || null == t ? null : (0, r.jsxs)("div", {
         className: g.qD,
         style: T,
-        children: [(0, l.jsx)("div", {
+        children: [(0, r.jsx)("div", {
             className: g.my,
-            children: (0, l.jsx)(p.A, {
+            children: (0, r.jsx)(p.A, {
                 claimableRewards: t,
                 maxRewardImageSrc: null != f ? f : "",
                 size: a._3J.SIZE_40,
                 imageScaling: 1.25
             })
-        }), (0, l.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
             variant: "text-md/medium",
             className: g._M,
             color: "always-white",

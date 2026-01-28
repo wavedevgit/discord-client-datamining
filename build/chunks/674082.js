@@ -13,7 +13,7 @@ var n = i(311907),
     T = i(652215),
     A = i(985018);
 let d = (0, l.zZ)(u.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
-    useTitle: () => A.intl.string(A.t["3wRort"]),
+    useTitle: () => A.intl.string(A.t.LVwR56),
     useSubtitle: () => A.intl.format(A.t["0aNQo9"], {
         helpArticle: r.A.getArticleURL(T.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
     }),

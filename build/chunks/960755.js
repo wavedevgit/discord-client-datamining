@@ -22,8 +22,8 @@ var r, i, l = n(735438),
     x = n(576705),
     O = n(222823),
     C = n(309010),
-    I = n(543465),
-    T = n(403362),
+    T = n(543465),
+    I = n(403362),
     S = n(661191),
     j = n(32603),
     v = n(355097);
@@ -118,7 +118,7 @@ function F(e) {
 }
 class Y extends(r = a.Ay.Store) {
     initialize() {
-        this.waitFor(p.A, A.default, f.A, h.A, b.A, c.Ay, E.A, u.A, _.Ay, m.A, x.A, O.Ay, C.A, I.Ay, g.A)
+        this.waitFor(p.A, A.default, f.A, h.A, b.A, c.Ay, E.A, u.A, _.Ay, m.A, x.A, O.Ay, C.A, T.Ay, g.A)
     }
     getGuild(e, t) {
         var n, r;
@@ -161,7 +161,7 @@ let W = new Y(o.h, {
         return s()(t).map(e => {
             var t;
             return null == (t = h.A.getChannel(e.channelId)) ? void 0 : t.guild_id
-        }).filter(T.Vq).uniq().forEach(e => {
+        }).filter(I.Vq).uniq().forEach(e => {
             P.clearGuildId(e) && (n = !0)
         }), n
     },
