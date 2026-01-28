@@ -39,9 +39,9 @@ var r, l, i = n(64700),
     M = n(403362),
     L = n(661191),
     k = n(652215),
-    G = n(37411);
+    U = n(37411);
 
-function U(e, t, n) {
+function G(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -57,7 +57,7 @@ function B(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            U(e, t, n[t])
+            G(e, t, n[t])
         })
     }
     return e
@@ -170,7 +170,7 @@ class W extends s.EventEmitter {
             }
     }
     constructor(e, t) {
-        super(), U(this, "state", void 0), U(this, "scrollerRef", void 0), U(this, "undoStack", void 0), U(this, "maybeLoadMore", void 0), U(this, "reloadMessages", void 0), U(this, "getNumUnreadChannels", void 0), U(this, "markChannelRead", void 0), U(this, "undoMarkChannelRead", void 0), U(this, "markGuildRead", void 0), U(this, "deleteChannel", void 0), U(this, "markAllRead", void 0), U(this, "toggle", void 0), U(this, "handleUserGuildSettingsStoreChange", void 0), U(this, "handleJoinedThreadsStoreChange", void 0), U(this, "handleActiveThreadsStoreChange", void 0), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
+        super(), G(this, "state", void 0), G(this, "scrollerRef", void 0), G(this, "undoStack", void 0), G(this, "maybeLoadMore", void 0), G(this, "reloadMessages", void 0), G(this, "getNumUnreadChannels", void 0), G(this, "markChannelRead", void 0), G(this, "undoMarkChannelRead", void 0), G(this, "markGuildRead", void 0), G(this, "deleteChannel", void 0), G(this, "markAllRead", void 0), G(this, "toggle", void 0), G(this, "handleUserGuildSettingsStoreChange", void 0), G(this, "handleJoinedThreadsStoreChange", void 0), G(this, "handleActiveThreadsStoreChange", void 0), this.state = e, this.scrollerRef = t, this.undoStack = [], this.maybeLoadMore = () => {
             var e;
             let t = null == (e = this.scrollerRef.current) ? void 0 : e.getScrollerState();
             null == t || t.scrollHeight - t.scrollTop - t.offsetHeight < 2e3 && this.loadMore()
@@ -371,7 +371,7 @@ function q(e, t, n, r) {
             }
             if (r.isThread()) {
                 let e = (0, j.l)(r);
-                return e === G.CP.ALL_MESSAGES ? 4 : e === G.CP.NO_MESSAGES ? 7 : 5
+                return e === U.CP.ALL_MESSAGES ? 4 : e === U.CP.NO_MESSAGES ? 7 : 5
             } {
                 let n = R.Ay.getChannelMessageNotifications(e, t),
                     r = n === k.orn.NULL ? R.Ay.getMessageNotifications(e) : n;

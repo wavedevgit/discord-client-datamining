@@ -1,130 +1,124 @@
-/** Chunk was on web.js **/
-/** chunk id: 996353, original params: e,t,n (module,exports,require) **/
-"use strict";
-n.d(t, {
-    Ay: () => h,
-    aO: () => m,
-    h: () => _
+/** Chunk was on 91075 **/
+/** chunk id: 996353, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Ay: () => _,
+    aO: () => p,
+    h: () => f
 });
-var r = n(64700),
-    i = n(871123),
-    a = n(20424),
-    o = n(592356),
-    s = n(166492),
-    l = n(970354),
-    c = n(950191),
-    u = n(721932),
-    d = n(594832),
-    f = n(188275),
-    p = n(985018);
-let _ = 4;
+var n = i(64700),
+    r = i(871123),
+    a = i(20424),
+    l = i(592356),
+    s = i(166492),
+    o = i(950191),
+    d = i(721932),
+    u = i(594832),
+    c = i(188275),
+    m = i(985018);
+let f = 4;
 
-function h(e) {
+function _(e) {
     let {
         user: t,
-        numItems: n = d.pl,
-        location: p,
-        source: _
-    } = e, h = (0, c.Ay)(t.id), m = (0, s.a)({
-        location: p
-    }), {
-        showRecommendations: g
-    } = (0, l.u)({
-        location: p
-    }), E = r.useMemo(() => _ === d.mQ.POPOUT ? g : _ !== d.mQ.DM_SIDE_PANEL || m, [_, m, g]), y = r.useMemo(() => _ === d.mQ.POPOUT ? d.B5.POPOUT : d.B5.USER_PROFILE, [_]), {
-        defaultWishlistId: b,
-        wishlist: O,
-        popularCollectiblesProducts: v,
-        isFetchingWishlist: A,
-        isValidatingPopularProducts: I,
-        isFetchingPopularProducts: S,
+        numItems: i = u.pl,
+        location: m,
+        source: f
+    } = e, _ = (0, o.Ay)(t.id), p = (0, s.a)({
+        location: m
+    }), g = n.useMemo(() => f !== u.mQ.DM_SIDE_PANEL || p, [f, p]), {
+        defaultWishlistId: h,
+        wishlist: I,
+        popularCollectiblesProducts: C,
+        isFetchingWishlist: S,
+        isValidatingPopularProducts: x,
+        isFetchingPopularProducts: b,
         wishlistError: T
-    } = (0, d.eT)({
+    } = (0, u.eT)({
         giftRecipient: t,
-        minNumItems: E ? n : 0,
-        source: y
-    }), C = (0, a.A)({
-        displayProfile: h,
-        location: p
-    }), N = r.useMemo(() => [t.id], [t.id]), {
-        recommendations: w
-    } = (0, o.A)({
-        guildId: (0, i.zf)(),
-        numWishlistItems: E ? Math.max(n, d.pl) : 0,
-        location: p,
-        applicationId: f.XR,
-        userIds: N,
+        minNumItems: g ? i : 0,
+        source: u.B5.USER_PROFILE
+    }), A = (0, a.A)({
+        displayProfile: _,
+        location: m
+    }), O = n.useMemo(() => [t.id], [t.id]), {
+        recommendations: j
+    } = (0, l.A)({
+        guildId: (0, r.zf)(),
+        numWishlistItems: g ? Math.max(i, u.pl) : 0,
+        location: m,
+        applicationId: c.XR,
+        userIds: O,
         includeWishlists: !0
-    }), R = r.useMemo(() => {
+    }), v = n.useMemo(() => {
         var e;
-        return E && ((null != (e = null == O ? void 0 : O.items) ? e : []).filter(e => !0 !== e.isOwned && (0, u.$)(e)).length > 0 || C) ? w : []
-    }, [null == O ? void 0 : O.items, C, E, w]), {
-        displayItems: P,
-        hasMoreItems: D,
+        return g && ((null != (e = null == I ? void 0 : I.items) ? e : []).filter(e => !0 !== e.isOwned && (0, d.$)(e)).length > 0 || A) ? j : []
+    }, [null == I ? void 0 : I.items, A, g, j]), {
+        displayItems: N,
+        hasMoreItems: P,
         totalWishlistItemCount: L,
-        wishlistItemCountToBeDisplayed: x
-    } = (0, d.mk)({
-        wishlist: O,
-        popularCollectiblesProducts: v,
-        popularSocialLayerStorefrontItems: R,
+        wishlistItemCountToBeDisplayed: w
+    } = (0, u.mk)({
+        wishlist: I,
+        popularCollectiblesProducts: C,
+        popularSocialLayerStorefrontItems: v,
         wishlistError: T,
-        numItems: n
+        numItems: i
     });
     return {
-        displayItems: P,
-        hasMoreItems: D,
+        displayItems: N,
+        hasMoreItems: P,
         totalWishlistItemCount: L,
-        wishlistItemCountToBeDisplayed: x,
-        fetchState: r.useMemo(() => A || I || S ? {
+        wishlistItemCountToBeDisplayed: w,
+        fetchState: n.useMemo(() => S || x || b ? {
             status: "loading"
         } : null != T ? {
             status: "error",
             error: T
         } : {
             status: "success"
-        }, [A, I, S, T]),
-        defaultWishlistId: b,
-        wishlist: O
+        }, [S, x, b, T]),
+        defaultWishlistId: h,
+        wishlist: I
     }
 }
 
-function m(e) {
+function p(e) {
     let {
         user: t,
-        numItems: n = d.pl,
-        source: i,
+        numItems: i = u.pl,
+        source: r,
         location: a
     } = e, {
-        displayItems: o,
+        displayItems: l,
         defaultWishlistId: s,
-        wishlist: l
-    } = h({
+        wishlist: o
+    } = _({
         user: t,
-        numItems: n,
-        source: i,
+        numItems: i,
+        source: r,
         location: a
     }), {
-        displayedWishlistItems: c,
-        title: u
-    } = r.useMemo(() => {
-        let e = null == l ? void 0 : l.items.filter(e => !0 !== e.isOwned);
+        displayedWishlistItems: d,
+        title: c
+    } = n.useMemo(() => {
+        let e = null == o ? void 0 : o.items.filter(e => !0 !== e.isOwned);
         return null == e || 0 === e.length ? {
             displayedWishlistItems: null,
             title: null
-        } : e.length > 1 && e.length < n && o.length > e.length ? {
-            displayedWishlistItems: o,
-            title: p.intl.string(p.t.BCi1gT)
+        } : e.length > 1 && e.length < i && l.length > e.length ? {
+            displayedWishlistItems: l,
+            title: m.intl.string(m.t.BCi1gT)
         } : {
             displayedWishlistItems: e.map(e => ({
                 item: e,
-                source: d.uS.WISHLIST
+                source: u.uS.WISHLIST
             })),
-            title: p.intl.string(p.t["7lZ31J"])
+            title: m.intl.string(m.t["7lZ31J"])
         }
-    }, [o, l, n]);
+    }, [l, o, i]);
     return {
         defaultWishlistId: s,
-        displayedWishlistItems: c,
-        title: u
+        displayedWishlistItems: d,
+        title: c
     }
 }

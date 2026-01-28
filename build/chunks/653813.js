@@ -3,70 +3,70 @@
 i.d(t, {
     default: () => p
 });
-var r = i(627968),
-    n = i(64700),
+var n = i(627968),
+    r = i(64700),
     a = i(397927),
     l = i(937008),
     s = i(156312),
     o = i(532794),
     d = i(232516),
-    c = i(788868),
-    u = i(652215),
+    u = i(788868),
+    c = i(652215),
     m = i(985018),
-    _ = i(431389);
+    f = i(431389);
 
-function f(e) {
+function _(e) {
     let {
         giftRecipient: t,
         onClose: i,
         transitionState: l,
-        analyticsLocations: f,
+        analyticsLocations: _,
         analyticsLocation: p,
         analyticsObject: g,
         giftMessage: h
     } = e, {
         priceOptions: I
-    } = (0, s.P5)(), C = n.useCallback(e => {
+    } = (0, s.P5)(), C = r.useCallback(e => {
         (0, o.A)({
             isGift: !0,
             giftRecipient: t,
             subscriptionTier: e,
-            giftingOrigin: c.vQ.DM_CHANNEL,
-            analyticsLocations: null != f ? f : [],
+            giftingOrigin: u.vQ.DM_CHANNEL,
+            analyticsLocations: null != _ ? _ : [],
             analyticsLocation: p,
             analyticsObject: null != g ? g : {
-                page: u.liQ.DM_CHANNEL,
-                section: u.JJy.CHANNEL_TEXT_AREA,
-                object: u.ZSU.BUTTON_ICON,
-                objectType: u.AnalyticsObjectTypes.GIFT
+                page: c.liQ.DM_CHANNEL,
+                section: c.JJy.CHANNEL_TEXT_AREA,
+                object: c.ZSU.BUTTON_ICON,
+                objectType: c.AnalyticsObjectTypes.GIFT
             },
             giftMessage: h
         }), i()
-    }, [t, f, p, g, h, i]);
-    return (0, r.jsxs)(a.EOs, {
+    }, [t, _, p, g, h, i]);
+    return (0, n.jsxs)(a.EOs, {
         transitionState: l,
         size: a.rIJ.DYNAMIC,
-        className: _.jT,
+        className: f.jT,
         parentComponent: "GiftOptionSelectModal",
         "data-migration-pending": !0,
-        children: [(0, r.jsx)(a.rQ0, {
-            className: _.Hc,
+        children: [(0, n.jsx)(a.rQ0, {
+            className: f.Hc,
             "data-migration-pending": !0,
-            children: (0, r.jsxs)(a.BJc, {
+            children: (0, n.jsxs)(a.BJc, {
                 direction: "horizontal",
                 justify: "space-between",
-                children: [(0, r.jsx)(a.Heading, {
+                children: [(0, n.jsx)(a.Heading, {
                     variant: "heading-md/semibold",
                     children: m.intl.string(m.t["wg/30i"])
-                }), (0, r.jsx)(a.s_y, {
+                }), (0, n.jsx)(a.s_y, {
                     onClick: i,
                     "data-migration-pending": !0
                 })]
             })
-        }), (0, r.jsx)(a.$mQ, {
-            className: _.S3,
+        }), (0, n.jsx)(a.$mQ, {
+            className: f.S3,
             "data-migration-pending": !0,
-            children: (0, r.jsx)(d.A, {
+            children: (0, n.jsx)(d.A, {
                 onSelectSku: C,
                 giftRecipient: t,
                 priceOptions: I,
@@ -80,29 +80,29 @@ function p(e) {
     let {
         giftRecipient: t,
         onClose: i,
-        transitionState: n,
+        transitionState: r,
         analyticsLocations: a,
         analyticsLocation: o,
         analyticsObject: d,
-        giftMessage: u
+        giftMessage: c
     } = e;
-    return (0, r.jsx)(s.PaymentContextProvider, {
+    return (0, n.jsx)(s.PaymentContextProvider, {
         activeSubscription: null,
         stepConfigs: [],
-        skuIDs: c.T7,
+        skuIDs: u.T7,
         isGift: !0,
-        children: (0, r.jsx)(l.dX, {
+        children: (0, n.jsx)(l.dX, {
             isGift: !0,
             giftRecipient: t,
-            giftingOrigin: c.vQ.DM_CHANNEL,
-            children: (0, r.jsx)(f, {
+            giftingOrigin: u.vQ.DM_CHANNEL,
+            children: (0, n.jsx)(_, {
                 giftRecipient: t,
                 onClose: i,
-                transitionState: n,
+                transitionState: r,
                 analyticsLocations: a,
                 analyticsLocation: o,
                 analyticsObject: d,
-                giftMessage: u
+                giftMessage: c
             })
         })
     })

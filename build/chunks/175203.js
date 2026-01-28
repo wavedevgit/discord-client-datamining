@@ -39,8 +39,8 @@ var r = n(627968),
     M = n(760751),
     L = n(111162),
     k = n(430452),
-    G = n(290863),
-    U = n(485296),
+    U = n(290863),
+    G = n(485296),
     B = n(977997),
     V = n(712687),
     F = n(790381),
@@ -95,7 +95,7 @@ let es = [et.lp.ACTIVITY],
             [eD, eM] = l.useState(!1),
             eL = T.Q_.useSetting(),
             ek = (0, a.bG)([L.default], () => L.default.isStreamInfoOverlayEnabled),
-            [eG, eU] = l.useState(!1),
+            [eU, eG] = l.useState(!1),
             eB = (0, a.bG)([D.default], () => D.default.getId()),
             eV = ea.type === et.lp.ACTIVITY ? null : ea.user,
             eF = null != (t = null == eV ? void 0 : eV.id) ? t : null,
@@ -147,7 +147,7 @@ let es = [et.lp.ACTIVITY],
             }, {
                 autoTrackExposure: !1
             }),
-            e7 = (0, a.bG)([G.A], () => e9 && null != eF ? G.A.findActivity(eF, e => null != e.application_id && e.type === ee.$pd.PLAYING) : null, [e9, eF]),
+            e7 = (0, a.bG)([U.A], () => e9 && null != eF ? U.A.findActivity(eF, e => null != e.application_id && e.type === ee.$pd.PLAYING) : null, [e9, eF]),
             e2 = (0, a.bG)([M.A], () => (null == e7 ? void 0 : e7.application_id) != null ? M.A.getDetectableGame(e7.application_id) : null),
             e6 = (0, a.bG)([h.A], () => null != e2 && (null == e7 ? void 0 : e7.application_id) != null ? h.A.getApplication(null == e7 ? void 0 : e7.application_id) : void 0),
             e3 = (0, I.UF)({
@@ -248,7 +248,7 @@ let es = [et.lp.ACTIVITY],
                 })
         }
         let ts = l.useRef(null),
-            ta = (0, a.bG)([U.A], () => ea.type === et.lp.USER ? U.A.getVoiceVolume(ea.id) : -1 / 0),
+            ta = (0, a.bG)([G.A], () => ea.type === et.lp.USER ? G.A.getVoiceVolume(ea.id) : -1 / 0),
             to = (0, m.v)({
                 isSpeaking: eY,
                 voiceDb: ta,
@@ -264,10 +264,10 @@ let es = [et.lp.ACTIVITY],
                 }, eg),
                 style: eb,
                 onMouseEnter: () => {
-                    eU(!0)
+                    eG(!0)
                 },
                 onMouseLeave: () => {
-                    eU(!1)
+                    eG(!1)
                 },
                 children: (0, r.jsxs)(E.A, {
                     shakeLocation: en.uD.VOICE_USER,
@@ -358,7 +358,7 @@ let es = [et.lp.ACTIVITY],
                                 channel: eA,
                                 application: e6,
                                 secureFramesVerified: e8,
-                                isHovered: eG,
+                                isHovered: eU,
                                 popoutType: eo
                             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(b, Object.getOwnPropertyDescriptors(y)) : (function(e, t) {
                                 var n = Object.keys(e);
@@ -377,7 +377,7 @@ let es = [et.lp.ACTIVITY],
                                 style: eE || eQ ? void 0 : to
                             }) : null]
                         })
-                    }), eL && ek && eG && (0, r.jsx)(Y.A, {
+                    }), eL && ek && eU && (0, r.jsx)(Y.A, {
                         currentUserId: eB,
                         participant: ea
                     }), (0, r.jsx)(x.A, {
@@ -492,9 +492,9 @@ let ed = l.memo(e => {
     } = e, M = (0, a.bG)([k.A], () => null != y && k.A.isLocalVideoAutoDisabled(y, (0, g.A)(A)), [y, A]), L = (0, _.A)({
         userId: y,
         guildId: j.getGuildId()
-    }), G = (0, O.a)({
+    }), U = (0, O.a)({
         displayNameStyles: L
-    }), U = (0, Z.Y)(i), B = (0, Z.V)(i), [F, H] = l.useState(!1);
+    }), G = (0, Z.Y)(i), B = (0, Z.V)(i), [F, H] = l.useState(!1);
     l.useEffect(() => {
         let e = !1,
             t = () => {
@@ -565,7 +565,7 @@ let ed = l.memo(e => {
                     children: el.intl.string(el.t.m2Hyj0)
                 })]
             }) : null
-        }), !U && (0, r.jsxs)("div", {
+        }), !G && (0, r.jsxs)("div", {
             className: s()(ei.Qp, {
                 [ei.EX]: i < 195
             }),
@@ -599,7 +599,7 @@ let ed = l.memo(e => {
                         [ei.oE]: B
                     })
                 }), null == n || "" === n || t ? null : (0, r.jsx)("span", {
-                    className: s()(ei.Wk, G),
+                    className: s()(ei.Wk, U),
                     children: n
                 }), x && (0, r.jsx)(c.m, {
                     text: el.intl.string(el.t.ZEem6O),

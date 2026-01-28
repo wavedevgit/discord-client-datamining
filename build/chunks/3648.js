@@ -1,101 +1,41 @@
-/** Chunk was on web.js **/
+/** Chunk was on 78528 **/
 /** chunk id: 3648, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => k,
-    Z: () => M
+    A: () => P,
+    Z: () => N
 }), n(896048);
 var r = n(627968),
-    i = n(64700),
-    a = n(311907),
-    o = n(554146),
-    s = n(192308),
-    l = n(342494),
+    l = n(64700),
+    i = n(311907),
+    s = n(554146),
+    a = n(192308),
+    o = n(342494),
     c = n(397927),
     u = n(793574),
     d = n(627363),
-    f = n(576030),
-    p = n(379848),
-    _ = n(957785),
-    h = n(594832),
+    p = n(576030),
+    h = n(379848),
+    f = n(957785),
+    g = n(594832),
     m = n(186111),
-    g = n(916023),
-    E = n(533406),
+    b = n(916023),
+    A = n(533406),
     y = n(366523),
-    b = n(188275),
+    _ = n(188275),
     O = n(49999),
-    v = n(788868),
-    A = n(985018),
-    I = n(407494),
-    S = n(101616),
-    T = n(585048);
+    j = n(788868),
+    v = n(985018),
+    x = n(407494),
+    E = n(101616),
+    C = n(585048);
 
-function C(e, t, n) {
-    return t in e ? Object.defineProperty(e, t, {
-        value: n,
-        enumerable: !0,
-        configurable: !0,
-        writable: !0
-    }) : e[t] = n, e
-}
-
-function N(e) {
-    for (var t = 1; t < arguments.length; t++) {
-        var n = null != arguments[t] ? arguments[t] : {},
-            r = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), r.forEach(function(t) {
-            C(e, t, n[t])
-        })
-    }
-    return e
-}
-
-function w(e, t) {
-    var n = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-        var r = Object.getOwnPropertySymbols(e);
-        t && (r = r.filter(function(t) {
-            return Object.getOwnPropertyDescriptor(e, t).enumerable
-        })), n.push.apply(n, r)
-    }
-    return n
-}
-
-function R(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
-        Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-    }), e
-}
-
-function P(e, t) {
-    if (null == e) return {};
-    var n, r, i, a = {};
-    if ("u" > typeof Reflect && Reflect.ownKeys) {
-        for (i = 0, n = Reflect.ownKeys(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-        return a
-    }
-    if (a = D(e, t), Object.getOwnPropertySymbols)
-        for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (a[r] = e[r]);
-    return a
-}
-
-function D(e, t) {
-    if (null == e) return {};
-    var n, r, i = {},
-        a = Object.getOwnPropertyNames(e);
-    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n]);
-    return i
-}
-
-function L(e) {
+function S(e) {
     let {
         targetElementRef: t,
         onRequestClose: n,
-        onActionClick: i
+        onActionClick: l
     } = e;
-    return (0, r.jsx)(l.AM, {
+    return (0, r.jsx)(o.AM, {
         size: "lg",
         shouldShow: !0,
         position: "left",
@@ -106,118 +46,161 @@ function L(e) {
         align: "center",
         onRequestClose: n,
         actions: [{
-            text: A.intl.string(A.t.uB4Gax),
+            text: v.intl.string(v.t.uB4Gax),
             variant: "primary",
-            onClick: i
+            onClick: l
         }],
         targetElementRef: t,
-        title: A.intl.string(A.t.qh9t5c),
-        body: A.intl.string(A.t.iM6fxV),
+        title: v.intl.string(v.t.qh9t5c),
+        body: v.intl.string(v.t.iM6fxV),
         graphic: {
             type: "image",
-            src: T.A
+            src: C.A
         }
     })
 }
 
-function x(e) {
+function I(e) {
+    var t, n;
     let {
-        showPopover: t,
-        onViewWishlist: n,
-        onCardClick: l
-    } = e, c = P(e, ["showPopover", "onViewWishlist", "onCardClick"]), u = i.useRef(null), d = (0, s.useHasAnyModalOpen)(), f = (0, a.bG)([m.A], () => m.A.hasLayers()), h = (0, g.Jw)({
+        showPopover: o,
+        onViewWishlist: c,
+        onCardClick: u
+    } = e, d = function(e, t) {
+        if (null == e) return {};
+        var n, r, l, i = {};
+        if ("u" > typeof Reflect && Reflect.ownKeys) {
+            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+            return i
+        }
+        if (i = function(e, t) {
+                if (null == e) return {};
+                var n, r, l = {},
+                    i = Object.getOwnPropertyNames(e);
+                for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+                return l
+            }(e, t), Object.getOwnPropertySymbols)
+            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
+        return i
+    }(e, ["showPopover", "onViewWishlist", "onCardClick"]), p = l.useRef(null), g = (0, a.useHasAnyModalOpen)(), A = (0, i.bG)([m.A], () => m.A.hasLayers()), y = (0, b.Jw)({
         location: "wishlist-card"
-    }), [E, y] = (0, p.kn)(h ? [o.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, !0), b = i.useCallback(() => {
-        y(O.i.USER_DISMISS), l()
-    }, [l, y]), v = i.useCallback(() => {
-        y(O.i.USER_DISMISS)
-    }, [y]), A = i.useCallback(() => {
-        y(O.i.USER_DISMISS), n()
-    }, [n, y]);
+    }), [_, j] = (0, h.kn)(y ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, !0), v = l.useCallback(() => {
+        j(O.i.USER_DISMISS), u()
+    }, [u, j]), x = l.useCallback(() => {
+        j(O.i.USER_DISMISS)
+    }, [j]), E = l.useCallback(() => {
+        j(O.i.USER_DISMISS), c()
+    }, [c, j]);
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_.A, R(N({}, c), {
-            onCardClick: b,
-            ref: u
-        })), t && E === o.M.GAME_SHOP_WISHLIST_POPOVER && !d && !f && (0, r.jsx)(L, {
-            targetElementRef: u,
-            onRequestClose: v,
-            onActionClick: A
+        children: [(0, r.jsx)(f.A, (t = function(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {},
+                    r = Object.keys(n);
+                "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(n, e).enumerable
+                }))), r.forEach(function(t) {
+                    var r;
+                    r = n[t], t in e ? Object.defineProperty(e, t, {
+                        value: r,
+                        enumerable: !0,
+                        configurable: !0,
+                        writable: !0
+                    }) : e[t] = r
+                })
+            }
+            return e
+        }({}, d), n = n = {
+            onCardClick: v,
+            ref: p
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var r = Object.getOwnPropertySymbols(e);
+                n.push.apply(n, r)
+            }
+            return n
+        })(Object(n)).forEach(function(e) {
+            Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+        }), t)), o && _ === s.M.GAME_SHOP_WISHLIST_POPOVER && !g && !A && (0, r.jsx)(S, {
+            targetElementRef: p,
+            onRequestClose: x,
+            onActionClick: E
         })]
     })
 }
 
-function M(e, t) {
+function N(e, t) {
     let {
         index: n,
-        moreCount: i,
-        onViewWishlist: a,
-        isSingleCard: o = !1,
-        profileOwner: s,
-        wishlistId: l,
+        moreCount: l,
+        onViewWishlist: i,
+        isSingleCard: s = !1,
+        profileOwner: a,
+        wishlistId: o,
         cardSize: c,
         analyticsLocations: d,
-        itemSource: p
-    } = t, _ = null != i && i > 0, m = p === h.uS.POPULAR ? A.intl.string(A.t.Ig6VDH) : A.intl.string(A.t.ilhtIa), g = {
-        title: _ ? A.intl.string(A.t.TxBQzD) : A.intl.string(A.t["4yiU7x"]),
-        body: _ ? void 0 : m,
-        renderIcon: _ ? void 0 : f.GM,
+        itemSource: h
+    } = t, f = null != l && l > 0, m = h === g.uS.POPULAR ? v.intl.string(v.t.Ig6VDH) : v.intl.string(v.t.ilhtIa), b = {
+        title: f ? v.intl.string(v.t.TxBQzD) : v.intl.string(v.t["4yiU7x"]),
+        body: f ? void 0 : m,
+        renderIcon: f ? void 0 : p.GM,
         shouldShow: !0
-    }, O = () => {
-        _ ? a() : (0, E.a)(e.sku, {
-            isGift: !0,
-            giftRecipient: s,
-            giftingOrigin: v.vQ.USER_PROFILE_WISHLIST
-        }, {
-            analyticsLocations: [...d, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
-        })
-    }, S = () => (0, r.jsx)(y.e, {
-        containerClassName: I.Nr,
-        backgroundImageClassName: I.GC,
-        foregroundImageClassName: I.wP,
-        sku: e.sku,
-        shape: "custom"
-    });
-    return (0, r.jsx)(x, {
+    };
+    return (0, r.jsx)(I, {
         wishlistItem: e,
-        onCardClick: O,
-        tooltipConfig: g,
+        onCardClick: () => {
+            f ? i() : (0, A.a)(e.sku, {
+                isGift: !0,
+                giftRecipient: a,
+                giftingOrigin: j.vQ.USER_PROFILE_WISHLIST
+            }, {
+                analyticsLocations: [...d, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+            })
+        },
+        tooltipConfig: b,
         shouldScalePreview: !1,
-        renderPreview: S,
-        moreCount: i,
-        isSingleCard: o,
-        wishlistId: l,
-        showPopover: 0 === n && e.sku.applicationId === b.XR,
-        onViewWishlist: a,
+        renderPreview: () => (0, r.jsx)(y.e, {
+            containerClassName: x.Nr,
+            backgroundImageClassName: x.GC,
+            foregroundImageClassName: x.wP,
+            sku: e.sku,
+            shape: "custom"
+        }),
+        moreCount: l,
+        isSingleCard: s,
+        wishlistId: o,
+        showPopover: 0 === n && e.sku.applicationId === _.XR,
+        onViewWishlist: i,
         cardSize: c,
-        itemSource: p
+        itemSource: h
     }, e.skuId)
 }
 
-function j(e) {
+function T(e) {
     let {
         item: t,
         card: n,
-        analyticsLocations: i,
-        profileOwner: a
+        analyticsLocations: l,
+        profileOwner: i
     } = e, {
-        data: o
-    } = (0, d.YY)(t.sku.applicationId), s = () => {
-        (0, E.a)(t.sku, {
-            isGift: !0,
-            giftRecipient: a,
-            giftingOrigin: v.vQ.USER_PROFILE_WISHLIST
-        }, {
-            analyticsLocations: [...i, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
-        })
-    };
+        data: s
+    } = (0, d.YY)(t.sku.applicationId);
     return (0, r.jsxs)("div", {
-        className: S.D5,
+        className: E.D5,
         children: [n, (0, r.jsx)("div", {
-            className: S.S7,
+            className: E.S7,
             children: (0, r.jsxs)(c.DUT, {
-                onClick: s,
-                className: S.Hh,
-                "aria-label": A.intl.string(A.t.pLPjsb),
+                onClick: () => {
+                    (0, A.a)(t.sku, {
+                        isGift: !0,
+                        giftRecipient: i,
+                        giftingOrigin: j.vQ.USER_PROFILE_WISHLIST
+                    }, {
+                        analyticsLocations: [...l, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
+                    })
+                },
+                className: E.Hh,
+                "aria-label": v.intl.string(v.t.pLPjsb),
                 children: [(0, r.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
@@ -226,8 +209,8 @@ function j(e) {
                 }), (0, r.jsx)(c.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
-                    children: A.intl.format(A.t["CqpEC+"], {
-                        applicationName: null == o ? void 0 : o.name
+                    children: v.intl.format(v.t["CqpEC+"], {
+                        applicationName: null == s ? void 0 : s.name
                     })
                 })]
             })
@@ -235,24 +218,24 @@ function j(e) {
     })
 }
 
-function k(e, t) {
+function P(e, t) {
     let {
         profileOwner: n,
-        analyticsLocations: i,
-        wishlistId: a,
-        onViewWishlist: o
-    } = t, s = M(e, {
+        analyticsLocations: l,
+        wishlistId: i,
+        onViewWishlist: s
+    } = t, a = N(e, {
         index: 0,
         profileOwner: n,
-        analyticsLocations: i,
-        onViewWishlist: o,
+        analyticsLocations: l,
+        onViewWishlist: s,
         isSingleCard: !0,
-        wishlistId: a
+        wishlistId: i
     });
-    return (0, r.jsx)(j, {
+    return (0, r.jsx)(T, {
         item: e,
-        card: s,
+        card: a,
         profileOwner: n,
-        analyticsLocations: i
+        analyticsLocations: l
     })
 }

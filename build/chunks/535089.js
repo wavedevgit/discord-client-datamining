@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
+/** Chunk was on 94682 **/
 /** chunk id: 535089, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    A: () => a
+    A: () => i
 }), n(896048);
 var r = n(64700),
-    i = n(172218);
+    l = n(172218);
 
-function a(e) {
+function i(e) {
     let {
         wishlistId: t,
         onAction: n,
-        productLines: a
-    } = e, [o, s] = (0, r.useState)(!1), l = (0, r.useCallback)(e => {
+        productLines: i
+    } = e, [a, o] = (0, r.useState)(!1), s = (0, r.useCallback)(e => {
         e && null != t && (n({
             action: "VIEW_WISHLIST",
             wishlistId: t,
-            productLines: null != a ? a : void 0
-        }), s(!0))
-    }, [t, n, a]);
-    return (0, i.K)(l, void 0, null != t && !o)
+            productLines: null != i ? i : void 0
+        }), o(!0))
+    }, [t, n, i]);
+    return (0, l.K)(s, void 0, null != t && !a)
 }

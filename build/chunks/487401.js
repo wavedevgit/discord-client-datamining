@@ -38,8 +38,8 @@ var r, l = n(627968),
     M = n(32603),
     L = n(960755),
     k = n(994020),
-    G = n(633965),
-    U = n(33324),
+    U = n(633965),
+    G = n(33324),
     B = n(823142),
     V = n(884452),
     F = n(137089),
@@ -111,7 +111,7 @@ class eh extends(r = i.PureComponent) {
     componentDidMount() {
         this.setState({
             initialized: !0
-        }), (0, G.Ei)(this.getVisibleChannels)
+        }), (0, U.Ei)(this.getVisibleChannels)
     }
     componentWillUnmount() {
         this.updateChannelListScroll.cancel()
@@ -853,7 +853,7 @@ function eg(e) {
 }
 
 function em(e) {
-    let t = (0, U.A)(e.guild),
+    let t = (0, G.A)(e.guild),
         n = (0, u.cf)([L.A], () => L.A.getGuild(e.guildId, {
             guildActionRows: t
         })),

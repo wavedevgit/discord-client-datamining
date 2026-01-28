@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(408018),
     L = n(223938),
     k = n(811501),
-    G = n(20737),
-    U = n(133343),
+    U = n(20737),
+    G = n(133343),
     B = n(35277),
     V = n(595914),
     F = n(151271),
@@ -92,8 +92,8 @@ var r = n(627968),
     eM = n(203982),
     eL = n(661191),
     ek = n(460350),
-    eG = n(518960),
-    eU = n(382287),
+    eU = n(518960),
+    eG = n(382287),
     eB = n(137577),
     eV = n(480870),
     eF = n(390756),
@@ -275,10 +275,10 @@ class e6 extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: eG.R,
+            promptToUpload: eU.R,
             highlighted: s,
             setEditorRef: e => this.editorRef = e
-        }) : (0, r.jsx)(U.Ay, {
+        }) : (0, r.jsx)(G.Ay, {
             ref: this.props.refInstance,
             textValue: this.state.textValue,
             richValue: this.state.richValue,
@@ -297,7 +297,7 @@ class e6 extends l.PureComponent {
             onKeyDown: this.handleKeyDown,
             renderAttachButton: this.renderAttachButton,
             renderApplicationCommandIcon: this.renderApplicationCommandIcon,
-            promptToUpload: eG.R,
+            promptToUpload: eU.R,
             highlighted: s,
             setEditorRef: e => this.editorRef = e,
             pendingScheduledMessage: g
@@ -541,8 +541,8 @@ class e6 extends l.PureComponent {
                     shouldRefocus: !0
                 };
                 if (null != n && n.length > 0) {
-                    let e = (0, eU.LJ)(n);
-                    if ((0, eU.fJ)(e, null == c ? void 0 : c.id)) return (0, eG.V)(u, e), {
+                    let e = (0, eG.LJ)(n);
+                    if ((0, eG.fJ)(e, null == c ? void 0 : c.id)) return (0, eU.V)(u, e), {
                         shouldClear: !1,
                         shouldRefocus: !1
                     };
@@ -598,7 +598,7 @@ class e6 extends l.PureComponent {
             var t, n;
             let r = null == (t = this.editorRef) ? void 0 : t.getSlateEditor();
             null != r && (B.b.select(r, []), r.insertText(e), null == (n = this.editorRef) || n.focus())
-        }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(G.A, {
+        }), eZ(this, "renderAttachButton", (e, t) => (0, r.jsx)(U.A, {
             className: t,
             channel: this.props.channel,
             draftType: ex.C.ChannelMessage,
@@ -708,7 +708,7 @@ class e3 extends l.PureComponent {
                 guildId: null == C ? void 0 : C.guild_id,
                 location: "ChannelChat"
             }),
-            G = k && null != E && null != C && null != C.guild_id;
+            U = k && null != E && null != C && null != C.guild_id;
         return (0, r.jsx)(y.A, {
             page: (0, eR.DJ)(this.props.channel),
             children: (0, r.jsx)(J.di, {
@@ -736,7 +736,7 @@ class e3 extends l.PureComponent {
                             onMouseDown: this.handleChatInteract,
                             onKeyDown: this.handleKeyDown,
                             onFocus: this.handleChatInteract,
-                            children: [G && (0, r.jsx)(eY.A, {
+                            children: [U && (0, r.jsx)(eY.A, {
                                 recipientUser: E,
                                 voiceChannel: C
                             }), (0, r.jsx)(eH.A, {

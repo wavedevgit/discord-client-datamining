@@ -2,7 +2,7 @@
 /** chunk id: 584777, original params: e,t,n (module,exports,require) **/
 let r;
 n.d(t, {
-    A: () => U
+    A: () => G
 }), n(896048), n(733351), n(321073), n(638769);
 var l, i, s = n(311907),
     a = n(73153),
@@ -110,7 +110,7 @@ function w(e) {
             comparator: r
         })
     }
-    v = n, G.emitChange()
+    v = n, U.emitChange()
 }
 
 function R() {
@@ -161,7 +161,7 @@ class k extends(l = s.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : k[i] = "PrivateChannelRecipientsInviteStore";
-let G = new k(a.h, {
+let U = new k(a.h, {
         CONNECTION_OPEN: function() {
             S()
         },
@@ -201,4 +201,4 @@ let G = new k(a.h, {
             E.delete(t), E = new Set(E)
         }
     }),
-    U = G
+    G = U

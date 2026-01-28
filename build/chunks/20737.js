@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(545428),
     L = n(38198),
     k = n(447155),
-    G = n(652215),
-    U = n(696016),
+    U = n(652215),
+    G = n(696016),
     B = n(49999),
     V = n(985018),
     F = n(275825);
@@ -92,7 +92,7 @@ let W = l.memo(function(e) {
         autoTrackExposure: !1
     }), {
         onShareClick: es
-    } = (0, A.A)(z.id), ea = (0, a.bG)([_.HP], () => _.HP.hasHotspot(_._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.red)(e => (0, c.fDT)(e, U.nm)), ec = (0, a.bG)([S.A], () => S.A.hasLayers()), eu = (0, a.bG)([g.A], () => g.A.hasClips()), [ed, ep] = l.useState(null), eh = (0, f.sw)() && (et || eu), ef = z.isPrivate(), eg = (0, a.bG)([N.A], () => ef || N.A.can(G.xBc.ATTACH_FILES, z) && N.A.can(G.xBc.SEND_MESSAGES, z)), em = (0, d.A)(en);
+    } = (0, A.A)(z.id), ea = (0, a.bG)([_.HP], () => _.HP.hasHotspot(_._2.CLIPS_CHANNEL_ATTACH_REMINDER)), eo = (0, c.red)(e => (0, c.fDT)(e, G.nm)), ec = (0, a.bG)([S.A], () => S.A.hasLayers()), eu = (0, a.bG)([g.A], () => g.A.hasClips()), [ed, ep] = l.useState(null), eh = (0, f.sw)() && (et || eu), ef = z.isPrivate(), eg = (0, a.bG)([N.A], () => ef || N.A.can(U.xBc.ATTACH_FILES, z) && N.A.can(U.xBc.SEND_MESSAGES, z)), em = (0, d.A)(en);
     (null == em ? void 0 : em.newClipIds.length) !== (null == en ? void 0 : en.newClipIds.length) && (null != (t = null == en ? void 0 : en.newClipIds.length) ? t : 0) > 0 && null == ed && ea && el && !eo && !ei && !ec && ep("recentClips");
     let eb = (0, a.bG)([I.A], () => I.A.hasCurrentUserSentMessageSinceAppStart());
 
@@ -108,7 +108,7 @@ let W = l.memo(function(e) {
                 })
             }))
         }, {
-            modalKey: U.nm
+            modalKey: G.nm
         }), ep(null)
     }
     l.useEffect(() => {
@@ -121,8 +121,8 @@ let W = l.memo(function(e) {
                 null == (n = Z.current) || n.activateUploadDialogue()
             }
         };
-        return P._.subscribe(G.jej.UPLOAD_FILE, e), () => {
-            P._.unsubscribe(G.jej.UPLOAD_FILE, e)
+        return P._.subscribe(U.jej.UPLOAD_FILE, e), () => {
+            P._.unsubscribe(U.jej.UPLOAD_FILE, e)
         }
     });
     let ey = (0, x.n)(z),
@@ -223,7 +223,7 @@ let W = l.memo(function(e) {
                     t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, R.V)(z, []) : (0, R.R)(t, z, Y, {
                         requireConfirm: !0,
                         origin: "file_picker"
-                    }), P._.dispatchToLastSubscribed(G.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
+                    }), P._.dispatchToLastSubscribed(U.jej.TEXTAREA_FOCUS), e.currentTarget.value = ""
                 },
                 multiple: z.rateLimitPerUser <= 0,
                 tabIndex: -1,

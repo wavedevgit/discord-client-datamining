@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(603047),
     L = n(404374),
     k = n(379848),
-    G = n(625180),
-    U = n(91242),
+    U = n(625180),
+    G = n(91242),
     B = n(15285),
     V = n(769015),
     F = n(279250),
@@ -454,7 +454,7 @@ class eN extends l.PureComponent {
             } = this.props;
             (o()(null != e, "Frame cannot be null during navigation click"), t) ? g.h.dispatch({
                 type: "ACTIVITY_POPOUT_WINDOW_OPEN"
-            }): G.A.updateFrameLayoutMode({
+            }): U.A.updateFrameLayoutMode({
                 applicationId: e.applicationId,
                 layoutMode: eO.y.FOCUSED
             })
@@ -481,7 +481,7 @@ let eT = (0, _.A)(function(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-    }(e, ["guildId"]), s = (0, u.bG)([ee.default], () => ee.default.getId()), a = (0, u.bG)([B.Ay, ec.A], () => (0, z.A)(B.Ay, ec.A)), o = (0, u.bG)([ea.A, et.A], () => et.A.getChannel(ea.A.getVoiceChannelId())), d = (0, u.bG)([E.Ay], () => E.Ay.getConnectedActivityChannelId()), p = (0, u.bG)([et.A], () => et.A.getChannel(d)), h = (0, u.bG)([en.A], () => en.A.getGuild(null == p ? void 0 : p.guild_id)), [f, g] = (0, u.yK)([$.A], () => [$.A.getCurrentUserActiveStream(), $.A.getStreamerActiveStreamMetadata()]), m = (0, u.bG)([j.A], () => j.A.useReducedMotion), b = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), A = (0, u.bG)([U.A], () => U.A.getConnectedFrame()), y = (0, u.bG)([en.A, el.A], () => null == o || F.vz(o, en.A, el.A, !1)), [_] = (0, T.A)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != A ? A.applicationId : void 0) ? t : ""]), x = (0, u.bG)([M.A], () => M.A.getFakeGameData()), S = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), P = (0, C.u)() && null != S && (0, v.f)(), w = (0, u.bG)([er.A], () => (0, H.A)(er.A) && (0, ep.isWindows)()), D = (0, u.bG)([ei.A], () => null != s ? ei.A.findActivity(s, e => e.type === eA.$pd.PLAYING) : null), L = null != f && f.ownerId === s && f.state !== eA.XYD.ENDED, k = (0, u.bG)([eo.default, es.A], () => null != p ? (0, R.m1)(p, eo.default, es.A) : void 0), G = (0, X.A)(), [V, K] = l.useState(!1), W = (0, u.bG)([q.A], () => q.A.getWindowOpen(eA.MLl.ACTIVITY_POPOUT)), {
+    }(e, ["guildId"]), s = (0, u.bG)([ee.default], () => ee.default.getId()), a = (0, u.bG)([B.Ay, ec.A], () => (0, z.A)(B.Ay, ec.A)), o = (0, u.bG)([ea.A, et.A], () => et.A.getChannel(ea.A.getVoiceChannelId())), d = (0, u.bG)([E.Ay], () => E.Ay.getConnectedActivityChannelId()), p = (0, u.bG)([et.A], () => et.A.getChannel(d)), h = (0, u.bG)([en.A], () => en.A.getGuild(null == p ? void 0 : p.guild_id)), [f, g] = (0, u.yK)([$.A], () => [$.A.getCurrentUserActiveStream(), $.A.getStreamerActiveStreamMetadata()]), m = (0, u.bG)([j.A], () => j.A.useReducedMotion), b = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), A = (0, u.bG)([G.A], () => G.A.getConnectedFrame()), y = (0, u.bG)([en.A, el.A], () => null == o || F.vz(o, en.A, el.A, !1)), [_] = (0, T.A)([null != (t = null != g && null != g.id ? g.id : null != a && null != a.id ? a.id : null != b ? b.applicationId : null != A ? A.applicationId : void 0) ? t : ""]), x = (0, u.bG)([M.A], () => M.A.getFakeGameData()), S = (0, u.bG)([E.Ay], () => E.Ay.getCurrentEmbeddedActivity()), P = (0, C.u)() && null != S && (0, v.f)(), w = (0, u.bG)([er.A], () => (0, H.A)(er.A) && (0, ep.isWindows)()), D = (0, u.bG)([ei.A], () => null != s ? ei.A.findActivity(s, e => e.type === eA.$pd.PLAYING) : null), L = null != f && f.ownerId === s && f.state !== eA.XYD.ENDED, k = (0, u.bG)([eo.default, es.A], () => null != p ? (0, R.m1)(p, eo.default, es.A) : void 0), U = (0, X.A)(), [V, K] = l.useState(!1), W = (0, u.bG)([q.A], () => q.A.getWindowOpen(eA.MLl.ACTIVITY_POPOUT)), {
         hasAlreadyLinked: Y,
         canStartAuthorization: J,
         connectionApp: Z,
@@ -528,7 +528,7 @@ let eT = (0, _.A)(function(e) {
         streamMetadata: g,
         channelName: k,
         guildForConnectedChannel: h,
-        streamQualityIndicator: G,
+        streamQualityIndicator: U,
         isForceShowSharingPopout: V,
         setIsForceShowSharingPopout: K,
         isActivityPopoutOpen: W,

@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(853742),
     L = n(652215),
     k = n(985018),
-    G = n(641131),
-    U = n(256366),
+    U = n(641131),
+    G = n(256366),
     B = n(233080),
     V = n(165180);
 
@@ -54,7 +54,7 @@ function F(e) {
     return s ? (0, r.jsx)(u.Button, {
         size: "sm",
         variant: "secondary",
-        text: i ? k.intl.string(G.default["2Y4vkk"]) : k.intl.string(G.default.YIbR4r),
+        text: i ? k.intl.string(U.default["2Y4vkk"]) : k.intl.string(U.default.YIbR4r),
         onClick: () => {
             !0 === o.w.get(C.f) ? d() : (0, u.mMO)(async () => {
                 let {
@@ -88,7 +88,7 @@ function H(e) {
     } = e, {
         ref: v,
         width: x
-    } = (0, h.Ay)(), [C, G] = l.useState(3), [H, K] = l.useState(!n), [W, z] = (0, f.A)(!1, 2e3), Y = (0, a.bG)([T.A], () => T.A.getChannel(t), [t]), {
+    } = (0, h.Ay)(), [C, U] = l.useState(3), [H, K] = l.useState(!n), [W, z] = (0, f.A)(!1, 2e3), Y = (0, a.bG)([T.A], () => T.A.getChannel(t), [t]), {
         firstMessage: q
     } = (0, D.OA)(Y), X = (0, a.bG)([I.A], () => I.A.hasJoined(t)), {
         disableReactionUpdates: J,
@@ -116,7 +116,7 @@ function H(e) {
     });
     let [es, ea] = l.useState(!0);
     if (l.useEffect(() => {
-            null == x || (G(Math.floor((x - 280) / 58)), ea(!1))
+            null == x || (U(Math.floor((x - 280) / 58)), ea(!1))
         }, [x]), null == Y || null == q) return null;
     let eo = q.reactions.length > 0,
         ec = () => {
@@ -130,19 +130,19 @@ function H(e) {
         eu = X ? u.A9s : u.XFE;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)("div", {
-            className: s()(U.kL, {
-                [U.wx]: H
+            className: s()(G.kL, {
+                [G.wx]: H
             }),
             ref: v,
             children: [et ? (0, r.jsx)("div", {
-                className: U.kX,
+                className: G.kX,
                 children: (0, r.jsx)(S.A, {
                     message: q,
                     channel: Y
                 })
             }) : (0, r.jsxs)("div", {
-                className: s()(U.hY, {
-                    [U.Lq]: es
+                className: s()(G.hY, {
+                    [G.Lq]: es
                 }),
                 children: [!eo && !Q && null != er && (0, r.jsx)("div", {
                     className: B.reactions,
@@ -171,7 +171,7 @@ function H(e) {
                     isGuest: $,
                     isPendingMember: ee,
                     maxReactions: C,
-                    className: U.Br,
+                    className: G.Br,
                     useChatFontScaling: !1,
                     isForumToolbar: !0,
                     forceHideReactionCreates: !0
@@ -179,14 +179,14 @@ function H(e) {
                     message: q,
                     channel: Y,
                     useChatFontScaling: !1,
-                    className: s()(V.secondary, U.vU, {
-                        [U.w$]: !eo
+                    className: s()(V.secondary, G.vU, {
+                        [G.w$]: !eo
                     }),
                     isForumToolbar: !0,
                     children: !eo && k.intl.string(k.t.xpOyTO)
                 })]
             }), (0, r.jsxs)("div", {
-                className: U.Uo,
+                className: G.Uo,
                 children: [et ? (0, r.jsx)(F, {
                     channel: Y
                 }) : !Z && (0, r.jsx)(c.m, {

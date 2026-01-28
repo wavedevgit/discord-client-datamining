@@ -1,7 +1,7 @@
 /** Chunk was on 78528 **/
 /** chunk id: 288989, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => U,
+    A: () => G,
     k: () => v
 }), n(896048);
 var r, l, i, s = n(735438),
@@ -161,7 +161,7 @@ function k(e) {
     } = e;
     return null != t && w(t)
 }
-class G extends(r = o.Ay.Store) {
+class U extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(O.A, f.A, g.A, h.A, m.Ay, b.A, y.Ay, d.A, A.Ay)
     }
@@ -169,13 +169,13 @@ class G extends(r = o.Ay.Store) {
         var t;
         return null != (t = C[e]) ? t : E
     }
-}(i = "displayName") in G ? Object.defineProperty(G, i, {
+}(i = "displayName") in U ? Object.defineProperty(U, i, {
     value: "ChannelListUnreadsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : G[i] = "ChannelListUnreadsStore";
-let U = new G(c.h, {
+}) : U[i] = "ChannelListUnreadsStore";
+let G = new U(c.h, {
     UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
         let {
             guildId: t,
