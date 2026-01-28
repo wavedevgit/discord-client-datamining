@@ -2,7 +2,7 @@
 /** chunk id: 184264, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,69 +12,63 @@ var r = n(627968),
     l = n(311907),
     c = n(3203),
     u = n(990078),
-    d = n(332779),
-    f = n(151271),
-    p = n(617617),
-    _ = n(234320),
-    h = n(184761),
-    m = n(355622),
-    g = n(545428),
-    E = n(652215),
-    y = n(698279),
-    b = n(985018),
-    O = n(111314);
+    d = n(151271),
+    f = n(617617),
+    p = n(234320),
+    _ = n(545428),
+    h = n(652215),
+    m = n(698279),
+    g = n(985018),
+    E = n(111314);
 
-function v(e, t) {
+function y(e, t) {
     let {
         disabled: n,
         type: a,
-        channel: v
-    } = e, [A, I] = i.useState(!1), S = (0, l.bG)([p.A], () => {
+        channel: y
+    } = e, [b, O] = i.useState(!1), v = (0, l.bG)([f.A], () => {
         var e, t;
-        return A && Object.values(null != (e = null == (t = p.A.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : t.gifs) ? e : {}).length <= 2
-    }), [T, C, N, w] = (0, f.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), R = i.useRef(0), P = i.useCallback(() => {
-        I(!0), clearTimeout(R.current), R.current = setTimeout(() => {
-            I(!1), R.current = 0
+        return b && Object.values(null != (e = null == (t = f.A.frecencyWithoutFetchingLatest.favoriteGifs) ? void 0 : t.gifs) ? e : {}).length <= 2
+    }), [A, I, S, T] = (0, d.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), C = i.useRef(0), N = i.useCallback(() => {
+        O(!0), clearTimeout(C.current), C.current = setTimeout(() => {
+            O(!1), C.current = 0
         }, 2e3)
     }, []);
-    (0, _.Vo)({
-        event: E.jej.FAVORITE_GIF,
-        handler: P
+    (0, p.Vo)({
+        event: h.jej.FAVORITE_GIF,
+        handler: N
     });
-    let D = i.useCallback(() => {
-            (0, f.r$)(y.kx.GIF, a, v.id)
-        }, [a, v.id]),
+    let w = i.useCallback(() => {
+            (0, d.r$)(m.kx.GIF, a, y.id)
+        }, [a, y.id]),
         {
-            Component: L,
-            events: x,
-            play: M
-        } = (0, c.V)(),
-        j = (0, h.p)(d.T),
-        k = a === m.oU.NORMAL ? j : void 0;
+            Component: R,
+            events: P,
+            play: D
+        } = (0, c.V)();
     if (n) return null;
-    let U = T === y.kx.GIF && C === a && w === v.id;
+    let L = A === m.kx.GIF && I === a && T === y.id;
     return (0, r.jsx)(u.m, {
-        keyboardShortcut: S ? void 0 : k,
-        text: b.intl.string(S ? b.t.mE2e8A : b.t.nffuyb),
-        shouldShow: S || null != k,
-        forceOpen: S,
+        text: g.intl.string(v ? g.t.mE2e8A : g.t.nffuyb),
+        shouldShow: v,
+        forceOpen: v,
         children: (0, r.jsx)("div", {
             ref: t,
-            className: o()(y.VQ, O.UD),
-            children: (0, r.jsx)(g.A, {
-                className: O.x6,
-                onMouseEnter: x.onMouseEnter,
-                onMouseLeave: x.onMouseLeave,
+            className: o()(m.VQ, E.UD),
+            children: (0, r.jsx)(_.A, {
+                className: E.x6,
+                onMouseEnter: P.onMouseEnter,
+                onMouseLeave: P.onMouseLeave,
                 onClick: () => {
-                    D(), M()
+                    w(), D()
                 },
-                isActive: U,
-                pulse: A,
-                "aria-label": b.intl.string(b.t.PtVpk2),
-                "aria-expanded": U,
+                isActive: L,
+                pulse: b,
+                "aria-label": g.intl.string(g.t.PtVpk2),
+                "aria-expanded": L,
                 "aria-haspopup": "dialog",
-                "aria-controls": N,
-                children: (0, r.jsx)(L, {
+                "aria-controls": S,
+                children: (0, r.jsx)(R, {
                     size: "refresh_sm",
                     color: "currentColor"
                 })
@@ -82,4 +76,4 @@ function v(e, t) {
         })
     })
 }
-let A = i.memo(i.forwardRef(v))
+let b = i.memo(i.forwardRef(y))

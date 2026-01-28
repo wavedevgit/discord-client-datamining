@@ -2,46 +2,35 @@
 /** chunk id: 838324, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => _
 }), n(896048);
 var r = n(627968),
     i = n(64700),
     a = n(503698),
     o = n.n(a),
     s = n(942381),
-    l = n(877991),
-    c = n(375499),
-    u = n(151271),
-    d = n(184761),
-    f = n(355622),
-    p = n(698279),
-    _ = n(985018),
-    h = n(111314);
+    l = n(375499),
+    c = n(151271),
+    u = n(355622),
+    d = n(698279),
+    f = n(111314);
 
-function m(e, t) {
+function p(e, t) {
     let {
         disabled: n,
         type: a,
-        channelId: m,
-        pickerView: g = p.kx.EMOJI
-    } = e, [E, y, b, O] = (0, u.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), v = (0, d.p)(l.L), A = a === f.oU.NORMAL, {
-        tooltipsWithKeybinds: I,
-        expressionsCombinedIntoEmojiButton: S
-    } = d.C.useConfig({
-        location: "EmojiButton"
-    }), T = S ? void 0 : A ? v : void 0, C = I && S && A ? _.intl.string(_.t.DSBQ6F) : void 0, N = i.useCallback(() => {
-        (0, u.r$)(g, a, m)
-    }, [a, g, m]);
+        channelId: p
+    } = e, [_, h, m, g] = (0, c.RQ)(e => [e.activeView, e.activeViewType, e.pickerId, e.activeChannelId], s.x), E = a === u.oU.NORMAL, y = i.useCallback(() => {
+        (0, c.r$)(d.kx.EMOJI, a, p)
+    }, [a, p]);
     return n ? null : (0, r.jsx)("div", {
-        className: o()(p.VQ, h.UD),
+        className: o()(d.VQ, f.UD),
         ref: t,
-        children: (0, r.jsx)(c.A, {
-            "aria-label": C,
-            tooltipText: C,
-            className: h.Z8,
-            onClick: N,
-            active: E === g && y === a && O === m,
-            "aria-controls": b,
+        children: (0, r.jsx)(l.A, {
+            className: f.Z8,
+            onClick: y,
+            active: _ === d.kx.EMOJI && h === a && g === p,
+            "aria-controls": m,
             tabIndex: 0,
             focusProps: {
                 offset: {
@@ -51,9 +40,8 @@ function m(e, t) {
                     right: -4
                 }
             },
-            keyboardShortcut: T,
-            canShowNUXPremiumTooltip: A
+            canShowNUXPremiumTooltip: E
         })
     })
 }
-let g = i.memo(i.forwardRef(m))
+let _ = i.memo(i.forwardRef(p))

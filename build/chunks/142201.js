@@ -54,8 +54,8 @@ let G = function(e) {
         V = (0, P.V)(),
         F = (0, N.O)(),
         Y = (0, b.Y)(w.T7),
-        [W, z] = i.useState(!0),
-        K = i.useRef(0),
+        [W, K] = i.useState(!0),
+        z = i.useRef(0),
         Z = (0, T.YE)(H, w.PremiumTypes.TIER_2),
         q = (0, I.A)({
             location: "PremiumMarketingPage"
@@ -66,12 +66,12 @@ let G = function(e) {
     }, [X]), i.useEffect(() => {
         c.h.wait(async () => {
             let e = Date.now();
-            await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), K.current = Date.now() - e, z(!1)
+            await Promise.all([d.hP(), d.$o(), (0, u.zS)(null, null, L.tF5.DISCOVERY)]), z.current = Date.now() - e, K(!1)
         })
     }, []), i.useEffect(() => {
         W || j.default.track(L.HAw.PREMIUM_MARKETING_PAGE_VIEWED, {
             location_stack: l,
-            load_duration_ms: K.current
+            load_duration_ms: z.current
         })
     }, [l, W]), i.useEffect(() => {
         n && (null != V || null != F) && (0, S.u1)(V, F)

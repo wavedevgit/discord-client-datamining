@@ -46,8 +46,8 @@ var r, i, l, s = n(627968),
     F = n(281146),
     Y = n(324108),
     W = n(158178),
-    z = n(199579),
-    K = n(170467),
+    K = n(199579),
+    z = n(170467),
     Z = n(909340),
     q = n(455482),
     X = n(573573),
@@ -97,8 +97,8 @@ let ei = () => {
             assetUrl: l ? V.A : Y.A
         },
         yourSpace: {
-            thumbnail: z.A,
-            assetUrl: l ? W.A : K.A
+            thumbnail: K.A,
+            assetUrl: l ? W.A : z.A
         },
         emojis: {
             thumbnail: w.A,

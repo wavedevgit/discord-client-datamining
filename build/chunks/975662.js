@@ -46,8 +46,8 @@ var r, i = n(627968),
     F = n(795710),
     Y = n(484813),
     W = n(659980),
-    z = n(881784),
-    K = n(8330),
+    K = n(881784),
+    z = n(8330),
     Z = n(554452),
     q = n(992186),
     X = n(380529),
@@ -205,7 +205,7 @@ let ef = () => {
             description: U.intl.string(U.t.kWcDK8),
             descriptionCta: U.intl.string(U.t.jVcuVY),
             onCtaClick: ey,
-            perkImage: z
+            perkImage: K
         },
         serverBoosts: {
             name: "serverBoosts",
@@ -219,7 +219,7 @@ let ef = () => {
                     analyticsLocations: e
                 })
             },
-            perkImage: K,
+            perkImage: z,
             hideOnNarrowScreen: !ex,
             imageOverlayText: ex ? U.intl.string(U.t["/VzCKE"]).toLocaleUpperCase() : void 0
         },

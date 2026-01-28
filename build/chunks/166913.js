@@ -57,8 +57,8 @@ let k = e => {
             H = (0, d.Mw)(S),
             [B, V] = i.useState(!1),
             [F, Y] = i.useState(!1),
-            [W, z] = i.useState(!1),
-            [K, Z] = i.useState(!1),
+            [W, K] = i.useState(!1),
+            [z, Z] = i.useState(!1),
             q = (0, o.bG)([b.A], () => b.A.getPremiumTypeSubscription()),
             X = null != q ? (0, A.EL)(q) : null,
             J = null != X ? A.Ay.getSkuIdForPlan(X.planId) : null,
@@ -161,7 +161,7 @@ let k = e => {
             }), (0, r.jsx)("div", {
                 className: G.hz
             }), (0, r.jsx)(P.A, {
-                isVisible: !B && !F && K,
+                isVisible: !B && !F && z,
                 subscriptionTier: Q,
                 isApplicationHome: !1,
                 isEligibleForBogoPromotion: en
@@ -170,7 +170,7 @@ let k = e => {
                 onChange: e => {
                     e && !W && (h.default.track(w.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: el
-                    }), z(!0))
+                    }), K(!0))
                 },
                 children: (0, r.jsx)("div", {
                     ref: l,

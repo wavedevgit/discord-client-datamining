@@ -47,8 +47,8 @@ var r = n(627968),
     F = n(807098),
     Y = n(412260),
     W = n(103411),
-    z = n(190187),
-    K = n(194509),
+    K = n(190187),
+    z = n(194509),
     Z = n(65470),
     q = n(857586),
     X = n(795269),
@@ -308,7 +308,7 @@ function eg() {
                 className: el.Oi,
                 variant: "text-sm/normal",
                 children: ei.intl.string(ei.t.yQ06u1)
-            }), (0, r.jsx)(K.A, {
+            }), (0, r.jsx)(z.A, {
                 className: s()(el.Tp, el._c),
                 textOptions: {
                     textOverride: ei.intl.string(ei.t.Ve9Ge6),
@@ -344,7 +344,7 @@ let ef = function() {
         }),
         E = (0, d.bG)([R.A], () => R.A.enabled),
         S = i.useRef(null);
-    (0, z.i)();
+    (0, K.i)();
     let I = (0, W.m)();
     i.useEffect(() => {
         f.h.wait(async () => {

@@ -45,8 +45,8 @@ var r, i = n(627968),
     F = n(287809),
     Y = n(295405),
     W = n(97352),
-    z = n(90165),
-    K = n(147925),
+    K = n(90165),
+    z = n(147925),
     Z = n(954571),
     q = n(957565),
     X = n(405269),
@@ -713,9 +713,9 @@ class eb extends(r = l.PureComponent) {
                         children: [this.renderDescription(), (0, i.jsxs)("div", {
                             className: el.vj,
                             children: [this.renderStatus(), this.renderPrice()]
-                        }), (0, i.jsx)(K.A, {
+                        }), (0, i.jsx)(z.A, {
                             className: el.fT,
-                            direction: r ? K.A.Directions.UP : K.A.Directions.DOWN
+                            direction: r ? z.A.Directions.UP : z.A.Directions.DOWN
                         })]
                     }), r ? this.renderExpandedSection() : null]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
@@ -826,10 +826,10 @@ function eh(e) {
         applicationStatistics: m,
         gameApplication: g,
         paymentSources: f
-    } = (0, _.cf)([Y.A, z.A, x.A], () => {
+    } = (0, _.cf)([Y.A, K.A, x.A], () => {
         var e, t;
         return {
-            applicationStatistics: null != d ? z.A.getCurrentUserStatisticsForApplication(d) : null,
+            applicationStatistics: null != d ? K.A.getCurrentUserStatisticsForApplication(d) : null,
             gameApplication: null != (e = x.A.getApplication(null != d ? d : "")) ? e : null == (t = r.sku) ? void 0 : t.application,
             paymentSources: Y.A.paymentSources
         }

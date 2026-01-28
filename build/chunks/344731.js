@@ -1,19 +1,18 @@
-/** Chunk was on web.js **/
+/** Chunk was on 5606 **/
 /** chunk id: 344731, original params: e,t,n (module,exports,require) **/
-"use strict";
 n.d(t, {
-    T: () => s
+    T: () => a
 });
 var r = n(734057),
     i = n(309010),
-    a = n(203982),
-    o = n(652215);
-let s = {
+    l = n(203982),
+    s = n(652215);
+let a = {
     binds: ["mod+shift+u"],
     comboKeysBindGlobal: !0,
     action() {
         let e = r.A.getChannel(i.A.getChannelId());
-        return null == e || e.isManaged() || a._.dispatch(o.jej.UPLOAD_FILE, {
+        return null == e || e.isManaged() || l._.dispatch(s.jej.UPLOAD_FILE, {
             channelId: e.id
         }), !1
     }

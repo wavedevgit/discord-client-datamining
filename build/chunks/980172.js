@@ -46,8 +46,8 @@ var r = n(627968),
     F = n(840065),
     Y = n(531525),
     W = n(652215),
-    z = n(53516),
-    K = n(789622),
+    K = n(53516),
+    z = n(789622),
     Z = n(985018),
     q = n(240342);
 
@@ -168,7 +168,7 @@ function ee(e) {
                                 default: e
                             } = await n.e("54160").then(n.bind(n, 914131));
                             return t => (0, r.jsx)(e, X({
-                                source: K.gg.USER_SETTINGS_EDIT
+                                source: z.gg.USER_SETTINGS_EDIT
                             }, t))
                         } {
                             let {
@@ -401,7 +401,7 @@ function ei(e) {
                                 reason: O.d.USER_SETTINGS_UPDATE
                             }, t))
                         }, {
-                            modalKey: z.V
+                            modalKey: K.V
                         })
                     }
                 })

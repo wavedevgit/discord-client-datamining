@@ -2,11 +2,11 @@
 /** chunk id: 915967, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => Z,
-    Bx: () => K,
+    Bx: () => z,
     Gm: () => F,
     Q_: () => V,
     zF: () => Y,
-    zR: () => z
+    zR: () => K
 }), n(65821), n(321073);
 var r, i = n(966597),
     l = n(774603),
@@ -79,12 +79,12 @@ function Y(e) {
 function W() {
     for (var e = arguments.length, t = Array(e), n = 0; n < e; n++) t[n] = arguments[n];
     return t.map(e => {
-        let t = z[e];
+        let t = K[e];
         if (null == t) throw Error("getBindsFor(...): No bind for ".concat(t));
         return t.binds[0]
     })
 }
-let z = {
+let K = {
     [H.IWg.SERVER_NEXT]: j.yx,
     [H.IWg.SERVER_PREV]: j.yv,
     [H.IWg.CHANNEL_NEXT]: s.kF,
@@ -136,7 +136,7 @@ let z = {
     [H.IWg.OPEN_CONTEXT_MENU]: b.b
 };
 
-function K() {
+function z() {
     let e = [{
             description: B.intl.string(B.t.bx4Uyz),
             binds: W(H.IWg.SERVER_PREV, H.IWg.SERVER_NEXT),
@@ -350,4 +350,4 @@ function K() {
         group: "CHAT"
     }), e
 }
-let Z = 21552 == n.j ? z : null
+let Z = 21552 == n.j ? K : null
