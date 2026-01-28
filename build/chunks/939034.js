@@ -3,15 +3,15 @@
 i.r(a), i.d(a, {
     default: () => t
 });
-var r = i(627968),
-    s = i(7946);
+var s = i(627968),
+    r = i(7946);
 
 function t(e) {
     let {
         asset: a
     } = e;
-    return (0, r.jsx)("div", {
-        className: s.ZS,
+    return (0, s.jsx)("div", {
+        className: r.ZS,
         children: a
     })
 }
