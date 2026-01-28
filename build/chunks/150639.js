@@ -5,8 +5,8 @@ n.d(t, {
 }), n(446912), n(896048);
 var l = n(627968),
     r = n(64700),
-    i = n(311907),
-    a = n(74818),
+    i = n(158954),
+    a = n(311907),
     s = n(508675),
     u = n(263063),
     o = n(492494),
@@ -33,7 +33,7 @@ let v = e => ({
             label: O,
             required: p,
             errorMessage: y
-        } = e, S = (0, i.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), I = (0, i.cf)([s.Ay], () => Object.fromEntries(Object.entries(S).map(e => {
+        } = e, S = (0, a.cf)([c.A, m.Ay], () => Object.fromEntries(m.Ay.getFlattenedGuildIds().map(e => c.A.getGuild(e)).filter(h.Vq).map(e => [e.id, e]))), I = (0, a.cf)([s.Ay], () => Object.fromEntries(Object.entries(S).map(e => {
             let [t, n] = e;
             return [t, function(e) {
                 var t;
@@ -76,7 +76,7 @@ let v = e => ({
         return r.useEffect(() => {
             var e;
             A.length < 1 ? d(b.j.NO_PERMISSIONS) : null != n && (null != (e = null == I ? void 0 : I[n]) ? e : 0) < 1 ? d(f.t02.TOO_MANY_EMOJI) : d(null)
-        }, [A, t, d, n, I]), (0, l.jsx)(a.l, {
+        }, [A, t, d, n, I]), (0, l.jsx)(i.l6P, {
             label: O,
             required: p,
             selectionMode: "single",

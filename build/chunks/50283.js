@@ -1,7 +1,7 @@
 /** Chunk was on 21738 **/
 /** chunk id: 50283, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _C: () => a
+    _: () => a
 });
 var r = n(562465);
 n(73153);

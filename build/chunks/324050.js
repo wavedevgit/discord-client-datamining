@@ -1,41 +1,41 @@
-/** Chunk was on 93140 **/
-/** chunk id: 324050, original params: e,t,n (module,exports,require) **/
-let r;
-n.d(t, {
-    A: () => u
+/** Chunk was on 92201 **/
+/** chunk id: 324050, original params: e,t,r (module,exports,require) **/
+let i;
+r.d(t, {
+    A: () => C
 });
-var i, l = n(311907),
-    o = n(73153);
+var n, l = r(311907),
+    s = r(73153);
 
-function a(e, t, n) {
+function o(e, t, r) {
     return t in e ? Object.defineProperty(e, t, {
-        value: n,
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-    }) : e[t] = n, e
+    }) : e[t] = r, e
 }
-let s = {
+let c = {
     lastGuildDismissedTime: {}
 };
-class c extends(i = l.Ay.DeviceSettingsStore) {
+class a extends(n = l.Ay.DeviceSettingsStore) {
     initialize() {
-        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : s;
-        r = e
+        let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : c;
+        i = e
     }
     getUserAgnosticState() {
-        return r
+        return i
     }
     getLastGuildDismissedTime(e) {
-        return r.lastGuildDismissedTime[e]
+        return i.lastGuildDismissedTime[e]
     }
 }
-a(c, "displayName", "ApplicationSubscriptionChannelNoticeStore"), a(c, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
-let u = new c(o.h, {
+o(a, "displayName", "ApplicationSubscriptionChannelNoticeStore"), o(a, "persistKey", "ApplicationSubscriptionChannelNoticeStore");
+let C = new a(s.h, {
     APPLICATION_SUBSCRIPTIONS_CHANNEL_NOTICE_DISMISSED: function(e) {
         let {
             guildId: t
         } = e;
-        r.lastGuildDismissedTime[t] = Date.now()
+        i.lastGuildDismissedTime[t] = Date.now()
     }
 })

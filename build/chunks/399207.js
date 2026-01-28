@@ -9,7 +9,7 @@ Object.defineProperty(e, "__esModule", {
     value: !0
 }), e.ICalCalendarMethod = void 0;
 let s = a(778090),
-    o = n(a(594597)),
+    o = n(a(816978)),
     d = a(362185),
     l = a(362185);
 (i = r = e.ICalCalendarMethod || (e.ICalCalendarMethod = {})).PUBLISH = "PUBLISH", i.REQUEST = "REQUEST", i.REPLY = "REPLY", i.ADD = "ADD", i.CANCEL = "CANCEL", i.REFRESH = "REFRESH", i.COUNTER = "COUNTER", i.DECLINECOUNTER = "DECLINECOUNTER", e.default = class {

@@ -67,7 +67,7 @@ Object.defineProperty(e, "ICalCategory", {
         return i(l).default
     }
 });
-var u = a(594597);
+var u = a(816978);
 Object.defineProperty(e, "ICalEvent", {
     enumerable: !0,
     get: function() {
