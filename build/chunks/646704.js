@@ -11,23 +11,23 @@ var n = i(627968),
     a = i(682829),
     o = i(419954),
     T = i(933297),
-    A = i(780964),
-    d = i(358776),
+    d = i(780964),
+    A = i(358776),
     S = i(616415),
     E = i(531525),
-    _ = i(985018);
-let g = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
-        useTitle: () => _.intl.string(_.t.trSpHX),
+    g = i(985018);
+let _ = (0, o.t_)(d.X.SUBSCRIPTIONS_PANEL, {
+        useTitle: () => g.intl.string(g.t.trSpHX),
         StronglyDiscouragedCustomComponent: a.A,
         buildLayout: () => []
     }),
-    c = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
-        useTitle: () => _.intl.string(_.t.trSpHX),
+    c = (0, o.t_)(d.X.SUBSCRIPTIONS_PANEL, {
+        useTitle: () => g.intl.string(g.t.trSpHX),
         buildLayout: () => [S.J]
     }),
-    I = (0, o.i4)(A.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
-        useTitle: () => _.intl.string(_.t.trSpHX),
-        getLegacySearchKey: () => (0, d.WJ)("SubscriptionsPanel") ? void 0 : E.H.SUBSCRIPTIONS,
+    I = (0, o.i4)(d.X.SUBSCRIPTIONS_SIDEBAR_ITEM, {
+        useTitle: () => g.intl.string(g.t.trSpHX),
+        getLegacySearchKey: () => (0, A.WJ)("SubscriptionsPanel") ? void 0 : E.H.SUBSCRIPTIONS,
         icon: l.SubscriptionIcon,
         trailing: {
             type: T.S.STRONGLY_DISCOURAGED_CUSTOM,
@@ -36,5 +36,5 @@ let g = (0, o.t_)(A.X.SUBSCRIPTIONS_PANEL, {
                 color: r.A.unsafe_rawColors.YELLOW_300
             }) : null
         },
-        buildLayout: () => (0, d.WJ)("SubscriptionsPanel") ? [c] : [g]
+        buildLayout: () => (0, A.WJ)("SubscriptionsPanel") ? [c] : [_]
     })

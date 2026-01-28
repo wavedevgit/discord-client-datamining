@@ -11,10 +11,10 @@ var n = i(934551),
     a = i(635603),
     o = i(531525),
     T = i(985018);
-let A = (0, l.zZ)(s.X.KEYBINDS_CATEGORY, {
+let d = (0, l.zZ)(s.X.KEYBINDS_CATEGORY, {
         buildLayout: () => [a.O]
     }),
-    d = (0, l.t_)(s.X.KEYBINDS_PANEL, {
+    A = (0, l.t_)(s.X.KEYBINDS_PANEL, {
         usePredicate: () => !(0, r.dk)("LegacyKeybindsPanel"),
         useTitle: () => T.intl.string(T.t.T9DA2K),
         StronglyDiscouragedCustomComponent: u.A,
@@ -23,11 +23,11 @@ let A = (0, l.zZ)(s.X.KEYBINDS_CATEGORY, {
     S = (0, l.t_)(s.X.KEYBINDS_PANEL, {
         usePredicate: () => (0, r.dk)("KeybindsPanel"),
         useTitle: () => T.intl.string(T.t.T9DA2K),
-        buildLayout: () => [A]
+        buildLayout: () => [d]
     }),
     E = (0, l.i4)(s.X.KEYBINDS_SIDEBAR_ITEM, {
         useTitle: () => T.intl.string(T.t.T9DA2K),
         getLegacySearchKey: () => (0, r.WJ)("KeybindsPanel") ? void 0 : o.H.KEYBINDS,
         icon: n.KeyboardIcon,
-        buildLayout: () => (0, r.WJ)("KeybindsPanel") ? [S] : [d]
+        buildLayout: () => (0, r.WJ)("KeybindsPanel") ? [S] : [A]
     })

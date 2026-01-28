@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 843956, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    K: () => g
+    K: () => _
 });
 var n = i(419954),
     l = i(780964),
@@ -11,12 +11,12 @@ var n = i(419954),
     a = i(550649),
     o = i(211639),
     T = i(657733),
-    A = i(728699),
-    d = i(345648),
+    d = i(728699),
+    A = i(345648),
     S = i(814870),
     E = i(863671),
-    _ = i(985018);
-let g = (0, n.WI)(l.X.USER_SECTION, {
-    useTitle: () => _.intl.string(_.t.cduTBL),
-    buildLayout: () => [s.J, o.TC, T.v, A.T, r.J, E.$, a.z, d.e, u.r, S.u]
+    g = i(985018);
+let _ = (0, n.WI)(l.X.USER_SECTION, {
+    useTitle: () => g.intl.string(g.t.cduTBL),
+    buildLayout: () => [s.J, o.TC, T.v, d.T, r.J, E.$, a.z, A.e, u.r, S.u]
 })

@@ -1,6 +1,6 @@
-/** Chunk was on 60667 **/
-/** chunk id: 945276, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** Chunk was on 35270 **/
+/** chunk id: 945276, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     A: () => l
 });
 var r = n(311907),
@@ -8,7 +8,7 @@ var r = n(311907),
 
 function l() {
     return (0, r.bG)([i.default], () => {
-        var e;
-        return null == (e = i.default.getCurrentUser()) ? void 0 : e.nsfwAllowed
+        var t;
+        return null == (t = i.default.getCurrentUser()) ? void 0 : t.nsfwAllowed
     })
 }

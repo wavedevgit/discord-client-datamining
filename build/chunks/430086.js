@@ -1,10 +1,10 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 430086, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Fv: () => p,
+    Fv: () => _,
     GY: () => m,
     M$: () => g,
-    Oc: () => _,
+    Oc: () => p,
     kF: () => u
 });
 var r = n(949645),
@@ -20,12 +20,12 @@ let u = {
         comboKeysBindGlobal: !0,
         action: () => ((0, r.A)(), !1)
     },
-    _ = {
+    p = {
         binds: ["alt+up"],
         comboKeysBindGlobal: !0,
         action: () => ((0, r.A)(-1), !1)
     },
-    p = {
+    _ = {
         binds: ["mod+alt+right"],
         comboKeysBindGlobal: !0,
         action() {

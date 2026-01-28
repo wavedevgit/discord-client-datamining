@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 965563, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 }), n(667532);
 var r = n(627968),
     i = n(64700),
@@ -12,29 +12,29 @@ var r = n(627968),
     c = n(711014),
     d = n(403362),
     u = n(612025),
-    _ = n(303351),
-    p = n(985018),
+    p = n(303351),
+    _ = n(985018),
     m = n(208227);
 let g = {
-    label: () => p.intl.string(p.t["32u1Dx"]),
+    label: () => _.intl.string(_.t["32u1Dx"]),
     value: u.YG
 };
 
-function A() {
+function f() {
     let {
         selectedGuildId: e,
         setSelectedGuildId: t
-    } = (0, u.xk)(), n = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), p = (0, l.bG)([o.A], () => o.A.getGuilds()), {
-        hideGuildOptions: A,
-        hideGlobalOption: f
-    } = (0, _.Z)(), h = n[0];
+    } = (0, u.xk)(), n = (0, l.bG)([c.Ay], () => c.Ay.getFlattenedGuildIds()), _ = (0, l.bG)([o.A], () => o.A.getGuilds()), {
+        hideGuildOptions: f,
+        hideGlobalOption: b
+    } = (0, p.Z)(), h = n[0];
     i.useEffect(() => {
-        f && A || (e === u.YG && e !== h && f && t(h), e !== u.YG && A && t(u.YG))
-    }, [e, t, f, A, h]);
-    let b = i.useMemo(() => {
+        b && f || (e === u.YG && e !== h && b && t(h), e !== u.YG && f && t(u.YG))
+    }, [e, t, b, f, h]);
+    let A = i.useMemo(() => {
         var e, t;
-        let i = A ? [] : n.map(e => {
-            let t = p[e];
+        let i = f ? [] : n.map(e => {
+            let t = _[e];
             return null == t ? null : {
                 id: t.id,
                 label: t.name,
@@ -47,7 +47,7 @@ function A() {
                 })
             }
         }).filter(d.Vq);
-        return f || i.unshift((e = function(e) {
+        return b || i.unshift((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -86,13 +86,13 @@ function A() {
         })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
         }), e)), i
-    }, [A, n, f, p]);
+    }, [f, n, b, _]);
     return (0, r.jsx)(s.ZiE, {
         selectionMode: "single",
         onSelectionChange: e => {
             t(e)
         },
         value: e,
-        options: b
+        options: A
     })
 }

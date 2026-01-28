@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 12508, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    n: () => d
+    n: () => A
 });
 var n = i(64700),
     l = i(665260),
@@ -11,9 +11,9 @@ var n = i(64700),
     a = i(253932),
     o = i(780964),
     T = i(652215),
-    A = i(985018);
-let d = (0, r.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
-    useTitle: () => A.intl.string(A.t.qsMfsH),
+    d = i(985018);
+let A = (0, r.zD)(o.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_MUTUAL_GUILDS_SETTING, {
+    useTitle: () => d.intl.string(d.t.qsMfsH),
     useValue: () => {
         let t = a.FA.useSetting(),
             e = n.useMemo(() => (0, u.Lx)(t), [t]);

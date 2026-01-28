@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 578598, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     D: () => a
@@ -18,22 +18,22 @@ function a(e) {
         useVariant: c,
         useDisabled: d,
         onClick: u
-    } = t, [_, p] = i.useState(!1), m = i.useCallback(() => {
+    } = t, [p, _] = i.useState(!1), m = i.useCallback(() => {
         let e = u();
-        e instanceof Promise && (p(!0), e.finally(() => p(!1)))
-    }, [u]), g = a(), A = null == o ? void 0 : o(), f = n(), h = null == c ? void 0 : c(), b = null == d ? void 0 : d();
+        e instanceof Promise && (_(!0), e.finally(() => _(!1)))
+    }, [u]), g = a(), f = null == o ? void 0 : o(), b = n(), h = null == c ? void 0 : c(), A = null == d ? void 0 : d();
     return (0, r.jsx)(s.L, {
         children: (0, r.jsx)(l.D0$, {
             label: g,
-            description: A,
-            disabled: b,
+            description: f,
+            disabled: A,
             layout: "horizontal",
             children: (0, r.jsx)(l.Button, {
                 onClick: m,
-                text: f,
+                text: b,
                 variant: h,
-                disabled: b,
-                loading: _
+                disabled: A,
+                loading: p
             })
         })
     })

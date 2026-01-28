@@ -1,8 +1,8 @@
-/** Chunk was on 21425 **/
+/** Chunk was on 78572 **/
 /** chunk id: 302959, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I,
-    M: () => S
+    A: () => x,
+    M: () => j
 });
 var r = n(627968),
     i = n(64700),
@@ -18,10 +18,10 @@ var r = n(627968),
     m = n(734057),
     g = n(71393),
     y = n(977997),
-    _ = n(954571),
-    b = n(821589),
-    A = n(652215),
-    h = n(654471);
+    b = n(954571),
+    _ = n(821589),
+    h = n(652215),
+    A = n(654471);
 
 function v(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -55,7 +55,7 @@ function O(e, t) {
     }), e
 }
 
-function j(e) {
+function S(e) {
     let {
         type: t,
         source: n,
@@ -67,7 +67,7 @@ function j(e) {
         onAction: u
     } = e;
     return (0, r.jsx)(o.A, {
-        className: (0, b.t)(h, "actions", t),
+        className: (0, _.t)(A, "actions", t),
         type: t,
         source: n,
         activity: i,
@@ -79,16 +79,16 @@ function j(e) {
         onAction: u
     })
 }
-let S = s.A.Types,
-    I = function(e) {
+let j = s.A.Types,
+    x = function(e) {
         let {
             activity: t,
             user: n,
             useStoreStream: o = !0,
-            showActions: b = !0,
-            hideHeader: h = !1,
-            showChannelDetails: S = !1
-        } = e, I = function(e, t) {
+            showActions: _ = !0,
+            hideHeader: A = !1,
+            showChannelDetails: j = !1
+        } = e, x = function(e, t) {
             if (null == e) return {};
             var n, r, i, l = {};
             if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -104,32 +104,32 @@ let S = s.A.Types,
                 }(e, t), Object.getOwnPropertySymbols)
                 for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
             return l
-        }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), x = (0, l.bG)([y.A, m.A], () => {
+        }(e, ["activity", "user", "useStoreStream", "showActions", "hideHeader", "showChannelDetails"]), I = (0, l.bG)([y.A, m.A], () => {
             var e;
             return m.A.getChannel(null == (e = y.A.getVoiceStateForUser(n.id)) ? void 0 : e.channelId)
-        }), E = (0, d.v)("UserActivityContainer", x), P = (0, l.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), T = (null == t ? void 0 : t.type) === A.$pd.HANG_STATUS && E ? x : null, N = (0, l.bG)([g.A, y.A, m.A], () => {
+        }), T = (0, d.v)("UserActivityContainer", I), P = (0, l.bG)([f.A], () => o ? f.A.getAnyStreamForUser(n.id) : null), E = (null == t ? void 0 : t.type) === h.$pd.HANG_STATUS && T ? I : null, w = (0, l.bG)([g.A, y.A, m.A], () => {
             var e, r;
-            return (0, a.A)(t, A.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null != T ? g.A.getGuild(T.getGuildId()) : null
-        }), w = (0, l.bG)([g.A], () => null != P ? g.A.getGuild(P.guildId) : null), C = (0, l.bG)([c.A], () => {
+            return (0, a.A)(t, h.jUm.EMBEDDED) ? g.A.getGuild(null == (e = m.A.getChannel(null == (r = y.A.getVoiceStateForSession(n.id, null == t ? void 0 : t.session_id)) ? void 0 : r.channelId)) ? void 0 : e.getGuildId()) : null != E ? g.A.getGuild(E.getGuildId()) : null
+        }), N = (0, l.bG)([g.A], () => null != P ? g.A.getGuild(P.guildId) : null), C = (0, l.bG)([c.A], () => {
             if (null != t)
                 if (null != t.application_id) return c.A.getApplication(t.application_id);
                 else return c.A.getApplicationByName(t.name);
             return null
         });
         return (i.useEffect(() => {
-            (null == t ? void 0 : t.type) === A.$pd.HANG_STATUS && E && _.default.track(A.HAw.VIEW_HANG_STATUS, v({
+            (null == t ? void 0 : t.type) === h.$pd.HANG_STATUS && T && b.default.track(h.HAw.VIEW_HANG_STATUS, v({
                 source: "UserActivity",
                 other_user_id: n.id
-            }, (0, u.A)(null == T ? void 0 : T.id)))
-        }, [null == t ? void 0 : t.type, E, T, n.id]), (null == t ? void 0 : t.type) !== A.$pd.HANG_STATUS || E) ? (0, r.jsx)(s.A, O(v({}, I), {
+            }, (0, u.A)(null == E ? void 0 : E.id)))
+        }, [null == t ? void 0 : t.type, T, E, n.id]), (null == t ? void 0 : t.type) !== h.$pd.HANG_STATUS || T) ? (0, r.jsx)(s.A, O(v({}, x), {
             activity: t,
             user: n,
             application: C,
-            hideHeader: h,
-            activityGuild: null != N ? N : w,
-            showChannelDetails: S,
-            channel: S ? x : void 0,
-            renderActions: b ? () => (0, r.jsx)(j, O(v({}, I), {
+            hideHeader: A,
+            activityGuild: null != w ? w : N,
+            showChannelDetails: j,
+            channel: j ? I : void 0,
+            renderActions: _ ? () => (0, r.jsx)(S, O(v({}, x), {
                 applicationStream: P,
                 activity: t,
                 user: n

@@ -11,17 +11,17 @@ var n = i(627968),
     a = i(827343),
     o = i(419954),
     T = i(430452),
-    A = i(975571),
-    d = i(544028),
+    d = i(975571),
+    A = i(544028),
     S = i(780964),
     E = i(130222),
-    _ = i(652215),
-    g = i(985018);
+    g = i(652215),
+    _ = i(985018);
 let c = i(993830),
     I = i(413142);
 
 function O() {
-    let t = (0, r.bG)([d.A], () => (0, s.qB1)(d.A.theme));
+    let t = (0, r.bG)([A.A], () => (0, s.qB1)(A.A.theme));
     return (0, n.jsx)("img", {
         src: t ? c : I,
         width: 48,
@@ -30,7 +30,7 @@ function O() {
     })
 }
 let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
-    useSearchTerms: () => [g.intl.string(g.t.t8Qhib), g.intl.string(g.t.hmfkCi)],
+    useSearchTerms: () => [_.intl.string(_.t.t8Qhib), _.intl.string(_.t.hmfkCi)],
     usePredicate: function() {
         return (0, r.bG)([T.A], () => T.A.isInputProfileCustom() && T.A.isNoiseSuppressionSupported())
     },
@@ -42,7 +42,7 @@ let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 noiseCancellation: e,
                 noiseSuppression: i,
                 isNoiseSuppressionSupported: o,
-                isNoiseCancellationSupported: d
+                isNoiseCancellationSupported: A
             } = (0, r.cf)([T.A], () => ({
                 noiseCancellation: T.A.getNoiseCancellation(),
                 noiseSuppression: T.A.getNoiseSuppression(),
@@ -53,28 +53,28 @@ let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
             c = e ? E.ls.KRISP : S,
             I = l.useMemo(() => {
                 let t = [];
-                return d && t.push({
+                return A && t.push({
                     id: "krisp",
-                    label: g.intl.string(g.t.rdoNzt),
+                    label: _.intl.string(_.t.rdoNzt),
                     value: E.ls.KRISP
                 }), o && t.push({
                     id: "standard",
-                    label: g.intl.string(g.t.qXeYHw),
+                    label: _.intl.string(_.t.qXeYHw),
                     value: E.ls.STANDARD
                 }), t.push({
                     id: "disabled",
-                    label: g.intl.string(g.t.wkYAlz),
+                    label: _.intl.string(_.t.wkYAlz),
                     value: E.ls.NONE
                 }), t
-            }, [d, o]),
-            N = d ? g.intl.format(g.t["1q5aTp"], {
-                helpArticle: A.A.getArticleURL(_.MVz.NOISE_SUPPRESSION)
-            }) : g.intl.string(g.t.OWKjw5);
+            }, [A, o]),
+            N = A ? _.intl.format(_.t["1q5aTp"], {
+                helpArticle: d.A.getArticleURL(g.MVz.NOISE_SUPPRESSION)
+            }) : _.intl.string(_.t.OWKjw5);
         return (0, n.jsxs)(s.BJc, {
             direction: "vertical",
             gap: 0,
             children: [(0, n.jsx)(u.l6P, {
-                label: g.intl.string(g.t.t8Qhib),
+                label: _.intl.string(_.t.t8Qhib),
                 description: N,
                 layout: "horizontal",
                 value: c,
@@ -82,7 +82,7 @@ let N = (0, o.E2)(S.X.VOICE_NOISE_SUPPRESSION_SETTING, {
                 options: I,
                 selectionMode: "single",
                 fullWidth: !0
-            }), d && (0, n.jsx)(O, {})]
+            }), A && (0, n.jsx)(O, {})]
         })
     }
 })

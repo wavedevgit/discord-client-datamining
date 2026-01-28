@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 641324, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => O
@@ -13,14 +13,14 @@ var i = n(963935),
     c = n(44909),
     d = n(98254),
     u = n(915953),
-    _ = n(39216),
-    p = n(43146),
+    p = n(39216),
+    _ = n(43146),
     m = n(39043),
     g = n(743961),
-    A = n(896005),
-    f = n(388773),
+    f = n(896005),
+    b = n(388773),
     h = n(353667),
-    b = n(182884),
+    A = n(182884),
     E = n(115617);
 
 function x(e) {
@@ -38,15 +38,15 @@ function x(e) {
                 node: t
             });
         case i.Z6.LIST:
-            return (0, r.jsx)(f.A, {
+            return (0, r.jsx)(b.A, {
                 node: t
             });
         case i.Z6.FIELD_SET:
-            return (0, r.jsx)(A.A, {
+            return (0, r.jsx)(f.A, {
                 node: t
             });
         case i.Z6.RELATED:
-            return (0, r.jsx)(b.A, {
+            return (0, r.jsx)(A.A, {
                 node: t
             });
         case i.Z6.CATEGORY:
@@ -62,11 +62,11 @@ function x(e) {
                 node: t
             });
         case i.Z6.TOGGLE:
-            return (0, r.jsx)(p.v, {
+            return (0, r.jsx)(_.v, {
                 node: t
             });
         case i.Z6.STATIC:
-            return (0, r.jsx)(_.A, {
+            return (0, r.jsx)(p.A, {
                 node: t
             });
         case i.Z6.BUTTON:

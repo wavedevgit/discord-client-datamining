@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 897208, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    p: () => _
+    p: () => g
 });
 var n = i(311907),
     l = i(55619),
@@ -23,7 +23,7 @@ let T = (0, r.zD)(a.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             hidePersonalInformation: t
         })
     }),
-    A = (0, r.zD)(a.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
+    d = (0, r.zD)(a.X.STREAMER_MODE_HIDE_INVITE_LINKS, {
         useTitle: () => o.intl.string(o.t.uWBOri),
         useValue: () => (0, n.bG)([u.A], () => {
             let {
@@ -35,7 +35,7 @@ let T = (0, r.zD)(a.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             hideInstantInvites: t
         })
     }),
-    d = (0, r.zD)(a.X.STREAMER_MODE_DISABLE_SOUNDS, {
+    A = (0, r.zD)(a.X.STREAMER_MODE_DISABLE_SOUNDS, {
         useTitle: () => o.intl.string(o.t.OrqYDP),
         useValue: () => (0, n.bG)([u.A], () => {
             let {
@@ -76,7 +76,7 @@ let T = (0, r.zD)(a.X.STREAMER_MODE_HIDE_PERSONAL_INFORMATION, {
             return null != (t = null === s.A || void 0 === s.A || null == (i = s.A.window) || null == (e = i.supportsContentProtection) ? void 0 : e.call(i)) && t
         }
     }),
-    _ = (0, r.FW)(a.X.STREAMER_MODE_OPTIONS_LIST, {
+    g = (0, r.FW)(a.X.STREAMER_MODE_OPTIONS_LIST, {
         useTitle: () => o.intl.string(o.t.UtW8R6),
-        buildLayout: () => [T, A, d, S, E]
+        buildLayout: () => [T, d, A, S, E]
     })

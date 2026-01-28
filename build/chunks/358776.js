@@ -2,32 +2,10 @@
 /** chunk id: 358776, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    E7: () => s,
-    WJ: () => u,
-    dk: () => c,
-    qz: () => l,
-    t0: () => o
+    WJ: () => a,
+    dk: () => i
 });
-var r = n(945810);
-let i = (0, r.mj)({
-        name: "2025-09-user-settings-redesign-2a",
-        kind: "user",
-        defaultConfig: {
-            showRedesignedNotifications: !1,
-            showRedesignedVoiceAndVideo: !1
-        },
-        variations: {
-            0: {
-                showRedesignedNotifications: !1,
-                showRedesignedVoiceAndVideo: !1
-            },
-            1: {
-                showRedesignedNotifications: !0,
-                showRedesignedVoiceAndVideo: !0
-            }
-        }
-    }),
-    a = (0, r.mj)({
+let r = (0, n(945810).mj)({
         name: "2025-12-user-settings-redesign-3",
         kind: "user",
         defaultConfig: {
@@ -42,18 +20,9 @@ let i = (0, r.mj)({
             }
         }
     }),
-    o = e => i.useConfig({
-        location: e
-    }).showRedesignedNotifications,
-    s = e => i.getConfig({
-        location: e
-    }).showRedesignedNotifications,
-    l = e => i.getConfig({
-        location: e
-    }).showRedesignedVoiceAndVideo,
-    c = e => a.useConfig({
+    i = e => r.useConfig({
         location: e
     }).enabled,
-    u = e => a.getConfig({
+    a = e => r.getConfig({
         location: e
     }).enabled

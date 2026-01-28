@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 429619, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -12,25 +12,25 @@ var r = n(627968),
     c = n(954571),
     d = n(979286),
     u = n(492499),
-    _ = n(652215),
-    p = n(788868),
+    p = n(652215),
+    _ = n(788868),
     m = n(985018),
     g = n(844551);
-let A = () => {
+let f = () => {
     var e;
     let {
         analyticsLocations: t
     } = (0, a.Ay)(s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
-        asset: A,
-        popoutAsset: f,
+        asset: f,
+        popoutAsset: b,
         title: h,
-        body: b,
+        body: A,
         version: E,
         revertTextColor: x
     } = (0, u.M)(), O = i.useContext(o.gl), C = null != (e = null == O ? void 0 : O.navigateWithValidation) ? e : e => e();
     return i.useEffect(() => {
-        c.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: p.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+        c.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: t,
             version: E
         })
@@ -38,14 +38,14 @@ let A = () => {
         ref: n,
         className: g.kL,
         style: {
-            backgroundImage: "url(".concat(A, ")")
+            backgroundImage: "url(".concat(f, ")")
         },
         children: [(0, r.jsx)("div", {
             className: g.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, r.jsx)("img", {
-                src: f,
+                src: b,
                 className: g.Qw,
                 alt: ""
             })
@@ -59,7 +59,7 @@ let A = () => {
             }), (0, r.jsx)(l.Text, {
                 variant: "text-sm/normal",
                 color: x ? "text-overlay-dark" : "currentColor",
-                children: b
+                children: A
             })]
         }), (0, r.jsx)(l.Button, {
             onClick: () => {

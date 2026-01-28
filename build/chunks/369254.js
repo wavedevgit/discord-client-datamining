@@ -20,7 +20,7 @@ var r = n(627968),
     _ = n(644447),
     h = n(203982),
     m = n(515718),
-    g = n(793367),
+    g = n(700331),
     E = n(454290),
     y = n(976247),
     b = n(358731),
@@ -129,7 +129,7 @@ function P(e) {
         }, c),
         L = d ? e => {
             e.stopPropagation(), e.preventDefault()
-        } : () => (0, g.Yq)(g.NJ.CONTEXT_MENU_OPENED),
+        } : () => g.l.markActionPerformed(g.N.CONTEXT_MENU_OPENED),
         x = t.length > 1;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(b.Ay, {

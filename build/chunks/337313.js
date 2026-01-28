@@ -12,8 +12,8 @@ var n = i(311907),
     a = i(287809),
     o = i(837921),
     T = i(780964),
-    A = i(731854),
-    d = i(985018);
+    d = i(731854),
+    A = i(985018);
 
 function S() {
     return (0, n.bG)([a.default, r.A], () => {
@@ -21,13 +21,13 @@ function S() {
         let e = a.default.getCurrentUser(),
             i = null != (t = null == e ? void 0 : e.isStaff()) && t,
             n = "canary" === o.Ay.releaseChannel || "development" === o.Ay.releaseChannel,
-            l = r.A.supports(A.O5.CONNECTION_REPLAY);
+            l = r.A.supports(d.O5.CONNECTION_REPLAY);
         return i && n && l
     })
 }
 let E = (0, s.zD)(T.X.VOICE_AND_VIDEO_RECORD_CONNECTION_REPLAY, {
-    useTitle: () => d.intl.string(d.t.U4FgFK),
-    useSubtitle: () => d.intl.string(d.t.Lm72RU),
+    useTitle: () => A.intl.string(A.t.U4FgFK),
+    useSubtitle: () => A.intl.string(A.t.Lm72RU),
     useValue: function() {
         return (0, n.bG)([u.Ay], () => u.Ay.shouldRecordNextConnection())
     },

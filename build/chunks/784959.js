@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 784959, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => d
+    A: () => A
 });
 var n = i(934551),
     l = i(419954),
@@ -18,13 +18,13 @@ let o = (0, l.zZ)(s.X.EXPERIMENTS_CATEGORY, {
         StronglyDiscouragedCustomComponent: u.A,
         buildLayout: () => []
     }),
-    A = (0, l.t_)(s.X.EXPERIMENTS_PANEL, {
+    d = (0, l.t_)(s.X.EXPERIMENTS_PANEL, {
         usePredicate: () => (0, r.dk)("ExperimentsPanel"),
         useTitle: () => "Experiments",
         buildLayout: () => [o]
     }),
-    d = (0, l.i4)(s.X.EXPERIMENTS_SIDEBAR_ITEM, {
+    A = (0, l.i4)(s.X.EXPERIMENTS_SIDEBAR_ITEM, {
         useTitle: () => "Experiments",
         icon: n.BeakerIcon,
-        buildLayout: () => (0, r.WJ)("ExperimentsPanel") ? [A] : [T]
+        buildLayout: () => (0, r.WJ)("ExperimentsPanel") ? [d] : [T]
     })

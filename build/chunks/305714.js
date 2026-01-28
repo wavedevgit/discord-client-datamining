@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 305714, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -12,14 +12,14 @@ var r = n(627968),
     c = n(688810),
     d = n(607470),
     u = n(676279),
-    _ = n(526292),
-    p = n(753894),
+    p = n(526292),
+    _ = n(753894),
     m = n(693591),
     g = n(985018),
-    A = n(942916),
-    f = n(635736),
+    f = n(942916),
+    b = n(635736),
     h = n(917025),
-    b = n(707621);
+    A = n(707621);
 let E = i.forwardRef((e, t) => {
     let {
         className: n,
@@ -29,46 +29,46 @@ let E = i.forwardRef((e, t) => {
         subscriptionTier: O
     } = e, {
         analyticsLocations: C
-    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), T = (0, _.ar)(), I = (0, u.TM)(), S = i.useRef(null), [j, v] = i.useState(!1);
+    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), y = (0, p.ar)(), j = (0, u.TM)(), T = i.useRef(null), [v, S] = i.useState(!1);
     return i.useEffect(() => {
-        !l || x || j || null == S.current || S.current.play()
-    }, [l, x, j]), (0, r.jsx)(c.f5, {
+        !l || x || v || null == T.current || T.current.play()
+    }, [l, x, v]), (0, r.jsx)(c.f5, {
         value: C,
         children: (0, r.jsxs)("div", {
             ref: t,
-            className: s()(A.kL, n),
+            className: s()(f.kL, n),
             children: [(0, r.jsx)(a.Heading, {
-                className: A.RH,
+                className: f.RH,
                 variant: "display-md",
                 color: "text-strong",
                 children: g.intl.string(g.t.lEw32m)
-            }), (0, r.jsx)(p.KN, {
+            }), (0, r.jsx)(_.KN, {
                 subscriptionTier: O,
-                inOfferExperience: T,
-                containerClassName: A.Z5,
+                inOfferExperience: y,
+                containerClassName: f.Z5,
                 isApplicationHome: !0,
                 isDarkMode: E
             }), (0, r.jsx)("div", {
-                className: A.av,
+                className: f.av,
                 children: (0, r.jsx)(d.A, {
                     playsInline: !0,
                     muted: !0,
                     preload: "auto",
                     poster: h.A,
-                    className: A.dV,
+                    className: f.dV,
                     onEnded: () => {
-                        v(!0)
+                        S(!0)
                     },
-                    ref: S,
+                    ref: T,
                     children: (0, r.jsx)("source", {
-                        src: I ? f.A : b.A,
-                        type: I ? m.a.MP4 : m.a.WEBM
+                        src: j ? b.A : A.A,
+                        type: j ? m.a.MP4 : m.a.WEBM
                     })
                 })
             }), (0, r.jsx)("div", {
-                className: A.es
+                className: f.es
             }), (0, r.jsx)("div", {
-                className: A.fF
+                className: f.fF
             })]
         })
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 372411, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    E: () => _
+    E: () => g
 });
 var n = i(311907),
     l = i(264686),
@@ -11,13 +11,13 @@ var n = i(311907),
     a = i(780964),
     o = i(932055),
     T = i(985018);
-let A = {
+let d = {
         useTitle: () => T.intl.string(T.t.jD1qzM),
         sound: "message1",
         useDisabled: s.kB,
         useDisabledMessage: () => (0, s.kB)() ? T.intl.string(T.t.cIRG0s) : void 0
     },
-    d = {
+    A = {
         useTitle: () => T.intl.string(T.t.XBrJT6),
         sound: "call_ringing"
     },
@@ -36,11 +36,11 @@ let A = {
         useValue: () => (0, n.bG)([u.A], () => u.A.getDisableAllSounds()),
         setValue: t => l.default.toggleDisableAllSounds(t)
     }),
-    _ = (0, r.D1)(a.X.NOTIFICATION_SOUNDS_LIST, {
+    g = (0, r.D1)(a.X.NOTIFICATION_SOUNDS_LIST, {
         initialize: function() {
             return () => {
                 (0, o.vd)()
             }
         },
-        buildLayout: () => [(0, o.i)(A), S, (0, o.i)(d), E]
+        buildLayout: () => [(0, o.i)(d), S, (0, o.i)(A), E]
     })

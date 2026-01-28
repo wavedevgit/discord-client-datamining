@@ -1,16 +1,16 @@
-/** Chunk was on 60667 **/
-/** chunk id: 81335, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    T: () => a
+/** Chunk was on 28979 **/
+/** chunk id: 81335, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    T: () => u
 });
-var r = n(253932),
-    i = n(954571),
-    l = n(406535),
-    s = n(652215);
+var n = i(253932),
+    l = i(954571),
+    s = i(406535),
+    r = i(652215);
 
-function a(e) {
-    r.T3.updateSetting(e), i.default.track(s.HAw.NOTIFICATION_SETTINGS_UPDATED, {
-        update_type: l.Y.ACCOUNT,
-        profile_updates_notifications: e
+function u(t) {
+    n.T3.updateSetting(t), l.default.track(r.HAw.NOTIFICATION_SETTINGS_UPDATED, {
+        update_type: s.Y.ACCOUNT,
+        profile_updates_notifications: t
     })
 }

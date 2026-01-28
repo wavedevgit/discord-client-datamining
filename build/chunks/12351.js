@@ -1,48 +1,48 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 72450 **/
 /** chunk id: 12351, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => C
 });
-var r, i, l = n(627968),
-    o = n(64700),
-    a = n(503698),
-    s = n.n(a),
+var i, r, l = n(627968),
+    s = n(64700),
+    o = n(503698),
+    a = n.n(o),
     c = n(397927),
     u = n(985018),
-    E = n(228763);
-let d = {
-    BLOCK: E.om,
-    INLINE: E.mG
+    d = n(228763);
+let h = {
+    BLOCK: d.om,
+    INLINE: d.mG
 };
-class _ extends(i = o.PureComponent) {
+class p extends(r = s.PureComponent) {
     render() {
         let {
             children: e,
             className: t,
             textClassName: n,
-            type: r = d.BLOCK,
-            style: i
+            type: i = h.BLOCK,
+            style: r
         } = this.props;
         return (0, l.jsxs)("div", {
-            className: s()(t, r),
-            style: i,
+            className: a()(t, i),
+            style: r,
             children: [(0, l.jsxs)(c.Text, {
                 variant: "text-sm/bold",
                 tag: "div",
                 color: "text-feedback-positive",
-                className: E.AD,
+                className: d.AD,
                 children: [u.intl.string(u.t["8tvIiN"]), ":"]
             }), (0, l.jsx)(c.Text, {
-                className: s()(E.uN, n),
+                className: a()(d.uN, n),
                 variant: "text-sm/normal",
                 children: e
             })]
         })
     }
-}(r = "Types") in _ ? Object.defineProperty(_, r, {
-    value: d,
+}(i = "Types") in p ? Object.defineProperty(p, i, {
+    value: h,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : _[r] = d;
-let A = _
+}) : p[i] = h;
+let C = p

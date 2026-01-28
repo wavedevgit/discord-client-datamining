@@ -11,12 +11,12 @@ var n = i(934551),
     a = i(358776),
     o = i(368631),
     T = i(614651),
-    A = i(859669),
-    d = i(662802),
+    d = i(859669),
+    A = i(662802),
     S = i(988208),
     E = i(819070),
-    _ = i(352694),
-    g = i(136451),
+    g = i(352694),
+    _ = i(136451),
     c = i(531525),
     I = i(985018);
 let O = (0, s.t_)(u.X.APPEARANCE_PANEL, {
@@ -24,7 +24,7 @@ let O = (0, s.t_)(u.X.APPEARANCE_PANEL, {
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [_.S, d._, g.b, S.U, E.M, A.d]
+        buildLayout: () => [g.S, A._, _.b, S.U, E.M, d.d]
     }),
     N = (0, s.t_)(u.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),

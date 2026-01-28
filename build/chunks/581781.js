@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 581781, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -13,26 +13,26 @@ var r = n(627968),
     d = n(743981),
     u = n(996373);
 
-function _(e) {
+function p(e) {
     let {
         className: t,
         guildTag: n,
         guildBadge: l,
-        guildId: _,
-        guildName: p,
+        guildId: p,
+        guildName: _,
         guildIcon: m,
         guildIconSize: g
-    } = e, A = i.useRef(null), [f, h] = i.useState(!1);
+    } = e, f = i.useRef(null), [b, h] = i.useState(!1);
     return i.useEffect(() => {
-        let e = A.current;
+        let e = f.current;
         null != e && null != e.offsetWidth && null != e.scrollWidth && h(e.offsetWidth < e.scrollWidth)
     }, []), (0, r.jsxs)("div", {
         className: s()(u.kL, t),
         children: [(0, r.jsxs)("div", {
             className: u.v2,
             children: [(0, r.jsx)(o.j, {
-                guildId: _,
-                guildName: p,
+                guildId: p,
+                guildName: _,
                 guildIcon: m,
                 iconSize: g,
                 className: u.rr,
@@ -40,19 +40,19 @@ function _(e) {
             }), (0, r.jsx)("div", {
                 className: u.zH,
                 children: (0, r.jsx)(a.m, {
-                    __unsupportedReactNodeAsText: p,
-                    shouldShow: f,
+                    __unsupportedReactNodeAsText: _,
+                    shouldShow: b,
                     children: (0, r.jsx)("span", {
-                        ref: A,
+                        ref: f,
                         className: u.J5,
-                        children: p
+                        children: _
                     })
                 })
             })]
         }), (0, r.jsx)("div", {
             className: u.I8,
             children: (0, r.jsx)(c.o9, {
-                guildId: _,
+                guildId: p,
                 className: u.Tc,
                 guildTag: n,
                 guildBadge: l,

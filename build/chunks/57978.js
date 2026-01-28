@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 57978, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A0: () => en,
@@ -12,45 +12,45 @@ var r, i, l, s = n(627968),
     c = n(793574),
     d = n(688810),
     u = n(793943),
-    _ = n(259065),
-    p = n(206835),
+    p = n(259065),
+    _ = n(206835),
     m = n(780964),
     g = n(840065),
-    A = n(676279),
-    f = n(975571),
+    f = n(676279),
+    b = n(975571),
     h = n(612669),
-    b = n(84483),
+    A = n(84483),
     E = n(88001),
     x = n(652215),
     O = n(355097),
     C = n(519412),
-    T = n(49370),
-    I = n(985018),
-    S = n(520650),
-    j = n(927961),
-    v = n(817577),
-    N = n(748222),
-    y = n(743501),
+    y = n(49370),
+    j = n(985018),
+    T = n(520650),
+    v = n(927961),
+    S = n(817577),
+    I = n(748222),
+    N = n(743501),
     P = n(652700),
     R = n(282818),
     D = n(965132),
     w = n(576765),
     L = n(88433),
     M = n(206771),
-    U = n(533234),
-    G = n(39508),
+    G = n(533234),
+    U = n(39508),
     k = n(198962),
-    V = n(636395),
-    H = n(871891),
-    B = n(116427),
+    H = n(636395),
+    B = n(871891),
+    V = n(116427),
     F = n(281146),
     Y = n(324108),
     W = n(158178),
     z = n(199579),
     K = n(170467),
     Z = n(909340),
-    X = n(455482),
-    q = n(573573),
+    q = n(455482),
+    X = n(573573),
     J = n(233572),
     Q = n(437466),
     $ = n(23145),
@@ -61,40 +61,40 @@ var r, i, l, s = n(627968),
 let ei = () => {
     let {
         analyticsLocations: e
-    } = (0, d.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, p.A)({
+    } = (0, d.Ay)(c.A.PREMIUM_MARKETING_BENTO_BOX), t = (0, _.A)({
         scrollPosition: O._F.TRY_IT_OUT,
         analyticsLocations: e
     }), r = (0, h.O9)(), i = (0, a.useCallback)(() => {
         (0, g.openUserSettings)(m.X.PROFILE_PANEL, {
             section: x.nc_.PROFILE_CUSTOMIZATION,
             analyticsLocations: e
-        }, () => (0, _.L)({
+        }, () => (0, p.L)({
             analyticsLocations: e
         }))
-    }, [e]), l = (0, A.TM)(), et = f.A.getArticleURL(x.MVz.REFERRAL_PROGRAM), en = {
+    }, [e]), l = (0, f.TM)(), et = b.A.getArticleURL(x.MVz.REFERRAL_PROGRAM), en = {
         premiumGroup: {
-            thumbnail: v,
-            assetUrl: v
+            thumbnail: S,
+            assetUrl: S
         },
         serverProfiles: {
-            thumbnail: N,
+            thumbnail: I,
             assetUrl: l ? $.Ay : ee.Ay
         },
         customThemes: {
             thumbnail: J.A,
-            assetUrl: l ? q.A : Q.A
+            assetUrl: l ? X.A : Q.A
         },
         displayNameStyles: {
             thumbnail: P.A,
-            assetUrl: l ? y.A : R.A
+            assetUrl: l ? N.A : R.A
         },
         referralProgram: {
-            thumbnail: V.A,
-            assetUrl: l ? k.A : H.A
+            thumbnail: H.A,
+            assetUrl: l ? k.A : B.A
         },
         showYourStyle: {
             thumbnail: F.A,
-            assetUrl: l ? B.A : Y.A
+            assetUrl: l ? V.A : Y.A
         },
         yourSpace: {
             thumbnail: z.A,
@@ -105,34 +105,34 @@ let ei = () => {
             assetUrl: l ? D.A : L.A
         },
         noLimits: {
-            thumbnail: U.A,
-            assetUrl: l ? M.A : G.A
+            thumbnail: G.A,
+            assetUrl: l ? M.A : U.A
         },
         orbRewards: {
-            thumbnail: X.A,
+            thumbnail: q.A,
             assetUrl: Z.A
         }
     }, er = {
         name: "serverProfiles",
-        title: I.intl.string(I.t.I9TYMg),
-        description: I.intl.string(I.t.HMSHeH),
-        descriptionCta: I.intl.string(I.t.jVcuVY),
+        title: j.intl.string(j.t.I9TYMg),
+        description: j.intl.string(j.t.HMSHeH),
+        descriptionCta: j.intl.string(j.t.jVcuVY),
         onClick: t,
         previewImage: en.serverProfiles.thumbnail,
         videoUrl: en.serverProfiles.assetUrl
     }, ei = {
         name: "referralProgram",
-        title: I.intl.string(I.t.tPY4o9),
-        description: I.intl.format(I.t.jRPQUH, {
+        title: j.intl.string(j.t.tPY4o9),
+        description: j.intl.format(j.t.jRPQUH, {
             learnMoreLink: et
         }),
         previewImage: en.referralProgram.thumbnail,
         videoUrl: en.referralProgram.assetUrl
     }, el = {
         name: "customThemes",
-        title: I.intl.string(S.default.XokIHM),
-        description: I.intl.string(S.default["7esQMC"]),
-        descriptionCta: I.intl.string(I.t.jVcuVY),
+        title: j.intl.string(T.default.XokIHM),
+        description: j.intl.string(T.default["7esQMC"]),
+        descriptionCta: j.intl.string(j.t.jVcuVY),
         previewImage: en.customThemes.thumbnail,
         onClick: () => {
             (0, u.nf)(u.HP.CUSTOM_THEME)
@@ -140,23 +140,23 @@ let ei = () => {
         videoUrl: en.customThemes.assetUrl
     }, es = {
         name: "displayNameStyles",
-        title: I.intl.string(j.default.ABtBDQ),
-        description: I.intl.string(j.default.MFNXZh),
-        descriptionCta: I.intl.string(I.t.jVcuVY),
+        title: j.intl.string(v.default.ABtBDQ),
+        description: j.intl.string(v.default.MFNXZh),
+        descriptionCta: j.intl.string(j.t.jVcuVY),
         previewImage: en.displayNameStyles.thumbnail,
         onClick: i,
-        badgeText: I.intl.string(I.t.y2b7CA).toLocaleUpperCase(),
+        badgeText: j.intl.string(j.t.y2b7CA).toLocaleUpperCase(),
         videoUrl: en.displayNameStyles.assetUrl
     }, ea = {
         name: "premiumGroup",
-        title: I.intl.formatToPlainString(C.default.VFEDDB, {
+        title: j.intl.formatToPlainString(C.default.VFEDDB, {
             premiumGroupProductName: (0, E.DP)()
         }),
-        description: I.intl.formatToPlainString(C.default.WudmR3, {
+        description: j.intl.formatToPlainString(C.default.WudmR3, {
             totalSeats: E.aw,
             premiumGroupProductName: (0, E.DP)()
         }),
-        descriptionCta: I.intl.string(I.t.hvVgAZ),
+        descriptionCta: j.intl.string(j.t.hvVgAZ),
         previewImage: en.premiumGroup.thumbnail,
         videoUrl: en.premiumGroup.assetUrl,
         onClick: () => {
@@ -184,21 +184,21 @@ let ei = () => {
                 }({}, t))
             })
         },
-        badgeText: I.intl.string(I.t.oW0eUd).toLocaleUpperCase(),
+        badgeText: j.intl.string(j.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
     }, eo = {
         name: "showYourStyle",
-        title: I.intl.string(I.t.Ij3Zmv),
-        description: I.intl.string(I.t.UsOUxY),
-        descriptionCta: I.intl.string(I.t.jVcuVY),
+        title: j.intl.string(j.t.Ij3Zmv),
+        description: j.intl.string(j.t.UsOUxY),
+        descriptionCta: j.intl.string(j.t.jVcuVY),
         previewImage: en.showYourStyle.thumbnail,
         onClick: t,
         videoUrl: en.showYourStyle.assetUrl
     }, ec = {
         name: "yourSpace",
-        title: I.intl.string(I.t.Wme3nX),
-        description: I.intl.string(I.t["/aAIqV"]),
-        descriptionCta: I.intl.string(I.t.jVcuVY),
+        title: j.intl.string(j.t.Wme3nX),
+        description: j.intl.string(j.t["/aAIqV"]),
+        descriptionCta: j.intl.string(j.t.jVcuVY),
         previewImage: en.yourSpace.thumbnail,
         onClick: () => {
             {
@@ -214,41 +214,41 @@ let ei = () => {
         videoUrl: en.yourSpace.assetUrl
     }, ed = {
         name: "emojis",
-        title: I.intl.string(I.t.zY5PPb),
-        description: I.intl.string(I.t.R5Xag2),
+        title: j.intl.string(j.t.zY5PPb),
+        description: j.intl.string(j.t.R5Xag2),
         previewImage: en.emojis.thumbnail,
         videoUrl: en.emojis.assetUrl
     }, eu = {
         name: "noLimits",
-        title: I.intl.string(I.t["6b3ydG"]),
-        description: I.intl.string(I.t["Y+IJyg"]),
+        title: j.intl.string(j.t["6b3ydG"]),
+        description: j.intl.string(j.t["Y+IJyg"]),
         previewImage: en.noLimits.thumbnail,
         videoUrl: en.noLimits.assetUrl
     }, {
-        isInTreatment: e_
-    } = (0, b.uX)("useBentoBoxes"), ep = {
+        isInTreatment: ep
+    } = (0, A.uX)("useBentoBoxes"), e_ = {
         name: "orbRewards",
-        title: I.intl.string(T.default["ZFJ/NU"]),
-        description: I.intl.string(T.default.wMi514),
-        descriptionCta: I.intl.string(I.t.hvVgAZ),
+        title: j.intl.string(y.default["ZFJ/NU"]),
+        description: j.intl.string(y.default.wMi514),
+        descriptionCta: j.intl.string(j.t.hvVgAZ),
         onClick: () => {
-            window.open(f.A.getArticleURL(x.MVz.ORBS_REWARDS_FAQ), "_blank")
+            window.open(b.A.getArticleURL(x.MVz.ORBS_REWARDS_FAQ), "_blank")
         },
         previewImage: en.orbRewards.thumbnail,
         previewImageStyle: "overlay",
         backgroundVideoUrl: en.orbRewards.assetUrl,
-        badgeText: I.intl.string(I.t.oW0eUd).toLocaleUpperCase(),
+        badgeText: j.intl.string(j.t.oW0eUd).toLocaleUpperCase(),
         badgeVariant: "expressive"
     };
     return {
-        whatsNewBoxes: r ? e_ ? [
+        whatsNewBoxes: r ? ep ? [
             [ea],
-            [ep, ei]
+            [e_, ei]
         ] : [
             [ea],
             [er, ei]
-        ] : e_ ? [
-            [ep],
+        ] : ep ? [
+            [e_],
             [er, ei]
         ] : [
             [es],

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 772797, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    A: () => d
+    A: () => A
 });
 var n = i(311907),
     l = i(827343),
@@ -11,11 +11,11 @@ var n = i(311907),
     a = i(780964),
     o = i(903427),
     T = i(731854),
-    A = i(985018);
-let d = (0, s.zD)(a.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
-    useTitle: () => A.intl.string(A.t.EGn1eN),
-    useSubtitle: () => A.intl.string(A.t.iT257i),
-    useSearchTerms: () => [A.intl.string(A.t["pS+K2L"]), A.intl.string(A.t.nuFtHH)],
+    d = i(985018);
+let A = (0, s.zD)(a.X.VOICE_PUSH_TO_TALK_LATCHING_SETTING, {
+    useTitle: () => d.intl.string(d.t.EGn1eN),
+    useSubtitle: () => d.intl.string(d.t.iT257i),
+    useSearchTerms: () => [d.intl.string(d.t["pS+K2L"]), d.intl.string(d.t.nuFtHH)],
     useValue: function() {
         return (0, n.bG)([r.A], () => {
             let {

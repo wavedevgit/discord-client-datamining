@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 845197, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     M: () => E
@@ -12,12 +12,12 @@ var r = n(627968),
     c = n(287809),
     d = n(438732),
     u = n(834981),
-    _ = n(53719),
-    p = n(390370),
+    p = n(53719),
+    _ = n(390370),
     m = n(191627),
     g = n(842130),
-    A = n(985018),
-    f = n(487693);
+    f = n(985018),
+    b = n(487693);
 
 function h(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -38,7 +38,7 @@ function h(e) {
     return e
 }
 
-function b(e, t) {
+function A(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function E(e) {
             let {
                 default: e
             } = await n.e("31385").then(n.bind(n, 58144));
-            return n => (0, r.jsx)(e, b(h({}, n), {
+            return n => (0, r.jsx)(e, A(h({}, n), {
                 currentUser: x,
                 otherUser: t
             }))
@@ -69,44 +69,44 @@ function E(e) {
             let {
                 default: e
             } = await n.e("84811").then(n.bind(n, 389094));
-            return n => (0, r.jsx)(e, b(h({}, n), {
+            return n => (0, r.jsx)(e, A(h({}, n), {
                 currentUser: x,
                 otherUser: t
             }))
         })
-    }, [x, t]), T = i.useCallback(() => {
+    }, [x, t]), y = i.useCallback(() => {
         s()(void 0 !== x, "User must be logged in to decline a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
             } = await n.e("17219").then(n.bind(n, 187278));
-            return n => (0, r.jsx)(e, b(h({}, n), {
+            return n => (0, r.jsx)(e, A(h({}, n), {
                 currentUser: x,
                 otherUser: t
             }))
         })
     }, [x, t]);
     return (0, r.jsxs)("div", {
-        className: f.kL,
+        className: b.kL,
         children: [(0, r.jsx)("div", {
-            className: f.zH,
-            children: (0, r.jsx)(p.A, {
+            className: b.zH,
+            children: (0, r.jsx)(_.A, {
                 otherUser: t,
                 status: m.Ef.PENDING
             })
         }), (0, r.jsx)("div", {
-            className: f.o1,
-            children: l ? (0, r.jsx)(_.A, {
+            className: b.o1,
+            children: l ? (0, r.jsx)(p.A, {
                 icon: o.PGe,
-                tooltip: A.intl.string(g.default.e5iHmZ),
-                onClick: T
+                tooltip: f.intl.string(g.default.e5iHmZ),
+                onClick: y
             }) : (0, r.jsxs)(r.Fragment, {
-                children: [E ? null : (0, r.jsx)(_.A, {
+                children: [E ? null : (0, r.jsx)(p.A, {
                     icon: o.A9s,
-                    tooltip: A.intl.string(g.default.krWQZK),
+                    tooltip: f.intl.string(g.default.krWQZK),
                     onClick: O
-                }), (0, r.jsx)(_.A, {
+                }), (0, r.jsx)(p.A, {
                     icon: o.PGe,
-                    tooltip: A.intl.string(g.default.bBDeNI),
+                    tooltip: f.intl.string(g.default.bBDeNI),
                     onClick: C
                 })]
             })

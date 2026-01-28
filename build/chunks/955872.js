@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 955872, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => V
+    A: () => H
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,34 +12,34 @@ var r = n(627968),
     c = n(397927),
     d = n(73153),
     u = n(631670),
-    _ = n(974544),
-    p = n(793574),
+    p = n(974544),
+    _ = n(793574),
     m = n(688810),
     g = n(429619),
-    A = n(451909),
-    f = n(550111),
+    f = n(451909),
+    b = n(550111),
     h = n(202639),
-    b = n(407217),
+    A = n(407217),
     E = n(919395),
     x = n(884546),
     O = n(287070),
     C = n(158358),
-    T = n(196291),
-    I = n(101058),
-    S = n(814390),
-    j = n(351906),
-    v = n(752319),
-    N = n(287809),
-    y = n(954571),
+    y = n(196291),
+    j = n(101058),
+    T = n(814390),
+    v = n(351906),
+    S = n(752319),
+    I = n(287809),
+    N = n(954571),
     P = n(927578),
     R = n(897358),
     D = n(606532),
     w = n(161290),
     L = n(652215),
     M = n(985018),
-    U = n(166378);
+    G = n(166378);
 
-function G(e) {
+function U(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -71,18 +71,18 @@ function k(e, t) {
     }), e
 }
 
-function V() {
+function H() {
     var e;
-    let t = (0, a.bG)([N.default], () => {
-            let e = N.default.getCurrentUser();
+    let t = (0, a.bG)([I.default], () => {
+            let e = I.default.getCurrentUser();
             return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        n = (0, a.bG)([j.A], () => j.A.hidePersonalInformation),
-        l = (0, a.cf)([v.A], () => v.A.getAllPending()),
+        n = (0, a.bG)([v.A], () => v.A.hidePersonalInformation),
+        l = (0, a.cf)([S.A], () => S.A.getAllPending()),
         {
-            pendingBio: V,
-            pendingAvatar: H,
-            pendingNameplate: B
+            pendingBio: H,
+            pendingAvatar: B,
+            pendingNameplate: V
         } = l,
         F = function(e, t) {
             if (null == e) return {};
@@ -101,31 +101,31 @@ function V() {
                 for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
             return l
         }(l, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-        Y = (0, I.V7)({
+        Y = (0, j.V7)({
             userId: t.id,
-            image: H
+            image: B
         }),
         W = (0, E.lw)({
-            pendingValue: B,
+            pendingValue: V,
             userValue: null == t || null == (e = t.collectibles) ? void 0 : e.nameplate
         }),
-        z = (0, a.bG)([v.A], () => v.A.showNotice()),
-        K = (0, S.A)() && null != V ? A.Ay.parse(void 0, V).content : V,
+        z = (0, a.bG)([S.A], () => S.A.showNotice()),
+        K = (0, T.A)() && null != H ? f.Ay.parse(void 0, H).content : H,
         Z = P.Ay.canUsePremiumProfileCustomization(t),
         {
-            analyticsLocations: X,
-            newestAnalyticsLocation: q
-        } = (0, m.Ay)(p.A.USER_SETTINGS_USER_PROFILE);
+            analyticsLocations: q,
+            newestAnalyticsLocation: X
+        } = (0, m.Ay)(_.A.USER_SETTINGS_USER_PROFILE);
     i.useEffect(() => () => d.h.wait(u.IM), []);
     let [J, Q] = i.useState(!1), {
         showRedesign: $
     } = R.X.useExperiment({
         location: "profile customization"
     }), ee = !Z, et = i.useRef(null);
-    return n ? (0, r.jsx)(_.A, {}) : (0, r.jsxs)(m.f5, {
-        value: X,
+    return n ? (0, r.jsx)(p.A, {}) : (0, r.jsxs)(m.f5, {
+        value: q,
         children: [(0, r.jsx)(g.A, {}), (0, r.jsx)(x.A, {
-            profilePreview: (0, r.jsx)(O.A, k(G({
+            profilePreview: (0, r.jsx)(O.A, k(U({
                 user: t,
                 canUsePremiumCustomization: Z,
                 onUpsellClick: D.A,
@@ -133,11 +133,11 @@ function V() {
             }, F), {
                 pendingAvatar: Y
             })),
-            nameplatePreview: (0, r.jsx)(f.A, k(G({
+            nameplatePreview: (0, r.jsx)(b.A, k(U({
                 user: t,
                 nameplate: W
             }, F), {
-                className: null == W ? U.t : void 0,
+                className: null == W ? G.t : void 0,
                 isHighlighted: !0
             })),
             children: (0, r.jsx)(w.A, {})
@@ -148,18 +148,18 @@ function V() {
             active: ee,
             children: (0, r.jsx)("div", {
                 ref: et,
-                children: (0, r.jsx)(T.A, {
+                children: (0, r.jsx)(y.A, {
                     user: t,
                     shouldShow: ee,
                     isVisible: J
                 })
             })
         }), ee && !z && (0, r.jsx)(h.d, {
-            className: U.E,
+            className: G.E,
             showUpsell: ee && !J,
             text: M.intl.format(M.t.TmfgI2, {
-                onClick: () => (0, b.K)({
-                    analyticsSource: q
+                onClick: () => (0, A.K)({
+                    analyticsSource: X
                 })
             }),
             textVariant: "heading-md/medium",
@@ -167,7 +167,7 @@ function V() {
                 variant: "expressive",
                 onClick: () => {
                     var e;
-                    y.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
+                    N.default.track(L.HAw.TRY_IT_OUT_PRESET_CLICKED, {
                         cta_variant: "floating_action_button"
                     }), null == et || null == (e = et.current) || e.scrollIntoView({
                         behavior: "smooth"

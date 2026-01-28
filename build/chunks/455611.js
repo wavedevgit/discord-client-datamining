@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 455611, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,9 +12,9 @@ var r = n(627968),
     c = n(957565),
     d = n(985018),
     u = n(139674),
-    _ = n(473169);
+    p = n(473169);
 
-function p(e) {
+function _(e) {
     let {
         code: {
             code: t,
@@ -27,7 +27,7 @@ function p(e) {
         }
     }, [s]);
     return (0, r.jsx)("li", {
-        className: _.SX,
+        className: p.SX,
         children: (0, r.jsxs)(l.DUT, {
             innerRef: a,
             className: u.Uc,
@@ -45,7 +45,7 @@ function p(e) {
 function m(e) {
     let {
         backupCodes: t
-    } = e, n = i.useCallback(e => e.map(e => (0, r.jsx)(p, {
+    } = e, n = i.useCallback(e => e.map(e => (0, r.jsx)(_, {
         code: e
     }, e.code)), []), c = i.useCallback(async () => {
         let e = o.A.getVerificationKey();

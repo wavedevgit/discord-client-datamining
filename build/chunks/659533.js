@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 659533, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => y
+    A: () => N
 });
 var r = n(627968),
     i = n(64700),
@@ -12,22 +12,22 @@ var r = n(627968),
     c = n(421380),
     d = n(397927),
     u = n(793574),
-    _ = n(688810),
-    p = n(854627),
+    p = n(688810),
+    _ = n(854627),
     m = n(427157),
     g = n(954571),
-    A = n(975571),
-    f = n(326084),
+    f = n(975571),
+    b = n(326084),
     h = n(851746),
-    b = n(664654),
+    A = n(664654),
     E = n(344904),
     x = n(221688),
     O = n(652215),
     C = n(985018),
-    T = n(509117),
-    I = n(6336);
+    y = n(509117),
+    j = n(6336);
 
-function S(e) {
+function T(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -45,128 +45,128 @@ function S(e) {
     }
     return e
 }
-let j = e => {
+let v = e => {
         let {
             userRecord: t,
             placement: n
         } = e, {
             avatarSrc: i,
             eventHandlers: l
-        } = (0, p.A)({
+        } = (0, _.A)({
             userId: null == t ? void 0 : t.id,
             size: d._3J.SIZE_32,
             animateOnHover: !0
-        }), s = null != t, a = s ? (0, r.jsx)(d.euF, S({
+        }), s = null != t, a = s ? (0, r.jsx)(d.euF, T({
             src: i,
             "aria-label": t.username,
             size: d._3J.SIZE_32
         }, l)) : (0, r.jsx)(d.Heading, {
             variant: "heading-md/semibold",
-            className: T.n5,
+            className: y.n5,
             children: n
         });
         return (0, r.jsx)(o.m_, {
             text: C.intl.string(C.t.UnKHdo),
             shouldShow: !s,
             children: (0, r.jsx)("div", {
-                className: T.Lg,
+                className: y.Lg,
                 children: a
             })
         })
     },
-    v = e => {
+    S = e => {
         let {
             numSentReferrals: t,
             placement: n
         } = e;
         return (0, r.jsxs)("div", {
-            className: T.Ip,
+            className: y.Ip,
             children: [(0, r.jsx)("div", {
-                className: T.Ej
+                className: y.Ej
             }), (0, r.jsx)("div", {
                 className: s()({
-                    [T.ch]: t > n,
-                    [T.q_]: t === n
+                    [y.ch]: t > n,
+                    [y.q_]: t === n
                 })
             })]
         })
     },
-    N = e => {
+    I = e => {
         let {
             userRecords: t
         } = e, n = t.length, i = n < 1 ? null : t[0], l = n < 2 ? null : t[1], s = n < 3 ? null : t[2];
         return (0, r.jsxs)("div", {
-            className: T.ZM,
-            children: [(0, r.jsx)(j, {
+            className: y.ZM,
+            children: [(0, r.jsx)(v, {
                 userRecord: i,
                 placement: 1
-            }), (0, r.jsx)(v, {
+            }), (0, r.jsx)(S, {
                 numSentReferrals: n,
                 placement: 1
-            }), (0, r.jsx)(j, {
+            }), (0, r.jsx)(v, {
                 userRecord: l,
                 placement: 2
-            }), (0, r.jsx)(v, {
+            }), (0, r.jsx)(S, {
                 numSentReferrals: n,
                 placement: 2
-            }), (0, r.jsx)(j, {
+            }), (0, r.jsx)(v, {
                 userRecord: s,
                 placement: 3
             })]
         })
     },
-    y = e => {
+    N = e => {
         let {
             isInSettings: t = !1
         } = e, l = (0, a.bG)([h.A], () => h.A.getRecipientStatus()), {
             referralSentUsers: o
-        } = (0, b.J)(), p = i.useMemo(() => o.map(e => new m.A(e)), [o]), j = {
+        } = (0, A.J)(), _ = i.useMemo(() => o.map(e => new m.A(e)), [o]), v = {
             redeemed: 0,
             converted: 0,
             sent: l.size
         };
         l.forEach(e => {
-            e === f.aK.REDEEMED && j.redeemed++, e === f.aK.CONVERTED && (j.redeemed++, j.converted++)
+            e === b.aK.REDEEMED && v.redeemed++, e === b.aK.CONVERTED && (v.redeemed++, v.converted++)
         });
-        let v = j.sent === b.Z,
-            y = A.A.getArticleURL(O.MVz.REFERRAL_PROGRAM),
+        let S = v.sent === A.Z,
+            N = f.A.getArticleURL(O.MVz.REFERRAL_PROGRAM),
             {
                 analyticsLocations: P
-            } = (0, _.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
+            } = (0, p.Ay)(u.A.PREMIUM_MARKETING_REFERALL_PROGRAM_PROGRESS_BAR),
             R = i.useRef(null),
-            D = j.sent / b.Z * 100,
+            D = v.sent / A.Z * 100,
             w = (0, r.jsxs)("div", {
-                className: T.hE,
+                className: y.hE,
                 children: [(0, r.jsx)(E.Ay, {
                     percentage: D,
                     progressCircleVariation: E.BN.NITRO_LOGO,
                     iconClassName: s()({
-                        [T.VC]: !t,
-                        [T.ER]: t
+                        [y.VC]: !t,
+                        [y.ER]: t
                     })
                 }), (0, r.jsxs)("div", {
-                    className: T.Ns,
+                    className: y.Ns,
                     children: [(0, r.jsx)(d.Heading, {
                         variant: t ? "heading-xl/extrabold" : "heading-xxl/extrabold",
-                        className: T.R0,
+                        className: y.R0,
                         children: (0, x.X8)({
-                            hasSentAll: v
+                            hasSentAll: S
                         })
-                    }), (0, r.jsx)(N, {
-                        userRecords: p
+                    }), (0, r.jsx)(I, {
+                        userRecords: _
                     }), (0, r.jsx)(d.Text, {
                         variant: t ? "text-sm/normal" : "text-lg/medium",
                         children: (0, x.dB)({
-                            helpdeskArticle: y,
-                            referralsStatuses: j
+                            helpdeskArticle: N,
+                            referralsStatuses: v
                         })
                     }), (0, r.jsx)("div", {
-                        className: s()(T.Fb, {
-                            [T.jv]: !t
+                        className: s()(y.Fb, {
+                            [y.jv]: !t
                         }),
                         children: (0, r.jsx)(d.wLn, {
                             "data-migration-pending": !0,
-                            className: T.r$,
+                            className: y.r$,
                             color: c.XD.CUSTOM,
                             onClick: () => (e => {
                                 let {
@@ -180,7 +180,7 @@ let j = e => {
                                     } = await n.e("26489").then(n.bind(n, 477088));
                                     return n => {
                                         var i, l;
-                                        return (0, r.jsx)(e, (i = S({}, n), l = l = {
+                                        return (0, r.jsx)(e, (i = T({}, n), l = l = {
                                             sourceAnalyticsLocations: t
                                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                                             var n = Object.keys(e);
@@ -199,33 +199,33 @@ let j = e => {
                             }),
                             onlyShineOnHover: !0,
                             children: (0, r.jsxs)("div", {
-                                className: T.Zn,
+                                className: y.Zn,
                                 children: [(0, r.jsx)("img", {
-                                    src: I,
+                                    src: j,
                                     alt: "",
-                                    className: T.QH
-                                }), v ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
+                                    className: y.QH
+                                }), S ? C.intl.string(C.t.SY9tyI) : C.intl.string(C.t.Lm2nFc)]
                             })
                         })
                     })]
                 })]
             }),
-            L = j.redeemed === b.Z;
-        return (0, r.jsx)(_.f5, {
+            L = v.redeemed === A.Z;
+        return (0, r.jsx)(p.f5, {
             value: P,
             children: (0, r.jsx)("div", {
                 className: s()({
-                    [T.f5]: L,
-                    [T.JY]: !L,
-                    [T.VX]: !t,
-                    [T.m$]: L && t
+                    [y.f5]: L,
+                    [y.JY]: !L,
+                    [y.VX]: !t,
+                    [y.m$]: L && t
                 }),
                 children: (0, r.jsx)("div", {
                     ref: R,
                     className: s()({
-                        [T.dn]: !t,
-                        [T.d_]: t,
-                        [T.kS]: L
+                        [y.dn]: !t,
+                        [y.d_]: t,
+                        [y.kS]: L
                     }),
                     children: w
                 })

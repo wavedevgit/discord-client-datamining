@@ -11,15 +11,15 @@ var n = i(627968),
     a = i(780964),
     o = i(467758),
     T = i(269420),
-    A = i(985018);
-let d = (0, u.t_)(a.X.CLIPS_PANEL, {
-        useTitle: () => A.intl.string(A.t.z2jK6X),
+    d = i(985018);
+let A = (0, u.t_)(a.X.CLIPS_PANEL, {
+        useTitle: () => d.intl.string(d.t.z2jK6X),
         useBadge: () => (0, n.jsx)(r.A, {}),
         usePredicate: s.sw,
         buildLayout: () => [T.K, o.W]
     }),
     S = (0, u.i4)(a.X.CLIPS_SIDEBAR_ITEM, {
-        useTitle: () => A.intl.string(A.t.z2jK6X),
+        useTitle: () => d.intl.string(d.t.z2jK6X),
         icon: l.ClipsIcon,
-        buildLayout: () => [d]
+        buildLayout: () => [A]
     })

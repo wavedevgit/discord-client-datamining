@@ -11,12 +11,12 @@ var n = i(419954),
     a = i(266057),
     o = i(815669),
     T = i(246743),
-    A = i(652215),
-    d = i(985018);
+    d = i(652215),
+    A = i(985018);
 let S = (0, n.zZ)(s.X.MOTION_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.e3TR1b),
-    useSubtitle: () => d.intl.format(d.t["2l9U2j"], {
-        helpdeskArticle: l.A.getArticleURL(A.MVz.REDUCED_MOTION)
+    useTitle: () => A.intl.string(A.t.e3TR1b),
+    useSubtitle: () => A.intl.format(A.t["2l9U2j"], {
+        helpdeskArticle: l.A.getArticleURL(d.MVz.REDUCED_MOTION)
     }),
     buildLayout: () => [T.W, o.z, u.R, r.b, a.S]
 })

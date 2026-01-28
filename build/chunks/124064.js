@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 124064, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => A
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,62 +12,62 @@ var r = n(627968),
     c = n(915089),
     d = n(840065),
     u = n(95701),
-    _ = n(128450),
-    p = n(652215),
+    p = n(128450),
+    _ = n(652215),
     m = n(985018),
     g = n(973746);
-let A = (0, c.Ld)(),
-    f = (0, u.createChannelRecord)({
+let f = (0, c.Ld)(),
+    b = (0, u.createChannelRecord)({
         id: "1",
-        type: p.rbe.DM
+        type: _.rbe.DM
     }),
     h = (0, c.Ld)();
 
-function b(e) {
+function A(e) {
     let {
         sectionTitle: t,
         errors: n,
         onBioChange: c,
         pendingBio: u,
-        placeholder: b,
+        placeholder: A,
         currentBio: E,
         disabled: x = !1
-    } = e, [O, C] = i.useState(null != u ? u : E), [T, I] = i.useState((0, a.x7)(O)), S = i.useRef(E), j = i.useRef(!1);
+    } = e, [O, C] = i.useState(null != u ? u : E), [y, j] = i.useState((0, a.x7)(O)), T = i.useRef(E), v = i.useRef(!1);
     return i.useEffect(() => {
-        if (S.current !== E) {
+        if (T.current !== E) {
             let e = (0, a.x7)(E);
-            C(E), I(e)
+            C(E), j(e)
         }
-        S.current = E
-    }, [E]), (0, r.jsxs)(_.A, {
+        T.current = E
+    }, [E]), (0, r.jsxs)(p.A, {
         title: t,
-        titleId: A,
+        titleId: f,
         description: m.intl.string(m.t.Bbw6Ac),
         errors: n,
         disabled: x,
         children: [(0, r.jsx)(o.Ay, {
             "aria-describedby": h,
-            "aria-labelledby": A,
+            "aria-labelledby": f,
             className: g.i,
             innerClassName: g.Z,
-            maxCharacterCount: p.NA2,
+            maxCharacterCount: _.NA2,
             onChange: function(e, t, n) {
-                t !== O && (C(t), I(n), c(t))
+                t !== O && (C(t), j(n), c(t))
             },
-            placeholder: b,
-            channel: f,
+            placeholder: A,
+            channel: b,
             textValue: O,
-            richValue: T,
+            richValue: y,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: d.USER_SETTINGS_MODAL_KEY,
             type: s.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
-                j.current = !1
+                v.current = !1
             },
             onFocus: () => {
-                j.current = !0
+                v.current = !0
             },
-            focused: j.current,
+            focused: v.current,
             onSubmit: function() {
                 return new Promise(e => {
                     e({
@@ -79,7 +79,7 @@ function b(e) {
         }), (0, r.jsx)(l.AC4, {
             id: h,
             children: m.intl.format(m.t["+DFxLc"], {
-                maxLength: p.NA2
+                maxLength: _.NA2
             })
         })]
     })

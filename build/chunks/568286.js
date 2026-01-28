@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 568286, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     q: () => h
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(384904),
     d = n(793574),
     u = n(688810),
-    _ = n(915089),
-    p = n(250253),
+    p = n(915089),
+    _ = n(250253),
     m = n(2242),
     g = n(985018),
-    A = n(289324);
-let f = e => {
+    f = n(289324);
+let b = e => {
         let {
             transitionState: t,
             groupListing: n,
             listing: l,
-            subscription: f,
+            subscription: b,
             onClose: h
-        } = e, b = (0, _.GV)(), {
+        } = e, A = (0, p.GV)(), {
             analyticsLocations: E
         } = (0, u.Ay)(d.A.GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL), {
             cancelSubscription: x,
@@ -45,16 +45,16 @@ let f = e => {
                 error: r,
                 submitting: t
             }
-        })(E), T = async () => {
-            await x(f.id) && h()
-        }, I = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), S = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), j = s()(f.currentPeriodEnd).format("MMMM Do, YYYY"), v = g.intl.formatToPlainString(g.t.KsMRP5, {
-            numChannels: I.length,
-            numAdditionalBenefits: S.length,
-            subscriptionEndDate: j
+        })(E), y = async () => {
+            await x(b.id) && h()
+        }, j = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.CHANNEL), T = l.role_benefits.benefits.filter(e => e.ref_type === m.bN.INTANGIBLE), v = s()(b.currentPeriodEnd).format("MMMM Do, YYYY"), S = g.intl.formatToPlainString(g.t.KsMRP5, {
+            numChannels: j.length,
+            numAdditionalBenefits: T.length,
+            subscriptionEndDate: v
         });
         return (0, r.jsx)(a.Modal, {
             transitionState: t,
-            "aria-labelledby": b,
+            "aria-labelledby": A,
             actions: [{
                 text: g.intl.string(g.t.EP6EPb),
                 variant: "secondary",
@@ -62,27 +62,27 @@ let f = e => {
             }, {
                 variant: "critical-primary",
                 text: g.intl.string(g.t.F6lUDF),
-                onClick: T,
+                onClick: y,
                 loading: C
             }],
             title: g.intl.string(g.t.O6l5tM),
-            subtitle: v,
+            subtitle: S,
             onClose: h,
             children: (0, r.jsxs)(o.BJc, {
                 gap: 8,
                 children: [null != O ? (0, r.jsx)(o.wx6, {
                     type: "critical",
                     children: O.message
-                }) : null, (0, r.jsx)(p.x, {
+                }) : null, (0, r.jsx)(_.x, {
                     listingId: l.id,
                     guildId: n.guild_id,
-                    className: A.P
+                    className: f.P
                 })]
             })
         })
     },
     h = e => {
-        (0, o.qfG)(t => (0, r.jsx)(f, function(e) {
+        (0, o.qfG)(t => (0, r.jsx)(b, function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);

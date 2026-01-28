@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 378631, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -12,28 +12,28 @@ var r = n(627968),
     c = n(264249),
     d = n(253932),
     u = n(406274),
-    _ = n(871930),
-    p = n(578746),
+    p = n(871930),
+    _ = n(578746),
     m = n(531525),
     g = n(985018);
 
-function A() {
+function f() {
     var e;
     let t = (0, c.hT)(),
         n = null == (e = (0, u.A)()) || e,
-        A = (0, o.sP)(),
-        f = (0, a.yM)(),
-        h = i.useMemo(() => (!A || !!f) && !n, [A, n, f]),
-        b = i.useCallback(e => {
-            A && e ? l.A.showAgeVerificationGetStartedModal({
+        f = (0, o.sP)(),
+        b = (0, a.yM)(),
+        h = i.useMemo(() => (!f || !!b) && !n, [f, n, b]),
+        A = i.useCallback(e => {
+            f && e ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: s.q1.AGE_RESTRICTED_DM_COMMANDS_SETTINGS
             }) : d.Qe.updateSetting(e)
-        }, [A]);
-    return (0, r.jsx)(_.h, {
+        }, [f]);
+    return (0, r.jsx)(p.h, {
         setting: m.H.PRIVACY_SERVER_PRIVACY_DEFAULTS_AGE_RESTRICTED_APPS_V2,
-        children: (0, r.jsx)(p.Ay, {
+        children: (0, r.jsx)(_.Ay, {
             value: t,
-            onChange: b,
+            onChange: A,
             title: g.intl.string(g.t.XahVjj),
             note: g.intl.string(g.t.R9fXyS),
             disabled: h

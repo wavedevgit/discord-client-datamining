@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 674082, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    Y: () => d
+    Y: () => A
 });
 var n = i(311907),
     l = i(419954),
@@ -11,10 +11,10 @@ var n = i(311907),
     a = i(961583),
     o = i(276221),
     T = i(652215),
-    A = i(985018);
-let d = (0, l.zZ)(u.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.LVwR56),
-    useSubtitle: () => A.intl.format(A.t["0aNQo9"], {
+    d = i(985018);
+let A = (0, l.zZ)(u.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
+    useTitle: () => d.intl.string(d.t.LVwR56),
+    useSubtitle: () => d.intl.format(d.t["0aNQo9"], {
         helpArticle: r.A.getArticleURL(T.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
     }),
     buildLayout: () => [a.T, o.H],

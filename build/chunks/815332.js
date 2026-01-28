@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 815332, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(688810),
     d = n(599941),
     u = n(322092),
-    _ = n(985018);
+    p = n(985018);
 
-function p(e) {
+function _(e) {
     let {
         groupListingId: t,
         subscription: n,
         className: l
     } = e, {
-        analyticsLocations: p
+        analyticsLocations: _
     } = (0, c.Ay)(o.A.PENDING_PLAN_CHANGE_NOTICE), {
         resetRenewalMutation: m,
         submitting: g,
-        error: A
+        error: f
     } = (e => {
         let [t, n] = i.useState(!1), [r, l] = i.useState(null);
         return {
@@ -41,11 +41,11 @@ function p(e) {
             submitting: t,
             error: r
         }
-    })(p), f = (0, d.cY)(t, {
+    })(_), b = (0, d.cY)(t, {
         includeSoftDeleted: !0
     }), {
         currentListing: h,
-        nextListing: b
+        nextListing: A
     } = i.useMemo(() => {
         if ((null == n ? void 0 : n.renewalMutations) == null) return {
             currentListing: void 0,
@@ -54,22 +54,22 @@ function p(e) {
         let e = n.items[0].planId,
             t = n.renewalMutations.items[0].planId;
         return {
-            currentListing: f.find(t => t.subscription_plans[0].id === e),
-            nextListing: f.find(e => e.subscription_plans[0].id === t)
+            currentListing: b.find(t => t.subscription_plans[0].id === e),
+            nextListing: b.find(e => e.subscription_plans[0].id === t)
         }
-    }, [n, f]);
-    if (null == n || null == h || null == b) return null;
+    }, [n, b]);
+    if (null == n || null == h || null == A) return null;
     let E = s()(n.currentPeriodEnd).format("MMM DD, YYYY");
     return (0, r.jsx)(u.A, {
-        message: _.intl.format(_.t.chw89X, {
+        message: p.intl.format(p.t.chw89X, {
             currentListing: h.name,
-            nextListing: b.name,
+            nextListing: A.name,
             changeDate: E
         }),
-        error: null == A ? void 0 : A.message,
+        error: null == f ? void 0 : f.message,
         onClick: () => m(n),
         submitting: g,
-        ctaMessage: _.intl.string(_.t.De4wI8),
+        ctaMessage: p.intl.string(p.t.De4wI8),
         className: l
     })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 715999, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    q: () => A
+    q: () => d
 });
 var n = i(627968),
     l = i(64700),
@@ -11,13 +11,13 @@ var n = i(627968),
     a = i(557571),
     o = i(985018),
     T = i(895431);
-let A = () => {
+let d = () => {
     let {
         isWeb: t,
         installationStatus: e,
         connectionStatus: i,
-        perkAvailableToUser: A
-    } = (0, a.lV)(), d = (0, l.useMemo)(() => {
+        perkAvailableToUser: d
+    } = (0, a.lV)(), A = (0, l.useMemo)(() => {
         switch (i) {
             case u.l7.CONNECTED:
                 return o.intl.format(T.default.EVQZqy, {
@@ -40,7 +40,7 @@ let A = () => {
         if (t) return o.intl.format(T.default.z6v0w5, {
             helpdeskArticle: r.V
         });
-        if (!A) return o.intl.format(T.default.yL6mvx, {
+        if (!d) return o.intl.format(T.default.yL6mvx, {
             helpdeskArticle: r.V
         });
         switch (e) {
@@ -68,7 +68,7 @@ let A = () => {
             case u.Lk.ZERO_TRUST:
                 return o.intl.string(T.default.KVSUDs);
             case u.Lk.INSTALLED:
-                return d;
+                return A;
             case u.Lk.NOT_INSTALLED:
             case u.Lk.UNKNOWN:
             default:
@@ -76,7 +76,7 @@ let A = () => {
                     helpdeskArticle: r.V
                 })
         }
-    }, [t, e, d, A]);
+    }, [t, e, A, d]);
     return (0, n.jsx)(s.EYj, {
         variant: "text-sm/normal",
         color: "text-subtle",

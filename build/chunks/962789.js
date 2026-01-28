@@ -1,8 +1,8 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 962789, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => v,
-    T: () => j
+    A: () => S,
+    T: () => v
 }), n(638769), n(321073);
 var r = n(627968),
     i = n(64700),
@@ -13,14 +13,14 @@ var r = n(627968),
     c = n(975571),
     d = n(661191),
     u = n(253932),
-    _ = n(780964),
-    p = n(978304),
+    p = n(780964),
+    _ = n(978304),
     m = n(840065),
     g = n(744479),
-    A = n(871930),
-    f = n(578746),
+    f = n(871930),
+    b = n(578746),
     h = n(531525),
-    b = n(652215),
+    A = n(652215),
     E = n(985018),
     x = n(419205);
 
@@ -89,8 +89,8 @@ function O(e) {
                 children: l
             }), (0, r.jsxs)(a.DUT, {
                 onClick: () => {
-                    (0, m.openUserSettings)(_.X.AUTHORIZED_APPS_PANEL, {
-                        section: b.nc_.AUTHORIZED_APPS
+                    (0, m.openUserSettings)(p.X.AUTHORIZED_APPS_PANEL, {
+                        section: A.nc_.AUTHORIZED_APPS
                     })
                 },
                 className: x.bJ,
@@ -115,12 +115,12 @@ function O(e) {
 
 function C() {
     let e = u.Zk.useSetting();
-    return (0, r.jsx)(A.h, {
+    return (0, r.jsx)(f.h, {
         setting: h.H.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
-        children: (0, r.jsx)(f.Ay, {
+        children: (0, r.jsx)(b.Ay, {
             title: E.intl.string(E.t.XpBObB),
             note: E.intl.format(E.t.oZsHTD, {
-                helpdeskArticle: c.A.getArticleURL(b.MVz.SLAYER_GAME_FRIENDS)
+                helpdeskArticle: c.A.getArticleURL(A.MVz.SLAYER_GAME_FRIENDS)
             }),
             value: e,
             onChange: u.Zk.updateSetting
@@ -128,7 +128,7 @@ function C() {
     })
 }
 
-function T() {
+function y() {
     let e = u.TA.useSetting(),
         t = e === l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : e,
         n = [{
@@ -141,9 +141,9 @@ function T() {
             name: E.intl.string(E.t.AolKwN),
             value: l.fL.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
         }];
-    return (0, r.jsxs)(A.h, {
+    return (0, r.jsxs)(f.h, {
         setting: h.H.PRIVACY_AND_SAFETY_IN_GAME_DMS,
-        children: [(0, r.jsx)(A._, {
+        children: [(0, r.jsx)(f._, {
             header: E.intl.string(E.t["ms+Tme"]),
             description: E.intl.string(E.t["4NN4+/"])
         }), (0, r.jsx)(a.z6M, {
@@ -154,7 +154,7 @@ function T() {
     })
 }
 
-function I() {
+function j() {
     return (0, r.jsxs)("div", {
         className: x.do,
         children: [(0, r.jsx)(a.Text, {
@@ -166,44 +166,44 @@ function I() {
             variant: "text-sm/normal",
             color: "text-muted",
             children: E.intl.format(E.t.V8wClM, {
-                helpdeskArticle: c.A.getArticleURL(b.MVz.SOCIAL_LAYER_CONNECTIONS)
+                helpdeskArticle: c.A.getArticleURL(A.MVz.SOCIAL_LAYER_CONNECTIONS)
             })
         })]
     })
 }
 
-function S(e) {
+function T(e) {
     let {
         applications: t
     } = e;
     return t.length > 0 ? (0, r.jsx)(O, {
         applications: t
-    }) : (0, r.jsx)(I, {})
-}
-
-function j() {
-    let {
-        showLoadingIndicator: e,
-        slayerSdkApplications: t
-    } = (0, p.A)(!0);
-    return e ? (0, r.jsx)(a.y$y, {}) : (0, r.jsx)(S, {
-        applications: t
-    })
+    }) : (0, r.jsx)(j, {})
 }
 
 function v() {
     let {
         showLoadingIndicator: e,
         slayerSdkApplications: t
-    } = (0, p.A)(!0);
+    } = (0, _.A)(!0);
+    return e ? (0, r.jsx)(a.y$y, {}) : (0, r.jsx)(T, {
+        applications: t
+    })
+}
+
+function S() {
+    let {
+        showLoadingIndicator: e,
+        slayerSdkApplications: t
+    } = (0, _.A)(!0);
     return (0, r.jsx)(g.A, {
         children: e ? (0, r.jsx)(a.y$y, {}) : (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(S, {
+            children: [(0, r.jsx)(T, {
                 applications: t
             }), t.length > 0 && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(C, {}), (0, r.jsx)("div", {
                     className: x.yF
-                }), (0, r.jsx)(T, {})]
+                }), (0, r.jsx)(y, {})]
             })]
         })
     })

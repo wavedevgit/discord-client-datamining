@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 548018, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    c: () => _,
+    c: () => g,
     f: () => E
 }), i(321073);
 var n = i(627968),
@@ -12,8 +12,8 @@ var n = i(627968),
     a = i(287809),
     o = i(780964),
     T = i(709913),
-    A = i(32096),
-    d = i(545214),
+    d = i(32096),
+    A = i(545214),
     S = i(985018);
 
 function E() {
@@ -22,15 +22,15 @@ function E() {
         return null != t && t.mfaEnabled
     })
 }
-let _ = (0, s.E2)(o.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
+let g = (0, s.E2)(o.X.ACCOUNT_AUTHENTICATOR_APP_SETTING, {
     useSearchTerms: function() {
         let t = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled()),
             e = [S.intl.string(S.t.m0FidJ), S.intl.string(S.t.xZEzbu)];
         return t ? e.push(S.intl.string(S.t["D+aE7g"])) : e.push(S.intl.string(S.t.cDgKte)), e
     },
     usePredicate: function() {
-        let t = (0, A.b)(),
-            e = (0, d.A)(),
+        let t = (0, d.b)(),
+            e = (0, A.A)(),
             i = E();
         return !t && !e && i
     },

@@ -11,8 +11,8 @@ var n = i(64700),
     a = i(780964),
     o = i(840065),
     T = i(856134),
-    A = i(662128),
-    d = i(811231),
+    d = i(662128),
+    A = i(811231),
     S = i(985018);
 let E = (0, s.zZ)(a.X.SOUNDS_CATEGORY, {
     useTitle: () => S.intl.string(S.t.MKWyKc),
@@ -28,5 +28,5 @@ let E = (0, s.zZ)(a.X.SOUNDS_CATEGORY, {
             }
         }, [t])
     },
-    buildLayout: () => [d.Y, T.F, A.D]
+    buildLayout: () => [A.Y, T.F, d.D]
 })

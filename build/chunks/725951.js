@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 725951, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => S,
+    A: () => _,
     f: () => p
 });
 var n, l = r(627968),
@@ -78,7 +78,7 @@ class g extends s.PureComponent {
         super(e), d(this, "_animated", void 0), this._animated = new o.A.Value(-1 * e.direction)
     }
 }
-let S = e => {
+let _ = e => {
     let {
         children: t,
         step: r,

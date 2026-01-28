@@ -11,8 +11,8 @@ var n = i(627968),
     a = i(780964),
     o = i(902713),
     T = i(428961),
-    A = i(639500),
-    d = i(985018);
+    d = i(639500),
+    A = i(985018);
 
 function S() {
     return (0, n.jsx)(u.A, {
@@ -20,7 +20,7 @@ function S() {
     })
 }
 let E = (0, s.zZ)(a.X.VOICE_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.K3lovD),
+    useTitle: () => A.intl.string(A.t.K3lovD),
     useInlineNotice: function() {
         let t = (0, u.I)("voice");
         return l.useMemo(() => t.canPrompt ? {
@@ -28,5 +28,5 @@ let E = (0, s.zZ)(a.X.VOICE_CATEGORY, {
             notice: S
         } : null, [t.canPrompt])
     },
-    buildLayout: () => [o.a, T.d, A.L]
+    buildLayout: () => [o.a, T.d, d.L]
 })

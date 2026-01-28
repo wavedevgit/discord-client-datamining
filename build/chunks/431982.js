@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 431982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968),
     i = n(64700),
@@ -13,29 +13,29 @@ var r = n(627968),
     d = n(985018),
     u = n(888920);
 
-function _(e) {
+function p(e) {
     let {
         user: t,
         guild: n,
-        titleIcon: _
+        titleIcon: p
     } = e, {
-        analyticsLocations: p
+        analyticsLocations: _
     } = (0, s.Ay)(), m = null != n, {
         userNameplate: g,
-        guildNameplate: A,
-        pendingNameplate: f,
+        guildNameplate: f,
+        pendingNameplate: b,
         pendingErrors: h
-    } = (0, o.rv)(t, null == n ? void 0 : n.id), b = i.useCallback(() => {
+    } = (0, o.rv)(t, null == n ? void 0 : n.id), A = i.useCallback(() => {
         (0, a.p)({
-            analyticsLocations: p,
+            analyticsLocations: _,
             guildId: null == n ? void 0 : n.id
         })
-    }, [p, null == n ? void 0 : n.id]), E = i.useCallback(() => {
+    }, [_, null == n ? void 0 : n.id]), E = i.useCallback(() => {
         (0, o.pX)(null, null == n ? void 0 : n.id)
     }, [null == n ? void 0 : n.id]);
     return (0, r.jsx)(c.A, {
         title: d.intl.string(d.t.x5CoXR),
-        titleIcon: _,
+        titleIcon: p,
         errors: h,
         children: (0, r.jsxs)("div", {
             className: u.u,
@@ -43,8 +43,8 @@ function _(e) {
                 variant: "primary",
                 size: "sm",
                 text: d.intl.string(d.t.BwdeM1),
-                onClick: b
-            }), (void 0 === f ? (m ? A : g) != null : null != f) && (0, r.jsx)(l.Button, {
+                onClick: A
+            }), (void 0 === b ? (m ? f : g) != null : null != b) && (0, r.jsx)(l.Button, {
                 variant: "secondary",
                 size: "sm",
                 text: m ? d.intl.string(d.t.CHf9iJ) : d.intl.string(d.t["9zwziY"]),

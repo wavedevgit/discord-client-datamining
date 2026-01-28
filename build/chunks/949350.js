@@ -11,27 +11,27 @@ var n = i(934551),
     a = i(358776),
     o = i(586685),
     T = i(525707),
-    A = i(9653),
-    d = i(473146),
+    d = i(9653),
+    A = i(473146),
     S = i(709747),
     E = i(531525),
-    _ = i(985018);
-let g = (0, s.zZ)(u.X.GIFT_INVENTORY_CATEGORY, {
-        buildLayout: () => [T.V, d.E, A.R, S.Y]
+    g = i(985018);
+let _ = (0, s.zZ)(u.X.GIFT_INVENTORY_CATEGORY, {
+        buildLayout: () => [T.V, A.E, d.R, S.Y]
     }),
     c = (0, s.t_)(u.X.GIFT_PANEL, {
         usePredicate: () => !(0, a.dk)("LegacyGiftPanel"),
-        useTitle: () => _.intl.string(_.t["jcSP+g"]),
+        useTitle: () => g.intl.string(g.t["jcSP+g"]),
         StronglyDiscouragedCustomComponent: o.Ay,
         buildLayout: () => []
     }),
     I = (0, s.t_)(u.X.GIFT_PANEL, {
         usePredicate: () => (0, a.dk)("GiftPanel"),
-        useTitle: () => _.intl.string(_.t["jcSP+g"]),
-        buildLayout: () => [g]
+        useTitle: () => g.intl.string(g.t["jcSP+g"]),
+        buildLayout: () => [_]
     }),
     O = (0, s.i4)(u.X.GIFT_SIDEBAR_ITEM, {
-        useTitle: () => _.intl.string(_.t["jcSP+g"]),
+        useTitle: () => g.intl.string(g.t["jcSP+g"]),
         getLegacySearchKey: () => (0, a.WJ)("GiftPanel") ? void 0 : E.H.GIFT_INVENTORY,
         icon: n.GiftIcon,
         trailing: {

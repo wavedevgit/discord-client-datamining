@@ -1,12 +1,12 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 171316, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     KK: () => h,
-    NZ: () => b,
-    gr: () => f,
+    NZ: () => A,
+    gr: () => b,
     lH: () => x,
     uM: () => E,
-    xs: () => A
+    xs: () => f
 });
 var r = n(64700),
     i = n(311907),
@@ -17,19 +17,19 @@ var r = n(64700),
     c = n(115063),
     d = n(899847),
     u = n(842144),
-    _ = n(704724),
-    p = n(500470),
+    p = n(704724),
+    _ = n(500470),
     m = n(834981),
     g = n(835002);
-let A = () => {
-        let e = (0, p.x)(),
+let f = () => {
+        let e = (0, _.x)(),
             t = o.p7.useControlledSetting(null == e ? void 0 : e.id);
         return null == e ? null : {
-            explicitContentNonFriendDm: (0, _.J6)({
+            explicitContentNonFriendDm: (0, p.J6)({
                 teenId: null == e ? void 0 : e.id,
                 setting: null == t ? void 0 : t.explicitContentNonFriendDm
             }),
-            explicitContentFriendDm: (0, _.J6)({
+            explicitContentFriendDm: (0, p.J6)({
                 teenId: null == e ? void 0 : e.id,
                 setting: null == t ? void 0 : t.explicitContentFriendDm,
                 isFriend: !0
@@ -37,8 +37,8 @@ let A = () => {
             explicitContentGuilds: l.TO.BLUR
         }
     },
-    f = () => {
-        let e = (0, p.x)(),
+    b = () => {
+        let e = (0, _.x)(),
             t = o.oQ.useControlledSetting(null == e ? void 0 : e.id);
         if (null == e) return null;
         let {
@@ -46,10 +46,10 @@ let A = () => {
             goreContentFriendDm: r
         } = null != t ? t : {};
         return {
-            goreContentNonFriendDm: (0, _.ky)(n) ? n : (0, s.jj)({
+            goreContentNonFriendDm: (0, p.ky)(n) ? n : (0, s.jj)({
                 isDm: !0
             }),
-            goreContentFriendDm: (0, _.ky)(r) ? r : (0, s.jj)({
+            goreContentFriendDm: (0, p.ky)(r) ? r : (0, s.jj)({
                 isDm: !0,
                 isFriend: !0
             }),
@@ -57,14 +57,14 @@ let A = () => {
         }
     },
     h = () => {
-        let e = (0, p.x)(),
+        let e = (0, _.x)(),
             t = o.qz.useControlledSetting(null == e ? void 0 : e.id),
             n = o.yr.useControlledSetting(null == e ? void 0 : e.id);
         return null != n ? n : !!t || t
     };
 
-function b() {
-    let e = (0, p.x)(),
+function A() {
+    let e = (0, _.x)(),
         t = o.up.useControlledSetting(null == e ? void 0 : e.id),
         n = r.useMemo(() => (0, c.Lx)(t), [t]);
     return n.mutualGuilds && !n.all
@@ -77,8 +77,8 @@ function E() {
 function x(e) {
     let t, n;
     return {
-        hasConsented: (t = (0, p.k)(), (0, i.bG)([u.A], () => u.A.hasConsented(t, e))),
-        updateConsent: (n = (0, p.k)(), r.useCallback(async t => {
+        hasConsented: (t = (0, _.k)(), (0, i.bG)([u.A], () => u.A.hasConsented(t, e))),
+        updateConsent: (n = (0, _.k)(), r.useCallback(async t => {
             if (null != n) try {
                 await d.Ay.updateTeenConsents(n, t ? [e] : [], t ? [] : [e])
             } catch (e) {

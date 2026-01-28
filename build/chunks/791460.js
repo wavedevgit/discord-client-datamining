@@ -11,15 +11,15 @@ var n = i(311907),
     a = i(393685),
     o = i(464639),
     T = i(466116),
-    A = i(923159),
-    d = i(881318),
+    d = i(923159),
+    A = i(881318),
     S = i(918873),
     E = i(985667),
-    _ = i(580997),
-    g = i(985018);
+    g = i(580997),
+    _ = i(985018);
 let c = (0, s.bd)(u.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
     useTitle: function(t) {
-        return t ? g.intl.string(g.t.KHsSWK) : g.intl.string(g.t.PPDo5V)
+        return t ? _.intl.string(_.t.KHsSWK) : _.intl.string(_.t.PPDo5V)
     },
     useCollapsedSubtitle: () => {
         var t;
@@ -28,5 +28,5 @@ let c = (0, s.bd)(u.X.INPUT_PROFILE_VOICE_ADVANCED_ACCORDION, {
             limit: e ? 3 : 2
         })
     },
-    buildLayout: () => [a.C, d.$, T.l, _.A, A.Q, o.e, S.W, E.i]
+    buildLayout: () => [a.C, A.$, T.l, g.A, d.Q, o.e, S.W, E.i]
 })

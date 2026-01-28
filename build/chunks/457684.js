@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 457684, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,21 +12,21 @@ var r = n(627968),
     c = n(7064),
     d = n(125040),
     u = n(652215),
-    _ = n(985018);
+    p = n(985018);
 
-function p(e) {
+function _(e) {
     let {
         currentUser: t,
         userTeamsLoading: n,
-        userTeams: p
-    } = e, [m, g] = i.useState(!1), [A, f] = i.useState(!1), [h, b] = i.useState(!1), [E, x] = i.useState(!1), [O, C] = i.useState(null), T = i.useCallback(e => {
+        userTeams: _
+    } = e, [m, g] = i.useState(!1), [f, b] = i.useState(!1), [h, A] = i.useState(!1), [E, x] = i.useState(!1), [O, C] = i.useState(null), y = i.useCallback(e => {
         if (e.body.code === u.t02.INVALID_PASSWORD) throw e;
         x(!0), C(e.body.message)
-    }, []), I = i.useCallback((e, t) => (0, s.U_)(e, t).then(u.tEg, T), [T]), S = i.useCallback(function() {
+    }, []), j = i.useCallback((e, t) => (0, s.U_)(e, t).then(u.tEg, y), [y]), T = i.useCallback(function() {
         var e;
         let n = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
             i = o.A.getGuildsArray().filter(e => e.ownerId === t.id);
-        (null != (e = null == p ? void 0 : p.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? g(!0) : i.length > 0 ? f(!0) : t.isClaimed() ? (0, l.qfG)(e => {
+        (null != (e = null == _ ? void 0 : _.filter(e => e.owner_user_id === t.id)) ? e : []).length > 0 ? g(!0) : i.length > 0 ? b(!0) : t.isClaimed() ? (0, l.qfG)(e => {
             var t, i;
             return (0, r.jsx)(a.default, (t = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
@@ -46,10 +46,10 @@ function p(e) {
                 }
                 return e
             }({}, e), i = i = {
-                handleSubmit: e => I(e, n),
-                title: n ? _.intl.string(_.t["8lQ2rR"]) : _.intl.string(_.t.jf5GGb),
-                actionText: n ? _.intl.string(_.t["8lQ2rR"]) : _.intl.string(_.t.jf5GGb),
-                children: n ? _.intl.string(_.t.FB4H1D) : _.intl.string(_.t.gk7h32)
+                handleSubmit: e => j(e, n),
+                title: n ? p.intl.string(p.t["8lQ2rR"]) : p.intl.string(p.t.jf5GGb),
+                actionText: n ? p.intl.string(p.t["8lQ2rR"]) : p.intl.string(p.t.jf5GGb),
+                children: n ? p.intl.string(p.t.FB4H1D) : p.intl.string(p.t.gk7h32)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -60,23 +60,23 @@ function p(e) {
             })(Object(i)).forEach(function(e) {
                 Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
             }), t))
-        }) : b(!0)
-    }, [t, I, p]);
+        }) : A(!0)
+    }, [t, j, _]);
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.A, {
             currentUser: t,
             disabled: n,
-            handleDisableAccount: () => S(!1),
-            handleDeleteAccount: () => S(!0)
+            handleDisableAccount: () => T(!1),
+            handleDeleteAccount: () => T(!0)
         }), (0, r.jsx)(d.A, {
             shouldRenderOwnedTeamsModal: m,
-            shouldRenderOwnedGuildsModal: A,
+            shouldRenderOwnedGuildsModal: f,
             shouldRenderDeleteAccountConfirmModal: h,
             shouldRenderDisableAccountErrorModal: E,
             disableAccountErrorMessage: O,
             onOwnedTeamsWarningModalClose: () => g(!1),
-            onOwnedGuildsWarningModalClose: () => f(!1),
-            onDeleteAccountConfirmModalClose: () => b(!1),
+            onOwnedGuildsWarningModalClose: () => b(!1),
+            onDeleteAccountConfirmModalClose: () => A(!1),
             onDisableAccountErrorModalClose: () => {
                 x(!1), C(null)
             }

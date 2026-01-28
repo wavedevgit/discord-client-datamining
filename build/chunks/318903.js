@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 318903, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => d
@@ -14,16 +14,16 @@ var r = n(627968),
 function d(e) {
     var t, n, d, u;
     let {
-        node: _
+        node: p
     } = e, {
-        destinationKey: p
-    } = _, m = null == (t = _.useSubtitle) ? void 0 : t.call(_), {
+        destinationKey: _
+    } = p, m = null == (t = p.useSubtitle) ? void 0 : t.call(p), {
         accessibleDirectory: g
-    } = (0, l._)(), A = g.entry(p), f = (null == A ? void 0 : A.parentPanelKey) != null ? g.get(A.parentPanelKey) : void 0, h = null == (n = _.useTitle) ? void 0 : n.call(_), b = null == f || null == (d = f.useTitle) ? void 0 : d.call(f);
-    if (null == f) return null;
-    let E = (null == (u = f.parent) ? void 0 : u.type) === s.Z6.SIDEBAR_ITEM ? f.parent.icon : void 0;
+    } = (0, l._)(), f = g.entry(_), b = (null == f ? void 0 : f.parentPanelKey) != null ? g.get(f.parentPanelKey) : void 0, h = null == (n = p.useTitle) ? void 0 : n.call(p), A = null == b || null == (d = b.useTitle) ? void 0 : d.call(b);
+    if (null == b) return null;
+    let E = (null == (u = b.parent) ? void 0 : u.type) === s.Z6.SIDEBAR_ITEM ? b.parent.icon : void 0;
     return (0, r.jsx)(o.U, {
-        title: null != h ? h : b,
+        title: null != h ? h : A,
         description: m,
         leadingElement: null != E && (0, r.jsx)("div", {
             className: c.z,
@@ -33,7 +33,7 @@ function d(e) {
         }),
         primaryTrailingElement: (0, r.jsx)(i.uhT, {}),
         onClick: () => a.A.setState({
-            requestedTargetKey: p
+            requestedTargetKey: _
         })
     })
 }

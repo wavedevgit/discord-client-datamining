@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 959443, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 });
 var r = n(627968);
 n(64700);
@@ -13,13 +13,13 @@ var i = n(110259),
     c = n(793943),
     d = n(996254),
     u = n(12901),
-    _ = n(738419),
-    p = n(520650),
+    p = n(738419),
+    _ = n(520650),
     m = n(985018),
     g = n(996554),
-    A = n(114149);
+    f = n(114149);
 
-function f() {
+function b() {
     let {
         analyticsLocations: e
     } = (0, a.Ay)();
@@ -31,15 +31,15 @@ function f() {
         }
     });
     let t = (0, d.X)({
-        "en-US": p.default["f/cLEi"],
-        "en-GB": p.default["f/cLEi"]
-    }, p.default.CARxAC);
+        "en-US": _.default["f/cLEi"],
+        "en-GB": _.default["f/cLEi"]
+    }, _.default.CARxAC);
     return (0, r.jsxs)("div", {
         className: g.kL,
         children: [(0, r.jsx)("div", {
             className: g.zc,
             children: (0, r.jsx)("img", {
-                src: A.A,
+                src: f.A,
                 className: g._e,
                 alt: ""
             })
@@ -51,7 +51,7 @@ function f() {
                 children: t
             }), (0, r.jsx)(s.Text, {
                 variant: "text-sm/normal",
-                children: m.intl.string(p.default.nla4RG)
+                children: m.intl.string(_.default.nla4RG)
             })]
         }), (0, r.jsx)("div", {
             className: g.UD,
@@ -59,7 +59,7 @@ function f() {
                 variant: "primary",
                 text: m.intl.string(m.t.uw9zI7),
                 onClick: () => {
-                    (0, _.b0)(_.G8.APPEARANCE_SETTINGS), (0, c.nf)(c.HP.CUSTOM_THEME, {
+                    (0, p.b0)(p.G8.APPEARANCE_SETTINGS), (0, c.nf)(c.HP.CUSTOM_THEME, {
                         from: c.xv.SETTING
                     }), (0, u.default)()
                 }

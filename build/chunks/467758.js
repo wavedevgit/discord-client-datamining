@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 467758, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    W: () => A
+    W: () => d
 });
 var n = i(734066),
     l = i(419954),
@@ -11,7 +11,7 @@ var n = i(734066),
     a = i(729134),
     o = i(766667),
     T = i(985018);
-let A = (0, l.zZ)(s.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
+let d = (0, l.zZ)(s.X.CLIPS_AUTOMATIC_CLIPPING_CATEGORY, {
     useTitle: () => T.intl.string(T.t.sA0WKL),
     usePredicate: () => {
         let {

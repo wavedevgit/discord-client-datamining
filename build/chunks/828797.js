@@ -11,12 +11,12 @@ var n = i(311907),
     a = i(36535),
     o = i(548018),
     T = i(953410),
-    A = i(102277),
-    d = i(354093),
+    d = i(102277),
+    A = i(354093),
     S = i(909081),
     E = i(25894),
-    _ = i(32096),
-    g = i(545214),
+    g = i(32096),
+    _ = i(545214),
     c = i(985018);
 let I = (0, l.zZ)(u.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
     useTitle: () => c.intl.string(c.t.pKSjEj),
@@ -29,5 +29,5 @@ let I = (0, l.zZ)(u.X.ACCOUNT_AUTHENTICATION_CATEGORY, {
             notice: a.A
         } : null
     },
-    buildLayout: () => [d.L, _.A, g.k, A.v, o.c, T.g, S.T, E.C]
+    buildLayout: () => [A.L, g.A, _.k, d.v, o.c, T.g, S.T, E.C]
 })

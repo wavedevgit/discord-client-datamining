@@ -11,13 +11,13 @@ var n = i(934551),
     a = i(435757),
     o = i(531525),
     T = i(985018);
-let A = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+let d = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         usePredicate: () => !(0, r.dk)("LegacyPremiumGuildSubscriptionsPanel"),
         useTitle: () => T.intl.string(T.t["+CbP2v"]),
         StronglyDiscouragedCustomComponent: u.A,
         buildLayout: () => []
     }),
-    d = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
+    A = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         usePredicate: () => (0, r.dk)("PremiumGuildSubscriptionsPanel"),
         useTitle: () => T.intl.string(T.t["+CbP2v"]),
         buildLayout: () => [a.t]
@@ -26,5 +26,5 @@ let A = (0, l.t_)(s.X.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
         useTitle: () => T.intl.string(T.t["+CbP2v"]),
         getLegacySearchKey: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? void 0 : o.H.GUILD_BOOSTING,
         icon: n.BoostGemIcon,
-        buildLayout: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? [d] : [A]
+        buildLayout: () => (0, r.WJ)("PremiumGuildSubscriptionsPanel") ? [A] : [d]
     })

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 298802, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    G: () => A
+    G: () => d
 });
 var n = i(775121),
     l = i(955572),
@@ -11,7 +11,7 @@ var n = i(775121),
     a = i(780964),
     o = i(652215),
     T = i(985018);
-let A = (0, r.sN)(a.X.APPEARANCE_ZOOM, {
+let d = (0, r.sN)(a.X.APPEARANCE_ZOOM, {
     usePredicate: () => u.isPlatformEmbedded,
     useTitle: () => T.intl.string(T.t.i19n5L),
     useSubtitle: () => T.intl.string(T.t.ip0uSf),

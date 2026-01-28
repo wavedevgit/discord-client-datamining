@@ -1,10 +1,9 @@
-/** Chunk was on 82575 **/
-/** chunk id: 479715, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    AQ: () => l,
-    ZA: () => s
+/** Chunk was on 28979 **/
+/** chunk id: 479715, original params: t,e,i (module,exports,require) **/
+i.d(e, {
+    ZA: () => l
 });
-let i = (0, n(945810).mj)({
+let n = (0, i(945810).mj)({
     kind: "user",
     name: "2026-01-profile-updates-notification",
     defaultConfig: {
@@ -23,14 +22,8 @@ let i = (0, n(945810).mj)({
     }
 });
 
-function s(e) {
-    return i.useConfig({
-        location: e
+function l(t) {
+    return n.useConfig({
+        location: t
     })
-}
-
-function l(e) {
-    return i.getConfig({
-        location: e
-    }).showSettingsToggle
 }

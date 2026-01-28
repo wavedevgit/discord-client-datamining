@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 939724, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var i = n(503698),
     c = n(496431),
     d = n(985018),
     u = n(338422);
-let _ = e => {
+let p = e => {
     let {
         expiresAt: t,
         className: n
@@ -21,17 +21,17 @@ let _ = e => {
     if (null == i) return null;
     let {
         days: s,
-        hours: _,
-        minutes: p,
+        hours: p,
+        minutes: _,
         seconds: m
     } = i, g = [{
         unitValue: s,
         unitType: "days"
     }, {
-        unitValue: _,
+        unitValue: p,
         unitType: "hours"
     }, {
-        unitValue: p,
+        unitValue: _,
         unitType: "minutes"
     }, {
         unitValue: m,

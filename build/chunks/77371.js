@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 77371, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    C: () => g
+    C: () => _
 });
 var n = i(627968),
     l = i(158954),
@@ -11,14 +11,14 @@ var n = i(627968),
     a = i(419954),
     o = i(430452),
     T = i(780964),
-    A = i(840065),
-    d = i(903427),
+    d = i(840065),
+    A = i(903427),
     S = i(652215),
     E = i(985018),
-    _ = i(755087);
-let g = (0, a.E2)(T.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
+    g = i(755087);
+let _ = (0, a.E2)(T.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
     useSearchTerms: () => [E.intl.string(E.t["pS+K2L"]), E.intl.string(E.t.nuFtHH)],
-    usePredicate: d.P,
+    usePredicate: A.P,
     Component: function() {
         let t = (0, s.bG)([o.A], () => {
                 let {
@@ -27,7 +27,7 @@ let g = (0, a.E2)(T.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
                 return t
             }),
             e = E.intl.format(E.t.HVvn5T, {
-                onClick: () => (0, A.openUserSettings)(T.X.KEYBINDS_PANEL, {
+                onClick: () => (0, d.openUserSettings)(T.X.KEYBINDS_PANEL, {
                     section: S.nc_.KEYBINDS
                 })
             });
@@ -36,7 +36,7 @@ let g = (0, a.E2)(T.X.VOICE_PUSH_TO_TALK_KEYBIND_SETTING, {
             description: e,
             layout: "horizontal-responsive",
             children: (0, n.jsx)("div", {
-                className: _.e,
+                className: g.e,
                 children: (0, n.jsx)(u.A, {
                     defaultValue: t,
                     onChange: t => r.A.setMode(S.TBI.PUSH_TO_TALK, {

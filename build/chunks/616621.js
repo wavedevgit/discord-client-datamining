@@ -3,9 +3,9 @@
 n.d(t, {
     A: () => u
 }), n(114821), n(339614);
-var i = n(627968),
-    r = n(311907),
-    l = n(397927),
+var r = n(627968),
+    l = n(311907),
+    i = n(397927),
     a = n(398590),
     o = n(944771),
     c = n(3258),
@@ -13,12 +13,12 @@ var i = n(627968),
     d = n(652215);
 
 function u() {
-    if (!(0, r.bG)([s.default], () => {
+    if (!(0, l.bG)([s.default], () => {
             var e, t;
             return (null == (e = s.default.getCurrentUser()) ? void 0 : e.isStaff()) === !0 || (null == (t = s.default.getCurrentUser()) ? void 0 : t.isStaffPersonal()) === !0
         })) return null;
     let e = o.componentPlaygroundConfigs.flatMap(e => e.collections);
-    return (0, i.jsx)(l.Drp, {
+    return (0, r.jsx)(i.Drp, {
         id: "playgrounds",
         label: "Playgrounds",
         action: () => {
@@ -27,8 +27,8 @@ function u() {
                 selectedStory: null
             }), (0, a.id)(d.zgK.COMPONENT_PLAYGROUND)
         },
-        children: (0, i.jsx)(l.rXV, {
-            children: e.map(e => (0, i.jsx)(l.Drp, {
+        children: (0, r.jsx)(i.rXV, {
+            children: e.map(e => (0, r.jsx)(i.Drp, {
                 id: "".concat(e.id, "-playground"),
                 label: e.name,
                 action: () => {

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 121616, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    d: () => A
+    d: () => d
 });
 var n = i(64700),
     l = i(814278),
@@ -11,7 +11,7 @@ var n = i(64700),
     a = i(179014),
     o = i(437690),
     T = i(985018);
-let A = (0, s.zZ)(u.X.VOICE_SECURITY_CATEGORY, {
+let d = (0, s.zZ)(u.X.VOICE_SECURITY_CATEGORY, {
     useTitle: () => T.intl.string(T.t.xVk85F),
     useInlineNotice: function() {
         return n.useMemo(() => ({

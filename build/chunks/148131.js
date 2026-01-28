@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 148131, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    w: () => A
+    w: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -12,15 +12,15 @@ var r = n(627968),
     c = n(287809),
     d = n(53719),
     u = n(390370),
-    _ = n(191627),
-    p = n(842130),
+    p = n(191627),
+    _ = n(842130),
     m = n(985018),
     g = n(487693);
 
-function A(e) {
+function f(e) {
     let {
         user: t
-    } = e, l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), A = i.useCallback(() => {
+    } = e, l = (0, a.bG)([c.default], () => c.default.getCurrentUser()), f = i.useCallback(() => {
         s()(void 0 !== l, "User must be logged in to accept a link request"), (0, o.mMO)(async () => {
             let {
                 default: e
@@ -66,14 +66,14 @@ function A(e) {
             className: g.zH,
             children: (0, r.jsx)(u.A, {
                 otherUser: t,
-                status: _.Ef.ACTIVE
+                status: p.Ef.ACTIVE
             })
         }), (0, r.jsx)("div", {
             className: g.o1,
             children: (0, r.jsx)(d.A, {
                 icon: o.PGe,
-                tooltip: m.intl.string(p.default.l20ZZp),
-                onClick: A
+                tooltip: m.intl.string(_.default.l20ZZp),
+                onClick: f
             })
         })]
     })

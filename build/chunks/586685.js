@@ -1,10 +1,10 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 586685, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => m,
-    SB: () => p,
+    SB: () => A,
     VD: () => x,
-    b0: () => A
+    b0: () => p
 });
 var i = n(627968);
 n(64700);
@@ -26,7 +26,7 @@ function x() {
     })
 }
 
-function p(e) {
+function A(e) {
     let {
         inOldSettings: t = !1
     } = e;
@@ -38,7 +38,7 @@ function p(e) {
     })
 }
 
-function A(e) {
+function p(e) {
     let {
         inOldSettings: t = !1
     } = e;
@@ -61,12 +61,12 @@ function m() {
             children: (0, i.jsx)(x, {})
         }), (0, i.jsx)(c.x, {
             setting: g.H.GIFT_INVENTORY_QUESTS,
-            children: (0, i.jsx)(p, {
+            children: (0, i.jsx)(A, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(c.x, {
             setting: g.H.GIFT_INVENTORY_LIST,
-            children: (0, i.jsx)(A, {
+            children: (0, i.jsx)(p, {
                 inOldSettings: !0
             })
         }), (0, i.jsx)(c.x, {

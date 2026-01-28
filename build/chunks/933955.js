@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 933955, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    r: () => A
+    r: () => d
 });
 var n = i(419954),
     l = i(780964),
@@ -11,7 +11,7 @@ var n = i(419954),
     a = i(337313),
     o = i(790147),
     T = i(985018);
-let A = (0, n.bd)(l.X.VOICE_AND_VIDEO_DIAGNOSTICS_ACCORDION, {
+let d = (0, n.bd)(l.X.VOICE_AND_VIDEO_DIAGNOSTICS_ACCORDION, {
     useTitle: t => t ? T.intl.string(T.t["/B4I8H"]) : T.intl.string(T.t.BTlsWH),
     useCollapsedSubtitle: () => T.intl.string(T.t.la1Ys4),
     buildLayout: () => [o.z, s.W, a.T, u.W, r.L]

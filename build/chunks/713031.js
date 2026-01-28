@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 713031, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,18 +12,18 @@ var r = n(627968),
     c = n(975571),
     d = n(871930),
     u = n(578746),
-    _ = n(997913),
-    p = n(531525),
+    p = n(997913),
+    _ = n(531525),
     m = n(652215),
     g = n(985018),
-    A = n(842130);
+    f = n(842130);
 
-function f() {
+function b() {
     let e = (0, l.cf)([o.A], () => o.A.hasConsented(m.YAq.PERSONALIZATION)),
         [t, n] = i.useState(e),
-        f = (0, a.uM)();
+        b = (0, a.uM)();
     return (0, r.jsx)(d.h, {
-        setting: p.H.PRIVACY_DATA_PERSONALIZE_V2,
+        setting: _.H.PRIVACY_DATA_PERSONALIZE_V2,
         children: (0, r.jsx)(u.Ay, {
             title: g.intl.string(g.t.MNKzyg),
             note: g.intl.format(g.t["eQL/Mr"], {
@@ -31,18 +31,18 @@ function f() {
             }),
             value: t,
             onChange: e => {
-                e ? (0, s.U)([m.YAq.PERSONALIZATION], []).catch(_.i).then(() => n(!0)) : (0, _.O)({
+                e ? (0, s.U)([m.YAq.PERSONALIZATION], []).catch(p.i).then(() => n(!0)) : (0, p.O)({
                     header: g.intl.string(g.t["9SNpzv"]),
                     confirmText: g.intl.string(g.t["9g5UGw"]),
                     cancelText: g.intl.string(g.t["+ZLPw9"]),
                     onConfirm: () => {
-                        (0, s.U)([], [m.YAq.PERSONALIZATION]).catch(_.i).then(() => n(!1))
+                        (0, s.U)([], [m.YAq.PERSONALIZATION]).catch(p.i).then(() => n(!1))
                     },
                     body: g.intl.string(g.t.gJvDDh)
                 })
             },
-            disabled: f,
-            tooltipText: f ? g.intl.string(A.default["6Af/cw"]) : void 0
+            disabled: b,
+            tooltipText: b ? g.intl.string(f.default["6Af/cw"]) : void 0
         })
     })
 }

@@ -8,7 +8,7 @@ var r = n(627968),
     i = n(64700),
     a = n(353709),
     o = n(765671),
-    s = n(793367),
+    s = n(700331),
     l = n(454290);
 let c = 400;
 
@@ -69,7 +69,7 @@ function d(e) {
     }, T = e => {
         if (!_) {
             if (0 === e.button) {
-                (0, s.Yq)(s.NJ.ZOOM_IN_IMAGE_PRESSED), h(!0);
+                s.l.markActionPerformed(s.N.ZOOM_IN_IMAGE_PRESSED), h(!0);
                 let t = e.clientX - window.innerWidth / 2,
                     r = e.clientY - window.innerHeight / 2,
                     i = u({
@@ -87,7 +87,7 @@ function d(e) {
                 p(i.x, i.y)
             }
             return
-        }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && ((0, s.Yq)(s.NJ.ZOOM_OUT_IMAGE_PRESSED), h(!1)), O.current = !1
+        }(e.clientX - v.x) ** 2 + (e.clientY - v.y) ** 2 < c && (s.l.markActionPerformed(s.N.ZOOM_OUT_IMAGE_PRESSED), h(!1)), O.current = !1
     };
     return (0, r.jsx)(a.animated.div, {
         ref: m,

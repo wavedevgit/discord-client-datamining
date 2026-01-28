@@ -1,60 +1,60 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 545202, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => x
 });
-var r = n(627968),
-    i = n(64700),
+var i = n(627968),
+    s = n(64700),
     l = n(311907),
-    s = n(397927),
+    r = n(397927),
     a = n(827343),
     o = n(688810),
     c = n(430452),
     d = n(77735),
     u = n(509381),
-    _ = n(985018),
-    p = n(473169);
+    g = n(985018),
+    h = n(473169);
 
-function m() {
+function x() {
     let {
         analyticsLocations: e
     } = (0, o.Ay)(), t = (0, l.bG)([c.A], () => c.A.getActiveInputProfile()), {
         enabledInputProfiles: n
     } = (0, d.d)({
         location: "UserSettingsInputProfile"
-    }), m = i.useCallback(t => {
+    }), x = s.useCallback(t => {
         let {
             value: n
         } = t;
         a.A.setActiveInputProfile(n, {
             analyticsLocations: e
         })
-    }, [e]), g = [{
+    }, [e]), A = [{
         value: u.my.VOICE_ISOLATION,
-        name: _.intl.string(_.t.cjPbpT),
-        desc: _.intl.string(_.t.CzhvnE)
+        name: g.intl.string(g.t.cjPbpT),
+        desc: g.intl.string(g.t.CzhvnE)
     }, {
         value: u.my.STUDIO,
-        name: _.intl.string(_.t.VZPR0R),
-        desc: _.intl.string(_.t.ZaJksS)
+        name: g.intl.string(g.t.VZPR0R),
+        desc: g.intl.string(g.t.ZaJksS)
     }, {
         value: u.my.CUSTOM,
-        name: _.intl.string(_.t["N/PQjv"]),
-        desc: _.intl.string(_.t.SnBmuY)
+        name: g.intl.string(g.t["N/PQjv"]),
+        desc: g.intl.string(g.t.SnBmuY)
     }].filter(e => {
         let {
             value: t
         } = e;
         return n.includes(t)
     });
-    return (0, r.jsx)("div", {
-        className: p.SX,
-        children: (0, r.jsx)(s.z6M, {
-            label: _.intl.string(_.t.LM3U3k),
-            onChange: e => m({
+    return (0, i.jsx)("div", {
+        className: h.SX,
+        children: (0, i.jsx)(r.z6M, {
+            label: g.intl.string(g.t.LM3U3k),
+            onChange: e => x({
                 value: e
             }),
-            options: g,
+            options: A,
             value: null != t ? t : u.my.CUSTOM
         })
     })

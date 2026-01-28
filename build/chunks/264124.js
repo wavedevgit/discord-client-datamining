@@ -3,17 +3,17 @@
 n.d(t, {
     A: () => s
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(311907),
-    l = n(397927),
+var l = n(311907),
+    i = n(397927),
     a = n(55619),
     o = n(351906),
     c = n(985018);
 
 function s() {
-    let e = (0, r.bG)([o.A], () => o.A.enabled, []);
-    return (0, i.jsx)(l.sLh, {
+    let e = (0, l.bG)([o.A], () => o.A.enabled, []);
+    return (0, r.jsx)(i.sLh, {
         id: "streamer-mode-toggle",
         label: c.intl.string(c.t.p9ZAJZ),
         action: () => {

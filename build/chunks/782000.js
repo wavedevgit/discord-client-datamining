@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 782000, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    B: () => A
+    B: () => d
 });
 var n = i(915618),
     l = i(572164),
@@ -11,7 +11,7 @@ var n = i(915618),
     a = i(723702),
     o = i(780964),
     T = i(985018);
-let A = (0, r.zD)(o.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
+let d = (0, r.zD)(o.X.CLIPS_ENABLE_DECOUPLED_CLIPPING, {
     useTitle: () => T.intl.string(T.t.yXvykv),
     useSubtitle: () => T.intl.string(T.t.YP3ujk),
     useValue: l.XT,

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 510898, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,9 +12,9 @@ var r = n(627968),
     c = n(888848),
     d = n(331441),
     u = n(20770),
-    _ = n(985018);
+    p = n(985018);
 
-function p(e, t, n) {
+function _(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -30,7 +30,7 @@ function m(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            p(e, t, n[t])
+            _(e, t, n[t])
         })
     }
     return e
@@ -48,7 +48,7 @@ function g(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class A extends i.PureComponent {
+class f extends i.PureComponent {
     static getDerivedStateFromError(e) {
         return {
             hasError: !0
@@ -60,36 +60,36 @@ class A extends i.PureComponent {
             style: {
                 borderRadius: 0
             },
-            children: [_.intl.format(_.t.IIHUUF, {
+            children: [p.intl.format(p.t.IIHUUF, {
                 subscriptionId: this.props.subscription.id
-            }), " ", _.intl.format(_.t.fh65ES, {
+            }), " ", p.intl.format(p.t.fh65ES, {
                 helpLink: "https://support.discord.com/hc/en-us"
             })]
         }) : this.props.children
     }
     constructor(...e) {
-        super(...e), p(this, "state", {
+        super(...e), _(this, "state", {
             hasError: !1
         })
     }
 }
 
-function f(e) {
+function b(e) {
     let {
         subscriptions: t,
         updateHeader: n
-    } = e, [l, p] = i.useState({
+    } = e, [l, _] = i.useState({
         route: d.R.HOME
     }), {
-        route: f
+        route: b
     } = l, h = () => {
-        p({
+        _({
             route: d.R.HOME
         })
-    }, b = e => {
-        p(m({
+    }, A = e => {
+        _(m({
             route: d.R.SWITCH_APP_PLANS
-        }, e)), n(_.intl.string(_.t.VFqtkP), h)
+        }, e)), n(p.intl.string(p.t.VFqtkP), h)
     }, [E, x] = i.useState({});
     i.useEffect(() => {
         for (let n of t) {
@@ -111,16 +111,16 @@ function f(e) {
     let {
         loadState: O
     } = (0, o.E)(), C = O !== o.mJ.LOADED;
-    switch (f) {
+    switch (b) {
         case d.R.HOME:
             return (0, r.jsx)(r.Fragment, {
                 children: t.map(e => {
                     var t;
-                    return (0, r.jsx)(A, {
+                    return (0, r.jsx)(f, {
                         subscription: e,
                         children: (0, r.jsx)(c.A, {
                             subscription: e,
-                            navigateToSwitchPlan: b,
+                            navigateToSwitchPlan: A,
                             loadingState: C ? c.G.LOADING : null != (t = E[e.id]) ? t : c.G.LOADING
                         })
                     }, e.id)
@@ -128,8 +128,8 @@ function f(e) {
             });
         case d.R.SWITCH_APP_PLANS:
             let {
-                route: T
-            } = l, I = function(e, t) {
+                route: y
+            } = l, j = function(e, t) {
                 if (null == e) return {};
                 var n, r, i, l = {};
                 if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -146,10 +146,10 @@ function f(e) {
                     for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
                 return l
             }(l, ["route"]);
-            return (0, r.jsx)(u.A, g(m({}, I), {
+            return (0, r.jsx)(u.A, g(m({}, j), {
                 navigateToHome: h
             }));
         default:
-            (0, s.xb)(f)
+            (0, s.xb)(b)
     }
 }

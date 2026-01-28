@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 445343, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968);
 n(64700);
@@ -14,11 +14,11 @@ var i = n(93857),
     d = n(842130),
     u = n(985018);
 
-function _() {
+function p() {
     var e;
     let t = null != (e = (0, o.k)()) ? e : void 0,
         n = i.yH.useControlledSetting(t),
-        _ = i.kf.useControlledSetting(t);
+        p = i.kf.useControlledSetting(t);
     return null == t ? null : (0, r.jsx)(l.h, {
         children: (0, r.jsx)(s.Ay, {
             title: u.intl.string(u.t.CyLYKZ),
@@ -27,7 +27,7 @@ function _() {
             }),
             value: !n,
             onChange: e => i.yH.updateControlledSetting(t, !e),
-            disabled: _
+            disabled: p
         })
     })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 10005, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
@@ -13,8 +13,8 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [_, p] = r.useState(!1), [m, g] = r.useState(!1), [A, f] = r.useState(!1), [h, b] = r.useState(!1), [E, x] = r.useState(!1), [O, C] = r.useState(!1), T = o || d || _ || m || h || O, I = r.useCallback(async e => {
-        if (!T) {
+    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [p, _] = r.useState(!1), [m, g] = r.useState(!1), [f, b] = r.useState(!1), [h, A] = r.useState(!1), [E, x] = r.useState(!1), [O, C] = r.useState(!1), y = o || d || p || m || h || O, j = r.useCallback(async e => {
+        if (!y) {
             c(!0);
             try {
                 await (0, l.nt)(e, a.Ef.ACTIVE), null == n || n()
@@ -25,8 +25,8 @@ function o(e) {
                 c(!1)
             }
         }
-    }, [T, t, n]), S = r.useCallback(async e => {
-        if (!T) {
+    }, [y, t, n]), T = r.useCallback(async e => {
+        if (!y) {
             u(!0);
             try {
                 await (0, l.nt)(e, a.Ef.DECLINED), null == n || n()
@@ -37,20 +37,20 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [T, t, n]), j = r.useCallback(async e => {
-        if (!T) {
-            p(!0);
+    }, [y, t, n]), v = r.useCallback(async e => {
+        if (!y) {
+            _(!0);
             try {
                 await (0, l.nt)(e, a.Ef.INACTIVE), null == n || n()
             } catch (n) {
                 let e = new i.LG(n);
                 null == t || t(e)
             } finally {
-                p(!1)
+                _(!1)
             }
         }
-    }, [T, t, n]), v = r.useCallback(async e => {
-        if (!T) {
+    }, [y, t, n]), S = r.useCallback(async e => {
+        if (!y) {
             g(!0);
             try {
                 await (0, l.e$)(e), null == n || n()
@@ -61,19 +61,19 @@ function o(e) {
                 g(!1)
             }
         }
-    }, [T, t, n]), N = r.useCallback(async () => {
-        if (!A) {
-            f(!0);
+    }, [y, t, n]), I = r.useCallback(async () => {
+        if (!f) {
+            b(!0);
             try {
                 await (0, l.HB)(), null == n || n()
             } catch (n) {
                 let e = new i.LG(n);
                 null == t || t(e)
             } finally {
-                f(!1)
+                b(!1)
             }
         }
-    }, [A, t, n]), y = r.useCallback(async e => {
+    }, [f, t, n]), N = r.useCallback(async e => {
         if (!E) {
             x(!0);
             try {
@@ -87,22 +87,22 @@ function o(e) {
         }
     }, [E, t, n]);
     return {
-        acceptLinkRequest: I,
-        declineLinkRequest: S,
-        disconnectLinkRequest: j,
-        cancelLinkRequest: v,
-        selectTeenUser: y,
-        getLinkCode: N,
+        acceptLinkRequest: j,
+        declineLinkRequest: T,
+        disconnectLinkRequest: v,
+        cancelLinkRequest: S,
+        selectTeenUser: N,
+        getLinkCode: I,
         requestLink: r.useCallback(async (e, r) => {
             if (!h) {
-                b(!0);
+                A(!0);
                 try {
                     await l.Ay.requestLink(e, r), null == n || n()
                 } catch (n) {
                     let e = new i.LG(n);
                     null == t || t(e)
                 } finally {
-                    b(!1)
+                    A(!1)
                 }
             }
         }, [h, t, n]),
@@ -125,9 +125,9 @@ function o(e) {
         }, [O, t]),
         isAcceptLoading: o,
         isDeclineLoading: d,
-        isDisconnectLoading: _,
+        isDisconnectLoading: p,
         isCancelLoading: m,
-        isGetLinkCodeLoading: A,
+        isGetLinkCodeLoading: f,
         isSelectTeenUserLoading: E,
         isRequestingLink: h,
         isMoreLoading: O

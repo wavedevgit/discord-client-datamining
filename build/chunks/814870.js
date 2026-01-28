@@ -12,18 +12,18 @@ var l = i(934551),
     a = i(557571),
     o = i(419954),
     T = i(933297),
-    A = i(780964),
-    d = i(368631),
+    d = i(780964),
+    A = i(368631),
     S = i(410166),
     E = i(985018),
-    _ = i(895431);
-let g = (0, o.t_)(A.X.PRIVATE_BROWSING_PANEL, {
-        useTitle: () => E.intl.string(_.default.UAA4V5),
+    g = i(895431);
+let _ = (0, o.t_)(d.X.PRIVATE_BROWSING_PANEL, {
+        useTitle: () => E.intl.string(g.default.UAA4V5),
         useBadge: () => (0, n.jsx)(s.A, {}),
         buildLayout: () => [S.r]
     }),
-    c = (0, o.i4)(A.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-        useTitle: () => E.intl.string(_.default.UAA4V5),
+    c = (0, o.i4)(d.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
+        useTitle: () => E.intl.string(g.default.UAA4V5),
         icon: l.GlobeEarthIcon,
         usePredicate: () => {
             let t = (0, r.L)(),
@@ -34,9 +34,9 @@ let g = (0, o.t_)(A.X.PRIVATE_BROWSING_PANEL, {
                 } = (0, a.lV)();
             return (0, u.lM)("private_browsing_perk_settings_page") && (e || i) && (!t || n)
         },
-        buildLayout: () => [g],
+        buildLayout: () => [_],
         trailing: {
             type: T.S.BADGE_NEW,
-            getDismissibleContentTypes: d.Tq
+            getDismissibleContentTypes: A.Tq
         }
     })

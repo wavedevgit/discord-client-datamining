@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 270887, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g
@@ -12,8 +12,8 @@ var r = n(735438),
     c = n(576705),
     d = n(309010),
     u = n(711014),
-    _ = n(619921),
-    p = n(265422),
+    p = n(619921),
+    _ = n(265422),
     m = n(652215);
 let g = i().throttle(function() {
     let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 1,
@@ -25,8 +25,8 @@ let g = i().throttle(function() {
             let n = e.indexOf(t);
             return -1 === n ? -2 : n
         }(t);
-    if (-1 !== (n += e) || (0, s.J)(l.A, o.A, c.A) || (n += e), -3 === n && (n = t.length - 1), n >= t.length || -2 === n) return void(0, p.a)(_.A.getHomeLink());
+    if (-1 !== (n += e) || (0, s.J)(l.A, o.A, c.A) || (n += e), -3 === n && (n = t.length - 1), n >= t.length || -2 === n) return void(0, _.a)(p.A.getHomeLink());
     let r = -1 === n ? m.YYv : t[n],
         i = d.A.getChannelId(r);
-    (0, p.i)(r, i === r ? null : i, !1)
+    (0, _.i)(r, i === r ? null : i, !1)
 }, m.ugG)

@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 165279, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    z: () => A
+    z: () => d
 });
 var n = i(419954),
     l = i(780964),
@@ -11,7 +11,7 @@ var n = i(419954),
     a = i(355097),
     o = i(652215),
     T = i(985018);
-let A = (0, n.v_)(l.X.DATA_USAGE_DISCLAIMER_SETTING, {
+let d = (0, n.v_)(l.X.DATA_USAGE_DISCLAIMER_SETTING, {
     useTitle: () => T.intl.string(T.t.D60Gfj),
     useSubtitle: () => T.intl.format(T.t.R5N31P, {
         onClick: () => {

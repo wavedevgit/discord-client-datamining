@@ -11,10 +11,10 @@ var n = i(419954),
     a = i(360055),
     o = i(319436),
     T = i(317014),
-    A = i(39218),
-    d = i(985018);
+    d = i(39218),
+    A = i(985018);
 let S = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.xVRG4P),
+    useTitle: () => A.intl.string(A.t.xVRG4P),
     useInlineNotice: function() {
         var t;
         let e = (0, r.I)(),
@@ -22,5 +22,5 @@ let S = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
             n = (0, s.m3)();
         return null != (t = null != e ? e : i) ? t : n
     },
-    buildLayout: () => [o.v, A.x, T.t, u.u, a.a]
+    buildLayout: () => [o.v, d.x, T.t, u.u, a.a]
 })

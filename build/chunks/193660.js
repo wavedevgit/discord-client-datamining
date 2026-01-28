@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 193660, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    w: () => d
+    w: () => A
 });
 var n = i(311907),
     l = i(955572),
@@ -11,14 +11,14 @@ var n = i(311907),
     a = i(419954),
     o = i(780964),
     T = i(985018),
-    A = i(927961);
-let d = (0, a.zD)(o.X.DISPLAY_NAME_STYLES, {
-    useTitle: () => T.intl.string(A.default["2gFUEw"]),
+    d = i(927961);
+let A = (0, a.zD)(o.X.DISPLAY_NAME_STYLES, {
+    useTitle: () => T.intl.string(d.default["2gFUEw"]),
     useSubtitle: () => {
         let {
             analyticsLocations: t
         } = (0, r.Ay)();
-        return T.intl.format(A.default.L8U56h, {
+        return T.intl.format(d.default.L8U56h, {
             onClickOpenModal() {
                 (0, u.L)({
                     analyticsLocations: t

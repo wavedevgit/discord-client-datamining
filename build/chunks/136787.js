@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 136787, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    V: () => _
+    V: () => p
 });
 var r = n(989349),
     i = n.n(r),
@@ -12,7 +12,7 @@ var r = n(989349),
     c = n(635431),
     d = n(49999);
 let u = i()("2025-11-10 10:00:00-08:00").toDate(),
-    _ = () => {
+    p = () => {
         let {
             enabled: e,
             forceNotice: t
@@ -22,8 +22,8 @@ let u = i()("2025-11-10 10:00:00-08:00").toDate(),
         if ((0, a.JZ)(s.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE) || new Date < u && !t || null == n || null != n.createdAt && n.createdAt > u && !t) return !1;
         let r = n.currentPeriodStart,
             i = n.currentPeriodEnd,
-            _ = i <= new Date(Date.now() + 12096e5) && i > new Date;
+            p = i <= new Date(Date.now() + 12096e5) && i > new Date;
         return r > u ? ((0, a.Dr)(s.M.PREMIUM_SETTINGS_SUBSCRIPTION_INFO_NOTICE, {
             dismissAction: d.i.AUTO_DISMISS
-        }), !1) : !!_ && e
+        }), !1) : !!p && e
     }

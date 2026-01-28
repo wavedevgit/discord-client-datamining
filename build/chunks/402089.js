@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 402089, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    s: () => d
+    s: () => A
 });
 var n = i(627968),
     l = i(311907),
@@ -11,7 +11,7 @@ var n = i(627968),
     a = i(780964),
     o = i(457684),
     T = i(985018);
-let A = (0, s.E2)(a.X.ACCOUNT_REMOVAL_SETTING, {
+let d = (0, s.E2)(a.X.ACCOUNT_REMOVAL_SETTING, {
         useSearchTerms: () => [T.intl.string(T.t.ZKsIks), T.intl.string(T.t.jf5GGb), T.intl.string(T.t["8lQ2rR"])],
         Component: function() {
             let t = (0, l.bG)([u.default], () => u.default.getCurrentUser()),
@@ -28,6 +28,6 @@ let A = (0, s.E2)(a.X.ACCOUNT_REMOVAL_SETTING, {
             })
         }
     }),
-    d = (0, s.zZ)(a.X.ACCOUNT_REMOVAL_CATEGORY, {
-        buildLayout: () => [A]
+    A = (0, s.zZ)(a.X.ACCOUNT_REMOVAL_CATEGORY, {
+        buildLayout: () => [d]
     })

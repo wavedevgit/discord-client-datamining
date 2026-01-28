@@ -11,10 +11,10 @@ var n = i(419954),
     a = i(189540),
     o = i(534771),
     T = i(549093),
-    A = i(334218),
-    d = i(803119),
+    d = i(334218),
+    A = i(803119),
     S = i(985018);
 let E = (0, n.FW)(l.X.NOTIFICATION_SELECTION_FIELD_SET, {
     useTitle: () => S.intl.string(S.t.FEVRDV),
-    buildLayout: () => [a.L, d.q, s.Z, r.E, A.N, u.M, o.q, T.q]
+    buildLayout: () => [a.L, A.q, s.Z, r.E, d.N, u.M, o.q, T.q]
 })

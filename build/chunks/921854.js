@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 921854, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    D: () => A
+    D: () => d
 });
 var n = i(419954),
     l = i(739886),
@@ -11,6 +11,6 @@ var n = i(419954),
     a = i(694141),
     o = i(970144),
     T = i(843956);
-let A = (0, n.Hr)({
+let d = (0, n.Hr)({
     buildLayout: () => [o.r, T.K, r.i, s.$, l.I, u.N, a.f]
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 351104, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Z: () => g
@@ -13,13 +13,13 @@ var i = n(935649),
     c = n(578746),
     d = n(975571),
     u = n(171316),
-    _ = n(500470),
-    p = n(652215),
+    p = n(500470),
+    _ = n(652215),
     m = n(985018);
 
 function g() {
     var e;
-    let t = null != (e = (0, _.k)()) ? e : void 0,
+    let t = null != (e = (0, p.k)()) ? e : void 0,
         n = (0, u.KK)(),
         g = a.ES.useControlledSetting(t);
     return (0, r.jsx)(o.h, {
@@ -33,7 +33,7 @@ function g() {
             },
             disabled: n,
             note: m.intl.format(m.t.IoztJ0, {
-                helpdeskArticle: d.A.getArticleURL(p.MVz.MESSAGE_REQUESTS)
+                helpdeskArticle: d.A.getArticleURL(_.MVz.MESSAGE_REQUESTS)
             })
         })
     })

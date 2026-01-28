@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 129267, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    X: () => d
+    X: () => A
 });
 var n = i(419117),
     l = i(419954),
@@ -11,7 +11,7 @@ var n = i(419117),
     a = i(693804),
     o = i(985018);
 let T = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
-    A = (0, l.bd)(T, {
+    d = (0, l.bd)(T, {
         useTitle: t => t ? o.intl.string(o.t.RyimDk) : o.intl.string(o.t.CUICbO),
         useCollapsedSubtitle: function() {
             return (0, n.A)(T, {
@@ -26,7 +26,7 @@ let T = s.X.NOTIFICATIONS_ADVANCED_ACCORDION,
         },
         buildLayout: () => [r.z, u.m, a.j]
     }),
-    d = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
+    A = (0, l.zZ)(s.X.NOTIFICATIONS_ADVANCED_CATEGORY, {
         useTitle: () => o.intl.string(o.t["31DySj"]),
-        buildLayout: () => [A]
+        buildLayout: () => [d]
     })

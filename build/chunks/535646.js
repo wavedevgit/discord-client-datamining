@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 535646, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968),
     i = n(64700),
@@ -13,12 +13,12 @@ var r = n(627968),
     d = n(985018),
     u = n(428208);
 
-function _(e) {
+function p(e) {
     let {
         preset: t,
         onShuffle: n
-    } = e, _ = (0, l.bG)([a.A], () => a.A.useReducedMotion), p = (0, o.Xf)({
-        useReducedMotion: _
+    } = e, p = (0, l.bG)([a.A], () => a.A.useReducedMotion), _ = (0, o.Xf)({
+        useReducedMotion: p
     }), {
         name: m,
         header: g
@@ -33,14 +33,14 @@ function _(e) {
         className: u.kL,
         children: [(0, r.jsx)(s.DUT, {
             onClick: () => {
-                n(), p.startAnimation(!1)
+                n(), _.startAnimation(!1)
             },
             className: u.x6,
             "aria-label": d.intl.string(d.t["44yJxh"]),
-            children: p.render()
+            children: _.render()
         }), (0, r.jsxs)(s.DUT, {
             onClick: () => {
-                n(), p.startAnimation(!1)
+                n(), _.startAnimation(!1)
             },
             "aria-label": "".concat(m, ": ").concat(d.intl.string(d.t["44yJxh"])),
             className: u.Lt,

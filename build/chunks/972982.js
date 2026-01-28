@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => C
@@ -12,14 +12,14 @@ var r = n(627968),
     c = n(195043),
     d = n(359990),
     u = n(961350),
-    _ = n(670492),
-    p = n(287809),
+    p = n(670492),
+    _ = n(287809),
     m = n(464477),
     g = n(709913),
-    A = n(455611),
-    f = n(858526),
+    f = n(455611),
+    b = n(858526),
     h = n(309198),
-    b = n(978551),
+    A = n(978551),
     E = n(100817),
     x = n(531525);
 class O extends i.PureComponent {
@@ -37,7 +37,7 @@ class O extends i.PureComponent {
                 hasTOTPEnabled: t
             }), e.length > 0 && (0, r.jsxs)(o.BJc, {
                 gap: 16,
-                children: [(0, r.jsx)(A.A, {
+                children: [(0, r.jsx)(f.A, {
                     backupCodes: e
                 }), (0, r.jsx)(o.cGx, {})]
             }), t && (0, r.jsx)(c.x, {
@@ -54,22 +54,22 @@ class O extends i.PureComponent {
     }
     renderDisabled() {
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
+            children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(d.A, {})]
         })
     }
     render() {
         let {
             currentUser: e
         } = this.props;
-        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(b.A, {})
+        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(A.A, {})
     }
 }
 
 function C(e) {
-    let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
+    let t = (0, a.bG)([_.default], () => _.default.getCurrentUser());
     s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-    let n = (0, a.cf)([_.A, u.default], () => ({
-        togglingSMS: _.A.togglingSMS,
+    let n = (0, a.cf)([p.A, u.default], () => ({
+        togglingSMS: p.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));
     return (0, r.jsx)(O, function(e) {

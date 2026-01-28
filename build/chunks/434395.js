@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 434395, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968);
 n(64700);
@@ -14,15 +14,15 @@ var i = n(503698),
     d = n(985018),
     u = n(416179);
 
-function _(e) {
+function p(e) {
     let {
         subscription: t,
         renewalMutations: i,
-        className: _,
-        analyticsLocation: p
+        className: p,
+        analyticsLocation: _
     } = e, m = (0, a.A)(), g = t.currentPeriodEnd;
     return m.fractionalState === c.xc.FP_SUB_PAUSED && (g = m.endsAt.toDate()), (0, r.jsxs)("div", {
-        className: l()(u.zr, _),
+        className: l()(u.zr, p),
         children: [(0, r.jsx)(s.EpV, {
             size: "custom",
             width: 20,
@@ -63,7 +63,7 @@ function _(e) {
                         }({}, n), s = s = {
                             subscription: t,
                             renewalMutations: i,
-                            analyticsLocation: p
+                            analyticsLocation: _
                         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                             var n = Object.keys(e);
                             if (Object.getOwnPropertySymbols) {

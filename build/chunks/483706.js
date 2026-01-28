@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 483706, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    p: () => I
+    p: () => j
 });
 var r = n(627968),
     i = n(64700),
@@ -12,14 +12,14 @@ var r = n(627968),
     c = n(840387),
     d = n(780964),
     u = n(12901),
-    _ = n(840065),
-    p = n(899847),
+    p = n(840065),
+    _ = n(899847),
     m = n(809697),
     g = n(153739),
-    A = n(834981),
-    f = n(191627),
+    f = n(834981),
+    b = n(191627),
     h = n(652215),
-    b = n(842130),
+    A = n(842130),
     E = n(985018),
     x = n(191248);
 let O = e => {
@@ -49,9 +49,9 @@ let O = e => {
         })
     },
     C = () => {
-        let e = (0, A.vx)(),
+        let e = (0, f.vx)(),
             t = () => {
-                (0, _.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
+                (0, p.openUserSettings)(d.X.CONTENT_AND_SOCIAL_PANEL, {
                     section: h.nc_.CONTENT_AND_SOCIAL
                 })
             };
@@ -65,11 +65,11 @@ let O = e => {
                 gap: 4,
                 children: [(0, r.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: E.intl.string(b.default.ahKIJO)
+                    children: E.intl.string(A.default.ahKIJO)
                 }), (0, r.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: E.intl.format(b.default.X9rW0j, {
+                    children: E.intl.format(A.default.X9rW0j, {
                         openSettingsHook: (e, n) => (0, r.jsx)(s.MzZ, {
                             onClick: t,
                             children: e
@@ -77,7 +77,7 @@ let O = e => {
                     })
                 })]
             }), (0, r.jsx)(s.Button, {
-                text: E.intl.formatToPlainString(b.default.ggcjPR, {
+                text: E.intl.formatToPlainString(A.default.ggcjPR, {
                     count: e.length
                 }),
                 onClick: () => {
@@ -90,14 +90,14 @@ let O = e => {
             })]
         })
     },
-    T = () => {
+    y = () => {
         let e = (0, g.y3)(),
             t = (0, g.tl)(),
             {
                 handleTabChange: n
             } = (0, m.A)();
         i.useEffect(() => {
-            (null == e ? void 0 : e.id) != null && t && p.Ay.fetchTeenSettingsAndConsents(null == e ? void 0 : e.id)
+            (null == e ? void 0 : e.id) != null && t && _.Ay.fetchTeenSettingsAndConsents(null == e ? void 0 : e.id)
         }, [null == e ? void 0 : e.id, t]);
         let s = e => {
             n(e)
@@ -108,29 +108,29 @@ let O = e => {
                 gap: 4,
                 children: [(0, r.jsx)(l.EYj, {
                     variant: "text-sm/semibold",
-                    children: E.intl.string(b.default.ahKIJO)
+                    children: E.intl.string(A.default.ahKIJO)
                 }), (0, r.jsx)(l.EYj, {
                     variant: "text-md/medium",
                     color: "text-muted",
-                    children: E.intl.string(b.default.Sv236e)
+                    children: E.intl.string(A.default.Sv236e)
                 })]
             }), (0, r.jsx)(O, {
                 title: E.intl.string(E.t["+o1pDZ"]),
                 buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => s(f.u9.CONTENT_AND_SOCIAL)
+                onButtonPress: () => s(b.u9.CONTENT_AND_SOCIAL)
             }), (0, r.jsx)(o.A, {
                 className: x.yF
             }), (0, r.jsx)(O, {
                 title: E.intl.string(E.t.OAuOHD),
                 buttonText: E.intl.string(E.t.bt75uw),
-                onButtonPress: () => s(f.u9.DATA_AND_PRIVACY)
+                onButtonPress: () => s(b.u9.DATA_AND_PRIVACY)
             })]
         })
     },
-    I = () => {
+    j = () => {
         let e = (0, c.Z)();
-        return 0 === (0, A.vx)().length ? null : (0, r.jsx)("div", {
+        return 0 === (0, f.vx)().length ? null : (0, r.jsx)("div", {
             className: x.kL,
-            children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(T, {})
+            children: e ? (0, r.jsx)(C, {}) : (0, r.jsx)(y, {})
         })
     }

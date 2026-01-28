@@ -11,15 +11,15 @@ var n = i(935649),
     a = i(264249),
     o = i(253932),
     T = i(780964),
-    A = i(406274),
-    d = i(985018);
+    d = i(406274),
+    A = i(985018);
 let S = (0, u.zD)(T.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_DM_SETTING, {
-    useTitle: () => d.intl.string(d.t.XahVjj),
-    useSubtitle: () => d.intl.string(d.t.R9fXyS),
+    useTitle: () => A.intl.string(A.t.XahVjj),
+    useSubtitle: () => A.intl.string(A.t.R9fXyS),
     useValue: a.hT,
     useDisabled: () => {
         var t;
-        let e = null == (t = (0, A.A)()) || t,
+        let e = null == (t = (0, d.A)()) || t,
             i = (0, r.sP)(),
             n = (0, s.yM)();
         return (!i || !!n) && !e

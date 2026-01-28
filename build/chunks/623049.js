@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 623049, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    T: () => A
+    T: () => d
 });
 var n = i(627968),
     l = i(397927),
@@ -23,6 +23,6 @@ let T = (0, s.E2)(r.X.APPEARANCE_REDIRECT, {
             })
         })
     }),
-    A = (0, s.zZ)(r.X.APPEARANCE_REDIRECT_CATEGORY, {
+    d = (0, s.zZ)(r.X.APPEARANCE_REDIRECT_CATEGORY, {
         buildLayout: () => [T]
     })

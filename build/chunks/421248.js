@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 421248, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Z: () => E
@@ -13,15 +13,15 @@ var i = n(873298),
     c = n(278616),
     d = n(771888),
     u = n(171316),
-    _ = n(945276),
-    p = n(86689),
+    p = n(945276),
+    _ = n(86689),
     m = n(639383),
     g = n(355097),
-    A = n(531525),
-    f = n(985018),
+    f = n(531525),
+    b = n(985018),
     h = n(842130);
 
-function b(e) {
+function A(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -42,7 +42,7 @@ function b(e) {
 
 function E() {
     var e;
-    let t = null == (e = (0, _.A)()) || e,
+    let t = null == (e = (0, p.A)()) || e,
         n = (0, u.uM)(),
         E = (0, d.G)(),
         {
@@ -50,59 +50,59 @@ function E() {
             explicitContentFriendDm: O,
             explicitContentNonFriendDm: C
         } = (0, c.R)(),
-        T = e => {
+        y = e => {
             let t = Object.values(e);
             (0, a.hK)() && t.includes(i.TO.SHOW) ? l.A.showAgeVerificationGetStartedModal({
                 entryPoint: s.q1.SENSITIVE_MEDIA_FILTER_SETTINGS
             }) : (0, o.Jz)(e)
         },
-        I = [{
+        j = [{
             value: i.TO.BLUR,
-            label: f.intl.string(f.t.S49Uad)
+            label: b.intl.string(b.t.S49Uad)
         }, {
             value: i.TO.BLOCK,
-            label: f.intl.string(f.t["D/157Y"])
+            label: b.intl.string(b.t["D/157Y"])
         }],
-        S = [{
+        T = [{
             value: i.TO.BLUR,
-            label: f.intl.string(f.t.S49Uad)
+            label: b.intl.string(b.t.S49Uad)
         }],
-        j = {
+        v = {
             value: i.TO.SHOW,
-            label: f.intl.string(f.t["5k5OFp"])
+            label: b.intl.string(b.t["5k5OFp"])
         };
-    t && (I.unshift(j), S.unshift(j));
-    let v = {
+    t && (j.unshift(v), T.unshift(v));
+    let S = {
         isDisabled: E,
-        tooltipText: n ? f.intl.string(h.default["6Af/cw"]) : void 0
+        tooltipText: n ? b.intl.string(h.default["6Af/cw"]) : void 0
     };
-    return (0, r.jsxs)(p.E, {
-        setting: A.H.PRIVACY_SENSITIVE_MEDIA_V2,
+    return (0, r.jsxs)(_.E, {
+        setting: f.H.PRIVACY_SENSITIVE_MEDIA_V2,
         scrollPosition: g.d1.EXPLICIT_MEDIA_REDACTION_V2,
-        description: f.intl.string(f.t.Wnojv1),
-        children: [(0, r.jsx)(m.A, b({
-            title: f.intl.string(f.t["+uI23H"]),
+        description: b.intl.string(b.t.Wnojv1),
+        children: [(0, r.jsx)(m.A, A({
+            title: b.intl.string(b.t["+uI23H"]),
             value: O,
-            onChange: e => T({
+            onChange: e => y({
                 explicitContentFriendDm: e
             }),
-            options: I
-        }, v)), (0, r.jsx)(m.A, b({
-            title: f.intl.string(f.t["Yh+HX1"]),
+            options: j
+        }, S)), (0, r.jsx)(m.A, A({
+            title: b.intl.string(b.t["Yh+HX1"]),
             value: C,
-            onChange: e => T({
+            onChange: e => y({
                 explicitContentNonFriendDm: e
             }),
-            options: I
-        }, v)), (0, r.jsx)(m.A, {
-            title: f.intl.string(f.t["FP+a42"]),
+            options: j
+        }, S)), (0, r.jsx)(m.A, {
+            title: b.intl.string(b.t["FP+a42"]),
             value: x,
-            onChange: e => T({
+            onChange: e => y({
                 explicitContentGuilds: e
             }),
             isDisabled: !t || E,
-            tooltipText: n ? f.intl.string(h.default["6Af/cw"]) : void 0,
-            options: S
+            tooltipText: n ? b.intl.string(h.default["6Af/cw"]) : void 0,
+            options: T
         })]
     })
 }

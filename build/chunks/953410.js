@@ -11,13 +11,13 @@ var n = i(627968),
     a = i(455611),
     o = i(548018),
     T = i(32096),
-    A = i(545214),
-    d = i(985018);
+    d = i(545214),
+    A = i(985018);
 let S = (0, s.E2)(u.X.ACCOUNT_BACKUP_CODES_SETTING, {
-    useSearchTerms: () => [d.intl.string(d.t.m0FidJ), d.intl.string(d.t.xZEzbu)],
+    useSearchTerms: () => [A.intl.string(A.t.m0FidJ), A.intl.string(A.t.xZEzbu)],
     usePredicate: function() {
         let t = (0, T.b)(),
-            e = (0, A.A)(),
+            e = (0, d.A)(),
             i = (0, o.f)(),
             n = (0, l.bG)([r.A], () => r.A.getBackupCodes().length > 0);
         return !t && !e && i && n

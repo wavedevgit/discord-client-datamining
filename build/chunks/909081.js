@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 909081, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    T: () => _
+    T: () => g
 });
 var n = i(627968),
     l = i(311907),
@@ -11,16 +11,16 @@ var n = i(627968),
     a = i(287809),
     o = i(780964),
     T = i(309198),
-    A = i(548018),
-    d = i(32096),
+    d = i(548018),
+    A = i(32096),
     S = i(545214),
     E = i(985018);
-let _ = (0, s.E2)(o.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
+let g = (0, s.E2)(o.X.ACCOUNT_SMS_BACKUP_AUTHENTICATION_SETTING, {
     useSearchTerms: () => [E.intl.string(E.t.uHAJ5v)],
     usePredicate: function() {
-        let t = (0, d.b)(),
+        let t = (0, A.b)(),
             e = (0, S.A)(),
-            i = (0, A.f)(),
+            i = (0, d.f)(),
             n = (0, l.bG)([r.default], () => r.default.hasTOTPEnabled());
         return !t && !e && i && n
     },

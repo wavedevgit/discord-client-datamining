@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 21117, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    b: () => A
+    b: () => d
 });
 var n = i(64700),
     l = i(311907),
@@ -11,7 +11,7 @@ var n = i(64700),
     a = i(964404),
     o = i(780964),
     T = i(985018);
-let A = (0, u.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
+let d = (0, u.Qx)(o.X.HIGH_DYNAMIC_RANGE, {
     useTitle: () => T.intl.string(T.t.nemtgW),
     useSubtitle: () => T.intl.string(T.t["O/Gjvn"]),
     useBadge: () => "beta",

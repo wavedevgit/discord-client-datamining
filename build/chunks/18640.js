@@ -11,17 +11,17 @@ var n = i(627968),
     a = i(728458),
     o = i(156186),
     T = i(602450),
-    A = i(557571),
-    d = i(652215);
+    d = i(557571),
+    A = i(652215);
 let S = () => {
     let {
         connectionStatus: t,
         setConnectionStatus: e,
         connect: i,
         disconnect: S
-    } = (0, A.lV)(), E = [T.l7.CONNECTED, T.l7.INITIALIZING].includes(t), _ = (0, l.useCallback)(() => E ? (e(T.l7.DISCONNECTED), (0, r.u)(d.HAw.NITRO_WARP_TOGGLED, {
+    } = (0, d.lV)(), E = [T.l7.CONNECTED, T.l7.INITIALIZING].includes(t), g = (0, l.useCallback)(() => E ? (e(T.l7.DISCONNECTED), (0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
         is_connecting: !1
-    }), S()) : ((0, r.u)(d.HAw.NITRO_WARP_TOGGLED, {
+    }), S()) : ((0, r.u)(A.HAw.NITRO_WARP_TOGGLED, {
         is_connecting: !0
     }), e(T.l7.INITIALIZING), i().then(t => {
         t || e(T.l7.DISCONNECTED)
@@ -30,14 +30,14 @@ let S = () => {
             tags: {
                 source: o.q.PRIVATE_BROWSING_PERK_CONNECT
             }
-        }), u.default.track(d.HAw.PREMIUM_FEATURE_ERROR, {
+        }), u.default.track(A.HAw.PREMIUM_FEATURE_ERROR, {
             error_message: t instanceof Error ? t.message : JSON.stringify(t),
             error_source: o.q.PRIVATE_BROWSING_PERK_CONNECT
         }), e(T.l7.DISCONNECTED)
     })), [E, S, i, e]);
     return (0, n.jsx)("div", {
         children: (0, n.jsx)(s.dOG, {
-            onChange: _,
+            onChange: g,
             checked: E
         })
     })

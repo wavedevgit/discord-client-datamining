@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 645789, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,28 +12,28 @@ var r = n(627968),
     c = n(587600),
     d = n(207803),
     u = n(624826),
-    _ = n(752319),
-    p = n(253932),
+    p = n(752319),
+    _ = n(253932),
     m = n(354694),
     g = n(592074),
-    A = n(985018);
+    f = n(985018);
 
-function f() {
-    let e = (0, l.bG)([_.A], () => _.A.getIsSubmitDisabled()),
-        t = (0, l.bG)([_.A], () => _.A.getErrors()),
-        [n, f] = i.useState(!1),
-        h = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? A.intl.string(A.t["84MExs"]) : null, [t]),
-        b = i.useCallback(async () => {
+function b() {
+    let e = (0, l.bG)([p.A], () => p.A.getIsSubmitDisabled()),
+        t = (0, l.bG)([p.A], () => p.A.getErrors()),
+        [n, b] = i.useState(!1),
+        h = i.useMemo(() => (null == t ? void 0 : t.message) != null ? null == t ? void 0 : t.message : Object.keys(null != t ? t : {}).length > 0 ? f.intl.string(f.t["84MExs"]) : null, [t]),
+        A = i.useCallback(async () => {
             var e, t, n, r, i;
-            f(!0);
-            let l = _.A.getAllPending(),
+            b(!0);
+            let l = p.A.getAllPending(),
                 s = (0, c.Sk)(l),
-                A = (0, c.yX)(l),
+                f = (0, c.yX)(l),
                 h = (0, c.yg)(l),
-                b = !0;
+                A = !0;
             if (Object.keys(s).length > 0) {
                 let r = await (0, a.yu)(s);
-                if (b = b && null != (e = null == r ? void 0 : r.ok) && e, null == r ? void 0 : r.ok) {
+                if (A = A && null != (e = null == r ? void 0 : r.ok) && e, null == r ? void 0 : r.ok) {
                     let e = r.body;
                     void 0 !== l.pendingAvatar && (0, u.t)({
                         avatarHash: e.avatar,
@@ -42,14 +42,14 @@ function f() {
                     }), (0, a.pZ)()
                 } else(null == r || null == (t = r.body) ? void 0 : t.username) != null && (0, g.E)()
             }
-            if (Object.keys(A).length > 0) {
-                let e = await (0, d.gi)(A);
-                b = b && null != (r = null == e ? void 0 : e.ok) && r, (null == e ? void 0 : e.ok) ? (0, d.RE)() : (0, m.m)()
+            if (Object.keys(f).length > 0) {
+                let e = await (0, d.gi)(f);
+                A = A && null != (r = null == e ? void 0 : e.ok) && r, (null == e ? void 0 : e.ok) ? (0, d.RE)() : (0, m.m)()
             }
             if (void 0 !== l.pendingLegacyUsernameDisabled) try {
-                await p.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
+                await _.m$.updateSetting(l.pendingLegacyUsernameDisabled), (0, a._e)()
             } catch (e) {
-                (0, m.m)(), b = !1
+                (0, m.m)(), A = !1
             }
             if (Object.keys(h).length > 0) {
                 let {
@@ -57,17 +57,17 @@ function f() {
                 } = h;
                 if (void 0 !== e) {
                     let t = await (0, o.m)(e, null !== e);
-                    b = b && null != (i = null == t ? void 0 : t.ok) && i, (null == t ? void 0 : t.ok) ? (0, a.fw)() : (0, m.m)()
+                    A = A && null != (i = null == t ? void 0 : t.ok) && i, (null == t ? void 0 : t.ok) ? (0, a.fw)() : (0, m.m)()
                 }
             }
-            b && (0, a.x8)(), f(!1)
+            A && (0, a.x8)(), b(!1)
         }, []),
         E = i.useCallback(() => {
             (0, a.IM)()
         }, []);
     return (0, r.jsx)(s.A, {
         submitting: n,
-        onSave: b,
+        onSave: A,
         onReset: E,
         disabled: e,
         errorMessage: null != h ? h : void 0

@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 289498, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => f
 });
 var r = n(627968);
 n(64700);
@@ -13,42 +13,42 @@ var i = n(503698),
     c = n(736653),
     d = n(573648),
     u = n(681819),
-    _ = n(882997),
-    p = n(954571),
+    p = n(882997),
+    _ = n(954571),
     m = n(652215),
     g = n(277816);
-let A = e => {
+let f = e => {
     let {
         disabled: t = !1,
         type: n,
         className: i,
-        innerClassName: A,
-        onConnect: f
-    } = e, h = (0, c.Ay)(), b = d.A.get((0, u.ML)(n));
+        innerClassName: f,
+        onConnect: b
+    } = e, h = (0, c.Ay)(), A = d.A.get((0, u.ML)(n));
     return (0, r.jsx)(s.m, {
-        text: b.name,
+        text: A.name,
         children: (0, r.jsx)("div", {
             className: l()(g.iE, i),
             children: (0, r.jsx)(o.vN3, {
                 children: (0, r.jsx)("button", {
-                    className: l()(g.vW, A),
+                    className: l()(g.vW, f),
                     type: "button",
                     disabled: t,
                     style: {
-                        backgroundImage: "url('".concat((0, a.Mw)(h) ? b.icon.darkSVG : b.icon.lightSVG, "')")
+                        backgroundImage: "url('".concat((0, a.Mw)(h) ? A.icon.darkSVG : A.icon.lightSVG, "')")
                     },
-                    onClick: null != f ? f : () => {
+                    onClick: null != b ? b : () => {
                         let e;
-                        return e = d.A.get(n), void((0, _.A)({
+                        return e = d.A.get(n), void((0, p.A)({
                             platformType: e.type,
                             location: "Friends List"
-                        }), p.default.track(m.HAw.ACCOUNT_LINK_STEP, {
+                        }), _.default.track(m.HAw.ACCOUNT_LINK_STEP, {
                             previous_step: "desktop connections",
                             current_step: "desktop oauth",
                             platform_type: e.type
                         }))
                     },
-                    "aria-label": b.name
+                    "aria-label": A.name
                 })
             })
         })

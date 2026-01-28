@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 196291, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => M
@@ -12,25 +12,25 @@ var r = n(627968),
     c = n(688810),
     d = n(422936),
     u = n(234419),
-    _ = n(10368),
-    p = n(535646),
+    p = n(10368),
+    _ = n(535646),
     m = n(511484),
     g = n(202639),
-    A = n(811611),
-    f = n(407217),
+    f = n(811611),
+    b = n(407217),
     h = n(101058),
-    b = n(207803),
+    A = n(207803),
     E = n(193658),
     x = n(752319),
     O = n(954571),
     C = n(927578),
-    T = n(884546),
-    I = n(230084),
-    S = n(180020),
-    j = n(212168),
-    v = n(730588),
-    N = n(63675),
-    y = n(253604),
+    y = n(884546),
+    j = n(230084),
+    T = n(180020),
+    v = n(212168),
+    S = n(730588),
+    I = n(63675),
+    N = n(253604),
     P = n(652215),
     R = n(788868),
     D = n(355097),
@@ -41,11 +41,11 @@ function M(e) {
     var t, n;
     let {
         user: M,
-        isVisible: U,
-        shouldShow: G
-    } = e, k = C.Ay.isPremium(M), V = C.Ay.canUseAnimatedAvatar(M), {
-        pendingAvatar: H,
-        pendingThemeColors: B,
+        isVisible: G,
+        shouldShow: U
+    } = e, k = C.Ay.isPremium(M), H = C.Ay.canUseAnimatedAvatar(M), {
+        pendingAvatar: B,
+        pendingThemeColors: V,
         tryItOutThemeColors: F,
         tryItOutAvatar: Y,
         tryItOutBanner: W
@@ -85,38 +85,38 @@ function M(e) {
     }), {
         preset: z,
         onShuffle: K
-    } = (0, _.A)(), Z = i.useRef(null);
+    } = (0, p.A)(), Z = i.useRef(null);
     (0, E.A)(Z, D._F.TRY_IT_OUT);
     let {
-        analyticsLocations: X,
-        newestAnalyticsLocation: q,
+        analyticsLocations: q,
+        newestAnalyticsLocation: X,
         sourceAnalyticsLocations: J
     } = (0, c.Ay)(o.A.USER_SETTINGS_TRY_OUT_PREMIUM), Q = e => {
-        e && ((0, a.zq)(Y), (0, b.Zz)(F), (0, b.Dv)(W), O.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
+        e && ((0, a.zq)(Y), (0, A.Zz)(F), (0, A.Dv)(W), O.default.track(P.HAw.TRY_IT_OUT_PRESET_SELECTED, {
             preset: z
         }))
     };
     i.useEffect(() => {
-        U && O.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
+        G && O.default.track(P.HAw.PREMIUM_UPSELL_VIEWED, {
             type: R.e.PREMIUM_PROFILE_TRY_IT_OUT,
             location: {
                 page: P.liQ.USER_SETTINGS
             },
             location_stack: J
         })
-    }, [J, M, U]);
+    }, [J, M, G]);
     let $ = (null == (n = (0, u.V)()) || null == (t = n.subscription_trial) ? void 0 : t.sku_id) === R.pe.TIER_2,
         ee = (0, d.O)(),
         et = (0, m.U9)(ee, R.pe.TIER_2);
-    return G ? (0, r.jsx)(c.f5, {
-        value: X,
-        children: (0, r.jsxs)(j.A, {
+    return U ? (0, r.jsx)(c.f5, {
+        value: q,
+        children: (0, r.jsxs)(v.A, {
             ref: Z,
             className: L.MT,
-            type: j.i.PREMIUM,
+            type: v.i.PREMIUM,
             isShown: !0,
             hasBackground: !0,
-            children: [(0, r.jsx)(T.A, {
+            children: [(0, r.jsx)(y.A, {
                 layoutClassName: L.th,
                 profilePreviewTitle: (0, r.jsxs)(r.Fragment, {
                     children: [(0, r.jsx)(s.tvc, {
@@ -126,10 +126,10 @@ function M(e) {
                     }), w.intl.string(w.t.gMlDNd)]
                 }),
                 profilePreview: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)(p.A, {
+                    children: [(0, r.jsx)(_.A, {
                         preset: z,
                         onShuffle: K
-                    }), (0, r.jsx)(y.A, {
+                    }), (0, r.jsx)(N.A, {
                         user: M
                     })]
                 }),
@@ -144,31 +144,31 @@ function M(e) {
                             variant: "text-sm/normal",
                             children: w.intl.string(w.t.xeEC20)
                         })]
-                    }), (0, r.jsx)(N.A, {
+                    }), (0, r.jsx)(I.A, {
                         className: L.fz,
                         user: M,
                         pendingAvatarSrc: (0, h.V7)({
                             userId: M.id,
-                            image: null != Y ? Y : H
+                            image: null != Y ? Y : B
                         }),
-                        pendingColors: null != F ? F : B,
-                        onThemeColorsChange: b.a,
+                        pendingColors: null != F ? F : V,
+                        onThemeColorsChange: A.a,
                         showPremiumIcon: !1,
                         preventDisabled: !0
-                    }), (0, r.jsx)(v.A, {
+                    }), (0, r.jsx)(S.A, {
                         className: L.fz,
                         isTryItOut: !0,
                         showRemoveBannerButton: null != W,
-                        onBannerChange: b.xe,
+                        onBannerChange: A.xe,
                         showPremiumIcon: !1
-                    }), !V && (0, r.jsx)(I.A, {
+                    }), !H && (0, r.jsx)(j.A, {
                         className: L.fz,
                         isTryItOut: !0,
-                        onAvatarChange: b.e$,
+                        onAvatarChange: A.e$,
                         showRemoveAvatarButton: !1,
                         changeAvatarButtonText: w.intl.string(w.t["7z0D1c"]),
                         sectionTitle: w.intl.string(w.t.vtFfPX)
-                    }), (0, r.jsx)(S.A, {
+                    }), (0, r.jsx)(T.A, {
                         user: M,
                         className: L.fz
                     }), !$ && (0, r.jsx)(s.Text, {
@@ -182,8 +182,8 @@ function M(e) {
                 showUpsell: !0,
                 text: w.intl.format(w.t.TmfgI2, {
                     onClick: () => {
-                        (0, f.K)({
-                            analyticsSource: q,
+                        (0, b.K)({
+                            analyticsSource: X,
                             onSubscribeFinish: Q
                         })
                     }
@@ -195,7 +195,7 @@ function M(e) {
             }), $ && (0, r.jsxs)("div", {
                 children: [(0, r.jsx)("div", {
                     className: L.BU
-                }), (0, r.jsx)(A.Ay, {
+                }), (0, r.jsx)(f.Ay, {
                     type: R.e.CUSTOM_PROFILE_TRY_OUT_UPSELL,
                     subscriptionTier: R.pe.TIER_2
                 })]

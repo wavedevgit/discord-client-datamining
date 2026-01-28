@@ -2,7 +2,7 @@
 /** chunk id: 545214, original params: t,e,i (module,exports,require) **/
 i.d(e, {
     A: () => T,
-    k: () => A
+    k: () => d
 });
 var n = i(311907),
     l = i(419954),
@@ -20,7 +20,7 @@ function T() {
         });
     return !t && e
 }
-let A = (0, l.E2)(r.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
+let d = (0, l.E2)(r.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
     useSearchTerms: () => [o.intl.string(o.t.m0FidJ)],
     usePredicate: T,
     Component: u.A

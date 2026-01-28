@@ -1,7 +1,7 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 442671, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,23 +12,23 @@ var r = n(627968),
     c = n(158954),
     d = n(688810),
     u = n(657331),
-    _ = n(331011);
-let p = e => {
+    p = n(331011);
+let _ = e => {
     let {
         userId: t,
         children: n,
         isLast: l,
-        className: p
+        className: _
     } = e, [m, g] = i.useState(!1), {
-        analyticsLocations: A
-    } = (0, d.Ay)(), f = i.useCallback(() => {
+        analyticsLocations: f
+    } = (0, d.Ay)(), b = i.useCallback(() => {
         (0, u.openUserProfileModal)({
             userId: t,
-            sourceAnalyticsLocations: A
+            sourceAnalyticsLocations: f
         })
-    }, [t, A]), h = () => {
+    }, [t, f]), h = () => {
         g(!0)
-    }, b = () => {
+    }, A = () => {
         g(!1)
     };
     return (0, r.jsx)(o.tG, {
@@ -61,13 +61,13 @@ let p = e => {
                     style: {
                         opacity: 1
                     },
-                    className: s()(_.KG, p, {
-                        [_.HV]: l,
-                        [_.vu]: m
+                    className: s()(p.KG, _, {
+                        [p.HV]: l,
+                        [p.vu]: m
                     }),
                     onMouseEnter: h,
-                    onMouseLeave: b,
-                    onClick: f
+                    onMouseLeave: A,
+                    onClick: b
                 }, e), i = i = {
                     children: n(m)
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

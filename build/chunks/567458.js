@@ -1,4 +1,4 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 5606 **/
 /** chunk id: 567458, original params: e,t,n (module,exports,require) **/
 e.exports = {
     oP: "colorSwatch__2d060",

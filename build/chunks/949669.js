@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 949669, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    o: () => A
+    o: () => d
 });
 var n = i(64700),
     l = i(171316),
@@ -11,7 +11,7 @@ var n = i(64700),
     a = i(780964),
     o = i(652215),
     T = i(985018);
-let A = (0, s.zD)(a.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_EVERYONE_SETTING, {
+let d = (0, s.zD)(a.X.CONTENT_AND_SOCIAL_FRIEND_REQUESTS_EVERYONE_SETTING, {
     useTitle: () => T.intl.string(T.t["7x9dyE"]),
     useValue: () => {
         let t = u.FA.useSetting();

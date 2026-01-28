@@ -1,7 +1,7 @@
 /** Chunk was on 28979 **/
 /** chunk id: 744344, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    r: () => d
+    r: () => A
 }), i(228524);
 var n = i(311907),
     l = i(684013),
@@ -12,7 +12,7 @@ var n = i(311907),
     o = i(985018);
 let T = (0, a.ze)(!0);
 
-function A(t) {
+function d(t) {
     return (0, r.zD)(t.key, {
         useTitle: () => o.intl.string(t.title),
         useSubtitle: () => o.intl.string(t.description),
@@ -23,6 +23,6 @@ function A(t) {
         usePredicate: t.usePredicate
     })
 }
-let d = (0, r.FW)(u.X.OVERLAY_NOTIFICATIONS_LIST, {
-    buildLayout: () => T.map(A)
+let A = (0, r.FW)(u.X.OVERLAY_NOTIFICATIONS_LIST, {
+    buildLayout: () => T.map(d)
 })

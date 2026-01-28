@@ -1,8 +1,8 @@
 /** Chunk was on 28979 **/
 /** chunk id: 903427, original params: t,e,i (module,exports,require) **/
 i.d(e, {
-    K: () => g,
-    P: () => _
+    K: () => _,
+    P: () => g
 });
 var n = i(64700),
     l = i(574381),
@@ -12,15 +12,15 @@ var n = i(64700),
     a = i(430452),
     o = i(780964),
     T = i(330688),
-    A = i(825468),
-    d = i(509381),
+    d = i(825468),
+    A = i(509381),
     S = i(731854),
     E = i(985018);
 
-function _() {
+function g() {
     return (0, s.bG)([a.A], () => a.A.getMode() === S.TB.PUSH_TO_TALK)
 }
-let g = (0, u.zD)(o.X.VOICE_PUSH_TO_TALK_SETTING, {
+let _ = (0, u.zD)(o.X.VOICE_PUSH_TO_TALK_SETTING, {
     useTitle: function() {
         return l.Av ? E.intl.string(E.t.tG4Np5) : E.intl.string(E.t.JMyQin)
     },
@@ -28,12 +28,12 @@ let g = (0, u.zD)(o.X.VOICE_PUSH_TO_TALK_SETTING, {
         let t = (0, s.bG)([a.A], () => a.A.getMode());
         return n.useMemo(() => {
             if (!l.Av && t === S.TB.PUSH_TO_TALK) return E.intl.format(E.t["VHI4+Y"], {
-                onDownloadClick: () => (0, A._)("Help Text PTT")
+                onDownloadClick: () => (0, d._)("Help Text PTT")
             })
         }, [t])
     },
     usePredicate: function() {
-        return (0, s.bG)([a.A], () => a.A.getActiveInputProfile() !== d.my.STUDIO)
+        return (0, s.bG)([a.A], () => a.A.getActiveInputProfile() !== A.my.STUDIO)
     },
     useValue: function() {
         return (0, s.bG)([a.A], () => a.A.getMode() === S.TB.PUSH_TO_TALK)

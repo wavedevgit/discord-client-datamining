@@ -3,10 +3,10 @@
 n.d(t, {
     A: () => s
 });
-var i = n(627968);
+var r = n(627968);
 n(64700);
-var r = n(397927),
-    l = n(954571),
+var l = n(397927),
+    i = n(954571),
     a = n(253932),
     o = n(652215),
     c = n(985018);
@@ -14,12 +14,12 @@ var r = n(397927),
 function s() {
     let e = a.D_.useSetting(),
         t = a.SI.useSetting();
-    return e ? null : (0, i.jsx)(r.sLh, {
+    return e ? null : (0, r.jsx)(l.sLh, {
         id: "preview-markdown-toggle",
         label: c.intl.string(c.t.sHJ9wZ),
         action: () => {
             let e = !t;
-            l.default.track(o.HAw.PREVIEW_MARKDOWN_TOGGLED, {
+            i.default.track(o.HAw.PREVIEW_MARKDOWN_TOGGLED, {
                 enabled: e,
                 location: {
                     section: o.JJy.SETTINGS_CONTEXT_MENU

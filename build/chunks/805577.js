@@ -1,4 +1,4 @@
-/** Chunk was on 82575 **/
+/** Chunk was on 60449 **/
 /** chunk id: 805577, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => en,
@@ -17,35 +17,35 @@ var i = n(627968),
     g = n(955572),
     h = n(775602),
     x = n(536199),
-    p = n(502229),
-    A = n(406360),
+    A = n(502229),
+    p = n(406360),
     m = n(688810),
     j = n(652525),
-    b = n(915089),
-    O = n(614738),
-    S = n(379848),
-    E = n(259065),
-    f = n(141468),
-    v = n(963852),
-    T = n(763754),
-    C = n(20851),
-    y = n(652961),
-    N = n(195043),
+    O = n(915089),
+    E = n(614738),
+    b = n(379848),
+    S = n(259065),
+    v = n(141468),
+    C = n(963852),
+    f = n(763754),
+    T = n(20851),
+    N = n(652961),
+    _ = n(195043),
     I = n(54570),
-    _ = n(8880),
-    P = n(954571),
+    y = n(8880),
+    D = n(954571),
     G = n(975571),
-    R = n(964404),
-    D = n(253932),
-    L = n(780964),
-    k = n(397438),
-    w = n(193658),
-    V = n(790174),
-    M = n(840065),
+    P = n(964404),
+    R = n(253932),
+    V = n(780964),
+    L = n(397438),
+    k = n(193658),
+    M = n(790174),
+    w = n(840065),
     U = n(355097),
     H = n(531525),
-    Y = n(652215),
-    B = n(823894),
+    B = n(652215),
+    Y = n(823894),
     F = n(75804),
     z = n(985018),
     W = n(927961),
@@ -83,9 +83,9 @@ function X(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let q = (0, b.Ld)(),
-    Z = (0, b.Ld)(),
-    $ = (0, b.Ld)(),
+let q = (0, O.Ld)(),
+    Z = (0, O.Ld)(),
+    $ = (0, O.Ld)(),
     ee = r().debounce(e => {
         (0, g.HU)(e)
     }, 250),
@@ -100,59 +100,59 @@ function en(e) {
         autoTrackExposure: !0
     }).enabled;
     let t = (0, j.t)("UserSettingsAccessibility"),
-        n = (0, O.y)("UserSettingsAccessibility"),
-        s = (0, A.i)("UserSettingsAccessibility");
-    return (0, i.jsx)(V.A, {
+        n = (0, E.y)("UserSettingsAccessibility"),
+        s = (0, p.i)("UserSettingsAccessibility");
+    return (0, i.jsx)(M.A, {
         title: z.intl.string(z.t.G0neg7),
         children: (0, i.jsxs)(c.BJc, {
             gap: 16,
-            children: [(0, i.jsx)(ei, {}), (0, i.jsxs)(N.x, {
+            children: [(0, i.jsx)(ei, {}), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_SATURATION,
                 children: [(0, i.jsx)(er, {}), (0, i.jsx)(c.cGx, {})]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_LINK_DECORATIONS,
                 children: [(0, i.jsx)(ea, {}), (0, i.jsx)(c.cGx, {})]
             }), t ? (0, i.jsxs)(i.Fragment, {
-                children: [(0, i.jsx)(N.x, {
+                children: [(0, i.jsx)(_.x, {
                     setting: H.H.ACCESSIBILITY_CUSTOM_CURSOR,
                     children: (0, i.jsx)(eo, {})
                 }), (0, i.jsx)(c.cGx, {})]
-            }) : null, (0, i.jsxs)(N.x, {
+            }) : null, (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_ROLE_STYLE,
                 children: [(0, i.jsx)(ed, {}), (0, i.jsx)(c.cGx, {})]
             }), s && (0, i.jsxs)(i.Fragment, {
                 children: [(0, i.jsx)(ec, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_DISPLAY_NAME_STYLES,
                 children: [(0, i.jsx)(eu, {}), (0, i.jsx)(c.cGx, {})]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_PROFILE_COLORS,
                 children: [(0, i.jsx)(eg, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_CONTRAST,
                 children: [(0, i.jsx)(eh, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION,
                 children: [(0, i.jsx)(ex, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsxs)(N.x, {
+            }), (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES,
-                children: [(0, i.jsx)(eA, {}), (0, i.jsx)(c.cGx, {
+                children: [(0, i.jsx)(ep, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), n && (0, i.jsxs)(N.x, {
+            }), n && (0, i.jsxs)(_.x, {
                 setting: H.H.ACCESSIBILITY_SWITCH_ICON,
                 children: [(0, i.jsx)(el, {}), (0, i.jsx)(c.cGx, {
                     gap: 4
                 })]
-            }), (0, i.jsx)(eb, {}), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(eO, {}), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_APPEARANCE_UPSELL,
                 children: (0, i.jsx)("div", {
                     className: K.oq,
@@ -160,8 +160,8 @@ function en(e) {
                         variant: "text-md/normal",
                         children: z.intl.format(z.t.DHpTjT, {
                             onAppearanceClick() {
-                                (0, M.openUserSettings)(L.X.APPEARANCE_PANEL, {
-                                    section: Y.nc_.APPEARANCE
+                                (0, w.openUserSettings)(V.X.APPEARANCE_PANEL, {
+                                    section: B.nc_.APPEARANCE
                                 })
                             }
                         })
@@ -173,15 +173,15 @@ function en(e) {
 }
 
 function ei() {
-    let e = D.hH.useSetting(),
+    let e = R.hH.useSetting(),
         [t] = s.useState(() => {
-            let e = (0, f.rh)(X(Q({}, (0, v.Ay)({
+            let e = (0, v.rh)(X(Q({}, (0, C.Ay)({
                 channelId: "1337",
                 content: z.intl.formatToPlainString(z.t.bB80LC, {
                     previewLink: "https://discord.com/accessibility"
                 })
             })), {
-                state: Y.cmJ.SENT,
+                state: B.cmJ.SENT,
                 id: "".concat(0)
             }));
             return e.colorString = "green", e
@@ -198,7 +198,7 @@ function ei() {
                     text: z.intl.string(z.t["2RHHgz"])
                 }), (0, i.jsx)("div", {
                     className: K.hD,
-                    children: [Y.clD.ONLINE, Y.clD.DND, Y.clD.IDLE].map(e => (0, i.jsx)(c.JsQ, {
+                    children: [B.clD.ONLINE, B.clD.DND, B.clD.IDLE].map(e => (0, i.jsx)(c.JsQ, {
                         "aria-label": z.intl.string(z.t.lqaIxI),
                         src: J,
                         size: c._3J.SIZE_32,
@@ -207,9 +207,9 @@ function ei() {
                 })]
             }), (0, i.jsx)("div", {
                 className: K.QS,
-                children: (0, i.jsx)(C.A, {
+                children: (0, i.jsx)(T.A, {
                     compact: e,
-                    author: X(Q({}, (0, T.p_)(t)), {
+                    author: X(Q({}, (0, f.p_)(t)), {
                         colorString: "#DD80F4"
                     }),
                     message: t
@@ -225,7 +225,7 @@ function es() {
     function t(e) {
         (0, g.uh)(e ? h._.HIGH : h._.DEFAULT)
     }
-    return (0, i.jsx)(S.Ay, {
+    return (0, i.jsx)(b.Ay, {
         contentTypes: [o.M.ACCESSIBILITY_HIGH_CONTRAST_MODE_NEW_BADGE],
         children: n => {
             let {
@@ -268,7 +268,7 @@ function er() {
             description: z.intl.string(z.t["0PbE/H"]),
             "aria-labelledby": q,
             "aria-describedby": Z,
-            markers: Y.hH7.SATURATION_INCREMENTS,
+            markers: B.hH7.SATURATION_INCREMENTS,
             equidistant: !0,
             stickToMarkers: !0,
             maxValue: 1,
@@ -276,7 +276,7 @@ function er() {
             initialValue: e,
             onValueChange: ee,
             onMarkerRender: e => 100 * e % 2 == 0 ? "".concat(100 * e, "%") : void 0
-        }), (0, i.jsx)(N.x, {
+        }), (0, i.jsx)(_.x, {
             setting: H.H.ACCESSIBILITY_SATURATION_CUSTOM_COLOR,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t.bQCodD),
@@ -314,8 +314,8 @@ function eo() {
 }
 
 function ec() {
-    let e = (0, a.bG)([R.Ay], () => R.Ay.hdrDynamicRange);
-    return (0, i.jsx)(N.x, {
+    let e = (0, a.bG)([P.Ay], () => P.Ay.hdrDynamicRange);
+    return (0, i.jsx)(_.x, {
         setting: H.H.ACCESSIBILITY_HDR_DYNAMIC_RANGE,
         children: (0, i.jsx)(c.z6M, {
             label: z.intl.string(z.t.nemtgW),
@@ -369,14 +369,14 @@ function eu() {
         label: z.intl.string(W.default["2gFUEw"]),
         description: z.intl.format(W.default.L8U56h, {
             onClickOpenModal() {
-                (0, E.L)({
+                (0, S.L)({
                     analyticsLocations: t
                 })
             }
         }),
         checked: e,
         onChange: function(e) {
-            (0, g.Dm)(e), P.default.track(Y.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
+            (0, g.Dm)(e), D.default.track(B.HAw.DISPLAY_NAME_STYLES_ACCESSIBILITY_TOGGLE, {
                 enabled: e
             })
         }
@@ -387,14 +387,14 @@ function eg() {
     let e = (0, a.bG)([h.A], () => h.A.syncProfileThemeWithUserTheme);
     return (0, i.jsx)(c.nVY, {
         label: z.intl.string(z.t.BT8Bmp),
-        children: (0, i.jsx)(N.x, {
+        children: (0, i.jsx)(_.x, {
             setting: H.H.ACCESSIBILITY_PROFILE_COLORS_SYNC_THEMES,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t["sSY+mD"]),
                 description: z.intl.format(z.t.u6UjrL, {
                     onThemeClick() {
-                        (0, M.openUserSettings)(L.X.APPEARANCE_PANEL, {
-                            section: Y.nc_.APPEARANCE
+                        (0, w.openUserSettings)(V.X.APPEARANCE_PANEL, {
+                            section: B.nc_.APPEARANCE
                         })
                     }
                 }),
@@ -415,14 +415,14 @@ function eh() {
         null != l.current && (clearTimeout(l.current), l.current = null), t !== e && (l.current = setTimeout(() => (0, g.D3)(t), 150))
     }, [t, e]);
     let r = z.intl.format(z.t.GwEVE2, {
-        learnMoreLink: G.A.getArticleURL(Y.MVz.FORCED_COLORS)
+        learnMoreLink: G.A.getArticleURL(B.MVz.FORCED_COLORS)
     });
     return (0, i.jsxs)(c.nVY, {
         label: z.intl.string(z.t["TYyfO/"]),
-        children: [(0, i.jsx)(N.x, {
+        children: [(0, i.jsx)(_.x, {
             setting: H.H.ACCESSIBILITY_HIGH_CONTRAST,
             children: (0, i.jsx)(es, {})
-        }), (0, p.D)() ? (0, i.jsx)(N.x, {
+        }), (0, A.D)() ? (0, i.jsx)(_.x, {
             setting: H.H.ACCESSIBILITY_CONTRAST_SYNC_FORCED_COLORS,
             children: (0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t.cguiec),
@@ -435,20 +435,20 @@ function eh() {
 }
 
 function ex() {
-    let e = D.kt.useSetting(),
-        t = D.Sf.useSetting(),
+    let e = R.kt.useSetting(),
+        t = R.Sf.useSetting(),
         {
             useReducedMotion: n,
             rawPrefersReducedMotion: l,
             systemPrefersReducedMotion: r,
             gifAutoPlayOverrideReason: o,
             animateEmojiOverrideReason: d
-        } = (0, a.cf)([h.A, k.A], () => ({
+        } = (0, a.cf)([h.A, L.A], () => ({
             systemPrefersReducedMotion: h.A.systemPrefersReducedMotion,
             rawPrefersReducedMotion: h.A.rawPrefersReducedMotion,
             useReducedMotion: h.A.useReducedMotion,
-            gifAutoPlayOverrideReason: k.A.getAppliedOverrideReasonKey("gifAutoPlay"),
-            animateEmojiOverrideReason: k.A.getAppliedOverrideReasonKey("animateEmoji")
+            gifAutoPlayOverrideReason: L.A.getAppliedOverrideReasonKey("gifAutoPlay"),
+            animateEmojiOverrideReason: L.A.getAppliedOverrideReasonKey("animateEmoji")
         })),
         u = s.useCallback(e => {
             (0, g.qz)(e ? "auto" : r)
@@ -462,96 +462,96 @@ function ex() {
         children: (0, i.jsxs)(c.nVY, {
             label: z.intl.string(z.t.e3TR1b),
             description: z.intl.format(z.t["2l9U2j"], {
-                helpdeskArticle: G.A.getArticleURL(Y.MVz.REDUCED_MOTION)
+                helpdeskArticle: G.A.getArticleURL(B.MVz.REDUCED_MOTION)
             }),
             children: [(0, i.jsx)(c.dOG, {
                 label: z.intl.string(z.t["+Dx+HD"]),
                 checked: "auto" === l,
                 onChange: u
-            }), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_ENABLE,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.b3XBzg),
                     checked: n,
                     onChange: x
                 })
-            }), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_AUTO_PLAY_GIFS,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.Iayoh5),
-                    description: null != o ? (0, y.A)(o) : void 0,
+                    description: null != o ? (0, N.A)(o) : void 0,
                     checked: e,
-                    onChange: D.kt.updateSetting
+                    onChange: R.kt.updateSetting
                 })
-            }), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_REDUCED_MOTION_PLAY_ANIMATED_EMOJI,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.iIaOlc),
-                    description: null != d ? (0, y.A)(d) : void 0,
+                    description: null != d ? (0, N.A)(d) : void 0,
                     checked: t,
-                    onChange: D.Sf.updateSetting
+                    onChange: R.Sf.updateSetting
                 })
-            }), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_STICKERS,
-                children: (0, i.jsx)(ep, {})
+                children: (0, i.jsx)(eA, {})
             })]
         })
     })
 }
 
-function ep() {
-    let e = D.S0.useSetting(),
-        t = (0, a.bG)([k.A], () => k.A.getAppliedOverrideReasonKey("animateStickers")),
+function eA() {
+    let e = R.S0.useSetting(),
+        t = (0, a.bG)([L.A], () => L.A.getAppliedOverrideReasonKey("animateStickers")),
         n = s.useCallback(e => {
-            D.S0.updateSetting(e)
+            R.S0.updateSetting(e)
         }, []);
     return (0, i.jsx)(c.z6M, {
         label: z.intl.string(z.t["6NtAuJ"]),
-        description: null != t ? (0, y.A)(t) : z.intl.string(z.t.GRa6U7),
+        description: null != t ? (0, N.A)(t) : z.intl.string(z.t.GRa6U7),
         options: [{
             name: z.intl.string(z.t["Xp+X2U"]),
-            value: B.BJ.ALWAYS_ANIMATE
+            value: Y.BJ.ALWAYS_ANIMATE
         }, {
             name: z.intl.string(z.t.IlLT7e),
             desc: z.intl.string(z.t.bIW9Tl),
-            value: B.BJ.ANIMATE_ON_INTERACTION
+            value: Y.BJ.ANIMATE_ON_INTERACTION
         }, {
             name: z.intl.string(z.t.IGu8x3),
-            value: B.BJ.NEVER_ANIMATE
+            value: Y.BJ.NEVER_ANIMATE
         }],
         onChange: e => n(e),
         value: e
     })
 }
 
-function eA() {
+function ep() {
     let e = (0, a.bG)([h.A], () => h.A.isSubmitButtonEnabled),
-        t = D.D_.useSetting(),
+        t = R.D_.useSetting(),
         n = s.useRef(null);
-    return (0, w.A)(n, U.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
+    return (0, k.A)(n, U.Yu.LEGACY_CHAT_INPUT), (0, i.jsx)("div", {
         ref: n,
         children: (0, i.jsxs)(c.nVY, {
             label: z.intl.string(z.t.onqU6o),
-            children: [(0, i.jsx)(N.x, {
+            children: [(0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES_SEND_MESSAGE_BUTTON,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t["3Fztn5"]),
                     checked: e,
                     onChange: g.Xt
                 })
-            }), (0, i.jsx)(N.x, {
+            }), (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_MESSAGES_LEGACY_CHAT_INPUT,
                 children: (0, i.jsx)(c.dOG, {
                     label: z.intl.string(z.t.TZ2hZH),
                     description: z.intl.string(z.t.Q7wgHc),
                     checked: t,
                     onChange: e => {
-                        P.default.track(Y.HAw.LEGACY_CHAT_INPUT_TOGGLED, {
+                        D.default.track(B.HAw.LEGACY_CHAT_INPUT_TOGGLED, {
                             enabled: e,
                             location: {
-                                section: Y.JJy.SETTINGS_ACCESSIBILITY
+                                section: B.JJy.SETTINGS_ACCESSIBILITY
                             }
-                        }), D.D_.updateSetting(e)
+                        }), R.D_.updateSetting(e)
                     }
                 })
             })]
@@ -560,7 +560,7 @@ function eA() {
 }
 
 function em() {
-    let e = (0, a.bG)([_.A], () => _.A.speechRate);
+    let e = (0, a.bG)([y.A], () => y.A.speechRate);
     return (0, i.jsxs)(c.BJc, {
         gap: 16,
         children: [(0, i.jsx)(c.Apm, {
@@ -604,23 +604,15 @@ function ej() {
     })
 }
 
-function eb() {
-    let e = D.on.useSetting();
-    return u.$j ? (0, i.jsx)(N.x, {
+function eO() {
+    return u.$j ? (0, i.jsx)(_.x, {
         setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH,
-        children: (0, i.jsxs)(c.nVY, {
+        children: (0, i.jsx)(c.nVY, {
             label: z.intl.string(z.t.VpSKeO),
-            children: [(0, i.jsx)(N.x, {
-                setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH_TTS_COMMAND,
-                children: (0, i.jsx)(c.dOG, {
-                    label: z.intl.string(z.t.qvTIwX),
-                    checked: e,
-                    onChange: D.on.updateSetting
-                })
-            }), (0, i.jsx)(N.x, {
+            children: (0, i.jsx)(_.x, {
                 setting: H.H.ACCESSIBILITY_TEXT_TO_SPEECH_RATE,
                 children: (0, i.jsx)(em, {})
-            })]
+            })
         })
     }) : null
 }

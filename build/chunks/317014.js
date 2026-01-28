@@ -11,12 +11,12 @@ var n = i(945276),
     a = i(419954),
     o = i(975571),
     T = i(780964),
-    A = i(652215),
-    d = i(985018);
+    d = i(652215),
+    A = i(985018);
 let S = (0, a.zD)(T.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-    useTitle: () => d.intl.string(d.t.qFsx5q),
-    useSubtitle: () => d.intl.format(d.t.lunaRv, {
-        learnMoreLink: o.A.getArticleURL(A.MVz.SAFETY_ALERTS)
+    useTitle: () => A.intl.string(A.t.qFsx5q),
+    useSubtitle: () => A.intl.format(A.t.lunaRv, {
+        learnMoreLink: o.A.getArticleURL(d.MVz.SAFETY_ALERTS)
     }),
     useValue: r.L,
     setValue: u.a,

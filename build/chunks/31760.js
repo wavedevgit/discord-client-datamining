@@ -12,12 +12,12 @@ var n = i(627968),
     a = i(780964),
     o = i(143177),
     T = i(350017),
-    A = i(819188),
-    d = i(231137),
+    d = i(819188),
+    A = i(231137),
     S = i(151098),
     E = i(716005),
-    _ = i(144010),
-    g = i(175631),
+    g = i(144010),
+    _ = i(175631),
     c = i(430443),
     I = i(997442),
     O = i(985018);
@@ -30,10 +30,10 @@ function N(t) {
         overrideId: u,
         setOverride: a,
         fetchOverride: o
-    } = t, [T, A] = l.useState(null != u ? u : ""), d = l.useRef(null), [S, E] = l.useState(0), _ = () => {
-        null != d.current && (clearTimeout(d.current), d.current = null)
+    } = t, [T, d] = l.useState(null != u ? u : ""), A = l.useRef(null), [S, E] = l.useState(0), g = () => {
+        null != A.current && (clearTimeout(A.current), A.current = null)
     };
-    return l.useEffect(() => _, []), (0, n.jsx)(s.D0$, {
+    return l.useEffect(() => g, []), (0, n.jsx)(s.D0$, {
         layout: "horizontal-responsive",
         label: e,
         description: i,
@@ -44,11 +44,11 @@ function N(t) {
             value: T,
             onChange: t => {
                 if (!(t.length > 0) || /^[0-9]+$/.test(t)) {
-                    if (A(t), _(), 0 === t.length) {
+                    if (d(t), g(), 0 === t.length) {
                         E(0), a(null);
                         return
                     }
-                    d.current = setTimeout(() => {
+                    A.current = setTimeout(() => {
                         E(1), o(t).then(e => {
                             E(null == e ? 2 : 3), null != e && a(t)
                         })
@@ -61,7 +61,7 @@ function N(t) {
 }
 let C = (0, r.zZ)(a.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [c.U, I.l, A.B, d.q, E.g, o.Y, g.s, S.t, _.T, T.s],
+    buildLayout: () => [c.U, I.l, d.B, A.q, E.g, o.Y, _.s, S.t, g.T, T.s],
     useInlineNotice: () => ({
         type: u.W.INLINE_NOTICE,
         noticeType: "info",

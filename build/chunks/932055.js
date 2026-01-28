@@ -3,7 +3,7 @@
 i.d(e, {
     Jz: () => S,
     i: () => E,
-    vd: () => d
+    vd: () => A
 }), i(321073);
 var n = i(311907),
     l = i(264686),
@@ -13,22 +13,22 @@ var n = i(311907),
     a = i(803224),
     o = i(780964),
     T = i(985018);
-let A = (0, s.D)(() => ({
+let d = (0, s.D)(() => ({
     currentPlayingSound: null
 }));
 
-function d() {
-    let t = A.getField("currentPlayingSound");
-    null == t || t.stop(), A.setState({
+function A() {
+    let t = d.getField("currentPlayingSound");
+    null == t || t.stop(), d.setState({
         currentPlayingSound: null
     })
 }
 
 function S(t) {
-    let e = A.getField("currentPlayingSound");
+    let e = d.getField("currentPlayingSound");
     null == e || e.stop();
     let i = (0, u.Ak)(t);
-    A.setState({
+    d.setState({
         currentPlayingSound: i
     })
 }

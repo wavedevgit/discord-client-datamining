@@ -1,16 +1,16 @@
-/** Chunk was on 60667 **/
+/** Chunk was on 60449 **/
 /** chunk id: 593942, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => l
 });
-var r = n(314116),
-    i = n(985018);
+var i = n(314116),
+    s = n(985018);
 
 function l(e, t, n) {
-    (0, r.A)({
+    (0, i.A)({
         title: e,
         subtitle: t,
-        confirmText: i.intl.string(i.t.BddRzS),
+        confirmText: s.intl.string(s.t.BddRzS),
         onConfirm: n
     })
 }
