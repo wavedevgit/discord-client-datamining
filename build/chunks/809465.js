@@ -54,7 +54,7 @@ function j(e) {
     var t, n, s, r, j;
     let {
         compact: O = !1
-    } = e, E = (0, u.GV)(), b = window.GLOBAL_ENV.RELEASE_CHANNEL, S = "491062", v = "c1455a4e0b6f4755b1e9e192494b032eadf704ab".substring(0, 7), C = null === c.A || void 0 === c.A ? void 0 : c.A.remoteApp.getVersion(), f = null === c.A || void 0 === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? void 0 : t.call(n), T = null === c.A || void 0 === c.A || null == (s = (r = c.A.remoteApp).getAppArch) ? void 0 : s.call(r), N = null == (j = d.A.getCurrentBuildOverride().overrides) ? void 0 : j.discord_web, _ = function() {
+    } = e, E = (0, u.GV)(), b = window.GLOBAL_ENV.RELEASE_CHANNEL, S = "491097", v = "bdc6a4fa0dc2cc42536a1df1eda7a47c3550fa27".substring(0, 7), C = null === c.A || void 0 === c.A ? void 0 : c.A.remoteApp.getVersion(), f = null === c.A || void 0 === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? void 0 : t.call(n), T = null === c.A || void 0 === c.A || null == (s = (r = c.A.remoteApp).getAppArch) ? void 0 : s.call(r), N = null == (j = d.A.getCurrentBuildOverride().overrides) ? void 0 : j.discord_web, _ = function() {
         var e;
         let t = null === a() || void 0 === a() || null == (e = a().os) ? void 0 : e.toString();
         if (null == t || null == c.A) return null;
