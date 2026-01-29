@@ -115,7 +115,7 @@ function F(e, t) {
         ignoreNoMessagesSetting: !0
     }) || I.Ay.isGuildOrCategoryOrChannelMuted(t.guild_id, t.id)) && (!!n || S.A.getChannelId(C.A.getGuildId()) !== t.id) && I.Ay.getNewForumThreadsCreated(t)
 }
-let G = (e, t, n) => "".concat((0, a.az)(e, !0), " (").concat((0, a.az)((0, o.m1)(t, j.default, x.A, !0), !0)).concat(null != n ? ", ".concat((0, a.az)((0, o.m1)(n, j.default, x.A), !0)) : "", ")");
+let G = (e, t, n) => "".concat((0, a.az)(e), " (").concat((0, a.az)((0, o.m1)(t, j.default, x.A, !0))).concat(null != n ? ", ".concat((0, a.az)((0, o.m1)(n, j.default, x.A))) : "", ")");
 
 function B(e, t, n, r) {
     switch (e.type) {

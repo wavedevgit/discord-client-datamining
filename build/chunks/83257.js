@@ -2,7 +2,7 @@
 /** chunk id: 83257, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => R,
+    Ay: () => j,
     OZ: () => O,
     n3: () => I,
     pe: () => _
@@ -308,4 +308,4 @@ class N extends s.PureComponent {
         })
     }
 }
-let R = N
+let j = N

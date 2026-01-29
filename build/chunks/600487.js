@@ -1,7 +1,7 @@
 /** Chunk was on 5606 **/
 /** chunk id: 600487, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => X
+    A: () => K
 }), n(896048), n(680155), n(323874), n(14289), n(35956), n(747238);
 var r = n(627968),
     i = n(64700),
@@ -19,235 +19,219 @@ var r = n(627968),
     f = n(726649),
     b = n(611924),
     h = n(166403),
-    A = n(816733),
-    E = n(954571),
-    x = n(927578),
-    O = n(40185),
-    C = n(804412),
-    y = n(170887),
-    j = n(422936),
-    T = n(234419),
-    v = n(130946),
-    S = n(407775),
-    I = n(501007),
-    N = n(26010),
-    P = n(54009),
-    R = n(252711),
-    D = n(584767),
-    w = n(191430),
-    L = n(475805),
-    M = n(564230),
-    G = n(974005),
-    U = n(305714),
-    k = n(658137),
-    H = n(57978),
-    B = n(694195),
-    V = n(716442),
-    F = n(927258),
-    Y = n(788868),
-    W = n(652215),
-    K = n(818348),
-    z = n(549447),
-    Z = n(66283),
-    q = n(122402);
-let X = () => {
+    A = n(954571),
+    E = n(927578),
+    x = n(40185),
+    O = n(170887),
+    C = n(130946),
+    y = n(407775),
+    j = n(501007),
+    T = n(26010),
+    v = n(54009),
+    S = n(252711),
+    I = n(584767),
+    N = n(191430),
+    P = n(475805),
+    R = n(564230),
+    D = n(974005),
+    w = n(305714),
+    L = n(658137),
+    M = n(57978),
+    G = n(694195),
+    U = n(716442),
+    k = n(927258),
+    H = n(788868),
+    B = n(652215),
+    V = n(818348),
+    F = n(549447),
+    Y = n(66283),
+    W = n(122402);
+let K = () => {
     let e = (0, a.zy)();
     (0, b.P)(f.b);
     let t = i.useRef(null),
         n = i.useRef(null),
         l = i.useRef(null),
-        X = i.useRef(null),
-        J = i.useRef(null),
-        Q = i.useRef(null),
-        $ = (0, o.bG)([_.A], () => _.A.useReducedMotion),
-        ee = (0, p.Ay)(),
-        et = (0, d.Mw)(ee),
+        K = i.useRef(null),
+        z = i.useRef(null),
+        Z = i.useRef(null),
+        q = (0, o.bG)([_.A], () => _.A.useReducedMotion),
+        X = (0, p.Ay)(),
+        J = (0, d.Mw)(X),
+        [Q, $] = i.useState(!1),
+        [ee, et] = i.useState(!1),
         [en, er] = i.useState(!1),
         [ei, el] = i.useState(!1),
         [es, ea] = i.useState(!1),
-        [eo, ec] = i.useState(!1),
-        [ed, eu] = i.useState(!1),
-        ep = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
-        e_ = null != ep ? (0, x.EL)(ep) : null,
-        em = null != e_ ? x.Ay.getSkuIdForPlan(e_.planId) : null,
-        eg = null !== em && em !== Y.pe.TIER_2 ? Y.pe.TIER_2 : null,
-        ef = (0, O.cg)(),
-        eb = null != ef && ef,
+        eo = (0, o.bG)([h.A], () => h.A.getPremiumTypeSubscription()),
+        ec = null != eo ? (0, E.EL)(eo) : null,
+        ed = null != ec ? E.Ay.getSkuIdForPlan(ec.planId) : null,
+        eu = null !== ed && ed !== H.pe.TIER_2 ? H.pe.TIER_2 : null,
+        ep = (0, x.cg)(),
+        e_ = null != ep && ep,
         {
-            analyticsLocations: eh
+            analyticsLocations: em
         } = (0, g.Ay)(m.A.PREMIUM_MARKETING),
-        eA = (0, y.A)({
+        eg = (0, O.A)({
             location: "PremiumMarketing"
         }),
-        eE = !en && !es && (eA || !ei);
+        ef = !Q && !en && (eg || !ee);
     i.useEffect(() => {
-        eu(!0)
+        ea(!0)
     }, []), i.useEffect(() => {
-        if (!ed || "orbs" !== new URLSearchParams(e.search).get("section")) return;
+        if (!es || "orbs" !== new URLSearchParams(e.search).get("section")) return;
         let t = requestAnimationFrame(() => {
-            let e = document.getElementById(H.NI.ORB_REWARDS);
+            let e = document.getElementById(M.NI.ORB_REWARDS);
             null != e && e.scrollIntoView({
-                behavior: $ ? "auto" : "smooth",
+                behavior: q ? "auto" : "smooth",
                 block: "start"
             })
         });
         return () => cancelAnimationFrame(t)
-    }, [e.search, ed, $]);
-    let ex = [V.k.HOME, V.k.WHATS_NEW, V.k.BEST_OF_NITRO, V.k.PLANS, V.k.COMPARE],
+    }, [e.search, es, q]);
+    let eb = [U.k.HOME, U.k.WHATS_NEW, U.k.BEST_OF_NITRO, U.k.PLANS, U.k.COMPARE],
         {
-            navBarSections: eO,
-            activeSectionId: eC
-        } = (0, B.o)(ex),
+            navBarSections: eh,
+            activeSectionId: eA
+        } = (0, G.o)(eb),
         {
-            home: ey,
-            whatsNew: ej,
-            bestOfNitro: eT,
-            plans: ev,
-            compare: eS
-        } = eO,
-        eI = eA ? z : Z,
-        {
-            variant: eN
-        } = (0, C.Ay)("PremiumBrandRefreshMarketingHeroHeading"),
-        eP = (0, T.V)(),
-        eR = (0, j.O)(),
-        eD = A.A.getAlmostExpiringTrialOffers([Y.pe.TIER_2]).length > 0 && null != eP && null != eP.expires_at && eP.trial_id !== Y.Dw,
-        ew = A.A.getAlmostExpiringDiscountOffers([Y.pe.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
-        eL = eD ? eP.expires_at : ew ? eR.expires_at : null,
-        eM = eN === C.CJ.HERO_COUNTDOWN && (eD || ew) && null != eL,
-        eG = (0, r.jsxs)("div", {
-            className: s()(eI.container, eI.responsiveContainer, {
-                [eI.containerBackground]: eA || et,
-                [z.fadeInFromTop]: !$ && eA
+            home: eE,
+            whatsNew: ex,
+            bestOfNitro: eO,
+            plans: eC,
+            compare: ey
+        } = eh,
+        ej = eg ? F : Y,
+        eT = (0, r.jsxs)("div", {
+            className: s()(ej.container, ej.responsiveContainer, {
+                [ej.containerBackground]: eg || J,
+                [F.fadeInFromTop]: !q && eg
             }),
             "data-cy": "tier-0-marketing-page",
-            children: [eA && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(P.A, {
-                    className: s()(z.topOfPageGradient, {
-                        [z.topOfPageGradientWithCountdown]: eM
-                    })
-                }), (0, r.jsx)(F.A, {
-                    navBarSections: eO,
-                    activeSectionId: eC
+            children: [eg && (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(v.A, {
+                    className: F.topOfPageGradient
+                }), (0, r.jsx)(k.A, {
+                    navBarSections: eh,
+                    activeSectionId: eA
                 })]
-            }), !eA && (0, r.jsxs)(r.Fragment, {
+            }), !eg && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("div", {
-                    className: Z.heroHeaderSideGradient
+                    className: Y.heroHeaderSideGradient
                 }), (0, r.jsx)("img", {
-                    src: q,
-                    className: Z.heroHeaderBackgroundStars,
+                    src: W,
+                    className: Y.heroHeaderBackgroundStars,
                     alt: ""
                 })]
             }), (0, r.jsxs)("div", {
-                className: eI.sectionsContainer,
+                className: ej.sectionsContainer,
                 children: [(0, r.jsx)("div", {
-                    className: eI.heroHeadingContainer,
-                    ref: ey.ref,
+                    className: ej.heroHeadingContainer,
+                    ref: eE.ref,
                     children: (0, r.jsx)(c.L, {
-                        innerRef: X,
-                        onChange: e => er(e),
+                        innerRef: K,
+                        onChange: e => $(e),
                         threshold: 0,
                         active: !0,
-                        children: eA ? (0, r.jsx)(L.A, {
-                            ref: X,
-                            subscriptionTier: eg,
-                            isEligibleForBogoPromotion: ef,
-                            offerExpiresAt: eM ? eL : null
-                        }) : (0, r.jsx)(k.A, {
-                            ref: X,
-                            subscriptionTier: eg,
-                            isDarkMode: et,
-                            isEligibleForBogoPromotion: ef,
+                        children: eg ? (0, r.jsx)(P.A, {
+                            ref: K,
+                            subscriptionTier: eu,
+                            isEligibleForBogoPromotion: ep
+                        }) : (0, r.jsx)(L.A, {
+                            ref: K,
+                            subscriptionTier: eu,
+                            isDarkMode: J,
+                            isEligibleForBogoPromotion: ep,
                             videoRef: n
                         })
                     })
-                }), ef && (0, r.jsx)("div", {
-                    className: eI.promoBannerContainer,
-                    children: (0, r.jsx)(v.A, {
-                        variant: v.c.APPLICATION_NITRO_HOME
+                }), ep && (0, r.jsx)("div", {
+                    className: ej.promoBannerContainer,
+                    children: (0, r.jsx)(C.A, {
+                        variant: C.c.APPLICATION_NITRO_HOME
                     })
                 }), (0, r.jsx)("div", {
-                    className: eI.whatsNewSectionContainer,
-                    ref: ej.ref,
-                    children: (0, r.jsx)(N.Ct, {
-                        shouldLoadVideo: ed,
-                        isReducedMotion: $,
-                        enablePremiumBrandRefreshDesign: eA
+                    className: ej.whatsNewSectionContainer,
+                    ref: ex.ref,
+                    children: (0, r.jsx)(T.Ct, {
+                        shouldLoadVideo: es,
+                        isReducedMotion: q,
+                        enablePremiumBrandRefreshDesign: eg
                     })
                 }), (0, r.jsx)("div", {
-                    className: eI.bestOfNitroSectionContainer,
-                    ref: eT.ref,
-                    children: (0, r.jsx)(N.oO, {
-                        shouldLoadVideo: ed,
-                        isReducedMotion: $,
-                        enablePremiumBrandRefreshDesign: eA
+                    className: ej.bestOfNitroSectionContainer,
+                    ref: eO.ref,
+                    children: (0, r.jsx)(T.oO, {
+                        shouldLoadVideo: es,
+                        isReducedMotion: q,
+                        enablePremiumBrandRefreshDesign: eg
                     })
                 }), (0, r.jsx)("div", {
-                    className: eI.premiumTierCardsContainer,
-                    ref: ev.ref,
+                    className: ej.premiumTierCardsContainer,
+                    ref: eC.ref,
                     children: (0, r.jsx)(c.L, {
                         innerRef: l,
-                        onChange: e => ea(e),
+                        onChange: e => er(e),
                         threshold: .1,
                         active: !0,
-                        children: eA ? (0, r.jsx)(S.hy, {
+                        children: eg ? (0, r.jsx)(y.hy, {
                             innerRef: l
-                        }) : (0, r.jsx)(I.jP, {
+                        }) : (0, r.jsx)(j.jP, {
                             innerRef: l,
-                            hasActiveTier2PremiumPromotion: eb
+                            hasActiveTier2PremiumPromotion: e_
                         })
                     })
                 }), (0, r.jsx)("div", {
-                    className: eI.planComparisonTableContainer,
-                    ref: eS.ref,
-                    children: eA ? (0, r.jsx)(G.A, {}) : (0, r.jsx)(D.A, {})
+                    className: ej.planComparisonTableContainer,
+                    ref: ey.ref,
+                    children: eg ? (0, r.jsx)(D.A, {}) : (0, r.jsx)(I.A, {})
                 })]
-            }), !eA && (0, r.jsx)(R.A, {
-                isVisible: eE && ed,
-                subscriptionTier: eg,
+            }), !eg && (0, r.jsx)(S.A, {
+                isVisible: ef && es,
+                subscriptionTier: eu,
                 isApplicationHome: !0,
-                isEligibleForBogoPromotion: ef
+                isEligibleForBogoPromotion: ep
             }), (0, r.jsx)(c.L, {
-                innerRef: J,
+                innerRef: z,
                 onChange: e => {
-                    e && !eo && (E.default.track(W.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-                        location_stack: eh
-                    }), ec(!0))
+                    e && !ei && (A.default.track(B.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                        location_stack: em
+                    }), el(!0))
                 },
                 children: (0, r.jsx)("div", {
-                    ref: J,
-                    className: eI.bottomOfPageVisibilitySensor
+                    ref: z,
+                    className: ej.bottomOfPageVisibilitySensor
                 })
             }), (0, r.jsx)(c.L, {
-                innerRef: Q,
+                innerRef: Z,
                 onChange: e => {
-                    el(e)
+                    et(e)
                 },
-                children: eA ? (0, r.jsx)(w.A, {
-                    ref: Q
-                }) : (0, r.jsx)(U.A, {
-                    ref: Q,
-                    isFooterVisible: ei,
-                    isDarkMode: et,
-                    isReducedMotion: $,
-                    subscriptionTier: eg
+                children: eg ? (0, r.jsx)(N.A, {
+                    ref: Z
+                }) : (0, r.jsx)(w.A, {
+                    ref: Z,
+                    isFooterVisible: ee,
+                    isDarkMode: J,
+                    isReducedMotion: q,
+                    subscriptionTier: eu
                 })
-            }), eA && (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(M.A, {
-                    isVisible: eE && ed,
-                    subscriptionTier: eg,
-                    isEligibleForBogoPromotion: ef
-                }), (0, r.jsx)(P.A, {
-                    className: z.bottomOfPageGradient
+            }), eg && (0, r.jsxs)(r.Fragment, {
+                children: [(0, r.jsx)(R.A, {
+                    isVisible: ef && es,
+                    subscriptionTier: eu,
+                    isEligibleForBogoPromotion: ep
+                }), (0, r.jsx)(v.A, {
+                    className: F.bottomOfPageGradient
                 })]
             })]
         });
     return (0, r.jsx)(u.NPJ, {
-        theme: eA ? K.NJ.DARKER : ee,
+        theme: eg ? V.NJ.DARKER : X,
         children: e => (0, r.jsx)(u.GtU, {
-            className: s()(eI.scroller, e),
+            className: s()(ej.scroller, e),
             ref: t,
-            children: eG
+            children: eT
         })
     })
 }
