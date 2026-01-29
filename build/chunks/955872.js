@@ -26,9 +26,9 @@ var r = n(627968),
     C = n(158358),
     y = n(196291),
     j = n(101058),
-    T = n(814390),
-    v = n(351906),
-    S = n(752319),
+    T = n(836602),
+    v = n(814390),
+    S = n(351906),
     I = n(287809),
     N = n(954571),
     P = n(927578),
@@ -77,14 +77,17 @@ function H() {
             let e = I.default.getCurrentUser();
             return s()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
         }),
-        n = (0, a.bG)([v.A], () => v.A.hidePersonalInformation),
-        l = (0, a.cf)([S.A], () => S.A.getAllPending()),
+        n = (0, a.bG)([S.A], () => S.A.hidePersonalInformation),
+        l = (0, a.cf)([T.A], () => k(U({}, T.A.getPendingChanges()), {
+            showNotice: T.A.showNotice()
+        })),
         {
             pendingBio: H,
             pendingAvatar: B,
-            pendingNameplate: V
+            pendingNameplate: V,
+            showNotice: F
         } = l,
-        F = function(e, t) {
+        Y = function(e, t) {
             if (null == e) return {};
             var n, r, i, l = {};
             if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -100,17 +103,16 @@ function H() {
                 }(e, t), Object.getOwnPropertySymbols)
                 for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
             return l
-        }(l, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
-        Y = (0, j.V7)({
+        }(l, ["pendingBio", "pendingAvatar", "pendingNameplate", "showNotice"]),
+        W = (0, j.V7)({
             userId: t.id,
             image: B
         }),
-        W = (0, E.lw)({
+        K = (0, E.lw)({
             pendingValue: V,
             userValue: null == t || null == (e = t.collectibles) ? void 0 : e.nameplate
         }),
-        K = (0, a.bG)([S.A], () => S.A.showNotice()),
-        z = (0, T.A)() && null != H ? f.Ay.parse(void 0, H).content : H,
+        z = (0, v.A)() && null != H ? f.Ay.parse(void 0, H).content : H,
         Z = P.Ay.canUsePremiumProfileCustomization(t),
         {
             analyticsLocations: q,
@@ -130,14 +132,14 @@ function H() {
                 canUsePremiumCustomization: Z,
                 onUpsellClick: D.A,
                 pendingBio: z
-            }, F), {
-                pendingAvatar: Y
+            }, Y), {
+                pendingAvatar: W
             })),
             nameplatePreview: (0, r.jsx)(b.A, k(U({
                 user: t,
-                nameplate: W
-            }, F), {
-                className: null == W ? G.t : void 0,
+                nameplate: K
+            }, Y), {
+                className: null == K ? G.t : void 0,
                 isHighlighted: !0
             })),
             children: (0, r.jsx)(w.A, {})
@@ -154,7 +156,7 @@ function H() {
                     isVisible: J
                 })
             })
-        }), ee && !K && (0, r.jsx)(h.d, {
+        }), ee && !F && (0, r.jsx)(h.d, {
             className: G.E,
             showUpsell: ee && !J,
             text: M.intl.format(M.t.TmfgI2, {

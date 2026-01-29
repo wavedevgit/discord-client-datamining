@@ -20,12 +20,12 @@ var n = l(627968),
     x = l(919395),
     b = l(287070),
     h = l(101058),
-    j = l(950191),
-    v = l(686189),
-    N = l(946356),
-    A = l(752319),
-    S = l(954571),
-    C = l(975571),
+    j = l(836602),
+    v = l(950191),
+    N = l(686189),
+    A = l(946356),
+    C = l(954571),
+    S = l(975571),
     y = l(652215),
     O = l(996988),
     E = l(927961),
@@ -73,13 +73,13 @@ function I(e) {
         selectedEffectId: k,
         selectedColors: R,
         onClose: G
-    } = e, z = (0, c.Ay)(), M = (0, i.Mwr)(z), [H, U] = (0, r.useState)(M), Y = (0, j.Ay)(t.id, null), {
+    } = e, z = (0, c.Ay)(), M = (0, i.Mwr)(z), [H, U] = (0, r.useState)(M), Y = (0, v.Ay)(t.id, null), {
         bannerSrc: B
-    } = (0, v.A)({
+    } = (0, N.A)({
         displayProfile: Y,
         size: 413,
         canAnimate: !1
-    }), J = (0, o.cf)([A.A, d.A], () => null == l ? A.A.getAllPending() : d.A.getAllPending()), F = (0, h.V7)({
+    }), J = (0, o.cf)([j.A, d.A], () => null == l ? j.A.getPendingChanges() : d.A.getAllPending()), F = (0, h.V7)({
         userId: t.id,
         image: J.pendingAvatar
     }), {
@@ -89,10 +89,10 @@ function I(e) {
     } = (0, x.rv)(t, null == l ? void 0 : l.id), X = null != K ? (0, g.WK)(K) : void 0;
     H && !M ? z = y.NJ8.DARK : !H && M && (z = y.NJ8.LIGHT);
     let Q = (0, r.useCallback)(() => {
-            S.default.track(y.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
+            C.default.track(y.HAw.DISPLAY_NAME_STYLES_CLOSED), G()
         }, [G]),
         Z = (0, r.useCallback)(e => {
-            U(e === y.NJ8.DARK), S.default.track(y.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
+            U(e === y.NJ8.DARK), C.default.track(y.HAw.DISPLAY_NAME_STYLES_THEME_TOGGLE, {
                 dark: e === y.NJ8.DARK
             })
         }, []),
@@ -115,7 +115,7 @@ function I(e) {
                 onClick: Q,
                 innerClassName: P.b
             })
-        }), null != B && (0, n.jsx)(N.A, {
+        }), null != B && (0, n.jsx)(A.A, {
             user: t,
             displayProfile: Y,
             themeType: O.d.MODAL_V2,
@@ -177,7 +177,7 @@ function I(e) {
                 variant: "text-xs/normal",
                 color: "text-muted",
                 children: T.intl.format(E.default.prQba8, {
-                    helpArticleLink: C.A.getArticleURL(y.MVz.DISPLAY_NAME_STYLES)
+                    helpArticleLink: S.A.getArticleURL(y.MVz.DISPLAY_NAME_STYLES)
                 })
             }), (0, n.jsx)(L, {
                 darkPreview: H,

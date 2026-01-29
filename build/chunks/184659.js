@@ -7,7 +7,7 @@ var r = n(627968),
     l = n(311907),
     i = n(287070),
     a = n(101058),
-    s = n(752319),
+    s = n(836602),
     o = n(927578),
     c = n(132198),
     u = n(266371);
@@ -15,7 +15,7 @@ let d = e => {
     var t, n;
     let {
         user: d
-    } = e, m = o.Ay.canUsePremiumProfileCustomization(d), p = (0, l.cf)([s.A], () => s.A.getAllPending()), {
+    } = e, m = o.Ay.canUsePremiumProfileCustomization(d), p = (0, l.cf)([s.A], () => s.A.getPendingChanges()), {
         pendingAvatar: f
     } = p, x = function(e, t) {
         if (null == e) return {};

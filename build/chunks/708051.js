@@ -7,8 +7,8 @@ n.d(t, {
 var l = n(627968),
     i = n(64700),
     s = n(821418),
-    r = n(665260),
-    a = n(311907),
+    a = n(665260),
+    r = n(311907),
     o = n(421380),
     u = n(397927),
     d = n(416052),
@@ -21,7 +21,7 @@ var l = n(627968),
     I = n(652215),
     m = n(985018),
     S = n(912579);
-let x = a.Ay.connectStores([g.A], () => ({
+let x = r.Ay.connectStores([g.A], () => ({
         hideValue: g.A.hideInstantInvites
     }))(e => {
         let {
@@ -29,7 +29,7 @@ let x = a.Ay.connectStores([g.A], () => ({
             autoFocus: n,
             hideValue: i,
             onCopy: s,
-            disabled: r
+            disabled: a
         } = e;
         return (0, l.jsx)(d.A, {
             value: t,
@@ -37,14 +37,14 @@ let x = a.Ay.connectStores([g.A], () => ({
             buttonColor: o.$n.Colors.BRAND,
             onCopy: s,
             autoFocus: n,
-            disabled: r
+            disabled: a
         })
     }),
     y = e => {
         let {
             guild: t,
             noInvitesAvailable: n,
-            showFriends: a,
+            showFriends: r,
             onClose: o,
             modalState: d,
             isApplicationBypassToggleEnabled: g,
@@ -52,8 +52,8 @@ let x = a.Ay.connectStores([g.A], () => ({
             copyValue: f,
             changePage: E,
             inviteChannel: _,
-            source: b,
-            code: C,
+            source: C,
+            code: b,
             guildScheduledEvent: T,
             disabled: N,
             application: M
@@ -68,33 +68,33 @@ let x = a.Ay.connectStores([g.A], () => ({
                 server: c.A.getGuildId(),
                 channel: null == _ ? void 0 : _.id,
                 channel_type: null == _ ? void 0 : _.type,
-                location: b,
-                code: C,
+                location: C,
+                code: b,
                 guild_scheduled_event_id: null == T ? void 0 : T.id,
                 application_id: null == M ? void 0 : M.id
             })
-        }, [null == M ? void 0 : M.id, _, b, C, T]);
+        }, [null == M ? void 0 : M.id, _, C, b, T]);
         return (0, l.jsxs)(u.BJc, {
             gap: 16,
             children: [(0, l.jsx)(x, {
                 value: f,
-                autoFocus: a,
+                autoFocus: r,
                 onCopy: U,
                 disabled: N
             }), g && (0, l.jsx)(u.dOG, {
-                checked: (0, r.Lt)(V, s.Q.IS_APPLICATION_BYPASS),
-                onChange: e => y((0, r.lA)(V, s.Q.IS_APPLICATION_BYPASS, e)),
+                checked: (0, a.Lt)(V, s.Q.IS_APPLICATION_BYPASS),
+                onChange: e => y((0, a.lA)(V, s.Q.IS_APPLICATION_BYPASS, e)),
                 disabled: N,
                 label: m.intl.string(m.t["1i1bUl"]),
                 description: m.intl.string(m.t["jvd/LF"])
             }), n || R ? null : (0, l.jsxs)(u.Text, {
                 variant: "text-xs/normal",
                 className: S.PJ,
-                children: [(0, p.Be)(O, j), " ", a ? (0, l.jsx)(u.MzZ, {
+                children: [(0, p.Be)(O, j), " ", r ? (0, l.jsx)(u.MzZ, {
                     onClick: () => E(A.QR.SETTINGS),
                     children: m.intl.string(m.t["VNe8P/"])
                 }) : null]
-            }), !n && a && R ? (0, l.jsxs)(u.Text, {
+            }), !n && r && R ? (0, l.jsxs)(u.Text, {
                 variant: "text-xs/normal",
                 className: S.PJ,
                 children: [m.intl.string(m.t["0M2U95"]), " "]

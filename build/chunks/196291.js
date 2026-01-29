@@ -20,8 +20,8 @@ var r = n(627968),
     b = n(407217),
     h = n(101058),
     A = n(207803),
-    E = n(193658),
-    x = n(752319),
+    E = n(836602),
+    x = n(193658),
     O = n(954571),
     C = n(927578),
     y = n(884546),
@@ -49,10 +49,10 @@ function M(e) {
         tryItOutThemeColors: F,
         tryItOutAvatar: Y,
         tryItOutBanner: W
-    } = (0, l.cf)([x.A], () => {
+    } = (0, l.cf)([E.A], () => {
         var e, t;
-        let n = x.A.getAllPending(),
-            r = x.A.getErrors();
+        let n = E.A.getPendingChanges(),
+            r = E.A.getErrors();
         return e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -70,7 +70,7 @@ function M(e) {
                 })
             }
             return e
-        }({}, n, x.A.getAllTryItOut()), t = t = {
+        }({}, n, E.A.getTryItOutChanges()), t = t = {
             errors: r
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -86,7 +86,7 @@ function M(e) {
         preset: K,
         onShuffle: z
     } = (0, p.A)(), Z = i.useRef(null);
-    (0, E.A)(Z, D._F.TRY_IT_OUT);
+    (0, x.A)(Z, D._F.TRY_IT_OUT);
     let {
         analyticsLocations: q,
         newestAnalyticsLocation: X,

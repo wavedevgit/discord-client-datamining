@@ -24,8 +24,8 @@ var n = l(627968),
     v = l(415299),
     N = l(897661),
     A = l(18396),
-    S = l(242853),
-    C = l(32246),
+    C = l(242853),
+    S = l(32246),
     y = l(879164),
     O = l(30925),
     E = l(652215),
@@ -104,12 +104,12 @@ function w(e) {
                                 variant: "heading-lg/semibold",
                                 children: P.intl.string(T.default.ZPMAlX)
                             })
-                        }), (0, n.jsx)(C.A, {
+                        }), (0, n.jsx)(S.A, {
                             selectedFontId: J,
                             setSelectedFontId: F,
                             displayName: z,
                             className: D._
-                        }), (0, n.jsx)(S.A, {
+                        }), (0, n.jsx)(C.A, {
                             selectedEffectId: V,
                             setSelectedEffectId: ea,
                             className: D._

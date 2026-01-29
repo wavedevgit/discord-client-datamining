@@ -4,8 +4,8 @@ n.d(t, {
     A: () => f
 }), n(896048);
 var i = n(627968),
-    r = n(64700),
-    a = n(158954),
+    a = n(64700),
+    r = n(158954),
     s = n(397927),
     l = n(341915),
     o = n(73473),
@@ -18,7 +18,7 @@ function m(e) {
         onClose: t,
         transitionState: n
     } = e;
-    return (0, i.jsx)(a.Modal, {
+    return (0, i.jsx)(r.Modal, {
         size: "md",
         title: c.intl.string(c.t.Hd3D8W),
         actions: [{
@@ -40,16 +40,16 @@ function f(e) {
     let {
         quest: t,
         sourceQuestContent: n,
-        transitionState: a,
+        transitionState: r,
         onClose: c,
         rewardContent: f,
         isRewardContentLoading: x,
         rewardContentHasError: _,
         location: g
-    } = e, v = l.uF.REWARD_MODAL, [h, j] = r.useState(!0);
+    } = e, v = l.uF.REWARD_MODAL, [h, j] = a.useState(!0);
     if (_) return (0, i.jsx)(m, {
         onClose: c,
-        transitionState: a
+        transitionState: r
     });
     let p = x || h;
     return (0, i.jsx)(o.R, {
@@ -67,7 +67,7 @@ function f(e) {
                 },
                 children: (0, i.jsxs)(s.EOs, {
                     "data-migration-pending": !0,
-                    transitionState: p ? s.ip4.HIDDEN : a,
+                    transitionState: p ? s.ip4.HIDDEN : r,
                     size: s.rIJ.DYNAMIC,
                     className: u.yl,
                     parentComponent: "QuestRewardModalBase",

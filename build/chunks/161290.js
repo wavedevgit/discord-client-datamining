@@ -27,9 +27,9 @@ var i = n(284009),
     C = n(546849),
     y = n(101058),
     j = n(207803),
-    T = n(622543),
-    v = n(950191),
-    S = n(752319),
+    T = n(836602),
+    v = n(622543),
+    S = n(950191),
     I = n(287809),
     N = n(927578),
     P = n(985018),
@@ -41,7 +41,7 @@ function D() {
             let e = I.default.getCurrentUser();
             return l()(null != e, "DefaultCustomizationSections: user cannot be undefined"), e
         }),
-        U = (0, s.bG)([T.A], () => T.A.getUserProfile(G.id)),
+        U = (0, s.bG)([v.A], () => v.A.getUserProfile(G.id)),
         {
             pendingAvatar: k,
             pendingGlobalName: H,
@@ -53,10 +53,10 @@ function D() {
             pendingLegacyUsernameDisabled: K,
             pendingPrimaryGuildId: z,
             errors: Z
-        } = (0, s.cf)([S.A], () => {
+        } = (0, s.cf)([T.A], () => {
             var e, t;
-            let n = S.A.getAllPending(),
-                r = S.A.getErrors();
+            let n = T.A.getPendingChanges(),
+                r = T.A.getErrors();
             return e = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -95,7 +95,7 @@ function D() {
         J = N.Ay.canUsePremiumProfileCustomization(G),
         Q = (0, u.z5)(k, G.avatar),
         $ = (0, u.Ac)(B, null == U ? void 0 : U.banner),
-        ee = (0, v.Ay)(G.id),
+        ee = (0, S.Ay)(G.id),
         et = null == ee ? void 0 : ee.getLegacyUsername(),
         en = (null != (e = null == (L = Z.global_name) ? void 0 : L.length) ? e : 0) > 0 ? Z.global_name : null != (t = null == X ? void 0 : X.nick) ? t : [],
         er = (null != (n = null == (M = Z.bio) ? void 0 : M.length) ? n : 0) > 0 ? Z.bio : null != (i = null == X ? void 0 : X.bio) ? i : [],

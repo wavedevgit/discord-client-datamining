@@ -27,14 +27,14 @@ var r = n(64700),
     c = n(159001),
     u = n(833336),
     d = n(207803),
-    f = n(622543),
-    p = n(696451),
-    _ = n(752319),
+    f = n(836602),
+    p = n(622543),
+    _ = n(696451),
     h = n(287809);
 
 function m(e) {
     return r.useMemo(() => {
-        let t = p.Ay.getMutableAllGuildsAndMembers(),
+        let t = _.Ay.getMutableAllGuildsAndMembers(),
             n = {};
         for (let i in t) {
             var r;
@@ -47,14 +47,14 @@ function m(e) {
 
 function g(e, t) {
     var n;
-    let r = (0, s.bG)([p.Ay], () => void 0 === t ? null : p.Ay.getMember(t, e.id)),
+    let r = (0, s.bG)([_.Ay], () => void 0 === t ? null : _.Ay.getMember(t, e.id)),
         i = e.nameplate,
         {
             pendingUserNameplate: a,
             userErrors: o
-        } = (0, s.cf)([_.A], () => ({
-            pendingUserNameplate: _.A.getPendingNameplate(),
-            userErrors: _.A.getErrors().nameplate
+        } = (0, s.cf)([f.A], () => ({
+            pendingUserNameplate: f.A.getPendingChanges().pendingNameplate,
+            userErrors: f.A.getErrors().nameplate
         })),
         {
             pendingGuildNameplate: l,
@@ -72,28 +72,29 @@ function g(e, t) {
 }
 
 function E(e, t) {
-    let n = (0, s.bG)([p.Ay], () => void 0 === t || null == e ? null : p.Ay.getMember(t, e.id)),
+    let n = (0, s.bG)([_.Ay], () => void 0 === t || null == e ? null : _.Ay.getMember(t, e.id)),
         {
             pendingUserDisplayNameStyles: r,
-            userErrors: i
-        } = (0, s.cf)([_.A], () => ({
-            pendingUserDisplayNameStyles: _.A.getPendingDisplayNameStyles(),
-            userErrors: _.A.getErrors().displayNameStyles
+            tryItOutDisplayNameStyles: i,
+            userErrors: a
+        } = (0, s.cf)([f.A], () => ({
+            pendingUserDisplayNameStyles: f.A.getPendingChanges().pendingDisplayNameStyles,
+            tryItOutDisplayNameStyles: f.A.getTryItOutChanges().tryItOutDisplayNameStyles,
+            userErrors: f.A.getErrors().displayNameStyles
         })),
         {
-            pendingGuildDisplayNameStyles: a,
-            guildErrors: o
+            pendingGuildDisplayNameStyles: o,
+            guildErrors: l
         } = (0, s.cf)([u.A], () => ({
             pendingGuildDisplayNameStyles: u.A.getPendingDisplayNameStyles(),
             guildErrors: u.A.getErrors().displayNameStyles
-        })),
-        l = (0, s.bG)([_.A], () => _.A.getTryItOutDisplayNameStyles());
+        }));
     return {
         userDisplayNameStyles: null == e ? void 0 : e.displayNameStyles,
         guildDisplayNameStyles: null == n ? void 0 : n.displayNameStyles,
-        pendingDisplayNameStyles: null != t ? a : r,
-        tryItOutDisplayNameStyles: l,
-        pendingErrors: null != t ? o : i
+        pendingDisplayNameStyles: null != t ? o : r,
+        tryItOutDisplayNameStyles: i,
+        pendingErrors: null != t ? l : a
     }
 }
 
@@ -101,7 +102,7 @@ function y(e) {
     let {
         user: t,
         guildId: n
-    } = e, r = (0, s.bG)([p.Ay], () => null != n ? p.Ay.getMember(n, t.id) : null);
+    } = e, r = (0, s.bG)([_.Ay], () => null != n ? _.Ay.getMember(n, t.id) : null);
     return null != n ? null == r ? void 0 : r.avatarDecoration : t.avatarDecoration
 }
 
@@ -110,16 +111,16 @@ function b(e) {
         user: t,
         guildId: n
     } = e;
-    return (0, s.bG)([f.A], () => {
+    return (0, s.bG)([p.A], () => {
         var e, r;
-        return null == n ? null == (e = f.A.getUserProfile(t.id)) ? void 0 : e.profileEffect : null == (r = f.A.getGuildMemberProfile(t.id, n)) ? void 0 : r.profileEffect
+        return null == n ? null == (e = p.A.getUserProfile(t.id)) ? void 0 : e.profileEffect : null == (r = p.A.getGuildMemberProfile(t.id, n)) ? void 0 : r.profileEffect
     })
 }
 
 function O(e) {
-    let t = (0, s.cf)([_.A], () => ({
-            pendingAvatarDecoration: _.A.getPendingAvatarDecoration(),
-            errors: _.A.getErrors().avatarDecoration
+    let t = (0, s.cf)([f.A], () => ({
+            pendingAvatarDecoration: f.A.getPendingChanges().pendingAvatarDecoration,
+            errors: f.A.getErrors().avatarDecoration
         })),
         n = (0, s.cf)([u.A], () => ({
             pendingAvatarDecoration: u.A.getPendingAvatarDecoration(),
@@ -129,9 +130,9 @@ function O(e) {
 }
 
 function v(e) {
-    let t = (0, s.cf)([_.A], () => ({
-            pendingProfileEffect: _.A.getPendingProfileEffect(),
-            errors: _.A.getErrors().profileEffect
+    let t = (0, s.cf)([f.A], () => ({
+            pendingProfileEffect: f.A.getPendingChanges().pendingProfileEffect,
+            errors: f.A.getErrors().profileEffect
         })),
         n = (0, s.cf)([u.A], () => ({
             pendingProfileEffect: u.A.getPendingProfileEffect(),
@@ -158,7 +159,7 @@ function S(e, t) {
         })
     } else {
         var r;
-        let i = null == (r = p.Ay.getMember(t, n.id)) ? void 0 : r.avatarDecoration;
+        let i = null == (r = _.Ay.getMember(t, n.id)) ? void 0 : r.avatarDecoration;
         (0, c.WR)({
             type: o.R.AVATAR_DECORATION,
             value: (null == e ? void 0 : e.skuId) === (null == i ? void 0 : i.skuId) ? void 0 : e
@@ -170,13 +171,13 @@ function T(e, t) {
     var n, r;
     let i = h.default.getCurrentUser();
     if (a()(null != i, "user cannot be null"), null == t) {
-        let t = null == (n = f.A.getUserProfile(i.id)) ? void 0 : n.profileEffect;
+        let t = null == (n = p.A.getUserProfile(i.id)) ? void 0 : n.profileEffect;
         (0, l.WR)({
             type: o.R.PROFILE_EFFECT,
             value: (null == e ? void 0 : e.skuId) === (null == t ? void 0 : t.skuId) ? void 0 : e
         })
     } else {
-        let n = null == (r = f.A.getGuildMemberProfile(i.id, t)) ? void 0 : r.profileEffect;
+        let n = null == (r = p.A.getGuildMemberProfile(i.id, t)) ? void 0 : r.profileEffect;
         (0, c.WR)({
             type: o.R.PROFILE_EFFECT,
             value: (null == e ? void 0 : e.skuId) === (null == n ? void 0 : n.skuId) ? void 0 : e
@@ -194,7 +195,7 @@ function C(e, t) {
             value: (null == e ? void 0 : e.skuId) === (null == t ? void 0 : t.skuId) ? void 0 : e
         })
     } else {
-        let n = null == (i = p.Ay.getMember(t, s.id)) || null == (r = i.collectibles) ? void 0 : r.nameplate;
+        let n = null == (i = _.Ay.getMember(t, s.id)) || null == (r = i.collectibles) ? void 0 : r.nameplate;
         (0, c.WR)({
             type: o.R.NAMEPLATE,
             value: (null == e ? void 0 : e.skuId) === (null == n ? void 0 : n.skuId) ? void 0 : e

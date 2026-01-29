@@ -16,8 +16,8 @@ var n = i(627968),
     S = i(745109),
     E = i(419954),
     g = i(933297),
-    _ = i(854627),
-    c = i(752319),
+    _ = i(836602),
+    c = i(854627),
     I = i(287809),
     O = i(780964),
     N = i(358776),
@@ -31,7 +31,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
         usePredicate: () => !(0, N.dk)("LegacyProfilePanel"),
         useTitle: () => p.intl.string(p.t["vi7f+q"]),
         notice: {
-            stores: [d.A, c.A],
+            stores: [d.A, _.A],
             element: A.A
         },
         initialize: () => () => u.h.wait(() => {
@@ -44,7 +44,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
         usePredicate: () => (0, N.dk)("ProfilePanel"),
         useTitle: () => p.intl.string(p.t["vi7f+q"]),
         notice: {
-            stores: [d.A, c.A],
+            stores: [d.A, _.A],
             element: A.A
         },
         initialize: () => () => u.h.wait(() => {
@@ -62,7 +62,7 @@ let P = (0, E.t_)(O.X.PROFILE_PANEL, {
                 {
                     avatarSrc: i,
                     avatarDecorationSrc: u
-                } = (0, _.A)({
+                } = (0, c.A)({
                     userId: null == e ? void 0 : e.id,
                     size: r._3J.SIZE_48
                 });

@@ -8,7 +8,7 @@ var r = n(627968),
     l = n(311907),
     s = n(397927),
     a = n(101058),
-    o = n(752319),
+    o = n(836602),
     c = n(287070),
     d = n(83118);
 
@@ -51,7 +51,7 @@ function u(e) {
             })
         }
         return e
-    })({}, o.A.getAllPending(), o.A.getAllTryItOut())), S = (0, a.V7)({
+    })({}, o.A.getPendingChanges(), o.A.getTryItOutChanges())), S = (0, a.V7)({
         userId: u.id,
         image: null != y ? y : g
     });

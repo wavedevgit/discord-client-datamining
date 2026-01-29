@@ -6,8 +6,8 @@ n.d(t, {
 var l = n(64700),
     i = n(311907),
     s = n(34457),
-    r = n(317525),
-    a = n(576705),
+    a = n(317525),
+    r = n(576705),
     o = n(287809),
     u = n(488926),
     d = n(652215);
@@ -17,10 +17,10 @@ function c(e) {
         sortedRoles: t,
         currentUser: n,
         canManageRoles: c
-    } = (0, i.cf)([r.A, o.default, a.A], () => ({
-        sortedRoles: null != e ? r.A.getSortedRoles(e.id) : [],
+    } = (0, i.cf)([a.A, o.default, r.A], () => ({
+        sortedRoles: null != e ? a.A.getSortedRoles(e.id) : [],
         currentUser: o.default.getCurrentUser(),
-        canManageRoles: null != e && a.A.can(d.xBc.MANAGE_ROLES, e)
+        canManageRoles: null != e && r.A.can(d.xBc.MANAGE_ROLES, e)
     }), [e]);
     return l.useMemo(() => {
         if (null == e || null == n || !c) return [];

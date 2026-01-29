@@ -13,12 +13,12 @@ var i = n(627968),
     d = n(159001),
     u = n(833336),
     g = n(766569),
-    h = n(576622),
-    x = n(358776),
-    A = n(740625),
-    p = n(955872),
-    m = n(987281),
-    j = n(752319),
+    h = n(836602),
+    x = n(576622),
+    A = n(358776),
+    p = n(740625),
+    m = n(955872),
+    j = n(987281),
     O = n(287809),
     E = n(203982),
     b = n(115063),
@@ -32,18 +32,18 @@ var i = n(627968),
     I = n(298109);
 
 function y() {
-    let e = (0, x.dk)("ProfileCustomizationSettingsPage"),
+    let e = (0, A.dk)("ProfileCustomizationSettingsPage"),
         t = (0, a.bG)([u.A], () => u.A.getGuild()),
         n = (0, S.A)(),
-        l = (0, a.bG)([u.A, j.A], () => u.A.showNotice() || j.A.showNotice()),
+        l = (0, a.bG)([u.A, h.A], () => u.A.showNotice() || h.A.showNotice()),
         y = null != t ? t : n,
         D = (0, a.bG)([O.default], () => O.default.getCurrentUser()),
         {
             subsection: G,
             setSubsection: P
         } = (0, v.A)(),
-        R = m.a.useField("hasSearchResults"),
-        V = m.a.useField("searchResults");
+        R = j.a.useField("hasSearchResults"),
+        V = j.a.useField("searchResults");
 
     function L(e) {
         if (G !== e) {
@@ -58,13 +58,13 @@ function y() {
         }
     }
     s.useEffect(() => {
-        null != D && (null == y ? void 0 : y.id) !== f.V && (0, h.A)(D.id, D.getAvatarURL(null == y ? void 0 : y.id, 80), {
+        null != D && (null == y ? void 0 : y.id) !== f.V && (0, x.A)(D.id, D.getAvatarURL(null == y ? void 0 : y.id, 80), {
             guildId: null == y ? void 0 : y.id
         })
     }, [null == y ? void 0 : y.id, D]);
     let k = !0,
         M = !0;
-    return R && 1 === V.length && (V.includes(N.H.PROFILE_SERVER_PROFILES) ? (L(T.Eq.GUILD), M = !1) : V.includes(N.H.PROFILE_USER_PROFILE) && (L(T.Eq.USER_PROFILE), k = !1)), (0, i.jsxs)(A.R, {
+    return R && 1 === V.length && (V.includes(N.H.PROFILE_SERVER_PROFILES) ? (L(T.Eq.GUILD), M = !1) : V.includes(N.H.PROFILE_USER_PROFILE) && (L(T.Eq.USER_PROFILE), k = !1)), (0, i.jsxs)(p.R, {
         header: _.intl.string(_.t["vi7f+q"]),
         children: [(0, i.jsxs)(o.VQ0, {
             className: I.$H,
@@ -84,6 +84,6 @@ function y() {
             }, T.Eq.GUILD) : null]
         }), G === T.Eq.GUILD ? (0, i.jsx)(g.A, {
             selectedGuild: y
-        }) : (0, i.jsx)(p.A, {})]
+        }) : (0, i.jsx)(m.A, {})]
     })
 }

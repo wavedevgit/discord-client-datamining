@@ -5,8 +5,8 @@ n.d(t, {
 });
 var i = n(627968);
 n(64700);
-var r = n(119995),
-    a = n(457976);
+var a = n(119995),
+    r = n(457976);
 
 function s(e) {
     let {
@@ -14,8 +14,8 @@ function s(e) {
         children: n
     } = e;
     return (0, i.jsxs)("div", {
-        className: a.k,
-        children: [(0, i.jsx)(r.r, {
+        className: r.k,
+        children: [(0, i.jsx)(a.r, {
             rewardName: t
         }), n]
     })

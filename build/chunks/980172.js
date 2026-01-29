@@ -28,13 +28,13 @@ var r = n(627968),
     j = n(207560),
     T = n(195043),
     v = n(790114),
-    S = n(262),
-    I = n(950191),
-    N = n(854627),
-    P = n(542535),
-    R = n(915614),
-    D = n(662758),
-    w = n(752319),
+    S = n(836602),
+    I = n(262),
+    N = n(950191),
+    P = n(854627),
+    R = n(542535),
+    D = n(915614),
+    w = n(662758),
     L = n(287809),
     M = n(957565),
     G = n(427262),
@@ -376,7 +376,7 @@ function ei(e) {
                     text: Z.intl.string(Z.t.N86XcP),
                     "aria-label": Z.intl.string(Z.t.Rpn4A3),
                     onClick: function() {
-                        (0, p.qfG)(e => (0, r.jsx)(D.default, J(X({}, e), {
+                        (0, p.qfG)(e => (0, r.jsx)(w.default, J(X({}, e), {
                             title: Z.intl.string(Z.t["3CTiKi"]),
                             children: l.hasFlag(W.nhx.MFA_SMS) ? Z.intl.string(Z.t.jrhJyo) : void 0,
                             actionText: Z.intl.string(Z.t.N86XcP),
@@ -489,15 +489,15 @@ function ea() {
             let e = L.default.getCurrentUser();
             return o()(null != e, "UserSettingsAccountProfileCard: currentUser cannot be undefined"), e
         }),
-        n = (0, I.Ay)(t.id),
-        i = (0, S.A)(n),
+        n = (0, N.Ay)(t.id),
+        i = (0, I.A)(n),
         l = H.jP.useSetting(),
-        s = (0, c.bG)([w.A], () => w.A.getErrors()),
+        s = (0, c.bG)([S.A], () => S.A.getErrors()),
         a = null == s || null == (e = s.avatar) ? void 0 : e[0],
         {
             avatarSrc: d,
             avatarDecorationSrc: u
-        } = (0, N.A)({
+        } = (0, P.A)({
             userId: null == t ? void 0 : t.id,
             size: p._3J.SIZE_80
         }),
@@ -506,7 +506,7 @@ function ea() {
         f = (0, k.j)("UserSettingsAccountProfileCard");
     return (0, r.jsxs)("div", {
         className: q.DM,
-        children: [(0, r.jsx)(R.o, {
+        children: [(0, r.jsx)(D.o, {
             user: t,
             displayProfile: n,
             avatarSize: p._3J.SIZE_80,
@@ -535,7 +535,7 @@ function ea() {
                     }), (0, r.jsx)(el, {
                         user: t
                     })]
-                }), (0, r.jsx)(P.A, {
+                }), (0, r.jsx)(R.A, {
                     badges: i,
                     className: q.C_,
                     badgeClassName: q.qS
