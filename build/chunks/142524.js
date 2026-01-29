@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 142524, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => I
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -16,21 +16,21 @@ var r = n(627968),
     f = n(961350),
     m = n(71393),
     g = n(576705),
-    y = n(290863),
-    b = n(977997),
-    _ = n(954571),
-    h = n(279250),
-    A = n(834757),
+    _ = n(290863),
+    y = n(977997),
+    A = n(954571),
+    b = n(279250),
+    h = n(834757),
     v = n(727353),
     O = n(652215),
-    S = n(945354);
-class j extends i.PureComponent {
+    j = n(945354);
+class S extends i.PureComponent {
     componentDidMount() {
         let {
             user: e,
             streamApplication: t
         } = this.props;
-        _.default.track(O.HAw.OPEN_POPOUT, {
+        A.default.track(O.HAw.OPEN_POPOUT, {
             type: "Stream Preview",
             other_user_id: e.id,
             application_id: null != t ? t.id : null,
@@ -53,24 +53,24 @@ class j extends i.PureComponent {
             currentUserId: f,
             canWatch: m,
             unavailableReason: g,
-            streamApplication: y
+            streamApplication: _
         } = this.props;
         if (null == n) return null;
         let {
-            enableUserHoverActivities: b
+            enableUserHoverActivities: y
         } = (0, u.Uw)({
             guildId: null == o ? void 0 : o.guild_id,
             location: "StreamPreviewPopout"
         });
         return (0, r.jsxs)("div", {
-            className: a()(S.yt, {
-                [S.P0]: i
+            className: a()(j.yt, {
+                [j.P0]: i
             }),
             children: [(0, r.jsx)(v.Z, {
                 stream: n,
                 activeStream: p,
                 streamActivity: e,
-                streamApplication: y,
+                streamApplication: _,
                 user: t,
                 currentUserId: f,
                 canWatch: null != m && m,
@@ -78,9 +78,9 @@ class j extends i.PureComponent {
                 onWatchStream: c,
                 onAction: l,
                 hideTip: s,
-                className: S.Rh,
+                className: j.Rh,
                 wrapperClassName: void 0
-            }), b && null != o && (0, r.jsx)(d.A, {
+            }), y && null != o && (0, r.jsx)(d.A, {
                 channel: o,
                 user: t,
                 onAction: l
@@ -89,7 +89,7 @@ class j extends i.PureComponent {
     }
 }
 
-function x(e) {
+function I(e) {
     var t, n;
     let {
         user: l,
@@ -110,10 +110,10 @@ function x(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
-    }(e, ["user", "channel"]), [d, _] = (0, s.yK)([b.A, m.A, g.A, c.default], () => (0, h.eo)(a, b.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(l.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), S = (0, s.bG)([f.default], () => f.default.getId()), x = (0, A.AO)(v), I = (0, s.bG)([y.A], () => (0, A.nr)(v, y.A)), T = i.useMemo(() => ({
+    }(e, ["user", "channel"]), [d, A] = (0, s.yK)([y.A, m.A, g.A, c.default], () => (0, b.eo)(a, y.A, m.A, g.A, c.default)), v = (0, s.bG)([p.A], () => p.A.getStreamForUser(l.id, a.getGuildId())), O = (0, s.bG)([p.A], () => p.A.getActiveStreamForApplicationStream(v)), j = (0, s.bG)([f.default], () => f.default.getId()), I = (0, h.AO)(v), x = (0, s.bG)([_.A], () => (0, h.nr)(v, _.A)), E = i.useMemo(() => ({
         [a.guild_id]: [l.id]
     }), [a.guild_id, l.id]);
-    return (0, o.E)(T, "StreamPreviewPopout"), (0, r.jsx)(j, (t = function(e) {
+    return (0, o.E)(E, "StreamPreviewPopout"), (0, r.jsx)(S, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -132,13 +132,13 @@ function x(e) {
         return e
     }({}, u), n = n = {
         canWatch: d,
-        unavailableReason: _,
+        unavailableReason: A,
         user: l,
-        streamApplication: x,
+        streamApplication: I,
         stream: v,
         activeStream: O,
-        currentUserId: S,
-        activity: I,
+        currentUserId: j,
+        activity: x,
         channel: a
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

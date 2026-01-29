@@ -1,9 +1,9 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 530804, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    $n: () => b,
-    uy: () => h,
-    vp: () => _
+    $n: () => y,
+    uy: () => b,
+    vp: () => A
 }), n(896048), n(321073);
 var r = n(64700),
     i = n(735438),
@@ -18,14 +18,14 @@ var r = n(64700),
     f = n(383501),
     m = n(287809),
     g = n(977997),
-    y = n(403362);
+    _ = n(403362);
 
-function b(e, t) {
+function y(e, t) {
     let n = (0, l.bG)([p.A, f.A], () => e === f.A.getChannelId() ? p.A.getDesyncedVoiceStates() : null),
         a = (0, l.yK)([s.A], () => null == e ? [] : [...s.A.getGuildRingingUsers(e)]),
-        c = (0, l.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(y.Vq)),
+        c = (0, l.yK)([m.default], () => a.map(e => m.default.getUser(e)).filter(_.Vq)),
         g = (0, l.bG)([u.A], () => u.A.getBasicChannel(e)),
-        b = r.useMemo(() => c.map(e => ({
+        y = r.useMemo(() => c.map(e => ({
             voiceState: new o.A(e.id),
             user: e,
             member: (null == g ? void 0 : g.guild_id) != null ? d.Ay.getMember(null == g ? void 0 : g.guild_id, e.id) : null,
@@ -53,10 +53,10 @@ function b(e, t) {
                 return t
             }), 0, e)
         }), r
-    })(n, t, b), [n, t, b])
+    })(n, t, y), [n, t, y])
 }
 
-function _(e, t) {
+function A(e, t) {
     let n = (0, l.bG)([p.A, f.A], () => e === f.A.getChannelId() ? p.A.getDesyncedParticipants() : null);
     return r.useMemo(() => (function(e, t) {
         if (null == e || 0 === e.length) return t;
@@ -67,7 +67,7 @@ function _(e, t) {
     })(n, t), [n, t])
 }
 
-function h(e, t) {
+function b(e, t) {
     let n = (0, l.bG)([c.default], () => c.default.getId() === t),
         i = (0, l.bG)([f.A], () => f.A.getChannelId()),
         a = r.useRef(null),

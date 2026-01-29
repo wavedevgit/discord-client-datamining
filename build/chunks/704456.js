@@ -4,7 +4,7 @@ r.d(t, {
     Ce: () => g,
     kh: () => f,
     le: () => E,
-    vr: () => _
+    vr: () => S
 });
 var n, l = r(64700),
     s = r(989349),
@@ -39,7 +39,7 @@ function g(e) {
     }
 }
 
-function _(e) {
+function S(e) {
     let t = (0, i.bG)([d.A], () => d.A.getChannel(e.saveData.channelId));
     return l.useMemo(() => null != t ? t : null != e.message ? new u.jb({
         id: e.saveData.channelId,

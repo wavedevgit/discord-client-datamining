@@ -1,7 +1,7 @@
-/** Chunk was on 78572 **/
+/** Chunk was on 6500 **/
 /** chunk id: 123902, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => A,
     V: () => g
 });
 var r, i = n(627968),
@@ -16,16 +16,16 @@ var r, i = n(627968),
     f = n(477412);
 let m = (0, p.xI)(c.A.GRADIENT_PROGRESS_NOTCH_WIDTH);
 var g = ((r = {}).BLACK = "BLACK", r.GRAY = "GRAY", r);
-let y = {
+let _ = {
     BLACK: f.Ql,
     GRAY: f.wm
 };
 
-function b(e) {
+function y(e) {
     return Math.round(e / m) * m
 }
 
-function _(e) {
+function A(e) {
     let {
         notchBackground: t,
         progress: n,
@@ -36,16 +36,16 @@ function _(e) {
         children: m
     } = e, {
         ref: g,
-        width: _
-    } = (0, u.Ay)(), h = l.useMemo(() => null != _ ? b(_) : 0, [_]), A = l.useMemo(() => {
-        let e = Math.abs(b(h * (100 - Math.max(0, Math.min(100, n))) / 100) - h);
+        width: A
+    } = (0, u.Ay)(), b = l.useMemo(() => null != A ? y(A) : 0, [A]), h = l.useMemo(() => {
+        let e = Math.abs(y(b * (100 - Math.max(0, Math.min(100, n))) / 100) - b);
         return {
             transform: "translateX(".concat(e, "px)")
         }
-    }, [n, h]), v = l.useMemo(() => ({
-        width: "".concat(h, "px"),
+    }, [n, b]), v = l.useMemo(() => ({
+        width: "".concat(b, "px"),
         background: n <= 0 ? "none" : "linear-gradient(to right, ".concat(r, ", ").concat(a, ")")
-    }), [a, r, n, h]);
+    }), [a, r, n, b]);
     return (0, i.jsxs)("div", {
         className: f.iE,
         ref: g,
@@ -54,10 +54,10 @@ function _(e) {
             style: v,
             children: [(0, i.jsx)("div", {
                 className: f.qB,
-                style: A
-            }), 0 !== h && (0, i.jsx)(d.A, {
-                width: h,
-                className: s()(f.DR, y[t], p)
+                style: h
+            }), 0 !== b && (0, i.jsx)(d.A, {
+                width: b,
+                className: s()(f.DR, _[t], p)
             })]
         }), m]
     })
