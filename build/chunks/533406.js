@@ -2,8 +2,8 @@
 /** chunk id: 533406, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    B: () => b,
-    a: () => g
+    B: () => A,
+    a: () => b
 });
 var r = n(627968),
     i = n(835245),
@@ -13,9 +13,12 @@ var r = n(627968),
     l = n(769315),
     c = n(589078),
     u = n(954571),
-    d = n(652215);
+    d = n(832163),
+    f = n(179935),
+    p = n(556808),
+    _ = n(652215);
 
-function f(e, t, n) {
+function h(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -24,20 +27,20 @@ function f(e, t, n) {
     }) : e[t] = n, e
 }
 
-function p(e) {
+function m(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            f(e, t, n[t])
+            h(e, t, n[t])
         })
     }
     return e
 }
 
-function _(e, t) {
+function g(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
@@ -48,53 +51,75 @@ function _(e, t) {
     return n
 }
 
-function h(e, t) {
-    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
+function E(e, t) {
+    return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let m = "slayer-payment-modal";
+let y = "slayer-payment-modal";
 
-function g(e, t) {
+function b(e, t) {
     let {
         isGift: n,
         giftRecipient: r,
         giftingOrigin: a,
         additionalUserIds: c
     } = t, {
-        analyticsLocations: f
-    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, p = !1, _ = (0, i.A)(), {
-        enabled: h
-    } = (0, l.ik)({
-        location: "openCollectiblesPaymentModal"
-    }), g = () => {
-        p || u.default.track(d.HAw.PAYMENT_FLOW_CANCELED, {
-            load_id: _,
-            payment_type: d.frM[d.VVm.ONE_TIME],
-            is_gift: n,
-            sku_id: e.id,
-            application_id: e.applicationId,
-            location_stack: f,
-            sku_product_line: e.productLine
-        }), (0, o.ET)(), (0, s.z)()
-    }, b = () => {
-        p = !0
-    }, O = {
-        loadId: _,
+        analyticsLocations: h,
+        guildId: m
+    } = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {}, g = (0, f.T)({
+        location: "openSocialLayerStorefrontPaymentModal"
+    }), E = d.A.getSKUEligibility(e.id);
+    if (!n && null != m && g && (null == E || "checking" === E || "ineligible" === E)) return void(0, p.L)({
+        guildId: m,
         skuId: e.id,
-        applicationId: e.applicationId,
-        analyticsLocations: null != f ? f : [],
-        isGift: n,
-        giftRecipient: r,
-        giftingOrigin: a,
-        additionalUserIds: c,
-        onCloseCallback: g,
-        onComplete: b,
-        modalKey: m
-    };
-    h ? E(O) : y(O)
+        onContinue: () => b(e, {
+            isGift: n,
+            giftRecipient: r,
+            giftingOrigin: a,
+            additionalUserIds: c
+        }, {
+            analyticsLocations: h,
+            guildId: m
+        })
+    });
+    let A = !1,
+        I = (0, i.A)(),
+        {
+            enabled: S
+        } = (0, l.ik)({
+            location: "openCollectiblesPaymentModal"
+        }),
+        T = () => {
+            A || u.default.track(_.HAw.PAYMENT_FLOW_CANCELED, {
+                load_id: I,
+                payment_type: _.frM[_.VVm.ONE_TIME],
+                is_gift: n,
+                sku_id: e.id,
+                application_id: e.applicationId,
+                location_stack: h,
+                sku_product_line: e.productLine
+            }), (0, o.ET)(), (0, s.z)(), (0, p.l)()
+        },
+        C = () => {
+            A = !0
+        },
+        N = {
+            loadId: I,
+            skuId: e.id,
+            applicationId: e.applicationId,
+            analyticsLocations: null != h ? h : [],
+            isGift: n,
+            giftRecipient: r,
+            giftingOrigin: a,
+            additionalUserIds: c,
+            onCloseCallback: T,
+            onComplete: C,
+            modalKey: y
+        };
+    S ? O(N) : v(N)
 }
-let E = e => {
+let O = e => {
         let {
             loadId: t,
             applicationId: n,
@@ -124,7 +149,7 @@ let E = e => {
             }
         })
     },
-    y = e => {
+    v = e => {
         let {
             loadId: t,
             applicationId: i,
@@ -135,14 +160,14 @@ let E = e => {
             giftingOrigin: u,
             additionalUserIds: d,
             onCloseCallback: f,
-            onComplete: _,
-            modalKey: m
+            onComplete: p,
+            modalKey: _
         } = e;
         return (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 317042));
-            return n => (0, r.jsx)(e, h(p({}, n), {
+            return n => (0, r.jsx)(e, E(m({}, n), {
                 loadId: t,
                 applicationId: i,
                 skuId: o,
@@ -151,20 +176,20 @@ let E = e => {
                 giftRecipient: c,
                 additionalUserIds: d,
                 giftingOrigin: u,
-                onComplete: _
+                onComplete: p
             }))
         }, {
             onCloseCallback: f,
-            modalKey: m
+            modalKey: _
         })
     };
 
-function b() {
+function A() {
     (0, a.mMO)(async () => {
         let {
             default: e
         } = await n.e("1218").then(n.bind(n, 839225));
-        return t => (0, r.jsx)(e, p({}, t))
+        return t => (0, r.jsx)(e, m({}, t))
     }, {
         modalKey: "slayer-storefront-announcement-modal"
     })

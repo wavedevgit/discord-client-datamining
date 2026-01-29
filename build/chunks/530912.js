@@ -11,12 +11,12 @@ n.d(t, {
 var r = n(64700),
     l = n(735438),
     a = n(58149),
-    o = n(734057),
-    i = n(954571),
+    i = n(734057),
+    o = n(954571),
     s = n(652215);
 
 function c(e, t, n) {
-    i.default.track(s.HAw.FORWARD_MESSAGE_STARTED, {
+    o.default.track(s.HAw.FORWARD_MESSAGE_STARTED, {
         channel_id: e,
         message_id: t,
         source: n
@@ -30,7 +30,7 @@ function d(e) {
         numDestinationChanges: r,
         numQueryChanges: l
     } = e;
-    i.default.track(s.HAw.FORWARD_MESSAGE_CANCELLED, {
+    o.default.track(s.HAw.FORWARD_MESSAGE_CANCELLED, {
         channel_id: t,
         message_id: n,
         num_destination_changes: r,
@@ -50,7 +50,7 @@ function u(e) {
         anyDestinationHasSlowmode: _,
         source: m
     } = e;
-    if (i.default.track(s.HAw.FORWARD_MESSAGE_SENT, {
+    if (o.default.track(s.HAw.FORWARD_MESSAGE_SENT, {
             channel_id: t,
             message_id: n,
             has_error: r,
@@ -60,8 +60,8 @@ function u(e) {
             num_query_changes: u,
             any_destination_has_slowmode: _
         }), "message-shortcut" === m) {
-        let e = o.A.getChannel(t);
-        i.default.track(s.HAw.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
+        let e = i.A.getChannel(t);
+        o.default.track(s.HAw.MESSAGE_SHORTCUT_ACTION_SENT, function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -87,7 +87,7 @@ function u(e) {
 
 function _() {
     return r.useMemo(() => (0, l.once)((e, t, n) => {
-        i.default.track(s.HAw.FORWARD_ADD_RECIPIENT, {
+        o.default.track(s.HAw.FORWARD_ADD_RECIPIENT, {
             channel_id: e,
             message_id: t,
             has_query: n
@@ -97,7 +97,7 @@ function _() {
 
 function m() {
     return r.useMemo(() => (0, l.once)((e, t) => {
-        i.default.track(s.HAw.FORWARD_EDIT_SEARCH, {
+        o.default.track(s.HAw.FORWARD_EDIT_SEARCH, {
             channel_id: e,
             message_id: t
         })
@@ -106,7 +106,7 @@ function m() {
 
 function b() {
     return r.useMemo(() => (0, l.once)((e, t) => {
-        i.default.track(s.HAw.FORWARD_EDIT_CONTEXT_MESSAGE, {
+        o.default.track(s.HAw.FORWARD_EDIT_CONTEXT_MESSAGE, {
             channel_id: e,
             message_id: t
         })
