@@ -1,26 +1,26 @@
 /** Chunk was on 42160 **/
-/** chunk id: 711204, original params: e,t,i (module,exports,require) **/
-i.d(t, {
+/** chunk id: 711204, original params: e,t,r (module,exports,require) **/
+r.d(t, {
     r: () => m
 });
-var r = i(927813),
-    n = i(723702),
-    s = i(290805),
-    a = i(622397);
+var i = r(927813),
+    n = r(723702),
+    s = r(290805),
+    a = r(622397);
 
-function o(e, t, i) {
+function o(e, t, r) {
     return t in e ? Object.defineProperty(e, t, {
-        value: i,
+        value: r,
         enumerable: !0,
         configurable: !0,
         writable: !0
-    }) : e[t] = i, e
+    }) : e[t] = r, e
 }
-let l = +r.A.Millis.MINUTE;
+let l = +i.A.Millis.MINUTE;
 class m {
     start(e, t) {
-        var i, r;
-        this.mode = e, this.sessionStartTime = t, this.peakMemory = null != (i = null == (r = e.getMemory()) ? void 0 : r.usedJSHeapSize) ? i : 0, this.sampleAndSend(), this.sampleIntervalId = window.setInterval(() => {
+        var r, i;
+        this.mode = e, this.sessionStartTime = t, this.peakMemory = null != (r = null == (i = e.getMemory()) ? void 0 : i.usedJSHeapSize) ? r : 0, this.sampleAndSend(), this.sampleIntervalId = window.setInterval(() => {
             this.sampleAndSend()
         }, l)
     }
@@ -31,8 +31,8 @@ class m {
         return this.peakMemory
     }
     getCurrentMemory() {
-        var e, t, i;
-        return null != (e = null == (i = this.mode) || null == (t = i.getMemory()) ? void 0 : t.usedJSHeapSize) ? e : 0
+        var e, t, r;
+        return null != (e = null == (r = this.mode) || null == (t = r.getMemory()) ? void 0 : t.usedJSHeapSize) ? e : 0
     }
     updatePeakMemory(e) {
         e > this.peakMemory && (this.peakMemory = e)
@@ -43,22 +43,22 @@ class m {
         if (null == e) return;
         this.updatePeakMemory(e.usedJSHeapSize);
         let t = this.mode.performanceNow() - this.sessionStartTime,
-            i = {
+            r = {
                 platform: (0, n.getNativePlatform)(),
                 release_channel: null !== s.y && void 0 !== s.y ? s.y : "unknown",
                 uptime_bucket: (0, a.X)(t)
             },
-            r = {
+            i = {
                 type: "heap_snapshot_interval",
                 session_id: this.mode.sessionId,
                 commit_sha: this.mode.commitSha,
                 branch_name: this.mode.branchName,
                 commit_date: this.mode.commitDate,
                 timestamp: new Date().toISOString(),
-                build_number: "491193",
-                built_at: "1769714802819",
+                build_number: "491209",
+                built_at: "1769715855598",
                 release_channel: null !== s.y && void 0 !== s.y ? s.y : "unknown",
-                tags: i,
+                tags: r,
                 metrics: {
                     js_heap_size_limit: e.jsHeapSizeLimit,
                     total_js_heap_size: e.totalJSHeapSize,
@@ -68,7 +68,7 @@ class m {
                     baseline_memory: this.mode.baselineUsedMemory
                 }
             };
-        this.mode.sendToIngest(r)
+        this.mode.sendToIngest(i)
     }
     constructor() {
         o(this, "mode", null), o(this, "sampleIntervalId", null), o(this, "sessionStartTime", 0), o(this, "peakMemory", 0)
