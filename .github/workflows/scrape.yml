@@ -1,10 +1,13 @@
 name: Scrape discord android
 
 on:
-    workflow_call:
+    schedule:
+        - cron: '*/5 * * * *'
     workflow_dispatch:
+
 jobs:
     build:
+        runs-on: ubuntu-latest
         permissions:
             contents: write
             packages: write
@@ -12,15 +15,21 @@ jobs:
             issues: write
             statuses: write
             deployments: write
-        runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v4
+            - name: Checkout discord_android branch
+              uses: actions/checkout@v4
+              with:
+                  ref: discord_android
+
             - name: Use Node.js
               uses: actions/setup-node@v3
               with:
                   node-version: '24.x'
-            - run: npm init -y
+
+            - name: Install npm dependencies
+              run: npm install
+
             - name: Install Java
               run: sudo apt-get update && sudo apt-get install -y openjdk-17-jdk wget unzip
 
@@ -33,14 +42,15 @@ jobs:
                   sudo mv apktool.jar /usr/local/bin/
 
             - name: Run script
-              run: |
-                  npm i && npm run build && npm run start
-            - name: set email
+              run: npm run build && npm run start
+
+            - name: Set git identity
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
                   git config --local user.name "github-actions[bot]"
-            - name: commit
+
+            - name: Commit & push changes
               run: |
-                  git add --all >> /dev/null
-                  git commit -am "✨New build $(node getBuildInfo.js)" >> /dev/null
-                  git push >> /dev/null
+                  git add --all
+                  git diff-index --quiet HEAD || git commit -am "✨New build $(node getBuildInfo.js)"
+                  git push
