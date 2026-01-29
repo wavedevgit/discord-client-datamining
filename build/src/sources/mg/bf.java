@@ -25,13 +25,13 @@ public final class bf {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ bf(ze zeVar, af afVar) {
-        this.f38104a = ze.n(zeVar);
-        this.f38105b = ze.c(zeVar);
-        this.f38106c = ze.b(zeVar);
-        this.f38107d = ze.k(zeVar);
-        this.f38108e = ze.l(zeVar);
-        this.f38109f = ze.a(zeVar);
-        this.f38110g = ze.m(zeVar);
+        this.f38104a = zeVar.f39035a;
+        this.f38105b = zeVar.f39036b;
+        this.f38106c = zeVar.f39037c;
+        this.f38107d = zeVar.f39038d;
+        this.f38108e = zeVar.f39039e;
+        this.f38109f = zeVar.f39040f;
+        this.f38110g = zeVar.f39041g;
     }
 
     public final g3 a() {

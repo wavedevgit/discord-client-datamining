@@ -2,54 +2,26 @@ package mg;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ze {
 
-    /* renamed from: a */
+    /* renamed from: a  reason: collision with root package name */
     private aj f39035a;
 
-    /* renamed from: b */
+    /* renamed from: b  reason: collision with root package name */
     private ye f39036b;
 
-    /* renamed from: c */
+    /* renamed from: c  reason: collision with root package name */
     private we f39037c;
 
-    /* renamed from: d */
+    /* renamed from: d  reason: collision with root package name */
     private of f39038d;
 
-    /* renamed from: e */
+    /* renamed from: e  reason: collision with root package name */
     private rf f39039e;
 
-    /* renamed from: f */
+    /* renamed from: f  reason: collision with root package name */
     private g3 f39040f;
 
-    /* renamed from: g */
+    /* renamed from: g  reason: collision with root package name */
     private pi f39041g;
-
-    public static /* bridge */ /* synthetic */ g3 a(ze zeVar) {
-        return zeVar.f39040f;
-    }
-
-    public static /* bridge */ /* synthetic */ we b(ze zeVar) {
-        return zeVar.f39037c;
-    }
-
-    public static /* bridge */ /* synthetic */ ye c(ze zeVar) {
-        return zeVar.f39036b;
-    }
-
-    public static /* bridge */ /* synthetic */ of k(ze zeVar) {
-        return zeVar.f39038d;
-    }
-
-    public static /* bridge */ /* synthetic */ rf l(ze zeVar) {
-        return zeVar.f39039e;
-    }
-
-    public static /* bridge */ /* synthetic */ pi m(ze zeVar) {
-        return zeVar.f39041g;
-    }
-
-    public static /* bridge */ /* synthetic */ aj n(ze zeVar) {
-        return zeVar.f39035a;
-    }
 
     public final ze d(g3 g3Var) {
         this.f39040f = g3Var;
