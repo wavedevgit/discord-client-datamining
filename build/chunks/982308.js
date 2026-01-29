@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 982308, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => S
 }), n(733351);
 var r = n(627968);
 n(64700);
@@ -61,7 +61,7 @@ function j(e) {
     })
 }
 
-function E(e, t) {
+function S(e, t) {
     let n = (0, s.D6)(t.guild_id).filter(e => {
         var n;
         return !(e.useSpriteSheet && h.indexOf(null != (n = e.uniqueName) ? n : "") >= 0) && !b.Ay.isEmojiPremiumLocked({
