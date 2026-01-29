@@ -1,8 +1,0 @@
-/** Chunk was on 5606 **/
-/** chunk id: 158793, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container__60b20",
-    He: "centerText__60b20",
-    Kk: "icon__60b20",
-    Pt: "lightThemeColorOnly__60b20"
-}

@@ -1,8 +1,0 @@
-/** Chunk was on 96430 **/
-/** chunk id: 951808, original params: t,e,n (module,exports,require) **/
-t.exports = {
-    cs: "outgoing-call-pulse__3751b",
-    HA: "channelName__3751b",
-    W$: "subtext__3751b",
-    DF: "ringing__3751b"
-}

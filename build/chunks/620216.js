@@ -1,6 +1,0 @@
-/** Chunk was on 78528 **/
-/** chunk id: 620216, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    t: () => l
-});
-var r, l = ((r = {}).ACCENT = "accent", r.GREEN = "statusGreen", r.YELLOW = "statusYellow", r.ORANGE = "statusOrange", r.RED = "statusRed", r.NONE = "transparent", r)

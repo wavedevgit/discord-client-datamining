@@ -1,9 +1,0 @@
-/** Chunk was on 5606 **/
-/** chunk id: 683754, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    Nr: "card_fedacc",
-    wx: "header_fedacc",
-    IY: "coverArtPosition_fedacc",
-    Bn: "splashArt_fedacc coverArtPosition_fedacc",
-    rf: "body_fedacc"
-}

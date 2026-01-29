@@ -1,6 +1,0 @@
-/** Chunk was on 94682 **/
-/** chunk id: 794118, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    v: "clickable__65fc9",
-    K: "icon__65fc9"
-}

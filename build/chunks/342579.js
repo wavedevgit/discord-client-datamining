@@ -1,9 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 342579, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(860511);
-e.exports = function(e, t) {
-    var n = r[e],
-        i = n && n.prototype;
-    return i && i[t]
-}

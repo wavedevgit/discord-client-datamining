@@ -1,8 +1,0 @@
-/** Chunk was on 65298 **/
-/** chunk id: 272111, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    V: () => a,
-    u: () => l
-});
-let a = "#00000000",
-    l = "#CDD8FF1A"

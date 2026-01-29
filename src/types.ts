@@ -1,43 +1,62 @@
-type DepGraph = {
-    [chunkId: string]: DepGraph;
-};
+export enum Channels {
+    stable = 0,
+    beta = 1,
+    alpha = 2,
+}
 
 export interface Build {
     /**
-     * Deleted after we are done from using webjs contents
+     * Build channel
      */
-    webjs?: string;
-    builtAt: number;
+    channel: Channels;
+    /**
+     * Version code ({major}{channnel}{minor})
+     */
+    versionCode: number;
+
+    /**
+     * Build number
+     */
     buildNumber: number;
 
     /**
-     * Build version hash
+     * Build version hash (commit hash)
      */
     versionHash: string;
     /**
-     * Entry chunk id (first chunk loaded and exported on __webpack_exports variable)
+     * User agent (Discord-Android/{majorVer}{channel}{minorVer};RNA)
      */
-    entryChunk: string;
-    /**
-     * Modules mappings (module id -> hash, path = [hash].js or [hash].css)
-     */
-    modules: { js: Record<string, string>; css: Record<string, string> };
-    /**
-     * Css files classes names (module id -> classes list)
-     */
-    classes: Record<string, string[]>;
-    /**
-     * Intl strings (only for en-US)
-     */
-    intl: Record<string, string>;
+    userAgent: string;
 
     /**
-     * Endpoints
+     * Assets hashes (asset path -> md5 hash)
      */
-    endpoints: Record<string, string>;
+    assets: Record<string, string>;
 
     /**
-     * Dependency graph
+     * Modules mappings (path -> id)
      */
-    dependencyGraph: DepGraph;
+    modules: {
+        /**
+         * Module id
+         */
+        id: string;
+        /**
+         * Module dependency map
+         */
+        deps: number[];
+        /**
+         * Module path taken from it's factory code
+         */
+        path: string | undefined;
+        /**
+         * Module type
+         */
+        type: 'asset' | 'unknown' | 'discord_code';
+    }[];
+
+    /**
+     * Experiments (todo)
+     */
+    experiments: undefined;
 }

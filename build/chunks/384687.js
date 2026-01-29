@@ -1,5 +1,0 @@
-/** Chunk was on 31748 **/
-/** chunk id: 384687, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    H: "hoverableStatus_cdcd10"
-}

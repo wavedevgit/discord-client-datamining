@@ -1,9 +1,0 @@
-/** Chunk was on 94682 **/
-/** chunk id: 308497, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    Ie: "empty_e766f2",
-    FS: "textContainer_e766f2",
-    HU: "connectionPlatforms_e766f2",
-    gj: "connectionIcon_e766f2",
-    v0: "buttonRow_e766f2"
-}

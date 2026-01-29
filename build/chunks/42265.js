@@ -1,8 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 42265, original params: e,t,n (module,exports,require) **/
-var r = n(412013).default,
-    i = n(133084);
-e.exports = function(e) {
-    var t = i(e, "string");
-    return "symbol" == r(t) ? t : t + ""
-}, e.exports.__esModule = !0, e.exports.default = e.exports

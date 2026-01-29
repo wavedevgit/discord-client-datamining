@@ -1,6 +1,0 @@
-/** Chunk was on 5606 **/
-/** chunk id: 331441, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    R: () => i
-});
-var r, i = ((r = {}).HOME = "HOME", r.SWITCH_APP_PLANS = "SWITCH_APP_PLANS", r)

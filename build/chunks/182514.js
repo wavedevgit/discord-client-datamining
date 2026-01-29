@@ -1,6 +1,0 @@
-/** Chunk was on 5606 **/
-/** chunk id: 182514, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => r
-});
-let r = "https://cdn.discordapp.com/assets/content/598ad8d5f24596285dc84f8624310224d47f634d0367a812381a4c286ac20d0f.mov"

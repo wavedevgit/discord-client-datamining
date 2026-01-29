@@ -1,9 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 604400, original params: e,t,n (module,exports,require) **/
-"use strict";
-var r = n(503628),
-    i = n(231977);
-e.exports = !r(function() {
-    var e = Error("a");
-    return !("stack" in e) || (Object.defineProperty(e, "stack", i(1, 7)), 7 !== e.stack)
-})

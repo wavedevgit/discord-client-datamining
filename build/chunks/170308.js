@@ -1,7 +1,0 @@
-/** Chunk was on 5606 **/
-/** chunk id: 170308, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    kL: "container__15b9a",
-    hQ: "contentContainer__15b9a",
-    RH: "footerHeader__15b9a"
-}

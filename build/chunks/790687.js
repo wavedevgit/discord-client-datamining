@@ -1,9 +1,0 @@
-/** Chunk was on 78528 **/
-/** chunk id: 790687, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    P0: "iconWrapper__54b20",
-    Kk: "icon__54b20",
-    VA: "subtitle__54b20",
-    eM: "threadCreatorName__54b20",
-    sL: "unknownCreatorName__54b20"
-}

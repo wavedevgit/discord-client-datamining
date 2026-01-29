@@ -1,7 +1,0 @@
-/** Chunk was on 78528 **/
-/** chunk id: 322364, original params: e,t,n (module,exports,require) **/
-e.exports = {
-    Gd: "scrollerBase_c8b5c7",
-    qZ: "auto_c8b5c7 scrollerBase_c8b5c7",
-    Rv: "fade_c8b5c7"
-}

@@ -1,8 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 322345, original params: e,t,n (module,exports,require) **/
-var r = n(574366),
-    i = r ? r.prototype : void 0,
-    a = i ? i.valueOf : void 0;
-e.exports = function(e) {
-    return a ? Object(a.call(e)) : {}
-}

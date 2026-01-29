@@ -1,7 +1,0 @@
-/** Chunk was on web.js **/
-/** chunk id: 41518, original params: e,t,n (module,exports,require) **/
-var r = n(879088),
-    i = n(608132);
-e.exports = function(e, t, n, a, o) {
-    return new i(r().w(e, t, n, a), o || Promise)
-}, e.exports.__esModule = !0, e.exports.default = e.exports
