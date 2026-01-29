@@ -1,0 +1,71 @@
+package kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Modifier;
+import java.lang.reflect.Type;
+import java.lang.reflect.TypeVariable;
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.i;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaConstructor;
+import kotlin.reflect.jvm.internal.impl.load.java.structure.JavaValueParameter;
+import org.jetbrains.annotations.NotNull;
+@SourceDebugExtension({"SMAP\nReflectJavaConstructor.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ReflectJavaConstructor.kt\norg/jetbrains/kotlin/descriptors/runtime/structure/ReflectJavaConstructor\n+ 2 _Arrays.kt\nkotlin/collections/ArraysKt___ArraysKt\n*L\n1#1,51:1\n11228#2:52\n11563#2,3:53\n*S KotlinDebug\n*F\n+ 1 ReflectJavaConstructor.kt\norg/jetbrains/kotlin/descriptors/runtime/structure/ReflectJavaConstructor\n*L\n49#1:52\n49#1:53,3\n*E\n"})
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class ReflectJavaConstructor extends ReflectJavaMember implements JavaConstructor {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Constructor f33924a;
+
+    public ReflectJavaConstructor(@NotNull Constructor<?> member) {
+        Intrinsics.checkNotNullParameter(member, "member");
+        this.f33924a = member;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.runtime.structure.ReflectJavaMember
+    @NotNull
+    public Constructor<?> getMember() {
+        return this.f33924a;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaTypeParameterListOwner
+    @NotNull
+    public List<ReflectJavaTypeParameter> getTypeParameters() {
+        TypeVariable<Constructor<?>>[] typeParameters = getMember().getTypeParameters();
+        Intrinsics.checkNotNullExpressionValue(typeParameters, "getTypeParameters(...)");
+        ArrayList arrayList = new ArrayList(typeParameters.length);
+        for (TypeVariable<Constructor<?>> typeVariable : typeParameters) {
+            arrayList.add(new ReflectJavaTypeParameter(typeVariable));
+        }
+        return arrayList;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.load.java.structure.JavaConstructor
+    @NotNull
+    public List<JavaValueParameter> getValueParameters() {
+        Type[] genericParameterTypes = getMember().getGenericParameterTypes();
+        Intrinsics.checkNotNull(genericParameterTypes);
+        if (genericParameterTypes.length == 0) {
+            return CollectionsKt.l();
+        }
+        Class<?> declaringClass = getMember().getDeclaringClass();
+        if (declaringClass.getDeclaringClass() != null && !Modifier.isStatic(declaringClass.getModifiers())) {
+            genericParameterTypes = (Type[]) i.r(genericParameterTypes, 1, genericParameterTypes.length);
+        }
+        Annotation[][] parameterAnnotations = getMember().getParameterAnnotations();
+        if (parameterAnnotations.length >= genericParameterTypes.length) {
+            if (parameterAnnotations.length > genericParameterTypes.length) {
+                Intrinsics.checkNotNull(parameterAnnotations);
+                parameterAnnotations = (Annotation[][]) i.r(parameterAnnotations, parameterAnnotations.length - genericParameterTypes.length, parameterAnnotations.length);
+            }
+            Intrinsics.checkNotNull(genericParameterTypes);
+            Intrinsics.checkNotNull(parameterAnnotations);
+            return a(genericParameterTypes, parameterAnnotations, getMember().isVarArgs());
+        }
+        throw new IllegalStateException("Illegal generic signature: " + getMember());
+    }
+}

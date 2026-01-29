@@ -1,0 +1,46 @@
+package com.discord.chat.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.viewbinding.ViewBinding;
+import com.discord.chat.R;
+import com.discord.chat.presentation.message.MessageViewReplyPreview;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class MessageViewReplyPreviewStubBinding implements ViewBinding {
+    @NonNull
+    private final MessageViewReplyPreview rootView;
+
+    private MessageViewReplyPreviewStubBinding(@NonNull MessageViewReplyPreview messageViewReplyPreview) {
+        this.rootView = messageViewReplyPreview;
+    }
+
+    @NonNull
+    public static MessageViewReplyPreviewStubBinding bind(@NonNull View view) {
+        if (view != null) {
+            return new MessageViewReplyPreviewStubBinding((MessageViewReplyPreview) view);
+        }
+        throw new NullPointerException("rootView");
+    }
+
+    @NonNull
+    public static MessageViewReplyPreviewStubBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static MessageViewReplyPreviewStubBinding inflate(@NonNull LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(R.layout.message_view_reply_preview_stub, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public MessageViewReplyPreview getRoot() {
+        return this.rootView;
+    }
+}

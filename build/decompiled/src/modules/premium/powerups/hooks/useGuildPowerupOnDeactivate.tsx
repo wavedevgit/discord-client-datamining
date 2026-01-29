@@ -1,0 +1,64 @@
+// modules/premium/powerups/hooks/useGuildPowerupOnDeactivate.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var4;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var3);
+    var0 = 0;
+    var5 = var4[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var5);
+    var _closure1_slot2 = var3;
+    var3 = 2;
+    var4 = var4[var3];
+    var3 = require;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/premium/powerups/hooks/useGuildPowerupOnDeactivate.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0, arg1) { // Original name: useGuildPowerupOnDeactivate, environment: var1
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var0 = 1;
+        var0 = var4[var0];
+        var5 = undefined;
+        var4 = var3.bind(var5)(var0);
+        var3 = arg0;
+        var0 = arg1;
+        var0 = var4.bind(var5)(var3, var0);
+        var4 = var0.isLoading;
+        var3 = var0.error;
+        var5 = var0.onToggle;
+        var _closure2_slot0 = var5;
+        var0 = {};
+        var0.isLoading = var4;
+        var0.error = var3;
+        var4 = _closure1_slot2;
+        var3 = var4.useCallback;
+        var2 = new Array(1);
+        var2[0] = var5;
+        var1 = function() { // Environment: var1
+            var2 = _closure2_slot0;
+            var1 = undefined;
+            var0 = false;
+            var0 = var2.bind(var1)(var0);
+            return var0;
+        };
+        var1 = var3.bind(var4)(var1, var2);
+        var0.onDeactivate = var1;
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 13373, 2]);

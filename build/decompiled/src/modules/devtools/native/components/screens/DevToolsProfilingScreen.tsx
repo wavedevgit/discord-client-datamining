@@ -1,0 +1,448 @@
+// modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var11 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var11;
+    var _closure1_slot2 = var5;
+    var0 = function() { // Original name: TableRowGroupReactProfiling, environment: var1
+        var5 = _closure1_slot4;
+        var2 = var5.useState;
+        var6 = _closure1_slot1;
+        var9 = _closure1_slot2;
+        var1 = 7;
+        var1 = var9[var1];
+        var3 = undefined;
+        var6 = var6.bind(var3)(var1);
+        var1 = var6.reactProfilingEnabled;
+        var1 = var1.bind(var6)();
+        var5 = var2.bind(var5)(var1);
+        var2 = _closure1_slot3;
+        var1 = 2;
+        var2 = var2.bind(var3)(var5, var1);
+        var1 = 0;
+        var7 = var2[var1];
+        var _closure2_slot0 = var7;
+        var1 = 1;
+        var8 = var2[var1];
+        var5 = _closure1_slot4;
+        var2 = var5.useEffect;
+        var1 = new Array(1);
+        var1[0] = var7;
+        var0 = function() { // Environment: var0
+            var2 = _closure1_slot1;
+            var1 = _closure1_slot2;
+            var0 = 7;
+            var1 = var1[var0];
+            var0 = undefined;
+            var3 = var2.bind(var0)(var1);
+            var2 = var3.setReactProfilingEnabled;
+            var1 = _closure2_slot0;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = var2.bind(var5)(var0, var1);
+        var2 = _closure1_slot6;
+        var5 = _closure1_slot0;
+        var0 = 8;
+        var0 = var9[var0];
+        var0 = var5.bind(var3)(var0);
+        var1 = var0.TableRowGroup;
+        var0 = {};
+        var6 = 'React Profiling Renderer';
+        var0.title = var6;
+        var6 = _closure1_slot6;
+        var4 = 9;
+        var4 = var9[var4];
+        var4 = var5.bind(var3)(var4);
+        var5 = var4.TableSwitchRow;
+        var4 = {
+            'label': 'Enable React Profiling Renderer',
+            'subLabel': 'Enables React.Profiler, app restart required after change.'
+        };
+        var4.onValueChange = var8;
+        var4.value = var7;
+        var4 = var6.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var _closure1_slot10 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var11.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var6 = var5[var3];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var6 = var4.bind(var0)(var3);
+    var3 = var6.StyleSheet;
+    var6 = var6.ScrollView;
+    var _closure1_slot5 = var6;
+    var6 = 3;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var10 = var6.Fonts;
+    var6 = 4;
+    var6 = var5[var6];
+    var6 = var4.bind(var0)(var6);
+    var7 = var6.jsx;
+    var _closure1_slot6 = var7;
+    var7 = var6.Fragment;
+    var _closure1_slot7 = var7;
+    var6 = var6.jsxs;
+    var _closure1_slot8 = var6;
+    var6 = 5;
+    var6 = var5[var6];
+    var8 = var4.bind(var0)(var6);
+    var7 = var8.createStyles;
+    var6 = {};
+    var9 = {};
+    var13 = var3.absoluteFillObject;
+    var14 = var9;
+    var3 = copyDataProperties(var14, var13);
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var11.bind(var0)(var3);
+    var3 = var3.colors;
+    var11 = var3.BACKGROUND_BASE_LOW;
+    var3 = 'backgroundColor';
+    var9[var3] = var11;
+    var3 = 16;
+    var11 = 'padding';
+    var9[var11] = var3;
+    var6.container = var9;
+    var9 = {};
+    var10 = var10.CODE_BOLD;
+    var9.fontFamily = var10;
+    var6.monospace = var9;
+    var6 = var7.bind(var8)(var6);
+    var _closure1_slot9 = var6;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/devtools/native/components/screens/DevToolsProfilingScreen.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function() { // Original name: DevToolsProfilingScreen, environment: var1
+        _fun86141: for (var _fun86141_ip = 0;;) switch (_fun86141_ip) {
+            case 0:
+                var2 = _closure1_slot4;
+                var1 = var2.useState;
+                var0 = false;
+                var2 = var1.bind(var2)(var0);
+                var1 = _closure1_slot3;
+                var3 = undefined;
+                var0 = 2;
+                var2 = var1.bind(var3)(var2, var0);
+                var1 = 0;
+                var0 = var2[var1];
+                var0 = 1;
+                var0 = var2[var0];
+                var _closure2_slot0 = var0;
+                var5 = _closure1_slot4;
+                var4 = var5.useCallback;
+                var2 = function() { // Environment: var13
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 10;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var2 = var2.bind(var0)(var1);
+                    var1 = var2.clearComponentRenderStats;
+                    var1 = var1.bind(var2)();
+                    var2 = _closure2_slot0;
+                    var1 = true;
+                    var1 = var2.bind(var0)(var1);
+                    return var0;
+                };
+                var0 = new Array(0);
+                var21 = var4.bind(var5)(var2, var0);
+                var0 = _closure1_slot9;
+                var24 = var0.bind(var3)();
+                var _closure2_slot1 = var24;
+                var5 = _closure1_slot0;
+                var8 = _closure1_slot2;
+                var0 = 10;
+                var0 = var8[var0];
+                var2 = var5.bind(var3)(var0);
+                var0 = var2.getComponentRenderStats;
+                var16 = var0.bind(var2)();
+                var _closure2_slot2 = var16;
+                var14 = global;
+                var2 = var14.Object;
+                var0 = var2.keys;
+                var0 = var0.bind(var2)(var16);
+                var0 = var0.length;
+                var7 = var0 > var1;
+                var2 = _closure1_slot6;
+                var1 = _closure1_slot5;
+                var0 = {};
+                var4 = var24.container;
+                var0.style = var4;
+                var6 = _closure1_slot8;
+                var4 = 11;
+                var4 = var8[var4];
+                var4 = var5.bind(var3)(var4);
+                var5 = var4.Stack;
+                var4 = {};
+                var8 = 16;
+                var4.spacing = var8;
+                if (var7) {
+                    _fun86141_ip = 429;
+                    continue _fun86141
+                }
+            case 208:
+                var10 = _closure1_slot6;
+                var22 = _closure1_slot0;
+                var25 = _closure1_slot2;
+                var7 = 8;
+                var7 = var25[var7];
+                var7 = var22.bind(var3)(var7);
+                var8 = var7.TableRowGroup;
+                var7 = {};
+                var11 = 'Component Profiler';
+                var7.title = var11;
+                var15 = _closure1_slot6;
+                var11 = 12;
+                var11 = var25[var11];
+                var11 = var22.bind(var3)(var11);
+                var12 = var11.TableRow;
+                var11 = {};
+                var17 = 'No components rendered yet.';
+                var11.label = var17;
+                var19 = _closure1_slot8;
+                var20 = 13;
+                var17 = var25[var20];
+                var17 = var22.bind(var3)(var17);
+                var18 = var17.Text;
+                var17 = {
+                    'variant': 'text-xs/medium',
+                    'color': 'text-subtle'
+                };
+                var23 = _closure1_slot6;
+                var20 = var25[var20];
+                var20 = var22.bind(var3)(var20);
+                var22 = var20.Text;
+                var20 = {
+                    'variant': 'text-xs/semibold',
+                    'style': null,
+                    'children': '<ComponentProfiler />'
+                };
+                var24 = var24.monospace;
+                var20.style = var24;
+                var22 = var23.bind(var3)(var22, var20);
+                var20 = ['Make sure you wrap your component in '];
+                var20[1] = var22;
+                var22 = ' to enable measurements.';
+                var20[2] = var22;
+                var17.children = var20;
+                var17 = var19.bind(var3)(var18, var17);
+                var11.subLabel = var17;
+                var11 = var15.bind(var3)(var12, var11);
+                var7.children = var11;
+                var8 = var10.bind(var3)(var8, var7);
+                _fun86141_ip = 592;
+                continue _fun86141;
+            case 429:
+                var11 = _closure1_slot8;
+                var10 = _closure1_slot7;
+                var7 = {};
+                var17 = _closure1_slot6;
+                var19 = _closure1_slot0;
+                var22 = _closure1_slot2;
+                var12 = 8;
+                var12 = var22[var12];
+                var12 = var19.bind(var3)(var12);
+                var15 = var12.TableRowGroup;
+                var12 = {};
+                var18 = 'Component Profiler';
+                var12.title = var18;
+                var20 = _closure1_slot6;
+                var18 = 12;
+                var18 = var22[var18];
+                var18 = var19.bind(var3)(var18);
+                var19 = var18.TableRow;
+                var18 = {
+                    'variant': 'danger',
+                    'arrow': true,
+                    'label': 'Reset Stats'
+                };
+                var18.onPress = var21;
+                var18 = var20.bind(var3)(var19, var18);
+                var12.children = var18;
+                var15 = var17.bind(var3)(var15, var12);
+                var12 = new Array(2);
+                var12[0] = var15;
+                var15 = var14.Object;
+                var14 = var15.keys;
+                var15 = var14.bind(var15)(var16);
+                var14 = var15.map;
+                var13 = function(arg0) { // Environment: var13
+                    var4 = arg0;
+                    var0 = _closure2_slot2;
+                    var0 = var0[var4];
+                    var7 = var0.mount;
+                    var8 = var0.update;
+                    var6 = var0.nestedUpdate;
+                    var3 = _closure1_slot6;
+                    var1 = _closure1_slot0;
+                    var2 = _closure1_slot2;
+                    var0 = 8;
+                    var0 = var2[var0];
+                    var2 = undefined;
+                    var0 = var1.bind(var2)(var0);
+                    var1 = var0.TableRowGroup;
+                    var0 = {};
+                    var5 = global;
+                    var5 = var5.HermesInternal;
+                    var10 = var5.concat;
+                    var9 = "Component Profiler Target: '";
+                    var5 = "'";
+                    var5 = var10.bind(var9)(var4, var5);
+                    var0.title = var5;
+                    var5 = {};
+                    var5.stat = var7;
+                    var7 = 'Mount';
+                    var5.label = var7;
+                    var7 = new Array(3);
+                    var7[0] = var5;
+                    var5 = {};
+                    var5.stat = var8;
+                    var8 = 'Update';
+                    var5.label = var8;
+                    var7[1] = var5;
+                    var5 = {};
+                    var5.stat = var6;
+                    var6 = 'Nested Update';
+                    var5.label = var6;
+                    var7[2] = var5;
+                    var6 = var7.map;
+                    var5 = function(arg0, arg1) { // Environment: var5
+                        var0 = arg0;
+                        var13 = var0.stat;
+                        var0 = var0.label;
+                        var4 = _closure1_slot6;
+                        var10 = _closure1_slot0;
+                        var15 = _closure1_slot2;
+                        var1 = 12;
+                        var1 = var15[var1];
+                        var3 = undefined;
+                        var1 = var10.bind(var3)(var1);
+                        var2 = var1.TableRow;
+                        var1 = {};
+                        var7 = _closure1_slot8;
+                        var6 = _closure1_slot7;
+                        var5 = {};
+                        var17 = _closure1_slot6;
+                        var9 = 13;
+                        var8 = var15[var9];
+                        var8 = var10.bind(var3)(var8);
+                        var16 = var8.Text;
+                        var8 = {
+                            'variant': 'text-sm/medium',
+                            'color': 'text-subtle'
+                        };
+                        var14 = _closure2_slot1;
+                        var12 = var14.monospace;
+                        var8.style = var12;
+                        var20 = var13.count;
+                        var12 = global;
+                        var18 = var12.HermesInternal;
+                        var19 = var18.concat;
+                        var18 = 'Count - ';
+                        var18 = var19.bind(var18)(var20);
+                        var8.children = var18;
+                        var16 = var17.bind(var3)(var16, var8);
+                        var8 = new Array(2);
+                        var8[0] = var16;
+                        var11 = _closure1_slot6;
+                        var9 = var15[var9];
+                        var9 = var10.bind(var3)(var9);
+                        var10 = var9.Text;
+                        var9 = {
+                            'variant': 'text-sm/medium',
+                            'color': 'text-subtle'
+                        };
+                        var14 = var14.monospace;
+                        var9.style = var14;
+                        var14 = var13.mean;
+                        var12 = var12.HermesInternal;
+                        var13 = var12.concat;
+                        var12 = 'Mean - ';
+                        var12 = var13.bind(var12)(var14);
+                        var9.children = var12;
+                        var9 = var11.bind(var3)(var10, var9);
+                        var8[1] = var9;
+                        var5.children = var8;
+                        var5 = var7.bind(var3)(var6, var5);
+                        var1.subLabel = var5;
+                        var1.label = var0;
+                        var0 = arg1;
+                        var0 = var4.bind(var3)(var2, var1, var0);
+                        return var0;
+                    };
+                    var5 = var6.bind(var7)(var5);
+                    var0.children = var5;
+                    var0 = var3.bind(var2)(var1, var0, var4);
+                    return var0;
+                };
+                var13 = var14.bind(var15)(var13);
+                var12[1] = var13;
+                var7.children = var12;
+                var8 = var11.bind(var3)(var10, var7);
+            case 592:
+                var7 = new Array(3);
+                var7[0] = var8;
+                var13 = _closure1_slot6;
+                var10 = _closure1_slot0;
+                var11 = _closure1_slot2;
+                var8 = 14;
+                var8 = var11[var8];
+                var8 = var10.bind(var3)(var8);
+                var12 = var8.DevToolsProfilingUseStateFromStores;
+                var8 = {};
+                var8 = var13.bind(var3)(var12, var8);
+                var7[1] = var8;
+                var8 = 15;
+                var8 = var11[var8];
+                var10 = var10.bind(var3)(var8);
+                var8 = var10.isAndroid;
+                var10 = var8.bind(var10)();
+                var8 = null;
+                if (!var10) {
+                    _fun86141_ip = 685;
+                    continue _fun86141
+                }
+            case 669:
+                var11 = _closure1_slot6;
+                var10 = _closure1_slot10;
+                var9 = {};
+                var8 = var11.bind(var3)(var10, var9);
+            case 685:
+                var7[2] = var8;
+                var4.children = var7;
+                var4 = var6.bind(var3)(var5, var4);
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 660, 33, 1297, 671, 277, 5320, 5373, 8774, 4033, 4854, 3895, 11103, 478, 2]);

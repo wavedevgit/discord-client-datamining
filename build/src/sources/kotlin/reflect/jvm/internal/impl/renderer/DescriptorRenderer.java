@@ -1,0 +1,322 @@
+package kotlin.reflect.jvm.internal.impl.renderer;
+
+import kotlin.Unit;
+import kotlin.collections.x0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.builtins.KotlinBuiltIns;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassKind;
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassifierDescriptorWithTypeParameters;
+import kotlin.reflect.jvm.internal.impl.descriptors.DeclarationDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.TypeAliasDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ValueParameterDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.annotations.AnnotationUseSiteTarget;
+import kotlin.reflect.jvm.internal.impl.name.FqNameUnsafe;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import kotlin.reflect.jvm.internal.impl.renderer.ClassifierNamePolicy;
+import kotlin.reflect.jvm.internal.impl.types.KotlinType;
+import kotlin.reflect.jvm.internal.impl.types.TypeProjection;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public abstract class DescriptorRenderer {
+    @NotNull
+    public static final DescriptorRenderer COMPACT;
+    @NotNull
+    public static final DescriptorRenderer COMPACT_WITHOUT_SUPERTYPES;
+    @NotNull
+    public static final DescriptorRenderer COMPACT_WITH_MODIFIERS;
+    @NotNull
+    public static final DescriptorRenderer COMPACT_WITH_SHORT_TYPES;
+    @NotNull
+    public static final Companion Companion;
+    @NotNull
+    public static final DescriptorRenderer DEBUG_TEXT;
+    @NotNull
+    public static final DescriptorRenderer FQ_NAMES_IN_TYPES;
+    @NotNull
+    public static final DescriptorRenderer FQ_NAMES_IN_TYPES_WITH_ANNOTATIONS;
+    @NotNull
+    public static final DescriptorRenderer HTML;
+    @NotNull
+    public static final DescriptorRenderer ONLY_NAMES_WITH_SHORT_TYPES;
+    @NotNull
+    public static final DescriptorRenderer SHORT_NAMES_IN_TYPES;
+    @NotNull
+    public static final DescriptorRenderer WITHOUT_MODIFIERS;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class Companion {
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public /* synthetic */ class WhenMappings {
+            public static final /* synthetic */ int[] $EnumSwitchMapping$0;
+
+            static {
+                int[] iArr = new int[ClassKind.values().length];
+                try {
+                    iArr[ClassKind.CLASS.ordinal()] = 1;
+                } catch (NoSuchFieldError unused) {
+                }
+                try {
+                    iArr[ClassKind.INTERFACE.ordinal()] = 2;
+                } catch (NoSuchFieldError unused2) {
+                }
+                try {
+                    iArr[ClassKind.ENUM_CLASS.ordinal()] = 3;
+                } catch (NoSuchFieldError unused3) {
+                }
+                try {
+                    iArr[ClassKind.OBJECT.ordinal()] = 4;
+                } catch (NoSuchFieldError unused4) {
+                }
+                try {
+                    iArr[ClassKind.ANNOTATION_CLASS.ordinal()] = 5;
+                } catch (NoSuchFieldError unused5) {
+                }
+                try {
+                    iArr[ClassKind.ENUM_ENTRY.ordinal()] = 6;
+                } catch (NoSuchFieldError unused6) {
+                }
+                $EnumSwitchMapping$0 = iArr;
+            }
+        }
+
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        @NotNull
+        public final String getClassifierKindPrefix(@NotNull ClassifierDescriptorWithTypeParameters classifier) {
+            Intrinsics.checkNotNullParameter(classifier, "classifier");
+            if (classifier instanceof TypeAliasDescriptor) {
+                return "typealias";
+            }
+            if (classifier instanceof ClassDescriptor) {
+                ClassDescriptor classDescriptor = (ClassDescriptor) classifier;
+                if (classDescriptor.isCompanionObject()) {
+                    return "companion object";
+                }
+                switch (WhenMappings.$EnumSwitchMapping$0[classDescriptor.getKind().ordinal()]) {
+                    case 1:
+                        return "class";
+                    case 2:
+                        return "interface";
+                    case 3:
+                        return "enum class";
+                    case 4:
+                        return "object";
+                    case 5:
+                        return "annotation class";
+                    case 6:
+                        return "enum entry";
+                    default:
+                        throw new ir.p();
+                }
+            }
+            throw new AssertionError("Unexpected classifier: " + classifier);
+        }
+
+        @NotNull
+        public final DescriptorRenderer withOptions(@NotNull Function1<? super DescriptorRendererOptions, Unit> changeOptions) {
+            Intrinsics.checkNotNullParameter(changeOptions, "changeOptions");
+            DescriptorRendererOptionsImpl descriptorRendererOptionsImpl = new DescriptorRendererOptionsImpl();
+            changeOptions.invoke(descriptorRendererOptionsImpl);
+            descriptorRendererOptionsImpl.lock();
+            return new DescriptorRendererImpl(descriptorRendererOptionsImpl);
+        }
+
+        private Companion() {
+        }
+    }
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public interface ValueParametersHandler {
+
+        /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+        public static final class DEFAULT implements ValueParametersHandler {
+            @NotNull
+            public static final DEFAULT INSTANCE = new DEFAULT();
+
+            private DEFAULT() {
+            }
+
+            @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer.ValueParametersHandler
+            public void appendAfterValueParameter(@NotNull ValueParameterDescriptor parameter, int i10, int i11, @NotNull StringBuilder builder) {
+                Intrinsics.checkNotNullParameter(parameter, "parameter");
+                Intrinsics.checkNotNullParameter(builder, "builder");
+                if (i10 != i11 - 1) {
+                    builder.append(", ");
+                }
+            }
+
+            @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer.ValueParametersHandler
+            public void appendAfterValueParameters(int i10, @NotNull StringBuilder builder) {
+                Intrinsics.checkNotNullParameter(builder, "builder");
+                builder.append(")");
+            }
+
+            @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer.ValueParametersHandler
+            public void appendBeforeValueParameter(@NotNull ValueParameterDescriptor parameter, int i10, int i11, @NotNull StringBuilder builder) {
+                Intrinsics.checkNotNullParameter(parameter, "parameter");
+                Intrinsics.checkNotNullParameter(builder, "builder");
+            }
+
+            @Override // kotlin.reflect.jvm.internal.impl.renderer.DescriptorRenderer.ValueParametersHandler
+            public void appendBeforeValueParameters(int i10, @NotNull StringBuilder builder) {
+                Intrinsics.checkNotNullParameter(builder, "builder");
+                builder.append("(");
+            }
+        }
+
+        void appendAfterValueParameter(@NotNull ValueParameterDescriptor valueParameterDescriptor, int i10, int i11, @NotNull StringBuilder sb2);
+
+        void appendAfterValueParameters(int i10, @NotNull StringBuilder sb2);
+
+        void appendBeforeValueParameter(@NotNull ValueParameterDescriptor valueParameterDescriptor, int i10, int i11, @NotNull StringBuilder sb2);
+
+        void appendBeforeValueParameters(int i10, @NotNull StringBuilder sb2);
+    }
+
+    static {
+        Companion companion = new Companion(null);
+        Companion = companion;
+        WITHOUT_MODIFIERS = companion.withOptions(a.f35347d);
+        COMPACT_WITH_MODIFIERS = companion.withOptions(c.f35349d);
+        COMPACT = companion.withOptions(d.f35350d);
+        COMPACT_WITHOUT_SUPERTYPES = companion.withOptions(e.f35351d);
+        COMPACT_WITH_SHORT_TYPES = companion.withOptions(f.f35352d);
+        ONLY_NAMES_WITH_SHORT_TYPES = companion.withOptions(g.f35353d);
+        FQ_NAMES_IN_TYPES = companion.withOptions(h.f35354d);
+        FQ_NAMES_IN_TYPES_WITH_ANNOTATIONS = companion.withOptions(i.f35355d);
+        SHORT_NAMES_IN_TYPES = companion.withOptions(j.f35356d);
+        DEBUG_TEXT = companion.withOptions(k.f35357d);
+        HTML = companion.withOptions(b.f35348d);
+    }
+
+    public static final Unit a(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setWithDefinedIn(false);
+        withOptions.setModifiers(x0.d());
+        return Unit.f33282a;
+    }
+
+    public static final Unit b(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setWithDefinedIn(false);
+        withOptions.setModifiers(x0.d());
+        withOptions.setWithoutSuperTypes(true);
+        return Unit.f33282a;
+    }
+
+    public static final Unit c(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setWithDefinedIn(false);
+        return Unit.f33282a;
+    }
+
+    public static final Unit d(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setModifiers(x0.d());
+        withOptions.setClassifierNamePolicy(ClassifierNamePolicy.SHORT.INSTANCE);
+        withOptions.setParameterNameRenderingPolicy(ParameterNameRenderingPolicy.ONLY_NON_SYNTHESIZED);
+        return Unit.f33282a;
+    }
+
+    public static final Unit e(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setDebugMode(true);
+        withOptions.setClassifierNamePolicy(ClassifierNamePolicy.FULLY_QUALIFIED.INSTANCE);
+        withOptions.setModifiers(DescriptorRendererModifier.ALL);
+        return Unit.f33282a;
+    }
+
+    public static final Unit f(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setModifiers(DescriptorRendererModifier.ALL_EXCEPT_ANNOTATIONS);
+        return Unit.f33282a;
+    }
+
+    public static final Unit g(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setModifiers(DescriptorRendererModifier.ALL);
+        return Unit.f33282a;
+    }
+
+    public static final Unit h(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setTextFormat(RenderingFormat.HTML);
+        withOptions.setModifiers(DescriptorRendererModifier.ALL);
+        return Unit.f33282a;
+    }
+
+    public static final Unit i(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setWithDefinedIn(false);
+        withOptions.setModifiers(x0.d());
+        withOptions.setClassifierNamePolicy(ClassifierNamePolicy.SHORT.INSTANCE);
+        withOptions.setWithoutTypeParameters(true);
+        withOptions.setParameterNameRenderingPolicy(ParameterNameRenderingPolicy.NONE);
+        withOptions.setReceiverAfterName(true);
+        withOptions.setRenderCompanionObjectName(true);
+        withOptions.setWithoutSuperTypes(true);
+        withOptions.setStartFromName(true);
+        return Unit.f33282a;
+    }
+
+    public static final Unit j(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setClassifierNamePolicy(ClassifierNamePolicy.SHORT.INSTANCE);
+        withOptions.setParameterNameRenderingPolicy(ParameterNameRenderingPolicy.ONLY_NON_SYNTHESIZED);
+        return Unit.f33282a;
+    }
+
+    public static final Unit k(DescriptorRendererOptions withOptions) {
+        Intrinsics.checkNotNullParameter(withOptions, "$this$withOptions");
+        withOptions.setModifiers(x0.d());
+        return Unit.f33282a;
+    }
+
+    public static /* synthetic */ String renderAnnotation$default(DescriptorRenderer descriptorRenderer, AnnotationDescriptor annotationDescriptor, AnnotationUseSiteTarget annotationUseSiteTarget, int i10, Object obj) {
+        if (obj == null) {
+            if ((i10 & 2) != 0) {
+                annotationUseSiteTarget = null;
+            }
+            return descriptorRenderer.renderAnnotation(annotationDescriptor, annotationUseSiteTarget);
+        }
+        throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: renderAnnotation");
+    }
+
+    @NotNull
+    public abstract String render(@NotNull DeclarationDescriptor declarationDescriptor);
+
+    @NotNull
+    public abstract String renderAnnotation(@NotNull AnnotationDescriptor annotationDescriptor, AnnotationUseSiteTarget annotationUseSiteTarget);
+
+    @NotNull
+    public abstract String renderFlexibleType(@NotNull String str, @NotNull String str2, @NotNull KotlinBuiltIns kotlinBuiltIns);
+
+    @NotNull
+    public abstract String renderFqName(@NotNull FqNameUnsafe fqNameUnsafe);
+
+    @NotNull
+    public abstract String renderName(@NotNull Name name, boolean z10);
+
+    @NotNull
+    public abstract String renderType(@NotNull KotlinType kotlinType);
+
+    @NotNull
+    public abstract String renderTypeProjection(@NotNull TypeProjection typeProjection);
+
+    @NotNull
+    public final DescriptorRenderer withOptions(@NotNull Function1<? super DescriptorRendererOptions, Unit> changeOptions) {
+        Intrinsics.checkNotNullParameter(changeOptions, "changeOptions");
+        Intrinsics.checkNotNull(this, "null cannot be cast to non-null type org.jetbrains.kotlin.renderer.DescriptorRendererImpl");
+        DescriptorRendererOptionsImpl copy = ((DescriptorRendererImpl) this).getOptions().copy();
+        changeOptions.invoke(copy);
+        copy.lock();
+        return new DescriptorRendererImpl(copy);
+    }
+}

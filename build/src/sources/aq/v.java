@@ -1,0 +1,91 @@
+package aq;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.viewbinding.ViewBinding;
+import com.google.android.material.card.MaterialCardView;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class v implements ViewBinding {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ConstraintLayout f6698a;
+
+    /* renamed from: b  reason: collision with root package name */
+    public final TextView f6699b;
+
+    /* renamed from: c  reason: collision with root package name */
+    public final ImageView f6700c;
+
+    /* renamed from: d  reason: collision with root package name */
+    public final TextView f6701d;
+
+    /* renamed from: e  reason: collision with root package name */
+    public final TextView f6702e;
+
+    /* renamed from: f  reason: collision with root package name */
+    public final MaterialCardView f6703f;
+
+    /* renamed from: g  reason: collision with root package name */
+    public final ImageView f6704g;
+
+    private v(ConstraintLayout constraintLayout, TextView textView, ImageView imageView, TextView textView2, TextView textView3, MaterialCardView materialCardView, ImageView imageView2) {
+        this.f6698a = constraintLayout;
+        this.f6699b = textView;
+        this.f6700c = imageView;
+        this.f6701d = textView2;
+        this.f6702e = textView3;
+        this.f6703f = materialCardView;
+        this.f6704g = imageView2;
+    }
+
+    public static v a(View view) {
+        int i10 = vp.e.f51785a;
+        TextView textView = (TextView) e4.a.a(view, i10);
+        if (textView != null) {
+            i10 = vp.e.f51833y;
+            ImageView imageView = (ImageView) e4.a.a(view, i10);
+            if (imageView != null) {
+                i10 = vp.e.E;
+                TextView textView2 = (TextView) e4.a.a(view, i10);
+                if (textView2 != null) {
+                    i10 = vp.e.V;
+                    TextView textView3 = (TextView) e4.a.a(view, i10);
+                    if (textView3 != null) {
+                        i10 = vp.e.f51832x0;
+                        MaterialCardView materialCardView = (MaterialCardView) e4.a.a(view, i10);
+                        if (materialCardView != null) {
+                            i10 = vp.e.f51834y0;
+                            ImageView imageView2 = (ImageView) e4.a.a(view, i10);
+                            if (imageView2 != null) {
+                                return new v((ConstraintLayout) view, textView, imageView, textView2, textView3, materialCardView, imageView2);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    public static v c(LayoutInflater layoutInflater) {
+        return d(layoutInflater, null, false);
+    }
+
+    public static v d(LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(vp.f.f51859w, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return a(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    /* renamed from: b */
+    public ConstraintLayout getRoot() {
+        return this.f6698a;
+    }
+}

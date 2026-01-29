@@ -1,0 +1,69 @@
+package com.facebook.react.animated;
+
+import com.facebook.react.bridge.ReadableMap;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0006\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0010\u0018\u00002\u00020\u0001B\u0013\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u0006\u0010\u000b\u001a\u00020\u0007J\n\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0006\u0010\u0010\u001a\u00020\u000fJ\u0006\u0010\u0011\u001a\u00020\u000fJ\u0010\u0010\u0012\u001a\u00020\u000f2\b\u0010\u0013\u001a\u0004\u0018\u00010\nJ\r\u0010\u0014\u001a\u00020\u0015H\u0010¢\u0006\u0002\b\u0016R\u0012\u0010\u0006\u001a\u00020\u00078\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\b\u001a\u00020\u00078\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Lcom/facebook/react/animated/ValueAnimatedNode;", "Lcom/facebook/react/animated/AnimatedNode;", "config", "Lcom/facebook/react/bridge/ReadableMap;", "<init>", "(Lcom/facebook/react/bridge/ReadableMap;)V", "nodeValue", "", "offset", "valueListener", "Lcom/facebook/react/animated/AnimatedNodeValueListener;", "getValue", "getAnimatedObject", "", "flattenOffset", "", "extractOffset", "onValueUpdate", "setValueListener", "listener", "prettyPrint", "", "prettyPrint$ReactAndroid_release", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class ValueAnimatedNode extends AnimatedNode {
+    public double nodeValue;
+    public double offset;
+    private AnimatedNodeValueListener valueListener;
+
+    public ValueAnimatedNode() {
+        this(null, 1, null);
+    }
+
+    public final void extractOffset() {
+        this.offset += this.nodeValue;
+        this.nodeValue = 0.0d;
+    }
+
+    public final void flattenOffset() {
+        this.nodeValue += this.offset;
+        this.offset = 0.0d;
+    }
+
+    public Object getAnimatedObject() {
+        return null;
+    }
+
+    public final double getValue() {
+        if (Double.isNaN(this.offset + this.nodeValue)) {
+            update$ReactAndroid_release();
+        }
+        return this.offset + this.nodeValue;
+    }
+
+    public final void onValueUpdate() {
+        AnimatedNodeValueListener animatedNodeValueListener = this.valueListener;
+        if (animatedNodeValueListener != null) {
+            double value = getValue();
+            double d10 = this.offset;
+            animatedNodeValueListener.onValueUpdate(value - d10, d10);
+        }
+    }
+
+    @Override // com.facebook.react.animated.AnimatedNode
+    @NotNull
+    public String prettyPrint$ReactAndroid_release() {
+        int i10 = this.tag;
+        double d10 = this.nodeValue;
+        double d11 = this.offset;
+        return "ValueAnimatedNode[" + i10 + "]: value: " + d10 + " offset: " + d11;
+    }
+
+    public final void setValueListener(AnimatedNodeValueListener animatedNodeValueListener) {
+        this.valueListener = animatedNodeValueListener;
+    }
+
+    public ValueAnimatedNode(ReadableMap readableMap) {
+        this.nodeValue = readableMap != null ? readableMap.getDouble("value") : Double.NaN;
+        this.offset = readableMap != null ? readableMap.getDouble("offset") : 0.0d;
+    }
+
+    public /* synthetic */ ValueAnimatedNode(ReadableMap readableMap, int i10, DefaultConstructorMarker defaultConstructorMarker) {
+        this((i10 & 1) != 0 ? null : readableMap);
+    }
+}

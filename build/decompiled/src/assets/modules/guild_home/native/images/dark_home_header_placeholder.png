@@ -1,0 +1,26 @@
+// /assets/modules/guild_home/native/images/dark_home_header_placeholder.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/guild_home/native/images',
+        'width': 1100,
+        'height': 275,
+        'scales': null,
+        'hash': 'ba87a4f1a3775c9189bf0599d24fcb24',
+        'name': 'dark_home_header_placeholder',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

@@ -1,0 +1,23 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
+    var6 = dependencyMap;
+    var4 = 0;
+    var1 = var6[var4];
+    var0 = undefined;
+    var3 = var5.bind(var0)(var1);
+    var2 = var3.shape;
+    var1 = {};
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.number;
+    var1.x = var7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.number;
+    var1.y = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3179]);

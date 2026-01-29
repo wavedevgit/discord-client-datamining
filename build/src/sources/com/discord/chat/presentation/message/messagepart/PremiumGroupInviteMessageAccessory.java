@@ -1,0 +1,93 @@
+package com.discord.chat.presentation.message.messagepart;
+
+import com.discord.chat.bridge.premium_group_invite.PremiumGroupInviteEmbed;
+import com.discord.primitives.MessageId;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0004\b\u0006\u0010\u0007J\u0010\u0010\r\u001a\u00020\u0003HÆ\u0003¢\u0006\u0004\b\u000e\u0010\tJ\t\u0010\u000f\u001a\u00020\u0005HÆ\u0003J$\u0010\u0010\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u0005HÆ\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\u0013\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0018HÖ\u0001J\t\u0010\u0019\u001a\u00020\u001aHÖ\u0001R\u0016\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\n\n\u0002\u0010\n\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006\u001b"}, d2 = {"Lcom/discord/chat/presentation/message/messagepart/PremiumGroupInviteMessageAccessory;", "Lcom/discord/chat/presentation/message/messagepart/MessageAccessory;", "messageId", "Lcom/discord/primitives/MessageId;", "premiumGroupInvite", "Lcom/discord/chat/bridge/premium_group_invite/PremiumGroupInviteEmbed;", "<init>", "(Ljava/lang/String;Lcom/discord/chat/bridge/premium_group_invite/PremiumGroupInviteEmbed;Lkotlin/jvm/internal/DefaultConstructorMarker;)V", "getMessageId-3Eiw7ao", "()Ljava/lang/String;", "Ljava/lang/String;", "getPremiumGroupInvite", "()Lcom/discord/chat/bridge/premium_group_invite/PremiumGroupInviteEmbed;", "component1", "component1-3Eiw7ao", "component2", "copy", "copy-ntcYbpo", "(Ljava/lang/String;Lcom/discord/chat/bridge/premium_group_invite/PremiumGroupInviteEmbed;)Lcom/discord/chat/presentation/message/messagepart/PremiumGroupInviteMessageAccessory;", "equals", "", "other", "", "hashCode", "", "toString", "", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class PremiumGroupInviteMessageAccessory extends MessageAccessory {
+    @NotNull
+    private final String messageId;
+    @NotNull
+    private final PremiumGroupInviteEmbed premiumGroupInvite;
+
+    public /* synthetic */ PremiumGroupInviteMessageAccessory(String str, PremiumGroupInviteEmbed premiumGroupInviteEmbed, DefaultConstructorMarker defaultConstructorMarker) {
+        this(str, premiumGroupInviteEmbed);
+    }
+
+    /* renamed from: copy-ntcYbpo$default  reason: not valid java name */
+    public static /* synthetic */ PremiumGroupInviteMessageAccessory m634copyntcYbpo$default(PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory, String str, PremiumGroupInviteEmbed premiumGroupInviteEmbed, int i10, Object obj) {
+        if ((i10 & 1) != 0) {
+            str = premiumGroupInviteMessageAccessory.messageId;
+        }
+        if ((i10 & 2) != 0) {
+            premiumGroupInviteEmbed = premiumGroupInviteMessageAccessory.premiumGroupInvite;
+        }
+        return premiumGroupInviteMessageAccessory.m636copyntcYbpo(str, premiumGroupInviteEmbed);
+    }
+
+    @NotNull
+    /* renamed from: component1-3Eiw7ao  reason: not valid java name */
+    public final String m635component13Eiw7ao() {
+        return this.messageId;
+    }
+
+    @NotNull
+    public final PremiumGroupInviteEmbed component2() {
+        return this.premiumGroupInvite;
+    }
+
+    @NotNull
+    /* renamed from: copy-ntcYbpo  reason: not valid java name */
+    public final PremiumGroupInviteMessageAccessory m636copyntcYbpo(@NotNull String messageId, @NotNull PremiumGroupInviteEmbed premiumGroupInvite) {
+        Intrinsics.checkNotNullParameter(messageId, "messageId");
+        Intrinsics.checkNotNullParameter(premiumGroupInvite, "premiumGroupInvite");
+        return new PremiumGroupInviteMessageAccessory(messageId, premiumGroupInvite, null);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof PremiumGroupInviteMessageAccessory) {
+            PremiumGroupInviteMessageAccessory premiumGroupInviteMessageAccessory = (PremiumGroupInviteMessageAccessory) obj;
+            return MessageId.m1088equalsimpl0(this.messageId, premiumGroupInviteMessageAccessory.messageId) && Intrinsics.areEqual(this.premiumGroupInvite, premiumGroupInviteMessageAccessory.premiumGroupInvite);
+        }
+        return false;
+    }
+
+    @Override // com.discord.chat.presentation.message.messagepart.MessageAccessory
+    @NotNull
+    /* renamed from: getMessageId-3Eiw7ao */
+    public String mo536getMessageId3Eiw7ao() {
+        return this.messageId;
+    }
+
+    @NotNull
+    public final PremiumGroupInviteEmbed getPremiumGroupInvite() {
+        return this.premiumGroupInvite;
+    }
+
+    public int hashCode() {
+        return (MessageId.m1089hashCodeimpl(this.messageId) * 31) + this.premiumGroupInvite.hashCode();
+    }
+
+    @NotNull
+    public String toString() {
+        String m1091toStringimpl = MessageId.m1091toStringimpl(this.messageId);
+        PremiumGroupInviteEmbed premiumGroupInviteEmbed = this.premiumGroupInvite;
+        return "PremiumGroupInviteMessageAccessory(messageId=" + m1091toStringimpl + ", premiumGroupInvite=" + premiumGroupInviteEmbed + ")";
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    private PremiumGroupInviteMessageAccessory(String messageId, PremiumGroupInviteEmbed premiumGroupInvite) {
+        super(messageId, "premium_group_invite", false, 4, null);
+        Intrinsics.checkNotNullParameter(messageId, "messageId");
+        Intrinsics.checkNotNullParameter(premiumGroupInvite, "premiumGroupInvite");
+        this.messageId = messageId;
+        this.premiumGroupInvite = premiumGroupInvite;
+    }
+}

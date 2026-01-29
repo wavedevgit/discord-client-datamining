@@ -1,0 +1,45 @@
+// ../discord_common/js/shared/shared-constants/IntegrationExpireGracePeriodTypes.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var3 = 1;
+    var1.ONE_DAY = var3;
+    var0 = 'ONE_DAY';
+    var1[var3] = var0;
+    var3 = 3;
+    var1.THREE_DAYS = var3;
+    var0 = 'THREE_DAYS';
+    var1[var3] = var0;
+    var3 = 7;
+    var1.SEVEN_DAYS = var3;
+    var0 = 'SEVEN_DAYS';
+    var1[var3] = var0;
+    var3 = 14;
+    var1.FOURTEEN_DAYS = var3;
+    var0 = 'FOURTEEN_DAYS';
+    var1[var3] = var0;
+    var3 = 30;
+    var1.THIRTY_DAYS = var3;
+    var0 = 'THIRTY_DAYS';
+    var1[var3] = var0;
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = '../discord_common/js/shared/shared-constants/IntegrationExpireGracePeriodTypes.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.IntegrationExpireGracePeriodTypes = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

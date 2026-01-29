@@ -1,0 +1,5 @@
+package m4;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public interface a {
+    void a(Object obj);
+}

@@ -1,0 +1,290 @@
+package kotlin.reflect.jvm.internal.impl.util;
+
+import ir.v;
+import java.util.Map;
+import java.util.Set;
+import kotlin.collections.o0;
+import kotlin.collections.x0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import kotlin.text.Regex;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class OperatorNameConventions {
+    @NotNull
+    public static final Set<Name> ALL_BINARY_OPERATION_NAMES;
+    @NotNull
+    public static final Name AND;
+    @NotNull
+    public static final Set<Name> ASSIGNMENT_OPERATIONS;
+    @NotNull
+    public static final Set<Name> BINARY_OPERATION_NAMES;
+    @NotNull
+    public static final Set<Name> BITWISE_OPERATION_NAMES;
+    @NotNull
+    public static final Name COMPARE_TO;
+    @NotNull
+    public static final Regex COMPONENT_REGEX;
+    @NotNull
+    public static final Name CONTAINS;
+    @NotNull
+    public static final Name DEC;
+    @NotNull
+    public static final Set<Name> DELEGATED_PROPERTY_OPERATORS;
+    @NotNull
+    public static final Name DIV;
+    @NotNull
+    public static final Name DIV_ASSIGN;
+    @NotNull
+    public static final Name EQUALS;
+    @NotNull
+    public static final Name GET;
+    @NotNull
+    public static final Name GET_VALUE;
+    @NotNull
+    public static final Name HASH_CODE;
+    @NotNull
+    public static final Name HAS_NEXT;
+    @NotNull
+    public static final Name INC;
+    @NotNull
+    public static final OperatorNameConventions INSTANCE = new OperatorNameConventions();
+    @NotNull
+    public static final Name INV;
+    @NotNull
+    public static final Name INVOKE;
+    @NotNull
+    public static final Name ITERATOR;
+    @NotNull
+    public static final Name MINUS;
+    @NotNull
+    public static final Name MINUS_ASSIGN;
+    @NotNull
+    public static final Name NEXT;
+    @NotNull
+    public static final Name NOT;
+    @NotNull
+    public static final Set<Name> NUMBER_CONVERSIONS;
+    @NotNull
+    public static final Name OR;
+    @NotNull
+    public static final Name PLUS;
+    @NotNull
+    public static final Name PLUS_ASSIGN;
+    @NotNull
+    public static final Name PROVIDE_DELEGATE;
+    @NotNull
+    public static final Name RANGE_TO;
+    @NotNull
+    public static final Name RANGE_UNTIL;
+    @NotNull
+    public static final Name REM;
+    @NotNull
+    public static final Name REM_ASSIGN;
+    @NotNull
+    public static final Name SET;
+    @NotNull
+    public static final Name SET_VALUE;
+    @NotNull
+    public static final Name SHL;
+    @NotNull
+    public static final Name SHR;
+    @NotNull
+    public static final Set<Name> SIMPLE_BINARY_OPERATION_NAMES;
+    @NotNull
+    public static final Set<Name> SIMPLE_BITWISE_OPERATION_NAMES;
+    @NotNull
+    public static final Set<Name> SIMPLE_UNARY_OPERATION_NAMES;
+    @NotNull
+    public static final Set<Name> STATEMENT_LIKE_OPERATORS;
+    @NotNull
+    public static final Name TIMES;
+    @NotNull
+    public static final Name TIMES_ASSIGN;
+    @NotNull
+    public static final Name TO_BYTE;
+    @NotNull
+    public static final Name TO_CHAR;
+    @NotNull
+    public static final Name TO_DOUBLE;
+    @NotNull
+    public static final Name TO_FLOAT;
+    @NotNull
+    public static final Name TO_INT;
+    @NotNull
+    public static final Name TO_LONG;
+    @NotNull
+    public static final Name TO_SHORT;
+    @NotNull
+    public static final Name TO_STRING;
+    @NotNull
+    public static final Name UNARY_MINUS;
+    @NotNull
+    public static final Set<Name> UNARY_OPERATION_NAMES;
+    @NotNull
+    public static final Name UNARY_PLUS;
+    @NotNull
+    public static final Name USHR;
+    @NotNull
+    public static final Name XOR;
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Map f36071a;
+
+    static {
+        Name identifier = Name.identifier("getValue");
+        Intrinsics.checkNotNullExpressionValue(identifier, "identifier(...)");
+        GET_VALUE = identifier;
+        Name identifier2 = Name.identifier("setValue");
+        Intrinsics.checkNotNullExpressionValue(identifier2, "identifier(...)");
+        SET_VALUE = identifier2;
+        Name identifier3 = Name.identifier("provideDelegate");
+        Intrinsics.checkNotNullExpressionValue(identifier3, "identifier(...)");
+        PROVIDE_DELEGATE = identifier3;
+        Name identifier4 = Name.identifier("equals");
+        Intrinsics.checkNotNullExpressionValue(identifier4, "identifier(...)");
+        EQUALS = identifier4;
+        Name identifier5 = Name.identifier("hashCode");
+        Intrinsics.checkNotNullExpressionValue(identifier5, "identifier(...)");
+        HASH_CODE = identifier5;
+        Name identifier6 = Name.identifier("compareTo");
+        Intrinsics.checkNotNullExpressionValue(identifier6, "identifier(...)");
+        COMPARE_TO = identifier6;
+        Name identifier7 = Name.identifier("contains");
+        Intrinsics.checkNotNullExpressionValue(identifier7, "identifier(...)");
+        CONTAINS = identifier7;
+        Name identifier8 = Name.identifier("invoke");
+        Intrinsics.checkNotNullExpressionValue(identifier8, "identifier(...)");
+        INVOKE = identifier8;
+        Name identifier9 = Name.identifier("iterator");
+        Intrinsics.checkNotNullExpressionValue(identifier9, "identifier(...)");
+        ITERATOR = identifier9;
+        Name identifier10 = Name.identifier("get");
+        Intrinsics.checkNotNullExpressionValue(identifier10, "identifier(...)");
+        GET = identifier10;
+        Name identifier11 = Name.identifier("set");
+        Intrinsics.checkNotNullExpressionValue(identifier11, "identifier(...)");
+        SET = identifier11;
+        Name identifier12 = Name.identifier("next");
+        Intrinsics.checkNotNullExpressionValue(identifier12, "identifier(...)");
+        NEXT = identifier12;
+        Name identifier13 = Name.identifier("hasNext");
+        Intrinsics.checkNotNullExpressionValue(identifier13, "identifier(...)");
+        HAS_NEXT = identifier13;
+        Name identifier14 = Name.identifier("toString");
+        Intrinsics.checkNotNullExpressionValue(identifier14, "identifier(...)");
+        TO_STRING = identifier14;
+        COMPONENT_REGEX = new Regex("component\\d+");
+        Name identifier15 = Name.identifier("and");
+        Intrinsics.checkNotNullExpressionValue(identifier15, "identifier(...)");
+        AND = identifier15;
+        Name identifier16 = Name.identifier("or");
+        Intrinsics.checkNotNullExpressionValue(identifier16, "identifier(...)");
+        OR = identifier16;
+        Name identifier17 = Name.identifier("xor");
+        Intrinsics.checkNotNullExpressionValue(identifier17, "identifier(...)");
+        XOR = identifier17;
+        Name identifier18 = Name.identifier("inv");
+        Intrinsics.checkNotNullExpressionValue(identifier18, "identifier(...)");
+        INV = identifier18;
+        Name identifier19 = Name.identifier("shl");
+        Intrinsics.checkNotNullExpressionValue(identifier19, "identifier(...)");
+        SHL = identifier19;
+        Name identifier20 = Name.identifier("shr");
+        Intrinsics.checkNotNullExpressionValue(identifier20, "identifier(...)");
+        SHR = identifier20;
+        Name identifier21 = Name.identifier("ushr");
+        Intrinsics.checkNotNullExpressionValue(identifier21, "identifier(...)");
+        USHR = identifier21;
+        Name identifier22 = Name.identifier("inc");
+        Intrinsics.checkNotNullExpressionValue(identifier22, "identifier(...)");
+        INC = identifier22;
+        Name identifier23 = Name.identifier("dec");
+        Intrinsics.checkNotNullExpressionValue(identifier23, "identifier(...)");
+        DEC = identifier23;
+        Name identifier24 = Name.identifier("plus");
+        Intrinsics.checkNotNullExpressionValue(identifier24, "identifier(...)");
+        PLUS = identifier24;
+        Name identifier25 = Name.identifier("minus");
+        Intrinsics.checkNotNullExpressionValue(identifier25, "identifier(...)");
+        MINUS = identifier25;
+        Name identifier26 = Name.identifier("not");
+        Intrinsics.checkNotNullExpressionValue(identifier26, "identifier(...)");
+        NOT = identifier26;
+        Name identifier27 = Name.identifier("unaryMinus");
+        Intrinsics.checkNotNullExpressionValue(identifier27, "identifier(...)");
+        UNARY_MINUS = identifier27;
+        Name identifier28 = Name.identifier("unaryPlus");
+        Intrinsics.checkNotNullExpressionValue(identifier28, "identifier(...)");
+        UNARY_PLUS = identifier28;
+        Name identifier29 = Name.identifier("times");
+        Intrinsics.checkNotNullExpressionValue(identifier29, "identifier(...)");
+        TIMES = identifier29;
+        Name identifier30 = Name.identifier("div");
+        Intrinsics.checkNotNullExpressionValue(identifier30, "identifier(...)");
+        DIV = identifier30;
+        Name identifier31 = Name.identifier("rem");
+        Intrinsics.checkNotNullExpressionValue(identifier31, "identifier(...)");
+        REM = identifier31;
+        Name identifier32 = Name.identifier("rangeTo");
+        Intrinsics.checkNotNullExpressionValue(identifier32, "identifier(...)");
+        RANGE_TO = identifier32;
+        Name identifier33 = Name.identifier("rangeUntil");
+        Intrinsics.checkNotNullExpressionValue(identifier33, "identifier(...)");
+        RANGE_UNTIL = identifier33;
+        Name identifier34 = Name.identifier("timesAssign");
+        Intrinsics.checkNotNullExpressionValue(identifier34, "identifier(...)");
+        TIMES_ASSIGN = identifier34;
+        Name identifier35 = Name.identifier("divAssign");
+        Intrinsics.checkNotNullExpressionValue(identifier35, "identifier(...)");
+        DIV_ASSIGN = identifier35;
+        Name identifier36 = Name.identifier("remAssign");
+        Intrinsics.checkNotNullExpressionValue(identifier36, "identifier(...)");
+        REM_ASSIGN = identifier36;
+        Name identifier37 = Name.identifier("plusAssign");
+        Intrinsics.checkNotNullExpressionValue(identifier37, "identifier(...)");
+        PLUS_ASSIGN = identifier37;
+        Name identifier38 = Name.identifier("minusAssign");
+        Intrinsics.checkNotNullExpressionValue(identifier38, "identifier(...)");
+        MINUS_ASSIGN = identifier38;
+        Name identifier39 = Name.identifier("toDouble");
+        Intrinsics.checkNotNullExpressionValue(identifier39, "identifier(...)");
+        TO_DOUBLE = identifier39;
+        Name identifier40 = Name.identifier("toFloat");
+        Intrinsics.checkNotNullExpressionValue(identifier40, "identifier(...)");
+        TO_FLOAT = identifier40;
+        Name identifier41 = Name.identifier("toLong");
+        Intrinsics.checkNotNullExpressionValue(identifier41, "identifier(...)");
+        TO_LONG = identifier41;
+        Name identifier42 = Name.identifier("toInt");
+        Intrinsics.checkNotNullExpressionValue(identifier42, "identifier(...)");
+        TO_INT = identifier42;
+        Name identifier43 = Name.identifier("toChar");
+        Intrinsics.checkNotNullExpressionValue(identifier43, "identifier(...)");
+        TO_CHAR = identifier43;
+        Name identifier44 = Name.identifier("toShort");
+        Intrinsics.checkNotNullExpressionValue(identifier44, "identifier(...)");
+        TO_SHORT = identifier44;
+        Name identifier45 = Name.identifier("toByte");
+        Intrinsics.checkNotNullExpressionValue(identifier45, "identifier(...)");
+        TO_BYTE = identifier45;
+        UNARY_OPERATION_NAMES = x0.i(identifier22, identifier23, identifier28, identifier27, identifier26, identifier18);
+        SIMPLE_UNARY_OPERATION_NAMES = x0.i(identifier28, identifier27, identifier26, identifier18);
+        Set<Name> i10 = x0.i(identifier29, identifier24, identifier25, identifier30, identifier31, identifier32, identifier33);
+        BINARY_OPERATION_NAMES = i10;
+        SIMPLE_BINARY_OPERATION_NAMES = x0.i(identifier29, identifier24, identifier25, identifier30, identifier31);
+        Set<Name> i11 = x0.i(identifier15, identifier16, identifier17, identifier18, identifier19, identifier20, identifier21);
+        BITWISE_OPERATION_NAMES = i11;
+        SIMPLE_BITWISE_OPERATION_NAMES = x0.i(identifier15, identifier16, identifier17, identifier19, identifier20, identifier21);
+        ALL_BINARY_OPERATION_NAMES = x0.l(x0.l(i10, i11), x0.i(identifier4, identifier7, identifier6));
+        Set<Name> i12 = x0.i(identifier34, identifier35, identifier36, identifier37, identifier38);
+        ASSIGNMENT_OPERATIONS = i12;
+        DELEGATED_PROPERTY_OPERATORS = x0.i(identifier, identifier2, identifier3);
+        STATEMENT_LIKE_OPERATORS = x0.l(x0.c(identifier11), i12);
+        NUMBER_CONVERSIONS = x0.i(identifier39, identifier40, identifier41, identifier42, identifier44, identifier45, identifier43);
+        f36071a = o0.m(v.a(identifier22, "++"), v.a(identifier23, "--"), v.a(identifier28, "+"), v.a(identifier27, "-"), v.a(identifier26, "!"), v.a(identifier29, "*"), v.a(identifier24, "+"), v.a(identifier25, "-"), v.a(identifier30, "/"), v.a(identifier31, "%"), v.a(identifier32, ".."), v.a(identifier33, "..<"));
+    }
+
+    private OperatorNameConventions() {
+    }
+}

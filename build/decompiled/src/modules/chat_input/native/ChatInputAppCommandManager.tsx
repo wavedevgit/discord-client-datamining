@@ -1,0 +1,423 @@
+// modules/chat_input/native/ChatInputAppCommandManager.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var13 = metroImportDefault;
+    var6 = metroImportAll;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var13;
+    var _closure1_slot2 = var6;
+    var _closure1_slot3 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var13.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var7 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var7;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var13.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var13.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var9 = var4.bind(var0)(var3);
+    var8 = var9.createStyles;
+    var6 = {};
+    var10 = {};
+    var11 = 5;
+    var3 = var5[var11];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.DARK_PRIMARY_800_LIGHT_PRIMARY_300;
+    var10.backgroundColor = var3;
+    var12 = 6;
+    var3 = var5[var12];
+    var3 = var13.bind(var0)(var3);
+    var3 = var3.colors;
+    var3 = var3.TEXT_DEFAULT;
+    var10.color = var3;
+    var3 = var5[var12];
+    var3 = var13.bind(var0)(var3);
+    var3 = var3.radii;
+    var3 = var3.xs;
+    var10.borderRadius = var3;
+    var3 = 14;
+    var10.fontSize = var3;
+    var6.commandOption = var10;
+    var10 = {};
+    var14 = var5[var11];
+    var14 = var4.bind(var0)(var14);
+    var14 = var14.DARK_PRIMARY_800_LIGHT_PRIMARY_300;
+    var10.backgroundColor = var14;
+    var14 = var5[var12];
+    var14 = var13.bind(var0)(var14);
+    var14 = var14.colors;
+    var14 = var14.TEXT_FEEDBACK_CRITICAL;
+    var10.color = var14;
+    var12 = var5[var12];
+    var12 = var13.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xs;
+    var10.borderRadius = var12;
+    var10.fontSize = var3;
+    var6.commandErrorOption = var10;
+    var10 = {};
+    var11 = var5[var11];
+    var11 = var4.bind(var0)(var11);
+    var11 = var11.DARK_BRAND_260_LIGHT_BRAND_500;
+    var10.color = var11;
+    var11 = 'bold';
+    var10.fontWeight = var11;
+    var6.autocomplete = var10;
+    var6 = var8.bind(var9)(var6);
+    var _closure1_slot8 = var6;
+    var6 = var7.forwardRef;
+    var1 = function(arg0, arg1) { // Environment: var1
+        var1 = arg0;
+        var10 = var1.chatInputRef;
+        var _closure2_slot0 = var10;
+        var9 = var1.chatInputStateRef;
+        var _closure2_slot1 = var9;
+        var11 = var1.channel;
+        var _closure2_slot2 = var11;
+        var8 = var1.commandsDisabled;
+        var _closure2_slot3 = var8;
+        var1 = _closure1_slot8;
+        var4 = undefined;
+        var1 = var1.bind(var4)();
+        var _closure2_slot4 = var1;
+        var16 = _closure1_slot0;
+        var17 = _closure1_slot3;
+        var3 = 7;
+        var3 = var17[var3];
+        var6 = var16.bind(var4)(var3);
+        var5 = var6.useApplicationCommandOptionValueParser;
+        var3 = {};
+        var3.channel = var11;
+        var6 = var5.bind(var6)(var3);
+        var _closure2_slot5 = var6;
+        var3 = 8;
+        var5 = var17[var3];
+        var13 = var16.bind(var4)(var5);
+        var12 = var13.useStateFromStores;
+        var5 = _closure1_slot7;
+        var7 = new Array(1);
+        var7[0] = var5;
+        var5 = function() { // Environment: var0
+            var2 = _closure1_slot7;
+            var1 = var2.getActiveCommand;
+            var0 = _closure2_slot2;
+            var0 = var0.id;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var12 = var12.bind(var13)(var7, var5);
+        var _closure2_slot6 = var12;
+        var3 = var17[var3];
+        var13 = var16.bind(var4)(var3);
+        var7 = var13.useStateFromStores;
+        var3 = _closure1_slot6;
+        var5 = new Array(1);
+        var5[0] = var3;
+        var3 = function() { // Environment: var0
+            var2 = _closure1_slot6;
+            var1 = var2.getLastResponseNonce;
+            var0 = _closure2_slot2;
+            var0 = var0.id;
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var7 = var7.bind(var13)(var5, var3);
+        var _closure2_slot7 = var7;
+        var3 = _closure1_slot5;
+        var14 = var3.useRef;
+        var5 = 9;
+        var5 = var17[var5];
+        var15 = var16.bind(var4)(var5);
+        var13 = var15.getTextBeforeFirstOption;
+        var5 = var9.current;
+        var5 = var5.text;
+        var5 = var13.bind(var15)(var5);
+        var15 = var5.text;
+        var5 = var15.slice;
+        var13 = 1;
+        var15 = var5.bind(var15)(var13);
+        var5 = var15.trimEnd;
+        var5 = var5.bind(var15)();
+        var5 = var14.bind(var3)(var5);
+        var _closure2_slot8 = var5;
+        var14 = var3.useState;
+        var5 = var5.current;
+        var15 = var14.bind(var3)(var5);
+        var14 = _closure1_slot4;
+        var5 = 2;
+        var5 = var14.bind(var4)(var15, var5);
+        var14 = 0;
+        var15 = var5[var14];
+        var5 = var5[var13];
+        var _closure2_slot9 = var5;
+        var5 = _closure1_slot2;
+        var2 = 10;
+        var2 = var17[var2];
+        var14 = var5.bind(var4)(var2);
+        var13 = var14.useCachedResults;
+        var5 = {};
+        var2 = 'channel';
+        var5.type = var2;
+        var5.channel = var11;
+        var2 = 11;
+        var2 = var17[var2];
+        var2 = var16.bind(var4)(var2);
+        var2 = var2.ApplicationCommandType;
+        var2 = var2.CHAT;
+        var2 = var13.bind(var14)(var5, var2, var15);
+        var5 = var2.commands;
+        var _closure2_slot10 = var5;
+        var2 = var3.useRef;
+        var2 = var2.bind(var3)(var4);
+        var _closure2_slot11 = var2;
+        var4 = var3.useCallback;
+        var2 = new Array(9);
+        var2[0] = var12;
+        var2[1] = var11;
+        var2[2] = var10;
+        var2[3] = var9;
+        var2[4] = var8;
+        var2[5] = var7;
+        var2[6] = var6;
+        var2[7] = var5;
+        var2[8] = var1;
+        var1 = function() { // Environment: var0
+            _fun90560: for (var _fun90560_ip = 0;;) switch (_fun90560_ip) {
+                case 0:
+                    var0 = _closure2_slot1;
+                    var3 = var0.current;
+                    var7 = var3.editId;
+                    var5 = var3.focused;
+                    var2 = var3.selectionStart;
+                    var0 = var3.selectionEnd;
+                    var4 = var3.text;
+                    var3 = {};
+                    var8 = _closure2_slot6;
+                    var3.activeCommand = var8;
+                    var8 = _closure2_slot2;
+                    var3.channel = var8;
+                    var8 = _closure2_slot3;
+                    var3.commandsDisabled = var8;
+                    var3.editId = var7;
+                    var3.focused = var5;
+                    var5 = _closure2_slot7;
+                    var3.lastCommandAutocompleteResponseNonce = var5;
+                    var5 = _closure2_slot10;
+                    var3.queryCommands = var5;
+                    var3.selectionStart = var2;
+                    var3.selectionEnd = var0;
+                    var3.text = var4;
+                    var0 = _closure2_slot11;
+                    var2 = var0.current;
+                    var0 = null;
+                    if (!(var0 != var2)) {
+                        _fun90560_ip = 160;
+                        continue _fun90560
+                    }
+                case 128:
+                    var0 = _closure2_slot11;
+                    var5 = var0.current;
+                    var2 = var5.updateApplicationCommandManagerState;
+                    var0 = {};
+                    var0.newState = var3;
+                    var0 = var2.bind(var5)(var0);
+                    _fun90560_ip = 284;
+                    continue _fun90560;
+                case 160:
+                    var2 = _closure2_slot11;
+                    var7 = _closure1_slot1;
+                    var5 = _closure1_slot3;
+                    var0 = 12;
+                    var5 = var5[var0];
+                    var0 = undefined;
+                    var5 = var7.bind(var0)(var5);
+                    var0 = {};
+                    var0.props = var3;
+                    var3 = _closure2_slot0;
+                    var0.ref = var3;
+                    var3 = _closure2_slot5;
+                    var0.optionValueParser = var3;
+                    var3 = {};
+                    var7 = function() { // Original name: commandOption, environment: var6
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot3;
+                        var0 = 13;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var2 = var2.bind(var0)(var1);
+                        var1 = var2.convertToNativeStyle;
+                        var0 = _closure2_slot4;
+                        var0 = var0.commandOption;
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var3.commandOption = var7;
+                    var7 = function() { // Original name: commandErrorOption, environment: var6
+                        var2 = _closure1_slot0;
+                        var1 = _closure1_slot3;
+                        var0 = 13;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var2 = var2.bind(var0)(var1);
+                        var1 = var2.convertToNativeStyle;
+                        var0 = _closure2_slot4;
+                        var0 = var0.commandErrorOption;
+                        var0 = var1.bind(var2)(var0);
+                        return var0;
+                    };
+                    var3.commandErrorOption = var7;
+                    var6 = function(arg0) { // Original name: autocomplete, environment: var6
+                        _fun90563: for (var _fun90563_ip = 0;;) switch (_fun90563_ip) {
+                            case 0:
+                                var4 = arg0;
+                                var0 = null;
+                                if (!(var0 != var4)) {
+                                    _fun90563_ip = 78;
+                                    continue _fun90563
+                                }
+                            case 9:
+                                var2 = _closure1_slot0;
+                                var1 = _closure1_slot3;
+                                var0 = 13;
+                                var1 = var1[var0];
+                                var0 = undefined;
+                                var2 = var2.bind(var0)(var1);
+                                var1 = var2.convertToNativeStyle;
+                                var0 = {};
+                                var3 = _closure2_slot4;
+                                var5 = var3.autocomplete;
+                                var6 = var0;
+                                var3 = copyDataProperties(var6, var5);
+                                var3 = 'color';
+                                var0[var3] = var4;
+                                var0 = var1.bind(var2)(var0);
+                                _fun90563_ip = 127;
+                                continue _fun90563;
+                            case 78:
+                                var3 = _closure1_slot0;
+                                var2 = _closure1_slot3;
+                                var1 = 13;
+                                var2 = var2[var1];
+                                var1 = undefined;
+                                var3 = var3.bind(var1)(var2);
+                                var2 = var3.convertToNativeStyle;
+                                var1 = _closure2_slot4;
+                                var1 = var1.autocomplete;
+                                var0 = var2.bind(var3)(var1);
+                            case 127:
+                                return var0;
+                        }
+                    };
+                    var3.autocomplete = var6;
+                    var0.styles = var3;
+                    var3 = var5.prototype;
+                    var3 = Object.create(var3, {
+                        constructor: {
+                            value: var5
+                        }
+                    });
+                    var10 = var3;
+                    var9 = var0;
+                    var0 = new var10[var5](var9, var8);
+                    var0 = var0 instanceof Object ? var0 : var3;
+                    var2.current = var0;
+                case 284:
+                    var3 = _closure1_slot0;
+                    var2 = _closure1_slot3;
+                    var0 = 9;
+                    var2 = var2[var0];
+                    var0 = undefined;
+                    var3 = var3.bind(var0)(var2);
+                    var2 = var3.getTextBeforeFirstOption;
+                    var2 = var2.bind(var3)(var4);
+                    var4 = var2.text;
+                    var3 = var4.slice;
+                    var2 = 1;
+                    var3 = var3.bind(var4)(var2);
+                    var2 = var3.trimEnd;
+                    var2 = var2.bind(var3)();
+                    var3 = _closure2_slot8;
+                    var3 = var3.current;
+                    if (!(var3 !== var2)) {
+                        _fun90560_ip = 380;
+                        continue _fun90560
+                    }
+                case 361:
+                    var3 = _closure2_slot9;
+                    var3 = var3.bind(var0)(var2);
+                    var1 = _closure2_slot8;
+                    var1.current = var2;
+                case 380:
+                    return var0;
+            }
+        };
+        var1 = var4.bind(var3)(var1, var2);
+        var _closure2_slot12 = var1;
+        var4 = var3.useEffect;
+        var2 = new Array(1);
+        var2[0] = var1;
+        var1 = function() { // Environment: var0
+            var1 = _closure2_slot12;
+            var0 = undefined;
+            var1 = var1.bind(var0)();
+            return var0;
+        };
+        var1 = var4.bind(var3)(var1, var2);
+        var2 = var3.useImperativeHandle;
+        var1 = arg1;
+        var0 = function() { // Environment: var0
+            var0 = {};
+            var2 = function() { // Original name: getApplicationCommandManager, environment: var1
+                var0 = _closure2_slot11;
+                var0 = var0.current;
+                return var0;
+            };
+            var0.getApplicationCommandManager = var2;
+            var1 = function() { // Original name: updateState, environment: var1
+                var1 = _closure2_slot12;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+            };
+            var0.updateState = var1;
+            return var0;
+        };
+        var0 = var2.bind(var3)(var1, var0);
+        var0 = null;
+        return var0;
+    };
+    var6 = var6.bind(var7)(var1);
+    var1 = 'ChatInputAppCommandManager';
+    var6.displayName = var1;
+    var1 = var7.memo;
+    var1 = var1.bind(var7)(var6);
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/chat_input/native/ChatInputAppCommandManager.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 6441, 6442, 1297, 4828, 671, 11699, 566, 11697, 7558, 1636, 11716, 11698, 2]);

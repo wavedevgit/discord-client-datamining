@@ -1,0 +1,92 @@
+package com.withpersona.sdk2.inquiry.internal.network;
+
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
+import com.squareup.moshi.w;
+import com.withpersona.sdk2.inquiry.internal.network.ErrorRequest;
+import kotlin.Metadata;
+import kotlin.collections.x0;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\u0015R\u001a\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0018R\u001c\u0010\u001c\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001a0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0018¨\u0006\u001d"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/ErrorRequestJsonAdapter;", "Lcom/squareup/moshi/h;", "Lcom/withpersona/sdk2/inquiry/internal/network/ErrorRequest;", "Lcom/squareup/moshi/w;", "moshi", "<init>", "(Lcom/squareup/moshi/w;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/m;", "reader", "a", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/internal/network/ErrorRequest;", "Lcom/squareup/moshi/t;", "writer", "value_", "", "b", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/internal/network/ErrorRequest;)V", "Lcom/squareup/moshi/m$b;", "Lcom/squareup/moshi/m$b;", "options", "Lcom/withpersona/sdk2/inquiry/internal/network/ErrorRequest$a;", "Lcom/squareup/moshi/h;", "errorTypeAdapter", "", "c", "nullableAnyAdapter", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class ErrorRequestJsonAdapter extends com.squareup.moshi.h {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final m.b f20173a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final com.squareup.moshi.h f20174b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final com.squareup.moshi.h f20175c;
+
+    public ErrorRequestJsonAdapter(@NotNull w moshi) {
+        Intrinsics.checkNotNullParameter(moshi, "moshi");
+        m.b a10 = m.b.a("errorType", "debugDescription");
+        Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
+        this.f20173a = a10;
+        com.squareup.moshi.h f10 = moshi.f(ErrorRequest.a.class, x0.d(), "errorType");
+        Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
+        this.f20174b = f10;
+        com.squareup.moshi.h f11 = moshi.f(Object.class, x0.d(), "debugDescription");
+        Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
+        this.f20175c = f11;
+    }
+
+    @Override // com.squareup.moshi.h
+    /* renamed from: a */
+    public ErrorRequest fromJson(m reader) {
+        Intrinsics.checkNotNullParameter(reader, "reader");
+        reader.r();
+        ErrorRequest.a aVar = null;
+        Object obj = null;
+        while (reader.hasNext()) {
+            int A0 = reader.A0(this.f20173a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 == 1) {
+                        obj = this.f20175c.fromJson(reader);
+                    }
+                } else {
+                    aVar = (ErrorRequest.a) this.f20174b.fromJson(reader);
+                    if (aVar == null) {
+                        throw sm.c.x("errorType", "errorType", reader);
+                    }
+                }
+            } else {
+                reader.E0();
+                reader.P();
+            }
+        }
+        reader.y();
+        if (aVar != null) {
+            return new ErrorRequest(aVar, obj);
+        }
+        throw sm.c.o("errorType", "errorType", reader);
+    }
+
+    @Override // com.squareup.moshi.h
+    /* renamed from: b */
+    public void toJson(t writer, ErrorRequest errorRequest) {
+        Intrinsics.checkNotNullParameter(writer, "writer");
+        if (errorRequest != null) {
+            writer.l();
+            writer.A0("errorType");
+            this.f20174b.toJson(writer, errorRequest.b());
+            writer.A0("debugDescription");
+            this.f20175c.toJson(writer, errorRequest.a());
+            writer.E();
+            return;
+        }
+        throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder(34);
+        sb2.append("GeneratedJsonAdapter(");
+        sb2.append("ErrorRequest");
+        sb2.append(')');
+        return sb2.toString();
+    }
+}

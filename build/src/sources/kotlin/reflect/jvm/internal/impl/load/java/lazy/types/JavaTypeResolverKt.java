@@ -1,0 +1,9 @@
+package kotlin.reflect.jvm.internal.impl.load.java.lazy.types;
+
+import kotlin.reflect.jvm.internal.impl.name.FqName;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class JavaTypeResolverKt {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final FqName f34308a = new FqName("java.lang.Class");
+}

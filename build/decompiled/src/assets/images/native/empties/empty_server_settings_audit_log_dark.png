@@ -1,0 +1,26 @@
+// /assets/images/native/empties/empty_server_settings_audit_log_dark.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/native/empties',
+        'width': 272,
+        'height': 130,
+        'scales': null,
+        'hash': '73bc70235c9f49d70c996bc5036e22a8',
+        'name': 'empty_server_settings_audit_log_dark',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

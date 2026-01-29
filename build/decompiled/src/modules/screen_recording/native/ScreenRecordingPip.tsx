@@ -1,0 +1,825 @@
+// modules/screen_recording/native/ScreenRecordingPip.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var10;
+    var _closure1_slot2 = var5;
+    var0 = function(arg0) { // Original name: ScreenRecordingPip, environment: var1
+        _fun100387: for (var _fun100387_ip = 0;;) switch (_fun100387_ip) {
+            case 0:
+                var0 = arg0;
+                var3 = var0.surveyConfig;
+                var0 = _closure1_slot11;
+                var4 = undefined;
+                var19 = var0.bind(var4)();
+                var1 = _closure1_slot1;
+                var5 = _closure1_slot2;
+                var0 = 9;
+                var0 = var5[var0];
+                var0 = var1.bind(var4)(var0);
+                var7 = var0.bind(var4)();
+                var _closure2_slot0 = var7;
+                var0 = 8;
+                var0 = var5[var0];
+                var0 = var1.bind(var4)(var0);
+                var0 = var0.bind(var4)();
+                var _closure2_slot1 = var0;
+                var2 = _closure1_slot6;
+                var1 = function(arg0) { // Environment: var17
+                    var0 = arg0;
+                    var0 = var0.isRecording;
+                    return var0;
+                };
+                var1 = var2.bind(var4)(var1);
+                var6 = _closure1_slot6;
+                var2 = function(arg0) { // Environment: var17
+                    var0 = arg0;
+                    var0 = var0.currentStep;
+                    return var0;
+                };
+                var22 = var6.bind(var4)(var2);
+                var6 = _closure1_slot6;
+                var2 = function(arg0) { // Environment: var17
+                    var0 = arg0;
+                    var0 = var0.isUploading;
+                    return var0;
+                };
+                var15 = var6.bind(var4)(var2);
+                var2 = var3.useIsStepCompleted;
+                var13 = var2.bind(var3)(var22);
+                var6 = _closure1_slot4;
+                var3 = var6.useCallback;
+                var2 = new Array(2);
+                var2[0] = var7;
+                var2[1] = var0;
+                var0 = function() { // Environment: var17
+                    var2 = _closure2_slot0;
+                    var1 = var2.get;
+                    var1 = var1.bind(var2)();
+                    var3 = var1.width;
+                    var1 = _closure2_slot1;
+                    var0 = var1.get;
+                    var2 = var0.bind(var1)();
+                    var0 = {};
+                    var1 = var2.right;
+                    var4 = var3 - var1;
+                    var3 = _closure1_slot10;
+                    var7 = var4 - var3;
+                    var4 = _closure1_slot1;
+                    var5 = _closure1_slot2;
+                    var1 = 6;
+                    var6 = var5[var1];
+                    var3 = undefined;
+                    var6 = var4.bind(var3)(var6);
+                    var6 = var6.spacing;
+                    var6 = var6.PX_16;
+                    var6 = var7 - var6;
+                    var0.x = var6;
+                    var2 = var2.top;
+                    var1 = var5[var1];
+                    var1 = var4.bind(var3)(var1);
+                    var1 = var1.spacing;
+                    var1 = var1.PX_16;
+                    var1 = var2 + var1;
+                    var0.y = var1;
+                    return var0;
+                };
+                var3 = var3.bind(var6)(var0, var2);
+                var2 = _closure1_slot4;
+                var0 = var2.useState;
+                var3 = var0.bind(var2)(var3);
+                var2 = _closure1_slot3;
+                var0 = 2;
+                var2 = var2.bind(var4)(var3, var0);
+                var0 = 0;
+                var0 = var2[var0];
+                var _closure2_slot2 = var0;
+                var21 = 1;
+                var9 = var2[var21];
+                var3 = _closure1_slot0;
+                var2 = 7;
+                var6 = var5[var2];
+                var8 = var3.bind(var4)(var6);
+                var7 = var8.useSharedValue;
+                var6 = var0.x;
+                var16 = var7.bind(var8)(var6);
+                var _closure2_slot3 = var16;
+                var2 = var5[var2];
+                var5 = var3.bind(var4)(var2);
+                var3 = var5.useSharedValue;
+                var2 = var0.y;
+                var10 = var3.bind(var5)(var2);
+                var _closure2_slot4 = var10;
+                var5 = _closure1_slot4;
+                var3 = var5.useEffect;
+                var6 = var0.x;
+                var2 = new Array(4);
+                var2[0] = var6;
+                var0 = var0.y;
+                var2[1] = var0;
+                var2[2] = var16;
+                var2[3] = var10;
+                var0 = function() { // Environment: var17
+                    var4 = _closure2_slot3;
+                    var3 = var4.set;
+                    var0 = _closure2_slot2;
+                    var2 = var0.x;
+                    var2 = var3.bind(var4)(var2);
+                    var2 = _closure2_slot4;
+                    var1 = var2.set;
+                    var0 = var0.y;
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
+                };
+                var0 = var3.bind(var5)(var0, var2);
+                var5 = _closure1_slot4;
+                var3 = var5.useCallback;
+                var2 = function() { // Environment: var17
+                    var4 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 13;
+                    var3 = var1[var0];
+                    var0 = undefined;
+                    var4 = var4.bind(var0)(var3);
+                    var3 = var4.openLazy;
+                    var5 = _closure1_slot0;
+                    var2 = 15;
+                    var2 = var1[var2];
+                    var5 = var5.bind(var0)(var2);
+                    var2 = 14;
+                    var2 = var1[var2];
+                    var1 = var1.paths;
+                    var2 = var5.bind(var0)(var2, var1);
+                    var1 = 'ScreenRecordingActionSheet';
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var0 = new Array(0);
+                var12 = var3.bind(var5)(var2, var0);
+                var0 = null;
+                if (!var1) {
+                    _fun100387_ip = 910;
+                    continue _fun100387
+                }
+            case 360:
+                var3 = _closure1_slot8;
+                var2 = _closure1_slot9;
+                var1 = {};
+                var7 = _closure1_slot7;
+                var11 = _closure1_slot1;
+                var20 = _closure1_slot2;
+                var5 = 16;
+                var5 = var20[var5];
+                var6 = var11.bind(var4)(var5);
+                var5 = {};
+                var5.x = var16;
+                var5.y = var10;
+                var6 = var7.bind(var4)(var6, var5);
+                var5 = new Array(2);
+                var5[0] = var6;
+                var8 = _closure1_slot7;
+                var7 = _closure1_slot17;
+                var6 = {};
+                var6.x = var16;
+                var6.y = var10;
+                var10 = _closure1_slot10;
+                var6.contentWidth = var10;
+                var10 = _closure1_slot10;
+                var6.contentHeight = var10;
+                var10 = 6;
+                var10 = var20[var10];
+                var10 = var11.bind(var4)(var10);
+                var10 = var10.spacing;
+                var10 = var10.PX_4;
+                var6.dragBoundsPadding = var10;
+                var6.onChangePosition = var9;
+                var11 = _closure1_slot8;
+                var16 = _closure1_slot0;
+                var9 = 17;
+                var9 = var20[var9];
+                var9 = var16.bind(var4)(var9);
+                var10 = var9.PressableOpacity;
+                var9 = {};
+                var18 = var19.widget;
+                var9.style = var18;
+                var18 = 'button';
+                var9.accessibilityRole = var18;
+                var9.onPress = var12;
+                var12 = 0.5;
+                var9.activeOpacity = var12;
+                var18 = _closure1_slot7;
+                var12 = 18;
+                var12 = var20[var12];
+                var12 = var16.bind(var4)(var12);
+                var16 = var12.Text;
+                var12 = {
+                    'variant': 'text-xs/semibold',
+                    'color': 'white'
+                };
+                var20 = var19.stepText;
+                var12.style = var20;
+                var20 = 'Uploading...';
+                if (var15) {
+                    _fun100387_ip = 634;
+                    continue _fun100387
+                }
+            case 606:
+                var23 = var22 + var21;
+                var21 = global;
+                var21 = var21.HermesInternal;
+                var22 = var21.concat;
+                var21 = 'Step ';
+                var20 = var22.bind(var21)(var23);
+            case 634:
+                var12.children = var20;
+                var16 = var18.bind(var4)(var16, var12);
+                var12 = new Array(2);
+                var12[0] = var16;
+                var16 = _closure1_slot7;
+                if (var15) {
+                    _fun100387_ip = 815;
+                    continue _fun100387
+                }
+            case 662:
+                var15 = _closure1_slot5;
+                var18 = {};
+                if (var13) {
+                    _fun100387_ip = 740;
+                    continue _fun100387
+                }
+            case 671:
+                var13 = var19.stopButton;
+                var18.style = var13;
+                var21 = _closure1_slot7;
+                var20 = _closure1_slot0;
+                var22 = _closure1_slot2;
+                var13 = 21;
+                var13 = var22[var13];
+                var13 = var20.bind(var4)(var13);
+                var20 = var13.StopIcon;
+                var13 = {
+                    'size': 'md',
+                    'color': 'text-feedback-critical'
+                };
+                var13 = var21.bind(var4)(var20, var13);
+                var18.children = var13;
+                var13 = var18;
+                _fun100387_ip = 807;
+                continue _fun100387;
+            case 740:
+                var19 = var19.doneButton;
+                var18.style = var19;
+                var21 = _closure1_slot7;
+                var20 = _closure1_slot0;
+                var22 = _closure1_slot2;
+                var19 = 20;
+                var19 = var22[var19];
+                var19 = var20.bind(var4)(var19);
+                var20 = var19.CheckmarkLargeIcon;
+                var19 = {
+                    'size': 'md',
+                    'color': 'status-positive'
+                };
+                var19 = var21.bind(var4)(var20, var19);
+                var18.children = var19;
+                var13 = var18;
+            case 807:
+                var13 = var16.bind(var4)(var15, var13);
+                _fun100387_ip = 872;
+                continue _fun100387;
+            case 815:
+                var15 = _closure1_slot0;
+                var18 = _closure1_slot2;
+                var14 = 19;
+                var14 = var18[var14];
+                var14 = var15.bind(var4)(var14);
+                var15 = var14.Button;
+                var14 = {
+                    'loading': true,
+                    'text': ''
+                };
+                var17 = function() { // Original name: onPress, environment: var17
+                    var0 = undefined;
+                    return var0;
+                };
+                var14.onPress = var17;
+                var13 = var16.bind(var4)(var15, var14);
+            case 872:
+                var12[1] = var13;
+                var9.children = var12;
+                var9 = var11.bind(var4)(var10, var9);
+                var6.children = var9;
+                var6 = var8.bind(var4)(var7, var6);
+                var5[1] = var6;
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 910:
+                return var0;
+        }
+    };
+    var _closure1_slot18 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var10.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var11 = 1;
+    var6 = var5[var11];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.useScreenRecordingStore;
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot7 = var6;
+    var6 = var3.jsxs;
+    var _closure1_slot8 = var6;
+    var3 = var3.Fragment;
+    var _closure1_slot9 = var3;
+    var3 = 100;
+    var _closure1_slot10 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {};
+    var9 = 'absolute';
+    var8.position = var9;
+    var3.widgetContainer = var8;
+    var8 = {
+        'backgroundColor': null,
+        'justifyContent': 'center',
+        'alignItems': 'center',
+        'height': 100,
+        'width': 100
+    };
+    var9 = 6;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_BRAND;
+    var8.backgroundColor = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var8.gap = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var8.padding = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.xl;
+    var8.borderRadius = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.shadows;
+    var14 = var12.SHADOW_MOBILE_NAVIGATOR_X;
+    var15 = var8;
+    var12 = copyDataProperties(var15, var14);
+    var3.widget = var8;
+    var8 = {
+        'textAlign': 'center',
+        'maxWidth': 68
+    };
+    var3.stepText = var8;
+    var8 = {};
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_8;
+    var8.padding = var12;
+    var8.borderWidth = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.WHITE;
+    var8.borderColor = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var8.borderRadius = var11;
+    var3.stopButton = var8;
+    var8 = {};
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.spacing;
+    var9 = var9.PX_8;
+    var8.padding = var9;
+    var3.doneButton = var8;
+    var8 = {};
+    var9 = '#fff';
+    var8.tintColor = var9;
+    var3.icon = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot11 = var3;
+    var3 = {};
+    var6 = 'function ScreenRecordingPipTsx1(x,y){const{windowDimensionsSharedValue,insetsSharedValue,clamp,dragBoundsPadding,contentWidth,contentHeight}=this.__closure;const{width:windowWidth,height:windowHeight}=windowDimensionsSharedValue.get();const insets=insetsSharedValue.get();return{x:clamp(x,insets.left+dragBoundsPadding,windowWidth-insets.right-contentWidth-dragBoundsPadding),y:clamp(y,insets.top+dragBoundsPadding,windowHeight-insets.bottom-contentHeight-dragBoundsPadding)};}';
+    var3.code = var6;
+    var _closure1_slot12 = var3;
+    var3 = {};
+    var6 = 'function ScreenRecordingPipTsx2(){const{runOnJS,onChangePosition,x,y}=this.__closure;runOnJS(onChangePosition)({x:x.get(),y:y.get()});}';
+    var3.code = var6;
+    var _closure1_slot13 = var3;
+    var3 = {};
+    var6 = 'function ScreenRecordingPipTsx3(event){const{getClampedPosition,originalX,originalY,x,y}=this.__closure;const{x:xClamped,y:yClamped}=getClampedPosition(originalX.get()+event.translationX,originalY.get()+event.translationY);x.set(xClamped);y.set(yClamped);}';
+    var3.code = var6;
+    var _closure1_slot14 = var3;
+    var3 = {};
+    var6 = 'function ScreenRecordingPipTsx4(){const{originalX,x,originalY,y}=this.__closure;originalX.set(x.get());originalY.set(y.get());}';
+    var3.code = var6;
+    var _closure1_slot15 = var3;
+    var3 = {};
+    var6 = 'function ScreenRecordingPipTsx5(){const{getClampedPosition,x,y,withSpring,springUnclamped}=this.__closure;const{x:translateX,y:translateY}=getClampedPosition(x.get(),y.get());return{transform:[{translateX:withSpring(translateX,springUnclamped)},{translateY:withSpring(translateY,springUnclamped)}]};}';
+    var3.code = var6;
+    var _closure1_slot16 = var3;
+    var3 = function(arg0) { // Original name: DraggableContainer, environment: var1
+        _fun100395: for (var _fun100395_ip = 0;;) switch (_fun100395_ip) {
+            case 0:
+                var0 = arg0;
+                var15 = var0.x;
+                var _closure2_slot0 = var15;
+                var14 = var0.y;
+                var _closure2_slot1 = var14;
+                var21 = var0.contentWidth;
+                var _closure2_slot2 = var21;
+                var22 = var0.contentHeight;
+                var _closure2_slot3 = var22;
+                var20 = var0.dragBoundsPadding;
+                var3 = undefined;
+                if (!(var20 === var3)) {
+                    _fun100395_ip = 57;
+                    continue _fun100395
+                }
+            case 55:
+                var20 = 0;
+            case 57:
+                var _closure2_slot4 = var20;
+                var17 = var0.onChangePosition;
+                var _closure2_slot5 = var17;
+                var7 = var0.children;
+                var _closure2_slot6 = var3;
+                var _closure2_slot7 = var3;
+                var _closure2_slot8 = var3;
+                var _closure2_slot9 = var3;
+                var _closure2_slot10 = var3;
+                var0 = _closure1_slot11;
+                var8 = var0.bind(var3)();
+                var1 = _closure1_slot0;
+                var10 = _closure1_slot2;
+                var4 = 7;
+                var0 = var10[var4];
+                var9 = var1.bind(var3)(var0);
+                var5 = var9.useSharedValue;
+                var0 = var15.get;
+                var0 = var0.bind(var15)();
+                var19 = var5.bind(var9)(var0);
+                _closure2_slot6 = var19;
+                var0 = var10[var4];
+                var9 = var1.bind(var3)(var0);
+                var5 = var9.useSharedValue;
+                var0 = var14.get;
+                var0 = var0.bind(var14)();
+                var18 = var5.bind(var9)(var0);
+                _closure2_slot7 = var18;
+                var5 = _closure1_slot1;
+                var0 = 8;
+                var0 = var10[var0];
+                var0 = var5.bind(var3)(var0);
+                var16 = var0.bind(var3)();
+                _closure2_slot8 = var16;
+                var0 = 9;
+                var0 = var10[var0];
+                var0 = var5.bind(var3)(var0);
+                var13 = var0.bind(var3)();
+                _closure2_slot9 = var13;
+                var12 = _closure1_slot4;
+                var11 = var12.useCallback;
+                var9 = function(arg0, arg1) { // Original name: C, environment: var2
+                    var2 = _closure2_slot9;
+                    var0 = var2.get;
+                    var0 = var0.bind(var2)();
+                    var10 = var0.width;
+                    var7 = var0.height;
+                    var2 = _closure2_slot8;
+                    var0 = var2.get;
+                    var6 = var0.bind(var2)();
+                    var0 = {};
+                    var5 = _closure1_slot0;
+                    var8 = _closure1_slot2;
+                    var3 = 7;
+                    var2 = var8[var3];
+                    var4 = undefined;
+                    var13 = var5.bind(var4)(var2);
+                    var12 = var13.clamp;
+                    var9 = var6.left;
+                    var2 = _closure2_slot4;
+                    var11 = var9 + var2;
+                    var9 = var6.right;
+                    var10 = var10 - var9;
+                    var9 = _closure2_slot2;
+                    var9 = var10 - var9;
+                    var10 = var9 - var2;
+                    var9 = arg0;
+                    var9 = var12.bind(var13)(var9, var11, var10);
+                    var0.x = var9;
+                    var3 = var8[var3];
+                    var5 = var5.bind(var4)(var3);
+                    var4 = var5.clamp;
+                    var3 = var6.top;
+                    var3 = var3 + var2;
+                    var6 = var6.bottom;
+                    var6 = var7 - var6;
+                    var1 = _closure2_slot3;
+                    var1 = var6 - var1;
+                    var2 = var1 - var2;
+                    var1 = arg1;
+                    var1 = var4.bind(var5)(var1, var3, var2);
+                    var0.y = var1;
+                    return var0;
+                };
+                var0 = {};
+                var0.windowDimensionsSharedValue = var13;
+                var0.insetsSharedValue = var16;
+                var23 = var10[var4];
+                var23 = var1.bind(var3)(var23);
+                var23 = var23.clamp;
+                var0.clamp = var23;
+                var0.dragBoundsPadding = var20;
+                var0.contentWidth = var21;
+                var0.contentHeight = var22;
+                var9.__closure = var0;
+                var0 = 5314404716267.0;
+                var9.__workletHash = var0;
+                var0 = _closure1_slot12;
+                var9.__initData = var0;
+                var0 = new Array(5);
+                var0[0] = var22;
+                var0[1] = var21;
+                var0[2] = var20;
+                var0[3] = var16;
+                var0[4] = var13;
+                var16 = var11.bind(var12)(var9, var0);
+                _closure2_slot10 = var16;
+                var0 = 10;
+                var9 = var10[var0];
+                var9 = var1.bind(var3)(var9);
+                var11 = var9.Gesture;
+                var9 = var11.Pan;
+                var12 = var9.bind(var11)();
+                var11 = var12.onStart;
+                var9 = function() { // Original name: X, environment: var2
+                    var3 = _closure2_slot6;
+                    var2 = var3.set;
+                    var4 = _closure2_slot0;
+                    var1 = var4.get;
+                    var1 = var1.bind(var4)();
+                    var1 = var2.bind(var3)(var1);
+                    var2 = _closure2_slot7;
+                    var1 = var2.set;
+                    var3 = _closure2_slot1;
+                    var0 = var3.get;
+                    var0 = var0.bind(var3)();
+                    var0 = var1.bind(var2)(var0);
+                    var0 = undefined;
+                    return var0;
+                };
+                var13 = {};
+                var13.originalX = var19;
+                var13.x = var15;
+                var13.originalY = var18;
+                var13.y = var14;
+                var9.__closure = var13;
+                var13 = 7766704092529.0;
+                var9.__workletHash = var13;
+                var13 = _closure1_slot15;
+                var9.__initData = var13;
+                var12 = var11.bind(var12)(var9);
+                var11 = var12.onUpdate;
+                var9 = function(arg0) { // Original name: v, environment: var2
+                    var0 = arg0;
+                    var4 = _closure2_slot10;
+                    var3 = _closure2_slot6;
+                    var2 = var3.get;
+                    var3 = var2.bind(var3)();
+                    var2 = var0.translationX;
+                    var3 = var3 + var2;
+                    var5 = _closure2_slot7;
+                    var2 = var5.get;
+                    var2 = var2.bind(var5)();
+                    var0 = var0.translationY;
+                    var2 = var2 + var0;
+                    var0 = undefined;
+                    var2 = var4.bind(var0)(var3, var2);
+                    var5 = var2.x;
+                    var3 = var2.y;
+                    var4 = _closure2_slot0;
+                    var2 = var4.set;
+                    var2 = var2.bind(var4)(var5);
+                    var2 = _closure2_slot1;
+                    var1 = var2.set;
+                    var1 = var1.bind(var2)(var3);
+                    return var0;
+                };
+                var13 = {};
+                var13.getClampedPosition = var16;
+                var13.originalX = var19;
+                var13.originalY = var18;
+                var13.x = var15;
+                var13.y = var14;
+                var9.__closure = var13;
+                var13 = 3428194988690.0;
+                var9.__workletHash = var13;
+                var13 = _closure1_slot14;
+                var9.__initData = var13;
+                var12 = var11.bind(var12)(var9);
+                var11 = var12.onEnd;
+                var9 = function() { // Original name: f, environment: var2
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 7;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var4 = var2.bind(var0)(var1);
+                    var2 = var4.runOnJS;
+                    var1 = _closure2_slot5;
+                    var2 = var2.bind(var4)(var1);
+                    var1 = {};
+                    var5 = _closure2_slot0;
+                    var4 = var5.get;
+                    var4 = var4.bind(var5)();
+                    var1.x = var4;
+                    var4 = _closure2_slot1;
+                    var3 = var4.get;
+                    var3 = var3.bind(var4)();
+                    var1.y = var3;
+                    var1 = var2.bind(var0)(var1);
+                    return var0;
+                };
+                var13 = {};
+                var18 = var10[var4];
+                var18 = var1.bind(var3)(var18);
+                var18 = var18.runOnJS;
+                var13.runOnJS = var18;
+                var13.onChangePosition = var17;
+                var13.x = var15;
+                var13.y = var14;
+                var9.__closure = var13;
+                var13 = 144401388839.0;
+                var9.__workletHash = var13;
+                var13 = _closure1_slot13;
+                var9.__initData = var13;
+                var11 = var11.bind(var12)(var9);
+                var9 = var10[var4];
+                var12 = var1.bind(var3)(var9);
+                var9 = var12.useAnimatedStyle;
+                var2 = function() { // Original name: R, environment: var2
+                    var2 = _closure2_slot10;
+                    var3 = _closure2_slot0;
+                    var1 = var3.get;
+                    var1 = var1.bind(var3)();
+                    var3 = _closure2_slot1;
+                    var0 = var3.get;
+                    var0 = var0.bind(var3)();
+                    var8 = undefined;
+                    var0 = var2.bind(var8)(var1, var0);
+                    var11 = var0.x;
+                    var6 = var0.y;
+                    var0 = {};
+                    var2 = {};
+                    var7 = _closure1_slot0;
+                    var9 = _closure1_slot2;
+                    var4 = 11;
+                    var1 = var9[var4];
+                    var10 = var7.bind(var8)(var1);
+                    var5 = var10.withSpring;
+                    var3 = 12;
+                    var1 = var9[var3];
+                    var1 = var7.bind(var8)(var1);
+                    var1 = var1.springUnclamped;
+                    var1 = var5.bind(var10)(var11, var1);
+                    var2.translateX = var1;
+                    var1 = new Array(2);
+                    var1[0] = var2;
+                    var2 = {};
+                    var4 = var9[var4];
+                    var5 = var7.bind(var8)(var4);
+                    var4 = var5.withSpring;
+                    var3 = var9[var3];
+                    var3 = var7.bind(var8)(var3);
+                    var3 = var3.springUnclamped;
+                    var3 = var4.bind(var5)(var6, var3);
+                    var2.translateY = var3;
+                    var1[1] = var2;
+                    var0.transform = var1;
+                    return var0;
+                };
+                var13 = {};
+                var13.getClampedPosition = var16;
+                var13.x = var15;
+                var13.y = var14;
+                var14 = 11;
+                var14 = var10[var14];
+                var14 = var1.bind(var3)(var14);
+                var14 = var14.withSpring;
+                var13.withSpring = var14;
+                var14 = 12;
+                var14 = var10[var14];
+                var14 = var1.bind(var3)(var14);
+                var14 = var14.springUnclamped;
+                var13.springUnclamped = var14;
+                var2.__closure = var13;
+                var13 = 5273315246744.0;
+                var2.__workletHash = var13;
+                var13 = _closure1_slot16;
+                var2.__initData = var13;
+                var9 = var9.bind(var12)(var2);
+                var2 = _closure1_slot7;
+                var0 = var10[var0];
+                var0 = var1.bind(var3)(var0);
+                var1 = var0.GestureDetector;
+                var0 = {};
+                var0.gesture = var11;
+                var6 = _closure1_slot7;
+                var4 = var10[var4];
+                var4 = var5.bind(var3)(var4);
+                var5 = var4.View;
+                var4 = {};
+                var10 = var8.widgetContainer;
+                var8 = new Array(2);
+                var8[0] = var10;
+                var8[1] = var9;
+                var4.style = var8;
+                var4.children = var7;
+                var4 = var6.bind(var3)(var5, var4);
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var _closure1_slot17 = var3;
+    var3 = 22;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/screen_recording/native/ScreenRecordingPip.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function() { // Original name: ScreenRecordingPipConnected, environment: var1
+        _fun100401: for (var _fun100401_ip = 0;;) switch (_fun100401_ip) {
+            case 0:
+                var2 = _closure1_slot6;
+                var4 = undefined;
+                var0 = function(arg0) { // Environment: var0
+                    var0 = arg0;
+                    var0 = var0.currentSurveyConfig;
+                    return var0;
+                };
+                var5 = var2.bind(var4)(var0);
+                var0 = null;
+                var2 = var0 == var5;
+                if (var2) {
+                    _fun100401_ip = 53;
+                    continue _fun100401
+                }
+            case 32:
+                var3 = _closure1_slot7;
+                var2 = _closure1_slot18;
+                var1 = {};
+                var1.surveyConfig = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 53:
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 27, 13028, 33, 1297, 671, 3677, 5255, 13021, 4917, 4034, 4040, 3237, 13032, 1307, 13022, 4858, 3895, 4037, 3221, 13034, 2]);

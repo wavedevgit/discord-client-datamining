@@ -1,0 +1,80 @@
+// modules/app_launcher/native/AppLauncherNativeConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var10 = require;
+    var8 = metroImportDefault;
+    var2 = exports;
+    var9 = dependencyMap;
+    var _closure1_slot0 = var10;
+    var _closure1_slot1 = var9;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var6 = {};
+    var0 = 'home';
+    var6.HOME = var0;
+    var0 = 'application_view';
+    var6.APPLICATION_VIEW = var0;
+    var0 = 'command_view';
+    var6.COMMAND_VIEW = var0;
+    var0 = 'app_list_view';
+    var6.APP_LIST_VIEW = var0;
+    var4 = {};
+    var1 = 0;
+    var4.NONE = var1;
+    var0 = 'NONE';
+    var4[var1] = var0;
+    var1 = 1;
+    var4.FIRST_REQUIRED_OPTION = var1;
+    var0 = 'FIRST_REQUIRED_OPTION';
+    var4[var1] = var0;
+    var7 = 2;
+    var4.OPTIONAL_OPTION_ADDED = var7;
+    var0 = 'OPTIONAL_OPTION_ADDED';
+    var4[var7] = var0;
+    var3 = var9[var1];
+    var0 = undefined;
+    var3 = var8.bind(var0)(var3);
+    var3 = var3.spacing;
+    var3 = var3.PX_16;
+    var1 = var9[var1];
+    var1 = var8.bind(var0)(var1);
+    var1 = var1.colors;
+    var1 = var1.BACKGROUND_BASE_LOWER;
+    var7 = var9[var7];
+    var11 = var10.bind(var0)(var7);
+    var10 = var11.fileFinishedImporting;
+    var7 = 'modules/app_launcher/native/AppLauncherNativeConstants.tsx';
+    var7 = var10.bind(var11)(var7);
+    var7 = 3;
+    var7 = var9[var7];
+    var7 = var8.bind(var0)(var7);
+    var2.APP_LAUNCHER_BUILT_IN_SECTION_ICON = var7;
+    var2.AppLauncherRouteName = var6;
+    var5 = function() { // Original name: useAppLauncherNavigation, environment: var5
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        var0 = var1.useNativeStackNavigation;
+        var0 = var0.bind(var1)();
+        return var0;
+    };
+    var2.useAppLauncherNavigation = var5;
+    var2.AppLauncherOptionAutoFocusType = var4;
+    var2.DEFAULT_CONTENT_PADDING = var3;
+    var2.SCREEN_BACKGROUND_COLOR = var1;
+    var1 = {
+        'itemVisiblePercentThreshold': 50,
+        'minimumViewTime': 1000
+    };
+    var2.FLASH_LIST_ITEM_IMPRESSION_VIEWABILITY_CONFIG = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1469, 671, 2, 1564]);

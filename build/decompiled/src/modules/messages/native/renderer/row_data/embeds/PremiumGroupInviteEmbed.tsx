@@ -1,0 +1,177 @@
+// modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.HELP_CENTER_LINK;
+    var _closure1_slot3 = var6;
+    var3 = var3.PremiumGroupInviteState;
+    var _closure1_slot4 = var3;
+    var3 = 8;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/messages/native/renderer/row_data/embeds/PremiumGroupInviteEmbed.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0, arg1, arg2, arg3) { // Original name: createPremiumGroupInviteEmbed, environment: var1
+        _fun55753: for (var _fun55753_ip = 0;;) switch (_fun55753_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.author;
+                var1 = null;
+                if (!(var1 != var2)) {
+                    _fun55753_ip = 371;
+                    continue _fun55753
+                }
+            case 18:
+                var3 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var2 = 1;
+                var2 = var6[var2];
+                var10 = undefined;
+                var5 = var3.bind(var10)(var2);
+                var4 = var5.createNativeStyleProperties;
+                var2 = {};
+                var13 = _closure1_slot1;
+                var7 = 2;
+                var8 = var6[var7];
+                var8 = var13.bind(var10)(var8);
+                var8 = var8.colors;
+                var8 = var8.MOBILE_TEXT_HEADING_PRIMARY;
+                var2.headerTextColor = var8;
+                var8 = var6[var7];
+                var8 = var13.bind(var10)(var8);
+                var8 = var8.colors;
+                var8 = var8.TEXT_DEFAULT;
+                var2.bodyTextColor = var8;
+                var8 = var6[var7];
+                var8 = var13.bind(var10)(var8);
+                var8 = var8.colors;
+                var8 = var8.TEXT_LINK;
+                var2.linkTextColor = var8;
+                var8 = var6[var7];
+                var8 = var13.bind(var10)(var8);
+                var8 = var8.colors;
+                var8 = var8.BACKGROUND_MOD_NORMAL;
+                var2.backgroundColor = var8;
+                var8 = var6[var7];
+                var8 = var13.bind(var10)(var8);
+                var8 = var8.colors;
+                var8 = var8.BLACK;
+                var2.betaPillTextColor = var8;
+                var7 = var6[var7];
+                var7 = var13.bind(var10)(var7);
+                var7 = var7.colors;
+                var7 = var7.WHITE;
+                var2.betaPillBackgroundColor = var7;
+                var4 = var4.bind(var5)(var2);
+                var2 = arg1;
+                var4 = var4.bind(var10)(var2);
+                var12 = var4.headerTextColor;
+                var2 = var4.bodyTextColor;
+                var17 = var4.linkTextColor;
+                var8 = var4.backgroundColor;
+                var5 = var4.betaPillTextColor;
+                var4 = var4.betaPillBackgroundColor;
+                var7 = 3;
+                var7 = var6[var7];
+                var11 = var3.bind(var10)(var7);
+                var9 = var11.getAssetUriForEmbed;
+                var7 = 4;
+                var7 = var6[var7];
+                var7 = var13.bind(var10)(var7);
+                var7 = var9.bind(var11)(var7);
+                var9 = var0.author;
+                var11 = var9.id;
+                var0 = 5;
+                var0 = var6[var0];
+                var6 = var3.bind(var10)(var0);
+                var3 = var6.getPremiumGroupInviteEmbedText;
+                var0 = {};
+                var0.sender = var9;
+                var9 = arg3;
+                var0.channel = var9;
+                var9 = arg2;
+                var9 = var9 === var11;
+                var0.isSender = var9;
+                var9 = _closure1_slot4;
+                var9 = var9.UNKNOWN;
+                var0.inviteState = var9;
+                var0 = var3.bind(var6)(var0);
+                if (!(var1 == var0)) {
+                    _fun55753_ip = 375;
+                    continue _fun55753
+                }
+            case 371:
+                var1 = undefined;
+                return var1;
+            case 375:
+                var13 = var0.header;
+                var3 = var0.body;
+                var9 = _closure1_slot0;
+                var11 = _closure1_slot2;
+                var6 = 6;
+                var0 = var11[var6];
+                var0 = var9.bind(var10)(var0);
+                var15 = var0.intl;
+                var14 = var15.formatToParts;
+                var1 = _closure1_slot1;
+                var0 = 7;
+                var0 = var11[var0];
+                var0 = var1.bind(var10)(var0);
+                var1 = var0["9VTnfI"];
+                var0 = {};
+                var16 = {};
+                var19 = 'bindOpenUrl';
+                var16.action = var19;
+                var18 = _closure1_slot3;
+                var16.url = var18;
+                var16.linkColor = var17;
+                var0.learnMoreLinkOnClick = var16;
+                var1 = var14.bind(var15)(var1, var0);
+                var0 = {};
+                var0.headerText = var13;
+                var0.headerColor = var12;
+                var0.backgroundColor = var8;
+                var0.borderColor = var8;
+                var0.headerImageUrl = var7;
+                var7 = var11[var6];
+                var7 = var9.bind(var10)(var7);
+                var8 = var7.intl;
+                var7 = var8.string;
+                var6 = var11[var6];
+                var6 = var9.bind(var10)(var6);
+                var6 = var6.t;
+                var6 = var6.oW0eUd;
+                var7 = var7.bind(var8)(var6);
+                var6 = var7.toUpperCase;
+                var6 = var6.bind(var7)();
+                var0.betaPillText = var6;
+                var0.betaPillTextColor = var5;
+                var0.betaPillBackgroundColor = var4;
+                var0.bodyText = var3;
+                var0.bodyTextColor = var2;
+                var0.learnMoreLink = var1;
+                return var0;
+        }
+    };
+    var2.createPremiumGroupInviteEmbed = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3083, 1297, 671, 6603, 6728, 6729, 1234, 2395, 2]);

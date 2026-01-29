@@ -1,0 +1,37 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = require;
+    var4 = dependencyMap;
+    var2 = {};
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var2.shadowColor = var1;
+    var1 = 1;
+    var5 = var4[var1];
+    var7 = var3.bind(var0)(var5);
+    var6 = var7.shape;
+    var5 = {};
+    var8 = var4[var1];
+    var8 = var3.bind(var0)(var8);
+    var8 = var8.number;
+    var5.width = var8;
+    var8 = var4[var1];
+    var8 = var3.bind(var0)(var8);
+    var8 = var8.number;
+    var5.height = var8;
+    var5 = var6.bind(var7)(var5);
+    var2.shadowOffset = var5;
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var5 = var5.number;
+    var2.shadowOpacity = var5;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.number;
+    var2.shadowRadius = var1;
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [7664, 3179]);

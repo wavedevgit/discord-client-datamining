@@ -1,0 +1,283 @@
+// modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var10;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {};
+    var11 = 4;
+    var8.marginVertical = var11;
+    var3.actionBarCTAContainer = var8;
+    var8 = {};
+    var9 = 3;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.WHITE;
+    var8.tintColor = var12;
+    var3.imageStyle = var8;
+    var8 = {
+        'tintColor': null,
+        'width': 20,
+        'height': 20
+    };
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.WHITE;
+    var8.tintColor = var12;
+    var3.iconStyle = var8;
+    var8 = {};
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_BRAND;
+    var8.backgroundColor = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.lg;
+    var8.borderRadius = var12;
+    var8.padding = var11;
+    var3.iconContainerStyle = var8;
+    var8 = {};
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.unsafe_rawColors;
+    var9 = var9.GREEN_360;
+    var8.backgroundColor = var9;
+    var3.greenIcon = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 11;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/guild_scheduled_events/native/components/GuildScheduledEventPrompts.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function(arg0) { // Original name: ScheduleEventPrompt, environment: var1
+        _fun65149: for (var _fun65149_ip = 0;;) switch (_fun65149_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.guild;
+                var _closure2_slot0 = var1;
+                var2 = var0.channel;
+                var _closure2_slot1 = var2;
+                var5 = var0.isLive;
+                var0 = _closure1_slot4;
+                var4 = undefined;
+                var6 = var0.bind(var4)();
+                var1 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var0 = 4;
+                var0 = var3[var0];
+                var1 = var1.bind(var4)(var0);
+                var0 = var1.useManageResourcePermissions;
+                var0 = var0.bind(var1)(var2);
+                var1 = var0.canCreateGuildEvent;
+                var0 = null;
+                if (!var1) {
+                    _fun65149_ip = 294;
+                    continue _fun65149
+                }
+            case 87:
+                var3 = _closure1_slot3;
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var1 = 5;
+                var1 = var9[var1];
+                var1 = var8.bind(var4)(var1);
+                var2 = var1.FormCTA;
+                var1 = {};
+                var11 = var6.actionBarCTAContainer;
+                var1.style = var11;
+                var10 = function() { // Original name: onPress, environment: var10
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 6;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var4 = var2.bind(var0)(var1);
+                    var3 = var4.openCreateOrEditGuildEventModal;
+                    var2 = _closure2_slot0;
+                    var1 = {};
+                    var5 = _closure2_slot1;
+                    var1.channel = var5;
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var1.onPress = var10;
+                var10 = _closure1_slot1;
+                var7 = 7;
+                var7 = var9[var7];
+                var7 = var10.bind(var4)(var7);
+                var1.iconSource = var7;
+                var7 = var6.iconStyle;
+                var1.iconStyle = var7;
+                var6 = var6.iconContainerStyle;
+                var1.iconContainerStyle = var6;
+                var1.completed = var5;
+                var5 = 8;
+                var6 = var9[var5];
+                var6 = var8.bind(var4)(var6);
+                var10 = var6.intl;
+                var7 = var10.string;
+                var6 = var9[var5];
+                var6 = var8.bind(var4)(var6);
+                var6 = var6.t;
+                var6 = var6["60lJ0C"];
+                var6 = var7.bind(var10)(var6);
+                var1.title = var6;
+                var6 = var9[var5];
+                var6 = var8.bind(var4)(var6);
+                var7 = var6.intl;
+                var6 = var7.string;
+                var5 = var9[var5];
+                var5 = var8.bind(var4)(var5);
+                var5 = var5.t;
+                var5 = var5["EYn7/y"];
+                var5 = var6.bind(var7)(var5);
+                var1.subtitle = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 294:
+                return var0;
+        }
+    };
+    var2.ScheduleEventPrompt = var3;
+    var1 = function(arg0) { // Original name: StartEventPrompt, environment: var1
+        _fun65151: for (var _fun65151_ip = 0;;) switch (_fun65151_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.event;
+                var _closure2_slot0 = var1;
+                var2 = var0.recurrenceId;
+                var _closure2_slot1 = var2;
+                var3 = var0.channel;
+                var5 = var0.isLive;
+                var0 = _closure1_slot4;
+                var4 = undefined;
+                var7 = var0.bind(var4)();
+                var11 = var1.name;
+                var12 = var1.scheduled_start_time;
+                var2 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var0 = 4;
+                var0 = var9[var0];
+                var2 = var2.bind(var4)(var0);
+                var0 = var2.useManageResourcePermissions;
+                var0 = var0.bind(var2)(var3);
+                var0 = var0.canManageGuildEvent;
+                var1 = var0.bind(var4)(var1);
+                var0 = null;
+                if (!var1) {
+                    _fun65151_ip = 393;
+                    continue _fun65151
+                }
+            case 110:
+                var3 = _closure1_slot3;
+                var10 = _closure1_slot0;
+                var14 = _closure1_slot2;
+                var1 = 5;
+                var1 = var14[var1];
+                var1 = var10.bind(var4)(var1);
+                var2 = var1.FormCTA;
+                var1 = {};
+                var9 = var7.actionBarCTAContainer;
+                var1.style = var9;
+                var8 = function() { // Original name: onPress, environment: var8
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot2;
+                    var0 = 6;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var4 = var2.bind(var0)(var1);
+                    var3 = var4.openStartGuildEventModal;
+                    var2 = _closure2_slot0;
+                    var1 = _closure2_slot1;
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var1.onPress = var8;
+                var13 = _closure1_slot1;
+                var6 = 7;
+                var6 = var14[var6];
+                var6 = var13.bind(var4)(var6);
+                var1.iconSource = var6;
+                var6 = var7.iconStyle;
+                var1.iconStyle = var6;
+                var8 = var7.iconContainerStyle;
+                var6 = new Array(2);
+                var6[0] = var8;
+                var7 = var7.greenIcon;
+                var6[1] = var7;
+                var1.iconContainerStyle = var6;
+                var1.completed = var5;
+                var5 = 8;
+                var6 = var14[var5];
+                var6 = var10.bind(var4)(var6);
+                var9 = var6.intl;
+                var8 = var9.formatToPlainString;
+                var6 = var14[var5];
+                var6 = var10.bind(var4)(var6);
+                var6 = var6.t;
+                var7 = var6["1vGXqM"];
+                var6 = {};
+                var6.eventName = var11;
+                var6 = var8.bind(var9)(var7, var6);
+                var1.title = var6;
+                var6 = var14[var5];
+                var6 = var10.bind(var4)(var6);
+                var8 = var6.intl;
+                var7 = var8.formatToPlainString;
+                var5 = var14[var5];
+                var5 = var10.bind(var4)(var5);
+                var5 = var5.t;
+                var6 = var5.PTebCR;
+                var5 = {};
+                var9 = 9;
+                var9 = var14[var9];
+                var11 = var10.bind(var4)(var9);
+                var10 = var11.calendarFormat;
+                var9 = 10;
+                var9 = var14[var9];
+                var9 = var13.bind(var4)(var9);
+                var9 = var9.bind(var4)(var12);
+                var9 = var10.bind(var11)(var9);
+                var5.startTime = var9;
+                var5 = var7.bind(var8)(var6, var5);
+                var1.subtitle = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 393:
+                return var0;
+        }
+    };
+    var2.StartEventPrompt = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 671, 8049, 5335, 8055, 8137, 1234, 3091, 3004, 2]);

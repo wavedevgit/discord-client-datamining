@@ -1,0 +1,212 @@
+// modules/message_request/hooks/useListHasSingleMessageRequest.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var7 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var7);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 7;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/message_request/hooks/useListHasSingleMessageRequest.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function() { // Original name: useListHasSingleMessageRequest, environment: var1
+        _fun109900: for (var _fun109900_ip = 0;;) switch (_fun109900_ip) {
+            case 0:
+                var7 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var1 = 3;
+                var1 = var5[var1];
+                var3 = undefined;
+                var2 = var7.bind(var3)(var1);
+                var1 = var2.useMessageRequestsCount;
+                var2 = var1.bind(var2)();
+                var _closure2_slot0 = var2;
+                var8 = _closure1_slot3;
+                var1 = var8.useRef;
+                var1 = var1.bind(var8)(var2);
+                var _closure2_slot1 = var1;
+                var6 = 4;
+                var6 = var5[var6];
+                var10 = var7.bind(var3)(var6);
+                var9 = var10.useStateFromStores;
+                var6 = _closure1_slot4;
+                var7 = new Array(1);
+                var7[0] = var6;
+                var6 = function() { // Environment: var4
+                    var1 = _closure1_slot4;
+                    var0 = var1.isReady;
+                    var0 = var0.bind(var1)();
+                    return var0;
+                };
+                var9 = var9.bind(var10)(var7, var6);
+                var _closure2_slot2 = var9;
+                var6 = var8.useRef;
+                var6 = var6.bind(var8)(var9);
+                var _closure2_slot3 = var6;
+                var7 = var8.useEffect;
+                var6 = new Array(2);
+                var6[0] = var9;
+                var6[1] = var2;
+                var4 = function() { // Environment: var4
+                    _fun109902: for (var _fun109902_ip = 0;;) switch (_fun109902_ip) {
+                        case 0:
+                            var1 = _closure2_slot2;
+                            if (!var1) {
+                                _fun109902_ip = 22;
+                                continue _fun109902
+                            }
+                        case 10:
+                            var2 = _closure2_slot3;
+                            var2 = var2.current;
+                            var1 = !var2;
+                        case 22:
+                            if (!var1) {
+                                _fun109902_ip = 51;
+                                continue _fun109902
+                            }
+                        case 25:
+                            var2 = _closure2_slot3;
+                            var1 = true;
+                            var2.current = var1;
+                            var1 = _closure2_slot1;
+                            var0 = _closure2_slot0;
+                            var1.current = var0;
+                        case 51:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var4 = var7.bind(var8)(var4, var6);
+                var4 = _closure1_slot1;
+                var0 = 5;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.bind(var3)(var1);
+                var1 = 1;
+                var0 = var0 <= var1;
+                if (!var0) {
+                    _fun109900_ip = 184;
+                    continue _fun109900
+                }
+            case 180:
+                var0 = var1 === var2;
+            case 184:
+                return var0;
+        }
+    };
+    var2.useListHasSingleMessageRequest = var3;
+    var1 = function() { // Original name: useListHasSingleSpamMessageRequest, environment: var1
+        _fun109903: for (var _fun109903_ip = 0;;) switch (_fun109903_ip) {
+            case 0:
+                var7 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var1 = 6;
+                var1 = var5[var1];
+                var3 = undefined;
+                var2 = var7.bind(var3)(var1);
+                var1 = var2.useSpamMessageRequestCount;
+                var2 = var1.bind(var2)();
+                var _closure2_slot0 = var2;
+                var8 = _closure1_slot3;
+                var1 = var8.useRef;
+                var1 = var1.bind(var8)(var2);
+                var _closure2_slot1 = var1;
+                var6 = 4;
+                var6 = var5[var6];
+                var10 = var7.bind(var3)(var6);
+                var9 = var10.useStateFromStores;
+                var6 = _closure1_slot5;
+                var7 = new Array(1);
+                var7[0] = var6;
+                var6 = function() { // Environment: var4
+                    var1 = _closure1_slot5;
+                    var0 = var1.isReady;
+                    var0 = var0.bind(var1)();
+                    return var0;
+                };
+                var9 = var9.bind(var10)(var7, var6);
+                var _closure2_slot2 = var9;
+                var6 = var8.useRef;
+                var6 = var6.bind(var8)(var9);
+                var _closure2_slot3 = var6;
+                var7 = var8.useEffect;
+                var6 = new Array(2);
+                var6[0] = var9;
+                var6[1] = var2;
+                var4 = function() { // Environment: var4
+                    _fun109905: for (var _fun109905_ip = 0;;) switch (_fun109905_ip) {
+                        case 0:
+                            var1 = _closure2_slot2;
+                            if (!var1) {
+                                _fun109905_ip = 22;
+                                continue _fun109905
+                            }
+                        case 10:
+                            var2 = _closure2_slot3;
+                            var2 = var2.current;
+                            var1 = !var2;
+                        case 22:
+                            if (!var1) {
+                                _fun109905_ip = 51;
+                                continue _fun109905
+                            }
+                        case 25:
+                            var2 = _closure2_slot3;
+                            var1 = true;
+                            var2.current = var1;
+                            var1 = _closure2_slot1;
+                            var0 = _closure2_slot0;
+                            var1.current = var0;
+                        case 51:
+                            var0 = undefined;
+                            return var0;
+                    }
+                };
+                var4 = var7.bind(var8)(var4, var6);
+                var4 = _closure1_slot1;
+                var0 = 5;
+                var0 = var5[var0];
+                var0 = var4.bind(var3)(var0);
+                var0 = var0.bind(var3)(var1);
+                var1 = 1;
+                var0 = var0 <= var1;
+                if (!var0) {
+                    _fun109903_ip = 184;
+                    continue _fun109903
+                }
+            case 180:
+                var0 = var1 === var2;
+            case 184:
+                return var0;
+        }
+    };
+    var2.useListHasSingleSpamMessageRequest = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 3918, 3923, 14093, 566, 4691, 14094, 2]);

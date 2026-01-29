@@ -1,0 +1,112 @@
+// modules/gplay/native/GPlayAnalyticsStore.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var4 = {};
+    var1 = true;
+    var4.value = var1;
+    var1 = '__esModule';
+    var1 = var7.bind(var8)(var2, var1, var4);
+    var4 = var0.Object;
+    var1 = var4.freeze;
+    var0 = {};
+    var7 = {};
+    var0.analyticsByProductId = var7;
+    var0 = var1.bind(var4)(var0);
+    var _closure1_slot2 = var0;
+    var0 = 0;
+    var1 = var6[var0];
+    var0 = undefined;
+    var7 = var5.bind(var0)(var1);
+    var4 = var7.create;
+    var1 = function() { // Environment: var3
+        var0 = _closure1_slot2;
+        return var0;
+    };
+    var1 = var4.bind(var7)(var1);
+    var _closure1_slot3 = var1;
+    var4 = 2;
+    var4 = var6[var4];
+    var6 = var5.bind(var0)(var4);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/gplay/native/GPlayAnalyticsStore.tsx';
+    var4 = var5.bind(var6)(var4);
+    var4 = function(arg0, arg1) { // Environment: var3
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var0 = arg1;
+        var _closure2_slot1 = var0;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot3;
+            var1 = var2.setState;
+            var0 = function(arg0) { // Environment: var0
+                var0 = {};
+                var1 = {};
+                var2 = arg0;
+                var4 = var2.analyticsByProductId;
+                var5 = var1;
+                var2 = copyDataProperties(var5, var4);
+                var3 = _closure2_slot0;
+                var2 = _closure2_slot1;
+                var1[var3] = var2;
+                var0.analyticsByProductId = var1;
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setGPlayAnalytics = var4;
+    var3 = function(arg0) { // Environment: var3
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot3;
+            var1 = var2.setState;
+            var0 = function(arg0) { // Environment: var0
+                var1 = {};
+                var0 = arg0;
+                var2 = var0.analyticsByProductId;
+                var3 = var1;
+                var0 = copyDataProperties(var3, var2);
+                var0 = _closure2_slot0;
+                var0 = delete var1[var0];
+                var0 = {};
+                var0.analyticsByProductId = var1;
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.deleteGPlayAnalytics = var3;
+    var2.useGPlayAnalyticsStore = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 802, 2]);

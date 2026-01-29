@@ -1,0 +1,41 @@
+// modules/application_commands/ApplicationCommandQueryTypes.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var0 = 'none';
+    var3.NONE = var0;
+    var0 = 'application_only';
+    var3.APPLICATION_ONLY = var0;
+    var0 = 'command_only';
+    var3.COMMAND_ONLY = var0;
+    var0 = 'command_or_application';
+    var3.COMMAND_OR_APPLICATION = var0;
+    var1 = {};
+    var0 = 'allow';
+    var1.ALLOW = var0;
+    var0 = 'only_text';
+    var1.ONLY_TEXT = var0;
+    var0 = 'deny';
+    var1.DENY = var0;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/application_commands/ApplicationCommandQueryTypes.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.ScoreMethod = var3;
+    var2.BuiltInCommandFilter = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

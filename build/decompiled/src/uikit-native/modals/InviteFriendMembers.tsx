@@ -1,0 +1,291 @@
+// uikit-native/modals/InviteFriendMembers.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var11 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var11;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var9 = 0;
+    var6 = var5[var9];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var11.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot6 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot7 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {
+        'flexDirection': 'row',
+        'alignItems': 'center',
+        'justifyContent': 'center',
+        'marginTop': 8,
+        'marginBottom': 8,
+        'maxWidth': '90%',
+        'flex': 1
+    };
+    var3.container = var8;
+    var8 = {
+        'flexDirection': 'row',
+        'marginRight': 8
+    };
+    var3.avatarStack = var8;
+    var8 = {
+        'position': 'relative',
+        'borderRadius': null,
+        'borderWidth': 2,
+        'borderColor': null,
+        'overflow': 'hidden',
+        'marginLeft': 4294967288
+    };
+    var10 = 5;
+    var12 = var5[var10];
+    var12 = var11.bind(var0)(var12);
+    var12 = var12.radii;
+    var12 = var12.round;
+    var8.borderRadius = var12;
+    var10 = var5[var10];
+    var10 = var11.bind(var0)(var10);
+    var10 = var10.colors;
+    var10 = var10.BACKGROUND_SURFACE_HIGH;
+    var8.borderColor = var10;
+    var3.avatarWrapper = var8;
+    var8 = {};
+    var8.marginLeft = var9;
+    var3.avatarWrapperFirst = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot8 = var3;
+    var3 = new Array(0);
+    var _closure1_slot9 = var3;
+    var3 = 9;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'uikit-native/modals/InviteFriendMembers.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: InviteFriendMembers, environment: var1
+        _fun80229: for (var _fun80229_ip = 0;;) switch (_fun80229_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.friendMemberIds;
+                var _closure2_slot0 = var1;
+                var0 = _closure1_slot8;
+                var3 = undefined;
+                var9 = var0.bind(var3)();
+                var _closure2_slot1 = var9;
+                var7 = _closure1_slot3;
+                var4 = var7.useMemo;
+                var2 = new Array(1);
+                var2[0] = var1;
+                var0 = function() { // Environment: var6
+                    _fun80230: for (var _fun80230_ip = 0;;) switch (_fun80230_ip) {
+                        case 0:
+                            var3 = _closure2_slot0;
+                            var0 = null;
+                            if (!(var0 == var3)) {
+                                _fun80230_ip = 24;
+                                continue _fun80230
+                            }
+                        case 15:
+                            var0 = _closure1_slot9;
+                            _fun80230_ip = 78;
+                            continue _fun80230;
+                        case 24:
+                            var4 = _closure2_slot0;
+                            var3 = var4.map;
+                            var2 = function(arg0) { // Environment: var1
+                                var2 = _closure1_slot5;
+                                var1 = var2.getUser;
+                                var0 = arg0;
+                                var0 = var1.bind(var2)(var0);
+                                return var0;
+                            };
+                            var3 = var3.bind(var4)(var2);
+                            var2 = var3.filter;
+                            var1 = function(arg0) { // Environment: var1
+                                var1 = null;
+                                var0 = arg0;
+                                var0 = var1 != var0;
+                                return var0;
+                            };
+                            var4 = var2.bind(var3)(var1);
+                            var3 = var4.slice;
+                            var2 = 0;
+                            var1 = 3;
+                            var0 = var3.bind(var4)(var2, var1);
+                        case 78:
+                            return var0;
+                    }
+                };
+                var10 = var4.bind(var7)(var0, var2);
+                var2 = var10.length;
+                var0 = 0;
+                if (!(var0 !== var2)) {
+                    _fun80229_ip = 354;
+                    continue _fun80229
+                }
+            case 76:
+                var7 = null;
+                var2 = var7 != var1;
+                var12 = -1;
+                if (!var2) {
+                    _fun80229_ip = 103;
+                    continue _fun80229
+                }
+            case 91:
+                var2 = var1.length;
+                var1 = 1;
+                var12 = var2 - var1;
+            case 103:
+                var8 = var10[var0];
+                var0 = 1;
+                var11 = var10[var0];
+                var1 = _closure1_slot0;
+                var13 = _closure1_slot2;
+                var0 = 6;
+                var2 = var13[var0];
+                var2 = var1.bind(var3)(var2);
+                var4 = var2.intl;
+                var2 = var4.formatToPlainString;
+                var0 = var13[var0];
+                var0 = var1.bind(var3)(var0);
+                var0 = var0.t;
+                var1 = var0["5NHEPu"];
+                var0 = {};
+                var0.count = var12;
+                var8 = var8.username;
+                var0.username = var8;
+                var12 = var7 == var11;
+                var8 = undefined;
+                if (var12) {
+                    _fun80229_ip = 196;
+                    continue _fun80229
+                }
+            case 191:
+                var8 = var11.username;
+            case 196:
+                var11 = var7 != var8;
+                var7 = undefined;
+                if (!var11) {
+                    _fun80229_ip = 208;
+                    continue _fun80229
+                }
+            case 205:
+                var7 = var8;
+            case 208:
+                var0.username2 = var7;
+                var8 = var2.bind(var4)(var1, var0);
+                var2 = _closure1_slot7;
+                var1 = _closure1_slot4;
+                var0 = {};
+                var4 = var9.container;
+                var0.style = var4;
+                var7 = _closure1_slot6;
+                var4 = {};
+                var9 = var9.avatarStack;
+                var4.style = var9;
+                var9 = var10.map;
+                var6 = function(arg0, arg1) { // Environment: var6
+                    _fun80233: for (var _fun80233_ip = 0;;) switch (_fun80233_ip) {
+                        case 0:
+                            var0 = arg0;
+                            var4 = _closure1_slot6;
+                            var3 = _closure1_slot4;
+                            var2 = {};
+                            var1 = _closure2_slot1;
+                            var5 = var1.avatarWrapper;
+                            var1 = new Array(2);
+                            var1[0] = var5;
+                            var7 = 0;
+                            var5 = arg1;
+                            var5 = var7 === var5;
+                            if (!var5) {
+                                _fun80233_ip = 59;
+                                continue _fun80233
+                            }
+                        case 49:
+                            var6 = _closure2_slot1;
+                            var5 = var6.avatarWrapperFirst;
+                        case 59:
+                            var1[1] = var5;
+                            var2.style = var1;
+                            var7 = _closure1_slot6;
+                            var6 = _closure1_slot1;
+                            var10 = _closure1_slot2;
+                            var8 = 7;
+                            var5 = var10[var8];
+                            var1 = undefined;
+                            var6 = var6.bind(var1)(var5);
+                            var5 = {};
+                            var5.user = var0;
+                            var9 = _closure1_slot0;
+                            var8 = var10[var8];
+                            var8 = var9.bind(var1)(var8);
+                            var8 = var8.AvatarSizes;
+                            var8 = var8.SIZE_16;
+                            var5.size = var8;
+                            var5.guildId = var1;
+                            var5 = var7.bind(var1)(var6, var5);
+                            var2.children = var5;
+                            var0 = var0.id;
+                            var0 = var4.bind(var1)(var3, var2, var0);
+                            return var0;
+                    }
+                };
+                var6 = var9.bind(var10)(var6);
+                var4.children = var6;
+                var6 = var7.bind(var3)(var1, var4);
+                var4 = new Array(2);
+                var4[0] = var6;
+                var6 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var5 = 8;
+                var5 = var9[var5];
+                var5 = var6.bind(var3)(var5);
+                var6 = var5.Text;
+                var5 = {
+                    'variant': 'text-sm/medium',
+                    'color': 'text-default'
+                };
+                var5.children = var8;
+                var5 = var7.bind(var3)(var6, var5);
+                var4[1] = var5;
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+            case 354:
+                var0 = null;
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 1613, 33, 1297, 671, 1234, 5409, 3895, 2]);

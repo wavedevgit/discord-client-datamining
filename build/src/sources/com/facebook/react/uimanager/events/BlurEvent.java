@@ -1,0 +1,53 @@
+package com.facebook.react.uimanager.events;
+
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.WritableMap;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \r2\b\u0012\u0004\u0012\u00020\u00000\u0001:\u0001\rB\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\b\u0010\u0007\u001a\u00020\bH\u0016J\b\u0010\t\u001a\u00020\nH\u0016J\b\u0010\u000b\u001a\u00020\fH\u0014¨\u0006\u000e"}, d2 = {"Lcom/facebook/react/uimanager/events/BlurEvent;", "Lcom/facebook/react/uimanager/events/Event;", "surfaceId", "", "viewId", "<init>", "(II)V", "getEventName", "", "canCoalesce", "", "getEventData", "Lcom/facebook/react/bridge/WritableMap;", "Companion", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@SourceDebugExtension({"SMAP\nBlurEvent.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BlurEvent.kt\ncom/facebook/react/uimanager/events/BlurEvent\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,28:1\n1#2:29\n*E\n"})
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class BlurEvent extends Event<BlurEvent> {
+    @NotNull
+    public static final Companion Companion = new Companion(null);
+    @NotNull
+    public static final String EVENT_NAME = "topBlur";
+
+    @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\b\u0080\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003R\u000e\u0010\u0004\u001a\u00020\u0005X\u0080T¢\u0006\u0002\n\u0000¨\u0006\u0006"}, d2 = {"Lcom/facebook/react/uimanager/events/BlurEvent$Companion;", "", "<init>", "()V", "EVENT_NAME", "", "ReactAndroid_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+    }
+
+    public BlurEvent(int i10, int i11) {
+        super(i10, i11);
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    public boolean canCoalesce() {
+        return false;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    @NotNull
+    protected WritableMap getEventData() {
+        WritableMap createMap = Arguments.createMap();
+        Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
+        createMap.putInt("target", getViewTag());
+        return createMap;
+    }
+
+    @Override // com.facebook.react.uimanager.events.Event
+    @NotNull
+    public String getEventName() {
+        return EVENT_NAME;
+    }
+}

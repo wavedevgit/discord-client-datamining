@@ -1,0 +1,41 @@
+// ../discord_common/js/shared/shared-constants/QuestConsoleStartError.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var0 = 'no_game_online';
+    var1.NO_GAME_ONLINE = var0;
+    var0 = 'no_game_offline';
+    var1.NO_GAME_OFFLINE = var0;
+    var0 = 'no_game_unknown';
+    var1.NO_GAME_UNKNOWN = var0;
+    var0 = 'no_game_cloacked';
+    var1.NO_GAME_CLOAKED = var0;
+    var0 = 'locked_account';
+    var1.LOCKED_ACCOUNT = var0;
+    var0 = 'child_account';
+    var1.CHILD_ACCOUNT = var0;
+    var0 = 'expired_credential';
+    var1.EXPIRED_CREDENTIAL = var0;
+    var0 = 'provider_unavailable';
+    var1.PROVIDER_UNAVAILABLE = var0;
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = '../discord_common/js/shared/shared-constants/QuestConsoleStartError.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.QuestConsoleStartError = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

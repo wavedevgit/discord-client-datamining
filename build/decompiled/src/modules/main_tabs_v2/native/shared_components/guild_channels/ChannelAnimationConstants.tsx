@@ -1,0 +1,134 @@
+// modules/main_tabs_v2/native/shared_components/guild_channels/ChannelAnimationConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
+    var2 = exports;
+    var7 = dependencyMap;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var7;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var4 = {
+        'damping': 35,
+        'stiffness': 275,
+        'mass': 1,
+        'overshootClamping': true,
+        'restSpeedThreshold': 0.001,
+        'restDisplacementThreshold': 0.001
+    };
+    var5 = 1;
+    var _closure1_slot2 = var4;
+    var8 = {};
+    var0 = 'function ChannelAnimationConstantsTsx1(){const{withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;return{initialValues:{transform:[{scale:0}],opacity:0},animations:{transform:[{scale:withSpring(1,CHANNEL_SPRING_CONFIG)}],opacity:withSpring(1,CHANNEL_SPRING_CONFIG)}};}';
+    var8.code = var0;
+    var3 = function() { // Original name: n, environment: var1
+        var0 = {};
+        var1 = {};
+        var3 = {};
+        var7 = 0;
+        var3.scale = var7;
+        var2 = new Array(1);
+        var2[0] = var3;
+        var1.transform = var2;
+        var1.opacity = var7;
+        var0.initialValues = var1;
+        var1 = {};
+        var9 = {};
+        var6 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var5 = var2[var7];
+        var3 = undefined;
+        var10 = var6.bind(var3)(var5);
+        var8 = var10.withSpring;
+        var5 = _closure1_slot2;
+        var4 = 1;
+        var8 = var8.bind(var10)(var4, var5);
+        var9.scale = var8;
+        var8 = new Array(1);
+        var8[0] = var9;
+        var1.transform = var8;
+        var2 = var2[var7];
+        var3 = var6.bind(var3)(var2);
+        var2 = var3.withSpring;
+        var2 = var2.bind(var3)(var4, var5);
+        var1.opacity = var2;
+        var0.animations = var1;
+        return var0;
+    };
+    var9 = {};
+    var10 = 0;
+    var11 = var7[var10];
+    var0 = undefined;
+    var11 = var6.bind(var0)(var11);
+    var11 = var11.withSpring;
+    var9.withSpring = var11;
+    var9.CHANNEL_SPRING_CONFIG = var4;
+    var3.__closure = var9;
+    var9 = 5885186288311.0;
+    var3.__workletHash = var9;
+    var3.__initData = var8;
+    var8 = {};
+    var9 = 'function ChannelAnimationConstantsTsx2(){const{withSpring,CHANNEL_SPRING_CONFIG}=this.__closure;return{initialValues:{transform:[{scale:1}],opacity:1},animations:{transform:[{scale:withSpring(0,CHANNEL_SPRING_CONFIG)}],opacity:withSpring(0,CHANNEL_SPRING_CONFIG)}};}';
+    var8.code = var9;
+    var1 = function() { // Original name: t, environment: var1
+        var0 = {};
+        var1 = {};
+        var4 = {};
+        var2 = 1;
+        var4.scale = var2;
+        var3 = new Array(1);
+        var3[0] = var4;
+        var1.transform = var3;
+        var1.opacity = var2;
+        var0.initialValues = var1;
+        var1 = {};
+        var8 = {};
+        var6 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var5 = 0;
+        var7 = var2[var5];
+        var3 = undefined;
+        var9 = var6.bind(var3)(var7);
+        var7 = var9.withSpring;
+        var4 = _closure1_slot2;
+        var7 = var7.bind(var9)(var5, var4);
+        var8.scale = var7;
+        var7 = new Array(1);
+        var7[0] = var8;
+        var1.transform = var7;
+        var2 = var2[var5];
+        var3 = var6.bind(var3)(var2);
+        var2 = var3.withSpring;
+        var2 = var2.bind(var3)(var5, var4);
+        var1.opacity = var2;
+        var0.animations = var1;
+        return var0;
+    };
+    var9 = {};
+    var10 = var7[var10];
+    var10 = var6.bind(var0)(var10);
+    var10 = var10.withSpring;
+    var9.withSpring = var10;
+    var9.CHANNEL_SPRING_CONFIG = var4;
+    var1.__closure = var9;
+    var9 = 1746051409364.0;
+    var1.__workletHash = var9;
+    var1.__initData = var8;
+    var5 = var7[var5];
+    var7 = var6.bind(var0)(var5);
+    var6 = var7.fileFinishedImporting;
+    var5 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelAnimationConstants.tsx';
+    var5 = var6.bind(var7)(var5);
+    var5 = 350;
+    var2.MESSAGE_PREVIEW_DELAY = var5;
+    var2.CHANNEL_SPRING_CONFIG = var4;
+    var2.TYPING_ENTERING = var3;
+    var2.TYPING_EXITING = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4034, 2]);

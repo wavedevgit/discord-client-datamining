@@ -1,0 +1,43 @@
+// ../discord_common/js/packages/rtn-codegen/js/NativeBrowserManagerModule.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var4 = 0;
+    var1 = var6[var4];
+    var0 = undefined;
+    var1 = var5.bind(var0)(var1);
+    var8 = var1.TurboModuleRegistry;
+    var1 = {};
+    var1.SAFARI = var4;
+    var3 = 'SAFARI';
+    var1[var4] = var3;
+    var4 = 1;
+    var1.IN_APP = var4;
+    var3 = 'IN_APP';
+    var1[var4] = var3;
+    var7 = 2;
+    var1.CHROME = var7;
+    var3 = 'CHROME';
+    var1[var7] = var3;
+    var7 = var8.getEnforcing;
+    var3 = 'NativeBrowserManagerModule';
+    var3 = var7.bind(var8)(var3);
+    var4 = var6[var4];
+    var6 = var5.bind(var0)(var4);
+    var5 = var6.fileFinishedImporting;
+    var4 = '../discord_common/js/packages/rtn-codegen/js/NativeBrowserManagerModule.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.default = var3;
+    var2.BrowserType = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 2]);

@@ -1,0 +1,5 @@
+package la;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public interface b0 {
+    int a(Object obj);
+}

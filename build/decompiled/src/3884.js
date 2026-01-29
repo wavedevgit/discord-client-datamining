@@ -1,0 +1,34 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = {};
+    var3 = 0;
+    var0.REGISTER_HOST = var3;
+    var2 = 'REGISTER_HOST';
+    var0[var3] = var2;
+    var3 = 1;
+    var0.DEREGISTER_HOST = var3;
+    var2 = 'DEREGISTER_HOST';
+    var0[var3] = var2;
+    var3 = 2;
+    var0.ADD_UPDATE_PORTAL = var3;
+    var2 = 'ADD_UPDATE_PORTAL';
+    var0[var3] = var2;
+    var3 = 3;
+    var0.REMOVE_PORTAL = var3;
+    var2 = 'REMOVE_PORTAL';
+    var0[var3] = var2;
+    var1.ACTIONS = var0;
+    var0 = {};
+    var1.INITIAL_STATE = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

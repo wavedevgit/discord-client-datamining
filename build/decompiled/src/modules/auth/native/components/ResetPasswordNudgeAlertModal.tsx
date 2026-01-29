@@ -1,0 +1,292 @@
+// modules/auth/native/components/ResetPasswordNudgeAlertModal.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var10;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.AnalyticEvents;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot5 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot6 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {
+        'width': 64,
+        'height': 64,
+        'alignItems': 'center',
+        'justifyContent': 'center',
+        'borderRadius': null,
+        'backgroundColor': null,
+        'alignSelf': 'center'
+    };
+    var9 = 4;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var8.borderRadius = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.BACKGROUND_SURFACE_HIGH;
+    var8.backgroundColor = var9;
+    var3.raisedIcon = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 12;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/auth/native/components/ResetPasswordNudgeAlertModal.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: ResetPasswordNudgeAlertModal, environment: var1
+        _fun60476: for (var _fun60476_ip = 0;;) switch (_fun60476_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.onConfirm;
+                var _closure2_slot0 = var1;
+                var7 = var0.login;
+                var0 = _closure1_slot7;
+                var3 = undefined;
+                var8 = var0.bind(var3)();
+                var2 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var0 = 5;
+                var1 = var5[var0];
+                var6 = var2.bind(var3)(var1);
+                var1 = var6.getPhoneOrEmail;
+                var1 = var1.bind(var6)(var7);
+                var0 = var5[var0];
+                var0 = var2.bind(var3)(var0);
+                var0 = var0.PhoneOrEmailSelectorForceMode;
+                var0 = var0.PHONE;
+                if (!(var1 !== var0)) {
+                    _fun60476_ip = 149;
+                    continue _fun60476
+                }
+            case 90:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var0 = 6;
+                var1 = var6[var0];
+                var1 = var5.bind(var3)(var1);
+                var2 = var1.intl;
+                var1 = var2.string;
+                var0 = var6[var0];
+                var0 = var5.bind(var3)(var0);
+                var0 = var0.t;
+                var0 = var0["4LVWSD"];
+                var5 = var1.bind(var2)(var0);
+                _fun60476_ip = 206;
+                continue _fun60476;
+            case 149:
+                var6 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var0 = 6;
+                var1 = var7[var0];
+                var1 = var6.bind(var3)(var1);
+                var2 = var1.intl;
+                var1 = var2.string;
+                var0 = var7[var0];
+                var0 = var6.bind(var3)(var0);
+                var0 = var0.t;
+                var0 = var0["Sii1b+"];
+                var5 = var1.bind(var2)(var0);
+            case 206:
+                var6 = _closure1_slot3;
+                var2 = var6.useEffect;
+                var1 = function() { // Environment: var11
+                    var3 = _closure1_slot1;
+                    var2 = _closure1_slot2;
+                    var1 = 7;
+                    var2 = var2[var1];
+                    var1 = undefined;
+                    var3 = var3.bind(var1)(var2);
+                    var2 = var3.track;
+                    var0 = _closure1_slot4;
+                    var1 = var0.PASSWORD_RESET_ACTION;
+                    var0 = {};
+                    var4 = 'VIEW';
+                    var0.action = var4;
+                    var0 = var2.bind(var3)(var1, var0);
+                    var0 = function() { // Environment: var0
+                        var3 = _closure1_slot1;
+                        var2 = _closure1_slot2;
+                        var0 = 7;
+                        var2 = var2[var0];
+                        var0 = undefined;
+                        var4 = var3.bind(var0)(var2);
+                        var3 = var4.track;
+                        var1 = _closure1_slot4;
+                        var2 = var1.PASSWORD_RESET_ACTION;
+                        var1 = {};
+                        var5 = 'CLOSE';
+                        var1.action = var5;
+                        var1 = var3.bind(var4)(var2, var1);
+                        return var0;
+                    };
+                    return var0;
+                };
+                var0 = new Array(0);
+                var0 = var2.bind(var6)(var1, var0);
+                var2 = _closure1_slot5;
+                var13 = _closure1_slot0;
+                var14 = _closure1_slot2;
+                var9 = 8;
+                var0 = var14[var9];
+                var0 = var13.bind(var3)(var0);
+                var1 = var0.AlertModal;
+                var0 = {};
+                var6 = 9;
+                var6 = var14[var6];
+                var6 = var13.bind(var3)(var6);
+                var7 = var6.Stack;
+                var6 = {};
+                var8 = var8.raisedIcon;
+                var6.style = var8;
+                var8 = 10;
+                var8 = var14[var8];
+                var8 = var13.bind(var3)(var8);
+                var10 = var8.CircleErrorIcon;
+                var8 = {};
+                var12 = 'custom';
+                var8.size = var12;
+                var12 = {
+                    'width': 40,
+                    'height': 40
+                };
+                var8.style = var12;
+                var8 = var2.bind(var3)(var10, var8);
+                var6.children = var8;
+                var6 = var2.bind(var3)(var7, var6);
+                var0.header = var6;
+                var8 = 6;
+                var6 = var14[var8];
+                var6 = var13.bind(var3)(var6);
+                var10 = var6.intl;
+                var7 = var10.string;
+                var6 = var14[var8];
+                var6 = var13.bind(var3)(var6);
+                var6 = var6.t;
+                var6 = var6.pzCe7h;
+                var6 = var7.bind(var10)(var6);
+                var0.title = var6;
+                var0.content = var5;
+                var6 = _closure1_slot6;
+                var4 = 11;
+                var4 = var14[var4];
+                var4 = var13.bind(var3)(var4);
+                var5 = var4.AlertActions;
+                var4 = {};
+                var7 = var14[var9];
+                var7 = var13.bind(var3)(var7);
+                var12 = var7.AlertActionButton;
+                var10 = {};
+                var7 = function() { // Original name: onPress, environment: var11
+                    var1 = _closure2_slot0;
+                    var0 = undefined;
+                    var1 = var1.bind(var0)();
+                    var3 = _closure1_slot1;
+                    var4 = _closure1_slot2;
+                    var2 = 7;
+                    var2 = var4[var2];
+                    var4 = var3.bind(var0)(var2);
+                    var3 = var4.track;
+                    var1 = _closure1_slot4;
+                    var2 = var1.PASSWORD_RESET_ACTION;
+                    var1 = {};
+                    var5 = 'RESET_PASSWORD_CONFIRM';
+                    var1.action = var5;
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var10.onPress = var7;
+                var7 = var14[var8];
+                var7 = var13.bind(var3)(var7);
+                var16 = var7.intl;
+                var15 = var16.string;
+                var7 = var14[var8];
+                var7 = var13.bind(var3)(var7);
+                var7 = var7.t;
+                var7 = var7.YlfC0w;
+                var7 = var15.bind(var16)(var7);
+                var10.text = var7;
+                var7 = 'confirm';
+                var10 = var2.bind(var3)(var12, var10, var7);
+                var7 = new Array(2);
+                var7[0] = var10;
+                var9 = var14[var9];
+                var9 = var13.bind(var3)(var9);
+                var10 = var9.AlertActionButton;
+                var9 = {};
+                var12 = 'secondary';
+                var9.variant = var12;
+                var11 = function() { // Original name: onPress, environment: var11
+                    var3 = _closure1_slot1;
+                    var2 = _closure1_slot2;
+                    var0 = 7;
+                    var2 = var2[var0];
+                    var0 = undefined;
+                    var4 = var3.bind(var0)(var2);
+                    var3 = var4.track;
+                    var1 = _closure1_slot4;
+                    var2 = var1.PASSWORD_RESET_ACTION;
+                    var1 = {};
+                    var5 = 'CANCEL';
+                    var1.action = var5;
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var9.onPress = var11;
+                var11 = var14[var8];
+                var11 = var13.bind(var3)(var11);
+                var12 = var11.intl;
+                var11 = var12.string;
+                var8 = var14[var8];
+                var8 = var13.bind(var3)(var8);
+                var8 = var8.t;
+                var8 = var8["ETE/oC"];
+                var8 = var11.bind(var12)(var8);
+                var9.text = var8;
+                var8 = 'cancel';
+                var8 = var2.bind(var3)(var10, var9, var8);
+                var7[1] = var8;
+                var4.children = var7;
+                var4 = var6.bind(var3)(var5, var4);
+                var0.actions = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1297, 671, 7448, 1234, 795, 3980, 4033, 5348, 3980, 2]);

@@ -1,0 +1,13 @@
+package com.google.android.gms.internal.play_billing;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public abstract class p6 extends o6 {
+    public static boolean a(Object obj, Object obj2) {
+        if (obj == obj2) {
+            return true;
+        }
+        if (obj != null && obj.equals(obj2)) {
+            return true;
+        }
+        return false;
+    }
+}

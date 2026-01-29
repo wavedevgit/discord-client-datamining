@@ -1,0 +1,78 @@
+package zc;
+
+import tc.l;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+final class g {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final long[] f55583d = {128, 64, 32, 16, 8, 4, 2, 1};
+
+    /* renamed from: a  reason: collision with root package name */
+    private final byte[] f55584a = new byte[8];
+
+    /* renamed from: b  reason: collision with root package name */
+    private int f55585b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f55586c;
+
+    public static long a(byte[] bArr, int i10, boolean z10) {
+        long j10 = bArr[0] & 255;
+        if (z10) {
+            j10 &= ~f55583d[i10 - 1];
+        }
+        for (int i11 = 1; i11 < i10; i11++) {
+            j10 = (j10 << 8) | (bArr[i11] & 255);
+        }
+        return j10;
+    }
+
+    public static int c(int i10) {
+        int i11 = 0;
+        while (true) {
+            long[] jArr = f55583d;
+            if (i11 < jArr.length) {
+                if ((jArr[i11] & i10) != 0) {
+                    return i11 + 1;
+                }
+                i11++;
+            } else {
+                return -1;
+            }
+        }
+    }
+
+    public int b() {
+        return this.f55586c;
+    }
+
+    public long d(l lVar, boolean z10, boolean z11, int i10) {
+        if (this.f55585b == 0) {
+            if (!lVar.f(this.f55584a, 0, 1, z10)) {
+                return -1L;
+            }
+            int c10 = c(this.f55584a[0] & 255);
+            this.f55586c = c10;
+            if (c10 != -1) {
+                this.f55585b = 1;
+            } else {
+                throw new IllegalStateException("No valid varint length mask found");
+            }
+        }
+        int i11 = this.f55586c;
+        if (i11 > i10) {
+            this.f55585b = 0;
+            return -2L;
+        }
+        if (i11 != 1) {
+            lVar.readFully(this.f55584a, 1, i11 - 1);
+        }
+        this.f55585b = 0;
+        return a(this.f55584a, this.f55586c, z11);
+    }
+
+    public void e() {
+        this.f55585b = 0;
+        this.f55586c = 0;
+    }
+}

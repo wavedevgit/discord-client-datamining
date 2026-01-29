@@ -1,0 +1,563 @@
+// modules/activities/panel/native/useActivityWebViewLockManager.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var1
+        _fun110685: for (var _fun110685_ip = 0;;) switch (_fun110685_ip) {
+            case 0:
+                var2 = arg0;
+                var _closure2_slot0 = var2;
+                var4 = global;
+                var1 = var4.Symbol;
+                var3 = 'undefined';
+                var1 = typeof var1;
+                var1 = var3 !== var1;
+                if (!var1) {
+                    _fun110685_ip = 45;
+                    continue _fun110685
+                }
+            case 30:
+                var3 = var4.Symbol;
+                var3 = var3.iterator;
+                var1 = var2[var3];
+            case 45:
+                if (var1) {
+                    _fun110685_ip = 54;
+                    continue _fun110685
+                }
+            case 48:
+                var1 = var2["@@iterator"];
+            case 54:
+                if (var1) {
+                    _fun110685_ip = 344;
+                    continue _fun110685
+                }
+            case 60:
+                var5 = var4.Array;
+                var3 = var5.isArray;
+                var5 = var3.bind(var5)(var2);
+                var3 = var1;
+                if (var5) {
+                    _fun110685_ip = 322;
+                    continue _fun110685
+                }
+            case 85:
+                var7 = undefined;
+                var5 = undefined;
+                if (!var2) {
+                    _fun110685_ip = 282;
+                    continue _fun110685
+                }
+            case 95:
+                var8 = 'string';
+                var6 = typeof var2;
+                if (!(var8 !== var6)) {
+                    _fun110685_ip = 269;
+                    continue _fun110685
+                }
+            case 109:
+                var6 = {};
+                var8 = var6.toString;
+                var6 = var8.call;
+                var10 = var6.bind(var8)(var2);
+                var9 = var10.slice;
+                var8 = 8;
+                var6 = -1;
+                var8 = var9.bind(var10)(var8, var6);
+                var6 = 'Object';
+                var6 = var6 === var8;
+                if (!var6) {
+                    _fun110685_ip = 162;
+                    continue _fun110685
+                }
+            case 157:
+                var6 = var2.constructor;
+            case 162:
+                var9 = var8;
+                if (!var6) {
+                    _fun110685_ip = 178;
+                    continue _fun110685
+                }
+            case 168:
+                var6 = var2.constructor;
+                var9 = var6.name;
+            case 178:
+                var6 = 'Map';
+                if (!(var6 !== var9)) {
+                    _fun110685_ip = 248;
+                    continue _fun110685
+                }
+            case 186:
+                var6 = 'Set';
+                if (!(var6 !== var9)) {
+                    _fun110685_ip = 248;
+                    continue _fun110685
+                }
+            case 194:
+                var6 = 'Arguments';
+                if (!(var6 !== var9)) {
+                    _fun110685_ip = 233;
+                    continue _fun110685
+                }
+            case 204:
+                var8 = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                var6 = var8.test;
+                var8 = var6.bind(var8)(var9);
+                var6 = undefined;
+                if (!var8) {
+                    _fun110685_ip = 246;
+                    continue _fun110685
+                }
+            case 233:
+                var8 = _closure1_slot5;
+                var6 = var8.bind(var7)(var2, var7);
+            case 246:
+                _fun110685_ip = 264;
+                continue _fun110685;
+            case 248:
+                var9 = var4.Array;
+                var8 = var9.from;
+                var6 = var8.bind(var9)(var2);
+            case 264:
+                var5 = var6;
+                _fun110685_ip = 282;
+                continue _fun110685;
+            case 269:
+                var6 = _closure1_slot5;
+                var5 = var6.bind(var7)(var2, var7);
+            case 282:
+                var3 = var5;
+                if (var3) {
+                    _fun110685_ip = 322;
+                    continue _fun110685
+                }
+            case 288:
+                var6 = var4.TypeError;
+                var4 = var6.prototype;
+                var5 = Object.create(var4, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var12 = 'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.';
+                var13 = var5;
+                var4 = new var13[var6](var12, var11);
+                var4 = var4 instanceof Object ? var4 : var5;
+                throw var4;
+            case 322:
+                if (!var3) {
+                    _fun110685_ip = 329;
+                    continue _fun110685
+                }
+            case 325:
+                _closure2_slot0 = var3;
+            case 329:
+                var3 = 0;
+                var _closure2_slot1 = var3;
+                var0 = function() { // Environment: var0
+                    _fun110686: for (var _fun110686_ip = 0;;) switch (_fun110686_ip) {
+                        case 0:
+                            var1 = _closure2_slot1;
+                            var0 = _closure2_slot0;
+                            var0 = var0.length;
+                            if (!(!(var1 >= var0))) {
+                                _fun110686_ip = 56;
+                                continue _fun110686
+                            }
+                        case 20:
+                            var0 = {};
+                            var1 = false;
+                            var0.done = var1;
+                            var2 = _closure2_slot0;
+                            var1 = _closure2_slot1;
+                            var1 = parseFloat(var1);
+                            var3 = var1 + 1;
+                            _closure2_slot1 = var3;
+                            var1 = var2[var1];
+                            var0.value = var1;
+                            _fun110686_ip = 67;
+                            continue _fun110686;
+                        case 56:
+                            var1 = {};
+                            var2 = true;
+                            var1.done = var2;
+                            var0 = var1;
+                        case 67:
+                            return var0;
+                    }
+                };
+                return var0;
+            case 344:
+                var0 = var1.call;
+                var2 = var0.bind(var1)(var2);
+                var1 = var2.next;
+                var0 = var1.bind;
+                var0 = var0.bind(var1)(var2);
+                return var0;
+        }
+    };
+    var _closure1_slot4 = var0;
+    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var1
+        _fun110687: for (var _fun110687_ip = 0;;) switch (_fun110687_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = null;
+                var2 = undefined;
+                var0 = var0 == var2;
+                if (var0) {
+                    _fun110687_ip = 23;
+                    continue _fun110687
+                }
+            case 14:
+                var1 = var3.length;
+                var0 = var2 > var1;
+            case 23:
+                var1 = undefined;
+                if (!var0) {
+                    _fun110687_ip = 33;
+                    continue _fun110687
+                }
+            case 28:
+                var1 = var3.length;
+            case 33:
+                var0 = global;
+                var0 = var0.Array;
+                var0 = var0.bind(var2)(var1);
+                var2 = 0;
+                var4 = var2 < var1;
+                if (!var4) {
+                    _fun110687_ip = 70;
+                    continue _fun110687
+                }
+            case 55:
+                var4 = var3[var2];
+                var0[var2] = var4;
+                var2 = var2 + 1;
+                if (var2 < var1) {
+                    _fun110687_ip = 55;
+                    continue _fun110687
+                }
+            case 70:
+                return var0;
+        }
+    };
+    var _closure1_slot5 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = arg2;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var6 = var5[var3];
+    var3 = arg3;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/activities/panel/native/useActivityWebViewLockManager.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function() { // Original name: useActivityWebViewLockManager, environment: var1
+        var2 = _closure1_slot3;
+        var1 = var2.useState;
+        var0 = function() { // Environment: var0
+            var1 = function(arg0) { // Original name: getCanRender, environment: var0
+                _fun110690: for (var _fun110690_ip = 0;;) switch (_fun110690_ip) {
+                    case 0:
+                        var0 = _closure3_slot1;
+                        var2 = var0.size;
+                        var0 = 0;
+                        var0 = var0 === var2;
+                        if (var0) {
+                            _fun110690_ip = 66;
+                            continue _fun110690
+                        }
+                    case 21:
+                        var2 = _closure3_slot1;
+                        var1 = var2.values;
+                        var2 = var1.bind(var2)();
+                        var1 = var2.next;
+                        var1 = var1.bind(var2)();
+                        var2 = null;
+                        var3 = var2 == var1;
+                        var2 = undefined;
+                        if (var3) {
+                            _fun110690_ip = 59;
+                            continue _fun110690
+                        }
+                    case 54:
+                        var2 = var1.value;
+                    case 59:
+                        var1 = arg0;
+                        var0 = var2 === var1;
+                    case 66:
+                        return var0;
+                }
+            };
+            var _closure3_slot3 = var1;
+            var1 = function() { // Original name: queueRenderUpdate, environment: var0
+                _fun110691: for (var _fun110691_ip = 0;;) switch (_fun110691_ip) {
+                    case 0:
+                        var2 = _closure3_slot0;
+                        var0 = null;
+                        if (!(var0 == var2)) {
+                            _fun110691_ip = 54;
+                            continue _fun110691
+                        }
+                    case 13:
+                        var0 = global;
+                        var2 = var0.Promise;
+                        var0 = var2.resolve;
+                        var3 = var0.bind(var2)();
+                        var2 = var3.then;
+                        var0 = function() { // Environment: var0
+                            _fun110692: for (var _fun110692_ip = 0;;) switch (_fun110692_ip) {
+                                case 0:
+                                    var3 = _closure1_slot4;
+                                    var2 = _closure3_slot2;
+                                    var0 = undefined;
+                                    var7 = var3.bind(var0)(var2);
+                                    var3 = var7.bind(var0)();
+                                    var2 = var3.done;
+                                    var6 = 2;
+                                    var5 = 0;
+                                    var4 = 1;
+                                    if (var2) {
+                                        _fun110692_ip = 136;
+                                        continue _fun110692
+                                    }
+                                case 41:
+                                    var9 = var3.value;
+                                    var2 = _closure1_slot2;
+                                    var2 = var2.bind(var0)(var9, var6);
+                                    var13 = var2[var5];
+                                    var2 = var2[var4];
+                                    var10 = var2.canRender;
+                                    var9 = var2.callback;
+                                    var2 = _closure3_slot3;
+                                    var2 = var2.bind(var0)(var13);
+                                    if (!(var2 !== var10)) {
+                                        _fun110692_ip = 121;
+                                        continue _fun110692
+                                    }
+                                case 89:
+                                    var12 = _closure3_slot2;
+                                    var11 = var12.set;
+                                    var10 = {};
+                                    var10.canRender = var2;
+                                    var10.callback = var9;
+                                    var10 = var11.bind(var12)(var13, var10);
+                                    var2 = var9.bind(var0)(var2);
+                                case 121:
+                                    var9 = var7.bind(var0)();
+                                    var2 = var9.done;
+                                    var3 = var9;
+                                    if (!var2) {
+                                        _fun110692_ip = 41;
+                                        continue _fun110692
+                                    }
+                                case 136:
+                                    _closure3_slot0 = var0;
+                                    return var0;
+                            }
+                        };
+                        var0 = var2.bind(var3)(var0);
+                        var _closure3_slot0 = var0;
+                    case 54:
+                        var0 = undefined;
+                        return var0;
+                }
+            };
+            var _closure3_slot4 = var1;
+            var1 = global;
+            var2 = var1.Set;
+            var3 = var2.prototype;
+            var3 = Object.create(var3, {
+                constructor: {
+                    value: var2
+                }
+            });
+            var4 = var3;
+            var2 = new var4[var2](var3);
+            var2 = var2 instanceof Object ? var2 : var3;
+            var _closure3_slot1 = var2;
+            var1 = var1.Map;
+            var2 = var1.prototype;
+            var2 = Object.create(var2, {
+                constructor: {
+                    value: var1
+                }
+            });
+            var4 = var2;
+            var1 = new var4[var1](var3);
+            var1 = var1 instanceof Object ? var1 : var2;
+            var _closure3_slot2 = var1;
+            var0 = function() { // Environment: var0
+                var4 = _closure1_slot3;
+                var2 = var4.useId;
+                var6 = var2.bind(var4)();
+                var _closure4_slot0 = var6;
+                var3 = var4.useState;
+                var2 = function() { // Environment: var1
+                    var2 = _closure3_slot3;
+                    var1 = _closure4_slot0;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    return var0;
+                };
+                var5 = var3.bind(var4)(var2);
+                var3 = _closure1_slot2;
+                var2 = undefined;
+                var0 = 2;
+                var3 = var3.bind(var2)(var5, var0);
+                var0 = 0;
+                var0 = var3[var0];
+                var2 = 1;
+                var5 = var3[var2];
+                var _closure4_slot1 = var5;
+                var7 = var4.useInsertionEffect;
+                var3 = new Array(1);
+                var3[0] = var6;
+                var2 = function() { // Environment: var1
+                    var1 = _closure3_slot1;
+                    var0 = var1.add;
+                    var3 = _closure4_slot0;
+                    var0 = var0.bind(var1)(var3);
+                    var2 = _closure3_slot2;
+                    var1 = var2.set;
+                    var0 = {};
+                    var5 = _closure4_slot1;
+                    var0.callback = var5;
+                    var5 = _closure3_slot3;
+                    var4 = undefined;
+                    var4 = var5.bind(var4)(var3);
+                    var0.canRender = var4;
+                    var0 = var1.bind(var2)(var3, var0);
+                    var0 = function() { // Environment: var0
+                        var3 = _closure3_slot1;
+                        var1 = var3.delete;
+                        var2 = _closure4_slot0;
+                        var1 = var1.bind(var3)(var2);
+                        var1 = _closure3_slot2;
+                        var0 = var1.delete;
+                        var0 = var0.bind(var1)(var2);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    return var0;
+                };
+                var2 = var7.bind(var4)(var2, var3);
+                var3 = var4.useLayoutEffect;
+                var2 = new Array(2);
+                var2[0] = var6;
+                var2[1] = var5;
+                var1 = function() { // Environment: var1
+                    var1 = _closure3_slot4;
+                    var0 = undefined;
+                    var0 = var1.bind(var0)();
+                    var0 = function() { // Environment: var0
+                        var1 = _closure3_slot4;
+                        var0 = undefined;
+                        var1 = var1.bind(var0)();
+                        return var0;
+                    };
+                    return var0;
+                };
+                var1 = var3.bind(var4)(var1, var2);
+                return var0;
+            };
+            return var0;
+        };
+        var1 = var1.bind(var2)(var0);
+        var0 = 0;
+        var0 = var1[var0];
+        return var0;
+    };
+    var2.default = var3;
+    var1 = function(arg0) { // Original name: useLockedWebView, environment: var1
+        var1 = arg0;
+        var6 = var1.transitionState;
+        var _closure2_slot0 = var6;
+        var4 = var1.context;
+        var5 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var2 = 2;
+        var2 = var3[var2];
+        var3 = undefined;
+        var7 = var5.bind(var3)(var2);
+        var5 = var7.useSharedValue;
+        var2 = false;
+        var2 = var5.bind(var7)(var2);
+        var _closure2_slot1 = var2;
+        var5 = _closure1_slot3;
+        var1 = var5.useContext;
+        var1 = var1.bind(var5)(var4);
+        var1 = var1.useActivityWebViewLock;
+        var1 = var1.bind(var3)();
+        var _closure2_slot2 = var1;
+        var4 = var5.useEffect;
+        var3 = new Array(3);
+        var3[0] = var2;
+        var3[1] = var6;
+        var3[2] = var1;
+        var0 = function() { // Environment: var0
+            _fun110700: for (var _fun110700_ip = 0;;) switch (_fun110700_ip) {
+                case 0:
+                    var3 = _closure2_slot0;
+                    var4 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var0 = 3;
+                    var2 = var2[var0];
+                    var0 = undefined;
+                    var2 = var4.bind(var0)(var2);
+                    var2 = var2.TransitionStates;
+                    var2 = var2.YEETED;
+                    if (!(var3 !== var2)) {
+                        _fun110700_ip = 55;
+                        continue _fun110700
+                    }
+                case 48:
+                    var2 = _closure2_slot2;
+                    if (var2) {
+                        _fun110700_ip = 73;
+                        continue _fun110700
+                    }
+                case 55:
+                    var4 = _closure2_slot1;
+                    var3 = var4.set;
+                    var2 = false;
+                    var2 = var3.bind(var4)(var2);
+                    _fun110700_ip = 89;
+                    continue _fun110700;
+                case 73:
+                    var3 = _closure2_slot1;
+                    var2 = var3.set;
+                    var1 = true;
+                    var1 = var2.bind(var3)(var1);
+                case 89:
+                    return var0;
+            }
+        };
+        var0 = var4.bind(var5)(var0, var3);
+        var0 = {};
+        var0.shown = var2;
+        var0.renderWebView = var1;
+        return var0;
+    };
+    var2.useLockedWebView = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 3677, 3981, 2]);

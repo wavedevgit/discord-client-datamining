@@ -1,0 +1,611 @@
+package androidx.datastore.preferences.protobuf;
+
+import androidx.datastore.preferences.protobuf.y;
+import java.util.Iterator;
+import java.util.List;
+import java.util.RandomAccess;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+abstract class f1 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private static final Class f3587a = A();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final k1 f3588b = B(false);
+
+    /* renamed from: c  reason: collision with root package name */
+    private static final k1 f3589c = B(true);
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final k1 f3590d = new m1();
+
+    private static Class A() {
+        try {
+            return Class.forName("androidx.datastore.preferences.protobuf.GeneratedMessageV3");
+        } catch (Throwable unused) {
+            return null;
+        }
+    }
+
+    private static k1 B(boolean z10) {
+        try {
+            Class C = C();
+            if (C == null) {
+                return null;
+            }
+            return (k1) C.getConstructor(Boolean.TYPE).newInstance(Boolean.valueOf(z10));
+        } catch (Throwable unused) {
+            return null;
+        }
+    }
+
+    private static Class C() {
+        try {
+            return Class.forName("androidx.datastore.preferences.protobuf.UnknownFieldSetSchema");
+        } catch (Throwable unused) {
+            return null;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void D(p pVar, Object obj, Object obj2) {
+        s c10 = pVar.c(obj2);
+        if (!c10.j()) {
+            pVar.d(obj).p(c10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void E(j0 j0Var, Object obj, Object obj2, long j10) {
+        o1.O(obj, j10, j0Var.a(o1.A(obj, j10), o1.A(obj2, j10)));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static void F(k1 k1Var, Object obj, Object obj2) {
+        k1Var.p(obj, k1Var.k(k1Var.g(obj), k1Var.g(obj2)));
+    }
+
+    public static k1 G() {
+        return f3588b;
+    }
+
+    public static k1 H() {
+        return f3589c;
+    }
+
+    public static void I(Class cls) {
+        Class cls2;
+        if (!w.class.isAssignableFrom(cls) && (cls2 = f3587a) != null && !cls2.isAssignableFrom(cls)) {
+            throw new IllegalArgumentException("Message classes must extend GeneratedMessage or GeneratedMessageLite");
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static boolean J(Object obj, Object obj2) {
+        if (obj != obj2) {
+            if (obj == null || !obj.equals(obj2)) {
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+
+    static Object K(int i10, int i11, Object obj, k1 k1Var) {
+        if (obj == null) {
+            obj = k1Var.n();
+        }
+        k1Var.e(obj, i10, i11);
+        return obj;
+    }
+
+    public static k1 L() {
+        return f3590d;
+    }
+
+    public static void M(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.G(i10, list, z10);
+        }
+    }
+
+    public static void N(int i10, List list, r1 r1Var) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.O(i10, list);
+        }
+    }
+
+    public static void O(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.M(i10, list, z10);
+        }
+    }
+
+    public static void P(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.q(i10, list, z10);
+        }
+    }
+
+    public static void Q(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.l(i10, list, z10);
+        }
+    }
+
+    public static void R(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.E(i10, list, z10);
+        }
+    }
+
+    public static void S(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.a(i10, list, z10);
+        }
+    }
+
+    public static void T(int i10, List list, r1 r1Var, d1 d1Var) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.e(i10, list, d1Var);
+        }
+    }
+
+    public static void U(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.h(i10, list, z10);
+        }
+    }
+
+    public static void V(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.L(i10, list, z10);
+        }
+    }
+
+    public static void W(int i10, List list, r1 r1Var, d1 d1Var) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.z(i10, list, d1Var);
+        }
+    }
+
+    public static void X(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.F(i10, list, z10);
+        }
+    }
+
+    public static void Y(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.v(i10, list, z10);
+        }
+    }
+
+    public static void Z(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.J(i10, list, z10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int a(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (z10) {
+            return j.P(i10) + j.y(size);
+        }
+        return size * j.c(i10, true);
+    }
+
+    public static void a0(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.o(i10, list, z10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int b(List list) {
+        return list.size();
+    }
+
+    public static void b0(int i10, List list, r1 r1Var) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.d(i10, list);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int c(int i10, List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int P = size * j.P(i10);
+        for (int i11 = 0; i11 < list.size(); i11++) {
+            P += j.g((g) list.get(i11));
+        }
+        return P;
+    }
+
+    public static void c0(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.n(i10, list, z10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int d(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int e10 = e(list);
+        if (z10) {
+            return j.P(i10) + j.y(e10);
+        }
+        return e10 + (size * j.P(i10));
+    }
+
+    public static void d0(int i10, List list, r1 r1Var, boolean z10) {
+        if (list != null && !list.isEmpty()) {
+            r1Var.w(i10, list, z10);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int e(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof x) {
+            x xVar = (x) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.k(((Integer) list.get(i11)).intValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int f(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (z10) {
+            return j.P(i10) + j.y(size * 4);
+        }
+        return size * j.l(i10, 0);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int g(List list) {
+        return list.size() * 4;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int h(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (z10) {
+            return j.P(i10) + j.y(size * 8);
+        }
+        return size * j.n(i10, 0L);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int i(List list) {
+        return list.size() * 8;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int j(int i10, List list, d1 d1Var) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int i11 = 0;
+        for (int i12 = 0; i12 < size; i12++) {
+            i11 += j.r(i10, (o0) list.get(i12), d1Var);
+        }
+        return i11;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int k(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int l10 = l(list);
+        if (z10) {
+            return j.P(i10) + j.y(l10);
+        }
+        return l10 + (size * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int l(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof x) {
+            x xVar = (x) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.v(((Integer) list.get(i11)).intValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int m(int i10, List list, boolean z10) {
+        if (list.size() == 0) {
+            return 0;
+        }
+        int n10 = n(list);
+        if (z10) {
+            return j.P(i10) + j.y(n10);
+        }
+        return n10 + (list.size() * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int n(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof f0) {
+            f0 f0Var = (f0) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.x(((Long) list.get(i11)).longValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int o(int i10, Object obj, d1 d1Var) {
+        return j.z(i10, (o0) obj, d1Var);
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int p(int i10, List list, d1 d1Var) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int P = j.P(i10) * size;
+        for (int i11 = 0; i11 < size; i11++) {
+            P += j.B((o0) list.get(i11), d1Var);
+        }
+        return P;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int q(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int r10 = r(list);
+        if (z10) {
+            return j.P(i10) + j.y(r10);
+        }
+        return r10 + (size * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int r(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof x) {
+            x xVar = (x) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.K(((Integer) list.get(i11)).intValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int s(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int t10 = t(list);
+        if (z10) {
+            return j.P(i10) + j.y(t10);
+        }
+        return t10 + (size * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int t(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof f0) {
+            f0 f0Var = (f0) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.M(((Long) list.get(i11)).longValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int u(int i10, List list) {
+        int O;
+        int O2;
+        int size = list.size();
+        int i11 = 0;
+        if (size == 0) {
+            return 0;
+        }
+        int P = j.P(i10) * size;
+        if (list instanceof d0) {
+            d0 d0Var = (d0) list;
+            while (i11 < size) {
+                Object R0 = d0Var.R0(i11);
+                if (R0 instanceof g) {
+                    O2 = j.g((g) R0);
+                } else {
+                    O2 = j.O((String) R0);
+                }
+                P += O2;
+                i11++;
+            }
+            return P;
+        }
+        while (i11 < size) {
+            Object obj = list.get(i11);
+            if (obj instanceof g) {
+                O = j.g((g) obj);
+            } else {
+                O = j.O((String) obj);
+            }
+            P += O;
+            i11++;
+        }
+        return P;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int v(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int w10 = w(list);
+        if (z10) {
+            return j.P(i10) + j.y(w10);
+        }
+        return w10 + (size * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int w(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof x) {
+            x xVar = (x) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.R(((Integer) list.get(i11)).intValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int x(int i10, List list, boolean z10) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        int y10 = y(list);
+        if (z10) {
+            return j.P(i10) + j.y(y10);
+        }
+        return y10 + (size * j.P(i10));
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static int y(List list) {
+        int size = list.size();
+        if (size == 0) {
+            return 0;
+        }
+        if (list instanceof f0) {
+            f0 f0Var = (f0) list;
+            if (size <= 0) {
+                return 0;
+            }
+            throw null;
+        }
+        int i10 = 0;
+        for (int i11 = 0; i11 < size; i11++) {
+            i10 += j.T(((Long) list.get(i11)).longValue());
+        }
+        return i10;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static Object z(int i10, List list, y.a aVar, Object obj, k1 k1Var) {
+        if (aVar == null) {
+            return obj;
+        }
+        if (list instanceof RandomAccess) {
+            int size = list.size();
+            int i11 = 0;
+            for (int i12 = 0; i12 < size; i12++) {
+                Integer num = (Integer) list.get(i12);
+                int intValue = num.intValue();
+                if (aVar.a(intValue)) {
+                    if (i12 != i11) {
+                        list.set(i11, num);
+                    }
+                    i11++;
+                } else {
+                    obj = K(i10, intValue, obj, k1Var);
+                }
+            }
+            if (i11 != size) {
+                list.subList(i11, size).clear();
+            }
+            return obj;
+        }
+        Iterator it = list.iterator();
+        while (it.hasNext()) {
+            int intValue2 = ((Integer) it.next()).intValue();
+            if (!aVar.a(intValue2)) {
+                obj = K(i10, intValue2, obj, k1Var);
+                it.remove();
+            }
+        }
+        return obj;
+    }
+}

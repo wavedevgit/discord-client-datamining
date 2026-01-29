@@ -1,0 +1,43 @@
+// ../discord_common/js/packages/libdave/package/src/index.ts
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var6 = var3.bind(var0)(var1);
+    var5 = var6.fileFinishedImporting;
+    var1 = '../discord_common/js/packages/libdave/package/src/index.ts';
+    var1 = var5.bind(var6)(var1);
+    var1 = 1;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.generateDisplayableCode;
+    var2.generateDisplayableCode = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.generateKeyFingerprint;
+    var2.generateKeyFingerprint = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.generatePairwiseFingerprint;
+    var2.generatePairwiseFingerprint = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.serializeKey;
+    var2.serializeKey = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2, 8208, 8209, 8210, 8219]);

@@ -1,0 +1,148 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    _fun16958: for (var _fun16958_ip = 0;;) switch (_fun16958_ip) {
+        case 0:
+            var10 = require;
+            var3 = metroImportDefault;
+            var2 = exports;
+            var4 = dependencyMap;
+            var0 = global;
+            var11 = var0.Object;
+            var5 = var11.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var5.bind(var11)(var2, var0, var1);
+            var5 = 0;
+            var1 = var4[var5];
+            var0 = undefined;
+            var8 = var10.bind(var0)(var1);
+            for (var1 in var8)
+                case 65: {
+                    case 74: var12 = var1;
+                    var11 = var4[var5];
+                    var11 = var10.bind(var0)(var11);
+                    var11 = var11[var12];
+                    var2[var12] = var11;
+                    _fun16958_ip = 65;
+                    continue _fun16958;
+                }
+        case 96:
+            var5 = 1;
+            var1 = var4[var5];
+            var8 = var10.bind(var0)(var1);
+            for (var1 in var8)
+                case 116: {
+                    case 125: var12 = var1;
+                    var11 = var4[var5];
+                    var11 = var10.bind(var0)(var11);
+                    var11 = var11[var12];
+                    var2[var12] = var11;
+                    _fun16958_ip = 116;
+                    continue _fun16958;
+                }
+        case 147:
+            var1 = 2;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.BaseNavigationContainer = var1;
+            var1 = 3;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.createNavigationContainerRef = var1;
+            var1 = 4;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.createNavigatorFactory = var1;
+            var1 = 5;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.CurrentRenderContext = var1;
+            var1 = 6;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.findFocusedRoute = var1;
+            var1 = 7;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.getActionFromState = var1;
+            var1 = 8;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.getFocusedRouteNameFromRoute = var1;
+            var1 = 9;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.getPathFromState = var1;
+            var1 = 10;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.getStateFromPath = var1;
+            var1 = 11;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.NavigationContainerRefContext = var1;
+            var1 = 12;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.NavigationContext = var1;
+            var1 = 13;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.NavigationHelpersContext = var1;
+            var1 = 14;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.NavigationRouteContext = var1;
+            var1 = 15;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.PreventRemoveContext = var1;
+            var1 = 16;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.PreventRemoveProvider = var1;
+            var1 = 17;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useFocusEffect = var1;
+            var1 = 18;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useIsFocused = var1;
+            var1 = 19;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useNavigation = var1;
+            var1 = 20;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useNavigationBuilder = var1;
+            var1 = 21;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useNavigationContainerRef = var1;
+            var1 = 22;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useNavigationState = var1;
+            var1 = 23;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.UNSTABLE_usePreventRemove = var1;
+            var1 = 24;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.usePreventRemoveContext = var1;
+            var1 = 25;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.useRoute = var1;
+            var1 = 26;
+            var1 = var4[var1];
+            var1 = var3.bind(var0)(var1);
+            var2.validatePathConfig = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1473, 1474, 1482, 1487, 1498, 1501, 1488, 1502, 1503, 1505, 1513, 1492, 1497, 1515, 1496, 1516, 1517, 1520, 1522, 1521, 1523, 1540, 1541, 1542, 1544, 1543, 1506]);

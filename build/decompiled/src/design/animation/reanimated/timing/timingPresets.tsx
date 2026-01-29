@@ -1,0 +1,45 @@
+// design/animation/reanimated/timing/timingPresets.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var6 = {};
+    var7 = 600;
+    var6.duration = var7;
+    var4 = {};
+    var5 = 300;
+    var4.duration = var5;
+    var1 = {};
+    var3 = 100;
+    var1.duration = var3;
+    var0 = dependencyMap;
+    var9 = 0;
+    var10 = var0[var9];
+    var8 = require;
+    var0 = undefined;
+    var11 = var8.bind(var0)(var10);
+    var10 = var11.fileFinishedImporting;
+    var8 = 'design/animation/reanimated/timing/timingPresets.tsx';
+    var8 = var10.bind(var11)(var8);
+    var8 = {};
+    var8.duration = var9;
+    var2.timingNone = var8;
+    var8 = {};
+    var9 = 1;
+    var8.duration = var9;
+    var2.timingInstant = var8;
+    var2.timingSlowDuration = var7;
+    var2.timingSlow = var6;
+    var2.timingStandardDuration = var5;
+    var2.timingStandard = var4;
+    var2.timingFastDuration = var3;
+    var2.timingFast = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

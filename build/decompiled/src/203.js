@@ -1,0 +1,45 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = require;
+    var _closure1_slot0 = var0;
+    var0 = dependencyMap;
+    var _closure1_slot1 = var0;
+    var3 = global;
+    var6 = var3.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var5 = var3.Symbol;
+    var0 = undefined;
+    var4 = 'EventTarget[get the parent]';
+    var4 = var5.bind(var0)(var4);
+    var5 = var3.Symbol;
+    var3 = 'EventTarget[dispatch]';
+    var3 = var5.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var2.EVENT_TARGET_GET_THE_PARENT_KEY = var4;
+    var2.INTERNAL_DISPATCH_METHOD_KEY = var3;
+    var1 = function(arg0, arg1) { // Original name: dispatchTrustedEvent, environment: var1
+        var2 = arg0;
+        var1 = arg1;
+        var5 = _closure1_slot0;
+        var4 = _closure1_slot1;
+        var3 = 0;
+        var4 = var4[var3];
+        var3 = undefined;
+        var5 = var5.bind(var3)(var4);
+        var4 = var5.setIsTrusted;
+        var3 = true;
+        var3 = var4.bind(var5)(var1, var3);
+        var0 = _closure1_slot2;
+        var0 = var2[var0];
+        var0 = var0.bind(var2)(var1);
+        return var0;
+    };
+    var2.dispatchTrustedEvent = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [202]);

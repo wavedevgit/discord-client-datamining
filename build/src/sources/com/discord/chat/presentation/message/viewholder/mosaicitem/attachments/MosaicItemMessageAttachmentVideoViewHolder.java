@@ -1,0 +1,153 @@
+package com.discord.chat.presentation.message.viewholder.mosaicitem.attachments;
+
+import android.view.View;
+import com.discord.chat.R;
+import com.discord.chat.bridge.attachment.Attachment;
+import com.discord.chat.bridge.botuikit.MediaGalleryItem;
+import com.discord.chat.bridge.media.UnfurledMediaItem;
+import com.discord.chat.bridge.spoiler.SpoilerAttributes;
+import com.discord.chat.bridge.spoiler.SpoilerConfig;
+import com.discord.chat.presentation.events.ChatEventHandler;
+import com.discord.chat.presentation.message.messagepart.VideoAttachmentMessageAccessory;
+import com.discord.chat.presentation.message.view.MediaVideoView;
+import com.discord.chat.presentation.message.view.UploadItemProps;
+import com.discord.chat.presentation.message.viewholder.MediaVideoViewHolder;
+import com.discord.media_player.MediaPlayer;
+import com.discord.media_player.reactevents.MediaPlayFinishedAnalytics;
+import com.discord.primitives.ChannelId;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0002¢\u0006\u0004\b\u0004\u0010\u0005Jy\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0007\u001a\u00020\u00062\u0006\u0010\b\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\r2\b\u0010\u0010\u001a\u0004\u0018\u00010\u000f2\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00112\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00120\u00142\u0016\u0010\u0017\u001a\u0012\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00120\u0014j\u0002`\u0016¢\u0006\u0004\b\u0018\u0010\u0019JY\u0010\u001e\u001a\u00020\u00122\u0006\u0010\u001b\u001a\u00020\u001a2\u0006\u0010\u001d\u001a\u00020\u001c2\u0006\u0010\f\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\r2\b\u0010\u0010\u001a\u0004\u0018\u00010\u000f2\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00120\u00112\u0012\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00120\u0014¢\u0006\u0004\b\u001e\u0010\u001f¨\u0006 "}, d2 = {"Lcom/discord/chat/presentation/message/viewholder/mosaicitem/attachments/MosaicItemMessageAttachmentVideoViewHolder;", "Lcom/discord/chat/presentation/message/viewholder/MediaVideoViewHolder;", "Lcom/discord/chat/presentation/message/view/MediaVideoView;", "view", "<init>", "(Lcom/discord/chat/presentation/message/view/MediaVideoView;)V", "", "containerId", "componentId", "Lcom/discord/chat/bridge/botuikit/MediaGalleryItem;", "mediaGalleryItem", "", "isSingleItemMosaic", "Landroid/view/View$OnClickListener;", "onClicked", "Landroid/view/View$OnLongClickListener;", "onLongClicked", "Lkotlin/Function0;", "", "onTapSpoiler", "Lkotlin/Function1;", "onTapObscureToggle", "Lcom/discord/chat/presentation/events/MessageTapShowAltText;", "onAltTextButtonClicked", "bindGalleryItem", "(Ljava/lang/String;Ljava/lang/String;Lcom/discord/chat/bridge/botuikit/MediaGalleryItem;ZLandroid/view/View$OnClickListener;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;)V", "Lcom/discord/chat/presentation/events/ChatEventHandler;", "eventHandler", "Lcom/discord/chat/presentation/message/messagepart/VideoAttachmentMessageAccessory;", "item", "bindAttachment", "(Lcom/discord/chat/presentation/events/ChatEventHandler;Lcom/discord/chat/presentation/message/messagepart/VideoAttachmentMessageAccessory;ZLandroid/view/View$OnClickListener;Landroid/view/View$OnLongClickListener;Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function1;)V", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class MosaicItemMessageAttachmentVideoViewHolder extends MediaVideoViewHolder {
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MosaicItemMessageAttachmentVideoViewHolder(@NotNull MediaVideoView view) {
+        super(view);
+        Intrinsics.checkNotNullParameter(view, "view");
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Unit bindGalleryItem$lambda$0(MediaPlayFinishedAnalytics it) {
+        Intrinsics.checkNotNullParameter(it, "it");
+        return Unit.f33282a;
+    }
+
+    public final void bindAttachment(@NotNull ChatEventHandler eventHandler, @NotNull VideoAttachmentMessageAccessory item, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle) {
+        SpoilerConfig spoilerConfig;
+        boolean z11;
+        boolean z12;
+        boolean z13;
+        Intrinsics.checkNotNullParameter(eventHandler, "eventHandler");
+        Intrinsics.checkNotNullParameter(item, "item");
+        Intrinsics.checkNotNullParameter(onClicked, "onClicked");
+        Intrinsics.checkNotNullParameter(onTapSpoiler, "onTapSpoiler");
+        Intrinsics.checkNotNullParameter(onTapObscureToggle, "onTapObscureToggle");
+        Attachment attachment = item.getAttachment();
+        UploadItemProps uploadItemProps = item.getUploadItemProps(new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$uploadItemProps$1(eventHandler));
+        long m673getChannelIdo4g7jtM = item.m673getChannelIdo4g7jtM();
+        String mo536getMessageId3Eiw7ao = item.mo536getMessageId3Eiw7ao();
+        int attachmentIndex = item.getAttachmentIndex();
+        String videoUrl = attachment.getVideoUrl();
+        Intrinsics.checkNotNull(videoUrl);
+        String url = attachment.getUrl();
+        int width = attachment.getWidth();
+        int height = attachment.getHeight();
+        String placeholder = attachment.getPlaceholder();
+        Integer placeholderVersion = attachment.getPlaceholderVersion();
+        int radiusPx = item.getRadiusPx();
+        boolean z14 = !z10;
+        boolean isSpoiler = attachment.isSpoiler();
+        SpoilerAttributes spoilerAttributes = item.getSpoilerAttributes();
+        if (spoilerAttributes != null) {
+            spoilerConfig = spoilerAttributes.configure(onTapSpoiler, onTapObscureToggle);
+        } else {
+            spoilerConfig = null;
+        }
+        Boolean obscure = attachment.getObscure();
+        boolean z15 = false;
+        if (obscure != null) {
+            z11 = obscure.booleanValue();
+        } else {
+            z11 = false;
+        }
+        Boolean obscureAwaitingScan = attachment.getObscureAwaitingScan();
+        if (obscureAwaitingScan != null) {
+            z12 = obscureAwaitingScan.booleanValue();
+        } else {
+            z12 = false;
+        }
+        Boolean obscureHideControls = attachment.getObscureHideControls();
+        if (obscureHideControls != null) {
+            z13 = obscureHideControls.booleanValue();
+        } else {
+            z13 = false;
+        }
+        Boolean obscureIsOpaque = attachment.getObscureIsOpaque();
+        if (obscureIsOpaque != null) {
+            z15 = obscureIsOpaque.booleanValue();
+        }
+        super.m727bindl_cVQvE(ChannelId.m1058boximpl(m673getChannelIdo4g7jtM), mo536getMessageId3Eiw7ao, Integer.valueOf(attachmentIndex), videoUrl, url, height, width, placeholder, placeholderVersion, isSpoiler, spoilerConfig, z11, z12, z13, z15, attachment.getShowDescription(), attachment.getDescription(), attachment.getHint(), item.getUseNewAltTextButton(), new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$1(eventHandler), radiusPx, z14, uploadItemProps, z10, item.getHideMediaPlayButton(), attachment.getAttachmentTagText(), attachment.getAttachmentTagIcon(), attachment.getAttachmentTagBackgroundColor(), attachment.getAttachmentTagTextColor(), attachment.getRole(), item.getPortal(), onClicked, onLongClickListener, new MosaicItemMessageAttachmentVideoViewHolder$bindAttachment$2(eventHandler), attachment.getPlayerSettings());
+    }
+
+    public final void bindGalleryItem(@NotNull String containerId, @NotNull String componentId, @NotNull MediaGalleryItem mediaGalleryItem, boolean z10, @NotNull View.OnClickListener onClicked, View.OnLongClickListener onLongClickListener, @NotNull Function0<Unit> onTapSpoiler, @NotNull Function1<? super Boolean, Unit> onTapObscureToggle, @NotNull Function1<? super String, Unit> onAltTextButtonClicked) {
+        int i10;
+        SpoilerConfig spoilerConfig;
+        Intrinsics.checkNotNullParameter(containerId, "containerId");
+        Intrinsics.checkNotNullParameter(componentId, "componentId");
+        Intrinsics.checkNotNullParameter(mediaGalleryItem, "mediaGalleryItem");
+        Intrinsics.checkNotNullParameter(onClicked, "onClicked");
+        Intrinsics.checkNotNullParameter(onTapSpoiler, "onTapSpoiler");
+        Intrinsics.checkNotNullParameter(onTapObscureToggle, "onTapObscureToggle");
+        Intrinsics.checkNotNullParameter(onAltTextButtonClicked, "onAltTextButtonClicked");
+        UnfurledMediaItem media = mediaGalleryItem.getMedia();
+        SpoilerAttributes forGenericMedia = SpoilerAttributes.Companion.forGenericMedia(mediaGalleryItem, containerId, "MediaGalleryDisplayComponent(" + componentId + ").item[image]", mediaGalleryItem.getMedia().getProxyUrl(), mediaGalleryItem.getVerifyAge());
+        String proxyUrl = media.getProxyUrl();
+        String videoPreviewUrl = mediaGalleryItem.getVideoPreviewUrl();
+        Intrinsics.checkNotNull(videoPreviewUrl);
+        Integer width = media.getWidth();
+        int i11 = 0;
+        if (width != null) {
+            i10 = width.intValue();
+        } else {
+            i10 = 0;
+        }
+        Integer height = media.getHeight();
+        if (height != null) {
+            i11 = height.intValue();
+        }
+        String placeholder = media.getPlaceholder();
+        Integer placeholderVersion = media.getPlaceholderVersion();
+        int dimensionPixelSize = this.itemView.getContext().getResources().getDimensionPixelSize(R.dimen.message_media_grid_inner_radius);
+        boolean z11 = !z10;
+        boolean isSpoiler = mediaGalleryItem.isSpoiler();
+        if (forGenericMedia != null) {
+            spoilerConfig = forGenericMedia.configure(onTapSpoiler, onTapObscureToggle);
+        } else {
+            spoilerConfig = null;
+        }
+        SpoilerConfig spoilerConfig2 = spoilerConfig;
+        boolean isObscure = mediaGalleryItem.isObscure();
+        boolean isObscureAwaitingScan = mediaGalleryItem.isObscureAwaitingScan();
+        boolean obscureHideControls = mediaGalleryItem.getObscureHideControls();
+        boolean obscureIsOpaque = mediaGalleryItem.getObscureIsOpaque();
+        boolean showDescription = mediaGalleryItem.getShowDescription();
+        String description = mediaGalleryItem.getDescription();
+        String descriptionHint = mediaGalleryItem.getDescriptionHint();
+        boolean showDescription2 = mediaGalleryItem.getShowDescription();
+        String accessibilityRole = mediaGalleryItem.getAccessibilityRole();
+        Double portalId = mediaGalleryItem.getPortalId();
+        Intrinsics.checkNotNull(portalId);
+        super.m727bindl_cVQvE(null, null, null, proxyUrl, videoPreviewUrl, i11, i10, placeholder, placeholderVersion, isSpoiler, spoilerConfig2, isObscure, isObscureAwaitingScan, obscureHideControls, obscureIsOpaque, showDescription, description, descriptionHint, showDescription2, onAltTextButtonClicked, dimensionPixelSize, z11, null, z10, false, null, null, null, null, accessibilityRole, portalId.doubleValue(), onClicked, onLongClickListener, new Function1() { // from class: com.discord.chat.presentation.message.viewholder.mosaicitem.attachments.a
+            @Override // kotlin.jvm.functions.Function1
+            public final Object invoke(Object obj) {
+                Unit bindGalleryItem$lambda$0;
+                bindGalleryItem$lambda$0 = MosaicItemMessageAttachmentVideoViewHolder.bindGalleryItem$lambda$0((MediaPlayFinishedAnalytics) obj);
+                return bindGalleryItem$lambda$0;
+            }
+        }, MediaPlayer.Factory.getDefaultSettings());
+    }
+}

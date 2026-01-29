@@ -1,0 +1,47 @@
+// modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var4 = 0;
+    var3.HIGH = var4;
+    var0 = 'HIGH';
+    var3[var4] = var0;
+    var6 = 1;
+    var3.MEDIUM = var6;
+    var0 = 'MEDIUM';
+    var3[var6] = var0;
+    var5 = 2;
+    var3.LOW = var5;
+    var0 = 'LOW';
+    var3[var5] = var0;
+    var1 = {};
+    var1.FILE_UPLOAD = var4;
+    var0 = 'FILE_UPLOAD';
+    var1[var4] = var0;
+    var1.VOICE_CALL = var6;
+    var0 = 'VOICE_CALL';
+    var1[var6] = var0;
+    var1.SCREEN_SHARE = var5;
+    var0 = 'SCREEN_SHARE';
+    var1[var5] = var0;
+    var0 = dependencyMap;
+    var5 = var0[var4];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/foreground_service/mobile/ForegroundServiceManagerTypes.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.ServiceNotificationPriority = var3;
+    var2.ServiceNotificationType = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

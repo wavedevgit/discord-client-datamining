@@ -1,0 +1,19 @@
+package com.discord.intents;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class BuildConfig {
+    public static final String BUILD_TYPE = "release";
+    public static final boolean DEBUG = false;
+    public static final String LIBRARY_PACKAGE_NAME = "com.discord.intents";
+    public static final String PACKAGE_FACEBOOK = "com.facebook.orca";
+    public static final String PACKAGE_FORTNITE = "com.epicgames.fortnite";
+    public static final String PACKAGE_GENSHIN = "com.miHoYo.GenshinImpact";
+    public static final String PACKAGE_INSTAGRAM = "com.instagram.android";
+    public static final String PACKAGE_LINE = "jp.naver.line.android";
+    public static final String PACKAGE_MINECRAFT = "com.mojang.minecraftpe";
+    public static final String PACKAGE_ROBLOX = "com.roblox.client";
+    public static final String PACKAGE_SNAPCHAT = "com.snapchat.android";
+    public static final String PACKAGE_TELEGRAM = "org.telegram.messenger";
+    public static final String PACKAGE_TIKTOK = "com.zhiliaoapp.musically";
+    public static final String PACKAGE_TWITTER = "com.twitter.android";
+    public static final String PACKAGE_WHATSAPP = "com.whatsapp";
+}

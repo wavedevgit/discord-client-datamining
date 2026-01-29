@@ -1,0 +1,39 @@
+// ../discord_common/js/shared/shared-constants/Powerups.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = dependencyMap;
+    var0 = 0;
+    var3 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var4 = var1.bind(var0)(var3);
+    var3 = var4.fileFinishedImporting;
+    var1 = '../discord_common/js/shared/shared-constants/Powerups.tsx';
+    var1 = var3.bind(var4)(var1);
+    var1 = '1387197800336330924';
+    var2.VANITY_URL_POWERUP_SKU_ID = var1;
+    var1 = '1395150519886024775';
+    var2.GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID = var1;
+    var1 = '1395150923734581339';
+    var2.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID = var1;
+    var1 = '1341586379779604621';
+    var2.GUILD_POWERUP_LEVEL_1_SKU_ID = var1;
+    var1 = '1341586379779604622';
+    var2.GUILD_POWERUP_LEVEL_2_SKU_ID = var1;
+    var1 = '1341586379779604623';
+    var2.GUILD_POWERUP_LEVEL_3_SKU_ID = var1;
+    var1 = '1351706802684952639';
+    var2.GUILD_POWERUP_TAG_SKU_ID = var1;
+    var1 = '1354906318279807056';
+    var2.GUILD_POWERUP_ROLE_COLOR_SKU_ID = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

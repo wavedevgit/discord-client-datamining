@@ -1,0 +1,46 @@
+// modules/nuf/NUFConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var3 = 0;
+    var1.MARKETING_UNCLAIMED = var3;
+    var0 = 'MARKETING_UNCLAIMED';
+    var1[var3] = var0;
+    var4 = 1;
+    var1.INVITE_UNCLAIMED = var4;
+    var0 = 'INVITE_UNCLAIMED';
+    var1[var4] = var0;
+    var4 = 2;
+    var1.ORGANIC_REGISTERED = var4;
+    var0 = 'ORGANIC_REGISTERED';
+    var1[var4] = var0;
+    var4 = 3;
+    var1.ORGANIC_REGISTERED_GUILD_TEMPLATE = var4;
+    var0 = 'ORGANIC_REGISTERED_GUILD_TEMPLATE';
+    var1[var4] = var0;
+    var0 = dependencyMap;
+    var4 = var0[var3];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/nuf/NUFConstants.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.NewUserTypes = var1;
+    var1 = 'nuf-notification-modal-key';
+    var2.NUF_NOTIFICATION_MODAL_KEY = var1;
+    var1 = 'nuf-discoverability-modal-key';
+    var2.NUF_DISCOVERABILITY_MODAL_KEY = var1;
+    var1 = 'nuf-in-app-education-modal-key';
+    var2.NUF_IN_APP_EDUCATION_KEY = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

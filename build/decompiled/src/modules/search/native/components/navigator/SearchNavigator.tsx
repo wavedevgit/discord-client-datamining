@@ -1,0 +1,233 @@
+// modules/search/native/components/navigator/SearchNavigator.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var6 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var6;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.SearchEntrypointAnalyticsLocations;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.SearchNavigatorScreens;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.SearchTypes;
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var7 = var3.jsx;
+    var _closure1_slot7 = var7;
+    var3 = var3.jsxs;
+    var _closure1_slot8 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var3 = var7.createNativeStackNavigator;
+    var3 = var3.bind(var7)();
+    var _closure1_slot9 = var3;
+    var3 = var6.memo;
+    var1 = function(arg0) { // Environment: var1
+        var0 = arg0;
+        var0 = var0.route;
+        var0 = var0.params;
+        var11 = var0.searchContext;
+        var _closure2_slot0 = var11;
+        var1 = _closure1_slot0;
+        var2 = _closure1_slot2;
+        var0 = 6;
+        var0 = var2[var0];
+        var3 = undefined;
+        var1 = var1.bind(var3)(var0);
+        var0 = var1.useAccessibilityNativeStackOptions;
+        var6 = var0.bind(var1)();
+        var4 = _closure1_slot3;
+        var2 = var4.useEffect;
+        var1 = new Array(1);
+        var1[0] = var11;
+        var0 = function() { // Environment: var8
+            _fun109778: for (var _fun109778_ip = 0;;) switch (_fun109778_ip) {
+                case 0:
+                    var0 = _closure2_slot0;
+                    var2 = var0.type;
+                    var1 = _closure1_slot6;
+                    var1 = var1.GUILD;
+                    if (!(var2 !== var1)) {
+                        _fun109778_ip = 41;
+                        continue _fun109778
+                    }
+                case 29:
+                    var1 = _closure1_slot4;
+                    var3 = var1.DM_LIST;
+                    _fun109778_ip = 51;
+                    continue _fun109778;
+                case 41:
+                    var1 = _closure1_slot4;
+                    var3 = var1.GUILD;
+                case 51:
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 7;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var2 = var2.bind(var0)(var1);
+                    var1 = var2.trackSearchOpened;
+                    var0 = {};
+                    var4 = _closure2_slot0;
+                    var0.searchContext = var4;
+                    var0.searchLocation = var3;
+                    var0 = var1.bind(var2)(var0);
+                    var0 = function() { // Environment: var0
+                        var2 = _closure1_slot1;
+                        var1 = _closure1_slot2;
+                        var0 = 7;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var3 = var2.bind(var0)(var1);
+                        var2 = var3.trackSearchClosed;
+                        var1 = {};
+                        var4 = _closure2_slot0;
+                        var1.searchContext = var4;
+                        var1 = var2.bind(var3)(var1);
+                        return var0;
+                    };
+                    return var0;
+            }
+        };
+        var0 = var2.bind(var4)(var0, var1);
+        var2 = _closure1_slot8;
+        var5 = _closure1_slot9;
+        var1 = var5.Navigator;
+        var0 = {};
+        var4 = 'search-navigator';
+        var0.id = var4;
+        var4 = {};
+        var13 = var4;
+        var12 = var6;
+        var6 = copyDataProperties(var13, var12);
+        var0.screenOptions = var4;
+        var7 = _closure1_slot7;
+        var6 = var5.Screen;
+        var4 = {};
+        var10 = {};
+        var10.searchContext = var11;
+        var4.initialParams = var10;
+        var9 = _closure1_slot5;
+        var10 = var9.SEARCH_TABS;
+        var4.name = var10;
+        var10 = {
+            'headerShown': false,
+            'fullScreenGestureEnabled': true
+        };
+        var4.options = var10;
+        var10 = function() { // Original name: getComponent, environment: var8
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot2;
+            var0 = 8;
+            var1 = var1[var0];
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            var0 = var0.default;
+            return var0;
+        };
+        var4.getComponent = var10;
+        var6 = var7.bind(var3)(var6, var4);
+        var4 = new Array(2);
+        var4[0] = var6;
+        var6 = var5.Screen;
+        var5 = {};
+        var9 = var9.SEARCH_CHAT_PREVIEW;
+        var5.name = var9;
+        var9 = function(arg0) { // Original name: options, environment: var8
+            var0 = arg0;
+            var1 = var0.route;
+            var _closure3_slot0 = var1;
+            var5 = var0.navigation;
+            var0 = {};
+            var1 = true;
+            var0.headerShown = var1;
+            var6 = _closure1_slot0;
+            var7 = _closure1_slot2;
+            var3 = 9;
+            var8 = var7[var3];
+            var4 = undefined;
+            var8 = var6.bind(var4)(var8);
+            var8 = var8.renderHeader;
+            var0.header = var8;
+            var3 = var7[var3];
+            var4 = var6.bind(var4)(var3);
+            var3 = var4.getRenderBackImage;
+            var3 = var3.bind(var4)(var5);
+            var0.headerLeft = var3;
+            var2 = function() { // Original name: headerTitle, environment: var2
+                var3 = _closure1_slot7;
+                var1 = _closure1_slot1;
+                var2 = _closure1_slot2;
+                var0 = 10;
+                var0 = var2[var0];
+                var2 = undefined;
+                var1 = var1.bind(var2)(var0);
+                var0 = {};
+                var4 = _closure3_slot0;
+                var4 = var4.params;
+                var4 = var4.channelId;
+                var0.channelId = var4;
+                var0 = var3.bind(var2)(var1, var0);
+                return var0;
+            };
+            var0.headerTitle = var2;
+            var0.fullScreenGestureEnabled = var1;
+            return var0;
+        };
+        var5.options = var9;
+        var8 = function() { // Original name: getComponent, environment: var8
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot2;
+            var0 = 11;
+            var1 = var1[var0];
+            var0 = undefined;
+            var0 = var2.bind(var0)(var1);
+            var0 = var0.default;
+            return var0;
+        };
+        var5.getComponent = var8;
+        var5 = var7.bind(var3)(var6, var5);
+        var4[1] = var5;
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1 = var3.bind(var6)(var1);
+    var3 = 12;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/search/native/components/navigator/SearchNavigator.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 8856, 13725, 660, 33, 9063, 5744, 8920, 14077, 8844, 14072, 14073, 2]);

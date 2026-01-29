@@ -1,0 +1,196 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = global;
+    var _closure1_slot0 = var0;
+    var0 = require;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = {};
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs1(){const{callback,callbackId}=this.__closure;global._frameCallbackRegistry.registerFrameCallback(callback,callbackId);}';
+    var3.code = var4;
+    var _closure1_slot5 = var3;
+    var3 = {};
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs2(){const{callbackId}=this.__closure;global._frameCallbackRegistry.unregisterFrameCallback(callbackId);}';
+    var3.code = var4;
+    var _closure1_slot6 = var3;
+    var3 = {};
+    var4 = 'function pnpm_FrameCallbackRegistryJSTs3(){const{callbackId,state}=this.__closure;global._frameCallbackRegistry.manageStateFrameCallback(callbackId,state);}';
+    var3.code = var4;
+    var _closure1_slot7 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot4;
+        var2 = function() { // Original name: FrameCallbackRegistryJS, environment: var4
+            var3 = this;
+            var4 = _closure1_slot3;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var2 = var4.bind(var0)(var3, var2);
+            var2 = 0;
+            var3.nextCallbackId = var2;
+            var2 = _closure1_slot1;
+            var3 = _closure1_slot2;
+            var1 = 2;
+            var1 = var3[var1];
+            var2 = var2.bind(var0)(var1);
+            var1 = var2.prepareUIRegistry;
+            var1 = var1.bind(var2)();
+            return var0;
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = 'registerFrameCallback';
+        var0.key = var1;
+        var1 = function(arg0) { // Original name: registerFrameCallback, environment: var4
+            _fun34755: for (var _fun34755_ip = 0;;) switch (_fun34755_ip) {
+                case 0:
+                    var7 = arg0;
+                    var3 = this;
+                    var _closure3_slot0 = var7;
+                    if (var7) {
+                        _fun34755_ip = 23;
+                        continue _fun34755
+                    }
+                case 15:
+                    var0 = -1;
+                    return var0;
+                case 23:
+                    var0 = var3.nextCallbackId;
+                    var _closure3_slot1 = var0;
+                    var2 = var3.nextCallbackId;
+                    var2 = var2 + 1;
+                    var3.nextCallbackId = var2;
+                    var4 = _closure1_slot1;
+                    var3 = _closure1_slot2;
+                    var2 = 3;
+                    var3 = var3[var2];
+                    var2 = undefined;
+                    var4 = var4.bind(var2)(var3);
+                    var3 = var4.runOnUI;
+                    var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs1, environment: var1
+                        var0 = _closure1_slot0;
+                        var3 = var0._frameCallbackRegistry;
+                        var2 = var3.registerFrameCallback;
+                        var1 = _closure3_slot0;
+                        var0 = _closure3_slot1;
+                        var0 = var2.bind(var3)(var1, var0);
+                        var0 = undefined;
+                        return var0;
+                    };
+                    var6 = {};
+                    var6.callback = var7;
+                    var6.callbackId = var0;
+                    var1.__closure = var6;
+                    var6 = 11361563554462.0;
+                    var1.__workletHash = var6;
+                    var5 = _closure1_slot5;
+                    var1.__initData = var5;
+                    var1 = var3.bind(var4)(var1);
+                    var1 = var1.bind(var2)();
+                    return var0;
+            }
+        };
+        var0.value = var1;
+        var1 = new Array(3);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'unregisterFrameCallback';
+        var0.key = var5;
+        var5 = function(arg0) { // Original name: unregisterFrameCallback, environment: var4
+            var6 = arg0;
+            var _closure3_slot0 = var6;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 3;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = var3.runOnUI;
+            var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs2, environment: var1
+                var0 = _closure1_slot0;
+                var2 = var0._frameCallbackRegistry;
+                var1 = var2.unregisterFrameCallback;
+                var0 = _closure3_slot0;
+                var0 = var1.bind(var2)(var0);
+                var0 = undefined;
+                return var0;
+            };
+            var5 = {};
+            var5.callbackId = var6;
+            var1.__closure = var5;
+            var5 = 9182274559334.0;
+            var1.__workletHash = var5;
+            var4 = _closure1_slot6;
+            var1.__initData = var4;
+            var1 = var2.bind(var3)(var1);
+            var1 = var1.bind(var0)();
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'manageStateFrameCallback';
+        var0.key = var5;
+        var4 = function(arg0, arg1) { // Original name: manageStateFrameCallback, environment: var4
+            var7 = arg0;
+            var6 = arg1;
+            var _closure3_slot0 = var7;
+            var _closure3_slot1 = var6;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var0 = 3;
+            var2 = var2[var0];
+            var0 = undefined;
+            var3 = var3.bind(var0)(var2);
+            var2 = var3.runOnUI;
+            var1 = function() { // Original name: pnpm_FrameCallbackRegistryJSTs3, environment: var1
+                var0 = _closure1_slot0;
+                var3 = var0._frameCallbackRegistry;
+                var2 = var3.manageStateFrameCallback;
+                var1 = _closure3_slot0;
+                var0 = _closure3_slot1;
+                var0 = var2.bind(var3)(var1, var0);
+                var0 = undefined;
+                return var0;
+            };
+            var5 = {};
+            var5.callbackId = var7;
+            var5.state = var6;
+            var1.__closure = var5;
+            var5 = 5244475777443.0;
+            var1.__workletHash = var5;
+            var4 = _closure1_slot7;
+            var1.__initData = var4;
+            var1 = var2.bind(var3)(var1);
+            var1 = var1.bind(var0)();
+            return var0;
+        };
+        var0.value = var4;
+        var1[2] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3835, 3722]);

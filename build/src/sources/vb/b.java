@@ -1,0 +1,121 @@
+package vb;
+
+import android.app.Activity;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.content.res.Configuration;
+import android.os.Parcelable;
+import com.facebook.react.bridge.Arguments;
+import com.facebook.react.bridge.LifecycleEventListener;
+import com.facebook.react.bridge.ReactContext;
+import com.facebook.react.bridge.WritableMap;
+import com.facebook.react.common.ReactConstants;
+import com.facebook.react.modules.core.DeviceEventManagerModule;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class b implements LifecycleEventListener {
+
+    /* renamed from: o  reason: collision with root package name */
+    public static final a f50855o = new a(null);
+
+    /* renamed from: d  reason: collision with root package name */
+    private final ReactContext f50856d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final Function0 f50857e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final C0671b f50858i;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class a {
+        public /* synthetic */ a(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        public final void a(Activity activity, Configuration newConfig) {
+            Intrinsics.checkNotNullParameter(activity, "activity");
+            Intrinsics.checkNotNullParameter(newConfig, "newConfig");
+            Intent intent = new Intent("onConfigurationChanged");
+            intent.putExtra("newConfig", newConfig);
+            activity.sendBroadcast(intent);
+        }
+
+        public final void b(int i10, ReactContext reactContext) {
+            String str;
+            Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+            if (reactContext.hasActiveReactInstance()) {
+                if (i10 == 1) {
+                    str = "PORTRAIT";
+                } else {
+                    str = "LANDSCAPE";
+                }
+                WritableMap createMap = Arguments.createMap();
+                Intrinsics.checkNotNullExpressionValue(createMap, "createMap(...)");
+                createMap.putString("orientation", str);
+                ((DeviceEventManagerModule.RCTDeviceEventEmitter) reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)).emit("orientationDidChange", createMap);
+            }
+        }
+
+        private a() {
+        }
+    }
+
+    /* renamed from: vb.b$b  reason: collision with other inner class name */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class C0671b extends BroadcastReceiver {
+        C0671b() {
+        }
+
+        @Override // android.content.BroadcastReceiver
+        public void onReceive(Context context, Intent intent) {
+            Intrinsics.checkNotNullParameter(context, "context");
+            Intrinsics.checkNotNullParameter(intent, "intent");
+            Parcelable parcelableExtra = intent.getParcelableExtra("newConfig");
+            Intrinsics.checkNotNull(parcelableExtra);
+            b.f50855o.b(((Configuration) parcelableExtra).orientation, b.this.f50856d);
+        }
+    }
+
+    public b(ReactContext reactContext, Function0 onGetCurrentActivity) {
+        Intrinsics.checkNotNullParameter(reactContext, "reactContext");
+        Intrinsics.checkNotNullParameter(onGetCurrentActivity, "onGetCurrentActivity");
+        this.f50856d = reactContext;
+        this.f50857e = onGetCurrentActivity;
+        this.f50858i = new C0671b();
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    public void onHostPause() {
+        Activity activity = (Activity) this.f50857e.invoke();
+        if (activity != null) {
+            try {
+                activity.unregisterReceiver(this.f50858i);
+                return;
+            } catch (IllegalArgumentException e10) {
+                p8.a.n(ReactConstants.TAG, "receiver already unregistered", e10);
+                return;
+            }
+        }
+        p8.a.m(ReactConstants.TAG, "no activity to un-register receiver");
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    public void onHostResume() {
+        Activity activity = (Activity) this.f50857e.invoke();
+        if (activity != null) {
+            androidx.core.content.a.l(activity, this.f50858i, new IntentFilter("onConfigurationChanged"), 2);
+        } else {
+            p8.a.m(ReactConstants.TAG, "no activity to register receiver");
+        }
+        f50855o.b(this.f50856d.getResources().getConfiguration().orientation, this.f50856d);
+    }
+
+    @Override // com.facebook.react.bridge.LifecycleEventListener
+    public void onHostDestroy() {
+    }
+}

@@ -1,0 +1,227 @@
+package cb;
+
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.ColorSpace;
+import android.graphics.Rect;
+import android.os.Build;
+import android.util.Pair;
+import androidx.core.util.Pools$SynchronizedPool;
+import ir.l;
+import java.io.InputStream;
+import java.nio.ByteBuffer;
+import kotlin.Lazy;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Intrinsics;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class d {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final d f8174a = new d();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final Lazy f8175b = l.b(new Function0() { // from class: cb.b
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            Pools$SynchronizedPool b10;
+            b10 = d.b();
+            return b10;
+        }
+    });
+
+    /* renamed from: c  reason: collision with root package name */
+    private static boolean f8176c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private static boolean f8177d;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public static final /* synthetic */ int[] f8178a;
+
+        static {
+            Bitmap.Config config;
+            Bitmap.Config config2;
+            Bitmap.Config config3;
+            int[] iArr = new int[Bitmap.Config.values().length];
+            try {
+                iArr[Bitmap.Config.ARGB_8888.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                iArr[Bitmap.Config.ALPHA_8.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                iArr[Bitmap.Config.ARGB_4444.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                iArr[Bitmap.Config.RGB_565.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                config3 = Bitmap.Config.RGBA_F16;
+                iArr[config3.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                config2 = Bitmap.Config.RGBA_1010102;
+                iArr[config2.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                config = Bitmap.Config.HARDWARE;
+                iArr[config.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+            f8178a = iArr;
+        }
+    }
+
+    private d() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final Pools$SynchronizedPool b() {
+        return new Pools$SynchronizedPool(12);
+    }
+
+    private final ByteBuffer c() {
+        if (f8176c) {
+            return r8.b.f48056a.acquire();
+        }
+        return (ByteBuffer) g().acquire();
+    }
+
+    public static final Pair d(InputStream inputStream) {
+        if (inputStream != null) {
+            d dVar = f8174a;
+            ByteBuffer k10 = dVar.k();
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = true;
+            try {
+                options.inTempStorage = k10.array();
+                Pair pair = null;
+                dVar.f(inputStream, null, options);
+                if (options.outWidth != -1 && options.outHeight != -1) {
+                    pair = new Pair(Integer.valueOf(options.outWidth), Integer.valueOf(options.outHeight));
+                }
+                dVar.l(k10);
+                return pair;
+            } catch (Throwable th2) {
+                f8174a.l(k10);
+                throw th2;
+            }
+        }
+        throw new IllegalStateException("Required value was null.");
+    }
+
+    public static final f e(InputStream inputStream) {
+        if (inputStream != null) {
+            d dVar = f8174a;
+            ByteBuffer k10 = dVar.k();
+            BitmapFactory.Options options = new BitmapFactory.Options();
+            options.inJustDecodeBounds = true;
+            try {
+                options.inTempStorage = k10.array();
+                ColorSpace colorSpace = null;
+                dVar.f(inputStream, null, options);
+                if (Build.VERSION.SDK_INT >= 26) {
+                    colorSpace = options.outColorSpace;
+                }
+                f fVar = new f(options.outWidth, options.outHeight, colorSpace);
+                dVar.l(k10);
+                return fVar;
+            } catch (Throwable th2) {
+                f8174a.l(k10);
+                throw th2;
+            }
+        }
+        throw new IllegalStateException("Required value was null.");
+    }
+
+    private final Pools$SynchronizedPool g() {
+        return (Pools$SynchronizedPool) f8175b.getValue();
+    }
+
+    public static final int h(Bitmap.Config config) {
+        int i10;
+        if (config == null) {
+            i10 = -1;
+        } else {
+            i10 = a.f8178a[config.ordinal()];
+        }
+        switch (i10) {
+            case 1:
+                return 4;
+            case 2:
+                return 1;
+            case 3:
+            case 4:
+                return 2;
+            case 5:
+                return 8;
+            case 6:
+            case 7:
+                return 4;
+            default:
+                throw new UnsupportedOperationException("The provided Bitmap.Config is not supported");
+        }
+    }
+
+    public static final int i(int i10, int i11, Bitmap.Config config) {
+        if (i10 > 0) {
+            if (i11 > 0) {
+                int h10 = h(config);
+                int i12 = i10 * i11 * h10;
+                if (i12 > 0) {
+                    return i12;
+                }
+                throw new IllegalStateException(("size must be > 0: size: " + i12 + ", width: " + i10 + ", height: " + i11 + ", pixelSize: " + h10).toString());
+            }
+            throw new IllegalArgumentException(("height must be > 0, height is: " + i11).toString());
+        }
+        throw new IllegalArgumentException(("width must be > 0, width is: " + i10).toString());
+    }
+
+    public static final int j(Bitmap bitmap) {
+        if (bitmap == null) {
+            return 0;
+        }
+        try {
+            return bitmap.getAllocationByteCount();
+        } catch (NullPointerException unused) {
+            return bitmap.getByteCount();
+        }
+    }
+
+    private final ByteBuffer k() {
+        ByteBuffer c10 = c();
+        if (c10 == null) {
+            ByteBuffer allocate = ByteBuffer.allocate(r8.b.c());
+            Intrinsics.checkNotNullExpressionValue(allocate, "allocate(...)");
+            return allocate;
+        }
+        return c10;
+    }
+
+    private final void l(ByteBuffer byteBuffer) {
+        if (!f8176c) {
+            g().release(byteBuffer);
+        }
+    }
+
+    public final Bitmap f(InputStream inputStream, Rect rect, BitmapFactory.Options options) {
+        if (f8177d) {
+            try {
+                return BitmapFactory.decodeStream(inputStream, rect, options);
+            } catch (IllegalArgumentException unused) {
+                return null;
+            }
+        }
+        return BitmapFactory.decodeStream(inputStream, rect, options);
+    }
+}

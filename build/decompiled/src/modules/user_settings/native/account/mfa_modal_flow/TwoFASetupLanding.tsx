@@ -1,0 +1,166 @@
+// modules/user_settings/native/account/mfa_modal_flow/TwoFASetupLanding.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.Image;
+    var _closure1_slot3 = var6;
+    var3 = var3.View;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot5 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot6 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {
+        'flex': 1,
+        'alignItems': 'center',
+        'justifyContent': 'center'
+    };
+    var3.container = var8;
+    var8 = {
+        'width': 120,
+        'height': 120,
+        'marginBottom': 32
+    };
+    var3.authIcon = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 10;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/user_settings/native/account/mfa_modal_flow/TwoFASetupLanding.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function() { // Original name: TwoFASetupLanding, environment: var1
+        var0 = _closure1_slot7;
+        var3 = undefined;
+        var11 = var0.bind(var3)();
+        var13 = _closure1_slot0;
+        var16 = _closure1_slot2;
+        var0 = 4;
+        var0 = var16[var0];
+        var1 = var13.bind(var3)(var0);
+        var0 = var1.useTwoFASetupStyles;
+        var15 = var0.bind(var1)();
+        var2 = _closure1_slot5;
+        var0 = 5;
+        var0 = var16[var0];
+        var0 = var13.bind(var3)(var0);
+        var1 = var0.TwoFASetupModalScreen;
+        var0 = {};
+        var5 = _closure1_slot4;
+        var4 = {};
+        var6 = var11.container;
+        var4.style = var6;
+        var8 = _closure1_slot6;
+        var6 = 6;
+        var6 = var16[var6];
+        var6 = var13.bind(var3)(var6);
+        var7 = var6.SafeAreaPaddingView;
+        var6 = {};
+        var9 = true;
+        var6.bottom = var9;
+        var9 = var11.container;
+        var6.style = var9;
+        var10 = _closure1_slot3;
+        var9 = {};
+        var14 = _closure1_slot1;
+        var12 = 7;
+        var12 = var16[var12];
+        var12 = var14.bind(var3)(var12);
+        var9.source = var12;
+        var11 = var11.authIcon;
+        var9.style = var11;
+        var10 = var2.bind(var3)(var10, var9);
+        var9 = new Array(3);
+        var9[0] = var10;
+        var10 = 8;
+        var11 = var16[var10];
+        var11 = var13.bind(var3)(var11);
+        var14 = var11.LegacyText;
+        var11 = {};
+        var17 = var15.modalHeader;
+        var12 = new Array(2);
+        var12[0] = var17;
+        var17 = var15.text;
+        var12[1] = var17;
+        var11.style = var12;
+        var12 = 9;
+        var17 = var16[var12];
+        var17 = var13.bind(var3)(var17);
+        var19 = var17.intl;
+        var18 = var19.string;
+        var17 = var16[var12];
+        var17 = var13.bind(var3)(var17);
+        var17 = var17.t;
+        var17 = var17["9E74Dx"];
+        var17 = var18.bind(var19)(var17);
+        var11.children = var17;
+        var11 = var2.bind(var3)(var14, var11);
+        var9[1] = var11;
+        var10 = var16[var10];
+        var10 = var13.bind(var3)(var10);
+        var11 = var10.LegacyText;
+        var10 = {};
+        var17 = var15.modalBody;
+        var14 = new Array(2);
+        var14[0] = var17;
+        var15 = var15.text;
+        var14[1] = var15;
+        var10.style = var14;
+        var14 = var16[var12];
+        var14 = var13.bind(var3)(var14);
+        var15 = var14.intl;
+        var14 = var15.format;
+        var12 = var16[var12];
+        var12 = var13.bind(var3)(var12);
+        var12 = var12.t;
+        var13 = var12.A7Aehw;
+        var12 = {
+            'googleAuthURL': 'https://support.google.com/accounts/answer/1066447?hl=en',
+            'authyURL': 'https://www.authy.com/'
+        };
+        var12 = var14.bind(var15)(var13, var12);
+        var10.children = var12;
+        var10 = var2.bind(var3)(var11, var10);
+        var9[2] = var10;
+        var6.children = var9;
+        var6 = var8.bind(var3)(var7, var6);
+        var4.children = var6;
+        var4 = var2.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 10287, 10283, 4690, 10288, 4832, 1234, 2]);

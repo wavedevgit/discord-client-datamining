@@ -1,0 +1,117 @@
+// modules/collectibles/records/CollectiblesMarketingCoachmarkRecord.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var1 = function() { // Environment: var1
+        var4 = function(arg0) { // Original name: CollectiblesMarketingCoachmarkRecord, environment: var1
+            var1 = arg0;
+            var2 = this;
+            var5 = _closure1_slot2;
+            var4 = _closure2_slot0;
+            var0 = undefined;
+            var4 = var5.bind(var0)(var2, var4);
+            var4 = _closure1_slot0;
+            var5 = _closure1_slot1;
+            var3 = 2;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var3 = var3.CollectiblesMarketingType;
+            var3 = var3.COACHMARK;
+            var2.type = var3;
+            var3 = var1.title;
+            var2.title = var3;
+            var3 = var1.body;
+            var2.body = var3;
+            var3 = var1.assetDark;
+            var2.assetDark = var3;
+            var3 = var1.assetLight;
+            var2.assetLight = var3;
+            var3 = var1.version;
+            var2.version = var3;
+            var3 = var1.refTargetBackground;
+            var2.refTargetBackground = var3;
+            var3 = var1.badgeIcon;
+            var2.badgeIcon = var3;
+            var1 = var1.badgeText;
+            var2.badgeText = var1;
+            return var0;
+        };
+        var _closure2_slot0 = var4;
+        var3 = _closure1_slot3;
+        var0 = {};
+        var2 = 'fromServer';
+        var0.key = var2;
+        var1 = function(arg0) { // Original name: value, environment: var1
+            var1 = arg0;
+            var2 = _closure2_slot0;
+            var0 = {};
+            var6 = var0;
+            var5 = var1;
+            var3 = copyDataProperties(var6, var5);
+            var4 = var1.asset_dark;
+            var3 = 'assetDark';
+            var0[var3] = var4;
+            var4 = var1.asset_light;
+            var3 = 'assetLight';
+            var0[var3] = var4;
+            var4 = var1.ref_target_background;
+            var3 = 'refTargetBackground';
+            var0[var3] = var4;
+            var4 = var1.badge_icon;
+            var3 = 'badgeIcon';
+            var0[var3] = var4;
+            var3 = var1.badge_text;
+            var1 = 'badgeText';
+            var0[var1] = var3;
+            var1 = var2.prototype;
+            var1 = Object.create(var1, {
+                constructor: {
+                    value: var2
+                }
+            });
+            var7 = var1;
+            var6 = var0;
+            var0 = new var7[var2](var6, var5);
+            var0 = var0 instanceof Object ? var0 : var1;
+            return var0;
+        };
+        var0.value = var1;
+        var2 = new Array(1);
+        var2[0] = var0;
+        var1 = undefined;
+        var0 = null;
+        var0 = var3.bind(var1)(var4, var0, var2);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var3 = 3;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/collectibles/records/CollectiblesMarketingCoachmarkRecord.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.CollectiblesMarketingCoachmarkRecord = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 4585, 2]);

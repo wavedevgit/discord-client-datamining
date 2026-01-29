@@ -1,0 +1,51 @@
+// modules/voice_panel/native/utils/roundToNearestPixel.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.PixelRatio;
+    var3 = var6.get;
+    var7 = var3.bind(var6)();
+    var _closure1_slot0 = var7;
+    var3 = {};
+    var6 = 'function roundToNearestPixel_roundToNearestPixelTsx1(position){const{PIXEL_DENSITY}=this.__closure;return Math.round(position*PIXEL_DENSITY)/PIXEL_DENSITY;}';
+    var3.code = var6;
+    var1 = function(arg0) { // Original name: t, environment: var1
+        var0 = global;
+        var3 = var0.Math;
+        var2 = var3.round;
+        var1 = _closure1_slot0;
+        var0 = arg0;
+        var0 = var0 * var1;
+        var0 = var2.bind(var3)(var0);
+        var0 = var0 / var1;
+        return var0;
+    };
+    var6 = {};
+    var6.PIXEL_DENSITY = var7;
+    var1.__closure = var6;
+    var6 = 8009828326153.0;
+    var1.__workletHash = var6;
+    var1.__initData = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/voice_panel/native/utils/roundToNearestPixel.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 2]);

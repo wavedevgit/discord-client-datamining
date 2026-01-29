@@ -1,0 +1,171 @@
+package com.discord.media.engine.video.events;
+
+import at.v1;
+import com.discord.reactevents.ReactEvent;
+import com.facebook.react.bridge.WritableMap;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.descriptors.SerialDescriptor;
+import kotlinx.serialization.encoding.CompositeEncoder;
+import kotlinx.serialization.internal.SerializationConstructorMarker;
+import org.jetbrains.annotations.NotNull;
+import xs.m;
+@Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0081\b\u0018\u0000 +2\u00020\u0001:\u0002*+B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003¢\u0006\u0004\b\t\u0010\nBE\b\u0010\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0004\b\t\u0010\u000eJ\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J;\u0010\u001b\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fHÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\t\u0010!\u001a\u00020\u0005HÖ\u0001J%\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020\u00002\u0006\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020(H\u0001¢\u0006\u0002\b)R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0010R\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0010R\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0010¨\u0006,"}, d2 = {"Lcom/discord/media/engine/video/events/PingTimeoutCallbackEvent;", "Lcom/discord/reactevents/ReactEvent;", "connectionId", "", "server", "", "port", "seq", "timeout", "<init>", "(ILjava/lang/String;III)V", "seen0", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IILjava/lang/String;IIILkotlinx/serialization/internal/SerializationConstructorMarker;)V", "getConnectionId", "()I", "getServer", "()Ljava/lang/String;", "getPort", "getSeq", "getTimeout", "component1", "component2", "component3", "component4", "component5", "copy", "equals", "", "other", "", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$media_engine_release", "$serializer", "Companion", "media_engine_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@m
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class PingTimeoutCallbackEvent implements ReactEvent {
+    @NotNull
+    public static final Companion Companion = new Companion(null);
+    private final int connectionId;
+    private final int port;
+    private final int seq;
+    @NotNull
+    private final String server;
+    private final int timeout;
+
+    @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¨\u0006\u0007"}, d2 = {"Lcom/discord/media/engine/video/events/PingTimeoutCallbackEvent$Companion;", "", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/discord/media/engine/video/events/PingTimeoutCallbackEvent;", "media_engine_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+    public static final class Companion {
+        private Companion() {
+        }
+
+        @NotNull
+        public final KSerializer serializer() {
+            return PingTimeoutCallbackEvent$$serializer.INSTANCE;
+        }
+
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+    }
+
+    public /* synthetic */ PingTimeoutCallbackEvent(int i10, int i11, String str, int i12, int i13, int i14, SerializationConstructorMarker serializationConstructorMarker) {
+        if (31 != (i10 & 31)) {
+            v1.b(i10, 31, PingTimeoutCallbackEvent$$serializer.INSTANCE.getDescriptor());
+        }
+        this.connectionId = i11;
+        this.server = str;
+        this.port = i12;
+        this.seq = i13;
+        this.timeout = i14;
+    }
+
+    public static /* synthetic */ PingTimeoutCallbackEvent copy$default(PingTimeoutCallbackEvent pingTimeoutCallbackEvent, int i10, String str, int i11, int i12, int i13, int i14, Object obj) {
+        if ((i14 & 1) != 0) {
+            i10 = pingTimeoutCallbackEvent.connectionId;
+        }
+        if ((i14 & 2) != 0) {
+            str = pingTimeoutCallbackEvent.server;
+        }
+        if ((i14 & 4) != 0) {
+            i11 = pingTimeoutCallbackEvent.port;
+        }
+        if ((i14 & 8) != 0) {
+            i12 = pingTimeoutCallbackEvent.seq;
+        }
+        if ((i14 & 16) != 0) {
+            i13 = pingTimeoutCallbackEvent.timeout;
+        }
+        int i15 = i13;
+        int i16 = i11;
+        return pingTimeoutCallbackEvent.copy(i10, str, i16, i12, i15);
+    }
+
+    public static final /* synthetic */ void write$Self$media_engine_release(PingTimeoutCallbackEvent pingTimeoutCallbackEvent, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
+        compositeEncoder.w(serialDescriptor, 0, pingTimeoutCallbackEvent.connectionId);
+        compositeEncoder.y(serialDescriptor, 1, pingTimeoutCallbackEvent.server);
+        compositeEncoder.w(serialDescriptor, 2, pingTimeoutCallbackEvent.port);
+        compositeEncoder.w(serialDescriptor, 3, pingTimeoutCallbackEvent.seq);
+        compositeEncoder.w(serialDescriptor, 4, pingTimeoutCallbackEvent.timeout);
+    }
+
+    public final int component1() {
+        return this.connectionId;
+    }
+
+    @NotNull
+    public final String component2() {
+        return this.server;
+    }
+
+    public final int component3() {
+        return this.port;
+    }
+
+    public final int component4() {
+        return this.seq;
+    }
+
+    public final int component5() {
+        return this.timeout;
+    }
+
+    @NotNull
+    public final PingTimeoutCallbackEvent copy(int i10, @NotNull String server, int i11, int i12, int i13) {
+        Intrinsics.checkNotNullParameter(server, "server");
+        return new PingTimeoutCallbackEvent(i10, server, i11, i12, i13);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof PingTimeoutCallbackEvent) {
+            PingTimeoutCallbackEvent pingTimeoutCallbackEvent = (PingTimeoutCallbackEvent) obj;
+            return this.connectionId == pingTimeoutCallbackEvent.connectionId && Intrinsics.areEqual(this.server, pingTimeoutCallbackEvent.server) && this.port == pingTimeoutCallbackEvent.port && this.seq == pingTimeoutCallbackEvent.seq && this.timeout == pingTimeoutCallbackEvent.timeout;
+        }
+        return false;
+    }
+
+    public final int getConnectionId() {
+        return this.connectionId;
+    }
+
+    public final int getPort() {
+        return this.port;
+    }
+
+    public final int getSeq() {
+        return this.seq;
+    }
+
+    @NotNull
+    public final String getServer() {
+        return this.server;
+    }
+
+    public final int getTimeout() {
+        return this.timeout;
+    }
+
+    public int hashCode() {
+        return (((((((Integer.hashCode(this.connectionId) * 31) + this.server.hashCode()) * 31) + Integer.hashCode(this.port)) * 31) + Integer.hashCode(this.seq)) * 31) + Integer.hashCode(this.timeout);
+    }
+
+    @Override // com.discord.reactevents.ReactEvent
+    @NotNull
+    public WritableMap serialize() {
+        return ReactEvent.DefaultImpls.serialize(this);
+    }
+
+    @NotNull
+    public String toString() {
+        int i10 = this.connectionId;
+        String str = this.server;
+        int i11 = this.port;
+        int i12 = this.seq;
+        int i13 = this.timeout;
+        return "PingTimeoutCallbackEvent(connectionId=" + i10 + ", server=" + str + ", port=" + i11 + ", seq=" + i12 + ", timeout=" + i13 + ")";
+    }
+
+    public PingTimeoutCallbackEvent(int i10, @NotNull String server, int i11, int i12, int i13) {
+        Intrinsics.checkNotNullParameter(server, "server");
+        this.connectionId = i10;
+        this.server = server;
+        this.port = i11;
+        this.seq = i12;
+        this.timeout = i13;
+    }
+}

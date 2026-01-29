@@ -1,0 +1,200 @@
+// actions/RTCDebugActionCreators.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = metroImportDefault;
+    var2 = exports;
+    var4 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var4;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var4[var0];
+    var0 = undefined;
+    var3 = var5.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 4;
+    var4 = var4[var3];
+    var3 = require;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'actions/RTCDebugActionCreators.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function(arg0) { // Original name: open, environment: var1
+        var2 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var1 = 1;
+        var4 = var3[var1];
+        var0 = undefined;
+        var6 = var2.bind(var0)(var4);
+        var5 = var6.dispatch;
+        var4 = {};
+        var7 = 'RTC_DEBUG_MODAL_OPEN';
+        var4.type = var7;
+        var7 = arg0;
+        var4.section = var7;
+        var4 = var5.bind(var6)(var4);
+        var1 = var3[var1];
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'RTC_DEBUG_POPOUT_WINDOW_OPEN';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.open = var3;
+    var3 = function() { // Original name: close, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'RTC_DEBUG_MODAL_CLOSE';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.close = var3;
+    var3 = function() { // Original name: openReplay, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'RTC_DEBUG_MODAL_OPEN_REPLAY';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.openReplay = var3;
+    var3 = function(arg0) { // Original name: setSection, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'RTC_DEBUG_MODAL_SET_SECTION';
+        var1.type = var4;
+        var4 = arg0;
+        var1.section = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setSection = var3;
+    var3 = function(arg0) { // Original name: setShouldRecordNextConnection, environment: var1
+        var4 = arg0;
+        var2 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var0 = 2;
+        var5 = var3[var0];
+        var0 = undefined;
+        var6 = var2.bind(var0)(var5);
+        var5 = _closure1_slot2;
+        var1 = var5.shouldRecordNextConnection;
+        var5 = var1.bind(var5)();
+        var1 = 'connection_replay_log_enabled';
+        var1 = var6.bind(var0)(var1, var4, var5);
+        var1 = 1;
+        var1 = var3[var1];
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var5 = 'RTC_DEBUG_SET_RECORDING_FLAG';
+        var1.type = var5;
+        var1.value = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setShouldRecordNextConnection = var3;
+    var3 = function(arg0, arg1, arg2) { // Original name: setSimulcastDebugOverride, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'RTC_DEBUG_SET_SIMULCAST_OVERRIDE';
+        var1.type = var4;
+        var4 = arg0;
+        var1.userId = var4;
+        var4 = arg1;
+        var1.context = var4;
+        var4 = arg2;
+        var1.quality = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setSimulcastDebugOverride = var3;
+    var1 = function() { // Original name: chooseReplayPath, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 3;
+        var1 = var1[var0];
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        var3 = var1.fileManager;
+        var2 = var3.showOpenDialog;
+        var1 = {};
+        var5 = {};
+        var4 = 'All Files';
+        var5.name = var4;
+        var4 = ['*'];
+        var5.extensions = var4;
+        var4 = new Array(1);
+        var4[0] = var5;
+        var1.filters = var4;
+        var3 = var2.bind(var3)(var1);
+        var2 = var3.then;
+        var1 = function(arg0) { // Environment: var1
+            _fun69085: for (var _fun69085_ip = 0;;) switch (_fun69085_ip) {
+                case 0:
+                    var1 = arg0;
+                    var2 = var1.length;
+                    var4 = '';
+                    var0 = 0;
+                    if (!(var0 !== var2)) {
+                        _fun69085_ip = 22;
+                        continue _fun69085
+                    }
+                case 18:
+                    var4 = var1[var0];
+                case 22:
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 1;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var3 = var2.bind(var0)(var1);
+                    var2 = var3.dispatch;
+                    var1 = {};
+                    var5 = 'RTC_DEBUG_MODAL_OPEN_REPLAY_AT_PATH';
+                    var1.type = var5;
+                    var1.path = var4;
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+            }
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.chooseReplayPath = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [8603, 806, 8171, 3033, 2]);

@@ -1,0 +1,78 @@
+package com.discord.chat.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.viewbinding.ViewBinding;
+import com.discord.chat.R;
+import e4.a;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class ConnectionsRoleTagViewBinding implements ViewBinding {
+    @NonNull
+    public final CardView connectionsRoleTagContainer;
+    @NonNull
+    public final TextView roleName;
+    @NonNull
+    private final View rootView;
+    @NonNull
+    public final ImageView verifiedCheckIcon;
+    @NonNull
+    public final ImageView verifiedCheckIconBackground;
+    @NonNull
+    public final FrameLayout verifiedCheckIconContainer;
+
+    private ConnectionsRoleTagViewBinding(@NonNull View view, @NonNull CardView cardView, @NonNull TextView textView, @NonNull ImageView imageView, @NonNull ImageView imageView2, @NonNull FrameLayout frameLayout) {
+        this.rootView = view;
+        this.connectionsRoleTagContainer = cardView;
+        this.roleName = textView;
+        this.verifiedCheckIcon = imageView;
+        this.verifiedCheckIconBackground = imageView2;
+        this.verifiedCheckIconContainer = frameLayout;
+    }
+
+    @NonNull
+    public static ConnectionsRoleTagViewBinding bind(@NonNull View view) {
+        int i10 = R.id.connections_role_tag_container;
+        CardView cardView = (CardView) a.a(view, i10);
+        if (cardView != null) {
+            i10 = R.id.role_name;
+            TextView textView = (TextView) a.a(view, i10);
+            if (textView != null) {
+                i10 = R.id.verified_check_icon;
+                ImageView imageView = (ImageView) a.a(view, i10);
+                if (imageView != null) {
+                    i10 = R.id.verified_check_icon_background;
+                    ImageView imageView2 = (ImageView) a.a(view, i10);
+                    if (imageView2 != null) {
+                        i10 = R.id.verified_check_icon_container;
+                        FrameLayout frameLayout = (FrameLayout) a.a(view, i10);
+                        if (frameLayout != null) {
+                            return new ConnectionsRoleTagViewBinding(view, cardView, textView, imageView, imageView2, frameLayout);
+                        }
+                    }
+                }
+            }
+        }
+        throw new NullPointerException("Missing required view with ID: ".concat(view.getResources().getResourceName(i10)));
+    }
+
+    @NonNull
+    public static ConnectionsRoleTagViewBinding inflate(@NonNull LayoutInflater layoutInflater, @NonNull ViewGroup viewGroup) {
+        if (viewGroup != null) {
+            layoutInflater.inflate(R.layout.connections_role_tag_view, viewGroup);
+            return bind(viewGroup);
+        }
+        throw new NullPointerException("parent");
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public View getRoot() {
+        return this.rootView;
+    }
+}

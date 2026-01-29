@@ -1,0 +1,46 @@
+// modules/guild_scheduled_events/PermissionsConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = require;
+    var5 = metroImportAll;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var0 = 0;
+    var1 = var7[var0];
+    var0 = undefined;
+    var1 = var6.bind(var0)(var1);
+    var3 = var1.Permissions;
+    var4 = var3.VIEW_CHANNEL;
+    var1 = 1;
+    var8 = var7[var1];
+    var9 = var5.bind(var0)(var8);
+    var8 = var9.combine;
+    var3 = var3.CONNECT;
+    var3 = var8.bind(var9)(var4, var3);
+    var1 = var7[var1];
+    var8 = var5.bind(var0)(var1);
+    var5 = var8.combine;
+    var1 = 2;
+    var1 = var7[var1];
+    var1 = var6.bind(var0)(var1);
+    var1 = var1.MODERATE_STAGE_CHANNEL_PERMISSIONS;
+    var1 = var5.bind(var8)(var4, var1);
+    var5 = 3;
+    var5 = var7[var5];
+    var7 = var6.bind(var0)(var5);
+    var6 = var7.fileFinishedImporting;
+    var5 = 'modules/guild_scheduled_events/PermissionsConstants.tsx';
+    var5 = var6.bind(var7)(var5);
+    var2.CREATE_GUILD_EVENT_CORE_PERMISSIONS = var4;
+    var2.CREATE_GUILD_EVENT_VOICE_CHANNEL_PERMISSIONS = var3;
+    var2.CREATE_GUILD_EVENT_STAGE_CHANNEL_PERMISSIONS = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 484, 1380, 2]);

@@ -1,0 +1,5 @@
+package kotlin.reflect.jvm.internal.impl.descriptors;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public interface VariableDescriptorWithAccessors extends VariableDescriptor {
+    boolean isDelegated();
+}

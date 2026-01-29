@@ -1,0 +1,54 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = exports;
+    var2 = require;
+    var _closure1_slot0 = var2;
+    var2 = dependencyMap;
+    var _closure1_slot1 = var2;
+    var2 = global;
+    var5 = var2.Object;
+    var4 = var5.defineProperty;
+    var2 = var2.Symbol;
+    var3 = var2.toStringTag;
+    var2 = {};
+    var6 = 'Module';
+    var2.value = var6;
+    var2 = var4.bind(var5)(var1, var3, var2);
+    var2 = function(arg0) { // Original name: _getSpanForScope, environment: var0
+        var0 = arg0;
+        var0 = var0._sentrySpan;
+        return var0;
+    };
+    var1._getSpanForScope = var2;
+    var0 = function(arg0, arg1) { // Original name: _setSpanForScope, environment: var0
+        _fun8941: for (var _fun8941_ip = 0;;) switch (_fun8941_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                if (var3) {
+                    _fun8941_ip = 16;
+                    continue _fun8941
+                }
+            case 9:
+                var0 = delete var4._sentrySpan;
+                _fun8941_ip = 57;
+                continue _fun8941;
+            case 16:
+                var2 = _closure1_slot0;
+                var1 = _closure1_slot1;
+                var0 = 0;
+                var1 = var1[var0];
+                var0 = undefined;
+                var2 = var2.bind(var0)(var1);
+                var1 = var2.addNonEnumerableProperty;
+                var0 = '_sentrySpan';
+                var0 = var1.bind(var2)(var4, var0, var3);
+            case 57:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var1._setSpanForScope = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [822]);

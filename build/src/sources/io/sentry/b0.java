@@ -1,0 +1,13 @@
+package io.sentry;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public interface b0 {
+    default l7 a(l7 l7Var, Hint hint) {
+        return l7Var;
+    }
+
+    SentryEvent h(SentryEvent sentryEvent, Hint hint);
+
+    default io.sentry.protocol.d0 l(io.sentry.protocol.d0 d0Var, Hint hint) {
+        return d0Var;
+    }
+}

@@ -1,0 +1,87 @@
+// modules/stage_channels/StageChannelPermissions.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var9 = require;
+    var11 = metroImportAll;
+    var2 = exports;
+    var10 = dependencyMap;
+    var3 = global;
+    var5 = var3.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var0 = 0;
+    var1 = var10[var0];
+    var0 = undefined;
+    var1 = var9.bind(var0)(var1);
+    var1 = var1.Permissions;
+    var8 = 1;
+    var4 = var10[var8];
+    var12 = var11.bind(var0)(var4);
+    var7 = var12.combine;
+    var6 = var1.MANAGE_CHANNELS;
+    var5 = var1.MUTE_MEMBERS;
+    var4 = var1.MOVE_MEMBERS;
+    var7 = var7.bind(var12)(var6, var5, var4);
+    var4 = var10[var8];
+    var12 = var11.bind(var0)(var4);
+    var6 = var12.combine;
+    var5 = var1.MANAGE_CHANNELS;
+    var4 = var1.MANAGE_ROLES;
+    var6 = var6.bind(var12)(var5, var4);
+    var5 = var3.Set;
+    var4 = var1.SPEAK;
+    var3 = new Array(3);
+    var3[0] = var4;
+    var4 = var1.REQUEST_TO_SPEAK;
+    var3[1] = var4;
+    var4 = var1.USE_VAD;
+    var3[2] = var4;
+    var4 = var5.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var5
+        }
+    });
+    var20 = var4;
+    var19 = var3;
+    var3 = new var20[var5](var19, var18);
+    var5 = var3 instanceof Object ? var3 : var4;
+    var3 = var10[var8];
+    var12 = var11.bind(var0)(var3);
+    var4 = var12.combine;
+    var3 = var1.MANAGE_ROLES;
+    var4 = var4.bind(var12)(var7, var3);
+    var3 = var10[var8];
+    var14 = var11.bind(var0)(var3);
+    var13 = var14.combine;
+    var12 = var1.CONNECT;
+    var3 = var1.VIEW_CHANNEL;
+    var3 = var13.bind(var14)(var12, var3);
+    var8 = var10[var8];
+    var14 = var11.bind(var0)(var8);
+    var13 = var14.combine;
+    var18 = var1.READ_MESSAGE_HISTORY;
+    var17 = var1.REQUEST_TO_SPEAK;
+    var16 = var1.SPEAK;
+    var15 = var1.USE_VAD;
+    var20 = var14;
+    var19 = var3;
+    var1 = var20[var13](var19, var18, var17, var16, var15, var14);
+    var8 = 2;
+    var8 = var10[var8];
+    var10 = var9.bind(var0)(var8);
+    var9 = var10.fileFinishedImporting;
+    var8 = 'modules/stage_channels/StageChannelPermissions.tsx';
+    var8 = var9.bind(var10)(var8);
+    var2.MODERATE_STAGE_CHANNEL_PERMISSIONS = var7;
+    var2.CREATE_STAGE_CHANNEL_PERMISSIONS = var6;
+    var2.STAGE_CHANNEL_DISABLED_PERMISSIONS = var5;
+    var2.UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS = var4;
+    var2.JOIN_VOCAL_CHANNEL_PERMISSIONS = var3;
+    var2.LURKER_STAGE_CHANNEL_PERMISSIONS_ALLOWLIST = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 484, 2]);

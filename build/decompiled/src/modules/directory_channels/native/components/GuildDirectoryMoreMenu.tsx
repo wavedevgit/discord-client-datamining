@@ -1,0 +1,343 @@
+// modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportAll;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var6;
+    var _closure1_slot3 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot4 = var3;
+    var3 = 16;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/directory_channels/native/components/GuildDirectoryMoreMenu.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: _default, environment: var1
+        _fun71245: for (var _fun71245_ip = 0;;) switch (_fun71245_ip) {
+            case 0:
+                var0 = arg0;
+                var2 = var0.entry;
+                var _closure2_slot0 = var2;
+                var3 = _closure1_slot1;
+                var4 = _closure1_slot3;
+                var0 = 2;
+                var0 = var4[var0];
+                var4 = undefined;
+                var0 = var3.bind(var4)(var0);
+                var2 = var0.bind(var4)(var2);
+                var0 = var2.isEntryAdmin;
+                var3 = var2.canEdit;
+                var2 = var2.canRemove;
+                var6 = new Array(0);
+                if (!var3) {
+                    _fun71245_ip = 176;
+                    continue _fun71245
+                }
+            case 70:
+                var7 = var6.push;
+                var3 = {};
+                var9 = _closure1_slot0;
+                var10 = _closure1_slot3;
+                var8 = 5;
+                var11 = var10[var8];
+                var11 = var9.bind(var4)(var11);
+                var12 = var11.intl;
+                var11 = var12.string;
+                var8 = var10[var8];
+                var8 = var9.bind(var4)(var8);
+                var8 = var8.t;
+                var8 = var8.XnuOvN;
+                var8 = var11.bind(var12)(var8);
+                var3.label = var8;
+                var8 = 9;
+                var8 = var10[var8];
+                var8 = var9.bind(var4)(var8);
+                var8 = var8.PencilIcon;
+                var3.IconComponent = var8;
+                var8 = function() { // Original name: action, environment: var5
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot3;
+                    var0 = 3;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var3 = var2.bind(var0)(var1);
+                    var2 = var3.open;
+                    var1 = {};
+                    var4 = _closure2_slot0;
+                    var1.entry = var4;
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+                };
+                var3.action = var8;
+                var3 = var7.bind(var6)(var3);
+            case 176:
+                if (!var2) {
+                    _fun71245_ip = 293;
+                    continue _fun71245
+                }
+            case 179:
+                var3 = var6.push;
+                var2 = {};
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot3;
+                var7 = 5;
+                var10 = var9[var7];
+                var10 = var8.bind(var4)(var10);
+                var11 = var10.intl;
+                var10 = var11.string;
+                var7 = var9[var7];
+                var7 = var8.bind(var4)(var7);
+                var7 = var7.t;
+                var7 = var7.KUxYWH;
+                var7 = var10.bind(var11)(var7);
+                var2.label = var7;
+                var7 = 10;
+                var7 = var9[var7];
+                var7 = var8.bind(var4)(var7);
+                var7 = var7.TrashIcon;
+                var2.IconComponent = var7;
+                var7 = 'destructive';
+                var2.variant = var7;
+                var7 = function() { // Original name: action, environment: var5
+                    var7 = _closure1_slot1;
+                    var9 = _closure1_slot3;
+                    var0 = 4;
+                    var1 = var9[var0];
+                    var0 = undefined;
+                    var3 = var7.bind(var0)(var1);
+                    var2 = var3.show;
+                    var1 = {};
+                    var8 = _closure1_slot0;
+                    var5 = 5;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var11 = var6.intl;
+                    var10 = var11.string;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var6 = var6.t;
+                    var6 = var6.KUxYWH;
+                    var6 = var10.bind(var11)(var6);
+                    var1.title = var6;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var12 = var6.intl;
+                    var11 = var12.formatToPlainString;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var6 = var6.t;
+                    var10 = var6["/5y0uV"];
+                    var6 = {};
+                    var13 = _closure2_slot0;
+                    var13 = var13.name;
+                    var6.guildName = var13;
+                    var6 = var11.bind(var12)(var10, var6);
+                    var1.body = var6;
+                    var6 = function() { // Original name: onConfirm, environment: var4
+                        var2 = _closure1_slot2;
+                        var1 = _closure1_slot3;
+                        var0 = 6;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var4 = var2.bind(var0)(var1);
+                        var3 = var4.removeDirectoryGuildEntry;
+                        var1 = _closure2_slot0;
+                        var2 = var1.channelId;
+                        var1 = var1.guildId;
+                        var1 = var3.bind(var4)(var2, var1);
+                        return var0;
+                    };
+                    var1.onConfirm = var6;
+                    var6 = 7;
+                    var6 = var9[var6];
+                    var6 = var7.bind(var0)(var6);
+                    var6 = var6.Colors;
+                    var6 = var6.RED;
+                    var1.confirmColor = var6;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var10 = var6.intl;
+                    var7 = var10.string;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var6 = var6.t;
+                    var6 = var6.N86XcP;
+                    var6 = var7.bind(var10)(var6);
+                    var1.confirmText = var6;
+                    var6 = var9[var5];
+                    var6 = var8.bind(var0)(var6);
+                    var7 = var6.intl;
+                    var6 = var7.string;
+                    var5 = var9[var5];
+                    var5 = var8.bind(var0)(var5);
+                    var5 = var5.t;
+                    var5 = var5["ETE/oC"];
+                    var5 = var6.bind(var7)(var5);
+                    var1.cancelText = var5;
+                    var4 = function() { // Original name: onCancel, environment: var4
+                        var2 = _closure1_slot1;
+                        var1 = _closure1_slot3;
+                        var0 = 4;
+                        var1 = var1[var0];
+                        var0 = undefined;
+                        var2 = var2.bind(var0)(var1);
+                        var1 = var2.close;
+                        var1 = var1.bind(var2)();
+                        return var0;
+                    };
+                    var1.onCancel = var4;
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+                };
+                var2.action = var7;
+                var2 = var3.bind(var6)(var2);
+            case 293:
+                if (var0) {
+                    _fun71245_ip = 410;
+                    continue _fun71245
+                }
+            case 296:
+                var2 = var6.push;
+                var0 = {};
+                var7 = _closure1_slot0;
+                var8 = _closure1_slot3;
+                var3 = 5;
+                var9 = var8[var3];
+                var9 = var7.bind(var4)(var9);
+                var10 = var9.intl;
+                var9 = var10.string;
+                var3 = var8[var3];
+                var3 = var7.bind(var4)(var3);
+                var3 = var3.t;
+                var3 = var3.Aen9eh;
+                var3 = var9.bind(var10)(var3);
+                var0.label = var3;
+                var3 = 11;
+                var3 = var8[var3];
+                var3 = var7.bind(var4)(var3);
+                var3 = var3.FlagIcon;
+                var0.IconComponent = var3;
+                var3 = 'destructive';
+                var0.variant = var3;
+                var3 = function() { // Original name: action, environment: var5
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot3;
+                    var0 = 8;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var3 = var2.bind(var0)(var1);
+                    var2 = var3.showReportModalForGuildDirectoryEntry;
+                    var1 = _closure2_slot0;
+                    var1 = var2.bind(var3)(var1);
+                    return var0;
+                };
+                var0.action = var3;
+                var0 = var2.bind(var6)(var0);
+            case 410:
+                var3 = var6.length;
+                var2 = 0;
+                var0 = null;
+                if (!(var2 !== var3)) {
+                    _fun71245_ip = 477;
+                    continue _fun71245
+                }
+            case 423:
+                var3 = _closure1_slot4;
+                var2 = _closure1_slot0;
+                var7 = _closure1_slot3;
+                var1 = 12;
+                var1 = var7[var1];
+                var1 = var2.bind(var4)(var1);
+                var2 = var1.ContextMenu;
+                var1 = {};
+                var1.items = var6;
+                var5 = function(arg0) { // Original name: children, environment: var5
+                    var2 = arg0;
+                    var7 = var2.ref;
+                    var0 = null;
+                    var1 = Object.create(var0);
+                    var0 = 0;
+                    var1.ref = var0;
+                    var13 = {};
+                    var12 = var2;
+                    var11 = var1;
+                    var12 = copyDataProperties(var13, var12, var11);
+                    var3 = _closure1_slot4;
+                    var5 = _closure1_slot0;
+                    var8 = _closure1_slot3;
+                    var0 = 13;
+                    var0 = var8[var0];
+                    var2 = undefined;
+                    var0 = var5.bind(var2)(var0);
+                    var1 = var0.IconButton;
+                    var0 = {};
+                    var0.ref = var7;
+                    var13 = var0;
+                    var4 = copyDataProperties(var13, var12);
+                    var7 = 'sm';
+                    var4 = 'size';
+                    var0[var4] = var7;
+                    var9 = 'secondary';
+                    var4 = 'variant';
+                    var0[var4] = var9;
+                    var4 = 5;
+                    var9 = var8[var4];
+                    var9 = var5.bind(var2)(var9);
+                    var10 = var9.intl;
+                    var9 = var10.string;
+                    var4 = var8[var4];
+                    var4 = var5.bind(var2)(var4);
+                    var4 = var4.t;
+                    var4 = var4.PdRCRg;
+                    var9 = var9.bind(var10)(var4);
+                    var4 = 'accessibilityLabel';
+                    var0[var4] = var9;
+                    var4 = 14;
+                    var4 = var8[var4];
+                    var4 = var5.bind(var2)(var4);
+                    var5 = var4.MoreHorizontalIcon;
+                    var4 = {};
+                    var4.size = var7;
+                    var7 = _closure1_slot1;
+                    var6 = 15;
+                    var6 = var8[var6];
+                    var6 = var7.bind(var2)(var6);
+                    var6 = var6.colors;
+                    var6 = var6.WHITE;
+                    var4.color = var6;
+                    var5 = var3.bind(var2)(var5, var4);
+                    var4 = 'icon';
+                    var0[var4] = var5;
+                    var0 = var3.bind(var2)(var1, var0);
+                    return var0;
+                };
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 477:
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 8875, 8882, 3890, 1234, 8884, 4829, 6451, 7473, 3228, 8886, 8888, 7468, 8889, 671, 2]);

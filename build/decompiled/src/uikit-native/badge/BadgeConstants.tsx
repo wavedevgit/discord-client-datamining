@@ -1,0 +1,42 @@
+// uikit-native/badge/BadgeConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = metroImportDefault;
+    var2 = exports;
+    var7 = dependencyMap;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var1);
+    var1 = 0;
+    var4 = var7[var1];
+    var0 = undefined;
+    var4 = var3.bind(var0)(var4);
+    var4 = var4.spacing;
+    var5 = var4.PX_16;
+    var1 = var7[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.spacing;
+    var4 = var1.PX_12;
+    var1 = 6;
+    var3 = var5 + var1;
+    var1 = var4 + var1;
+    var6 = 1;
+    var7 = var7[var6];
+    var6 = require;
+    var8 = var6.bind(var0)(var7);
+    var7 = var8.fileFinishedImporting;
+    var6 = 'uikit-native/badge/BadgeConstants.tsx';
+    var6 = var7.bind(var8)(var6);
+    var2.BADGE_SIZE = var5;
+    var2.BADGE_SIZE_UNREAD = var4;
+    var4 = 3;
+    var2.BADGE_PADDING = var4;
+    var2.BADGE_MASK_SIZE = var3;
+    var2.BADGE_MASK_UNREAD_SIZE = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [671, 2]);

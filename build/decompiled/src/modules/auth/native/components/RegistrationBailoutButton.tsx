@@ -1,0 +1,98 @@
+// modules/auth/native/components/RegistrationBailoutButton.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {
+        'marginBottom': 16,
+        'marginLeft': 'auto',
+        'marginRight': 'auto'
+    };
+    var3.bail = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/auth/native/components/RegistrationBailoutButton.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: _default, environment: var1
+        var0 = arg0;
+        var4 = var0.onBail;
+        var0 = _closure1_slot4;
+        var3 = undefined;
+        var5 = var0.bind(var3)();
+        var2 = _closure1_slot3;
+        var10 = _closure1_slot1;
+        var8 = _closure1_slot2;
+        var6 = 3;
+        var0 = var8[var6];
+        var1 = var10.bind(var3)(var0);
+        var0 = {};
+        var9 = true;
+        var0.shrink = var9;
+        var7 = _closure1_slot0;
+        var9 = 4;
+        var11 = var8[var9];
+        var11 = var7.bind(var3)(var11);
+        var12 = var11.intl;
+        var11 = var12.string;
+        var9 = var8[var9];
+        var9 = var7.bind(var3)(var9);
+        var9 = var9.t;
+        var9 = var9.CZ7wvG;
+        var9 = var11.bind(var12)(var9);
+        var0.text = var9;
+        var9 = var8[var6];
+        var9 = var10.bind(var3)(var9);
+        var9 = var9.Sizes;
+        var9 = var9.MEDIUM;
+        var0.size = var9;
+        var9 = var8[var6];
+        var9 = var7.bind(var3)(var9);
+        var9 = var9.ButtonLooks;
+        var9 = var9.LINK;
+        var0.look = var9;
+        var6 = var8[var6];
+        var6 = var7.bind(var3)(var6);
+        var6 = var6.ButtonColors;
+        var6 = var6.LINK;
+        var0.color = var6;
+        var5 = var5.bail;
+        var0.style = var5;
+        var0.onPress = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 1297, 4829, 1234, 2]);

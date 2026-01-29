@@ -1,0 +1,44 @@
+// modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var0 = 'guild';
+    var3.GUILD = var0;
+    var0 = 'friend_dm';
+    var3.FRIEND_DM = var0;
+    var0 = 'non_friend_dm';
+    var3.NON_FRIEND_DM = var0;
+    var1 = {};
+    var4 = 0;
+    var1.Attachment = var4;
+    var0 = 'Attachment';
+    var1[var4] = var0;
+    var5 = 1;
+    var1.Embed = var5;
+    var0 = 'Embed';
+    var1[var5] = var0;
+    var5 = 2;
+    var1.GenericMedia = var5;
+    var0 = 'GenericMedia';
+    var1[var5] = var0;
+    var0 = dependencyMap;
+    var5 = var0[var4];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.ContentHarmTypeChannel = var3;
+    var2.ObscuredMediaTypes = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

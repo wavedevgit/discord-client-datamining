@@ -1,0 +1,32 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var2 = {};
+    var0 = true;
+    var2.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var1, var0, var2);
+    var0 = 'auto.interaction';
+    var1.SPAN_ORIGIN_AUTO_INTERACTION = var0;
+    var0 = 'manual.interaction';
+    var1.SPAN_ORIGIN_MANUAL_INTERACTION = var0;
+    var0 = 'manual.app.start';
+    var1.SPAN_ORIGIN_MANUAL_APP_START = var0;
+    var0 = 'auto.app.start';
+    var1.SPAN_ORIGIN_AUTO_APP_START = var0;
+    var0 = 'auto.navigation.react_native_navigation';
+    var1.SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NATIVE_NAVIGATION = var0;
+    var0 = 'auto.navigation.react_navigation';
+    var1.SPAN_ORIGIN_AUTO_NAVIGATION_REACT_NAVIGATION = var0;
+    var0 = 'auto.navigation.custom';
+    var1.SPAN_ORIGIN_AUTO_NAVIGATION_CUSTOM = var0;
+    var0 = 'auto.ui.time_to_display';
+    var1.SPAN_ORIGIN_AUTO_UI_TIME_TO_DISPLAY = var0;
+    var0 = 'manual.ui.time_to_display';
+    var1.SPAN_ORIGIN_MANUAL_UI_TIME_TO_DISPLAY = var0;
+    var0 = undefined;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, []);

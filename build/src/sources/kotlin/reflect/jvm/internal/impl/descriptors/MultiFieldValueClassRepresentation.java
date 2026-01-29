@@ -1,0 +1,43 @@
+package kotlin.reflect.jvm.internal.impl.descriptors;
+
+import java.util.List;
+import java.util.Map;
+import kotlin.Pair;
+import kotlin.collections.o0;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.name.Name;
+import kotlin.reflect.jvm.internal.impl.types.model.RigidTypeMarker;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class MultiFieldValueClassRepresentation<Type extends RigidTypeMarker> extends ValueClassRepresentation<Type> {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final List f33588a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Map f33589b;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public MultiFieldValueClassRepresentation(@NotNull List<? extends Pair<Name, ? extends Type>> underlyingPropertyNamesToTypes) {
+        super(null);
+        Intrinsics.checkNotNullParameter(underlyingPropertyNamesToTypes, "underlyingPropertyNamesToTypes");
+        this.f33588a = underlyingPropertyNamesToTypes;
+        this.f33589b = o0.u(getUnderlyingPropertyNamesToTypes());
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.descriptors.ValueClassRepresentation
+    public boolean containsPropertyWithName(@NotNull Name name) {
+        Intrinsics.checkNotNullParameter(name, "name");
+        return this.f33589b.containsKey(name);
+    }
+
+    @NotNull
+    public List<Pair<Name, Type>> getUnderlyingPropertyNamesToTypes() {
+        return this.f33588a;
+    }
+
+    @NotNull
+    public String toString() {
+        return "MultiFieldValueClassRepresentation(underlyingPropertyNamesToTypes=" + getUnderlyingPropertyNamesToTypes() + ')';
+    }
+}

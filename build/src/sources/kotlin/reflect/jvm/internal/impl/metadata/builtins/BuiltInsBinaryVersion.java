@@ -1,0 +1,60 @@
+package kotlin.reflect.jvm.internal.impl.metadata.builtins;
+
+import java.io.DataInputStream;
+import java.io.InputStream;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import kotlin.collections.CollectionsKt;
+import kotlin.collections.m0;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.ranges.IntRange;
+import kotlin.reflect.jvm.internal.impl.metadata.deserialization.BinaryVersion;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class BuiltInsBinaryVersion extends BinaryVersion {
+    @NotNull
+    public static final Companion Companion = new Companion(null);
+    @NotNull
+    public static final BuiltInsBinaryVersion INSTANCE = new BuiltInsBinaryVersion(1, 0, 7);
+    @NotNull
+    public static final BuiltInsBinaryVersion INVALID_VERSION = new BuiltInsBinaryVersion(new int[0]);
+
+    @SourceDebugExtension({"SMAP\nBuiltInsBinaryVersion.kt\nKotlin\n*S Kotlin\n*F\n+ 1 BuiltInsBinaryVersion.kt\norg/jetbrains/kotlin/metadata/builtins/BuiltInsBinaryVersion$Companion\n+ 2 _Collections.kt\nkotlin/collections/CollectionsKt___CollectionsKt\n*L\n1#1,40:1\n1563#2:41\n1634#2,3:42\n*S KotlinDebug\n*F\n+ 1 BuiltInsBinaryVersion.kt\norg/jetbrains/kotlin/metadata/builtins/BuiltInsBinaryVersion$Companion\n*L\n36#1:41\n36#1:42,3\n*E\n"})
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        @NotNull
+        public final BuiltInsBinaryVersion readFrom(@NotNull InputStream stream) {
+            Intrinsics.checkNotNullParameter(stream, "stream");
+            DataInputStream dataInputStream = new DataInputStream(stream);
+            IntRange intRange = new IntRange(1, dataInputStream.readInt());
+            ArrayList arrayList = new ArrayList(CollectionsKt.w(intRange, 10));
+            Iterator it = intRange.iterator();
+            while (it.hasNext()) {
+                ((m0) it).nextInt();
+                arrayList.add(Integer.valueOf(dataInputStream.readInt()));
+            }
+            int[] g12 = CollectionsKt.g1(arrayList);
+            return new BuiltInsBinaryVersion(Arrays.copyOf(g12, g12.length));
+        }
+
+        private Companion() {
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public BuiltInsBinaryVersion(@NotNull int... numbers) {
+        super(Arrays.copyOf(numbers, numbers.length));
+        Intrinsics.checkNotNullParameter(numbers, "numbers");
+    }
+
+    public boolean isCompatibleWithCurrentCompilerVersion() {
+        return a(INSTANCE);
+    }
+}

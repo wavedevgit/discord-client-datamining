@@ -1,0 +1,64 @@
+package com.android.volley;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public interface b {
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+    public static class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        public byte[] f9158a;
+
+        /* renamed from: b  reason: collision with root package name */
+        public String f9159b;
+
+        /* renamed from: c  reason: collision with root package name */
+        public long f9160c;
+
+        /* renamed from: d  reason: collision with root package name */
+        public long f9161d;
+
+        /* renamed from: e  reason: collision with root package name */
+        public long f9162e;
+
+        /* renamed from: f  reason: collision with root package name */
+        public long f9163f;
+
+        /* renamed from: g  reason: collision with root package name */
+        public Map f9164g = Collections.EMPTY_MAP;
+
+        /* renamed from: h  reason: collision with root package name */
+        public List f9165h;
+
+        public boolean a() {
+            return b(System.currentTimeMillis());
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public boolean b(long j10) {
+            if (this.f9162e < j10) {
+                return true;
+            }
+            return false;
+        }
+
+        /* JADX INFO: Access modifiers changed from: package-private */
+        public boolean c(long j10) {
+            if (this.f9163f < j10) {
+                return true;
+            }
+            return false;
+        }
+    }
+
+    a a(String str);
+
+    void b(String str, boolean z10);
+
+    void c(String str, a aVar);
+
+    void initialize();
+}

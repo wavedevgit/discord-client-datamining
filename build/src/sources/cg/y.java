@@ -1,0 +1,9 @@
+package cg;
+
+import android.app.PendingIntent;
+import android.os.IInterface;
+import com.google.android.gms.common.api.Status;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public interface y extends IInterface {
+    void y0(Status status, PendingIntent pendingIntent);
+}

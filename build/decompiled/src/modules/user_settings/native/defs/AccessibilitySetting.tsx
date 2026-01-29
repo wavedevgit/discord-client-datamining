@@ -1,0 +1,274 @@
+// modules/user_settings/native/defs/AccessibilitySetting.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var3 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var _closure1_slot2 = var5;
+    var0 = function() { // Original name: useDismissibleContentTypes, environment: var8
+        _fun84688: for (var _fun84688_ip = 0;;) switch (_fun84688_ip) {
+            case 0:
+                var2 = _closure1_slot1;
+                var3 = _closure1_slot2;
+                var0 = 5;
+                var0 = var3[var0];
+                var3 = undefined;
+                var4 = var2.bind(var3)(var0);
+                var2 = var4.useExperiment;
+                var0 = {};
+                var5 = 'SettingsOverview';
+                var0.location = var5;
+                var0 = var2.bind(var4)(var0);
+                var0 = var0.enabled;
+                if (var0) {
+                    _fun84688_ip = 62;
+                    continue _fun84688
+                }
+            case 56:
+                var0 = new Array(0);
+                _fun84688_ip = 105;
+                continue _fun84688;
+            case 62:
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot2;
+                var1 = 6;
+                var1 = var4[var1];
+                var1 = var2.bind(var3)(var1);
+                var1 = var1.DismissibleContent;
+                var2 = var1.MOBILE_ACCESSIBILITY_COLOR_SETTINGS;
+                var1 = new Array(1);
+                var1[0] = var2;
+                var0 = var1;
+            case 105:
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot3 = var1;
+    var1 = 1;
+    var3 = var5[var1];
+    var1 = arg3;
+    var1 = var1.bind(var0)(var3);
+    var _closure1_slot4 = var1;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var9 = var1.UserSettingsSections;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var1 = var1.ContentDismissActionType;
+    var _closure1_slot5 = var1;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var1 = var1.jsx;
+    var _closure1_slot6 = var1;
+    var1 = 10;
+    var1 = var5[var1];
+    var6 = var4.bind(var0)(var1);
+    var3 = var6.createRoute;
+    var1 = {};
+    var7 = function() { // Original name: title, environment: var8
+        var4 = _closure1_slot0;
+        var5 = _closure1_slot2;
+        var0 = 9;
+        var1 = var5[var0];
+        var3 = undefined;
+        var1 = var4.bind(var3)(var1);
+        var2 = var1.intl;
+        var1 = var2.string;
+        var0 = var5[var0];
+        var0 = var4.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0.G0neg7;
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1.title = var7;
+    var7 = null;
+    var1.parent = var7;
+    var7 = 11;
+    var7 = var5[var7];
+    var7 = var4.bind(var0)(var7);
+    var7 = var7.AccessibilityIcon;
+    var1.IconComponent = var7;
+    var7 = function() { // Original name: useTrailing, environment: var8
+        _fun84690: for (var _fun84690_ip = 0;;) switch (_fun84690_ip) {
+            case 0:
+                var0 = _closure1_slot7;
+                var4 = undefined;
+                var7 = var0.bind(var4)();
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var0 = 7;
+                var0 = var3[var0];
+                var2 = var2.bind(var4)(var0);
+                var0 = var2.useSelectedDismissibleContent;
+                var3 = var0.bind(var2)(var7);
+                var2 = _closure1_slot3;
+                var0 = 2;
+                var2 = var2.bind(var4)(var3, var0);
+                var0 = 0;
+                var6 = var2[var0];
+                var0 = 1;
+                var0 = var2[var0];
+                var3 = null;
+                var2 = var3 != var6;
+                var0 = null;
+                if (!var2) {
+                    _fun84690_ip = 194;
+                    continue _fun84690
+                }
+            case 81:
+                var5 = var3 == var7;
+                var2 = undefined;
+                if (var5) {
+                    _fun84690_ip = 100;
+                    continue _fun84690
+                }
+            case 90:
+                var5 = var7.includes;
+                var2 = var5.bind(var7)(var6);
+            case 100:
+                var0 = null;
+                if (!var2) {
+                    _fun84690_ip = 194;
+                    continue _fun84690
+                }
+            case 105:
+                var3 = _closure1_slot6;
+                var8 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var1 = 8;
+                var1 = var9[var1];
+                var1 = var8.bind(var4)(var1);
+                var2 = var1.TextBadge;
+                var1 = {};
+                var5 = 9;
+                var6 = var9[var5];
+                var6 = var8.bind(var4)(var6);
+                var7 = var6.intl;
+                var6 = var7.string;
+                var5 = var9[var5];
+                var5 = var8.bind(var4)(var5);
+                var5 = var5.t;
+                var5 = var5.y2b7CA;
+                var5 = var6.bind(var7)(var5);
+                var1.text = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 194:
+                return var0;
+        }
+    };
+    var1.useTrailing = var7;
+    var7 = function() { // Original name: usePreNavigationAction, environment: var8
+        var2 = _closure1_slot7;
+        var5 = undefined;
+        var6 = var2.bind(var5)();
+        var _closure2_slot0 = var6;
+        var3 = _closure1_slot0;
+        var4 = _closure1_slot2;
+        var2 = 7;
+        var2 = var4[var2];
+        var3 = var3.bind(var5)(var2);
+        var2 = var3.useSelectedDismissibleContent;
+        var4 = var2.bind(var3)(var6);
+        var3 = _closure1_slot3;
+        var2 = 2;
+        var3 = var3.bind(var5)(var4, var2);
+        var2 = 0;
+        var4 = var3[var2];
+        var _closure2_slot1 = var4;
+        var2 = 1;
+        var5 = var3[var2];
+        var _closure2_slot2 = var5;
+        var3 = _closure1_slot4;
+        var2 = var3.useCallback;
+        var1 = new Array(3);
+        var1[0] = var6;
+        var1[1] = var5;
+        var1[2] = var4;
+        var0 = function() { // Environment: var0
+            _fun84692: for (var _fun84692_ip = 0;;) switch (_fun84692_ip) {
+                case 0:
+                    var1 = _closure2_slot1;
+                    var3 = null;
+                    var1 = var3 != var1;
+                    if (!var1) {
+                        _fun84692_ip = 24;
+                        continue _fun84692
+                    }
+                case 16:
+                    var2 = _closure2_slot0;
+                    var1 = var3 != var2;
+                case 24:
+                    if (!var1) {
+                        _fun84692_ip = 45;
+                        continue _fun84692
+                    }
+                case 27:
+                    var4 = _closure2_slot0;
+                    var3 = var4.includes;
+                    var2 = _closure2_slot1;
+                    var1 = var3.bind(var4)(var2);
+                case 45:
+                    if (!var1) {
+                        _fun84692_ip = 72;
+                        continue _fun84692
+                    }
+                case 48:
+                    var2 = _closure2_slot2;
+                    var0 = _closure1_slot5;
+                    var1 = var0.TAKE_ACTION;
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                case 72:
+                    var0 = true;
+                    return var0;
+            }
+        };
+        var0 = var2.bind(var3)(var0, var1);
+        return var0;
+    };
+    var1.usePreNavigationAction = var7;
+    var7 = {};
+    var9 = var9.ACCESSIBILITY;
+    var7.route = var9;
+    var8 = function() { // Original name: getComponent, environment: var8
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot2;
+        var0 = 12;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var0 = var0.default;
+        return var0;
+    };
+    var7.getComponent = var8;
+    var1.screen = var7;
+    var1 = var3.bind(var6)(var1);
+    var3 = 13;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/user_settings/native/defs/AccessibilitySetting.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 31, 660, 1369, 33, 10819, 1358, 5915, 8233, 1234, 8939, 10820, 10822, 2]);

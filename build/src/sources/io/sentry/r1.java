@@ -1,0 +1,325 @@
+package io.sentry;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class r1 {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ArrayList f30523a = new ArrayList();
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static /* synthetic */ class a {
+
+        /* renamed from: a  reason: collision with root package name */
+        static final /* synthetic */ int[] f30524a;
+
+        static {
+            int[] iArr = new int[io.sentry.vendor.gson.stream.b.values().length];
+            f30524a = iArr;
+            try {
+                iArr[io.sentry.vendor.gson.stream.b.BEGIN_ARRAY.ordinal()] = 1;
+            } catch (NoSuchFieldError unused) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.END_ARRAY.ordinal()] = 2;
+            } catch (NoSuchFieldError unused2) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.BEGIN_OBJECT.ordinal()] = 3;
+            } catch (NoSuchFieldError unused3) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.END_OBJECT.ordinal()] = 4;
+            } catch (NoSuchFieldError unused4) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.NAME.ordinal()] = 5;
+            } catch (NoSuchFieldError unused5) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.STRING.ordinal()] = 6;
+            } catch (NoSuchFieldError unused6) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.NUMBER.ordinal()] = 7;
+            } catch (NoSuchFieldError unused7) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.BOOLEAN.ordinal()] = 8;
+            } catch (NoSuchFieldError unused8) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.NULL.ordinal()] = 9;
+            } catch (NoSuchFieldError unused9) {
+            }
+            try {
+                f30524a[io.sentry.vendor.gson.stream.b.END_DOCUMENT.ordinal()] = 10;
+            } catch (NoSuchFieldError unused10) {
+            }
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface b {
+        Object a();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public interface c {
+        Object getValue();
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class f implements c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final String f30527a;
+
+        f(String str) {
+            this.f30527a = str;
+        }
+
+        @Override // io.sentry.r1.c
+        public Object getValue() {
+            return this.f30527a;
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class g implements c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final Object f30528a;
+
+        g(Object obj) {
+            this.f30528a = obj;
+        }
+
+        @Override // io.sentry.r1.c
+        public Object getValue() {
+            return this.f30528a;
+        }
+    }
+
+    public static /* synthetic */ Object a() {
+        return null;
+    }
+
+    private c f() {
+        if (this.f30523a.isEmpty()) {
+            return null;
+        }
+        ArrayList arrayList = this.f30523a;
+        return (c) arrayList.get(arrayList.size() - 1);
+    }
+
+    private boolean g() {
+        if (i()) {
+            return true;
+        }
+        c f10 = f();
+        l();
+        if (f() instanceof f) {
+            f fVar = (f) f();
+            l();
+            e eVar = (e) f();
+            if (fVar != null && f10 != null && eVar != null) {
+                eVar.f30526a.put(fVar.f30527a, f10.getValue());
+                return false;
+            }
+            return false;
+        } else if (f() instanceof d) {
+            d dVar = (d) f();
+            if (f10 != null && dVar != null) {
+                dVar.f30525a.add(f10.getValue());
+                return false;
+            }
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+    private boolean h(b bVar) {
+        Object a10 = bVar.a();
+        if (f() == null && a10 != null) {
+            m(new g(a10));
+            return true;
+        } else if (f() instanceof f) {
+            l();
+            ((e) f()).f30526a.put(((f) f()).f30527a, a10);
+            return false;
+        } else if (f() instanceof d) {
+            ((d) f()).f30525a.add(a10);
+            return false;
+        } else {
+            return false;
+        }
+    }
+
+    private boolean i() {
+        if (this.f30523a.size() == 1) {
+            return true;
+        }
+        return false;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public Object j(s1 s1Var) {
+        try {
+            try {
+                return Integer.valueOf(s1Var.nextInt());
+            } catch (Exception unused) {
+                return Double.valueOf(s1Var.nextDouble());
+            }
+        } catch (Exception unused2) {
+            return Long.valueOf(s1Var.nextLong());
+        }
+    }
+
+    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    private void k(final s1 s1Var) {
+        boolean z10;
+        switch (a.f30524a[s1Var.peek().ordinal()]) {
+            case 1:
+                s1Var.u();
+                m(new d(null));
+                z10 = false;
+                break;
+            case 2:
+                s1Var.s();
+                z10 = g();
+                break;
+            case 3:
+                s1Var.r();
+                m(new e(null));
+                z10 = false;
+                break;
+            case 4:
+                s1Var.y();
+                z10 = g();
+                break;
+            case 5:
+                m(new f(s1Var.l0()));
+                z10 = false;
+                break;
+            case 6:
+                z10 = h(new b() { // from class: io.sentry.n1
+                    @Override // io.sentry.r1.b
+                    public final Object a() {
+                        Object e12;
+                        e12 = s1.this.e1();
+                        return e12;
+                    }
+                });
+                break;
+            case 7:
+                z10 = h(new b() { // from class: io.sentry.o1
+                    @Override // io.sentry.r1.b
+                    public final Object a() {
+                        Object j10;
+                        j10 = r1.this.j(s1Var);
+                        return j10;
+                    }
+                });
+                break;
+            case 8:
+                z10 = h(new b() { // from class: io.sentry.p1
+                    @Override // io.sentry.r1.b
+                    public final Object a() {
+                        Object valueOf;
+                        valueOf = Boolean.valueOf(s1.this.a());
+                        return valueOf;
+                    }
+                });
+                break;
+            case 9:
+                s1Var.h();
+                z10 = h(new b() { // from class: io.sentry.q1
+                    @Override // io.sentry.r1.b
+                    public final Object a() {
+                        return r1.a();
+                    }
+                });
+                break;
+            case 10:
+                z10 = true;
+                break;
+            default:
+                z10 = false;
+                break;
+        }
+        if (!z10) {
+            k(s1Var);
+        }
+    }
+
+    private void l() {
+        if (this.f30523a.isEmpty()) {
+            return;
+        }
+        ArrayList arrayList = this.f30523a;
+        arrayList.remove(arrayList.size() - 1);
+    }
+
+    private void m(c cVar) {
+        this.f30523a.add(cVar);
+    }
+
+    public Object e(s1 s1Var) {
+        k(s1Var);
+        c f10 = f();
+        if (f10 != null) {
+            return f10.getValue();
+        }
+        return null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class d implements c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final ArrayList f30525a;
+
+        private d() {
+            this.f30525a = new ArrayList();
+        }
+
+        @Override // io.sentry.r1.c
+        public Object getValue() {
+            return this.f30525a;
+        }
+
+        /* synthetic */ d(a aVar) {
+            this();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class e implements c {
+
+        /* renamed from: a  reason: collision with root package name */
+        final HashMap f30526a;
+
+        private e() {
+            this.f30526a = new HashMap();
+        }
+
+        @Override // io.sentry.r1.c
+        public Object getValue() {
+            return this.f30526a;
+        }
+
+        /* synthetic */ e(a aVar) {
+            this();
+        }
+    }
+}

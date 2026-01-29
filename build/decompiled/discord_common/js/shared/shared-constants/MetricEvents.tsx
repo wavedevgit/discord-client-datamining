@@ -1,0 +1,127 @@
+// ../discord_common/js/shared/shared-constants/MetricEvents.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var5 = var0.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var1 = true;
+    var3.value = var1;
+    var1 = '__esModule';
+    var1 = var4.bind(var5)(var2, var1, var3);
+    var3 = {};
+    var1 = 'app_crashed';
+    var3.APP_CRASHED = var1;
+    var1 = 'socket_crashed';
+    var3.SOCKET_CRASHED = var1;
+    var1 = 'message_request_view';
+    var3.MESSAGE_REQUEST_VIEW = var1;
+    var1 = 'spam_message_request_view';
+    var3.SPAM_MESSAGE_REQUEST_VIEW = var1;
+    var1 = 'spam_message_request_error_view';
+    var3.SPAM_MESSAGE_REQUEST_ERROR_VIEW = var1;
+    var1 = 'family_center_view';
+    var3.FAMILY_CENTER_VIEW = var1;
+    var1 = 'safety_hub_view';
+    var3.SAFETY_HUB_VIEW = var1;
+    var1 = 'appeal_ingestion_view';
+    var3.APPEAL_INGESTION_VIEW = var1;
+    var1 = 'message_request_count_drift';
+    var3.MESSAGE_REQUEST_COUNT_DRIFT = var1;
+    var1 = 'forum_channel_grid_auto_enabled';
+    var3.FORUM_CHANNEL_GRID_AUTO_ENABLED = var1;
+    var1 = 'remix_font_loading_error';
+    var3.REMIX_FONT_LOADING_ERROR = var1;
+    var1 = 'afk_not_idle';
+    var3.AFK_NOT_IDLE = var1;
+    var1 = 'captcha_event';
+    var3.CAPTCHA_EVENT = var1;
+    var1 = 'safety_warning_view';
+    var3.SAFETY_WARNING_VIEW = var1;
+    var1 = 'safety_warning_modal_view';
+    var3.SAFETY_WARNING_MODAL_VIEW = var1;
+    var1 = 'explicit_media_scan_client_timed_out';
+    var3.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT = var1;
+    var1 = 'explicit_media_scan_client_timing';
+    var3.EXPLICIT_MEDIA_SCAN_CLIENT_TIMING = var1;
+    var1 = 'explicit_media_sender_fp_button_view';
+    var3.EXPLICIT_MEDIA_SENDER_FP_BUTTON_VIEW = var1;
+    var1 = 'explicit_media_pending_message_loaded';
+    var3.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED = var1;
+    var1 = 'explicit_media_pending_message_loaded_v2';
+    var3.EXPLICIT_MEDIA_PENDING_MESSAGE_LOADED_V2 = var1;
+    var1 = 'explicit_media_scan_client_timed_out_distribution';
+    var3.EXPLICIT_MEDIA_SCAN_CLIENT_TIMED_OUT_DISTRIBUTION = var1;
+    var1 = 'explicit_media_scan_client_timeout_create';
+    var3.EXPLICIT_MEDIA_SCAN_CLIENT_TIMEOUT_CREATE = var1;
+    var1 = 'rtc_connection_desync_store_unknown_user';
+    var3.RTC_CONNECTION_DESYNC_STORE_UNKNOWN_USER = var1;
+    var1 = 'rtc_connection_duplicate_user';
+    var3.RTC_CONNECTION_DUPLICATE_USER = var1;
+    var1 = 'quest_content_impression';
+    var3.QUEST_CONTENT_IMPRESSION = var1;
+    var1 = 'quest_bar_render_delay';
+    var3.QUEST_BAR_RENDER_DELAY = var1;
+    var1 = 'quest_content_rendering_failure';
+    var3.QUEST_CONTENT_RENDERING_FAILURE = var1;
+    var1 = 'quest_video_error';
+    var3.QUEST_VIDEO_ERROR = var1;
+    var1 = 'OtaCheckAttempt';
+    var3.OTA_CHECK_ATTEMPT = var1;
+    var1 = 'OtaAssetDownloadAttempt';
+    var3.OTA_ASSET_DOWNLOAD_ATTEMPT = var1;
+    var1 = 'ota_update_check';
+    var3.OTA_UPDATE_CHECK = var1;
+    var1 = 'ota_asset_download';
+    var3.OTA_ASSET_DOWNLOAD = var1;
+    var1 = 'debug_ota_200_timeout';
+    var3.DEBUG_OTA_200_TIMEOUT = var1;
+    var1 = 'image_load_error';
+    var3.IMAGE_LOAD_ERROR = var1;
+    var1 = 'dm_settings_upsell_view';
+    var3.DM_SETTINGS_UPSELL_VIEW = var1;
+    var1 = 'captcha_serve_volume_distribution';
+    var3.CAPTCHA_SERVE_VOLUME_DISTRIBUTION = var1;
+    var1 = 'in_app_report_navigate_to_nonexistent_node';
+    var3.IN_APP_REPORT_NAVIGATE_TO_NONEXISTENT_NODE = var1;
+    var1 = 'billing_manager.operation';
+    var3.BILLING_MANAGER_OPERATION = var1;
+    var1 = {};
+    var6 = var0.Set;
+    var4 = var6.prototype;
+    var5 = Object.create(var4, {
+        constructor: {
+            value: var6
+        }
+    });
+    var9 = ['OtaAssetDownloadAttempt', 'OtaCheckAttempt', 'afk_not_idle', 'app_crashed', 'appeal_ingestion_view', 'billing_manager.operation', 'captcha_event', 'captcha_serve_volume_distribution', 'debug_ota_200_timeout', 'dm_settings_upsell_view', 'explicit_media_pending_message_loaded', 'explicit_media_pending_message_loaded_v2', 'explicit_media_scan_client_timed_out', 'explicit_media_scan_client_timed_out_distribution', 'explicit_media_scan_client_timeout_create', 'explicit_media_scan_client_timing', 'explicit_media_sender_fp_button_view', 'family_center_view', 'forum_channel_grid_auto_enabled', 'image_load_error', 'in_app_report_navigate_to_nonexistent_node', 'message_request_count_drift', 'message_request_view', 'ota_asset_download', 'ota_update_check', 'quest_bar_render_delay', 'quest_content_impression', 'quest_content_rendering_failure', 'quest_video_error', 'remix_font_loading_error', 'safety_hub_view', 'safety_warning_modal_view', 'safety_warning_view', 'socket_crashed', 'spam_message_request_error_view', 'spam_message_request_view'];
+    var10 = var5;
+    var4 = new var10[var6](var9, var8);
+    var4 = var4 instanceof Object ? var4 : var5;
+    var1.ALL = var4;
+    var5 = var0.Set;
+    var0 = var5.prototype;
+    var4 = Object.create(var0, {
+        constructor: {
+            value: var5
+        }
+    });
+    var9 = ['debug_ota_200_timeout', 'rtc_connection_desync_store_unknown_user', 'rtc_connection_duplicate_user'];
+    var10 = var4;
+    var0 = new var10[var5](var9, var8);
+    var0 = var0 instanceof Object ? var0 : var4;
+    var1.DEPRECATED = var0;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = '../discord_common/js/shared/shared-constants/MetricEvents.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.MetricEvents = var3;
+    var2.MetricEventsSets = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

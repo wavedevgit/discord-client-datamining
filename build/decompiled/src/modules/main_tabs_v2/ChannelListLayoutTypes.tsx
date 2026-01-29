@@ -1,0 +1,43 @@
+// modules/main_tabs_v2/ChannelListLayoutTypes.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var0 = 'cozy';
+    var3.COZY = var0;
+    var0 = 'cozy-drawer';
+    var3.COZY_DRAWER = var0;
+    var0 = 'cozy-drawer-smol';
+    var3.COZY_DRAWER_SMOL = var0;
+    var0 = 'compact';
+    var3.COMPACT = var0;
+    var0 = 'minimal';
+    var3.MINIMAL = var0;
+    var1 = {};
+    var0 = 'all';
+    var1.ALL = var0;
+    var0 = 'unreads';
+    var1.UNREADS = var0;
+    var0 = 'none';
+    var1.NONE = var0;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/main_tabs_v2/ChannelListLayoutTypes.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.ChannelListLayoutTypes = var3;
+    var2.MessagePreviewTypes = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

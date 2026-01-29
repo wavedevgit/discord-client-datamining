@@ -1,0 +1,43 @@
+// modules/directory_channels/native/GuildDirectoryConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var0 = 'CREATE_OR_ADD';
+    var3.CREATE_OR_ADD = var0;
+    var0 = 'DESCRIPTION';
+    var3.DESCRIPTION = var0;
+    var0 = 'TEMPLATES';
+    var3.TEMPLATES = var0;
+    var0 = 'CREATE';
+    var3.CREATE = var0;
+    var1 = {};
+    var4 = 1;
+    var1.GUILD_LIST_TOP = var4;
+    var0 = 'GUILD_LIST_TOP';
+    var1[var4] = var0;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/directory_channels/native/GuildDirectoryConstants.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.GuildDirectoryCreate = var3;
+    var3 = 300;
+    var2.GUILD_DIRECTORY_BASE_HEADER_HEIGHT = var3;
+    var3 = 96;
+    var2.GUILD_DIRECTORY_PROGRESS_BAR_HEIGHT = var3;
+    var2.DirectoryChannelScrollBehavior = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

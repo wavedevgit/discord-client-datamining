@@ -1,0 +1,18 @@
+package com.facebook.react;
+
+import android.content.Context;
+import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
+import com.facebook.react.soloader.OpenSourceMergedSoMapping;
+import com.facebook.soloader.SoLoader;
+import java.io.IOException;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class ReactNativeApplicationEntryPoint {
+    public static void loadReactNative(Context context) {
+        try {
+            SoLoader.l(context, OpenSourceMergedSoMapping.INSTANCE);
+            DefaultNewArchitectureEntryPoint.load();
+        } catch (IOException e10) {
+            throw new RuntimeException(e10);
+        }
+    }
+}

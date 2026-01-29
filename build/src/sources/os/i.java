@@ -1,0 +1,45 @@
+package os;
+
+import kotlin.jvm.functions.Function3;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class i implements h {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final Object f44726a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final Function3 f44727b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final Function3 f44728c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Function3 f44729d;
+
+    public i(Object obj, Function3 function3, Function3 function32, Function3 function33) {
+        this.f44726a = obj;
+        this.f44727b = function3;
+        this.f44728c = function32;
+        this.f44729d = function33;
+    }
+
+    @Override // os.j
+    public Function3 a() {
+        return this.f44727b;
+    }
+
+    @Override // os.j
+    public Function3 b() {
+        return this.f44729d;
+    }
+
+    @Override // os.j
+    public Function3 c() {
+        return this.f44728c;
+    }
+
+    @Override // os.j
+    public Object d() {
+        return this.f44726a;
+    }
+}

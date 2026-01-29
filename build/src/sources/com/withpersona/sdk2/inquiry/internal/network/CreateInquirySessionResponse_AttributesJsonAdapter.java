@@ -1,0 +1,118 @@
+package com.withpersona.sdk2.inquiry.internal.network;
+
+import com.squareup.moshi.m;
+import com.squareup.moshi.t;
+import com.squareup.moshi.w;
+import com.withpersona.sdk2.inquiry.internal.network.CreateInquirySessionResponse;
+import java.lang.reflect.Constructor;
+import kotlin.Metadata;
+import kotlin.collections.x0;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u000f\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0004\b\u0005\u0010\u0006J\u000f\u0010\b\u001a\u00020\u0007H\u0016¢\u0006\u0004\b\b\u0010\tJ\u0017\u0010\f\u001a\u00020\u00022\u0006\u0010\u000b\u001a\u00020\nH\u0016¢\u0006\u0004\b\f\u0010\rJ!\u0010\u0012\u001a\u00020\u00112\u0006\u0010\u000f\u001a\u00020\u000e2\b\u0010\u0010\u001a\u0004\u0018\u00010\u0002H\u0016¢\u0006\u0004\b\u0012\u0010\u0013R\u0014\u0010\u0016\u001a\u00020\u00148\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\f\u0010\u0015R\u001c\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u0012\u0010\u0018R\u001c\u0010\u001c\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001a0\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001b\u0010\u0018R\u001c\u0010\u001e\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u00018\u0002X\u0082\u0004¢\u0006\u0006\n\u0004\b\u001d\u0010\u0018R\u001e\u0010\"\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u001f8\u0002@\u0002X\u0082\u000e¢\u0006\u0006\n\u0004\b \u0010!¨\u0006#"}, d2 = {"Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse_AttributesJsonAdapter;", "Lcom/squareup/moshi/h;", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "Lcom/squareup/moshi/w;", "moshi", "<init>", "(Lcom/squareup/moshi/w;)V", "", "toString", "()Ljava/lang/String;", "Lcom/squareup/moshi/m;", "reader", "a", "(Lcom/squareup/moshi/m;)Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;", "Lcom/squareup/moshi/t;", "writer", "value_", "", "b", "(Lcom/squareup/moshi/t;Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$Attributes;)V", "Lcom/squareup/moshi/m$b;", "Lcom/squareup/moshi/m$b;", "options", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$GpsCollectionRequirement;", "Lcom/squareup/moshi/h;", "nullableGpsCollectionRequirementAdapter", "Lcom/withpersona/sdk2/inquiry/internal/network/CreateInquirySessionResponse$GpsPrecisionRequirement;", "c", "nullableGpsPrecisionRequirementAdapter", "d", "nullableStringAdapter", "Ljava/lang/reflect/Constructor;", "e", "Ljava/lang/reflect/Constructor;", "constructorRef", "inquiry-internal_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class CreateInquirySessionResponse_AttributesJsonAdapter extends com.squareup.moshi.h {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final m.b f20161a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final com.squareup.moshi.h f20162b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private final com.squareup.moshi.h f20163c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final com.squareup.moshi.h f20164d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private volatile Constructor f20165e;
+
+    public CreateInquirySessionResponse_AttributesJsonAdapter(@NotNull w moshi) {
+        Intrinsics.checkNotNullParameter(moshi, "moshi");
+        m.b a10 = m.b.a("gpsCollectionRequirement", "gpsPrecisionRequirement", "playIntegrityProjectId");
+        Intrinsics.checkNotNullExpressionValue(a10, "of(...)");
+        this.f20161a = a10;
+        com.squareup.moshi.h f10 = moshi.f(CreateInquirySessionResponse.GpsCollectionRequirement.class, x0.d(), "gpsCollectionRequirement");
+        Intrinsics.checkNotNullExpressionValue(f10, "adapter(...)");
+        this.f20162b = f10;
+        com.squareup.moshi.h f11 = moshi.f(CreateInquirySessionResponse.GpsPrecisionRequirement.class, x0.d(), "gpsPrecisionRequirement");
+        Intrinsics.checkNotNullExpressionValue(f11, "adapter(...)");
+        this.f20163c = f11;
+        com.squareup.moshi.h f12 = moshi.f(String.class, x0.d(), "playIntegrityProjectId");
+        Intrinsics.checkNotNullExpressionValue(f12, "adapter(...)");
+        this.f20164d = f12;
+    }
+
+    @Override // com.squareup.moshi.h
+    /* renamed from: a */
+    public CreateInquirySessionResponse.Attributes fromJson(m reader) {
+        Intrinsics.checkNotNullParameter(reader, "reader");
+        reader.r();
+        CreateInquirySessionResponse.GpsCollectionRequirement gpsCollectionRequirement = null;
+        CreateInquirySessionResponse.GpsPrecisionRequirement gpsPrecisionRequirement = null;
+        String str = null;
+        int i10 = -1;
+        while (reader.hasNext()) {
+            int A0 = reader.A0(this.f20161a);
+            if (A0 != -1) {
+                if (A0 != 0) {
+                    if (A0 != 1) {
+                        if (A0 == 2) {
+                            str = (String) this.f20164d.fromJson(reader);
+                            i10 &= -5;
+                        }
+                    } else {
+                        gpsPrecisionRequirement = (CreateInquirySessionResponse.GpsPrecisionRequirement) this.f20163c.fromJson(reader);
+                        i10 &= -3;
+                    }
+                } else {
+                    gpsCollectionRequirement = (CreateInquirySessionResponse.GpsCollectionRequirement) this.f20162b.fromJson(reader);
+                    i10 &= -2;
+                }
+            } else {
+                reader.E0();
+                reader.P();
+            }
+        }
+        reader.y();
+        if (i10 == -8) {
+            return new CreateInquirySessionResponse.Attributes(gpsCollectionRequirement, gpsPrecisionRequirement, str);
+        }
+        Constructor constructor = this.f20165e;
+        if (constructor == null) {
+            constructor = CreateInquirySessionResponse.Attributes.class.getDeclaredConstructor(CreateInquirySessionResponse.GpsCollectionRequirement.class, CreateInquirySessionResponse.GpsPrecisionRequirement.class, String.class, Integer.TYPE, sm.c.f49081c);
+            this.f20165e = constructor;
+            Intrinsics.checkNotNullExpressionValue(constructor, "also(...)");
+        }
+        Object newInstance = constructor.newInstance(gpsCollectionRequirement, gpsPrecisionRequirement, str, Integer.valueOf(i10), null);
+        Intrinsics.checkNotNullExpressionValue(newInstance, "newInstance(...)");
+        return (CreateInquirySessionResponse.Attributes) newInstance;
+    }
+
+    @Override // com.squareup.moshi.h
+    /* renamed from: b */
+    public void toJson(t writer, CreateInquirySessionResponse.Attributes attributes) {
+        Intrinsics.checkNotNullParameter(writer, "writer");
+        if (attributes != null) {
+            writer.l();
+            writer.A0("gpsCollectionRequirement");
+            this.f20162b.toJson(writer, attributes.a());
+            writer.A0("gpsPrecisionRequirement");
+            this.f20163c.toJson(writer, attributes.b());
+            writer.A0("playIntegrityProjectId");
+            this.f20164d.toJson(writer, attributes.c());
+            writer.E();
+            return;
+        }
+        throw new NullPointerException("value_ was null! Wrap in .nullSafe() to write nullable values.");
+    }
+
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder(61);
+        sb2.append("GeneratedJsonAdapter(");
+        sb2.append("CreateInquirySessionResponse.Attributes");
+        sb2.append(')');
+        return sb2.toString();
+    }
+}

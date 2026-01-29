@@ -1,0 +1,442 @@
+// ../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/premium_tab.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var1
+        _fun57734: for (var _fun57734_ip = 0;;) switch (_fun57734_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun57734_ip = 74;
+                continue _fun57734;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot8 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot8 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot5 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot7 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.MessageType;
+    var1 = function(arg0) { // Environment: var1
+        var3 = function() { // Original name: PremiumTab$Type, environment: var5
+            _fun57738: for (var _fun57738_ip = 0;;) switch (_fun57738_ip) {
+                case 0:
+                    var3 = this;
+                    var0 = _closure1_slot3;
+                    var1 = _closure2_slot0;
+                    var2 = undefined;
+                    var0 = var0.bind(var2)(var3, var1);
+                    var0 = new Array(2);
+                    var5 = {
+                        'no': 1,
+                        'name': 'badge_label',
+                        'kind': 'scalar',
+                        'T': 9
+                    };
+                    var0[0] = var5;
+                    var5 = {
+                        'no': 2,
+                        'name': 'acknowledged_badge_label',
+                        'kind': 'scalar',
+                        'T': 9
+                    };
+                    var0[1] = var5;
+                    var8 = ['discord_protos.premium_marketing.v1.PremiumTab'];
+                    var8[1] = var0;
+                    var0 = _closure1_slot6;
+                    var7 = var0.bind(var2)(var1);
+                    var1 = _closure1_slot5;
+                    var0 = _closure1_slot8;
+                    var0 = var0.bind(var2)();
+                    if (var0) {
+                        _fun57738_ip = 116;
+                        continue _fun57738
+                    }
+                case 103:
+                    var0 = var7.apply;
+                    var0 = var0.bind(var7)(var3, var8);
+                    _fun57738_ip = 150;
+                    continue _fun57738;
+                case 116:
+                    var5 = global;
+                    var6 = var5.Reflect;
+                    var5 = var6.construct;
+                    var4 = _closure1_slot6;
+                    var4 = var4.bind(var2)(var3);
+                    var4 = var4.constructor;
+                    var0 = var5.bind(var6)(var7, var8, var4);
+                case 150:
+                    var0 = var1.bind(var2)(var3, var0);
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var4 = _closure1_slot7;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
+        var1 = _closure1_slot4;
+        var4 = {};
+        var0 = 'create';
+        var4.key = var0;
+        var0 = function(arg0) { // Original name: value, environment: var5
+            _fun57739: for (var _fun57739_ip = 0;;) switch (_fun57739_ip) {
+                case 0:
+                    var4 = arg0;
+                    var3 = this;
+                    var0 = {
+                        'badgeLabel': '',
+                        'acknowledgedBadgeLabel': ''
+                    };
+                    var1 = global;
+                    var1 = var1.globalThis;
+                    var9 = var1.Object;
+                    var8 = var9.defineProperty;
+                    var7 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var6 = 6;
+                    var2 = var2[var6];
+                    var5 = undefined;
+                    var2 = var7.bind(var5)(var2);
+                    var7 = var2.MESSAGE_TYPE;
+                    var2 = {};
+                    var10 = false;
+                    var2.enumerable = var10;
+                    var2.value = var3;
+                    var2 = var8.bind(var9)(var0, var7, var2);
+                    if (!(var5 !== var4)) {
+                        _fun57739_ip = 122;
+                        continue _fun57739
+                    }
+                case 92:
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var1 = var1[var6];
+                    var2 = var2.bind(var5)(var1);
+                    var1 = var2.reflectionMergePartial;
+                    var1 = var1.bind(var2)(var3, var0, var4);
+                case 122:
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(3);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'internalBinaryRead';
+        var4.key = var6;
+        var6 = function(arg0, arg1, arg2, arg3) { // Original name: value, environment: var5
+            _fun57740: for (var _fun57740_ip = 0;;) switch (_fun57740_ip) {
+                case 0:
+                    var16 = arg0;
+                    var15 = arg2;
+                    var0 = arg3;
+                    var14 = this;
+                    var1 = null;
+                    if (!(var1 == var0)) {
+                        _fun57740_ip = 27;
+                        continue _fun57740
+                    }
+                case 18:
+                    var1 = var14.create;
+                    var0 = var1.bind(var14)();
+                case 27:
+                    var2 = var16.pos;
+                    var1 = arg1;
+                    var13 = var2 + var1;
+                    var1 = var16.pos;
+                    var1 = var1 < var13;
+                    var12 = undefined;
+                    var10 = 6;
+                    var9 = true;
+                    var8 = false;
+                    var7 = 'throw';
+                    var6 = 2;
+                    var5 = 1;
+                    var4 = 0;
+                    var3 = undefined;
+                    var2 = undefined;
+                    if (!var1) {
+                        _fun57740_ip = 370;
+                        continue _fun57740
+                    }
+                case 82:
+                    var1 = var16.tag;
+                    var17 = var1.bind(var16)();
+                    var1 = _closure1_slot2;
+                    var1 = var1.bind(var12)(var17, var6);
+                    var25 = var1[var4];
+                    var24 = var1[var5];
+                    if (!(var5 !== var25)) {
+                        _fun57740_ip = 331;
+                        continue _fun57740
+                    }
+                case 116:
+                    if (!(var6 !== var25)) {
+                        _fun57740_ip = 308;
+                        continue _fun57740
+                    }
+                case 123:
+                    var19 = var15.readUnknownField;
+                    if (!(var7 !== var19)) {
+                        _fun57740_ip = 228;
+                        continue _fun57740
+                    }
+                case 133:
+                    var1 = var16.skip;
+                    var1 = var1.bind(var16)(var24);
+                    var18 = var19;
+                    var17 = var1;
+                    if (!(var8 !== var19)) {
+                        _fun57740_ip = 352;
+                        continue _fun57740
+                    }
+                case 157:
+                    var21 = var19;
+                    if (!(var9 === var19)) {
+                        _fun57740_ip = 193;
+                        continue _fun57740
+                    }
+                case 164:
+                    var22 = _closure1_slot0;
+                    var20 = _closure1_slot1;
+                    var20 = var20[var10];
+                    var20 = var22.bind(var12)(var20);
+                    var20 = var20.UnknownFieldHandler;
+                    var21 = var20.onRead;
+                case 193:
+                    var30 = var14.typeName;
+                    var31 = undefined;
+                    var29 = var0;
+                    var28 = var25;
+                    var27 = var24;
+                    var26 = var1;
+                    var20 = var31[var21](var30, var29, var28, var27, var26, var25);
+                    var18 = var19;
+                    var17 = var1;
+                    _fun57740_ip = 352;
+                    continue _fun57740;
+                case 228:
+                    var1 = global;
+                    var19 = var1.globalThis;
+                    var20 = var19.Error;
+                    var26 = var14.typeName;
+                    var1 = var1.HermesInternal;
+                    var22 = var1.concat;
+                    var31 = 'Unknown field ';
+                    var29 = ' (wire type ';
+                    var27 = ') for ';
+                    var30 = var25;
+                    var28 = var24;
+                    var30 = var31[var22](var30, var29, var28, var27, var26, var25);
+                    var19 = var20.prototype;
+                    var19 = Object.create(var19, {
+                        constructor: {
+                            value: var20
+                        }
+                    });
+                    var31 = var19;
+                    var1 = new var31[var20](var30, var29);
+                    var1 = var1 instanceof Object ? var1 : var19;
+                    throw var1;
+                case 308:
+                    var1 = var16.string;
+                    var1 = var1.bind(var16)();
+                    var0.acknowledgedBadgeLabel = var1;
+                    var18 = var3;
+                    var17 = var2;
+                    _fun57740_ip = 352;
+                    continue _fun57740;
+                case 331:
+                    var1 = var16.string;
+                    var1 = var1.bind(var16)();
+                    var0.badgeLabel = var1;
+                    var18 = var3;
+                    var17 = var2;
+                case 352:
+                    var1 = var16.pos;
+                    var3 = var18;
+                    var2 = var17;
+                    if (var1 < var13) {
+                        _fun57740_ip = 82;
+                        continue _fun57740
+                    }
+                case 370:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'internalBinaryWrite';
+        var4.key = var6;
+        var5 = function(arg0, arg1, arg2) { // Original name: value, environment: var5
+            _fun57741: for (var _fun57741_ip = 0;;) switch (_fun57741_ip) {
+                case 0:
+                    var4 = arg0;
+                    var0 = arg1;
+                    var1 = var4.badgeLabel;
+                    var2 = '';
+                    if (!(var2 !== var1)) {
+                        _fun57741_ip = 86;
+                        continue _fun57741
+                    }
+                case 20:
+                    var5 = var0.tag;
+                    var6 = _closure1_slot0;
+                    var3 = _closure1_slot1;
+                    var1 = 6;
+                    var3 = var3[var1];
+                    var1 = undefined;
+                    var1 = var6.bind(var1)(var3);
+                    var1 = var1.WireType;
+                    var3 = var1.LengthDelimited;
+                    var1 = 1;
+                    var5 = var5.bind(var0)(var1, var3);
+                    var3 = var5.string;
+                    var1 = var4.badgeLabel;
+                    var1 = var3.bind(var5)(var1);
+                case 86:
+                    var1 = var4.acknowledgedBadgeLabel;
+                    if (!(var2 !== var1)) {
+                        _fun57741_ip = 162;
+                        continue _fun57741
+                    }
+                case 96:
+                    var3 = var0.tag;
+                    var5 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var1 = 6;
+                    var2 = var2[var1];
+                    var1 = undefined;
+                    var1 = var5.bind(var1)(var2);
+                    var1 = var1.WireType;
+                    var2 = var1.LengthDelimited;
+                    var1 = 2;
+                    var3 = var3.bind(var0)(var1, var2);
+                    var2 = var3.string;
+                    var1 = var4.acknowledgedBadgeLabel;
+                    var1 = var2.bind(var3)(var1);
+                case 162:
+                    var1 = arg2;
+                    var3 = var1.writeUnknownFields;
+                    var1 = false;
+                    if (!(var1 !== var3)) {
+                        _fun57741_ip = 239;
+                        continue _fun57741
+                    }
+                case 177:
+                    var1 = 1;
+                    if (!(var1 == var3)) {
+                        _fun57741_ip = 221;
+                        continue _fun57741
+                    }
+                case 184:
+                    var5 = _closure1_slot0;
+                    var2 = _closure1_slot1;
+                    var1 = 6;
+                    var2 = var2[var1];
+                    var1 = undefined;
+                    var1 = var5.bind(var1)(var2);
+                    var1 = var1.UnknownFieldHandler;
+                    var3 = var1.onWrite;
+                case 221:
+                    var1 = this;
+                    var2 = var1.typeName;
+                    var1 = undefined;
+                    var1 = var3.bind(var1)(var2, var4, var0);
+                case 239:
+                    return var0;
+            }
+        };
+        var4.value = var5;
+        var0[2] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var1 = var1.bind(var0)(var3);
+    var3 = var1.prototype;
+    var3 = Object.create(var3, {
+        constructor: {
+            value: var1
+        }
+    });
+    var12 = var3;
+    var1 = new var12[var1](var11);
+    var1 = var1 instanceof Object ? var1 : var3;
+    var3 = 7;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = '../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/premium_tab.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.PremiumTab = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 6, 7, 15, 17, 18, 1313, 2]);

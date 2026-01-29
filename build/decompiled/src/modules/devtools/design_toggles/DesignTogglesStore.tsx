@@ -1,0 +1,349 @@
+// modules/devtools/design_toggles/DesignTogglesStore.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+        _fun41587: for (var _fun41587_ip = 0;;) switch (_fun41587_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun41587_ip = 74;
+                continue _fun41587;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot7 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var3 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot0 = var1;
+    var1 = 1;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot1 = var1;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot2 = var1;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot3 = var1;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot4 = var1;
+    var1 = {
+        'enable_recently_active': 'Enable recently active channels',
+        'theme_setting_in_account_sheet': 'Show theme settings in the Account action sheet',
+        'nav_experiment_server_drawer_enabled': '[NavI] Enable expandable server drawer',
+        'shop_include_unpublished': '[Shop] show unpublished items in shop',
+        'show_icymi_debug_scores': 'Show ICYMI debug scores',
+        'channel_list_scrim': 'Dim the channel list when chat appears'
+    };
+    var _closure1_slot5 = var1;
+    var3 = {};
+    var _closure1_slot6 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var7 = var3.DeviceSettingsStore;
+    var3 = function(arg0) { // Environment: var4
+        var3 = function() { // Original name: DesignTogglesStore, environment: var5
+            _fun41591: for (var _fun41591_ip = 0;;) switch (_fun41591_ip) {
+                case 0:
+                    var3 = this;
+                    var2 = undefined;
+                    var4 = undefined;
+                    var0 = _closure1_slot0;
+                    var1 = _closure2_slot0;
+                    var0 = var0.bind(var2)(var3, var1);
+                    var0 = _closure1_slot3;
+                    var8 = var0.bind(var2)(var1);
+                    var1 = _closure1_slot2;
+                    var0 = _closure1_slot7;
+                    var0 = var0.bind(var2)();
+                    if (var0) {
+                        _fun41591_ip = 69;
+                        continue _fun41591
+                    }
+                case 51:
+                    var6 = var8.apply;
+                    var4 = arguments;
+                    var0 = var4;
+                    var0 = var6.bind(var8)(var3, var0);
+                    _fun41591_ip = 105;
+                    continue _fun41591;
+                case 69:
+                    var6 = global;
+                    var7 = var6.Reflect;
+                    var6 = var7.construct;
+                    var5 = _closure1_slot3;
+                    var5 = var5.bind(var2)(var3);
+                    var5 = var5.constructor;
+                    var4 = arguments;
+                    var0 = var6.bind(var7)(var8, var4, var5);
+                case 105:
+                    var0 = var1.bind(var2)(var3, var0);
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var4 = _closure1_slot4;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
+        var1 = _closure1_slot1;
+        var4 = {};
+        var0 = 'getUserAgnosticState';
+        var4.key = var0;
+        var0 = function() { // Original name: value, environment: var5
+            var0 = {};
+            var1 = _closure1_slot6;
+            var0.toggleStates = var1;
+            return var0;
+        };
+        var4.value = var0;
+        var0 = new Array(6);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'initialize';
+        var4.key = var6;
+        var6 = function(arg0) { // Original name: value, environment: var5
+            _fun41593: for (var _fun41593_ip = 0;;) switch (_fun41593_ip) {
+                case 0:
+                    var9 = arg0;
+                    var7 = _closure1_slot5;
+                    var0 = undefined;
+                    var2 = null;
+                    var1 = undefined;
+                    for (var3 in var7)
+                        case 24: {
+                            case 33: var12 = var3;
+                            var11 = var2 == var9;
+                            var10 = undefined;
+                            if (var11) {
+                                _fun41593_ip = 70;
+                                continue _fun41593
+                            }
+                            case 45: var13 = var9.toggleStates;
+                            var11 = var2 == var13;
+                            var1 = var13;
+                            var10 = undefined;
+                            if (var11) {
+                                _fun41593_ip = 70;
+                                continue _fun41593
+                            }
+                            case 63: var10 = var13[var12];
+                            var1 = var13;
+                            case 70: var11 = var2 != var10;
+                            if (!var11) {
+                                _fun41593_ip = 80;
+                                continue _fun41593
+                            }
+                            case 77: var11 = var10;
+                            case 80: var10 = _closure1_slot6;
+                            var10[var12] = var11;
+                            _fun41593_ip = 24;
+                            continue _fun41593;
+                        }
+                case 90:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'get';
+        var4.key = var6;
+        var6 = function(arg0) { // Original name: value, environment: var5
+            _fun41594: for (var _fun41594_ip = 0;;) switch (_fun41594_ip) {
+                case 0:
+                    var1 = _closure1_slot6;
+                    var0 = arg0;
+                    var1 = var1[var0];
+                    var0 = null;
+                    var0 = var0 != var1;
+                    if (!var0) {
+                        _fun41594_ip = 26;
+                        continue _fun41594
+                    }
+                case 23:
+                    var0 = var1;
+                case 26:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[2] = var4;
+        var4 = {};
+        var6 = 'set';
+        var4.key = var6;
+        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+            var0 = arg1;
+            var2 = _closure1_slot6;
+            var1 = arg0;
+            var2[var1] = var0;
+            return var0;
+        };
+        var4.value = var6;
+        var0[3] = var4;
+        var4 = {};
+        var6 = 'all';
+        var4.key = var6;
+        var6 = function() { // Original name: value, environment: var5
+            var0 = _closure1_slot6;
+            return var0;
+        };
+        var4.value = var6;
+        var0[4] = var4;
+        var4 = {};
+        var6 = 'allWithDescriptions';
+        var4.key = var6;
+        var5 = function() { // Original name: value, environment: var5
+            var0 = global;
+            var2 = var0.Object;
+            var1 = var2.entries;
+            var0 = _closure1_slot6;
+            var2 = var1.bind(var2)(var0);
+            var1 = var2.map;
+            var0 = function(arg0) { // Environment: var0
+                _fun41598: for (var _fun41598_ip = 0;;) switch (_fun41598_ip) {
+                    case 0:
+                        var4 = arg0;
+                        var0 = var4[Symbol.iterator];
+                        var4 = var0().next;
+                        var1 = var4().value;
+                        var2 = var0;
+                        var6 = undefined;
+                        var3 = var2 === var6;
+                        var2 = undefined;
+                        if (var3) {
+                            _fun41598_ip = 27;
+                            continue _fun41598
+                        }
+                    case 24:
+                        var2 = var1;
+                    case 27:
+                        var1 = undefined;
+                        if (var3) {
+                            _fun41598_ip = 57;
+                            continue _fun41598
+                        }
+                    case 32:
+                        var5 = var4().value;
+                        var4 = var0;
+                        var4 = var4 === var6;
+                        var1 = undefined;
+                        var3 = var4;
+                        if (var4) {
+                            _fun41598_ip = 57;
+                            continue _fun41598
+                        }
+                    case 51:
+                        var1 = var5;
+                        var3 = var4;
+                    case 57:
+                        if (var3) {
+                            _fun41598_ip = 63;
+                            continue _fun41598
+                        }
+                    case 60:
+                        var0.return();
+                    case 63:
+                        var0 = new Array(3);
+                        var0[0] = var2;
+                        var0[1] = var1;
+                        var1 = _closure1_slot5;
+                        var1 = var1[var2];
+                        var0[2] = var1;
+                        return var0;
+                }
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var4.value = var5;
+        var0[5] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var7 = var3.bind(var0)(var7);
+    var3 = 'DevToolsDesignTogglesStore';
+    var7.displayName = var3;
+    var7.persistKey = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var11 = var6.bind(var0)(var3);
+    var3 = {};
+    var4 = function(arg0) { // Original name: handleSet, environment: var4
+        var0 = arg0;
+        var2 = _closure1_slot6;
+        var1 = var0.toggle;
+        var0 = var0.value;
+        var2[var1] = var0;
+        var0 = undefined;
+        return var0;
+    };
+    var3.DEV_TOOLS_DESIGN_TOGGLE_SET = var4;
+    var4 = var7.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var7
+        }
+    });
+    var12 = var4;
+    var10 = var3;
+    var3 = new var12[var7](var11, var10, var9);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var4 = 7;
+    var5 = var5[var4];
+    var4 = arg1;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/devtools/design_toggles/DesignTogglesStore.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.default = var3;
+    var2.toggles = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 566, 806, 2]);

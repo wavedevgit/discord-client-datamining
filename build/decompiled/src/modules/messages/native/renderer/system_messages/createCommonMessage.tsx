@@ -1,0 +1,141 @@
+// modules/messages/native/renderer/system_messages/createCommonMessage.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var10;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var3 = 0;
+    var6 = var5[var3];
+    var0 = undefined;
+    var8 = var4.bind(var0)(var6);
+    var7 = var8.experimental_createToken;
+    var6 = function(arg0) { // Environment: var1
+        _fun55315: for (var _fun55315_ip = 0;;) switch (_fun55315_ip) {
+            case 0:
+                var0 = arg0;
+                var3 = var0.theme;
+                var2 = _closure1_slot0;
+                var4 = _closure1_slot2;
+                var0 = 1;
+                var0 = var4[var0];
+                var5 = undefined;
+                var2 = var2.bind(var5)(var0);
+                var0 = var2.isThemeDark;
+                var2 = var0.bind(var2)(var3);
+                var0 = 'rgba(201,210,240,0.6)';
+                if (!var2) {
+                    _fun55315_ip = 123;
+                    continue _fun55315
+                }
+            case 54:
+                var3 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var2 = 2;
+                var2 = var6[var2];
+                var4 = var3.bind(var5)(var2);
+                var3 = var4.hexWithOpacity;
+                var2 = _closure1_slot1;
+                var1 = 3;
+                var1 = var6[var1];
+                var1 = var2.bind(var5)(var1);
+                var1 = var1.unsafe_rawColors;
+                var2 = var1.WHITE;
+                var1 = 0.1;
+                var0 = var3.bind(var4)(var2, var1);
+            case 123:
+                return var0;
+        }
+    };
+    var8 = var7.bind(var8)(var6);
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createNativeStyleProperties;
+    var3 = {};
+    var9 = 3;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.colors;
+    var9 = var9.TEXT_MUTED;
+    var3.timestampColor = var9;
+    var3.highlightColor = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 8;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/messages/native/renderer/system_messages/createCommonMessage.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: createCommonMessage, environment: var1
+        var0 = arg0;
+        var7 = var0.message;
+        var9 = var0.theme;
+        var1 = var0.reactions;
+        var0 = _closure1_slot3;
+        var5 = undefined;
+        var4 = var0.bind(var5)(var9);
+        var0 = {};
+        var2 = var7.id;
+        var0.id = var2;
+        var2 = var7.channel_id;
+        var0.channelId = var2;
+        var2 = var7.type;
+        var0.type = var2;
+        var2 = var7.mentioned;
+        var0.mentioned = var2;
+        var2 = _closure1_slot0;
+        var6 = _closure1_slot2;
+        var8 = 4;
+        var8 = var6[var8];
+        var11 = var2.bind(var5)(var8);
+        var10 = var11.calendarFormat;
+        var8 = var7.timestamp;
+        var7 = true;
+        var7 = var10.bind(var11)(var8, var7);
+        var0.timestamp = var7;
+        var7 = var4.timestampColor;
+        var0.timestampColor = var7;
+        var7 = 1;
+        var7 = var6[var7];
+        var8 = var2.bind(var5)(var7);
+        var7 = var8.isThemeDark;
+        var7 = var7.bind(var8)(var9);
+        var0.dark = var7;
+        var4 = var4.highlightColor;
+        var0.highlightColor = var4;
+        var0.reactions = var1;
+        var1 = 5;
+        var4 = var6[var1];
+        var8 = var2.bind(var5)(var4);
+        var7 = var8.getAssetUriForEmbed;
+        var4 = _closure1_slot1;
+        var3 = 6;
+        var3 = var6[var3];
+        var3 = var4.bind(var5)(var3);
+        var3 = var7.bind(var8)(var3);
+        var0.swipeToReplyIconUrl = var3;
+        var1 = var6[var1];
+        var3 = var2.bind(var5)(var1);
+        var2 = var3.getAssetUriForEmbed;
+        var1 = 7;
+        var1 = var6[var1];
+        var1 = var4.bind(var5)(var1);
+        var1 = var2.bind(var3)(var1);
+        var0.swipeToEditIconUrl = var1;
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1297, 3165, 3199, 671, 3091, 6603, 6637, 6638, 2]);

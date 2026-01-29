@@ -1,0 +1,157 @@
+// modules/connections/native/LeaveConnectionRoleActionSheet.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot4 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var8 = var4.bind(var0)(var3);
+    var7 = var8.createStyles;
+    var6 = {};
+    var3 = {};
+    var9 = 12;
+    var3.padding = var9;
+    var6.container = var3;
+    var9 = {};
+    var3 = 8;
+    var9.marginTop = var3;
+    var6.marginTop = var9;
+    var9 = {
+        'marginTop': 8,
+        'marginBottom': 16
+    };
+    var6.button = var9;
+    var6 = var7.bind(var8)(var6);
+    var _closure1_slot6 = var6;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/connections/native/LeaveConnectionRoleActionSheet.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: LeaveConnectionRoleActionSheet, environment: var1
+        var0 = arg0;
+        var11 = var0.onLeaveRolePressed;
+        var0 = _closure1_slot6;
+        var3 = undefined;
+        var16 = var0.bind(var3)();
+        var2 = _closure1_slot4;
+        var13 = _closure1_slot0;
+        var14 = _closure1_slot2;
+        var0 = 4;
+        var0 = var14[var0];
+        var0 = var13.bind(var3)(var0);
+        var1 = var0.BottomSheet;
+        var0 = {};
+        var6 = _closure1_slot5;
+        var5 = _closure1_slot3;
+        var4 = {};
+        var7 = var16.container;
+        var4.style = var7;
+        var9 = 5;
+        var7 = var14[var9];
+        var7 = var13.bind(var3)(var7);
+        var12 = var7.Text;
+        var7 = {
+            'variant': 'heading-lg/extrabold',
+            'color': 'mobile-text-heading-primary'
+        };
+        var10 = 6;
+        var15 = var14[var10];
+        var15 = var13.bind(var3)(var15);
+        var18 = var15.intl;
+        var17 = var18.string;
+        var15 = var14[var10];
+        var15 = var13.bind(var3)(var15);
+        var15 = var15.t;
+        var15 = var15.vytvJF;
+        var15 = var17.bind(var18)(var15);
+        var7.children = var15;
+        var12 = var2.bind(var3)(var12, var7);
+        var7 = new Array(3);
+        var7[0] = var12;
+        var9 = var14[var9];
+        var9 = var13.bind(var3)(var9);
+        var12 = var9.Text;
+        var9 = {
+            'style': null,
+            'variant': 'text-md/normal',
+            'color': 'text-default'
+        };
+        var15 = var16.marginTop;
+        var9.style = var15;
+        var15 = var14[var10];
+        var15 = var13.bind(var3)(var15);
+        var18 = var15.intl;
+        var17 = var18.string;
+        var15 = var14[var10];
+        var15 = var13.bind(var3)(var15);
+        var15 = var15.t;
+        var15 = var15.caJwb5;
+        var15 = var17.bind(var18)(var15);
+        var9.children = var15;
+        var9 = var2.bind(var3)(var12, var9);
+        var7[1] = var9;
+        var15 = _closure1_slot1;
+        var12 = 7;
+        var8 = var14[var12];
+        var9 = var15.bind(var3)(var8);
+        var8 = {};
+        var16 = var16.button;
+        var8.style = var16;
+        var12 = var14[var12];
+        var12 = var15.bind(var3)(var12);
+        var12 = var12.Colors;
+        var12 = var12.RED;
+        var8.color = var12;
+        var8.onPress = var11;
+        var11 = var14[var10];
+        var11 = var13.bind(var3)(var11);
+        var12 = var11.intl;
+        var11 = var12.string;
+        var10 = var14[var10];
+        var10 = var13.bind(var3)(var10);
+        var10 = var10.t;
+        var10 = var10["+Oi4XF"];
+        var10 = var11.bind(var12)(var10);
+        var8.text = var10;
+        var8 = var2.bind(var3)(var9, var8);
+        var7[2] = var8;
+        var4.children = var7;
+        var4 = var6.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 1297, 4887, 3895, 1234, 4829, 2]);

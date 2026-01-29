@@ -1,0 +1,278 @@
+// modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var10;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.HelpdeskArticles;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot6 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot7 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var7 = var4.bind(var0)(var3);
+    var6 = var7.createStyles;
+    var3 = {};
+    var8 = {};
+    var9 = 5;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_32;
+    var8.marginTop = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.lg;
+    var8.borderRadius = var11;
+    var11 = 'center';
+    var8.alignItems = var11;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_MOD_MUTED;
+    var8.backgroundColor = var12;
+    var12 = var5[var9];
+    var12 = var10.bind(var0)(var12);
+    var12 = var12.spacing;
+    var12 = var12.PX_64;
+    var8.paddingHorizontal = var12;
+    var3.container = var8;
+    var8 = {};
+    var8.textAlign = var11;
+    var3.body = var8;
+    var8 = {};
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.spacing;
+    var11 = var11.PX_16;
+    var8.height = var11;
+    var3.divider = var8;
+    var8 = {
+        'borderRadius': null,
+        'backgroundColor': null,
+        'paddingVertical': 12,
+        'paddingHorizontal': 16,
+        'minHeight': 48,
+        'justifyContent': 'center',
+        'alignItems': 'center'
+    };
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.radii;
+    var11 = var11.round;
+    var8.borderRadius = var11;
+    var11 = var5[var9];
+    var11 = var10.bind(var0)(var11);
+    var11 = var11.colors;
+    var11 = var11.CONTROL_SECONDARY_BACKGROUND_DEFAULT;
+    var8.backgroundColor = var11;
+    var9 = var5[var9];
+    var9 = var10.bind(var0)(var9);
+    var9 = var9.shadows;
+    var14 = var9.SHADOW_LOW;
+    var15 = var8;
+    var9 = copyDataProperties(var15, var14);
+    var3.linkButton = var8;
+    var3 = var6.bind(var7)(var3);
+    var _closure1_slot8 = var3;
+    var3 = 13;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/app_launcher/native/screens/home/LearnMoreAboutAppsSection.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: LearnMoreAboutAppsSection, environment: var1
+        var0 = arg0;
+        var5 = var0.visible;
+        var0 = _closure1_slot8;
+        var3 = undefined;
+        var9 = var0.bind(var3)();
+        var6 = _closure1_slot3;
+        var2 = var6.useCallback;
+        var1 = function() { // Environment: var0
+            var5 = _closure1_slot1;
+            var6 = _closure1_slot2;
+            var0 = 6;
+            var2 = var6[var0];
+            var0 = undefined;
+            var3 = var5.bind(var0)(var2);
+            var2 = var3.openURL;
+            var4 = 7;
+            var4 = var6[var4];
+            var5 = var5.bind(var0)(var4);
+            var4 = var5.getAppsSupportURL;
+            var1 = _closure1_slot5;
+            var1 = var1.APPS_LEARN_MORE;
+            var1 = var4.bind(var5)(var1);
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = new Array(0);
+        var14 = var2.bind(var6)(var1, var0);
+        var16 = _closure1_slot0;
+        var17 = _closure1_slot2;
+        var13 = 8;
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var2 = var0.intl;
+        var1 = var2.string;
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0["kw8/Ec"];
+        var18 = var1.bind(var2)(var0);
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var2 = var0.intl;
+        var1 = var2.string;
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var0 = var0.t;
+        var0 = var0.GZoV1O;
+        var15 = var1.bind(var2)(var0);
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var6 = var0.intl;
+        var2 = var6.formatToPlainString;
+        var0 = var17[var13];
+        var0 = var16.bind(var3)(var0);
+        var0 = var0.t;
+        var1 = var0.xx5Sug;
+        var0 = {};
+        var0.sectionTitle = var18;
+        var0.sectionBody = var15;
+        var12 = var2.bind(var6)(var1, var0);
+        var2 = _closure1_slot6;
+        var1 = _closure1_slot1;
+        var0 = 9;
+        var0 = var17[var0];
+        var1 = var1.bind(var3)(var0);
+        var0 = {
+            'sectionName': null,
+            'numItems': 1,
+            'numVisibleItems': 1
+        };
+        var6 = 10;
+        var6 = var17[var6];
+        var6 = var16.bind(var3)(var6);
+        var6 = var6.AppLauncherSectionName;
+        var6 = var6.NEW_TO_APPS;
+        var0.sectionName = var6;
+        var0.viewed = var5;
+        var6 = _closure1_slot7;
+        var5 = _closure1_slot4;
+        var4 = {};
+        var7 = var9.container;
+        var4.style = var7;
+        var7 = {};
+        var8 = var9.divider;
+        var7.style = var8;
+        var8 = var2.bind(var3)(var5, var7);
+        var7 = new Array(6);
+        var7[0] = var8;
+        var11 = 11;
+        var8 = var17[var11];
+        var8 = var16.bind(var3)(var8);
+        var10 = var8.Text;
+        var8 = {
+            'variant': 'heading-lg/bold',
+            'color': 'mobile-text-heading-primary'
+        };
+        var8.children = var18;
+        var8 = var2.bind(var3)(var10, var8);
+        var7[1] = var8;
+        var8 = var17[var11];
+        var8 = var16.bind(var3)(var8);
+        var10 = var8.Text;
+        var8 = {
+            'variant': 'text-xs/normal',
+            'color': 'text-default'
+        };
+        var18 = var9.body;
+        var8.style = var18;
+        var8.children = var15;
+        var8 = var2.bind(var3)(var10, var8);
+        var7[2] = var8;
+        var8 = {};
+        var10 = var9.divider;
+        var8.style = var10;
+        var8 = var2.bind(var3)(var5, var8);
+        var7[3] = var8;
+        var8 = 12;
+        var8 = var17[var8];
+        var8 = var16.bind(var3)(var8);
+        var10 = var8.PressableHighlight;
+        var8 = {};
+        var15 = var9.linkButton;
+        var8.style = var15;
+        var8.onPress = var14;
+        var14 = 'link';
+        var8.accessibilityRole = var14;
+        var8.accessibilityLabel = var12;
+        var11 = var17[var11];
+        var11 = var16.bind(var3)(var11);
+        var12 = var11.Text;
+        var11 = {
+            'variant': 'text-md/semibold',
+            'color': 'mobile-text-heading-primary'
+        };
+        var14 = var17[var13];
+        var14 = var16.bind(var3)(var14);
+        var15 = var14.intl;
+        var14 = var15.string;
+        var13 = var17[var13];
+        var13 = var16.bind(var3)(var13);
+        var13 = var13.t;
+        var13 = var13.Ye51oT;
+        var13 = var14.bind(var15)(var13);
+        var11.children = var13;
+        var11 = var2.bind(var3)(var12, var11);
+        var8.children = var11;
+        var8 = var2.bind(var3)(var10, var8);
+        var7[4] = var8;
+        var8 = {};
+        var9 = var9.divider;
+        var8.style = var9;
+        var8 = var2.bind(var3)(var5, var8);
+        var7[5] = var8;
+        var4.children = var7;
+        var4 = var6.bind(var3)(var5, var4);
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 660, 33, 1297, 671, 3103, 1675, 1234, 13901, 7694, 3895, 4858, 2]);

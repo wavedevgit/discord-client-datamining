@@ -1,0 +1,261 @@
+// modules/guild_settings/apps/native/GuildSettingsModalLobbiesLinked.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = function(arg0) { // Original name: SyncingToGamesItem, environment: var1
+        _fun115805: for (var _fun115805_ip = 0;;) switch (_fun115805_ip) {
+            case 0:
+                var0 = arg0;
+                var3 = var0.applicationId;
+                var7 = var0.channels;
+                var _closure2_slot0 = var7;
+                var0 = var0.isOnlySection;
+                var _closure2_slot1 = var0;
+                var2 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var0 = 3;
+                var0 = var6[var0];
+                var4 = undefined;
+                var8 = var2.bind(var4)(var0);
+                var0 = var8.useNavigation;
+                var0 = var0.bind(var8)();
+                var _closure2_slot2 = var0;
+                var0 = 4;
+                var0 = var6[var0];
+                var2 = var2.bind(var4)(var0);
+                var0 = var2.useGetOrFetchApplication;
+                var8 = var0.bind(var2)(var3);
+                var3 = var7.length;
+                var6 = null;
+                var2 = 0;
+                var0 = null;
+                if (!(var2 !== var3)) {
+                    _fun115805_ip = 184;
+                    continue _fun115805
+                }
+            case 107:
+                var3 = _closure1_slot4;
+                var2 = _closure1_slot0;
+                var9 = _closure1_slot2;
+                var1 = 5;
+                var1 = var9[var1];
+                var1 = var2.bind(var4)(var1);
+                var2 = var1.FormSection;
+                var1 = {};
+                var9 = var6 == var8;
+                var6 = undefined;
+                if (var9) {
+                    _fun115805_ip = 153;
+                    continue _fun115805
+                }
+            case 148:
+                var6 = var8.name;
+            case 153:
+                var1.title = var6;
+                var6 = var7.map;
+                var5 = function(arg0) { // Environment: var5
+                    var0 = arg0;
+                    var _closure3_slot0 = var0;
+                    var4 = _closure1_slot4;
+                    var7 = _closure1_slot0;
+                    var9 = _closure1_slot2;
+                    var6 = 5;
+                    var1 = var9[var6];
+                    var3 = undefined;
+                    var1 = var7.bind(var3)(var1);
+                    var2 = var1.FormRow;
+                    var1 = {};
+                    var10 = var0.name;
+                    var1.label = var10;
+                    var10 = 6;
+                    var10 = var9[var10];
+                    var11 = var7.bind(var3)(var10);
+                    var10 = var11.getChannelIconComponent;
+                    var10 = var10.bind(var11)(var0);
+                    var1.leading = var10;
+                    var8 = _closure1_slot4;
+                    var6 = var9[var6];
+                    var6 = var7.bind(var3)(var6);
+                    var6 = var6.FormRow;
+                    var7 = var6.Arrow;
+                    var6 = {};
+                    var6 = var8.bind(var3)(var7, var6);
+                    var1.trailing = var6;
+                    var5 = function() { // Original name: onPress, environment: var5
+                        _fun115807: for (var _fun115807_ip = 0;;) switch (_fun115807_ip) {
+                            case 0:
+                                var3 = _closure2_slot2;
+                                var2 = var3.push;
+                                var0 = _closure1_slot3;
+                                var1 = var0.EDIT_LINKED_LOBBY;
+                                var0 = {};
+                                var4 = _closure3_slot0;
+                                var0.channel = var4;
+                                var7 = _closure2_slot1;
+                                var6 = 1;
+                                var4 = var6;
+                                if (!var7) {
+                                    _fun115807_ip = 70;
+                                    continue _fun115807
+                                }
+                            case 51:
+                                var5 = _closure2_slot0;
+                                var5 = var5.length;
+                                var4 = var6;
+                                if (!(var4 === var5)) {
+                                    _fun115807_ip = 70;
+                                    continue _fun115807
+                                }
+                            case 67:
+                                var4 = 2;
+                            case 70:
+                                var0.numScreensToPop = var4;
+                                var0 = var2.bind(var3)(var1, var0);
+                                var0 = undefined;
+                                return var0;
+                        }
+                    };
+                    var1.onPress = var5;
+                    var0 = var0.id;
+                    var0 = var4.bind(var3)(var2, var1, var0);
+                    return var0;
+                };
+                var5 = var6.bind(var7)(var5);
+                var1.children = var5;
+                var0 = var3.bind(var4)(var2, var1);
+            case 184:
+                return var0;
+        }
+    };
+    var _closure1_slot6 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = arg3;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.GuildSettingsSections;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.jsx;
+    var _closure1_slot4 = var6;
+    var3 = var3.jsxs;
+    var _closure1_slot5 = var3;
+    var3 = 11;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/guild_settings/apps/native/GuildSettingsModalLobbiesLinked.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: GuildSettingsModalLobbiesLinked, environment: var1
+        var0 = arg0;
+        var11 = var0.contentContainerStyle;
+        var2 = var0.guildId;
+        var6 = _closure1_slot0;
+        var8 = _closure1_slot2;
+        var0 = 7;
+        var0 = var8[var0];
+        var3 = undefined;
+        var1 = var6.bind(var3)(var0);
+        var0 = var1.useChannelsAllowedToUnlink;
+        var4 = var0.bind(var1)(var2);
+        var1 = _closure1_slot1;
+        var0 = 8;
+        var0 = var8[var0];
+        var2 = var1.bind(var3)(var0);
+        var1 = var2.groupBy;
+        var0 = function(arg0) { // Environment: var10
+            _fun115809: for (var _fun115809_ip = 0;;) switch (_fun115809_ip) {
+                case 0:
+                    var0 = arg0;
+                    var1 = var0.linkedLobby;
+                    var0 = null;
+                    var2 = var0 == var1;
+                    var0 = undefined;
+                    if (var2) {
+                        _fun115809_ip = 26;
+                        continue _fun115809
+                    }
+                case 20:
+                    var0 = var1.application_id;
+                case 26:
+                    return var0;
+            }
+        };
+        var2 = var1.bind(var2)(var4, var0);
+        var _closure2_slot0 = var2;
+        var0 = global;
+        var1 = var0.Object;
+        var0 = var1.keys;
+        var12 = var0.bind(var1)(var2);
+        var _closure2_slot1 = var12;
+        var2 = _closure1_slot5;
+        var0 = 9;
+        var0 = var8[var0];
+        var0 = var6.bind(var3)(var0);
+        var1 = var0.RedesignCompat;
+        var0 = {};
+        var9 = _closure1_slot4;
+        var4 = 5;
+        var4 = var8[var4];
+        var4 = var6.bind(var3)(var4);
+        var7 = var4.Form;
+        var4 = {};
+        var4.contentContainerStyle = var11;
+        var11 = var12.map;
+        var10 = function(arg0) { // Environment: var10
+            var4 = arg0;
+            var3 = _closure1_slot4;
+            var2 = _closure1_slot6;
+            var1 = {};
+            var1.applicationId = var4;
+            var5 = _closure2_slot0;
+            var5 = var5[var4];
+            var1.channels = var5;
+            var0 = _closure2_slot1;
+            var5 = var0.length;
+            var0 = 1;
+            var0 = var0 === var5;
+            var1.isOnlySection = var0;
+            var0 = undefined;
+            var0 = var3.bind(var0)(var2, var1, var4);
+            return var0;
+        };
+        var10 = var11.bind(var12)(var10);
+        var4.children = var10;
+        var7 = var9.bind(var3)(var7, var4);
+        var4 = new Array(2);
+        var4[0] = var7;
+        var7 = _closure1_slot4;
+        var5 = 10;
+        var5 = var8[var5];
+        var5 = var6.bind(var3)(var5);
+        var6 = var5.NavScrim;
+        var5 = {};
+        var5 = var7.bind(var3)(var6, var5);
+        var4[1] = var5;
+        var0.children = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 660, 33, 1469, 6839, 5335, 4763, 14671, 22, 4853, 5160, 2]);

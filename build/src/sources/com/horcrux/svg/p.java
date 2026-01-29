@@ -1,0 +1,73 @@
+package com.horcrux.svg;
+
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.RectF;
+import com.facebook.react.bridge.Dynamic;
+import com.facebook.react.bridge.ReactContext;
+import java.util.HashMap;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+class p extends q {
+
+    /* renamed from: i  reason: collision with root package name */
+    String f18019i;
+
+    /* renamed from: o  reason: collision with root package name */
+    SVGLength f18020o;
+
+    /* renamed from: p  reason: collision with root package name */
+    SVGLength f18021p;
+
+    public p(ReactContext reactContext) {
+        super(reactContext);
+    }
+
+    @Override // com.horcrux.svg.q
+    public Bitmap c(HashMap hashMap, Bitmap bitmap) {
+        float f10;
+        float f11;
+        Bitmap e10 = q.e(hashMap, bitmap, this.f18019i);
+        Bitmap createBitmap = Bitmap.createBitmap(bitmap.getWidth(), bitmap.getHeight(), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(createBitmap);
+        SVGLength sVGLength = this.f18020o;
+        if (sVGLength != null) {
+            f10 = (float) relativeOnWidth(sVGLength);
+        } else {
+            f10 = 0.0f;
+        }
+        SVGLength sVGLength2 = this.f18021p;
+        if (sVGLength2 != null) {
+            f11 = (float) relativeOnHeight(sVGLength2);
+        } else {
+            f11 = 0.0f;
+        }
+        RectF rectF = new RectF(0.0f, 0.0f, f10, f11);
+        getSvgView().getCtm().mapRect(rectF);
+        float f12 = rectF.left;
+        if (f12 >= 0.0f) {
+            f12 = rectF.width();
+        }
+        float f13 = rectF.top;
+        if (f13 >= 0.0f) {
+            f13 = rectF.height();
+        }
+        canvas.drawBitmap(e10, f12, f13, (Paint) null);
+        return createBitmap;
+    }
+
+    public void k(Dynamic dynamic) {
+        this.f18020o = SVGLength.b(dynamic);
+        invalidate();
+    }
+
+    public void l(Dynamic dynamic) {
+        this.f18021p = SVGLength.b(dynamic);
+        invalidate();
+    }
+
+    public void m(String str) {
+        this.f18019i = str;
+        invalidate();
+    }
+}

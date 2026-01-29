@@ -1,0 +1,74 @@
+// utils/ProcessUtilsBase.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot0 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var _closure1_slot1 = var3;
+    var3 = {};
+    var4 = 'unknown';
+    var3.Unknown = var4;
+    var4 = 'main';
+    var3.Main = var4;
+    var4 = 'renderer';
+    var3.Renderer = var4;
+    var4 = 'gpu';
+    var3.GPU = var4;
+    var4 = 'utility';
+    var3.Utility = var4;
+    var4 = 'crashpad';
+    var3.Crashpad = var4;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot1;
+        var2 = function() { // Original name: ProcessUtils, environment: var1
+            var3 = _closure1_slot0;
+            var2 = _closure2_slot0;
+            var0 = undefined;
+            var1 = this;
+            var1 = var3.bind(var0)(var1, var2);
+            return var0;
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var4 = 'getCPUCoreCount';
+        var0.key = var4;
+        var1 = function() { // Original name: value, environment: var1
+            var0 = this;
+            var0 = var0.cpuCoreCount;
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(1);
+        var1[0] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var4 = 2;
+    var5 = var5[var4];
+    var4 = arg1;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'utils/ProcessUtilsBase.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.ElectronProcessType = var3;
+    var2.ProcessUtils = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 2]);

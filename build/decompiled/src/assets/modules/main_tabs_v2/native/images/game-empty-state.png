@@ -1,0 +1,26 @@
+// /assets/modules/main_tabs_v2/native/images/game-empty-state.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/main_tabs_v2/native/images',
+        'width': 64,
+        'height': 64,
+        'scales': null,
+        'hash': 'cfc308b460ac1d3ba90f4c87676a03fe',
+        'name': 'game-empty-state',
+        'type': 'png'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

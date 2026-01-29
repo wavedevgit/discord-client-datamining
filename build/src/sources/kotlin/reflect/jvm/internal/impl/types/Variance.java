@@ -1,0 +1,70 @@
+package kotlin.reflect.jvm.internal.impl.types;
+
+import kotlin.enums.EnumEntries;
+import org.jetbrains.annotations.NotNull;
+/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class Variance {
+    public static final Variance INVARIANT = new Variance("INVARIANT", 0, "", true, true, 0);
+    public static final Variance IN_VARIANCE = new Variance("IN_VARIANCE", 1, "in", true, false, -1);
+    public static final Variance OUT_VARIANCE = new Variance("OUT_VARIANCE", 2, "out", false, true, 1);
+
+    /* renamed from: p  reason: collision with root package name */
+    private static final /* synthetic */ Variance[] f35915p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private static final /* synthetic */ EnumEntries f35916q;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final String f35917d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f35918e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final boolean f35919i;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final int f35920o;
+
+    static {
+        Variance[] a10 = a();
+        f35915p = a10;
+        f35916q = pr.a.a(a10);
+    }
+
+    private Variance(String str, int i10, String str2, boolean z10, boolean z11, int i11) {
+        this.f35917d = str2;
+        this.f35918e = z10;
+        this.f35919i = z11;
+        this.f35920o = i11;
+    }
+
+    private static final /* synthetic */ Variance[] a() {
+        return new Variance[]{INVARIANT, IN_VARIANCE, OUT_VARIANCE};
+    }
+
+    public static Variance valueOf(String str) {
+        return (Variance) Enum.valueOf(Variance.class, str);
+    }
+
+    public static Variance[] values() {
+        return (Variance[]) f35915p.clone();
+    }
+
+    public final boolean getAllowsOutPosition() {
+        return this.f35919i;
+    }
+
+    @NotNull
+    public final String getLabel() {
+        return this.f35917d;
+    }
+
+    @Override // java.lang.Enum
+    @NotNull
+    public String toString() {
+        return this.f35917d;
+    }
+}

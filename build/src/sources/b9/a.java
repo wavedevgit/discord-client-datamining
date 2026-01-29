@@ -1,0 +1,31 @@
+package b9;
+
+import android.graphics.Color;
+import com.facebook.react.fabric.mounting.mountitems.IntBufferBatchMountItem;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public final class a {
+
+    /* renamed from: a  reason: collision with root package name */
+    public static final a f7260a = new a();
+
+    /* renamed from: b  reason: collision with root package name */
+    public static final z8.a f7261b = new z8.a("Performance", "Markers for Performance", -16711936);
+
+    /* renamed from: c  reason: collision with root package name */
+    public static final z8.a f7262c = new z8.a("Navigation", "Tag for navigation", Color.rgb(156, 39, 176));
+
+    /* renamed from: d  reason: collision with root package name */
+    public static final z8.a f7263d = new z8.a("RN Core", "Tag for React Native Core", -16777216);
+
+    /* renamed from: e  reason: collision with root package name */
+    public static final z8.a f7264e = new z8.a("Bridge Calls", "JS to Java calls (warning: this is spammy)", -65281);
+
+    /* renamed from: f  reason: collision with root package name */
+    public static final z8.a f7265f = new z8.a("Native Module", "Native Module init", Color.rgb((int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT, 0, (int) IntBufferBatchMountItem.INSTRUCTION_UPDATE_LAYOUT));
+
+    /* renamed from: g  reason: collision with root package name */
+    public static final z8.a f7266g = new z8.a("UI Manager", "UI Manager View Operations (requires restart\nwarning: this is spammy)", -16711681);
+
+    private a() {
+    }
+}

@@ -1,0 +1,261 @@
+// actions/ChangeVanityURLActionCreators.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var4.bind(var0)(var1);
+    var1 = var1.Endpoints;
+    var _closure1_slot3 = var1;
+    var1 = {};
+    var6 = function(arg0, arg1) { // Original name: openModal, environment: var3
+        var2 = _closure1_slot1;
+        var1 = _closure1_slot2;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'CHANGE_VANITY_URL_MODAL_OPEN';
+        var1.type = var4;
+        var4 = arg0;
+        var1.guildId = var4;
+        var4 = arg1;
+        var1.code = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var1.openModal = var6;
+    var6 = function() { // Original name: closeModal, environment: var3
+        var2 = _closure1_slot1;
+        var1 = _closure1_slot2;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'CHANGE_VANITY_URL_MODAL_CLOSE';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var1.closeModal = var6;
+    var6 = function(arg0) { // Original name: removeVanityURL, environment: var3
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot2;
+        var0 = 2;
+        var1 = var1[var0];
+        var0 = undefined;
+        var0 = var2.bind(var0)(var1);
+        var2 = var0.HTTP;
+        var1 = var2.patch;
+        var0 = {};
+        var5 = _closure1_slot3;
+        var4 = var5.GUILD_VANITY_URL;
+        var3 = arg0;
+        var3 = var4.bind(var5)(var3);
+        var0.url = var3;
+        var3 = {};
+        var4 = null;
+        var3.code = var4;
+        var0.body = var3;
+        var3 = true;
+        var0.oldFormErrors = var3;
+        var0.rejectWithError = var3;
+        var2 = var1.bind(var2)(var0);
+        var1 = var2.then;
+        var0 = function() { // Environment: var0
+            var2 = _closure1_slot1;
+            var1 = _closure1_slot2;
+            var0 = 1;
+            var1 = var1[var0];
+            var0 = undefined;
+            var3 = var2.bind(var0)(var1);
+            var2 = var3.dispatch;
+            var1 = {
+                'type': 'GUILD_SETTINGS_SET_VANITY_URL',
+                'code': null,
+                'uses': 0
+            };
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1.removeVanityURL = var6;
+    var6 = function(arg0, arg1) { // Original name: changeVanityURL, environment: var3
+        var1 = this;
+        var _closure2_slot0 = var1;
+        var2 = _closure1_slot1;
+        var5 = _closure1_slot2;
+        var1 = 1;
+        var1 = var5[var1];
+        var3 = undefined;
+        var6 = var2.bind(var3)(var1);
+        var2 = var6.dispatch;
+        var1 = {};
+        var7 = 'CHANGE_VANITY_URL_MODAL_SUBMIT';
+        var1.type = var7;
+        var1 = var2.bind(var6)(var1);
+        var2 = _closure1_slot0;
+        var1 = 2;
+        var1 = var5[var1];
+        var1 = var2.bind(var3)(var1);
+        var3 = var1.HTTP;
+        var2 = var3.patch;
+        var1 = {};
+        var6 = _closure1_slot3;
+        var5 = var6.GUILD_VANITY_URL;
+        var4 = arg0;
+        var4 = var5.bind(var6)(var4);
+        var1.url = var4;
+        var4 = {};
+        var5 = arg1;
+        var4.code = var5;
+        var1.body = var4;
+        var4 = true;
+        var1.oldFormErrors = var4;
+        var1.rejectWithError = var4;
+        var3 = var2.bind(var3)(var1);
+        var2 = var3.then;
+        var1 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var0 = var0.body;
+            var5 = var0.code;
+            var4 = var0.uses;
+            var2 = _closure1_slot1;
+            var1 = _closure1_slot2;
+            var0 = 1;
+            var1 = var1[var0];
+            var0 = undefined;
+            var3 = var2.bind(var0)(var1);
+            var2 = var3.dispatch;
+            var1 = {};
+            var6 = 'GUILD_SETTINGS_SET_VANITY_URL';
+            var1.type = var6;
+            var1.code = var5;
+            var1.uses = var4;
+            var1 = var2.bind(var3)(var1);
+            var2 = _closure2_slot0;
+            var1 = var2.closeModal;
+            var1 = var1.bind(var2)();
+            return var0;
+        };
+        var0 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var1 = 1;
+            var2 = var2[var1];
+            var1 = undefined;
+            var3 = var3.bind(var1)(var2);
+            var2 = var3.dispatch;
+            var1 = {
+                'type': 'CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE',
+                'error': null,
+                'hasError': true
+            };
+            var4 = var0.body;
+            var1.error = var4;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1.changeVanityURL = var6;
+    var3 = function(arg0, arg1) { // Original name: setVanityURL, environment: var3
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot2;
+        var1 = 2;
+        var2 = var2[var1];
+        var1 = undefined;
+        var1 = var3.bind(var1)(var2);
+        var3 = var1.HTTP;
+        var2 = var3.patch;
+        var1 = {};
+        var6 = _closure1_slot3;
+        var5 = var6.GUILD_VANITY_URL;
+        var4 = arg0;
+        var4 = var5.bind(var6)(var4);
+        var1.url = var4;
+        var4 = {};
+        var5 = arg1;
+        var4.code = var5;
+        var1.body = var4;
+        var4 = true;
+        var1.oldFormErrors = var4;
+        var4 = false;
+        var1.rejectWithError = var4;
+        var3 = var2.bind(var3)(var1);
+        var2 = var3.then;
+        var1 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var0 = var0.body;
+            var5 = var0.code;
+            var4 = var0.uses;
+            var2 = _closure1_slot1;
+            var1 = _closure1_slot2;
+            var0 = 1;
+            var1 = var1[var0];
+            var0 = undefined;
+            var3 = var2.bind(var0)(var1);
+            var2 = var3.dispatch;
+            var1 = {};
+            var6 = 'GUILD_SETTINGS_SET_VANITY_URL';
+            var1.type = var6;
+            var1.code = var5;
+            var1.uses = var4;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = function(arg0) { // Environment: var0
+            var0 = arg0;
+            var3 = _closure1_slot1;
+            var2 = _closure1_slot2;
+            var1 = 1;
+            var2 = var2[var1];
+            var1 = undefined;
+            var3 = var3.bind(var1)(var2);
+            var2 = var3.dispatch;
+            var1 = {
+                'type': 'CHANGE_VANITY_URL_MODAL_SUBMIT_FAILURE',
+                'error': null,
+                'hasError': true
+            };
+            var4 = var0.body;
+            var1.error = var4;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1.setVanityURL = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'actions/ChangeVanityURLActionCreators.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 806, 507, 2]);

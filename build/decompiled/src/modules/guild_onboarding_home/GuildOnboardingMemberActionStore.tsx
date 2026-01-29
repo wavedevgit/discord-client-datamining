@@ -1,0 +1,369 @@
+// modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var0 = function() { // Original name: _isNativeReflectConstruct, environment: var4
+        _fun39522: for (var _fun39522_ip = 0;;) switch (_fun39522_ip) {
+            case 0:
+            case 2: // try_start_0
+                var1 = global;
+                var2 = var1.Boolean;
+                var2 = var2.prototype;
+                var3 = var2.valueOf;
+                var2 = var3.call;
+                var7 = var1.Reflect;
+                var6 = var7.construct;
+                var5 = var1.Boolean;
+                var4 = new Array(0);
+                var1 = function() { // Environment: var0
+                    var0 = undefined;
+                    return var0;
+                };
+                var1 = var6.bind(var7)(var5, var4, var1);
+                var1 = var2.bind(var3)(var1);
+                var1 = !var1;
+                var _closure2_slot0 = var1;
+            case 70: // try_end0
+                _fun39522_ip = 74;
+                continue _fun39522;
+            case 72: // catch_target0
+                CatchBlockStart(arg_register = 1);
+            case 74:
+                var1 = function() { // Original name: _isNativeReflectConstruct, environment: var0
+                    var0 = _closure2_slot0;
+                    var0 = !var0;
+                    var0 = !var0;
+                    return var0;
+                };
+                _closure1_slot8 = var1;
+                var0 = undefined;
+                var0 = var1.bind(var0)();
+                return var0;
+        }
+    };
+    var _closure1_slot8 = var0;
+    var3 = global;
+    var8 = var3.Object;
+    var7 = var8.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot0 = var1;
+    var1 = 1;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot1 = var1;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot2 = var1;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot3 = var1;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var6.bind(var0)(var1);
+    var _closure1_slot4 = var1;
+    var1 = {};
+    var _closure1_slot5 = var1;
+    var7 = {};
+    var _closure1_slot6 = var7;
+    var3 = var3.Set;
+    var7 = var3.prototype;
+    var7 = Object.create(var7, {
+        constructor: {
+            value: var3
+        }
+    });
+    var12 = var7;
+    var3 = new var12[var3](var11);
+    var3 = var3 instanceof Object ? var3 : var7;
+    var _closure1_slot7 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var7 = var3.Store;
+    var3 = function(arg0) { // Environment: var4
+        var3 = function() { // Original name: GuildOnboardingMemberActionStore, environment: var5
+            _fun39526: for (var _fun39526_ip = 0;;) switch (_fun39526_ip) {
+                case 0:
+                    var3 = this;
+                    var2 = undefined;
+                    var4 = undefined;
+                    var0 = _closure1_slot0;
+                    var1 = _closure2_slot0;
+                    var0 = var0.bind(var2)(var3, var1);
+                    var0 = _closure1_slot3;
+                    var8 = var0.bind(var2)(var1);
+                    var1 = _closure1_slot2;
+                    var0 = _closure1_slot8;
+                    var0 = var0.bind(var2)();
+                    if (var0) {
+                        _fun39526_ip = 69;
+                        continue _fun39526
+                    }
+                case 51:
+                    var6 = var8.apply;
+                    var4 = arguments;
+                    var0 = var4;
+                    var0 = var6.bind(var8)(var3, var0);
+                    _fun39526_ip = 105;
+                    continue _fun39526;
+                case 69:
+                    var6 = global;
+                    var7 = var6.Reflect;
+                    var6 = var7.construct;
+                    var5 = _closure1_slot3;
+                    var5 = var5.bind(var2)(var3);
+                    var5 = var5.constructor;
+                    var4 = arguments;
+                    var0 = var6.bind(var7)(var8, var4, var5);
+                case 105:
+                    var0 = var1.bind(var2)(var3, var0);
+                    return var0;
+            }
+        };
+        var _closure2_slot0 = var3;
+        var4 = _closure1_slot4;
+        var2 = undefined;
+        var1 = arg0;
+        var1 = var4.bind(var2)(var3, var1);
+        var1 = _closure1_slot1;
+        var4 = {};
+        var0 = 'getCompletedActions';
+        var4.key = var0;
+        var0 = function(arg0) { // Original name: value, environment: var5
+            _fun39527: for (var _fun39527_ip = 0;;) switch (_fun39527_ip) {
+                case 0:
+                    var2 = arg0;
+                    var0 = null;
+                    var1 = var0 == var2;
+                    if (var1) {
+                        _fun39527_ip = 23;
+                        continue _fun39527
+                    }
+                case 12:
+                    var1 = _closure1_slot6;
+                    var0 = var1[var2];
+                case 23:
+                    return var0;
+            }
+        };
+        var4.value = var0;
+        var0 = new Array(3);
+        var0[0] = var4;
+        var4 = {};
+        var6 = 'hasCompletedActionForChannel';
+        var4.key = var6;
+        var6 = function(arg0, arg1) { // Original name: value, environment: var5
+            _fun39528: for (var _fun39528_ip = 0;;) switch (_fun39528_ip) {
+                case 0:
+                    var2 = this;
+                    var1 = var2.getCompletedActions;
+                    var0 = arg0;
+                    var3 = var1.bind(var2)(var0);
+                    var2 = null;
+                    var0 = var2 != var3;
+                    if (!var0) {
+                        _fun39528_ip = 37;
+                        continue _fun39528
+                    }
+                case 26:
+                    var1 = arg1;
+                    var1 = var3[var1];
+                    var0 = var2 != var1;
+                case 37:
+                    return var0;
+            }
+        };
+        var4.value = var6;
+        var0[1] = var4;
+        var4 = {};
+        var6 = 'getState';
+        var4.key = var6;
+        var5 = function(arg0) { // Original name: value, environment: var5
+            _fun39529: for (var _fun39529_ip = 0;;) switch (_fun39529_ip) {
+                case 0:
+                    var3 = arg0;
+                    var0 = null;
+                    if (!(var0 != var3)) {
+                        _fun39529_ip = 48;
+                        continue _fun39529
+                    }
+                case 9:
+                    var0 = {};
+                    var2 = _closure1_slot6;
+                    var2 = var2[var3];
+                    var0.completedActions = var2;
+                    var2 = _closure1_slot7;
+                    var1 = var2.has;
+                    var1 = var1.bind(var2)(var3);
+                    var0.loading = var1;
+                    _fun39529_ip = 50;
+                    continue _fun39529;
+                case 48:
+                    var0 = {};
+                case 50:
+                    return var0;
+            }
+        };
+        var4.value = var5;
+        var0[2] = var4;
+        var0 = var1.bind(var2)(var3, var0);
+        return var0;
+    };
+    var7 = var3.bind(var0)(var7);
+    var3 = 'GuildOnboardingMemberActionStore';
+    var7.displayName = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var11 = var6.bind(var0)(var3);
+    var3 = {};
+    var8 = function(arg0) { // Original name: handleMemberActionsFetchStart, environment: var4
+        var0 = arg0;
+        var2 = var0.guildId;
+        var1 = _closure1_slot7;
+        var0 = var1.add;
+        var0 = var0.bind(var1)(var2);
+        var0 = undefined;
+        return var0;
+    };
+    var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_START = var8;
+    var8 = function(arg0) { // Original name: handleMemberActionsFetchSuccess, environment: var4
+        _fun39531: for (var _fun39531_ip = 0;;) switch (_fun39531_ip) {
+            case 0:
+                var0 = arg0;
+                var3 = var0.memberActions;
+                var2 = var0.guildId;
+                var0 = null;
+                if (!(var0 == var3)) {
+                    _fun39531_ip = 37;
+                    continue _fun39531
+                }
+            case 20:
+                var1 = _closure1_slot6;
+                var0 = _closure1_slot5;
+                var1[var2] = var0;
+                _fun39531_ip = 62;
+                continue _fun39531;
+            case 37:
+                var1 = _closure1_slot6;
+                var1[var2] = var3;
+                var1 = _closure1_slot7;
+                var0 = var1.delete;
+                var0 = var0.bind(var1)(var2);
+            case 62:
+                var0 = undefined;
+                return var0;
+        }
+    };
+    var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_SUCCESS = var8;
+    var8 = function(arg0) { // Original name: handleMemberActionsFetchFail, environment: var4
+        var0 = arg0;
+        var2 = var0.guildId;
+        var1 = _closure1_slot7;
+        var0 = var1.delete;
+        var0 = var0.bind(var1)(var2);
+        var0 = undefined;
+        return var0;
+    };
+    var3.GUILD_NEW_MEMBER_ACTIONS_FETCH_FAIL = var8;
+    var8 = function(arg0) { // Original name: handleNewMemberActionsDelete, environment: var4
+        _fun39533: for (var _fun39533_ip = 0;;) switch (_fun39533_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.guildId;
+                var2 = _closure1_slot6;
+                var3 = var2[var1];
+                var2 = null;
+                if (!(var2 != var3)) {
+                    _fun39533_ip = 37;
+                    continue _fun39533
+                }
+            case 25:
+                var0 = _closure1_slot6;
+                var0 = delete var0[var1];
+                var0 = undefined;
+                return var0;
+            case 37:
+                var0 = false;
+                return var0;
+        }
+    };
+    var3.GUILD_NEW_MEMBER_ACTIONS_DELETE_SUCCESS = var8;
+    var8 = function(arg0) { // Original name: handleCompleteNewMemberAction, environment: var4
+        var0 = arg0;
+        var3 = var0.guildId;
+        var5 = var0.channelId;
+        var1 = {};
+        var6 = _closure1_slot6;
+        var7 = var1;
+        var2 = copyDataProperties(var7, var6);
+        var2 = {};
+        var4 = _closure1_slot6;
+        var6 = var4[var3];
+        var7 = var2;
+        var4 = copyDataProperties(var7, var6);
+        var4 = true;
+        var2[var5] = var4;
+        var1[var3] = var2;
+        _closure1_slot6 = var1;
+        var0 = undefined;
+        return var0;
+    };
+    var3.COMPLETE_NEW_MEMBER_ACTION = var8;
+    var4 = function(arg0) { // Original name: handleGuildDelete, environment: var4
+        _fun39535: for (var _fun39535_ip = 0;;) switch (_fun39535_ip) {
+            case 0:
+                var0 = arg0;
+                var0 = var0.guild;
+                var3 = _closure1_slot6;
+                var2 = var0.id;
+                var3 = var3[var2];
+                var2 = null;
+                if (!(var2 != var3)) {
+                    _fun39535_ip = 47;
+                    continue _fun39535
+                }
+            case 30:
+                var1 = _closure1_slot6;
+                var0 = var0.id;
+                var0 = delete var1[var0];
+                var0 = undefined;
+                return var0;
+            case 47:
+                var0 = false;
+                return var0;
+        }
+    };
+    var3.GUILD_DELETE = var4;
+    var4 = var7.prototype;
+    var4 = Object.create(var4, {
+        constructor: {
+            value: var7
+        }
+    });
+    var12 = var4;
+    var10 = var3;
+    var3 = new var12[var7](var11, var10, var9);
+    var3 = var3 instanceof Object ? var3 : var4;
+    var4 = 7;
+    var5 = var5[var4];
+    var4 = arg1;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/guild_onboarding_home/GuildOnboardingMemberActionStore.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.default = var3;
+    var2.NO_ACTIONS = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 15, 17, 18, 566, 806, 2]);

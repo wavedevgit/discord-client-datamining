@@ -1,0 +1,560 @@
+// modules/main_tabs_v2/native/shared_components/guild_channels/ChannelContent.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    _fun105844: for (var _fun105844_ip = 0;;) switch (_fun105844_ip) {
+        case 0:
+            var4 = require;
+            var2 = exports;
+            var5 = dependencyMap;
+            var _closure1_slot0 = var4;
+            var0 = metroImportDefault;
+            var _closure1_slot1 = var0;
+            var _closure1_slot2 = var5;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var3);
+            var9 = 0;
+            var6 = var5[var9];
+            var3 = metroImportAll;
+            var0 = undefined;
+            var3 = var3.bind(var0)(var6);
+            var _closure1_slot3 = var3;
+            var15 = 1;
+            var3 = var5[var15];
+            var3 = var4.bind(var0)(var3);
+            var6 = var3.View;
+            var _closure1_slot4 = var6;
+            var7 = var3.StyleSheet;
+            var10 = 2;
+            var3 = var5[var10];
+            var3 = var4.bind(var0)(var3);
+            var13 = var3.SUBTITLE_OPACITY_NORMAL;
+            var _closure1_slot5 = var13;
+            var3 = 3;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var3 = var3.UnreadSetting;
+            var _closure1_slot6 = var3;
+            var12 = 4;
+            var3 = var5[var12];
+            var3 = var4.bind(var0)(var3);
+            var6 = var3.jsx;
+            var _closure1_slot7 = var6;
+            var3 = var3.jsxs;
+            var _closure1_slot8 = var3;
+            var6 = var7.create;
+            var3 = {};
+            var8 = {};
+            var8.flex = var15;
+            var11 = 5;
+            var14 = var5[var11];
+            var16 = var4.bind(var0)(var14);
+            var14 = var16.isIOS;
+            var17 = var14.bind(var16)();
+            var14 = -1;
+            var16 = var14;
+            if (!var17) {
+                _fun105844_ip = 229;
+                continue _fun105844
+            }
+        case 226:
+            var16 = var10;
+        case 229:
+            var8.marginTop = var16;
+            var3.channelContent = var8;
+            var8 = {
+                'display': 'flex',
+                'flexDirection': 'row',
+                'alignItems': 'center',
+                'justifyContent': 'space-between'
+            };
+            var3.channelContainer = var8;
+            var8 = {
+                'flexDirection': 'column',
+                'alignItems': 'flex-start',
+                'flexShrink': 1
+            };
+            var3.leftBox = var8;
+            var8 = {
+                'flexDirection': 'column',
+                'alignItems': 'flex-end'
+            };
+            var3.rightBox = var8;
+            var8 = {
+                'position': 'absolute',
+                'right': 0,
+                'top': 0
+            };
+            var3.rightContentAbsolute = var8;
+            var8 = {};
+            var16 = var5[var11];
+            var17 = var4.bind(var0)(var16);
+            var16 = var17.isAndroid;
+            var16 = var16.bind(var17)();
+            if (!var16) {
+                _fun105844_ip = 341;
+                continue _fun105844
+            }
+        case 338:
+            var14 = var15;
+        case 341:
+            var8.marginTop = var14;
+            var14 = 8;
+            var8.marginRight = var14;
+            var3.channelIcon = var8;
+            var8 = {
+                'display': 'flex',
+                'flexDirection': 'row',
+                'alignItems': 'center'
+            };
+            var3.channelTraits = var8;
+            var8 = {};
+            var8.opacity = var13;
+            var8.marginRight = var12;
+            var13 = var5[var11];
+            var14 = var4.bind(var0)(var13);
+            var13 = var14.isAndroid;
+            var14 = var13.bind(var14)();
+            var13 = 0;
+            if (!var14) {
+                _fun105844_ip = 415;
+                continue _fun105844
+            }
+        case 412:
+            var13 = var10;
+        case 415:
+            var8.marginTop = var13;
+            var3.channelTraitIcon = var8;
+            var8 = {};
+            var8.marginRight = var12;
+            var11 = var5[var11];
+            var12 = var4.bind(var0)(var11);
+            var11 = var12.isAndroid;
+            var11 = var11.bind(var12)();
+            var9 = 0;
+            if (!var11) {
+                _fun105844_ip = 458;
+                continue _fun105844
+            }
+        case 455:
+            var9 = var10;
+        case 458:
+            var8.marginTop = var9;
+            var3.channelTraitIconMuted = var8;
+            var3 = var6.bind(var7)(var3);
+            var _closure1_slot9 = var3;
+            var3 = 13;
+            var3 = var5[var3];
+            var5 = var4.bind(var0)(var3);
+            var4 = var5.fileFinishedImporting;
+            var3 = 'modules/main_tabs_v2/native/shared_components/guild_channels/ChannelContent.tsx';
+            var3 = var4.bind(var5)(var3);
+            var1 = function(arg0) { // Original name: renderChannelContent, environment: var1
+                _fun105845: for (var _fun105845_ip = 0;;) switch (_fun105845_ip) {
+                    case 0:
+                        var2 = arg0;
+                        var33 = var2.name;
+                        var14 = var2.subtitle;
+                        var31 = var2.unread;
+                        var27 = var2.resolvedUnreadSetting;
+                        var0 = var2.locked;
+                        var21 = var2.muted;
+                        var17 = var2.lastMessageTimestampString;
+                        var1 = var2.channel;
+                        var26 = var2.connected;
+                        var25 = var2.layout;
+                        var23 = var2.mentionCount;
+                        var16 = var2.mentionBadge;
+                        var28 = var2.isSubscriptionGated;
+                        var32 = var2.needSubscriptionToAccess;
+                        var4 = _closure1_slot0;
+                        var3 = _closure1_slot2;
+                        var2 = 6;
+                        var2 = var3[var2];
+                        var3 = undefined;
+                        var4 = var4.bind(var3)(var2);
+                        var2 = var4.getLayoutStyles;
+                        var20 = var2.bind(var4)(var25);
+                        var22 = null;
+                        var30 = var22 != var1;
+                        if (!var30) {
+                            _fun105845_ip = 161;
+                            continue _fun105845
+                        }
+                    case 130:
+                        if (var0) {
+                            _fun105845_ip = 158;
+                            continue _fun105845
+                        }
+                    case 133:
+                        var4 = _closure1_slot1;
+                        var5 = _closure1_slot2;
+                        var2 = 7;
+                        var2 = var5[var2];
+                        var2 = var4.bind(var3)(var2);
+                        var0 = var2.bind(var3)(var1);
+                    case 158:
+                        var30 = var0;
+                    case 161:
+                        var0 = var22 == var1;
+                        var29 = undefined;
+                        if (var0) {
+                            _fun105845_ip = 180;
+                            continue _fun105845
+                        }
+                    case 170:
+                        var0 = var1.isNSFW;
+                        var29 = var0.bind(var1)();
+                    case 180:
+                        var1 = _closure1_slot3;
+                        var0 = var1.isValidElement;
+                        var9 = var0.bind(var1)(var14);
+                        var18 = var22 != var17;
+                        var11 = var18;
+                        if (!var18) {
+                            _fun105845_ip = 209;
+                            continue _fun105845
+                        }
+                    case 205:
+                        var11 = var22 == var16;
+                    case 209:
+                        var2 = _closure1_slot7;
+                        var1 = _closure1_slot4;
+                        var0 = {};
+                        var4 = _closure1_slot9;
+                        var4 = var4.channelContent;
+                        var0.style = var4;
+                        var5 = _closure1_slot8;
+                        var4 = {};
+                        var6 = _closure1_slot9;
+                        var6 = var6.channelContainer;
+                        var4.style = var6;
+                        var6 = {};
+                        var7 = _closure1_slot9;
+                        var8 = var7.leftBox;
+                        var7 = new Array(2);
+                        var7[0] = var8;
+                        var8 = {};
+                        var10 = 'center';
+                        if (!var9) {
+                            _fun105845_ip = 288;
+                            continue _fun105845
+                        }
+                    case 282:
+                        var10 = 'space-between';
+                    case 288:
+                        var8.justifyContent = var10;
+                        var7[1] = var8;
+                        var6.style = var7;
+                        var10 = _closure1_slot8;
+                        var8 = _closure1_slot4;
+                        var7 = {};
+                        var13 = {
+                            'flexDirection': 'row',
+                            'paddingRight': null,
+                            'alignItems': 'center'
+                        };
+                        var15 = 0;
+                        var19 = 0;
+                        if (!var11) {
+                            _fun105845_ip = 334;
+                            continue _fun105845
+                        }
+                    case 331:
+                        var19 = 30;
+                    case 334:
+                        var13.paddingRight = var19;
+                        var7.style = var13;
+                        var24 = _closure1_slot7;
+                        var19 = _closure1_slot1;
+                        var34 = _closure1_slot2;
+                        var13 = 8;
+                        var13 = var34[var13];
+                        var19 = var19.bind(var3)(var13);
+                        var13 = {};
+                        var13.title = var33;
+                        var13.muted = var21;
+                        var13.unread = var31;
+                        if (!(var22 == var27)) {
+                            _fun105845_ip = 398;
+                            continue _fun105845
+                        }
+                    case 388:
+                        var31 = _closure1_slot6;
+                        var27 = var31.ONLY_MENTIONS;
+                    case 398:
+                        var13.resolvedUnreadSetting = var27;
+                        var13.connected = var26;
+                        var13.layout = var25;
+                        var19 = var24.bind(var3)(var19, var13);
+                        var13 = new Array(2);
+                        var13[0] = var19;
+                        var19 = var30;
+                        if (var30) {
+                            _fun105845_ip = 436;
+                            continue _fun105845
+                        }
+                    case 433:
+                        var19 = var29;
+                    case 436:
+                        if (!var19) {
+                            _fun105845_ip = 717;
+                            continue _fun105845
+                        }
+                    case 442:
+                        var26 = _closure1_slot8;
+                        var25 = _closure1_slot4;
+                        var24 = {};
+                        var27 = _closure1_slot9;
+                        var31 = var27.channelTraits;
+                        var27 = new Array(2);
+                        var27[0] = var31;
+                        var31 = {};
+                        var33 = 1;
+                        var34 = var33;
+                        if (!var30) {
+                            _fun105845_ip = 490;
+                            continue _fun105845
+                        }
+                    case 481:
+                        var34 = var33;
+                        if (!var29) {
+                            _fun105845_ip = 490;
+                            continue _fun105845
+                        }
+                    case 487:
+                        var34 = 2;
+                    case 490:
+                        var33 = 14;
+                        var33 = var33 * var34;
+                        var31.maxWidth = var33;
+                        var27[1] = var31;
+                        var24.style = var27;
+                        if (!var30) {
+                            _fun105845_ip = 577;
+                            continue _fun105845
+                        }
+                    case 513:
+                        var33 = _closure1_slot7;
+                        var31 = _closure1_slot0;
+                        var34 = _closure1_slot2;
+                        var27 = 9;
+                        var27 = var34[var27];
+                        var27 = var31.bind(var3)(var27);
+                        var31 = var27.LockIcon;
+                        var27 = {
+                            'size': 'xxs',
+                            'color': 'icon-muted'
+                        };
+                        var34 = _closure1_slot9;
+                        var34 = var34.channelTraitIcon;
+                        var27.style = var34;
+                        var30 = var33.bind(var3)(var31, var27);
+                    case 577:
+                        var27 = new Array(3);
+                        var27[0] = var30;
+                        if (!var29) {
+                            _fun105845_ip = 652;
+                            continue _fun105845
+                        }
+                    case 588:
+                        var33 = _closure1_slot7;
+                        var31 = _closure1_slot0;
+                        var34 = _closure1_slot2;
+                        var30 = 10;
+                        var30 = var34[var30];
+                        var30 = var31.bind(var3)(var30);
+                        var31 = var30.WarningIcon;
+                        var30 = {
+                            'size': 'xxs',
+                            'color': 'icon-muted'
+                        };
+                        var34 = _closure1_slot9;
+                        var34 = var34.channelTraitIcon;
+                        var30.style = var34;
+                        var29 = var33.bind(var3)(var31, var30);
+                    case 652:
+                        var27[1] = var29;
+                        if (!var28) {
+                            _fun105845_ip = 703;
+                            continue _fun105845
+                        }
+                    case 659:
+                        var31 = _closure1_slot7;
+                        var30 = _closure1_slot1;
+                        var33 = _closure1_slot2;
+                        var29 = 11;
+                        var29 = var33[var29];
+                        var30 = var30.bind(var3)(var29);
+                        var29 = {};
+                        var29.locked = var32;
+                        var32 = true;
+                        var29.isInMainTabsExperiment = var32;
+                        var28 = var31.bind(var3)(var30, var29);
+                    case 703:
+                        var27[2] = var28;
+                        var24.children = var27;
+                        var19 = var26.bind(var3)(var25, var24);
+                    case 717:
+                        var13[1] = var19;
+                        var7.children = var13;
+                        var8 = var10.bind(var3)(var8, var7);
+                        var7 = new Array(2);
+                        var7[0] = var8;
+                        var8 = null;
+                        if (!var9) {
+                            _fun105845_ip = 834;
+                            continue _fun105845
+                        }
+                    case 744:
+                        var13 = _closure1_slot7;
+                        var10 = _closure1_slot4;
+                        var9 = {};
+                        var19 = {};
+                        var24 = var22 != var23;
+                        var22 = 0;
+                        if (!var24) {
+                            _fun105845_ip = 768;
+                            continue _fun105845
+                        }
+                    case 765:
+                        var22 = var23;
+                    case 768:
+                        var22 = var22 > var15;
+                        var15 = 0;
+                        if (!var22) {
+                            _fun105845_ip = 780;
+                            continue _fun105845
+                        }
+                    case 777:
+                        var15 = 20;
+                    case 780:
+                        var19.paddingRight = var15;
+                        var15 = new Array(2);
+                        var15[0] = var19;
+                        var19 = {};
+                        var20 = var20.messagePreview;
+                        var20 = var20.margin;
+                        var20 = var20.marginTop;
+                        var19.marginTop = var20;
+                        var15[1] = var19;
+                        var9.style = var15;
+                        var9.children = var14;
+                        var8 = var13.bind(var3)(var10, var9);
+                    case 834:
+                        var7[1] = var8;
+                        var6.children = var7;
+                        var7 = var5.bind(var3)(var1, var6);
+                        var6 = new Array(2);
+                        var6[0] = var7;
+                        var9 = _closure1_slot8;
+                        var8 = _closure1_slot4;
+                        var7 = {};
+                        var13 = _closure1_slot9;
+                        if (var11) {
+                            _fun105845_ip = 881;
+                            continue _fun105845
+                        }
+                    case 873:
+                        var10 = var13.rightBox;
+                        _fun105845_ip = 887;
+                        continue _fun105845;
+                    case 881:
+                        var10 = var13.rightContentAbsolute;
+                    case 887:
+                        var7.style = var10;
+                        var13 = var18;
+                        if (!var18) {
+                            _fun105845_ip = 981;
+                            continue _fun105845
+                        }
+                    case 897:
+                        var15 = _closure1_slot7;
+                        var14 = _closure1_slot0;
+                        var19 = _closure1_slot2;
+                        var10 = 12;
+                        var10 = var19[var10];
+                        var10 = var14.bind(var3)(var10);
+                        var14 = var10.Text;
+                        var10 = {
+                            'variant': 'text-xs/medium',
+                            'color': 'text-muted',
+                            'style': null,
+                            'maxFontSizeMultiplier': 1.75
+                        };
+                        var19 = {};
+                        var20 = 'auto';
+                        var19.marginLeft = var20;
+                        var20 = 1;
+                        if (var21) {
+                            _fun105845_ip = 961;
+                            continue _fun105845
+                        }
+                    case 957:
+                        var20 = _closure1_slot5;
+                    case 961:
+                        var19.opacity = var20;
+                        var10.style = var19;
+                        var10.children = var17;
+                        var13 = var15.bind(var3)(var14, var10);
+                    case 981:
+                        var10 = new Array(3);
+                        var10[0] = var13;
+                        var15 = _closure1_slot7;
+                        var14 = _closure1_slot4;
+                        var13 = {};
+                        var17 = new Array(2);
+                        var19 = {
+                            'alignItems': 'center',
+                            'paddingLeft': 4
+                        };
+                        var17[0] = var19;
+                        if (!var18) {
+                            _fun105845_ip = 1036;
+                            continue _fun105845
+                        }
+                    case 1024:
+                        var19 = {};
+                        var20 = 5;
+                        var19.marginTop = var20;
+                        var18 = var19;
+                    case 1036:
+                        var17[1] = var18;
+                        var13.style = var17;
+                        var13.children = var16;
+                        var13 = var15.bind(var3)(var14, var13);
+                        var10[1] = var13;
+                        if (!var11) {
+                            _fun105845_ip = 1090;
+                            continue _fun105845
+                        }
+                    case 1061:
+                        var14 = _closure1_slot7;
+                        var13 = _closure1_slot4;
+                        var12 = {};
+                        var15 = {};
+                        var16 = 1;
+                        var15.flex = var16;
+                        var12.style = var15;
+                        var11 = var14.bind(var3)(var13, var12);
+                    case 1090:
+                        var10[2] = var11;
+                        var7.children = var10;
+                        var7 = var9.bind(var3)(var8, var7);
+                        var6[1] = var7;
+                        var4.children = var6;
+                        var4 = var5.bind(var3)(var1, var4);
+                        var0.children = var4;
+                        var0 = var2.bind(var3)(var1, var0);
+                        return var0;
+                }
+            };
+            var2.renderChannelContent = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 8743, 4261, 33, 478, 8744, 4541, 13743, 4814, 6402, 13297, 3895, 2]);

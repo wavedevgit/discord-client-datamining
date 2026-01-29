@@ -1,0 +1,302 @@
+// modules/forwarding/ForwardingAnalyticsUtils.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var7 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var7);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.AnalyticEvents;
+    var _closure1_slot5 = var3;
+    var3 = 6;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/forwarding/ForwardingAnalyticsUtils.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function(arg0, arg1, arg2) { // Original name: trackForwardStart, environment: var1
+        var3 = _closure1_slot1;
+        var2 = _closure1_slot2;
+        var0 = 3;
+        var2 = var2[var0];
+        var0 = undefined;
+        var4 = var3.bind(var0)(var2);
+        var3 = var4.track;
+        var1 = _closure1_slot5;
+        var2 = var1.FORWARD_MESSAGE_STARTED;
+        var1 = {};
+        var5 = arg0;
+        var1.channel_id = var5;
+        var5 = arg1;
+        var1.message_id = var5;
+        var5 = arg2;
+        var1.source = var5;
+        var1 = var3.bind(var4)(var2, var1);
+        return var0;
+    };
+    var2.trackForwardStart = var3;
+    var3 = function(arg0) { // Original name: trackForwardCancel, environment: var1
+        var0 = arg0;
+        var8 = var0.channelId;
+        var7 = var0.messageId;
+        var6 = var0.numDestinationChanges;
+        var5 = var0.numQueryChanges;
+        var3 = _closure1_slot1;
+        var2 = _closure1_slot2;
+        var0 = 3;
+        var2 = var2[var0];
+        var0 = undefined;
+        var4 = var3.bind(var0)(var2);
+        var3 = var4.track;
+        var1 = _closure1_slot5;
+        var2 = var1.FORWARD_MESSAGE_CANCELLED;
+        var1 = {};
+        var1.channel_id = var8;
+        var1.message_id = var7;
+        var1.num_destination_changes = var6;
+        var1.num_query_changes = var5;
+        var1 = var3.bind(var4)(var2, var1);
+        return var0;
+    };
+    var2.trackForwardCancel = var3;
+    var3 = function(arg0) { // Original name: trackForwardSent, environment: var1
+        _fun70795: for (var _fun70795_ip = 0;;) switch (_fun70795_ip) {
+            case 0:
+                var0 = arg0;
+                var4 = var0.channelId;
+                var8 = var0.messageId;
+                var15 = var0.hasError;
+                var14 = var0.hasContextMessage;
+                var13 = var0.numDestinations;
+                var12 = var0.numDestinationChanges;
+                var11 = var0.numQueryChanges;
+                var10 = var0.anyDestinationHasSlowmode;
+                var3 = var0.source;
+                var6 = _closure1_slot1;
+                var0 = _closure1_slot2;
+                var1 = 3;
+                var2 = var0[var1];
+                var0 = undefined;
+                var9 = var6.bind(var0)(var2);
+                var7 = var9.track;
+                var2 = _closure1_slot5;
+                var6 = var2.FORWARD_MESSAGE_SENT;
+                var2 = {};
+                var2.channel_id = var4;
+                var2.message_id = var8;
+                var2.has_error = var15;
+                var2.has_context_message = var14;
+                var2.num_destinations = var13;
+                var2.num_destination_changes = var12;
+                var2.num_query_changes = var11;
+                var2.any_destination_has_slowmode = var10;
+                var2 = var7.bind(var9)(var6, var2);
+                var2 = 'message-shortcut';
+                if (!(var2 === var3)) {
+                    _fun70795_ip = 316;
+                    continue _fun70795
+                }
+            case 164:
+                var3 = _closure1_slot4;
+                var2 = var3.getChannel;
+                var7 = var2.bind(var3)(var4);
+                var2 = _closure1_slot1;
+                var6 = _closure1_slot2;
+                var1 = var6[var1];
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.track;
+                var1 = _closure1_slot5;
+                var2 = var1.MESSAGE_SHORTCUT_ACTION_SENT;
+                var1 = {};
+                var9 = 'forward';
+                var1.action = var9;
+                var1.original_message_id = var8;
+                var9 = _closure1_slot0;
+                var8 = 4;
+                var6 = var6[var8];
+                var10 = var9.bind(var0)(var6);
+                var9 = var10.collectGuildAnalyticsMetadata;
+                var6 = null;
+                var11 = var6 == var7;
+                var6 = undefined;
+                if (var11) {
+                    _fun70795_ip = 263;
+                    continue _fun70795
+                }
+            case 258:
+                var6 = var7.guild_id;
+            case 263:
+                var17 = var9.bind(var10)(var6);
+                var18 = var1;
+                var6 = copyDataProperties(var18, var17);
+                var6 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var5 = var5[var8];
+                var6 = var6.bind(var0)(var5);
+                var5 = var6.collectChannelAnalyticsMetadata;
+                var17 = var5.bind(var6)(var7);
+                var18 = var1;
+                var5 = copyDataProperties(var18, var17);
+                var1 = var3.bind(var4)(var2, var1);
+            case 316:
+                return var0;
+        }
+    };
+    var2.trackForwardSent = var3;
+    var3 = function(arg0, arg1) { // Original name: trackForwardCopyLink, environment: var1
+        var3 = _closure1_slot1;
+        var2 = _closure1_slot2;
+        var0 = 3;
+        var2 = var2[var0];
+        var0 = undefined;
+        var4 = var3.bind(var0)(var2);
+        var3 = var4.track;
+        var1 = _closure1_slot5;
+        var2 = var1.FORWARD_COPY_LINK;
+        var1 = {};
+        var5 = arg0;
+        var1.channel_id = var5;
+        var5 = arg1;
+        var1.message_id = var5;
+        var1 = var3.bind(var4)(var2, var1);
+        return var0;
+    };
+    var2.trackForwardCopyLink = var3;
+    var3 = function() { // Original name: useTrackForwardAddRecipientOnce, environment: var1
+        var3 = _closure1_slot3;
+        var2 = var3.useMemo;
+        var1 = function() { // Environment: var0
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot2;
+            var0 = 5;
+            var1 = var1[var0];
+            var0 = undefined;
+            var2 = var2.bind(var0)(var1);
+            var1 = var2.once;
+            var0 = function(arg0, arg1, arg2) { // Environment: var0
+                var3 = _closure1_slot1;
+                var2 = _closure1_slot2;
+                var0 = 3;
+                var2 = var2[var0];
+                var0 = undefined;
+                var4 = var3.bind(var0)(var2);
+                var3 = var4.track;
+                var1 = _closure1_slot5;
+                var2 = var1.FORWARD_ADD_RECIPIENT;
+                var1 = {};
+                var5 = arg0;
+                var1.channel_id = var5;
+                var5 = arg1;
+                var1.message_id = var5;
+                var5 = arg2;
+                var1.has_query = var5;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0 = new Array(0);
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.useTrackForwardAddRecipientOnce = var3;
+    var3 = function() { // Original name: useTrackForwardEditSearchOnce, environment: var1
+        var3 = _closure1_slot3;
+        var2 = var3.useMemo;
+        var1 = function() { // Environment: var0
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot2;
+            var0 = 5;
+            var1 = var1[var0];
+            var0 = undefined;
+            var2 = var2.bind(var0)(var1);
+            var1 = var2.once;
+            var0 = function(arg0, arg1) { // Environment: var0
+                var3 = _closure1_slot1;
+                var2 = _closure1_slot2;
+                var0 = 3;
+                var2 = var2[var0];
+                var0 = undefined;
+                var4 = var3.bind(var0)(var2);
+                var3 = var4.track;
+                var1 = _closure1_slot5;
+                var2 = var1.FORWARD_EDIT_SEARCH;
+                var1 = {};
+                var5 = arg0;
+                var1.channel_id = var5;
+                var5 = arg1;
+                var1.message_id = var5;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0 = new Array(0);
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.useTrackForwardEditSearchOnce = var3;
+    var1 = function() { // Original name: useTrackForwardEditContextMessageOnce, environment: var1
+        var3 = _closure1_slot3;
+        var2 = var3.useMemo;
+        var1 = function() { // Environment: var0
+            var2 = _closure1_slot0;
+            var1 = _closure1_slot2;
+            var0 = 5;
+            var1 = var1[var0];
+            var0 = undefined;
+            var2 = var2.bind(var0)(var1);
+            var1 = var2.once;
+            var0 = function(arg0, arg1) { // Environment: var0
+                var3 = _closure1_slot1;
+                var2 = _closure1_slot2;
+                var0 = 3;
+                var2 = var2[var0];
+                var0 = undefined;
+                var4 = var3.bind(var0)(var2);
+                var3 = var4.track;
+                var1 = _closure1_slot5;
+                var2 = var1.FORWARD_EDIT_CONTEXT_MESSAGE;
+                var1 = {};
+                var5 = arg0;
+                var1.channel_id = var5;
+                var5 = arg1;
+                var1.message_id = var5;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+            };
+            var0 = var1.bind(var2)(var0);
+            return var0;
+        };
+        var0 = new Array(0);
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var2.useTrackForwardEditContextMessageOnce = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 1372, 660, 795, 4259, 22, 2]);

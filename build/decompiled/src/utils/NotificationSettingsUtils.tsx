@@ -1,0 +1,1225 @@
+// utils/NotificationSettingsUtils.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var10 = require;
+    var8 = metroImportDefault;
+    var2 = exports;
+    var11 = dependencyMap;
+    var _closure1_slot0 = var10;
+    var _closure1_slot1 = var8;
+    var _closure1_slot2 = var11;
+    var0 = function(arg0, arg1, arg2) { // Original name: differ, environment: var1
+        var1 = arg0;
+        var _closure2_slot0 = var1;
+        var1 = arg1;
+        var _closure2_slot1 = var1;
+        var1 = 'RETURN_PREVIOUS_WHEN_CHANGED';
+        var _closure2_slot2 = var1;
+        var0 = function(arg0) { // Environment: var0
+            _fun43271: for (var _fun43271_ip = 0;;) switch (_fun43271_ip) {
+                case 0:
+                    var2 = arg0;
+                    var3 = _closure2_slot2;
+                    var0 = 'RETURN_PREVIOUS_WHEN_CHANGED';
+                    if (!(var0 !== var3)) {
+                        _fun43271_ip = 24;
+                        continue _fun43271
+                    }
+                case 20:
+                    var0 = undefined;
+                    return var0;
+                case 24:
+                    var0 = _closure2_slot0;
+                    var4 = var0[var2];
+                    var0 = _closure2_slot1;
+                    var3 = var0[var2];
+                    var0 = undefined;
+                    if (!(var4 !== var3)) {
+                        _fun43271_ip = 54;
+                        continue _fun43271
+                    }
+                case 46:
+                    var1 = _closure2_slot0;
+                    var0 = var1[var2];
+                case 54:
+                    return var0;
+            }
+        };
+        return var0;
+    };
+    var _closure1_slot15 = var0;
+    var5 = function(arg0) { // Original name: muteConfigToTimestamp, environment: var1
+        _fun43272: for (var _fun43272_ip = 0;;) switch (_fun43272_ip) {
+            case 0:
+                var1 = arg0;
+                var3 = null;
+                var2 = var3 != var1;
+                var0 = null;
+                if (!var2) {
+                    _fun43272_ip = 73;
+                    continue _fun43272
+                }
+            case 14:
+                var2 = var1.end_time;
+                var2 = var3 != var2;
+                var0 = null;
+                if (!var2) {
+                    _fun43272_ip = 73;
+                    continue _fun43272
+                }
+            case 29:
+                var2 = global;
+                var3 = var2.Date;
+                var4 = var1.end_time;
+                var2 = var3.prototype;
+                var2 = Object.create(var2, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var5 = var2;
+                var1 = new var5[var3](var4, var3);
+                var2 = var1 instanceof Object ? var1 : var2;
+                var1 = var2.getTime;
+                var0 = var1.bind(var2)();
+            case 73:
+                return var0;
+        }
+    };
+    var _closure1_slot16 = var5;
+    var4 = function(arg0) { // Original name: getCurrentGuildSettings, environment: var1
+        _fun43273: for (var _fun43273_ip = 0;;) switch (_fun43273_ip) {
+            case 0:
+                var3 = arg0;
+                var2 = _closure1_slot6;
+                var0 = var2.isMuted;
+                var2 = var0.bind(var2)(var3);
+                var4 = _closure1_slot6;
+                var0 = var4.getMuteConfig;
+                var4 = var0.bind(var4)(var3);
+                var0 = {};
+                var6 = _closure1_slot6;
+                var5 = var6.isSuppressEveryoneEnabled;
+                var5 = var5.bind(var6)(var3);
+                var0.guild_suppress_everyone = var5;
+                var6 = _closure1_slot6;
+                var5 = var6.isSuppressRolesEnabled;
+                var5 = var5.bind(var6)(var3);
+                var0.guild_suppress_roles = var5;
+                var6 = _closure1_slot6;
+                var5 = var6.isMuteScheduledEventsEnabled;
+                var5 = var5.bind(var6)(var3);
+                var0.guild_scheduled_events_muted = var5;
+                var0.guild_is_muted = var2;
+                var6 = null;
+                var5 = var6 != var4;
+                var2 = null;
+                if (!var5) {
+                    _fun43273_ip = 173;
+                    continue _fun43273
+                }
+            case 114:
+                var5 = var4.end_time;
+                var5 = var6 != var5;
+                var2 = null;
+                if (!var5) {
+                    _fun43273_ip = 173;
+                    continue _fun43273
+                }
+            case 129:
+                var5 = global;
+                var6 = var5.Date;
+                var7 = var4.end_time;
+                var5 = var6.prototype;
+                var5 = Object.create(var5, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var8 = var5;
+                var4 = new var8[var6](var7, var6);
+                var5 = var4 instanceof Object ? var4 : var5;
+                var4 = var5.getTime;
+                var2 = var4.bind(var5)();
+            case 173:
+                var0.guild_muted_until = var2;
+                var4 = _closure1_slot6;
+                var2 = var4.isMobilePushEnabled;
+                var2 = var2.bind(var4)(var3);
+                var0.guild_receive_mobile_push = var2;
+                var4 = _closure1_slot14;
+                var5 = _closure1_slot6;
+                var2 = var5.getMessageNotifications;
+                var2 = var2.bind(var5)(var3);
+                var2 = var4[var2];
+                var0.guild_message_notification_settings = var2;
+                var4 = _closure1_slot6;
+                var2 = var4.getNotifyHighlights;
+                var2 = var2.bind(var4)(var3);
+                var0.guild_notify_highlights = var2;
+                var2 = _closure1_slot6;
+                var1 = var2.getGuildFlags;
+                var1 = var1.bind(var2)(var3);
+                var0.guild_flags = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot17 = var4;
+    var3 = function(arg0, arg1) { // Original name: getCurrentChannelSettings, environment: var1
+        _fun43274: for (var _fun43274_ip = 0;;) switch (_fun43274_ip) {
+            case 0:
+                var4 = arg0;
+                var3 = arg1;
+                var2 = _closure1_slot6;
+                var0 = var2.isChannelMuted;
+                var2 = var0.bind(var2)(var4, var3);
+                var5 = _closure1_slot6;
+                var0 = var5.getChannelMuteConfig;
+                var5 = var0.bind(var5)(var4, var3);
+                var0 = {};
+                var0.channel_is_muted = var2;
+                var7 = null;
+                var6 = var7 != var5;
+                var2 = null;
+                if (!var6) {
+                    _fun43274_ip = 118;
+                    continue _fun43274
+                }
+            case 59:
+                var6 = var5.end_time;
+                var6 = var7 != var6;
+                var2 = null;
+                if (!var6) {
+                    _fun43274_ip = 118;
+                    continue _fun43274
+                }
+            case 74:
+                var6 = global;
+                var7 = var6.Date;
+                var9 = var5.end_time;
+                var6 = var7.prototype;
+                var6 = Object.create(var6, {
+                    constructor: {
+                        value: var7
+                    }
+                });
+                var10 = var6;
+                var5 = new var10[var7](var9, var8);
+                var6 = var5 instanceof Object ? var5 : var6;
+                var5 = var6.getTime;
+                var2 = var5.bind(var6)();
+            case 118:
+                var0.channel_muted_until = var2;
+                var5 = _closure1_slot14;
+                var6 = _closure1_slot6;
+                var2 = var6.getChannelMessageNotifications;
+                var2 = var2.bind(var6)(var4, var3);
+                var2 = var5[var2];
+                var0.channel_message_notification_settings = var2;
+                var2 = _closure1_slot6;
+                var1 = var2.getChannelIdFlags;
+                var1 = var1.bind(var2)(var4, var3);
+                var0.channel_flags = var1;
+                return var0;
+        }
+    };
+    var _closure1_slot18 = var3;
+    var6 = global;
+    var12 = var6.Object;
+    var9 = var12.defineProperty;
+    var7 = {};
+    var0 = true;
+    var7.value = var0;
+    var0 = '__esModule';
+    var0 = var9.bind(var12)(var2, var0, var7);
+    var0 = 0;
+    var7 = var11[var0];
+    var0 = undefined;
+    var7 = var8.bind(var0)(var7);
+    var _closure1_slot3 = var7;
+    var7 = 1;
+    var7 = var11[var7];
+    var7 = var8.bind(var0)(var7);
+    var _closure1_slot4 = var7;
+    var7 = 2;
+    var7 = var11[var7];
+    var7 = var8.bind(var0)(var7);
+    var _closure1_slot5 = var7;
+    var7 = 3;
+    var7 = var11[var7];
+    var7 = var8.bind(var0)(var7);
+    var _closure1_slot6 = var7;
+    var7 = 4;
+    var7 = var11[var7];
+    var7 = var10.bind(var0)(var7);
+    var8 = var7.AnalyticEvents;
+    var _closure1_slot7 = var8;
+    var13 = var7.UserNotificationSettings;
+    var _closure1_slot8 = var13;
+    var7 = 5;
+    var7 = var11[var7];
+    var7 = var10.bind(var0)(var7);
+    var7 = var7.NotificationSettingsUpdateType;
+    var _closure1_slot9 = var7;
+    var7 = 6;
+    var7 = var11[var7];
+    var7 = var10.bind(var0)(var7);
+    var7 = var7.UnreadSetting;
+    var _closure1_slot10 = var7;
+    var7 = 7;
+    var7 = var11[var7];
+    var7 = var10.bind(var0)(var7);
+    var8 = var7.ChannelNotificationSettingsFlags;
+    var _closure1_slot11 = var8;
+    var7 = var7.GuildNotificationSettingsFlags;
+    var _closure1_slot12 = var7;
+    var8 = {};
+    var7 = 'enabled forum thread created notifs';
+    var8.ForumThreadsCreatedOn = var7;
+    var7 = 'disabled forum thread created notifs';
+    var8.ForumThreadsCreatedOff = var7;
+    var7 = 'enabled suppress everyone';
+    var8.SuppressEveryoneOn = var7;
+    var7 = 'disabled suppress everyone';
+    var8.SuppressEveryoneOff = var7;
+    var7 = 'enabled suppress roles';
+    var8.SuppressRolesOn = var7;
+    var7 = 'disabled suppress roles';
+    var8.SuppressRolesOff = var7;
+    var7 = 'enabled highlights';
+    var8.HighlightsOn = var7;
+    var7 = 'disabled highlights';
+    var8.HighlightsOff = var7;
+    var7 = 'enabled mobile push notifications';
+    var8.MobilePushOn = var7;
+    var7 = 'disabled mobile push notifications';
+    var8.MobilePushOff = var7;
+    var7 = 'unreads set to all messages';
+    var8.UnreadsAll = var7;
+    var7 = 'unreads set to mentions';
+    var8.UnreadsMentions = var7;
+    var7 = 'unreads set to the default';
+    var8.UnreadsDefault = var7;
+    var7 = 'notifications set to all messages';
+    var8.NotificationsAll = var7;
+    var7 = 'notifications set to mentions';
+    var8.NotificationsMentions = var7;
+    var7 = 'notifications set to nothing';
+    var8.NotificationsNothing = var7;
+    var7 = 'notifications set to the default';
+    var8.NotificationsDefault = var7;
+    var7 = 'notification preset set to all messages';
+    var8.PresetAll = var7;
+    var7 = 'notification preset set to mentions';
+    var8.PresetMentions = var7;
+    var7 = 'notification preset set to nothing';
+    var8.PresetNothing = var7;
+    var7 = 'notification preset set to the default';
+    var8.PresetDefault = var7;
+    var7 = 'opted in to entity';
+    var8.OptedIn = var7;
+    var7 = 'opted out from entity';
+    var8.OptedOut = var7;
+    var7 = 'favorited';
+    var8.Favorited = var7;
+    var7 = 'unfavorited';
+    var8.UnFavorited = var7;
+    var7 = 'muted';
+    var8.Muted = var7;
+    var7 = 'unmuted';
+    var8.Unmuted = var7;
+    var7 = 'muted scheduled events';
+    var8.MutedScheduledEvents = var7;
+    var7 = 'unmuted scheduled events';
+    var8.UnmutedScheduledEvents = var7;
+    var7 = 'channel override created';
+    var8.OverrideCreated = var7;
+    var7 = 'channel override deleted';
+    var8.OverrideDeleted = var7;
+    var7 = 'announcement channels auto set to all messages';
+    var8.AnnouncementAutoEnable = var7;
+    var _closure1_slot13 = var8;
+    var7 = {};
+    var9 = function(arg0) { // Original name: forumThreadsCreated, environment: var1
+        _fun43275: for (var _fun43275_ip = 0;;) switch (_fun43275_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43275_ip = 21;
+                    continue _fun43275
+                }
+            case 13:
+                var0 = var1.ForumThreadsCreatedOff;
+                _fun43275_ip = 27;
+                continue _fun43275;
+            case 21:
+                var0 = var1.ForumThreadsCreatedOn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.forumThreadsCreated = var9;
+    var9 = function(arg0) { // Original name: suppressEveryone, environment: var1
+        _fun43276: for (var _fun43276_ip = 0;;) switch (_fun43276_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43276_ip = 21;
+                    continue _fun43276
+                }
+            case 13:
+                var0 = var1.SuppressEveryoneOff;
+                _fun43276_ip = 27;
+                continue _fun43276;
+            case 21:
+                var0 = var1.SuppressEveryoneOn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.suppressEveryone = var9;
+    var9 = function(arg0) { // Original name: suppressRoles, environment: var1
+        _fun43277: for (var _fun43277_ip = 0;;) switch (_fun43277_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43277_ip = 21;
+                    continue _fun43277
+                }
+            case 13:
+                var0 = var1.SuppressRolesOff;
+                _fun43277_ip = 27;
+                continue _fun43277;
+            case 21:
+                var0 = var1.SuppressRolesOn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.suppressRoles = var9;
+    var9 = function(arg0) { // Original name: highlights, environment: var1
+        _fun43278: for (var _fun43278_ip = 0;;) switch (_fun43278_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43278_ip = 21;
+                    continue _fun43278
+                }
+            case 13:
+                var0 = var1.HighlightsOff;
+                _fun43278_ip = 27;
+                continue _fun43278;
+            case 21:
+                var0 = var1.HighlightsOn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.highlights = var9;
+    var9 = function(arg0) { // Original name: mobilePush, environment: var1
+        _fun43279: for (var _fun43279_ip = 0;;) switch (_fun43279_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43279_ip = 21;
+                    continue _fun43279
+                }
+            case 13:
+                var0 = var1.MobilePushOff;
+                _fun43279_ip = 27;
+                continue _fun43279;
+            case 21:
+                var0 = var1.MobilePushOn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.mobilePush = var9;
+    var9 = function(arg0) { // Original name: optedIn, environment: var1
+        _fun43280: for (var _fun43280_ip = 0;;) switch (_fun43280_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43280_ip = 21;
+                    continue _fun43280
+                }
+            case 13:
+                var0 = var1.OptedOut;
+                _fun43280_ip = 27;
+                continue _fun43280;
+            case 21:
+                var0 = var1.OptedIn;
+            case 27:
+                return var0;
+        }
+    };
+    var7.optedIn = var9;
+    var9 = function(arg0) { // Original name: favorited, environment: var1
+        _fun43281: for (var _fun43281_ip = 0;;) switch (_fun43281_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43281_ip = 21;
+                    continue _fun43281
+                }
+            case 13:
+                var0 = var1.UnFavorited;
+                _fun43281_ip = 27;
+                continue _fun43281;
+            case 21:
+                var0 = var1.Favorited;
+            case 27:
+                return var0;
+        }
+    };
+    var7.favorited = var9;
+    var9 = function(arg0) { // Original name: muted, environment: var1
+        _fun43282: for (var _fun43282_ip = 0;;) switch (_fun43282_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43282_ip = 21;
+                    continue _fun43282
+                }
+            case 13:
+                var0 = var1.Unmuted;
+                _fun43282_ip = 27;
+                continue _fun43282;
+            case 21:
+                var0 = var1.Muted;
+            case 27:
+                return var0;
+        }
+    };
+    var7.muted = var9;
+    var9 = function(arg0) { // Original name: mutedEvents, environment: var1
+        _fun43283: for (var _fun43283_ip = 0;;) switch (_fun43283_ip) {
+            case 0:
+                var1 = _closure1_slot13;
+                var0 = arg0;
+                if (var0) {
+                    _fun43283_ip = 21;
+                    continue _fun43283
+                }
+            case 13:
+                var0 = var1.UnmutedScheduledEvents;
+                _fun43283_ip = 27;
+                continue _fun43283;
+            case 21:
+                var0 = var1.MutedScheduledEvents;
+            case 27:
+                return var0;
+        }
+    };
+    var7.mutedEvents = var9;
+    var9 = function(arg0) { // Original name: unreads, environment: var1
+        _fun43284: for (var _fun43284_ip = 0;;) switch (_fun43284_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = _closure1_slot10;
+                var0 = var0.ALL_MESSAGES;
+                if (!(var2 !== var0)) {
+                    _fun43284_ip = 58;
+                    continue _fun43284
+                }
+            case 20:
+                var0 = _closure1_slot10;
+                var0 = var0.ONLY_MENTIONS;
+                if (!(var2 !== var0)) {
+                    _fun43284_ip = 46;
+                    continue _fun43284
+                }
+            case 34:
+                var0 = _closure1_slot13;
+                var0 = var0.UnreadsDefault;
+                _fun43284_ip = 56;
+                continue _fun43284;
+            case 46:
+                var2 = _closure1_slot13;
+                var0 = var2.UnreadsMentions;
+            case 56:
+                _fun43284_ip = 68;
+                continue _fun43284;
+            case 58:
+                var1 = _closure1_slot13;
+                var0 = var1.UnreadsAll;
+            case 68:
+                return var0;
+        }
+    };
+    var7.unreads = var9;
+    var9 = function(arg0) { // Original name: notifications, environment: var1
+        _fun43285: for (var _fun43285_ip = 0;;) switch (_fun43285_ip) {
+            case 0:
+                var2 = arg0;
+                var0 = _closure1_slot8;
+                var0 = var0.ALL_MESSAGES;
+                if (!(var2 !== var0)) {
+                    _fun43285_ip = 84;
+                    continue _fun43285
+                }
+            case 20:
+                var0 = _closure1_slot8;
+                var0 = var0.ONLY_MENTIONS;
+                if (!(var2 !== var0)) {
+                    _fun43285_ip = 72;
+                    continue _fun43285
+                }
+            case 34:
+                var0 = _closure1_slot8;
+                var0 = var0.NO_MESSAGES;
+                if (!(var2 !== var0)) {
+                    _fun43285_ip = 60;
+                    continue _fun43285
+                }
+            case 48:
+                var0 = _closure1_slot13;
+                var0 = var0.NotificationsDefault;
+                _fun43285_ip = 70;
+                continue _fun43285;
+            case 60:
+                var2 = _closure1_slot13;
+                var0 = var2.NotificationsNothing;
+            case 70:
+                _fun43285_ip = 82;
+                continue _fun43285;
+            case 72:
+                var2 = _closure1_slot13;
+                var0 = var2.NotificationsMentions;
+            case 82:
+                _fun43285_ip = 94;
+                continue _fun43285;
+            case 84:
+                var1 = _closure1_slot13;
+                var0 = var1.NotificationsAll;
+            case 94:
+                return var0;
+        }
+    };
+    var7.notifications = var9;
+    var12 = var6.Object;
+    var9 = var12.freeze;
+    var6 = {};
+    var15 = var13.ALL_MESSAGES;
+    var14 = 'All';
+    var6[var15] = var14;
+    var15 = var13.ONLY_MENTIONS;
+    var14 = 'Mentions';
+    var6[var15] = var14;
+    var15 = var13.NO_MESSAGES;
+    var14 = 'Nothing';
+    var6[var15] = var14;
+    var14 = var13.NULL;
+    var13 = null;
+    var6[var14] = var13;
+    var6 = var9.bind(var12)(var6);
+    var _closure1_slot14 = var6;
+    var9 = 11;
+    var9 = var11[var9];
+    var11 = var10.bind(var0)(var9);
+    var10 = var11.fileFinishedImporting;
+    var9 = 'utils/NotificationSettingsUtils.tsx';
+    var9 = var10.bind(var11)(var9);
+    var2.NotificationLabels = var8;
+    var2.NotificationLabel = var7;
+    var2.MessageNotificationSettings = var6;
+    var6 = function(arg0, arg1, arg2, arg3, arg4) { // Original name: trackGuildNotificationSettingsUpdate, environment: var1
+        _fun43286: for (var _fun43286_ip = 0;;) switch (_fun43286_ip) {
+            case 0:
+                var11 = arg0;
+                var4 = function(arg0) { // Original name: compute, environment: var0
+                    _fun43287: for (var _fun43287_ip = 0;;) switch (_fun43287_ip) {
+                        case 0:
+                            var2 = arg0;
+                            var1 = arguments[1];
+                            var0 = undefined;
+                            if (!(var1 === var0)) {
+                                _fun43287_ip = 14;
+                                continue _fun43287
+                            }
+                        case 12:
+                            var1 = {};
+                        case 14:
+                            var0 = var1.mute_config;
+                            var3 = null;
+                            if (!(var3 != var0)) {
+                                _fun43287_ip = 42;
+                                continue _fun43287
+                            }
+                        case 26:
+                            var0 = var1.mute_config;
+                            var0 = var0.end_time;
+                            if (!(var3 == var0)) {
+                                _fun43287_ip = 50;
+                                continue _fun43287
+                            }
+                        case 42:
+                            var5 = var2.guild_muted_until;
+                            _fun43287_ip = 100;
+                            continue _fun43287;
+                        case 50:
+                            var0 = global;
+                            var6 = var0.Date;
+                            var0 = var1.mute_config;
+                            var7 = var0.end_time;
+                            var4 = var6.prototype;
+                            var4 = Object.create(var4, {
+                                constructor: {
+                                    value: var6
+                                }
+                            });
+                            var8 = var4;
+                            var0 = new var8[var6](var7, var6);
+                            var4 = var0 instanceof Object ? var0 : var4;
+                            var0 = var4.getTime;
+                            var5 = var0.bind(var4)();
+                        case 100:
+                            var0 = var1.message_notifications;
+                            if (!(var3 == var0)) {
+                                _fun43287_ip = 118;
+                                continue _fun43287
+                            }
+                        case 110:
+                            var4 = var2.guild_message_notification_settings;
+                            _fun43287_ip = 135;
+                            continue _fun43287;
+                        case 118:
+                            var6 = _closure1_slot14;
+                            var0 = var1.message_notifications;
+                            var4 = var6[var0];
+                        case 135:
+                            var0 = {};
+                            var0.guild_muted_until = var5;
+                            var5 = var1.flags;
+                            if (!(var3 == var5)) {
+                                _fun43287_ip = 157;
+                                continue _fun43287
+                            }
+                        case 151:
+                            var5 = var2.guild_flags;
+                        case 157:
+                            var0.guild_flags = var5;
+                            var5 = var1.muted;
+                            if (!(var3 == var5)) {
+                                _fun43287_ip = 178;
+                                continue _fun43287
+                            }
+                        case 172:
+                            var5 = var2.guild_is_muted;
+                        case 178:
+                            var0.guild_is_muted = var5;
+                            var0.guild_message_notification_settings = var4;
+                            var4 = var1.suppress_roles;
+                            if (!(var3 == var4)) {
+                                _fun43287_ip = 204;
+                                continue _fun43287
+                            }
+                        case 198:
+                            var4 = var2.guild_suppress_roles;
+                        case 204:
+                            var0.guild_suppress_roles = var4;
+                            var4 = var1.mobile_push;
+                            if (!(var3 == var4)) {
+                                _fun43287_ip = 225;
+                                continue _fun43287
+                            }
+                        case 219:
+                            var4 = var2.guild_receive_mobile_push;
+                        case 225:
+                            var0.guild_receive_mobile_push = var4;
+                            var4 = var1.notify_highlights;
+                            if (!(var3 == var4)) {
+                                _fun43287_ip = 246;
+                                continue _fun43287
+                            }
+                        case 240:
+                            var4 = var2.guild_notify_highlights;
+                        case 246:
+                            var0.guild_notify_highlights = var4;
+                            var4 = var1.suppress_everyone;
+                            if (!(var3 == var4)) {
+                                _fun43287_ip = 267;
+                                continue _fun43287
+                            }
+                        case 261:
+                            var4 = var2.guild_suppress_everyone;
+                        case 267:
+                            var0.guild_suppress_everyone = var4;
+                            var1 = var1.mute_scheduled_events;
+                            if (!(var3 == var1)) {
+                                _fun43287_ip = 288;
+                                continue _fun43287
+                            }
+                        case 282:
+                            var1 = var2.guild_scheduled_events_muted;
+                        case 288:
+                            var0.guild_scheduled_events_muted = var1;
+                            return var0;
+                    }
+                };
+                var0 = undefined;
+                var1 = arg2;
+                var3 = var4.bind(var0)(var1);
+                var1 = _closure1_slot17;
+                var2 = var1.bind(var0)(var11);
+                var1 = arg1;
+                var10 = var4.bind(var0)(var2, var1);
+                var2 = _closure1_slot15;
+                var1 = 'RETURN_PREVIOUS_WHEN_CHANGED';
+                var8 = var2.bind(var0)(var3, var10, var1);
+                var7 = 'guild_flags';
+                var3 = var8.bind(var0)(var7);
+                var1 = null;
+                var4 = var1 != var3;
+                var6 = 0;
+                var2 = 0;
+                if (!var4) {
+                    _fun43286_ip = 83;
+                    continue _fun43286
+                }
+            case 80:
+                var2 = var3;
+            case 83:
+                var3 = var10.guild_flags;
+                var4 = var1 != var3;
+                var1 = 0;
+                if (!var4) {
+                    _fun43286_ip = 101;
+                    continue _fun43286
+                }
+            case 98:
+                var1 = var3;
+            case 101:
+                var12 = var1 ^ var2;
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var1 = 8;
+                var1 = var3[var1];
+                var5 = var2.bind(var0)(var1);
+                var4 = var5.removeFlags;
+                var1 = _closure1_slot12;
+                var2 = var1.OPT_IN_CHANNELS_OFF;
+                var1 = var1.OPT_IN_CHANNELS_ON;
+                var5 = var4.bind(var5)(var12, var2, var1);
+                var2 = _closure1_slot1;
+                var1 = 9;
+                var1 = var3[var1];
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.trackWithMetadata;
+                var1 = _closure1_slot7;
+                var2 = var1.NOTIFICATION_SETTINGS_UPDATED;
+                var1 = {};
+                var15 = var1;
+                var14 = var10;
+                var10 = copyDataProperties(var15, var14);
+                var12 = _closure1_slot3;
+                var10 = var12.getStats;
+                var14 = var10.bind(var12)(var11);
+                var15 = var1;
+                var10 = copyDataProperties(var15, var14);
+                var12 = arg4;
+                var10 = 'location';
+                var1[var10] = var12;
+                var10 = 'guild_id';
+                var1[var10] = var11;
+                var9 = _closure1_slot9;
+                var10 = var9.GUILD;
+                var9 = 'update_type';
+                var1[var9] = var10;
+                var10 = arg3;
+                var9 = 'label';
+                var1[var9] = var10;
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_flags_old';
+                var1[var7] = var9;
+                var7 = 'guild_is_muted';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_is_muted_old';
+                var1[var7] = var9;
+                var7 = 'guild_suppress_roles';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_suppress_roles_old';
+                var1[var7] = var9;
+                var7 = 'guild_notify_highlights';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_notify_highlights_old';
+                var1[var7] = var9;
+                var7 = 'guild_suppress_everyone';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_suppress_everyone_old';
+                var1[var7] = var9;
+                var7 = 'guild_receive_mobile_push';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_receive_mobile_push_old';
+                var1[var7] = var9;
+                var7 = 'guild_scheduled_events_muted';
+                var9 = var8.bind(var0)(var7);
+                var7 = 'guild_scheduled_events_muted_old';
+                var1[var7] = var9;
+                var7 = 'guild_message_notification_settings';
+                var8 = var8.bind(var0)(var7);
+                var7 = 'guild_message_notification_settings_old';
+                var1[var7] = var8;
+                var6 = var6 === var5;
+                var5 = 'is_opt_in_only_change';
+                var1[var5] = var6;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+        }
+    };
+    var2.trackGuildNotificationSettingsUpdate = var6;
+    var2.muteConfigToTimestamp = var5;
+    var5 = function(arg0) { // Original name: trackChannelNotificationSettingsUpdate, environment: var1
+        _fun43288: for (var _fun43288_ip = 0;;) switch (_fun43288_ip) {
+            case 0:
+                var3 = arg0;
+                var15 = var3.updateType;
+                var0 = undefined;
+                if (!(var15 === var0)) {
+                    _fun43288_ip = 30;
+                    continue _fun43288
+                }
+            case 17:
+                var1 = _closure1_slot9;
+                var15 = var1.CHANNEL;
+            case 30:
+                var17 = var3.guildId;
+                var _closure2_slot0 = var17;
+                var16 = var3.channelId;
+                var6 = var3.applicationId;
+                var4 = var3.change;
+                var1 = var3.previous;
+                var14 = var3.label;
+                var18 = var3.location;
+                var2 = function(arg0) { // Original name: compute, environment: var2
+                    _fun43289: for (var _fun43289_ip = 0;;) switch (_fun43289_ip) {
+                        case 0:
+                            var6 = arg0;
+                            var1 = arguments[1];
+                            var3 = undefined;
+                            if (!(var1 === var3)) {
+                                _fun43289_ip = 14;
+                                continue _fun43289
+                            }
+                        case 12:
+                            var1 = {};
+                        case 14:
+                            var8 = var1.muted;
+                            var5 = null;
+                            if (!(var5 == var8)) {
+                                _fun43289_ip = 44;
+                                continue _fun43289
+                            }
+                        case 26:
+                            var2 = var5 == var6;
+                            var0 = undefined;
+                            if (var2) {
+                                _fun43289_ip = 41;
+                                continue _fun43289
+                            }
+                        case 35:
+                            var0 = var6.channel_is_muted;
+                        case 41:
+                            var8 = var0;
+                        case 44:
+                            var0 = var1.message_notifications;
+                            if (!(var5 == var0)) {
+                                _fun43289_ip = 71;
+                                continue _fun43289
+                            }
+                        case 54:
+                            var0 = var5 == var6;
+                            var2 = undefined;
+                            if (var0) {
+                                _fun43289_ip = 69;
+                                continue _fun43289
+                            }
+                        case 63:
+                            var2 = var6.channel_message_notification_settings;
+                        case 69:
+                            _fun43289_ip = 88;
+                            continue _fun43289;
+                        case 71:
+                            var4 = _closure1_slot14;
+                            var0 = var1.message_notifications;
+                            var2 = var4[var0];
+                        case 88:
+                            var0 = {};
+                            var0.channel_is_muted = var8;
+                            var4 = _closure2_slot0;
+                            var7 = var5 == var4;
+                            var4 = null;
+                            if (var7) {
+                                _fun43289_ip = 127;
+                                continue _fun43289
+                            }
+                        case 111:
+                            var7 = true;
+                            var7 = var7 === var8;
+                            if (var7) {
+                                _fun43289_ip = 124;
+                                continue _fun43289
+                            }
+                        case 120:
+                            var7 = var5 != var2;
+                        case 124:
+                            var4 = var7;
+                        case 127:
+                            var0.channel_is_overridden = var4;
+                            var4 = var1.flags;
+                            if (!(var5 == var4)) {
+                                _fun43289_ip = 161;
+                                continue _fun43289
+                            }
+                        case 143:
+                            var7 = var5 == var6;
+                            var5 = undefined;
+                            if (var7) {
+                                _fun43289_ip = 158;
+                                continue _fun43289
+                            }
+                        case 152:
+                            var5 = var6.channel_flags;
+                        case 158:
+                            var4 = var5;
+                        case 161:
+                            var0.channel_flags = var4;
+                            var0.channel_message_notification_settings = var2;
+                            var2 = _closure1_slot16;
+                            var1 = var1.mute_config;
+                            var1 = var2.bind(var3)(var1);
+                            var0.channel_muted_until = var1;
+                            return var0;
+                    }
+                };
+                var3 = var2.bind(var0)(var1);
+                var1 = _closure1_slot18;
+                var1 = var1.bind(var0)(var17, var16);
+                var19 = var2.bind(var0)(var1, var4);
+                var2 = _closure1_slot15;
+                var1 = 'RETURN_PREVIOUS_WHEN_CHANGED';
+                var10 = var2.bind(var0)(var3, var19, var1);
+                var2 = _closure1_slot4;
+                var1 = var2.getChannel;
+                var11 = var1.bind(var2)(var16);
+                var9 = 'channel_flags';
+                var1 = var10.bind(var0)(var9);
+                var12 = null;
+                var3 = var12 != var1;
+                var8 = 0;
+                var2 = 0;
+                if (!var3) {
+                    _fun43288_ip = 156;
+                    continue _fun43288
+                }
+            case 153:
+                var2 = var1;
+            case 156:
+                var3 = var19.channel_flags;
+                var4 = var12 != var3;
+                var1 = 0;
+                if (!var4) {
+                    _fun43288_ip = 174;
+                    continue _fun43288
+                }
+            case 171:
+                var1 = var3;
+            case 174:
+                var5 = var1 ^ var2;
+                var2 = _closure1_slot0;
+                var3 = _closure1_slot2;
+                var1 = 8;
+                var1 = var3[var1];
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.removeFlags;
+                var1 = _closure1_slot11;
+                var2 = var1.FAVORITED;
+                var1 = var1.OPT_IN_ENABLED;
+                var5 = var3.bind(var4)(var5, var2, var1);
+                var2 = _closure1_slot5;
+                var1 = var2.getLastMessage;
+                var2 = var1.bind(var2)(var16);
+                var3 = var12 == var2;
+                var1 = undefined;
+                if (var3) {
+                    _fun43288_ip = 256;
+                    continue _fun43288
+                }
+            case 251:
+                var1 = var2.type;
+            case 256:
+                var2 = var12 != var1;
+                var7 = null;
+                if (!var2) {
+                    _fun43288_ip = 268;
+                    continue _fun43288
+                }
+            case 265:
+                var7 = var1;
+            case 268:
+                var2 = _closure1_slot1;
+                var3 = _closure1_slot2;
+                var1 = 9;
+                var1 = var3[var1];
+                var4 = var2.bind(var0)(var1);
+                var3 = var4.trackWithMetadata;
+                var1 = _closure1_slot7;
+                var2 = var1.NOTIFICATION_SETTINGS_UPDATED;
+                var1 = {};
+                var22 = var1;
+                var21 = var19;
+                var19 = copyDataProperties(var22, var21);
+                var19 = _closure1_slot3;
+                var13 = var19.getStats;
+                var21 = var13.bind(var19)(var17);
+                var22 = var1;
+                var13 = copyDataProperties(var22, var21);
+                var13 = 'location';
+                var1[var13] = var18;
+                var13 = 'guild_id';
+                var1[var13] = var17;
+                var13 = 'channel_id';
+                var1[var13] = var16;
+                var13 = 'update_type';
+                var1[var13] = var15;
+                var13 = 'label';
+                var1[var13] = var14;
+                var13 = var12 != var11;
+                var12 = null;
+                if (!var13) {
+                    _fun43288_ip = 398;
+                    continue _fun43288
+                }
+            case 392:
+                var12 = var11.parent_id;
+            case 398:
+                var11 = 'parent_id';
+                var1[var11] = var12;
+                var11 = var10.bind(var0)(var9);
+                var9 = 'channel_flags_old';
+                var1[var9] = var11;
+                var9 = 'channel_is_muted';
+                var11 = var10.bind(var0)(var9);
+                var9 = 'channel_is_muted_old';
+                var1[var9] = var11;
+                var9 = 'channel_muted_until';
+                var11 = var10.bind(var0)(var9);
+                var9 = 'channel_muted_until_old';
+                var1[var9] = var11;
+                var9 = 'channel_is_overridden';
+                var11 = var10.bind(var0)(var9);
+                var9 = 'channel_is_overridden_old';
+                var1[var9] = var11;
+                var9 = 'channel_message_notification_settings';
+                var10 = var10.bind(var0)(var9);
+                var9 = 'channel_message_notification_settings_old';
+                var1[var9] = var10;
+                var8 = var8 === var5;
+                var5 = 'is_opt_in_only_change';
+                var1[var5] = var8;
+                var5 = 'last_message_type';
+                var1[var5] = var7;
+                var5 = 'application_id';
+                var1[var5] = var6;
+                var1 = var3.bind(var4)(var2, var1);
+                return var0;
+        }
+    };
+    var2.trackChannelNotificationSettingsUpdate = var5;
+    var2.getCurrentGuildSettings = var4;
+    var4 = function(arg0) { // Original name: getManyCurrentGuildSettings, environment: var1
+        var3 = arg0;
+        var0 = global;
+        var0 = var0.Map;
+        var2 = var0.prototype;
+        var2 = Object.create(var2, {
+            constructor: {
+                value: var0
+            }
+        });
+        var5 = var2;
+        var0 = new var5[var0](var4);
+        var0 = var0 instanceof Object ? var0 : var2;
+        var _closure2_slot0 = var0;
+        var2 = var3.forEach;
+        var1 = function(arg0) { // Environment: var1
+            var3 = arg0;
+            var2 = _closure2_slot0;
+            var1 = var2.set;
+            var4 = _closure1_slot17;
+            var0 = undefined;
+            var0 = var4.bind(var0)(var3);
+            var0 = var1.bind(var2)(var3, var0);
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.getManyCurrentGuildSettings = var4;
+    var2.getCurrentChannelSettings = var3;
+    var3 = function(arg0, arg1) { // Original name: getManyCurrentChannelSettings, environment: var1
+        var3 = arg1;
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var0 = global;
+        var0 = var0.Map;
+        var2 = var0.prototype;
+        var2 = Object.create(var2, {
+            constructor: {
+                value: var0
+            }
+        });
+        var5 = var2;
+        var0 = new var5[var0](var4);
+        var0 = var0 instanceof Object ? var0 : var2;
+        var _closure2_slot1 = var0;
+        var2 = var3.forEach;
+        var1 = function(arg0) { // Environment: var1
+            var3 = arg0;
+            var2 = _closure2_slot1;
+            var1 = var2.set;
+            var5 = _closure1_slot18;
+            var4 = _closure2_slot0;
+            var0 = undefined;
+            var0 = var5.bind(var0)(var4, var3);
+            var0 = var1.bind(var2)(var3, var0);
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.getManyCurrentChannelSettings = var3;
+    var1 = function(arg0, arg1) { // Original name: trackAccountNotificationSettingUpdated, environment: var1
+        var2 = _closure1_slot1;
+        var1 = _closure1_slot2;
+        var0 = 10;
+        var1 = var1[var0];
+        var0 = undefined;
+        var4 = var2.bind(var0)(var1);
+        var3 = var4.track;
+        var1 = _closure1_slot7;
+        var2 = var1.NOTIFICATION_SETTINGS_UPDATED;
+        var1 = {};
+        var5 = _closure1_slot9;
+        var5 = var5.ACCOUNT;
+        var1.update_type = var5;
+        var5 = arg0;
+        var5 = var5.quietMode;
+        var1.quiet_mode_enabled = var5;
+        var5 = arg1;
+        var5 = var5.quietMode;
+        var1.quiet_mode_enabled_old = var5;
+        var1 = var3.bind(var4)(var2, var1);
+        return var0;
+    };
+    var2.trackAccountNotificationSettingUpdated = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4652, 1372, 4207, 4260, 660, 3062, 4261, 665, 1384, 4259, 795, 2]);

@@ -1,0 +1,102 @@
+package o1;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public abstract class e {
+    public static int A = 2131361866;
+    public static int B = 2131361867;
+    public static int C = 2131361868;
+    public static int D = 2131361869;
+    public static int E = 2131361870;
+    public static int F = 2131361871;
+    public static int G = 2131361872;
+    public static int H = 2131363081;
+    public static int I = 2131363082;
+    public static int J = 2131363083;
+    public static int K = 2131363084;
+    public static int L = 2131363086;
+    public static int M = 2131363088;
+    public static int N = 2131363089;
+    public static int O = 2131363090;
+    public static int P = 2131363091;
+    public static int Q = 2131363092;
+    public static int R = 2131363095;
+    public static int S = 2131363096;
+    public static int T = 2131363097;
+
+    /* renamed from: a  reason: collision with root package name */
+    public static int f42252a = 2131361837;
+
+    /* renamed from: b  reason: collision with root package name */
+    public static int f42253b = 2131361841;
+
+    /* renamed from: c  reason: collision with root package name */
+    public static int f42254c = 2131361842;
+
+    /* renamed from: d  reason: collision with root package name */
+    public static int f42255d = 2131361843;
+
+    /* renamed from: e  reason: collision with root package name */
+    public static int f42256e = 2131361844;
+
+    /* renamed from: f  reason: collision with root package name */
+    public static int f42257f = 2131361845;
+
+    /* renamed from: g  reason: collision with root package name */
+    public static int f42258g = 2131361846;
+
+    /* renamed from: h  reason: collision with root package name */
+    public static int f42259h = 2131361847;
+
+    /* renamed from: i  reason: collision with root package name */
+    public static int f42260i = 2131361848;
+
+    /* renamed from: j  reason: collision with root package name */
+    public static int f42261j = 2131361849;
+
+    /* renamed from: k  reason: collision with root package name */
+    public static int f42262k = 2131361850;
+
+    /* renamed from: l  reason: collision with root package name */
+    public static int f42263l = 2131361851;
+
+    /* renamed from: m  reason: collision with root package name */
+    public static int f42264m = 2131361852;
+
+    /* renamed from: n  reason: collision with root package name */
+    public static int f42265n = 2131361853;
+
+    /* renamed from: o  reason: collision with root package name */
+    public static int f42266o = 2131361854;
+
+    /* renamed from: p  reason: collision with root package name */
+    public static int f42267p = 2131361855;
+
+    /* renamed from: q  reason: collision with root package name */
+    public static int f42268q = 2131361856;
+
+    /* renamed from: r  reason: collision with root package name */
+    public static int f42269r = 2131361857;
+
+    /* renamed from: s  reason: collision with root package name */
+    public static int f42270s = 2131361858;
+
+    /* renamed from: t  reason: collision with root package name */
+    public static int f42271t = 2131361859;
+
+    /* renamed from: u  reason: collision with root package name */
+    public static int f42272u = 2131361860;
+
+    /* renamed from: v  reason: collision with root package name */
+    public static int f42273v = 2131361861;
+
+    /* renamed from: w  reason: collision with root package name */
+    public static int f42274w = 2131361862;
+
+    /* renamed from: x  reason: collision with root package name */
+    public static int f42275x = 2131361863;
+
+    /* renamed from: y  reason: collision with root package name */
+    public static int f42276y = 2131361864;
+
+    /* renamed from: z  reason: collision with root package name */
+    public static int f42277z = 2131361865;
+}

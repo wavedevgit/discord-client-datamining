@@ -1,0 +1,15 @@
+package e5;
+
+import android.graphics.Bitmap;
+import e5.c;
+import java.util.Map;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public interface i {
+    void a(int i10);
+
+    c.C0288c b(c.b bVar);
+
+    void c();
+
+    void d(c.b bVar, Bitmap bitmap, Map map, int i10);
+}

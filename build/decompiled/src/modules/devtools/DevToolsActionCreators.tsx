@@ -1,0 +1,87 @@
+// modules/devtools/DevToolsActionCreators.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var6;
+    var _closure1_slot1 = var5;
+    var3 = function(arg0) { // Original name: updateDevToolsSettings, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'DEV_TOOLS_SETTINGS_UPDATE';
+        var1.type = var4;
+        var4 = arg0;
+        var1.settings = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var _closure1_slot3 = var3;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var4);
+    var0 = 0;
+    var4 = var5[var0];
+    var0 = undefined;
+    var4 = var6.bind(var0)(var4);
+    var _closure1_slot2 = var4;
+    var4 = 2;
+    var5 = var5[var4];
+    var4 = arg1;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/devtools/DevToolsActionCreators.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.updateDevToolsSettings = var3;
+    var3 = function() { // Original name: toggleDisplayDevTools, environment: var1
+        var2 = _closure1_slot3;
+        var1 = {};
+        var0 = _closure1_slot2;
+        var0 = var0.displayTools;
+        var0 = !var0;
+        var1.displayTools = var0;
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var2.toggleDisplayDevTools = var3;
+    var3 = function(arg0) { // Original name: openDevTools, environment: var1
+        var2 = _closure1_slot3;
+        var1 = {};
+        var0 = true;
+        var1.displayTools = var0;
+        var0 = arg0;
+        var1.lastOpenTabId = var0;
+        var0 = undefined;
+        var1 = var2.bind(var0)(var1);
+        return var0;
+    };
+    var2.openDevTools = var3;
+    var1 = function() { // Original name: clearAnalyticsLog, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'ANALYTICS_LOG_CLEAR';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.clearAnalyticsLog = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [11004, 806, 2]);

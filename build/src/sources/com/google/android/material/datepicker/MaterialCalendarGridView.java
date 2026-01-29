@@ -1,0 +1,136 @@
+package com.google.android.material.datepicker;
+
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Rect;
+import android.util.AttributeSet;
+import android.view.KeyEvent;
+import android.view.View;
+import android.widget.GridView;
+import android.widget.ListAdapter;
+import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
+import androidx.core.view.h0;
+import java.util.Calendar;
+/* JADX INFO: Access modifiers changed from: package-private */
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class MaterialCalendarGridView extends GridView {
+
+    /* renamed from: d  reason: collision with root package name */
+    private final Calendar f15877d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private final boolean f15878e;
+
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    class a extends androidx.core.view.a {
+        a() {
+        }
+
+        @Override // androidx.core.view.a
+        public void onInitializeAccessibilityNodeInfo(View view, AccessibilityNodeInfoCompat accessibilityNodeInfoCompat) {
+            super.onInitializeAccessibilityNodeInfo(view, accessibilityNodeInfoCompat);
+            accessibilityNodeInfoCompat.y0(null);
+        }
+    }
+
+    public MaterialCalendarGridView(Context context, AttributeSet attributeSet) {
+        this(context, attributeSet, 0);
+    }
+
+    private void a(int i10, Rect rect) {
+        if (i10 == 33) {
+            setSelection(getAdapter2().k());
+        } else if (i10 == 130) {
+            setSelection(getAdapter2().b());
+        } else {
+            super.onFocusChanged(true, i10, rect);
+        }
+    }
+
+    @Override // android.widget.GridView, android.widget.AdapterView
+    /* renamed from: b */
+    public n getAdapter2() {
+        return (n) super.getAdapter();
+    }
+
+    @Override // android.widget.AbsListView, android.view.ViewGroup, android.view.View
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        getAdapter2().notifyDataSetChanged();
+    }
+
+    @Override // android.view.View
+    protected final void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        n adapter2 = getAdapter2();
+        adapter2.getClass();
+        int max = Math.max(adapter2.b(), getFirstVisiblePosition());
+        int min = Math.min(adapter2.k(), getLastVisiblePosition());
+        adapter2.getItem(max);
+        adapter2.getItem(min);
+        throw null;
+    }
+
+    @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
+    protected void onFocusChanged(boolean z10, int i10, Rect rect) {
+        if (z10) {
+            a(i10, rect);
+        } else {
+            super.onFocusChanged(false, i10, rect);
+        }
+    }
+
+    @Override // android.widget.GridView, android.widget.AbsListView, android.view.View, android.view.KeyEvent.Callback
+    public boolean onKeyDown(int i10, KeyEvent keyEvent) {
+        if (!super.onKeyDown(i10, keyEvent)) {
+            return false;
+        }
+        if (getSelectedItemPosition() == -1 || getSelectedItemPosition() >= getAdapter2().b()) {
+            return true;
+        }
+        if (19 != i10) {
+            return false;
+        }
+        setSelection(getAdapter2().b());
+        return true;
+    }
+
+    @Override // android.widget.GridView, android.widget.AbsListView, android.view.View
+    public void onMeasure(int i10, int i11) {
+        if (this.f15878e) {
+            super.onMeasure(i10, View.MeasureSpec.makeMeasureSpec(16777215, Integer.MIN_VALUE));
+            getLayoutParams().height = getMeasuredHeight();
+            return;
+        }
+        super.onMeasure(i10, i11);
+    }
+
+    @Override // android.widget.GridView, android.widget.AdapterView
+    public void setSelection(int i10) {
+        if (i10 < getAdapter2().b()) {
+            super.setSelection(getAdapter2().b());
+        } else {
+            super.setSelection(i10);
+        }
+    }
+
+    public MaterialCalendarGridView(Context context, AttributeSet attributeSet, int i10) {
+        super(context, attributeSet, i10);
+        this.f15877d = t.i();
+        if (k.J(getContext())) {
+            setNextFocusLeftId(yg.f.f54421a);
+            setNextFocusRightId(yg.f.f54424d);
+        }
+        this.f15878e = k.L(getContext());
+        h0.n0(this, new a());
+    }
+
+    @Override // android.widget.AdapterView
+    public final void setAdapter(ListAdapter listAdapter) {
+        if (listAdapter instanceof n) {
+            super.setAdapter(listAdapter);
+            return;
+        }
+        throw new IllegalArgumentException(String.format("%1$s must have its Adapter set to a %2$s", MaterialCalendarGridView.class.getCanonicalName(), n.class.getCanonicalName()));
+    }
+}

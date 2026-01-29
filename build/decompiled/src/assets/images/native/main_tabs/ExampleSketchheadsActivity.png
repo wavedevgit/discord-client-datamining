@@ -1,0 +1,26 @@
+// /assets/images/native/main_tabs/ExampleSketchheadsActivity.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/native/main_tabs',
+        'width': 192,
+        'height': 144,
+        'scales': null,
+        'hash': '2bbd6220afd7d7de1fa25c481ae56a3d',
+        'name': 'ExampleSketchheadsActivity',
+        'type': 'png'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

@@ -1,0 +1,26 @@
+// /assets/modules/quests/images/nitro_modal_header_background.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/quests/images',
+        'width': 435,
+        'height': 218,
+        'scales': null,
+        'hash': '92f827adadc1f86811fd4e36c86fdf27',
+        'name': 'nitro_modal_header_background',
+        'type': 'png'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

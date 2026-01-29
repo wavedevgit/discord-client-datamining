@@ -1,0 +1,26 @@
+// /assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images/role_subscription_settings_hero.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/modules/guild_role_subscriptions/native/guild_settings/welcome/images',
+        'width': 375,
+        'height': 187,
+        'scales': null,
+        'hash': 'a089de21c15f6e03808f87d787c28c08',
+        'name': 'role_subscription_settings_hero',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

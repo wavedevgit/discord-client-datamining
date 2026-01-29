@@ -1,0 +1,208 @@
+// modules/auth/native/RegistrationUIStore.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
+    var2 = exports;
+    var6 = dependencyMap;
+    var _closure1_slot0 = var5;
+    var _closure1_slot1 = var6;
+    var0 = global;
+    var7 = var0.Object;
+    var4 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var3 = var6[var0];
+    var0 = undefined;
+    var7 = var5.bind(var0)(var3);
+    var4 = var7.create;
+    var3 = function() { // Environment: var1
+        var0 = {};
+        var1 = {};
+        var0.errors = var1;
+        var1 = {};
+        var0.registrationOptions = var1;
+        var1 = false;
+        var0.submitting = var1;
+        var1 = undefined;
+        var0.registrationVariant = var1;
+        return var0;
+    };
+    var3 = var4.bind(var7)(var3);
+    var _closure1_slot2 = var3;
+    var4 = 2;
+    var4 = var6[var4];
+    var6 = var5.bind(var0)(var4);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/auth/native/RegistrationUIStore.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.useRegistrationUIStore = var3;
+    var3 = function(arg0) { // Original name: setRegistrationErrors, environment: var1
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot2;
+            var1 = var2.setState;
+            var0 = {};
+            var3 = _closure2_slot0;
+            var0.errors = var3;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setRegistrationErrors = var3;
+    var3 = function() { // Original name: clearRegistrationErrorMessage, environment: var1
+        var2 = {};
+        var4 = _closure1_slot2;
+        var3 = var4.getState;
+        var3 = var3.bind(var4)();
+        var5 = var3.errors;
+        var6 = var2;
+        var3 = copyDataProperties(var6, var5);
+        var _closure2_slot0 = var2;
+        var2 = delete var2.message;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot2;
+            var1 = var2.setState;
+            var0 = {};
+            var3 = _closure2_slot0;
+            var0.errors = var3;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.clearRegistrationErrorMessage = var3;
+    var3 = function(arg0) { // Original name: updateRegistrationOptions, environment: var1
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var3 = _closure1_slot2;
+        var2 = var3.getState;
+        var2 = var2.bind(var3)();
+        var2 = var2.registrationOptions;
+        var _closure2_slot1 = var2;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot2;
+            var1 = var2.setState;
+            var0 = {};
+            var3 = {};
+            var6 = _closure2_slot1;
+            var7 = var3;
+            var5 = copyDataProperties(var7, var6);
+            var6 = _closure2_slot0;
+            var7 = var3;
+            var4 = copyDataProperties(var7, var6);
+            var0.registrationOptions = var3;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.updateRegistrationOptions = var3;
+    var3 = function() { // Original name: resetRegistration, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 1;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot2;
+            var1 = var2.setState;
+            var0 = {};
+            var3 = {};
+            var0.errors = var3;
+            var3 = {};
+            var0.registrationOptions = var3;
+            var3 = false;
+            var0.submitting = var3;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.resetRegistration = var3;
+    var3 = function(arg0) { // Original name: setSubmitting, environment: var1
+        var0 = arg0;
+        var _closure2_slot0 = var0;
+        var3 = _closure1_slot0;
+        var2 = _closure1_slot1;
+        var0 = 1;
+        var2 = var2[var0];
+        var0 = undefined;
+        var3 = var3.bind(var0)(var2);
+        var2 = var3.batchUpdates;
+        var1 = function() { // Environment: var1
+            var2 = _closure1_slot2;
+            var1 = var2.setState;
+            var0 = {};
+            var3 = {};
+            var0.errors = var3;
+            var3 = _closure2_slot0;
+            var0.submitting = var3;
+            var0 = var1.bind(var2)(var0);
+            var0 = undefined;
+            return var0;
+        };
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.setSubmitting = var3;
+    var1 = function() { // Original name: doesRegistrationHaveIdentityType, environment: var1
+        _fun100584: for (var _fun100584_ip = 0;;) switch (_fun100584_ip) {
+            case 0:
+                var1 = _closure1_slot2;
+                var0 = var1.getState;
+                var0 = var0.bind(var1)();
+                var1 = var0.registrationOptions;
+                var0 = var1.email;
+                var2 = null;
+                var0 = var2 != var0;
+                if (var0) {
+                    _fun100584_ip = 48;
+                    continue _fun100584
+                }
+            case 38:
+                var1 = var1.phone;
+                var0 = var2 != var1;
+            case 48:
+                return var0;
+        }
+    };
+    var2.doesRegistrationHaveIdentityType = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [629, 802, 2]);

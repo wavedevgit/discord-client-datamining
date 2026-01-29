@@ -1,0 +1,26 @@
+// /assets/images/native/custom_app_icons/MatteLightIcon/MatteLightIcon.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/native/custom_app_icons/MatteLightIcon',
+        'width': 60,
+        'height': 60,
+        'scales': null,
+        'hash': '766fd7e004517bb3fbea8bf5121a6049',
+        'name': 'MatteLightIcon',
+        'type': 'png'
+    };
+    var4 = [2, 3];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

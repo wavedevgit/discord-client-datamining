@@ -1,0 +1,192 @@
+// modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/messages/native/renderer/system_messages/ChangeChannelNameSystemMessage.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: createChangeChannelNameSystemMessage, environment: var1
+        _fun55335: for (var _fun55335_ip = 0;;) switch (_fun55335_ip) {
+            case 0:
+                var3 = arg0;
+                var10 = var3.message;
+                var4 = var3.theme;
+                var6 = _closure1_slot1;
+                var5 = _closure1_slot2;
+                var0 = 1;
+                var0 = var5[var0];
+                var2 = undefined;
+                var0 = var6.bind(var2)(var0);
+                var12 = var0.bind(var2)(var4);
+                var4 = _closure1_slot0;
+                var0 = 2;
+                var0 = var5[var0];
+                var4 = var4.bind(var2)(var0);
+                var0 = var4.getMessageAuthor;
+                var0 = var0.bind(var4)(var10);
+                var13 = var0.nick;
+                var9 = {};
+                var0 = 'bindUserMenu';
+                var9.action = var0;
+                var0 = var10.author;
+                var0 = var0.id;
+                var9.userId = var0;
+                var0 = var10.channel_id;
+                var9.messageChannelId = var0;
+                var0 = true;
+                var9.medium = var0;
+                var5 = _closure1_slot3;
+                var4 = var5.getChannel;
+                var0 = var10.channel_id;
+                var5 = var4.bind(var5)(var0);
+                var11 = null;
+                var4 = var11 == var5;
+                var0 = undefined;
+                if (var4) {
+                    _fun55335_ip = 176;
+                    continue _fun55335
+                }
+            case 151:
+                var4 = var5.isGroupDM;
+                var4 = var11 == var4;
+                var0 = undefined;
+                if (var4) {
+                    _fun55335_ip = 176;
+                    continue _fun55335
+                }
+            case 166:
+                var4 = var5.isGroupDM;
+                var0 = var4.bind(var5)();
+            case 176:
+                var4 = var11 != var0;
+                if (!var4) {
+                    _fun55335_ip = 186;
+                    continue _fun55335
+                }
+            case 183:
+                var4 = var0;
+            case 186:
+                var5 = var10.content;
+                var0 = '';
+                if (!(var0 !== var5)) {
+                    _fun55335_ip = 234;
+                    continue _fun55335
+                }
+            case 199:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var0 = 3;
+                var0 = var6[var0];
+                var0 = var5.bind(var2)(var0);
+                var0 = var0.t;
+                var8 = var0.rk0be9;
+                _fun55335_ip = 267;
+                continue _fun55335;
+            case 234:
+                var5 = _closure1_slot0;
+                var6 = _closure1_slot2;
+                var0 = 3;
+                var0 = var6[var0];
+                var0 = var5.bind(var2)(var0);
+                var0 = var0.t;
+                var8 = var0.hToFyf;
+            case 267:
+                var0 = {};
+                var6 = _closure1_slot0;
+                var5 = _closure1_slot2;
+                var15 = 3;
+                var5 = var5[var15];
+                var5 = var6.bind(var2)(var5);
+                var7 = var5.intl;
+                var6 = var7.formatToParts;
+                if (var4) {
+                    _fun55335_ip = 377;
+                    continue _fun55335
+                }
+            case 303:
+                var5 = var3.isForumPost;
+                var14 = _closure1_slot0;
+                var4 = _closure1_slot2;
+                var4 = var4[var15];
+                var4 = var14.bind(var2)(var4);
+                var4 = var4.t;
+                if (var5) {
+                    _fun55335_ip = 342;
+                    continue _fun55335
+                }
+            case 334:
+                var5 = var4.XCPMEG;
+                _fun55335_ip = 348;
+                continue _fun55335;
+            case 342:
+                var5 = var4["qa0e/n"];
+            case 348:
+                var4 = {};
+                var4.username = var13;
+                var4.usernameOnClick = var9;
+                var14 = var10.content;
+                var4.channelName = var14;
+                var4 = var6.bind(var7)(var5, var4);
+                _fun55335_ip = 451;
+                continue _fun55335;
+            case 377:
+                var5 = {};
+                var5.username = var13;
+                var5.usernameOnClick = var9;
+                var9 = var10.content;
+                var5.channelName = var9;
+                var9 = {};
+                var13 = 'bindOpenGdmCustomizeActionSheet';
+                var9.action = var13;
+                var13 = var11 == var12;
+                var11 = undefined;
+                if (var13) {
+                    _fun55335_ip = 425;
+                    continue _fun55335
+                }
+            case 419:
+                var11 = var12.linkColor;
+            case 425:
+                var9.linkColor = var11;
+                var10 = var10.channel_id;
+                var9.messageChannelId = var10;
+                var5.onEditGroup = var9;
+                var4 = var6.bind(var7)(var8, var5);
+            case 451:
+                var0.content = var4;
+                var4 = _closure1_slot1;
+                var5 = _closure1_slot2;
+                var1 = 4;
+                var1 = var5[var1];
+                var1 = var4.bind(var2)(var1);
+                var16 = var1.bind(var2)(var3);
+                var17 = var0;
+                var1 = copyDataProperties(var17, var16);
+                return var0;
+        }
+    };
+    var2.createChangeChannelNameSystemMessage = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1372, 6626, 3936, 1234, 6636, 2]);

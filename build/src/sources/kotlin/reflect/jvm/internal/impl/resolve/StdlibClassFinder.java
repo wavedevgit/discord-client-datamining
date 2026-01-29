@@ -1,0 +1,9 @@
+package kotlin.reflect.jvm.internal.impl.resolve;
+
+import kotlin.reflect.jvm.internal.impl.descriptors.ClassDescriptor;
+import kotlin.reflect.jvm.internal.impl.descriptors.ModuleDescriptor;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public interface StdlibClassFinder {
+    ClassDescriptor findEnumEntriesClass(@NotNull ModuleDescriptor moduleDescriptor);
+}

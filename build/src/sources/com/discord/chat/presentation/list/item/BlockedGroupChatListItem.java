@@ -1,0 +1,168 @@
+package com.discord.chat.presentation.list.item;
+
+import com.facebook.react.devsupport.StackTraceHelper;
+import com.facebook.react.uimanager.ViewProps;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010 \n\u0002\b\u0016\n\u0002\u0010\u0000\n\u0002\b\u0003\b\u0086\b\u0018\u00002\u00020\u0001BE\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\n\u0012\f\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00010\f¢\u0006\u0004\b\r\u0010\u000eJ\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001e\u001a\u00020\nHÆ\u0003J\u000f\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u00010\fHÆ\u0003JU\u0010 \u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u00062\b\b\u0002\u0010\t\u001a\u00020\n2\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00010\fHÆ\u0001J\u0013\u0010!\u001a\u00020\n2\b\u0010\"\u001a\u0004\u0018\u00010#HÖ\u0003J\t\u0010$\u001a\u00020\u0006HÖ\u0001J\t\u0010%\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0004\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0013R\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0013R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u0016R\u0017\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00010\f¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018¨\u0006&"}, d2 = {"Lcom/discord/chat/presentation/list/item/BlockedGroupChatListItem;", "Lcom/discord/chat/presentation/list/item/ChatListItem;", "text", "", StackTraceHelper.ID_KEY, "textColor", "", ViewProps.BACKGROUND_COLOR, ViewProps.BORDER_COLOR, "isRevealed", "", "content", "", "<init>", "(Ljava/lang/String;Ljava/lang/String;IIIZLjava/util/List;)V", "getText", "()Ljava/lang/String;", "getId", "getTextColor", "()I", "getBackgroundColor", "getBorderColor", "()Z", "getContent", "()Ljava/util/List;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "copy", "equals", "other", "", "hashCode", "toString", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class BlockedGroupChatListItem extends ChatListItem {
+    private final int backgroundColor;
+    private final int borderColor;
+    @NotNull
+    private final List<ChatListItem> content;
+    @NotNull
+
+    /* renamed from: id  reason: collision with root package name */
+    private final String f9724id;
+    private final boolean isRevealed;
+    @NotNull
+    private final String text;
+    private final int textColor;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* JADX WARN: Multi-variable type inference failed */
+    public BlockedGroupChatListItem(@NotNull String text, @NotNull String id2, int i10, int i11, int i12, boolean z10, @NotNull List<? extends ChatListItem> content) {
+        super(id2, null);
+        Intrinsics.checkNotNullParameter(text, "text");
+        Intrinsics.checkNotNullParameter(id2, "id");
+        Intrinsics.checkNotNullParameter(content, "content");
+        this.text = text;
+        this.f9724id = id2;
+        this.textColor = i10;
+        this.backgroundColor = i11;
+        this.borderColor = i12;
+        this.isRevealed = z10;
+        this.content = content;
+    }
+
+    public static /* synthetic */ BlockedGroupChatListItem copy$default(BlockedGroupChatListItem blockedGroupChatListItem, String str, String str2, int i10, int i11, int i12, boolean z10, List list, int i13, Object obj) {
+        if ((i13 & 1) != 0) {
+            str = blockedGroupChatListItem.text;
+        }
+        if ((i13 & 2) != 0) {
+            str2 = blockedGroupChatListItem.f9724id;
+        }
+        if ((i13 & 4) != 0) {
+            i10 = blockedGroupChatListItem.textColor;
+        }
+        if ((i13 & 8) != 0) {
+            i11 = blockedGroupChatListItem.backgroundColor;
+        }
+        if ((i13 & 16) != 0) {
+            i12 = blockedGroupChatListItem.borderColor;
+        }
+        if ((i13 & 32) != 0) {
+            z10 = blockedGroupChatListItem.isRevealed;
+        }
+        List<ChatListItem> list2 = list;
+        if ((i13 & 64) != 0) {
+            list2 = blockedGroupChatListItem.content;
+        }
+        boolean z11 = z10;
+        List list3 = list2;
+        int i14 = i12;
+        int i15 = i10;
+        return blockedGroupChatListItem.copy(str, str2, i15, i11, i14, z11, list3);
+    }
+
+    @NotNull
+    public final String component1() {
+        return this.text;
+    }
+
+    @NotNull
+    public final String component2() {
+        return this.f9724id;
+    }
+
+    public final int component3() {
+        return this.textColor;
+    }
+
+    public final int component4() {
+        return this.backgroundColor;
+    }
+
+    public final int component5() {
+        return this.borderColor;
+    }
+
+    public final boolean component6() {
+        return this.isRevealed;
+    }
+
+    @NotNull
+    public final List<ChatListItem> component7() {
+        return this.content;
+    }
+
+    @NotNull
+    public final BlockedGroupChatListItem copy(@NotNull String text, @NotNull String id2, int i10, int i11, int i12, boolean z10, @NotNull List<? extends ChatListItem> content) {
+        Intrinsics.checkNotNullParameter(text, "text");
+        Intrinsics.checkNotNullParameter(id2, "id");
+        Intrinsics.checkNotNullParameter(content, "content");
+        return new BlockedGroupChatListItem(text, id2, i10, i11, i12, z10, content);
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof BlockedGroupChatListItem) {
+            BlockedGroupChatListItem blockedGroupChatListItem = (BlockedGroupChatListItem) obj;
+            return Intrinsics.areEqual(this.text, blockedGroupChatListItem.text) && Intrinsics.areEqual(this.f9724id, blockedGroupChatListItem.f9724id) && this.textColor == blockedGroupChatListItem.textColor && this.backgroundColor == blockedGroupChatListItem.backgroundColor && this.borderColor == blockedGroupChatListItem.borderColor && this.isRevealed == blockedGroupChatListItem.isRevealed && Intrinsics.areEqual(this.content, blockedGroupChatListItem.content);
+        }
+        return false;
+    }
+
+    public final int getBackgroundColor() {
+        return this.backgroundColor;
+    }
+
+    public final int getBorderColor() {
+        return this.borderColor;
+    }
+
+    @NotNull
+    public final List<ChatListItem> getContent() {
+        return this.content;
+    }
+
+    @Override // com.discord.chat.presentation.list.item.ChatListItem
+    @NotNull
+    public String getId() {
+        return this.f9724id;
+    }
+
+    @NotNull
+    public final String getText() {
+        return this.text;
+    }
+
+    public final int getTextColor() {
+        return this.textColor;
+    }
+
+    public int hashCode() {
+        return (((((((((((this.text.hashCode() * 31) + this.f9724id.hashCode()) * 31) + Integer.hashCode(this.textColor)) * 31) + Integer.hashCode(this.backgroundColor)) * 31) + Integer.hashCode(this.borderColor)) * 31) + Boolean.hashCode(this.isRevealed)) * 31) + this.content.hashCode();
+    }
+
+    public final boolean isRevealed() {
+        return this.isRevealed;
+    }
+
+    @NotNull
+    public String toString() {
+        String str = this.text;
+        String str2 = this.f9724id;
+        int i10 = this.textColor;
+        int i11 = this.backgroundColor;
+        int i12 = this.borderColor;
+        boolean z10 = this.isRevealed;
+        List<ChatListItem> list = this.content;
+        return "BlockedGroupChatListItem(text=" + str + ", id=" + str2 + ", textColor=" + i10 + ", backgroundColor=" + i11 + ", borderColor=" + i12 + ", isRevealed=" + z10 + ", content=" + list + ")";
+    }
+}

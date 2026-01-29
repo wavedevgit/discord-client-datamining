@@ -1,0 +1,69 @@
+// uikit-native/refresh/form/FormCheckmark.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var0 = metroImportDefault;
+    var _closure1_slot1 = var0;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var6);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot3 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'uikit-native/refresh/form/FormCheckmark.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: RowCheckmark, environment: var1
+        _fun44404: for (var _fun44404_ip = 0;;) switch (_fun44404_ip) {
+            case 0:
+                var0 = arg0;
+                var1 = var0.selected;
+                var0 = null;
+                if (!var1) {
+                    _fun44404_ip = 88;
+                    continue _fun44404
+                }
+            case 14:
+                var4 = _closure1_slot3;
+                var2 = _closure1_slot0;
+                var7 = _closure1_slot2;
+                var1 = 2;
+                var1 = var7[var1];
+                var3 = undefined;
+                var1 = var2.bind(var3)(var1);
+                var2 = var1.CheckmarkSmallIcon;
+                var1 = {};
+                var6 = _closure1_slot1;
+                var5 = 3;
+                var5 = var7[var5];
+                var5 = var6.bind(var3)(var5);
+                var5 = var5.unsafe_rawColors;
+                var5 = var5.BRAND_500;
+                var1.color = var5;
+                var0 = var4.bind(var3)(var2, var1);
+            case 88:
+                return var0;
+        }
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 33, 4878, 671, 2]);

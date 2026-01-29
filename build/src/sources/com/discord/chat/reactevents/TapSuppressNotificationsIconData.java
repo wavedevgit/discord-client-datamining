@@ -1,0 +1,52 @@
+package com.discord.chat.reactevents;
+
+import at.o1;
+import com.discord.reactevents.ReactEvent;
+import com.facebook.react.bridge.WritableMap;
+import ir.l;
+import ir.o;
+import java.lang.annotation.Annotation;
+import kotlin.Lazy;
+import kotlin.Metadata;
+import kotlin.jvm.functions.Function0;
+import kotlinx.serialization.KSerializer;
+import org.jetbrains.annotations.NotNull;
+import xs.m;
+@Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\t\b\u0002¢\u0006\u0004\b\u0002\u0010\u0003J\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00000\u0005¨\u0006\u0006"}, d2 = {"Lcom/discord/chat/reactevents/TapSuppressNotificationsIconData;", "Lcom/discord/reactevents/ReactEvent;", "<init>", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "chat_release"}, k = 1, mv = {2, 1, 0}, xi = 48)
+@m
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class TapSuppressNotificationsIconData implements ReactEvent {
+    @NotNull
+    public static final TapSuppressNotificationsIconData INSTANCE = new TapSuppressNotificationsIconData();
+    private static final /* synthetic */ Lazy $cachedSerializer$delegate = l.a(o.f31103e, new Function0() { // from class: com.discord.chat.reactevents.d
+        @Override // kotlin.jvm.functions.Function0
+        public final Object invoke() {
+            KSerializer _init_$_anonymous_;
+            _init_$_anonymous_ = TapSuppressNotificationsIconData._init_$_anonymous_();
+            return _init_$_anonymous_;
+        }
+    });
+
+    private TapSuppressNotificationsIconData() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final /* synthetic */ KSerializer _init_$_anonymous_() {
+        return new o1("com.discord.chat.reactevents.TapSuppressNotificationsIconData", INSTANCE, new Annotation[0]);
+    }
+
+    private final /* synthetic */ KSerializer get$cachedSerializer() {
+        return (KSerializer) $cachedSerializer$delegate.getValue();
+    }
+
+    @Override // com.discord.reactevents.ReactEvent
+    @NotNull
+    public WritableMap serialize() {
+        return ReactEvent.DefaultImpls.serialize(this);
+    }
+
+    @NotNull
+    public final KSerializer serializer() {
+        return get$cachedSerializer();
+    }
+}

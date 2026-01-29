@@ -1,0 +1,454 @@
+// modules/rpc/server/commands/relationships.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var3 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var3;
+    var0 = metroImportAll;
+    var _closure1_slot2 = var0;
+    var _closure1_slot3 = var5;
+    var0 = function(arg0, arg1) { // Original name: _createForOfIteratorHelperLoose, environment: var10
+        _fun98491: for (var _fun98491_ip = 0;;) switch (_fun98491_ip) {
+            case 0:
+                var2 = arg0;
+                var _closure2_slot0 = var2;
+                var4 = global;
+                var1 = var4.Symbol;
+                var3 = 'undefined';
+                var1 = typeof var1;
+                var1 = var3 !== var1;
+                if (!var1) {
+                    _fun98491_ip = 45;
+                    continue _fun98491
+                }
+            case 30:
+                var3 = var4.Symbol;
+                var3 = var3.iterator;
+                var1 = var2[var3];
+            case 45:
+                if (var1) {
+                    _fun98491_ip = 54;
+                    continue _fun98491
+                }
+            case 48:
+                var1 = var2["@@iterator"];
+            case 54:
+                if (var1) {
+                    _fun98491_ip = 344;
+                    continue _fun98491
+                }
+            case 60:
+                var5 = var4.Array;
+                var3 = var5.isArray;
+                var5 = var3.bind(var5)(var2);
+                var3 = var1;
+                if (var5) {
+                    _fun98491_ip = 322;
+                    continue _fun98491
+                }
+            case 85:
+                var7 = undefined;
+                var5 = undefined;
+                if (!var2) {
+                    _fun98491_ip = 282;
+                    continue _fun98491
+                }
+            case 95:
+                var8 = 'string';
+                var6 = typeof var2;
+                if (!(var8 !== var6)) {
+                    _fun98491_ip = 269;
+                    continue _fun98491
+                }
+            case 109:
+                var6 = {};
+                var8 = var6.toString;
+                var6 = var8.call;
+                var10 = var6.bind(var8)(var2);
+                var9 = var10.slice;
+                var8 = 8;
+                var6 = -1;
+                var8 = var9.bind(var10)(var8, var6);
+                var6 = 'Object';
+                var6 = var6 === var8;
+                if (!var6) {
+                    _fun98491_ip = 162;
+                    continue _fun98491
+                }
+            case 157:
+                var6 = var2.constructor;
+            case 162:
+                var9 = var8;
+                if (!var6) {
+                    _fun98491_ip = 178;
+                    continue _fun98491
+                }
+            case 168:
+                var6 = var2.constructor;
+                var9 = var6.name;
+            case 178:
+                var6 = 'Map';
+                if (!(var6 !== var9)) {
+                    _fun98491_ip = 248;
+                    continue _fun98491
+                }
+            case 186:
+                var6 = 'Set';
+                if (!(var6 !== var9)) {
+                    _fun98491_ip = 248;
+                    continue _fun98491
+                }
+            case 194:
+                var6 = 'Arguments';
+                if (!(var6 !== var9)) {
+                    _fun98491_ip = 233;
+                    continue _fun98491
+                }
+            case 204:
+                var8 = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+                var6 = var8.test;
+                var8 = var6.bind(var8)(var9);
+                var6 = undefined;
+                if (!var8) {
+                    _fun98491_ip = 246;
+                    continue _fun98491
+                }
+            case 233:
+                var8 = _closure1_slot11;
+                var6 = var8.bind(var7)(var2, var7);
+            case 246:
+                _fun98491_ip = 264;
+                continue _fun98491;
+            case 248:
+                var9 = var4.Array;
+                var8 = var9.from;
+                var6 = var8.bind(var9)(var2);
+            case 264:
+                var5 = var6;
+                _fun98491_ip = 282;
+                continue _fun98491;
+            case 269:
+                var6 = _closure1_slot11;
+                var5 = var6.bind(var7)(var2, var7);
+            case 282:
+                var3 = var5;
+                if (var3) {
+                    _fun98491_ip = 322;
+                    continue _fun98491
+                }
+            case 288:
+                var6 = var4.TypeError;
+                var4 = var6.prototype;
+                var5 = Object.create(var4, {
+                    constructor: {
+                        value: var6
+                    }
+                });
+                var12 = 'Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.';
+                var13 = var5;
+                var4 = new var13[var6](var12, var11);
+                var4 = var4 instanceof Object ? var4 : var5;
+                throw var4;
+            case 322:
+                if (!var3) {
+                    _fun98491_ip = 329;
+                    continue _fun98491
+                }
+            case 325:
+                _closure2_slot0 = var3;
+            case 329:
+                var3 = 0;
+                var _closure2_slot1 = var3;
+                var0 = function() { // Environment: var0
+                    _fun98492: for (var _fun98492_ip = 0;;) switch (_fun98492_ip) {
+                        case 0:
+                            var1 = _closure2_slot1;
+                            var0 = _closure2_slot0;
+                            var0 = var0.length;
+                            if (!(!(var1 >= var0))) {
+                                _fun98492_ip = 56;
+                                continue _fun98492
+                            }
+                        case 20:
+                            var0 = {};
+                            var1 = false;
+                            var0.done = var1;
+                            var2 = _closure2_slot0;
+                            var1 = _closure2_slot1;
+                            var1 = parseFloat(var1);
+                            var3 = var1 + 1;
+                            _closure2_slot1 = var3;
+                            var1 = var2[var1];
+                            var0.value = var1;
+                            _fun98492_ip = 67;
+                            continue _fun98492;
+                        case 56:
+                            var1 = {};
+                            var2 = true;
+                            var1.done = var2;
+                            var0 = var1;
+                        case 67:
+                            return var0;
+                    }
+                };
+                return var0;
+            case 344:
+                var0 = var1.call;
+                var2 = var0.bind(var1)(var2);
+                var1 = var2.next;
+                var0 = var1.bind;
+                var0 = var0.bind(var1)(var2);
+                return var0;
+        }
+    };
+    var _closure1_slot10 = var0;
+    var0 = function(arg0, arg1) { // Original name: _arrayLikeToArray, environment: var10
+        _fun98493: for (var _fun98493_ip = 0;;) switch (_fun98493_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = null;
+                var2 = undefined;
+                var0 = var0 == var2;
+                if (var0) {
+                    _fun98493_ip = 23;
+                    continue _fun98493
+                }
+            case 14:
+                var1 = var3.length;
+                var0 = var2 > var1;
+            case 23:
+                var1 = undefined;
+                if (!var0) {
+                    _fun98493_ip = 33;
+                    continue _fun98493
+                }
+            case 28:
+                var1 = var3.length;
+            case 33:
+                var0 = global;
+                var0 = var0.Array;
+                var0 = var0.bind(var2)(var1);
+                var2 = 0;
+                var4 = var2 < var1;
+                if (!var4) {
+                    _fun98493_ip = 70;
+                    continue _fun98493
+                }
+            case 55:
+                var4 = var3[var2];
+                var0[var2] = var4;
+                var2 = var2 + 1;
+                if (var2 < var1) {
+                    _fun98493_ip = 55;
+                    continue _fun98493
+                }
+            case 70:
+                return var0;
+        }
+    };
+    var _closure1_slot11 = var0;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot4 = var1;
+    var1 = 1;
+    var1 = var5[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot5 = var1;
+    var1 = 2;
+    var1 = var5[var1];
+    var1 = var3.bind(var0)(var1);
+    var _closure1_slot6 = var1;
+    var1 = 3;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var12 = var1.RPC_SCOPE_CONFIG;
+    var1 = 4;
+    var1 = var5[var1];
+    var1 = var4.bind(var0)(var1);
+    var3 = var1.ApplicationFlags;
+    var _closure1_slot7 = var3;
+    var3 = var1.RelationshipTypes;
+    var _closure1_slot8 = var3;
+    var3 = var1.RPCCommands;
+    var1 = var1.RPCErrors;
+    var _closure1_slot9 = var1;
+    var1 = {};
+    var6 = var3.GET_RELATIONSHIPS;
+    var7 = 5;
+    var7 = var5[var7];
+    var9 = var4.bind(var0)(var7);
+    var8 = var9.createRPCCommand;
+    var7 = var3.GET_RELATIONSHIPS;
+    var3 = {};
+    var11 = {};
+    var13 = var12.ANY;
+    var12 = 6;
+    var12 = var5[var12];
+    var12 = var4.bind(var0)(var12);
+    var12 = var12.OAuth2Scopes;
+    var14 = var12.RELATIONSHIPS_READ;
+    var12 = new Array(1);
+    var12[0] = var14;
+    var11[var13] = var12;
+    var3.scope = var11;
+    var10 = function(arg0) { // Original name: handler, environment: var10
+        _fun98494: for (var _fun98494_ip = 0;;) switch (_fun98494_ip) {
+            case 0:
+                var12 = arg0;
+                var2 = _closure1_slot2;
+                var1 = _closure1_slot3;
+                var7 = 7;
+                var4 = var1[var7];
+                var3 = undefined;
+                var5 = var2.bind(var3)(var4);
+                var4 = var5.has;
+                var1 = var1[var7];
+                var6 = var2.bind(var3)(var1);
+                var2 = var6.deserialize;
+                var1 = var12.socket;
+                var1 = var1.application;
+                var8 = var1.flags;
+                var11 = null;
+                var9 = var11 != var8;
+                var10 = 0;
+                var1 = 0;
+                if (!var9) {
+                    _fun98494_ip = 80;
+                    continue _fun98494
+                }
+            case 77:
+                var1 = var8;
+            case 80:
+                var2 = var2.bind(var6)(var1);
+                var6 = _closure1_slot2;
+                var1 = _closure1_slot3;
+                var1 = var1[var7];
+                var7 = var6.bind(var3)(var1);
+                var6 = var7.deserialize;
+                var1 = _closure1_slot7;
+                var1 = var1.DISABLE_RELATIONSHIPS_ACCESS;
+                var1 = var6.bind(var7)(var1);
+                var1 = var4.bind(var5)(var2, var1);
+                if (var1) {
+                    _fun98494_ip = 366;
+                    continue _fun98494
+                }
+            case 135:
+                var2 = new Array(0);
+                var4 = _closure1_slot10;
+                var5 = _closure1_slot5;
+                var1 = var5.getMutableRelationships;
+                var5 = var1.bind(var5)();
+                var1 = var5.entries;
+                var1 = var1.bind(var5)();
+                var9 = var4.bind(var3)(var1);
+                var4 = var9.bind(var3)();
+                var1 = var4.done;
+                var8 = 9;
+                var7 = 2;
+                var6 = 1;
+                var5 = var4;
+                var4 = undefined;
+                if (var1) {
+                    _fun98494_ip = 357;
+                    continue _fun98494
+                }
+            case 201:
+                var13 = var5.value;
+                var1 = _closure1_slot4;
+                var1 = var1.bind(var3)(var13, var7);
+                var14 = var1[var10];
+                var17 = var1[var6];
+                var1 = _closure1_slot8;
+                var1 = var1.NONE;
+                if (!(var17 !== var1)) {
+                    _fun98494_ip = 339;
+                    continue _fun98494
+                }
+            case 238:
+                var13 = _closure1_slot6;
+                var1 = var13.getUser;
+                var1 = var1.bind(var13)(var14);
+                var4 = var1;
+                if (!(var11 != var4)) {
+                    _fun98494_ip = 339;
+                    continue _fun98494
+                }
+            case 260:
+                var15 = _closure1_slot0;
+                var13 = _closure1_slot3;
+                var14 = var13[var8];
+                var16 = var15.bind(var3)(var14);
+                var14 = var16.transformBaseRelationship;
+                var17 = var14.bind(var16)(var17, var1);
+                var14 = var2.push;
+                var13 = var13[var8];
+                var16 = var15.bind(var3)(var13);
+                var15 = var16.transformApplicationRelationship;
+                var13 = var12.socket;
+                var13 = var13.application;
+                var13 = var13.id;
+                var13 = var15.bind(var16)(var17, var13);
+                var13 = var14.bind(var2)(var13);
+                var4 = var1;
+            case 339:
+                var13 = var9.bind(var3)();
+                var1 = var13.done;
+                var5 = var13;
+                if (!var1) {
+                    _fun98494_ip = 201;
+                    continue _fun98494
+                }
+            case 357:
+                var1 = {};
+                var1.relationships = var2;
+                return var1;
+            case 366:
+                var2 = _closure1_slot1;
+                var4 = _closure1_slot3;
+                var1 = 8;
+                var1 = var4[var1];
+                var3 = var2.bind(var3)(var1);
+                var2 = {};
+                var0 = _closure1_slot9;
+                var0 = var0.INVALID_PERMISSIONS;
+                var2.errorCode = var0;
+                var0 = var3.prototype;
+                var1 = Object.create(var0, {
+                    constructor: {
+                        value: var3
+                    }
+                });
+                var18 = 'Missing Permissions';
+                var20 = var1;
+                var19 = var2;
+                var0 = new var20[var3](var19, var18, var17);
+                var0 = var0 instanceof Object ? var0 : var1;
+                throw var0;
+        }
+    };
+    var3.handler = var10;
+    var3 = var8.bind(var9)(var7, var3);
+    var1[var6] = var3;
+    var3 = 10;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/rpc/server/commands/relationships.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [57, 3059, 1613, 3315, 660, 12790, 3298, 484, 7887, 7892, 2]);

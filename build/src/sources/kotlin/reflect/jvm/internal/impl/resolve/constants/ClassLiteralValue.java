@@ -1,0 +1,70 @@
+package kotlin.reflect.jvm.internal.impl.resolve.constants;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.SourceDebugExtension;
+import kotlin.reflect.jvm.internal.impl.name.ClassId;
+import org.jetbrains.annotations.NotNull;
+@SourceDebugExtension({"SMAP\nClassLiteralValue.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ClassLiteralValue.kt\norg/jetbrains/kotlin/resolve/constants/ClassLiteralValue\n+ 2 fake.kt\nkotlin/jvm/internal/FakeKt\n*L\n1#1,17:1\n1#2:18\n*E\n"})
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class ClassLiteralValue {
+
+    /* renamed from: a  reason: collision with root package name */
+    private final ClassId f35408a;
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f35409b;
+
+    public ClassLiteralValue(@NotNull ClassId classId, int i10) {
+        Intrinsics.checkNotNullParameter(classId, "classId");
+        this.f35408a = classId;
+        this.f35409b = i10;
+    }
+
+    @NotNull
+    public final ClassId component1() {
+        return this.f35408a;
+    }
+
+    public final int component2() {
+        return this.f35409b;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj instanceof ClassLiteralValue) {
+            ClassLiteralValue classLiteralValue = (ClassLiteralValue) obj;
+            return Intrinsics.areEqual(this.f35408a, classLiteralValue.f35408a) && this.f35409b == classLiteralValue.f35409b;
+        }
+        return false;
+    }
+
+    public final int getArrayNestedness() {
+        return this.f35409b;
+    }
+
+    @NotNull
+    public final ClassId getClassId() {
+        return this.f35408a;
+    }
+
+    public int hashCode() {
+        return (this.f35408a.hashCode() * 31) + Integer.hashCode(this.f35409b);
+    }
+
+    @NotNull
+    public String toString() {
+        StringBuilder sb2 = new StringBuilder();
+        int i10 = this.f35409b;
+        for (int i11 = 0; i11 < i10; i11++) {
+            sb2.append("kotlin/Array<");
+        }
+        sb2.append(this.f35408a);
+        int i12 = this.f35409b;
+        for (int i13 = 0; i13 < i12; i13++) {
+            sb2.append(">");
+        }
+        return sb2.toString();
+    }
+}

@@ -1,0 +1,54 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var6 = global;
+    var3 = metroImportAll;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var7 = var0.Object;
+    var5 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var7)(var2, var0, var1);
+    var1 = 0;
+    var5 = var4[var1];
+    var0 = undefined;
+    var9 = var3.bind(var0)(var5);
+    var8 = var9.registerComponent;
+    var7 = 'LogBox';
+    var5 = function() { // Environment: var5
+        var0 = function() { // Original name: NoOp, environment: var0
+            var0 = null;
+            return var0;
+        };
+        return var0;
+    };
+    var5 = var8.bind(var9)(var7, var5);
+    var5 = var4[var1];
+    var5 = var3.bind(var0)(var5);
+    var6.RN$AppRegistry = var5;
+    var5 = {};
+    var7 = var4[var1];
+    var7 = var3.bind(var0)(var7);
+    var7 = var7.runApplication;
+    var5.renderSurface = var7;
+    var7 = var4[var1];
+    var7 = var3.bind(var0)(var7);
+    var7 = var7.setSurfaceProps;
+    var5.setSurfaceProps = var7;
+    var6.RN$SurfaceRegistry = var5;
+    var5 = 1;
+    var6 = var4[var5];
+    var5 = arg2;
+    var7 = var5.bind(var0)(var6);
+    var5 = var4[var1];
+    var6 = var3.bind(var0)(var5);
+    var5 = 'AppRegistry';
+    var5 = var7.bind(var0)(var5, var6);
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var2.AppRegistry = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [244, 236]);

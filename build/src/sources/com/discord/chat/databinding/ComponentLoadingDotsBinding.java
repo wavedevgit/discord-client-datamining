@@ -1,0 +1,46 @@
+package com.discord.chat.databinding;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import androidx.annotation.NonNull;
+import androidx.viewbinding.ViewBinding;
+import com.discord.chat.R;
+import com.discord.progress_dots.ProgressDots;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class ComponentLoadingDotsBinding implements ViewBinding {
+    @NonNull
+    private final ProgressDots rootView;
+
+    private ComponentLoadingDotsBinding(@NonNull ProgressDots progressDots) {
+        this.rootView = progressDots;
+    }
+
+    @NonNull
+    public static ComponentLoadingDotsBinding bind(@NonNull View view) {
+        if (view != null) {
+            return new ComponentLoadingDotsBinding((ProgressDots) view);
+        }
+        throw new NullPointerException("rootView");
+    }
+
+    @NonNull
+    public static ComponentLoadingDotsBinding inflate(@NonNull LayoutInflater layoutInflater) {
+        return inflate(layoutInflater, null, false);
+    }
+
+    @NonNull
+    public static ComponentLoadingDotsBinding inflate(@NonNull LayoutInflater layoutInflater, ViewGroup viewGroup, boolean z10) {
+        View inflate = layoutInflater.inflate(R.layout.component_loading_dots, viewGroup, false);
+        if (z10) {
+            viewGroup.addView(inflate);
+        }
+        return bind(inflate);
+    }
+
+    @Override // androidx.viewbinding.ViewBinding
+    @NonNull
+    public ProgressDots getRoot() {
+        return this.rootView;
+    }
+}

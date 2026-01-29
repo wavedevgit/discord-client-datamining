@@ -1,0 +1,13 @@
+package com.appsflyer.internal;
+
+import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public interface AFa1hSDK {
+    void getMediationNetwork();
+
+    @NotNull
+    Map<String, Object> getMonetizationNetwork();
+
+    void getMonetizationNetwork(@NotNull Map<String, ? extends Object> map);
+}

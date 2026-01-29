@@ -1,0 +1,149 @@
+// modules/external_pip/useExternalPipEnabler.android.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 5;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/external_pip/useExternalPipEnabler.android.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: useExternalPIPEnabler, environment: var1
+        var1 = arg0;
+        var5 = var1.disabled;
+        var _closure2_slot0 = var5;
+        var4 = _closure1_slot0;
+        var3 = _closure1_slot1;
+        var2 = 3;
+        var3 = var3[var2];
+        var2 = undefined;
+        var4 = var4.bind(var2)(var3);
+        var3 = var4.useStateFromStoresObject;
+        var6 = _closure1_slot2;
+        var2 = new Array(3);
+        var2[0] = var6;
+        var6 = _closure1_slot4;
+        var2[1] = var6;
+        var1 = _closure1_slot3;
+        var2[2] = var1;
+        var1 = new Array(1);
+        var1[0] = var5;
+        var0 = function() { // Environment: var0
+            _fun110604: for (var _fun110604_ip = 0;;) switch (_fun110604_ip) {
+                case 0:
+                    var3 = _closure1_slot4;
+                    var2 = var3.getChannelId;
+                    var6 = var2.bind(var3)();
+                    var2 = null;
+                    if (!(var2 != var6)) {
+                        _fun110604_ip = 188;
+                        continue _fun110604
+                    }
+                case 28:
+                    var3 = _closure2_slot0;
+                    if (var3) {
+                        _fun110604_ip = 188;
+                        continue _fun110604
+                    }
+                case 41:
+                    var4 = _closure1_slot2;
+                    var3 = var4.getVideoParticipants;
+                    var5 = var3.bind(var4)(var6);
+                    var4 = var5.filter;
+                    var3 = function(arg0) { // Environment: var1
+                        var0 = arg0;
+                        var0 = var0.localVideoDisabled;
+                        var0 = !var0;
+                        return var0;
+                    };
+                    var3 = var4.bind(var5)(var3);
+                    var4 = var3.length;
+                    var3 = 0;
+                    var3 = var4 > var3;
+                    if (var3) {
+                        _fun110604_ip = 140;
+                        continue _fun110604
+                    }
+                case 87:
+                    var5 = _closure1_slot2;
+                    var4 = var5.getStreamParticipants;
+                    var6 = var4.bind(var5)(var6);
+                    var5 = var6.filter;
+                    var4 = function(arg0) { // Environment: var1
+                        var0 = arg0;
+                        var0 = var0.user;
+                        var1 = var0.id;
+                        var2 = _closure1_slot3;
+                        var0 = var2.getId;
+                        var0 = var0.bind(var2)();
+                        var0 = var1 !== var0;
+                        return var0;
+                    };
+                    var5 = var5.bind(var6)(var4);
+                    var4 = var5.find;
+                    var1 = function(arg0) { // Environment: var1
+                        var0 = arg0;
+                        var1 = var0.streamId;
+                        var0 = null;
+                        var0 = var0 != var1;
+                        return var0;
+                    };
+                    var1 = var4.bind(var5)(var1);
+                    var3 = var2 != var1;
+                case 140:
+                    var1 = {};
+                    var5 = _closure1_slot0;
+                    var4 = _closure1_slot1;
+                    var2 = 4;
+                    var4 = var4[var2];
+                    var2 = undefined;
+                    var2 = var5.bind(var2)(var4);
+                    var7 = var2.DEFAULT_STATE;
+                    var8 = var1;
+                    var2 = copyDataProperties(var8, var7);
+                    var2 = 'externalPipEnabled';
+                    var1[var2] = var3;
+                    return var1;
+                case 188:
+                    var2 = _closure1_slot0;
+                    var1 = _closure1_slot1;
+                    var0 = 4;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var0 = var2.bind(var0)(var1);
+                    var0 = var0.DEFAULT_STATE;
+                    return var0;
+            }
+        };
+        var0 = var3.bind(var4)(var2, var0, var1);
+        return var0;
+    };
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3902, 1216, 3477, 566, 14194, 2]);

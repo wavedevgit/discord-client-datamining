@@ -1,0 +1,44 @@
+// null
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    _fun33047: for (var _fun33047_ip = 0;;) switch (_fun33047_ip) {
+        case 0:
+            var4 = require;
+            var2 = exports;
+            var5 = dependencyMap;
+            var0 = global;
+            var6 = var0.Object;
+            var3 = var6.defineProperty;
+            var1 = {};
+            var0 = true;
+            var1.value = var0;
+            var0 = '__esModule';
+            var0 = var3.bind(var6)(var2, var0, var1);
+            var0 = 0;
+            var1 = var5[var0];
+            var0 = undefined;
+            var3 = var4.bind(var0)(var1);
+            var1 = var3.shouldBeUseWeb;
+            var1 = var1.bind(var3)();
+            if (var1) {
+                _fun33047_ip = 91;
+                continue _fun33047
+            }
+        case 67:
+            var1 = 2;
+            var1 = var5[var1];
+            var3 = var4.bind(var0)(var1);
+            var1 = var3.createNativeReanimatedModule;
+            var1 = var1.bind(var3)();
+            _fun33047_ip = 113;
+            continue _fun33047;
+        case 91:
+            var3 = 1;
+            var3 = var5[var3];
+            var4 = var4.bind(var0)(var3);
+            var3 = var4.createJSReanimatedModule;
+            var1 = var3.bind(var4)();
+        case 113:
+            var2.ReanimatedModule = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [3681, 3688, 3704]);

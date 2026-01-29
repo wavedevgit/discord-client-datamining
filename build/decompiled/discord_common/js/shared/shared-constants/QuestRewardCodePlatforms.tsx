@@ -1,0 +1,44 @@
+// ../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var3 = 0;
+    var1.CROSS_PLATFORM = var3;
+    var0 = 'CROSS_PLATFORM';
+    var1[var3] = var0;
+    var4 = 1;
+    var1.XBOX = var4;
+    var0 = 'XBOX';
+    var1[var4] = var0;
+    var4 = 2;
+    var1.PLAYSTATION = var4;
+    var0 = 'PLAYSTATION';
+    var1[var4] = var0;
+    var4 = 3;
+    var1.SWITCH = var4;
+    var0 = 'SWITCH';
+    var1[var4] = var0;
+    var4 = 4;
+    var1.PC = var4;
+    var0 = 'PC';
+    var1[var4] = var0;
+    var0 = dependencyMap;
+    var4 = var0[var3];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = '../discord_common/js/shared/shared-constants/QuestRewardCodePlatforms.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.QuestRewardCodePlatforms = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

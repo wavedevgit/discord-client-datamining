@@ -1,0 +1,277 @@
+// lib/NetworkQuality.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = function(arg0) { // Original name: round, environment: var1
+        _fun94075: for (var _fun94075_ip = 0;;) switch (_fun94075_ip) {
+            case 0:
+                var3 = arg0;
+                var0 = arguments[1];
+                var1 = undefined;
+                if (!(var0 === var1)) {
+                    _fun94075_ip = 14;
+                    continue _fun94075
+                }
+            case 12:
+                var0 = 0;
+            case 14:
+                var1 = null;
+                if (!(var1 != var3)) {
+                    _fun94075_ip = 38;
+                    continue _fun94075
+                }
+            case 20:
+                var1 = global;
+                var2 = var1.Math;
+                var1 = var2.round;
+                var0 = var1.bind(var2)(var3);
+            case 38:
+                return var0;
+        }
+    };
+    var _closure1_slot7 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot2 = var3;
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.NetworkConnectionTypes;
+    var _closure1_slot5 = var6;
+    var3 = var3.NetworkConnectionSpeeds;
+    var _closure1_slot6 = var3;
+    var1 = function() { // Environment: var1
+        var3 = _closure1_slot3;
+        var2 = function() { // Original name: NetworkQuality, environment: var4
+            var2 = this;
+            var4 = _closure1_slot2;
+            var3 = _closure2_slot0;
+            var0 = undefined;
+            var3 = var4.bind(var0)(var2, var3);
+            var3 = var2._initStats;
+            var3 = var3.bind(var2)();
+            var2._networkStats = var3;
+            var3 = _closure1_slot0;
+            var4 = _closure1_slot1;
+            var1 = 4;
+            var1 = var4[var1];
+            var3 = var3.bind(var0)(var1);
+            var1 = var3.now;
+            var1 = var1.bind(var3)();
+            var2._lastSampleTimestamp = var1;
+            return var0;
+        };
+        var _closure2_slot0 = var2;
+        var0 = {};
+        var1 = '_initStats';
+        var0.key = var1;
+        var1 = function() { // Original name: value, environment: var4
+            var0 = {};
+            var2 = {};
+            var0.effectiveConnectionSpeedBuckets = var2;
+            var2 = {};
+            var0.connectionTypeBuckets = var2;
+            var _closure3_slot0 = var0;
+            var3 = global;
+            var6 = var3.Object;
+            var5 = var6.values;
+            var4 = _closure1_slot5;
+            var6 = var5.bind(var6)(var4);
+            var5 = var6.forEach;
+            var4 = function(arg0) { // Environment: var1
+                var0 = _closure3_slot0;
+                var2 = var0.connectionTypeBuckets;
+                var1 = 0;
+                var0 = arg0;
+                var2[var0] = var1;
+                var0 = undefined;
+                return var0;
+            };
+            var4 = var5.bind(var6)(var4);
+            var4 = var3.Object;
+            var3 = var4.values;
+            var2 = _closure1_slot6;
+            var3 = var3.bind(var4)(var2);
+            var2 = var3.forEach;
+            var1 = function(arg0) { // Environment: var1
+                var0 = _closure3_slot0;
+                var2 = var0.effectiveConnectionSpeedBuckets;
+                var1 = 0;
+                var0 = arg0;
+                var2[var0] = var1;
+                var0 = undefined;
+                return var0;
+            };
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.value = var1;
+        var1 = new Array(3);
+        var1[0] = var0;
+        var0 = {};
+        var5 = 'getStats';
+        var0.key = var5;
+        var5 = function() { // Original name: value, environment: var4
+            var0 = this;
+            var4 = var0._networkStats;
+            var0 = {};
+            var3 = _closure1_slot7;
+            var6 = var4.connectionTypeBuckets;
+            var5 = _closure1_slot5;
+            var2 = var5.WIFI;
+            var6 = var6[var2];
+            var2 = undefined;
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_wifi = var6;
+            var7 = var4.connectionTypeBuckets;
+            var6 = var5.CELLULAR;
+            var6 = var7[var6];
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_cellular = var6;
+            var7 = var4.connectionTypeBuckets;
+            var6 = var5.ETHERNET;
+            var6 = var7[var6];
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_ethernet = var6;
+            var7 = var4.connectionTypeBuckets;
+            var6 = var5.BLUETOOTH;
+            var6 = var7[var6];
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_bluetooth = var6;
+            var7 = var4.connectionTypeBuckets;
+            var6 = var5.OTHER;
+            var6 = var7[var6];
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_other = var6;
+            var7 = var4.connectionTypeBuckets;
+            var6 = var5.UNKNOWN;
+            var6 = var7[var6];
+            var6 = var3.bind(var2)(var6);
+            var0.duration_connection_type_unknown = var6;
+            var6 = var4.connectionTypeBuckets;
+            var5 = var5.NONE;
+            var5 = var6[var5];
+            var5 = var3.bind(var2)(var5);
+            var0.duration_connection_type_none = var5;
+            var6 = var4.effectiveConnectionSpeedBuckets;
+            var1 = _closure1_slot6;
+            var5 = var1.TWO_G;
+            var5 = var6[var5];
+            var5 = var3.bind(var2)(var5);
+            var0.duration_effective_connection_speed_2g = var5;
+            var6 = var4.effectiveConnectionSpeedBuckets;
+            var5 = var1.THREE_G;
+            var5 = var6[var5];
+            var5 = var3.bind(var2)(var5);
+            var0.duration_effective_connection_speed_3g = var5;
+            var6 = var4.effectiveConnectionSpeedBuckets;
+            var5 = var1.FOUR_G;
+            var5 = var6[var5];
+            var5 = var3.bind(var2)(var5);
+            var0.duration_effective_connection_speed_4g = var5;
+            var6 = var4.effectiveConnectionSpeedBuckets;
+            var5 = var1.FIVE_G;
+            var5 = var6[var5];
+            var5 = var3.bind(var2)(var5);
+            var0.duration_effective_connection_speed_5g = var5;
+            var4 = var4.effectiveConnectionSpeedBuckets;
+            var1 = var1.UNKNOWN;
+            var1 = var4[var1];
+            var1 = var3.bind(var2)(var1);
+            var0.duration_effective_connection_speed_unknown = var1;
+            return var0;
+        };
+        var0.value = var5;
+        var1[1] = var0;
+        var0 = {};
+        var5 = 'incrementNetworkStats';
+        var0.key = var5;
+        var4 = function(arg0) { // Original name: value, environment: var4
+            _fun94082: for (var _fun94082_ip = 0;;) switch (_fun94082_ip) {
+                case 0:
+                    var1 = arg0;
+                    var0 = this;
+                    var2 = var0._lastSampleTimestamp;
+                    var3 = var1 - var2;
+                    var2 = 1000;
+                    var5 = var3 / var2;
+                    var4 = _closure1_slot4;
+                    var3 = var4.getEffectiveConnectionSpeed;
+                    var6 = var3.bind(var4)();
+                    var3 = _closure1_slot6;
+                    var3 = var3.SLOW_TWO_G;
+                    if (!(var6 === var3)) {
+                        _fun94082_ip = 67;
+                        continue _fun94082
+                    }
+                case 57:
+                    var3 = _closure1_slot6;
+                    var6 = var3.TWO_G;
+                case 67:
+                    var4 = _closure1_slot4;
+                    var3 = var4.getType;
+                    var4 = var3.bind(var4)();
+                    var3 = _closure1_slot5;
+                    var3 = var3.WIMAX;
+                    if (!(var4 === var3)) {
+                        _fun94082_ip = 105;
+                        continue _fun94082
+                    }
+                case 95:
+                    var2 = _closure1_slot5;
+                    var4 = var2.WIFI;
+                case 105:
+                    var2 = var0._networkStats;
+                    var3 = var2.effectiveConnectionSpeedBuckets;
+                    var2 = var3[var6];
+                    var2 = var2 + var5;
+                    var3[var6] = var2;
+                    var2 = var0._networkStats;
+                    var3 = var2.connectionTypeBuckets;
+                    var2 = var3[var4];
+                    var2 = var2 + var5;
+                    var3[var4] = var2;
+                    var0._lastSampleTimestamp = var1;
+                    var0 = undefined;
+                    return var0;
+            }
+        };
+        var0.value = var4;
+        var1[2] = var0;
+        var0 = undefined;
+        var0 = var3.bind(var0)(var2, var1);
+        return var0;
+    };
+    var1 = var1.bind(var0)();
+    var3 = 5;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'lib/NetworkQuality.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [6, 7, 3583, 660, 3486, 2]);

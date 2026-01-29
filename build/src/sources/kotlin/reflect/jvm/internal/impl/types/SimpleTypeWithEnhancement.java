@@ -1,0 +1,78 @@
+package kotlin.reflect.jvm.internal.impl.types;
+
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.reflect.jvm.internal.impl.types.checker.KotlinTypeRefiner;
+import kotlin.reflect.jvm.internal.impl.types.model.KotlinTypeMarker;
+import org.jetbrains.annotations.NotNull;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes5.dex */
+public final class SimpleTypeWithEnhancement extends DelegatingSimpleType implements TypeWithEnhancement {
+
+    /* renamed from: e  reason: collision with root package name */
+    private final SimpleType f35862e;
+
+    /* renamed from: i  reason: collision with root package name */
+    private final KotlinType f35863i;
+
+    public SimpleTypeWithEnhancement(@NotNull SimpleType delegate, @NotNull KotlinType enhancement) {
+        Intrinsics.checkNotNullParameter(delegate, "delegate");
+        Intrinsics.checkNotNullParameter(enhancement, "enhancement");
+        this.f35862e = delegate;
+        this.f35863i = enhancement;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
+    protected SimpleType getDelegate() {
+        return this.f35862e;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancement
+    @NotNull
+    public KotlinType getEnhancement() {
+        return this.f35863i;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.SimpleType
+    @NotNull
+    public String toString() {
+        return "[@EnhancedForWarnings(" + getEnhancement() + ")] " + getOrigin();
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.TypeWithEnhancement
+    @NotNull
+    public SimpleType getOrigin() {
+        return getDelegate();
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
+    @NotNull
+    public SimpleType makeNullableAsSpecified(boolean z10) {
+        UnwrappedType wrapEnhancement = TypeWithEnhancementKt.wrapEnhancement(getOrigin().makeNullableAsSpecified(z10), getEnhancement().unwrap().makeNullableAsSpecified(z10));
+        Intrinsics.checkNotNull(wrapEnhancement, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
+        return (SimpleType) wrapEnhancement;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.UnwrappedType
+    @NotNull
+    public SimpleType replaceAttributes(@NotNull TypeAttributes newAttributes) {
+        Intrinsics.checkNotNullParameter(newAttributes, "newAttributes");
+        UnwrappedType wrapEnhancement = TypeWithEnhancementKt.wrapEnhancement(getOrigin().replaceAttributes(newAttributes), getEnhancement());
+        Intrinsics.checkNotNull(wrapEnhancement, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
+        return (SimpleType) wrapEnhancement;
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType
+    @NotNull
+    public SimpleTypeWithEnhancement replaceDelegate(@NotNull SimpleType delegate) {
+        Intrinsics.checkNotNullParameter(delegate, "delegate");
+        return new SimpleTypeWithEnhancement(delegate, getEnhancement());
+    }
+
+    @Override // kotlin.reflect.jvm.internal.impl.types.DelegatingSimpleType, kotlin.reflect.jvm.internal.impl.types.UnwrappedType, kotlin.reflect.jvm.internal.impl.types.KotlinType
+    @NotNull
+    public SimpleTypeWithEnhancement refine(@NotNull KotlinTypeRefiner kotlinTypeRefiner) {
+        Intrinsics.checkNotNullParameter(kotlinTypeRefiner, "kotlinTypeRefiner");
+        KotlinType refineType = kotlinTypeRefiner.refineType((KotlinTypeMarker) getDelegate());
+        Intrinsics.checkNotNull(refineType, "null cannot be cast to non-null type org.jetbrains.kotlin.types.SimpleType");
+        return new SimpleTypeWithEnhancement((SimpleType) refineType, kotlinTypeRefiner.refineType((KotlinTypeMarker) getEnhancement()));
+    }
+}

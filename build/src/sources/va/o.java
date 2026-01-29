@@ -1,0 +1,79 @@
+package va;
+
+import android.graphics.Bitmap;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public class o implements d {
+
+    /* renamed from: a  reason: collision with root package name */
+    protected final v f50794a = new e();
+
+    /* renamed from: b  reason: collision with root package name */
+    private final int f50795b;
+
+    /* renamed from: c  reason: collision with root package name */
+    private int f50796c;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final a0 f50797d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private int f50798e;
+
+    public o(int i10, int i11, a0 a0Var, r8.d dVar) {
+        this.f50795b = i10;
+        this.f50796c = i11;
+        this.f50797d = a0Var;
+        if (dVar != null) {
+            dVar.a(this);
+        }
+    }
+
+    private Bitmap g(int i10) {
+        this.f50797d.d(i10);
+        return Bitmap.createBitmap(1, i10, Bitmap.Config.ALPHA_8);
+    }
+
+    private synchronized void j(int i10) {
+        Bitmap bitmap;
+        while (this.f50798e > i10 && (bitmap = (Bitmap) this.f50794a.pop()) != null) {
+            int a10 = this.f50794a.a(bitmap);
+            this.f50798e -= a10;
+            this.f50797d.b(a10);
+        }
+    }
+
+    @Override // r8.f
+    /* renamed from: h */
+    public synchronized Bitmap get(int i10) {
+        try {
+            int i11 = this.f50798e;
+            int i12 = this.f50795b;
+            if (i11 > i12) {
+                j(i12);
+            }
+            Bitmap bitmap = (Bitmap) this.f50794a.get(i10);
+            if (bitmap != null) {
+                int a10 = this.f50794a.a(bitmap);
+                this.f50798e -= a10;
+                this.f50797d.e(a10);
+                return bitmap;
+            }
+            return g(i10);
+        } catch (Throwable th2) {
+            throw th2;
+        }
+    }
+
+    @Override // r8.f, s8.c
+    /* renamed from: i */
+    public void release(Bitmap bitmap) {
+        int a10 = this.f50794a.a(bitmap);
+        if (a10 <= this.f50796c) {
+            this.f50797d.c(a10);
+            this.f50794a.put(bitmap);
+            synchronized (this) {
+                this.f50798e += a10;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+// modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var3 = 0;
+    var1.STAGE_INSTANCE = var3;
+    var0 = 'STAGE_INSTANCE';
+    var1[var3] = var0;
+    var4 = 1;
+    var1.GUILD_SCHEDULED_EVENT = var4;
+    var0 = 'GUILD_SCHEDULED_EVENT';
+    var1[var4] = var0;
+    var4 = 2;
+    var1.GUILD_INVITE_DISABLED = var4;
+    var0 = 'GUILD_INVITE_DISABLED';
+    var1[var4] = var0;
+    var4 = 3;
+    var1.EMBEDDED_ACTIVITY_INVITE = var4;
+    var0 = 'EMBEDDED_ACTIVITY_INVITE';
+    var1[var4] = var0;
+    var4 = 4;
+    var1.APP_MESSAGE_EMBED = var4;
+    var0 = 'APP_MESSAGE_EMBED';
+    var1[var4] = var0;
+    var4 = 5;
+    var1.GUILD_PROFILE_INVITE = var4;
+    var0 = 'GUILD_PROFILE_INVITE';
+    var1[var4] = var0;
+    var0 = dependencyMap;
+    var4 = var0[var3];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.CodedLinkExtendedType = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

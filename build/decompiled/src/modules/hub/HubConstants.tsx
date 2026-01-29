@@ -1,0 +1,45 @@
+// modules/hub/HubConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var1 = {};
+    var0 = 'STUDENT_PROMPT';
+    var1.STUDENT_PROMPT = var0;
+    var0 = 'VERIFY_EMAIL';
+    var1.VERIFY_EMAIL = var0;
+    var0 = 'VERIFY_PIN';
+    var1.VERIFY_PIN = var0;
+    var0 = 'SELECT_SCHOOL';
+    var1.SELECT_SCHOOL = var0;
+    var0 = 'SELECT_SCHOOL_SEARCH';
+    var1.SELECT_SCHOOL_SEARCH = var0;
+    var0 = 'SUBMIT_SCHOOL';
+    var1.SUBMIT_SCHOOL = var0;
+    var0 = 'EMAIL_CONFIRMATION';
+    var1.EMAIL_CONFIRMATION = var0;
+    var0 = 'EMAIL_WAITLIST';
+    var1.EMAIL_WAITLIST = var0;
+    var3 = dependencyMap;
+    var0 = 0;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/hub/HubConstants.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.HubEmailConnectionSteps = var1;
+    var1 = '884924873015689226';
+    var2.INVITE_ROUTING_HUB_GUILD_ID = var1;
+    var1 = ['US', 'CA', 'PH', 'GB', 'MX', 'ES', 'JP', 'BR', 'FR', 'DE', 'AU', 'IT', 'PL'];
+    var2.HUBS_IN_ONBOARDING_COUNTRIES = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

@@ -1,0 +1,168 @@
+package com.appsflyer.internal;
+
+import java.util.ArrayList;
+import java.util.List;
+import kotlin.Result;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.internal.Intrinsics;
+import org.jetbrains.annotations.NotNull;
+import org.json.JSONArray;
+import org.json.JSONObject;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes.dex */
+public final class AFi1zSDK {
+    public final AFi1xSDK AFAdRevenueData;
+    public final AFh1aSDK getCurrencyIso4217Code;
+    public AFi1ySDK getMediationNetwork;
+
+    public AFi1zSDK(@NotNull JSONObject jSONObject) {
+        Intrinsics.checkNotNullParameter(jSONObject, "");
+        this.getMediationNetwork = getCurrencyIso4217Code(jSONObject);
+        this.getCurrencyIso4217Code = getRevenue(jSONObject);
+        this.AFAdRevenueData = getMediationNetwork(jSONObject);
+    }
+
+    private static JSONObject AFAdRevenueData(JSONObject jSONObject, String str) {
+        JSONObject optJSONObject;
+        if (!jSONObject.has(str) || (optJSONObject = jSONObject.getJSONArray(str).optJSONObject(0).optJSONObject("data")) == null) {
+            return null;
+        }
+        return optJSONObject.optJSONObject("v1");
+    }
+
+    private static AFi1ySDK getCurrencyIso4217Code(JSONObject jSONObject) {
+        Object b10;
+        AFi1ySDK aFi1ySDK;
+        List l10;
+        AFi1ySDK aFi1ySDK2 = null;
+        try {
+            Result.a aVar = Result.f33279e;
+            JSONObject AFAdRevenueData = AFAdRevenueData(jSONObject, "r_debugger");
+            if (AFAdRevenueData != null) {
+                long j10 = AFAdRevenueData.getLong("ttl");
+                int i10 = AFAdRevenueData.getInt("counter");
+                String optString = AFAdRevenueData.optString("app_ver", "");
+                String optString2 = AFAdRevenueData.optString("sdk_ver", "");
+                float optDouble = (float) AFAdRevenueData.optDouble("ratio", 1.0d);
+                JSONArray optJSONArray = AFAdRevenueData.optJSONArray("tags");
+                if (optJSONArray != null) {
+                    Intrinsics.checkNotNullExpressionValue(optJSONArray, "");
+                    l10 = new ArrayList();
+                    int length = optJSONArray.length();
+                    for (int i11 = 0; i11 < length; i11++) {
+                        String string = optJSONArray.getString(i11);
+                        Intrinsics.checkNotNullExpressionValue(string, "");
+                        l10.add(string);
+                    }
+                } else {
+                    l10 = CollectionsKt.l();
+                }
+                List list = l10;
+                Intrinsics.checkNotNullExpressionValue(optString, "");
+                Intrinsics.checkNotNullExpressionValue(optString2, "");
+                aFi1ySDK = new AFi1ySDK(j10, optDouble, list, i10, optString, optString2);
+            } else {
+                aFi1ySDK = null;
+            }
+            b10 = Result.b(aFi1ySDK);
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f33279e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (!Result.g(b10)) {
+            aFi1ySDK2 = b10;
+        }
+        return aFi1ySDK2;
+    }
+
+    private static AFi1xSDK getMediationNetwork(JSONObject jSONObject) {
+        Object b10;
+        AFi1xSDK aFi1xSDK;
+        AFi1xSDK aFi1xSDK2 = null;
+        try {
+            Result.a aVar = Result.f33279e;
+            JSONObject AFAdRevenueData = AFAdRevenueData(jSONObject, "meta_data");
+            if (AFAdRevenueData != null) {
+                aFi1xSDK = new AFi1xSDK(AFAdRevenueData.optDouble("send_rate", 1.0d));
+            } else {
+                aFi1xSDK = null;
+            }
+            b10 = Result.b(aFi1xSDK);
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f33279e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (!Result.g(b10)) {
+            aFi1xSDK2 = b10;
+        }
+        return aFi1xSDK2;
+    }
+
+    private static AFh1aSDK getRevenue(JSONObject jSONObject) {
+        Object b10;
+        AFh1aSDK aFh1aSDK;
+        AFh1aSDK aFh1aSDK2 = null;
+        try {
+            Result.a aVar = Result.f33279e;
+            JSONObject AFAdRevenueData = AFAdRevenueData(jSONObject, "exc_mngr");
+            if (AFAdRevenueData != null) {
+                aFh1aSDK = new AFh1aSDK(AFAdRevenueData.getString("sdk_ver"), AFAdRevenueData.optInt("min", -1), AFAdRevenueData.optInt("expire", -1), AFAdRevenueData.optLong("ttl", -1L));
+            } else {
+                aFh1aSDK = null;
+            }
+            b10 = Result.b(aFh1aSDK);
+        } catch (Throwable th2) {
+            Result.a aVar2 = Result.f33279e;
+            b10 = Result.b(kotlin.c.a(th2));
+        }
+        if (!Result.g(b10)) {
+            aFh1aSDK2 = b10;
+        }
+        return aFh1aSDK2;
+    }
+
+    public final boolean equals(Object obj) {
+        Class<?> cls;
+        if (this == obj) {
+            return true;
+        }
+        if (obj != null) {
+            cls = obj.getClass();
+        } else {
+            cls = null;
+        }
+        if (!Intrinsics.areEqual(AFi1zSDK.class, cls)) {
+            return false;
+        }
+        Intrinsics.checkNotNull(obj, "");
+        AFi1zSDK aFi1zSDK = (AFi1zSDK) obj;
+        if (Intrinsics.areEqual(this.getCurrencyIso4217Code, aFi1zSDK.getCurrencyIso4217Code) && Intrinsics.areEqual(this.AFAdRevenueData, aFi1zSDK.AFAdRevenueData) && Intrinsics.areEqual(this.getMediationNetwork, aFi1zSDK.getMediationNetwork)) {
+            return true;
+        }
+        return false;
+    }
+
+    public final int hashCode() {
+        int i10;
+        int i11;
+        AFh1aSDK aFh1aSDK = this.getCurrencyIso4217Code;
+        int i12 = 0;
+        if (aFh1aSDK != null) {
+            i10 = aFh1aSDK.hashCode();
+        } else {
+            i10 = 0;
+        }
+        int i13 = i10 * 31;
+        AFi1xSDK aFi1xSDK = this.AFAdRevenueData;
+        if (aFi1xSDK != null) {
+            i11 = aFi1xSDK.hashCode();
+        } else {
+            i11 = 0;
+        }
+        int i14 = (i13 + i11) * 31;
+        AFi1ySDK aFi1ySDK = this.getMediationNetwork;
+        if (aFi1ySDK != null) {
+            i12 = aFi1ySDK.hashCode();
+        }
+        return i14 + i12;
+    }
+}

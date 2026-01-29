@@ -1,0 +1,101 @@
+// modules/errors/av_errors/definitions/AVErrorStreamFailedToStart.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var0 = 0;
+    var1 = var5[var0];
+    var0 = undefined;
+    var1 = var4.bind(var0)(var1);
+    var1 = var1.ApplicationStreamStates;
+    var _closure1_slot2 = var1;
+    var1 = {};
+    var6 = function(arg0) { // Original name: getActiveErrors, environment: var3
+        var1 = arg0;
+        var3 = var1.activeStreams;
+        var2 = var3.filter;
+        var1 = function(arg0) { // Environment: var0
+            _fun117942: for (var _fun117942_ip = 0;;) switch (_fun117942_ip) {
+                case 0:
+                    var1 = arg0;
+                    var2 = var1.state;
+                    var0 = _closure1_slot2;
+                    var0 = var0.FAILED;
+                    var0 = var2 === var0;
+                    if (!var0) {
+                        _fun117942_ip = 40;
+                        continue _fun117942
+                    }
+                case 28:
+                    var2 = var1.errorCode;
+                    var1 = null;
+                    var0 = var1 == var2;
+                case 40:
+                    return var0;
+            }
+        };
+        var2 = var2.bind(var3)(var1);
+        var1 = var2.map;
+        var0 = function(arg0) { // Environment: var0
+            var0 = {};
+            var5 = _closure1_slot0;
+            var6 = _closure1_slot1;
+            var1 = 1;
+            var1 = var6[var1];
+            var4 = undefined;
+            var1 = var5.bind(var4)(var1);
+            var1 = var1.AVError;
+            var1 = var1.STREAM_FAILED_TO_START;
+            var0.type = var1;
+            var1 = 2;
+            var1 = var6[var1];
+            var3 = var5.bind(var4)(var1);
+            var2 = var3.getStreamErrorContext;
+            var1 = 3;
+            var1 = var6[var1];
+            var5 = var5.bind(var4)(var1);
+            var4 = var5.encodeStreamKey;
+            var1 = arg0;
+            var1 = var4.bind(var5)(var1);
+            var7 = var2.bind(var3)(var1);
+            var8 = var0;
+            var1 = copyDataProperties(var8, var7);
+            return var0;
+        };
+        var0 = var1.bind(var2)(var0);
+        return var0;
+    };
+    var1.getActiveErrors = var6;
+    var3 = function(arg0) { // Original name: makeErrorContextKey, environment: var3
+        var0 = arg0;
+        var4 = var0.streamKey;
+        var3 = var0.mediaSessionId;
+        var0 = global;
+        var0 = var0.HermesInternal;
+        var2 = var0.concat;
+        var1 = '';
+        var0 = ':';
+        var0 = var2.bind(var1)(var4, var0, var3);
+        return var0;
+    };
+    var1.makeErrorContextKey = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/errors/av_errors/definitions/AVErrorStreamFailedToStart.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.AVErrorStreamFailedToStartDefinition = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [660, 7965, 14979, 3464, 2]);

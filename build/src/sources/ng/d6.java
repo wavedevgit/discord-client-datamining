@@ -1,0 +1,29 @@
+package ng;
+
+import ui.c;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+final class d6 implements ui.d {
+
+    /* renamed from: a  reason: collision with root package name */
+    static final d6 f41045a = new d6();
+
+    /* renamed from: b  reason: collision with root package name */
+    private static final ui.c f41046b;
+
+    static {
+        c.b a10 = ui.c.a("detectionType");
+        f fVar = new f();
+        fVar.a(1);
+        f41046b = a10.b(fVar.b()).a();
+    }
+
+    private d6() {
+    }
+
+    @Override // ui.d
+    public final /* bridge */ /* synthetic */ void a(Object obj, Object obj2) {
+        android.support.v4.media.session.b.a(obj);
+        ui.e eVar = (ui.e) obj2;
+        throw null;
+    }
+}

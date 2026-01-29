@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.fido;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
+public abstract class p implements Comparable {
+
+    /* renamed from: d  reason: collision with root package name */
+    private static final n f15088d = new n(null);
+
+    public static n a() {
+        return f15088d;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* bridge */ /* synthetic */ String d(p pVar) {
+        throw null;
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public static /* bridge */ /* synthetic */ boolean e(p pVar) {
+        throw null;
+    }
+}

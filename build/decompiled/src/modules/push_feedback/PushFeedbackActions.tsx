@@ -1,0 +1,62 @@
+// modules/push_feedback/PushFeedbackActions.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var3 = dependencyMap;
+    var0 = metroImportDefault;
+    var _closure1_slot0 = var0;
+    var _closure1_slot1 = var3;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var4);
+    var0 = 1;
+    var4 = var3[var0];
+    var3 = require;
+    var0 = undefined;
+    var5 = var3.bind(var0)(var4);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/push_feedback/PushFeedbackActions.tsx';
+    var3 = var4.bind(var5)(var3);
+    var3 = function(arg0, arg1, arg2) { // Original name: receivedNotification, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'PUSH_FEEDBACK_RECEIVED_NOTIFICATION';
+        var1.type = var4;
+        var4 = arg0;
+        var1.messageId = var4;
+        var4 = arg1;
+        var1.channelId = var4;
+        var4 = arg2;
+        var1.notificationType = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.receivedNotification = var3;
+    var1 = function() { // Original name: handleSurveyCleanup, environment: var1
+        var2 = _closure1_slot0;
+        var1 = _closure1_slot1;
+        var0 = 0;
+        var1 = var1[var0];
+        var0 = undefined;
+        var3 = var2.bind(var0)(var1);
+        var2 = var3.dispatch;
+        var1 = {};
+        var4 = 'PUSH_FEEDBACK_CLEANUP';
+        var1.type = var4;
+        var1 = var2.bind(var3)(var1);
+        return var0;
+    };
+    var2.handleSurveyCleanup = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [806, 2]);

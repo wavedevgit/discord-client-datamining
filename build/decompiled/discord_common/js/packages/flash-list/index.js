@@ -1,0 +1,136 @@
+// ../discord_common/js/packages/flash-list/index.js
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    _fun50829: for (var _fun50829_ip = 0;;) switch (_fun50829_ip) {
+        case 0:
+            var13 = require;
+            var4 = metroImportDefault;
+            var2 = exports;
+            var5 = dependencyMap;
+            var _closure1_slot0 = var13;
+            var _closure1_slot1 = var5;
+            var0 = global;
+            var7 = var0.Object;
+            var6 = var7.defineProperty;
+            var3 = {};
+            var0 = true;
+            var3.value = var0;
+            var0 = '__esModule';
+            var0 = var6.bind(var7)(var2, var0, var3);
+            var0 = 0;
+            var6 = var5[var0];
+            var3 = metroImportAll;
+            var0 = undefined;
+            var8 = var3.bind(var0)(var6);
+            var3 = 1;
+            var3 = var5[var3];
+            var3 = var13.bind(var0)(var3);
+            var3 = var3.ScrollView;
+            var3 = 2;
+            var3 = var5[var3];
+            var3 = var13.bind(var0)(var3);
+            var3 = var3.jsx;
+            var _closure1_slot2 = var3;
+            var6 = var8.forwardRef;
+            var3 = function(arg0, arg1) { // Environment: var1
+                var3 = _closure1_slot2;
+                var1 = _closure1_slot0;
+                var2 = _closure1_slot1;
+                var0 = 3;
+                var0 = var2[var0];
+                var2 = undefined;
+                var0 = var1.bind(var2)(var0);
+                var1 = var0.FlashList;
+                var0 = {};
+                var4 = arg1;
+                var0.ref = var4;
+                var5 = arg0;
+                var6 = var0;
+                var4 = copyDataProperties(var6, var5);
+                var0 = var3.bind(var2)(var1, var0);
+                return var0;
+            };
+            var6 = var6.bind(var8)(var3);
+            var7 = 4;
+            var3 = var5[var7];
+            var10 = var4.bind(var0)(var3);
+            var9 = var10.createAnimatedComponent;
+            var12 = 3;
+            var3 = var5[var12];
+            var3 = var13.bind(var0)(var3);
+            var3 = var3.FlashList;
+            var3 = var9.bind(var10)(var3);
+            var _closure1_slot3 = var3;
+            var9 = var8.forwardRef;
+            var3 = function(arg0, arg1) { // Environment: var1
+                var3 = _closure1_slot2;
+                var2 = _closure1_slot3;
+                var1 = {};
+                var0 = arg1;
+                var1.ref = var0;
+                var4 = arg0;
+                var5 = var1;
+                var0 = copyDataProperties(var5, var4);
+                var0 = undefined;
+                var0 = var3.bind(var0)(var2, var1);
+                return var0;
+            };
+            var3 = var9.bind(var8)(var3);
+            var7 = var5[var7];
+            var10 = var4.bind(var0)(var7);
+            var9 = var10.createAnimatedComponent;
+            var7 = var5[var12];
+            var7 = var13.bind(var0)(var7);
+            var7 = var7.MasonryFlashList;
+            var7 = var9.bind(var10)(var7);
+            var _closure1_slot4 = var7;
+            var7 = var8.forwardRef;
+            var1 = function(arg0, arg1) { // Environment: var1
+                var3 = _closure1_slot2;
+                var2 = _closure1_slot4;
+                var1 = {};
+                var4 = arg1;
+                var1.ref = var4;
+                var5 = _closure1_slot0;
+                var4 = _closure1_slot1;
+                var0 = 5;
+                var4 = var4[var0];
+                var0 = undefined;
+                var4 = var5.bind(var0)(var4);
+                var4 = var4.BottomSheetScrollView;
+                var1.renderScrollComponent = var4;
+                var6 = arg0;
+                var7 = var1;
+                var4 = copyDataProperties(var7, var6);
+                var0 = var3.bind(var0)(var2, var1);
+                return var0;
+            };
+            var1 = var7.bind(var8)(var1);
+            var7 = 6;
+            var7 = var5[var7];
+            var15 = var13.bind(var0)(var7);
+            var14 = var15.fileFinishedImporting;
+            var7 = '../discord_common/js/packages/flash-list/index.js';
+            var7 = var14.bind(var15)(var7);
+            var7 = var5[var12];
+            var10 = var13.bind(var0)(var7);
+            for (var7 in var10)
+                case 286: {
+                    case 295: var15 = var7;
+                    var14 = var5[var12];
+                    var14 = var13.bind(var0)(var14);
+                    var14 = var14[var15];
+                    var2[var15] = var14;
+                    _fun50829_ip = 286;
+                    continue _fun50829;
+                }
+        case 317:
+            var2.FlashList = var6;
+            var2.AnimatedFlashList = var3;
+            var3 = 7;
+            var3 = var5[var3];
+            var3 = var4.bind(var0)(var3);
+            var2.BottomSheetFlashList = var3;
+            var2.BottomSheetMasonryFlashList = var1;
+            return var0;
+    }
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 33, 5054, 3677, 4889, 2, 5053]);

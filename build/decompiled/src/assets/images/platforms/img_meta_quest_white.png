@@ -1,0 +1,26 @@
+// /assets/images/platforms/img_meta_quest_white.png
+module.exports = (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var1 = dependencyMap;
+    var0 = 0;
+    var2 = var1[var0];
+    var1 = require;
+    var0 = undefined;
+    var3 = var1.bind(var0)(var2);
+    var2 = var3.registerAsset;
+    var1 = {
+        '__packager_asset': true,
+        'httpServerLocation': '/assets/images/platforms',
+        'width': 128,
+        'height': 128,
+        'scales': null,
+        'hash': '665fb7ab43f458f1e2e4d5c788dac4b4',
+        'name': 'img_meta_quest_white',
+        'type': 'png'
+    };
+    var4 = [1];
+    var1.scales = var4;
+    var2 = var2.bind(var3)(var1);
+    var1 = module;
+    var1.exports = var2;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [1239]);

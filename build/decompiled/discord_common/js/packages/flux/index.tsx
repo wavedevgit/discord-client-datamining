@@ -1,0 +1,111 @@
+// ../discord_common/js/packages/flux/index.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var5 = require;
+    var10 = metroImportDefault;
+    var2 = exports;
+    var6 = dependencyMap;
+    var3 = function() { // Original name: initialize, environment: var1
+        var1 = _closure1_slot1;
+        var0 = var1.initialize;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
+    };
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var4 = {};
+    var0 = true;
+    var4.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var4);
+    var0 = 0;
+    var4 = var6[var0];
+    var0 = undefined;
+    var4 = var5.bind(var0)(var4);
+    var12 = var4.PersistedStore;
+    var _closure1_slot0 = var12;
+    var11 = var4.DeviceSettingsStore;
+    var9 = var4.OfflineCacheStore;
+    var4 = 1;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var7 = var4.Store;
+    var _closure1_slot1 = var7;
+    var4 = 2;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.createFetchStore;
+    var8 = {};
+    var13 = 3;
+    var13 = var6[var13];
+    var13 = var10.bind(var0)(var13);
+    var8.Emitter = var13;
+    var8.Store = var7;
+    var8.PersistedStore = var12;
+    var8.DeviceSettingsStore = var11;
+    var8.OfflineCacheStore = var9;
+    var9 = 4;
+    var9 = var6[var9];
+    var9 = var10.bind(var0)(var9);
+    var8.connectStores = var9;
+    var8.initialize = var3;
+    var10 = function() { // Original name: get initialized, environment: var1
+        var0 = _closure1_slot1;
+        var0 = var0.initialized;
+        return var0;
+    };
+    var9 = 'initialized';
+    Object.defineProperty(var8, var9, {
+        get: var10,
+        set: var0,
+        enumerable: true
+    });
+    var9 = 5;
+    var9 = var6[var9];
+    var11 = var5.bind(var0)(var9);
+    var10 = var11.fileFinishedImporting;
+    var9 = '../discord_common/js/packages/flux/index.tsx';
+    var9 = var10.bind(var11)(var9);
+    var2.default = var8;
+    var2.Store = var7;
+    var7 = 6;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.Dispatcher;
+    var2.Dispatcher = var7;
+    var7 = 7;
+    var7 = var6[var7];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.BatchedStoreListener;
+    var2.BatchedStoreListener = var7;
+    var2.createFetchStore = var4;
+    var4 = 8;
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.statesWillNeverBeEqual;
+    var2.statesWillNeverBeEqual = var7;
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.useStateFromStores;
+    var2.useStateFromStores = var7;
+    var7 = var6[var4];
+    var7 = var5.bind(var0)(var7);
+    var7 = var7.useStateFromStoresObject;
+    var2.useStateFromStoresObject = var7;
+    var4 = var6[var4];
+    var4 = var5.bind(var0)(var4);
+    var4 = var4.useStateFromStoresArray;
+    var2.useStateFromStoresArray = var4;
+    var2.initialize = var3;
+    var1 = function() { // Original name: destroy, environment: var1
+        var1 = _closure1_slot0;
+        var0 = var1.destroy;
+        var0 = var0.bind(var1)();
+        var0 = undefined;
+        return var0;
+    };
+    var2.destroy = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [567, 568, 627, 570, 634, 2, 635, 633, 632]);

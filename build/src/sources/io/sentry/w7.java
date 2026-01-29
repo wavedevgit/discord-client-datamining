@@ -1,0 +1,748 @@
+package io.sentry;
+
+import io.sentry.z3;
+import java.util.List;
+import java.util.ListIterator;
+import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicReference;
+/* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+public final class w7 implements e1 {
+
+    /* renamed from: b  reason: collision with root package name */
+    private final d8 f30909b;
+
+    /* renamed from: d  reason: collision with root package name */
+    private final w0 f30911d;
+
+    /* renamed from: e  reason: collision with root package name */
+    private String f30912e;
+
+    /* renamed from: g  reason: collision with root package name */
+    private volatile TimerTask f30914g;
+
+    /* renamed from: h  reason: collision with root package name */
+    private volatile TimerTask f30915h;
+
+    /* renamed from: i  reason: collision with root package name */
+    private volatile Timer f30916i;
+
+    /* renamed from: n  reason: collision with root package name */
+    private io.sentry.protocol.g0 f30921n;
+
+    /* renamed from: o  reason: collision with root package name */
+    private final j1 f30922o;
+
+    /* renamed from: p  reason: collision with root package name */
+    private final io.sentry.protocol.c f30923p;
+
+    /* renamed from: q  reason: collision with root package name */
+    private final h f30924q;
+
+    /* renamed from: r  reason: collision with root package name */
+    private final v8 f30925r;
+
+    /* renamed from: a  reason: collision with root package name */
+    private final io.sentry.protocol.x f30908a = new io.sentry.protocol.x();
+
+    /* renamed from: c  reason: collision with root package name */
+    private final List f30910c = new CopyOnWriteArrayList();
+
+    /* renamed from: f  reason: collision with root package name */
+    private c f30913f = c.f30928c;
+
+    /* renamed from: j  reason: collision with root package name */
+    private final io.sentry.util.a f30917j = new io.sentry.util.a();
+
+    /* renamed from: k  reason: collision with root package name */
+    private final io.sentry.util.a f30918k = new io.sentry.util.a();
+
+    /* renamed from: l  reason: collision with root package name */
+    private final AtomicBoolean f30919l = new AtomicBoolean(false);
+
+    /* renamed from: m  reason: collision with root package name */
+    private final AtomicBoolean f30920m = new AtomicBoolean(false);
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public class a extends TimerTask {
+        a() {
+        }
+
+        @Override // java.util.TimerTask, java.lang.Runnable
+        public void run() {
+            w7.this.T();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public class b extends TimerTask {
+        b() {
+        }
+
+        @Override // java.util.TimerTask, java.lang.Runnable
+        public void run() {
+            w7.this.S();
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes4.dex */
+    public static final class c {
+
+        /* renamed from: c  reason: collision with root package name */
+        static final c f30928c = d();
+
+        /* renamed from: a  reason: collision with root package name */
+        private final boolean f30929a;
+
+        /* renamed from: b  reason: collision with root package name */
+        private final l8 f30930b;
+
+        private c(boolean z10, l8 l8Var) {
+            this.f30929a = z10;
+            this.f30930b = l8Var;
+        }
+
+        static c c(l8 l8Var) {
+            return new c(true, l8Var);
+        }
+
+        private static c d() {
+            return new c(false, null);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public w7(t8 t8Var, w0 w0Var, v8 v8Var, h hVar) {
+        this.f30916i = null;
+        io.sentry.protocol.c cVar = new io.sentry.protocol.c();
+        this.f30923p = cVar;
+        io.sentry.util.y.c(t8Var, "context is required");
+        io.sentry.util.y.c(w0Var, "scopes are required");
+        d8 d8Var = new d8(t8Var, this, w0Var, v8Var);
+        this.f30909b = d8Var;
+        this.f30912e = t8Var.y();
+        this.f30922o = t8Var.e();
+        this.f30911d = w0Var;
+        Boolean bool = Boolean.TRUE;
+        hVar = bool.equals(c()) ? hVar : null;
+        this.f30924q = hVar;
+        this.f30921n = t8Var.A();
+        this.f30925r = v8Var;
+        V(d8Var);
+        io.sentry.protocol.x L = L();
+        if (!L.equals(io.sentry.protocol.x.f30470e) && bool.equals(c())) {
+            cVar.v(new n3(L));
+        }
+        if (hVar != null) {
+            hVar.e(this);
+        }
+        if (v8Var.l() == null && v8Var.k() == null) {
+            return;
+        }
+        this.f30916i = new Timer(true);
+        U();
+        p();
+    }
+
+    private void C() {
+        a1 a10 = this.f30917j.a();
+        try {
+            if (this.f30915h != null) {
+                this.f30915h.cancel();
+                this.f30920m.set(false);
+                this.f30915h = null;
+            }
+            if (a10 != null) {
+                a10.close();
+            }
+        } catch (Throwable th2) {
+            if (a10 != null) {
+                try {
+                    a10.close();
+                } catch (Throwable th3) {
+                    th2.addSuppressed(th3);
+                }
+            }
+            throw th2;
+        }
+    }
+
+    private void D() {
+        a1 a10 = this.f30917j.a();
+        try {
+            if (this.f30914g != null) {
+                this.f30914g.cancel();
+                this.f30919l.set(false);
+                this.f30914g = null;
+            }
+            if (a10 != null) {
+                a10.close();
+            }
+        } catch (Throwable th2) {
+            if (a10 != null) {
+                try {
+                    a10.close();
+                } catch (Throwable th3) {
+                    th2.addSuppressed(th3);
+                }
+            }
+            throw th2;
+        }
+    }
+
+    private ISpan E(e8 e8Var, k8 k8Var) {
+        if (this.f30909b.isFinished()) {
+            return y2.u();
+        }
+        if (!this.f30922o.equals(e8Var.e())) {
+            return y2.u();
+        }
+        if (io.sentry.util.e0.b(this.f30911d.b().getIgnoredSpanOrigins(), k8Var.a())) {
+            return y2.u();
+        }
+        j8 h10 = e8Var.h();
+        String f10 = e8Var.f();
+        String c10 = e8Var.c();
+        if (this.f30910c.size() < this.f30911d.b().getMaxSpans()) {
+            io.sentry.util.y.c(h10, "parentSpanId is required");
+            io.sentry.util.y.c(f10, "operation is required");
+            D();
+            d8 d8Var = new d8(this, this.f30911d, e8Var, k8Var, new g8() { // from class: io.sentry.s7
+                @Override // io.sentry.g8
+                public final void a(d8 d8Var2) {
+                    w7.y(w7.this, d8Var2);
+                }
+            });
+            V(d8Var);
+            this.f30910c.add(d8Var);
+            h hVar = this.f30924q;
+            if (hVar != null) {
+                hVar.b(d8Var);
+            }
+            return d8Var;
+        }
+        this.f30911d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", f10, c10);
+        return y2.u();
+    }
+
+    private ISpan F(j8 j8Var, String str, String str2, k8 k8Var) {
+        e8 a10 = q().a(str, j8Var, null);
+        a10.r(str2);
+        a10.s(j1.SENTRY);
+        return E(a10, k8Var);
+    }
+
+    private ISpan G(String str, String str2, j5 j5Var, j1 j1Var, k8 k8Var) {
+        if (this.f30909b.isFinished()) {
+            return y2.u();
+        }
+        if (!this.f30922o.equals(j1Var)) {
+            return y2.u();
+        }
+        if (this.f30910c.size() < this.f30911d.b().getMaxSpans()) {
+            return this.f30909b.o(str, str2, j5Var, j1Var, k8Var);
+        }
+        this.f30911d.b().getLogger().c(SentryLevel.WARNING, "Span operation: %s, description: %s dropped due to limit reached. Returning NoOpSpan.", str, str2);
+        return y2.u();
+    }
+
+    private io.sentry.protocol.x L() {
+        if (!this.f30909b.q().j().equals(io.sentry.protocol.x.f30470e)) {
+            return this.f30909b.q().j();
+        }
+        return this.f30911d.b().getContinuousProfiler().h();
+    }
+
+    private boolean Q() {
+        ListIterator listIterator = this.f30910c.listIterator();
+        while (listIterator.hasNext()) {
+            d8 d8Var = (d8) listIterator.next();
+            if (!d8Var.isFinished() && d8Var.r() == null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void S() {
+        boolean z10;
+        l8 a10 = a();
+        if (a10 == null) {
+            a10 = l8.DEADLINE_EXCEEDED;
+        }
+        if (this.f30925r.l() != null) {
+            z10 = true;
+        } else {
+            z10 = false;
+        }
+        b(a10, z10, null);
+        this.f30920m.set(false);
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public void T() {
+        l8 a10 = a();
+        if (a10 == null) {
+            a10 = l8.OK;
+        }
+        k(a10);
+        this.f30919l.set(false);
+    }
+
+    private void U() {
+        Long k10 = this.f30925r.k();
+        if (k10 != null) {
+            a1 a10 = this.f30917j.a();
+            try {
+                if (this.f30916i != null) {
+                    C();
+                    this.f30920m.set(true);
+                    this.f30915h = new b();
+                    this.f30916i.schedule(this.f30915h, k10.longValue());
+                }
+                if (a10 != null) {
+                    a10.close();
+                }
+            } catch (Throwable th2) {
+                if (a10 != null) {
+                    try {
+                        a10.close();
+                    } catch (Throwable th3) {
+                        th2.addSuppressed(th3);
+                    }
+                }
+                throw th2;
+            }
+        }
+    }
+
+    private void V(ISpan iSpan) {
+        io.sentry.util.thread.a threadChecker = this.f30911d.b().getThreadChecker();
+        io.sentry.protocol.x L = L();
+        if (!L.equals(io.sentry.protocol.x.f30470e) && Boolean.TRUE.equals(iSpan.c())) {
+            iSpan.j("profiler_id", L.toString());
+        }
+        iSpan.j("thread.id", String.valueOf(threadChecker.c()));
+        iSpan.j("thread.name", threadChecker.b());
+    }
+
+    private void c0(d dVar) {
+        a1 a10 = this.f30918k.a();
+        try {
+            if (dVar.q()) {
+                final AtomicReference atomicReference = new AtomicReference();
+                this.f30911d.o(new b4() { // from class: io.sentry.v7
+                    @Override // io.sentry.b4
+                    public final void a(IScope iScope) {
+                        atomicReference.set(iScope.J());
+                    }
+                });
+                dVar.I(q().p(), (io.sentry.protocol.x) atomicReference.get(), this.f30911d.b(), N(), getName(), P());
+                dVar.b();
+            }
+            if (a10 != null) {
+                a10.close();
+            }
+        } catch (Throwable th2) {
+            if (a10 != null) {
+                try {
+                    a10.close();
+                } catch (Throwable th3) {
+                    th2.addSuppressed(th3);
+                }
+            }
+            throw th2;
+        }
+    }
+
+    public static /* synthetic */ void v(w7 w7Var, IScope iScope, e1 e1Var) {
+        w7Var.getClass();
+        if (e1Var == w7Var) {
+            iScope.E();
+        }
+    }
+
+    public static /* synthetic */ void w(final w7 w7Var, final IScope iScope) {
+        w7Var.getClass();
+        iScope.R(new z3.c() { // from class: io.sentry.u7
+            @Override // io.sentry.z3.c
+            public final void a(e1 e1Var) {
+                w7.v(w7.this, iScope, e1Var);
+            }
+        });
+    }
+
+    public static /* synthetic */ void x(w7 w7Var, IScope iScope) {
+        w7Var.getClass();
+        iScope.A(w7Var);
+    }
+
+    public static /* synthetic */ void y(w7 w7Var, d8 d8Var) {
+        h hVar = w7Var.f30924q;
+        if (hVar != null) {
+            hVar.a(d8Var);
+        }
+        c cVar = w7Var.f30913f;
+        if (w7Var.f30925r.l() != null) {
+            if (!w7Var.f30925r.q() || w7Var.Q()) {
+                w7Var.p();
+            }
+        } else if (cVar.f30929a) {
+            w7Var.k(cVar.f30930b);
+        }
+    }
+
+    public static /* synthetic */ void z(w7 w7Var, g8 g8Var, AtomicReference atomicReference, d8 d8Var) {
+        if (g8Var != null) {
+            w7Var.getClass();
+            g8Var.a(d8Var);
+        }
+        u8 n10 = w7Var.f30925r.n();
+        if (n10 != null) {
+            n10.a(w7Var);
+        }
+        h hVar = w7Var.f30924q;
+        if (hVar != null) {
+            atomicReference.set(hVar.d(w7Var));
+        }
+    }
+
+    public void H(l8 l8Var, j5 j5Var, boolean z10, Hint hint) {
+        q3 q3Var;
+        l8 l8Var2;
+        j5 r10 = this.f30909b.r();
+        if (j5Var == null) {
+            j5Var = r10;
+        }
+        if (j5Var == null) {
+            j5Var = this.f30911d.b().getDateProvider().now();
+        }
+        for (d8 d8Var : this.f30910c) {
+            if (d8Var.y().d()) {
+                if (l8Var != null) {
+                    l8Var2 = l8Var;
+                } else {
+                    l8Var2 = q().f29967r;
+                }
+                d8Var.s(l8Var2, j5Var);
+            }
+        }
+        this.f30913f = c.c(l8Var);
+        if (!this.f30909b.isFinished()) {
+            if (!this.f30925r.q() || Q()) {
+                final AtomicReference atomicReference = new AtomicReference();
+                final g8 B = this.f30909b.B();
+                this.f30909b.G(new g8() { // from class: io.sentry.q7
+                    @Override // io.sentry.g8
+                    public final void a(d8 d8Var2) {
+                        w7.z(w7.this, B, atomicReference, d8Var2);
+                    }
+                });
+                this.f30909b.s(this.f30913f.f30930b, j5Var);
+                Boolean bool = Boolean.TRUE;
+                if (bool.equals(c()) && bool.equals(R())) {
+                    q3Var = this.f30911d.b().getTransactionProfiler().b(this, (List) atomicReference.get(), this.f30911d.b());
+                } else {
+                    q3Var = null;
+                }
+                if (this.f30911d.b().isContinuousProfilingEnabled()) {
+                    o3 profileLifecycle = this.f30911d.b().getProfileLifecycle();
+                    o3 o3Var = o3.TRACE;
+                    if (profileLifecycle == o3Var && this.f30909b.q().j().equals(io.sentry.protocol.x.f30470e)) {
+                        this.f30911d.b().getContinuousProfiler().g(o3Var);
+                    }
+                }
+                if (atomicReference.get() != null) {
+                    ((List) atomicReference.get()).clear();
+                }
+                this.f30911d.o(new b4() { // from class: io.sentry.r7
+                    @Override // io.sentry.b4
+                    public final void a(IScope iScope) {
+                        w7.w(w7.this, iScope);
+                    }
+                });
+                io.sentry.protocol.d0 d0Var = new io.sentry.protocol.d0(this);
+                if (this.f30916i != null) {
+                    a1 a10 = this.f30917j.a();
+                    try {
+                        if (this.f30916i != null) {
+                            D();
+                            C();
+                            this.f30916i.cancel();
+                            this.f30916i = null;
+                        }
+                        if (a10 != null) {
+                            a10.close();
+                        }
+                    } catch (Throwable th2) {
+                        if (a10 != null) {
+                            try {
+                                a10.close();
+                            } catch (Throwable th3) {
+                                th2.addSuppressed(th3);
+                            }
+                        }
+                        throw th2;
+                    }
+                }
+                if (z10 && this.f30910c.isEmpty() && this.f30925r.l() != null) {
+                    this.f30911d.b().getLogger().c(SentryLevel.DEBUG, "Dropping idle transaction %s because it has no child spans", this.f30912e);
+                    return;
+                }
+                d0Var.o0().putAll(this.f30909b.w());
+                this.f30911d.G(d0Var, i(), hint, q3Var);
+            }
+        }
+    }
+
+    public List I() {
+        return this.f30910c;
+    }
+
+    public io.sentry.protocol.c J() {
+        return this.f30923p;
+    }
+
+    public Map K() {
+        return this.f30909b.u();
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public d8 M() {
+        return this.f30909b;
+    }
+
+    public s8 N() {
+        return this.f30909b.A();
+    }
+
+    public List O() {
+        return this.f30910c;
+    }
+
+    public io.sentry.protocol.g0 P() {
+        return this.f30921n;
+    }
+
+    public Boolean R() {
+        return this.f30909b.F();
+    }
+
+    public void W(String str, Number number) {
+        if (!this.f30909b.w().containsKey(str)) {
+            h(str, number);
+        }
+    }
+
+    public void X(String str, Number number, a2 a2Var) {
+        if (!this.f30909b.w().containsKey(str)) {
+            m(str, number, a2Var);
+        }
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public ISpan Y(j8 j8Var, String str, String str2) {
+        return a0(j8Var, str, str2, new k8());
+    }
+
+    /* JADX INFO: Access modifiers changed from: package-private */
+    public ISpan Z(j8 j8Var, String str, String str2, j5 j5Var, j1 j1Var, k8 k8Var) {
+        e8 a10 = q().a(str, j8Var, null);
+        a10.r(str2);
+        a10.s(j1Var);
+        k8Var.h(j5Var);
+        return E(a10, k8Var);
+    }
+
+    @Override // io.sentry.ISpan
+    public l8 a() {
+        return this.f30909b.a();
+    }
+
+    ISpan a0(j8 j8Var, String str, String str2, k8 k8Var) {
+        return F(j8Var, str, str2, k8Var);
+    }
+
+    @Override // io.sentry.e1
+    public void b(l8 l8Var, boolean z10, Hint hint) {
+        if (isFinished()) {
+            return;
+        }
+        j5 now = this.f30911d.b().getDateProvider().now();
+        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f30910c);
+        while (d10.hasPrevious()) {
+            d8 d8Var = (d8) d10.previous();
+            d8Var.G(null);
+            d8Var.s(l8Var, now);
+        }
+        H(l8Var, now, z10, hint);
+    }
+
+    public ISpan b0(String str, String str2) {
+        return o(str, str2, null, j1.SENTRY, new k8());
+    }
+
+    @Override // io.sentry.ISpan
+    public Boolean c() {
+        return this.f30909b.c();
+    }
+
+    @Override // io.sentry.ISpan
+    public void d() {
+        k(a());
+    }
+
+    @Override // io.sentry.ISpan
+    public void e(String str) {
+        if (this.f30909b.isFinished()) {
+            this.f30911d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Description %s cannot be set", str);
+        } else {
+            this.f30909b.e(str);
+        }
+    }
+
+    @Override // io.sentry.e1
+    public io.sentry.protocol.x f() {
+        return this.f30908a;
+    }
+
+    @Override // io.sentry.ISpan
+    public ISpan g(String str) {
+        return b0(str, null);
+    }
+
+    @Override // io.sentry.ISpan
+    public String getDescription() {
+        return this.f30909b.getDescription();
+    }
+
+    @Override // io.sentry.e1
+    public String getName() {
+        return this.f30912e;
+    }
+
+    @Override // io.sentry.ISpan
+    public void h(String str, Number number) {
+        this.f30909b.h(str, number);
+    }
+
+    @Override // io.sentry.ISpan
+    public q8 i() {
+        d b10;
+        if (this.f30911d.b().isTraceSampling() && (b10 = q().b()) != null) {
+            c0(b10);
+            return b10.J();
+        }
+        return null;
+    }
+
+    @Override // io.sentry.ISpan
+    public boolean isFinished() {
+        return this.f30909b.isFinished();
+    }
+
+    @Override // io.sentry.ISpan
+    public void j(String str, Object obj) {
+        if (this.f30909b.isFinished()) {
+            this.f30911d.b().getLogger().c(SentryLevel.DEBUG, "The transaction is already finished. Data %s cannot be set", str);
+        } else {
+            this.f30909b.j(str, obj);
+        }
+    }
+
+    @Override // io.sentry.ISpan
+    public void k(l8 l8Var) {
+        s(l8Var, null);
+    }
+
+    @Override // io.sentry.ISpan
+    public ISpan l(String str, String str2, j5 j5Var, j1 j1Var) {
+        return o(str, str2, j5Var, j1Var, new k8());
+    }
+
+    @Override // io.sentry.ISpan
+    public void m(String str, Number number, a2 a2Var) {
+        this.f30909b.m(str, number, a2Var);
+    }
+
+    @Override // io.sentry.ISpan
+    public a1 makeCurrent() {
+        this.f30911d.o(new b4() { // from class: io.sentry.t7
+            @Override // io.sentry.b4
+            public final void a(IScope iScope) {
+                w7.x(w7.this, iScope);
+            }
+        });
+        return q2.a();
+    }
+
+    @Override // io.sentry.e1
+    public ISpan n() {
+        ListIterator d10 = io.sentry.util.c.d((CopyOnWriteArrayList) this.f30910c);
+        while (d10.hasPrevious()) {
+            d8 d8Var = (d8) d10.previous();
+            if (!d8Var.isFinished()) {
+                return d8Var;
+            }
+        }
+        return null;
+    }
+
+    @Override // io.sentry.ISpan
+    public ISpan o(String str, String str2, j5 j5Var, j1 j1Var, k8 k8Var) {
+        return G(str, str2, j5Var, j1Var, k8Var);
+    }
+
+    @Override // io.sentry.e1
+    public void p() {
+        Long l10;
+        a1 a10 = this.f30917j.a();
+        try {
+            if (this.f30916i != null && (l10 = this.f30925r.l()) != null) {
+                D();
+                this.f30919l.set(true);
+                this.f30914g = new a();
+                this.f30916i.schedule(this.f30914g, l10.longValue());
+            }
+            if (a10 != null) {
+                a10.close();
+            }
+        } catch (Throwable th2) {
+            if (a10 != null) {
+                try {
+                    a10.close();
+                } catch (Throwable th3) {
+                    th2.addSuppressed(th3);
+                }
+            }
+            throw th2;
+        }
+    }
+
+    @Override // io.sentry.ISpan
+    public e8 q() {
+        return this.f30909b.q();
+    }
+
+    @Override // io.sentry.ISpan
+    public j5 r() {
+        return this.f30909b.r();
+    }
+
+    @Override // io.sentry.ISpan
+    public void s(l8 l8Var, j5 j5Var) {
+        H(l8Var, j5Var, true, null);
+    }
+
+    @Override // io.sentry.ISpan
+    public j5 t() {
+        return this.f30909b.t();
+    }
+}

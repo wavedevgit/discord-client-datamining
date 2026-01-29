@@ -1,0 +1,43 @@
+// modules/a11y/native/AccessibilityPreferencesSharedValue.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = require;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var6 = var0.Object;
+    var5 = var6.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var5.bind(var6)(var2, var0, var1);
+    var0 = 0;
+    var1 = var4[var0];
+    var0 = undefined;
+    var1 = var3.bind(var0)(var1);
+    var5 = var1.AccessibilityFeatureFlags;
+    var1 = {};
+    var7 = var5.REDUCED_MOTION;
+    var6 = 'reduceMotion';
+    var1[var7] = var6;
+    var7 = var5.REDUCED_MOTION_PREFERS_CROSSFADES;
+    var6 = 'prefersCrossfades';
+    var1[var7] = var6;
+    var6 = var5.SCREENREADER;
+    var5 = 'screenReaderEnabled';
+    var1[var6] = var5;
+    var5 = 1;
+    var5 = var4[var5];
+    var7 = var3.bind(var0)(var5);
+    var6 = var7.fileFinishedImporting;
+    var5 = 'modules/a11y/native/AccessibilityPreferencesSharedValue.tsx';
+    var5 = var6.bind(var7)(var5);
+    var2.A11Y_FEATURE_MAP = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.accessibilityPreferencesSharedValue;
+    var2.accessibilityPreferencesSharedValue = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [12626, 2, 4835]);

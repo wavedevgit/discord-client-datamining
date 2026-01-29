@@ -1,0 +1,158 @@
+// modules/notifications/settings/native/NotificationSettingsChannelPost.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var6 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var6;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var8 = var0.Object;
+    var7 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var7.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var7 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var3 = var3.bind(var0)(var7);
+    var3 = 1;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.View;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var6.bind(var0)(var3);
+    var _closure1_slot4 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot5 = var3;
+    var3 = 9;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/notifications/settings/native/NotificationSettingsChannelPost.tsx';
+    var3 = var4.bind(var5)(var3);
+    var1 = function(arg0) { // Original name: NotificationSettingsChannelPost, environment: var1
+        _fun69852: for (var _fun69852_ip = 0;;) switch (_fun69852_ip) {
+            case 0:
+                var4 = arg0;
+                var _closure2_slot0 = var4;
+                var0 = var4.channel;
+                var1 = var0.guild_id;
+                var _closure2_slot1 = var1;
+                var0 = var0.id;
+                var _closure2_slot2 = var0;
+                var15 = _closure1_slot0;
+                var16 = _closure1_slot2;
+                var1 = 4;
+                var1 = var16[var1];
+                var3 = undefined;
+                var6 = var15.bind(var3)(var1);
+                var5 = var6.useStateFromStoresObject;
+                var1 = _closure1_slot4;
+                var2 = new Array(1);
+                var2[0] = var1;
+                var1 = function() { // Environment: var8
+                    var0 = {};
+                    var3 = _closure1_slot4;
+                    var5 = var3.isChannelMuted;
+                    var4 = _closure2_slot1;
+                    var2 = _closure2_slot2;
+                    var2 = var5.bind(var3)(var4, var2);
+                    var0.muted = var2;
+                    var2 = var3.isMuted;
+                    var2 = var2.bind(var3)(var4);
+                    var0.guildMuted = var2;
+                    var2 = var3.getNewForumThreadsCreated;
+                    var1 = _closure2_slot0;
+                    var1 = var1.channel;
+                    var1 = var2.bind(var3)(var1);
+                    var0.newForumThreadsCreated = var1;
+                    return var0;
+                };
+                var1 = var5.bind(var6)(var2, var1);
+                var9 = var1.muted;
+                var10 = var1.guildMuted;
+                var11 = var1.newForumThreadsCreated;
+                var _closure2_slot3 = var11;
+                var2 = _closure1_slot5;
+                var1 = _closure1_slot3;
+                var0 = {};
+                var4 = var4.style;
+                var0.style = var4;
+                var4 = 5;
+                var4 = var16[var4];
+                var4 = var15.bind(var3)(var4);
+                var5 = var4.TableRowGroup;
+                var4 = {};
+                var12 = 6;
+                var6 = var16[var12];
+                var6 = var15.bind(var3)(var6);
+                var13 = var6.intl;
+                var7 = var13.string;
+                var6 = var16[var12];
+                var6 = var15.bind(var3)(var6);
+                var6 = var6.t;
+                var6 = var6.bK11jO;
+                var6 = var7.bind(var13)(var6);
+                var4.title = var6;
+                var6 = 7;
+                var6 = var16[var6];
+                var6 = var15.bind(var3)(var6);
+                var7 = var6.TableCheckboxRow;
+                var6 = {};
+                var13 = var16[var12];
+                var13 = var15.bind(var3)(var13);
+                var14 = var13.intl;
+                var13 = var14.string;
+                var12 = var16[var12];
+                var12 = var15.bind(var3)(var12);
+                var12 = var12.t;
+                var12 = var12.Rkgjph;
+                var12 = var13.bind(var14)(var12);
+                var6.label = var12;
+                var6.checked = var11;
+                if (var9) {
+                    _fun69852_ip = 279;
+                    continue _fun69852
+                }
+            case 276:
+                var9 = var10;
+            case 279:
+                var6.disabled = var9;
+                var8 = function() { // Original name: onPress, environment: var8
+                    var2 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 8;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var4 = var2.bind(var0)(var1);
+                    var3 = var4.setForumThreadsCreated;
+                    var2 = _closure2_slot0;
+                    var2 = var2.channel;
+                    var1 = _closure2_slot3;
+                    var1 = !var1;
+                    var1 = var3.bind(var4)(var2, var1);
+                    return var0;
+                };
+                var6.onPress = var8;
+                var6 = var2.bind(var3)(var7, var6);
+                var4.children = var6;
+                var4 = var2.bind(var3)(var5, var4);
+                var0.children = var4;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var2.NotificationSettingsChannelPost = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 27, 4260, 33, 566, 5320, 1234, 8728, 4654, 2]);

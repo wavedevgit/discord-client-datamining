@@ -1,0 +1,83 @@
+// modules/settings/native/renderer/SettingRendererConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var7 = require;
+    var2 = exports;
+    var8 = dependencyMap;
+    var1 = global;
+    var5 = var1.Object;
+    var4 = var5.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var4.bind(var5)(var2, var0, var3);
+    var0 = 0;
+    var3 = var8[var0];
+    var0 = undefined;
+    var3 = var7.bind(var0)(var3);
+    var3 = var3.TABLE_ROW_HEIGHT;
+    var5 = {};
+    var4 = 'route';
+    var5.ROUTE = var4;
+    var4 = 'pressable';
+    var5.PRESSABLE = var4;
+    var4 = 'toggle';
+    var5.TOGGLE = var4;
+    var4 = 'static';
+    var5.STATIC = var4;
+    var4 = 'radio';
+    var5.RADIO = var4;
+    var4 = 'volume_slider';
+    var5.VOLUME_SLIDER = var4;
+    var4 = 'slider';
+    var5.SLIDER = var4;
+    var4 = 'guild_selector';
+    var5.GUILD_SELECTOR = var4;
+    var4 = 'list';
+    var5.LIST = var4;
+    var4 = 'segmented_control';
+    var5.SEGMENTED_CONTROL = var4;
+    var4 = {};
+    var6 = 'section_header';
+    var4.SECTION_HEADER = var6;
+    var6 = 'section_footer';
+    var4.SECTION_FOOTER = var6;
+    var6 = 'section_row';
+    var4.SECTION_ROW = var6;
+    var6 = 'section_row_placeholder';
+    var4.SECTION_ROW_PLACEHOLDER = var6;
+    var6 = 'setting_search_result';
+    var4.SETTING_SEARCH_RESULT = var6;
+    var9 = var1.Set;
+    var6 = var5.ROUTE;
+    var1 = new Array(3);
+    var1[0] = var6;
+    var6 = var5.PRESSABLE;
+    var1[1] = var6;
+    var6 = var5.STATIC;
+    var1[2] = var6;
+    var6 = var9.prototype;
+    var6 = Object.create(var6, {
+        constructor: {
+            value: var9
+        }
+    });
+    var13 = var6;
+    var12 = var1;
+    var1 = new var13[var9](var12, var11);
+    var1 = var1 instanceof Object ? var1 : var6;
+    var6 = 1;
+    var6 = var8[var6];
+    var8 = var7.bind(var0)(var6);
+    var7 = var8.fileFinishedImporting;
+    var6 = 'modules/settings/native/renderer/SettingRendererConstants.tsx';
+    var6 = var7.bind(var8)(var6);
+    var6 = '0';
+    var2.GUILD_SELECT_ALL_SERVERS_OPTION_ID = var6;
+    var2.NodeType = var5;
+    var2.ListItemType = var4;
+    var2.SETTINGS_LIST_ITEM_ESTIMATED_SIZE = var3;
+    var2.SUPPORTED_SEARCH_RESULT_NO_PARENT_RENDERER_TYPES = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [4826, 2]);

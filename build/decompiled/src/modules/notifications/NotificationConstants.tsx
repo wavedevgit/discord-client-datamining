@@ -1,0 +1,45 @@
+// modules/notifications/NotificationConstants.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var2 = exports;
+    var0 = global;
+    var4 = var0.Object;
+    var3 = var4.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var3.bind(var4)(var2, var0, var1);
+    var3 = {};
+    var1 = 16;
+    var3.USE_NEW_NOTIFICATIONS = var1;
+    var0 = 'USE_NEW_NOTIFICATIONS';
+    var3[var1] = var0;
+    var1 = 32;
+    var3.MENTION_ON_ALL_MESSAGES = var1;
+    var0 = 'MENTION_ON_ALL_MESSAGES';
+    var3[var1] = var0;
+    var1 = {};
+    var0 = 'guild';
+    var1.GUILD = var0;
+    var0 = 'channel';
+    var1.CHANNEL = var0;
+    var0 = 'account';
+    var1.ACCOUNT = var0;
+    var0 = 'authorized_app_dm';
+    var1.AUTHORIZED_APP_DM = var0;
+    var0 = 'authorized_app_dm_push_notification';
+    var1.AUTHORIZED_APP_DM_PUSH_NOTIFICATION = var0;
+    var4 = dependencyMap;
+    var0 = 0;
+    var5 = var4[var0];
+    var4 = require;
+    var0 = undefined;
+    var6 = var4.bind(var0)(var5);
+    var5 = var6.fileFinishedImporting;
+    var4 = 'modules/notifications/NotificationConstants.tsx';
+    var4 = var5.bind(var6)(var4);
+    var2.AccountNotificationFlags = var3;
+    var2.NotificationSettingsUpdateType = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [2]);

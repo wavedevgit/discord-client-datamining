@@ -1,0 +1,217 @@
+// modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var13 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var13;
+    var _closure1_slot2 = var5;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var3);
+    var0 = 0;
+    var6 = var5[var0];
+    var3 = metroImportAll;
+    var0 = undefined;
+    var7 = var3.bind(var0)(var6);
+    var11 = 1;
+    var3 = var5[var11];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.dismissUpsellCTA;
+    var _closure1_slot3 = var3;
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var6 = var3.AnalyticEvents;
+    var _closure1_slot4 = var6;
+    var3 = var3.AnalyticsSections;
+    var _closure1_slot5 = var3;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot6 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var9 = var4.bind(var0)(var3);
+    var8 = var9.createStyles;
+    var6 = {};
+    var10 = {};
+    var3 = 12;
+    var10.padding = var3;
+    var12 = 5;
+    var14 = var5[var12];
+    var14 = var13.bind(var0)(var14);
+    var14 = var14.radii;
+    var14 = var14.sm;
+    var10.borderRadius = var14;
+    var12 = var5[var12];
+    var12 = var13.bind(var0)(var12);
+    var12 = var12.colors;
+    var12 = var12.BACKGROUND_SURFACE_HIGH;
+    var10.backgroundColor = var12;
+    var6.container = var10;
+    var10 = {};
+    var10.flex = var11;
+    var6.textContainer = var10;
+    var6 = var8.bind(var9)(var6);
+    var _closure1_slot7 = var6;
+    var6 = var7.memo;
+    var1 = function(arg0) { // Original name: ContactSyncUpsellCTA, environment: var1
+        var0 = arg0;
+        var6 = var0.style;
+        var0 = var0.location;
+        var _closure2_slot0 = var0;
+        var0 = _closure1_slot7;
+        var3 = undefined;
+        var5 = var0.bind(var3)();
+        var2 = _closure1_slot6;
+        var7 = _closure1_slot0;
+        var8 = _closure1_slot2;
+        var0 = 6;
+        var0 = var8[var0];
+        var0 = var7.bind(var3)(var0);
+        var1 = var0.FormCTA;
+        var0 = {};
+        var10 = function() { // Original name: onPress, environment: var9
+            _fun96581: for (var _fun96581_ip = 0;;) switch (_fun96581_ip) {
+                case 0:
+                    var3 = _closure1_slot1;
+                    var1 = _closure1_slot2;
+                    var0 = 7;
+                    var1 = var1[var0];
+                    var0 = undefined;
+                    var8 = var3.bind(var0)(var1);
+                    var6 = var8.track;
+                    var1 = _closure1_slot4;
+                    var4 = var1.OPEN_MODAL;
+                    var3 = {};
+                    var1 = _closure1_slot5;
+                    var1 = var1.CONTACT_SYNC_MODAL;
+                    var3.type = var1;
+                    var9 = {};
+                    var1 = _closure2_slot0;
+                    var7 = null;
+                    var11 = var7 != var1;
+                    var1 = 'Friends List Upsell';
+                    var10 = var1;
+                    if (!var11) {
+                        _fun96581_ip = 87;
+                        continue _fun96581
+                    }
+                case 83:
+                    var10 = _closure2_slot0;
+                case 87:
+                    var9.page = var10;
+                    var3.location = var9;
+                    var3 = var6.bind(var8)(var4, var3);
+                    var3 = _closure1_slot0;
+                    var4 = _closure1_slot2;
+                    var2 = 8;
+                    var2 = var4[var2];
+                    var4 = var3.bind(var0)(var2);
+                    var3 = var4.openContactSyncModal;
+                    var2 = {};
+                    var6 = _closure2_slot0;
+                    var6 = var7 != var6;
+                    if (!var6) {
+                        _fun96581_ip = 145;
+                        continue _fun96581
+                    }
+                case 141:
+                    var1 = _closure2_slot0;
+                case 145:
+                    var2.page = var1;
+                    var1 = {};
+                    var1 = var3.bind(var4)(var1, var2);
+                    return var0;
+            }
+        };
+        var0.onPress = var10;
+        var9 = function() { // Original name: onLongPress, environment: var9
+            var8 = _closure1_slot0;
+            var9 = _closure1_slot2;
+            var0 = 9;
+            var1 = var9[var0];
+            var0 = undefined;
+            var3 = var8.bind(var0)(var1);
+            var2 = var3.showSimpleActionSheet;
+            var1 = {};
+            var4 = 'ContactSyncUpsellLongPress';
+            var1.key = var4;
+            var5 = {};
+            var4 = 10;
+            var6 = var9[var4];
+            var6 = var8.bind(var0)(var6);
+            var7 = var6.intl;
+            var6 = var7.string;
+            var4 = var9[var4];
+            var4 = var8.bind(var0)(var4);
+            var4 = var4.t;
+            var4 = var4.WAI6xu;
+            var4 = var6.bind(var7)(var4);
+            var5.label = var4;
+            var4 = function() { // Original name: onPress, environment: var4
+                var1 = _closure1_slot3;
+                var0 = undefined;
+                var1 = var1.bind(var0)();
+                return var0;
+            };
+            var5.onPress = var4;
+            var4 = new Array(1);
+            var4[0] = var5;
+            var1.options = var4;
+            var1 = var2.bind(var3)(var1);
+            return var0;
+        };
+        var0.onLongPress = var9;
+        var9 = var5.container;
+        var5 = new Array(2);
+        var5[0] = var9;
+        var5[1] = var6;
+        var0.style = var5;
+        var5 = _closure1_slot1;
+        var4 = 11;
+        var4 = var8[var4];
+        var4 = var5.bind(var3)(var4);
+        var0.iconSource = var4;
+        var4 = 10;
+        var5 = var8[var4];
+        var5 = var7.bind(var3)(var5);
+        var9 = var5.intl;
+        var6 = var9.string;
+        var5 = var8[var4];
+        var5 = var7.bind(var3)(var5);
+        var5 = var5.t;
+        var5 = var5.T6Rfd9;
+        var5 = var6.bind(var9)(var5);
+        var0.title = var5;
+        var5 = var8[var4];
+        var5 = var7.bind(var3)(var5);
+        var6 = var5.intl;
+        var5 = var6.string;
+        var4 = var8[var4];
+        var4 = var7.bind(var3)(var4);
+        var4 = var4.t;
+        var4 = var4.c6KIpg;
+        var4 = var5.bind(var6)(var4);
+        var0.subtitle = var4;
+        var0 = var2.bind(var3)(var1, var0);
+        return var0;
+    };
+    var1 = var6.bind(var7)(var1);
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.default = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [31, 10215, 660, 33, 1297, 671, 5335, 795, 10346, 7689, 1234, 12522, 2]);

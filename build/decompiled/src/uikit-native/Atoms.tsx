@@ -1,0 +1,46 @@
+// uikit-native/Atoms.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var3 = require;
+    var5 = metroImportDefault;
+    var2 = exports;
+    var4 = dependencyMap;
+    var0 = global;
+    var7 = var0.Object;
+    var6 = var7.defineProperty;
+    var1 = {};
+    var0 = true;
+    var1.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var7)(var2, var0, var1);
+    var1 = 0;
+    var6 = var4[var1];
+    var0 = undefined;
+    var6 = var3.bind(var0)(var6);
+    var6 = var6.TextInput;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.TextInputProps;
+    var7 = 1;
+    var7 = var4[var7];
+    var9 = var3.bind(var0)(var7);
+    var8 = var9.fileFinishedImporting;
+    var7 = 'uikit-native/Atoms.tsx';
+    var7 = var8.bind(var9)(var7);
+    var2.RNTextInput = var6;
+    var2.TextInputProps = var1;
+    var1 = 2;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.LegacyText = var1;
+    var1 = 3;
+    var1 = var4[var1];
+    var1 = var5.bind(var0)(var1);
+    var2.TextInput = var1;
+    var1 = 4;
+    var1 = var4[var1];
+    var1 = var3.bind(var0)(var1);
+    var1 = var1.Text;
+    var2.Text = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [27, 2, 1295, 4833, 4835]);

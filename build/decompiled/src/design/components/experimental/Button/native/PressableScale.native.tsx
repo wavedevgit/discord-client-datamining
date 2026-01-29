@@ -1,0 +1,129 @@
+// design/components/experimental/Button/native/PressableScale.native.tsx
+// @ts-nocheck
+export default (function(global, require, metroImportDefault, metroImportAll, module, exports, dependencyMap) {
+    var4 = require;
+    var7 = metroImportDefault;
+    var2 = exports;
+    var5 = dependencyMap;
+    var _closure1_slot0 = var4;
+    var _closure1_slot1 = var5;
+    var0 = ['style'];
+    var _closure1_slot2 = var0;
+    var0 = global;
+    var8 = var0.Object;
+    var6 = var8.defineProperty;
+    var3 = {};
+    var0 = true;
+    var3.value = var0;
+    var0 = '__esModule';
+    var0 = var6.bind(var8)(var2, var0, var3);
+    var0 = 0;
+    var3 = var5[var0];
+    var0 = undefined;
+    var3 = var7.bind(var0)(var3);
+    var _closure1_slot3 = var3;
+    var3 = 1;
+    var6 = var5[var3];
+    var3 = metroImportAll;
+    var6 = var3.bind(var0)(var6);
+    var3 = 2;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var8 = var3.Pressable;
+    var3 = 3;
+    var3 = var5[var3];
+    var3 = var4.bind(var0)(var3);
+    var3 = var3.jsx;
+    var _closure1_slot4 = var3;
+    var3 = 4;
+    var3 = var5[var3];
+    var7 = var7.bind(var0)(var3);
+    var3 = var7.createAnimatedComponent;
+    var3 = var3.bind(var7)(var8);
+    var _closure1_slot5 = var3;
+    var3 = var6.forwardRef;
+    var1 = function(arg0, arg1) { // Environment: var1
+        _fun57336: for (var _fun57336_ip = 0;;) switch (_fun57336_ip) {
+            case 0:
+                var2 = arg0;
+                var4 = var2.style;
+                var10 = var2.scaleAmountInPx;
+                var3 = undefined;
+                if (!(var10 === var3)) {
+                    _fun57336_ip = 23;
+                    continue _fun57336
+                }
+            case 20:
+                var10 = 8;
+            case 23:
+                var9 = var2.onLayout;
+                var14 = var2.onPressIn;
+                var13 = var2.onPressOut;
+                var1 = {
+                    'style': 0,
+                    'scaleAmountInPx': 0,
+                    'onLayout': 0,
+                    'onPressIn': 0,
+                    'onPressOut': 0
+                };
+                var16 = null;
+                var17 = var1;
+                var0 = silentSetPrototypeOf(var17, var16);
+                var12 = 0;
+                var17 = {};
+                var16 = var2;
+                var15 = var1;
+                var5 = copyDataProperties(var17, var16, var15);
+                var2 = _closure1_slot0;
+                var11 = _closure1_slot1;
+                var1 = 4;
+                var1 = var11[var1];
+                var6 = var2.bind(var3)(var1);
+                var1 = var6.useSharedValue;
+                var6 = var1.bind(var6)(var12);
+                var1 = 5;
+                var1 = var11[var1];
+                var2 = var2.bind(var3)(var1);
+                var1 = var2.useButtonPressAnimationProps;
+                var18 = var2;
+                var17 = var6;
+                var16 = var10;
+                var15 = var9;
+                var7 = var18[var1](var17, var16, var15, var14, var13, var12);
+                var6 = var7.style;
+                var2 = _closure1_slot3;
+                var1 = _closure1_slot2;
+                var16 = var2.bind(var3)(var7, var1);
+                var2 = _closure1_slot4;
+                var1 = _closure1_slot5;
+                var0 = {};
+                var17 = var0;
+                var7 = copyDataProperties(var17, var16);
+                var17 = var0;
+                var16 = var5;
+                var5 = copyDataProperties(var17, var16);
+                var7 = arg1;
+                var5 = 'ref';
+                var0[var5] = var7;
+                var7 = 'button';
+                var5 = 'accessibilityRole';
+                var0[var5] = var7;
+                var5 = new Array(2);
+                var5[0] = var6;
+                var5[1] = var4;
+                var4 = 'style';
+                var0[var4] = var5;
+                var0 = var2.bind(var3)(var1, var0);
+                return var0;
+        }
+    };
+    var1 = var3.bind(var6)(var1);
+    var3 = 6;
+    var3 = var5[var3];
+    var5 = var4.bind(var0)(var3);
+    var4 = var5.fileFinishedImporting;
+    var3 = 'design/components/experimental/Button/native/PressableScale.native.tsx';
+    var3 = var4.bind(var5)(var3);
+    var2.PressableScale = var1;
+    return var0;
+})(undefined, undefined, undefined, undefined, undefined, undefined, [29, 31, 27, 33, 3677, 4042, 2]);
