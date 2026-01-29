@@ -1,10 +1,9 @@
-name: Scrape discord Web
+name: Scrape discord android
 
 on:
     schedule:
         - cron: '*/5 * * * *'
     workflow_dispatch:
-
 jobs:
     build:
         permissions:
@@ -23,11 +22,20 @@ jobs:
               with:
                   node-version: '24.x'
             - run: npm init -y
+            - name: Install Java
+              run: sudo apt-get update && sudo apt-get install -y openjdk-17-jdk wget unzip
+
+            - name: Install APKTool
+              run: |
+                  wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
+                  wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.7.7.jar -O apktool.jar
+                  chmod +x apktool
+                  sudo mv apktool /usr/local/bin/
+                  sudo mv apktool.jar /usr/local/bin/
+
             - name: Run script
               run: |
                   npm i && npm run build && npm run start
-                  npx js-beautify "build/chunks/*.js" -r
-                  npx js-beautify "build/assets/*.css" -r
             - name: set email
               run: |
                   git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"

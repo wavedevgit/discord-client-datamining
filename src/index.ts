@@ -1,3 +1,4 @@
+import decompile from './tasks/decompile.js';
 import downloadApk from './tasks/download-apk.js';
 import { Build } from './types.js';
 import { convertMillisHumanReadable, perf, writeFile } from './utils/index.js';
@@ -13,7 +14,13 @@ async function main() {
         tasks,
     );
 
-    await perf<void>('decompile hermes bytecode', async () => {}, tasks);
+    await perf<void>(
+        'decompile hermes bytecode',
+        async () => {
+            await decompile(build);
+        },
+        tasks,
+    );
 
     await writeFile('./build/build.json', build);
     console.table(
