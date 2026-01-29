@@ -1,0 +1,56 @@
+name: Scrape discord android
+
+on:
+    schedule:
+        - cron: '*/5 * * * *'
+    workflow_dispatch:
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            packages: write
+            pull-requests: write
+            issues: write
+            statuses: write
+            deployments: write
+
+        steps:
+            - name: Checkout discord_android branch
+              uses: actions/checkout@v4
+              with:
+                  ref: discord_android
+
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '24.x'
+
+            - name: Install npm dependencies
+              run: npm install
+
+            - name: Install Java
+              run: sudo apt-get update && sudo apt-get install -y openjdk-17-jdk wget unzip
+
+            - name: Install APKTool
+              run: |
+                  wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O apktool
+                  wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.7.7.jar -O apktool.jar
+                  chmod +x apktool
+                  sudo mv apktool /usr/local/bin/
+                  sudo mv apktool.jar /usr/local/bin/
+
+            - name: Run script
+              run: npm run build && npm run start
+
+            - name: Set git identity
+              run: |
+                  git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git config --local user.name "github-actions[bot]"
+
+            - name: Commit & push changes
+              run: |
+                  git add --all
+                  git diff-index --quiet HEAD || git commit -am "✨New build $(node getBuildInfo.js)"
+                  git push
