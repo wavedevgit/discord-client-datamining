@@ -37,9 +37,7 @@ let f = {
     open() {
         let e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : null,
             t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
-            n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {
-                openWithoutBackstack: !1
-            };
+            n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
         a.h.dispatch(d({
             type: "USER_SETTINGS_MODAL_OPEN",
             section: e,
