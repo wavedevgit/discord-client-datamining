@@ -1,33 +1,33 @@
 /** Chunk was on 87916 **/
-/** chunk id: 721127, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => c
+/** chunk id: 721127, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => l
 });
-var a = n(627968);
-n(64700);
-var i = n(503698),
-    s = n.n(i),
-    r = n(397927),
-    l = n(404374),
-    o = n(468099);
+var n = a(627968);
+a(64700);
+var i = a(503698),
+    c = a.n(i),
+    o = a(397927),
+    r = a(404374),
+    s = a(468099);
 
-function c(e) {
+function l(e) {
     let {
         text: t,
-        className: n,
+        className: a,
         button: i,
-        reducedRightPadding: c = !1
+        reducedRightPadding: l = !1
     } = e;
-    return (0, a.jsxs)("div", {
-        className: s()(c ? o.wp : o.Ug, n),
-        children: [(0, a.jsxs)("div", {
-            className: o.g9,
-            children: [(0, a.jsx)(r.tvc, {
+    return (0, n.jsxs)("div", {
+        className: c()(l ? s.wp : s.Ug, a),
+        children: [(0, n.jsxs)("div", {
+            className: s.g9,
+            children: [(0, n.jsx)(o.tvc, {
                 size: "md",
-                className: o.Kk,
-                color: l.k0.PREMIUM_TIER_2
-            }), (0, a.jsx)(r.Text, {
-                className: o.Qq,
+                className: s.Kk,
+                color: r.k0.PREMIUM_TIER_2
+            }), (0, n.jsx)(o.Text, {
+                className: s.Qq,
                 variant: "text-md/normal",
                 color: "text-strong",
                 children: t

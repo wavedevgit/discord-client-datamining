@@ -1,29 +1,29 @@
 /** Chunk was on 87916 **/
-/** chunk id: 504974, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => l
+/** chunk id: 504974, original params: e,t,a (module,exports,require) **/
+a.d(t, {
+    A: () => r
 });
-var a = n(627968);
-n(64700);
-var i = n(515598),
-    s = n(719335),
-    r = n(339984);
+var n = a(627968);
+a(64700);
+var i = a(515598),
+    c = a(719335),
+    o = a(339984);
 
-function l(e) {
+function r(e) {
     let {
         type: t,
-        analyticsPage: n,
-        analyticsSection: l,
-        isGIF: o,
-        banner: c
+        analyticsPage: a,
+        analyticsSection: r,
+        isGIF: s,
+        banner: l
     } = e;
-    return [r.HL.BANNER, r.HL.AVATAR].includes(t) && o ? (0, a.jsx)(s.A, {
-        analyticsSection: l,
+    return [o.HL.BANNER, o.HL.AVATAR].includes(t) && s ? (0, n.jsx)(c.A, {
+        analyticsSection: r,
         type: t
-    }) : t === r.HL.GUILD_BANNER ? (0, a.jsx)(i.A, {
-        analyticsSection: l,
-        analyticsPage: n,
-        isGIF: o,
-        banner: c
+    }) : t === o.HL.GUILD_BANNER ? (0, n.jsx)(i.A, {
+        analyticsSection: r,
+        analyticsPage: a,
+        isGIF: s,
+        banner: l
     }) : null
 }
