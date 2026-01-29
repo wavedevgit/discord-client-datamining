@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(147036),
     L = n(557534),
     k = n(68437),
-    U = n(166444),
-    G = n(588224),
+    G = n(166444),
+    U = n(588224),
     B = n(652215),
     V = n(349828),
     F = n(985018),
@@ -114,7 +114,7 @@ class q extends L.Ay {
             speakerVoiceStates: l,
             numAudience: i
         } = this.props;
-        return (0, r.jsx)(G.A, {
+        return (0, r.jsx)(U.A, {
             channel: e,
             voiceStates: l,
             collapsed: t,
@@ -160,7 +160,7 @@ class q extends L.Ay {
                 shouldShow: j,
                 children: () => (0, r.jsx)(c.m, {
                     text: this.getTooltipText(),
-                    children: (0, r.jsxs)(U.Ay, {
+                    children: (0, r.jsxs)(G.Ay, {
                         ref: this.channelItemRef,
                         className: H.Ki,
                         iconClassName: s()({

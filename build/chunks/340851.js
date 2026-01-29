@@ -40,9 +40,9 @@ var r = n(627968),
     M = n(544105),
     L = n(502075),
     k = n(985018),
-    U = n(861379);
+    G = n(861379);
 
-function G(e) {
+function U(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -79,7 +79,7 @@ function V(e) {
         numUsers: t
     } = e;
     return (0, r.jsx)("div", {
-        className: U.BN,
+        className: G.BN,
         children: (0, r.jsxs)(o.Text, {
             color: "text-muted",
             variant: "text-sm/medium",
@@ -96,15 +96,15 @@ function F(e) {
         count: t
     });
     return (0, r.jsxs)("div", {
-        className: s()(U.yJ, {
-            [U.Nr]: n
+        className: s()(G.yJ, {
+            [G.Nr]: n
         }),
         children: [(0, r.jsx)("div", {
-            className: U.$L,
+            className: G.$L,
             children: (0, r.jsx)(o.LoC, {
                 size: "md",
                 color: "currentColor",
-                className: U.wG
+                className: G.wG
             })
         }), (0, r.jsx)(o.Text, {
             color: "text-muted",
@@ -159,10 +159,10 @@ let H = (0, h.J)(function(e) {
         location: "VoiceUser"
     }), ej = l.useRef(null), [ev, ex] = l.useState(!1), eE = l.useRef(null), [eC, eS] = l.useState(!1), [eI, eN] = l.useState(!1), [eT, eP] = l.useState(!1), [ew, eR] = l.useState(!1), eD = eI || ew || eT, eM = eC || eD, eL = (null == ey ? void 0 : ey.session_id) != null, ek = () => {
         ex(!ev)
-    }, eU = (e, t) => {
+    }, eG = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
-        null != t && n.has(t) && (eT && eP(!1), eI && eN(!1)), eG()
-    }, eG = () => {
+        null != t && n.has(t) && (eT && eP(!1), eI && eN(!1)), eU()
+    }, eU = () => {
         null == eo || eo(h.id)
     }, eB = e => {
         (!eO || em) && (e ? eE.current = setTimeout(() => {
@@ -188,7 +188,7 @@ let H = (0, h.J)(function(e) {
                 let {
                     default: e
                 } = await Promise.all([n.e("97262"), n.e("29534"), n.e("55296"), n.e("84841"), n.e("52458")]).then(n.bind(n, 107632));
-                return t => (0, r.jsx)(e, B(G({}, t), {
+                return t => (0, r.jsx)(e, B(U({}, t), {
                     user: h,
                     guildId: V.guild_id,
                     channel: V,
@@ -200,11 +200,11 @@ let H = (0, h.J)(function(e) {
                 }))
             })
         },
-        eK = e => em ? (0, r.jsx)(v.h, B(G({}, e), {
+        eK = e => em ? (0, r.jsx)(v.h, B(U({}, e), {
             channel: V,
             setIsHangStatusInputFocused: eN,
             setIsEmojiPickerOpen: eR
-        })) : null != eA ? (0, r.jsx)(x.E, B(G({}, e), {
+        })) : null != eA ? (0, r.jsx)(x.E, B(U({}, e), {
             hangStatusActivity: eA,
             channel: V,
             userId: h.id
@@ -221,12 +221,12 @@ let H = (0, h.J)(function(e) {
             location: eg
         }),
         eY = (0, r.jsx)("div", {
-            className: U.kZ,
+            className: G.kZ,
             "data-dnd-name": V.name,
             onMouseEnter: eh ? void 0 : () => {
                 eO ? (em && e_ && !ev && !eM && eS(!0), ev || null == ea || ea(h.id)) : (er || e_ || eL) && !ev && (null == ea || ea(h.id))
             },
-            onMouseLeave: eh ? void 0 : eG,
+            onMouseLeave: eh ? void 0 : eU,
             children: (0, r.jsx)(C.A, {
                 clickTrap: (null == h ? void 0 : h.id) === (null == (t = P.default.getCurrentUser()) ? void 0 : t.id) && ev,
                 targetElementRef: ej,
@@ -262,7 +262,7 @@ let H = (0, h.J)(function(e) {
                             voicePlatform: ep,
                             embeddedApplication: Y,
                             avatarContainerClass: s()({
-                                [U.dj]: !0
+                                [G.dj]: !0
                             }),
                             disabled: eh && !t,
                             selected: ev,
@@ -280,7 +280,7 @@ let H = (0, h.J)(function(e) {
                         var l;
                         return (0, r.jsx)(a.m, {
                             text: null != (l = (0, A.A)(ed)) ? l : k.intl.string(k.t.IyYqqY),
-                            children: (0, r.jsx)(S.Ay, G({
+                            children: (0, r.jsx)(S.Ay, U({
                                 ref: ej
                             }, n))
                         })
@@ -289,7 +289,7 @@ let H = (0, h.J)(function(e) {
                     return e_ && eM && (!eO || em) ? c = eK : eO ? c = em && e_ ? eK : () => (0, r.jsx)(D.A, {
                         channel: V,
                         user: h,
-                        onAction: eG,
+                        onAction: eU,
                         onWatchStream: er ? eF : void 0,
                         previewIsOpen: eu,
                         hangStatusActivity: eA
@@ -298,10 +298,10 @@ let H = (0, h.J)(function(e) {
                         position: "right",
                         renderPopout: c,
                         shouldShow: (ec || e_ && eD && (!eO || em)) && !ev,
-                        onRequestClose: eU,
+                        onRequestClose: eG,
                         align: e_ && eM && !em && !eO ? "center" : void 0,
                         spacing: e_ && eM && (!eO || em) ? 8 : 0,
-                        children: () => (0, r.jsx)(S.Ay, B(G({}, n), {
+                        children: () => (0, r.jsx)(S.Ay, B(U({}, n), {
                             ref: ej,
                             onMouseDown: e.onMouseDown,
                             onKeyDown: e.onKeyDown,

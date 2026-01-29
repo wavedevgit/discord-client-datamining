@@ -4,9 +4,9 @@ n.d(t, {
     HW: () => L,
     K8: () => F,
     UB: () => k,
-    bo: () => G,
+    bo: () => U,
     jz: () => B,
-    lw: () => U,
+    lw: () => G,
     mn: () => V
 });
 var r = n(627968);
@@ -101,7 +101,7 @@ function k(e) {
     })
 }
 
-function U(e) {
+function G(e) {
     let {
         guildId: t,
         powerups: n,
@@ -152,7 +152,7 @@ function U(e) {
     })
 }
 
-function G(e) {
+function U(e) {
     let {
         guildId: t,
         powerups: n,

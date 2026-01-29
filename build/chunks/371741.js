@@ -40,8 +40,8 @@ var r = n(627968),
     M = n(522871),
     L = n(699352),
     k = n(426153),
-    U = n(444529),
-    G = n(241874),
+    G = n(444529),
+    U = n(241874),
     B = n(91624),
     V = n(653008),
     F = n(162792),
@@ -151,7 +151,7 @@ function $(e) {
             [Y.H4]: !0,
             [Y._A]: !0
         }),
-        childrenHeader: (0, G.A)({
+        childrenHeader: (0, U.A)({
             messageProps: e,
             setPopout: m,
             messagePopouts: g,
@@ -185,7 +185,7 @@ function ee(e) {
         viewingChannelId: E
     } = e, I = a.type === W.lAJ.REPLY ? a.messageReference : void 0, M = (0, c.rm)(null != (t = e.id) ? t : ""), {
         onFocus: k
-    } = M, U = Q(M, ["onFocus"]), {
+    } = M, G = Q(M, ["onFocus"]), {
         isFocused: V,
         handleFocus: q,
         handleBlur: Z
@@ -226,7 +226,7 @@ function ee(e) {
             onClick: eO,
             "aria-label": z.intl.string(z.t.k5WiPf),
             children: z.intl.string(z.t.k5WiPf)
-        }), (0, r.jsx)(N.A, J(X({}, U), {
+        }), (0, r.jsx)(N.A, J(X({}, G), {
             id: i,
             compact: _,
             className: s()(j, {
@@ -250,7 +250,7 @@ function ee(e) {
                 replyMessage: el,
                 isReplySpineClickable: !0
             })),
-            childrenHeader: (0, G.A)({
+            childrenHeader: (0, U.A)({
                 messageProps: e,
                 setPopout: et,
                 messagePopouts: $,
@@ -359,15 +359,15 @@ let et = l.memo(function(e) {
             allowDevLinks: eD,
             previewLinkTarget: !0
         }),
-        eU = (0, w.A)(q, $, eI),
-        eG = (0, S.Ay)(E),
+        eG = (0, w.A)(q, $, eI),
+        eU = (0, S.Ay)(E),
         eB = (0, u.bG)([m.A], () => m.A.getPendingReply($)),
         eV = (i = l.useRef(en), l.useEffect(() => {
             i.current = null != en ? en : i.current
         }), null != en ? en : i.current),
         eF = (0, f.$7)({
             guildId: Z.guild_id,
-            roleId: eG.iconRoleId
+            roleId: eU.iconRoleId
         }),
         eH = (0, T.fF)(E, er),
         eK = (0, T.ZD)(E),
@@ -397,7 +397,7 @@ let et = l.memo(function(e) {
                     onFocus: eE,
                     onBlur: eC,
                     onContextMenu: eg,
-                    onKeyDown: eU,
+                    onKeyDown: eG,
                     onClick: em,
                     compact: ee,
                     contentOnly: el,
@@ -424,12 +424,12 @@ let et = l.memo(function(e) {
                         isReplySpineClickable: !0
                     })),
                     childrenExecutedCommand: (0, V.A)(e, ef, ep),
-                    childrenHeader: el ? void 0 : (0, G.A)({
+                    childrenHeader: el ? void 0 : (0, U.A)({
                         messageProps: e,
                         setPopout: ef,
                         messagePopouts: ep,
                         replyReference: ei,
-                        author: eG,
+                        author: eU,
                         repliedMessage: ed,
                         roleIcon: eF
                     }),
@@ -442,7 +442,7 @@ let et = l.memo(function(e) {
                         isAutomodBlockedMessage: eq,
                         forceAddReactions: E.type === W.lAJ.EMOJI_ADDED
                     }),
-                    childrenButtons: ey || ej ? (0, U.A)({
+                    childrenButtons: ey || ej ? (0, G.A)({
                         buttonProps: e,
                         setPopout: ef,
                         messagePopouts: ep,
@@ -460,7 +460,7 @@ let et = l.memo(function(e) {
                         var t, n;
                         ez.current = e, eY.current = null != (t = null == e || null == (n = e.ownerDocument) ? void 0 : n.defaultView) ? t : window
                     },
-                    author: eG
+                    author: eU
                 }))
             })
         });

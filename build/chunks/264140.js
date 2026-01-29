@@ -39,8 +39,8 @@ var A = n(483270),
     M = n(268218),
     L = n(726249),
     k = n(274146),
-    U = n(826673),
-    G = n(795766),
+    G = n(826673),
+    U = n(795766),
     B = n(713842),
     V = n(91242),
     F = n(857253),
@@ -93,8 +93,8 @@ var A = n(483270),
     eM = n(709544),
     eL = n(761640),
     ek = n(734057),
-    eU = n(31717),
-    eG = n(919638),
+    eG = n(31717),
+    eU = n(919638),
     eB = n(71393),
     eV = n(290863),
     eF = n(383501),
@@ -486,7 +486,7 @@ class tl extends l.PureComponent {
                     },
                     className: e4.x4,
                     channel: e,
-                    draftType: eU.C.ChannelMessage
+                    draftType: eG.C.ChannelMessage
                 }) : null, h || u ? null : this.renderHeaderBar(), this.renderCall(), this.renderEmbeddedActivityPanel(), (0, r.jsxs)("div", {
                     className: s()(e4.Qs, {
                         [e4.Oo]: i === e1.DUB.NO_CHAT
@@ -639,7 +639,7 @@ class tl extends l.PureComponent {
                     break;
                 case e1.rbe.GUILD_ANNOUNCEMENT:
                 case e1.rbe.GUILD_TEXT:
-                    a.push((0, r.jsx)(G.A, {
+                    a.push((0, r.jsx)(U.A, {
                         channel: e
                     }, "favorites")), a.push((0, r.jsx)(eE.A, {
                         channel: e
@@ -816,9 +816,9 @@ let ti = (0, _.A)(tl),
         }, [M, c, P, w]);
         let L = (0, p.bG)([v.Ay], () => v.Ay.getCurrentEmbeddedActivity()),
             k = (0, p.bG)([v.Ay], () => v.Ay.getActivityPanelMode()),
-            G = null != L && !(0, E.A)(null == c ? void 0 : c.id) && k === e9.Gd.PANEL,
+            U = null != L && !(0, E.A)(null == c ? void 0 : c.id) && k === e9.Gd.PANEL,
             B = (0, p.bG)([ez.A], () => null != c && c.isVocalThread() && !u().isEmpty(ez.A.getVoiceStatesForChannel(c.id)), [c]),
-            H = null != c && c.isPrivate() && !G && x,
+            H = null != c && c.isPrivate() && !U && x,
             K = (null == c ? void 0 : c.isGuildVocal()) || H || B,
             W = (0, p.bG)([V.A], () => V.A.getFrameLayoutMode() === e6.y.FOCUSED),
             {
@@ -879,7 +879,7 @@ let ti = (0, _.A)(tl),
         l.useEffect(() => {
             let e = e_ && !ey,
                 t = e_ && ey && (null == c ? void 0 : c.id) !== ej;
-            (e || t) && (0, U.Dr)(h.M.ACTIVITY_GDM_CALL_TOOLTIP, {
+            (e || t) && (0, G.Dr)(h.M.ACTIVITY_GDM_CALL_TOOLTIP, {
                 dismissAction: e2.i.AUTO
             })
         }, [null == c ? void 0 : c.id, ej, ey, e_]);
@@ -901,11 +901,11 @@ let ti = (0, _.A)(tl),
             guildSidebarState: el,
             guild: y,
             showCall: !_ && K,
-            showActivityPanel: G,
+            showActivityPanel: U,
             showFramePanel: W,
             channelIsContentGated: Z,
             isMobile: (0, p.bG)([eV.A], () => (null == c ? void 0 : c.type) === e1.rbe.DM && eV.A.isMobileOnline(c.getRecipientId()), [c]),
-            isUnavailable: (0, p.bG)([eG.A], () => (null == c ? void 0 : c.guild_id) != null && eG.A.isUnavailable(c.guild_id), [c]),
+            isUnavailable: (0, p.bG)([eU.A], () => (null == c ? void 0 : c.guild_id) != null && eU.A.isUnavailable(c.guild_id), [c]),
             showRealNameModal: $,
             showWelcomeModal: !X && ee,
             showFollowButton: (null == c ? void 0 : c.type) === e1.rbe.GUILD_ANNOUNCEMENT && (null == y ? void 0 : y.features.has(e1.GuildFeatures.NEWS)) || !1
@@ -918,7 +918,7 @@ let ti = (0, _.A)(tl),
             isFavorites: ei,
             showHeaderGuildBreadcrumb: ei || es,
             premiumIndicatorEnabled: !1,
-            hasTextActivityInPanelMode: G,
+            hasTextActivityInPanelMode: U,
             embeddedActivity: L
         }))
     })

@@ -38,8 +38,8 @@ var r = n(627968),
     M = n(518960),
     L = n(710640),
     k = n(393309),
-    U = n(474078),
-    G = n(747926),
+    G = n(474078),
+    U = n(747926),
     B = n(965601),
     V = n(55294),
     F = n(652215),
@@ -110,9 +110,9 @@ function X(e) {
             confirmVariant: "critical-primary",
             cancelText: H.intl.string(H.t["olcKd/"]),
             onConfirm: () => {
-                (0, G.bA)(t)
+                (0, U.bA)(t)
             }
-        }) : (0, G.bA)(t)
+        }) : (0, U.bA)(t)
     }, [t]);
     return (0, r.jsxs)(v.Ay, {
         toolbar: (0, r.jsx)(v.Ay.Icon, {
@@ -222,7 +222,7 @@ function J(e) {
                 threadSettings: r,
                 privateThreadMode: i,
                 location: a,
-                onThreadCreated: G.JA,
+                onThreadCreated: U.JA,
                 useDefaultThreadName: !0
             });
             return {
@@ -279,7 +279,7 @@ function J(e) {
             location: u,
             enableAIFeatures: x
         }),
-        U = (0, k.Iy)(g, O) ? o.tn0 : o.ysw;
+        G = (0, k.Iy)(g, O) ? o.tn0 : o.ysw;
     return (0, r.jsx)("div", {
         className: K.TE,
         onMouseDown: h,
@@ -300,7 +300,7 @@ function J(e) {
                             channelId: "create-thread-null",
                             children: [(0, r.jsx)("div", {
                                 className: s()(W.P0, K.P0),
-                                children: (0, r.jsx)(U, {
+                                children: (0, r.jsx)(G, {
                                     className: W.Kk
                                 })
                             }), (0, r.jsxs)(o.nVY, {
@@ -391,11 +391,11 @@ function Z(e) {
         maxLength: F.Ign,
         onChange: e => {
             s({
-                name: (0, U.A)(e, !1)
+                name: (0, G.A)(e, !1)
             }), "" !== e ? u.A.startTyping(n.id) : u.A.stopTyping(n.id)
         },
         onBlur: () => {
-            let e = (0, U.A)(f, !0);
+            let e = (0, G.A)(f, !0);
             e !== f && s({
                 name: e
             })

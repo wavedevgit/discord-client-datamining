@@ -39,8 +39,8 @@ var r = n(627968),
     M = n(961350),
     L = n(760751),
     k = n(111162),
-    U = n(430452),
-    G = n(290863),
+    G = n(430452),
+    U = n(290863),
     B = n(485296),
     V = n(977997),
     F = n(712687),
@@ -96,13 +96,13 @@ let ea = [en.lp.ACTIVITY],
             [eD, eM] = l.useState(!1),
             eL = P.Q_.useSetting(),
             ek = (0, o.bG)([k.default], () => k.default.isStreamInfoOverlayEnabled),
-            [eU, eG] = l.useState(!1),
+            [eG, eU] = l.useState(!1),
             eB = (0, o.bG)([M.default], () => M.default.getId()),
             eV = $.type === en.lp.ACTIVITY ? null : $.user,
             eF = null != (t = null == eV ? void 0 : eV.id) ? t : null,
             [eH] = (0, g.A)($.type === en.lp.ACTIVITY ? [$.applicationId] : []),
-            eK = (0, o.bG)([U.A], () => null != eF && U.A.isLocalVideoDisabled(eF, (0, m.A)($.type)), [eF, $.type]),
-            eW = (0, o.bG)([U.A], () => null != eF ? U.A.getVideoToggleState(eF, (0, m.A)($.type)) : et.bb8.NONE, [eF, $.type]),
+            eK = (0, o.bG)([G.A], () => null != eF && G.A.isLocalVideoDisabled(eF, (0, m.A)($.type)), [eF, $.type]),
+            eW = (0, o.bG)([G.A], () => null != eF ? G.A.getVideoToggleState(eF, (0, m.A)($.type)) : et.bb8.NONE, [eF, $.type]),
             ez = eW === et.bb8.AUTO_PROBING,
             {
                 speaking: eY,
@@ -120,15 +120,15 @@ let ea = [en.lp.ACTIVITY],
                     suppressed: null != (n = null == r ? void 0 : r.suppress) && n,
                     voiceChannelId: null == r ? void 0 : r.channelId
                 }
-            }), z = (0, o.cf)([U.A], () => {
+            }), z = (0, o.cf)([G.A], () => {
                 let e = (0, m.A)(O.type);
                 return _ === K ? {
                     muted: !1,
                     deafened: !1
                 } : {
-                    muted: U.A.isLocalMute(K, e),
-                    localVideoDisabled: U.A.isLocalVideoDisabled(K, e),
-                    localVideoAutoDisabled: U.A.isLocalVideoAutoDisabled(K, e)
+                    muted: G.A.isLocalMute(K, e),
+                    localVideoDisabled: G.A.isLocalVideoDisabled(K, e),
+                    localVideoAutoDisabled: G.A.isLocalVideoAutoDisabled(K, e)
                 }
             }, [_, O.type, K]), {
                 serverMuted: W.muted,
@@ -148,7 +148,7 @@ let ea = [en.lp.ACTIVITY],
             }, {
                 autoTrackExposure: !1
             }),
-            e7 = (0, o.bG)([G.A], () => e9 && null != eF ? G.A.findActivity(eF, e => null != e.application_id && e.type === et.$pd.PLAYING) : null, [e9, eF]),
+            e7 = (0, o.bG)([U.A], () => e9 && null != eF ? U.A.findActivity(eF, e => null != e.application_id && e.type === et.$pd.PLAYING) : null, [e9, eF]),
             e2 = (0, o.bG)([L.A], () => (null == e7 ? void 0 : e7.application_id) != null ? L.A.getDetectableGame(e7.application_id) : null),
             e6 = (0, o.bG)([f.A], () => null != e2 && (null == e7 ? void 0 : e7.application_id) != null ? f.A.getApplication(null == e7 ? void 0 : e7.application_id) : void 0),
             e3 = (0, N.UF)({
@@ -265,10 +265,10 @@ let ea = [en.lp.ACTIVITY],
                 }, eg),
                 style: eb,
                 onMouseEnter: () => {
-                    eG(!0)
+                    eU(!0)
                 },
                 onMouseLeave: () => {
-                    eG(!1)
+                    eU(!1)
                 },
                 children: (0, r.jsxs)(C.A, {
                     shakeLocation: er.uD.VOICE_USER,
@@ -359,7 +359,7 @@ let ea = [en.lp.ACTIVITY],
                                 channel: eA,
                                 application: e6,
                                 secureFramesVerified: e8,
-                                isHovered: eU,
+                                isHovered: eG,
                                 popoutType: eo
                             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(A)) : (function(e, t) {
                                 var n = Object.keys(e);
@@ -378,7 +378,7 @@ let ea = [en.lp.ACTIVITY],
                                 style: eE || eQ ? void 0 : to
                             }) : null]
                         })
-                    }), eL && ek && eU && (0, r.jsx)(q.A, {
+                    }), eL && ek && eG && (0, r.jsx)(q.A, {
                         currentUserId: eB,
                         participant: $
                     }), (0, r.jsx)(E.A, {
@@ -496,12 +496,12 @@ let ep = l.memo(e => {
         hideAudioIcon: w,
         onToggleMute: R,
         popoutType: D
-    } = e, M = (0, o.bG)([U.A], () => null != y && U.A.isLocalVideoAutoDisabled(y, (0, m.A)(b)), [y, b]), L = (0, O.A)({
+    } = e, M = (0, o.bG)([G.A], () => null != y && G.A.isLocalVideoAutoDisabled(y, (0, m.A)(b)), [y, b]), L = (0, O.A)({
         userId: y,
         guildId: _.getGuildId()
     }), k = (0, j.a)({
         displayNameStyles: L
-    }), G = (0, $.Y)(i), B = (0, $.V)(i), [V, H] = l.useState(!1);
+    }), U = (0, $.Y)(i), B = (0, $.V)(i), [V, H] = l.useState(!1);
     l.useEffect(() => {
         let e = !1,
             t = () => {
@@ -572,7 +572,7 @@ let ep = l.memo(e => {
                     children: ei.intl.string(ei.t.m2Hyj0)
                 })]
             }) : null
-        }), !G && (0, r.jsxs)("div", {
+        }), !U && (0, r.jsxs)("div", {
             className: s()(es.Qp, {
                 [es.EX]: i < 195
             }),

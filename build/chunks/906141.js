@@ -38,9 +38,9 @@ var r = n(627968),
     M = n(652215),
     L = n(985018),
     k = n(410132),
-    U = n(119907);
+    G = n(119907);
 
-function G(e) {
+function U(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -120,7 +120,7 @@ let V = l.memo(function e(t) {
         ep = (0, A._f)(o.id, o.channel_id),
         eh = (0, p.A)(o),
         ef = (0, E.fF)(o);
-    return eo ? (0, r.jsx)(e, B(G({}, t), {
+    return eo ? (0, r.jsx)(e, B(U({}, t), {
         message: q.message,
         channel: X,
         hasThread: !1
@@ -132,12 +132,12 @@ let V = l.memo(function e(t) {
     }) : (0, r.jsx)(x.A, {
         compact: D,
         className: s()(k, {
-            [U.M1]: (0, y.ec)(o),
-            [U.XN]: K,
-            [U._A]: t.isGroupStart
+            [G.M1]: (0, y.ec)(o),
+            [G.XN]: K,
+            [G._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, R.A)(o, i, Y, q, D),
-        childrenHeader: (0, T.A)(B(G({}, t), {
+        childrenHeader: (0, T.A)(B(U({}, t), {
             author: es,
             guildId: i.guild_id
         })),

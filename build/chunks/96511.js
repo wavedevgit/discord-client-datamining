@@ -55,12 +55,12 @@ function g(e) {
         case d.hW.GUILD_SCHEDULED_EVENT_STARTED:
             let L = S.guild_scheduled_event_id,
                 k = null != L ? i.Ay.getGuildScheduledEvent(L) : null,
-                U = null == k ? void 0 : k.name,
-                G = null == (C = s.A.getGuild(null == k ? void 0 : k.guild_id)) ? void 0 : C.name,
+                G = null == k ? void 0 : k.name,
+                U = null == (C = s.A.getGuild(null == k ? void 0 : k.guild_id)) ? void 0 : C.name,
                 B = (0, i.AZ)(null != k ? k : void 0);
-            return (0, c.uJ)(G) || (0, c.uJ)(U) || !B ? null != (E = S.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
-                event_name: U,
-                guild_name: G
+            return (0, c.uJ)(U) || (0, c.uJ)(G) || !B ? null != (E = S.body) ? E : "" : h.intl.format(h.t.AyvfXR, {
+                event_name: G,
+                guild_name: U
             });
         case d.Uo.INCOMING_FRIEND_REQUESTS:
             return f({

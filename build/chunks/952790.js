@@ -245,14 +245,14 @@ let w = l.memo(function(e) {
         headerClassName: T,
         communityInfoVisible: w,
         hasSubheader: D
-    } = e, M = v.features.has(O.GuildFeatures.ANIMATED_BANNER), L = (0, p.A)(v), k = !L && (0, y.A)(v), U = !L && w, G = (0, A.VI)(E) && M && !b, [B, V] = l.useState(!1), F = l.useRef(!1), H = l.useRef(null), K = null != t ? t : H, W = l.useRef(void 0), z = m.kt.getSetting(), Y = (0, c.bG)([g.A], () => g.A.theme);
+    } = e, M = v.features.has(O.GuildFeatures.ANIMATED_BANNER), L = (0, p.A)(v), k = !L && (0, y.A)(v), G = !L && w, U = (0, A.VI)(E) && M && !b, [B, V] = l.useState(!1), F = l.useRef(!1), H = l.useRef(null), K = null != t ? t : H, W = l.useRef(void 0), z = m.kt.getSetting(), Y = (0, c.bG)([g.A], () => g.A.theme);
     l.useEffect(() => {
-        if (G && n && !F.current && z) return V(!0), W.current = setTimeout(() => {
+        if (U && n && !F.current && z) return V(!0), W.current = setTimeout(() => {
             V(!1)
         }, 5e3), () => {
             clearTimeout(W.current)
         }
-    }, [G, n, z]), l.useEffect(() => {
+    }, [U, n, z]), l.useEffect(() => {
         F.current = n
     }, [n]);
     let q = () => {
@@ -274,7 +274,7 @@ let w = l.memo(function(e) {
                     [x.r9]: q(),
                     [x.Pi]: n,
                     [e]: !1,
-                    [x.Iv]: U || D && k
+                    [x.Iv]: G || D && k
                 }),
                 onMouseDown: f,
                 onContextMenu: h,
@@ -307,7 +307,7 @@ let w = l.memo(function(e) {
                 }) : null, (0, r.jsx)(R, {
                     controller: i
                 })]
-            }), G && q() ? (0, r.jsx)("div", {
+            }), U && q() ? (0, r.jsx)("div", {
                 className: x.rt,
                 onMouseEnter: () => {
                     V(!0), clearTimeout(W.current)

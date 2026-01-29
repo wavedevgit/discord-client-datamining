@@ -38,14 +38,14 @@ var r = n(627968),
     M = n(594007),
     L = n(16961),
     k = n(716730),
-    U = n(5867),
-    G = n(652215),
+    G = n(5867),
+    U = n(652215),
     B = n(985018),
     V = n(907585);
 let F = R.DN.SIZE_32,
     H = {
-        [U.E8.NO_CHAT]: V.Oo,
-        [U.E8.RESIZABLE]: V.Ig
+        [G.E8.NO_CHAT]: V.Oo,
+        [G.E8.RESIZABLE]: V.Ig
     };
 
 function K(e) {
@@ -55,8 +55,8 @@ function K(e) {
         connectedLocation: W,
         renderExternalHeader: z
     } = e, Y = (0, P.A)(), q = (0, a.yK)([S.Ay], () => S.Ay.getEmbeddedActivitiesForLocation(W), [W]), X = (0, T.H)(W), J = (0, a.bG)([_.A], () => _.A.getChannel(X)), Q = (0, I.IQ)(q), Z = (0, I.Rz)(Q), $ = l.useCallback(() => {
-        (0, C.gk)(U.Gd.PIP)
-    }, []), ee = l.useRef(null), et = (0, a.bG)([S.Ay], () => S.Ay.getFocusedLayout()), en = et !== U.E8.NO_CHAT, [er, el] = l.useState(null != (t = null != (n = m.Ay.activityPanelHeight) ? n : K) ? t : null), ei = l.useCallback(e => {
+        (0, C.gk)(G.Gd.PIP)
+    }, []), ee = l.useRef(null), et = (0, a.bG)([S.Ay], () => S.Ay.getFocusedLayout()), en = et !== G.E8.NO_CHAT, [er, el] = l.useState(null != (t = null != (n = m.Ay.activityPanelHeight) ? n : K) ? t : null), ei = l.useCallback(e => {
         d.Ay.updatedUnsyncedSettings({
             activityPanelHeight: e
         })
@@ -75,14 +75,14 @@ function K(e) {
         });
         return e.observe(es.current), () => e.disconnect()
     }, []);
-    let ec = ea.width / Math.max(ea.height, 1) < U.B5,
+    let ec = ea.width / Math.max(ea.height, 1) < G.B5,
         eu = 0,
         ed = 0,
         ep = (0, N.A)(null == Y ? void 0 : Y.id);
     if (!ep) {
         let e = ea.width,
             t = ea.height;
-        ec ? ((t = ea.width / U.B5) > ea.height && (e = (t = ea.height) * U.B5), ed = (ea.height - t) / 2) : ((e = Math.min(ea.height * U.B5)) > ea.width && (t = (e = ea.width) / U.B5), eu = (ea.width - e) / 2)
+        ec ? ((t = ea.width / G.B5) > ea.height && (e = (t = ea.height) * G.B5), ed = (ea.height - t) / 2) : ((e = Math.min(ea.height * G.B5)) > ea.width && (t = (e = ea.width) / G.B5), eu = (ea.width - e) / 2)
     }
     let eh = Z.get(null != (i = null == Y ? void 0 : Y.id) ? i : ""),
         ef = (0, a.bG)([j.A], () => j.A.getChannelId()),
@@ -167,7 +167,7 @@ function K(e) {
         }, e.id)
     };
     return (0, r.jsx)(u.NPJ, {
-        theme: G.NJ8.DARK,
+        theme: U.NJ8.DARK,
         children: e => (0, r.jsxs)("div", {
             className: s()(V.iE, H[et], e),
             ref: ee,
@@ -230,7 +230,7 @@ function K(e) {
                     }), eA ? (0, r.jsx)(y.A, {
                         popoutOpen: !1,
                         onOpenPopout: () => {
-                            (0, f.zV)(G.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, D.A)({
+                            (0, f.zV)(U.HAw.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, D.A)({
                                 onConfirm: async () => {
                                     (null == Y ? void 0 : Y.id) != null && null != X && await (0, C.od)(Y.id, X), (0, C.jp)()
                                 }
@@ -244,12 +244,12 @@ function K(e) {
                 maxHeight: K,
                 resizableNode: ee,
                 onResize: e => {
-                    x._.dispatch(G.jej.MANUAL_IFRAME_RESIZING, {
+                    x._.dispatch(U.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !0
                     }), el(e)
                 },
                 onResizeEnd: e => {
-                    x._.dispatch(G.jej.MANUAL_IFRAME_RESIZING, {
+                    x._.dispatch(U.jej.MANUAL_IFRAME_RESIZING, {
                         resizing: !1
                     }), ei(e)
                 }
