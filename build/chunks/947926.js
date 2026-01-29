@@ -33,8 +33,8 @@ var a = n(627968),
     N = n(717695),
     w = n(899592),
     I = n(546350),
-    k = n(922532),
-    P = n(20732),
+    P = n(922532),
+    k = n(20732),
     R = n(654487),
     D = n(419548);
 
@@ -98,7 +98,7 @@ function U(e) {
         handleBlur: ed,
         handleMouseEnter: eu,
         handleMouseLeave: em
-    } = (0, k.m)({
+    } = (0, P.m)({
         quest: r,
         isExpanded: J,
         setIsExpanded: X,
@@ -108,7 +108,7 @@ function U(e) {
         prevIsQuestAccepted: K,
         impressionRef: V
     });
-    (0, P.S)({
+    (0, k.S)({
         quest: r,
         hasAssetsError: q,
         isEligibleForQuests: h,

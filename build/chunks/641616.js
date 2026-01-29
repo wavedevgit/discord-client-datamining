@@ -33,8 +33,8 @@ var p = n(173628),
     N = n(615112),
     w = n(501379),
     I = n(517538),
-    k = n(211162),
-    P = n(436102),
+    P = n(211162),
+    k = n(436102),
     R = n(435459),
     D = n(68738),
     M = n(912878),
@@ -238,7 +238,7 @@ function ec() {
             name: "Layers",
             group: ei.fu.UI,
             tags: ["verification", "safety flow"],
-            render: () => (0, a.jsx)(P.A, {})
+            render: () => (0, a.jsx)(k.A, {})
         }), e.push({
             id: "affinity",
             name: "Affinity",
@@ -340,7 +340,7 @@ function ec() {
             name: "Language",
             group: ei.fu.UI,
             tags: ["locale"],
-            render: () => (0, a.jsx)(k.A, {})
+            render: () => (0, a.jsx)(P.A, {})
         }), e.push({
             id: "word_frequency",
             name: "Word Frequency",

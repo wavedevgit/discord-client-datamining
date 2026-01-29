@@ -188,7 +188,7 @@ function T(e) {
             subscription: w,
             onUpdated: I
         } = e,
-        [k, P] = l.useState(!1),
+        [P, k] = l.useState(!1),
         [R, D] = l.useState(!1),
         [M, L] = l.useState(!1),
         [U, B] = l.useState(!1),
@@ -363,7 +363,7 @@ function T(e) {
                 className: _.VK,
                 children: [(0, a.jsxs)(u.DUT, {
                     onClick: () => {
-                        P(!k)
+                        k(!P)
                     },
                     className: _.Eh,
                     children: [(0, a.jsx)("div", {
@@ -372,9 +372,9 @@ function T(e) {
                             children: "Metadata"
                         })
                     }), (0, a.jsx)(m.A, {
-                        direction: k ? m.A.Directions.UP : m.A.Directions.DOWN
+                        direction: P ? m.A.Directions.UP : m.A.Directions.DOWN
                     })]
-                }), k && (0, a.jsx)("ul", {
+                }), P && (0, a.jsx)("ul", {
                     className: _.j3,
                     children: Object.entries(w.metadata).map(e => {
                         let [t, n] = e;
