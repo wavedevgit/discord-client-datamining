@@ -1,7 +1,6 @@
 package pg;
-/* JADX INFO: Access modifiers changed from: package-private */
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
-public final class k0 extends gl {
+final class k0 extends gl {
 
     /* renamed from: i  reason: collision with root package name */
     private final m0 f45497i;

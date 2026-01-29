@@ -19,11 +19,21 @@ public final class xd {
 
     /* JADX INFO: Access modifiers changed from: package-private */
     public /* synthetic */ xd(vd vdVar, wd wdVar) {
-        this.f45908a = vdVar.f45785a;
-        this.f45909b = vdVar.f45786b;
-        this.f45910c = vdVar.f45787c;
-        this.f45911d = vdVar.f45788d;
-        this.f45912e = vdVar.f45789e;
+        Long l10;
+        ie ieVar;
+        Boolean bool;
+        Boolean bool2;
+        Boolean bool3;
+        l10 = vdVar.f45785a;
+        this.f45908a = l10;
+        ieVar = vdVar.f45786b;
+        this.f45909b = ieVar;
+        bool = vdVar.f45787c;
+        this.f45910c = bool;
+        bool2 = vdVar.f45788d;
+        this.f45911d = bool2;
+        bool3 = vdVar.f45789e;
+        this.f45912e = bool3;
     }
 
     public final ie a() {
