@@ -2,7 +2,7 @@
 /** chunk id: 976742, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => x
+    A: () => S
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -43,7 +43,7 @@ function A(e) {
     })
 }
 
-function S(e) {
+function x(e) {
     let {
         category: t
     } = e, [n, a] = l.useState(!1), i = (0, s.K)(e => {
@@ -60,7 +60,7 @@ function S(e) {
     })
 }
 
-function x(e) {
+function S(e) {
     var t;
     let {
         sortedCategories: n,
@@ -76,17 +76,17 @@ function x(e) {
             products: t
         } = e;
         return t.length > 0
-    }), [n]), x = l.useRef(void 0);
+    }), [n]), S = l.useRef(void 0);
     l.useEffect(() => {
         if (null == u || 0 === A.length) {
-            x.current = void 0;
+            S.current = void 0;
             return
         }
-        if (u === x.current) return;
+        if (u === S.current) return;
         let e = A.findIndex(e => e.skuId === u);
         if (-1 === e) return;
         let t = Math.floor(e / v.l5) + 1;
-        t !== a && o(t), x.current = u
+        t !== a && o(t), S.current = u
     }, [u, A, o, a]);
     let O = l.useMemo(() => {
         let e = (a - 1) * v.l5;
@@ -116,7 +116,7 @@ function x(e) {
                 newValue: {
                     categoryPosition: t
                 },
-                children: (0, r.jsx)(S, {
+                children: (0, r.jsx)(x, {
                     category: e
                 })
             })
