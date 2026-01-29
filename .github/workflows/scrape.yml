@@ -1,8 +1,7 @@
 name: Scrape discord android
 
 on:
-    schedule:
-        - cron: '*/5 * * * *'
+    workflow_call:
     workflow_dispatch:
 jobs:
     build:
