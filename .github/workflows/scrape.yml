@@ -1,4 +1,4 @@
-name: Scrape discord
+name: Scrape discord Web
 
 on:
     schedule:
