@@ -31,14 +31,14 @@ function b(e) {
     } = l.useContext(v.VideoQuestModalContext), [x, A] = l.useState(!1), j = (0, o.bG)([a.A], () => a.A.useReducedMotion), T = l.useRef(null == (t = S.userStatus) ? void 0 : t.completedAt), [D, w] = l.useState(!1), N = (0, d.mq)(S.config), {
         completedRatio: P,
         completedRatioDisplay: I
-    } = (0, u.O9)(S), L = (null == (n = S.userStatus) ? void 0 : n.completedAt) != null, R = (null == (b = S.userStatus) ? void 0 : b.claimedAt) != null, k = E.intl.formatToPlainString(L && !R ? E.t.NRp4K4 : E.t["12IWP2"], {
+    } = (0, u.O9)(S), L = (null == (n = S.userStatus) ? void 0 : n.completedAt) != null, R = (null == (b = S.userStatus) ? void 0 : b.claimedAt) != null, M = E.intl.formatToPlainString(L && !R ? E.t.NRp4K4 : E.t["12IWP2"], {
         rewardName: N
     });
     l.useEffect(() => {
         var e, t;
         null == T.current && (null == (e = S.userStatus) ? void 0 : e.completedAt) != null && w(!0), T.current = null == (t = S.userStatus) ? void 0 : t.completedAt
     }, [null == (y = S.userStatus) ? void 0 : y.completedAt]);
-    let M = (0, p.v)({
+    let k = (0, p.v)({
         quest: S,
         questContent: c.uF.QUEST_HOME_DESKTOP,
         sourceQuestContent: _,
@@ -55,7 +55,7 @@ function b(e) {
             shouldAnimate: D && !j
         }), (0, r.jsx)(i.m, {
             position: O,
-            text: k,
+            text: M,
             onTooltipShow: () => {
                 A(!0)
             },
@@ -68,7 +68,7 @@ function b(e) {
                     cursor: "pointer"
                 } : void 0,
                 onClick: e => {
-                    L && M(e)
+                    L && k(e)
                 },
                 children: (0, r.jsx)(f.A, {
                     quest: S,

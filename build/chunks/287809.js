@@ -92,7 +92,9 @@ function C(e) {
     let E = e.display_name_styles;
     void 0 !== E && (e.displayNameStyles = (0, c.mT)(E), delete e.display_name_styles);
     let y = e.premium_state;
-    return void 0 !== y && (e.premiumState = (0, f.f)(y), delete e.premium_state), e
+    void 0 !== y && (e.premiumState = (0, f.f)(y), delete e.premium_state);
+    let b = e.app_transaction_ids;
+    return void 0 !== b && (e.appTransactionIds = b, delete e.app_transaction_ids), e
 }
 
 function N(e) {
