@@ -10,9 +10,9 @@ var l, a, o = n(989349),
     c = n(713402),
     A = n(73153),
     f = n(695870),
-    p = n(380335),
-    E = n(157550),
-    h = n(493507),
+    h = n(380335),
+    p = n(157550),
+    E = n(493507),
     g = n(95701),
     _ = n(734057),
     O = n(71393),
@@ -50,8 +50,8 @@ function y(e) {
         channelId: e.id,
         lastMessageId: t,
         isFavorite: !1,
-        isRequest: p.A.isMessageRequest(e.id) || E.A.isSpam(e.id),
-        nudgeTimestamp: h.A.getNudgeTimestamp(e.id)
+        isRequest: h.A.isMessageRequest(e.id) || p.A.isSpam(e.id),
+        nudgeTimestamp: E.A.getNudgeTimestamp(e.id)
     }
 }
 
@@ -82,7 +82,7 @@ let N = (i = [], r = [], s = [], () => {
 });
 class T extends(l = d.Ay.Store) {
     initialize() {
-        this.waitFor(_.A, O.A, p.A, b.Ay, E.A, M.Ay, m.default, h.A), this.syncWith([M.Ay, p.A], S)
+        this.waitFor(_.A, O.A, h.A, b.Ay, p.A, M.Ay, m.default, E.A), this.syncWith([M.Ay, h.A, E.A], S)
     }
     getPrivateChannelIds() {
         return N()

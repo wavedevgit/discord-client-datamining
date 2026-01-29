@@ -1,18 +1,18 @@
 /** Chunk was on 5152 **/
 /** chunk id: 405810, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => a
 });
 var r = n(627968),
     i = n(64700),
     l = n(397927),
     s = n(946274),
-    a = n(872752);
+    o = n(872752);
 
-function o(e) {
+function a(e) {
     var t, n;
     let {
-        onChange: o,
+        onChange: a,
         onFileSizeError: u,
         multiple: c = !1,
         disabled: d = !1,
@@ -37,10 +37,10 @@ function o(e) {
     }(e, ["onChange", "onFileSizeError", "multiple", "disabled", "maxFileSizeBytes", "filters"]), y = i.useRef(null);
     return (0, r.jsxs)("div", {
         children: [(0, r.jsx)("div", {
-            className: a.l,
+            className: o.l,
             children: (0, r.jsx)(s.Ay, {
                 ref: y,
-                onChange: o,
+                onChange: a,
                 onFileSizeError: u,
                 multiple: c,
                 maxFileSizeBytes: f,

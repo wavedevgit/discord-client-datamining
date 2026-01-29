@@ -19,6 +19,7 @@ n.d(t, {
     JV: () => C,
     Jr: () => P,
     Kg: () => eu,
+    LJ: () => e5,
     ML: () => y,
     NF: () => eQ,
     NO: () => R,
@@ -657,6 +658,12 @@ let e0 = (0, u.c$)("userContent", "lastReceivedChangelogId", e => null != e ? e 
     e4 = (0, u.c$)("textAndImages", "isCrossDmSearchEnabled", e => {
         var t;
         return null != (t = null == e ? void 0 : e.value) && t
+    }, e => o._t.create({
+        value: e
+    })),
+    e5 = (0, u.c$)("notifications", "enableDmReplyNudgeReminders", e => {
+        var t;
+        return null == (t = null == e ? void 0 : e.value) || t
     }, e => o._t.create({
         value: e
     }))
