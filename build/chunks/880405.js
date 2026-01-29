@@ -1,25 +1,25 @@
 /** Chunk was on 13530 **/
-/** chunk id: 880405, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** chunk id: 880405, original params: e,t,l (module,exports,require) **/
+l.d(t, {
     N: () => s
 });
-var l = n(562465),
-    r = n(73153),
-    i = n(198982),
-    a = n(652215);
+var n = l(562465),
+    i = l(73153),
+    a = l(198982),
+    r = l(652215);
 let s = async e => {
     try {
         var t;
-        let n = (null != (t = (await l.Bo.get({
-            url: a.Rsh.SIMILAR_GAMES(e),
+        let l = (null != (t = (await n.Bo.get({
+            url: r.Rsh.SIMILAR_GAMES(e),
             rejectWithError: !1
         })).body.similar_games) ? t : []).filter(t => t !== e);
-        r.h.dispatch({
+        i.h.dispatch({
             type: "GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS",
             applicationId: e,
-            games: n
+            games: l
         })
     } catch (e) {
-        throw new i.LG(e)
+        throw new a.LG(e)
     }
 }

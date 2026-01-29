@@ -1,38 +1,38 @@
 /** Chunk was on 13530 **/
-/** chunk id: 422069, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => u
+/** chunk id: 422069, original params: e,t,l (module,exports,require) **/
+l.d(t, {
+    A: () => d
 });
-var l, r, i = n(311907),
-    a = n(73153);
+var n, i, a = l(311907),
+    r = l(73153);
 let s = {},
     o = {};
-class c extends(r = i.Ay.Store) {
+class c extends(i = a.Ay.Store) {
     getSimilarGames(e) {
         return s[e]
     }
     getSimilarGamesError(e) {
         return o[e]
     }
-}(l = "displayName") in c ? Object.defineProperty(c, l, {
+}(n = "displayName") in c ? Object.defineProperty(c, n, {
     value: "GameProfileStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : c[l] = "GameProfileStore";
-let u = new c(a.h, {
+}) : c[n] = "GameProfileStore";
+let d = new c(r.h, {
     GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
         let {
             applicationId: t,
-            games: n
+            games: l
         } = e;
-        s[t] = n
+        s[t] = l
     },
     GAME_PROFILE_GET_SIMILAR_GAMES_ERROR: function(e) {
         let {
             applicationId: t,
-            error: n
+            error: l
         } = e;
-        o[t] = n
+        o[t] = l
     }
 })
