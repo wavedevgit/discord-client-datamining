@@ -79,8 +79,8 @@ function A(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "27cb660b69f7900e3509c6ad574449558aec241b" !== e.body.hash) {
-                let e = new Date("1769657482196"),
+            if (null != e.body && "96c0930db92231a6ee794d8072684a7cf5dd77e5" !== e.body.hash) {
+                let e = new Date("1769662852385"),
                     t = new Date,
                     n = (0, w.Tf)(t, e);
                 n.hours > 6 && eb(n.hours)
