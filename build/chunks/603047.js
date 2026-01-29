@@ -1,18 +1,18 @@
-/** Chunk was on 83759 **/
+/** Chunk was on 20725 **/
 /** chunk id: 603047, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
 });
 var r, l, i = n(311907),
-    a = n(73153),
-    o = n(868068);
-let s = "None";
+    s = n(73153),
+    a = n(868068);
+let o = "None";
 class u extends(l = i.Ay.Store) {
     getFakeGameToShow() {
-        return s
+        return o
     }
     getFakeGameData() {
-        return o.O[s]
+        return a.O[o]
     }
 }(r = "displayName") in u ? Object.defineProperty(u, r, {
     value: "ContentInventoryDevToolsStore",
@@ -20,11 +20,11 @@ class u extends(l = i.Ay.Store) {
     configurable: !0,
     writable: !0
 }) : u[r] = "ContentInventoryDevToolsStore";
-let c = new u(a.h, {
+let c = new u(s.h, {
     CONTENT_INVENTORY_FORCE_SHOW_GAME_SHARING: function(e) {
         let {
             gameToShow: t
         } = e;
-        s = t
+        o = t
     }
 })

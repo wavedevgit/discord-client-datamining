@@ -1,22 +1,22 @@
-/** Chunk was on 28979 **/
-/** chunk id: 654757, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    T: () => S
+/** Chunk was on 4670 **/
+/** chunk id: 654757, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    T: () => A
 });
 var n = i(419954),
     l = i(975571),
     s = i(780964),
     r = i(240194),
-    u = i(419882),
-    a = i(266057),
+    a = i(419882),
+    u = i(266057),
     o = i(815669),
-    T = i(246743),
-    d = i(652215),
-    A = i(985018);
-let S = (0, n.zZ)(s.X.MOTION_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.e3TR1b),
-    useSubtitle: () => A.intl.format(A.t["2l9U2j"], {
-        helpdeskArticle: l.A.getArticleURL(d.MVz.REDUCED_MOTION)
+    d = i(246743),
+    T = i(652215),
+    c = i(985018);
+let A = (0, n.zZ)(s.X.MOTION_CATEGORY, {
+    useTitle: () => c.intl.string(c.t.e3TR1b),
+    useSubtitle: () => c.intl.format(c.t["2l9U2j"], {
+        helpdeskArticle: l.A.getArticleURL(T.MVz.REDUCED_MOTION)
     }),
-    buildLayout: () => [T.W, o.z, u.R, r.b, a.S]
+    buildLayout: () => [d.W, o.z, a.R, r.b, u.S]
 })

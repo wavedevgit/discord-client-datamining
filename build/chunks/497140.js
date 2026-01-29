@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 497140, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -13,7 +13,7 @@ var r = n(627968),
     u = n(550591),
     d = n(794398);
 
-function p(e) {
+function h(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -32,8 +32,8 @@ function p(e) {
     return e
 }
 
-function h(e) {
-    let [t, h] = l.useState(!1), f = (0, i.Vd)("guild-".concat(e.id));
+function p(e) {
+    let [t, p] = l.useState(!1), g = (0, i.Vd)("guild-".concat(e.id));
     return (0, r.jsx)(c.c, {
         children: (0, r.jsx)(u.A, {
             text: e.name,
@@ -45,20 +45,20 @@ function h(e) {
                     disableColor: !0,
                     className: d._
                 }),
-                children: (0, r.jsx)(s.jlP, p({
+                children: (0, r.jsx)(s.jlP, h({
                     name: e.name,
                     onMouseEnter: () => {
-                        h(!0)
+                        p(!0)
                     },
                     onMouseLeave: () => {
-                        h(!1)
+                        p(!1)
                     },
                     onClick: () => {
                         (0, s.mMO)(async () => {
                             let {
                                 default: t
                             } = await n.e("42945").then(n.bind(n, 537560));
-                            return n => (0, r.jsx)(t, p({
+                            return n => (0, r.jsx)(t, h({
                                 name: e.name,
                                 guildId: e.id
                             }, n))
@@ -70,7 +70,7 @@ function h(e) {
                         canAnimate: !1,
                         size: 42
                     }) : null
-                }, f))
+                }, g))
             })
         })
     })

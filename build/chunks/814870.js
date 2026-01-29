@@ -1,42 +1,42 @@
-/** Chunk was on 28979 **/
-/** chunk id: 814870, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    u: () => c
+/** Chunk was on 4670 **/
+/** chunk id: 814870, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    u: () => g
 });
 var n = i(627968);
 i(64700);
 var l = i(934551),
     s = i(611371),
     r = i(757036),
-    u = i(967370),
-    a = i(557571),
+    a = i(967370),
+    u = i(557571),
     o = i(419954),
-    T = i(933297),
-    d = i(780964),
-    A = i(368631),
-    S = i(410166),
-    E = i(985018),
-    g = i(895431);
-let _ = (0, o.t_)(d.X.PRIVATE_BROWSING_PANEL, {
-        useTitle: () => E.intl.string(g.default.UAA4V5),
+    d = i(933297),
+    T = i(780964),
+    c = i(368631),
+    A = i(410166),
+    S = i(985018),
+    _ = i(895431);
+let E = (0, o.t_)(T.X.PRIVATE_BROWSING_PANEL, {
+        useTitle: () => S.intl.string(_.default.UAA4V5),
         useBadge: () => (0, n.jsx)(s.A, {}),
-        buildLayout: () => [S.r]
+        buildLayout: () => [A.r]
     }),
-    c = (0, o.i4)(d.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
-        useTitle: () => E.intl.string(g.default.UAA4V5),
+    g = (0, o.i4)(T.X.PRIVATE_BROWSING_SIDEBAR_ITEM, {
+        useTitle: () => S.intl.string(_.default.UAA4V5),
         icon: l.GlobeEarthIcon,
         usePredicate: () => {
-            let t = (0, r.L)(),
+            let e = (0, r.L)(),
                 {
-                    isSupportedPrivateBrowsingPerkPlatform: e,
+                    isSupportedPrivateBrowsingPerkPlatform: t,
                     isWeb: i,
                     perkAvailableToUser: n
-                } = (0, a.lV)();
-            return (0, u.lM)("private_browsing_perk_settings_page") && (e || i) && (!t || n)
+                } = (0, u.lV)();
+            return (0, a.lM)("private_browsing_perk_settings_page") && (t || i) && (!e || n)
         },
-        buildLayout: () => [_],
+        buildLayout: () => [E],
         trailing: {
-            type: T.S.BADGE_NEW,
-            getDismissibleContentTypes: A.Tq
+            type: d.S.BADGE_NEW,
+            getDismissibleContentTypes: c.Tq
         }
     })

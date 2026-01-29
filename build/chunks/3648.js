@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 3648, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => T,
@@ -13,19 +13,19 @@ var r = n(627968),
     c = n(397927),
     u = n(793574),
     d = n(627363),
-    p = n(576030),
-    h = n(379848),
-    f = n(957785),
-    g = n(186111),
+    h = n(576030),
+    p = n(379848),
+    g = n(957785),
+    f = n(186111),
     m = n(916023),
     b = n(533406),
     A = n(366523),
     y = n(188275),
-    _ = n(49999),
-    O = n(788868),
-    j = n(985018),
-    v = n(407494),
-    x = n(101616),
+    O = n(49999),
+    _ = n(788868),
+    x = n(985018),
+    j = n(407494),
+    v = n(101616),
     E = n(585048);
 
 function C(e) {
@@ -45,13 +45,13 @@ function C(e) {
         align: "center",
         onRequestClose: n,
         actions: [{
-            text: j.intl.string(j.t.uB4Gax),
+            text: x.intl.string(x.t.uB4Gax),
             variant: "primary",
             onClick: l
         }],
         targetElementRef: t,
-        title: j.intl.string(j.t.qh9t5c),
-        body: j.intl.string(j.t.iM6fxV),
+        title: x.intl.string(x.t.qh9t5c),
+        body: x.intl.string(x.t.iM6fxV),
         graphic: {
             type: "image",
             src: E.A
@@ -81,17 +81,17 @@ function S(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-    }(e, ["showPopover", "onViewWishlist", "onCardClick"]), p = l.useRef(null), b = (0, a.useHasAnyModalOpen)(), A = (0, i.bG)([g.A], () => g.A.hasLayers()), y = (0, m.Jw)({
+    }(e, ["showPopover", "onViewWishlist", "onCardClick"]), h = l.useRef(null), b = (0, a.useHasAnyModalOpen)(), A = (0, i.bG)([f.A], () => f.A.hasLayers()), y = (0, m.Jw)({
         location: "wishlist-card"
-    }), [O, j] = (0, h.kn)(y ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], _.m.SIDEBAR, !0), v = l.useCallback(() => {
-        j(_.i.USER_DISMISS), u()
-    }, [u, j]), x = l.useCallback(() => {
-        j(_.i.USER_DISMISS)
-    }, [j]), E = l.useCallback(() => {
-        j(_.i.USER_DISMISS), c()
-    }, [c, j]);
+    }), [_, x] = (0, p.kn)(y ? [s.M.GAME_SHOP_WISHLIST_POPOVER] : [], O.m.SIDEBAR, !0), j = l.useCallback(() => {
+        x(O.i.USER_DISMISS), u()
+    }, [u, x]), v = l.useCallback(() => {
+        x(O.i.USER_DISMISS)
+    }, [x]), E = l.useCallback(() => {
+        x(O.i.USER_DISMISS), c()
+    }, [c, x]);
     return (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(f.A, (t = function(e) {
+        children: [(0, r.jsx)(g.A, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -109,8 +109,8 @@ function S(e) {
             }
             return e
         }({}, d), n = n = {
-            onCardClick: v,
-            ref: p
+            onCardClick: j,
+            ref: h
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -120,9 +120,9 @@ function S(e) {
             return n
         })(Object(n)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-        }), t)), o && O === s.M.GAME_SHOP_WISHLIST_POPOVER && !b && !A && (0, r.jsx)(C, {
-            targetElementRef: p,
-            onRequestClose: x,
+        }), t)), o && _ === s.M.GAME_SHOP_WISHLIST_POPOVER && !b && !A && (0, r.jsx)(C, {
+            targetElementRef: h,
+            onRequestClose: v,
             onActionClick: E
         })]
     })
@@ -138,29 +138,29 @@ function I(e, t) {
         wishlistId: o,
         cardSize: c,
         analyticsLocations: d
-    } = t, h = null != l && l > 0, f = {
-        title: h ? j.intl.string(j.t.TxBQzD) : j.intl.string(j.t["4yiU7x"]),
-        body: h ? void 0 : j.intl.string(j.t.ilhtIa),
-        renderIcon: h ? void 0 : p.GM,
+    } = t, p = null != l && l > 0, g = {
+        title: p ? x.intl.string(x.t.TxBQzD) : x.intl.string(x.t["4yiU7x"]),
+        body: p ? void 0 : x.intl.string(x.t.ilhtIa),
+        renderIcon: p ? void 0 : h.GM,
         shouldShow: !0
     };
     return (0, r.jsx)(S, {
         wishlistItem: e,
         onCardClick: () => {
-            h ? i() : (0, b.a)(e.sku, {
+            p ? i() : (0, b.a)(e.sku, {
                 isGift: !0,
                 giftRecipient: a,
-                giftingOrigin: O.vQ.USER_PROFILE_WISHLIST
+                giftingOrigin: _.vQ.USER_PROFILE_WISHLIST
             }, {
                 analyticsLocations: [...d, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
             })
         },
-        tooltipConfig: f,
+        tooltipConfig: g,
         shouldScalePreview: !1,
         renderPreview: () => (0, r.jsx)(A.e, {
-            containerClassName: v.Nr,
-            backgroundImageClassName: v.GC,
-            foregroundImageClassName: v.wP,
+            containerClassName: j.Nr,
+            backgroundImageClassName: j.GC,
+            foregroundImageClassName: j.wP,
             sku: e.sku,
             shape: "custom"
         }),
@@ -183,21 +183,21 @@ function N(e) {
         data: s
     } = (0, d.YY)(t.sku.applicationId);
     return (0, r.jsxs)("div", {
-        className: x.D5,
+        className: v.D5,
         children: [n, (0, r.jsx)("div", {
-            className: x.S7,
+            className: v.S7,
             children: (0, r.jsxs)(c.DUT, {
                 onClick: () => {
                     (0, b.a)(t.sku, {
                         isGift: !0,
                         giftRecipient: i,
-                        giftingOrigin: O.vQ.USER_PROFILE_WISHLIST
+                        giftingOrigin: _.vQ.USER_PROFILE_WISHLIST
                     }, {
                         analyticsLocations: [...l, u.A.SLAYER_STOREFRONT_BREADCRUMB_WISHLIST_ITEM_CARD_GIFT_BUTTON]
                     })
                 },
-                className: x.Hh,
-                "aria-label": j.intl.string(j.t.pLPjsb),
+                className: v.Hh,
+                "aria-label": x.intl.string(x.t.pLPjsb),
                 children: [(0, r.jsx)(c.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",
@@ -206,7 +206,7 @@ function N(e) {
                 }), (0, r.jsx)(c.Text, {
                     variant: "text-xs/medium",
                     color: "text-default",
-                    children: j.intl.format(j.t["CqpEC+"], {
+                    children: x.intl.format(x.t["CqpEC+"], {
                         applicationName: null == s ? void 0 : s.name
                     })
                 })]

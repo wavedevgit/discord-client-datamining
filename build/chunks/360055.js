@@ -1,33 +1,33 @@
-/** Chunk was on 28979 **/
-/** chunk id: 360055, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    a: () => E
+/** Chunk was on 4670 **/
+/** chunk id: 360055, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    a: () => S
 });
 var n = i(64700),
     l = i(935649),
     s = i(847599),
     r = i(36149),
-    u = i(323073),
-    a = i(419954),
+    a = i(323073),
+    u = i(419954),
     o = i(264249),
-    T = i(253932),
-    d = i(780964),
-    A = i(406274),
-    S = i(985018);
-let E = (0, a.zD)(d.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_SETTING, {
-    useTitle: () => S.intl.string(S.t["L+yTsa"]),
-    useSubtitle: () => S.intl.string(S.t.hiM8pU),
+    d = i(253932),
+    T = i(780964),
+    c = i(406274),
+    A = i(985018);
+let S = (0, u.zD)(T.X.CONTENT_AND_SOCIAL_AGE_RESTRICTED_IOS_SETTING, {
+    useTitle: () => A.intl.string(A.t["L+yTsa"]),
+    useSubtitle: () => A.intl.string(A.t.hiM8pU),
     useValue: o.tI,
     useDisabled: () => {
-        var t;
-        let e = null == (t = (0, A.A)()) || t,
-            i = (0, u.sP)(),
+        var e;
+        let t = null == (e = (0, c.A)()) || e,
+            i = (0, a.sP)(),
             l = (0, r.yM)();
-        return n.useMemo(() => (!i || !!l) && !e, [i, e, l])
+        return n.useMemo(() => (!i || !!l) && !t, [i, t, l])
     },
-    setValue: t => {
-        (0, u.p5)() && t ? l.A.showAgeVerificationGetStartedModal({
+    setValue: e => {
+        (0, a.p5)() && e ? l.A.showAgeVerificationGetStartedModal({
             entryPoint: s.q1.AGE_RESTRICTED_SERVERS_ACCESS_SETTINGS
-        }) : T.Kg.updateSetting(t)
+        }) : d.Kg.updateSetting(e)
     }
 })

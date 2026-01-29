@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 476009, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968),
     i = n(546140),
@@ -12,9 +12,9 @@ var r = n(627968),
     c = n(355097),
     d = n(531525),
     u = n(652215),
-    p = n(985018);
+    _ = n(985018);
 
-function _() {
+function p() {
     let e = (0, i.L)();
     return (0, r.jsx)(a.h, {
         setting: d.H.PRIVACY_SAFETY_ALERTS_V2,
@@ -22,8 +22,8 @@ function _() {
         children: (0, r.jsx)(o.Ay, {
             value: e,
             onChange: l.a,
-            title: p.intl.string(p.t.qFsx5q),
-            note: p.intl.format(p.t.lunaRv, {
+            title: _.intl.string(_.t.qFsx5q),
+            note: _.intl.format(_.t.lunaRv, {
                 learnMoreLink: s.A.getArticleURL(u.MVz.SAFETY_ALERTS)
             })
         })

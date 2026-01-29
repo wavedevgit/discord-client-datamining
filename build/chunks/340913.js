@@ -1,7 +1,7 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 340913, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => o
 });
 var r = n(945810);
 
@@ -36,23 +36,23 @@ function l(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let o = {
+let a = {
         showPTTJoinTooltip: !1,
         showPTTIconIndicator: !1,
         showPTTNoKeybindWarning: !1,
         showPTTSpeakingIndicator: !1
     },
-    a = (0, r.mj)({
+    o = (0, r.mj)({
         name: "2025-12-09-ptt-education",
         kind: "user",
-        defaultConfig: o,
+        defaultConfig: a,
         variations: {
-            1: l(i({}, o), {
+            1: l(i({}, a), {
                 showPTTJoinTooltip: !0,
                 showPTTNoKeybindWarning: !0,
                 showPTTSpeakingIndicator: !0
             }),
-            2: l(i({}, o), {
+            2: l(i({}, a), {
                 showPTTIconIndicator: !0
             })
         }

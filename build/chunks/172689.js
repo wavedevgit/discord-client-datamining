@@ -1,17 +1,17 @@
-/** Chunk was on 28979 **/
-/** chunk id: 172689, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    M: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 172689, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    M: () => d
 });
 var n = i(378729),
     l = i(474774),
     s = i(419954),
     r = i(253932),
-    u = i(780964),
-    a = i(985018),
+    a = i(780964),
+    u = i(985018),
     o = i(79220);
-let T = (0, s.zD)(u.X.GAME_UPDATE_NOTIFICATIONS, {
-    useTitle: () => a.intl.string(o.default["3TO4/r"]),
+let d = (0, s.zD)(a.X.GAME_UPDATE_NOTIFICATIONS, {
+    useTitle: () => u.intl.string(o.default["3TO4/r"]),
     useValue: r.JV.useSetting,
     setValue: l.l,
     usePredicate: () => (0, n.e8)({

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 522556, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => b
@@ -12,11 +12,11 @@ var r = n(627968),
     c = n(935649),
     u = n(847599),
     d = n(323073),
-    p = n(506164),
-    h = n(985018),
-    f = n(635510);
+    h = n(506164),
+    p = n(985018),
+    g = n(635510);
 
-function g(e) {
+function f(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -41,7 +41,7 @@ function m(e) {
         guild: i,
         channelId: s
     } = e, a = (0, d.k$)(i), {
-        modalType: f
+        modalType: g
     } = a, m = function(e, t) {
         if (null == e) return {};
         var n, r, l, i = {};
@@ -66,10 +66,10 @@ function m(e) {
         c.A.showAgeVerificationGetStartedModal({
             entryPoint: u.q1.NSFW_GUILD
         })
-    }, []), _ = (t = g({}, m), n = n = {
+    }, []), O = (t = f({}, m), n = n = {
         guildId: null == i ? void 0 : i.id,
         channelId: s,
-        disagreement: h.intl.string(h.t["/g10LC"])
+        disagreement: p.intl.string(p.t["/g10LC"])
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -80,20 +80,20 @@ function m(e) {
     })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t);
-    switch (f) {
+    switch (g) {
         case u.A5.NSFW_CHANNEL_AGE_VERIFY:
         case u.A5.GUILD_LARGE_SERVER:
-            return (0, r.jsx)(p.A, g({
+            return (0, r.jsx)(h.A, f({
                 onAgree: y,
                 onDisagree: b,
-                modalType: f
-            }, _));
+                modalType: g
+            }, O));
         default:
-            return (0, r.jsx)(p.A, g({
+            return (0, r.jsx)(h.A, f({
                 onAgree: A,
                 onDisagree: b,
-                modalType: f
-            }, _))
+                modalType: g
+            }, O))
     }
 }
 let b = function(e) {
@@ -109,9 +109,9 @@ let b = function(e) {
         null == e || e.scrollToBottom()
     }, []), (0, r.jsx)(a.T7Y, {
         ref: o,
-        className: f.X,
+        className: g.X,
         children: (0, r.jsx)("div", {
-            className: s()(i, f.i),
+            className: s()(i, g.i),
             children: (0, r.jsx)(m, {
                 guild: t,
                 channelId: n

@@ -1,20 +1,20 @@
-/** Chunk was on 28979 **/
-/** chunk id: 755130, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 755130, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     Z: () => o
 });
 var n = i(627968),
     l = i(625841),
     s = i(419954),
     r = i(780964),
-    u = i(731854),
-    a = i(985018);
+    a = i(731854),
+    u = i(985018);
 let o = (0, s.E2)(r.X.VOICE_MICROPHONE_INPUT_SELECT, {
-    useSearchTerms: () => [a.intl.string(a.t.hHMYbb), a.intl.string(a.t.nuFtHH)],
+    useSearchTerms: () => [u.intl.string(u.t.hHMYbb), u.intl.string(u.t.nuFtHH)],
     Component: function() {
         return (0, n.jsx)(l.U, {
-            label: a.intl.string(a.t.UTM8VP),
-            deviceType: u.oh.AUDIO_INPUT,
+            label: u.intl.string(u.t.UTM8VP),
+            deviceType: a.oh.AUDIO_INPUT,
             location: "UserSettingsVoiceVideo",
             hideDeviceTypeIcon: !0
         })

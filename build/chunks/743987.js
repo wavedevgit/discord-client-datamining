@@ -1,68 +1,68 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 63974 **/
 /** chunk id: 743987, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => A
 });
-var r = n(627968);
+var l = n(627968);
 n(64700);
-var l = n(417597),
-    i = n(990078),
+var i = n(417597),
+    r = n(990078),
     s = n(397927),
-    a = n(370480),
-    o = n(263063),
-    c = n(773669),
-    u = n(696451),
-    d = n(71393),
+    o = n(370480),
+    a = n(263063),
+    d = n(773669),
+    c = n(696451),
+    u = n(71393),
     p = n(661191),
-    h = n(985018),
-    f = n(713531);
+    f = n(985018),
+    m = n(713531);
 
-function g(e) {
+function A(e) {
     let {
         userId: t,
         guildId: n,
-        textClassName: g,
-        tooltipDelay: m
-    } = e, b = (0, l.bG)([c.default], () => c.default.locale), A = (0, l.bG)([d.A], () => null != n ? d.A.getGuild(n) : null), y = (0, l.bG)([u.Ay], () => null != n ? u.Ay.getMember(n, t) : null), _ = (0, a.An)(p.default.extractTimestamp(t), b), O = (0, a.An)(null == y ? void 0 : y.joinedAt, b);
-    return null == A || null == y ? (0, r.jsx)(s.Text, {
+        textClassName: A,
+        tooltipDelay: x
+    } = e, g = (0, i.bG)([d.default], () => d.default.locale), j = (0, i.bG)([u.A], () => null != n ? u.A.getGuild(n) : null), h = (0, i.bG)([c.Ay], () => null != n ? c.Ay.getMember(n, t) : null), b = (0, o.An)(p.default.extractTimestamp(t), g), v = (0, o.An)(null == h ? void 0 : h.joinedAt, g);
+    return null == j || null == h ? (0, l.jsx)(s.Text, {
         variant: "text-sm/normal",
-        className: g,
-        children: _
-    }) : (0, r.jsxs)("div", {
-        className: f.y9,
-        children: [(0, r.jsxs)("div", {
-            className: f.R1,
-            children: [(0, r.jsx)(i.m, {
-                text: h.intl.string(h.t.uvGmCx),
-                delay: m,
-                children: (0, r.jsx)(s.pVd, {
+        className: A,
+        children: b
+    }) : (0, l.jsxs)("div", {
+        className: m.y9,
+        children: [(0, l.jsxs)("div", {
+            className: m.R1,
+            children: [(0, l.jsx)(r.m, {
+                text: f.intl.string(f.t.uvGmCx),
+                delay: x,
+                children: (0, l.jsx)(s.pVd, {
                     size: "custom",
                     width: 28,
                     height: 28,
                     color: "currentColor",
-                    className: f.Mg
+                    className: m.Mg
                 })
-            }), (0, r.jsx)(s.Text, {
+            }), (0, l.jsx)(s.Text, {
                 variant: "text-sm/normal",
-                className: g,
-                children: _
+                className: A,
+                children: b
             })]
-        }), (0, r.jsx)("div", {
-            className: f.yF
-        }), (0, r.jsxs)("div", {
-            className: f.R1,
-            children: [(0, r.jsx)(i.m, {
-                text: A.name,
-                delay: m,
-                children: (0, r.jsx)(o.A, {
-                    guild: A,
-                    size: o.A.Sizes.SMOL,
-                    className: f.$f
+        }), (0, l.jsx)("div", {
+            className: m.yF
+        }), (0, l.jsxs)("div", {
+            className: m.R1,
+            children: [(0, l.jsx)(r.m, {
+                text: j.name,
+                delay: x,
+                children: (0, l.jsx)(a.A, {
+                    guild: j,
+                    size: a.A.Sizes.SMOL,
+                    className: m.$f
                 })
-            }), (0, r.jsx)(s.Text, {
+            }), (0, l.jsx)(s.Text, {
                 variant: "text-sm/normal",
-                className: g,
-                children: O
+                className: A,
+                children: v
             })]
         })]
     })

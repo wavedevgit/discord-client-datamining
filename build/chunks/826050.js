@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 826050, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -11,11 +11,11 @@ var r, l = n(627968),
     c = n(451988),
     u = n(397927),
     d = n(203982),
-    p = n(652215),
-    h = n(985018),
-    f = n(792728);
+    h = n(652215),
+    p = n(985018),
+    g = n(792728);
 
-function g(e, t, n) {
+function f(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -31,10 +31,10 @@ class b extends(r = i.PureComponent) {
     componentDidMount() {
         this.setState({
             shown: !0
-        }), d._.subscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        }), d._.subscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentWillUnmount() {
-        this.focusTimeout.stop(), d._.unsubscribe(p.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
+        this.focusTimeout.stop(), d._.unsubscribe(h.jej.QUICKSWITCHER_RESULT_FOCUS, this.handleResultFocus)
     }
     componentDidUpdate() {
         let {
@@ -53,7 +53,7 @@ class b extends(r = i.PureComponent) {
                 "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                     return Object.getOwnPropertyDescriptor(n, e).enumerable
                 }))), r.forEach(function(t) {
-                    g(e, t, n[t])
+                    f(e, t, n[t])
                 })
             }
             return e
@@ -63,41 +63,41 @@ class b extends(r = i.PureComponent) {
     }
     renderArrowGroup(e) {
         return (0, l.jsxs)("div", {
-            className: a()(f.XN, e),
+            className: a()(g.XN, e),
             children: [(0, l.jsx)(o.A.div, {
-                className: a()(f.Hf, f.xM),
+                className: a()(g.Hf, g.xM),
                 style: this.getStyle(),
                 children: (0, l.jsx)("img", {
                     alt: "",
                     src: n(824829),
-                    className: f.D6
+                    className: g.D6
                 })
             }), (0, l.jsx)("div", {
-                className: a()(f.Hf, f.JM),
+                className: a()(g.Hf, g.JM),
                 children: (0, l.jsx)("img", {
                     alt: "",
                     src: n(162206),
-                    className: f.D6
+                    className: g.D6
                 })
             }), (0, l.jsx)("div", {
-                className: a()(f.Hf, f.QJ),
+                className: a()(g.Hf, g.QJ),
                 children: (0, l.jsx)("img", {
                     alt: "",
                     src: n(298607),
-                    className: f.D6
+                    className: g.D6
                 })
             })]
         })
     }
     renderContent() {
         return (0, l.jsxs)("div", {
-            className: f.fi,
+            className: g.fi,
             children: [(0, l.jsx)("div", {
-                className: f.Iv,
-                children: h.intl.string(h.t.Mp0IGK)
+                className: g.Iv,
+                children: p.intl.string(p.t.Mp0IGK)
             }), (0, l.jsx)("div", {
-                className: f.kp,
-                children: h.intl.string(h.t["3CbpwH"])
+                className: g.kp,
+                children: p.intl.string(p.t["3CbpwH"])
             })]
         })
     }
@@ -109,11 +109,11 @@ class b extends(r = i.PureComponent) {
         } = this.state;
         return (0, l.jsxs)("div", {
             ref: this.rootRef,
-            className: a()(f.d$, {
-                [f.SP]: t,
-                [f.tG]: e
+            className: a()(g.d$, {
+                [g.SP]: t,
+                [g.tG]: e
             }),
-            children: [this.renderContent(), this.renderArrowGroup(f.__invalid_left), this.renderArrowGroup(f.pG)]
+            children: [this.renderContent(), this.renderArrowGroup(g.__invalid_left), this.renderArrowGroup(g.pG)]
         })
     }
     getStyle() {
@@ -133,10 +133,10 @@ class b extends(r = i.PureComponent) {
         }
     }
     constructor(...e) {
-        super(...e), g(this, "state", {
+        super(...e), f(this, "state", {
             shown: !1,
             translateY: new o.A.Value(0)
-        }), g(this, "rootRef", i.createRef()), g(this, "focusTimeout", new c.Ep), g(this, "handleResultFocus", e => {
+        }), f(this, "rootRef", i.createRef()), f(this, "focusTimeout", new c.Ep), f(this, "handleResultFocus", e => {
             let {
                 node: t
             } = e;
@@ -153,5 +153,5 @@ class b extends(r = i.PureComponent) {
         })
     }
 }
-g(b, "contextType", u.CZY);
+f(b, "contextType", u.CZY);
 let A = b

@@ -1,68 +1,68 @@
-/** Chunk was on 38660 **/
+/** Chunk was on 32502 **/
 /** chunk id: 217356, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 }), n(896048);
 var i = n(627968),
-    s = n(64700),
-    l = n(503698),
-    r = n.n(l),
+    l = n(64700),
+    s = n(503698),
+    r = n.n(s),
     a = n(770178),
     o = n(765548),
     c = n(685073),
     d = n(534400),
     u = n(277150);
-let g = s.memo(function(e) {
+let h = /^(14256|21552)$/.test(n.j) ? l.memo(function(e) {
     var t, n;
     let {
-        children: l,
-        isOverlay: g,
-        contextGuildId: h
+        children: s,
+        isOverlay: h,
+        contextGuildId: g
     } = e, x = function(e, t) {
         if (null == e) return {};
-        var n, i, s, l = {};
+        var n, i, l, s = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
-            for (s = 0, n = Reflect.ownKeys(e); s < n.length; s++) i = n[s], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-            return l
+            for (l = 0, n = Reflect.ownKeys(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
+            return s
         }
-        if (l = function(e, t) {
+        if (s = function(e, t) {
                 if (null == e) return {};
-                var n, i, s = {},
-                    l = Object.getOwnPropertyNames(e);
-                for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (s[n] = e[n]);
-                return s
+                var n, i, l = {},
+                    s = Object.getOwnPropertyNames(e);
+                for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n]);
+                return l
             }(e, t), Object.getOwnPropertySymbols)
-            for (s = 0, n = Object.getOwnPropertySymbols(e); s < n.length; s++) i = n[s], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (l[i] = e[i]);
-        return l
-    }(e, ["children", "isOverlay", "contextGuildId"]), [A, p] = s.useState({
+            for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) i = n[l], !(t.indexOf(i) >= 0) && Object.prototype.propertyIsEnumerable.call(e, i) && (s[i] = e[i]);
+        return s
+    }(e, ["children", "isOverlay", "contextGuildId"]), [p, m] = l.useState({
         maskImage: "none"
-    }), m = s.useRef(null), j = (0, o.A)(() => {
+    }), A = l.useRef(null), b = (0, o.A)(() => {
         var e, t, n, i;
-        let s = null != (e = null == (n = O.current) ? void 0 : n.getBoundingClientRect()) ? e : null,
-            l = null != (t = null == (i = m.current) ? void 0 : i.getBoundingClientRect()) ? t : null;
-        if (g || null == s || null == l) return void p({
+        let l = null != (e = null == (n = j.current) ? void 0 : n.getBoundingClientRect()) ? e : null,
+            s = null != (t = null == (i = A.current) ? void 0 : i.getBoundingClientRect()) ? t : null;
+        if (h || null == l || null == s) return void m({
             maskImage: "none"
         });
-        let r = l.right - s.right,
-            a = l.width - r;
-        a > l.width ? p({
+        let r = s.right - l.right,
+            a = s.width - r;
+        a > s.width ? m({
             maskImage: "none"
-        }) : p({
+        }) : m({
             maskImage: "linear-gradient(to right, rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 0) ".concat(a, "px)")
         })
-    }), O = (0, a.w)(j), b = (0, c.Wb)(x.userId, h);
+    }), j = (0, a.w)(b), O = (0, c.Wb)(x.userId, g);
     return (0, i.jsxs)("div", {
-        className: r()(u.kL, g && u.ur),
-        ref: O,
+        className: r()(u.kL, h && u.ur),
+        ref: j,
         children: [(0, i.jsx)("div", {
             className: u.QV,
-            children: l
+            children: s
         }), (0, i.jsx)("div", {
             className: u.Qz,
             children: (0, i.jsx)("span", {
-                className: r()(u.Tm, !b && g && u.pN),
-                ref: m,
-                style: A,
+                className: r()(u.Tm, !O && h && u.pN),
+                ref: A,
+                style: p,
                 children: (0, i.jsx)(d.Ay, (t = function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
@@ -81,8 +81,8 @@ let g = s.memo(function(e) {
                     }
                     return e
                 }({}, x), n = n = {
-                    contextGuildId: h,
-                    className: r()(x.className, g && u.ZW),
+                    contextGuildId: g,
+                    className: r()(x.className, h && u.ZW),
                     disableGuildProfile: !0
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                     var n = Object.keys(e);
@@ -97,4 +97,4 @@ let g = s.memo(function(e) {
             })
         })]
     })
-})
+}) : null

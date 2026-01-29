@@ -1,26 +1,26 @@
-/** Chunk was on 28979 **/
-/** chunk id: 39218, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    x: () => A
+/** Chunk was on 4670 **/
+/** chunk id: 39218, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    x: () => c
 });
 var n = i(64700),
     l = i(419954),
     s = i(975571),
     r = i(809505),
-    u = i(253932),
-    a = i(780964),
+    a = i(253932),
+    u = i(780964),
     o = i(84373),
-    T = i(652215),
-    d = i(985018);
-let A = (0, l.Qx)(a.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
-    useTitle: () => d.intl.string(d.t.tiCXaH),
-    useSubtitle: () => d.intl.format(d.t.RvjRRI, {
-        appealLink: s.A.getArticleURL(T.MVz.SAFE_DIRECT_MESSAGING)
+    d = i(652215),
+    T = i(985018);
+let c = (0, l.Qx)(u.X.CONTENT_AND_SOCIAL_DM_SPAM_SETTING, {
+    useTitle: () => T.intl.string(T.t.tiCXaH),
+    useSubtitle: () => T.intl.format(T.t.RvjRRI, {
+        appealLink: s.A.getArticleURL(d.MVz.SAFE_DIRECT_MESSAGING)
     }),
     useValue: o.o,
-    setValue: t => u.he.updateSetting(t),
+    setValue: e => a.he.updateSetting(e),
     useOptions: function() {
         return n.useMemo(() => (0, r.YS)(), [])
     },
-    useSearchTerms: () => [d.intl.string(d.t.JzaP4h), d.intl.string(d.t.H9XOl3), d.intl.string(d.t.k4W40P)]
+    useSearchTerms: () => [T.intl.string(T.t.JzaP4h), T.intl.string(T.t.H9XOl3), T.intl.string(T.t.k4W40P)]
 })

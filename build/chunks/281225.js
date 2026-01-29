@@ -1,16 +1,16 @@
-/** Chunk was on 28979 **/
-/** chunk id: 281225, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => a
+/** Chunk was on 4670 **/
+/** chunk id: 281225, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Q: () => u
 });
 var n = i(210742),
     l = i(419954),
     s = i(780964),
     r = i(985018);
-let u = (0, l.E2)(s.X.ACCOUNT_STANDING_SETTING, {
+let a = (0, l.E2)(s.X.ACCOUNT_STANDING_SETTING, {
         useSearchTerms: () => [r.intl.string(r.t["Vov/9o"])],
         Component: n.A
     }),
-    a = (0, l.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
-        buildLayout: () => [u]
+    u = (0, l.zZ)(s.X.ACCOUNT_STANDING_CATEGORY, {
+        buildLayout: () => [a]
     })

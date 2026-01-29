@@ -1,40 +1,40 @@
-/** Chunk was on 28979 **/
-/** chunk id: 544727, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    $: () => A
+/** Chunk was on 4670 **/
+/** chunk id: 544727, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    $: () => c
 });
 var n = i(627968);
 i(64700);
 var l = i(311907),
     s = i(397927),
     r = i(77729),
-    u = i(274372),
-    a = i(399925),
+    a = i(274372),
+    u = i(399925),
     o = i(419954),
-    T = i(780964),
-    d = i(985018);
-let A = (0, o.E2)(T.X.CLIPS_STORAGE_LOCATION, {
-    useSearchTerms: () => [d.intl.string(d.t.s4773E), d.intl.string(d.t.svjwGh)],
+    d = i(780964),
+    T = i(985018);
+let c = (0, o.E2)(d.X.CLIPS_STORAGE_LOCATION, {
+    useSearchTerms: () => [T.intl.string(T.t.s4773E), T.intl.string(T.t.svjwGh)],
     Component: () => {
-        let t = (0, l.bG)([u.A], () => u.A.getSettings().storageLocation),
-            e = async () => {
-                let t = await r.A.fileManager.showOpenDialog({
+        let e = (0, l.bG)([a.A], () => a.A.getSettings().storageLocation),
+            t = async () => {
+                let e = await r.A.fileManager.showOpenDialog({
                     properties: ["openDirectory", "createDirectory"]
                 });
-                t.length > 0 && a.HU(t[0])
+                e.length > 0 && u.HU(e[0])
             };
         return (0, n.jsx)(s.D0$, {
-            label: d.intl.string(d.t.s4773E),
-            description: d.intl.string(d.t.svjwGh),
+            label: T.intl.string(T.t.s4773E),
+            description: T.intl.string(T.t.svjwGh),
             layout: "horizontal",
             children: (0, n.jsx)(s.DUT, {
-                "aria-label": d.intl.formatToPlainString(d.t.iMONTj, {
-                    storageLocation: t
+                "aria-label": T.intl.formatToPlainString(T.t.iMONTj, {
+                    storageLocation: e
                 }),
-                onClick: e,
+                onClick: t,
                 children: (0, n.jsx)(s.ksK, {
                     tabIndex: -1,
-                    value: t,
+                    value: e,
                     editable: !1,
                     "aria-hidden": !0
                 })

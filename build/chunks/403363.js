@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 403363, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ var l = n(397927),
     u = n(721983),
     d = n(630907);
 
-function p(e) {
+function h(e) {
     let {
         guildId: t
     } = e;

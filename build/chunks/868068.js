@@ -1,13 +1,13 @@
-/** Chunk was on 83759 **/
+/** Chunk was on 20725 **/
 /** chunk id: 868068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    K: () => o,
-    O: () => a
+    K: () => a,
+    O: () => s
 });
 var r = n(56562),
     l = n(927813),
     i = n(652215);
-let a = {
+let s = {
         None: void 0,
         Terraria: {
             id: "1402418344912752671",
@@ -30,4 +30,4 @@ let a = {
             distributor: i.d3x.STEAM
         }
     },
-    o = Object.keys(a)
+    a = Object.keys(s)

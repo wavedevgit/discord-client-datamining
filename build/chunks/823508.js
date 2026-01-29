@@ -1,20 +1,21 @@
-/** Chunk was on 78528 **/
-/** chunk id: 823508, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** Chunk was on 59461 **/
+/** chunk id: 823508, original params: e,n,t (module,exports,require) **/
+"use strict";
+t.d(n, {
     A: () => o
 });
-var r = n(397927),
-    l = n(267102),
-    i = n(70456),
-    s = n(652215);
+var i = t(397927),
+    l = t(267102),
+    r = t(70456),
+    u = t(652215);
 let a = "guild-event-modal",
     o = () => {
-        let e = (0, l.Us)() === s.BRT.POPOUT ? r.KX8 : r.SYi;
+        let e = (0, l.Us)() === u.BRT.POPOUT ? i.KX8 : i.SYi;
         return {
             modalKey: a,
             contextKey: e,
             onCloseRequest: () => {
-                i.N.getState().canCloseModal && (0, r.OoC)(a, e)
+                r.N.getState().canCloseModal && (0, i.OoC)(a, e)
             }
         }
     }

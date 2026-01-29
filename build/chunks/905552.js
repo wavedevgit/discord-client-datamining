@@ -1,18 +1,18 @@
-/** Chunk was on 83759 **/
-/** chunk id: 905552, original params: e,t,n (module,exports,require) **/
-let r;
-n.d(t, {
-    A: () => i
+/** Chunk was on 48697 **/
+/** chunk id: 905552, original params: e,t,r (module,exports,require) **/
+let n;
+r.d(t, {
+    A: () => a
 });
-var l = n(9302);
+var l = r(9302);
 
-function i(e, t) {
+function a(e, t) {
     if (__OVERLAY__) {
         let e = t.getGame(),
-            n = (0, l.getPID)();
-        return null == e || null == n ? null : (null == r ? void 0 : r.id) === e.id && (null == r ? void 0 : r.pid) === n ? r : r = {
+            r = (0, l.getPID)();
+        return null == e || null == r ? null : (null == n ? void 0 : n.id) === e.id && (null == n ? void 0 : n.pid) === r ? n : n = {
             id: e.id,
-            pid: n,
+            pid: r,
             pidPath: [],
             nativeProcessObserverId: 0,
             hidden: !1,

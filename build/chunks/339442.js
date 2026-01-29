@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 339442, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var r = n(627968);
 n(64700);
@@ -14,9 +14,9 @@ var i = n(397927),
     d = n(985018),
     u = n(93448);
 
-function p(e) {
+function _(e) {
     var t, n;
-    let p = (0, l.L)(c.PremiumTypes.TIER_2);
+    let _ = (0, l.L)(c.PremiumTypes.TIER_2);
     return (0, r.jsxs)(s.A, {
         errors: e.errors,
         disabled: e.disabled,
@@ -28,7 +28,7 @@ function p(e) {
                 onChange: e.onGlobalNameChange,
                 value: null != (t = null != (n = e.pendingGlobalName) ? n : e.currentGlobalName) ? t : ""
             })
-        }), p && (0, r.jsx)(a.A, {
+        }), _ && (0, r.jsx)(a.A, {
             user: e.user,
             className: u.F
         })]

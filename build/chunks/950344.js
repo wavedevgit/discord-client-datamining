@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 950344, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r = n(64700),
     l = n(311907),
@@ -12,25 +12,25 @@ var r = n(64700),
     c = n(300233),
     u = n(636194),
     d = n(700206),
-    p = n(652215);
+    h = n(652215);
 
-function h(e) {
+function p(e) {
     var t;
     let {
         guildId: n,
-        groupListingId: h,
-        location: f,
-        relevantSubscriptionListingIds: g
+        groupListingId: p,
+        location: g,
+        relevantSubscriptionListingIds: f
     } = e, m = (0, c.X)("useTrackRoleSubscriptionUpsellAnalytics"), {
         activeSubscription: b
-    } = (0, d.A)(h), A = null != b, y = (0, l.yK)([u.A], () => (null != g ? g : []).filter(e => {
+    } = (0, d.A)(p), A = null != b, y = (0, l.yK)([u.A], () => (null != f ? f : []).filter(e => {
         var t;
         return (null == (t = u.A.getSubscriptionListing(e)) ? void 0 : t.published) === !0
-    }), [g]), {
-        analyticsLocations: _
-    } = (0, s.Ay)(null != (t = (0, a.UC)()) ? t : []), O = r.useRef(!1);
+    }), [f]), {
+        analyticsLocations: O
+    } = (0, s.Ay)(null != (t = (0, a.UC)()) ? t : []), _ = r.useRef(!1);
     r.useEffect(() => {
-        m && null != h && null != y && !O.current && (O.current = !0, o.default.track(p.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
+        m && null != p && null != y && !_.current && (_.current = !0, o.default.track(h.HAw.ROLE_SUBSCRIPTION_LISTING_UPSELL_PAGE_VIEWED, function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);
@@ -48,11 +48,11 @@ function h(e) {
             }
             return e
         }({
-            role_subscription_group_listing_id: h,
+            role_subscription_group_listing_id: p,
             role_subscription_listing_ids: y,
             is_premium_member: A,
-            location_stack: _,
-            location: f
+            location_stack: O,
+            location: g
         }, (0, i.H$)(n))))
-    }, [n, h, m, f, y, A, _])
+    }, [n, p, m, g, y, A, O])
 }

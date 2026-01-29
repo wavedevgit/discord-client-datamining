@@ -1,16 +1,16 @@
-/** Chunk was on 28979 **/
-/** chunk id: 400442, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => a
+/** Chunk was on 4670 **/
+/** chunk id: 400442, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    j: () => u
 });
 var n = i(46054),
     l = i(419954),
     s = i(253932),
     r = i(780964),
-    u = i(985018);
-let a = (0, l.zD)(r.X.CHAT_EMOJI_CONVERT_EMOTICONS, {
-    useTitle: () => u.intl.string(u.t["79qal8"]),
-    useSubtitle: () => n.A.parse(u.intl.string(u.t["20dvuQ"])),
+    a = i(985018);
+let u = (0, l.zD)(r.X.CHAT_EMOJI_CONVERT_EMOTICONS, {
+    useTitle: () => a.intl.string(a.t["79qal8"]),
+    useSubtitle: () => n.A.parse(a.intl.string(a.t["20dvuQ"])),
     useValue: s.j7.useSetting,
     setValue: s.j7.updateSetting
 })

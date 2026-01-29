@@ -1,4 +1,4 @@
-/** Chunk was on 83759 **/
+/** Chunk was on 20725 **/
 /** chunk id: 820286, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     X: () => b
@@ -6,9 +6,9 @@ n.d(t, {
 var r = n(627968),
     l = n(64700),
     i = n(503698),
-    a = n.n(i),
-    o = n(397927),
-    s = n(46054),
+    s = n.n(i),
+    a = n(397927),
+    o = n(46054),
     u = n(190012),
     c = n(465364),
     d = n(640912);
@@ -54,21 +54,21 @@ function m(e) {
     }(e, ["icon"]);
     switch (t) {
         case "image":
-            return (0, r.jsx)(o.xfq, p({}, n));
+            return (0, r.jsx)(a.xfq, p({}, n));
         case "video":
-            return (0, r.jsx)(o.npA, p({}, n));
+            return (0, r.jsx)(a.npA, p({}, n));
         case "audio":
-            return (0, r.jsx)(o.T7G, p({}, n));
+            return (0, r.jsx)(a.T7G, p({}, n));
         case "attachment":
-            return (0, r.jsx)(o.PtA, p({}, n));
+            return (0, r.jsx)(a.PtA, p({}, n));
         case "link":
-            return (0, r.jsx)(o.qYV, p({}, n));
+            return (0, r.jsx)(a.qYV, p({}, n));
         case "sticker":
-            return (0, r.jsx)(o.tEP, p({}, n));
+            return (0, r.jsx)(a.tEP, p({}, n));
         case "call-active":
-            return (0, r.jsx)(o._jp, p({}, n));
+            return (0, r.jsx)(a._jp, p({}, n));
         case "call-ended":
-            return (0, r.jsx)(o.zWQ, p({}, n))
+            return (0, r.jsx)(a.zWQ, p({}, n))
     }
 }
 let f = l.memo(function(e) {
@@ -80,12 +80,12 @@ let f = l.memo(function(e) {
             noStyleAndInteraction: !0
         }).content
     }),
-    _ = l.memo(function(e) {
+    y = l.memo(function(e) {
         let {
             markup: t,
             channelId: n
         } = e;
-        return (0, c.jp)(s.A.parseInlineReply, {
+        return (0, c.jp)(o.A.parseInlineReply, {
             content: t,
             channelId: n
         })
@@ -99,22 +99,22 @@ function b(e) {
         i = (0, u.BC)(l, n);
     if (null == i) return null;
     let {
-        authorLabel: o,
-        color: s,
+        authorLabel: a,
+        color: o,
         trailingIcon: c
     } = i;
-    return "text" === i.type ? t = i.text : "markup" === i.type ? t = (0, r.jsx)(_, {
+    return "text" === i.type ? t = i.text : "markup" === i.type ? t = (0, r.jsx)(y, {
         markup: i.markup,
         channelId: l.channel_id
     }) : "message" === i.type && (t = (0, r.jsx)(f, {
         message: i.message
     })), (0, r.jsxs)("div", {
-        className: a()(d.Sl, {
-            [d.Vz]: "text-feedback-positive" === s
+        className: s()(d.Sl, {
+            [d.Vz]: "text-feedback-positive" === o
         }),
         children: [(0, r.jsxs)("span", {
             className: d.BK,
-            children: [null != o && "".concat(o, ": "), t]
+            children: [null != a && "".concat(a, ": "), t]
         }), null != c && (0, r.jsx)(m, {
             icon: c,
             size: "xxs",

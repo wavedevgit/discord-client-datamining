@@ -1,16 +1,16 @@
-/** Chunk was on 60449 **/
-/** chunk id: 593942, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => l
+/** Chunk was on 4670 **/
+/** chunk id: 593942, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => s
 });
-var i = n(314116),
-    s = n(985018);
+var n = i(314116),
+    l = i(985018);
 
-function l(e, t, n) {
-    (0, i.A)({
+function s(e, t, i) {
+    (0, n.A)({
         title: e,
         subtitle: t,
-        confirmText: s.intl.string(s.t.BddRzS),
-        onConfirm: n
+        confirmText: l.intl.string(l.t.BddRzS),
+        onConfirm: i
     })
 }

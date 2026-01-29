@@ -1,11 +1,11 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 961291, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Pm: () => j,
-    rS: () => O,
+    Pm: () => x,
+    rS: () => _,
     rr: () => A,
     sW: () => y,
-    yI: () => _
+    yI: () => O
 });
 var r = n(827734),
     l = n(322387),
@@ -16,17 +16,17 @@ var r = n(827734),
     c = n(271764),
     u = n(790018),
     d = n(338943),
-    p = n(478772),
-    h = n(846500),
-    f = n(784297),
-    g = n(51213),
+    h = n(478772),
+    p = n(846500),
+    g = n(784297),
+    f = n(51213),
     m = n(194066),
     b = n(211643);
 let A = {
-        MISSED_MESSAGES: f,
+        MISSED_MESSAGES: g,
         FRIEND_REQUEST_REMINDER: d,
         SCHEDULED_GUILD_EVENT: c,
-        TOP_MESSAGES: h,
+        TOP_MESSAGES: p,
         NOTIFICATION_CENTER: a,
         UPDATE_PROFILE: n(566213),
         FIND_FRIENDS: s,
@@ -60,8 +60,8 @@ let A = {
                 return "NOTIFICATION_CENTER"
         }
     },
-    _ = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
-    O = e => {
+    O = e => "icHighlight" === e ? "TOP_MESSAGES" : "NOTIFICATION_CENTER",
+    _ = e => {
         switch (e) {
             case l.hW.GO_LIVE_PUSH:
                 return {
@@ -79,7 +79,7 @@ let A = {
                 };
             case l.hW.DM_FRIEND_NUDGE:
                 return {
-                    icon: g, color: r.A.colors.BACKGROUND_MOD_STRONG
+                    icon: f, color: r.A.colors.BACKGROUND_MOD_STRONG
                 };
             case l.Uo.INCOMING_FRIEND_REQUESTS:
             case l.Uo.INCOMING_FRIEND_REQUESTS_ACCEPTED:
@@ -89,13 +89,13 @@ let A = {
             case l.Uo.INCOMING_GAME_FRIEND_REQUESTS:
             case l.Uo.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED:
                 return {
-                    icon: p, color: r.A.colors.BACKGROUND_MOD_STRONG
+                    icon: h, color: r.A.colors.BACKGROUND_MOD_STRONG
                 };
             default:
                 return null
         }
     },
-    j = e => {
+    x = e => {
         switch (e.item_enum) {
             case l.r_.UPDATE_PROFILE:
                 return i.Zp;

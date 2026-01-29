@@ -1,27 +1,27 @@
-/** Chunk was on 28979 **/
-/** chunk id: 450987, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    y: () => d
+/** Chunk was on 4670 **/
+/** chunk id: 450987, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    y: () => T
 });
 var n = i(627968),
     l = i(64700),
     s = i(732955),
     r = i(890138),
-    u = i(602450),
-    a = i(557571),
+    a = i(602450),
+    u = i(557571),
     o = i(652215),
-    T = i(985018);
-let d = t => {
+    d = i(985018);
+let T = e => {
     let {
-        onClick: e
-    } = t, i = (0, a.lV)(t => t.setDoInstall), d = (0, a.lV)(t => t.setInstallationStatus), A = (0, a.lV)(t => t.installationStatus), S = (0, l.useCallback)(() => {
-        null == e || e(), (0, r.u)(o.HAw.NITRO_WARP_CTA_CLICKED, {
+        onClick: t
+    } = e, i = (0, u.lV)(e => e.setDoInstall), T = (0, u.lV)(e => e.setInstallationStatus), c = (0, u.lV)(e => e.installationStatus), A = (0, l.useCallback)(() => {
+        null == t || t(), (0, r.u)(o.HAw.NITRO_WARP_CTA_CLICKED, {
             is_enable_warp: !1
-        }), A === u.Lk.ERROR && d(u.Lk.NOT_INSTALLED), i(!0)
-    }, [i, A, d, e]);
+        }), c === a.Lk.ERROR && T(a.Lk.NOT_INSTALLED), i(!0)
+    }, [i, c, T, t]);
     return (0, n.jsx)(s.$nd, {
         variant: "primary",
-        onClick: S,
-        text: T.intl.string(T.t["1WjMbC"])
+        onClick: A,
+        text: d.intl.string(d.t["1WjMbC"])
     })
 }

@@ -2,9 +2,9 @@
 /** chunk id: 471024, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    Ay: () => O,
-    de: () => m,
-    sI: () => A
+    Ay: () => A,
+    de: () => _,
+    sI: () => m
 });
 var i, r = n(627968),
     s = n(64700),
@@ -14,9 +14,9 @@ var i, r = n(627968),
     c = n(12641),
     d = n(985018),
     u = n(58755),
-    h = n(473169);
+    p = n(473169);
 
-function p(e, t, n) {
+function h(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -34,7 +34,7 @@ let f = e => e.stopPropagation(),
     y = () => (0, r.jsx)("div", {
         className: u.yF
     }),
-    A = (e, t, n) => (0, r.jsx)("div", {
+    m = (e, t, n) => (0, r.jsx)("div", {
         className: u.qD,
         children: d.intl.format(n, {
             keybind: t,
@@ -44,7 +44,7 @@ let f = e => e.stopPropagation(),
             }, n)
         })
     }),
-    m = (e, t) => (0, r.jsx)("div", {
+    _ = (e, t) => (0, r.jsx)("div", {
         className: u.g2,
         children: t
     });
@@ -172,7 +172,7 @@ class b extends(i = s.PureComponent) {
                     className: u.DD,
                     children: "function" == typeof t ? t(this.handleDismiss) : t
                 }), null != e ? (0, r.jsx)("div", {
-                    className: o()(u.rf, h.a5),
+                    className: o()(u.rf, p.a5),
                     style: {
                         WebkitLineClamp: n,
                         lineClamp: n
@@ -204,25 +204,25 @@ class b extends(i = s.PureComponent) {
         })
     }
     constructor(e) {
-        super(e), p(this, "handleDismiss", e => {
+        super(e), h(this, "handleDismiss", e => {
             e.stopPropagation();
             let {
                 onDismissClick: t
             } = this.props;
             null == t || t(e)
-        }), p(this, "handleConfirmClick", e => {
+        }), h(this, "handleConfirmClick", e => {
             e.stopPropagation();
             let {
                 onConfirmClick: t
             } = this.props;
             null == t || t(e)
-        }), p(this, "handleCancelClick", e => {
+        }), h(this, "handleCancelClick", e => {
             e.stopPropagation();
             let {
                 onCancelClick: t
             } = this.props;
             null == t || t(e)
-        }), p(this, "handleMouseEnter", () => {
+        }), h(this, "handleMouseEnter", () => {
             this.props.disabled || this.setState({
                 expanded: !0
             })
@@ -235,9 +235,9 @@ class b extends(i = s.PureComponent) {
         }
     }
 }
-p(b, "defaultProps", {
+h(b, "defaultProps", {
     maxBodyLines: void 0,
     expand: !1,
     disabled: !1
 });
-let O = b
+let A = b

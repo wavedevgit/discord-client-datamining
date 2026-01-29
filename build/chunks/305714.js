@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 305714, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -12,63 +12,63 @@ var r = n(627968),
     c = n(688810),
     d = n(607470),
     u = n(676279),
-    p = n(526292),
-    _ = n(753894),
+    _ = n(526292),
+    p = n(753894),
     m = n(693591),
     g = n(985018),
-    f = n(942916),
-    b = n(635736),
-    h = n(917025),
-    A = n(707621);
+    A = n(942916),
+    f = n(635736),
+    b = n(917025),
+    h = n(707621);
 let E = i.forwardRef((e, t) => {
     let {
         className: n,
         isFooterVisible: l,
         isDarkMode: E,
-        isReducedMotion: x,
-        subscriptionTier: O
+        isReducedMotion: O,
+        subscriptionTier: C
     } = e, {
-        analyticsLocations: C
-    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), y = (0, p.ar)(), j = (0, u.TM)(), T = i.useRef(null), [v, S] = i.useState(!1);
+        analyticsLocations: x
+    } = (0, c.Ay)(o.A.PREMIUM_MARKETING_FOOTER_CTA), S = (0, _.ar)(), T = (0, u.TM)(), I = i.useRef(null), [y, N] = i.useState(!1);
     return i.useEffect(() => {
-        !l || x || v || null == T.current || T.current.play()
-    }, [l, x, v]), (0, r.jsx)(c.f5, {
-        value: C,
+        !l || O || y || null == I.current || I.current.play()
+    }, [l, O, y]), (0, r.jsx)(c.f5, {
+        value: x,
         children: (0, r.jsxs)("div", {
             ref: t,
-            className: s()(f.kL, n),
+            className: s()(A.kL, n),
             children: [(0, r.jsx)(a.Heading, {
-                className: f.RH,
+                className: A.RH,
                 variant: "display-md",
                 color: "text-strong",
                 children: g.intl.string(g.t.lEw32m)
-            }), (0, r.jsx)(_.KN, {
-                subscriptionTier: O,
-                inOfferExperience: y,
-                containerClassName: f.Z5,
+            }), (0, r.jsx)(p.KN, {
+                subscriptionTier: C,
+                inOfferExperience: S,
+                containerClassName: A.Z5,
                 isApplicationHome: !0,
                 isDarkMode: E
             }), (0, r.jsx)("div", {
-                className: f.av,
+                className: A.av,
                 children: (0, r.jsx)(d.A, {
                     playsInline: !0,
                     muted: !0,
                     preload: "auto",
-                    poster: h.A,
-                    className: f.dV,
+                    poster: b.A,
+                    className: A.dV,
                     onEnded: () => {
-                        S(!0)
+                        N(!0)
                     },
-                    ref: T,
+                    ref: I,
                     children: (0, r.jsx)("source", {
-                        src: j ? b.A : A.A,
-                        type: j ? m.a.MP4 : m.a.WEBM
+                        src: T ? f.A : h.A,
+                        type: T ? m.a.MP4 : m.a.WEBM
                     })
                 })
             }), (0, r.jsx)("div", {
-                className: f.es
+                className: A.es
             }), (0, r.jsx)("div", {
-                className: f.fF
+                className: A.fF
             })]
         })
     })

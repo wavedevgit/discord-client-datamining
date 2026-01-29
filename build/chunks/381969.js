@@ -1,14 +1,14 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 381969, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m,
-    k: () => C
+    A: () => C,
+    k: () => f
 }), n(321073), n(896048);
 var r = n(627968),
     i = n(64700),
     l = n(284009),
-    o = n.n(l),
-    a = n(417597),
+    a = n.n(l),
+    o = n(417597),
     s = n(554146),
     c = n(58149),
     u = n(826673),
@@ -25,28 +25,28 @@ var r = n(627968),
     S = n(284683),
     P = n(634654),
     y = n(652215);
-let f = i.createContext(void 0);
+let m = i.createContext(void 0);
 
-function C() {
-    let e = i.useContext(f);
-    return o()(null != e, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), e
+function f() {
+    let e = i.useContext(m);
+    return a()(null != e, "must use useGuildShopDisplayContext within a GuildShopDisplayContextProvider"), e
 }
 
-function m(e) {
+function C(e) {
     var t;
     let {
         children: n,
         initialTab: l,
-        guildId: o
-    } = e, C = (0, a.bG)([I.A], () => I.A.getGuild(o)), m = (0, a.bG)([_.A], () => _.A.isViewingServerShop(o)), D = (0, p.P)(C, "guild_shop_page"), g = (0, N.YZ)(o, "guild_shop_page"), h = (null == C ? void 0 : C.features.has(y.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, b = (0, d.Oh)(null == C ? void 0 : C.id), U = null == (t = (0, E.Tq)(o)) ? void 0 : t.server_shop_tab_order, M = [], j = R.B.GUILD_SHOP_FULL_PREVIEW;
-    m || h && b ? (M.push(U === S.HA.PRODUCTS_FIRST ? R.B.GUILD_PRODUCTS : R.B.GUILD_ROLE_SUBSCRIPTIONS), M.push(U === S.HA.PRODUCTS_FIRST ? R.B.GUILD_ROLE_SUBSCRIPTIONS : R.B.GUILD_PRODUCTS), j = M[0]) : h && !b ? (M.push(R.B.GUILD_PRODUCTS), j = R.B.GUILD_PRODUCTS) : !h && b && (M.push(R.B.GUILD_ROLE_SUBSCRIPTIONS), j = R.B.GUILD_ROLE_SUBSCRIPTIONS, D && M.push(R.B.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : j;
-    let [k, v] = i.useState(l), L = D && !(b && g) || k === R.B.GUILD_PRODUCTS_PREVIEW;
+        guildId: a
+    } = e, f = (0, o.bG)([I.A], () => I.A.getGuild(a)), C = (0, o.bG)([_.A], () => _.A.isViewingServerShop(a)), g = (0, p.P)(f, "guild_shop_page"), D = (0, N.YZ)(a, "guild_shop_page"), h = (null == f ? void 0 : f.features.has(y.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) === !0, U = (0, d.Oh)(null == f ? void 0 : f.id), b = null == (t = (0, E.Tq)(a)) ? void 0 : t.server_shop_tab_order, M = [], j = R.B.GUILD_SHOP_FULL_PREVIEW;
+    C || h && U ? (M.push(b === S.HA.PRODUCTS_FIRST ? R.B.GUILD_PRODUCTS : R.B.GUILD_ROLE_SUBSCRIPTIONS), M.push(b === S.HA.PRODUCTS_FIRST ? R.B.GUILD_ROLE_SUBSCRIPTIONS : R.B.GUILD_PRODUCTS), j = M[0]) : h && !U ? (M.push(R.B.GUILD_PRODUCTS), j = R.B.GUILD_PRODUCTS) : !h && U && (M.push(R.B.GUILD_ROLE_SUBSCRIPTIONS), j = R.B.GUILD_ROLE_SUBSCRIPTIONS, g && M.push(R.B.GUILD_PRODUCTS_PREVIEW)), l = null != l ? l : j;
+    let [v, k] = i.useState(l), L = g && !(U && D) || v === R.B.GUILD_PRODUCTS_PREVIEW;
     return i.useEffect(() => {
-        v(l)
-    }, [l]), (0, r.jsx)(f.Provider, {
+        k(l)
+    }, [l]), (0, r.jsx)(m.Provider, {
         value: {
-            selectedTab: k,
-            setSelectedTab: v,
+            selectedTab: v,
+            setSelectedTab: k,
             categoryTabs: M,
             isPhantomPreview: L,
             handlePreviewDismiss: e => {
@@ -68,11 +68,11 @@ function m(e) {
                         })
                     }
                     return e
-                }({}, (0, c.H$)(o));
-                if (k === R.B.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), v(R.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = P.hN.DISMISS_TAB_PREVIEW;
+                }({}, (0, c.H$)(a));
+                if (v === R.B.GUILD_PRODUCTS_PREVIEW) e.stopPropagation(), k(R.B.GUILD_ROLE_SUBSCRIPTIONS), t.action_taken = P.hN.DISMISS_TAB_PREVIEW;
                 else {
                     var n;
-                    (0, A.bG)(y.BVt.CHANNEL(o, null == (n = T.Ay.getDefaultChannel(o)) ? void 0 : n.id)), t.action_taken = P.hN.DISMISS_FULL_PREVIEW
+                    (0, A.bG)(y.BVt.CHANNEL(a, null == (n = T.Ay.getDefaultChannel(a)) ? void 0 : n.id)), t.action_taken = P.hN.DISMISS_FULL_PREVIEW
                 }
                 O.default.track(y.HAw.GUILD_SHOP_PREVIEW_CLICK, t)
             }

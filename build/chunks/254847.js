@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 254847, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A,
-    Y: () => b
+    A: () => h,
+    Y: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -13,26 +13,26 @@ var r = n(627968),
     c = n(714991),
     d = n(695515),
     u = n(397808),
-    p = n(652215),
-    _ = n(842130),
+    _ = n(652215),
+    p = n(842130),
     m = n(985018),
     g = n(957415);
-let f = [18, 18, 16, 16, 14, 12, 10];
+let A = [18, 18, 16, 16, 14, 12, 10];
 
-function b(e) {
+function f(e) {
     var t;
-    return null != (t = f[e.length - 1]) ? t : f[f.length - 1]
+    return null != (t = A[e.length - 1]) ? t : A[A.length - 1]
 }
-let h = i.memo(e => {
+let b = i.memo(e => {
     let {
         guildId: t,
         className: n,
         customSubtext: i
     } = e, l = (0, a.bG)([d.A], () => d.A.getGuild(t));
     if (void 0 === l) return null;
-    let f = l.features.has(p.GuildFeatures.VERIFIED) || l.features.has(p.GuildFeatures.PARTNERED),
+    let A = l.features.has(_.GuildFeatures.VERIFIED) || l.features.has(_.GuildFeatures.PARTNERED),
         {
-            name: b
+            name: f
         } = l;
     return (0, r.jsxs)("div", {
         className: s()(g.kL, n),
@@ -42,24 +42,24 @@ let h = i.memo(e => {
             className: g.$z,
             children: [(0, r.jsxs)("div", {
                 className: g.wx,
-                children: [f ? (0, r.jsx)(c.A, {
+                children: [A ? (0, r.jsx)(c.A, {
                     guild: l,
                     tooltipPosition: "bottom",
                     tooltipColor: o.STz.Colors.PRIMARY,
                     className: g.n2
                 }) : null, (0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
-                    children: b
+                    children: f
                 })]
             }), (0, r.jsx)(o.Text, {
                 variant: "text-sm/medium",
                 color: "text-subtle",
-                children: null != i ? i : void 0 !== l.approximateMemberCount ? m.intl.format(_.default["5JmNgg"], {
+                children: null != i ? i : void 0 !== l.approximateMemberCount ? m.intl.format(p.default["5JmNgg"], {
                     members: l.approximateMemberCount
                 }) : null
             })]
         })]
     })
 });
-h.displayName = "FamilyCenterActivityGuildRow";
-let A = h
+b.displayName = "FamilyCenterActivityGuildRow";
+let h = b

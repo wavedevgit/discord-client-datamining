@@ -1,12 +1,12 @@
-/** Chunk was on 28979 **/
-/** chunk id: 890138, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    u: () => l
+/** Chunk was on 14782 **/
+/** chunk id: 890138, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    u: () => i
 });
-var n = i(73153);
+var a = n(73153);
 
-function l(t, e) {
-    n.h.dispatch({
+function i(t, e) {
+    a.h.dispatch({
         type: "TRACK",
         event: t,
         properties: e

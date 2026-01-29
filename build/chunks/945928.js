@@ -1,90 +1,90 @@
-/** Chunk was on 28979 **/
-/** chunk id: 945928, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => D
+/** Chunk was on 4670 **/
+/** chunk id: 945928, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Q: () => m
 });
 var n = i(64700),
     l = i(311907),
     s = i(827343),
     r = i(793574),
-    u = i(419954),
-    a = i(933297),
+    a = i(419954),
+    u = i(933297),
     o = i(347481),
-    T = i(430452),
-    d = i(780964),
-    A = i(77735),
-    S = i(791460),
-    E = i(53386),
-    g = i(585175),
-    _ = i(338145),
-    c = i(77371),
+    d = i(430452),
+    T = i(780964),
+    c = i(77735),
+    A = i(791460),
+    S = i(53386),
+    _ = i(585175),
+    E = i(338145),
+    g = i(77371),
     I = i(772797),
     O = i(180491),
-    N = i(903427),
-    C = i(509381),
+    C = i(903427),
+    N = i(509381),
     b = i(985018);
-let L = (0, u.Qx)(d.X.VOICE_INPUT_PROFILE_SETTING, {
+let p = (0, a.Qx)(T.X.VOICE_INPUT_PROFILE_SETTING, {
         useTitle: () => b.intl.string(b.t.LM3U3k),
         usePredicate: function() {
             let {
-                enabledInputProfiles: t
-            } = (0, A._)({
+                enabledInputProfiles: e
+            } = (0, c._)({
                 location: "SettingsRendererConfig"
             });
-            return t.length > 0
+            return e.length > 0
         },
         useSearchTerms: () => [b.intl.string(b.t.nuFtHH), b.intl.string(b.t.VZPR0R), b.intl.string(b.t.cjPbpT)],
         useValue: function() {
-            return (0, l.bG)([T.A], () => {
-                var t;
-                return null != (t = T.A.getActiveInputProfile()) ? t : C.my.CUSTOM
+            return (0, l.bG)([d.A], () => {
+                var e;
+                return null != (e = d.A.getActiveInputProfile()) ? e : N.my.CUSTOM
             })
         },
-        setValue: function(t) {
-            let e = [r.A.USER_SETTINGS_VOICE_AND_VIDEO];
-            s.A.setActiveInputProfile(t, {
-                analyticsLocations: e
+        setValue: function(e) {
+            let t = [r.A.USER_SETTINGS_VOICE_AND_VIDEO];
+            s.A.setActiveInputProfile(e, {
+                analyticsLocations: t
             })
         },
         useOptions: function() {
             let {
-                enabledInputProfiles: t
-            } = (0, A.d)({
+                enabledInputProfiles: e
+            } = (0, c.d)({
                 location: "InputProfileCategory"
             });
             return [{
-                value: C.my.VOICE_ISOLATION,
+                value: N.my.VOICE_ISOLATION,
                 name: b.intl.string(b.t.cjPbpT),
                 desc: b.intl.string(b.t.CzhvnE)
             }, {
-                value: C.my.STUDIO,
+                value: N.my.STUDIO,
                 name: b.intl.string(b.t.VZPR0R),
                 desc: b.intl.string(b.t.ZaJksS)
             }, {
-                value: C.my.CUSTOM,
+                value: N.my.CUSTOM,
                 name: b.intl.string(b.t["N/PQjv"]),
                 desc: b.intl.string(b.t.SnBmuY)
-            }].filter(e => {
+            }].filter(t => {
                 let {
                     value: i
-                } = e;
-                return t.includes(i)
+                } = t;
+                return e.includes(i)
             })
         }
     }),
-    D = (0, u.zZ)(d.X.VOICE_INPUT_PROFILE_CATEGORY, {
+    m = (0, a.zZ)(T.X.VOICE_INPUT_PROFILE_CATEGORY, {
         useInlineNotice: function() {
-            let t = (0, l.bG)([o.A, T.A], () => {
-                let t = T.A.getInputDeviceId();
-                return (o.A.hasEchoCancellation(t) || o.A.hasNoiseSuppression(t) || o.A.hasAutomaticGainControl(t)) && T.A.isInputProfileCustom()
+            let e = (0, l.bG)([o.A, d.A], () => {
+                let e = d.A.getInputDeviceId();
+                return (o.A.hasEchoCancellation(e) || o.A.hasNoiseSuppression(e) || o.A.hasAutomaticGainControl(e)) && d.A.isInputProfileCustom()
             });
             return n.useMemo(() => {
-                if (t) return {
-                    type: a.W.INLINE_NOTICE,
+                if (e) return {
+                    type: u.W.INLINE_NOTICE,
                     noticeType: "info",
                     useText: () => b.intl.string(b.t["/Whuzi"])
                 }
-            }, [t])
+            }, [e])
         },
-        buildLayout: () => [L, g.O, _.w, E.h, N.K, c.C, O.m, I.A, S.U]
+        buildLayout: () => [p, _.O, E.w, S.h, C.K, g.C, O.m, I.A, A.U]
     })

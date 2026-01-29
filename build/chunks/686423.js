@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 686423, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => f
 });
 var r = n(627968),
     i = n(64700),
@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(531260),
     d = n(987144),
     u = n(473145),
-    p = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    p = n(985018),
     m = n(572523);
 
 function g(e) {
@@ -35,7 +35,7 @@ function g(e) {
     return e
 }
 
-function f(e, t) {
+function A(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -47,34 +47,34 @@ function f(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let b = function() {
+let f = function() {
     let e = i.useRef(null),
         {
             analyticsLocations: t
         } = (0, o.Ay)(),
         {
-            fractionalState: b
+            fractionalState: f
         } = (0, c.A)();
 
-    function h(n) {
+    function b(n) {
         null != e.current && (0, a.OoC)(e.current), (0, d.g)({
             analyticsLocation: {
-                page: p.liQ.GUILD_BOOSTING_USER_SETTINGS,
-                section: p.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
-                object: p.ZSU.BUTTON_CTA,
-                objectType: p.AnalyticsObjectTypes.BUY
+                page: _.liQ.GUILD_BOOSTING_USER_SETTINGS,
+                section: _.JJy.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
+                object: _.ZSU.BUTTON_CTA,
+                objectType: _.AnalyticsObjectTypes.BUY
             },
             analyticsLocations: t,
             guild: n
         })
     }
-    async function A() {
+    async function h() {
         e.current = await (0, a.mMO)(async () => {
             let {
                 default: e
             } = await Promise.resolve().then(n.bind(n, 770101));
-            return t => (0, r.jsx)(e, f(g({}, t), {
-                onSelectGuild: h
+            return t => (0, r.jsx)(e, A(g({}, t), {
+                onSelectGuild: b
             }))
         }, {
             onCloseRequest: () => {
@@ -83,7 +83,7 @@ let b = function() {
         })
     }
     let E = (0, u.Nc)({
-        fractionalState: b
+        fractionalState: f
     });
     return (0, r.jsxs)("div", {
         className: m.iE,
@@ -94,7 +94,7 @@ let b = function() {
             className: m.C,
             color: "text-default",
             variant: "text-sm/medium",
-            children: _.intl.format(_.t.kqC5vq, {
+            children: p.intl.format(p.t.kqC5vq, {
                 boostAnyGuildHook: (e, t) => {
                     let n = null != E,
                         i = (0, a.Oer)(e),
@@ -102,7 +102,7 @@ let b = function() {
                             className: m.lO,
                             children: (0, r.jsx)(s.QWc, {
                                 variant: "primary",
-                                onClick: n ? void 0 : A,
+                                onClick: n ? void 0 : h,
                                 text: i,
                                 disabled: n
                             }, t)
@@ -110,7 +110,7 @@ let b = function() {
                     return n ? (0, r.jsx)(l.A, {
                         text: E,
                         "aria-label": E.toString(),
-                        children: e => (0, r.jsx)("span", f(g({}, e), {
+                        children: e => (0, r.jsx)("span", A(g({}, e), {
                             children: o
                         }))
                     }, t) : o

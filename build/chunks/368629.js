@@ -1,9 +1,9 @@
-/** Chunk was on 21738 **/
+/** Chunk was on 20545 **/
 /** chunk id: 368629, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    r: () => i
+    r: () => l
 });
-let r = (0, n(600975).C)({
+let i = (0, n(600975).C)({
     kind: "user",
     id: "2025-07_user_profile_holdout_h2",
     label: "User Profile Holdout H2 Experiment",
@@ -19,16 +19,16 @@ let r = (0, n(600975).C)({
     }]
 });
 
-function i(e) {
+function l(e) {
     let {
         location: t,
         autoTrackExposure: n = !0
     } = e, {
-        isInHoldout: i
-    } = r.useExperiment({
+        isInHoldout: l
+    } = i.useExperiment({
         location: t
     }, {
         autoTrackExposure: n
     });
-    return i
+    return l
 }

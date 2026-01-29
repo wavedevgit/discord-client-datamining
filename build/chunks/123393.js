@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 123393, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    W: () => p
+    W: () => h
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -13,39 +13,39 @@ var r = n(627968),
     u = n(513461),
     d = n(985018);
 
-function p(e, t, p, h) {
-    let [f, g] = l.useState(!1), m = (0, i.bG)([o.A], () => o.A.getChannel(h)), b = l.useCallback(() => {
+function h(e, t, h, p) {
+    let [g, f] = l.useState(!1), m = (0, i.bG)([o.A], () => o.A.getChannel(p)), b = l.useCallback(() => {
         (0, s.showToast)((0, s.createToast)(d.intl.string(d.t.R0RpRX), s.ToastType.FAILURE))
     }, []), A = l.useCallback(async () => {
-        if (!f && null != e && null != t && null != p) {
+        if (!g && null != e && null != t && null != h) {
             if (null != m) return void a.default.selectPrivateChannel(m.id);
-            if (!f) {
-                g(!0);
+            if (!g) {
+                f(!0);
                 try {
-                    await c.A.createOrEnterJoinRequestInterview(p)
+                    await c.A.createOrEnterJoinRequestInterview(h)
                 } catch (e) {
                     b()
                 } finally {
-                    g(!1)
+                    f(!1)
                 }
             }
         }
-    }, [e, p, m, b, f, t]);
+    }, [e, h, m, b, g, t]);
     return {
         approveRequest: async () => {
-            if (!f && null != e && null != t && null != p) {
-                g(!0);
+            if (!g && null != e && null != t && null != h) {
+                f(!0);
                 try {
-                    await c.A.updateGuildJoinRequest(e, t, p, u.B5.APPROVED)
+                    await c.A.updateGuildJoinRequest(e, t, h, u.B5.APPROVED)
                 } catch (e) {
                     b()
                 } finally {
-                    g(!1)
+                    f(!1)
                 }
             }
         },
         rejectRequest: () => {
-            null != e && null != t && null != p && (0, s.mMO)(async () => {
+            null != e && null != t && null != h && (0, s.mMO)(async () => {
                 let {
                     default: l
                 } = await n.e("70685").then(n.bind(n, 867276));
@@ -53,12 +53,12 @@ function p(e, t, p, h) {
                     modalProps: n,
                     guildId: e,
                     userId: t,
-                    guildJoinRequestId: p,
+                    guildJoinRequestId: h,
                     onError: b
                 })
             })
         },
-        submitting: f,
+        submitting: g,
         handleOpenInterview: A
     }
 }

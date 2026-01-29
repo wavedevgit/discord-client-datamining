@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 653008, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968),
     l = n(64700),
@@ -12,55 +12,55 @@ var r = n(627968),
     c = n(994500),
     u = n(301960),
     d = n(112758),
-    p = n(162792);
-let h = l.memo(function(e) {
+    h = n(162792);
+let p = l.memo(function(e) {
     var t, n;
     let {
-        message: h,
-        channel: f,
-        compact: g = !1,
+        message: p,
+        channel: g,
+        compact: f = !1,
         interactionUsernameProfile: m,
         interactionAvatarProfile: b,
         interactionData: A,
         referencedUsernameProfile: y,
-        referencedAvatarProfile: _,
-        setPopout: O
+        referencedAvatarProfile: O,
+        setPopout: _
     } = e, {
-        isInteractionUserBlocked: j,
-        isInteractionUserIgnored: v
+        isInteractionUserBlocked: x,
+        isInteractionUserIgnored: j
     } = (0, i.cf)([c.A], () => ({
-        isInteractionUserBlocked: c.A.isBlockedForMessage(h),
-        isInteractionUserIgnored: c.A.isIgnoredForMessage(h)
-    }), [h]), x = (0, i.bG)([o.A], () => o.A.getMessageByReference(null == h ? void 0 : h.messageReference)), E = (0, d.r4)(null == (t = h.interaction) ? void 0 : t.user.id, f.id), C = (0, d.T0)(h.interaction, f, m, O), S = (0, d.Yq)(b, O), I = (0, a.Am)(h), N = (null == I ? void 0 : I.type) === s.G4.APPLICATION_COMMAND ? null == (n = I.target_user) ? void 0 : n.id : void 0, T = (0, d.r4)(N, f.id), P = (0, d.I)(N, f, y, O), w = (0, d.Ge)(_, O), R = (0, d.U_)(A, O), D = l.useCallback(() => {
-        O({
+        isInteractionUserBlocked: c.A.isBlockedForMessage(p),
+        isInteractionUserIgnored: c.A.isIgnoredForMessage(p)
+    }), [p]), v = (0, i.bG)([o.A], () => o.A.getMessageByReference(null == p ? void 0 : p.messageReference)), E = (0, d.r4)(null == (t = p.interaction) ? void 0 : t.user.id, g.id), C = (0, d.T0)(p.interaction, g, m, _), S = (0, d.Yq)(b, _), I = (0, a.Am)(p), N = (null == I ? void 0 : I.type) === s.G4.APPLICATION_COMMAND ? null == (n = I.target_user) ? void 0 : n.id : void 0, T = (0, d.r4)(N, g.id), P = (0, d.I)(N, g, y, _), w = (0, d.Ge)(O, _), R = (0, d.U_)(A, _), D = l.useCallback(() => {
+        _({
             interactionUsernameProfile: !1,
             interactionAvatarProfile: !1,
             interactionData: !1,
             referencedUsernameProfile: !1,
             referencedAvatarProfile: !1
         })
-    }, [O]), M = l.useCallback(() => (0, p.A)({
-        message: h,
-        channel: f,
-        compact: g,
-        setPopout: O,
-        referencedAvatarProfile: _,
+    }, [_]), L = l.useCallback(() => (0, h.A)({
+        message: p,
+        channel: g,
+        compact: f,
+        setPopout: _,
+        referencedAvatarProfile: O,
         referencedUsernameProfile: y,
-        replyReference: h.messageReference,
-        replyMessage: x,
+        replyReference: p.messageReference,
+        replyMessage: v,
         isReplySpineClickable: !1,
         showReplySpine: !1
-    }), [f, g, h, _, x, y, O]);
+    }), [g, f, p, O, v, y, _]);
     return (0, r.jsx)(u.A, {
-        message: h,
-        channel: f,
-        compact: g,
-        isInteractionUserBlocked: j,
-        isInteractionUserIgnored: v,
+        message: p,
+        channel: g,
+        compact: f,
+        isInteractionUserBlocked: x,
+        isInteractionUserIgnored: j,
         showAvatarPopout: b,
         showUsernamePopout: m,
         showDataPopout: A,
-        showTargetAvatarPopout: _,
+        showTargetAvatarPopout: O,
         showTargetUsernamePopout: y,
         onClickAvatar: S,
         onClickUsername: C,
@@ -70,17 +70,17 @@ let h = l.memo(function(e) {
         onClickTargetUsername: P,
         onTargetUserContextMenu: T,
         onPopoutRequestClose: D,
-        renderTargetMessage: M
+        renderTargetMessage: L
     })
 });
 
-function f(e, t, n) {
+function g(e, t, n) {
     let {
         message: l,
         channel: i,
         compact: s
     } = e;
-    return null != l.interaction && "" !== l.interaction.displayName ? (0, r.jsx)(h, function(e) {
+    return null != l.interaction && "" !== l.interaction.displayName ? (0, r.jsx)(p, function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 37770, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     F: () => s,
@@ -7,8 +7,8 @@ n.d(t, {
 var r = n(311907),
     i = n(250105),
     l = n(217222),
-    o = n(128319);
-let a = (0, i.Ay)({
+    a = n(128319);
+let o = (0, i.Ay)({
     name: "2025-10-windows-mute-detection",
     kind: "user",
     defaultConfig: {
@@ -26,12 +26,12 @@ function s(e) {
         location: t
     } = e, {
         isInHoldout: n
-    } = o.p.getCurrentConfig({
+    } = a.p.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0
     });
-    return n ? a.definition.defaultConfig : a.getConfig({
+    return n ? o.definition.defaultConfig : o.getConfig({
         location: t
     })
 }

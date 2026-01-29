@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 530060, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g
@@ -13,8 +13,8 @@ var i = n(503698),
     c = n(895944),
     d = n(649032),
     u = n(343547),
-    p = n(49370),
-    _ = n(985018),
+    _ = n(49370),
+    p = n(985018),
     m = n(128906);
 let g = e => {
     let {
@@ -35,11 +35,11 @@ let g = e => {
                 style: {
                     textAlign: "start"
                 },
-                children: _.intl.string(p.default.EdGvBM)
+                children: p.intl.string(_.default.EdGvBM)
             }), (0, r.jsx)(a.EYj, {
                 variant: "text-lg/normal",
                 className: l()(m.VA, m.dO),
-                children: _.intl.string(p.default["2KoHRF"])
+                children: p.intl.string(_.default["2KoHRF"])
             }), (0, r.jsx)(u.A, {})]
         })
     }) : null

@@ -1,15 +1,15 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 928039, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => a
+    A: () => o
 });
 var r = n(64700),
     i = n(884362),
     l = n(311907),
-    o = n(775602);
+    a = n(775602);
 
-function a(e, t, n) {
-    let a = (0, l.bG)([o.A], () => o.A.keyboardModeEnabled),
+function o(e, t, n) {
+    let o = (0, l.bG)([a.A], () => a.A.keyboardModeEnabled),
         s = r.useCallback(e => {
             let n = document.querySelector(e),
                 r = t.current;
@@ -36,7 +36,7 @@ function a(e, t, n) {
         }), [t]);
     return (0, i.Ay)({
         id: e,
-        isEnabled: a,
+        isEnabled: o,
         setFocus: s,
         scrollToStart: c,
         scrollToEnd: u,

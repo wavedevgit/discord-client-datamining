@@ -1,6 +1,6 @@
-/** Chunk was on 28979 **/
-/** chunk id: 477895, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 477895, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     Bf: () => l
 });
 let n = (0, i(945810).mj)({
@@ -22,8 +22,8 @@ let n = (0, i(945810).mj)({
     }
 });
 
-function l(t) {
+function l(e) {
     return n.useConfig({
-        location: t
+        location: e
     })
 }

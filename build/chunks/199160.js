@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 199160, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 }), n(896048);
 var r, l = n(311907),
     i = n(73153);
@@ -43,12 +43,12 @@ function o(e, t) {
 let c = !1,
     u = {},
     d = new Set,
-    p = {};
+    h = {};
 
-function h() {
-    p = {}
+function p() {
+    h = {}
 }
-class f extends(r = l.Ay.Store) {
+class g extends(r = l.Ay.Store) {
     getMessagesPendingDeletion() {
         return d
     }
@@ -56,14 +56,14 @@ class f extends(r = l.Ay.Store) {
         return u
     }
     getPendingScheduledMessage(e) {
-        return p[e]
+        return h[e]
     }
     get loading() {
         return c
     }
 }
-s(f, "displayName", "scheduledMessageStore");
-let g = new f(i.h, {
+s(g, "displayName", "scheduledMessageStore");
+let f = new g(i.h, {
     SCHEDULED_MESSAGES_CREATE_SUCCESS: function(e) {
         let {
             channelId: t,
@@ -71,7 +71,7 @@ let g = new f(i.h, {
         } = e;
         u = o(a({}, u), {
             [n.scheduledMessageId]: n
-        }), p = a({}, p), delete p[t]
+        }), h = a({}, h), delete h[t]
     },
     SCHEDULED_MESSAGES_UPDATE_SUCCESS: function(e) {
         let {
@@ -122,7 +122,7 @@ let g = new f(i.h, {
             channelId: t,
             scheduledTimestamp: n
         } = e;
-        p = o(a({}, p), {
+        h = o(a({}, h), {
             [t]: {
                 channelId: t,
                 scheduledTimestamp: n
@@ -133,8 +133,8 @@ let g = new f(i.h, {
         let {
             channelId: t
         } = e;
-        p = a({}, p), delete p[t]
+        h = a({}, h), delete h[t]
     },
-    LOGOUT: h,
-    CONNECTION_OPEN: h
+    LOGOUT: p,
+    CONNECTION_OPEN: p
 })

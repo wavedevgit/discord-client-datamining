@@ -1,34 +1,34 @@
-/** Chunk was on 28979 **/
-/** chunk id: 317014, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => S
+/** Chunk was on 4670 **/
+/** chunk id: 317014, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    t: () => A
 });
 var n = i(945276),
     l = i(639555),
     s = i(617641),
     r = i(546140),
-    u = i(776038),
-    a = i(419954),
+    a = i(776038),
+    u = i(419954),
     o = i(975571),
-    T = i(780964),
-    d = i(652215),
-    A = i(985018);
-let S = (0, a.zD)(T.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
-    useTitle: () => A.intl.string(A.t.qFsx5q),
-    useSubtitle: () => A.intl.format(A.t.lunaRv, {
-        learnMoreLink: o.A.getArticleURL(d.MVz.SAFETY_ALERTS)
+    d = i(780964),
+    T = i(652215),
+    c = i(985018);
+let A = (0, u.zD)(d.X.CONTENT_AND_SOCIAL_DM_SAFETY_ALERTS_SETTING, {
+    useTitle: () => c.intl.string(c.t.qFsx5q),
+    useSubtitle: () => c.intl.format(c.t.lunaRv, {
+        learnMoreLink: o.A.getArticleURL(T.MVz.SAFETY_ALERTS)
     }),
     useValue: r.L,
-    setValue: u.a,
+    setValue: a.a,
     usePredicate: function() {
-        var t;
-        let e = (0, s.Lc)({
+        var e;
+        let t = (0, s.Lc)({
                 location: "DMSafetyAlertsSetting"
             }),
             i = (0, l.Rv)({
                 location: "DMSafetyAlertsSetting"
             }),
-            r = null == (t = (0, n.A)()) || t;
-        return e && !r && !i
+            r = null == (e = (0, n.A)()) || e;
+        return t && !r && !i
     }
 })

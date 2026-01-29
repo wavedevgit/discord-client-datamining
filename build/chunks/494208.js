@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 494208, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -13,28 +13,28 @@ var r = n(627968),
     u = n(985018),
     d = n(498654);
 
-function p(e) {
+function h(e) {
     let {
         channel: t
-    } = e, [n, p] = l.useState(!1), h = l.useRef(null), f = (0, s.vL)(t), g = l.useCallback(() => {
-        p(!1)
+    } = e, [n, h] = l.useState(!1), p = l.useRef(null), g = (0, s.vL)(t), f = l.useCallback(() => {
+        h(!1)
     }, []), m = l.useCallback(() => {
-        n || (0, o.D3)("Popout"), p(!n)
+        n || (0, o.D3)("Popout"), h(!n)
     }, [n]);
     return (0, r.jsx)(i.YNO, {
-        targetElementRef: h,
+        targetElementRef: p,
         animation: i.YNO.Animation.NONE,
         position: "bottom",
         align: "right",
         autoInvert: !1,
         shouldShow: n,
-        onRequestClose: g,
+        onRequestClose: f,
         renderPopout: function() {
             return (0, r.jsx)(i.lGe, {
                 children: (0, r.jsx)(c.A, {
                     className: d.T,
                     channel: t,
-                    onClose: g,
+                    onClose: f,
                     context: "popout"
                 })
             })
@@ -63,13 +63,13 @@ function p(e) {
                 }
                 return e
             }({}, e), l = l = {
-                ref: h,
+                ref: p,
                 className: d.Kk,
                 onClick: m,
                 icon: i.ysw,
                 "aria-label": u.intl.string(u.t.B2panI),
                 tooltip: s ? null : u.intl.string(u.t.B2panI),
-                disabled: f,
+                disabled: g,
                 selected: s
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                 var n = Object.keys(e);

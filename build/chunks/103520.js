@@ -1,14 +1,14 @@
-/** Chunk was on 28979 **/
-/** chunk id: 103520, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    a: () => a
+/** Chunk was on 4670 **/
+/** chunk id: 103520, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    a: () => u
 });
 var n = i(793998),
     l = i(419954),
     s = i(780964),
     r = i(985018),
-    u = i(842130);
-let a = (0, l.E2)(s.X.FAMILY_CENTER_SETTING, {
+    a = i(842130);
+let u = (0, l.E2)(s.X.FAMILY_CENTER_SETTING, {
     Component: n.p,
-    useSearchTerms: () => [r.intl.string(u.default.RZqaJn), r.intl.string(u.default.bdBmqy), r.intl.string(u.default["gVWG+6"]), r.intl.string(u.default.ahKIJO), r.intl.string(u.default["8SLtqb"])]
+    useSearchTerms: () => [r.intl.string(a.default.RZqaJn), r.intl.string(a.default.bdBmqy), r.intl.string(a.default["gVWG+6"]), r.intl.string(a.default.ahKIJO), r.intl.string(a.default["8SLtqb"])]
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 10005, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o
@@ -13,8 +13,8 @@ function o(e) {
     let {
         onError: t,
         onSuccess: n
-    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [p, _] = r.useState(!1), [m, g] = r.useState(!1), [f, b] = r.useState(!1), [h, A] = r.useState(!1), [E, x] = r.useState(!1), [O, C] = r.useState(!1), y = o || d || p || m || h || O, j = r.useCallback(async e => {
-        if (!y) {
+    } = null != e ? e : {}, [o, c] = r.useState(!1), [d, u] = r.useState(!1), [_, p] = r.useState(!1), [m, g] = r.useState(!1), [A, f] = r.useState(!1), [b, h] = r.useState(!1), [E, O] = r.useState(!1), [C, x] = r.useState(!1), S = o || d || _ || m || b || C, T = r.useCallback(async e => {
+        if (!S) {
             c(!0);
             try {
                 await (0, l.nt)(e, a.Ef.ACTIVE), null == n || n()
@@ -25,8 +25,8 @@ function o(e) {
                 c(!1)
             }
         }
-    }, [y, t, n]), T = r.useCallback(async e => {
-        if (!y) {
+    }, [S, t, n]), I = r.useCallback(async e => {
+        if (!S) {
             u(!0);
             try {
                 await (0, l.nt)(e, a.Ef.DECLINED), null == n || n()
@@ -37,20 +37,20 @@ function o(e) {
                 u(!1)
             }
         }
-    }, [y, t, n]), v = r.useCallback(async e => {
-        if (!y) {
-            _(!0);
+    }, [S, t, n]), y = r.useCallback(async e => {
+        if (!S) {
+            p(!0);
             try {
                 await (0, l.nt)(e, a.Ef.INACTIVE), null == n || n()
             } catch (n) {
                 let e = new i.LG(n);
                 null == t || t(e)
             } finally {
-                _(!1)
+                p(!1)
             }
         }
-    }, [y, t, n]), S = r.useCallback(async e => {
-        if (!y) {
+    }, [S, t, n]), N = r.useCallback(async e => {
+        if (!S) {
             g(!0);
             try {
                 await (0, l.e$)(e), null == n || n()
@@ -61,75 +61,75 @@ function o(e) {
                 g(!1)
             }
         }
-    }, [y, t, n]), I = r.useCallback(async () => {
-        if (!f) {
-            b(!0);
+    }, [S, t, n]), j = r.useCallback(async () => {
+        if (!A) {
+            f(!0);
             try {
                 await (0, l.HB)(), null == n || n()
             } catch (n) {
                 let e = new i.LG(n);
                 null == t || t(e)
             } finally {
-                b(!1)
+                f(!1)
             }
         }
-    }, [f, t, n]), N = r.useCallback(async e => {
+    }, [A, t, n]), v = r.useCallback(async e => {
         if (!E) {
-            x(!0);
+            O(!0);
             try {
                 await l.Ay.fetchTeenActivity(e), null == n || n()
             } catch (n) {
                 let e = new i.LG(n);
                 null == t || t(e)
             } finally {
-                x(!1)
+                O(!1)
             }
         }
     }, [E, t, n]);
     return {
-        acceptLinkRequest: j,
-        declineLinkRequest: T,
-        disconnectLinkRequest: v,
-        cancelLinkRequest: S,
-        selectTeenUser: N,
-        getLinkCode: I,
+        acceptLinkRequest: T,
+        declineLinkRequest: I,
+        disconnectLinkRequest: y,
+        cancelLinkRequest: N,
+        selectTeenUser: v,
+        getLinkCode: j,
         requestLink: r.useCallback(async (e, r) => {
-            if (!h) {
-                A(!0);
+            if (!b) {
+                h(!0);
                 try {
                     await l.Ay.requestLink(e, r), null == n || n()
                 } catch (n) {
                     let e = new i.LG(n);
                     null == t || t(e)
                 } finally {
-                    A(!1)
+                    h(!1)
                 }
             }
-        }, [h, t, n]),
+        }, [b, t, n]),
         loadMore: r.useCallback(async e => {
             let n = s.A.getActionsForDisplayType(e),
                 r = n[n.length - 1],
                 a = s.A.getStartId(),
                 o = s.A.getSelectedTeenId();
-            if (!O && null != a && null != o) {
-                C(!0);
+            if (!C && null != a && null != o) {
+                x(!0);
                 try {
                     await l.Ay.fetchMoreTeenActivity(o, e, a, r.event_id)
                 } catch (n) {
                     let e = new i.LG(n);
                     null == t || t(e)
                 } finally {
-                    C(!1)
+                    x(!1)
                 }
             }
-        }, [O, t]),
+        }, [C, t]),
         isAcceptLoading: o,
         isDeclineLoading: d,
-        isDisconnectLoading: p,
+        isDisconnectLoading: _,
         isCancelLoading: m,
-        isGetLinkCodeLoading: f,
+        isGetLinkCodeLoading: A,
         isSelectTeenUserLoading: E,
-        isRequestingLink: h,
-        isMoreLoading: O
+        isRequestingLink: b,
+        isMoreLoading: C
     }
 }

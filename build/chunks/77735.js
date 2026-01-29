@@ -1,26 +1,26 @@
-/** Chunk was on 38660 **/
+/** Chunk was on 40198 **/
 /** chunk id: 77735, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    _: () => l,
-    d: () => r
+    _: () => o,
+    d: () => s
 });
 var i = n(509381);
-let s = [i.my.VOICE_ISOLATION, i.my.STUDIO, i.my.CUSTOM];
+let r = [i.my.VOICE_ISOLATION, i.my.STUDIO, i.my.CUSTOM];
 
-function l(e) {
+function o(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: s
+        enabledInputProfiles: r
     }
 }
 
-function r(e) {
+function s(e) {
     let {
         location: t
     } = e;
     return {
-        enabledInputProfiles: s
+        enabledInputProfiles: r
     }
 }

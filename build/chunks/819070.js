@@ -1,14 +1,14 @@
-/** Chunk was on 28979 **/
-/** chunk id: 819070, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    M: () => a
+/** Chunk was on 4670 **/
+/** chunk id: 819070, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    M: () => u
 });
 var n = i(419954),
     l = i(780964),
     s = i(811131),
     r = i(298802),
-    u = i(985018);
-let a = (0, n.zZ)(l.X.APPEARANCE_SCALING_CATEGORY, {
-    useTitle: () => u.intl.string(u.t["0Yh+ZX"]),
+    a = i(985018);
+let u = (0, n.zZ)(l.X.APPEARANCE_SCALING_CATEGORY, {
+    useTitle: () => a.intl.string(a.t["0Yh+ZX"]),
     buildLayout: () => [s.B, r.G]
 })

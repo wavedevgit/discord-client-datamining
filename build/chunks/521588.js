@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 521588, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     a: () => a
@@ -18,7 +18,7 @@ let a = e => {
         alert: c = !1,
         showBlurpleTreatment: u = !1,
         maskColor: d = 2,
-        additionalStyles: p
+        additionalStyles: h
     } = e;
     return (0, r.jsx)("span", {
         className: i()(s.Om, {
@@ -28,7 +28,7 @@ let a = e => {
             [s.Pn]: 1 === d,
             [s.HP]: 2 === d,
             [s.gl]: 3 === d,
-            [null != p ? p : ""]: void 0 !== p
+            [null != h ? h : ""]: void 0 !== h
         }),
         style: {
             height: o,

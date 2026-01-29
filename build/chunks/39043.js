@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 39043, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
@@ -16,7 +16,7 @@ let c = i.memo(function(e) {
         useTitle: n,
         layout: c,
         useCollapsedSubtitle: d
-    } = t, [u, p] = i.useState(!1), [_, m] = i.useState(!0);
+    } = t, [u, _] = i.useState(!1), [p, m] = i.useState(!0);
     i.useEffect(() => s.A.subscribe(e => {
         let {
             navTransition: t
@@ -25,7 +25,7 @@ let c = i.memo(function(e) {
     }, e => {
         if (null == e) return;
         let n = (null == e ? void 0 : e.targetAccordionKey) === t.key;
-        if (n && !u && (p(!0), m(!1)), n && u) {
+        if (n && !u && (_(!0), m(!1)), n && u) {
             var r, i;
             s.A.setState({
                 navTransition: (r = function(e) {
@@ -64,8 +64,8 @@ let c = i.memo(function(e) {
         fireImmediately: !0
     }), [u, t.key]);
     let g = null == n ? void 0 : n(u),
-        f = null == d ? void 0 : d(),
-        b = i.useCallback(e => {
+        A = null == d ? void 0 : d(),
+        f = i.useCallback(e => {
             e && s.A.setState({
                 navTransition: {
                     targetKey: t.key,
@@ -77,11 +77,11 @@ let c = i.memo(function(e) {
         }, [t.key]);
     return (0, r.jsx)(o.f, {
         title: g,
-        collapsedSubtitle: f,
+        collapsedSubtitle: A,
         isExpanded: u,
-        onExpandedChange: p,
-        onExpandedChangeComplete: b,
-        animate: _,
+        onExpandedChange: _,
+        onExpandedChangeComplete: f,
+        animate: p,
         children: c.map(e => (0, r.jsx)(a.A, {
             node: e
         }, e.key))

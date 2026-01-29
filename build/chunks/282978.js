@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 282978, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(990078),
     u = n(397927),
     d = n(104171),
-    p = n(793574),
-    h = n(688810),
-    f = n(919395),
-    g = n(657331),
+    h = n(793574),
+    p = n(688810),
+    g = n(919395),
+    f = n(657331),
     m = n(696451),
     b = n(71393),
     A = n(287809),
     y = n(583613),
-    _ = n(403362),
-    O = n(58736),
-    j = n(518477),
-    v = n(985018),
-    x = n(940688);
+    O = n(403362),
+    _ = n(58736),
+    x = n(518477),
+    j = n(985018),
+    v = n(940688);
 
 function E(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ class C {
                 return [t, n.map(e => {
                     var t;
                     return null == (t = b.A.getGuild(e)) ? void 0 : t.name
-                }).filter(_.Vq)]
+                }).filter(O.Vq)]
             }).filter(t => {
                 let [n] = t;
                 return n !== (null == e ? void 0 : e.globalName)
@@ -88,23 +88,23 @@ class C {
         })), E(this, "renderMoreAvatars", () => (0, r.jsx)(c.m, {
             asContainer: !0,
             tag: "span",
-            text: v.intl.string(v.t["UTjRE/"]),
+            text: j.intl.string(j.t["UTjRE/"]),
             position: "bottom",
             children: (0, r.jsx)(u.DUT, {
-                className: x.OZ,
+                className: v.OZ,
                 onClick: this.handleClick,
                 children: (0, r.jsx)(u.U1e, {
                     size: "xs",
                     color: "currentColor",
-                    className: x.WW
+                    className: v.WW
                 })
             })
         }, "more-avatars")), E(this, "handleClick", () => {
-            (0, g.openUserProfileModal)({
+            (0, f.openUserProfileModal)({
                 userId: this.userId,
                 channelId: this.channelId,
                 sourceAnalyticsLocations: this.analyticsLocations,
-                tabSection: j.RP.MUTUAL_GUILDS
+                tabSection: x.RP.MUTUAL_GUILDS
             })
         }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
     }
@@ -113,9 +113,9 @@ class C {
 function S(e) {
     let {
         channel: t
-    } = e, n = t.getRecipientId(), i = (0, f.EI)(n), s = Array(i.length).fill(null), {
-        analyticsLocations: g
-    } = (0, h.Ay)(p.A.AKA), m = function(e) {
+    } = e, n = t.getRecipientId(), i = (0, g.EI)(n), s = Array(i.length).fill(null), {
+        analyticsLocations: f
+    } = (0, p.Ay)(h.A.AKA), m = function(e) {
         let {
             userId: t,
             channelId: n,
@@ -134,23 +134,23 @@ function S(e) {
         }), s
     }({
         userId: n,
-        analyticsLocations: g,
+        analyticsLocations: f,
         channelId: t.id
-    }), [y, _] = l.useState(!1), j = l.useCallback(() => {
-        _(!0)
-    }, [_]), E = l.useCallback(() => {
-        _(!1)
-    }, [_]);
+    }), [y, O] = l.useState(!1), x = l.useCallback(() => {
+        O(!0)
+    }, [O]), E = l.useCallback(() => {
+        O(!1)
+    }, [O]);
     return 0 === m.getNicknameGuildPairs().length && 0 === i.length ? (0, r.jsx)("div", {
-        className: x.jH
-    }) : (0, r.jsxs)(h.f5, {
-        value: g,
-        children: [(0, r.jsx)(O.cG, {
-            className: x.yF
+        className: v.jH
+    }) : (0, r.jsxs)(p.f5, {
+        value: f,
+        children: [(0, r.jsx)(_.cG, {
+            className: v.yF
         }), (0, r.jsx)(u.LpS, {
-            text: v.intl.string(v.t.l1QVfj),
+            text: j.intl.string(j.t.l1QVfj),
             disableColor: !0,
-            className: x.RV
+            className: v.RV
         }), i.length > 0 ? (0, r.jsx)(d.Ay, {
             size: 16,
             users: s,
@@ -165,7 +165,7 @@ function S(e) {
                     position: "bottom",
                     children: (0, r.jsx)("img", {
                         alt: "",
-                        className: x.my,
+                        className: v.my,
                         onClick: m.handleClick,
                         src: s.getAvatarURL(a, 16),
                         "aria-hidden": !0
@@ -175,12 +175,12 @@ function S(e) {
             renderMoreUsers: m.renderMoreAvatars,
             guildId: void 0,
             max: 3,
-            className: x.HD
+            className: v.HD
         }) : null, m.getNicknameGuildPairs().length > 0 ? (0, r.jsx)(o.A, {
             position: "bottom",
-            className: x.wm,
+            className: v.wm,
             delay: 0,
-            onTooltipShow: j,
+            onTooltipShow: x,
             onTooltipHide: E,
             children: m.renderNicknamePairs(!y)
         }) : null]

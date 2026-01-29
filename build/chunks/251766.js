@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 251766, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    e: () => p
+    e: () => h
 });
 var r = n(311907),
     l = n(164956),
@@ -13,16 +13,16 @@ var r = n(311907),
     u = n(855918),
     d = n(652215);
 
-function p(e) {
+function h(e) {
     let {
         guildId: t,
         channelId: n
-    } = e, p = (0, c.uP)(t);
+    } = e, h = (0, c.uP)(t);
     return (0, r.yK)([s.A, o.A, l.A], () => {
         let e = s.A.getChannel(n),
             r = o.A.getGuild(t),
             c = l.A.isViewingServerShop(t);
-        return null != r && null != e ? p.filter(t => (function(e, t, n) {
+        return null != r && null != e ? h.filter(t => (function(e, t, n) {
             let {
                 isPreviewingRoles: r = !1
             } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {};
@@ -32,10 +32,10 @@ function p(e) {
             let s = a.A.getEveryoneRole(t),
                 o = null != s && !(0, i._m)(s, d.xBc.VIEW_CHANNEL),
                 c = (0, u.AN)(n, n.permissionOverwrites[t.id]),
-                p = a.A.getRole(t.id, e.role_id);
-            return o && !c && null != p && (0, u.iR)(p) && !(0, u.AN)(n, l)
+                h = a.A.getRole(t.id, e.role_id);
+            return o && !c && null != h && (0, u.iR)(h) && !(0, u.AN)(n, l)
         })(t, r, e, {
             isPreviewingRoles: c
         })) : []
-    }, [t, n, p])
+    }, [t, n, h])
 }

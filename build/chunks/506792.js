@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 506792, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -12,10 +12,10 @@ var r = n(627968),
     c = n(676002),
     u = n(734057),
     d = n(808728),
-    p = n(576705),
-    h = n(557534),
-    f = n(166444),
-    g = n(652215),
+    h = n(576705),
+    p = n(557534),
+    g = n(166444),
+    f = n(652215),
     m = n(790782),
     b = n(728444);
 let A = (0, c.a)(function(e) {
@@ -25,15 +25,15 @@ let A = (0, c.a)(function(e) {
         position: c,
         disableManageChannels: A,
         sorting: y,
-        sortingType: _,
-        sortingPosition: O,
-        connectChannelDragSource: j,
-        connectChannelDropTarget: v,
-        tabIndex: x
+        sortingType: O,
+        sortingPosition: _,
+        connectChannelDragSource: x,
+        connectChannelDropTarget: j,
+        tabIndex: v
     } = e, E = (0, a.bG)([u.A, d.Ay], () => {
         let e = d.Ay.getDirectoryChannelIds(t.id);
         return 0 === e.length ? null : u.A.getChannel(e[0])
-    }), C = (0, a.bG)([u.A], () => u.A.getChannel(null == E ? void 0 : E.parent_id)), S = i === (null == E ? void 0 : E.id), I = (0, a.bG)([p.A], () => null != C ? p.A.can(g.xBc.MANAGE_CHANNELS, C) : null != t && p.A.can(g.xBc.MANAGE_CHANNELS, t)), N = l.useCallback(e => {
+    }), C = (0, a.bG)([u.A], () => u.A.getChannel(null == E ? void 0 : E.parent_id)), S = i === (null == E ? void 0 : E.id), I = (0, a.bG)([h.A], () => null != C ? h.A.can(f.xBc.MANAGE_CHANNELS, C) : null != t && h.A.can(f.xBc.MANAGE_CHANNELS, t)), N = l.useCallback(e => {
         null != E && (0, o.L3)(e, async () => {
             let {
                 default: e
@@ -73,15 +73,15 @@ let A = (0, c.a)(function(e) {
         })
     }, [E]);
     if (null == E) return null;
-    let T = (0, h.O6)(c, O),
-        P = (0, h.h$)(E, y, _),
+    let T = (0, p.O6)(c, _),
+        P = (0, p.h$)(E, y, O),
         w = (0, r.jsx)("div", {
             className: s()(T, {
                 [b.r9]: P,
                 [b.wH]: S
             }),
             "data-dnd-name": E.name,
-            children: (0, r.jsxs)(f.Ay, {
+            children: (0, r.jsxs)(g.Ay, {
                 className: b.Ki,
                 channel: E,
                 guild: t,
@@ -89,15 +89,15 @@ let A = (0, c.a)(function(e) {
                 onContextMenu: N,
                 forceInteractable: !0,
                 resolvedUnreadSetting: m.e.ONLY_MENTIONS,
-                children: [(0, r.jsx)(h.gQ, {
+                children: [(0, r.jsx)(p.gQ, {
                     channel: E,
-                    tabIndex: x
-                }), (0, r.jsx)(h.Jd, {
+                    tabIndex: v
+                }), (0, r.jsx)(p.Jd, {
                     channel: E,
                     disableManageChannels: A,
-                    tabIndex: x
+                    tabIndex: v
                 })]
             })
         });
-    return I && (w = v(j(w))), w
+    return I && (w = j(x(w))), w
 })

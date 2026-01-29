@@ -1,14 +1,14 @@
-/** Chunk was on 28979 **/
-/** chunk id: 50847, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 50847, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     X: () => o
 });
 var n = i(419954),
     l = i(780964),
     s = i(46993),
     r = i(197614),
-    u = i(234658),
-    a = i(312579);
+    a = i(234658),
+    u = i(312579);
 let o = (0, n.zZ)(l.X.OVERLAY_GENERAL_CATEGORY, {
-    buildLayout: () => [r.B, a.i, u.x, s.q]
+    buildLayout: () => [r.B, u.i, a.x, s.q]
 })

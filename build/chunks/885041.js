@@ -52,8 +52,8 @@ var r = n(627968),
     Q = n(142120),
     X = n(507263),
     Z = n(998345),
-    J = n(435875),
-    $ = n(707592),
+    $ = n(435875),
+    J = n(707592),
     ee = n(997509),
     et = n(268313),
     en = n(998654),
@@ -106,8 +106,8 @@ var r = n(627968),
     eQ = n(734057),
     eX = n(650048),
     eZ = n(71393),
-    eJ = n(186111),
-    e$ = n(189081),
+    e$ = n(186111),
+    eJ = n(189081),
     e0 = n(309010),
     e1 = n(967198),
     e6 = n(147964),
@@ -147,9 +147,9 @@ function tl(e) {
 n(115036), n(943577), n(131319), n(794383), n(845618), n(712687), n(328968), n(67480), n(874486), n(162605), n(2866), n(628965), n(836602), n(833336), n(555337), n(863036), n(291731), n(176360), n(972937), n(279061), n(750128), n(921955);
 let ta = !1;
 (0, C.as)(), s.Ay.initialize(), eT.A.loadServer(), e2.isPlatformEmbedded && (e4.Ay.on("USER_SETTINGS_OPEN", (e, t) => {
-    eJ.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
+    e$.A.getLayers().includes(te.zgK.USER_SETTINGS) || (0, eY.openUserSettings)()
 }), e4.Ay.on("LAUNCH_APPLICATION", (e, t) => {
-    let n = e$.A.getActiveLibraryApplication(t);
+    let n = eJ.A.getActiveLibraryApplication(t);
     e3.playApplication(t, n, {
         analyticsParams: {
             location: {
@@ -228,7 +228,7 @@ let ts = (0, m.z)(e => {
             let {
                 match: e
             } = this.props;
-            null != e && null != e.params.inviteCode && (0, J.q)({
+            null != e && null != e.params.inviteCode && (0, $.q)({
                 code: e.params.inviteCode
             })
         }
@@ -341,10 +341,10 @@ let tg = [{
             action: i
         } = t.params;
         return e7.A.whenInitialized(() => {
-            e$.A.whenInitialized(() => {
+            eJ.A.whenInitialized(() => {
                 switch (i) {
                     case "launch": {
-                        let e = e$.A.getActiveLibraryApplication(n);
+                        let e = eJ.A.getActiveLibraryApplication(n);
                         if (null == e) return;
                         e3.playApplication(e.id, e, {
                             analyticsParams: {
@@ -360,7 +360,7 @@ let tg = [{
                         e6.A.whenInitialized(() => g.q1(n));
                         break;
                     case "uninstall": {
-                        let e = e$.A.getActiveLibraryApplication(n);
+                        let e = eJ.A.getActiveLibraryApplication(n);
                         if (null == e) return;
                         (0, u.z)(e.id, e.branchId, te.ThZ.URI_SCHEME)
                     }
@@ -475,7 +475,7 @@ let tg = [{
             guildEventId: i
         } = t.params;
         return (0, X.B)(() => {
-            (0, $.uR)({
+            (0, J.uR)({
                 eventId: i
             })
         }), (0, r.jsx)(a.rd, {

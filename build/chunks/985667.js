@@ -1,25 +1,25 @@
-/** Chunk was on 28979 **/
-/** chunk id: 985667, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    i: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 985667, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    i: () => d
 });
 var n = i(311907),
     l = i(827343),
     s = i(419954),
     r = i(430452),
-    u = i(780964),
-    a = i(731854),
+    a = i(780964),
+    u = i(731854),
     o = i(985018);
-let T = (0, s.zD)(u.X.VOICE_QUALITY_OF_SERVICE_SETTING, {
+let d = (0, s.zD)(a.X.VOICE_QUALITY_OF_SERVICE_SETTING, {
     useTitle: () => o.intl.string(o.t.uancuJ),
     useSubtitle: () => o.intl.string(o.t.I1Eoqq),
     useValue: function() {
         return (0, n.bG)([r.A], () => r.A.getQoS())
     },
-    setValue: function(t) {
-        l.A.setQoS(t)
+    setValue: function(e) {
+        l.A.setQoS(e)
     },
     usePredicate: function() {
-        return (0, n.bG)([r.A], () => r.A.supports(a.O5.QOS))
+        return (0, n.bG)([r.A], () => r.A.supports(u.O5.QOS))
     }
 })

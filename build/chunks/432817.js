@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 432817, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    L: () => h
+    L: () => p
 });
 var r = n(627968),
     l = n(311907),
@@ -12,28 +12,28 @@ var r = n(627968),
     c = n(869003),
     u = n(954571),
     d = n(652215),
-    p = n(985018);
-let h = e => {
+    h = n(985018);
+let p = e => {
     let {
         channel: t,
         user: n,
-        application: h,
-        oauth2Token: f
-    } = e, g = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
-    if (!n.bot || null == h) return null;
+        application: p,
+        oauth2Token: g
+    } = e, f = (0, l.bG)([o.Ay], () => o.Ay.getSelfEmbeddedActivities());
+    if (!n.bot || null == p) return null;
 
     function m() {
-        a.A.delete(f.id);
-        let e = g.get(h.id);
+        a.A.delete(g.id);
+        let e = f.get(p.id);
         null != e && c.A.leaveActivity({
             location: e.location,
-            applicationId: h.id
+            applicationId: p.id
         })
     }
     return (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t["5S3sQF"]),
+        text: h.intl.string(h.t["5S3sQF"]),
         onClick: () => {
             (0, s.qfG)(e => (0, r.jsx)(i.aFV, function(e) {
                 for (var t = 1; t < arguments.length; t++) {
@@ -53,23 +53,23 @@ let h = e => {
                 }
                 return e
             }({
-                title: p.intl.string(p.t["DT39A+"]),
-                subtitle: p.intl.formatToPlainString(p.t.QWGvxA, {
-                    applicationName: h.name
+                title: h.intl.string(h.t["DT39A+"]),
+                subtitle: h.intl.formatToPlainString(h.t.QWGvxA, {
+                    applicationName: p.name
                 }),
                 actions: [{
-                    text: p.intl.string(p.t["ETE/oC"]),
+                    text: h.intl.string(h.t["ETE/oC"]),
                     variant: "secondary",
                     onClick: e.onClose
                 }, {
-                    text: p.intl.string(p.t.xUqheM),
+                    text: h.intl.string(h.t.xUqheM),
                     variant: "critical-primary",
                     onClick: () => {
                         m(), e.onClose()
                     }
                 }]
             }, e))), u.default.track(d.HAw.APP_MANAGE_CTA_CLICKED, {
-                application_id: h.id,
+                application_id: p.id,
                 channel_id: t.id,
                 channel_type: t.type
             })

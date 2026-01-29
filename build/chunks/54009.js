@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 54009, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var r = n(627968);
 n(64700);
@@ -13,19 +13,19 @@ var i = n(417597),
     c = n(676279),
     d = n(69091),
     u = n(264996),
-    p = n(837137),
-    _ = n(723473),
+    _ = n(837137),
+    p = n(723473),
     m = n(728654),
     g = n(903671);
-let f = e => {
+let A = e => {
     let t, {
             className: n
         } = e,
-        f = (0, i.bG)([a.A], () => a.A.useReducedMotion),
-        b = (0, c.TM)(),
-        h = (0, l.qB1)((0, s.Ay)());
-    if (f) {
-        let e = h ? g.A : p.A;
+        A = (0, i.bG)([a.A], () => a.A.useReducedMotion),
+        f = (0, c.TM)(),
+        b = (0, l.qB1)((0, s.Ay)());
+    if (A) {
+        let e = b ? g.A : _.A;
         return (0, r.jsx)("div", {
             className: n,
             children: (0, r.jsx)("img", {
@@ -34,7 +34,7 @@ let f = e => {
             })
         })
     }
-    return t = b ? h ? _.A : d.A : h ? m.A : u.A, (0, r.jsx)("div", {
+    return t = f ? b ? p.A : d.A : b ? m.A : u.A, (0, r.jsx)("div", {
         className: n,
         children: (0, r.jsx)(o.A, {
             muted: !0,

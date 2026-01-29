@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 191430, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
@@ -33,4 +33,4 @@ let u = i.forwardRef((e, t) => {
     })
 });
 u.displayName = "PremiumMarketingFooter";
-let p = u
+let _ = u

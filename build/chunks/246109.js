@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 246109, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var r = n(627968);
 n(64700);
@@ -13,7 +13,7 @@ var i = n(397927),
     c = n(696616),
     d = n(564752),
     u = n(985018);
-let p = () => (0, r.jsxs)(i.BJc, {
+let _ = () => (0, r.jsxs)(i.BJc, {
     gap: 32,
     children: [(0, r.jsx)(s.b, {}), (0, r.jsx)("div", {
         children: (0, r.jsxs)(l.G, {

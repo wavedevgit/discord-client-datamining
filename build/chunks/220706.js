@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 220706, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r, l = n(311907),
     i = n(73153),
@@ -37,7 +37,7 @@ class d extends(r = l.Ay.PersistedStore) {
     }
 }
 o(d, "displayName", "GuildOnboardingHomeNavigationStore"), o(d, "persistKey", "GuildOnboardingHomeNavigationStore");
-let p = new d(i.h, {
+let h = new d(i.h, {
     CHANNEL_SELECT: function(e) {
         let {
             channelId: t,

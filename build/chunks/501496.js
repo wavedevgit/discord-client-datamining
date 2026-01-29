@@ -1,41 +1,41 @@
-/** Chunk was on 60449 **/
-/** chunk id: 501496, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    A: () => h
+/** Chunk was on 4670 **/
+/** chunk id: 501496, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => A
 });
-var i = n(627968);
-n(64700);
-var s = n(417597),
-    l = n(397927),
-    r = n(17143),
-    a = n(430452),
-    o = n(975571),
-    c = n(652215),
-    d = n(731854),
-    u = n(985018),
-    g = n(835818);
+var n = i(627968);
+i(64700);
+var l = i(417597),
+    s = i(397927),
+    r = i(17143),
+    a = i(430452),
+    u = i(975571),
+    o = i(652215),
+    d = i(731854),
+    T = i(985018),
+    c = i(835818);
 
-function h() {
-    return (0, s.bG)([a.A], () => a.A.supports(d.O5.LOOPBACK)) ? (0, i.jsx)("div", {
-        className: g.a,
-        children: (0, i.jsx)(r.A, {
-            title: u.intl.string(u.t.gyljWE),
-            description: u.intl.string(u.t["8hhsCU"]),
+function A() {
+    return (0, l.bG)([a.A], () => a.A.supports(d.O5.LOOPBACK)) ? (0, n.jsx)("div", {
+        className: c.a,
+        children: (0, n.jsx)(r.A, {
+            title: T.intl.string(T.t.gyljWE),
+            description: T.intl.string(T.t["8hhsCU"]),
             notchBackground: r.V.GRAY,
-            captionVoice: u.intl.string(u.t.bp3JOV),
-            captionNoVoice: (0, i.jsxs)(i.Fragment, {
-                children: [u.intl.string(u.t["MA+OZh"]), (0, i.jsx)(l.MzZ, {
-                    className: g.X,
-                    href: o.A.getArticleURL(c.MVz.NO_INPUT_DETECTED),
-                    children: u.intl.string(u.t.RYKKox)
+            captionVoice: T.intl.string(T.t.bp3JOV),
+            captionNoVoice: (0, n.jsxs)(n.Fragment, {
+                children: [T.intl.string(T.t["MA+OZh"]), (0, n.jsx)(s.MzZ, {
+                    className: c.X,
+                    href: u.A.getArticleURL(o.MVz.NO_INPUT_DETECTED),
+                    children: T.intl.string(T.t.RYKKox)
                 })]
             }),
-            buttonTest: u.intl.string(u.t.c4qHt6),
-            buttonStop: u.intl.string(u.t.I6OnJ3),
+            buttonTest: T.intl.string(T.t.c4qHt6),
+            buttonStop: T.intl.string(T.t.I6OnJ3),
             buttonVariant: "primary",
             location: {
-                page: c.liQ.USER_SETTINGS,
-                section: c.JJy.SETTINGS_VOICE_AND_VIDEO
+                page: o.liQ.USER_SETTINGS,
+                section: o.JJy.SETTINGS_VOICE_AND_VIDEO
             }
         })
     }) : null

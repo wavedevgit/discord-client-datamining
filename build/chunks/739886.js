@@ -1,15 +1,15 @@
-/** Chunk was on 28979 **/
-/** chunk id: 739886, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 739886, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     I: () => o
 });
 var n = i(419954),
     l = i(780964),
     s = i(120929),
     r = i(312574),
-    u = i(861061),
-    a = i(985018);
+    a = i(861061),
+    u = i(985018);
 let o = (0, n.WI)(l.X.ACTIVITY_SECTION, {
-    useTitle: () => a.intl.string(a.t.SmHCFf),
-    buildLayout: () => [s.T0, u.Jj, r.u]
+    useTitle: () => u.intl.string(u.t.SmHCFf),
+    buildLayout: () => [s.T0, a.Jj, r.u]
 })

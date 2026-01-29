@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 7064, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
@@ -13,12 +13,12 @@ var r = n(627968),
     d = n(985018),
     u = n(943626);
 
-function p(e) {
+function _(e) {
     let {
         currentUser: t,
         disabled: n,
-        handleDisableAccount: p,
-        handleDeleteAccount: _
+        handleDisableAccount: _,
+        handleDeleteAccount: p
     } = e, m = t.isClaimed(), g = i.useRef(null);
     return (0, a.A)(g, o.Ew.AccountScrollPositions.DISABLE_ACCOUNT), (0, r.jsx)(s.x, {
         setting: c.H.ACCOUNT_DISABLE_ACCOUNT,
@@ -35,7 +35,7 @@ function p(e) {
                         size: "sm",
                         text: d.intl.string(d.t.jf5GGb),
                         disabled: n,
-                        onClick: p
+                        onClick: _
                     }) : null, (0, r.jsx)(s.x, {
                         setting: c.H.ACCOUNT_DELETE_ACCOUNT,
                         children: (0, r.jsx)(l.Button, {
@@ -43,7 +43,7 @@ function p(e) {
                             size: "sm",
                             text: d.intl.string(d.t["8lQ2rR"]),
                             disabled: n,
-                            onClick: _
+                            onClick: p
                         })
                     })]
                 })

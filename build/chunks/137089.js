@@ -1,9 +1,9 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 137089, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => j,
-    fz: () => _,
-    tt: () => O
+    Ay: () => x,
+    fz: () => O,
+    tt: () => _
 }), n(321073), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -14,10 +14,10 @@ var r = n(627968),
     c = n(186369),
     u = n(970812),
     d = n(395504),
-    p = n(543465),
-    h = n(147036),
-    f = n(32603),
-    g = n(85808),
+    h = n(543465),
+    p = n(147036),
+    g = n(32603),
+    f = n(85808),
     m = n(823142);
 n(83766);
 var b = n(728444),
@@ -32,7 +32,7 @@ let y = l.memo(function(e) {
     })
 });
 
-function _(e) {
+function O(e) {
     let {
         sectionIndex: t,
         guildChannels: n,
@@ -47,61 +47,61 @@ function _(e) {
     let {
         hasDivider: c,
         canHaveVoiceSummary: u
-    } = (0, g.B3)(n, s, t), d = c ? a ? 9 : 12 : 0;
-    if (!u || t === f.PU) return d;
-    let p = n.getNamedCategoryFromSection(t);
-    return null == p ? d : (0, g.Bo)({
-        category: p,
+    } = (0, f.B3)(n, s, t), d = c ? a ? 9 : 12 : 0;
+    if (!u || t === g.PU) return d;
+    let h = n.getNamedCategoryFromSection(t);
+    return null == h ? d : (0, f.Bo)({
+        category: h,
         selectedChannelId: l,
         selectedVoiceChannelId: i,
         voiceStates: r
     }) ? (a && "cozy" === o ? 42 : 34) + d : d
 }
 
-function O(e, t, n) {
+function _(e, t, n) {
     if (e === t.voiceChannelsSectionNumber) return "voice-channels-button";
     let {
         hasDivider: r,
         canHaveVoiceSummary: l
-    } = (0, g.B3)(t, n, e);
+    } = (0, f.B3)(t, n, e);
     return "section-footer-".concat(e).concat(r ? "-divider" : "").concat(l ? "-voice-summary" : "")
 }
-let j = l.memo(function(e) {
+let x = l.memo(function(e) {
     let {
         sectionIndex: t,
         guildChannels: n,
         guildChannelsVersion: i,
         voiceStates: m,
-        guildId: _,
-        selectedChannelId: O,
-        selectedVoiceChannelId: j,
-        optInEnabled: v
+        guildId: O,
+        selectedChannelId: _,
+        selectedVoiceChannelId: x,
+        optInEnabled: j
     } = e, {
-        hasDivider: x,
+        hasDivider: v,
         canHaveVoiceSummary: E
-    } = l.useMemo(() => (0, g.B3)(n, v, t), [n, v, t, i]), C = l.useMemo(() => t === f.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(_), {
+    } = l.useMemo(() => (0, f.B3)(n, j, t), [n, j, t, i]), C = l.useMemo(() => t === g.PU ? null : n.getCategoryFromSection(t), [n, t, i]), S = (0, d.jN)(O), {
         enableWaveformIcon: I
-    } = (0, c.b)(_, "ChannelListSectionFooter"), N = (0, a.yK)([p.Ay], () => {
+    } = (0, c.b)(O, "ChannelListSectionFooter"), N = (0, a.yK)([h.Ay], () => {
         if (null == C || !C.isCollapsed || !E) return [];
         let e = C.getChannelRecords(),
             t = [];
         for (let n of e) {
             if (!n.isGuildVocal()) continue;
-            let e = p.Ay.isChannelOrParentOptedIn(_, n.id);
+            let e = h.Ay.isChannelOrParentOptedIn(O, n.id);
             (!S || e) && t.push(n)
         }
         return t
-    }, [C, E, _, S]), T = l.useMemo(() => (0, h.fK)({
+    }, [C, E, O, S]), T = l.useMemo(() => (0, p.fK)({
         channels: N,
-        selectedChannelId: O,
-        selectedVoiceChannelId: j,
+        selectedChannelId: _,
+        selectedVoiceChannelId: x,
         voiceStates: m
-    }), [N, O, j, m]);
+    }), [N, _, x, m]);
     if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(y, {
         guildChannels: n,
         guildChannelsVersion: i
     });
-    let P = x ? (0, r.jsx)("div", {
+    let P = v ? (0, r.jsx)("div", {
         className: A.ts
     }) : null;
     return E && 0 !== T.length ? (0, r.jsxs)(r.Fragment, {
@@ -112,7 +112,7 @@ let j = l.memo(function(e) {
                 users: T,
                 max: 8,
                 showUserPopout: !0,
-                guildId: _,
+                guildId: O,
                 renderLeadingIcon: I ? e => (0, r.jsx)(u.A, {
                     color: "currentColor",
                     className: s()(e, b.Gj)

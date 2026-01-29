@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 310420, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(627968),
     l = n(64700),
@@ -29,7 +29,7 @@ function d(e) {
         })
     })
 }
-let p = function(e) {
+let h = function(e) {
     let {
         searchContext: t,
         dismissFeedbackEntrypoint: i
@@ -39,7 +39,7 @@ let p = function(e) {
             searchContext: t
         })
     }, [t]);
-    let p = l.useCallback(e => {
+    let h = l.useCallback(e => {
         i(), (0, s.mMO)(async () => {
             let {
                 default: l
@@ -89,10 +89,10 @@ let p = function(e) {
             className: u.Pt,
             children: [(0, r.jsx)(d, {
                 rating: o.P0.GOOD,
-                onClick: p
+                onClick: h
             }), (0, r.jsx)(d, {
                 rating: o.P0.BAD,
-                onClick: p
+                onClick: h
             })]
         })]
     })

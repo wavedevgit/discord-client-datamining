@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 657989, original params: e,t,n (module,exports,require) **/
 n.r(e.exports = {
     perksContainer: "perksContainer_b62c4e",

@@ -1,8 +1,8 @@
-/** Chunk was on 28979 **/
-/** chunk id: 604095, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    AZ: () => a,
-    Cp: () => u,
+/** Chunk was on 4670 **/
+/** chunk id: 604095, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    AZ: () => u,
+    Cp: () => a,
     _s: () => r,
     fk: () => s,
     tA: () => o
@@ -15,30 +15,30 @@ let s = (0, n.D)(() => ({
     minimizeToTray: !0
 }));
 async function r() {
-    let t = await l.Ay.getOpenOnStart(),
-        e = await l.Ay.getSetting("START_MINIMIZED", !1),
+    let e = await l.Ay.getOpenOnStart(),
+        t = await l.Ay.getSetting("START_MINIMIZED", !1),
         i = await l.Ay.getSetting("MINIMIZE_TO_TRAY", !0);
     s.setState({
-        openOnStartup: t,
-        startMinimized: e,
+        openOnStartup: e,
+        startMinimized: t,
         minimizeToTray: i
     })
 }
 
-function u(t) {
+function a(e) {
     s.setState({
-        openOnStartup: t
-    }), l.Ay.send("TOGGLE_OPEN_ON_STARTUP", t)
+        openOnStartup: e
+    }), l.Ay.send("TOGGLE_OPEN_ON_STARTUP", e)
 }
 
-function a(t) {
+function u(e) {
     s.setState({
-        startMinimized: t
-    }), l.Ay.send("TOGGLE_START_MINIMIZED", t)
+        startMinimized: e
+    }), l.Ay.send("TOGGLE_START_MINIMIZED", e)
 }
 
-function o(t) {
+function o(e) {
     s.setState({
-        minimizeToTray: t
-    }), l.Ay.send("TOGGLE_MINIMIZE_TO_TRAY", t)
+        minimizeToTray: e
+    }), l.Ay.send("TOGGLE_MINIMIZE_TO_TRAY", e)
 }

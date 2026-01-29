@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 639383, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -93,6 +93,6 @@ function u(e) {
     })
 }
 
-function p(e) {
+function _(e) {
     return "tooltipText" in e && null != e.tooltipText ? (0, r.jsx)(u, c({}, e)) : (0, r.jsx)(d, c({}, e))
 }

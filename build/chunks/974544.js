@@ -1,34 +1,34 @@
-/** Chunk was on 98797 **/
-/** chunk id: 974544, original params: t,e,n (module,exports,require) **/
-n.d(e, {
-    A: () => c
+/** Chunk was on 16865 **/
+/** chunk id: 974544, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => E
 });
 var r = n(627968);
 n(64700);
 var i = n(503698),
     l = n.n(i),
-    a = n(397927),
-    o = n(780964),
-    u = n(840065),
-    s = n(985018),
-    d = n(391870);
+    o = n(397927),
+    a = n(780964),
+    s = n(840065),
+    c = n(985018),
+    u = n(391870);
 
-function c(t) {
+function E(e) {
     let {
-        disableButton: e
-    } = t;
+        disableButton: t
+    } = e;
     return (0, r.jsxs)("div", {
-        className: d.IG,
+        className: u.IG,
         children: [(0, r.jsx)("div", {
-            className: d.TE
-        }), (0, r.jsx)(a.DUT, {
-            className: l()(d.Ac, {
-                [d.r9]: e
+            className: u.TE
+        }), (0, r.jsx)(o.DUT, {
+            className: l()(u.Ac, {
+                [u.r9]: t
             }),
             onClick: () => {
-                !0 !== e && (0, u.openUserSettings)(o.X.STREAMER_MODE_PANEL)
+                !0 !== t && (0, s.openUserSettings)(a.X.STREAMER_MODE_PANEL)
             },
-            children: s.intl.string(s.t.Br1ls3)
+            children: c.intl.string(c.t.Br1ls3)
         })]
     })
 }

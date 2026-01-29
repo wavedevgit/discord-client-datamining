@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 530484, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -13,10 +13,10 @@ var l = n(311907),
     c = n(508654),
     u = n(222823),
     d = n(543465),
-    p = n(652793),
-    h = n(790782),
-    f = n(985018),
-    g = n(811094);
+    h = n(652793),
+    p = n(790782),
+    g = n(985018),
+    f = n(811094);
 
 function m(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -56,12 +56,12 @@ function A(e) {
         selected: A
     } = e, {
         hasUnread: y,
-        mentionCount: _
+        mentionCount: O
     } = (0, l.cf)([u.Ay], () => ({
-        hasUnread: u.Ay.hasUnread(t.id, h.P.GUILD_EVENT),
-        mentionCount: u.Ay.getMentionCount(t.id, h.P.GUILD_EVENT)
-    }), [t.id]), O = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
-    async function j() {
+        hasUnread: u.Ay.hasUnread(t.id, p.P.GUILD_EVENT),
+        mentionCount: u.Ay.getMentionCount(t.id, p.P.GUILD_EVENT)
+    }), [t.id]), _ = (0, l.bG)([d.Ay], () => d.Ay.isMuteScheduledEventsEnabled(t.id));
+    async function x() {
         await (0, s.mMO)(async () => {
             let {
                 default: e
@@ -71,20 +71,20 @@ function A(e) {
             }))
         }), (0, o.Dr)(i.M.GUILD_HEADER_EVENT_UPSELL)
     }
-    let v = (0, c.Ay)(t.id),
-        x = v.length > 0 ? f.intl.formatToPlainString(f.t.IBdqSu, {
-            number: v.length
-        }) : f.intl.string(f.t.tlopTM);
-    return (0, r.jsx)(p.G, {
+    let j = (0, c.Ay)(t.id),
+        v = j.length > 0 ? g.intl.formatToPlainString(g.t.IBdqSu, {
+            number: j.length
+        }) : g.intl.string(g.t.tlopTM);
+    return (0, r.jsx)(h.G, {
         id: "upcoming-events-".concat(t.id),
         renderIcon: e => (0, r.jsx)(s.CTc, {
             size: "md",
             color: "currentColor",
             className: e
         }),
-        text: x,
+        text: v,
         selected: A,
-        onClick: j,
+        onClick: x,
         onContextMenu: e => {
             (0, a.L3)(e, async () => {
                 let {
@@ -95,11 +95,11 @@ function A(e) {
                 }))
             })
         },
-        showUnread: y && !O,
-        trailing: !O && _ > 0 ? (0, r.jsx)(s.hVq, {
-            className: g.Do,
+        showUnread: y && !_,
+        trailing: !_ && O > 0 ? (0, r.jsx)(s.hVq, {
+            className: f.Do,
             disableColor: !0,
-            count: _
+            count: O
         }) : null
     })
 }

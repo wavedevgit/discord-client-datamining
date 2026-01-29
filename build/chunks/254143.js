@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 254143, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,24 +12,24 @@ var r = n(627968),
     c = n(964486),
     u = n(351001),
     d = n(576705),
-    p = n(400528),
-    h = n(102817),
-    f = n(641131),
-    g = n(985018);
+    h = n(400528),
+    p = n(102817),
+    g = n(641131),
+    f = n(985018);
 
 function m(e) {
     let {
         channel: t,
         user: m,
         guild: b
-    } = e, A = (0, i.bG)([p.A], () => null != m && p.A.isUserBanned(m.id)), y = null != m && null == A, [_, O] = l.useState(y), j = (0, i.bG)([d.A], () => null != m && null != b && (0, u.fJ)(m, b, [d.A]));
+    } = e, A = (0, i.bG)([h.A], () => null != m && h.A.isUserBanned(m.id)), y = null != m && null == A, [O, _] = l.useState(y), x = (0, i.bG)([d.A], () => null != m && null != b && (0, u.fJ)(m, b, [d.A]));
     if ((0, c.Ay)(() => {
-            y && o.A.searchGuildBans(t.guild_id, void 0, [null == m ? void 0 : m.id]).finally(() => O(!1))
-        }), !j) return null;
-    let v = !0 === A ? g.intl.string(f.default.dpfwQ1) : g.intl.string(f.default.ASv23S),
-        x = "ban-user-".concat(null == m ? void 0 : m.id);
-    return (0, r.jsx)(h.A, {
-        text: v,
+            y && o.A.searchGuildBans(t.guild_id, void 0, [null == m ? void 0 : m.id]).finally(() => _(!1))
+        }), !x) return null;
+    let j = !0 === A ? f.intl.string(g.default.dpfwQ1) : f.intl.string(g.default.ASv23S),
+        v = "ban-user-".concat(null == m ? void 0 : m.id);
+    return (0, r.jsx)(p.A, {
+        text: j,
         icon: a.wI0,
         onClick: () => {
             null != m && (0, a.mMO)(async () => {
@@ -72,8 +72,8 @@ function m(e) {
                 }
             })
         },
-        disabled: !0 === A || _,
-        submitting: _,
+        disabled: !0 === A || O,
+        submitting: O,
         color: s.$n.Colors.RED
-    }, x)
+    }, v)
 }

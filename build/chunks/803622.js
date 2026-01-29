@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 803622, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => R
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(397927),
     u = n(49229),
     d = n(793574),
-    p = n(573435),
-    h = n(327166),
-    f = n(157550),
-    g = n(471271),
+    h = n(573435),
+    p = n(327166),
+    g = n(157550),
+    f = n(471271),
     m = n(957283),
     b = n(772659),
     A = n(138298),
     y = n(622543),
-    _ = n(657331),
-    O = n(761640),
-    j = n(994500),
-    v = n(287809),
-    x = n(486020),
+    O = n(657331),
+    _ = n(761640),
+    x = n(994500),
+    j = n(287809),
+    v = n(486020),
     E = n(302975),
     C = n(652215),
     S = n(518477),
@@ -37,7 +37,7 @@ let T = e => {
         } = e, i = (0, o.bG)([y.A], () => y.A.getMutualGuilds(t), [t]), s = l.useMemo(() => null != i ? i.slice(0, 3).map((e, t) => {
             let {
                 guild: n
-            } = e, l = null != n ? x.Ay.getGuildIconURL({
+            } = e, l = null != n ? v.Ay.getGuildIconURL({
                 id: n.id,
                 icon: n.icon,
                 size: 24
@@ -49,9 +49,9 @@ let T = e => {
                     alt: "",
                     className: N.my
                 }, t);
-            return s ? a : (0, r.jsx)(p.Ay, {
+            return s ? a : (0, r.jsx)(h.Ay, {
                 className: N.cp,
-                mask: p.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
+                mask: h.Ay.Masks.VOICE_USER_SUMMARY_ITEM,
                 width: 24,
                 height: 24,
                 children: a
@@ -67,7 +67,7 @@ let T = e => {
                 children: s
             }), (0, r.jsx)(c.DUT, {
                 onClick: () => {
-                    (0, _.openUserProfileModal)({
+                    (0, O.openUserProfileModal)({
                         userId: t,
                         channelId: n,
                         tabSection: S.RP.MUTUAL_GUILDS,
@@ -90,7 +90,7 @@ let T = e => {
             relationshipType: n,
             userId: l,
             showingBanner: i
-        } = e, s = null == (t = v.default.getUser(l)) ? void 0 : t.bot, a = () => {
+        } = e, s = null == (t = j.default.getUser(l)) ? void 0 : t.bot, a = () => {
             u.A.addRelationship({
                 userId: l,
                 context: {
@@ -106,7 +106,7 @@ let T = e => {
                 })
             },
             text: I.intl.string(I.t.l4Emac)
-        }), d = (0, h.D)(l);
+        }), d = (0, p.D)(l);
         switch (n) {
             case C.eA$.NONE:
                 return (0, r.jsxs)(r.Fragment, {
@@ -179,22 +179,22 @@ let T = e => {
         } = e, i = l.useCallback(() => {
             (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
         }, []), s = l.useCallback(() => {
-            A.A.closeChannelSidebar(O.fe)
+            A.A.closeChannelSidebar(_.fe)
         }, []), a = l.useCallback(() => {
-            A.A.closeChannelSidebar(O.fe)
+            A.A.closeChannelSidebar(_.fe)
         }, []), {
             acceptMessageRequest: o,
             rejectMessageRequest: u,
             isAcceptLoading: d,
-            isRejectLoading: p,
-            isOptimisticAccepted: h,
-            isOptimisticRejected: f
-        } = (0, g.t)({
-            user: v.default.getUser(n),
+            isRejectLoading: h,
+            isOptimisticAccepted: p,
+            isOptimisticRejected: g
+        } = (0, f.t)({
+            user: j.default.getUser(n),
             onError: i,
             onAcceptSuccess: a,
             onRejectSuccess: s
-        }), m = d || p || h || f;
+        }), m = d || h || p || g;
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(c.Button, {
                 variant: "primary",
@@ -208,7 +208,7 @@ let T = e => {
                 size: "sm",
                 disabled: m,
                 onClick: () => u(t),
-                loading: p,
+                loading: h,
                 text: I.intl.string(I.t.B2nygW)
             })]
         })
@@ -220,7 +220,7 @@ let T = e => {
             showingBanner: l
         } = e, {
             channelId: i
-        } = (0, m.N)(), u = (0, o.bG)([f.A], () => null != i && f.A.isSpam(i), [i]), d = (0, o.bG)([j.A], () => j.A.getRelationshipType(t), [t]), p = n.id === i, h = !a.Fr && !p, g = !!a.Fr || p || u, A = u || p ? (0, r.jsxs)("div", {
+        } = (0, m.N)(), u = (0, o.bG)([g.A], () => null != i && g.A.isSpam(i), [i]), d = (0, o.bG)([x.A], () => x.A.getRelationshipType(t), [t]), h = n.id === i, p = !a.Fr && !h, f = !!a.Fr || h || u, A = u || h ? (0, r.jsxs)("div", {
             className: N.mG,
             children: [(0, r.jsx)(w, {
                 channelId: n.id,
@@ -237,22 +237,22 @@ let T = e => {
             }), !l && (0, r.jsx)(E.A, {
                 otherUserId: t,
                 channel: n,
-                navigateAwayOnReportSuccess: h
+                navigateAwayOnReportSuccess: p
             })]
-        }), y = d !== C.eA$.PENDING_INCOMING || u || p ? null : (0, r.jsx)(c.Text, {
+        }), y = d !== C.eA$.PENDING_INCOMING || u || h ? null : (0, r.jsx)(c.Text, {
             color: "text-default",
             variant: "text-sm/normal",
             children: I.intl.string(I.t.c2v5nO)
         });
         return (0, r.jsxs)("div", {
-            className: g ? N.AA : N.kL,
+            className: f ? N.AA : N.kL,
             children: [(0, r.jsx)("div", {
                 className: N.mG,
                 children: (0, r.jsx)(T, {
                     userId: t,
                     channelId: n.id
                 })
-            }), !g && (0, r.jsx)("div", {
+            }), !f && (0, r.jsx)("div", {
                 className: N.yF
             }), (0, r.jsxs)("div", {
                 className: s()(N.mG, N.LV),

@@ -1,16 +1,16 @@
-/** Chunk was on 28979 **/
-/** chunk id: 952549, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 952549, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     E: () => o
 });
 var n = i(477895),
     l = i(422891),
     s = i(419954),
     r = i(253932),
-    u = i(780964),
-    a = i(985018);
-let o = (0, s.zD)(u.X.FRIEND_ONLINE_NOTIFICATIONS, {
-    useTitle: () => a.intl.string(a.t.sQQgFj),
+    a = i(780964),
+    u = i(985018);
+let o = (0, s.zD)(a.X.FRIEND_ONLINE_NOTIFICATIONS, {
+    useTitle: () => u.intl.string(u.t.sQQgFj),
     useValue: r.NR.useSetting,
     setValue: l.h,
     usePredicate: () => (0, n.Bf)("FriendOnlineNotifications").showSettingsToggle

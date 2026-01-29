@@ -11,13 +11,13 @@ n.d(t, {
     SN: () => H,
     Ub: () => en,
     Yj: () => F,
-    e2: () => $,
+    e2: () => J,
     hk: () => V,
     lG: () => er,
     px: () => X,
     qG: () => Y,
     sq: () => ee,
-    uM: () => J
+    uM: () => $
 }), n(747238), n(591487), n(727858), n(896048), n(321073), n(65821), n(812715), n(938796), n(638769), n(735438);
 var r, i, l = n(567243),
     a = n(179771),
@@ -255,7 +255,7 @@ function Z(e) {
         }, "Invalid Client ID")
     })
 }
-async function J(e, t, n) {
+async function $(e, t, n) {
     let r = d.A.getApplication(t);
     if ("string" == typeof n)
         if (e.transport === x.z4.POST_MESSAGE) {
@@ -284,7 +284,7 @@ async function J(e, t, n) {
         flags: o
     }
 }
-async function $(e, t) {
+async function J(e, t) {
     let n = U[e];
     null == n && (n = new o.A(t ? 2 : 60, k), U[e] = n), await n.process()
 }

@@ -1,19 +1,19 @@
-/** Chunk was on 83759 **/
+/** Chunk was on 20725 **/
 /** chunk id: 309632, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => o
+    A: () => a
 }), n(896048);
 var r = n(64700),
     l = n(311907),
     i = n(602582),
-    a = n(946132);
+    s = n(946132);
 
-function o(e) {
+function a(e) {
     let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
         n = e.guild_id,
-        o = e.id,
-        [s, u] = (0, l.yK)([a.A], () => t ? [null, !0] : [a.A.message(n, o), a.A.isLatest(n, o)]);
+        a = e.id,
+        [o, u] = (0, l.yK)([s.A], () => t ? [null, !0] : [s.A.message(n, a), s.A.isLatest(n, a)]);
     return (0, r.useEffect)(() => {
-        null == o || u || i.A.addWant(o)
-    }, [o, u]), s
+        null == a || u || i.A.addWant(a)
+    }, [a, u]), o
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 714308, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(228524);
 var r = n(627968);
 n(64700);
@@ -14,7 +14,7 @@ var i = n(503698),
     d = n(595654),
     u = n(193921);
 
-function p(e) {
+function _(e) {
     let {
         onClickManageSubscription: t,
         count: n

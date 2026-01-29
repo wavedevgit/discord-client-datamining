@@ -1,22 +1,22 @@
-/** Chunk was on 28979 **/
-/** chunk id: 728765, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    F: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 728765, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    F: () => d
 }), i(896048);
 var n = i(419954),
     l = i(100406),
     s = i(878460),
     r = i(780964),
-    u = i(342002),
-    a = i(297147),
+    a = i(342002),
+    u = i(297147),
     o = i(985018);
-let T = (0, n.zZ)(r.X.NOTIFICATIONS_EMAIL_CATEGORY, {
+let d = (0, n.zZ)(r.X.NOTIFICATIONS_EMAIL_CATEGORY, {
     useTitle: () => o.intl.string(o.t["w/qqKK"]),
     initialize: function() {
         let {
-            initialized: t
+            initialized: e
         } = s.A.getEmailSettings();
-        t || (0, l.cR)()
+        e || (0, l.cR)()
     },
-    buildLayout: () => [...u.P, a.Q]
+    buildLayout: () => [...a.P, u.Q]
 })

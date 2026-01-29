@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 287245, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(843472),
     u = n(355622),
     d = n(408018),
-    p = n(133343),
-    h = n(609425),
-    f = n(922301),
-    g = n(750112),
+    h = n(133343),
+    p = n(609425),
+    g = n(922301),
+    f = n(750112),
     m = n(451909),
     b = n(538355),
     A = n(854627),
     y = n(447404),
-    _ = n(320501),
-    O = n(203982),
-    j = n(427262),
-    v = n(652215),
-    x = n(985018),
+    O = n(320501),
+    _ = n(203982),
+    x = n(427262),
+    j = n(652215),
+    v = n(985018),
     E = n(65309);
 let C = e => {
         let {
@@ -41,11 +41,11 @@ let C = e => {
             allowLinks: !1,
             allowGameMentions: !1,
             previewLinkTarget: !1
-        }), c = n.author, u = j.Ay.getName(c), d = (0, h.A)({
+        }), c = n.author, u = x.Ay.getName(c), d = (0, p.A)({
             userId: c.id,
             guildId: t.guild_id
         }), {
-            avatarSrc: p,
+            avatarSrc: h,
             avatarDecorationSrc: m
         } = (0, A.A)({
             userId: c.id,
@@ -59,16 +59,16 @@ let C = e => {
             }),
             children: [(0, r.jsx)("div", {
                 children: (0, r.jsx)(a.euF, {
-                    src: p,
+                    src: h,
                     avatarDecoration: m,
                     size: a._3J.SIZE_24,
                     "aria-label": "User Avatar",
                     isTyping: !1
                 })
-            }), (0, r.jsx)(g.A, {
+            }), (0, r.jsx)(f.A, {
                 userName: u,
                 displayNameStyles: d,
-                effectDisplayType: f.G.STATIC,
+                effectDisplayType: g.G.STATIC,
                 loop: !0
             }), (0, r.jsxs)("div", {
                 className: E.fi,
@@ -85,7 +85,7 @@ let C = e => {
                         src: e.url,
                         width: 128,
                         className: E.oh,
-                        alt: x.intl.string(x.t.X4IxWL)
+                        alt: v.intl.string(v.t.X4IxWL)
                     }, e.id))
                 })]
             })]
@@ -96,30 +96,30 @@ let C = e => {
             channel: t,
             idle: n,
             showChat: i
-        } = e, h = l.useRef(new Set), [f, g] = l.useState([]), [b, A] = l.useState(0), j = l.useRef(null), x = l.useRef(!1), [S, I] = l.useState(!0), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
+        } = e, p = l.useRef(new Set), [g, f] = l.useState([]), [b, A] = l.useState(0), x = l.useRef(null), v = l.useRef(!1), [S, I] = l.useState(!0), [N, T] = l.useState(""), [P, w] = l.useState((0, d.x7)(N));
         l.useEffect(() => {
-            let e = h.current;
+            let e = p.current;
             return () => {
                 e.size > 0 && [...e].forEach(e => clearTimeout(e))
             }
         }, []), l.useEffect(() => {
             let e = () => I(!0),
                 t = () => I(!1);
-            return O._.subscribe(v.jej.TEXTAREA_FOCUS, e), O._.subscribe(v.jej.TEXTAREA_BLUR, t), () => {
-                O._.unsubscribe(v.jej.TEXTAREA_FOCUS, e), O._.unsubscribe(v.jej.TEXTAREA_BLUR, t)
+            return _._.subscribe(j.jej.TEXTAREA_FOCUS, e), _._.subscribe(j.jej.TEXTAREA_BLUR, t), () => {
+                _._.unsubscribe(j.jej.TEXTAREA_FOCUS, e), _._.unsubscribe(j.jej.TEXTAREA_BLUR, t)
             }
         }, []), l.useEffect(() => {
-            let e = j.current;
+            let e = x.current;
             null != e && e.scrollTo({
                 top: e.scrollHeight,
                 behavior: "smooth"
             })
-        }, [j]), l.useEffect(() => {
+        }, [x]), l.useEffect(() => {
             let e = Date.now();
-            g(_.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
+            f(O.A.getMessages(t.id)._array.filter(t => t.timestamp.getTime() > e - 12e5).slice(-50))
         }, [t]);
         let R = l.useCallback(e => {
-                g(t => {
+                f(t => {
                     if (!t.some(t => t.id === e.id)) {
                         let n = [...t, e];
                         return n.length > 50 && n.shift(), n
@@ -128,35 +128,35 @@ let C = e => {
                 })
             }, []),
             D = l.useMemo(() => {
-                let e = f[f.length - 1];
+                let e = g[g.length - 1];
                 if (null == e) return !0;
                 if (b + 100 > Date.now()) return !1;
                 let t = Date.now() > e.timestamp.getTime() + 5e3;
                 if (!t) {
                     let e = setTimeout(() => {
-                        A(Date.now()), h.current.delete(e)
+                        A(Date.now()), p.current.delete(e)
                     }, 5500);
-                    h.current.add(e)
+                    p.current.add(e)
                 }
                 return t
-            }, [f, b]);
+            }, [g, b]);
         return l.useEffect(() => {
             let e = e => {
                 let {
                     channelId: n,
                     message: r
-                } = e, l = _.A.getMessage(r.channel_id, r.id);
+                } = e, l = O.A.getMessage(r.channel_id, r.id);
                 if (n === t.id && (null == l ? void 0 : l.state) === "SENT") {
                     R(l);
                     let e = setTimeout(() => {
-                        h.current.delete(e);
-                        let t = j.current;
+                        p.current.delete(e);
+                        let t = x.current;
                         null != t && t.scrollTo({
                             top: t.scrollHeight,
                             behavior: "smooth"
                         })
                     }, 10);
-                    h.current.add(e)
+                    p.current.add(e)
                 }
             };
             return o.h.subscribe("MESSAGE_CREATE", e), () => o.h.unsubscribe("MESSAGE_CREATE", e)
@@ -164,8 +164,8 @@ let C = e => {
             className: s()(E.X2, {
                 [E.R]: !i
             }),
-            onMouseEnter: () => x.current = !0,
-            onMouseLeave: () => x.current = !1,
+            onMouseEnter: () => v.current = !0,
+            onMouseLeave: () => v.current = !1,
             onWheel: e => {
                 e.preventDefault(), e.stopPropagation()
             },
@@ -181,15 +181,15 @@ let C = e => {
                         className: s()(E.b6, {
                             [E.N7]: D && n
                         }),
-                        ref: j,
-                        children: f.map(e => (0, r.jsx)(C, {
+                        ref: x,
+                        children: g.map(e => (0, r.jsx)(C, {
                             channel: t,
                             message: e,
                             noAnimate: !0
                         }, e.id))
                     })
                 })
-            }), (0, r.jsx)(p.Ay, {
+            }), (0, r.jsx)(h.Ay, {
                 className: s()(E.CQ, {
                     [E.N7]: n && 0 === N.length
                 }),

@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 641616, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     x: () => ec
@@ -53,8 +53,8 @@ var p = n(173628),
     Y = n(661652),
     J = n(953414),
     X = n(344673),
-    $ = n(491982),
-    Z = n(573121),
+    Z = n(491982),
+    $ = n(573121),
     ee = n(851828),
     et = n(375582),
     en = n(263758),
@@ -317,7 +317,7 @@ function ec() {
             name: "Voice Filters",
             group: ei.fu.AUDIO_VIDEO,
             tags: ["soundboard", "effects"],
-            render: () => (0, a.jsx)(Z.A, {})
+            render: () => (0, a.jsx)($.A, {})
         }), e.push({
             id: "krisp_tester",
             name: "Krisp Tester",
@@ -360,7 +360,7 @@ function ec() {
             id: "virtual_currency_config",
             name: "Virtual Currency Config",
             group: ei.fu.QUESTS,
-            render: () => (0, a.jsx)($.A, {})
+            render: () => (0, a.jsx)(Z.A, {})
         }), e.push({
             id: "Revenue Storybook",
             name: "Revenue Storybook",

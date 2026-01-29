@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 326911, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => b
 }), n(896048), n(65821);
 var r = n(627968),
     i = n(64700),
@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(351906),
     d = n(954571),
     u = n(45938),
-    p = n(652215),
-    _ = n(985018);
+    _ = n(652215),
+    p = n(985018);
 
 function m(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -37,7 +37,7 @@ function g(e) {
     return e
 }
 
-function f(e, t) {
+function A(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -49,15 +49,15 @@ function f(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-class b extends i.Component {
+class f extends i.Component {
     get analyticsLocation() {
         let {
             analyticsContext: {
                 location: e
             }
         } = this.props;
-        return f(g({}, e), {
-            object: p.ZSU.BUTTON_CTA
+        return A(g({}, e), {
+            object: _.ZSU.BUTTON_CTA
         })
     }
     render() {
@@ -70,18 +70,18 @@ class b extends i.Component {
             isPromoCode: l
         } = this.state;
         return (0, r.jsx)(s.nVY, {
-            label: _.intl.string(_.t["il+VCo"]),
+            label: p.intl.string(p.t["il+VCo"]),
             children: (0, r.jsx)("form", {
                 onSubmit: this.handleSubmit,
                 children: (0, r.jsxs)(s.M_l, {
                     children: [(0, r.jsx)(s.ksK, {
-                        label: _.intl.string(_.t.SeKIoS),
+                        label: p.intl.string(p.t.SeKIoS),
                         type: e ? "password" : "text",
                         value: t,
                         onChange: this.handleChange,
                         placeholder: "WUMP-AAAAA-BBBBB-CCCCC",
-                        error: !l && i ? _.intl.string(_.t.Y11a2u) : null,
-                        helperText: l ? _.intl.format(_.t.gPt3PE, {
+                        error: !l && i ? p.intl.string(p.t.Y11a2u) : null,
+                        helperText: l ? p.intl.format(p.t.gPt3PE, {
                             promoLink: () => {
                                 window.open("https://discord.com/billing/promotions/".concat(t))
                             }
@@ -89,7 +89,7 @@ class b extends i.Component {
                         fullWidth: !0
                     }), (0, r.jsx)(s.Button, {
                         variant: "primary",
-                        text: _.intl.string(_.t.KIpp7M),
+                        text: p.intl.string(p.t.KIpp7M),
                         type: "submit",
                         loading: n
                     })]
@@ -126,10 +126,10 @@ class b extends i.Component {
                 if (null != e && null != e.giftCode.promotion) throw this.setState({
                     isPromoCode: !0
                 }), Error("Cannnot redeem promotion code as gift");
-                d.default.track(p.HAw.OPEN_MODAL, {
+                d.default.track(_.HAw.OPEN_MODAL, {
                     type: "gift_accept",
-                    location: f(g({}, this.analyticsLocation), {
-                        object: p.ZSU.BUTTON_CTA
+                    location: A(g({}, this.analyticsLocation), {
+                        object: _.ZSU.BUTTON_CTA
                     })
                 }), (0, o.h)({
                     processedCode: n
@@ -149,10 +149,10 @@ class b extends i.Component {
     }
 }
 
-function h() {
+function b() {
     let e = i.useContext(d.AnalyticsContext),
         t = (0, l.bG)([c.A], () => c.A.enabled);
-    return (0, r.jsx)(b, {
+    return (0, r.jsx)(f, {
         analyticsContext: e,
         obscureInput: t
     })

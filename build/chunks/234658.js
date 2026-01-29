@@ -1,42 +1,42 @@
-/** Chunk was on 28979 **/
-/** chunk id: 234658, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    x: () => d
+/** Chunk was on 4670 **/
+/** chunk id: 234658, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    x: () => T
 });
 var n = i(311907),
     l = i(286237),
     s = i(515183),
     r = i(592598),
-    u = i(682763),
-    a = i(419954),
+    a = i(682763),
+    u = i(419954),
     o = i(780964),
-    T = i(985018);
-let d = (0, a.zD)(o.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
+    d = i(985018);
+let T = (0, u.zD)(o.X.OVERLAY_LIMITED_INTERACTION_OVERRIDE_SETTING, {
     usePredicate: () => {
         let {
-            runningGameApplication: t
+            runningGameApplication: e
         } = (0, l.A)();
-        return (null == t ? void 0 : t.id) != null
+        return (null == e ? void 0 : e.id) != null
     },
     useDisabled: () => {
         let {
-            runningGame: t
+            runningGame: e
         } = (0, l.A)();
-        return null != t && (0, s.qJ)(t.pid)
+        return null != e && (0, s.qJ)(e.pid)
     },
     useValue: () => {
         let {
-            runningGame: t,
-            runningGameApplication: e
-        } = (0, l.A)(), i = null == e ? void 0 : e.id, u = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), a = null != t && (0, s.qJ)(t.pid);
-        return u || a
+            runningGame: e,
+            runningGameApplication: t
+        } = (0, l.A)(), i = null == t ? void 0 : t.id, a = (0, n.bG)([r.A], () => r.A.isLimitedInteractionOverrideEnabled(i)), u = null != e && (0, s.qJ)(e.pid);
+        return a || u
     },
-    setValue: t => {
+    setValue: e => {
         let {
-            runningGameApplication: e
+            runningGameApplication: t
         } = (0, l.b)();
-        null != e && (0, u.x8)(e.id, t)
+        null != t && (0, a.x8)(t.id, e)
     },
-    useTitle: () => T.intl.string(T.t.wgVQND),
-    useSubtitle: () => T.intl.string(T.t["5SsyF5"])
+    useTitle: () => d.intl.string(d.t.wgVQND),
+    useSubtitle: () => d.intl.string(d.t["5SsyF5"])
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 271866, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     SH: () => T,
@@ -8,8 +8,8 @@ n.d(t, {
 var r = n(665260),
     i = n(73153),
     l = n(795816),
-    o = n(627363),
-    a = n(587895),
+    a = n(627363),
+    o = n(587895),
     s = n(793943),
     c = n(611010),
     u = n(998218),
@@ -22,8 +22,8 @@ async function _(e, t) {
     });
     try {
         if (!await (0, l.Ir)(e)) throw Error("Do not have access!");
-        let n = a.A.getApplication(e);
-        null == n && (n = c.Ay.createFromServer(await o.Ay.fetchApplication(e)));
+        let n = o.A.getApplication(e);
+        null == n && (n = c.Ay.createFromServer(await a.Ay.fetchApplication(e)));
         let s = (0, r.Lt)(n.flags, d.gfo.EMBEDDED);
         if (s && (null == t || !u.A.URL_REGEX.test(t))) throw Error("Invalid Origin URL for embedded application");
         return s || E.Cd(n), i.h.dispatch({

@@ -83,8 +83,8 @@ let M = +y.A.Millis.DAY,
     Q = 0,
     X = !1,
     Z = !1,
-    J = !1,
-    $ = null,
+    $ = !1,
+    J = null,
     ee = null,
     et = 0,
     en = [],
@@ -301,11 +301,11 @@ function eN(e) {
         channelId: t
     } = e, n = [], r = [];
     en.forEach((e, i) => {
-        (i > ei || !J) && e.type === T.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
+        (i > ei || !$) && e.type === T.Mm.MESSAGE && e.data.channel_id === t ? n.push(e) : r.push(e)
     });
     let i = Z,
         [l, a] = eE(B);
-    if (H = eO(l, t), Z = J ? i && H.length >= T.$P : i && eg(r, B), 0 === n.length && i === Z) return !1;
+    if (H = eO(l, t), Z = $ ? i && H.length >= T.$P : i && eg(r, B), 0 === n.length && i === Z) return !1;
     0 !== n.length && (en = r, er = [...er, ...n])
 }
 class eT extends(r = l.Ay.PersistedStore) {
@@ -373,7 +373,7 @@ class eT extends(r = l.Ay.PersistedStore) {
         return Z
     }
     getCurrentStatusAttachments(e) {
-        return null == $ || $[0] !== e ? [] : $[1]
+        return null == J || J[0] !== e ? [] : J[1]
     }
     getLoadId() {
         return G
@@ -382,7 +382,7 @@ class eT extends(r = l.Ay.PersistedStore) {
         return 5 === et
     }
     hasOpened() {
-        return J
+        return $
     }
     getDiscoverableGuilds() {
         return el
@@ -429,7 +429,7 @@ class eT extends(r = l.Ay.PersistedStore) {
 L(eT, "displayName", "ICYMIStore"), L(eT, "persistKey", "ICYMIStore");
 let ej = new eT(a.h, {
     LOGOUT: function() {
-        U = [], B = [], H = [], Y = {}, F = {}, K = {}, W = {}, G = null, q = {}, z = {}, Q = 0, X = !1, Z = !1, J = !1, en = [], er = [], ei = 0, V = 0, ea = 0, es = !0, eo = !1, ec = new Set, ee = null, eu = !1, ed = !1, $ = null, ep = 0
+        U = [], B = [], H = [], Y = {}, F = {}, K = {}, W = {}, G = null, q = {}, z = {}, Q = 0, X = !1, Z = !1, $ = !1, en = [], er = [], ei = 0, V = 0, ea = 0, es = !0, eo = !1, ec = new Set, ee = null, eu = !1, ed = !1, J = null, ep = 0
     },
     LOAD_ICYMI_FROM_NOTIFICATION: function(e) {
         let {
@@ -486,7 +486,7 @@ let ej = new eT(a.h, {
             feed_item_ids: B.map(e => e.id)
         };
         let [a, s] = eE(B);
-        if (H = eO(a), !J || 0 === Q || i) Q = 0, !eu && eg(a, B) ? (Z = !0, X = !0) : Z = !1, eb({
+        if (H = eO(a), !$ || 0 === Q || i) Q = 0, !eu && eg(a, B) ? (Z = !0, X = !0) : Z = !1, eb({
             newUnread: a,
             newRead: s
         });
@@ -607,7 +607,7 @@ let ej = new eT(a.h, {
         eb(), Z = !1
     },
     ICYMI_TAB_OPENED: function() {
-        J = !0, V = Date.now(), X && (X = !1, Z = !1), et < 5 && et++
+        $ = !0, V = Date.now(), X && (X = !1, Z = !1), et < 5 && et++
     },
     ICYMI_FEEDBACK_GIVEN: function() {
         et = 6
@@ -679,10 +679,10 @@ let ej = new eT(a.h, {
             createdAtMs: n
         } = e;
         if (null == t || 0 === t.length) {
-            $ = null;
+            J = null;
             return
         }
-        $ = [n, [...t]]
+        J = [n, [...t]]
     },
     ICYMI_SCROLL_EVENT: function(e) {
         let {

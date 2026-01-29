@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 10368, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,20 +12,20 @@ var r = n(64700),
     c = n(954571),
     d = n(461797),
     u = n(652215);
-let p = Object.keys(d.jB),
-    _ = e => {
-        let t = null == e ? p : p.filter(t => t !== e);
+let _ = Object.keys(d.jB),
+    p = e => {
+        let t = null == e ? _ : _.filter(t => t !== e);
         return t[Math.floor(Math.random() * t.length)]
     };
 
 function m() {
     let e = (0, i.bG)([l.A], () => l.A.useReducedMotion),
-        [t, n] = (0, r.useState)(_()),
+        [t, n] = (0, r.useState)(p()),
         {
-            banner: p,
+            banner: _,
             themeColors: m,
             avatarDecorationSkuId: g,
-            displayNameStyles: f
+            displayNameStyles: A
         } = (0, r.useMemo)(() => {
             let n = (0, d.Wt)(t);
             return {
@@ -35,26 +35,26 @@ function m() {
                 displayNameStyles: n.displayNameStyles
             }
         }, [t, e]),
-        b = (0, i.bG)([s.A], () => {
+        f = (0, i.bG)([s.A], () => {
             let e = s.A.getProduct(g);
             return (0, a.T)(null == e ? void 0 : e.items[0]) ? e.items[0] : null
         });
     (0, r.useEffect)(() => {
         (0, o.w5)({
-            banner: p,
+            banner: _,
             themeColors: m,
-            avatarDecoration: b,
-            displayNameStyles: f
+            avatarDecoration: f,
+            displayNameStyles: A
         })
-    }, [p, m, b, f]);
-    let h = (0, r.useCallback)(() => {
-        let e = _(t);
+    }, [_, m, f, A]);
+    let b = (0, r.useCallback)(() => {
+        let e = p(t);
         n(e), c.default.track(u.HAw.TRY_IT_OUT_PRESET_SHUFFLED, {
             preset: e
         })
     }, [t]);
     return {
         preset: t,
-        onShuffle: h
+        onShuffle: b
     }
 }

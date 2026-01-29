@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 717518, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var r, l, i = n(735438),
     s = n.n(i),
@@ -10,7 +10,7 @@ var r, l, i = n(735438),
     c = n(71393);
 let u = null,
     d = {};
-class p extends(l = a.Ay.Store) {
+class h extends(l = a.Ay.Store) {
     initialize() {
         this.waitFor(c.A)
     }
@@ -43,13 +43,13 @@ class p extends(l = a.Ay.Store) {
     getRegions(e) {
         return null != e ? d[e] : u
     }
-}(r = "displayName") in p ? Object.defineProperty(p, r, {
+}(r = "displayName") in h ? Object.defineProperty(h, r, {
     value: "RegionStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : p[r] = "RegionStore";
-let h = new p(o.h, {
+}) : h[r] = "RegionStore";
+let p = new h(o.h, {
     LOAD_REGIONS: function(e) {
         let t = s().sortBy(e.regions, e => e.name);
         null != e.guildId ? d[e.guildId] = t : u = t

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 815213, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,21 +12,21 @@ var r = n(627968),
     c = n(152007),
     u = n(734057),
     d = n(222823),
-    p = n(543465),
-    h = n(531685);
-
-function f(e) {
-    let t = u.A.getChannel(e);
-    return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : p.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
-}
+    h = n(543465),
+    p = n(531685);
 
 function g(e) {
+    let t = u.A.getChannel(e);
+    return null != t && null != t.getGuildId() && !(t.isThread() ? c.A.isMuted(t.id) : h.Ay.isChannelMuted(t.getGuildId(), t.id)) && (0, o.Y)(t)
+}
+
+function f(e) {
     let t = u.A.getChannel(e);
     if (null == t) return !1;
     let n = t.getGuildId();
     if (null == n) return !1;
-    let r = p.Ay.isGuildCollapsed(n),
-        l = p.Ay.isChannelMuted(n, t.id);
+    let r = h.Ay.isGuildCollapsed(n),
+        l = h.Ay.isChannelMuted(n, t.id);
     return (!r || !l) && d.Ay.getMentionCount(e) > 0
 }
 let m = l.forwardRef(function(e, t) {
@@ -34,7 +34,7 @@ let m = l.forwardRef(function(e, t) {
     let [o, ...c] = [e, t], {
         guildId: u,
         guildChannels: d,
-        guildChannelsVersion: p
+        guildChannelsVersion: h
     } = o, m = function(e, t) {
         if (null == e) return {};
         var n, r, l, i = {};
@@ -51,11 +51,11 @@ let m = l.forwardRef(function(e, t) {
             }(e, t), Object.getOwnPropertySymbols)
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-    }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [b] = c, A = (0, s.W)(u, d, p, {
+    }(o, ["guildId", "guildChannels", "guildChannelsVersion"]), [b] = c, A = (0, s.W)(u, d, h, {
         withVoiceChannels: !1
     }, {
         ignoreRecents: !0
-    }), y = (0, i.bG)([h.A], () => h.A.isFocused());
+    }), y = (0, i.bG)([p.A], () => p.A.isFocused());
     return (0, r.jsx)(a.A, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -76,8 +76,8 @@ let m = l.forwardRef(function(e, t) {
     }({
         ref: b
     }, m), l = l = {
-        isUnread: f,
-        isMentioned: g,
+        isUnread: g,
+        isMentioned: f,
         items: A,
         animate: y
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

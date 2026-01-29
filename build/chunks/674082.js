@@ -1,31 +1,31 @@
-/** Chunk was on 28979 **/
-/** chunk id: 674082, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Y: () => A
+/** Chunk was on 4670 **/
+/** chunk id: 674082, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Y: () => c
 });
 var n = i(311907),
     l = i(419954),
     s = i(994500),
     r = i(975571),
-    u = i(780964),
-    a = i(961583),
+    a = i(780964),
+    u = i(961583),
     o = i(276221),
-    T = i(652215),
-    d = i(985018);
-let A = (0, l.zZ)(u.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
-    useTitle: () => d.intl.string(d.t.LVwR56),
-    useSubtitle: () => d.intl.format(d.t["0aNQo9"], {
-        helpArticle: r.A.getArticleURL(T.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
+    d = i(652215),
+    T = i(985018);
+let c = (0, l.zZ)(a.X.CONTENT_AND_SOCIAL_RESTRICTED_USERS_CATEGORY, {
+    useTitle: () => T.intl.string(T.t.LVwR56),
+    useSubtitle: () => T.intl.format(T.t["0aNQo9"], {
+        helpArticle: r.A.getArticleURL(d.MVz.STEALTH_REMEDIATION_FEATURE_GUIDE)
     }),
-    buildLayout: () => [a.T, o.H],
+    buildLayout: () => [u.T, o.H],
     usePredicate: () => {
         let {
-            hasBlockedUsers: t,
-            hasIgnoredUsers: e
+            hasBlockedUsers: e,
+            hasIgnoredUsers: t
         } = (0, n.cf)([s.A], () => ({
             hasBlockedUsers: s.A.getBlockedIDs().length > 0,
             hasIgnoredUsers: s.A.getIgnoredIDs().length > 0
         }));
-        return e || t
+        return t || e
     }
 })

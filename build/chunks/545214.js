@@ -1,27 +1,27 @@
-/** Chunk was on 28979 **/
-/** chunk id: 545214, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => T,
-    k: () => d
+/** Chunk was on 4670 **/
+/** chunk id: 545214, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => d,
+    k: () => T
 });
 var n = i(311907),
     l = i(419954),
     s = i(287809),
     r = i(780964),
-    u = i(100817),
-    a = i(32096),
+    a = i(100817),
+    u = i(32096),
     o = i(985018);
 
-function T() {
-    let t = (0, a.b)(),
-        e = (0, n.bG)([s.default], () => {
-            let t = s.default.getCurrentUser();
-            return null != t && !t.verified
+function d() {
+    let e = (0, u.b)(),
+        t = (0, n.bG)([s.default], () => {
+            let e = s.default.getCurrentUser();
+            return null != e && !e.verified
         });
-    return !t && e
+    return !e && t
 }
-let d = (0, l.E2)(r.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
+let T = (0, l.E2)(r.X.ACCOUNT_UNVERIFIED_USER_NOTICE, {
     useSearchTerms: () => [o.intl.string(o.t.m0FidJ)],
-    usePredicate: T,
-    Component: u.A
+    usePredicate: d,
+    Component: a.A
 })

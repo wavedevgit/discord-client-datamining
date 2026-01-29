@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 475805, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => I
+    A: () => j
 });
 var r = n(627968),
     i = n(64700),
@@ -12,69 +12,69 @@ var r = n(627968),
     c = n(397927),
     d = n(775602),
     u = n(793574),
-    p = n(688810),
-    _ = n(560138),
+    _ = n(688810),
+    p = n(560138),
     m = n(526292),
     g = n(236834),
-    f = n(549996),
-    b = n(371764),
-    h = n(65470),
-    A = n(792656),
+    A = n(549996),
+    f = n(371764),
+    b = n(65470),
+    h = n(792656),
     E = n(224850),
-    x = n(552554),
-    O = n(797255),
-    C = n(103733),
-    y = n(288351),
-    j = n(160321),
-    T = n(788868),
-    v = n(985018),
-    S = n(232285);
-let I = i.memo(i.forwardRef((e, t) => {
+    O = n(552554),
+    C = n(797255),
+    x = n(103733),
+    S = n(288351),
+    T = n(160321),
+    I = n(788868),
+    y = n(985018),
+    N = n(232285);
+let j = i.memo(i.forwardRef((e, t) => {
     let {
         className: n,
         subscriptionTier: i,
         isEligibleForBogoPromotion: l
     } = e, {
-        analyticsLocations: I
-    } = (0, p.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), N = (0, x.N)(), P = (0, g.A)(), R = null != P, D = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
-        visibilityPercentageRef: w,
-        visibilityPercentage: L
-    } = (0, C.U)(!D), M = (0, o.bG)([_.A], () => _.A.affinities), G = !R && M.length > 0, U = (0, f.c)(a.C.MARKETING_PAGE_BANNER), k = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, H = (0, m.ar)() && !k;
-    return (0, r.jsx)(p.f5, {
-        value: I,
+        analyticsLocations: j
+    } = (0, _.Ay)(u.A.PREMIUM_MARKETING_HERO_CTA), v = (0, O.N)(), P = (0, g.A)(), R = null != P, D = (0, o.bG)([d.A], () => d.A.useReducedMotion), {
+        visibilityPercentageRef: L,
+        visibilityPercentage: w
+    } = (0, x.U)(!D), M = (0, o.bG)([p.A], () => p.A.affinities), G = !R && M.length > 0, U = (0, A.c)(a.C.MARKETING_PAGE_BANNER), k = null != U && "marketingPageBanner" === U.properties.properties.oneofKind, B = (0, m.ar)() && !k;
+    return (0, r.jsx)(_.f5, {
+        value: j,
         children: (0, r.jsx)("div", {
             ref: t,
-            className: s()(S.kL, n),
+            className: s()(N.kL, n),
             "data-testid": "marketing-page-hero-header",
             children: (0, r.jsx)("div", {
-                ref: w,
+                ref: L,
                 children: (0, r.jsxs)("div", {
-                    className: S.hQ,
-                    children: [(0, r.jsx)(j.A, {
-                        containerVisibilityPercentage: L
-                    }), H && (0, r.jsx)("div", {
-                        className: S.XN,
-                        children: (0, r.jsx)(y.A, {
+                    className: N.hQ,
+                    children: [(0, r.jsx)(T.A, {
+                        containerVisibilityPercentage: w
+                    }), B && (0, r.jsx)("div", {
+                        className: N.XN,
+                        children: (0, r.jsx)(S.A, {
                             enablePremiumBrandRefresh: !0
                         })
                     }), (0, r.jsx)("div", {
-                        className: S.s8,
+                        className: N.s8,
                         children: (0, r.jsx)(c.Heading, {
                             variant: "display-md",
                             color: "text-strong",
-                            className: S.wx,
-                            children: v.intl.string(v.t.YCZldK)
+                            className: N.wx,
+                            children: y.intl.string(y.t.YCZldK)
                         })
                     }), (0, r.jsxs)("div", {
-                        className: S.rf,
+                        className: N.rf,
                         children: [R && (0, r.jsx)("div", {
-                            className: S.eZ,
-                            children: (0, r.jsx)(O.A, {
+                            className: N.eZ,
+                            children: (0, r.jsx)(C.A, {
                                 referrer: P,
                                 enablePremiumBrandRefresh: !0
                             })
                         }), G && (0, r.jsx)("div", {
-                            className: S.Qn,
+                            className: N.Qn,
                             children: (0, r.jsx)(E.A, {
                                 textColor: "text-strong",
                                 smallerText: !1,
@@ -82,27 +82,27 @@ let I = i.memo(i.forwardRef((e, t) => {
                                 enablePremiumBrandRefresh: !0
                             })
                         }), (0, r.jsxs)("div", {
-                            className: H ? S.es : S.UJ,
-                            children: [(0, r.jsx)(A.A, {
+                            className: B ? N.es : N.UJ,
+                            children: [(0, r.jsx)(h.A, {
                                 size: "md",
-                                fullWidth: H,
+                                fullWidth: B,
                                 hasActivePromotion: !!l,
-                                subscriptionTier: k ? T.pe.NONE : i,
-                                buttonTextOverride: k ? v.intl.string(v.t["2pG5Ga"]) : void 0
-                            }), !H && (0, r.jsx)(h.A, {
+                                subscriptionTier: k ? I.pe.NONE : i,
+                                buttonTextOverride: k ? y.intl.string(y.t["2pG5Ga"]) : void 0
+                            }), !B && (0, r.jsx)(b.A, {
                                 variant: "secondary",
                                 size: "md"
                             })]
                         }), (0, r.jsx)("div", {
-                            className: S.iQ,
+                            className: N.iQ,
                             children: (0, r.jsx)(c.Text, {
                                 color: "text-muted",
                                 variant: "text-xs/medium",
-                                children: v.intl.format(v.t.kt9wxs, {
-                                    cheapestMonthlyPrice: N
+                                children: y.intl.format(y.t.kt9wxs, {
+                                    cheapestMonthlyPrice: v
                                 })
                             })
-                        }), null != U && "marketingPageBanner" === U.properties.properties.oneofKind && (0, r.jsx)(b.x, {
+                        }), null != U && "marketingPageBanner" === U.properties.properties.oneofKind && (0, r.jsx)(f.x, {
                             componentId: U.id,
                             promotionBannerMarketingComponentFields: U.properties.properties.marketingPageBanner
                         })]

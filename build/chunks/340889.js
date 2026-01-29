@@ -1,28 +1,28 @@
-/** Chunk was on 28979 **/
-/** chunk id: 340889, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 340889, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     U: () => o
 });
 var n = i(311907),
     l = i(55619),
     s = i(419954),
     r = i(351906),
-    u = i(780964),
-    a = i(985018);
-let o = (0, s.zD)(u.X.STREAMING_STREAMER_MODE, {
-    useTitle: () => a.intl.string(a.t.TGNg6T),
-    useSubtitle: () => a.intl.string(a.t["4nXLnE"]),
+    a = i(780964),
+    u = i(985018);
+let o = (0, s.zD)(a.X.STREAMING_STREAMER_MODE, {
+    useTitle: () => u.intl.string(u.t.TGNg6T),
+    useSubtitle: () => u.intl.string(u.t["4nXLnE"]),
     useValue: function() {
         return (0, n.bG)([r.A], () => {
             let {
-                enabled: t
+                enabled: e
             } = r.A.getSettings();
-            return t
+            return e
         })
     },
-    setValue: function(t) {
+    setValue: function(e) {
         l.A.update({
-            enabled: t
+            enabled: e
         })
     }
 })

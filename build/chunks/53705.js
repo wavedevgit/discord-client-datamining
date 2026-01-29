@@ -1,14 +1,14 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 53705, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $: () => r,
-    L: () => l
+    L: () => s
 });
 var i = n(73153),
-    s = n(154323);
+    l = n(154323);
 
-function l(e, t) {
-    let n = "boolean" == typeof t ? t : !s.A.get(e);
+function s(e, t) {
+    let n = "boolean" == typeof t ? t : !l.A.get(e);
     i.h.dispatch({
         type: "DEV_TOOLS_DESIGN_TOGGLE_WEB_SET",
         toggle: e,
@@ -17,5 +17,5 @@ function l(e, t) {
 }
 
 function r() {
-    for (let e in s.A.enabled()) l(e, !1)
+    for (let e in l.A.enabled()) s(e, !1)
 }

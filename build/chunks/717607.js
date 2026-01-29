@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 717607, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
@@ -14,8 +14,8 @@ function c(e) {
     let {
         userId: t,
         applicationId: n
-    } = e, [c, u] = l.useState(!1), [d, p] = l.useState(!1), h = l.useCallback(async e => {
-        e.stopPropagation(), p(!0);
+    } = e, [c, u] = l.useState(!1), [d, h] = l.useState(!1), p = l.useCallback(async e => {
+        e.stopPropagation(), h(!0);
         try {
             await s.A.cancelFriendRequest({
                 userId: t,
@@ -23,9 +23,9 @@ function c(e) {
                 location: "ActionButtonFriendRequest"
             })
         } finally {
-            p(!1)
+            h(!1)
         }
-    }, [n, t]), f = l.useCallback(async e => {
+    }, [n, t]), g = l.useCallback(async e => {
         e.stopPropagation(), u(!0);
         try {
             await s.A.maybeConfirmFriendRequestAccept({
@@ -43,13 +43,13 @@ function c(e) {
             size: "sm",
             children: [(0, r.jsx)(i.$nd, {
                 variant: "active",
-                onClick: f,
+                onClick: g,
                 text: a.intl.string(a.t.Zcibdf),
                 loading: c,
                 disabled: d
             }), (0, r.jsx)(i.$nd, {
                 variant: "secondary",
-                onClick: h,
+                onClick: p,
                 text: a.intl.string(a.t.xuio0C),
                 loading: d,
                 disabled: c

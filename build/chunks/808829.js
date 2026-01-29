@@ -1,19 +1,19 @@
-/** Chunk was on 98797 **/
-/** chunk id: 808829, original params: t,e,n (module,exports,require) **/
-n.d(e, {
+/** Chunk was on 73734 **/
+/** chunk id: 808829, original params: e,t,n (module,exports,require) **/
+n.d(t, {
     P: () => i
 });
 var r = n(985018);
 
-function i(t) {
+function i(e) {
     let {
-        application: e,
+        application: t,
         username: n,
         usernameOnClick: i
-    } = t;
-    return null != e ? r.intl.formatToParts(r.t.Tes5Ou, {
+    } = e;
+    return null != t ? r.intl.formatToParts(r.t.Tes5Ou, {
         username: n,
-        applicationName: e.name,
+        applicationName: t.name,
         usernameOnClick: i
     }) : r.intl.formatToParts(r.t.PUJtgi, {
         username: n,

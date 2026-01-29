@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 831741, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     R: () => y
@@ -10,13 +10,13 @@ var r, l, i = n(627968),
     c = n(883885),
     u = n.n(c),
     d = n(311907),
-    p = n(775602),
-    h = n(455902),
-    f = n(423993),
-    g = n(851007);
+    h = n(775602),
+    p = n(455902),
+    g = n(423993),
+    f = n(851007);
 
 function m(e) {
-    let t = (0, d.bG)([p.A], () => p.A.useReducedMotion),
+    let t = (0, d.bG)([h.A], () => h.A.useReducedMotion),
         n = s.useRef(null);
     return s.useEffect(() => {
         let r;
@@ -37,8 +37,8 @@ function b(e) {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        ref: m(r || (r = n.t(h, 2))),
-        className: o()(g.ys, t)
+        ref: m(r || (r = n.t(p, 2))),
+        className: o()(f.ys, t)
     })
 }
 
@@ -47,8 +47,8 @@ function A(e) {
         className: t
     } = e;
     return (0, i.jsx)("div", {
-        ref: m(l || (l = n.t(f, 2))),
-        className: o()(g.R0, t)
+        ref: m(l || (l = n.t(g, 2))),
+        className: o()(f.R0, t)
     })
 }
 let y = e => {
@@ -66,9 +66,9 @@ let y = e => {
         children: [(0, i.jsx)(b, {
             className: r
         }), (0, i.jsx)("div", {
-            className: g.cw
+            className: f.cw
         }), (0, i.jsx)("div", {
-            className: g.h$,
+            className: f.h$,
             children: t
         }), (0, i.jsx)(A, {
             className: l

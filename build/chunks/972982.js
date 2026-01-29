@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 972982, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => C
+    A: () => x
 });
 var r = n(627968),
     i = n(64700),
@@ -12,17 +12,17 @@ var r = n(627968),
     c = n(195043),
     d = n(359990),
     u = n(961350),
-    p = n(670492),
-    _ = n(287809),
+    _ = n(670492),
+    p = n(287809),
     m = n(464477),
     g = n(709913),
-    f = n(455611),
-    b = n(858526),
-    h = n(309198),
-    A = n(978551),
+    A = n(455611),
+    f = n(858526),
+    b = n(309198),
+    h = n(978551),
     E = n(100817),
-    x = n(531525);
-class O extends i.PureComponent {
+    O = n(531525);
+class C extends i.PureComponent {
     renderEnabled() {
         let {
             backupCodes: e,
@@ -37,42 +37,42 @@ class O extends i.PureComponent {
                 hasTOTPEnabled: t
             }), e.length > 0 && (0, r.jsxs)(o.BJc, {
                 gap: 16,
-                children: [(0, r.jsx)(f.A, {
+                children: [(0, r.jsx)(A.A, {
                     backupCodes: e
                 }), (0, r.jsx)(o.cGx, {})]
             }), t && (0, r.jsx)(c.x, {
-                setting: x.H.ACCOUNT_SMS_BACKUP,
-                children: (0, r.jsx)(h.A, {
+                setting: O.H.ACCOUNT_SMS_BACKUP,
+                children: (0, r.jsx)(b.A, {
                     currentUser: n,
                     togglingSMS: i
                 })
             }), (0, r.jsx)(c.x, {
-                setting: x.H.ACCOUNT_SECURITY_KEYS,
+                setting: O.H.ACCOUNT_SECURITY_KEYS,
                 children: (0, r.jsx)(d.A, {})
             })]
         })
     }
     renderDisabled() {
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(b.A, {}), (0, r.jsx)(d.A, {})]
+            children: [(0, r.jsx)(f.A, {}), (0, r.jsx)(d.A, {})]
         })
     }
     render() {
         let {
             currentUser: e
         } = this.props;
-        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(A.A, {})
+        return m.K7 ? e.verified ? e.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, r.jsx)(E.A, {}) : (0, r.jsx)(h.A, {})
     }
 }
 
-function C(e) {
-    let t = (0, a.bG)([_.default], () => _.default.getCurrentUser());
+function x(e) {
+    let t = (0, a.bG)([p.default], () => p.default.getCurrentUser());
     s()(null != t, "TwoFactorAuth: currentUser cannot be undefined");
-    let n = (0, a.cf)([p.A, u.default], () => ({
-        togglingSMS: p.A.togglingSMS,
+    let n = (0, a.cf)([_.A, u.default], () => ({
+        togglingSMS: _.A.togglingSMS,
         hasTOTPEnabled: u.default.hasTOTPEnabled()
     }));
-    return (0, r.jsx)(O, function(e) {
+    return (0, r.jsx)(C, function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

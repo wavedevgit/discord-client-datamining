@@ -1,36 +1,36 @@
-/** Chunk was on 28979 **/
-/** chunk id: 312574, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 312574, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     u: () => I
 });
 var n = i(934551),
     l = i(419954),
     s = i(780964),
     r = i(358776),
-    u = i(790076),
-    a = i(682262),
+    a = i(790076),
+    u = i(682262),
     o = i(694202),
-    T = i(50847),
-    d = i(606275),
-    A = i(222328),
-    S = i(879545),
-    E = i(531525),
-    g = i(985018);
-let _ = (0, l.t_)(s.X.OVERLAY_PANEL, {
+    d = i(50847),
+    T = i(606275),
+    c = i(222328),
+    A = i(879545),
+    S = i(531525),
+    _ = i(985018);
+let E = (0, l.t_)(s.X.OVERLAY_PANEL, {
         usePredicate: () => (0, r.dk)("OverlayPanel"),
-        useTitle: () => g.intl.string(g.t["9cb1Uz"]),
-        buildLayout: () => [A.I, o.u, T.X, S.D, d.h]
+        useTitle: () => _.intl.string(_.t["9cb1Uz"]),
+        buildLayout: () => [c.I, o.u, d.X, A.D, T.h]
     }),
-    c = (0, l.t_)(s.X.OVERLAY_PANEL, {
+    g = (0, l.t_)(s.X.OVERLAY_PANEL, {
         usePredicate: () => !(0, r.dk)("OverlayPanel"),
-        useTitle: () => g.intl.string(g.t["9cb1Uz"]),
-        StronglyDiscouragedCustomComponent: u.Ay,
+        useTitle: () => _.intl.string(_.t["9cb1Uz"]),
+        StronglyDiscouragedCustomComponent: a.Ay,
         buildLayout: () => []
     }),
     I = (0, l.i4)(s.X.OVERLAY_SIDEBAR_ITEM, {
-        useTitle: () => g.intl.string(g.t["9cb1Uz"]),
+        useTitle: () => _.intl.string(_.t["9cb1Uz"]),
         icon: n.WindowTopOutlineIcon,
-        usePredicate: a.b_,
-        getLegacySearchKey: () => (0, r.WJ)("OverlayPanel") ? void 0 : E.H.OVERLAY,
-        buildLayout: () => (0, r.WJ)("OverlayPanel") ? [_] : [c]
+        usePredicate: u.b_,
+        getLegacySearchKey: () => (0, r.WJ)("OverlayPanel") ? void 0 : S.H.OVERLAY,
+        buildLayout: () => (0, r.WJ)("OverlayPanel") ? [E] : [g]
     })

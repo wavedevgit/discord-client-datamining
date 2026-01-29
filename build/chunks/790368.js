@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 790368, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -13,19 +13,19 @@ var l = n(827734),
     c = n(912309),
     u = n(954571),
     d = n(652215),
-    p = n(985018),
-    h = n(824426);
+    h = n(985018),
+    p = n(824426);
 
-function f(e) {
+function g(e) {
     let {
         closePopout: t
     } = e, n = (0, c.kX)();
     return (0, r.jsx)(i.m, {
         asContainer: !0,
-        text: p.intl.string(p.t["lMR96+"]),
+        text: h.intl.string(h.t["lMR96+"]),
         children: (0, r.jsxs)(s.DUT, {
-            "aria-label": "".concat(p.intl.string(p.t["lMR96+"]), ", ").concat(n),
-            className: h.b,
+            "aria-label": "".concat(h.intl.string(h.t["lMR96+"]), ", ").concat(n),
+            className: p.b,
             onClick: () => {
                 u.default.track(d.HAw.NOTIFICATION_CENTER_ACTION, {
                     action_type: o.e1.FRIEND_REQUESTS_BUTTON_CLICK

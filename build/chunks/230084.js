@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 230084, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -12,60 +12,60 @@ var r = n(627968),
     c = n(688810),
     d = n(385612),
     u = n(128450),
-    p = n(339984),
-    _ = n(985018),
+    _ = n(339984),
+    p = n(985018),
     m = n(897570);
 let g = [{
     name: "gif",
     extensions: ["gif"]
 }];
 
-function f(e) {
+function A(e) {
     let {
         showRemoveAvatarButton: t,
         errors: n,
         onAvatarChange: l,
-        sectionTitle: f,
-        changeAvatarButtonText: b,
-        guildId: h,
-        className: A,
+        sectionTitle: A,
+        changeAvatarButtonText: f,
+        guildId: b,
+        className: h,
         disabled: E = !1,
-        isTryItOut: x = !1,
-        forcedDivider: O,
-        withHighlight: C = !1
+        isTryItOut: O = !1,
+        forcedDivider: C,
+        withHighlight: x = !1
     } = e, {
-        newestAnalyticsLocation: y
-    } = (0, c.Ay)(), j = C ? o.wLn : a.$n, T = i.useCallback(() => {
+        newestAnalyticsLocation: S
+    } = (0, c.Ay)(), T = x ? o.wLn : a.$n, I = i.useCallback(() => {
         (0, d.XD)({
-            uploadType: p.HL.AVATAR,
-            analyticsSource: y,
-            filters: x ? g : void 0,
-            guildId: h,
-            isTryItOut: x
+            uploadType: _.HL.AVATAR,
+            analyticsSource: S,
+            filters: O ? g : void 0,
+            guildId: b,
+            isTryItOut: O
         })
-    }, [h, y, x]);
+    }, [b, S, O]);
     return (0, r.jsx)(u.A, {
-        className: A,
-        title: f,
+        className: h,
+        title: A,
         errors: n,
         disabled: E,
-        forcedDivider: O,
+        forcedDivider: C,
         children: (0, r.jsxs)("div", {
             className: m.NC,
-            children: [(0, r.jsx)(j, {
+            children: [(0, r.jsx)(T, {
                 className: s()({
-                    [m.yj]: C
+                    [m.yj]: x
                 }),
                 size: a.$n.Sizes.SMALL,
-                onClick: T,
-                children: null != b ? b : _.intl.string(_.t["4OynCD"])
+                onClick: I,
+                children: null != f ? f : p.intl.string(p.t["4OynCD"])
             }), t && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
                 className: m.DT,
                 children: (0, r.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != h ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
+                    text: null != b ? p.intl.string(p.t.TDjKDm) : p.intl.string(p.t.twB3fz),
                     onClick: () => l(null)
                 })
             })]

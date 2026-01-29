@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 34247, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,10 +12,10 @@ var r = n(627968),
     c = n(837057),
     u = n(310419),
     d = n(606256),
-    p = n(488995),
-    h = n(324580),
-    f = n(654487),
-    g = n(985018);
+    h = n(488995),
+    p = n(324580),
+    g = n(654487),
+    f = n(985018);
 let m = l.forwardRef(function(e, t) {
     let {
         selected: n,
@@ -24,25 +24,25 @@ let m = l.forwardRef(function(e, t) {
         className: A
     } = e, y = l.useCallback(() => {
         (0, a.WL)({
-            source: p.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
+            source: h.GlobalDiscoveryAnalyticsLocations.GUILDS_BAR_ICON
         });
-        let e = void 0 !== b ? p.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
+        let e = void 0 !== b ? h.GlobalDiscoveryTab.QUESTS : o.A.getField("selectedTab");
         switch (e) {
-            case p.GlobalDiscoveryTab.QUESTS:
+            case h.GlobalDiscoveryTab.QUESTS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: p.GlobalDiscoveryTab.QUESTS,
-                    location: f.rE.DISCOVERY_COMPASS,
+                    tab: h.GlobalDiscoveryTab.QUESTS,
+                    location: g.rE.DISCOVERY_COMPASS,
                     questContent: i.u.DISCOVERY_COMPASS,
                     questId: b
                 });
-            case p.GlobalDiscoveryTab.SERVERS:
+            case h.GlobalDiscoveryTab.SERVERS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: p.GlobalDiscoveryTab.SERVERS,
-                    entrypoint: h.J8.GUILDS_BAR
+                    tab: h.GlobalDiscoveryTab.SERVERS,
+                    entrypoint: p.J8.GUILDS_BAR
                 });
-            case p.GlobalDiscoveryTab.APPS:
+            case h.GlobalDiscoveryTab.APPS:
                 return (0, c.transitionToGlobalDiscovery)({
-                    tab: p.GlobalDiscoveryTab.APPS,
+                    tab: h.GlobalDiscoveryTab.APPS,
                     newSessionState: {
                         entrypoint: {
                             name: u.sW.GLOBAL_DISCOVERY_BUTTON
@@ -64,7 +64,7 @@ let m = l.forwardRef(function(e, t) {
             y(), void 0 !== m && m()
         },
         selected: n,
-        tooltip: g.intl.string(g.t["4nEZLk"]),
+        tooltip: f.intl.string(f.t["4nEZLk"]),
         icon: s.QGJ
     })
 })

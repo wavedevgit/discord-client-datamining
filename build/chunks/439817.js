@@ -2,7 +2,7 @@
 /** chunk id: 439817, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => h
+    A: () => p
 });
 var i = n(627968),
     r = n(64700),
@@ -13,12 +13,12 @@ var i = n(627968),
     c = n(652215),
     d = n(985018),
     u = n(694869);
-let h = function(e) {
+let p = function(e) {
     let t, {
             title: n,
             header: s,
-            children: h,
-            renderSettings: p,
+            children: p,
+            renderSettings: h,
             onDragStart: f
         } = e,
         g = r.useRef(null);
@@ -33,7 +33,7 @@ let h = function(e) {
             children: (0, i.jsx)(o.YNO, {
                 targetElementRef: g,
                 position: "right",
-                renderPopout: null != p ? p : c.tEg,
+                renderPopout: null != h ? h : c.tEg,
                 autoInvert: !1,
                 children: e => {
                     var t, n;
@@ -75,7 +75,7 @@ let h = function(e) {
         className: u.pz,
         children: [t, (0, i.jsx)("div", {
             className: u.Y_,
-            children: h
+            children: p
         })]
     })
 }

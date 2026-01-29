@@ -1,24 +1,24 @@
-/** Chunk was on 28979 **/
-/** chunk id: 923159, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Q: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 923159, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Q: () => d
 });
 var n = i(311907),
     l = i(817281),
     s = i(419954),
     r = i(964404),
-    u = i(780964),
-    a = i(698723),
+    a = i(780964),
+    u = i(698723),
     o = i(985018);
-let T = (0, s.zD)(u.X.VOICE_SWITCH_CHANNEL_ALERT_SETTING, {
+let d = (0, s.zD)(a.X.VOICE_SWITCH_CHANNEL_ALERT_SETTING, {
     useTitle: () => o.intl.string(o.t.jrWHD3),
     useSubtitle: () => o.intl.string(o.t.YCCMkJ),
     useValue: function() {
         return (0, n.bG)([r.Ay], () => !r.Ay.disableVoiceChannelChangeAlert)
     },
-    setValue: function(t) {
-        (0, a.A)("switch_channel_warning_enabled", t, !r.Ay.disableVoiceChannelChangeAlert), l.Ay.updatedUnsyncedSettings({
-            disableVoiceChannelChangeAlert: !t
+    setValue: function(e) {
+        (0, u.A)("switch_channel_warning_enabled", e, !r.Ay.disableVoiceChannelChangeAlert), l.Ay.updatedUnsyncedSettings({
+            disableVoiceChannelChangeAlert: !e
         })
     }
 })

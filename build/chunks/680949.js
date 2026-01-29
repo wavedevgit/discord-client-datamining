@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 680949, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968),
     l = n(64700),
@@ -12,10 +12,10 @@ var r = n(627968),
     c = n(134753),
     u = n(709562),
     d = n(60504),
-    p = n(985018);
+    h = n(985018);
 
-function h() {
-    return (h = Object.assign || function(e) {
+function p() {
+    return (p = Object.assign || function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = arguments[t];
             for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
@@ -24,11 +24,11 @@ function h() {
     }).apply(this, arguments)
 }
 
-function f() {
+function g() {
     let e = (0, i.bG)([o.A], () => o.A.getDrawMode()),
         t = (null == e ? void 0 : e.type) === c.Z.LINE,
         n = l.useRef(null),
-        f = () => {
+        g = () => {
             t ? (0, a.Ol)(null) : (0, a.Ol)({
                 type: c.Z.LINE
             })
@@ -38,7 +38,7 @@ function f() {
         popoutTargetRef: n,
         children: e => {
             var l, i;
-            let {} = e, a = h({}, e);
+            let {} = e, a = p({}, e);
             return (0, r.jsx)(u.A, (l = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -58,10 +58,10 @@ function f() {
                 return e
             }({}, a), i = i = {
                 buttonRef: n,
-                label: p.intl.string(p.t.ZQCf9V),
+                label: h.intl.string(h.t.ZQCf9V),
                 isActive: t,
                 iconComponent: s.R2l,
-                onClick: f
+                onClick: g
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 699022, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => O
 });
 var r = n(627968),
     l = n(64700),
@@ -12,33 +12,33 @@ var r = n(627968),
     c = n(572164),
     u = n(399925),
     d = n(670470),
-    p = n(709562),
-    h = n(616356),
-    f = n(961350),
-    g = n(313961),
+    h = n(709562),
+    p = n(616356),
+    g = n(961350),
+    f = n(313961),
     m = n(384059),
     b = n(806931),
     A = n(985018),
     y = n(342910);
 
-function _(e) {
+function O(e) {
     let {
         channel: t
     } = e, {
         parentAnalyticsLocation: n
-    } = (0, a.Ay)(), _ = (0, i.bG)([g.A], () => g.A.getSelectedParticipant(t.id)), O = (null == _ ? void 0 : _.type) === b.lp.STREAM, j = (0, i.bG)([h.A], () => O ? h.A.getActiveStreamForStreamKey(_.id) : null), {
-        ignoreSenderPreference: v
+    } = (0, a.Ay)(), O = (0, i.bG)([f.A], () => f.A.getSelectedParticipant(t.id)), _ = (null == O ? void 0 : O.type) === b.lp.STREAM, x = (0, i.bG)([p.A], () => _ ? p.A.getActiveStreamForStreamKey(O.id) : null), {
+        ignoreSenderPreference: j
     } = d.A.useExperiment({
         location: "ActionBarClipsButton"
     }, {
         autoTrackExposure: !1
     }), {
-        viewerClippingAllowed: x,
+        viewerClippingAllowed: v,
         isAtMaxSavingClipOperations: E
     } = (0, i.cf)([o.A], () => ({
-        viewerClippingAllowed: null != j && (o.A.isViewerClippingAllowedForUser(j.ownerId) || v),
+        viewerClippingAllowed: null != x && (o.A.isViewerClippingAllowedForUser(x.ownerId) || j),
         isAtMaxSavingClipOperations: o.A.getIsAtMaxSaveClipOperations()
-    })), C = (0, c.Et)(), S = (null == j ? void 0 : j.ownerId) === f.default.getId(), I = !C || !(S || x) || E || null == _, N = l.useCallback(e => {
+    })), C = (0, c.Et)(), S = (null == x ? void 0 : x.ownerId) === g.default.getId(), I = !C || !(S || v) || E || null == O, N = l.useCallback(e => {
         var t, n;
         return (0, r.jsx)(s.xpe, (t = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -70,14 +70,14 @@ function _(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
     }, []);
-    return (0, r.jsx)(p.A, {
+    return (0, r.jsx)(h.A, {
         className: y.g,
         onClick: () => {
-            I || ((0, m.X)(n, m.O.CLIP), S ? (0, u.l0)() : (0, u.yd)(_.id))
+            I || ((0, m.X)(n, m.O.CLIP), S ? (0, u.l0)() : (0, u.yd)(O.id))
         },
         disabled: I,
         iconComponent: N,
-        label: null == j ? A.intl.string(A.t.eg5qtV) : S || x ? C ? E ? void 0 : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
+        label: null == x ? A.intl.string(A.t.eg5qtV) : S || v ? C ? E ? void 0 : A.intl.string(A.t.U4URzP) : A.intl.string(A.t.wSS1yN) : A.intl.string(A.t.aRifJX),
         grow: !1
     })
 }

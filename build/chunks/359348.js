@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 359348, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -12,18 +12,18 @@ var r = n(627968),
     c = n(688810),
     u = n(384059),
     d = n(42473),
-    p = n(186111),
-    h = n(532624),
-    f = n(350535),
-    g = n(274372),
+    h = n(186111),
+    p = n(532624),
+    g = n(350535),
+    f = n(274372),
     m = n(572164),
     b = n(399925),
     A = n(652215),
     y = n(985018),
-    _ = n(345314),
-    O = n(145394);
+    O = n(345314),
+    _ = n(145394);
 
-function j(e) {
+function x(e) {
     (0, o.L3)(e, async () => {
         let {
             default: e
@@ -48,7 +48,7 @@ function j(e) {
         }({}, t))
     })
 }
-let v = e => {
+let j = e => {
         let {
             keybindString: t,
             targetElementRef: n
@@ -60,9 +60,9 @@ let v = e => {
             title: y.intl.format(y.t["o+srEw"], {
                 keybind: t,
                 keybindHook: () => (0, r.jsx)("span", {
-                    className: _.E,
+                    className: O.E,
                     children: (0, r.jsx)(a.e7I, {
-                        className: _.d,
+                        className: O.d,
                         shortcut: t
                     })
                 })
@@ -73,7 +73,7 @@ let v = e => {
             }),
             graphic: {
                 type: "image",
-                src: O
+                src: _
             },
             caretConfig: {
                 align: "center"
@@ -81,31 +81,31 @@ let v = e => {
             onRequestClose: c
         })
     },
-    x = () => {
+    v = () => {
         let e = l.useRef(null),
             {
                 parentAnalyticsLocation: t
             } = (0, c.Ay)(),
-            n = (0, i.bG)([p.A], () => p.A.hasLayers()),
+            n = (0, i.bG)([h.A], () => h.A.hasLayers()),
             s = (0, m.Et)(),
-            o = (0, i.bG)([g.A], () => g.A.getIsAtMaxSaveClipOperations()),
-            _ = (0, i.bG)([h.Ay], () => h.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
-        if (!s || null == _ || n) return null;
-        let O = f.dI(_.shortcut, !0);
+            o = (0, i.bG)([f.A], () => f.A.getIsAtMaxSaveClipOperations()),
+            O = (0, i.bG)([p.Ay], () => p.Ay.getKeybindForAction(A.hCu.SAVE_CLIP));
+        if (!s || null == O || n) return null;
+        let _ = g.dI(O.shortcut, !0);
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(v, {
-                keybindString: O,
+            children: [(0, r.jsx)(j, {
+                keybindString: _,
                 targetElementRef: e
             }), (0, r.jsx)(d.A, {
                 ref: e,
                 disabled: o,
-                tooltipText: null != _ ? y.intl.formatToPlainString(y.t.HIMcv1, {
-                    hotkey: f.dI(null == _ ? void 0 : _.shortcut, !0)
+                tooltipText: null != O ? y.intl.formatToPlainString(y.t.HIMcv1, {
+                    hotkey: g.dI(null == O ? void 0 : O.shortcut, !0)
                 }) : y.intl.string(y.t.s52pju),
                 onClick: () => {
                     (0, b.l0)(), (0, u.X)(t, u.O.CLIP)
                 },
-                onContextMenu: j,
+                onContextMenu: x,
                 icon: a.xgA
             })]
         })

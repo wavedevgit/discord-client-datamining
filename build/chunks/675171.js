@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 675171, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(417597),
     l = n(933958),
@@ -20,7 +20,7 @@ let u = "no_text_activity",
         [c.Gd.ACTIVITY_POPOUT_WINDOW]: [o.i.NEW_MESSAGES, o.i.OPT_IN_CHANNEL, o.i.SUMMARIES]
     };
 
-function p() {
+function h() {
     let e = (0, r.bG)([l.Ay], () => l.Ay.getCurrentEmbeddedActivity()),
         t = (0, r.bG)([l.Ay], () => l.Ay.getActivityPanelMode()),
         n = (0, i.H)(null == e ? void 0 : e.location);

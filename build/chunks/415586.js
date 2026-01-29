@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 415586, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => P
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(442433),
     u = n(738876),
     d = n(58149),
-    p = n(332456),
-    h = n(237774),
-    f = n(47167),
-    g = n(698718),
+    h = n(332456),
+    p = n(237774),
+    g = n(47167),
+    f = n(698718),
     m = n(355622),
     b = n(58736),
     A = n(353428),
     y = n(378570),
-    _ = n(734057),
-    O = n(31717),
-    j = n(71393),
-    v = n(977997),
-    x = n(823471),
+    O = n(734057),
+    _ = n(31717),
+    x = n(71393),
+    j = n(977997),
+    v = n(823471),
     E = n(37411),
     C = n(652215),
     S = n(985018),
@@ -69,10 +69,10 @@ function P(e) {
             baseChannelId: w,
             channelViewSource: R = "Split View"
         } = e,
-        D = (0, a.bG)([_.A], () => _.A.getChannel(P)),
-        M = (0, a.bG)([j.A], () => j.A.getGuild(null == D ? void 0 : D.getGuildId())),
-        L = (0, f.Ay)(D);
-    t = D, i = (0, a.bG)([v.A], () => null != t && !s().isEmpty(v.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
+        D = (0, a.bG)([O.A], () => O.A.getChannel(P)),
+        L = (0, a.bG)([x.A], () => x.A.getGuild(null == D ? void 0 : D.getGuildId())),
+        M = (0, g.Ay)(D);
+    t = D, i = (0, a.bG)([j.A], () => null != t && !s().isEmpty(j.A.getVoiceStatesForChannel(t.id))), l.useEffect(() => {
         i && null != t && (o.h.dispatch({
             type: "SIDEBAR_CLOSE",
             baseChannelId: t.parent_id
@@ -84,28 +84,28 @@ function P(e) {
     if (l.useEffect(() => {
             if (null == D || k.current) return;
             k.current = !0;
-            let e = (0, p.C)(_.A.getChannel(D.id), !0);
+            let e = (0, h.C)(O.A.getChannel(D.id), !0);
             (0, d.zV)(C.HAw.CHANNEL_OPENED, T(N({}, e, (0, d.qL)(D.id)), {
                 channel_view: R
-            })), (0, h.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
+            })), (0, p.k)(C.HAw.CHANNEL_OPENED_CLICKSTREAM, {
                 channelId: D.id
             })
-        }, [D, R]), null == D || null == M) return null;
-    let G = (0, r.jsx)(x.A, {
+        }, [D, R]), null == D || null == L) return null;
+    let G = (0, r.jsx)(v.A, {
         channel: D,
         baseChannelId: w
     });
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(u.A, {
             channel: D,
-            draftType: O.C.ChannelMessage
+            draftType: _.C.ChannelMessage
         }), (0, r.jsx)(b.Ay, {
             toolbar: G,
             "aria-label": S.intl.string(S.t.Pwe8tN),
             children: (0, A.zF)({
                 channel: D,
-                channelName: L,
-                guild: M,
+                channelName: M,
+                guild: L,
                 inSidebar: !0,
                 handleContextMenu: function(e) {
                     (0, c.L3)(e, async () => {
@@ -123,9 +123,9 @@ function P(e) {
             })
         }), (0, r.jsx)("div", {
             className: I.T,
-            children: (0, r.jsx)(g.A, {
+            children: (0, r.jsx)(f.A, {
                 channel: D,
-                guild: M,
+                guild: L,
                 chatInputType: m.oU.SIDEBAR
             }, P)
         })]

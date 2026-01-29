@@ -52,8 +52,8 @@ var r = n(627968),
     Q = n(203879),
     X = n(409389),
     Z = n(881172),
-    J = n(724339),
-    $ = n(516226),
+    $ = n(724339),
+    J = n(516226),
     ee = n(321503),
     et = n(65513),
     en = n(475529),
@@ -230,7 +230,7 @@ let eE = function(e) {
     let {
         onScroll: k,
         scrollPosition: H
-    } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, J.W)(e => e.registerAssetLoad), X = i.useRef(W);
+    } = (0, v.G)(), W = z.A.getState().getUtmCurrentContext(), Q = (0, $.W)(e => e.registerAssetLoad), X = i.useRef(W);
     i.useEffect(() => {
         X.current = W
     }), i.useEffect(() => {
@@ -342,7 +342,7 @@ let eE = function(e) {
                 animate: !1
             }), x(e)
         }, [l, x]);
-    return (0, r.jsx)($.M.Provider, {
+    return (0, r.jsx)(J.M.Provider, {
         value: {
             onAssetLoadComplete: Q
         },

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 704860, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968),
     l = n(64700),
@@ -12,16 +12,16 @@ var r = n(627968),
     c = n(254143),
     u = n(778983),
     d = n(841362),
-    p = n(285745);
+    h = n(285745);
 
-function h(e) {
+function p(e) {
     let {
         channel: t,
         message: n,
-        snapshot: h
+        snapshot: p
     } = e, {
-        moderatorReport: f
-    } = h, g = null == f ? void 0 : f.reported_user_id, m = (0, i.bG)([a.default], () => null != g ? a.default.getUser(g) : null), b = (0, i.bG)([s.A], () => s.A.getGuild(t.guild_id));
+        moderatorReport: g
+    } = p, f = null == g ? void 0 : g.reported_user_id, m = (0, i.bG)([a.default], () => null != f ? a.default.getUser(f) : null), b = (0, i.bG)([s.A], () => s.A.getGuild(t.guild_id));
     (0, o.ml)(n);
     let A = (0, c.A)({
             channel: t,
@@ -33,30 +33,30 @@ function h(e) {
             user: m,
             guild: b
         }),
-        _ = [(0, u.A)({
+        O = [(0, u.A)({
             channel: t,
             message: n,
             user: m,
             guild: b
-        }), A, y, (0, p.A)({
+        }), A, y, (0, h.A)({
             channel: t,
             user: m,
             guild: b
         })].filter(e => null != e);
-    return t.isModeratorReportChannel() && 0 !== _.length ? (0, r.jsx)(r.Fragment, {
-        children: _.map((e, t) => (0, r.jsx)(l.Fragment, {
+    return t.isModeratorReportChannel() && 0 !== O.length ? (0, r.jsx)(r.Fragment, {
+        children: O.map((e, t) => (0, r.jsx)(l.Fragment, {
             children: e
         }, t))
     }) : null
 }
 
-function f(e) {
+function g(e) {
     let {
         message: t,
         channel: n
     } = e;
     return (0, r.jsx)(r.Fragment, {
-        children: t.messageSnapshots.map((e, l) => (0, r.jsx)(h, {
+        children: t.messageSnapshots.map((e, l) => (0, r.jsx)(p, {
             channel: n,
             message: t,
             snapshot: e

@@ -1,7 +1,7 @@
 /** Chunk was on 52199 **/
 /** chunk id: 443486, original params: e,t,r (module,exports,require) **/
 r.d(t, {
-    A: () => y
+    A: () => A
 });
 var n = r(627968),
     l = r(64700),
@@ -16,36 +16,36 @@ var n = r(627968),
     p = r(65600),
     f = r(145331),
     g = r(652215),
-    S = r(985018),
+    _ = r(985018),
     E = r(935606);
 
-function y(e) {
+function A(e) {
     let {
         setSearchQuery: t,
         searchContext: r,
-        mode: y
-    } = e, _ = (0, i.R)(r);
+        mode: A
+    } = e, y = (0, i.R)(r);
     return l.useMemo(() => {
         let e = [{
             type: g.LWr.FILTER_FROM,
-            isEligible: _.has(g.LWr.FILTER_FROM),
+            isEligible: y.has(g.LWr.FILTER_FROM),
             icon: s.nys,
-            label: S.intl.string(S.t.ktr6z5)
+            label: _.intl.string(_.t.ktr6z5)
         }, {
             type: g.LWr.FILTER_IN,
-            isEligible: _.has(g.LWr.FILTER_IN),
+            isEligible: y.has(g.LWr.FILTER_IN),
             icon: s.N$i,
-            label: S.intl.string(S.t.VMjDvS)
+            label: _.intl.string(_.t.VMjDvS)
         }, {
             type: g.LWr.FILTER_HAS,
-            isEligible: _.has(g.LWr.FILTER_HAS),
+            isEligible: y.has(g.LWr.FILTER_HAS),
             icon: s.PtA,
-            label: S.intl.string(S.t.IhIpc7)
+            label: _.intl.string(_.t.IhIpc7)
         }, {
             type: g.LWr.FILTER_MENTIONS,
-            isEligible: _.has(g.LWr.FILTER_MENTIONS),
+            isEligible: y.has(g.LWr.FILTER_MENTIONS),
             icon: s.XxR,
-            label: S.intl.string(S.t.fpKv9Y)
+            label: _.intl.string(_.t.fpKv9Y)
         }];
         return e.filter(e => e.isEligible).map(l => {
             let {
@@ -77,7 +77,7 @@ function y(e) {
                         searchQueryString: c.A.getSearchInputText(r),
                         searchTokenType: g,
                         searchAutocompleteGroup: g,
-                        searchAutocompleteMode: y,
+                        searchAutocompleteMode: A,
                         searchAutocompleteResultIndex: i - 1,
                         searchAutocompleteTotalResults: e.length,
                         isSearchFilterPrefix: !0,
@@ -93,5 +93,5 @@ function y(e) {
                 }
             })
         })
-    }, [_, r, y, t])
+    }, [y, r, A, t])
 }

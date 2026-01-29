@@ -1,26 +1,26 @@
-/** Chunk was on 28979 **/
-/** chunk id: 978431, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    e: () => S
+/** Chunk was on 4670 **/
+/** chunk id: 978431, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    e: () => A
 });
 var n = i(419954),
     l = i(780964),
     s = i(380587),
     r = i(589641),
-    u = i(660353),
-    a = i(360055),
+    a = i(660353),
+    u = i(360055),
     o = i(319436),
-    T = i(317014),
-    d = i(39218),
-    A = i(985018);
-let S = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
-    useTitle: () => A.intl.string(A.t.xVRG4P),
+    d = i(317014),
+    T = i(39218),
+    c = i(985018);
+let A = (0, n.zZ)(l.X.CONTENT_AND_SOCIAL_CONTENT_CATEGORY, {
+    useTitle: () => c.intl.string(c.t.xVRG4P),
     useInlineNotice: function() {
-        var t;
-        let e = (0, r.I)(),
+        var e;
+        let t = (0, r.I)(),
             i = (0, s.aK)(),
             n = (0, s.m3)();
-        return null != (t = null != e ? e : i) ? t : n
+        return null != (e = null != t ? t : i) ? e : n
     },
-    buildLayout: () => [o.v, d.x, T.t, u.u, a.a]
+    buildLayout: () => [o.v, T.x, d.t, a.u, u.a]
 })

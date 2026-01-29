@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 533233, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 });
 var r = n(311907),
     l = n(313961),
@@ -13,15 +13,15 @@ var r = n(311907),
     u = n(96566),
     d = n(652215);
 
-function p(e) {
+function h(e) {
     var t;
     let n = (0, r.bG)([l.A], () => l.A.getStageVideoLimitBoostUpsellDismissed(e.id), [e.id]),
-        p = (0, a.uy)(e.id),
-        h = (0, a.zy)(e.id, o.ip.AUDIENCE),
-        f = (0, u.qT)(e.id),
-        g = (0, r.bG)([i.A], () => i.A.getGuild(e.guild_id), [e.guild_id]),
+        h = (0, a.uy)(e.id),
+        p = (0, a.zy)(e.id, o.ip.AUDIENCE),
+        g = (0, u.qT)(e.id),
+        f = (0, r.bG)([i.A], () => i.A.getGuild(e.guild_id), [e.guild_id]),
         m = (0, r.bG)([s.A], () => s.A.can(c.QY, e), [e]),
-        b = null != (t = null == g ? void 0 : g.maxStageVideoChannelUsers) ? t : 0,
-        A = !(null != g && g.features.has(d.GuildFeatures.COMMUNITY)) && b > d.uaN;
-    return f && !n && m && !A && p + h >= b
+        b = null != (t = null == f ? void 0 : f.maxStageVideoChannelUsers) ? t : 0,
+        A = !(null != f && f.features.has(d.GuildFeatures.COMMUNITY)) && b > d.uaN;
+    return g && !n && m && !A && h + p >= b
 }

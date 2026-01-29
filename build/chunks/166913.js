@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 166913, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => H
+    A: () => B
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,30 +12,30 @@ var r = n(627968),
     c = n(230109),
     d = n(582754),
     u = n(421380),
-    p = n(736653),
-    _ = n(793574),
+    _ = n(736653),
+    p = n(793574),
     m = n(688810),
     g = n(726649),
-    f = n(611924),
-    b = n(166403),
-    h = n(954571),
-    A = n(927578),
+    A = n(611924),
+    f = n(166403),
+    b = n(954571),
+    h = n(927578),
     E = n(40185),
-    x = n(526292),
-    O = n(234419),
-    C = n(412260),
-    y = n(396375),
-    j = n(106922),
-    T = n(501007),
-    v = n(901125),
-    S = n(729230),
-    I = n(753894),
-    N = n(227273),
+    O = n(526292),
+    C = n(234419),
+    x = n(412260),
+    S = n(396375),
+    T = n(106922),
+    I = n(501007),
+    y = n(901125),
+    N = n(729230),
+    j = n(753894),
+    v = n(227273),
     P = n(252711),
     R = n(244778),
     D = n(788868),
-    w = n(652215),
-    L = n(985018),
+    L = n(652215),
+    w = n(985018),
     M = n(639179),
     G = n(432221),
     U = n(288894);
@@ -43,38 +43,38 @@ let k = e => {
         let {
             inOfferExperience: t
         } = e;
-        return t ? (0, r.jsx)(S.A, {
+        return t ? (0, r.jsx)(N.A, {
             lifted: t
         }) : null
     },
-    H = () => {
+    B = () => {
         var e;
-        (0, f.P)(g.b);
+        (0, A.P)(g.b);
         let t = i.useRef(null),
             n = i.useRef(null),
             l = i.useRef(null),
-            S = (0, p.Ay)(),
-            H = (0, d.Mw)(S),
-            [B, V] = i.useState(!1),
+            N = (0, _.Ay)(),
+            B = (0, d.Mw)(N),
+            [H, V] = i.useState(!1),
             [F, Y] = i.useState(!1),
             [W, K] = i.useState(!1),
             [z, Z] = i.useState(!1),
-            q = (0, o.bG)([b.A], () => b.A.getPremiumTypeSubscription()),
-            X = null != q ? (0, A.EL)(q) : null,
-            J = null != X ? A.Ay.getSkuIdForPlan(X.planId) : null,
+            X = (0, o.bG)([f.A], () => f.A.getPremiumTypeSubscription()),
+            q = null != X ? (0, h.EL)(X) : null,
+            J = null != q ? h.Ay.getSkuIdForPlan(q.planId) : null,
             Q = null !== J && J !== D.pe.TIER_2 ? D.pe.TIER_2 : null,
-            $ = (0, O.V)(),
+            $ = (0, C.V)(),
             ee = null == $ || null == (e = $.subscription_trial) ? void 0 : e.sku_id,
-            et = (0, x.ar)(),
+            et = (0, O.ar)(),
             en = (0, E.cg)(),
             er = null != en && en,
-            ei = (0, o.bG)([C.A], () => {
-                let e = C.A.getMarketingComponentByType(a.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
+            ei = (0, o.bG)([x.A], () => {
+                let e = x.A.getMarketingComponentByType(a.C.BILLING_SETTINGS_NITRO_GIFT_BANNER);
                 return null == e || "billingSettingsNitroGiftBanner" !== e.properties.properties.oneofKind ? null : e.properties.properties.billingSettingsNitroGiftBanner
             }),
             {
                 analyticsLocations: el
-            } = (0, m.Ay)(_.A.PREMIUM_MARKETING);
+            } = (0, m.Ay)(p.A.PREMIUM_MARKETING);
         i.useEffect(() => {
             Z(!0)
         }, []);
@@ -85,9 +85,9 @@ let k = e => {
                 onChange: e => Y(e),
                 threshold: .1,
                 active: !0,
-                children: (0, r.jsx)(T.NB, {
+                children: (0, r.jsx)(I.NB, {
                     innerRef: t,
-                    tier0CTAButton: (0, r.jsx)(y.A, {
+                    tier0CTAButton: (0, r.jsx)(S.A, {
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_0,
                         className: M.Ph,
@@ -95,14 +95,14 @@ let k = e => {
                         color: u.XD.WHITE,
                         buttonShineClassName: M.Qr
                     }),
-                    tier2CTAButton: ee === D.pe.TIER_0 ? (0, r.jsx)(y.A, {
+                    tier2CTAButton: ee === D.pe.TIER_0 ? (0, r.jsx)(S.A, {
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_2,
                         className: M.Ph,
                         look: u.pR.OUTLINED,
                         color: u.XD.WHITE,
                         buttonShineClassName: M.Qr
-                    }) : (0, r.jsx)(y.A, {
+                    }) : (0, r.jsx)(S.A, {
                         color: u.XD.BRAND_INVERTED,
                         showIcon: !1,
                         subscriptionTier: D.pe.TIER_2,
@@ -119,8 +119,8 @@ let k = e => {
         return (0, r.jsxs)("div", {
             className: G.kL,
             "data-cy": "tier-0-marketing-page",
-            children: [(0, r.jsx)(v.A, {
-                premiumSubscription: q,
+            children: [(0, r.jsx)(y.A, {
+                premiumSubscription: X,
                 className: s()(G.R3, {
                     [G.aZ]: et
                 })
@@ -130,7 +130,7 @@ let k = e => {
                 className: s()({
                     [G.V1]: !et
                 }),
-                children: [null != ei && (0, r.jsx)(j.c, {
+                children: [null != ei && (0, r.jsx)(T.c, {
                     className: G.w$,
                     config: ei
                 }), (0, r.jsx)(c.L, {
@@ -138,19 +138,19 @@ let k = e => {
                     onChange: e => V(e),
                     threshold: 0,
                     active: !0,
-                    children: (0, r.jsx)(I.Ay, {
+                    children: (0, r.jsx)(j.Ay, {
                         ref: n,
                         subscriptionTier: Q,
                         className: s()({
                             [G.p7]: et,
                             [G.Pw]: et,
                             [G.AG]: en,
-                            [G.Cv]: null != q
+                            [G.Cv]: null != X
                         }),
-                        isDarkMode: H
+                        isDarkMode: B
                     })
                 })]
-            }), es, (0, r.jsx)(N.A, {
+            }), es, (0, r.jsx)(v.A, {
                 className: G.B_
             }), (0, r.jsx)("div", {
                 className: G.aC,
@@ -161,14 +161,14 @@ let k = e => {
             }), (0, r.jsx)("div", {
                 className: G.hz
             }), (0, r.jsx)(P.A, {
-                isVisible: !B && !F && z,
+                isVisible: !H && !F && z,
                 subscriptionTier: Q,
                 isApplicationHome: !1,
                 isEligibleForBogoPromotion: en
             }), (0, r.jsx)(c.L, {
                 innerRef: l,
                 onChange: e => {
-                    e && !W && (h.default.track(w.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+                    e && !W && (b.default.track(L.HAw.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
                         location_stack: el
                     }), K(!0))
                 },
@@ -181,7 +181,7 @@ let k = e => {
                 className: G.Kw,
                 width: 112,
                 height: 85,
-                alt: L.intl.string(L.t.X4IxWL)
+                alt: w.intl.string(w.t.X4IxWL)
             })]
         })
     }

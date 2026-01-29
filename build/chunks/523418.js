@@ -1,11 +1,11 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 523418, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     b: () => d
 });
 var i = n(397927),
-    s = n(723702),
-    l = n(360619),
+    l = n(723702),
+    s = n(360619),
     r = n(682262),
     a = n(531525),
     o = n(857266),
@@ -13,12 +13,12 @@ var i = n(397927),
 
 function d() {
     let e = (0, r.b_)(),
-        t = (0, l.AC)(a.H.GAMES),
+        t = (0, s.AC)(a.H.GAMES),
         n = [{
             id: o.J.MY_GAMES,
             title: c.intl.string(c.t["5DMgp9"]),
             icon: i.LVO,
-            predicate: () => !s.isPlatformEmbedded,
+            predicate: () => !l.isPlatformEmbedded,
             setting: a.H.GAMES_MY_GAMES
         }, {
             id: o.J.OVERLAY,

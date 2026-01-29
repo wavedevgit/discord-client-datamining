@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 78837, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    f: () => f
+    f: () => A
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,46 +12,46 @@ var r = n(627968),
     c = n(650682),
     d = n(934551),
     u = n(827734),
-    p = n(397927),
-    _ = n(770178),
+    _ = n(397927),
+    p = n(770178),
     m = n(590089),
     g = n(747625);
 
-function f(e) {
+function A(e) {
     let {
         title: t,
         collapsedSubtitle: n,
         isExpanded: l,
-        onExpandedChange: f,
-        onExpandedChangeComplete: b,
-        children: h,
-        animate: A = !0
-    } = e, E = i.useRef(null), [x, O] = i.useState(null), C = i.useRef(l), y = i.useRef(!1);
+        onExpandedChange: A,
+        onExpandedChangeComplete: f,
+        children: b,
+        animate: h = !0
+    } = e, E = i.useRef(null), [O, C] = i.useState(null), x = i.useRef(l), S = i.useRef(!1);
     i.useEffect(() => {
-        C.current !== l && (y.current = !0, C.current = l)
+        x.current !== l && (S.current = !0, x.current = l)
     }, [l]);
-    let j = i.useCallback(e => {
-            null != e.target && y.current && (y.current = !1, null == b || b(l))
-        }, [l, b]),
-        T = i.useMemo(() => (0, a.debounce)(j, 50), [j]),
-        v = (0, _.w)(T, [], {
-            enabled: null != b
+    let T = i.useCallback(e => {
+            null != e.target && S.current && (S.current = !1, null == f || f(l))
+        }, [l, f]),
+        I = i.useMemo(() => (0, a.debounce)(T, 50), [T]),
+        y = (0, p.w)(I, [], {
+            enabled: null != f
         }),
-        S = l && null != x;
+        N = l && null != O;
     return i.useLayoutEffect(() => {
-        null != E.current && null == x && O(E.current.clientHeight)
-    }, [x]), (0, r.jsxs)(o.EN, {
-        ref: v,
+        null != E.current && null == O && C(E.current.clientHeight)
+    }, [O]), (0, r.jsxs)(o.EN, {
+        ref: y,
         isExpanded: l,
-        onExpandedChange: f,
+        onExpandedChange: A,
         children: [(0, r.jsx)(m.U, {
             ref: E,
-            style: null != x ? {
-                minHeight: x
+            style: null != O ? {
+                minHeight: O
             } : void 0,
             title: t,
-            description: S ? void 0 : n,
-            secondaryTrailingElement: (0, r.jsx)(p.vN3, {
+            description: N ? void 0 : n,
+            secondaryTrailingElement: (0, r.jsx)(_.vN3, {
                 children: (0, r.jsx)(c.$, {
                     slot: "trigger",
                     className: g.bW,
@@ -63,17 +63,17 @@ function f(e) {
                     })
                 })
             }),
-            onClick: () => f(!l)
+            onClick: () => A(!l)
         }), (0, r.jsx)(o.kS, {
             className: s()(g.nd, {
-                [g.t5]: !A
+                [g.t5]: !h
             }),
-            children: (0, r.jsx)(p.BJc, {
+            children: (0, r.jsx)(_.BJc, {
                 gap: 16,
                 padding: {
                     top: 16
                 },
-                children: h
+                children: b
             })
         })]
     })

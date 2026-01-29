@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 452910, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => f
 }), n(228524);
 var r = n(627968);
 n(64700);
@@ -13,63 +13,63 @@ var i = n(503698),
     c = n(422936),
     d = n(234419),
     u = n(396375),
-    p = n(543233),
-    _ = n(76707),
+    _ = n(543233),
+    p = n(76707),
     m = n(788868),
     g = n(985018),
-    f = n(296388);
-let b = e => {
+    A = n(296388);
+let f = e => {
     var t;
     let n, {
             title: i,
-            titleClassName: b = "",
-            buttonClassName: h = "",
-            subtitle: A = "",
+            titleClassName: f = "",
+            buttonClassName: b = "",
+            subtitle: h = "",
             description: E = "",
-            descriptionCta: x = "",
-            isPremiumGetCta: O,
-            onCtaClick: C,
-            cardVariant: y
+            descriptionCta: O = "",
+            isPremiumGetCta: C,
+            onCtaClick: x,
+            cardVariant: S
         } = e,
-        j = (0, d.V)(),
-        T = null == j ? void 0 : j.subscription_trial,
-        v = (0, c.O)(),
-        S = (0, a.FY)({
-            intervalType: null == T ? void 0 : T.interval,
-            intervalCount: null == T ? void 0 : T.interval_count
+        T = (0, d.V)(),
+        I = null == T ? void 0 : T.subscription_trial,
+        y = (0, c.O)(),
+        N = (0, a.FY)({
+            intervalType: null == I ? void 0 : I.interval,
+            intervalCount: null == I ? void 0 : I.interval_count
         }),
-        I = (0, o.G)({
+        j = (0, o.G)({
             defaultResponse: g.intl.string(g.t["8x0jKT"]),
             onNonTier2Subscriber: g.intl.string(g.t.IJI7yk),
-            onTier2TrialOffer: S,
-            onTier0TrialOffer: S,
+            onTier2TrialOffer: N,
+            onTier0TrialOffer: N,
             onDiscountOffer: g.intl.formatToPlainString(g.t.bkQ4bH, {
-                percent: null == v ? void 0 : v.discount.amount
+                percent: null == y ? void 0 : y.discount.amount
             })
         }),
-        N = (0, p.Q)(y);
+        v = (0, _.Q)(S);
     return (0, r.jsxs)("div", {
-        className: l()(f.L_, null == N || null == (t = N.description) ? void 0 : t.className),
-        children: [(0, r.jsx)(_.A, {
+        className: l()(A.L_, null == v || null == (t = v.description) ? void 0 : t.className),
+        children: [(0, r.jsx)(p.A, {
             title: i,
-            cardVariantStyleInfo: N,
-            titleClassName: b,
-            subtitle: A,
+            cardVariantStyleInfo: v,
+            titleClassName: f,
+            subtitle: h,
             description: E
-        }), O && (0, r.jsx)(u.A, {
-            className: h,
+        }), C && (0, r.jsx)(u.A, {
+            className: b,
             look: s.$n.Looks.BLANK,
             color: s.$n.Colors.CUSTOM,
             subscriptionTier: m.pe.TIER_2,
             textOptions: {
-                textOverride: I
+                textOverride: j
             },
             showGradient: !0
-        }), 0 !== x.length && (null == (n = null == N ? void 0 : N.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != C && (0, r.jsx)(s.$n, {
+        }), 0 !== O.length && (null == (n = null == v ? void 0 : v.descriptionCta) ? void 0 : n.hideOnHoverComponent) !== !0 && null != x && (0, r.jsx)(s.$n, {
             "data-migration-pending": !0,
-            className: h,
-            onClick: C,
-            children: x
+            className: b,
+            onClick: x,
+            children: O
         })]
     })
 }

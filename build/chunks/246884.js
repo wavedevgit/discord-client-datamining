@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 246884, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => v
 });
 var r = n(627968),
     l = n(64700),
@@ -12,17 +12,17 @@ var r = n(627968),
     c = n(272613),
     u = n(398884),
     d = n(772366),
-    p = n(728321),
-    h = n(260509),
-    f = n(71393),
-    g = n(287809),
+    h = n(728321),
+    p = n(260509),
+    g = n(71393),
+    f = n(287809),
     m = n(531053),
     b = n(606256),
     A = n(652215),
     y = n(819638),
-    _ = n(985018),
-    O = n(283237);
-let j = {
+    O = n(985018),
+    _ = n(283237);
+let x = {
     origin: {
         x: -16,
         y: 0
@@ -35,7 +35,7 @@ let j = {
     }
 };
 
-function v(e) {
+function j(e) {
     (0, a.L3)(e, async () => {
         let {
             default: e
@@ -61,11 +61,11 @@ function v(e) {
     })
 }
 
-function x(e) {
+function v(e) {
     let {
         disableTooltip: t,
         lastTargetNode: n
-    } = e, a = (0, i.yK)([f.A], () => f.A.getGuildsArray()), x = (0, i.bG)([g.default], () => g.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, h.bM)(e, x)), [a, x]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
+    } = e, a = (0, i.yK)([g.A], () => g.A.getGuildsArray()), v = (0, i.bG)([f.default], () => f.default.getCurrentUser()), E = l.useMemo(() => a.some(e => (0, p.bM)(e, v)), [a, v]), C = (0, s.red)(e => (0, s.fDT)(e, y.fc)), {
         analyticsLocations: S
     } = (0, o.Ay)(), I = (0, r.jsx)(b.A, {
         showPill: !1,
@@ -85,18 +85,18 @@ function x(e) {
             })
         },
         selected: C,
-        onContextMenu: v,
-        tooltip: _.intl.string(_.t.l5WIbf),
+        onContextMenu: j,
+        tooltip: O.intl.string(O.t.l5WIbf),
         icon: s.U1e
     });
     return t ? I : (0, r.jsx)("div", {
-        className: O.Uq,
-        children: (0, r.jsxs)(p.A, {
+        className: _.Uq,
+        children: (0, r.jsxs)(h.A, {
             tutorialId: E ? "create-more-servers" : "create-first-server",
-            inlineSpecs: j,
+            inlineSpecs: x,
             position: "right",
             children: [I, null != n && (0, r.jsx)(m.Ay, {
-                name: _.intl.string(_.t["45xjM5"]),
+                name: O.intl.string(O.t["45xjM5"]),
                 targetNode: n,
                 below: !0,
                 noCombine: !0

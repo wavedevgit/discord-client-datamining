@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 626262, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     $: () => O
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(989349),
-    o = n.n(l),
-    a = n(554146),
+    a = n.n(l),
+    o = n(554146),
     s = n(916768),
     c = n(617108),
     u = n(745299),
@@ -38,9 +38,9 @@ let O = e => {
                     cooldownDurationMs: 1 / 0
                 }
         }
-    }, [n]), O = o()().add(5, "days").toDate(), [N, p] = (0, _.Bo)(t, l, A.m.NOTICE_BAR);
+    }, [n]), O = a()().add(5, "days").toDate(), [N, p] = (0, _.Bo)(t, l, A.m.NOTICE_BAR);
     if (null == N) return null;
-    if (N === a.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
+    if (N === o.M.NAGBAR_NOTICE_OFFER_EXPIRING) {
         if (n === T.kqX.PREMIUM_TIER_2_TRIAL_ENDING) return (0, r.jsx)(u.A, {
             dismissCurrentNotice: () => {
                 p(A.i.USER_DISMISS), (0, s.w)(O)

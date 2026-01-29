@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 229244, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => K
@@ -172,7 +172,7 @@ function W() {
         W(M(D({}, e), {
             preview: !0
         }))
-    }, []), [K, z] = l.useState(w.b.UNENROLLED), [q, Q] = l.useState(!1), [Y, J] = l.useState(!1), [X, $] = l.useState(null), Z = (R = F.config, (0, s.YW)(R).with({
+    }, []), [K, z] = l.useState(w.b.UNENROLLED), [q, Q] = l.useState(!1), [Y, J] = l.useState(!1), [X, Z] = l.useState(null), $ = (R = F.config, (0, s.YW)(R).with({
         configVersion: 2
     }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -293,7 +293,7 @@ function W() {
             className: k.OA,
             children: (0, a.jsx)(T.A, {
                 onSelect: function(e) {
-                    $(e), null == e || (z(function(e) {
+                    Z(e), null == e || (z(function(e) {
                         if (null == e.userStatus) return w.b.UNENROLLED;
                         if (null != e.userStatus.claimedAt) return w.b.CLAIMED;
                         if (null != e.userStatus.completedAt) return w.b.COMPLETED_100;
@@ -430,7 +430,7 @@ function W() {
                     initialValue: null == eo ? void 0 : eo.assets.video.thumbnail
                 })]
             })]
-        }), Z.map((e, t) => (0, a.jsxs)("div", {
+        }), $.map((e, t) => (0, a.jsxs)("div", {
             children: [(0, a.jsxs)(m.Heading, {
                 variant: "heading-md/semibold",
                 className: k.fV,

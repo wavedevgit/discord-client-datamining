@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 173678, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     M: () => b,
@@ -13,16 +13,16 @@ var r = n(627968),
     c = n(44120),
     u = n(353157),
     d = n(957785),
-    p = n(788868),
-    h = n(985018),
-    f = n(733557),
-    g = n(101616);
+    h = n(788868),
+    p = n(985018),
+    g = n(733557),
+    f = n(101616);
 
 function m(e, t, n) {
     (0, c.A)({
         skuId: e.skuId,
         isGift: !0,
-        giftingOrigin: p.vQ.USER_PROFILE_WISHLIST,
+        giftingOrigin: h.vQ.USER_PROFILE_WISHLIST,
         analyticsLocations: n,
         giftRecipient: t,
         variantsReturnStyle: i.g.VARIANTS_GROUP
@@ -35,29 +35,29 @@ function b(e, t) {
         profileOwner: i,
         analyticsLocations: s,
         onViewWishlist: c,
-        isSingleCard: p = !1,
-        wishlistId: g,
+        isSingleCard: h = !1,
+        wishlistId: f,
         showTypeTooltip: b = !1,
         cardSize: A
-    } = t, y = null != e.bundleItems && e.bundleItems.length > 0, _ = null != n && n > 0, O = b && !_, j = _ ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.pLPjsb), v = {
-        title: O ? h.intl.string(h.t.HFhcqh) : j,
-        body: O ? h.intl.string(h.t.ilhtIa) : void 0,
-        renderIcon: O ? a.GM : void 0,
+    } = t, y = null != e.bundleItems && e.bundleItems.length > 0, O = null != n && n > 0, _ = b && !O, x = O ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.pLPjsb), j = {
+        title: _ ? p.intl.string(p.t.HFhcqh) : x,
+        body: _ ? p.intl.string(p.t.ilhtIa) : void 0,
+        renderIcon: _ ? a.GM : void 0,
         shouldShow: !0
-    }, x = !y && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
+    }, v = !y && e.collectiblesItem.type === l.R.PROFILE_EFFECT;
     return (0, r.jsx)(d.A, {
         onCardClick: () => {
-            _ ? c() : m(e, i, s)
+            O ? c() : m(e, i, s)
         },
-        tooltipConfig: v,
-        shouldScalePreview: y || !x,
+        tooltipConfig: j,
+        shouldScalePreview: y || !v,
         renderPreview: () => {
             if (y) {
                 let t = {
                     items: e.bundleItems
                 };
                 return (0, r.jsx)("div", {
-                    className: f.hT,
+                    className: g.hT,
                     children: (0, r.jsx)(o.X, {
                         product: t,
                         isHighlighted: !1,
@@ -72,9 +72,9 @@ function b(e, t) {
             })
         },
         moreCount: n,
-        isSingleCard: p,
+        isSingleCard: h,
         wishlistItem: e,
-        wishlistId: g,
+        wishlistId: f,
         cardSize: A
     }, e.skuId)
 }
@@ -92,28 +92,28 @@ function A(e, t) {
         isSingleCard: !0,
         wishlistId: a,
         index: 0
-    }), d = c ? h.intl.string(h.t.Zr5tjn) : function(e) {
+    }), d = c ? p.intl.string(p.t.Zr5tjn) : function(e) {
         switch (e.collectiblesItem.type) {
             case l.R.AVATAR_DECORATION:
-                return h.intl.string(h.t["7v0T9P"]);
+                return p.intl.string(p.t["7v0T9P"]);
             case l.R.PROFILE_EFFECT:
-                return h.intl.string(h.t.wR5wOo);
+                return p.intl.string(p.t.wR5wOo);
             case l.R.NAMEPLATE:
-                return h.intl.string(h.t.x5CoXR);
+                return p.intl.string(p.t.x5CoXR);
             default:
                 return ""
         }
     }(e);
     return (0, r.jsxs)("div", {
-        className: g.D5,
+        className: f.D5,
         children: [u, (0, r.jsxs)("div", {
-            className: g.S7,
+            className: f.S7,
             children: [(0, r.jsx)(s.DUT, {
                 onClick: () => {
                     m(e, n, i)
                 },
-                className: g.Hh,
-                "aria-label": h.intl.string(h.t.pLPjsb),
+                className: f.Hh,
+                "aria-label": p.intl.string(p.t.pLPjsb),
                 children: (0, r.jsx)(s.Text, {
                     variant: "text-sm/semibold",
                     color: "text-default",

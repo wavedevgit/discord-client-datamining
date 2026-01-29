@@ -1,50 +1,50 @@
-/** Chunk was on 78528 **/
-/** chunk id: 665691, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    DY: () => d,
-    UF: () => u,
-    bG: () => p
+/** Chunk was on 16674 **/
+/** chunk id: 665691, original params: e,t,r (module,exports,require) **/
+r.d(t, {
+    DY: () => f,
+    UF: () => o,
+    bG: () => d
 });
-var r = n(311907),
-    l = n(652896),
-    i = n(961350),
-    s = n(383501),
-    a = n(707890),
-    o = n(83942),
-    c = n(259374);
+var n = r(311907),
+    l = r(652896),
+    u = r(961350),
+    i = r(383501),
+    s = r(707890),
+    a = r(83942),
+    c = r(259374);
 
-function u(e) {
+function o(e) {
     let {
         userId: t,
-        channelId: n
+        channelId: r
     } = e, l = (0, c.k)({
-        channelId: n
+        channelId: r
     });
-    return (0, r.bG)([a.A, i.default, s.A], () => null != t && l && s.A.isUserConnected(t) && i.default.getId() !== t && a.A.isUserVerified(t), [l, t])
+    return (0, n.bG)([s.A, u.default, i.A], () => null != t && l && i.A.isUserConnected(t) && u.default.getId() !== t && s.A.isUserVerified(t), [l, t])
+}
+
+function f(e) {
+    let {
+        streamKey: t,
+        channelId: r
+    } = e, i = (0, c.k)({
+        channelId: r
+    }), o = (0, a.w)(t);
+    return (0, n.bG)([s.A, u.default], () => {
+        if (!i || o || null == t) return !1;
+        let e = u.default.getId(),
+            {
+                ownerId: r
+            } = (0, l.Iy)(t);
+        return r !== e && s.A.isStreamVerified(t)
+    }, [o, i, t])
 }
 
 function d(e) {
     let {
-        streamKey: t,
-        channelId: n
-    } = e, s = (0, c.k)({
-        channelId: n
-    }), u = (0, o.w)(t);
-    return (0, r.bG)([a.A, i.default], () => {
-        if (!s || u || null == t) return !1;
-        let e = i.default.getId(),
-            {
-                ownerId: n
-            } = (0, l.Iy)(t);
-        return n !== e && a.A.isStreamVerified(t)
-    }, [u, s, t])
-}
-
-function p(e) {
-    let {
         channelId: t
-    } = e, n = (0, c.k)({
+    } = e, r = (0, c.k)({
         channelId: t
-    }), l = (0, o.c)();
-    return (0, r.bG)([a.A], () => !!n && !l && a.A.isCallVerified(), [l, n])
+    }), l = (0, a.c)();
+    return (0, n.bG)([s.A], () => !!r && !l && s.A.isCallVerified(), [l, r])
 }

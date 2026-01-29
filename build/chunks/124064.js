@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 124064, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => A
+    A: () => h
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -12,62 +12,62 @@ var r = n(627968),
     c = n(915089),
     d = n(840065),
     u = n(95701),
-    p = n(128450),
-    _ = n(652215),
+    _ = n(128450),
+    p = n(652215),
     m = n(985018),
     g = n(973746);
-let f = (0, c.Ld)(),
-    b = (0, u.createChannelRecord)({
+let A = (0, c.Ld)(),
+    f = (0, u.createChannelRecord)({
         id: "1",
-        type: _.rbe.DM
+        type: p.rbe.DM
     }),
-    h = (0, c.Ld)();
+    b = (0, c.Ld)();
 
-function A(e) {
+function h(e) {
     let {
         sectionTitle: t,
         errors: n,
         onBioChange: c,
         pendingBio: u,
-        placeholder: A,
+        placeholder: h,
         currentBio: E,
-        disabled: x = !1
-    } = e, [O, C] = i.useState(null != u ? u : E), [y, j] = i.useState((0, a.x7)(O)), T = i.useRef(E), v = i.useRef(!1);
+        disabled: O = !1
+    } = e, [C, x] = i.useState(null != u ? u : E), [S, T] = i.useState((0, a.x7)(C)), I = i.useRef(E), y = i.useRef(!1);
     return i.useEffect(() => {
-        if (T.current !== E) {
+        if (I.current !== E) {
             let e = (0, a.x7)(E);
-            C(E), j(e)
+            x(E), T(e)
         }
-        T.current = E
-    }, [E]), (0, r.jsxs)(p.A, {
+        I.current = E
+    }, [E]), (0, r.jsxs)(_.A, {
         title: t,
-        titleId: f,
+        titleId: A,
         description: m.intl.string(m.t.Bbw6Ac),
         errors: n,
-        disabled: x,
+        disabled: O,
         children: [(0, r.jsx)(o.Ay, {
-            "aria-describedby": h,
-            "aria-labelledby": f,
+            "aria-describedby": b,
+            "aria-labelledby": A,
             className: g.i,
             innerClassName: g.Z,
-            maxCharacterCount: _.NA2,
+            maxCharacterCount: p.NA2,
             onChange: function(e, t, n) {
-                t !== O && (C(t), j(n), c(t))
+                t !== C && (x(t), T(n), c(t))
             },
-            placeholder: A,
-            channel: b,
-            textValue: O,
-            richValue: y,
+            placeholder: h,
+            channel: f,
+            textValue: C,
+            richValue: S,
             emojiPickerCloseOnModalOuterClick: !0,
             parentModalKey: d.USER_SETTINGS_MODAL_KEY,
             type: s.oU.PROFILE_BIO_INPUT,
             onBlur: () => {
-                v.current = !1
+                y.current = !1
             },
             onFocus: () => {
-                v.current = !0
+                y.current = !0
             },
-            focused: v.current,
+            focused: y.current,
             onSubmit: function() {
                 return new Promise(e => {
                     e({
@@ -77,9 +77,9 @@ function A(e) {
                 })
             }
         }), (0, r.jsx)(l.AC4, {
-            id: h,
+            id: b,
             children: m.intl.format(m.t["+DFxLc"], {
-                maxLength: _.NA2
+                maxLength: p.NA2
             })
         })]
     })

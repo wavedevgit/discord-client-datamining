@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 125248, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(311907),
     u = n(73153),
     d = n(565645),
-    p = n(775602),
-    h = n(213966);
-let f = [h.u8, h.n$, h.uN, h.no],
-    g = l.memo(function(e) {
+    h = n(775602),
+    p = n(213966);
+let g = [p.u8, p.n$, p.uN, p.no],
+    f = l.memo(function(e) {
         var t;
         let {
             emoji: n,
             onAnimationEnd: i
-        } = e, o = (0, a.sample)(f), c = l.useCallback(() => {
+        } = e, o = (0, a.sample)(g), c = l.useCallback(() => {
             i(n.key)
         }, [n.key, i]);
         return (0, r.jsx)("div", {
-            className: s()(h.Zg, o),
+            className: s()(p.Zg, o),
             onAnimationEnd: c,
             children: (0, r.jsx)(d.A, {
                 emojiId: n.id,
@@ -38,7 +38,7 @@ function m(e) {
     let {
         channelId: t,
         callHeight: n
-    } = e, i = (0, c.bG)([p.A], () => p.A.useReducedMotion), [s, a] = l.useState([]);
+    } = e, i = (0, c.bG)([h.A], () => h.A.useReducedMotion), [s, a] = l.useState([]);
     l.useEffect(() => {
         function e(e) {
             let {
@@ -74,13 +74,13 @@ function m(e) {
         a(t => t.filter(t => t.key !== e))
     }, []);
     return i ? null : (0, r.jsx)("div", {
-        className: h.kL,
+        className: p.kL,
         style: {
             top: n - 50,
             left: "52%"
         },
         "aria-hidden": !0,
-        children: s.map(e => (0, r.jsx)(g, {
+        children: s.map(e => (0, r.jsx)(f, {
             emoji: e,
             onAnimationEnd: d
         }, e.key))

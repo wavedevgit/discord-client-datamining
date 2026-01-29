@@ -1,10 +1,10 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 801796, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    BD: () => A,
-    US: () => b,
+    BD: () => h,
+    US: () => f,
     X8: () => E,
-    mH: () => f
+    mH: () => A
 });
 var r = n(757942),
     i = n(455234),
@@ -15,24 +15,24 @@ var r = n(757942),
     c = n(309010),
     d = n(543465),
     u = n(652215),
-    p = n(790782);
-let _ = (e, t) => {
+    _ = n(790782);
+let p = (e, t) => {
         let n = a.A.getChannel(t);
         return null != n && ((0, s.Gw)(n.type) || u.kvI.GUILD_VOCAL.has(n.type) ? o.Ay.getMentionCount(t) > 0 || c.A.getVoiceChannelId() === t : (!d.Ay.isChannelMuted(e, t) || o.Ay.getMentionCount(t) > 0) && (0, i.Y)(n))
     },
-    m = (e, t) => t === p.P.GUILD_EVENT ? !d.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
+    m = (e, t) => t === _.P.GUILD_EVENT ? !d.Ay.isMuteScheduledEventsEnabled(e) && o.Ay.hasUnread(e, t) : o.Ay.hasUnread(e, t),
     g = (e, t) => {
         let n = a.A.getChannel(t);
         return null != n && !!u.kvI.GUILD_VOCAL.has(n.type) && (o.Ay.getMentionCount(t) > 0 || c.A.getVoiceChannelId() === t && o.Ay.getUnreadCount(t) > 0)
     },
-    f = {
+    A = {
         binds: ["alt+shift+down"],
         comboKeysBindGlobal: !0,
         action() {
             var e;
             let t = null != (e = l.A.getState().guildId) ? e : u.ME;
             return (0, r.A)(1, {
-                channelPredicate: _,
+                channelPredicate: p,
                 guildPredicate: e => e === t || !d.Ay.isMuted(e),
                 guildFeaturePredicate: m,
                 ensureChatIsVisible: g,
@@ -40,14 +40,14 @@ let _ = (e, t) => {
             }), !1
         }
     },
-    b = {
+    f = {
         binds: ["alt+shift+up"],
         comboKeysBindGlobal: !0,
         action() {
             var e;
             let t = null != (e = l.A.getState().guildId) ? e : u.ME;
             return (0, r.A)(-1, {
-                channelPredicate: _,
+                channelPredicate: p,
                 guildPredicate: e => e === t || !d.Ay.isMuted(e),
                 guildFeaturePredicate: m,
                 ensureChatIsVisible: g,
@@ -55,12 +55,12 @@ let _ = (e, t) => {
             }), !1
         }
     },
-    h = (e, t) => o.Ay.getMentionCount(t) > 0,
-    A = {
+    b = (e, t) => o.Ay.getMentionCount(t) > 0,
+    h = {
         binds: ["mod+shift+alt+down"],
         comboKeysBindGlobal: !0,
         action: () => ((0, r.A)(1, {
-            channelPredicate: h,
+            channelPredicate: b,
             ensureChatIsVisible: g,
             withVoiceChannels: !0
         }), !1)
@@ -69,7 +69,7 @@ let _ = (e, t) => {
         binds: ["mod+shift+alt+up"],
         comboKeysBindGlobal: !0,
         action: () => ((0, r.A)(-1, {
-            channelPredicate: h,
+            channelPredicate: b,
             ensureChatIsVisible: g,
             withVoiceChannels: !0
         }), !1)

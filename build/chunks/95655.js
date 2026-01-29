@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 95655, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     n: () => A
@@ -12,22 +12,22 @@ var r = n(627968),
     c = n(47167),
     u = n(598104),
     d = n(73028),
-    p = n(665691),
-    h = n(954571),
-    f = n(652215),
-    g = n(985018),
+    h = n(665691),
+    p = n(954571),
+    g = n(652215),
+    f = n(985018),
     m = n(202115);
 let b = e => {
         let {
             channel: t
         } = e;
-        return (0, p.bG)({
+        return (0, h.bG)({
             channelId: t.id
         }) ? (0, r.jsx)(i.m, {
-            text: g.intl.string(g.t.QyZ4Td),
+            text: f.intl.string(f.t.QyZ4Td),
             children: (0, r.jsx)(s.m5V, {
                 size: "xs",
-                "aria-label": g.intl.string(g.t.VHXh8a),
+                "aria-label": f.intl.string(f.t.VHXh8a),
                 color: s.LU0.colors.INTERACTIVE_TEXT_DEFAULT
             })
         }) : null
@@ -35,11 +35,11 @@ let b = e => {
     A = l.memo(function(e) {
         let {
             channel: t
-        } = e, l = t.id, p = (0, c.Ay)(t);
+        } = e, l = t.id, h = (0, c.Ay)(t);
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(i.m, {
                 asContainer: !0,
-                text: g.intl.string(g.t["5Q9+/L"]),
+                text: f.intl.string(f.t["5Q9+/L"]),
                 position: "bottom",
                 children: (0, r.jsxs)(s.DUT, {
                     className: m.cD,
@@ -88,13 +88,13 @@ let b = e => {
                     }),
                     onDoubleClick: e => e.stopPropagation(),
                     onMouseEnter: () => {
-                        h.default.track(f.HAw.GDM_EDIT_INTERACTED, {
+                        p.default.track(g.HAw.GDM_EDIT_INTERACTED, {
                             channel_id: t.id,
                             action: "entry_point_hovered",
                             location: o.A.HEADER_BAR
                         })
                     },
-                    "aria-label": g.intl.string(g.t["5Q9+/L"]),
+                    "aria-label": f.intl.string(f.t["5Q9+/L"]),
                     children: [(0, r.jsx)(u.A, {
                         className: m.gn,
                         "aria-hidden": !0,
@@ -104,7 +104,7 @@ let b = e => {
                     }), (0, r.jsx)(s.Text, {
                         variant: "text-md/medium",
                         color: "text-strong",
-                        children: null != p ? p : ""
+                        children: null != h ? h : ""
                     }), (0, r.jsx)(s.R2l, {
                         className: m.IZ,
                         size: "xs",

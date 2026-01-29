@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 449630, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => el
@@ -52,8 +52,8 @@ var a = n(627968),
     Y = n(33042),
     J = n(347853),
     X = n(652215),
-    $ = n(49999),
-    Z = n(996988),
+    Z = n(49999),
+    $ = n(996988),
     ee = n(985018),
     et = n(423648),
     en = n(183959);
@@ -140,7 +140,7 @@ function el(e) {
         [eD, eM] = (0, f.kn)(eR),
         eL = eD === o.M.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
         eU = l.useCallback(() => {
-            eM($.i.USER_DISMISS), n()
+            eM(Z.i.USER_DISMISS), n()
         }, [eM, n]),
         eB = l.useCallback(() => {
             eA(), eU()
@@ -172,22 +172,22 @@ function el(e) {
                     className: et.BK,
                     user: t,
                     displayProfile: eo,
-                    themeType: Z.d.POPOUT,
+                    themeType: $.d.POPOUT,
                     children: [(0, a.jsxs)("div", {
                         className: en.wx,
                         children: [(0, a.jsx)(T.A, {
                             user: t,
                             displayProfile: eo,
-                            themeType: Z.d.POPOUT
+                            themeType: $.d.POPOUT
                         }), (0, a.jsx)(S.A, {
                             user: t,
                             displayProfile: eo,
-                            themeType: Z.d.POPOUT,
+                            themeType: $.d.POPOUT,
                             onOpenProfile: es ? void 0 : eP
                         }), (0, a.jsx)(D.A, {
                             ref: eO,
                             user: t,
-                            themeType: Z.d.POPOUT,
+                            themeType: $.d.POPOUT,
                             onCloseProfile: n,
                             prompt: eS ? eN : null
                         })]
@@ -206,7 +206,7 @@ function el(e) {
                             pronouns: null == eo ? void 0 : eo.pronouns,
                             tags: (0, a.jsx)(O.A, {
                                 displayProfile: eo,
-                                themeType: Z.d.POPOUT,
+                                themeType: $.d.POPOUT,
                                 onClose: n,
                                 shouldOpenBadgeTooltip: null != er ? e => e === er : void 0,
                                 shouldGlowTenureBadge: eE.current

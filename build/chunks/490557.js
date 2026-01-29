@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 490557, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     b: () => d,
-    l: () => p
+    l: () => h
 });
 var r = n(627968),
     l = n(503698),
@@ -24,7 +24,7 @@ function d(e) {
     })
 }
 
-function p(e) {
+function h(e) {
     let {
         className: t,
         powerup: n,

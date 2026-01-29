@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 637384, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => y
@@ -13,10 +13,10 @@ var l = n(503698),
     c = n(922529),
     u = n(340833),
     d = n(913642),
-    p = n(513272),
-    h = n(798505),
-    f = n(670455),
-    g = n(381941),
+    h = n(513272),
+    p = n(798505),
+    g = n(670455),
+    f = n(381941),
     m = n(985018),
     b = n(112178);
 
@@ -24,8 +24,8 @@ function A(e) {
     let {
         summary: t,
         channel: n
-    } = e, l = (0, a.bG)([p.A], () => p.A.summaryFeedback(t)), i = (e, r) => {
-        e.stopPropagation(), (0, h.A)({
+    } = e, l = (0, a.bG)([h.A], () => h.A.summaryFeedback(t)), i = (e, r) => {
+        e.stopPropagation(), (0, p.A)({
             summary: t,
             channel: n,
             rating: r
@@ -60,14 +60,14 @@ function A(e) {
                     color: "interactive-text-default",
                     children: m.intl.string(m.t["5ZsiE9"])
                 }), (0, r.jsx)(o.DUT, {
-                    onClick: e => i(e, f.P0.GOOD),
+                    onClick: e => i(e, g.P0.GOOD),
                     children: (0, r.jsx)(d.A, {
                         className: b.O1,
                         width: 12,
                         height: 12
                     })
                 }), (0, r.jsx)(o.DUT, {
-                    onClick: e => i(e, f.P0.BAD),
+                    onClick: e => i(e, g.P0.BAD),
                     children: (0, r.jsx)(u.A, {
                         className: b.O1,
                         width: 12,
@@ -86,9 +86,9 @@ function y(e) {
             channel: u,
             index: d
         } = e,
-        h = (0, a.bG)([p.A], () => p.A.selectedSummary(u.id));
-    if (null == h) return null;
-    let f = null != s.unreadId,
+        p = (0, a.bG)([h.A], () => h.A.selectedSummary(u.id));
+    if (null == p) return null;
+    let g = null != s.unreadId,
         m = null != s.content;
     return l = m ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.Kck, {
@@ -98,7 +98,7 @@ function y(e) {
         }), s.content]
     }) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(A, {
-            summary: h,
+            summary: p,
             channel: u
         }), (0, r.jsx)(o.Kck, {
             size: "xs",
@@ -108,8 +108,8 @@ function y(e) {
     }), (0, r.jsx)(c.A, {
         className: i()(b.aK, m ? b.Ke : b.hO),
         contentClassName: m ? b.Ew : b.rD,
-        isUnread: f,
-        id: f ? g.q4 : void 0,
+        isUnread: g,
+        id: g ? f.q4 : void 0,
         children: l
     }, "divider-".concat(null != (t = null != (n = s.contentKey) ? n : s.unreadId) ? t : d))
 }

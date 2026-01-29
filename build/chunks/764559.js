@@ -15,8 +15,8 @@ var r = n(554146),
     c = n(994322),
     d = n(672396),
     u = n(49999),
-    h = n(985018),
-    p = n(199563);
+    p = n(985018),
+    h = n(199563);
 
 function f() {
     let e = (0, c.A)({
@@ -44,9 +44,9 @@ function g(e) {
     return {
         icon: null,
         body: (0, i.jsxs)("div", {
-            className: p.A,
+            className: h.A,
             children: [(0, i.jsx)("div", {
-                className: p.z,
+                className: h.z,
                 children: (0, i.jsx)(s.cNw, {
                     size: "custom",
                     color: "currentColor",
@@ -55,7 +55,7 @@ function g(e) {
                 })
             }), (0, i.jsx)(s.Text, {
                 variant: "text-sm/normal",
-                children: h.intl.string(h.t.EFRNtK)
+                children: p.intl.string(p.t.EFRNtK)
             })]
         }),
         onDismissClick: (e, n) => {

@@ -1,9 +1,9 @@
-/** Chunk was on 6500 **/
+/** Chunk was on 47995 **/
 /** chunk id: 584569, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => E
+    A: () => P
 }), n(896048);
-var r, i, l = n(311907),
+var r, l, i = n(311907),
     a = n(205693),
     s = n(73153),
     o = n(194862),
@@ -14,10 +14,10 @@ var r, i, l = n(311907),
     f = n(383501),
     m = n(287809),
     g = n(977997),
-    _ = n(607567),
-    y = n(652215),
-    A = n(806931);
-let b = new o.A,
+    y = n(607567),
+    b = n(652215),
+    _ = n(806931);
+let A = new o.A,
     h = new o.A,
     v = new Set;
 
@@ -26,10 +26,10 @@ function O(e, t, n) {
             userId: e.id,
             channelId: n
         }),
-        i = (0, _.RQ)(r, null != t ? t : y.ME, e.id);
-    b.set(e.id, i);
-    let l = {
-        type: A.lp.USER,
+        l = (0, y.RQ)(r, null != t ? t : b.ME, e.id);
+    A.set(e.id, l);
+    let i = {
+        type: _.lp.USER,
         user: e,
         id: e.id,
         streamId: null,
@@ -45,17 +45,17 @@ function O(e, t, n) {
         localVideoDisabled: !1,
         isPoppedOut: !1
     };
-    h.set(e.id, l)
+    h.set(e.id, i)
 }
 
-function j(e) {
-    let t = b.delete(e),
+function S(e) {
+    let t = A.delete(e),
         n = h.delete(e),
         r = v.delete(e);
     return t || n || r
 }
 
-function S() {
+function j() {
     var e;
     let t = f.A.getChannelId();
     if (null == t) return !1;
@@ -63,48 +63,48 @@ function S() {
         r = !1;
     return v.forEach(e => {
         if (null != g.A.getVoiceStateForChannel(t, e)) return void v.delete(e);
-        let i = m.default.getUser(e);
-        null != i && (r = !0, v.delete(e), O(i, n, t))
+        let l = m.default.getUser(e);
+        null != l && (r = !0, v.delete(e), O(l, n, t))
     }), r
 }
 
-function I() {
-    b.clear(), h.clear(), v.clear()
+function x() {
+    A.clear(), h.clear(), v.clear()
 }
-class x extends(r = l.Ay.Store) {
+class I extends(r = i.Ay.Store) {
     initialize() {
-        this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], S)
+        this.waitFor(g.A, m.default, p.A, f.A), this.syncWith([m.default], j)
     }
     get desyncedVoiceStatesCount() {
-        return b.size()
+        return A.size()
     }
     getDesyncedUserIds() {
-        return b.keys()
+        return A.keys()
     }
     getDesyncedVoiceStates() {
-        return b.values()
+        return A.values()
     }
     getDesyncedParticipants() {
         return h.values()
     }
-}(i = "displayName") in x ? Object.defineProperty(x, i, {
+}(l = "displayName") in I ? Object.defineProperty(I, l, {
     value: "RTCConnectionDesyncStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : x[i] = "RTCConnectionDesyncStore";
-let E = new x(s.h, {
+}) : I[l] = "RTCConnectionDesyncStore";
+let P = new I(s.h, {
     CONNECTION_OPEN: function() {
-        I()
+        x()
     },
-    VOICE_CHANNEL_SELECT: I,
+    VOICE_CHANNEL_SELECT: x,
     RTC_CONNECTION_STATE: function(e) {
         let {
             state: t,
             context: n
         } = e;
-        if (n !== a.x.DEFAULT || t !== y.S7L.DISCONNECTED) return !1;
-        I()
+        if (n !== a.x.DEFAULT || t !== b.S7L.DISCONNECTED) return !1;
+        x()
     },
     VOICE_STATE_UPDATES: function(e) {
         let {
@@ -113,9 +113,9 @@ let E = new x(s.h, {
         return null != n && t.reduce((e, t) => {
             let {
                 userId: r,
-                channelId: i
+                channelId: l
             } = t;
-            return i === n && !!j(r) || e
+            return l === n && !!S(r) || e
         }, !1)
     },
     RTC_CONNECTION_CLIENT_CONNECT: function(e) {
@@ -123,12 +123,12 @@ let E = new x(s.h, {
             userIds: t,
             guildId: n,
             channelId: r,
-            context: i
+            context: l
         } = e;
-        return i === a.x.DEFAULT && t.reduce((e, t) => {
+        return l === a.x.DEFAULT && t.reduce((e, t) => {
             if (null != g.A.getVoiceStateForChannel(r, t)) return e;
-            let i = m.default.getUser(t);
-            return null == i ? (v.add(t), e) : (O(i, n, r), !0)
+            let l = m.default.getUser(t);
+            return null == l ? (v.add(t), e) : (O(l, n, r), !0)
         }, !1)
     },
     RTC_CONNECTION_CLIENT_DISCONNECT: function(e) {
@@ -136,6 +136,6 @@ let E = new x(s.h, {
             userId: t,
             context: n
         } = e;
-        return n === a.x.DEFAULT && j(t)
+        return n === a.x.DEFAULT && S(t)
     }
 })

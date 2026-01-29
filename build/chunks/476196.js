@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 476196, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => _
 }), n(896048);
 var r = n(735438),
     i = n.n(r),
@@ -20,7 +20,7 @@ function d(e, t, n) {
     }) : e[t] = n, e
 }
 let u = new l.A("UserSettingsProto"),
-    p = new class {
+    _ = new class {
         async getAll(e) {
             let t = performance.now(),
                 n = await o.A.userSettings(e).getMany(),

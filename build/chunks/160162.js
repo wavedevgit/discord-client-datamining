@@ -2,7 +2,7 @@
 /** chunk id: 160162, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => p
+    A: () => h
 }), n(747238);
 var i = n(627968),
     r = n(64700),
@@ -13,7 +13,7 @@ var i = n(627968),
     c = n(463347),
     d = n(976860),
     u = n(652215);
-class h extends r.Component {
+class p extends r.Component {
     componentDidUpdate(e) {
         let {
             location: t
@@ -51,13 +51,13 @@ class h extends r.Component {
         return null
     }
 }
-let p = () => (0, i.jsxs)(s.dO, {
+let h = () => (0, i.jsxs)(s.dO, {
     children: [(0, i.jsx)(a.A, {
         path: u.BVt.CHANNEL(c.pv.guildId(), c.pv.channelId({
             optional: !0
         }), ":messageId?"),
-        component: h
+        component: p
     }), (0, i.jsx)(a.A, {
-        component: h
+        component: p
     })]
 })

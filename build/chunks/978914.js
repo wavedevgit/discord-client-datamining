@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 978914, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    I: () => f
+    I: () => g
 }), n(896048);
 var r = n(735438),
     l = n.n(r),
@@ -12,10 +12,10 @@ var r = n(735438),
     c = n(222823),
     u = n(401565),
     d = n(652215);
-let p = new Set,
-    h = null;
+let h = new Set,
+    p = null;
 
-function f(e) {
+function g(e) {
     var t;
     let {
         id: n
@@ -36,21 +36,21 @@ function f(e) {
         }
         return t
     }, [n]), a = (0, i.bG)([u.A], () => u.A.shouldLoadMessageRequestPreview(n), [n]);
-    return !r && null == l && a && (t = n, p.add(t), null == h && (h = setTimeout(g, 0))), {
+    return !r && null == l && a && (t = n, h.add(t), null == p && (p = setTimeout(f, 0))), {
         loaded: r,
         error: s,
         message: l
     }
 }
-async function g() {
+async function f() {
     try {
-        for (; !l().isEmpty(p);) await m()
+        for (; !l().isEmpty(h);) await m()
     } finally {
-        h = null
+        p = null
     }
 }
 async function m() {
-    let e = Array.from(p).slice(0, 25);
+    let e = Array.from(h).slice(0, 25);
     try {
         let t = await s.Bo.get({
             url: d.Rsh.MESSAGE_REQUESTS_SUPPLEMENTAL_DATA,
@@ -70,6 +70,6 @@ async function m() {
             requestedChannelIds: e
         })
     } finally {
-        for (let t of e) p.delete(t)
+        for (let t of e) h.delete(t)
     }
 }

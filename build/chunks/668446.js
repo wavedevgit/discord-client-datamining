@@ -1,8 +1,8 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 668446, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Sk: () => y,
-    lF: () => _
+    lF: () => O
 }), n(896048);
 var r = n(64700),
     l = n(735438),
@@ -13,10 +13,10 @@ var r = n(64700),
     c = n(961350),
     u = n(734057),
     d = n(808728),
-    p = n(498642),
-    h = n(71393),
-    f = n(186111),
-    g = n(320501),
+    h = n(498642),
+    p = n(71393),
+    g = n(186111),
+    f = n(320501),
     m = n(576705),
     b = n(661191),
     A = n(652215);
@@ -30,21 +30,21 @@ function y(e, t) {
     }), [t, e])
 }
 
-function _(e) {
+function O(e) {
     var t;
-    let n, l, a, m, y, _;
+    let n, l, a, m, y, O;
     return {
-        guildPopulated: (n = (0, s.bG)([u.A], () => u.A.getChannel(null == e ? void 0 : e.systemChannelId)), l = (0, s.yK)([g.A], () => null != n ? g.A.getMessages(n.id).toArray() : []), (0, s.bG)([p.A], () => {
+        guildPopulated: (n = (0, s.bG)([u.A], () => u.A.getChannel(null == e ? void 0 : e.systemChannelId)), l = (0, s.yK)([f.A], () => null != n ? f.A.getMessages(n.id).toArray() : []), (0, s.bG)([h.A], () => {
             var t;
-            let n = null != (t = p.A.getMemberCount(null == e ? void 0 : e.id)) ? t : 0,
+            let n = null != (t = h.A.getMemberCount(null == e ? void 0 : e.id)) ? t : 0,
                 r = l.some(e => e.type === A.lAJ.USER_JOIN);
             return n > 1 || r
         }, [e, l])),
-        guildMessaged: (a = (0, s.bG)([u.A], () => null != e ? u.A.getMutableBasicGuildChannelsForGuild(e.id) : null), t = r.useMemo(() => null == a ? [] : i().values(a), [a]), m = (0, s.bG)([c.default], () => c.default.getId()), (0, s.bG)([g.A], () => i().some(t, e => {
-            let t = g.A.getMessages(e.id).toArray();
+        guildMessaged: (a = (0, s.bG)([u.A], () => null != e ? u.A.getMutableBasicGuildChannelsForGuild(e.id) : null), t = r.useMemo(() => null == a ? [] : i().values(a), [a]), m = (0, s.bG)([c.default], () => c.default.getId()), (0, s.bG)([f.A], () => i().some(t, e => {
+            let t = f.A.getMessages(e.id).toArray();
             return i().some(t, e => e.author.id === m && !(0, o.A)(e))
         }))),
-        guildPersonalized: (y = (0, s.bG)([f.A], () => f.A.hasLayers()), (null == (_ = (0, s.bG)([h.A], () => h.A.getGuild(null == e ? void 0 : e.id))) ? void 0 : _.icon) != null && !y),
+        guildPersonalized: (y = (0, s.bG)([g.A], () => g.A.hasLayers()), (null == (O = (0, s.bG)([p.A], () => p.A.getGuild(null == e ? void 0 : e.id))) ? void 0 : O.icon) != null && !y),
         guildChannelCreated: (0, s.bG)([d.Ay], () => {
             let t = d.Ay.getChannels(null == e ? void 0 : e.id),
                 n = t[d.vM];

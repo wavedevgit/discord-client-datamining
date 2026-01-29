@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 772577, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => h
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -35,18 +35,18 @@ function d(e) {
     })
 }
 
-function p(e) {
-    let [t, n] = l.useState(), [i, s] = l.useState(), [a, u] = l.useState(!1), [p, h] = l.useState(!1), {
-        enabled: f
+function h(e) {
+    let [t, n] = l.useState(), [i, s] = l.useState(), [a, u] = l.useState(!1), [h, p] = l.useState(!1), {
+        enabled: g
     } = (0, o.DN)(e);
     return l.useEffect(() => {
-        f && null != t && null != i ? u(t < i) : u(!1)
-    }, [f, t, i]), {
+        g && null != t && null != i ? u(t < i) : u(!1)
+    }, [g, t, i]), {
         horizontalScrollNotice: l.useMemo(() => a ? (0, r.jsx)(d, {
             text: c.intl.string(c.t.RfAAH9),
-            hasScrolled: p
-        }) : null, [a, p]),
-        handleScroll: () => h(!0),
+            hasScrolled: h
+        }) : null, [a, h]),
+        handleScroll: () => p(!0),
         handleSetScrollerRef: e => {
             var t;
             return s(null == e || null == (t = e.getScrollerState()) ? void 0 : t.scrollWidth)

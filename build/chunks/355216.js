@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 355216, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     HN: () => m,
@@ -13,18 +13,18 @@ var r = n(627968),
     c = n(187508),
     u = n(851109),
     d = n(599486),
-    p = n(394953),
-    h = n(628325),
-    f = n(849077);
+    h = n(394953),
+    p = n(628325),
+    g = n(849077);
 n(445368);
-var g = n(626600);
+var f = n(626600);
 
 function m() {
     let {
         setSelectedFilter: e
-    } = (0, d.A)(), t = (0, h.S)(e => e.setInboxReadState);
+    } = (0, d.A)(), t = (0, p.S)(e => e.setInboxReadState);
     return () => {
-        e(f.Io.ALL), t(!1)
+        e(g.Io.ALL), t(!1)
     }
 }
 
@@ -33,13 +33,13 @@ function b(e) {
             isSelected: d
         } = e,
         {
-            unreadRecentMentionsCount: h,
-            unreadChannelIds: f
-        } = (0, p.U4)(),
+            unreadRecentMentionsCount: p,
+            unreadChannelIds: g
+        } = (0, h.U4)(),
         m = (t = function() {
             let {
                 unreadRecentMentionsCount: e
-            } = (0, p.U4)(), {
+            } = (0, h.U4)(), {
                 hasMoreMentions: t,
                 mentionsLoading: n
             } = (0, a.cf)([c.Ay], () => ({
@@ -62,7 +62,7 @@ function b(e) {
                 style: {
                     width: l
                 },
-                className: g.xF
+                className: f.xF
             })
         })(t, n), [t, n]), l.useMemo(() => ({
             badge: i,
@@ -78,8 +78,8 @@ function b(e) {
             location: "useInboxBadgeInfo"
         });
     return l.useMemo(() => {
-        if (h > 0) return m;
-        let e = f.length;
+        if (p > 0) return m;
+        let e = g.length;
         if (0 === e) return {
             badge: null,
             badgeType: null
@@ -96,8 +96,8 @@ function b(e) {
                         minHeight: 13,
                         minWidth: 13
                     },
-                    className: s()(g.xF, g.pw, {
-                        [g.wH]: d
+                    className: s()(f.xF, f.pw, {
+                        [f.wH]: d
                     })
                 })),
                 badgeType: "unread",
@@ -117,5 +117,5 @@ function b(e) {
             badge: null,
             badgeType: null
         }
-    }, [h, m, f.length, b, d])
+    }, [p, m, g.length, b, d])
 }

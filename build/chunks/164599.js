@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 164599, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -12,14 +12,14 @@ var r = n(627968),
     c = n(688810),
     d = n(309635),
     u = n(954571),
-    p = n(927578),
-    _ = n(919395),
+    _ = n(927578),
+    p = n(919395),
     m = n(128450),
     g = n(212168),
-    f = n(652215),
-    b = n(788868),
-    h = n(985018),
-    A = n(97671);
+    A = n(652215),
+    f = n(788868),
+    b = n(985018),
+    h = n(97671);
 
 function E(e) {
     let {
@@ -27,58 +27,58 @@ function E(e) {
         guild: n,
         initialSelectedEffect: l,
         className: E,
-        sectionTitle: x,
-        forcedDivider: O = !1,
-        withTutorial: C = !1,
-        showBorder: y = !1
+        sectionTitle: O,
+        forcedDivider: C = !1,
+        withTutorial: x = !1,
+        showBorder: S = !1
     } = e, {
-        analyticsLocations: j
-    } = (0, c.Ay)(), T = p.Ay.canUsePremiumProfileCustomization(t), v = (0, _.N2)({
+        analyticsLocations: T
+    } = (0, c.Ay)(), I = _.Ay.canUsePremiumProfileCustomization(t), y = (0, p.N2)({
         user: t,
         guildId: null == n ? void 0 : n.id
     }), {
-        pendingProfileEffect: S,
-        errors: I
-    } = (0, _.nZ)(null == n ? void 0 : n.id);
+        pendingProfileEffect: N,
+        errors: j
+    } = (0, p.nZ)(null == n ? void 0 : n.id);
     i.useEffect(() => {
-        T && u.default.track(f.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: b.e.PROFILE_EFFECTS_INLINE_SETTINGS,
-            location_stack: j
+        I && u.default.track(A.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: f.e.PROFILE_EFFECTS_INLINE_SETTINGS,
+            location_stack: T
         })
-    }, [T, j]);
-    let N = C ? o.wLn : a.$n;
+    }, [I, T]);
+    let v = x ? o.wLn : a.$n;
     return (0, r.jsx)(m.A, {
-        forcedDivider: O,
+        forcedDivider: C,
         borderType: g.i.PREMIUM,
         hasBackground: !0,
-        title: x,
-        showBorder: y,
-        errors: I,
+        title: O,
+        showBorder: S,
+        errors: j,
         className: E,
         children: (0, r.jsxs)("div", {
-            className: A.NC,
-            children: [(0, r.jsx)(N, {
+            className: h.NC,
+            children: [(0, r.jsx)(v, {
                 size: a.$n.Sizes.SMALL,
                 onClick: () => {
                     (0, d.W)({
-                        analyticsLocations: j,
+                        analyticsLocations: T,
                         guild: n,
                         initialSelectedEffect: l
                     })
                 },
                 className: s()({
-                    [A.yj]: C
+                    [h.yj]: x
                 }),
-                children: h.intl.string(h.t["/dRfCf"])
-            }), (void 0 === S ? null != v : null != S) && (0, r.jsx)("div", {
+                children: b.intl.string(b.t["/dRfCf"])
+            }), (void 0 === N ? null != y : null != N) && (0, r.jsx)("div", {
                 "data-button-hoisted-classname-wrapper": !0,
-                className: A.DT,
+                className: h.DT,
                 children: (0, r.jsx)(o.Button, {
                     variant: "secondary",
                     size: "sm",
-                    text: null != n ? h.intl.string(h.t.CHf9iJ) : h.intl.string(h.t.uMuafO),
+                    text: null != n ? b.intl.string(b.t.CHf9iJ) : b.intl.string(b.t.uMuafO),
                     onClick: () => {
-                        (0, _.mZ)(null, null == n ? void 0 : n.id)
+                        (0, p.mZ)(null, null == n ? void 0 : n.id)
                     }
                 })
             })]

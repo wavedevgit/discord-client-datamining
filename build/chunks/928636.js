@@ -51,8 +51,8 @@ var r, i = n(627968),
     Q = n(961350),
     X = n(734057),
     Z = n(287809),
-    J = n(879945),
-    $ = n(266080),
+    $ = n(879945),
+    J = n(266080),
     ee = n(139675),
     et = n(403362),
     en = n(427262),
@@ -226,13 +226,13 @@ let e_ = e => {
     } = e;
     switch (n) {
         case "XBOX":
-            t = (0, i.jsx)($.A, {
+            t = (0, i.jsx)(J.A, {
                 className: ea.nr,
                 color: d.A.unsafe_rawColors.PRIMARY_300.css
             });
             break;
         case "SPOTIFY":
-            t = (0, i.jsx)(J.A, {
+            t = (0, i.jsx)($.A, {
                 className: ea.nr,
                 color: d.A.unsafe_rawColors.SPOTIFY.css
             });
@@ -545,7 +545,7 @@ eE.Header = eb, eE.Body = e => {
     return (0, i.jsx)(ed, {
         children: (0, i.jsxs)("div", {
             className: ea.oc,
-            children: [(0, i.jsx)($.A, {
+            children: [(0, i.jsx)(J.A, {
                 className: ea.Ai
             }), (0, i.jsxs)("div", {
                 className: ea.__invalid_xboxSectionDetails,
@@ -578,7 +578,7 @@ eE.Header = eb, eE.Body = e => {
                     className: s()(ea.nX, ea.Dy, {
                         [ea.p8]: null != n.small_image
                     })
-                }), u ? null : (0, i.jsx)(J.A, {
+                }), u ? null : (0, i.jsx)($.A, {
                     className: ea.rp,
                     color: d.A.unsafe_rawColors.SPOTIFY.css
                 })]

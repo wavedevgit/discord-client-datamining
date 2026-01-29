@@ -53,8 +53,8 @@ var r = n(627968),
     Q = n(728321),
     X = n(544028),
     Z = n(253932),
-    J = n(189081),
-    $ = n(839067),
+    $ = n(189081),
+    J = n(839067),
     ee = n(67480),
     et = n(619921),
     en = n(595623),
@@ -446,8 +446,8 @@ function eC() {
         } = (0, d.cf)([X.A], () => ({
             theme: X.A.theme
         })),
-        o = (0, d.bG)([J.A], () => J.A.hasLibraryApplication()),
-        c = (0, d.bG)([$.A], () => $.A.getCurrentPath()),
+        o = (0, d.bG)([$.A], () => $.A.hasLibraryApplication()),
+        c = (0, d.bG)([J.A], () => J.A.getCurrentPath()),
         [u, h] = (0, z.A)(e => {
             let {
                 channelId: t,

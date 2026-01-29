@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 234567, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => c
@@ -19,7 +19,7 @@ function c(e) {
         hasRemoveIcon: c = !1,
         onClick: u,
         disabled: d = !1,
-        verified: p = !1
+        verified: h = !1
     } = e;
     return (0, r.jsx)(s.DUT, {
         className: i()(t, o.x6, {
@@ -32,7 +32,7 @@ function c(e) {
             className: o.JC,
             roleColor: n,
             roleName: l,
-            verified: p,
+            verified: h,
             children: c && (0, r.jsx)(s.PGe, {
                 size: "custom",
                 color: "currentColor",

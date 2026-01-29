@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 773686, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => b
+    A: () => f
 }), n(896048);
 var r = n(626584),
     i = n(260509),
@@ -12,9 +12,9 @@ var r = n(626584),
     c = n(860689),
     d = n(9865),
     u = n(7864),
-    p = n(723176);
+    _ = n(723176);
 
-function _(e, t, n) {
+function p(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -30,7 +30,7 @@ function m(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            _(e, t, n[t])
+            p(e, t, n[t])
         })
     }
     return e
@@ -48,16 +48,16 @@ function g(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let f = new r.A("Guilds"),
-    b = new class {
+let A = new r.A("Guilds"),
+    f = new class {
         async getAsync(e) {
             let t = performance.now(),
-                n = await p.A.guilds(e).getMany(),
+                n = await _.A.guilds(e).getMany(),
                 r = performance.now();
-            return f.verbose("loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
+            return A.verbose("loaded in ".concat(r - t, "ms (guilds: ").concat(n.length, ")")), n
         }
         async getOneAsync(e, t) {
-            return await p.A.guilds(e).get(t)
+            return await _.A.guilds(e).get(t)
         }
         handleBackgroundSync(e, t) {
             for (let n of e.guilds) {
@@ -127,16 +127,16 @@ let f = new r.A("Guilds"),
             this.put(i, t)
         }
         put(e, t) {
-            p.A.guildsTransaction(t).put(e)
+            _.A.guildsTransaction(t).put(e)
         }
         delete(e, t) {
-            p.A.guildsTransaction(t).delete(e)
+            _.A.guildsTransaction(t).delete(e)
         }
         clear(e) {
-            p.A.guildsTransaction(e).delete()
+            _.A.guildsTransaction(e).delete()
         }
         constructor() {
-            _(this, "actions", {
+            p(this, "actions", {
                 BACKGROUND_SYNC: (e, t) => this.handleBackgroundSync(e, t),
                 CONNECTION_OPEN: (e, t) => this.handleConnectionOpen(e, t),
                 GUILD_CREATE: (e, t) => this.handleGuildCreate(e, t),

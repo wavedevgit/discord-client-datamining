@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 325326, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    LF: () => p
+    LF: () => h
 }), n(896048);
 var r = n(64700),
     l = n(311907),
@@ -12,27 +12,27 @@ var r = n(64700),
     c = n(252431),
     u = n(810153),
     d = n(790782);
-let p = () => {
+let h = () => {
     let {
         initialized: e,
         loading: t,
         items: n,
-        hasMore: p,
-        loadMore: h
+        hasMore: h,
+        loadMore: p
     } = (e => {
         let {
             isFocused: t,
             navigatedAway: n,
-            isDesktop: p,
-            withMentions: h = !1,
-            initialPageSize: f
-        } = e, g = (0, l.bG)([u.A], () => u.A.shouldReload()), m = r.useRef(!1), [b, A] = r.useState(!1), {
+            isDesktop: h,
+            withMentions: p = !1,
+            initialPageSize: g
+        } = e, f = (0, l.bG)([u.A], () => u.A.shouldReload()), m = r.useRef(!1), [b, A] = r.useState(!1), {
             initialized: y,
-            loading: _,
-            items: O,
-            hasMore: j,
-            cursor: v,
-            errored: x
+            loading: O,
+            items: _,
+            hasMore: x,
+            cursor: j,
+            errored: v
         } = (0, l.cf)([c.A], () => ({
             initialized: c.A.initialized,
             loading: c.A.loading,
@@ -52,38 +52,38 @@ let p = () => {
         }, [t, y]);
         let S = (0, s.A)();
         r.useEffect(() => () => {
-            p ? !S() && (x || O.length > 100) && (0, o.S3)() : n && O.length > 100 && (0, o.S3)()
-        }, [n, O, p, S, x]), r.useEffect(() => {
-            let e = g && t;
+            h ? !S() && (v || _.length > 100) && (0, o.S3)() : n && _.length > 100 && (0, o.S3)()
+        }, [n, _, h, S, v]), r.useEffect(() => {
+            let e = f && t;
             (!y || e) && (0, o.ni)({
-                limit: null != f ? f : h ? 8 : 20,
-                with_mentions: h,
+                limit: null != g ? g : p ? 8 : 20,
+                with_mentions: p,
                 roles_filter: E,
                 everyone_filter: C
             })
-        }, [y, g, t, h, E, C, f]);
+        }, [y, f, t, p, E, C, g]);
         let I = r.useCallback(async e => {
-            !m.current && y && j && null != v && (e || !x) && (m.current = !0, A(!0), await (0, o.ni)({
-                after: v,
-                with_mentions: h,
+            !m.current && y && x && null != j && (e || !v) && (m.current = !0, A(!0), await (0, o.ni)({
+                after: j,
+                with_mentions: p,
                 roles_filter: E,
                 everyone_filter: C,
-                limit: h ? 8 : 20
+                limit: p ? 8 : 20
             }, () => {
                 m.current = !1
             }), A(!1))
-        }, [y, j, v, x, h, E, C]);
+        }, [y, x, j, v, p, E, C]);
         return {
             initialized: y,
-            loading: _,
-            items: O,
-            hasMore: j,
+            loading: O,
+            items: _,
+            hasMore: x,
             loadMore: I,
             loadingMore: b,
             setReadNotifItemToAcked: e => {
                 e.acked || (e.acked = !0)
             },
-            errored: x
+            errored: v
         }
     })({
         isFocused: !0,
@@ -93,7 +93,7 @@ let p = () => {
         initialized: e,
         loading: t,
         items: n.filter(e => "notification-center-item" === e.kind),
-        hasMore: p,
-        loadMore: h
+        hasMore: h,
+        loadMore: p
     }
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 704037, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    l: () => h
+    l: () => p
 }), n(896048), n(667532);
 var r = n(627968),
     l = n(64700),
@@ -13,7 +13,7 @@ var r = n(627968),
     u = n(743790),
     d = n(960016);
 
-function p(e) {
+function h(e) {
     let {
         children: t
     } = e;
@@ -26,16 +26,16 @@ function p(e) {
     })
 }
 
-function h(e) {
+function p(e) {
     let {
         guildIds: t
-    } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), h = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
-        visibleGuilds: f,
-        numTruncated: g
+    } = e, n = (0, i.bG)([c.A], () => c.A.getGuildId()), a = (0, i.yK)([o.A], () => t.map(e => o.A.getGuild(e)), [t]), p = (0, l.useMemo)(() => a.filter(e => null != e), [a]), {
+        visibleGuilds: g,
+        numTruncated: f
     } = (0, l.useMemo)(() => {
-        let e = [...h];
+        let e = [...p];
         if (null != n) {
-            let t = h.findIndex(e => e.id === n); - 1 !== t && (e.splice(t, 1), e.unshift(h[t]))
+            let t = p.findIndex(e => e.id === n); - 1 !== t && (e.splice(t, 1), e.unshift(p[t]))
         }
         return 4 === e.length ? {
             visibleGuilds: e,
@@ -46,20 +46,20 @@ function h(e) {
             visibleGuilds: e.slice(0, 3),
             numTruncated: e.length - 3
         }
-    }, [h, n]);
+    }, [p, n]);
     return (0, r.jsxs)("div", {
         className: d.WM,
-        children: [f.map(e => (0, r.jsx)(p, {
+        children: [g.map(e => (0, r.jsx)(h, {
             children: (0, r.jsx)(u.$, {
                 guild: e,
                 size: 20
             })
-        }, e.id)), g > 0 && (0, r.jsx)(p, {
+        }, e.id)), f > 0 && (0, r.jsx)(h, {
             children: (0, r.jsxs)(s.Text, {
                 className: d.br,
                 color: "text-subtle",
                 variant: "text-xxs/semibold",
-                children: ["+", g]
+                children: ["+", f]
             })
         })]
     })

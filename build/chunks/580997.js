@@ -1,25 +1,25 @@
-/** Chunk was on 28979 **/
-/** chunk id: 580997, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    A: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 580997, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    A: () => d
 });
 var n = i(311907),
     l = i(827343),
     s = i(419954),
     r = i(430452),
-    u = i(723702),
-    a = i(780964),
+    a = i(723702),
+    u = i(780964),
     o = i(985018);
-let T = (0, s.zD)(a.X.VOICE_SILENCE_WARNING_SETTING, {
+let d = (0, s.zD)(u.X.VOICE_SILENCE_WARNING_SETTING, {
     useTitle: () => o.intl.string(o.t["4rsOPQ"]),
     useSubtitle: () => o.intl.string(o.t.jtiiCw),
     useValue: function() {
         return (0, n.bG)([r.A], () => r.A.getEnableSilenceWarning())
     },
-    setValue: function(t) {
-        l.A.setSilenceWarning(t)
+    setValue: function(e) {
+        l.A.setSilenceWarning(e)
     },
     usePredicate: function() {
-        return u.isPlatformEmbedded
+        return a.isPlatformEmbedded
     }
 })

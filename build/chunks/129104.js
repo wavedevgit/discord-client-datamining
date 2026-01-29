@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 129104, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     R: () => b
@@ -12,10 +12,10 @@ var r = n(627968),
     c = n(937773),
     u = n(961350),
     d = n(734057),
-    p = n(309010),
-    h = n(559405),
-    f = n(652215),
-    g = n(307731),
+    h = n(309010),
+    p = n(559405),
+    g = n(652215),
+    f = n(307731),
     m = n(680930);
 
 function b(e) {
@@ -25,22 +25,22 @@ function b(e) {
         selectedDefaultStatus: b,
         setIsEmojiPickerOpen: A,
         defaultStatusVariant: y
-    } = e, _ = l.useRef(null), O = (0, i.bG)([p.A, d.A], () => d.A.getChannel(p.A.getVoiceChannelId())), j = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
+    } = e, O = l.useRef(null), _ = (0, i.bG)([h.A, d.A], () => d.A.getChannel(h.A.getVoiceChannelId())), x = l.useCallback(() => null != t ? (0, r.jsx)(a.A, {
         emojiId: t.id,
         emojiName: t.name,
         animated: !!t.animated
-    }) : null != b ? (0, r.jsx)(h.A, {
+    }) : null != b ? (0, r.jsx)(p.A, {
         className: m.Kk,
         userId: u.default.getId(),
         size: 20,
         hangStatusActivity: {
-            type: f.$pd.HANG_STATUS,
+            type: g.$pd.HANG_STATUS,
             state: b
         },
         fallbackVariant: y
     }) : null, [t, y, b]);
     return (0, r.jsx)(s.YNO, {
-        targetElementRef: _,
+        targetElementRef: O,
         onRequestOpen: () => A(!0),
         onRequestClose: () => A(!1),
         renderPopout: e => {
@@ -49,8 +49,8 @@ function b(e) {
                 closePopout: l
             } = e;
             return (0, r.jsx)(c.A, {
-                channel: O,
-                guildId: null != (t = null == O ? void 0 : O.guild_id) ? t : void 0,
+                channel: _,
+                guildId: null != (t = null == _ ? void 0 : _.guild_id) ? t : void 0,
                 closePopout: l,
                 onSelectEmoji: e => {
                     var t;
@@ -68,7 +68,7 @@ function b(e) {
                         animated: !1
                     }), i && l()
                 },
-                pickerIntention: g.b_.STATUS
+                pickerIntention: f.b_.STATUS
             })
         },
         position: "left",
@@ -97,10 +97,10 @@ function b(e) {
                 }
                 return e
             }({}, e), i = i = {
-                ref: _,
+                ref: O,
                 active: s,
                 tabIndex: 0,
-                renderButtonContents: null == t && null == b ? null : j
+                renderButtonContents: null == t && null == b ? null : x
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {

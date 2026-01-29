@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 310953, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _,
+    A: () => p,
     W: () => m
 }), n(321073);
 var r = n(64700),
@@ -13,14 +13,14 @@ var r = n(64700),
     c = n(458294),
     d = n(309010),
     u = n(652215),
-    p = n(349828);
+    _ = n(349828);
 
-function _(e) {
+function p(e) {
     let {
         withVoiceChannels: t = !1,
         withCurrentVoiceChannel: n = !1
     } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {}, r = arguments.length > 2 ? arguments[2] : void 0;
-    return g(e === p.V || e === u.YYv ? (0, s.g)() : l.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
+    return g(e === _.V || e === u.YYv ? (0, s.g)() : l.A.getGuildWithoutChangingGuildActionRows(e).guildChannels, {
         currentVoiceChannelId: d.A.getVoiceChannelId(),
         selectedChannelId: d.A.getChannelId()
     }, {
@@ -33,20 +33,20 @@ function m(e, t, n) {
     let {
         withVoiceChannels: l = !1,
         withCurrentVoiceChannel: s = !1
-    } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : void 0, u = (0, i.bG)([c.default], () => c.default.getGuildChangeSentinel(e)), p = (0, i.bG)([o.A], () => o.A.version), {
-        currentVoiceChannelId: _,
+    } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {}, a = arguments.length > 4 ? arguments[4] : void 0, u = (0, i.bG)([c.default], () => c.default.getGuildChangeSentinel(e)), _ = (0, i.bG)([o.A], () => o.A.version), {
+        currentVoiceChannelId: p,
         selectedChannelId: m
     } = (0, i.cf)([d.A], () => ({
         currentVoiceChannelId: d.A.getVoiceChannelId(),
         selectedChannelId: d.A.getChannelId()
     }));
     return (0, r.useMemo)(() => g(t, {
-        currentVoiceChannelId: _,
+        currentVoiceChannelId: p,
         selectedChannelId: m
     }, {
         withVoiceChannels: l,
         withCurrentVoiceChannel: s
-    }, a).map(e => e.id), [t, n, u, p])
+    }, a).map(e => e.id), [t, n, u, _])
 }
 
 function g(e, t) {

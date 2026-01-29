@@ -1,82 +1,82 @@
-/** Chunk was on 28979 **/
-/** chunk id: 404096, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    w: () => D
+/** Chunk was on 4670 **/
+/** chunk id: 404096, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    w: () => m
 });
 var n = i(421380),
     l = i(935649),
     s = i(847599),
     r = i(171316),
-    u = i(419954),
-    a = i(71393),
+    a = i(419954),
+    u = i(71393),
     o = i(954571),
-    T = i(975571),
-    d = i(115063),
-    A = i(152076),
-    S = i(762183),
-    E = i(253932),
-    g = i(780964),
-    _ = i(612025),
-    c = i(112469),
+    d = i(975571),
+    T = i(115063),
+    c = i(152076),
+    A = i(762183),
+    S = i(253932),
+    _ = i(780964),
+    E = i(612025),
+    g = i(112469),
     I = i(997913),
     O = i(542457),
-    N = i(355097),
-    C = i(652215),
+    C = i(355097),
+    N = i(652215),
     b = i(985018);
-let L = (t, e) => {
-        o.default.track(C.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
-            default_guilds_restricted: t,
-            applied_to_existing_guilds: e
+let p = (e, t) => {
+        o.default.track(N.HAw.GUILD_DEFAULT_MESSAGE_REQUEST_UPDATED, {
+            default_guilds_restricted: e,
+            applied_to_existing_guilds: t
         })
     },
-    D = (0, u.zD)(g.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
+    m = (0, a.zD)(_.X.CONTENT_AND_SOCIAL_PERMISSIONS_MESSAGE_REQUESTS_SETTING, {
         useTitle: () => b.intl.string(b.t["3o2ojh"]),
-        useSubtitle: () => (0, c.q9)() ? b.intl.format(b.t.WpnWLc, {
-            helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
+        useSubtitle: () => (0, g.q9)() ? b.intl.format(b.t.WpnWLc, {
+            helpdeskArticle: d.A.getArticleURL(N.MVz.MESSAGE_REQUESTS)
         }) : b.intl.format(b.t.wkm9a3, {
-            helpdeskArticle: T.A.getArticleURL(C.MVz.MESSAGE_REQUESTS)
+            helpdeskArticle: d.A.getArticleURL(N.MVz.MESSAGE_REQUESTS)
         }),
         useValue: () => {
-            let t = (0, c.Tx)(),
-                e = (0, S.K)(),
-                i = E.$s.useSetting().includes(t),
-                n = E.YX.useSetting(),
-                l = E.Zr.useSetting().includes(t);
-            return t === _.YG ? !e && !n : !i && !l
+            let e = (0, g.Tx)(),
+                t = (0, A.K)(),
+                i = S.$s.useSetting().includes(e),
+                n = S.YX.useSetting(),
+                l = S.Zr.useSetting().includes(e);
+            return e === E.YG ? !t && !n : !i && !l
         },
         useDisabled: () => {
-            let t = (0, c.Tx)(),
-                e = (0, r.uM)(),
-                i = (0, S.K)(),
-                n = E.$s.useSetting().includes(t);
-            return t === _.YG ? i || e : n
+            let e = (0, g.Tx)(),
+                t = (0, r.uM)(),
+                i = (0, A.K)(),
+                n = S.$s.useSetting().includes(e);
+            return e === E.YG ? i || t : n
         },
-        setValue: t => {
-            let e = _.xk.getState().selectedGuildId;
-            if (!t && (0, A.w)()) return void l.A.showAgeVerificationGetStartedModal({
+        setValue: e => {
+            let t = E.xk.getState().selectedGuildId;
+            if (!e && (0, c.w)()) return void l.A.showAgeVerificationGetStartedModal({
                 entryPoint: s.q1.MESSAGE_REQUESTS_SETTINGS
             });
-            if (e === _.YG) {
+            if (t === E.YG) {
                 var i;
-                i = !t, (0, I.O)({
+                i = !e, (0, I.O)({
                     header: b.intl.string(b.t.yAfu1p),
                     body: b.intl.string(b.t.Ry2z74),
                     confirmText: b.intl.string(b.t.gm1Vej),
                     cancelText: b.intl.string(b.t.p89ACt),
                     confirmButtonColor: n.$n.Colors.BRAND,
                     onConfirm: () => {
-                        E.YX.updateSetting(i), L(i, !1)
+                        S.YX.updateSetting(i), p(i, !1)
                     },
                     onCancel: () => {
-                        E.YX.updateSetting(i), E.Zr.updateSetting(i ? a.A.getGuildIds() : []), L(i, !0)
+                        S.YX.updateSetting(i), S.Zr.updateSetting(i ? u.A.getGuildIds() : []), p(i, !0)
                     }
                 })
             } else {
-                let i = (0, d.xo)();
-                t ? i.delete(e) : i.add(e), E.Zr.updateSetting(Array.from(i)), o.default.track(C.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
+                let i = (0, T.xo)();
+                e ? i.delete(t) : i.add(t), S.Zr.updateSetting(Array.from(i)), o.default.track(N.HAw.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
                     action: O.m.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
-                    ingress: N.bf.USER_SETTINGS_PRIVACY_SAFETY,
-                    guild_id: e
+                    ingress: C.bf.USER_SETTINGS_PRIVACY_SAFETY,
+                    guild_id: t
                 })
             }
         }

@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 743961, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => d
@@ -18,15 +18,15 @@ let d = i.memo(function(e) {
         useTitleTrailingIcon: i,
         useSubnavLabel: d,
         useSubtitle: u,
-        layout: p,
-        initialize: _,
+        layout: _,
+        initialize: p,
         useInlineNotice: m
-    } = t, g = null == n ? void 0 : n(), f = null == i ? void 0 : i(), b = null == u ? void 0 : u(), h = null == m ? void 0 : m();
-    return (0, a.Z)(_), (0, r.jsxs)(r.Fragment, {
+    } = t, g = null == n ? void 0 : n(), A = null == i ? void 0 : i(), f = null == u ? void 0 : u(), b = null == m ? void 0 : m();
+    return (0, a.Z)(p), (0, r.jsxs)(r.Fragment, {
         children: [null != g && (0, r.jsx)(o._, {
             title: g,
-            titleTrailingIcon: f,
-            subtitle: b
+            titleTrailingIcon: A,
+            subtitle: f
         }), (0, r.jsx)("div", {
             "data-settings-category-key": null != n || null != d ? t.key : void 0,
             "aria-hidden": !0,
@@ -35,9 +35,9 @@ let d = i.memo(function(e) {
             }
         }), (0, r.jsxs)(l.BJc, {
             gap: 16,
-            children: [null != h && (0, r.jsx)(c.A, {
-                notice: h
-            }), p.map(e => (0, r.jsx)(s.A, {
+            children: [null != b && (0, r.jsx)(c.A, {
+                notice: b
+            }), _.map(e => (0, r.jsx)(s.A, {
                 node: e
             }, e.key))]
         })]

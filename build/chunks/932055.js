@@ -1,60 +1,60 @@
-/** Chunk was on 28979 **/
-/** chunk id: 932055, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    Jz: () => S,
-    i: () => E,
-    vd: () => A
+/** Chunk was on 4670 **/
+/** chunk id: 932055, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    Jz: () => A,
+    i: () => S,
+    vd: () => c
 }), i(321073);
 var n = i(311907),
     l = i(264686),
     s = i(839214),
     r = i(419954),
-    u = i(400492),
-    a = i(803224),
+    a = i(400492),
+    u = i(803224),
     o = i(780964),
-    T = i(985018);
-let d = (0, s.D)(() => ({
+    d = i(985018);
+let T = (0, s.D)(() => ({
     currentPlayingSound: null
 }));
 
-function A() {
-    let t = d.getField("currentPlayingSound");
-    null == t || t.stop(), d.setState({
+function c() {
+    let e = T.getField("currentPlayingSound");
+    null == e || e.stop(), T.setState({
         currentPlayingSound: null
     })
 }
 
-function S(t) {
-    let e = d.getField("currentPlayingSound");
-    null == e || e.stop();
-    let i = (0, u.Ak)(t);
-    d.setState({
+function A(e) {
+    let t = T.getField("currentPlayingSound");
+    null == t || t.stop();
+    let i = (0, a.Ak)(e);
+    T.setState({
         currentPlayingSound: i
     })
 }
 
-function E(t) {
-    return (0, r.zD)("".concat(o.X.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
-        useTitle: t.useTitle,
-        useSubtitle: () => T.intl.format(T.t.OOiGCM, {
-            onClick: () => S(t.sound)
+function S(e) {
+    return (0, r.zD)("".concat(o.X.SOUNDS_LIST_ITEM_PREFIX).concat(e.sound), {
+        useTitle: e.useTitle,
+        useSubtitle: () => d.intl.format(d.t.OOiGCM, {
+            onClick: () => A(e.sound)
         }),
         useValue: () => {
-            var e;
-            let i = (0, n.bG)([a.A], () => a.A.isSoundDisabled(t.sound)),
-                l = null == (e = t.useDisabled) ? void 0 : e.call(t);
+            var t;
+            let i = (0, n.bG)([u.A], () => u.A.isSoundDisabled(e.sound)),
+                l = null == (t = e.useDisabled) ? void 0 : t.call(e);
             return !i && !l
         },
-        setValue: e => {
-            let i = a.A.getDisabledSounds().filter(e => e !== t.sound);
-            e || i.push(t.sound), l.default.setDisabledSounds(i)
+        setValue: t => {
+            let i = u.A.getDisabledSounds().filter(t => t !== e.sound);
+            t || i.push(e.sound), l.default.setDisabledSounds(i)
         },
         useDisabled: () => {
-            var e;
-            let i = null == (e = t.useDisabled) ? void 0 : e.call(t),
-                l = (0, n.bG)([a.A], () => a.A.getDisableAllSounds());
+            var t;
+            let i = null == (t = e.useDisabled) ? void 0 : t.call(e),
+                l = (0, n.bG)([u.A], () => u.A.getDisableAllSounds());
             return i || l
         },
-        useDisabledMessage: t.useDisabledMessage
+        useDisabledMessage: e.useDisabledMessage
     })
 }

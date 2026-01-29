@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 699707, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => I
@@ -12,20 +12,20 @@ var r = n(627968),
     c = n(475743),
     u = n(216418),
     d = n(80051),
-    p = n(961350),
-    h = n(430452),
-    f = n(203982),
-    g = n(220144),
+    h = n(961350),
+    p = n(430452),
+    g = n(203982),
+    f = n(220144),
     m = n(175203),
     b = n(306852),
     A = n(947580),
     y = n(163432),
-    _ = n(652215),
-    O = n(806931),
-    j = n(403264),
-    v = n(542411);
+    O = n(652215),
+    _ = n(806931),
+    x = n(403264),
+    j = n(542411);
 
-function x(e) {
+function v(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -70,39 +70,39 @@ function I(e) {
             popoutType: w,
             inCall: R,
             channel: D,
-            selectedParticipant: M,
-            showParticipants: L = !0,
+            selectedParticipant: L,
+            showParticipants: M = !0,
             className: k,
             width: G,
             height: U,
-            layout: B,
-            idle: V
+            layout: V,
+            idle: B
         } = e,
-        F = h.A.getVideoComponent(),
-        H = p.default.getId(),
-        [K, W] = l.useState(null),
-        z = (0, c.A)(K),
-        [Y, q] = l.useState(!0),
+        H = p.A.getVideoComponent(),
+        F = h.default.getId(),
+        [K, Y] = l.useState(null),
+        W = (0, c.A)(K),
+        [z, q] = l.useState(!0),
         [X, J] = l.useState(!1),
-        Q = M.type === O.lp.ACTIVITY,
-        Z = (0, u.A)(Q ? M.applicationId : void 0),
-        $ = !Q && null != M.streamId,
+        Q = L.type === _.lp.ACTIVITY,
+        Z = (0, u.A)(Q ? L.applicationId : void 0),
+        $ = !Q && null != L.streamId,
         ee = U <= 2 * S + 144,
-        et = L && !ee,
+        et = M && !ee,
         en = (0, c.A)(et),
-        er = B === _.DUB.MINIMUM || B === _.DUB.NORMAL,
+        er = V === O.DUB.MINIMUM || V === O.DUB.NORMAL,
         el = !ee && (!er || Q),
-        ei = (0, g.A)(el, 100),
-        es = (null != (t = (0, c.A)(M.id)) ? t : M.id) !== M.id,
+        ei = (0, f.A)(el, 100),
+        es = (null != (t = (0, c.A)(L.id)) ? t : L.id) !== L.id,
         ea = 0;
     (Q || et) && (ea += 72), Q && !et && (el ? ea += 48 : ea += 8), et && (ea += .5 * S + 8);
     let eo = l.useMemo(() => Q && Z ? G / (U - 2 * ea) : $ && null != K && K.width > 0 && K.height > 0 ? K.width / K.height : C, [$, K, Q, G, U, ea, Z]),
         ec = U - 2 * ea,
         eu = Q && Z ? G : ec * eo,
         ed = Math.floor(Math.min(G, eu) / eo),
-        ep = U > G / eo + 72 + S + 8;
+        eh = U > G / eo + 72 + S + 8;
     n = et || Q ? et ? -16 : -8 : 40 + Math.max(0, 72 - (U - ed) / 2);
-    let eh = 8 + Math.max(0, 72 - (U - ed) / 2);
+    let ep = 8 + Math.max(0, 72 - (U - ed) / 2);
     l.useEffect(() => {
         let e = setTimeout(() => {
             q(!1)
@@ -111,41 +111,41 @@ function I(e) {
             clearTimeout(e)
         }
     }, []);
-    let ef = Y || null == z,
-        eg = ef ? "animate-never" : "animate-always",
+    let eg = z || null == W,
+        ef = eg ? "animate-never" : "animate-always",
         em = (0, o.zhh)({
             value: +!!et,
-            delay: ep || !et ? 0 : 100,
-            config: E(x({}, a.config.stiff), {
+            delay: eh || !et ? 0 : 100,
+            config: E(v({}, a.config.stiff), {
                 clamp: !0
             }),
             onStart: () => J(!0),
-            onChange: () => f._.dispatch(_.jej.REMEASURE_TARGET),
+            onChange: () => g._.dispatch(O.jej.REMEASURE_TARGET),
             onRest: () => {
-                J(!1), f._.dispatch(_.jej.REMEASURE_TARGET)
+                J(!1), g._.dispatch(O.jej.REMEASURE_TARGET)
             }
-        }, eg),
+        }, ef),
         eb = (0, o.zhh)({
             value: +!!et,
-            config: E(x({}, a.config.stiff), {
+            config: E(v({}, a.config.stiff), {
                 clamp: !0
             })
-        }, eg),
+        }, ef),
         eA = (0, o.zhh)({
             value: eu,
-            config: E(x({}, a.config.stiff), {
+            config: E(v({}, a.config.stiff), {
                 clamp: !0
             })
-        }, en === et && eb.value.idle && !ei || es || ef ? "animate-never" : "animate-always"),
+        }, en === et && eb.value.idle && !ei || es || eg ? "animate-never" : "animate-always"),
         ey = (0, o.zhh)({
             value: n,
-            config: E(x({}, a.config.stiff), {
+            config: E(v({}, a.config.stiff), {
                 clamp: !0
             })
-        }, eg),
-        e_ = (0, o.pnh)(M, {
+        }, ef),
+        eO = (0, o.pnh)(L, {
             keys: e => null == e ? void 0 : e.id,
-            config: E(x({}, a.config.stiff), {
+            config: E(v({}, a.config.stiff), {
                 clamp: !0
             }),
             initial: null,
@@ -158,24 +158,24 @@ function I(e) {
             leave: {
                 opacity: 0
             }
-        }, eg),
-        eO = l.useCallback(e => {
-            W(e), q(!1)
+        }, ef),
+        e_ = l.useCallback(e => {
+            Y(e), q(!1)
         }, []),
-        ej = et ? [] : (0, A.Cf)(T, M, H),
+        ex = et ? [] : (0, A.Cf)(T, L, F),
         {
-            visibleParticipants: ev,
-            participantTileWidth: ex
+            visibleParticipants: ej,
+            participantTileWidth: ev
         } = (0, y.i4)(G, P);
     return (0, r.jsxs)("div", {
-        className: s()(v.zr, j.tR, k),
+        className: s()(j.zr, x.tR, k),
         children: [(0, r.jsxs)("div", {
-            className: v.QX,
+            className: j.QX,
             style: {
-                opacity: $ && Y ? 0 : 1
+                opacity: $ && z ? 0 : 1
             },
             children: [(0, r.jsxs)(a.animated.div, {
-                className: v.pc,
+                className: j.pc,
                 style: {
                     top: eb.value.to(e => -e * S / 2)
                 },
@@ -183,53 +183,53 @@ function I(e) {
                     style: {
                         width: eA.value
                     },
-                    className: v.tN,
+                    className: j.tN,
                     children: (0, r.jsx)("div", {
-                        className: j.xS,
+                        className: x.xS,
                         style: {
                             aspectRatio: eo
                         },
-                        children: e_((e, t, n) => {
+                        children: eO((e, t, n) => {
                             let {
                                 key: l
                             } = n;
                             return null != t ? (0, r.jsx)(a.animated.div, {
-                                className: j.qX,
+                                className: x.qX,
                                 style: e,
                                 children: (0, r.jsx)(m.Ay, {
                                     focused: !0,
                                     noBorder: eu >= G || ec >= U,
                                     channel: D,
-                                    className: j.JS,
-                                    videoComponent: F,
+                                    className: x.JS,
+                                    videoComponent: H,
                                     width: G,
                                     participant: t,
                                     onClick: i,
                                     onDoubleClick: N,
                                     onContextMenu: I,
-                                    onVideoResize: eO,
+                                    onVideoResize: e_,
                                     inCall: R,
                                     popoutType: w,
-                                    controlsBottom: eh
+                                    controlsBottom: ep
                                 })
                             }, l) : null
                         })
                     })
                 }), el ? (0, r.jsx)(a.animated.div, {
-                    className: s()(v.$l, {
-                        [v.N7]: V
+                    className: s()(j.$l, {
+                        [j.N7]: B
                     }),
                     style: {
                         bottom: ey.value
                     },
                     children: (0, r.jsx)(d.A, {
                         channelId: D.id,
-                        isParticipantsOpen: L,
+                        isParticipantsOpen: M,
                         isVertical: !0
                     })
                 }) : null]
             }), (0, r.jsx)(a.animated.div, {
-                className: v.Vx,
+                className: j.Vx,
                 style: {
                     translateY: em.value.to(e => e * S / 2),
                     opacity: em.value,
@@ -240,20 +240,20 @@ function I(e) {
                     onClick: i,
                     onContextMenu: I,
                     onDoubleClick: N,
-                    participants: ev,
-                    participantTileWidth: ex,
-                    selectedParticipantId: M.id,
+                    participants: ej,
+                    participantTileWidth: ev,
+                    selectedParticipantId: L.id,
                     inCall: R,
                     popoutType: w,
-                    paused: X || !L
+                    paused: X || !M
                 })
             })]
-        }), ej.length > 0 ? (0, r.jsx)(b.A, {
+        }), ex.length > 0 ? (0, r.jsx)(b.A, {
             onContextMenuParticipant: I,
             width: G,
             height: U,
             channel: D,
-            participants: ej,
+            participants: ex,
             onSelectParticipant: i
         }) : null]
     })

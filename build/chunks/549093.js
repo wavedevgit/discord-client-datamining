@@ -1,30 +1,30 @@
-/** Chunk was on 28979 **/
-/** chunk id: 549093, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 549093, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     q: () => o
 });
 var n = i(873298),
     l = i(815807),
     s = i(419954),
     r = i(253932),
-    u = i(780964),
-    a = i(985018);
-let o = (0, s.Hn)(u.X.REACTION_NOTIFICATIONS, {
-    useTitle: () => a.intl.string(a.t.Wxj9Hp),
+    a = i(780964),
+    u = i(985018);
+let o = (0, s.Hn)(a.X.REACTION_NOTIFICATIONS, {
+    useTitle: () => u.intl.string(u.t.Wxj9Hp),
     useOptions: () => [{
         id: "enabled",
-        label: a.intl.string(a.t["9x/RtT"]),
+        label: u.intl.string(u.t["9x/RtT"]),
         value: n.Tz.NOTIFICATIONS_ENABLED
     }, {
         id: "only_dms",
-        label: a.intl.string(a.t.fJAbQd),
+        label: u.intl.string(u.t.fJAbQd),
         value: n.Tz.ONLY_DMS
     }, {
         id: "disabled",
-        label: a.intl.string(a.t["xu+UDU"]),
+        label: u.intl.string(u.t["xu+UDU"]),
         value: n.Tz.NOTIFICATIONS_DISABLED
     }],
     useValue: r.Zp.useSetting,
-    setValue: t => (0, l.n4)(t, r.Zp.getSetting()),
+    setValue: e => (0, l.n4)(e, r.Zp.getSetting()),
     fieldLayout: "horizontal-responsive"
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 778768, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     w: () => T
@@ -12,19 +12,19 @@ var r = n(627968),
     c = n(110259),
     u = n(417597),
     d = n(397927),
-    p = n(846293),
-    h = n(774300),
-    f = n(793574),
-    g = n(688810),
+    h = n(846293),
+    p = n(774300),
+    g = n(793574),
+    f = n(688810),
     m = n(139286),
     b = n(854627),
     A = n(696451),
     y = n(71393),
-    _ = n(958590),
-    O = n(576705),
-    j = n(427262),
-    v = n(582904),
-    x = n(652215),
+    O = n(958590),
+    _ = n(576705),
+    x = n(427262),
+    j = n(582904),
+    v = n(652215),
     E = n(985018),
     C = n(357694),
     S = n(248789);
@@ -55,11 +55,11 @@ function T(e) {
         onHoverOrFocus: i,
         setPopoutRef: a,
         closePopout: u
-    } = e, p = l.useRef(null), h = (0, v.L7)(p), b = (0, v.kt)({
+    } = e, h = l.useRef(null), p = (0, j.L7)(h), b = (0, j.kt)({
         channel: t
     }), {
         analyticsLocations: A
-    } = (0, g.Ay)(f.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
+    } = (0, f.Ay)(g.A.VOICE_INVITE_SUGGESTIONS_POPOVER);
     (0, m.A)({
         name: c.ImpressionNames.VOICE_INVITE_SUGGESTIONS_POPOVER,
         type: c.ImpressionTypes.POPOUT,
@@ -69,11 +69,11 @@ function T(e) {
             location_stack: A
         }
     }), l.useEffect(() => {
-        null == a || a(p.current)
+        null == a || a(h.current)
     }, [a]), l.useEffect(() => {
-        null == i || i(h.isHoveringOrFocusing)
-    }, [i, h]);
-    let _ = l.useCallback(() => {
+        null == i || i(p.isHoveringOrFocusing)
+    }, [i, p]);
+    let O = l.useCallback(() => {
         let e = y.A.getGuild(t.guild_id);
         o()(null != e, "VoiceInviteSuggestionsPopover must be used in context of a guild"), (0, d.mMO)(async () => {
             let {
@@ -84,7 +84,7 @@ function T(e) {
                 return (0, r.jsx)(l, (i = I({}, n), s = s = {
                     guild: e,
                     channel: t,
-                    source: x.PE1.VOICE_INVITE_SUGGESTIONS
+                    source: v.PE1.VOICE_INVITE_SUGGESTIONS
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -99,7 +99,7 @@ function T(e) {
         }), u()
     }, [t, u]);
     return (0, r.jsx)("div", {
-        ref: p,
+        ref: h,
         "aria-label": E.intl.string(E.t.o53CL2),
         className: s()(S.popover, C.oO),
         children: (0, r.jsx)("div", {
@@ -111,7 +111,7 @@ function T(e) {
                     user: e
                 }, e.id)), (0, r.jsxs)(d.DUT, {
                     tag: "li",
-                    onClick: _,
+                    onClick: O,
                     className: s()(C.nM, C.vk),
                     children: [(0, r.jsx)("div", {
                         className: C.R4,
@@ -137,36 +137,36 @@ function P(e) {
         user: n
     } = e, i = l.useRef(null), a = (0, u.bG)([A.Ay], () => A.Ay.getMember(t.guild_id, n.id), [t.guild_id, n.id]), {
         isHoveringOrFocusing: o
-    } = (0, v.L7)(i), [c, f] = l.useState(null), g = "success" === c || "sending" === c, m = l.useCallback(async () => {
-        if (g) return;
+    } = (0, j.L7)(i), [c, g] = l.useState(null), f = "success" === c || "sending" === c, m = l.useCallback(async () => {
+        if (f) return;
         async function e() {
             var e, n, r;
-            let l = null != (e = _.A.getInvite(t.id, {})) ? e : null;
+            let l = null != (e = O.A.getInvite(t.id, {})) ? e : null;
             if (null == l) {
-                if (!O.A.can(x.xBc.CREATE_INSTANT_INVITE, t)) return null;
+                if (!_.A.can(v.xBc.CREATE_INSTANT_INVITE, t)) return null;
                 try {
-                    await p.Ay.createInvite(t.id, {}, N)
+                    await h.Ay.createInvite(t.id, {}, N)
                 } catch (e) {
                     return null
                 }
-                l = null != (r = _.A.getInvite(t.id, {})) ? r : null
+                l = null != (r = O.A.getInvite(t.id, {})) ? r : null
             }
             return null != (n = null == l ? void 0 : l.code) ? n : null
         }
-        f("sending");
+        g("sending");
         let r = await e();
-        null == r ? f(null) : h.A.enqueue({
-            type: h.F.USER,
+        null == r ? g(null) : p.A.enqueue({
+            type: p.F.USER,
             user: n,
             inviteKey: r,
             location: N,
             inviteAnalyticsMetadata: {
-                source: x.PE1.VOICE_INVITE_SUGGESTIONS
+                source: v.PE1.VOICE_INVITE_SUGGESTIONS
             }
         }, e => {
-            f(e ? "success" : null)
+            g(e ? "success" : null)
         })
-    }, [g, n, t]), {
+    }, [f, n, t]), {
         avatarDecorationSrc: y,
         avatarSrc: S,
         eventHandlers: T
@@ -177,15 +177,15 @@ function P(e) {
         guildId: t.guild_id
     });
     if (null == a) return null;
-    let P = j.Ay.getName(n),
+    let P = x.Ay.getName(n),
         w = E.intl.string(E.t.jYnGPG);
     return (0, r.jsxs)(d.DUT, {
         innerRef: i,
         tag: "li",
         className: s()(C.nM, {
-            [C.vk]: !g
+            [C.vk]: !f
         }),
-        "aria-disabled": g,
+        "aria-disabled": f,
         onClick: m,
         "aria-label": w,
         children: [(0, r.jsx)(d.euF, I({

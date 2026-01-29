@@ -1,13 +1,13 @@
-/** Chunk was on 28979 **/
-/** chunk id: 354093, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    L: () => u
+/** Chunk was on 4670 **/
+/** chunk id: 354093, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    L: () => a
 });
 var n = i(419954),
     l = i(780964),
     s = i(299116),
     r = i(985018);
-let u = (0, n.E2)(l.X.ACCOUNT_CHANGE_PASSWORD_SETTING, {
+let a = (0, n.E2)(l.X.ACCOUNT_CHANGE_PASSWORD_SETTING, {
     useSearchTerms: () => [r.intl.string(r.t["FRep5/"])],
     Component: s.A
 })

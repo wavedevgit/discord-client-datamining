@@ -1,56 +1,56 @@
-/** Chunk was on 28979 **/
-/** chunk id: 31760, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    J: () => C,
-    q: () => N
+/** Chunk was on 4670 **/
+/** chunk id: 31760, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    J: () => N,
+    q: () => C
 }), i(228524), i(896048), i(747238);
 var n = i(627968),
     l = i(64700),
     s = i(397927),
     r = i(419954),
-    u = i(933297),
-    a = i(780964),
+    a = i(933297),
+    u = i(780964),
     o = i(143177),
-    T = i(350017),
-    d = i(819188),
-    A = i(231137),
-    S = i(151098),
-    E = i(716005),
-    g = i(144010),
-    _ = i(175631),
-    c = i(430443),
+    d = i(350017),
+    T = i(819188),
+    c = i(231137),
+    A = i(151098),
+    S = i(716005),
+    _ = i(144010),
+    E = i(175631),
+    g = i(430443),
     I = i(997442),
     O = i(985018);
 
-function N(t) {
+function C(e) {
     let {
-        label: e,
+        label: t,
         description: i,
         placeholder: r,
-        overrideId: u,
-        setOverride: a,
+        overrideId: a,
+        setOverride: u,
         fetchOverride: o
-    } = t, [T, d] = l.useState(null != u ? u : ""), A = l.useRef(null), [S, E] = l.useState(0), g = () => {
-        null != A.current && (clearTimeout(A.current), A.current = null)
+    } = e, [d, T] = l.useState(null != a ? a : ""), c = l.useRef(null), [A, S] = l.useState(0), _ = () => {
+        null != c.current && (clearTimeout(c.current), c.current = null)
     };
-    return l.useEffect(() => g, []), (0, n.jsx)(s.D0$, {
+    return l.useEffect(() => _, []), (0, n.jsx)(s.D0$, {
         layout: "horizontal-responsive",
-        label: e,
+        label: t,
         description: i,
         children: (0, n.jsx)(s.ksK, {
             placeholder: r,
-            error: 2 === S ? "Failed to fetch override" : void 0,
-            successMessage: 3 === S ? "Override applied" : void 0,
-            value: T,
-            onChange: t => {
-                if (!(t.length > 0) || /^[0-9]+$/.test(t)) {
-                    if (d(t), g(), 0 === t.length) {
-                        E(0), a(null);
+            error: 2 === A ? "Failed to fetch override" : void 0,
+            successMessage: 3 === A ? "Override applied" : void 0,
+            value: d,
+            onChange: e => {
+                if (!(e.length > 0) || /^[0-9]+$/.test(e)) {
+                    if (T(e), _(), 0 === e.length) {
+                        S(0), u(null);
                         return
                     }
-                    A.current = setTimeout(() => {
-                        E(1), o(t).then(e => {
-                            E(null == e ? 2 : 3), null != e && a(t)
+                    c.current = setTimeout(() => {
+                        S(1), o(e).then(t => {
+                            S(null == t ? 2 : 3), null != t && u(e)
                         })
                     }, 500)
                 }
@@ -59,11 +59,11 @@ function N(t) {
         })
     })
 }
-let C = (0, r.zZ)(a.X.DEV_OVERRIDES, {
+let N = (0, r.zZ)(u.X.DEV_OVERRIDES, {
     useTitle: () => "Overrides",
-    buildLayout: () => [c.U, I.l, d.B, A.q, E.g, o.Y, _.s, S.t, g.T, T.s],
+    buildLayout: () => [g.U, I.l, T.B, c.q, S.g, o.Y, E.s, A.t, _.T, d.s],
     useInlineNotice: () => ({
-        type: u.W.INLINE_NOTICE,
+        type: a.W.INLINE_NOTICE,
         noticeType: "info",
         useText: () => O.intl.format(O.t.UeZJlg, {
             link: "https://i.dis.gd/dev-settings-changes"

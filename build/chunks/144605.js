@@ -1,23 +1,23 @@
-/** Chunk was on 28979 **/
-/** chunk id: 144605, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    q: () => T
+/** Chunk was on 14782 **/
+/** chunk id: 144605, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    q: () => o
 });
-var n = i(627968);
-i(64700);
-var l = i(503698),
-    s = i.n(l),
-    r = i(827734),
-    u = i(777666),
-    a = i(985018),
-    o = i(512897);
-let T = t => {
+var a = n(627968);
+n(64700);
+var i = n(503698),
+    l = n.n(i),
+    s = n(827734),
+    r = n(777666),
+    c = n(985018),
+    d = n(512897);
+let o = t => {
     let {
         className: e = ""
     } = t;
-    return (0, n.jsx)(u.Lp, {
-        text: a.intl.string(a.t.oW0eUd),
-        className: s()(o.a, e),
-        color: r.A.colors.BADGE_EXPRESSIVE_BACKGROUND_DEFAULT.css
+    return (0, a.jsx)(r.Lp, {
+        text: c.intl.string(c.t.oW0eUd),
+        className: l()(d.a, e),
+        color: s.A.colors.BADGE_EXPRESSIVE_BACKGROUND_DEFAULT.css
     })
 }

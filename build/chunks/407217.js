@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 407217, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     K: () => m,
@@ -14,9 +14,9 @@ var i = n(397927),
     c = n(788868),
     d = n(652215),
     u = n(985018),
-    p = n(698290);
+    _ = n(698290);
 
-function _(e) {
+function p(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -44,7 +44,7 @@ function m(e) {
         let {
             default: e
         } = await Promise.resolve().then(n.bind(n, 407217));
-        return n => (0, r.jsx)(e, _({
+        return n => (0, r.jsx)(e, p({
             user: a,
             analyticsSource: t,
             analyticsLocation: {
@@ -77,9 +77,9 @@ function g(e) {
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
     }(e, ["user", "onClose"]);
-    return (0, r.jsx)(o.A, _({
-        modalClassName: p.yl,
-        modalContentClassName: p.jE,
+    return (0, r.jsx)(o.A, p({
+        modalClassName: _.yl,
+        modalContentClassName: _.jE,
         type: c.e.TRY_IT_OUT_MODAL_UPSELL,
         title: u.intl.string(u.t.reVc0M),
         body: u.intl.string(u.t.KckEj7),
@@ -93,9 +93,9 @@ function g(e) {
         hideBackButton: !0,
         showEnhancedUpsell: !0,
         LeadingComponent: (0, r.jsx)("div", {
-            className: p.wC,
+            className: _.wC,
             children: (0, r.jsx)(l.A, {
-                containerClassName: p.i1,
+                containerClassName: _.i1,
                 user: t,
                 disabledInputs: !0
             })

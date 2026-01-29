@@ -1,19 +1,19 @@
-/** Chunk was on 28979 **/
-/** chunk id: 379897, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    j: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 379897, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    j: () => d
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(652525),
-    u = i(419954),
-    a = i(780964),
+    a = i(419954),
+    u = i(780964),
     o = i(985018);
-let T = (0, u.zD)(a.X.ENABLE_CUSTOM_CURSOR, {
+let d = (0, a.zD)(u.X.ENABLE_CUSTOM_CURSOR, {
     useTitle: () => o.intl.string(o.t["+Isihb"]),
     useSubtitle: () => o.intl.string(o.t.nNZ1Tz),
     useValue: () => (0, n.bG)([s.A], () => s.A.enableCustomCursor),
-    setValue: t => (0, l.ts)(t),
+    setValue: e => (0, l.ts)(e),
     usePredicate: () => (0, r.t)("EnableCustomCursorSetting")
 })

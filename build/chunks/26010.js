@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 26010, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ct: () => g,
-    oO: () => f
+    oO: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -13,9 +13,9 @@ var r = n(627968),
     c = n(964003),
     d = n(985018),
     u = n(157895),
-    p = n(847652);
+    _ = n(847652);
 
-function _(e) {
+function p(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -43,17 +43,17 @@ function m(e) {
         isReducedMotion: d,
         includeSideGradient: m = !1,
         startLeftAligned: g = !1,
-        enablePremiumBrandRefreshDesign: f
-    } = e, b = f ? p : u;
+        enablePremiumBrandRefreshDesign: A
+    } = e, f = A ? _ : u;
     return (0, r.jsxs)("div", {
-        className: s()(b.boxBackdrop, t),
+        className: s()(f.boxBackdrop, t),
         children: [(0, r.jsx)(a.Heading, {
-            className: b.bentoSectionHeader,
+            className: f.bentoSectionHeader,
             variant: "display-md",
             color: "text-strong",
             children: i
         }), (0, r.jsx)("div", {
-            className: b.bentoBoxesGrid,
+            className: f.bentoBoxesGrid,
             children: n.map((e, t) => {
                 let n;
                 switch (e.length) {
@@ -69,7 +69,7 @@ function m(e) {
                 return (0, r.jsx)(r.Fragment, {
                     children: e.map(e => {
                         var i, s;
-                        return (0, r.jsx)(c.A, (i = _({
+                        return (0, r.jsx)(c.A, (i = p({
                             index: t + +!!g
                         }, e), s = s = {
                             size: n,
@@ -97,17 +97,17 @@ let g = i.memo(function(e) {
         let {
             whatsNewBoxes: t
         } = (0, o.Ay)();
-        return (0, r.jsx)(m, _({
+        return (0, r.jsx)(m, p({
             boxLayout: t,
             title: d.intl.string(d.t.LRmNAl),
             startLeftAligned: e.enablePremiumBrandRefreshDesign
         }, e))
     }),
-    f = i.memo(function(e) {
+    A = i.memo(function(e) {
         let {
             bestOfBoxes: t
         } = (0, o.Ay)();
-        return (0, r.jsx)(m, _({
+        return (0, r.jsx)(m, p({
             boxLayout: t,
             title: d.intl.string(d.t.EnzW2H),
             includeSideGradient: !e.enablePremiumBrandRefreshDesign,

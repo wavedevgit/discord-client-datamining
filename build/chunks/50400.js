@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 50400, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => k
@@ -11,19 +11,19 @@ var r, l = n(627968),
     c = n(397927),
     u = n(442433),
     d = n(313961),
-    p = n(571694),
-    h = n(47167),
-    f = n(598104),
-    g = n(616356),
+    h = n(571694),
+    p = n(47167),
+    g = n(598104),
+    f = n(616356),
     m = n(383501),
     b = n(222823),
     A = n(309010),
     y = n(287809),
-    _ = n(607567),
-    O = n(531685),
-    j = n(967978),
-    v = n(941971),
-    x = n(375855),
+    O = n(607567),
+    _ = n(531685),
+    x = n(967978),
+    j = n(941971),
+    v = n(375855),
     E = n(900848),
     C = n(550591),
     S = n(65611),
@@ -70,7 +70,7 @@ let D = {
     tension: 600
 };
 
-function M(e) {
+function L(e) {
     switch (e) {
         case "height":
         case "opacity":
@@ -83,17 +83,17 @@ function M(e) {
             throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
     }
 }
-class L extends(r = i.PureComponent) {
+class M extends(r = i.PureComponent) {
     componentWillEnter(e) {
         let {
             controller: t
         } = this.state;
         e(), t.update({
-            immediate: !O.A.isFocused(),
+            immediate: !_.A.isFocused(),
             height: 1,
             opacity: 1,
             scale: 1,
-            config: M
+            config: L
         }).start().then(() => this.setState({
             animating: !1
         }))
@@ -107,7 +107,7 @@ class L extends(r = i.PureComponent) {
             scale: 1,
             opacity: 1,
             height: 1,
-            config: M
+            config: L
         }).start().then(e)
     }
     componentWillLeave(e) {
@@ -117,11 +117,11 @@ class L extends(r = i.PureComponent) {
         this.setState({
             animating: !0
         }, () => t.update({
-            immediate: !O.A.isFocused(),
+            immediate: !_.A.isFocused(),
             height: 0,
             opacity: 0,
             scale: 0,
-            config: M
+            config: L
         }).start().then(e))
     }
     componentWillUnmount() {
@@ -147,7 +147,7 @@ class L extends(r = i.PureComponent) {
         let {
             channel: e
         } = this.props, t = e.type === I.rbe.DM ? y.default.getUser(e.getRecipientId()) : null;
-        return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, p.Y)(e)
+        return null != t ? t.getAvatarURL(void 0, 48, !1) : (0, h.Y)(e)
     }
     render() {
         let {
@@ -160,10 +160,10 @@ class L extends(r = i.PureComponent) {
             stream: o,
             isCurrentUserInThisDMCall: u,
             unread: d,
-            treeItemProps: p,
-            statusIndicatorsEnabled: h
+            treeItemProps: h,
+            statusIndicatorsEnabled: p
         } = this.props, {
-            hovered: g,
+            hovered: f,
             animating: m
         } = this.state, b = e.isMultiUserDM() && null == e.icon, A = () => (0, l.jsx)(c.jlP, w({
             to: I.BVt.CHANNEL(I.ME, e.id),
@@ -173,7 +173,7 @@ class L extends(r = i.PureComponent) {
             onMouseLeave: () => this.setState({
                 hovered: !1
             }),
-            selected: n || g,
+            selected: n || f,
             ariaLabel: null != t ? N.intl.formatToPlainString(N.t.hKarnZ, {
                 mentions: r,
                 name: t
@@ -181,13 +181,13 @@ class L extends(r = i.PureComponent) {
             onContextMenu: this.handleContextMenu,
             icon: b ? void 0 : this.getChannelIcon(),
             backgroundStyle: b ? "on-hover" : "always",
-            children: b ? (0, l.jsx)(f.A, {
+            children: b ? (0, l.jsx)(g.A, {
                 channel: e,
                 size: c._3J.SIZE_40,
                 facepileSizeOverride: c._3J.SIZE_32,
                 "aria-hidden": !0
             }) : void 0
-        }, p)), y = (0, l.jsx)(c.Qk9, {
+        }, h)), y = (0, l.jsx)(c.Qk9, {
             rounded: !0,
             selected: !1,
             lowerBadge: r > 0 ? (0, S.wN)(r, void 0, !0) : null,
@@ -201,7 +201,7 @@ class L extends(r = i.PureComponent) {
                 width: (0, c.o6S)(r)
             },
             children: A()
-        }), _ = h ? (0, l.jsx)(x.A, {
+        }), O = p ? (0, l.jsx)(v.A, {
             channel: e,
             children: y
         }) : (0, l.jsx)(C.A, {
@@ -212,12 +212,12 @@ class L extends(r = i.PureComponent) {
         return (0, l.jsx)(s.animated.div, {
             style: this.getAnimatedStyle(),
             children: (0, l.jsxs)(E.c, {
-                children: [(0, l.jsx)(v.A, {
-                    hovered: !m && g,
+                children: [(0, l.jsx)(j.A, {
+                    hovered: !m && f,
                     selected: !m && n,
                     unread: !m && d,
                     className: T.I
-                }), _]
+                }), O]
             })
         })
     }
@@ -229,7 +229,7 @@ class L extends(r = i.PureComponent) {
                 scale: 0,
                 height: 0,
                 opacity: 0,
-                config: M
+                config: L
             })
         }), P(this, "handleContextMenu", e => {
             let {
@@ -255,7 +255,7 @@ class L extends(r = i.PureComponent) {
         })
     }
 }
-P(L, "defaultProps", {
+P(M, "defaultProps", {
     badge: 0,
     audio: !1,
     video: !1,
@@ -263,36 +263,36 @@ P(L, "defaultProps", {
 });
 let k = i.forwardRef(function(e, t) {
     let n = e.channel.id,
-        r = (0, h.Ay)(e.channel),
+        r = (0, p.Ay)(e.channel),
         i = (0, a.Vd)(n, 2),
         s = (0, o.bG)([m.A], () => m.A.getChannelId(), []),
         u = (0, o.bG)([d.A], () => d.A.getMode(n), [n]),
-        p = (0, o.bG)([g.A], () => g.A.getAllApplicationStreamsForChannel(n).length > 0),
-        f = (0, o.bG)([_.Ay], () => _.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
+        h = (0, o.bG)([f.A], () => f.A.getAllApplicationStreamsForChannel(n).length > 0),
+        g = (0, o.bG)([O.Ay], () => O.Ay.getVoiceStatesForChannel(e.channel).length > 0, [e.channel]),
         y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
-        O = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
+        _ = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
         {
-            enabled: v
-        } = (0, j.r)({
+            enabled: j
+        } = (0, x.r)({
             location: "DirectMessage"
         }),
-        x = s === n,
+        v = s === n,
         E = !1,
         C = !1;
-    (x || v && f) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
+    (v || j && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
     let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
-    return (0, l.jsx)(L, R(w({}, e), {
+    return (0, l.jsx)(M, R(w({}, e), {
         ref: t,
         channelName: r,
-        unread: O > 0,
+        unread: _ > 0,
         selected: y === n,
-        badge: O,
+        badge: _,
         audio: E,
         video: C,
-        stream: p,
-        isCurrentUserInThisDMCall: x,
+        stream: h,
+        isCurrentUserInThisDMCall: v,
         size: S,
         treeItemProps: i,
-        statusIndicatorsEnabled: v
+        statusIndicatorsEnabled: j
     }))
 })

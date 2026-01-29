@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 565265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => O
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -12,10 +12,10 @@ var r = n(627968),
     c = n(442433),
     u = n(46054),
     d = n(742589),
-    p = n(652215),
-    h = n(985018),
-    f = n(980017),
-    g = n(206314);
+    h = n(652215),
+    p = n(985018),
+    g = n(980017),
+    f = n(206314);
 
 function m(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ class y extends l.Component {
         let t = null != e.topic && e.topic.length > 0;
         return null != e.linkedLobby || t ? (0, r.jsxs)(l.Fragment, {
             children: [(0, r.jsx)(d.A.Divider, {}), (0, r.jsxs)("div", {
-                className: s()(f.At, f.lu, g.PT),
+                className: s()(g.At, g.lu, f.PT),
                 onMouseDown: this.onMouseDown,
                 onMouseMove: this.onMouseMove,
                 onMouseUp: this.onMouseUp,
@@ -59,11 +59,11 @@ class y extends l.Component {
                 onClick: this.handleClick,
                 children: [(0, r.jsx)(o.DUT, {
                     onClick: this.handleClick,
-                    "aria-label": h.intl.string(h.t.mKwsSp),
-                    className: f.h8
+                    "aria-label": p.intl.string(p.t.mKwsSp),
+                    className: g.h8
                 }), null == e.linkedLobby || t ? u.A.parseTopic(e.topic, !0, {
                     channelId: e.id
-                }) : h.intl.string(h.t["XJVlf/"])]
+                }) : p.intl.string(p.t["XJVlf/"])]
             })]
         }) : null
     }
@@ -85,7 +85,7 @@ class y extends l.Component {
         }), m(this, "onMouseMove", () => {
             this._mouseDown && (this._mouseDown = !1)
         }), m(this, "onMouseUp", e => {
-            this._mouseDown && e.button !== p.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = !0, this._mouseDown = !1
+            this._mouseDown && e.button !== h.hE4.SECONDARY && this.handleOpenTopic(e), this._mouseUp = !0, this._mouseDown = !1
         }), m(this, "handleContextMenu", e => {
             let {
                 channel: t,
@@ -122,4 +122,4 @@ class y extends l.Component {
         })
     }
 }
-let _ = y
+let O = y

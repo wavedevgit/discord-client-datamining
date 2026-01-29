@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 573956, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    G: () => v
+    G: () => j
 });
 var r = n(627968),
     l = n(64700),
@@ -12,31 +12,31 @@ var r = n(627968),
     c = n(442433),
     u = n(826673),
     d = n(591552),
-    p = n(202776),
-    h = n(454058),
-    f = n(976860),
-    g = n(222823),
+    h = n(202776),
+    p = n(454058),
+    g = n(976860),
+    f = n(222823),
     m = n(661191),
     b = n(32603),
     A = n(652793),
     y = n(652215),
-    _ = n(746080),
-    O = n(790782),
-    j = n(985018);
+    O = n(746080),
+    _ = n(790782),
+    x = n(985018);
 
-function v(e) {
+function j(e) {
     let {
         guild: t,
-        selected: v
-    } = e, x = (0, p.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([h.A], () => Array.from(h.A.getNewChannelIds(t.id)).filter(e => h.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([g.Ay], () => g.Ay.hasUnread(t.id, O.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, g.Ay], () => {
+        selected: j
+    } = e, v = (0, h.A)(t), E = (0, u.JZ)(s.M.CHANNEL_BROWSER_NEW_BADGE_NUX), C = (0, i.yK)([p.A], () => Array.from(p.A.getNewChannelIds(t.id)).filter(e => p.A.shouldIndicateNewChannel(t.id, e))), S = (0, i.bG)([f.Ay], () => f.Ay.hasUnread(t.id, _.P.GUILD_ONBOARDING_QUESTION)), I = C.length > b.rR, N = (0, i.bG)([d.A, f.Ay], () => {
         let e = d.A.lastFetchedAt(t.id),
-            n = g.Ay.lastMessageId(t.id, O.P.GUILD_ONBOARDING_QUESTION);
+            n = f.Ay.lastMessageId(t.id, _.P.GUILD_ONBOARDING_QUESTION);
         if (null == n) return !1;
         let r = m.default.extractTimestamp(n);
         return null != e && e > r
     }), T = l.useCallback(() => {
-        (0, f.pX)(y.BVt.CHANNEL(t.id, x ? _.VV.CUSTOMIZE_COMMUNITY : _.VV.CHANNEL_BROWSER))
-    }, [t.id, x]), P = l.useCallback(e => {
+        (0, g.pX)(y.BVt.CHANNEL(t.id, v ? O.VV.CUSTOMIZE_COMMUNITY : O.VV.CHANNEL_BROWSER))
+    }, [t.id, v]), P = l.useCallback(e => {
         (0, c.L3)(e, async () => {
             let {
                 default: e
@@ -75,9 +75,9 @@ function v(e) {
             }
         })
     }, [t]), w = null;
-    return E && !S && !I || v || N || (w = (0, r.jsx)(o.LpS, {
+    return E && !S && !I || j || N || (w = (0, r.jsx)(o.LpS, {
         color: a.A.colors.BADGE_BACKGROUND_BRAND.css,
-        text: j.intl.string(j.t.y2b7CA)
+        text: x.intl.string(x.t.y2b7CA)
     })), (0, r.jsx)(A.G, {
         id: "channels-".concat(t.id),
         renderIcon: e => (0, r.jsx)(o.kiI, {
@@ -85,8 +85,8 @@ function v(e) {
             color: "currentColor",
             className: e
         }),
-        text: x ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
-        selected: v,
+        text: v ? x.intl.string(x.t.h9mGOP) : x.intl.string(x.t.et6wav),
+        selected: j,
         onClick: T,
         onContextMenu: P,
         trailing: w

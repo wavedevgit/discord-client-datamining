@@ -1,4 +1,4 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 748319, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => e6,
@@ -53,8 +53,8 @@ var a = n(627968),
     Y = n(967054),
     J = n(226540),
     X = n(227),
-    $ = n(772786),
-    Z = n(134991),
+    Z = n(772786),
+    $ = n(134991),
     ee = n(967370),
     et = n(535731),
     en = n(201805),
@@ -139,9 +139,9 @@ function eQ(e, t) {
 let eY = eR.Ay.getEnableHardwareAcceleration() ? h.JsQ : h.euF,
     eJ = 2.5 * ew.A.Millis.SECOND,
     eX = 2 * ew.A.Millis.MINUTE,
-    e$ = 5 * ew.A.Millis.SECOND;
+    eZ = 5 * ew.A.Millis.SECOND;
 
-function eZ(e) {
+function e$(e) {
     let {
         ref: t,
         speaking: n,
@@ -331,7 +331,7 @@ class e0 extends l.PureComponent {
             },
             onClick: n
         } = e;
-        return (0, a.jsx)(eZ, eQ(eq({}, this.props), {
+        return (0, a.jsx)(e$, eQ(eq({}, this.props), {
             ref: this.avatarWithPopoutRef,
             handleClick: n,
             handleMouseLeave: this.handleMouseLeave,
@@ -663,7 +663,7 @@ function e9(e) {
         a = l.useRef(new u.Ep),
         [r, i] = l.useState(!1);
     l.useEffect(() => {
-        t && n && (i(!0), a.current.start(e$, () => {
+        t && n && (i(!0), a.current.start(eZ, () => {
             i(!1)
         }))
     }, [t, n]);
@@ -731,7 +731,7 @@ function e6() {
         D = (0, c.bG)([I.A], () => I.A.isFullscreenInContext()),
         M = (0, c.bG)([ev.A], () => ev.A.hasLayers()),
         L = (0, h.red)(h.DXt) || M || eP.P.isDisallowPopupsSet() || D,
-        U = (0, $.g)(),
+        U = (0, Z.g)(),
         B = (0, c.bG)([H.default], () => null != H.default.getAwaitingRemoteSessionInfo()),
         G = (0, c.bG)([ey.A], () => ey.A.getGuildId()),
         F = null == t ? void 0 : t.avatarDecoration,
@@ -756,7 +756,7 @@ function e6() {
         } = (0, en.c9)({
             location: eV.rE.CONFLICT_CHECKS
         }),
-        Z = (0, c.bG)([ea.A, eO.default, eb.A], () => {
+        $ = (0, c.bG)([ea.A, eO.default, eb.A], () => {
             let e, t = ea.A.getSyncingWith(),
                 n = ea.A.getActivity(),
                 a = [];
@@ -823,7 +823,7 @@ function e6() {
             avatarDecoration: V,
             isQuestBarEmpty: J,
             hasLoadedQuestBar: X,
-            isListenAlongVisible: Z,
+            isListenAlongVisible: $,
             deviceChangedTooltipType: eE,
             onDismissDeviceChangedTooltip: () => eN(eE),
             shouldShowPTTJoinTooltip: eo,
@@ -873,7 +873,7 @@ function e7(e) {
             })
         }, _.events), {
             plated: null != m
-        })), (0, a.jsx)(Z.V, {
+        })), (0, a.jsx)($.V, {
             targetElementRef: x,
             shouldShow: g,
             onDismiss: () => f(!1)

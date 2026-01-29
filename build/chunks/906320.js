@@ -533,7 +533,7 @@ let q = () => (0, r.jsx)(B, {
             })
         }
     }];
-class J extends i.PureComponent {
+class $ extends i.PureComponent {
     componentDidMount() {
         window.addEventListener("resize", this.throttledUpdateHeight)
     }
@@ -644,7 +644,7 @@ class J extends i.PureComponent {
     }
 }
 
-function $(e, t, n, r) {
+function J(e, t, n, r) {
     return e.reduce((e, i, l) => {
         let {
             applicationId: a,
@@ -663,8 +663,8 @@ function $(e, t, n, r) {
     }, [])
 }
 let ee = (0, E.A)(c.Ay.connectStores([O.A, T.A, j.A, C.A, x.A], () => ({
-    applications: [...$(j.A.activeItems, !1, O.A, T.A), ...$(j.A.finishedItems, !0, O.A, T.A)],
+    applications: [...J(j.A.activeItems, !1, O.A, T.A), ...J(j.A.finishedItems, !0, O.A, T.A)],
     paused: j.A.paused,
     isFocused: x.A.isFocused(),
     theme: C.A.theme
-}))((0, b.A)(J)))
+}))((0, b.A)($)))

@@ -1,7 +1,7 @@
-/** Chunk was on 65298 **/
+/** Chunk was on 87557 **/
 /** chunk id: 742860, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => Z
+    A: () => $
 }), n(896048), n(228524), n(801541);
 var a = n(627968),
     l = n(64700),
@@ -328,7 +328,7 @@ function X(e) {
         })]
     })
 }
-async function $(e, t, n, a) {
+async function Z(e, t, n, a) {
     (0, T.vv)(e) ? await (0, P.e0)(e, {
         questContent: t,
         questContentCTA: n,
@@ -344,7 +344,7 @@ async function $(e, t, n, a) {
         sourceQuestContent: a
     })
 }
-let Z = l.forwardRef(function(e, t) {
+let $ = l.forwardRef(function(e, t) {
     var n;
     let {
         children: r,
@@ -361,7 +361,7 @@ let Z = l.forwardRef(function(e, t) {
         launchInGameActivity: x
     } = (0, A.zW)(p), g = (0, E.vA)(p), f = l.useCallback(async () => {
         let e = g ? S.Cy.START_QUEST : S.Cy.ACCEPT_QUEST;
-        await $(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
+        await Z(p, v.uF.QUEST_BAR_V2, e, v.uF.QUEST_BAR_V2), g && x()
     }, [p, x, g]), b = (null == (n = p.userStatus) ? void 0 : n.enrolledAt) != null, j = u && m;
     return (0, a.jsxs)(s.animated.div, {
         "aria-hidden": !j,

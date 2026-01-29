@@ -1,17 +1,17 @@
-/** Chunk was on 28979 **/
-/** chunk id: 802385, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 802385, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     Q: () => o
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    u = i(780964),
-    a = i(985018);
-let o = (0, r.zD)(u.X.HIGH_CONTRAST_MODE, {
-    useTitle: () => a.intl.string(a.t.aZlePv),
-    useSubtitle: () => a.intl.string(a.t["v2qF8+"]),
+    a = i(780964),
+    u = i(985018);
+let o = (0, r.zD)(a.X.HIGH_CONTRAST_MODE, {
+    useTitle: () => u.intl.string(u.t.aZlePv),
+    useSubtitle: () => u.intl.string(u.t["v2qF8+"]),
     useValue: () => (0, n.bG)([s.A], () => s.A.isHighContrastModeEnabled),
-    setValue: t => (0, l.uh)(t ? s._.HIGH : s._.DEFAULT)
+    setValue: e => (0, l.uh)(e ? s._.HIGH : s._.DEFAULT)
 })

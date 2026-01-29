@@ -1,7 +1,7 @@
-/** Chunk was on 28979 **/
-/** chunk id: 662128, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    D: () => u
+/** Chunk was on 4670 **/
+/** chunk id: 662128, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    D: () => a
 });
 var n = i(419954),
     l = i(780964),
@@ -11,6 +11,6 @@ let r = (0, n.AK)(l.X.VOICE_AND_VIDEO_TO_NOTIFICATION_SOUNDS_NAVIGATOR, {
         useSearchTerms: () => [s.intl.string(s.t.eyGEE4)],
         destinationKey: l.X.NOTIFICATIONS_SOUNDS_CATEGORY
     }),
-    u = (0, n.gN)(l.X.VOICE_AND_VIDEO_SOUNDS_RELATED_SETTINGS, {
+    a = (0, n.gN)(l.X.VOICE_AND_VIDEO_SOUNDS_RELATED_SETTINGS, {
         buildLayout: () => [r]
     })

@@ -1,50 +1,50 @@
 /** Chunk was on 9407 **/
-/** chunk id: 956450, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    default: () => p
+/** chunk id: 956450, original params: E,_,I (module,exports,require) **/
+I.d(_, {
+    default: () => n
 });
-var i = n(627968);
-n(64700);
-var l = n(397927),
-    a = n(780964),
-    r = n(840065),
-    o = n(257110),
-    s = n(706069),
-    c = n(652215),
-    d = n(531525),
-    u = n(524988);
-let p = e => {
+var A = I(627968);
+I(64700);
+var S = I(397927),
+    T = I(780964),
+    O = I(840065),
+    C = I(257110),
+    e = I(706069),
+    t = I(652215),
+    N = I(531525),
+    R = I(524988);
+let n = E => {
     let {
-        transitionState: t,
-        onClose: n,
-        classificationId: p,
-        source: m
-    } = e, h = (0, o.A)(), f = () => {
-        n(), (0, r.openUserSettings)(a.X.ACCOUNT_PANEL, {
-            section: c.nc_.ACCOUNT,
-            subsection: d.H.PRIVACY_AND_SAFETY_STANDING
+        transitionState: _,
+        onClose: I,
+        classificationId: n,
+        source: P
+    } = E, i = (0, C.A)(), L = () => {
+        I(), (0, O.openUserSettings)(T.X.ACCOUNT_PANEL, {
+            section: t.nc_.ACCOUNT,
+            subsection: N.H.PRIVACY_AND_SAFETY_STANDING
         })
     };
-    return (0, i.jsxs)(l.EOs, {
-        className: u.CR,
-        transitionState: t,
+    return (0, A.jsxs)(S.EOs, {
+        className: R.CR,
+        transitionState: _,
         parentComponent: "ClassificationDetailModal",
         "data-migration-pending": !0,
-        children: [(0, i.jsx)("div", {
-            className: u.Hc,
-            children: (0, i.jsx)(l.s_y, {
+        children: [(0, A.jsx)("div", {
+            className: R.Hc,
+            children: (0, A.jsx)(S.s_y, {
                 "data-migration-pending": !0,
-                className: u.g8,
-                onClick: n
+                className: R.g8,
+                onClick: I
             })
-        }), (0, i.jsx)(l.$mQ, {
+        }), (0, A.jsx)(S.$mQ, {
             "data-migration-pending": !0,
-            className: u.jE,
-            children: h ? (0, i.jsx)(l.y$y, {}) : (0, i.jsx)(s.A, {
-                classificationId: p,
-                source: m,
-                onError: f,
-                onClose: f
+            className: R.jE,
+            children: i ? (0, A.jsx)(S.y$y, {}) : (0, A.jsx)(e.A, {
+                classificationId: n,
+                source: P,
+                onError: L,
+                onClose: L
             })
         })]
     })

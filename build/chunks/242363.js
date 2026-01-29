@@ -2,7 +2,7 @@
 /** chunk id: 242363, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => A
+    A: () => m
 });
 var i = n(627968);
 n(64700);
@@ -14,8 +14,8 @@ var r = n(397927),
     c = n(9302),
     d = n(684748),
     u = n(672396),
-    h = n(985018),
-    p = n(821700);
+    p = n(985018),
+    h = n(821700);
 
 function f(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -51,47 +51,47 @@ function g(e, t) {
 
 function y() {
     return (0, i.jsx)("div", {
-        className: p.q,
+        className: h.q,
         children: (0, i.jsx)(r.Button, {
             variant: "active",
             size: "sm",
-            text: h.intl.string(h.t.U76Ft2),
+            text: p.intl.string(p.t.U76Ft2),
             fullWidth: !0
         })
     })
 }
 
-function A(e) {
+function m(e) {
     switch (e.type) {
         case u.Jr.GO_LIVE_VOICE: {
             let {
                 game: t,
-                voiceGuild: p
+                voiceGuild: h
             } = e, {
-                trackView: A,
-                trackClick: m
+                trackView: m,
+                trackClick: _
             } = (0, d.Y)(u.KS.GoLiveNudge, {
                 notif_type: u.KS.GoLiveNudge
             });
             return {
                 icon: n(334260),
                 title: null,
-                body: h.intl.formatToPlainString(h.t.z9znpa, {
+                body: p.intl.formatToPlainString(p.t.z9znpa, {
                     game: t.name,
-                    server: p.name
+                    server: h.name
                 }),
                 hint: () => (0, i.jsx)(y, {}),
                 renderFooter: () => (0, i.jsx)(y, {}),
                 onNotificationShow: () => {
-                    A()
+                    m()
                 },
                 onNotificationClick: (e, t) => {
-                    m("unlock");
+                    _("unlock");
                     let d = (0, c.getPID)();
                     s.A.updateNotificationStatus(t);
                     let u = o.default.isOverlayOOPEnabledForPid(d);
                     if (u ? s.A.setInputLocked(!1, d) : s.A.setInstanceLocked(!1), null == a.default.getCurrentUser()) return;
-                    let h = u ? {
+                    let p = u ? {
                         contextKey: r.KX8
                     } : void 0;
                     (0, r.mMO)(async () => {
@@ -103,10 +103,10 @@ function A(e) {
                             selectSource: !1,
                             analyticsLocations: [l.A.OVERLAY_NUDGE]
                         }))
-                    }, h)
+                    }, p)
                 },
                 onDismissClick: () => {
-                    m("dismiss")
+                    _("dismiss")
                 }
             }
         }
@@ -115,14 +115,14 @@ function A(e) {
                 game: t
             } = e, {
                 trackView: a,
-                trackClick: p
+                trackClick: h
             } = (0, d.Y)(u.KS.GoLiveNonVoiceNudge, {
                 notif_type: u.KS.GoLiveNonVoiceNudge
             });
             return {
                 icon: n(334260),
                 title: null,
-                body: h.intl.formatToPlainString(h.t["0SVWgF"], {
+                body: p.intl.formatToPlainString(p.t["0SVWgF"], {
                     game: t.name
                 }),
                 hint: () => (0, i.jsx)(y, {}),
@@ -131,7 +131,7 @@ function A(e) {
                     a()
                 },
                 onNotificationClick: (e, t) => {
-                    p("unlock");
+                    h("unlock");
                     let a = (0, c.getPID)();
                     s.A.updateNotificationStatus(t);
                     let d = o.default.isOverlayOOPEnabledForPid(a);
@@ -151,7 +151,7 @@ function A(e) {
                     }, u)
                 },
                 onDismissClick: () => {
-                    p("dismiss")
+                    h("dismiss")
                 }
             }
         }

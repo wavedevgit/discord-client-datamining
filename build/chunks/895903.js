@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 895903, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -12,43 +12,43 @@ var r = n(627968),
     c = n(397927),
     u = n(104171),
     d = n(47868),
-    p = n(986738),
-    h = n(394412),
-    f = n(859894),
-    g = n(931991),
+    h = n(986738),
+    p = n(394412),
+    g = n(859894),
+    f = n(931991),
     m = n(426660),
     b = n(576705),
     A = n(233993),
     y = n(19844),
-    _ = n(505543),
-    O = n(985018),
-    j = n(529471);
+    O = n(505543),
+    _ = n(985018),
+    x = n(529471);
 
-function v(e) {
+function j(e) {
     let {
         onClick: t,
         className: n
     } = e, l = c.cNw;
     return (0, r.jsx)(d.A, {
         iconContainerClassName: s()({
-            [j.q8]: !1
+            [x.q8]: !1
         }),
         icon: (0, r.jsx)(l, {
             size: "custom",
             color: "currentColor",
-            className: j.Pz,
+            className: x.Pz,
             height: 20,
             width: 20
         }),
         color: o.A.unsafe_rawColors.PRIMARY_700.css,
-        title: O.intl.string(O.t["jMLfp/"]),
-        description: O.intl.string(O.t["Vd/rEX"]),
+        title: _.intl.string(_.t["jMLfp/"]),
+        description: _.intl.string(_.t["Vd/rEX"]),
         onClick: t,
         className: n
     })
 }
 
-function x(e) {
+function v(e) {
     let {
         channel: t
     } = e, {
@@ -56,9 +56,9 @@ function x(e) {
         usersInSummary: l
     } = (0, y.A)(t.id);
     return (0, r.jsxs)("div", {
-        className: j.P1,
+        className: x.P1,
         children: [(0, r.jsx)(u.Ay, {
-            className: j.Ip,
+            className: x.Ip,
             guildId: t.guild_id,
             users: l,
             size: u.DN.SIZE_16
@@ -67,15 +67,15 @@ function x(e) {
             color: "text-default",
             children: function(e) {
                 if (0 === e.length) return "";
-                if (1 === e.length) return O.intl.formatToPlainString(O.t["5ULgaQ"], {
+                if (1 === e.length) return _.intl.formatToPlainString(_.t["5ULgaQ"], {
                     first: e[0].userNick
                 });
-                if (2 === e.length) return O.intl.formatToPlainString(O.t.BHK0Op, {
+                if (2 === e.length) return _.intl.formatToPlainString(_.t.BHK0Op, {
                     first: e[0].userNick,
                     second: e[1].userNick
                 });
                 let t = e.length - 2;
-                return O.intl.formatToPlainString(O.t.T3MT4n, {
+                return _.intl.formatToPlainString(_.t.T3MT4n, {
                     first: e[0].userNick,
                     second: e[1].userNick,
                     numOthers: t
@@ -91,41 +91,41 @@ function E(e) {
         onContinueClick: n
     } = e, i = (0, a.bG)([b.A], () => b.A.can(A.QY, t), [t]), o = t.guild_id, {
         canCreateGuildEvent: u
-    } = (0, g.nr)(t), d = (0, _.A)(t.id), y = l.useRef(null);
+    } = (0, f.nr)(t), d = (0, O.A)(t.id), y = l.useRef(null);
     return (0, r.jsxs)("div", {
-        className: j.kL,
+        className: x.kL,
         ref: y,
         children: [(0, r.jsx)(m.A, {
             eventTargetRef: y
         }), (0, r.jsxs)("div", {
-            className: j.Qs,
+            className: x.Qs,
             children: [(0, r.jsxs)("div", {
-                className: j.N1,
+                className: x.N1,
                 children: [(0, r.jsx)(c.Heading, {
-                    className: j.__invalid_title,
+                    className: x.__invalid_title,
                     variant: "heading-xxl/normal",
-                    children: O.intl.string(O.t.QGnDLs)
+                    children: _.intl.string(_.t.QGnDLs)
                 }), (0, r.jsx)(c.Text, {
                     tag: "div",
-                    className: j.VA,
+                    className: x.VA,
                     variant: "heading-lg/normal",
-                    children: O.intl.string(O.t.djfK36)
+                    children: _.intl.string(_.t.djfK36)
                 })]
-            }), d ? null : (0, r.jsx)(h.A, {
+            }), d ? null : (0, r.jsx)(p.A, {
                 channelId: t.id,
                 showDismiss: !1
-            }), i ? (0, r.jsx)(f.A, {
-                className: j.fN,
+            }), i ? (0, r.jsx)(g.A, {
+                className: x.fN,
                 channel: t
-            }) : null, u ? (0, r.jsx)(p.A, {
-                className: j.fN,
+            }) : null, u ? (0, r.jsx)(h.A, {
+                className: x.fN,
                 guildId: o
-            }) : null, i ? (0, r.jsx)(v, {
+            }) : null, i ? (0, r.jsx)(j, {
                 className: s()({
-                    [j.fN]: !0
+                    [x.fN]: !0
                 }),
                 onClick: n
-            }) : null, (0, r.jsx)(x, {
+            }) : null, (0, r.jsx)(v, {
                 channel: t
             })]
         })]

@@ -13,8 +13,8 @@ var i = n(627968),
     c = n(366811),
     d = n(256415),
     u = n(9302),
-    h = n(652215),
-    p = n(985018),
+    p = n(652215),
+    h = n(985018),
     f = n(165386);
 let g = () => (0, a.WU)("DM_SEARCH"),
     y = r.memo(function() {
@@ -33,16 +33,16 @@ let g = () => (0, a.WU)("DM_SEARCH"),
                     type: "button",
                     className: f.lU,
                     onClick: g,
-                    children: p.intl.string(p.t.LzcpeZ)
+                    children: h.intl.string(h.t.LzcpeZ)
                 })
             }), (0, i.jsx)(l.A, {
                 padding: 8,
-                theme: h.NJ8.DARK,
+                theme: p.NJ8.DARK,
                 version: e,
                 selectedChannelId: t
             }), (0, i.jsx)("section", {
                 className: f.C3,
-                "aria-label": p.intl.string(p.t.StREWK),
+                "aria-label": h.intl.string(h.t.StREWK),
                 children: (0, i.jsx)(o.A, {
                     guildId: null
                 })

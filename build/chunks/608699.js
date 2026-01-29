@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 608699, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => p
 });
 var r = n(627968),
     i = n(607399),
@@ -12,14 +12,14 @@ var r = n(627968),
     c = n(590632),
     d = n(146528),
     u = n(985018),
-    p = n(405564);
-let _ = e => {
+    _ = n(405564);
+let p = e => {
     let {
         onGoBack: t
     } = e, n = (0, c.A)(), {
-        loading: _
+        loading: p
     } = (0, o.eb)(n);
-    return ((0, a.A)(i.Fr ? "role-subscriptions-user-setting" : void 0), _) ? (0, r.jsx)(s.y$y, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
+    return ((0, a.A)(i.Fr ? "role-subscriptions-user-setting" : void 0), p) ? (0, r.jsx)(s.y$y, {}) : 0 === n.length ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(l.$nd, {
             text: u.intl.string(u.t.hqyhKQ),
             icon: s.z$m,
@@ -31,7 +31,7 @@ let _ = e => {
             label: u.intl.string(u.t["KzCF/6"]),
             description: u.intl.string(u.t["Y+ucR7"]),
             children: (0, r.jsx)("div", {
-                className: p.A,
+                className: _.A,
                 children: n.map(e => (0, r.jsx)(d.A, {
                     subscription: e
                 }, e.id))

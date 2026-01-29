@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 910492, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    O: () => _,
-    q: () => p
+    O: () => p,
+    q: () => _
 });
 var r = n(735438),
     i = n.n(r),
@@ -13,7 +13,7 @@ var r = n(735438),
     c = n(309010),
     d = n(203982),
     u = n(652215);
-let p = {
+let _ = {
         binds: ["mod+i"],
         comboKeysBindGlobal: !0,
         action: () => !(o.A.getLayers().length > 0) && ((() => {
@@ -28,7 +28,7 @@ let p = {
             return window.location.pathname.startsWith(u.BVt.CHANNEL(u.gNP)) && null != n ? (0, l.i)(n.guild_id, t) : (0, l.a)(u.BVt.CHANNEL(u.gNP, null != t ? t : void 0))
         })(), d._.dispatch(u.jej.TOGGLE_INBOX), !1)
     },
-    _ = {
+    p = {
         binds: ["mod+shift+e"],
         comboKeysBindGlobal: !0,
         action: i().debounce(() => {

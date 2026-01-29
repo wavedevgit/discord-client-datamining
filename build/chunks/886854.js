@@ -1,44 +1,44 @@
-/** Chunk was on 28979 **/
-/** chunk id: 886854, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    yj: () => C
+/** Chunk was on 4670 **/
+/** chunk id: 886854, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    yj: () => N
 });
 var n = i(934551),
     l = i(920603),
     s = i(419954),
     r = i(933297),
-    u = i(780964),
-    a = i(358776),
+    a = i(780964),
+    u = i(358776),
     o = i(368631),
-    T = i(614651),
-    d = i(859669),
-    A = i(662802),
-    S = i(988208),
-    E = i(819070),
-    g = i(352694),
-    _ = i(136451),
-    c = i(531525),
+    d = i(614651),
+    T = i(859669),
+    c = i(662802),
+    A = i(988208),
+    S = i(819070),
+    _ = i(352694),
+    E = i(136451),
+    g = i(531525),
     I = i(985018);
-let O = (0, s.t_)(u.X.APPEARANCE_PANEL, {
+let O = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
         initialize: () => {
             (0, l.v)()
         },
-        buildLayout: () => [g.S, A._, _.b, S.U, E.M, d.d]
+        buildLayout: () => [_.S, c._, E.b, A.U, S.M, T.d]
     }),
-    N = (0, s.t_)(u.X.APPEARANCE_PANEL, {
+    C = (0, s.t_)(a.X.APPEARANCE_PANEL, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
-        StronglyDiscouragedCustomComponent: T.Ay,
+        StronglyDiscouragedCustomComponent: d.Ay,
         buildLayout: () => []
     }),
-    C = (0, s.i4)(u.X.APPEARANCE_SIDEBAR_ITEM, {
+    N = (0, s.i4)(a.X.APPEARANCE_SIDEBAR_ITEM, {
         useTitle: () => I.intl.string(I.t["iHH+ky"]),
-        getLegacySearchKey: () => (0, a.WJ)("AppearanceSidebarItem") ? void 0 : c.H.APPEARANCE,
+        getLegacySearchKey: () => (0, u.WJ)("AppearanceSidebarItem") ? void 0 : g.H.APPEARANCE,
         icon: n.PaintPaletteIcon,
         trailing: {
             type: r.S.BADGE_NEW,
             getDismissibleContentTypes: o.p_,
             stronglyDiscouragedBadgeComponent: o.AW
         },
-        buildLayout: () => (0, a.WJ)("AppearanceSidebarItem") ? [O] : [N]
+        buildLayout: () => (0, u.WJ)("AppearanceSidebarItem") ? [O] : [C]
     })

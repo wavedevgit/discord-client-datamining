@@ -1,35 +1,35 @@
-/** Chunk was on 28979 **/
-/** chunk id: 424305, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    R: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 424305, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    R: () => d
 });
 var n = i(311907),
     l = i(274372),
     s = i(399925),
     r = i(419954),
-    u = i(780964),
-    a = i(696016),
+    a = i(780964),
+    u = i(696016),
     o = i(985018);
-let T = (0, r.Hn)(u.X.CLIPS_LENGTH, {
+let d = (0, r.Hn)(a.X.CLIPS_LENGTH, {
     useTitle: () => o.intl.string(o.t.OgfUio),
     useSubtitle: () => o.intl.string(o.t.H7j4tY),
     useValue: () => (0, n.bG)([l.A], () => l.A.getSettings().clipsLength),
-    setValue: t => s.h$(t),
+    setValue: e => s.h$(e),
     useOptions: () => [{
         id: "30s",
-        value: a.LX.SECONDS_30,
+        value: u.LX.SECONDS_30,
         label: o.intl.formatToPlainString(o.t["bTFv/3"], {
             count: 30
         })
     }, {
         id: "1m",
-        value: a.LX.MINUTES_1,
+        value: u.LX.MINUTES_1,
         label: o.intl.formatToPlainString(o.t.ICo9Nk, {
             count: 1
         })
     }, {
         id: "2m",
-        value: a.LX.MINUTES_2,
+        value: u.LX.MINUTES_2,
         label: o.intl.formatToPlainString(o.t.ICo9Nk, {
             count: 2
         })

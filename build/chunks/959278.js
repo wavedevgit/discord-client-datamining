@@ -52,8 +52,8 @@ var r = n(627968),
     Q = n(164956),
     X = n(209700),
     Z = n(9588),
-    J = n(939846),
-    $ = n(862658),
+    $ = n(939846),
+    J = n(862658),
     ee = n(813160),
     et = n(916768),
     en = n(851109),
@@ -310,7 +310,7 @@ let eD = (0, u.Fe)({
             })
         }, [t, n]), null == t) ? (0, r.jsx)(er.A, {}) : ez(e)
     },
-    eJ = e => {
+    e$ = e => {
         let {
             match: t
         } = e;
@@ -318,7 +318,7 @@ let eD = (0, u.Fe)({
             guildId: t.params.guildId
         }) : null
     },
-    e$ = e => {
+    eJ = e => {
         let {
             match: t
         } = e;
@@ -343,7 +343,7 @@ function e9() {
 let e7 = e => (0, r.jsx)(C.A, eR({}, e)),
     e5 = () => (0, r.jsx)(ea.A, {}),
     e8 = () => (0, r.jsx)(z.A, {}),
-    e2 = () => (0, r.jsx)(J.A, {}),
+    e2 = () => (0, r.jsx)($.A, {}),
     e4 = () => (0, r.jsx)(el.A, {}),
     e3 = e => {
         let t = e.location.pathname;
@@ -584,7 +584,7 @@ function tn() {
             optional: !0
         }), ":messageId?")]),
         m = (null == f || null == (e = f.params) ? void 0 : e.channelId) === ej.VV.GUILD_ONBOARDING,
-        A = i.useCallback(() => $.A.openSidebar(), []),
+        A = i.useCallback(() => J.A.openSidebar(), []),
         _ = (0, D.D)("AppView"),
         b = (0, w.useAppSidebarState)(e => !e.isOpen),
         E = (0, p.bG)([T.A], () => T.A.isFullscreenInContext()),
@@ -714,12 +714,12 @@ function tn() {
                                     disableTrack: !0
                                 }), (0, r.jsx)(N.A, {
                                     path: eT.BVt.GUILD_MEMBER_VERIFICATION(ef.pv.guildId()),
-                                    render: eJ,
+                                    render: e$,
                                     impressionName: c.ImpressionNames.GUILD_MEMBER_VERIFICATION,
                                     disableTrack: !0
                                 }), (0, r.jsx)(N.A, {
                                     path: eT.BVt.GUILD_MEMBER_VERIFICATION_FOR_HUB(ef.pv.guildId(), ":inviteCode?"),
-                                    render: e$
+                                    render: eJ
                                 }), (0, r.jsx)(N.A, {
                                     path: eT.BVt.GUILD_FEATURE(":feature", ef.pv.guildId()),
                                     exact: !0,

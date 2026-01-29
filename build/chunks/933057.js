@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 933057, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => b
@@ -12,11 +12,11 @@ var r = n(627968),
     c = n(203982),
     u = n(607508),
     d = n(914703),
-    p = n(37411),
-    h = n(652215),
-    f = n(985018);
+    h = n(37411),
+    p = n(652215),
+    g = n(985018);
 
-function g(e) {
+function f(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -51,14 +51,14 @@ function m(e, t) {
 function b(e) {
     let {
         channel: t
-    } = e, n = (0, u.X)(t), [b, A] = l.useState(!1), y = l.useRef(null), _ = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
+    } = e, n = (0, u.X)(t), [b, A] = l.useState(!1), y = l.useRef(null), O = (0, i.bG)([o.A], () => null != t.guild_id && o.A.isLurking(t.guild_id));
     if (l.useEffect(() => {
             let e = () => A(!0);
-            return c._.subscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-                c._.unsubscribe(h.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+            return c._.subscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+                c._.unsubscribe(p.jej.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
             }
-        }, []), _) return null;
-    let O = f.intl.string(f.t.h850Ss);
+        }, []), O) return null;
+    let _ = g.intl.string(g.t.h850Ss);
     return (0, r.jsx)(s.YNO, {
         targetElementRef: y,
         shouldShow: b,
@@ -67,21 +67,21 @@ function b(e) {
         align: "right",
         autoInvert: !1,
         onRequestClose: () => A(!1),
-        renderPopout: e => (0, r.jsx)(d.A, m(g({}, e), {
+        renderPopout: e => (0, r.jsx)(d.A, m(f({}, e), {
             channel: t,
             navId: "thread-context",
-            label: f.intl.string(f.t["1NBjqb"])
+            label: g.intl.string(g.t["1NBjqb"])
         })),
         children: (e, t) => {
             let {
                 isShown: l
             } = t;
-            return (0, r.jsx)(a.Ay.Icon, m(g({}, e), {
+            return (0, r.jsx)(a.Ay.Icon, m(f({}, e), {
                 ref: y,
                 onClick: () => A(e => !e),
-                tooltip: l ? null : O,
-                icon: n === p.CP.NO_MESSAGES ? s.a_I : s.XFE,
-                "aria-label": O,
+                tooltip: l ? null : _,
+                icon: n === h.CP.NO_MESSAGES ? s.a_I : s.XFE,
+                "aria-label": _,
                 selected: l
             }))
         }

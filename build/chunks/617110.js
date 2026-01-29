@@ -1,27 +1,27 @@
-/** Chunk was on 28979 **/
-/** chunk id: 617110, original params: t,e,i (module,exports,require) **/
-i.d(e, {
+/** Chunk was on 4670 **/
+/** chunk id: 617110, original params: e,t,i (module,exports,require) **/
+i.d(t, {
     G: () => o
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    u = i(780964),
-    a = i(985018);
-let o = (0, r.Qx)(u.X.ROLE_STYLE, {
-    useTitle: () => a.intl.string(a.t.uSOPWm),
-    useSubtitle: () => a.intl.string(a.t["86hjzQ"]),
+    a = i(780964),
+    u = i(985018);
+let o = (0, r.Qx)(a.X.ROLE_STYLE, {
+    useTitle: () => u.intl.string(u.t.uSOPWm),
+    useSubtitle: () => u.intl.string(u.t["86hjzQ"]),
     useOptions: () => [{
-        name: a.intl.string(a.t.YEOEi6),
+        name: u.intl.string(u.t.YEOEi6),
         value: "username"
     }, {
-        name: a.intl.string(a.t.mQaro3),
+        name: u.intl.string(u.t.mQaro3),
         value: "dot"
     }, {
-        name: a.intl.string(a.t.Ji2EVJ),
+        name: u.intl.string(u.t.Ji2EVJ),
         value: "hidden"
     }],
     useValue: () => (0, n.bG)([s.A], () => s.A.roleStyle),
-    setValue: t => (0, l.IX)(t)
+    setValue: e => (0, l.IX)(e)
 })

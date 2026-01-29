@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 173860, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => y
@@ -11,10 +11,10 @@ var r, l = n(627968),
     c = n.n(o),
     u = n(615300),
     d = n(52133),
-    p = n(397927),
-    h = n(473134);
+    h = n(397927),
+    p = n(473134);
 
-function f(e, t, n) {
+function g(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -23,14 +23,14 @@ function f(e, t, n) {
     }) : e[t] = n, e
 }
 
-function g(e) {
+function f(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            f(e, t, n[t])
+            g(e, t, n[t])
         })
     }
     return e
@@ -65,7 +65,7 @@ class b extends i.Component {
             translateY: e
         } = this.state;
         (null != this._timeout && clearTimeout(this._timeout), this.props.animate) ? this._timeout = setTimeout(() => {
-            u.A.spring(e, g({
+            u.A.spring(e, f({
                 toValue: 0
             }, m)).start()
         }, 100): e.setValue(0)
@@ -74,7 +74,7 @@ class b extends i.Component {
         let {
             translateY: e
         } = this.state;
-        (null != this._timeout && clearTimeout(this._timeout), this.props.animate) ? u.A.spring(e, g({
+        (null != this._timeout && clearTimeout(this._timeout), this.props.animate) ? u.A.spring(e, f({
             toValue: 1
         }, m)).start(): e.setValue(1)
     }
@@ -86,14 +86,14 @@ class b extends i.Component {
             onClick: r
         } = this.props;
         return (0, l.jsx)(u.A.div, {
-            className: a()(h.M0, e, {
-                [h.R]: n
+            className: a()(p.M0, e, {
+                [p.R]: n
             }),
             onClick: r,
             style: this.getAnimatedStyle(),
             "aria-hidden": n,
             children: (0, l.jsx)("span", {
-                className: h.Qq,
+                className: p.Qq,
                 children: t
             })
         })
@@ -114,7 +114,7 @@ class b extends i.Component {
         }
     }
     constructor(e) {
-        super(e), f(this, "_timeout", void 0), this.state = {
+        super(e), g(this, "_timeout", void 0), this.state = {
             translateY: new u.A.Value,
             reduceMotion: !1
         }
@@ -149,7 +149,7 @@ class A extends(r = i.PureComponent) {
             className: null != s ? s : void 0,
             children: (0, l.jsx)(b, {
                 hide: !0 === c || null == e && null == t,
-                className: a()(o, null != t ? h.lE : h.gy),
+                className: a()(o, null != t ? p.lE : p.gy),
                 text: null != t ? n : r,
                 reverse: i,
                 animate: u && !d.enabled,
@@ -158,10 +158,10 @@ class A extends(r = i.PureComponent) {
         })
     }
     constructor(...e) {
-        super(...e), f(this, "state", {
+        super(...e), g(this, "state", {
             unread: null,
             mention: null
-        }), f(this, "calculateState", c()(() => {
+        }), g(this, "calculateState", c()(() => {
             let {
                 items: e,
                 expandedFolders: t,
@@ -178,14 +178,14 @@ class A extends(r = i.PureComponent) {
                     null == a && l(e, i, c) && (a = e), null == o && r(e, i, c) && (o = e)
                 },
                 d = i ? c.length - 1 : 0,
-                p = c[d];
-            for (; null != p;) {
-                if ("string" == typeof p) {
-                    if (n(p, i, c)) break;
-                    u(p)
+                h = c[d];
+            for (; null != h;) {
+                if ("string" == typeof h) {
+                    if (n(h, i, c)) break;
+                    u(h)
                 } else {
                     let e = !1;
-                    for (let t of p) {
+                    for (let t of h) {
                         if (n(t, i, c)) {
                             e = !0;
                             break
@@ -194,13 +194,13 @@ class A extends(r = i.PureComponent) {
                     }
                     if (e) break
                 }
-                d += i ? -1 : 1, p = c[d]
+                d += i ? -1 : 1, h = c[d]
             }
             null != s && s(a, o, i), this.setState({
                 mention: a,
                 unread: o
             })
-        }, 200)), f(this, "handleClick", e => {
+        }, 200)), g(this, "handleClick", e => {
             e.preventDefault(), e.stopPropagation();
             let {
                 unread: t,
@@ -212,8 +212,8 @@ class A extends(r = i.PureComponent) {
         })
     }
 }
-f(A, "contextType", p.CZY), f(A, "defaultProps", {
-    className: h.kL,
+g(A, "contextType", h.CZY), g(A, "defaultProps", {
+    className: p.kL,
     reverse: !1,
     hide: !1,
     animate: !0

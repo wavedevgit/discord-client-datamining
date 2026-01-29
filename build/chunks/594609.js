@@ -1,4 +1,4 @@
-/** Chunk was on 44384 **/
+/** Chunk was on 73734 **/
 /** chunk id: 594609, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     h: () => E
@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(158954),
-    o = n(397927),
-    a = n(827343),
+    a = n(397927),
+    o = n(827343),
     s = n(985018);
 
 function c(e) {
@@ -38,7 +38,7 @@ function u(e) {
         actions: [{
             text: s.intl.string(s.t.BddRzS),
             onClick: () => {
-                t && a.A.setSilenceWarning(!1), e.onClose()
+                t && o.A.setSilenceWarning(!1), e.onClose()
             },
             variant: "primary"
         }],
@@ -52,5 +52,5 @@ function u(e) {
 }
 
 function E() {
-    (0, o.qfG)(e => (0, r.jsx)(u, c({}, e)))
+    (0, a.qfG)(e => (0, r.jsx)(u, c({}, e)))
 }

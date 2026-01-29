@@ -1,8 +1,8 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 428854, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g,
-    R: () => _
+    R: () => p
 }), n(638769);
 var r, i = n(627968),
     l = n(64700),
@@ -12,13 +12,13 @@ var r, i = n(627968),
     c = n(287809),
     d = n(64313),
     u = n(380587),
-    p = n(589641),
-    _ = ((r = {}).CONTENT_AND_SOCIAL = "CONTENT_AND_SOCIAL", r.DATA_AND_PRIVACY = "DATA_AND_PRIVACY", r);
+    _ = n(589641),
+    p = ((r = {}).CONTENT_AND_SOCIAL = "CONTENT_AND_SOCIAL", r.DATA_AND_PRIVACY = "DATA_AND_PRIVACY", r);
 let m = {
     CONTENT_AND_SOCIAL: [{
         order: 100,
         predicate: a.$h,
-        Component: p.A
+        Component: _.A
     }, {
         order: 200,
         predicate: () => {
@@ -37,7 +37,7 @@ let m = {
     DATA_AND_PRIVACY: [{
         order: 100,
         predicate: a.$h,
-        Component: p.A
+        Component: _.A
     }]
 };
 

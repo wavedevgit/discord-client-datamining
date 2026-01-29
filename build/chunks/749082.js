@@ -1,4 +1,4 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 749082, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -12,8 +12,8 @@ var r = n(627968),
     c = n(786558),
     d = n(799226),
     u = n(397927),
-    p = n(289440);
-let _ = {
+    _ = n(289440);
+let p = {
         HoverLightmode: {
             posy: "number",
             posx: "number"
@@ -34,35 +34,35 @@ let _ = {
             cardClassName: l,
             cardType: m,
             artboard: g = "BaseGlowRemapped",
-            fit: f = "layout",
-            glowAmount: b = 8,
-            blurAmount: h = 30,
-            hueRotate: A = 0,
+            fit: A = "layout",
+            glowAmount: f = 8,
+            blurAmount: b = 30,
+            hueRotate: h = 0,
             isReducedMotion: E
-        } = e, x = i.useRef(null), O = i.useRef(null), {
-            status: C,
-            buffer: y
-        } = (0, d.CE)(a.A), j = i.useContext(o.C), T = null != E ? E : j.reducedMotion.enabled;
+        } = e, O = i.useRef(null), C = i.useRef(null), {
+            status: x,
+            buffer: S
+        } = (0, d.CE)(a.A), T = i.useContext(o.C), I = null != E ? E : T.reducedMotion.enabled;
         return (0, r.jsxs)("div", {
-            ref: x,
-            className: s()(p.kL, n),
+            ref: O,
+            className: s()(_.kL, n),
             style: {
-                "--custom-glow-amount": "".concat(b, "px"),
-                "--custom-blur-amount": "".concat(h, "px"),
-                "--custom-hue-rotate": "".concat(A, "deg")
+                "--custom-glow-amount": "".concat(f, "px"),
+                "--custom-blur-amount": "".concat(b, "px"),
+                "--custom-hue-rotate": "".concat(h, "deg")
             },
-            children: [C !== d.BW.Loading && (0, r.jsx)(c.w, {
-                buffer: y,
+            children: [x !== d.BW.Loading && (0, r.jsx)(c.w, {
+                buffer: S,
                 artboard: g,
-                artboardProperties: _,
-                eventTargetRef: x,
-                className: p.Q_,
-                ref: O,
-                fit: f,
-                withReducedMotion: T ? "halt" : "play"
+                artboardProperties: p,
+                eventTargetRef: O,
+                className: _.Q_,
+                ref: C,
+                fit: A,
+                withReducedMotion: I ? "halt" : "play"
             }), (0, r.jsx)(u.ZpM, {
                 type: null != m ? m : u.sl2.CUSTOM,
-                className: s()(p.Nr, l),
+                className: s()(_.Nr, l),
                 children: t
             })]
         })

@@ -1,21 +1,21 @@
-/** Chunk was on 60449 **/
+/** Chunk was on 32502 **/
 /** chunk id: 803398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => h
 });
 var i = n(627968),
-    s = n(64700),
-    l = n(311907),
+    l = n(64700),
+    s = n(311907),
     r = n(397927),
     a = n(77468),
     o = n(974544),
     c = n(736653),
     d = n(351906),
     u = n(985018);
-let g = () => {
-    let e = (0, l.bG)([d.A], () => d.A.hidePersonalInformation),
+let h = () => {
+    let e = (0, s.bG)([d.A], () => d.A.hidePersonalInformation),
         t = (0, c.Ay)();
-    return (s.useEffect(() => {
+    return (l.useEffect(() => {
         a.A.fetch()
     }, []), e) ? (0, i.jsx)(o.A, {}) : (0, i.jsxs)(r.BJc, {
         gap: 16,

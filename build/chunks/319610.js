@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 319610, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => g
+    A: () => f
 });
 var r = n(627968),
     l = n(64700),
@@ -12,29 +12,29 @@ var r = n(627968),
     c = n(134753),
     u = n(246356),
     d = n(709562),
-    p = n(912276),
-    h = n(60504),
-    f = n(985018);
+    h = n(912276),
+    p = n(60504),
+    g = n(985018);
 
-function g(e) {
+function f(e) {
     let {
         channel: t
-    } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), g = (null == n ? void 0 : n.type) === c.Z.EMOJI_HOSE, m = l.useRef(null), b = (e, t) => {
+    } = e, n = (0, i.bG)([o.A], () => o.A.getDrawMode()), f = (null == n ? void 0 : n.type) === c.Z.EMOJI_HOSE, m = l.useRef(null), b = (e, t) => {
         null != e ? (0, a.Ol)({
             type: c.Z.EMOJI_HOSE,
             emojiName: e.name,
             emojiId: e.id
-        }) : g && (0, a.Ol)(null), null == t || t()
+        }) : f && (0, a.Ol)(null), null == t || t()
     };
-    return (0, r.jsx)(h.A, {
+    return (0, r.jsx)(p.A, {
         renderPopout: e => {
             let {
                 closePopout: n,
                 onFocus: l
             } = e;
             return (0, r.jsx)(u.A, {
-                children: (0, r.jsx)(p.A, {
-                    title: f.intl.string(f.t.XYLOyF),
+                children: (0, r.jsx)(h.A, {
+                    title: g.intl.string(g.t.XYLOyF),
                     channel: t,
                     closePopout: n,
                     onFocus: l,
@@ -65,7 +65,7 @@ function g(e) {
             }({}, e), n = n = {
                 buttonRef: m,
                 iconComponent: s.VRj,
-                isActive: g || e.isActive,
+                isActive: f || e.isActive,
                 onClick: t => {
                     b(null), e.onClick(t)
                 }

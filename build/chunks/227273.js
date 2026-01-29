@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 227273, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => O
 }), n(896048), n(228524);
 var r = n(627968),
     i = n(64700),
@@ -12,29 +12,29 @@ var r = n(627968),
     c = n(775602),
     d = n(793574),
     u = n(688810),
-    p = n(800172),
-    _ = n(953143),
+    _ = n(800172),
+    p = n(953143),
     m = n(954571),
     g = n(52167),
-    f = n(652215),
-    b = n(985018),
-    h = n(657989);
-let A = e => {
+    A = n(652215),
+    f = n(985018),
+    b = n(657989);
+let h = e => {
         let {
             isShowingAll: t,
             onClick: n
         } = e;
         return (0, r.jsxs)(o.DUT, {
             onClick: n,
-            className: h.customButton,
-            children: [t ? b.intl.string(b.t.maZaN3) : b.intl.string(b.t["37C26f"]), t ? (0, r.jsx)(o.tN5, {
+            className: b.customButton,
+            children: [t ? f.intl.string(f.t.maZaN3) : f.intl.string(f.t["37C26f"]), t ? (0, r.jsx)(o.tN5, {
                 size: "md",
                 color: "currentColor",
-                className: h.arrow
+                className: b.arrow
             }) : (0, r.jsx)(o.abt, {
                 size: "md",
                 color: "currentColor",
-                className: h.arrow
+                className: b.arrow
             })]
         })
     },
@@ -49,60 +49,60 @@ let A = e => {
             isNew: m = !1,
             isEarlyAccess: g = !1
         } = e, {
-            analyticsLocations: f
+            analyticsLocations: A
         } = (0, u.Ay)(d.A.PREMIUM_MARKETING_PERK_CARD);
         return (0, r.jsx)(u.f5, {
-            value: f,
+            value: A,
             children: (0, r.jsxs)("div", {
-                className: s()(h.perkCard, i),
-                children: [m ? (0, r.jsx)(_.A, {
-                    className: h.perkCardNewBadge,
+                className: s()(b.perkCard, i),
+                children: [m ? (0, r.jsx)(p.A, {
+                    className: b.perkCardNewBadge,
                     shouldInheritBackgroundColor: !0,
                     shouldInheritTextColor: !0
-                }) : null, g ? (0, r.jsx)(p.A, {
-                    className: h.perkCardEarlyAccessBadge
+                }) : null, g ? (0, r.jsx)(_.A, {
+                    className: b.perkCardEarlyAccessBadge
                 }) : null, (0, r.jsx)("img", {
                     src: l,
                     alt: "",
-                    className: s()(a, h.perksCardArt)
+                    className: s()(a, b.perksCardArt)
                 }), (0, r.jsxs)("div", {
                     children: [(0, r.jsxs)(o.Heading, {
                         variant: "heading-lg/extrabold",
-                        className: h.perkCardHeading,
+                        className: b.perkCardHeading,
                         children: [t, " ", c]
                     }), (0, r.jsx)(o.Text, {
                         variant: "text-sm/normal",
-                        className: h.perkCardDescription,
-                        children: "function" == typeof n ? n(f) : n
+                        className: b.perkCardDescription,
+                        children: "function" == typeof n ? n(A) : n
                     })]
                 })]
             })
         })
     },
-    x = e => {
+    O = e => {
         let {
             className: t,
             isSubscriberNitroHome: n = !1
-        } = e, [l, d] = i.useState(!1), p = (0, g.d)({
-            styles: h
-        }), _ = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
-            analyticsLocations: x
-        } = (0, u.Ay)(), O = [p.emoji, p.streaming, p.upload, p.customAppIcons, p.soundboard, p.videoBackground, p.superReactions, p.stickersPremiumPerk, p.badgeAlt];
+        } = e, [l, d] = i.useState(!1), _ = (0, g.d)({
+            styles: b
+        }), p = (0, a.bG)([c.A], () => c.A.useReducedMotion), {
+            analyticsLocations: O
+        } = (0, u.Ay)(), C = [_.emoji, _.streaming, _.upload, _.customAppIcons, _.soundboard, _.videoBackground, _.superReactions, _.stickersPremiumPerk, _.badgeAlt];
         return (0, r.jsxs)("div", {
-            className: s()(h.perksContainer, t, {
-                [h.partiallyHidden]: n && !l,
-                [h.subscriberNitroHome]: n,
-                [h.reducedMotion]: _
+            className: s()(b.perksContainer, t, {
+                [b.partiallyHidden]: n && !l,
+                [b.subscriberNitroHome]: n,
+                [b.reducedMotion]: p
             }),
             children: [(0, r.jsx)(o.Heading, {
                 variant: "heading-xxl/extrabold",
-                className: h.perksTitle,
-                children: n ? b.intl.string(b.t.QX14gI) : b.intl.string(b.t.RGadQR)
+                className: b.perksTitle,
+                children: n ? f.intl.string(f.t.QX14gI) : f.intl.string(f.t.RGadQR)
             }), (0, r.jsx)("div", {
-                className: s()(h.perkCardContainer, {
-                    [h.perkCardContainerExpanded]: l
+                className: s()(b.perkCardContainer, {
+                    [b.perkCardContainerExpanded]: l
                 }),
-                children: O.map(e => null != e && (0, r.jsx)(E, function(e) {
+                children: C.map(e => null != e && (0, r.jsx)(E, function(e) {
                     for (var t = 1; t < arguments.length; t++) {
                         var n = null != arguments[t] ? arguments[t] : {},
                             r = Object.keys(n);
@@ -123,21 +123,21 @@ let A = e => {
             }), n && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)("div", {
                     className: s()({
-                        [h.sizeGizmo]: !l,
-                        [h.sizeGizmoExpanded]: l
+                        [b.sizeGizmo]: !l,
+                        [b.sizeGizmoExpanded]: l
                     }),
-                    children: (0, r.jsx)(A, {
+                    children: (0, r.jsx)(h, {
                         onClick: () => {
-                            m.default.track(f.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
-                                location_stack: x,
+                            m.default.track(A.HAw.PREMIUM_MARKETING_PERKS_SEE_ALL_CLICKED, {
+                                location_stack: O,
                                 was_expanded: l
                             }), d(!l)
                         },
                         isShowingAll: l
                     })
                 }), (0, r.jsx)("div", {
-                    className: s()(h.cover, {
-                        [h.hidden]: l
+                    className: s()(b.cover, {
+                        [b.hidden]: l
                     })
                 })]
             })]

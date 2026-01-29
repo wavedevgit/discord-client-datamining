@@ -5,15 +5,15 @@ n.d(t, {
 });
 var r = n(627968);
 n(64700);
-var l = n(311907),
-    i = n(397927),
+var i = n(311907),
+    l = n(397927),
     a = n(55619),
     o = n(351906),
     c = n(985018);
 
 function s() {
-    let e = (0, l.bG)([o.A], () => o.A.enabled, []);
-    return (0, r.jsx)(i.sLh, {
+    let e = (0, i.bG)([o.A], () => o.A.enabled, []);
+    return (0, r.jsx)(l.sLh, {
         id: "streamer-mode-toggle",
         label: c.intl.string(c.t.p9ZAJZ),
         action: () => {

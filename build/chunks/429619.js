@@ -1,7 +1,7 @@
-/** Chunk was on 5606 **/
+/** Chunk was on 2827 **/
 /** chunk id: 429619, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => A
 });
 var r = n(627968),
     i = n(64700),
@@ -12,25 +12,25 @@ var r = n(627968),
     c = n(954571),
     d = n(979286),
     u = n(492499),
-    p = n(652215),
-    _ = n(788868),
+    _ = n(652215),
+    p = n(788868),
     m = n(985018),
     g = n(844551);
-let f = () => {
+let A = () => {
     var e;
     let {
         analyticsLocations: t
     } = (0, a.Ay)(s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL), n = i.useRef(null), {
-        asset: f,
-        popoutAsset: b,
-        title: h,
-        body: A,
+        asset: A,
+        popoutAsset: f,
+        title: b,
+        body: h,
         version: E,
-        revertTextColor: x
-    } = (0, u.M)(), O = i.useContext(o.gl), C = null != (e = null == O ? void 0 : O.navigateWithValidation) ? e : e => e();
+        revertTextColor: O
+    } = (0, u.M)(), C = i.useContext(o.gl), x = null != (e = null == C ? void 0 : C.navigateWithValidation) ? e : e => e();
     return i.useEffect(() => {
-        c.default.track(p.HAw.PREMIUM_UPSELL_VIEWED, {
-            type: _.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
+        c.default.track(_.HAw.PREMIUM_UPSELL_VIEWED, {
+            type: p.e.COLLECTIBLES_PROFILE_SETTINGS_UPSELL,
             location_stack: t,
             version: E
         })
@@ -38,14 +38,14 @@ let f = () => {
         ref: n,
         className: g.kL,
         style: {
-            backgroundImage: "url(".concat(f, ")")
+            backgroundImage: "url(".concat(A, ")")
         },
         children: [(0, r.jsx)("div", {
             className: g.JS,
             "aria-hidden": !0,
             role: "presentation",
             children: (0, r.jsx)("img", {
-                src: b,
+                src: f,
                 className: g.Qw,
                 alt: ""
             })
@@ -53,17 +53,17 @@ let f = () => {
             className: g.Em,
             children: [(0, r.jsx)(l.Heading, {
                 variant: "heading-lg/extrabold",
-                color: x ? "text-overlay-dark" : "currentColor",
+                color: O ? "text-overlay-dark" : "currentColor",
                 className: g.DD,
-                children: h
+                children: b
             }), (0, r.jsx)(l.Text, {
                 variant: "text-sm/normal",
-                color: x ? "text-overlay-dark" : "currentColor",
-                children: A
+                color: O ? "text-overlay-dark" : "currentColor",
+                children: h
             })]
         }), (0, r.jsx)(l.Button, {
             onClick: () => {
-                C(() => (0, d.Cz)({
+                x(() => (0, d.Cz)({
                     analyticsLocations: t,
                     analyticsSource: s.A.COLLECTIBLES_PROFILE_SETTINGS_UPSELL
                 }))

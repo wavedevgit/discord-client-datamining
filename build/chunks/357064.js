@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 357064, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -13,9 +13,9 @@ var l = n(311907),
     c = n(531685),
     u = n(330465),
     d = n(65611),
-    p = n(652215);
+    h = n(652215);
 
-function h(e, t) {
+function p(e, t) {
     (0, i.L3)(e, async () => {
         let {
             default: e
@@ -55,21 +55,21 @@ function h(e, t) {
     })
 }
 
-function f(e) {
+function g(e) {
     let {
         guildNode: t
-    } = e, n = t.id, i = (0, l.bG)([a.A], () => a.A.getRequest(n)), f = (0, l.bG)([a.A], () => a.A.getJoinRequestGuild(n), [n]), g = (0, l.bG)([c.A], () => c.A.isFocused()), m = (0, l.bG)([o.A], () => o.A.getGuildId());
-    return null == f ? null : (0, r.jsx)(u.A, {
+    } = e, n = t.id, i = (0, l.bG)([a.A], () => a.A.getRequest(n)), g = (0, l.bG)([a.A], () => a.A.getJoinRequestGuild(n), [n]), f = (0, l.bG)([c.A], () => c.A.isFocused()), m = (0, l.bG)([o.A], () => o.A.getGuildId());
+    return null == g ? null : (0, r.jsx)(u.A, {
         guildNode: t,
-        guild: f,
-        animatable: g,
+        guild: g,
+        animatable: f,
         draggable: !1,
         selected: n === m,
         preloadOnClick: !1,
-        contextMenu: h,
+        contextMenu: p,
         lowerBadge: (null == i ? void 0 : i.applicationStatus) === s.B5.REJECTED ? (0, d.eW)({
             guildJoinRequestStatus: i.applicationStatus
         }) : void 0,
-        route: p.BVt.GUILD_MEMBER_VERIFICATION(n)
+        route: h.BVt.GUILD_MEMBER_VERIFICATION(n)
     })
 }

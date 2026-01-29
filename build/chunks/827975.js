@@ -1,7 +1,7 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 827975, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => g
 });
 var r = n(627968);
 n(64700);
@@ -13,16 +13,16 @@ var l = n(837381),
     c = n(900848),
     u = n(550591),
     d = n(818348),
-    p = n(985018),
-    h = n(697491);
+    h = n(985018),
+    p = n(697491);
 
-function f() {
+function g() {
     var e, t;
     let n = (0, i.bG)([a.A, o.A], () => a.A.unavailableGuilds.filter(e => null == o.A.getGuild(e)).length),
-        f = (0, l.Vd)("unavailable-guilds-button");
+        g = (0, l.Vd)("unavailable-guilds-button");
     return n <= 0 ? null : (0, r.jsx)(c.c, {
         children: (0, r.jsx)(u.A, {
-            text: p.intl.format(p.t["TnH05/"], {
+            text: h.intl.format(h.t["TnH05/"], {
                 count: n
             }),
             children: (0, r.jsx)(s.MzZ, (e = function(e) {
@@ -45,11 +45,11 @@ function f() {
             }({
                 href: d.qF.STATUS,
                 target: "_blank",
-                className: h.h,
-                "aria-label": p.intl.formatToPlainString(p.t["MEpX+2"], {
+                className: p.h,
+                "aria-label": h.intl.formatToPlainString(h.t["MEpX+2"], {
                     count: n
                 })
-            }, f), t = t = {
+            }, g), t = t = {
                 children: (0, r.jsx)(s.EpV, {
                     color: "currentColor",
                     "aria-hidden": !0

@@ -1,21 +1,21 @@
-/** Chunk was on 28979 **/
-/** chunk id: 506305, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    p: () => d
+/** Chunk was on 4670 **/
+/** chunk id: 506305, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    p: () => T
 });
 var n = i(311907),
     l = i(955572),
     s = i(775602),
     r = i(419954),
-    u = i(780964),
-    a = i(840065),
+    a = i(780964),
+    u = i(840065),
     o = i(652215),
-    T = i(985018);
-let d = (0, r.zD)(u.X.SYNC_PROFILE_THEMES, {
-    useTitle: () => T.intl.string(T.t["sSY+mD"]),
-    useSubtitle: () => T.intl.format(T.t.u6UjrL, {
+    d = i(985018);
+let T = (0, r.zD)(a.X.SYNC_PROFILE_THEMES, {
+    useTitle: () => d.intl.string(d.t["sSY+mD"]),
+    useSubtitle: () => d.intl.format(d.t.u6UjrL, {
         onThemeClick() {
-            (0, a.openUserSettings)(u.X.APPEARANCE_PANEL, {
+            (0, u.openUserSettings)(a.X.APPEARANCE_PANEL, {
                 section: o.nc_.APPEARANCE
             })
         }

@@ -1,32 +1,32 @@
-/** Chunk was on 28979 **/
-/** chunk id: 198987, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    t: () => E
+/** Chunk was on 4670 **/
+/** chunk id: 198987, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    t: () => S
 });
 var n = i(64700),
     l = i(311907),
     s = i(419954),
     r = i(933297),
-    u = i(803224),
-    a = i(780964),
+    a = i(803224),
+    u = i(780964),
     o = i(840065),
-    T = i(856134),
-    d = i(662128),
-    A = i(811231),
-    S = i(985018);
-let E = (0, s.zZ)(a.X.SOUNDS_CATEGORY, {
-    useTitle: () => S.intl.string(S.t.MKWyKc),
+    d = i(856134),
+    T = i(662128),
+    c = i(811231),
+    A = i(985018);
+let S = (0, s.zZ)(u.X.SOUNDS_CATEGORY, {
+    useTitle: () => A.intl.string(A.t.MKWyKc),
     useInlineNotice: function() {
-        let t = (0, l.bG)([u.A], () => u.A.getDisableAllSounds());
+        let e = (0, l.bG)([a.A], () => a.A.getDisableAllSounds());
         return n.useMemo(() => {
-            if (t) return {
+            if (e) return {
                 type: r.W.INLINE_NOTICE,
                 noticeType: "warning",
-                useText: () => S.intl.format(S.t.fRvixS, {
-                    onClick: () => (0, o.openUserSettings)(a.X.NOTIFICATIONS_SOUNDS_CATEGORY)
+                useText: () => A.intl.format(A.t.fRvixS, {
+                    onClick: () => (0, o.openUserSettings)(u.X.NOTIFICATIONS_SOUNDS_CATEGORY)
                 })
             }
-        }, [t])
+        }, [e])
     },
-    buildLayout: () => [A.Y, T.F, d.D]
+    buildLayout: () => [c.Y, d.F, T.D]
 })

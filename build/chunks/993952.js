@@ -1,4 +1,4 @@
-/** Chunk was on 78528 **/
+/** Chunk was on 1113 **/
 /** chunk id: 993952, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A,
@@ -14,10 +14,10 @@ var l = n(503698),
     c = n(397927),
     u = n(698441),
     d = n(520006),
-    p = n(71393),
-    h = n(576705),
-    f = n(652215),
-    g = n(985018),
+    h = n(71393),
+    p = n(576705),
+    g = n(652215),
+    f = n(985018),
     m = n(669486);
 
 function b(e) {
@@ -60,7 +60,7 @@ function b(e) {
                 streamUserId: i,
                 applicationId: s,
                 analyticsLocation: u,
-                source: l.isGuildStageVoice() ? f.PE1.STAGE_CHANNEL : f.PE1.STREAM_INVITE,
+                source: l.isGuildStageVoice() ? g.PE1.STAGE_CHANNEL : g.PE1.STREAM_INVITE,
                 guildScheduledEvent: d
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -75,7 +75,7 @@ function b(e) {
         }
     }, {
         modalKey: "stream-invite-modal",
-        contextKey: a === f.BRT.POPOUT ? c.KX8 : c.SYi
+        contextKey: a === g.BRT.POPOUT ? c.KX8 : c.SYi
     })
 }
 
@@ -87,21 +87,21 @@ function A(e) {
         exitFullScreen: s,
         appContext: A,
         analyticsLocation: y,
-        className: _,
-        size: O = "sm"
-    } = e, j = null == l ? void 0 : l.getGuildId(), v = null == l ? void 0 : l.id, x = (0, o.bG)([p.A], () => null != j ? p.A.getGuild(j) : null, [j]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(v), [v]);
-    if (!(null != x && null != l && h.A.can(f.xBc.CREATE_INSTANT_INVITE, l))) return null;
-    let C = g.intl.string(g.t.VINpSK);
-    return null != t ? C = g.intl.string(g.t["6VQaqd"]) : null != n && (C = g.intl.string(g.t["OzOM/q"])), (0, r.jsxs)(r.Fragment, {
+        className: O,
+        size: _ = "sm"
+    } = e, x = null == l ? void 0 : l.getGuildId(), j = null == l ? void 0 : l.id, v = (0, o.bG)([h.A], () => null != x ? h.A.getGuild(x) : null, [x]), E = (0, o.bG)([u.Ay], () => u.Ay.getActiveEventByChannel(j), [j]);
+    if (!(null != v && null != l && p.A.can(g.xBc.CREATE_INSTANT_INVITE, l))) return null;
+    let C = f.intl.string(f.t.VINpSK);
+    return null != t ? C = f.intl.string(f.t["6VQaqd"]) : null != n && (C = f.intl.string(f.t["OzOM/q"])), (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
-            className: i()(_, m.uX),
+            className: i()(O, m.uX),
             children: (0, r.jsx)(c.Button, {
-                size: O,
+                size: _,
                 variant: "secondary",
                 text: C,
                 onClick: () => {
-                    a()(null != x, "guild cannot be null"), a()(null != l, "channel cannot be null"), b({
-                        guild: x,
+                    a()(null != v, "guild cannot be null"), a()(null != l, "channel cannot be null"), b({
+                        guild: v,
                         channel: l,
                         streamUserId: null == t ? void 0 : t.ownerId,
                         applicationId: n,
@@ -116,7 +116,7 @@ function A(e) {
             channel: l,
             stream: t,
             appContext: A,
-            className: i()(_, m.gb),
+            className: i()(O, m.gb),
             exitFullScreen: s,
             analyticsLocation: y,
             guildScheduledEvent: E

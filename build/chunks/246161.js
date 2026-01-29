@@ -1,28 +1,28 @@
-/** Chunk was on 28979 **/
-/** chunk id: 246161, original params: t,e,i (module,exports,require) **/
-i.d(e, {
-    c: () => T
+/** Chunk was on 4670 **/
+/** chunk id: 246161, original params: e,t,i (module,exports,require) **/
+i.d(t, {
+    c: () => d
 });
 var n = i(574381),
     l = i(311907),
     s = i(55619),
     r = i(419954),
-    u = i(351906),
-    a = i(780964),
+    a = i(351906),
+    u = i(780964),
     o = i(985018);
-let T = (0, r.zD)(a.X.STREAMING_AUTO_STREAMER_MODE, {
+let d = (0, r.zD)(u.X.STREAMING_AUTO_STREAMER_MODE, {
     useTitle: () => o.intl.string(o.t.IxjaoF),
     useValue: function() {
-        return (0, l.bG)([u.A], () => {
+        return (0, l.bG)([a.A], () => {
             let {
-                autoToggle: t
-            } = u.A.getSettings();
-            return t
+                autoToggle: e
+            } = a.A.getSettings();
+            return e
         })
     },
-    setValue: function(t) {
+    setValue: function(e) {
         s.A.update({
-            autoToggle: t
+            autoToggle: e
         })
     },
     usePredicate: function() {
