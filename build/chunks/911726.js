@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 911726, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => B
@@ -15,8 +15,8 @@ var r, i = n(627968),
     m = n(21161),
     f = n(513609),
     g = n(928830),
-    h = n(567771),
-    _ = n(780964),
+    _ = n(567771),
+    h = n(780964),
     b = n(840065),
     A = n(473145),
     y = n(763754),
@@ -173,9 +173,9 @@ function G(e) {
                 return "BOTTOM_RIGHT"
         }
     }()), {
-        createMultipleConfettiAt: h,
-        confettiCanvas: _
-    } = l.useContext(m.x), [b, A] = l.useState(null), y = (0, o.f9)(_, b), v = function(e, t) {
+        createMultipleConfettiAt: _,
+        confettiCanvas: h
+    } = l.useContext(m.x), [b, A] = l.useState(null), y = (0, o.f9)(h, b), v = function(e, t) {
         if (null == e) return "enter";
         switch (e) {
             case "enter":
@@ -214,7 +214,7 @@ function G(e) {
                     y: r.top + i.y
                 }
             }(u.current, g, a);
-            h(t.x, t.y, {
+            _(t.x, t.y, {
                 velocity: {
                     type: "static-random",
                     minValue: {
@@ -228,7 +228,7 @@ function G(e) {
                 }
             })
         }
-    }, [h, g, d, a]), l.useEffect(() => {
+    }, [_, g, d, a]), l.useEffect(() => {
         if (x && "leaf_fall" === d) {
             let e = w[g].leafRotationDirection;
             y.createConfetti({
@@ -329,7 +329,7 @@ function B(e) {
             }
             return null
         }(n),
-        u = (0, h.A)(n),
+        u = (0, _.A)(n),
         {
             createMultipleConfettiAt: d,
             addClickListener: j
@@ -376,7 +376,7 @@ function B(e) {
         M = l.useCallback(() => {
             (0, g.O9)({
                 settingsVisible: !0
-            }), (0, b.openUserSettings)(_.X.POGGERMODE_PANEL, {
+            }), (0, b.openUserSettings)(h.X.POGGERMODE_PANEL, {
                 section: x.nc_.POGGERMODE
             }), I(!1)
         }, []),

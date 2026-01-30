@@ -1,35 +1,35 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 156603, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => m
 });
 var r = n(627968),
     l = n(397927),
     a = n(790381),
     i = n(266080),
-    s = n(121090),
-    o = n(18282),
+    o = n(121090),
+    s = n(18282),
     c = n(424994),
     u = n(985018);
 let d = {
-        [c.a4.SPOTIFY]: s.A,
+        [c.a4.SPOTIFY]: o.A,
         [c.a4.CRUNCHYROLL]: l.kwD,
         [c.a4.XBOX]: i.A,
         [c.a4.PLAYSTATION]: a.A
     },
-    m = {
+    p = {
         [c.a4.SPOTIFY]: () => u.intl.string(u.t["0ZB/XE"]),
         [c.a4.CRUNCHYROLL]: () => u.intl.string(u.t.jdJYXw),
         [c.a4.XBOX]: () => u.intl.string(u.t.Nfvo72),
         [c.a4.PLAYSTATION]: () => u.intl.string(u.t.fFl4jo)
     };
 
-function f(e) {
+function m(e) {
     var t, n, l;
     let {
         type: a,
         "aria-label": i
-    } = e, s = function(e, t) {
+    } = e, o = function(e, t) {
         if (null == e) return {};
         var n, r, l, a = {};
         if ("u" > typeof Reflect && Reflect.ownKeys) {
@@ -47,8 +47,8 @@ function f(e) {
         return a
     }(e, ["type", "aria-label"]), c = d[a];
     if (null == c) return null;
-    let u = null != i ? i : null == (t = m[a]) ? void 0 : t.call(m);
-    return (0, r.jsx)(o.A, (n = function(e) {
+    let u = null != i ? i : null == (t = p[a]) ? void 0 : t.call(p);
+    return (0, r.jsx)(s.A, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -67,7 +67,7 @@ function f(e) {
         return e
     }({
         Icon: c
-    }, s), l = l = {
+    }, o), l = l = {
         "aria-label": u
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 829963, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => g
@@ -17,9 +17,9 @@ var r = n(627968),
     f = n(609653);
 
 function g(e) {
-    var t, n, g, h;
+    var t, n, g, _;
     let {
-        application: _,
+        application: h,
         message: b,
         header: A,
         presenceActivity: y,
@@ -47,7 +47,7 @@ function g(e) {
     }, [I, S]), N = null != y && null != y.details && null != y.state ? m.intl.formatToPlainString(m.t.JCvHtx, {
         track: y.details,
         artist: y.state
-    }) : _.name, P = null != (t = null == y || null == (g = y.timestamps) ? void 0 : g.start) ? t : null == y ? void 0 : y.created_at, w = i.useMemo(() => {
+    }) : h.name, P = null != (t = null == y || null == (g = y.timestamps) ? void 0 : g.start) ? t : null == y ? void 0 : y.created_at, w = i.useMemo(() => {
         var e;
         return null != P ? (0, r.jsxs)("div", {
             className: f.Ym,
@@ -64,7 +64,7 @@ function g(e) {
                 textFontCode: !1
             })]
         }) : null
-    }, [P, null == y || null == (h = y.timestamps) ? void 0 : h.end]), R = i.useMemo(() => (0, r.jsxs)("div", {
+    }, [P, null == y || null == (_ = y.timestamps) ? void 0 : _.end]), R = i.useMemo(() => (0, r.jsxs)("div", {
         className: f.pq,
         children: [(0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
@@ -77,12 +77,12 @@ function g(e) {
     return (0, r.jsx)(a.h, {
         header: A,
         title: N,
-        iconSrc: null != (n = (0, u.A)(y, _.id)) ? n : void 0,
+        iconSrc: null != (n = (0, u.A)(y, h.id)) ? n : void 0,
         info: R,
         actions: T,
         onClickContent: E,
         trackingConfig: {
-            id: _.id,
+            id: h.id,
             linkType: p.J.RICH_PRESENCE_INVITE,
             onView: j,
             referrerId: b.author.id,

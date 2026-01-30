@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 572211, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     h: () => x,
@@ -16,8 +16,8 @@ var r, i = n(627968),
     m = n(775602),
     f = n(176563),
     g = n(961350),
-    h = n(354287),
-    _ = n(768349),
+    _ = n(354287),
+    h = n(768349),
     b = n(838541),
     A = n(112247),
     y = ((r = {})[r.BOT = 0] = "BOT", r[r.ACTIVITY = 1] = "ACTIVITY", r);
@@ -59,7 +59,7 @@ function x(e) {
     } = e;
     w = {
         id: null != (n = null == (t = w) ? void 0 : t.id) ? n : "0",
-        linkType: null != (r = null == t ? void 0 : t.linkType) ? r : _.J.UNKNOWN,
+        linkType: null != (r = null == t ? void 0 : t.linkType) ? r : h.J.UNKNOWN,
         referrerId: null != (a = null == t ? void 0 : t.referrerId) ? a : g.default.getId(),
         activityCustomId: null == t ? void 0 : t.activityCustomId,
         onView: null == t ? void 0 : t.onView,
@@ -75,7 +75,7 @@ function x(e) {
     } = (0, f.A)(null != T ? T : C), k = "linear-gradient(45deg, ".concat(L, ", ").concat(M, ")"), U = (0, d.bG)([m.A], () => m.A.useReducedMotion), G = l.useRef(!1), B = (0, c.K)(e => {
         if (!1 === G.current && e) {
             var t;
-            null == w || null == (t = w.onView) || t.call(w), (0, h.wV)({
+            null == w || null == (t = w.onView) || t.call(w), (0, _.wV)({
                 appId: w.id,
                 linkType: w.linkType,
                 referrerId: w.referrerId,
@@ -90,10 +90,10 @@ function x(e) {
         null == e || ("hidden" === getComputedStyle(e).visibility ? e.pause() : e.play())
     }, []), Y = l.useMemo(() => !!H && new URL(I).pathname.endsWith(".gif"), [H, I]), q = l.useMemo(() => {
         if (null != R) return e => {
-            R(e), (0, h.gx)({
+            R(e), (0, _.gx)({
                 applicationId: w.id,
                 linkType: w.linkType,
-                area: h.kY.CONTENT,
+                area: _.kY.CONTENT,
                 referrerId: w.referrerId,
                 customId: w.activityCustomId,
                 isDeadEnd: w.isDeadEnd
@@ -101,10 +101,10 @@ function x(e) {
         }
     }, [R, w]), J = l.useMemo(() => {
         if (null != D) return e => {
-            D(e), (0, h.gx)({
+            D(e), (0, _.gx)({
                 applicationId: w.id,
                 linkType: w.linkType,
-                area: h.kY.BANNER,
+                area: _.kY.BANNER,
                 referrerId: w.referrerId,
                 customId: w.activityCustomId,
                 isDeadEnd: w.isDeadEnd
@@ -198,7 +198,7 @@ function x(e) {
                                 "aria-label": n,
                                 buttonRef: f,
                                 onClick: e => {
-                                    l(e), (0, h.gx)({
+                                    l(e), (0, _.gx)({
                                         applicationId: w.id,
                                         linkType: w.linkType,
                                         area: c,
@@ -218,7 +218,7 @@ function x(e) {
                                 text: n,
                                 buttonRef: f,
                                 onClick: e => {
-                                    l(e), (0, h.gx)({
+                                    l(e), (0, _.gx)({
                                         applicationId: w.id,
                                         linkType: w.linkType,
                                         area: c,

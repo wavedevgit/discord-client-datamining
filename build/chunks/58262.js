@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 58262, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => y
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(961350),
     f = n(734057),
     g = n(994500),
-    h = n(427262),
-    _ = n(652215),
+    _ = n(427262),
+    h = n(652215),
     b = n(985018),
     A = n(563111);
 
@@ -27,7 +27,7 @@ function y(e) {
         invite: n,
         message: y,
         getAcceptInviteContext: v
-    } = e, x = (0, a.bG)([m.default], () => m.default.getId()), O = (null == (t = n.inviter) ? void 0 : t.id) === x, E = n.state === _.elq.ACCEPTING, {
+    } = e, x = (0, a.bG)([m.default], () => m.default.getId()), O = (null == (t = n.inviter) ? void 0 : t.id) === x, E = n.state === h.elq.ACCEPTING, {
         analyticsLocations: j
     } = (0, u.Ay)(c.A.INVITE_EMBED), C = (0, a.bG)([g.A], () => {
         var e;
@@ -62,7 +62,7 @@ function y(e) {
     C ? (N = b.intl.string(b.t.xhxnPn), P = "secondary") : O && (N = b.intl.string(b.t.ib7Ng1), P = "secondary");
     let w = O ? b.intl.string(b.t.eQyu1F) : b.intl.string(b.t.PYJHW6),
         R = null != n.inviter ? "".concat(n.inviter.username) : "",
-        D = null != n.inviter ? h.Ay.getUserTag(n.inviter) : "";
+        D = null != n.inviter ? _.Ay.getUserTag(n.inviter) : "";
     return (0, r.jsxs)(d.A, {
         children: [(0, r.jsx)(d.A.Header, {
             text: w

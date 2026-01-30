@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 359800, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     z: () => d
@@ -45,9 +45,9 @@ function d(e, t) {
         }, {
             modalKey: u
         }), o
-    }, [e, f, d]), h = (0, a.A)(t);
+    }, [e, f, d]), _ = (0, a.A)(t);
     return i.useEffect(() => {
-        if (m && !1 === h && !0 === t) {
+        if (m && !1 === _ && !0 === t) {
             if ((0, l.OoC)(u), f(!1), !p) return;
             let e = () => {
                 (0, l.showToast)({
@@ -64,5 +64,5 @@ function d(e, t) {
                 document.addEventListener("visibilitychange", t)
             }
         }
-    }, [m, t, h, p]), g
+    }, [m, t, _, p]), g
 }

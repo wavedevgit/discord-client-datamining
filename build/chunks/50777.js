@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 50777, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => j
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(328968),
     f = n(580630),
     g = n(871123),
-    h = n(733391),
-    _ = n(832163),
+    _ = n(733391),
+    h = n(832163),
     b = n(317560),
     A = n(533406),
     y = n(300182),
@@ -37,13 +37,13 @@ function j(e) {
     } = (0, c.Ay)(o.A.SLAYER_STOREFRONT_PRODUCT_DETAILS_EMBED);
     (0, u.pE)();
     let U = (0, a.bG)([d.default], () => R.isDM() && null != R.recipients && 0 !== R.recipients.length ? d.default.getUser(R.recipients[0]) : null),
-        G = (0, a.bG)([_.A], () => null != w ? _.A.getNormalizedSKUEligibility(w) : void 0, [w]),
+        G = (0, a.bG)([h.A], () => null != w ? h.A.getNormalizedSKUEligibility(w) : void 0, [w]),
         {
             primaryIconAsset: B,
             primaryIconLabel: F
         } = i.useMemo(() => (0, g.Cv)(L, M), [L, M]);
     i.useEffect(() => {
-        null == P || null == w || m.A.isFetchingForSKU(w) || (0, h.qf)(P, w)
+        null == P || null == w || m.A.isFetchingForSKU(w) || (0, _.qf)(P, w)
     }, [P, w]);
     let H = i.useCallback(e => {
             e.stopPropagation(), (null == L ? void 0 : L.applicationId) != null && null != P && (0, b.R)({

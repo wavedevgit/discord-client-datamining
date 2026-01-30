@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 996522, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => y
@@ -17,8 +17,8 @@ var i = n(503698),
     m = n(456874),
     f = n(707539),
     g = n(519397),
-    h = n(747926),
-    _ = n(652215),
+    _ = n(747926),
+    h = n(652215),
     b = n(985018),
     A = n(868320);
 
@@ -67,13 +67,13 @@ function v(e) {
             })
         }), (0, r.jsx)(s.DUT, {
             onClick: function(e) {
-                e.stopPropagation(), (0, h.JA)(y, e.shiftKey)
+                e.stopPropagation(), (0, _.JA)(y, e.shiftKey)
             },
             onKeyDown: function(e) {
                 e.stopPropagation();
                 let t = !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey,
                     n = e.shiftKey && !(e.altKey || e.ctrlKey || e.metaKey);
-                (e.which === _.Ks6.SPACE || e.which === _.Ks6.ENTER) && (e.preventDefault(), (t || n) && (0, h.JA)(y, n))
+                (e.which === h.Ks6.SPACE || e.which === h.Ks6.ENTER) && (e.preventDefault(), (t || n) && (0, _.JA)(y, n))
             },
             onContextMenu: function(e) {
                 (0, o.L3)(e, async () => {

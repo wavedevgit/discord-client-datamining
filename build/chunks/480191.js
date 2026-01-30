@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 480191, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => k
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(325445),
     f = n(954921),
     g = n(234914),
-    h = n(22007),
-    _ = n(77350),
+    _ = n(22007),
+    h = n(77350),
     b = n(112758),
     A = n(754459),
     y = n(967144),
@@ -76,7 +76,7 @@ function k(e) {
         channel: B
     } = e, F = i.useRef(null), H = i.useRef(null), V = (0, T.D)(U, G), {
         setPopout: z
-    } = (0, A.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = x.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(!1), [Q, Z] = i.useState((null == V ? void 0 : V.coverImage) == null), X = (0, o.bG)([O.Ay, E.default], () => {
+    } = (0, A.A)(G.id, P.Fd), W = (0, b.VL)(G, B, z, !0), K = x.kt.useSetting(), Y = (0, I.j)(), [q, J] = i.useState(!1), [Q, X] = i.useState((null == V ? void 0 : V.coverImage) == null), Z = (0, o.bG)([O.Ay, E.default], () => {
         var e;
         return O.Ay.isMember(null == V ? void 0 : V.guildId, null == (e = E.default.getCurrentUser()) ? void 0 : e.id)
     }, [V]), $ = (0, o.bG)([O.Ay], () => (null == V ? void 0 : V.authorId) != null ? O.Ay.getMember(V.guildId, V.authorId) : null), ee = (0, m.A)((null == $ ? void 0 : $.avatarDecoration) != null ? null == $ ? void 0 : $.avatarDecoration : null == V || null == (l = V.user) ? void 0 : l.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -93,11 +93,11 @@ function k(e) {
             media_post_id: V.threadId,
             channel_id: B.id,
             can_access: V.canAccess,
-            is_member: X
-        }), V.canAccess ? (0, h.A)(N.BVt.CHANNEL(V.guildId, V.threadId, V.messageId)) : X ? (0, h.A)(N.BVt.CHANNEL(V.guildId, V.parentChannelId)) : await C.Z2(V.guildId, {}, {
+            is_member: Z
+        }), V.canAccess ? (0, _.A)(N.BVt.CHANNEL(V.guildId, V.threadId, V.messageId)) : Z ? (0, _.A)(N.BVt.CHANNEL(V.guildId, V.parentChannelId)) : await C.Z2(V.guildId, {}, {
             channelId: V.parentChannelId
         }))
-    }, [V, B, X]);
+    }, [V, B, Z]);
     if (null == V) return null;
     let ed = (0, j.F_)({
             avatarDecoration: ee,
@@ -109,7 +109,7 @@ function k(e) {
             el.enabled || es(e => !e)
         },
         ef = V.coverImage,
-        eg = null != ef && (0, _.ge)(ef);
+        eg = null != ef && (0, h.ge)(ef);
     return (0, r.jsxs)("div", {
         className: R.wb,
         children: [(0, r.jsxs)("div", {
@@ -123,7 +123,7 @@ function k(e) {
                     [R.p6]: V.shouldSpoiler
                 }),
                 onContextMenu: W,
-                onError: () => Z(!0)
+                onError: () => X(!0)
             }) : (0, r.jsx)(g.A, {
                 src: !(Y && (K || q)) && eg ? "".concat(ef, "?format=png") : ef,
                 backgroundSrc: "".concat(ef, "?format=png"),
@@ -134,7 +134,7 @@ function k(e) {
                 }),
                 imageChildClassName: R.q_,
                 onContextMenu: W,
-                onError: () => Z(!0)
+                onError: () => X(!0)
             })), null != V.coverImageOverlayText && (0, r.jsx)(u.DUT, {
                 onClick: eu,
                 children: (0, r.jsx)("div", {

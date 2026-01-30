@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 665816, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     i: () => b
@@ -17,9 +17,9 @@ var i = n(503698),
     m = n(652215),
     f = n(985018),
     g = n(933674),
-    h = n(956324);
+    _ = n(956324);
 
-function _(e) {
+function h(e) {
     let {
         questId: t,
         questContent: n,
@@ -91,7 +91,7 @@ function b(e) {
                 color: "text-default",
                 className: g.__invalid_mobileWebCopy,
                 children: i
-            }), (0, r.jsx)(_, {
+            }), (0, r.jsx)(h, {
                 questId: t,
                 questContent: a,
                 fullWidth: "lg" !== u
@@ -99,7 +99,7 @@ function b(e) {
         }), (0, r.jsx)("div", {
             className: g.Dg,
             children: (0, r.jsx)("img", {
-                src: h,
+                src: _,
                 alt: "",
                 className: g.Wg
             })

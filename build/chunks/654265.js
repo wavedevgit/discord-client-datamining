@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 654265, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => p
@@ -16,7 +16,7 @@ var r = n(64700),
 function p(e) {
     let [t, n] = r.useState(!1), [p, m] = r.useState(!1), f = s.default.cast(e), {
         joinRequest: g,
-        guild: h
+        guild: _
     } = (0, i.cf)([c.A, u.A, l.A, a.A], () => {
         var e;
         let t = c.A.getRequest(f);
@@ -33,14 +33,14 @@ function p(e) {
         }
     });
     return r.useEffect(() => {
-        null != h || p || (m(!0), o.A.fetchRequestToJoinGuilds())
-    }, [h, p]), r.useEffect(() => {
+        null != _ || p || (m(!0), o.A.fetchRequestToJoinGuilds())
+    }, [_, p]), r.useEffect(() => {
         null == g && (n(!0), o.A.fetchGuildJoinRequest(f).finally(() => {
             n(!1)
         }))
     }, [g, f]), {
         loading: t,
         joinRequest: g,
-        joinRequestGuild: h
+        joinRequestGuild: _
     }
 }

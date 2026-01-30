@@ -1,14 +1,14 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 567971, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => s
+    A: () => o
 });
 var r = n(627968),
     l = n(397927),
     a = n(985018),
     i = n(420255);
 
-function s() {
+function o() {
     return (0, r.jsx)("div", {
         className: i.k,
         children: (0, r.jsx)(l.Text, {

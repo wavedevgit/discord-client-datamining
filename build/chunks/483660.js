@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 483660, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var r = n(627968),
     i = n(64700),
@@ -17,22 +17,22 @@ var r = n(627968),
     f = n(985018),
     g = n(563111);
 
-function h(e) {
+function _(e) {
     let {
         guild: t,
         channel: n,
-        message: h
-    } = e, _ = d.A.getGuildId(), b = u.A.getChannelId(_), A = i.useCallback(() => {
+        message: _
+    } = e, h = d.A.getGuildId(), b = u.A.getChannelId(h), A = i.useCallback(() => {
         var e;
         p.default.track(m.HAw.CHANNEL_LINK_PREVIEW_JOINED, {
-            author_id: null == (e = h.author) ? void 0 : e.id,
+            author_id: null == (e = _.author) ? void 0 : e.id,
             link_guild_id: t.id,
             link_channel_id: n.id,
             link_channel_type: n.type,
-            guild_id: _,
+            guild_id: h,
             channel_id: b
         }), (0, s.i)(t.id, n.id), a.default.selectVoiceChannel(n.id)
-    }, [h, t, n, _, b]), y = (0, r.jsx)(c.A.Channel, {
+    }, [_, t, n, h, b]), y = (0, r.jsx)(c.A.Channel, {
         channel: n
     });
     return (0, r.jsx)(c.A, {

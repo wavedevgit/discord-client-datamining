@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 443642, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => O
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(256449),
     f = n(842086),
     g = n(148355),
-    h = n(552117),
-    _ = n(652215),
+    _ = n(552117),
+    h = n(652215),
     b = n(788868),
     A = n(444736);
 
@@ -79,7 +79,7 @@ let x = (0, p.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                     onRequestClose: () => {
                         E(!0)
                     },
-                    renderPopout: e => (0, r.jsx)(h.A, v(y({}, e), {
+                    renderPopout: e => (0, r.jsx)(_.A, v(y({}, e), {
                         renderableSticker: t,
                         channel: n,
                         refreshPositionKey: () => C(String(Date.now()))
@@ -95,7 +95,7 @@ let x = (0, p.xI)(a.A.STICKERS_CONSTANTS_STICKER_DIMENSION),
                             "aria-label": !1,
                             onTooltipShow: () => {
                                 var e;
-                                null != (e = I) && c.Ay.trackWithMetadata(_.HAw.EXPRESSION_TOOLTIP_VIEWED, {
+                                null != (e = I) && c.Ay.trackWithMetadata(h.HAw.EXPRESSION_TOOLTIP_VIEWED, {
                                     type: b.e.STICKER_IN_MESSAGE_HOVER,
                                     expression_id: e.id,
                                     expression_name: e.name,

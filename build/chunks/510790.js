@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 510790, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     f: () => C
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(520117),
     f = n(793943),
     g = n(763754),
-    h = n(973654),
-    _ = n(954571),
+    _ = n(973654),
+    h = n(954571),
     b = n(467135),
     A = n(644235),
     y = n(153469),
@@ -43,13 +43,13 @@ let j = e => e.map(e => "#".concat(e)),
                 fullWidth: !0,
                 variant: "primary",
                 onClick: () => {
-                    _.default.track(v.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, f.nf)(f.HP.CUSTOM_THEME, {
+                    h.default.track(v.HAw.CUSTOM_THEME_SHARE_PREVIEWED, {}), (0, f.nf)(f.HP.CUSTOM_THEME, {
                         from: f.xv.SHARE_MESSAGE
                     }), i({
                         colors: j(n.colors),
                         chassisMixAmount: n.base_mix,
                         gradientAngle: n.gradient_angle
-                    }), (0, h.GQ)((0, A.PC)(n.base_theme))
+                    }), (0, _.GQ)((0, A.PC)(n.base_theme))
                 }
             })]
         })
@@ -59,9 +59,9 @@ let j = e => e.map(e => "#".concat(e)),
                 message: f
             } = e,
             {
-                sharedClientTheme: h
+                sharedClientTheme: _
             } = f,
-            _ = (0, g.Ay)(f),
+            h = (0, g.Ay)(f),
             b = i.useMemo(() => (0, l.once)(() => {
                 (0, p.x)({
                     type: a.ImpressionTypes.VIEW,
@@ -78,9 +78,9 @@ let j = e => e.map(e => "#".concat(e)),
             }),
             v = i.useMemo(() => {
                 var e;
-                return void 0 === h ? "" : (0, y.V9)(j(h.colors), null != (e = h.gradient_angle) ? e : 0)
-            }, [h]);
-        return void 0 === h ? null : (0, r.jsxs)("div", {
+                return void 0 === _ ? "" : (0, y.V9)(j(_.colors), null != (e = _.gradient_angle) ? e : 0)
+            }, [_]);
+        return void 0 === _ ? null : (0, r.jsxs)("div", {
             className: E.pS,
             ref: A,
             children: [(0, r.jsx)("div", {
@@ -100,7 +100,7 @@ let j = e => e.map(e => "#".concat(e)),
                     className: E.Tb,
                     children: (t = "".concat(O.intl.format(x.default.fQPSEf, {
                         username: "__USERNAME__"
-                    })), n = f.author, u = _.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
+                    })), n = f.author, u = h.nick, t.split(" ").map((e, t) => "__USERNAME__" !== e ? (0, r.jsxs)(i.Fragment, {
                         children: [e, " "]
                     }, t) : (0, r.jsxs)("span", {
                         className: E.H,

@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 584584, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => j
@@ -14,8 +14,8 @@ var r, i, l = n(735438),
     m = n(587895),
     f = n(15285),
     g = n(287809),
-    h = n(469778),
-    _ = n(67480),
+    _ = n(469778),
+    h = n(67480),
     b = n(652215);
 let A = "DetectedOffPlatformPremiumPerksStore",
     y = {},
@@ -35,12 +35,12 @@ function O() {
             m.A.isFetchingApplication(n) || m.A.didFetchingApplicationFail(n) || p.Ay.fetchApplication(n);
             continue
         }
-        let i = _.A.get(t);
+        let i = h.A.get(t);
         if (null == i) {
-            _.A.isFetching(t) || _.A.didFetchingSkuFail(t) || d.EX(r.id, t);
+            h.A.isFetching(t) || h.A.didFetchingSkuFail(t) || d.EX(r.id, t);
             continue
         }
-        h.A.applicationIdsFetching.has(r.id) || h.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = !0) : (y[t] = {
+        _.A.applicationIdsFetching.has(r.id) || _.A.isEntitledToSku(g.default.getCurrentUser(), t, r.id, r.id) || !i.available ? null != y[t] && (delete y[t], e = !0) : (y[t] = {
             skuId: t,
             applicationId: n
         }, e = !0)
@@ -50,7 +50,7 @@ function O() {
 class E extends(r = s.Ay.Store) {
     initialize() {
         var e;
-        this.waitFor(m.A, h.A, f.Ay, _.A, g.default), x = null != (e = o.w.get(A)) ? e : x
+        this.waitFor(m.A, _.A, f.Ay, h.A, g.default), x = null != (e = o.w.get(A)) ? e : x
     }
     getDetectedOffPlatformPremiumPerks() {
         return a().values(y)
@@ -88,7 +88,7 @@ let j = new E(c.h, {
                         skuId: n,
                         applicationId: r
                     }
-                    of b.m_i) r !== t || x.includes(n) || null == v[n] && (h.A.applicationIdsFetched.has(r) || h.A.applicationIdsFetching.has(r) || null != h.A.getForSku(n) || u.LM(r), v[n] = {
+                    of b.m_i) r !== t || x.includes(n) || null == v[n] && (_.A.applicationIdsFetched.has(r) || _.A.applicationIdsFetching.has(r) || null != _.A.getForSku(n) || u.LM(r), v[n] = {
                     skuId: n,
                     applicationId: r
                 }, e = !0);

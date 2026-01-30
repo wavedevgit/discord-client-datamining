@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 93474, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => O
@@ -23,11 +23,11 @@ function f(e, t, n) {
     }) : e[t] = n, e
 }
 let g = {},
-    h = 0,
-    _ = {},
+    _ = 0,
+    h = {},
     b = {},
     A = e => {
-        null != g[e] && delete g[e], h++
+        null != g[e] && delete g[e], _++
     };
 
 function y(e) {
@@ -40,7 +40,7 @@ function y(e) {
         isBlockedEdit: (0, a.Qn)(r),
         messageData: r,
         errorMessage: (0, d.PD)(r, i)
-    }, g[t] = n, h++, !0
+    }, g[t] = n, _++, !0
 }
 
 function v(e) {
@@ -64,12 +64,12 @@ function v(e) {
 }
 class x extends(r = i.Ay.PersistedStore) {
     initialize(e) {
-        this.waitFor(o.A, c.A), null != e && (g = e.automodFailedMessages, _ = e.mentionRaidDetectionByGuild)
+        this.waitFor(o.A, c.A), null != e && (g = e.automodFailedMessages, h = e.mentionRaidDetectionByGuild)
     }
     getState() {
         return {
             automodFailedMessages: g,
-            mentionRaidDetectionByGuild: _,
+            mentionRaidDetectionByGuild: h,
             lastIncidentAlertMessage: b
         }
     }
@@ -78,11 +78,11 @@ class x extends(r = i.Ay.PersistedStore) {
         return null == e ? null : null != (t = g[e]) ? t : null
     }
     getMessagesVersion() {
-        return h
+        return _
     }
     getMentionRaidDetected(e) {
         var t;
-        return null != (t = _[e]) ? t : null
+        return null != (t = h[e]) ? t : null
     }
     getLastIncidentAlertMessage(e) {
         var t;
@@ -92,7 +92,7 @@ class x extends(r = i.Ay.PersistedStore) {
 f(x, "displayName", "GuildAutomodMessageStore"), f(x, "persistKey", "GuildAutomodMessages");
 let O = new x(l.h, {
     CONNECTION_OPEN: function(e) {
-        return 0 !== Object.keys(g).length && (g = {}, h++, !0)
+        return 0 !== Object.keys(g).length && (g = {}, _++, !0)
     },
     LOAD_MESSAGES_SUCCESS: v,
     LOCAL_MESSAGES_LOADED: v,
@@ -128,7 +128,7 @@ let O = new x(l.h, {
             decisionId: n,
             suspiciousMentionActivityUntil: r
         } = e;
-        return _[t] = {
+        return h[t] = {
             guildId: t,
             decisionId: n,
             suspiciousMentionActivityUntil: r
@@ -138,6 +138,6 @@ let O = new x(l.h, {
         let {
             guildId: t
         } = e;
-        return delete _[t], !0
+        return delete h[t], !0
     }
 })

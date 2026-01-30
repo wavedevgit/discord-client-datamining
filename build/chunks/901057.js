@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 901057, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => y
@@ -17,8 +17,8 @@ var i = n(311907),
     m = n(734057),
     f = n(71393),
     g = n(994500),
-    h = n(287809),
-    _ = n(147036),
+    _ = n(287809),
+    h = n(147036),
     b = n(449054),
     A = n(652215);
 
@@ -29,7 +29,7 @@ function y(e) {
         beforeTransition: y,
         className: v,
         openChatWithoutConnecting: x
-    } = e, O = (0, i.bG)([h.default, g.A], () => null == t ? "" : (0, c.m1)(t, h.default, g.A), [t]);
+    } = e, O = (0, i.bG)([_.default, g.A], () => null == t ? "" : (0, c.m1)(t, _.default, g.A), [t]);
     return (0, r.jsx)(l.m, {
         "data-pending-richtooltip-migration": !0,
         __unsupportedReactNodeAsText: O,
@@ -56,7 +56,7 @@ function y(e) {
                     }(0, d.pX)(A.BVt.CHANNEL(e, t))
                 }(null == t ? void 0 : t.guild_id, null == t ? void 0 : t.id, x))
             },
-            iconType: (0, _.QG)(t),
+            iconType: (0, h.QG)(t),
             children: O
         })
     })

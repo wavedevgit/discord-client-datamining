@@ -1,44 +1,44 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 67851 **/
 /** chunk id: 532197, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => f
+    A: () => b
 });
-var r, i, l = n(627968),
-    a = n(64700),
-    s = n(503698),
-    o = n.n(s),
+var r, l, a = n(627968),
+    i = n(64700),
+    o = n(503698),
+    s = n.n(o),
     c = n(397927),
-    u = n(262633);
-let d = {
+    d = n(262633);
+let u = {
         UP: "up",
         RIGHT: "right",
         DOWN: "down",
         LEFT: "left"
     },
-    p = {
-        [d.UP]: "",
-        [d.RIGHT]: u.pG,
-        [d.DOWN]: u.TR,
-        [d.LEFT]: u.kb
+    _ = {
+        [u.UP]: "",
+        [u.RIGHT]: d.pG,
+        [u.DOWN]: d.TR,
+        [u.LEFT]: d.kb
     };
-class m extends(i = a.PureComponent) {
+class m extends(l = i.PureComponent) {
     render() {
         let {
             direction: e,
             className: t
         } = this.props;
-        return (0, l.jsx)(c.z$m, {
+        return (0, a.jsx)(c.z$m, {
             size: "md",
             color: "currentColor",
-            className: o()(t, {
-                [p[e]]: !0
+            className: s()(t, {
+                [_[e]]: !0
             })
         })
     }
 }(r = "Directions") in m ? Object.defineProperty(m, r, {
-    value: d,
+    value: u,
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : m[r] = d;
-let f = m
+}) : m[r] = u;
+let b = m

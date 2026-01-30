@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 448894, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => O
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(95701),
     f = n(616356),
     g = n(967198),
-    h = n(860689),
-    _ = n(427262),
+    _ = n(860689),
+    h = n(427262),
     b = n(168428),
     A = n(652215),
     y = n(172799),
@@ -62,10 +62,10 @@ function O(e) {
         B = null != E;
     if (null == E) {
         if (null == l.guild) return (0, r.jsx)(b.A, {});
-        E = (0, h.DY)(l.guild)
+        E = (0, _.DY)(l.guild)
     }
     let F = null != l.channel ? (0, m.OY)(l.channel) : null,
-        H = _.Ay.getName(M),
+        H = h.Ay.getName(M),
         V = "active";
     B && !D ? n = k ? v.intl.string(v.t.oBLoZJ) : v.intl.formatToPlainString(v.t["0QJmA+"], {
         name: H

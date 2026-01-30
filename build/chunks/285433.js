@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 285433, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => N
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(765548),
     f = n(341915),
     g = n(714510),
-    h = n(890687),
-    _ = n(18437),
+    _ = n(890687),
+    h = n(18437),
     b = n(590202),
     A = n(918338),
     y = n(270045),
@@ -50,8 +50,8 @@ let T = (0, s.animated)(u.abt),
         } = (0, d.Ay)(), [F, H] = i.useState(null), [V, z] = i.useState(null), W = (0, m.A)(e => {
             let t = e.target;
             H(t.offsetWidth), z(t.scrollWidth)
-        }), K = (0, p.w)(W), Y = (0, E.a3)(N), q = N === f.uF.QUESTS_EMBED, J = (0, g.wT)(l, j.rE.QUESTS_CARD, N, U), Q = (null == (t = l.userStatus) ? void 0 : t.completedAt) != null, Z = (0, _.Ut)(), X = (0, h.S5)(l.config.expiresAt), $ = (0, h.S5)(l.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), et = e => {
-            e.stopPropagation(), e.currentTarget.blur(), k(), Z({
+        }), K = (0, p.w)(W), Y = (0, E.a3)(N), q = N === f.uF.QUESTS_EMBED, J = (0, g.wT)(l, j.rE.QUESTS_CARD, N, U), Q = (null == (t = l.userStatus) ? void 0 : t.completedAt) != null, X = (0, h.Ut)(), Z = (0, _.S5)(l.config.expiresAt), $ = (0, _.S5)(l.config.rewardsConfig.rewardsExpireAt), ee = i.useMemo(() => null != l.config.cosponsorMetadata, [l]), et = e => {
+            e.stopPropagation(), e.currentTarget.blur(), k(), X({
                 questId: l.id,
                 questContent: N,
                 questContentCTA: D ? b.Cy.COLLAPSE : b.Cy.EXPAND,
@@ -177,9 +177,9 @@ let T = (0, s.animated)(u.abt),
                                     children: Q ? I.intl.formatToPlainString(I.t.APddvF, {
                                         expirationDate: $
                                     }) : n ? I.intl.formatToPlainString(I.t.v7xMw7, {
-                                        expirationDate: X
+                                        expirationDate: Z
                                     }) : I.intl.formatToPlainString(I.t["pX+fmn"], {
-                                        expirationDate: X
+                                        expirationDate: Z
                                     })
                                 })]
                             })]

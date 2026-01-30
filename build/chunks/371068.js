@@ -1,25 +1,24 @@
-/** Chunk was on 89455 **/
-/** chunk id: 371068, original params: e,n,t (module,exports,require) **/
-"use strict";
-t.d(n, {
-    A: () => s
+/** Chunk was on 89488 **/
+/** chunk id: 371068, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    A: () => _
 });
-var r = t(627968);
-t(64700);
-var i = t(503698),
-    o = t.n(i),
-    a = t(155718),
-    l = t(907093);
+var r = n(627968);
+n(64700);
+var i = n(503698),
+    o = n.n(i),
+    a = n(155718),
+    l = n(907093);
 
-function s(e) {
+function _(e) {
     let {
-        divider: n,
-        spacing: t
+        divider: t,
+        spacing: n
     } = e;
     return (0, r.jsx)("div", {
         className: o()({
-            [l.f]: t === a.C8.LARGE,
-            [l.y]: n
+            [l.f]: n === a.C8.LARGE,
+            [l.y]: t
         })
     })
 }

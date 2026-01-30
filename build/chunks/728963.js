@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 728963, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => I
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(332173),
     f = n(657331),
     g = n(734057),
-    h = n(317525),
-    _ = n(71393),
+    _ = n(317525),
+    h = n(71393),
     b = n(287809),
     A = n(763754);
 n(827669);
@@ -84,7 +84,7 @@ let I = i.memo(function(e) {
             onCopy: D,
             copyRef: L
         } = (0, d.A)(N, null == w || null == (t = w.application_command) ? void 0 : t.id),
-        M = (0, s.bG)([_.A], () => _.A.getGuild(N.guild_id), [N.guild_id]);
+        M = (0, s.bG)([h.A], () => h.A.getGuild(N.guild_id), [N.guild_id]);
     if (i.useEffect(() => {
             (null == w || w.type === c.kc.CHAT && void 0 === w.application_command) && p.S7(N.id, P)
         }, [N.id, P, w]), null == w) T = (0, r.jsx)(o.y$y, {
@@ -96,7 +96,7 @@ let I = i.memo(function(e) {
             t = Object.fromEntries((null != (n = null == (I = w.application_command) ? void 0 : I.options) ? n : []).map(e => [e.name, e]));
         for (let n of null != (l = w.options) ? l : []) e = e.concat(function e(t) {
             var n, l, a, s, u, d, p;
-            let _, {
+            let h, {
                     option: v,
                     channel: I,
                     guild: S,
@@ -131,7 +131,7 @@ let I = i.memo(function(e) {
                         t = b.default.getUser(e);
                     if (null != t) {
                         let e = (0, A.FT)(t, I);
-                        _ = (0, r.jsxs)(m.A, O(x({}, j), {
+                        h = (0, r.jsxs)(m.A, O(x({}, j), {
                             onClick: () => (0, f.openUserProfileModal)({
                                 userId: t.id,
                                 guildId: I.guild_id,
@@ -147,30 +147,30 @@ let I = i.memo(function(e) {
                 case c.n4.CHANNEL: {
                     let e = v.value.toString(),
                         t = g.A.getChannel(e);
-                    null != t && (_ = (0, r.jsxs)(m.A, O(x({}, j), {
+                    null != t && (h = (0, r.jsxs)(m.A, O(x({}, j), {
                         children: ["#", t.name]
                     })));
                     break
                 }
                 case c.n4.ROLE: {
                     let e = v.value.toString(),
-                        t = null != S ? h.A.getRole(S.id, e) : void 0;
-                    null != t && (_ = (0, r.jsxs)(m.A, O(x({}, j), {
+                        t = null != S ? _.A.getRole(S.id, e) : void 0;
+                    null != t && (h = (0, r.jsxs)(m.A, O(x({}, j), {
                         children: ["@", t.name]
                     })));
                     break
                 }
                 case c.n4.MENTIONABLE: {
                     let e = v.value.toString(),
-                        t = null != S ? h.A.getRole(S.id, e) : void 0;
-                    if (null != t) _ = (0, r.jsxs)(m.A, {
+                        t = null != S ? _.A.getRole(S.id, e) : void 0;
+                    if (null != t) h = (0, r.jsxs)(m.A, {
                         children: ["@", t.name]
                     });
                     else {
                         let t = b.default.getUser(e);
                         if (null != t) {
                             let e = (0, A.FT)(t, I);
-                            _ = (0, r.jsxs)(m.A, O(x({}, j), {
+                            h = (0, r.jsxs)(m.A, O(x({}, j), {
                                 onClick: () => (0, f.openUserProfileModal)({
                                     userId: t.id,
                                     guildId: I.guild_id,
@@ -183,17 +183,17 @@ let I = i.memo(function(e) {
                     break
                 }
                 case c.n4.ATTACHMENT:
-                    _ = C(y.intl.string(y.t.nONJVc));
+                    h = C(y.intl.string(y.t.nONJVc));
                     break;
                 default: {
                     let e = null == P || null == (d = P.choices) ? void 0 : d.find(e => e.value === v.value);
                     null != e && (D = null != (p = e.name_localized) ? p : e.name)
                 }
             }
-            return null == _ && (_ = C(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
+            return null == h && (h = C(null == D ? void 0 : D.toString())), [(0, r.jsxs)(i.Fragment, {
                 children: [(0, r.jsxs)(o.Text, O(x({}, E), {
                     children: [" ", null != (n = null == P ? void 0 : P.name_localized) ? n : v.name, ": "]
-                })), _]
+                })), h]
             }, R)]
         }({
             option: n,

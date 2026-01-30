@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 866630, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 }), n(896048);
 var r = n(627968),
     i = n(64700),
@@ -16,67 +16,66 @@ var r = n(627968),
     m = n(260821),
     f = n(233080),
     g = n(710504);
-let h = i.memo(function(e) {
+let _ = i.memo(function(e) {
         let t, n, {
                 useChatFontScaling: i,
                 hideEmoji: l,
                 emoji: s,
-                className: h,
-                count: _,
+                className: _,
+                count: h,
                 me: b,
                 me_burst: A,
                 burst_count: y,
                 burst_colors: v,
                 readOnly: x,
                 isLurking: O,
-                isGuest: E,
-                isPendingMember: j,
-                type: C,
-                emojiSize: I
+                isPendingMember: E,
+                type: j,
+                emojiSize: C
             } = e,
-            S = C === p.v.BURST,
-            T = (0, m.IN)(b, A, C),
-            N = (0, d.g)(S && null != v ? v : []),
-            P = i ? g : f,
-            w = S ? y : _,
-            R = (0, u.x)(w, m.$Z),
-            D = {};
-        if (S && null != N) {
-            var L;
+            I = j === p.v.BURST,
+            S = (0, m.IN)(b, A, j),
+            T = (0, d.g)(I && null != v ? v : []),
+            N = i ? g : f,
+            P = I ? y : h,
+            w = (0, u.x)(P, m.$Z),
+            R = {};
+        if (I && null != T) {
+            var D;
             let {
                 accentColor: e,
                 backgroundColor: r,
                 opacity: i
-            } = N, l = null != (L = (0, o.xp)(null != r ? r : "", i)) ? L : "";
-            T && (D.borderColor = r), D.background = l, t = e, n = e
+            } = T, l = null != (D = (0, o.xp)(null != r ? r : "", i)) ? D : "";
+            S && (R.borderColor = r), R.background = l, t = e, n = e
         }
-        let M = {
-            minWidth: R,
+        let L = {
+            minWidth: w,
             color: t,
             borderColor: n
         };
         return (0, r.jsxs)("div", {
-            className: a()(P.reaction, P.reactionInner, h, {
-                [P.reactionMe]: T,
-                [P.reactionReadOnly]: x && !O && !j && !E
+            className: a()(N.reaction, N.reactionInner, _, {
+                [N.reactionMe]: S,
+                [N.reactionReadOnly]: x && !O && !E
             }),
-            style: D,
+            style: R,
             children: [(0, r.jsx)(c.A, {
                 className: a()({
-                    [P.hideEmoji]: l
+                    [N.hideEmoji]: l
                 }),
                 emojiId: s.id,
                 emojiName: s.name,
-                size: I,
-                animated: S && s.animated
+                size: C,
+                animated: I && s.animated
             }), (0, r.jsx)("div", {
-                className: P.reactionCount,
-                style: M,
-                children: w
+                className: N.reactionCount,
+                style: L,
+                children: P
             })]
         })
     }),
-    _ = i.memo(function(e) {
+    h = i.memo(function(e) {
         let {
             showImmediate: t,
             reactions: n
@@ -100,7 +99,7 @@ let h = i.memo(function(e) {
             !e || a || c || u(() => {
                 o(!0)
             })
-        }, [a, c]), f = (0, s.K)(d), g = a && !c || t ? m.qT : h;
+        }, [a, c]), f = (0, s.K)(d), g = a && !c || t ? m.qT : _;
         return (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)("div", {
                 ref: f

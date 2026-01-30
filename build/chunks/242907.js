@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 242907, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var r = n(627968);
 n(64700);
@@ -17,10 +17,10 @@ var i = n(158954),
     m = n(427262),
     f = n(652215),
     g = n(985018),
-    h = n(563111);
+    _ = n(563111);
 
-function _(e) {
-    let t, n, _, {
+function h(e) {
+    let t, n, h, {
             author: b,
             banned: A,
             channelId: y
@@ -39,7 +39,7 @@ function _(e) {
             }
             return d.A.can(f.xBc.SEND_MESSAGES, e)
         });
-    return O ? (t = g.intl.string(g.t["F/OLvL"]), _ = g.intl.string(g.t.C89OLE)) : (_ = g.intl.string(g.t.YVub5y), A ? t = g.intl.string(g.t["57nBty"]) : null != x && E ? (t = g.intl.formatToPlainString(g.t["9Akp1s"], {
+    return O ? (t = g.intl.string(g.t["F/OLvL"]), h = g.intl.string(g.t.C89OLE)) : (h = g.intl.string(g.t.YVub5y), A ? t = g.intl.string(g.t["57nBty"]) : null != x && E ? (t = g.intl.formatToPlainString(g.t["9Akp1s"], {
         username: x
     }), n = (0, r.jsx)(i.$nd, {
         onClick: function() {
@@ -56,10 +56,10 @@ function _(e) {
         text: g.intl.string(g.t.P8tvKG)
     })) : t = g.intl.string(g.t["SMJr+a"])), (0, r.jsxs)(s.A, {
         children: [(0, r.jsx)(s.A.Header, {
-            text: _
+            text: h
         }), (0, r.jsxs)(s.A.Body, {
             children: [(0, r.jsxs)("div", {
-                className: h.iH,
+                className: _.iH,
                 children: [(0, r.jsx)(s.A.Icon, {
                     expired: !0
                 }), (0, r.jsx)(s.A.Info, {

@@ -1,29 +1,29 @@
-/** Chunk was on 92917 **/
-/** chunk id: 746350, original params: e,t,n (module,exports,require) **/
-n.d(t, {
+/** Chunk was on 66009 **/
+/** chunk id: 746350, original params: t,e,n (module,exports,require) **/
+n.d(e, {
     M: () => c
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(503698),
-    l = n.n(i),
-    a = n(397927),
-    s = n(76120),
-    o = n(910200);
+var l = n(503698),
+    a = n.n(l),
+    r = n(397927),
+    o = n(76120),
+    s = n(910200);
 
-function c(e) {
+function c(t) {
     let {
-        text: t
-    } = e;
-    return (0, r.jsxs)("div", {
-        className: l()(o.oR, s.o),
-        children: [(0, r.jsx)(a.lmn, {
-            color: a.LU0.colors.TEXT_BRAND
-        }), (0, r.jsx)(a.Text, {
-            className: o.__invalid_content,
+        text: e
+    } = t;
+    return (0, i.jsxs)("div", {
+        className: a()(s.oR, o.o),
+        children: [(0, i.jsx)(r.lmn, {
+            color: r.LU0.colors.TEXT_BRAND
+        }), (0, i.jsx)(r.Text, {
+            className: s.__invalid_content,
             color: "text-strong",
             variant: "text-md/normal",
-            children: t
+            children: e
         })]
     })
 }

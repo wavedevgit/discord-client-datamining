@@ -1,48 +1,48 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 90948 **/
 /** chunk id: 918338, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => p
+    A: () => m
 });
-var r = n(627968),
-    i = n(64700),
-    l = n(503698),
-    a = n.n(l),
-    s = n(579473),
+var i = n(627968),
+    a = n(64700),
+    r = n(503698),
+    s = n.n(r),
+    l = n(579473),
     o = n(415441),
-    c = n(516226),
-    u = n(985018),
-    d = n(347564);
+    d = n(516226),
+    c = n(985018),
+    u = n(347564);
 
-function p(e) {
+function m(e) {
     let {
         quest: t,
         isInteracting: n,
-        hideAssets: l,
-        imageSize: p,
-        containerClassName: m,
-        imageClassName: f,
-        assetRef: g
-    } = e, h = i.useMemo(() => (0, s.tW)(t, s.fY.HERO_IMAGE), [t]), _ = i.useMemo(() => (0, s.tW)(t, s.fY.HERO_VIDEO), [t]), {
-        onAssetLoadComplete: b
-    } = i.useContext(c.M);
-    return (0, r.jsx)("div", {
-        className: a()(d.l1, m),
-        children: !l && (0, r.jsx)(o.N, {
-            imageAsset: null != h ? {
-                asset: h,
+        hideAssets: r,
+        imageSize: m,
+        containerClassName: f,
+        imageClassName: x,
+        assetRef: _
+    } = e, g = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_IMAGE), [t]), v = a.useMemo(() => (0, l.tW)(t, l.fY.HERO_VIDEO), [t]), {
+        onAssetLoadComplete: h
+    } = a.useContext(d.M);
+    return (0, i.jsx)("div", {
+        className: s()(u.l1, f),
+        children: !r && (0, i.jsx)(o.N, {
+            imageAsset: null != g ? {
+                asset: g,
                 assetId: "QuestTileBanner",
-                alt: u.intl.string(u.t.jnijWz),
-                className: a()(d.LO, f)
+                alt: c.intl.string(c.t.jnijWz),
+                className: s()(u.LO, x)
             } : void 0,
-            videoAsset: null != _ ? {
-                asset: _,
+            videoAsset: null != v ? {
+                asset: v,
                 assetId: "QuestTileBanner_heroAnimated",
-                className: d.G9
+                className: u.G9
             } : void 0,
             showVideo: n,
-            imageSize: p,
-            onLoadComplete: b,
-            assetRef: g
+            imageSize: m,
+            onLoadComplete: h,
+            assetRef: _
         })
     })
 }

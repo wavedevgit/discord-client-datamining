@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 99072, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => E
@@ -17,8 +17,8 @@ var i = n(311907),
     m = n(72432),
     f = n(616356),
     g = n(760751),
-    h = n(383501),
-    _ = n(486020),
+    _ = n(383501),
+    h = n(486020),
     b = n(723702),
     A = n(661191),
     y = n(820672),
@@ -38,7 +38,7 @@ function E(e) {
         staticBannerSrc: T,
         videoBannerSrc: N,
         bannerAspectRatio: P
-    } = (0, d.f)(j), w = _.Ay.getApplicationIconURL({
+    } = (0, d.f)(j), w = h.Ay.getApplicationIconURL({
         id: j.id,
         icon: j.icon
     }), R = (0, i.bG)([p.Ay, g.A], () => p.Ay.getVisibleRunningGames().find(e => {
@@ -48,7 +48,7 @@ function E(e) {
         if (t === j.id) return !0;
         let n = g.A.getGameByApplication(j);
         return null != n && t === n.id
-    })), D = (0, i.bG)([f.A], () => f.A.getCurrentUserActiveStream()), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = A.default.extractTimestamp(E.id) + y.M < Date.now(), k = (0, r.jsx)(r.Fragment, {
+    })), D = (0, i.bG)([f.A], () => f.A.getCurrentUserActiveStream()), L = (0, i.bG)([_.A], () => _.A.getChannelId()), M = A.default.extractTimestamp(E.id) + y.M < Date.now(), k = (0, r.jsx)(r.Fragment, {
         children: (0, a.Wf)(E, C, t)
     }), {
         analyticsLocations: U

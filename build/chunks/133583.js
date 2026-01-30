@@ -109,7 +109,7 @@ function L(e) {
         analyticsLocations: U
     } = (0, d.Ay)(), {
         trackUserProfileWishlistAction: M
-    } = (0, x.NJ)(), F = (null == L ? void 0 : L.id) === n.id, H = !1 === n.nsfwAllowed, B = N.XR, [W, X] = l.useState(!0);
+    } = (0, x.NJ)(), F = (null == L ? void 0 : L.id) === n.id, B = !1 === n.nsfwAllowed, H = N.XR, [W, X] = l.useState(!0);
     l.useEffect(() => {
         (null == G ? void 0 : G.visibility) != null && X(G.visibility === i.a.PUBLIC)
     }, [null == G ? void 0 : G.visibility]);
@@ -188,7 +188,7 @@ function L(e) {
                     variant: "primary",
                     size: "sm",
                     icon: c.U1X,
-                    text: B === N.XR ? C.intl.string(C.t["kq/75v"]) : C.intl.string(C.t.apFNLU),
+                    text: H === N.XR ? C.intl.string(C.t["kq/75v"]) : C.intl.string(C.t.apFNLU),
                     onMouseDown: ee,
                     onClick: et
                 })]
@@ -231,7 +231,7 @@ function L(e) {
                             })
                         })
                     })
-                }), W && H && (0, r.jsx)(s.m, {
+                }), W && B && (0, r.jsx)(s.m, {
                     text: C.intl.string(C.t.d78ChW),
                     asContainer: !0,
                     children: (0, r.jsx)(c.vN3, {
@@ -252,7 +252,7 @@ function L(e) {
                 handleOpenShop: $,
                 handleOpenGameShop: et,
                 handleToggleWishlistVisibility: Q,
-                socialLayerStorefrontApplicationId: B
+                socialLayerStorefrontApplicationId: H
             }) : (0, r.jsx)(R, {
                 isSocialLayerStorefrontEnabled: V,
                 handleOpenShop: $,

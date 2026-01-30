@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 131724, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     D: () => m,
@@ -23,8 +23,8 @@ function m(e) {
         currentUserId: m,
         message: f,
         application: g,
-        isEmbeddedApplication: h,
-        isFrameApplication: _,
+        isEmbeddedApplication: _,
+        isFrameApplication: h,
         isGameLaunchable: b
     } = e;
     if (f.author.id === m || !(0, u.A)(n, f, g.id)) return {
@@ -36,7 +36,7 @@ function m(e) {
         canJoin: !1,
         remoteJoinPlatform: null
     };
-    if (h && _) return {
+    if (_ && h) return {
         canJoin: !0,
         remoteJoinPlatform: null
     };

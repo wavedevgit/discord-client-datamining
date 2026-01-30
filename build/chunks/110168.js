@@ -1,21 +1,21 @@
-/** Chunk was on 92917 **/
-/** chunk id: 110168, original params: e,t,n (module,exports,require) **/
-n.d(t, {
-    r: () => a
+/** Chunk was on 66009 **/
+/** chunk id: 110168, original params: t,e,n (module,exports,require) **/
+n.d(e, {
+    r: () => r
 });
-var r = n(627968);
+var i = n(627968);
 n(64700);
-var i = n(397927),
-    l = n(746350);
+var l = n(397927),
+    a = n(746350);
 
-function a(e) {
+function r(t) {
     let {
-        text: t,
+        text: e,
         id: n
-    } = e;
-    (0, i.showToast)((0, i.createToast)(t, i.ToastType.CUSTOM, {
-        component: (0, r.jsx)(l.M, {
-            text: t
+    } = t;
+    (0, l.showToast)((0, l.createToast)(e, l.ToastType.CUSTOM, {
+        component: (0, i.jsx)(a.M, {
+            text: e
         }, n)
     }))
 }

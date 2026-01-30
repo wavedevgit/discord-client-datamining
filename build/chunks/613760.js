@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 613760, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => b
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(354138),
     f = n(212534),
     g = n(652215),
-    h = n(985018),
-    _ = n(616078);
+    _ = n(985018),
+    h = n(616078);
 
 function b(e) {
     let {
@@ -51,23 +51,23 @@ function b(e) {
     }, [x, v, A, n.author.id, n.channel_id]), A) ? (0, r.jsxs)(c.A, {
         containerRef: j,
         children: [(0, r.jsx)(c.A.Header, {
-            text: h.intl.string(h.t.j4KtLa)
+            text: _.intl.string(_.t.j4KtLa)
         }), (0, r.jsx)(c.A.Body, {
             children: (0, r.jsxs)("div", {
-                className: _.k,
+                className: h.k,
                 children: [(0, r.jsx)(c.A.Icon, {
                     expired: !0
                 }), (0, r.jsx)(c.A.Info, {
                     expired: !0,
-                    title: h.intl.string(h.t.NaQLEx),
-                    children: h.intl.string(h.t["0H5OT2"])
+                    title: _.intl.string(_.t.NaQLEx),
+                    children: _.intl.string(_.t["0H5OT2"])
                 })]
             })
         })]
     }) : null == b || y === f.e.FETCHING ? (0, r.jsxs)(c.A, {
         containerRef: j,
         children: [(0, r.jsx)(c.A.Header, {
-            text: h.intl.string(h.t.m9hXGR)
+            text: _.intl.string(_.t.m9hXGR)
         }), (0, r.jsx)(c.A.Body, {
             resolving: !0
         })]

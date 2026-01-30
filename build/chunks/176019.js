@@ -2,7 +2,7 @@
 /** chunk id: 176019, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
     default: () => k,
-    waitForCSSLoad: () => L
+    waitForCSSLoad: () => x
 }), n(896048), n(65821);
 var r = n(627968),
     l = n(64700),
@@ -31,10 +31,10 @@ var r = n(627968),
     T = n(644434),
     P = n(652215);
 n(703552), n(921955);
-let x = !p.isPlatformEmbedded && !1,
+let L = !p.isPlatformEmbedded && !1,
     S = new c.A("AppOverlay");
 
-function L(e, t) {
+function x(e, t) {
     return new Promise((n, r) => {
         let l = Date.now();
         t.current = setInterval(() => {
@@ -96,8 +96,8 @@ let k = l.memo(function(e) {
         windowKey: c
     } = e;
     t = (0, a.bG)([u.A], () => u.A.getWindow(c)), (0, o.Ay)(() => {
-        if (null != t) return x && (t.document.hasFocus() && i.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", j), t.addEventListener("blur", D)), () => {
-            x && (t.removeEventListener("focus", j), t.removeEventListener("blur", D))
+        if (null != t) return L && (t.document.hasFocus() && i.A.setFocusedPID(h.DEV_PID, null), t.addEventListener("focus", j), t.addEventListener("blur", D)), () => {
+            L && (t.removeEventListener("focus", j), t.removeEventListener("blur", D))
         }
     });
     let b = function(e, t) {
@@ -117,18 +117,18 @@ let k = l.memo(function(e) {
                         unpinned_widget_types: _.A.getAllUnpinnedPinnedWidgets(t)
                     }), (0, v.Fd)()
                 }, [t]),
-                x = l.useRef(!1),
+                L = l.useRef(!1),
                 j = l.useRef(null),
                 D = l.useCallback(async (e, t) => {
                     try {
-                        if (await L(e, j), x.current) return;
+                        if (await x(e, j), L.current) return;
                         (0, N.A)("cssLoaded", !0)
                     } catch (e) {
                         S.error("Timed out waiting for CSS to load", e), i.A.setOverlayCrashed(O.A.getTargetPID(), e), (0, N.A)("errorMessage", "CSS failed load");
                         return
                     }
                     try {
-                        if (await w(e, t), x.current) return;
+                        if (await w(e, t), L.current) return;
                         (0, v.Mq)()
                     } catch (e) {
                         i.A.setOverlayCrashed(O.A.getTargetPID(), e), (0, N.A)("errorMessage", "showInactive failed");
@@ -136,7 +136,7 @@ let k = l.memo(function(e) {
                     }
                     await new Promise(t => {
                         e.setTimeout(() => t(), 100)
-                    }), x.current || (y(!0), T())
+                    }), L.current || (y(!0), T())
                 }, [T]),
                 k = l.useRef(!1);
             return l.useEffect(() => {
@@ -149,7 +149,7 @@ let k = l.memo(function(e) {
                     C.current = !0, (0, N.A)("reactInitializationStarted", !0), D(c, e)
                 }
             }, [D, b, e, c, s]), (0, o.l0)(() => {
-                clearInterval(j.current), x.current = !0
+                clearInterval(j.current), L.current = !0
             }), n = (0, a.bG)([A.A], () => A.A.windowSize(null != c ? (0, m.Q2)(c) : void 0)), r = (0, a.bG)([O.A], () => O.A.getFocusedWindowHandle()), l.useEffect(() => {
                 let e, t;
                 if (null != c && g && c.innerHeight === n.height && c.innerWidth === n.width) return e = c.requestAnimationFrame(() => {

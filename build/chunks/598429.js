@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 598429, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => j
@@ -15,8 +15,8 @@ var r, i = n(627968),
     m = n(651743),
     f = n(134861),
     g = n(194871),
-    h = n(723702),
-    _ = n(715671),
+    _ = n(723702),
+    h = n(715671),
     b = n(652215),
     A = n(985018),
     y = n(168785);
@@ -116,7 +116,7 @@ class E extends(r = l.PureComponent) {
                 variant: "secondary",
                 onClick: this.handleDropdownClick
             }) : null]
-        }) : o ? null : this.renderDisabledButton(A.intl.string(A.t["359Pbd"]), h.isPlatformEmbedded ? A.intl.string(A.t.NASLa3) : A.intl.string(A.t.o1bhkD))
+        }) : o ? null : this.renderDisabledButton(A.intl.string(A.t["359Pbd"]), _.isPlatformEmbedded ? A.intl.string(A.t.NASLa3) : A.intl.string(A.t.o1bhkD))
     }
     constructor(...e) {
         super(...e), v(this, "handleDropdownClick", e => {
@@ -145,7 +145,7 @@ class E extends(r = l.PureComponent) {
                 analyticsListSort: n,
                 analyticsListIndex: r
             } = this.props;
-            _.playApplication(e, t, {
+            h.playApplication(e, t, {
                 analyticsParams: {
                     location: this.analyticsLocation,
                     list_sort: n,

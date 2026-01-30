@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 341645, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => F
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(447031),
     f = n(956549),
     g = n(550151),
-    h = n(793574),
-    _ = n(688810),
+    _ = n(793574),
+    h = n(688810),
     b = n(392054),
     A = n(572211),
     y = n(178910),
@@ -62,7 +62,7 @@ let F = i.memo(function(e) {
         } = e,
         {
             analyticsLocations: F
-        } = (0, _.Ay)(h.A.ACTIVITY_INSTANCE_EMBED),
+        } = (0, h.Ay)(_.A.ACTIVITY_INSTANCE_EMBED),
         H = (0, u.p)(),
         V = (0, s.bG)([C.A], () => C.A.getChannel(O), [O]),
         z = (null == V || null == (n = V.isThread) ? void 0 : n.call(V)) ? null == V ? void 0 : V.parent_id : O,
@@ -78,7 +78,7 @@ let F = i.memo(function(e) {
         }), [z, d.id]),
         J = null == K ? void 0 : K.userIds,
         Q = (0, s.yK)([S.default], () => Array.from(null != J ? J : []).map(e => S.default.getUser(e)).filter(w.Vq), [J]),
-        Z = (0, s.bG)([I.A], () => {
+        X = (0, s.bG)([I.A], () => {
             if (null == J) return null;
             for (let e of J) {
                 let t = I.A.findActivity(e, e => e.application_id === d.id);
@@ -86,7 +86,7 @@ let F = i.memo(function(e) {
             }
             return null
         }, [d.id, J]),
-        X = null == Z ? void 0 : Z.details,
+        Z = null == X ? void 0 : X.details,
         $ = i.useMemo(() => {
             let e = new E.Ay(d);
             return null == e.embeddedActivityConfig && (e.embeddedActivityConfig = M.Gl), e
@@ -140,9 +140,9 @@ let F = i.memo(function(e) {
         });
     en.disabled && (o = en.tooltip);
     let ec = Q.length,
-        eu = null != (t = null == Z || null == (l = Z.timestamps) ? void 0 : l.start) ? t : null == Z ? void 0 : Z.created_at,
+        eu = null != (t = null == X || null == (l = X.timestamps) ? void 0 : l.start) ? t : null == X ? void 0 : X.created_at,
         ed = (0, y.y)({
-            activity: Z,
+            activity: X,
             activityUsersCount: ec
         }),
         ep = [{
@@ -164,7 +164,7 @@ let F = i.memo(function(e) {
                 color: "none",
                 children: ea
             }) : (0, r.jsxs)(r.Fragment, {
-                children: [null != X && (0, r.jsxs)("div", {
+                children: [null != Z && (0, r.jsxs)("div", {
                     className: G.oL,
                     children: [null != eu && (0, r.jsxs)("div", {
                         className: G.DT,
@@ -192,7 +192,7 @@ let F = i.memo(function(e) {
                             variant: "text-xs/medium",
                             color: "none",
                             lineClamp: 1,
-                            children: X
+                            children: Z
                         })]
                     })]
                 }), ec > 0 && (0, r.jsx)(y.$, {

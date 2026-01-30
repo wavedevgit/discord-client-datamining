@@ -1,4 +1,4 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 380349, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => u
@@ -7,14 +7,14 @@ var r = n(211401),
     l = n(500049),
     a = n(429913),
     i = n(355622),
-    s = n(583846),
-    o = n(360469),
+    o = n(583846),
+    s = n(360469),
     c = n(985018);
 
 function u(e) {
     let {
         entry: t
-    } = e, n = (0, a.h)(t.extra.application_id), u = null == n ? void 0 : n.getIconURL(o.iu.LARGE), d = t.extra.activity_name, m = (0, s.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, f = {
+    } = e, n = (0, a.h)(t.extra.application_id), u = null == n ? void 0 : n.getIconURL(s.iu.LARGE), d = t.extra.activity_name, p = (0, o.Hd)(t) ? c.t.vPg1JT : c.t.rPqqts, m = {
         onClick: () => {
             r.R(l.s4.TEXT, i.oU.NORMAL, {
                 applicationId: t.extra.application_id
@@ -27,8 +27,8 @@ function u(e) {
     return {
         thumbnailUrl: u,
         title: d,
-        titleClickable: f,
-        thumbnailClickable: f,
-        userDescription: m
+        titleClickable: m,
+        thumbnailClickable: m,
+        userDescription: p
     }
 }

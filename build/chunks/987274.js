@@ -2,16 +2,15 @@
 /** chunk id: 987274, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    I7: () => c
+    I7: () => l
 });
 var r = n(627968);
 n(64700);
 var i = n(706276),
     a = n(808411),
-    o = n(300235),
-    s = n(919470),
-    l = n(985018);
-let c = {
+    o = n(919470),
+    s = n(985018);
+let l = {
     title: "Nitro Components",
     stories: [{
         name: "Cancellation Flow",
@@ -24,19 +23,14 @@ let c = {
         id: "expressive-progress",
         controls: {}
     }, {
-        name: "Interactive H Scroll",
-        component: o.A,
-        id: "interactive-h-scroll",
-        controls: {}
-    }, {
         name: "Premium Tooltip",
-        component: s.A,
+        component: o.A,
         id: "premium-tooltip",
         controls: {
             title: {
                 label: "Title",
                 type: "text",
-                defaultValue: l.intl.string(l.t.lG6a5x).toUpperCase()
+                defaultValue: s.intl.string(s.t.lG6a5x).toUpperCase()
             },
             body: {
                 label: "Body",

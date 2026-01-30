@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 636184, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     h: () => E
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(12901),
     f = n(954571),
     g = n(975571),
-    h = n(427262),
-    _ = n(326084),
+    _ = n(427262),
+    h = n(326084),
     b = n(851746),
     A = n(652215),
     y = n(985018),
@@ -34,7 +34,7 @@ let O = e => {
         } = (0, p.A)({
             userId: null == t ? void 0 : t.id,
             size: u._3J.SIZE_56
-        }), o = h.Ay.getName(t), c = n === _.o.FAIL;
+        }), o = _.Ay.getName(t), c = n === h.o.FAIL;
         return (0, r.jsxs)("div", {
             className: v.w4,
             children: [(0, r.jsx)(u.euF, function(e) {
@@ -113,7 +113,7 @@ let O = e => {
                 type: "rive"
             },
             gradientColor: "nitro-pink",
-            title: 0 === t.filter(e => e.status === _.o.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : !0 === l ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
+            title: 0 === t.filter(e => e.status === h.o.SUCCESS).length ? y.intl.string(y.t["7VBEue"]) : !0 === l ? y.intl.string(y.t.GP5lbq) : y.intl.string(y.t.tKCltd),
             subtitle: !0 === l ? y.intl.format(y.t["4gJJfD"], {
                 helpdeskArticle: g.A.getArticleURL(A.MVz.REFERRAL_PROGRAM)
             }) : y.intl.format(y.t.AwGSWl, {

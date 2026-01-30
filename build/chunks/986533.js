@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 986533, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => h
+    A: () => _
 });
 var r = n(627968);
 n(64700);
@@ -18,12 +18,12 @@ var i = n(503698),
     f = n(985018),
     g = n(234054);
 
-function h(e) {
+function _(e) {
     let {
         message: t,
         compact: n,
         usernameHook: i
-    } = e, h = (0, o.Ay)(t), _ = i(h), {
+    } = e, _ = (0, o.Ay)(t), h = i(_), {
         avatarSrc: b,
         eventHandlers: {
             onMouseEnter: A,
@@ -78,12 +78,12 @@ function h(e) {
                         [g.oE]: n
                     }),
                     children: t.type === p.lAJ.GUILD_INCIDENT_ALERT_MODE_ENABLED ? f.intl.format(f.t["+m8eD7"], {
-                        username: h.nick,
-                        usernameHook: _,
+                        username: _.nick,
+                        usernameHook: h,
                         time: v
                     }) : f.intl.format(f.t["BHeke+"], {
-                        username: h.nick,
-                        usernameHook: _
+                        username: _.nick,
+                        usernameHook: h
                     })
                 })]
             })

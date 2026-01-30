@@ -1,7 +1,7 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 884392, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => h
 });
 var r = n(627968),
     i = n(412703),
@@ -17,7 +17,7 @@ var r = n(627968),
     f = n(654487),
     g = n(985018);
 
-function h(e) {
+function _(e) {
     switch (e) {
         case i.n.ACHIEVEMENT_IN_GAME:
         case i.n.ACHIEVEMENT_IN_ACTIVITY:
@@ -28,12 +28,12 @@ function h(e) {
             return d.Cy.ACCEPT_QUEST
     }
 }
-let _ = function(e) {
+let h = function(e) {
     var t;
     let {
         quest: n,
         taskType: d,
-        size: _ = "sm",
+        size: h = "sm",
         preClickCallback: b,
         analyticsCtxQuestContent: A,
         analyticsCtxSourceQuestContent: y,
@@ -41,7 +41,7 @@ let _ = function(e) {
         analyticsCtxQuestContentRowIndex: x
     } = e, O = {
         questContent: A,
-        questContentCTA: h(d),
+        questContentCTA: _(d),
         sourceQuestContent: y,
         questContentPosition: v,
         questContentRowIndex: x
@@ -89,7 +89,7 @@ let _ = function(e) {
             questContent: O.questContent,
             questContentCTA: O.questContentCTA,
             sourceQuestContent: O.sourceQuestContent,
-            sourceQuestContentCTA: h(d),
+            sourceQuestContentCTA: _(d),
             questContentPosition: O.questContentPosition,
             questContentRowIndex: O.questContentRowIndex
         })
@@ -103,7 +103,7 @@ let _ = function(e) {
         }), null == t || t()
     });
     return (0, r.jsx)(a.Button, {
-        size: _,
+        size: h,
         loading: j,
         variant: "primary",
         onClick: () => {

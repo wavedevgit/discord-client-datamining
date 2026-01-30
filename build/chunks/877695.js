@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 877695, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => j
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(9994),
     f = n(461888),
     g = n(179283),
-    h = n(123213),
-    _ = n(86376),
+    _ = n(123213),
+    h = n(86376),
     b = n(42780),
     A = n(860689),
     y = n(897288),
@@ -33,17 +33,17 @@ function j(e) {
         message: l,
         onTransitionToInviteChannel: c,
         onAcceptInstantInvite: d
-    } = e, p = i.useRef(null), [f, h] = i.useState(!0), [j, I] = i.useState(!1), S = t.state === x.elq.ACCEPTING, T = (0, s.bG)([u.A], () => u.A.useReducedMotion);
+    } = e, p = i.useRef(null), [f, _] = i.useState(!0), [j, I] = i.useState(!1), S = t.state === x.elq.ACCEPTING, T = (0, s.bG)([u.A], () => u.A.useReducedMotion);
     i.useLayoutEffect(() => {
         var e, t;
         I((null != (e = null == (t = p.current) ? void 0 : t.clientHeight) ? e : 0) > 292)
     }, [I]);
     let N = (0, m.oO)(t),
         P = i.useCallback(() => {
-            !j || f && h(!1)
+            !j || f && _(!1)
         }, [f, j]),
         w = i.useCallback(() => {
-            !j || f || h(!0)
+            !j || f || _(!0)
         }, [f, j]),
         R = i.useMemo(() => {
             var e;
@@ -67,7 +67,7 @@ function j(e) {
                 className: E.vK
             }), (0, r.jsx)(b.CG, {
                 profile: N
-            }), (0, r.jsx)(_.A, {
+            }), (0, r.jsx)(h.A, {
                 profile: N
             }), (0, r.jsx)(g.P, {
                 profile: N,
@@ -126,7 +126,7 @@ function C(e) {
         guildId: m,
         ctaType: g
     } = (0, f.Ay)(n, f.cn.INVITE, t.code), {
-        analyticsLocations: _
+        analyticsLocations: h
     } = (0, p.Ay)(d.A.INVITE_EMBED), b = i.useCallback(() => {
         let e = l ? "transition" : "accept";
         (0, c.he)({
@@ -134,9 +134,9 @@ function C(e) {
             action: e,
             inviter_id: a.author.id,
             invite_message_id: a.id
-        }, _)
-    }, [t, a, _, l]);
-    return null == g ? null : (0, r.jsx)(h.Y, {
+        }, h)
+    }, [t, a, h, l]);
+    return null == g ? null : (0, r.jsx)(_.Y, {
         guildId: m,
         ctaType: g,
         submitting: s,

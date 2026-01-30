@@ -1,91 +1,66 @@
-/** Chunk was on 40215 **/
-/** chunk id: 57882, original params: r,E,a (module,exports,require) **/
-a.d(E, {
-    OW: () => u,
-    Xq: () => d,
-    _V: () => c,
-    oO: () => P,
-    od: () => f
+/** Chunk was on 65787 **/
+/** chunk id: 57882, original params: e,r,t (module,exports,require) **/
+t.d(r, {
+    OW: () => R,
+    _V: () => f,
+    oO: () => u
 });
-var _ = a(64700),
-    o = a(499979),
-    C = a(381849),
-    e = a(985018),
-    n = a(532063),
-    A = a(367485),
-    N = a(607374),
-    s = a(862446),
-    O = a(818952),
-    t = a(443670),
-    I = a(583623),
-    R = a(620324),
-    l = a(379043),
-    T = a(979143);
-let S = [o.pJ.HOURS, o.pJ.MINUTES];
+var n = t(499979),
+    a = t(381849),
+    o = t(985018),
+    s = t(532063),
+    _ = t(367485),
+    l = t(607374),
+    c = t(862446),
+    E = t(818952),
+    C = t(443670),
+    d = t(583623),
+    i = t(620324),
+    O = t(379043),
+    A = t(979143);
+let N = [n.pJ.HOURS, n.pJ.MINUTES];
 
-function d(r) {
+function u(e) {
     let {
-        unit: E,
-        time: a
-    } = (0, o.$l)(r, S), _ = (0, C.i)();
-    if (null == a) return e.intl.formatToPlainString(_.minutes, {
+        unit: r,
+        time: t
+    } = (0, n.$l)(e, N), s = (0, a.i)();
+    if (null == t) return o.intl.formatToPlainString(s.minutes, {
         minutes: 0
     });
-    let n = Math.round(a);
-    return E === o.pJ.HOURS ? e.intl.formatToPlainString(_.hours, {
-        hours: n
-    }) : e.intl.formatToPlainString(_.minutes, {
-        minutes: n
+    let _ = Math.round(t);
+    return r === n.pJ.HOURS ? o.intl.formatToPlainString(s.hours, {
+        hours: _
+    }) : o.intl.formatToPlainString(s.minutes, {
+        minutes: _
     })
 }
 
-function P(r) {
-    let {
-        unit: E,
-        time: a
-    } = (0, o.$l)(r, S);
-    return {
-        duration: Math.round(null != a ? a : 0),
-        unit: E
-    }
-}
-
-function u(r) {
-    switch (r) {
+function R(e) {
+    switch (e) {
         case 0:
-            return l.A;
-        case 1:
-            return t.A;
-        case 2:
-            return A.A;
-        case 3:
             return O.A;
+        case 1:
+            return C.A;
+        case 2:
+            return _.A;
+        case 3:
+            return E.A;
         case 4:
-            return R.A;
+            return i.A;
         case 5:
-            return T.A;
+            return A.A;
         case 6:
-            return I.A;
+            return d.A;
         case 7:
-            return n.A;
-        case 8:
             return s.A;
+        case 8:
+            return c.A;
         default:
-            return N.A
+            return l.A
     }
 }
 
-function f(r, E) {
-    return {
-        monthName: (0, _.useMemo)(() => {
-            let a = new Date;
-            return a.setDate(1), a.setMonth(r - 1), a.toLocaleString(E, {
-                month: "long"
-            })
-        }, [r, E])
-    }
-}
-
-function c(r) {
-    return Math.min(Math.max(Math.round(r / 10), 1), 9)
+function f(e) {
+    return Math.min(Math.max(Math.round(e / 10), 1), 9)
 }

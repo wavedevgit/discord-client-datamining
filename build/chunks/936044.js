@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 936044, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => p
@@ -40,8 +40,8 @@ function p(e) {
         content: m,
         className: f,
         compact: g,
-        popoutProps: h,
-        hideTimestamp: _ = !1,
+        popoutProps: _,
+        hideTimestamp: h = !1,
         withFooter: b = !1
     } = e, A = function(e, t) {
         if (null == e) return {};
@@ -84,11 +84,11 @@ function p(e) {
                 author: y,
                 guildId: null == p ? void 0 : p.guild_id,
                 compact: g,
-                hideTimestamp: _,
+                hideTimestamp: h,
                 className: l()(u.wx, {
                     [u.oE]: g
                 })
-            }, null != h ? h : {})),
+            }, null != _ ? _ : {})),
             compact: g,
             author: y
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

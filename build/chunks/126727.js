@@ -1,4 +1,4 @@
-/** Chunk was on 20941 **/
+/** Chunk was on 49559 **/
 /** chunk id: 126727, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => d
@@ -7,8 +7,8 @@ var r = n(627968),
     l = n(64700),
     a = n(397927),
     i = n(155718),
-    s = n(207963),
-    o = n(969508),
+    o = n(207963),
+    s = n(969508),
     c = n(717820);
 
 function u(e) {
@@ -34,54 +34,54 @@ function d(e) {
     let t, {
             type: n,
             style: d,
-            label: m,
-            placeholder: f,
-            minLength: p,
-            maxLength: h,
+            label: p,
+            placeholder: m,
+            minLength: f,
+            maxLength: O,
             required: b,
-            value: g
+            value: y
         } = e,
-        [x, y] = l.useState(null != g ? g : ""),
+        [h, j] = l.useState(null != y ? y : ""),
         {
-            state: v,
-            executeStateUpdate: j,
-            error: C
-        } = (0, s.At)(e, null != g ? {
+            state: g,
+            executeStateUpdate: A,
+            error: v
+        } = (0, o.At)(e, null != y ? {
             type: n,
-            value: g
+            value: y
         } : void 0),
-        _ = (0, o.FG)(e.id);
+        E = (0, s.FG)(e.id);
     l.useEffect(() => {
-        (null == v ? void 0 : v.type) === n && y(v.value)
-    }, [n, v]);
-    let A = {
-        value: x,
-        placeholder: f,
-        minLength: p,
-        maxLength: h,
+        (null == g ? void 0 : g.type) === n && j(g.value)
+    }, [n, g]);
+    let C = {
+        value: h,
+        placeholder: m,
+        minLength: f,
+        maxLength: O,
         required: b,
         onChange: e => {
-            y(e), j({
+            j(e), A({
                 type: n,
                 value: e
             })
         },
-        autoFocus: _
+        autoFocus: E
     };
     switch (d) {
         case i.qz.SMALL:
-            t = (0, r.jsx)(a.ksK, u({}, A));
+            t = (0, r.jsx)(a.ksK, u({}, C));
             break;
         case i.qz.PARAGRAPH:
             t = (0, r.jsx)(a.fs1, u({
                 autosize: !0
-            }, A))
+            }, C))
     }
-    return null != m ? (0, r.jsx)(a.eIh, {
-        title: m,
+    return null != p ? (0, r.jsx)(a.eIh, {
+        title: p,
         required: b,
         className: c.k,
-        error: C,
+        error: v,
         children: t
     }) : t
 }

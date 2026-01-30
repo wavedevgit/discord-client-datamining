@@ -30,9 +30,9 @@ var r = n(627968),
     N = n(551826),
     T = n(87001),
     P = n(574172),
-    x = n(665691),
+    L = n(665691),
     S = n(209932),
-    L = n(253932),
+    x = n(253932),
     w = n(461782),
     j = n(614518),
     D = n(706787),
@@ -87,14 +87,14 @@ let eo = [en.lp.ACTIVITY],
                 blocked: eN = !1,
                 ignored: eT = !1,
                 fit: eP = v.$.CONTAIN,
-                paused: ex = !1,
+                paused: eL = !1,
                 pulseSpeakingIndicator: eS = !1,
-                forceIdle: eL = !1,
+                forceIdle: ex = !1,
                 controlsBottom: ew
             } = e,
-            ej = l.useContext(w.vG) || eL,
+            ej = l.useContext(w.vG) || ex,
             [eD, ek] = l.useState(!1),
-            eG = L.Q_.useSetting(),
+            eG = x.Q_.useSetting(),
             eR = (0, s.bG)([R.default], () => R.default.isStreamInfoOverlayEnabled),
             [eM, eU] = l.useState(!1),
             eW = (0, s.bG)([k.default], () => k.default.getId()),
@@ -151,11 +151,11 @@ let eo = [en.lp.ACTIVITY],
             e3 = (0, s.bG)([U.A], () => e2 && null != eV ? U.A.findActivity(eV, e => null != e.application_id && e.type === et.$pd.PLAYING) : null, [e2, eV]),
             e5 = (0, s.bG)([G.A], () => (null == e3 ? void 0 : e3.application_id) != null ? G.A.getDetectableGame(e3.application_id) : null),
             e6 = (0, s.bG)([A.A], () => null != e5 && (null == e3 ? void 0 : e3.application_id) != null ? A.A.getApplication(null == e3 ? void 0 : e3.application_id) : void 0),
-            e7 = (0, x.UF)({
+            e7 = (0, L.UF)({
                 userId: eV,
                 channelId: em.id
             }),
-            e8 = (0, x.DY)({
+            e8 = (0, L.DY)({
                 streamKey: $.type === en.lp.STREAM ? $.id : null,
                 channelId: em.id
             }),
@@ -187,7 +187,7 @@ let eo = [en.lp.ACTIVITY],
                     width: eg,
                     fit: eP,
                     onVideoResize: eI,
-                    paused: ex,
+                    paused: eL,
                     focused: eC,
                     idle: ej,
                     controlsBottom: ew
@@ -210,7 +210,7 @@ let eo = [en.lp.ACTIVITY],
                     popoutType: es,
                     fit: eP,
                     onVideoResize: eI,
-                    paused: ex,
+                    paused: eL,
                     selected: eE,
                     width: eg,
                     blocked: eN,
@@ -242,7 +242,7 @@ let eo = [en.lp.ACTIVITY],
                     width: eg,
                     fit: eP,
                     onVideoResize: eI,
-                    paused: ex,
+                    paused: eL,
                     popoutType: es,
                     focused: eC,
                     idle: ej
@@ -490,9 +490,9 @@ let e_ = l.memo(e => {
         muted: N,
         deafened: T,
         localMuted: P,
-        serverMuted: x,
+        serverMuted: L,
         serverDeafened: S,
-        hasVideo: L,
+        hasVideo: x,
         hideAudioIcon: w,
         onToggleMute: j,
         popoutType: D
@@ -509,7 +509,7 @@ let e_ = l.memo(e => {
             };
         return V.A.addChangeListener(t), () => V.A.removeChangeListener(t)
     }, []);
-    let z = !w && h === en.lp.STREAM && L && (!W || P),
+    let z = !w && h === en.lp.STREAM && x && (!W || P),
         B = function(e) {
             let {
                 localMuted: t,
@@ -521,7 +521,7 @@ let e_ = l.memo(e => {
             return r ? d.TJE : n ? d.O1p : l ? d.cQT : t ? d.O1p : a ? d.z0P : null
         }({
             localMuted: P,
-            serverMuted: x,
+            serverMuted: L,
             serverDeafened: S,
             deafened: T,
             muted: N

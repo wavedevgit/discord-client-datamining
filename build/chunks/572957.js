@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 572957, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -14,14 +14,14 @@ var r, i, l = n(665260),
     m = n(812930),
     f = n(652215);
 let g = "ChannelFollowingBumpChannels",
-    h = new Set,
-    _ = new Set;
+    _ = new Set,
+    h = new Set;
 class b extends(r = a.Ay.Store) {
     initialize() {
-        this.waitFor(c.default, u.A, d.A, p.default), h = new Set(s.w.get(g))
+        this.waitFor(c.default, u.A, d.A, p.default), _ = new Set(s.w.get(g))
     }
     shouldShowBump(e) {
-        return _.has(e)
+        return h.has(e)
     }
 }(i = "displayName") in b ? Object.defineProperty(b, i, {
     value: "ChannelFollowingPublishBumpStore",
@@ -37,31 +37,31 @@ let A = new b(o.h, {
             message: r,
             optimistic: i
         } = e;
-        if (i || h.has(n)) return !1;
+        if (i || _.has(n)) return !1;
         let a = u.A.getChannel(n),
             s = p.default.getCurrentUser();
         if (!(null != a && a.type === f.rbe.GUILD_ANNOUNCEMENT && (0, m.A)(r) && (null != s && (null == (t = r.author) ? void 0 : t.id) === s.id ? d.A.can(f.xBc.SEND_MESSAGES, a) : d.A.can(f.xBc.MANAGE_MESSAGES, a)) && !l.Lt(Number(r.flags), f.pr7.CROSSPOSTED))) return !1;
-        _.add(r.id)
+        h.add(r.id)
     },
     MESSAGE_UPDATE: function(e) {
         let {
             message: t
         } = e;
-        _.has(t.id) && l.Lt(Number(t.flags), f.pr7.CROSSPOSTED) && _.delete(t.id)
+        h.has(t.id) && l.Lt(Number(t.flags), f.pr7.CROSSPOSTED) && h.delete(t.id)
     },
     CHANNEL_SELECT: function(e) {
-        _.clear()
+        h.clear()
     },
     CHANNEL_FOLLOWING_PUBLISH_BUMP_DISMISSED: function(e) {
         let {
             messageId: t
         } = e;
-        _.delete(t)
+        h.delete(t)
     },
     CHANNEL_FOLLOWING_PUBLISH_BUMP_HIDE_PERMANENTLY: function(e) {
         let {
             channelId: t
         } = e;
-        h.add(t), s.w.set(g, h), _.clear()
+        _.add(t), s.w.set(g, _), h.clear()
     }
 })

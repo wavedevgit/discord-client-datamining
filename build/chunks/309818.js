@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 309818, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => v
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(95701),
     f = n(734057),
     g = n(287809),
-    h = n(403362),
-    _ = n(168428),
+    _ = n(403362),
+    h = n(168428),
     b = n(652215),
     A = n(985018),
     y = n(563111);
@@ -46,7 +46,7 @@ function v(e) {
         }, I)
     }, [n, l, I, S, x, O]);
     if (null == C) {
-        if (null == n.channel) return (0, r.jsx)(_.A, {});
+        if (null == n.channel) return (0, r.jsx)(h.A, {});
         C = (0, m.OY)(n.channel), t = null != n.channel && null != n.channel.recipients ? n.channel.recipients : []
     } else {
         t = C.recipients.reduce((e, t) => {
@@ -57,7 +57,7 @@ function v(e) {
         S && null != e && t.push(e)
     }
     let N = C.name;
-    (null == N || "" === N) && (N = t.length > 0 ? t.filter(h.Vq).map(e => e.username).join(", ") : A.intl.string(A.t.LJpTRF));
+    (null == N || "" === N) && (N = t.length > 0 ? t.filter(_.Vq).map(e => e.username).join(", ") : A.intl.string(A.t.LJpTRF));
     let P = A.intl.string(A.t.XpeFYr),
         w = "active";
     S && (P = A.intl.string(A.t.cEnaWx), w = "secondary");

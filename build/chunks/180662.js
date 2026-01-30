@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 180662, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => V,
@@ -17,8 +17,8 @@ var r = n(284009),
     m = n(843472),
     f = n(198982),
     g = n(58149),
-    h = n(857071),
-    _ = n(301169),
+    _ = n(857071),
+    h = n(301169),
     b = n(505527),
     A = n(9842),
     y = n(961350),
@@ -108,7 +108,7 @@ function M(e) {
         answerId: r
     } = e, i = v.A.getChannel(t);
     if (null == i) return;
-    if (h.A.isLurking(i.guild_id)) return void L({
+    if (_.A.isLurking(i.guild_id)) return void L({
         guildId: i.guild_id,
         title: P.intl.string(P.t["7LpysO"]),
         body: P.intl.string(P.t["5sHHoy"])
@@ -189,7 +189,7 @@ async function B(e) {
         messageId: n
     } = e, r = v.A.getChannel(t);
     if (null == r) return;
-    if (h.A.isLurking(r.guild_id)) return void L({
+    if (_.A.isLurking(r.guild_id)) return void L({
         guildId: r.guild_id,
         title: P.intl.string(P.t.Qic1FD),
         body: P.intl.string(P.t["5sHHoy"])
@@ -240,7 +240,7 @@ async function F(e) {
         channelId: t,
         messageId: n
     } = e, r = v.A.getChannel(t);
-    if (null != r) return h.A.isLurking(r.guild_id) ? void L({
+    if (null != r) return _.A.isLurking(r.guild_id) ? void L({
         guildId: r.guild_id,
         title: P.intl.string(P.t.B9QnBp),
         body: P.intl.string(P.t.BVZCTn)
@@ -463,7 +463,7 @@ let V = {
             await m.A.sendPollMessage(t.id, d, {
                 attachmentsToUpload: c,
                 onAttachmentUploadError: (e, n, r) => {
-                    (0, _.k)({
+                    (0, h.k)({
                         file: e,
                         guildId: t.getGuildId(),
                         analyticsLocations: [],

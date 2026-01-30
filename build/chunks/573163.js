@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 573163, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => x
@@ -16,9 +16,9 @@ var r = n(627968),
     m = n(260821),
     f = n(985018),
     g = n(233080),
-    h = n(710504);
+    _ = n(710504);
 
-function _(e, t, n) {
+function h(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -34,7 +34,7 @@ function b(e) {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-            _(e, t, n[t])
+            h(e, t, n[t])
         })
     }
     return e
@@ -69,27 +69,26 @@ class v extends i.PureComponent {
             disableReactionCreates: t,
             disableReactionUpdates: n,
             isLurking: i,
-            isGuest: l,
-            isPendingMember: c,
-            isForumToolbar: _,
-            channel: b,
-            className: A,
-            forceAddReactions: y,
-            reactionClassName: v,
-            useChatFontScaling: x,
-            forceHideReactionCreates: O,
-            remainingReactions: E,
-            combinedReactions: j,
-            visibleReactionsCount: C
+            isPendingMember: l,
+            isForumToolbar: c,
+            channel: h,
+            className: b,
+            forceAddReactions: A,
+            reactionClassName: y,
+            useChatFontScaling: v,
+            forceHideReactionCreates: x,
+            remainingReactions: O,
+            combinedReactions: E,
+            visibleReactionsCount: j
         } = this.props, {
-            disableTransitionAppear: I
-        } = this.state, S = x ? h : g, T = C > 0;
-        if (!T && !y) return null;
-        let N = y || T;
+            disableTransitionAppear: C
+        } = this.state, I = v ? _ : g, S = j > 0;
+        if (!S && !A) return null;
+        let T = A || S;
         return (0, r.jsxs)(s.F, {
             component: "div",
-            className: a()(S.reactions, A),
-            transitionAppear: !I,
+            className: a()(I.reactions, b),
+            transitionAppear: !C,
             role: "group",
             transitionLeave: !1,
             id: (0, d.JH)(e),
@@ -100,40 +99,39 @@ class v extends i.PureComponent {
                 isHovered: !1
             }),
             children: [(0, r.jsx)(p.A, {
-                reactions: j,
+                reactions: E,
                 message: e,
                 readOnly: n,
                 isLurking: i,
-                isGuest: l,
-                isPendingMember: c,
-                isForumToolbar: _,
-                useChatFontScaling: x,
-                className: v
-            }), E > 0 && (0, r.jsx)(o.DUT, {
+                isPendingMember: l,
+                isForumToolbar: c,
+                useChatFontScaling: v,
+                className: y
+            }), O > 0 && (0, r.jsx)(o.DUT, {
                 onClick: t => {
-                    t.stopPropagation(), (0, m.$l)(b, e)
+                    t.stopPropagation(), (0, m.$l)(h, e)
                 },
-                className: a()(S.reaction, v, S.remainingReactions),
+                className: a()(I.reaction, y, I.remainingReactions),
                 "aria-label": f.intl.string(f.t.lfIHs4),
                 children: (0, r.jsxs)(o.Text, {
-                    className: S.reactionInner,
+                    className: I.reactionInner,
                     variant: "text-sm/normal",
-                    children: ["+", E]
+                    children: ["+", O]
                 })
-            }), !t && !O && (0, r.jsx)(u.t, {
-                tabIndex: N || this.state.isHovered ? 0 : -1,
+            }), !t && !x && (0, r.jsx)(u.t, {
+                tabIndex: T || this.state.isHovered ? 0 : -1,
                 message: e,
-                channel: b,
-                useChatFontScaling: x,
+                channel: h,
+                useChatFontScaling: v,
                 isHovered: this.state.isHovered,
                 className: a()({
-                    [S.forceShow]: N
+                    [I.forceShow]: T
                 })
             })]
         })
     }
     constructor(...e) {
-        super(...e), _(this, "state", {
+        super(...e), h(this, "state", {
             disableTransitionAppear: !0,
             reactionsCount: this.props.message.reactions.length,
             isHovered: !1

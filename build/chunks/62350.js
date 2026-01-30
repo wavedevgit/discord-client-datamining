@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 62350, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => U
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(933958),
     f = n(793574),
     g = n(688810),
-    h = n(572211),
-    _ = n(178910),
+    _ = n(572211),
+    h = n(178910),
     b = n(354287),
     A = n(112150),
     y = n(574660),
@@ -126,8 +126,8 @@ function U(e) {
             getAcceptInviteContext: d
         } = e,
         {
-            approximate_member_count: h,
-            approximate_presence_count: _,
+            approximate_member_count: _,
+            approximate_presence_count: h,
             target_type: b,
             target_application: A
         } = s;
@@ -190,8 +190,8 @@ function U(e) {
             channel: M,
             guild: x,
             message: u,
-            members: h,
-            membersOnline: _,
+            members: _,
+            membersOnline: h,
             isActivityActive: L,
             submitting: V,
             buttonLabel: l,
@@ -236,7 +236,7 @@ function G(e) {
         disabledReason: v && null != x ? x : void 0,
         onClick: O
     }], [g, s, f, v, x, O]);
-    return (0, r.jsx)(h.h, (t = function(e) {
+    return (0, r.jsx)(_.h, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -266,7 +266,7 @@ function G(e) {
                 guild: c,
                 hasEnded: !m,
                 textColor: "none"
-            }), s ? P > 0 && (0, r.jsx)(_.$, {
+            }), s ? P > 0 && (0, r.jsx)(h.$, {
                 activityUsers: a,
                 guildId: c.id,
                 activityText: D.intl.formatToPlainString(D.t.yJj035, {

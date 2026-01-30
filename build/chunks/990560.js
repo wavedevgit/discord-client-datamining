@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 990560, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(665066),
     f = n(961350),
     g = n(71393),
-    h = n(299091),
-    _ = n(860689),
+    _ = n(299091),
+    h = n(860689),
     b = n(62350),
     A = n(882072),
     y = n(58262),
@@ -37,9 +37,9 @@ function S(e) {
     } = e, {
         invite: T,
         inviteError: N
-    } = (0, l.cf)([h.A], () => ({
-        invite: h.A.getInvite(t),
-        inviteError: h.A.getInviteError(t)
+    } = (0, l.cf)([_.A], () => ({
+        invite: _.A.getInvite(t),
+        inviteError: _.A.getInviteError(t)
     }), [t]), P = null == T;
     i.useEffect(() => {
         P && a.Ay.resolveInvite(t)
@@ -61,7 +61,7 @@ function S(e) {
             null != w.channel && a.Ay.transitionToInviteSync(w)
         },
         U = () => {
-            let e = null == D && (null == T ? void 0 : T.guild) != null ? _.DY(T.guild) : D;
+            let e = null == D && (null == T ? void 0 : T.guild) != null ? h.DY(T.guild) : D;
             (0, m.g)({
                 guild: e,
                 isMember: null != D,

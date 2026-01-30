@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 151660, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => A
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(954571),
     f = n(203982),
     g = n(420208),
-    h = n(652215),
-    _ = n(985018),
+    _ = n(652215),
+    h = n(985018),
     b = n(173990);
 
 function A(e) {
@@ -46,21 +46,21 @@ function A(e) {
                     className: a()({
                         [b.o]: A
                     }),
-                    children: "" !== t.content ? t.content : _.intl.string(_.t.wnn1Dc)
+                    children: "" !== t.content ? t.content : h.intl.string(h.t.wnn1Dc)
                 })
             })
         }), (0, r.jsxs)(o.ButtonGroup, {
             children: [(0, r.jsx)(o.Button, {
                 variant: "secondary",
-                text: _.intl.string(_.t.ASZTf3),
+                text: h.intl.string(h.t.ASZTf3),
                 icon: o.XGR,
                 onClick: () => {
-                    m.default.track(h.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
+                    m.default.track(_.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
                         message_id: t.id,
                         channel_id: l.id,
                         guild_id: l.guild_id,
                         action_type: "upload_file"
-                    }), f._.dispatch(h.jej.UPLOAD_FILE, {
+                    }), f._.dispatch(_.jej.UPLOAD_FILE, {
                         channelId: l.id
                     }), (0, u.Yf)({
                         message: t,
@@ -70,14 +70,14 @@ function A(e) {
                 }
             }), (0, r.jsx)(o.Button, {
                 variant: "secondary",
-                text: _.intl.string(_.t.gbrrAz),
+                text: h.intl.string(h.t.gbrrAz),
                 icon: null != v ? {
                     type: "sticker",
                     asset: v,
                     component: p.A
                 } : o.nm2,
                 onClick: () => {
-                    m.default.track(h.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
+                    m.default.track(_.HAw.CHANNEL_PROMPT_ACTION_CLICKED, {
                         message_id: t.id,
                         channel_id: l.id,
                         guild_id: l.guild_id,

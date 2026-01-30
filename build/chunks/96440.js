@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 96440, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     W: () => E
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(574660),
     f = n(625180),
     g = n(207371),
-    h = n(734057),
-    _ = n(309010),
+    _ = n(734057),
+    h = n(309010),
     b = n(486020),
     A = n(795816),
     y = n(933958),
@@ -41,7 +41,7 @@ function E(e) {
         botUserId: null == j || null == (n = j.bot) ? void 0 : n.id
     }), w = null != j && (0, o.Ag)(j), R = null != N && w && P, {
         analyticsLocations: D
-    } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([_.A], () => _.A.getChannelId()), M = (0, x.et)(L), k = (0, i.bG)([y.Ay], () => {
+    } = (0, a.Ay)(l.A.ACTIVITY_CUSTOM_LINK), L = (0, i.bG)([h.A], () => h.A.getChannelId()), M = (0, x.et)(L), k = (0, i.bG)([y.Ay], () => {
         if (null == L) return;
         let e = y.Ay.getEmbeddedActivitiesForChannel(L).filter(e => e.applicationId === j.id);
         return e.length > 0 ? e[0].compositeInstanceId : void 0
@@ -102,7 +102,7 @@ function E(e) {
             linkType: u.J.CUSTOM_ACTIVITY_LINK,
             referrerId: S,
             activityCustomId: H,
-            guildId: null == (E = h.A.getChannel(T.channel_id)) ? void 0 : E.guild_id,
+            guildId: null == (E = _.A.getChannel(T.channel_id)) ? void 0 : E.guild_id,
             channelId: T.channel_id,
             messageId: T.id
         }

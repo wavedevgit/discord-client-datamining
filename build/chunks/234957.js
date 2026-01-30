@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 234957, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => f
@@ -21,11 +21,11 @@ let m = i.memo(function(e) {
         compact: m = !1
     } = e, f = p.state === s.a.LOADED ? p.message : void 0, g = a.m.useExperiment({
         location: "repliedMessage"
-    }).enabled, h = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.Ay)(f, {
+    }).enabled, _ = i.useMemo(() => (null == f ? void 0 : f.content) != null && "" !== f.content ? (0, c.Ay)(f, {
         formatInline: !0,
         allowGameMentions: g
     }).content : null, [f, g]), {
-        isReplyAuthorBlocked: _,
+        isReplyAuthorBlocked: h,
         isReplyAuthorIgnored: b
     } = (0, l.cf)([o.A], () => ({
         isReplyAuthorBlocked: null != f && o.A.isBlockedForMessage(f),
@@ -37,9 +37,9 @@ let m = i.memo(function(e) {
         baseMessage: t,
         channel: n,
         referencedMessage: p,
-        content: h,
+        content: _,
         compact: m,
-        isReplyAuthorBlocked: _,
+        isReplyAuthorBlocked: h,
         isReplyAuthorIgnored: b,
         isReplySpineClickable: !1,
         showReplySpine: !0

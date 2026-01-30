@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 43136, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => S,
@@ -17,8 +17,8 @@ var r = n(627968),
     m = n(258335),
     f = n(253932),
     g = n(696451),
-    h = n(287809),
-    _ = n(792831),
+    _ = n(287809),
+    h = n(792831),
     b = n(427262),
     A = n(218394),
     y = n(386952),
@@ -42,8 +42,8 @@ function C(e) {
         }), (0, r.jsx)(o.hKd, {
             size: 4,
             horizontal: !0
-        }), (0, r.jsx)(_.A, {
-            direction: _.A.Directions.RIGHT,
+        }), (0, r.jsx)(h.A, {
+            direction: h.A.Directions.RIGHT,
             className: j.wY
         })]
     })
@@ -83,10 +83,10 @@ function S(e) {
         subscriptionsSettings: d
     } = e, m = l.id, {
         nickname: f,
-        nickcolor: _
-    } = (0, s.cf)([g.Ay, h.default], () => {
+        nickcolor: h
+    } = (0, s.cf)([g.Ay, _.default], () => {
         var e, t;
-        let n = h.default.getCurrentUser();
+        let n = _.default.getCurrentUser();
         a()(null != n, "user cannot be null");
         let r = g.Ay.getMember(m, n.id);
         return {
@@ -157,7 +157,7 @@ function S(e) {
                         usernameHook: function(e, t) {
                             return (0, r.jsx)("span", {
                                 style: {
-                                    color: _
+                                    color: h
                                 },
                                 children: e
                             }, t)

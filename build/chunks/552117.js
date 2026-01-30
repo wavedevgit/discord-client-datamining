@@ -1,4 +1,4 @@
-/** Chunk was on 92917 **/
+/** Chunk was on 64935 **/
 /** chunk id: 552117, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => H
@@ -16,8 +16,8 @@ var r = n(627968),
     m = n(964486),
     f = n(58149),
     g = n(235986),
-    h = n(624793),
-    _ = n(477712),
+    _ = n(624793),
+    h = n(477712),
     b = n(767143),
     A = n(652176),
     y = n(87719),
@@ -111,18 +111,18 @@ let G = e => {
                 refreshPositionKey: a,
                 channel: l
             },
-            h = i.useRef(g);
+            _ = i.useRef(g);
         return (i.useEffect(() => {
-            h.current = g
+            _.current = g
         }), i.useEffect(() => {
             let {
                 refreshPositionKey: e
-            } = h.current;
+            } = _.current;
             e()
         }, [c]), i.useEffect(() => {
             let {
                 channel: e
-            } = h.current;
+            } = _.current;
             E.default.track(P.HAw.OPEN_POPOUT, M({
                 type: P.JJy.STICKER_POPOUT,
                 guild_id: e.getGuildId(),
@@ -201,19 +201,19 @@ let G = e => {
                 stickerSourceGuild: e
             } = Q.current;
             (async () => {
-                (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && I(await (0, _.A)(n.id)), N(!0)
+                (null == e || e.features.has(P.GuildFeatures.DISCOVERABLE)) && I(await (0, h.A)(n.id)), N(!0)
             })()
         }, [n.id, H]);
-        let Z = n.guild_id === l.getGuildId(),
-            X = null != C,
+        let X = n.guild_id === l.getGuildId(),
+            Z = null != C,
             $ = !1,
             ee = "Custom Sticker Popout";
-        B ? t = H ? Z ? R.intl.string(R.t.fZ0DiG) : R.intl.string(R.t["1f6D9m"]) : X ? R.intl.string(R.t.yHmoR9) : R.intl.string(R.t.vZaScH) : H ? (t = Z ? R.intl.string(R.t.jNphpt) : R.intl.string(R.t.lyD5ZW), $ = !0, ee = "Custom Sticker Popout (Upsell)") : X ? (t = R.intl.string(R.t.IuXYch), $ = !0, ee = "Custom Sticker Popout (Upsell)") : (t = R.intl.format(R.t.hGWuxU, {
+        B ? t = H ? X ? R.intl.string(R.t.fZ0DiG) : R.intl.string(R.t["1f6D9m"]) : Z ? R.intl.string(R.t.yHmoR9) : R.intl.string(R.t.vZaScH) : H ? (t = X ? R.intl.string(R.t.jNphpt) : R.intl.string(R.t.lyD5ZW), $ = !0, ee = "Custom Sticker Popout (Upsell)") : Z ? (t = R.intl.string(R.t.IuXYch), $ = !0, ee = "Custom Sticker Popout (Upsell)") : (t = R.intl.format(R.t.hGWuxU, {
             openPremiumSettings: () => {
                 k(l), o()
             }
         }), ee = "Custom Sticker Popout (Soft Upsell)");
-        let et = !$ && !H && X && B;
+        let et = !$ && !H && Z && B;
         if (i.useEffect(() => {
                 let {
                     refreshPositionKey: e
@@ -266,9 +266,9 @@ let G = e => {
                     })]
                 })), (null != F || null != C) && (() => {
                     var e;
-                    if (!X && !H) return;
+                    if (!Z && !H) return;
                     let t = (null != (e = null == C ? void 0 : C.stickers) ? e : []).slice(0, 13).filter(e => e.id !== n.id).slice(0, 12),
-                        i = null != C ? h.GO.createFromDiscoverableGuild(C) : h.GO.createFromGuildRecord(F);
+                        i = null != C ? _.GO.createFromDiscoverableGuild(C) : _.GO.createFromGuildRecord(F);
                     return (0, r.jsxs)("div", {
                         className: L.tl,
                         children: [(0, r.jsx)(d.Text, {
