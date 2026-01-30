@@ -78,8 +78,8 @@ function f(e) {
         "aria-label": g,
         "aria-labelledby": D,
         scrollable: h,
-        role: U,
-        hideSearch: b,
+        role: b,
+        hideSearch: U,
         showDivider: M,
         disableDoubleClick: j
     } = e, v = null == o || (0, R.jq)(o) ? null : o, k = (0, l.bG)([T.A], () => T.A.isInChannel(v) || !1), L = (0, l.bG)([c.A], () => null != v && c.A.getParticipantsListOpen(v)), {
@@ -97,7 +97,7 @@ function f(e) {
         innerClassName: O,
         toolbar: function() {
             if (null == f) return null;
-            let e = null != o && !b;
+            let e = null != o && !U;
             return i.Fr ? C : (0, r.jsxs)(r.Fragment, {
                 children: [f, e && !(0, R.jq)(o) ? (0, r.jsx)(_.Ay, {
                     guildId: I,
@@ -116,7 +116,7 @@ function f(e) {
         onDoubleClick: () => m(j),
         "aria-label": g,
         "aria-labelledby": D,
-        role: U,
+        role: b,
         scrollable: h,
         children: t
     })

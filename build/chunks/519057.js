@@ -32,8 +32,8 @@ var r, i = n(989349),
     g = n(229527),
     D = n(93474),
     h = n(164956),
-    U = n(857071),
-    b = n(772786),
+    b = n(857071),
+    U = n(772786),
     M = n(869968),
     j = n(923349),
     v = n(437852),
@@ -87,9 +87,9 @@ n(436317);
 var eg = n(788868),
     eD = n(654487),
     eh = n(818348),
-    eU = n(731854);
+    eb = n(731854);
 
-function eb(e, t, n) {
+function eU(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -239,7 +239,7 @@ let eW = {
             let {
                 selectedGuildId: t
             } = e;
-            return null != t && U.A.isLurking(t)
+            return null != t && b.A.isLurking(t)
         }
     },
     [eC.kqX.VOICE_DISABLED]: {
@@ -318,7 +318,7 @@ let eW = {
             let {
                 voiceChannelId: t
             } = e;
-            return null != t && eT.A.hasVideo(t) && !er.A.supports(eU.O5.VIDEO) && !eF(eC.kqX.VIDEO_UNSUPPORTED_BROWSER)
+            return null != t && eT.A.hasVideo(t) && !er.A.supports(eb.O5.VIDEO) && !eF(eC.kqX.VIDEO_UNSUPPORTED_BROWSER)
         }
     },
     [eC.kqX.DETECTED_OFF_PLATFORM_PREMIUM_PERK]: {
@@ -539,7 +539,7 @@ let eW = {
         }
     },
     [eC.kqX.POMELO_ELIGIBLE]: {
-        predicate: () => (0, b.x)() && !eF(eC.kqX.POMELO_ELIGIBLE)
+        predicate: () => (0, U.x)() && !eF(eC.kqX.POMELO_ELIGIBLE)
     },
     [eC.kqX.AUTO_MODERATION_MENTION_RAID_DETECTION]: {
         predicate: e => {
@@ -673,7 +673,7 @@ function eK() {
                     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                         return Object.getOwnPropertyDescriptor(n, e).enumerable
                     }))), r.forEach(function(t) {
-                        eb(e, t, n[t])
+                        eU(e, t, n[t])
                     })
                 }
                 return e
@@ -694,7 +694,7 @@ function eY() {
 }
 class e$ extends(r = o.Ay.Store) {
     initialize() {
-        this.syncWith([ed.Ay, ea.A, ee.A, ec.A, L.A, eN.A, z.default, Q.A, H.A, C.A, w.A, Y.A, P.Ay, K.A], eK), this.waitFor(R.A, A.A, Y.A, $.default, z.default, J.A, Z.A, M.A, Q.A, I.A, ee.A, ey.A, em.A, ef.A, ep.A, S.A, y.A, D.A, C.A, et.Ay, en.A, h.A, U.A, er.A, ei.A, eI.A, el.A, ea.A, L.A, G.A, w.A, eo.A, P.Ay, es.A, ec.A, X.A, eu.A, eE.A, j.A, eO.A, ed.Ay, eR.A, eN.A, e_.A, H.A, eA.default, eT.A, K.A)
+        this.syncWith([R.A, ed.Ay, ea.A, ee.A, ec.A, L.A, eN.A, z.default, Q.A, H.A, C.A, w.A, Y.A, P.Ay, K.A], eK), this.waitFor(R.A, A.A, Y.A, $.default, z.default, J.A, Z.A, M.A, Q.A, I.A, ee.A, ey.A, em.A, ef.A, ep.A, S.A, y.A, D.A, C.A, et.Ay, en.A, h.A, b.A, er.A, ei.A, eI.A, el.A, ea.A, L.A, G.A, w.A, eo.A, P.Ay, es.A, ec.A, X.A, eu.A, eE.A, j.A, eO.A, ed.Ay, eR.A, eN.A, e_.A, H.A, eA.default, eT.A, K.A)
     }
     hasNotice() {
         return null != eq && null != eq.type
@@ -706,7 +706,7 @@ class e$ extends(r = o.Ay.Store) {
         return eF(e)
     }
 }
-eb(e$, "displayName", "NoticeStore");
+eU(e$, "displayName", "NoticeStore");
 let ez = new e$(E.h, {
     CURRENT_USER_UPDATE: eK,
     MEDIA_ENGINE_SET_AUDIO_ENABLED: eK,

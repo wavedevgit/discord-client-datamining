@@ -1,13 +1,14 @@
 /** chunk id: 37770, original params: e,t,n (module,exports,require) **/
+"use strict";
 n.d(t, {
-    F: () => s,
+    F: () => l,
     I: () => c
 });
 var r = n(311907),
     i = n(250105),
-    l = n(217222),
-    a = n(128319);
-let o = (0, i.Ay)({
+    a = n(217222),
+    o = n(128319);
+let s = (0, i.Ay)({
     name: "2025-10-windows-mute-detection",
     kind: "user",
     defaultConfig: {
@@ -20,17 +21,17 @@ let o = (0, i.Ay)({
     }
 });
 
-function s(e) {
+function l(e) {
     let {
         location: t
     } = e, {
         isInHoldout: n
-    } = a.p.getCurrentConfig({
+    } = o.p.getCurrentConfig({
         location: t
     }, {
         autoTrackExposure: !0
     });
-    return n ? o.definition.defaultConfig : o.getConfig({
+    return n ? s.definition.defaultConfig : s.getConfig({
         location: t
     })
 }
@@ -39,7 +40,7 @@ function c(e) {
     let {
         location: t
     } = e;
-    return (0, r.bG)([l.A], () => s({
+    return (0, r.bG)([a.A], () => l({
         location: t
     }))
 }

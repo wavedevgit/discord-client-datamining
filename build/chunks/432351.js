@@ -172,6 +172,12 @@ class c extends r.A {
     fetchAsyncResources(e) {
         return Promise.resolve()
     }
+    getDeviceOSVolume(e) {
+        return Promise.resolve(void 0)
+    }
+    getDeviceOSMuted(e) {
+        return Promise.resolve(void 0)
+    }
     getNoiseCancellationStats() {
         return Promise.reject(Error("Dummy noise cancellation stats not supported"))
     }

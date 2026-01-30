@@ -78,25 +78,25 @@ function O(e) {
             variant: "text-md/normal",
             children: _.intl.string(_.t.iCK6G0)
         })
-    }))), Promise.resolve()), [a, C]), U = i.useMemo(() => null == P ? [] : (0, E.uy)(n, {
+    }))), Promise.resolve()), [a, C]), b = i.useMemo(() => null == P ? [] : (0, E.uy)(n, {
         blockId: P,
         pageIndex: m,
         responses: R
-    }), [n, P, m, R]), b = i.useCallback(() => {
+    }), [n, P, m, R]), U = i.useCallback(() => {
         if (null == n || null == P) return;
         let e = (0, E.vt)(n, {
             blockId: P,
             pageIndex: m,
             responses: R
         });
-        p(t, U), e.isComplete && s.Ay.submitSurveyResponse(t, R), y(e.blockId), f(e.pageIndex), g(e.isComplete)
-    }, [n, P, m, R, t, U, p]);
+        p(t, b), e.isComplete && s.Ay.submitSurveyResponse(t, R), y(e.blockId), f(e.pageIndex), g(e.isComplete)
+    }, [n, P, m, R, t, b, p]);
     i.useEffect(() => {
-        0 === U.length && b()
-    }, [U, b]);
+        0 === b.length && U()
+    }, [b, U]);
     let M = i.useMemo(() => {
         if (C) return !1;
-        for (let r of U) {
+        for (let r of b) {
             var e, t;
             let i = n.Questions[r];
             if ((null == i || null == (t = i.Validation) || null == (e = t.Settings) ? void 0 : e.ForceResponse) === "ON") {
@@ -105,7 +105,7 @@ function O(e) {
             }
         }
         return !0
-    }, [C, U, n, R]);
+    }, [C, b, n, R]);
     return C ? (0, r.jsxs)(l.Modal, {
         transitionState: u,
         onClose: a,
@@ -131,16 +131,16 @@ function O(e) {
         actions: [{
             variant: "primary",
             text: _.intl.string(_.t.PDTjLN),
-            onClick: b,
+            onClick: U,
             disabled: !M
         }],
         children: (0, r.jsx)("div", {
             style: {
                 width: "100%"
             },
-            children: 0 === U.length ? null : (0, r.jsx)("div", {
+            children: 0 === b.length ? null : (0, r.jsx)("div", {
                 className: A.Qs,
-                children: U.map(e => {
+                children: b.map(e => {
                     let t = n.Questions[e];
                     return null == t ? null : (0, r.jsx)(d.A, {
                         question: t,

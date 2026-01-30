@@ -1,6 +1,6 @@
 /** chunk id: 636922, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => U
+    A: () => b
 });
 var r = n(627968),
     i = n(64700),
@@ -59,13 +59,13 @@ function h(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let U = i.memo(function(e) {
+let b = i.memo(function(e) {
     var t, n;
     let {
         message: i,
         compact: l = !1,
-        className: U,
-        onContextMenu: b,
+        className: b,
+        onContextMenu: U,
         onClick: M,
         hideSimpleEmbedContent: j = !0,
         channel: v,
@@ -110,7 +110,7 @@ let U = i.memo(function(e) {
     }), ee = (0, O.fF)(i), et = (0, O.ZD)(i);
     return (0, r.jsx)(I.A, D({
         compact: l,
-        className: a()(U, {
+        className: a()(b, {
             [g.M1]: (0, A.ec)(i),
             [g.XN]: q
         }),
@@ -127,7 +127,7 @@ let U = i.memo(function(e) {
         childrenSystemMessage: (0, y.A)(h(D({}, e), {
             disableInteraction: q
         })),
-        onContextMenu: b,
+        onContextMenu: U,
         onClick: M,
         hasThread: G && null != J && i.hasFlag(C.pr7.HAS_THREAD),
         hasReply: i.type === C.lAJ.REPLY,
