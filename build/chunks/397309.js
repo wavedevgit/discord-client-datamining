@@ -39,7 +39,7 @@ function g(e) {
             [d.T3]: s
         }),
         children: (0, r.jsx)(i.W1t, {
-            "data-menu-needs-migration": !0,
+            "data-menu-migrated": !0,
             navId: "collectibles-index-page-menu",
             className: a()({
                 [d.T3]: s

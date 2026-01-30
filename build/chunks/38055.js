@@ -57,7 +57,7 @@ let h = e => {
             closePopout: t
         } = e, i = (0, a.bG)([l.A], () => l.A.hidden);
         return (0, r.jsx)(o.W1t, {
-            "data-menu-needs-migration": !0,
+            "data-menu-migrated": !0,
             onSelect: () => {},
             navId: "member-list-settings-menu",
             onClose: null != t ? t : c.tEg,
@@ -83,6 +83,10 @@ let h = e => {
                     id: "hide",
                     label: u.intl.string(u.t.AhNYuY),
                     checked: i,
+                    leadingAccessory: {
+                        type: "icon",
+                        icon: o.G3N
+                    },
                     action: () => {
                         (0, s.Il)(), null == t || t()
                     }

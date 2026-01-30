@@ -41,7 +41,7 @@ function g(e) {
     return (0, r.jsx)(l.A, {
         object: _.ZSU.CONTEXT_MENU,
         children: (0, r.jsxs)(s.W1t, {
-            "data-menu-needs-review": !0,
+            "data-menu-migrated": !0,
             onClose: t,
             navId: "video-device-context",
             variant: "fixed",
