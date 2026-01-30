@@ -24,8 +24,8 @@ var r = n(627968),
     v = n(287809),
     C = n(379177),
     A = n(365491),
-    x = n(628979),
-    S = n(494573),
+    S = n(628979),
+    x = n(494573),
     O = n(758836),
     y = n(652215);
 n(801416);
@@ -102,14 +102,14 @@ function k(e) {
                         size: "md",
                         color: u.LU0.colors.TEXT_DEFAULT
                     })
-                }), (0, r.jsx)(S.A, {
+                }), (0, r.jsx)(x.A, {
                     tabs: F,
                     selectedTab: t,
                     onTabSelect: W,
                     showOrbRentalNewBadge: U
                 }), (0, r.jsxs)("div", {
                     className: I.sZ,
-                    children: [(0, r.jsx)(x.A, {
+                    children: [(0, r.jsx)(S.A, {
                         handleTransition: n,
                         selectedTab: t,
                         isNarrow: B,

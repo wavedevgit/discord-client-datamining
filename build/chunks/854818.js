@@ -2,7 +2,7 @@
 /** chunk id: 854818, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     e: () => u
-}), n(747238);
+}), n(321073), n(747238);
 var r = n(627968);
 n(64700);
 var l = n(503698),
@@ -12,39 +12,41 @@ var l = n(503698),
     o = n(985018),
     c = n(487604);
 let u = e => {
-    let t, {
-            endDate: n,
-            size: l = "md",
-            className: u
+    let t, n, {
+            endDate: l,
+            size: u = "md",
+            className: d,
+            showSeconds: m = !1
         } = e,
         {
-            days: d,
-            hours: m,
-            minutes: p
-        } = (0, s.A)(n),
-        f = [(t = e => "".concat(e.toString().padStart(2, "0")))(d), t(m), t(p)].join(":");
+            days: p,
+            hours: f,
+            minutes: x,
+            seconds: h
+        } = (0, s.A)(l),
+        v = (n = [(t = e => "".concat(e.toString().padStart(2, "0")))(p), t(f), t(x)], m && n.push(t(h)), n.join(":"));
     return (0, r.jsxs)("div", {
-        className: i()(c.kL, u),
+        className: i()(c.kL, d),
         role: "timer",
-        children: [f.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
+        children: [v.split("").map((e, t) => ":" === e ? (0, r.jsx)(a.Text, {
             color: "none",
-            variant: "md" === l ? "heading-lg/extrabold" : "heading-xxl/extrabold",
+            variant: "md" === u ? "heading-lg/extrabold" : "heading-xxl/extrabold",
             className: c.eC,
             "aria-hidden": !0,
             tag: "div",
             children: e
         }, t) : (0, r.jsx)(a.Text, {
             color: "always-white",
-            variant: "md" === l ? "heading-md/bold" : "heading-xl/bold",
+            variant: "md" === u ? "heading-md/bold" : "heading-xl/bold",
             className: c.ai,
             "aria-hidden": !0,
             tag: "div",
             children: e
         }, t)), (0, r.jsx)(a.AC4, {
             children: o.intl.format(o.t.j6IyVe, {
-                days: d,
-                hours: m,
-                minutes: p
+                days: p,
+                hours: f,
+                minutes: x
             })
         })]
     })

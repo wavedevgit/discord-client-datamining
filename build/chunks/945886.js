@@ -1,8 +1,8 @@
-/** Chunk was on 3911 **/
+/** Chunk was on 44411 **/
 /** chunk id: 945886, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
-    A: () => g
+    A: () => p
 }), n(896048);
 var i, s = n(311907),
     r = n(73153),
@@ -40,7 +40,7 @@ class h extends(i = s.Ay.PersistedStore) {
     }
 }
 a(h, "displayName", "CollapsedVoiceChannelStore"), a(h, "persistKey", "collapsedChannels");
-let g = new h(r.h, {
+let p = new h(r.h, {
     CONNECTION_OPEN: c,
     OVERLAY_INITIALIZE: c,
     CHANNEL_COLLAPSE: function(e) {

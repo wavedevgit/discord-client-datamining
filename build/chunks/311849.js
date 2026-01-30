@@ -56,7 +56,7 @@ let b = 1048576,
     Y = +f.A.Millis.MINUTE,
     W = 10 * f.A.Millis.MINUTE,
     K = 60 * f.A.Millis.MINUTE,
-    z = 12,
+    z = .5,
     q = 1,
     Z = 1e4;
 
@@ -79,8 +79,7 @@ class X extends a.A {
         }, N), clearInterval(this._checkIntervalV8), this._checkIntervalV8 = setInterval(async () => {
             await this.trackV8HeapAlloc()
         }, x), clearTimeout(this._checkIntervalCPUProfiler), this._checkIntervalCPUProfiler = setTimeout(() => {
-            let e = _.A.getCumulativeCPUUsage();
-            null != e && e.usage > z && this.trackCPUProfiling()
+            100 * Math.random() < z && this.trackCPUProfiling()
         }, W))
     }
     async trackNativeHeapPerformanceStats() {
