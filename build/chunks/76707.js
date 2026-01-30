@@ -10,31 +10,29 @@ var i = n(503698),
     s = n(397927),
     a = n(296388);
 let o = e => {
-    var t, n, i, o;
+    var t, n, i, o, c;
     let {
-        title: c,
-        shouldShowElement: d,
+        title: d,
         cardVariantStyleInfo: u,
         description: _,
-        titleClassName: p = "",
-        subtitle: m = "",
-        subtitleClassName: g
-    } = e;
+        titleClassName: p,
+        subtitle: m,
+        subtitleClassName: g,
+        isOverlay: A
+    } = e, f = null != m && !(A && (null == u || null == (i = u.subtitle) ? void 0 : i.hideOnOverlay) === !0), b = null != _;
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(s.Heading, {
             variant: "heading-xl/extrabold",
             className: l()(a.Jf, p),
-            children: c
-        }), "" !== m && (null == d || d(null == u ? void 0 : u.subtitle)) && (0, r.jsxs)("div", {
+            children: d
+        }), (f || b) && (0, r.jsxs)("div", {
             className: g,
-            children: [(0, r.jsx)(s.Text, {
-                variant: null != (t = null == u || null == (i = u.subtitle) ? void 0 : i.textVariant) ? t : "text-sm/normal",
+            children: [f && (0, r.jsx)(s.Text, {
+                variant: null != (t = null == u || null == (o = u.subtitle) ? void 0 : o.textVariant) ? t : "text-sm/normal",
                 children: m
-            }), null != _ && (0, r.jsx)(s.Text, {
-                variant: null != (n = null == u || null == (o = u.description) ? void 0 : o.textVariant) ? n : "text-sm/normal",
-                children: (0, r.jsxs)(r.Fragment, {
-                    children: [(0, r.jsx)("br", {}), _]
-                })
+            }), b && (0, r.jsxs)(s.Text, {
+                variant: null != (n = null == u || null == (c = u.description) ? void 0 : c.textVariant) ? n : "text-sm/normal",
+                children: [f && (0, r.jsx)("br", {}), _]
             })]
         })]
     })
