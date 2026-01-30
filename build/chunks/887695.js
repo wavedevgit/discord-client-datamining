@@ -99,26 +99,29 @@ let p = (0, c.xI)(u.A.EMOJI_PICKER_CONSTANTS_EMOJI_LIST_PADDING_LEFT),
             scrollOffset: s = 0,
             onActiveCategoryIndexChange: l,
             disableForSearch: c = !0
-        } = e, u = r.useRef(f.An1), d = r.useMemo(() => a().debounce(() => {
-            i.current = !1
-        }, 250), [i]), p = r.useMemo(() => a().debounce(e => {
-            "" !== o && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
-                var r;
-                let i = null == (r = n.current) ? void 0 : r.getSectionDescriptors();
-                if (null == i) return;
-                let a = i.findIndex((t, n) => {
-                        let r = i[n + 1],
-                            a = e + s >= t.offset.top,
-                            o = null != r && e + s < r.offset.top;
-                        return null != r && !a && !o || a && o || a && null == r
-                    }),
-                    o = -1 === a ? 0 : a;
-                t !== o && l(o)
-            }))
-        }, 0), [o, n, t, s, l, c]);
+        } = e, u = r.useRef(f.An1), d = r.useRef(t);
+        d.current = t;
+        let p = r.useMemo(() => a().debounce(() => {
+                i.current = !1
+            }, 250), [i]),
+            _ = r.useMemo(() => a().debounce(e => {
+                "" !== o && c || (window.cancelAnimationFrame(u.current), u.current = window.requestAnimationFrame(() => {
+                    var t;
+                    let r = null == (t = n.current) ? void 0 : t.getSectionDescriptors();
+                    if (null == r) return;
+                    let i = r.findIndex((t, n) => {
+                            let i = r[n + 1],
+                                a = e + s >= t.offset.top,
+                                o = null != i && e + s < i.offset.top;
+                            return null != i && !a && !o || a && o || a && null == i
+                        }),
+                        a = -1 === i ? 0 : i;
+                    d.current !== a && l(a)
+                }))
+            }, 0), [o, n, s, l, c]);
         return r.useCallback(e => {
-            i.current = !0, d(), p(e)
-        }, [i, d, p])
+            i.current = !0, p(), _(e)
+        }, [i, p, _])
     },
     y = e => {
         let {
