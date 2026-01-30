@@ -1,8 +1,8 @@
 /** Chunk was on 92917 **/
 /** chunk id: 756369, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Ay: () => e6,
-    OC: () => e9,
+    Ay: () => e9,
+    OC: () => e6,
     iV: () => e7
 }), n(896048), n(938796), n(747238), n(65821), n(114821), n(339614);
 var r, i = n(627968),
@@ -734,7 +734,7 @@ class e7 extends(r = l.Component) {
     }
 }
 
-function e6(e) {
+function e9(e) {
     var t;
     let {
         channel: n,
@@ -792,7 +792,7 @@ eQ(e7, "defaultProps", {
     renderEmbeds: !0,
     compact: !1
 });
-let e9 = e => {
+let e6 = e => {
     var t;
     let {
         message: n,
