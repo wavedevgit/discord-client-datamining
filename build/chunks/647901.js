@@ -8,7 +8,7 @@ var r = n(627968),
     o = n(503698),
     a = n.n(o),
     l = n(865513);
-let _ = {
+let c = {
         SIZE: {
             default: void 0,
             reduced: l.k2
@@ -22,7 +22,7 @@ let _ = {
             reduced: l.Xj
         }
     },
-    c = i.createContext({
+    _ = i.createContext({
         className: void 0,
         size: "default",
         color: "default",
@@ -30,7 +30,7 @@ let _ = {
     });
 
 function s() {
-    return i.useContext(c)
+    return i.useContext(_)
 }
 
 function d(e) {
@@ -46,10 +46,10 @@ function d(e) {
                 color: null != o ? o : u.color,
                 weight: null != d ? d : u.weight
             },
-            t = a()(_.SIZE[e.size], _.COLOR[e.color], _.WEIGHT[e.weight]);
+            t = a()(c.SIZE[e.size], c.COLOR[e.color], c.WEIGHT[e.weight]);
         return "" !== t && (e.className = a()(l.zr, t)), e
     }, [n, o, d, u]);
-    return (0, r.jsx)(c.Provider, {
+    return (0, r.jsx)(_.Provider, {
         value: p,
         children: t
     })

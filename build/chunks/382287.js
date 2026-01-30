@@ -1,8 +1,8 @@
 /** chunk id: 382287, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     LJ: () => s,
-    WQ: () => _,
-    fJ: () => c
+    WQ: () => c,
+    fJ: () => _
 }), n(321073);
 var r = n(565150),
     i = n(453771),
@@ -10,7 +10,7 @@ var r = n(565150),
     a = n(788868),
     l = n(985018);
 
-function _(e, t) {
+function c(e, t) {
     let n = i.Hb(i.o2(t));
     return o.Ay.isPremium(e, a.PremiumTypes.TIER_2) ? l.intl.formatToPlainString(l.t.fxEKdS, {
         maxSize: n
@@ -21,7 +21,7 @@ function _(e, t) {
     })
 }
 
-function c(e, t) {
+function _(e, t) {
     return i.SH(e, t) || i.Aw(e)
 }
 

@@ -22,9 +22,9 @@ var r = n(627968),
     y = n(937008),
     b = n(156312),
     O = n(566980),
-    v = n(210507),
-    A = n(800471),
-    I = n(104745),
+    v = n(800471),
+    A = n(104745),
+    I = n(222707),
     S = n(216641),
     T = n(351906),
     C = n(615405),
@@ -125,7 +125,7 @@ function Q(e) {
         eh = (0, E.A)(),
         em = c.M.EEA_COUNTRIES.has(C.A.ipCountryCodeWithFallback),
         eg = Q === O.h.PURCHASING || Q === O.h.COMPLETED,
-        eE = (0, A.vT)({
+        eE = (0, v.vT)({
             isTrial: !1,
             isGift: eu,
             selectedSkuId: er,
@@ -181,7 +181,7 @@ function Q(e) {
             children: [(0, r.jsx)(L.pK, {
                 negativeMarginBottom: !0,
                 negativeMarginTop: !0
-            }), (0, r.jsx)(I.P, {
+            }), (0, r.jsx)(A.P, {
                 planSkuId: ep.skuId
             }), (0, r.jsx)(k.$p, {
                 planOptions: eb,
@@ -197,7 +197,7 @@ function Q(e) {
                 type: "info",
                 children: (0, r.jsx)(d.Text, {
                     variant: "text-sm/medium",
-                    children: (0, v.Nn)()
+                    children: (0, I.Nn)()
                 })
             })
         }), (0, r.jsx)(d.D0$, {
@@ -317,7 +317,7 @@ function J(e) {
         {
             analyticsLocations: O
         } = (0, g.Ay)(),
-        v = (0, R.Pg)(n, a.id, 1, new Set(l)),
+        A = (0, R.Pg)(n, a.id, 1, new Set(l)),
         {
             proratedInvoicePreview: I,
             proratedInvoiceError: S,
@@ -325,7 +325,7 @@ function J(e) {
             renewalInvoiceError: C
         } = en({
             premiumSubscription: n,
-            newItems: v,
+            newItems: A,
             priceOptions: c,
             preventFetch: f,
             analyticsLocations: O
@@ -340,13 +340,13 @@ function J(e) {
         type: "critical",
         children: N.message
     });
-    let w = (0, A.vT)({
+    let w = (0, v.vT)({
             isTrial: !1,
             isGift: E,
             selectedSkuId: p,
             startedPaymentFlowWithPaymentSources: _.current
         }),
-        P = (0, A.UB)(w, I, a);
+        P = (0, v.UB)(w, I, a);
     if (null !== u && null !== I && (t = (0, R._e)(I.subscriptionPeriodEnd, u.unactivatedUnits, u.endsAt)), null == I || null == T || P) return (0, r.jsx)(d.y$y, {
         className: W.__invalid_spinner
     });

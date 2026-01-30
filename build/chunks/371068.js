@@ -1,6 +1,6 @@
 /** chunk id: 371068, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => _
+    A: () => c
 });
 var r = n(627968);
 n(64700);
@@ -9,7 +9,7 @@ var i = n(503698),
     a = n(155718),
     l = n(907093);
 
-function _(e) {
+function c(e) {
     let {
         divider: t,
         spacing: n

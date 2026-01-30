@@ -6,15 +6,15 @@ n.d(t, {
     zC: () => v
 }), n(228524), n(321073);
 var i = n(110259),
-    r = n(562465),
-    l = n(98919),
+    l = n(562465),
+    r = n(98919),
     a = n(544028);
 n(723702);
 var o = n(499785),
     s = n(652215),
     u = n(985018);
 async function c() {
-    return (await r.Bo.get({
+    return (await l.Bo.get({
         url: s.Rsh.BUG_REPORTS,
         rejectWithError: !1
     })).body
@@ -49,7 +49,7 @@ function m() {
     }]
 }
 async function v(e, t, n) {
-    var r, u;
+    var l, u;
     let c = [{
         name: "name",
         value: e.name
@@ -76,7 +76,7 @@ async function v(e, t, n) {
         name: "experiment_overrides",
         value: e.experimentOverrides.map(e => "".concat(e.experimentId, ":").concat(e.variantId)).join(",")
     });
-    let d = null == (r = e.feature) ? void 0 : r.asana_inbox_id;
+    let d = null == (l = e.feature) ? void 0 : l.asana_inbox_id;
     null != d && "" !== d && c.push({
         name: "asana_inbox_id",
         value: "".concat(d)
@@ -106,7 +106,7 @@ async function v(e, t, n) {
     }), c.push({
         name: "locale",
         value: t.locale
-    })), (0, l.a)(s.Umv.WEB_APP);
+    })), (0, r.a)(s.Umv.WEB_APP);
     try {
         return await o.A.post({
             url: s.Rsh.BUG_REPORTS,

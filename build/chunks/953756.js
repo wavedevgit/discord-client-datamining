@@ -1,8 +1,8 @@
 /** chunk id: 953756, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    Hq: () => _,
+    Hq: () => c,
     O7: () => a,
-    zn: () => c
+    zn: () => _
 }), n(896048), n(65821);
 var r = n(627968),
     i = n(64700);
@@ -27,9 +27,9 @@ let o = i.createContext(null),
                 containerInnerWidth: n,
                 children: a
             } = e, {
-                isParentWidthLimited: _,
-                parentContainerInnerWidth: c
-            } = l(), s = _ && c === t, d = i.useMemo(() => ({
+                isParentWidthLimited: c,
+                parentContainerInnerWidth: _
+            } = l(), s = c && _ === t, d = i.useMemo(() => ({
                 isParentWidthLimited: s,
                 parentContainerInnerWidth: n
             }), [s, n]);
@@ -41,7 +41,7 @@ let o = i.createContext(null),
         AutoMeasuredNestedContainer(e) {
             let {
                 children: t
-            } = e, [n, i, o] = c(!0);
+            } = e, [n, i, o] = _(!0);
             return (0, r.jsx)(a.NestedContainer, {
                 containerOuterWidth: i,
                 containerInnerWidth: o,
@@ -56,7 +56,7 @@ function l() {
     return e
 }
 
-function _(e) {
+function c(e) {
     let {
         isParentWidthLimited: t,
         parentContainerInnerWidth: n
@@ -64,7 +64,7 @@ function _(e) {
     return t && n === e
 }
 
-function c() {
+function _() {
     let e = arguments.length > 0 && void 0 !== arguments[0] && arguments[0],
         t = i.useRef(null),
         [n, r] = i.useState(0),

@@ -1,81 +1,86 @@
 /** chunk id: 121338, original params: e,t,n (module,exports,require) **/
 n.r(t), n.d(t, {
-    default: () => u,
-    openInteractionModal: () => p
+    default: () => f,
+    openInteractionModal: () => m
 });
 var r = n(627968),
     i = n(158954),
     o = n(397927),
-    a = n(207963),
-    l = n(750128),
+    a = n(176634),
+    l = n(207963),
+    c = n(750128),
     _ = n(969508),
-    c = n(520586),
-    s = n(985018),
-    d = n(308040);
+    s = n(520586),
+    d = n(818348),
+    u = n(985018),
+    p = n(308040);
 
-function u(e) {
+function f(e) {
     let {
         title: t,
         onClose: n,
-        transitionState: u
+        transitionState: f
     } = e, {
-        components: p,
-        applicationIconURL: f,
-        applicationName: m,
-        submissionState: g,
-        error: h,
-        validators: I,
+        components: m,
+        applicationIconURL: g,
+        applicationName: h,
+        submissionState: E,
+        error: I,
+        validators: b,
         validationErrors: O,
-        setValidationErrors: b,
-        onSubmit: E
+        setValidationErrors: T,
+        onSubmit: y
     } = (0, _.uD)(e, n);
-    return (0, r.jsx)("form", {
+    return (0, a.A)({
+        onPasteFiles: d.tE,
+        onPasteBackgroundText: d.tE
+    }), (0, r.jsx)("form", {
         onSubmit: e => {
-            e.preventDefault(), E()
+            e.preventDefault(), y()
         },
         children: (0, r.jsxs)(i.dWK, {
-            transitionState: u,
+            transitionState: f,
             onClose: n,
             children: [(0, r.jsx)(i.rQ0, {
                 leading: (0, r.jsx)(o.euF, {
-                    src: f,
+                    src: g,
                     size: o._3J.SIZE_24,
-                    "aria-label": m,
-                    className: d.In
+                    "aria-label": h,
+                    className: p.In
                 }),
                 title: t,
                 titleTextVariant: "heading-xl/semibold"
             }), (0, r.jsxs)(i.cwr, {
-                children: [null != h && "" !== h ? (0, r.jsx)(o.po8, {
+                children: [null != I && "" !== I ? (0, r.jsx)(o.po8, {
                     messageType: o.YCn.ERROR,
-                    className: d.$Q,
-                    children: h
+                    className: p.$Q,
+                    children: I
                 }) : null, (0, r.jsx)(o.po8, {
                     messageType: o.YCn.WARNING,
-                    className: d.$Q,
-                    children: s.intl.format(s.t["dSTy/w"], {
-                        applicationName: m
+                    className: p.$Q,
+                    children: u.intl.format(u.t["dSTy/w"], {
+                        applicationName: h
                     })
                 }), (0, r.jsx)("div", {
-                    className: d.dK,
-                    children: (0, r.jsx)(a.f5, {
+                    className: p.dK,
+                    children: (0, r.jsx)(l.f5, {
                         modal: e,
-                        validators: I,
+                        validators: b,
                         validationErrors: O,
-                        setValidationErrors: b,
-                        children: (0, c.fD)(p)
+                        setValidationErrors: T,
+                        children: (0, s.fD)(m)
                     })
                 })]
             }), (0, r.jsx)(i.H7u, {
                 actions: [{
                     variant: "secondary",
-                    text: s.intl.string(s.t["ETE/oC"]),
+                    text: u.intl.string(u.t["ETE/oC"]),
                     onClick: n
                 }, {
                     variant: "primary",
-                    text: s.intl.string(s.t.geKm7t),
-                    loading: g === l.Z.IN_FLIGHT,
-                    onClick: E
+                    text: u.intl.string(u.t.geKm7t),
+                    loading: E === c.Z.IN_FLIGHT,
+                    onClick: y
                 }],
                 actionsFullWidth: !0
             })]
@@ -83,8 +88,8 @@ function u(e) {
     })
 }
 
-function p(e) {
-    (0, o.qfG)(t => (0, r.jsx)(u, function(e) {
+function m(e) {
+    (0, o.qfG)(t => (0, r.jsx)(f, function(e) {
         for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);

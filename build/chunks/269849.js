@@ -9,8 +9,8 @@ var r = n(621466),
 
 function l(e, t, n) {
     let l = {},
-        _ = {};
-    for (let [c, s] of e.entries()) {
+        c = {};
+    for (let [_, s] of e.entries()) {
         let d = (0, i.E)({
             proxyURL: s.proxyUrl,
             url: s.url
@@ -18,7 +18,7 @@ function l(e, t, n) {
         l[d] = i => (function(e, t, n) {
             var i, o;
             let l = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {},
-                _ = arguments.length > 4 ? arguments[4] : void 0;
+                c = arguments.length > 4 ? arguments[4] : void 0;
             e.preventDefault(), (0, r.vq)(e.currentTarget) && e.currentTarget.blur(), (0, a.R)((i = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                     var n = null != arguments[t] ? arguments[t] : {},
@@ -39,7 +39,7 @@ function l(e, t, n) {
             }({}, l), o = o = {
                 items: t,
                 startingIndex: n,
-                location: null != _ ? _ : "zoomedMediaModalHelper"
+                location: null != c ? c : "zoomedMediaModalHelper"
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
                 var n = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
@@ -50,10 +50,10 @@ function l(e, t, n) {
             })(Object(o)).forEach(function(e) {
                 Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
             }), i))
-        })(i, e, c, t, n), _[d] = () => (0, o.Z5)(s, e.length > 1)
+        })(i, e, _, t, n), c[d] = () => (0, o.Z5)(s, e.length > 1)
     }
     return {
         srcToOnClickOverride: l,
-        srcToHandlePreloadImage: _
+        srcToHandlePreloadImage: c
     }
 }

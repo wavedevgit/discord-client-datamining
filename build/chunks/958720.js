@@ -125,7 +125,6 @@ function O(e) {
             titleDescriber: (0, d.YR)(j.interval, j.intervalCount),
             primaryText: (0, g.$g)(U.amount, U.currency),
             subtext: null != e ? (0, r.jsx)(f.Lo, {
-                strikethrough: !1,
                 price: e
             }) : null,
             isDisabled: x

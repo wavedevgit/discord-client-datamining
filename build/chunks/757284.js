@@ -80,7 +80,7 @@ function _(e) {
 function h(e) {
     let {
         price: t,
-        strikethrough: n = !0
+        strikethrough: n = !1
     } = e;
     return (0, r.jsx)(u.Text, {
         tag: "span",
