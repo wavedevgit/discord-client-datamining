@@ -93,11 +93,13 @@ function m(e) {
             align: O,
             children: [t, (0, r.jsxs)(s.A.Child, {
                 children: [null != E && "" !== E ? (0, r.jsx)(c.z, {
+                    "data-migration-pending": !0,
                     className: a()(u.$G, {
                         [u.vV]: A
                     }),
                     children: E
                 }) : null, (0, r.jsx)(l.a, {
+                    "data-migration-pending": !0,
                     className: a()(u.Vz, {
                         [u.vV]: A
                     }),

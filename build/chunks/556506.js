@@ -1,25 +1,25 @@
-/** chunk id: 556506, original params: e,n,l (module,exports,require) **/
-l.d(n, {
-    default: () => p
-}), l(896048);
-var a = l(627968),
-    s = l(64700),
-    t = l(503698),
-    i = l.n(t),
-    r = l(862482),
-    d = l(935462),
-    o = l(571356),
-    c = l(397927),
-    u = l(235986),
-    m = l(985018),
-    h = l(933976);
-let p = e => {
-    let n, l, t, {
-            body: p,
+/** chunk id: 556506, original params: e,n,a (module,exports,require) **/
+a.d(n, {
+    default: () => h
+}), a(896048);
+var l = a(627968),
+    t = a(64700),
+    i = a(503698),
+    s = a.n(i),
+    r = a(862482),
+    d = a(935462),
+    o = a(571356),
+    c = a(397927),
+    u = a(235986),
+    m = a(985018),
+    p = a(933976);
+let h = e => {
+    let n, a, i, {
+            body: h,
             cancelText: _,
-            className: x,
-            confirmColor: j,
-            confirmText: g = m.intl.string(m.t.BddRzS),
+            className: g,
+            confirmColor: x,
+            confirmText: j = m.intl.string(m.t.BddRzS),
             secondaryConfirmText: b,
             onCancel: f,
             onClose: N,
@@ -30,10 +30,10 @@ let p = e => {
             titleClassName: k
         } = e,
         S = r.$n.Sizes.MEDIUM,
-        [z, E] = s.useState(!1);
-    return s.useEffect(() => () => {
+        [z, E] = t.useState(!1);
+    return t.useEffect(() => () => {
         z && (null == A || A())
-    }, [z, A]), null != _ && "" !== _ && (n = (0, a.jsx)(r.$n, {
+    }, [z, A]), null != _ && "" !== _ && (n = (0, l.jsx)(r.$n, {
         "data-migration-pending": !0,
         type: "button",
         size: S,
@@ -41,61 +41,64 @@ let p = e => {
         onClick: () => {
             null == N || N(), null == f || f()
         },
-        className: h.zr,
+        className: p.zr,
         children: _
-    })), null != g && "" !== g && (l = (0, a.jsx)(r.$n, {
+    })), null != j && "" !== j && (a = (0, l.jsx)(r.$n, {
         "data-migration-pending": !0,
         type: "submit",
-        color: j,
+        color: x,
         size: S,
-        className: h.FS,
+        className: p.FS,
         autoFocus: !0,
-        children: g
-    })), null != b && "" !== b && (t = (0, a.jsx)(c.Checkbox, {
+        children: j
+    })), null != b && "" !== b && (i = (0, l.jsx)(c.Checkbox, {
         checked: z,
         onChange: e => E(e),
         label: b,
         labelType: "secondary"
-    })), (0, a.jsx)(d.EO, {
+    })), (0, l.jsx)(d.EO, {
         "data-migration-pending": !0,
         transitionState: D,
         size: d.rI.DYNAMIC,
-        className: i()(x, h.kL),
+        className: s()(g, p.kL),
         "aria-label": C,
         parentComponent: "Alert",
-        children: (0, a.jsxs)("form", {
+        children: (0, l.jsxs)("form", {
             onSubmit: e => {
                 null != e && e.preventDefault(), null == N || N(), null == y || y()
             },
-            className: h.Zd,
-            children: [(0, a.jsx)(d.rQ, {
-                children: null != C ? (0, a.jsx)(c.Heading, {
+            className: p.Zd,
+            children: [(0, l.jsx)(d.rQ, {
+                "data-migration-pending": !0,
+                children: null != C ? (0, l.jsx)(c.Heading, {
                     variant: "heading-lg/semibold",
-                    className: i()(h.DD, k),
+                    className: s()(p.DD, k),
                     children: C
-                }) : (0, a.jsx)(c.Heading, {
+                }) : (0, l.jsx)(c.Heading, {
                     variant: "heading-md/semibold",
-                    className: i()(h.DD, k),
+                    className: s()(p.DD, k),
                     children: C
                 })
-            }), (0, a.jsx)(d.$m, {
-                className: h.jE,
-                children: (0, a.jsx)(u.A, {
+            }), (0, l.jsx)(d.$m, {
+                "data-migration-pending": !0,
+                className: p.jE,
+                children: (0, l.jsx)(u.A, {
                     direction: u.A.Direction.VERTICAL,
                     justify: u.A.Justify.START,
-                    className: h.Qs,
-                    children: null != p && (0, a.jsx)(o.E, {
+                    className: p.Qs,
+                    children: null != h && (0, l.jsx)(o.E, {
                         variant: "text-md/normal",
-                        className: h.rf,
+                        className: p.rf,
                         color: "text-default",
-                        children: p
+                        children: h
                     })
                 })
-            }), (0, a.jsxs)(d.jl, {
+            }), (0, l.jsxs)(d.jl, {
+                "data-migration-pending": !0,
                 justify: void 0,
                 wrap: u.A.Wrap.WRAP,
-                className: h.Hx,
-                children: [l, n, t]
+                className: p.Hx,
+                children: [a, n, i]
             })]
         })
     })
