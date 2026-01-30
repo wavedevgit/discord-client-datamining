@@ -23,13 +23,13 @@ var r = n(627968),
     y = n(148355),
     O = n(320501),
     _ = n(994500),
-    x = n(486020),
-    j = n(927813),
+    j = n(486020),
+    x = n(927813),
     v = n(403362),
     E = n(652215),
     C = n(838541),
     S = n(279633);
-let I = 10 * j.A.Millis.SECOND;
+let I = 10 * x.A.Millis.SECOND;
 
 function N(e) {
     var t;
@@ -41,7 +41,7 @@ function N(e) {
     } = (0, c.cf)([_.A], () => ({
         isBlocked: _.A.isBlockedForMessage(n),
         isIgnored: _.A.isIgnoredForMessage(n)
-    }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, j] = l.useState(!1), v = l.useCallback(e => {
+    }), [n]), o = (0, m.X4)(n), d = l.useContext(g.A), [O, x] = l.useState(!1), v = l.useCallback(e => {
         "A" !== e.target.nodeName && (h.A.updateChatOpen(n.channel_id, !0), p.A.jumpToMessage({
             channelId: n.channel_id,
             messageId: n.id,
@@ -67,10 +67,10 @@ function N(e) {
     return (0, r.jsxs)(u.DUT, {
         className: S.oR,
         onMouseEnter: () => {
-            j(!0)
+            x(!0)
         },
         onMouseLeave: () => {
-            j(!1)
+            x(!1)
         },
         onClick: v,
         children: [(0, r.jsxs)("div", {
@@ -82,7 +82,7 @@ function N(e) {
             }), null != R ? null : T]
         }), (0, r.jsx)("img", {
             alt: "",
-            src: (null == o ? void 0 : o.guildMemberAvatar) != null && null != d ? (0, x.s7)({
+            src: (null == o ? void 0 : o.guildMemberAvatar) != null && null != d ? (0, j.s7)({
                 guildId: d,
                 userId: n.author.id,
                 avatar: o.guildMemberAvatar
@@ -158,7 +158,7 @@ function T(e) {
             height: f.current[e.id],
             y: m[e.id]
         })),
-        x = (0, u.pnh)(_, {
+        j = (0, u.pnh)(_, {
             keys: e => e.message.id,
             from: () => ({
                 opacity: 0
@@ -202,7 +202,7 @@ function T(e) {
             onMouseLeave: () => {
                 h(!1)
             },
-            children: x((e, t) => (0, r.jsx)(o.animated.div, {
+            children: j((e, t) => (0, r.jsx)(o.animated.div, {
                 ref: e => A(t.message.id, null != e ? e.offsetHeight : null),
                 className: S.T_,
                 style: e,

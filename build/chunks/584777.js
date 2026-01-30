@@ -2,7 +2,7 @@
 /** chunk id: 584777, original params: e,t,n (module,exports,require) **/
 let r;
 n.d(t, {
-    A: () => j,
+    A: () => x,
     h: () => Y
 }), n(896048), n(733351), n(321073), n(638769);
 var l, i, s, a = n(311907),
@@ -20,8 +20,8 @@ var l, i, s, a = n(311907),
     y = n(205761),
     O = n(994500),
     _ = n(287809),
-    x = n(652215),
-    j = ((i = {})[i.FRIENDS = 0] = "FRIENDS", i[i.GUILD_MEMBERS = 1] = "GUILD_MEMBERS", i);
+    j = n(652215),
+    x = ((i = {})[i.FRIENDS = 0] = "FRIENDS", i[i.GUILD_MEMBERS = 1] = "GUILD_MEMBERS", i);
 let v = !1,
     E = "",
     C = 0,
@@ -35,7 +35,7 @@ let v = !1,
             n = _.default.getCurrentUser();
         return O.A.isFriend(e.user.id) ? t.push("FRIENDS") : e.user.id !== (null == n ? void 0 : n.id) && t.push("GUILD_MEMBERS"), t
     }, function(e) {
-        if (A.A.hasConsented(x.YAq.PERSONALIZATION)) {
+        if (A.A.hasConsented(j.YAq.PERSONALIZATION)) {
             var t, n;
             return -(null != (t = null == (n = p.A.getUserAffinity(e.user.id)) ? void 0 : n.communicationProbability) ? t : 0)
         }
@@ -63,7 +63,7 @@ function L() {
             for (let n of ((null == e ? void 0 : e.isPrivate()) && e.recipients.forEach(e => {
                     w.delete(e)
                 }), t)) ! function(e) {
-                if (O.A.getRelationshipType(e) === x.eA$.BLOCKED) return w.delete(e);
+                if (O.A.getRelationshipType(e) === j.eA$.BLOCKED) return w.delete(e);
                 let t = _.default.getUser(e);
                 if (null == t) return w.delete(e);
                 w.set(e, {
@@ -77,7 +77,7 @@ function L() {
                 user: n,
                 comparator: m.Ay.getName(n)
             }), e
-        }, []).sort(k)
+        }, []).sort(G)
     }(e), !0;
     let t = null != e ? e.recipients : [];
     if (null != r) {
@@ -118,8 +118,8 @@ function M() {
     return (N = O.A.getFriendCount() > 0) !== e
 }
 
-function k(e, t) {
-    if (A.A.hasConsented(x.YAq.PERSONALIZATION)) {
+function G(e, t) {
+    if (A.A.hasConsented(j.YAq.PERSONALIZATION)) {
         var n, r, l, i;
         let s = null != (n = null == (l = p.A.getUserAffinity(e.user.id)) ? void 0 : l.communicationProbability) ? n : 0,
             a = null != (r = null == (i = p.A.getUserAffinity(t.user.id)) ? void 0 : i.communicationProbability) ? r : 0;
@@ -128,7 +128,7 @@ function k(e, t) {
     return (0, f.sS)(m.Ay.getName(e.user).toLocaleLowerCase()).localeCompare((0, f.sS)(m.Ay.getName(t.user).toLocaleLowerCase()))
 }
 
-function G(e) {
+function k(e) {
     let {
         results: t
     } = e;
@@ -152,16 +152,16 @@ function G(e) {
 }
 
 function U() {
-    return null != r && (r.destroy(), r = null), u.A.getUserSearchContext(G, 1e3)
+    return null != r && (r.destroy(), r = null), u.A.getUserSearchContext(k, 1e3)
 }
 
 function V(e) {
-    if (e.key !== x.TLS) return !1;
+    if (e.key !== j.TLS) return !1;
     v = !0, M(), r = U(), P = null, D("")
 }
 
 function B(e) {
-    if (e.key !== x.TLS) return !1;
+    if (e.key !== j.TLS) return !1;
     H()
 }
 

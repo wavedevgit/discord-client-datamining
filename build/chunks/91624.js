@@ -24,7 +24,7 @@ var r = n(627968),
 n(294920);
 var _ = n(119907);
 
-function x(e) {
+function j(e) {
     let {
         value: t,
         channel: n
@@ -38,7 +38,7 @@ function x(e) {
     })
 }
 
-function j(e) {
+function x(e) {
     let {
         channel: t,
         message: n
@@ -46,7 +46,7 @@ function j(e) {
         id: c
     } = t, {
         id: u
-    } = n, f = t.getGuildId(), m = (0, s.bG)([p.A], () => p.A.getGuild(f), [f]), A = t.type === O.rbe.GUILD_ANNOUNCEMENT, j = null != m && m.features.has(O.GuildFeatures.NEWS), E = A && j, {
+    } = n, f = t.getGuildId(), m = (0, s.bG)([p.A], () => p.A.getGuild(f), [f]), A = t.type === O.rbe.GUILD_ANNOUNCEMENT, x = null != m && m.features.has(O.GuildFeatures.NEWS), E = A && x, {
         editingMessage: C,
         editingTextValue: S,
         editingRichValue: I
@@ -115,7 +115,7 @@ function j(e) {
         onChange: a.A.updateEditMessage,
         onConfirmDelete: b.A.confirmDelete,
         saveMessage: T,
-        validateEdit: x,
+        validateEdit: j,
         children: P
     }) : null
 }
@@ -160,7 +160,7 @@ function E(e, t, n) {
         channel: i,
         compact: s
     } = e;
-    return n ? (0, r.jsx)(j, {
+    return n ? (0, r.jsx)(x, {
         channel: i,
         message: l
     }) : (0, r.jsx)(A.Ay, {

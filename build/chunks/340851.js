@@ -24,8 +24,8 @@ var r = n(627968),
     y = n(652896),
     O = n(279250),
     _ = n(346846),
-    x = n(142524),
-    j = n(958140),
+    j = n(142524),
+    x = n(958140),
     v = n(721931),
     E = n(766319),
     C = n(342296),
@@ -39,8 +39,8 @@ var r = n(627968),
     D = n(376696),
     L = n(544105),
     M = n(502075),
-    k = n(985018),
-    G = n(861379);
+    G = n(985018),
+    k = n(861379);
 
 function U(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -79,7 +79,7 @@ function B(e) {
         numUsers: t
     } = e;
     return (0, r.jsx)("div", {
-        className: G.BN,
+        className: k.BN,
         children: (0, r.jsxs)(o.Text, {
             color: "text-muted",
             variant: "text-sm/medium",
@@ -92,19 +92,19 @@ function H(e) {
     let {
         numAudience: t,
         collapsed: n
-    } = e, l = n ? t : k.intl.formatToPlainString(k.t["+v2pN2"], {
+    } = e, l = n ? t : G.intl.formatToPlainString(G.t["+v2pN2"], {
         count: t
     });
     return (0, r.jsxs)("div", {
-        className: s()(G.yJ, {
-            [G.Nr]: n
+        className: s()(k.yJ, {
+            [k.Nr]: n
         }),
         children: [(0, r.jsx)("div", {
-            className: G.$L,
+            className: k.$L,
             children: (0, r.jsx)(o.LoC, {
                 size: "md",
                 color: "currentColor",
-                className: G.wG
+                className: k.wG
             })
         }), (0, r.jsx)(o.Text, {
             color: "text-muted",
@@ -157,9 +157,9 @@ let F = (0, p.J)(function(e) {
     } = (0, R.fC)({
         guildId: B.guild_id,
         location: "VoiceUser"
-    }), ex = l.useRef(null), [ej, ev] = l.useState(!1), eE = l.useRef(null), [eC, eS] = l.useState(!1), [eI, eN] = l.useState(!1), [eT, eP] = l.useState(!1), [ew, eR] = l.useState(!1), eD = eI || ew || eT, eL = eC || eD, eM = (null == ey ? void 0 : ey.session_id) != null, ek = () => {
-        ev(!ej)
-    }, eG = (e, t) => {
+    }), ej = l.useRef(null), [ex, ev] = l.useState(!1), eE = l.useRef(null), [eC, eS] = l.useState(!1), [eI, eN] = l.useState(!1), [eT, eP] = l.useState(!1), [ew, eR] = l.useState(!1), eD = eI || ew || eT, eL = eC || eD, eM = (null == ey ? void 0 : ey.session_id) != null, eG = () => {
+        ev(!ex)
+    }, ek = (e, t) => {
         let n = new Set(["system:click_outside", "user:escape", "user:explicit"]);
         null != t && n.has(t) && (eT && eP(!1), eI && eN(!1)), eU()
     }, eU = () => {
@@ -200,7 +200,7 @@ let F = (0, p.J)(function(e) {
                 }))
             })
         },
-        eK = e => em ? (0, r.jsx)(j.h, V(U({}, e), {
+        eK = e => em ? (0, r.jsx)(x.h, V(U({}, e), {
             channel: B,
             setIsHangStatusInputFocused: eN,
             setIsEmojiPickerOpen: eR
@@ -213,7 +213,7 @@ let F = (0, p.J)(function(e) {
             userId: p.id,
             channel: B
         }),
-        eW = () => (0, g.r9)() && (0, g.UK)(B.id) ? null : (0, r.jsx)(x.A, {
+        eW = () => (0, g.r9)() && (0, g.UK)(B.id) ? null : (0, r.jsx)(j.A, {
             user: p,
             channel: B,
             onWatch: eH,
@@ -221,20 +221,20 @@ let F = (0, p.J)(function(e) {
             location: ef
         }),
         ez = (0, r.jsx)("div", {
-            className: G.kZ,
+            className: k.kZ,
             "data-dnd-name": B.name,
             onMouseEnter: ep ? void 0 : () => {
-                e_ ? (em && eO && !ej && !eL && eS(!0), ej || null == ea || ea(p.id)) : (er || eO || eM) && !ej && (null == ea || ea(p.id))
+                e_ ? (em && eO && !ex && !eL && eS(!0), ex || null == ea || ea(p.id)) : (er || eO || eM) && !ex && (null == ea || ea(p.id))
             },
             onMouseLeave: ep ? void 0 : eU,
             children: (0, r.jsx)(C.A, {
-                clickTrap: (null == p ? void 0 : p.id) === (null == (t = P.default.getCurrentUser()) ? void 0 : t.id) && ej,
-                targetElementRef: ex,
+                clickTrap: (null == p ? void 0 : p.id) === (null == (t = P.default.getCurrentUser()) ? void 0 : t.id) && ex,
+                targetElementRef: ej,
                 user: p,
                 guildId: B.guild_id,
                 channelId: B.id,
                 newAnalyticsLocations: [f.A.VOICE_USER],
-                shouldShow: ej,
+                shouldShow: ex,
                 onRequestClose: () => ev(!1),
                 children: e => (e => {
                     let t = L.hv.has(null != ed ? ed : ""),
@@ -262,11 +262,11 @@ let F = (0, p.J)(function(e) {
                             voicePlatform: eh,
                             embeddedApplication: z,
                             avatarContainerClass: s()({
-                                [G.dj]: !0
+                                [k.dj]: !0
                             }),
                             disabled: ep && !t,
-                            selected: ej,
-                            onClick: t ? void 0 : ek,
+                            selected: ex,
+                            onClick: t ? void 0 : eG,
                             onDoubleClick: eH,
                             onContextMenu: eF,
                             guildId: B.guild_id,
@@ -279,9 +279,9 @@ let F = (0, p.J)(function(e) {
                     if (ep) {
                         var l;
                         return (0, r.jsx)(a.m, {
-                            text: null != (l = (0, A.A)(ed)) ? l : k.intl.string(k.t.IyYqqY),
+                            text: null != (l = (0, A.A)(ed)) ? l : G.intl.string(G.t.IyYqqY),
                             children: (0, r.jsx)(S.Ay, U({
-                                ref: ex
+                                ref: ej
                             }, n))
                         })
                     }
@@ -294,15 +294,15 @@ let F = (0, p.J)(function(e) {
                         previewIsOpen: eu,
                         hangStatusActivity: eA
                     }) : er ? c = eW : eM && p.id !== I.default.getId() ? c = eY : eO && (c = eK), (0, r.jsx)(o.YNO, {
-                        targetElementRef: ex,
+                        targetElementRef: ej,
                         position: "right",
                         renderPopout: c,
-                        shouldShow: (ec || eO && eD && (!e_ || em)) && !ej,
-                        onRequestClose: eG,
+                        shouldShow: (ec || eO && eD && (!e_ || em)) && !ex,
+                        onRequestClose: ek,
                         align: eO && eL && !em && !e_ ? "center" : void 0,
                         spacing: eO && eL && (!e_ || em) ? 8 : 0,
                         children: () => (0, r.jsx)(S.Ay, V(U({}, n), {
-                            ref: ex,
+                            ref: ej,
                             onMouseDown: e.onMouseDown,
                             onKeyDown: e.onKeyDown,
                             handleHoverHangStatus: eV,

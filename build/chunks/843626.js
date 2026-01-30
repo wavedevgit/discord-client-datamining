@@ -19,12 +19,12 @@ function d(e) {
         d = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : l.A,
         p = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : o.A,
         f = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : a.A;
-    if (null == e || !(e.state !== c.cmJ.SEND_FAILED && c.MRS.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, r.VL)(e.flags, u) && 1) || !i.canWithPartialContext(c.xBc.READ_MESSAGE_HISTORY, {
-            channelId: e.channel_id
-        })) return !1;
+    if (null == e || !(e.state !== c.cmJ.SEND_FAILED && c.MRS.FORWARDABLE.has(e.type) && null == e.poll && null == e.sharedClientTheme && null == e.activity && null == e.call && null == e.activityInstance && 0 === (0, r.VL)(e.flags, u) && 1)) return !1;
     let m = p.getChannel(e.channel_id),
-        O = null == m ? void 0 : m.guild_id;
-    return !(null != O && (null == (n = f.getGuild(O)) ? void 0 : n.features.has(c.GuildFeatures.FORWARDING_DISABLED)) || null != O && d.isChannelOrThreadParentGated(O, e.channel_id)) && (null == (t = null == m ? void 0 : m.isModeratorReportChannel()) || !t)
+        O = i.can(c.xBc.READ_MESSAGE_HISTORY, m);
+    if (null != m && !O && !m.isPrivate()) return !1;
+    let b = null == m ? void 0 : m.guild_id;
+    return !(null != b && (null == (n = f.getGuild(b)) ? void 0 : n.features.has(c.GuildFeatures.FORWARDING_DISABLED)) || null != b && d.isChannelOrThreadParentGated(b, e.channel_id)) && (null == (t = null == m ? void 0 : m.isModeratorReportChannel()) || !t)
 }
 
 function p(e) {

@@ -24,8 +24,8 @@ var r = n(627968),
     y = n(157296),
     O = n(963702),
     _ = n(792967),
-    x = n(712209),
-    j = n(652215),
+    j = n(712209),
+    x = n(652215),
     v = n(985018),
     E = n(852570);
 
@@ -36,11 +36,11 @@ function C(e) {
         showTutorial: T,
         setSeenTutorial: P,
         closePopout: w
-    } = e, R = l.useRef(null), [D, L] = (0, x.Ay)(R), {
+    } = e, R = l.useRef(null), [D, L] = (0, j.Ay)(R), {
         loadState: M,
-        channels: k
+        channels: G
     } = D, {
-        maybeLoadMore: G
+        maybeLoadMore: k
     } = L, U = (0, u.bG)([g.A], () => g.A.messageGroupSpacing);
     t = R, n = D, i = L, l.useLayoutEffect(() => {
         var e;
@@ -68,8 +68,8 @@ function C(e) {
             let e = a.channels.find(e => !e.collapsed);
             null != e && y.markChannelRead(e)
         };
-        return b._.subscribe(j.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-            b._.unsubscribe(j.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
+        return b._.subscribe(x.jej.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+            b._.unsubscribe(x.jej.MARK_TOP_INBOX_CHANNEL_READ, e)
         }
     }, [y, a.channels]), C = L, l.useEffect(() => {
         let e = e => {
@@ -79,16 +79,16 @@ function C(e) {
             document.removeEventListener("keydown", e)
         }
     }, [C]), l.useEffect(() => {
-        m.default.track(j.HAw.OPEN_POPOUT, {
+        m.default.track(x.HAw.OPEN_POPOUT, {
             type: "Inbox"
         })
     }, []), l.useEffect(() => (h.h.subscribe("CONNECTION_OPEN", w), () => {
         h.h.unsubscribe("CONNECTION_OPEN", w)
-    }), [w]), (0, p.Ay)(() => (b._.subscribe(j.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead), () => {
-        b._.unsubscribe(j.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead)
+    }), [w]), (0, p.Ay)(() => (b._.subscribe(x.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead), () => {
+        b._.unsubscribe(x.jej.INBOX_MARK_ALL_UNREADS_READ, L.markAllRead)
     }));
     let V = (0, f.A)("unreads", R);
-    if (0 === k.length) {
+    if (0 === G.length) {
         return (0, r.jsx)(O.A, {
             Icon: d.K$s,
             header: v.intl.string(v.t["6XMM+D"]),
@@ -142,11 +142,11 @@ function C(e) {
                         R.current = e, l.current = null != (t = null == e ? void 0 : e.getScrollerNode()) ? t : null
                     }
                 }, i), n = n = {
-                    onScroll: M === x.mJ.Done ? void 0 : G,
+                    onScroll: M === j.mJ.Done ? void 0 : k,
                     className: s()(E.XG, "group-spacing-".concat(U)),
                     children: [T ? (0, r.jsx)(S, {
                         setSeenTutorial: P
-                    }) : null, (0, _.A)(k, L, N), M === x.mJ.Done ? null : (0, r.jsx)(d.y$y, {
+                    }) : null, (0, _.A)(G, L, N), M === j.mJ.Done ? null : (0, r.jsx)(d.y$y, {
                         className: E.u1
                     })]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -208,5 +208,5 @@ function I() {
     })
 }
 let N = () => (0, r.jsx)(y.A, {
-    onClick: () => b._.dispatch(j.jej.INBOX_MARK_ALL_UNREADS_READ)
+    onClick: () => b._.dispatch(x.jej.INBOX_MARK_ALL_UNREADS_READ)
 })

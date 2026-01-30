@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(970244),
     O = n(253932),
     _ = n(383233),
-    x = n(734057),
-    j = n(287809),
+    j = n(734057),
+    x = n(287809),
     v = n(403362),
     E = n(572448),
     C = n(963702),
@@ -125,7 +125,7 @@ function R(e) {
         scheduledMessages: t
     } = e, n = l.useMemo(() => t.reduce((e, t) => {
         var n, r;
-        let l = x.A.getChannel(t.scheduledMessage.channelId);
+        let l = j.A.getChannel(t.scheduledMessage.channelId);
         return null == l || (e[l.id] = {
             channel: l,
             scheduledMessages: [...null != (n = null == (r = e[l.id]) ? void 0 : r.scheduledMessages) ? n : [], t]
@@ -163,7 +163,7 @@ let D = l.memo(function(e) {
     } = e, a = new _.Ay({
         id: t.scheduledMessageId,
         content: t.scheduledMessage.content,
-        author: j.default.getUser(t.userId),
+        author: x.default.getUser(t.userId),
         timestamp: o()(t.sendAtTimestamp).toDate(),
         channel_id: t.scheduledMessage.channelId
     }), {

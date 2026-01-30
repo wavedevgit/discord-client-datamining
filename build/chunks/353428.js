@@ -3,7 +3,7 @@
 n.d(t, {
     EP: () => U,
     i$: () => B,
-    zF: () => k
+    zF: () => G
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -24,8 +24,8 @@ var r = n(627968),
     y = n(622543),
     O = n(576622),
     _ = n(994500),
-    x = n(967198),
-    j = n(287809),
+    j = n(967198),
+    x = n(287809),
     v = n(486020),
     E = n(975571),
     C = n(149564),
@@ -94,7 +94,7 @@ function M(e) {
     }, s)
 }
 
-function k(e) {
+function G(e) {
     let {
         channel: t,
         channelName: n,
@@ -207,22 +207,22 @@ function k(e) {
         case w.rbe.ANNOUNCEMENT_THREAD:
         case w.rbe.PUBLIC_THREAD:
         case w.rbe.PRIVATE_THREAD:
-            let x = null;
+            let j = null;
             if (!o && null != i) {
                 let e = (0, g.gU)(i, a);
-                x = (0, r.jsxs)(l.Fragment, {
+                j = (0, r.jsxs)(l.Fragment, {
                     children: [V(e, D.intl.string(D.t.Pnajj0)), (0, r.jsx)(T.A.Title, {
                         level: y,
                         onContextMenu: f,
                         onClick: h,
                         className: s()(L.rg, L.or),
-                        children: (0, p.m1)(i, j.default, _.A)
+                        children: (0, p.m1)(i, x.default, _.A)
                     }), (0, r.jsx)(T.A.Caret, {})]
                 })
             }
             let v = (null == i ? void 0 : i.type) != null && w.kvI.GUILD_THREADS_ONLY.has(i.type);
             return (0, r.jsxs)(l.Fragment, {
-                children: [x, V(v ? null : b, D.intl.string(D.t["7Xm5QI"])), (0, r.jsx)(T.A.Title, {
+                children: [j, V(v ? null : b, D.intl.string(D.t["7Xm5QI"])), (0, r.jsx)(T.A.Title, {
                     level: y,
                     onContextMenu: d,
                     onClick: c,
@@ -255,11 +255,11 @@ function k(e) {
             return null
     }
 }
-let G = e => {
+let k = e => {
     var t, n, i;
     let {
         channel: s
-    } = e, o = (0, a.bG)([j.default], () => j.default.getCurrentUser()), c = (0, a.bG)([j.default], () => j.default.getUser(s.getRecipientId())), u = (0, C.x)(), d = (0, a.bG)([y.A], () => null != c ? y.A.getUserProfile(c.id) : null), p = null != d && (null != (t = null == d ? void 0 : d.fetchEndedAt) ? t : 0) > 0;
+    } = e, o = (0, a.bG)([x.default], () => x.default.getCurrentUser()), c = (0, a.bG)([x.default], () => x.default.getUser(s.getRecipientId())), u = (0, C.x)(), d = (0, a.bG)([y.A], () => null != c ? y.A.getUserProfile(c.id) : null), p = null != d && (null != (t = null == d ? void 0 : d.fetchEndedAt) ? t : 0) > 0;
     return (l.useEffect(() => {
         (null == o ? void 0 : o.isStaff()) && null != c && !c.isStaff() && (0, O.A)(c.id, c.getAvatarURL(void 0, 80), {
             dispatchWait: !0,
@@ -277,7 +277,7 @@ function U(e, t) {
     switch (e.type) {
         case w.rbe.DM:
             return (0, r.jsxs)(r.Fragment, {
-                children: [(0, r.jsx)(G, {
+                children: [(0, r.jsx)(k, {
                     channel: e
                 }), (0, r.jsx)(S.A, {
                     channel: e
@@ -313,7 +313,7 @@ function B(e) {
         guild: t,
         channel: n,
         caretPosition: i = "left"
-    } = e, s = (0, a.bG)([x.A], () => x.A.getGuildId()), o = (0, b.lI)(), d = l.useRef(null);
+    } = e, s = (0, a.bG)([j.A], () => j.A.getGuildId()), o = (0, b.lI)(), d = l.useRef(null);
     return (s === w.YYv || o) && null != t ? (0, r.jsx)(c.m, {
         asContainer: !0,
         text: t.name,

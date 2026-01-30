@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(885631),
     O = n(986268),
     _ = n(652215),
-    x = n(349828),
-    j = n(985018),
+    j = n(349828),
+    x = n(985018),
     v = n(668560);
 
 function E(e) {
@@ -94,7 +94,7 @@ function S(e) {
     } = n.springs, c = t.features.has(_.GuildFeatures.DISCOVERABLE), h = (0, r.jsx)("div", {
         className: v.WV,
         children: c && (0, r.jsx)(u.m, {
-            text: j.intl.string(j.t.O8lDI2),
+            text: x.intl.string(x.t.O8lDI2),
             position: "right",
             children: (0, r.jsxs)("div", {
                 className: v.Pl,
@@ -107,7 +107,7 @@ function S(e) {
                 }), (0, r.jsx)(d.Text, {
                     variant: "text-xs/normal",
                     color: "none",
-                    children: j.intl.string(j.t["B/vjCu"])
+                    children: x.intl.string(x.t["B/vjCu"])
                 })]
             })
         })
@@ -147,7 +147,7 @@ function N(e) {
         children: t.name
     })
 }
-let T = [x.V, _.gNP];
+let T = [j.V, _.gNP];
 
 function P(e) {
     var t;
@@ -190,7 +190,7 @@ function P(e) {
     return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsxs)(d.DUT, {
             className: v.Vm,
-            "aria-label": j.intl.formatToPlainString(j.t.xMXpl3, {
+            "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
                 guildName: null != (t = null == s ? void 0 : s.name) ? t : ""
             }),
             "aria-controls": h,
@@ -202,7 +202,7 @@ function P(e) {
                 children: [(0, r.jsx)(O.A, {
                     guild: s,
                     isBannerVisible: i
-                }), s.id === x.V && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
+                }), s.id === j.V && (0, r.jsx)(I, {}), (0, r.jsx)(N, {
                     guild: s
                 })]
             }), (0, r.jsx)("div", {
@@ -210,7 +210,7 @@ function P(e) {
                 children: m
             })]
         }), !T.includes(s.id) && (0, r.jsx)(u.m, {
-            text: j.intl.string(j.t.Sd8Ixw),
+            text: x.intl.string(x.t.Sd8Ixw),
             position: "bottom",
             asContainer: !0,
             children: (0, r.jsx)(d.DUT, {
@@ -237,15 +237,15 @@ let w = l.memo(function(e) {
         onMouseDown: g,
         disableBannerAnimation: b,
         "aria-expanded": O,
-        "aria-controls": x,
-        guild: j,
+        "aria-controls": j,
+        guild: x,
         guildBanner: E,
         animationOverlayHeight: I,
         children: N,
         headerClassName: T,
         communityInfoVisible: w,
         hasSubheader: D
-    } = e, L = j.features.has(_.GuildFeatures.ANIMATED_BANNER), M = (0, h.A)(j), k = !M && (0, y.A)(j), G = !M && w, U = (0, A.VI)(E) && L && !b, [V, B] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), K = null != t ? t : F, Y = l.useRef(void 0), W = m.kt.getSetting(), z = (0, c.bG)([f.A], () => f.A.theme);
+    } = e, L = x.features.has(_.GuildFeatures.ANIMATED_BANNER), M = (0, h.A)(x), G = !M && (0, y.A)(x), k = !M && w, U = (0, A.VI)(E) && L && !b, [V, B] = l.useState(!1), H = l.useRef(!1), F = l.useRef(null), K = null != t ? t : F, Y = l.useRef(void 0), W = m.kt.getSetting(), z = (0, c.bG)([f.A], () => f.A.theme);
     l.useEffect(() => {
         if (U && n && !H.current && W) return B(!0), Y.current = setTimeout(() => {
             B(!1)
@@ -274,7 +274,7 @@ let w = l.memo(function(e) {
                     [v.r9]: q(),
                     [v.Pi]: n,
                     [e]: !1,
-                    [v.Iv]: G || D && k
+                    [v.Iv]: k || D && G
                 }),
                 onMouseDown: g,
                 onContextMenu: p,
@@ -286,21 +286,21 @@ let w = l.memo(function(e) {
                         className: s()(v.VW, v.Nk),
                         children: (0, r.jsx)(P, {
                             bannerVisible: n,
-                            guild: j,
+                            guild: x,
                             onClick: u,
                             onContextMenu: p,
-                            ariaControls: x,
+                            ariaControls: j,
                             ariaExpanded: O,
                             children: N
                         })
-                    }), k && (0, r.jsx)(S, {
-                        guild: j,
+                    }), G && (0, r.jsx)(S, {
+                        guild: x,
                         controller: i,
                         hasBanner: null != E,
                         hasSubheader: null != D && D
                     })]
                 }), null != E ? (0, r.jsx)(C, {
-                    guild: j,
+                    guild: x,
                     controller: i,
                     guildBanner: E,
                     animate: V

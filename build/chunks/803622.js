@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(622543),
     O = n(657331),
     _ = n(761640),
-    x = n(994500),
-    j = n(287809),
+    j = n(994500),
+    x = n(287809),
     v = n(486020),
     E = n(302975),
     C = n(652215),
@@ -90,7 +90,7 @@ let T = e => {
             relationshipType: n,
             userId: l,
             showingBanner: i
-        } = e, s = null == (t = j.default.getUser(l)) ? void 0 : t.bot, a = () => {
+        } = e, s = null == (t = x.default.getUser(l)) ? void 0 : t.bot, a = () => {
             u.A.addRelationship({
                 userId: l,
                 context: {
@@ -190,7 +190,7 @@ let T = e => {
             isOptimisticAccepted: p,
             isOptimisticRejected: g
         } = (0, f.t)({
-            user: j.default.getUser(n),
+            user: x.default.getUser(n),
             onError: i,
             onAcceptSuccess: a,
             onRejectSuccess: s
@@ -220,7 +220,7 @@ let T = e => {
             showingBanner: l
         } = e, {
             channelId: i
-        } = (0, m.N)(), u = (0, o.bG)([g.A], () => null != i && g.A.isSpam(i), [i]), d = (0, o.bG)([x.A], () => x.A.getRelationshipType(t), [t]), h = n.id === i, p = !a.Fr && !h, f = !!a.Fr || h || u, A = u || h ? (0, r.jsxs)("div", {
+        } = (0, m.N)(), u = (0, o.bG)([g.A], () => null != i && g.A.isSpam(i), [i]), d = (0, o.bG)([j.A], () => j.A.getRelationshipType(t), [t]), h = n.id === i, p = !a.Fr && !h, f = !!a.Fr || h || u, A = u || h ? (0, r.jsxs)("div", {
             className: N.mG,
             children: [(0, r.jsx)(w, {
                 channelId: n.id,

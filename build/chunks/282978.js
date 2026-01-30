@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(583613),
     O = n(403362),
     _ = n(58736),
-    x = n(518477),
-    j = n(985018),
+    j = n(518477),
+    x = n(985018),
     v = n(940688);
 
 function E(e, t, n) {
@@ -88,7 +88,7 @@ class C {
         })), E(this, "renderMoreAvatars", () => (0, r.jsx)(c.m, {
             asContainer: !0,
             tag: "span",
-            text: j.intl.string(j.t["UTjRE/"]),
+            text: x.intl.string(x.t["UTjRE/"]),
             position: "bottom",
             children: (0, r.jsx)(u.DUT, {
                 className: v.OZ,
@@ -104,7 +104,7 @@ class C {
                 userId: this.userId,
                 channelId: this.channelId,
                 sourceAnalyticsLocations: this.analyticsLocations,
-                tabSection: x.RP.MUTUAL_GUILDS
+                tabSection: j.RP.MUTUAL_GUILDS
             })
         }), this.userId = e, this.user = t, this.channelId = n, this.analyticsLocations = l
     }
@@ -136,7 +136,7 @@ function S(e) {
         userId: n,
         analyticsLocations: f,
         channelId: t.id
-    }), [y, O] = l.useState(!1), x = l.useCallback(() => {
+    }), [y, O] = l.useState(!1), j = l.useCallback(() => {
         O(!0)
     }, [O]), E = l.useCallback(() => {
         O(!1)
@@ -148,7 +148,7 @@ function S(e) {
         children: [(0, r.jsx)(_.cG, {
             className: v.yF
         }), (0, r.jsx)(u.LpS, {
-            text: j.intl.string(j.t.l1QVfj),
+            text: x.intl.string(x.t.l1QVfj),
             disableColor: !0,
             className: v.RV
         }), i.length > 0 ? (0, r.jsx)(d.Ay, {
@@ -180,7 +180,7 @@ function S(e) {
             position: "bottom",
             className: v.wm,
             delay: 0,
-            onTooltipShow: x,
+            onTooltipShow: j,
             onTooltipHide: E,
             children: m.renderNicknamePairs(!y)
         }) : null]

@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(31432),
     O = n(915614),
     _ = n(389996),
-    x = n(743987),
-    j = n(900179),
+    j = n(743987),
+    x = n(900179),
     v = n(946356),
     E = n(810396),
     C = n(35241),
@@ -57,8 +57,8 @@ function R(e) {
     let {
         user: n,
         channel: R
-    } = e, D = __OVERLAY__ || !(0, u.A)(n.id), L = (0, m.Ay)(n.id), M = (0, a.Ay)(), k = l.useRef(Date.now()), {
-        analyticsLocations: G
+    } = e, D = __OVERLAY__ || !(0, u.A)(n.id), L = (0, m.Ay)(n.id), M = (0, a.Ay)(), G = l.useRef(Date.now()), {
+        analyticsLocations: k
     } = (0, c.Ay)(o.A.USER_PROFILE_SIDEBAR), U = (0, g.pb)({
         layout: "SIDEBAR",
         userId: n.id,
@@ -68,15 +68,15 @@ function R(e) {
         isHovering: H
     } = (0, d.A)(V), F = () => {
         (0, b.openUserProfileModal)(w({
-            sourceAnalyticsLocations: G,
+            sourceAnalyticsLocations: k,
             hideRestrictedProfile: !0
         }, U))
     };
     return (0, r.jsx)(c.f5, {
-        value: G,
+        value: k,
         children: (0, r.jsx)(g.of, {
             value: U,
-            openedAt: k.current,
+            openedAt: G.current,
             fetchStartedAt: null == L ? void 0 : L.fetchStartedAt,
             fetchEndedAt: null == L ? void 0 : L.fetchEndedAt,
             isLoaded: null == L ? void 0 : L.isLoaded,
@@ -119,7 +119,7 @@ function R(e) {
                             })
                         }), (0, r.jsxs)(v.A.Overlay, {
                             className: P.Lw,
-                            children: [(0, r.jsx)(j.A, {
+                            children: [(0, r.jsx)(x.A, {
                                 heading: N.intl.string(N.t["61W33d"]),
                                 headingColor: "text-strong",
                                 children: (0, r.jsx)(_.A, {
@@ -128,10 +128,10 @@ function R(e) {
                                     animateOnHoverOrFocusOnly: !0,
                                     isHoveringOrFocusing: B
                                 })
-                            }), (0, r.jsx)(j.A, {
+                            }), (0, r.jsx)(x.A, {
                                 heading: N.intl.string(N.t["A//N4k"]),
                                 headingColor: "text-strong",
-                                children: (0, r.jsx)(x.A, {
+                                children: (0, r.jsx)(j.A, {
                                     userId: n.id
                                 })
                             })]
@@ -143,7 +143,7 @@ function R(e) {
                         onClick: () => {
                             F(), (0, f.Wn)(w({
                                 action: "PRESS_VIEW_PROFILE",
-                                analyticsLocations: G
+                                analyticsLocations: k
                             }, U))
                         },
                         className: T.wC,

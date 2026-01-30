@@ -21,8 +21,8 @@ var r, l = n(627968),
     y = n(343328),
     O = n(485947),
     _ = n(915089),
-    x = n(725323),
-    j = n(611924),
+    j = n(725323),
+    x = n(611924),
     v = n(95550),
     E = n(380335),
     C = n(309199),
@@ -45,7 +45,7 @@ function M(e, t, n) {
     }) : e[t] = n, e
 }
 
-function k(e) {
+function G(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -58,7 +58,7 @@ function k(e) {
     return e
 }
 
-function G(e, t) {
+function k(e, t) {
     return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -279,7 +279,7 @@ class V extends(r = i.Component) {
                     return i
                 }(r, ["ref", "role"]);
                 return (0, l.jsx)(h.skg, {
-                    children: r => (0, l.jsx)(h.B8B, k({
+                    children: r => (0, l.jsx)(h.B8B, G({
                         fade: !0,
                         innerRole: s,
                         innerAriaLabel: D.intl.string(D.t.YUU0RF),
@@ -328,7 +328,7 @@ class V extends(r = i.Component) {
                     num_users_visible: a.length,
                     num_users_visible_with_mobile_indicator: o.filter(e => null != e && T.A.isMobileOnline(e)).length
                 };
-            this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(R.HAw.DM_LIST_VIEWED, G(k({}, u, (0, A.F)()), {
+            this.hasReportedAnalytics = !0, m.Ay.trackWithMetadata(R.HAw.DM_LIST_VIEWED, k(G({}, u, (0, A.F)()), {
                 visible_user_ids: o.filter(e => null != e),
                 changelog_dm_visible: c
             }))
@@ -421,7 +421,7 @@ let B = e => {
         let e = P.A.getPrivateChannelIds();
         return (0, C.eh)(e, [E.A, S.A])
     });
-    (0, j.P)(x._);
+    (0, x.P)(j._);
     let {
         analyticsLocations: y
     } = (0, b.Ay)(f.A.CONTACTS_LIST), O = (0, I.NC)(), {
@@ -470,7 +470,7 @@ let B = e => {
         value: y,
         children: (0, l.jsx)(o.hD, {
             navigator: B,
-            children: (0, l.jsx)(V, G(k({}, e), {
+            children: (0, l.jsx)(V, k(G({}, e), {
                 density: t,
                 channels: m,
                 privateChannelIds: A,

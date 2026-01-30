@@ -1,7 +1,7 @@
 /** Chunk was on 1636 **/
 /** chunk id: 363398, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => h
 }), n(896048), n(747238);
 var r = n(627968),
     i = n(64700),
@@ -51,13 +51,13 @@ function v(e, t) {
         Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e
 }
-let h = b.uh.KEYWORD;
+let j = b.uh.KEYWORD;
 
-function j(e, t) {
+function h(e, t) {
     let {
         perGuildMaxCount: n
-    } = s.i$[h], {
-        isLoading: j,
+    } = s.i$[j], {
+        isLoading: h,
         saveRule: S,
         errorMessage: E
     } = (0, u.S)(), {
@@ -67,7 +67,7 @@ function j(e, t) {
         updateRule: w
     } = (0, c.wP)(t), M = i.useMemo(() => {
         var e;
-        return null != (e = x[h]) ? e : []
+        return null != (e = x[j]) ? e : []
     }, [x]), C = 0 === M.length, N = n > M.length && !C;
     if (!i.useMemo(() => (0, d.i_)(t), [t]) || null == e || 0 === e.length || null == t) return null;
     let R = e.split(" "),
@@ -79,7 +79,7 @@ function j(e, t) {
     }
     let L = () => {
             null != t && ((0, a.Z_)(), f.A.open(t, y.BEX.GUILD_AUTOMOD), setTimeout(() => {
-                _(t, h, {
+                _(t, j, {
                     triggerMetadata: {
                         keywordFilter: [e],
                         regexPatterns: [],
@@ -106,9 +106,9 @@ function j(e, t) {
             id: "add-first-rule",
             label: A.intl.string(A.t.f72Zqb),
             action: L,
-            disabled: j
+            disabled: h
         }), M.map(e => {
-            let t = (0, s.J6)(h).reduce((t, n) => {
+            let t = (0, s.J6)(j).reduce((t, n) => {
                 let r = e.actions.find(e => {
                     let {
                         type: t
@@ -130,7 +130,7 @@ function j(e, t) {
                 }),
                 group: "automod-rule-selection",
                 checked: !1,
-                disabled: j,
+                disabled: h,
                 action: () => k(e)
             }, e.id)
         }), N && (0, r.jsxs)(r.Fragment, {
@@ -138,7 +138,7 @@ function j(e, t) {
                 id: "add-another-rule",
                 label: A.intl.string(A.t["0K5jDE"]),
                 action: L,
-                disabled: j
+                disabled: h
             })]
         })]
     })), (0, r.jsx)(l.Drp, {

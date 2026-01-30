@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(203982),
     O = n(646468),
     _ = n(492498),
-    x = n(765627),
-    j = n(547945),
+    j = n(765627),
+    x = n(547945),
     v = n(412484),
     E = n(652215),
     C = n(985018),
@@ -44,7 +44,7 @@ function I(e) {
         {
             analyticsLocations: M
         } = (0, h.Ay)(d.A.NOTIFICATION_CENTER),
-        [k, G] = l.useState(!1),
+        [G, k] = l.useState(!1),
         [U, V] = [(0, o.bG)([A.A], () => {
             var e, t;
             return null != (e = null == (t = A.A.settings.inbox) ? void 0 : t.currentTab) ? e : c.Y2.UNREADS
@@ -69,11 +69,11 @@ function I(e) {
             setSeenTutorial: n
         }),
         F = l.useCallback(() => {
-            G(!1), k && (null == I || I())
-        }, [I, k]),
+            k(!1), G && (null == I || I())
+        }, [I, G]),
         K = l.useCallback(() => {
-            G(!k), k ? null == I || I() : null == i || i()
-        }, [I, i, k]);
+            k(!G), G ? null == I || I() : null == i || i()
+        }, [I, i, G]);
     l.useEffect(() => (y._.subscribe(E.jej.TOGGLE_INBOX, K), () => void y._.unsubscribe(E.jej.TOGGLE_INBOX, K)), [K]);
     let {
         enabled: Y,
@@ -98,7 +98,7 @@ function I(e) {
             position: P,
             align: w,
             autoInvert: !1,
-            shouldShow: k,
+            shouldShow: G,
             onRequestClose: F,
             renderPopout: function() {
                 return (0, r.jsx)(u.lGe, {
@@ -109,7 +109,7 @@ function I(e) {
                             [S.q]: X
                         }),
                         children: (0, r.jsx)(u.Fmo, {
-                            component: (0, r.jsx)(x.A, {
+                            component: (0, r.jsx)(j.A, {
                                 tab: U,
                                 setTab: V,
                                 badgeState: T,
@@ -119,7 +119,7 @@ function I(e) {
                                 onJump: q
                             }) : Y && W && U === c.Y2.BOOKMARKS ? (0, r.jsx)(f.J, {
                                 closePopout: F
-                            }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(j.w, {}) : (0, r.jsx)(a.tH, {
+                            }) : U === c.Y2.SCHEDULED ? (0, r.jsx)(x.w, {}) : (0, r.jsx)(a.tH, {
                                 fallback: (0, r.jsx)(v.T, {}),
                                 children: (0, r.jsx)(v.Ay, {
                                     onJump: q,

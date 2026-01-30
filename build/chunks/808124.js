@@ -22,27 +22,27 @@ var r = n(627968),
     y = n(100449),
     O = n(588703),
     _ = n(985018),
-    x = n(185014);
-let j = e => {
+    j = n(185014);
+let x = e => {
         let {
             channel: t,
             idle: n,
             className: i,
             participants: a
-        } = e, h = (0, g.A)(t.id), [p, j] = l.useState(!1), v = l.useCallback(e => {
+        } = e, h = (0, g.A)(t.id), [p, x] = l.useState(!1), v = l.useCallback(e => {
             d.Ay.update(t.id, {
                 seat: e
             })
         }, [t.id]), [E, C] = (0, c.V)("haven-show-chat", !1);
         l.useEffect(() => {
             setTimeout(() => {
-                j(!0)
+                x(!0)
             }, 2500)
         }, []);
         let [S, I] = l.useState(.65), [N, T] = l.useState(.65), [P, w] = l.useState(.65), [R, D] = l.useState({
             x: 0,
             y: 0
-        }), [L, M] = l.useState(!1), [k, G] = l.useState(0), [U, V] = l.useState({
+        }), [L, M] = l.useState(!1), [G, k] = l.useState(0), [U, V] = l.useState({
             x: 0,
             y: 0
         }), [B, H] = l.useState({
@@ -109,14 +109,14 @@ let j = e => {
         return (0, r.jsx)(o.vN3, {
             children: (0, r.jsxs)("div", {
                 ref: q,
-                className: s()(x.km, i),
+                className: s()(j.km, i),
                 onClick: () => {
-                    G(0)
+                    k(0)
                 },
                 onMouseDown: () => M(Date.now()),
                 onMouseUp: e => {
                     if (null != q.current) {
-                        if (k < 2) {
+                        if (G < 2) {
                             let n = Date.now(),
                                 r = q.current.getBoundingClientRect(),
                                 l = {
@@ -131,7 +131,7 @@ let j = e => {
                     }
                 },
                 onMouseMove: e => {
-                    !1 !== L && (G(k + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
+                    !1 !== L && (k(G + Math.abs(e.movementX) + Math.abs(e.movementY)), J({
                         x: R.x + e.movementX,
                         y: R.y + e.movementY
                     })), H({
@@ -140,7 +140,7 @@ let j = e => {
                     })
                 },
                 children: [(0, r.jsx)("div", {
-                    className: x.VT,
+                    className: j.VT,
                     style: {
                         transform: "translate(".concat(R.x, "px, ").concat(R.y, "px) scale(").concat(N, ") ")
                     },
@@ -154,10 +154,10 @@ let j = e => {
                         onSeatClick: v
                     })
                 }), (0, r.jsxs)("div", {
-                    className: s()(x.nM, x.vf),
+                    className: s()(j.nM, j.vf),
                     children: [(0, r.jsxs)("div", {
-                        className: s()(x.nM, {
-                            [x.R]: n
+                        className: s()(j.nM, {
+                            [j.R]: n
                         }),
                         children: [(0, r.jsx)("div", {
                             ref: Y,
@@ -184,8 +184,8 @@ let j = e => {
                         idle: n,
                         showChat: null != E && E
                     }), (0, r.jsxs)("div", {
-                        className: s()(x.nM, {
-                            [x.R]: n
+                        className: s()(j.nM, {
+                            [j.R]: n
                         }),
                         children: [(0, r.jsx)(o.K0, {
                             variant: "icon-only",
@@ -217,11 +217,11 @@ let j = e => {
                         top: W.y
                     } : void 0
                 }), (0, r.jsx)(b.A, {}), (0, r.jsx)("div", {
-                    className: s()(x.Lw, {
-                        [x.FD]: p
+                    className: s()(j.Lw, {
+                        [j.FD]: p
                     }),
                     children: (0, r.jsx)("div", {
-                        className: x.dH,
+                        className: j.dH,
                         children: (0, r.jsx)(o.Text, {
                             variant: "display-lg",
                             children: "Welcome to Haven"
@@ -238,7 +238,7 @@ let j = e => {
             n = (0, a.bG)([p.A], () => p.A.isUserConnected(e.channel.id));
         return (l.useEffect(() => {
             !t || n || d.Ay.connect(e.channel.id)
-        }, [e.channel.id, n, t]), t) ? (0, r.jsx)(j, function(e) {
+        }, [e.channel.id, n, t]), t) ? (0, r.jsx)(x, function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                     r = Object.keys(n);

@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(922281),
     O = n(51082),
     _ = n(275731),
-    x = n(289552),
-    j = n(246356),
+    j = n(289552),
+    x = n(246356),
     v = n(977851),
     E = n(772475),
     C = n(481947),
@@ -81,8 +81,8 @@ function L(e) {
     } = (0, T.A)({
         location: "ChannelCallHeaderToolbar"
     }), M = !S && L && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
-        enabled: k,
-        inInbox: G
+        enabled: G,
+        inInbox: k
     } = A.A.useExperiment({
         location: "ChannelCallHeaderToolbar"
     }), U = [];
@@ -101,13 +101,13 @@ function L(e) {
         participant: O,
         showQuality: !0,
         premiumIndicator: !1
-    }, "live-indicator"))), (null == O ? void 0 : O.type) === P.lp.USER && U.push((0, r.jsx)(x.A, {
+    }, "live-indicator"))), (null == O ? void 0 : O.type) === P.lp.USER && U.push((0, r.jsx)(j.A, {
         className: R.x6,
         userId: O.id
     }, "video-warning")), u && !L && U.push((0, r.jsx)(d.YNO, {
         targetElementRef: i,
         position: "bottom",
-        renderPopout: () => (0, r.jsx)(j.A, {
+        renderPopout: () => (0, r.jsx)(x.A, {
             children: (0, r.jsx)(N.A, {
                 channel: t
             })
@@ -151,7 +151,7 @@ function L(e) {
                 Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(r, e))
             }), n))
         }
-    }, "call-members-popout")), k && !G && U.push((0, r.jsx)(y.A, {
+    }, "call-members-popout")), G && !k && U.push((0, r.jsx)(y.A, {
         className: R.x6
     }, "for-later")), M && U.push((0, r.jsx)(E.A, {
         className: s()(R.x6, {

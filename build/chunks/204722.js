@@ -23,8 +23,8 @@ var r = n(627968),
     y = n(379848),
     O = n(625180),
     _ = n(338771),
-    x = n(453774),
-    j = n(44724),
+    j = n(453774),
+    x = n(44724),
     v = n(849134),
     E = n(95701),
     C = n(309010),
@@ -51,12 +51,12 @@ let D = l.memo(function(e) {
             canGoLive: o,
             isStreaming: p,
             channel: y,
-            canStream: j,
+            canStream: x,
             runningGame: v,
             embeddedActivity: T,
             frame: D,
-            activity: k,
-            application: G,
+            activity: G,
+            application: k,
             analyticsContext: U,
             inviteButtonRef: V,
             accountLinkButtonRef: B,
@@ -67,18 +67,18 @@ let D = l.memo(function(e) {
         } = e, {
             parentAnalyticsLocation: W,
             analyticsLocations: z
-        } = (0, f.Ay)(), q = (0, x.A)(G, "rtc-activity-panel"), X = R(G, k, T), J = l.useCallback(() => {
+        } = (0, f.Ay)(), q = (0, j.A)(k, "rtc-activity-panel"), X = R(k, G, T), J = l.useCallback(() => {
             var e;
-            s()(null != k, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
+            s()(null != G, "Received null activity"), S.default.track(N.HAw.ACTIVITY_PANEL_BUTTON_CLICKED, {
                 action_type: "invite_to_game",
                 game_id: null != (e = null == v ? void 0 : v.id) ? e : null,
-                application_id: k.application_id
+                application_id: G.application_id
             }), (0, b.X)(W, b.O.INVITE), S.default.track(N.HAw.OPEN_MODAL, {
                 type: "Send Join Invite",
-                application_id: k.application_id,
+                application_id: G.application_id,
                 location: U.location
-            }), (0, d.qf)(k, !1)
-        }, [k, U, W, v]), Q = l.useCallback((e, t) => () => {
+            }), (0, d.qf)(G, !1)
+        }, [G, U, W, v]), Q = l.useCallback((e, t) => () => {
             (0, b.X)(W, b.O.LEAVE_ACTIVITY), g.A.leaveActivity({
                 location: t,
                 applicationId: e,
@@ -136,7 +136,7 @@ let D = l.memo(function(e) {
         }, []), l.useEffect(() => {
             K && (er(!1), null != et.current && (clearTimeout(et.current), et.current = null))
         }, [K]);
-        let el = (null == q ? void 0 : q.guildId) == null || null == G ? null : (0, r.jsx)(M, {
+        let el = (null == q ? void 0 : q.guildId) == null || null == k ? null : (0, r.jsx)(M, {
                 guildId: q.guildId,
                 applicationId: q.id
             }),
@@ -146,7 +146,7 @@ let D = l.memo(function(e) {
                 let l = null;
                 return p ? (e = !1, t = () => {
                     $(), (0, b.X)(W, b.O.STREAM, !1)
-                }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : j ? (e = !1, t = () => {
+                }, n = u.GT3, l = P.intl.string(P.t.S5anIc)) : x ? (e = !1, t = () => {
                     ee(), (0, b.X)(W, b.O.STREAM, !0)
                 }, n = u.Fzq, l = null != v ? P.intl.formatToPlainString(P.t.AB5gTy, {
                     game: v.name
@@ -240,11 +240,11 @@ function M(e) {
         })
     }, [t]);
     let [s, a] = (0, y.kn)([o.M.GAME_SHOP_RTC_POPOVER], T.m.ACCOUNT_NAME_ZONE, !0), c = l.useCallback(() => {
-        (0, j.X)({
+        (0, x.X)({
             guildId: n
         })
     }, [n]), d = l.useCallback(() => {
-        (0, j.default)({
+        (0, x.default)({
             guildId: n
         }), a(T.i.USER_DISMISS)
     }, [n, a]), h = l.useCallback(() => {

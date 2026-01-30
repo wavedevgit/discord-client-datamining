@@ -22,8 +22,8 @@ var r, l = n(627968),
     y = n(674378),
     O = n(505806),
     _ = n(652215),
-    x = n(985018),
-    j = n(391523);
+    j = n(985018),
+    x = n(391523);
 
 function v(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
@@ -48,52 +48,52 @@ function E(e) {
 }
 let C = {
     [_.WTw.INSTALLING]: {
-        [f.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
+        [f.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
             name: e
         }),
-        [f.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
+        [f.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
+        [f.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
+        [f.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
             name: e,
             timeRemaining: t
         })
     },
     [_.WTw.UPDATING]: {
-        [f.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["6F9QzC"], {
+        [f.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzC"], {
             name: e
         }),
-        [f.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["2OVgVq"], {
+        [f.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVq"], {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.mgQg1L, {
+        [f.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1L, {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t.aTdq44, {
+        [f.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t.aTdq44, {
             name: e,
             timeRemaining: t
         })
     },
     [_.WTw.REPAIRING]: {
-        [f.pJ.NONE]: (e, t) => x.intl.formatToPlainString(x.t["p+2sE+"], {
+        [f.pJ.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
             name: e
         }),
-        [f.pJ.SECONDS]: (e, t) => x.intl.formatToPlainString(x.t["/0NgPI"], {
+        [f.pJ.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.MINUTES]: (e, t) => x.intl.formatToPlainString(x.t.ZIwMzr, {
+        [f.pJ.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
             name: e,
             timeRemaining: t
         }),
-        [f.pJ.HOURS]: (e, t) => x.intl.formatToPlainString(x.t["3IQDUi"], {
+        [f.pJ.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
             name: e,
             timeRemaining: t
         })
@@ -106,7 +106,7 @@ class S extends i.PureComponent {
             isPaused: t
         } = this.props;
         if (e.type === _.WTw.UPDATING || e.type === _.WTw.REPAIRING || e.type === _.WTw.INSTALLING) {
-            if (t) return x.intl.string(x.t["5oxtFS"]);
+            if (t) return j.intl.string(j.t["5oxtFS"]);
             else if (e.stage === _.OQC.PATCHING || e.stage === _.OQC.REPAIRING) return (0, l.jsx)(O.A, {
                 getHistoricalTotalBytes: b.A.getHistoricalTotalBytesWritten,
                 updateInterval: 5e3,
@@ -117,7 +117,7 @@ class S extends i.PureComponent {
     }
     render() {
         let e = this.renderText();
-        return null != e ? e : x.intl.string(x.t.cw57ar)
+        return null != e ? e : j.intl.string(j.t.cw57ar)
     }
     constructor(...e) {
         super(...e), v(this, "renderProgressBody", (e, t) => {
@@ -169,7 +169,7 @@ class I extends(r = i.PureComponent) {
             firstState: t,
             isPaused: n
         } = this.props;
-        return null == e || null == t ? x.intl.string(x.t.cw57ar) : (0, l.jsx)(S, {
+        return null == e || null == t ? j.intl.string(j.t.cw57ar) : (0, l.jsx)(S, {
             application: e,
             state: t,
             isPaused: n
@@ -187,7 +187,7 @@ class I extends(r = i.PureComponent) {
                     scale: this.state.animationScale
                 }]
             },
-            className: a()(n, j.L),
+            className: a()(n, x.L),
             onClick: this.handleOnClick,
             children: (0, l.jsx)(h.m, {
                 __unsupportedReactNodeAsText: this.getTooltipText(),
@@ -200,7 +200,7 @@ class I extends(r = i.PureComponent) {
                         children: (0, l.jsx)(p.s3U, {
                             size: "md",
                             color: "currentColor",
-                            className: j.k
+                            className: x.k
                         })
                     })
                 })

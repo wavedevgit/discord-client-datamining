@@ -22,7 +22,7 @@ var r = n(627968),
     y = n(924177),
     O = n(985018),
     _ = n(733313);
-let x = l.memo(function(e) {
+let j = l.memo(function(e) {
         let {
             channelId: t,
             width: n
@@ -55,7 +55,7 @@ let x = l.memo(function(e) {
             })
         })
     }),
-    j = l.memo(function(e) {
+    x = l.memo(function(e) {
         let {
             value: t,
             multiplier: n
@@ -151,14 +151,14 @@ let x = l.memo(function(e) {
             multiplier: E ? S.multiplier : I.current.multiplier
         }), [E, S, I]);
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(x, {
+            children: [(0, r.jsx)(j, {
                 channelId: t,
                 width: f
             }), (0, r.jsx)(a.animated.div, {
                 ref: g,
                 className: _.p_,
                 style: C,
-                children: (0, r.jsx)(j, {
+                children: (0, r.jsx)(x, {
                     value: T,
                     multiplier: N
                 })

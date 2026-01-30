@@ -23,7 +23,7 @@ var r = n(627968),
     O = n(345314),
     _ = n(145394);
 
-function x(e) {
+function j(e) {
     (0, o.L3)(e, async () => {
         let {
             default: e
@@ -48,7 +48,7 @@ function x(e) {
         }({}, t))
     })
 }
-let j = e => {
+let x = e => {
         let {
             keybindString: t,
             targetElementRef: n
@@ -93,7 +93,7 @@ let j = e => {
         if (!s || null == O || n) return null;
         let _ = g.dI(O.shortcut, !0);
         return (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(j, {
+            children: [(0, r.jsx)(x, {
                 keybindString: _,
                 targetElementRef: e
             }), (0, r.jsx)(d.A, {
@@ -105,7 +105,7 @@ let j = e => {
                 onClick: () => {
                     (0, b.l0)(), (0, u.X)(t, u.O.CLIP)
                 },
-                onContextMenu: x,
+                onContextMenu: j,
                 icon: a.xgA
             })]
         })

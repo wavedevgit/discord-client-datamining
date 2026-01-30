@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(447253),
     O = n(531053),
     _ = n(107385),
-    x = n(900848),
-    j = n(550591),
+    j = n(900848),
+    x = n(550591),
     v = n(114329),
     E = n(985018),
     C = n(211170),
@@ -42,8 +42,8 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
                 isMentionLowImportance: D,
                 unread: L = !1,
                 defaultFolderName: M,
-                draggable: k = !1,
-                sorting: G = !1,
+                draggable: G = !1,
+                sorting: k = !1,
                 onDragStart: U,
                 onDragEnd: V,
                 onExpandCollapse: B,
@@ -64,8 +64,8 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
             et = Q || $,
             en = (0, g.qK)("FolderItem");
         l.useEffect(() => {
-            G && Z(!1)
-        }, [G]);
+            k && Z(!1)
+        }, [k]);
         let [{
             dragging: er
         }, el] = (0, a.i)({
@@ -97,20 +97,20 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
             config: {
                 duration: I
             }
-        }), eh = l.useCallback(e => null == m ? void 0 : m(q, e), [m, q]), ep = (0, r.jsxs)(x.c, {
+        }), eh = l.useCallback(e => null == m ? void 0 : m(q, e), [m, q]), ep = (0, r.jsxs)(j.c, {
             children: [(0, r.jsx)(A.A, {
                 disabled: er || P,
                 hovered: Q,
                 selected: T,
                 unread: L,
                 className: S.Io
-            }), (0, r.jsx)(j.A, {
+            }), (0, r.jsx)(x.A, {
                 text: ea,
-                disabled: G,
+                disabled: k,
                 selected: T,
                 disableWrapper: !0,
                 children: (0, r.jsx)("div", {
-                    ref: k ? e => {
+                    ref: G ? e => {
                         el(e)
                     } : void 0,
                     className: s()(C.MJ, {
@@ -123,7 +123,7 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
                     }) : (0, r.jsx)(y.A, {
                         folderNode: d,
                         expanded: P,
-                        sorting: G,
+                        sorting: k,
                         mediaState: w,
                         mentionCount: R,
                         isMentionLowImportance: D,
@@ -139,7 +139,7 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
                         "aria-posinset": z
                     })
                 })
-            }), k ? (0, r.jsx)(O.Ay, {
+            }), G ? (0, r.jsx)(O.Ay, {
                 name: ea,
                 targetNode: d,
                 onDragOverChanged: ei
@@ -173,7 +173,7 @@ let I = (0, m.xI)(d.A.FOLDER_ITEM_ANIMATION_DURATION),
                     "aria-label": d.name,
                     children: J.map((t, n) => F(t, n, J.length, e.height))
                 }, l)
-            }), k && P ? (0, r.jsx)(O.qv, {
+            }), G && P ? (0, r.jsx)(O.qv, {
                 name: ea,
                 targetNode: d
             }) : null]

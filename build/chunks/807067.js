@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(767599),
     O = n(267102),
     _ = n(246356),
-    x = n(111162),
-    j = n(954571),
+    j = n(111162),
+    x = n(954571),
     v = n(795816),
     E = n(887700),
     C = n(855446),
@@ -43,7 +43,7 @@ function w(e) {
         {
             fetchState: O,
             voiceBannerCollection: _
-        } = (n = (0, c.bG)([x.default], () => x.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
+        } = (n = (0, c.bG)([j.default], () => j.default.onlyShowPreviewAppCollections) ? s.W.PREVIEW : s.W.ACTIVE, l.useEffect(() => {
             (0, b.An)({
                 surface: T,
                 activeState: n
@@ -58,7 +58,7 @@ function w(e) {
                 activeState: n
             }))[0]
         }),
-        j = O === A.e.FETCHING,
+        x = O === A.e.FETCHING,
         v = l.useMemo(() => {
             let e = null == _ ? void 0 : _.application_directory_collection_items[0];
             return null == e ? null : e.type === o.L.APPLICATION_BANNER ? e : null
@@ -73,7 +73,7 @@ function w(e) {
             sectionOverallPosition: 0,
             promotionalLabel: null != v ? (0, p.Ii)(v.application) : void 0
         });
-    return null == v || null == _ || j ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
+    return null == v || null == _ || x ? null : (null != v.id && null != v.image_hash && (i = (0, y.DH)({
         itemId: v.id,
         hash: v.image_hash,
         containerWidth: 584
@@ -117,7 +117,7 @@ let R = l.forwardRef(function(e, t) {
         guild_id: A
     } = i;
     l.useEffect(() => {
-        j.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
+        x.default.track(S.HAw.ACTIVITIES_CENTER_CONTROL_TRAY_BUTTON_HOVERED, {
             channel_id: b,
             guild_id: A
         })
@@ -126,7 +126,7 @@ let R = l.forwardRef(function(e, t) {
     }, [a, s]);
     let y = (0, O.Us)(),
         {
-            analyticsLocations: x,
+            analyticsLocations: j,
             newestAnalyticsLocation: T
         } = (0, h.Ay)(d.A.ACTIVITIES_MINI_SHELF),
         R = y === S.BRT.POPOUT,
@@ -150,13 +150,13 @@ let R = l.forwardRef(function(e, t) {
             }), c(), p()
         }, [i, T, p, c, R]),
         M = l.useCallback(e => {
-            o(), j.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
+            o(), x.default.track(S.HAw.ACTIVITIES_MINI_SHELF_HOVERED, {
                 channel_id: i.id,
                 guild_id: i.getGuildId()
             })
         }, [o, i]);
     return (0, r.jsx)(h.f5, {
-        value: x,
+        value: j,
         children: (0, r.jsx)(_.A, {
             children: (0, r.jsxs)(u.lGe, {
                 ref: t,

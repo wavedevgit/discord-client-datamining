@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 274146, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => x
 }), n(896048), n(733351);
 var r = n(627968),
     l = n(64700),
@@ -22,11 +22,11 @@ var r = n(627968),
     y = n(946116),
     O = n(652215),
     _ = n(650583),
-    x = n(10544);
-let j = e => {
+    j = n(10544);
+let x = e => {
     let {
         channel: t,
-        guild: j
+        guild: x
     } = e, {
         currentCategoryId: v,
         directoryEntries: E,
@@ -75,23 +75,23 @@ let j = e => {
         M = {
             mostRecentQuery: T
         },
-        k = l.useRef(M);
+        G = l.useRef(M);
     l.useEffect(() => {
-        k.current = M
+        G.current = M
     }), l.useEffect(() => {
         let {
             mostRecentQuery: e
-        } = k.current;
+        } = G.current;
         d.Yc(t.id), d.YS(t.id), D(e)
     }, [t.id]), l.useEffect(() => {
         u.default.track(O.HAw.GUILD_DIRECTORY_CHANNEL_VIEWED, {
             directory_channel_id: t.id,
-            directory_guild_id: j.id,
+            directory_guild_id: x.id,
             primary_category_id: v
         })
-    }, [t.id, j.id, v]);
-    let G = (0, g.b)(t),
-        U = l.useMemo(() => G ? () => {
+    }, [t.id, x.id, v]);
+    let k = (0, g.b)(t),
+        U = l.useMemo(() => k ? () => {
             (0, s.mMO)(async () => {
                 let {
                     default: e
@@ -116,8 +116,8 @@ let j = e => {
                         }
                         return e
                     }({}, n), i = i = {
-                        directoryGuildName: j.name,
-                        directoryGuildId: j.id,
+                        directoryGuildName: x.name,
+                        directoryGuildId: x.id,
                         directoryChannelId: t.id,
                         currentCategoryId: v === y.mU.ALL ? null : v
                     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -132,11 +132,11 @@ let j = e => {
                     }), l))
                 }
             })
-        } : void 0, [G, j.name, j.id, t.id, v]),
+        } : void 0, [k, x.name, x.id, t.id, v]),
         V = e => {
             0 !== R.trim().length && e.key === _.dh.ENTER && (d.Se(t.id, R), u.default.track(O.HAw.GUILD_DIRECTORY_SEARCH, {
                 directory_channel_id: t.id,
-                directory_guild_id: j.id
+                directory_guild_id: x.id
             }))
         },
         B = () => {
@@ -152,14 +152,14 @@ let j = e => {
         searchResults: w,
         searchFetching: P
     }) : null == N && null == v ? (0, r.jsx)("div", {
-        className: x.$$,
+        className: j.$$,
         children: (0, r.jsx)(s.y$y, {
-            className: x.u1
+            className: j.u1
         })
     }) : (null == N ? void 0 : N.length) === 0 && null == v ? (0, r.jsx)("div", {
-        className: x.$$,
+        className: j.$$,
         children: (0, r.jsx)(f.A, {
-            guild: j,
+            guild: x,
             onAddGuild: U
         })
     }) : (0, r.jsx)(m.A, {

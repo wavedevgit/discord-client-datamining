@@ -23,8 +23,8 @@ var l = n(503698),
     y = n(915089),
     O = n(263063),
     _ = n(616356),
-    x = n(734057),
-    j = n(71393),
+    j = n(734057),
+    x = n(71393),
     v = n(290863),
     E = n(222823),
     C = n(287809),
@@ -116,7 +116,7 @@ function R(e) {
             }) : null, (0, r.jsx)(D, {
                 channel: l,
                 gotoChannel: o
-            }), (0, r.jsx)(k, {
+            }), (0, r.jsx)(G, {
                 channel: l,
                 gotoChannel: o,
                 mentionCount: c
@@ -169,7 +169,7 @@ function M(e) {
     let {
         channel: t,
         gotoChannel: n
-    } = e, l = (0, a.bG)([j.A], () => j.A.getGuild(t.guild_id));
+    } = e, l = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id));
     return null == l ? null : (0, r.jsx)(O.A, {
         "aria-hidden": !0,
         className: T.$f,
@@ -181,14 +181,14 @@ function M(e) {
     })
 }
 
-function k(e) {
+function G(e) {
     let {
         channel: t,
         gotoChannel: n,
         mentionCount: l
-    } = e, s = (0, a.bG)([j.A], () => j.A.getGuild(t.guild_id)), c = (0, a.bG)([x.A], () => x.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), h = (0, A.gU)(t, s), p = (0, b.Ay)(t, !1), g = null == c ? null == s ? void 0 : s.name : "".concat(null == s ? void 0 : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
+    } = e, s = (0, a.bG)([x.A], () => x.A.getGuild(t.guild_id)), c = (0, a.bG)([j.A], () => j.A.getChannel(t.parent_id)), d = (0, a.bG)([E.Ay], () => E.Ay.getIsMentionLowImportance(t.id)), h = (0, A.gU)(t, s), p = (0, b.Ay)(t, !1), g = null == c ? null == s ? void 0 : s.name : "".concat(null == s ? void 0 : s.name, " › ").concat(c.name), f = t.isMultiUserDM() ? N.intl.formatToPlainString(N.t.CxSA5N, {
         members: t.recipients.length + 1
-    }) : t.isPrivate() ? (0, r.jsx)(G, {
+    }) : t.isPrivate() ? (0, r.jsx)(k, {
         channel: t
     }) : (0, r.jsx)(u.DUT, {
         className: i()(T.W$, T.J5),
@@ -229,7 +229,7 @@ function k(e) {
     })
 }
 
-function G(e) {
+function k(e) {
     let {
         channel: t
     } = e, {

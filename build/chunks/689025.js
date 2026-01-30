@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(214660),
     O = n(378570),
     _ = n(323443),
-    x = n(113783),
-    j = n(69407),
+    j = n(113783),
+    x = n(69407),
     v = n(446600),
     E = n(96566),
     C = n(175452),
@@ -37,8 +37,8 @@ var r = n(627968),
     D = n(977997),
     L = n(147036),
     M = n(557534),
-    k = n(68437),
-    G = n(166444),
+    G = n(68437),
+    k = n(166444),
     U = n(588224),
     V = n(652215),
     B = n(349828),
@@ -146,8 +146,8 @@ class q extends M.Ay {
             mentionCount: O,
             isFavoriteSuggestion: _
         } = this.props, {
-            shouldShowGuildVerificationPopout: x
-        } = this.state, j = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
+            shouldShowGuildVerificationPopout: j
+        } = this.state, x = this.getVoiceStatesCount(), v = (0, r.jsxs)("li", {
             className: s()(this.getModeClass(), {
                 [F.r9]: this.isDisabled()
             }),
@@ -157,10 +157,10 @@ class q extends M.Ay {
                 position: "right",
                 renderPopout: this.renderPopout,
                 onRequestClose: this.closeGuildVerificationPopout,
-                shouldShow: x,
+                shouldShow: j,
                 children: () => (0, r.jsx)(c.m, {
                     text: this.getTooltipText(),
-                    children: (0, r.jsxs)(G.Ay, {
+                    children: (0, r.jsxs)(k.Ay, {
                         ref: this.channelItemRef,
                         className: F.Ki,
                         iconClassName: s()({
@@ -186,7 +186,7 @@ class q extends M.Ay {
                             channel: e,
                             unread: A,
                             mentionCount: O,
-                            userCount: j,
+                            userCount: x,
                             isSubscriptionGated: m,
                             needSubscriptionToAccess: b
                         }),
@@ -305,10 +305,10 @@ function J(e) {
             bypassLimit: P.A.can(V.xBc.MOVE_MEMBERS, n),
             unverifiedAccount: !r.canChat
         }
-    }), h = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), p = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, x.zy)(n.id, j.ip.AUDIENCE), {
+    }), h = (0, a.bG)([S.A], () => S.A.isCollapsed(n.parent_id)), p = (0, C.Ay)(n.id), g = (0, a.bG)([v.A], () => v.A.getStageInstanceByChannel(n.id), [n.id]), f = (0, j.zy)(n.id, x.ip.AUDIENCE), {
         isSubscriptionGated: m,
         needSubscriptionToAccess: b
-    } = (0, A.A)(n.id), y = (0, a.bG)([R.Ay], () => R.Ay.isFavorite(t.id, n.id)), O = (0, E.xn)(n.id), _ = (0, k.A)({
+    } = (0, A.A)(n.id), y = (0, a.bG)([R.Ay], () => R.Ay.isFavorite(t.id, n.id)), O = (0, E.xn)(n.id), _ = (0, G.A)({
         channel: n,
         isChannelSelected: !1,
         isChannelCollapsed: s,

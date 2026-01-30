@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 635157, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => j
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -23,15 +23,15 @@ var r = n(627968),
     O = n(985018),
     _ = n(82842);
 
-function x(e) {
+function j(e) {
     var t;
     let n, {
-            channel: x,
-            children: j,
+            channel: j,
+            children: x,
             user: v
         } = e,
         E = (0, i.bG)([o.A], () => o.A.useReducedMotion),
-        C = null != (t = (0, d.Ay)(x)) ? t : "",
+        C = null != (t = (0, d.Ay)(j)) ? t : "",
         {
             avatarDecorationSrc: S,
             eventHandlers: I,
@@ -48,17 +48,17 @@ function x(e) {
         R = l.useCallback(() => {
             I.onMouseLeave(), P(!1)
         }, [I]),
-        D = !x.isMultiUserDM() && (null == v ? void 0 : v.displayNameStyles) != null;
+        D = !j.isMultiUserDM() && (null == v ? void 0 : v.displayNameStyles) != null;
     return (0, r.jsxs)(y.Ay, {
-        channelId: x.id,
+        channelId: j.id,
         onMouseEnter: w,
         onMouseLeave: R,
-        children: [(n = !E && N, x.isMultiUserDM() ? (0, r.jsx)(f.Q, {
-            channel: x,
+        children: [(n = !E && N, j.isMultiUserDM() ? (0, r.jsx)(f.Q, {
+            channel: j,
             editable: !0,
             location: c.A.EMPTY_GROUP_DM,
             children: (0, r.jsx)(g.A, {
-                channel: x,
+                channel: j,
                 size: a._3J.SIZE_80,
                 animated: n,
                 "aria-label": C
@@ -66,7 +66,7 @@ function x(e) {
         }) : (0, r.jsx)(a.euF, {
             "aria-label": C,
             size: a._3J.SIZE_80,
-            src: (0, u.Y)(x, 80, n),
+            src: (0, u.Y)(j, 80, n),
             avatarDecoration: S
         })), (0, r.jsx)(y.cr, {
             children: D ? (0, r.jsx)(p.A, {
@@ -76,11 +76,11 @@ function x(e) {
                 loop: !0
             }) : C
         }), (0, r.jsx)(y.j1, {
-            children: j
-        }), x.isMultiUserDM() && (0, r.jsxs)(s.e2v, {
+            children: x
+        }), j.isMultiUserDM() && (0, r.jsxs)(s.e2v, {
             className: _.U,
             children: [(0, r.jsx)(b.N, {
-                channel: x,
+                channel: j,
                 text: O.intl.string(O.t["6Qgrev"]),
                 icon: a.DpX
             }), (0, r.jsx)(s.$nd, {
@@ -88,7 +88,7 @@ function x(e) {
                 variant: "secondary",
                 text: O.intl.string(O.t["5Q9+/L"]),
                 "aria-label": O.intl.string(O.t["5Q9+/L"]),
-                onClick: () => (0, m.U)(x.id, c.A.EMPTY_GROUP_DM)
+                onClick: () => (0, m.U)(j.id, c.A.EMPTY_GROUP_DM)
             })]
         })]
     })

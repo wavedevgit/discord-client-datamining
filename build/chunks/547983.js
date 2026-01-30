@@ -22,8 +22,8 @@ var r = n(627968),
     m = n(773699),
     O = n(954571),
     v = n(363398),
-    h = n(880457),
-    j = n(840088),
+    j = n(880457),
+    h = n(840088),
     S = n(276887),
     E = n(345254),
     _ = n(734495),
@@ -66,8 +66,8 @@ function z(e) {
             analyticsLocations: O
         } = (0, d.Ay)([s.A.MESSAGE_CONTEXT_MENU]),
         v = f,
-        h = f.getAttribute("data-type"),
-        j = f.getAttribute("data-id"),
+        j = f.getAttribute("data-type"),
+        h = f.getAttribute("data-id"),
         S = f.getAttribute("data-name");
     if (null != y) a = i = c = y.url;
     else
@@ -81,8 +81,8 @@ function z(e) {
             channel: g,
             mediaItem: y,
             textSelection: E,
-            favoriteableType: h,
-            favoriteableId: j,
+            favoriteableType: j,
+            favoriteableId: h,
             favoriteableName: S,
             itemHref: i,
             itemSrc: a,
@@ -157,7 +157,7 @@ function W(e) {
         ed = (0, C.A)(t, n),
         eu = (0, p.A)(o),
         eg = (0, b.A)(o),
-        ep = (0, j.A)(t, n),
+        ep = (0, h.A)(t, n),
         ef = (0, I.A)(t, n),
         ey = (0, L.A)(t, n),
         eb = (0, x.A)(t, n),
@@ -165,8 +165,8 @@ function W(e) {
         em = (0, _.A)(t),
         eO = (0, V.A)(t, n),
         ev = (0, M.A)(t, n),
-        eh = (0, h.A)(t),
-        ej = (0, m.A)({
+        ej = (0, j.A)(t),
+        eh = (0, m.A)({
             commandType: c.kc.MESSAGE,
             commandTargetId: t.id,
             channel: n,
@@ -238,7 +238,7 @@ function W(e) {
         }), (0, r.jsxs)(a.rXV, {
             children: [ef, ey, eb, eA]
         }), (0, r.jsxs)(a.rXV, {
-            children: [em, eO, ev, eh, ej, eS, eE, e_, eD, eP, eT, ex]
+            children: [em, eO, ev, ej, eh, eS, eE, e_, eD, eP, eT, ex]
         }), (0, r.jsxs)(a.rXV, {
             children: [ew, eM, eC, ee && eN, ee && eR, eG]
         }), es ? (0, r.jsxs)(r.Fragment, {

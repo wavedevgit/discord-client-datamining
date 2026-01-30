@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 50400, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => k
+    A: () => G
 }), n(65821), n(896048);
 var r, l = n(627968),
     i = n(64700),
@@ -21,8 +21,8 @@ var r, l = n(627968),
     y = n(287809),
     O = n(607567),
     _ = n(531685),
-    x = n(967978),
-    j = n(941971),
+    j = n(967978),
+    x = n(941971),
     v = n(375855),
     E = n(900848),
     C = n(550591),
@@ -212,7 +212,7 @@ class M extends(r = i.PureComponent) {
         return (0, l.jsx)(s.animated.div, {
             style: this.getAnimatedStyle(),
             children: (0, l.jsxs)(E.c, {
-                children: [(0, l.jsx)(j.A, {
+                children: [(0, l.jsx)(x.A, {
                     hovered: !m && f,
                     selected: !m && n,
                     unread: !m && d,
@@ -261,7 +261,7 @@ P(M, "defaultProps", {
     video: !1,
     isCurrentUserInThisDMCall: !1
 });
-let k = i.forwardRef(function(e, t) {
+let G = i.forwardRef(function(e, t) {
     let n = e.channel.id,
         r = (0, p.Ay)(e.channel),
         i = (0, a.Vd)(n, 2),
@@ -272,14 +272,14 @@ let k = i.forwardRef(function(e, t) {
         y = (0, o.bG)([A.A], () => A.A.getChannelId(), []),
         _ = (0, o.bG)([b.Ay], () => b.Ay.getMentionCount(n), [n]),
         {
-            enabled: j
-        } = (0, x.r)({
+            enabled: x
+        } = (0, j.r)({
             location: "DirectMessage"
         }),
         v = s === n,
         E = !1,
         C = !1;
-    (v || j && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
+    (v || x && g) && (E = u === I._Of.VOICE, C = u === I._Of.VIDEO);
     let S = (0, c.rdh)(c.LU0.modules.guildbar.AVATAR_SIZE);
     return (0, l.jsx)(M, R(w({}, e), {
         ref: t,
@@ -293,6 +293,6 @@ let k = i.forwardRef(function(e, t) {
         isCurrentUserInThisDMCall: v,
         size: S,
         treeItemProps: i,
-        statusIndicatorsEnabled: j
+        statusIndicatorsEnabled: x
     }))
 })

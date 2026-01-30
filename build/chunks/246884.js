@@ -22,7 +22,7 @@ var r = n(627968),
     y = n(819638),
     O = n(985018),
     _ = n(283237);
-let x = {
+let j = {
     origin: {
         x: -16,
         y: 0
@@ -35,7 +35,7 @@ let x = {
     }
 };
 
-function j(e) {
+function x(e) {
     (0, a.L3)(e, async () => {
         let {
             default: e
@@ -85,7 +85,7 @@ function v(e) {
             })
         },
         selected: C,
-        onContextMenu: j,
+        onContextMenu: x,
         tooltip: O.intl.string(O.t.l5WIbf),
         icon: s.U1e
     });
@@ -93,7 +93,7 @@ function v(e) {
         className: _.Uq,
         children: (0, r.jsxs)(h.A, {
             tutorialId: E ? "create-more-servers" : "create-first-server",
-            inlineSpecs: x,
+            inlineSpecs: j,
             position: "right",
             children: [I, null != n && (0, r.jsx)(m.Ay, {
                 name: O.intl.string(O.t["45xjM5"]),

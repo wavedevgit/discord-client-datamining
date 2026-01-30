@@ -22,14 +22,14 @@ var r = n(627968),
     O = n(985018);
 
 function v(e) {
-    var t, n, v, h;
+    var t, n, v, j;
     let {
-        analyticsLocations: j
+        analyticsLocations: h
     } = (0, d.Ay)(), S = null == (t = e.interactionMetadata) ? void 0 : t.authorizing_integration_owners[l.b.USER_INSTALL], E = null == (n = e.interactionMetadata) ? void 0 : n.authorizing_integration_owners[l.b.GUILD_INSTALL], _ = null == (v = e.interactionMetadata) ? void 0 : v.user.id, D = (0, a.bG)([m.default], () => m.default.getUser(S)), P = (0, a.bG)([A.A], () => A.A.getGuild(E)), I = b.A.getChannel(e.channel_id), T = null == I ? void 0 : I.getGuildId(), x = (0, a.bG)([m.default], () => m.default.getUser(_));
     if (i.useEffect(() => {
             null == D && null != S && (0, c.wz)(S)
         }, [D, S]), !(0, u._)(e)) return null;
-    null == x && (x = new y.A(null == (h = e.interactionMetadata) ? void 0 : h.user));
+    null == x && (x = new y.A(null == (j = e.interactionMetadata) ? void 0 : j.user));
     let w = null;
     if (null != P) {
         let t = (0, f.Iv)(P, 18, !0);
@@ -54,7 +54,7 @@ function v(e) {
             userId: D.id,
             guildId: T,
             channelId: e.channel_id,
-            sourceAnalyticsLocations: j
+            sourceAnalyticsLocations: h
         }),
         leadingAccessory: {
             type: "avatar",
@@ -82,7 +82,7 @@ function v(e) {
                 userId: x.id,
                 guildId: T,
                 channelId: e.channel_id,
-                sourceAnalyticsLocations: j
+                sourceAnalyticsLocations: h
             }),
             leadingAccessory: {
                 type: "avatar",

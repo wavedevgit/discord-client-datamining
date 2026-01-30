@@ -152,16 +152,16 @@ let y = new A(i.h, {
             [y.guildId]: c({}, O, y)
         });
         let _ = null != (t = null == O ? void 0 : O.primaryCategoryId) ? t : a.mU.UNCATEGORIZED,
-            x = null != (n = y.primaryCategoryId) ? n : a.mU.UNCATEGORIZED,
-            j = Object.assign({}, null == (l = f[b]) ? void 0 : l[_]);
-        null != O && _ !== x && delete j[y.guildId], f[b] = u(c({}, f[b]), {
-            [_]: j,
-            [x]: u(c({}, null == (i = f[b]) ? void 0 : i[x]), {
+            j = null != (n = y.primaryCategoryId) ? n : a.mU.UNCATEGORIZED,
+            x = Object.assign({}, null == (l = f[b]) ? void 0 : l[_]);
+        null != O && _ !== j && delete x[y.guildId], f[b] = u(c({}, f[b]), {
+            [_]: x,
+            [j]: u(c({}, null == (i = f[b]) ? void 0 : i[j]), {
                 [y.guildId]: c({}, O, y)
             })
-        }), x !== _ && null != m[b] && (m[b] = u(c({}, m[b]), {
+        }), j !== _ && null != m[b] && (m[b] = u(c({}, m[b]), {
             [_]: (null == (d = m[b]) ? void 0 : d[_]) > 0 ? (null == (h = m[b]) ? void 0 : h[_]) - 1 : 0,
-            [x]: (null != (o = null == (g = m[b]) ? void 0 : g[x]) ? o : 0) + 1
+            [j]: (null != (o = null == (g = m[b]) ? void 0 : g[j]) ? o : 0) + 1
         }))
     },
     GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {

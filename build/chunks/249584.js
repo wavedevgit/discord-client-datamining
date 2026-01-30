@@ -3,10 +3,10 @@
 n.d(t, {
     HW: () => M,
     K8: () => H,
-    UB: () => k,
+    UB: () => G,
     bo: () => U,
     jz: () => V,
-    lw: () => G,
+    lw: () => k,
     mn: () => B
 });
 var r = n(627968);
@@ -29,8 +29,8 @@ var l = n(503698),
     y = n(864310),
     O = n(363487),
     _ = n(828162),
-    x = n(490557),
-    j = n(220628),
+    j = n(490557),
+    x = n(220628),
     v = n(867060),
     E = n(568065),
     C = n(652215),
@@ -52,7 +52,7 @@ function M(e) {
         markAsDismissed: s
     } = e;
     return (0, r.jsx)(F, {
-        asset: (0, r.jsx)(x.b, {
+        asset: (0, r.jsx)(j.b, {
             className: i()(w.Sl, w.SV)
         }),
         title: P.intl.formatToPlainString(T.default["Zg/m9K"], {
@@ -71,7 +71,7 @@ function M(e) {
     })
 }
 
-function k(e) {
+function G(e) {
     let {
         guildId: t,
         markAsDismissed: n,
@@ -101,7 +101,7 @@ function k(e) {
     })
 }
 
-function G(e) {
+function k(e) {
     let {
         guildId: t,
         powerups: n,
@@ -114,7 +114,7 @@ function G(e) {
         onActivate: c,
         isLoading: u,
         error: d
-    } = (0, j.A)(t, n[0]), p = (0, A.A)(n[0], !0);
+    } = (0, x.A)(t, n[0]), p = (0, A.A)(n[0], !0);
     if ((0, v.A)(d), 0 === n.length) return;
     let g = n.length >= 3 ? P.intl.formatToPlainString(T.default["6Sv+3M"], {
             perk: n[0].title,
@@ -128,7 +128,7 @@ function G(e) {
         m = 1 === n.length;
     return (0, r.jsx)(F, {
         size: 1 === n.length ? "video" : "lg",
-        asset: n.length > 1 ? (0, r.jsx)(x.b, {
+        asset: n.length > 1 ? (0, r.jsx)(j.b, {
             className: i()(w.Sl, w.SV)
         }) : (0, r.jsx)("img", {
             alt: "",

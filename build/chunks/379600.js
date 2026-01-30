@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 379600, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => x
+    A: () => j
 });
 var r = n(627968);
 n(64700);
@@ -24,7 +24,7 @@ var l = n(503698),
     O = n(985018),
     _ = n(287278);
 
-function x(e) {
+function j(e) {
     let {
         recipientUser: t,
         voiceChannel: n
@@ -37,7 +37,7 @@ function x(e) {
             userIsInCall: null != e,
             isUserRinging: null != e && e.type === y.lp.USER && e.ringing
         }
-    }), x = (0, a.bG)([b.A], () => b.A.getGuild(n.guild_id)), v = null != x ? (0, m.Iv)(x, 32, !0) : null, E = !o || u && !f;
+    }), j = (0, a.bG)([b.A], () => b.A.getGuild(n.guild_id)), v = null != j ? (0, m.Iv)(j, 32, !0) : null, E = !o || u && !f;
     return ((0, d.A)({
         type: s.ImpressionTypes.PAGE,
         name: s.ImpressionNames.RING_TO_GUILD_VC_BANNER_SHOWN,
@@ -60,10 +60,10 @@ function x(e) {
                     className: i()(_.$f, _.Gc),
                     children: (0, r.jsx)("div", {
                         className: _.Hj,
-                        children: null != x ? (0, m.Rb)(x) : null
+                        children: null != j ? (0, m.Rb)(j) : null
                     })
                 }) : (0, r.jsx)("img", {
-                    alt: null == x ? void 0 : x.name,
+                    alt: null == j ? void 0 : j.name,
                     src: v,
                     className: _.$f
                 })
@@ -80,7 +80,7 @@ function x(e) {
                     }, n.id)
                 })
             })]
-        }), (0, r.jsx)(j, {
+        }), (0, r.jsx)(x, {
             channelId: n.id,
             recipientUserId: t.id,
             isUserRinging: f
@@ -88,7 +88,7 @@ function x(e) {
     })
 }
 
-function j(e) {
+function x(e) {
     let {
         channelId: t,
         recipientUserId: n,

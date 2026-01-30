@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(260762),
     O = n(793574),
     _ = n(688810),
-    x = n(313961),
-    j = n(832275),
+    j = n(313961),
+    x = n(832275),
     v = n(730253),
     E = n(633965),
     C = n(857071),
@@ -37,8 +37,8 @@ var r = n(627968),
     D = n(711014),
     L = n(723702),
     M = n(757780),
-    k = n(263715),
-    G = n(987344),
+    G = n(263715),
+    k = n(987344),
     U = n(750448),
     V = n(845211),
     B = n(941604),
@@ -179,7 +179,7 @@ function es(e) {
         hideDms: t,
         scrollToTop: n,
         lurkingGuildIds: l
-    } = e, i = (0, j.A)(), s = (0, h.yK)([R.A, w.Ay], () => R.A.getGuildIds().filter(e => w.Ay.isCurrentUserGuest(e))), a = l.concat(s), {
+    } = e, i = (0, x.A)(), s = (0, h.yK)([R.A, w.Ay], () => R.A.getGuildIds().filter(e => w.Ay.isCurrentUserGuest(e))), a = l.concat(s), {
         entrypoint: o
     } = (0, S.X8)({
         location: "GuildsBar"
@@ -230,7 +230,7 @@ function eo(e) {
     } = e, [o] = (0, h.yK)([D.Ay], () => {
         let e = D.Ay.getGuildsTree();
         return [e, e.version]
-    }), d = (0, h.bG)([C.A], () => C.A.lurkingGuildIds()), p = l.useMemo(() => n ? [] : d, [d, n]), b = (0, h.bG)([x.A], () => x.A.isFullscreenInContext()), {
+    }), d = (0, h.bG)([C.A], () => C.A.lurkingGuildIds()), p = l.useMemo(() => n ? [] : d, [d, n]), b = (0, h.bG)([j.A], () => j.A.isFullscreenInContext()), {
         isSorting: y,
         startSorting: v,
         stopSorting: E
@@ -252,7 +252,7 @@ function eo(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (l = 0, n = Object.getOwnPropertySymbols(e); l < n.length; l++) r = n[l], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r]);
         return i
-    }(B, ["ref"]), Y = (0, m.R7z)(), [z, J] = l.useState(!1), Q = (0, m.rdh)(f.A.modules.guildbar.AVATAR_SIZE), et = (0, m.rdh)(f.A.space.SPACE_XS), eo = (0, j.A)(), {
+    }(B, ["ref"]), Y = (0, m.R7z)(), [z, J] = l.useState(!1), Q = (0, m.rdh)(f.A.modules.guildbar.AVATAR_SIZE), et = (0, m.rdh)(f.A.space.SPACE_XS), eo = (0, x.A)(), {
         pathname: ec
     } = (0, c.zy)(), {
         entrypoint: eu
@@ -309,10 +309,10 @@ function eo(e) {
             animate: !1
         })
     }, [eh]);
-    (0, G.A)(eh.scrollToGuild);
+    (0, k.A)(eh.scrollToGuild);
     let em = l.useCallback(function e(t, n, l) {
             switch (t.type) {
-                case k.PJ.FOLDER:
+                case G.PJ.FOLDER:
                     return (0, r.jsx)(q.A, {
                         folderNode: t,
                         setNodeRef: eh.setNodeRef,
@@ -324,7 +324,7 @@ function eo(e) {
                         "aria-setsize": l,
                         "aria-posinset": void 0 !== n ? n + 1 : void 0
                     }, t.id);
-                case k.PJ.GUILD:
+                case G.PJ.GUILD:
                     return (0, r.jsx)(X.A, {
                         guildNode: t,
                         setRef: eh.setNodeRef,

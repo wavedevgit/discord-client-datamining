@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(141468),
     O = n(694318),
     _ = n(143413),
-    x = n(763754),
-    j = n(467073),
+    j = n(763754),
+    x = n(467073),
     v = n(491182),
     E = n(860227),
     C = n(756369),
@@ -37,8 +37,8 @@ var r = n(627968),
     D = n(888675),
     L = n(652215),
     M = n(985018),
-    k = n(410132),
-    G = n(119907);
+    G = n(410132),
+    k = n(119907);
 
 function U(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -77,7 +77,7 @@ let B = l.memo(function e(t) {
             channel: i,
             message: o,
             compact: D = !1,
-            className: k,
+            className: G,
             onContextMenu: B,
             onClick: F,
             disableInteraction: K = !1,
@@ -95,7 +95,7 @@ let B = l.memo(function e(t) {
         et = (0, d.A)(null == i ? void 0 : i.id),
         {
             disableReactionCreates: en
-        } = (0, j.A)(i),
+        } = (0, x.A)(i),
         {
             content: er,
             hasSpoilerEmbeds: el,
@@ -107,7 +107,7 @@ let B = l.memo(function e(t) {
             allowLinks: !0,
             previewLinkTarget: !0
         }),
-        es = (0, x.Ay)(o),
+        es = (0, j.Ay)(o),
         ea = (0, a.bG)([f.A], () => o.hasFlag(L.pr7.HAS_THREAD) && f.A.getChannel(b.default.castMessageIdAsChannelId(o.id))),
         eo = o.type === L.lAJ.THREAD_STARTER_MESSAGE && q.state === p.a.LOADED && null != X,
         ec = !eo && void 0 === l,
@@ -125,16 +125,16 @@ let B = l.memo(function e(t) {
         channel: X,
         hasThread: !1
     })) : (m.A.isBlockedForMessage(o) ? l = M.t["+FcYM/"] : m.A.isIgnoredForMessage(o) ? l = M.t["VFWjc+"] : (0, O.kf)(o) && W && (l = M.t.xfkfTK), void 0 !== l) ? (0, r.jsx)(H, {
-        className: k,
+        className: G,
         compact: D,
         count: 1,
         collapsedReason: l
     }) : (0, r.jsx)(v.A, {
         compact: D,
-        className: s()(k, {
-            [G.M1]: (0, y.ec)(o),
-            [G.XN]: K,
-            [G._A]: t.isGroupStart
+        className: s()(G, {
+            [k.M1]: (0, y.ec)(o),
+            [k.XN]: K,
+            [k._A]: t.isGroupStart
         }),
         childrenRepliedMessage: (0, R.A)(o, i, z, q, D),
         childrenHeader: (0, T.A)(V(U({}, t), {
@@ -193,14 +193,14 @@ function H(e) {
         role: "group",
         childrenMessageContent: (0, r.jsx)(D.A, {
             compact: l,
-            className: k.L9,
+            className: G.L9,
             iconNode: (0, r.jsx)(o.PGe, {
                 size: "md",
                 color: "currentColor",
-                className: k.Q6
+                className: G.Q6
             }),
             children: (0, r.jsx)("div", {
-                className: k.Fo,
+                className: G.Fo,
                 children: M.intl.format(i, {
                     count: n
                 })

@@ -1,7 +1,7 @@
 /** Chunk was on 1113 **/
 /** chunk id: 5658, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => j
+    A: () => x
 }), n(896048);
 var r = n(627968),
     l = n(64700),
@@ -23,7 +23,7 @@ var r = n(627968),
     O = n(985018),
     _ = n(391900);
 
-function x(e) {
+function j(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -41,7 +41,7 @@ function x(e) {
     }
     return e
 }
-let j = l.memo(function(e) {
+let x = l.memo(function(e) {
         let {
             channel: t,
             deleteChannel: n
@@ -79,7 +79,7 @@ let j = l.memo(function(e) {
         return (0, r.jsx)(i.animated.div, {
             ref: s,
             style: g,
-            children: (0, r.jsx)(v, x({}, e))
+            children: (0, r.jsx)(v, j({}, e))
         })
     }),
     v = l.memo(function(e) {
@@ -122,7 +122,7 @@ let j = l.memo(function(e) {
                         className: _.GC,
                         children: [(0, r.jsx)(f.A, {
                             channel: o
-                        }), (0, r.jsx)(E, x({}, e))]
+                        }), (0, r.jsx)(E, j({}, e))]
                     })
                 }),
                 children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(A.A, {

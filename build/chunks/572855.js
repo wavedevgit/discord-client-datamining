@@ -129,7 +129,7 @@ function R(e) {
     }) : null
 }
 
-function x(e) {
+function N(e) {
     let {
         item: t
     } = e, [n, l] = i.useState(!1), o = "VIDEO" === t.type, a = "IMAGE" === t.type, s = null != t.children, u = (0, m.e7)((0, m.bc)(t.original, t.url), t.contentType, t.originalContentType);
@@ -165,7 +165,7 @@ function x(e) {
     })
 }
 
-function N(e) {
+function x(e) {
     let {
         item: t
     } = e;
@@ -348,9 +348,9 @@ let G = i.memo(function(e) {
             children: ["IMAGE" === t.type && (0, r.jsx)(I, {}), !n && (0, r.jsxs)(r.Fragment, {
                 children: [(0, r.jsx)(R, {
                     item: t
-                }), (0, r.jsx)(x, {
-                    item: t
                 }), (0, r.jsx)(N, {
+                    item: t
+                }), (0, r.jsx)(x, {
                     item: t
                 }), (0, r.jsx)(k, {
                     item: t

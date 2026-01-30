@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(712209),
     O = n(652215),
     _ = n(985018),
-    x = n(359884);
-let j = {
+    j = n(359884);
+let x = {
         left: 4,
         right: -12
     },
@@ -45,7 +45,7 @@ function E(e) {
         }
     }, [s.id]), b = v.includes(c.type);
     return (0, r.jsx)(o.vN3, {
-        offset: j,
+        offset: x,
         children: (0, r.jsxs)("div", (n = function(e) {
             for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
@@ -64,17 +64,17 @@ function E(e) {
             }
             return e
         }({
-            className: x.zC,
+            className: j.zC,
             onKeyDown: m
         }, f), i = i = {
             children: [!b && (0, r.jsx)(A.A, {
-                className: x.nn,
+                className: j.nn,
                 onJump: e => g(e, c.id)
             }), (0, r.jsx)(p.A, {
                 id: c.id,
                 message: c,
                 channel: s,
-                className: x.iU,
+                className: j.iU,
                 compact: u,
                 animateAvatar: !1,
                 isGroupStart: d,
@@ -106,7 +106,7 @@ function C(e) {
         location: "20e3b0_1"
     }, {
         autoTrackExposure: !1
-    }), A = g.hH.useSetting(), j = (0, d.iJ)(i), v = !1, C = 0 === l.messages.length || s()(l.messages[0].timestamp).isSame(s()(), "day"), S = null != (t = null == (n = m.default.getUser(f.default.getId())) ? void 0 : n.hasFlag(O.nhx.SPAMMER)) && t, I = [];
+    }), A = g.hH.useSetting(), x = (0, d.iJ)(i), v = !1, C = 0 === l.messages.length || s()(l.messages[0].timestamp).isSame(s()(), "day"), S = null != (t = null == (n = m.default.getUser(f.default.getId())) ? void 0 : n.hasFlag(O.nhx.SPAMMER)) && t, I = [];
     if (!l.collapsed) {
         let e = null,
             t = null,
@@ -115,7 +115,7 @@ function C(e) {
             if (!C && (null == e || !e.isSame(n.timestamp, "day"))) {
                 let t = (0, b.i$)(n.timestamp, "LL");
                 I.push((0, r.jsx)(h.A, {
-                    className: x.yF,
+                    className: j.yF,
                     children: t
                 }, t)), e = s()(n.timestamp)
             }
@@ -125,11 +125,11 @@ function C(e) {
                 message: n,
                 compact: A,
                 isGroupStart: l,
-                treatSpam: !S && p && (0, d.kf)(n) && j,
+                treatSpam: !S && p && (0, d.kf)(n) && x,
                 gotoChannel: a
             }, n.id))
         }), l.messages.length >= y.sz && I.push((0, r.jsx)("div", {
-            className: x.Gr,
+            className: j.Gr,
             children: (0, r.jsx)(o.QWc, {
                 variant: "primary",
                 text: "".concat(_.intl.string(_.t["9OB9hq"]), " ›"),
@@ -137,10 +137,10 @@ function C(e) {
             })
         }, "view-all")), 0 === I.length && (I = [(0, r.jsx)(o.y$y, {}, "spinner")])
     }
-    return v && j && c.A.trackExposure({
+    return v && x && c.A.trackExposure({
         location: "20e3b0_2"
     }), (0, r.jsx)("div", {
-        className: x.DZ,
+        className: j.DZ,
         children: I
     })
 }

@@ -80,7 +80,7 @@ function h(e) {
     let R = i.useCallback(e => {
             T(e), f.l.markActionPerformed(f.N.SELECTED_ITEM_CHANGE)
         }, []),
-        x = i.useMemo(() => ({
+        N = i.useMemo(() => ({
             scale: C.scale,
             x: C.x,
             y: C.y,
@@ -129,7 +129,7 @@ function h(e) {
                 "aria-label": g.intl.string(g.t.AMTX3j),
                 parentComponent: "MediaViewerModal",
                 children: (0, r.jsxs)(m.f.Provider, {
-                    value: x,
+                    value: N,
                     children: [(0, r.jsx)(b.A, {
                         item: n[v],
                         hideMediaOptions: S,

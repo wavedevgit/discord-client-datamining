@@ -23,8 +23,8 @@ var r = n(627968),
     y = n(486020),
     O = n(860689),
     _ = n(352123),
-    x = n(682557),
-    j = n(652215),
+    j = n(682557),
+    x = n(652215),
     v = n(985018),
     E = n(856528),
     C = n(166382);
@@ -110,7 +110,7 @@ function T(e) {
                         className: E.IQ
                     })
                 })
-            }) : null, (0, r.jsx)(x.A, {
+            }) : null, (0, r.jsx)(j.A, {
                 targetElementRef: u,
                 onRequestOpen: () => a(!0),
                 onRequestClose: () => a(!1),
@@ -164,12 +164,12 @@ let P = l.memo(function(e) {
         o(!0);
         try {
             p ? (0, b.u)(i.guildId) : await d.A.joinGuild(i.guildId, {
-                source: j.Q4z.DIRECTORY_ENTRY
+                source: x.Q4z.DIRECTORY_ENTRY
             })
         } finally {
             o(!1)
         }
-    }, x = y.Ay.getGuildSplashURL({
+    }, j = y.Ay.getGuildSplashURL({
         id: i.guildId,
         splash: i.splash,
         size: 300 * (0, m.mZ)()
@@ -194,8 +194,8 @@ let P = l.memo(function(e) {
             className: E.MY,
             children: [(0, r.jsx)("div", {
                 className: E.Yi,
-                children: null != x && (0, r.jsx)("img", {
-                    src: x,
+                children: null != j && (0, r.jsx)("img", {
+                    src: j,
                     alt: "",
                     className: E.j0
                 })

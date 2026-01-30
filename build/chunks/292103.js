@@ -2,8 +2,8 @@
 /** chunk id: 292103, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     Ay: () => v,
-    S_: () => j,
-    zo: () => h
+    S_: () => h,
+    zo: () => j
 }), n(896048);
 var r = n(627968);
 n(64700);
@@ -40,7 +40,7 @@ function v(e) {
     }) : null
 }
 
-function h(e) {
+function j(e) {
     let t = (0, i.bG)([u.A], () => u.A.hasReportedMessage(e.channel_id, e.id)),
         n = (0, g.KB)(e),
         c = n ? [l.M.REPORT_TO_MOD_NEW_TAG] : [],
@@ -64,7 +64,7 @@ function h(e) {
     }) : null
 }
 
-function j(e) {
+function h(e) {
     let t = (0, i.bG)([c.Ay], () => c.Ay.get("iar_testing")),
         n = (0, i.bG)([y.default], () => y.default.getCurrentUser());
     return (0, b.ul)(e) && null != n && n.isStaff() && t ? (0, r.jsx)(a.Drp, {

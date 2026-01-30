@@ -22,8 +22,8 @@ var r = n(627968),
     y = n(430452),
     O = n(246356),
     _ = n(709562),
-    x = n(376086),
-    j = n(985018);
+    j = n(376086),
+    x = n(985018);
 
 function v(e) {
     let {
@@ -43,9 +43,9 @@ function v(e) {
     } = (0, a.E)(), w = t.getGuildId(), {
         mute: R,
         suppress: D
-    } = (0, A.A)(t), L = (0, i.bG)([y.A], () => y.A.isDeaf()), M = R || D || L, k = (0, f.VE)({
+    } = (0, A.A)(t), L = (0, i.bG)([y.A], () => y.A.isDeaf()), M = R || D || L, G = (0, f.VE)({
         isSoundboardButtonDisabled: M
-    }), [G, U] = (0, p.DP)(k), {
+    }), [k, U] = (0, p.DP)(G), {
         analyticsLocations: V
     } = (0, u.Ay)(), {
         isHovered: B,
@@ -98,12 +98,12 @@ function v(e) {
     }
 
     function W() {
-        (0, d.X)(S, d.O.SOUNDBOARD), E === x.P.SOUNDBOARD ? (null == C || C(void 0), K()) : (null != E ? (N(), F()) : N(), null == C || C(x.P.SOUNDBOARD))
+        (0, d.X)(S, d.O.SOUNDBOARD), E === j.P.SOUNDBOARD ? (null == C || C(void 0), K()) : (null != E ? (N(), F()) : N(), null == C || C(j.P.SOUNDBOARD))
     }
     let z = l.useRef(null);
     return (0, r.jsx)(o.Y, {
         targetElementRef: z,
-        shouldShow: B && (E === x.P.SOUNDBOARD || null == E) || E === x.P.SOUNDBOARD,
+        shouldShow: B && (E === j.P.SOUNDBOARD || null == E) || E === j.P.SOUNDBOARD,
         animation: o.Y.Animation.FADE,
         animationPosition: "top",
         position: "top",
@@ -124,7 +124,7 @@ function v(e) {
                         guildId: w,
                         channel: t,
                         onClose: n,
-                        gridNotice: G === s.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.m, {
+                        gridNotice: k === s.M.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && (0, r.jsx)(m.m, {
                             onClose: n,
                             markAsDismissed: U
                         }),
@@ -137,7 +137,7 @@ function v(e) {
             ref: z,
             isTrayButton: !0,
             themeable: v,
-            label: R ? j.intl.string(j.t["Ox4/zU"]) : D ? j.intl.string(j.t["+YBKYI"]) : L ? j.intl.string(j.t.X1lQli) : void 0,
+            label: R ? x.intl.string(x.t["Ox4/zU"]) : D ? x.intl.string(x.t["+YBKYI"]) : L ? x.intl.string(x.t.X1lQli) : void 0,
             iconComponent: I,
             disabled: M,
             onContextMenu: Y,
@@ -148,8 +148,8 @@ function v(e) {
             onMouseLeave: () => {
                 null == E && (K(), P())
             },
-            isActive: B || E === x.P.SOUNDBOARD,
-            color: B || E === x.P.SOUNDBOARD ? "primaryDark" : void 0
+            isActive: B || E === j.P.SOUNDBOARD,
+            color: B || E === j.P.SOUNDBOARD ? "primaryDark" : void 0
         })
     })
 }

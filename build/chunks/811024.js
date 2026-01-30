@@ -4,8 +4,7 @@
 n.d(t, {
     AX: () => c,
     Gp: () => d,
-    pE: () => u,
-    t8: () => p
+    pE: () => u
 });
 var r = n(478437),
     i = n(311907),
@@ -33,8 +32,4 @@ function d(e) {
 
 function f(e, t) {
     return null != e && void 0 !== e && !!c(e) && (null == e.guild_id || !!t.can(s.xB.USE_EMBEDDED_ACTIVITIES, e)) && !0
-}
-
-function p() {
-    return !1
 }

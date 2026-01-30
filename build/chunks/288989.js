@@ -2,7 +2,7 @@
 /** chunk id: 288989, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => U,
-    k: () => j
+    k: () => x
 }), n(896048);
 var r, l, i, s = n(735438),
     a = n.n(s),
@@ -20,8 +20,8 @@ var r, l, i, s = n(735438),
     y = n(607567),
     O = n(403362),
     _ = n(960755),
-    x = n(652215),
-    j = ((l = {}).HIDDEN = "hidden", l.UNREAD = "unread", l.MENTIONS = "mentions", l.VOICE_CHANNELS = "voice-channels", l);
+    j = n(652215),
+    x = ((l = {}).HIDDEN = "hidden", l.UNREAD = "unread", l.MENTIONS = "mentions", l.VOICE_CHANNELS = "voice-channels", l);
 let v = {
         mode: "hidden",
         mentionCount: 0,
@@ -74,26 +74,26 @@ function P(e) {
         if ((I(t.id) || a().some(t.threadIds, I)) && (h = !1), (N(t.id) || a().some(t.threadIds, N)) && (d = !1), f.includes(t.id) && (p = !0), !h && !d && p) break
     }
     let O = 0,
-        x = !1,
-        j = 0,
+        j = !1,
+        x = 0,
         E = !1;
     if (h || d)
         for (let e = b.length - 1; e >= 0; e--) {
             let t = b[e];
-            (I(t.id) || a().some(t.threadIds, I)) && (null == o && (o = t.id), x = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == s && (s = t.id), O += m.Ay.getMentionCount(t.id), O += a().sumBy(t.threadIds, m.Ay.getMentionCount))
+            (I(t.id) || a().some(t.threadIds, I)) && (null == o && (o = t.id), j = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == s && (s = t.id), O += m.Ay.getMentionCount(t.id), O += a().sumBy(t.threadIds, m.Ay.getMentionCount))
         }
     if (h || d)
         for (let e = 0; e < y.length; e++) {
             let t = y[e];
             if (!h && !d) break;
-            (I(t.id) || a().some(t.threadIds, I)) && (null == u && (u = t.id), E = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), j += m.Ay.getMentionCount(t.id), j += a().sumBy(t.threadIds, m.Ay.getMentionCount))
+            (I(t.id) || a().some(t.threadIds, I)) && (null == u && (u = t.id), E = !0), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), x += m.Ay.getMentionCount(t.id), x += a().sumBy(t.threadIds, m.Ay.getMentionCount))
         }
     let P = null,
         w = null,
         R = null != (r = null == g ? void 0 : g.getChannelRecords()) ? r : [];
-    d && j > 0 ? P = {
+    d && x > 0 ? P = {
         mode: "mentions",
-        mentionCount: j,
+        mentionCount: x,
         targetChannelId: c
     } : !p && a().some(R, T) ? P = {
         mode: "voice-channels",
@@ -107,7 +107,7 @@ function P(e) {
         mode: "mentions",
         mentionCount: O,
         targetChannelId: s
-    } : h && x && (w = {
+    } : h && j && (w = {
         mode: "unread",
         mentionCount: 0,
         targetChannelId: o
@@ -125,7 +125,7 @@ function R(e) {
     let {
         guildId: t
     } = e, n = f.A.getGuild(t);
-    return null != n && !!n.features.has(x.GuildFeatures.COMMUNITY) && w(t)
+    return null != n && !!n.features.has(j.GuildFeatures.COMMUNITY) && w(t)
 }
 
 function D(e) {
@@ -134,7 +134,7 @@ function D(e) {
     } = e, n = g.A.getChannel(t);
     if (null == n) return !1;
     let r = f.A.getGuild(n.guild_id);
-    return null != r && !!r.features.has(x.GuildFeatures.COMMUNITY) && w(n.guild_id)
+    return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && w(n.guild_id)
 }
 
 function L(e) {
@@ -143,7 +143,7 @@ function L(e) {
     } = e, n = g.A.getChannel(t.id);
     if (null == n) return !1;
     let r = f.A.getGuild(t.guild_id);
-    return null != r && !!r.features.has(x.GuildFeatures.COMMUNITY) && w(n.guild_id)
+    return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && w(n.guild_id)
 }
 
 function M(e) {
@@ -152,16 +152,16 @@ function M(e) {
     } = e, n = g.A.getChannel(t);
     if (null == n) return !1;
     let r = f.A.getGuild(n.guild_id);
-    return null != r && !!r.features.has(x.GuildFeatures.COMMUNITY) && b.A.getGuildId() === n.guild_id && w(n.guild_id)
+    return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && b.A.getGuildId() === n.guild_id && w(n.guild_id)
 }
 
-function k(e) {
+function G(e) {
     let {
         guildId: t
     } = e;
     return null != t && w(t)
 }
-class G extends(r = o.Ay.Store) {
+class k extends(r = o.Ay.Store) {
     initialize() {
         this.waitFor(_.A, g.A, f.A, p.A, m.Ay, b.A, y.Ay, d.A, A.Ay)
     }
@@ -169,19 +169,19 @@ class G extends(r = o.Ay.Store) {
         var t;
         return null != (t = C[e]) ? t : E
     }
-}(i = "displayName") in G ? Object.defineProperty(G, i, {
+}(i = "displayName") in k ? Object.defineProperty(k, i, {
     value: "ChannelListUnreadsStore",
     enumerable: !0,
     configurable: !0,
     writable: !0
-}) : G[i] = "ChannelListUnreadsStore";
-let U = new G(c.h, {
+}) : k[i] = "ChannelListUnreadsStore";
+let U = new k(c.h, {
     UPDATE_CHANNEL_LIST_DIMENSIONS: function(e) {
         let {
             guildId: t,
             channelIds: n
         } = e, r = f.A.getGuild(t);
-        return null != r && !!r.features.has(x.GuildFeatures.COMMUNITY) && null != n && !a().isEqual(S[t], n) && (S[t] = n, P(t))
+        return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && null != n && !a().isEqual(S[t], n) && (S[t] = n, P(t))
     },
     BULK_ACK: function(e) {
         let {
@@ -195,7 +195,7 @@ let U = new G(c.h, {
             return null == (t = g.A.getChannel(n)) ? void 0 : t.guild_id
         }).filter(O.Vq).uniq().forEach(e => {
             let t = f.A.getGuild(e);
-            null != t && t.features.has(x.GuildFeatures.COMMUNITY) && w(e) && (n = !0)
+            null != t && t.features.has(j.GuildFeatures.COMMUNITY) && w(e) && (n = !0)
         }), n
     },
     CHANNEL_ACK: M,
@@ -207,7 +207,7 @@ let U = new G(c.h, {
     MESSAGE_DELETE: M,
     PASSIVE_UPDATE_V2: function(e) {
         let t = f.A.getGuild(e.guildId);
-        return !!(e.channels.length > 0 && null != t && t.features.has(x.GuildFeatures.COMMUNITY)) && w(e.guildId)
+        return !!(e.channels.length > 0 && null != t && t.features.has(j.GuildFeatures.COMMUNITY)) && w(e.guildId)
     },
     RESORT_THREADS: M,
     THREAD_CREATE: L,
@@ -227,14 +227,14 @@ let U = new G(c.h, {
         let r = C[n];
         return null != r && "voice-channels" === r.bottomBar.mode && w(n)
     },
-    USER_GUILD_SETTINGS_CHANNEL_UPDATE: k,
-    USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: k,
+    USER_GUILD_SETTINGS_CHANNEL_UPDATE: G,
+    USER_GUILD_SETTINGS_CHANNEL_UPDATE_BULK: G,
     USER_GUILD_SETTINGS_FULL_UPDATE: function(e) {
         let {
             userGuildSettings: t
         } = e;
         for (let e of t) null != e.guild_id && w(e.guild_id)
     },
-    USER_GUILD_SETTINGS_GUILD_UPDATE: k,
-    USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: k
+    USER_GUILD_SETTINGS_GUILD_UPDATE: G,
+    USER_GUILD_SETTINGS_GUILD_AND_CHANNELS_UPDATE: G
 })

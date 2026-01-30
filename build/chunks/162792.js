@@ -22,9 +22,9 @@ var r = n(627968),
     y = n(535421),
     O = n(112758),
     _ = n(652215),
-    x = n(985018);
+    j = n(985018);
 
-function j(e) {
+function x(e) {
     for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -69,10 +69,10 @@ let E = l.memo(function(e) {
         showReplySpine: w
     } = e, R = E.state === p.a.LOADED ? E.message : void 0, D = (0, b.X4)(R), L = o.m.useExperiment({
         location: "repliedMessage"
-    }).enabled, M = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), k = l.useMemo(() => {
+    }).enabled, M = (0, u.S)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), G = l.useMemo(() => {
         if (null == R) return null;
         let e = (0, a.A)(R);
-        if (e.type === _.lAJ.USER_JOIN) return (0, s.$)(x.intl.formatToParts(f.A.getSystemMessageUserJoin(e.id), {
+        if (e.type === _.lAJ.USER_JOIN) return (0, s.$)(j.intl.formatToParts(f.A.getSystemMessageUserJoin(e.id), {
             username: null != D ? D.nick : e.author.username,
             usernameHook: e => e
         }));
@@ -93,18 +93,18 @@ let E = l.memo(function(e) {
             application: null == e ? void 0 : e.application,
             username: null == D ? void 0 : D.nick
         }));
-        else if (e.type === _.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : x.intl.string(x.t.wnn1Dc);
+        else if (e.type === _.lAJ.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : j.intl.string(j.t.wnn1Dc);
         if (null != e.content && "" !== e.content) {
             let t = {
                     formatInline: !0,
                     allowLinks: !0
                 },
-                n = e.isFirstMessageInForumPost(C) ? v(j({}, t), {
+                n = e.isFirstMessageInForumPost(C) ? v(x({}, t), {
                     noStyleAndInteraction: !0,
                     allowHeading: !0,
                     allowList: !0,
                     allowGameMentions: L
-                }) : v(j({}, t), {
+                }) : v(x({}, t), {
                     formatInline: !0,
                     allowHeading: M,
                     allowList: M,
@@ -114,7 +114,7 @@ let E = l.memo(function(e) {
         }
         return null
     }, [R, D, C, M, L]), {
-        isReplyAuthorBlocked: G,
+        isReplyAuthorBlocked: k,
         isReplyAuthorIgnored: U
     } = (0, i.cf)([g.A], () => ({
         isReplyAuthorBlocked: null != R && g.A.isBlockedForMessage(R),
@@ -131,9 +131,9 @@ let E = l.memo(function(e) {
         channel: C,
         baseAuthor: Y,
         referencedMessage: E,
-        content: k,
+        content: G,
         compact: S,
-        isReplyAuthorBlocked: G,
+        isReplyAuthorBlocked: k,
         isReplyAuthorIgnored: U,
         showAvatarPopout: N,
         showUsernamePopout: I,
