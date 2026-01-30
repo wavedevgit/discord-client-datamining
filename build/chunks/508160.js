@@ -33,18 +33,18 @@ let w = {
         transform: "translate3d(5%, 0, 0)",
         opacity: .5
     },
-    S = {
+    D = {
         transform: "translate3d(0, 0, 0)",
         opacity: 1
     },
-    D = {
+    S = {
         mass: 1.1,
         friction: 24,
         tension: 260
     },
-    N = e => e.shiftKey || e.key === _.dh.SHIFT,
-    L = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
-    P = l.memo(function(e) {
+    P = e => e.shiftKey || e.key === _.dh.SHIFT,
+    N = e => e.metaKey || e.ctrlKey || ["Meta", "Control"].includes(e.key),
+    L = l.memo(function(e) {
         let {
             members: t,
             guild: n,
@@ -53,15 +53,15 @@ let w = {
             compact: s,
             onSelectRow: m,
             onResetForNewMembers: p
-        } = e, b = (0, c.bG)([C.A], () => C.A.useReducedMotion), _ = (0, u.useHasAnyModalOpen)(), P = (0, f.j)(), [R, V] = l.useState(!1), [E, M] = l.useState(!1), I = !_ && R && E;
+        } = e, b = (0, c.bG)([C.A], () => C.A.useReducedMotion), _ = (0, u.useHasAnyModalOpen)(), L = (0, f.j)(), [R, E] = l.useState(!1), [V, M] = l.useState(!1), I = !_ && R && V;
         l.useEffect(() => {
-            P || (V(!1), M(!1))
-        }, [P]), l.useLayoutEffect(() => {
+            L || (E(!1), M(!1))
+        }, [L]), l.useLayoutEffect(() => {
             let e = e => {
-                    N(e) && V(!0), L(e) && M(!0)
+                    P(e) && E(!0), N(e) && M(!0)
                 },
                 t = e => {
-                    N(e) && V(!1), L(e) && M(!1)
+                    P(e) && E(!1), N(e) && M(!1)
                 };
             return window.addEventListener("keydown", e), window.addEventListener("keyup", t), () => {
                 window.removeEventListener("keydown", e), window.removeEventListener("keyup", t)
@@ -78,10 +78,10 @@ let w = {
                         r = j.A.getLastRefreshTimestamp(n.id),
                         l = null == t || 0 === r,
                         i = null != t && t.refreshTimestamp === r;
-                    return l || !i ? S : T ? A : w
+                    return l || !i ? D : T ? A : w
                 },
-                enter: S,
-                config: D
+                enter: D,
+                config: S
             }),
             k = !b && a === x.IY.LOADING;
         return (0, r.jsxs)("table", {
@@ -138,7 +138,7 @@ let w = {
             y = null != (n = null == x ? void 0 : x[0]) ? n : null;
         return l.useEffect(() => {
             (0, b.KW)(i.id, y)
-        }, [i.id, y]), (0, r.jsx)(P, {
+        }, [i.id, y]), (0, r.jsx)(L, {
             members: h,
             guild: i,
             className: o,

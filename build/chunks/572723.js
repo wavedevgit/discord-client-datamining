@@ -58,7 +58,7 @@ function L(e) {
     let {
         transitionState: B,
         onClose: I
-    } = e, D = l.useRef(null), R = l.useRef(null), [V, z] = l.useState(""), [M, W] = l.useState(""), [Y, H] = l.useState(), [K, F] = l.useState(""), [U, G] = l.useState([]), [q, Z] = l.useState(), [J, X] = l.useState(), [Q, $] = l.useState(!1), [ee, et] = l.useState(""), [en, ei] = l.useState(function(e) {
+    } = e, D = l.useRef(null), R = l.useRef(null), [z, V] = l.useState(""), [M, W] = l.useState(""), [Y, H] = l.useState(), [K, F] = l.useState(""), [U, G] = l.useState([]), [q, Z] = l.useState(), [J, X] = l.useState(), [Q, $] = l.useState(!1), [ee, et] = l.useState(""), [en, ei] = l.useState(function(e) {
         switch (e) {
             case "windows":
                 return "Windows";
@@ -78,8 +78,8 @@ function L(e) {
             },
             rejectWithError: !0
         }).then(e => {
-            if (null != e.body && "d5a337c99584e200426b57c959659ddc3c69d55d" !== e.body.hash) {
-                let e = new Date("1769813449435"),
+            if (null != e.body && "4c0bbfd408066f1833bad9628142e6fc8962210e" !== e.body.hash) {
+                let e = new Date("1769815442832"),
                     t = new Date,
                     n = (0, w.Tf)(t, e);
                 n.hours > 6 && eb(n.hours)
@@ -111,7 +111,7 @@ function L(e) {
         });
     async function eS() {
         var e, t;
-        if (ex(!1), "" === V || "" === M || null == Y) return void ev(!0);
+        if (ex(!1), "" === z || "" === M || null == Y) return void ev(!0);
         let l = null == q || null == (t = q.features) ? void 0 : t.find(e => (0, S.wY)(e) === J);
         eh(!0), ev(!1);
         let r = (0, k.B)(U.map(e => {
@@ -121,7 +121,7 @@ function L(e) {
                 return t
             })),
             a = await (0, S.zC)({
-                name: V,
+                name: z,
                 description: M,
                 priority: Y,
                 feature: l,
@@ -254,12 +254,12 @@ function L(e) {
                 },
                 children: [(0, i.jsx)(c.ksK, {
                     label: C.intl.string(C.t.OZRgjw),
-                    error: em && "" === V ? C.intl.string(C.t.EkokLy) : null,
+                    error: em && "" === z ? C.intl.string(C.t.EkokLy) : null,
                     placeholder: "Something is broken on this screen.",
                     type: "text",
-                    value: V,
+                    value: z,
                     maxLength: 100,
-                    onChange: z,
+                    onChange: V,
                     autoFocus: !0
                 }), (0, i.jsx)(c.fs1, {
                     label: C.intl.string(C.t["1SplH2"]),
@@ -267,7 +267,8 @@ function L(e) {
                     placeholder: "What did you expect to see?",
                     value: M,
                     onChange: W,
-                    description: ej ? "You can add additional information/media on the ticket after submitting" : void 0
+                    description: ej ? "You can add additional information/media on the ticket after submitting" : void 0,
+                    autosize: !0
                 }), (0, i.jsx)(s.Te, {
                     label: C.intl.string(C.t.xMXLda),
                     errorMessage: em && void 0 === Y ? C.intl.string(C.t.EkokLy) : null,
