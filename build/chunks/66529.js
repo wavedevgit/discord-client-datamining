@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 66529, original params: e,t (module,exports,require) **/
 (t = e.exports = "function" == typeof Object.keys ? Object.keys : n).shim = n;
 

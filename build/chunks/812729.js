@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 812729, original params: e,t,n (module,exports,require) **/
 var r = Array.prototype.slice,
     i = n(66529),

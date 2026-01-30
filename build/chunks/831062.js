@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 831062, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -103,8 +102,8 @@ class E {
                 body: {
                     metrics: e,
                     client_info: {
-                        built_at: "1769801121414",
-                        build_number: "491736"
+                        built_at: "1769803479413",
+                        build_number: "491759"
                     }
                 },
                 retries: 1,

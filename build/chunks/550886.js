@@ -1,4 +1,3 @@
-/** Chunk was on 88869 **/
 /** chunk id: 550886, original params: t,e,a (module,exports,require) **/
 t.exports = {
     wx: "header_b917ac",

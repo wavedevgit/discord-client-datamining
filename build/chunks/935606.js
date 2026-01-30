@@ -1,4 +1,3 @@
-/** Chunk was on 73169 **/
 /** chunk id: 935606, original params: e,t,a (module,exports,require) **/
 e.exports = {
     DB: "itemContainer__971b5",

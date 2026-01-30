@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 827762, original params: e,t (module,exports,require) **/
 "use strict";
 t.byteLength = c, t.toByteArray = d, t.fromByteArray = _;

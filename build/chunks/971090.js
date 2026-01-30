@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 971090, original params: e,t,n (module,exports,require) **/
 e.exports = {
     rH: "pendingFolderButtonIcon__93fc9",

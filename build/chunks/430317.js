@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 430317, original params: e,t,n (module,exports,require) **/
 e.exports = {
     H1: "splashContainer__0bef9",

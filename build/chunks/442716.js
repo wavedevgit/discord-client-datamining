@@ -1,4 +1,3 @@
-/** Chunk was on 94682 **/
 /** chunk id: 442716, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Y5: "widgetContainer__0ea1a",

@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 898876, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wL: "searchHeader__83bd4",

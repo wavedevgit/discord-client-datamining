@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 554629, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = ["bool", "byte", "char", "decimal", "delegate", "double", "dynamic", "enum", "float", "int", "long", "nint", "nuint", "object", "sbyte", "short", "string", "ulong", "uint", "ushort"],

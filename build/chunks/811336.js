@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 811336, original params: e,t,n (module,exports,require) **/
 e.exports = {
     P0: "iconWrapper__9f20a",

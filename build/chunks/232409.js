@@ -1,4 +1,3 @@
-/** Chunk was on 12236 **/
 /** chunk id: 232409, original params: e,t,n (module,exports,require) **/
 e.exports = {
     w: "header__41dd9",

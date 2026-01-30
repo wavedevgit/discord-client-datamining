@@ -1,4 +1,3 @@
-/** Chunk was on 87557 **/
 /** chunk id: 105040, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Iv: "panelHeader__6edf0",

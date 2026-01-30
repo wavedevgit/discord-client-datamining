@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 477450, original params: e (module,exports,require) **/
 "use strict";
 let t = "[a-fA-F\\d:]",

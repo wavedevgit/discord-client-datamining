@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 934169, original params: e,t (module,exports,require) **/
 "use strict";
 var n = "(?:[a-z0-9]{5,8}|\\d[a-z0-9]{3})",

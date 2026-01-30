@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 663533, original params: e,t,n (module,exports,require) **/
 e.exports = {
     yZ: "collapsed_d77896",

@@ -1,4 +1,3 @@
-/** Chunk was on 23628 **/
 /** chunk id: 740644, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     H: () => r
@@ -29,7 +28,7 @@ class r {
     static getAppVersion() {
         try {
             var e;
-            return (e = "491736", void 0 !== e) ? e : "unknown"
+            return (e = "491759", void 0 !== e) ? e : "unknown"
         } catch (e) {
             return "unknown"
         }

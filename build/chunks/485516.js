@@ -1,4 +1,3 @@
-/** Chunk was on 74152 **/
 /** chunk id: 485516, original params: e,t,n (module,exports,require) **/
 e.exports = {
     cl: "guildSelectOptionIcon__41a02",

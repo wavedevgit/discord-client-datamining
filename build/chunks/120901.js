@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 120901, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wG: "flyingWumpusContainer_d033b5",

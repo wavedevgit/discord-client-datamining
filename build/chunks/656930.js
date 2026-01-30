@@ -1,4 +1,3 @@
-/** Chunk was on 35894 **/
 /** chunk id: 656930, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Ej: "paginationContainer_e8f197",

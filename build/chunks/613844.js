@@ -1,4 +1,3 @@
-/** Chunk was on 4670 **/
 /** chunk id: 613844, original params: e,t,i (module,exports,require) **/
 e.exports = {
     T: "cameraWrapper__11e1f",

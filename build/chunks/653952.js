@@ -1,4 +1,3 @@
-/** Chunk was on 35894 **/
 /** chunk id: 653952, original params: e,t,n (module,exports,require) **/
 e.exports = {
     $E: "labelWithIconContainer_c2c6a6",

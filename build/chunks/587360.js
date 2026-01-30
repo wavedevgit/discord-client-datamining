@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 587360, original params: e,t,n (module,exports,require) **/
 e.exports = {
     ON: "searchBar_cba592",

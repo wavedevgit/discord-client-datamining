@@ -1,4 +1,3 @@
-/** Chunk was on 28090 **/
 /** chunk id: 560381, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Tp: "purchaseSummaryContainer_fe72c8",

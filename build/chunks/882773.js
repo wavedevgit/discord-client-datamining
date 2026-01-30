@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 882773, original params: e,t,n (module,exports,require) **/
 e.exports = {
     N: "themeSection_f7cedc",

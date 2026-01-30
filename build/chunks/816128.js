@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 816128, original params: e,t,n (module,exports,require) **/
 e.exports = {
     _G: "applicationHomeBanner__62eb1",

@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 623773, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Io: "pill__1f388",

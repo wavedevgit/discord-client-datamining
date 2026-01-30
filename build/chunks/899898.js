@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 899898, original params:  (module,exports,require) **/
-! function(e, t) {
+/** chunk id: 899898, original params:  (module,exports,require) **/ ! function(e, t) {
     "use strict";
     if ("IntersectionObserver" in e && "IntersectionObserverEntry" in e && "intersectionRatio" in e.IntersectionObserverEntry.prototype) {
         "isIntersecting" in e.IntersectionObserverEntry.prototype || Object.defineProperty(e.IntersectionObserverEntry.prototype, "isIntersecting", {

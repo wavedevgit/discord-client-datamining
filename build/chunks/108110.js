@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 108110, original params: e (module,exports,require) **/
-! function(t, n) {
+/** chunk id: 108110, original params: e (module,exports,require) **/ ! function(t, n) {
     e.exports = n()
 }(globalThis, function() {
     return (() => {

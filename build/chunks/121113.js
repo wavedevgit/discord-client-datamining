@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 121113, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Y: "max-width__5b321",

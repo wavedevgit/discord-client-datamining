@@ -1,4 +1,3 @@
-/** Chunk was on 6502 **/
 /** chunk id: 373963, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => o

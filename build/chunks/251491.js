@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 251491, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = e.COMMENT(/^\s*@?rem\b/, /$/, {

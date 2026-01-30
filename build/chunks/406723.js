@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 406723, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = "(_?[ui](8|16|32|64|128))?",

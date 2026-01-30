@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 112247, original params: e,t,n (module,exports,require) **/
 e.exports = {
     E6: "embed__98ba8",

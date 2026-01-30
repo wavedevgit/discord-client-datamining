@@ -1,4 +1,3 @@
-/** Chunk was on 77313 **/
 /** chunk id: 258470, original params: e,t,n (module,exports,require) **/
 e.exports = {
     kG: "priceTagsContainer_f73e93",

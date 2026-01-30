@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 51264, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => m
@@ -46,7 +45,7 @@ let f = "isHideDevBanner",
             children: [(0, r.jsx)(p.A, {
                 className: g.Kk
             }), h.intl.format(h.t.uyrfYF, {
-                buildNumber: "491736"
+                buildNumber: "491759"
             }), (0, r.jsx)(A, {})]
         }) : null
     }

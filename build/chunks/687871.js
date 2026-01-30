@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 687871, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = "ByRef Case Const ContinueCase ContinueLoop Dim Do Else ElseIf EndFunc EndIf EndSelect EndSwitch EndWith Enum Exit ExitLoop For Func Global If In Local Next ReDim Return Select Static Step Switch Then To Until Volatile WEnd While With",

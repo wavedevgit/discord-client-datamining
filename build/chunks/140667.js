@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 140667, original params: e (module,exports,require) **/
-! function(t) {
+/** chunk id: 140667, original params: e (module,exports,require) **/ ! function(t) {
     "use strict";
     var n, r = Object.prototype,
         i = r.hasOwnProperty,

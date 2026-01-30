@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 436167, original params: e (module,exports,require) **/
 function t(n, r, i, a) {
     var o = Object.defineProperty;

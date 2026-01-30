@@ -1,4 +1,3 @@
-/** Chunk was on 21968 **/
 /** chunk id: 393800, original params: e,t,n (module,exports,require) **/
 e.exports = {
     p: "channelIcon_e98186",

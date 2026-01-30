@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 239997, original params: e,t,n (module,exports,require) **/
 e.exports = {
     r8: "recommendationActivity__450d3",

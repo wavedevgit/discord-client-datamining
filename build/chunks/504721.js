@@ -1,4 +1,3 @@
-/** Chunk was on 96126 **/
 /** chunk id: 504721, original params: e,r,a (module,exports,require) **/
 e.exports = {
     M8: "firstPromotionalAvatar__55414",

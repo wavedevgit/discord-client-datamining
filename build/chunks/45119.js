@@ -1,4 +1,3 @@
-/** Chunk was on 31294 **/
 /** chunk id: 45119, original params: e,_,t (module,exports,require) **/
 e.exports = {
     Ix: "channel__972a0",

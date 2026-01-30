@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 887345, original params: e,t,n (module,exports,require) **/
 e.exports = {
     BE: "premiumBadge__6d7da",

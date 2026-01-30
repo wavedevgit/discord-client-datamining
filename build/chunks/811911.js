@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 811911, original params: e,t,n (module,exports,require) **/
 e.exports = {
     T8: "inviteSmall_f1d99d",

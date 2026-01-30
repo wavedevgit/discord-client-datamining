@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 424288, original params: e,t,n (module,exports,require) **/
 e.exports = {
     pG: "welcomeCard_d74b42",

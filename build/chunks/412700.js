@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 412700, original params: e (module,exports,require) **/
 var t = "u" > typeof Element,
     n = "function" == typeof Map,

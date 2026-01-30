@@ -1,4 +1,3 @@
-/** Chunk was on 21968 **/
 /** chunk id: 183395, original params: e,t,n (module,exports,require) **/
 e.exports = {
     qI: "listContainer__9c74b",

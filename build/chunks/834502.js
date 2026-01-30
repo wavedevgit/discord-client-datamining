@@ -1,4 +1,3 @@
-/** Chunk was on 39289 **/
 /** chunk id: 834502, original params: e,t,n (module,exports,require) **/
 e.exports = {
     c: "author_d3eee8",

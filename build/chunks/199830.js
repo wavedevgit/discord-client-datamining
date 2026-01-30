@@ -1,4 +1,3 @@
-/** Chunk was on 89488 **/
 /** chunk id: 199830, original params: e,t,n (module,exports,require) **/
 e.exports = {
     vk: "clickable__4337d",

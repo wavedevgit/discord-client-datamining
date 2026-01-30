@@ -1,4 +1,3 @@
-/** Chunk was on 94682 **/
 /** chunk id: 223555, original params: e,t,n (module,exports,require) **/
 e.exports = {
     P3: "socialLayerCardHover__517e1",

@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 851830, original params: e,t,n (module,exports,require) **/
 e.exports = {
     om: "block__8dcfb",

@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 276156, original params: e,t,n (module,exports,require) **/
 e.exports = {
     hd: "sectionContainer__8f46b",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 618628, original params: e (module,exports,require) **/
 "function" == typeof Object.create ? e.exports = function(e, t) {
     t && (e.super_ = t, e.prototype = Object.create(t.prototype, {

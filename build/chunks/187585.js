@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 187585, original params: e,t,n (module,exports,require) **/
 e.exports = {
     u1: "spinner__0920e",

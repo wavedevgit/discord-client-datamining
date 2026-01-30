@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 940688, original params: e,t,n (module,exports,require) **/
 e.exports = {
     RV: "akaBadge__488b1",

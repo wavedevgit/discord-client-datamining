@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 905722, original params: e,t,n (module,exports,require) **/
-! function(e, t) {
+/** chunk id: 905722, original params: e,t,n (module,exports,require) **/ ! function(e, t) {
     t(n(989349))
 }(0, function(e) {
     "use strict";

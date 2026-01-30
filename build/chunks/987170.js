@@ -1,4 +1,3 @@
-/** Chunk was on 18629 **/
 /** chunk id: 987170, original params: a,e,t (module,exports,require) **/
 function i(a) {
     return a.replace(/sekuntia?/, "sekunnin")

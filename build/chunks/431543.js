@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 431543, original params: e,t,n (module,exports,require) **/
 e.exports = {
     E2: "attributionBannerContainerRebranded_afe9b4",

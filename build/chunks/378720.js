@@ -1,4 +1,3 @@
-/** Chunk was on 95336 **/
 /** chunk id: 378720, original params: e,n,t (module,exports,require) **/
 e.exports = {
     YK: "spacing_fd14e0",

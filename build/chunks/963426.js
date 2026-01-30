@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 963426, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = e.UNDERSCORE_IDENT_RE,

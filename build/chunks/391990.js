@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 391990, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = ["bool", "byte", "i16", "i32", "i64", "double", "string", "binary"];

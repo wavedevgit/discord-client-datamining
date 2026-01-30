@@ -1,4 +1,3 @@
-/** Chunk was on 95336 **/
 /** chunk id: 228763, original params: e,n,t (module,exports,require) **/
 e.exports = {
     AD: "pro__30cbe",

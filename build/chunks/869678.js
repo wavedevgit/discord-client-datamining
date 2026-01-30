@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 869678, original params: e,t,n (module,exports,require) **/
 e.exports = {
     yV: "sectionDescription__9851a",

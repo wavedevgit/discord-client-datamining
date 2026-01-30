@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 618714, original params: e,t,n (module,exports,require) **/
-! function(t) {
+/** chunk id: 618714, original params: e,t,n (module,exports,require) **/ ! function(t) {
     "function" == typeof define && define.amd ? define([], t) : e.exports ? e.exports = t() : window.idleCallbackShim = t()
 }(function() {
     "use strict";

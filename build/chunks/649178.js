@@ -1,4 +1,3 @@
-/** Chunk was on 22841 **/
 /** chunk id: 649178, original params: e,t,a (module,exports,require) **/
 e.exports = {
     Hv: "categoryButton__7ac97",

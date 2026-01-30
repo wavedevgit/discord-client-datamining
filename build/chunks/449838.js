@@ -1,4 +1,3 @@
-/** Chunk was on 40543 **/
 /** chunk id: 449838, original params: e,t,_ (module,exports,require) **/
 e.exports = {
     MP: "confirmImage__0f8ce",

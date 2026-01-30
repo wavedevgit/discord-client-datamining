@@ -1,4 +1,3 @@
-/** Chunk was on 87916 **/
 /** chunk id: 392491, original params: e,t,a (module,exports,require) **/
 e.exports = {
     SD: "gifPickerContainer__6c39d",

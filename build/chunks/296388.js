@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 296388, original params: e,t,n (module,exports,require) **/
 e.exports = {
     iQ: "hoverWrapper_b5493b",

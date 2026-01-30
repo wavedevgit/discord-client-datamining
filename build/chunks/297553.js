@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 297553, original params: e,t,n (module,exports,require) **/
-! function(e, t) {
+/** chunk id: 297553, original params: e,t,n (module,exports,require) **/ ! function(e, t) {
     t(n(989349))
 }(0, function(e) {
     return e.defineLocale("da", {

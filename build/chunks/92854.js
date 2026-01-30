@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 92854, original params: e,t,n (module,exports,require) **/
 e.exports = {
     y: "app__160d8",

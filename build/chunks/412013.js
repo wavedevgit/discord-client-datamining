@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 412013, original params: e (module,exports,require) **/
 function t(n) {
     return e.exports = t = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function(e) {

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 586874, original params: e (module,exports,require) **/
 var t = "\\ud800-\\udfff",
     n = "[" + t + "]",

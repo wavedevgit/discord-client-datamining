@@ -1,4 +1,3 @@
-/** Chunk was on 41031 **/
 /** chunk id: 138649, original params: e,t,a (module,exports,require) **/
 e.exports = {
     DC: "mobileMenuItem__43cad",

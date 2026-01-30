@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 907790, original params: e,t,n (module,exports,require) **/
 var r = {
     "./source-code-pro/sourcecodepro-400-normal.woff2": ["763599"],

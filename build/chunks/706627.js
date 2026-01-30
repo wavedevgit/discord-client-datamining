@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 706627, original params: e,t,n (module,exports,require) **/
 e.exports = {
     kL: "container__1f2ac",

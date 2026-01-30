@@ -1,4 +1,3 @@
-/** Chunk was on 56065 **/
 /** chunk id: 235545, original params: e,t,r (module,exports,require) **/
 e.exports = {
     nK: "perkCard_a1e8da",

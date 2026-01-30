@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 323174, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = e.regex,

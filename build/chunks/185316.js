@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 185316, original params: e,t,n (module,exports,require) **/
 e.exports = {
     X1: "guildsList__7db08",

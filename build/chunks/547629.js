@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 547629, original params: e,t,n (module,exports,require) **/
 e.exports = {
     TQ: "navBar__88ef1",

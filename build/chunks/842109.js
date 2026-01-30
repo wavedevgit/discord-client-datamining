@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 842109, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = ["add", "and", "cmp", "cmpg", "cmpl", "const", "div", "double", "float", "goto", "if", "int", "long", "move", "mul", "neg", "new", "nop", "not", "or", "rem", "return", "shl", "shr", "sput", "sub", "throw", "ushr", "xor"],

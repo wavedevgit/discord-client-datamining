@@ -1,4 +1,3 @@
-/** Chunk was on 96126 **/
 /** chunk id: 891252, original params: e,r,a (module,exports,require) **/
 e.exports = {
     Mp: "animationContainer__884d1",

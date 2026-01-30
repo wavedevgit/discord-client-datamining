@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 403299, original params: e,t,n (module,exports,require) **/
 e.exports = {
     jr: "headerBar__1a9ce",

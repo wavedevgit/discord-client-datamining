@@ -1,3 +1,2 @@
-/** Chunk was on 88729 **/
 /** chunk id: 554688, original params: t (module,exports,require) **/
 t.exports = JSON.parse('{"Zxav97":["Σύνολο πληρωμής"],"pDVleg":["Συνολική εξοικονόμηση ",[1,"amount"]],"WmjxYl":["Ημέρα"],"ZnoRKt":["Μήνας"],"Tt3O81":["Επόμενη ανανέωση"],"8Jt4Dw":["1 ",[1,"timeInterval"]," Nitro"],"eoXh7B":["Σύνοψη παραγγελίας"],"BPzQj4":["Αγορά"],"2zUa6I":["Συνδρομή"],"Xrg8aC":["Έτος"]}')

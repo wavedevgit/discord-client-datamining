@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 28135, original params: e,t,n (module,exports,require) **/
 var r = {
     "./spritesheet--32.png": "671279",

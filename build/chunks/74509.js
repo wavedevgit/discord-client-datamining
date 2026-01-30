@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 74509, original params: e,t,n (module,exports,require) **/
 let r = /\s+/g;
 class i {

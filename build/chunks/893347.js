@@ -1,4 +1,3 @@
-/** Chunk was on 67096 **/
 /** chunk id: 893347, original params: e,A,t (module,exports,require) **/
 e.exports = {
     fE: "imageSelectionContainer_da21bd",

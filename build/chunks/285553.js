@@ -1,4 +1,3 @@
-/** Chunk was on 70232 **/
 /** chunk id: 285553, original params: t,e,r (module,exports,require) **/
 t.exports = {
     C5: "addItemContainer__0651b",

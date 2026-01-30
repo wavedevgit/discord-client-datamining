@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 630086, original params: e,t,n (module,exports,require) **/
 e.exports = {
     tp: "table_adb41f",

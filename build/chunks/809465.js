@@ -1,4 +1,3 @@
-/** Chunk was on 32502 **/
 /** chunk id: 809465, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     A: () => b
@@ -54,7 +53,7 @@ function b(e) {
     var t, n, l, r, b;
     let {
         compact: j = !1
-    } = e, O = (0, u.GV)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, S = "491736", f = "3285e0f78e01179e03e74cae4fb4a4b32b54e1ca".substring(0, 7), C = null === c.A || void 0 === c.A ? void 0 : c.A.remoteApp.getVersion(), v = null === c.A || void 0 === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? void 0 : t.call(n), y = null === c.A || void 0 === c.A || null == (l = (r = c.A.remoteApp).getAppArch) ? void 0 : l.call(r), T = null == (b = d.A.getCurrentBuildOverride().overrides) ? void 0 : b.discord_web, _ = function() {
+    } = e, O = (0, u.GV)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, S = "491759", f = "480cc1a086598969545dddcc0609249303bb2334".substring(0, 7), C = null === c.A || void 0 === c.A ? void 0 : c.A.remoteApp.getVersion(), v = null === c.A || void 0 === c.A || null == (t = (n = c.A.remoteApp).getBuildNumber) ? void 0 : t.call(n), y = null === c.A || void 0 === c.A || null == (l = (r = c.A.remoteApp).getAppArch) ? void 0 : l.call(r), T = null == (b = d.A.getCurrentBuildOverride().overrides) ? void 0 : b.discord_web, _ = function() {
         var e;
         let t = null === a() || void 0 === a() || null == (e = a().os) ? void 0 : e.toString();
         if (null == t || null == c.A) return null;

@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 885794, original params: e,t,n (module,exports,require) **/
 e.exports = {
     S: "singleItemInfo__08054",

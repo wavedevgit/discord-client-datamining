@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 549412, original params: e,t (module,exports,require) **/
 "use strict";
 var n = "u" > typeof Uint8Array && "u" > typeof Uint16Array && "u" > typeof Int32Array;

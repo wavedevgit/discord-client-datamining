@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 477105, original params: e,t,n (module,exports,require) **/
 var r = n(38454),
     i = Object.prototype.hasOwnProperty;

@@ -1,4 +1,3 @@
-/** Chunk was on 50796 **/
 /** chunk id: 71876, original params: e,t,n (module,exports,require) **/
 function l(e, t, n) {
     e.assets[0].p = t;

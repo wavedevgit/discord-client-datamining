@@ -1,4 +1,3 @@
-/** Chunk was on 13781 **/
 /** chunk id: 292750, original params: e,a,t (module,exports,require) **/
 e.exports = {
     He: "centerText_a3fac7",

@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 356053, original params: e,t,n (module,exports,require) **/
 e.exports = {
     QR: "infoWrapper_c44293",

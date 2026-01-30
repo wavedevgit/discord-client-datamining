@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 551306, original params: e (module,exports,require) **/
 "use strict";
 var t, n = "function" == typeof Map && Map.prototype ? Map : null,

@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 414614, original params: e,t,n (module,exports,require) **/
 e.exports = {
     L: "accessory__09bc1",

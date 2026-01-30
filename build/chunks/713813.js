@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 713813, original params: e,t,n (module,exports,require) **/
 var r = n(772990),
     i = Array.prototype.splice;

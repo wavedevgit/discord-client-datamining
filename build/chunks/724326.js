@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 724326, original params: e (module,exports,require) **/
 function t(e) {
     return e ? "string" == typeof e ? e : e.source : null

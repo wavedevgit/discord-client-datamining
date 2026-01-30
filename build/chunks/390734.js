@@ -1,4 +1,3 @@
-/** Chunk was on 23321 **/
 /** chunk id: 390734, original params: e,t,n (module,exports,require) **/
 e.exports = {
     pf: "inventory__6980e",

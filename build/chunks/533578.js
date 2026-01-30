@@ -1,4 +1,3 @@
-/** Chunk was on 77238 **/
 /** chunk id: 533578, original params: e,t,a (module,exports,require) **/
 e.exports = {
     Dj: "infoList_e6fa8e",

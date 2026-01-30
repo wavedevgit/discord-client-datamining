@@ -1,4 +1,3 @@
-/** Chunk was on 15682 **/
 /** chunk id: 127134, original params: e,t,l (module,exports,require) **/
 e.exports = {
     qr: "footer__57c71",

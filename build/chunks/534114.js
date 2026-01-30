@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 534114, original params: e,t,n (module,exports,require) **/
 e.exports = {
     PD: "sideContainer_de3a16",

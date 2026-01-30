@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 367000, original params: e (module,exports,require) **/
 function t(e, t, n, r) {
     return e.addEventListener || (t = "on" + t), (e.addEventListener || e.attachEvent).call(e, t, n, r), n

@@ -1,4 +1,3 @@
-/** Chunk was on 95095 **/
 /** chunk id: 792935, original params: e,t,a (module,exports,require) **/
 e.exports = {
     Bo: "ratingSelector__5c58b",

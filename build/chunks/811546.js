@@ -1,4 +1,3 @@
-/** Chunk was on 49607 **/
 /** chunk id: 811546, original params: e,t,u (module,exports,require) **/
 u.d(t, {
     openGuildProductLink: () => o

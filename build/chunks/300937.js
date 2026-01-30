@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 300937, original params: e,t,n (module,exports,require) **/
 e.exports = {
     yu: "metadata__857bf",

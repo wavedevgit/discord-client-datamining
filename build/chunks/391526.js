@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 391526, original params: e,t,n (module,exports,require) **/
 e.exports = {
     x6: "button__95e2d",

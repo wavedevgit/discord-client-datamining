@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 627, original params: e (module,exports,require) **/
 "use strict";
 var t = TypeError;

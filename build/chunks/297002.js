@@ -1,4 +1,3 @@
-/** Chunk was on 17726 **/
 /** chunk id: 297002, original params: t,s,a (module,exports,require) **/
 t.exports = {
     h_: "description_ad198f",

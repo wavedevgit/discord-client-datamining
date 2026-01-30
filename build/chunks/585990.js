@@ -1,4 +1,3 @@
-/** Chunk was on 47995 **/
 /** chunk id: 585990, original params: e,t,n (module,exports,require) **/
 e.exports = {
     QZ: "effect_adebba",

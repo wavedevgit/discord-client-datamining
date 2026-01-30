@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 536791, original params: e,t,n (module,exports,require) **/
 e.exports = {
     BK: "messageContent_dbf24f",

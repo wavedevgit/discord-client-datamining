@@ -1,4 +1,3 @@
-/** Chunk was on 94682 **/
 /** chunk id: 461349, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Wp: "gameCover__1a3d6",

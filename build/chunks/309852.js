@@ -1,4 +1,3 @@
-/** Chunk was on 35894 **/
 /** chunk id: 309852, original params: e,t,n (module,exports,require) **/
 e.exports = {
     W6: "nagivateBackContainer__786f4",

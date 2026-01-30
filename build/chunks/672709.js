@@ -1,4 +1,3 @@
-/** Chunk was on 80388 **/
 /** chunk id: 672709, original params: e,t,r (module,exports,require) **/
 r.r(e.exports = {
     image: "image_b026d9",

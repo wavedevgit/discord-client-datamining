@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 64672, original params: e,t,n (module,exports,require) **/
 let {
     MAX_SAFE_COMPONENT_LENGTH: r,

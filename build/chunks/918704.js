@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 918704, original params: e,t,n (module,exports,require) **/
 e.exports = {
     vR: "tabs_f1dca0",

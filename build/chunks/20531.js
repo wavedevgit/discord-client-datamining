@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 20531, original params: e,t,n (module,exports,require) **/
 e.exports = {
     lF: "participants__4783a",

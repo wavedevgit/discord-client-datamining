@@ -1,4 +1,3 @@
-/** Chunk was on 67851 **/
 /** chunk id: 331026, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Hu: "alignCenter__31873",

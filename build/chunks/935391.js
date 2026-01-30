@@ -1,4 +1,3 @@
-/** Chunk was on 87557 **/
 /** chunk id: 935391, original params: e,t,n (module,exports,require) **/
 e.exports = {
     VK: "collapsablePane__7ed4d",

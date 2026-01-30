@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 721960, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Um: "productCard__79d38",

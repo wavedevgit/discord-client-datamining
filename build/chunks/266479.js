@@ -1,4 +1,3 @@
-/** Chunk was on 81890 **/
 /** chunk id: 266479, original params: e,t,n (module,exports,require) **/
 e.exports = {
     pz: "sidebar__83a6b",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 664294, original params: e,t (module,exports,require) **/
 t.parse = o, t.serialize = s;
 var n = decodeURIComponent,

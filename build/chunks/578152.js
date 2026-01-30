@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 578152, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -89,7 +88,7 @@ class y extends o.A {
                 oldFormErrors: !0,
                 rejectWithError: !0
             }).then(e => {
-                if (null == e.body || "3285e0f78e01179e03e74cae4fb4a4b32b54e1ca" === e.body.hash) return this._handleUpdateNotAvailable();
+                if (null == e.body || "480cc1a086598969545dddcc0609249303bb2334" === e.body.hash) return this._handleUpdateNotAvailable();
                 if (e.body.required || (0, s.kK)()) return this._handleUpdateDownloaded(!1);
                 let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
                 if (Date.now() - g > t) return i.w.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(!1)

@@ -1,4 +1,3 @@
-/** Chunk was on 47995 **/
 /** chunk id: 6694, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Y: "effectsWrapper__78936",

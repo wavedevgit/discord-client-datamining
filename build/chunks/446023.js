@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 446023, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -7,6 +6,6 @@ n.d(t, {
 var r = n(728458);
 
 function i() {
-    let e = parseInt("491736");
-    return Number.isNaN(e) && (r.A.captureMessage("Trying to open a changelog for an invalid build number ".concat("491736")), e = 0), e
+    let e = parseInt("491759");
+    return Number.isNaN(e) && (r.A.captureMessage("Trying to open a changelog for an invalid build number ".concat("491759")), e = 0), e
 }

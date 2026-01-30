@@ -1,4 +1,3 @@
-/** Chunk was on 59024 **/
 /** chunk id: 461225, original params: e,t,n (module,exports,require) **/
 e.exports = {
     R_: "heading__6f81c",

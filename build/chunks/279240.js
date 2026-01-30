@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 279240, original params: e,t,n (module,exports,require) **/
 e.exports = {
     XA: "activityItemButtonInnerClass__8a940",

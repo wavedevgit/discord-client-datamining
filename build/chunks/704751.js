@@ -1,4 +1,3 @@
-/** Chunk was on 14439 **/
 /** chunk id: 704751, original params: e,t,r (module,exports,require) **/
 e.exports = {
     _P: "avatarDecorationPreview__9baf3",

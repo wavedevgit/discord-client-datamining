@@ -1,4 +1,3 @@
-/** Chunk was on 35894 **/
 /** chunk id: 27786, original params: e,t,n (module,exports,require) **/
 e.exports = {
     iS: "newMembersNotice_acdcc0",

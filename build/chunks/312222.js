@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 312222, original params: e,t,n (module,exports,require) **/
 e.exports = {
     nM: "detailContainer__871ff",

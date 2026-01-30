@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 972617, original params: e,t,n (module,exports,require) **/
 var r = n(447093),
     i = Math.max;

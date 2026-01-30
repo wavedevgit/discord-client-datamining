@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 511761, original params: e,t,n (module,exports,require) **/
 e.exports = {
     JS: "artContainer_ade26d",

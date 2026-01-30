@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 875905, original params: e,t,n (module,exports,require) **/
 var r = n(547241),
     i = /[^.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|$))/g,

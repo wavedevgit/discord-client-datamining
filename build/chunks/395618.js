@@ -1,4 +1,3 @@
-/** Chunk was on 12236 **/
 /** chunk id: 395618, original params: e,t,n (module,exports,require) **/
 e.exports = {
     k: "container_f9650e",

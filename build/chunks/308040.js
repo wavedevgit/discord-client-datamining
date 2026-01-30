@@ -1,4 +1,3 @@
-/** Chunk was on 89488 **/
 /** chunk id: 308040, original params: e,t,n (module,exports,require) **/
 e.exports = {
     In: "applicationIcon_e858dd",

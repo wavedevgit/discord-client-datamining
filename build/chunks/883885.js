@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 883885, original params: module,exports (module,exports,require) **/
 "u" > typeof navigator && function(e, t) {
     module.exports = t()

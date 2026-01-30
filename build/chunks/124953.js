@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 124953, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Ji: "payment_e9cb00",

@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 23729, original params: e,t,n (module,exports,require) **/
 e.exports = {
     MP: "itemCard__7e549",

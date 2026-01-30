@@ -1,4 +1,3 @@
-/** Chunk was on 87557 **/
 /** chunk id: 734399, original params: e,t,n (module,exports,require) **/
 e.exports = {
     XG: "scroller__44cf4",

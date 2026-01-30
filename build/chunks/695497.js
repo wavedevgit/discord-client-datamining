@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 695497, original params: e,t (module,exports,require) **/
 function n(e) {
     if (e && "object" == typeof e) {

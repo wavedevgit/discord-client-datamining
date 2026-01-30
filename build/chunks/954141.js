@@ -1,4 +1,3 @@
-/** Chunk was on 66009 **/
 /** chunk id: 954141, original params: t,e,n (module,exports,require) **/
 t.exports = {
     Sl: "image_d93468",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 931717, original params: e (module,exports,require) **/
 let t = /^[0-9]+$/,
     n = (e, n) => {

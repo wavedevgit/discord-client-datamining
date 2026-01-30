@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 564065, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = /([A-Za-z_][A-Za-z_0-9]*)?/,

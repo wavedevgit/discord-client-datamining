@@ -1,4 +1,3 @@
-/** Chunk was on 73924 **/
 /** chunk id: 587831, original params: t (module,exports,require) **/
 t.exports = function() {
     "use strict";

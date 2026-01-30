@@ -1,4 +1,3 @@
-/** Chunk was on 96126 **/
 /** chunk id: 26212, original params: e,r,a (module,exports,require) **/
 e.exports = {
     K: "trialHeader__784e4",

@@ -1,4 +1,3 @@
-/** Chunk was on 96110 **/
 /** chunk id: 362561, original params: e,n,t (module,exports,require) **/
 e.exports = {
     GU: "blockedUsersContainer__97cfe",

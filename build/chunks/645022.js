@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 645022, original params: e,t,n (module,exports,require) **/
 e.exports = {
     L1: "category_f06a86",

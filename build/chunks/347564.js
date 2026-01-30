@@ -1,4 +1,3 @@
-/** Chunk was on 90948 **/
 /** chunk id: 347564, original params: e,t,n (module,exports,require) **/
 e.exports = {
     LO: "heroAsset_c93f8c",

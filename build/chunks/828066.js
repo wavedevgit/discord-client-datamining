@@ -1,4 +1,3 @@
-/** Chunk was on 896 **/
 /** chunk id: 828066, original params: e (module,exports,require) **/
 e.exports = function(e) {
     return e && e.__esModule ? e : {

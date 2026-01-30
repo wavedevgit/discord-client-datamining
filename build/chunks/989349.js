@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 989349, original params: e,t,n (module,exports,require) **/
 e = n.nmd(e),
     function(t, n) {

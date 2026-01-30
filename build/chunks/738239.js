@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 738239, original params: e (module,exports,require) **/
 let t = {};
 t.isSafari = function() {

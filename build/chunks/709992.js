@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 709992, original params: e,t,n (module,exports,require) **/
 e.exports = {
     AS: "item_cf6769",

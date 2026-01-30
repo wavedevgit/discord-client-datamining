@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 111898, original params: e,t,n (module,exports,require) **/
 var r = n(59221),
     i = n(31289),

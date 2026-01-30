@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 681334, original params: e (module,exports,require) **/
 e.exports = function(e) {
     if (void 0 === e) throw ReferenceError("this hasn't been initialised - super() hasn't been called");

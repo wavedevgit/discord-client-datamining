@@ -1,4 +1,3 @@
-/** Chunk was on 41031 **/
 /** chunk id: 621647, original params: e,t,a (module,exports,require) **/
 a.r(e.exports = {
     footer: "footer__0c41a",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 256628, original params: e,t,n (module,exports,require) **/
 var r = {
     "./1f004.svg": "352753",

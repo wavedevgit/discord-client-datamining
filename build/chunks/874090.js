@@ -1,4 +1,3 @@
-/** Chunk was on 21968 **/
 /** chunk id: 874090, original params: e,t,n (module,exports,require) **/
 e.exports = {
     jD: "breadcrumbs_befe67",

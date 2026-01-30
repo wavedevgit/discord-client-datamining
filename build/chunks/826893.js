@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 826893, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = ["struct", "enum", "interface", "union", "group", "import", "using", "const", "annotation", "extends", "in", "of", "on", "as", "with", "from", "fixed"],

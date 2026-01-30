@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 648691, original params: e,t,n (module,exports,require) **/
 "use strict";
 n(888420)("Float32", function(e) {

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 477989, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = "if eq ne lt lte gt gte select default math sep";

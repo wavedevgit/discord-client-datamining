@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 597217, original params: e,t,n (module,exports,require) **/
 e.exports = {
     my: "avatar__49508",

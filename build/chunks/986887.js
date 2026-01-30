@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 986887, original params: e (module,exports,require) **/
 function t(e) {
     return RegExp(e.replace(/[-/\\^$*+?.()|[\]{}]/g, "\\$&"), "m")

@@ -1,4 +1,3 @@
-/** Chunk was on 70104 **/
 /** chunk id: 963179, original params: t,e,r (module,exports,require) **/
 r.r(e), r.d(e, {
     ItemDetailsModal: () => j

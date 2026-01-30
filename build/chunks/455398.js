@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 455398, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = "foreach do while for if from to step else on-error and or not in",

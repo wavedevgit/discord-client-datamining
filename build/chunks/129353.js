@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 129353, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wK: "icon20px__69362",

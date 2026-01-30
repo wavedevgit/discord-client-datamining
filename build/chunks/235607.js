@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 235607, original params: e,t,n (module,exports,require) **/
 e.exports = {
     BI: "jumpingWumpusContainer__82b10",

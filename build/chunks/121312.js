@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 121312, original params: e,t,n (module,exports,require) **/
 var r = {
     "./bg.json": "467196",

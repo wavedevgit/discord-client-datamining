@@ -1,4 +1,3 @@
-/** Chunk was on 96126 **/
 /** chunk id: 113437, original params: e,r,a (module,exports,require) **/
 e.exports = {
     wC: "skuSelectModalHeader_e50a4d",

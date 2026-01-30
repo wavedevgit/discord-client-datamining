@@ -1,4 +1,3 @@
-/** Chunk was on 27084 **/
 /** chunk id: 680982, original params: e,t,n (module,exports,require) **/
 e.exports = {
     fc: "addFriendInputWrapper__72ba7",

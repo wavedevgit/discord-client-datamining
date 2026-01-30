@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 875871, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Gg: "guildInviteContainer__083ae",

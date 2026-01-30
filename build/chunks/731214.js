@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 731214, original params: e (module,exports,require) **/
 var t = Function.prototype.toString;
 e.exports = function(e) {

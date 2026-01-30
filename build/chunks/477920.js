@@ -1,4 +1,3 @@
-/** Chunk was on 83855 **/
 /** chunk id: 477920, original params: e,l,s (module,exports,require) **/
 e.exports = {
     yl: "modal__5ab33",

@@ -1,4 +1,3 @@
-/** Chunk was on 38672 **/
 /** chunk id: 239031, original params: e,s,a (module,exports,require) **/
 e.exports = {
     Y: "headerIcons_f5cf99",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 798566, original params: e,t,n (module,exports,require) **/
 "use strict";
 let r, i;
@@ -247,7 +246,7 @@ j(function() {
     let n = {},
         r = window.GLOBAL_ENV.RELEASE_CHANNEL;
     r && (null == n.release_channel || "" === n.release_channel) && (n.release_channel = r.split("-")[0]);
-    let i = parseInt("491736", 10);
+    let i = parseInt("491759", 10);
     isNaN(i) || (n.client_build_number = i);
     let a = null == b || null == (e = (t = b.remoteApp).getBuildNumber) ? void 0 : e.call(t);
     return isNaN(a) || (n.native_build_number = a), n.client_event_source = N(), n.has_client_mods = (0, l.b)(), n.client_launch_id = f.C, n

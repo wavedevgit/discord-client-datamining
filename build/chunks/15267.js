@@ -1,4 +1,3 @@
-/** Chunk was on 4670 **/
 /** chunk id: 15267, original params: e,t,i (module,exports,require) **/
 e.exports = {
     UJ: "autoThresholdSlider__39fa9",

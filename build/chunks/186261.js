@@ -1,4 +1,3 @@
-/** Chunk was on 76850 **/
 /** chunk id: 186261, original params: e,t,r (module,exports,require) **/
 e.exports = {
     eL: "tipRow__5bc4e",

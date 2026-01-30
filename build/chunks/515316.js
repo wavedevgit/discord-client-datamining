@@ -1,4 +1,3 @@
-/** Chunk was on 31748 **/
 /** chunk id: 515316, original params: e,t,n (module,exports,require) **/
 e.exports = {
     TC: "voiceFilterHero_cb3698",

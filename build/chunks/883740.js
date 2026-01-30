@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 883740, original params: e,t,n (module,exports,require) **/
 var r = {
     "./spritesheet-emoji-32.png": "164197",

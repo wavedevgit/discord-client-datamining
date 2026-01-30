@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 283346, original params: e,t,n (module,exports,require) **/
 var r = n(264572).Buffer;
 ! function(e) {

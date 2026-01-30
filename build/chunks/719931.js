@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 719931, original params: e,t,n (module,exports,require) **/
 e.exports = {
     q3: "bannerIcon_cbe8c4",

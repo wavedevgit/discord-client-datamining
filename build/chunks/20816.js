@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 20816, original params: e (module,exports,require) **/
 "use strict";
 var t = Object.prototype.hasOwnProperty,

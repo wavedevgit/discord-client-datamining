@@ -1,4 +1,3 @@
-/** Chunk was on 4670 **/
 /** chunk id: 443669, original params: e,t,i (module,exports,require) **/
 e.exports = {
     D6: "soundButtonSettingContainer__84bad",

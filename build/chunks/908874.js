@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 908874, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Wz: "devBanner__56d75",

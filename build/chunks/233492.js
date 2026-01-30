@@ -1,4 +1,3 @@
-/** Chunk was on 82220 **/
 /** chunk id: 233492, original params: e,n,t (module,exports,require) **/
 e.exports = {
     Fv: "categoryRow_d295eb",

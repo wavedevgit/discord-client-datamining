@@ -1,4 +1,3 @@
-/** Chunk was on 98063 **/
 /** chunk id: 486856, original params: e,l,a (module,exports,require) **/
 e.exports = {
     aC: "headerGuildName__949ab",

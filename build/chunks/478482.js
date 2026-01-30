@@ -1,4 +1,3 @@
-/** Chunk was on 40543 **/
 /** chunk id: 478482, original params: e,t,_ (module,exports,require) **/
 e.exports = {
     dt: "upsellFooter__5e07c",

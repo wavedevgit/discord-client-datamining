@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 718931, original params:  (module,exports,require) **/
 IntlMessageFormat.__addLocaleData({
     locale: "bg",

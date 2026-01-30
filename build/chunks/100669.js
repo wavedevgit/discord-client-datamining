@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 100669, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Xb: "aboutContainer__17a6d",

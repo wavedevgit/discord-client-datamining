@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 663244, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Ui: "cardContainer__3cf14",

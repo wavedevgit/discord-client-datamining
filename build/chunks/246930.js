@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 246930, original params: e,t,n (module,exports,require) **/
 e.exports = {
     bo: "guildContainer__5dba5",

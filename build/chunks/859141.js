@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 859141, original params: e (module,exports,require) **/
 e.exports = function(e, t, n, r) {
     var i = n ? n.call(r, e, t) : void 0;

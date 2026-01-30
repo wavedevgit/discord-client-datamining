@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 295394, original params: e,t (module,exports,require) **/
 function n(e) {
     return "[object Arguments]" == Object.prototype.toString.call(e)

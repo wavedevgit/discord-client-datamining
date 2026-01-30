@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 181370, original params: e (module,exports,require) **/
-! function() {
+/** chunk id: 181370, original params: e (module,exports,require) **/ ! function() {
     let t = e => new TextEncoder().encode(e);
 
     function n(e, n) {

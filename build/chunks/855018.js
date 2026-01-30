@@ -1,4 +1,3 @@
-/** Chunk was on 41469 **/
 /** chunk id: 855018, original params: e,t,r (module,exports,require) **/
 e.exports = {
     F0: "headerImage__96095",

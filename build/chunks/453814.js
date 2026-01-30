@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 453814, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Q: "sectionsContainer__722a8",

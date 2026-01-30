@@ -1,4 +1,3 @@
-/** Chunk was on 41031 **/
 /** chunk id: 306618, original params: e,t,a (module,exports,require) **/
 e.exports = {
     wm: "logo__675f9",

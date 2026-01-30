@@ -1,4 +1,3 @@
-/** Chunk was on 823 **/
 /** chunk id: 713290, original params: r,a,e (module,exports,require) **/
 e.r(a), e.d(a, {
     BadgeImageWithProgressCircle: () => i,

@@ -1,4 +1,3 @@
-/** Chunk was on 67851 **/
 /** chunk id: 262633, original params: e,t,n (module,exports,require) **/
 e.exports = {
     pG: "right__89d2b",

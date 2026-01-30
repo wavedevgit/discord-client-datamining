@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 680000, original params: e,t,n (module,exports,require) **/
 e.exports = {
     mk: "frequentFriendsRow__1fc18",

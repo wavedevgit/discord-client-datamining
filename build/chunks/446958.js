@@ -1,4 +1,3 @@
-/** Chunk was on 82220 **/
 /** chunk id: 446958, original params: e,n,t (module,exports,require) **/
 e.exports = {
     Nb: "featureBorder__65c15",

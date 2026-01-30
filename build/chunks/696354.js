@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 696354, original params: e,t,n (module,exports,require) **/
 var r = {
     "./activity_end.mp3": "440261",

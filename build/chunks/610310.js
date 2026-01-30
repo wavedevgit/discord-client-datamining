@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 610310, original params: e (module,exports,require) **/
 let t = ["as", "in", "of", "if", "for", "while", "finally", "var", "new", "function", "do", "return", "void", "else", "break", "catch", "instanceof", "with", "throw", "case", "default", "try", "switch", "continue", "typeof", "delete", "let", "yield", "const", "class", "debugger", "async", "await", "static", "import", "from", "export", "extends", "using"],
     n = ["true", "false", "null", "undefined", "NaN", "Infinity"],

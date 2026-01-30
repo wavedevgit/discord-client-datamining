@@ -1,4 +1,3 @@
-/** Chunk was on 82220 **/
 /** chunk id: 306505, original params: e,n,t (module,exports,require) **/
 e.exports = {
     u: "section__999b5",

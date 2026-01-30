@@ -1,4 +1,3 @@
-/** Chunk was on 47995 **/
 /** chunk id: 859804, original params: e,t,n (module,exports,require) **/
 e.exports = {
     fy: "bgShade__6d791",

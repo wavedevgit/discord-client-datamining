@@ -1,4 +1,3 @@
-/** Chunk was on 1113 **/
 /** chunk id: 101616, original params: e,t,n (module,exports,require) **/
 e.exports = {
     D5: "singleItemContainer__4af00",

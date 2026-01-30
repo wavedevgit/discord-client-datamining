@@ -1,4 +1,3 @@
-/** Chunk was on 72165 **/
 /** chunk id: 680235, original params: e,t,n (module,exports,require) **/
 e.exports = {
     fr: "welcomeMessageContainer__6f212",

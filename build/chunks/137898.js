@@ -1,4 +1,3 @@
-/** Chunk was on 72165 **/
 /** chunk id: 137898, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Nr: "card_e60808",

@@ -1,4 +1,3 @@
-/** Chunk was on 6759 **/
 /** chunk id: 891674, original params: e,t,n (module,exports,require) **/
 e.exports = {
     $H: "tabBar__66057",

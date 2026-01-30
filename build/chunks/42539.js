@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 42539, original params: e (module,exports,require) **/
 function t() {
     return e.exports = t = Object.assign ? Object.assign.bind() : function(e) {

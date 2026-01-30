@@ -1,4 +1,3 @@
-/** Chunk was on 73169 **/
 /** chunk id: 892513, original params: e,t,a (module,exports,require) **/
 e.exports = {
     q7: "arrowBounce__49676",

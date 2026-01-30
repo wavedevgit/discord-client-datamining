@@ -1,4 +1,3 @@
-/** Chunk was on 14787 **/
 /** chunk id: 976213, original params: e,t,i (module,exports,require) **/
 e.exports = {
     ch: "classificationContainer_a48d6b",

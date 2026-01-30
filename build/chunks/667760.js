@@ -1,4 +1,3 @@
-/** Chunk was on 19750 **/
 /** chunk id: 667760, original params: e,t,n (module,exports,require) **/
 e.exports = {
     LO: "game_f74169",

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 916511, original params: e (module,exports,require) **/
 function t(n) {
     return e.exports = t = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function(e) {

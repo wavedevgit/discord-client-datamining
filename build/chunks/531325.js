@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 531325, original params: e (module,exports,require) **/
 if (!t) var t = {
     map: function(e, t) {

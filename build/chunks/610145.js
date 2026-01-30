@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 610145, original params: e,t,n (module,exports,require) **/
 e.exports = {
     bF: "thumbnailStackGallery_c085c7",

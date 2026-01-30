@@ -1,4 +1,3 @@
-/** Chunk was on 28636 **/
 /** chunk id: 590354, original params: e,t,n (module,exports,require) **/
 e.exports = {
     cI: "bannerContainer_b76d57",

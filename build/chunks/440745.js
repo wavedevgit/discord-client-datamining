@@ -1,6 +1,4 @@
-/** Chunk was on web.js **/
-/** chunk id: 440745, original params: e (module,exports,require) **/
-! function(t) {
+/** chunk id: 440745, original params: e (module,exports,require) **/ ! function(t) {
     var n = /^\s+/,
         r = /\s+$/,
         i = 0,

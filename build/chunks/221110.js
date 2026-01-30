@@ -1,4 +1,3 @@
-/** Chunk was on 64935 **/
 /** chunk id: 221110, original params: e,t,n (module,exports,require) **/
 e.exports = {
     uE: "thankYouCard_b851f5",

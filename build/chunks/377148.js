@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 377148, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Gv: "backButton__6fa7b",

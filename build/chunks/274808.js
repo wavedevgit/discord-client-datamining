@@ -1,4 +1,3 @@
-/** Chunk was on 38985 **/
 /** chunk id: 274808, original params: e,t,n (module,exports,require) **/
 e.exports = {
     JT: "searchResultGroup_a7e67f",

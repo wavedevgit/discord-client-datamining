@@ -1,4 +1,3 @@
-/** Chunk was on 87557 **/
 /** chunk id: 355862, original params: e,t,n (module,exports,require) **/
 e.exports = {
     tE: "rewardTileContainer_d8917e",

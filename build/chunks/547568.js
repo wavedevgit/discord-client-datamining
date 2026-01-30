@@ -1,4 +1,3 @@
-/** Chunk was on 2827 **/
 /** chunk id: 547568, original params: e,t,n (module,exports,require) **/
 e.exports = {
     ry: "upsellOverlayContainer__0f7dc",

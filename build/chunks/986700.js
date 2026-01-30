@@ -1,4 +1,3 @@
-/** Chunk was on 72165 **/
 /** chunk id: 986700, original params: e,t,n (module,exports,require) **/
 e.exports = {
     PY: "coverContainer__2f300",

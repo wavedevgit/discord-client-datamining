@@ -1,4 +1,3 @@
-/** Chunk was on 21738 **/
 /** chunk id: 1567, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wp: "barCard_d8a230",

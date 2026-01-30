@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 213378, original params: e,t,n (module,exports,require) **/
 "use strict";
 e.exports = {

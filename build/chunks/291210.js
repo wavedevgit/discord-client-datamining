@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 291210, original params: e (module,exports,require) **/
 e.exports = function(e) {
     let t = "primitive rsc_template",

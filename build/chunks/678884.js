@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 678884, original params: e (module,exports,require) **/
 class t {
     constructor() {

@@ -1,4 +1,3 @@
-/** Chunk was on 13530 **/
 /** chunk id: 505502, original params: e,t,l (module,exports,require) **/
 e.exports = {
     GA: "profileEntryCard__655fa",

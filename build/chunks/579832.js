@@ -1,4 +1,3 @@
-/** Chunk was on 58127 **/
 /** chunk id: 579832, original params: t,e,s (module,exports,require) **/
 var n = {
     "./bg.png": "365627",

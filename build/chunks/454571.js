@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 454571, original params: e (module,exports,require) **/
 e.exports = function(e, t, n) {
     for (var r = n - 1, i = e.length; ++r < i;)

@@ -1,4 +1,3 @@
-/** Chunk was on web.js **/
 /** chunk id: 976247, original params: e,t,n (module,exports,require) **/
 "use strict";
 n.d(t, {
@@ -66,8 +65,10 @@ function E(e) {
         mode: u.nY.PINNED,
         children: e => (0, r.jsx)("div", {
             className: o()(d.k4, e),
-            children: f.width > 0 && f.height > 0 && a(f.width, f.height)
-        }, l.url)
+            children: (0, r.jsx)("div", {
+                children: f.width > 0 && f.height > 0 && a(f.width, f.height)
+            }, l.url)
+        })
     })
 }
 let y = i.memo(E)

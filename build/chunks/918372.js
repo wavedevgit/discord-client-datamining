@@ -1,4 +1,3 @@
-/** Chunk was on 35894 **/
 /** chunk id: 918372, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Ak: "flagContainer__71c22",

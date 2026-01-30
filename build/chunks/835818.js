@@ -1,4 +1,3 @@
-/** Chunk was on 4670 **/
 /** chunk id: 835818, original params: e,t,i (module,exports,require) **/
 e.exports = {
     a: "micTest__169b3",
