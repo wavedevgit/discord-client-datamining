@@ -2,7 +2,7 @@
 /** chunk id: 547983, original params: e,t,n (module,exports,require) **/
 n.d(t, {
     c: () => W,
-    default: () => Y
+    default: () => z
 });
 var r = n(627968),
     i = n(64700),
@@ -31,13 +31,13 @@ var r = n(627968),
     P = n(522333),
     I = n(692457),
     T = n(253925),
-    w = n(513560),
-    x = n(20883),
+    x = n(513560),
+    w = n(20883),
     M = n(979766),
     C = n(982308),
     N = n(959239),
-    G = n(420975),
-    R = n(207115),
+    R = n(420975),
+    G = n(207115),
     L = n(614323),
     k = n(292103),
     U = n(878956),
@@ -49,9 +49,9 @@ var r = n(627968),
     K = n(772331),
     q = n(649455),
     J = n(652215),
-    z = n(985018);
+    Y = n(985018);
 
-function Y(e) {
+function z(e) {
     var t, n;
     let i, a, c, u, {
             channel: g,
@@ -93,7 +93,7 @@ function Y(e) {
             onSelect: A,
             onClose: o.Z_,
             navId: "message",
-            ariaLabel: z.intl.string(z.t.ChPNkN),
+            ariaLabel: Y.intl.string(Y.t.ChPNkN),
             shouldHideMediaOptions: b
         })
     })
@@ -107,7 +107,7 @@ function W(e) {
         textSelection: o,
         favoriteableType: s,
         favoriteableId: d,
-        favoriteableName: Y,
+        favoriteableName: z,
         itemHref: W,
         itemSrc: Z,
         itemSafeSrc: $,
@@ -160,7 +160,7 @@ function W(e) {
         ep = (0, j.A)(t, n),
         ef = (0, I.A)(t, n),
         ey = (0, L.A)(t, n),
-        eb = (0, w.A)(t, n),
+        eb = (0, x.A)(t, n),
         eA = (0, X.A)(t, n),
         em = (0, _.A)(t),
         eO = (0, V.A)(t, n),
@@ -174,23 +174,23 @@ function W(e) {
             onHeightUpdate: et
         }),
         eS = (0, U.A)(t, n),
-        eE = (0, x.A)(t, n),
+        eE = (0, w.A)(t, n),
         e_ = (0, S.A)(t, n),
         eD = (0, E.A)(t, n),
         eP = (0, F.A)(t, n),
         eI = (0, N.A)(t),
         eT = (0, A.A)(t),
-        ew = (0, B.A)(t),
-        ex = (0, R.A)(t, n),
-        eM = (0, G.A)(t, n),
+        ex = (0, B.A)(t),
+        ew = (0, G.A)(t, n),
+        eM = (0, R.A)(t, n),
         eC = (0, D.A)(t, n),
         eN = (0, k.Ay)(t),
-        eG = (0, k.S_)(t),
-        eR = (0, k.zo)(t),
+        eR = (0, k.S_)(t),
+        eG = (0, k.zo)(t),
         eL = (0, T.A)({
             type: s,
             id: d,
-            name: Y
+            name: z
         }),
         ek = (0, v.A)(o, n.getGuildId()),
         eU = (0, f.A)($, t, {
@@ -208,7 +208,7 @@ function W(e) {
         }),
         eH = (0, u.A)({
             id: t.id,
-            label: z.intl.string(z.t.zBoHlf),
+            label: Y.intl.string(Y.t.zBoHlf),
             shiftId: "".concat(t.channel_id, "-").concat(t.id)
         }),
         eK = (0, P.A)({
@@ -238,9 +238,9 @@ function W(e) {
         }), (0, r.jsxs)(a.rXV, {
             children: [ef, ey, eb, eA]
         }), (0, r.jsxs)(a.rXV, {
-            children: [em, eO, ev, eh, ej, eS, eE, e_, eD, eP, eT, ew]
+            children: [em, eO, ev, eh, ej, eS, eE, e_, eD, eP, eT, ex]
         }), (0, r.jsxs)(a.rXV, {
-            children: [ex, eM, eC, ee && eN, ee && eG, eR]
+            children: [ew, eM, eC, ee && eN, ee && eR, eG]
         }), es ? (0, r.jsxs)(r.Fragment, {
             children: [eq, eJ, (0, r.jsx)(a.rXV, {
                 children: eB

@@ -63,17 +63,17 @@ function j(e, t) {
     } = (0, u.S)(), {
         createNewEditingRule: _
     } = (0, u.U)(), [D, P] = i.useState(!1), [I, T] = (0, c.H6)(t), {
-        rulesByTriggerType: w,
-        updateRule: x
+        rulesByTriggerType: x,
+        updateRule: w
     } = (0, c.wP)(t), M = i.useMemo(() => {
         var e;
-        return null != (e = w[h]) ? e : []
-    }, [w]), C = 0 === M.length, N = n > M.length && !C;
+        return null != (e = x[h]) ? e : []
+    }, [x]), C = 0 === M.length, N = n > M.length && !C;
     if (!i.useMemo(() => (0, d.i_)(t), [t]) || null == e || 0 === e.length || null == t) return null;
-    let G = e.split(" "),
-        R = G.length;
+    let R = e.split(" "),
+        G = R.length;
     try {
-        (0, o.wk)(G, b.bV)
+        (0, o.wk)(R, b.bV)
     } catch (e) {
         return null
     }
@@ -96,7 +96,7 @@ function j(e, t) {
                     keywordFilter: [...null != (n = null == (r = t.triggerMetadata) ? void 0 : r.keywordFilter) ? n : [], e]
                 })
             });
-            await S(i, M), x(i), null != E ? (0, l.showToast)((0, l.createToast)(A.intl.string(A.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(A.intl.string(A.t["0rdYm2"]), l.ToastType.SUCCESS))
+            await S(i, M), w(i), null != E ? (0, l.showToast)((0, l.createToast)(A.intl.string(A.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(A.intl.string(A.t["0rdYm2"]), l.ToastType.SUCCESS))
         }, U = (0, r.jsx)(l.Drp, {
             id: "automod-rules-loading",
             label: A.intl.string(A.t.ZTNur7)
@@ -144,7 +144,7 @@ function j(e, t) {
     })), (0, r.jsx)(l.Drp, {
         id: "guild-automod-add-selection",
         label: A.intl.formatToPlainString(A.t.Kkjv1m, {
-            keywordCount: R
+            keywordCount: G
         }),
         leadingAccessory: {
             type: "icon",

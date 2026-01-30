@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(503698),
-    a = n.n(l),
-    o = n(311907),
+    o = n.n(l),
+    a = n(311907),
     s = n(397927),
     c = n(966327),
     u = n(386467),
@@ -22,16 +22,16 @@ var r = n(627968),
 let E = i.memo(function(e) {
     let {
         message: t
-    } = e, n = (0, o.bG)([f.A], () => f.A.getChannel(t.channel_id));
+    } = e, n = (0, a.bG)([f.A], () => f.A.getChannel(t.channel_id));
     return null == n ? null : (0, r.jsx)(O.Ay, {
         children: e => (0, r.jsxs)(u.A.Provider, {
             value: n.guild_id,
             children: [(0, r.jsx)(c.A, {
                 user: t.author,
                 size: s._3J.SIZE_40,
-                className: a()(g.Du, e)
+                className: o()(g.Du, e)
             }), (0, r.jsxs)("div", {
-                className: a()(g.cy, e),
+                className: o()(g.cy, e),
                 children: [(0, r.jsx)(s.M1G, {
                     children: (0, r.jsx)("div", {
                         className: g.mG,
@@ -57,11 +57,11 @@ function _(e) {
         item: n,
         hideMediaOptions: i,
         onClose: l
-    } = e, o = null == (t = n.sourceMetadata) ? void 0 : t.message;
+    } = e, a = null == (t = n.sourceMetadata) ? void 0 : t.message;
     return (0, r.jsxs)("div", {
         className: g.XV,
-        children: [null != o && (0, r.jsx)(E, {
-            message: o
+        children: [null != a && (0, r.jsx)(E, {
+            message: a
         }), (0, r.jsx)(m.A, {
             item: n,
             hideMediaOptions: i
@@ -71,7 +71,7 @@ function _(e) {
                 onClick: l,
                 icon: s.PGe,
                 tooltip: y.intl.string(y.t.cpT0Cq),
-                className: a()(g.b, e)
+                className: o()(g.b, e)
             })
         })]
     })

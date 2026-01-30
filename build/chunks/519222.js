@@ -3,19 +3,19 @@
 n.d(t, {
     $b: () => M,
     DT: () => E,
-    Io: () => x,
-    Le: () => w,
+    Io: () => w,
+    Le: () => x,
     Nw: () => C,
     RC: () => D,
     S: () => _,
     Z4: () => L,
     cl: () => I,
     mF: () => N,
-    r7: () => R,
+    r7: () => G,
     rS: () => T,
     u_: () => P,
     vc: () => S,
-    wF: () => G
+    wF: () => R
 }), n(627968), n(64700), n(397927);
 var r = n(687709),
     i = n(843472),
@@ -71,11 +71,11 @@ function T(e, t, n) {
     !1 === t.pinned ? n.shiftKey ? r.A.pinMessage(e, t.id) : h.A.confirmPin(e, t) : n.shiftKey ? r.A.unpinMessage(e, t.id) : h.A.confirmUnpin(e, t)
 }
 
-function w(e, t) {
+function x(e, t) {
     (0, l.A)(e.id, t.id)
 }
 
-function x(e, t) {
+function w(e, t) {
     (0, v.A)(e, t, void 0, m.A.getOptions(t.id))
 }
 
@@ -101,14 +101,14 @@ function N(e, t) {
     null != n && (0, d.JA)(n)
 }
 
-function G(e, t) {
+function R(e, t) {
     (0, s.Y)({
         channelId: e.id,
         messageId: t.id
     })
 }
 
-function R(e, t) {
+function G(e, t) {
     (0, s.x)({
         channelId: e.id,
         messageId: t.id

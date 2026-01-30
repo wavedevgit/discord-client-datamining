@@ -6,8 +6,8 @@ n.d(t, {
 var r = n(627968),
     i = n(64700),
     l = n(503698),
-    a = n.n(l),
-    o = n(935462),
+    o = n.n(l),
+    a = n(935462),
     s = n(397927),
     c = n(707685),
     u = n(775121),
@@ -50,7 +50,7 @@ function h(e) {
             }(e, t), Object.getOwnPropertySymbols)
             for (i = 0, n = Object.getOwnPropertySymbols(e); i < n.length; i++) r = n[i], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r]);
         return l
-    }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, C] = i.useState(!1), [P, D] = (0, s.zhh)(() => ({
+    }(e, ["onClose", "items", "startingIndex", "enabledContentHarmTypeFlags", "shouldHideMediaOptions", "transitionState"]), [v, T] = i.useState(null != l ? l : 0), [w, P] = i.useState(!1), [C, D] = (0, s.zhh)(() => ({
         scale: d.A.useReducedMotion ? 1 : .9,
         x: 0,
         y: 0,
@@ -65,7 +65,7 @@ function h(e) {
         }
     }, [t]), i.useEffect(() => {
         var e, t;
-        A === s.ip4.ENTERING && _(P.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(P.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(P.scale, .9);
+        A === s.ip4.ENTERING && _(C.scale, 1), A === s.ip4.ENTERED && (u.A.disable(), u.A.enableTemp(c.w)), A === s.ip4.HIDDEN && (_(C.scale, .9), u.A.disable(), u.A.enableTemp(c.b)), A === s.ip4.EXITING && _(C.scale, .9);
         let n = () => {
                 u.A.disable(), A === s.ip4.ENTERED ? u.A.enableTemp(c.w) : u.A.enableTemp(c.b)
             },
@@ -76,25 +76,25 @@ function h(e) {
         return null == i || i.addEventListener("focus", n), null == i || i.addEventListener("blur", r), () => {
             null == i || i.removeEventListener("focus", n), null == i || i.removeEventListener("blur", r), u.A.disableTemp()
         }
-    }, [A, P]);
+    }, [A, C]);
     let R = i.useCallback(e => {
             T(e), f.l.markActionPerformed(f.N.SELECTED_ITEM_CHANGE)
         }, []),
-        N = i.useMemo(() => ({
-            scale: P.scale,
-            x: P.x,
-            y: P.y,
+        x = i.useMemo(() => ({
+            scale: C.scale,
+            x: C.x,
+            y: C.y,
             setScale(e, t) {
-                _(P.scale, e, null == t ? void 0 : t.immediate)
+                _(C.scale, e, null == t ? void 0 : t.immediate)
             },
             setOffset(e, t, n) {
-                _(P.x, e, null == n ? void 0 : n.immediate), _(P.y, t, null == n ? void 0 : n.immediate)
+                _(C.x, e, null == n ? void 0 : n.immediate), _(C.y, t, null == n ? void 0 : n.immediate)
             },
             zoomed: w,
             setZoomed(e) {
-                C(e), _(P.scale, e ? 2.5 : 1), e || (_(P.x, 0), _(P.y, 0))
+                P(e), _(C.scale, e ? 2.5 : 1), e || (_(C.x, 0), _(C.y, 0))
             }
-        }), [w, P]);
+        }), [w, C]);
     return (0, r.jsx)(s.NPJ, {
         theme: y.NJ8.MIDNIGHT,
         children: e => {
@@ -119,17 +119,17 @@ function h(e) {
             }({
                 "data-migration-pending": !0,
                 hideShadow: !0,
-                className: a()(E.O, e),
+                className: o()(E.O, e),
                 transitionState: A
             }, j), l = l = {
                 size: s.rIJ.DYNAMIC,
-                animation: o.WM.SUBTLE,
+                animation: a.WM.SUBTLE,
                 fullscreenOnMobile: !1,
                 onClick: t,
                 "aria-label": g.intl.string(g.t.AMTX3j),
                 parentComponent: "MediaViewerModal",
                 children: (0, r.jsxs)(m.f.Provider, {
-                    value: N,
+                    value: x,
                     children: [(0, r.jsx)(b.A, {
                         item: n[v],
                         hideMediaOptions: S,
