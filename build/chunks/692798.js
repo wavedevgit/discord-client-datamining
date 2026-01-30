@@ -164,7 +164,7 @@ let Y = Object.freeze({
             type: "EDITOR",
             isPreview: !0
         }, () => M.intl.format(M.t.G8yQXi, {
-            onPremiumClick: () => m.Z
+            onPremiumClick: () => m.e
         })).with({
             type: "EDITOR",
             isCoachmark: !0
@@ -174,7 +174,7 @@ let Y = Object.freeze({
         }, () => M.intl.string(M.t.dqDFwe)).with({
             isPreview: !0
         }, () => M.intl.format(M.t["DWIjJ/"], {
-            onPremiumClick: () => m.Z
+            onPremiumClick: () => m.e
         })).otherwise(() => M.intl.string(M.t["np0X/u"]));
         return (0, r.jsx)(c.Heading, {
             variant: "text-sm/normal",
@@ -194,7 +194,7 @@ let Y = Object.freeze({
             type: P.e.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
             subscriptionTier: P.pe.TIER_2,
             children: M.intl.format(M.t.G8yQXi, {
-                onPremiumClick: () => m.Z
+                onPremiumClick: () => m.e
             })
         }) : (0, r.jsxs)("div", {
             className: j.wx,

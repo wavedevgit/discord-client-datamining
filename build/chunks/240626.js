@@ -199,7 +199,7 @@ let D = function(e) {
             className: y.nw,
             tag: "span",
             onClick: () => {
-                (0, A.Z)()
+                (0, A.e)()
             },
             children: e
         }, t);

@@ -1,26 +1,26 @@
-/** chunk id: 426190, original params: e,t,r (module,exports,require) **/
-r.d(t, {
-    N: () => p,
+/** chunk id: 426190, original params: e,t,n (module,exports,require) **/
+n.d(t, {
+    N: () => u,
     z: () => _
-}), r(896048);
-var n = r(64700),
-    i = r(417597),
-    o = r(966107),
-    s = r(773669),
-    l = r(695515),
-    a = r(438732);
+}), n(896048);
+var r = n(64700),
+    i = n(417597),
+    l = n(966107),
+    s = n(773669),
+    a = n(695515),
+    o = n(438732);
 let c = new Set(["US"]),
-    u = new Set(["en-US", "es-ES"]),
-    p = () => {
-        let e = (0, a.A)(),
-            t = (0, i.bG)([l.A], () => l.A.getUserCountry()),
-            r = (0, i.bG)([s.default], () => s.default.locale);
-        return n.useEffect(() => {
-            null == t && (0, o.xf)()
-        }, [t]), !e && null != t && c.has(t.alpha2) && u.has(r)
+    d = new Set(["en-US", "es-ES"]),
+    u = () => {
+        let e = (0, o.A)(),
+            t = (0, i.bG)([a.A], () => a.A.getUserCountry()),
+            n = (0, i.bG)([s.default], () => s.default.locale);
+        return r.useEffect(() => {
+            null == t && (0, l.xf)()
+        }, [t]), !e && null != t && c.has(t.alpha2) && d.has(n)
     },
     _ = () => {
-        let e = (0, a.A)(),
-            t = p();
+        let e = (0, o.A)(),
+            t = u();
         return !e && !t
     }

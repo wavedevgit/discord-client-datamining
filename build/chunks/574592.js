@@ -1,4 +1,4 @@
-/** chunk id: 574592, original params: e,a,p (module,exports,require) **/
+/** chunk id: 574592, original params: e,t,n (module,exports,require) **/
 e.exports = {
     Nr: "card__6aefd",
     YK: "spacing__6aefd",

@@ -214,7 +214,7 @@ let H = (0, v.xI)(c.A.STICKERS_CONSTANTS_STICKER_PICKER_BREAKPOINT_SMALL),
         let eM = i.useCallback(() => {
             G(), O.default.track(k.HAw.PREMIUM_PROMOTION_OPENED, {
                 location_section: k.JJy.STICKER_PICKER_UPSELL
-            }), (0, g.Z)()
+            }), (0, g.e)()
         }, [G]);
         return (0, r.jsxs)(p.f5, {
             value: q,

@@ -4,26 +4,26 @@ n.d(t, {
 }), n(896048), n(321073);
 var r = n(143236),
     i = n(723702),
-    s = n(837921),
-    o = n(350535),
-    l = n(650583);
-let a = [],
+    l = n(837921),
+    s = n(350535),
+    a = n(650583);
+let o = [],
     c = (e, t, n) => {
         let r = +!(0, i.isWindows)();
-        (e !== l.zY.MOUSE_BUTTON || n !== r) && a.forEach(r => r._handleEvent(e, t, n))
+        (e !== a.zY.MOUSE_BUTTON || n !== r) && o.forEach(r => r._handleEvent(e, t, n))
     };
 class d extends r.EventEmitter {
     destroy() {
-        this.removeAllListeners(), 0 === (a = a.filter(e => e !== this)).length && s.Ay.setOnInputEventCallback(null)
+        this.removeAllListeners(), 0 === (o = o.filter(e => e !== this)).length && l.Ay.setOnInputEventCallback(null)
     }
     toString() {
-        return (0, o.dI)(this.combo)
+        return (0, s.dI)(this.combo)
     }
     _handleEvent(e, t, n) {
         0 === t ? this.combo = this.combo.filter(t => {
             let [r, i] = t;
             return r !== e || i !== n
-        }) : (this.combo.push([e, n, (0, o._$)()]), this.emit("change", this))
+        }) : (this.combo.push([e, n, (0, s._$)()]), this.emit("change", this))
     }
     constructor() {
         super(),
@@ -34,6 +34,6 @@ class d extends r.EventEmitter {
                     configurable: !0,
                     writable: !0
                 }) : e[t] = n
-            }(this, "combo", []), a.push(this), 1 === a.length && s.Ay.setOnInputEventCallback(c)
+            }(this, "combo", []), o.push(this), 1 === o.length && l.Ay.setOnInputEventCallback(c)
     }
 }

@@ -1,5 +1,4 @@
-/** chunk id: 754388, original params: e,t,r (module,exports,require) **/
-"use strict";
+/** chunk id: 754388, original params: e,t,n (module,exports,require) **/
 e.exports = {
     wx: "header__6c75d",
     iT: "modalCloseButton__6c75d",

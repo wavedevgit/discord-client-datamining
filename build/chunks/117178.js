@@ -1,18 +1,18 @@
 /** chunk id: 117178, original params: e,t,n (module,exports,require) **/
 n.d(t, {
-    A: () => m
+    A: () => g
 }), n(896048), n(321073);
 var r = n(627968),
     i = n(64700),
-    s = n(695497),
-    o = n.n(s),
-    l = n(313869),
-    a = n(451802),
+    l = n(695497),
+    s = n.n(l),
+    a = n(313869),
+    o = n(451802),
     c = n(723702),
     d = n(837921),
     u = n(650583);
 
-function h(e, t, n) {
+function _(e, t, n) {
     return t in e ? Object.defineProperty(e, t, {
         value: n,
         enumerable: !0,
@@ -21,7 +21,7 @@ function h(e, t, n) {
     }) : e[t] = n, e
 }
 let p = c.isPlatformEmbedded && null != d.Ay.getDiscordUtils().inputCaptureRegisterElement;
-class b extends i.PureComponent {
+class m extends i.PureComponent {
     componentDidMount() {
         this._mounted = !0
     }
@@ -42,7 +42,7 @@ class b extends i.PureComponent {
         } = this.state, {
             onChange: n
         } = this.props;
-        t === a.E.RECORDING && (null != n && n(e), this.setState({
+        t === o.E.RECORDING && (null != n && n(e), this.setState({
             codes: e
         }))
     }
@@ -52,10 +52,10 @@ class b extends i.PureComponent {
                 mode: i
             } = this.state,
             {
-                disabled: s
+                disabled: l
             } = this.props;
-        return p ? (t = d.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(a.A, {
-            disabled: s,
+        return p ? (t = d.Ay.getDiscordUtils().inputCaptureRegisterElement, e = this.handleNativeChange) : c.isPlatformEmbedded || (e = this.handleComboKeys), (0, r.jsx)(o.A, {
+            disabled: l,
             value: n,
             mode: i,
             onClick: this.toggleRecordMode,
@@ -65,19 +65,19 @@ class b extends i.PureComponent {
         })
     }
     constructor(e) {
-        super(e), h(this, "_input", void 0), h(this, "gs", void 0), h(this, "_mounted", !1), h(this, "recordStart", () => {
-            c.isPlatformEmbedded && !p && (this.gs = new l.A, this.gs.on("change", this.handleGSChange)), this.setState({
-                mode: a.E.RECORDING
+        super(e), _(this, "_input", void 0), _(this, "gs", void 0), _(this, "_mounted", !1), _(this, "recordStart", () => {
+            c.isPlatformEmbedded && !p && (this.gs = new a.A, this.gs.on("change", this.handleGSChange)), this.setState({
+                mode: o.E.RECORDING
             })
-        }), h(this, "recordEnd", () => {
+        }), _(this, "recordEnd", () => {
             this.cleanUp(), this.setState({
-                mode: a.E.DEFAULT
+                mode: o.E.DEFAULT
             })
-        }), h(this, "toggleRecordMode", () => {
-            this.state.mode === a.E.DEFAULT ? this.recordStart() : this.recordEnd()
-        }), h(this, "handleComboKeys", (e, t, n) => {
+        }), _(this, "toggleRecordMode", () => {
+            this.state.mode === o.E.DEFAULT ? this.recordStart() : this.recordEnd()
+        }), _(this, "handleComboKeys", (e, t, n) => {
             if (n.preventDefault(), "keydown" === n.type) {
-                let e = t.map(e => [u.zY.KEYBOARD_KEY, o()(e), u.g$.BROWSER]),
+                let e = t.map(e => [u.zY.KEYBOARD_KEY, s()(e), u.g$.BROWSER]),
                     {
                         keyCode: r
                     } = n;
@@ -86,11 +86,11 @@ class b extends i.PureComponent {
                     return r === t
                 }) && e.push([u.zY.KEYBOARD_KEY, r, u.g$.BROWSER]), this.handleComboChange(e)
             }
-        }), h(this, "handleGSChange", e => {
+        }), _(this, "handleGSChange", e => {
             if (!1 === this._mounted) return;
             let t = [...e.combo];
             this.handleComboChange(t)
-        }), h(this, "handleNativeChange", e => {
+        }), _(this, "handleNativeChange", e => {
             e.length > 0 && this.handleComboChange(e), this.recordEnd()
         });
         const {
@@ -98,8 +98,8 @@ class b extends i.PureComponent {
         } = e;
         this.state = {
             codes: t,
-            mode: a.E.DEFAULT
+            mode: o.E.DEFAULT
         }
     }
 }
-let m = b
+let g = m
