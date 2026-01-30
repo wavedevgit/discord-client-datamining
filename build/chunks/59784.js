@@ -156,13 +156,32 @@ let v = new y(a.h, {
             subscriptionGroupMemberId: t
         } = e, n = f.get(t);
         if ((null == n ? void 0 : n.invite) == null) return !1;
+        let r = new Date().toISOString();
         f.set(t, {
             state: c.xI.ACCEPTED,
             invite: m(p({}, n.invite), {
-                accepted_at: new Date().toISOString()
+                accepted_at: r
             }),
             errorStatus: null
         })
+    },
+    PREMIUM_GROUP_ACCEPT_INVITE_SUCCESS: function(e) {
+        let {
+            subscriptionGroupMemberId: t
+        } = e, n = f.get(t);
+        if ((null == n ? void 0 : n.invite) == null) return !1;
+        let r = n.invite.subscription,
+            i = new Date().toISOString();
+        for (let [e, n] of f) {
+            var l;
+            e !== t && (null == (l = n.invite) ? void 0 : l.subscription) === r && f.set(e, {
+                state: c.xI.REMOVED,
+                invite: m(p({}, n.invite), {
+                    removed_at: i
+                }),
+                errorStatus: null
+            })
+        }
     },
     PREMIUM_GROUP_ACCEPT_INVITE_FAIL: function(e) {
         let {
@@ -184,13 +203,29 @@ let v = new y(a.h, {
         if (null == t) return !1;
         let n = f.get(t);
         if ((null == n ? void 0 : n.invite) == null) return !1;
+        let r = new Date().toISOString();
         f.set(t, {
             state: c.xI.REMOVED,
             invite: m(p({}, n.invite), {
-                removed_at: new Date().toISOString()
+                removed_at: r
             }),
             errorStatus: null
         })
+    },
+    PREMIUM_GROUP_REMOVE_INVITE_SUCCESS: function(e) {
+        let {
+            subscriptionId: t
+        } = e, n = new Date().toISOString();
+        for (let [e, i] of f) {
+            var r;
+            (null == (r = i.invite) ? void 0 : r.subscription) === t && f.set(e, {
+                state: c.xI.REMOVED,
+                invite: m(p({}, i.invite), {
+                    removed_at: n
+                }),
+                errorStatus: null
+            })
+        }
     },
     PREMIUM_GROUP_REMOVE_INVITE_FAILURE: function(e) {
         let {

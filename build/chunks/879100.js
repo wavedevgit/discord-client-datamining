@@ -153,7 +153,7 @@ function el(e) {
         ef = "HR" === eI && ep.currency === ee.Yr.EUR,
         eS = V.fractionalState === Q.xc.FP_SUB_PAUSED;
     return y(eo), (0, i.jsxs)("div", {
-        children: [eS && (0, i.jsx)(U.v, {
+        children: [eS && (0, i.jsx)(U.vi, {
             fractionalPremiumInfo: V
         }), ev && null != x ? (0, i.jsx)(ei, {
             endDate: x.currentPeriodEnd

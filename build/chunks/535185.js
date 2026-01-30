@@ -86,7 +86,7 @@ function u(e, t) {
         i = arguments.length > 3 ? arguments[3] : void 0,
         {
             enabled: o = !0,
-            fireOnMount: s = !0,
+            fireOnMount: s = !1,
             fireOnDepsChange: l = !1
         } = i,
         u = (0, r.useRef)(!1);

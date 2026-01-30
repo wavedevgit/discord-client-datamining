@@ -75,7 +75,7 @@ class U extends N.Ay {
         this.resetTextChannelPopoutTimers()
     }
     resetTextChannelPopoutTimers() {
-        clearTimeout(this.enterTimer), clearTimeout(this.exitTimer)
+        null != this.enterTimer && (clearTimeout(this.enterTimer), this.enterTimer = null), null != this.exitTimer && (clearTimeout(this.exitTimer), this.exitTimer = null)
     }
     renderChannelInfo() {
         let {
@@ -161,7 +161,7 @@ class U extends N.Ay {
         super(...e), M(this, "state", {
             shouldShowThreadsPopout: !1,
             shouldShowActivities: !1
-        }), M(this, "channelItemRef", l.createRef()), M(this, "enterTimer", 0), M(this, "exitTimer", 0), M(this, "handleMouseEnter", () => {
+        }), M(this, "channelItemRef", l.createRef()), M(this, "enterTimer", null), M(this, "exitTimer", null), M(this, "handleMouseEnter", () => {
             this.props.channelIsContentGated && null == this.props.embeddedApps || (this.resetTextChannelPopoutTimers(), this.enterTimer = setTimeout(() => {
                 null != this.props.embeddedApps && this.props.embeddedApps.length > 0 ? this.setState({
                     shouldShowActivities: !0

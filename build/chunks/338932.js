@@ -14,13 +14,15 @@ let s = 1e3,
             [c, u] = r.useState(!1),
             d = r.useRef(null);
         return r.useEffect(() => {
-            clearTimeout(d.current), d.current = null;
+            null !== d.current && (clearTimeout(d.current), d.current = null);
             let r = !n && !t,
                 i = l && (e || r);
             i && n ? d.current = window.setTimeout(() => {
                 u(!0)
             }, s) : u(i)
-        }, [l, e, n, t]), r.useEffect(() => () => clearTimeout(d.current), []), {
+        }, [l, e, n, t]), r.useEffect(() => () => {
+            null !== d.current && (clearTimeout(d.current), d.current = null)
+        }, []), {
             canAnimate: c
         }
     }
