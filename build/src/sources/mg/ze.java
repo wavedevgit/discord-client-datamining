@@ -23,6 +23,34 @@ public final class ze {
     /* renamed from: g */
     private pi f39041g;
 
+    public static /* bridge */ /* synthetic */ g3 a(ze zeVar) {
+        return zeVar.f39040f;
+    }
+
+    public static /* bridge */ /* synthetic */ we b(ze zeVar) {
+        return zeVar.f39037c;
+    }
+
+    public static /* bridge */ /* synthetic */ ye c(ze zeVar) {
+        return zeVar.f39036b;
+    }
+
+    public static /* bridge */ /* synthetic */ of k(ze zeVar) {
+        return zeVar.f39038d;
+    }
+
+    public static /* bridge */ /* synthetic */ rf l(ze zeVar) {
+        return zeVar.f39039e;
+    }
+
+    public static /* bridge */ /* synthetic */ pi m(ze zeVar) {
+        return zeVar.f39041g;
+    }
+
+    public static /* bridge */ /* synthetic */ aj n(ze zeVar) {
+        return zeVar.f39035a;
+    }
+
     public final ze d(g3 g3Var) {
         this.f39040f = g3Var;
         return this;
