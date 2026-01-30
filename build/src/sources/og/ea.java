@@ -2,22 +2,22 @@ package og;
 /* loaded from: /home/runner/work/discord-client-datamining/discord-client-datamining/build/classes3.dex */
 public final class ea {
 
-    /* renamed from: a  reason: collision with root package name */
+    /* renamed from: a */
     private hc f43012a;
 
-    /* renamed from: b  reason: collision with root package name */
+    /* renamed from: b */
     private da f43013b;
 
-    /* renamed from: c  reason: collision with root package name */
+    /* renamed from: c */
     private ba f43014c;
 
-    /* renamed from: d  reason: collision with root package name */
+    /* renamed from: d */
     private wa f43015d;
 
-    /* renamed from: e  reason: collision with root package name */
+    /* renamed from: e */
     private za f43016e;
 
-    /* renamed from: f  reason: collision with root package name */
+    /* renamed from: f */
     private s2 f43017f;
 
     public final ea d(s2 s2Var) {
